@@ -18,6 +18,7 @@ parser.add_argument('phase', choices=['stage', 'archive'])
 parser.add_argument('--accepted', type=Path, required=True)
 parser.add_argument('--output', type=Path, required=True)
 parser.add_argument('--downloads', type=Path)
+parser.add_argument('--reuse-resource-parts-from', type=Path)
 args = parser.parse_args()
 OUT = args.output.resolve()
 WORLD = 'RA2-HD-Editions-Resources'
@@ -51,6 +52,11 @@ def configure(payload, kind, head):
     save(payload / 'package.json', metadata)
     for name in ['distribution-main.mjs', 'distribution-layout.mjs']:
         shutil.copyfile(ROOT / 'desktop' / name, payload / 'desktop' / name)
+    icon_dir = payload / 'desktop/icons'
+    icon_dir.mkdir(exist_ok=True)
+    shutil.copyfile(ROOT / 'desktop/icons/app-icon.png', icon_dir / 'app-icon.png')
+    for name in ['README.md', 'LICENSE']:
+        shutil.copyfile(ROOT / name, payload / name)
     (payload / 'desktop/packaged-review-main.mjs').unlink(missing_ok=True)
 
 def sign(app):
@@ -118,8 +124,10 @@ if args.phase == 'stage':
     plist = plistlib.loads(plist_file.read_bytes())
     plist.update(CFBundleName='Red Alert 2 HD', CFBundleDisplayName='Red Alert 2 HD',
                  CFBundleIdentifier='local.ra2hd.desktop', CFBundleVersion='25',
+                 CFBundleIconFile='app-icon.icns',
                  LSApplicationCategoryType='public.app-category.games')
     plist_file.write_bytes(plistlib.dumps(plist))
+    shutil.copyfile(ROOT / 'desktop/icons/app-icon.icns', mac / 'Contents/Resources/app-icon.icns')
     sign(mac)
     # Small Mac application has identical game bytes, with no external game data.
     lite_dir = OUT / 'RA2-HD-v0.2-macOS-arm64-program'
@@ -143,6 +151,8 @@ if args.phase == 'stage':
             assert not stat.S_ISLNK(entry.external_attr >> 16)
         z.extractall(win)
     (win / 'electron.exe').rename(win / 'Red Alert 2 HD.exe')
+    subprocess.run(['node', str(ROOT / 'scripts/distribution/windows-icon.mjs'),
+                    str(win / 'Red Alert 2 HD.exe'), str(ROOT / 'desktop/icons/app-icon.ico')], check=True)
     if (win / 'electron_wer.dll').exists():
         (win / 'electron_wer.dll').rename(win / 'Red Alert 2 HD_wer.dll')
     clone(payload, win / 'resources/app')
@@ -206,9 +216,26 @@ else:
         size += row['bytes']
     if current:
         groups.append(current)
+    reused = {}
+    if args.reuse_resource_parts_from:
+        previous = json.loads((args.reuse_resource_parts_from / 'archives.json').read_text())
+        reused = {row['file']: row for row in previous['files'] if '-private-resources-part' in row['file']}
+        assert len(reused) == len(groups)
     for i, group in enumerate(groups, 1):
         target = OUT / f'RA2-HD-v0.2-private-resources-part{i:02d}-of-{len(groups):02d}.zip'
-        row = archive(resource_root, target, group)
+        if reused:
+            row = reused[target.name]
+            source = args.reuse_resource_parts_from / target.name
+            assert source.stat().st_size == row['bytes'] and sha(source) == row['sha256']
+            # Reuse only when the archive contains exactly the selected resource bytes.
+            with zipfile.ZipFile(source) as z:
+                assert set(z.namelist()) == {resource_root.name + '/' + item['file'] for item in group}
+                for item in group:
+                    with z.open(resource_root.name + '/' + item['file']) as stream:
+                        assert hashlib.file_digest(stream, 'sha256').hexdigest() == item['sha256']
+            clone(source, target)
+        else:
+            row = archive(resource_root, target, group)
         assert row['bytes'] < 2 * 1024**3
         rows.append(row)
         print(json.dumps(dict(phase='RESOURCE_PART_VERIFIED', **row)), flush=True)
