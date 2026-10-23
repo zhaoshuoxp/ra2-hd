@@ -1,0 +1,65 @@
+{
+  "status": "M1_6C_ACCEPTED_AND_INTEGRATED_INTO_MAIN",
+  "recordedAtUtc": "2026-09-23T22:22:29.474731+00:00",
+  "mainBranch": "m0-2-stabilization",
+  "mainCheckout": "/Users/Aone/RA2remaster/ra2-hd",
+  "previousMain": "f0412b95225d7dbc79ae81a6cfe50e21377423de",
+  "acceptedBuildingCheckpoint": "89bbc4c",
+  "mergeCommit": "89207afe07738a889135ddbf183bb7ab4ebcc264",
+  "fastForwardTarget": "69a50dd",
+  "packageIntegrationCommit": "7d00735",
+  "runtimeSourceCommit": "69a50dd7ec09b6c32d44b4bb9fb4273b5da14e9f",
+  "scope": {
+    "ra2": 18,
+    "yr": 18,
+    "union": 20,
+    "editionTheaterCells": 162,
+    "buildingOriginalExceptions": []
+  },
+  "resourceIntegration": {
+    "addedFiles": 245,
+    "addedBytes": 67150514,
+    "matchedExisting": 0,
+    "preservedExistingEntries": 9131,
+    "replacedFiles": 0
+  },
+  "checks": {
+    "regressionTests": 81,
+    "typecheck": "PASS",
+    "isolatedBuild": "PASS",
+    "registration": "69 selections; accepted SQD/YURIPR Original exceptions unchanged",
+    "nativeRetailMapCases": 8,
+    "controlledLunarCells": 18,
+    "nativeNewBuildingFunctions": "PASS",
+    "packagedBothEditions": "PASS_PACKAGED_COMBAT_FEEDBACK_GUARD_AND_HD_BOTH_EDITIONS",
+    "packagedSovietBuildingsPerEdition": 18,
+    "packagedHashVerifiedEntries": 1626,
+    "r5CombatRuntimeSourceUnchanged": [
+      "src/engine/sound/WorldSound.ts",
+      "src/game/gameobject/Debris.ts",
+      "src/gui/screen/game/GameScreen.ts",
+      "src/gui/screen/game/SoundHandler.ts"
+    ]
+  },
+  "evidence": {
+    ".artifacts/m1-6c-main-integration-v1/resources.json": "03b6f54926c3295f69696970a970f9eeb77da7c9ec0c10afca5a0f40d8eb289a",
+    ".artifacts/m1-6c-main-integration-v1/preserved-before.json": "91efed41e32ca5e9c7398cce38aebefefccbe3d7870336c81adf766ec24a9c7b",
+    ".artifacts/m1-6c-main-integration-v1/post-verification.json": "d44ffe4e79e68fb2e1931e7e4f9ff27e9009e51393ea16fa71fb1045d1dadb94",
+    ".artifacts/m1-6c-main-integration-v1/registration.json": "a0645b93220d377230e7715a551cb15d2437f0161cb85da49b9b8914d03c7ae3",
+    ".artifacts/m1-6c-main-integration-v1/regression.log": "8898bf5f13fe1f5a8448d824cf7ebe8663f9fabe4eef28d194ab13ad6e9117eb",
+    ".artifacts/m1-6c-main-integration-v1/typecheck.log": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+    ".artifacts/m1-6c-main-integration-v1/build.log": "75bf25ac023c922b0fa4bc8be0683e197107304d0ae6c206010637acd5045bbf",
+    ".artifacts/m1-6c-main-integration-v1/runtime/identity.json": "b00d812bbe0989e9af10481b22fdd236095fcede5701f8ab1979ddca229280b8",
+    ".artifacts/m1-6c-main-integration-v1/native-matrix/matrix.json": "aa12e99918b9451b59b17fdf732b1303977b348f5e5b71f1ac46c75e5c9ab57c",
+    ".artifacts/m1-6c-main-integration-v1/native-package/result.json": "370f81776652be52dbceabc579835277ba7483a3e4d35ca82ce12fc975ced609",
+    ".artifacts/m1-6c-main-integration-v1/package/package-receipt.json": "78fe4e1289642cbe40bbe581736136ee638cccc732cf75b3c5b401f71a8748dd"
+  },
+  "preservation": "Existing resources, dist, user profiles, accepted apps/ZIPs and sibling worktrees preserved. No push or publication.",
+  "historicalEvidenceRoot": "/Users/Aone/RA2remaster/ra2-hd-buildings-m1-6c",
+  "boundaries": [
+    "Lunar uses controlled native VFS/ImageFinder/GPU loading, not retail-map gameplay.",
+    "Accepted artwork and densities unchanged; existing acceptance remains valid.",
+    "No new Windows, campaign or physical-speaker acceptance claim.",
+    "The original accepted review ZIP is immutable; the integrated R5 package was created only as local verification evidence."
+  ]
+}

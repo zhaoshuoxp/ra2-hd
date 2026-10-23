@@ -1,0 +1,7 @@
+# Urban batch 61: complete linked-family source preparation
+
+The next six roots are CAGARD01, CAMOV02, CAMOV01, CALA10, NAPSYA and NAPSYB. Exact original source closure retains 13 distinct SHP members, 223 visible slots, 223 original shadow slots and 446 required density frames. NAPSYB construction and reverse unbuild share the same original nupsybmk member; neither role is discarded. Each original map binding, rule, animation range, damage range, rate, offset, palette, frame index and decoded source hash is retained in the prepared source and JSON.
+
+Read-only accepted-donor comparisons find nine eligible CAGARD01 flag slots in the accepted Snow family. Their actual original geometry, fixed colors, alpha, contact and owner shades match, despite distinct source filenames. The three guard-shack body states differ and require new artwork. The other five roots have no same-identity accepted Temperate or Snow donor. Eligible flag material must retain its acceptance authority and pass complete family closure with the new body before any coverage claim. No accepted artwork is redrawn here.
+
+This preparation does not change resource selection, original maps or coverage. Batch 60 native validation continues independently. Body-only completion is insufficient for these six families; all linked loops, damage loops and applicable buildup states remain required. Three civilian infantry and six voxel vehicle families remain separate open work. Windows NOT_RUN; M2.4 incomplete. Continue the same execution conversation.

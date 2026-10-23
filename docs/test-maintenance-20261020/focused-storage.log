@@ -1,0 +1,46 @@
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/napowr-pack.test.ts:
+(pass) actual NAPOWR pages validate all 67 frames, RG8 values, native offsets and release [1066.90ms]
+(pass) complete family fallback handles corrupt, missing, incomplete, size and allocation failures [2881.23ms]
+(pass) legacy graphics preferences migrate all HD families to enabled [0.27ms]
+(pass) NAPOWR respects an explicit unit reserve before uploading any rejected density [814.88ms]
+
+scripts/m2/environment.test.ts:
+(pass) environment admission requires pinned native source, theater, canvas and body-slot closure [0.28ms]
+(pass) waterfall opacity is admitted only for pinned waterfall sources and preserves complete fallback [30.55ms]
+(pass) a complete environment family accounts retained CPU, uploads once and releases its shared pages [6.39ms]
+(pass) missing child, invalid child, insufficient budget and missing 4X leave the whole family Original [11.28ms]
+(pass) bridge and building aggregate views preserve explicit native frame order and borrow one page set [5.59ms]
+
+scripts/m1/allied-units/shared-reuse.test.ts:
+(pass) Allied and Soviet engineer leases share one allocation without matching foreign images [0.84ms]
+(pass) Source-identical stolen-tech units become available in RA2 without opening YR-only families [0.04ms]
+(pass) Reused member slots cover both native sequence maps, including fixed-facing differences [569.52ms]
+
+scripts/m1/lunar-infantry/contracts.test.ts:
+(pass) LUNR preserves all native slots and both densities with owner paint and neutral armor [686.70ms]
+(pass) LUNR desktop registration rejects an incomplete family without leaking routes [55.43ms]
+
+scripts/m1/yuri-units/feedback-effects.test.ts:
+(pass) disc circumference radius is invariant under native turret bearings rather than the rotated box diagonal [5.21ms]
+(pass) retail normal and elite disc weapons admit their ring flag and explicit native colors [27.85ms]
+(pass) AreaFire centers on the live caster without mutating an ordinary enemy target [0.13ms]
+(pass) native TurretSpins completes headings independently of target acquisition; ordinary turrets retain aim [0.12ms]
+(pass) disc ring precedes the outgoing ray and expires as one disposable effect [1.95ms]
+(pass) magnetic ribbon follows elevated victim endpoints and releases at beam interruption [1.34ms]
+(pass) magnetic muzzle follows turret facing, body mount and full native FLH [0.06ms]
+(pass) magnetic muzzle uses the displayed paired-tip point at both independent HD densities [0.40ms]
+(pass) magnetic contact stays on the nearest bottom footprint edge through lift and rotation [0.42ms]
+(pass) magnetic HD contact excludes transparent padding and follows the visible lower silhouette through lift [0.28ms]
+(pass) control arcs obey native selection and intel visibility for vehicle and infantry controllers [0.79ms]
+(pass) an inactive HD controller retains its Original roof while the complete family loads [0.11ms]
+(pass) control source follows the rotated elevated vehicle roof and the camera-facing infantry crown [1.00ms]
+(pass) control line touches both supplied attachment points without a hidden vertical bias [0.15ms]
+(pass) the sprite crown excludes transparent padding and decodes lossless pooled alpha [0.25ms]
+(pass) magnetic field retains reference width and straight endpoints while animating without replacing geometry [0.32ms]
+
+ 30 pass
+ 0 fail
+ 2099967 expect() calls
+Ran 30 tests across 5 files. [6.60s]

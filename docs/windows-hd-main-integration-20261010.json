@@ -1,0 +1,122 @@
+{
+  "schema": "windows-hd-local-main-integration-v1",
+  "status": "PASS_LOCAL_MAIN_INTEGRATION",
+  "mainBefore": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+  "candidateHead": "a2a812a8102572357c5ec81e0245123344429078",
+  "applicationParityWithValidatedC9": "EXACT_SRC_DESKTOP_AND_DEPENDENCY_SOURCE",
+  "renderingPaths": [
+    "src/engine/gfx/OctreeContainer.ts",
+    "src/engine/gfx/Renderer.ts",
+    "src/engine/gfx/batch/CombatProgramWarmup.ts",
+    "src/engine/gfx/batch/HdSpriteEdges.ts",
+    "src/engine/gfx/batch/HdSpriteProgramWarmup.ts",
+    "src/engine/gfx/batch/MergedSpriteMesh.ts",
+    "src/engine/gfx/batch/MeshBatchManager.ts",
+    "src/engine/gfx/batch/PaletteSpriteProgramWarmup.ts",
+    "src/engine/renderable/builder/HdTilePoolPreparer.ts",
+    "src/engine/renderable/builder/loadSovietUnitsHd.ts",
+    "src/engine/renderable/builder/poolHdPage.worker.ts",
+    "src/engine/renderable/builder/resolveHdSprite.ts",
+    "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+    "src/gui/screen/game/GameScreen.ts"
+  ],
+  "protected": [
+    {
+      "path": "src/engine/gfx/CachedMeshVisibility.ts",
+      "mainSha256": "a10361b84bf0ba558a4dd6565b36d15c04396e498596083000484c02c939d694",
+      "candidateSha256": "a10361b84bf0ba558a4dd6565b36d15c04396e498596083000484c02c939d694",
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "src/engine/gfx/SceneMatrices.ts",
+      "mainSha256": "79ba66a3c1d96e78e2ddfc09f0528818d6317410c0a8ea8c9aea6b3d5b61a6bf",
+      "candidateSha256": "79ba66a3c1d96e78e2ddfc09f0528818d6317410c0a8ea8c9aea6b3d5b61a6bf",
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "src/engine/gfx/batch/MeshBatchManager.ts",
+      "mainSha256": "12cefd125b525f8e6968d583271fe194745152b6788a6ec4452b55d11dea0b1b",
+      "candidateSha256": "ce9bb417f06c50c043348bd4458f15e2c345b61534e77be278b510610ca20192",
+      "status": "REVIEWED_C3_LIFETIME_OR_C9_SELECTED_BEARING"
+    },
+    {
+      "path": "src/engine/renderable/WorldScene.ts",
+      "mainSha256": "4967e6396f75ac783376d7df377e7e3b6f1b5333b7ecfb8b0848d7aea6a836ba",
+      "candidateSha256": "4967e6396f75ac783376d7df377e7e3b6f1b5333b7ecfb8b0848d7aea6a836ba",
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "src/engine/renderable/entity/plugin/MindControlStatusPlugin.ts",
+      "mainSha256": "a3f8527bff5e844a406976b9f5f4910e1aef1ac92615b7528161d7d4595b9c50",
+      "candidateSha256": "a3f8527bff5e844a406976b9f5f4910e1aef1ac92615b7528161d7d4595b9c50",
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "src/engine/renderable/entity/plugin/mindControlStatusPalette.ts",
+      "mainSha256": null,
+      "candidateSha256": null,
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+      "mainSha256": "9c6f699a5fa124f12f626cca7f38735177e8affc35fbab4891c055e4239473f3",
+      "candidateSha256": "6e31a017a4f1e66cbb57db4c6f38b51b1c5e58a23d3ca350489e91041e152e17",
+      "status": "REVIEWED_C3_LIFETIME_OR_C9_SELECTED_BEARING"
+    },
+    {
+      "path": "src/game/art/Art.ts",
+      "mainSha256": "a23baece5eed800716b104dd8b16728b0680f4f00a2401c2c2979f2e4493e897",
+      "candidateSha256": "a23baece5eed800716b104dd8b16728b0680f4f00a2401c2c2979f2e4493e897",
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "src/gui/UiScene.ts",
+      "mainSha256": "76a504a4b03cda28c958020004eaa136c64c3ec13bd41e04b2170a79720210bf",
+      "candidateSha256": "76a504a4b03cda28c958020004eaa136c64c3ec13bd41e04b2170a79720210bf",
+      "status": "UNCHANGED"
+    }
+  ],
+  "retainedResourceDistPublicMetadata": {
+    "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/main-integration-20261010-v1/main-preserved-metadata-before.json",
+    "entries": 29309,
+    "sha256": "8d26909e91c235e2f1caf4c51e9ae8c7daf86b2dd6f2a93901d5900f461d9a28"
+  },
+  "sourceBranch": "perf/windows-hd-investigation",
+  "historicalResults": "Cumulative C1-C9 validated application source; diagnostic experiments remain opt-in tooling only. Sustained dense-scene smoothness remains open.",
+  "mainMerged": "a4a8b01d3c77ad1ffdd7c62bdc6ba6aff5960627",
+  "validation": {
+    "focusedMainTests": {
+      "pass": 46,
+      "fail": 0,
+      "assertions": 2644
+    },
+    "entryTypecheck": "PASS",
+    "validatedC9ApplicationSourceParity": "EXACT",
+    "preservedResourceDistPublicMetadataEntries": 29309,
+    "resourceDistPublicMetadataParity": "EXACT",
+    "nativeEvidence": "Reused exact C9 application source and frozen selectors; copied native zero-difference pixel/matrix checks remain applicable. No new Windows performance claim."
+  },
+  "remaining": "Late dense-scene Normal Windows 23.76-27.12 FPS remains open; current late trace identifies sustained renderer-thread CPU submission and matrix costs.",
+  "validationLogs": [
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/main-integration-20261010-v1/tests-before.log",
+      "bytes": 5811,
+      "sha256": "152d9de0b532ce0583fac7e0b89794bfe3911940c07cbc473ff37207ace02541"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/main-integration-20261010-v1/tests-main.log",
+      "bytes": 5506,
+      "sha256": "4b58e690302e1eb98f21a341c56114eca35b68939c75a30d024832953b1c7b25"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/main-integration-20261010-v1/typecheck.log",
+      "bytes": 39,
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/main-integration-20261010-v1/typecheck-main.log",
+      "bytes": 39,
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    }
+  ]
+}

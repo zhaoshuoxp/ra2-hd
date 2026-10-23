@@ -1,0 +1,19 @@
+# Helicopter rotor clearance and stationary bearings
+
+The user rejected the rear-mount screenshots from `fc6c926` and expanded this correction to the Allied front rotor and the Soviet main rotor. The earlier eight-bearing rear-height adjustment is superseded; those candidates and their evidence remain preserved and were not delivered as a new Desktop ZIP.
+
+The main rendering defect was fuselage depth. The folded HD sprite surface can extend above the physical body and obscure horizontal rotor blades. SHAD's shared reference starts at the rear rotor, making its previous ground-depth assumption particularly inappropriate. Helicopter body surfaces now recover the native body's height bounds along camera rays. Image projection, full belly coverage, authored alpha and atlas pixels remain unchanged. This does not restore invisible native voxel silhouette occluders.
+
+SHAD again uses one fixed rear-joint offset, with no bearing-dependent height. Stationary bearing housings connect its front and rear hubs to the airframe. The rear housing is slender so it fills the missing connection in rear-facing artwork without replacing the painted pylon. SCHP's main hub is anchored to its spin axis and lifted six native units, with a stationary bearing underneath. Its vertical tail rotor and deployed artwork remain unchanged. Housings inherit the native parent attitude, visibility, clipping and opacity, and do not spin with the blades. They add geometry, not atlas textures.
+
+Selected immutable resources are SHAD `mount-r7`, SCHP VXL `mount-r6` and SCHP family `mount-r6`. Every prior atlas, owner mask, body frame, source VXL/HVA hash and deployment member is retained. Rules, speed, camera, HD options and Original fallback remain unchanged. The shared correction is limited to live helicopter bodies with native rotor joints; other unit and building rendering paths retain their previous behavior.
+
+Focused checks cover unchanged screen projection and UV coverage, body depth inside native height bounds, stationary bearings across blade phases, complete family registration and preservation of the Soviet deployment and tail-rotor data. Native validation measures bearing-to-hub contact, rotor plane alignment, complete body UVs, natural rotor motion and flight/landing in both densities. Evidence and delivery receipts are under `.artifacts/helicopter-mount-r5/`. Final user visual acceptance remains separate from technical checks; continue feedback in this conversation.
+
+## Final package evidence
+
+Clean runtime source `e748dc8` passed 26 focused tests (15,232 assertions) and entry type checking. The exact packaged app/resource root passed 32 YR 4x and eight RA2 2x orientation/state samples, with three natural flight/landing recordings, zero reported runtime/GL errors, complete UV coverage, aligned rotor planes and stationary bearing contact. This is a bounded correction check; the older accepted matrix was not repeated.
+
+Measured world texture allocations were 482,888,628 bytes for the selected YR 4x fixture (limit 1,342,177,280) and 146,078,944 bytes for RA2 2x (limit 268,435,456). These are engine allocation counters, not physical GPU utilization measurements. All 16 helicopter atlas files and 2,752 resource files are byte-identical to the preceding delivered package; only three selected resource manifests change. Family availability is unchanged.
+
+The embedded `HELICOPTER-MOUNT-REVIEW.html` contains twelve screenshots and three full-buffer native recordings. Before/after pairs match heading and density but use independent fixtures and rotor phases. They compare the last delivered V2 package with this final package, not the rejected intermediate art. See `docs/helicopter-mount-delivery.json` for the final Desktop archive hash and extracted-file verification. macOS Apple Silicon technical checks pass; Windows was not run and final user visual acceptance remains pending.

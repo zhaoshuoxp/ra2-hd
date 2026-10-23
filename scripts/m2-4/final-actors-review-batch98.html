@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M2.4 / Final NewUrban actors / Batch 98</title>
+<style>
+:root {
+    color-scheme:dark;
+    font:18px/1.45 system-ui;
+    background:#101a21;
+    color:#e7edf1
+}
+
+body {
+    max-width:1480px;
+    margin:30px auto;
+    padding:0 22px
+}
+h1 {
+    font-size:34px
+}
+h2 {
+    font-size:27px;
+    margin-top:38px
+}
+
+p {
+    max-width:1100px;
+    color:#bacbd4
+}
+button,select,input {
+    font:inherit;
+    margin:5px;
+    padding:8px;
+    border-radius:7px
+}
+
+button,select {
+    background:#243743;
+    color:#edf4f7;
+    border:1px solid #567180
+}
+button {
+    cursor:pointer
+}
+
+.good {
+    color:#91d0a4
+}
+.controls {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:9px
+}
+
+.comparison {
+    display:flex;
+    gap:16px;
+    overflow-x:auto;
+    padding:15px 0
+}
+.cell {
+    background:#17252d;
+    min-width:180px;
+    padding:14px;
+    text-align:center
+}
+
+.cell h3 {
+    font-size:19px;
+    margin:0 0 10px
+}
+.cell canvas {
+    display:block;
+    margin:auto;
+    max-width:none
+}
+
+.cards {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:18px
+}
+
+figure {
+    margin:0;
+    padding:16px;
+    background:#17252d;
+    border:1px solid #304651;
+    border-radius:9px
+}
+
+figure img,video {
+    display:block;
+    max-width:100%;
+    height:auto;
+    margin:10px auto
+}
+figcaption {
+    color:#bdcdd5
+}
+
+.gallery {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(245px,1fr));
+    gap:14px
+}
+
+.gallery img {
+    max-width:100%;
+    object-fit:contain;
+    max-height:270px
+}
+.note {
+    font-size:16px;
+    color:#96aebc
+}
+
+details {
+    margin:20px 0
+}
+summary {
+    cursor:pointer;
+    padding:12px;
+    background:#243743
+}
+a {
+    color:#a9d8fa
+}
+
+</style>
+<h1>Final NewUrban actors · Batch 98</h1>
+<p>Review only the new CIV1 civilian and DNOA T-Rex. GAFWLL reuses accepted Yuri artwork exactly and needs no new art approval.</p>
+<p class="good">Mac arm64 · Original / 2X / 4X · native movement, damage, death, wall paths, release and re-entry verified.</p>
+<p>The reported blue-purple highlight comes from three original blue lamps and the map's cool ambient tint. <a href="#lighting">Matched Original / HD lighting evidence</a>.</p>
+<p>450 newly authored poses, each with complete 2X and 4X detail. DNOA's 212 unused physical slots retain Original compatibility data and receive no HD artwork credit. Existing map rules and animation timing are preserved.</p>
+<div id="actors"></div>
+<h2>Actual Mac game views</h2><p>Framebuffer crops retain their original pixels. Click an image for a full-size embedded view.</p>
+<div class="cards" id="native"></div>
+<h2 id="lighting">Reported highlight: Original and HD lighting</h2>
+<p>The original Manhattan map places three INBLULMP objects. Original, 2X and 4X use identical lamp coefficients. Temporarily hiding the lamp meshes removes the local cast; all source rules and lamp visibility are restored afterward. No lamp repair or map recoloring was needed.</p>
+<div class="cards" id="lamp-images"></div>
+<h2>Actual native action recordings</h2><p>These recordings use native orders and animation timing. They include the unchanged native contact shadow.</p>
+<div class="cards" id="clips"></div>
+<p class="note">All images and videos are embedded. No network, game package or external resource folder is needed. Windows: NOT_RUN. New artwork acceptance: pending. Full M2.4 closure remains separate.</p>
+<script id="review-data" type="application/json">__DATA__</script>
+<script>
+__SCRIPT__
+</script></html>

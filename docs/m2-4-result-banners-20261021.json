@@ -1,0 +1,101 @@
+{
+  "method": "Built-in image_gen reference reconstruction; text removed by generation; downsampled complete 2X/4X exports.",
+  "reference": ".artifacts/m2-4/retail-presentation-v1/original-result-banners.png",
+  "masters": [
+    {
+      "outcome": "victory",
+      "path": ".local/source-art/m2-4-result-banners-v1/victory-master.png",
+      "sha256": "0178e73363544098876cff399f539f1fa76b6a0b4329e00f821bd070d6577bcb",
+      "generatedSource": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-663d505f-e599-4a88-b78f-97f6413840c1.png",
+      "crop": [
+        0,
+        118,
+        2018,
+        635
+      ],
+      "nativeCroppedSize": [
+        2018,
+        517
+      ]
+    },
+    {
+      "outcome": "defeat",
+      "path": ".local/source-art/m2-4-result-banners-v1/defeat-master.png",
+      "sha256": "32cabd68caaeda6c4ef88ad75ec73518b2951604d01d14ef6580aa2e846d7212",
+      "generatedSource": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-f2e6b389-2a6f-4dea-9710-de5378bb47a9.png",
+      "crop": [
+        0,
+        116,
+        2032,
+        637
+      ],
+      "nativeCroppedSize": [
+        2032,
+        521
+      ]
+    }
+  ],
+  "family": {
+    "schema": "localized-result-banner-family-v1",
+    "logicalWidth": 436,
+    "logicalHeight": 112,
+    "assets": [
+      {
+        "outcome": "victory",
+        "density": 2,
+        "file": "result-victory-hd-v1-2x.png",
+        "sha256": "61c85e42d0fb6ddbee40d2d693f1904ef8e1f85c34af84b12fab15c72f848551",
+        "width": 872,
+        "height": 224
+      },
+      {
+        "outcome": "victory",
+        "density": 4,
+        "file": "result-victory-hd-v1-4x.png",
+        "sha256": "2de3b366af1942e3837bcf70d86382451c6b869cba4bb82130440b7a570ef492",
+        "width": 1744,
+        "height": 448
+      },
+      {
+        "outcome": "defeat",
+        "density": 2,
+        "file": "result-defeat-hd-v1-2x.png",
+        "sha256": "0defe58eff4ff3aba7c23d43ae50f995b622575f536974e946f2a849e8ca2d0c",
+        "width": 872,
+        "height": 224
+      },
+      {
+        "outcome": "defeat",
+        "density": 4,
+        "file": "result-defeat-hd-v1-4x.png",
+        "sha256": "4ddf4001c0a3a0c832232de90ac00e2c76dddf96bf04d198f8fb5b4497435e0c",
+        "width": 1744,
+        "height": 448
+      }
+    ]
+  },
+  "userAcceptance": "PENDING_NEW_RESULT_BACKGROUNDS_ONLY",
+  "files": [
+    {
+      "file": "defeat-master.png",
+      "bytes": 1410041,
+      "sha256": "32cabd68caaeda6c4ef88ad75ec73518b2951604d01d14ef6580aa2e846d7212"
+    },
+    {
+      "file": "original-reference.png",
+      "bytes": 157878,
+      "sha256": "20ef26dd659b954de7d9a67946a463f9002efb698fe6e50572493d5b0ce1f7d8"
+    },
+    {
+      "file": "authoring-prompts.json",
+      "bytes": 2872,
+      "sha256": "ec15c330aa291a14e846f935e00bcdb4bb17c41ffa71c94f9b26313e461d35c8"
+    },
+    {
+      "file": "victory-master.png",
+      "bytes": 1568057,
+      "sha256": "0178e73363544098876cff399f539f1fa76b6a0b4329e00f821bd070d6577bcb"
+    }
+  ],
+  "campaignStandby": "All four source frames remain available. Both reconstructed backgrounds serve distinct campaign/skirmish localized text slots; only skirmish outcomes run in this task."
+}

@@ -1,0 +1,192 @@
+{
+  "schema": "m2-1-final-acceptance-v1",
+  "date": "2026-10-07",
+  "status": "M2_1_SELECTED_SCOPE_USER_ACCEPTED_PLATFORM_INPUT_TAILS_REMAIN",
+  "branch": "task/m2-1-temperate-environment",
+  "worktree": "/Users/Aone/RA2remaster/ra2-hd-m2-1-temperate",
+  "recordSourceHead": "6e6b7f7f12004039bb7f297c3eb487be8f37a351",
+  "runtimeSourceHead": "6873a69b1cade4f9a2691637a19dbb06e603cf38",
+  "userAcceptance": {
+    "date": "2026-10-07",
+    "reviewedRevision": "temperate-m2-1-seams-v13d",
+    "decision": "ACCEPT_V13D_BOUNDED_SEAM_CORRECTION",
+    "statement": "Review approved; continue.",
+    "scope": "Dirt/paved-road color joins and grassy slope/fixup seams and highlights. Together with the accepted V12C remainder, all selected M2.1 appearance is accepted.",
+    "resource": {
+      "schemaVersion": 1,
+      "revision": "temperate-m2-1-seams-v13d",
+      "sha256": "47a93e1ae5c56150357dd3f040f654079de26f8c899ebbc923b3c099bbf97f38"
+    },
+    "reviewSha256": "c29078295d3add67c48ee50cbb0a0095ef7ceb65b6762478f2a05c5fc0e5fa70",
+    "followup": "User clarified: complete acceptance closure only.",
+    "boundary": "Record acceptance without changing art, runtime or delivery. No main integration, next batch, remote push, publication or cleanup."
+  },
+  "selectedResource": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-1-seams-v13d",
+    "sha256": "47a93e1ae5c56150357dd3f040f654079de26f8c899ebbc923b3c099bbf97f38"
+  },
+  "coverage": {
+    "receipt": "docs/m2-1-final-acceptance-20261007.json",
+    "status": "M2_1_SELECTED_SCOPE_USER_ACCEPTED_PLATFORM_INPUT_TAILS_REMAIN",
+    "resource": {
+      "schemaVersion": 1,
+      "revision": "temperate-m2-1-seams-v13d",
+      "sha256": "47a93e1ae5c56150357dd3f040f654079de26f8c899ebbc923b3c099bbf97f38"
+    },
+    "members": 305,
+    "images": 742,
+    "densityPairs": 1484,
+    "memberDecisions": {
+      "acceptedV12CRemainderMembers": 183,
+      "correctedMembers": 118,
+      "retainedContactOnlyMembers": 4
+    },
+    "nativeExceptions": "Native zero-offset slots and four contact-only Slope13 variants remain explicitly retained; acceptance does not imply new authored pixels in those slots."
+  },
+  "technical": "EXACT_PRESERVATION_AND_COPIED_NATIVE_2X_4X_PASS",
+  "macCopiedRuntime": "PASS_SELECTED_NATIVE_2X_4X",
+  "userAppearance": "ALL_SELECTED_M2_1_APPEARANCE_ACCEPTED",
+  "nativeEvidence": [
+    {
+      "file": ".artifacts/m2-1/copied-seams-v13d-2x/report.json",
+      "sha256": "cc41b760786c95b64e6c5d17e4c874a39144f51c1655a5591a144b45d7692b97",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "map": "xmp03t4.map",
+      "density": 2,
+      "placedBindings": 7962,
+      "declaredImages": 742
+    },
+    {
+      "file": ".artifacts/m2-1/copied-seams-v13d-4x/report.json",
+      "sha256": "d7a6c703d4124b7cd181ea2289f6bca422790cc96036e814f3b118c4d2191ee0",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "map": "xmp03t4.map",
+      "density": 4,
+      "placedBindings": 7962,
+      "declaredImages": 742
+    }
+  ],
+  "verification": {
+    "focusedM2Tests": {
+      "passed": 9,
+      "failed": 0,
+      "expectations": 34
+    },
+    "entryTypecheck": "PASS",
+    "copiedHashesLinksModes": "PASS_COPIED_HASHES_LINKS_MODES",
+    "signature": "PASS_DEEP_STRICT_ADHOC",
+    "embeddedReview": "PASS_30_EXACT_PAYLOADS_NO_EXTERNAL_MEDIA",
+    "closureChecks": "PASS_JSON_AND_LEDGER_COUNTS_RESOURCE_POINTER_MANIFEST_ALL_6_ATLAS_HASHES_NATIVE_RECEIPT_HASHES_REVIEW_HASH_AND_MAIN_STATUS",
+    "rerunBoundary": "Acceptance records only. Existing native/tests/package evidence is reused without rebuild or relabeling."
+  },
+  "delivery": {
+    "app": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/RA2 HD M2.1 Seam Review V13D.app",
+    "resources": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/RA2-HD-UI-Resources",
+    "review": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/M2.1-Seam-Review-V13D-Embedded.html",
+    "coverageScene": "grass-slope-full",
+    "reviewMasters": 5,
+    "originalReferences": 5,
+    "reviewMasterSizes": [
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ]
+    ]
+  },
+  "review": {
+    "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/M2.1-Seam-Review-V13D-Embedded.html",
+    "bytes": 140312980,
+    "sha256": "c29078295d3add67c48ee50cbb0a0095ef7ceb65b6762478f2a05c5fc0e5fa70"
+  },
+  "preservation": {
+    "exactV12CImageDensityPairs": 1076,
+    "correctedImageDensityPairs": 408,
+    "exactAcceptedFixupStonePixels": 6126,
+    "groundAtlases": "BYTE_IDENTICAL",
+    "nativeMetadataAlphaGeometryCameraRulesBudgets": "UNCHANGED",
+    "deliveryAppResourcesAndEmbeddedReview": "UNCHANGED",
+    "historicalReviewReceipt": "PRESERVED_UNCHANGED_WITH_ITS_ORIGINAL_PENDING_STATUS"
+  },
+  "evidencePins": [
+    {
+      "file": ".artifacts/m2-1/package-seams-v13d/package-receipt.json",
+      "sha256": "e2fd5b18c1188120c1a883336bc66cb643df811ef6582374b319a03e16d92366"
+    },
+    {
+      "file": ".artifacts/m2-1/copied-seams-v13d-verification.json",
+      "sha256": "3fdd21ebad751f9fa339b984d0026a5c193eb7ea6f1281854148a679238f9bf5"
+    },
+    {
+      "file": ".artifacts/m2-1/copied-seams-v13d-2x/report.json",
+      "sha256": "cc41b760786c95b64e6c5d17e4c874a39144f51c1655a5591a144b45d7692b97"
+    },
+    {
+      "file": ".artifacts/m2-1/copied-seams-v13d-4x/report.json",
+      "sha256": "d7a6c703d4124b7cd181ea2289f6bca422790cc96036e814f3b118c4d2191ee0"
+    },
+    {
+      "file": ".artifacts/m2-1/seams-v13d-embedded-verification.json",
+      "sha256": "2c94d1f5db4a0d533bb213edd9e6ad52aa543a9aafd25f164113092a76a72a78"
+    },
+    {
+      "file": ".artifacts/m2-1/seams-v13d-review-native.json",
+      "sha256": "68b9a2861a7de6d6f34752d59e36342a2e9dd1abee20b613a6cd8b1b00dd6f7a"
+    },
+    {
+      "file": ".artifacts/m2-1/seams-v13d-default-native.json",
+      "sha256": "7444bb8e8c0c9e5a5b0b3f1affdb0bef20a0e8d34198df0518c6a4d33d698682"
+    },
+    {
+      "file": ".artifacts/m2-1/seams-v13d-signature.log",
+      "sha256": "783ad76eda94e9db410716a27c1c99af58d5caa6c3f3348caf365bb5fb1c4f76"
+    },
+    {
+      "file": ".artifacts/m2-1/seams-v13d-transfer-inventory.json",
+      "sha256": "7703f6ee3f4924f5741fed7cee384a9b3aa3ee93a932f69c91de9df2396e51fa"
+    },
+    {
+      "file": ".artifacts/m2-1/production-v12c-transfer-inventory.json",
+      "sha256": "10203589735dd64a3daf68dfbf10dd326047d6cc3308951eb726077364230ef1"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/V13D-Review-Evidence.json",
+      "sha256": "6cb58f00925e2d4d220dece0cad993842ae7c9356bb230101d38ecca67d3ccaf"
+    }
+  ],
+  "mainPreservation": {
+    "head": "11be1b2119696f1777b66c503cf0b7cb1a131d62",
+    "status": "",
+    "taskWrites": "NONE"
+  },
+  "mainIntegration": "NOT_PERFORMED",
+  "remotePushPublicationCleanup": "NOT_PERFORMED",
+  "windows": "NOT_RUN",
+  "physicalCursorInput": "NOT_ACCEPTED",
+  "remaining": [
+    "Windows native checks and physical cursor/input acceptance"
+  ],
+  "nextScope": {
+    "decision": "ACCEPTANCE_CLOSURE_ONLY",
+    "smallestFutureProposal": "Separately inventory native thick-grass and adjoining LAT transitions before any production.",
+    "implementation": "NOT_STARTED",
+    "conversation": "Keep this execution conversation for fixes to the accepted M2.1 outcome. Recommend a new execution conversation when a later authorized objective materially expands; never create it automatically."
+  }
+}

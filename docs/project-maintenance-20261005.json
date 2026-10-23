@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "status": "COMPLETE_VERIFIED_UNIFIED_CONSOLIDATION",
+  "mainCheckpointBeforeFinalMaintenanceCommit": "eab251eedab7cd07ec655b8c71aff912332ce4a8",
+  "finalMainStateReceipt": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/main-integration-20261005/final-main-state.json",
+  "runtimeSourceHead": "ba7a6d27289e369a234ae96fda5a3ca29b7522f0",
+  "archiveRoot": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd",
+  "exactCleanupLedger": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/cleanup-ledger.json",
+  "relocationIndex": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/relocation-index.json",
+  "offlineIndex": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/index.html",
+  "restoreTool": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/restore.py",
+  "verifiedHistoryBundle": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/source-final-main.bundle",
+  "originalSeptemberBundle": "Preserved by exact bytes in the archive-2026-09-24-accepted-integration manifest.",
+  "rootsArchivedAndRemoved": 116,
+  "worktreesRetired": 10,
+  "mainOnlyRegisteredWorktree": true,
+  "gitBranches": "ALL_RETAINED",
+  "sourceRootAllocatedBytes": 639646715904,
+  "sourceAllocationMeaning": "Sum of file st_blocks per inventoried root, including APFS shared extents and repeated hardlink accounting; not physical reclaimed space.",
+  "uniqueObjectCount": 151959,
+  "uniqueObjectBytes": 76734106894,
+  "verificationStatus": "PASS_ALL_OBJECT_HASHES_MANIFESTS_AND_BOUNDED_RESTORE",
+  "boundedRestoreSamples": 711,
+  "restoreCopies": "Removed after successful verification as duplicate generated outputs; all originals remain in objects.",
+  "volume": {
+    "beforeArchiveAvailableBytes": 917504000000,
+    "finalAvailableBytes": 1323008000000,
+    "observedDeltaBytes": 405504000000,
+    "precision": "Coarse observed volume values corroborated by df; includes APFS/background changes and is not an exact private-block release measurement."
+  },
+  "postCleanup": {
+    "mainResources": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/main-integration-20261005/resources-main-post-cleanup.json",
+    "copiedResources": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/main-integration-20261005/resources-copied-post-cleanup.json",
+    "copiedDelivery": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/main-integration-20261005/retained-delivery-post-cleanup.json",
+    "status": "PASS_SELECTED_RESOURCE_BYTES_REGISTRATION_AND_COPIED_SIGNATURE",
+    "registeredFiles": 4778,
+    "packageEntries": 5480,
+    "runtimeSourceUnchanged": true
+  },
+  "rollback": {
+    "/Users/Aone/RA2remaster/ra2-hd-lunar-infantry-20261004/.artifacts/lunar-infantry/archive-v1/RA2-HD-Main-Lunar-Infantry-R1-20261004-c048f6f-macOS-arm64.zip": {
+      "file": "/Users/Aone/RA2remaster/rollback/RA2-HD-Main-Lunar-Infantry-R1-20261004-c048f6f-macOS-arm64.zip",
+      "sha256": "56d17fdbe20e2989da73a5175dfa3e9180d7158dfcff33807a0c70433507d0a5",
+      "bytes": 3267335396
+    },
+    "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12-macOS-arm64.zip": {
+      "file": "/Users/Aone/RA2remaster/rollback/RA2-HD-Yuri-Units-D-R12-macOS-arm64.zip",
+      "sha256": "e12c28d37348db5bede4c3d739b7249d2c03fe1c4a2625dbb13820c8923c98e0",
+      "bytes": 1855798492
+    }
+  },
+  "legacySnowExporterClosure": {
+    "root": "/Users/Aone/RA2remaster/ra2-hd/.local/archive-compat/soviet-snow-20260924",
+    "files": 148,
+    "bytes": 174773969,
+    "status": "PASS_EXCLUSIVE_HASH_COPY_AND_INPUT_READ"
+  },
+  "holds": [],
+  "trashEmptied": false,
+  "remotePush": false,
+  "combinedUserAcceptance": "PENDING_USER_TESTING",
+  "windows": "UNVERIFIED",
+  "diskMoney": "NATIVE_RUNTIME_FAILURE_RECORDED_UNRESOLVED"
+}

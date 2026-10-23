@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_DESKTOP_ZIP_EXTRACTED_LAUNCHER_NATIVE_4X_AND_PACKAGED_2X",
+  "baselineMainHead": "52d0fee2f88db4fa1474d9edf63f9b7433bc85a8",
+  "baselineRuntimeSourceHead": "ba7a6d27289e369a234ae96fda5a3ca29b7522f0",
+  "rootCause": "DiskDrain is FireOnce; after its attack task ended, passive acquisition selected the refinery free HARV. DrainTrait correctly stopped when the current attack target changed, before its first scheduled payment.",
+  "rangeHypothesis": "REJECTED_FOR_REPRODUCED_CURRENT_BASELINE: CellRangefinding true, footprint distance 1 within range 1.5, center distance 2.5.",
+  "baselineTicks": {
+    "start": 180,
+    "passiveHarvRetargetAndStop": 195,
+    "firstPaymentDue": 210
+  },
+  "repair": "Reserve pending drain intent by projectile identity; protect pending and active channels from automatic acquisition and retaliation; reject canceled or superseded impacts; preserve the already looping native DISKRAY during the active channel.",
+  "changedRuntimeFiles": [
+    "src/game/gameobject/trait/AttackTrait.ts",
+    "src/game/gameobject/trait/DrainTrait.ts",
+    "src/game/gameobject/Projectile.ts",
+    "src/game/gameobject/task/AttackTask.ts",
+    "src/game/gameobject/task/move/MoveInWeaponRangeTask.ts"
+  ],
+  "tests": {
+    "focused": "38 PASS / 384 assertions across 5 files",
+    "regressionBefore": "10 PASS / 2 FAIL after fixing the test fixture global-section lookup",
+    "entryTypecheck": "PASS"
+  },
+  "evidence": [
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/baseline-native-v1/report.json",
+      "sha256": "2d975b3b9e60e9888917294adfcea8cc0ae40b0e54efa0128b604dbae0601126",
+      "status": "FAIL"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/baseline-regression-v1/report.json",
+      "sha256": "b912c4c1ea12d7bafc99d67ffd9cf0d1ea46ab2557a89c4efe199800c8e1670d",
+      "status": "FAIL"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/fixed-2x-v1/report.json",
+      "sha256": "b01141fb61b67dd1516f4a3671f438ea84b4df965883c1ca678abebf06b83ad3",
+      "status": "PASS_SELECTED_NATIVE_CASES"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/fixed-4x-v1/report.json",
+      "sha256": "68d4b38afd7fa0b80c2caea8a34e35ef20ff32181aa6d6673272a5903cda159b",
+      "status": "PASS_SELECTED_NATIVE_CASES"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/desktop-money-4x-v1/report.json",
+      "sha256": "2148400373c0002efb01d5ee910e2715f89feaa24bb78882829071d632c0ca04",
+      "status": "FAIL"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/fixed-4x-v2/report.json",
+      "sha256": "0dd86d58f5927df2816e00da9f2b2ef9bbfe8329e10582fc67d709ba466d1006",
+      "status": "PASS_SELECTED_NATIVE_CASES"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/fixed-2x-v2/report.json",
+      "sha256": "83c059b16a17a53fbe505916235529453886c64222c59ec3ea18e13cba3a4dd2",
+      "status": "PASS_SELECTED_NATIVE_CASES"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/centered-2x-v1/report.json",
+      "sha256": "5d1be91c04fcc4ebcbe2fd7c85bc21ed8da162ee2bfc4fd14d2dedb78f679881",
+      "status": "FAIL"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/centered-diagnostic-v1/report.json",
+      "sha256": "3dfafa92164c91ab9a67142aae2597a88f34fa086cdfd1298ef5ea71aab42b20",
+      "status": "FAIL"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/centered-2x-v2/report.json",
+      "sha256": "73769dcd195797a08b7da8af44659ceaa01c71aa8e59f87bc26649a700dc2d15",
+      "status": "PASS_SELECTED_NATIVE_CASES"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/desktop-launcher-final/report.json",
+      "sha256": "b60cecf49b03afbc66b22626206e5b8fc7d6905548e97d952d9c57befd1eaf8b",
+      "status": "PASS_COPIED_LAUNCHER_DISCOVERY_HD_BINDINGS_AND_VISIBLE_CLICK_TARGET"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/desktop-centered-4x-final/report.json",
+      "sha256": "84d16a16181841264cf3725f9d354b2c93c2b4ce0a92a0672bc35d6ddf36f0bd",
+      "status": "PASS_SELECTED_NATIVE_CASES"
+    }
+  ],
+  "preservedResources": {
+    "cEntries": 33,
+    "dRuntimeFiles": 140,
+    "uiRevision": "lunar-infantry-ui-v1",
+    "uiEntries": 490,
+    "uiManifestSha256": "a8cf998c042066c05c119a6392e9b703ccd03622d89030e1dbf45089cd90ca18",
+    "preparedContract": {
+      "schemaVersion": 1,
+      "sha256": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604",
+      "indexPath": "prepared-hd/indexes/a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604.json"
+    },
+    "preparedRegistration": {
+      "type": "prepared-hd-registered",
+      "members": 459,
+      "pages": 1224,
+      "index": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604"
+    },
+    "status": "PASS_ALL_SELECTED_RESOURCES_UNCHANGED",
+    "checkedFiles": 4778,
+    "baseline": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/main-integration-20261005/resources-copied-final.json",
+    "current": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/resources-final.json"
+  },
+  "nativeCases": [
+    "Three consecutive conserved payments with the native delayed free HARV present",
+    "Stop ends payment and ordinary passive acquisition resumes",
+    "Explicit target replacement releases the old refinery and starts power blackout",
+    "Power blackout persists with the nearby HARV",
+    "Move cancels blackout",
+    "Captured refinery ends drain",
+    "Destroyed refinery ends drain",
+    "Refinery and power DISKRAY continue across multiple native four-frame loops",
+    "All five observed drain starts align with building world center at zero horizontal offset"
+  ],
+  "desktopDeliveryReceipt": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/desktop-delivery-final.json",
+  "historicalFailureReports": "RETAINED_UNCHANGED",
+  "userAcceptance": "PENDING_USER_TESTING",
+  "windows": "UNVERIFIED",
+  "remotePush": false,
+  "continuation": "Continue in the same conversation for testing and incremental fixes.",
+  "initialRepairRuntimeSourceHead": "66c57ed897871ab286239e2a15f8527242491d20",
+  "initialRepairLimitation": "Desktop retarget failed at tick 595: passive HARV acquisition preceded NAPOWR impact. Preserved desktop-money-4x-v1/report.json is FAIL.",
+  "animationRootCause": "The active drain was interrupted. Loaded retail DISKRAY has four frames and LoopCount=-1; the final animation plugin and original artwork are unchanged.",
+  "runtimeSourceHead": "c7e4c0e504ef589ce8d801c840bfde834b0ac18e",
+  "alignmentRepair": "Flying drain attacks approach the exact world center before firing, including fractional offsets for even foundations; the legacy balloon-hover center-tile gate is bypassed only for this approach.",
+  "alignmentAndAnimation2X": {
+    "alignment": [
+      {
+        "target": "NAREFN",
+        "offsetLeptons": 0
+      },
+      {
+        "target": "NAREFN",
+        "offsetLeptons": 0
+      },
+      {
+        "target": "NAPOWR",
+        "offsetLeptons": 0
+      },
+      {
+        "target": "NAREFN",
+        "offsetLeptons": 0
+      },
+      {
+        "target": "NAREFN",
+        "offsetLeptons": 0
+      }
+    ],
+    "animation": [
+      {
+        "target": "NAREFN",
+        "samples": 161,
+        "frames": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "maxLoop": 7,
+        "retailLoopCount": -1,
+        "continuous": true
+      },
+      {
+        "target": "NAPOWR",
+        "samples": 187,
+        "frames": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "maxLoop": 10,
+        "retailLoopCount": -1,
+        "continuous": true
+      }
+    ],
+    "pendingObserved": 5
+  },
+  "desktopDelivery": {
+    "archive": "/Users/Aone/Desktop/RA2-HD-Main-Disk-Fix-20261005-c7e4c0e-macOS-arm64.zip",
+    "bytes": 3292291545,
+    "sha256": "d6599ca1c87402e4830ac279c39ade174af9385a76451d529292b4485aa3475a",
+    "runtimeSourceHead": "c7e4c0e504ef589ce8d801c840bfde834b0ac18e",
+    "checkedEntries": 5480,
+    "excludedUserData": [
+      "Review-Profile"
+    ],
+    "status": "PASS_DESKTOP_ZIP_EXTRACTED_LAUNCHER_NATIVE_4X_AND_PACKAGED_2X",
+    "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/desktop-extraction-final/RA2-HD-Main-Disk-Fix-20261005-c7e4c0e-macOS-arm64/Red Alert 2 HD Disk Drain Fix 20261005.app",
+    "packageReceipt": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/package-centered-v2/package-receipt.json",
+    "extractedReceipt": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/extracted-final-package.json",
+    "zipVerification": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/desktop-zip-final-verification.json",
+    "extractionVerification": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/extracted-final-verification.json",
+    "launcherReport": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/desktop-launcher-final/report.json",
+    "native2X": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/centered-2x-v2/report.json",
+    "native4X": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/desktop-centered-4x-final/report.json",
+    "resources": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/resource-preservation-final.json",
+    "userAcceptance": "PENDING_USER_TESTING",
+    "windows": "UNVERIFIED",
+    "remotePush": false
+  },
+  "alignmentAndAnimation4X": {
+    "alignment": [
+      {
+        "target": "NAREFN",
+        "offsetLeptons": 0
+      },
+      {
+        "target": "NAREFN",
+        "offsetLeptons": 0
+      },
+      {
+        "target": "NAPOWR",
+        "offsetLeptons": 0
+      },
+      {
+        "target": "NAREFN",
+        "offsetLeptons": 0
+      },
+      {
+        "target": "NAREFN",
+        "offsetLeptons": 0
+      }
+    ],
+    "animation": [
+      {
+        "target": "NAREFN",
+        "samples": 183,
+        "frames": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "maxLoop": 8,
+        "retailLoopCount": -1,
+        "continuous": true
+      },
+      {
+        "target": "NAPOWR",
+        "samples": 200,
+        "frames": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "maxLoop": 11,
+        "retailLoopCount": -1,
+        "continuous": true
+      }
+    ],
+    "pendingObserved": 5
+  },
+  "nativeFunds": {
+    "2X": {
+      "before": {
+        "tick": 58,
+        "player": 10000,
+        "enemy": 10000
+      },
+      "after": {
+        "tick": 364,
+        "player": 10090,
+        "enemy": 9910
+      },
+      "payments": [
+        {
+          "tick": 304,
+          "player": 10030,
+          "enemy": 9970
+        },
+        {
+          "tick": 334,
+          "player": 10060,
+          "enemy": 9940
+        },
+        {
+          "tick": 364,
+          "player": 10090,
+          "enemy": 9910
+        }
+      ]
+    },
+    "4X": {
+      "before": {
+        "tick": 58,
+        "player": 10000,
+        "enemy": 10000
+      },
+      "after": {
+        "tick": 364,
+        "player": 10090,
+        "enemy": 9910
+      },
+      "payments": [
+        {
+          "tick": 304,
+          "player": 10030,
+          "enemy": 9970
+        },
+        {
+          "tick": 335,
+          "player": 10060,
+          "enemy": 9940
+        },
+        {
+          "tick": 364,
+          "player": 10090,
+          "enemy": 9910
+        }
+      ]
+    }
+  },
+  "validationLogs": {
+    "focusedTests": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/focused-tests-centered-v2.log",
+    "entryTypecheck": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/typecheck-centered-v3.log",
+    "signature": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/extracted-final-signature.log"
+  },
+  "retainedFailedDesktopCandidate": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/disk-drain-20261005/failed-desktop-candidate-66c57ed.zip"
+}

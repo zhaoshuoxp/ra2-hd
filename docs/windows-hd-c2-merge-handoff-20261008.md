@@ -1,0 +1,18 @@
+# C2 rendering repair handoff
+
+The focused C2 steady-state repair is validated on the target Windows Small reproducer and improves perceived smoothness. Residual occasional scrolling/first-use stalls remain open. This handoff prepares reviewable source; it does not authorize a concurrent merge or declare complete Windows, all-map, visual or physical-input acceptance.
+
+Frozen base is `d38f1366942f586a1a9df2964a40f05cc9db4cdc`; the C2 package/rendering source is `84d502e233382b9525d7c44820881bdf372d085f`. C1 is `ec50a8e41cac0ae8ecf14a3a42ae20b3e7db5b96`. The isolated branch is `perf/windows-hd-investigation`. Subsequent diagnostic tool/report commits do not relabel the package. See `windows-hd-c1-c2-ab-20261008.md` and JSON for exact incoming ZIP identities, source maps, all normal/trace metrics and limitations.
+
+Only two rendering paths differ from frozen main:
+
+- `src/engine/gfx/batch/HdSpriteEdges.ts`: force one double-sided coverage submission on sorted sprite cards. Retains geometry, bands, blending and accepted complete-family selection; volume casters are unaffected.
+- `src/engine/gfx/batch/MergedSpriteMesh.ts`: skip material acquisition/draw for the fully discarded hdPass=0 body, after coverage cloning; refresh on every batch update. Parent traversal stays visible, filtering off restores the nearest body, and castShadow keeps the body available. Opaque HD and Original nearest-indexed paths are unchanged.
+
+The source-only unified patch is `.artifacts/windows-hd-diagnostic/c2-validated-rendering.patch`, with its SHA in the AB JSON. It excludes diagnostic entry/schema, scripts, reports, maps, rules, art, catalogs, dist and profiles. Review it semantically against live main after coordinating with M2.3; never reset or select an older whole shared file. Matrix updates, inactive-layer mounting, native control rings and cache/resource ownership must remain intact. Read-only git apply --check passes against current clean main D38F136. M2.3 remains at 139897d and was untouched. No patch has been applied to main.
+
+Evidence: all 6033 resource hashes and fixed limits match A1/C1/C2; 24 focused tests/625 assertions and type checking pass. Fresh copied-Mac 2X/4X full-buffer comparisons have zero changed/restoration bytes with filtering on/off. Normal target Windows 4X warmed p95 falls from 48.495 to 18.180 ms; warmed/re-entry >33 ms counts fall 81/80 to 0/0. Trace links fall 86 to 2 and log-query CPU waits 1381.210 to 13.825 ms. Actual endpoint HD binding multisets match for every paired phase. The user reports clear improvement and no other observed anomalies in the tested session. C1's earlier no-noticeable-change feedback is preserved.
+
+Open boundary: initial/re-entry phases retain >100 ms counts 4/3, including isolated later submission stalls near native ticks 520 and 587-591. A local early-live probe identifies visible GAPOWR body/coverage first acquisitions and same-frame destruction/reacquisition of identical shader pairs; this is separate from C2's fully discarded body. Its exact Windows cold-phase cost still needs the single requested F9 trace. Both incoming ZIPs omit verification.json. No actual GPU execution timing, VRAM/budget, all-map matrix or broad physical-input acceptance is claimed.
+
+Continue the current execution conversation for the residual trace using existing C2 Small 4X Normal, F9 once about five seconds after the match appears. Do not start another candidate from hypotheses alone. Preserve all prior ZIPs, raw traces, invalid/failure receipts and the rejected early-hook-boundary experiment. Keep the existing planning conversation for later integration coordination; no push, publication or concurrent map work was performed here.

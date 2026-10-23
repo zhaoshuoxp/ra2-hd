@@ -1,0 +1,4178 @@
+{
+  "schemaVersion": 1,
+  "taskId": "D",
+  "status": "ACCEPTED_READY_FOR_MAIN_CONVERSATION_MERGE",
+  "branch": "task/d-yuri-units-hd",
+  "implementationHead": "b4e3cc0c2ee83139d1eea9d99236f963fb544f55",
+  "runtimeSourceHead": "484e8850cc8b8bf4903660d769e241fef42e6bb2",
+  "mergeBase": "ee35fcf04de2d24c1bce2ee7497e4156483b21f1",
+  "observedMainHead": "07de40c261c7e8367f70df2a993d4067c52000ce",
+  "observedMainStatus": "",
+  "readOnlyPreflight": true,
+  "mainModifiedByThisHandoff": false,
+  "overlappingChangedPaths": [
+    "desktop/hd-profile.mjs",
+    "desktop/main.mjs",
+    "desktop/profile.mjs",
+    "src/engine/ImageFinder.ts",
+    "src/engine/renderable/builder/loadSovietUnitsHd.ts",
+    "src/engine/renderable/builder/resolveHdSprite.ts"
+  ],
+  "catalog": "desktop/yuri-unit-contracts.json",
+  "catalogSha256": "ad73dfc1171f386c1b16884924851792e3858a1b63380a0e0bb77c7db8e93443",
+  "sourceFiles": [
+    {
+      "file": "desktop/hd-profile.mjs",
+      "change": "M",
+      "sha256": "513210abd2ff67216134834a999608e7fb501d31d842aea032e9f058db1f7101",
+      "baseSha256": "6e2bfc123d1875f5a6733abd7bcff0b09f128700f323dfd2ecaa526873713f75",
+      "observedMainSha256": "2eb926f73b8f688d4623af39357e4abda08fbbd07d7bfe12a36256af98f65153",
+      "changedInBothBranches": true,
+      "semanticChange": "Add the separate Yuri catalog, unique YR SHP selections, independent VXL densities and atomic miner registration; retain baseline manifest routes."
+    },
+    {
+      "file": "desktop/main.mjs",
+      "change": "M",
+      "sha256": "3b64f80a91d0f4321c7935587999d4a6239501df0bd6f7f3ca4996d64aa6f853",
+      "baseSha256": "9d3295ed39cdc700d9592965dbe56984dc0306c47b7a517c926eb4b2093f6368",
+      "observedMainSha256": "8017422f142fd4b6598a3bfa8e3590fcad591fc6cf73acdd6ed18b8cbe5e8c4b",
+      "changedInBothBranches": true,
+      "semanticChange": "Recognize the unique Task D review milestone and isolated profile."
+    },
+    {
+      "file": "desktop/profile.mjs",
+      "change": "M",
+      "sha256": "3f526fc88cbc5a7bba86451f1992db9354b38dd2f976f0661e0c426dfab119ca",
+      "baseSha256": "9d957e620bbd1a728a3d3371dc9f5eb6bd855d3acc9153da226d04e52cf6b255",
+      "observedMainSha256": "70712e0ce4503ae0d6b6b25984d43e4070588893f4ce614069d7f5995447eeaf",
+      "changedInBothBranches": true,
+      "semanticChange": "Admit only exact hash-matched Yuri source contracts."
+    },
+    {
+      "file": "desktop/yuri-unit-contracts.json",
+      "change": "A",
+      "sha256": "ad73dfc1171f386c1b16884924851792e3858a1b63380a0e0bb77c7db8e93443",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "Select the additive YURIPR r4 rigid hover family; retain the other accepted complete-family registrations."
+    },
+    {
+      "file": "src/engine/Animation.ts",
+      "change": "M",
+      "sha256": "f25a80fabfb6224690be2d7d85abc97f3e1425a044a613acd3bfacb6ed41ca41",
+      "baseSha256": "66b3010e8e5839a0b75c2386103470a47523c4467d836609bf6d8998573ead72",
+      "observedMainSha256": "66b3010e8e5839a0b75c2386103470a47523c4467d836609bf6d8998573ead72",
+      "changedInBothBranches": false,
+      "semanticChange": "Expose fractional native animation progress for adjacent palette-frame interpolation."
+    },
+    {
+      "file": "src/engine/ImageFinder.ts",
+      "change": "M",
+      "sha256": "fbf07a1a8856348be9f5a99065477286e314f070d1617380d1b25361baa1e210",
+      "baseSha256": "789f82aebf9bd325f4c9ba4c93854351d726a6eb69bfdcf8d29bfc7d560547d2",
+      "observedMainSha256": "90c6c51b28ce56aa20f04669fa84766423777c2a2ab577a729f1dc6ca3ce0072",
+      "changedInBothBranches": true,
+      "semanticChange": "Admit exact edition-aware Yuri identities, engineer/slave aliases and active HD vehicle lookup; preserve main prepared-cache and building admissions."
+    },
+    {
+      "file": "src/engine/renderable/builder/loadSovietUnitsHd.ts",
+      "change": "M",
+      "sha256": "603db6316e202e840774aa51911f2e6e202ea166e4af8f5ecf7ff0ee763749f2",
+      "baseSha256": "fc6e2476586d0fd75ee6b9532c427f26ce22322bc8fca32a596d64974f3a0601",
+      "observedMainSha256": "d099ec7452fd6b2897f41db1e1bbc3d2e5aa7d951b82d56e9acb78e8730bd78e",
+      "changedInBothBranches": true,
+      "semanticChange": "Reuse shared demand loading with separate Yuri selectors and same-density miner acquisition."
+    },
+    {
+      "file": "src/engine/renderable/builder/resolveHdSprite.ts",
+      "change": "M",
+      "sha256": "b4b490915e579b63e669e49b46fb4fdb6fb82add9d50714c86c9c992a771e1b0",
+      "baseSha256": "fae08f2c4a6a43d286c761e6bbc18f8cddb1e9273981bb0aba00e7423c370d44",
+      "observedMainSha256": "6ae6c78a3a696befb36a7723097814200a3a2ab0af5e1f494d04587b9199cba7",
+      "changedInBothBranches": true,
+      "semanticChange": "Admit the pinned Yuri source set into the existing pooled SHP path."
+    },
+    {
+      "file": "src/engine/renderable/builder/resolveMixedUnitFamily.ts",
+      "change": "M",
+      "sha256": "83a652fc87ec5b10343a1c526b1e5bd9bb98476c0e03c204a3cdfe31cc7cda38",
+      "baseSha256": "6303d827a34864082af10768e01d75ae9a861fb74eb335bbb5ff4c7c2846bbff",
+      "observedMainSha256": "6303d827a34864082af10768e01d75ae9a861fb74eb335bbb5ff4c7c2846bbff",
+      "changedInBothBranches": false,
+      "semanticChange": "Add optional same-density complete-family transactions with release before retry."
+    },
+    {
+      "file": "src/engine/renderable/builder/sharedYuriUnitHd.ts",
+      "change": "A",
+      "sha256": "0195ece544e78758012aa2ec2054cae527f0bd2e03f65bf8112fce3f8291fdf6",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "New Task D source-contract helper or separate Yuri catalog."
+    },
+    {
+      "file": "src/engine/renderable/builder/unitHdFamilies.ts",
+      "change": "M",
+      "sha256": "89493209f150567ab4a6295137a3d5616107719ad3936f0f522a2e7f4eeb71ba",
+      "baseSha256": "6c4a42dab79e6f0393a0f08e983c6fbcb72825d828bf573d0b8da7888eca2481",
+      "observedMainSha256": "6c4a42dab79e6f0393a0f08e983c6fbcb72825d828bf573d0b8da7888eca2481",
+      "changedInBothBranches": false,
+      "semanticChange": "Filter legacy contracts by edition before merging the additive Yuri catalog."
+    },
+    {
+      "file": "src/engine/renderable/builder/yuriUnitHdSources.ts",
+      "change": "A",
+      "sha256": "afe58d0cb1d37d293300b996e2778c1161347f43c3aee99280a61c67681bd048",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "New Task D source-contract helper or separate Yuri catalog."
+    },
+    {
+      "file": "src/engine/renderable/entity/Anim.ts",
+      "change": "M",
+      "sha256": "23b1a33540bf77b7434fe7653bf72be7f71619ab36ecb0972e33eb4bd98f77a0",
+      "baseSha256": "f1f7b17b395314e271ea752cd9389361828cc4dbc741b0b53cdcaf4ed6d76f0c",
+      "observedMainSha256": "f1f7b17b395314e271ea752cd9389361828cc4dbc741b0b53cdcaf4ed6d76f0c",
+      "changedInBothBranches": false,
+      "semanticChange": "Bound invalid native sampled frames and activate continuous native CDGAS motion only for loaded HD CAOS; preserve timing and other animations."
+    },
+    {
+      "file": "src/engine/renderable/entity/ChaosGasMotion.ts",
+      "change": "A",
+      "sha256": "bc7390e1bf3e5ac248d90daa1f5d097a071404ae783b5294fb9e92b9ec85d779",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "Share native 40-frame palette resolution and interpolate cloud emission/expansion/dissipation with owned draw teardown."
+    },
+    {
+      "file": "src/engine/renderable/entity/Projectile.ts",
+      "change": "M",
+      "sha256": "9900a006db71e21d90dc8740f966dd06cb9e490aa5f5ddb12dd14c488d1abcda",
+      "baseSha256": "e05390a94024b9ee0006b510bb52cf8cccf8e713619f5edf235a8f304dffe82f",
+      "observedMainSha256": "e05390a94024b9ee0006b510bb52cf8cccf8e713619f5edf235a8f304dffe82f",
+      "changedInBothBranches": false,
+      "semanticChange": "Retain prior native effects and attach gattling muzzle animations to displayed gun tips."
+    },
+    {
+      "file": "src/engine/renderable/entity/RenderableFactory.ts",
+      "change": "M",
+      "sha256": "ae7cd8b6b68489eed2f6fe70ba1d14a3f8fd952ddca7aa2853e25da87c1141ef",
+      "baseSha256": "63d7eaf4728e47f10a4c8db583f0f52be5148af0602043f65841f80c59f85550",
+      "observedMainSha256": "63d7eaf4728e47f10a4c8db583f0f52be5148af0602043f65841f80c59f85550",
+      "changedInBothBranches": false,
+      "semanticChange": "Attach persistent magnetic-lift presentation to eligible native victims."
+    },
+    {
+      "file": "src/engine/renderable/entity/plugin/MagneticLiftBeamPlugin.ts",
+      "change": "A",
+      "sha256": "22bda76563e7ff861b678e3c8f511ba51038100c99bf8245f1f89741927c3468",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "Use the live paired-barrel source and selected bottom contact while preserving native magnetic-lift lifecycle."
+    },
+    {
+      "file": "src/engine/renderable/entity/plugin/MindControlLinkPlugin.ts",
+      "change": "M",
+      "sha256": "e30042aba0559885877ce901df3aa841afd94fa5262e6f6966a5cf41a31c800b",
+      "baseSha256": "d3bfb01baf339162db56d8315b5dafd442b4cb5fb4dfbe26932db81bb37ef7d2",
+      "observedMainSha256": "d3bfb01baf339162db56d8315b5dafd442b4cb5fb4dfbe26932db81bb37ef7d2",
+      "changedInBothBranches": false,
+      "semanticChange": "Follow live control ownership and registered roof/crown arc sources with native visibility and cleanup."
+    },
+    {
+      "file": "src/engine/renderable/entity/plugin/magneticBeamAttachments.ts",
+      "change": "A",
+      "sha256": "47bd2e4cac56f4936abdd75ed9a37142ee17a3b0fc53dbe831c9f64f32625163",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "Emit between paired Magnetron barrels and retain selected partial visible hull contact."
+    },
+    {
+      "file": "src/engine/renderable/entity/plugin/mindControlSource.ts",
+      "change": "A",
+      "sha256": "95ac60a1e94b04207f0e16de5b553fe49adba94c63e383bf402251b2bb31ecac",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "Locate controller roof/crown from visible registered body coverage, excluding platform and shadows."
+    },
+    {
+      "file": "src/engine/renderable/fx/DiscLaserFx.ts",
+      "change": "A",
+      "sha256": "70b337d6372dbbd6cfd06e547536cf83f36dc3fc45461c75c29ee4354103091f",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "Animate a circumference sweep followed by a ray within the native LaserDuration; retain damage/cooldown timing."
+    },
+    {
+      "file": "src/engine/renderable/fx/MagneticBeamFx.ts",
+      "change": "A",
+      "sha256": "69b403253248aa99bba5404e8cc5d8a24d63a100df91a29f41ffad556c1f3096",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "Use broad vivid smooth semi-transparent purple emission; retain live targets, selected contact and stop cleanup without added white noise."
+    },
+    {
+      "file": "src/engine/renderable/fx/MindControlLinkFx.ts",
+      "change": "M",
+      "sha256": "3556d298a2a3fbfabf0319a23bdd16672e14b3903e7b277464b2e11afff2aa8f",
+      "baseSha256": "6be92a54308034cb2d33a0cc2a3216014b8ac8ab3969347bb19f9abc9da17a29",
+      "observedMainSha256": "6be92a54308034cb2d33a0cc2a3216014b8ac8ab3969347bb19f9abc9da17a29",
+      "changedInBothBranches": false,
+      "semanticChange": "Touch explicit source and target attachment points without an extra uniform vertical bias."
+    },
+    {
+      "file": "src/engine/renderable/unitVxl/DiscSurfaceSpin.ts",
+      "change": "A",
+      "sha256": "61e6899951b2294bd0a0d95bc4d04e5308a187d7dea357efed3708bee8a27c35",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "Orbit gold rim, red collar and cabin marks around projected conical surfaces with fixed alpha; synchronize base/remap and coverage phase."
+    },
+    {
+      "file": "src/engine/renderable/unitVxl/GattlingBarrelSpin.ts",
+      "change": "A",
+      "sha256": "476e09d3974c78376abcccc22f7ae609e1ea9fe6378b016c78eed9f313e40c18",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "Render increasing native-heat-driven paired gun-face spin and live muzzle anchors without changing rate of fire or damage."
+    },
+    {
+      "file": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+      "change": "M",
+      "sha256": "1a30b73cd297eda56c21da1bfd844c1f005083d3fb81be08ff8223f0a0282d37",
+      "baseSha256": "bd3e37437ffc29a7cd401628a8ee529004dffeccd1bcf5a8f5c2c14f86acb336",
+      "observedMainSha256": "bd3e37437ffc29a7cd401628a8ee529004dffeccd1bcf5a8f5c2c14f86acb336",
+      "changedInBothBranches": false,
+      "semanticChange": "Preserve accepted native silhouette and part transforms; use fixed coverage for DISK surface orbit and attach staged Gattling presentation to live barrels."
+    },
+    {
+      "file": "src/engine/renderable/unitVxl/identities.ts",
+      "change": "M",
+      "sha256": "1768f6368457bb20de84c95460d41ad51f2a77c055dde25705579412777ef993",
+      "baseSha256": "ae63295af77e6e02e897a2a59032c0f32696856a5a268df059def9c63051fc5d",
+      "observedMainSha256": "ae63295af77e6e02e897a2a59032c0f32696856a5a268df059def9c63051fc5d",
+      "changedInBothBranches": false,
+      "semanticChange": "Add Yuri VXL identity entries and independent density variants."
+    },
+    {
+      "file": "src/engine/renderable/unitVxl/loadVxlFamily.ts",
+      "change": "M",
+      "sha256": "dd69e40bc4503f5c03533b70052925f8910e7b8ce8204402e4fb3d106fb34828",
+      "baseSha256": "daa7858a90c2ef4f7aa1f86107566ea8b5201c2afa0c464b7d8b168a12327a6b",
+      "observedMainSha256": "daa7858a90c2ef4f7aa1f86107566ea8b5201c2afa0c464b7d8b168a12327a6b",
+      "changedInBothBranches": false,
+      "semanticChange": "Choose one complete 4x or 2x variant and preserve baseline loading behavior."
+    },
+    {
+      "file": "src/game/Weapon.ts",
+      "change": "M",
+      "sha256": "eba83747474800d97bcd6e151bb9dc6e18124dddbcb809c8ebc7d20b91b95323",
+      "baseSha256": "20ebfbde092c050c07211279fa0d4fba75bb027b6d98b9cc575241a5fb28fdb9",
+      "observedMainSha256": "20ebfbde092c050c07211279fa0d4fba75bb027b6d98b9cc575241a5fb28fdb9",
+      "changedInBothBranches": false,
+      "semanticChange": "Resolve native AreaFire projectile targets at the caster while preserving enemy acquisition and range checks."
+    },
+    {
+      "file": "src/game/gameobject/trait/ArmedTrait.ts",
+      "change": "M",
+      "sha256": "383256a96017d89efc39dbb728c85b3c1802a50e022c58742a300f36242172f2",
+      "baseSha256": "7c18f6c48e40d9a173bb6c82f76ef45cb10bc7895085fbe8b1f852fd75abddb3",
+      "observedMainSha256": "7c18f6c48e40d9a173bb6c82f76ef45cb10bc7895085fbe8b1f852fd75abddb3",
+      "changedInBothBranches": false,
+      "semanticChange": "Resolve unusable vehicle deploy scanner to the usable AreaFire weapon and retain explicit/infantry selection."
+    },
+    {
+      "file": "src/game/gameobject/trait/AttackTrait.ts",
+      "change": "M",
+      "sha256": "7d633c3c5bf24090782b7e0260491487f53d92adfba46821b90618f6204cdedf",
+      "baseSha256": "3bb1d32f4a0ae01fd54f919eefef0442615dcf23e7874e8aaa5c0f5e0c6a51bb",
+      "observedMainSha256": "3bb1d32f4a0ae01fd54f919eefef0442615dcf23e7874e8aaa5c0f5e0c6a51bb",
+      "changedInBothBranches": false,
+      "semanticChange": "Retain vehicle AreaFire attack weapon in manual/deployed paths while keeping the ordered enemy for range acquisition."
+    },
+    {
+      "file": "src/game/gameobject/trait/DeployerTrait.ts",
+      "change": "M",
+      "sha256": "380da6b915b184b29f5f7528683668d45ccf50d12c56e0a0100182228e6edd8d",
+      "baseSha256": "9392c9c4e0bd4e13bb4de56ace4cf2d499f710f24b968da057f769798596e2a6",
+      "observedMainSha256": "9392c9c4e0bd4e13bb4de56ace4cf2d499f710f24b968da057f769798596e2a6",
+      "changedInBothBranches": false,
+      "semanticChange": "Allow vehicle AreaFire deployment and pause auto-undeploy until a one-shot deploy fires, preserving cooldown and manual cancellation."
+    },
+    {
+      "file": "src/game/gameobject/trait/TurretTrait.ts",
+      "change": "M",
+      "sha256": "aabd7c6eab06a8b028d742f3df6dce29f390662f0812eb61884a2d17dcfe18fd",
+      "baseSha256": "40ef2076e3c89da9b30848392bc9ab65517380df0acaa48d44a672488672bd50",
+      "observedMainSha256": "40ef2076e3c89da9b30848392bc9ab65517380df0acaa48d44a672488672bd50",
+      "changedInBothBranches": false,
+      "semanticChange": "Use 11.25 degrees per tick for native idle TurretSpins, separate from fast targeting ROT; preserve ordinary aim."
+    },
+    {
+      "file": "src/game/rules/TechnoRules.ts",
+      "change": "M",
+      "sha256": "511e9ed1f310f49479ec8861c2bac80ebcdd90e848a8c53a4e5a76a7b039595d",
+      "baseSha256": "fa4b71a045e96af436220931774a67ad27d2a9bf2c74886f3b7b32e91e679ffc",
+      "observedMainSha256": "fa4b71a045e96af436220931774a67ad27d2a9bf2c74886f3b7b32e91e679ffc",
+      "changedInBothBranches": false,
+      "semanticChange": "Admit the native TurretSpins flag without changing retail rule files."
+    },
+    {
+      "file": "src/game/rules/WeaponRules.ts",
+      "change": "M",
+      "sha256": "80f4fa439a6227dbe29e25a866c13561a6e88ba94fc6d5273e8985946b68369b",
+      "baseSha256": "01e957a31080f9ae544a829e9d164a129fd5a2bf518b0c33403d86fa916da9d2",
+      "observedMainSha256": "01e957a31080f9ae544a829e9d164a129fd5a2bf518b0c33403d86fa916da9d2",
+      "changedInBothBranches": false,
+      "semanticChange": "Parse native DiskLaser and its explicit inner/outer colors; retain IsLaser semantics."
+    },
+    {
+      "file": "src/game/weaponAreaTarget.ts",
+      "change": "A",
+      "sha256": "86c15a2cd1a7e9430b8b0d59880f237f713ff0700e89e760b07c3bbe16cb1868",
+      "baseSha256": null,
+      "observedMainSha256": null,
+      "changedInBothBranches": false,
+      "semanticChange": "Keep caster-centered AreaFire targeting separate from unchanged ordinary enemy targeting."
+    }
+  ],
+  "resources": [
+    {
+      "path": "hd-packs/yuri-brute-authored/r1/2x-p0-base.png",
+      "sha256": "e2c8d7052b675a0442f6e38b85c8f286b0ba0cfb22314ef8699febd8f61bee4d",
+      "bytes": 1963453,
+      "owners": [
+        "BRUTE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-brute-authored/r1/2x-p0-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-brute-authored/r1/2x-p0-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-brute-authored/r1/2x-p0-data.png",
+      "sha256": "e6d402aaf3d9e064db96d03e09cb35b6f3cfed88fcd8cfa6554eee0b9821c35b",
+      "bytes": 179250,
+      "owners": [
+        "BRUTE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-brute-authored/r1/2x-p0-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-brute-authored/r1/2x-p0-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-brute-authored/r1/4x-p0-base.png",
+      "sha256": "fe5bb1347c9c3b41015f21d408b5c8f1692d328fe098cb709dd1f7056c5fe980",
+      "bytes": 3485298,
+      "owners": [
+        "BRUTE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-brute-authored/r1/4x-p0-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-brute-authored/r1/4x-p0-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-brute-authored/r1/4x-p0-data.png",
+      "sha256": "036e8aac7e26b639a08080c188569a85c226c6cc02706397d22c34665476e538",
+      "bytes": 273042,
+      "owners": [
+        "BRUTE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-brute-authored/r1/4x-p0-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-brute-authored/r1/4x-p0-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-brute-authored/r1/4x-p1-base.png",
+      "sha256": "377db69bc8d3f19a0714168032ed74ae79bcd90801a1ae24f1a8b84e2c926c5e",
+      "bytes": 3007709,
+      "owners": [
+        "BRUTE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-brute-authored/r1/4x-p1-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-brute-authored/r1/4x-p1-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-brute-authored/r1/4x-p1-data.png",
+      "sha256": "1ba58a3c344c98806291d9ff5ba79abb0c082aafc095090700c6ec103daefe9e",
+      "bytes": 237885,
+      "owners": [
+        "BRUTE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-brute-authored/r1/4x-p1-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-brute-authored/r1/4x-p1-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-brute-authored/r1/manifest.json",
+      "sha256": "5aa65d1a94d3665b2de2542c4b8f617c5d9e1d0242ada15f00337aa78f1e39e4",
+      "bytes": 238510,
+      "owners": [
+        "BRUTE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-brute-authored/r1/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-brute-authored/r1/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-brute-family/r1/family.json",
+      "sha256": "2458674fcf656fafdedca9eedbca7b9efeb0b9a510338a17f34c6204db2e6174",
+      "bytes": 259,
+      "owners": [
+        "BRUTE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-brute-family/r1/family.json",
+      "relativeDestination": ".local/hd-packs/yuri-brute-family/r1/family.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-bsub-vxl/r1-2x/BSUB-bsub-DUMMY01-base.png",
+      "sha256": "e8c30d88300c0ed06ce1f6ce21ecfcd373dd790d59e1da21771e434000555484",
+      "bytes": 137156,
+      "owners": [
+        "BSUB"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-bsub-vxl/r1-2x/BSUB-bsub-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-bsub-vxl/r1-2x/BSUB-bsub-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-bsub-vxl/r1-2x/BSUB-bsub-DUMMY01-data.png",
+      "sha256": "a4391a60ae97b9b3c262be1276e159b90d04ddfc3be97b5b4b25780773b0dbad",
+      "bytes": 9561,
+      "owners": [
+        "BSUB"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-bsub-vxl/r1-2x/BSUB-bsub-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-bsub-vxl/r1-2x/BSUB-bsub-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-bsub-vxl/r1-2x/CMISL-bsubmisl-DUMMY01-base.png",
+      "sha256": "c21b8069e8a970429b583045660f069a4d68cabce8fa9e61a4676588f01bcbc3",
+      "bytes": 15921,
+      "owners": [
+        "BSUB"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-bsub-vxl/r1-2x/CMISL-bsubmisl-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-bsub-vxl/r1-2x/CMISL-bsubmisl-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-bsub-vxl/r1-2x/CMISL-bsubmisl-DUMMY01-data.png",
+      "sha256": "11fffcf15a640e6d39cd07544ca22888c250aab0e00c5769d2554c00879a8b64",
+      "bytes": 2677,
+      "owners": [
+        "BSUB"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-bsub-vxl/r1-2x/CMISL-bsubmisl-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-bsub-vxl/r1-2x/CMISL-bsubmisl-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-bsub-vxl/r1-2x/manifest.json",
+      "sha256": "d7ad9cd8910d283a6df8dd33b3cd01f100126e677c7f9717e1dd9806ca319591",
+      "bytes": 29142,
+      "owners": [
+        "BSUB"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-bsub-vxl/r1-2x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-bsub-vxl/r1-2x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-bsub-vxl/r1-4x/BSUB-bsub-DUMMY01-base.png",
+      "sha256": "bd1db2871a54e39acab0b65b1eefc80698ede8e3f109ba03d010fb4d7b775d9b",
+      "bytes": 488295,
+      "owners": [
+        "BSUB"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-bsub-vxl/r1-4x/BSUB-bsub-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-bsub-vxl/r1-4x/BSUB-bsub-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-bsub-vxl/r1-4x/BSUB-bsub-DUMMY01-data.png",
+      "sha256": "36334f2a2cb5cf2813303e79d29375a8e32e040d5366c848c7f5a8f917ce37a6",
+      "bytes": 25821,
+      "owners": [
+        "BSUB"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-bsub-vxl/r1-4x/BSUB-bsub-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-bsub-vxl/r1-4x/BSUB-bsub-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-bsub-vxl/r1-4x/CMISL-bsubmisl-DUMMY01-base.png",
+      "sha256": "0f46e88e7996c4d546220006a9d18539146984374576ae534e9ba654502a55b0",
+      "bytes": 49824,
+      "owners": [
+        "BSUB"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-bsub-vxl/r1-4x/CMISL-bsubmisl-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-bsub-vxl/r1-4x/CMISL-bsubmisl-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-bsub-vxl/r1-4x/CMISL-bsubmisl-DUMMY01-data.png",
+      "sha256": "6849800e7e5bda1e547632308ca5db635cb6fcb844687c34c417b8ec37943b24",
+      "bytes": 6644,
+      "owners": [
+        "BSUB"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-bsub-vxl/r1-4x/CMISL-bsubmisl-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-bsub-vxl/r1-4x/CMISL-bsubmisl-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-bsub-vxl/r1-4x/manifest.json",
+      "sha256": "fb103d6bc36073b8c071306913875d5b3d1980183f4c407a72f561a656f5302a",
+      "bytes": 29169,
+      "owners": [
+        "BSUB"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-bsub-vxl/r1-4x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-bsub-vxl/r1-4x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-caos-vxl/r1-2x/CAOS-caos-DUMMY01-base.png",
+      "sha256": "d834c4debebb23794ea0713b45fec6eac3e583226c87ccdb2fe771f882fd25e7",
+      "bytes": 79267,
+      "owners": [
+        "CAOS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-caos-vxl/r1-2x/CAOS-caos-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-caos-vxl/r1-2x/CAOS-caos-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-caos-vxl/r1-2x/CAOS-caos-DUMMY01-data.png",
+      "sha256": "ddd7601e3d375da53651597bdcf49ae8bc49dd668ebf7d81a55de4c94919db5b",
+      "bytes": 6808,
+      "owners": [
+        "CAOS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-caos-vxl/r1-2x/CAOS-caos-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-caos-vxl/r1-2x/CAOS-caos-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-caos-vxl/r1-2x/manifest.json",
+      "sha256": "4e85e05e86c3ed0fde9e3f9da5d73ac8b0ccd29c391a433a7c2363c375fa38ed",
+      "bytes": 14783,
+      "owners": [
+        "CAOS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-caos-vxl/r1-2x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-caos-vxl/r1-2x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-caos-vxl/r1-4x/CAOS-caos-DUMMY01-base.png",
+      "sha256": "04e61b72b3785aa3b4fd6d63a46741afa3fd93f0cdbe397944611d73de7f8c28",
+      "bytes": 271683,
+      "owners": [
+        "CAOS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-caos-vxl/r1-4x/CAOS-caos-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-caos-vxl/r1-4x/CAOS-caos-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-caos-vxl/r1-4x/CAOS-caos-DUMMY01-data.png",
+      "sha256": "aa4d50e332cbd750145c07a6302445edd9713959ee88033fab38120c4df4b861",
+      "bytes": 19198,
+      "owners": [
+        "CAOS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-caos-vxl/r1-4x/CAOS-caos-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-caos-vxl/r1-4x/CAOS-caos-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-caos-vxl/r1-4x/manifest.json",
+      "sha256": "b57455a68cc8920ad1ed98046ef8d0f19336ad6ccbfa5302ba5baf915b05f59a",
+      "bytes": 14820,
+      "owners": [
+        "CAOS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-caos-vxl/r1-4x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-caos-vxl/r1-4x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-disk-vxl/r1-2x/DISK-disk-DUMMY01-base.png",
+      "sha256": "007d4b5c6c012a8372c9835a31170dbe3d7eaa4887d401e43700f60ebcdfa89b",
+      "bytes": 121557,
+      "owners": [
+        "DISK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-disk-vxl/r1-2x/DISK-disk-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-disk-vxl/r1-2x/DISK-disk-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-disk-vxl/r1-2x/DISK-disk-DUMMY01-data.png",
+      "sha256": "55358d44f3c6a57d6422f9c6a76b096f073a9f305bccc9023b4fb5e289970644",
+      "bytes": 689,
+      "owners": [
+        "DISK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-disk-vxl/r1-2x/DISK-disk-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-disk-vxl/r1-2x/DISK-disk-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-disk-vxl/r1-2x/DISK-disktur-DUMMY01-base.png",
+      "sha256": "b5bc264951cb3e88c582aa1cb08a90cd2d341e3b3b958e9055751885895c700e",
+      "bytes": 210377,
+      "owners": [
+        "DISK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-disk-vxl/r1-2x/DISK-disktur-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-disk-vxl/r1-2x/DISK-disktur-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-disk-vxl/r1-2x/DISK-disktur-DUMMY01-data.png",
+      "sha256": "885a9f4b4189d1fcd890a0c251718796740de480c6d8077c40f3f48451e72550",
+      "bytes": 8705,
+      "owners": [
+        "DISK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-disk-vxl/r1-2x/DISK-disktur-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-disk-vxl/r1-2x/DISK-disktur-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-disk-vxl/r1-2x/manifest.json",
+      "sha256": "a0b071ddd328ef71158bb1b54eaa84859606a15f356e3128b82f14a9bf7adb97",
+      "bytes": 29338,
+      "owners": [
+        "DISK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-disk-vxl/r1-2x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-disk-vxl/r1-2x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-disk-vxl/r1-4x/DISK-disk-DUMMY01-base.png",
+      "sha256": "589d1e9a7b34a3b5ddcfa89a8815f3e304cca7d241ec8f3c44ea116fe402bdcc",
+      "bytes": 452386,
+      "owners": [
+        "DISK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-disk-vxl/r1-4x/DISK-disk-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-disk-vxl/r1-4x/DISK-disk-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-disk-vxl/r1-4x/DISK-disk-DUMMY01-data.png",
+      "sha256": "b38d69d82c1d1e859702738d843ea1f5a9a5ae7330c6e64b7fd99a0a7b6b2f43",
+      "bytes": 1744,
+      "owners": [
+        "DISK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-disk-vxl/r1-4x/DISK-disk-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-disk-vxl/r1-4x/DISK-disk-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-disk-vxl/r1-4x/DISK-disktur-DUMMY01-base.png",
+      "sha256": "942105e1399e585111cf0fe0a893c22e89c4485182f01f15173aa3421cd42e82",
+      "bytes": 774152,
+      "owners": [
+        "DISK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-disk-vxl/r1-4x/DISK-disktur-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-disk-vxl/r1-4x/DISK-disktur-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-disk-vxl/r1-4x/DISK-disktur-DUMMY01-data.png",
+      "sha256": "ad058f4998721eab2e8d3bd5332da066a70a981b60b57b5cd4a503ef454a2d75",
+      "bytes": 23697,
+      "owners": [
+        "DISK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-disk-vxl/r1-4x/DISK-disktur-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-disk-vxl/r1-4x/DISK-disktur-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-disk-vxl/r1-4x/manifest.json",
+      "sha256": "da5bd9f91d0138a9848789601e46983cc97ec738750fec2271e1875231095e0b",
+      "bytes": 29375,
+      "owners": [
+        "DISK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-disk-vxl/r1-4x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-disk-vxl/r1-4x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-init-authored/r1/2x-p0-base.png",
+      "sha256": "c659853f2d6e5276f8a5eeec49d861cedbe4d0817899ae63beae5fa8dffbaa63",
+      "bytes": 1279044,
+      "owners": [
+        "INIT"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-init-authored/r1/2x-p0-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-init-authored/r1/2x-p0-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-init-authored/r1/2x-p0-data.png",
+      "sha256": "5f34e41d5a8ae4263b887b3ad345e2dd9fe54efeb46eaf6fbd2fb6132f9dbbd7",
+      "bytes": 125933,
+      "owners": [
+        "INIT"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-init-authored/r1/2x-p0-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-init-authored/r1/2x-p0-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-init-authored/r1/4x-p0-base.png",
+      "sha256": "22ae222a6ff53d93e9ae9d0bda260eb81e1bad84f29d499abc5e7a219f23044a",
+      "bytes": 3786737,
+      "owners": [
+        "INIT"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-init-authored/r1/4x-p0-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-init-authored/r1/4x-p0-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-init-authored/r1/4x-p0-data.png",
+      "sha256": "ed79d14e77f285fb1d079636a204c66e202a52112d1f1877b9d3d092c62a7f7a",
+      "bytes": 318404,
+      "owners": [
+        "INIT"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-init-authored/r1/4x-p0-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-init-authored/r1/4x-p0-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-init-authored/r1/4x-p1-base.png",
+      "sha256": "9bf4220ddbc90d502fab019c99629e43295afdc58361acce387675ff76f1fa6a",
+      "bytes": 286201,
+      "owners": [
+        "INIT"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-init-authored/r1/4x-p1-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-init-authored/r1/4x-p1-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-init-authored/r1/4x-p1-data.png",
+      "sha256": "82225761eea971d8aaf8553462adb76c6b1ad9eaf5c108a552a7db75286ea94a",
+      "bytes": 23035,
+      "owners": [
+        "INIT"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-init-authored/r1/4x-p1-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-init-authored/r1/4x-p1-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-init-authored/r1/manifest.json",
+      "sha256": "bf87abc3a59e7a3fc1329d55b6b37cefd94b601811a9babbd0fb1d2c645a0f29",
+      "bytes": 255137,
+      "owners": [
+        "INIT"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-init-authored/r1/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-init-authored/r1/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-init-family/r1/family.json",
+      "sha256": "2e785701540f637bf16c604ee7c663d01d279756ace76931445a67b3e0223935",
+      "bytes": 256,
+      "owners": [
+        "INIT"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-init-family/r1/family.json",
+      "relativeDestination": ".local/hd-packs/yuri-init-family/r1/family.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnk-DUMMY01-base.png",
+      "sha256": "bbe0e5c7b5da2e75f70ce5d9aed9875a920896be4ee1e9ce6c912068bc98072e",
+      "bytes": 104348,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnk-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnk-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnk-DUMMY01-data.png",
+      "sha256": "bc99168d3c0075af14fd9c7b4379960ea9324579f6cb55f16847665157a1b87e",
+      "bytes": 3935,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnk-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnk-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnkbarl-DUMMY01-base.png",
+      "sha256": "d2d64e578f72270b3c0cf073fadb27af8897b1a013069340c18e48b8e7ddc8e3",
+      "bytes": 7601,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnkbarl-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnkbarl-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnkbarl-DUMMY01-data.png",
+      "sha256": "baa57725ebccd20b8c330e44f81dad3ecd16dee561bd2b50e427ee0acc8b8a96",
+      "bytes": 237,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnkbarl-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnkbarl-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnktur-DUMMY01-base.png",
+      "sha256": "2dd68d467397f18c013ce7c07d409be28adbc62848dc7e61724ba6224d72a654",
+      "bytes": 36742,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnktur-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnktur-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnktur-DUMMY01-data.png",
+      "sha256": "2854bccbc34df743844f3e00987fba9b35ea4f2fce22a3a3ad153e531c765a5c",
+      "bytes": 3557,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnktur-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/LTNK-ltnktur-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-2x/manifest.json",
+      "sha256": "c54aece3997724d18d9183d55560ed8a19af94022936f9073ea5de927cee3f61",
+      "bytes": 43591,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-2x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnk-DUMMY01-base.png",
+      "sha256": "13bc075289b011478b832bb7ea5973b84f53cc5371da2e3042b3cb0b63cc595e",
+      "bytes": 362880,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnk-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnk-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnk-DUMMY01-data.png",
+      "sha256": "36afb9913aecf37588a652b162f8168070362e7d3a26ae44a42806d833b89ba3",
+      "bytes": 10078,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnk-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnk-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnkbarl-DUMMY01-base.png",
+      "sha256": "5e5bf18009f72239264aea4990e3eb2ea41c327744d9081ff1998d4eba191441",
+      "bytes": 25194,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnkbarl-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnkbarl-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnkbarl-DUMMY01-data.png",
+      "sha256": "5b06264518df22473451aa8ae7357b14b99858f4018391fb60f192a5704ca3af",
+      "bytes": 398,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnkbarl-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnkbarl-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnktur-DUMMY01-base.png",
+      "sha256": "881c97d8e3f738a5c49f143a04685d20927bdd245297271491ccaa503ca05dcf",
+      "bytes": 123338,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnktur-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnktur-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnktur-DUMMY01-data.png",
+      "sha256": "d2c911286b72a61c0a9cf3d5b3bb53c5ecd2df30c7b179989c1bd055c58ba0ca",
+      "bytes": 9662,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnktur-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/LTNK-ltnktur-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ltnk-vxl/clean-r3-4x/manifest.json",
+      "sha256": "a7e935116dc86c669fe44375a223fe8c699d14a29039659391ce64b912d39900",
+      "bytes": 43642,
+      "owners": [
+        "LTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-ltnk-vxl/clean-r3-4x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-mind-vxl/clean-r3-2x/MIND-mind-DUMMY01-base.png",
+      "sha256": "30262f1a0575eed0a07af688d14e8194977abdccdce515013ac6835356719e62",
+      "bytes": 181558,
+      "owners": [
+        "MIND"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-mind-vxl/clean-r3-2x/MIND-mind-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-mind-vxl/clean-r3-2x/MIND-mind-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-mind-vxl/clean-r3-2x/MIND-mind-DUMMY01-data.png",
+      "sha256": "65deadf4169d94a9e0747ebbb51c38c0611e7a1d3d430568f5afb3d99297c63b",
+      "bytes": 13919,
+      "owners": [
+        "MIND"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-mind-vxl/clean-r3-2x/MIND-mind-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-mind-vxl/clean-r3-2x/MIND-mind-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-mind-vxl/clean-r3-2x/manifest.json",
+      "sha256": "0bfb775b57406abb3e321568241234b79ba3fc91d2d766eb77e92e435120d93e",
+      "bytes": 14778,
+      "owners": [
+        "MIND"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-mind-vxl/clean-r3-2x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-mind-vxl/clean-r3-2x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-mind-vxl/clean-r3-4x/MIND-mind-DUMMY01-base.png",
+      "sha256": "ded5dcfdf42f83afc072ef33271f2feaff2cd27764df860b1c34f213ef739eac",
+      "bytes": 626355,
+      "owners": [
+        "MIND"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-mind-vxl/clean-r3-4x/MIND-mind-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-mind-vxl/clean-r3-4x/MIND-mind-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-mind-vxl/clean-r3-4x/MIND-mind-DUMMY01-data.png",
+      "sha256": "63bc56b8a1f9bb6742cdc93c2e952c0fbf1f348166e43cbdf218f8ca3ae438fb",
+      "bytes": 37604,
+      "owners": [
+        "MIND"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-mind-vxl/clean-r3-4x/MIND-mind-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-mind-vxl/clean-r3-4x/MIND-mind-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-mind-vxl/clean-r3-4x/manifest.json",
+      "sha256": "553e2df33466db8e14115fd889704c1afea9e119f2cd3b9b553438a904ff181c",
+      "bytes": 14799,
+      "owners": [
+        "MIND"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-mind-vxl/clean-r3-4x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-mind-vxl/clean-r3-4x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-pcv-vxl/r1-2x/PCV-pcv-DUMMY01-base.png",
+      "sha256": "dc639427f6fb56b0778f50d6d9d72acccc95f15fdab43abfb2becc20f86c0017",
+      "bytes": 250720,
+      "owners": [
+        "PCV"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-pcv-vxl/r1-2x/PCV-pcv-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-pcv-vxl/r1-2x/PCV-pcv-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-pcv-vxl/r1-2x/PCV-pcv-DUMMY01-data.png",
+      "sha256": "c37c2490ec853b19e9c661f708f279e8e290d63e5b996ad839db26bff45502c6",
+      "bytes": 15022,
+      "owners": [
+        "PCV"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-pcv-vxl/r1-2x/PCV-pcv-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-pcv-vxl/r1-2x/PCV-pcv-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-pcv-vxl/r1-2x/manifest.json",
+      "sha256": "f94ff7d01c6667345abd3252b980189ce24d3b80565009b59627716434a7d39b",
+      "bytes": 19324,
+      "owners": [
+        "PCV"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-pcv-vxl/r1-2x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-pcv-vxl/r1-2x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-pcv-vxl/r1-4x/PCV-pcv-DUMMY01-base.png",
+      "sha256": "6e4f8faf1f73f33f05cb9f0dc5d76df3802e4d1328f5dcdbfb3c4b56e6fa2153",
+      "bytes": 901642,
+      "owners": [
+        "PCV"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-pcv-vxl/r1-4x/PCV-pcv-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-pcv-vxl/r1-4x/PCV-pcv-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-pcv-vxl/r1-4x/PCV-pcv-DUMMY01-data.png",
+      "sha256": "780a53c4b2cdbe06c5c37052956381c36641cb80e6dc6481ca8390c47c05019b",
+      "bytes": 42812,
+      "owners": [
+        "PCV"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-pcv-vxl/r1-4x/PCV-pcv-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-pcv-vxl/r1-4x/PCV-pcv-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-pcv-vxl/r1-4x/manifest.json",
+      "sha256": "4624ee042770443b2d52041c43ea4d1bb16b3bc6c8d8a37ad459df12c7690aff",
+      "bytes": 19341,
+      "owners": [
+        "PCV"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-pcv-vxl/r1-4x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-pcv-vxl/r1-4x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-slav-authored/r1/2x-p0-base.png",
+      "sha256": "cc60ad33ce221b1f5ab396ada01634f39a21cd8d031f277d1425f487fe5a648b",
+      "bytes": 1071428,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-slav-authored/r1/2x-p0-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-slav-authored/r1/2x-p0-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-slav-authored/r1/2x-p0-data.png",
+      "sha256": "47f32dd3f547f92d4a8c69c6d4e86a36ead326aafb5dafdf48c9ba244b8c8339",
+      "bytes": 127105,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-slav-authored/r1/2x-p0-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-slav-authored/r1/2x-p0-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-slav-authored/r1/4x-p0-base.png",
+      "sha256": "1c4b4eb0ff808dac70d6781ca44fb4e8d7b90bbd98436ad999c417996fd3d992",
+      "bytes": 3045092,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-slav-authored/r1/4x-p0-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-slav-authored/r1/4x-p0-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-slav-authored/r1/4x-p0-data.png",
+      "sha256": "da271495b8a990d497cc6f75fb89ba39f9ab1bfa07b2d191021a70cb035e2c6e",
+      "bytes": 295479,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-slav-authored/r1/4x-p0-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-slav-authored/r1/4x-p0-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-slav-authored/r1/4x-p1-base.png",
+      "sha256": "2ac0ac5244862151c68ec06994956b80180921275ded1c4c97516cddac10a3ed",
+      "bytes": 323900,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-slav-authored/r1/4x-p1-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-slav-authored/r1/4x-p1-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-slav-authored/r1/4x-p1-data.png",
+      "sha256": "7220077e25dbb3b700d22929b3fbee4d8cf02655fd986a2496dd891a567ad1ef",
+      "bytes": 33408,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-slav-authored/r1/4x-p1-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-slav-authored/r1/4x-p1-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-slav-authored/r1/manifest.json",
+      "sha256": "ab44db7e4b222424ee691e1f67eddde98aeaaddf8ab54f14f27c88acf9b357f5",
+      "bytes": 237081,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-slav-authored/r1/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-slav-authored/r1/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-smin-family/r1/family.json",
+      "sha256": "b30a8940cf16ecd3165d9b1f33f71452539fa496fde0aa22368a5a88de14f5ef",
+      "bytes": 811,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-smin-family/r1/family.json",
+      "relativeDestination": ".local/hd-packs/yuri-smin-family/r1/family.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-smin-vxl/r1-2x/SMIN-smin-DUMMY01-base.png",
+      "sha256": "6fd2737358b40cfe9de42d4a56d35bcb94af5c3230cbd21bb196beaa89317786",
+      "bytes": 254516,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-smin-vxl/r1-2x/SMIN-smin-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-smin-vxl/r1-2x/SMIN-smin-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-smin-vxl/r1-2x/SMIN-smin-DUMMY01-data.png",
+      "sha256": "2165a4d9e63f5b61f97d4f4bc9afb473c22108377b45add3cd519a8bf0cdaacc",
+      "bytes": 18734,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-smin-vxl/r1-2x/SMIN-smin-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-smin-vxl/r1-2x/SMIN-smin-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-smin-vxl/r1-2x/SMIN-smintur-DUMMY01-base.png",
+      "sha256": "b53fb82ac3ea99018675ccdf9ca0bf6682cf0b922e5dbeea8f2a05c3dacdfe6f",
+      "bytes": 18165,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-smin-vxl/r1-2x/SMIN-smintur-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-smin-vxl/r1-2x/SMIN-smintur-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-smin-vxl/r1-2x/SMIN-smintur-DUMMY01-data.png",
+      "sha256": "195ace1f4b51eb2a30e3e60e24c880ff58ab687eed14a1c5a2f036ec0f4c60f9",
+      "bytes": 354,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-smin-vxl/r1-2x/SMIN-smintur-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-smin-vxl/r1-2x/SMIN-smintur-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-smin-vxl/r1-2x/manifest.json",
+      "sha256": "c84271b07733a661d6a472b2b52cf454ba2d51976b67ffd10dcc96582f9dbc3a",
+      "bytes": 29348,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-smin-vxl/r1-2x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-smin-vxl/r1-2x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-smin-vxl/r1-4x/SMIN-smin-DUMMY01-base.png",
+      "sha256": "5056e65f1b91f07b3953e3f7814b885200284150b8b6bae051d513aaf1e0f89f",
+      "bytes": 919399,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-smin-vxl/r1-4x/SMIN-smin-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-smin-vxl/r1-4x/SMIN-smin-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-smin-vxl/r1-4x/SMIN-smin-DUMMY01-data.png",
+      "sha256": "02cb21db7bc7e04512a2bf02e19602c0c7cb6d8b7af790930ea7a7458f9f8535",
+      "bytes": 55147,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-smin-vxl/r1-4x/SMIN-smin-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-smin-vxl/r1-4x/SMIN-smin-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-smin-vxl/r1-4x/SMIN-smintur-DUMMY01-base.png",
+      "sha256": "15ef91b963ba4121c6d1dce4f4a519786735063be49d834ba24b866905f4e7b9",
+      "bytes": 59438,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-smin-vxl/r1-4x/SMIN-smintur-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-smin-vxl/r1-4x/SMIN-smintur-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-smin-vxl/r1-4x/SMIN-smintur-DUMMY01-data.png",
+      "sha256": "7d48e2efb38be34a9c280ff26e3c980a389e642feaaef7a07380b127a0b42cf7",
+      "bytes": 717,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-smin-vxl/r1-4x/SMIN-smintur-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-smin-vxl/r1-4x/SMIN-smintur-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-smin-vxl/r1-4x/manifest.json",
+      "sha256": "89ea298534ba0e0e146f0f7b6a5f78dbbb720e29203fe5fc12af0eecadbb9863",
+      "bytes": 29367,
+      "owners": [
+        "SMIN"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-smin-vxl/r1-4x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-smin-vxl/r1-4x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-tele-vxl/r1-2x/TELE-tele-DUMMY01-base.png",
+      "sha256": "000c1c9f6881fb9fa7ea848dd274368af51b8cbc7b43fcbd2ab3aae478424d5d",
+      "bytes": 112465,
+      "owners": [
+        "TELE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-tele-vxl/r1-2x/TELE-tele-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-tele-vxl/r1-2x/TELE-tele-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-tele-vxl/r1-2x/TELE-tele-DUMMY01-data.png",
+      "sha256": "7aaab14d272370e76daee4b55040fc818d2f8fd0b434db5b94e0b64ea4f17113",
+      "bytes": 8065,
+      "owners": [
+        "TELE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-tele-vxl/r1-2x/TELE-tele-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-tele-vxl/r1-2x/TELE-tele-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-tele-vxl/r1-2x/TELE-teletur-DUMMY01-base.png",
+      "sha256": "ac4466201a56723c23100930ea4f308b5d973df8b913dc71ec33e3f27d959028",
+      "bytes": 53628,
+      "owners": [
+        "TELE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-tele-vxl/r1-2x/TELE-teletur-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-tele-vxl/r1-2x/TELE-teletur-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-tele-vxl/r1-2x/TELE-teletur-DUMMY01-data.png",
+      "sha256": "e287821aae1b6f18185fe25ea74cb038d6992aa43035e93a9a0bb5bb17bd2c13",
+      "bytes": 5535,
+      "owners": [
+        "TELE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-tele-vxl/r1-2x/TELE-teletur-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-tele-vxl/r1-2x/TELE-teletur-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-tele-vxl/r1-2x/manifest.json",
+      "sha256": "326b7aaf37dd6ca2d6cfbf5e83e72070b1ad4624560e8fa3eee65b82a1ea9844",
+      "bytes": 29490,
+      "owners": [
+        "TELE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-tele-vxl/r1-2x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-tele-vxl/r1-2x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-tele-vxl/r1-4x/TELE-tele-DUMMY01-base.png",
+      "sha256": "a929228293b8bbe1e7c8d9953742ee2a3f864108fa25ad50dc2db494c7de520b",
+      "bytes": 408881,
+      "owners": [
+        "TELE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-tele-vxl/r1-4x/TELE-tele-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-tele-vxl/r1-4x/TELE-tele-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-tele-vxl/r1-4x/TELE-tele-DUMMY01-data.png",
+      "sha256": "333d752410c99372dae3f49a598e62502ba396aaaa2b0a8983a9b7e0e2a31589",
+      "bytes": 23099,
+      "owners": [
+        "TELE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-tele-vxl/r1-4x/TELE-tele-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-tele-vxl/r1-4x/TELE-tele-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-tele-vxl/r1-4x/TELE-teletur-DUMMY01-base.png",
+      "sha256": "964c2bb8841005d5607f7f1f2cc321d1f8edae9639220e2ddb707e8d4d4228ad",
+      "bytes": 183247,
+      "owners": [
+        "TELE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-tele-vxl/r1-4x/TELE-teletur-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-tele-vxl/r1-4x/TELE-teletur-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-tele-vxl/r1-4x/TELE-teletur-DUMMY01-data.png",
+      "sha256": "aaaf9f81bea5880d4b6cd43292b172ee4760e6fbdf9b0fedcce86da47b0b1526",
+      "bytes": 15990,
+      "owners": [
+        "TELE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-tele-vxl/r1-4x/TELE-teletur-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-tele-vxl/r1-4x/TELE-teletur-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-tele-vxl/r1-4x/manifest.json",
+      "sha256": "666a24757211c1da21af1b641ebe5ba8f1657dbffcf80ae7f2eb020fe0d340cd",
+      "bytes": 29553,
+      "owners": [
+        "TELE"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-tele-vxl/r1-4x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-tele-vxl/r1-4x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-virus-authored/r1/2x-p0-base.png",
+      "sha256": "2f724d2390c6ed1ac3d715f2863ac150b450b9e130eb118ace6692e3ce575993",
+      "bytes": 1037824,
+      "owners": [
+        "VIRUS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-virus-authored/r1/2x-p0-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-virus-authored/r1/2x-p0-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-virus-authored/r1/2x-p0-data.png",
+      "sha256": "2c98f74fa88532e516d6566a8d8f55810b019bda3da7a6f9483fd620eb4f5d8a",
+      "bytes": 98894,
+      "owners": [
+        "VIRUS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-virus-authored/r1/2x-p0-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-virus-authored/r1/2x-p0-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-virus-authored/r1/4x-p0-base.png",
+      "sha256": "bd542135437d797c243d8f79359acf09f0ce73943f0e12c671d679a69b64f539",
+      "bytes": 2583605,
+      "owners": [
+        "VIRUS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-virus-authored/r1/4x-p0-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-virus-authored/r1/4x-p0-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-virus-authored/r1/4x-p0-data.png",
+      "sha256": "de915d8e97ce8692229d737d2e70da95eb1901458e567b7c5db90dccfa2a21d5",
+      "bytes": 193260,
+      "owners": [
+        "VIRUS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-virus-authored/r1/4x-p0-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-virus-authored/r1/4x-p0-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-virus-authored/r1/4x-p1-base.png",
+      "sha256": "e3f0a19e17091ce386737e696bd40d264fd593d641c6b9abd8d1ab80a05a856a",
+      "bytes": 657715,
+      "owners": [
+        "VIRUS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-virus-authored/r1/4x-p1-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-virus-authored/r1/4x-p1-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-virus-authored/r1/4x-p1-data.png",
+      "sha256": "f9fc09e84ad666325d0b1caa4ea6674c718f0b6e397e6abcbaf6e30db562eecf",
+      "bytes": 51937,
+      "owners": [
+        "VIRUS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-virus-authored/r1/4x-p1-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-virus-authored/r1/4x-p1-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-virus-authored/r1/manifest.json",
+      "sha256": "a6cc59ac47fe3f26f171dfca1d8ec7cfd6e58ea0c158ea7493f19e1f6f430c50",
+      "bytes": 251285,
+      "owners": [
+        "VIRUS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-virus-authored/r1/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-virus-authored/r1/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-virus-family/r1/family.json",
+      "sha256": "69faccf03871b19d62b164de0b82ed5dba6456a5352ca9f4587843e86dab36f6",
+      "bytes": 259,
+      "owners": [
+        "VIRUS"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-virus-family/r1/family.json",
+      "relativeDestination": ".local/hd-packs/yuri-virus-family/r1/family.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yhvr-vxl/r1-2x/YHVR-yhvr-DUMMY01-base.png",
+      "sha256": "b39771eb488631748c566177e9e01f225c69c89a0153a9772574b28376f7b683",
+      "bytes": 171921,
+      "owners": [
+        "YHVR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yhvr-vxl/r1-2x/YHVR-yhvr-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-yhvr-vxl/r1-2x/YHVR-yhvr-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yhvr-vxl/r1-2x/YHVR-yhvr-DUMMY01-data.png",
+      "sha256": "284ae67472a6d89de483d171bf80c673f7cfd0028b96f46248a175a88a59e59b",
+      "bytes": 8254,
+      "owners": [
+        "YHVR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yhvr-vxl/r1-2x/YHVR-yhvr-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-yhvr-vxl/r1-2x/YHVR-yhvr-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yhvr-vxl/r1-2x/manifest.json",
+      "sha256": "9361837b8548cc8ced86bf37b5183c249a9ec55934e8dd984ec094ba2be02cad",
+      "bytes": 14460,
+      "owners": [
+        "YHVR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yhvr-vxl/r1-2x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-yhvr-vxl/r1-2x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yhvr-vxl/r1-4x/YHVR-yhvr-DUMMY01-base.png",
+      "sha256": "c9f611a67031be198b6deeb002f85de88aacf1ec1d916064a264c98cdc14fc7f",
+      "bytes": 628607,
+      "owners": [
+        "YHVR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yhvr-vxl/r1-4x/YHVR-yhvr-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-yhvr-vxl/r1-4x/YHVR-yhvr-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yhvr-vxl/r1-4x/YHVR-yhvr-DUMMY01-data.png",
+      "sha256": "512c46646d57f3727c060232f2a7c65cc4ffbb1c31b123f4d97984f95b2bd5c6",
+      "bytes": 22986,
+      "owners": [
+        "YHVR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yhvr-vxl/r1-4x/YHVR-yhvr-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-yhvr-vxl/r1-4x/YHVR-yhvr-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yhvr-vxl/r1-4x/manifest.json",
+      "sha256": "673ba665e6857781e1e4e333608f820448771fe646b3fbbfd23da9862da969a0",
+      "bytes": 14487,
+      "owners": [
+        "YHVR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yhvr-vxl/r1-4x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-yhvr-vxl/r1-4x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnk-DUMMY01-base.png",
+      "sha256": "0a341b06c9f672993b52a38fdaffee8d263d66b5d68272d4435d7a6c36ed5e6f",
+      "bytes": 78167,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnk-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnk-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnk-DUMMY01-data.png",
+      "sha256": "e01c55d40be4dee841077b42dc0c93a3ef42e27a1ec75cc543edde80bbeff066",
+      "bytes": 7865,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnk-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnk-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER14-base.png",
+      "sha256": "57704a64ce1d8c2f2f70c9687e15d1fee64bde8fb5433263bc91cd37f3c6fc55",
+      "bytes": 8979,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER14-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER14-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER14-data.png",
+      "sha256": "b757d183167c5f1c3f596a28049c766ec01e9c9604b806a79d5065830cc99c8c",
+      "bytes": 303,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER14-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER14-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER22-base.png",
+      "sha256": "fcdb7b2b230f7c5aee986636861fc38048c00f78c2c39922988f364a31ba9769",
+      "bytes": 7638,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER22-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER22-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER22-data.png",
+      "sha256": "b757d183167c5f1c3f596a28049c766ec01e9c9604b806a79d5065830cc99c8c",
+      "bytes": 303,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER22-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-CYLINDER22-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-DUMMY01-base.png",
+      "sha256": "627a98dc920eed5f9b1f04fc0ca1259b10947182f00db05e471d861fc8e1991a",
+      "bytes": 25697,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-DUMMY01-data.png",
+      "sha256": "0378eec6f79215a5b1c62773a5f95673e97bb8b44ea216c31e858618d27db6e8",
+      "bytes": 1580,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/YTNK-ytnktur-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-2x/manifest.json",
+      "sha256": "9c3f3951e64e319567247465cacadc14cad2ea9162323603aea48d4b577491cb",
+      "bytes": 71190,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-2x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnk-DUMMY01-base.png",
+      "sha256": "dc38e6609c57bc46b9c771fe5353469d8a7492e737c9d2b166cfb3407abf31cd",
+      "bytes": 270240,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnk-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnk-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnk-DUMMY01-data.png",
+      "sha256": "c6453fe805e1c3bcf4b11676443f84ded14086c764fccdf8479a9bd12e061e8d",
+      "bytes": 22527,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnk-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnk-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER14-base.png",
+      "sha256": "4ae53bd16145f131a9f7c632faeeea72648a6cf0ce9e08a40f9823d8466c2fdd",
+      "bytes": 28006,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER14-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER14-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER14-data.png",
+      "sha256": "be865b1e28a5331ed9a936df481775c427779b751e9bf1245147f32318a44305",
+      "bytes": 635,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER14-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER14-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER22-base.png",
+      "sha256": "9731c936dad859b9ea72243a60cd015e7350f6ec1aa0af3426d735236a6c4fe0",
+      "bytes": 23428,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER22-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER22-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER22-data.png",
+      "sha256": "be865b1e28a5331ed9a936df481775c427779b751e9bf1245147f32318a44305",
+      "bytes": 635,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER22-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-CYLINDER22-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-DUMMY01-base.png",
+      "sha256": "55033573c8a7d603f0c36dd94ffa980dc3a8f262b19885bbd45c4f0e000277de",
+      "bytes": 87669,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-DUMMY01-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-DUMMY01-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-DUMMY01-data.png",
+      "sha256": "1417f486131b8d5a96a8fef5be8583d8c7ecdc29b38f0ac0228e25af8d0f286d",
+      "bytes": 3820,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-DUMMY01-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/YTNK-ytnktur-DUMMY01-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-ytnk-vxl/clean-r3-4x/manifest.json",
+      "sha256": "a993450da822ea7a3a6e60b0e0db4ae6b1e38eafe7ee06ae9dd5b308a4c0e138",
+      "bytes": 71252,
+      "owners": [
+        "YTNK"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-ytnk-vxl/clean-r3-4x/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yuripr-family/r4/family.json",
+      "sha256": "287b184d8cd0bfa7c44da9242165f92c04b5cc6a73ce9a3af099a0c5843f394a",
+      "bytes": 260,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yuripr-family/r4/family.json",
+      "relativeDestination": ".local/hd-packs/yuri-yuripr-family/r4/family.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yurix-authored/r4/2x-p0-base.png",
+      "sha256": "e38e435f81928eabcb0d0a1914f75b08f4b6d2f89783d7dcac1fa5240e55cd5f",
+      "bytes": 1607823,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yurix-authored/r4/2x-p0-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-yurix-authored/r4/2x-p0-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yurix-authored/r4/2x-p0-data.png",
+      "sha256": "9c20d6b15da4e88e3ed9192ff1e6a602fcb69324e6f7c63eee4c6174bf4e4422",
+      "bytes": 271050,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yurix-authored/r4/2x-p0-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-yurix-authored/r4/2x-p0-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yurix-authored/r4/2x-p1-base.png",
+      "sha256": "3210a9fcec516133bed7619d3b80d1989213275470899ea650c6e8d359a1753f",
+      "bytes": 381781,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yurix-authored/r4/2x-p1-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-yurix-authored/r4/2x-p1-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yurix-authored/r4/2x-p1-data.png",
+      "sha256": "32b7ec8379c222e129a7c25b8ae7201377aac74638f782d9db2a3ab3160b1aad",
+      "bytes": 68124,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yurix-authored/r4/2x-p1-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-yurix-authored/r4/2x-p1-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yurix-authored/r4/4x-p0-base.png",
+      "sha256": "19a46b3a76865de8cfc86664f70268b3f66b303b92525798b1bbc26e696a64c9",
+      "bytes": 2517137,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yurix-authored/r4/4x-p0-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-yurix-authored/r4/4x-p0-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yurix-authored/r4/4x-p0-data.png",
+      "sha256": "c944c506e542598dc68e551936aafdfdae64d5bb60d5e819e1885c8304de99b5",
+      "bytes": 380191,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yurix-authored/r4/4x-p0-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-yurix-authored/r4/4x-p0-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yurix-authored/r4/4x-p1-base.png",
+      "sha256": "b4eb457ec44e71f578e68380ef42696715cbc6ae700798adde05afd55b067ea7",
+      "bytes": 2824562,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yurix-authored/r4/4x-p1-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-yurix-authored/r4/4x-p1-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yurix-authored/r4/4x-p1-data.png",
+      "sha256": "5c70dc37854a4018162bea56de8435b88a1fc74509f5f2511fe4374c6d5ab6ea",
+      "bytes": 373587,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yurix-authored/r4/4x-p1-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-yurix-authored/r4/4x-p1-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yurix-authored/r4/4x-p2-base.png",
+      "sha256": "d853d9ba85b738adcdccfad40f36f31fa19c88cc08998a5adf7958186d91f40a",
+      "bytes": 992283,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yurix-authored/r4/4x-p2-base.png",
+      "relativeDestination": ".local/hd-packs/yuri-yurix-authored/r4/4x-p2-base.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yurix-authored/r4/4x-p2-data.png",
+      "sha256": "2339217e2a89baad93b90d1f466fd7426a77a59494d7dd45c44bc7cac6ed3dff",
+      "bytes": 146869,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yurix-authored/r4/4x-p2-data.png",
+      "relativeDestination": ".local/hd-packs/yuri-yurix-authored/r4/4x-p2-data.png",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    },
+    {
+      "path": "hd-packs/yuri-yurix-authored/r4/manifest.json",
+      "sha256": "197c5938af392d5abe9933d1ee66f92ccee8edd848982bc10fa5a7169532ab1b",
+      "bytes": 242506,
+      "owners": [
+        "YURIPR"
+      ],
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local/hd-packs/yuri-yurix-authored/r4/manifest.json",
+      "relativeDestination": ".local/hd-packs/yuri-yurix-authored/r4/manifest.json",
+      "copyMode": "ADD_IF_ABSENT_OR_IDENTICAL",
+      "gitTransfersThisFile": false,
+      "observedMainState": "ABSENT"
+    }
+  ],
+  "selectedResourceCount": 140,
+  "selectedResourceBytes": 44867062,
+  "resourcePreflight": {
+    "missing": 140,
+    "identical": 0,
+    "conflict": 0
+  },
+  "sourceResourceRoot": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.local",
+  "selectedCatalogOnly": true,
+  "installedIncludingHistoricalCount": 214,
+  "retainedHistoricalResourceCount": 74,
+  "historicalResourcesRemainInTaskWorktree": true,
+  "supersedesCurrentIntegrationInventory": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/integration-resource-manifest-v11.json",
+  "selectedMastersAndCleanMothers": [
+    {
+      "path": ".artifacts/yuri-units/init-fire-phase-corrections-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/init-fire-phase-corrections-v1/authored-v1.png",
+      "sha256": "859ad833805721c48ae066eeff18d6c096097150d9324ee4a5e0ae9da02a88f0",
+      "bytes": 852863,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v1/INIT/init-ready-000-007/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v1/INIT/init-ready-000-007/authored-v1.png",
+      "sha256": "a13b6a9b3c49c0a3c24f156eb6b68a87dcbef6a0a6e2735f6083ff4c1baf6e30",
+      "bytes": 878762,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-cheer-276-283/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-cheer-276-283/authored-v1.png",
+      "sha256": "0841aab8fd98b571c398fef2599580768508d90e6dcf9bb0242811c9acec837d",
+      "bytes": 968633,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-die1-086-100/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-die1-086-100/authored-v1.png",
+      "sha256": "f9593eeac1405b55ec431098b78c428e2a60feb6c4928dfafc4c3e610e0b8275",
+      "bytes": 1196692,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-die2-101-109/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-die2-101-109/authored-v1.png",
+      "sha256": "049ce000a008de2e5c2ff9eaa8ad5b57822d7a0bbac094d3251b87788fb65377",
+      "bytes": 1045950,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-die2-110-115/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-die2-110-115/authored-v1.png",
+      "sha256": "aa1f8f5fcfd5bdfc704e5e563d585d142c9020e5880408dc1adc55504ddbf04a",
+      "bytes": 1551933,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-fireup-116-131/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-fireup-116-131/authored-v1.png",
+      "sha256": "a20268f9e4f80b402329cf5566faa1cc62f304d3e6c05db8eeadb4a25a7016f4",
+      "bytes": 1407484,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-fireup-132-147/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-fireup-132-147/authored-v1.png",
+      "sha256": "9d7daa02b59c06039c8ca9a429de070bb8de178e7d9f7914c67f85cce9656a60",
+      "bytes": 1220346,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-fireup-148-163/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-fireup-148-163/authored-v1.png",
+      "sha256": "6b7db3432ecb501716c93cf1a22851ccd1aa1581d738036d8765aeea9668fc47",
+      "bytes": 1391444,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-fireup-164-179/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-fireup-164-179/authored-v1.png",
+      "sha256": "ecd8043d22f135abeb178581ec93a850a287e4214eb1e17e35782914ab090368",
+      "bytes": 1307404,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-fireup-180-195/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-fireup-180-195/authored-v1.png",
+      "sha256": "0c2001da13d9366477bd9079a333fb7167346147fb497e6e9a661fcea5a2c606",
+      "bytes": 1207147,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-idle1-056-070/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-idle1-056-070/authored-v1.png",
+      "sha256": "304d17c3568771fdacbee7c35f7beddf73f2d4e1ef193430ed2098b509f14a3e",
+      "bytes": 1472641,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-idle2-071-085/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-idle2-071-085/authored-v1.png",
+      "sha256": "8c07a2e3c93555a8d95693de5324e08e35ace9cc7ec4b9cea102876af7d3dfe2",
+      "bytes": 1388532,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-paradrop-284-284/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-paradrop-284-284/authored-v1.png",
+      "sha256": "b0270fec3335f947fe611c0dca380ef14157b24fba130bd421ee047c6cba1a6e",
+      "bytes": 756830,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-ready-000-007/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-ready-000-007/authored-v1.png",
+      "sha256": "52cf18490e9b68473844e1b6bea2bc17b2619c4ab8d5f804640faedc5e9cba36",
+      "bytes": 1213062,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-secondaryfire-196-211/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-secondaryfire-196-211/authored-v1.png",
+      "sha256": "95eea8c7c06992f1525dac050631034ea908d8b62522cfa640cad059775dd2de",
+      "bytes": 1272154,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-secondaryfire-212-227/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-secondaryfire-212-227/authored-v1.png",
+      "sha256": "3e5c4e86e7a075943f5c69802c48571c57b765902998818b5a77eb9587a28c1e",
+      "bytes": 1135298,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-secondaryfire-228-243/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-secondaryfire-228-243/authored-v1.png",
+      "sha256": "9b2d2eb695a1b9bd1683016cf3d4a03751e7c438c1d9edd6c7cdc5135eb9145a",
+      "bytes": 1374774,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-secondaryfire-244-259/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-secondaryfire-244-259/authored-v1.png",
+      "sha256": "c8fcd4a748f6465d1aca0d9ada0e95fb3d4eb6c0ea2363799ef84dcda8040acd",
+      "bytes": 1105132,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-secondaryfire-260-275/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-secondaryfire-260-275/authored-v1.png",
+      "sha256": "3e06c9dd8fe8387bb1335033b3164c21ada09edbda20fdd9a2f481c091863bc0",
+      "bytes": 1166008,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-walk-008-023/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-walk-008-023/authored-v1.png",
+      "sha256": "80faca7659e474748465c0d498d8cb5538e317402f9056db3fa0c84cb78cf045",
+      "bytes": 1347391,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-walk-024-039/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-walk-024-039/authored-v1.png",
+      "sha256": "29c5dda4e6e7299595494f7485375803c1dd65e410457fd749d149d4ea743701",
+      "bytes": 1479249,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/BRUTE/brute-walk-040-055/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/BRUTE/brute-walk-040-055/authored-v1.png",
+      "sha256": "73a515ad08d8b4be92e2b96233a8a60519d1b0f40cf979981041e3f798164905",
+      "bytes": 1472699,
+      "identities": [
+        "BRUTE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-cheer-201-208/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-cheer-201-208/authored-v1.png",
+      "sha256": "5c5c3bd6c52b94e50d3f15a23d4121096cada5562e533db464d239c317662e82",
+      "bytes": 875661,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-crawl-091-106/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-crawl-091-106/authored-v1.png",
+      "sha256": "8a34fb8937335360e3a41eb09c6fd383ce2403bec696c22ba543ccef3266b4d6",
+      "bytes": 1224776,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-crawl-107-122/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-crawl-107-122/authored-v1.png",
+      "sha256": "4cfaece2a87cd08c6f6bfdea9587b376ddb5c51aa58d2bd77f823855a31a6685",
+      "bytes": 938604,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-crawl-123-138/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-crawl-123-138/authored-v1.png",
+      "sha256": "522c253c61b39451f1540587627acf34727541cb1f3da24af6aa3c2605edb685",
+      "bytes": 1013235,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-die1-139-153/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-die1-139-153/authored-v1.png",
+      "sha256": "af5a7a7a05d13ec9208a9e7ce57540de0a5cc12b04f62b1c58a5f16a5753e28d",
+      "bytes": 1028775,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-die2-154-168/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-die2-154-168/authored-v1.png",
+      "sha256": "d236951ebbd4a4d4904afdbb9fa6098ec96ea140b30ca0be1e2982301568fed8",
+      "bytes": 942371,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-down-169-184/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-down-169-184/authored-v1.png",
+      "sha256": "86bd4e31d54c1d902c242afdc7dd1fda1d7961f2763742729e57b635cbf96799",
+      "bytes": 1237560,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-fireprone-257-272/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-fireprone-257-272/authored-v1.png",
+      "sha256": "6e8c66a53f471a505fd75dcb9d1aed0be92cc4f1fcb703a0536ae4d0ff0f111c",
+      "bytes": 962554,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-fireprone-273-288/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-fireprone-273-288/authored-v1.png",
+      "sha256": "e245ef3ec375f8fcf2084aaca206fb70b874bf11eba7819e6b0b9b172cbd8ac7",
+      "bytes": 924014,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-fireprone-289-304/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-fireprone-289-304/authored-v1.png",
+      "sha256": "8065dc10bcd99d8c4d015371affa85317777e0dd98c75121e380d8f8103e7df3",
+      "bytes": 857552,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-fireup-209-224/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-fireup-209-224/authored-v1.png",
+      "sha256": "177b0240fada7089ae22ea38eaadcbd59ca2515099d1d5b66bc8a7ec3085f758",
+      "bytes": 920213,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-fireup-225-240/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-fireup-225-240/authored-v1.png",
+      "sha256": "ff42bd24eb4ba4ccdff9864a2033224399bf2d723485f07324da5d41f498d341",
+      "bytes": 1030615,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-fireup-241-256/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-fireup-241-256/authored-v1.png",
+      "sha256": "756d6330b4c3e45fc846b1f530a417ba7df7c6b054ad4f2e9d3fb059ba993826",
+      "bytes": 944504,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-idle1-056-070/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-idle1-056-070/authored-v1.png",
+      "sha256": "47b64a966cdf5f245101a0c249ad6994a666ec9f475cdf922c6bf1a984f27a5f",
+      "bytes": 1090171,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-idle2-071-086/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-idle2-071-086/authored-v1.png",
+      "sha256": "a61174d825053682b2a06a8293d82fba9ddcfd94b0bdfc34104038afb77384eb",
+      "bytes": 1048288,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-idle2-087-090/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-idle2-087-090/authored-v1.png",
+      "sha256": "b1a78d6fdafbda14ff19a7bd9357ca1995bf88cd4fc707cd4daa18946ffd899a",
+      "bytes": 787507,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-paradrop-305-305/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-paradrop-305-305/authored-v1.png",
+      "sha256": "0880c2aac6712523420006f1e5779fdcd491b4bbe56c30345be3507bd9e1b410",
+      "bytes": 584935,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-ready-000-007/left-arm-correction-v2.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-ready-000-007/left-arm-correction-v2.png",
+      "sha256": "aa35a5bb563f44cfa861cc3cbd3e67f7e99cb760b1b6d8133f6abd118ca40c1e",
+      "bytes": 866273,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-up-185-200/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-up-185-200/authored-v1.png",
+      "sha256": "093ea0fdd4639d48985cfb42078c83b4c6a3dfc70ff37352d9193426561da8df",
+      "bytes": 1193932,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-walk-008-023/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-walk-008-023/authored-v1.png",
+      "sha256": "002814b51a97747896e0d4acb8931d2e98254dd226c1a77fe2381af7900ca9fd",
+      "bytes": 1153510,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-walk-024-039/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-walk-024-039/authored-v1.png",
+      "sha256": "6bebb64c84a83ab4d063c28ac58c3e05d09217727609c23b8f4404a5cc4c3a71",
+      "bytes": 1154124,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/INIT/init-walk-040-055/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/INIT/init-walk-040-055/authored-v1.png",
+      "sha256": "19407e2da6c114c3f4685372b980a94c7eb14c923df66389e653a50e6673f1c2",
+      "bytes": 1158471,
+      "identities": [
+        "INIT"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-carry-228-243/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-carry-228-243/authored-v1.png",
+      "sha256": "607ba20b56eab277b45bba5383837c58b954250fa67f422fe9b791803a9994ce",
+      "bytes": 1191547,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-carry-244-259/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-carry-244-259/authored-v1.png",
+      "sha256": "cfba5f9fb855d25a966fa0fb086bb3d96e8ecfd6bd92551eca5491b715b5f4cb",
+      "bytes": 1078618,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-carry-260-275/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-carry-260-275/authored-v1.png",
+      "sha256": "e53f6ce02fdf07f4c5c2916fad7f4ce532bf7194a8c94783ef7bb2ec643064f2",
+      "bytes": 1172272,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-cheer-276-283/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-cheer-276-283/authored-v1.png",
+      "sha256": "9a240f5876a9b81061de8ed1e4984c60727056a8ce73f2e84e759c33a23b8edf",
+      "bytes": 717987,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-die1-086-100/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-die1-086-100/authored-v1.png",
+      "sha256": "6bf1f4f4e1080a838cd7cd88066f3ec56bb9962ceb0ce22b961b59a438dbc02e",
+      "bytes": 847302,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-die2-101-104/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-die2-101-104/authored-v1.png",
+      "sha256": "3bc13e6bba6db1dd330796eb972a9cf56dde80ab9fc9484198f14075bf5fcc5b",
+      "bytes": 727288,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-die2-105-108/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-die2-105-108/authored-v1.png",
+      "sha256": "0e7be85c404c02b15cf42facb892af25155ba6c10c71f378dd47015f088b7fcd",
+      "bytes": 447837,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-die2-109-112/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-die2-109-112/authored-v1.png",
+      "sha256": "7bd0a0a22bcab85d0bd9779fae17121372c87dd5435353b719a037f19f2a7866",
+      "bytes": 433690,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-die2-113-115/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-die2-113-115/authored-v1.png",
+      "sha256": "0499100b78a000884b6d5f15bbad4592defadde65ba3f644bd124cf7ffd98d36",
+      "bytes": 321916,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-fireup-164-179/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-fireup-164-179/authored-v1.png",
+      "sha256": "f2baed01b0c46d0b9f01908245b8957e1d97a988010da68d8f878c974ca9ac3c",
+      "bytes": 1039856,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-fireup-180-195/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-fireup-180-195/authored-v1.png",
+      "sha256": "d47d0e4362a4fa7518a5652bbdb6957e770c22c7d3055b474d8b43e476a19089",
+      "bytes": 976899,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-fireup-196-211/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-fireup-196-211/authored-v1.png",
+      "sha256": "60818fdd8a69432f3fdb5a48a7dcbe3fd737dcba8376f7d537f2c4d75e2c94ad",
+      "bytes": 892659,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-fireup-212-227/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-fireup-212-227/authored-v1.png",
+      "sha256": "4825811111bf69e6ea5421b092b82b5dd925861c961a2238daeb59813d6d9335",
+      "bytes": 950220,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-idle1-056-070/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-idle1-056-070/authored-v1.png",
+      "sha256": "70e6ad29804d58954007e82362d2e9818eb93501a46dd15fca8632d03e1be88f",
+      "bytes": 1252473,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-idle2-071-085/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-idle2-071-085/authored-v1.png",
+      "sha256": "17a109c7d1eef1fcbe8e85448e5fbc349358a005585afe1dcd54ed2cd9eb0f6a",
+      "bytes": 809489,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-ready-000-007/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-ready-000-007/authored-v1.png",
+      "sha256": "98955c74549c27b5f9467ee8ecabe57e883f0f7451bf3ae86903453ef0a3ad60",
+      "bytes": 888180,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-shovel-116-131/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-shovel-116-131/authored-v1.png",
+      "sha256": "c4ccaac3a118f4e208c2fdca731a55fe3358e0f442f1c40ec1d3704aa996786b",
+      "bytes": 1123144,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-shovel-132-147/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-shovel-132-147/authored-v1.png",
+      "sha256": "2c28267a973d4a1e88beef48c941600c9903d124acba6c0d04e6929afe4bde62",
+      "bytes": 1165597,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-shovel-148-163/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-shovel-148-163/authored-v1.png",
+      "sha256": "4dc2ea2f493081557fa18ccece83d20eefb79498384cea67c68b193ddfc6ccf9",
+      "bytes": 1130897,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-walk-008-023/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-walk-008-023/authored-v1.png",
+      "sha256": "3210a4ecac42e9fd2162de211883f95180150f3aa8c40cd81da5a97779f60d98",
+      "bytes": 1105269,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-walk-024-039/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-walk-024-039/authored-v1.png",
+      "sha256": "a4f540bd995eab3764bf11660535eebb9fd9549421e47cb2c311a6afdac1bf1f",
+      "bytes": 1170310,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/SLAV/slav-walk-040-055/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/SLAV/slav-walk-040-055/authored-v1.png",
+      "sha256": "76acc280d2ef86ccf2eaacbefa1b54d8700a80e5f128baa9570dc957b6b1352f",
+      "bytes": 1185360,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-cheer-196-203/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-cheer-196-203/authored-v1.png",
+      "sha256": "ffe7bb8efc5746cc88aeaf1597e176d39823b3596b206ed66f28006e5191e003",
+      "bytes": 763721,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-crawl-086-101/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-crawl-086-101/authored-v1.png",
+      "sha256": "b7903388028b189dfe393934a449091894e835e4f8b8493db95a3df9ce930a6b",
+      "bytes": 986323,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-crawl-102-117/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-crawl-102-117/authored-v1.png",
+      "sha256": "9bd1b64fa94f1485d16206e774ae023f9f82da7ec958b171aa05621848398d0a",
+      "bytes": 801153,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-crawl-118-133/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-crawl-118-133/authored-v1.png",
+      "sha256": "be3445f8f3995b96ca542d1cd64d6ee0048303722b222485b85e440318246f89",
+      "bytes": 954910,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-die1-134-148/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-die1-134-148/authored-v1.png",
+      "sha256": "0f4f9907f0d55b717019a85e8af1dece5585ff2b357acbda6f66721de477fa66",
+      "bytes": 799297,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-die2-149-163/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-die2-149-163/authored-v1.png",
+      "sha256": "a4263dc1c83fc4f46ce7519cf08424c00f525e0ef76f6be24475dc3e71627536",
+      "bytes": 795085,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-down-164-179/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-down-164-179/authored-v1.png",
+      "sha256": "e65ca7287439e3f393ff51f4788dbf27b51275d3075d9629f38afcb47b8d0eb1",
+      "bytes": 976883,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-252-255/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-252-255/authored-v1.png",
+      "sha256": "d812d4a0f91a70c08c207388522882b876e7eaf336f65a3f9659a8cb39f1c98d",
+      "bytes": 1580000,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-256-259/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-256-259/authored-v1.png",
+      "sha256": "2564eca6fd4eb2cd55df92aa5d89cf5a91f8b155a149c7ee0ce493ea725aff8d",
+      "bytes": 1600941,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-260-263/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-260-263/authored-v1.png",
+      "sha256": "541485e5365d58d0b2c27942d53ec10c1e035551c40e3dbe191339ca08ec9aa3",
+      "bytes": 1688915,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-264-267/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-264-267/authored-v1.png",
+      "sha256": "fbd0f6094ca7835858dfcd97c8e6b45520f7af8f8c238fa7c456e90e70b26bb6",
+      "bytes": 650825,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-268-271/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-268-271/authored-v1.png",
+      "sha256": "16a78301631fb12156a7d8e08621cb0140778fa2ef6f384d7ca2ba463141e72f",
+      "bytes": 1425357,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-272-275/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-272-275/authored-v1.png",
+      "sha256": "76e5ae21e076ad48f1bf0aec88892b60d5b2a53618978e050829b33851521f16",
+      "bytes": 1563072,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-276-279/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-276-279/authored-v1.png",
+      "sha256": "a93eecbf9924661cc4d61ba39708de9dc83bfdf5b282064c3ca52bc1756c93a0",
+      "bytes": 1525361,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-280-283/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-280-283/authored-v1.png",
+      "sha256": "a8f99701fcd684e84a92d47789f62035ac120599589e393817fb47369a37a963",
+      "bytes": 779505,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-284-287/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-284-287/authored-v1.png",
+      "sha256": "01eecbd4aac4dd34d633eeb8b25ffcef6a0220140837d90eed22d6b37187d591",
+      "bytes": 667198,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-288-291/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-288-291/authored-v1.png",
+      "sha256": "d1beea738e141e3fea6a79dff9a89c7432df59e321e2cb59546c66cc6e081d95",
+      "bytes": 494335,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-292-295/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-292-295/authored-v1.png",
+      "sha256": "6c4c7c874ac0bf7064e3da17724a94b5945502a58f4be612cc7b8b149ec5c12d",
+      "bytes": 1413717,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-296-299/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireprone-296-299/authored-v1.png",
+      "sha256": "e0da18b367cbcad3b767138e27cfeb5c0bf3f781cba3e5790bc625b0df604792",
+      "bytes": 595115,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireup-204-219/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireup-204-219/authored-v1.png",
+      "sha256": "718a15f875622b3ff812b45be67cda3cc0abf335f1e8c8d0bfe6a484caec71bb",
+      "bytes": 863792,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireup-220-235/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireup-220-235/authored-v1.png",
+      "sha256": "c6c9d656b5242c017335a24f8b405672a57504579bf42f36735a23cf2bfd2954",
+      "bytes": 945811,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireup-236-251/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-fireup-236-251/authored-v1.png",
+      "sha256": "488573f737478bc0cf056b706d6690556e1acd81ea170c89b9e8645a21dad2ab",
+      "bytes": 884041,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-idle1-056-070/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-idle1-056-070/authored-v1.png",
+      "sha256": "4a70160283d5c3fc533f0adab96e7c6dd0d447948578e2ea9f23a7df56546736",
+      "bytes": 1080565,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-idle2-071-085/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-idle2-071-085/authored-v1.png",
+      "sha256": "aff4e1a324eaeeec765342ec66404b786f09cc00c12cc2fd01b900d255b39275",
+      "bytes": 1030905,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-paradrop-300-300/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-paradrop-300-300/authored-v1.png",
+      "sha256": "bc43c915c3f4425af86b473e42522a58603fade621d0bad7416aa60eda781d01",
+      "bytes": 602244,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-ready-000-007/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-ready-000-007/authored-v1.png",
+      "sha256": "48eeb40551fb9099e1daa77c74bf946e4c6a8e1a747c7474ece19490759efeac",
+      "bytes": 732232,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-up-180-195/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-up-180-195/authored-v1.png",
+      "sha256": "2451189a2960a6d8517188c55033c28f7f8a3ed817b05fa8c54f4775b9a9f100",
+      "bytes": 1014337,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-walk-008-023/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-walk-008-023/authored-v1.png",
+      "sha256": "6151beda0cad629115251a90c4f5828efb30993501fb872e13aa02632a3cbd4f",
+      "bytes": 847851,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-walk-024-039/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-walk-024-039/authored-v1.png",
+      "sha256": "30f4989f7d3dbc6c772881b34524274a2c2448b33171b1f4695e1d209aa19613",
+      "bytes": 982853,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/VIRUS/virus-walk-040-055/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/VIRUS/virus-walk-040-055/authored-v1.png",
+      "sha256": "f564e22daafb7e5f9f633eabd1f70b40b45924dd2dc7dfcb25b19a82cfb2c6ff",
+      "bytes": 914151,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-crawl-086-101/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-crawl-086-101/authored-v1.png",
+      "sha256": "d5640f20290b5eccd00213ee89e4a6972bd73fa40e5c92fd9d141bb085328354",
+      "bytes": 1016833,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-crawl-102-117/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-crawl-102-117/authored-v1.png",
+      "sha256": "2259ed5c1c6d4ac0e06d4faadd77b3d71a1aeaaaa3252fe819eed9add7e90626",
+      "bytes": 1040247,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-crawl-118-133/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-crawl-118-133/authored-v1.png",
+      "sha256": "1f0319dc36d37bb079bf7f9f9e731574539f5814951624f7d97def296e99f1f1",
+      "bytes": 1023838,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die1-134-137/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die1-134-137/authored-v1.png",
+      "sha256": "f429c5dde77517108045c7b2492468c92411e0c7f553bd8944a0302d470379a3",
+      "bytes": 664603,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die1-138-141/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die1-138-141/authored-v1.png",
+      "sha256": "d4f63fe2144c3e556a709871be4fafa35c21802126d06c5c31f864dafc17be00",
+      "bytes": 761192,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die1-142-145/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die1-142-145/authored-v1.png",
+      "sha256": "9e15b363365548e41f38a8346db64e9db00946263e1f8c659739d80798a1815b",
+      "bytes": 640356,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die1-146-149/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die1-146-149/authored-v1.png",
+      "sha256": "7424d04a76f2b5a9a06c29ef18ab82069c769316e106ae4fc72ef30a6ea9ccd2",
+      "bytes": 649794,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die1-150-153/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die1-150-153/authored-v1.png",
+      "sha256": "5d5e341c03e726672311d091968f5804c5814ddfe10d4bc622b96a998ffb322f",
+      "bytes": 637743,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-154-155/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-154-155/authored-v1.png",
+      "sha256": "8e729b21dc182c6e0176e4b34bd4bc144051c4a98a309173d54c1cf5ff8587fc",
+      "bytes": 660074,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-156-157/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-156-157/authored-v1.png",
+      "sha256": "2ebfa8cbc2d9da39a83d8480b385689f3f55bd5ea0ffcc45778a2da2381d3071",
+      "bytes": 840534,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-158-159/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-158-159/authored-v1.png",
+      "sha256": "0ed6f351136deb43b9d7f8677020d514bc4558ee71bbd32042da9507cb8131f5",
+      "bytes": 465994,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-160-161/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-160-161/authored-v1.png",
+      "sha256": "3e35ab2adb0523def03132e713d92b1d642848be567c0d2853276dddc3d862fb",
+      "bytes": 432195,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-162-163/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-162-163/authored-v1.png",
+      "sha256": "2c24e3d644ec420e1a5dc97b4a3f6dae9ef766497eed85f34373ec808429a624",
+      "bytes": 342369,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-164-165/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-164-165/authored-v1.png",
+      "sha256": "f074046bb540ca1b3774870e24f6464c54aa913dc87f0f85c84261a475647dae",
+      "bytes": 382680,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-166-167/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-166-167/authored-v1.png",
+      "sha256": "afaae64e2180358db5ac9c22e37eb0ccf75f453c0d9fe495436649c605f947ca",
+      "bytes": 345595,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-168-168/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-die2-168-168/authored-v1.png",
+      "sha256": "81e72f80a2a0b4207cc26a762e568761160432ca7fc6470992671e3cfae2c036",
+      "bytes": 433300,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-down-265-275/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-down-265-275/authored-v1.png",
+      "sha256": "6b6c24d8a25c6e7b148cfccf581cf121a2c07339a20bd4c7320caa9e96fc0c94",
+      "bytes": 750609,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireprone-217-232/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireprone-217-232/authored-v1.png",
+      "sha256": "8e30830c44a6672373e0e8e9f4295d688f603437963c8cbd0d549eac62466d50",
+      "bytes": 987606,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireprone-233-248/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireprone-233-248/authored-v1.png",
+      "sha256": "7af6adfcf149f11ad28d36aba9ed8f099cd2a3fa5ac66916fbc3d69896402fc0",
+      "bytes": 953657,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireprone-249-264/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireprone-249-264/authored-v1.png",
+      "sha256": "316744df4b1f37dd111f383a7d73d68888d7d2241aaa73546fa459c866f45b6e",
+      "bytes": 840254,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireup-169-184/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireup-169-184/authored-v1.png",
+      "sha256": "2df5ad89d5cc95ded785426904ab4669b206726c7a014a870fa1d457fe0d6e2f",
+      "bytes": 1002487,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireup-185-200/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireup-185-200/authored-v1.png",
+      "sha256": "83dd040ceaea5c3754717877bbe2364fb6c97f8b82049b0991f1b6cc373805b2",
+      "bytes": 924394,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireup-201-216/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-fireup-201-216/authored-v1.png",
+      "sha256": "35ddcf6d04ed191130468707e749869a5d7ede40aae3ba56fcecc8ba12b39a57",
+      "bytes": 837402,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-idle1-056-070/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-idle1-056-070/authored-v1.png",
+      "sha256": "d41c0b6740f1792039d86bb9b91a7ff7be33ef1e0b23f5e6936e1a53e84dda4b",
+      "bytes": 959148,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-idle2-071-085/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-idle2-071-085/authored-v1.png",
+      "sha256": "c5297dc6400f317454706b2e7db8596e29f532d678a295dd74fc1eb526644dec",
+      "bytes": 957656,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-ready-000-007/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-ready-000-007/authored-v1.png",
+      "sha256": "565e1893c6c07f49cf346a97c97ed0770dda262a20515424bd49d7dca87f2958",
+      "bytes": 846420,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-up-276-287/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-up-276-287/authored-v1.png",
+      "sha256": "475944a291cfa8c8f26484356b3e09f9cb6f0b868879e1a917841a6e5deab658",
+      "bytes": 852779,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-walk-008-023/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-walk-008-023/authored-v1.png",
+      "sha256": "88dd961d237f8900c6ea67807a1bb3518c2c9aee8b5ce208c4dd06282ba8ce3f",
+      "bytes": 876322,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-walk-024-039/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-walk-024-039/authored-v1.png",
+      "sha256": "b133fd933a9ef893e7132ba9a5b947dd604ee8f98988b06d1b40152eedc248ff",
+      "bytes": 980706,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/shp-production-v2/YURIPR/yurix-walk-040-055/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/shp-production-v2/YURIPR/yurix-walk-040-055/authored-v1.png",
+      "sha256": "d03d700dc0a4bca00f2ee16add7b5420612d679b1164a794e1201f47d4489172",
+      "bytes": 788662,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/slave-carry-one-grip-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/slave-carry-one-grip-v1/authored-v1.png",
+      "sha256": "aa104689d4ae6f294d792b4f62308d482c81bc3761a33a8938ccd635e1e2a835",
+      "bytes": 934390,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/slave-carry-raised-blade-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/slave-carry-raised-blade-v1/authored-v1.png",
+      "sha256": "dd43212fd021d7d806cec68be4e47596f259734fc47dfaacf6e9e4fb6a890e2f",
+      "bytes": 783286,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/slave-fall-heading-tool-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/slave-fall-heading-tool-v1/authored-v1.png",
+      "sha256": "45f1fd1e20a9144c9e770d0e8a312587763cb476f3bc2ce9a8fe11f4fc618a2a",
+      "bytes": 968422,
+      "identities": [
+        "SLAV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/virus-crawl-left-rifle-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/virus-crawl-left-rifle-v1/authored-v1.png",
+      "sha256": "7e64ddd0b03802bf214165be004836d265fec7aed6993c1eb53513e07d5801ba",
+      "bytes": 597772,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/virus-fire-left-profile-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/virus-fire-left-profile-v1/authored-v1.png",
+      "sha256": "8928d7a206a784362070ebc86f0b32b197f80e398cafb2ca574e623245c284d8",
+      "bytes": 586104,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/virus-idle-rifle-projection-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/virus-idle-rifle-projection-v1/authored-v1.png",
+      "sha256": "eea432a236b3a0bbc510788d1e0da55788792b97cb02305bf1f48b9ac2cd0bda",
+      "bytes": 815681,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/virus-native-shot-effects-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/virus-native-shot-effects-v1/authored-v1.png",
+      "sha256": "f97e778f5ffa6b175930a245c720bde12fcf0d40d226ead588c17d795834c4c4",
+      "bytes": 406572,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/virus-paradrop-material-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/virus-paradrop-material-v1/authored-v1.png",
+      "sha256": "d194edb74161878507daf94870c7bf2cf7c337ff28e11f6aaa9c424efec9e9e9",
+      "bytes": 531867,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/virus-prone-back-knees-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/virus-prone-back-knees-v1/authored-v1.png",
+      "sha256": "3755513a472c743e8177fbeaf6db4d213da1e118236a84449de11fd6b0a5da13",
+      "bytes": 1007815,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/virus-prone-phase0-cap-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/virus-prone-phase0-cap-v1/authored-v1.png",
+      "sha256": "429f6ce534c475c6830e28f0668037d24755423b1fd8bf12f7f4f851131a0f1d",
+      "bytes": 508162,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/virus-prone-rest-ends-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/virus-prone-rest-ends-v1/authored-v1.png",
+      "sha256": "1edd89e328f135918429fc189d6694e7c18be12e12f7e6b7c9e79b4493d094b9",
+      "bytes": 549522,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/virus-prone-single-rifle-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/virus-prone-single-rifle-v1/authored-v1.png",
+      "sha256": "b83055ab326b3cbb6148098df7ce3a8625360150abfdff8d794e728fe73b7c95",
+      "bytes": 455171,
+      "identities": [
+        "VIRUS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/BSUB-bsub-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/BSUB-bsub-DUMMY01/authored-v1.png",
+      "sha256": "82202611254b0ba0716bf06b818e6a91ab6ae371a1fa8dc36be39ed71fbfe77c",
+      "bytes": 1058736,
+      "identities": [
+        "BSUB"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/CAOS-caos-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/CAOS-caos-DUMMY01/authored-v1.png",
+      "sha256": "90c8b96ce538bb42ca4ab6de727b87de424f04db79e8796dd85967bf7137a321",
+      "bytes": 1356647,
+      "identities": [
+        "CAOS"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/CMISL-bsubmisl-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/CMISL-bsubmisl-DUMMY01/authored-v1.png",
+      "sha256": "401ef57b8b889c0182dc9474b777b749b47eda0f910bf5c1fec7a6b777d311f5",
+      "bytes": 566945,
+      "identities": [
+        "CMISL"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/DISK-disk-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/DISK-disk-DUMMY01/authored-v1.png",
+      "sha256": "b6c5eb2262a71f7463a3b6d97f6c3a17885fe9e10aa7d214a8f67e6fba0cc38f",
+      "bytes": 1359808,
+      "identities": [
+        "DISK"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/DISK-disktur-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/DISK-disktur-DUMMY01/authored-v1.png",
+      "sha256": "c8868eedf017067a1f2a280ba5dadaa1a24402bbb2e9695cf94d5e01ee0255d9",
+      "bytes": 1618649,
+      "identities": [
+        "DISK"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/LTNK-ltnk-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/LTNK-ltnk-DUMMY01/authored-v1.png",
+      "sha256": "d97b54a97b4c733c040557f3ce0427a0e58154488849a9651440ef235d45c475",
+      "bytes": 1276617,
+      "identities": [
+        "LTNK"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/LTNK-ltnkbarl-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/LTNK-ltnkbarl-DUMMY01/authored-v1.png",
+      "sha256": "ae1b8e270bf2f4ccc5d35ba9d3a28bc2ac9e2e184bb767be60bb7c9722dbd61c",
+      "bytes": 560536,
+      "identities": [
+        "LTNK"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/LTNK-ltnktur-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/LTNK-ltnktur-DUMMY01/authored-v1.png",
+      "sha256": "f515f6a3c04d82b49255c4d59983c7c149edea130cc573ebeab83734e8ef4589",
+      "bytes": 761575,
+      "identities": [
+        "LTNK"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/MIND-mind-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/MIND-mind-DUMMY01/authored-v1.png",
+      "sha256": "9c9ed558debc4374f2ade49d263189baf98682913ba06f064f2715482df558b5",
+      "bytes": 1806585,
+      "identities": [
+        "MIND"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/PCV-pcv-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/PCV-pcv-DUMMY01/authored-v1.png",
+      "sha256": "2dc97ff083bb3b82501002220f557e1d507c49040785a4a7c70a97c1a3c501fc",
+      "bytes": 4731476,
+      "identities": [
+        "PCV"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/SMIN-smin-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/SMIN-smin-DUMMY01/authored-v1.png",
+      "sha256": "c278ea5ea1ada3aabd416dc85d33f69fef80c991760a481884157908fcf799ce",
+      "bytes": 1694281,
+      "identities": [
+        "SMIN"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/SMIN-smintur-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/SMIN-smintur-DUMMY01/authored-v1.png",
+      "sha256": "d4b9440006a11e99060377cc8863eb327fd6c03622c7fd54c3219d3c432f579b",
+      "bytes": 870888,
+      "identities": [
+        "SMIN"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/TELE-tele-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/TELE-tele-DUMMY01/authored-v1.png",
+      "sha256": "380586c59716cd20523ba8153a0019c62267e049302eda5f01b170e063d02ee3",
+      "bytes": 1275500,
+      "identities": [
+        "TELE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/TELE-teletur-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/TELE-teletur-DUMMY01/authored-v1.png",
+      "sha256": "6e7287253a04179d8aeb8c7eb377116f8c109423acc41f0ce0a04519854c082e",
+      "bytes": 1081549,
+      "identities": [
+        "TELE"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/YHVR-yhvr-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/YHVR-yhvr-DUMMY01/authored-v1.png",
+      "sha256": "be592ee2419e312b4d9d53b3f857dc852f4dc850befaca1e727b69fe4e5524b7",
+      "bytes": 1316122,
+      "identities": [
+        "YHVR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/YTNK-ytnk-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/YTNK-ytnk-DUMMY01/authored-v1.png",
+      "sha256": "58374cef31b1b5986815ef5fab5107312a6e910285f6777b27c7f698d6549632",
+      "bytes": 1073404,
+      "identities": [
+        "YTNK"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/YTNK-ytnktur-CYLINDER14/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/YTNK-ytnktur-CYLINDER14/authored-v1.png",
+      "sha256": "03a1a77e98a5165c380cd3d1a7681f6ec82008f243ee0ae1dffddde60e44f0eb",
+      "bytes": 572397,
+      "identities": [
+        "YTNK"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/YTNK-ytnktur-CYLINDER22/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/YTNK-ytnktur-CYLINDER22/authored-v1.png",
+      "sha256": "67d669bd4dfc7266fca48938e359c10a1d7f29fd261de461112264c4e8727d14",
+      "bytes": 496775,
+      "identities": [
+        "YTNK"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/vxl-production-v1/masters/YTNK-ytnktur-DUMMY01/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/YTNK-ytnktur-DUMMY01/authored-v1.png",
+      "sha256": "187da959e93ba6dd756dd9a63523e18e9b6c47cad739256bc79e96bb28a33585",
+      "bytes": 913508,
+      "identities": [
+        "YTNK"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-bent-arm-correction-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-bent-arm-correction-v1/authored-v1.png",
+      "sha256": "1d738189caf76b84d763c20d576be72e46c2ad7296918c70c48f5092653bb86c",
+      "bytes": 855933,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-collapse-corrections-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-collapse-corrections-v1/authored-v1.png",
+      "sha256": "b6155116716c662f68e360787974e94ae417dbaad5822695ccea8bed4862e8a8",
+      "bytes": 636925,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-crawl-front-right-corrections-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-crawl-front-right-corrections-v1/authored-v1.png",
+      "sha256": "5aa3e54fc17ebbcbfdd93865744bc9dc96cd76131b302988c011ca4bb03769d2",
+      "bytes": 1080815,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-down-front-heading-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-down-front-heading-v1/authored-v1.png",
+      "sha256": "d0a63f088a831871e2c5dcc84b02f042502131d7b281b226da28c30fc8877a42",
+      "bytes": 1054430,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-final-effects-correction-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-final-effects-correction-v1/authored-v1.png",
+      "sha256": "e7edb82538a51b85acafee340282c98c03ec6a524955efcc8da812f6339e8dcf",
+      "bytes": 301666,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-fire-back-right-corrections-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-fire-back-right-corrections-v1/authored-v1.png",
+      "sha256": "f47c4ab4cd1b1a5ff8342f01933c3a28d8f491b2da93efe6895508dfb9e24733",
+      "bytes": 680510,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-fire-left-hand-corrections-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-fire-left-hand-corrections-v1/authored-v1.png",
+      "sha256": "71cb1f6573e5ffd62ea4dbc10c05ed674578f529c56086eb532ee389589c5947",
+      "bytes": 606555,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-front-right-corrections-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-front-right-corrections-v1/authored-v1.png",
+      "sha256": "5f70132230ffa76f34d29c4073076d4b627797821c71a470c08e4ac080b55859",
+      "bytes": 860033,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-hand-phases-corrections-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-hand-phases-corrections-v1/authored-v1.png",
+      "sha256": "99b9ccdc1befd2708d14b619f1c4e324b7852c9a5fa876d23b6d8d2a5f8f6acd",
+      "bytes": 926186,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-heading-corrections-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-heading-corrections-v1/authored-v1.png",
+      "sha256": "44256e52c8a6a54c4f9a81ea98e7fdb5631b9035a42e3501262adad787903a57",
+      "bytes": 828233,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-late-spark-corrections-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-late-spark-corrections-v1/authored-v1.png",
+      "sha256": "52a2147efda05c67991c984dc9f7064edc6f81aa68a33c374a04f166741937eb",
+      "bytes": 642621,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-prone-right-heading-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-prone-right-heading-v1/authored-v1.png",
+      "sha256": "abdccf00d1eee05d2ea9bd72551c687bc7bcd6b55781909a7e4d40185dadc605",
+      "bytes": 601575,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-right-profile-corrections-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-right-profile-corrections-v1/authored-v1.png",
+      "sha256": "1c412d3e17a265774c163831e7239445543de42fda4b840bfc54ce7b7d388c9b",
+      "bytes": 608364,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-up-front-heading-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-up-front-heading-v1/authored-v1.png",
+      "sha256": "67d927fd906108c6393ce433c922645b9bf8430da185909ddfbb0d55fb91c78b",
+      "bytes": 1196151,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "path": ".artifacts/yuri-units/yurix-up-right-heading-v1/authored-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/yurix-up-right-heading-v1/authored-v1.png",
+      "sha256": "9806da404d40ca82d5307cd15be318497a016b4729b24d63839b6d43df7d1103",
+      "bytes": 751825,
+      "identities": [
+        "YURIPR"
+      ],
+      "gitTransfersThisFile": false
+    },
+    {
+      "identity": "MIND",
+      "path": ".artifacts/yuri-units/feedback-r2/art-samples/MIND-clean-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-samples/MIND-clean-v1.png",
+      "sha256": "f1b71d600297fce58a9b857301b926dd4704aa8269bed2f0008b7f81e07bf648",
+      "bytes": 1656917,
+      "gitTransfersThisFile": false,
+      "acceptance": "USER_ACCEPTED_NATIVE_R3_VISUAL"
+    },
+    {
+      "identity": "LTNK",
+      "path": ".artifacts/yuri-units/feedback-r2/art-samples/LTNK-clean-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-samples/LTNK-clean-v1.png",
+      "sha256": "0bff093ab38c0ea4188df1456383bf939b82a4faea1c5a265058aec29097c124",
+      "bytes": 1217726,
+      "gitTransfersThisFile": false,
+      "acceptance": "USER_ACCEPTED_NATIVE_R3_VISUAL"
+    },
+    {
+      "identity": "YTNK",
+      "path": ".artifacts/yuri-units/feedback-r2/art-samples/YTNK-clean-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-samples/YTNK-clean-v1.png",
+      "sha256": "6b392992e0158eeb8704124c186e35ba270cf9f82e61cb8bd625e87dedfef217",
+      "bytes": 1056656,
+      "gitTransfersThisFile": false,
+      "acceptance": "USER_ACCEPTED_NATIVE_R3_VISUAL"
+    },
+    {
+      "identity": "MIND",
+      "path": ".artifacts/yuri-units/feedback-r2/art-samples/MIND-clean-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-samples/MIND-clean-v1.png",
+      "sha256": "f1b71d600297fce58a9b857301b926dd4704aa8269bed2f0008b7f81e07bf648",
+      "bytes": 1656917,
+      "gitTransfersThisFile": false,
+      "acceptance": "USER_ACCEPTED_NATIVE_R3_VISUAL"
+    },
+    {
+      "identity": "LTNK",
+      "path": ".artifacts/yuri-units/feedback-r2/art-samples/LTNK-clean-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-samples/LTNK-clean-v1.png",
+      "sha256": "0bff093ab38c0ea4188df1456383bf939b82a4faea1c5a265058aec29097c124",
+      "bytes": 1217726,
+      "gitTransfersThisFile": false,
+      "acceptance": "USER_ACCEPTED_NATIVE_R3_VISUAL"
+    },
+    {
+      "identity": "YTNK",
+      "path": ".artifacts/yuri-units/feedback-r2/art-samples/YTNK-clean-v1.png",
+      "actualSource": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-samples/YTNK-clean-v1.png",
+      "sha256": "6b392992e0158eeb8704124c186e35ba270cf9f82e61cb8bd625e87dedfef217",
+      "bytes": 1056656,
+      "gitTransfersThisFile": false,
+      "acceptance": "USER_ACCEPTED_NATIVE_R3_VISUAL"
+    }
+  ],
+  "rigidHoverProvenance": {
+    "selected": "r4",
+    "receipt": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r10/hover-verification-v3.json",
+    "newTransferFiles": 12,
+    "retiredProbeResources": "r2 and r3 remain in isolated test packages; excluded from this integration transfer graph"
+  },
+  "peerDependencies": {
+    "C": "Stationary YAREFN/YACNST art and shared turret/transform/allocation validation; isolated D uses Original buildings.",
+    "E": "Use stable rules identities and D accepted master provenance for cameos; no E art imported.",
+    "alliedBugfix": "No peer cherry-pick; preserve rooftop/Prism/sidebar/deployed-GI repairs when merging shared loader/profile changes.",
+    "mainAdvancement": "Merge additive semantics into current main; never replace its entire catalog/profile with this older baseline."
+  },
+  "deploymentInterfaces": [
+    {
+      "unit": "PCV",
+      "building": "YACNST",
+      "unitArt": "PCV",
+      "buildingArt": "YACNST",
+      "forward": "YACNST",
+      "reverse": "PCV",
+      "unitDeployFacing": null,
+      "buildingDeployFacing": null,
+      "nativeUnitTurretOffset": "0",
+      "nativeBuildingTurret": {
+        "image": null,
+        "voxel": null,
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "sharedMembers": [],
+      "nativeUnitSections": [
+        {
+          "member": "pcv.vxl",
+          "archive": "ra2md.mix/localmd.mix",
+          "sha256": "28437ea79b68d4a08eb8a38daf06f06859d33e3db9b1030d0f797900724e048a",
+          "sections": [
+            {
+              "name": "DUMMY01",
+              "normalsMode": 4,
+              "minBounds": [
+                -52.46479034423828,
+                -19.17951202392578,
+                -0.6951065063476562
+              ],
+              "maxBounds": [
+                64.0008316040039,
+                20.246442794799805,
+                34.363670349121094
+              ],
+              "sizeX": 117,
+              "sizeY": 40,
+              "sizeZ": 36,
+              "hvaMultiplier": 0.0833333358168602,
+              "transfMatrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -0.12401225417852402,
+                -0.6392490863800049,
+                0.6964946985244751,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "slaves": {
+        "unitType": null,
+        "buildingType": null,
+        "count": null,
+        "regen": null,
+        "reload": null
+      },
+      "ownership": "D mobile unit, workers and unit bindings; C stationary body/turret and building bindings",
+      "integrationCheck": "PENDING_C_PLUS_D_NATIVE_TRANSITION_AND_SHARED_ALLOCATION"
+    },
+    {
+      "unit": "SMIN",
+      "building": "YAREFN",
+      "unitArt": "SMIN",
+      "buildingArt": "YAREFN",
+      "forward": "YAREFN",
+      "reverse": "SMIN",
+      "unitDeployFacing": "0",
+      "buildingDeployFacing": "0",
+      "nativeUnitTurretOffset": "70",
+      "nativeBuildingTurret": {
+        "image": "SMINTUR",
+        "voxel": "true",
+        "x": "-25",
+        "y": "15",
+        "z": "-50"
+      },
+      "sharedMembers": [
+        "smintur.vxl",
+        "smintur.hva"
+      ],
+      "nativeUnitSections": [
+        {
+          "member": "smin.vxl",
+          "archive": "ra2md.mix/localmd.mix",
+          "sha256": "bdf59ee5ffba088a95da30dd2a53424df15b0607c7389915f6ceeb25e7a6c8cf",
+          "sections": [
+            {
+              "name": "DUMMY01",
+              "normalsMode": 4,
+              "minBounds": [
+                -38.1845817565918,
+                -22.350162506103516,
+                -0.3509547710418701
+              ],
+              "maxBounds": [
+                37.31575012207031,
+                22.25409698486328,
+                29.94672966003418
+              ],
+              "sizeX": 76,
+              "sizeY": 45,
+              "sizeZ": 31,
+              "hvaMultiplier": 0.0833333358168602,
+              "transfMatrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -0.06422780454158783,
+                0.15023422241210938,
+                0.2405211627483368,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "member": "smintur.vxl",
+          "archive": "ra2md.mix/localmd.mix",
+          "sha256": "f6343f48d8909a73495b7b088289e887bb3cf313802f2ff4a362bfff9962ac41",
+          "sections": [
+            {
+              "name": "DUMMY01",
+              "normalsMode": 4,
+              "minBounds": [
+                -4.4429707527160645,
+                -3.075490951538086,
+                23.66797637939453
+              ],
+              "maxBounds": [
+                21.97031021118164,
+                2.592566967010498,
+                38.07721710205078
+              ],
+              "sizeX": 27,
+              "sizeY": 6,
+              "sizeZ": 15,
+              "hvaMultiplier": 0.0833333358168602,
+              "transfMatrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -0.06422780454158783,
+                0.15023422241210938,
+                0.2405211627483368,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "slaves": {
+        "unitType": "SLAV",
+        "buildingType": "SLAV",
+        "count": "5",
+        "regen": "500",
+        "reload": "25"
+      },
+      "ownership": "D mobile unit, workers and unit bindings; C stationary body/turret and building bindings",
+      "integrationCheck": "PENDING_C_PLUS_D_NATIVE_TRANSITION_AND_SHARED_ALLOCATION"
+    }
+  ],
+  "gitResourceWarning": "Git does not transfer ignored .local/.artifacts files. Copy the 140 catalog-selected resources additively and verify every SHA-256; preserve existing main catalogs, profiles, art, caches, apps and sibling worktrees.",
+  "preparedData": "Regenerate or invalidate affected prepared HD contracts/cache after combining catalogs. Do not relabel stale prepared binaries as current."
+}

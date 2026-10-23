@@ -1,0 +1,188 @@
+{
+  "status": "PASS_13_BUILDING_FAMILIES_28_DENSITY_SOURCE_PATHS_NATIVE_STATES_AND_LOSSLESS_BACKING",
+  "candidate": {
+    "schemaVersion": 1,
+    "revision": "newurban-environment-final-buildings-batch97-v4-combined",
+    "sha256": "ffc5f7ea03c0af746e7a9d7546cc4ed66d07fdbf51a88355942c122e2ee53e68"
+  },
+  "runtimeSourceCommit": "fa102d9fdb571523697d971ae5b6beb1caa65615",
+  "stage": {
+    "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/active-stage-v1.json",
+    "sha256": "ace64190253f0d3ed16ee797ba6016764446c5bb7177acebf93131fc400a61ca",
+    "bytes": 1107
+  },
+  "export": {
+    "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/export-and-preservation-v4.json",
+    "sha256": "e967468f05793fbc0757147abd154a8bebc2cffbcab534a0e760cd92db2d1f16",
+    "bytes": 383356
+  },
+  "staticAudit": {
+    "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/static-audit-v4.json",
+    "sha256": "2e6b40a0a2b20feb471920f83d6c4f66e2bd53bb8fa085cbd896a19d6bc64edb",
+    "bytes": 12893
+  },
+  "priorBatchAcceptance": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/user-acceptance-20261021.json",
+    "sha256": "9f766ecc0dfb98171540d055468c1ddc4392baaaf020dcc90314571950fc741b",
+    "bytes": 1119
+  },
+  "completeSelectedShpFamilies": 13,
+  "sourceMembers": 14,
+  "sourceDensitySlots": 164,
+  "originalUnusedFlagDensitySlots": 32,
+  "separateOriginalShadowSlots": 50,
+  "selectedMothers": 21,
+  "inheritedSnowStructuralEdits": 4,
+  "unchangedPriorFamilies": 208,
+  "exactPriorPayloads": 1483,
+  "native": [
+    {
+      "density": 2,
+      "report": {
+        "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/native-2x-v2/report.json",
+        "sha256": "bbc5cbce139004a194b52a53e51b779b07b8f2862450d4e356a8b01797e647c9",
+        "bytes": 69380045
+      },
+      "sourcePaths": 14,
+      "officialOriginalMaps": 3,
+      "nativeStates": "PASS",
+      "labCaptureRepairAndBothLoops": "PASS",
+      "originalControl": false,
+      "worldPeakBytes": 341716332,
+      "preparedPeakBytes": 45156556
+    },
+    {
+      "density": 4,
+      "report": {
+        "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/native-4x-v1/report.json",
+        "sha256": "d1fb24296b6dcb87ce354a35c48a7dffef3a54bd53dea364275d9ecc7fa78dfb",
+        "bytes": 70363608
+      },
+      "sourcePaths": 14,
+      "officialOriginalMaps": 3,
+      "nativeStates": "PASS",
+      "labCaptureRepairAndBothLoops": "PASS",
+      "originalControl": true,
+      "worldPeakBytes": 1275381296,
+      "preparedPeakBytes": 108112788
+    }
+  ],
+  "worldPeakBytes": {
+    "2": 341716332,
+    "4": 1275381296
+  },
+  "preparedPeakBytes": {
+    "2": 45156556,
+    "4": 108112788
+  },
+  "budgets": {
+    "world2x": 536870912,
+    "world4x": 1342177280,
+    "preparedCpu": 134217728,
+    "ui": 16777216
+  },
+  "sourceStorage": "Only NewUrban terrain CPU backing uses lossless repeated-RGBA runs when smaller. GPU RGBA, source atlases, dimensions, UVs, filters, shaders and terrain geometry are unchanged. Decoded upload plus retained encoded data is included in transient source checks. All 220 selected density atlases round-trip byte exactly.",
+  "gpuRecovery2x": {
+    "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/native-2x-v2/report.json",
+    "sha256": "bbc5cbce139004a194b52a53e51b779b07b8f2862450d4e356a8b01797e647c9",
+    "bytes": 69380045
+  },
+  "gpuRecovery4x": {
+    "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/gpu-recovery-4x-v2/report.json",
+    "sha256": "eead6787182f689177020a43924cfa4706fc607067137670caa790415b6cce4c",
+    "bytes": 27364
+  },
+  "preparedRegistration": {
+    "type": "prepared-hd-registered",
+    "members": 453,
+    "pages": 1205,
+    "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+  },
+  "preparedInputs": "The new environment families use their independent PNG reader and worker preparation. All 453 existing prepared actor members / 1205 pages keep unchanged actual inputs and the same original index; no new manifest is mislabeled as old prepared data.",
+  "testPasses": 34,
+  "testAssertions": 1012,
+  "tests": [
+    {
+      "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/loader-tests-v4.log",
+      "sha256": "012ea1d430cae21d350b575210cd58673d5ec3ecab24402bc29f1b48b3eb847d",
+      "bytes": 2870
+    },
+    {
+      "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/terrain-retention-tests-v1.log",
+      "sha256": "34e214dbe7cd636446b4a875143ce98705e814f004aff1702f8202aa14e98cfa",
+      "bytes": 836
+    }
+  ],
+  "typecheck": {
+    "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/typecheck-v1.log",
+    "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+    "bytes": 39
+  },
+  "build": {
+    "file": ".artifacts/m2-4/build-newurban-final-buildings-batch97-v1/identity.json",
+    "sha256": "8687c31872f3f5a1e6e44b440436f996c91f7d0db966cf501aee3ba4e6637e55",
+    "bytes": 31102
+  },
+  "applicationDifferences": [
+    "desktop/environment-newurban-hd-contract.json",
+    "src/engine/renderable/entity/map/TerrainHd.ts",
+    "src/engine/renderable/entity/map/retainedTerrainSource.ts"
+  ],
+  "terrainLoaderRecovery": {
+    "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/baseline-terrain-loader.ts",
+    "sha256": "31b067845d1ec3cbb8103e509e04270e740c59fda0ed05091f143b2afabbcfa8",
+    "bytes": 8544
+  },
+  "inventory": {
+    "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/inventory-reconciliation-v1.json",
+    "sha256": "862a2ab9c4c7cd966e806ee7c93ea7e715e99914ea3f526127516577344ef201",
+    "bytes": 61049
+  },
+  "remainingAuthoredNewUrbanSources": 3,
+  "remainingIdentities": [
+    "CIV1",
+    "DNOA",
+    "GAFWLL"
+  ],
+  "conditionalScannerRows": 22,
+  "review": {
+    "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/review-v1/M2.4-NewUrban-Final-Buildings-Batch97-Embedded.html",
+    "sha256": "5e5de0e0038a034e6b3cd60e0cd16b2e248af388fe374d315736fb15c15522ad",
+    "bytes": 192211774
+  },
+  "reviewMetadata": {
+    "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/review-v1/review-metadata-v1.json",
+    "sha256": "d7d0ce17e45a1b85bda4be4dabf6f7f9c7215b2fbac721d48d0e4ac3529f0de2",
+    "bytes": 242039
+  },
+  "imageInstances": 317,
+  "nativeVideos": 4,
+  "productionFailures": [
+    {
+      "attempt": "First native cloth-reuse audit",
+      "result": "A donor has no ownership pixels in one slot; the diagnostic assumed every flag was remappable. Retain the partial v1 input extraction. The v2 audit preserves empty/non-remappable cases, and the target is a dedicated fixed yellow motif."
+    },
+    {
+      "attempt": "First building export",
+      "result": "Internal visual inspection rejected native index-12 architectural cells pasted over LAX HD material. The final continuous export keeps original separate shadows and native ownership without old dark-cell stamping."
+    },
+    {
+      "attempt": "First pole-freeze export",
+      "result": "The original mast uses several fixed-palette indices rather than guessed dark indices 5/7. Final registration measures its invariant source-canvas columns, with one shared authored pole patch for all 16 phases."
+    },
+    {
+      "attempt": "First isolated context recovery probe",
+      "result": "Restoring the unattached probe in the loss-event microtask timed out. No game-source or resource change was needed: the corrected tool attaches its probe and waits for Chromium event bookkeeping; both density checks now pass. The failed receipt remains preserved."
+    }
+  ],
+  "browser": "NOT_RUN_RETAINED_LOCAL_PROTOCOL_RESTRICTION",
+  "visual": "USER_ACCEPTED",
+  "windows": "NOT_RUN",
+  "mainIntegration": "NOT_PERFORMED",
+  "m24Complete": false,
+  "userAcceptance": {
+    "file": ".artifacts/m2-4/newurban-remaining-actors-batch97-20261021/user-acceptance-20261021.json",
+    "sha256": "e4966bf1ef0c67eea45ba4ccd87590c6ad714a6cd0f7c15eeeb68414c1c8f9af",
+    "bytes": 1132
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "status": "PASS_111_SOURCE_MEMBERS_222_NATIVE_DENSITY_PATHS_AND_EXACT_PRIOR_FILTER_GUARDS",
+  "candidate": {
+    "schemaVersion": 1,
+    "revision": "newurban-m2-4-secondary-terrain-reuse-batch94-v5",
+    "sha256": "021529490555e37f367822e3274b08c7214adda496a593b0f42e4a07b66d4ffc"
+  },
+  "runtimeSourceCommit": "7c3e5c20f801847712d42756795c615c39e34fbb",
+  "finalStage": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/active-stage-v2.json",
+    "sha256": "c4f5f46f6077fb7d7f62601647a4436ab98cb1e846941bfcd26e8ef886156174",
+    "bytes": 1109
+  },
+  "newCompleteSourceMembers": 111,
+  "newCompleteLoadFamilies": 45,
+  "selectedLoadGroups": 92,
+  "sourceDensitySlots": 1216,
+  "authoredDensitySlots": 1074,
+  "exactAcceptedDensitySlots": 1052,
+  "boundedTargetCoverageDensitySlots": 4,
+  "adaptedGrassDensitySlots": 18,
+  "originalCompatibilityDensitySlots": 142,
+  "priorMemberGroupsRetained": 47,
+  "priorDensitySamplesAndFilterGuardsExact": 2372,
+  "losslessPrior4xRawBytesSaved": 61330432,
+  "nativeReports": [
+    {
+      "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/native-2x-v1/report.json",
+      "sha256": "ae715a621fbf147aca23825c09c766dd73a743e90f45ec468686673d04f7463c",
+      "bytes": 68098083
+    },
+    {
+      "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/native-4x-v2/report.json",
+      "sha256": "27921959d2247f808879db7c0d7b1ead5c98006ea56189842af3b7d5e34551f5",
+      "bytes": 75140329
+    }
+  ],
+  "worldPeakBytes": {
+    "2": 337991956,
+    "4": 1279982436
+  },
+  "preparedPeakBytes": {
+    "2": 45156556,
+    "4": 108112788
+  },
+  "budgets": {
+    "world2x": 536870912,
+    "world4x": 1342177280,
+    "preparedCpu": 134217728,
+    "ui": 16777216
+  },
+  "preparedRegistration": {
+    "type": "prepared-hd-registered",
+    "members": 453,
+    "pages": 1205,
+    "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+  },
+  "preparedDependencies": "Existing 453 members and 1205 pages remain source-identical. Terrain atlases are separately registered raw resources; no prepared index version or dependency hash is spoofed.",
+  "staticAudit": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/static-audit-v3.json",
+    "sha256": "df08f55e4a0bb31462b4d2c7ba18a42c3eb16ce7fc20c5a0b1567c172fa48bb2",
+    "bytes": 3529
+  },
+  "filterGuardAudit": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/inherited-filter-guards-v1.json",
+    "sha256": "d8753c76ede9f5a34ef4c043d0325040d79c5cce9a56ee6a31ad13d56b59a2c1",
+    "bytes": 462931
+  },
+  "compactManifest": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/compact-manifest-proof-v1.json",
+    "sha256": "4e6458708a14e340eee459ccf2cbb244ffcb044ea8bff487872db5ffa0aa788c",
+    "bytes": 1170
+  },
+  "sharedLoaderDiff": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/shared-loader-diff-v1.patch",
+    "sha256": "d378c2be5a2bb7cc66f274238a211df7ce3c7ffebbba69da8ed581a07d5126be",
+    "bytes": 2249
+  },
+  "tests": {
+    "passCount": 7,
+    "assertions": 773,
+    "log": {
+      "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/targeted-tests-v2.log",
+      "sha256": "62ce4fff8aff0166b1f27a8f1a7dcbc5fb700ab76eecf7647870c7edcf00e1c7",
+      "bytes": 805
+    }
+  },
+  "typecheck": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/typecheck-v1.log",
+    "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+    "bytes": 39
+  },
+  "buildIdentity": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/build-newurban-secondary-terrain-batch94-v2/identity.json",
+    "sha256": "b750555454183742875fe8abea8898d24b0ea77a78df9197c042d2fd4b389424",
+    "bytes": 31104
+  },
+  "inventory": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/inventory-reconciliation-v1.json",
+    "sha256": "b69370afd4180a5587854fd14877fde3f4341ee812a8317e3a8cb253f3f79b22",
+    "bytes": 159718
+  },
+  "remainingAuthoredNewUrbanGroups": 73,
+  "remainingByKind": {
+    "tmp": 57,
+    "infantry": 2,
+    "building": 13,
+    "overlay": 1
+  },
+  "conditionalDependencyGroups": 22,
+  "deferredOriginalSlopes": [
+    "prslpe01.ubn",
+    "prslpe02.ubn",
+    "prslpe03.ubn",
+    "prslpe04.ubn"
+  ],
+  "review": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/review-v1/M2.4-NewUrban-Secondary-Terrain-Batch94-Embedded.html",
+    "sha256": "da75bee2dfcf30c40c64c6c9225c7ff4c899c83f35cb267de19833441729816d",
+    "bytes": 153086129
+  },
+  "reviewMetadata": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/review-v1/review-metadata-v1.json",
+    "sha256": "f06b83584f3ad1e84aa01dff97676fbd7ee1213efb68af2918ed84ccd3a8e9b4",
+    "bytes": 122920
+  },
+  "selectedNewMothers": 0,
+  "inheritedArtwork": "ACCEPTED",
+  "changedVisualStatus": "USER_ACCEPTED_20261021",
+  "windows": "NOT_RUN",
+  "mainIntegration": "NOT_PERFORMED",
+  "m24Complete": false,
+  "sourceDensityPaths": 222,
+  "technicalClosure": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/coverage-and-native-closure-v1.json",
+    "sha256": "5d2a304894edbf9650ca7b6bdae29e212b5a69f109f06bd0e6a4ec1073830728",
+    "bytes": 82387
+  },
+  "resourceLedger": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/resource-handoff-v1.json",
+    "sha256": "009dc5446957135dde6af18b4034ef478f28575b768ab6f543ca6a6c62c0bd6d",
+    "bytes": 11086158
+  },
+  "resourceFileCount": 43167,
+  "postExitHashCheck": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/resource-handoff-post-exit-v1.json",
+    "sha256": "af9d0014d7c39b77093ce24cbf4dceddd64999517e7c1451db16f873dfce36cc",
+    "bytes": 450
+  },
+  "desktopDelivery": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/desktop-delivery-v1.json",
+    "sha256": "724339c22aa267fe396e4bb52a3cfcf49176589309f30459aadc1bdabdf206cd",
+    "bytes": 1494
+  },
+  "desktopReview": "/Users/Aone/Desktop/M2.4-Review-NewUrban-Terrain-Batch94-20261021/M2.4-NewUrban-Secondary-Terrain-Batch94-Embedded.html",
+  "desktopTotalBytes": 164295207,
+  "mainAtHandoff": {
+    "head": "95d6f9e96cbc783bfe020748dffc1883422d781b",
+    "clean": true,
+    "porcelain": "",
+    "changedByTask": false
+  },
+  "perBatchGamePackage": "NOT_CREATED_USER_REQUEST_HTML_ONLY",
+  "finalIndependentMilestoneApplication": "PENDING_FULL_SCOPE_AND_ACCEPTANCE",
+  "userAcceptance": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/user-acceptance-20261021.json",
+    "bytes": 1477,
+    "sha256": "48e8ad508db42a11c71b850ab2b4ee9c995abc3eb0bc5b1ed0328bae00a9727b"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "m2-complete-canonical-main-20261022-v1",
+  "status": "M2_USER_ACCEPTED_COMPLETE_ON_CANONICAL_MAIN",
+  "branch": "main",
+  "runtimeSourceHead": "fbaac0f53fc6f0a93b570d8fcf26b2658e68a69b",
+  "app": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-R2-Mac-arm64-20261022/Red Alert 2 HD v0.2 R2.app",
+  "review": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-R2-Mac-arm64-20261022/Review/Open-Review.html",
+  "archive": {
+    "status": "PASS_ZIP64_ALL_PAYLOAD_HASHES_CRC_UNIX_PERMISSIONS_AND_SYMLINKS",
+    "archive": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-R2-Mac-arm64-20261022.zip",
+    "sha256": "62bd7014f30f47dd6b28a895e2692c36a576ea6b6934a28ab1219e217e1cb558",
+    "bytes": 5700892112,
+    "entries": 14530,
+    "inventorySha256": "f3601170e2d97927a6da1142c9363bbbabd8d16ac7b5a1d54a67e960a3e6dcfb",
+    "applicationAndResourcesChanged": false,
+    "publishedOriginalDataBlockers": 0,
+    "historicalHiddenSourceAnomalies": 4,
+    "mutableProfileExcluded": true,
+    "m24Complete": true,
+    "timestampPolicy": "Archive headers clamp timestamps outside ZIP 1980-2107 bounds; original files and contents remain untouched.",
+    "windows": "NOT_RUN_ON_THIS_MAC"
+  },
+  "userAcceptance": "docs/m2-complete-user-acceptance-20261022.json",
+  "publishedMapSources": 213,
+  "acceptedResourcePinsUnchanged": 13978,
+  "freshFocusedCases": 18,
+  "freshAssertions": 141,
+  "entryTypecheck": "PASS",
+  "nativeProductionCases": [
+    "Small Town America 4X",
+    "Austin 2X"
+  ],
+  "otherNativeChecks": [
+    "Urban 4X own-profile startup",
+    "Snow 2X / Desert 4X / Original lifecycle",
+    "Rush Hour final budget fixture",
+    "Both densities exact source/GPU recovery"
+  ],
+  "reusedEvidence": "All accepted unchanged artwork, catalog/rules and R1 input/HUD checks; no complete art matrix rerun.",
+  "historicalFailedHarnessReceiptsPreserved": true,
+  "worldBudgetsUnchanged": [
+    536870912,
+    1342177280
+  ],
+  "preparedCpuBudgetUnchanged": 134217728,
+  "uiBudgetUnchanged": 16777216,
+  "preparedMembers": 448,
+  "preparedPages": 1189,
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "returnedWindowsCodePreserved": true,
+  "history": "/Users/Aone/RA2remaster/project-history/m2-complete-20261022",
+  "remotePush": false,
+  "published": false,
+  "futureDevelopment": "Continue on canonical local main; new objectives should use a new conversation.",
+  "cleanup": {
+    "status": "COMPLETE_SCOPED_M2_INTERMEDIATE_RETIREMENT",
+    "receipt": "/Users/Aone/RA2remaster/project-history/m2-complete-20261022/Cleanup.json",
+    "artifactTargetsRemoved": 2,
+    "detachedDiagnosticWorktreeRemoved": true,
+    "remainingBranches": [
+      "main"
+    ],
+    "remainingWorktrees": [
+      "/Users/Aone/RA2remaster/ra2-hd"
+    ],
+    "logicalBytesRemoved": 1181353522,
+    "observedAvailableBytesChange": 3598807040,
+    "observedSpaceQualification": "Filesystem available-space change is observed separately from logical file sizes; APFS/cloud accounting can differ.",
+    "obsoleteDesktopAlreadyAbsent": [
+      "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-R1-Mac-arm64-20261022",
+      "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022",
+      "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022.zip",
+      "/Users/Aone/Desktop/M2.4-Review-Corrections-R1-20261022.html"
+    ],
+    "originalDataRemoved": false,
+    "unrelatedArtifactsRemoved": false
+  },
+  "postCleanupRegistration": {
+    "status": "PASS_CANONICAL_MAIN_REGISTRATION_AND_UNCHANGED_ACTIVE_RESOURCES",
+    "sourceHead": "05f5c16e0855acbce3078cc4d0f318ed1dab5111",
+    "runtimeSourceHead": "fbaac0f53fc6f0a93b570d8fcf26b2658e68a69b",
+    "resourceRoot": "/Users/Aone/RA2remaster/ra2-hd/.local",
+    "resourcePins": 13978,
+    "routes": 13728,
+    "selections": 157,
+    "selectedTheaterLayers": 10,
+    "originalArchivePins": 7,
+    "prepared": {
+      "type": "prepared-hd-registered",
+      "members": 448,
+      "pages": 1189,
+      "index": "f993e5c0c3e235e0fdaf57bb74b8590eaac7992f30529763e003885d540ad9b1"
+    },
+    "allRegisteredPathsInsideCanonicalLocal": true,
+    "returnedWindowsSourceAncestryPreserved": true,
+    "windows": "NOT_RUN_ON_THIS_MAC"
+  },
+  "retainedCorrectionEvidence": {
+    "records": 184,
+    "uniqueObjects": 163,
+    "index": "/Users/Aone/RA2remaster/project-history/m2-complete-20261022/Provenance/Source-Index.jsonl",
+    "indexSha256": "09c84975ae5f0a9a2a0528ba84f624ced21370ba365e2f5791255afd4ef5049e",
+    "policy": "Retain receipts, failed controls, images, clips and build identities; exclude runtime/resource copies and QA caches. Authoring sources remain in the existing M2.4 provenance handoff."
+  },
+  "privateSettings": {
+    "active": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-R2-Mac-arm64-20261022/M2.4-Review-Profile",
+    "persistentSnapshot": "/Users/Aone/RA2remaster/project-history/m2-complete-20261022/User-Profiles/Final-v02",
+    "supersededProfileQualification": "Old R1 and restored-baseline deliveries were already absent at closure; no backup of those absent profiles is claimed.",
+    "receipt": "/Users/Aone/RA2remaster/project-history/m2-complete-20261022/User-Profile-Retention.json"
+  },
+  "canonicalManifestQualification": "Two portable import manifests omit source-path/import metadata. All 13,978 canonical files match their previously accepted canonical metadata; all packaged resource pins match the prior accepted package."
+}

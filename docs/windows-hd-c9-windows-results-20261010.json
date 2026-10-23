@@ -1,0 +1,1916 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_C9_WINDOWS_NORMAL_RETURN_AUTOMATIC_IMPROVEMENT_LATE_SMOOTHNESS_NOT_ACCEPTED",
+  "candidateIdentity": {
+    "diagnosticId": "WINHD-20261008-D38F136-C9",
+    "commit": "69c132d385771dabd385635aa036c51b27014797",
+    "manifestHash": "4b3914eaec2e053cd287c1d091e78803b3ccec7ca700cbf267013e3bf081e25e",
+    "runDirectory": "2026-10-10T18-48-34-361Z-stress-4x-none",
+    "verification": {
+      "schemaVersion": 1,
+      "diagnosticId": "WINHD-20261008-D38F136-C9",
+      "manifestSha256": "4b3914eaec2e053cd287c1d091e78803b3ccec7ca700cbf267013e3bf081e25e",
+      "checked": 8143,
+      "failures": [],
+      "status": "PASS",
+      "verifiedAt": "2026-10-10T18:48:11.248Z"
+    },
+    "errors": [],
+    "tracePresent": false
+  },
+  "baselineIdentity": {
+    "diagnosticId": "WINHD-20261008-D38F136-C8",
+    "commit": "5721aa57d3785a8fbc9c8aad5adf9a4172bbe3af",
+    "manifestHash": "f480c99fd8e4a52a81b4f40d10f1a6a372d956fb58f96ee7e7aa62a46cc1bad0",
+    "runDirectory": "2026-10-10T06-22-54-530Z-stress-4x-none",
+    "verification": {
+      "schemaVersion": 1,
+      "diagnosticId": "WINHD-20261008-D38F136-C8",
+      "manifestSha256": "f480c99fd8e4a52a81b4f40d10f1a6a372d956fb58f96ee7e7aa62a46cc1bad0",
+      "checked": 8133,
+      "failures": [],
+      "status": "PASS",
+      "verifiedAt": "2026-10-10T06:22:40.284Z"
+    },
+    "errors": [],
+    "tracePresent": false
+  },
+  "incoming": {
+    "status": "PASS_PRESERVED_INCOMING_FULL_BYTE_COPY",
+    "source": "/Users/Aone/Desktop/WINHD-20261008-D38F136-C9-RETURN-2026-10-10T18-53-37-820Z.zip",
+    "preserved": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/WINHD-20261008-D38F136-C9-RETURN-2026-10-10T18-53-37-820Z-incoming-v1.zip",
+    "bytes": 83056383,
+    "sha256": "7272f6a2b1dca95a61a1fc1acd6428cd5ce3d445e9c4ade5b20e9021d103ff9c",
+    "copiedAt": "2026-10-10T18:55:10.159588+00:00"
+  },
+  "safeReturnValidation": {
+    "status": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+    "archive": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/WINHD-20261008-D38F136-C9-RETURN-2026-10-10T18-53-37-820Z-incoming-v1.zip",
+    "bytes": 83056383,
+    "sha256": "7272f6a2b1dca95a61a1fc1acd6428cd5ce3d445e9c4ade5b20e9021d103ff9c",
+    "files": 14,
+    "runs": 1,
+    "diagnosticId": "WINHD-20261008-D38F136-C9",
+    "diagnosticCommit": "69c132d385771dabd385635aa036c51b27014797",
+    "manifestSha256": "4b3914eaec2e053cd287c1d091e78803b3ccec7ca700cbf267013e3bf081e25e",
+    "extractedDirectory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/returns/2026-10-10T18-53-37-820Z-c9",
+    "launcherPolicy": "Inspected as data only; no returned scripts executed.",
+    "launchers": [
+      {
+        "file": "Export-Reports.cmd",
+        "status": "IDENTICAL",
+        "sha256": "25e23098719b40880c953b1ca32ce71489741e5840aae605e196fd858c64b0fc"
+      },
+      {
+        "file": "Launch-Diagnostics.cmd",
+        "status": "IDENTICAL",
+        "sha256": "601e35dacf47038acef5735438a74eb3d13b23b273e18ddc8cef5d63cf765f4a"
+      },
+      {
+        "file": "Run-Control.cmd",
+        "status": "IDENTICAL",
+        "sha256": "69705b9577c1a5f9cceed33612b407d9110317d9a9eab76ec570507da20255db"
+      },
+      {
+        "file": "Verify-Kit.cmd",
+        "status": "IDENTICAL",
+        "sha256": "812399b452707c4a00757b168629eaedd761f5ec57d4584cd43dd3806d5d9722"
+      }
+    ]
+  },
+  "comparison": {
+    "path": ".artifacts/windows-hd-diagnostic/c8-c9-windows-sustained-comparison-v2.json",
+    "sha256": "978243b02bd39d78b3742507075def1a9a568cd96e6819f41fe5f93f9de9de94",
+    "status": "PASS_VALIDATED_WINDOWS_AUTOMATIC_COMPARISON_AND_NORMAL_MANUAL_SAMPLES"
+  },
+  "machine": {
+    "platform": "win32",
+    "arch": "x64",
+    "cpu": {
+      "model": "AMD Ryzen 7 5800H with Radeon Graphics         ",
+      "logicalProcessors": 16
+    },
+    "memoryBytes": 17024741376,
+    "onBattery": false,
+    "displays": [
+      {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1707,
+          "height": 1067
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1707,
+          "height": 1019
+        },
+        "size": {
+          "width": 1707,
+          "height": 1067
+        },
+        "scaleFactor": 1.5,
+        "rotation": 0,
+        "displayFrequency": 165,
+        "internal": true,
+        "colorDepth": 24
+      }
+    ],
+    "gpuRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Laptop GPU (0x000024DD) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.9597)",
+    "runtime": {
+      "node": "24.21.0",
+      "acorn": "8.18.0",
+      "ada": "4.0.0",
+      "amaro": "1.1.11",
+      "ares": "1.34.8",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.2",
+      "llhttp": "9.4.3",
+      "merve": "1.2.2",
+      "modules": "149",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.70.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "openssl": "0.0.0",
+      "simdjson": "4.6.7",
+      "simdutf": "7.7.0",
+      "sqlite": "3.53.4",
+      "tz": "2025c",
+      "undici": "7.29.1",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "15.2.124.19-electron.0",
+      "zlib": "1.3.2.1-motley",
+      "zstd": "1.6.0",
+      "electron": "44.4.0",
+      "chrome": "152.0.7977.78"
+    },
+    "gpuFeatureStatus": {
+      "2d_canvas": "enabled",
+      "direct_rendering_display_compositor": "disabled_off_ok",
+      "gpu_compositing": "enabled",
+      "multiple_raster_threads": "enabled_on",
+      "opengl": "enabled_on",
+      "rasterization": "enabled",
+      "raw_draw": "disabled_off_ok",
+      "skia_graphite": "disabled_off",
+      "trees_in_viz": "disabled_off",
+      "video_decode": "enabled",
+      "video_encode": "enabled",
+      "webgl": "enabled",
+      "webgpu": "enabled",
+      "webnn": "disabled_off"
+    }
+  },
+  "config": {
+    "mode": "4x",
+    "scene": "stress",
+    "control": "none",
+    "seconds": 15,
+    "trace": false,
+    "manual": false,
+    "timestamp": 1700000000000,
+    "edition": "yr",
+    "shadows": 3,
+    "renderResolution": "native",
+    "contentSize": [
+      1707,
+      1067
+    ],
+    "displayMode": "native-fullscreen",
+    "presentationHeight": 900
+  },
+  "resources": {
+    "worldAndUIFiles": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+  },
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCPU": 128,
+    "ui": 16
+  },
+  "automatic": [
+    {
+      "label": "fresh-process-first-use",
+      "meanLoopFpsChangePercent": 10.226784539628909,
+      "updateMedianReductionPercent": 16.647398830002334,
+      "familyCountDifferences": [],
+      "boundary": "Matched settings and route; independent native AI progress and endpoint content can differ.",
+      "baseline": {
+        "label": "fresh-process-first-use",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 70.94682112679173,
+        "tickStart": 0,
+        "tickEnd": 995,
+        "elapsedMs": 15326.905000001192,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "manualCamera": false,
+        "loadingToFirstGameFrameMs": 11890.120000001043,
+        "intervals": {
+          "n": 1090,
+          "median": 12.125,
+          "p95": 18.219999999997526,
+          "p99": 30.30500000000029,
+          "maximum": 363.619999999999,
+          "above33ms": 5,
+          "above50ms": 4,
+          "above100ms": 3
+        },
+        "simulation": {
+          "n": 1091,
+          "median": 0.9849999994039536,
+          "p95": 6.8150000013411045,
+          "p99": 14.400000002235174,
+          "maximum": 287.3799999989569,
+          "above33ms": 1,
+          "above50ms": 1,
+          "above100ms": 1
+        },
+        "update": {
+          "n": 1091,
+          "median": 4.324999999254942,
+          "p95": 5.509999997913837,
+          "p99": 9.285000000149012,
+          "maximum": 79.75999999791384,
+          "above33ms": 2,
+          "above50ms": 2,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 1091,
+          "median": 6.740000002086163,
+          "p95": 7.620000001043081,
+          "p99": 11.150000002235174,
+          "maximum": 240.57500000298023,
+          "above33ms": 2,
+          "above50ms": 1,
+          "above100ms": 1
+        },
+        "combinedGraphicsMedianMs": 11.080000001937151,
+        "drawCalls": {
+          "n": 1091,
+          "median": 755,
+          "p95": 770,
+          "p99": 777,
+          "maximum": 778
+        },
+        "triangles": {
+          "n": 1091,
+          "median": 1625211,
+          "p95": 1625375,
+          "p99": 1625375,
+          "maximum": 1890886
+        },
+        "nodes": 6217,
+        "visibleNodes": 4995,
+        "hdNodes": 822,
+        "renderables": 2180,
+        "programs": 54,
+        "bindingCount": 2180,
+        "actualHdBindings": 1946,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      },
+      "candidate": {
+        "label": "fresh-process-first-use",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 78.20239966114464,
+        "tickStart": 0,
+        "tickEnd": 992,
+        "elapsedMs": 15316.345000000001,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "manualCamera": false,
+        "loadingToFirstGameFrameMs": 11651.075000000012,
+        "intervals": {
+          "n": 1201,
+          "median": 12.119999999998981,
+          "p95": 18.18500000000131,
+          "p99": 24.25500000000102,
+          "maximum": 357.5699999999997,
+          "above33ms": 7,
+          "above50ms": 4,
+          "above100ms": 3
+        },
+        "simulation": {
+          "n": 1202,
+          "median": 1.0050000000046566,
+          "p95": 6.204999999987194,
+          "p99": 11.49000000001979,
+          "maximum": 288.5350000000035,
+          "above33ms": 2,
+          "above50ms": 1,
+          "above100ms": 1
+        },
+        "update": {
+          "n": 1202,
+          "median": 3.6049999999813735,
+          "p95": 4.585000000020955,
+          "p99": 5.7999999999883585,
+          "maximum": 87.58499999999185,
+          "above33ms": 2,
+          "above50ms": 2,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 1202,
+          "median": 6.415000000008149,
+          "p95": 8.104999999981374,
+          "p99": 9.470000000001164,
+          "maximum": 237.05499999999302,
+          "above33ms": 2,
+          "above50ms": 1,
+          "above100ms": 1
+        },
+        "combinedGraphicsMedianMs": 10.03000000002794,
+        "drawCalls": {
+          "n": 1202,
+          "median": 755,
+          "p95": 770,
+          "p99": 776,
+          "maximum": 778
+        },
+        "triangles": {
+          "n": 1202,
+          "median": 1625211,
+          "p95": 1625375,
+          "p99": 1625375,
+          "maximum": 1890886
+        },
+        "nodes": 6217,
+        "visibleNodes": 4995,
+        "hdNodes": 822,
+        "renderables": 2180,
+        "programs": 54,
+        "bindingCount": 2180,
+        "actualHdBindings": 1946,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      }
+    },
+    {
+      "label": "warmed-steady",
+      "meanLoopFpsChangePercent": 13.16329106758596,
+      "updateMedianReductionPercent": 16.918103459349854,
+      "familyCountDifferences": [
+        {
+          "family": [
+            "TIB12",
+            null,
+            false,
+            true,
+            false
+          ],
+          "baseline": 40,
+          "candidate": 41
+        },
+        {
+          "family": [
+            null,
+            null,
+            false,
+            false,
+            false
+          ],
+          "baseline": 1,
+          "candidate": 3
+        },
+        {
+          "family": [
+            "Cannon",
+            null,
+            false,
+            false,
+            false
+          ],
+          "baseline": 0,
+          "candidate": 1
+        }
+      ],
+      "boundary": "Matched settings and route; independent native AI progress and endpoint content can differ.",
+      "baseline": {
+        "label": "warmed-steady",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 67.83907877463166,
+        "tickStart": 1223,
+        "tickEnd": 2235,
+        "elapsedMs": 15019.954999998212,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "manualCamera": false,
+        "loadingToFirstGameFrameMs": 1.2200000025331974,
+        "intervals": {
+          "n": 1018,
+          "median": 12.135000000002037,
+          "p95": 18.2300000000032,
+          "p99": 30.30000000000291,
+          "maximum": 90.93499999999767,
+          "above33ms": 7,
+          "above50ms": 1,
+          "above100ms": 0
+        },
+        "simulation": {
+          "n": 1019,
+          "median": 1.0999999977648258,
+          "p95": 5.344999998807907,
+          "p99": 13.54500000178814,
+          "maximum": 23.109999999403954,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 1019,
+          "median": 4.6400000005960464,
+          "p95": 5.955000001937151,
+          "p99": 9.634999997913837,
+          "maximum": 18.04500000178814,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 1019,
+          "median": 7.410000000149012,
+          "p95": 8.774999998509884,
+          "p99": 11.53999999910593,
+          "maximum": 31.46000000089407,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "combinedGraphicsMedianMs": 12.08500000089407,
+        "drawCalls": {
+          "n": 1019,
+          "median": 784,
+          "p95": 791,
+          "p99": 793,
+          "maximum": 794
+        },
+        "triangles": {
+          "n": 1019,
+          "median": 1646585,
+          "p95": 1686026,
+          "p99": 1686066,
+          "maximum": 1686086
+        },
+        "nodes": 6399,
+        "visibleNodes": 5083,
+        "hdNodes": 848,
+        "renderables": 2200,
+        "programs": 54,
+        "bindingCount": 2200,
+        "actualHdBindings": 1955,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      },
+      "candidate": {
+        "label": "warmed-steady",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 76.76893417130535,
+        "tickStart": 1211,
+        "tickEnd": 2223,
+        "elapsedMs": 15014.484999999986,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "manualCamera": false,
+        "loadingToFirstGameFrameMs": 0.08500000002095476,
+        "intervals": {
+          "n": 1152,
+          "median": 12.125,
+          "p95": 18.18499999999767,
+          "p99": 24.270000000004075,
+          "maximum": 84.88500000000204,
+          "above33ms": 4,
+          "above50ms": 1,
+          "above100ms": 0
+        },
+        "simulation": {
+          "n": 1153,
+          "median": 1.0950000000011642,
+          "p95": 4.955000000016298,
+          "p99": 10.440000000002328,
+          "maximum": 24.25,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 1153,
+          "median": 3.8549999999813735,
+          "p95": 4.804999999993015,
+          "p99": 6.095000000001164,
+          "maximum": 15.575000000011642,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 1153,
+          "median": 6.994999999995343,
+          "p95": 7.904999999998836,
+          "p99": 8.839999999996508,
+          "maximum": 10.165000000008149,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "combinedGraphicsMedianMs": 10.855000000010477,
+        "drawCalls": {
+          "n": 1153,
+          "median": 784,
+          "p95": 790,
+          "p99": 793,
+          "maximum": 794
+        },
+        "triangles": {
+          "n": 1153,
+          "median": 1646585,
+          "p95": 1686026,
+          "p99": 1686066,
+          "maximum": 1686086
+        },
+        "nodes": 6409,
+        "visibleNodes": 5094,
+        "hdNodes": 847,
+        "renderables": 2204,
+        "programs": 54,
+        "bindingCount": 2204,
+        "actualHdBindings": 1956,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      }
+    },
+    {
+      "label": "same-process-reentry-first-use",
+      "meanLoopFpsChangePercent": 11.887820044947084,
+      "updateMedianReductionPercent": 15.046296301860561,
+      "familyCountDifferences": [
+        {
+          "family": [
+            "TIB04",
+            null,
+            false,
+            true,
+            false
+          ],
+          "baseline": 96,
+          "candidate": 97
+        },
+        {
+          "family": [
+            "TIB07",
+            null,
+            false,
+            true,
+            false
+          ],
+          "baseline": 58,
+          "candidate": 59
+        },
+        {
+          "family": [
+            "TIB09",
+            null,
+            false,
+            true,
+            false
+          ],
+          "baseline": 51,
+          "candidate": 52
+        }
+      ],
+      "boundary": "Matched settings and route; independent native AI progress and endpoint content can differ.",
+      "baseline": {
+        "label": "same-process-reentry-first-use",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 73.58819443534334,
+        "tickStart": 0,
+        "tickEnd": 1004,
+        "elapsedMs": 15238.765000000596,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "manualCamera": false,
+        "loadingToFirstGameFrameMs": 10018.615000002086,
+        "intervals": {
+          "n": 1123,
+          "median": 12.125,
+          "p95": 18.19999999999709,
+          "p99": 30.264999999999418,
+          "maximum": 260.59999999999854,
+          "above33ms": 4,
+          "above50ms": 2,
+          "above100ms": 2
+        },
+        "simulation": {
+          "n": 1125,
+          "median": 0.7650000005960464,
+          "p95": 5.980000000447035,
+          "p99": 11.705000001937151,
+          "maximum": 16.649999998509884,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 1125,
+          "median": 4.320000000298023,
+          "p95": 5.28999999910593,
+          "p99": 9.199999999254942,
+          "maximum": 75.70499999821186,
+          "above33ms": 3,
+          "above50ms": 1,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 1125,
+          "median": 6.980000000447035,
+          "p95": 7.695000000298023,
+          "p99": 11.445000000298023,
+          "maximum": 174.14000000059605,
+          "above33ms": 1,
+          "above50ms": 1,
+          "above100ms": 1
+        },
+        "combinedGraphicsMedianMs": 11.319999996572733,
+        "drawCalls": {
+          "n": 1125,
+          "median": 755,
+          "p95": 770,
+          "p99": 778,
+          "maximum": 807
+        },
+        "triangles": {
+          "n": 1125,
+          "median": 1625211,
+          "p95": 1625375,
+          "p99": 1890886,
+          "maximum": 1890904
+        },
+        "nodes": 6217,
+        "visibleNodes": 4995,
+        "hdNodes": 822,
+        "renderables": 2180,
+        "programs": 54,
+        "bindingCount": 2180,
+        "actualHdBindings": 1946,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      },
+      "candidate": {
+        "label": "same-process-reentry-first-use",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 82.33622656414272,
+        "tickStart": 0,
+        "tickEnd": 1005,
+        "elapsedMs": 15242.799999999988,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "manualCamera": false,
+        "loadingToFirstGameFrameMs": 9698.265000000014,
+        "intervals": {
+          "n": 1257,
+          "median": 12.115000000005239,
+          "p95": 18.169999999998254,
+          "p99": 24.25999999999476,
+          "maximum": 266.6449999999968,
+          "above33ms": 3,
+          "above50ms": 3,
+          "above100ms": 2
+        },
+        "simulation": {
+          "n": 1259,
+          "median": 0.639999999984866,
+          "p95": 4.830000000016298,
+          "p99": 9.964999999996508,
+          "maximum": 46.46499999999651,
+          "above33ms": 1,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 1259,
+          "median": 3.6700000000128057,
+          "p95": 4.274999999994179,
+          "p99": 4.849999999976717,
+          "maximum": 80.26000000000931,
+          "above33ms": 2,
+          "above50ms": 2,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 1259,
+          "median": 6.684999999997672,
+          "p95": 7.230000000010477,
+          "p99": 8.179999999993015,
+          "maximum": 174.92500000001746,
+          "above33ms": 2,
+          "above50ms": 1,
+          "above100ms": 1
+        },
+        "combinedGraphicsMedianMs": 10.354999999981374,
+        "drawCalls": {
+          "n": 1259,
+          "median": 755,
+          "p95": 770,
+          "p99": 778,
+          "maximum": 807
+        },
+        "triangles": {
+          "n": 1259,
+          "median": 1625211,
+          "p95": 1625375,
+          "p99": 1890886,
+          "maximum": 1890904
+        },
+        "nodes": 6223,
+        "visibleNodes": 5001,
+        "hdNodes": 822,
+        "renderables": 2183,
+        "programs": 54,
+        "bindingCount": 2183,
+        "actualHdBindings": 1949,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      }
+    },
+    {
+      "label": "same-process-reentry-warmed",
+      "meanLoopFpsChangePercent": 9.187860257066237,
+      "updateMedianReductionPercent": 12.554585118596018,
+      "familyCountDifferences": [
+        {
+          "family": [
+            "DOG",
+            null,
+            false,
+            true,
+            false
+          ],
+          "baseline": 4,
+          "candidate": 3
+        },
+        {
+          "family": [
+            "DOGJUMP",
+            null,
+            false,
+            true,
+            false
+          ],
+          "baseline": 0,
+          "candidate": 1
+        }
+      ],
+      "boundary": "Matched settings and route; independent native AI progress and endpoint content can differ.",
+      "baseline": {
+        "label": "same-process-reentry-warmed",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 70.27638603518282,
+        "tickStart": 1246,
+        "tickEnd": 2259,
+        "elapsedMs": 15025.470000002533,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "manualCamera": false,
+        "loadingToFirstGameFrameMs": 1.169999998062849,
+        "intervals": {
+          "n": 1055,
+          "median": 12.130000000004657,
+          "p95": 18.20999999999185,
+          "p99": 30.264999999999418,
+          "maximum": 90.89999999999418,
+          "above33ms": 4,
+          "above50ms": 1,
+          "above100ms": 0
+        },
+        "simulation": {
+          "n": 1056,
+          "median": 0.8449999988079071,
+          "p95": 4.8950000032782555,
+          "p99": 12.494999997317791,
+          "maximum": 15.314999997615814,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 1056,
+          "median": 4.579999998211861,
+          "p95": 5.489999998360872,
+          "p99": 9.230000000447035,
+          "maximum": 11.300000000745058,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 1056,
+          "median": 7.439999997615814,
+          "p95": 8.315000001341105,
+          "p99": 11.594999998807907,
+          "maximum": 30.04500000178814,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "combinedGraphicsMedianMs": 12.054999999701977,
+        "drawCalls": {
+          "n": 1056,
+          "median": 785,
+          "p95": 792,
+          "p99": 796,
+          "maximum": 797
+        },
+        "triangles": {
+          "n": 1056,
+          "median": 1646592,
+          "p95": 1686030,
+          "p99": 1686062,
+          "maximum": 1686086
+        },
+        "nodes": 6428,
+        "visibleNodes": 5100,
+        "hdNodes": 853,
+        "renderables": 2200,
+        "programs": 54,
+        "bindingCount": 2200,
+        "actualHdBindings": 1956,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      },
+      "candidate": {
+        "label": "same-process-reentry-warmed",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 76.73328217781183,
+        "tickStart": 1243,
+        "tickEnd": 2254,
+        "elapsedMs": 15012.860000000015,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "manualCamera": false,
+        "loadingToFirstGameFrameMs": 0.05499999999301508,
+        "intervals": {
+          "n": 1151,
+          "median": 12.125,
+          "p95": 18.185000000012224,
+          "p99": 24.25,
+          "maximum": 84.86999999999534,
+          "above33ms": 3,
+          "above50ms": 1,
+          "above100ms": 0
+        },
+        "simulation": {
+          "n": 1152,
+          "median": 0.7149999999674037,
+          "p95": 4.584999999962747,
+          "p99": 9.27499999999418,
+          "maximum": 13.095000000030268,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 1152,
+          "median": 4.005000000004657,
+          "p95": 5.009999999980209,
+          "p99": 6.090000000025611,
+          "maximum": 8.994999999995343,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 1152,
+          "median": 7.224999999976717,
+          "p95": 8.364999999990687,
+          "p99": 9.480000000039581,
+          "maximum": 13.210000000020955,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "combinedGraphicsMedianMs": 11.244999999995343,
+        "drawCalls": {
+          "n": 1152,
+          "median": 784,
+          "p95": 792,
+          "p99": 797,
+          "maximum": 798
+        },
+        "triangles": {
+          "n": 1152,
+          "median": 1646592,
+          "p95": 1686030,
+          "p99": 1686070,
+          "maximum": 1686086
+        },
+        "nodes": 6421,
+        "visibleNodes": 5100,
+        "hdNodes": 855,
+        "renderables": 2200,
+        "programs": 54,
+        "bindingCount": 2200,
+        "actualHdBindings": 1956,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      }
+    }
+  ],
+  "manual": {
+    "baseline": [
+      {
+        "label": "manual-5",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 29.611854612463198,
+        "tickStart": 8507,
+        "tickEnd": 9474,
+        "elapsedMs": 15026.974999997765,
+        "cameraRoute": {
+          "mode": "manual-input",
+          "start": {
+            "x": -1860,
+            "y": 5106
+          },
+          "end": {
+            "x": -1860,
+            "y": 5106
+          }
+        },
+        "manualCamera": true,
+        "loadingToFirstGameFrameMs": 2.850000001490116,
+        "intervals": {
+          "n": 444,
+          "median": 30.31500000000233,
+          "p95": 48.48499999998603,
+          "p99": 54.55000000001746,
+          "maximum": 96.97500000000582,
+          "above33ms": 179,
+          "above50ms": 8,
+          "above100ms": 0
+        },
+        "simulation": {
+          "n": 445,
+          "median": 2.9599999971687794,
+          "p95": 16.679999999701977,
+          "p99": 22.46000000089407,
+          "maximum": 25.350000001490116,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 445,
+          "median": 10.254999998956919,
+          "p95": 14.910000000149012,
+          "p99": 19.815000001341105,
+          "maximum": 21.315000001341105,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 445,
+          "median": 16.394999999552965,
+          "p95": 18.989999998360872,
+          "p99": 20.449999999254942,
+          "maximum": 21.03999999910593,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "combinedGraphicsMedianMs": 26.759999997913837,
+        "drawCalls": {
+          "n": 445,
+          "median": 1222,
+          "p95": 1277,
+          "p99": 1281,
+          "maximum": 1282
+        },
+        "triangles": {
+          "n": 445,
+          "median": 2234090,
+          "p95": 2401836,
+          "p99": 2425494,
+          "maximum": 2425503
+        },
+        "nodes": 9222,
+        "visibleNodes": 6397,
+        "hdNodes": 1263,
+        "renderables": 2265,
+        "programs": 67,
+        "bindingCount": 2265,
+        "actualHdBindings": 1973,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      },
+      {
+        "label": "manual-6",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 23.26658135586837,
+        "tickStart": 11623,
+        "tickEnd": 12523,
+        "elapsedMs": 15035.205000001937,
+        "cameraRoute": {
+          "mode": "manual-input",
+          "start": {
+            "x": -780,
+            "y": 5154
+          },
+          "end": {
+            "x": -372,
+            "y": 5058
+          }
+        },
+        "manualCamera": true,
+        "loadingToFirstGameFrameMs": 2.6649999991059303,
+        "intervals": {
+          "n": 349,
+          "median": 42.420000000012806,
+          "p95": 54.57499999998254,
+          "p99": 72.73999999999069,
+          "maximum": 96.96499999999651,
+          "above33ms": 343,
+          "above50ms": 35,
+          "above100ms": 0
+        },
+        "simulation": {
+          "n": 350,
+          "median": 4.5650000013411045,
+          "p95": 19.41999999806285,
+          "p99": 27.645000003278255,
+          "maximum": 60.065000001341105,
+          "above33ms": 1,
+          "above50ms": 1,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 350,
+          "median": 14.800000000745058,
+          "p95": 19.984999999403954,
+          "p99": 23.519999999552965,
+          "maximum": 41.07000000029802,
+          "above33ms": 1,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 350,
+          "median": 19.469999998807907,
+          "p95": 21.675000000745058,
+          "p99": 24.650000002235174,
+          "maximum": 47.934999998658895,
+          "above33ms": 1,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "combinedGraphicsMedianMs": 34.46500000357628,
+        "drawCalls": {
+          "n": 350,
+          "median": 1413,
+          "p95": 1454,
+          "p99": 1460,
+          "maximum": 1463
+        },
+        "triangles": {
+          "n": 350,
+          "median": 2825529,
+          "p95": 2848226,
+          "p99": 2856741,
+          "maximum": 2856757
+        },
+        "nodes": 9416,
+        "visibleNodes": 6519,
+        "hdNodes": 1093,
+        "renderables": 2226,
+        "programs": 70,
+        "bindingCount": 2226,
+        "actualHdBindings": 1907,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      },
+      {
+        "label": "manual-7",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 24.056907581157876,
+        "tickStart": 12643,
+        "tickEnd": 13534,
+        "elapsedMs": 15017.759999997914,
+        "cameraRoute": {
+          "mode": "manual-input",
+          "start": {
+            "x": 84,
+            "y": 5058
+          },
+          "end": {
+            "x": 1140,
+            "y": 5178
+          }
+        },
+        "manualCamera": true,
+        "loadingToFirstGameFrameMs": 21.75499999895692,
+        "intervals": {
+          "n": 361,
+          "median": 42.40499999996973,
+          "p95": 54.57500000001164,
+          "p99": 84.84500000003027,
+          "maximum": 115.1699999999837,
+          "above33ms": 320,
+          "above50ms": 33,
+          "above100ms": 2
+        },
+        "simulation": {
+          "n": 362,
+          "median": 4.275000002235174,
+          "p95": 21.365000002086163,
+          "p99": 35.62000000104308,
+          "maximum": 65.95999999716878,
+          "above33ms": 4,
+          "above50ms": 2,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 362,
+          "median": 13.899999998509884,
+          "p95": 19.13000000268221,
+          "p99": 24.45499999821186,
+          "maximum": 32.05000000074506,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 362,
+          "median": 18.199999999254942,
+          "p95": 20.75500000268221,
+          "p99": 23.429999999701977,
+          "maximum": 24.980000000447035,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "combinedGraphicsMedianMs": 32.434999998658895,
+        "drawCalls": {
+          "n": 362,
+          "median": 1315,
+          "p95": 1368,
+          "p99": 1386,
+          "maximum": 1409
+        },
+        "triangles": {
+          "n": 362,
+          "median": 2675785,
+          "p95": 2726133,
+          "p99": 2739324,
+          "maximum": 2739356
+        },
+        "nodes": 9047,
+        "visibleNodes": 6364,
+        "hdNodes": 1041,
+        "renderables": 2234,
+        "programs": 67,
+        "bindingCount": 2234,
+        "actualHdBindings": 1873,
+        "players": 7,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      },
+      {
+        "label": "manual-8",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 25.579246704507007,
+        "tickStart": 13963,
+        "tickEnd": 14897,
+        "elapsedMs": 15051.919999998063,
+        "cameraRoute": {
+          "mode": "manual-input",
+          "start": {
+            "x": 1260,
+            "y": 5006
+          },
+          "end": {
+            "x": 1716,
+            "y": 5198
+          }
+        },
+        "manualCamera": true,
+        "loadingToFirstGameFrameMs": 3.1150000020861626,
+        "intervals": {
+          "n": 384,
+          "median": 36.375,
+          "p95": 54.5449999999837,
+          "p99": 60.63000000000466,
+          "maximum": 84.84499999997206,
+          "above33ms": 328,
+          "above50ms": 21,
+          "above100ms": 0
+        },
+        "simulation": {
+          "n": 385,
+          "median": 3.7400000020861626,
+          "p95": 18.099999997764826,
+          "p99": 25.29000000283122,
+          "maximum": 28.065000001341105,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 385,
+          "median": 13.739999998360872,
+          "p95": 18.16999999806285,
+          "p99": 20.440000001341105,
+          "maximum": 34.100000001490116,
+          "above33ms": 1,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 385,
+          "median": 17.940000001341105,
+          "p95": 19.399999998509884,
+          "p99": 22.71499999985099,
+          "maximum": 26.779999997466803,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "combinedGraphicsMedianMs": 31.554999999701977,
+        "drawCalls": {
+          "n": 385,
+          "median": 1308,
+          "p95": 1352,
+          "p99": 1365,
+          "maximum": 1370
+        },
+        "triangles": {
+          "n": 385,
+          "median": 2673229,
+          "p95": 2712505,
+          "p99": 2712583,
+          "maximum": 2714434
+        },
+        "nodes": 8953,
+        "visibleNodes": 6107,
+        "hdNodes": 1045,
+        "renderables": 2201,
+        "programs": 67,
+        "bindingCount": 2201,
+        "actualHdBindings": 1823,
+        "players": 7,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      }
+    ],
+    "candidate": [
+      {
+        "label": "manual-5",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 27.121379529637753,
+        "tickStart": 9220,
+        "tickEnd": 10165,
+        "elapsedMs": 15016.979999999981,
+        "cameraRoute": {
+          "mode": "manual-input",
+          "start": {
+            "x": -1788,
+            "y": 5202
+          },
+          "end": {
+            "x": -1668,
+            "y": 4914
+          }
+        },
+        "manualCamera": true,
+        "loadingToFirstGameFrameMs": 2.5450000000419095,
+        "intervals": {
+          "n": 406,
+          "median": 36.360000000015134,
+          "p95": 48.49499999999534,
+          "p99": 54.57500000001164,
+          "maximum": 84.85500000001048,
+          "above33ms": 285,
+          "above50ms": 14,
+          "above100ms": 0
+        },
+        "simulation": {
+          "n": 407,
+          "median": 3.0150000000721775,
+          "p95": 18.099999999976717,
+          "p99": 25.119999999995343,
+          "maximum": 56.31999999994878,
+          "above33ms": 1,
+          "above50ms": 1,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 407,
+          "median": 11.825000000011642,
+          "p95": 14.414999999979045,
+          "p99": 18.65500000002794,
+          "maximum": 20.574999999953434,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 407,
+          "median": 18.25,
+          "p95": 19.589999999967404,
+          "p99": 20.40500000002794,
+          "maximum": 21.07500000001164,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "combinedGraphicsMedianMs": 30.21999999997206,
+        "drawCalls": {
+          "n": 407,
+          "median": 1388,
+          "p95": 1459,
+          "p99": 1467,
+          "maximum": 1471
+        },
+        "triangles": {
+          "n": 407,
+          "median": 2918390,
+          "p95": 3185471,
+          "p99": 3210696,
+          "maximum": 3210702
+        },
+        "nodes": 10067,
+        "visibleNodes": 6707,
+        "hdNodes": 1422,
+        "renderables": 2262,
+        "programs": 64,
+        "bindingCount": 2262,
+        "actualHdBindings": 1966,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      },
+      {
+        "label": "manual-6",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "meanLoopFps": 23.762140968901296,
+        "tickStart": 11004,
+        "tickEnd": 11914,
+        "elapsedMs": 15021.544999999984,
+        "cameraRoute": {
+          "mode": "manual-input",
+          "start": {
+            "x": -660,
+            "y": 5178
+          },
+          "end": {
+            "x": -180,
+            "y": 5178
+          }
+        },
+        "manualCamera": true,
+        "loadingToFirstGameFrameMs": 4.0499999999883585,
+        "intervals": {
+          "n": 356,
+          "median": 42.41000000000349,
+          "p95": 54.60999999998603,
+          "p99": 72.70999999999185,
+          "maximum": 84.81499999997322,
+          "above33ms": 346,
+          "above50ms": 34,
+          "above100ms": 0
+        },
+        "simulation": {
+          "n": 357,
+          "median": 4.190000000002328,
+          "p95": 18.73499999998603,
+          "p99": 26.869999999995343,
+          "maximum": 50.59999999997672,
+          "above33ms": 1,
+          "above50ms": 1,
+          "above100ms": 0
+        },
+        "update": {
+          "n": 357,
+          "median": 13.76500000001397,
+          "p95": 16.94000000000233,
+          "p99": 25.080000000016298,
+          "maximum": 37.589999999967404,
+          "above33ms": 2,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "submission": {
+          "n": 357,
+          "median": 20.494999999995343,
+          "p95": 23.01999999996042,
+          "p99": 25.044999999983702,
+          "maximum": 25.914999999979045,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "combinedGraphicsMedianMs": 34.195000000006985,
+        "drawCalls": {
+          "n": 357,
+          "median": 1566,
+          "p95": 1606,
+          "p99": 1620,
+          "maximum": 1633
+        },
+        "triangles": {
+          "n": 357,
+          "median": 3203020,
+          "p95": 3229152,
+          "p99": 3229178,
+          "maximum": 3229226
+        },
+        "nodes": 10278,
+        "visibleNodes": 7037,
+        "hdNodes": 1416,
+        "renderables": 2259,
+        "programs": 65,
+        "bindingCount": 2259,
+        "actualHdBindings": 1926,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      }
+    ],
+    "boundary": "Different camera, native tick and actor sets. Do not report the manual FPS difference as a causal candidate gain."
+  },
+  "userFeedback": {
+    "translation": "Limited improvement; other behavior normal.",
+    "interpretation": "Limited sustained manual benefit; no new visual or loading problem reported.",
+    "overallAcceptance": "NOT_ACHIEVED"
+  },
+  "sourceAudit": {
+    "applicationChangeThisTurn": "NONE",
+    "gameAnimationLoop": "requestAnimationFrame drives rendering; native tick cadence is separate. Automatic throughput exceeds 60 FPS. This does not exclude browser/compositor synchronization or quantify GPU execution.",
+    "recurringSubmissionPaths": "Render-list projection, geometry/program vertex-binding validation, uniform/native drawing and world-matrix work remain candidates from prior C8 attribution. Current C9 timings do not provide their exact ranking.",
+    "preservedWorldTraversal": "WorldScene.update still updates scene matrices then refreshed mesh batches. No global traversal skip, third-party bypass or quality reduction is made."
+  },
+  "missingAttribution": {
+    "trace": "NOT_REQUESTED_IN_THIS_NORMAL_RUN",
+    "cpuProfile": "ABSENT",
+    "GPUExecutionTime": "UNAVAILABLE",
+    "processVRAMAndBudget": "UNAVAILABLE",
+    "boundary": "Do not transfer old C8 function weights to C9 as measured-current attribution."
+  },
+  "nextCapture": {
+    "kit": "Reuse existing WINHD-20261008-D38F136-C9 complete package on Windows.",
+    "scene": "stress",
+    "density": "4x",
+    "capture": "Normal",
+    "stage": "After automatic completion, continue manually until sustained low throughput occurs.",
+    "action": "Press F9 once, keep scrolling/playing for eight seconds and wait for capture complete before closing/exporting.",
+    "F8": "NOT_REQUIRED; retain this validated Normal baseline.",
+    "automaticTrace": "NOT_REQUESTED; it samples an earlier scene.",
+    "freshProcess": "Required if the process already captured a trace.",
+    "toolEvidence": "Built-in C9 F9 passed copied packaged native QA; exported target kit verification passes all 8143 files."
+  },
+  "preservation": {
+    "status": "PASS_READ_ONLY_PRESERVATION_AUDIT",
+    "main": {
+      "folder": "/Users/Aone/RA2remaster/ra2-hd",
+      "head": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+      "status": ""
+    },
+    "m2_3": {
+      "folder": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate",
+      "head": "94b2e8508b7ffb4db1adf5b05269c541311f6a32",
+      "status": " M AGENTS.md\n M scripts/m2/official-maps/native-gameplay-feedback.mjs\n?? scripts/m2/official-maps/export-oil-native-rig.py\n"
+    },
+    "boundary": "Observations only; no baseline advancement or peer mutation."
+  },
+  "gates": {
+    "windowsC9Integrity": "PASS",
+    "windowsC9NormalCapture": "PASS_SIX_VALID_PHASES",
+    "windowsC9AutomaticBenefit": "OBSERVED_9_19_TO_13_16_PERCENT_LOOP_FPS",
+    "windowsC9SustainedManual": "NOT_ACCEPTED_23_76_TO_27_12_LOOP_FPS",
+    "windowsC9VisualAndLoading": "USER_REPORTED_NORMAL_FOR_THIS_RUN",
+    "overallAcceptance": "OPEN",
+    "newSourceCandidate": "NOT_CREATED",
+    "mainIntegration": "NOT_PERFORMED",
+    "remotePush": "NOT_PERFORMED"
+  },
+  "boundaries": [
+    "Mean FPS is measured game-loop throughput, not presented-frame counting.",
+    "Normal manual samples precede any profile collection; subsequent instrumented phases are excluded.",
+    "Submission includes CPU/native work and possible waits; it is not GPU execution.",
+    "This candidate return has no detailed trace; exact remaining call attribution requires a bounded late F9 trace."
+  ],
+  "conversation": "Continue this execution conversation for late C9 attribution and remaining repair."
+}

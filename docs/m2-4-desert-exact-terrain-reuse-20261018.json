@@ -1,0 +1,122 @@
+{
+  "status": "MAC_TECHNICAL_PASS_ACCEPTED_ART_REUSE",
+  "runtimeCommit": "2d07c3b6ac81e819701b5219d6616c7cc74516c2",
+  "selectedPack": {
+    "schemaVersion": 1,
+    "revision": "desert-m2-4-equivalent-tmp-reuse-v1",
+    "sha256": "7bd8f987844700e63590d6f2b54c2e52448cf369e18090e44e62aebee63c2ed8"
+  },
+  "families": 5,
+  "members": 11,
+  "newArtwork": false,
+  "visual": "PRIOR_ACCEPTED_TEMPERATE_PIXELS_UNCHANGED_NO_NEW_REVIEW",
+  "nativeCases": [
+    {
+      "map": "pcofdune.map",
+      "density": 2,
+      "report": {
+        "file": ".artifacts/m2-4/desert-equivalent-tmp-reuse-v1/native-dune-2x-v1/report.json",
+        "bytes": 2709908,
+        "sha256": "2a64972e60fa3285b6bb30e8ff24312d3c3d179ddc30e25aa654bc64861f2011"
+      },
+      "groups": [
+        "m2-4-desert-equivalent-set35",
+        "m2-4-desert-equivalent-set38",
+        "m2-4-desert-equivalent-set76"
+      ],
+      "worldBytes": 125745576,
+      "preparedPeakBytes": 45156556
+    },
+    {
+      "map": "pcofdune.map",
+      "density": 4,
+      "report": {
+        "file": ".artifacts/m2-4/desert-equivalent-tmp-reuse-v1/native-dune-4x-v1/report.json",
+        "bytes": 2713132,
+        "sha256": "1a32c312b6744b4e4475dd5259dda25b87bbcbf6b868c1da45575ee1edb51356"
+      },
+      "groups": [
+        "m2-4-desert-equivalent-set35",
+        "m2-4-desert-equivalent-set38",
+        "m2-4-desert-equivalent-set76"
+      ],
+      "worldBytes": 465724008,
+      "preparedPeakBytes": 108112788
+    },
+    {
+      "map": "saharami.map",
+      "density": 2,
+      "report": {
+        "file": ".artifacts/m2-4/desert-equivalent-tmp-reuse-v1/native-sahara-2x-v2/report.json",
+        "bytes": 3727836,
+        "sha256": "1cf1ba662be970de182620500ede7b54aaf8eab9f00a49f9ee21f9460d209696"
+      },
+      "groups": [
+        "m2-4-desert-equivalent-set40",
+        "m2-4-desert-equivalent-set47"
+      ],
+      "worldBytes": 122991128,
+      "preparedPeakBytes": 45156556
+    },
+    {
+      "map": "saharami.map",
+      "density": 4,
+      "report": {
+        "file": ".artifacts/m2-4/desert-equivalent-tmp-reuse-v1/native-sahara-4x-v2/report.json",
+        "bytes": 3731072,
+        "sha256": "8d62e50f68802941f65ab3b853c2c332998bd89130bb244f738de467906e15c2"
+      },
+      "groups": [
+        "m2-4-desert-equivalent-set40",
+        "m2-4-desert-equivalent-set47"
+      ],
+      "worldBytes": 459224848,
+      "preparedPeakBytes": 108112788
+    },
+    {
+      "map": "saharami.map",
+      "density": "Original",
+      "report": {
+        "file": ".artifacts/m2-4/desert-equivalent-tmp-reuse-v1/native-sahara-original-v2/report.json",
+        "bytes": 2458,
+        "sha256": "b6f3c5d9ed65f592d4aee6ff5633af8b5375253121e7c61456f8681a50e0a117"
+      }
+    }
+  ],
+  "resourceHandoff": {
+    "file": ".artifacts/m2-4/desert-equivalent-tmp-reuse-v1/resource-handoff-v1.json",
+    "bytes": 144531,
+    "sha256": "2874c9326b110148838e75c74b46c75edff019aef86a15246043a861a3bfafde"
+  },
+  "coverage": {
+    "entries": 13,
+    "uniqueSources": 13,
+    "originalModeBindings": 14,
+    "selectable": 13,
+    "parserIssues": 0,
+    "remaining": 212,
+    "byKind": {
+      "tmp": 111,
+      "terrain": 0,
+      "smudge": 0,
+      "overlay": 38,
+      "building": 63,
+      "infantry": 0,
+      "vehicle": 0,
+      "aircraft": 0
+    }
+  },
+  "reusedLifecycleEvidence": {
+    "file": ".artifacts/m2-4/facilities-coast-closure-batches73-75-v1/closure.json",
+    "bytes": 27877,
+    "sha256": "fa5c4a37ab49c2804c16da4ce30570322733d7918eb87dab7c783b33f4377fb0"
+  },
+  "pendingCombinedNewArtReview": "Batches73-75; not superseded by this technical reuse",
+  "failedAttempt": {
+    "file": ".artifacts/m2-4/desert-equivalent-tmp-reuse-v1/native-sahara-2x-v1/report.json",
+    "cause": "Validation context requested TREE04 absent from Sahara. Source-verified CAOILD context fixes the plan only; no game/resource change. Two passing Dune cases reused."
+  },
+  "perBatchGamePackageCreated": false,
+  "windows": "NOT_RUN",
+  "m24Complete": false
+}

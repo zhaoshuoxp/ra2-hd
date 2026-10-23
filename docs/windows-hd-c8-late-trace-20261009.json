@@ -1,0 +1,2394 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_C8_LATE_WINDOWS_TRACE_SCOPED_ATTRIBUTION_SOURCE_CONTROL_PENDING",
+  "incoming": {
+    "source": "/Users/Aone/Desktop/WINHD-20261008-D38F136-C8-RETURN-2026-10-10T06-45-58-773Z.zip",
+    "preservedCopy": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/WINHD-20261008-D38F136-C8-RETURN-2026-10-10T06-45-58-773Z-incoming-v1.zip",
+    "bytes": 287021456,
+    "sha256": "61ae304c80b736164c625dcffc87c5845a4967fe0123d50445b367729c7c43cf",
+    "policy": "Exclusive complete copy before validation; preserve original and earlier evidence."
+  },
+  "returnValidation": {
+    "status": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+    "archive": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/WINHD-20261008-D38F136-C8-RETURN-2026-10-10T06-45-58-773Z-incoming-v1.zip",
+    "bytes": 287021456,
+    "sha256": "61ae304c80b736164c625dcffc87c5845a4967fe0123d50445b367729c7c43cf",
+    "files": 24,
+    "runs": 2,
+    "diagnosticId": "WINHD-20261008-D38F136-C8",
+    "diagnosticCommit": "5721aa57d3785a8fbc9c8aad5adf9a4172bbe3af",
+    "manifestSha256": "f480c99fd8e4a52a81b4f40d10f1a6a372d956fb58f96ee7e7aa62a46cc1bad0",
+    "extractedDirectory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/returns/2026-10-10T06-45-58-773Z-c8-trace",
+    "launcherPolicy": "Inspected as data only; no returned scripts executed.",
+    "launchers": [
+      {
+        "file": "Export-Reports.cmd",
+        "status": "IDENTICAL",
+        "sha256": "25e23098719b40880c953b1ca32ce71489741e5840aae605e196fd858c64b0fc"
+      },
+      {
+        "file": "Launch-Diagnostics.cmd",
+        "status": "IDENTICAL",
+        "sha256": "10e31a4f62175e3c85196143057ac137ee6d97ad23d880af4822dd2e32f4d5a4"
+      },
+      {
+        "file": "Run-Control.cmd",
+        "status": "IDENTICAL",
+        "sha256": "69705b9577c1a5f9cceed33612b407d9110317d9a9eab76ec570507da20255db"
+      },
+      {
+        "file": "Verify-Kit.cmd",
+        "status": "IDENTICAL",
+        "sha256": "812399b452707c4a00757b168629eaedd761f5ec57d4584cd43dd3806d5d9722"
+      }
+    ]
+  },
+  "preservedNormalRun": {
+    "directory": "2026-10-10T06-22-54-530Z-stress-4x-none",
+    "byteIdenticalFiles": [
+      "runs/2026-10-10T06-22-54-530Z-stress-4x-none/run.json",
+      "runs/2026-10-10T06-22-54-530Z-stress-4x-none/machine.json",
+      "runs/2026-10-10T06-22-54-530Z-stress-4x-none/os.json",
+      "runs/2026-10-10T06-22-54-530Z-stress-4x-none/phases.json",
+      "runs/2026-10-10T06-22-54-530Z-stress-4x-none/errors.json",
+      "runs/2026-10-10T06-22-54-530Z-stress-4x-none/process-metrics.json",
+      "runs/2026-10-10T06-22-54-530Z-stress-4x-none/summary.json"
+    ],
+    "normalResults": "docs/windows-hd-c8-windows-results-20261009.json"
+  },
+  "runDirectory": "2026-10-10T06-40-31-847Z-stress-4x-none",
+  "diagnosticCommit": "5721aa57d3785a8fbc9c8aad5adf9a4172bbe3af",
+  "manifestHash": "f480c99fd8e4a52a81b4f40d10f1a6a372d956fb58f96ee7e7aa62a46cc1bad0",
+  "targetVerification": {
+    "schemaVersion": 1,
+    "diagnosticId": "WINHD-20261008-D38F136-C8",
+    "manifestSha256": "f480c99fd8e4a52a81b4f40d10f1a6a372d956fb58f96ee7e7aa62a46cc1bad0",
+    "checked": 8133,
+    "failures": [],
+    "status": "PASS",
+    "verifiedAt": "2026-10-10T06:22:40.284Z"
+  },
+  "builtinIdentity": {
+    "kind": "BUILT_IN_MANUAL_CAMERA_TRACE",
+    "diagnosticId": "WINHD-20261008-D38F136-C8",
+    "sourceHead": "5721aa57d3785a8fbc9c8aad5adf9a4172bbe3af",
+    "manifestHash": "f480c99fd8e4a52a81b4f40d10f1a6a372d956fb58f96ee7e7aa62a46cc1bad0",
+    "files": [
+      {
+        "file": "resources/app/desktop/windows-diagnostic.mjs",
+        "bytes": 21206,
+        "sha256": "952649dfb5eaeca00bfca21da7c09ce2a0f8fc26988faf5179d1e330b9a78756"
+      },
+      {
+        "file": "resources/app/desktop/diagnostic-renderer.mjs",
+        "bytes": 12240,
+        "sha256": "61437ca21a5ece223c8c0496abaddfe7fbfe2a0e649d708797438fd05d8ec98f"
+      },
+      {
+        "file": "resources/app/desktop/diagnostic-schema.mjs",
+        "bytes": 3162,
+        "sha256": "18f6611da5534e24003e2e61355c028e531cadcff3f5279f2a114f7bf1bcc114"
+      }
+    ]
+  },
+  "machine": {
+    "platform": "win32",
+    "arch": "x64",
+    "cpu": {
+      "model": "AMD Ryzen 7 5800H with Radeon Graphics         ",
+      "logicalProcessors": 16
+    },
+    "memoryBytes": 17024741376,
+    "onBattery": false,
+    "displays": [
+      {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1707,
+          "height": 1067
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1707,
+          "height": 1019
+        },
+        "size": {
+          "width": 1707,
+          "height": 1067
+        },
+        "scaleFactor": 1.5,
+        "rotation": 0,
+        "displayFrequency": 165,
+        "internal": true,
+        "colorDepth": 24
+      }
+    ],
+    "gpuRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Laptop GPU (0x000024DD) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.9597)",
+    "runtime": {
+      "node": "24.21.0",
+      "acorn": "8.18.0",
+      "ada": "4.0.0",
+      "amaro": "1.1.11",
+      "ares": "1.34.8",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.2",
+      "llhttp": "9.4.3",
+      "merve": "1.2.2",
+      "modules": "149",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.70.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "openssl": "0.0.0",
+      "simdjson": "4.6.7",
+      "simdutf": "7.7.0",
+      "sqlite": "3.53.4",
+      "tz": "2025c",
+      "undici": "7.29.1",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "15.2.124.19-electron.0",
+      "zlib": "1.3.2.1-motley",
+      "zstd": "1.6.0",
+      "electron": "44.4.0",
+      "chrome": "152.0.7977.78"
+    },
+    "gpuFeatureStatus": {
+      "2d_canvas": "enabled",
+      "direct_rendering_display_compositor": "disabled_off_ok",
+      "gpu_compositing": "enabled",
+      "multiple_raster_threads": "enabled_on",
+      "opengl": "enabled_on",
+      "rasterization": "enabled",
+      "raw_draw": "disabled_off_ok",
+      "skia_graphite": "disabled_off",
+      "trees_in_viz": "disabled_off",
+      "video_decode": "enabled",
+      "video_encode": "enabled",
+      "webgl": "enabled",
+      "webgpu": "enabled",
+      "webnn": "disabled_off"
+    }
+  },
+  "metrics": [
+    {
+      "label": "fresh-process-first-use",
+      "instrumented": false,
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "meanLoopFps": 73.22478707859135,
+      "tickStart": 0,
+      "tickEnd": 992,
+      "cameraRoute": {
+        "base": {
+          "x": -1860,
+          "y": 5250
+        },
+        "xOffset": -350,
+        "yOffset": 150,
+        "xAmplitude": 350,
+        "yAmplitude": 150,
+        "timeDivisorSeconds": 0.9
+      },
+      "intervals": {
+        "n": 1125,
+        "median": 12.125,
+        "p95": 18.200000000000728,
+        "p99": 24.270000000000437,
+        "maximum": 363.6399999999994,
+        "above33ms": 6,
+        "above50ms": 4,
+        "above100ms": 3
+      },
+      "simulation": {
+        "n": 1126,
+        "median": 0.9100000001490116,
+        "p95": 7.054999999701977,
+        "p99": 11.869999997317791,
+        "maximum": 280.910000000149,
+        "above33ms": 1,
+        "above50ms": 1,
+        "above100ms": 1
+      },
+      "update": {
+        "n": 1126,
+        "median": 4.204999998211861,
+        "p95": 5.344999998807907,
+        "p99": 8.660000000149012,
+        "maximum": 76.79499999806285,
+        "above33ms": 2,
+        "above50ms": 2,
+        "above100ms": 0
+      },
+      "submission": {
+        "n": 1126,
+        "median": 6.639999996870756,
+        "p95": 7.449999999254942,
+        "p99": 11.015000000596046,
+        "maximum": 236.64499999955297,
+        "above33ms": 1,
+        "above50ms": 1,
+        "above100ms": 1
+      },
+      "graphics": {
+        "n": 1126,
+        "mean": 11.514711367628053,
+        "p50": 10.850000001490116,
+        "p95": 13.859999999403954,
+        "p99": 16.800000000745058,
+        "maximum": 295.7750000022352
+      },
+      "drawCalls": {
+        "n": 1126,
+        "median": 755,
+        "p95": 770,
+        "p99": 776,
+        "maximum": 778
+      },
+      "triangles": {
+        "n": 1126,
+        "median": 1625211,
+        "p95": 1625375,
+        "p99": 1890778,
+        "maximum": 1890886
+      },
+      "nodes": 6217,
+      "visibleNodes": 4995,
+      "hdNodes": 822,
+      "renderables": 2180,
+      "players": 8,
+      "bots": 7,
+      "graphicsSettings": {
+        "enabled": true,
+        "density": 4,
+        "models": 1,
+        "shadows": 3,
+        "renderResolution": "native",
+        "resolution": {
+          "width": 1024,
+          "height": 768
+        }
+      },
+      "output": {
+        "ratio": 1.5,
+        "requested": [
+          2560,
+          1600
+        ],
+        "effective": [
+          2560,
+          1600
+        ],
+        "caps": []
+      },
+      "bindingCount": 2180,
+      "programs": 54
+    },
+    {
+      "label": "warmed-steady",
+      "instrumented": false,
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "meanLoopFps": 68.85545159034743,
+      "tickStart": 1213,
+      "tickEnd": 2224,
+      "cameraRoute": {
+        "base": {
+          "x": -1860,
+          "y": 5250
+        },
+        "xOffset": -350,
+        "yOffset": 150,
+        "xAmplitude": 350,
+        "yAmplitude": 150,
+        "timeDivisorSeconds": 0.9
+      },
+      "intervals": {
+        "n": 1032,
+        "median": 12.130000000004657,
+        "p95": 18.55000000000291,
+        "p99": 30.30999999999767,
+        "maximum": 96.98500000000058,
+        "above33ms": 5,
+        "above50ms": 2,
+        "above100ms": 0
+      },
+      "simulation": {
+        "n": 1033,
+        "median": 1.030000001192093,
+        "p95": 5.114999998360872,
+        "p99": 11.855000000447035,
+        "maximum": 21.105000000447035,
+        "above33ms": 0,
+        "above50ms": 0,
+        "above100ms": 0
+      },
+      "update": {
+        "n": 1033,
+        "median": 4.554999999701977,
+        "p95": 6.580000001937151,
+        "p99": 9.660000000149012,
+        "maximum": 16.16000000014901,
+        "above33ms": 0,
+        "above50ms": 0,
+        "above100ms": 0
+      },
+      "submission": {
+        "n": 1033,
+        "median": 7.285000000149012,
+        "p95": 8.484999999403954,
+        "p99": 11.675000000745058,
+        "maximum": 28.20499999821186,
+        "above33ms": 0,
+        "above50ms": 0,
+        "above100ms": 0
+      },
+      "graphics": {
+        "n": 1033,
+        "mean": 12.37330590510905,
+        "p50": 11.855000000447035,
+        "p95": 15.379999998956919,
+        "p99": 18.09000000357628,
+        "maximum": 36.73999999836087
+      },
+      "drawCalls": {
+        "n": 1033,
+        "median": 784,
+        "p95": 790,
+        "p99": 792,
+        "maximum": 794
+      },
+      "triangles": {
+        "n": 1033,
+        "median": 1646584,
+        "p95": 1686022,
+        "p99": 1686058,
+        "maximum": 1686086
+      },
+      "nodes": 6403,
+      "visibleNodes": 5089,
+      "hdNodes": 846,
+      "renderables": 2203,
+      "players": 8,
+      "bots": 7,
+      "graphicsSettings": {
+        "enabled": true,
+        "density": 4,
+        "models": 1,
+        "shadows": 3,
+        "renderResolution": "native",
+        "resolution": {
+          "width": 1024,
+          "height": 768
+        }
+      },
+      "output": {
+        "ratio": 1.5,
+        "requested": [
+          2560,
+          1600
+        ],
+        "effective": [
+          2560,
+          1600
+        ],
+        "caps": []
+      },
+      "bindingCount": 2203,
+      "programs": 54
+    },
+    {
+      "label": "same-process-reentry-first-use",
+      "instrumented": false,
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "meanLoopFps": 72.69950162492233,
+      "tickStart": 0,
+      "tickEnd": 1009,
+      "cameraRoute": {
+        "base": {
+          "x": -1860,
+          "y": 5250
+        },
+        "xOffset": -350,
+        "yOffset": 150,
+        "xAmplitude": 350,
+        "yAmplitude": 150,
+        "timeDivisorSeconds": 0.9
+      },
+      "intervals": {
+        "n": 1109,
+        "median": 12.125,
+        "p95": 18.205000000001746,
+        "p99": 24.270000000004075,
+        "maximum": 260.6000000000058,
+        "above33ms": 4,
+        "above50ms": 2,
+        "above100ms": 2
+      },
+      "simulation": {
+        "n": 1111,
+        "median": 0.7450000010430813,
+        "p95": 6.5650000013411045,
+        "p99": 11.945000000298023,
+        "maximum": 16.730000000447035,
+        "above33ms": 0,
+        "above50ms": 0,
+        "above100ms": 0
+      },
+      "update": {
+        "n": 1111,
+        "median": 4.355000000447035,
+        "p95": 5.6900000013411045,
+        "p99": 9.410000000149012,
+        "maximum": 67.53500000014901,
+        "above33ms": 2,
+        "above50ms": 1,
+        "above100ms": 0
+      },
+      "submission": {
+        "n": 1111,
+        "median": 7.050000000745058,
+        "p95": 7.919999998062849,
+        "p99": 11.515000000596046,
+        "maximum": 173.14999999850988,
+        "above33ms": 1,
+        "above50ms": 1,
+        "above100ms": 1
+      },
+      "graphics": {
+        "n": 1111,
+        "mean": 12.015184518432665,
+        "p50": 11.45499999821186,
+        "p95": 13.850000001490116,
+        "p99": 17.140000000596046,
+        "maximum": 219.30499999970198
+      },
+      "drawCalls": {
+        "n": 1111,
+        "median": 755,
+        "p95": 770,
+        "p99": 778,
+        "maximum": 806
+      },
+      "triangles": {
+        "n": 1111,
+        "median": 1625211,
+        "p95": 1625375,
+        "p99": 1890886,
+        "maximum": 1890904
+      },
+      "nodes": 6223,
+      "visibleNodes": 5001,
+      "hdNodes": 822,
+      "renderables": 2183,
+      "players": 8,
+      "bots": 7,
+      "graphicsSettings": {
+        "enabled": true,
+        "density": 4,
+        "models": 1,
+        "shadows": 3,
+        "renderResolution": "native",
+        "resolution": {
+          "width": 1024,
+          "height": 768
+        }
+      },
+      "output": {
+        "ratio": 1.5,
+        "requested": [
+          2560,
+          1600
+        ],
+        "effective": [
+          2560,
+          1600
+        ],
+        "caps": []
+      },
+      "bindingCount": 2183,
+      "programs": 54
+    },
+    {
+      "label": "same-process-reentry-warmed",
+      "instrumented": false,
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "meanLoopFps": 68.99986200027601,
+      "tickStart": 1254,
+      "tickEnd": 2262,
+      "cameraRoute": {
+        "base": {
+          "x": -1860,
+          "y": 5250
+        },
+        "xOffset": -350,
+        "yOffset": 150,
+        "xAmplitude": 350,
+        "yAmplitude": 150,
+        "timeDivisorSeconds": 0.9
+      },
+      "intervals": {
+        "n": 1035,
+        "median": 12.134999999994761,
+        "p95": 18.235000000000582,
+        "p99": 30.279999999998836,
+        "maximum": 121.22499999999127,
+        "above33ms": 4,
+        "above50ms": 1,
+        "above100ms": 1
+      },
+      "simulation": {
+        "n": 1036,
+        "median": 0.8200000002980232,
+        "p95": 5.094999998807907,
+        "p99": 11.79000000283122,
+        "maximum": 14.989999998360872,
+        "above33ms": 0,
+        "above50ms": 0,
+        "above100ms": 0
+      },
+      "update": {
+        "n": 1036,
+        "median": 4.595000002533197,
+        "p95": 6.245000001043081,
+        "p99": 9.644999999552965,
+        "maximum": 31.53999999910593,
+        "above33ms": 0,
+        "above50ms": 0,
+        "above100ms": 0
+      },
+      "submission": {
+        "n": 1036,
+        "median": 7.554999999701977,
+        "p95": 8.344999998807907,
+        "p99": 10.880000002682209,
+        "maximum": 12.600000001490116,
+        "above33ms": 0,
+        "above50ms": 0,
+        "above100ms": 0
+      },
+      "graphics": {
+        "n": 1036,
+        "mean": 12.589555984549943,
+        "p50": 12.194999996572733,
+        "p95": 14.775000002235174,
+        "p99": 17.799999997019768,
+        "maximum": 41.86999999731779
+      },
+      "drawCalls": {
+        "n": 1036,
+        "median": 785,
+        "p95": 793,
+        "p99": 797,
+        "maximum": 801
+      },
+      "triangles": {
+        "n": 1036,
+        "median": 1646592,
+        "p95": 1686030,
+        "p99": 1686070,
+        "maximum": 1686086
+      },
+      "nodes": 6438,
+      "visibleNodes": 5115,
+      "hdNodes": 857,
+      "renderables": 2200,
+      "players": 8,
+      "bots": 7,
+      "graphicsSettings": {
+        "enabled": true,
+        "density": 4,
+        "models": 1,
+        "shadows": 3,
+        "renderResolution": "native",
+        "resolution": {
+          "width": 1024,
+          "height": 768
+        }
+      },
+      "output": {
+        "ratio": 1.5,
+        "requested": [
+          2560,
+          1600
+        ],
+        "effective": [
+          2560,
+          1600
+        ],
+        "caps": []
+      },
+      "bindingCount": 2200,
+      "programs": 54
+    },
+    {
+      "label": "instrumented-cpu-multiprocess-trace",
+      "instrumented": true,
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "meanLoopFps": 20.155371625618336,
+      "tickStart": 9433,
+      "tickEnd": 9891,
+      "cameraRoute": {
+        "mode": "manual-input",
+        "start": {
+          "x": -1764,
+          "y": 4862
+        },
+        "end": {
+          "x": -1788,
+          "y": 4862
+        }
+      },
+      "intervals": {
+        "n": 161,
+        "median": 48.48499999998603,
+        "p95": 66.65499999999884,
+        "p99": 72.75,
+        "maximum": 72.77499999999418,
+        "above33ms": 161,
+        "above50ms": 46,
+        "above100ms": 0
+      },
+      "simulation": {
+        "n": 162,
+        "median": 5.204999998211861,
+        "p95": 23.635000001639128,
+        "p99": 29.199999999254942,
+        "maximum": 34.92999999970198,
+        "above33ms": 1,
+        "above50ms": 0,
+        "above100ms": 0
+      },
+      "update": {
+        "n": 162,
+        "median": 15.969999998807907,
+        "p95": 22.594999998807907,
+        "p99": 27.774999998509884,
+        "maximum": 35.375,
+        "above33ms": 1,
+        "above50ms": 0,
+        "above100ms": 0
+      },
+      "submission": {
+        "n": 162,
+        "median": 23.219999998807907,
+        "p95": 25.070000000298023,
+        "p99": 28.779999997466803,
+        "maximum": 29.265000000596046,
+        "above33ms": 0,
+        "above50ms": 0,
+        "above100ms": 0
+      },
+      "graphics": {
+        "n": 162,
+        "mean": 40.15364197547329,
+        "p50": 39.73499999940395,
+        "p95": 46.269999999552965,
+        "p99": 50.809999998658895,
+        "maximum": 59.53500000014901
+      },
+      "drawCalls": {
+        "n": 162,
+        "median": 1493,
+        "p95": 1526,
+        "p99": 1538,
+        "maximum": 1540
+      },
+      "triangles": {
+        "n": 162,
+        "median": 3177626,
+        "p95": 3281121,
+        "p99": 3283072,
+        "maximum": 3283080
+      },
+      "nodes": 10326,
+      "visibleNodes": 6956,
+      "hdNodes": 1469,
+      "renderables": 2311,
+      "players": 8,
+      "bots": 7,
+      "graphicsSettings": {
+        "enabled": true,
+        "density": 4,
+        "models": 1,
+        "shadows": 3,
+        "renderResolution": "native",
+        "resolution": {
+          "width": 1024,
+          "height": 768
+        }
+      },
+      "output": {
+        "ratio": 1.5,
+        "requested": [
+          2560,
+          1600
+        ],
+        "effective": [
+          2560,
+          1600
+        ],
+        "caps": []
+      },
+      "bindingCount": 2311,
+      "programs": 68
+    }
+  ],
+  "trace": {
+    "requestedDuringStage": "complete",
+    "webglCalls": {
+      "methods": {
+        "useProgram": {
+          "calls": 116248,
+          "cpuMs": 44.44999997317791,
+          "maximumCpuMs": 0.06500000134110451
+        },
+        "compileShader": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        },
+        "linkProgram": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        },
+        "getProgramInfoLog": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        },
+        "texImage2D": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        },
+        "texSubImage2D": {
+          "calls": 511,
+          "cpuMs": 34.43999996781349,
+          "maximumCpuMs": 4.655000001192093
+        },
+        "compressedTexImage2D": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        },
+        "compressedTexSubImage2D": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        }
+      },
+      "programChanges": 116248,
+      "textureUploadBytes": "UNAVAILABLE",
+      "interpretation": "CPU WebGL call durations and counts; no GPU execution timing or residency measurement.",
+      "materialCalls": 271700,
+      "materialChanges": 224224
+    },
+    "profilerStartup": {
+      "wallMs": 1613.129,
+      "threadCpuMs": 1610.002
+    },
+    "excludedProfilerStartup": true,
+    "gameCallbackCount": 179,
+    "callbacksWallMs": {
+      "n": 179,
+      "mean": 49.79311173184358,
+      "p50": 47.078,
+      "p95": 65.177,
+      "p99": 82.295,
+      "maximum": 189.054
+    },
+    "callbacksThreadCpuMs": {
+      "n": 179,
+      "mean": 48.69262011173183,
+      "p50": 46.137,
+      "p95": 61.339,
+      "p99": 77.822,
+      "maximum": 177.505
+    },
+    "sampledFrameWeightMs": 8821.809,
+    "topSelf": [
+      {
+        "functionName": "multiplyMatrices",
+        "original": {
+          "source": "node_modules/three/build/three.core.js",
+          "line": 10331,
+          "column": 1,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.core.js:10331:1",
+        "selfMs": 703.5870000000008,
+        "inclusiveMs": 703.5870000000008
+      },
+      {
+        "functionName": "p",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 1735,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:1735:10",
+        "selfMs": 677.3249999999999,
+        "inclusiveMs": 677.3249999999999
+      },
+      {
+        "functionName": "ft",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 17594,
+          "column": 11,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:17594:11",
+        "selfMs": 495.76099999999957,
+        "inclusiveMs": 690.7550000000001
+      },
+      {
+        "functionName": "updateMatrixWorld",
+        "original": {
+          "source": "node_modules/three/build/three.core.js",
+          "line": 12799,
+          "column": 1,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.core.js:12799:1",
+        "selfMs": 441.4810000000001,
+        "inclusiveMs": 599.2409999999999
+      },
+      {
+        "functionName": "a",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 14943,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:14943:10",
+        "selfMs": 302.17399999999986,
+        "inclusiveMs": 306.3879999999999
+      },
+      {
+        "functionName": "(garbage collector)",
+        "original": null,
+        "key": ":(garbage collector):-1:-1",
+        "selfMs": 287.25800000000004,
+        "inclusiveMs": 287.25800000000004
+      },
+      {
+        "functionName": "S",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 9561,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:9561:10",
+        "selfMs": 257.13300000000004,
+        "inclusiveMs": 427.1950000000002
+      },
+      {
+        "functionName": "bt",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 18060,
+          "column": 11,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:18060:11",
+        "selfMs": 244.95399999999992,
+        "inclusiveMs": 1534.7819999999997
+      },
+      {
+        "functionName": "upload",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 6244,
+          "column": 8,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:6244:8",
+        "selfMs": 227.00900000000024,
+        "inclusiveMs": 669.8610000000001
+      },
+      {
+        "functionName": "traverseVisible",
+        "original": {
+          "source": "node_modules/three/build/three.core.js",
+          "line": 12726,
+          "column": 1,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.core.js:12726:1",
+        "selfMs": 179.52000000000004,
+        "inclusiveMs": 184.17600000000004
+      },
+      {
+        "functionName": "hi",
+        "original": {
+          "source": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+          "line": 22,
+          "column": 16,
+          "name": null
+        },
+        "key": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts:22:16",
+        "selfMs": 177.37300000000002,
+        "inclusiveMs": 389.68499999999983
+      },
+      {
+        "functionName": "floodIslandId",
+        "original": {
+          "source": "src/game/map/Terrain.ts",
+          "line": 369,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/map/Terrain.ts:369:4",
+        "selfMs": 149.49099999999999,
+        "inclusiveMs": 149.49099999999999
+      },
+      {
+        "functionName": "s",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 1599,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:1599:10",
+        "selfMs": 146.599,
+        "inclusiveMs": 1072.1089999999986
+      },
+      {
+        "functionName": "Bh.renderBufferDirect",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 16953,
+          "column": 28,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:16953:28",
+        "selfMs": 141.71399999999997,
+        "inclusiveMs": 2870.5730000000067
+      },
+      {
+        "functionName": "uniform2fv",
+        "original": null,
+        "key": ":uniform2fv:-1:-1",
+        "selfMs": 132.502,
+        "inclusiveMs": 132.502
+      },
+      {
+        "functionName": "gt",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 17883,
+          "column": 11,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:17883:11",
+        "selfMs": 128.883,
+        "inclusiveMs": 3010.7450000000017
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/game/gameobject/GameObject.ts",
+          "line": 83,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/gameobject/GameObject.ts:83:4",
+        "selfMs": 119.93399999999993,
+        "inclusiveMs": 119.93399999999993
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+          "line": 119,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts:119:4",
+        "selfMs": 119.30899999999995,
+        "inclusiveMs": 232.837
+      },
+      {
+        "functionName": "updateWorldMatrix",
+        "original": {
+          "source": "node_modules/three/build/three.core.js",
+          "line": 12846,
+          "column": 1,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.core.js:12846:1",
+        "selfMs": 118.85600000000004,
+        "inclusiveMs": 306.94600000000025
+      },
+      {
+        "functionName": "bindVertexArray",
+        "original": null,
+        "key": ":bindVertexArray:-1:-1",
+        "selfMs": 118.55899999999997,
+        "inclusiveMs": 118.55899999999997
+      },
+      {
+        "functionName": "setFrame",
+        "original": {
+          "source": "src/engine/renderable/builder/ShpBuilder.ts",
+          "line": 264,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/builder/ShpBuilder.ts:264:4",
+        "selfMs": 104.27199999999998,
+        "inclusiveMs": 116.82099999999996
+      },
+      {
+        "functionName": "isAvailableForProduction",
+        "original": {
+          "source": "src/game/player/production/Production.ts",
+          "line": 124,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/player/production/Production.ts:124:4",
+        "selfMs": 99.19600000000003,
+        "inclusiveMs": 156.35600000000005
+      },
+      {
+        "functionName": "d",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 1656,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:1656:10",
+        "selfMs": 92.58199999999997,
+        "inclusiveMs": 94.64999999999995
+      },
+      {
+        "functionName": "bindTexture",
+        "original": null,
+        "key": ":bindTexture:-1:-1",
+        "selfMs": 88.18099999999998,
+        "inclusiveMs": 88.18099999999998
+      },
+      {
+        "functionName": "collectIntersectTargetsOptimized",
+        "original": {
+          "source": "src/engine/util/EntityIntersectHelper.ts",
+          "line": 188,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/util/EntityIntersectHelper.ts:188:4",
+        "selfMs": 81.29499999999999,
+        "inclusiveMs": 81.29499999999999
+      },
+      {
+        "functionName": "updateFromMeshes",
+        "original": {
+          "source": "src/engine/gfx/batch/MergedSpriteMesh.ts",
+          "line": 85,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/gfx/batch/MergedSpriteMesh.ts:85:4",
+        "selfMs": 80.27399999999994,
+        "inclusiveMs": 237.88
+      },
+      {
+        "functionName": "setGeometryAt",
+        "original": {
+          "source": "src/engine/gfx/batch/MergedSpriteMesh.ts",
+          "line": 124,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/gfx/batch/MergedSpriteMesh.ts:124:4",
+        "selfMs": 73.796,
+        "inclusiveMs": 73.796
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/game/Game.ts",
+          "line": 752,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/Game.ts:752:4",
+        "selfMs": 71.89299999999999,
+        "inclusiveMs": 1233.0009999999993
+      },
+      {
+        "functionName": "Np",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 5405,
+          "column": 9,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:5405:9",
+        "selfMs": 71.88999999999999,
+        "inclusiveMs": 136.42199999999994
+      },
+      {
+        "functionName": "groupMeshesByBatchKey",
+        "original": {
+          "source": "src/engine/gfx/batch/MeshBatchManager.ts",
+          "line": 103,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/gfx/batch/MeshBatchManager.ts:103:4",
+        "selfMs": 71.18299999999999,
+        "inclusiveMs": 71.18299999999999
+      },
+      {
+        "functionName": "bufferSubData",
+        "original": null,
+        "key": ":bufferSubData:-1:-1",
+        "selfMs": 69.935,
+        "inclusiveMs": 69.935
+      },
+      {
+        "functionName": "ht",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 17856,
+          "column": 11,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:17856:11",
+        "selfMs": 58.847,
+        "inclusiveMs": 3069.592
+      },
+      {
+        "functionName": "o",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 241,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:241:10",
+        "selfMs": 55.94699999999999,
+        "inclusiveMs": 155.548
+      },
+      {
+        "functionName": "(program)",
+        "original": null,
+        "key": ":(program):-1:-1",
+        "selfMs": 55.29800000000001,
+        "inclusiveMs": 55.29800000000001
+      },
+      {
+        "functionName": "meetsPrerequisites",
+        "original": {
+          "source": "src/game/player/production/Production.ts",
+          "line": 172,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/player/production/Production.ts:172:4",
+        "selfMs": 52.403999999999996,
+        "inclusiveMs": 55.559
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/gfx/RenderableContainer.ts",
+          "line": 70,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/gfx/RenderableContainer.ts:70:4",
+        "selfMs": 49.80200000000001,
+        "inclusiveMs": 1586.9369999999972
+      },
+      {
+        "functionName": "getVisibleUnits",
+        "original": {
+          "source": "src/game/api/GameApi.ts",
+          "line": 132,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/api/GameApi.ts:132:4",
+        "selfMs": 48.987,
+        "inclusiveMs": 64.809
+      },
+      {
+        "functionName": "elementFromPoint",
+        "original": null,
+        "key": ":elementFromPoint:-1:-1",
+        "selfMs": 48.096999999999994,
+        "inclusiveMs": 48.096999999999994
+      },
+      {
+        "functionName": "",
+        "original": {
+          "source": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+          "line": 377,
+          "column": 20,
+          "name": null
+        },
+        "key": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts:377:20",
+        "selfMs": 46.723,
+        "inclusiveMs": 691.1000000000006
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/gfx/batch/HdSpriteEdges.ts",
+          "line": 31,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/gfx/batch/HdSpriteEdges.ts:31:4",
+        "selfMs": 44.864999999999995,
+        "inclusiveMs": 83.80999999999996
+      },
+      {
+        "functionName": "wp",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 5185,
+          "column": 9,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:5185:9",
+        "selfMs": 44.61600000000001,
+        "inclusiveMs": 44.61600000000001
+      },
+      {
+        "functionName": "gl.<computed>",
+        "original": null,
+        "key": ":gl.<computed>:167:36",
+        "selfMs": 39.595,
+        "inclusiveMs": 94.71
+      },
+      {
+        "functionName": "",
+        "original": {
+          "source": "src/game/map/pathFinder/PathFinder.ts",
+          "line": 87,
+          "column": 44,
+          "name": null
+        },
+        "key": "src/game/map/pathFinder/PathFinder.ts:87:44",
+        "selfMs": 38.019999999999996,
+        "inclusiveMs": 39.588
+      },
+      {
+        "functionName": "getBoundingSphere",
+        "original": {
+          "source": "node_modules/three/build/three.core.js",
+          "line": 16204,
+          "column": 1,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.core.js:16204:1",
+        "selfMs": 37.42099999999999,
+        "inclusiveMs": 37.42099999999999
+      },
+      {
+        "functionName": "intersectsObject",
+        "original": {
+          "source": "node_modules/three/build/three.core.js",
+          "line": 25213,
+          "column": 1,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.core.js:25213:1",
+        "selfMs": 37.282,
+        "inclusiveMs": 37.282
+      },
+      {
+        "functionName": "invert",
+        "original": {
+          "source": "node_modules/three/build/three.core.js",
+          "line": 10481,
+          "column": 1,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.core.js:10481:1",
+        "selfMs": 35.99100000000001,
+        "inclusiveMs": 35.99100000000001
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/entity/Building.ts",
+          "line": 429,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/entity/Building.ts:429:4",
+        "selfMs": 32.588,
+        "inclusiveMs": 218.4529999999999
+      },
+      {
+        "functionName": "se",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 11479,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:11479:10",
+        "selfMs": 32.53900000000001,
+        "inclusiveMs": 203.59900000000002
+      },
+      {
+        "functionName": "kp",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 5280,
+          "column": 9,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:5280:9",
+        "selfMs": 31.874000000000006,
+        "inclusiveMs": 31.874000000000006
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+          "line": 328,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts:328:4",
+        "selfMs": 31.433,
+        "inclusiveMs": 1041.9649999999997
+      },
+      {
+        "functionName": "r",
+        "original": {
+          "source": "src/engine/RenderableManager.ts",
+          "line": 37,
+          "column": 18,
+          "name": null
+        },
+        "key": "src/engine/RenderableManager.ts:37:18",
+        "selfMs": 31.351000000000006,
+        "inclusiveMs": 42.38100000000001
+      },
+      {
+        "functionName": "sh",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 8136,
+          "column": 9,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:8136:9",
+        "selfMs": 29.751,
+        "inclusiveMs": 29.751
+      },
+      {
+        "functionName": "rt",
+        "original": {
+          "source": "src/game/ai/thirdpartbot/builtIn/bot/logic/building/buildingRules.ts",
+          "line": 59,
+          "column": 16,
+          "name": null
+        },
+        "key": "src/game/ai/thirdpartbot/builtIn/bot/logic/building/buildingRules.ts:59:16",
+        "selfMs": 28.459000000000003,
+        "inclusiveMs": 41.043000000000006
+      },
+      {
+        "functionName": "Tp",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 5199,
+          "column": 9,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:5199:9",
+        "selfMs": 28.138,
+        "inclusiveMs": 28.138
+      },
+      {
+        "functionName": "drawElements",
+        "original": null,
+        "key": ":drawElements:-1:-1",
+        "selfMs": 26.775,
+        "inclusiveMs": 26.775
+      },
+      {
+        "functionName": "texSubImage2D",
+        "original": null,
+        "key": ":texSubImage2D:-1:-1",
+        "selfMs": 25.017000000000003,
+        "inclusiveMs": 25.017000000000003
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/gui/UiObject.ts",
+          "line": 158,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/gui/UiObject.ts:158:4",
+        "selfMs": 24.947999999999997,
+        "inclusiveMs": 119.76000000000005
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/entity/Vehicle.ts",
+          "line": 342,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/entity/Vehicle.ts:342:4",
+        "selfMs": 24.939,
+        "inclusiveMs": 1149.7179999999985
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/fx/RallyPointFx.ts",
+          "line": 55,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/fx/RallyPointFx.ts:55:4",
+        "selfMs": 23.703000000000003,
+        "inclusiveMs": 23.703000000000003
+      },
+      {
+        "functionName": "forEach",
+        "original": {
+          "source": "src/game/ai/thirdpartbot/builtIn/bot/logic/map/incrementalGridCache.ts",
+          "line": 115,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/ai/thirdpartbot/builtIn/bot/logic/map/incrementalGridCache.ts:115:4",
+        "selfMs": 23.677,
+        "inclusiveMs": 23.677
+      }
+    ],
+    "topInclusive": [
+      {
+        "functionName": "(root)",
+        "original": null,
+        "key": ":(root):-1:-1",
+        "selfMs": 0,
+        "inclusiveMs": 8821.808999999988
+      },
+      {
+        "functionName": "doFrame",
+        "original": {
+          "source": "src/engine/GameAnimationLoop.ts",
+          "line": 65,
+          "column": 23,
+          "name": null
+        },
+        "key": "src/engine/GameAnimationLoop.ts:65:23",
+        "selfMs": 0,
+        "inclusiveMs": 8477.703000000014
+      },
+      {
+        "functionName": "renderer.render",
+        "original": null,
+        "key": ":renderer.render:97:35",
+        "selfMs": 0.671,
+        "inclusiveMs": 4266.896000000009
+      },
+      {
+        "functionName": "render",
+        "original": {
+          "source": "src/engine/GameAnimationLoop.ts",
+          "line": 217,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/GameAnimationLoop.ts:217:4",
+        "selfMs": 0,
+        "inclusiveMs": 4266.896000000009
+      },
+      {
+        "functionName": "render",
+        "original": {
+          "source": "src/engine/gfx/Renderer.ts",
+          "line": 155,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/gfx/Renderer.ts:155:4",
+        "selfMs": 0,
+        "inclusiveMs": 4266.2250000000095
+      },
+      {
+        "functionName": "",
+        "original": {
+          "source": "src/engine/gfx/Renderer.ts",
+          "line": 162,
+          "column": 29,
+          "name": null
+        },
+        "key": "src/engine/gfx/Renderer.ts:162:29",
+        "selfMs": 0,
+        "inclusiveMs": 4264.67000000001
+      },
+      {
+        "functionName": "Bh.render",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 17388,
+          "column": 16,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:17388:16",
+        "selfMs": 4.85,
+        "inclusiveMs": 4263.12000000001
+      },
+      {
+        "functionName": "ht",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 17856,
+          "column": 11,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:17856:11",
+        "selfMs": 58.847,
+        "inclusiveMs": 3069.592
+      },
+      {
+        "functionName": "pt",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 17708,
+          "column": 11,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:17708:11",
+        "selfMs": 0,
+        "inclusiveMs": 3069.592
+      },
+      {
+        "functionName": "gt",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 17883,
+          "column": 11,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:17883:11",
+        "selfMs": 128.883,
+        "inclusiveMs": 3010.7450000000017
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/gfx/Renderer.ts",
+          "line": 149,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/gfx/Renderer.ts:149:4",
+        "selfMs": 1.587,
+        "inclusiveMs": 2961.8210000000036
+      },
+      {
+        "functionName": "renderer.update",
+        "original": null,
+        "key": ":renderer.update:74:35",
+        "selfMs": 0,
+        "inclusiveMs": 2961.8210000000036
+      },
+      {
+        "functionName": "updateRenderer",
+        "original": {
+          "source": "src/engine/GameAnimationLoop.ts",
+          "line": 199,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/GameAnimationLoop.ts:199:4",
+        "selfMs": 0,
+        "inclusiveMs": 2961.8210000000036
+      },
+      {
+        "functionName": "Bh.renderBufferDirect",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 16953,
+          "column": 28,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:16953:28",
+        "selfMs": 141.71399999999997,
+        "inclusiveMs": 2870.5730000000067
+      },
+      {
+        "functionName": "",
+        "original": {
+          "source": "src/engine/gfx/Renderer.ts",
+          "line": 150,
+          "column": 29,
+          "name": null
+        },
+        "key": "src/engine/gfx/Renderer.ts:150:29",
+        "selfMs": 0,
+        "inclusiveMs": 2737.0220000000045
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/WorldScene.ts",
+          "line": 218,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/WorldScene.ts:218:4",
+        "selfMs": 4.667,
+        "inclusiveMs": 2582.527000000003
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/gfx/RenderableContainer.ts",
+          "line": 70,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/gfx/RenderableContainer.ts:70:4",
+        "selfMs": 49.80200000000001,
+        "inclusiveMs": 1586.9369999999972
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/gfx/OctreeContainer.ts",
+          "line": 39,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/gfx/OctreeContainer.ts:39:4",
+        "selfMs": 3.08,
+        "inclusiveMs": 1560.1229999999973
+      },
+      {
+        "functionName": "bt",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 18060,
+          "column": 11,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:18060:11",
+        "selfMs": 244.95399999999992,
+        "inclusiveMs": 1534.7819999999997
+      },
+      {
+        "functionName": "loop.tickGame",
+        "original": null,
+        "key": ":loop.tickGame:54:33",
+        "selfMs": 1.564,
+        "inclusiveMs": 1247.3519999999992
+      },
+      {
+        "functionName": "tickGame",
+        "original": {
+          "source": "src/engine/GameAnimationLoop.ts",
+          "line": 186,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/GameAnimationLoop.ts:186:4",
+        "selfMs": 0.036,
+        "inclusiveMs": 1245.8239999999994
+      },
+      {
+        "functionName": "doGameTurn",
+        "original": {
+          "source": "src/network/gamestate/SoloPlayTurnManager.ts",
+          "line": 45,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/network/gamestate/SoloPlayTurnManager.ts:45:4",
+        "selfMs": 9.606,
+        "inclusiveMs": 1245.7879999999993
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/game/Game.ts",
+          "line": 752,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/Game.ts:752:4",
+        "selfMs": 71.89299999999999,
+        "inclusiveMs": 1233.0009999999993
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/entity/Vehicle.ts",
+          "line": 342,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/entity/Vehicle.ts:342:4",
+        "selfMs": 24.939,
+        "inclusiveMs": 1149.7179999999985
+      },
+      {
+        "functionName": "s",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 1599,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:1599:10",
+        "selfMs": 146.599,
+        "inclusiveMs": 1072.1089999999986
+      },
+      {
+        "functionName": "updateRhinoHd",
+        "original": {
+          "source": "src/engine/renderable/entity/Vehicle.ts",
+          "line": 304,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/entity/Vehicle.ts:304:4",
+        "selfMs": 0,
+        "inclusiveMs": 1063.8469999999998
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+          "line": 328,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts:328:4",
+        "selfMs": 31.433,
+        "inclusiveMs": 1041.9649999999997
+      },
+      {
+        "functionName": "multiplyMatrices",
+        "original": {
+          "source": "node_modules/three/build/three.core.js",
+          "line": 10331,
+          "column": 1,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.core.js:10331:1",
+        "selfMs": 703.5870000000008,
+        "inclusiveMs": 703.5870000000008
+      },
+      {
+        "functionName": "",
+        "original": {
+          "source": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+          "line": 377,
+          "column": 20,
+          "name": null
+        },
+        "key": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts:377:20",
+        "selfMs": 46.723,
+        "inclusiveMs": 691.1000000000006
+      },
+      {
+        "functionName": "ft",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 17594,
+          "column": 11,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:17594:11",
+        "selfMs": 495.76099999999957,
+        "inclusiveMs": 690.7550000000001
+      },
+      {
+        "functionName": "p",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 1735,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:1735:10",
+        "selfMs": 677.3249999999999,
+        "inclusiveMs": 677.3249999999999
+      },
+      {
+        "functionName": "upload",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 6244,
+          "column": 8,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:6244:8",
+        "selfMs": 227.00900000000024,
+        "inclusiveMs": 669.8610000000001
+      },
+      {
+        "functionName": "updateMatrixWorld",
+        "original": {
+          "source": "node_modules/three/build/three.core.js",
+          "line": 12799,
+          "column": 1,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.core.js:12799:1",
+        "selfMs": 441.4810000000001,
+        "inclusiveMs": 599.2409999999999
+      },
+      {
+        "functionName": "Th.render",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 9146,
+          "column": 15,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:9146:15",
+        "selfMs": 1.549,
+        "inclusiveMs": 444.23700000000014
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/game/BotManager.ts",
+          "line": 85,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/BotManager.ts:85:4",
+        "selfMs": 0,
+        "inclusiveMs": 429.78200000000004
+      },
+      {
+        "functionName": "onGameTick",
+        "original": {
+          "source": "src/game/ai/thirdpartbot/builtIn/BuiltInBotAdapter.ts",
+          "line": 71,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/ai/thirdpartbot/builtIn/BuiltInBotAdapter.ts:71:4",
+        "selfMs": 1.395,
+        "inclusiveMs": 427.47400000000005
+      },
+      {
+        "functionName": "S",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 9561,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:9561:10",
+        "selfMs": 257.13300000000004,
+        "inclusiveMs": 427.1950000000002
+      },
+      {
+        "functionName": "Os",
+        "original": {
+          "source": "src/game/gameobject/trait/UnitOrderTrait.ts",
+          "line": 52,
+          "column": 16,
+          "name": null
+        },
+        "key": "src/game/gameobject/trait/UnitOrderTrait.ts:52:16",
+        "selfMs": 13.315999999999999,
+        "inclusiveMs": 424.5579999999999
+      },
+      {
+        "functionName": "onGameTick",
+        "original": {
+          "source": "src/game/ai/thirdpartbot/builtIn/bot/bot.ts",
+          "line": 96,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/ai/thirdpartbot/builtIn/bot/bot.ts:96:4",
+        "selfMs": 0.048,
+        "inclusiveMs": 405.872
+      },
+      {
+        "functionName": "hi",
+        "original": {
+          "source": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+          "line": 22,
+          "column": 16,
+          "name": null
+        },
+        "key": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts:22:16",
+        "selfMs": 177.37300000000002,
+        "inclusiveMs": 389.68499999999983
+      },
+      {
+        "functionName": "tickChildren",
+        "original": {
+          "source": "src/game/gameobject/task/system/TaskRunner.ts",
+          "line": 40,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/gameobject/task/system/TaskRunner.ts:40:4",
+        "selfMs": 15.102,
+        "inclusiveMs": 367.99499999999983
+      },
+      {
+        "functionName": "",
+        "original": {
+          "source": "src/util/event.ts",
+          "line": 27,
+          "column": 32,
+          "name": null
+        },
+        "key": "src/util/event.ts:27:32",
+        "selfMs": 1.555,
+        "inclusiveMs": 344.23099999999994
+      },
+      {
+        "functionName": "i",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 14851,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:14851:10",
+        "selfMs": 12.265,
+        "inclusiveMs": 319.8579999999999
+      },
+      {
+        "functionName": "updateWorldMatrix",
+        "original": {
+          "source": "node_modules/three/build/three.core.js",
+          "line": 12846,
+          "column": 1,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.core.js:12846:1",
+        "selfMs": 118.85600000000004,
+        "inclusiveMs": 306.94600000000025
+      },
+      {
+        "functionName": "a",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 14943,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:14943:10",
+        "selfMs": 302.17399999999986,
+        "inclusiveMs": 306.3879999999999
+      },
+      {
+        "functionName": "(garbage collector)",
+        "original": null,
+        "key": ":(garbage collector):-1:-1",
+        "selfMs": 287.25800000000004,
+        "inclusiveMs": 287.25800000000004
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/game/gameobject/Vehicle.ts",
+          "line": 141,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/gameobject/Vehicle.ts:141:4",
+        "selfMs": 19.198,
+        "inclusiveMs": 277.636
+      },
+      {
+        "functionName": "updateFromMeshes",
+        "original": {
+          "source": "src/engine/gfx/batch/MergedSpriteMesh.ts",
+          "line": 85,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/gfx/batch/MergedSpriteMesh.ts:85:4",
+        "selfMs": 80.27399999999994,
+        "inclusiveMs": 237.88
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+          "line": 119,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts:119:4",
+        "selfMs": 119.30899999999995,
+        "inclusiveMs": 232.837
+      },
+      {
+        "functionName": "Hp",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 5635,
+          "column": 9,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:5635:9",
+        "selfMs": 15.213000000000001,
+        "inclusiveMs": 220.885
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/entity/Building.ts",
+          "line": 429,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/entity/Building.ts:429:4",
+        "selfMs": 32.588,
+        "inclusiveMs": 218.4529999999999
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/game/gameobject/Techno.ts",
+          "line": 44,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/gameobject/Techno.ts:44:4",
+        "selfMs": 7.218999999999999,
+        "inclusiveMs": 212.471
+      },
+      {
+        "functionName": "se",
+        "original": {
+          "source": "node_modules/three/build/three.module.js",
+          "line": 11479,
+          "column": 10,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.module.js:11479:10",
+        "selfMs": 32.53900000000001,
+        "inclusiveMs": 203.59900000000002
+      },
+      {
+        "functionName": "computePath",
+        "original": {
+          "source": "src/game/map/Terrain.ts",
+          "line": 148,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/map/Terrain.ts:148:4",
+        "selfMs": 0,
+        "inclusiveMs": 190.76599999999996
+      },
+      {
+        "functionName": "traverseVisible",
+        "original": {
+          "source": "node_modules/three/build/three.core.js",
+          "line": 12726,
+          "column": 1,
+          "name": null
+        },
+        "key": "node_modules/three/build/three.core.js:12726:1",
+        "selfMs": 179.52000000000004,
+        "inclusiveMs": 184.17600000000004
+      },
+      {
+        "functionName": "onTick",
+        "original": {
+          "source": "src/game/gameobject/task/move/MoveTask.ts",
+          "line": 434,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/gameobject/task/move/MoveTask.ts:434:4",
+        "selfMs": 9.567999999999998,
+        "inclusiveMs": 175.64200000000005
+      },
+      {
+        "functionName": "computeGroundPath",
+        "original": {
+          "source": "src/game/gameobject/task/move/MoveTask.ts",
+          "line": 233,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/gameobject/task/move/MoveTask.ts:233:4",
+        "selfMs": 1.572,
+        "inclusiveMs": 173.37699999999998
+      },
+      {
+        "functionName": "computePassabilityGraph",
+        "original": {
+          "source": "src/game/map/Terrain.ts",
+          "line": 243,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/map/Terrain.ts:243:4",
+        "selfMs": 0,
+        "inclusiveMs": 171.70999999999998
+      },
+      {
+        "functionName": "forEachNode",
+        "original": {
+          "source": "src/util/Graph.ts",
+          "line": 61,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/util/Graph.ts:61:4",
+        "selfMs": 19.104,
+        "inclusiveMs": 168.59499999999997
+      },
+      {
+        "functionName": "computeIslandIds",
+        "original": {
+          "source": "src/game/map/Terrain.ts",
+          "line": 358,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/game/map/Terrain.ts:358:4",
+        "selfMs": 0,
+        "inclusiveMs": 168.59499999999997
+      }
+    ],
+    "matrixCallers": [
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/WorldScene.ts",
+          "line": 218,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/WorldScene.ts:218:4",
+        "selfSampleWeightMs": 564.4859999999999
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+          "line": 328,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts:328:4",
+        "selfSampleWeightMs": 303.8080000000003
+      },
+      {
+        "functionName": "hi",
+        "original": {
+          "source": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+          "line": 22,
+          "column": 16,
+          "name": null
+        },
+        "key": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts:22:16",
+        "selfSampleWeightMs": 184.13400000000001
+      },
+      {
+        "functionName": "",
+        "original": {
+          "source": "src/engine/gfx/Renderer.ts",
+          "line": 162,
+          "column": 29,
+          "name": null
+        },
+        "key": "src/engine/gfx/Renderer.ts:162:29",
+        "selfSampleWeightMs": 156.59499999999997
+      },
+      {
+        "functionName": "update",
+        "original": {
+          "source": "src/gui/UiScene.ts",
+          "line": 74,
+          "column": 4,
+          "name": null
+        },
+        "key": "src/gui/UiScene.ts:74:4",
+        "selfSampleWeightMs": 33.181
+      },
+      {
+        "functionName": "",
+        "original": {
+          "source": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+          "line": 377,
+          "column": 20,
+          "name": null
+        },
+        "key": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts:377:20",
+        "selfSampleWeightMs": 21.855
+      },
+      {
+        "functionName": "Ko",
+        "original": {
+          "source": "src/engine/renderable/rhino/pose.ts",
+          "line": 5,
+          "column": 16,
+          "name": null
+        },
+        "key": "src/engine/renderable/rhino/pose.ts:5:16",
+        "selfSampleWeightMs": 2.99
+      }
+    ],
+    "nativeWaits": [
+      {
+        "name": "CommandBufferProxyImpl::WaitForToken",
+        "wallMs": 4.218,
+        "threadCpuMs": 0.054,
+        "timestampUs": 22007907075
+      },
+      {
+        "name": "ImplementationBase::WaitForCmd",
+        "wallMs": 2.681,
+        "threadCpuMs": 0.054,
+        "timestampUs": 22007960355
+      },
+      {
+        "name": "CommandBufferProxyImpl::WaitForGetOffset",
+        "wallMs": 2.652,
+        "threadCpuMs": 0.035,
+        "timestampUs": 22007960380
+      },
+      {
+        "name": "ImplementationBase::WaitForCmd",
+        "wallMs": 2.477,
+        "threadCpuMs": 0.054,
+        "timestampUs": 22008626110
+      },
+      {
+        "name": "CommandBufferProxyImpl::WaitForGetOffset",
+        "wallMs": 2.457,
+        "threadCpuMs": 0.044,
+        "timestampUs": 22008626126
+      },
+      {
+        "name": "ImplementationBase::WaitForCmd",
+        "wallMs": 0.977,
+        "threadCpuMs": 0.047,
+        "timestampUs": 22008988915
+      },
+      {
+        "name": "CommandBufferProxyImpl::WaitForGetOffset",
+        "wallMs": 0.953,
+        "threadCpuMs": 0.032,
+        "timestampUs": 22008988936
+      },
+      {
+        "name": "ImplementationBase::WaitForCmd",
+        "wallMs": 0.299,
+        "threadCpuMs": 0.048,
+        "timestampUs": 22015776664
+      },
+      {
+        "name": "CommandBufferProxyImpl::WaitForGetOffset",
+        "wallMs": 0.27,
+        "threadCpuMs": 0.028,
+        "timestampUs": 22015776690
+      },
+      {
+        "name": "ImplementationBase::WaitForCmd",
+        "wallMs": 0.173,
+        "threadCpuMs": 0.023,
+        "timestampUs": 22015776980
+      },
+      {
+        "name": "CommandBufferProxyImpl::WaitForGetOffset",
+        "wallMs": 0.154,
+        "threadCpuMs": 0.013,
+        "timestampUs": 22015776997
+      }
+    ]
+  },
+  "nativeWaitUnionMs": 10.825,
+  "nativeWaitInterpretation": "Merge nested/overlapping named wait intervals; this is not GPU execution time and does not include unnamed waits.",
+  "preservedErrors": [
+    {
+      "stage": "manual-capture",
+      "at": "2026-10-10T06:44:30.397Z",
+      "message": "This process already captured its one trace; start a fresh process for another"
+    },
+    {
+      "stage": "manual-capture",
+      "at": "2026-10-10T06:45:07.503Z",
+      "message": "This process already captured its one trace; start a fresh process for another"
+    },
+    {
+      "stage": "renderer-console",
+      "at": "2026-10-10T06:45:52.275Z",
+      "message": "Executing inline event handler violates the following Content Security Policy directive 'script-src 'self' 'unsafe-eval''. Either the 'unsafe-inline' keyword, a hash ('sha256-...'), or a nonce ('nonce-...') is required to enable inline execution. Note that hashes do not apply to event handlers, style attributes and javascript: navigations unless the 'unsafe-hashes' keyword is present. The action has been blocked."
+    }
+  ],
+  "errorInterpretation": "Repeated F9 requests were rejected after capture. Any admitted UI CSP message follows those post-capture rejections; its triggering UI action is unconfirmed. Phase validity is scoped to the captured window, not whole-app acceptance.",
+  "callbackTimingBoundary": "Actual complete doFrame callbacks after profiler startup and within CPU profile collection; not guessed eight-second phase matching. Ongoing instrumentation can perturb these costs.",
+  "normalFpsBoundary": "The new trace run has no separate Normal manual phase. Instrumented 20.16 FPS is not compared with retained Normal 23.27-29.61 FPS as a regression.",
+  "sourceInvestigation": {
+    "path": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+    "observedCost": "componentPose inclusive 389.685 ms, self 177.373 ms in callback-selected CPU samples",
+    "mechanism": "Current loop prepares each cached bearing before the undisplayed FrameLayer returns without using the pose.",
+    "candidate": "Restrict cached-bearing preparation to the displayed bearing; continue inactive-view detachment and preserve all live native transforms.",
+    "control": "scripts/windows-hd/native-vxl-bearing-control.mjs",
+    "controlStatus": "RUNNING",
+    "windowsBenefit": "PENDING",
+    "boundary": "This one cost does not explain all update, submission, simulation or remaining matrix work."
+  },
+  "attribution": {
+    "path": ".artifacts/windows-hd-diagnostic/c8-trace-windows-attribution-v1.json",
+    "sha256": "414ff0603fae4b13c97fcbae691894beceacf95ea0969af20af70146be063ecd",
+    "tool": "scripts/windows-hd/analyze-manual-trace.mjs --builtin",
+    "status": "PASS_VALIDATED_WINDOWS_MANUAL_TRACE_ATTRIBUTION"
+  },
+  "applicationSourceChangeAtAnalysis": "NONE",
+  "mainMerge": "NONE",
+  "remotePush": "NONE",
+  "resourceChange": "NONE",
+  "gpuExecutionTime": "UNAVAILABLE",
+  "actualProcessVram": "UNAVAILABLE",
+  "gpuProcessBudget": "UNAVAILABLE",
+  "gates": {
+    "windowsTraceIdentityAndData": "PASS",
+    "windowValidity": "PASS",
+    "wholeRunErrorFree": "NO",
+    "lateUiCspTrigger": "UNCONFIRMED",
+    "sustainedUserAcceptance": "NOT_ACHIEVED",
+    "selectedBearingSourceRepair": "PENDING_CONTROL",
+    "finalDeliverability": "PENDING"
+  },
+  "boundaries": [
+    "This run has no Normal manual sample; retain the separately validated earlier Normal manual run.",
+    "Automatic and manual phases differ in camera, tick and evolving actors; they are not a matched A/B.",
+    "All samples report HD 4X; the subjective Original control was not captured here.",
+    "Instrumented rate is not Normal FPS. CPU sample weights are approximate and may include native waits.",
+    "Inclusive function weights overlap; recursive frames are counted once per normalized location.",
+    "Trace callbacks are joined to CPU samples by timestamps, not guessed matches to phase row durations."
+  ]
+}

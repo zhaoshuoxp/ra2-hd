@@ -1,0 +1,393 @@
+{
+  "schema": "m2-2-hud-2x-delivery-v1",
+  "date": "2026-10-08",
+  "status": "TECHNICAL_PASS_DESKTOP_DELIVERED_VISUAL_PENDING",
+  "runtimeSourceHead": "69a8ce57f187bd21d7de864b14473ecf9ed48e33",
+  "earlierHudLayoutCommit": "5178526b3ff67e2f1185eb015e9fe125b7ca0521",
+  "packagedRuntimeBoundary": "Later tooling and documentation commits do not change the frozen application payload.",
+  "userAcceptance": {
+    "R9": "USER_ACCEPTED_CANEWY20_R9",
+    "R10EndAlignment": "USER_ACCEPTED_END_ALIGNMENT_ONLY",
+    "finalRailButtonAnd2XCandidate": "PENDING",
+    "record": "docs/m2-2-r9-user-acceptance-20261008.json"
+  },
+  "changes": [
+    {
+      "area": "Command-bar layout",
+      "cause": "Fractional native width passed into indexed SHP clipping corrupts pixel rows.",
+      "repair": "Keep integer raster dimensions and use a UI horizontal transform for the final span; exclude scaled sprites from static aggregation.",
+      "preserved": "Native logical height, hit rectangles, frame states and Original fallback."
+    },
+    {
+      "area": "Allied command-bar rail and button background",
+      "cause": "Repeated authored background edges, vertical registration and embedded button backgrounds interfere with the shared rail.",
+      "repair": "Sample the central native background column, register the overlay at native +2 y, and clip rendered button art to native blue-icon bounds while discarding dark neutral background.",
+      "preserved": "Selected accepted PNGs, icon/state artwork, other faction UI art and 16 MiB UI budget."
+    },
+    {
+      "area": "2X multi-faction HD fallback",
+      "cause": "Terrain/environment accounting and eager assets leave only 23,263,856 bytes in the old dynamic pool; the old fixture reports 33 BUDGET_FALLBACK families.",
+      "repair": "Increase the user-authorized 2X world admission ceiling from 256 to 512 MiB.",
+      "preserved": "Independent-density accepted source art, native geometry/rules, complete-family admission/fallback, 4X 1280 MiB, prepared CPU 128 MiB and UI 16 MiB."
+    }
+  ],
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCpu": 128,
+    "ui": 16
+  },
+  "selectedResources": {
+    "environment": {
+      "revision": "environment-m2-2-complete-v10",
+      "sha256": "78b60d991b33324212d2dac5805fb16c640cf22b4b5ddd4f164f2e73c011e844"
+    },
+    "terrain": {
+      "revision": "temperate-m2-2-environment-v9",
+      "sha256": "b79a24ff94a4b5d98a7e8621c0b141b8c9d254ffd636fcfa4d713ca013dd4fbd"
+    },
+    "ui": {
+      "revision": "yuri-emblem-ui-v1",
+      "sha256": "205c4780094f10e3685a8070ed2f0502e64e4ad1d8eeda25658744dbd481cb4b"
+    },
+    "parity": {
+      "path": ".artifacts/m2-2/hud-r10/resource-parity.json",
+      "bytes": 157,
+      "sha256": "c07b1018c3a376112b2926a0277481dacd5f6ea4551cd5a0bca17467bf8c4e81"
+    },
+    "unchangedWorldAndUiFiles": 6033
+  },
+  "verification": {
+    "focusedTests": {
+      "passes": 22,
+      "assertions": 141,
+      "evidence": {
+        "path": ".artifacts/m2-2/hud-r10/final-tests.log",
+        "bytes": 2367,
+        "sha256": "18d14bcd1d077654f7ddcb33fe7ec7f0acb9ed15f70d6425eb74678a05badf34"
+      }
+    },
+    "capacityFallbackDisposalEngineerReuseTests": {
+      "passes": 17,
+      "assertions": 385,
+      "evidence": {
+        "path": ".artifacts/m2-2/hud-r10/capacity-tests-final.log",
+        "bytes": 2043,
+        "sha256": "b651d854b084cca5685f6ccfd2115edd10a40dfb91622bb1645d19350e8caff2"
+      },
+      "inheritedFixture": {
+        "path": ".artifacts/m2-2/hud-r10/inherited-test-ledger-provenance.json",
+        "bytes": 476,
+        "sha256": "216800c7e57eacc87c11b426e7e22de74525b6a6705ef2aa86472a6357f6951d"
+      }
+    },
+    "entryTypecheck": {
+      "status": "PASS",
+      "evidence": {
+        "path": ".artifacts/m2-2/hud-r10/final-typecheck.log",
+        "bytes": 39,
+        "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+      }
+    },
+    "copiedMacHud": {
+      "status": "PASS",
+      "sessions": 4,
+      "editionCountries": [
+        [
+          "yr",
+          0
+        ],
+        [
+          "yr",
+          5
+        ],
+        [
+          "yr",
+          9
+        ],
+        [
+          "ra2",
+          0
+        ]
+      ],
+      "evidence": {
+        "path": ".artifacts/m2-2/hud-r10/native-final/result.json",
+        "bytes": 162251,
+        "sha256": "578a3d64800f56c7c276824c159cffc59783c1638a6b10ea7b5273861f72ddf2"
+      }
+    },
+    "freshExtractedMacHud2X": {
+      "status": "PASS",
+      "sessions": 2,
+      "cases": [
+        {
+          "edition": "yr",
+          "country": 0,
+          "labels": [
+            "hd-window",
+            "original-window",
+            "hd-return",
+            "hd-native-fullscreen",
+            "hd-emulated-1920x1080-dpr1-1080p",
+            "hd-emulated-1920x1080-dpr2-4k",
+            "hd-emulated-1441x901-dpr1-1080p",
+            "hd-fullscreen-return",
+            "hd-native-button-pressed",
+            "hd-native-button-released"
+          ],
+          "nativeClicks": [
+            8
+          ]
+        },
+        {
+          "edition": "ra2",
+          "country": 0,
+          "labels": [
+            "hd-window",
+            "original-window",
+            "hd-return",
+            "hd-native-button-pressed",
+            "hd-native-button-released"
+          ],
+          "nativeClicks": [
+            8
+          ]
+        }
+      ],
+      "evidence": {
+        "path": ".artifacts/m2-2/hud-r10/extracted-hud-2x/result.json",
+        "bytes": 149740,
+        "sha256": "4b19330fa654362dd81e0654603a057dea829e54314da03018c8350f2011a1c7"
+      }
+    },
+    "continuousRedRail": {
+      "path": ".artifacts/m2-2/hud-r10/hud-rail-pixels.json",
+      "bytes": 192,
+      "sha256": "8fcf27bc478ee1debd6f14e295c927672eace837cfed0c187c117cbb2b93752f"
+    },
+    "mixedNativeDensity": [
+      {
+        "evidence": {
+          "path": ".artifacts/m2-2/hud-r10/mixed-native-2x/mixed-result.json",
+          "bytes": 45595,
+          "sha256": "08b04a4e9097559b79914942b4ff2d9ec92871f3a5432e3d87983869ae4ee8a6"
+        },
+        "edition": "yr",
+        "map": "xmp03t4.map",
+        "density": 2,
+        "actors": 42,
+        "dynamicReadyFamilies": 53,
+        "combinedWorldAccountingBytes": 364573336,
+        "limitBytes": 536870912,
+        "nativeMovement": {
+          "before": [
+            27,
+            82
+          ],
+          "after": [
+            26,
+            82
+          ],
+          "hd": true
+        },
+        "status": "PASS_NATIVE_MIXED_DENSITY"
+      },
+      {
+        "evidence": {
+          "path": ".artifacts/m2-2/hud-r10/copied-ra2-2x/mixed-result.json",
+          "bytes": 33055,
+          "sha256": "075725c05f4a67114ef7bd9479e6c13dd0add09f2bfac0b43ca46b90f69f4575"
+        },
+        "edition": "ra2",
+        "map": "mp03t4.map",
+        "density": 2,
+        "actors": 29,
+        "dynamicReadyFamilies": 40,
+        "combinedWorldAccountingBytes": 324705736,
+        "limitBytes": 536870912,
+        "nativeMovement": {
+          "before": [
+            26,
+            92
+          ],
+          "after": [
+            25,
+            93
+          ],
+          "hd": true
+        },
+        "status": "PASS_NATIVE_MIXED_DENSITY"
+      },
+      {
+        "evidence": {
+          "path": ".artifacts/m2-2/hud-r10/copied-control-4x/mixed-result.json",
+          "bytes": 44960,
+          "sha256": "2a948525d583781db3c652bc36572e050e71039a061e53e2779118ed78da621f"
+        },
+        "edition": "yr",
+        "map": "xmp01t4.map",
+        "density": 4,
+        "actors": 42,
+        "dynamicReadyFamilies": 40,
+        "combinedWorldAccountingBytes": 982200304,
+        "limitBytes": 1342177280,
+        "nativeMovement": {
+          "before": [
+            51,
+            97
+          ],
+          "after": [
+            50,
+            97
+          ],
+          "hd": true
+        },
+        "status": "PASS_NATIVE_MIXED_DENSITY"
+      },
+      {
+        "evidence": {
+          "path": ".artifacts/m2-2/hud-r10/extracted-mixed-2x/mixed-result.json",
+          "bytes": 45610,
+          "sha256": "03b91ff35fb9821cf401603c4e8fee285072a1892f344886196c5efbdb67ccc1"
+        },
+        "edition": "yr",
+        "map": "xmp03t4.map",
+        "density": 2,
+        "actors": 42,
+        "dynamicReadyFamilies": 53,
+        "combinedWorldAccountingBytes": 364573336,
+        "limitBytes": 536870912,
+        "nativeMovement": {
+          "before": [
+            27,
+            82
+          ],
+          "after": [
+            26,
+            82
+          ],
+          "hd": true
+        },
+        "status": "PASS_NATIVE_MIXED_DENSITY"
+      }
+    ],
+    "offlineReview": {
+      "html": ".artifacts/m2-2/hud-r10/M2.2-HUD-2X-Offline.html",
+      "status": "PASS_EMBEDDED_OFFLINE_REVIEW",
+      "evidence": {
+        "path": ".artifacts/m2-2/hud-r10/review-qa-v2/result.json",
+        "bytes": 413,
+        "sha256": "d004e07b1fd720b0e34d5e655a344de03104452caa9cca2afe8f19ac21a0aec7"
+      }
+    },
+    "archiveVerification": [
+      {
+        "path": ".artifacts/m2-2/hud-r10/zip-macOS-arm64-verified.json",
+        "bytes": 350,
+        "sha256": "9151637572920416420c2bc0b07724cff1c5bdce6a3f39a2993ab73e56b64b6b"
+      },
+      {
+        "path": ".artifacts/m2-2/hud-r10/zip-Windows-x64-verified.json",
+        "bytes": 359,
+        "sha256": "9e0c118d374ded18f90296827b79c828cb02ce9ccca3bd60fe9c21609941a51c"
+      }
+    ],
+    "freshExtraction": [
+      {
+        "path": ".artifacts/m2-2/hud-r10/extracted-macOS-arm64-verified.json",
+        "bytes": 541,
+        "sha256": "d6cfc05b5ffe2776fc15e198014d9b3954a1e320daa10076421b2ba0d596fc78"
+      },
+      {
+        "path": ".artifacts/m2-2/hud-r10/extracted-Windows-x64-verified.json",
+        "bytes": 553,
+        "sha256": "da684a3b9770115d4b71752393f0ddba1d91fe9748b043446e069947708b1a5c"
+      }
+    ]
+  },
+  "desktopDeliveries": [
+    {
+      "platform": "macOS-arm64",
+      "archive": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/hud-r10/archives/RA2-HD-M2.2-HUD-2X-Fix-R10-20261008-macOS-arm64.zip",
+      "bytes": 3498144019,
+      "sha256": "18901a0738583981f20f3ffea1bf16ac0e9df055eeeccf2fe28b2e62c6e2456a",
+      "entries": 6533,
+      "runtimeSourceHead": "69a8ce57f187bd21d7de864b14473ecf9ed48e33",
+      "desktopZip": "/Users/Aone/Desktop/RA2-HD-M2.2-HUD-2X-Fix-R10-20261008-macOS-arm64.zip",
+      "extracted": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/hud-r10/fresh-desktop-extraction/RA2-HD-M2.2-HUD-2X-Fix-R10-20261008-macOS-arm64",
+      "status": "PASS_EXACT_DESKTOP_COPY_FRESH_EXTRACTION"
+    },
+    {
+      "platform": "Windows-x64",
+      "archive": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/hud-r10/archives/RA2-HD-M2.2-HUD-2X-Fix-R10-20261008-Windows-x64-portable.zip",
+      "bytes": 3529578710,
+      "sha256": "fedd3f4331394ed117299d51c9e4838eb9fc6ab1928f52919a6417e0d8e78de7",
+      "entries": 6311,
+      "runtimeSourceHead": "69a8ce57f187bd21d7de864b14473ecf9ed48e33",
+      "desktopZip": "/Users/Aone/Desktop/RA2-HD-M2.2-HUD-2X-Fix-R10-20261008-Windows-x64-portable.zip",
+      "extracted": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/hud-r10/fresh-desktop-extraction/RA2-HD-M2.2-HUD-2X-Fix-R10-20261008-Windows-x64-portable",
+      "status": "PASS_EXACT_DESKTOP_COPY_FRESH_EXTRACTION"
+    }
+  ],
+  "preservation": {
+    "acceptedR9WorkspaceArchives": {
+      "path": ".artifacts/m2-2/hud-r10/r9-workspace-archive-preservation.json",
+      "bytes": 648,
+      "sha256": "ea61a9d69c5ec82d1b4634c3ea8e9be52b02443c578e40b4a87552a47a220071"
+    },
+    "priorDesktopState": {
+      "path": ".artifacts/m2-2/hud-r10/r9-desktop-preservation.json",
+      "bytes": 476,
+      "sha256": "2ef8543e8cf8633e1d303d751f668284a0b6aa4c79f057f041dd2dfe4a209e76"
+    },
+    "historicalFailures": "Preserved unchanged; successful retry receipts supersede status only.",
+    "profiles": "New isolated runtime profiles excluded from ZIPs.",
+    "sourceArt": "No PNG, terrain, native owner mask or family admission algorithm changed in this candidate."
+  },
+  "mainIntegration": {
+    "status": "PREPARED_NOT_APPLIED",
+    "mainRoot": "/Users/Aone/RA2remaster/ra2-hd",
+    "head": "538a8508c439d126e98d664effdb25a204a34f29",
+    "workingTree": "CLEAN",
+    "environment": {
+      "schemaVersion": 1,
+      "revision": "environment-m2-2-complete-v6",
+      "sha256": "bd6673dddfab66bfd08af62ae3b9d7baf6f5176a797d3256de87dbac65e02c81"
+    },
+    "additiveTransferPlan": {
+      "path": ".artifacts/m2-2/hud-r10/additive-main-plan.json",
+      "bytes": 256117,
+      "sha256": "cf1f6d9fc41c96731a84a28305b70ef406560584b76be8c5785d8125a348a711"
+    },
+    "ignoredFiles": 951,
+    "ignoredBytes": 106529738,
+    "trackedSourceHandledByGit": 8,
+    "boundary": "Re-audit latest main; preserve independent work, ignored resources and selectors. No promotion before this candidate acceptance."
+  },
+  "windowsPerformance": {
+    "status": "UNRESOLVED",
+    "userReport": {
+      "gpuVramGiB": 8,
+      "hdOff": "SMOOTH",
+      "hd4Xvs2X": "MUCH_MORE_STUTTER"
+    },
+    "budgetInterpretation": "Admission accounting is not total dedicated VRAM and includes some retained CPU data. Increasing it fixes avoidable Original fallback, not established frame-time stalls.",
+    "texturePixelRatio4Xvs2X": 4,
+    "nextMeasuredWork": "On the Windows machine compare identical Original/2X/4X scenes, steady frame time and p95/p99/max stalls, actual GPU residency, texture uploads and first-use shaders. A 2 GiB 4X experiment is proposed, not executed.",
+    "priorEvidence": "docs/windows-scene-performance-20261006.md",
+    "primaryMemoryBudgetSource": "https://learn.microsoft.com/en-us/windows/win32/api/dxgi1_4/ns-dxgi1_4-dxgi_query_video_memory_info"
+  },
+  "limitations": {
+    "windowsNativeExecution": "NOT_RUN_ON_THIS_MAC",
+    "windowsPackage": "STATIC_AND_EXTRACTION_PASS_ONLY",
+    "physicalInput": "UNVERIFIED",
+    "fullRosterAndAllStates": "NOT_CLAIMED_BY_THE_BOUNDED_MIXED_FIXTURE",
+    "allMapProduction": "NOT_STARTED"
+  },
+  "experiments": {
+    "lossless2XTerrainPool": "Measured and retained as an unshipped prototype; removed before runtime freeze after the budget authorization.",
+    "evidence": ".artifacts/m2-2/hud-r10/pool-prototype.patch"
+  },
+  "handoff": "docs/m2-2-all-maps-handoff-20261008.md",
+  "conversationRecommendation": "Continue HUD/2X acceptance here. Give the self-contained handoff to the existing main planning conversation. Start a new execution conversation after acceptance and agreement on all-map scope; do not create it automatically."
+}

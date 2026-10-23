@@ -1,0 +1,26 @@
+# M2.4 v0.2 post-acceptance corrections R1
+
+Baseline: clean canonical main `87cd2617`. The accepted final v0.2 application, profile, source archives, all selected artwork and portable ZIP are preserved. This is a bounded correction to the accepted milestone, not another theater-art batch.
+
+## Reported behavior and changes
+
+- The inherited retail keyboard file binds A to Alliance. Add configurable Attack Move, migrating only that legacy A binding (or an unused A). Preserve customized A and explicitly configured/disabled Attack Move. A arms one click while retaining selection; ground targets use the existing native AttackMove order/task, enemy units/buildings use its targeted task. Right click and Escape cancel. Ctrl force attack, existing modifier commands, replay/action queues, weapons and pathfinding remain unchanged. Alliance remains configurable.
+- The localized result background was incorrectly gated by the optional world/UI HD switch. The self-contained application background now also loads in Original mode. Verify the entire four-member family before publishing a member. Attempt the requested output density, then the complete accepted 2X background when 4X cannot fit the unchanged 16 MiB UI budget. Missing/corrupt/no-capacity presentation retains localized lettering and an explicit shaded fallback rather than a flat black panel. Accepted R5 lettering and all four campaign/skirmish slots remain unchanged.
+- The production/recharge mask had 50% opacity but used colored blue artwork. Use its existing coverage as a neutral 50% dark shade, with HD clock depth writes disabled. Keep native frame progression, dimensions, hit areas, artwork and timing. Add a narrow dark outline to ready/held status labels and quantities at the existing size and output density.
+- Show the complete already accepted disclaimer and v0.2 copyright on the edition selector, following Simplified Chinese, Traditional Chinese and English. Keep the existing loading-screen copy. Safe centering and bounded cover heights retain access to all notice text on shorter windows. No wording or license changes.
+
+## Evidence and limits
+
+Working-tree diagnostic builds first reproduce the legacy A mapping and Original-mode black result background in the actual delivered application. Candidate RA2 2X and YR 4X controls use actual Electron keyboard/pointer events, native orders and simulation ticks, actual enemy-unit/building damage, Ctrl ground attack, cancellation, four clock phases, Original/budget result transitions and release. The 4X budget-pressure control returns to 4X after release. No full accepted theater, unit or construction matrix is repeated.
+
+Fresh focused checks: 21 cases / 1,480 assertions and entry typecheck pass. Final isolated build and copied Desktop application controls pass. The 234-file executable identity is pinned to runtime `9c93bca3`; the only packaging-time dirty path is a validation harness outside the compiled payload. All 13,978 dependency pins match the prior accepted delivery exactly. Prepared data remains 448 members / 1,189 pages at its existing contract hash. The independent private-profile launch verifies all three complete notice texts and scrollable 768 x 600 access. The final app also passes A-key enemy-unit/building damage, neutral clock phases, Original/budget result transitions and release. A separate short check asserts that a new enemy appears while moving=true and attackMoveTask=true, then takes native damage without another targeted order. The offline review passes all 14 embedded images at 1440/768 widths. New visual and physical-input acceptance remains pending. Windows is NOT_RUN_ON_THIS_MAC.
+
+## Retained diagnostic failures
+
+Early diagnostic fixtures used an incorrect object category and then an unavailable selection helper; both are harness errors, not game regressions. An initial Ctrl test targeted the selected tank's own tile and was correctly rejected; the control now uses distinct empty terrain. One release assertion incorrectly counted the legitimate score-screen DOM artwork as result-banner ownership; the final check measures result-specific reservations. A 4X screenshot sequence exceeded the native five-second result display; bounded native crops complete before the unchanged timeout. Failed receipts remain retained beside final evidence.
+
+## Delivery and platform boundary
+
+The independent correction folder is `/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-R1-Mac-arm64-20261022`. Open `Red Alert 2 HD v0.2 R1.app`; both copied resource folders and its own `M2.4-Review-Profile` stay beside it. The review is `Review/M2.4-Post-Acceptance-R1-Embedded.html`, also supplied as a standalone Desktop HTML copy. No additional large ZIP is created. The prior final v0.2 app, ZIP and user profile remain preserved.
+
+All 516 exact app entries pass a clean-copy deep/strict signature check and arm64 inspection. macOS Desktop immediately reattaches FinderInfo to the app root after removal; retain that strict-Desktop diagnostic separately from the passed exact-payload signature and actual Desktop launches. No bundle bytes are changed to hide this metadata condition. See the JSON delivery record and portable Records directory.

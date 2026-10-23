@@ -1,0 +1,709 @@
+{
+  "status": "PASS_NATIVE_WINDOWS_SHADER_IDENTITY_REUSE_LIFECYCLE_AND_PIXEL_EQUIVALENCE",
+  "sourceCheckpoint": "baa847aa3a5366b6b99a5855bcf7a3c53611850a",
+  "windowsRuntime": "NOT_RUN",
+  "windowsPerformance": "PENDING",
+  "userVisualAcceptance": "PENDING",
+  "boundary": "Native Mac instrumented mechanism and same-state complete-output controls; no Windows performance claim. Raw reports remain outside Git.",
+  "tests": {
+    "focused": 30,
+    "shared": 35,
+    "assertions": 940,
+    "entryTypecheck": "PASS",
+    "initialFailureLogs": [
+      "c7-warmup-tests-v1.log",
+      "c7-warmup-tests-v2.log",
+      "c7-typecheck-v1.log"
+    ],
+    "correctedLogs": [
+      "c7-focused-tests-v1.log",
+      "c7-shared-tests-v1.log",
+      "c7-typecheck-v2.log"
+    ]
+  },
+  "native": {
+    "report": ".artifacts/windows-hd-diagnostic/c7-native-combat-variants-v1/report.json",
+    "sha256": "d60e3f7c15f9462b21c145d55e7b82e59988b040b0edb94346c4341228b993f7",
+    "status": "PASS_NATIVE_FOUR_WINDOWS_SHADER_VARIANTS_PREPARED_AND_REUSED_WITHOUT_RELINK",
+    "owners": [
+      {
+        "program": 47,
+        "type": "HdSpriteMaterial",
+        "defines": {
+          "HD_REMAP_TILE_POOL": "",
+          "HD_TILE_POOL": "",
+          "VERTEX_PALETTE_OFFSET": "",
+          "USE_VERTEX_COLOR_MULT": ""
+        },
+        "usedTimes": 1,
+        "measuredVariant": "tiled-hd-building-body",
+        "links": [
+          {
+            "atMs": 10815.175000071526,
+            "tick": 0,
+            "playing": false,
+            "program": 47,
+            "sources": [
+              "4c1a4e272d65e6603c4ed1a53cc8cc960f4a3932de26332b787fe5e0f8d1cafd",
+              "518cda9caf9e73cac6a44b857ef794b103fba57a6e9e959cb097a708ef241477"
+            ]
+          }
+        ],
+        "waits": [
+          {
+            "atMs": 10827.259999990463,
+            "tick": 0,
+            "playing": false,
+            "program": 47,
+            "cpuMs": 0.06999993324279785
+          }
+        ],
+        "firstUse": {
+          "atMs": 11644.039999961853,
+          "tick": 28,
+          "playing": true
+        },
+        "deletedDuringProbe": false
+      },
+      {
+        "program": 48,
+        "type": "HdSpriteMaterial",
+        "defines": {
+          "HD_REMAP_TILE_POOL": "",
+          "HD_TILE_POOL": "",
+          "VERTEX_PALETTE_OFFSET": "",
+          "USE_VERTEX_COLOR_MULT": ""
+        },
+        "usedTimes": 1,
+        "measuredVariant": "tiled-hd-building-coverage",
+        "links": [
+          {
+            "atMs": 10815.450000047684,
+            "tick": 0,
+            "playing": false,
+            "program": 48,
+            "sources": [
+              "4c1a4e272d65e6603c4ed1a53cc8cc960f4a3932de26332b787fe5e0f8d1cafd",
+              "5ce95210b448d6be813c387e65708c7f2ab732b589528560d19267b024813e8c"
+            ]
+          }
+        ],
+        "waits": [
+          {
+            "atMs": 10827.40499997139,
+            "tick": 0,
+            "playing": false,
+            "program": 48,
+            "cpuMs": 0.029999971389770508
+          }
+        ],
+        "firstUse": {
+          "atMs": 11644.735000014305,
+          "tick": 28,
+          "playing": true
+        },
+        "deletedDuringProbe": false
+      },
+      {
+        "program": 49,
+        "type": "HdSpriteMaterial",
+        "defines": {
+          "INDEXED_COVERAGE": "",
+          "EMBEDDED_SHP_SHADOW": "",
+          "NEAREST_INDEXED_BODY": "",
+          "VERTEX_PALETTE_OFFSET": "",
+          "USE_VERTEX_COLOR_MULT": ""
+        },
+        "usedTimes": 1,
+        "measuredVariant": "nearest-indexed-infantry-embedded-shadow",
+        "links": [
+          {
+            "atMs": 10815.705000042915,
+            "tick": 0,
+            "playing": false,
+            "program": 49,
+            "sources": [
+              "cb4fdfc84644c8d7f6fb0e3359779578d3274de13d4deaf0da2d4f517b6655f6",
+              "08a2f0234eda5904de79f883d9d0ef8bdde557dd4ec9745c5918a1ac975ff6e0"
+            ]
+          }
+        ],
+        "waits": [
+          {
+            "atMs": 10827.514999985695,
+            "tick": 0,
+            "playing": false,
+            "program": 49,
+            "cpuMs": 0.029999971389770508
+          }
+        ],
+        "firstUse": {
+          "atMs": 36189.080000042915,
+          "tick": 1679,
+          "playing": true
+        },
+        "deletedDuringProbe": false
+      },
+      {
+        "program": 50,
+        "type": "ShaderMaterial",
+        "defines": {
+          "HAS_PERSPECTIVE": false,
+          "COLORIZE": true,
+          "VALUE_OVER_LIFETIME_LENGTH": 4,
+          "SHOULD_ROTATE_TEXTURE": false,
+          "SHOULD_ROTATE_PARTICLES": false,
+          "SHOULD_WIGGLE_PARTICLES": false,
+          "SHOULD_CALCULATE_SPRITE": true
+        },
+        "usedTimes": 1,
+        "measuredVariant": "damage-smoke",
+        "links": [
+          {
+            "atMs": 10815.840000033379,
+            "tick": 0,
+            "playing": false,
+            "program": 50,
+            "sources": [
+              "7e9934897e8f28828929686474fff50550eac76d195e183fe94302918e9efd27",
+              "bf740ba3d22ea207c850512525bbec1b8e66f421637e46a31c80eab2c7d8c3f3"
+            ]
+          }
+        ],
+        "waits": [
+          {
+            "atMs": 10827.659999966621,
+            "tick": 0,
+            "playing": false,
+            "program": 50,
+            "cpuMs": 0.04999995231628418
+          }
+        ],
+        "firstUse": {
+          "atMs": 33052.77999997139,
+          "tick": 1468,
+          "playing": true
+        },
+        "deletedDuringProbe": false
+      }
+    ],
+    "before": {
+      "atMs": 147.16499996185303,
+      "tick": null,
+      "playing": false
+    },
+    "liveStart": {
+      "atMs": 10862.784999966621,
+      "tick": 0,
+      "playing": true
+    },
+    "end": {
+      "atMs": 38867.84500002861,
+      "tick": 1860,
+      "playing": true
+    },
+    "detached": true,
+    "shaderChecksEnabled": true,
+    "exit": {
+      "before": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "after": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "released": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "textureDisposals": 0,
+      "ownerCount": 0
+    },
+    "phaseValidity": [
+      {
+        "label": "instrumented-fresh-process-first-use",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "tickStart": 0,
+        "tickEnd": 1008,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "players": 8,
+        "bots": 7
+      },
+      {
+        "label": "instrumented-warmed-steady",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "tickStart": 1224,
+        "tickEnd": 2235,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "players": 8,
+        "bots": 7
+      },
+      {
+        "label": "instrumented-same-process-reentry-first-use",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "tickStart": 0,
+        "tickEnd": 1014,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "players": 8,
+        "bots": 7
+      },
+      {
+        "label": "instrumented-same-process-reentry-warmed",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "tickStart": 1247,
+        "tickEnd": 2259,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "players": 8,
+        "bots": 7
+      }
+    ],
+    "errors": []
+  },
+  "pixels": [
+    {
+      "status": "PASS_NATIVE_BATCH_HANDOFF_PIXEL_AND_PROGRAM_EQUIVALENCE",
+      "file": ".artifacts/windows-hd-diagnostic/c7-native-pixels-stress-4x-v1/report.json",
+      "sha256": "20424270a33e21f92c32e300ac82e9e794cd9f08423d72122f02815445ba6600",
+      "mode": "4x",
+      "results": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "sources": 205,
+          "clonedMaterials": 35,
+          "retired": 35,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 17594484,
+          "comparedBytes": 33177600,
+          "width": 3840,
+          "height": 2160,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 563,
+            "programs": 54
+          },
+          "warmupEquivalence": [
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            },
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          ]
+        },
+        {
+          "offset": {
+            "x": -350,
+            "y": 150
+          },
+          "sources": 205,
+          "clonedMaterials": 35,
+          "retired": 35,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 17328763,
+          "comparedBytes": 33177600,
+          "width": 3840,
+          "height": 2160,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 563,
+            "programs": 54
+          },
+          "warmupEquivalence": [
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            },
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          ]
+        },
+        {
+          "offset": {
+            "x": 350,
+            "y": -150
+          },
+          "sources": 205,
+          "clonedMaterials": 35,
+          "retired": 35,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 16710119,
+          "comparedBytes": 33177600,
+          "width": 3840,
+          "height": 2160,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 563,
+            "programs": 54
+          },
+          "warmupEquivalence": [
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            },
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          ]
+        }
+      ],
+      "tickStart": 696,
+      "tickEnd": 696,
+      "errors": []
+    },
+    {
+      "status": "PASS_NATIVE_BATCH_HANDOFF_PIXEL_AND_PROGRAM_EQUIVALENCE",
+      "file": ".artifacts/windows-hd-diagnostic/c7-native-pixels-small-2x-v1/report.json",
+      "sha256": "6a495eb47cf18dbcdf482b0985b725322f672f091f499c0e8f19c62456653f2c",
+      "mode": "2x",
+      "results": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "sources": 226,
+          "clonedMaterials": 116,
+          "retired": 116,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8446325,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 575,
+            "programs": 48
+          },
+          "warmupEquivalence": [
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            },
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          ]
+        },
+        {
+          "offset": {
+            "x": -350,
+            "y": 150
+          },
+          "sources": 226,
+          "clonedMaterials": 116,
+          "retired": 116,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8446528,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 575,
+            "programs": 48
+          },
+          "warmupEquivalence": [
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            },
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          ]
+        },
+        {
+          "offset": {
+            "x": 350,
+            "y": -150
+          },
+          "sources": 226,
+          "clonedMaterials": 116,
+          "retired": 116,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 6805005,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 575,
+            "programs": 48
+          },
+          "warmupEquivalence": [
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            },
+            {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          ]
+        }
+      ],
+      "tickStart": 675,
+      "tickEnd": 675,
+      "errors": []
+    },
+    {
+      "status": "PASS_NATIVE_BATCH_HANDOFF_PIXEL_AND_PROGRAM_EQUIVALENCE",
+      "file": ".artifacts/windows-hd-diagnostic/c7-native-pixels-small-original-v1/report.json",
+      "sha256": "6207cc3fd8b47439c2962da20ed1236ae3626023c25a598fd7e253110e92a085",
+      "mode": "original",
+      "results": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "sources": 226,
+          "clonedMaterials": 110,
+          "retired": 110,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8238899,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 152,
+            "programs": 23
+          },
+          "warmupEquivalence": [
+            {
+              "ownerGroups": 0,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 0
+            },
+            {
+              "ownerGroups": 0,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 0
+            }
+          ]
+        },
+        {
+          "offset": {
+            "x": -350,
+            "y": 150
+          },
+          "sources": 226,
+          "clonedMaterials": 110,
+          "retired": 110,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8239206,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 152,
+            "programs": 23
+          },
+          "warmupEquivalence": [
+            {
+              "ownerGroups": 0,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 0
+            },
+            {
+              "ownerGroups": 0,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 0
+            }
+          ]
+        },
+        {
+          "offset": {
+            "x": 350,
+            "y": -150
+          },
+          "sources": 226,
+          "clonedMaterials": 110,
+          "retired": 110,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 6597563,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 152,
+            "programs": 23
+          },
+          "warmupEquivalence": [
+            {
+              "ownerGroups": 0,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 0
+            },
+            {
+              "ownerGroups": 0,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 0
+            }
+          ]
+        }
+      ],
+      "tickStart": 645,
+      "tickEnd": 645,
+      "errors": []
+    }
+  ],
+  "applicationIncrement": [
+    "src/engine/gfx/Renderer.ts",
+    "src/engine/gfx/batch/CombatProgramWarmup.ts"
+  ],
+  "resources": {
+    "files": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "limitsMiB": {
+      "world2X": 512,
+      "world4X": 1280,
+      "preparedCPU": 128,
+      "ui": 16
+    }
+  }
+}

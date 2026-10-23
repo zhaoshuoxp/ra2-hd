@@ -1,0 +1,1516 @@
+{
+  "schema": "m2-2-matched-performance-v1",
+  "status": "PASS_MATCHED_OBSERVATIONS_RESIDENCY_LIMITATION_DISCLOSED",
+  "observations": [
+    {
+      "role": "baseline",
+      "density": 2,
+      "source": ".artifacts/m2-2/perf-baseline-2x-v1/report.json",
+      "sourceSha256": "70e68ed501fd94537e065454a20ac3cf8610bffe0a496f9b7dbaed967dd41498",
+      "selectedMap": "xmp03t4.map",
+      "machine": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "release": "27.0.0",
+        "cpu": "Apple M2",
+        "memory": 25769803776
+      },
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "scene": {
+        "density": 2,
+        "sequence": "fixed-seed-start, mixed, first-pan, sustained-pan, exit-reentry",
+        "terrainMode": "SELECTED",
+        "boundary": "Same retail map, legal controlled roster, unchanged native camera and simulation. Bot thinking disabled in both observations."
+      },
+      "loadToFixtureMs": 9423,
+      "mapEntryToFixtureMs": 4418,
+      "frames": {
+        "mixedFrames": {
+          "samples": 480,
+          "mean": 16.667604166666667,
+          "p50": 16.669999999998254,
+          "p95": 17.639999999999418,
+          "p99": 18.56000000000131,
+          "max": 18.669999999998254,
+          "stalls50": 0,
+          "render": {
+            "geometries": 314,
+            "textures": 410
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        },
+        "firstEncounterFrames": {
+          "samples": 481,
+          "mean": 16.669750519750515,
+          "p50": 16.665000000000873,
+          "p95": 17.29500000000189,
+          "p99": 18.31500000000233,
+          "max": 18.6349999999984,
+          "stalls50": 0,
+          "render": {
+            "geometries": 314,
+            "textures": 410
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        },
+        "sustainedPanFrames": {
+          "samples": 480,
+          "mean": 16.667604166666674,
+          "p50": 16.669999999998254,
+          "p95": 17.19499999999971,
+          "p99": 18.334999999999127,
+          "max": 18.599999999998545,
+          "stalls50": 0,
+          "render": {
+            "geometries": 313,
+            "textures": 410
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        }
+      },
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 43741360,
+        "terrainGpu": 38158336,
+        "terrainCpu": 38158336,
+        "terrainCharge": 76326992,
+        "environmentCharge": 0,
+        "totalCharged": 160303632,
+        "limit": 268435456
+      },
+      "preparedCache": {
+        "bytes": 72847596,
+        "peakBytes": 72847596,
+        "pendingBytes": 0,
+        "hits": 5,
+        "misses": 58,
+        "shared": 2,
+        "evictions": 0,
+        "uncached": 0
+      },
+      "processMemory": [
+        {
+          "label": "loaded-mixed-scene",
+          "residentKiB": 3504064,
+          "sumReportedProcessPeaksKiB": 4647040
+        },
+        {
+          "label": "mixedFrames",
+          "residentKiB": 3592352,
+          "sumReportedProcessPeaksKiB": 4655040
+        },
+        {
+          "label": "firstEncounterFrames",
+          "residentKiB": 3617008,
+          "sumReportedProcessPeaksKiB": 4655040
+        },
+        {
+          "label": "sustainedPanFrames",
+          "residentKiB": 3824624,
+          "sumReportedProcessPeaksKiB": 4655040
+        },
+        {
+          "label": "before-disposal",
+          "residentKiB": 3695888,
+          "sumReportedProcessPeaksKiB": 4681024
+        }
+      ],
+      "maxObservedResidentKiB": 3824624,
+      "maxObservedSumReportedProcessPeaksKiB": 4681024,
+      "fixedBudgetFallback": {},
+      "actualMixedActors": [
+        {
+          "name": "MTNK",
+          "id": 1812,
+          "tick": 422,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            36,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "E1",
+          "id": 1813,
+          "tick": 422,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            37,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 3,
+          "shpHd": true,
+          "vxlHd": false,
+          "deployed": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "E2",
+          "id": 1814,
+          "tick": 422,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            38,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 5,
+          "shpHd": true,
+          "vxlHd": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "HTNK",
+          "id": 1815,
+          "tick": 422,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            39,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": false,
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "YTNK",
+          "id": 1816,
+          "tick": 422,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            40,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "ytnk.vxl",
+            "ytnktur.vxl",
+            "ytnktur.vxl",
+            "ytnktur.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "INIT",
+          "id": 1817,
+          "tick": 422,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            41,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 74,
+          "shpHd": true,
+          "vxlHd": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        }
+      ]
+    },
+    {
+      "role": "baseline",
+      "density": 4,
+      "source": ".artifacts/m2-2/perf-baseline-4x-v1/report.json",
+      "sourceSha256": "00a1c7b94a55f5a43c4c35630b15fa9430406bd2b110cf8ab0af8e0ab6e99fb8",
+      "selectedMap": "xmp03t4.map",
+      "machine": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "release": "27.0.0",
+        "cpu": "Apple M2",
+        "memory": 25769803776
+      },
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "scene": {
+        "density": 4,
+        "sequence": "fixed-seed-start, mixed, first-pan, sustained-pan, exit-reentry",
+        "terrainMode": "SELECTED",
+        "boundary": "Same retail map, legal controlled roster, unchanged native camera and simulation. Bot thinking disabled in both observations."
+      },
+      "loadToFixtureMs": 10664,
+      "mapEntryToFixtureMs": 5318,
+      "frames": {
+        "mixedFrames": {
+          "samples": 480,
+          "mean": 16.667614583333336,
+          "p50": 16.669999999998254,
+          "p95": 17.81000000000131,
+          "p99": 18.529999999998836,
+          "max": 18.655000000002474,
+          "stalls50": 0,
+          "render": {
+            "geometries": 314,
+            "textures": 475
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        },
+        "firstEncounterFrames": {
+          "samples": 480,
+          "mean": 16.667572916666668,
+          "p50": 16.669999999998254,
+          "p95": 17.43999999999869,
+          "p99": 18.514999999999418,
+          "max": 18.57999999999811,
+          "stalls50": 0,
+          "render": {
+            "geometries": 313,
+            "textures": 475
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        },
+        "sustainedPanFrames": {
+          "samples": 480,
+          "mean": 16.667604166666667,
+          "p50": 16.669999999998254,
+          "p95": 18.12000000000262,
+          "p99": 18.50499999999738,
+          "max": 18.580000000001746,
+          "stalls50": 0,
+          "render": {
+            "geometries": 313,
+            "textures": 475
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        }
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 139893828,
+        "terrainGpu": 149487616,
+        "terrainCpu": 149487616,
+        "terrainCharge": 298985552,
+        "environmentCharge": 0,
+        "totalCharged": 580817608,
+        "limit": 1342177280
+      },
+      "preparedCache": {
+        "bytes": 133005656,
+        "peakBytes": 133975088,
+        "pendingBytes": 0,
+        "hits": 12,
+        "misses": 78,
+        "shared": 15,
+        "evictions": 15,
+        "uncached": 2
+      },
+      "processMemory": [
+        {
+          "label": "loaded-mixed-scene",
+          "residentKiB": 3808816,
+          "sumReportedProcessPeaksKiB": 5186464
+        },
+        {
+          "label": "mixedFrames",
+          "residentKiB": 3894800,
+          "sumReportedProcessPeaksKiB": 5186464
+        },
+        {
+          "label": "firstEncounterFrames",
+          "residentKiB": 3917440,
+          "sumReportedProcessPeaksKiB": 5186464
+        },
+        {
+          "label": "sustainedPanFrames",
+          "residentKiB": 4267392,
+          "sumReportedProcessPeaksKiB": 5186464
+        },
+        {
+          "label": "before-disposal",
+          "residentKiB": 4117296,
+          "sumReportedProcessPeaksKiB": 5186464
+        }
+      ],
+      "maxObservedResidentKiB": 4267392,
+      "maxObservedSumReportedProcessPeaksKiB": 5186464,
+      "fixedBudgetFallback": {},
+      "actualMixedActors": [
+        {
+          "name": "MTNK",
+          "id": 1812,
+          "tick": 423,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            36,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "E1",
+          "id": 1813,
+          "tick": 423,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            37,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 5,
+          "shpHd": true,
+          "vxlHd": false,
+          "deployed": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "E2",
+          "id": 1814,
+          "tick": 423,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            38,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 5,
+          "shpHd": true,
+          "vxlHd": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "HTNK",
+          "id": 1815,
+          "tick": 423,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            39,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": false,
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "YTNK",
+          "id": 1816,
+          "tick": 423,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            40,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "ytnk.vxl",
+            "ytnktur.vxl",
+            "ytnktur.vxl",
+            "ytnktur.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "INIT",
+          "id": 1817,
+          "tick": 423,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            41,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 5,
+          "shpHd": true,
+          "vxlHd": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        }
+      ]
+    },
+    {
+      "role": "complete",
+      "density": 2,
+      "source": ".artifacts/m2-2/perf-complete-2x-v4/report.json",
+      "sourceSha256": "6d406f0db89134b09839a124fa9f963264c726c04e591a87056832b5715c97f9",
+      "selectedMap": "xmp03t4.map",
+      "machine": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "release": "27.0.0",
+        "cpu": "Apple M2",
+        "memory": 25769803776
+      },
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "scene": {
+        "density": 2,
+        "sequence": "fixed-seed-start, mixed, first-pan, sustained-pan, exit-reentry",
+        "terrainMode": "SELECTED",
+        "boundary": "Same retail map, legal controlled roster, unchanged native camera and simulation. Bot thinking disabled in both observations."
+      },
+      "loadToFixtureMs": 12036,
+      "mapEntryToFixtureMs": 6887,
+      "frames": {
+        "mixedFrames": {
+          "samples": 481,
+          "mean": 16.664251559251554,
+          "p50": 16.665000000000873,
+          "p95": 17.9900000000016,
+          "p99": 18.544999999998254,
+          "max": 18.639999999999418,
+          "stalls50": 0,
+          "render": {
+            "geometries": 590,
+            "textures": 852
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        },
+        "firstEncounterFrames": {
+          "samples": 481,
+          "mean": 16.66761954261955,
+          "p50": 16.669999999998254,
+          "p95": 18.1449999999968,
+          "p99": 18.520000000000437,
+          "max": 18.674999999995634,
+          "stalls50": 0,
+          "render": {
+            "geometries": 590,
+            "textures": 852
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        },
+        "sustainedPanFrames": {
+          "samples": 481,
+          "mean": 16.666507276507286,
+          "p50": 16.669999999998254,
+          "p95": 17.14999999999418,
+          "p99": 18.049999999995634,
+          "max": 18.659999999996217,
+          "stalls50": 0,
+          "render": {
+            "geometries": 589,
+            "textures": 852
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        }
+      },
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 21714036,
+        "terrainGpu": 65028096,
+        "terrainCpu": 65028096,
+        "terrainCharge": 130080012,
+        "environmentCharge": 74856308,
+        "totalCharged": 266885636,
+        "limit": 268435456
+      },
+      "preparedCache": {
+        "bytes": 63803044,
+        "peakBytes": 63803044,
+        "pendingBytes": 0,
+        "hits": 4,
+        "misses": 51,
+        "shared": 1,
+        "evictions": 0,
+        "uncached": 0
+      },
+      "processMemory": [
+        {
+          "label": "loaded-mixed-scene",
+          "residentKiB": 3389728,
+          "sumReportedProcessPeaksKiB": 5006800
+        },
+        {
+          "label": "mixedFrames",
+          "residentKiB": 3473968,
+          "sumReportedProcessPeaksKiB": 5006800
+        },
+        {
+          "label": "firstEncounterFrames",
+          "residentKiB": 3471056,
+          "sumReportedProcessPeaksKiB": 5006832
+        },
+        {
+          "label": "sustainedPanFrames",
+          "residentKiB": 3711936,
+          "sumReportedProcessPeaksKiB": 5006832
+        },
+        {
+          "label": "before-disposal",
+          "residentKiB": 3236368,
+          "sumReportedProcessPeaksKiB": 5006832
+        }
+      ],
+      "maxObservedResidentKiB": 3711936,
+      "maxObservedSumReportedProcessPeaksKiB": 5006832,
+      "fixedBudgetFallback": {
+        "E1": {
+          "density": 1,
+          "gpuBytes": 0,
+          "attempts": [
+            {
+              "density": 2,
+              "reason": "combined-budget"
+            }
+          ],
+          "members": [],
+          "status": "BUDGET_FALLBACK"
+        },
+        "INIT": {
+          "density": 1,
+          "gpuBytes": 0,
+          "attempts": [
+            {
+              "density": 2,
+              "reason": "combined-budget"
+            }
+          ],
+          "members": [],
+          "status": "BUDGET_FALLBACK"
+        },
+        "GAPILE": {
+          "density": 1,
+          "gpuBytes": 0,
+          "attempts": [
+            {
+              "density": 2,
+              "reason": "combined-budget"
+            }
+          ],
+          "members": [],
+          "status": "BUDGET_FALLBACK"
+        },
+        "GADEPT": {
+          "density": 1,
+          "gpuBytes": 0,
+          "attempts": [
+            {
+              "density": 2,
+              "reason": "combined-budget"
+            }
+          ],
+          "members": [],
+          "status": "BUDGET_FALLBACK"
+        },
+        "GAAIRC": {
+          "density": 1,
+          "gpuBytes": 0,
+          "attempts": [
+            {
+              "density": 2,
+              "reason": "combined-budget"
+            }
+          ],
+          "members": [],
+          "status": "BUDGET_FALLBACK"
+        },
+        "GAROBO": {
+          "density": 1,
+          "gpuBytes": 0,
+          "attempts": [
+            {
+              "density": 2,
+              "reason": "combined-budget"
+            }
+          ],
+          "members": [],
+          "status": "BUDGET_FALLBACK"
+        }
+      },
+      "actualMixedActors": [
+        {
+          "name": "MTNK",
+          "id": 1812,
+          "tick": 424,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            36,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "E1",
+          "id": 1813,
+          "tick": 424,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            37,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 3,
+          "shpHd": false,
+          "vxlHd": false,
+          "deployed": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "E2",
+          "id": 1814,
+          "tick": 424,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            38,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 5,
+          "shpHd": true,
+          "vxlHd": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "HTNK",
+          "id": 1815,
+          "tick": 424,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            39,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": false,
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "YTNK",
+          "id": 1816,
+          "tick": 424,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            40,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "ytnk.vxl",
+            "ytnktur.vxl",
+            "ytnktur.vxl",
+            "ytnktur.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "INIT",
+          "id": 1817,
+          "tick": 424,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            41,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 5,
+          "shpHd": false,
+          "vxlHd": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        }
+      ]
+    },
+    {
+      "role": "complete",
+      "density": 4,
+      "source": ".artifacts/m2-2/perf-complete-4x-v4/report.json",
+      "sourceSha256": "2e3d3d63f1e5695d671793d2ba9c9328241bca102c8206437c44c09c1ceb0bc7",
+      "selectedMap": "xmp03t4.map",
+      "machine": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "release": "27.0.0",
+        "cpu": "Apple M2",
+        "memory": 25769803776
+      },
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "scene": {
+        "density": 4,
+        "sequence": "fixed-seed-start, mixed, first-pan, sustained-pan, exit-reentry",
+        "terrainMode": "SELECTED",
+        "boundary": "Same retail map, legal controlled roster, unchanged native camera and simulation. Bot thinking disabled in both observations."
+      },
+      "loadToFixtureMs": 16239,
+      "mapEntryToFixtureMs": 11123,
+      "frames": {
+        "mixedFrames": {
+          "samples": 480,
+          "mean": 16.66761458333333,
+          "p50": 16.669999999998254,
+          "p95": 17.985000000000582,
+          "p99": 18.56499999999869,
+          "max": 18.635000000002037,
+          "stalls50": 0,
+          "render": {
+            "geometries": 622,
+            "textures": 1071
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        },
+        "firstEncounterFrames": {
+          "samples": 480,
+          "mean": 16.667614583333336,
+          "p50": 16.669999999998254,
+          "p95": 17.849999999998545,
+          "p99": 18.62000000000262,
+          "max": 18.650000000001455,
+          "stalls50": 0,
+          "render": {
+            "geometries": 620,
+            "textures": 1071
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        },
+        "sustainedPanFrames": {
+          "samples": 481,
+          "mean": 16.667609147609152,
+          "p50": 16.665000000000873,
+          "p95": 17.57499999999709,
+          "p99": 18.44000000000233,
+          "max": 18.625,
+          "stalls50": 0,
+          "render": {
+            "geometries": 621,
+            "textures": 1071
+          },
+          "targets": [
+            [
+              28,
+              88,
+              4
+            ],
+            [
+              28,
+              85,
+              4
+            ],
+            [
+              31,
+              71,
+              4
+            ],
+            [
+              37,
+              71,
+              5
+            ],
+            [
+              27,
+              88,
+              4
+            ],
+            [
+              59,
+              91,
+              4
+            ]
+          ]
+        }
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 148965568,
+        "terrainGpu": 253886464,
+        "terrainCpu": 253886464,
+        "terrainCharge": 507796748,
+        "environmentCharge": 292144900,
+        "totalCharged": 1090845444,
+        "limit": 1342177280
+      },
+      "preparedCache": {
+        "bytes": 133005656,
+        "peakBytes": 133975088,
+        "pendingBytes": 0,
+        "hits": 11,
+        "misses": 78,
+        "shared": 16,
+        "evictions": 15,
+        "uncached": 2
+      },
+      "processMemory": [
+        {
+          "label": "loaded-mixed-scene",
+          "residentKiB": 3464768,
+          "sumReportedProcessPeaksKiB": 5563008
+        },
+        {
+          "label": "mixedFrames",
+          "residentKiB": 3517168,
+          "sumReportedProcessPeaksKiB": 5563024
+        },
+        {
+          "label": "firstEncounterFrames",
+          "residentKiB": 3533168,
+          "sumReportedProcessPeaksKiB": 5563024
+        },
+        {
+          "label": "sustainedPanFrames",
+          "residentKiB": 3361104,
+          "sumReportedProcessPeaksKiB": 5563024
+        },
+        {
+          "label": "before-disposal",
+          "residentKiB": 3067856,
+          "sumReportedProcessPeaksKiB": 5563024
+        }
+      ],
+      "maxObservedResidentKiB": 3533168,
+      "maxObservedSumReportedProcessPeaksKiB": 5563024,
+      "fixedBudgetFallback": {},
+      "actualMixedActors": [
+        {
+          "name": "MTNK",
+          "id": 1812,
+          "tick": 425,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            36,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "E1",
+          "id": 1813,
+          "tick": 425,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            37,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 3,
+          "shpHd": true,
+          "vxlHd": false,
+          "deployed": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "E2",
+          "id": 1814,
+          "tick": 425,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            38,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 5,
+          "shpHd": true,
+          "vxlHd": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "HTNK",
+          "id": 1815,
+          "tick": 425,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            39,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": false,
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "YTNK",
+          "id": 1816,
+          "tick": 425,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            40,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "ytnk.vxl",
+            "ytnktur.vxl",
+            "ytnktur.vxl",
+            "ytnktur.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        {
+          "name": "INIT",
+          "id": 1817,
+          "tick": 425,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            41,
+            93
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "frame": 2,
+          "shpHd": true,
+          "vxlHd": false,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        }
+      ]
+    }
+  ],
+  "steadyPanning": "Final 2X/4X mean is approximately 16.67 ms, matching the baseline; no >50 ms interval in the three 8-second measurement segments.",
+  "introducedRegression": "Earlier unbatched candidate had sustained means 29.32/29.21 ms. Native single-page sprite batching resolves this measured submission regression.",
+  "loading": "Complete-map map entry is 6.887/11.123 seconds versus 4.418/5.318 seconds at 2X/4X. Added resource validation/decode/residency has a real loading cost.",
+  "residency": "Under the unchanged 256 MiB 2X world cap, the six-actor mixed fixture falls back atomically for E1 and INIT. Accepted exports are unchanged; existing admission reports combined-budget. 4X selects both HD.",
+  "boundary": "One short observation per density on the same 60 Hz Mac host, with no concurrent build/compression. RAF intervals are display-paced, not a CPU/GPU frame benchmark or Windows FPS result. Process metrics use KiB; sums of per-process reported peaks are not simultaneous aggregate peak residency. No universal battle-size or instant-first-use guarantee."
+}

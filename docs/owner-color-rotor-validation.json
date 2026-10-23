@@ -1,0 +1,179 @@
+{
+  "status": "PASS_TARGETED_NATIVE_AND_GLOBAL_SOURCE_CHECKS",
+  "runtimeSourceHead": "49b7a7bbfc5c5c73aa31c588d35f75b4b2e0598c",
+  "runtimeSourceDirty": "",
+  "resourceRevision": "owner-r3",
+  "preservation": {
+    "status": "PASS_IMMUTABLE_BASE_GEOMETRY_AND_COVERAGE",
+    "manifests": 371,
+    "frames": 23831,
+    "basePairs": 866,
+    "dataPairs": 866,
+    "routes": 2419,
+    "availability": "UNCHANGED",
+    "preserved": "Base bytes, original masks and their shade indices, native frame/heading rectangles, alpha and depth channels, retail source identity",
+    "rows": "See preservation.json"
+  },
+  "nativeCases": {
+    "runtime-final-yr": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "yr",
+      "snow": false,
+      "option": {
+        "superWeapons": false,
+        "density": 4
+      },
+      "stages": 87,
+      "clips": 6,
+      "renderer": {
+        "glError": 0,
+        "contextLost": false,
+        "memory": {
+          "geometries": 179,
+          "textures": 679
+        },
+        "frame": {
+          "frame": 12765,
+          "calls": 83,
+          "triangles": 318,
+          "points": 0,
+          "lines": 0
+        },
+        "canvas": [
+          3840,
+          2160
+        ]
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 381733320,
+        "demand": 47418040,
+        "total": 520523556,
+        "limit": 1342177280
+      }
+    },
+    "runtime-final-ra2": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "ra2",
+      "snow": true,
+      "option": {
+        "superWeapons": false,
+        "density": 2
+      },
+      "stages": 38,
+      "clips": 2,
+      "renderer": {
+        "glError": 0,
+        "contextLost": false,
+        "memory": {
+          "geometries": 151,
+          "textures": 604
+        },
+        "frame": {
+          "frame": 7465,
+          "calls": 83,
+          "triangles": 318,
+          "points": 0,
+          "lines": 0
+        },
+        "canvas": [
+          3840,
+          2160
+        ]
+      },
+      "worldAllocation": {
+        "baseline": 22008264,
+        "eager": 150538744,
+        "demand": 12695676,
+        "total": 185242684,
+        "limit": 268435456
+      }
+    },
+    "infantry-final-yr": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "yr",
+      "snow": false,
+      "option": {
+        "superWeapons": false,
+        "density": 4
+      },
+      "stages": 5,
+      "clips": 4,
+      "renderer": {
+        "glError": 0,
+        "contextLost": false,
+        "memory": {
+          "geometries": 123,
+          "textures": 627
+        },
+        "frame": {
+          "frame": 2553,
+          "calls": 83,
+          "triangles": 318,
+          "points": 0,
+          "lines": 0
+        },
+        "canvas": [
+          3840,
+          2160
+        ]
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 381733320,
+        "demand": 41215832,
+        "total": 514321348,
+        "limit": 1342177280
+      }
+    },
+    "infantry-final-ra2": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "ra2",
+      "snow": true,
+      "option": {
+        "superWeapons": false,
+        "density": 2
+      },
+      "stages": 3,
+      "clips": 2,
+      "renderer": {
+        "glError": 0,
+        "contextLost": false,
+        "memory": {
+          "geometries": 108,
+          "textures": 552
+        },
+        "frame": {
+          "frame": 1568,
+          "calls": 83,
+          "triangles": 318,
+          "points": 0,
+          "lines": 0
+        },
+        "canvas": [
+          3840,
+          2160
+        ]
+      },
+      "worldAllocation": {
+        "baseline": 22008264,
+        "eager": 150538744,
+        "demand": 11047896,
+        "total": 183594904,
+        "limit": 268435456
+      }
+    }
+  },
+  "productionCountryEditionPairs": 19,
+  "tests": {
+    "typescript": 5,
+    "assertions": 114,
+    "materialClassification": 4,
+    "entryTypecheck": "PASS"
+  },
+  "sourceAudit": "330 unique native SHP hashes resolved",
+  "userAcceptance": "PENDING",
+  "windows": "NOT_RUN",
+  "priorAcceptedTasks": "PRESERVED; not reclassified",
+  "captureSelection": "Unobstructed infantry-only runs supersede the obscured and late infantry stills from the broad targeted runs. Native clips and traces are retained."
+}

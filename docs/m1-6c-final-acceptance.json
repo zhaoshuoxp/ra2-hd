@@ -1,0 +1,52 @@
+{
+  "status": "M1_6C_ACCEPTED_AND_DELIVERED",
+  "recordedAtUtc": "2026-09-23T22:03:15.409237+00:00",
+  "decision": "User explicitly approved the consolidated final review without exceptions.",
+  "scope": {
+    "ra2": 18,
+    "yr": 18,
+    "union": 20,
+    "editionTheaterBuildingCells": 162,
+    "buildingOriginalExceptions": [],
+    "lunarBoundary": "Controlled native VFS/ImageFinder/GPU fixture, not an ordinary lunar skirmish"
+  },
+  "acceptedRuntimeSourceHead": "9e635b1bddd61d605c5fb1367e44d16ae8168d76",
+  "acceptedDeliveryCommit": "c03c445871b462049f3e10fa00d45c31f5ef87cf",
+  "archive": {
+    "status": "PASS_ZIP_CRC_AND_ALL_SHIPPED_HASHES",
+    "path": "/Users/Aone/RA2remaster/ra2-hd-buildings-m1-6c/.artifacts/m1-6c/delivery-v2/RA2-HD-Soviet-Buildings-M1.6C-R1.zip",
+    "bytes": 890656327,
+    "sha256": "49ec4f5655c30cf1ab79115ee79bfa582bcd2ae4127eefa9ea49e8a26b82055d",
+    "checkedEntries": 1625,
+    "runtimeSourceHead": "9e635b1bddd61d605c5fb1367e44d16ae8168d76"
+  },
+  "selectedResourceFilesVerified": 245,
+  "evidence": {
+    ".artifacts/m1-6c/delivery-v2/RA2-HD-Soviet-Buildings-M1.6C-R1/PACKAGE-VALIDATION.json": {
+      "sha256": "0904825dff93d84fe610031a04a34d22a549c87670faa193350838a3b89e8988"
+    },
+    ".artifacts/m1-6c/delivery-v2/RA2-HD-Soviet-Buildings-M1.6C-R1/DELIVERY-INVENTORY.json": {
+      "sha256": "ac12061b846d212623956d5ceea232a3c3983e6a5e6dcfcc780c44a0f2f6e9bb"
+    },
+    ".artifacts/m1-6c/delivery-browser-v2/result.json": {
+      "sha256": "28ecd430518bfeb4d8c152077a43027fe8b51077e073880cab0e2c18dfd90377"
+    },
+    ".artifacts/m1-6c/native-package-v2/result.json": {
+      "sha256": "076535bcd48df1f2e7a8f29d7f68809a3057610539a606f82e3adc6f6f6b1ce7"
+    }
+  },
+  "coverageMatrixSha256": "2240966d25c41ab439bc42c776cd35969ed7e1ab860cbf578d73a468c1b769a6",
+  "resourceInventorySha256": "389702555788f35dd194f490bbbb19fb9b5dbbff024160ff66f2ec1e46dca6c2",
+  "mainAtAcceptance": {
+    "head": "f0412b95225d7dbc79ae81a6cfe50e21377423de",
+    "status": "",
+    "integratedIntoMain": false,
+    "note": "Main advanced independently to combat/audio R5. Accepted M1.6C source remains on its isolated branch; no merge or resource copy to main was performed."
+  },
+  "boundaries": [
+    "Human acceptance closes the delivered M1.6C visual/gameplay scope, not untested platforms or campaigns.",
+    "Lunar remains controlled native loader/GPU evidence, not retail lunar skirmish gameplay.",
+    "SQD and YURIPR Original unit exceptions remain unchanged.",
+    "Archived pending labels and failed attempts remain historical; this receipt supersedes the final acceptance gate."
+  ]
+}

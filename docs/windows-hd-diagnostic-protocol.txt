@@ -1,0 +1,103 @@
+RA2 HD Windows candidate - WINHD-20261008-D38F136-C9
+
+Current bounded follow-up: follow START-HERE.txt for one C9 eight-player 4X
+Normal launch followed by one late manual F8 sample. C8 Normal/manual evidence
+is retained as baseline. No density/control matrix or F9 trace is requested. The generic
+procedure below is reference only; do not execute its full matrix automatically.
+Wait for final capture completion. Interrupted/invalid samples remain exported.
+
+1. Extract the ENTIRE ZIP to a writable local folder. Keep all sibling resources.
+   Do not run inside the ZIP or replace an older game folder. No Node, Bun,
+   development repository, remote connection or script editing is required.
+2. Run Verify-Kit.cmd once. It must report PASS. This reads all payload hashes
+   and can take time. Do this before the timing series, not between its modes.
+3. Run Launch-Diagnostics.cmd. Choose Small, Original, Normal. Keep the game
+   focused until "capture complete". The app starts a fixed match and pans a
+   fixed camera route. It captures first use, warmed play, native same-process
+   re-entry and warmed re-entry, each 15 seconds. Close the game afterwards.
+4. Repeat with Small, 2X, Normal and then Small, 4X, Normal. Each launch is a new
+   process and isolated profile. Keep the same monitor, DPI, power, foreground
+   apps and display settings. Do not change graphics, speed, camera or trainer.
+5. Does Small reproduce your usual HD slowdown? If yes, keep it as the smallest
+   reproducer. If no, repeat only these three modes with the 8-player/7-AI stress
+   scene. Do not call an easy scene a fix for the reported stress-case problem.
+6. After lightweight timings, repeat ONLY the worst reproducing scene/density
+   with Trace. This adds one 8-second CPU and multiprocess trace after the normal
+   timings. Its separate instrumented phase also counts WebGL program switches,
+   compilation/link/log calls and texture upload calls where available. CPU
+   submission durations are not GPU execution times. Do not compare trace FPS
+   directly to the normal timing series.
+   For a dedicated first-use trace, start a separate Normal run of the worst
+   mode and press F9 during its initial loading/first-use phase. Any overlapping
+   timing phases and later phases in that process are relabeled instrumented;
+   exclude this dedicated profiling run from the normal timing series.
+7. If a specific first construction, complex-unit appearance or other action is
+   worse, stay in the completed session and reproduce it during F8 (15-second
+   manual timing) or F9 (one 8-second trace). Late F8 and F9 preserve manual camera input; the four automatic
+   phases retain their fixed route. A process captures at most one trace; start a new Normal process
+   to use F9 at another moment. These later samples are warmed/manual, not cold.
+8. Close the game, then run Export-Reports.cmd. Copy the new *-RETURN-*.zip beside
+   the launchers back to the original Mac conversation. Include failed runs.
+
+Reports and test profiles live only in Diagnostic-Runs. Export collects the
+named reports, exact manifest and current launchers. Profiles, Local Storage,
+cookies, credentials, account identifiers and unrelated files are excluded.
+You may put a short USER-NOTES.txt in a run folder before export. Record which
+scene reproduced the issue, perceived smoothness of each mode, power/monitor
+context, GPU capacity as shown in Windows, steps for the worst action and any
+temporary launcher differences. Do not add personal data. Current launchers
+are included as evidence and must be inspected as data on return.
+
+Small: Yuri's Revenge, American Town xmp03t4.map, 2 players/1 AI.
+Stress: Yuri's Revenge, xmp27t8.map, 8 players/7 AI, retained historical setup.
+Both: fixed seed/start timestamp 1700000000000, native game speed 5 with solo
+speed tier 2, high models/shadows, 10000 starting credits/10 units and the
+historical trainer setup (100000 credit preset, 1000 power, 1-second queues).
+The realized game options, countries, map identity and native speed are saved.
+Small requests a 1280x800 DIP window; any OS clamping is recorded. Stress uses
+native fullscreen on the current display, preserving the reported full-output
+case without oversized-window clipping. The accepted game's logical
+presentation remains 900 high (1440x900 at 16:10), independently of window/DPI/
+asset density. Native framebuffer follows the actual display and DPI. Actual
+window/logical/framebuffer dimensions, display frequency and DPI are recorded.
+All three densities must use the same view/output/display on this machine.
+Fresh profile/process does not flush OS or driver caches. AI advances normally;
+scene counts and admitted HD content can differ as timing/admission changes.
+Compare actual bindings/fallbacks, not just the requested density label.
+
+Frame intervals include browser scheduling. Simulation CPU, renderer update CPU
+and render submission CPU are separate. Allocator gpuBytes are app accounting,
+not measured VRAM. Electron process memory is reported by PID/type in KiB at
+phase boundaries, including the game's renderer and GPU process. WMI AdapterRAM
+may truncate or misreport capacity. Actual process GPU budgets and valid GPU
+execution timing remain UNAVAILABLE. Worker report workerMs is cumulative
+request round-trip time, not worker CPU execution time. GC is trace dependent.
+Loss of focus/visibility or missing native ticks invalidates a sample; raw rows
+and errors are retained. Screenshots and disk writes are absent from timed loops.
+
+Run-Control.cmd offers 720p framebuffer, frozen simulation or shadows-off.
+Use ONLY the single control selected after evidence review. These are diagnostic
+controls, not accepted quality reductions. 720p preserves logical view and HD
+density; actual logical/output metrics must match the intended one-variable
+comparison. No memory-limit change, software rendering, driver installation,
+system graphics change or safeguard bypass is part of this kit.
+
+The ordinary executable still follows the normal portable game entry. Diagnostic
+launching is explicit and isolated. Debugging uses a temporary in-process API;
+there is no TCP debugger/server or connection to the Mac. The Reference folder
+has read-only relevant source, lockfiles, installed API/version metadata,
+selected reports and exact diagnostic JS/source maps. It is NOT an immediately
+buildable Windows checkout. Native PDBs are not included. The gameplay source
+differs from frozen main D38F136 / accepted R10 69A8CE5 only at the rendering
+paths declared in the manifest. C9 prepares only the displayed cached VXL bearing above C8. Inactive cached
+views are detached and refreshed when selected again. Native joints, rotor/disc,
+missile attitude, shadows and complete-family ownership remain intact. C8's
+actor-container matrix policy and all earlier repairs are preserved. F8 and
+late F9 preserve manual camera input; automatic routes remain unchanged.
+Rules, resources and fixed quality/
+allocation limits retain baseline identities; worker input copies are transient
+CPU memory and are not prepared-cache residency or measured VRAM. Candidate bundles have matching hidden maps
+and new hashes; the manifest never labels candidate application parity EXACT.
+Older packages
+stay immutable. Static package checks and Mac tooling checks do not establish
+a Windows fix. Windows diagnosis and acceptance await this machine's evidence.

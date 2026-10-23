@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 2,
+  "status": "draft-not-implemented",
+  "exampleOnly": true,
+  "schemaChange": {
+    "from": 1,
+    "compatible": false,
+    "changes": [
+      "Separate trim, legacy render extent and atlas sample rectangle",
+      "Whole-member atomic animation fallback",
+      "Separate immutable texture keys from dynamic material state",
+      "Explicit remap shade and coverage channels; no generic engine-native color promise"
+    ],
+    "migration": "No runtime consumes v1 or v2. Reject unknown versions; do not auto-convert."
+  },
+  "assetId": "synthetic/asymmetric-two-frame-sprite",
+  "source": {
+    "kind": "authored-synthetic-descriptor",
+    "member": "SYNTHETIC.SHP",
+    "sha256": "5a3b88ab11e91dde5f811c09f8442dd6559f812401eaf228b28ffb2f1f64061f",
+    "hashMeaning": "SHA-256 of the canonical synthetic descriptor, not an existing SHP file",
+    "descriptor": {
+      "canvas": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "trimOrigin": [
+        5,
+        7
+      ],
+      "trimSize": [
+        23,
+        17
+      ],
+      "legacyRenderSize": [
+        24,
+        18
+      ],
+      "frames": [
+        0,
+        1
+      ]
+    },
+    "theater": "TEMPERATE",
+    "productionBinding": "Replace kind/member/hash with the resolved original member bytes and theater; verify frame metadata against decoded source."
+  },
+  "selection": {
+    "enabledByDefault": false,
+    "packId": "synthetic-contract-demo",
+    "packRevision": "1",
+    "packManifestSha256": null,
+    "requestedDensity": 2,
+    "productionDensities": [
+      2,
+      4
+    ],
+    "diagnosticDensities": [
+      1
+    ],
+    "algorithm": "Use one explicitly selected immutable pack. Try requested density, then lower supported HD density. Validate complete member before activation; otherwise original. Never merge packs or select by directory order.",
+    "packSwitch": "Between games only; dispose old pack allocations."
+  },
+  "logical": {
+    "unit": "original SHP pixel before existing world scale",
+    "canvas": [
+      64,
+      64
+    ],
+    "anchor": [
+      32,
+      48
+    ],
+    "anchorMeaning": "Existing builder canvas-center plus caller offset, represented explicitly; synthetic anchor includes caller offset. Never add a second anchor translation.",
+    "frames": [
+      {
+        "nativeFrame": 0,
+        "trimOrigin": [
+          5,
+          7
+        ],
+        "trimSize": [
+          23,
+          17
+        ],
+        "legacyRenderSize": [
+          24,
+          18
+        ],
+        "empty": false
+      },
+      {
+        "nativeFrame": 1,
+        "trimOrigin": [
+          5,
+          7
+        ],
+        "trimSize": [
+          23,
+          17
+        ],
+        "legacyRenderSize": [
+          24,
+          18
+        ],
+        "empty": false
+      }
+    ],
+    "legacyPadding": "TextureAtlas rounds odd frame width and height up to even. Preserve that existing render extent, keeping extra texels transparent.",
+    "geometry": "Use legacyRenderSize, original offsets/align/depth/world scale for positions. Use sampleRect/page size for UVs. Pixel split = logical split * density.",
+    "animation": "Original frame selection, facing and timing. No new frame interpolation.",
+    "simulation": "No camera, tile, foundation, hit-test or simulation-bound changes."
+  },
+  "variants": [
+    {
+      "density": 1,
+      "purpose": "diagnostic-only",
+      "pages": [
+        {
+          "id": "p0",
+          "base": "synthetic-1x-rgba.png",
+          "data": "synthetic-1x-data.png",
+          "size": [
+            28,
+            44
+          ],
+          "baseSha256": null,
+          "dataSha256": null,
+          "filesExist": false
+        }
+      ],
+      "frames": [
+        {
+          "nativeFrame": 0,
+          "page": "p0",
+          "sampleRect": [
+            2,
+            2,
+            24,
+            18
+          ],
+          "contentRect": [
+            2,
+            2,
+            23,
+            17
+          ]
+        },
+        {
+          "nativeFrame": 1,
+          "page": "p0",
+          "sampleRect": [
+            2,
+            24,
+            24,
+            18
+          ],
+          "contentRect": [
+            2,
+            24,
+            23,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "density": 2,
+      "purpose": "future-HD-override",
+      "pages": [
+        {
+          "id": "p0",
+          "base": "synthetic-2x-rgba.png",
+          "data": "synthetic-2x-data.png",
+          "size": [
+            52,
+            80
+          ],
+          "baseSha256": null,
+          "dataSha256": null,
+          "filesExist": false
+        }
+      ],
+      "frames": [
+        {
+          "nativeFrame": 0,
+          "page": "p0",
+          "sampleRect": [
+            2,
+            2,
+            48,
+            36
+          ],
+          "contentRect": [
+            2,
+            2,
+            46,
+            34
+          ]
+        },
+        {
+          "nativeFrame": 1,
+          "page": "p0",
+          "sampleRect": [
+            2,
+            42,
+            48,
+            36
+          ],
+          "contentRect": [
+            2,
+            42,
+            46,
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "density": 4,
+      "purpose": "future-HD-override",
+      "pages": [
+        {
+          "id": "p0",
+          "base": "synthetic-4x-rgba.png",
+          "data": "synthetic-4x-data.png",
+          "size": [
+            100,
+            152
+          ],
+          "baseSha256": null,
+          "dataSha256": null,
+          "filesExist": false
+        }
+      ],
+      "frames": [
+        {
+          "nativeFrame": 0,
+          "page": "p0",
+          "sampleRect": [
+            2,
+            2,
+            96,
+            72
+          ],
+          "contentRect": [
+            2,
+            2,
+            92,
+            68
+          ]
+        },
+        {
+          "nativeFrame": 1,
+          "page": "p0",
+          "sampleRect": [
+            2,
+            78,
+            96,
+            72
+          ],
+          "contentRect": [
+            2,
+            78,
+            92,
+            68
+          ]
+        }
+      ]
+    }
+  ],
+  "color": {
+    "representation": "authored-sRGB-RGBA8-plus-RGBA8-data",
+    "status": "proposed-material-parity-unverified",
+    "baseTexture": {
+      "rgb": "sRGB; decode to linear before shading",
+      "alpha": "straight coverage, unassociated; upload without premultiplication"
+    },
+    "dataTexture": {
+      "colorSpace": "NoColorSpace",
+      "R": "team-remap coverage 0..255",
+      "G": "integer remap shade 0..15; lookup index 16+G",
+      "B": "0 = existing caller lighting; any other value unsupported and rejects member",
+      "A": "255 reserved; other values invalid"
+    },
+    "remapRampFactors": [
+      63,
+      59,
+      55,
+      52,
+      48,
+      44,
+      41,
+      37,
+      33,
+      30,
+      26,
+      22,
+      19,
+      15,
+      11,
+      8
+    ],
+    "rampFormula": "For each owner RGB byte: floor(ownerChannel / 255 * factor * 4), then the same palette color-space path as 1x.",
+    "shading": "Mix linear base RGB and owner-remapped palette RGB using R/255. Multiply by 1+extraLight then clamp; preserve vertex color multipliers and existing instance/uniform opacity, alpha-test and render pass. Parity must be proved before art integration.",
+    "specialColors": "Index 0 is transparent; indices 16..31 remap. No SHP per-index full-bright exemption found. Per-asset LightingType/UseNormalLight/animation palettes remain caller-controlled. Do not import VPL index rules into SHP.",
+    "filters": {
+      "base": "nearest initially",
+      "data": "nearest only; no interpolated discrete shade index",
+      "wrap": "clamp-to-edge",
+      "mipmaps": false,
+      "edgePaddingPixels": 2,
+      "edgePadding": "Extrude boundary RGB/shade into a two-texel gutter with zero alpha and zero remap coverage outside the logical extent; padding excluded from sampleRect."
+    },
+    "syntheticSamples": [
+      {
+        "region": "transparent",
+        "base": [
+          255,
+          0,
+          0,
+          0
+        ],
+        "data": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "region": "ordinary-blue",
+        "base": [
+          32,
+          96,
+          224,
+          255
+        ],
+        "data": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "region": "bright-team",
+        "base": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "data": [
+          255,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "region": "dark-team",
+        "base": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "data": [
+          255,
+          15,
+          0,
+          255
+        ]
+      },
+      {
+        "region": "mixed-coverage",
+        "base": [
+          96,
+          128,
+          160,
+          128
+        ],
+        "data": [
+          128,
+          7,
+          0,
+          255
+        ]
+      }
+    ]
+  },
+  "fallback": {
+    "unit": "entire resolved SHP member including all visible animation frames",
+    "shadowPolicy": "Always retain original shadow frames, excluded from required override frames",
+    "aggregatePolicy": "Resolve and validate constituent member identities before ShpAggregator; retain frame-index mapping. Mixed constituent densities are allowed only as separate batch pages/materials.",
+    "on": [
+      "disabled",
+      "missing-file",
+      "unsupported-density",
+      "source-hash-mismatch",
+      "theater-mismatch",
+      "frame-metadata-mismatch",
+      "invalid-or-overlapping-rectangles",
+      "invalid-mask-or-size",
+      "incomplete-animation",
+      "unsupported-color-semantics",
+      "page-or-memory-limit",
+      "decode-or-upload-failure"
+    ],
+    "action": "Discard candidate member allocations; try next lower supported density once, else original member for the whole game. Never retry per frame.",
+    "logging": "One summary per pack/source/theater/density/reason per game plus count; expose chosen fallback in diagnostics."
+  },
+  "shadowAndDepth": {
+    "shadows": "Original shadow frame/index/geometry/material/opacity",
+    "depth": "Original logical depth split, draw order, occlusion, layer and Z offsets",
+    "states": "No implicit coverage of damage, buildup, bib, turret, debris or other constituent SHPs."
+  },
+  "cache": {
+    "textureKey": [
+      "schemaVersion",
+      "packManifestSha256",
+      "source.sha256",
+      "source.member",
+      "source.theater",
+      "density",
+      "pageContentHashes",
+      "frameLayoutHash",
+      "colorContractVersion"
+    ],
+    "geometryKey": [
+      "source.sha256",
+      "constituentFrameIndex",
+      "logicalFrameMetadata",
+      "callerOffset",
+      "align",
+      "flat",
+      "depth",
+      "depthOffset",
+      "worldScale",
+      "cameraRotation",
+      "density",
+      "pageLayoutHash"
+    ],
+    "materialKey": [
+      "textureKeys",
+      "paletteTextureIdentityOrPaletteSetHash",
+      "shaderVersion",
+      "batchMode",
+      "alphaTest",
+      "transparentPass"
+    ],
+    "dynamicState": [
+      "palette-row/team remap",
+      "extraLight",
+      "opacity",
+      "vertex color multipliers"
+    ],
+    "lifetime": "Explicit per-pack ownership and per-material usage counts. Retain referenced textures through game teardown; clear on pack switch or context recovery. No unbounded frame cache."
+  },
+  "limits": {
+    "policyStatus": "proposed-conservative-caps-not-measured",
+    "maxPageSide": "min(2048, renderer.capabilities.maxTextureSize)",
+    "maxPagesPerMember": 8,
+    "maxGpuBytesPerMember": 67108864,
+    "maxGpuBytesPerPack": 134217728,
+    "maxCpuDecodedBytesPerPack": 268435456,
+    "budgetIncludes": [
+      "all base/data page texels",
+      "decode/upload temporary copies",
+      "shadow-original allocations separately",
+      "geometry and palette allocations separately"
+    ],
+    "gpuBytesPerTexel": 8,
+    "onLimit": "Downshift entire member to 2x if valid, otherwise original; no driver auto-resize. Query actual context caps before upload."
+  },
+  "localLoading": {
+    "status": "not-implemented",
+    "profileRelativeRoot": "hd-packs/<pack-id>/<revision>/",
+    "routes": "Manifest-declared exact /local-hd/<manifest-hash>/<page-id> routes registered by desktop/profile.mjs and served by desktop/protocol.mjs; no arbitrary filesystem URLs.",
+    "verification": "Realpath containment, regular files, no symlinks, sizes and SHA-256 for all declared files before registration; no remote URLs.",
+    "distribution": "Pack artwork/retail derivatives remain ignored local profile data, outside Git, dist and application payloads."
+  },
+  "vehicles": "Separate VXL/HVA/VPL/part-facing design; this contract does not cover vehicles."
+}

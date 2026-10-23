@@ -1,0 +1,2774 @@
+{
+  "schema": "m2-4-urban-batch55-handoff-v1",
+  "status": "USER_ACCEPTED_EIGHT_COMPLETE_WASHINGTON_FAMILIES_MAC_PASS",
+  "sourceBranch": "task/m2-4-all-skirmish-theaters",
+  "runtimeSourceHead": "8e095c1a85194391dc5d4952b43cd6c3cd2c53e7",
+  "mainHead": "748d0998aaf663acda8807c158155bf0a5bb157b",
+  "mainClean": true,
+  "mainAdvancedSinceBatch54": false,
+  "mainWasMutatedByThisBatch": false,
+  "selectedEnvironment": {
+    "schemaVersion": 1,
+    "revision": "urban-environment-m2-4-buildings-batch55-v1",
+    "sha256": "04d93fa6f406a702e9035338ff90ba5cc10391b0f9aee293e79bd78ca2202940"
+  },
+  "selectedTerrain": {
+    "schemaVersion": 1,
+    "revision": "urban-m2-4-structures-r14e",
+    "sha256": "d2cfbfc964d7ff4173468df90be55c3e5f589afe00e6e440acfc4fabe4399749"
+  },
+  "families": [
+    "urban-cawash03",
+    "urban-cawash04",
+    "urban-cawash05",
+    "urban-cawash07",
+    "urban-cawash08",
+    "urban-cawash10",
+    "urban-cawash11",
+    "urban-cawash13"
+  ],
+  "counts": {
+    "completeNewFamilies": 8,
+    "members": 8,
+    "newSourceStates": 32,
+    "densityFrames": 64,
+    "applicableRuntimeStates": 32,
+    "originalShadowFrames": 32,
+    "priorFamiliesPreserved": 214,
+    "selectedFamilies": 222,
+    "selectedFiles": 1735,
+    "patchFiles": 53,
+    "nativeFamilyDensityCases": 16,
+    "originalMapsExecuted": 1,
+    "matchedOriginalSceneControls": 1,
+    "embeddedImages": 83,
+    "runtimeReviewRows": 32
+  },
+  "coveredMapEntries": [
+    "ra2:mp28u4.map@d871241b686b",
+    "ra2:mp29mw.map",
+    "ra2:mp29u2.map",
+    "ra2:mp29u4.map@c3f4f1c670fe",
+    "ra2:mp33u4.map",
+    "ra2:mp34u4.map",
+    "yr:hillbtwn.map",
+    "yr:mp28u4.map@d871241b686b",
+    "yr:mp29mw.map@f54919acf9ee",
+    "yr:mp29u2.map@0bc3e5c05954",
+    "yr:mp29u4.map@c3f4f1c670fe",
+    "yr:mp33u4.map@527f6765e21a",
+    "yr:mp34u4.map@a11379d07d0e",
+    "yr:xarena.map",
+    "yr:xbarrel.map",
+    "yr:xbermuda.map",
+    "yr:xgoldst.map",
+    "yr:xinvasion.map",
+    "yr:xkaliforn.map",
+    "yr:xmp28u4.map@e0b74cfb3cc1",
+    "yr:xmp29mw.map",
+    "yr:xmp29u2.map",
+    "yr:xmp33u4.map",
+    "yr:xmp34u4.map",
+    "yr:xpotomac.map",
+    "yr:xpowdrkeg.map",
+    "yr:xrockets.map"
+  ],
+  "authoring": {
+    "mode": "built-in image_gen",
+    "jobs": {
+      "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-jobs-v5.json",
+      "sha256": "e8c0f6ecac613fcebe04ccbbd4f05da2e6322005b27f1c2373cca49acf5d75c1",
+      "bytes": 47626
+    },
+    "mothers": [
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-938d2c6e-6262-449c-ad0d-52eb9ecc85d1.png",
+          "sha256": "f881473a12d180f2f7f489104010e2fead2353fefdabfd9b17ff97f001bebd26",
+          "bytes": 2417449
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-01-master.png",
+          "sha256": "f881473a12d180f2f7f489104010e2fead2353fefdabfd9b17ff97f001bebd26",
+          "bytes": 2417449
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-01.json",
+          "sha256": "cb9703ca153bc28690c257f436be4f19588385fb87d87e9b70a9615dfd9ab76c",
+          "bytes": 2152
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-01-reference.png",
+          "sha256": "ced4b5d8fb535f6ac5cdadf454e203ab0880bfd9f3502f0fcd188aa0aff8721f",
+          "bytes": 94633
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash03.shp-000, cuwash03.shp-001. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square.",
+        "minimumAuthoredDensity": 5.526011560693641,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash03.shp-000",
+            "sourceRect": [
+              69,
+              27,
+              882,
+              720
+            ],
+            "capacity": 5.547169811320755,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash03.shp-001",
+            "sourceRect": [
+              34,
+              796,
+              956,
+              716
+            ],
+            "capacity": 5.526011560693641,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash03.shp-000",
+          "cuwash03.shp-001"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-150ea595-8a65-4804-9076-4adf785a5052.png",
+          "sha256": "4ed9473ca82e73a9c9412ec346a9beb5e030b4f890a652e8b35da9903cb14079",
+          "bytes": 1739004
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-02-layout-v3-master.png",
+          "sha256": "4ed9473ca82e73a9c9412ec346a9beb5e030b4f890a652e8b35da9903cb14079",
+          "bytes": 1739004
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-02.json",
+          "sha256": "3fcc90ec5c9cdb7b53ae5f9697fb53cab3eaf81d7a01bcc282df8a85c09916b7",
+          "bytes": 3256
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-02-layout-v3-reference.png",
+          "sha256": "1e01773d4c6c7aea9ff84f352cf11f8af95e3b00e01b8413ec86ed7e0b194632",
+          "bytes": 82597
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash03.shp-002, cuwash03.shp-003. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=1211 of 1882 pixels (64.3% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 5.091836734693878,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash03.shp-002",
+            "sourceRect": [
+              14,
+              127,
+              998,
+              736
+            ],
+            "capacity": 5.091836734693878,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash03.shp-003",
+            "sourceRect": [
+              140,
+              1055,
+              750,
+              411
+            ],
+            "capacity": 5.172413793103448,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash03.shp-002",
+          "cuwash03.shp-003"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-78aeedfa-b2a2-4477-a434-4bbc22541eac.png",
+          "sha256": "dce238e9f9155aa23ecf96ce44d1e48471ea43be47c9ad87cde8a387d6ea85ae",
+          "bytes": 2551281
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-03-layout-v3-master.png",
+          "sha256": "dce238e9f9155aa23ecf96ce44d1e48471ea43be47c9ad87cde8a387d6ea85ae",
+          "bytes": 2551281
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-03.json",
+          "sha256": "dfef91fda837c780654d2bff04173086aa0c74150db8d005d4245c75376641f6",
+          "bytes": 3253
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-03-layout-v3-reference.png",
+          "sha256": "fb9f1404cb6a10845f425c17a8e3619e24e1851c61f63cae08c8e9ca56a5c099",
+          "bytes": 115087
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash04.shp-000, cuwash04.shp-001. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=1022 of 1882 pixels (54.3% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 4.2642487046632125,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash04.shp-000",
+            "sourceRect": [
+              72,
+              4,
+              882,
+              823
+            ],
+            "capacity": 4.2642487046632125,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash04.shp-001",
+            "sourceRect": [
+              57,
+              837,
+              911,
+              697
+            ],
+            "capacity": 4.297169811320755,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash04.shp-000",
+          "cuwash04.shp-001"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-1a42c6f2-5817-4749-8853-2252f9d38d29.png",
+          "sha256": "ed6fa25a478784c93560e34a50de4981735993a18c9e8de4f5b7580361a9b926",
+          "bytes": 2530351
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-04-layout-v3-master.png",
+          "sha256": "ed6fa25a478784c93560e34a50de4981735993a18c9e8de4f5b7580361a9b926",
+          "bytes": 2530351
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-04.json",
+          "sha256": "057f63bb543b3dea30ad21276211964779c54617f6f3def0879e55d762948a64",
+          "bytes": 3267
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-04-layout-v3-reference.png",
+          "sha256": "89e603d64700608254504ce17314bc2b5fe583f3cc3131bcab148b942c572962",
+          "bytes": 105460
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash04.shp-002, cuwash04.shp-003. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=1183 of 1882 pixels (62.9% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 4.7155172413793105,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash04.shp-003",
+            "sourceRect": [
+              30,
+              949,
+              967,
+              547
+            ],
+            "capacity": 4.7155172413793105,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash04.shp-003"
+        ],
+        "partialMother": "Rejected old occupied subimage excluded; only unchanged sufficient rubble is used"
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-d185f8e8-1062-4a3f-a541-95b8835c69a9.png",
+          "sha256": "fd223d59a7a5e161620061925dc8429935251596e546a7b9b3dba4b10eba1874",
+          "bytes": 2723819
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-05-layout-v3-master.png",
+          "sha256": "fd223d59a7a5e161620061925dc8429935251596e546a7b9b3dba4b10eba1874",
+          "bytes": 2723819
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-05.json",
+          "sha256": "20402a38ef96d406025743561680d6ac57af961ba81617cb3adaefa266419564",
+          "bytes": 3251
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-05-layout-v3-reference.png",
+          "sha256": "d6bd344b7bd83f1e95e26a58f545da18399f99b739901fd71ee098437e6fd243",
+          "bytes": 94654
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash05.shp-000, cuwash05.shp-001. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=941 of 1882 pixels (50.0% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 4.795454545454546,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash05.shp-000",
+            "sourceRect": [
+              90,
+              4,
+              844,
+              761
+            ],
+            "capacity": 4.795454545454546,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash05.shp-001",
+            "sourceRect": [
+              90,
+              770,
+              845,
+              762
+            ],
+            "capacity": 4.801136363636363,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash05.shp-000",
+          "cuwash05.shp-001"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-7db319fc-829f-46c1-a40d-7ef986513ac4.png",
+          "sha256": "9e0f7885b7b5c28bf915a7938267e81ddb4db2f7a1e0e9a91fbed2677d18f680",
+          "bytes": 2183647
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-06-layout-v3-master.png",
+          "sha256": "9e0f7885b7b5c28bf915a7938267e81ddb4db2f7a1e0e9a91fbed2677d18f680",
+          "bytes": 2183647
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-06.json",
+          "sha256": "6790cd595cb6de8f6d3594d79dc6f23207f08ceee5f7ef10f119f84a8cd66ce3",
+          "bytes": 3254
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-06-layout-v3-reference.png",
+          "sha256": "83519803867c39be0ef7ad6b3414e725f233a8906c6fa37accb40abfdad725e2",
+          "bytes": 88053
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash05.shp-002, cuwash05.shp-003. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=1224 of 1882 pixels (65.0% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 5.556179775280899,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash05.shp-002",
+            "sourceRect": [
+              17,
+              57,
+              989,
+              895
+            ],
+            "capacity": 5.556179775280899,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash05.shp-003",
+            "sourceRect": [
+              41,
+              1028,
+              940,
+              480
+            ],
+            "capacity": 5.562130177514793,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash05.shp-002",
+          "cuwash05.shp-003"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-52290d07-71ae-4bdc-9002-b4d2162f5e00.png",
+          "sha256": "26f132be0925784e0aae20d933d6f18cf88a85e61eea742de05d8a44dc0146a5",
+          "bytes": 2189382
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-07-layout-v3-master.png",
+          "sha256": "26f132be0925784e0aae20d933d6f18cf88a85e61eea742de05d8a44dc0146a5",
+          "bytes": 2189382
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-07.json",
+          "sha256": "5708263ffc22469a119a219167774302081b3233e18801fef8bc06df9d31fb0a",
+          "bytes": 3253
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-07-layout-v3-reference.png",
+          "sha256": "32fd585895d9602d61a25ddc1b7fd616125704f122d916bea7e6dc40e29b7f13",
+          "bytes": 115263
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash07.shp-000, cuwash07.shp-001. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=952 of 1882 pixels (50.6% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 4.227979274611399,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash07.shp-000",
+            "sourceRect": [
+              135,
+              6,
+              751,
+              761
+            ],
+            "capacity": 4.267045454545454,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash07.shp-001",
+            "sourceRect": [
+              103,
+              783,
+              816,
+              743
+            ],
+            "capacity": 4.227979274611399,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash07.shp-000",
+          "cuwash07.shp-001"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-b1bd2635-7556-48a2-b5a3-4bef7e19827d.png",
+          "sha256": "421a1c5cccb63e29cedeb9f3c3e62d870196b5e41d42025d37d3933b1f3fdd72",
+          "bytes": 2931679
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-08-layout-v3-master.png",
+          "sha256": "421a1c5cccb63e29cedeb9f3c3e62d870196b5e41d42025d37d3933b1f3fdd72",
+          "bytes": 2931679
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-08.json",
+          "sha256": "337e9fa31a9f97e83ad2922de63a59e1fbbeee753999f19453a0b8c5d53cd9ce",
+          "bytes": 3239
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-08-layout-v3-reference.png",
+          "sha256": "ad1e2c8056a67bcf9225f68643d487d3246eed11dc882ff45713f2d2533664a5",
+          "bytes": 101684
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash07.shp-002, cuwash07.shp-003. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=1236 of 1882 pixels (65.7% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 5.5,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash07.shp-002",
+            "sourceRect": [
+              24,
+              8,
+              977,
+              996
+            ],
+            "capacity": 5.551136363636363,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash07.shp-003",
+            "sourceRect": [
+              24,
+              1020,
+              977,
+              506
+            ],
+            "capacity": 5.5,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash07.shp-002",
+          "cuwash07.shp-003"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-3b7cf4c9-f611-48dd-bd73-ec47928fd555.png",
+          "sha256": "a9d729c5d878c5adc6e0913a2091ce4ada9630dff5a38cecc385a2237a75dcd1",
+          "bytes": 2088847
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-09-layout-v3-master.png",
+          "sha256": "a9d729c5d878c5adc6e0913a2091ce4ada9630dff5a38cecc385a2237a75dcd1",
+          "bytes": 2088847
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-09.json",
+          "sha256": "e4e8648d0b3087a294157b47aaa41195436046c66a0220f0c1ed026465cdb23d",
+          "bytes": 3254
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-09-layout-v3-reference.png",
+          "sha256": "5d9cfce0eaf12b4ebb3f1203af3cb8f7b147c036e02318284a56c400b1a7ef50",
+          "bytes": 126298
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash08.shp-000, cuwash08.shp-001. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=941 of 1882 pixels (50.0% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 4.088669950738916,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash08.shp-000",
+            "sourceRect": [
+              108,
+              10,
+              808,
+              752
+            ],
+            "capacity": 4.109289617486339,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash08.shp-001",
+            "sourceRect": [
+              100,
+              776,
+              830,
+              753
+            ],
+            "capacity": 4.088669950738916,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash08.shp-000",
+          "cuwash08.shp-001"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-9ac18b26-c541-48e9-abce-f1dc63e8ca22.png",
+          "sha256": "727729b814ebbdd1a6d46f20076c0198fe609dfe826ee250a2453a33c1698cbd",
+          "bytes": 2793046
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-10-layout-v3-master.png",
+          "sha256": "727729b814ebbdd1a6d46f20076c0198fe609dfe826ee250a2453a33c1698cbd",
+          "bytes": 2793046
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-10.json",
+          "sha256": "1b889af68f5ea6e4dd046a96a5367dd4fc08e9823a4da6caff6801b65a171f2c",
+          "bytes": 3254
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-10-layout-v3-reference.png",
+          "sha256": "4e40cf9d726a68ebfddedf619a1610d801ca114fa06abeb4ad054a53fb8ff221",
+          "bytes": 101010
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash08.shp-002, cuwash08.shp-003. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=1223 of 1882 pixels (65.0% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 4.625641025641026,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash08.shp-002",
+            "sourceRect": [
+              22,
+              52,
+              978,
+              901
+            ],
+            "capacity": 4.770731707317073,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash08.shp-003",
+            "sourceRect": [
+              88,
+              1028,
+              902,
+              477
+            ],
+            "capacity": 4.625641025641026,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash08.shp-002",
+          "cuwash08.shp-003"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-a15045d5-7ce9-49da-84e0-92a7e1dbe0e5.png",
+          "sha256": "114a4cdcf92d06c37979d61268a649e0ff7e839aa5f5ec77c9c613925f8352fc",
+          "bytes": 2383896
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-11-layout-v3-master.png",
+          "sha256": "114a4cdcf92d06c37979d61268a649e0ff7e839aa5f5ec77c9c613925f8352fc",
+          "bytes": 2383896
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-11.json",
+          "sha256": "3cc6d244b15d43e15b092ded5076036b472b505d95e74bc5be31f09e8b61ee88",
+          "bytes": 3252
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-11-layout-v3-reference.png",
+          "sha256": "4bbccd3757e37ae0df413eb9fe2fe0987d4da2b46ee70ad299004feda4f7ec86",
+          "bytes": 119284
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash10.shp-000, cuwash10.shp-001. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=941 of 1882 pixels (50.0% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 4.486363636363636,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash10.shp-000",
+            "sourceRect": [
+              18,
+              15,
+              987,
+              743
+            ],
+            "capacity": 4.486363636363636,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash10.shp-001",
+            "sourceRect": [
+              18,
+              783,
+              987,
+              743
+            ],
+            "capacity": 4.486363636363636,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash10.shp-000",
+          "cuwash10.shp-001"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-a93f81a7-cf38-4879-b76a-f7520b3e52bb.png",
+          "sha256": "3b970eec4ca8ec26890caf1b7ae48519721afa3d0a4de2121ebe617644bca697",
+          "bytes": 2610459
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-12-layout-v3-master.png",
+          "sha256": "3b970eec4ca8ec26890caf1b7ae48519721afa3d0a4de2121ebe617644bca697",
+          "bytes": 2610459
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-12.json",
+          "sha256": "a6a1e0e76a32d776cf90c0fe9612fb2107325a64ec2d095a91d951b7d3a75d27",
+          "bytes": 3255
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-12-layout-v3-reference.png",
+          "sha256": "4d8827381fb6640914cfeeb0b008639e9be9645aead860230acf78daca8a09cd",
+          "bytes": 106157
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash10.shp-002, cuwash10.shp-003. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=1084 of 1882 pixels (57.6% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 4.5181818181818185,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash10.shp-002",
+            "sourceRect": [
+              15,
+              65,
+              995,
+              754
+            ],
+            "capacity": 4.5227272727272725,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash10.shp-003",
+            "sourceRect": [
+              15,
+              892,
+              994,
+              584
+            ],
+            "capacity": 4.5181818181818185,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash10.shp-002",
+          "cuwash10.shp-003"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-a9f02a34-773e-4718-a504-835f4ed7af60.png",
+          "sha256": "6108ede7734c2ca0df4e4b7c983481b18b66c1dfe5e544999963714133580d2a",
+          "bytes": 3013907
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-13-layout-v3-master.png",
+          "sha256": "6108ede7734c2ca0df4e4b7c983481b18b66c1dfe5e544999963714133580d2a",
+          "bytes": 3013907
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-13.json",
+          "sha256": "92742d89e2b14a3ed5c8d368ba41f44409d1dfc49ec6839e97fce8d3f2f9fc17",
+          "bytes": 3237
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-13-layout-v3-reference.png",
+          "sha256": "490f1a78706396362bb554d3f0536dbabe52a567690e52e5d9c23f28cc1336c0",
+          "bytes": 133744
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash11.shp-000, cuwash11.shp-001. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=944 of 1882 pixels (50.2% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 4.456852791878172,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash11.shp-000",
+            "sourceRect": [
+              71,
+              6,
+              878,
+              762
+            ],
+            "capacity": 4.456852791878172,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash11.shp-001",
+            "sourceRect": [
+              69,
+              772,
+              891,
+              762
+            ],
+            "capacity": 4.5,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash11.shp-000",
+          "cuwash11.shp-001"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-a4aa163d-6716-470b-905e-d807e033ff19.png",
+          "sha256": "7711be4b7ebdd81283001c89a413e28a97066f5de00c0dc9266ddd2576d22b6e",
+          "bytes": 2367024
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-14-layout-v3-master.png",
+          "sha256": "7711be4b7ebdd81283001c89a413e28a97066f5de00c0dc9266ddd2576d22b6e",
+          "bytes": 2367024
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-14.json",
+          "sha256": "e6921799ddde102119cb138845a8c33564cd58bf2aadd4edecbc431f7aff787b",
+          "bytes": 3253
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-14-layout-v3-reference.png",
+          "sha256": "c8b7fe881cb09363a72901fd2f31172b0b07d30aae3bd08c313e53e46cb1e53c",
+          "bytes": 108410
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash11.shp-002, cuwash11.shp-003. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=1139 of 1882 pixels (60.5% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 4.945544554455446,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash11.shp-002",
+            "sourceRect": [
+              12,
+              45,
+              999,
+              843
+            ],
+            "capacity": 4.945544554455446,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash11.shp-003",
+            "sourceRect": [
+              31,
+              958,
+              964,
+              550
+            ],
+            "capacity": 4.994818652849741,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash11.shp-002",
+          "cuwash11.shp-003"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-7db4ce0f-4a3b-4525-9dc5-07aa4bc25442.png",
+          "sha256": "f1b15fd8af5ada488010a3e838ed2347cf438c7190ba36bc237b722a5f8265c1",
+          "bytes": 2235625
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-15-layout-v3-master.png",
+          "sha256": "f1b15fd8af5ada488010a3e838ed2347cf438c7190ba36bc237b722a5f8265c1",
+          "bytes": 2235625
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-15.json",
+          "sha256": "a10bf110a1a78818dd3286e33c447b352fc1edcb351da01ffff37ff27c530141",
+          "bytes": 3234
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-15-layout-v3-reference.png",
+          "sha256": "7e8bbf6dae353c15b77a28cfef5f4668d6593be753e593d6e1a3397777fb447d",
+          "bytes": 99502
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash13.shp-000, cuwash13.shp-001. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=941 of 1882 pixels (50.0% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 5.171875,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash13.shp-000",
+            "sourceRect": [
+              15,
+              38,
+              993,
+              692
+            ],
+            "capacity": 5.171875,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash13.shp-001",
+            "sourceRect": [
+              15,
+              806,
+              993,
+              692
+            ],
+            "capacity": 5.171875,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash13.shp-000",
+          "cuwash13.shp-001"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-32e46d16-d785-46f4-8a57-5bfe6da1606a.png",
+          "sha256": "9f0cc627bea3e10465ebf92b59ac1917dcccdbcd1732fed7d942da6e78ec74fc",
+          "bytes": 2061813
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-16-layout-v3-master.png",
+          "sha256": "9f0cc627bea3e10465ebf92b59ac1917dcccdbcd1732fed7d942da6e78ec74fc",
+          "bytes": 2061813
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-16.json",
+          "sha256": "d66f18ea055e36eadfb6110268df43311604de41a4d9af4cb95130aa61724307",
+          "bytes": 3254
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-16-layout-v3-reference.png",
+          "sha256": "c9246495a24ec5c1e744c73f9a91321c139c3724c3ec80acb3e9cbe5baca5b81",
+          "bytes": 86244
+        },
+        "prompt": "Use case: precise-object-edit. Asset type: reusable high-resolution Red Alert 2 Urban building sprites. Image 1 is the exact original geometry and native color guide: 1 columns and 2 rows, row-major cells: cuwash13.shp-002, cuwash13.shp-003. Repaint each occupied cell with substantial independently authored fine material detail suitable for genuine 2X and 4X game sprites. Preserve EXACT original isometric perspective, architecture, object identity, silhouette, relative details, lighting from upper left, colors and state-specific damage or sandbag fortifications. Keep roof, walls, signs, glazing, metal and masonry coherent and readable at game scale, with restrained realistic surface detail. Retain each original civilian building or street facility identity exactly as drawn in that cell. Rubble remains the exact original flat debris arrangement, footprint, surviving fragments and actual Urban Iso colors. Do not invent standing replacement buildings, snow, new objects, decorative patterns, ground planes, cast shadows, fire, smoke, labels, borders, grid lines or checkerboards. No ordinary enlargement, sharpening, mosaic or interpolation presented as new detail. Preserve transparent margins and cell positions, fill each original guide subject at the same generous scale. True transparent background. Output 1254 by 1882 pixels with this exact cell layout and aspect ratio. Portrait sheet, two vertically stacked subjects; preserve the full tall canvas rather than squeezing into a square. The two rows have proportional UNEQUAL heights. The dividing line is at y=1081 of 1882 pixels (57.4% from the top). Match the reference subject scale, centering, exact native architecture, damage gaps and transparent gutters in each proportional row. Do not move the divider to the middle or shrink the subjects. Keep the tall portrait canvas.",
+        "minimumAuthoredDensity": 5.182291666666667,
+        "supportingReferences": [],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash13.shp-002",
+            "sourceRect": [
+              15,
+              105,
+              997,
+              695
+            ],
+            "capacity": 5.192708333333333,
+            "opaqueCropBoundaryPixels": 0
+          },
+          {
+            "key": "cuwash13.shp-003",
+            "sourceRect": [
+              16,
+              939,
+              995,
+              534
+            ],
+            "capacity": 5.182291666666667,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash13.shp-002",
+          "cuwash13.shp-003"
+        ],
+        "partialMother": null
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-48746630-3f2e-4b13-9aee-b43608813a56.png",
+          "sha256": "b39785bdf5e5f1109de946be276f459110e48578e656135655472b9624c41e20",
+          "bytes": 1763891
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-cuwash04-occupied-r2-master.png",
+          "sha256": "b39785bdf5e5f1109de946be276f459110e48578e656135655472b9624c41e20",
+          "bytes": 1763891
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-18.json",
+          "sha256": "25b6e895d890ad72b58a6b7975311fef8cb8982c3f21b18534c5033379588a47",
+          "bytes": 2597
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-cuwash04-occupied-r1-reference.png",
+          "sha256": "63bc089fc520b598e8682d3e2aa4131b41168021390abfb6769502a439329f7a",
+          "bytes": 63672
+        },
+        "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET: a single occupied RA2 CAWASH04 sprite whose architecture, occupied fortifications and colors must remain exact. Image 2 is the ORIGINAL NATIVE anatomy reference. Image 3 is MATERIAL FINISH ONLY: smoothly rendered sandstone, masonry, glazing and steel with genuine independently painted fine texture. Repaint Image 1 with that detailed rendered finish. The current target still looks like enlarged blocky pixels: remove visible pixel blocks and stair-stepped material edges, resolve continuous smooth stone faces, delicate non-repeating stone grain, fine joints, window frames and dark glazing, real metal highlights and textured sandbags. This must be newly painted high-resolution detail, never nearest-pixel scaling, sharpening or interpolation. Preserve the EXACT target camera, original silhouette, building proportions, long thin antenna, courtyard roof, occupied red roof trim, boards, red panels, wood, wire loops and sandbag locations. Do not transfer the normal or damaged state, layout or damage from Image 3. One complete SINGLE occupied building centered large on a 1254x1254 transparent canvas, same position and full scale. Genuine transparency, no background, gradient, spotlight, cast shadow, text, decorative patterns, snow or added objects. Retain original source colors and upper-left light.",
+        "minimumAuthoredDensity": 5.406113537117904,
+        "supportingReferences": [
+          {
+            "role": "edit target; geometry and occupied fixtures remain fixed",
+            "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-cuwash04-occupied-r1-master.png",
+            "sha256": "3b195b581b112feff28448623dbe57231c60f5df2fdd15c993b9dcff57116f5b",
+            "bytes": 1344089
+          },
+          {
+            "role": "original native anatomy and colors",
+            "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-cuwash04-occupied-r1-reference.png",
+            "sha256": "63bc089fc520b598e8682d3e2aa4131b41168021390abfb6769502a439329f7a",
+            "bytes": 63672
+          },
+          {
+            "role": "material finish only, no architecture or state transfer",
+            "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-03-layout-v3-master.png",
+            "sha256": "dce238e9f9155aa23ecf96ce44d1e48471ea43be47c9ad87cde8a387d6ea85ae",
+            "bytes": 2551281
+          }
+        ],
+        "selectedSlotRegistrations": [
+          {
+            "key": "cuwash04.shp-002",
+            "sourceRect": [
+              10,
+              47,
+              1238,
+              1138
+            ],
+            "capacity": 5.406113537117904,
+            "opaqueCropBoundaryPixels": 0
+          }
+        ],
+        "opaqueOuterEdgePixels": 0,
+        "selectedSlots": [
+          "cuwash04.shp-002"
+        ],
+        "partialMother": null
+      }
+    ],
+    "retainedUnusedMothers": [
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-b628ce81-5a5d-4524-9b74-abf919efd3e2.png",
+          "sha256": "3b195b581b112feff28448623dbe57231c60f5df2fdd15c993b9dcff57116f5b",
+          "bytes": 1344089
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-cuwash04-occupied-r1-master.png",
+          "sha256": "3b195b581b112feff28448623dbe57231c60f5df2fdd15c993b9dcff57116f5b",
+          "bytes": 1344089
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-17.json",
+          "sha256": "b3eadb289a5ac2712d2c353ede9e17fd66f7d092ef26794dc94356e0fd6f6c0e",
+          "bytes": 2204
+        },
+        "reason": "Capacity passed; internal visual QA rejected the material finish. Replaced by occupied r2. No selected pixels use this mother."
+      }
+    ],
+    "samplingRecipe": {
+      "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-m2-4-batch55-r1/recipe.json",
+      "sha256": "d6d96b658fc25a9d19448c61aef82dbf549e9f1ae392403e3de862fa9bd8ebbc",
+      "bytes": 19188
+    }
+  },
+  "resourceHandoff": {
+    "patchRoot": ".local/environment-packs/urban-buildings-m2-4-batch55-r1",
+    "selectedRoot": ".local/environment-packs/urban-environment-m2-4-buildings-batch55-v1",
+    "ignoredResourcesExplicitlyIncluded": true,
+    "patchFiles": [
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/manifest.json",
+        "sha256": "f160411de8fff1ea6844d40cb53d393617923b1b57a0f0534cd3436433400901",
+        "bytes": 2193
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash03-shp/2/p0/base.png",
+        "sha256": "ae6e63e8de97d6bcd2839a0a5a19871b24fb124dface593bd456455ab096827f",
+        "bytes": 600993
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash03-shp/2/p0/data.png",
+        "sha256": "b77f165ab6675efffd4a833978b838c0d44aa7964f7838a005e9fb47041c323a",
+        "bytes": 9759
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash03-shp/4/p0/base.png",
+        "sha256": "9372cebb78425cf344b4f078436e7a80db3b0ab093dafa18c2a87fa16a87e6b5",
+        "bytes": 2173298
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash03-shp/4/p0/data.png",
+        "sha256": "09e3aad519dfe5e55123d85d89ef3c80d9cb708b6e444e9f1fc5cf8cacbe0f7a",
+        "bytes": 20252
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash03-shp/manifest.json",
+        "sha256": "fcc05563f6049214a4d5bd9ca5b2231c13cf129bc60f46e7f4ae508b6a0fb9fe",
+        "bytes": 3803
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash04-shp/2/p0/base.png",
+        "sha256": "cc239edd6b8751fa80597b04c05424ce9fd25532d066a2db20d14f2583790f8e",
+        "bytes": 818316
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash04-shp/2/p0/data.png",
+        "sha256": "92e14080767ab6aa5b6f51106f600910c0cb5188b09dbcbd4c081e9e7552c29b",
+        "bytes": 13968
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash04-shp/4/p0/base.png",
+        "sha256": "4dcfa6f7f96d24fcd33643afb65980d14b31ef2c23e14c4fffb2b3093b6c68c8",
+        "bytes": 1604154
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash04-shp/4/p0/data.png",
+        "sha256": "c80479631f3c4904cec04d75e939c4f0f6af45e8d0ce5cfd2d5848ab123fa869",
+        "bytes": 8501
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash04-shp/4/p1/base.png",
+        "sha256": "8a61350caa9c82b59afd1879e4cf57f12d475235157ef3c93547e2fa0338347f",
+        "bytes": 1341149
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash04-shp/4/p1/data.png",
+        "sha256": "cf5be6ad06df1468e4eb25f5b3182369545478181894ffec7bea56938ae6c45e",
+        "bytes": 22942
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash04-shp/manifest.json",
+        "sha256": "49b1036db60da7db6f8bfd2d9a016b5731ff3e1c59c2d8dc5cb8237f8911b22a",
+        "bytes": 4070
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash05-shp/2/p0/base.png",
+        "sha256": "784e8fa7868e3a23d0b13586f74fcb0f4ae9242d2d220010fca1680dbe8c4beb",
+        "bytes": 678437
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash05-shp/2/p0/data.png",
+        "sha256": "127a15a6a4973f9aeee46ae3b4098ff243bc49d57eedc969fde3959eeba8559b",
+        "bytes": 7198
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash05-shp/4/p0/base.png",
+        "sha256": "d7e11e5f3d80858405a5bac309857f6886d2d6891a1bc37d266e04781cdd921b",
+        "bytes": 2173540
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash05-shp/4/p0/data.png",
+        "sha256": "264dbdf91411d9e75fa9c80998832703d7994c73a0ff6eece544f660811398cd",
+        "bytes": 16939
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash05-shp/4/p1/base.png",
+        "sha256": "345693a86b1d35ad41d9608d1a2015bfdc0f0c028b2d56bf036b99b3d89f894d",
+        "bytes": 308519
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash05-shp/4/p1/data.png",
+        "sha256": "c2ee915ca68763237d2871cb4ede0f000de7061ee3a1697451c570be3bccbb67",
+        "bytes": 1830
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash05-shp/manifest.json",
+        "sha256": "f9490cc73fb97d5db003aefaad0f94de55563ab9748f6be27214024bc1ce8c06",
+        "bytes": 4082
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash07-shp/2/p0/base.png",
+        "sha256": "7dfdf7192d82f593c69394575b39cebcee44c0396cf78c4d95f3320f9fe1f17a",
+        "bytes": 835611
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash07-shp/2/p0/data.png",
+        "sha256": "1b6eac3f8dc16191726c13906bb93518cda6dbabc604086f9efbbbcbb31730d7",
+        "bytes": 10781
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash07-shp/4/p0/base.png",
+        "sha256": "c8f99f45f767fc5d6bcc09128289c800195865d798167928da299a2df8ec5df2",
+        "bytes": 1748131
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash07-shp/4/p0/data.png",
+        "sha256": "8f984fc463060527e0ec0440be9cf2a6bf868892241ee09857e119539a5f3ded",
+        "bytes": 12955
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash07-shp/4/p1/base.png",
+        "sha256": "32b57b889a53559fb608d815fb1efe57be4ca5886e5357592a1edebd89f95585",
+        "bytes": 1291127
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash07-shp/4/p1/data.png",
+        "sha256": "b7f3cc346e6701829ba51aa250a7ae1bbeb6b9e16cafad1ad5b42b17c616414e",
+        "bytes": 11151
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash07-shp/manifest.json",
+        "sha256": "261005471200aea51e82f77001fb67aac21dc77b957ff8895d4e034c9e947d53",
+        "bytes": 4069
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash08-shp/2/p0/base.png",
+        "sha256": "9eda48ae02eb2dd06c6e319d4a0dfc4f1138d57ede8848ff5be7e1df39b25f85",
+        "bytes": 890092
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash08-shp/2/p0/data.png",
+        "sha256": "41ebf0612423fce16a73c6e322b009eaf95df843142bd3b14e6113f2f6e4d5c7",
+        "bytes": 11024
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash08-shp/4/p0/base.png",
+        "sha256": "4b69ab40d27a835a41b84db1fe094107a8f160e9afa03adf0eb03c4ed63ddd1b",
+        "bytes": 1767868
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash08-shp/4/p0/data.png",
+        "sha256": "b1ce387182ffb0c9f198318799552e129086d9b64cd14f2b2825b3c2b7989b7a",
+        "bytes": 8042
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash08-shp/4/p1/base.png",
+        "sha256": "8da51cad404023817bcca6aba271ff6cbb3791c913757c01cbd9b7fc55a098a6",
+        "bytes": 1443454
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash08-shp/4/p1/data.png",
+        "sha256": "6e55ec0af3655c9cc042569492f4aee202f266c6017b2942f7671e7cca8aba49",
+        "bytes": 16956
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash08-shp/manifest.json",
+        "sha256": "1bb885001edc744f8072c0c6f285e48b9009d645751201827dd9668f39ce2db7",
+        "bytes": 4068
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash10-shp/2/p0/base.png",
+        "sha256": "a5188e7a55bbfe8d736f44185384d2eedd4075cbcac1500ce79bbe78269cc7d9",
+        "bytes": 874779
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash10-shp/2/p0/data.png",
+        "sha256": "cd425f7ad7703210f0e664f8424dd61ed9d9890b562cb7fb1da1c871fa659318",
+        "bytes": 11046
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash10-shp/4/p0/base.png",
+        "sha256": "dcfa1509f006f8af8177c0dbfcbd34cdcf26b8255d098252ce3c09404e59ac9b",
+        "bytes": 2623303
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash10-shp/4/p0/data.png",
+        "sha256": "028fe85d34e55a9c1b2831aa758e125cfe246d1df3d2e2a0a1a7c115ed42fdf0",
+        "bytes": 21554
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash10-shp/4/p1/base.png",
+        "sha256": "ff36639e194e9ee261ce3178e3f5fc805ef53f90c53d3fd1380eb88bccd67a8d",
+        "bytes": 560888
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash10-shp/4/p1/data.png",
+        "sha256": "d227270c8005a8217b45b5cf168612774da32dcab1897e5c0946e74f676bf1ff",
+        "bytes": 2811
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash10-shp/manifest.json",
+        "sha256": "ae965ce3234fc3a663980013b449fd53a1a675b1ddf8d9084935151001000688",
+        "bytes": 4081
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash11-shp/2/p0/base.png",
+        "sha256": "33fa274ce3a45dbc33c57d82de21caceab906dc22fe7ebdca51925a0d696c6f1",
+        "bytes": 929205
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash11-shp/2/p0/data.png",
+        "sha256": "040d31254f36f8baea426e673c5119299e7d2d72064bfa0d6691aeeb9071d6f2",
+        "bytes": 9783
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash11-shp/4/p0/base.png",
+        "sha256": "e0fbc51db6f185b803e8648f6a7ee8e253aa210d3f0a4d7f36659673c32accc3",
+        "bytes": 1873327
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash11-shp/4/p0/data.png",
+        "sha256": "a6a1d6a35858e08da9d58be262994c5742fd76f9c42c0651b208af0f539fd5bf",
+        "bytes": 7397
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash11-shp/4/p1/base.png",
+        "sha256": "f2951e91b1df04714eafc7aee02cbed21697303fcbdda3c1ae0e63e19adfafb3",
+        "bytes": 1447535
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash11-shp/4/p1/data.png",
+        "sha256": "5c19d5d62214956256f724d341f6a28c281f4d5e4b715bde4240a20a72dcf3ac",
+        "bytes": 15314
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash11-shp/manifest.json",
+        "sha256": "d75f78c08a8b9c56632853aa54939dc013fb09f9e003f13c5806d685660c3b2f",
+        "bytes": 4069
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash13-shp/2/p0/base.png",
+        "sha256": "1eed2d5e892ce33c49598e6a96b1d497740a8c15b2eb6e15a1ded5cff3e9ee58",
+        "bytes": 623914
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash13-shp/2/p0/data.png",
+        "sha256": "f008d76814ac520a055de2a871dd5e2f9c5ffbdfe6a09c69418099c0a0a35fa2",
+        "bytes": 6054
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash13-shp/4/p0/base.png",
+        "sha256": "bdc8fa09bc9a8a0929d7182228e71ac3555d97a450d646d807fc51847dfb5b08",
+        "bytes": 2293243
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash13-shp/4/p0/data.png",
+        "sha256": "c9189085ce46eb75e50ebf086079418870a07503105a38a0c58ab100890f3fe3",
+        "bytes": 14727
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch55-r1/members/cuwash13-shp/manifest.json",
+        "sha256": "53e770f4a34efaf6428c0fb03ca7774d392707423175da3a849aed02462e388b",
+        "bytes": 3815
+      }
+    ],
+    "completeSelectedAssembly": {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/assembly-v1.json",
+      "sha256": "ab3dcd0574d01081a0cd2a9da98a40140fa10521923479358d46a6515e95e4a3",
+      "bytes": 194311
+    },
+    "nativeDependencies": [
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "bytes": 768
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "fe8201785648bd4185e9bcb4bba758c0dd50b55bf848faacc3a1f0f584fd102f",
+        "bytes": 20511
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "3ca3a54746fcbea29a850be07ba0c306886815c518aad158ce8250212844ac18",
+        "bytes": 82044
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "7d3f8ec50c2d3bbab5057ba05abd4a6d5a78e52b26623726d431cfa20794d6e8",
+        "bytes": 22317
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "b14f59c3d6591dad8605a4f1ff487c8813560a0f78d13e6f5696446bf0942bd0",
+        "bytes": 89268
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "e9291a829f47c5f41387193de828878e5c4d190954dc6e61be01f0170635aafd",
+        "bytes": 28224
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "e3e9ed0cb0fd7f80d9317ac4c5df5b069b1aa6b8e5954f01503fe21313301a91",
+        "bytes": 112896
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "4ca59a1f7d8b117a08650c001c095ff6844dcf0e5287f7b0f4d7bb1e1db21072",
+        "bytes": 11455
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "221f949b86c3cb21d9729c6d37c11b4b028edad07a54ac041b487ad75626c117",
+        "bytes": 45820
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "0e65c965312c2d3016429cff7a743d675a0e7cf4dc19d0ab256e466681e4dad2",
+        "bytes": 23500
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "4c731a967039ab3056cae610a54ef770b702c7770a0d7d225b8b0300c81e8bf3",
+        "bytes": 94000
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "843a3df6cf5db87fb645141f9886f07ad56e992ed147515224987d65eb9049c1",
+        "bytes": 20383
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "8f783ed7c5e7eb6b7e0ee7156b3fec4b831fa38d6c74d1b2ef0140265aa3a9f0",
+        "bytes": 81532
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "c3fb4189679147f053d7a4b1d81f9ee0dc22ea555d07202e228deae0e8d9ae24",
+        "bytes": 27156
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "f25e0b7cad91bcb8a8bdc6ff4603e99e4806159f3a4a284e7be06545ba7f472e",
+        "bytes": 108624
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "b3b9ac8335ecc900a477508988857c444d52b69bf5c8c28af14004501588357c",
+        "bytes": 9916
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "a4af0d1916d3b072a067f03304c216d327b453e13bd5c4aad505f3d012ff0a88",
+        "bytes": 39664
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash03-shp-3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuwash03.shp",
+        "sha256": "3134ad996be8a3f012cb9e6a73dc396593e04d84cfb0324e6353a02447070754",
+        "bytes": 64064
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "ead750455cc2f1e3e21f7f7215d32d00261cd0c50ac5a27b4465a96d1d4d680a",
+        "bytes": 39758
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "aca81a7d030d0611bf5e85b73d821065003dd0fb38d868012bfb5e5029d85164",
+        "bytes": 159032
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "556c42c892fe2c451b418fab1e0a067ec84be162876fc360455b32b9ee5c4f92",
+        "bytes": 34344
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "33743b28f7475be2840a3d0007eb86db500d2ecd7b841e21401f0a7a6afffe97",
+        "bytes": 137376
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "6e90f1343df07bf75f9006f98d8e3ce0f8ecbd87e2069cf420b8bd1659167245",
+        "bytes": 45342
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "9fd375ffdda2411734427d4e4d0bae4e621818fcd079a759e3cf7aeaeaa24e54",
+        "bytes": 181368
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "e26468e6d5095265bb10c79e6573fff65d98b4bdb6ec858ae323a4de664e369d",
+        "bytes": 23548
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "ce436d65a4c4087802595b79d5a77957df681f4647f405816ef8786a8bf746be",
+        "bytes": 94192
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "b08eb063f5e999b2098fe8262aa7264ca50d2e335d21dd189666db855997ab5e",
+        "bytes": 32026
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "32b042fdeeb959557348f5720a6a8900f363b9099670ff4012a333068c68b853",
+        "bytes": 128104
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "f90ee102e3a3c545f11b11ffd24a84ad29676ec7510c1ad9aa2dd00d2f87bea1",
+        "bytes": 32940
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "4521507a593323678912f1cbb7606c4e12d42978988e34f1025744c3bda7150a",
+        "bytes": 131760
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "e755e74cf42ed348957bd21b525a3e71363b4af52cac29a1a5eaa8b4da8445cb",
+        "bytes": 35445
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "1105988e1055cc9a02ae373f2ec1a92a873b7fbf5763d9cce842ebc6abc3c108",
+        "bytes": 141780
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "3432ad9f8d573a843eb1289fe7531d7c0221c4cb5a5b82f10425bb389d8ad058",
+        "bytes": 23000
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "70c2eefa699c27cca39dad762ec46d6e4281f3f71fadc661972d8bf57c594a67",
+        "bytes": 92000
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash04-shp-0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuwash04.shp",
+        "sha256": "0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721",
+        "bytes": 86992
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "a9a9244c58bd37dadbb0631ad3815f35631a6a0ef1bf7d2e2f887d685cd37a85",
+        "bytes": 27632
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "6e5e3405206b5d3e153fe180e2c98cc3ec045551048767361ebb63530a5880d6",
+        "bytes": 110528
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "c3f7c6e4c6dbf48318edcba4bb979da4af40b8417ac76cc0a7bf87cddf349983",
+        "bytes": 27632
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "0a5e7f50e35a319faf375fbb696843ac1aef2befff5a4b5204d57df6ab6731bc",
+        "bytes": 110528
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "036e343c49b9bd1cda4d8931734603656280f9cbe23bb509498f71595a669671",
+        "bytes": 28124
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "607752a5db395e0d93737b87bcab026d51ca792e2f7a4ceb083ac8cd5dba7335",
+        "bytes": 112496
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "273b241a2ee4d553230e3bffd7d6ae8fc52441e29ae11a6ce0f197f9c09e110e",
+        "bytes": 14196
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "1f18f1403ecb4e54e01e44bb56996de1312ac4b86b370cd58ebf097242391234",
+        "bytes": 56784
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "610af3c1a55c6ed640d3de9520269209f6f31238c88888af95f0275dc1941069",
+        "bytes": 8772
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "8d66c4fb9af0ebd0afadb8c0a364c78230f393e9bb418377f0b9c0c8326bea54",
+        "bytes": 35088
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "27a747efaff6c20eea374fb833bd0121881814bc4f8c14c5a53798c265cb3dc0",
+        "bytes": 21780
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "c1474fdc3248b146a90ae0b1b122b044ad3cf11ace276972434da49215ca8696",
+        "bytes": 87120
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "78b12a754b1f87fdbd0531a46047d372bca5a483db47fdf6e9015fa3180ea9c1",
+        "bytes": 21436
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "be828c5e43320a03754ee0976050c06fdaf52fb6b3f70ca0ebe98e97721bf065",
+        "bytes": 85744
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "8954d1d77d4612627b04771ba2c5a328e4a3bc84cc3f0a7099e9ae532ad3c470",
+        "bytes": 14790
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "cf0474f7cf3f1f2f81111d75253827aa8236b7c238e009f2b36b86676ef1fe64",
+        "bytes": 59160
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash05-shp-66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuwash05.shp",
+        "sha256": "66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82",
+        "bytes": 73928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "e40dbc14d9136d49108cb3c79086529ec690f7dc1731623d95d20031c015c192",
+        "bytes": 31328
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "9f0695fa4dde2cce851ffc2fa83303397f778d315071924a17380a1044676cca",
+        "bytes": 125312
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "b2d329b3bb95c20ac92a9eebaca541ba60cc519ef738ed44e200ab9df48e18c9",
+        "bytes": 33582
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "b740b1d7d5d101324511ada92243ca778cec17c2a41fc971001c166fc05451de",
+        "bytes": 134328
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "f6d0ef84e34220af49d717c2f472cebf505f9bb5e289ffe98012d3092690450b",
+        "bytes": 33108
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "2ac51fb85646f5613db5f4d4be3b80d40e2d60ea13629087e157220b45e14974",
+        "bytes": 132432
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "699c7079528b5295a4003a3418a9131319a6e0938bb5cd37fdba5e7bbadae40c",
+        "bytes": 16192
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "d2330517d3743724d28e32c60e2a05fbc785d415aed579434c23e5baa925a986",
+        "bytes": 64768
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "9d11c83227f3a89eeffb0dccd97d2c84983f8d51c8cf32a83b3430f3b0b4b924",
+        "bytes": 22692
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "d0a78548ddb19bab43c1559b5c03fe2df878ad541e43dac34ad34dd4c925bf48",
+        "bytes": 90768
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "c97f59023b8f02332ba516950dba53f31a6c133222beeafba4dc8c6f37f107df",
+        "bytes": 33024
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "98e7383e1f4e66b37b5d4f900c6e3ac152845d367159460f0bf4cfff2b6c4fe2",
+        "bytes": 132096
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "26a591d6fb0fcec0769201da278c7a409eedf6d98c12e537980373aa86bdc648",
+        "bytes": 22785
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "a1672edce2406d9838d9933408d66f4470c6c3737a4232c6bb3d00fd650f4cd1",
+        "bytes": 91140
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "de4043025b82f0af78c14764aa3aa000b1ad2f03e6daa6d2a14d43d98778d997",
+        "bytes": 13494
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "d9beb9b263760c17db436d256195e052ae68d84421b83d300a9bfc6cf62b020c",
+        "bytes": 53976
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash07-shp-5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuwash07.shp",
+        "sha256": "5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c",
+        "bytes": 94704
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "89bf4ba476a93dd725d627fab3a65824c9c7678a01dbe881dfb8125ec0403018",
+        "bytes": 35868
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "9762b21750c511a97d1a986a0bb29dcb145e5a347cf2544471ed2e9fb4734bc7",
+        "bytes": 143472
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "6d537a67874c5888f83b5eea2c39d5edcf46c7f193bad44f77a7ca83b13930cf",
+        "bytes": 37149
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "43aa7e8271f838e526e0a92e4a4190bc4372e8a96eaef618d6af93d073de9395",
+        "bytes": 148596
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "3b53710e2858eed3c682fb814291d55b7dfd7b3221cb6e2d016f9cd2a23f82f5",
+        "bytes": 37720
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "452383d004186590a94b1171c6e99e7ad86b1d70569b58c8265570740466df28",
+        "bytes": 150880
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "84a68a3cd0b4b598501d24c0e1a09a4957852202b2ce2ba0db50ca28ce17bf3f",
+        "bytes": 19110
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "d6b779116244d70d75b240a94ada57cdd846e9f717c48ba47439904f9d63d273",
+        "bytes": 76440
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "4b09959eb59e9f2542d2352eeead81b48eac82e10158302506197aba6f6e732e",
+        "bytes": 32766
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "aabe322abae95cae9b14347e41abb84ddea95a4f72e7b69b0a6e5d9e6de65d60",
+        "bytes": 131064
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "c9cb9f556c0be6b360e2eadf4b23b4b680e24d5041c81694b2c9498f8a40d569",
+        "bytes": 32637
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "628eebdd9ee0ee654a8430fbde289f8ed1e0aab4848e194243cb426c642778f7",
+        "bytes": 130548
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "ac8cd60eba855769f78836bb3afb402664e1653b8e54401e3045593787bc90e9",
+        "bytes": 34713
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "416a88dee271434d8ab02107cb2863e93d7c15a3223a9f7687431a20efa33e19",
+        "bytes": 138852
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "1e3531cb1c971c0f990e8a73fd402ec172ad37992b8f2ad554f0249d439c69be",
+        "bytes": 17848
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "da20c559bf5e7298a35ee3a1aea00fd8f340ad5b0b15c2c53f0b4313cf521476",
+        "bytes": 71392
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash08-shp-c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuwash08.shp",
+        "sha256": "c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2",
+        "bytes": 101400
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "d78c85f070cce9d93a45beadba939694e947c29cd34f299212d37c664a06b547",
+        "bytes": 35860
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "4ef52d7955546269adfde283c7e8470f05e31bd10f66b182f546ad262299be4e",
+        "bytes": 143440
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "887352dc3b90386c409f37b10822a3cbc0ada8cbf256537128c5fc8cc1822380",
+        "bytes": 35860
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "00a393f15d6bc532f0e459af486c8dea1abac1fd7e9f77859df37abda159c892",
+        "bytes": 143440
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "a963fb95bab46f25c85d572ab24ffc88085d75d50a391841047768cb85d31985",
+        "bytes": 36080
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "06214502cb726bd9deb6d7983c889eb9450673f847cf14edba88714106662e73",
+        "bytes": 144320
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "6855b9a4d823fbb1112d9655b5b17b8437d1583ffb324cb24e6cd2390aebb9e3",
+        "bytes": 26400
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "b41d3e330f19666db7a3473a240a5b583a197dea858305b71ec844d9a58f0f8e",
+        "bytes": 105600
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "c2eb9c635b4c5eb93724dd9ac40a4de87066bf190c6bd994f843b4056aced382",
+        "bytes": 36186
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "ce8f6a3473c909a3ffde0fa212e53dd1e45688c681f2f882451649643e1bafb4",
+        "bytes": 144744
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "ee05d1475b6ba2efde6392310ca854f9331b73a4599718ca8c5a9899f610ec24",
+        "bytes": 36186
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "0cb5340e96f4aa707db447b0cfda20cde22de0a03f04ce611456a68c7383aa45",
+        "bytes": 144744
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "2962c90721a703c1e67890eabfd6043686389b221f1890d188874f944a424bac",
+        "bytes": 26076
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "7c26b94d2d5261e1e43145b0764aba57d9642be5d7e3fef3d7baefe17a1a7adb",
+        "bytes": 104304
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "67e02315d8018368e029c147bed0b48ace86007bad9b7c0f5efff6da4d1dc023",
+        "bytes": 11988
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "ddd2dd6a418f11349b4c3be278e41459953eec4506716e36da0a6c430e5228cf",
+        "bytes": 47952
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash10-shp-5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuwash10.shp",
+        "sha256": "5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9",
+        "bytes": 93840
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "8742ed3f700826a13435618af499925679efbd67bd7228cde6024190cecc19fb",
+        "bytes": 33293
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "afc7c4d0778e88d34d5c00831f1e211d667c958b1fd2d1b8708adb76680fb549",
+        "bytes": 133172
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "947159dd3e5874e55c532949ae656e51dbaef5a9809a7e958cf9f3c6205461db",
+        "bytes": 33264
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "6079c6ce42c54df4066d6f995c8bda660914b80270ce460a2f609a3a38392a53",
+        "bytes": 133056
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "ebf6c4a32be8e18f6ca7b7de5ecedb533daa5caeb134e741c745d3360a1cefa5",
+        "bytes": 34916
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "341b7dfbe49c3204281368f3fbb3b093f2b4b162277ac026f992c1414503d653",
+        "bytes": 139664
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "3aa49ae817949251723aa40d97121c06637d67fc2c108ba683a680a269d5b70e",
+        "bytes": 21230
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "e00cf4e946b3597831540114741fa2e932f20188bbf5dc285bd66fe9b38c9370",
+        "bytes": 84920
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "df7fdb862355037b0802dddc495ac7d8aaae350dd97348e77980bc9f23d4bc27",
+        "bytes": 20292
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "af6fa440f9feb85a28a52753e87d2c30a304e46549b5f096f7a6b593b9c57aa3",
+        "bytes": 81168
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "225a7e510f23d646102d6a85b07d39279868ecea937c2a490048cb5c7e4e2b8d",
+        "bytes": 29726
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "1ad8797109423ab702ac831146d891c7d3d0309f0681ab68b6f71af8c628a3cf",
+        "bytes": 118904
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "77d51bdbd81a671d92ff4fc17953d1dd05a349f58ff8e35a6207168517f8fd21",
+        "bytes": 42237
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "397be344eb397ada82fbaadfffabe133120c2564fa2f652f8eb935dbd8bfa643",
+        "bytes": 168948
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "aa99864558ad9d9489fb89c57d913493d191f043c9738d8efa1f314b9abee18c",
+        "bytes": 20806
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "37b6f8c1a6bb4554ef30fc97f6346aab2d45cd14d87d3d97f30d46c75886d940",
+        "bytes": 83224
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash11-shp-837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuwash11.shp",
+        "sha256": "837f75e79838d03e300d588cc6729ff55438cea7fd8c59250b23eb71afca0624",
+        "bytes": 97688
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "f5d57a613a900c79fa3097c94f14ae6a4798770e5bc2391366958ed73df192f6",
+        "bytes": 25536
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "6f8c79d7a9299cf00fa548d53ed4f60da3f92eb0d1eb285106ea83742565dfbd",
+        "bytes": 102144
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "e90ae071ffa71181f2509358280aab0c046db6f393a90f1a84a6340b1cb02cf4",
+        "bytes": 25536
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "80ea0d4a2c42b8f9270b64e0741a9577a7f015c05c6f39029d40eda8f14d3e68",
+        "bytes": 102144
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "ba812c80a75e1ac53af4075fac2d085677764b3c50a16703d0c8545c85b31fbd",
+        "bytes": 25536
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "d5ec1bd038b4e5023732e91f2d3518e56b3cdf82e0f9a04ad10389310ff49341",
+        "bytes": 102144
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "4cd1551b05a2895dbab9ef87bdd0facaf049c0fd7291dd1eed7215440e8a0af1",
+        "bytes": 18816
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "8f605b6035790cad46562c27029b6d1a5ee72effc7ed629f8db7dd1057d6cc5f",
+        "bytes": 75264
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "7b42347ddba1783f2887ea3546c4f3ff4cd3b5bfd8ff6b1577ea08b0362d40b0",
+        "bytes": 17200
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "5ec5583e568249e36a5b1d420a4edf614c54a039b6ce3c2bf94bf92d34bdb1e3",
+        "bytes": 68800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "7998b53a4a6604f519c2c8166cfb14471922e638281738e55ae2d8b6ad134da1",
+        "bytes": 17200
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "4b79f17d3a33439c23fe795e99c50487de5c5b2e5937532eb2363fdc5bdf1b78",
+        "bytes": 68800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "1dc7c73aac634496221015dfc38f5b7c3b09a2feee15a3da39300c576614e938",
+        "bytes": 15308
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "56d4fabe5435f068b1fc5ac6fd71d349e9a15ea060e64254b7a74b43864e368a",
+        "bytes": 61232
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "d6b0667180a4e5dbbdebf9b24346078a35fedb65c0ad2c550e9016d24dc82ab5",
+        "bytes": 12166
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "44e79e95299ba9cc5a82abab69849dd7fd284e251beeb358a854fb2ddffaa1b9",
+        "bytes": 48664
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/cuwash13-shp-914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuwash13.shp",
+        "sha256": "914e936de7cbae88c3a389e381ed52936aaa0decbccb92a55f842498dae9942f",
+        "bytes": 61024
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native/ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3.pal",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "bytes": 768
+      }
+    ],
+    "authoringDependencies": [
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-2x-v1/cuwash03.shp-2x.png",
+        "sha256": "a5746f4325661774b86decc99bdf72e5cafd35d5cbf1e980de93b755388aec7f",
+        "bytes": 700684
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-2x-v1/cuwash04.shp-2x.png",
+        "sha256": "9bfb9ac5b3ecc4136aa56d55a9ac502a8073b04e05703422fafa9bf1b0f20396",
+        "bytes": 934522
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-2x-v1/cuwash05.shp-2x.png",
+        "sha256": "ea58390b0f37e2f1d2acfcd0ae8fd6ee8d2f568e308fc182f8e5f59b71055452",
+        "bytes": 784221
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-2x-v1/cuwash07.shp-2x.png",
+        "sha256": "047bd8d41f3c566a23b582ddbaa0058096b96c72c0062d489e8dcff2a17bd714",
+        "bytes": 927256
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-2x-v1/cuwash08.shp-2x.png",
+        "sha256": "52b971bd9061dc770bee22ec4f5a4774e0f42da30dbb72ebe3075062c0734fb2",
+        "bytes": 1028873
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-2x-v1/cuwash10.shp-2x.png",
+        "sha256": "a3e7ef43cbef67cc0e23ba74eec6ec7785fc9a52ef6decba655b99e506630b18",
+        "bytes": 994187
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-2x-v1/cuwash11.shp-2x.png",
+        "sha256": "4df3fc35803489ca39a610bdf21f05ca3af93111e05493fa17f939c2702a0191",
+        "bytes": 1067882
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-2x-v1/cuwash13.shp-2x.png",
+        "sha256": "d71a01defd530087dc9805135314c1cd1391f27076f1775862711202953638f7",
+        "bytes": 717702
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-2x-v1/index.json",
+        "sha256": "b72eb0480a705ee83be9f47d3e9978ce65c3cf6f5662d06e358f21c7e0169175",
+        "bytes": 3003
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-4x-v1/cuwash03.shp-4x.png",
+        "sha256": "a90a0384cb363d3e1c4ff616ab972a984edd752637872cf16522d3635ca0e194",
+        "bytes": 2162596
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-4x-v1/cuwash04.shp-4x.png",
+        "sha256": "d2e4149cdbbc481362b213cb548e2b2adc8ec981ed667b6e2edff54bc69625f0",
+        "bytes": 2887496
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-4x-v1/cuwash05.shp-4x.png",
+        "sha256": "192508e09a947805e2306a61b20bc244ae9034ebdd304f134fb637dfa1bfd0e7",
+        "bytes": 2509678
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-4x-v1/cuwash07.shp-4x.png",
+        "sha256": "b984d697ac8eb62997cc0ed0b022b084e893935f16f7708e4584049de252db28",
+        "bytes": 2927861
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-4x-v1/cuwash08.shp-4x.png",
+        "sha256": "08e9f65809c45702ccf38ad4bfb669a89217f777088e782aab4dba9bb905bfb6",
+        "bytes": 3182597
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-4x-v1/cuwash10.shp-4x.png",
+        "sha256": "d28d7b30b2adb4595625499696ef9cd9a91e691aac1a97e8af19100435e37924",
+        "bytes": 3119408
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-4x-v1/cuwash11.shp-4x.png",
+        "sha256": "4ce91d00766fc6c21f312186428b7d9101636ad22586116de0964403157cbae6",
+        "bytes": 3288677
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-4x-v1/cuwash13.shp-4x.png",
+        "sha256": "adbb9d5bfa0a4625a0015e14154c26aae63208c8cd9b36eb4af711a5b06f98eb",
+        "bytes": 2259832
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/comparison-4x-v1/index.json",
+        "sha256": "7a832eabe401d99863f4170ba3d26ecd1fc0cd3d77acc5e1c8d151315c8bcb23",
+        "bytes": 3003
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash03.shp-000-native.png",
+        "sha256": "82cd5ee870b1b2715995fadff8ee8e45096bc679776358553f68cbf46a668575",
+        "bytes": 17862
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash03.shp-001-native.png",
+        "sha256": "5fe937ef17930a3becc57e4bc8e56af075b24b21c3c80e614744481a68aa813b",
+        "bytes": 22617
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash03.shp-002-native.png",
+        "sha256": "b41207183dcf47140148fe7e2800cd8bc2bff9108a57304c65d88e27d26abf52",
+        "bytes": 24685
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash03.shp-003-native.png",
+        "sha256": "ebd03781ad53754f6e09ccc5cae961c97127ac1fe364a4f359e700c2526d65ad",
+        "bytes": 14999
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash04.shp-000-native.png",
+        "sha256": "4a2cdc7931b20c1ac0b3728682b4a4a018ae3019b1d23f23220cb117ebb70252",
+        "bytes": 27363
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash04.shp-001-native.png",
+        "sha256": "c5c63072172bde803a90f5e7c77605563a7de3ef1d6f2e1a1d53e7619a17fee6",
+        "bytes": 32780
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash04.shp-002-native.png",
+        "sha256": "4ee9aed27def6200da80d91b8baa60c10c0ce774b0ff0930a85348576fa2e99c",
+        "bytes": 33066
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash04.shp-003-native.png",
+        "sha256": "a7eafb103be334df7b7b1f32648528e7fd30bf66a47d982692b5a923bc61683b",
+        "bytes": 21938
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash05.shp-000-native.png",
+        "sha256": "d62684ea540eb04ba0499af5120097adc1f43cbbfc6bce5fa93a2b8a134e3196",
+        "bytes": 20075
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash05.shp-001-native.png",
+        "sha256": "e8345da1e3e955bfb579c116fd0b1b29ca427cd948b468ecce2dd138b941d4b0",
+        "bytes": 24433
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash05.shp-002-native.png",
+        "sha256": "d859899bc8aa33bf8e0a0d107a504536ae839ce8ac17e5ab6d3d9c46febd01d3",
+        "bytes": 21359
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash05.shp-003-native.png",
+        "sha256": "8f1ea718b26ce64603a9d09e6b2af6febdfb953d7f847a06158353af5c481007",
+        "bytes": 13673
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash07.shp-000-native.png",
+        "sha256": "714a00215aa6c2029d752a0a59d163e75748574f73b91cd3c4f029a4513ece96",
+        "bytes": 24052
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash07.shp-001-native.png",
+        "sha256": "71acaba84d9eb6d8760cc3d1ebbdffc57873bd41f7f81d19d3641752bf49776c",
+        "bytes": 33289
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash07.shp-002-native.png",
+        "sha256": "9064d8159d8f602a673f3cca5d05153057d81861a636cb10e7de85812823c638",
+        "bytes": 29616
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash07.shp-003-native.png",
+        "sha256": "d22556346d661dd7ea5dda7f87b1a2ad56f1da2e33f29b58aa39ebd02bddf3e4",
+        "bytes": 16665
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash08.shp-000-native.png",
+        "sha256": "a44ddd2abcf7ef4591225da2cfa3c0be6af98f3200bc6f86c2af8c25117df913",
+        "bytes": 29567
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash08.shp-001-native.png",
+        "sha256": "e7bd0cba315a9c0770b9e843c418314dd30931ec2aa64c0c023f78ee2f0ad834",
+        "bytes": 38792
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash08.shp-002-native.png",
+        "sha256": "33ba13704ff0585bfb16d1a1ad4f4e132e9b0ea0b9ff8bcb2f163ab99a3ee3c5",
+        "bytes": 34206
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash08.shp-003-native.png",
+        "sha256": "d3e633dceef3a2751f99f09baf9bba92a2ccb9d54b905adeeb0cfd318a5f491d",
+        "bytes": 19440
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash10.shp-000-native.png",
+        "sha256": "6f566f4368b6a1ce10fb87ac6a7df60e448788bd52dc18ef16cd549dc3a3d707",
+        "bytes": 27313
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash10.shp-001-native.png",
+        "sha256": "1992e20e14f8cba4c5decffdd5737f84ed8303b35033adbc7a15d1dc4d6656a6",
+        "bytes": 35054
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash10.shp-002-native.png",
+        "sha256": "d0aadd17a96589945e20732501cf587273fce2cc952ae212af8a5a62670b7e04",
+        "bytes": 31312
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash10.shp-003-native.png",
+        "sha256": "cd432a70323104fe0e1375b50db805ae8adff0fdc99d1f442b76e5684cc465c3",
+        "bytes": 23218
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash11.shp-000-native.png",
+        "sha256": "8ead1292fdcfb88c0dc93597377f40ccac1cf3b60bad7fe481eb6104a4d70f49",
+        "bytes": 31792
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash11.shp-001-native.png",
+        "sha256": "c7545da56af4123559a8aab46212677301e800859a79833d287e2bcc934093ca",
+        "bytes": 35936
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash11.shp-002-native.png",
+        "sha256": "e464f6765150488b31b7a37780134c63623a4b3868193c96e219bc5087f88391",
+        "bytes": 39207
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash11.shp-003-native.png",
+        "sha256": "98aaa70174a34cc97ec7d6d6f893a4245051e438f9f59852bbb1e43720d78e04",
+        "bytes": 19082
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash13.shp-000-native.png",
+        "sha256": "41ce70d15447edc57b9a5411edaa95857d1fdc6a0bd32e047450d87225e93673",
+        "bytes": 20101
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash13.shp-001-native.png",
+        "sha256": "7684ce594025d5b22a813baf0733666c3168f16c2c920c9e35b5e600b13e2431",
+        "bytes": 25433
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash13.shp-002-native.png",
+        "sha256": "fdc9a1806c4a3b5f0b298762d07aa7768e1662a2ae92b6c20414e9d3b948f23a",
+        "bytes": 20796
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/cuwash13.shp-003-native.png",
+        "sha256": "2ff57bee26bf88ac79b7924bcf9da884d5cf94564f6ece9756c893218c19258b",
+        "bytes": 18311
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-jobs-v1.json",
+        "sha256": "1f21709761cde670991f5ac1267c2aef5d9d4b05df0d4d0c02f0a99bb7b4e5d9",
+        "bytes": 35966
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-jobs-v3.json",
+        "sha256": "aa953fac5d90f367fe0db6ab6cf7929ad793610ebd4c93a277fbe84bfb9b8f05",
+        "bytes": 42166
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-jobs-v4.json",
+        "sha256": "b150debbe0b94fce4be890ac3c22b56b1ff71b3013c1fda8e150e48819598596",
+        "bytes": 44189
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-jobs-v5.json",
+        "sha256": "e8c0f6ecac613fcebe04ccbbd4f05da2e6322005b27f1c2373cca49acf5d75c1",
+        "bytes": 47626
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-01.json",
+        "sha256": "cb9703ca153bc28690c257f436be4f19588385fb87d87e9b70a9615dfd9ab76c",
+        "bytes": 2152
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-02.json",
+        "sha256": "3fcc90ec5c9cdb7b53ae5f9697fb53cab3eaf81d7a01bcc282df8a85c09916b7",
+        "bytes": 3256
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-03.json",
+        "sha256": "dfef91fda837c780654d2bff04173086aa0c74150db8d005d4245c75376641f6",
+        "bytes": 3253
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-04.json",
+        "sha256": "057f63bb543b3dea30ad21276211964779c54617f6f3def0879e55d762948a64",
+        "bytes": 3267
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-05.json",
+        "sha256": "20402a38ef96d406025743561680d6ac57af961ba81617cb3adaefa266419564",
+        "bytes": 3251
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-06.json",
+        "sha256": "6790cd595cb6de8f6d3594d79dc6f23207f08ceee5f7ef10f119f84a8cd66ce3",
+        "bytes": 3254
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-07.json",
+        "sha256": "5708263ffc22469a119a219167774302081b3233e18801fef8bc06df9d31fb0a",
+        "bytes": 3253
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-08.json",
+        "sha256": "337e9fa31a9f97e83ad2922de63a59e1fbbeee753999f19453a0b8c5d53cd9ce",
+        "bytes": 3239
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-09.json",
+        "sha256": "e4e8648d0b3087a294157b47aaa41195436046c66a0220f0c1ed026465cdb23d",
+        "bytes": 3254
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-10.json",
+        "sha256": "1b889af68f5ea6e4dd046a96a5367dd4fc08e9823a4da6caff6801b65a171f2c",
+        "bytes": 3254
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-11.json",
+        "sha256": "3cc6d244b15d43e15b092ded5076036b472b505d95e74bc5be31f09e8b61ee88",
+        "bytes": 3252
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-12.json",
+        "sha256": "a6a1e0e76a32d776cf90c0fe9612fb2107325a64ec2d095a91d951b7d3a75d27",
+        "bytes": 3255
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-13.json",
+        "sha256": "92742d89e2b14a3ed5c8d368ba41f44409d1dfc49ec6839e97fce8d3f2f9fc17",
+        "bytes": 3237
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-14.json",
+        "sha256": "e6921799ddde102119cb138845a8c33564cd58bf2aadd4edecbc431f7aff787b",
+        "bytes": 3253
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-15.json",
+        "sha256": "a10bf110a1a78818dd3286e33c447b352fc1edcb351da01ffff37ff27c530141",
+        "bytes": 3234
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-16.json",
+        "sha256": "d66f18ea055e36eadfb6110268df43311604de41a4d9af4cb95130aa61724307",
+        "bytes": 3254
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-17.json",
+        "sha256": "b3eadb289a5ac2712d2c353ede9e17fd66f7d092ef26794dc94356e0fd6f6c0e",
+        "bytes": 2204
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/imagegen-receipt-18.json",
+        "sha256": "25b6e895d890ad72b58a6b7975311fef8cb8982c3f21b18534c5033379588a47",
+        "bytes": 2597
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/layout-diagnostic-v1.json",
+        "sha256": "4a0e92a10ae611fd41658cbafd011ab6a463bd7af3be784363fcee9bd4357ed8",
+        "bytes": 405
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/material-profile-v1.json",
+        "sha256": "fdae1c0f3ce2aa1a31939e463d21c12159e7659063ac39dd5fb68ceaf6dd5fea",
+        "bytes": 3507
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/production-checkpoint-v1.json",
+        "sha256": "f14a9f8a57f1f0f2cefb8d78177e3c753df8942a3fa971b3505c141a5b427db8",
+        "bytes": 766
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/slot-overrides-before-occupied-r1.json",
+        "sha256": "7f9aaf64ddc08a64051510602dac05936348bea4baedc3f2150d6113244347cf",
+        "bytes": 9021
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/slot-overrides-before-occupied-r2.json",
+        "sha256": "0dd5a2345969e24ae692c6ea63a0181f4bd574831037ea9e82ada5b8a91ee02b",
+        "bytes": 9011
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/slot-overrides.json",
+        "sha256": "f99641242d85c9a84b3b205b889891a0e2c07bd6c31ed6b43dcab19af2f1886d",
+        "bytes": 9011
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-01-master.png",
+        "sha256": "f881473a12d180f2f7f489104010e2fead2353fefdabfd9b17ff97f001bebd26",
+        "bytes": 2417449
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-01-reference.png",
+        "sha256": "ced4b5d8fb535f6ac5cdadf454e203ab0880bfd9f3502f0fcd188aa0aff8721f",
+        "bytes": 94633
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-02-layout-v2-reference.png",
+        "sha256": "cae691f70df8119c37c80486f3bfc7eedc2d53bcba1a117d87cb1efa0f1f39ab",
+        "bytes": 82600
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-02-layout-v3-master.png",
+        "sha256": "4ed9473ca82e73a9c9412ec346a9beb5e030b4f890a652e8b35da9903cb14079",
+        "bytes": 1739004
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-02-layout-v3-reference.png",
+        "sha256": "1e01773d4c6c7aea9ff84f352cf11f8af95e3b00e01b8413ec86ed7e0b194632",
+        "bytes": 82597
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-02-reference.png",
+        "sha256": "78f5a2b8c2a08e090dd3f6cc4ca46bd8f02d15184ac5657794f44cce5bb710f3",
+        "bytes": 82343
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-03-layout-v3-master.png",
+        "sha256": "dce238e9f9155aa23ecf96ce44d1e48471ea43be47c9ad87cde8a387d6ea85ae",
+        "bytes": 2551281
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-03-layout-v3-reference.png",
+        "sha256": "fb9f1404cb6a10845f425c17a8e3619e24e1851c61f63cae08c8e9ca56a5c099",
+        "bytes": 115087
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-03-reference.png",
+        "sha256": "1cc8a8ff48000abb39c496fd77369950090951bc891efee84990b9fe2cd07f8e",
+        "bytes": 115959
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-04-layout-v3-master.png",
+        "sha256": "ed6fa25a478784c93560e34a50de4981735993a18c9e8de4f5b7580361a9b926",
+        "bytes": 2530351
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-04-layout-v3-reference.png",
+        "sha256": "89e603d64700608254504ce17314bc2b5fe583f3cc3131bcab148b942c572962",
+        "bytes": 105460
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-04-reference.png",
+        "sha256": "b629d0e4671fcdba6e886424ec8e38a5b87c62eb86f4db241e0b7309e20ac776",
+        "bytes": 104584
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-05-layout-v3-master.png",
+        "sha256": "fd223d59a7a5e161620061925dc8429935251596e546a7b9b3dba4b10eba1874",
+        "bytes": 2723819
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-05-layout-v3-reference.png",
+        "sha256": "d6bd344b7bd83f1e95e26a58f545da18399f99b739901fd71ee098437e6fd243",
+        "bytes": 94654
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-05-reference.png",
+        "sha256": "3a53efabd633924ab37aa66fb03967907442bc5a8788ec19eff62265b000be4d",
+        "bytes": 97734
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-06-layout-v3-master.png",
+        "sha256": "9e0f7885b7b5c28bf915a7938267e81ddb4db2f7a1e0e9a91fbed2677d18f680",
+        "bytes": 2183647
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-06-layout-v3-reference.png",
+        "sha256": "83519803867c39be0ef7ad6b3414e725f233a8906c6fa37accb40abfdad725e2",
+        "bytes": 88053
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-06-reference.png",
+        "sha256": "7d67918d29f75e3d5f55171d788afc6d45c407a0bcd661d06f002427d68859ff",
+        "bytes": 78096
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-07-layout-v3-master.png",
+        "sha256": "26f132be0925784e0aae20d933d6f18cf88a85e61eea742de05d8a44dc0146a5",
+        "bytes": 2189382
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-07-layout-v3-reference.png",
+        "sha256": "32fd585895d9602d61a25ddc1b7fd616125704f122d916bea7e6dc40e29b7f13",
+        "bytes": 115263
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-07-reference.png",
+        "sha256": "c0644645813d52d192a35c70dc681015fec62d31544dde72541cf02dc212dd35",
+        "bytes": 110136
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-08-layout-v3-master.png",
+        "sha256": "421a1c5cccb63e29cedeb9f3c3e62d870196b5e41d42025d37d3933b1f3fdd72",
+        "bytes": 2931679
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-08-layout-v3-reference.png",
+        "sha256": "ad1e2c8056a67bcf9225f68643d487d3246eed11dc882ff45713f2d2533664a5",
+        "bytes": 101684
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-08-reference.png",
+        "sha256": "a57723fb3bc1bf327484a44ecf2b2f4ec7d2f84aafe74396778316f498d1635d",
+        "bytes": 94394
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-09-layout-v3-master.png",
+        "sha256": "a9d729c5d878c5adc6e0913a2091ce4ada9630dff5a38cecc385a2237a75dcd1",
+        "bytes": 2088847
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-09-layout-v3-reference.png",
+        "sha256": "5d9cfce0eaf12b4ebb3f1203af3cb8f7b147c036e02318284a56c400b1a7ef50",
+        "bytes": 126298
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-09-reference.png",
+        "sha256": "d6b8273dd3fce0948f6b8a26c665dfbb124f2e11e9f8554d1f8feef74f10e2ae",
+        "bytes": 130236
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-10-layout-v3-master.png",
+        "sha256": "727729b814ebbdd1a6d46f20076c0198fe609dfe826ee250a2453a33c1698cbd",
+        "bytes": 2793046
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-10-layout-v3-reference.png",
+        "sha256": "4e40cf9d726a68ebfddedf619a1610d801ca114fa06abeb4ad054a53fb8ff221",
+        "bytes": 101010
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-10-reference.png",
+        "sha256": "bceda92c1c30f29366a330f345444e0209bac7f482c36063697f6b12051b4f36",
+        "bytes": 104947
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-11-layout-v3-master.png",
+        "sha256": "114a4cdcf92d06c37979d61268a649e0ff7e839aa5f5ec77c9c613925f8352fc",
+        "bytes": 2383896
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-11-layout-v3-reference.png",
+        "sha256": "4bbccd3757e37ae0df413eb9fe2fe0987d4da2b46ee70ad299004feda4f7ec86",
+        "bytes": 119284
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-11-reference.png",
+        "sha256": "452a26a231b5246e33ed493de741825f050531ca5d0eb71597413d103bd09301",
+        "bytes": 119580
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-12-layout-v3-master.png",
+        "sha256": "3b970eec4ca8ec26890caf1b7ae48519721afa3d0a4de2121ebe617644bca697",
+        "bytes": 2610459
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-12-layout-v3-reference.png",
+        "sha256": "4d8827381fb6640914cfeeb0b008639e9be9645aead860230acf78daca8a09cd",
+        "bytes": 106157
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-12-reference.png",
+        "sha256": "2952a2c156c25b1497719c1289dcbe1c13e97f57c8e3292e02b3cc356e4ed00c",
+        "bytes": 106189
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-13-layout-v3-master.png",
+        "sha256": "6108ede7734c2ca0df4e4b7c983481b18b66c1dfe5e544999963714133580d2a",
+        "bytes": 3013907
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-13-layout-v3-reference.png",
+        "sha256": "490f1a78706396362bb554d3f0536dbabe52a567690e52e5d9c23f28cc1336c0",
+        "bytes": 133744
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-13-reference.png",
+        "sha256": "124d9effccb0dbadaac672b0963874b78fa104cb1cb67d400ea8e9ab0b2b9238",
+        "bytes": 133038
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-14-layout-v3-master.png",
+        "sha256": "7711be4b7ebdd81283001c89a413e28a97066f5de00c0dc9266ddd2576d22b6e",
+        "bytes": 2367024
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-14-layout-v3-reference.png",
+        "sha256": "c8b7fe881cb09363a72901fd2f31172b0b07d30aae3bd08c313e53e46cb1e53c",
+        "bytes": 108410
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-14-reference.png",
+        "sha256": "1cf0ea29a14db6cb49ae787761a7544f9d3416206ce6206806245ce7ca1a54b4",
+        "bytes": 111133
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-15-layout-v3-master.png",
+        "sha256": "f1b15fd8af5ada488010a3e838ed2347cf438c7190ba36bc237b722a5f8265c1",
+        "bytes": 2235625
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-15-layout-v3-reference.png",
+        "sha256": "7e8bbf6dae353c15b77a28cfef5f4668d6593be753e593d6e1a3397777fb447d",
+        "bytes": 99502
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-15-reference.png",
+        "sha256": "afcb22273559eea7b12ec495528239756ec4d668c53f81e2cdf89ffc936c0c2d",
+        "bytes": 96156
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-16-layout-v3-master.png",
+        "sha256": "9f0cc627bea3e10465ebf92b59ac1917dcccdbcd1732fed7d942da6e78ec74fc",
+        "bytes": 2061813
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-16-layout-v3-reference.png",
+        "sha256": "c9246495a24ec5c1e744c73f9a91321c139c3724c3ec80acb3e9cbe5baca5b81",
+        "bytes": 86244
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-1254-1x2-16-reference.png",
+        "sha256": "a634c99f81b1e3d00cbec0a0b6bf291f7a60f8e0e0cdcea110cdb4d7c95b9d1a",
+        "bytes": 83212
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-buildings-m2-4-batch55-r1/recipe.json",
+        "sha256": "d6d96b658fc25a9d19448c61aef82dbf549e9f1ae392403e3de862fa9bd8ebbc",
+        "bytes": 19188
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-cuwash04-occupied-r1-master.png",
+        "sha256": "3b195b581b112feff28448623dbe57231c60f5df2fdd15c993b9dcff57116f5b",
+        "bytes": 1344089
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-cuwash04-occupied-r1-reference.png",
+        "sha256": "63bc089fc520b598e8682d3e2aa4131b41168021390abfb6769502a439329f7a",
+        "bytes": 63672
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/urban-cuwash04-occupied-r2-master.png",
+        "sha256": "b39785bdf5e5f1109de946be276f459110e48578e656135655472b9624c41e20",
+        "bytes": 1763891
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/verification-v1.json",
+        "sha256": "8566b4440b4e70506c735fb5bc7667d5fb26c0b60753c0a22358443cbe19cca0",
+        "bytes": 1056
+      },
+      {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/worklist.json",
+        "sha256": "afb041d55ea8aa1c4d2948f44ec7f4a1b796f6ea46648cece0f2d6ee6160a958",
+        "bytes": 55655
+      }
+    ],
+    "priorAcceptedHandoff": {
+      "file": "docs/m2-4-urban-buildings-batch54-20261016.json",
+      "sha256": "a903e32a67b73cbe94111f6d85bb8cef70a9968ef93a765bedbabc0259b59c9b",
+      "bytes": 95273
+    }
+  },
+  "verification": {
+    "file": ".artifacts/m2-4/urban-buildings-authoring-batch55-v1/verification-v1.json",
+    "sha256": "8566b4440b4e70506c735fb5bc7667d5fb26c0b60753c0a22358443cbe19cca0",
+    "bytes": 1056
+  },
+  "nativeClosure": {
+    "file": ".artifacts/m2-4/urban-buildings-batch55-v1/native-closure.json",
+    "sha256": "021b335028c8df1ccd03b4f3ff3c800bc07b3df5bc96bc54d3ac7d5a61072257",
+    "bytes": 9321
+  },
+  "sourceCoverageDelta": {
+    "file": ".artifacts/m2-4/urban-buildings-batch55-v1/coverage-delta.json",
+    "sha256": "b1a4fc602580b8c0eeb912fbf3dd8363ac23ae819871ba25539642330cc9cfd5",
+    "bytes": 56047
+  },
+  "nativePlan": {
+    "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/native-plan-v1.json",
+    "sha256": "6b7ce1b8aa716e363ac31484bf54b30b7ddef21845114c13bc55b7abb23b9b11",
+    "bytes": 1068
+  },
+  "sourceContract": {
+    "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/contract.json",
+    "sha256": "53c9d172b93cded7db4d90aa82de07bb776aae59f1dc8fbd3afc009dfb1336ec",
+    "bytes": 9668
+  },
+  "preparedSource": {
+    "file": ".artifacts/m2-4/urban-buildings-native-batch55-v1/source.json",
+    "sha256": "4d1540067a2b874e192d10074bf5f5e3f88050f21d4716f59df76901d3b136dc",
+    "bytes": 104845
+  },
+  "desktopReview": {
+    "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch55-20261016/M2.4-Urban-Batch55-Embedded.html",
+    "sha256": "89ccd2d8139107fbe5a09ee272d5613ece397b8e3a2ecaa03c0d6d93fcefd618",
+    "bytes": 221194268
+  },
+  "embeddedMetadata": {
+    "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch55-20261016/M2.4-Urban-Batch55-Embedded.json",
+    "sha256": "79877e5fedda21c200ad969b10933af5f99e9b9acf9c39dbd5bb9e9b112cbe17",
+    "bytes": 36683
+  },
+  "desktopQa": {
+    "file": ".artifacts/m2-4/urban-buildings-batch55-embedded-desktop-qa-v1/report.json",
+    "sha256": "5db15504a140e9c6c13ad0926acf674f20239e7301e972034cc20b5f71520e0d",
+    "bytes": 2844
+  },
+  "stage": {
+    "file": ".artifacts/m2-4/urban-buildings-batch55-v1/active-stage.json",
+    "sha256": "79a2f13da7e6960f855b98d6b0865042d8a386d9052a1dfdd8735ac2d830acb7",
+    "bytes": 1098
+  },
+  "validationLogs": [
+    {
+      "file": ".artifacts/m2-4/urban-buildings-batch55-loading-tests-v1.log",
+      "sha256": "13de520037a34331ff23973081e81283c84a3ce699c26c7fef2686f5f573eca3",
+      "bytes": 1442
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-batch55-typecheck-v1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-batch55-build-v1.log",
+      "sha256": "1f3faf0b0c8ce220117733e2914b7035124256cbc60321798e8c6de7d3c5b704",
+      "bytes": 21859
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-batch55-stage-v1.log",
+      "sha256": "09309710197852f1bb7194351233cd874afaf3960603aa7144c28fede5454db2",
+      "bytes": 572
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-batch55-v1/native-cross-theater-4x-v1.log",
+      "sha256": "65c617b306ab4b6573be882070063040d3f380c8a2f0f70867a03d2656077e85",
+      "bytes": 271
+    }
+  ],
+  "applicationPolicy": "One reused internal signed Mac host; no per-batch game bundle or resource copy. Final standalone milestone delivery remains pending.",
+  "originalPaletteCorrection": "Previously accepted with batch 54 and preserved unchanged; not resubmitted.",
+  "visual": "USER_ACCEPTED",
+  "windows": "NOT_RUN",
+  "m24Complete": false,
+  "crossTheaterClosure": {
+    "file": ".artifacts/m2-4/urban-buildings-batch55-v1/cross-theater-closure-v1.json",
+    "sha256": "fa266b3d949b64f7c195c5addc94e8df94426c3e1584a9da949e52487fa49bf0",
+    "bytes": 2847
+  },
+  "userAcceptance": {
+    "file": ".artifacts/m2-4/urban-buildings-batch55-v1/user-acceptance.json",
+    "sha256": "66be605200dedf8b72b23a8a7dd23ed9e3d0d2a1ba8ac3dd401aa703800afc55",
+    "bytes": 907
+  },
+  "technicalHandoffBeforeAcceptance": {
+    "file": ".artifacts/m2-4/urban-buildings-batch55-v1/technical-handoff-before-acceptance.json",
+    "sha256": "3560a8e1042914696e5202da595d067e9eee2eb048561fbaef6b6d323acc6097",
+    "bytes": 165913
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "status": "PASS_30_ROAD_SOURCES_60_DENSITY_PATHS_AND_FOUR_EXPLICIT_ORIGINAL_SLOPE_GAPS",
+  "candidate": {
+    "schemaVersion": 1,
+    "revision": "newurban-m2-4-accepted-road-network-batch93-v7",
+    "sha256": "71c4abb8e4d105e2d3e920fe4f195993987d7a2e5d6f42bbbc3adbc9b64e34dd"
+  },
+  "runtimeSourceCommit": "500d84101cf65d5c0f2f186a8e563b553a104c18",
+  "initialRuntimeSourceCommit": "24296491aa63d48083dc67b27da3c4dd3f04d830",
+  "newMembers": 30,
+  "newCompleteLoadFamilies": 25,
+  "sourceDensitySlots": 548,
+  "authoredDensitySlots": 508,
+  "originalUnreferencedCompatibilityDensitySlots": 40,
+  "priorTerrainGroupsExact": 22,
+  "priorBridgeContactCoreExact": 4,
+  "worldPeakUpperBoundBytes": {
+    "2": 338548128,
+    "4": 1291207088
+  },
+  "preparedPeakBytes": 123784644,
+  "preparedRegistration": {
+    "type": "prepared-hd-registered",
+    "members": 453,
+    "pages": 1205,
+    "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+  },
+  "remainingAuthoredNewUrbanGroups": 184,
+  "remainingByKind": {
+    "tmp": 168,
+    "building": 13,
+    "infantry": 2,
+    "overlay": 1
+  },
+  "conditionalNewUrbanGroups": 22,
+  "selectedNewMothers": 0,
+  "windows": "NOT_RUN",
+  "mainIntegration": "NOT_PERFORMED",
+  "m24Complete": false,
+  "nativeSourceDensityPaths": 60,
+  "deferredSlopeMembers": [
+    "prslpe01.ubn",
+    "prslpe02.ubn",
+    "prslpe03.ubn",
+    "prslpe04.ubn"
+  ],
+  "deferredSlopeStatus": "ORIGINAL_COMPLETE_FAMILY_FALLBACK_REMAINS_MISSING_HD",
+  "changedVisualStatus": "USER_ACCEPTED_DELIVERED_SCOPE",
+  "inheritedArtwork": "ACCEPTED",
+  "perBatchGamePackage": "NOT_CREATED_USER_REQUEST_HTML_ONLY",
+  "technicalClosure": {
+    "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/coverage-and-native-closure-v1.json",
+    "sha256": "2c13f8605057fc5e125ba222a7656e925da40350bbebd8ccf15c34642b77a681",
+    "bytes": 28160
+  },
+  "resourceLedger": {
+    "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/resource-handoff-v1.json",
+    "sha256": "eac30048f8c3b58b1f956555f77833da09ed104e3ba518dff6d809d89d60b7c2",
+    "bytes": 10326709
+  },
+  "resourceFileCount": 40538,
+  "postExitHashCheck": {
+    "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/resource-handoff-post-exit-v1.json",
+    "sha256": "5ee032868e3e68b813882ef48408c9eb1b8d7628abeac5b542a8aafbc6c1234d",
+    "bytes": 393
+  },
+  "desktopDelivery": {
+    "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/desktop-delivery-v1.json",
+    "sha256": "864eb476fc6d44ca379c5d78214cc550957c05c161b845cd62dc3ce364381bd3",
+    "bytes": 1437
+  },
+  "review": {
+    "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/review-v1/M2.4-NewUrban-Reuse-Roads-Batches92-93-Embedded.html",
+    "sha256": "5ca3fb5b7668140aaff4adaa83f9bf73a56b7801f68058695b7784e7d04ca8ea",
+    "bytes": 110552003
+  },
+  "reviewMetadata": {
+    "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/review-v1/review-metadata-v1.json",
+    "sha256": "cb98bac7d530c035c952427b66a7dcbe949478df57b7d945b26a5bc3fcd82beb",
+    "bytes": 32149
+  },
+  "desktopReview": "/Users/Aone/Desktop/M2.4-Review-Reuse-Roads-Batches92-93-20261021/M2.4-NewUrban-Reuse-Roads-Batches92-93-Embedded.html",
+  "desktopTotalBytes": 120910861,
+  "mainAtHandoff": {
+    "head": "81d0f78483461e40f0127571216d8e7e0a5a4e09",
+    "clean": true,
+    "porcelain": "",
+    "changedByTask": false
+  },
+  "tests": {
+    "initialPass": 62,
+    "initialAssertions": 1490,
+    "finalOriginalFallbackPass": 2,
+    "finalOriginalFallbackAssertions": 14,
+    "logs": [
+      {
+        "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/targeted-road-tests-v2.log",
+        "sha256": "9d099475970e9f1d99b0897df73a8d213211393ef954c3852c45a05ea3080fc2",
+        "bytes": 6238
+      },
+      {
+        "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/targeted-road-cohort-tests-v2.log",
+        "sha256": "a546adcc78e64ea502d056e383f51204c76d3a3352a0150a2a5915247a2e2511",
+        "bytes": 1433
+      },
+      {
+        "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/deferred-slope-tests-v1.log",
+        "sha256": "96db6d13da4381275f9a4285d85f12939ddf9ee17b319c286bed0cb0d9591ea9",
+        "bytes": 307
+      }
+    ]
+  },
+  "typecheck": {
+    "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/typecheck-v1.log",
+    "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+    "bytes": 39
+  },
+  "inventory": {
+    "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/inventory-reconciliation-v3.json",
+    "sha256": "e33305b3f85340e6692fd2ead5fd65feb52ffb2442e0bda784a838b824b7067d",
+    "bytes": 178873
+  },
+  "finalStage": {
+    "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/active-stage-v5.json",
+    "sha256": "503855d2d31e128b00aed50ef02870eb0a20054fd511e77e3a072b5342dc3978",
+    "bytes": 1102
+  },
+  "inheritedNativeReports": [
+    {
+      "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/native-2x-v1/report.json",
+      "sha256": "fa1fd7152e2288abf364f0ba5ede3a075a53feda91825517061adf65c6a2e2f6",
+      "bytes": 41680238
+    },
+    {
+      "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/native-4x-v1/report.json",
+      "sha256": "ca8ba51c2bbea4345dcff3167b4084eee0575289905d68099f0af089f3a0d443",
+      "bytes": 48375633
+    }
+  ],
+  "finalSelectedNativeReports": [
+    {
+      "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/native-safe-2x-v1/report.json",
+      "sha256": "6a1ba2e9fcf158d88d398f96d6f53989a4a8f5132960191f67694f1546a1d648",
+      "bytes": 4773576
+    },
+    {
+      "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/native-safe-4x-v1/report.json",
+      "sha256": "7bf6b39ed558729328cbab7f9c8ef8e9543ca46541ae9a906b66d791be4709c0",
+      "bytes": 13255073
+    }
+  ],
+  "userAcceptance": {
+    "file": ".artifacts/m2-4/newurban-tmp-material-reuse-batch93-20261020/user-acceptance-20261021.json",
+    "sha256": "ec2887098240dcaaf32b075d2524e147cddf91d7dc9d78fd1c5e0406d1ba3db4",
+    "bytes": 1770
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "ALLIED_ANIMATION_SIDEBAR_CORRECTIONS_ACCEPTED_AND_DELIVERED",
+  "technical": "PASS",
+  "humanAcceptance": "USER_ACCEPTED",
+  "delivery": "DELIVERED",
+  "integration": "NOT_MERGED",
+  "acceptanceDate": "2026-10-01",
+  "timeZone": "America/Los_Angeles",
+  "userConfirmationEnglish": "Validation passed",
+  "confirmationIsTranslation": true,
+  "base": "ee35fcf04de2d24c1bce2ee7497e4156483b21f1",
+  "branch": "fix/allied-animation-sidebar",
+  "worktree": "/Users/Aone/RA2remaster/ra2-hd-allied-corrections",
+  "acceptedSourceHead": "354c347fc88a57f66d0fe9f521daf672dbe52a1f",
+  "bundledRuntimeSource": "dae53b4df9651378375a3b96ab285ebfbfaa89eb",
+  "bundledRuntimeSourceDirty": "",
+  "acceptedScope": [
+    "GAAIRC/AMRADR radar registration and ATESLA/GAPRIS rigid head rotation",
+    "Sidebar category-switch cameo publication without avoidable Original-to-HD flashes",
+    "E1 deployed firing with stationary fortress surfaces"
+  ],
+  "resourceSelections": {
+    "hq": "animation-r5",
+    "prism": "animation-r9",
+    "gi": "animation-r9"
+  },
+  "preservation": "Original/2X/4X, accepted A/B resources outside corrected parts, native geometry/rules/timing/shadows/remap, allocation limits and existing R2-R6/trainer evidence",
+  "desktopDelivery": {
+    "deliveredArchive": "/Users/Aone/Desktop/RA2-HD-Allied-Corrections-dae53b4-macOS-arm64.zip",
+    "retainedArchive": "/Users/Aone/RA2remaster/ra2-hd-allied-corrections/.artifacts/allied-corrections/desktop-zip-feedback-r2/RA2-HD-Allied-Corrections-dae53b4-macOS-arm64.zip",
+    "bytes": 2219044772,
+    "sha256": "e4c4e6531311b7bc98d51e0154014530adabf0fc70918436a141faaaf8c73c43",
+    "receipt": "docs/allied-animation-sidebar-zip-feedback-r2.json",
+    "verifiedStatus": "PASS_DESKTOP_ARCHIVE_AND_EXTRACTED_NATIVE_RUNTIME",
+    "desktopArchivePresentAtAcceptance": false,
+    "retainedArchivePresentAtAcceptance": true
+  },
+  "review": "/Users/Aone/RA2remaster/ra2-hd-allied-corrections/.artifacts/allied-corrections/review-feedback-r2/Allied-Corrections-Review.html",
+  "technicalLedger": "docs/allied-animation-sidebar-feedback-r2.json",
+  "historicalEvidence": "Delivered ledgers, review HTML, packages and earlier failed receipts remain unchanged. This receipt supersedes their pending human-review gate for the accepted correction scope.",
+  "canonicalReadOnlySnapshot": {
+    "branch": "main",
+    "head": "0370e9b41d4736a0b80bbe35d2552b3f3a39a4a4",
+    "activeUncommittedFiles": [
+      "scripts/m1/yuri-buildings/native-run.mjs",
+      "src/game/gameobject/task/EnterBunkerTask.ts",
+      "scripts/m1/yuri-buildings/bunker-entry.test.ts"
+    ],
+    "combinedCompatibility": "UNVERIFIED"
+  },
+  "remainingEvidenceBoundaries": [
+    "Windows and independent physical input/display certification remain unverified",
+    "Natural campaign behavior and combined compatibility with active Task C were not established",
+    "Prism geometry uses accepted raster materials and inferred petal symmetry; original 3D model and exact source yaw values remain unavailable"
+  ],
+  "handoff": "Keep fixes to this accepted outcome in the same execution conversation. Integrate only when separately authorized against a stable committed C checkpoint; reconcile source changes and selected resources additively and validate affected consumers.",
+  "acceptanceActions": "Documentation and local repair-branch commit only; no merge, push, build, test rerun, package replacement, cleanup or new task"
+}

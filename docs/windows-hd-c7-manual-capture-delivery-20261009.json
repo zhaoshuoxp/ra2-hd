@@ -1,0 +1,425 @@
+{
+  "status": "C7_MANUAL_M1_DELIVERED_FOR_WINDOWS_CAPTURE",
+  "companionId": "WINHD-20261008-D38F136-C7-MANUAL-M1",
+  "sourceHead": "9041bb736d46e597ca21c1c739b73cd89ce59e72",
+  "unchangedGameCommit": "3ab266e3b0b2c755f33ac65ca0866b1055f019d0",
+  "baseManifestSha256": "1133beff253fc177d8b4a007077560a0a3a6de3aeb65f833464085dd65485458",
+  "archive": {
+    "name": "RA2-HD-C7-Manual-Capture-M1-9041bb7.zip",
+    "bytes": 7056,
+    "sha256": "92c7534c69c29e5b9a64edd92d034f894613aaec42c01c3f8755b86e6588edf3",
+    "members": 5,
+    "manifestSha256": "7707e8318f549ab85db9496abde703019aeb2f7cff92df0157c0b3a0cad85c04"
+  },
+  "copies": [
+    {
+      "path": "/Users/Aone/RA2remaster/deliveries/RA2-HD-C7-Manual-Capture-M1-9041bb7.zip",
+      "bytes": 7056,
+      "sha256": "92c7534c69c29e5b9a64edd92d034f894613aaec42c01c3f8755b86e6588edf3",
+      "allCrc": "PASS",
+      "allFiveMembers": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "/Users/Aone/Desktop/RA2-HD-C7-Manual-Capture-M1-9041bb7.zip",
+      "bytes": 7056,
+      "sha256": "92c7534c69c29e5b9a64edd92d034f894613aaec42c01c3f8755b86e6588edf3",
+      "allCrc": "PASS",
+      "allFiveMembers": "BYTE_IDENTICAL"
+    }
+  ],
+  "freshExtraction": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c7-manual-companion-fresh-v1",
+  "sourceFileCatalog": [
+    {
+      "file": "Capture-Manual-Play.cmd",
+      "bytes": 449,
+      "sha256": "6426b2499c9ddd2d7ddc8009c6046567a416210eb4a25d689f2993e6eeebf2b4"
+    },
+    {
+      "file": "START-HERE.txt",
+      "bytes": 1936,
+      "sha256": "da24bd6a86ae76567c2a1391768ed73e29494f9d14f594c3ab7b1e913db55b9a"
+    },
+    {
+      "file": "manual-capture-bootstrap.mjs",
+      "bytes": 4371,
+      "sha256": "c0a8a36ed3a582a18cbd15fe611f2be2febcd10ea238ed9a622fb26ad2cdb9e0"
+    },
+    {
+      "file": "manual-capture-entry.mjs",
+      "bytes": 6681,
+      "sha256": "55e566e73529666cc534057ba4adfb5bc8405c756b99be595b7f29289c2b056b"
+    }
+  ],
+  "nativeQA": {
+    "status": "PASS_NATIVE_MANUAL_CAMERA_F8_F9_EXPORT_AND_RESTORATION",
+    "reportPath": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c7-native-manual-capture-v1/report.json",
+    "reportSha256": "8b2fa4b47db193a1c8b73adad276e7c1302f42a5505303fc6e74b06a5d8710a5",
+    "platform": "darwin-arm64",
+    "packaged": true,
+    "verification": {
+      "schemaVersion": 1,
+      "diagnosticId": "WINHD-20261008-D38F136-C7",
+      "manifestSha256": "1133beff253fc177d8b4a007077560a0a3a6de3aeb65f833464085dd65485458",
+      "checked": 8122,
+      "failures": [],
+      "status": "PASS",
+      "verifiedAt": "2026-10-10T04:47:14.462Z"
+    },
+    "phases": [
+      {
+        "label": "fresh-process-first-use",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "instrumented": false,
+        "manualCamera": false,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "frames": 156,
+        "ticks": 196,
+        "players": 8,
+        "bots": 7,
+        "output": {
+          "ratio": 2,
+          "requested": [
+            3840,
+            2160
+          ],
+          "effective": [
+            3840,
+            2160
+          ],
+          "caps": []
+        },
+        "actualHdBindings": 1922
+      },
+      {
+        "label": "warmed-steady",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "instrumented": false,
+        "manualCamera": false,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "frames": 181,
+        "ticks": 203,
+        "players": 8,
+        "bots": 7,
+        "output": {
+          "ratio": 2,
+          "requested": [
+            3840,
+            2160
+          ],
+          "effective": [
+            3840,
+            2160
+          ],
+          "caps": []
+        },
+        "actualHdBindings": 1938
+      },
+      {
+        "label": "same-process-reentry-first-use",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "instrumented": false,
+        "manualCamera": false,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "frames": 169,
+        "ticks": 200,
+        "players": 8,
+        "bots": 7,
+        "output": {
+          "ratio": 2,
+          "requested": [
+            3840,
+            2160
+          ],
+          "effective": [
+            3840,
+            2160
+          ],
+          "caps": []
+        },
+        "actualHdBindings": 1922
+      },
+      {
+        "label": "same-process-reentry-warmed",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "instrumented": false,
+        "manualCamera": false,
+        "cameraRoute": {
+          "base": {
+            "x": -1860,
+            "y": 5250
+          },
+          "xOffset": -350,
+          "yOffset": 150,
+          "xAmplitude": 350,
+          "yAmplitude": 150,
+          "timeDivisorSeconds": 0.9
+        },
+        "frames": 181,
+        "ticks": 202,
+        "players": 8,
+        "bots": 7,
+        "output": {
+          "ratio": 2,
+          "requested": [
+            3840,
+            2160
+          ],
+          "effective": [
+            3840,
+            2160
+          ],
+          "caps": []
+        },
+        "actualHdBindings": 1938
+      },
+      {
+        "label": "manual-5",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "instrumented": false,
+        "manualCamera": true,
+        "cameraRoute": {
+          "mode": "manual-input",
+          "start": {
+            "x": -1860,
+            "y": 5250
+          },
+          "end": {
+            "x": -1840,
+            "y": 5260
+          }
+        },
+        "frames": 180,
+        "ticks": 201,
+        "players": 8,
+        "bots": 7,
+        "output": {
+          "ratio": 2,
+          "requested": [
+            3840,
+            2160
+          ],
+          "effective": [
+            3840,
+            2160
+          ],
+          "caps": []
+        },
+        "actualHdBindings": 1942
+      },
+      {
+        "label": "instrumented-cpu-multiprocess-trace",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "instrumented": true,
+        "manualCamera": true,
+        "cameraRoute": {
+          "mode": "manual-input",
+          "start": {
+            "x": -1840,
+            "y": 5260
+          },
+          "end": {
+            "x": -1820,
+            "y": 5270
+          }
+        },
+        "frames": 474,
+        "ticks": 539,
+        "players": 8,
+        "bots": 7,
+        "output": {
+          "ratio": 2,
+          "requested": [
+            3840,
+            2160
+          ],
+          "effective": [
+            3840,
+            2160
+          ],
+          "caps": []
+        },
+        "actualHdBindings": 1947
+      }
+    ],
+    "f8Camera": {
+      "key": "F8",
+      "movement": [
+        {
+          "before": {
+            "x": -1860,
+            "y": 5250
+          },
+          "requested": {
+            "x": -1770,
+            "y": 5220
+          },
+          "afterTwoFrames": {
+            "x": -1770,
+            "y": 5220
+          }
+        },
+        {
+          "before": {
+            "x": -1770,
+            "y": 5220
+          },
+          "requested": {
+            "x": -1840,
+            "y": 5260
+          },
+          "afterTwoFrames": {
+            "x": -1840,
+            "y": 5260
+          }
+        }
+      ],
+      "finalPan": {
+        "x": -1840,
+        "y": 5260
+      }
+    },
+    "f9Camera": {
+      "key": "F9",
+      "movement": [
+        {
+          "before": {
+            "x": -1840,
+            "y": 5260
+          },
+          "requested": {
+            "x": -1750,
+            "y": 5230
+          },
+          "afterTwoFrames": {
+            "x": -1750,
+            "y": 5230
+          }
+        },
+        {
+          "before": {
+            "x": -1750,
+            "y": 5230
+          },
+          "requested": {
+            "x": -1820,
+            "y": 5270
+          },
+          "afterTwoFrames": {
+            "x": -1820,
+            "y": 5270
+          }
+        }
+      ],
+      "finalPan": {
+        "x": -1820,
+        "y": 5270
+      }
+    },
+    "originalAutomaticPhases": "FOUR_UNINSTRUMENTED_PHASES_RETAINED_BYTE_IDENTICALLY_AFTER_MANUAL_F8_AND_F9",
+    "normalF8PreservedAfterTrace": true,
+    "traceStatus": "CAPTURED",
+    "cpuProfile": "CAPTURED",
+    "traceRequestedDuring": "complete",
+    "restoration": {
+      "detailedAbsent": true,
+      "traceInactive": true,
+      "setMaterial": true,
+      "methods": {
+        "useProgram": true,
+        "compileShader": true,
+        "linkProgram": true,
+        "getProgramInfoLog": true,
+        "texImage2D": true,
+        "texSubImage2D": true,
+        "compressedTexImage2D": true,
+        "compressedTexSubImage2D": true
+      }
+    },
+    "errors": [],
+    "export": {
+      "destination": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c7-manual-kit-v1/WINHD-20261008-D38F136-C7-RETURN-2026-10-10T04-48-19-774Z.zip",
+      "runs": 1,
+      "files": 18
+    },
+    "returnValidation": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+    "boundary": "Mac validates diagnostic behavior, native state, input preservation and export. It is not Windows performance or physical-input acceptance."
+  },
+  "windowsRuntimeStaging": {
+    "status": "PASS_BYTE_IDENTICAL_RUNTIME_STAGING",
+    "files": 73,
+    "bytes": 385513417,
+    "packageMain": "../../../manual-capture-entry.mjs",
+    "receiptPath": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c7-manual-runtime-staging-v1.json",
+    "boundary": "Executed the staging function on Mac over exact official Windows runtime bytes; the Windows executable was not run."
+  },
+  "capture": {
+    "scenario": "Existing eight-player/seven-AI 4X C7 run",
+    "phaseOrder": [
+      "four unchanged automatic phases",
+      "late manual F8, 15 seconds",
+      "late instrumented F9, 8 seconds"
+    ],
+    "camera": "LIVE_MANUAL_INPUT_PRESERVED",
+    "exporter": "Original C7 Export-Reports.cmd",
+    "frameCapOrSyncChange": false,
+    "gameSourceChange": false
+  },
+  "followupFeedback": {
+    "originalArtwork": "User confirms HD was disabled and a new match was started; perceived smoothness did not clearly improve. FPS was not measured.",
+    "scopeInference": "Prioritize shared per-frame rendering, simulation and Windows presentation. The new-match boundary is user-confirmed; actual bindings and matched FPS remain unmeasured.",
+    "pendingClarification": [],
+    "sourceFinding": "HdOptions requires a new match to apply changes to all assets. The user confirms following that boundary; same-match partial application is no longer the outstanding explanation.",
+    "confirmedControl": {
+      "hdEnabled": false,
+      "newMatchStarted": true,
+      "fpsMeasured": false,
+      "actualBindingEvidence": "NOT_YET_CAPTURED"
+    }
+  },
+  "statusBoundaries": {
+    "windowsCompanionExecution": "NOT_RUN",
+    "laterManualPlayLowRate": "AWAITING_USER_CAPTURE",
+    "sustainedRateAcceptance": "OPEN",
+    "mainIntegration": "NOT_APPLIED",
+    "remotePush": "NOT_PERFORMED",
+    "release": "NOT_DELIVERABLE_YET"
+  },
+  "sourceProtection": {
+    "mainHead": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "mainStatus": "CLEAN",
+    "peerM23Head": "a81a94c77ad109835c0540806f4e0749c6a811c1",
+    "peerStatus": "INDEPENDENT_DIRTY_FILES_PRESERVED",
+    "applicationChangesFromPriorReceipt": 0,
+    "resourceChanges": 0
+  }
+}

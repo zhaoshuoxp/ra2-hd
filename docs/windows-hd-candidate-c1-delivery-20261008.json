@@ -1,0 +1,365 @@
+{
+  "status": "DELIVERED_FOCUSED_C1_CANDIDATE_WINDOWS_AB_PENDING",
+  "diagnosticId": "WINHD-20261008-D38F136-C1",
+  "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+  "candidateCommit": "ec50a8e41cac0ae8ecf14a3a42ae20b3e7db5b96",
+  "archive": {
+    "status": "PASS_FULL_ARCHIVE_AND_FRESH_EXTRACTION",
+    "diagnosticId": "WINHD-20261008-D38F136-C1",
+    "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "diagnosticCommit": "ec50a8e41cac0ae8ecf14a3a42ae20b3e7db5b96",
+    "archive": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C1-ec50a8e-Windows-x64.zip",
+    "bytes": 3499723961,
+    "sha256": "8393d0e6bb0be4ff447b41fb48a488d2df1baa357380a3e0a90f0813708ae879",
+    "manifestSha256": "d05d2cffae7f55fc3256aec964225b236bf0662bb0a3ab9e3cbf7e740aa2f785",
+    "entries": 8067,
+    "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c1-fresh/RA2-HD-WINHD-20261008-D38F136-C1-ec50a8e-Windows-x64",
+    "windowsNative": "NOT_RUN"
+  },
+  "desktopCopy": {
+    "status": "PASS_RESTORED_DESKTOP_COPY_HASH",
+    "file": "/Users/Aone/Desktop/RA2-HD-WINHD-20261008-D38F136-C1-ec50a8e-Windows-x64.zip",
+    "bytes": 3499723961,
+    "sha256": "8393d0e6bb0be4ff447b41fb48a488d2df1baa357380a3e0a90f0813708ae879",
+    "verifiedAt": "2026-10-08T22:33:25.459860+00:00",
+    "reason": "User requested Desktop copy after prior verified copy was absent at final audit."
+  },
+  "baselineArchive": {
+    "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-A1-da085fa-Windows-x64.zip",
+    "bytes": 3499702463,
+    "sha256": "58a6313dfc4cf4aeb5800487a845d50a5d7c6cd86953ee86c625ccb76e72d731",
+    "verification": "REHASHED_UNCHANGED",
+    "desktopArchivePresent": false
+  },
+  "returnedEvidence": {
+    "status": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+    "archive": "/Users/Aone/Desktop/WINHD-20261008-D38F136-A1-RETURN-2026-10-08T21-48-23-017Z.zip",
+    "bytes": 199172624,
+    "sha256": "dcdab1cbb6f77c60d7c5008443512bc84e7d3e25fa9de94879a22de2db4b1bbc",
+    "files": 32,
+    "runs": 3,
+    "diagnosticCommit": "da085faa5416de063f12aedf9bc2c0fc19ebee34",
+    "manifestSha256": "02ed28acd60d9edcd204ca5b5230fdf03f91e4eb46e4a5e8ae8baa743399c95b",
+    "extractedDirectory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/returns/2026-10-08T21-48-23-017Z",
+    "launcherPolicy": "Inspected as data only; no returned scripts executed."
+  },
+  "returnAnalysis": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/return-analysis-v1/analysis.json",
+    "sha256": "27ab7e6f22233259752a36e266d7045183338bd4378b0c9bc94c8e0388d54be8"
+  },
+  "userFeedback": {
+    "smallReproducer": "CONFIRMED",
+    "relativeSlowdown": "4X worse than 2X"
+  },
+  "renderingChanges": [
+    "src/engine/gfx/batch/HdSpriteEdges.ts"
+  ],
+  "completeSiblingResources": {
+    "worldAndUIFiles": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+  },
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCPU": 128,
+    "ui": 16
+  },
+  "verification": {
+    "schemaVersion": 1,
+    "diagnosticId": "WINHD-20261008-D38F136-C1",
+    "manifestSha256": "d05d2cffae7f55fc3256aec964225b236bf0662bb0a3ab9e3cbf7e740aa2f785",
+    "checked": 8066,
+    "failures": [],
+    "status": "PASS",
+    "verifiedAt": "2026-10-08T22:25:07.383Z"
+  },
+  "focusedChecks": {
+    "tests": 30,
+    "assertions": 632,
+    "failures": 0,
+    "entryTypecheck": "PASS",
+    "productionBuildWithHiddenMaps": "PASS"
+  },
+  "nativeMacReports": [
+    {
+      "report": ".artifacts/windows-hd-diagnostic/c1-native-original-v1/report.json",
+      "sha256": "4db42b989ee767b4834dddd9d9e322fde46e637537bf9c397c9557021cc7ed24",
+      "status": "PASS_NATIVE_MAC_TOOLING_SMOKE",
+      "platform": "darwin-arm64",
+      "windows": "NOT_RUN"
+    },
+    {
+      "report": ".artifacts/windows-hd-diagnostic/c1-native-pixels-2x-v1/report.json",
+      "sha256": "c545bb273dc0c9973a370f6a2db9112c919ca26ae40d19f25c5bb6db3ad477fd",
+      "status": "PASS_NATIVE_SAME_STATE_FLAT_SPRITE_SINGLE_PASS_EXPERIMENT",
+      "platform": "darwin-arm64",
+      "windows": "NOT_RUN",
+      "mode": "2x",
+      "sameStateComparisons": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "edgeMeshes": 113,
+          "edgeMaterials": 60,
+          "initialSinglePass": true,
+          "width": 2560,
+          "height": 1600,
+          "comparedBytes": 16384000,
+          "differentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8446285,
+          "calls": [
+            846,
+            733,
+            846
+          ],
+          "triangles": [
+            1080306,
+            1079854,
+            1080306
+          ],
+          "shaderChecksEnabled": true,
+          "tick": 676
+        },
+        {
+          "offset": {
+            "x": -350,
+            "y": 150
+          },
+          "edgeMeshes": 113,
+          "edgeMaterials": 60,
+          "initialSinglePass": true,
+          "width": 2560,
+          "height": 1600,
+          "comparedBytes": 16384000,
+          "differentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8446502,
+          "calls": [
+            850,
+            737,
+            850
+          ],
+          "triangles": [
+            1113906,
+            1113454,
+            1113906
+          ],
+          "shaderChecksEnabled": true,
+          "tick": 676
+        },
+        {
+          "offset": {
+            "x": 350,
+            "y": -150
+          },
+          "edgeMeshes": 113,
+          "edgeMaterials": 60,
+          "initialSinglePass": true,
+          "width": 2560,
+          "height": 1600,
+          "comparedBytes": 16384000,
+          "differentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 6804908,
+          "calls": [
+            834,
+            721,
+            834
+          ],
+          "triangles": [
+            1001238,
+            1000786,
+            1001238
+          ],
+          "shaderChecksEnabled": true,
+          "tick": 676
+        }
+      ]
+    },
+    {
+      "report": ".artifacts/windows-hd-diagnostic/c1-native-pixels-4x-v1/report.json",
+      "sha256": "7bd9ba348f39db73bfeb58a01aff989f5b51f910dad443051f9aab2e9aa903d5",
+      "status": "PASS_NATIVE_SAME_STATE_FLAT_SPRITE_SINGLE_PASS_EXPERIMENT",
+      "platform": "darwin-arm64",
+      "windows": "NOT_RUN",
+      "mode": "4x",
+      "sameStateComparisons": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "edgeMeshes": 140,
+          "edgeMaterials": 61,
+          "initialSinglePass": true,
+          "width": 2560,
+          "height": 1600,
+          "comparedBytes": 16384000,
+          "differentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8445535,
+          "calls": [
+            901,
+            761,
+            901
+          ],
+          "triangles": [
+            1080226,
+            1079666,
+            1080226
+          ],
+          "shaderChecksEnabled": true,
+          "tick": 709
+        },
+        {
+          "offset": {
+            "x": -350,
+            "y": 150
+          },
+          "edgeMeshes": 140,
+          "edgeMaterials": 61,
+          "initialSinglePass": true,
+          "width": 2560,
+          "height": 1600,
+          "comparedBytes": 16384000,
+          "differentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8445839,
+          "calls": [
+            905,
+            765,
+            905
+          ],
+          "triangles": [
+            1113826,
+            1113266,
+            1113826
+          ],
+          "shaderChecksEnabled": true,
+          "tick": 709
+        },
+        {
+          "offset": {
+            "x": 350,
+            "y": -150
+          },
+          "edgeMeshes": 140,
+          "edgeMaterials": 61,
+          "initialSinglePass": true,
+          "width": 2560,
+          "height": 1600,
+          "comparedBytes": 16384000,
+          "differentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 6804260,
+          "calls": [
+            889,
+            749,
+            889
+          ],
+          "triangles": [
+            1001158,
+            1000598,
+            1001158
+          ],
+          "shaderChecksEnabled": true,
+          "tick": 709
+        }
+      ]
+    },
+    {
+      "report": ".artifacts/windows-hd-diagnostic/c1-close-trace-4x-v1/report.json",
+      "sha256": "811247839e3aedc992f4bda75ee5d04837b56edf0e23da5c69bf5c26496e188e",
+      "status": "PASS_NATIVE_CLOSE_WAITS_FOR_COMPLETE_TRACE",
+      "platform": "darwin-arm64",
+      "windows": "NOT_RUN",
+      "mode": "4x",
+      "action": "close",
+      "retainedWindow": true,
+      "elapsedAfterCloseRequestMs": 11429,
+      "traceEvents": 455722,
+      "cpuSamples": 7409,
+      "manual": false
+    },
+    {
+      "report": ".artifacts/windows-hd-diagnostic/c1-quit-trace-2x-v1/report.json",
+      "sha256": "b3c933d8263fd20cdda92d4c5fbf5acbeaf916144c63ffcc64d2caa8ca32ebbf",
+      "status": "PASS_NATIVE_CLOSE_WAITS_FOR_COMPLETE_TRACE",
+      "platform": "darwin-arm64",
+      "windows": "NOT_RUN",
+      "mode": "2x",
+      "action": "quit",
+      "retainedWindow": true,
+      "elapsedAfterCloseRequestMs": 11389,
+      "traceEvents": 425732,
+      "cpuSamples": 7376,
+      "manual": false
+    },
+    {
+      "report": ".artifacts/windows-hd-diagnostic/c1-manual-close-trace-4x-v1/report.json",
+      "sha256": "f332c0479799df6b580d8f2ac7361f62115bd41bc4baece47e10a6581e1a004d",
+      "status": "PASS_NATIVE_CLOSE_WAITS_FOR_COMPLETE_TRACE",
+      "platform": "darwin-arm64",
+      "windows": "NOT_RUN",
+      "mode": "4x",
+      "action": "close",
+      "retainedWindow": true,
+      "elapsedAfterCloseRequestMs": 11520,
+      "traceEvents": 454425,
+      "cpuSamples": 7416,
+      "manual": true
+    }
+  ],
+  "rawFailurePolicy": "Original invalid 4X first-use, missing trace and failed Mac v1 experiment retained unchanged.",
+  "statusBoundaries": {
+    "sourceImplementation": "LOCAL_CANDIDATE",
+    "staticPackage": "PASS",
+    "copiedNativeMac": "PASS_BOUNDED",
+    "windowsRuntime": "NOT_RUN_C1",
+    "windowsPerformance": "MATCHED_AB_PENDING",
+    "userVisualAcceptance": "PENDING_C1",
+    "physicalInput": "NOT_ACCEPTED_BY_AUTOMATION",
+    "main": "UNCHANGED_CLEAN_D38F136",
+    "merge": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED",
+    "M2_3": "UNTOUCHED"
+  },
+  "nextRuns": [
+    {
+      "kit": "A1",
+      "scene": "small",
+      "mode": "2x",
+      "capture": "Normal"
+    },
+    {
+      "kit": "A1",
+      "scene": "small",
+      "mode": "4x",
+      "capture": "Trace"
+    },
+    {
+      "kit": "C1",
+      "scene": "small",
+      "mode": "2x",
+      "capture": "Normal"
+    },
+    {
+      "kit": "C1",
+      "scene": "small",
+      "mode": "4x",
+      "capture": "Trace"
+    }
+  ],
+  "handoff": "Continue the current execution conversation for matched Windows returns and this bounded repair/acceptance.",
+  "priorDesktopCopy": {
+    "status": "PASS_DESKTOP_COPY_HASH",
+    "file": "/Users/Aone/Desktop/RA2-HD-WINHD-20261008-D38F136-C1-ec50a8e-Windows-x64.zip",
+    "bytes": 3499723961,
+    "sha256": "8393d0e6bb0be4ff447b41fb48a488d2df1baa357380a3e0a90f0813708ae879"
+  },
+  "desktopRestore": "User explicitly requested restoration after the first verified Desktop copy was absent at final audit. Original copy receipt is preserved."
+}

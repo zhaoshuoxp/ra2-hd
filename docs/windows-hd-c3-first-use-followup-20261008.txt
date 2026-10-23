@@ -1,0 +1,19 @@
+Existing C3 - one dedicated first-use trace
+
+Use the existing WINHD-20261008-D38F136-C3 kit (source c2bcc16).
+The matched C2/C3 Normal series is complete. Do not repeat that series.
+
+1. Run Verify-Kit.cmd. Record PASS or the exact error text; wait for it to finish.
+2. Start a fresh Launch-Diagnostics.cmd: Small, 4X, Normal.
+3. About ONE second after the live match/map appears, press F9 ONCE. This moves
+   the eight-second profile earlier to cover the remaining event near second 8.
+4. Keep the game focused and settings/camera/output/power unchanged. Wait for
+   final capture completion, including trace saving, before closing.
+5. Close the game, run Export-Reports.cmd and return the new C3 RETURN ZIP.
+   Include verification/failures. No C2, 2X, stress or control run is requested.
+
+This is a dedicated instrumented capture, not another Normal timing sample.
+Overlapping and later phases are marked instrumented and excluded from A/B.
+One process captures at most one F9 trace. Preserve the old reports and kits.
+The remaining ~234 ms submission is not yet attributed to shaders or upload on
+Windows. Actual GPU execution time and VRAM/budget remain unavailable.

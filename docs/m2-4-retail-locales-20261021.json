@@ -1,0 +1,73 @@
+{
+  "schema": "retail-localization-provenance-v1",
+  "sources": [
+    {
+      "path": "/Users/Aone/RA2remaster/Resource/Command and Conquer Red Alert II/Resources/Translations/zh-Hans/ra2.csf",
+      "sha256": "203cde3fdede373b41ddb07a02c0764740395b8d610250607c1335b1b7527564"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/Resource/Command and Conquer Red Alert II/Resources/Translations/zh-Hans/ra2md.csf",
+      "sha256": "c9ec7e8b87c0fe73839d340aaad1ba24b2ed5bea22e0aa566ac2f55369c4fd87"
+    },
+    {
+      "url": "https://github.com/3652xxyy/rynderack-project-translation/blob/40cefe0c900dc4bf1782a7b31a9b7111eb0caaa9/jsons/original.json",
+      "sha256": "f9c7e11ff3d22b3bc8b190ffc477859e55a716556ee4de4b0007fcc8a065e82a",
+      "labels": 5211,
+      "policy": "Original label table only; no mission-pack overrides, rules, or assets imported."
+    }
+  ],
+  "originalTraditionalSources": [
+    {
+      "name": "ra2.csf",
+      "archive": "language.mix",
+      "sha256": "60e1238de020831e53465b703f19cb984f33eabbc6d3b6773e4c4efbad3c634b",
+      "bytes": 283368,
+      "locale": "zh-TW",
+      "keys": 4476,
+      "saved": "ra2-0.json"
+    },
+    {
+      "name": "ra2md.csf",
+      "archive": "langmd.mix",
+      "sha256": "1b90bb0756137f46ff529af043fe798d7f1f9fa1713a4110f17e1d674de81f1c",
+      "bytes": 332973,
+      "locale": "zh-TW",
+      "keys": 5211,
+      "saved": "yr-0.json"
+    }
+  ],
+  "uiTraditional": "Foundation ICU conversion of the existing Simplified Chinese UI, with reviewed language labels.",
+  "outputs": [
+    {
+      "path": "public/res/locale/retail-ra2-en-US.json",
+      "sha256": "89c6c568dce404482bf56f248f692eddd7060fa743948482ddf381c2fd14ca24",
+      "labels": 4476
+    },
+    {
+      "path": "public/res/locale/retail-ra2-zh-CN.json",
+      "sha256": "efdfa7f3451543954beaff58f41c2be90e9afa6917d0b261bfbb22a527530e73",
+      "labels": 4476
+    },
+    {
+      "path": "public/res/locale/retail-ra2-zh-TW.json",
+      "sha256": "87107fcaf04c22f9bac85c6122c5faf14c757711b2cfa6030d3712889c358bfa",
+      "labels": 4476
+    },
+    {
+      "path": "public/res/locale/retail-yr-en-US.json",
+      "sha256": "1446ecb9bb452003fc0c8b905707c5f56f388da3a1d0f57c864f3b27a495bc1b",
+      "labels": 5211
+    },
+    {
+      "path": "public/res/locale/retail-yr-zh-CN.json",
+      "sha256": "7aed048b49d998b847d7166e3f70154fb019d03ced7bbd18f4ead4405489eb7e",
+      "labels": 5211
+    },
+    {
+      "path": "public/res/locale/retail-yr-zh-TW.json",
+      "sha256": "e8f79108b199674592f328484755f8a23fdf9eb8597e6cdc8bbffd386994a552",
+      "labels": 5211
+    }
+  ],
+  "sourceMutation": false
+}

@@ -1,0 +1,157 @@
+{
+  "status": "PASS_21_COMPLETE_SOURCE_MEMBERS_42_NATIVE_PATHS_AND_ALL_PRIOR_ATLASES_EXACT",
+  "candidate": {
+    "schemaVersion": 1,
+    "revision": "newurban-m2-4-final-terrain-batch96-v2",
+    "sha256": "c54d438f607fe7b388cc5a44237aeee315e7e372f553655891d74f5a7d42a393"
+  },
+  "runtimeSourceCommit": "7a0b9529aeb232e7f636570913e9ffd8fdb918bc",
+  "finalStage": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/active-stage-v1.json",
+    "sha256": "9d22eb3feb602832c091552a7b8d647ebc02de4739576300d6975c08cf10510f",
+    "bytes": 1105
+  },
+  "newCompleteSourceMembers": 21,
+  "newCompleteLoadFamilies": 12,
+  "selectedLoadGroups": 110,
+  "sourceSlots": 247,
+  "authoredPositivePointerSlots": 207,
+  "originalUnreferencedCompatibilitySlots": 40,
+  "authoredDensitySlots": 414,
+  "originalUnreferencedCompatibilityDensitySlots": 80,
+  "priorGroupsExact": 98,
+  "priorAtlasFilesExact": 196,
+  "priorDensitySamplesAndFilterGuardsExact": 3890,
+  "selectedNewMothers": 2,
+  "authoring": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/authoring-v6.json",
+    "sha256": "3e24b11377a9db60cbf675378d447b55488ee4d0ee151915d4e141ffcb41f3bc",
+    "bytes": 454663
+  },
+  "motherPrompts": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/mother-jobs-v1.json",
+    "sha256": "b9224cb1bae8e00ae31b1a098b9476c83af1e3d47b8cf17a5229a22541aeb9ee",
+    "bytes": 3938
+  },
+  "new4xRawBytes": 22381632,
+  "nativeReports": [
+    {
+      "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/native-2x-v1/report.json",
+      "sha256": "5896a67e0f057173c3178fdcca864a0933f96e787abca4e6eaf7117f0df287bf",
+      "bytes": 61437333
+    },
+    {
+      "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/native-4x-v1/report.json",
+      "sha256": "d4e8730b182d2412723d3833c3c239da5724fdab5b1491e05fda0f0716171afc",
+      "bytes": 78177823
+    }
+  ],
+  "worldPeakBytes": {
+    "2": 343577340,
+    "4": 1306339212
+  },
+  "preparedPeakBytes": {
+    "2": 45156556,
+    "4": 108112788
+  },
+  "budgets": {
+    "world2x": 536870912,
+    "world4x": 1342177280,
+    "preparedCpu": 134217728,
+    "ui": 16777216
+  },
+  "preparedRegistration": {
+    "type": "prepared-hd-registered",
+    "members": 453,
+    "pages": 1205,
+    "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+  },
+  "preparedDependencies": "The actual 453 prepared actor members and 1205 pages retain unchanged inputs. New raw terrain atlases use their independent registration; no stale prepared cache is relabeled.",
+  "staticAudit": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/static-audit-v2.json",
+    "sha256": "9a9efb92b1ed81f0ec0e62212ea5edc7d5ff07d67ddf207ed824ac5e8e0fa5e0",
+    "bytes": 69964
+  },
+  "targetNativeMetadata": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/target-native-metadata-v2.json",
+    "sha256": "3e8dc350de03f50dd632e1d98cf3ecf9b42c828856b8d2eb275ce8a7aab14e94",
+    "bytes": 321736
+  },
+  "tests": {
+    "passCount": 4,
+    "assertions": 341,
+    "log": {
+      "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/loader-tests-v2.log",
+      "sha256": "a2748d800df2b6fce72e5fc919b7fd5e0c062130244c89d72d2cb84c014fcb86",
+      "bytes": 492
+    }
+  },
+  "typecheck": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/typecheck-v1.log",
+    "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+    "bytes": 39
+  },
+  "buildIdentity": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/build-newurban-final-terrain-batch96-v1/identity.json",
+    "sha256": "4b38a25a4039d7ce74354ea56bfa70554632b1e70b11bc7f92bfa9ff8a2aa5d0",
+    "bytes": 31100
+  },
+  "inventory": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/inventory-reconciliation-v1.json",
+    "sha256": "2f7507274e4c23d7579513ff445fe48b4bd337ebf1347edd653506b499ff83ae",
+    "bytes": 73827
+  },
+  "priorBatchAcceptance": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/user-acceptance-20261021.json",
+    "sha256": "1ffd57354d10d7494c20e52fd7e8bd8b936fafd1a5a209299235a57b2c2dff13",
+    "bytes": 1307
+  },
+  "remainingAuthoredNewUrbanGroups": 16,
+  "remainingByKind": {
+    "infantry": 2,
+    "building": 13,
+    "overlay": 1
+  },
+  "conditionalDependencyGroups": 22,
+  "deferredOriginalSlopes": [],
+  "review": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/review-v3/M2.4-NewUrban-Final-Terrain-Batch96-Embedded.html",
+    "sha256": "318fe3b4bff6cc1f6cb010e8f5c05bb38270e416094e41591f92a7f6da3062a5",
+    "bytes": 115297732
+  },
+  "reviewMetadata": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/review-v3/review-metadata-v1.json",
+    "sha256": "d20c8b1246ca4f2e34507ebb0bee6fcb73f30d051d643c2fcbfccaf215dd39db",
+    "bytes": 80984
+  },
+  "originalRgbUsedAsNewDetail": false,
+  "applicationChanges": [
+    "desktop/terrain-theater-hd-contracts.json"
+  ],
+  "sharedRuntimeCodeChanged": false,
+  "inheritedArtwork": "ACCEPTED",
+  "changedVisualStatus": "USER_ACCEPTED",
+  "windows": "NOT_RUN",
+  "mainIntegration": "NOT_PERFORMED",
+  "m24Complete": false,
+  "reviewIdentityCorrection": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/review-identity-correction-v1.json",
+    "sha256": "f45db6687f98759778036383df4829aed9b1ed75a88145ba8cbc1123fedac07e",
+    "bytes": 1318
+  },
+  "inheritedTechnicalClosure": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/coverage-and-native-closure-v1.json",
+    "sha256": "fecabcc8415d29575bb4579c974cdeac3e3328212b7f1f135688600c5ad4b653",
+    "bytes": 19810
+  },
+  "technicalClosure": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/coverage-and-native-closure-v2.json",
+    "sha256": "10c12e4a57f98b67a00e1b8bda2decffad0c2573c85ca283126cf6370f4163f4",
+    "bytes": 20311
+  },
+  "userAcceptance": {
+    "file": ".artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/user-acceptance-20261021.json",
+    "sha256": "9f766ecc0dfb98171540d055468c1ddc4392baaaf020dcc90314571950fc741b",
+    "bytes": 1119
+  }
+}

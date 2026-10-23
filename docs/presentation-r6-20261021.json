@@ -1,0 +1,79 @@
+{
+  "baseSourceHead": "28dce44e37a8931897f4ec69d0096856ef73a8f7",
+  "runtimeSourceHead": "bb64eb4586c23ca36b438f91ec286788c2b210df",
+  "scope": [
+    "BEHIND GPU atlas orientation and stable native rotation",
+    "Remove duplicate thin Home vector ellipses/grid"
+  ],
+  "cause": "A top-down canvas atlas used flipY=false with ordinary bottom-up sprite UVs, sampling neighboring/wrong animation rows.",
+  "oldGpu": {
+    "minIou": 0.018598615916955018,
+    "maxIou": 0.7961019490254873,
+    "maxCenterErrorNative": 3.273277463196136,
+    "minRelativeArea": 0.6770361990950227,
+    "maxRelativeArea": 1.1925104022191402
+  },
+  "fixedGpu": {
+    "status": "PASS_36_PRODUCTION_GPU_FRAMES_EXACT_AND_R5_FAILURE_REPRODUCED",
+    "frames": 36,
+    "silhouetteIou": 1,
+    "centerErrorNative": 0,
+    "areaDifference": 0,
+    "negativeControl": "R5_WRONG_ROW_SAMPLING_REPRODUCED"
+  },
+  "markerArt": "EXACT_R5_SOURCE_SHAPES_PALETTE_TIMING_GEOMETRY",
+  "home": "ADDED_FOUR_VECTOR_ELLIPSES_CROSSHAIRS_AND_72_TICKS_REMOVED; EXISTING_BITMAP_FILM_LOGO_UNCHANGED",
+  "fullSuite": {
+    "pass": 597,
+    "failedCases": 0,
+    "loadingErrors": 0,
+    "skipped": 0,
+    "processErrors": 0,
+    "processes": 148
+  },
+  "typecheck": "PASS_ENTRY",
+  "candidateNative": "PASS_NATIVE_R6_GPU_REGISTRATION_LIVE_LOOPS_AND_SINGLE_GRID",
+  "finalNativeMatrix": "PASS_NATIVE_R6_GPU_REGISTRATION_LIVE_LOOPS_AND_SINGLE_GRID",
+  "extractedPackageNative": "PASS_TWO_EXTRACTED_NATIVE_R6_CASES_CORRECT_ATLAS_LIVE_ROTATION_HOME_AND_POST_MATCH_LAYOUT",
+  "desktopDelivery": {
+    "status": "PASS_COMPLETE_MAC_R6_DESKTOP_BYTES",
+    "path": "/Users/Aone/Desktop/RA2-HD-Mac-bb64eb45-20261021-UI-R6.zip",
+    "bytes": 3975926275,
+    "sha256": "4418ee859549eeffca6fa9d461aeb3ab53630e27fcf18a5af66e80c7d0006d11",
+    "sourceHead": "bb64eb4586c23ca36b438f91ec286788c2b210df",
+    "timestampUtc": "2026-10-22T02:00:43.630205+00:00",
+    "earlierDesktopPackages": "NOT_MODIFIED"
+  },
+  "preservedResourceReferences": 242,
+  "acceptedConstructionRecords": 108,
+  "nativeWindows": "NOT_RUN",
+  "visualAcceptance": "PENDING_USER_REVIEW",
+  "physicalInput": "NOT_REACCEPTED",
+  "independentBranches": "PRESERVED_UNMERGED",
+  "conversation": "Continue this conversation for corrections and acceptance.",
+  "technicalDelivery": "PASS_COMPLETE_MAC_R6_DELIVERED",
+  "liveLoopWraps": {
+    "ra2-2x": 10,
+    "ra2-4x": 9,
+    "yr-2x": 9,
+    "yr-4x": 10
+  },
+  "nativeGeometryComparisons": 72,
+  "reviewPlayback": "PASS_OFFLINE_R6_REVIEW_IMAGES_AND_COMPLETE_SEQUENTIAL_PLAYBACK",
+  "reviewImages": 9,
+  "reviewClips": 4,
+  "archiveVerification": {
+    "status": "PASS_ARCHIVE_AND_EXTRACTION_BYTES_LINKS_MODES_SIGNATURE",
+    "entries": 7712,
+    "bytes": 3975926275,
+    "sha256": "4418ee859549eeffca6fa9d461aeb3ab53630e27fcf18a5af66e80c7d0006d11",
+    "sourcePayloadParity": "PASS_EXCEPT_DECLARED_PACKAGE_ENTRYPOINT"
+  },
+  "retainedEvidence": "/Users/Aone/RA2remaster/project-history/presentation-r6-bb64eb45-20261021",
+  "review": "/Users/Aone/RA2remaster/project-history/presentation-r6-bb64eb45-20261021/Review/Open-Review.html",
+  "preservedPaths": 260,
+  "candidateFrozenPayloadParity": "PASS_IDENTICAL_217_PAYLOAD_FILES",
+  "independentBranchCompatibility": "PASS_NO_R6_ADDED_CONFLICT_PATHS_AT_PINNED_TIPS",
+  "cleanup": "PASS_ONLY_AUDITED_R6_TEMPORARY_COPIES_RETIRED",
+  "independentM24ConcurrentWorkingState": "ACTIVE_UNCOMMITTED_EDITS_CHANGED_DURING_R6_FINALIZATION; LEFT_UNTOUCHED; MERGE_PREVIEWS_COVER_COMMITTED_TIPS_ONLY"
+}

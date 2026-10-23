@@ -1,0 +1,338 @@
+{
+  "schema": "windows-return-main-integration-v1",
+  "status": "PASS_VALIDATED_COMBINED_SOURCE",
+  "date": "2026-10-11",
+  "mainPredecessor": "a5d7b86c3721511ec6c054a52dd3cdb0f7450c02",
+  "runtimeMerge": "3bebe8b40b02603e2eae96e30c8745e80c5294ca",
+  "returnedTip": "e57bfa414e249fb5a87cd27a4be97247f9b8f266",
+  "windowsUserVerifiedSource": "f17e896",
+  "returnFiles": 97,
+  "returnManifestSha256": "6a2c4475ff57c9791733d04125c349272ccada23da2f869109929351551ccf18",
+  "windowsEvidence": {
+    "baseline": {
+      "samples": 5,
+      "fpsMean": 32.252,
+      "fpsRange": [
+        28.44,
+        34.6
+      ]
+    },
+    "fix": {
+      "samples": 5,
+      "fpsMean": 59.714,
+      "fpsRange": [
+        55.51,
+        63.91
+      ]
+    },
+    "buildup": {
+      "buildups-hd4x.json": {
+        "samples": 96,
+        "rawDurationMs": [
+          755.9899999999907,
+          917.9375,
+          1062.6899999999441
+        ],
+        "midSequenceSwaps": 1
+      },
+      "buildups-original.json": {
+        "samples": 96,
+        "rawDurationMs": [
+          749.3050000001676,
+          914.0999999999767,
+          1003.8349999999627
+        ],
+        "midSequenceSwaps": 0
+      },
+      "buildups-hd4x-candidate-v2.json": {
+        "samples": 96,
+        "rawDurationMs": [
+          726.2050000000745,
+          806.3700000001118,
+          861.7599999997765
+        ],
+        "midSequenceSwaps": 0
+      }
+    },
+    "boundary": "Recomputed from the returned Windows raw evidence. All 96 buildup samples retained, including initial construction-yard probes and outliers; not a timing claim for combined M2.3 main."
+  },
+  "sourceParity": "All returned runtime and test changes identical; all later accepted M2.3 source retained; rejected C10 excluded.",
+  "tests": {
+    "focused": {
+      "pass": 60,
+      "fail": 0,
+      "assertions": 1492,
+      "files": 16
+    },
+    "protected": {
+      "pass": 49,
+      "fail": 0,
+      "assertions": 2288,
+      "files": 16
+    },
+    "fullBaseline": {
+      "pass": 551,
+      "fail": 12,
+      "loadErrorsIncluded": 2,
+      "files": 139
+    },
+    "fullCombined": {
+      "pass": 559,
+      "fail": 12,
+      "loadErrorsIncluded": 2,
+      "files": 142
+    },
+    "newFailures": 0,
+    "entryTypecheck": "PASS",
+    "optionalNodeTypecheck": "UNCHANGED_BASELINE_FAILURES_IN_VITE_CONFIG"
+  },
+  "nativeMac": {
+    "status": "PASS_COMBINED_WINDOWS_RETURN_NATIVE_REGRESSION",
+    "cases": [
+      {
+        "label": "yr-4x-stress",
+        "tickBefore": 0,
+        "tickAfter": 490,
+        "hdBindings": 135,
+        "matrixChecks": 24000,
+        "staleMatrices": 0,
+        "pixelViews": 3,
+        "pixelDifferences": [
+          0,
+          0,
+          0
+        ],
+        "building": "YAPOWR",
+        "midSequenceHdStates": [
+          true
+        ]
+      },
+      {
+        "label": "ra2-2x-small",
+        "tickBefore": 0,
+        "tickAfter": 486,
+        "hdBindings": 157,
+        "matrixChecks": 34740,
+        "staleMatrices": 0,
+        "pixelViews": 3,
+        "pixelDifferences": [
+          0,
+          0,
+          0
+        ],
+        "building": "GAPOWR",
+        "midSequenceHdStates": [
+          true
+        ]
+      },
+      {
+        "label": "ra2-4x-small",
+        "tickBefore": 0,
+        "tickAfter": 487,
+        "hdBindings": 157,
+        "matrixChecks": 34740,
+        "staleMatrices": 0,
+        "pixelViews": 3,
+        "pixelDifferences": [
+          0,
+          0,
+          0
+        ],
+        "building": "GAPOWR",
+        "midSequenceHdStates": [
+          true
+        ]
+      },
+      {
+        "label": "yr-2x-small",
+        "tickBefore": 0,
+        "tickAfter": 486,
+        "hdBindings": 157,
+        "matrixChecks": 34740,
+        "staleMatrices": 0,
+        "pixelViews": 3,
+        "pixelDifferences": [
+          0,
+          0,
+          0
+        ],
+        "building": "YAPOWR",
+        "midSequenceHdStates": [
+          false
+        ]
+      },
+      {
+        "label": "yr-original-small",
+        "tickBefore": 0,
+        "tickAfter": 485,
+        "hdBindings": 0,
+        "matrixChecks": 34740,
+        "staleMatrices": 0,
+        "pixelViews": 3,
+        "pixelDifferences": [
+          0,
+          0,
+          0
+        ],
+        "building": "YAPOWR",
+        "midSequenceHdStates": [
+          false
+        ]
+      }
+    ],
+    "visibleMatrixChecks": 162960,
+    "staleMatrices": 0,
+    "visibilityCases": {
+      "NATBNK-binding": "PASS",
+      "NAPSIS-binding": "PASS",
+      "YAYARD-binding": "PASS",
+      "YAGGUN-binding": "PASS",
+      "Tank-Bunker-occupy-evacuate": "PASS",
+      "Gatling-native-air-rotation": "PASS",
+      "Psychic-Sensor-native-detection": "PASS"
+    },
+    "aircraftAndRange": "PASS",
+    "pageConsoleWebglErrors": 0,
+    "boundary": "Independent copied and signed workspace package, isolated QA profiles, legal controlled fixtures, native orders and same-time pixels. Inherited Desktop labels in the raw smoke harness do not indicate a Desktop delivery. Parity draw counters describe the last scene and are not used as world-draw or performance measurements."
+  },
+  "registration": {
+    "status": "PASS_CURRENT_SELECTED_RESOURCE_REGISTRATION",
+    "sourceHead": "3bebe8b40b02603e2eae96e30c8745e80c5294ca",
+    "profileRoutes": 12,
+    "hdRoutes": 6857,
+    "environment": "environment-m2-3-oil-paired-drive-complete-v31",
+    "environmentFamilies": 238,
+    "terrain": "temperate-m2-3-gameplay-feedback-v12",
+    "terrainGroups": 23,
+    "ui": "yuri-emblem-ui-v1",
+    "prepared": {
+      "type": "prepared-hd-registered",
+      "members": 453,
+      "pages": 1205,
+      "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+    }
+  },
+  "mainResourcePreservation": {
+    "entries": 41960,
+    "status": "PASS_EXACT_METADATA"
+  },
+  "nativeWindowsCombinedM23": "NOT_RUN_ON_THIS_MAC; returned v2 has native Windows measurements and actual user verification",
+  "deferred": [
+    "Remaining HD buildup artwork and YAWEAP frame-0 flicker",
+    "Construction-yard deploy passability-island hitch",
+    "90+ FPS structural renderer work"
+  ],
+  "remotePush": "NOT_PERFORMED",
+  "evidence": [
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-return-integration-20261011-v1/return-validation.json",
+      "bytes": 20061,
+      "sha256": "cece97cdff5cd9fe5ac70c7716437685d9f2448636dd2e212545512f8cea13cd"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-return-integration-20261011-v1/return/RETURN-MANIFEST.json",
+      "bytes": 20298,
+      "sha256": "6a2c4475ff57c9791733d04125c349272ccada23da2f869109929351551ccf18"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-return-integration-20261011-v1/full-tests-current-main.log",
+      "bytes": 111814,
+      "sha256": "cd0717166922c40a0d303546688cd82a5f9fe9a5a3f7ff0bccfa4d78a43564d7"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-return-integration-20261011-v1/full-test-comparison.json",
+      "bytes": 2177,
+      "sha256": "411be381e9a00c012dab0403595afa985d7b949a0e03363490e5053c64eab049"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-return-integration-20261011-v1/typecheck-node-baseline.log",
+      "bytes": 1139,
+      "sha256": "fb5b4435a2b1338940892716a9e1620af9bcbbef52814794224955e9dfcf07ee"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/source-preservation.json",
+      "bytes": 3904,
+      "sha256": "74194cae34559a93b7d4a257fd84dbae39632fcd2d77c96d4e514b4f84f899c9"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/main-resource-preservation.json",
+      "bytes": 263,
+      "sha256": "83583c4103495bcdf59673746792a60b0781866368c71416d5291758ee47abc8"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/focused-tests-v2.log",
+      "bytes": 6731,
+      "sha256": "f11351de8b007fd8520ff993e85b272d7e0dd559b76a3005183519f9ba3fabd1"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/protected-tests.log",
+      "bytes": 5967,
+      "sha256": "ac23f8747431d4a187214679b7c6bb94c1bf03e71c12f747469bb4a3c2a1b637"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/full-tests-combined.log",
+      "bytes": 113240,
+      "sha256": "087d927c76f4b5af14ae864d2afa536121a798505e5b04b38581386fb903eac4"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/typecheck-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/typecheck-node.log",
+      "bytes": 1139,
+      "sha256": "fb5b4435a2b1338940892716a9e1620af9bcbbef52814794224955e9dfcf07ee"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/build-v1.log",
+      "bytes": 21009,
+      "sha256": "55c6e59298a564fc155331fc8c0baa06f156668301e9a1206a614fbb8da86265"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/package-v1/package-receipt.json",
+      "bytes": 1839191,
+      "sha256": "3ce5fcf8abdcb52c931c1a936918b7f216d445a0f47f5d0cdfde55b9b155a952"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/native-smoke-v1.mjs",
+      "bytes": 8528,
+      "sha256": "1b2078df44a47cf3a83bc2ed250a61483fb4649737da287d9e28ec4e08e4d1c8"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/native-return-checks.mjs",
+      "bytes": 7807,
+      "sha256": "4d61814e0cf4ab7be839b0d378f0de59f5ea8faf4996912d870a70c7cefa7fae"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/native-v2/report.json",
+      "bytes": 430270,
+      "sha256": "bb180da510fd90b0db3f4804f81cb42fe6a323fbb46546fe66300a4d2ad6bce7"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/native-visibility-v1/report.json",
+      "bytes": 2303070,
+      "sha256": "287c606346407700df0badc9ca083b09a3568298cb6b0346aaa5074f5ff5aaca"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/native-special.mjs",
+      "bytes": 3510,
+      "sha256": "3f61b2e3f1e86d2b7a3f284f3581c6378232c983d4b1ec1b6aa6761354c7e21c"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/native-special-v1/report.json",
+      "bytes": 46672,
+      "sha256": "7a519e7d38a8eb15cd8d76c9c1cffb03a59d4bdbcafc839a561a0b3342e2b40f"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/registration-v2.json",
+      "bytes": 8063,
+      "sha256": "116410cb622447b56c557c51abf25704e4c95c031cb0b51169c83feb4ad36961"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-return-20261011/.artifacts/windows-return-20261011/windows-evidence-summary.json",
+      "bytes": 1043,
+      "sha256": "d54b4f38db73e656a1e356de7ce873ad0b151dc0539e28b2b11d9c8d13b7f75c"
+    }
+  ]
+}

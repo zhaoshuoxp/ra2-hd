@@ -1,0 +1,111 @@
+{
+  "status": "MAC_TECHNICAL_PASS_VISUAL_PENDING",
+  "feedback": "User reports pixelated 4X material and road/grass/sand contact seams.",
+  "remadeMembers": 25,
+  "generatedMothers": 19,
+  "contactCorrectedMembers": 63,
+  "preservedGoodBridge": "ovrps02.ubn: all 30 density/frame pairs exact",
+  "selectedTerrain": {
+    "NEWURBAN": {
+      "schemaVersion": 1,
+      "revision": "newurban-m2-4-structures-material-contacts-r2",
+      "sha256": "bb75d2cb1bb0b327db085e16ce27e1f6cde2bd92797fd6e4e917699d63957806"
+    },
+    "DESERT": {
+      "schemaVersion": 1,
+      "revision": "desert-m2-4-structures-material-contacts-r2",
+      "sha256": "a5288dec4bc08ee14043ff7a24fa3b64ada994d935a8ca8375f0d3795297a54d"
+    }
+  },
+  "preservedGroups": {
+    "NEWURBAN": 16,
+    "DESERT": 19
+  },
+  "preservationAudit": ".artifacts/m2-4/structures-material-seams-r1-20261019/preservation-and-contact-audit-v1.json",
+  "runtime": "Affected Mac cases pass; reused contexts have identical client distribution and every encountered source atlas.",
+  "windows": "NOT_RUN",
+  "visualAcceptance": "ARTWORK_ACCEPTED_BRIDGE_CONTACT_OPEN",
+  "mainIntegration": "NOT_PERFORMED",
+  "perBatchGamePackageCreated": false,
+  "m24Complete": false,
+  "r1NativeCases": "Eight technically passed; internal visual QA found residual natural contact bands. Retain bridge/masonry/paving/barricade cases only for final evidence.",
+  "r2Scope": "Four NewUrban natural ramps and ten Desert ramps; exact R1 groups retained elsewhere.",
+  "runtimeSourceHead": "fed62c37ed2b616f7fb31f1ec843e5df2b26b815",
+  "sourceCheckpoints": {
+    "materialAndContactR1": "1a1081b9028765666f17c71614712376e37d1fd9",
+    "naturalContactR2": "fed62c37ed2b616f7fb31f1ec843e5df2b26b815"
+  },
+  "nativeSuite": {
+    "file": ".artifacts/m2-4/structures-material-seams-r1-20261019/native-suite-final.json",
+    "sha256": "60dc8a17291834a307cf9361c6f65021e725fc96e208db00354218c0a17dd8e1",
+    "cases": 8,
+    "r1ReusedCases": 4,
+    "freshR2Cases": 4,
+    "firstAttemptCases": 8
+  },
+  "peakWorldBytes": {
+    "2": 170146836,
+    "4": 648224300
+  },
+  "preparedCpuPeakBytes": 108112788,
+  "unchangedBudgetsMiB": {
+    "world2x": 512,
+    "world4x": 1280,
+    "preparedCpu": 128,
+    "ui": 16
+  },
+  "checks": {
+    "initialLoaderTests": {
+      "passCount": 97,
+      "assertions": 1506
+    },
+    "r2IncrementalLoaderTests": {
+      "passCount": 14,
+      "assertions": 931
+    },
+    "pythonTests": 9,
+    "entryTypecheck": "PASS",
+    "isolatedBuildR2": "PASS",
+    "codesignedMacArm64Host": "PASS",
+    "browser": "NOT_RUN_LOCAL_FILE_PROTOCOL_BLOCKED_BY_BROWSER_TOOL"
+  },
+  "review": {
+    "files": [
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-Structure-Materials-Seams-R2-20261019/M2.4-Structure-Materials-Seams-R2-Embedded.html",
+        "sha256": "7645f11a4d4a5dc1a3e7a67f49869e6cc9d2e095beea13df61a24914d0868956",
+        "bytes": 110474652
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-Structure-Materials-Seams-R2-20261019/M2.4-Structure-Materials-Seams-R2-Embedded.json",
+        "sha256": "a591968c8fe0f6c5b5fa5e17458bb0065b779834c4427e9d88b921de0bea26b1",
+        "bytes": 53889
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-Structure-Materials-Seams-R2-20261019/M2.4-Structure-Materials-Seams-R2-Resources.json",
+        "sha256": "551c73a4ea81e6c363f04b52009b650a6a0be471ad4bfd7b8007cf84d93cea47",
+        "bytes": 89347
+      }
+    ],
+    "embeddedPngs": 142,
+    "staticQa": "PASS_142_EMBEDDED_PNGS_DIMENSIONS_HASHES_AND_STATIC_CONTROLS"
+  },
+  "resourceHandoff": {
+    "file": ".artifacts/m2-4/structures-material-seams-r1-20261019/resource-handoff-r2.json",
+    "sha256": "551c73a4ea81e6c363f04b52009b650a6a0be471ad4bfd7b8007cf84d93cea47",
+    "verifiedFiles": 193,
+    "newMothers": 19
+  },
+  "failureHistory": {
+    "r1": "Native technical pass; internal visual QA found residual grass/sand planar bands. Retained as incomplete visual attempt.",
+    "r2": "Source-pinned natural contact calibration fixes the observed bands; fresh actual Mac crops inspected.",
+    "motherContainment": "Two failed equal-grid receipts retained; unchanged pixels passed measured-gutter containment and independent >=4X capacity."
+  },
+  "remainingScope": {
+    "newurbanAuthoredGaps": 363,
+    "desertAuthoredGaps": 202,
+    "originalNeighboringCliffsAndRoads": "Tracked missing families remain Original; do not treat contextual artwork as complete.",
+    "fullM24": "INCOMPLETE"
+  },
+  "userFeedbackRecord": ".artifacts/m2-4/bridge-road-contact-r3-20261019/user-acceptance-and-seam-feedback.json"
+}

@@ -1,0 +1,1299 @@
+{
+  "schema": "m2-4-urban-actors-batch62-source-preflight-v1",
+  "status": "PASS_NINE_ORIGINAL_ACTOR_SOURCES_PREPARED_NO_HD_COVERAGE",
+  "priorDelta": {
+    "file": ".artifacts/m2-4/urban-linked-batch61-v1/coverage-delta.json",
+    "sha256": "4384ea4b93c731ae07ec2d1c56ac769aed4458a78d7f64461b775efbd2ae742b",
+    "bytes": 11653
+  },
+  "sourceAudit": {
+    "file": "docs/m2-4-urban-remaining-after-batch56-20261016.json",
+    "sha256": "0af3bf85428516eea25ed0b9da209382d028fb4604e3c1a97911fbdddf0dcfe9",
+    "bytes": 314683
+  },
+  "originalGuide": {
+    "file": ".artifacts/m2-4/urban-native-v2/source.json",
+    "sha256": "18c8be9b73be4b2e2e8c8766d4388da69fd34881f56dbbb27b088c430557bf09",
+    "bytes": 19784757
+  },
+  "preparedSource": {
+    "file": ".artifacts/m2-4/urban-actors-native-batch62-v1/source.json",
+    "sha256": "800485c1bd559fcd26ef053755983fc14d5b9c53be42b81025f5e7d9578bdd42",
+    "bytes": 918002
+  },
+  "infantryWorklist": {
+    "file": ".artifacts/m2-4/urban-actors-native-batch62-v1/infantry-source-worklist.json",
+    "sha256": "591e19790799fc241199749c5974fb9b9415057ccc00775ac273329bc6b8e035",
+    "bytes": 631679
+  },
+  "families": 9,
+  "infantryFamilies": 3,
+  "vehicleFamilies": 6,
+  "infantryVisibleSlots": 602,
+  "untouchedNativeShadowSlots": 602,
+  "minimumInfantryDensityFrames": 1204,
+  "distinctInfantryMaterialCandidates": 602,
+  "groups": [
+    {
+      "key": "URBAN:infantry:civbbp.shp:70d3fd19f4c69552501aedbfaa9d31f7c42ee600aca41c8ffc34aa6473a45bff",
+      "category": "NEUTRAL_INFANTRY",
+      "member": "civbbp.shp",
+      "sha256": "70d3fd19f4c69552501aedbfaa9d31f7c42ee600aca41c8ffc34aa6473a45bff",
+      "identities": [
+        "CIVBBP"
+      ],
+      "maps": [
+        "ra2:mp34u4.map",
+        "yr:xhailmary.map",
+        "yr:xarena.map",
+        "yr:xmp34u4.map",
+        "yr:xpotomac.map",
+        "yr:mp34u4.map@a11379d07d0e"
+      ],
+      "editionRows": [
+        {
+          "edition": "ra2",
+          "id": "CIVBBP",
+          "key": "eeb191c0da7aaece5cc898023039282c0fe591c0768a3e5ac643a5101d8fa487",
+          "nativeRules": {
+            "UIName": "Name:CIV1",
+            "Name": "Civilian Baseball Player",
+            "Category": "Civilian",
+            "Strength": "50",
+            "Armor": "none",
+            "TechLevel": "-1",
+            "CrushSound": "InfantrySquish",
+            "Insignificant": "yes",
+            "Sight": "2",
+            "Speed": "4",
+            "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs",
+            "AllowedToStartInMultiplayer": "no",
+            "Cost": "10",
+            "Soylent": "100",
+            "Points": "1",
+            "Fraidycat": "yes",
+            "Civilian": "yes",
+            "Nominal": "yes",
+            "Pip": "yellow",
+            "VoiceSelect": "CivAllSelect",
+            "VoiceMove": "CivAllMove",
+            "VoiceAttack": "CivAllAttackCommand",
+            "VoiceFeedback": "CivAllFear",
+            "VoiceSpecialAttack": "CivAllMove",
+            "DieSound": "CivAllDie",
+            "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+            "PhysicalSize": "1",
+            "MovementZone": "Infantry",
+            "ThreatPosed": "0",
+            "ImmuneToVeins": "yes",
+            "Size": "1",
+            "Trainable": "no"
+          },
+          "nativeArt": {
+            "Sequence": "CivSequence",
+            "Crawls": "yes",
+            "FireUp": "2"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "native-frames",
+            "native-shadow",
+            "damage-removal"
+          ],
+          "usage": {
+            "ra2:mp34u4.map": {
+              "count": 9,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "edition": "yr",
+          "id": "CIVBBP",
+          "key": "c975433e232ec9f6250fc7f051080cc009b336806ae92c1be24520909f831d72",
+          "nativeRules": {
+            "UIName": "Name:CIV1",
+            "Name": "Civilian Baseball Player",
+            "Category": "Civilian",
+            "Strength": "50",
+            "Armor": "none",
+            "TechLevel": "-1",
+            "CrushSound": "InfantrySquish",
+            "Insignificant": "yes",
+            "Sight": "2",
+            "Speed": "4",
+            "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+            "AllowedToStartInMultiplayer": "no",
+            "Cost": "10",
+            "Soylent": "100",
+            "Points": "1",
+            "Fraidycat": "yes",
+            "Civilian": "yes",
+            "Nominal": "yes",
+            "Pip": "yellow",
+            "VoiceSelect": "CivAllSelect",
+            "VoiceMove": "CivAllMove",
+            "VoiceAttack": "CivAllAttackCommand",
+            "VoiceFeedback": "CivAllFear",
+            "VoiceSpecialAttack": "CivAllMove",
+            "DieSound": "CivAllDie",
+            "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+            "PhysicalSize": "1",
+            "MovementZone": "Infantry",
+            "ThreatPosed": "0",
+            "ImmuneToVeins": "yes",
+            "Size": "1",
+            "Trainable": "no"
+          },
+          "nativeArt": {
+            "Sequence": "CivSequence",
+            "Crawls": "yes",
+            "FireUp": "2"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "native-frames",
+            "native-shadow",
+            "damage-removal"
+          ],
+          "usage": {
+            "yr:xhailmary.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xarena.map": {
+              "count": 6,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xmp34u4.map": {
+              "count": 9,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xpotomac.map": {
+              "count": 9,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:mp34u4.map@a11379d07d0e": {
+              "count": 9,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "completeDependencies": [],
+      "exactPreparedGuide": {
+        "file": ".artifacts/m2-4/urban-native-v2/source.json",
+        "sha256": "18c8be9b73be4b2e2e8c8766d4388da69fd34881f56dbbb27b088c430557bf09"
+      },
+      "originalFile": {
+        "file": ".artifacts/m2-4/urban-native-v2/native/civbbp-shp-70d3fd19f4c69552501aedbfaa9d31f7c42ee600aca41c8ffc34aa6473a45bff-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/civbbp.shp",
+        "sha256": "70d3fd19f4c69552501aedbfaa9d31f7c42ee600aca41c8ffc34aa6473a45bff"
+      },
+      "format": "shp",
+      "sourceCanvas": [
+        60,
+        72
+      ],
+      "nativeFrameCounts": {
+        "total": 380,
+        "body": 190
+      },
+      "maximumBodyTrim": [
+        36,
+        39
+      ],
+      "selectedHdCoverage": false,
+      "originalMapEligibilityChanged": false
+    },
+    {
+      "key": "URBAN:vehicle:jeep.vxl:5f500e3ad7e7d916488e1b56937bf26116acbe546fdd90dac9c310e76ffd192a",
+      "category": "NEUTRAL_VEHICLE",
+      "member": "jeep.vxl",
+      "sha256": "5f500e3ad7e7d916488e1b56937bf26116acbe546fdd90dac9c310e76ffd192a",
+      "identities": [
+        "JEEP"
+      ],
+      "maps": [
+        "yr:hillbtwn.map"
+      ],
+      "editionRows": [
+        {
+          "edition": "yr",
+          "id": "JEEP",
+          "key": "650556f307b3ce557faa897acae0962db04b685e323e220a762a31451dff78d4",
+          "nativeRules": {
+            "UIName": "Name:TRUCKA",
+            "Name": "Jeep",
+            "Prerequisite": "NAWEAP",
+            "Strength": "100",
+            "Category": "Transport",
+            "Armor": "light",
+            "DeployTime": ".022",
+            "TechLevel": "-1",
+            "Sight": "8",
+            "PipScale": "Passengers",
+            "Speed": "8",
+            "CrateGoodie": "no",
+            "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+            "AllowedToStartInMultiplayer": "no",
+            "Cost": "0",
+            "Soylent": "100",
+            "Points": "20",
+            "ROT": "5",
+            "Crusher": "no",
+            "Turret": "no",
+            "IsSelectableCombatant": "yes",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "VoiceSelect": "GenCarSelect",
+            "VoiceMove": "MCVMoveStart",
+            "VoiceAttack": "",
+            "VoiceFeedback": "",
+            "DieSound": "GenVehicleDie",
+            "CrushSound": "TankCrush",
+            "MaxDebris": "3",
+            "DebrisTypes": "TIRE",
+            "DebrisMaximums": "6",
+            "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+            "MovementZone": "Normal",
+            "ThreatPosed": "0",
+            "DamageParticleSystems": "SparkSys,SmallGreySSys",
+            "SpecialThreatValue": "1",
+            "ZFudgeColumn": "10",
+            "ZFudgeTunnel": "13",
+            "ImmuneToRadiation": "no",
+            "ImmuneToPsionics": "no",
+            "Size": "6",
+            "SizeLimit": "2",
+            "Insignificant": "yes",
+            "Trainable": "no"
+          },
+          "nativeArt": {
+            "Voxel": "yes"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "native-frames",
+            "native-shadow",
+            "damage-removal"
+          ],
+          "usage": {
+            "yr:hillbtwn.map": {
+              "count": 6,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "completeDependencies": [
+        {
+          "role": "HVA",
+          "source": {
+            "member": "jeep.hva",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "f189c5e9ba963f2149553a27d849c101c605382a3229280db7c47b57bf967128",
+            "bytes": 88
+          }
+        },
+        {
+          "role": "VPL",
+          "source": {
+            "member": "voxels.vpl",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "2d75fff8a6872ffe98308c7009858a9e904696e1529bc649181a44993979081c",
+            "bytes": 8976
+          }
+        },
+        {
+          "role": "TUR",
+          "source": {
+            "member": "jeeptur.vxl",
+            "archive": "ra2.mix/local.mix",
+            "sha256": "80d630cd03fd82baa4c51d9c53eb3c9fba25929f2d2e964769e1f047f014214a",
+            "bytes": 1202
+          },
+          "hva": {
+            "member": "jeeptur.hva",
+            "archive": "ra2.mix/local.mix",
+            "sha256": "7715d82ae89cbeb40594b9e81a1f86e2227e42de0ac6aac699101c8c868828fe",
+            "bytes": 88
+          }
+        }
+      ],
+      "exactPreparedGuide": {
+        "file": ".artifacts/m2-4/urban-native-v2/source.json",
+        "sha256": "18c8be9b73be4b2e2e8c8766d4388da69fd34881f56dbbb27b088c430557bf09"
+      },
+      "originalFile": {
+        "file": ".artifacts/m2-4/urban-native-v2/native/jeep-vxl-5f500e3ad7e7d916488e1b56937bf26116acbe546fdd90dac9c310e76ffd192a-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/jeep.vxl",
+        "sha256": "5f500e3ad7e7d916488e1b56937bf26116acbe546fdd90dac9c310e76ffd192a"
+      },
+      "format": "vxl",
+      "sourceCanvas": null,
+      "nativeFrameCounts": null,
+      "maximumBodyTrim": null,
+      "selectedHdCoverage": false,
+      "originalMapEligibilityChanged": false
+    },
+    {
+      "key": "URBAN:vehicle:ycab.vxl:da8eec329bf1fc3f8a1ce1d7a586c5a620b3e47fa286ef0bbe0495c37df9d7e2",
+      "category": "NEUTRAL_VEHICLE",
+      "member": "ycab.vxl",
+      "sha256": "da8eec329bf1fc3f8a1ce1d7a586c5a620b3e47fa286ef0bbe0495c37df9d7e2",
+      "identities": [
+        "YCAB"
+      ],
+      "maps": [
+        "yr:hillbtwn.map"
+      ],
+      "editionRows": [
+        {
+          "edition": "yr",
+          "id": "YCAB",
+          "key": "3bb9b99a3cafa879fa62c9b733d2497a7a790571c85520be6f0ee4497890a75c",
+          "nativeRules": {
+            "UIName": "Name:YCAB",
+            "Name": "Yellow Cab",
+            "Prerequisite": "NAWEAP",
+            "Strength": "100",
+            "Category": "Transport",
+            "Armor": "light",
+            "DeployTime": ".022",
+            "TechLevel": "-1",
+            "Sight": "8",
+            "PipScale": "Passengers",
+            "Speed": "8",
+            "CrateGoodie": "no",
+            "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+            "AllowedToStartInMultiplayer": "no",
+            "Cost": "0",
+            "Soylent": "100",
+            "Points": "20",
+            "ROT": "5",
+            "Crusher": "no",
+            "Turret": "no",
+            "IsSelectableCombatant": "yes",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "VoiceSelect": "GenCarSelect",
+            "VoiceMove": "",
+            "VoiceAttack": "",
+            "VoiceFeedback": "",
+            "MoveStart": "GenCarMoveStart",
+            "DieSound": "GenVehicleDie",
+            "CrushSound": "TankCrush",
+            "MaxDebris": "3",
+            "DebrisTypes": "TIRE",
+            "DebrisMaximums": "6",
+            "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+            "MovementZone": "Normal",
+            "ThreatPosed": "0",
+            "DamageParticleSystems": "SparkSys,SmallGreySSys",
+            "SpecialThreatValue": "1",
+            "ZFudgeColumn": "10",
+            "ZFudgeTunnel": "13",
+            "ImmuneToRadiation": "no",
+            "ImmuneToPsionics": "no",
+            "Size": "4",
+            "SizeLimit": "2",
+            "Insignificant": "yes",
+            "Trainable": "no"
+          },
+          "nativeArt": {
+            "Voxel": "yes"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "native-frames",
+            "native-shadow",
+            "damage-removal"
+          ],
+          "usage": {
+            "yr:hillbtwn.map": {
+              "count": 3,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "completeDependencies": [
+        {
+          "role": "HVA",
+          "source": {
+            "member": "ycab.hva",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "cc13f4045cad45d6aa2b283a3e10e6e3189b7d5c20f56d6c40b176f827346c6e",
+            "bytes": 88
+          }
+        },
+        {
+          "role": "VPL",
+          "source": {
+            "member": "voxels.vpl",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "2d75fff8a6872ffe98308c7009858a9e904696e1529bc649181a44993979081c",
+            "bytes": 8976
+          }
+        }
+      ],
+      "exactPreparedGuide": {
+        "file": ".artifacts/m2-4/urban-native-v2/source.json",
+        "sha256": "18c8be9b73be4b2e2e8c8766d4388da69fd34881f56dbbb27b088c430557bf09"
+      },
+      "originalFile": {
+        "file": ".artifacts/m2-4/urban-native-v2/native/ycab-vxl-da8eec329bf1fc3f8a1ce1d7a586c5a620b3e47fa286ef0bbe0495c37df9d7e2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/ycab.vxl",
+        "sha256": "da8eec329bf1fc3f8a1ce1d7a586c5a620b3e47fa286ef0bbe0495c37df9d7e2"
+      },
+      "format": "vxl",
+      "sourceCanvas": null,
+      "nativeFrameCounts": null,
+      "maximumBodyTrim": null,
+      "selectedHdCoverage": false,
+      "originalMapEligibilityChanged": false
+    },
+    {
+      "key": "URBAN:vehicle:bcab.vxl:b37456bba174035148e3a653277565e997a97f107a724e3faf5b8e9756d3239c",
+      "category": "NEUTRAL_VEHICLE",
+      "member": "bcab.vxl",
+      "sha256": "b37456bba174035148e3a653277565e997a97f107a724e3faf5b8e9756d3239c",
+      "identities": [
+        "BCAB"
+      ],
+      "maps": [
+        "yr:hillbtwn.map"
+      ],
+      "editionRows": [
+        {
+          "edition": "yr",
+          "id": "BCAB",
+          "key": "8bcc3c6f43b9171be9be82dd2237bf0135ad9e1a026d88a6589913a99858ce9a",
+          "nativeRules": {
+            "UIName": "Name:BlackCab",
+            "Name": "Black Cab",
+            "Prerequisite": "NAWEAP",
+            "Strength": "100",
+            "Category": "Transport",
+            "Armor": "light",
+            "DeployTime": ".022",
+            "TechLevel": "-1",
+            "Sight": "8",
+            "PipScale": "Passengers",
+            "Speed": "8",
+            "CrateGoodie": "no",
+            "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+            "AllowedToStartInMultiplayer": "no",
+            "Cost": "0",
+            "Soylent": "100",
+            "Points": "20",
+            "ROT": "5",
+            "Crusher": "no",
+            "Turret": "no",
+            "IsSelectableCombatant": "yes",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "VoiceSelect": "GenCarSelect",
+            "VoiceMove": "MCVMoveStart",
+            "VoiceAttack": "",
+            "VoiceFeedback": "",
+            "DieSound": "GenVehicleDie",
+            "CrushSound": "TankCrush",
+            "MaxDebris": "3",
+            "DebrisTypes": "TIRE",
+            "DebrisMaximums": "6",
+            "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+            "MovementZone": "Normal",
+            "ThreatPosed": "0",
+            "DamageParticleSystems": "SparkSys,SmallGreySSys",
+            "SpecialThreatValue": "1",
+            "ZFudgeColumn": "10",
+            "ZFudgeTunnel": "13",
+            "ImmuneToRadiation": "no",
+            "ImmuneToPsionics": "no",
+            "Size": "4",
+            "SizeLimit": "2",
+            "Insignificant": "yes",
+            "Trainable": "no"
+          },
+          "nativeArt": {
+            "Voxel": "yes"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "native-frames",
+            "native-shadow",
+            "damage-removal"
+          ],
+          "usage": {
+            "yr:hillbtwn.map": {
+              "count": 2,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "completeDependencies": [
+        {
+          "role": "HVA",
+          "source": {
+            "member": "bcab.hva",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "bac129fb825906832a7c3928017e30baf5db5f744df79425ba8cc91468f40bd7",
+            "bytes": 88
+          }
+        },
+        {
+          "role": "VPL",
+          "source": {
+            "member": "voxels.vpl",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "2d75fff8a6872ffe98308c7009858a9e904696e1529bc649181a44993979081c",
+            "bytes": 8976
+          }
+        }
+      ],
+      "exactPreparedGuide": {
+        "file": ".artifacts/m2-4/urban-native-v2/source.json",
+        "sha256": "18c8be9b73be4b2e2e8c8766d4388da69fd34881f56dbbb27b088c430557bf09"
+      },
+      "originalFile": {
+        "file": ".artifacts/m2-4/urban-native-v2/native/bcab-vxl-b37456bba174035148e3a653277565e997a97f107a724e3faf5b8e9756d3239c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/bcab.vxl",
+        "sha256": "b37456bba174035148e3a653277565e997a97f107a724e3faf5b8e9756d3239c"
+      },
+      "format": "vxl",
+      "sourceCanvas": null,
+      "nativeFrameCounts": null,
+      "maximumBodyTrim": null,
+      "selectedHdCoverage": false,
+      "originalMapEligibilityChanged": false
+    },
+    {
+      "key": "URBAN:vehicle:ambu.vxl:f47ca282f5a5955979816decdd4f69a350986f412cf95b110d92f2716ee155b8",
+      "category": "NEUTRAL_VEHICLE",
+      "member": "ambu.vxl",
+      "sha256": "f47ca282f5a5955979816decdd4f69a350986f412cf95b110d92f2716ee155b8",
+      "identities": [
+        "AMBU"
+      ],
+      "maps": [
+        "yr:hillbtwn.map"
+      ],
+      "editionRows": [
+        {
+          "edition": "yr",
+          "id": "AMBU",
+          "key": "8c858abee1fbd39113c4915a29e7ca8472c69cb004a5e685aa3d4df197a36d80",
+          "nativeRules": {
+            "UIName": "Name:AMBU",
+            "Name": "Ambulance",
+            "Prerequisite": "NAWEAP",
+            "Strength": "100",
+            "Category": "Transport",
+            "Armor": "light",
+            "DeployTime": ".022",
+            "TechLevel": "-1",
+            "Sight": "8",
+            "PipScale": "Passengers",
+            "Speed": "8",
+            "CrateGoodie": "no",
+            "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+            "AllowedToStartInMultiplayer": "no",
+            "Cost": "0",
+            "Soylent": "100",
+            "Points": "20",
+            "ROT": "5",
+            "Crusher": "no",
+            "Turret": "no",
+            "IsSelectableCombatant": "yes",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "VoiceSelect": "GenCarSelect",
+            "VoiceMove": "MCVMoveStart",
+            "VoiceAttack": "",
+            "VoiceFeedback": "",
+            "DieSound": "GenVehicleDie",
+            "MaxDebris": "3",
+            "DebrisTypes": "TIRE",
+            "DebrisMaximums": "6",
+            "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+            "MovementZone": "Normal",
+            "ThreatPosed": "0",
+            "DamageParticleSystems": "SparkSys,SmallGreySSys",
+            "SpecialThreatValue": "1",
+            "ZFudgeColumn": "10",
+            "ZFudgeTunnel": "13",
+            "ImmuneToRadiation": "no",
+            "ImmuneToPsionics": "no",
+            "Size": "4",
+            "SizeLimit": "2",
+            "Insignificant": "yes",
+            "Trainable": "no"
+          },
+          "nativeArt": {
+            "Voxel": "yes"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "native-frames",
+            "native-shadow",
+            "damage-removal"
+          ],
+          "usage": {
+            "yr:hillbtwn.map": {
+              "count": 3,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "completeDependencies": [
+        {
+          "role": "HVA",
+          "source": {
+            "member": "ambu.hva",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "766b01d9946ed96e4f90767669ac498b3de3921be9c599a34c08c861e3c57c4a",
+            "bytes": 88
+          }
+        },
+        {
+          "role": "VPL",
+          "source": {
+            "member": "voxels.vpl",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "2d75fff8a6872ffe98308c7009858a9e904696e1529bc649181a44993979081c",
+            "bytes": 8976
+          }
+        }
+      ],
+      "exactPreparedGuide": {
+        "file": ".artifacts/m2-4/urban-native-v2/source.json",
+        "sha256": "18c8be9b73be4b2e2e8c8766d4388da69fd34881f56dbbb27b088c430557bf09"
+      },
+      "originalFile": {
+        "file": ".artifacts/m2-4/urban-native-v2/native/ambu-vxl-f47ca282f5a5955979816decdd4f69a350986f412cf95b110d92f2716ee155b8-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/ambu.vxl",
+        "sha256": "f47ca282f5a5955979816decdd4f69a350986f412cf95b110d92f2716ee155b8"
+      },
+      "format": "vxl",
+      "sourceCanvas": null,
+      "nativeFrameCounts": null,
+      "maximumBodyTrim": null,
+      "selectedHdCoverage": false,
+      "originalMapEligibilityChanged": false
+    },
+    {
+      "key": "URBAN:vehicle:ftrk.vxl:f436503bd9de36111ea13caaf5ad8c72d9b8b45632bd43a619d8e5953d33ac36",
+      "category": "NEUTRAL_VEHICLE",
+      "member": "ftrk.vxl",
+      "sha256": "f436503bd9de36111ea13caaf5ad8c72d9b8b45632bd43a619d8e5953d33ac36",
+      "identities": [
+        "FTRK"
+      ],
+      "maps": [
+        "yr:hillbtwn.map"
+      ],
+      "editionRows": [
+        {
+          "edition": "yr",
+          "id": "FTRK",
+          "key": "aae64e08fb7260c39697ca85f44f30cf581e4fe70c8bcb7e7b261730b8b480ad",
+          "nativeRules": {
+            "UIName": "Name:FTRK",
+            "Name": "Fire Truck",
+            "Prerequisite": "NAWEAP",
+            "Strength": "100",
+            "Category": "Transport",
+            "Armor": "light",
+            "DeployTime": ".022",
+            "TechLevel": "-1",
+            "Sight": "8",
+            "PipScale": "Passengers",
+            "Speed": "8",
+            "CrateGoodie": "no",
+            "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+            "AllowedToStartInMultiplayer": "no",
+            "Cost": "0",
+            "Soylent": "100",
+            "Points": "20",
+            "ROT": "5",
+            "Crusher": "no",
+            "Turret": "no",
+            "IsSelectableCombatant": "yes",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "VoiceSelect": "GenCarSelect",
+            "VoiceMove": "MCVMoveStart",
+            "VoiceAttack": "",
+            "VoiceFeedback": "",
+            "DieSound": "GenVehicleDie",
+            "MaxDebris": "3",
+            "DebrisTypes": "TIRE",
+            "DebrisMaximums": "6",
+            "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+            "MovementZone": "Normal",
+            "ThreatPosed": "0",
+            "DamageParticleSystems": "SparkSys,SmallGreySSys",
+            "SpecialThreatValue": "1",
+            "ZFudgeColumn": "10",
+            "ZFudgeTunnel": "13",
+            "ImmuneToRadiation": "no",
+            "ImmuneToPsionics": "no",
+            "Size": "4",
+            "SizeLimit": "2",
+            "Insignificant": "yes",
+            "Trainable": "no"
+          },
+          "nativeArt": {
+            "Voxel": "yes"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "native-frames",
+            "native-shadow",
+            "damage-removal"
+          ],
+          "usage": {
+            "yr:hillbtwn.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "completeDependencies": [
+        {
+          "role": "HVA",
+          "source": {
+            "member": "ftrk.hva",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "6b5355256b6afc5ece87ba31d178a6a28dc6809d0c82fd9c32fcccc6be7b3f64",
+            "bytes": 88
+          }
+        },
+        {
+          "role": "VPL",
+          "source": {
+            "member": "voxels.vpl",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "2d75fff8a6872ffe98308c7009858a9e904696e1529bc649181a44993979081c",
+            "bytes": 8976
+          }
+        }
+      ],
+      "exactPreparedGuide": {
+        "file": ".artifacts/m2-4/urban-native-v2/source.json",
+        "sha256": "18c8be9b73be4b2e2e8c8766d4388da69fd34881f56dbbb27b088c430557bf09"
+      },
+      "originalFile": {
+        "file": ".artifacts/m2-4/urban-native-v2/native/ftrk-vxl-f436503bd9de36111ea13caaf5ad8c72d9b8b45632bd43a619d8e5953d33ac36-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/ftrk.vxl",
+        "sha256": "f436503bd9de36111ea13caaf5ad8c72d9b8b45632bd43a619d8e5953d33ac36"
+      },
+      "format": "vxl",
+      "sourceCanvas": null,
+      "nativeFrameCounts": null,
+      "maximumBodyTrim": null,
+      "selectedHdCoverage": false,
+      "originalMapEligibilityChanged": false
+    },
+    {
+      "key": "URBAN:vehicle:civp.vxl:0a8e6a2a0681cfa12c03ff10ff05e2de482e2987b3ca47bb491a1afce98cd7b9",
+      "category": "NEUTRAL_VEHICLE",
+      "member": "civp.vxl",
+      "sha256": "0a8e6a2a0681cfa12c03ff10ff05e2de482e2987b3ca47bb491a1afce98cd7b9",
+      "identities": [
+        "CIVP"
+      ],
+      "maps": [
+        "yr:xoceansid.map"
+      ],
+      "editionRows": [
+        {
+          "edition": "yr",
+          "id": "CIVP",
+          "key": "4200f3370c70dc09b49ac7adeb72b383aa6358c38d327901aae2b627dd4c7b2c",
+          "nativeRules": {
+            "UIName": "Name:Civilian_Plane",
+            "Name": "Civilian Plane",
+            "Prerequisite": "NAWEAP",
+            "Strength": "100",
+            "Category": "Transport",
+            "Armor": "light",
+            "DeployTime": ".022",
+            "TechLevel": "-1",
+            "Sight": "8",
+            "PipScale": "Passengers",
+            "Speed": "8",
+            "CrateGoodie": "no",
+            "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+            "AllowedToStartInMultiplayer": "no",
+            "Cost": "0",
+            "Points": "20",
+            "ROT": "5",
+            "Crusher": "no",
+            "Turret": "no",
+            "IsSelectableCombatant": "yes",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "VoiceSelect": "",
+            "VoiceMove": "MCVMoveStart",
+            "VoiceAttack": "",
+            "VoiceFeedback": "",
+            "DieSound": "GenVehicleDie",
+            "MaxDebris": "3",
+            "DebrisTypes": "TIRE",
+            "DebrisMaximums": "6",
+            "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+            "MovementZone": "Normal",
+            "ThreatPosed": "0",
+            "DamageParticleSystems": "SparkSys,SmallGreySSys",
+            "SpecialThreatValue": "1",
+            "ZFudgeColumn": "10",
+            "ZFudgeTunnel": "13",
+            "ImmuneToRadiation": "no",
+            "ImmuneToPsionics": "yes",
+            "Size": "4",
+            "SizeLimit": "2",
+            "Insignificant": "yes",
+            "Trainable": "no"
+          },
+          "nativeArt": {
+            "Voxel": "yes"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "native-frames",
+            "native-shadow",
+            "damage-removal"
+          ],
+          "usage": {
+            "yr:xoceansid.map": {
+              "count": 14,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "completeDependencies": [
+        {
+          "role": "HVA",
+          "source": {
+            "member": "civp.hva",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "1fa19e2e2af56aee200f8c549e4f28d9d25138bd9412cb7eec445d23d6e697e2",
+            "bytes": 88
+          }
+        },
+        {
+          "role": "VPL",
+          "source": {
+            "member": "voxels.vpl",
+            "archive": "ra2md.mix/localmd.mix",
+            "sha256": "2d75fff8a6872ffe98308c7009858a9e904696e1529bc649181a44993979081c",
+            "bytes": 8976
+          }
+        }
+      ],
+      "exactPreparedGuide": {
+        "file": ".artifacts/m2-4/urban-native-v2/source.json",
+        "sha256": "18c8be9b73be4b2e2e8c8766d4388da69fd34881f56dbbb27b088c430557bf09"
+      },
+      "originalFile": {
+        "file": ".artifacts/m2-4/urban-native-v2/native/civp-vxl-0a8e6a2a0681cfa12c03ff10ff05e2de482e2987b3ca47bb491a1afce98cd7b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/civp.vxl",
+        "sha256": "0a8e6a2a0681cfa12c03ff10ff05e2de482e2987b3ca47bb491a1afce98cd7b9"
+      },
+      "format": "vxl",
+      "sourceCanvas": null,
+      "nativeFrameCounts": null,
+      "maximumBodyTrim": null,
+      "selectedHdCoverage": false,
+      "originalMapEligibilityChanged": false
+    },
+    {
+      "key": "URBAN:infantry:pres.shp:368fcc4f888ec4b73c1e337fd1e89d40e6cc538ca7140a2e564a175d18d43737",
+      "category": "NEUTRAL_INFANTRY",
+      "member": "pres.shp",
+      "sha256": "368fcc4f888ec4b73c1e337fd1e89d40e6cc538ca7140a2e564a175d18d43737",
+      "identities": [
+        "PRES"
+      ],
+      "maps": [
+        "yr:xpotomac.map"
+      ],
+      "editionRows": [
+        {
+          "edition": "yr",
+          "id": "PRES",
+          "key": "382b0082f840595595b4d020bdf6a0921541a2638d14a4cce102db74a0bc5628",
+          "nativeRules": {
+            "UIName": "Name:PRES",
+            "Name": "President",
+            "Category": "Civilian",
+            "Strength": "50",
+            "Armor": "none",
+            "TechLevel": "-1",
+            "CrushSound": "InfantrySquish",
+            "Insignificant": "yes",
+            "Sight": "2",
+            "Speed": "4",
+            "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+            "AllowedToStartInMultiplayer": "no",
+            "Cost": "10",
+            "Soylent": "2000",
+            "Points": "1",
+            "Fraidycat": "yes",
+            "Civilian": "yes",
+            "Nominal": "yes",
+            "Pip": "yellow",
+            "VoiceSelect": "",
+            "VoiceMove": "",
+            "VoiceAttack": "",
+            "VoiceFeedback": "",
+            "VoiceSpecialAttack": "",
+            "DieSound": "CivFatDie",
+            "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+            "PhysicalSize": "1",
+            "MovementZone": "Infantry",
+            "ThreatPosed": "0",
+            "ImmuneToVeins": "yes",
+            "Size": "1",
+            "IFVMode": "12",
+            "UseOwnName": "true"
+          },
+          "nativeArt": {
+            "Cameo": "SHKICON",
+            "AltCameo": "SHKUICO",
+            "Sequence": "CivSequence",
+            "Crawls": "yes",
+            "Remapable": "yes",
+            "FireUp": "2",
+            "PrimaryFireFLH": "100,-25,135",
+            "SecondaryFireFLH": "100,-25,135"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "native-frames",
+            "native-shadow",
+            "damage-removal"
+          ],
+          "usage": {
+            "yr:xpotomac.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "completeDependencies": [],
+      "exactPreparedGuide": {
+        "file": ".artifacts/m2-4/urban-native-v2/source.json",
+        "sha256": "18c8be9b73be4b2e2e8c8766d4388da69fd34881f56dbbb27b088c430557bf09"
+      },
+      "originalFile": {
+        "file": ".artifacts/m2-4/urban-native-v2/native/pres-shp-368fcc4f888ec4b73c1e337fd1e89d40e6cc538ca7140a2e564a175d18d43737-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/pres.shp",
+        "sha256": "368fcc4f888ec4b73c1e337fd1e89d40e6cc538ca7140a2e564a175d18d43737"
+      },
+      "format": "shp",
+      "sourceCanvas": [
+        102,
+        68
+      ],
+      "nativeFrameCounts": {
+        "total": 364,
+        "body": 182
+      },
+      "maximumBodyTrim": [
+        35,
+        37
+      ],
+      "selectedHdCoverage": false,
+      "originalMapEligibilityChanged": false
+    },
+    {
+      "key": "URBAN:infantry:ssrv.shp:1fa2284d5696988daba0acc1dc99209051f4bdf293f8de7680c49e11bb0f6ffa",
+      "category": "NEUTRAL_INFANTRY",
+      "member": "ssrv.shp",
+      "sha256": "1fa2284d5696988daba0acc1dc99209051f4bdf293f8de7680c49e11bb0f6ffa",
+      "identities": [
+        "SSRV"
+      ],
+      "maps": [
+        "yr:xpotomac.map"
+      ],
+      "editionRows": [
+        {
+          "edition": "yr",
+          "id": "SSRV",
+          "key": "30a68b80c3c6d6c54e51f83b633ed7143422ebc7abbb630deb733d8f8ac2b0db",
+          "nativeRules": {
+            "UIName": "Name:SecretService",
+            "Name": "Secret Service",
+            "Category": "Soldier",
+            "Strength": "50",
+            "Primary": "Pistola",
+            "Armor": "none",
+            "TechLevel": "-1",
+            "CrushSound": "InfantrySquish",
+            "Sight": "2",
+            "Speed": "4",
+            "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+            "AllowedToStartInMultiplayer": "no",
+            "Cost": "10",
+            "Soylent": "100",
+            "Points": "1",
+            "Pip": "white",
+            "VoiceSelect": "SSSelect",
+            "VoiceMove": "SSMove",
+            "VoiceAttack": "SSAttackCommand",
+            "VoiceFeedback": "",
+            "VoiceSpecialAttack": "SSMove",
+            "DieSound": "SSDie",
+            "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+            "PhysicalSize": "1",
+            "MovementZone": "Infantry",
+            "ThreatPosed": "0",
+            "ImmuneToVeins": "yes",
+            "Size": "1",
+            "IFVMode": "0"
+          },
+          "nativeArt": {
+            "Cameo": "SHKICON",
+            "AltCameo": "SHKUICO",
+            "Sequence": "CivGunSequence",
+            "Crawls": "yes",
+            "Remapable": "yes",
+            "FireUp": "2",
+            "PrimaryFireFLH": "100,-25,135",
+            "SecondaryFireFLH": "100,-25,135"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "native-frames",
+            "native-shadow",
+            "damage-removal"
+          ],
+          "usage": {
+            "yr:xpotomac.map": {
+              "count": 2,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "completeDependencies": [],
+      "exactPreparedGuide": {
+        "file": ".artifacts/m2-4/urban-native-v2/source.json",
+        "sha256": "18c8be9b73be4b2e2e8c8766d4388da69fd34881f56dbbb27b088c430557bf09"
+      },
+      "originalFile": {
+        "file": ".artifacts/m2-4/urban-native-v2/native/ssrv-shp-1fa2284d5696988daba0acc1dc99209051f4bdf293f8de7680c49e11bb0f6ffa-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/ssrv.shp",
+        "sha256": "1fa2284d5696988daba0acc1dc99209051f4bdf293f8de7680c49e11bb0f6ffa"
+      },
+      "format": "shp",
+      "sourceCanvas": [
+        110,
+        84
+      ],
+      "nativeFrameCounts": {
+        "total": 460,
+        "body": 230
+      },
+      "maximumBodyTrim": [
+        44,
+        36
+      ],
+      "selectedHdCoverage": false,
+      "originalMapEligibilityChanged": false
+    }
+  ],
+  "originalDependencies": [
+    {
+      "file": ".artifacts/m2-2/prepared-native-v2/native/voxels.vpl",
+      "sha256": "2d75fff8a6872ffe98308c7009858a9e904696e1529bc649181a44993979081c",
+      "bytes": 8976
+    },
+    {
+      "file": ".artifacts/m2-4/urban-actors-native-batch62-v1/native/ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3.pal",
+      "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+      "bytes": 768
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/ambu-vxl-f47ca282f5a5955979816decdd4f69a350986f412cf95b110d92f2716ee155b8-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/ambu.hva",
+      "sha256": "766b01d9946ed96e4f90767669ac498b3de3921be9c599a34c08c861e3c57c4a",
+      "bytes": 88
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/ambu-vxl-f47ca282f5a5955979816decdd4f69a350986f412cf95b110d92f2716ee155b8-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/ambu.vxl",
+      "sha256": "f47ca282f5a5955979816decdd4f69a350986f412cf95b110d92f2716ee155b8",
+      "bytes": 27270
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/bcab-vxl-b37456bba174035148e3a653277565e997a97f107a724e3faf5b8e9756d3239c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/bcab.hva",
+      "sha256": "bac129fb825906832a7c3928017e30baf5db5f744df79425ba8cc91468f40bd7",
+      "bytes": 88
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/bcab-vxl-b37456bba174035148e3a653277565e997a97f107a724e3faf5b8e9756d3239c-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/bcab.vxl",
+      "sha256": "b37456bba174035148e3a653277565e997a97f107a724e3faf5b8e9756d3239c",
+      "bytes": 14229
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/civbbp-shp-70d3fd19f4c69552501aedbfaa9d31f7c42ee600aca41c8ffc34aa6473a45bff-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/civbbp.shp",
+      "sha256": "70d3fd19f4c69552501aedbfaa9d31f7c42ee600aca41c8ffc34aa6473a45bff",
+      "bytes": 85984
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/civp-vxl-0a8e6a2a0681cfa12c03ff10ff05e2de482e2987b3ca47bb491a1afce98cd7b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/civp.hva",
+      "sha256": "1fa19e2e2af56aee200f8c549e4f28d9d25138bd9412cb7eec445d23d6e697e2",
+      "bytes": 88
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/civp-vxl-0a8e6a2a0681cfa12c03ff10ff05e2de482e2987b3ca47bb491a1afce98cd7b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/civp.vxl",
+      "sha256": "0a8e6a2a0681cfa12c03ff10ff05e2de482e2987b3ca47bb491a1afce98cd7b9",
+      "bytes": 113455
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/ftrk-vxl-f436503bd9de36111ea13caaf5ad8c72d9b8b45632bd43a619d8e5953d33ac36-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/ftrk.hva",
+      "sha256": "6b5355256b6afc5ece87ba31d178a6a28dc6809d0c82fd9c32fcccc6be7b3f64",
+      "bytes": 88
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/ftrk-vxl-f436503bd9de36111ea13caaf5ad8c72d9b8b45632bd43a619d8e5953d33ac36-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/ftrk.vxl",
+      "sha256": "f436503bd9de36111ea13caaf5ad8c72d9b8b45632bd43a619d8e5953d33ac36",
+      "bytes": 42808
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/jeep-vxl-5f500e3ad7e7d916488e1b56937bf26116acbe546fdd90dac9c310e76ffd192a-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/jeep.hva",
+      "sha256": "f189c5e9ba963f2149553a27d849c101c605382a3229280db7c47b57bf967128",
+      "bytes": 88
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/jeep-vxl-5f500e3ad7e7d916488e1b56937bf26116acbe546fdd90dac9c310e76ffd192a-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/jeep.vxl",
+      "sha256": "5f500e3ad7e7d916488e1b56937bf26116acbe546fdd90dac9c310e76ffd192a",
+      "bytes": 26650
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/jeeptur-vxl-80d630cd03fd82baa4c51d9c53eb3c9fba25929f2d2e964769e1f047f014214a-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/jeeptur.hva",
+      "sha256": "7715d82ae89cbeb40594b9e81a1f86e2227e42de0ac6aac699101c8c868828fe",
+      "bytes": 88
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/jeeptur-vxl-80d630cd03fd82baa4c51d9c53eb3c9fba25929f2d2e964769e1f047f014214a-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/jeeptur.vxl",
+      "sha256": "80d630cd03fd82baa4c51d9c53eb3c9fba25929f2d2e964769e1f047f014214a",
+      "bytes": 1202
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/pres-shp-368fcc4f888ec4b73c1e337fd1e89d40e6cc538ca7140a2e564a175d18d43737-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/pres.shp",
+      "sha256": "368fcc4f888ec4b73c1e337fd1e89d40e6cc538ca7140a2e564a175d18d43737",
+      "bytes": 75672
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/ssrv-shp-1fa2284d5696988daba0acc1dc99209051f4bdf293f8de7680c49e11bb0f6ffa-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/ssrv.shp",
+      "sha256": "1fa2284d5696988daba0acc1dc99209051f4bdf293f8de7680c49e11bb0f6ffa",
+      "bytes": 102736
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/ycab-vxl-da8eec329bf1fc3f8a1ce1d7a586c5a620b3e47fa286ef0bbe0495c37df9d7e2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/ycab.hva",
+      "sha256": "cc13f4045cad45d6aa2b283a3e10e6e3189b7d5c20f56d6c40b176f827346c6e",
+      "bytes": 88
+    },
+    {
+      "file": ".artifacts/m2-4/urban-native-v2/native/ycab-vxl-da8eec329bf1fc3f8a1ce1d7a586c5a620b3e47fa286ef0bbe0495c37df9d7e2-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/ycab.vxl",
+      "sha256": "da8eec329bf1fc3f8a1ce1d7a586c5a620b3e47fa286ef0bbe0495c37df9d7e2",
+      "bytes": 14170
+    }
+  ],
+  "vehiclePolicy": "Retain exact complete VXL/HVA and full 32-row VPL identities. JEEP also retains jeeptur.vxl plus jeeptur.hva source dependencies; its original Turret=no rule remains unchanged. Any reuse needs actual fixed-color and complete-family proof before selection.",
+  "productionOrder": "Prepare the three infantry and six vehicle families as one grouped actor production/review effort; never claim a single portrait or orientation as complete.",
+  "selectedResourcesChanged": false,
+  "originalMapsChanged": false,
+  "technicalCoverageAdded": 0,
+  "nativeAcceptance": false,
+  "visual": "NOT_AUTHORED",
+  "windows": "NOT_RUN",
+  "m24Complete": false
+}

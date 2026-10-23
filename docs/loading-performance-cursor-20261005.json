@@ -1,0 +1,1457 @@
+{
+  "status": "PASS_FOCUSED_CHECKS_AND_DESKTOP_PACKAGES_WINDOWS_RUNTIME_PENDING",
+  "runtimeSourceHead": "6db0fb539bbdcbca7876d5b2dd427f8c20f39111",
+  "userFeedback": {
+    "testedWindowsPackage": "Disk-Fix",
+    "cpu": "AMD Ryzen 7 5800H",
+    "memoryGiB": 16,
+    "gpu": "RTX 3070 mobile",
+    "vramGiB": 8,
+    "storage": "SSD",
+    "launchToMenuSeconds": [
+      5,
+      10
+    ]
+  },
+  "changes": [
+    "Reuse identical retail archive checks within registration; defer optional HD PNG hashes to checked renderer decode",
+    "Prewarm initial army and all queued units/buildings, free units and MCV yards; retain leases through actual model creation",
+    "Move VXL decode, owner validation, reduction and exact tile pooling into one match-owned worker",
+    "Overlap checked reads with decode using at most one next page pair, preserving cancellation and atomic publication",
+    "Yield between texture upload slices without publishing partial families",
+    "Compile starting-world programs behind the loading screen and detached VXL coverage/spin programs before family publication",
+    "Restore Windows trainer cursor using physical screen coordinates, trusted IPC and a prewarmed owned helper"
+  ],
+  "performance": {
+    "platform": "darwin-arm64",
+    "windowsRuntime": "NOT_RUN",
+    "registration": {
+      "baseline": {
+        "totalMs": 4446.431708,
+        "readBytes": 2853377640,
+        "duplicateBytes": 447810057,
+        "routes": 4767
+      },
+      "optimized": {
+        "totalMs": 964.952792,
+        "readBytes": 723214158,
+        "duplicateBytes": 233713,
+        "routes": 4767
+      }
+    },
+    "baseline": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/loading-performance-20261005/production-baseline-c7-v7/report.json",
+      "errors": [],
+      "allocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 84856540,
+        "total": 226794768,
+        "limit": 1342177280
+      },
+      "preparation": null,
+      "startupRegistration": null,
+      "production": [
+        {
+          "name": "YAPOWR",
+          "firstVxlHd": false,
+          "firstSpriteHd": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "maxFrameMs": 34.10000002384186,
+          "slowFrames": []
+        },
+        {
+          "name": "YABRCK",
+          "firstVxlHd": false,
+          "firstSpriteHd": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "maxFrameMs": 35.00999999046326,
+          "slowFrames": []
+        },
+        {
+          "name": "YAWEAP",
+          "firstVxlHd": false,
+          "firstSpriteHd": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "maxFrameMs": 39.9549999833107,
+          "slowFrames": []
+        },
+        {
+          "name": "YTNK",
+          "firstVxlHd": false,
+          "firstSpriteHd": [],
+          "maxFrameMs": 385.8899999856949,
+          "slowFrames": [
+            88.81499999761581,
+            385.8899999856949
+          ]
+        }
+      ]
+    },
+    "intermediateBeforeShaderWarmup": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/loading-performance-20261005/desktop-production-2x/report.json",
+      "errors": [],
+      "allocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 25910160,
+        "total": 66145440,
+        "limit": 268435456
+      },
+      "preparation": {
+        "pages": 9,
+        "workerMs": 106.8549998998642
+      },
+      "startupRegistration": {
+        "time": 1791247742093,
+        "type": "startup-registration",
+        "profileMs": 407.862625,
+        "totalMs": 1075.796917
+      },
+      "production": [
+        {
+          "name": "YAPOWR",
+          "firstVxlHd": false,
+          "firstSpriteHd": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "maxFrameMs": 24.57499998807907,
+          "slowFrames": []
+        },
+        {
+          "name": "YABRCK",
+          "firstVxlHd": false,
+          "firstSpriteHd": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "maxFrameMs": 21.55000001192093,
+          "slowFrames": []
+        },
+        {
+          "name": "YAWEAP",
+          "firstVxlHd": false,
+          "firstSpriteHd": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "maxFrameMs": 22.825000047683716,
+          "slowFrames": []
+        },
+        {
+          "name": "YTNK",
+          "firstVxlHd": true,
+          "firstSpriteHd": [],
+          "maxFrameMs": 457.1200000047684,
+          "slowFrames": [
+            457.1200000047684
+          ]
+        }
+      ]
+    },
+    "shaderValidation": {
+      "native-shader-startup-v2": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "report": ".artifacts/loading-performance-20261005/native-shader-startup-v2/report.json",
+        "errors": [],
+        "allocation": {
+          "baseline": 30503392,
+          "eager": 9731888,
+          "demand": 37750408,
+          "total": 77985688,
+          "limit": 268435456
+        },
+        "preparation": {
+          "pages": 7,
+          "workerMs": 72.73499995470047
+        },
+        "startupRegistration": {
+          "time": 1791248209719,
+          "type": "startup-registration",
+          "profileMs": 457.079375,
+          "totalMs": 1075.737458
+        },
+        "firstDrawUnits": [
+          {
+            "name": "PCV",
+            "id": 1308,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "LTNK",
+            "id": 1309,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "LTNK",
+            "id": 1310,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "LTNK",
+            "id": 1311,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1312,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1313,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1314,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1315,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          }
+        ],
+        "noScrollItems": 24,
+        "noScrollHdItems": 24,
+        "uiAfterOff": {
+          "revision": "lunar-infantry-ui-v1",
+          "enabled": false,
+          "reservedBytes": 0,
+          "decodedCpuBytes": 0,
+          "gpuTextureBytesUpperBound": 0,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 0,
+          "domImageDecodedCpuBytesUpperBound": 0,
+          "textures": 0,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        },
+        "retailWeaponSound": [
+          {
+            "name": "DiskDrain",
+            "report": [
+              "KirovAttack"
+            ]
+          },
+          {
+            "name": "BlimpBomb",
+            "report": [
+              "KirovAttack"
+            ]
+          },
+          {
+            "name": "DiskLaser",
+            "report": [
+              "FloatingDiscAttack"
+            ]
+          }
+        ]
+      },
+      "native-shader-production-2x-v1": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "report": ".artifacts/loading-performance-20261005/native-shader-production-2x-v1/report.json",
+        "errors": [],
+        "allocation": {
+          "baseline": 30503392,
+          "eager": 9731888,
+          "demand": 25910160,
+          "total": 66145440,
+          "limit": 268435456
+        },
+        "preparation": {
+          "pages": 9,
+          "workerMs": 115.46000015735626
+        },
+        "startupRegistration": {
+          "time": 1791248433015,
+          "type": "startup-registration",
+          "profileMs": 448.62987499999997,
+          "totalMs": 1070.397375
+        },
+        "production": [
+          {
+            "name": "YAPOWR",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 23.889999985694885,
+            "slowFrames": []
+          },
+          {
+            "name": "YABRCK",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 22.724999964237213,
+            "slowFrames": []
+          },
+          {
+            "name": "YAWEAP",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 29.064999997615814,
+            "slowFrames": []
+          },
+          {
+            "name": "YTNK",
+            "firstVxlHd": true,
+            "firstSpriteHd": [],
+            "maxFrameMs": 90.7049999833107,
+            "slowFrames": [
+              90.7049999833107
+            ]
+          }
+        ]
+      },
+      "native-shader-production-4x-v1": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "report": ".artifacts/loading-performance-20261005/native-shader-production-4x-v1/report.json",
+        "errors": [],
+        "allocation": {
+          "baseline": 91372196,
+          "eager": 50566032,
+          "demand": 84856540,
+          "total": 226794768,
+          "limit": 1342177280
+        },
+        "preparation": {
+          "pages": 9,
+          "workerMs": 146.24000012874603
+        },
+        "startupRegistration": {
+          "time": 1791248539551,
+          "type": "startup-registration",
+          "profileMs": 407.361875,
+          "totalMs": 1027.761708
+        },
+        "production": [
+          {
+            "name": "YAPOWR",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 39.5799999833107,
+            "slowFrames": []
+          },
+          {
+            "name": "YABRCK",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 37.14999997615814,
+            "slowFrames": []
+          },
+          {
+            "name": "YAWEAP",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 33.519999980926514,
+            "slowFrames": []
+          },
+          {
+            "name": "YTNK",
+            "firstVxlHd": true,
+            "firstSpriteHd": [],
+            "maxFrameMs": 88.13499999046326,
+            "slowFrames": [
+              88.13499999046326
+            ]
+          }
+        ]
+      }
+    },
+    "pipelineValidation": {
+      "pipeline-production-2x-v1": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "report": ".artifacts/loading-performance-final-20261005/pipeline-production-2x-v1/report.json",
+        "errors": [],
+        "allocation": {
+          "baseline": 30503392,
+          "eager": 9731888,
+          "demand": 25910160,
+          "total": 66145440,
+          "limit": 268435456
+        },
+        "preparation": {
+          "pages": 9,
+          "workerMs": 104.42499989271164
+        },
+        "startupRegistration": {
+          "time": 1791249392362,
+          "type": "startup-registration",
+          "profileMs": 439.6203750000001,
+          "totalMs": 1033.667375
+        },
+        "production": [
+          {
+            "name": "YAPOWR",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 24.360000014305115,
+            "slowFrames": []
+          },
+          {
+            "name": "YABRCK",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 22.44999998807907,
+            "slowFrames": []
+          },
+          {
+            "name": "YAWEAP",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 21.319999992847443,
+            "slowFrames": []
+          },
+          {
+            "name": "YTNK",
+            "firstVxlHd": true,
+            "firstSpriteHd": [],
+            "maxFrameMs": 87,
+            "slowFrames": [
+              87
+            ]
+          }
+        ]
+      },
+      "pipeline-production-2x-v2": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "report": ".artifacts/loading-performance-final-20261005/pipeline-production-2x-v2/report.json",
+        "errors": [],
+        "allocation": {
+          "baseline": 30503392,
+          "eager": 9731888,
+          "demand": 25910160,
+          "total": 66145440,
+          "limit": 268435456
+        },
+        "preparation": {
+          "pages": 9,
+          "workerMs": 138.0650001168251
+        },
+        "startupRegistration": {
+          "time": 1791249480828,
+          "type": "startup-registration",
+          "profileMs": 389.788375,
+          "totalMs": 1037.6290410000001
+        },
+        "production": [
+          {
+            "name": "YAPOWR",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 24.5900000333786,
+            "slowFrames": []
+          },
+          {
+            "name": "YABRCK",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 22.585000038146973,
+            "slowFrames": []
+          },
+          {
+            "name": "YAWEAP",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 26.27000004053116,
+            "slowFrames": []
+          },
+          {
+            "name": "YTNK",
+            "firstVxlHd": true,
+            "firstSpriteHd": [],
+            "maxFrameMs": 91.7049999833107,
+            "slowFrames": [
+              91.7049999833107
+            ]
+          }
+        ]
+      }
+    },
+    "supersededShaderPackageFailure": ".artifacts/loading-performance-final-20261005/desktop-production-2x/report.json",
+    "finalCopiedPackage": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/loading-performance-delivery-20261005/desktop-production-2x/report.json",
+      "errors": [],
+      "allocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 25910160,
+        "total": 66145440,
+        "limit": 268435456
+      },
+      "preparation": {
+        "pages": 9,
+        "workerMs": 113.20500010251999
+      },
+      "startupRegistration": {
+        "time": 1791249960065,
+        "type": "startup-registration",
+        "profileMs": 527.072125,
+        "totalMs": 1289.282625
+      },
+      "production": [
+        {
+          "name": "YAPOWR",
+          "firstVxlHd": false,
+          "firstSpriteHd": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "maxFrameMs": 25.459999978542328,
+          "slowFrames": []
+        },
+        {
+          "name": "YABRCK",
+          "firstVxlHd": false,
+          "firstSpriteHd": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "maxFrameMs": 22.87000000476837,
+          "slowFrames": []
+        },
+        {
+          "name": "YAWEAP",
+          "firstVxlHd": false,
+          "firstSpriteHd": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "maxFrameMs": 27.7399999499321,
+          "slowFrames": []
+        },
+        {
+          "name": "YTNK",
+          "firstVxlHd": true,
+          "firstSpriteHd": [],
+          "maxFrameMs": 82.09999996423721,
+          "slowFrames": [
+            82.09999996423721
+          ]
+        }
+      ]
+    },
+    "disclosure": "Warm OS-cache registration timings cover registration only. Production timings are isolated single-run Mac observations with screenshot work excluded. Residual frame stalls remain. No native Windows benchmark or stutter-free guarantee."
+  },
+  "validation": {
+    "focusedTests": 93,
+    "assertions": 9213,
+    "testFiles": 18,
+    "tests": ".artifacts/loading-performance-final-20261005/focused-tests-pipeline-final.log",
+    "entryTypecheck": "PASS",
+    "workerTypecheck": "PASS",
+    "typecheck": ".artifacts/loading-performance-final-20261005/pipeline-typecheck.log",
+    "workerTypecheckReport": ".artifacts/loading-performance-delivery-20261005/worker-typecheck-final.log",
+    "build": ".artifacts/loading-performance-delivery-20261005/build.log",
+    "desktopNative": {
+      "desktop-yuri-2x": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "report": ".artifacts/loading-performance-delivery-20261005/desktop-yuri-2x/report.json",
+        "errors": [],
+        "allocation": {
+          "baseline": 30503392,
+          "eager": 9731888,
+          "demand": 37750408,
+          "total": 77985688,
+          "limit": 268435456
+        },
+        "preparation": {
+          "pages": 7,
+          "workerMs": 77.47999995946884
+        },
+        "startupRegistration": {
+          "time": 1791250045143,
+          "type": "startup-registration",
+          "profileMs": 516.5441659999999,
+          "totalMs": 1246.2393749999999
+        },
+        "firstDrawUnits": [
+          {
+            "name": "PCV",
+            "id": 1308,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "LTNK",
+            "id": 1309,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "LTNK",
+            "id": 1310,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "LTNK",
+            "id": 1311,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1312,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1313,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1314,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1315,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          }
+        ],
+        "noScrollItems": 24,
+        "noScrollHdItems": 24,
+        "uiAfterOff": {
+          "revision": "lunar-infantry-ui-v1",
+          "enabled": false,
+          "reservedBytes": 0,
+          "decodedCpuBytes": 0,
+          "gpuTextureBytesUpperBound": 0,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 0,
+          "domImageDecodedCpuBytesUpperBound": 0,
+          "textures": 0,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        },
+        "retailWeaponSound": [
+          {
+            "name": "DiskDrain",
+            "report": [
+              "KirovAttack"
+            ]
+          },
+          {
+            "name": "BlimpBomb",
+            "report": [
+              "KirovAttack"
+            ]
+          },
+          {
+            "name": "DiskLaser",
+            "report": [
+              "FloatingDiscAttack"
+            ]
+          }
+        ]
+      },
+      "desktop-allied-4x": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "report": ".artifacts/loading-performance-delivery-20261005/desktop-allied-4x/report.json",
+        "errors": [],
+        "allocation": {
+          "baseline": 91372196,
+          "eager": 50566032,
+          "demand": 101450028,
+          "total": 243388256,
+          "limit": 1342177280
+        },
+        "preparation": {
+          "pages": 8,
+          "workerMs": 129.75000005960464
+        },
+        "startupRegistration": {
+          "time": 1791250069062,
+          "type": "startup-registration",
+          "profileMs": 535.381166,
+          "totalMs": 1583.3935000000001
+        },
+        "firstDrawUnits": [
+          {
+            "name": "AMCV",
+            "id": 1308,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "MTNK",
+            "id": 1309,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "MTNK",
+            "id": 1310,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "MTNK",
+            "id": 1311,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "E1",
+            "id": 1312,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          },
+          {
+            "name": "E1",
+            "id": 1313,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          },
+          {
+            "name": "E1",
+            "id": 1314,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          },
+          {
+            "name": "E1",
+            "id": 1315,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          }
+        ],
+        "noScrollItems": 24,
+        "noScrollHdItems": 24,
+        "uiAfterOff": {
+          "revision": "lunar-infantry-ui-v1",
+          "enabled": false,
+          "reservedBytes": 0,
+          "decodedCpuBytes": 0,
+          "gpuTextureBytesUpperBound": 0,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 0,
+          "domImageDecodedCpuBytesUpperBound": 0,
+          "textures": 0,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        },
+        "retailWeaponSound": [
+          {
+            "name": "DiskDrain",
+            "report": [
+              "KirovAttack"
+            ]
+          },
+          {
+            "name": "BlimpBomb",
+            "report": [
+              "KirovAttack"
+            ]
+          },
+          {
+            "name": "DiskLaser",
+            "report": [
+              "FloatingDiscAttack"
+            ]
+          }
+        ]
+      },
+      "desktop-soviet-4x": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "report": ".artifacts/loading-performance-delivery-20261005/desktop-soviet-4x/report.json",
+        "errors": [],
+        "allocation": {
+          "baseline": 91372196,
+          "eager": 50566032,
+          "demand": 49021848,
+          "total": 190960076,
+          "limit": 1342177280
+        },
+        "preparation": {
+          "pages": 4,
+          "workerMs": 80.84999996423721
+        },
+        "startupRegistration": {
+          "time": 1791250093029,
+          "type": "startup-registration",
+          "profileMs": 522.493208,
+          "totalMs": 1239.288125
+        },
+        "firstDrawUnits": [
+          {
+            "name": "SMCV",
+            "id": 1308,
+            "vxl": true,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "HTNK",
+            "id": 1309,
+            "vxl": false,
+            "shp": false,
+            "rhino": true
+          },
+          {
+            "name": "HTNK",
+            "id": 1310,
+            "vxl": false,
+            "shp": false,
+            "rhino": true
+          },
+          {
+            "name": "HTNK",
+            "id": 1311,
+            "vxl": false,
+            "shp": false,
+            "rhino": true
+          },
+          {
+            "name": "E2",
+            "id": 1312,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          },
+          {
+            "name": "E2",
+            "id": 1313,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          },
+          {
+            "name": "E2",
+            "id": 1314,
+            "vxl": false,
+            "shp": true,
+            "rhino": false
+          }
+        ],
+        "noScrollItems": 24,
+        "noScrollHdItems": 24,
+        "uiAfterOff": {
+          "revision": "lunar-infantry-ui-v1",
+          "enabled": false,
+          "reservedBytes": 0,
+          "decodedCpuBytes": 0,
+          "gpuTextureBytesUpperBound": 0,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 0,
+          "domImageDecodedCpuBytesUpperBound": 0,
+          "textures": 0,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        },
+        "retailWeaponSound": [
+          {
+            "name": "DiskDrain",
+            "report": [
+              "KirovAttack"
+            ]
+          },
+          {
+            "name": "BlimpBomb",
+            "report": [
+              "KirovAttack"
+            ]
+          },
+          {
+            "name": "DiskLaser",
+            "report": [
+              "FloatingDiscAttack"
+            ]
+          }
+        ]
+      },
+      "desktop-original": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "report": ".artifacts/loading-performance-delivery-20261005/desktop-original/report.json",
+        "errors": [],
+        "allocation": {
+          "baseline": 7372864,
+          "eager": 0,
+          "demand": 0,
+          "total": 7372864,
+          "limit": 1342177280
+        },
+        "preparation": null,
+        "startupRegistration": {
+          "time": 1791250116055,
+          "type": "startup-registration",
+          "profileMs": 506.1856660000001,
+          "totalMs": 1196.408958
+        },
+        "firstDrawUnits": [
+          {
+            "name": "PCV",
+            "id": 1308,
+            "vxl": false,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "LTNK",
+            "id": 1309,
+            "vxl": false,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "LTNK",
+            "id": 1310,
+            "vxl": false,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "LTNK",
+            "id": 1311,
+            "vxl": false,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1312,
+            "vxl": false,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1313,
+            "vxl": false,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1314,
+            "vxl": false,
+            "shp": false,
+            "rhino": false
+          },
+          {
+            "name": "INIT",
+            "id": 1315,
+            "vxl": false,
+            "shp": false,
+            "rhino": false
+          }
+        ],
+        "noScrollItems": 24,
+        "noScrollHdItems": 0,
+        "uiAfterOff": {
+          "revision": "lunar-infantry-ui-v1",
+          "enabled": false,
+          "reservedBytes": 0,
+          "decodedCpuBytes": 0,
+          "gpuTextureBytesUpperBound": 0,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 0,
+          "domImageDecodedCpuBytesUpperBound": 0,
+          "textures": 0,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        },
+        "retailWeaponSound": [
+          {
+            "name": "DiskDrain",
+            "report": [
+              "KirovAttack"
+            ]
+          },
+          {
+            "name": "BlimpBomb",
+            "report": [
+              "KirovAttack"
+            ]
+          },
+          {
+            "name": "DiskLaser",
+            "report": [
+              "FloatingDiscAttack"
+            ]
+          }
+        ]
+      },
+      "desktop-production-2x": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "report": ".artifacts/loading-performance-delivery-20261005/desktop-production-2x/report.json",
+        "errors": [],
+        "allocation": {
+          "baseline": 30503392,
+          "eager": 9731888,
+          "demand": 25910160,
+          "total": 66145440,
+          "limit": 268435456
+        },
+        "preparation": {
+          "pages": 9,
+          "workerMs": 113.20500010251999
+        },
+        "startupRegistration": {
+          "time": 1791249960065,
+          "type": "startup-registration",
+          "profileMs": 527.072125,
+          "totalMs": 1289.282625
+        },
+        "production": [
+          {
+            "name": "YAPOWR",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 25.459999978542328,
+            "slowFrames": []
+          },
+          {
+            "name": "YABRCK",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 22.87000000476837,
+            "slowFrames": []
+          },
+          {
+            "name": "YAWEAP",
+            "firstVxlHd": false,
+            "firstSpriteHd": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "maxFrameMs": 27.7399999499321,
+            "slowFrames": []
+          },
+          {
+            "name": "YTNK",
+            "firstVxlHd": true,
+            "firstSpriteHd": [],
+            "maxFrameMs": 82.09999996423721,
+            "slowFrames": [
+              82.09999996423721
+            ]
+          }
+        ]
+      },
+      "desktop-disk-4x": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "report": ".artifacts/loading-performance-delivery-20261005/desktop-disk-4x/report.json",
+        "errors": [],
+        "allocation": {
+          "baseline": 91372196,
+          "eager": 50566032,
+          "demand": 42335292,
+          "total": 184273520,
+          "limit": 1342177280
+        },
+        "preparation": {
+          "pages": 7,
+          "workerMs": 190.200000166893
+        },
+        "startupRegistration": {
+          "time": 1791250014966,
+          "type": "startup-registration",
+          "profileMs": 534.6922500000001,
+          "totalMs": 1434.747917
+        },
+        "nativeDrainAnimation": [
+          {
+            "target": "NAREFN",
+            "samples": 174,
+            "frames": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "maxLoop": 8,
+            "retailLoopCount": -1,
+            "continuous": true
+          },
+          {
+            "target": "NAPOWR",
+            "samples": 200,
+            "frames": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "maxLoop": 11,
+            "retailLoopCount": -1,
+            "continuous": true
+          }
+        ],
+        "money": {
+          "before": {
+            "tick": 58,
+            "player": 10000,
+            "enemy": 10000
+          },
+          "after": {
+            "tick": 364,
+            "player": 10090,
+            "enemy": 9910
+          },
+          "binding": {
+            "name": "DISK",
+            "id": 1310,
+            "tick": 364,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              55,
+              91
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": true,
+            "parts": [
+              "disk.vxl",
+              "disktur.vxl"
+            ],
+            "turret": 0,
+            "warped": false,
+            "zone": 1,
+            "elevation": 13.17623948081009
+          },
+          "target": "NAREFN",
+          "harvesters": [
+            "HARV"
+          ],
+          "payments": [
+            {
+              "tick": 304,
+              "player": 10030,
+              "enemy": 9970
+            },
+            {
+              "tick": 335,
+              "player": 10060,
+              "enemy": 9940
+            },
+            {
+              "tick": 364,
+              "player": 10090,
+              "enemy": 9910
+            }
+          ]
+        },
+        "alignment": [
+          {
+            "target": "NAREFN",
+            "offsetLeptons": 0
+          },
+          {
+            "target": "NAREFN",
+            "offsetLeptons": 0
+          },
+          {
+            "target": "NAPOWR",
+            "offsetLeptons": 0
+          },
+          {
+            "target": "NAREFN",
+            "offsetLeptons": 0
+          },
+          {
+            "target": "NAREFN",
+            "offsetLeptons": 0
+          }
+        ],
+        "manualRetarget": {
+          "oldTargetReleased": true,
+          "blackout": true
+        },
+        "moveCancelsBlackout": true,
+        "captureEndsDrain": true,
+        "destroyEndsDrain": true
+      }
+    },
+    "strictResourceAuthority": ".artifacts/loading-performance-20261005/strict-resource-audit.json",
+    "protectedResourceParity": ".artifacts/loading-performance-delivery-20261005/protected-resource-parity.json",
+    "diagnosticRuntimeParity": ".artifacts/loading-performance-delivery-20261005/diagnostic-runtime-parity.json",
+    "historicalTestFailures": {
+      "count": 3,
+      "reproducedOnUnmodifiedPredecessor": "6ecad49",
+      "report": ".artifacts/loading-performance-20261005/baseline-stale-tests-v2.log",
+      "cases": [
+        "Shared engineer identity",
+        "Serialized graphics density",
+        "TERROR remap assumption"
+      ]
+    }
+  },
+  "cursor": {
+    "hostLogic": "PASS",
+    "physicalMenuHandoff": "UNVERIFIED",
+    "windowsRuntime": "NOT_RUN",
+    "macDiagnostic": ".artifacts/loading-performance-20261005/native-cursor-focus-diagnostic/report.json",
+    "disclosure": "The Mac automated coordinate probe returned false with a visible but natively unfocused window. Locked-menu probes could not acquire pointer lock. Neither is relabeled PASS; native Windows behavior remains user verification."
+  },
+  "preserved": {
+    "worldFiles": 4637,
+    "uiFiles": 360,
+    "uiEntries": 490,
+    "cSelections": 33,
+    "dRuntimeFiles": 140,
+    "uiRevision": "lunar-infantry-ui-v1",
+    "uiManifestSha256": "a8cf998c042066c05c119a6392e9b703ccd03622d89030e1dbf45089cd90ca18",
+    "preparedContract": {
+      "schemaVersion": 1,
+      "sha256": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604",
+      "indexPath": "prepared-hd/indexes/a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604.json"
+    },
+    "preparedRegistration": {
+      "type": "prepared-hd-registered",
+      "members": 459,
+      "pages": 1224,
+      "index": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604"
+    },
+    "limits": {
+      "world2x": 268435456,
+      "world4x": 1342177280,
+      "ui": 16777216,
+      "preparedCpu": 134217728
+    },
+    "diskDrain": "Continuous payment, native looping rings and centered hover retained",
+    "audio": "Retail DiskDrain.Report=KirovAttack, shared with BlimpBomb; unchanged",
+    "oldPackages": "All prior DISK, Startup-Sidebar and intermediate Performance-Cursor packages preserved"
+  },
+  "packages": {
+    "status": "PASS_DESKTOP_COPY_AND_FRESH_EXTRACTION_HASHES_MODES_LINKS",
+    "deliveries": [
+      {
+        "platform": "mac",
+        "archive": "/Users/Aone/Desktop/RA2-HD-Main-Performance-Cursor-Fix-20261005-6db0fb5-macOS-arm64.zip",
+        "bytes": 3292893055,
+        "sha256": "16de6f981f85b6c0a4f4732eef68c23d5c4b43ef761b75fcf0ea2c91a372cf4e",
+        "checkedEntries": 5484,
+        "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/loading-performance-delivery-20261005/desktop-extracted-mac/RA2-HD-Main-Performance-Cursor-Fix-20261005-6db0fb5-macOS-arm64",
+        "excludedUserData": [
+          "Review-Profile",
+          "UserData"
+        ]
+      },
+      {
+        "platform": "windows",
+        "archive": "/Users/Aone/Desktop/RA2-HD-Main-Performance-Cursor-Fix-20261005-6db0fb5-Windows-x64-portable.zip",
+        "bytes": 3316921638,
+        "sha256": "a2983d98c43c28c3bfa67a89d0fe936a47d442ca4d6dd17160d831207214aa4f",
+        "checkedEntries": 5262,
+        "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/loading-performance-delivery-20261005/desktop-extracted-windows/RA2-HD-Main-Performance-Cursor-Fix-20261005-6db0fb5-Windows-x64-portable",
+        "excludedUserData": [
+          "Review-Profile",
+          "UserData"
+        ]
+      }
+    ]
+  },
+  "macSignature": "PASS_STRICT_AD_HOC",
+  "windowsPE": "PASS_SEVEN_X64_BINARIES",
+  "windowsRuntime": "NOT_RUN",
+  "finalUserAcceptance": "PENDING",
+  "remotePublication": "NOT_REQUESTED"
+}

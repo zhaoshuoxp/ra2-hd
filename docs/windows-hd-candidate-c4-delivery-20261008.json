@@ -1,0 +1,629 @@
+{
+  "status": "LOCAL_DELIVERY_COMPLETE_WINDOWS_AB_PENDING",
+  "diagnosticId": "WINHD-20261008-D38F136-C4",
+  "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+  "frozenPackageSource": "f850b5cb44b0f6a8a415ff0636705bd5566901ec",
+  "sourceCommits": [
+    "b9b718ede9b3a079c825d8ca79e5d37e9713c72a",
+    "91dae70df45d2669ccf27d230d446e8177954ab7",
+    "f850b5cb44b0f6a8a415ff0636705bd5566901ec"
+  ],
+  "windowsEvidence": {
+    "report": "docs/windows-hd-c3-first-acquisition-20261008.json",
+    "returnArchive": {
+      "path": "/Users/Aone/Desktop/WINHD-20261008-D38F136-C3-RETURN-2026-10-09T02-34-56-910Z.zip",
+      "bytes": 162943829,
+      "sha256": "10528d08a62145cd8453a6c4d9e3405c69016ea4a24d3f84e79021afa56ddb34",
+      "members": 23,
+      "validation": ".artifacts/windows-hd-diagnostic/returns/2026-10-09T02-34-56-910Z-c3-validation.json"
+    },
+    "submissionMs": 226.45500000193715,
+    "shaderWaitCpuMs": 212.73499999940395,
+    "fractionOfSubmission": 0.9394140116031183,
+    "familyOwnership": "INFERRED_FROM_MATCHING_NATIVE_SOURCE; not recorded directly in Windows trace",
+    "targetKitVerificationReceipt": "MISSING"
+  },
+  "archive": {
+    "status": "PASS_FULL_ARCHIVE_AND_FRESH_EXTRACTION",
+    "diagnosticId": "WINHD-20261008-D38F136-C4",
+    "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "diagnosticCommit": "f850b5cb44b0f6a8a415ff0636705bd5566901ec",
+    "archive": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C4-f850b5c-Windows-x64.zip",
+    "bytes": 3499876247,
+    "sha256": "bd2a4e47fbbb2dbd231dcf3c10c1c2c94f01125959ae6a0b9e454cd8dea69c4f",
+    "manifestSha256": "bb7ec160e2a14e57f3d2b705c6d81a34d50d0eee1c1bc887d6244574a97fa0ac",
+    "entries": 8090,
+    "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c4-fresh-v3/RA2-HD-WINHD-20261008-D38F136-C4-f850b5c-Windows-x64",
+    "windowsNative": "NOT_RUN"
+  },
+  "desktop": {
+    "status": "PASS_EXACT_DESKTOP_COPY_AND_FULL_CRC",
+    "file": "/Users/Aone/Desktop/RA2-HD-WINHD-20261008-D38F136-C4-f850b5c-Windows-x64.zip",
+    "bytes": 3499876247,
+    "sha256": "bd2a4e47fbbb2dbd231dcf3c10c1c2c94f01125959ae6a0b9e454cd8dea69c4f",
+    "entries": 8090
+  },
+  "freshKitVerification": {
+    "schemaVersion": 1,
+    "diagnosticId": "WINHD-20261008-D38F136-C4",
+    "manifestSha256": "bb7ec160e2a14e57f3d2b705c6d81a34d50d0eee1c1bc887d6244574a97fa0ac",
+    "checked": 8089,
+    "failures": [],
+    "status": "PASS",
+    "verifiedAt": "2026-10-09T03:11:43.820Z"
+  },
+  "resources": {
+    "files": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "parity": "EXACT_C3_RETAINED_ACCEPTED_R10_BYTES"
+  },
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCPU": 128,
+    "ui": 16
+  },
+  "tests": {
+    "focused": 26,
+    "assertions": 321,
+    "entryTypecheck": "PASS",
+    "hiddenMapBuild": "PASS_SEPARATE_OUTDIR",
+    "freshNativeRuns": 4,
+    "freshValidPhases": 16,
+    "freshPixelCases": 9
+  },
+  "nativeShaderProof": {
+    "receipt": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c4-prepared-program-4x-v4/report.json",
+    "status": "PASS_NATIVE_PREPARED_PAIR_REUSED_BY_GAPOWR",
+    "platform": "darwin-arm64",
+    "boundary": "Mechanism evidence, not Windows timing.",
+    "nativeTickRange": [
+      0,
+      1004
+    ],
+    "shaderChecksEnabled": true,
+    "owners": [
+      {
+        "hdPass": 1,
+        "program": 40,
+        "links": [
+          {
+            "atMs": 13381.419999957085,
+            "tick": 0,
+            "playing": false,
+            "program": 40,
+            "sources": [
+              "34e2e9af1a0c7d352ac7ead3929f2ed459e6818def55944d7797fae1fc79b08c",
+              "66b2ef5f73f20aad761d40e2c1c1479cb284255e9d0fdc8988c8c6cce31040af"
+            ]
+          }
+        ],
+        "firstUseChecks": [
+          {
+            "atMs": 13393.484999895096,
+            "tick": 0,
+            "playing": false,
+            "program": 40,
+            "cpuMs": 0.08000004291534424
+          }
+        ],
+        "actualNativeMatches": [
+          {
+            "family": "GAPOWR",
+            "hdPass": 1,
+            "program": 40,
+            "usedTimes": 3
+          },
+          {
+            "family": "GAPOWR",
+            "hdPass": 1,
+            "program": 40,
+            "usedTimes": 3
+          }
+        ]
+      },
+      {
+        "hdPass": 2,
+        "program": 41,
+        "links": [
+          {
+            "atMs": 13381.68499994278,
+            "tick": 0,
+            "playing": false,
+            "program": 41,
+            "sources": [
+              "34e2e9af1a0c7d352ac7ead3929f2ed459e6818def55944d7797fae1fc79b08c",
+              "ae137aab975cfb0258abb9e2e08a7744db5622a77d2d0a42e66365520e29e1cc"
+            ]
+          }
+        ],
+        "firstUseChecks": [
+          {
+            "atMs": 13393.65499997139,
+            "tick": 0,
+            "playing": false,
+            "program": 41,
+            "cpuMs": 0.029999971389770508
+          }
+        ],
+        "actualNativeMatches": [
+          {
+            "family": "GAPOWR",
+            "hdPass": 2,
+            "program": 41,
+            "usedTimes": 3
+          },
+          {
+            "family": "GAPOWR",
+            "hdPass": 2,
+            "program": 41,
+            "usedTimes": 3
+          }
+        ]
+      }
+    ],
+    "endAfterReentryOwnerGroups": 1,
+    "exit": {
+      "before": [
+        3,
+        3
+      ],
+      "after": [
+        2,
+        2
+      ],
+      "released": [
+        1,
+        1
+      ],
+      "textureDisposals": 0,
+      "ownerCount": 0
+    }
+  },
+  "nativePixels": [
+    {
+      "mode": "4x",
+      "receipt": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c4-fresh-pixel-4x-v1/report.json",
+      "nativeTickDuringComparison": [
+        665,
+        665
+      ],
+      "cases": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "warmupEquivalence": {
+            "ownerGroups": 1,
+            "removedDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "retainedAfterRestore": 1
+          }
+        },
+        {
+          "offset": {
+            "x": -350,
+            "y": 150
+          },
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "warmupEquivalence": {
+            "ownerGroups": 1,
+            "removedDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "retainedAfterRestore": 1
+          }
+        },
+        {
+          "offset": {
+            "x": 350,
+            "y": -150
+          },
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "warmupEquivalence": {
+            "ownerGroups": 1,
+            "removedDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "retainedAfterRestore": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "2x",
+      "receipt": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c4-fresh-pixel-2x-v1/report.json",
+      "nativeTickDuringComparison": [
+        668,
+        668
+      ],
+      "cases": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "warmupEquivalence": {
+            "ownerGroups": 1,
+            "removedDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "retainedAfterRestore": 1
+          }
+        },
+        {
+          "offset": {
+            "x": -350,
+            "y": 150
+          },
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "warmupEquivalence": {
+            "ownerGroups": 1,
+            "removedDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "retainedAfterRestore": 1
+          }
+        },
+        {
+          "offset": {
+            "x": 350,
+            "y": -150
+          },
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "warmupEquivalence": {
+            "ownerGroups": 1,
+            "removedDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "retainedAfterRestore": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "original",
+      "receipt": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c4-fresh-pixel-original-v1/report.json",
+      "nativeTickDuringComparison": [
+        629,
+        629
+      ],
+      "cases": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "warmupEquivalence": {
+            "ownerGroups": 0,
+            "removedDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "retainedAfterRestore": 0
+          }
+        },
+        {
+          "offset": {
+            "x": -350,
+            "y": 150
+          },
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "warmupEquivalence": {
+            "ownerGroups": 0,
+            "removedDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "retainedAfterRestore": 0
+          }
+        },
+        {
+          "offset": {
+            "x": 350,
+            "y": -150
+          },
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "warmupEquivalence": {
+            "ownerGroups": 0,
+            "removedDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "retainedAfterRestore": 0
+          }
+        }
+      ]
+    }
+  ],
+  "freshNativeClosure": {
+    "status": "PASS_FOUR_FRESH_NATIVE_RUNS_16_VALID_PHASES",
+    "platform": "darwin-arm64",
+    "windows": "NOT_RUN",
+    "manifestSha256": "bb7ec160e2a14e57f3d2b705c6d81a34d50d0eee1c1bc887d6244574a97fa0ac",
+    "runs": [
+      {
+        "directory": "2026-10-09T03-08-19-089Z-small-4x-none",
+        "mode": "4x",
+        "scene": "small",
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "tickStart": 0,
+            "tickEnd": 204,
+            "hdBindings": 1296,
+            "nodes": 4865,
+            "remainingUnitsBudget": 450914004,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "warmed-steady",
+            "tickStart": 414,
+            "tickEnd": 617,
+            "hdBindings": 1297,
+            "nodes": 4897,
+            "remainingUnitsBudget": 450914004,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "tickStart": 0,
+            "tickEnd": 208,
+            "hdBindings": 1296,
+            "nodes": 4865,
+            "remainingUnitsBudget": 450914004,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "tickStart": 424,
+            "tickEnd": 626,
+            "hdBindings": 1297,
+            "nodes": 4894,
+            "remainingUnitsBudget": 450914004,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          }
+        ]
+      },
+      {
+        "directory": "2026-10-09T03-09-06-519Z-small-2x-none",
+        "mode": "2x",
+        "scene": "small",
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "tickStart": 0,
+            "tickEnd": 205,
+            "hdBindings": 1323,
+            "nodes": 4754,
+            "remainingUnitsBudget": 301431200,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "warmed-steady",
+            "tickStart": 415,
+            "tickEnd": 616,
+            "hdBindings": 1324,
+            "nodes": 4786,
+            "remainingUnitsBudget": 301431200,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "tickStart": 0,
+            "tickEnd": 201,
+            "hdBindings": 1323,
+            "nodes": 4754,
+            "remainingUnitsBudget": 301431200,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "tickStart": 417,
+            "tickEnd": 619,
+            "hdBindings": 1324,
+            "nodes": 4786,
+            "remainingUnitsBudget": 301431200,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          }
+        ]
+      },
+      {
+        "directory": "2026-10-09T03-09-44-224Z-small-original-none",
+        "mode": "original",
+        "scene": "small",
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "tickStart": 0,
+            "tickEnd": 203,
+            "hdBindings": 0,
+            "nodes": 4239,
+            "remainingUnitsBudget": 1334804416,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "warmed-steady",
+            "tickStart": 409,
+            "tickEnd": 612,
+            "hdBindings": 0,
+            "nodes": 4264,
+            "remainingUnitsBudget": 1334804416,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "tickStart": 0,
+            "tickEnd": 208,
+            "hdBindings": 0,
+            "nodes": 4239,
+            "remainingUnitsBudget": 1334804416,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "tickStart": 413,
+            "tickEnd": 614,
+            "hdBindings": 0,
+            "nodes": 4264,
+            "remainingUnitsBudget": 1334804416,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          }
+        ]
+      },
+      {
+        "directory": "2026-10-09T03-10-15-782Z-stress-4x-none",
+        "mode": "4x",
+        "scene": "stress",
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "tickStart": 0,
+            "tickEnd": 196,
+            "hdBindings": 1922,
+            "nodes": 5836,
+            "remainingUnitsBudget": 762527496,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "warmed-steady",
+            "tickStart": 413,
+            "tickEnd": 614,
+            "hdBindings": 1938,
+            "nodes": 6049,
+            "remainingUnitsBudget": 762527496,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "tickStart": 0,
+            "tickEnd": 209,
+            "hdBindings": 1922,
+            "nodes": 5836,
+            "remainingUnitsBudget": 762527496,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "tickStart": 441,
+            "tickEnd": 641,
+            "hdBindings": 1938,
+            "nodes": 6043,
+            "remainingUnitsBudget": 762527496,
+            "instrumented": false,
+            "validity": "VALID_BOUNDED_SAMPLE"
+          }
+        ]
+      }
+    ],
+    "budgetBoundary": "Units budget is the remainder after other world pools; fixed total caps are pinned by unchanged source and manifest."
+  },
+  "sourceOnlyPatch": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c4-rendering-candidate.patch",
+    "sha256": "7386ad102d84dc89dd57d93b6567d82e054aef6a12510c2d40af6578c799e0eb",
+    "currentMainApplyCheck": "PASS_READ_ONLY_NOT_APPLIED"
+  },
+  "preservation": {
+    "main": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "M2_3": "UNCHANGED_BY_THIS_TASK; peer head 0230ffc3eff478aea3dcd24df836bd5d1c671544 and its existing acceptance-doc edit preserved",
+    "C1_C2_C3Rendering": "BYTE_IDENTICAL_TO_FROZEN_C3",
+    "productionDist": "UNCHANGED",
+    "oldAssetsPackagesProfilesRawFailures": "PRESERVED",
+    "merge": "NOT_DONE",
+    "push": "NOT_DONE"
+  },
+  "historicalFailures": [
+    "c4-prepared-program-4x-v1/report.json",
+    "c4-prepared-program-4x-v2/report.json",
+    "c4-prepared-program-4x-v3/report.json"
+  ],
+  "remaining": {
+    "windowsC4NativeBenefit": "PENDING_MATCHED_C3_C4_NORMAL_RETURNS",
+    "userVisualExperience": "PENDING",
+    "initialSimulationAndOtherShaderVariants": "SEPARATE_UNRESOLVED",
+    "actualGpuTime": "UNAVAILABLE",
+    "actualProcessVram": "UNAVAILABLE",
+    "gpuProcessBudget": "UNAVAILABLE",
+    "allMapPhysicalInputAcceptance": "OUTSIDE_THIS_GATE"
+  }
+}

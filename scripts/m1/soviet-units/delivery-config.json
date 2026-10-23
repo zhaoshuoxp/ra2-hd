@@ -1,0 +1,96 @@
+{
+    "nativeRuns": {
+        "DRON": "dron-v5",
+        "SENGINEER": "sengineer-v5",
+        "DOG": "dog-v2",
+        "FLAKT": "flakt-v1",
+        "SHK": "shk-v4",
+        "IVAN": "ivan-v3",
+        "YURI": "yuri-v1",
+        "TERROR": "terror-v1",
+        "DESO": "deso-fire-scale-v1",
+        "CIVAN": "civan-v2",
+        "YURIPR": "yuripr-v2",
+        "SQD": "sqd-original-v1",
+        "DTRUCK": "dtruck-v6",
+        "SMCV": "smcv-v2",
+        "TTNK": "ttnk-v2",
+        "APOC": "apoc-v2",
+        "HTK": "htk-v1",
+        "HARV": "harv-correction-v1",
+        "V3": "v3-v1",
+        "DRED": "dred-correction-v1",
+        "SUB": "sub-correction-v1",
+        "HYD": "hyd-correction-v1",
+        "ZEP": "zep-v1",
+        "SAPC": "sapc-v3"
+    },
+    "sweeps": {
+        "DRON": "dron-sweep-v4",
+        "SENGINEER": "sengineer-sweep-v3",
+        "DOG": "dog-limbo-sweep-v1",
+        "FLAKT": "flakt-sweep-v2",
+        "SHK": "shk-sweep-v1",
+        "IVAN": "ivan-sweep-v1",
+        "YURI": "yuri-sweep-v1",
+        "TERROR": "terror-sweep-v1",
+        "DESO": "deso-fire-scale-sweep-v1",
+        "CIVAN": "civan-sweep-v1",
+        "YURIPR": "yuripr-sweep-v1",
+        "SQD": "sqd-pooled-sweep-v1"
+    },
+    "nativeActions": {
+        "DRON": "Normal production, movement, HD leap, hidden infection, host damage/death, return and removal.",
+        "SENGINEER": "Normal production, movement, building entry/capture/repair and disposal; Allied ENGINEER retains Original.",
+        "DOG": "Normal production, running, HD leap, infantry kill, return and death; Allied ADOG retains Original.",
+        "FLAKT": "Normal production, movement, ground and airborne damage, native death and removal.",
+        "SHK": "Normal production, normal/elite electric attacks, powered-coil charging and release, death and removal.",
+        "IVAN": "Normal production, movement, bomb attachment, 450-tick detonation, engineer disarm and removal.",
+        "YURI": "Normal production, movement, mind control, Psi Wave and release of the controlled unit after death.",
+        "TERROR": "Cuban production, eight initial attack bearings, suicide damage, killed death-weapon damage and removal.",
+        "DESO": "Iraqi production, normal/elite beams, deployment, radiation damage/immunity, undeployment, movement and death.",
+        "CIVAN": "Spy infiltration/stolen Allied technology, normal production, teleport/recovery, bomb timer/disarm and removal.",
+        "YURIPR": "Stolen Soviet technology, normal production, BuildLimit=1, movement and mind control pass. Psi Wave kills the caster in Original and HD; ordinary death/release coverage remains incomplete.",
+        "SQD": "Native Original production, swimming/submersion, grapple attachment, rocking/damage, host death/return, secondary punch and removal; no HD body or attachment allocation.",
+        "DTRUCK": "Libyan 1500-credit production, movement, suicide and killed death-weapon damage, delayed explosion and cleanup; TRUCKA stays Original.",
+        "SMCV": "3000-credit production, movement, deployment into accepted NACNST, repacking only with the native McvRepacks host option and cleanup.",
+        "TTNK": "Country-gated production, movement, independent turret aiming, electric weapon damage and removal.",
+        "APOC": "Normal production, movement, independent turret/barrel aiming, 120mm ground damage, MammothTusk anti-air damage and removal.",
+        "HTK": "Normal production, movement, independent turret/barrel aiming, ground/air flak and HD Conscript boarding/unloading.",
+        "HARV": "1400-credit production, native gathering/full cargo, refinery docking, HORV tipping transition, 2000-credit deposit, turret combat and removal.",
+        "V3": "800-credit production, movement, loaded/empty launcher, HD V3ROCKET pitch/yaw/altitude flight, impact, reload and removal.",
+        "DRED": "2000-credit naval production, movement, loaded/empty launcher, HD DMISL flight/impact, reload, native sinking and removal.",
+        "SUB": "Naval production/movement, cloak/submersion, hidden enemy zero-draw visibility, torpedo damage, native damage-triggered emergence and removal.",
+        "HYD": "600-credit naval production, movement, ground and airborne weapon damage, visibility/opacity and native removal.",
+        "ZEP": "2000-credit production, native airborne altitude/movement, bombing, native ground shadow, falling/crash and removal.",
+        "SAPC": "900-credit naval production, water-to-land hover movement, HD Conscript boarding/unloading, explicit bridge-deck order restriction and native removal."
+    },
+    "limitations": {
+        "HARV": "User-authorized uniform ore-filled artwork at all cargo levels; native cargo/economy and distinct tipping state remain live. No empty/partial visual states are claimed.",
+        "YURIPR": "UPSTREAM_GAMEPLAY_BLOCKED: native Psi Wave self-kill reproduced with Original. Complete candidate artwork is included but runtime activation is disabled before fetch/upload.",
+        "SUB": "Native underwater rules use explosion/removal, not the surface-ship slow-sinking animation. Friendly submerged opacity and enemy concealment are separate checks.",
+        "HYD": "Native lightweight naval destruction removes the actor directly; no slow-sinking state is fabricated.",
+        "SAPC": "Native bridge-deck order is rejected; the transport remains on the ground/water layer. The test does not claim bridge-deck traversal.",
+        "SMCV": "Repacking is tested only with the existing McvRepacks option enabled. Building artwork remains the accepted building checkpoint.",
+        "HTK": "Bridge-under comparison has no leaked HD color or additional dark shadow pixels. Five pixels are lighter than Original where the approximate HD depth surface intersects the native shadow receiver; retain this visible-review limitation.",
+        "DESO": "Green radiation canisters cover the full 322-slot member. Upper-right FireUp frames 206-211 use stable anatomical registration; four resized exports correct muzzle-effect-driven growth. Three fully occluded-canister death frames retain accepted artwork. Corrected visual acceptance remains pending.",
+        "SQD": "USER_REQUESTED_ORIGINAL: native body and SQDG grapple attachment are active. Candidate HD resources and earlier sweeps are retained as inactive history."
+    },
+    "reviewDecisions": {
+        "correctionPending": [
+            "DESO",
+            "HARV",
+            "HYD",
+            "DRED",
+            "SUB"
+        ],
+        "artCorrectionBlocked": [],
+        "originalAccepted": [
+            "SQD"
+        ],
+        "acceptedOthers": true,
+        "upstreamBlocked": [
+            "YURIPR"
+        ]
+    }
+}

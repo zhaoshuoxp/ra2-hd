@@ -1,0 +1,385 @@
+{
+  "status": "LOCAL_DELIVERY_COMPLETE_C6_WINDOWS_STRESS_AB_PENDING",
+  "diagnosticId": "WINHD-20261008-D38F136-C6",
+  "frozenPackageSource": "4d3e41f5ffe2746ada9bc765a407f00638cb4705",
+  "sourceCommits": [
+    "14a1c56774074b23c0379c7381425ddc3883de2f",
+    "4d3e41f5ffe2746ada9bc765a407f00638cb4705"
+  ],
+  "archive": {
+    "status": "PASS_FULL_ARCHIVE_AND_FRESH_EXTRACTION",
+    "diagnosticId": "WINHD-20261008-D38F136-C6",
+    "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "diagnosticCommit": "4d3e41f5ffe2746ada9bc765a407f00638cb4705",
+    "archive": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C6-4d3e41f-Windows-x64.zip",
+    "bytes": 3499947041,
+    "sha256": "a993a2ff3bfc989a950bd6602a99f30f0572733b95049f2c7b3cd2f46adc9994",
+    "manifestSha256": "f7bdd2665e180d4aa7528c3520bea9af45bfa2b4f00b26418eb27ab471bf526a",
+    "entries": 8108,
+    "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c6-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C6-4d3e41f-Windows-x64",
+    "windowsNative": "NOT_RUN"
+  },
+  "desktop": {
+    "status": "PASS_EXACT_DESKTOP_COPY_AND_FULL_CRC",
+    "file": "/Users/Aone/Desktop/RA2-HD-WINHD-20261008-D38F136-C6-4d3e41f-Windows-x64.zip",
+    "bytes": 3499947041,
+    "sha256": "a993a2ff3bfc989a950bd6602a99f30f0572733b95049f2c7b3cd2f46adc9994",
+    "entries": 8108
+  },
+  "freshKitVerification": {
+    "schemaVersion": 1,
+    "diagnosticId": "WINHD-20261008-D38F136-C6",
+    "manifestSha256": "f7bdd2665e180d4aa7528c3520bea9af45bfa2b4f00b26418eb27ab471bf526a",
+    "checked": 8107,
+    "failures": [],
+    "status": "PASS",
+    "verifiedAt": "2026-10-09T06:10:43.889Z"
+  },
+  "unchangedContracts": {
+    "status": "PASS_FROZEN_ART_CAPS_AND_UNCHANGED_POOL_ALGORITHM",
+    "sourceHead": "4d3e41f5ffe2746ada9bc765a407f00638cb4705",
+    "manifestSha256": "f7bdd2665e180d4aa7528c3520bea9af45bfa2b4f00b26418eb27ab471bf526a",
+    "unchangedCPUAndTexturePaths": [
+      {
+        "path": "src/engine/renderable/builder/poolHdPixels.ts",
+        "sha256": "dcf664aa93bbd445aee8371c8b720c78fa585842fd2f3d3a45f50642e1ad94c7",
+        "status": "EXACT_C5"
+      },
+      {
+        "path": "src/engine/renderable/builder/poolHdPage.ts",
+        "sha256": "8ff013a11a4fb124774c8b120d8fd70b28ca886be23d99d1f9aa5a3d2422a539",
+        "status": "EXACT_C5"
+      },
+      {
+        "path": "src/engine/renderable/builder/downsampleHdPage.ts",
+        "sha256": "01ae2f77122982e34dc42931be2f505e2f1653b3932c4660ca7c96486fcee349",
+        "status": "EXACT_C5"
+      }
+    ],
+    "resources": {
+      "worldAndUIFiles": 6033,
+      "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+      "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+    },
+    "limitsMiB": {
+      "world2X": 512,
+      "world4X": 1280,
+      "preparedCPU": 128,
+      "ui": 16
+    },
+    "workerSourceMaps": [
+      {
+        "scriptUrl": "ra2://game/assets/poolHdPage.worker-BrM0O4Ke.js",
+        "javascript": "poolHdPage.worker-BrM0O4Ke.js",
+        "javascriptSha256": "19b12dfb93de911dd31ed394c5b1bf9005144bb7bf4b23ac4db68222c39542ba",
+        "sourceMap": "poolHdPage.worker-BrM0O4Ke.js.map",
+        "sourceMapSha256": "d3ee7c5142bb702fc69812460763ac474d69db669dee8bee54bb4a9585881e62",
+        "sourceContentIncluded": true
+      }
+    ],
+    "applicationParityReceipt": ".artifacts/windows-hd-diagnostic/c6-build-parity-v1.json"
+  },
+  "applicationBuildParity": {
+    "status": "PASS_EXACT_APPLICATION_AND_MAP_BYTES",
+    "testedSource": "14a1c56774074b23c0379c7381425ddc3883de2f",
+    "finalSource": "4d3e41f5ffe2746ada9bc765a407f00638cb4705",
+    "files": 288,
+    "boundary": "Native launcher correction only; reuse measured worker proof for exact application/map bytes, with final fresh extraction separately exercised."
+  },
+  "windowsEvidence": [
+    "docs/windows-hd-c4-stress-trace-20261008.json",
+    "docs/windows-hd-c4-c5-stress-ab-20261008.json"
+  ],
+  "baselineNormalRun": "2026-10-09T05-13-31-955Z-stress-4x-none",
+  "baselineSource": "b71f7631149140a19bd1963d4f086d540252889e",
+  "tests": {
+    "focusedAndShared": 84,
+    "assertions": 1635,
+    "log": ".artifacts/windows-hd-diagnostic/c6-tests-v3.log",
+    "entryTypecheck": "PASS",
+    "typecheckLog": ".artifacts/windows-hd-diagnostic/c6-typecheck-v1.log",
+    "freshNativeValidPhases": 12,
+    "fullBufferPixelCases": 9
+  },
+  "nativeMacWorkerProof": {
+    "status": "PASS_NATIVE_BACKGROUND_POOLING_BYTE_PARITY_AND_OWNERSHIP",
+    "receipt": ".artifacts/windows-hd-diagnostic/c6-native-worker-proof-v2/report.json",
+    "algorithmSha256": "dcf664aa93bbd445aee8371c8b720c78fa585842fd2f3d3a45f50642e1ad94c7",
+    "jobs": 179,
+    "inMatchJobs": 5,
+    "pooledJobs": 179,
+    "comparedBytes": 102925600,
+    "differentBytes": 0,
+    "workerOwners": 172,
+    "allOwnersTerminatedOnce": true,
+    "pendingBytes": 0,
+    "peakPendingInputBytes": 33554432,
+    "inputPostCpuMs": {
+      "max": 7.370000004768372,
+      "total": 58.30499982833862
+    },
+    "cpuControlMs": {
+      "max": 85.05999994277954,
+      "total": 693.1649997234344
+    },
+    "liveTiledBindings": 570,
+    "nativeEndTick": 1459,
+    "workerScriptUrls": [
+      "ra2://game/assets/poolHdPage.worker-BrM0O4Ke.js"
+    ],
+    "boundary": "Instrumented copied native stress 4X. Each actual worker result is compared with the unchanged CPU algorithm; this deliberately adds CPU work outside Windows acceptance. postMessage CPU duration measures cloning/submission only; round-trip duration is not worker CPU time.",
+    "errors": []
+  },
+  "freshNativeRuns": [
+    {
+      "receipt": ".artifacts/windows-hd-diagnostic/c6-fresh-pixels-stress-4x-v1/report.json",
+      "run": ".artifacts/windows-hd-diagnostic/candidate-c6-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C6-4d3e41f-Windows-x64/Diagnostic-Runs/2026-10-09T06-11-12-932Z-stress-4x-none",
+      "config": {
+        "mode": "4x",
+        "scene": "stress",
+        "control": "none",
+        "seconds": 3,
+        "trace": false,
+        "manual": false,
+        "experimentId": "WINHD-20261008-D38F136-C6-stress-4x-none",
+        "timestamp": 1700000000000,
+        "edition": "yr",
+        "shadows": 3,
+        "renderResolution": "native",
+        "contentSize": [
+          1707,
+          1067
+        ],
+        "displayMode": "native-fullscreen",
+        "presentationHeight": 900
+      },
+      "phases": [
+        {
+          "label": "fresh-process-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 196,
+          "hdBindings": 1922
+        },
+        {
+          "label": "warmed-steady",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 201,
+          "hdBindings": 1938
+        },
+        {
+          "label": "same-process-reentry-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 200,
+          "hdBindings": 1922
+        },
+        {
+          "label": "same-process-reentry-warmed",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 200,
+          "hdBindings": 1938
+        }
+      ],
+      "pixelCases": 3,
+      "differentBytes": 0,
+      "newProgramLinks": 0
+    },
+    {
+      "receipt": ".artifacts/windows-hd-diagnostic/c6-fresh-pixels-small-2x-v1/report.json",
+      "run": ".artifacts/windows-hd-diagnostic/candidate-c6-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C6-4d3e41f-Windows-x64/Diagnostic-Runs/2026-10-09T06-12-42-915Z-small-2x-none",
+      "config": {
+        "mode": "2x",
+        "scene": "small",
+        "control": "none",
+        "seconds": 3,
+        "trace": false,
+        "manual": false,
+        "experimentId": "WINHD-20261008-D38F136-C6-small-2x-none",
+        "timestamp": 1700000000000,
+        "edition": "yr",
+        "shadows": 3,
+        "renderResolution": "native",
+        "contentSize": [
+          1280,
+          800
+        ],
+        "displayMode": "window",
+        "presentationHeight": 900
+      },
+      "phases": [
+        {
+          "label": "fresh-process-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 204,
+          "hdBindings": 1323
+        },
+        {
+          "label": "warmed-steady",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 201,
+          "hdBindings": 1324
+        },
+        {
+          "label": "same-process-reentry-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 209,
+          "hdBindings": 1323
+        },
+        {
+          "label": "same-process-reentry-warmed",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 202,
+          "hdBindings": 1324
+        }
+      ],
+      "pixelCases": 3,
+      "differentBytes": 0,
+      "newProgramLinks": 0
+    },
+    {
+      "receipt": ".artifacts/windows-hd-diagnostic/c6-fresh-pixels-small-original-v1/report.json",
+      "run": ".artifacts/windows-hd-diagnostic/candidate-c6-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C6-4d3e41f-Windows-x64/Diagnostic-Runs/2026-10-09T06-14-01-632Z-small-original-none",
+      "config": {
+        "mode": "original",
+        "scene": "small",
+        "control": "none",
+        "seconds": 3,
+        "trace": false,
+        "manual": false,
+        "experimentId": "WINHD-20261008-D38F136-C6-small-original-none",
+        "timestamp": 1700000000000,
+        "edition": "yr",
+        "shadows": 3,
+        "renderResolution": "native",
+        "contentSize": [
+          1280,
+          800
+        ],
+        "displayMode": "window",
+        "presentationHeight": 900
+      },
+      "phases": [
+        {
+          "label": "fresh-process-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 204,
+          "hdBindings": 0
+        },
+        {
+          "label": "warmed-steady",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 202,
+          "hdBindings": 0
+        },
+        {
+          "label": "same-process-reentry-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 203,
+          "hdBindings": 0
+        },
+        {
+          "label": "same-process-reentry-warmed",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 202,
+          "hdBindings": 0
+        }
+      ],
+      "pixelCases": 3,
+      "differentBytes": 0,
+      "newProgramLinks": 0
+    }
+  ],
+  "freshMacExportRoundtrip": {
+    "status": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+    "archive": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c6-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C6-4d3e41f-Windows-x64/WINHD-20261008-D38F136-C6-RETURN-2026-10-09T06-15-07-271Z.zip",
+    "bytes": 80126223,
+    "sha256": "7a5d6dd7a1a48d4efe4ce1a9a1213bc87931684d06d8d5c32afbb28beb0446d2",
+    "files": 28,
+    "runs": 3,
+    "diagnosticId": "WINHD-20261008-D38F136-C6",
+    "diagnosticCommit": "4d3e41f5ffe2746ada9bc765a407f00638cb4705",
+    "manifestSha256": "f7bdd2665e180d4aa7528c3520bea9af45bfa2b4f00b26418eb27ab471bf526a",
+    "extractedDirectory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c6-fresh-export-validated-v1",
+    "launcherPolicy": "Inspected as data only; no returned scripts executed.",
+    "launchers": [
+      {
+        "file": "Export-Reports.cmd",
+        "status": "IDENTICAL",
+        "sha256": "25e23098719b40880c953b1ca32ce71489741e5840aae605e196fd858c64b0fc"
+      },
+      {
+        "file": "Launch-Diagnostics.cmd",
+        "status": "IDENTICAL",
+        "sha256": "fc19bca2c7702ddf885c710ded6e6a6e822bc8318ea9b0b9450d0db320c12938"
+      },
+      {
+        "file": "Run-Control.cmd",
+        "status": "IDENTICAL",
+        "sha256": "69705b9577c1a5f9cceed33612b407d9110317d9a9eab76ec570507da20255db"
+      },
+      {
+        "file": "Verify-Kit.cmd",
+        "status": "IDENTICAL",
+        "sha256": "812399b452707c4a00757b168629eaedd761f5ec57d4584cd43dd3806d5d9722"
+      }
+    ]
+  },
+  "sourcePatch": {
+    "file": ".artifacts/windows-hd-diagnostic/c6-rendering-candidate.patch",
+    "sha256": "7f10791843303b06ecb543ac54a338db63764c45e544398c25e03a592c8b6a79",
+    "paths": 11,
+    "applyCheckOnFrozenMain": "PASS_READ_ONLY",
+    "applied": "NO"
+  },
+  "incrementalSourcePatch": {
+    "base": "b71f7631149140a19bd1963d4f086d540252889e",
+    "head": "4d3e41f5ffe2746ada9bc765a407f00638cb4705",
+    "paths": [
+      "src/engine/renderable/builder/HdTilePoolPreparer.ts",
+      "src/engine/renderable/builder/loadSovietUnitsHd.ts",
+      "src/engine/renderable/builder/poolHdPage.worker.ts",
+      "src/engine/renderable/builder/resolveHdSprite.ts"
+    ],
+    "patch": ".artifacts/windows-hd-diagnostic/c6-from-c5-rendering.patch",
+    "sha256": "e968b4c43208b366bd9a940157a40ebbd77a27d0b3170b1c7963fa79cf9bea8b",
+    "priorRenderingRepairs": "EXACT_C5"
+  },
+  "preservedFailures": [
+    {
+      "receipt": ".artifacts/windows-hd-diagnostic/c6-tests-initial-failure-v1.json",
+      "cause": "Bun test assertion waited for an unresolved promise before test disposal; corrected sequencing passes."
+    },
+    {
+      "receipt": ".artifacts/windows-hd-diagnostic/c6-native-worker-proof-v1.log",
+      "cause": "Bun Playwright launch timeout before verification. Node launcher correction passes; application/map bytes exact."
+    }
+  ],
+  "acceptance": {
+    "smallC4FourX": "USER_ACCEPTED",
+    "c4EightPlayerEnemyHitch": "OPEN",
+    "c5WindowsReturn": "VALID_NORMAL_STRESS_RETURN",
+    "c5OverallGain": "NOT_ESTABLISHED",
+    "c5UserExperience": "PENDING",
+    "c6WindowsExecution": "NOT_RUN",
+    "c6WindowsGain": "PENDING",
+    "c6VisualLoadingAndUserStressAcceptance": "PENDING",
+    "actualGpuExecutionAndVram": "UNAVAILABLE",
+    "physicalInputAndAllMaps": "NOT_ESTABLISHED",
+    "mainMerge": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED"
+  },
+  "timingBoundary": "Mac mechanism/functional QA only. CPU control parity intentionally adds main-thread work; no Mac throughput or Windows speedup claim. postMessage duration is input clone/submission CPU cost, not worker CPU execution. Pending input byte count is not process memory or VRAM.",
+  "mainAudit": {
+    "head": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "dirty": []
+  },
+  "peerM23Audit": {
+    "head": "8fe47e39151a34577a7f56172a870efc1c425c3b",
+    "dirty": [
+      " M docs/m2-3-production-acceptance.json",
+      " M scripts/m2/export-showcase-shp.py",
+      " M scripts/m2/verify-showcase-shp.py"
+    ],
+    "action": "UNTOUCHED"
+  },
+  "nextWindowsAction": "Verify C6; launch eight-player/4X/Normal once on the same target/output/power; wait final completion; export; report automatic enemy/combat hitch plus visual/loading feedback. Reuse prior valid C5 stress Normal baseline; no F8/F9 initially. Continue this execution conversation."
+}

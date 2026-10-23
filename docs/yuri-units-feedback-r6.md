@@ -1,0 +1,11 @@
+# TELE R6: selected partial hull contact with deeper translucent purple
+
+The user selected the exact intermediate R5 gameplay screenshot for contact position, while retaining the later deeper color. The attached reference is byte-identical to `feedback-r5/runtime-tele-4x-v2/TELE-moving-iridescent-field-detail.png` (SHA-256 `685a71f08f79c8343c9ebb540d63d446cad6b7c9f299814ea170f1bb4ce21170`). This supersedes the R5 front-outline contact selection.
+
+Restore the native victim's nearest bottom footprint edge toward the source. In the current camera this lets the translucent field partially overlap the hull, exactly as in the selected reference. Keep the between-barrels emission, violet `#8744df`, lavender `#b479f5`, 38 to 64 percent coverage, fine moving grain and ten-logical-pixel width. HD victim alpha-silhouette handling remains unchanged. Native targeting, lift/pull motion, timings, camera, geometry and rules remain intact.
+
+Verify the current copied app at 2x/4x, including live bottom contact, horizontal pulling and stopping an active lift. The focused geometry tests retain the selected reference contact under an angled camera. Other R3 visuals and clean MIND/LTNK/YTNK mothers retain user acceptance. New overall TELE visual acceptance remains pending. Preserve previous apps, resources, mothers, reviews and evidence. DISK payment and YURIPR PsiWave exceptions remain explicit; main integration and Windows validation are not selected.
+
+Selected evidence: runtime source `883154327e0cc03bc09a753c3d64f658942cbc8b`, package-v1 and native evidence-v1. Twenty focused tests pass 125 expectations, entry type checking passes, and both native 2x/4x cases pass with no recorded game errors. The review contains 11 figures and two embedded videos, fully decoded before delivery. The same-frame diagnostic changes 9331 pixels and none outside the field envelope. Main integration is NOT_MERGED; TELE human visual acceptance is PENDING.
+
+Both live fixture contacts match the selected reference frame: 4x source/contact positions match exactly, and the 2x displacement is below 0.001 drawing-buffer pixels. This verifies the selected fixture, not every target or bearing. `feedback-r6/contact-validation-v1.json` records the reference identity and measurements.

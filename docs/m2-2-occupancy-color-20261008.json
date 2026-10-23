@@ -1,0 +1,140 @@
+{
+  "schema": "m2-2-occupancy-color-correction-20261008-v1",
+  "status": "TECHNICAL_PASS_AND_DESKTOP_DELIVERED_FOR_USER_VISUAL_REVIEW",
+  "runtimeSourceHead": "114b2d9426ec13a1207f807d07c757caf269e515",
+  "sourceBranch": "task/m2-2-temperate-showcase",
+  "mainHeadUnchanged": "538a8508c439d126e98d664effdb25a204a34f29",
+  "userVisualAcceptance": "PENDING_OCCUPANCY_CORRECTION_ONLY",
+  "priorAcceptedContent": "PRESERVED",
+  "mainPromotion": "PENDING_THIS_VISUAL_REVIEW",
+  "remotePush": "NOT_REQUESTED_OR_PERFORMED",
+  "target": "darwin-arm64",
+  "windows": "NOT_RUN_THIS_CORRECTION",
+  "scope": {
+    "garrisonFamilies": 28,
+    "garrisonInstances": 44,
+    "hospitalFamilies": 1,
+    "hospitalInstances": 2,
+    "replacementFamilies": 29,
+    "replacementMembers": 31,
+    "unchangedEnvironmentFamilies": 69
+  },
+  "selection": {
+    "environment": {
+      "revision": "environment-m2-2-complete-v9",
+      "sha256": "85e99a6b135002e51a9cd55e4c82008c151f46eee3e02a7b5d3cfbe113e3cd95"
+    },
+    "terrain": {
+      "revision": "temperate-m2-2-environment-v9",
+      "sha256": "b79a24ff94a4b5d98a7e8621c0b141b8c9d254ffd636fcfa4d713ca013dd4fbd"
+    }
+  },
+  "tests": {
+    "materialTests": 5,
+    "environmentTests": 10,
+    "environmentAssertions": 122,
+    "entryTypecheck": "PASS",
+    "densityFramesIndependentlyVerified": 1956,
+    "exactDataPages": 383,
+    "matchedNativeComparisons": 436,
+    "duplicateInstanceTransitions": 64,
+    "liveOwnerStates": 500,
+    "liveShadeEntries": 8000,
+    "offlineStateComparisons": 408,
+    "offlineEightColorPreviews": 464,
+    "extractedNativeComparisons": 20
+  },
+  "delivery": {
+    "status": "PASS_EXACT_DESKTOP_ZIP_COPY",
+    "desktopZip": "/Users/Aone/Desktop/RA2-HD-M2.2-Occupancy-Color-Fix-R8b-20261008-macOS-arm64.zip",
+    "bytes": 3613430787,
+    "sha256": "ed09877a0d27be2e90749047322e9a788521bef47cccf0468357fe013c4638ce",
+    "previousDesktopArchive": "ABSENT_BEFORE_NEW_COPY",
+    "previousAcceptedDelivery": "PRESERVED_IN_WORKSPACE",
+    "previousPath": "/Users/Aone/Desktop/RA2-HD-M2.2-Temperate-Accepted-20261007-macOS-arm64.zip"
+  },
+  "offlineReview": {
+    "path": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Occupancy-Color-Fix-R8b-20261008-macOS-arm64/M2.2-Occupancy-Colors-Offline.html",
+    "sha256": "c4649d6aca58074d78454b55d0a987435515d1fd3abfd756ac4129f71a82d495"
+  },
+  "checks": {
+    "independent-shp-final.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/independent-shp-final.json",
+      "sha256": "28510f73c4b1b7760d202b67f9ad1fa3cd8575a22f7763ad3e5473b6384da6ac",
+      "status": "PASS"
+    },
+    "independent-owner-final.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/independent-owner-final.json",
+      "sha256": "b90ee8d11a21bd28a5d946e2249b77677a0f7a9e151e9e5ef742f2b779f15c9f",
+      "status": "PASS"
+    },
+    "native-closure.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/native-closure.json",
+      "sha256": "f71b57dfd4fd5accf4f5c37794481b08ca94dda5ac23c0f18adb9134faad85da",
+      "status": "PASS_ALL_PRIMARY_OCCUPIABLE_BUILDINGS_AND_NATIVE_DAMAGE_EVACUATION"
+    },
+    "live-owner-palette.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/live-owner-palette.json",
+      "sha256": "568d910b3391ac44bd3a40215b9541622402b134853fbbadc7231f9d41b2a700",
+      "status": "PASS_EXACT_LIVE_OWNER_PALETTES_AND_16_SHADES"
+    },
+    "review-qa-final/qa.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/review-qa-final/qa.json",
+      "sha256": "593cc41b2bf8c987520289b6139d25c2212c535d89075c0aae2fc21244231e29",
+      "status": "PASS_EMBEDDED_OFFLINE_NATIVE_STATES_AND_464_OWNER_COLOR_PREVIEWS"
+    },
+    "copied-files-final.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/copied-files-final.json",
+      "sha256": "22af9f6ee703182c9bad8aa89e399f49678884dccadb2a3eae950fb644045779",
+      "status": "PASS_COPIED_HASHES_LINKS_MODES"
+    },
+    "unchanged-resource-parity.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/unchanged-resource-parity.json",
+      "sha256": "bbd948e389826b9b0cd603dc966d1d00ebceb0f1bf31a02628ff4b19214290d8",
+      "status": "PASS_UNCHANGED_RETAIL_WORLD_PREPARED_UI_AND_TERRAIN_BYTES"
+    },
+    "complete-zip-final.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/complete-zip-final.json",
+      "sha256": "41ba3c5568213097838587c931da44e79a90fdf37776463977c1faa4fd56a843",
+      "status": "PASS_COMPLETE_ZIP_HASHES_MODES_SYMLINKS_NO_PROFILES"
+    },
+    "desktop-copy-final.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/desktop-copy-final.json",
+      "sha256": "5ea215de5219bf706199ac7176cf9cf864d2eeb4f75592ec41bd2827aa9e0f72",
+      "status": "PASS_EXACT_DESKTOP_ZIP_COPY"
+    },
+    "extracted-files-verified-final.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/extracted-files-verified-final.json",
+      "sha256": "4b77dc21c55a8da51da5abeeebfc2003e2d83a9b04903ac6436e542478042b8c",
+      "status": "PASS_COPIED_HASHES_LINKS_MODES"
+    },
+    "previous-archive-preserved.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/previous-archive-preserved.json",
+      "sha256": "5804f35774c3e06b8c2f5ff2b0b78c6c8630dd0217b8d35d47feb2a330b6931b",
+      "status": "PASS_ACCEPTED_WORKSPACE_ARCHIVE_PRESERVED"
+    }
+  },
+  "extractedNative": {
+    "extracted-native-4x": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/extracted-native-4x/report.json",
+      "sha256": "2bd177065f640a9c9a7e9f6aa6cbea80f688abe1a3bcafc335288648ac2085be",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "cases": 10
+    },
+    "extracted-native-2x": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/occupancy-r8/extracted-native-2x/report.json",
+      "sha256": "acbc48df3b369dd57616fe554f6db1f84d3578d67fbeb843c50bbb960047c854",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "cases": 10
+    }
+  },
+  "signature": "PASS_STRICT_DEEP_COPIED_AND_FRESH_EXTRACTION",
+  "historicalDiagnostics": {
+    "invalidOriginalCapture": "baseline-native lacked batch rebuild; superseded by baseline-native-matched",
+    "initialPackage": "pointer v6 did not match v8 contract; raw rejection retained",
+    "float32Boundary": "One 2X pixel at exact 0.12 excess rejected by float64 audit; final audit explicitly allows 1e-7 float32 boundary",
+    "offlineControlIdentity": "Initial generator included absent control-map ctnewy21; final generator restricts primary-map usage",
+    "preExtraction": "Previously accepted Desktop ZIP already absent; raw missing-path receipt retained and superseded after exclusive new copy"
+  },
+  "handoff": "Continue visual review and any correction in this conversation; no adjacent milestone."
+}

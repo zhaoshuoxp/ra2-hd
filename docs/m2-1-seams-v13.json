@@ -1,0 +1,1256 @@
+{
+  "schema": "m2-1-bounded-seam-correction-v1",
+  "status": "BOUNDED_SEAM_CORRECTION_USER_ACCEPTED",
+  "authorization": {
+    "date": "2026-10-07",
+    "reviewedRevision": "temperate-m2-1-production-v12c",
+    "decision": "ACCEPT_REMAINDER_REQUEST_BOUNDED_SEAM_CORRECTION",
+    "acceptedRemainder": "All selected production except dirt/paved-road mixtures and ordinary grassy slope seams/highlights",
+    "roadExceptions": [
+      "proad16.tem",
+      "proad17.tem",
+      "proad18.tem",
+      "proad19.tem",
+      "proad20.tem",
+      "proad21.tem"
+    ],
+    "slopeException": "Set 9 ordinary slopes and Set 43 grassy slope fixups. V12C stone detail within fixups remains exact; Native contact-only and zero-offset exceptions retained.",
+    "request": "Match adjoining paved-road colors and joins; remove visible square slope borders, seams and highlights",
+    "screenshot": "/Users/Aone/.codex/attachments/9942c81b-f1c2-441e-b055-f483ce7868d3/Screenshot 2026-10-07 at 10.57.45\u202fAM.png",
+    "boundary": "Preserve accepted V12C remainder exactly; no adjacent batch, main merge, push or publication"
+  },
+  "resource": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-1-seams-v13d",
+    "sha256": "47a93e1ae5c56150357dd3f040f654079de26f8c899ebbc923b3c099bbf97f38"
+  },
+  "exportValidation": {
+    "status": "PASS",
+    "pack": {
+      "schemaVersion": 1,
+      "revision": "temperate-m2-1-seams-v13d",
+      "sha256": "47a93e1ae5c56150357dd3f040f654079de26f8c899ebbc923b3c099bbf97f38"
+    },
+    "parent": {
+      "root": ".local/terrain-packs/temperate-m2-1-production-v12c",
+      "sha256": "c09a69f129497128dc22b5c598aeb7f6a43c03b3c91d064721ddde6b415adc69"
+    },
+    "members": 305,
+    "images": 742,
+    "imageDensityPairs": 1484,
+    "changedPairs": 408,
+    "exactV12CPreservedPairs": 1076,
+    "changedMembers": [
+      "proad16.tem",
+      "proad17.tem",
+      "proad18.tem",
+      "proad19.tem",
+      "proad20.tem",
+      "proad21.tem",
+      "rmpfx01.tem",
+      "rmpfx01a.tem",
+      "rmpfx01b.tem",
+      "rmpfx01c.tem",
+      "rmpfx02.tem",
+      "rmpfx02a.tem",
+      "rmpfx02b.tem",
+      "rmpfx02c.tem",
+      "rmpfx03.tem",
+      "rmpfx03a.tem",
+      "rmpfx03b.tem",
+      "rmpfx03c.tem",
+      "rmpfx04.tem",
+      "rmpfx04a.tem",
+      "rmpfx04b.tem",
+      "rmpfx04c.tem",
+      "rmpfx05.tem",
+      "rmpfx05a.tem",
+      "rmpfx05b.tem",
+      "rmpfx05c.tem",
+      "rmpfx06.tem",
+      "rmpfx06a.tem",
+      "rmpfx06b.tem",
+      "rmpfx06c.tem",
+      "rmpfx07.tem",
+      "rmpfx07a.tem",
+      "rmpfx07b.tem",
+      "rmpfx07c.tem",
+      "rmpfx08.tem",
+      "rmpfx08a.tem",
+      "rmpfx08b.tem",
+      "rmpfx08c.tem",
+      "rmpfx09.tem",
+      "rmpfx09a.tem",
+      "rmpfx09b.tem",
+      "rmpfx09c.tem",
+      "rmpfx10.tem",
+      "rmpfx10a.tem",
+      "rmpfx10b.tem",
+      "rmpfx10c.tem",
+      "rmpfx11.tem",
+      "rmpfx11a.tem",
+      "rmpfx11b.tem",
+      "rmpfx11c.tem",
+      "rmpfx12.tem",
+      "rmpfx12a.tem",
+      "rmpfx12b.tem",
+      "rmpfx12c.tem",
+      "slope01.tem",
+      "slope01a.tem",
+      "slope01b.tem",
+      "slope01c.tem",
+      "slope02.tem",
+      "slope02a.tem",
+      "slope02b.tem",
+      "slope02c.tem",
+      "slope03.tem",
+      "slope03a.tem",
+      "slope03b.tem",
+      "slope03c.tem",
+      "slope04.tem",
+      "slope04a.tem",
+      "slope04b.tem",
+      "slope04c.tem",
+      "slope05.tem",
+      "slope05a.tem",
+      "slope05b.tem",
+      "slope05c.tem",
+      "slope06.tem",
+      "slope06a.tem",
+      "slope06b.tem",
+      "slope06c.tem",
+      "slope07.tem",
+      "slope07a.tem",
+      "slope07b.tem",
+      "slope07c.tem",
+      "slope08.tem",
+      "slope08a.tem",
+      "slope08b.tem",
+      "slope08c.tem",
+      "slope09.tem",
+      "slope09a.tem",
+      "slope09b.tem",
+      "slope09c.tem",
+      "slope10.tem",
+      "slope10a.tem",
+      "slope10b.tem",
+      "slope10c.tem",
+      "slope11.tem",
+      "slope11a.tem",
+      "slope11b.tem",
+      "slope11c.tem",
+      "slope12.tem",
+      "slope12a.tem",
+      "slope12b.tem",
+      "slope12c.tem",
+      "slope14.tem",
+      "slope14a.tem",
+      "slope14b.tem",
+      "slope14c.tem",
+      "slope15.tem",
+      "slope15a.tem",
+      "slope15b.tem",
+      "slope15c.tem",
+      "slope16.tem",
+      "slope16a.tem",
+      "slope16b.tem",
+      "slope16c.tem",
+      "slope17.tem",
+      "slope18.tem",
+      "slope19.tem",
+      "slope20.tem"
+    ],
+    "changedMemberCount": 118,
+    "groundAtlases": "BYTE_IDENTICAL",
+    "unaffectedFramesAndGutters": "EXACT_V12C",
+    "nativeMetadataAlphaGeometry": "EXACT",
+    "nativePlaceholders": 126,
+    "slopeNativeContactOnlyPairs": 8,
+    "exactSlopeNativeContactPixels": 258720,
+    "completeTwoPixelGutters": "EXACT",
+    "newOpaqueFluorescentMatte": "NONE",
+    "atlasBytes": {
+      "2": 38158336,
+      "4": 149487616
+    },
+    "visualAcceptance": "PENDING_COPIED_NATIVE_REVIEW"
+  },
+  "authoringRoot": ".artifacts/m2-1/authoring-seams-v13",
+  "technical": "EXACT_PRESERVATION_AND_COPIED_NATIVE_2X_4X_PASS",
+  "visual": "USER_ACCEPTED_V13D_2026_10_07",
+  "verification": {
+    "focusedM2Tests": {
+      "passed": 9,
+      "failed": 0,
+      "expectations": 34
+    },
+    "entryTypecheck": "PASS",
+    "nodeSyntax": "PASS",
+    "pythonSyntax": "PASS"
+  },
+  "windows": "NOT_RUN",
+  "main": "NOT_MODIFIED",
+  "diagnostics": {
+    "v13": "Join-strip registration study retained; rejected source alignment before runtime",
+    "v13b": "Native canvas-border distance audit failed; retained separately",
+    "v13c": {
+      "status": "TECHNICAL_PASS_VISUAL_CORRECTION_INCOMPLETE",
+      "native": ".artifacts/m2-1/copied-seams-v13c-4x/report.json",
+      "reason": "Same-camera binding inspection identified remaining rims/highlights on grassy Rmpfx10/11 connector cells",
+      "retained": "Old copied app/resources, source export and native run preserved"
+    },
+    "v13d": "Continuous turf projection also covers native grassy ramp fixups; accepted stone pixels within fixups retained exactly"
+  },
+  "runtimeSourceHead": "6873a69b1cade4f9a2691637a19dbb06e603cf38",
+  "copiedReceipt": {
+    "app": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/RA2 HD M2.1 Seam Review V13D.app",
+    "resources": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/RA2-HD-UI-Resources",
+    "review": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/M2.1-Seam-Review-V13D-Embedded.html",
+    "coverageScene": "grass-slope-full",
+    "reviewMasters": 5,
+    "originalReferences": 5,
+    "reviewMasterSizes": [
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ]
+    ]
+  },
+  "copiedVerification": {
+    "status": "PASS_COPIED_HASHES_LINKS_MODES",
+    "sourceHead": "6873a69b1cade4f9a2691637a19dbb06e603cf38",
+    "destination": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64",
+    "entries": 5497,
+    "regularFilesVerified": 5483,
+    "linksVerified": 14,
+    "profile": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/M2.1-Review-Profile",
+    "errors": []
+  },
+  "native": [
+    {
+      "file": ".artifacts/m2-1/copied-seams-v13d-2x/report.json",
+      "sha256": "cc41b760786c95b64e6c5d17e4c874a39144f51c1655a5591a144b45d7692b97",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "yr",
+      "map": "xmp03t4.map",
+      "density": 2,
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "mapEntryMs": 4303,
+      "placedBindings": 7962,
+      "declaredImages": 742,
+      "allocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 43741360,
+        "terrainGpu": 38158336,
+        "terrainCpu": 38158336,
+        "terrainCharge": 76326992,
+        "totalCharged": 160303632,
+        "limit": 268435456
+      },
+      "uiBytes": 11991296,
+      "preparedPeakBytes": 72847596,
+      "picking": [
+        {
+          "source": "dlat14.tem",
+          "expected": [
+            28,
+            88
+          ],
+          "point": {
+            "x": 299.68965517241384,
+            "y": 406
+          },
+          "actual": [
+            28,
+            88
+          ]
+        },
+        {
+          "source": "glat03a.tem",
+          "expected": [
+            27,
+            88
+          ],
+          "point": {
+            "x": 269.68965517241384,
+            "y": 391
+          },
+          "actual": [
+            27,
+            88
+          ]
+        },
+        {
+          "source": "glat05.tem",
+          "expected": [
+            28,
+            87
+          ],
+          "point": {
+            "x": 329.68965517241384,
+            "y": 391
+          },
+          "actual": [
+            28,
+            87
+          ]
+        },
+        {
+          "source": "glat04.tem",
+          "expected": [
+            28,
+            89
+          ],
+          "point": {
+            "x": 269.68965517241384,
+            "y": 421
+          },
+          "actual": [
+            28,
+            89
+          ]
+        },
+        {
+          "source": "proad01b.tem",
+          "expected": [
+            28,
+            85
+          ],
+          "point": {
+            "x": 389.68965517241384,
+            "y": 361
+          },
+          "actual": [
+            28,
+            85
+          ]
+        },
+        {
+          "source": "proad01c.tem",
+          "expected": [
+            27,
+            85
+          ],
+          "point": {
+            "x": 359.68965517241384,
+            "y": 346
+          },
+          "actual": [
+            27,
+            85
+          ]
+        },
+        {
+          "source": "proad01c.tem",
+          "expected": [
+            29,
+            85
+          ],
+          "point": {
+            "x": 419.68965517241384,
+            "y": 376
+          },
+          "actual": [
+            29,
+            85
+          ]
+        },
+        {
+          "source": "proad01a.tem",
+          "expected": [
+            26,
+            85
+          ],
+          "point": {
+            "x": 329.68965517241384,
+            "y": 331
+          },
+          "actual": [
+            26,
+            85
+          ]
+        }
+      ],
+      "rampPassage": {
+        "id": 1825,
+        "member": "slope02a.tem",
+        "start": [
+          68,
+          32,
+          5
+        ],
+        "ramp": [
+          69,
+          34,
+          5,
+          2
+        ],
+        "target": [
+          67,
+          34,
+          6
+        ],
+        "onRamp": {
+          "name": "MTNK",
+          "id": 1825,
+          "tick": 3128,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            69,
+            34
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        "after": {
+          "name": "MTNK",
+          "id": 1825,
+          "tick": 3252,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            67,
+            34
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0,
+          "nativeTileHeight": 6
+        }
+      },
+      "frames": {
+        "mixedFrames": {
+          "samples": 480,
+          "mean": 16.667572916666668,
+          "p95": 17.465000000000146,
+          "max": 18.590000000000146,
+          "stalls50": 0
+        },
+        "firstEncounterFrames": {
+          "samples": 480,
+          "mean": 16.667583333333337,
+          "p95": 17.44499999999971,
+          "max": 18.659999999999854,
+          "stalls50": 0
+        },
+        "sustainedPanFrames": {
+          "samples": 480,
+          "mean": 16.669999999999998,
+          "p95": 17.81000000000131,
+          "max": 18.474999999998545,
+          "stalls50": 0
+        }
+      }
+    },
+    {
+      "file": ".artifacts/m2-1/copied-seams-v13d-4x/report.json",
+      "sha256": "d7a6c703d4124b7cd181ea2289f6bca422790cc96036e814f3b118c4d2191ee0",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "yr",
+      "map": "xmp03t4.map",
+      "density": 4,
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "mapEntryMs": 5161,
+      "placedBindings": 7962,
+      "declaredImages": 742,
+      "allocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 139893828,
+        "terrainGpu": 149487616,
+        "terrainCpu": 149487616,
+        "terrainCharge": 298985552,
+        "totalCharged": 580817608,
+        "limit": 1342177280
+      },
+      "uiBytes": 11991296,
+      "preparedPeakBytes": 133975088,
+      "picking": [
+        {
+          "source": "dlat14a.tem",
+          "expected": [
+            28,
+            88
+          ],
+          "point": {
+            "x": 299.68965517241384,
+            "y": 406
+          },
+          "actual": [
+            28,
+            88
+          ]
+        },
+        {
+          "source": "glat03.tem",
+          "expected": [
+            27,
+            88
+          ],
+          "point": {
+            "x": 269.68965517241384,
+            "y": 391
+          },
+          "actual": [
+            27,
+            88
+          ]
+        },
+        {
+          "source": "glat05.tem",
+          "expected": [
+            28,
+            87
+          ],
+          "point": {
+            "x": 329.68965517241384,
+            "y": 391
+          },
+          "actual": [
+            28,
+            87
+          ]
+        },
+        {
+          "source": "glat04a.tem",
+          "expected": [
+            28,
+            89
+          ],
+          "point": {
+            "x": 269.68965517241384,
+            "y": 421
+          },
+          "actual": [
+            28,
+            89
+          ]
+        },
+        {
+          "source": "proad01a.tem",
+          "expected": [
+            28,
+            85
+          ],
+          "point": {
+            "x": 389.68965517241384,
+            "y": 361
+          },
+          "actual": [
+            28,
+            85
+          ]
+        },
+        {
+          "source": "proad01c.tem",
+          "expected": [
+            27,
+            85
+          ],
+          "point": {
+            "x": 359.68965517241384,
+            "y": 346
+          },
+          "actual": [
+            27,
+            85
+          ]
+        },
+        {
+          "source": "proad01b.tem",
+          "expected": [
+            29,
+            85
+          ],
+          "point": {
+            "x": 419.68965517241384,
+            "y": 376
+          },
+          "actual": [
+            29,
+            85
+          ]
+        },
+        {
+          "source": "proad01c.tem",
+          "expected": [
+            26,
+            85
+          ],
+          "point": {
+            "x": 329.68965517241384,
+            "y": 331
+          },
+          "actual": [
+            26,
+            85
+          ]
+        }
+      ],
+      "rampPassage": {
+        "id": 1825,
+        "member": "slope02b.tem",
+        "start": [
+          68,
+          32,
+          5
+        ],
+        "ramp": [
+          69,
+          34,
+          5,
+          2
+        ],
+        "target": [
+          67,
+          34,
+          6
+        ],
+        "onRamp": {
+          "name": "MTNK",
+          "id": 1825,
+          "tick": 3155,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            69,
+            34
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        "after": {
+          "name": "MTNK",
+          "id": 1825,
+          "tick": 3279,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            67,
+            34
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0,
+          "nativeTileHeight": 6
+        }
+      },
+      "frames": {
+        "mixedFrames": {
+          "samples": 480,
+          "mean": 16.667593749999998,
+          "p95": 18.20499999999811,
+          "max": 18.674999999999272,
+          "stalls50": 0
+        },
+        "firstEncounterFrames": {
+          "samples": 480,
+          "mean": 16.670624999999994,
+          "p95": 17.69499999999971,
+          "max": 18.659999999999854,
+          "stalls50": 0
+        },
+        "sustainedPanFrames": {
+          "samples": 480,
+          "mean": 16.66758333333333,
+          "p95": 17.63499999999476,
+          "max": 18.62999999999738,
+          "stalls50": 0
+        }
+      }
+    }
+  ],
+  "review": {
+    "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/M2.1-Seam-Review-V13D-Embedded.html",
+    "bytes": 140312980,
+    "sha256": "c29078295d3add67c48ee50cbb0a0095ef7ceb65b6762478f2a05c5fc0e5fa70",
+    "embedded": true,
+    "captures": 16,
+    "scenes": 4,
+    "videos": 3,
+    "masters": 5,
+    "originalReferences": 5,
+    "media": [
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/mixed-actual-size-framebuffer.png",
+        "sha256": "f10db16c29d8b824ce213b45ed1d7af3d28edfd0e1255d885d0e0818cf415e0d",
+        "bytes": 3058635
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/mixed-actual-size-framebuffer.png",
+        "sha256": "6d69ce5ee9be9af116b81a21791c2180bcb3ef1d6d81582edfb0cda5bd5c0155",
+        "bytes": 4205059
+      },
+      {
+        "file": ".artifacts/m2-1/copied-seams-v13d-2x/mixed-actual-size-framebuffer.png",
+        "sha256": "0ab079d3c8b23aa4546b7b9c88c281dc886eb2da4a6f3f0302a988ee7300bc63",
+        "bytes": 4119304
+      },
+      {
+        "file": ".artifacts/m2-1/copied-seams-v13d-4x/mixed-actual-size-framebuffer.png",
+        "sha256": "b1081bdf97c2561d9fbaff41c05f49a374fc0b6424e7e3bc35f65d51fcaf7785",
+        "bytes": 4198189
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/grass-slope-full-actual-size-framebuffer.png",
+        "sha256": "c2bf2e571e0f301ef0090346fb40f8be13c619bc9a7ced61265cca91db13fee6",
+        "bytes": 3007529
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/grass-slope-full-actual-size-framebuffer.png",
+        "sha256": "33142cd534cac0754578023bdb644b62afc6899ff1ed4d8763b64ba382f190dc",
+        "bytes": 4092022
+      },
+      {
+        "file": ".artifacts/m2-1/copied-seams-v13d-2x/grass-slope-full-actual-size-framebuffer.png",
+        "sha256": "2955c068b16274e51f0b4eedc22d7c4040e8fc0638294afd7475ac422e919f3b",
+        "bytes": 4013447
+      },
+      {
+        "file": ".artifacts/m2-1/copied-seams-v13d-4x/grass-slope-full-actual-size-framebuffer.png",
+        "sha256": "b82101c18c401e1719310a4eb3ae7b8d748f08db1cd9ecb4338476b5d07e1f9f",
+        "bytes": 4079079
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/road-main-full-actual-size-framebuffer.png",
+        "sha256": "fefde4be6645662530fef9287dca4ca72f91dcb83f2feac2faf99ab13e166f58",
+        "bytes": 3055770
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/road-main-full-actual-size-framebuffer.png",
+        "sha256": "bde3267bbe8bb837a1a87a3d213b523c895b81219f9f23713408c41a1378b9c4",
+        "bytes": 4206037
+      },
+      {
+        "file": ".artifacts/m2-1/copied-seams-v13d-2x/road-main-full-actual-size-framebuffer.png",
+        "sha256": "4415ce019569bffd40c23c37e0b4b3678304896554485a57869df27c28e82785",
+        "bytes": 4119035
+      },
+      {
+        "file": ".artifacts/m2-1/copied-seams-v13d-4x/road-main-full-actual-size-framebuffer.png",
+        "sha256": "ba8643ad9789b8cca52405ee98c02ebfa3f85531ef426a2b2ba060da0f4bc3a8",
+        "bytes": 4198832
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/road-slope-full-actual-size-framebuffer.png",
+        "sha256": "824ecebe400299623a822dc6c24bd166e4ecb2a0de7ed417153cc338a505027b",
+        "bytes": 3134383
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/road-slope-full-actual-size-framebuffer.png",
+        "sha256": "56761f8a9f76ba655ee33a9ba80cca5182be4cfaa914949c5a588391834740c0",
+        "bytes": 3948766
+      },
+      {
+        "file": ".artifacts/m2-1/copied-seams-v13d-2x/road-slope-full-actual-size-framebuffer.png",
+        "sha256": "b48100b3c8c97cdcaa7549afc1f41ce5a1867a5bfae57c0b1c08f91283b30ce8",
+        "bytes": 3889162
+      },
+      {
+        "file": ".artifacts/m2-1/copied-seams-v13d-4x/road-slope-full-actual-size-framebuffer.png",
+        "sha256": "24bce339603e712a7141fdf71e48476e9d65818c83564fac000e272f2ddfad4b",
+        "bytes": 3926217
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/terrain-pan.webm",
+        "sha256": "0cc179b81504d4b6010b9eebc50ed305728a9fb84249d4e8c51fd9ae82272607",
+        "bytes": 9958184
+      },
+      {
+        "file": ".artifacts/m2-1/copied-seams-v13d-2x/terrain-pan.webm",
+        "sha256": "ecebfafc24029e6a9948ea624ba85eca937ce41749cc764e0eb3d8bd6be29bc0",
+        "bytes": 10010062
+      },
+      {
+        "file": ".artifacts/m2-1/copied-seams-v13d-4x/terrain-pan.webm",
+        "sha256": "fe61608c64e030d26553f4edf0e2bf63106970a04fad5f242bc33ba98ef4b01a",
+        "bytes": 10234062
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-2-reference.png",
+        "sha256": "b78c0c655c5b7c9d8138fab0c092b1f537ac13da32ef05b8b352573676a98857",
+        "bytes": 48161
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-seams-v13/grass-material-master.png",
+        "sha256": "5655841aab289b67c70130d6392e21e9acffaeaa8d5c522b6dc4f3908b945f18",
+        "bytes": 3421360
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-7-reference.png",
+        "sha256": "4a36de887aa97d554280ca669b0e68e581a65275fe01a48cf7f1e62e48210c96",
+        "bytes": 86394
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-7-master.png",
+        "sha256": "db3ab57d4ed4323cd340baf802bb769b0cac0d5feb723080742db2b0d18da0bf",
+        "bytes": 2099687
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-8-reference.png",
+        "sha256": "6b335455f1fb13b58544b1f966901eec287cb293cc0f289f407a8d73825013dd",
+        "bytes": 94265
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-8-master.png",
+        "sha256": "835dcf5b534058e64e53f56325d8a291e0fc021f32d07935bb362c45962f2eb6",
+        "bytes": 2558167
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-9-reference.png",
+        "sha256": "7c39e31f30ecb6409ea2bc65d005983a1892190126010b2ce9a2f23e2c28f643",
+        "bytes": 92956
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-9-master.png",
+        "sha256": "8e07fa3433fa023edc43435fcb0e184de2ec737448558f83375503f5eb54b6cc",
+        "bytes": 2320756
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-10-reference.png",
+        "sha256": "6627e40d8e2120be4d7af268352dd186fe8ef745f27e15771986264995d38b07",
+        "bytes": 54212
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-10-master.png",
+        "sha256": "61c8dbc5b870b460b8d2b84b7452ee480b696f39246c266bddad69f42a063d0b",
+        "bytes": 1487004
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-seams-v13/temperate-m2-1-seams-v13d/assembly-inspection.png",
+        "sha256": "e60f74783a9e3d1e872024af851fba6d9a3c2418f36579b699c5cb77af4f385f",
+        "bytes": 1263092
+      }
+    ]
+  },
+  "embeddedVerification": {
+    "status": "PASS",
+    "htmlSha256": "c29078295d3add67c48ee50cbb0a0095ef7ceb65b6762478f2a05c5fc0e5fa70",
+    "exactEmbeddedPayloads": 30,
+    "captures": 16,
+    "scenes": 4,
+    "masters": 5,
+    "originalReferences": 5,
+    "videos": 3,
+    "externalMedia": "NONE"
+  },
+  "nativeReview": {
+    "mode": "html",
+    "errors": [],
+    "frames": [
+      {
+        "scene": "mixed",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "mixed",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "mixed",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "mixed",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-slope-full",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-slope-full",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-slope-full",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-slope-full",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-main-full",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-main-full",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-main-full",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-main-full",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-slope-full",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-slope-full",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-slope-full",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-slope-full",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      }
+    ],
+    "fit": {
+      "image": 1390,
+      "viewport": 1390
+    },
+    "coverage": {
+      "shown": true,
+      "markers": 967,
+      "authored": 114,
+      "original": 853
+    },
+    "masters": [
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ]
+    ],
+    "originalReferences": [
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ]
+    ],
+    "videos": [
+      {
+        "width": 1489,
+        "height": 1080,
+        "completed": true,
+        "playedSeconds": 7.932,
+        "duration": 7.932,
+        "durationMetadata": "FINITE"
+      },
+      {
+        "width": 1489,
+        "height": 1080,
+        "completed": true,
+        "playedSeconds": 7.933,
+        "duration": 7.933,
+        "durationMetadata": "FINITE"
+      },
+      {
+        "width": 1489,
+        "height": 1080,
+        "completed": true,
+        "playedSeconds": 7.931,
+        "duration": 7.931,
+        "durationMetadata": "FINITE"
+      }
+    ],
+    "status": "PASS"
+  },
+  "ordinaryLaunch": {
+    "mode": "default",
+    "errors": [],
+    "userData": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/M2.1-Review-Profile",
+    "ui": {
+      "revision": "yuri-emblem-ui-v1",
+      "enabled": true,
+      "reservedBytes": 0,
+      "decodedCpuBytes": 0,
+      "gpuTextureBytesUpperBound": 0,
+      "transitionGpuBytes": 0,
+      "transitionCpuCanvasBytes": 0,
+      "domImageGpuBytesUpperBound": 0,
+      "domImageDecodedCpuBytesUpperBound": 0,
+      "textures": 0,
+      "budget": 16777216,
+      "domCanvasBytes": 0,
+      "mipmaps": false
+    },
+    "registration": {
+      "schemaVersion": 1,
+      "directory": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/RA2-HD-Editions-Resources"
+    },
+    "status": "PASS"
+  },
+  "signature": {
+    "status": "PASS_DEEP_STRICT_ADHOC",
+    "file": ".artifacts/m2-1/seams-v13d-signature.log",
+    "sha256": "783ad76eda94e9db410716a27c1c99af58d5caa6c3f3348caf365bb5fb1c4f76"
+  },
+  "mainPreservation": {
+    "head": "11be1b2119696f1777b66c503cf0b7cb1a131d62",
+    "status": "",
+    "taskWrites": "NONE"
+  },
+  "previews": [
+    {
+      "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/Road-Ramp-V13D-Actual-Size.png",
+      "sha256": "b82101c18c401e1719310a4eb3ae7b8d748f08db1cd9ecb4338476b5d07e1f9f"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/Road-Ramp-V13D-Detail.png",
+      "sha256": "6a6a26d9cc8e9ed7b393f963ed8174584c7b884b3cd0b3c36dfd2c286e1963b9"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Seam-Review-V13D-20261007-6873a69-macOS-arm64/Road-Ramp-V12C-V13D-Comparison.png",
+      "sha256": "36aa2396f8939b8ae8b0cea182949161aa5f9f0c4d1fdd50eb6f960559e5ea70"
+    }
+  ],
+  "exactAcceptedFixupStonePixels": 6126,
+  "authoring": {
+    "intent": "BOUNDED_DIRT_ROAD_AND_GRASS_SLOPE_SEAM_CORRECTION",
+    "tool": "BUILT_IN_IMAGEGEN",
+    "parent": {
+      "root": ".local/terrain-packs/temperate-m2-1-production-v12c",
+      "sha256": "c09a69f129497128dc22b5c598aeb7f6a43c03b3c91d064721ddde6b415adc69"
+    },
+    "entries": [
+      {
+        "name": "grass-material",
+        "toolOriginal": "/Users/Aone/.codex/generated_images/01a11280-cb97-76b2-b503-d9f3747bfc74/exec-7b2ec050-2307-42f8-9087-e6e2ce2651ce.png",
+        "master": {
+          "file": ".artifacts/m2-1/authoring-seams-v13/grass-material-master.png",
+          "sha256": "5655841aab289b67c70130d6392e21e9acffaeaa8d5c522b6dc4f3908b945f18"
+        },
+        "size": [
+          1254,
+          1254
+        ],
+        "prompt": {
+          "file": ".artifacts/m2-1/authoring-seams-v13/grass-material-prompt.txt",
+          "sha256": "07f9b2cb7225bb7102263fcc5f81dc4f5b29b197de41c08a19c4c9f5828f341f"
+        },
+        "references": [
+          {
+            "file": ".artifacts/m2-1/authoring-v11/materials-master.png",
+            "role": "ACCEPTED_HD_GRASS_DETAIL_GUIDE",
+            "sha256": "ea64ff6c859dc11a60b46a27712231c3854d99fcb1cc9282c806b53c48a8462b"
+          },
+          {
+            "file": ".artifacts/m2-1/authoring-production-v3/slope-2-reference.png",
+            "role": "NATIVE_RAMP_PALETTE_AUTHORITY",
+            "sha256": "b78c0c655c5b7c9d8138fab0c092b1f537ac13da32ef05b8b352573676a98857"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "file": ".artifacts/m2-1/authoring-v11/materials-master.png",
+        "role": "ACCEPTED_HD_GRASS_DETAIL_GUIDE",
+        "sha256": "ea64ff6c859dc11a60b46a27712231c3854d99fcb1cc9282c806b53c48a8462b"
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-2-reference.png",
+        "role": "NATIVE_RAMP_PALETTE_AUTHORITY",
+        "sha256": "b78c0c655c5b7c9d8138fab0c092b1f537ac13da32ef05b8b352573676a98857"
+      }
+    ]
+  },
+  "transferInventory": {
+    "file": ".artifacts/m2-1/seams-v13d-transfer-inventory.json",
+    "sha256": "7703f6ee3f4924f5741fed7cee384a9b3aa3ee93a932f69c91de9df2396e51fa",
+    "files": 22,
+    "bytes": 227312679
+  },
+  "reusedEvidence": {
+    "receipt": "docs/m2-1-production-v12.json",
+    "boundary": "Unchanged geometry/rendering/map/rules; reuse closed lifecycle/fallback, RA2 and secondary-map cases. New copied YR 2X/4X source publication, picking, slope passage, camera and performance are fresh."
+  },
+  "remaining": [
+    "Windows native checks and physical cursor/input acceptance"
+  ],
+  "userAcceptance": {
+    "date": "2026-10-07",
+    "reviewedRevision": "temperate-m2-1-seams-v13d",
+    "decision": "ACCEPT_V13D_BOUNDED_SEAM_CORRECTION",
+    "statement": "Review approved; continue.",
+    "scope": "Dirt/paved-road color joins and grassy slope/fixup seams and highlights. Together with the accepted V12C remainder, all selected M2.1 appearance is accepted.",
+    "resource": {
+      "schemaVersion": 1,
+      "revision": "temperate-m2-1-seams-v13d",
+      "sha256": "47a93e1ae5c56150357dd3f040f654079de26f8c899ebbc923b3c099bbf97f38"
+    },
+    "reviewSha256": "c29078295d3add67c48ee50cbb0a0095ef7ceb65b6762478f2a05c5fc0e5fa70",
+    "followup": "User clarified: complete acceptance closure only.",
+    "boundary": "Record acceptance without changing art, runtime or delivery. No main integration, next batch, remote push, publication or cleanup."
+  },
+  "finalAcceptanceReceipt": "docs/m2-1-final-acceptance-20261007.json"
+}

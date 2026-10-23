@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "status": "DELIVERED_HOST_CHECKS_PASS_WINDOWS_RUNTIME_NOT_RUN",
+  "target": "Windows x86-64 portable",
+  "archive": "/Users/Aone/Desktop/RA2-HD-Main-Disk-Fix-20261005-Windows-x64-portable.zip",
+  "bytes": 3316683537,
+  "sha256": "14011df566d425de418961d9f0457c314f8b2b882de427248d7365f5bb11bc18",
+  "gameplaySourceHead": "c7e4c0e504ef589ce8d801c840bfde834b0ac18e",
+  "desktopSourceHead": "b2463fa6fea275aab70a78da5ae4391cf6564067",
+  "electron": "44.4.0",
+  "electronRuntimeSha256": "596d5f7a77fc4f494f24ff9b362577954e16df819a81915bdb3b91d25f8eddd2",
+  "verifiedX64PE": [
+    "dxil.dll",
+    "Red Alert 2 HD.exe",
+    "dxcompiler.dll",
+    "d3dcompiler_47.dll",
+    "vk_swiftshader.dll",
+    "ffmpeg.dll",
+    "vulkan-1.dll"
+  ],
+  "checkedPackageFiles": 5260,
+  "focusedTests": {
+    "tests": 7,
+    "assertions": 40,
+    "status": "PASS"
+  },
+  "staticValidation": {
+    "status": "PASS_HOST_STATIC_WEB_ENTRY_MODULES_AND_RESOURCE_PARITY",
+    "unchangedWebFiles": 160,
+    "checkedDesktopModules": 14,
+    "unchangedRegisteredResourceFiles": 4778,
+    "uiEntries": 490,
+    "cEntries": 33,
+    "dRuntimeFiles": 140,
+    "preparedRegistration": {
+      "type": "prepared-hd-registered",
+      "members": 459,
+      "pages": 1224,
+      "index": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604"
+    },
+    "windowsRuntime": "NOT_RUN_NO_WINDOWS_HOST",
+    "nativeGameplayEvidence": ".artifacts/disk-drain-20261005/desktop-centered-4x-final/report.json"
+  },
+  "completeRegistration": {
+    "type": "hd-startup-ready",
+    "attempts": 1,
+    "missingFamilies": []
+  },
+  "evidence": [
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/windows-disk-20261005/package/package-receipt.json",
+      "sha256": "55fe1d321bb0a72a27c96deadc1413bc90eef7b748846c94815559200ef4adcb"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/windows-disk-20261005/local-zip-verification.json",
+      "sha256": "ff5f045503f6103836573d5ec9bb7ab6492cc09ddb5072afa8ee510da550f39e"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/windows-disk-20261005/desktop-zip-verification.json",
+      "sha256": "7cadb82389ab864539923b2bb6571c61803bc56283b9ba671c5e826de09ac247"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/windows-disk-20261005/extracted-verification.json",
+      "sha256": "7b8c61c1ceca30f74fe10e9d6d8aabb4351c9d22155ec3c56464a95511d8563d"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/windows-disk-20261005/static-validation.json",
+      "sha256": "757dc168deee7cac3fe2984e134b2022ade6f14b97269ca3cda915413699d5e5"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/windows-disk-20261005/copied-startup-registration.json",
+      "sha256": "6e64801ce04ca911e385165b93fffdab89061fac6da88a9a1faf7354dbbd9bf0"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/windows-disk-20261005/resources.json",
+      "sha256": "0b635002e7f1dc63ed7ff738939922ab0cf436a051f55fc2d642c44d4ee20da6"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/windows-disk-20261005/focused-tests.log",
+      "sha256": "7341f8450c820925c0ba17b0b74b653aca4f685448b442bca1728b99909b6883"
+    }
+  ],
+  "windowsRuntime": "NOT_RUN_NO_WINDOWS_HOST_USER_WILL_VALIDATE",
+  "userAcceptance": "PENDING_WINDOWS_TESTING",
+  "remotePush": false,
+  "excludedUserData": [
+    "Review-Profile",
+    "UserData"
+  ],
+  "manualEntry": "Red Alert 2 HD.exe or Launch-Isolated-Review.cmd",
+  "log": "Review-Profile/last-session.json",
+  "continuation": "Continue Windows feedback in the same conversation."
+}

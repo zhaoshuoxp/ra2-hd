@@ -1,0 +1,23 @@
+Red Alert 2 HD v0.2 - Program package
+
+This package contains the application runtime, not the complete game data.
+Extract every matching private-resources-partNN-of-NN.zip into ONE location:
+  macOS: ~/Library/Application Support/Red Alert 2 HD/
+  Windows: %APPDATA%/Red Alert 2 HD/
+Each ZIP contributes files under GameResources. No concatenation is required.
+All parts are required; verify SHA256SUMS.txt before using transferred files.
+The same resource parts serve Windows x64 and macOS Apple Silicon.
+Alternatively keep GameResources beside the .app or Windows executable.
+Do not put resources inside the program ZIP without extracting them.
+
+Mac: move Red Alert 2 HD.app into Applications, then launch it.
+Windows: extract the complete program folder and run Red Alert 2 HD.exe.
+Keep all Windows DLLs, locales and resources beside the executable.
+Settings, saves and logs remain in the user-data location above.
+No Internet connection is required after installation.
+
+Mac signatures are local ad-hoc signatures; this build is not notarized.
+Windows was assembled and statically verified on Mac; native Windows testing
+is still required. No 90+ FPS result is claimed.
+The separate full/shared archives include locally imported original game data
+for the owner's private archive. They are not public redistribution packages.

@@ -1,0 +1,48 @@
+bun test v1.3.14 (0d9b296a)
+
+scripts/m0/rendering.test.ts:
+(pass) shadow frustum includes map-scale geometry and quality changes release the old target [1.34ms]
+(pass) shadow receiver has finite upward normals and cannot pollute later depth passes [1.20ms]
+(pass) scene clear enables depth writes after a transparent previous pass [0.17ms]
+(pass) render phase reaches units through world and octree containers [0.68ms]
+
+ 4 pass
+ 0 fail
+ 20 expect() calls
+Ran 4 tests across 1 file. [68.00ms]
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/program-warmup.test.ts:
+(pass) Original indexed coverage does not create RGBA program owners [1.82ms]
+(pass) fixed-color HD without a remap texture still seeds the same shader variant [2.43ms]
+(pass) warmup borrows textures and holds only the detached measured opaque/coverage pair [1.30ms]
+(pass) scene preparation awaits validation, retains owners once, and releases them on exit or failure [5.91ms]
+(pass) scene exit during loading releases pending owners instead of retaining an orphan [0.68ms]
+(pass) renderer shutdown and context replacement clear all owners before releasing the old renderer [3.14ms]
+
+ 6 pass
+ 0 fail
+ 49 expect() calls
+Ran 6 tests across 1 file. [68.00ms]
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/palette-program-warmup.test.ts:
+(pass) combat owners borrow artwork without altering live geometry or draw materials [2.05ms]
+(pass) Original-only loading keeps its existing compile path and allocates no extra owners [0.39ms]
+(pass) cancellation during combat preparation releases both pending and retained owners [1.39ms]
+(pass) combat validation failures release pending owners and scene cleanup releases earlier owners [0.92ms]
+
+ 4 pass
+ 0 fail
+ 33 expect() calls
+Ran 4 tests across 1 file. [272.00ms]
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/combat-variants.test.ts:
+(pass) four detached Windows variants borrow textures, preserve live art, and release once [3.24ms]
+(pass) cancellation and validation failure release pending variants; earlier owners remain scene-owned [3.37ms]
+
+ 2 pass
+ 0 fail
+ 28 expect() calls
+Ran 2 tests across 1 file. [44.00ms]

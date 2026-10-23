@@ -1,0 +1,194 @@
+{
+  "status": "PASS_R8_DESKTOP_TECHNICAL_DELIVERY_USER_VISUAL_REVIEW_PENDING",
+  "baseline": "8fc428c33876e6ea3e5fd88e6ff9030ceb13b61f",
+  "runtimeSourceHead": "c8fb137e964c029d250c0583c24335f5228c991b",
+  "preparedContract": {
+    "schemaVersion": 1,
+    "sha256": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604",
+    "indexPath": "prepared-hd/indexes/a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604.json"
+  },
+  "selectedRevisions": {
+    "YAGGUN": "c8-feedback-r8-sphere-v2",
+    "YAGRND": "c8-feedback-r8-idle-rotor-v2"
+  },
+  "changes": [
+    "Register complete Gatling receiver envelope to fixed pedestal axis",
+    "Restore looping Grinder idle rotor and body-matching rear-rim owner data",
+    "Show a single controller link when the controlled target is selected"
+  ],
+  "delivery": {
+    "runtimeSourceHead": "c8fb137e964c029d250c0583c24335f5228c991b",
+    "preparedContract": {
+      "schemaVersion": 1,
+      "sha256": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604",
+      "indexPath": "prepared-hd/indexes/a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604.json"
+    },
+    "resourceFiles": 4488,
+    "uiRevision": "yuri-cameos-e-main-v1",
+    "uiEntries": 474,
+    "uiManifestSha256": "052c1ca0294344e21b3bb4fe881aece611232000e6efc3ec2ad1306efaf3a890",
+    "status": "PASS_DESKTOP_ARCHIVE_AND_COMPLETE_EXTRACTION",
+    "folder": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R8-20261004-c8fb137-macOS-arm64",
+    "app": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R8-20261004-c8fb137-macOS-arm64/Red Alert 2 HD Task C Feedback R8.app",
+    "resources": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R8-20261004-c8fb137-macOS-arm64/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R8-20261004-c8fb137-macOS-arm64/RA2-HD-UI-Resources",
+    "launcher": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R8-20261004-c8fb137-macOS-arm64/Launch-Isolated-Review.command",
+    "profile": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R8-20261004-c8fb137-macOS-arm64/Review-Profile",
+    "archive": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R8-20261004-c8fb137-macOS-arm64.zip",
+    "bytes": 3336407093,
+    "sha256": "aa4ec332982768d183258aed547d7abb6cb9fbf5f77e420af1313c5f7f1c8760",
+    "checkedEntries": 5323,
+    "boundary": "Every extracted packaged file, symlink and executable mode verified before native launch; no prior Desktop file or profile modified."
+  },
+  "desktopLauncher": "PASS_TASK_C_DELIVERED_LAUNCHER_STARTUP",
+  "native": [
+    {
+      "evidence": "desktop-native-4x-v1/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "cases": [
+        "YAGGUN-binding",
+        "YAGRND-binding",
+        "YAPSYT-binding",
+        "Grinder-native-idle-before",
+        "Grinder-native-intake-animation",
+        "Grinder-native-idle-after",
+        "Grinder-native-damaged-intake-animation",
+        "Psychic-Tower-native-control",
+        "Controlled-unit-selection-link",
+        "Gatling-native-stages",
+        "Gatling-native-air-rotation"
+      ],
+      "color": "rgb(60, 210, 45)",
+      "snow": false,
+      "density": 4,
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 105631352,
+        "total": 247569580,
+        "limit": 1342177280
+      },
+      "preparedCache": {
+        "bytes": 132383676,
+        "peakBytes": 132798120,
+        "pendingBytes": 0,
+        "hits": 0,
+        "misses": 48,
+        "shared": 0,
+        "evictions": 3,
+        "uncached": 3
+      },
+      "controlSelection": {
+        "targetOnly": 1,
+        "bothSelected": 1,
+        "deselected": 0
+      },
+      "infantrySelection": {
+        "status": "PASS",
+        "result": {
+          "links": 1,
+          "controller": "YURI",
+          "sourceSelected": false,
+          "targetSelected": true
+        }
+      },
+      "idleBefore": 11,
+      "idleAfter": 10,
+      "preparedFallbacks": 0,
+      "pageErrors": 0
+    },
+    {
+      "evidence": "desktop-native-2x-snow-v1/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "cases": [
+        "YAGGUN-binding",
+        "YAGRND-binding",
+        "YAPSYT-binding",
+        "Grinder-native-idle-before",
+        "Grinder-native-intake-animation",
+        "Grinder-native-idle-after",
+        "Grinder-native-damaged-intake-animation",
+        "Psychic-Tower-native-control",
+        "Controlled-unit-selection-link",
+        "Gatling-native-stages",
+        "Gatling-native-air-rotation"
+      ],
+      "color": "rgb(49, 215, 230)",
+      "snow": true,
+      "density": 2,
+      "worldAllocation": {
+        "baseline": 22008264,
+        "eager": 28522916,
+        "demand": 42222172,
+        "total": 92753352,
+        "limit": 268435456
+      },
+      "preparedCache": {
+        "bytes": 86627096,
+        "peakBytes": 86627096,
+        "pendingBytes": 0,
+        "hits": 0,
+        "misses": 43,
+        "shared": 0,
+        "evictions": 0,
+        "uncached": 0
+      },
+      "controlSelection": {
+        "targetOnly": 1,
+        "bothSelected": 1,
+        "deselected": 0
+      },
+      "infantrySelection": {
+        "status": "PASS",
+        "result": {
+          "links": 1,
+          "controller": "YURI",
+          "sourceSelected": false,
+          "targetSelected": true
+        }
+      },
+      "idleBefore": 11,
+      "idleAfter": 9,
+      "preparedFallbacks": 0,
+      "pageErrors": 0
+    }
+  ],
+  "review": {
+    "path": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R8-20261004-c8fb137-macOS-arm64/C-Feedback-R8-Review.html",
+    "images": 7,
+    "videos": 11,
+    "allVideosPlayed": true,
+    "externalRequests": []
+  },
+  "resources": {
+    "addedImmutableFiles": 198,
+    "retainedIdenticalFiles": 1872,
+    "changedSelections": [
+      "yuri-yaggun-temperate",
+      "yuri-yaggun-snow",
+      "yuri-yagrnd-temperate",
+      "yuri-yagrnd-snow"
+    ],
+    "retainedSelections": 29
+  },
+  "focusedTests": {
+    "renderingTests": 5,
+    "renderingAssertions": 73,
+    "familyTests": 3,
+    "familyAssertions": 900,
+    "typecheck": "PASS",
+    "gatlingExportSlots": 64,
+    "grinderExportSlots": 604
+  },
+  "reusedEvidence": [
+    "R7 Original retail-mode recordings",
+    "R6/R7 map layout, unchanged UI/loading and accepted families"
+  ],
+  "limits": [
+    "Eight discrete HD Gatling headings",
+    "Native Grinder state transitions restart angular phases",
+    "User appearance review pending",
+    "Windows not run"
+  ],
+  "scope": "Task C corrections plus explicitly requested controlled-target selection; no D/new E or remote push"
+}

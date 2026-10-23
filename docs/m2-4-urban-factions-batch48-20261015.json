@@ -1,0 +1,68 @@
+{
+  "status": "PASS_ACCEPTED_ART_REUSE_AND_NATIVE_COVERAGE_CLOSURE",
+  "batch": 48,
+  "newArtwork": 0,
+  "acceptedFactionIdentities": 47,
+  "staticEditionFamilyCells": 79,
+  "staticPinnedFiles": 1333,
+  "nativeBindings": 102,
+  "deduplicatedEditionCells": 28,
+  "closedSourceGroups": 49,
+  "selectedEnvironment": {
+    "schemaVersion": 1,
+    "revision": "urban-environment-m2-4-props-v1",
+    "sha256": "fd6403a4556d33b5bb3b62bc58ecc86f8880a4591f9399d85a05c11f915e197c"
+  },
+  "selectedTerrain": {
+    "schemaVersion": 1,
+    "revision": "urban-m2-4-structures-r14e",
+    "sha256": "d2cfbfc964d7ff4173468df90be55c3e5f589afe00e6e440acfc4fabe4399749"
+  },
+  "resourcesChanged": false,
+  "runtimeSourceHead": "7800618f982d79c79fa2562ea2d9b69605bc1259",
+  "buildPolicy": "Reuse the exact Batch47 isolated signed Mac build and preparation. No runtime source, resource dependency or selection changed; no rebuild or cache relabeling.",
+  "evidence": {
+    "authority": {
+      "file": ".artifacts/m2-4/urban-factions-batch48-v1/authority-v1.json",
+      "sha256": "ce5b1e72f7a760d55bdc10f06d625e7fbdef5aee23b76a2c76d1cd19252dedc1"
+    },
+    "nativeClosure": {
+      "file": ".artifacts/m2-4/urban-factions-batch48-v1/native-closure.json",
+      "sha256": "0baa6f48465abbb5ea5de731626e0871f952fa8dddc05856237d4b7dea6126d2"
+    },
+    "coverageDelta": {
+      "file": ".artifacts/m2-4/urban-factions-batch48-v1/coverage-delta.json",
+      "sha256": "7779ca30a3963fdd07d33b02e302963a7422c9cedef24f675dbdde4ad4482c2b"
+    },
+    "acceptedPriorArt": {
+      "file": ".artifacts/m2-4/urban-props-batch47-v1/user-acceptance.json",
+      "sha256": "fb9f8cb16c834da42bdfcb32d3b31e32cae27d91638c6ca84f59f6cd50febbf9"
+    }
+  },
+  "technical": {
+    "mac": "PASS",
+    "windows": "NOT_RUN",
+    "worldPeaksBytes": {
+      "2": 255012856,
+      "4": 975479420
+    },
+    "worldLimitsBytes": {
+      "2": 536870912,
+      "4": 1342177280
+    },
+    "preparedPeakBytes": 134204876,
+    "preparedLimitBytes": 134217728,
+    "originalReentryRelease": "PASS_OLD_DEMAND_FAMILIES_GPU_TERRAIN_ENVIRONMENT_ZERO",
+    "glErrors": 0
+  },
+  "failedDiagnostics": "Three immutable overall failures retain only explicitly completed binding/removal scopes. Naval site selection, a destroyed WorldView reference in the release fixture and the accepted GAPOWR stabilization identity suffix caused the diagnostic stops. No engine, rule or artwork fix was made.",
+  "remainingUrbanGroups": 158,
+  "remainingByKind": {
+    "building": 148,
+    "infantry": 4,
+    "vehicle": 6
+  },
+  "main": "UNTOUCHED_748d0998aaf663acda8807c158155bf0a5bb157b",
+  "newUserReview": "NONE_ACCEPTED_ART_REUSED",
+  "m24Complete": false
+}

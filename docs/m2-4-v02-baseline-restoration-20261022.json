@@ -1,0 +1,40 @@
+{
+  "schema": "m2-4-accepted-v02-restoration-20261022",
+  "status": "RESTORED_FROZEN_ACCEPTED_BASELINE_TO_DESKTOP",
+  "sourceHead": "f1e18d0d38683a054b4258aa59877c6d597e22aa",
+  "app": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022/Red Alert 2 HD v0.2.app",
+  "review": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022/Review/Open-Review.html",
+  "archive": {
+    "status": "PASS_ZIP64_ALL_PAYLOAD_HASHES_CRC_UNIX_PERMISSIONS_AND_SYMLINKS",
+    "archive": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022.zip",
+    "sha256": "0a130dbc2b59e8d7e2c606f065a8f3a6b93527357c5ad3bf796cb3a290955881",
+    "bytes": 5743280442,
+    "entries": 14550,
+    "inventorySha256": "dd986e33af43df257618ba046bcad40ac4630d83a5bab1eae8e680910edb6123",
+    "applicationAndResourcesChanged": false,
+    "publishedOriginalDataBlockers": 0,
+    "historicalHiddenSourceAnomalies": 4,
+    "mutableProfileExcluded": true,
+    "m24Complete": true,
+    "timestampPolicy": "Archive headers clamp timestamps outside ZIP 1980-2107 bounds; original files and contents remain untouched.",
+    "windows": "NOT_RUN_ON_THIS_MAC"
+  },
+  "signature": {
+    "status": "PASS_CLEAN_COPY_DEEP_STRICT_SIGNATURE_AND_EXACT_APP_HASHES",
+    "checkedEntries": 516,
+    "architecture": "arm64",
+    "desktopStrictReturnCode": 1,
+    "desktopDiagnostic": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022/Red Alert 2 HD v0.2.app: resource fork, Finder information, or similar detritus not allowed",
+    "desktopMetadata": [
+      "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022/Red Alert 2 HD v0.2.app: com.apple.FinderInfo"
+    ],
+    "explanation": "Desktop immediately reattaches FinderInfo to the app root after removal. The exact decoded payload passes strict validation without that metadata; actual Desktop launches also pass. No app/resource bytes are changed."
+  },
+  "assetPinsMatchOriginal": 13978,
+  "rebuildNotOriginalArchiveBytes": true,
+  "originalFocusedTestEvidenceReused": 27,
+  "originalNativeEvidenceReused": "Preserved Final/Evidence in restored folder",
+  "r1Preserved": true,
+  "latestCorrection": "OPEN_SEPARATE_R2_INVESTIGATION",
+  "windows": "NOT_RUN_ON_THIS_MAC"
+}

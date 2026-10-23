@@ -1,0 +1,1212 @@
+{
+  "status": "C2_LOCAL_SOURCE_STATIC_AND_COPIED_MAC_VALIDATED_WINDOWS_AB_PENDING",
+  "diagnosticId": "WINHD-20261008-D38F136-C2",
+  "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+  "candidateCommit": "84d502e233382b9525d7c44820881bdf372d085f",
+  "archive": {
+    "status": "PASS_FULL_ARCHIVE_AND_FRESH_EXTRACTION",
+    "diagnosticId": "WINHD-20261008-D38F136-C2",
+    "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "diagnosticCommit": "84d502e233382b9525d7c44820881bdf372d085f",
+    "archive": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C2-84d502e-Windows-x64.zip",
+    "bytes": 3499790557,
+    "sha256": "3e797ff5134d3c933e0053369c62eb8f420f3e484e5d179eab59ad426d6d59dd",
+    "manifestSha256": "39fbe612b1c40f0e24d204fcec3ca358dccdd7ab50bff31a656959f7faa1bd99",
+    "entries": 8076,
+    "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c2-fresh/RA2-HD-WINHD-20261008-D38F136-C2-84d502e-Windows-x64",
+    "windowsNative": "NOT_RUN"
+  },
+  "desktopCopy": {
+    "status": "PASS_EXCLUSIVE_DESKTOP_COPY_AND_FULL_HASH",
+    "file": "/Users/Aone/Desktop/RA2-HD-WINHD-20261008-D38F136-C2-84d502e-Windows-x64.zip",
+    "bytes": 3499790557,
+    "sha256": "3e797ff5134d3c933e0053369c62eb8f420f3e484e5d179eab59ad426d6d59dd"
+  },
+  "baseline": "WINHD-20261008-D38F136-C1",
+  "baselineOutcome": "PARTIAL_SUBMISSION_COST_REDUCTION_STUTTER_UNRESOLVED",
+  "userFeedback": "No large noticeable difference by eye.",
+  "returnedEvidenceReport": "docs/windows-hd-a1-c1-ab-20261008.json",
+  "renderingChanges": {
+    "frozenMain": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "acceptedRuntime": "69a8ce57f187bd21d7de864b14473ecf9ed48e33",
+    "applicationSourceParity": "DECLARED_RENDERING_CHANGE",
+    "gameplayChanges": [],
+    "renderingChanges": [
+      "src/engine/gfx/batch/HdSpriteEdges.ts",
+      "src/engine/gfx/batch/MergedSpriteMesh.ts"
+    ],
+    "incrementalRenderingChangesFromC1": [
+      "src/engine/gfx/batch/MergedSpriteMesh.ts"
+    ],
+    "bundleBoundary": "Candidate hidden-map rebuild; accepted runtime is a source reference, not candidate parity."
+  },
+  "resourceParity": {
+    "status": "PASS_EXACT_A1_C1_C2_RESOURCE_AND_LIMIT_PARITY",
+    "resources": 6033,
+    "resourceIdentity": {
+      "worldAndUIFiles": 6033,
+      "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+      "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+    },
+    "limitsMiB": {
+      "world2X": 512,
+      "world4X": 1280,
+      "preparedCPU": 128,
+      "ui": 16
+    },
+    "C2": {
+      "frozenMain": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+      "acceptedRuntime": "69a8ce57f187bd21d7de864b14473ecf9ed48e33",
+      "applicationSourceParity": "DECLARED_RENDERING_CHANGE",
+      "gameplayChanges": [],
+      "renderingChanges": [
+        "src/engine/gfx/batch/HdSpriteEdges.ts",
+        "src/engine/gfx/batch/MergedSpriteMesh.ts"
+      ],
+      "incrementalRenderingChangesFromC1": [
+        "src/engine/gfx/batch/MergedSpriteMesh.ts"
+      ],
+      "bundleBoundary": "Candidate hidden-map rebuild; accepted runtime is a source reference, not candidate parity."
+    }
+  },
+  "verification": {
+    "schemaVersion": 1,
+    "diagnosticId": "WINHD-20261008-D38F136-C2",
+    "manifestSha256": "39fbe612b1c40f0e24d204fcec3ca358dccdd7ab50bff31a656959f7faa1bd99",
+    "checked": 8075,
+    "failures": [],
+    "status": "PASS",
+    "verifiedAt": "2026-10-08T23:14:49.122Z"
+  },
+  "focusedChecks": {
+    "tests": 24,
+    "assertions": 625,
+    "status": "PASS",
+    "typecheck": "PASS",
+    "hiddenMappedBuild": "PASS_SEPARATE_OUTDIR",
+    "logs": [
+      "c2-focused-tests.log",
+      "c2-schema-tests.log",
+      "c2-typecheck.log",
+      "c2-build.log"
+    ]
+  },
+  "nativeMacReports": {
+    "c2-hidden-pass-2x-v1": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c2-hidden-pass-2x-v1/report.json",
+      "sha256": "a5d59d175081220b2ddc1b5adf5eca5a232922c5d5ed342c41ff4087659e8a60",
+      "status": "PASS_NATIVE_HIDDEN_BODY_PIXEL_EQUIVALENCE",
+      "platform": "darwin-arm64",
+      "errors": [],
+      "comparisons": {
+        "startTick": 678,
+        "endTick": 678,
+        "results": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "filtering": true,
+            "hiddenBodies": 2,
+            "culledBodies": 2,
+            "coverageMeshes": 207,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8446430,
+            "comparedBytes": 16384000,
+            "calls": [
+              733,
+              729,
+              733
+            ],
+            "triangles": [
+              1079854,
+              1079838,
+              1079854
+            ],
+            "expectedSavedCalls": 4,
+            "shaderChecksEnabled": true
+          },
+          {
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "filtering": false,
+            "hiddenBodies": 2,
+            "culledBodies": 0,
+            "coverageMeshes": 207,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8446430,
+            "comparedBytes": 16384000,
+            "calls": [
+              733,
+              733,
+              733
+            ],
+            "triangles": [
+              1079854,
+              1079854,
+              1079854
+            ],
+            "expectedSavedCalls": 0,
+            "shaderChecksEnabled": true
+          },
+          {
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "filtering": true,
+            "hiddenBodies": 2,
+            "culledBodies": 2,
+            "coverageMeshes": 207,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8446638,
+            "comparedBytes": 16384000,
+            "calls": [
+              737,
+              733,
+              737
+            ],
+            "triangles": [
+              1113454,
+              1113438,
+              1113454
+            ],
+            "expectedSavedCalls": 4,
+            "shaderChecksEnabled": true
+          },
+          {
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "filtering": false,
+            "hiddenBodies": 2,
+            "culledBodies": 0,
+            "coverageMeshes": 207,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8446638,
+            "comparedBytes": 16384000,
+            "calls": [
+              737,
+              737,
+              737
+            ],
+            "triangles": [
+              1113454,
+              1113454,
+              1113454
+            ],
+            "expectedSavedCalls": 0,
+            "shaderChecksEnabled": true
+          },
+          {
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "filtering": true,
+            "hiddenBodies": 2,
+            "culledBodies": 2,
+            "coverageMeshes": 207,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 6804950,
+            "comparedBytes": 16384000,
+            "calls": [
+              721,
+              717,
+              721
+            ],
+            "triangles": [
+              1000786,
+              1000770,
+              1000786
+            ],
+            "expectedSavedCalls": 4,
+            "shaderChecksEnabled": true
+          },
+          {
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "filtering": false,
+            "hiddenBodies": 2,
+            "culledBodies": 0,
+            "coverageMeshes": 207,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 6804950,
+            "comparedBytes": 16384000,
+            "calls": [
+              721,
+              721,
+              721
+            ],
+            "triangles": [
+              1000786,
+              1000786,
+              1000786
+            ],
+            "expectedSavedCalls": 0,
+            "shaderChecksEnabled": true
+          }
+        ],
+        "output": {
+          "ratio": 2,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "density": 2
+      }
+    },
+    "c2-hidden-pass-4x-v1": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c2-hidden-pass-4x-v1/report.json",
+      "sha256": "67131cea3cd5935fa0f0592f5a027597113c633743b017c902ef30f47000d071",
+      "status": "PASS_NATIVE_HIDDEN_BODY_PIXEL_EQUIVALENCE",
+      "platform": "darwin-arm64",
+      "errors": [],
+      "comparisons": {
+        "startTick": 677,
+        "endTick": 677,
+        "results": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "filtering": true,
+            "hiddenBodies": 2,
+            "culledBodies": 2,
+            "coverageMeshes": 234,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8445625,
+            "comparedBytes": 16384000,
+            "calls": [
+              762,
+              758,
+              762
+            ],
+            "triangles": [
+              1079666,
+              1079650,
+              1079666
+            ],
+            "expectedSavedCalls": 4,
+            "shaderChecksEnabled": true
+          },
+          {
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "filtering": false,
+            "hiddenBodies": 2,
+            "culledBodies": 0,
+            "coverageMeshes": 234,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8445625,
+            "comparedBytes": 16384000,
+            "calls": [
+              762,
+              762,
+              762
+            ],
+            "triangles": [
+              1079666,
+              1079666,
+              1079666
+            ],
+            "expectedSavedCalls": 0,
+            "shaderChecksEnabled": true
+          },
+          {
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "filtering": true,
+            "hiddenBodies": 2,
+            "culledBodies": 2,
+            "coverageMeshes": 234,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8445962,
+            "comparedBytes": 16384000,
+            "calls": [
+              766,
+              762,
+              766
+            ],
+            "triangles": [
+              1113266,
+              1113250,
+              1113266
+            ],
+            "expectedSavedCalls": 4,
+            "shaderChecksEnabled": true
+          },
+          {
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "filtering": false,
+            "hiddenBodies": 2,
+            "culledBodies": 0,
+            "coverageMeshes": 234,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8445962,
+            "comparedBytes": 16384000,
+            "calls": [
+              766,
+              766,
+              766
+            ],
+            "triangles": [
+              1113266,
+              1113266,
+              1113266
+            ],
+            "expectedSavedCalls": 0,
+            "shaderChecksEnabled": true
+          },
+          {
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "filtering": true,
+            "hiddenBodies": 2,
+            "culledBodies": 2,
+            "coverageMeshes": 234,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 6804263,
+            "comparedBytes": 16384000,
+            "calls": [
+              750,
+              746,
+              750
+            ],
+            "triangles": [
+              1000598,
+              1000582,
+              1000598
+            ],
+            "expectedSavedCalls": 4,
+            "shaderChecksEnabled": true
+          },
+          {
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "filtering": false,
+            "hiddenBodies": 2,
+            "culledBodies": 0,
+            "coverageMeshes": 234,
+            "coverageVisible": true,
+            "initialSuppressed": true,
+            "width": 2560,
+            "height": 1600,
+            "differentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 6804263,
+            "comparedBytes": 16384000,
+            "calls": [
+              750,
+              750,
+              750
+            ],
+            "triangles": [
+              1000598,
+              1000598,
+              1000598
+            ],
+            "expectedSavedCalls": 0,
+            "shaderChecksEnabled": true
+          }
+        ],
+        "output": {
+          "ratio": 2,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "density": 4
+      }
+    },
+    "c2-program-churn-4x-v1": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c2-program-churn-4x-v1/report.json",
+      "sha256": "4ecca1e52fab8e3cb3d523830ad24964e27d4327734a3037b73b9a22518e3d4b",
+      "status": "PASS_NATIVE_INSTRUMENTED_PROGRAM_OWNERSHIP_PROBE",
+      "platform": "darwin-arm64",
+      "errors": [],
+      "probe": {
+        "startTick": 668,
+        "endTick": 1208,
+        "startPrograms": 42,
+        "endPrograms": 42,
+        "shaderChecksEnabled": true
+      },
+      "links": 0,
+      "logQueries": 0,
+      "experimentalOverride": false
+    },
+    "c2-trace-smoke-4x-v1": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c2-trace-smoke-4x-v1/report.json",
+      "sha256": "d32a451e59aadc12f13fe54fafc1cba3fe6220a6189449d2ccc63f8b29a496fc",
+      "status": "PASS_NATIVE_MAC_TOOLING_SMOKE",
+      "platform": "darwin-arm64",
+      "errors": []
+    }
+  },
+  "nativeMacPhaseGates": {
+    "status": "PASS_FRESH_C2_NATIVE_MAC_BOUND_PHASE_BINDING_AND_TRACE_GATES",
+    "platform": "darwin-arm64",
+    "windows": "NOT_RUN",
+    "runs": [
+      {
+        "directory": ".artifacts/windows-hd-diagnostic/candidate-c2-fresh/RA2-HD-WINHD-20261008-D38F136-C2-84d502e-Windows-x64/Diagnostic-Runs/2026-10-08T23-14-59-825Z-small-4x-none",
+        "config": {
+          "mode": "4x",
+          "scene": "small",
+          "control": "none",
+          "seconds": 3,
+          "trace": false,
+          "manual": false,
+          "experimentId": "WINHD-20261008-D38F136-C2-small-4x-none",
+          "timestamp": 1700000000000,
+          "edition": "yr",
+          "shadows": 3,
+          "renderResolution": "native",
+          "contentSize": [
+            1280,
+            800
+          ],
+          "displayMode": "window",
+          "presentationHeight": 900
+        },
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 205,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 397,
+            "vxlBindings": 56,
+            "shpBindings": 1240
+          },
+          {
+            "label": "warmed-steady",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 202,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 400,
+            "vxlBindings": 56,
+            "shpBindings": 1241
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 201,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 397,
+            "vxlBindings": 56,
+            "shpBindings": 1240
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 203,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 399,
+            "vxlBindings": 56,
+            "shpBindings": 1241
+          }
+        ]
+      },
+      {
+        "directory": ".artifacts/windows-hd-diagnostic/candidate-c2-fresh/RA2-HD-WINHD-20261008-D38F136-C2-84d502e-Windows-x64/Diagnostic-Runs/2026-10-08T23-15-56-866Z-small-2x-none",
+        "config": {
+          "mode": "2x",
+          "scene": "small",
+          "control": "none",
+          "seconds": 3,
+          "trace": false,
+          "manual": false,
+          "experimentId": "WINHD-20261008-D38F136-C2-small-2x-none",
+          "timestamp": 1700000000000,
+          "edition": "yr",
+          "shadows": 3,
+          "renderResolution": "native",
+          "contentSize": [
+            1280,
+            800
+          ],
+          "displayMode": "window",
+          "presentationHeight": 900
+        },
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 203,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 370,
+            "vxlBindings": 56,
+            "shpBindings": 1267
+          },
+          {
+            "label": "warmed-steady",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 201,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 373,
+            "vxlBindings": 56,
+            "shpBindings": 1268
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 208,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 370,
+            "vxlBindings": 56,
+            "shpBindings": 1267
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 203,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 372,
+            "vxlBindings": 56,
+            "shpBindings": 1268
+          }
+        ]
+      },
+      {
+        "directory": ".artifacts/windows-hd-diagnostic/candidate-c2-fresh/RA2-HD-WINHD-20261008-D38F136-C2-84d502e-Windows-x64/Diagnostic-Runs/2026-10-08T23-16-43-443Z-small-4x-none",
+        "config": {
+          "mode": "4x",
+          "scene": "small",
+          "control": "none",
+          "seconds": 3,
+          "trace": false,
+          "manual": false,
+          "experimentId": "WINHD-20261008-D38F136-C2-small-4x-none",
+          "timestamp": 1700000000000,
+          "edition": "yr",
+          "shadows": 3,
+          "renderResolution": "native",
+          "contentSize": [
+            1280,
+            800
+          ],
+          "displayMode": "window",
+          "presentationHeight": 900
+        },
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 204,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 397,
+            "vxlBindings": 56,
+            "shpBindings": 1240
+          },
+          {
+            "label": "warmed-steady",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 201,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 400,
+            "vxlBindings": 56,
+            "shpBindings": 1241
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 201,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 397,
+            "vxlBindings": 56,
+            "shpBindings": 1240
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 202,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 400,
+            "vxlBindings": 56,
+            "shpBindings": 1241
+          }
+        ]
+      },
+      {
+        "directory": ".artifacts/windows-hd-diagnostic/candidate-c2-fresh/RA2-HD-WINHD-20261008-D38F136-C2-84d502e-Windows-x64/Diagnostic-Runs/2026-10-08T23-17-51-791Z-small-4x-none",
+        "config": {
+          "mode": "4x",
+          "scene": "small",
+          "control": "none",
+          "seconds": 3,
+          "trace": true,
+          "manual": false,
+          "experimentId": "WINHD-20261008-D38F136-C2-small-4x-none",
+          "timestamp": 1700000000000,
+          "edition": "yr",
+          "shadows": 3,
+          "renderResolution": "native",
+          "contentSize": [
+            1280,
+            800
+          ],
+          "displayMode": "window",
+          "presentationHeight": 900
+        },
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 204,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 397,
+            "vxlBindings": 56,
+            "shpBindings": 1240
+          },
+          {
+            "label": "warmed-steady",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 201,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 400,
+            "vxlBindings": 56,
+            "shpBindings": 1241
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 209,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 397,
+            "vxlBindings": 56,
+            "shpBindings": 1240
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": false,
+            "nativeTicks": 202,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 399,
+            "vxlBindings": 56,
+            "shpBindings": 1241
+          },
+          {
+            "label": "instrumented-cpu-multiprocess-trace",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "instrumented": true,
+            "nativeTicks": 541,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "logicalSize": [
+              1440,
+              900
+            ],
+            "hdNodes": 401,
+            "vxlBindings": 56,
+            "shpBindings": 1242
+          }
+        ],
+        "traceStatus": {
+          "status": "CAPTURED",
+          "categories": [
+            "toplevel",
+            "v8",
+            "gpu",
+            "cc",
+            "viz",
+            "blink",
+            "renderer.scheduler",
+            "devtools.timeline",
+            "disabled-by-default-v8.gc",
+            "disabled-by-default-devtools.timeline",
+            "disabled-by-default-gpu.service"
+          ],
+          "missingCategories": [],
+          "debuggerTransport": "In-process Electron WebContents debugger; no TCP port",
+          "durationSeconds": 8,
+          "cpuProfile": "CAPTURED",
+          "requestedDuringStage": "same-process-reentry-warmed",
+          "overlap": "Separate instrumented phase",
+          "materialProgramUploadEvents": "Trace dependent; unavailable if not emitted",
+          "webglCalls": {
+            "methods": {
+              "useProgram": {
+                "calls": 141200,
+                "cpuMs": 24.05000114440918,
+                "maximumCpuMs": 0.039999961853027344
+              },
+              "compileShader": {
+                "calls": 0,
+                "cpuMs": 0,
+                "maximumCpuMs": 0
+              },
+              "linkProgram": {
+                "calls": 0,
+                "cpuMs": 0,
+                "maximumCpuMs": 0
+              },
+              "getProgramInfoLog": {
+                "calls": 0,
+                "cpuMs": 0,
+                "maximumCpuMs": 0
+              },
+              "texImage2D": {
+                "calls": 0,
+                "cpuMs": 0,
+                "maximumCpuMs": 0
+              },
+              "texSubImage2D": {
+                "calls": 196,
+                "cpuMs": 4.900000214576721,
+                "maximumCpuMs": 1.090000033378601
+              },
+              "compressedTexImage2D": {
+                "calls": 0,
+                "cpuMs": 0,
+                "maximumCpuMs": 0
+              },
+              "compressedTexSubImage2D": {
+                "calls": 0,
+                "cpuMs": 0,
+                "maximumCpuMs": 0
+              }
+            },
+            "programChanges": 141200,
+            "textureUploadBytes": "UNAVAILABLE",
+            "interpretation": "CPU WebGL call durations and counts; no GPU execution timing or residency measurement.",
+            "materialCalls": 381288,
+            "materialChanges": 321876
+          }
+        }
+      }
+    ]
+  },
+  "nativeExportRoundtrip": {
+    "status": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+    "archive": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c2-fresh/RA2-HD-WINHD-20261008-D38F136-C2-84d502e-Windows-x64/WINHD-20261008-D38F136-C2-RETURN-2026-10-08T23-19-11-395Z.zip",
+    "bytes": 179921287,
+    "sha256": "489a98293bb2d10ea06914057efb83a595fab856be536d1822a058ec7bf2d95e",
+    "files": 38,
+    "runs": 4,
+    "diagnosticId": "WINHD-20261008-D38F136-C2",
+    "diagnosticCommit": "84d502e233382b9525d7c44820881bdf372d085f",
+    "manifestSha256": "39fbe612b1c40f0e24d204fcec3ca358dccdd7ab50bff31a656959f7faa1bd99",
+    "extractedDirectory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c2-native-export-verified",
+    "launcherPolicy": "Inspected as data only; no returned scripts executed.",
+    "launchers": [
+      {
+        "file": "Export-Reports.cmd",
+        "status": "IDENTICAL",
+        "sha256": "25e23098719b40880c953b1ca32ce71489741e5840aae605e196fd858c64b0fc"
+      },
+      {
+        "file": "Launch-Diagnostics.cmd",
+        "status": "IDENTICAL",
+        "sha256": "e02132c8c18af438e54e2156e04163122309c9a64bded36ce6b034d6722303f0"
+      },
+      {
+        "file": "Run-Control.cmd",
+        "status": "IDENTICAL",
+        "sha256": "69705b9577c1a5f9cceed33612b407d9110317d9a9eab76ec570507da20255db"
+      },
+      {
+        "file": "Verify-Kit.cmd",
+        "status": "IDENTICAL",
+        "sha256": "812399b452707c4a00757b168629eaedd761f5ec57d4584cd43dd3806d5d9722"
+      }
+    ]
+  },
+  "priorArchives": [
+    {
+      "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-A1-da085fa-Windows-x64.zip",
+      "bytes": 3499702463,
+      "sha256": "58a6313dfc4cf4aeb5800487a845d50a5d7c6cd86953ee86c625ccb76e72d731"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C1-ec50a8e-Windows-x64.zip",
+      "bytes": 3499723961,
+      "sha256": "8393d0e6bb0be4ff447b41fb48a488d2df1baa357380a3e0a90f0813708ae879"
+    }
+  ],
+  "rawFailurePolicy": {
+    "status": "PRESERVED",
+    "historical": "All earlier invalid Windows phases, missing trace and failed Mac experiments remain immutable.",
+    "localPostExportParserFailure": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c2-post-export-parser-failure.txt"
+  },
+  "statusBoundaries": {
+    "localSource": "COMMITTED",
+    "staticPackage": "PASS",
+    "copiedNativeMac": "PASS_BOUNDED_EQUIVALENCE_AND_ZERO_REPEATED_LINKS",
+    "C1WindowsRuntime": "CAPTURED_VALID_AB_PARTIAL_REDUCTION",
+    "C1UserSmoothness": "NOT_ACCEPTED",
+    "C2WindowsRuntimePerformance": "NOT_RUN_EVIDENCE_PENDING",
+    "C2UserSmoothness": "PENDING",
+    "C2UserVisual": "PENDING",
+    "C2PhysicalInput": "NOT_RUN",
+    "mainIntegration": "NOT_PERFORMED",
+    "remotePush": "NOT_PERFORMED",
+    "M2_3": "UNTOUCHED_139897dac2a08f488c8f8c5348756e981008644c"
+  },
+  "nextRuns": {
+    "kits": [
+      "C1",
+      "C2"
+    ],
+    "each": [
+      "Small 2X Normal",
+      "Small 4X Trace"
+    ],
+    "launches": 4,
+    "boundary": "Fresh launches, same monitor/DPI/AC/focus/settings; wait for final completion, export both kits and report smoothness/visuals. No stress/control matrix.",
+    "verification": "Run Verify-Kit.cmd once in both kits before timings; latest Windows returns omit verification.json."
+  },
+  "handoff": "Continue current execution conversation for C2 Windows returns and acceptance. Source remains frozen at the package commit; later evidence commits do not relabel it."
+}

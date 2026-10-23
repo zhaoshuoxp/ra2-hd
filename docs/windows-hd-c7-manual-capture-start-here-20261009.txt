@@ -1,0 +1,30 @@
+C7 manual-play capture: preserve the camera during F8 and late F9
+
+Extract C7-Manual-Capture-M1 INSIDE the complete preserved C7 game folder:
+RA2-HD-WINHD-20261008-D38F136-C7-3ab266e-Windows-x64.
+It must sit beside Red Alert 2 HD.exe and the original Export-Reports.cmd.
+Keep all existing files, reports and profiles. No file replacement is needed.
+
+Open C7-Manual-Capture-M1/Capture-Manual-Play.cmd. It verifies C7 and stages
+its exact runtime before opening the usual eight-player/seven-AI 4X test.
+Staging uses about 368 MiB of extra space. Art and application bytes are reused.
+No development software or network connection is required.
+
+1. Let the automatic test finish; dismiss its completion message if shown.
+2. Continue playing until the sustained low-frame-rate feeling appears.
+3. Press F8 once. Continue the same play and scrolling for at least 15 seconds.
+   This is the lightweight sample. The tool keeps your live camera input.
+4. After the title says capture complete again, press F9 once if the same
+   low-frame-rate condition is still present. Keep playing for at least
+   8 seconds, then wait for capture complete before closing the game.
+   F9 is an instrumented trace; its own slowdown is excluded from Normal FPS.
+5. Close the game, run the ORIGINAL C7 Export-Reports.cmd, and return its new
+   RETURN ZIP. Report whether the low-frame-rate feeling was present during F8.
+
+Keep the game foreground and use the same display, graphics and speed settings.
+The earlier four automatic phases remain available; no old report is erased.
+F8/F9 in the ORIGINAL C7 launcher still use an automatic camera route. Use this
+companion launcher for this manual-play capture. This is diagnostic tooling,
+not another performance candidate; it changes no sync, frame cap or game code.
+Provenance and any companion failure are exported in USER-NOTES.txt.
+If capture fails, preserve its output and export available reports unchanged.

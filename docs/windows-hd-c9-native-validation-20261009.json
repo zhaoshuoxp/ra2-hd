@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_NATIVE_MAC_SELECTED_VXL_PREPARATION_WINDOWS_AB_PENDING",
+  "sourceFocus": "ee1fc2769718a5d43533f124efd231399d8fbd3b",
+  "applicationIncrementFromC8": [
+    "src/engine/renderable/unitVxl/VxlUnitRenderer.ts"
+  ],
+  "resources": {
+    "worldAndUIFiles": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+  },
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCPU": 128,
+    "ui": 16
+  },
+  "tests": {
+    "focusedAndShared": 16,
+    "assertions": 2625,
+    "skipped": 8,
+    "skipBoundary": "Authoring-resource-dependent registration cases; no claim of those cases passing.",
+    "entryTypecheck": "PASS",
+    "logs": [
+      "c9-bearing-tests-v1.log",
+      "c9-typecheck-v2.log"
+    ],
+    "correctedPreRepairFailure": "c9-bearing-regression-before-v2.log",
+    "preservedFixtureFailure": "c9-bearing-regression-before-v1.log"
+  },
+  "traceCompatibility": {
+    "status": "PASS_PRIOR_C7_M1_IDENTITY_METRICS_AND_ATTRIBUTION_EXACT",
+    "checked": [
+      "identity",
+      "verification",
+      "metrics",
+      "trace"
+    ],
+    "baseline": ".artifacts/windows-hd-diagnostic/c7-m1-windows-trace-attribution-v1.json",
+    "rerun": ".artifacts/windows-hd-diagnostic/c7-m1-attribution-compatibility-v1.json"
+  },
+  "control": {
+    "path": ".artifacts/windows-hd-diagnostic/c8-native-vxl-bearing-control-v1/report.json",
+    "sha256": "89b4d6c52205fb61e9f633500668a698a4d364e0e557defa396e11cc54db4d36",
+    "status": "PASS_COPIED_MAC_SELECTED_VXL_BEARING_CONTROL",
+    "boundary": "Copied immutable C8 selected-frame surrogate; not Windows FPS."
+  },
+  "copiedPackagedNative": {
+    "path": ".artifacts/windows-hd-diagnostic/c9-native-candidate-v1/report.json",
+    "sha256": "c21dee39c73f70c92e1c918fc009256909bb9bb9dde8a58b741e3188d5ce2b4a",
+    "status": "PASS_COPIED_MAC_VXL_BEARING_CANDIDATE",
+    "platform": "darwin",
+    "sourceManifestSha256": "9f7db8a95037c85bec752b344401cac2ec7b4679c305e7743ac99c81318e3fa9",
+    "cases": [
+      {
+        "mode": "4x",
+        "scene": "stress",
+        "runDirectory": "2026-10-10T07-16-43-073Z-stress-4x-none",
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 200,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                3840,
+                2160
+              ],
+              "effective": [
+                3840,
+                2160
+              ],
+              "caps": []
+            },
+            "hdBindings": 1922
+          },
+          {
+            "label": "warmed-steady",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 418,
+            "tickEnd": 619,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                3840,
+                2160
+              ],
+              "effective": [
+                3840,
+                2160
+              ],
+              "caps": []
+            },
+            "hdBindings": 1938
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 200,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                3840,
+                2160
+              ],
+              "effective": [
+                3840,
+                2160
+              ],
+              "caps": []
+            },
+            "hdBindings": 1922
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 432,
+            "tickEnd": 634,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                3840,
+                2160
+              ],
+              "effective": [
+                3840,
+                2160
+              ],
+              "caps": []
+            },
+            "hdBindings": 1938
+          }
+        ],
+        "bearings": [
+          {
+            "tick": 9486,
+            "models": 42,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "baselinePoses": 944,
+            "candidatePoses": 118,
+            "differingBytes": 0,
+            "comparedBytes": 33177600,
+            "nonzeroBytes": 17595289,
+            "matrixParity": true
+          },
+          {
+            "tick": 9486,
+            "models": 42,
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "baselinePoses": 944,
+            "candidatePoses": 118,
+            "differingBytes": 0,
+            "comparedBytes": 33177600,
+            "nonzeroBytes": 17329559,
+            "matrixParity": true
+          },
+          {
+            "tick": 9486,
+            "models": 42,
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "baselinePoses": 944,
+            "candidatePoses": 118,
+            "differingBytes": 0,
+            "comparedBytes": 33177600,
+            "nonzeroBytes": 16710912,
+            "matrixParity": true
+          }
+        ],
+        "manual": [
+          {
+            "key": "F8",
+            "movement": {
+              "before": {
+                "x": -1860,
+                "y": 5250
+              },
+              "requested": {
+                "x": -1812,
+                "y": 5226
+              },
+              "actual": {
+                "x": -1812,
+                "y": 5226
+              }
+            }
+          },
+          {
+            "key": "F9",
+            "movement": {
+              "before": {
+                "x": -1812,
+                "y": 5226
+              },
+              "requested": {
+                "x": -1764,
+                "y": 5202
+              },
+              "actual": {
+                "x": -1764,
+                "y": 5202
+              }
+            }
+          }
+        ],
+        "trace": {
+          "status": "CAPTURED",
+          "categories": [
+            "toplevel",
+            "v8",
+            "gpu",
+            "cc",
+            "viz",
+            "blink",
+            "renderer.scheduler",
+            "devtools.timeline",
+            "disabled-by-default-v8.gc",
+            "disabled-by-default-devtools.timeline",
+            "disabled-by-default-gpu.service"
+          ],
+          "missingCategories": [],
+          "debuggerTransport": "In-process Electron WebContents debugger; no TCP port",
+          "durationSeconds": 8,
+          "cpuProfile": "CAPTURED",
+          "requestedDuringStage": "complete",
+          "overlap": "Separate instrumented phase",
+          "materialProgramUploadEvents": "Trace dependent; unavailable if not emitted",
+          "webglCalls": {
+            "methods": {
+              "useProgram": {
+                "calls": 190553,
+                "cpuMs": 33.990002036094666,
+                "maximumCpuMs": 0.020000100135803223
+              },
+              "compileShader": {
+                "calls": 6,
+                "cpuMs": 0.004999995231628418,
+                "maximumCpuMs": 0.004999995231628418
+              },
+              "linkProgram": {
+                "calls": 3,
+                "cpuMs": 0.040000081062316895,
+                "maximumCpuMs": 0.020000100135803223
+              },
+              "getProgramInfoLog": {
+                "calls": 3,
+                "cpuMs": 4.604999899864197,
+                "maximumCpuMs": 1.590000033378601
+              },
+              "texImage2D": {
+                "calls": 0,
+                "cpuMs": 0,
+                "maximumCpuMs": 0
+              },
+              "texSubImage2D": {
+                "calls": 371,
+                "cpuMs": 5.520000576972961,
+                "maximumCpuMs": 0.6699999570846558
+              },
+              "compressedTexImage2D": {
+                "calls": 0,
+                "cpuMs": 0,
+                "maximumCpuMs": 0
+              },
+              "compressedTexSubImage2D": {
+                "calls": 0,
+                "cpuMs": 0,
+                "maximumCpuMs": 0
+              }
+            },
+            "programChanges": 190553,
+            "textureUploadBytes": "UNAVAILABLE",
+            "interpretation": "CPU WebGL call durations and counts; no GPU execution timing or residency measurement.",
+            "materialCalls": 500919,
+            "materialChanges": 418164
+          }
+        },
+        "debuggerRestored": true
+      },
+      {
+        "mode": "2x",
+        "scene": "small",
+        "runDirectory": "2026-10-10T07-19-55-906Z-small-2x-none",
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 204,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 1323
+          },
+          {
+            "label": "warmed-steady",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 414,
+            "tickEnd": 615,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 1324
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 208,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 1323
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 424,
+            "tickEnd": 626,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 1324
+          }
+        ],
+        "bearings": [
+          {
+            "tick": 683,
+            "models": 56,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "baselinePoses": 608,
+            "candidatePoses": 76,
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "nonzeroBytes": 8446193,
+            "matrixParity": true
+          },
+          {
+            "tick": 683,
+            "models": 56,
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "baselinePoses": 608,
+            "candidatePoses": 76,
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "nonzeroBytes": 8446333,
+            "matrixParity": true
+          },
+          {
+            "tick": 683,
+            "models": 56,
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "baselinePoses": 608,
+            "candidatePoses": 76,
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "nonzeroBytes": 6804851,
+            "matrixParity": true
+          }
+        ]
+      },
+      {
+        "mode": "original",
+        "scene": "small",
+        "runDirectory": "2026-10-10T07-20-33-857Z-small-original-none",
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 203,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 0
+          },
+          {
+            "label": "warmed-steady",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 408,
+            "tickEnd": 611,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 0
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 208,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 0
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 413,
+            "tickEnd": 615,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 0
+          }
+        ],
+        "bearings": [
+          {
+            "tick": 640,
+            "models": 0,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "baselinePoses": 0,
+            "candidatePoses": 0,
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "nonzeroBytes": 8238802,
+            "matrixParity": true
+          },
+          {
+            "tick": 640,
+            "models": 0,
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "baselinePoses": 0,
+            "candidatePoses": 0,
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "nonzeroBytes": 8239102,
+            "matrixParity": true
+          },
+          {
+            "tick": 640,
+            "models": 0,
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "baselinePoses": 0,
+            "candidatePoses": 0,
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "nonzeroBytes": 6597651,
+            "matrixParity": true
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "boundary": "Copied packaged Mac candidate, native progressing matches and same-state legacy cached-bearing preparation pixel/matrix controls outside timing. No Windows FPS claim."
+  },
+  "platformGates": {
+    "windowsCandidatePerformance": "PENDING",
+    "windowsCandidateVisualAcceptance": "PENDING",
+    "overallUserAcceptance": "OPEN",
+    "mainIntegration": "NOT_PERFORMED",
+    "remotePush": "NOT_PERFORMED",
+    "release": "NOT_PERFORMED"
+  }
+}

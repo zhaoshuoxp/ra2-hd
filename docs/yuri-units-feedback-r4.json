@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "taskId": "D",
+  "revision": "R4",
+  "status": "R3_OTHER_VISUALS_USER_ACCEPTED_TELE_ORIGINAL_REFERENCE_NATIVE_PASS_VISUAL_PENDING",
+  "runtimeSourceHead": "c43afd5a22d5a45ba7b6cbe2da40942cf0a3d364",
+  "packageReceipt": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/package-v2/package-receipt.json",
+  "packageReceiptSha256": "6e200fffef145739ea85382d8142c0877141837e9f194a4f561f4659ec871522",
+  "app": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/package-v2/RA2-HD-Yuri-Units-D-R4/RA2 HD Yuri Units D R4.app",
+  "resources": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/package-v2/RA2-HD-Yuri-Units-D-R4/RA2-HD-Editions-Resources",
+  "review": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/package-v2/RA2-HD-Yuri-Units-D-R4/Review/TELE-R4-Original-Reference-Review-v2.html",
+  "reviewSha256": "d26172747d99f8d9d94eade4367d501ea0e8e77245557b8cad7590806632b7a4",
+  "reference": {
+    "receipt": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/reference-analysis-v1.json",
+    "sha256": "24a95ea60470667a07fbe4b0520b88d306deba35b490d0be5fd22dbd182d8699",
+    "image": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/TELE-user-retail-reference.png",
+    "imageSha256": "1a4075669ddb206873444e2cf13d5a4838591d3c45048a69298a9bb3502638eb"
+  },
+  "r3UserAcceptance": {
+    "receipt": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/r3-user-acceptance-v1.json",
+    "sha256": "ff16cb75c264265d963563f32e927bbb4a5bb7a51b5de0537d91afe54b88ce83",
+    "acceptedScope": "All previously reviewed R3 visuals except TELE beam appearance",
+    "acceptedCleanFamilies": [
+      "MIND",
+      "LTNK",
+      "YTNK"
+    ],
+    "acceptedControlSources": [
+      "MIND roof",
+      "YURIPR crown",
+      "YURI crown"
+    ]
+  },
+  "changeScope": [
+    "TELE appearance only: pale lavender palette, fine irregular grain, straight constant 10-logical-pixel band"
+  ],
+  "preservedNativeBehavior": [
+    "Live caster/victim endpoints",
+    "Native lift, pull and stop/release lifecycle",
+    "Targeting, weapon timings, ownership and unit rules",
+    "Original logical geometry and camera"
+  ],
+  "runtimeReports": [
+    {
+      "density": 2,
+      "path": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/runtime-tele-2x-v2/report.json",
+      "sha256": "ff5682b575e718878702252da157e8f0237e67887ae99ae847aa5680bd8bbbda",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "binding": {
+        "name": "TELE",
+        "id": 1310,
+        "tick": 29,
+        "spawned": true,
+        "destroyed": false,
+        "tile": [
+          48,
+          86
+        ],
+        "moving": false,
+        "firing": false,
+        "health": 100,
+        "shpHd": false,
+        "vxlHd": true,
+        "parts": [
+          "tele.vxl",
+          "teletur.vxl"
+        ],
+        "turret": 0,
+        "warped": false,
+        "zone": 0,
+        "elevation": 0
+      },
+      "actualDensity": 2,
+      "lifting": {
+        "tick": 47,
+        "samples": [
+          {
+            "name": "TELE",
+            "id": 1310,
+            "tick": 47,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              48,
+              86
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": true,
+            "parts": [
+              "tele.vxl",
+              "teletur.vxl"
+            ],
+            "turret": 0,
+            "warped": false,
+            "zone": 0,
+            "elevation": 0
+          },
+          {
+            "name": "HTNK",
+            "id": 1311,
+            "tick": 47,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              54,
+              86
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": false,
+            "turret": 0,
+            "warped": false,
+            "zone": 1,
+            "elevation": 0.23920798269366972
+          }
+        ],
+        "target": [
+          13952,
+          443.04624943499573,
+          22144
+        ],
+        "endpoint": [
+          13952,
+          443.04624943499573,
+          22144
+        ],
+        "elevated": 0.23920798269366972,
+        "bands": 1,
+        "logicalWidth": 10,
+        "animationTime": 0.08333499999999913
+      },
+      "moving": {
+        "tick": 144,
+        "samples": [
+          {
+            "name": "TELE",
+            "id": 1310,
+            "tick": 144,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              48,
+              86
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": true,
+            "parts": [
+              "tele.vxl",
+              "teletur.vxl"
+            ],
+            "turret": 0,
+            "warped": false,
+            "zone": 0,
+            "elevation": 0
+          },
+          {
+            "name": "HTNK",
+            "id": 1311,
+            "tick": 144,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              54,
+              86
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": false,
+            "turret": 0,
+            "warped": false,
+            "zone": 1,
+            "elevation": 4.784159653873395
+          }
+        ],
+        "target": [
+          13938,
+          918.0462494349958,
+          22144
+        ],
+        "endpoint": [
+          13938,
+          918.0462494349958,
+          22144
+        ],
+        "elevated": 4.784159653873395,
+        "bands": 1,
+        "logicalWidth": 10,
+        "animationTime": 1.5167499999999983
+      },
+      "stopDuringLiveLift": {
+        "tick": 144,
+        "activeController": true,
+        "beamVisible": true,
+        "elevated": 4.784159653873395,
+        "target": [
+          13938,
+          918.0462494349958,
+          22144
+        ],
+        "nativeOrderSubmitted": true
+      },
+      "nativeStopCleanup": true,
+      "capture": "SAME_RENDERED_LIVE_FRAME",
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 116391684,
+        "demand": 1435720,
+        "total": 148330796,
+        "limit": 268435456
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "handledErrors": [],
+      "clips": [
+        "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/runtime-tele-2x-v2/TELE-native-feedback-correction.webm"
+      ]
+    },
+    {
+      "density": 4,
+      "path": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/runtime-tele-4x-v2/report.json",
+      "sha256": "cda84e853b0f0d5ae1a2eaa183bd84c41af2b904fff99ca625c08257808130f0",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "binding": {
+        "name": "TELE",
+        "id": 1310,
+        "tick": 40,
+        "spawned": true,
+        "destroyed": false,
+        "tile": [
+          48,
+          86
+        ],
+        "moving": false,
+        "firing": false,
+        "health": 100,
+        "shpHd": false,
+        "vxlHd": true,
+        "parts": [
+          "tele.vxl",
+          "teletur.vxl"
+        ],
+        "turret": 0,
+        "warped": false,
+        "zone": 0,
+        "elevation": 0
+      },
+      "actualDensity": 4,
+      "lifting": {
+        "tick": 58,
+        "samples": [
+          {
+            "name": "TELE",
+            "id": 1310,
+            "tick": 58,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              48,
+              86
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": true,
+            "parts": [
+              "tele.vxl",
+              "teletur.vxl"
+            ],
+            "turret": 0,
+            "warped": false,
+            "zone": 0,
+            "elevation": 0
+          },
+          {
+            "name": "HTNK",
+            "id": 1311,
+            "tick": 58,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              54,
+              86
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": false,
+            "turret": 0,
+            "warped": false,
+            "zone": 1,
+            "elevation": 0.23920798269366972
+          }
+        ],
+        "target": [
+          13952,
+          443.04624943499573,
+          22144
+        ],
+        "endpoint": [
+          13952,
+          443.04624943499573,
+          22144
+        ],
+        "elevated": 0.23920798269366972,
+        "bands": 1,
+        "logicalWidth": 10,
+        "animationTime": 0.06665999999999986
+      },
+      "moving": {
+        "tick": 155,
+        "samples": [
+          {
+            "name": "TELE",
+            "id": 1310,
+            "tick": 155,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              48,
+              86
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": true,
+            "parts": [
+              "tele.vxl",
+              "teletur.vxl"
+            ],
+            "turret": 0,
+            "warped": false,
+            "zone": 0,
+            "elevation": 0
+          },
+          {
+            "name": "HTNK",
+            "id": 1311,
+            "tick": 155,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              54,
+              86
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": false,
+            "turret": 0,
+            "warped": false,
+            "zone": 1,
+            "elevation": 4.784159653873395
+          }
+        ],
+        "target": [
+          13938,
+          918.0462494349958,
+          22144
+        ],
+        "endpoint": [
+          13938,
+          918.0462494349958,
+          22144
+        ],
+        "elevated": 4.784159653873395,
+        "bands": 1,
+        "logicalWidth": 10,
+        "animationTime": 1.516739999999998
+      },
+      "stopDuringLiveLift": {
+        "tick": 155,
+        "activeController": true,
+        "beamVisible": true,
+        "elevated": 4.784159653873395,
+        "target": [
+          13938,
+          918.0462494349958,
+          22144
+        ],
+        "nativeOrderSubmitted": true
+      },
+      "nativeStopCleanup": true,
+      "capture": "SAME_RENDERED_LIVE_FRAME",
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 381733320,
+        "demand": 5277120,
+        "total": 478382636,
+        "limit": 1342177280
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "handledErrors": [],
+      "clips": [
+        "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/runtime-tele-4x-v2/TELE-native-feedback-correction.webm"
+      ]
+    }
+  ],
+  "drawingBuffer": [
+    3840,
+    2160
+  ],
+  "nativeFixtureDisclosure": "Controlled legal land target (HTNK); the supplied original uses a naval target. No native naval fixture was run in this round.",
+  "media": {
+    "manifest": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/embedded-media-v2/manifest.json",
+    "sha256": "efd9979de70d4f1270152c3c0ab978b136b220a3392c0574e22e1089e1b45c34",
+    "status": "PASS_ENCODED_AND_FULLY_DECODED",
+    "embeddedVideos": 2,
+    "durationsSeconds": [
+      2.93,
+      2.8
+    ],
+    "previewCrop": [
+      1400,
+      900,
+      1020,
+      580
+    ],
+    "originalRecordingsPreserved": true
+  },
+  "reviewValidation": {
+    "receipt": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/review-media-validation-v2/report.json",
+    "sha256": "5183130d7316c48d8d1ab34881d9437fd8a0f66a5251f089e87dc066a0a6fe26",
+    "status": "PASS_EMBEDDED_MEDIA_DECODE_AND_STATIC_STRUCTURE",
+    "figureImages": 7,
+    "embeddedImageSourcesDecoded": 9,
+    "interactiveBrowserUi": "NOT_RUN"
+  },
+  "tests": {
+    "command": "bun test scripts/m1/yuri-units/feedback-effects.test.ts scripts/editions/mind-control.test.ts",
+    "passed": 16,
+    "failed": 0,
+    "expectations": 110,
+    "entryTypecheck": "PASS",
+    "reviewGeneratorSyntax": "PASS",
+    "nativeHarnessSyntax": "PASS",
+    "embeddedReviewValidator": "PASS"
+  },
+  "preservation": {
+    "status": "PASS_UNCHANGED_R3_RESOURCES_AND_ACCEPTED_MASTERS",
+    "r3PackageReceipt": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r3/package-v2/package-receipt.json",
+    "r4PackageReceipt": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/package-v2/package-receipt.json",
+    "unchangedResourceFiles": 2718,
+    "r3SignedInventoryUnchanged": 3180,
+    "unchangedMasterFiles": 176,
+    "priorAcceptedMasters": 173,
+    "newlyUserAcceptedCleanMasters": 3,
+    "runtimeArtCatalogUnchanged": true,
+    "integration_status": "NOT_MERGED",
+    "retainedR3InventoryAndMasterProof": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/preservation-v1.json",
+    "retainedProofSha256": "6a1ed80d68384de77a8a84f5edac5cef601bddcd687e2978ca051d91b056074d"
+  },
+  "retainedR3Evidence": "Unchanged previously accepted control sources and complete 2x/4x vehicle families reuse the preserved R3 runtime and resource validation. No broad historical matrix was repeated.",
+  "runtimeExceptions": [
+    "DISK refinery money payment",
+    "YURIPR PsiWave caster destruction"
+  ],
+  "humanOtherR3VisualAcceptance": "USER_ACCEPTED",
+  "humanCleanArtAcceptance": "USER_ACCEPTED",
+  "humanTeleVisualAcceptance": "PENDING",
+  "temporalDisclosure": "The original still does not establish animation cadence; restrained moving shimmer remains an implementation choice.",
+  "signing": "LOCAL_AD_HOC",
+  "windows": "NOT_RUN",
+  "integration_status": "NOT_MERGED",
+  "discardedEvidence": {
+    "receipt": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r4/superseded-v1.json",
+    "reason": "V1 asynchronous moving-stage screenshot arrived after release. V2 captures the live rendered frame and proves stop was issued while lifting and pulling. The game shader and resources are unchanged."
+  }
+}

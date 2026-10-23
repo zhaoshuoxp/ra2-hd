@@ -1,0 +1,200 @@
+{
+  "schema": "m2-4-urban-road-boundary-geometry-delivery-v1",
+  "status": "PASS_MAC_AND_DESKTOP_BOUNDARY_REPAIR_USER_ACCEPTED",
+  "runtimeSourceHead": "b0b634cc3ebadb027b6228970762ca90fce56a8e",
+  "sourcePack": {
+    "schemaVersion": 1,
+    "revision": "urban-m2-4-side-roads-geometry-r10",
+    "sha256": "269a77b5faa0b19150b5f2804b6ab62f31b27ef50991fc8cc35c5b239c0a730d"
+  },
+  "externalReview": "Batch 40 R3",
+  "scope": {
+    "families": 4,
+    "members": 82,
+    "straightMembers": 46,
+    "rampMembers": 7,
+    "bendAndJunctionMembers": 29,
+    "indexedSubtiles": 573,
+    "densityPairs": 1146,
+    "nativePlaceholderPairs": 256,
+    "unaffectedAcceptedGroups": 25,
+    "coverageChange": "Replace previously rejected road boundary RGB only; map eligibility and gameplay rules unchanged."
+  },
+  "geometry": {
+    "policy": "SOURCE_PINNED_ANALYTIC_LINES_AND_PROJECTED_ARCS_V1",
+    "profile": {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/source-geometry-v1.json",
+      "sha256": "5e39e6152d6b43b93d80881b022ad103d61d343a89e50339ef717a5165599aa7"
+    },
+    "sourceFamilyCoordinatesOnly": true,
+    "mapCoordinatePainting": false,
+    "runtimeGeometryChanged": false,
+    "alphaMetadataIndicesAndZ": "EXACT",
+    "r2MaterialMothers": "EXACT_REUSE_NO_NEW_GENERATION",
+    "notes": "Ground-plane circles project to ellipse arcs. Straight/ramp families use parallel lines. Junction fillets meet straight ports tangentially; one compound corner retains original major direction changes."
+  },
+  "native": {
+    "map": "yr:xpowdrkeg.map",
+    "routes": 5,
+    "roadPlacements": 3442,
+    "roadMembers": 56,
+    "staticOnlyMembers": 26,
+    "deduplication": "All 82 members have static density/native closure. Other 26 members share the same four verified complete-family loading paths; unchanged Original map and camera evidence is reused."
+  },
+  "mac": "PASS_2X_4X",
+  "windows": "NOT_RUN",
+  "visual": "USER_ACCEPTED",
+  "m24Complete": false,
+  "worldAllocationBytes": {
+    "2": 134735640,
+    "4": 509658440
+  },
+  "preparedCpuBytes": {
+    "2": 44943988,
+    "4": 108580412
+  },
+  "review": {
+    "status": "PASS_EXACT_HTML_AND_JSON_ONLY",
+    "files": [
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch40-R3-20261014/M2.4-Urban-Batch40-R3-Embedded.html",
+        "sha256": "16e00679748895a1e78d3c91d04c848d867168319e707080e5e1dff56a59db7c",
+        "bytes": 109341252
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch40-R3-20261014/M2.4-Urban-Batch40-R3-Embedded.json",
+        "sha256": "3bb66b8cb10fdd0f1ffc843b42a5a56f983a9e4e1137889a8a2f0b838a001c7e",
+        "bytes": 82096
+      }
+    ]
+  },
+  "reviewImages": {
+    "total": 207,
+    "matchedNativeSceneImages": 15,
+    "allMemberBoards": 164,
+    "beforeAfterBoards": 16,
+    "boundaryControls": 8,
+    "nativeSceneCloseups": 4
+  },
+  "evidence": [
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/user-direction.json",
+      "sha256": "1749382646a618ddf0ca11fd50afec4017ebea4aaac0f94f5a41d3321c9cea8e"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/source-geometry-v1.json",
+      "sha256": "5e39e6152d6b43b93d80881b022ad103d61d343a89e50339ef717a5165599aa7"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/profile.json",
+      "sha256": "09773f90a2b4ec7e980ed429bace52ab814848bbd4df07e5fc83d720eabd8976"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/geometry-generation.log",
+      "sha256": "bc8551b00e7db8ffa2c217a14bf20cf460993cbc876a6f0c196a9e1cf3179aca"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/geometry-regressions.log",
+      "sha256": "de2ea1f0133287936afa3889c6ae9e94ab05eaf2f102502d5ff3a1c80b7badf5"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/road-regressions.log",
+      "sha256": "143fe1955e115f45bc75623de5194ebc42b1d5cd0727081b8cd4b5d75bad4b17"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/terrain-tests.log",
+      "sha256": "59b164a766be5b8645b25041342405953c27efa28f4e8ccc770462210c970a16"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/selection-adoption.json",
+      "sha256": "5b8e8dea0d1a461e778a9da248ed57d2709baf2c7e43bb379efab55b6653f3e6"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/resource-handoff.json",
+      "sha256": "c93a05d1237185e75139a1c30ff43234c2a8b858115b5ae5569f4c2708e88839"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/diagnostic-corrections.json",
+      "sha256": "727122fd405ed6830d5ff93d855341f3eb19fbc464de928b4019951c19b13105"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/native-slot-diagnostic-closure.json",
+      "sha256": "872e2ee3a9f21c595e960ad9171f48c6e55d6be56c7362fa616edd73b5ea98b4"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/native-2x/report.json",
+      "sha256": "4013cd5079c7eef8eaab5cadbb541297439344e105ab4211f7c72c11a00190c7"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/native-4x/report.json",
+      "sha256": "af90b7d360714060db388981f8ded7f28130ae5e756485364648c96a6e16d779"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/before-after/index.json",
+      "sha256": "116e344885eea1af667e4780d221374eb62fd0fa7e085d7a2e7ee87df9e74ea5"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/boundary-controls/index.json",
+      "sha256": "d59618615a243ce5b8d02218d60fbf06aeb8fc1ccc1dddbf18b2a64bcc579c8e"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/native-closeups/index.json",
+      "sha256": "b845fd35e92f80571145fc2df085632fcc0dfdf99758e6bd51f99bf2e363e431"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/desktop-copy.json",
+      "sha256": "9480e2de4e325092e50f3195ff132fec6474f06d27900c824db04bb6bec74958"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/desktop-html-verification/report.json",
+      "sha256": "4cf0be7aa8c2674c26feb4aa23a4779356cb581eaf10c828912287b7d2a41062"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-dirt-roads-authoring-v1/urban-m2-4-side-roads-geometry-r10/recipe.json",
+      "sha256": "a5d72c6ca818979c6d7bcd23d6b43a14ee2370e5fa9d89dc40fff09ab33f8e26"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-dirt-roads-authoring-v1/urban-m2-4-side-roads-geometry-r10/validation.json",
+      "sha256": "06decef6f62ec72dd4d4f395a87e50e424ab419adf9efa1db6ebf5a55fa7cbc7"
+    },
+    {
+      "file": ".artifacts/m2-4/active-mac-road-geometry-stage-v1.json",
+      "sha256": "3b664f0865e9b1ebcd890db41df32bb54d7663e305d5cfccd0ea044d5a601c4f"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/active-mac-road-geometry-build-v1/identity.json",
+      "sha256": "812ae8642ca881a8fd2799994dd987325375d8161cb6e465e72000cc2b85ac59"
+    }
+  ],
+  "reusedEvidence": [
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r5/original/report.json",
+      "sha256": "9eb904cbb6d84d7393d0b5eda51dac325116c0244e3cb321e62e9f5d3a5d63ea",
+      "role": "Same native map, unchanged renderer and five camera routes; Original control at source 49ba18d1"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r5/native-4x/report.json",
+      "sha256": "056e0be4bc56e66a781f4ae500a2f550777cb6bbeee0c8bd4c8e3897af357a5d",
+      "role": "Original fallback, zero released terrain/environment charges and Snow reentry. Only offline RGB production changes; loaders, atlas layout, native dimensions and metadata remain exact."
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r5/typecheck.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+      "role": "Entry typecheck reused: no TypeScript or contract schema change. Actual new identity registration passes 63 tests and 481 assertions."
+    }
+  ],
+  "main": {
+    "head": "748d0998aaf663acda8807c158155bf0a5bb157b",
+    "clean": true,
+    "integrated": false
+  },
+  "perBatchIndependentGamePackage": false,
+  "finalMilestoneAppAndDependencies": "OUTSTANDING",
+  "remaining": "R3 visual decision; remaining Urban/NewUrban/Desert art; four genuine map blockers and four missing source Stop signs; final complete-dependency Mac delivery and accepted integration. Continue this execution conversation.",
+  "acceptance": {
+    "date": "2026-10-14",
+    "scope": "Batch 40 R3 only; 82 Urban road members",
+    "userFeedback": "Accepted. Continue remaining work in larger combined review batches.",
+    "receipt": ".artifacts/m2-4/urban-road-geometry-r3-v1/user-acceptance.json"
+  }
+}

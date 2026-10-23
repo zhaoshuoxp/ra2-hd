@@ -1,0 +1,182 @@
+{
+  "status": "USER_ACCEPTED_TECHNICAL_PASS_CONTINUING_REMAINING_M24",
+  "runtimeSourceCommit": "5e493d05b906b9c38426acfcc1de6046d93d1e8f",
+  "candidate": {
+    "schemaVersion": 1,
+    "revision": "desert-m2-4-continuous-road-geometry-r2-v5",
+    "sha256": "0f70cf2eb32888b8c99f10b1b568b89b540cb01c2d76eb89791d461ab85e8163"
+  },
+  "changedMembers": 20,
+  "newCoverageGroups": 0,
+  "changedGeometry": "WHOLE_MEMBER_ANALYTIC_PAINT_AND_CONTINUOUS_SLOPE_CURBS",
+  "nativeGeometryAndAlpha": "EXACT",
+  "counts": {
+    "allDensitySlotAlphaPreserved": 392,
+    "unchangedBodyRects": 216,
+    "unchangedOtherPayloads": 38,
+    "officialDesertMaps": 13
+  },
+  "native": {
+    "status": "PASS_MATCHED_NATIVE_2X_4X_ORIGINAL_AND_CROSS_THEATER_RELEASE",
+    "reports": [
+      {
+        "density": 2,
+        "report": ".artifacts/m2-4/desert-road-geometry-r2-20261019/native-after-2x-v5/report.json",
+        "sha256": "d459b90657e670c3eee2a9f83b5dad2a1de4caffe21d8f97a2647f3dbf453116",
+        "actualRoadAndSlopePlacements": 1001,
+        "encounteredMembers": 24,
+        "budget": {
+          "terrain": 92121700,
+          "environment": 10008080,
+          "baseline": 30715960,
+          "eager": 9731888,
+          "demand": 7421532,
+          "total": 149999160,
+          "limit": 536870912
+        },
+        "graphics": {
+          "output": [
+            1489,
+            1080
+          ],
+          "glError": 0,
+          "textures": 422,
+          "prepared": {
+            "bytes": 45156556,
+            "peakBytes": 45156556,
+            "pendingBytes": 0,
+            "hits": 2,
+            "misses": 18,
+            "shared": 0,
+            "evictions": 0,
+            "uncached": 0
+          }
+        },
+        "cameraMatchedToR1": ".artifacts/m2-4/desert-road-network-r1-20261019/native-after-4x-v3/report.json"
+      },
+      {
+        "density": 4,
+        "report": ".artifacts/m2-4/desert-road-geometry-r2-20261019/native-after-4x-v5/report.json",
+        "sha256": "ede90088a3f8a711e363120ef01f5c45eb3d94d14919ec6b49ee039c0ba8ff97",
+        "actualRoadAndSlopePlacements": 1001,
+        "encounteredMembers": 24,
+        "budget": {
+          "terrain": 356166244,
+          "environment": 35326048,
+          "baseline": 90904572,
+          "eager": 50566032,
+          "demand": 29750496,
+          "total": 562713392,
+          "limit": 1342177280
+        },
+        "graphics": {
+          "output": [
+            1489,
+            1080
+          ],
+          "glError": 0,
+          "textures": 469,
+          "prepared": {
+            "bytes": 108112788,
+            "peakBytes": 108112788,
+            "pendingBytes": 0,
+            "hits": 3,
+            "misses": 32,
+            "shared": 13,
+            "evictions": 0,
+            "uncached": 2
+          }
+        },
+        "cameraMatchedToR1": ".artifacts/m2-4/desert-road-network-r1-20261019/native-after-4x-v3/report.json"
+      }
+    ],
+    "originalControlReused": {
+      "file": ".artifacts/m2-4/desert-road-network-r1-20261019/native-original-v3/report.json",
+      "sha256": "653e0187713d7a0900d139ea32ceaa4ded39498d97b972cb14f6f022effa8257",
+      "reason": "Unchanged raw map, Original art, runtime renderer and identical camera route"
+    },
+    "rulesEvidenceReused": {
+      "file": ".artifacts/m2-4/desert-roads-batch78-20261019/native-unified-rules-v4/report.json",
+      "reason": "No rules, manifest eligibility, map bytes or runtime code changed"
+    },
+    "visualAcceptance": "PENDING",
+    "windows": "NOT_RUN",
+    "m24Complete": false
+  },
+  "review": {
+    "file": "/Users/Aone/Desktop/M2.4-Review-Desert-Road-Geometry-R2-20261019/M2.4-Desert-Road-Geometry-R2-Embedded.html",
+    "sha256": "c0433d5e41f39bb09aff67c014bdff2efa464197fda3b78756970d0f2fe85850",
+    "bytes": 29772962
+  },
+  "resourceHandoff": {
+    "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/resource-handoff-v5.json",
+    "sha256": "2c6cc8bf778b1aa6db7e204ed925a40e24bf1ed87cd2996687d8eeb6c824a492",
+    "files": 1721
+  },
+  "evidence": [
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/feedback.json",
+      "sha256": "c8a4214a0c6b57d5cb9cc308fa541509755e043f1b57276df6be74d3d1742a0b"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/internal-attempts.json",
+      "sha256": "c00bf23801b18b0f13b59380bb88fdd610938f47257b80349395423a8c659b32"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/export-and-preservation-v5.json",
+      "sha256": "c0a550d6457230bd28831f18f17f4e3545e63a0968758cade6acfc9840689836"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/independent-static-audit-v5.json",
+      "sha256": "bec7274be2b035311454ca9a49d29b379ae53b58d1bea44251628ac11107102d"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/geometry-models-v5.json",
+      "sha256": "c3f5b6e64b2694bc3b8f3d81181a212c9df4221e5d741e4c4e97fd64fc014970"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/native-suite-v5.json",
+      "sha256": "021292008eab8859b1f6ed4b453750653af375a9515a4827a03e007d601ef16b"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/active-stage-v5.json",
+      "sha256": "1a3c071979c3f1dc4795e5fa4382419713753844878f8454c984c23cc6a5d659"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/protected-path-audit-v5.json",
+      "sha256": "f18fa036c64260607d041f81048c6b2752246c22195096933ccc94d88526e5c5"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/review-v5/static-qa.json",
+      "sha256": "6984b690f10820f6e84be7c10ce7c74f77ac799561eb7101e97f539a5e64253b"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/resource-handoff-v5.json",
+      "sha256": "2c6cc8bf778b1aa6db7e204ed925a40e24bf1ed87cd2996687d8eeb6c824a492"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/desktop-delivery-v5.json",
+      "sha256": "ec3c9aeb93e8b16a5f1f4e459ac30bcca27af86721f41cfdeb9da830360f9f56"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/desktop-static-qa-v5.json",
+      "sha256": "6984b690f10820f6e84be7c10ce7c74f77ac799561eb7101e97f539a5e64253b"
+    }
+  ],
+  "reusedModeAdaptation": "Standard Sahara Mirage and original Megawealth stream retain tested standard credits, tech, alliances, construction and actual two-start cap; no rule changes in R2",
+  "remaining": {
+    "desertAuthoredGaps": 182,
+    "newurbanAuthoredGaps": 358,
+    "factionSourceHashCandidates": 69
+  },
+  "prepared": "UNCHANGED_CORE_INDEX_DIRECT_RGBA_TERRAIN",
+  "mainIntegrated": false,
+  "visualAcceptance": "ACCEPTED",
+  "windows": "NOT_RUN",
+  "perBatchMacPackageCreated": false,
+  "m24Complete": false,
+  "userAcceptance": {
+    "file": ".artifacts/m2-4/desert-road-geometry-r2-20261019/user-acceptance-20261019.json",
+    "sha256": "24bfd6e04996af31d62c2d250084121e4a484a1ce41800e87b13b08763d843d0"
+  }
+}

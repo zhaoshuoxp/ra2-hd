@@ -1,0 +1,253 @@
+{
+  "status": "ACCEPTED_DELIVERED_AND_ARCHIVED_LOCAL_MAIN",
+  "artifactRoot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/mind-control-final-20261005",
+  "runtimeSourceHead": "a6bc72ebeebf61fff1406a26d30fdc690c456564",
+  "predecessorRuntime": "1f2cdc64bdcec20d00755662eb7e1439f53b84c3",
+  "predecessorAcceptance": "ACCEPTED_USER_TEST_PASSED",
+  "colorRequirement": "ORIGINAL_FIXED_BLUE_CONTROLLED_INDICES_WITH_UNCHANGED_NATIVE_PALETTE",
+  "rootCauses": [
+    "Missing persistent victim status animation; selected control links have a separate lifetime.",
+    "Permanent status member is absent from the retail animation registry; read both global members when parsing art."
+  ],
+  "retailSource": ".artifacts/mind-control-final-20261005/retail-source.json",
+  "focusedTests": {
+    "tests": 9,
+    "assertions": 53,
+    "failures": 0,
+    "entryTypecheck": "PASS"
+  },
+  "unchangedWorkerTypecheck": "REUSED_UNCHANGED_WORKER_PASS",
+  "resourceAuthority": {
+    "status": "PASS_COMBINED_RESOURCE_AUTHORITY_AND_PREPARED_COMPATIBILITY",
+    "cEntries": 33,
+    "dRuntimeFiles": 140,
+    "uiEntries": 490,
+    "sourceFilesUnchanged": 4778,
+    "preparedRegistration": {
+      "type": "prepared-hd-registered",
+      "members": 459,
+      "pages": 1224,
+      "index": "3b7ef5279bf522a2c4070f4cb64a31d587fd25f5fc5f1fa9dee8a140c2c3a876"
+    },
+    "copiedActiveRegistration": "PASS_ACTIVE_COPIED_RESOURCE_REGISTRATION_AFTER_CLEANUP",
+    "parityProof": ".artifacts/mind-control-final-20261005/fixed-blue-native-art/package-parity.json",
+    "postCleanupProof": ".artifacts/mind-control-final-20261005/fixed-blue-native-art/post-cleanup-delivery-verification.json"
+  },
+  "nativeMac": [
+    {
+      "case": "copied-mac-4x-temperate",
+      "report": ".artifacts/mind-control-final-20261005/fixed-blue-native-art/copied-mac-4x-temperate/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "density": 4,
+      "snow": false,
+      "controllers": [
+        "YURI",
+        "YURIPR",
+        "MIND",
+        "YAPSYT"
+      ],
+      "palette": "ALL_DRAWN_INDICES_EQUAL_ORIGINAL_THEATER_PALETTE",
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 43126436,
+        "total": 185064664,
+        "limit": 1342177280
+      },
+      "normalLoopCount": -1,
+      "permanentLoopCount": -1,
+      "nativeRate": 5,
+      "permanentUniqueFrames": 8,
+      "errors": 0,
+      "actualCapturesReviewed": true
+    },
+    {
+      "case": "copied-mac-2x-snow",
+      "report": ".artifacts/mind-control-final-20261005/fixed-blue-native-art/copied-mac-2x-snow/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "density": 2,
+      "snow": true,
+      "controllers": [
+        "YURI",
+        "YURIPR",
+        "MIND",
+        "YAPSYT"
+      ],
+      "palette": "ALL_DRAWN_INDICES_EQUAL_ORIGINAL_THEATER_PALETTE",
+      "worldAllocation": {
+        "baseline": 22008264,
+        "eager": 28522916,
+        "demand": 16962084,
+        "total": 67493264,
+        "limit": 268435456
+      },
+      "normalLoopCount": -1,
+      "permanentLoopCount": -1,
+      "nativeRate": 5,
+      "permanentUniqueFrames": 8,
+      "errors": 0,
+      "actualCapturesReviewed": true
+    },
+    {
+      "case": "copied-mac-original",
+      "report": ".artifacts/mind-control-final-20261005/fixed-blue-native-art/copied-mac-original/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "density": "Original",
+      "snow": false,
+      "controllers": [
+        "YURI",
+        "YURIPR",
+        "MIND",
+        "YAPSYT"
+      ],
+      "palette": "ALL_DRAWN_INDICES_EQUAL_ORIGINAL_THEATER_PALETTE",
+      "worldAllocation": {
+        "baseline": 7372864,
+        "eager": 0,
+        "demand": 0,
+        "total": 7372864,
+        "limit": 1342177280
+      },
+      "normalLoopCount": -1,
+      "permanentLoopCount": -1,
+      "nativeRate": 5,
+      "permanentUniqueFrames": 8,
+      "errors": 0,
+      "actualCapturesReviewed": true
+    }
+  ],
+  "deliveries": [
+    {
+      "platform": "mac",
+      "archive": "/Users/Aone/Desktop/RA2-HD-Main-Control-Fix-20261005-a6bc72e-macOS-arm64.zip",
+      "bytes": 3280491262,
+      "sha256": "384796efa438d6bffd202ee6343e358da0d5373f791bf94c8537a6c7705fd15f",
+      "checkedEntries": 5487,
+      "extractedFolder": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-Control-Fix-20261005-a6bc72e-macOS-arm64",
+      "excludedUserData": [
+        "Review-Profile",
+        "UserData"
+      ]
+    },
+    {
+      "platform": "windows",
+      "archive": "/Users/Aone/Desktop/RA2-HD-Main-Control-Fix-20261005-a6bc72e-Windows-x64-portable.zip",
+      "bytes": 3304927030,
+      "sha256": "3b46aeadcd6106a61e98e31177d86ecdd6297aba3e29af98c3d83cf821b535fc",
+      "checkedEntries": 5265,
+      "extractedFolder": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-Control-Fix-20261005-a6bc72e-Windows-x64-portable",
+      "excludedUserData": [
+        "Review-Profile",
+        "UserData"
+      ]
+    }
+  ],
+  "macSignature": "PASS_STRICT_AD_HOC_BEFORE_AND_AFTER_CLEANUP",
+  "windowsHostChecks": "PASS_SEVEN_X64_PE_AND_EXACT_SHARED_PAYLOAD_RESOURCE_PARITY",
+  "nativeWindows": "NOT_RUN_NO_LOCAL_WINDOWS_RUNTIME",
+  "userAcceptance": "ACCEPTED_USER_TEST_PASSED",
+  "maintenance": {
+    "status": "COMPLETE",
+    "runs": [
+      {
+        "run": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/maintenance-control-final-v1",
+        "status": "COMPLETE",
+        "removedRoots": 101,
+        "logicalBytes": 321425206975,
+        "referencedVerifiedObjects": 5794,
+        "restorationSamples": 364,
+        "generatedProvenanceExceptions": 22,
+        "bundleSha256": "fdfdaf5f6ee5a225fa9c982c94025f3141718377021e63753c827a132f400e4e",
+        "preservationReceipt": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/maintenance-control-final-v1/preservation.json",
+        "verificationReceipt": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/maintenance-control-final-v1/verification.json",
+        "retirementReceipt": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/maintenance-control-final-v1/retirement.json",
+        "volumeBefore": {
+          "time": 1791267734.5093591,
+          "availableBytes": 914169094144,
+          "freeBytes": 914169094144,
+          "totalBytes": 1995218165760
+        },
+        "volumeAfter": {
+          "time": 1791268765.7570271,
+          "availableBytes": 1211935137792,
+          "freeBytes": 1211935137792,
+          "totalBytes": 1995218165760
+        }
+      },
+      {
+        "run": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/maintenance-control-final-v2",
+        "status": "COMPLETE",
+        "removedRoots": 7,
+        "logicalBytes": 28664420111,
+        "referencedVerifiedObjects": 5056,
+        "restorationSamples": 24,
+        "generatedProvenanceExceptions": 2,
+        "bundleSha256": "c0829be333400a1bbefbfb0ed6ab88553a5961203339fc38cdbc382547f467a7",
+        "preservationReceipt": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/maintenance-control-final-v2/preservation.json",
+        "verificationReceipt": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/maintenance-control-final-v2/verification.json",
+        "retirementReceipt": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/maintenance-control-final-v2/retirement.json",
+        "volumeBefore": {
+          "time": 1791268908.488608,
+          "availableBytes": 1194120896512,
+          "freeBytes": 1194120896512,
+          "totalBytes": 1995218165760
+        },
+        "volumeAfter": {
+          "time": 1791269176.873214,
+          "availableBytes": 1223158415360,
+          "freeBytes": 1223158415360,
+          "totalBytes": 1995218165760
+        }
+      }
+    ],
+    "removedRoots": 108,
+    "logicalBytes": 350089627086,
+    "distinctReferencedVerifiedObjects": 5803,
+    "restorationSamples": 388,
+    "heldRoots": 0,
+    "volumeAvailableChangeBytes": 308989321216,
+    "volumeDisclosure": "APFS sharing and background activity prevent treating this observed volume delta as exact private-block reclamation.",
+    "attributePolicy": "Original extended attributes are archived; restored files can receive OS-generated com.apple.provenance.",
+    "existingArchiveHistory": "PRESERVED_INCLUDING_CONSOLIDATED_2026_09_24_ARCHIVE",
+    "protected": [
+      "local main and .local",
+      "retail/import sources",
+      "final A6 deliveries",
+      "all Desktop ZIPs",
+      "exact rollback ZIPs",
+      "meaningful evidence and profiles"
+    ],
+    "trashAction": "NONE"
+  },
+  "diagnostics": {
+    "originalBaseline": "EXPECTED_MISSING_MARKER_DIAGNOSTIC_RETAINED",
+    "preliminaryOwnerTint": "SUPERSEDED_BY_EXPLICIT_USER_FIXED_BLUE_CORRECTION",
+    "c31FixedBlue": "NORMAL_CONTROL_CASES_PASS_PERMANENT_TIMING_SUPERSEDED_BY_A6",
+    "firstDevelopmentTower": "FAILED_FIXTURE_INTERACTION_RETAINED_AND_CORRECTED",
+    "firstArchiveVerification": "OS_GENERATED_PROVENANCE_COMPARISON_FAILED_RETAINED_AND_CORRECTED",
+    "initialSupplementPlan": "IMMUTABLE_RECEIPT_WRITE_REJECTED_RETAINED_THEN_COMPLETED_WITH_NEW_RECEIPT",
+    "copiedSourceAudit": "SOURCE_ONLY_HISTORICAL_FAMILY_EXPECTATION_FAILED_USE_ACTIVE_COPIED_REGISTRATION",
+    "entryTypecheckFirst": "TUPLE_INFERENCE_FAILURE_RETAINED_CORRECTED_FINAL_PASS"
+  },
+  "mainCheckpoint": ".artifacts/mind-control-final-20261005/final-main-state.json",
+  "publication": "NOT_REQUESTED_NOT_PUSHED",
+  "handoff": "Ring repair accepted; return to the main planning conversation for next scope. This execution conversation remains available for bounded corrections.",
+  "userAcceptanceDetails": {
+    "clientDate": "2026-10-06",
+    "clientTimezone": "America/Los_Angeles",
+    "scope": "Final fixed-blue controlled-unit ring repair in the delivered A6 runtime",
+    "source": "User confirmation in this conversation",
+    "statementEnglish": "The ring fix passed.",
+    "platform": "NOT_SPECIFIED",
+    "localNativeWindows": "NOT_RUN_NO_LOCAL_WINDOWS_RUNTIME",
+    "checkpoint": ".artifacts/work-and-repair-handoff-20261006/acceptance-main-state.json"
+  },
+  "subsequentWindowsUserAcceptance": {
+    "date": "2026-10-06",
+    "status": "PASS_REPORTED_BY_USER",
+    "platform": "Windows x64",
+    "runtime": "a6bc72ebeebf61fff1406a26d30fdc690c456564",
+    "source": "User supplied matching A6 Windows performance diagnostics; performance follow-up is a separate candidate",
+    "historicalLocalAutomatedWindows": "NOT_RUN_UNCHANGED"
+  }
+}

@@ -1,0 +1,4792 @@
+{
+  "schemaVersion": 1,
+  "status": "assessment-only-no-campaign-implementation",
+  "checkedBaseline": {
+    "baseline": "26921845bc6ff2cc151e1ca9f6f8fd2d5ed587f4",
+    "archives": [
+      {
+        "name": "ra2.mix",
+        "bytes": 281888480,
+        "sha256": "896a8b64f9f1bb8ad5e0bc64fc0b8ea8c84112494761ea1a43478d10c5ef9914"
+      },
+      {
+        "name": "language.mix",
+        "bytes": 52913656,
+        "sha256": "870c3bcc596e8690c55077a4c651f88d0dbc35f2a786c6c4891df8ffdb9ce192"
+      },
+      {
+        "name": "multi.mix",
+        "bytes": 18666588,
+        "sha256": "c040bcede176677d0faba2f868be6d527ffa2d47e0fff2e048025c0aea629cfc"
+      },
+      {
+        "name": "maps01.mix",
+        "bytes": 3823604,
+        "sha256": "b9093c9ef7efc1d24c6259196fbe90c8b78a15d0af27c93c12e1c755e5196d74"
+      },
+      {
+        "name": "maps02.mix",
+        "bytes": 3170324,
+        "sha256": "8ff61284f726a67760563c7a278c9034ff44baa5ca86a6790eddeb273301b11f"
+      }
+    ]
+  },
+  "inventorySha256": "15d2a2dedba4fb69c9417bae57d8ed3fcb9ae233b790fb17e0a2447c76d0e780",
+  "method": {
+    "candidateCount": 25,
+    "candidateMeaning": "Previously probed filenames, not exhaustive archive name enumeration or verified missions",
+    "rawArityChecks": "All 25 stored candidates: declared action/event counts and exact token consumption checked without dropping unknown IDs.",
+    "oldInventoryUnchanged": true,
+    "factoryActions": 49,
+    "factoryEvents": 50,
+    "supportedMeaning": "Implemented means a handler path exists with inspected behavior; retail semantics and full mission remain unverified.",
+    "scriptOpcodeNames": "Unknown names intentionally null, not guessed from TS or Yuri opcode lists."
+  },
+  "catalogs": [
+    {
+      "name": "battle.ini",
+      "source": "ra2.mix/local.mix",
+      "memberId": 2291948337,
+      "bytes": 4054,
+      "sha256": "a5752a8d49e1c3823fe01a55e0057f91f2996d8b4a78804f197251a79b552a1d",
+      "occurrences": [
+        {
+          "source": "ra2.mix/local.mix",
+          "sha256": "a5752a8d49e1c3823fe01a55e0057f91f2996d8b4a78804f197251a79b552a1d"
+        }
+      ]
+    },
+    {
+      "name": "mission.ini",
+      "source": "ra2.mix/local.mix",
+      "memberId": 2323129159,
+      "bytes": 9756,
+      "sha256": "49eb674e46058d67a08e0cf4ba31c99b1948d3d2072b10beced873f62226c54e",
+      "occurrences": [
+        {
+          "source": "ra2.mix/local.mix",
+          "sha256": "49eb674e46058d67a08e0cf4ba31c99b1948d3d2072b10beced873f62226c54e"
+        }
+      ]
+    },
+    {
+      "name": "missions.pkt",
+      "source": "ra2.mix/local.mix",
+      "memberId": 4232765484,
+      "bytes": 15979,
+      "sha256": "670f6c1baa2196ee649987375e255ba386da8b424671a3271c5071868d7e0a85",
+      "occurrences": [
+        {
+          "source": "ra2.mix/local.mix",
+          "sha256": "670f6c1baa2196ee649987375e255ba386da8b424671a3271c5071868d7e0a85"
+        }
+      ]
+    },
+    {
+      "name": "mapsel.ini",
+      "source": "ra2.mix/local.mix",
+      "memberId": 492132107,
+      "bytes": 7875,
+      "sha256": "f4bcbb678d182c35a4331d69c92150a719d73fc0c95fae36cc52e65d74923982",
+      "occurrences": [
+        {
+          "source": "ra2.mix/local.mix",
+          "sha256": "f4bcbb678d182c35a4331d69c92150a719d73fc0c95fae36cc52e65d74923982"
+        }
+      ]
+    }
+  ],
+  "missionSelection": {
+    "battle.ini": {
+      "ALL1": "all01t.map",
+      "SOV1": "sov01t.map",
+      "ALL02": "all02s.map",
+      "ALL03": "all03u.map",
+      "ALL04": "all04u.map",
+      "ALL05": "all05s.map",
+      "ALL06": "all06u.map",
+      "ALL07": "all07t.map",
+      "ALL08": "all08u.map",
+      "ALL09": "all09t.map",
+      "ALL10": "all10s.map",
+      "ALL11": "all11t.map",
+      "ALL12": "all12s.map",
+      "SOV02": "sov02t.map",
+      "SOV03": "sov03u.map",
+      "SOV04": "sov04s.map",
+      "SOV05": "sov05u.map",
+      "SOV06": "sov06t.map",
+      "SOV07": "sov07s.map",
+      "SOV08": "sov08u.map",
+      "SOV09": "sov09u.map",
+      "SOV10": "sov10t.map",
+      "SOV11": "sov11s.map",
+      "SOV12": "sov12s.map"
+    },
+    "mapsel.ini": {
+      "ALL01": "all01t.map",
+      "ALL02": "all02s.map",
+      "ALL03": "all03u.map",
+      "ALL04": "all04u.map",
+      "ALL05": "all05s.map",
+      "ALL06": "all06u.map",
+      "ALL07": "all07t.map",
+      "ALL08": "all08u.map",
+      "ALL09": "all09t.map",
+      "ALL10": "all10s.map",
+      "ALL11": "all11t.map",
+      "ALL12": "all12s.map",
+      "SOV01": "sov01t.map",
+      "SOV02": "sov02t.map",
+      "SOV03": "sov03u.map",
+      "SOV04": "sov04s.map",
+      "SOV05": "sov05u.map",
+      "SOV06": "sov06t.map",
+      "SOV07": "sov07s.map",
+      "SOV08": "sov08u.map",
+      "SOV09": "sov09u.map",
+      "SOV10": "sov10t.map",
+      "SOV11": "sov11s.map",
+      "SOV12": "sov12s.map"
+    }
+  },
+  "alternateMap": {
+    "selected": "sov09u.map",
+    "extraUnselectedCandidate": "sov09t.map",
+    "extraStatus": "Different content; no selection/progression/mission.ini entry found. Provenance and purpose unverified; do not present as mission 25.",
+    "identities": [
+      {
+        "name": "sov09t.map",
+        "source": "maps02.mix",
+        "memberId": 1134553671,
+        "bytes": 110638,
+        "sha256": "e444665c9afec8ffa2528d4e10641739f8a7c16921522b91dba3520cacd71041",
+        "occurrences": [
+          {
+            "source": "maps02.mix",
+            "sha256": "e444665c9afec8ffa2528d4e10641739f8a7c16921522b91dba3520cacd71041"
+          }
+        ],
+        "counts": {
+          "Triggers": 16,
+          "Events": 16,
+          "Actions": 16,
+          "Tags": 14,
+          "TeamTypes": 29,
+          "ScriptTypes": 15,
+          "TaskForces": 8,
+          "Waypoints": 34,
+          "Houses": 7,
+          "VariableNames": 7,
+          "Structures": 50,
+          "Units": 6,
+          "Infantry": 14,
+          "Aircraft": 0,
+          "CellTags": 6
+        },
+        "missingActions": [
+          4,
+          5,
+          80
+        ],
+        "missingEvents": [
+          4
+        ]
+      },
+      {
+        "name": "sov09u.map",
+        "source": "maps02.mix",
+        "memberId": 3857244659,
+        "bytes": 105691,
+        "sha256": "ef2dd5c5280d20f5759c02cebf860111280dc0f091c322f21b42eeae6b53c8b6",
+        "occurrences": [
+          {
+            "source": "maps02.mix",
+            "sha256": "ef2dd5c5280d20f5759c02cebf860111280dc0f091c322f21b42eeae6b53c8b6"
+          }
+        ],
+        "counts": {
+          "Triggers": 55,
+          "Events": 55,
+          "Actions": 55,
+          "Tags": 52,
+          "TeamTypes": 26,
+          "ScriptTypes": 22,
+          "TaskForces": 19,
+          "Waypoints": 81,
+          "Houses": 13,
+          "VariableNames": 0,
+          "Structures": 101,
+          "Units": 53,
+          "Infantry": 56,
+          "Aircraft": 0,
+          "CellTags": 35
+        },
+        "missingActions": [
+          1,
+          2,
+          4,
+          6,
+          37,
+          46,
+          47,
+          48,
+          80,
+          100,
+          114
+        ],
+        "missingEvents": []
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "name": "all01t.map",
+      "source": "maps01.mix",
+      "memberId": 3644323249,
+      "bytes": 146240,
+      "sha256": "ad64c9293a8bccb85c38f5871a974ed9c09b8b5da11bb346e990423bf625c79c",
+      "occurrences": [
+        {
+          "source": "maps01.mix",
+          "sha256": "ad64c9293a8bccb85c38f5871a974ed9c09b8b5da11bb346e990423bf625c79c"
+        },
+        {
+          "source": "maps02.mix",
+          "sha256": "ad64c9293a8bccb85c38f5871a974ed9c09b8b5da11bb346e990423bf625c79c"
+        }
+      ],
+      "counts": {
+        "Triggers": 130,
+        "Events": 130,
+        "Actions": 130,
+        "Tags": 128,
+        "TeamTypes": 49,
+        "ScriptTypes": 38,
+        "TaskForces": 29,
+        "Waypoints": 101,
+        "Houses": 8,
+        "VariableNames": 2,
+        "Structures": 190,
+        "Units": 19,
+        "Infantry": 40,
+        "Aircraft": 0,
+        "CellTags": 180
+      },
+      "missingActions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        46,
+        47,
+        48,
+        74,
+        80,
+        100,
+        104,
+        114,
+        115
+      ],
+      "missingEvents": [
+        4,
+        33
+      ]
+    },
+    {
+      "name": "sov01t.map",
+      "source": "maps01.mix",
+      "memberId": 2423976434,
+      "bytes": 184260,
+      "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f",
+      "occurrences": [
+        {
+          "source": "maps01.mix",
+          "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f"
+        },
+        {
+          "source": "maps02.mix",
+          "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f"
+        }
+      ],
+      "counts": {
+        "Triggers": 132,
+        "Events": 132,
+        "Actions": 132,
+        "Tags": 132,
+        "TeamTypes": 44,
+        "ScriptTypes": 31,
+        "TaskForces": 29,
+        "Waypoints": 101,
+        "Houses": 8,
+        "VariableNames": 8,
+        "Structures": 161,
+        "Units": 78,
+        "Infantry": 60,
+        "Aircraft": 0,
+        "CellTags": 158
+      },
+      "missingActions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        38,
+        46,
+        47,
+        48,
+        74,
+        80,
+        88,
+        114,
+        115
+      ],
+      "missingEvents": [
+        4
+      ]
+    }
+  ],
+  "teamLinks": [
+    {
+      "map": "all01t.map",
+      "links": [
+        {
+          "team": "0A67F6CC",
+          "script": "07A92B3C",
+          "taskForce": "0A67F34C"
+        },
+        {
+          "team": "0967E2CC",
+          "script": "0967EDBC",
+          "taskForce": "0A6C143C"
+        },
+        {
+          "team": "0967EA7C",
+          "script": "09678DBC",
+          "taskForce": "0A6C143C"
+        },
+        {
+          "team": "0AC446AC",
+          "script": "0AC4443C",
+          "taskForce": "09C0B6CC"
+        },
+        {
+          "team": "097531FC",
+          "script": "07F232BC",
+          "taskForce": "07407B6C"
+        },
+        {
+          "team": "09752C8C",
+          "script": "07F2447C",
+          "taskForce": "07407B6C"
+        },
+        {
+          "team": "094F68EC",
+          "script": "09680DBC",
+          "taskForce": "079B84CC"
+        },
+        {
+          "team": "0A7475CC",
+          "script": "0A6DADBC",
+          "taskForce": "08A645E0"
+        },
+        {
+          "team": "0AC42B7C",
+          "script": "0AC4290C",
+          "taskForce": "09C0B6CC"
+        },
+        {
+          "team": "09B091FC",
+          "script": "083157DC",
+          "taskForce": "09B08CAC"
+        },
+        {
+          "team": "07B346BC",
+          "script": "07B36BBC",
+          "taskForce": "07B345AC"
+        },
+        {
+          "team": "09A92A9C",
+          "script": "07C010BC",
+          "taskForce": "07C00A7C"
+        },
+        {
+          "team": "09A925EC",
+          "script": "07C010BC",
+          "taskForce": "07C00A7C"
+        },
+        {
+          "team": "0831459C",
+          "script": "083157DC",
+          "taskForce": "0B3E458C"
+        },
+        {
+          "team": "09A9227C",
+          "script": "07C010BC",
+          "taskForce": "07C00A7C"
+        },
+        {
+          "team": "0B3C142C",
+          "script": "0A4E2C8C",
+          "taskForce": "0B3C3F1C"
+        },
+        {
+          "team": "0A71FB7C",
+          "script": "0B3C2AFC",
+          "taskForce": "0B3DC2DC"
+        },
+        {
+          "team": "0A68093C",
+          "script": "0A6806CC",
+          "taskForce": "07A1066C"
+        },
+        {
+          "team": "0AB436CC",
+          "script": "0AC7832C",
+          "taskForce": "08629CDC"
+        },
+        {
+          "team": "0AB4321C",
+          "script": "0AC7AB7C",
+          "taskForce": "08629CDC"
+        },
+        {
+          "team": "095F211C",
+          "script": "095F32FC",
+          "taskForce": "095F183C"
+        },
+        {
+          "team": "09EF2C8C",
+          "script": "09EF369C",
+          "taskForce": "07A626BC"
+        },
+        {
+          "team": "0AE2849C",
+          "script": "074E4DBC",
+          "taskForce": "0AE2838C"
+        },
+        {
+          "team": "0B48383C",
+          "script": "07CA645C",
+          "taskForce": "0B4834BC"
+        },
+        {
+          "team": "0BF26C8C",
+          "script": "0A64854C",
+          "taskForce": "0A6494EC"
+        },
+        {
+          "team": "0BF267DC",
+          "script": "0A643DBC",
+          "taskForce": "0A6494EC"
+        },
+        {
+          "team": "0AB088EC",
+          "script": "0A630A4C",
+          "taskForce": "0A62409C"
+        },
+        {
+          "team": "0AB0843C",
+          "script": "0A63A5FC",
+          "taskForce": "0A62409C"
+        },
+        {
+          "team": "0AB17EFC",
+          "script": "0A63B93C",
+          "taskForce": "0A62409C"
+        },
+        {
+          "team": "0B48A3FC",
+          "script": "07CA645C",
+          "taskForce": "0B48AC1C"
+        },
+        {
+          "team": "0B48BC0C",
+          "script": "07CA645C",
+          "taskForce": "0B48D07C"
+        },
+        {
+          "team": "095B322C",
+          "script": "0B7C332C",
+          "taskForce": "0AE2838C"
+        },
+        {
+          "team": "0A71B33C",
+          "script": "0829A32C",
+          "taskForce": "0B3DC2DC"
+        },
+        {
+          "team": "0A71B20C",
+          "script": "09B8843C",
+          "taskForce": "0B3DC2DC"
+        },
+        {
+          "team": "09E7238C",
+          "script": "0A64854C",
+          "taskForce": "09E73ACC"
+        },
+        {
+          "team": "0BF2C30C",
+          "script": "0A64854C",
+          "taskForce": "0AEF82AC"
+        },
+        {
+          "team": "0B8AC05C",
+          "script": "0A643DBC",
+          "taskForce": "09E73ACC"
+        },
+        {
+          "team": "0BF28DCC",
+          "script": "0A643DBC",
+          "taskForce": "0AEF82AC"
+        },
+        {
+          "team": "0B533EFC",
+          "script": "0B533C8C",
+          "taskForce": "095F183C"
+        },
+        {
+          "team": "09F9C27C",
+          "script": "09F9E7EC",
+          "taskForce": "09F9EA5C"
+        },
+        {
+          "team": "09F9E4BC",
+          "script": "09F9E24C",
+          "taskForce": "09F9EA5C"
+        },
+        {
+          "team": "094806FC",
+          "script": "0948E7CC",
+          "taskForce": "0AE2838C"
+        },
+        {
+          "team": "09F0AEFC",
+          "script": "0A0D92BC",
+          "taskForce": "09F0F19C"
+        },
+        {
+          "team": "0AC8730C",
+          "script": "0837269C",
+          "taskForce": "09F9EA5C"
+        },
+        {
+          "team": "0AB147DC",
+          "script": "0A63A5FC",
+          "taskForce": "0A62409C"
+        },
+        {
+          "team": "0A967EFC",
+          "script": "0837269C",
+          "taskForce": "0B3E458C"
+        },
+        {
+          "team": "0A08512C",
+          "script": "0A643DBC",
+          "taskForce": "0A081E8C"
+        },
+        {
+          "team": "0AB4920C",
+          "script": "0AC82DBC",
+          "taskForce": "0AA1E09C"
+        },
+        {
+          "team": "0AB4AB7C",
+          "script": "0AB4A90C",
+          "taskForce": "0AA1E09C"
+        }
+      ]
+    },
+    {
+      "map": "sov01t.map",
+      "links": [
+        {
+          "team": "09CCDC8C",
+          "script": "03D7B0A0",
+          "taskForce": "09CCD90C"
+        },
+        {
+          "team": "08608F00",
+          "script": "0AC98490-G",
+          "taskForce": "08E731E0"
+        },
+        {
+          "team": "08C774E0",
+          "script": "08C77280",
+          "taskForce": "085F1810"
+        },
+        {
+          "team": "0A0A0B40",
+          "script": "0A0A8630",
+          "taskForce": "0A0A10E0"
+        },
+        {
+          "team": "07ABE1C0",
+          "script": "08BD9DC0",
+          "taskForce": "07ABCD10"
+        },
+        {
+          "team": "08BD9CA0",
+          "script": "08BD9A40",
+          "taskForce": "09CF0CAC"
+        },
+        {
+          "team": "09C1DEFC",
+          "script": "09C0467C",
+          "taskForce": "09C1DB7C"
+        },
+        {
+          "team": "086D6E10",
+          "script": "09C0467C",
+          "taskForce": "08AE42E0"
+        },
+        {
+          "team": "085E9D10",
+          "script": "085E9AB0",
+          "taskForce": "085F1810"
+        },
+        {
+          "team": "09CF00EC",
+          "script": "09CFFDBC",
+          "taskForce": "09CF0CAC"
+        },
+        {
+          "team": "0BDAE1FC",
+          "script": "093DADBC",
+          "taskForce": "09CCD90C"
+        },
+        {
+          "team": "08E14F00",
+          "script": "093DADBC",
+          "taskForce": "09CCD90C"
+        },
+        {
+          "team": "08E14D10",
+          "script": "093DADBC",
+          "taskForce": "09CCD90C"
+        },
+        {
+          "team": "09C0E2EC",
+          "script": "09C0467C",
+          "taskForce": "09C0E1DC"
+        },
+        {
+          "team": "079B6624",
+          "script": "09C0467C",
+          "taskForce": "0A328380"
+        },
+        {
+          "team": "07ADC0AC",
+          "script": "09C0467C",
+          "taskForce": "07ADAF1C"
+        },
+        {
+          "team": "093DA36C",
+          "script": "093CEA4C",
+          "taskForce": "0B67690C"
+        },
+        {
+          "team": "08E7DA4C",
+          "script": "093CEA4C",
+          "taskForce": "07B4932C"
+        },
+        {
+          "team": "09BDD6FC",
+          "script": "07A9FA4C",
+          "taskForce": "041731DC"
+        },
+        {
+          "team": "0A7A16FC",
+          "script": "09CC8C8C",
+          "taskForce": "08E731E0"
+        },
+        {
+          "team": "0815EB2C",
+          "script": "0815B04C",
+          "taskForce": "0815EA1C"
+        },
+        {
+          "team": "0A0E182C",
+          "script": "0A0E15BC",
+          "taskForce": "08E731E0"
+        },
+        {
+          "team": "0A0E112C",
+          "script": "0A0E2BEC",
+          "taskForce": "08E731E0"
+        },
+        {
+          "team": "0807BC2C",
+          "script": "0A0E15BC",
+          "taskForce": "085F1810"
+        },
+        {
+          "team": "0A0FD23C",
+          "script": "09CC8C8C",
+          "taskForce": "0A0FD12C"
+        },
+        {
+          "team": "080BB0BC",
+          "script": "080C20CC",
+          "taskForce": "07ABCD10"
+        },
+        {
+          "team": "080C747C",
+          "script": "080C40DC",
+          "taskForce": "07ABCD10"
+        },
+        {
+          "team": "079DF5FC",
+          "script": "08C77280",
+          "taskForce": "07ABCD10"
+        },
+        {
+          "team": "0A0C1A7C",
+          "script": "0A0C6DBC",
+          "taskForce": "0A0C196C"
+        },
+        {
+          "team": "09D3357C",
+          "script": "07902DBC",
+          "taskForce": "078FC35C"
+        },
+        {
+          "team": "09D32EFC",
+          "script": "0790439C",
+          "taskForce": "07902CAC"
+        },
+        {
+          "team": "09D32A4C",
+          "script": "07900C3C",
+          "taskForce": "07902CAC"
+        },
+        {
+          "team": "09D326AC",
+          "script": "079063AC",
+          "taskForce": "07902CAC"
+        },
+        {
+          "team": "09D3230C",
+          "script": "07903DBC",
+          "taskForce": "07902CAC"
+        },
+        {
+          "team": "08AAD22C",
+          "script": "08AB50FC",
+          "taskForce": "0AE0A43C"
+        },
+        {
+          "team": "08AB5E3C",
+          "script": "08AB50FC",
+          "taskForce": "0AE0A1FC"
+        },
+        {
+          "team": "08AB2BFC",
+          "script": "08AB50FC",
+          "taskForce": "0AE0BDEC"
+        },
+        {
+          "team": "0AA795CC",
+          "script": "08545DBC",
+          "taskForce": "081BDD7C"
+        },
+        {
+          "team": "08263EFC",
+          "script": "07A9FA4C",
+          "taskForce": "08263DEC"
+        },
+        {
+          "team": "0836F59C",
+          "script": "07A47C5C",
+          "taskForce": "0836F48C"
+        },
+        {
+          "team": "0826D22C",
+          "script": "08208DBC",
+          "taskForce": "0836F48C"
+        },
+        {
+          "team": "084311CC",
+          "script": "08430B8C",
+          "taskForce": "084310BC"
+        },
+        {
+          "team": "0AEE832C",
+          "script": "0831E90C",
+          "taskForce": "0C591C7C"
+        },
+        {
+          "team": "0A94465C",
+          "script": "07A9FA4C",
+          "taskForce": "0AE3608C"
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "kind": "action",
+      "id": 1,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler",
+        "mission-result-policy"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "075F22EC:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "0A301C50:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 2,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler",
+        "mission-result-policy"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "08B9BC5C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "0A115A1C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 3,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "08F8484C:2"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 2,
+          "entries": [
+            "08F7F100:1",
+            "0BB24A9C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 4,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler",
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 29,
+          "entries": [
+            "07A9578C:0",
+            "07A9578C:1",
+            "07A9578C:2",
+            "07A9578C:3",
+            "07A707CC:0",
+            "07A707CC:1",
+            "07428AAC:0",
+            "0A19262C:0",
+            "0A19262C:1",
+            "0A19262C:2",
+            "0A19262C:3",
+            "0A19262C:4",
+            "0A19262C:5",
+            "0A19262C:6",
+            "0A19262C:7",
+            "0A19262C:8",
+            "0A19262C:9",
+            "0A19262C:10",
+            "096564CC:8",
+            "094DE03C:1",
+            "0B52B86C:1",
+            "0B52B86C:2",
+            "0B52B86C:3",
+            "0B52B86C:4",
+            "07B9D89C:0",
+            "0A6BB12C:0",
+            "0A97C4BC:0",
+            "0860EA2C:0",
+            "0860E73C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 37,
+          "entries": [
+            "09396C40:8",
+            "0822190C:0",
+            "0A0FAE5C:3",
+            "083DA7AC:0",
+            "083DA7AC:1",
+            "083DA7AC:2",
+            "083DA7AC:3",
+            "083DA7AC:4",
+            "083DA7AC:5",
+            "083DA7AC:6",
+            "083DA7AC:7",
+            "083DA7AC:8",
+            "083DA7AC:9",
+            "083D3DEC:0",
+            "083D3DEC:1",
+            "083D3DEC:2",
+            "083D3DEC:3",
+            "083D3DEC:4",
+            "083D3DEC:5",
+            "083D3DEC:6",
+            "083D3DEC:7",
+            "083D3DEC:8",
+            "083D3DEC:9",
+            "084634FC:0",
+            "084634FC:1",
+            "084634FC:2",
+            "084634FC:3",
+            "084634FC:4",
+            "084634FC:5",
+            "084634FC:6",
+            "084634FC:7",
+            "084634FC:8",
+            "084634FC:9",
+            "082A851C:1",
+            "082A851C:2",
+            "082A851C:3",
+            "0C67682C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 5,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler",
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 2,
+          "entries": [
+            "0B52B86C:0",
+            "0A8DD70C:2"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 3,
+          "entries": [
+            "09396C40:5",
+            "09396C40:6",
+            "09396C40:7"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 7,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler",
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 25,
+          "entries": [
+            "0A08DB4C:0",
+            "0799590C:0",
+            "0799590C:3",
+            "09BF43EC:1",
+            "09BF43EC:2",
+            "07BA8C2C:0",
+            "07BA8C2C:1",
+            "07BA8C2C:3",
+            "09C1A03C:2",
+            "09C1A03C:3",
+            "09C2803C:5",
+            "09C2803C:6",
+            "09C2E03C:2",
+            "09C2E03C:3",
+            "09BC303C:0",
+            "09BC303C:1",
+            "09E7118C:0",
+            "09E7118C:1",
+            "0B30B03C:0",
+            "0B8E6ADC:1",
+            "0B8E616C:1",
+            "0A61DF3C:0",
+            "0A63D7EC:0",
+            "0A63D1EC:0",
+            "0A63FDBC:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 7,
+          "entries": [
+            "08ECE880:0",
+            "08ECE880:1",
+            "08ECE880:2",
+            "0810671C:0",
+            "08DF42C0:7",
+            "08DF42C0:8",
+            "0C60B51C:4"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 11,
+      "name": "TextTrigger",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "implemented",
+      "semanticConfidence": "bounded-CPU-probe-and-source",
+      "evidence": "Dispatches label event; isolated dispatch probe passed.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Resolve mission labels and exercise HUD objective timing.",
+      "source": {
+        "path": "src/game/trigger/executor/TextTriggerExecutor.ts",
+        "sha256": "de0c275f1603e42295cd1aa293e9b3340f05b5b20b4da7c235c9e7a62d2dbc21"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 33,
+          "entries": [
+            "076E465C:0",
+            "076F572C:0",
+            "0A96A5EC:0",
+            "0A96BE5C:0",
+            "0874458C:1",
+            "0874286C:0",
+            "08CD8C30:2",
+            "08A6E100:0",
+            "0799590C:2",
+            "094D93DC:0",
+            "08B9B62C:2",
+            "072BF2D0:2",
+            "0CD4066C:1",
+            "08CDD540:2",
+            "07B92F3C:1",
+            "09F0151C:0",
+            "07B3327C:2",
+            "07B376BC:1",
+            "07478F3C:1",
+            "07BB828C:3",
+            "0A95E10C:1",
+            "07D0BE1C:1",
+            "0A8C3E2C:1",
+            "0B4155CC:0",
+            "0A8DD70C:1",
+            "09C1A03C:5",
+            "09C2803C:3",
+            "09C2E03C:4",
+            "09BC303C:4",
+            "09E7118C:4",
+            "0B532E5C:1",
+            "09D2BCFC:1",
+            "0BFD7F3C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 25,
+          "entries": [
+            "080F340C:0",
+            "080F4F3C:0",
+            "079D64BC:3",
+            "0934F880:2",
+            "079A71F0:3",
+            "0A2F5090:2",
+            "09396C40:4",
+            "08DE7A00:1",
+            "07A82BE0:0",
+            "0AFA0F34:2",
+            "0AFA0274:2",
+            "0A0F065C:2",
+            "0A0FAE5C:0",
+            "0B5B7F3C:1",
+            "0AE0928C:1",
+            "083573FC:2",
+            "082836EC:2",
+            "082384AC:1",
+            "0839AD6C:2",
+            "0839A15C:2",
+            "0824A18C:2",
+            "084B3ACC:2",
+            "084B336C:2",
+            "0C72AAFC:1",
+            "0C72A41C:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 12,
+      "name": "DestroyTrigger",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "implemented",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Removes trigger by ID; source inspected.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Destroy a linked/repeating trigger and verify future evaluation stops.",
+      "source": {
+        "path": "src/game/trigger/executor/DestroyTriggerExecutor.ts",
+        "sha256": "88f86e5a847f0e91c303ad87e38bfb3f40e7f66b06920c64b4277713243c6a5d"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "08F8484C:4"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 7,
+          "entries": [
+            "0A0FC9DC:0",
+            "093679E0:2",
+            "093679E0:3",
+            "0A0D76DC:1",
+            "0A0D76DC:2",
+            "07ED0F3C:0",
+            "07ED040C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 14,
+      "name": "ChangeHouse",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Reads params[1] from action object; produces NaN. Also resolves countries, not campaign houses.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Correct argument shape and verify tagged ownership transfer.",
+      "source": {
+        "path": "src/game/trigger/executor/ChangeHouseExecutor.ts",
+        "sha256": "f67482b2eac31b2eee720751e7da02e182a116b681e7de450fa20c7c5f4e0263"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 7,
+          "entries": [
+            "0871A32C:0",
+            "0965E07C:0",
+            "073FE71C:0",
+            "0B22DE4C:0",
+            "0BAFB15C:0",
+            "03ED228C:0",
+            "0B3C53BC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 17,
+      "name": "RevealAroundWaypoint",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Reveals around waypoint for all combatants; campaign recipient semantics unverified.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Check recipient house, radius and fog at map waypoint.",
+      "source": {
+        "path": "src/game/trigger/executor/RevealAroundWaypointExecutor.ts",
+        "sha256": "13a21c0b00ee7c1eaaab142a1b0add242fc080cab8daf1caaadbf00322527e23"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 27,
+          "entries": [
+            "07A949DC:0",
+            "07A949DC:2",
+            "07A949DC:3",
+            "07A949DC:5",
+            "0874458C:4",
+            "09E42C7C:1",
+            "096564CC:1",
+            "096564CC:2",
+            "096564CC:3",
+            "096564CC:4",
+            "096564CC:5",
+            "08CD8C30:4",
+            "0B9188AC:2",
+            "0B9188AC:3",
+            "0B9188AC:4",
+            "0949CD5C:2",
+            "094D93DC:5",
+            "07BC399C:0",
+            "0746D0CC:1",
+            "07B3327C:0",
+            "07BB828C:0",
+            "07BBA03C:0",
+            "09C1A03C:0",
+            "09C2803C:1",
+            "09C2E03C:0",
+            "0B3C062C:4",
+            "0B3C062C:5"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 11,
+          "entries": [
+            "09367F40:2",
+            "093679E0:1",
+            "0934F880:0",
+            "079A71F0:0",
+            "08DE7A00:5",
+            "0A0FAE5C:1",
+            "080CDF3C:0",
+            "0AE0928C:0",
+            "0C60B51C:0",
+            "0834F3BC:0",
+            "0829F1FC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 19,
+      "name": "PlaySoundFx",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "unverified",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Dispatches sound identifier; mission ID-to-audio mapping not validated.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Resolve indexed sound and verify playback once.",
+      "source": {
+        "path": "src/game/trigger/executor/PlaySoundFxExecutor.ts",
+        "sha256": "5296412ba741f1b68a1460aff60b55c3be8daf09c18498e2d9d1f671b38ff522"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 39,
+          "entries": [
+            "07C3C37C:0",
+            "076E465C:1",
+            "076F572C:2",
+            "0A96A5EC:1",
+            "0A96BE5C:1",
+            "0874458C:3",
+            "0874286C:2",
+            "09E42C7C:2",
+            "0965E07C:1",
+            "08CD8C30:1",
+            "08A6E100:2",
+            "0799590C:1",
+            "09BF43EC:0",
+            "094D93DC:1",
+            "0978603C:0",
+            "08B9B62C:3",
+            "0CD4066C:2",
+            "08CDD540:3",
+            "07B92F3C:0",
+            "07BC399C:1",
+            "07B3327C:1",
+            "07B376BC:0",
+            "07478F3C:0",
+            "07BB828C:2",
+            "0B53F83C:3",
+            "09D36F3C:3",
+            "0803EA6C:0",
+            "0A95E10C:0",
+            "07D0BE1C:0",
+            "0A8C3E2C:0",
+            "0B4155CC:1",
+            "0A8DD70C:0",
+            "09C1A03C:6",
+            "09C2803C:2",
+            "09C2E03C:6",
+            "09BC303C:2",
+            "09E7118C:3",
+            "0B532E5C:0",
+            "09D2BCFC:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 33,
+          "entries": [
+            "09367F40:6",
+            "079D64BC:2",
+            "0934F880:5",
+            "079A71F0:2",
+            "0A2F5090:0",
+            "09396C40:2",
+            "08DE7A00:0",
+            "0AFA0F34:0",
+            "0AFA0274:0",
+            "080CDF3C:2",
+            "0B5B7F3C:0",
+            "0AE0928C:2",
+            "082DC72C:0",
+            "082DC72C:4",
+            "0A0DE2CC:0",
+            "0A0DE81C:0",
+            "0A0DE81C:1",
+            "0A0DE59C:0",
+            "08449D1C:0",
+            "0C60B51C:1",
+            "083573FC:0",
+            "082836EC:0",
+            "0834F3BC:1",
+            "0829F1FC:4",
+            "082384AC:2",
+            "0839AD6C:1",
+            "0839A15C:1",
+            "0824A18C:1",
+            "084B3ACC:1",
+            "084B336C:0",
+            "07EE0D9C:0",
+            "0C72AAFC:0",
+            "0C72A41C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 21,
+      "name": "PlaySpeech",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "unverified",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Dispatches EVA identifier; campaign speech mapping not validated.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Resolve speech and verify order against objective.",
+      "source": {
+        "path": "src/game/trigger/executor/PlaySpeechExecutor.ts",
+        "sha256": "f85cc2417cfa86ded7cc0f512cbaeb4f04d856e9b3c15d01d4f0107008892c96"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 18,
+          "entries": [
+            "076E465C:4",
+            "0782DA30:1",
+            "09E42C7C:3",
+            "096564CC:7",
+            "0A08DB4C:2",
+            "079BF40C:2",
+            "094D93DC:2",
+            "07506C5C:4",
+            "08B9B62C:1",
+            "0A1C1330:2",
+            "08BD5090:0",
+            "072BF2D0:0",
+            "08CDD540:1",
+            "07B92F3C:2",
+            "09F0151C:1",
+            "0746D0CC:0",
+            "07B37EDC:0",
+            "07B9D89C:2"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 26,
+          "entries": [
+            "09367F40:0",
+            "079D64BC:0",
+            "0934F880:3",
+            "079AA110:1",
+            "079A71F0:4",
+            "08D07E80:1",
+            "07A94480:1",
+            "07A95B20:1",
+            "079B4200:1",
+            "079B2130:1",
+            "092F5B30:4",
+            "08DF42C0:5",
+            "08691C50:0",
+            "09396C40:3",
+            "08DE7A00:4",
+            "07A82BE0:1",
+            "08B380F0:1",
+            "0A3030B0:1",
+            "08D875B0:0",
+            "0822190C:1",
+            "0A0F065C:1",
+            "082DC72C:8",
+            "0C60B51C:2",
+            "0829F1FC:2",
+            "082A851C:0",
+            "0AE3D06C:2"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 22,
+      "name": "ForceTrigger",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "implemented",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Forwards forceTrigger ID and game context; source inspected.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Force disabled/linked trigger and check repeat semantics.",
+      "source": {
+        "path": "src/game/trigger/executor/ForceTriggerExecutor.ts",
+        "sha256": "9a1d58f8e479d1c4b4f48388ae1d5fa9fd3314523c3f3c97b603687b4b8c01c0"
+      },
+      "mapReferences": [
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 2,
+          "entries": [
+            "080F4DAC:0",
+            "0BB5779C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 36,
+      "name": "AllChangeHouse",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Finds source by country name and destination by country ID/start location.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Use distinct campaign houses sharing one country.",
+      "source": {
+        "path": "src/game/trigger/executor/ChangeHouseAllExecutor.ts",
+        "sha256": "e2491dcbe17452e9ad75f5a2e341362ca6dac7a64dd15b7c3dda3af4877e4cb1"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "07BBD33C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 38,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "0BB24A9C:2"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 41,
+      "name": "PlayAnimAt",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "unverified",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Looks up animation index and decoded waypoint; emits event.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Verify animation order, index table and waypoint decoding.",
+      "source": {
+        "path": "src/game/trigger/executor/PlayAnimAtExecutor.ts",
+        "sha256": "4f3a8bb495464dbbbf66afee230e4e7b4ef18b343fbf92aa58f631dfde57ee1e"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 2,
+          "entries": [
+            "0B4691FC:0",
+            "0B4691FC:1"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 7,
+          "entries": [
+            "083182BC:0",
+            "08498E5C:0",
+            "0848833C:0",
+            "08489CEC:0",
+            "08E7CC10:0",
+            "08E7CC10:1",
+            "07F6864C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 46,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 2,
+          "entries": [
+            "079BF40C:0",
+            "0A1C1330:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "08B380F0:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 47,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "094D93DC:3"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "09396C40:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 48,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 2,
+          "entries": [
+            "079C403C:0",
+            "0A1C1330:1"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "0A16AD50:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 53,
+      "name": "EnableTrigger",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "implemented",
+      "semanticConfidence": "bounded-CPU-probe-and-source",
+      "evidence": "Forwards ID and true flag; isolated probe passed.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Enable objective trigger then observe its own conditions.",
+      "source": {
+        "path": "src/game/trigger/executor/ToggleTriggerExecutor.ts",
+        "sha256": "35547d01861e816ae64ee8f35e2ff2e4d2c47325fa350e3273fe388de328d66c"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 88,
+          "entries": [
+            "07A949DC:4",
+            "076E465C:3",
+            "07A707CC:2",
+            "07428AAC:1",
+            "07428AAC:2",
+            "07428AAC:3",
+            "0A96A5EC:3",
+            "0A96A5EC:4",
+            "0A96A5EC:5",
+            "0782DA30:0",
+            "0874458C:0",
+            "0874458C:5",
+            "0871B6EC:0",
+            "096564CC:0",
+            "0965E07C:2",
+            "0965E07C:4",
+            "08CD8C30:3",
+            "08CD8C30:5",
+            "0B43F31C:0",
+            "0B43F31C:1",
+            "0B43F31C:2",
+            "0B43F31C:3",
+            "0B43F31C:4",
+            "079BF40C:1",
+            "079C403C:1",
+            "079C403C:2",
+            "07FA0F3C:0",
+            "094DE03C:0",
+            "094D93DC:4",
+            "07506C5C:0",
+            "07506C5C:9",
+            "0945BF3C:1",
+            "0945E7BC:0",
+            "094160BC:1",
+            "09415BAC:0",
+            "08B9B62C:0",
+            "0B1C7E9C:0",
+            "09FAD67C:0",
+            "0733A6CC:0",
+            "0A1C1330:4",
+            "072BF2D0:5",
+            "072BF2D0:6",
+            "09F0151C:5",
+            "09F0151C:6",
+            "07B3327C:4",
+            "07B37EDC:1",
+            "07BA127C:0",
+            "07BA8C2C:2",
+            "07BA8C2C:4",
+            "07BA8C2C:5",
+            "0AE1890C:0",
+            "0AE1890C:1",
+            "0AE8203C:1",
+            "0B3E99EC:0",
+            "0B3E99EC:2",
+            "0B3E99EC:3",
+            "081A1B4C:1",
+            "0B53F83C:4",
+            "0B536C2C:0",
+            "09D36F3C:4",
+            "0AE18F3C:0",
+            "0A94FE9C:0",
+            "0A94FE9C:1",
+            "0A8C247C:0",
+            "07B9D89C:3",
+            "0B4155CC:4",
+            "0A8DD70C:3",
+            "0BAF38BC:0",
+            "0BAF328C:0",
+            "07A3789C:0",
+            "07A3789C:1",
+            "07A3789C:2",
+            "09C1A03C:1",
+            "09C2803C:0",
+            "09C2E03C:1",
+            "0B3C062C:2",
+            "0B3C062C:3",
+            "0B3C062C:7",
+            "0B3C062C:8",
+            "0B8E6ADC:0",
+            "0B8E616C:0",
+            "0A63DD1C:0",
+            "0A63DE5C:0",
+            "0A63EC8C:1",
+            "0A63E71C:1",
+            "0B53665C:0",
+            "0B532E5C:2",
+            "0B415B3C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 57,
+          "entries": [
+            "09367F40:3",
+            "09367F40:4",
+            "09367F40:5",
+            "09367F40:7",
+            "09367F40:8",
+            "080F340C:3",
+            "080F4F3C:3",
+            "0934F880:4",
+            "0934F880:6",
+            "08E58F40:1",
+            "079A71F0:5",
+            "079A71F0:6",
+            "08ECC6D0:1",
+            "08ECE880:3",
+            "08DE3B80:1",
+            "08DE67E0:1",
+            "07A1BB70:1",
+            "08ECC510:1",
+            "08DF42C0:4",
+            "08696820:1",
+            "08691C50:1",
+            "08691C50:3",
+            "086919B0:1",
+            "086958C0:1",
+            "08692CF0:1",
+            "09396C40:1",
+            "08DE7A00:3",
+            "08F2E200:4",
+            "0A3030B0:2",
+            "0A0D76DC:0",
+            "0A0C277C:0",
+            "0A0FF90C:0",
+            "0A0FAE5C:4",
+            "0A0FAE5C:5",
+            "0A1153EC:0",
+            "082DC72C:1",
+            "082DC72C:2",
+            "082DC72C:3",
+            "082DC72C:5",
+            "082DC72C:6",
+            "082DC72C:7",
+            "0828357C:0",
+            "08284AEC:0",
+            "0829F1FC:3",
+            "0829F1FC:5",
+            "0829F1FC:6",
+            "082395CC:0",
+            "0827C1FC:0",
+            "0827D7FC:0",
+            "084D5A8C:0",
+            "084D53AC:0",
+            "084D50BC:0",
+            "0C6701CC:0",
+            "0C67649C:0",
+            "0AE3DBEC:0",
+            "0C72AAFC:2",
+            "0A51522C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 54,
+      "name": "DisableTrigger",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "implemented",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Forwards ID and false flag; source inspected.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Disable repeating trigger and verify no late event execution.",
+      "source": {
+        "path": "src/game/trigger/executor/ToggleTriggerExecutor.ts",
+        "sha256": "35547d01861e816ae64ee8f35e2ff2e4d2c47325fa350e3273fe388de328d66c"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 26,
+          "entries": [
+            "0782DA30:2",
+            "0782DA30:3",
+            "096564CC:9",
+            "096564CC:10",
+            "0965E07C:3",
+            "07506C5C:1",
+            "07506C5C:2",
+            "07506C5C:3",
+            "07506C5C:5",
+            "07506C5C:6",
+            "07506C5C:7",
+            "07506C5C:8",
+            "0945BF3C:2",
+            "0945E7BC:1",
+            "094160BC:2",
+            "09415BAC:1",
+            "07B92F3C:3",
+            "08F8484C:0",
+            "08F8484C:3",
+            "08F8484C:5",
+            "0AE1890C:2",
+            "0A95E10C:3",
+            "07D0BE1C:3",
+            "0B53665C:1",
+            "0B53665C:2",
+            "0B53665C:3"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 15,
+          "entries": [
+            "093679E0:0",
+            "0934F880:7",
+            "0934F880:8",
+            "08DF42C0:6",
+            "08691C50:2",
+            "0A3030B0:3",
+            "08F2D42C:0",
+            "0A0FF90C:1",
+            "0A0FF90C:2",
+            "07F69EFC:0",
+            "041A2F3C:0",
+            "041A2F3C:1",
+            "07F288FC:0",
+            "07F29CDC:0",
+            "07F92BEC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 55,
+      "name": "CreateRadarEvent",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Converts radar enum by subtracting one and sends to all combatants.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Verify radar event identity and intended campaign recipient.",
+      "source": {
+        "path": "src/game/trigger/executor/CreateRadarEventExecutor.ts",
+        "sha256": "fe0b1a0ee34610a37f01f2e7d7c2ee23e9eb12c967e8374aaf19d43a32c4a36c"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 40,
+          "entries": [
+            "07A949DC:1",
+            "076E465C:2",
+            "076F572C:1",
+            "0A96A5EC:2",
+            "0874458C:2",
+            "0874286C:1",
+            "09E42C7C:0",
+            "096564CC:6",
+            "0A08DB4C:1",
+            "08CD8C30:0",
+            "08A6E100:1",
+            "0B91CA1C:1",
+            "0B918B9C:1",
+            "0B9188AC:1",
+            "09481A9C:1",
+            "0949CD5C:1",
+            "0799590C:4",
+            "0945BF3C:0",
+            "094160BC:0",
+            "0A1C1330:3",
+            "072BF2D0:1",
+            "0CD4066C:0",
+            "08CDD540:0",
+            "09F0151C:2",
+            "0746D0CC:2",
+            "07B3327C:3",
+            "07478F3C:2",
+            "07BB828C:1",
+            "0B3E99EC:1",
+            "0A95E10C:2",
+            "07D0BE1C:2",
+            "0B4155CC:2",
+            "0B4155CC:3",
+            "09C1A03C:4",
+            "09C2803C:4",
+            "09C2E03C:5",
+            "09BC303C:3",
+            "09E7118C:2",
+            "0B3C062C:6",
+            "09D2BCFC:6"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 32,
+          "entries": [
+            "09367F40:1",
+            "079D64BC:1",
+            "0934F880:1",
+            "079AA110:0",
+            "079A71F0:1",
+            "08D07E80:0",
+            "07A94480:0",
+            "07A95B20:0",
+            "079B4200:0",
+            "079B2130:0",
+            "092F5B30:0",
+            "092F5B30:1",
+            "092F5B30:2",
+            "092F5B30:3",
+            "0A2F5090:1",
+            "08DE7A00:2",
+            "0A3030B0:0",
+            "0AFA0F34:1",
+            "0AFA0274:1",
+            "0A0FAE5C:2",
+            "080CDF3C:1",
+            "0C60B51C:3",
+            "083573FC:1",
+            "082836EC:1",
+            "0829F1FC:1",
+            "082384AC:0",
+            "0839AD6C:0",
+            "0839A15C:0",
+            "0824A18C:0",
+            "084B3ACC:0",
+            "084B336C:1",
+            "0AE3D06C:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 56,
+      "name": "LocalSet",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "implemented",
+      "semanticConfidence": "bounded-CPU-probe-and-source",
+      "evidence": "Numeric local variable key matches MapFile initialization; set/read probe passed.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Set each objective variable independently and test joint gate.",
+      "source": {
+        "path": "src/game/trigger/executor/LocalVariableExecutor.ts",
+        "sha256": "6598dbe49135b9bc87b3a015318558b13d53df722168e6a46e03fb213a960650"
+      },
+      "mapReferences": [
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 6,
+          "entries": [
+            "08696820:0",
+            "086919B0:0",
+            "086958C0:0",
+            "08692CF0:0",
+            "0A0FF90C:3",
+            "0D7F790C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 57,
+      "name": "LocalClear",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "implemented",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Same numeric key contract as local set; source inspected.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Clear after set and verify repeat/reset behavior.",
+      "source": {
+        "path": "src/game/trigger/executor/LocalVariableExecutor.ts",
+        "sha256": "6598dbe49135b9bc87b3a015318558b13d53df722168e6a46e03fb213a960650"
+      },
+      "mapReferences": [
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 4,
+          "entries": [
+            "08F2E200:0",
+            "08F2E200:1",
+            "08F2E200:2",
+            "08F2E200:3"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 63,
+      "name": "ApplyOneHundredDamage",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "unverified",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Detonates HE at parameter waypoint using 100 damage.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Verify map intent, bridge elevation and target scope against retail.",
+      "source": {
+        "path": "src/game/trigger/executor/ApplyDamageExecutor.ts",
+        "sha256": "0a14582f57fcf49ba857f68720b3907ecc5e349f33f2054e3e77bb7a09364c6f"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 10,
+          "entries": [
+            "080777BC:0",
+            "080777BC:1",
+            "080777BC:2",
+            "080777BC:3",
+            "080777BC:4",
+            "080777BC:5",
+            "080777BC:6",
+            "080777BC:7",
+            "080777BC:8",
+            "080777BC:9"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 8,
+          "entries": [
+            "0823BDEC:0",
+            "0823BDEC:1",
+            "0823BDEC:2",
+            "0823BDEC:3",
+            "0823BDEC:4",
+            "0823BDEC:5",
+            "0823BDEC:6",
+            "0823BDEC:7"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 74,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "08F8484C:1"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 2,
+          "entries": [
+            "08F7F100:0",
+            "0BB24A9C:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 80,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler",
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 21,
+          "entries": [
+            "0965E07C:6",
+            "0B91CA1C:0",
+            "0B918B9C:0",
+            "0B9188AC:0",
+            "09481A9C:0",
+            "0949CD5C:0",
+            "0AE8203C:0",
+            "0B53F83C:0",
+            "0B53F83C:1",
+            "0B53F83C:2",
+            "09D36F3C:0",
+            "09D36F3C:1",
+            "09D36F3C:2",
+            "0B3C062C:0",
+            "0B3C062C:1",
+            "0B8EDA2C:0",
+            "0B8ED3FC:0",
+            "0A63DD1C:1",
+            "0A63DE5C:1",
+            "0A63EC8C:0",
+            "0A63E71C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 17,
+          "entries": [
+            "08E58F40:0",
+            "08ECC6D0:0",
+            "08DE3B80:0",
+            "08DE67E0:0",
+            "07A1BB70:0",
+            "08ECC510:0",
+            "08DF42C0:0",
+            "08DF42C0:1",
+            "08DF42C0:2",
+            "08DF42C0:3",
+            "084584CC:0",
+            "084581DC:0",
+            "079EF4FC:0",
+            "08458F3C:0",
+            "0808945C:0",
+            "0808945C:1",
+            "0AE3D06C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 88,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 3,
+          "entries": [
+            "08E7CC10:2",
+            "08E7C1C0:0",
+            "093A09B4:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 99,
+      "name": "PlaySoundFxAt",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "unverified",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Dispatches sound at action.params[6] waypoint.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Verify positional audio, index mapping and location.",
+      "source": {
+        "path": "src/game/trigger/executor/PlaySoundFxAtExecutor.ts",
+        "sha256": "25c540d0e97bf4cdf8ded33d75e947ee92f78bf1dd664377a626402126e566fc"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 26,
+          "entries": [
+            "09EAC42C:0",
+            "09EAC42C:1",
+            "09EAC42C:2",
+            "09EAC42C:3",
+            "09EAC42C:4",
+            "09EAC42C:5",
+            "09EAC42C:6",
+            "09EAC42C:7",
+            "09EAC42C:8",
+            "09EAC42C:9",
+            "09EAC42C:10",
+            "09EAC42C:11",
+            "09EAC42C:12",
+            "09EAC42C:13",
+            "09F7FF3C:0",
+            "09F7FF3C:1",
+            "09F7FF3C:2",
+            "09F7FF3C:3",
+            "09F7FF3C:4",
+            "09F7FF3C:5",
+            "09F7FF3C:6",
+            "09F7FF3C:7",
+            "09F7FF3C:8",
+            "09F7FF3C:9",
+            "09F7FF3C:10",
+            "09F7FF3C:11"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 52,
+          "entries": [
+            "07300F34:0",
+            "07300F34:1",
+            "07300F34:2",
+            "07300F34:3",
+            "07300F34:4",
+            "07300F34:5",
+            "07300F34:6",
+            "07300F34:7",
+            "07300F34:8",
+            "07300F34:9",
+            "08119E5C:0",
+            "08119E5C:1",
+            "08119E5C:2",
+            "08119E5C:3",
+            "08119E5C:4",
+            "08119E5C:5",
+            "08119E5C:6",
+            "08119E5C:7",
+            "08119E5C:8",
+            "08119E5C:9",
+            "0811AA3C:0",
+            "0811AA3C:1",
+            "0811AA3C:2",
+            "0811AA3C:3",
+            "0811AA3C:4",
+            "0811AA3C:5",
+            "0811AA3C:6",
+            "0811AA3C:7",
+            "0811AA3C:8",
+            "0811AA3C:9",
+            "0822FD0C:0",
+            "0822FD0C:1",
+            "0822FD0C:2",
+            "0822FD0C:3",
+            "0822FD0C:4",
+            "0822FD0C:5",
+            "0822FD0C:6",
+            "0822FD0C:7",
+            "0822FD0C:8",
+            "0822FD0C:9",
+            "0850F1FC:0",
+            "0850F1FC:1",
+            "0850F1FC:2",
+            "0850F1FC:3",
+            "0850F1FC:4",
+            "0850F1FC:5",
+            "0850F1FC:6",
+            "0850F1FC:7",
+            "0850F1FC:8",
+            "0850F1FC:9",
+            "08270C1C:0",
+            "08270C1C:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 100,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 3,
+          "entries": [
+            "0965E07C:5",
+            "07FA0F3C:1",
+            "081A1B4C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 101,
+      "name": "UnrevealAroundWaypoint",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Unreveals around waypoint for all combatants.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Verify recipient and already explored fog behavior.",
+      "source": {
+        "path": "src/game/trigger/executor/UnrevealAroundWaypointExecutor.ts",
+        "sha256": "e9b58daa7520c59e1eb78cae9c45acea6bd9a741adec0822083c115c6e85c6eb"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "0B3C062C:9"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 104,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 8,
+          "entries": [
+            "076E465C:5",
+            "076F572C:3",
+            "076F572C:4",
+            "0828B83C:0",
+            "0A19574C:0",
+            "0978603C:1",
+            "07B9D89C:1",
+            "0A6BB12C:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 108,
+      "name": "CreateCrate",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Explicit powerup table includes undefined entries and random fallback for unknown IDs.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Verify requested crate type, spawn location and deterministic RNG.",
+      "source": {
+        "path": "src/game/trigger/executor/CreateCrateExecutor.ts",
+        "sha256": "8a4063292d61d1f20220899eee0d0e0be77498188addc1519ee384467ed45ce7"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 9,
+          "entries": [
+            "09FABF3C:0",
+            "09FABF3C:1",
+            "09FABF3C:2",
+            "09FABF3C:3",
+            "079E5F3C:0",
+            "09D2BCFC:2",
+            "09D2BCFC:3",
+            "09D2BCFC:4",
+            "09D2BCFC:5"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 10,
+          "entries": [
+            "0A2F5D80:0",
+            "0A2F5D80:1",
+            "07A6DF3C:0",
+            "07A6DA9C:0",
+            "082398BC:0",
+            "082931BC:0",
+            "08294BAC:0",
+            "082945EC:0",
+            "083AC72C:0",
+            "083AC0FC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 113,
+      "name": "Cheer",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "House filter then only players[0] gets idle-infantry cheer tasks.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Check house -1/multiple matching houses and occupied units.",
+      "source": {
+        "path": "src/game/trigger/executor/CheerExecutor.ts",
+        "sha256": "257d308394dacb8c8cea9c0b03fdb5e4f4ca7c1b78f5f7387e651372090cf797"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "08BBBDBC:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "0CD2F0BC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 114,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 4,
+          "entries": [
+            "072BF2D0:4",
+            "09F0151C:3",
+            "0747A7BC:1",
+            "0A8C3E2C:3"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 4,
+          "entries": [
+            "080F340C:2",
+            "080F4F3C:1",
+            "0A3030B0:4",
+            "0A0F065C:3"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 115,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerActionType.ts",
+        "sha256": "e27019efb87a81f8b6961815655c8fae2b0eb9f87ede93afff0d68dff00153a3"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 4,
+          "entries": [
+            "072BF2D0:3",
+            "09F0151C:4",
+            "0747A7BC:0",
+            "0A8C3E2C:2"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "occurrences": 3,
+          "entries": [
+            "080F340C:1",
+            "080F4F3C:2",
+            "0A0F065C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "id": 116,
+      "name": "StopSoundsAt",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "unverified",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Stops sounds at resolved waypoint via event.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Verify looping sound stops without stopping other locations.",
+      "source": {
+        "path": "src/game/trigger/executor/StopSoundFxAtExecutor.ts",
+        "sha256": "2e322bde188cf4aaa9d4508181545a7b196a950f1ca83a0c36d0e5c399cf7e92"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "occurrences": 1,
+          "entries": [
+            "0A7F298C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 1,
+      "name": "EnteredBy",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Filters cell/object entry targets and country ID; no campaign-house binding.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Enter tagged cell with correct/wrong house and air/ground unit.",
+      "source": {
+        "path": "src/game/trigger/condition/EnteredByCondition.ts",
+        "sha256": "55c32bc48de8319b064f459c44de821f17a8bc842b5eafb84f0d798b4c63f6d7"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 18,
+          "entries": [
+            "09E42C7C:0",
+            "0871B6EC:0",
+            "096564CC:0",
+            "0733A6CC:0",
+            "072BF2D0:0",
+            "08F8484C:0",
+            "09F0151C:0",
+            "0746D0CC:0",
+            "07B3327C:0",
+            "07BA8C2C:0",
+            "09D36F3C:0",
+            "0BAF38BC:0",
+            "0BAF328C:0",
+            "07A3789C:0",
+            "0B3C062C:0",
+            "0B53665C:0",
+            "09D2BCFC:0",
+            "0BFD7F3C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 24,
+          "entries": [
+            "09367F40:0",
+            "093679E0:0",
+            "0934F880:0",
+            "079A71F0:0",
+            "08ECC6D0:0",
+            "08DE3B80:0",
+            "08DE67E0:0",
+            "08ECC510:0",
+            "08DF42C0:0",
+            "0AFA0F34:0",
+            "0AFA0274:0",
+            "0C60B51C:0",
+            "083573FC:0",
+            "082836EC:0",
+            "0834F3BC:0",
+            "082384AC:0",
+            "0839AD6C:0",
+            "0839A15C:0",
+            "0824A18C:0",
+            "084B3ACC:0",
+            "084B336C:0",
+            "0C67649C:0",
+            "0C72AAFC:0",
+            "0A51522C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 4,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerEventType.ts",
+        "sha256": "7e8e3412d4eff9ff5f72dfb02cb371538dd24502382e90b425274f979ce39a99"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 2,
+          "entries": [
+            "073FE71C:0",
+            "07BC399C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 4,
+          "entries": [
+            "0A0C277C:0",
+            "080CDF3C:0",
+            "0829F1FC:0",
+            "0D7F790C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 6,
+      "name": "AttackedByAny",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "unverified",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Filters attacks by enemy/non-incidental source against targets.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Compare direct, incidental and allied damage on tagged targets.",
+      "source": {
+        "path": "src/game/trigger/condition/AttackedByAnyCondition.ts",
+        "sha256": "1c0c501ee14c6b907bdce7077f33e2a48c1b19f74b4e3130f51aa15224469025"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 2,
+          "entries": [
+            "0945BF3C:0",
+            "094160BC:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 1,
+          "entries": [
+            "080F4DAC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 9,
+      "name": "DestroyedAllUnits",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "bounded-CPU-probe-and-source",
+      "evidence": "NaN house ID and reversed check arguments; direct manager-shaped call throws.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Repair signature, then destroy final land/air/naval unit.",
+      "source": {
+        "path": "src/game/trigger/condition/DestroyedAllUnitsCondition.ts",
+        "sha256": "778e681c87d74a493bcc009c7a3480969be6859ddb52dea388954b6a7ec5afc4"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 1,
+          "entries": [
+            "0AE18F3C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 1,
+          "entries": [
+            "0A1153EC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 10,
+      "name": "DestroyedAllBuildings",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "bounded-CPU-probe-and-source",
+      "evidence": "Reads params[1] from event object; NaN reproduced.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Destroy final building for correct campaign house.",
+      "source": {
+        "path": "src/game/trigger/condition/DestroyedAllBuildingsCondition.ts",
+        "sha256": "41462a94da0a67c98ceb5c5649c28d98014b46b80685ee423bc297c3b51c6b7c"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 1,
+          "entries": [
+            "07506C5C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 1,
+          "entries": [
+            "0A1153EC:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 11,
+      "name": "DestroyedAll",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Same event-object parameter indexing defect; country-based owner match.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Destroy final asset and test delayed/reinforcement ownership.",
+      "source": {
+        "path": "src/game/trigger/condition/DestroyedAllCondition.ts",
+        "sha256": "4ee21b257c8ac6242db7b9b0fae998b1d3d944b124476d02082e4e60fce630d0"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 2,
+          "entries": [
+            "07B92F3C:0",
+            "0B532E5C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 13,
+      "name": "ElapsedTime",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "bounded-CPU-probe-and-source",
+      "evidence": "Checks elapsedTicks++ > threshold; zero fires on second check, reset supported.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Verify first-fire tick and disabled/repeated timer behavior against retail.",
+      "source": {
+        "path": "src/game/trigger/condition/ElapsedTimeCondition.ts",
+        "sha256": "ae5fb113cd6493631586b6a41411cc396e02cdddadf80170879f813f164192fc"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 84,
+          "entries": [
+            "07A9578C:0",
+            "07A949DC:0",
+            "07C3C37C:0",
+            "076E465C:0",
+            "076F572C:0",
+            "07A707CC:0",
+            "07428AAC:0",
+            "07BBD33C:0",
+            "0828B83C:0",
+            "0A96BE5C:0",
+            "0A19262C:0",
+            "0A19574C:0",
+            "0782DA30:0",
+            "0874458C:0",
+            "0874286C:0",
+            "0871A32C:0",
+            "0965E07C:0",
+            "08CD8C30:0",
+            "08A6E100:0",
+            "0B43F31C:0",
+            "0B91CA1C:0",
+            "0B918B9C:0",
+            "0B9188AC:0",
+            "09481A9C:0",
+            "0949CD5C:0",
+            "0799590C:0",
+            "079BF40C:0",
+            "079C403C:0",
+            "09BF43EC:0",
+            "07FA0F3C:0",
+            "094DE03C:0",
+            "094D93DC:0",
+            "0978603C:0",
+            "075F22EC:0",
+            "0945E7BC:0",
+            "09415BAC:0",
+            "08BBBDBC:0",
+            "08B9BC5C:0",
+            "0B1C7E9C:0",
+            "09FABF3C:0",
+            "079E5F3C:0",
+            "08BD5090:0",
+            "0B4691FC:0",
+            "0CD4066C:0",
+            "09EAC42C:0",
+            "07B37EDC:0",
+            "0B22DE4C:0",
+            "0747A7BC:0",
+            "07BB828C:0",
+            "0AE1890C:0",
+            "0AE8203C:0",
+            "07BBA03C:0",
+            "081A1B4C:0",
+            "0B53F83C:0",
+            "0B536C2C:0",
+            "0803EA6C:0",
+            "0B52B86C:0",
+            "0A8C3E2C:0",
+            "07B9D89C:0",
+            "0B4155CC:0",
+            "0A6BB12C:0",
+            "0BAFB15C:0",
+            "03ED228C:0",
+            "09C1A03C:0",
+            "09C2803C:0",
+            "09C2E03C:0",
+            "09BC303C:0",
+            "09E7118C:0",
+            "0B3C53BC:0",
+            "0B30B03C:0",
+            "0B8E6ADC:0",
+            "0B8E616C:0",
+            "0B8EDA2C:0",
+            "0B8ED3FC:0",
+            "080777BC:0",
+            "0A61DF3C:0",
+            "0A63D7EC:0",
+            "0A63D1EC:0",
+            "0A63FDBC:0",
+            "0A63DD1C:0",
+            "0A63DE5C:0",
+            "0A63EC8C:0",
+            "0A63E71C:0",
+            "09F7FF3C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 69,
+          "entries": [
+            "08F7F100:0",
+            "0A0FC9DC:0",
+            "080F340C:0",
+            "080F4F3C:0",
+            "083182BC:0",
+            "079D64BC:0",
+            "08E58F40:0",
+            "08498E5C:0",
+            "0848833C:0",
+            "08489CEC:0",
+            "079AA110:0",
+            "08D07E80:0",
+            "07A94480:0",
+            "07A95B20:0",
+            "079B4200:0",
+            "079B2130:0",
+            "092F5B30:0",
+            "08ECE880:0",
+            "0810671C:0",
+            "07A1BB70:0",
+            "084584CC:0",
+            "0A301C50:0",
+            "0A2F5090:0",
+            "0CD2F0BC:0",
+            "084581DC:0",
+            "079EF4FC:0",
+            "08458F3C:0",
+            "09396C40:0",
+            "08DE7A00:0",
+            "0A16AD50:0",
+            "08F2E200:0",
+            "08B380F0:0",
+            "0A2F5D80:0",
+            "08D875B0:0",
+            "07300F34:0",
+            "08119E5C:0",
+            "0811AA3C:0",
+            "0822190C:0",
+            "0A0F065C:0",
+            "0A0FAE5C:0",
+            "0BB24A9C:0",
+            "0808945C:0",
+            "0A115A1C:0",
+            "0AE0928C:0",
+            "083DA7AC:0",
+            "083D3DEC:0",
+            "084634FC:0",
+            "082DC72C:0",
+            "0A0DE2CC:0",
+            "0A0DE81C:0",
+            "0A0DE59C:0",
+            "08449D1C:0",
+            "07A6DF3C:0",
+            "07A6DA9C:0",
+            "082A851C:0",
+            "07F6864C:0",
+            "07F69EFC:0",
+            "0822FD0C:0",
+            "0850F1FC:0",
+            "08270C1C:0",
+            "082398BC:0",
+            "082931BC:0",
+            "08294BAC:0",
+            "082945EC:0",
+            "083AC72C:0",
+            "083AC0FC:0",
+            "0823BDEC:0",
+            "0C67682C:0",
+            "0C72A41C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 20,
+      "name": "BuildUnit",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "bounded-CPU-probe-and-source",
+      "evidence": "BuildObjectTypeCondition reads event object as array; NaN reproduced.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Build requested vehicle; distinguish spawn/reinforcement and owner.",
+      "source": {
+        "path": "src/game/trigger/condition/BuildObjectTypeCondition.ts",
+        "sha256": "22ea6b280b2c6f1e82995725d9bac52323922ba5aae4ceb92ea1c994acce3a62"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 1,
+          "entries": [
+            "0A97C4BC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 21,
+      "name": "BuildInfantry",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "bounded-CPU-probe-and-source",
+      "evidence": "BuildObjectTypeCondition reads event object as array; NaN reproduced.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Train requested infantry; distinguish spawn/reinforcement and owner.",
+      "source": {
+        "path": "src/game/trigger/condition/BuildObjectTypeCondition.ts",
+        "sha256": "22ea6b280b2c6f1e82995725d9bac52323922ba5aae4ceb92ea1c994acce3a62"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 1,
+          "entries": [
+            "0B415B3C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 2,
+          "entries": [
+            "0A0FF90C:0",
+            "0C6701CC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 30,
+      "name": "LowPower",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Finds country ID then queries power trait.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Verify exact house low-power transition and no-player behavior.",
+      "source": {
+        "path": "src/game/trigger/condition/LowPowerCondition.ts",
+        "sha256": "8a1d3a97f06fa50ef3525e995b683c36336603360f9d67dc269a9352aca0b1af"
+      },
+      "mapReferences": [
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 1,
+          "entries": [
+            "07A82BE0:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 32,
+      "name": "BuildingExists",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Building-index check exists, but player comes from trigger country-name lookup.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Bind campaign house and test existing target index.",
+      "source": {
+        "path": "src/game/trigger/condition/BuildingExistsCondition.ts",
+        "sha256": "2d8c68dce45ea54be5ee1eeae25f6e00f645c100e72bf14e98d501a9324423a2"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 4,
+          "entries": [
+            "09F0151C:1",
+            "07BA127C:0",
+            "0A94FE9C:0",
+            "0A8C247C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 7,
+          "entries": [
+            "0A3030B0:0",
+            "0A0D76DC:0",
+            "0B5B7F3C:0",
+            "041A2F3C:0",
+            "07EE0D9C:0",
+            "07F29CDC:0",
+            "0AE3DBEC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 33,
+      "name": null,
+      "parseSupport": "warn-and-skip",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Absent from current enum and factory. Numeric opcode semantics remain unverified; preserve raw parameters in local evidence.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Resolve original opcode semantics from primary data/documentation; replay every referenced parameter form and failure path.",
+      "source": {
+        "path": "src/data/map/trigger/TriggerEventType.ts",
+        "sha256": "7e8e3412d4eff9ff5f72dfb02cb371538dd24502382e90b425274f979ce39a99"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 7,
+          "entries": [
+            "0A96A5EC:0",
+            "08CDD540:0",
+            "07B376BC:0",
+            "07478F3C:0",
+            "0A95E10C:0",
+            "07D0BE1C:0",
+            "0A8DD70C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 36,
+      "name": "LocalIsSet",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "implemented",
+      "semanticConfidence": "bounded-CPU-probe-and-source",
+      "evidence": "Numeric local variable read; joint set/read probe passed.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Require all four independent objectives; no premature success.",
+      "source": {
+        "path": "src/game/trigger/condition/LocalVariableCondition.ts",
+        "sha256": "971b62692dd0a1b930ca270992787d51d011cea92fc6d96cad24abf6b715e155"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 2,
+          "entries": [
+            "0860EA2C:0",
+            "0860E73C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 6,
+          "entries": [
+            "08691C50:0",
+            "08691C50:1",
+            "08691C50:2",
+            "08691C50:3",
+            "0A0FAE5C:1",
+            "0A0FAE5C:2"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 44,
+      "name": "AttackedByHouse",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Checks attacker country ID and tagged target.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Attack same target from two houses sharing country.",
+      "source": {
+        "path": "src/game/trigger/condition/AttackedByHouseCondition.ts",
+        "sha256": "7a16cb268cd3edeef91c8a8f3c0e58895f97458c42c7720eeff42ab7c22a9877"
+      },
+      "mapReferences": [
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 1,
+          "entries": [
+            "0BB5779C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 48,
+      "name": "DestroyedOrCapturedOrInfiltrated",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "unverified",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Matches tagged destruction/ownership-change/infiltration events.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Exercise each path plus unrelated targets and multiple tags.",
+      "source": {
+        "path": "src/game/trigger/condition/DestroyedOrCapturedOrInfiltratedCondition.ts",
+        "sha256": "f770d452c3d19c39eb73f5b0c60782f0e3702002e7bea5f7b937a5715b17c24f"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 4,
+          "entries": [
+            "08B9B62C:0",
+            "09FAD67C:0",
+            "0A1C1330:0",
+            "0A7F298C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 15,
+          "entries": [
+            "08E7CC10:0",
+            "08E7C1C0:0",
+            "093A09B4:0",
+            "08F2D42C:0",
+            "0828357C:0",
+            "08284AEC:0",
+            "082395CC:0",
+            "0827C1FC:0",
+            "0827D7FC:0",
+            "084D5A8C:0",
+            "084D53AC:0",
+            "084D50BC:0",
+            "07ED0F3C:0",
+            "07ED040C:0",
+            "07F288FC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 56,
+      "name": "DestroyedAllUnitsLand",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Reads params[1] from event object; wrong house ID.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Destroy final land unit while naval unit remains.",
+      "source": {
+        "path": "src/game/trigger/condition/DestroyedAllUnitsLandCondition.ts",
+        "sha256": "b570d0b7a2833ff0a8dfa4c1b1b0c526f694fe21a7a48a8765d8989c293e75a6"
+      },
+      "mapReferences": [
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 1,
+          "entries": [
+            "07F92BEC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": 57,
+      "name": "BuildingNotExists",
+      "parseSupport": "recognized-typed-record",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-only-no-retail-runtime-validation",
+      "evidence": "Negated building check exists; unresolved trigger-house lookup can return false.",
+      "prerequisites": [
+        "campaign-house-binding",
+        "strict-preflight",
+        "trigger-lifecycle"
+      ],
+      "futureValidation": "Remove each objective building index 131..134 under correct house.",
+      "source": {
+        "path": "src/game/trigger/condition/BuildingExistsCondition.ts",
+        "sha256": "2d8c68dce45ea54be5ee1eeae25f6e00f645c100e72bf14e98d501a9324423a2"
+      },
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Events",
+          "occurrences": 3,
+          "entries": [
+            "0A08DB4C:0",
+            "072BF2D0:1",
+            "0B3E99EC:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Events",
+          "occurrences": 5,
+          "entries": [
+            "08696820:0",
+            "086919B0:0",
+            "086958C0:0",
+            "08692CF0:0",
+            "0AE3D06C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 0,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "0AC4443C:2",
+            "07F232BC:1",
+            "07F232BC:2",
+            "07F2447C:1",
+            "07F2447C:2",
+            "0AC4290C:2",
+            "07C010BC:0",
+            "07C010BC:1",
+            "0A4E2C8C:0",
+            "0A4E2C8C:1",
+            "0AC7832C:4",
+            "0AC7AB7C:4",
+            "0A64854C:0",
+            "0A64854C:2",
+            "074045AC:0",
+            "074045AC:1"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "08C77280:0",
+            "08C77280:1",
+            "08BD9DC0:3",
+            "085E9AB0:0",
+            "0A0E15BC:0",
+            "07902DBC:3",
+            "0790439C:2",
+            "07900C3C:2",
+            "079063AC:2",
+            "07903DBC:2",
+            "07A47C5C:1",
+            "08208DBC:1",
+            "08E9F230:0",
+            "08E9F230:2"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 1,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "07A92B3C:0",
+            "0A6806CC:0",
+            "095F32FC:0",
+            "0B7C332C:0",
+            "0948E7CC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 3,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "0967EDBC:0",
+            "0967EDBC:1",
+            "09678DBC:0",
+            "09678DBC:1",
+            "0AC4443C:0",
+            "0AC4443C:1",
+            "07F232BC:0",
+            "07F2447C:0",
+            "09680DBC:0",
+            "0AC4290C:0",
+            "0AC4290C:1",
+            "0B3C2AFC:0",
+            "0A6806CC:1",
+            "0AC7832C:0",
+            "0AC7832C:3",
+            "0AC7AB7C:0",
+            "0AC7AB7C:3",
+            "09EF369C:0",
+            "09EF369C:2",
+            "0A630A4C:0",
+            "0A63A5FC:0",
+            "0A63B93C:0",
+            "0829A32C:0",
+            "0829A32C:1",
+            "0829A32C:2",
+            "09B8843C:0",
+            "09B8843C:1",
+            "09B8843C:2",
+            "09B8843C:3",
+            "0B533C8C:0",
+            "0AC82DBC:0",
+            "0AB4A90C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "0A0A8630:0",
+            "09CFFDBC:0",
+            "093DADBC:1",
+            "0815B04C:0",
+            "080C20CC:0",
+            "080C20CC:1",
+            "080C20CC:2",
+            "080C20CC:3",
+            "080C40DC:0",
+            "080C40DC:1",
+            "080C40DC:2",
+            "080C40DC:3",
+            "0A0C6DBC:0",
+            "07902DBC:1",
+            "0790439C:1",
+            "07900C3C:1",
+            "079063AC:1",
+            "07903DBC:1",
+            "08545DBC:0",
+            "07A47C5C:0",
+            "08208DBC:0",
+            "08430B8C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 5,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "09680DBC:1",
+            "083157DC:0",
+            "0A643DBC:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "09CFFDBC:1",
+            "093DADBC:0",
+            "07A9FA4C:1",
+            "0A0E2BEC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 6,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "095F32FC:1",
+            "07CA645C:1",
+            "0B7C332C:1",
+            "0948E7CC:1"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "09C0467C:1",
+            "0A0E15BC:2",
+            "080C20CC:4",
+            "080C40DC:4",
+            "08AB50FC:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 8,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "0AC7832C:1",
+            "0AC7AB7C:1"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "08BD9DC0:0",
+            "07902DBC:2",
+            "08545DBC:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 9,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "0815B04C:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 11,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "0967EDBC:2",
+            "09678DBC:2",
+            "0B3C2AFC:1",
+            "074E4DBC:1"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "0A0A8630:1",
+            "0831E90C:0",
+            "0831E90C:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 19,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "07CA645C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "09C0467C:0",
+            "08AB50FC:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 20,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "0A6DADBC:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "08BD9A40:0",
+            "07902DBC:0",
+            "0790439C:0",
+            "07900C3C:0",
+            "079063AC:0",
+            "07903DBC:0",
+            "08545DBC:2"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 21,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "03D7B0A0:0",
+            "07A9FA4C:0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 37,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "0A6806CC:2",
+            "09EF369C:3",
+            "0A630A4C:1",
+            "0A63A5FC:1",
+            "0A63B93C:1",
+            "0829A32C:3",
+            "09B8843C:4",
+            "0B533C8C:1",
+            "0AC82DBC:1",
+            "0AB4A90C:1"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "08430B8C:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 39,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "0AC7832C:2",
+            "0AC7AB7C:2"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 46,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "09EF369C:1",
+            "074E4DBC:0",
+            "09F9E7EC:0",
+            "09F9E24C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "08BD9DC0:1",
+            "093CEA4C:0",
+            "0A0C6DBC:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 49,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "0A64854C:1"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "08BD9DC0:2",
+            "0A0E15BC:1",
+            "08E9F230:1"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "script-opcode",
+      "id": 50,
+      "name": null,
+      "parseSupport": "generic-INI-retained; no retail typed script parser found",
+      "executionSupport": "missing",
+      "semanticConfidence": "numeric-reference-only; original opcode meaning unverified",
+      "evidence": "No retail ScriptTypes/TeamTypes/TaskForces executor in src/game or src/data; bot missions are a different system.",
+      "prerequisites": [
+        "team-lifecycle",
+        "task-force-instantiation",
+        "script-vm",
+        "opcode-semantics-and-handler"
+      ],
+      "futureValidation": "Execute each referenced script step, wait/completion/branch/abort behavior with real team members and deterministic ticks.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "07B36BBC:0",
+            "0A0D92BC:0",
+            "0837269C:0"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "entries": [
+            "09CC8C8C:0",
+            "08545DBC:3"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "subsystem",
+      "id": "campaign-house-binding",
+      "parseSupport": "generic-INI or partial MapFile fields",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-inspection; not a playable mission",
+      "evidence": "GameFactory creates lobby countries; Game.createInitialMapTechnos skips non-neutral units.",
+      "prerequisites": [
+        "strict-preflight"
+      ],
+      "futureValidation": "Preserve House/Country/Player distinction, alliances, initial objects, tags and exact player control.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Houses",
+          "count": 8,
+          "entries": []
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Houses",
+          "count": 8,
+          "entries": []
+        }
+      ]
+    },
+    {
+      "kind": "subsystem",
+      "id": "team-lifecycle",
+      "parseSupport": "generic-INI or partial MapFile fields",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-inspection; not a playable mission",
+      "evidence": "Generic INI only; no typed team instance scheduler.",
+      "prerequisites": [
+        "strict-preflight"
+      ],
+      "futureValidation": "Recruit/create team, obey flags, owner, trigger, transport and completion lifecycle.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "TeamTypes",
+          "count": 49,
+          "entries": [
+            "0A67F6CC",
+            "0967E2CC",
+            "0967EA7C",
+            "0AC446AC",
+            "097531FC",
+            "09752C8C",
+            "094F68EC",
+            "0A7475CC",
+            "0AC42B7C",
+            "09B091FC",
+            "07B346BC",
+            "09A92A9C",
+            "09A925EC",
+            "0831459C",
+            "09A9227C",
+            "0B3C142C",
+            "0A71FB7C",
+            "0A68093C",
+            "0AB436CC",
+            "0AB4321C",
+            "095F211C",
+            "09EF2C8C",
+            "0AE2849C",
+            "0B48383C",
+            "0BF26C8C",
+            "0BF267DC",
+            "0AB088EC",
+            "0AB0843C",
+            "0AB17EFC",
+            "0B48A3FC",
+            "0B48BC0C",
+            "095B322C",
+            "0A71B33C",
+            "0A71B20C",
+            "09E7238C",
+            "0BF2C30C",
+            "0B8AC05C",
+            "0BF28DCC",
+            "0B533EFC",
+            "09F9C27C",
+            "09F9E4BC",
+            "094806FC",
+            "09F0AEFC",
+            "0AC8730C",
+            "0AB147DC",
+            "0A967EFC",
+            "0A08512C",
+            "0AB4920C",
+            "0AB4AB7C"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "TeamTypes",
+          "count": 44,
+          "entries": [
+            "09CCDC8C",
+            "08608F00",
+            "08C774E0",
+            "0A0A0B40",
+            "07ABE1C0",
+            "08BD9CA0",
+            "09C1DEFC",
+            "086D6E10",
+            "085E9D10",
+            "09CF00EC",
+            "0BDAE1FC",
+            "08E14F00",
+            "08E14D10",
+            "09C0E2EC",
+            "079B6624",
+            "07ADC0AC",
+            "093DA36C",
+            "08E7DA4C",
+            "09BDD6FC",
+            "0A7A16FC",
+            "0815EB2C",
+            "0A0E182C",
+            "0A0E112C",
+            "0807BC2C",
+            "0A0FD23C",
+            "080BB0BC",
+            "080C747C",
+            "079DF5FC",
+            "0A0C1A7C",
+            "09D3357C",
+            "09D32EFC",
+            "09D32A4C",
+            "09D326AC",
+            "09D3230C",
+            "08AAD22C",
+            "08AB5E3C",
+            "08AB2BFC",
+            "0AA795CC",
+            "08263EFC",
+            "0836F59C",
+            "0826D22C",
+            "084311CC",
+            "0AEE832C",
+            "0A94465C"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "subsystem",
+      "id": "task-force-instantiation",
+      "parseSupport": "generic-INI or partial MapFile fields",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-inspection; not a playable mission",
+      "evidence": "Generic INI retains unit counts but no campaign instantiation.",
+      "prerequisites": [
+        "strict-preflight"
+      ],
+      "futureValidation": "Create exact unit composition with capacities and deterministic spawn failures.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "TaskForces",
+          "count": 29,
+          "entries": [
+            "0A67F34C",
+            "0A6C143C",
+            "09C0B6CC",
+            "07407B6C",
+            "079B84CC",
+            "08A645E0",
+            "09B08CAC",
+            "07B345AC",
+            "07C00A7C",
+            "0B3E458C",
+            "0B3C3F1C",
+            "0B3DC2DC",
+            "07A1066C",
+            "08629CDC",
+            "095F183C",
+            "07A626BC",
+            "0AE2838C",
+            "0B4834BC",
+            "0A6494EC",
+            "0A62409C",
+            "0B48AC1C",
+            "0B48D07C",
+            "09E73ACC",
+            "0AEF82AC",
+            "09F9EA5C",
+            "09F0F19C",
+            "0A081E8C",
+            "0AA1E09C",
+            "07407C7C"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "TaskForces",
+          "count": 29,
+          "entries": [
+            "09CCD90C",
+            "08E731E0",
+            "085F1810",
+            "0A0A10E0",
+            "07ABCD10",
+            "09CF0CAC",
+            "09C1DB7C",
+            "08AE42E0",
+            "09C0E1DC",
+            "0A328380",
+            "07ADAF1C",
+            "0B67690C",
+            "07B4932C",
+            "041731DC",
+            "0815EA1C",
+            "0A0FD12C",
+            "0A0C196C",
+            "078FC35C",
+            "07902CAC",
+            "0AE0A43C",
+            "0AE0A1FC",
+            "0AE0BDEC",
+            "081BDD7C",
+            "08263DEC",
+            "0836F48C",
+            "084310BC",
+            "0C591C7C",
+            "0AE3608C",
+            "093801A0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "subsystem",
+      "id": "script-vm",
+      "parseSupport": "generic-INI or partial MapFile fields",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-inspection; not a playable mission",
+      "evidence": "No per-team script program counter or task completion pipeline.",
+      "prerequisites": [
+        "strict-preflight"
+      ],
+      "futureValidation": "Execute sequential commands with wait, loop, cancellation and persistence.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "ScriptTypes",
+          "count": 38,
+          "entries": [
+            "07A92B3C",
+            "0967EDBC",
+            "09678DBC",
+            "0AC4443C",
+            "07F232BC",
+            "07F2447C",
+            "09680DBC",
+            "0A6DADBC",
+            "0AC4290C",
+            "083157DC",
+            "07B36BBC",
+            "07C010BC",
+            "0A4E2C8C",
+            "0B3C2AFC",
+            "0A6806CC",
+            "0AC7832C",
+            "0AC7AB7C",
+            "095F32FC",
+            "09EF369C",
+            "074E4DBC",
+            "07CA645C",
+            "0A64854C",
+            "0A643DBC",
+            "0A630A4C",
+            "0A63A5FC",
+            "0A63B93C",
+            "0B7C332C",
+            "0829A32C",
+            "09B8843C",
+            "0B533C8C",
+            "09F9E7EC",
+            "09F9E24C",
+            "0948E7CC",
+            "0A0D92BC",
+            "0837269C",
+            "0AC82DBC",
+            "0AB4A90C",
+            "074045AC"
+          ]
+        },
+        {
+          "map": "sov01t.map",
+          "section": "ScriptTypes",
+          "count": 31,
+          "entries": [
+            "03D7B0A0",
+            "0AC98490-G",
+            "08C77280",
+            "0A0A8630",
+            "08BD9DC0",
+            "08BD9A40",
+            "09C0467C",
+            "085E9AB0",
+            "09CFFDBC",
+            "093DADBC",
+            "093CEA4C",
+            "07A9FA4C",
+            "09CC8C8C",
+            "0815B04C",
+            "0A0E15BC",
+            "0A0E2BEC",
+            "080C20CC",
+            "080C40DC",
+            "0A0C6DBC",
+            "07902DBC",
+            "0790439C",
+            "07900C3C",
+            "079063AC",
+            "07903DBC",
+            "08AB50FC",
+            "08545DBC",
+            "07A47C5C",
+            "08208DBC",
+            "08430B8C",
+            "0831E90C",
+            "08E9F230"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "subsystem",
+      "id": "trigger-lifecycle",
+      "parseSupport": "generic-INI or partial MapFile fields",
+      "executionSupport": "partial",
+      "semanticConfidence": "source-inspection; not a playable mission",
+      "evidence": "Tag associations and AND evaluation exist; difficulty flags are parsed but not applied in TriggerManager; linked-trigger semantics unverified.",
+      "prerequisites": [
+        "strict-preflight"
+      ],
+      "futureValidation": "Validate enabled flags, all difficulty settings, OnceAll/Repeat, attachments and forced execution.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Triggers",
+          "count": 130,
+          "entries": []
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Triggers",
+          "count": 132,
+          "entries": []
+        }
+      ]
+    },
+    {
+      "kind": "subsystem",
+      "id": "local-variables",
+      "parseSupport": "generic-INI or partial MapFile fields",
+      "executionSupport": "implemented",
+      "semanticConfidence": "source-inspection; not a playable mission",
+      "evidence": "Numeric local keys and bool initialization; scoped CPU set/read passes.",
+      "prerequisites": [
+        "strict-preflight"
+      ],
+      "futureValidation": "Load map defaults and preserve each variable independently across save/load.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "VariableNames",
+          "count": 2,
+          "entries": []
+        },
+        {
+          "map": "sov01t.map",
+          "section": "VariableNames",
+          "count": 8,
+          "entries": []
+        }
+      ]
+    },
+    {
+      "kind": "subsystem",
+      "id": "mission-result-policy",
+      "parseSupport": "generic-INI or partial MapFile fields",
+      "executionSupport": "missing",
+      "semanticConfidence": "source-inspection; not a playable mission",
+      "evidence": "Mission success/failure action IDs 1/2 skipped. Game.update uses skirmish defeat/end.",
+      "prerequisites": [
+        "strict-preflight"
+      ],
+      "futureValidation": "Complete original objective chain and independent mission failure chain, without elimination substitution.",
+      "mapReferences": [
+        {
+          "map": "all01t.map",
+          "section": "Actions",
+          "count": 130,
+          "entries": []
+        },
+        {
+          "map": "sov01t.map",
+          "section": "Actions",
+          "count": 132,
+          "entries": []
+        }
+      ]
+    }
+  ],
+  "crossMissionRequirements": [
+    {
+      "id": "global-variables",
+      "status": "partial",
+      "evidence": "Not used as action 28/29 in selected first missions. GlobalVariableExecutor object/array bug reproduced; manager state is per Game. Campaign persistence absent."
+    },
+    {
+      "id": "mission-timer",
+      "status": "unverified",
+      "evidence": "First missions use elapsed-time event 13, not countdown actions 23..27/event 14. Timer handlers/countdown exist; inheritance and save/load need separate verification."
+    },
+    {
+      "id": "transitions",
+      "status": "missing",
+      "evidence": "Use verified mapsel.ini order; Basic NextScenario references GDI2A/GDI9C legacy names and is not a valid RA2 transition contract."
+    },
+    {
+      "id": "save-load",
+      "status": "missing",
+      "evidence": "No full mission snapshot/restore path found. Need world, orders, teams, script PCs, triggers, variables, RNG, timers, objectives and campaign progress."
+    }
+  ],
+  "locale": {
+    "detected": "zh-TW",
+    "labels": 4479,
+    "duplicates": 3,
+    "textActionCoverage": [
+      {
+        "map": "all01t.map",
+        "rawCaseSensitiveDistinctReferences": 24,
+        "allFoundIgnoringCase": true
+      },
+      {
+        "map": "sov01t.map",
+        "rawCaseSensitiveDistinctReferences": 14,
+        "allFoundIgnoringCase": true
+      }
+    ],
+    "simplifiedChineseComplete": "UNVERIFIED; current archive declares zh-TW",
+    "mediaComplete": "UNVERIFIED; no movie import/playback"
+  },
+  "recommendation": {
+    "mission": "sov01t.map",
+    "readyNow": false,
+    "reason": "Explicit four-part building objective to local-variable conjunction and separate defeat path; fewer teams/scripts than Allied 01. Reinforcements, scripted behaviors and campaign-house binding remain substantial prerequisites.",
+    "acceptance": "Destroy the four objective building types through normal play, observe flags 1..4 and delayed mission-specific victory; separately exercise original failure path. Preserve scripts/objectives and all difficulty behavior."
+  }
+}

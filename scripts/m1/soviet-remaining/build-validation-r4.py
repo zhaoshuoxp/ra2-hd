@@ -1,0 +1,37 @@
+"""Bind the combined R4 delivery to actual final-app checks and accepted R3."""
+import hashlib
+import html
+import json
+import re
+import shutil
+import subprocess
+from pathlib import Path
+root=Path('.artifacts/soviet-remaining');out=root/'complete-review-r4'
+read=lambda p:json.loads((root/p).read_text())
+artifact=read('build-2026-09-21T23-51-18-571Z/artifact.json')
+runtime=read('runtime-complete-r4-final/result.json');ranges=read('runtime-ranges-r4-final/result.json')
+fallback=read('fallback-r4/result.json');scope=read('feedback-r4/scope-validation.json')
+exports=read('export-validation-r4-final.json');pools=read('feedback-r4/pack-pool-final.json')
+preservation=read('preservation-r4.json');browser=read('complete-review-r4/browser-check.json');interface=read('complete-review-r4/interface-browser-check.json')
+for row in [runtime,ranges,fallback,scope,exports,pools,browser,interface]:assert row['status'].startswith('PASS'),row['status']
+assert ranges['cursors']['status']=='PASS_COMPLETE_HD_CURSOR_CYCLES'
+assert runtime['app']==ranges['app']==artifact['artifact']
+assert preservation['stableProtectedPayloads']=='PASS'
+assert re.search(r'62 pass\s+0 fail', (root/'feedback-r4/focused-tests-final.log').read_text())
+assert 'error TS' not in (root/'feedback-r4/typecheck-final.log').read_text()
+checked=0
+for row in artifact['source']['files']:
+    if row['file'].startswith(('src/','desktop/','public/res/locale/')):
+        assert hashlib.sha256(Path(row['file']).read_bytes()).hexdigest()==row['sha256'],row['file'];checked+=1
+activation=runtime['activation'];gpu=sum(f['gpuBytes'] for f in activation['families'].values())+sum(activation[k]['gpuBytes'] for k in ['napowr','powerPlant','conscript'])+16*(320*288*5+4)
+assert gpu<=256*1024*1024
+families={name:dict(nativeController=row['status'],motionSamples=sum(len(s['files']) for s in row['sequences']),gpuBytes=activation['families'][name]['gpuBytes'],visualAcceptance='R4_CLOSURE_PENDING' if name=='NAMISL' else 'R3_ACCEPTED_UNCHANGED') for name,row in runtime['families'].items()}
+report=dict(status='R4_TECHNICAL_PASS_FINAL_VISUAL_GAMEPLAY_ACCEPTANCE_PENDING',app=artifact['artifact'],sourceBinding=dict(status='PASS_APP_RUNTIME_SOURCE_CONTENT_BINDING',filesChecked=checked,currentCommit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),buildParentCommit=artifact['source']['head'],sourceSnapshot=artifact['source']['sourceDigest']),families=families,nativeMotionSamples=sum(f['motionSamples'] for f in families.values()),authoredShpSlots=1359,tests=dict(passed=62,assertions=1416,typecheck='PASS'),gpuBytes=gpu,gpuBudgetBytes=256*1024*1024,cursors=ranges['cursors'],rangeMarkers=ranges['ranges'],fallback=fallback['status'],scope=scope,preservation=preservation['stableProtectedPayloads'],strictOldProfileEquality=preservation['strictProfileEquality'],oldProfileDriftCount=len(preservation['oldProfileDrift']),accepted=['Delivered R3 corrections','All unchanged building resources'],pending=['Concentric targeting appearance','Four HD target cursor families','Post-launch silo closure','Final visual/gameplay acceptance'],limits=['Retail verification uses decoded original resources; no retail executable comparison was performed.','Ground rings are new aim guides. Iron Curtain still affects its native square.','Animation samples use native controllers in a staged scene; no new end-to-end live superweapon battle claim.','R3 civilian evacuation and loading fixes are unchanged and accepted; their prior evidence is retained, not rerun as a new R4 claim.','Four historical old-profile cache/runtime differences remain strict-equality failures.','Physical cursor handoff and Windows runtime are not newly verified.'],retainedFailures=['r8 silo platform footprint mismatch: replaced by fixed accepted foundation.','r8b silo edge alpha composited twice: corrected by exact foundation pixels in r8c.','Initial budget reservation retained R3 measurement: updated to measured R4 pool; all 62 checks pass.','First targeting band was pale pink: final target colors use linearized retail-style ink; accepted building bands are unchanged.'])
+(out/'validation.json').write_text(json.dumps(report,indent=2)+'\n')
+evidence=out/'evidence';evidence.mkdir(exist_ok=True)
+for target,source in {'runtime.json':'runtime-complete-r4-final/result.json','ranges.json':'runtime-ranges-r4-final/result.json','fallback.json':'fallback-r4/result.json','scope.json':'feedback-r4/scope-validation.json','pool.json':'feedback-r4/pack-pool-final.json','preservation.json':'preservation-r4.json','tests.log':'feedback-r4/focused-tests-final.log','typecheck.log':'feedback-r4/typecheck-final.log','retail-cursors.json':'feedback-r4/retail-cursors.json','r3-acceptance.json':'feedback-r4/feedback.json'}.items():shutil.copyfile(root/source,evidence/target)
+rows=''.join(f'<tr><td>{name}</td><td>PASS</td><td>{f["motionSamples"]}</td><td>{f["visualAcceptance"]}</td></tr>' for name,f in families.items())
+limits=''.join(f'<li>{html.escape(s)}</li>' for s in report['limits'])
+failures=''.join(f'<li>{html.escape(s)}</li>' for s in report['retainedFailures'])
+(out/'Validation-Dashboard.html').write_text(f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>R4 Validation</title><style>body{{background:#152019;color:#e8efe9;font:18px/1.55 system-ui;margin:28px auto;max-width:1180px;padding:0 24px}}h1{{font-size:32px}}h2{{font-size:25px}}a{{color:#b6e4c6}}table{{border-collapse:collapse;width:100%}}td,th{{padding:10px;text-align:left;border-bottom:1px solid #46624e}}.scroll{{overflow:auto}}</style><h1>Soviet Buildings R4</h1><p><a href="Soviet-Buildings-Review.html#NAMISL">Silo closure</a> · <a href="Target-Cursors-Review.html">HD target cursors</a> · <a href="Range-Markers-Review.html">Targeting rings</a> · <a href="validation.json">Detailed evidence</a></p><p>R3 corrections are accepted. R4 technical checks pass; new cursor artwork, targeting appearance and silo closure await your visual/gameplay acceptance.</p><h2>Verified changes</h2><ul><li>Three concentric aiming bands, no green filled cells; actual target/effect rules unchanged.</li><li>47 HD target cursor frames at 4× sampling, unchanged 55×43 size and hotspot, original fallback through one HD setting.</li><li>32 silo closure frames with rigid translated armor and no returned missile. Foundation perimeter and closed endpoints match accepted pixels.</li><li>All other R3 building resources, 502 accepted art files, R3 app and ZIP preserved.</li></ul><h2>Validation</h2><ul><li>62 tests / 1,416 assertions; TypeScript checking passed.</li><li>{report['nativeMotionSamples']} native-controller animation captures across 17 families from the final R4 app.</li><li>Eight range captures at 1080p and 4K; move, cancel and map-exit cleanup passed.</li><li>{gpu/1048576:.2f} MiB optional GPU allocation under the unchanged 256 MiB budget. Cursor canvas is separate UI storage.</li><li>Global HD-off and independent whole-family fallback, including corrupt NAMISL resource, passed.</li></ul><div class="scroll"><table><tr><th>Family</th><th>Technical</th><th>Motion frames</th><th>Visual status</th></tr>{rows}</table></div><h2>Retained failures</h2><ul>{failures}</ul><h2>Limits</h2><ul>{limits}</ul><p>Continue corrections and acceptance in this same task.</p></html>''')
+print(report['status'],report['nativeMotionSamples'],gpu)

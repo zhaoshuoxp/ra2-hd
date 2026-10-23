@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "taskId": "D",
+  "revision": "R2",
+  "status": "NATIVE_CORRECTIONS_VERIFIED_STYLE_REVIEW_PENDING",
+  "runtimeSourceHead": "7e102338f8d9c8ef1d8934cb08604d7b2f8d2ee1",
+  "packageReceipt": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/package-v4/package-receipt.json",
+  "packageReceiptSha256": "656358f0a8b495479b1ede51fcb25a89824be22f3251d7c34d397103962954de",
+  "app": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/package-v4/RA2-HD-Yuri-Units-D-R2/RA2 HD Yuri Units D R2.app",
+  "resources": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/package-v4/RA2-HD-Yuri-Units-D-R2/RA2-HD-Editions-Resources",
+  "review": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/package-v4/RA2-HD-Yuri-Units-D-R2/Review/Yuri-Units-Feedback-R2-Review-v2.html",
+  "reviewSha256": "4ec49458bfacfdca032a5b49a53a59ed427f2c01220a99d277efb669a0deaf58",
+  "runtimeReports": [
+    {
+      "density": 4,
+      "path": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/runtime-v4/report.json",
+      "sha256": "16722941c47f501771bda332bc5d7ed32bc17b293ec8f77cf216cca63afe7abc",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 381733320,
+        "demand": 4558592,
+        "total": 477664108,
+        "limit": 1342177280
+      },
+      "nativeCases": [
+        "DISK",
+        "TELE",
+        "MIND",
+        "YURIPR",
+        "CAOS"
+      ]
+    },
+    {
+      "density": 2,
+      "path": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/runtime-2x-v2/report.json",
+      "sha256": "d327081002edf4571cb21765ade1735573efc3ae5362f20b7d4c15c629a1d6df",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 116391684,
+        "demand": 1236000,
+        "total": 148131076,
+        "limit": 268435456
+      },
+      "nativeCases": [
+        "DISK",
+        "TELE",
+        "MIND",
+        "YURIPR",
+        "CAOS"
+      ]
+    }
+  ],
+  "reviewUi": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/effects-review-ui-v2/result.json",
+  "discFlight": {
+    "path": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/runtime-disc-flight-v1/report.json",
+    "sha256": "981a8916c9aa582d437186c58712974beea0bde94c4bc6c647788678494221f0",
+    "status": "PASS_SELECTED_NATIVE_CASES",
+    "nativeBodyBearings": 8
+  },
+  "artStyle": {
+    "status": "STYLE_REVIEW_PENDING",
+    "activation": "NOT_INSTALLED",
+    "review": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-samples/Yuri-Clean-Art-Review-v2.html",
+    "reviewSha256": "34c30c07bb1f9080d52259224f13c98a42fd7b3aa684afde2990cffe6c24e2eb",
+    "families": [
+      {
+        "name": "MIND",
+        "scope": "Complete vehicle",
+        "accepted": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/MIND-mind-DUMMY01/authored-v1.png",
+        "acceptedSha256": "9c9ed558debc4374f2ade49d263189baf98682913ba06f064f2715482df558b5",
+        "sample": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-samples/MIND-clean-v1.png",
+        "sampleSha256": "f1b71d600297fce58a9b857301b926dd4704aa8269bed2f0008b7f81e07bf648",
+        "promptSha256": "6110a1d6a1be4fac06a25784754415d714bd0bfa7292aaf369bfea1705a0686d"
+      },
+      {
+        "name": "LTNK",
+        "scope": "Chassis only; turret and barrel are separate accepted components",
+        "accepted": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/LTNK-ltnk-DUMMY01/authored-v1.png",
+        "acceptedSha256": "d97b54a97b4c733c040557f3ce0427a0e58154488849a9651440ef235d45c475",
+        "sample": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-samples/LTNK-clean-v1.png",
+        "sampleSha256": "0bff093ab38c0ea4188df1456383bf939b82a4faea1c5a265058aec29097c124",
+        "promptSha256": "a04655d1b17d06f78e91a22b0ce621f92c791bd8d84d700a12dacedc8ea8adc3"
+      },
+      {
+        "name": "YTNK",
+        "scope": "Chassis only; turret and barrel are separate accepted components",
+        "accepted": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/vxl-production-v1/masters/YTNK-ytnk-DUMMY01/authored-v1.png",
+        "acceptedSha256": "58374cef31b1b5986815ef5fab5107312a6e910285f6777b27c7f698d6549632",
+        "sample": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-samples/YTNK-clean-v1.png",
+        "sampleSha256": "6b392992e0158eeb8704124c186e35ba270cf9f82e61cb8bd625e87dedfef217",
+        "promptSha256": "3b50b395f4d0d53a1ae61d784531c4652075f7cc62d3a1f2b0aaf2965f319e42"
+      }
+    ],
+    "portableReview": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/package-v4/RA2-HD-Yuri-Units-D-R2/Review/Yuri-Clean-Art-Review-v2.html",
+    "ui": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-review-ui-v2/result.json",
+    "generationProvenance": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/art-samples/generation-provenance-v1.json"
+  },
+  "tests": {
+    "feedbackEffects": "7 PASS / 60 expectations",
+    "relatedRulesAndMindControl": "11 PASS / 41 expectations",
+    "rhinoGeometry": "3 PASS",
+    "helicopterGeometry": "2 PASS / 627 expectations",
+    "entryTypecheck": "PASS",
+    "historicalFixtureException": {
+      "status": "MISSING_HISTORICAL_RESOURCE",
+      "test": "Soviet correction retains all body, deployment, tail rotor and atlas records",
+      "missing": ".local/hd-packs/yr-soviet-schp-vxl/owner-r3/manifest.json",
+      "disclosure": "The broader attempt recorded this failure; the two relevant geometry tests passed separately."
+    }
+  },
+  "acceptedBatchArt": "PRESERVED_FULL_BATCH_VISUAL_ACCEPTED",
+  "correctionVisualAcceptance": "USER_REVIEW_PENDING",
+  "simulationScope": "Restore ignored native TurretSpins and caster-centered AreaFire; preserve retail rule files, damage, cooldowns, camera and logical geometry.",
+  "runtimeExceptions": [
+    {
+      "identity": "YURIPR",
+      "state": "PsiWave deployment",
+      "status": "UPSTREAM_GAMEPLAY_EXCEPTION",
+      "detail": "The baseline PsiWave path can destroy the caster. Native movement and mind control are verified; no PsiWave gameplay repair or PASS claim."
+    },
+    {
+      "identity": "DISK",
+      "state": "Refinery money payment",
+      "status": "NATIVE_RUNTIME_FAILURE_RECORDED",
+      "detail": "Native refinery drain is acquired briefly, but no payment is observed. The continuous drain range check ends it before DrainMoneyFrameDelay. Flight, HD body/turret and power blackout are verified. No gameplay/rules change.",
+      "evidence": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/runtime-actions-disk-miner-v4/report.json",
+      "diagnosis": "Observed drain at ticks 838 and 842, actor tile 59/85, refinery tile 55/84, unchanged credits 10000. Flight/attack versus continuous drain range mismatch is an inference; final money collection remains failed."
+    }
+  ],
+  "integration_status": "NOT_MERGED",
+  "platformStatus": {
+    "macOSArm64": "COPIED_APP_SELECTED_NATIVE_2X_AND_4X_VERIFIED",
+    "signing": "LOCAL_AD_HOC",
+    "windows": "NOT_RUN"
+  },
+  "integrationManifest": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/integration-resource-manifest-v4.json",
+  "finalDeliveryReceipt": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r2/package-v4/final-delivery-receipt-v2.json"
+}

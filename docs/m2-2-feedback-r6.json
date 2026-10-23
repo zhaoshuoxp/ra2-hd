@@ -1,0 +1,507 @@
+{
+  "schema": "m2-2-feedback-delivery-v1",
+  "status": "TARGETED_CORRECTIONS_TECHNICAL_PASS_VISUAL_REVIEW_READY",
+  "runtimeSourceHead": "fc89fe9b01a3ffc1d9586c5f215d1ca227b74184",
+  "mainHead": "7533e13ed8f19edd4cc888e44baf416acede3478",
+  "selectedTerrain": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-2-environment-v7",
+    "sha256": "e507c0b05f39855dd2c898b5e2659931fa5017ac32e7f518b03dd32959b9a663"
+  },
+  "selectedEnvironment": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-2-complete-v4",
+    "sha256": "2a00c83b052c8c29d04b66fd509c82a9816396345fe8eb6ccd294ed3cf1f241f"
+  },
+  "exactPreservedTerrainGroups": [
+    "ground",
+    "road-representative",
+    "elevation-representative",
+    "m2-2-thickgrass",
+    "m2-2-pavecrop",
+    "m2-2-dirtroads"
+  ],
+  "exactPreservedSHPFamilies": [
+    "environment-tree05",
+    "environment-trff02",
+    "environment-trff03",
+    "environment-trff01",
+    "environment-tree03",
+    "environment-tree16",
+    "environment-lt_sgn04",
+    "environment-lt_sgn01",
+    "environment-tree01",
+    "environment-tree08",
+    "environment-tree04",
+    "environment-tree09",
+    "environment-tibtre01",
+    "environment-tree06",
+    "environment-tree07",
+    "environment-tree10",
+    "environment-tree11",
+    "environment-trff04",
+    "environment-tree18",
+    "environment-tree15",
+    "environment-tree13",
+    "environment-hdstn01",
+    "environment-tree02",
+    "environment-tree12",
+    "environment-tree17",
+    "environment-tree19",
+    "environment-tree22",
+    "environment-tree21",
+    "environment-pole02",
+    "environment-tree28",
+    "environment-ctbhut",
+    "environment-ctgas01",
+    "environment-ctind01",
+    "environment-ctmsc10",
+    "environment-ctmisc05",
+    "environment-ctts01",
+    "environment-ctmisc04",
+    "environment-ctmsc02",
+    "environment-ctmisc03",
+    "environment-ctpark01",
+    "environment-cttexs08",
+    "environment-cttexs07",
+    "environment-cttexs06",
+    "environment-ctpars06",
+    "environment-ctmiam01",
+    "environment-ctmiam03",
+    "environment-ctmiam02",
+    "environment-ctpars14",
+    "environment-ctpars13",
+    "environment-ctpars10",
+    "environment-ctstl03",
+    "environment-ctwash18",
+    "environment-cthosp",
+    "environment-cthse01",
+    "environment-cthse02",
+    "environment-cthse03",
+    "environment-ctarmy02",
+    "environment-ctmsc06",
+    "environment-ctnwy26",
+    "environment-ctnwy25",
+    "environment-ctchig03",
+    "environment-cteuro05",
+    "environment-ctfrma",
+    "environment-ctpark02",
+    "environment-ctfarm01",
+    "environment-ctfarm02",
+    "environment-ctpark03",
+    "environment-ctmsc04",
+    "environment-ctmsc05",
+    "environment-ctrus11",
+    "environment-ctnewy20",
+    "environment-ctmsc11",
+    "environment-ctwt01",
+    "environment-ctarmy01",
+    "environment-cthse05",
+    "environment-ctfrmb",
+    "environment-ctstrt05",
+    "environment-cow",
+    "environment-trock01",
+    "environment-trock02",
+    "environment-trock04",
+    "environment-trock03",
+    "environment-trock05",
+    "environment-srock05",
+    "environment-srock04",
+    "environment-srock02",
+    "environment-ctfncb",
+    "environment-srock01",
+    "environment-srock03",
+    "environment-lobrdg",
+    "environment-ctkrmw",
+    "environment-ctfncw"
+  ],
+  "changedSHPFamilies": [
+    "environment-wb04x",
+    "environment-wb01x",
+    "environment-tree14",
+    "environment-ore",
+    "environment-gem",
+    "environment-lobrdb"
+  ],
+  "acceptedOutsideFeedback": true,
+  "newVisualAcceptance": "PENDING_USER_REVIEW",
+  "nativeReports": {
+    "4X": {
+      "path": ".artifacts/m2-2/copied-feedback-4x-r6b/report.json",
+      "sha256": "5914a3dec9c4d98b92ca6815ef27547dcc37d174395528e56eebae401a172a5a"
+    },
+    "2X": {
+      "path": ".artifacts/m2-2/copied-feedback-2x-r6b/report.json",
+      "sha256": "87de7b6dc35cf821c0a8df23bfa213e0ab64df306f6cb5312dd99b1b849ae797"
+    },
+    "RA2-2X": {
+      "path": ".artifacts/m2-2/copied-feedback-ra2-2x-r6b/report.json",
+      "sha256": "78ab66d6f0269fa2299cd74ea9822167ba37ebc6edc67674928deeac84c06715"
+    }
+  },
+  "nativeResults": {
+    "4X": {
+      "combinedAllocation": {
+        "terrain": 507796748,
+        "environment": 292124932,
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 42564012,
+        "total": 984423920,
+        "limit": 1342177280
+      },
+      "focusedFrameTiming": [
+        {
+          "scene": "bridge",
+          "samples": 180,
+          "meanMs": 16.661888888888885,
+          "p95Ms": 18.24000000000524,
+          "over50Ms": 0
+        },
+        {
+          "scene": "water-shore",
+          "samples": 180,
+          "meanMs": 16.667500000000008,
+          "p95Ms": 17.849999999998545,
+          "over50Ms": 0
+        },
+        {
+          "scene": "waterfall",
+          "samples": 180,
+          "meanMs": 16.667555555555534,
+          "p95Ms": 18.31999999999971,
+          "over50Ms": 0
+        }
+      ],
+      "glError": 0
+    },
+    "2X": {
+      "combinedAllocation": {
+        "terrain": 130080012,
+        "environment": 74856308,
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 10957216,
+        "total": 256128816,
+        "limit": 268435456
+      },
+      "focusedFrameTiming": [
+        {
+          "scene": "bridge",
+          "samples": 180,
+          "meanMs": 16.66413888888888,
+          "p95Ms": 18.275000000001455,
+          "over50Ms": 0
+        },
+        {
+          "scene": "water-shore",
+          "samples": 180,
+          "meanMs": 16.667500000000008,
+          "p95Ms": 17.87999999999738,
+          "over50Ms": 0
+        },
+        {
+          "scene": "waterfall",
+          "samples": 180,
+          "meanMs": 16.667722222222196,
+          "p95Ms": 17.989999999997963,
+          "over50Ms": 0
+        }
+      ],
+      "glError": 0
+    },
+    "RA2-2X": {
+      "combinedAllocation": {
+        "terrain": 130080012,
+        "environment": 74856308,
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 9965356,
+        "total": 255136956,
+        "limit": 268435456
+      },
+      "focusedFrameTiming": null,
+      "glError": 0
+    }
+  },
+  "ownerColor": {
+    "status": "PASS_TWO_NATIVE_OCCUPIER_PLAYERS_AND_NEUTRAL_EVACUATION",
+    "players": [
+      {
+        "owner": "Player 1",
+        "color": {
+          "r": 255,
+          "g": 24,
+          "b": 24
+        }
+      },
+      {
+        "owner": "@@AI4@@",
+        "color": {
+          "r": 34,
+          "g": 105,
+          "b": 212
+        }
+      }
+    ],
+    "boundary": "Retail remap regions use the occupier player color, not a fixed faction tint. Enemy selection/orders are created by native ActionsApi and processed directly; both fixture players have revealed shroud. Simulation tasks perform garrison ownership changes."
+  },
+  "willowShadow": {
+    "filteredNativeContour": true,
+    "opacity": 0.38,
+    "material": "ShpShadowMaterial",
+    "nativeFrame": 64,
+    "position": [
+      27136,
+      522.6578117937447,
+      22784
+    ]
+  },
+  "bridgeBands": [
+    {
+      "name": "LOBRDB23",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB25",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB23",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB25",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    },
+    {
+      "name": "LOBRDB10",
+      "renderOrder": -1,
+      "orderedCoverage": true,
+      "depthTest": false,
+      "depthWrite": false
+    }
+  ],
+  "delivery": {
+    "app": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R6b-20261007-macOS-arm64/RA2 HD M2.2 Temperate Showcase R6b.app",
+    "resources": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R6b-20261007-macOS-arm64/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R6b-20261007-macOS-arm64/RA2-HD-UI-Resources",
+    "runtimeSourceHead": "fc89fe9b01a3ffc1d9586c5f215d1ca227b74184",
+    "packageReceipt": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/package-feedback-r6b/package-receipt.json"
+  },
+  "copyVerification": {
+    "path": ".artifacts/m2-2/copied-feedback-r6b-verification.json",
+    "sha256": "5dc34fb30b7c690d8e1819f1f91e014bced4a8a0bde7e8e20a8e12c7fed63b6a"
+  },
+  "sharedParity": {
+    "path": ".artifacts/m2-2/copied-feedback-r6b-parity-v2.json",
+    "sha256": "aaf1fdba0416685c7d2d98bd7c1ed2c8df3cbc89dec16499edbd70d153a5f4de"
+  },
+  "signature": {
+    "path": ".artifacts/m2-2/copied-feedback-r6b-signature.log",
+    "sha256": "c337f0864960d15b2b149bd21d0d856eebd78a223e5630faf133255bfb4cf1ed"
+  },
+  "offlineReview": {
+    "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Feedback-Offline-R6-20261007/M2.2-R6-Feedback-Offline.html",
+    "sha256": "5658839f913daeee25b41fd9a5277dd80cb8ce4f1ed9f51670b89361204b8227",
+    "bytes": 183749425,
+    "counts": {
+      "scenes": 6,
+      "states": 8,
+      "clips": 4
+    },
+    "imagesVerified": 32,
+    "clipsVerified": 4,
+    "networkRequests": 0,
+    "receipt": {
+      "path": ".artifacts/m2-2/feedback-offline-r6/review.json",
+      "sha256": "65fbbaec3eee424634ac28a6ba6ede813a7ea246c393df67212b8c150019e1db"
+    },
+    "qa": {
+      "path": ".artifacts/m2-2/feedback-offline-qa-r6/qa.json",
+      "sha256": "fa11a8e4e128e15fba802ad9b01bd841d5311c543b5334a3fbff6e249ec98963"
+    },
+    "requiresServer": false,
+    "requiresSiblingMedia": false
+  },
+  "sourceTests": {
+    "status": "PASS",
+    "tests": 24,
+    "expectations": 636,
+    "log": {
+      "path": ".artifacts/m2-2/feedback-r6b-tests-v2.log",
+      "sha256": "3968c17d959f2b748bf2c32fb38531217fa302ea06c495306d6b4d1ae7695c0b"
+    },
+    "typecheck": {
+      "path": ".artifacts/m2-2/feedback-r6b-typecheck.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    }
+  },
+  "staticChecks": [
+    {
+      "path": ".artifacts/m2-2/feedback-r5d-water-material-audit.json",
+      "sha256": "4fba273102b6eda10fb669318a988ceedf29e22b75aef9a859ecd3c51683545f"
+    },
+    {
+      "path": ".artifacts/m2-2/terrain-feedback-r5d-assembly.json",
+      "sha256": "92e146c53680efd40b1632a4416948a5693152eaf0942e1f62b10004cfd6e7f4"
+    },
+    {
+      "path": ".artifacts/m2-2/environment-feedback-r5c-assembly.json",
+      "sha256": "9160b59ba52b25cb8b3a9e41cdd962fdd1e6688db052cfec4361239b19d4d334"
+    },
+    {
+      "path": ".artifacts/m2-2/shp-feedback-r5c-validation.json",
+      "sha256": "987882987b6437b5e5fb250ad7912f5e8f6d3b8c709788d2b09c573ad4355ad6"
+    },
+    {
+      "path": ".artifacts/m2-2/environment-feedback-r5c-validation.json",
+      "sha256": "7847d7816ec77873f9d402179724c202da15481266dc2a55602b352b85512b46"
+    },
+    {
+      "path": ".artifacts/m2-2/feedback-r6b-bridge-color-measurement.json",
+      "sha256": "14f05100397da9f570b7603b6bd181e6ba0d7f1107e3cdf6a25e92457b73c565"
+    }
+  ],
+  "resourceTransfer": {
+    "path": "docs/m2-2-resource-transfer.json",
+    "sha256": "b125a1597939b2bbb23e7de31b41e426ac5be3b49e6b87b655961db740d35d97"
+  },
+  "retainedDiagnostics": [
+    {
+      "path": ".artifacts/m2-2/copied-feedback-4x-r5-v2/report.json",
+      "sha256": "9cfdfeb3af83f7ca5bd112c5338612446932e952391d4d16e849c2e6802abffd",
+      "status": "FAIL"
+    },
+    {
+      "path": ".artifacts/m2-2/copied-feedback-4x-r6/report.json",
+      "sha256": "6180ec556657396747caaf1e9f1b5b2add2acc83ef508f7f046eca868931f989",
+      "status": "FAIL"
+    },
+    {
+      "path": ".artifacts/m2-2/copied-feedback-depth-diagnostic-r6/report.json",
+      "sha256": "b99e3266b05f20e64cbbf8ce8ed1e36f156fe04ed4f51bab51719da5b3e473bc",
+      "status": "PASS_SELECTED_NATIVE_CASES"
+    },
+    {
+      "path": ".artifacts/m2-2/feedback-r6b-tests.log",
+      "sha256": "0c6aa9ed98d833990562a4daafe0fadf69a37258d459d3cca9afe5f505fc0b2e",
+      "status": "FAIL_RETAINED"
+    },
+    {
+      "path": ".artifacts/m2-2/copied-feedback-r6b-parity.log",
+      "sha256": "3b768b0ad303c68ca31b30ff50f36c88037c5cdb7989a083d0d61fee8e0b888d",
+      "status": "FAIL_RETAINED"
+    }
+  ],
+  "boundary": "Reuses closed R4 gameplay/acceptance matrices for unchanged content. New focused copied YR 2X/4X actions and RA2 static bindings pass. Rules, maps, native geometry, ticks and fixed budgets are preserved. No natural-match or Windows/physical-input certification is inferred. Main promotion awaits combined visual acceptance; no push, cleanup or publication.",
+  "supplementalDeliveryDocumentation": {
+    "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R6b-20261007-macOS-arm64/Feedback-Review.txt",
+    "sha256": "e600ba1d76ff1b8fa5d18e004a1b3f88ff6cf691ff3524f5ac2274a2078aa70b",
+    "bytes": 651,
+    "boundary": "Additive handoff text outside the signed app; the immutable package payload receipt remains unchanged."
+  }
+}

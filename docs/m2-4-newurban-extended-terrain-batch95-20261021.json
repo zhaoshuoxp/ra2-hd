@@ -1,0 +1,183 @@
+{
+  "status": "PASS_36_SOURCE_MEMBERS_72_NATIVE_PATHS_AND_EXACT_INHERITED_FILTER_GUARDS",
+  "candidate": {
+    "schemaVersion": 1,
+    "revision": "newurban-m2-4-extended-cliff-reuse-batch95-v4",
+    "sha256": "0ed8981ec0d607b8be279a1ff52dc50d5a0ef0742fc6c906a6817bd397ded001"
+  },
+  "runtimeSourceCommit": "359ccbe6c6abfce517ef9e0813e4cd711d7f5601",
+  "finalStage": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/active-stage-v1.json",
+    "sha256": "2e3c8db64490b1cd5bc644beb40179199643aee2a97e4cac2a614d1edc3bcfa1",
+    "bytes": 1108
+  },
+  "newCompleteSourceMembers": 36,
+  "newCompleteLoadFamilies": 6,
+  "selectedLoadGroups": 98,
+  "scope": {
+    "extendedNaturalCliffs": 33,
+    "naturalWaterCliff": 1,
+    "baseballField": 1,
+    "secondaryRoadCurve": 1
+  },
+  "sourceDensitySlots": 302,
+  "authoredDensitySlots": 266,
+  "originalUnreferencedCompatibilityDensitySlots": 36,
+  "priorGroupsRetained": 92,
+  "priorDensitySamplesAndFilterGuardsExact": 3588,
+  "losslessPrior4xRawBytesSaved": 29748480,
+  "new4xRawBytes": 27413888,
+  "nativeReports": [
+    {
+      "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/native-2x-v1/report.json",
+      "sha256": "7f1c10c4e7ebbf3d76f6075d49985f4cea16434fd2f1b633a7262303b4c1b8bf",
+      "bytes": 39685746
+    },
+    {
+      "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/native-4x-v1/report.json",
+      "sha256": "a145e621fab36acfd1420eb6a2ea263f626d84768b311d5811f146a0aa6eee77",
+      "bytes": 50135391
+    }
+  ],
+  "worldPeakBytes": {
+    "2": 335724936,
+    "4": 1276428760
+  },
+  "preparedPeakBytes": {
+    "2": 45156556,
+    "4": 108112788
+  },
+  "budgets": {
+    "world2x": 536870912,
+    "world4x": 1342177280,
+    "preparedCpu": 134217728,
+    "ui": 16777216
+  },
+  "preparedRegistration": {
+    "type": "prepared-hd-registered",
+    "members": 453,
+    "pages": 1205,
+    "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+  },
+  "preparedDependencies": "All 453 prepared members and 1205 pages have unchanged actual source inputs. Terrain atlases are separately registered raw resources. No stale cache hash or version is substituted.",
+  "staticAudit": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/static-audit-v3.json",
+    "sha256": "6f06eb5d7bdf92ffc84d2671d661a105c085f86befd7f386a7dad81b51cf0b0a",
+    "bytes": 23840
+  },
+  "targetNativeMetadata": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/target-native-metadata-v3.json",
+    "sha256": "01fb81843d95f94f8279aa04d27d4685bdc9ac4d3a47cb293e8247f5ea5788a6",
+    "bytes": 218072
+  },
+  "filterGuards": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/inherited-filter-guards-v3.json",
+    "sha256": "a64a7101dbfe38575762a2ee26207be4ee40866afa3a31d1483ad351dc3cad7f",
+    "bytes": 722375
+  },
+  "waterSourceVisibility": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/water-source-visibility-v1.json",
+    "sha256": "f27740f9a7320bd2f2ddf699f2c0349ae717c4f121d05e8203adaffb16941df2",
+    "bytes": 1082
+  },
+  "tests": {
+    "passCount": 4,
+    "assertions": 392,
+    "log": {
+      "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/targeted-tests-v1.log",
+      "sha256": "71d4816caaa7af652f34fe4c01d937509930678d8bd98e100d3441dc6de678b1",
+      "bytes": 496
+    }
+  },
+  "typecheck": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/typecheck-v1.log",
+    "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+    "bytes": 39
+  },
+  "buildIdentity": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/build-newurban-extended-terrain-batch95-v1/identity.json",
+    "sha256": "2656668f8eb2eb80697f1acd25f2870299ec8c51a727d70a204f60056105ae1b",
+    "bytes": 31103
+  },
+  "inventory": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/inventory-reconciliation-v1.json",
+    "sha256": "f5e98e580803eaf5eb0690bdb3e7881eb4f6d04d909195969a7545d291e3dd46",
+    "bytes": 94213
+  },
+  "priorBatchAcceptance": {
+    "file": ".artifacts/m2-4/newurban-secondary-terrain-reuse-batch94-20261021/user-acceptance-20261021.json",
+    "sha256": "48e8ad508db42a11c71b850ab2b4ee9c995abc3eb0bc5b1ed0328bae00a9727b",
+    "bytes": 1477
+  },
+  "remainingAuthoredNewUrbanGroups": 37,
+  "remainingByKind": {
+    "tmp": 21,
+    "infantry": 2,
+    "building": 13,
+    "overlay": 1
+  },
+  "conditionalDependencyGroups": 22,
+  "deferredOriginalSlopes": [
+    "prslpe01.ubn",
+    "prslpe02.ubn",
+    "prslpe03.ubn",
+    "prslpe04.ubn"
+  ],
+  "slopeFollowup": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/wide-road-slope-followup-v1.json",
+    "sha256": "c7253a9905332bef48bfbb7ba86ef3b3fc527001748b9c86e98aa282282e8d72",
+    "bytes": 7622
+  },
+  "review": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/review-v3/M2.4-NewUrban-Extended-Terrain-Batch95-Embedded.html",
+    "sha256": "7dd62cd3a83f1515bec6ac091009c22f36ece6c2f1eabbb6c50f22ddef883488",
+    "bytes": 101358933
+  },
+  "reviewMetadata": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/review-v3/review-metadata-v1.json",
+    "sha256": "ee93c24673f496ad70fb8195d0795226c5a1afa76625433088229da88970b384",
+    "bytes": 57438
+  },
+  "selectedNewMothers": 0,
+  "originalRgbUsedAsHdDetail": false,
+  "applicationChanges": [
+    "desktop/terrain-theater-hd-contracts.json"
+  ],
+  "sharedRuntimeCodeChanged": false,
+  "inheritedArtwork": "ACCEPTED",
+  "changedVisualStatus": "USER_ACCEPTED_20261021",
+  "windows": "NOT_RUN",
+  "mainIntegration": "NOT_PERFORMED",
+  "m24Complete": false,
+  "technicalClosure": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/coverage-and-native-closure-v2.json",
+    "sha256": "c020721fd988d2aae257890928811f0b9cc1cd1fb8c698c4f91a466d3a3b6ddf",
+    "bytes": 30864
+  },
+  "resourceLedger": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/resource-handoff-v1.json",
+    "sha256": "28a2fa47ea2bc8dd0653433b3b491bb1beb2bb339e0c8aacdd0fa740471e3d20",
+    "bytes": 12096671
+  },
+  "resourceFileCount": 47100,
+  "desktopDelivery": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/desktop-delivery-v1.json",
+    "sha256": "2d13607d8d51c18a9290a8cad817d0ffdc9f173eeb6d48ec8c80705e41596dc8",
+    "bytes": 2574
+  },
+  "desktopReview": "/Users/Aone/Desktop/M2.4-Review-NewUrban-Extended-Terrain-Batch95-20261021/M2.4-NewUrban-Extended-Terrain-Batch95-Embedded.html",
+  "desktopTotalBytes": 113513042,
+  "mainAtHandoff": {
+    "head": "95d6f9e96cbc783bfe020748dffc1883422d781b",
+    "clean": false,
+    "porcelain": " M AGENTS.md\n M desktop/allied-unit-contracts.json\n M desktop/prepared-hd-contract.json\n M src/engine/renderable/entity/Anim.ts\n M src/gui/screen/mainMenu/component/OriginalMenuFootage.tsx\n?? public/res/presentation/menu-retail-foreground-r4.png\n?? scripts/ui/export-retail-menu-mask-r4.mjs\n?? scripts/ui/inspect-feedback-r4.ts\n?? scripts/ui/repair-gi-death-registration.mjs\n?? scripts/ui/validate-feedback-r4-native.mjs\n?? src/engine/renderable/entity/CommandMarkerHd.ts\n",
+    "changedByTask": false
+  },
+  "perBatchGamePackage": "NOT_CREATED_USER_REQUEST_HTML_ONLY",
+  "finalIndependentMilestoneApplication": "PENDING_FULL_SCOPE_AND_ACCEPTANCE",
+  "userAcceptance": {
+    "file": ".artifacts/m2-4/newurban-remaining-terrain-reuse-batch95-20261021/user-acceptance-20261021.json",
+    "sha256": "1ffd57354d10d7494c20e52fd7e8bd8b936fafd1a5a209299235a57b2c2dff13",
+    "bytes": 1307
+  }
+}

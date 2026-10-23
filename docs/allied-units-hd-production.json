@@ -1,0 +1,400 @@
+{
+  "status": "PASS_TASK_B_SELECTED_TECHNICAL_CHECKS_FINAL_USER_ACCEPTANCE_PENDING",
+  "shpBoards": {
+    "E1": {
+      "plannedBoards": 17,
+      "generatedBoards": 17
+    },
+    "JUMPJET": {
+      "plannedBoards": 17,
+      "generatedBoards": 17
+    },
+    "CLEG": {
+      "plannedBoards": 10,
+      "generatedBoards": 10
+    },
+    "SPY": {
+      "plannedBoards": 10,
+      "generatedBoards": 10
+    },
+    "SNIPE": {
+      "plannedBoards": 14,
+      "generatedBoards": 14
+    },
+    "TANY": {
+      "plannedBoards": 23,
+      "generatedBoards": 23
+    },
+    "ADOG": {
+      "plannedBoards": 9,
+      "generatedBoards": 9
+    },
+    "DLPH": {
+      "plannedBoards": 4,
+      "generatedBoards": 4
+    },
+    "GHOST": {
+      "plannedBoards": 24,
+      "generatedBoards": 24
+    },
+    "GGI": {
+      "plannedBoards": 16,
+      "generatedBoards": 16
+    }
+  },
+  "completeStagedShp": [
+    "GGI",
+    "DLPH",
+    "E1",
+    "ADOG",
+    "TANY",
+    "JUMPJET",
+    "CLEG",
+    "SPY",
+    "GHOST",
+    "SNIPE"
+  ],
+  "completeStagedVxl": [
+    "AMCV",
+    "MTNK",
+    "AEGIS",
+    "LCRF",
+    "TNKD",
+    "SREF",
+    "MGTK",
+    "FV",
+    "ORCA",
+    "BEAG",
+    "CARRIER",
+    "DEST",
+    "SHAD",
+    "CMIN",
+    "BFRT",
+    "ROBO"
+  ],
+  "preservation": {
+    "unchangedPins": 43,
+    "changedSourcePins": [
+      "src/engine/renderable/builder/loadSovietUnitsHd.ts",
+      "src/engine/ImageFinder.ts",
+      "desktop/hd-profile.mjs"
+    ]
+  },
+  "verified": [
+    "Source and CPU resolution for the seven selected families",
+    "Accepted DTRUCK default 4x CPU resolver regression",
+    "Shared reuse and allocation: 7 tests passed",
+    "Allied identity and missing-atlas peer preservation: 2 tests passed",
+    "Accepted DRON targeted resolver regression passed",
+    "Entry typecheck passed",
+    "Seven candidate families registered at 2x; old unit availability summary unchanged",
+    "E1 and complete ADOG family: both-edition CPU resolution, disposal and budget fallback passed",
+    "Nine selected families registered at 2x; accepted resource availability unchanged",
+    "GGI and E1 native movement, deployment, damaging attack and undeployment passed in development source",
+    "TANY 619 and JUMPJET 427 slots: both-edition CPU resolution, disposal and budget fallback passed",
+    "TANY and JUMPJET offline native-size slot review UI passed",
+    "Consolidated offline embedded review controls passed; final batch selection pending",
+    "All ten authored SHP families complete; CLEG, SPY, GHOST and SNIPE both-edition CPU resolution, disposal and budget fallback passed",
+    "New aircraft, ship, rotor, miner and vehicle component CPU checks passed; packaged actions remain pending",
+    "All 26 authored candidate families registered at 2x; 43 immutable pins preserved",
+    "30 selected native family cases, including all visible child dependencies, passed in the exact packaged Mac app",
+    "Four RA2/YR temperate/snow mixed cases passed with accepted building and Soviet controls",
+    "Owner remap, selection/occlusion, matched 1080p/4K, opacity/shadows, HD Off/On, fault isolation, disposal and restart passed",
+    "Final 30-root offline review and embedded native action video controls passed"
+  ],
+  "evidence": [
+    {
+      "path": ".artifacts/allied-units/accepted-dtruck-staged-validation-v1.json",
+      "sha256": "977f67813a3599e6617b28363c7598215077e8980acd920ffdba828a91605a1a"
+    },
+    {
+      "path": ".artifacts/allied-units/aegis-staged-validation-v1.json",
+      "sha256": "cc79dd3ea28cbdaeee43fbf2afc9420d8d87a58e807b731c40ccc72c18a68c2d"
+    },
+    {
+      "path": ".artifacts/allied-units/amcv-staged-validation-v1.json",
+      "sha256": "77d47b01d516ee539a74d513b27c25161059d55526c8fcbfb035f54ef4e3e7aa"
+    },
+    {
+      "path": ".artifacts/allied-units/dlph-staged-validation-v1.json",
+      "sha256": "49c7511f54519f3371ad31de78aefb36f471900039f451f0102b7bd7221911e3"
+    },
+    {
+      "path": ".artifacts/allied-units/ggi-staged-validation-v1.json",
+      "sha256": "760fbfca9eb8667d15ca135c662601a4062ff2e5bdc69d46f06820ca244bb875"
+    },
+    {
+      "path": ".artifacts/allied-units/lcrf-staged-validation-v1.json",
+      "sha256": "149b71e5d1d257a60cc64412ec2ee7251846f56f6335953871a991aacd28067b"
+    },
+    {
+      "path": ".artifacts/allied-units/mtnk-staged-validation-v1.json",
+      "sha256": "b72c7dfb333fe4495fe97ffb0cb230ae741a4788e982e05e2eafd45170cb5b9f"
+    },
+    {
+      "path": ".artifacts/allied-units/tnkd-staged-validation-v1.json",
+      "sha256": "0ed1638794e392e9ecaf4edc1cf4b5e335ff3c96df7520fa51c5b03ed7a89dcb"
+    },
+    {
+      "path": ".artifacts/allied-units/registration-v2.json",
+      "sha256": "f8573027b4aa7241983c6d8cdcf6beeb59a6407ebe68ccaed59a6f26c0e55343"
+    },
+    {
+      "path": ".artifacts/allied-units/e1-staged-validation-v1.json",
+      "sha256": "bd5693aa622f68828fad64e00bb0e5a1e8c468e3f543483e12b412d8d260ff26"
+    },
+    {
+      "path": ".artifacts/allied-units/adog-staged-validation-v1.json",
+      "sha256": "a6b8971d989dfe8c86f3f3496d570ba8e0b07804bafeab668fd1a97416cbe68d"
+    },
+    {
+      "path": ".artifacts/allied-units/adogp-staged-validation-v1.json",
+      "sha256": "22675018b75250eceeab59fda2bd77b2a274d41041f014d4e2e1c5b1bb509d4a"
+    },
+    {
+      "path": ".artifacts/allied-units/ggi-staged-validation-v2.json",
+      "sha256": "1bd7bd361c4e60c3808ad3b069e2ae7b073105a83c94f6b851826fd74e65c717"
+    },
+    {
+      "path": ".artifacts/allied-units/registration-v3.json",
+      "sha256": "d30462ba6321a705179d40ab51024bc33274084730a72b400690db345485c0d4"
+    },
+    {
+      "path": ".artifacts/allied-units/dev-deployment-v1/report.json",
+      "sha256": "cb78445d9385ba1e02671c9a22e48d5bdce10c087c4745e9b38bbb92c486b9fe"
+    },
+    {
+      "path": ".artifacts/allied-units/dev-e1-deployment-v1/report.json",
+      "sha256": "ba45dafeffac895b83456f897babcb4f69542758f078e1652ec8f886000668ce"
+    },
+    {
+      "path": ".artifacts/allied-units/tany-cpu-v6.json",
+      "sha256": "027d6c871c0a31977afe4a47f42f2f85cc256e2f4bc93fa44562b61e4f64f1ed"
+    },
+    {
+      "path": ".artifacts/allied-units/rock-cpu-v1.json",
+      "sha256": "be986c00e771396399c686b2cb151b41b252a41b4be563e5df71fb71e3e35458"
+    },
+    {
+      "path": ".artifacts/allied-units/consolidated-preview-v2-ui.json",
+      "sha256": "44300b5468f3f56ec98ee59efa28ebb354f76f96e23a59264d328baffe2e6c22"
+    },
+    {
+      "path": ".artifacts/allied-units/beag-cpu-v1.json",
+      "sha256": "ba14e3071286d0b690727eec38fe653778085fba215d8becfbf11a5e3c8c242a"
+    },
+    {
+      "path": ".artifacts/allied-units/spy-cpu-v1.json",
+      "sha256": "980ccac4d15c98d78168ed00a155a4920101f894fd4da6d92c75ed8770b5a867"
+    },
+    {
+      "path": ".artifacts/allied-units/cmin-cpu-v1.json",
+      "sha256": "fea3b8bfb4ee61a2ad1f5e55e301c7aca34a0cee33ee509443d9bf58629ec80b"
+    },
+    {
+      "path": ".artifacts/allied-units/sref-cpu-v1.json",
+      "sha256": "b8df58afb6b8b364784be9e47338bdfc89970d115ef7eb3a471f5f7309cecf3f"
+    },
+    {
+      "path": ".artifacts/allied-units/cleg-cpu-v2.json",
+      "sha256": "6efef99f9bf3088ef5581ef4a2acb334743ec0821834c44e227ffd28480f87a4"
+    },
+    {
+      "path": ".artifacts/allied-units/bfrt-cpu-v1.json",
+      "sha256": "52a72fbeb6ed897b44345cd03eb291860a9d27bf15c23abb5ad117553fe4e1f3"
+    },
+    {
+      "path": ".artifacts/allied-units/dest-cpu-v1.json",
+      "sha256": "6af813e98e38dd6b832db676a45f7c97a1902e38fe0d7476976dc9ade4361658"
+    },
+    {
+      "path": ".artifacts/allied-units/mgtk-cpu-v1.json",
+      "sha256": "731ce25b4fffeb821fbd471568571810aa9ed3066d4cc2046406c6ea60192783"
+    },
+    {
+      "path": ".artifacts/allied-units/snipe-cpu-v1.json",
+      "sha256": "85d8bb97418ddfb9ea29952848c2b7e0ce8eec0bda001c0f2f2e5088cf46ed10"
+    },
+    {
+      "path": ".artifacts/allied-units/shad-cpu-v1.json",
+      "sha256": "9f4b7e6d4102a1159c94e0a14aba792d60f88b3ee46cc7bb94689ea541ff7c23"
+    },
+    {
+      "path": ".artifacts/allied-units/fv-cpu-v1.json",
+      "sha256": "2a7f26ee04c16b1c0c6670e1e1e6086bbaf8c25de302d36716568eaebb493b42"
+    },
+    {
+      "path": ".artifacts/allied-units/ghost-cpu-v2.json",
+      "sha256": "28218d20006bdf2df3d45d7a4ceb2872d42b15897c75ee011bbf4b838c9a26e3"
+    },
+    {
+      "path": ".artifacts/allied-units/orca-cpu-v2.json",
+      "sha256": "9b256f4a240f49fbe72e6d88cbfd92c02bf01bb3f22b0b357f0a3f6b23e226cc"
+    },
+    {
+      "path": ".artifacts/allied-units/carrier-cpu-v1.json",
+      "sha256": "b25c42a2e52cc32997f0ad2df1e92db2c2194d18254eab21b72aeab3a24d9684"
+    },
+    {
+      "path": ".artifacts/allied-units/production-vxl-review-v3/CMIN/html-check.json",
+      "sha256": "5c656833a9143c8455318c8c8646d72d4196208ebc82d7cd7c63b34499f4a5d0"
+    },
+    {
+      "path": ".artifacts/allied-units/production-vxl-review-v3/SHAD/html-check.json",
+      "sha256": "5c656833a9143c8455318c8c8646d72d4196208ebc82d7cd7c63b34499f4a5d0"
+    },
+    {
+      "path": ".artifacts/allied-units/production-vxl-review-v3/FV/html-check.json",
+      "sha256": "cee80256e4f589e63a55342cc8c24732b47a63336bf12ef5cb94567dcaaeb4ec"
+    },
+    {
+      "path": ".artifacts/allied-units/production-vxl-review-v3/BEAG/html-check.json",
+      "sha256": "d31e1684c56c18a7c2743160c065ac98bbc1472a8bcf5bfd80305198dd3a433c"
+    },
+    {
+      "path": ".artifacts/allied-units/production-vxl-review-v3/MGTK/html-check.json",
+      "sha256": "d31e1684c56c18a7c2743160c065ac98bbc1472a8bcf5bfd80305198dd3a433c"
+    },
+    {
+      "path": ".artifacts/allied-units/production-vxl-review-v3/SREF/html-check.json",
+      "sha256": "cee80256e4f589e63a55342cc8c24732b47a63336bf12ef5cb94567dcaaeb4ec"
+    },
+    {
+      "path": ".artifacts/allied-units/production-vxl-review-v3/DEST/html-check.json",
+      "sha256": "5c656833a9143c8455318c8c8646d72d4196208ebc82d7cd7c63b34499f4a5d0"
+    },
+    {
+      "path": ".artifacts/allied-units/production-vxl-review-v3/CARRIER/html-check.json",
+      "sha256": "e0e3c7d2a740d311895fa5cf71fe8896a1146793d79db20f20d62a376b863ad5"
+    },
+    {
+      "path": ".artifacts/allied-units/production-vxl-review-v3/ORCA/html-check.json",
+      "sha256": "d31e1684c56c18a7c2743160c065ac98bbc1472a8bcf5bfd80305198dd3a433c"
+    },
+    {
+      "path": ".artifacts/allied-units/production-review-v22/GHOST/html-check.json",
+      "sha256": "1bced4758a8b06ea8c57b6e47b040bd95ae45cdae732649986609555a2c189b4"
+    },
+    {
+      "path": ".artifacts/allied-units/production-review-v23/SNIPE/html-check.json",
+      "sha256": "a720ddfd45d0ea8db4dd76f784198dafb0f8c9c7d39c727cad6d00f4da41e4db"
+    },
+    {
+      "path": ".artifacts/allied-units/registration-v5.json",
+      "sha256": "7eb2e741cce0505b4fc096ef4d78714ef45806dde46e4f27ae9cd1484e78afd8"
+    },
+    {
+      "path": ".artifacts/allied-units/robo-cpu-v1.json",
+      "sha256": "a0102c7d34726b5b5666aca0811b62f4b4d06d972789817133c880ca965bebe6"
+    },
+    {
+      "path": ".artifacts/allied-units/production-vxl-review-v3/BFRT/html-check.json",
+      "sha256": "d31e1684c56c18a7c2743160c065ac98bbc1472a8bcf5bfd80305198dd3a433c"
+    },
+    {
+      "path": ".artifacts/allied-units/production-vxl-review-v3/ROBO/html-check.json",
+      "sha256": "e0e3c7d2a740d311895fa5cf71fe8896a1146793d79db20f20d62a376b863ad5"
+    },
+    {
+      "path": ".artifacts/allied-units/native-family-results-v1.json",
+      "sha256": "a65bd2439a2ead538c1f8c55d37be888c38129f0557a6c2634cebdc60f047a06"
+    },
+    {
+      "path": ".artifacts/allied-units/native-combined-v1/report.json",
+      "sha256": "ac75e816c132598d39087d5b1a116149badb5933fae624dc32bc009b3ec87d9d"
+    },
+    {
+      "path": ".artifacts/allied-units/shared-results-v1.json",
+      "sha256": "9e3b2f1ad0cfd03adcc100ffd1f774ce84f15a628c24109acee5ef5cbec5aee2"
+    },
+    {
+      "path": ".artifacts/allied-units/final-review-ui-v1.json",
+      "sha256": "9d9b70b86a73499b85a114eb9a5b79c7e713686f34fcde88cde1d9bb782f557b"
+    },
+    {
+      "path": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "sha256": "6746c2bacfe095a6e57e1cdcabb7de8cb285c05c6763771351910e2a4b0c5518"
+    },
+    {
+      "path": ".artifacts/allied-units/Feedback-Native-Comparison.png",
+      "sha256": "c4dfb95ee2c6d058be0c7d32a9a30c174c5e1daecf993feab0510b5892634709"
+    },
+    {
+      "path": ".artifacts/allied-units/final-package-v1/package-receipt.json",
+      "sha256": "069d1ad12df5260773efcf422b59e7a4f8a52241a8a8fbce57c8eb4f4395e2dc"
+    },
+    {
+      "path": ".artifacts/allied-units/final-build-v1/identity.json",
+      "sha256": "a03fd82bfbbed731e5c79d0adabc07b4c2c3f1d12414a79db2d7649bfd470927"
+    },
+    {
+      "path": ".artifacts/allied-units/delivery-receipt-v1.json",
+      "sha256": "b6f4ec2b4578a1c7ce4a83d3fce9d75dbe64e0210af2518bd1f49e7d0f762f8f"
+    },
+    {
+      "path": ".artifacts/allied-units/production-shp-review-v20/SPY/html-check.json",
+      "sha256": "1d8022ecbc69b0ea93cb3ac1284cb02ea5171c833f100357231acf8498bbf0ac"
+    },
+    {
+      "path": ".artifacts/allied-units/production-shp-review-v20/CLEG/html-check.json",
+      "sha256": "fe5412ebfe507960fb3978ccb104beeb0b018243ab5088daa4e0ed73b1e06265"
+    }
+  ],
+  "delivery": {
+    "newApp": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-units/final-package-v1/RA2-HD-Allied-B-Mac-Test/Red Alert 2 HD Offline Trainer R1.app",
+    "runtimeSourceHead": "9bca90ccdd2b3451a9000bf0b646acd57da3c6a1",
+    "gameplayVerifiedNewFamilies": 26,
+    "gameplayVerifiedRoots": 30,
+    "finalAcceptance": "PENDING_USER_REVIEW",
+    "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+    "receipt": ".artifacts/allied-units/delivery-receipt-v1.json",
+    "gameplayScope": "Controlled native actions in YR for 30 roots; four mixed RA2/YR temperate/snow cases and both-edition CPU resolution where available. Not a natural-match production claim. Unchanged Conscript/Rhino mechanics evidence is reused; old full milestone acceptance was not repeated.",
+    "feedbackCorrectionDelivery": {
+      "status": "PASS_INCREMENTAL_FEEDBACK_RUNTIME_FINAL_USER_ACCEPTANCE_PENDING",
+      "baseline": "8bc3c22",
+      "notes": "docs/allied-units-hd-feedback.md",
+      "selection": ".artifacts/allied-units/selected-candidates-v10.json",
+      "review": ".artifacts/allied-units/Allied-Units-Feedback-Review.html",
+      "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-units/feedback-package-v1/RA2-HD-Allied-B-Corrections/Red Alert 2 HD Offline Trainer R1.app",
+      "packageReceipt": ".artifacts/allied-units/feedback-package-v1/package-receipt.json",
+      "evidence": [
+        ".artifacts/allied-units/feedback-air-v1/report.json",
+        ".artifacts/allied-units/feedback-naval-v1/report.json",
+        ".artifacts/allied-units/feedback-parking-v1/report.json",
+        ".artifacts/allied-units/feedback-quality-v1/report.json",
+        ".artifacts/allied-units/feedback-registration-v1.json",
+        ".artifacts/allied-units/feedback-preservation-v1.json"
+      ],
+      "newVxlDensity": 4,
+      "shpDensity": 2,
+      "artworkRedrawn": false,
+      "sourceAlphaChanged": false,
+      "priorAcceptanceNotRepeated": true
+    }
+  },
+  "openIssues": [
+    "Final user visual acceptance"
+  ],
+  "feedbackCorrections": {
+    "status": "PASS_INCREMENTAL_FEEDBACK_RUNTIME_FINAL_USER_ACCEPTANCE_PENDING",
+    "baseline": "8bc3c22",
+    "notes": "docs/allied-units-hd-feedback.md",
+    "selection": ".artifacts/allied-units/selected-candidates-v10.json",
+    "review": ".artifacts/allied-units/Allied-Units-Feedback-Review.html",
+    "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-units/feedback-package-v1/RA2-HD-Allied-B-Corrections/Red Alert 2 HD Offline Trainer R1.app",
+    "packageReceipt": ".artifacts/allied-units/feedback-package-v1/package-receipt.json",
+    "evidence": [
+      ".artifacts/allied-units/feedback-air-v1/report.json",
+      ".artifacts/allied-units/feedback-naval-v1/report.json",
+      ".artifacts/allied-units/feedback-parking-v1/report.json",
+      ".artifacts/allied-units/feedback-quality-v1/report.json",
+      ".artifacts/allied-units/feedback-registration-v1.json",
+      ".artifacts/allied-units/feedback-preservation-v1.json"
+    ],
+    "newVxlDensity": 4,
+    "shpDensity": 2,
+    "artworkRedrawn": false,
+    "sourceAlphaChanged": false,
+    "priorAcceptanceNotRepeated": true
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "schema": "m2-4-final-accepted-closure-v1",
+  "date": "2026-10-22",
+  "status": "COMPLETE_ACCEPTED_MAC_V02_AND_SCOPED_CLEANUP",
+  "canonicalSource": "/Users/Aone/RA2remaster/ra2-hd",
+  "branch": "main",
+  "runtimeSourceHead": "f1e18d0d38683a054b4258aa59877c6d597e22aa",
+  "acceptedRuntime": "c8074fa92a2a4faca5443caf0822bf0adbe92f78",
+  "runtimeUnchangedByClosureBookkeeping": true,
+  "desktopFolder": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022",
+  "app": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022/Red Alert 2 HD v0.2.app",
+  "review": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022/Review/Open-Review.html",
+  "archive": {
+    "status": "PASS_ZIP64_ALL_PAYLOAD_HASHES_CRC_UNIX_PERMISSIONS_AND_SYMLINKS",
+    "archive": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022.zip",
+    "sha256": "38b3f519c494f3a9dfab0bd051cf3e3f57376886fa20d83d30df54ef8192be05",
+    "bytes": 5895535221,
+    "entries": 14562,
+    "inventorySha256": "bbd95211fbb2a3b6102010021cf5c75fa32552b8ca552dd8613cf3974a659a55",
+    "applicationAndResourcesChanged": false,
+    "publishedOriginalDataBlockers": 0,
+    "historicalHiddenSourceAnomalies": 4,
+    "mutableProfileExcluded": true,
+    "m24Complete": true,
+    "timestampPolicy": "Archive headers clamp timestamps outside ZIP 1980-2107 bounds; original files and contents remain untouched.",
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "reviewLinkCorrection": "Three restored historical link targets only; every previously frozen app/resource/image row remains byte-identical."
+  },
+  "inventory": {
+    "path": "/Users/Aone/Desktop/RA2-HD-M2.4-v0.2-Mac-arm64-20261022/Delivery-Inventory.json",
+    "sha256": "bbd95211fbb2a3b6102010021cf5c75fa32552b8ca552dd8613cf3974a659a55",
+    "fileCount": 14561,
+    "bytes": 10128888155
+  },
+  "publishedOriginalCatalog": {
+    "ra2": 62,
+    "yr": 151,
+    "catalogEntries": 213,
+    "independentMapFiles": 213,
+    "originalModeMemberships": 285,
+    "actualSelectableMaps": 213,
+    "archiveOnlyHidden": 92,
+    "publishedSourceBlockers": 0,
+    "historicalHiddenSourceAnomalies": 4
+  },
+  "visualAcceptance": {
+    "theaters": "USER_ACCEPTED_THROUGH_BATCH98",
+    "resultLettering": "R5_USER_ACCEPTED",
+    "hoverText": "USER_ACCEPTED",
+    "startupNotice": "USER_ACCEPTED_AND_INTEGRATED"
+  },
+  "publicVersion": "v0.2",
+  "bundleVersion": "0.2",
+  "bundleBuild": "24",
+  "engineReplayCompatibility": "UNCHANGED_0.0.1",
+  "freshChecks": {
+    "focusedCases": 27,
+    "assertions": 4061,
+    "typecheck": "PASS",
+    "isolatedBuild": "PASS",
+    "nativePackagedCases": 2,
+    "defaultDesktopStartup": "PASS",
+    "nativeEditions": [
+      "ra2",
+      "yr"
+    ],
+    "nativeDensities": [
+      2,
+      4
+    ],
+    "finalOfflineReview": "PASS_ALL_NESTED_LINKS_AND_EXACT_ACCEPTED_R5_BYTES",
+    "fullZipPayloadHashesCrcModesAndSymlinks": "PASS_14562_ENTRIES",
+    "cleanArchiveArm64Signature": "PASS_DEEP_STRICT"
+  },
+  "reusedEvidence": {
+    "acceptedNativeSources": 301,
+    "previousFiveTheaterLoads": 15,
+    "previousCatalogLanguageNameHoverCases": 6,
+    "acceptedR5RasterCases": 24,
+    "reason": "World inputs and runtime paths are unchanged; published sources are a source-pinned subset."
+  },
+  "postRetirement": {
+    "status": "PASS_CANONICAL_REGISTRATION_AFTER_TASK_AND_INTERMEDIATE_RETIREMENT",
+    "currentSource": "/Users/Aone/RA2remaster/ra2-hd",
+    "resourceRoot": "/Users/Aone/RA2remaster/ra2-hd/.local",
+    "routes": 13728,
+    "selections": 157,
+    "selectedTheaterLayers": 10,
+    "prepared": {
+      "type": "prepared-hd-registered",
+      "members": 448,
+      "pages": 1189,
+      "index": "f993e5c0c3e235e0fdaf57bb74b8590eaac7992f30529763e003885d540ad9b1"
+    },
+    "originalArchivePins": 7,
+    "allRegisteredPathsInsideCanonicalLocal": true,
+    "allRegisteredPathsIndependentOfRetiredTask": true,
+    "acceptedSourceRuntimeUnchanged": true,
+    "originalPolicies": [
+      "unit-sqd",
+      "unit-yuripr"
+    ],
+    "windows": "NOT_RUN_ON_THIS_MAC"
+  },
+  "cleanup": {
+    "schema": "m2-4-final-scoped-retirement-v1",
+    "status": "COMPLETE_SCOPED_DIRECT_RETIREMENT",
+    "date": "2026-10-22",
+    "mainHead": "f1e18d0d38683a054b4258aa59877c6d597e22aa",
+    "deletedTargets": [
+      {
+        "path": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters",
+        "entries": 451695,
+        "logicalBytes": 139157693643
+      },
+      {
+        "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-4",
+        "entries": 47984,
+        "logicalBytes": 43662575690
+      }
+    ],
+    "retiredBranch": "task/m2-4-all-skirmish-theaters",
+    "reachableTaskCommitRetained": "adc98220be44b58c08e965d7dd42ee7d1e6799a4",
+    "remainingBranches": [
+      "main"
+    ],
+    "sourceHistoryPreserved": true,
+    "logicalBytesRemoved": 182820269333,
+    "entriesRemoved": 499679,
+    "freeBytesBefore": 1244405194752,
+    "freeBytesAfter": 1391665860608,
+    "freeSpaceMeaning": "Observed available-space delta, separate from logical bytes; APFS clone/snapshot accounting can differ.",
+    "protectedCanonicalResources": 13978,
+    "protectedMetadataUnchanged": true,
+    "retainedSourceObjects": 34182,
+    "provenanceIndexSha256": "9f7372011f18d5c8dfaf094adca82435bae0cadfc172f12e56902ab93805fc28",
+    "finalArchiveSha256": "38b3f519c494f3a9dfab0bd051cf3e3f57376886fa20d83d30df54ef8192be05",
+    "finalInventorySha256": "bbd95211fbb2a3b6102010021cf5c75fa32552b8ca552dd8613cf3974a659a55",
+    "finalAppAndUserProfilesDeleted": false,
+    "originalSourcesModified": false,
+    "unrelatedDirectoriesDeleted": false,
+    "sourceResourceRegistration": "PASS_CANONICAL_REGISTRATION_AFTER_TASK_AND_INTERMEDIATE_RETIREMENT",
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "remotePush": false,
+    "published": false,
+    "availableBytesGained": 147260665856,
+    "postRetirementRoutes": 13728,
+    "postRetirementPreparedMembers": 448,
+    "postRetirementPreparedPages": 1189,
+    "archiveSha256AtRetirement": "241a522787445bc92bf03ef7863de7211ec7cb1acc477e65e936ab220ba05623",
+    "inventorySha256AtRetirement": "1d20b32be1c2bc36a3cfc9dde2834a7b525148df5b333416d61d0280d77909f7",
+    "postRetirementDocumentationAddition": "Restored three historical gallery link targets; canonical resources, app and accepted image payloads unchanged."
+  },
+  "sourceProvenance": "/Users/Aone/RA2remaster/project-history/m2-4-final-20261022/Provenance",
+  "records": [
+    {
+      "path": "/Users/Aone/RA2remaster/project-history/m2-4-final-20261022/Final-Archive.json",
+      "sha256": "455a04d8d4d064f0fa3be46b52bc48918c7632304d2746e5b11dedba42ab8902",
+      "bytes": 862
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/project-history/m2-4-final-20261022/Clean-Archive-Signature.json",
+      "sha256": "1f591fcec1c23edcd3603f0f4d08db3a3c1e59437ba6727472187bed4ec5a10b",
+      "bytes": 826
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/project-history/m2-4-final-20261022/Final-Cleanup.json",
+      "sha256": "710e3c4f87dd10f1588e64e4447c899cad032fc3dcf08a9a1fe2bb32585b0430",
+      "bytes": 2153
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/project-history/m2-4-final-20261022/Post-Retirement-Registration.json",
+      "sha256": "aca5ed8757c0f577cd81d324a0e7b490a8f6d5f70d833efcce6b9aeb9e433d7f",
+      "bytes": 719
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/project-history/m2-4-final-20261022/Provenance/Retention-Receipt.json",
+      "sha256": "f2b167c5cf43c3dd0b0d2b5bc6c77b515901f6dd8d7b19dd05c564820315adb0",
+      "bytes": 1064
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/project-history/m2-4-final-20261022/Provenance-Restore-Check.json",
+      "sha256": "41abef9ca995f82bd89250690689d12b0c03235a34af812a72a7f0022a1ea9a0",
+      "bytes": 829
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/project-history/m2-4-final-20261022/Final-Review-QA-Link-Fix/report.json",
+      "sha256": "2fb83eb61b4ea9fc4e615430772ffa42b908b2522c7b066d5f12d5520e3cc84f",
+      "bytes": 1437
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/project-history/m2-4-final-20261022/Final-Evidence-Inventory.json",
+      "sha256": "7474db0c1db7ceac6e57711f086512e789848cb2bacbaeca4b9b7f34a34a5645",
+      "bytes": 7528
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/project-history/m2-4-final-20261022/Review-Link-Correction.json",
+      "sha256": "874e0bc0b16e83671a5b5f29ed87c011b2139aaf1cd765533495721650ac5d16",
+      "bytes": 379
+    }
+  ],
+  "currentWorktrees": [
+    "/Users/Aone/RA2remaster/ra2-hd"
+  ],
+  "retiredBranch": "task/m2-4-all-skirmish-theaters",
+  "protected": {
+    "canonicalSelectedDependencies": 13978,
+    "originalArchiveHashes": 7,
+    "priorDesktopDeliveries": true,
+    "userProfiles": true,
+    "outerHistoricalReviews": true,
+    "unrelatedDonorFolders": true,
+    "reachableSourceHistory": true,
+    "acceptedWindowsRepairs": true
+  },
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "ninetyPlusFpsClaimed": false,
+  "remotePush": false,
+  "published": false,
+  "m24Complete": true,
+  "continuation": "Use this conversation for corrections to this accepted outcome; a new objective should start a new conversation.",
+  "reviewLinkCorrection": {
+    "status": "RESTORED_THREE_HISTORICAL_LINK_TARGETS_WITH_HASH_VERIFIED_SOURCES",
+    "changed": [
+      "Review/resource-handoff-v1.json",
+      "Review/final-mode-adaptation-v1.csv",
+      "Review/Final-Actors-Embedded.html",
+      "Delivery-Inventory.json"
+    ],
+    "newPayloadFileCount": 14561,
+    "newPayloadBytes": 10128888155,
+    "runtimeResourceAndAcceptedImageFilesChanged": false
+  },
+  "signatureEvidence": "Prior deep/strict arm64 extraction reused: every app entry is identical and all current ZIP entries are hash/CRC verified."
+}

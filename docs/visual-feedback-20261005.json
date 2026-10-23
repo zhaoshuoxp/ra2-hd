@@ -1,0 +1,578 @@
+{
+  "status": "PASS_SELECTED_COPIED_MAC_AND_HOST_CHECKS_WINDOWS_USER_RETEST_PENDING",
+  "baselineDocumentationHead": "16c62dc",
+  "baselineRuntimeHead": "ebe4798b96ca284f322c6f289ced6f0a7dc23f4a",
+  "artifactRoot": ".artifacts/visual-feedback-20261005",
+  "scope": [
+    "YAYARD owner masks",
+    "BSUB bow water depth",
+    "GAWEAP and YAWEAP delivery occlusion",
+    "YAWEAP DISK open roof",
+    "Yuri pause backdrop",
+    "GAYARD stationary pier material"
+  ],
+  "selectedRevisions": [
+    {
+      "selection": "yuri-yayard-temperate",
+      "predecessorFamily": ".local/hd-packs/yuri-coverage-yayard-temperate/c4-feedback-r4/family.json",
+      "selectedFamily": "hd-packs/yuri-coverage-yayard-temperate/visual-feedback-r1/family.json",
+      "selectedSha256": "232bf27d4ef712c27381d902bb60fb1cc954e3e8e1247a3a5e40083a7048ec5c",
+      "changedMembers": [
+        "ygyard.shp",
+        "ygyard_a.shp",
+        "ygyard_d.shp",
+        "ygyard_c.shp",
+        "ygyard_s.shp",
+        "ygyardmk.shp"
+      ]
+    },
+    {
+      "selection": "yuri-yayard-snow",
+      "predecessorFamily": ".local/hd-packs/yuri-coverage-yayard-snow/c4-feedback-r4/family.json",
+      "selectedFamily": "hd-packs/yuri-coverage-yayard-snow/visual-feedback-r1/family.json",
+      "selectedSha256": "a0769b3b0c53129702ae6e662187cd459d29d533f383b615bfe5c6e3450b0d57",
+      "changedMembers": [
+        "yayard.shp",
+        "yayard_a.shp",
+        "yayard_d.shp",
+        "yayard_c.shp",
+        "yayard_s.shp",
+        "yayardmk.shp"
+      ]
+    },
+    {
+      "selection": "yuri-yaweap-temperate",
+      "predecessorFamily": ".local/hd-packs/yuri-coverage-yaweap-temperate/visual-feedback-r3/family.json",
+      "selectedFamily": "hd-packs/yuri-coverage-yaweap-temperate/visual-feedback-r5/family.json",
+      "selectedSha256": "feeabf7733257e6853683f01f1e9b9f18f215655511a44fe9bd9f7cc94a00270",
+      "changedMembers": [
+        "ygweapbb.shp",
+        "ygweap_2.shp",
+        "ygweap_1.shp",
+        "ygweap_3.shp",
+        "ygweap_4.shp"
+      ]
+    },
+    {
+      "selection": "yuri-yaweap-snow",
+      "predecessorFamily": ".local/hd-packs/yuri-coverage-yaweap-snow/visual-feedback-r3/family.json",
+      "selectedFamily": "hd-packs/yuri-coverage-yaweap-snow/visual-feedback-r5/family.json",
+      "selectedSha256": "8c59ca450443846b2b41d3e7e8a5fea660ef479698180d997b049cc433a15bf7",
+      "changedMembers": [
+        "yaweapbb.shp",
+        "yaweap_2.shp",
+        "yaweap_1.shp",
+        "yaweap_3.shp",
+        "yaweap_4.shp"
+      ]
+    },
+    {
+      "selection": "gaweap-temperate",
+      "predecessorFamily": ".local/hd-packs/allied-coverage-gaweap-temperate/visual-feedback-r2/family.json",
+      "selectedFamily": "hd-packs/allied-coverage-gaweap-temperate/visual-feedback-r3/family.json",
+      "selectedSha256": "3114aebe078fa1e2d6536a3120722523d1f683e946bb913fdcb8684cc31bc869",
+      "changedMembers": [
+        "ggweapbb.shp",
+        "ggweap_2.shp",
+        "ggweap_1.shp"
+      ]
+    },
+    {
+      "selection": "gaweap-snow",
+      "predecessorFamily": ".local/hd-packs/allied-coverage-gaweap-snow/visual-feedback-r2/family.json",
+      "selectedFamily": "hd-packs/allied-coverage-gaweap-snow/visual-feedback-r3/family.json",
+      "selectedSha256": "8cd6c9142a89fa72583c89913acffd94bca054c24c1adc09ad4f567f59ff43e0",
+      "changedMembers": [
+        "gaweapbb.shp",
+        "gaweap_2.shp",
+        "gaweap_1.shp"
+      ]
+    },
+    {
+      "selection": "gayard-temperate",
+      "predecessorFamily": ".local/hd-packs/allied-coverage-gayard-temperate/owner-r3/family.json",
+      "selectedFamily": "hd-packs/allied-coverage-gayard-temperate/visual-feedback-r1/family.json",
+      "selectedSha256": "b158817d5f986930d0ac0e5a6fd276630ed6ee1cb1d626fcf954b75c433b9a71",
+      "changedMembers": [
+        "ggyard_c.shp"
+      ]
+    },
+    {
+      "selection": "gayard-snow",
+      "predecessorFamily": ".local/hd-packs/allied-coverage-gayard-snow/owner-r3/family.json",
+      "selectedFamily": "hd-packs/allied-coverage-gayard-snow/visual-feedback-r1/family.json",
+      "selectedSha256": "172711dd56c32aad52cc81125c89194105a0d98c048d4b730ab6d2922a3723d5",
+      "changedMembers": [
+        "gayard_c.shp"
+      ]
+    }
+  ],
+  "resourceAudit": {
+    "status": "PASS_COMBINED_RESOURCE_AUTHORITY_AND_PREPARED_COMPATIBILITY",
+    "root": "/Users/Aone/RA2remaster/ra2-hd/.local",
+    "uiRoot": "/Users/Aone/RA2remaster/ra2-hd/.local",
+    "cEntries": 33,
+    "dRuntimeFiles": 140,
+    "dRuntimeBytes": 44867062,
+    "uiRevision": "lunar-infantry-ui-v1",
+    "uiEntries": 490,
+    "uiManifestSha256": "a8cf998c042066c05c119a6392e9b703ccd03622d89030e1dbf45089cd90ca18",
+    "preparedInvalidation": "REGENERATED_FOR_SELECTED_VISUAL_FEEDBACK_REVISIONS",
+    "unitPreparation": "EXCLUDED",
+    "routes": 4767,
+    "report": ".artifacts/visual-feedback-20261005/resource-audit-final.json",
+    "preparedRegistration": {
+      "type": "prepared-hd-registered",
+      "members": 459,
+      "pages": 1224,
+      "index": "cc0134a79d4a18350e5f8ba92adddb0773ed400f0f7a11bac5b12f7311b99511"
+    }
+  },
+  "fixedPixelsAudit": {
+    "status": "PASS_OWNER_BASE_INVARIANCE_AND_STATIONARY_PIER_RGB",
+    "checks": 16,
+    "report": ".artifacts/visual-feedback-20261005/fixed-pixel-audit.json"
+  },
+  "preparedContract": {
+    "schemaVersion": 1,
+    "sha256": "cc0134a79d4a18350e5f8ba92adddb0773ed400f0f7a11bac5b12f7311b99511",
+    "indexPath": "prepared-hd/indexes/cc0134a79d4a18350e5f8ba92adddb0773ed400f0f7a11bac5b12f7311b99511.json"
+  },
+  "focusedTests": {
+    "pass": 24,
+    "fail": 0,
+    "assertions": 7644,
+    "files": 5,
+    "log": ".artifacts/visual-feedback-20261005/focused-tests-final-v2.log"
+  },
+  "typecheck": {
+    "status": "PASS_ENTRY_AND_WORKERS",
+    "log": ".artifacts/visual-feedback-20261005/typecheck-workers-final.log"
+  },
+  "candidateNative": [
+    "native-candidate-4x-v3/report.json",
+    "allied-layer-diagnostic-v2/report.json"
+  ],
+  "delivery": [
+    {
+      "platform": "mac",
+      "archive": "/Users/Aone/Desktop/RA2-HD-Visual-Fix-20261005-55180e4-macOS-arm64.zip",
+      "bytes": 3275230930,
+      "sha256": "5e38d7fc468427256595611097f8125a4d56eecc3ed221fa4f9091268ee5f604",
+      "checkedEntries": 5484,
+      "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/visual-feedback-20261005/desktop-extracted-mac/RA2-HD-Visual-Fix-20261005-55180e4-macOS-arm64",
+      "excludedUserData": [
+        "Review-Profile",
+        "UserData"
+      ]
+    },
+    {
+      "platform": "windows",
+      "archive": "/Users/Aone/Desktop/RA2-HD-Visual-Fix-20261005-55180e4-Windows-x64-portable.zip",
+      "bytes": 3299867229,
+      "sha256": "de684f205d81004a6037ca6fc063c7ee1978553e05bb28ce073fb631b9afe541",
+      "checkedEntries": 5262,
+      "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/visual-feedback-20261005/desktop-extracted-windows/RA2-HD-Visual-Fix-20261005-55180e4-Windows-x64-portable",
+      "excludedUserData": [
+        "Review-Profile",
+        "UserData"
+      ]
+    }
+  ],
+  "nativeWindows": {
+    "status": "NOT_RUN_USER_VERIFICATION_REQUIRED",
+    "staticStatus": "PASS_STATIC_PACKAGE_WINDOWS_RUNTIME_NOT_RUN",
+    "verifiedX64PE": [
+      "dxil.dll",
+      "Red Alert 2 HD.exe",
+      "dxcompiler.dll",
+      "d3dcompiler_47.dll",
+      "vk_swiftshader.dll",
+      "ffmpeg.dll",
+      "vulkan-1.dll"
+    ],
+    "electronSha256": "596d5f7a77fc4f494f24ff9b362577954e16df819a81915bdb3b91d25f8eddd2"
+  },
+  "userVisualAcceptance": "REJECTED_PAUSE_PATTERN_AND_PIER_FOOTING",
+  "remotePush": "NOT_REQUESTED",
+  "runtimeSourceHead": "55180e4e1aa6d76edbf54ab137666f7ed7e9497e",
+  "implementationCommit": "f0538cc",
+  "nativeMac": [
+    {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/visual-feedback-20261005/desktop-native-4x/report.json",
+      "density": 4,
+      "snow": false,
+      "cases": [
+        {
+          "factory": "YAWEAP",
+          "unit": "YTNK",
+          "nativeDeliveryState": 7,
+          "sampledDeliveryStates": 19,
+          "product": {
+            "name": "YTNK",
+            "id": 1331,
+            "tick": 1874,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              62,
+              102
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": true,
+            "parts": [
+              "ytnk.vxl",
+              "ytnktur.vxl",
+              "ytnktur.vxl",
+              "ytnktur.vxl"
+            ],
+            "turret": 0,
+            "warped": false,
+            "zone": 0,
+            "elevation": 0
+          }
+        },
+        {
+          "factory": "YAWEAP",
+          "unit": "DISK",
+          "nativeDeliveryState": 8,
+          "sampledDeliveryStates": 29,
+          "product": {
+            "name": "DISK",
+            "id": 1332,
+            "tick": 4268,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              62,
+              101
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": true,
+            "parts": [
+              "disk.vxl",
+              "disktur.vxl"
+            ],
+            "turret": 0,
+            "warped": false,
+            "zone": 1,
+            "elevation": 7.176239480810089
+          }
+        },
+        {
+          "factory": "GAWEAP",
+          "unit": "MTNK",
+          "nativeDeliveryState": 7,
+          "sampledDeliveryStates": 18,
+          "product": {
+            "name": "MTNK",
+            "id": 1341,
+            "tick": 5899,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              65,
+              97
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": true,
+            "parts": [
+              "gtnk.vxl",
+              "gtnktur.vxl",
+              "gtnkbarl.vxl"
+            ],
+            "turret": 0,
+            "warped": false,
+            "zone": 0,
+            "elevation": 0
+          }
+        }
+      ],
+      "submarineMovingSamples": 80,
+      "uiBeforePause": {
+        "revision": "lunar-infantry-ui-v1",
+        "enabled": true,
+        "reservedBytes": 11828992,
+        "decodedCpuBytes": 9463552,
+        "gpuTextureBytesUpperBound": 9463552,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 32,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "uiDuringPause": {
+        "revision": "lunar-infantry-ui-v1",
+        "enabled": true,
+        "reservedBytes": 12428992,
+        "decodedCpuBytes": 10063552,
+        "gpuTextureBytesUpperBound": 10063552,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 33,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "uiAfterPause": {
+        "revision": "lunar-infantry-ui-v1",
+        "enabled": true,
+        "reservedBytes": 11828992,
+        "decodedCpuBytes": 9463552,
+        "gpuTextureBytesUpperBound": 9463552,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 32,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "pauseOriginal": {
+        "hiddenBitmap": true,
+        "ui": {
+          "revision": "lunar-infantry-ui-v1",
+          "enabled": false,
+          "reservedBytes": 0,
+          "decodedCpuBytes": 0,
+          "gpuTextureBytesUpperBound": 0,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 0,
+          "domImageDecodedCpuBytesUpperBound": 0,
+          "textures": 0,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        }
+      },
+      "worldAllocationAtClose": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 216962576,
+        "total": 358900804,
+        "limit": 1342177280
+      },
+      "clips": 6,
+      "errors": [],
+      "handledErrors": [],
+      "visualReview": "PASS_SELECTED_OWNER_MOTION_EXIT_ROOF_AND_PAUSE_IMAGES"
+    },
+    {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/visual-feedback-20261005/desktop-native-2x-snow/report.json",
+      "density": 2,
+      "snow": true,
+      "cases": [
+        {
+          "factory": "YAWEAP",
+          "unit": "YTNK",
+          "nativeDeliveryState": 7,
+          "sampledDeliveryStates": 22,
+          "product": {
+            "name": "YTNK",
+            "id": 2148,
+            "tick": 1768,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              113,
+              65
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": true,
+            "parts": [
+              "ytnk.vxl",
+              "ytnktur.vxl",
+              "ytnktur.vxl",
+              "ytnktur.vxl"
+            ],
+            "turret": 0,
+            "warped": false,
+            "zone": 0,
+            "elevation": 0
+          }
+        },
+        {
+          "factory": "YAWEAP",
+          "unit": "DISK",
+          "nativeDeliveryState": 8,
+          "sampledDeliveryStates": 31,
+          "product": {
+            "name": "DISK",
+            "id": 2155,
+            "tick": 4134,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              113,
+              66
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": true,
+            "parts": [
+              "disk.vxl",
+              "disktur.vxl"
+            ],
+            "turret": 0,
+            "warped": false,
+            "zone": 1,
+            "elevation": 7.176239480810089
+          }
+        },
+        {
+          "factory": "GAWEAP",
+          "unit": "MTNK",
+          "nativeDeliveryState": 7,
+          "sampledDeliveryStates": 18,
+          "product": {
+            "name": "MTNK",
+            "id": 2163,
+            "tick": 5731,
+            "spawned": true,
+            "destroyed": false,
+            "tile": [
+              116,
+              60
+            ],
+            "moving": false,
+            "firing": false,
+            "health": 100,
+            "shpHd": false,
+            "vxlHd": true,
+            "parts": [
+              "gtnk.vxl",
+              "gtnktur.vxl",
+              "gtnkbarl.vxl"
+            ],
+            "turret": 0,
+            "warped": false,
+            "zone": 0,
+            "elevation": 0
+          }
+        }
+      ],
+      "submarineMovingSamples": 13,
+      "uiBeforePause": {
+        "revision": "lunar-infantry-ui-v1",
+        "enabled": true,
+        "reservedBytes": 11828992,
+        "decodedCpuBytes": 9463552,
+        "gpuTextureBytesUpperBound": 9463552,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 32,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "uiDuringPause": {
+        "revision": "lunar-infantry-ui-v1",
+        "enabled": true,
+        "reservedBytes": 12428992,
+        "decodedCpuBytes": 10063552,
+        "gpuTextureBytesUpperBound": 10063552,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 33,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "uiAfterPause": {
+        "revision": "lunar-infantry-ui-v1",
+        "enabled": true,
+        "reservedBytes": 11828992,
+        "decodedCpuBytes": 9463552,
+        "gpuTextureBytesUpperBound": 9463552,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 32,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "pauseOriginal": {
+        "hiddenBitmap": true,
+        "ui": {
+          "revision": "lunar-infantry-ui-v1",
+          "enabled": false,
+          "reservedBytes": 0,
+          "decodedCpuBytes": 0,
+          "gpuTextureBytesUpperBound": 0,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 0,
+          "domImageDecodedCpuBytesUpperBound": 0,
+          "textures": 0,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        }
+      },
+      "worldAllocationAtClose": {
+        "baseline": 22008264,
+        "eager": 28522916,
+        "demand": 68978308,
+        "total": 119509488,
+        "limit": 268435456
+      },
+      "clips": 6,
+      "errors": [],
+      "handledErrors": [],
+      "visualReview": "PASS_SELECTED_OWNER_MOTION_EXIT_ROOF_AND_PAUSE_IMAGES"
+    }
+  ],
+  "packageResourceParity": {
+    "status": "PASS_IMMUTABLE_UI_AND_RETAIL_ASSETS",
+    "uiFiles": 360,
+    "worldFilesBefore": 4637,
+    "worldFilesAfter": 4637,
+    "unchangedWorldFiles": 4387
+  },
+  "localCommit": "RECORDED",
+  "continuation": "Continue acceptance and bounded corrections in this conversation.",
+  "pauseBitmapDiagnostic": {
+    "status": "UNVERIFIED_BUDGET_BLOCKED",
+    "report": ".artifacts/visual-feedback-20261005/desktop-pause-raster/report.json",
+    "beforeBytes": 11091712,
+    "result": "Raster readiness timed out; purple vector fallback is verified in both copied native runs."
+  },
+  "retainedDiagnostics": [
+    "Incorrect first baseline factory queue excluded from factory evidence",
+    "Manual dev layout failures",
+    "Unselected partial resource revision r4",
+    "Earlier factory floor/cropped-master candidates",
+    "Sandbox native decoder exit",
+    "Initial-match pause raster readiness timeout at insufficient UI budget"
+  ],
+  "supersededBy": "docs/visual-feedback-followup-20261005.md"
+}

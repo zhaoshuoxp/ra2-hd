@@ -1,0 +1,218 @@
+{
+  "status": "USER_ACCEPTED_ACTUAL_BRIDGE_OVERLAY_HD_AND_CONNECTION_REPAIR",
+  "runtimeSourceCommit": "c43b00aea8e94e2bd86dd65b2685da7aa28e1c4e",
+  "priorR4": "TERRAIN_JOIN_IMPROVEMENT_REPORTED_OVERLAY_WAS_ORIGINAL",
+  "rootCause": "Missing independent BRIDGE1/BRIDGE2 SHP overlay family was not covered by the published TMP approaches.",
+  "selectedEnvironment": {
+    "schemaVersion": 1,
+    "revision": "newurban-environment-bridge-overlay-r5-v3",
+    "sha256": "7d63facb96f10180c4c4b274d04703493694161517c57a68b941a7a8866067f3"
+  },
+  "selectedTerrain": {
+    "schemaVersion": 1,
+    "revision": "newurban-m2-4-shared-bridge-road-r4-v1",
+    "sha256": "4ad8d222cabc86640546c6ddb0939979f86bcd85a97162ae440a85d26052d693"
+  },
+  "newCompleteFamilies": 1,
+  "newUniqueSourceGroups": 1,
+  "member": "bridge.ubn",
+  "identities": [
+    "BRIDGE1",
+    "BRIDGE2"
+  ],
+  "bodyFrames": 18,
+  "originalShadowFrames": 18,
+  "densityBodyFrames": 36,
+  "actualBindings": [
+    {
+      "map": "manhatta.map",
+      "density": 2,
+      "objects": 49,
+      "identities": [
+        "BRIDGE2"
+      ],
+      "reportedMidspan": [
+        {
+          "id": 1687,
+          "tile": [
+            114,
+            127,
+            2
+          ],
+          "frame": 9,
+          "hd": "f0889964218c08fddf22967c373745cc97c3f7312cc7bd48fdb740736b33fd78/460e89752d3ebff0296bfcc94e860f4b989751f9e94ed73899d75d65cc94af92/NEWURBAN/tiles/2"
+        },
+        {
+          "id": 1688,
+          "tile": [
+            114,
+            128,
+            2
+          ],
+          "frame": 9,
+          "hd": "f0889964218c08fddf22967c373745cc97c3f7312cc7bd48fdb740736b33fd78/460e89752d3ebff0296bfcc94e860f4b989751f9e94ed73899d75d65cc94af92/NEWURBAN/tiles/2"
+        },
+        {
+          "id": 1713,
+          "tile": [
+            114,
+            129,
+            2
+          ],
+          "frame": 9,
+          "hd": "f0889964218c08fddf22967c373745cc97c3f7312cc7bd48fdb740736b33fd78/460e89752d3ebff0296bfcc94e860f4b989751f9e94ed73899d75d65cc94af92/NEWURBAN/tiles/2"
+        },
+        {
+          "id": 1714,
+          "tile": [
+            114,
+            130,
+            2
+          ],
+          "frame": 9,
+          "hd": "f0889964218c08fddf22967c373745cc97c3f7312cc7bd48fdb740736b33fd78/460e89752d3ebff0296bfcc94e860f4b989751f9e94ed73899d75d65cc94af92/NEWURBAN/tiles/2"
+        }
+      ]
+    },
+    {
+      "map": "manhatta.map",
+      "density": 4,
+      "objects": 49,
+      "identities": [
+        "BRIDGE2"
+      ],
+      "reportedMidspan": [
+        {
+          "id": 1687,
+          "tile": [
+            114,
+            127,
+            2
+          ],
+          "frame": 9,
+          "hd": "f0889964218c08fddf22967c373745cc97c3f7312cc7bd48fdb740736b33fd78/460e89752d3ebff0296bfcc94e860f4b989751f9e94ed73899d75d65cc94af92/NEWURBAN/tiles/4"
+        },
+        {
+          "id": 1688,
+          "tile": [
+            114,
+            128,
+            2
+          ],
+          "frame": 9,
+          "hd": "f0889964218c08fddf22967c373745cc97c3f7312cc7bd48fdb740736b33fd78/460e89752d3ebff0296bfcc94e860f4b989751f9e94ed73899d75d65cc94af92/NEWURBAN/tiles/4"
+        },
+        {
+          "id": 1713,
+          "tile": [
+            114,
+            129,
+            2
+          ],
+          "frame": 9,
+          "hd": "f0889964218c08fddf22967c373745cc97c3f7312cc7bd48fdb740736b33fd78/460e89752d3ebff0296bfcc94e860f4b989751f9e94ed73899d75d65cc94af92/NEWURBAN/tiles/4"
+        },
+        {
+          "id": 1714,
+          "tile": [
+            114,
+            130,
+            2
+          ],
+          "frame": 9,
+          "hd": "f0889964218c08fddf22967c373745cc97c3f7312cc7bd48fdb740736b33fd78/460e89752d3ebff0296bfcc94e860f4b989751f9e94ed73899d75d65cc94af92/NEWURBAN/tiles/4"
+        }
+      ]
+    },
+    {
+      "map": "fight.map",
+      "density": 4,
+      "objects": 18,
+      "identities": [
+        "BRIDGE1"
+      ],
+      "reportedMidspan": []
+    }
+  ],
+  "validation": {
+    "loaderTests": 2,
+    "loaderAssertions": 32,
+    "entryTypecheck": "PASS",
+    "isolatedBuild": "PASS",
+    "signedMacHost": "PASS",
+    "native": "PASS_ACTUAL_BRIDGE_OVERLAY_HD_2X_4X_BOTH_ORIENTATIONS_AND_4X_NATIVE_STATES_RELEASE",
+    "staticReview": "PASS_NINE_EMBEDDED_IMAGES",
+    "browserInteractive": "NOT_RUN_PRIOR_PROTOCOL_DENIAL_RESPECTED"
+  },
+  "resourceHandoff": {
+    "file": ".artifacts/m2-4/bridge-overlay-completion-r5-20261019/resource-handoff-v3.json",
+    "sha256": "87c550c039869fac6fd429d7b570ea121429bf88e16ba4a70ae0ecac86b9fd38",
+    "files": 1081,
+    "exactPriorPayloadFiles": 784,
+    "newMothers": 0
+  },
+  "review": {
+    "file": "/Users/Aone/Desktop/M2.4-Review-Bridge-Midspan-HD-R5-20261019/M2.4-Bridge-Midspan-HD-R5-Embedded.html",
+    "sha256": "2b863d7e08ab567f9814b4b2247d7baff716647f8fa67a60b96a73b36b92af39",
+    "bytes": 11836800,
+    "images": 9
+  },
+  "evidence": [
+    {
+      "file": ".artifacts/m2-4/bridge-overlay-completion-r5-20261019/native-suite-v3.json",
+      "sha256": "8e213a94707982f8786148bb56492d7c7593a8114408ae7b225b91febdd32455"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-overlay-completion-r5-20261019/export-and-source-audit-v3.json",
+      "sha256": "f646e53bfd0c147fa736ab5ae388c912618d4bbd24ae5a04c39b011c2ffe840d"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-overlay-completion-r5-20261019/rgb-only-preservation-v3.json",
+      "sha256": "49da710ef43d482d47aa98207a9543ad0caa73f3a4666f1f1b1e7f6643020668"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-overlay-completion-r5-20261019/prepared-path-audit.json",
+      "sha256": "76a1c10c43d261b7da888f11a531c1a59da0b904cc6ad41b4a20024901c67cb9"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-overlay-completion-r5-20261019/coverage-delta-v3.json",
+      "sha256": "e2ca8e8a49cf9f7cbd42697a36b6d10fad3da9e59cae3bfc9472049ca87f5955"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-overlay-completion-r5-20261019/desktop-delivery-v3.json",
+      "sha256": "5d15b53cd3dabd20a4c0bd0a32dce5b3e3ea673f45556b799217d26f9fd8ba44"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-overlay-completion-r5-20261019/review-v3/static-qa.json",
+      "sha256": "ef220a90af59f57222903aaa0bbb6b12d359359ad7dc780821a9989ddebb02d4"
+    }
+  ],
+  "prepared": "UNCHANGED_CORE_DEPENDENCIES_ENVIRONMENT_USES_VALIDATED_PNGS",
+  "coverage": {
+    "maps": [
+      "yr:fight.map",
+      "yr:downtown.map",
+      "yr:manhatta.map",
+      "yr:rushhr.map",
+      "yr:austintx.map",
+      "yr:turfwar.map"
+    ],
+    "remainingNewUrbanAuthoredGaps": 358,
+    "remainingDesertAuthoredGaps": 202
+  },
+  "visualAcceptance": "USER_ACCEPTED",
+  "windows": "NOT_RUN",
+  "m24Complete": false,
+  "perBatchMacPackageCreated": false,
+  "main": {
+    "observed": "748d0998aaf663acda8807c158155bf0a5bb157b",
+    "clean": true,
+    "modified": false
+  },
+  "remaining": [
+    "Other reported seams",
+    "Remaining authored NewUrban and Desert dependencies",
+    "Final all-scope acceptance, independent Mac delivery and authorized integration"
+  ],
+  "userAcceptanceReceipt": ".artifacts/m2-4/bridge-overlay-completion-r5-20261019/user-acceptance-20261019.json"
+}

@@ -1,0 +1,278 @@
+import { Coords } from "@/game/Coords";
+import { ImageFinder } from "@/engine/ImageFinder";
+import { BatchShpBuilder } from "@/engine/renderable/builder/BatchShpBuilder";
+import { ShpAggregator } from "@/engine/renderable/builder/ShpAggregator";
+import { MapSpriteTranslation } from "@/engine/renderable/MapSpriteTranslation";
+import { ShadowRenderable } from "@/engine/renderable/ShadowRenderable";
+import { isNotNullOrUndefined } from "@/util/typeGuard";
+import * as THREE from "three";
+import { configureGroundShadow, groundShadowOrder } from '../../../gfx/material/ShpShadowMaterial';
+import type { HdSpriteOverride } from '../../builder/HdSpriteOverride';
+interface BatchShpSpec {
+    shpFile: any;
+    frameNo: number;
+    depth: number;
+    flat: boolean;
+    position: THREE.Vector3;
+    offset: THREE.Vector2;
+    lightMult?: THREE.Color;
+    hdOverride?: HdSpriteOverride;
+}
+interface ObjectSpecs {
+    main: BatchShpSpec;
+    shadow?: BatchShpSpec;
+}
+export class MapSpriteBatchLayer {
+    private label: string;
+    private spriteUseDepth: (obj: any) => number;
+    private theater: any;
+    private art: any;
+    private imageFinder: ImageFinder;
+    private camera: any;
+    private lighting: any;
+    private shpAggregator: ShpAggregator;
+    private textureCache: Map<string, any>;
+    private batchShpSpecsByObject: Map<any, ObjectSpecs>;
+    private batchShpBuilders: Map<string, BatchShpBuilder[]>;
+    private shadowBatchShpBuilders: BatchShpBuilder[];
+    private batchedObjectRules: Set<any>;
+    private aggregatedImageData: any;
+    private target?: THREE.Object3D;
+    public meshRenderOrder: number = 0;
+    public meshNoDepth: boolean = false;
+    constructor(label: string, batchedObjectRules: any[], spriteUseDepth: (obj: any) => number, theater: any, art: any, imageFinder: ImageFinder, camera: any, lighting: any, shpAggregator: ShpAggregator) {
+        this.label = label;
+        this.spriteUseDepth = spriteUseDepth;
+        this.theater = theater;
+        this.art = art;
+        this.imageFinder = imageFinder;
+        this.camera = camera;
+        this.lighting = lighting;
+        this.shpAggregator = shpAggregator;
+        this.textureCache = new Map();
+        this.batchShpSpecsByObject = new Map();
+        this.batchShpBuilders = new Map();
+        this.shadowBatchShpBuilders = [];
+        this.batchedObjectRules = new Set(batchedObjectRules);
+        this.aggregatedImageData = this.createAggregatedShpFile(`agg_${label}.shp`);
+    }
+    get3DObject(): THREE.Object3D | undefined {
+        return this.target;
+    }
+    create3DObject(): void {
+        let obj = this.get3DObject();
+        if (!obj) {
+            obj = new THREE.Object3D();
+            obj.name = this.label;
+            obj.matrixAutoUpdate = false;
+            this.target = obj;
+        }
+    }
+    private createAggregatedShpFile(filename: string): any {
+        const shpFrameInfos = [...this.batchedObjectRules.values()]
+            .map((rule) => {
+            const objectArt = this.art.getObject(rule.name, rule.type);
+            let imageData;
+            try {
+                imageData = this.imageFinder.findByObjectArt(objectArt);
+            }
+            catch (error) {
+                if (error instanceof ImageFinder.MissingImageError)
+                    return;
+                throw error;
+            }
+            return ShpAggregator.getShpFrameInfo(imageData, objectArt.hasShadow);
+        })
+            .filter(isNotNullOrUndefined);
+        return this.shpAggregator.aggregate(shpFrameInfos, filename);
+    }
+    update(deltaTime: number): void { }
+    updateLighting(): void {
+        this.batchShpSpecsByObject.forEach((specs, obj) => {
+            specs.main.lightMult?.copy(this.lighting.compute(obj.art.lightingType, obj.tile));
+        });
+        [...this.batchShpBuilders.values()]
+            .flat()
+            .forEach((builder) => builder.updateLighting());
+    }
+    shouldBeBatched(obj: any): boolean {
+        if (!this.batchedObjectRules.has(obj.rules)) return false;
+        const override = this.imageFinder.getHdOverride(this.imageFinder.findByObjectArt(obj.art));
+        // Multi-page state families retain their existing per-object renderer.
+        return !override || new Set(override.frames.map(frame => frame.page)).size === 1;
+    }
+    private getBatchKey(obj: any): string {
+        const override = this.imageFinder.getHdOverride(this.imageFinder.findByObjectArt(obj.art));
+        return obj.art.paletteType + "_" + obj.art.customPaletteName + "_" + (override?.identity ?? 'indexed');
+    }
+    addObject(obj: any): void {
+        const image = this.imageFinder.findByObjectArt(obj.art);
+        const override = this.imageFinder.getHdOverride(image);
+        const batchKey = this.getBatchKey(obj);
+        let builders = this.batchShpBuilders.get(batchKey);
+        if (!builders) {
+            builders = [];
+            this.batchShpBuilders.set(batchKey, builders);
+        }
+        let availableBuilder = builders.find((builder) => !builder.isFull());
+        if (!availableBuilder) {
+            if (!this.get3DObject())
+                throw new Error("Not implemented");
+            const palette = this.theater.getPalette(obj.art.paletteType, obj.art.customPaletteName);
+            const newBuilder = new BatchShpBuilder(override ? image : this.aggregatedImageData.file,
+                palette, this.camera, this.textureCache, undefined, undefined,
+                override ? 128 : undefined, Coords.ISO_WORLD_SCALE, override);
+            builders.push(newBuilder);
+            const mesh = newBuilder.build();
+            mesh.renderOrder = this.meshRenderOrder;
+            if (this.meshNoDepth) {
+                const mat = mesh.material as THREE.Material;
+                mat.depthTest = false;
+                mat.depthWrite = false;
+            }
+            this.get3DObject()!.add(mesh);
+            availableBuilder = newBuilder;
+        }
+        const mainSpec = this.buildBatchShpSpec(obj, this.aggregatedImageData);
+        if (override) { mainSpec.frameNo = 0; mainSpec.hdOverride = override; }
+        availableBuilder.add(mainSpec as any);
+        let shadowSpec: BatchShpSpec | undefined;
+        if (obj.art.hasShadow) {
+            // The accepted willow body uses the native shadow shape with a
+            // bounded filtered contour and softer canopy coverage. Keep other
+            // families and Original fallback on their existing shadow path.
+            const softWillow = !!override && obj.name === 'TREE14';
+            let shadowBuilder = this.shadowBatchShpBuilders.find((builder) =>
+                !builder.isFull() && builder.shadowCoverage === softWillow);
+            if (!shadowBuilder) {
+                if (!this.get3DObject())
+                    throw new Error("Not implemented");
+                const newShadowBuilder = new BatchShpBuilder(this.aggregatedImageData.file,
+                    ShadowRenderable.getOrCreateShadowPalette(), this.camera, this.textureCache,
+                    softWillow ? 0.38 : 0.5, true, undefined, Coords.ISO_WORLD_SCALE, undefined, softWillow);
+                this.shadowBatchShpBuilders.push(newShadowBuilder);
+                const shadowMesh = newShadowBuilder.build();
+                shadowMesh.renderOrder = groundShadowOrder;
+                configureGroundShadow(shadowMesh.material as THREE.Material);
+                if (this.meshNoDepth) {
+                    const mat = shadowMesh.material as THREE.Material;
+                    mat.depthTest = false;
+                    mat.depthWrite = false;
+                }
+                this.get3DObject()!.add(shadowMesh);
+                shadowBuilder = newShadowBuilder;
+            }
+            shadowSpec = this.buildShadowBatchShpSpec(mainSpec, this.aggregatedImageData);
+            shadowBuilder.add(shadowSpec as any);
+        }
+        this.batchShpSpecsByObject.set(obj, { main: mainSpec, shadow: shadowSpec });
+    }
+    private buildBatchShpSpec(obj: any, aggregatedData: any): BatchShpSpec {
+        const foundation = obj.getFoundation();
+        const spriteTranslation = new MapSpriteTranslation(foundation.width, foundation.height);
+        const worldPosition = obj.position.worldPosition.clone();
+        const { spriteOffset, anchorPointWorld } = spriteTranslation.compute();
+        worldPosition.x += anchorPointWorld.x;
+        worldPosition.z += anchorPointWorld.y;
+        const imageData = this.imageFinder.findByObjectArt(obj.art);
+        const imageIndex = aggregatedData.imageIndexes.get(imageData);
+        if (imageIndex === undefined) {
+            throw new Error("SHP file not found in aggregated image data");
+        }
+        return {
+            shpFile: imageData,
+            frameNo: imageIndex,
+            depth: this.spriteUseDepth(obj),
+            flat: obj.art.flat,
+            position: worldPosition,
+            offset: spriteOffset.clone().add(obj.art.getDrawOffset()),
+            lightMult: this.lighting.compute(obj.art.lightingType, obj.tile),
+        };
+    }
+    private buildShadowBatchShpSpec(mainSpec: BatchShpSpec, aggregatedData: any): BatchShpSpec {
+        const imageIndex = aggregatedData.imageIndexes.get(mainSpec.shpFile);
+        if (imageIndex === undefined) {
+            throw new Error("SHP file not found in aggregated image data");
+        }
+        return {
+            ...mainSpec,
+            position: mainSpec.position.clone().add(new THREE.Vector3(0, 0.1, 0)),
+            flat: true,
+            frameNo: imageIndex + aggregatedData.file.numImages / 2,
+            lightMult: undefined,
+        };
+    }
+    removeObject(obj: any): void {
+        const specs = this.batchShpSpecsByObject.get(obj);
+        if (!specs)
+            return;
+        const batchKey = this.getBatchKey(obj);
+        const builders = this.batchShpBuilders.get(batchKey);
+        const mainBuilder = builders?.find((builder) => builder.has(specs.main as any));
+        if (mainBuilder) {
+            mainBuilder.remove(specs.main as any);
+            if (mainBuilder.isEmpty() && builders!.length > 1) {
+                this.get3DObject()?.remove(mainBuilder.build());
+                mainBuilder.dispose();
+                builders?.splice(builders.indexOf(mainBuilder), 1);
+            }
+            if (specs.shadow) {
+                const shadowBuilder = this.shadowBatchShpBuilders.find((builder) => builder.has(specs.shadow as any));
+                shadowBuilder?.remove(specs.shadow as any);
+                if (shadowBuilder?.isEmpty() && this.shadowBatchShpBuilders.length > 1) {
+                    this.get3DObject()?.remove(shadowBuilder.build());
+                    shadowBuilder.dispose();
+                    this.shadowBatchShpBuilders.splice(this.shadowBatchShpBuilders.indexOf(shadowBuilder), 1);
+                }
+            }
+            this.batchShpSpecsByObject.delete(obj);
+        }
+    }
+    hasObject(obj: any): boolean {
+        return this.batchShpSpecsByObject.has(obj);
+    }
+    getObjectFrameCount(obj: any): number {
+        const specs = this.batchShpSpecsByObject.get(obj);
+        if (!specs) {
+            throw new Error(`Batch SHP spec for object "${obj.name}" not found`);
+        }
+        return specs.main.shpFile.numImages * (specs.shadow ? 0.5 : 1);
+    }
+    getObjectHdBinding(obj: any): { identity: string; frame: number } | undefined {
+        const spec = this.batchShpSpecsByObject.get(obj)?.main;
+        return spec?.hdOverride ? { identity: spec.hdOverride.identity, frame: spec.frameNo } : undefined;
+    }
+    setObjectFrame(obj: any, frameIndex: number): void {
+        const specs = this.batchShpSpecsByObject.get(obj);
+        if (!specs) {
+            throw new Error(`Batch SHP spec for object "${obj.name}" not found`);
+        }
+        if (frameIndex >= specs.main.shpFile.numImages * (specs.shadow ? 0.5 : 1)) {
+            return;
+        }
+        const baseImageIndex = this.aggregatedImageData.imageIndexes.get(specs.main.shpFile);
+        specs.main.frameNo = specs.main.hdOverride ? frameIndex : baseImageIndex + frameIndex;
+        if (specs.shadow) {
+            specs.shadow.frameNo = baseImageIndex + frameIndex + this.aggregatedImageData.file.numImages / 2;
+        }
+        const batchKey = this.getBatchKey(obj);
+        const mainBuilder = this.batchShpBuilders
+            .get(batchKey)
+            ?.find((builder) => builder.has(specs.main as any));
+        mainBuilder?.update(specs.main as any);
+        if (specs.shadow) {
+            const shadowBuilder = this.shadowBatchShpBuilders.find((builder) => builder.has(specs.shadow as any));
+            shadowBuilder?.update(specs.shadow as any);
+        }
+    }
+    dispose(): void {
+        [
+            ...this.batchShpBuilders.values(),
+            ...this.shadowBatchShpBuilders,
+        ]
+            .flat()
+            .forEach((builder) => builder.dispose());
+        [...this.textureCache.values()].forEach((texture) => texture.dispose());
+        this.textureCache.clear();
+    }
+}

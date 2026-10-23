@@ -1,0 +1,119 @@
+{
+  "schema": "m2-2-batch2-production-v1",
+  "status": "COMPLETE_TERRAIN_AND_PROPS_SELECTED_NATIVE_CASES_PASS_MAP_INCOMPLETE",
+  "terrainPack": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-2-environment-v1",
+    "sha256": "ff27c5ab719fd0d3a98e2a9395fd2eeaf783fc1f26bfa6223b830d0dfa56fe6d"
+  },
+  "environmentPack": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-2-props-waterfalls-v2",
+    "sha256": "da29c62f58692d3fef8effed5bda984d221b75234b8c487b28e08c3c3fc874cc"
+  },
+  "runtimeChecks": [
+    {
+      "path": ".artifacts/m2-2/native-batch2-2x-v3/report.json",
+      "sha256": "5f822acd40f3426dc5e277a62cf5f8c5714ee6b575e16b33651ebe1a793bd5d0",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "selectedMap": "xmp03t4.map",
+      "density": 2,
+      "newTerrainGroups": {
+        "thickgrass": {
+          "members": 38,
+          "placements": 1931
+        },
+        "pavecrop": {
+          "members": 54,
+          "placements": 2392
+        },
+        "dirtroads": {
+          "members": 28,
+          "placements": 177
+        },
+        "shore": {
+          "members": 39,
+          "placements": 719
+        },
+        "watercontacts": {
+          "members": 18,
+          "placements": 334
+        }
+      },
+      "environmentFamiliesPublished": 33,
+      "worldChargeBytes": {
+        "terrain": 130080012,
+        "environment": 2858116
+      }
+    },
+    {
+      "path": ".artifacts/m2-2/native-batch2-4x-v1/report.json",
+      "sha256": "d6de0483d82515058252701cafb28a8a55a7b02aad2d22e5955def21230a7e5c",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "selectedMap": "xmp03t4.map",
+      "density": 4,
+      "newTerrainGroups": {
+        "thickgrass": {
+          "members": 38,
+          "placements": 1931
+        },
+        "pavecrop": {
+          "members": 54,
+          "placements": 2392
+        },
+        "dirtroads": {
+          "members": 28,
+          "placements": 177
+        },
+        "shore": {
+          "members": 39,
+          "placements": 719
+        },
+        "watercontacts": {
+          "members": 18,
+          "placements": 334
+        }
+      },
+      "environmentFamiliesPublished": 33,
+      "worldChargeBytes": {
+        "terrain": 507796748,
+        "environment": 10246032
+      }
+    },
+    {
+      "path": ".artifacts/m2-2/native-batch2-control-2x-v1/report.json",
+      "sha256": "fadbfa362978752d2762977e10582cbaed5a46397e4393d733ea35d66c2a4b6e",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "selectedMap": "xmp19t4.map",
+      "density": 2,
+      "newTerrainGroups": {
+        "thickgrass": {
+          "members": 38,
+          "placements": 3929
+        },
+        "pavecrop": {
+          "members": 54,
+          "placements": 188
+        },
+        "dirtroads": {
+          "members": 28,
+          "placements": 109
+        },
+        "shore": {
+          "members": 39,
+          "placements": 209
+        },
+        "watercontacts": {
+          "members": 18,
+          "placements": 20
+        }
+      },
+      "environmentFamiliesPublished": 22,
+      "worldChargeBytes": {
+        "terrain": 130080012,
+        "environment": 1883224
+      }
+    }
+  ],
+  "boundary": "These checks demonstrate actual placed terrain/tree bindings, native tree removal, complete-family publication, GL health and Original/HD lifecycle in the stated maps. Bridge/resource/cow/building/neutral-vehicle actions and combined visual acceptance remain pending. Earlier failed diagnostic receipts remain unchanged."
+}

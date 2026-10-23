@@ -1,0 +1,700 @@
+{
+  "status": "PASS_R4_MAC_DELIVERED_VISUAL_PENDING",
+  "base": "95d6f9e96cbc783bfe020748dffc1883422d781b",
+  "fullSuite": {
+    "pass": 597,
+    "failedCases": 0,
+    "loadErrors": 0,
+    "skipped": 0,
+    "processErrors": 0
+  },
+  "fullSuiteProcesses": 148,
+  "typecheck": "PASS",
+  "nativeCases": 4,
+  "nativeCaseConfigurations": [
+    {
+      "edition": "ra2",
+      "density": 2,
+      "snow": false,
+      "status": "PASS_NATIVE_CLEAN_MOVIE_MARKER_AND_GI_DEATH"
+    },
+    {
+      "edition": "ra2",
+      "density": 4,
+      "snow": true,
+      "status": "PASS_NATIVE_CLEAN_MOVIE_MARKER_AND_GI_DEATH"
+    },
+    {
+      "edition": "yr",
+      "density": 2,
+      "snow": true,
+      "status": "PASS_NATIVE_CLEAN_MOVIE_MARKER_AND_GI_DEATH"
+    },
+    {
+      "edition": "yr",
+      "density": 4,
+      "snow": false,
+      "status": "PASS_NATIVE_CLEAN_MOVIE_MARKER_AND_GI_DEATH"
+    }
+  ],
+  "markerSource": "RING / ring.shp / native MoveFlash",
+  "nativeMarkerFrames": 15,
+  "markerGeometryComparisons": 60,
+  "markerGeometryMaxDelta": 0,
+  "markerTextureScale": 4,
+  "markerAtlas": [
+    512,
+    660
+  ],
+  "markerNeutralDataTexture": [
+    1,
+    1
+  ],
+  "markerLeaseReuseAndRelease": "PASS_ALL_FOUR_CASES",
+  "originalModeMarker": "UNCHANGED",
+  "movieForegroundSamples": 28,
+  "oldTextAndRightWingAlphaMax": 0,
+  "movieContent": "Existing original 28.734-second moving montage; no cinematic repaint",
+  "movieSourceSha256": "1c860b823cd86b54bda0969ee8a956707309d786ed336aa91b3cfbee4c1cfe55",
+  "foregroundMaskSha256": "2aca1e7770a65db408f2a0ab2fba9865811f2d57e421091981cf12437f21bdd6",
+  "foregroundMatte": "Source registered; continuous 32-native-pixel signed-distance fade outside the old text, wings and shadow.",
+  "giDeathResource": {
+    "status": "PASS_ONLY_GI_DEATH_BODY_REGISTRATION_CHANGED",
+    "revision": "presentation-r4-20261021-v3",
+    "baseManifestSha256": "6eb31b46a6a993ee60d4c04f1a396a85679ecf1df935a1d512fdcb927fa579b4",
+    "sourceSha256": "bceaee9c270d6382d80d509f2c4b2893c10565f779096b3add37a4d5321e8be1",
+    "method": "Bounded affine registration of existing body pixels; original ground pixels, native geometry, timing and unaffected frames remain unchanged.",
+    "referenceStandingExtent": 28,
+    "corrections": [
+      {
+        "frame": 136,
+        "scale": 0.9655172413793104,
+        "pivot": [
+          15.5,
+          11.5
+        ],
+        "nativeBodyBounds": [
+          1,
+          0,
+          30,
+          23
+        ]
+      },
+      {
+        "frame": 138,
+        "scale": 0.8484848484848485,
+        "pivot": [
+          14,
+          16.5
+        ],
+        "nativeBodyBounds": [
+          1,
+          0,
+          27,
+          33
+        ]
+      },
+      {
+        "frame": 139,
+        "scale": 0.8484848484848485,
+        "pivot": [
+          14.5,
+          16.5
+        ],
+        "nativeBodyBounds": [
+          1,
+          0,
+          28,
+          33
+        ]
+      },
+      {
+        "frame": 140,
+        "scale": 0.8235294117647058,
+        "pivot": [
+          18,
+          15
+        ],
+        "nativeBodyBounds": [
+          1,
+          0,
+          35,
+          30
+        ]
+      },
+      {
+        "frame": 141,
+        "scale": 0.6666666666666666,
+        "pivot": [
+          21,
+          12.5
+        ],
+        "nativeBodyBounds": [
+          0,
+          0,
+          42,
+          25
+        ]
+      },
+      {
+        "frame": 142,
+        "scale": 0.6363636363636364,
+        "pivot": [
+          23,
+          12.5
+        ],
+        "nativeBodyBounds": [
+          1,
+          0,
+          45,
+          25
+        ]
+      },
+      {
+        "frame": 143,
+        "scale": 0.6363636363636364,
+        "pivot": [
+          23,
+          12.5
+        ],
+        "nativeBodyBounds": [
+          1,
+          0,
+          45,
+          25
+        ]
+      },
+      {
+        "frame": 144,
+        "scale": 0.6222222222222222,
+        "pivot": [
+          22.5,
+          12.5
+        ],
+        "nativeBodyBounds": [
+          0,
+          0,
+          45,
+          25
+        ]
+      },
+      {
+        "frame": 145,
+        "scale": 0.6222222222222222,
+        "pivot": [
+          22.5,
+          12.5
+        ],
+        "nativeBodyBounds": [
+          0,
+          0,
+          45,
+          25
+        ]
+      },
+      {
+        "frame": 146,
+        "scale": 0.6222222222222222,
+        "pivot": [
+          22.5,
+          12
+        ],
+        "nativeBodyBounds": [
+          0,
+          0,
+          45,
+          24
+        ]
+      },
+      {
+        "frame": 147,
+        "scale": 0.6222222222222222,
+        "pivot": [
+          22.5,
+          12.5
+        ],
+        "nativeBodyBounds": [
+          0,
+          0,
+          45,
+          25
+        ]
+      },
+      {
+        "frame": 148,
+        "scale": 0.6086956521739131,
+        "pivot": [
+          23,
+          12.5
+        ],
+        "nativeBodyBounds": [
+          0,
+          0,
+          46,
+          25
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "density": 2,
+        "page": "p0",
+        "outsideChangedChannels": 0,
+        "frames": [
+          {
+            "frame": 136,
+            "scale": 0.9655172413793104,
+            "rect": [
+              2,
+              394,
+              62,
+              66
+            ]
+          },
+          {
+            "frame": 138,
+            "scale": 0.8484848484848485,
+            "rect": [
+              2,
+              466,
+              56,
+              74
+            ]
+          },
+          {
+            "frame": 139,
+            "scale": 0.8484848484848485,
+            "rect": [
+              62,
+              466,
+              58,
+              72
+            ]
+          },
+          {
+            "frame": 140,
+            "scale": 0.8235294117647058,
+            "rect": [
+              126,
+              466,
+              72,
+              70
+            ]
+          },
+          {
+            "frame": 141,
+            "scale": 0.6666666666666666,
+            "rect": [
+              58,
+              326,
+              86,
+              60
+            ]
+          },
+          {
+            "frame": 142,
+            "scale": 0.6363636363636364,
+            "rect": [
+              150,
+              326,
+              92,
+              58
+            ]
+          },
+          {
+            "frame": 143,
+            "scale": 0.6363636363636364,
+            "rect": [
+              46,
+              266,
+              92,
+              52
+            ]
+          },
+          {
+            "frame": 144,
+            "scale": 0.6222222222222222,
+            "rect": [
+              142,
+              266,
+              92,
+              52
+            ]
+          },
+          {
+            "frame": 145,
+            "scale": 0.6222222222222222,
+            "rect": [
+              238,
+              266,
+              92,
+              52
+            ]
+          },
+          {
+            "frame": 146,
+            "scale": 0.6222222222222222,
+            "rect": [
+              334,
+              266,
+              92,
+              50
+            ]
+          },
+          {
+            "frame": 147,
+            "scale": 0.6222222222222222,
+            "rect": [
+              430,
+              266,
+              94,
+              52
+            ]
+          },
+          {
+            "frame": 148,
+            "scale": 0.6086956521739131,
+            "rect": [
+              530,
+              266,
+              94,
+              52
+            ]
+          }
+        ]
+      },
+      {
+        "density": 4,
+        "page": "p0",
+        "outsideChangedChannels": 0,
+        "frames": [
+          {
+            "frame": 136,
+            "scale": 0.9655172413793104,
+            "rect": [
+              2,
+              1058,
+              124,
+              132
+            ]
+          },
+          {
+            "frame": 138,
+            "scale": 0.8484848484848485,
+            "rect": [
+              2,
+              1198,
+              112,
+              148
+            ]
+          },
+          {
+            "frame": 139,
+            "scale": 0.8484848484848485,
+            "rect": [
+              118,
+              1198,
+              116,
+              144
+            ]
+          },
+          {
+            "frame": 140,
+            "scale": 0.8235294117647058,
+            "rect": [
+              242,
+              1198,
+              144,
+              140
+            ]
+          },
+          {
+            "frame": 141,
+            "scale": 0.6666666666666666,
+            "rect": [
+              110,
+              926,
+              172,
+              120
+            ]
+          },
+          {
+            "frame": 142,
+            "scale": 0.6363636363636364,
+            "rect": [
+              290,
+              926,
+              184,
+              116
+            ]
+          },
+          {
+            "frame": 143,
+            "scale": 0.6363636363636364,
+            "rect": [
+              86,
+              810,
+              184,
+              104
+            ]
+          },
+          {
+            "frame": 144,
+            "scale": 0.6222222222222222,
+            "rect": [
+              274,
+              810,
+              184,
+              104
+            ]
+          },
+          {
+            "frame": 145,
+            "scale": 0.6222222222222222,
+            "rect": [
+              462,
+              810,
+              184,
+              104
+            ]
+          },
+          {
+            "frame": 146,
+            "scale": 0.6222222222222222,
+            "rect": [
+              650,
+              810,
+              184,
+              100
+            ]
+          },
+          {
+            "frame": 147,
+            "scale": 0.6222222222222222,
+            "rect": [
+              838,
+              810,
+              188,
+              104
+            ]
+          },
+          {
+            "frame": 148,
+            "scale": 0.6086956521739131,
+            "rect": [
+              1034,
+              810,
+              188,
+              104
+            ]
+          }
+        ]
+      }
+    ],
+    "familyPath": "hd-packs/allied-e1-family/presentation-r4-20261021-v3/family.json",
+    "familyHash": "0780ba108d9e1ed07fc17cce89a71960832a3e63f866694faf08d98e757a4c2c",
+    "manifestHash": "f085d58f9c71adfcc5b6ee9c124daab4e823e716e7168aba0b1f48d74ec7e133"
+  },
+  "giDeathPaths": 8,
+  "giCorpseHandoff": "PASS_NO_VISIBLE_PRIOR_BODY_IN_ANY_CORPSE_SAMPLE",
+  "nativeGiMetadata": "UNCHANGED",
+  "nativeDeathTiming": "UNCHANGED",
+  "acceptedConstructionRecords": 108,
+  "protectedResourceReferences": 242,
+  "protectedCursorHealthAndShell": "UNCHANGED_FROM_R3",
+  "preparedIndex": {
+    "schemaVersion": 1,
+    "sha256": "f993e5c0c3e235e0fdaf57bb74b8590eaac7992f30529763e003885d540ad9b1",
+    "indexPath": "prepared-hd/indexes/f993e5c0c3e235e0fdaf57bb74b8590eaac7992f30529763e003885d540ad9b1.json"
+  },
+  "priorPreparedEntriesPreserved": 925,
+  "preparedAddedMembers": [
+    "f085d58f9c71adfcc5b6ee9c124daab4e823e716e7168aba0b1f48d74ec7e133"
+  ],
+  "visualReview": "PENDING_USER_REVIEW",
+  "physicalInput": "NOT_REACCEPTED",
+  "nativeWindows": "NOT_RUN",
+  "independentM24": "PRESERVED_NOT_INCLUDED",
+  "remotePush": false,
+  "desktopDelivery": {
+    "status": "PASS_TESTED_R4_ARCHIVE_DELIVERED_TO_DESKTOP",
+    "path": "/Users/Aone/Desktop/RA2-HD-Mac-aa649545-20261021-UI-R4.zip",
+    "bytes": 3972523707,
+    "sha256": "76e8bbeaa05c10a8f850980b80a0fcf2b6e21797cb9e242a51f34aeb9f332fbb",
+    "runtimeSourceHead": "aa64954553208f000bd9957bbd494977cd169743",
+    "storage": "Independent APFS clone; distinct inode",
+    "archiveEntries": 7721,
+    "nativeRuntime": "PASS_TWO_EXTRACTED_NATIVE_R4_CASES_GI_MARKER_AND_POST_MATCH_LAYOUT",
+    "nativePackageCases": 2,
+    "nativePostMatchPaths": [
+      "actual-abort",
+      "native-victory-condition-fixture"
+    ],
+    "nativeGiHandoff": [
+      {
+        "bodyVisible": false,
+        "effectVisible": false,
+        "corpseAttached": true
+      },
+      {
+        "bodyVisible": false,
+        "effectVisible": false,
+        "corpseAttached": true
+      }
+    ],
+    "reviewImages": 14,
+    "reviewClips": 9,
+    "reviewClipDurationsSeconds": {
+      "media/home-native-compositor.webm": 39.944,
+      "media/ra2-2x-death-1.webm": 3.475,
+      "media/ra2-2x-death-2.webm": 3.436,
+      "media/ra2-4x-death-1.webm": 3.501,
+      "media/ra2-4x-death-2.webm": 3.45,
+      "media/yr-2x-death-1.webm": 3.472,
+      "media/yr-2x-death-2.webm": 3.446,
+      "media/yr-4x-death-1.webm": 3.455,
+      "media/yr-4x-death-2.webm": 3.405
+    },
+    "previousR3": {
+      "path": "/Users/Aone/Desktop/RA2-HD-Mac-81d0f784-20261021-UI-R3.zip",
+      "present": false,
+      "action": "NOT_MODIFIED"
+    }
+  },
+  "temporaryCopies": {
+    "status": "PASS_ONLY_AUDITED_R4_TEMPORARY_COPIES_RETIRED",
+    "target": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/presentation-r4-20261021",
+    "inventory": {
+      "files": 17782,
+      "links": 28,
+      "directories": 10175,
+      "logicalBytes": 18454643580
+    },
+    "duKiB": 18061636,
+    "availableBytesBefore": 1266078203904,
+    "availableBytesAfter": 1280419831808,
+    "observedAvailableDeltaBytes": 14341627904,
+    "accounting": "Logical retired bytes and du do not measure exclusive APFS blocks. Free-space delta is an observation and may include concurrent filesystem activity.",
+    "desktopSha256After": "76e8bbeaa05c10a8f850980b80a0fcf2b6e21797cb9e242a51f34aeb9f332fbb",
+    "protectedResourceReferencesAfter": 242,
+    "preserved": [
+      "canonical source and selected .local resources",
+      "compact R4 and prior evidence",
+      "Desktop R4 and any other existing packages",
+      "independent M2.4 worktree and Windows history"
+    ],
+    "timestampUtc": "2026-10-21T21:47:31.012591+00:00"
+  },
+  "runtimeSourceHead": "aa64954553208f000bd9957bbd494977cd169743",
+  "archiveVerification": {
+    "status": "PASS_ARCHIVE_AND_EXTRACTION_BYTES_LINKS_MODES_SIGNATURE",
+    "archive": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/presentation-r4-20261021/RA2-HD-Mac-aa649545-20261021-UI-R4.zip",
+    "bytes": 3972523707,
+    "sha256": "76e8bbeaa05c10a8f850980b80a0fcf2b6e21797cb9e242a51f34aeb9f332fbb",
+    "entries": 7721,
+    "sourceHead": "aa64954553208f000bd9957bbd494977cd169743",
+    "extracted": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/presentation-r4-20261021/extracted/RA2-HD-Mac-aa649545-20261021-UI-R4",
+    "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/presentation-r4-20261021/extracted/RA2-HD-Mac-aa649545-20261021-UI-R4/Red Alert 2 HD.app",
+    "resources": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/presentation-r4-20261021/extracted/RA2-HD-Mac-aa649545-20261021-UI-R4/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/presentation-r4-20261021/extracted/RA2-HD-Mac-aa649545-20261021-UI-R4/RA2-HD-UI-Resources",
+    "sourcePayloadParity": "PASS_EXCEPT_DECLARED_PACKAGE_ENTRYPOINT",
+    "nativeRuntime": "PASS_TWO_EXTRACTED_NATIVE_R4_CASES_GI_MARKER_AND_POST_MATCH_LAYOUT"
+  },
+  "reviewPlayback": {
+    "status": "PASS_OFFLINE_R4_REVIEW_IMAGES_AND_COMPLETE_SEQUENTIAL_PLAYBACK",
+    "errors": [],
+    "images": 14,
+    "clips": 9,
+    "homeDurationSeconds": 39.944
+  },
+  "selectedPreparedRegistration": {
+    "type": "prepared-hd-registered",
+    "members": 448,
+    "pages": 1189,
+    "index": "f993e5c0c3e235e0fdaf57bb74b8590eaac7992f30529763e003885d540ad9b1"
+  },
+  "evidenceRoot": "/Users/Aone/RA2remaster/project-history/presentation-r4-aa649545-20261021",
+  "branchCompatibility": {
+    "status": "PASS_NO_NEW_CONFLICT_FILES_AT_PINNED_INDEPENDENT_HEADS",
+    "mainHead": "aa64954553208f000bd9957bbd494977cd169743",
+    "base": "95d6f9e96cbc783bfe020748dffc1883422d781b",
+    "m24Head": "7d1f4d74c92c926bfd0d40c27b143656ac12fc90",
+    "windowsHead": "34856b4552968e7054f9607878431b0036b1724a",
+    "windowsKitBaseAncestor": true,
+    "comparisons": [
+      {
+        "branch": "m24",
+        "head": "7d1f4d74c92c926bfd0d40c27b143656ac12fc90",
+        "stage": "before",
+        "exitCode": 1,
+        "conflictFiles": [
+          "scripts/m2/official-maps/terrain-loading.test.ts",
+          "src/engine/renderable/entity/Building.ts"
+        ]
+      },
+      {
+        "branch": "m24",
+        "head": "7d1f4d74c92c926bfd0d40c27b143656ac12fc90",
+        "stage": "after",
+        "exitCode": 1,
+        "conflictFiles": [
+          "scripts/m2/official-maps/terrain-loading.test.ts",
+          "src/engine/renderable/entity/Building.ts"
+        ]
+      },
+      {
+        "branch": "windows",
+        "head": "34856b4552968e7054f9607878431b0036b1724a",
+        "stage": "before",
+        "exitCode": 1,
+        "conflictFiles": [
+          "AGENTS.md"
+        ]
+      },
+      {
+        "branch": "windows",
+        "head": "34856b4552968e7054f9607878431b0036b1724a",
+        "stage": "after",
+        "exitCode": 1,
+        "conflictFiles": [
+          "AGENTS.md"
+        ]
+      }
+    ],
+    "newConflictFiles": [],
+    "actualMerge": false
+  },
+  "rejectedResourceRetirement": {
+    "status": "PASS_ONLY_UNSELECTED_FAILED_R4_RESOURCES_RETIRED",
+    "targets": [
+      "/Users/Aone/RA2remaster/ra2-hd/.local/hd-packs/allied-gi-authored/presentation-r4-20261021",
+      "/Users/Aone/RA2remaster/ra2-hd/.local/hd-packs/allied-gi-authored/presentation-r4-20261021-v2",
+      "/Users/Aone/RA2remaster/ra2-hd/.local/hd-packs/allied-e1-family/presentation-r4-20261021",
+      "/Users/Aone/RA2remaster/ra2-hd/.local/hd-packs/allied-e1-family/presentation-r4-20261021-v2",
+      "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-loading/decoder-profile"
+    ],
+    "logicalBytes": 17419212,
+    "activeUnitSelections": [
+      {
+        "worktree": "/Users/Aone/RA2remaster/ra2-hd",
+        "e1Family": "hd-packs/allied-e1-family/presentation-r4-20261021-v3/family.json"
+      },
+      {
+        "worktree": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters",
+        "e1Family": "hd-packs/allied-e1-family/animation-r9/family.json"
+      }
+    ],
+    "selectedV3AndPriorR9": "PRESERVED",
+    "timestampUtc": "2026-10-21T21:45:50.461511+00:00"
+  },
+  "reviewRoot": "/Users/Aone/RA2remaster/project-history/presentation-r4-aa649545-20261021/Review",
+  "evidencePaths": {
+    "archive": "/Users/Aone/RA2remaster/project-history/presentation-r4-aa649545-20261021/archive-verification.json",
+    "native": "/Users/Aone/RA2remaster/project-history/presentation-r4-aa649545-20261021/native-final-v2/report.json",
+    "extractedNative": "/Users/Aone/RA2remaster/project-history/presentation-r4-aa649545-20261021/package-native/report.json",
+    "playback": "/Users/Aone/RA2remaster/project-history/presentation-r4-aa649545-20261021/review-playback.json",
+    "cleanup": "/Users/Aone/RA2remaster/project-history/presentation-r4-aa649545-20261021/cleanup.json",
+    "files": "/Users/Aone/RA2remaster/project-history/presentation-r4-aa649545-20261021/retained-files.json"
+  },
+  "rawReceiptPaths": "Original run paths in immutable receipts may name retired temporary copies; review-media-mapping.json maps final media to retained paths."
+}

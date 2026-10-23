@@ -1,0 +1,28 @@
+RA2 HD C4 final bounded Windows check
+
+Use the EXISTING extracted complete C4 kit:
+RA2-HD-WINHD-20261008-D38F136-C4-f850b5c-Windows-x64
+No replacement ZIP, development tools or script editing is needed.
+
+Current Small 4X scrolling/gameplay is user accepted. Matched C3/C4 Normal
+reports confirm removal of the later first-use stall. Initial startup stalls
+remain separate. This check covers the retained eight-player case and the
+missing on-target package integrity receipt.
+
+1. Run Verify-Kit.cmd in C4 and require PASS. Keep its verification.json.
+   If verification fails, preserve the result and export; do not edit files.
+2. Run Launch-Diagnostics.cmd once: [8] eight players / [4] 4X / [N] timings.
+   It uses the retained xmp27t8 map, seven AI and native fullscreen.
+3. Keep the same monitor, DPI, AC power and foreground conditions. Keep the
+   game focused until final four-phase completion. Do not change options,
+   press F8/F9 or start a trace/control/density matrix.
+4. Close the game and run Export-Reports.cmd. Return the new C4 RETURN ZIP,
+   including verification, earlier evidence and any failures.
+5. Report whether scrolling and gameplay remain acceptable in this scene,
+   whether loading is reasonable, and any new edge, occlusion, shadow or
+   color anomaly. Manual play experience is distinct from automated timings.
+
+Do not rerun accepted Small C3/C4 captures. If this case fails, use the result
+to choose one focused follow-up rather than expanding a blind matrix.
+Existing kits, resources and old reports remain intact. No main merge,
+M2.3 changes, driver changes, memory-cap changes or publication are included.

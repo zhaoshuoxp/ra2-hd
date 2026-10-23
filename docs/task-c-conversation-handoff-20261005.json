@@ -1,0 +1,495 @@
+{
+  "status": "CONVERSATION_ACCEPTED_HANDOFF_READY",
+  "date": "2026-10-05",
+  "userDecision": "User approved the delivered result and requested a summary of all work and repairs for the main conversation to handle branch integration.",
+  "scope": [
+    "Task C complete Yuri building HD batch",
+    "Map selection layout repair",
+    "C feedback through R8",
+    "Selected controlled-target mind-control link",
+    "Shared RA2/YR cameo omissions",
+    "Lunar Infantry model and normal/veteran cameos"
+  ],
+  "acceptance": "USER_ACCEPTED",
+  "technicalEvidence": "Previously verified incremental reports retained; no historical matrix repeated for documentation closure.",
+  "observedMain": {
+    "path": "/Users/Aone/RA2remaster/ra2-hd",
+    "head": "e62c450300bbefa29905ee8cf65cb9c8d492b563",
+    "clean": true
+  },
+  "handoffBranch": "fix/lunar-infantry-hd-20261004",
+  "handoffWorktree": "/Users/Aone/RA2remaster/ra2-hd-lunar-infantry-20261004",
+  "mergeBoundary": "All delivered implementation and resources already belong to observed main. Only this documentation/acceptance closure needs integration if not already present. Recheck live state before merging.",
+  "branchSnapshot": [
+    {
+      "branch": "fix/yagntc-building-arc-20261001",
+      "head": "18f816328b8f788e5f27541d3e4b155f3bc2e800",
+      "ancestorOfObservedMain": true
+    },
+    {
+      "branch": "fix/yuri-feedback-r4-20261001",
+      "head": "53043ea2dbc2bde843f6f0ee44fb4df877f96979",
+      "ancestorOfObservedMain": true
+    },
+    {
+      "branch": "fix/yuri-feedback-r5-20261001",
+      "head": "3795e365266f3e8efebd3bd3de4c3ea8247d934d",
+      "ancestorOfObservedMain": true
+    },
+    {
+      "branch": "fix/shared-cameo-coverage-20261004",
+      "head": "ec2313187bf2743309a0a8b45515c58432e10c1a",
+      "ancestorOfObservedMain": true
+    },
+    {
+      "branch": "fix/lunar-infantry-hd-20261004",
+      "head": "e62c450300bbefa29905ee8cf65cb9c8d492b563",
+      "ancestorOfObservedMain": true
+    },
+    {
+      "branch": "task/d-yuri-units-hd",
+      "head": "9aba6cd06f24901df52bc54c9bcb46f6d91ca68f",
+      "ancestorOfObservedMain": false
+    },
+    {
+      "branch": "task/e-yuri-cameos-hd",
+      "head": "cd6944def05dc4444f0e904c8eea29f6c381cdbe",
+      "ancestorOfObservedMain": true
+    },
+    {
+      "branch": "fix/allied-animation-sidebar",
+      "head": "3b4202a8862ce637e3322dd0e31efaba87499149",
+      "ancestorOfObservedMain": true
+    },
+    {
+      "branch": "fix/skirmish-loading-isolated",
+      "head": "c8134d71da67e81b3146f110b652ede48c6e077d",
+      "ancestorOfObservedMain": true
+    }
+  ],
+  "selectedYuriFamilies": 16,
+  "selectedYuriEntries": 33,
+  "yuriSelections": [
+    {
+      "family": "GAFWLL",
+      "theater": "TEMPERATE",
+      "selection": "yuri-gafwll-temperate",
+      "familyPath": "hd-packs/yuri-coverage-gafwll-temperate/c1/family.json",
+      "familyHash": "924b0ec0a85d9819196775e63c23db0e83349407340aae87708879ece9b26a38",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "GAFWLL",
+      "theater": "SNOW",
+      "selection": "yuri-gafwll-snow",
+      "familyPath": "hd-packs/yuri-coverage-gafwll-snow/c1/family.json",
+      "familyHash": "f4404181d1f87de36e090ea7540fd52cf94d8367fe09e2f06750f0575505ddf5",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAPOWR",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yapowr-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yapowr-temperate/c4-feedback-r4/family.json",
+      "familyHash": "a56b15251b5081316a5cb219eb6587c0eba203a2b7f5c3a7ec7f35cc5a8da72d",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAPOWR",
+      "theater": "SNOW",
+      "selection": "yuri-yapowr-snow",
+      "familyPath": "hd-packs/yuri-coverage-yapowr-snow/c4-feedback-r4/family.json",
+      "familyHash": "5c460ffa34d796a4549143a1117a3cf5deb3594da415a1c5c7d4fa236fd405e6",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAGGUN",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yaggun-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yaggun-temperate/c8-feedback-r8-sphere-v2/family.json",
+      "familyHash": "58af20a4480f861cf6e5d709df49a36d870f5036267bdc1819168ec8c9b18c80",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAGGUN",
+      "theater": "SNOW",
+      "selection": "yuri-yaggun-snow",
+      "familyPath": "hd-packs/yuri-coverage-yaggun-snow/c8-feedback-r8-sphere-v2/family.json",
+      "familyHash": "dc2860376cec67db14d04145100bbafca0f1235ebaaabcb0f16c8d0c4393a6c1",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAREFN",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yarefn-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yarefn-temperate/c4-feedback-r4/family.json",
+      "familyHash": "e39a37c0eddfc5724de87ca2b454ccc983e421ccd2804f9fc01561f8a74996e6",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAREFN",
+      "theater": "SNOW",
+      "selection": "yuri-yarefn-snow",
+      "familyPath": "hd-packs/yuri-coverage-yarefn-snow/c4-feedback-r4/family.json",
+      "familyHash": "a4983b85ec12c75ee91232cb5c2b568d859daf3a892882510698825cff9f1fca",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "NACLON",
+      "theater": "TEMPERATE",
+      "selection": "yuri-naclon-temperate",
+      "familyPath": "hd-packs/yuri-coverage-naclon-temperate/c1/family.json",
+      "familyHash": "f3347f217959eb64a2349a917c8a752257e2e58332eaa95678bbbb96196ec2aa",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "NACLON",
+      "theater": "SNOW",
+      "selection": "yuri-naclon-snow",
+      "familyPath": "hd-packs/yuri-coverage-naclon-snow/c1/family.json",
+      "familyHash": "73a871b7d5d4e05f22703145d821c7b4d6643aa64bb5ad92655f34aef8676a85",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YABRCK",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yabrck-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yabrck-temperate/c4-feedback-r4/family.json",
+      "familyHash": "0ced6527337abf8ea76f9daf03255397dcfd30b68f941c9b560996c7dd3e916d",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YABRCK",
+      "theater": "SNOW",
+      "selection": "yuri-yabrck-snow",
+      "familyPath": "hd-packs/yuri-coverage-yabrck-snow/c4-feedback-r4/family.json",
+      "familyHash": "d679d2d3fc1da293d1110264913a16dc3b8e273f8c61feaa028074e85cefe358",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YACNST",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yacnst-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yacnst-temperate/c4-feedback-r4/family.json",
+      "familyHash": "930abd0dcbe91a302d757a86b2f04f96ca1de8767502b3c601e57fd33362ae3b",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YACNST",
+      "theater": "SNOW",
+      "selection": "yuri-yacnst-snow",
+      "familyPath": "hd-packs/yuri-coverage-yacnst-snow/c4-feedback-r4/family.json",
+      "familyHash": "289984838411d47ce8ca0e59252d3d8101783d839b7e4c08c64ebff1325347e4",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAPSYT",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yapsyt-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yapsyt-temperate/c4-feedback-r4/family.json",
+      "familyHash": "9d615dabfef930497a6c82b4e06a184504bbe93703f7939781eb0e7270081162",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAPSYT",
+      "theater": "SNOW",
+      "selection": "yuri-yapsyt-snow",
+      "familyPath": "hd-packs/yuri-coverage-yapsyt-snow/c4-feedback-r4/family.json",
+      "familyHash": "dc0bf5208fea6fc5318994e87b6d844119558362fa5d0d2ee899da7a521d4298",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "NATBNK",
+      "theater": "TEMPERATE",
+      "selection": "yuri-natbnk-temperate",
+      "familyPath": "hd-packs/yuri-coverage-natbnk-temperate/c5-feedback-r5-horizontal-v6/family.json",
+      "familyHash": "75c736e347a646bd3dce5bf9f4b40f79fe1cd8fbb64a445758eaa7d77e4a66c2",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "NATBNK",
+      "theater": "SNOW",
+      "selection": "yuri-natbnk-snow",
+      "familyPath": "hd-packs/yuri-coverage-natbnk-snow/c5-feedback-r5-horizontal-v6/family.json",
+      "familyHash": "8f46aca877f9e745629314cf70ca2806ca4cb0534c73e6e48bce2ea35d11e415",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "NATBNK",
+      "theater": "NEWURBAN",
+      "selection": "yuri-natbnk-newurban",
+      "familyPath": "hd-packs/yuri-coverage-natbnk-newurban/c5-feedback-r5-horizontal-v6/family.json",
+      "familyHash": "bda696b6fd051482cb46052983f61e3530075bebeca47d2b42bb951b027ec54a",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAGRND",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yagrnd-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yagrnd-temperate/c8-feedback-r8-idle-rotor-v2/family.json",
+      "familyHash": "f7b716a0b2848d00c9522a1576ceb5beef85c49df0b6fce2b3c87e36c20d3626",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAGRND",
+      "theater": "SNOW",
+      "selection": "yuri-yagrnd-snow",
+      "familyPath": "hd-packs/yuri-coverage-yagrnd-snow/c8-feedback-r8-idle-rotor-v2/family.json",
+      "familyHash": "5bf604a7ea94245ae074b7f309273f9750ec6b9de4db6ab311b76352f90fed4b",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "NAPSIS",
+      "theater": "TEMPERATE",
+      "selection": "yuri-napsis-temperate",
+      "familyPath": "hd-packs/yuri-coverage-napsis-temperate/c4-feedback-r4/family.json",
+      "familyHash": "04c8347a6e56072bd9aadca4d482be7a936c0473a1d0d0ddc54bc1cdd11380b4",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "NAPSIS",
+      "theater": "SNOW",
+      "selection": "yuri-napsis-snow",
+      "familyPath": "hd-packs/yuri-coverage-napsis-snow/c4-feedback-r4/family.json",
+      "familyHash": "7b7b2410482d7782390efbe437d261b1bcc3fe1376e82f062a058db3c80c6c4e",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YATECH",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yatech-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yatech-temperate/c4-feedback-r4/family.json",
+      "familyHash": "5c35dbfb72726b40b158aaedb656ca028f58e2a124215b72b7a52eaadb4eba0e",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YATECH",
+      "theater": "SNOW",
+      "selection": "yuri-yatech-snow",
+      "familyPath": "hd-packs/yuri-coverage-yatech-snow/c4-feedback-r4/family.json",
+      "familyHash": "84b1f1d72c536bf2ef47f75b6035f85a8efeb55b88b72d51e135034386f6aff1",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAGNTC",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yagntc-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yagntc-temperate/c4-feedback-r4/family.json",
+      "familyHash": "94f70a985f73195573e1fc5500de70b82c01a2839a5d9e616941562a07af9778",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAGNTC",
+      "theater": "SNOW",
+      "selection": "yuri-yagntc-snow",
+      "familyPath": "hd-packs/yuri-coverage-yagntc-snow/c4-feedback-r4/family.json",
+      "familyHash": "f9c0380e0679a5ae7e83ae55e8ddddde79dbf649a8737b5d8a2258ad5d725bfc",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAPPET",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yappet-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yappet-temperate/c4-feedback-r4/family.json",
+      "familyHash": "db02b8e9453636765d82302a920ed50daa4e87f3685a73d6199d55cfbbc6be8f",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAPPET",
+      "theater": "SNOW",
+      "selection": "yuri-yappet-snow",
+      "familyPath": "hd-packs/yuri-coverage-yappet-snow/c4-feedback-r4/family.json",
+      "familyHash": "4ad71cd793929c2d3a7cecd52fbaca0937b12d5b0184900f095ca80deacfd2ff",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAYARD",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yayard-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yayard-temperate/c4-feedback-r4/family.json",
+      "familyHash": "348722087eb9699af363dd61a52c6c9aead6e3a1b201c283c1adc8f752d10733",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAYARD",
+      "theater": "SNOW",
+      "selection": "yuri-yayard-snow",
+      "familyPath": "hd-packs/yuri-coverage-yayard-snow/c4-feedback-r4/family.json",
+      "familyHash": "cfa12bdeda6e43934d41fef84a5be0229743c1c42c903426e2666cc74bd7a1ad",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAWEAP",
+      "theater": "TEMPERATE",
+      "selection": "yuri-yaweap-temperate",
+      "familyPath": "hd-packs/yuri-coverage-yaweap-temperate/c4-feedback-r4/family.json",
+      "familyHash": "fc055165574ed66fc6c4f61512b7109b5cf25fd7646480397ede931875130d66",
+      "densities": [
+        2,
+        4
+      ]
+    },
+    {
+      "family": "YAWEAP",
+      "theater": "SNOW",
+      "selection": "yuri-yaweap-snow",
+      "familyPath": "hd-packs/yuri-coverage-yaweap-snow/c4-feedback-r4/family.json",
+      "familyHash": "f12a657e2fe12a68e1b39cd1b75097d69ce08915d99ee36cd1e561eb25a8a1fb",
+      "densities": [
+        2,
+        4
+      ]
+    }
+  ],
+  "uiSelection": {
+    "schemaVersion": 1,
+    "revision": "lunar-infantry-ui-v1",
+    "sha256": "a8cf998c042066c05c119a6392e9b703ccd03622d89030e1dbf45089cd90ca18",
+    "reviewOnly": false
+  },
+  "uiEntries": 490,
+  "preparedContract": {
+    "schemaVersion": 1,
+    "sha256": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604",
+    "indexPath": "prepared-hd/indexes/a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604.json"
+  },
+  "contracts": [
+    {
+      "file": "desktop/yuri-building-coverage.json",
+      "sha256": "4ead71caa9035ef78edafcb3bee6fffc41ed97ae60a52c65e5c2d386143fed31"
+    },
+    {
+      "file": "desktop/hd-profile.mjs",
+      "sha256": "769932cb2f62024d6be79892567518a3a0d21e3625355685c21cc8dd21edb292"
+    },
+    {
+      "file": "desktop/profile.mjs",
+      "sha256": "105d759129a49118857cdca02a0cd42765a14ad99c50e3e2a2cef9cb637075ee"
+    },
+    {
+      "file": "desktop/prepared-hd-contract.json",
+      "sha256": "a6afa5a32800901d61eb4041a6dee7b5afcfbf3ac6f3fd33d4eaf85655115819"
+    },
+    {
+      "file": "desktop/gatling-sphere-pivots.json",
+      "sha256": "eda8aa2d55415f254bbfbfeae66a326728ddac9926d9d33e19b9ee848dfcb767"
+    }
+  ],
+  "latestDelivery": {
+    "folder": "/Users/Aone/Desktop/RA2-HD-Main-Lunar-Infantry-R1-20261004-c048f6f-macOS-arm64",
+    "app": "/Users/Aone/Desktop/RA2-HD-Main-Lunar-Infantry-R1-20261004-c048f6f-macOS-arm64/Red Alert 2 HD Lunar Infantry R1.app",
+    "archive": "/Users/Aone/Desktop/RA2-HD-Main-Lunar-Infantry-R1-20261004-c048f6f-macOS-arm64.zip",
+    "bytes": 3267335396,
+    "sha256": "56d17fdbe20e2989da73a5175dfa3e9180d7158dfcff33807a0c70433507d0a5",
+    "checkedEntries": 6213
+  },
+  "preservedConstraints": {
+    "world2xMiB": 256,
+    "world4xMiB": 1280,
+    "preparedCpuMiB": 128,
+    "uiMiB": 16,
+    "uiEntryLimit": 512
+  },
+  "exclusions": [
+    "Full Task D branch not merged or accepted by this handoff",
+    "Peer Task E and Allied/loading work retained, not authored in this conversation",
+    "Windows execution and exhaustive physical display/input validation unverified",
+    "YADEPT native TechLevel 15 remains excluded",
+    "LUNR native TechLevel 11 and prerequisites unchanged"
+  ],
+  "publication": "NONE",
+  "runtimeChangedByClosure": false
+}

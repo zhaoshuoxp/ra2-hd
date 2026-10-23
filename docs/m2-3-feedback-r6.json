@@ -1,0 +1,811 @@
+{
+  "schema": "m2-3-r6-gameplay-correction-delivery-v1",
+  "date": "2026-10-09",
+  "status": "PASS_TECHNICAL_DESKTOP_DELIVERY_R6_USER_REVIEW_READY",
+  "runtimeSourceCommit": "a81a94c77ad109835c0540806f4e0749c6a811c1",
+  "shippingSourceParity": "EXACT_SRC_AND_DESKTOP",
+  "target": "darwin-arm64",
+  "scope": {
+    "sharedResources": true,
+    "mapCoordinateOverrides": false,
+    "changedEnvironmentFamilies": [
+      "environment-ctairp",
+      "environment-ctoild",
+      "environment-lobrdb",
+      "environment-bridge"
+    ],
+    "changedTerrainGroups": [
+      "m2-3-set12",
+      "m2-3-set15",
+      "m2-3-set19",
+      "m2-3-set30",
+      "m2-3-set49",
+      "m2-3-set51",
+      "m2-3-set57",
+      "m2-3-r4-set80"
+    ]
+  },
+  "environment": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-3-gameplay-feedback-complete-v19",
+    "sha256": "cc005ffa9de8c7beed81018540c8bd541b17a3b77f568f977ca28d8f8aa34c2e"
+  },
+  "terrain": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-3-gameplay-feedback-v12",
+    "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+  },
+  "prepared": {
+    "schemaVersion": 1,
+    "sha256": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b",
+    "indexPath": "prepared-hd/indexes/b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b.json"
+  },
+  "preservation": {
+    "status": "PASS_SCOPED_GEOMETRY_ALPHA_OWNER_DATA_GUTTERS_AND_UNAFFECTED_BYTES",
+    "environment": {
+      "schemaVersion": 1,
+      "revision": "environment-m2-3-gameplay-feedback-complete-v19",
+      "sha256": "cc005ffa9de8c7beed81018540c8bd541b17a3b77f568f977ca28d8f8aa34c2e"
+    },
+    "terrain": {
+      "schemaVersion": 1,
+      "revision": "temperate-m2-3-gameplay-feedback-v12",
+      "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+    },
+    "sourceReceiptSha256": "722868831d2a5fbf65fa9c468edb25b6f34fc8ff6ecd497c1eae8813d4da7119",
+    "filesChecked": 1991,
+    "unchangedEnvironmentFamilies": 234,
+    "unchangedTerrainGroups": 15,
+    "protectedPaths": [
+      {
+        "file": "src/engine/gfx/CachedMeshVisibility.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "a10361b84bf0ba558a4dd6565b36d15c04396e498596083000484c02c939d694"
+      },
+      {
+        "file": "src/engine/gfx/SceneMatrices.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "79ba66a3c1d96e78e2ddfc09f0528818d6317410c0a8ea8c9aea6b3d5b61a6bf"
+      },
+      {
+        "file": "src/engine/gfx/batch/MeshBatchManager.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "12cefd125b525f8e6968d583271fe194745152b6788a6ec4452b55d11dea0b1b"
+      },
+      {
+        "file": "src/engine/renderable/WorldScene.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "4967e6396f75ac783376d7df377e7e3b6f1b5333b7ecfb8b0848d7aea6a836ba"
+      },
+      {
+        "file": "src/engine/renderable/entity/plugin/MindControlStatusPlugin.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "a3f8527bff5e844a406976b9f5f4910e1aef1ac92615b7528161d7d4595b9c50"
+      },
+      {
+        "file": "src/engine/renderable/entity/plugin/mindControlStatusPalette.ts",
+        "status": "PRESERVED_ABSENCE"
+      },
+      {
+        "file": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "9c6f699a5fa124f12f626cca7f38735177e8affc35fbab4891c055e4239473f3"
+      },
+      {
+        "file": "src/game/art/Art.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "a23baece5eed800716b104dd8b16728b0680f4f00a2401c2c2979f2e4493e897"
+      },
+      {
+        "file": "src/gui/UiScene.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "76a504a4b03cda28c958020004eaa136c64c3ec13bd41e04b2170a79720210bf"
+      }
+    ]
+  },
+  "checks": {
+    "source": "REUSED_11_R6_TESTS_70_ASSERTIONS_AND_ENTRY_TYPECHECK_APP_SOURCE_EXACT_SINCE_CAD92D3",
+    "selectedNativeSessions": 4,
+    "actualDesktopExtractedNativeSessions": 2,
+    "nativeResourceRelease": "PASS",
+    "directAppStartup": "PASS_NO_REGISTRATION_OR_ENVIRONMENT_OVERRIDES",
+    "visibleMapTitles": 61,
+    "offlinePages": 6,
+    "embeddedPictures": 33,
+    "offlineRelativeLinks": 5,
+    "archiveBytesLinksModes": "PASS",
+    "extractedBytesLinksModes": "PASS",
+    "codesign": "PASS"
+  },
+  "nativeSummary": {
+    "status": "PASS_SCOPED_FINAL_NATIVE_GAMEPLAY_STATES_AND_LIMITS",
+    "cases": [
+      {
+        "case": "native-selected-yr-grinder-4x",
+        "edition": "yr",
+        "density": 4,
+        "map": "xgrinder.map",
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "reportSha256": "491843ba9dab7d0c5f7f5016e668468cbe053dc2957687862bc929ec162ce9aa",
+        "combinedWorld": {
+          "terrain": 833003360,
+          "environment": 73445972,
+          "faction": 179275444,
+          "total": 1085724776,
+          "limit": 1342177280
+        },
+        "preparedPeakBytes": 108580412,
+        "animationPhases": [
+          {
+            "building": "CAAIRP",
+            "healthState": "normal",
+            "componentFrames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "building": "CAAIRP",
+            "healthState": "damaged",
+            "componentFrames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "building": "CAOILD",
+            "healthState": "normal",
+            "componentFrames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          },
+          {
+            "building": "CAOILD",
+            "healthState": "damaged",
+            "componentFrames": [
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63
+            ]
+          }
+        ],
+        "bridges": [
+          {
+            "kind": "high",
+            "states": [
+              "standing",
+              "damaged",
+              "demolished",
+              "repaired"
+            ]
+          }
+        ]
+      },
+      {
+        "case": "native-selected-ra2-14-2x",
+        "edition": "ra2",
+        "density": 2,
+        "map": "mp14t2.map",
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "reportSha256": "735e3d624d53105bbc06cf113635f70f0982f083389a266a5e32a428a640f561",
+        "combinedWorld": {
+          "terrain": 214936944,
+          "environment": 34264644,
+          "faction": 49797356,
+          "total": 298998944,
+          "limit": 536870912
+        },
+        "preparedPeakBytes": 44943988,
+        "animationPhases": [
+          {
+            "building": "CAAIRP",
+            "healthState": "normal",
+            "componentFrames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "building": "CAAIRP",
+            "healthState": "damaged",
+            "componentFrames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "building": "CAOILD",
+            "healthState": "normal",
+            "componentFrames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          },
+          {
+            "building": "CAOILD",
+            "healthState": "damaged",
+            "componentFrames": [
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63
+            ]
+          }
+        ],
+        "bridges": [
+          {
+            "kind": "high",
+            "states": [
+              "standing",
+              "damaged",
+              "demolished",
+              "repaired"
+            ]
+          }
+        ]
+      },
+      {
+        "case": "native-selected-ra2-town-4x",
+        "edition": "ra2",
+        "density": 4,
+        "map": "mp03t4.map",
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "reportSha256": "912fe7fc3ddbb80d17187f0fd64a8bfa8e9efaae15cac751c99777a7911d1da9",
+        "combinedWorld": {
+          "terrain": 507796748,
+          "environment": 294980404,
+          "faction": 188347184,
+          "total": 991124336,
+          "limit": 1342177280
+        },
+        "preparedPeakBytes": 108580412,
+        "animationPhases": [],
+        "bridges": [
+          {
+            "kind": "low",
+            "states": [
+              "standing",
+              "damaged",
+              "demolished",
+              "repaired"
+            ]
+          }
+        ]
+      },
+      {
+        "case": "native-selected-yr-town-2x",
+        "edition": "yr",
+        "density": 2,
+        "map": "xmp03t4.map",
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "reportSha256": "5e042ce62c3d47aa6ca63f93f1d820ce9da85b9869f58b460fe7f3783a7ef9c4",
+        "combinedWorld": {
+          "terrain": 130080012,
+          "environment": 76809220,
+          "faction": 52341180,
+          "total": 259230412,
+          "limit": 536870912
+        },
+        "preparedPeakBytes": 44943988,
+        "animationPhases": [],
+        "bridges": [
+          {
+            "kind": "low",
+            "states": [
+              "standing",
+              "damaged",
+              "demolished",
+              "repaired"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "extractedControls": [
+    {
+      "edition": "ra2",
+      "density": 2,
+      "map": "mp14t2.map",
+      "app": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/fresh-extraction/RA2-HD-M2.3-R6-Desktop-Test/Red-Alert-2-HD-M2.3-Gameplay-Fix-R6.app",
+      "combinedWorld": {
+        "terrain": 214936944,
+        "environment": 34264644,
+        "faction": 49797356,
+        "total": 298998944,
+        "limit": 536870912
+      },
+      "preparedPeakBytes": 44943988,
+      "evidence": {
+        "file": ".artifacts/m2-3/feedback-r6-v1/native-extracted-ra2-14-2x/report.json",
+        "bytes": 3635513,
+        "sha256": "8f221f671277dc3c27f68f75fa5fff63994f121ffd9c43919bdfd66d881d7158"
+      }
+    },
+    {
+      "edition": "yr",
+      "density": 4,
+      "map": "xgrinder.map",
+      "app": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/fresh-extraction/RA2-HD-M2.3-R6-Desktop-Test/Red-Alert-2-HD-M2.3-Gameplay-Fix-R6.app",
+      "combinedWorld": {
+        "terrain": 833003360,
+        "environment": 73445972,
+        "faction": 179275444,
+        "total": 1085724776,
+        "limit": 1342177280
+      },
+      "preparedPeakBytes": 108580412,
+      "evidence": {
+        "file": ".artifacts/m2-3/feedback-r6-v1/native-extracted-yr-grinder-4x/report.json",
+        "bytes": 6503271,
+        "sha256": "90442ae45b12b1147171d7b45f20a2f12f6e08068b814059bf820498bde0c949"
+      }
+    }
+  ],
+  "releaseEvidence": {
+    "file": ".artifacts/m2-3/feedback-r6-v1/native-extracted-release-4x/report.json",
+    "bytes": 12290631,
+    "sha256": "0e3bff47302b6bb3567a19b596ea0e7e195337a65dd9b03a5902f11b64f24156"
+  },
+  "performanceComparison": {
+    "basis": "Same native route and 3840x2160 output. Synchronous renderer CPU submission cost after panning; excludes GPU completion and full gameplay frame cost.",
+    "route": [
+      [
+        91,
+        32
+      ],
+      [
+        95,
+        32
+      ],
+      [
+        103,
+        153
+      ],
+      [
+        98,
+        153
+      ]
+    ],
+    "output": [
+      3840,
+      2160
+    ],
+    "samplesPerRun": 80,
+    "measurements": {
+      "r5": {
+        "startupToMatchMs": 13710.825833,
+        "medianRenderSubmissionMs": 1.9900000095367432,
+        "p95RenderSubmissionMs": 2.5700000524520874,
+        "combinedWorldBytes": 1086520680,
+        "processMemorySnapshot": [
+          {
+            "type": "Browser",
+            "memory": {
+              "workingSetSize": 244720,
+              "peakWorkingSetSize": 417024
+            }
+          },
+          {
+            "type": "GPU",
+            "memory": {
+              "workingSetSize": 665712,
+              "peakWorkingSetSize": 762256
+            }
+          },
+          {
+            "type": "Utility",
+            "memory": {
+              "workingSetSize": 40640,
+              "peakWorkingSetSize": 48464
+            }
+          },
+          {
+            "type": "Tab",
+            "memory": {
+              "workingSetSize": 2215104,
+              "peakWorkingSetSize": 3757408
+            }
+          },
+          {
+            "type": "Utility",
+            "memory": {
+              "workingSetSize": 40256,
+              "peakWorkingSetSize": 45904
+            }
+          }
+        ]
+      },
+      "r6": {
+        "startupToMatchMs": 15462.585292000002,
+        "medianRenderSubmissionMs": 1.9850000143051147,
+        "p95RenderSubmissionMs": 3.2750000953674316,
+        "combinedWorldBytes": 1085724776,
+        "processMemorySnapshot": [
+          {
+            "type": "Browser",
+            "memory": {
+              "workingSetSize": 274448,
+              "peakWorkingSetSize": 424160
+            }
+          },
+          {
+            "type": "GPU",
+            "memory": {
+              "workingSetSize": 768016,
+              "peakWorkingSetSize": 772032
+            }
+          },
+          {
+            "type": "Utility",
+            "memory": {
+              "workingSetSize": 40880,
+              "peakWorkingSetSize": 48416
+            }
+          },
+          {
+            "type": "Tab",
+            "memory": {
+              "workingSetSize": 3230208,
+              "peakWorkingSetSize": 4287360
+            }
+          },
+          {
+            "type": "Utility",
+            "memory": {
+              "workingSetSize": 40144,
+              "peakWorkingSetSize": 45952
+            }
+          }
+        ]
+      }
+    },
+    "interpretation": "One cold run each. Render submission median is similar; startup, p95 and process memory are higher in R6. Cache/allocation timing varies. These snapshots do not prove unchanged general performance, a performance fix or a Windows result."
+  },
+  "desktopFiles": [
+    {
+      "file": "/Users/Aone/Desktop/M2.3-R6-Desktop-Mac-Test-20261009.zip",
+      "bytes": 3896346195,
+      "sha256": "d700df38441f6a4c9a827d0b1a911f144c7bab012b9b3ea282c5cec14f596ec6"
+    },
+    {
+      "file": "/Users/Aone/Desktop/M2.3-R6-Offline-Review-20261009.zip",
+      "bytes": 162312387,
+      "sha256": "a79b08ded6069e1cb664c1a1be197cf51678b84fb4db17ece796e998512ca12e"
+    },
+    {
+      "file": "/Users/Aone/Desktop/M2.3-R6-Temperate-Map-Test-List.txt",
+      "bytes": 3959,
+      "sha256": "e73246a6aa0843289b1fcd27b222c03decd58602a6449b4131973a9712e4517f"
+    },
+    {
+      "file": "/Users/Aone/Desktop/M2.3-R6-Temperate-Map-Test-List.csv",
+      "bytes": 5522,
+      "sha256": "997cd350adc2d3da7e35bc088a461a014e01d7045e0f97dd0eee70a633c24d08"
+    }
+  ],
+  "desktopReviewEntry": "/Users/Aone/Desktop/M2.3-R6-Offline-Review-20261009/Review.html",
+  "freshExtraction": {
+    "schemaVersion": 1,
+    "status": "PASS_ACTUAL_DESKTOP_ZIP_EXTRACTED_BYTES_LINKS_MODES",
+    "folder": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/fresh-extraction/RA2-HD-M2.3-R6-Desktop-Test",
+    "app": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/fresh-extraction/RA2-HD-M2.3-R6-Desktop-Test/Red-Alert-2-HD-M2.3-Gameplay-Fix-R6.app",
+    "resources": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/fresh-extraction/RA2-HD-M2.3-R6-Desktop-Test/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/fresh-extraction/RA2-HD-M2.3-R6-Desktop-Test/RA2-HD-UI-Resources",
+    "executable": "RA2 HD Editions",
+    "launcher": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/fresh-extraction/RA2-HD-M2.3-R6-Desktop-Test/Launch-M2.3-R6-Test.command",
+    "runtimeSourceHead": "a81a94c77ad109835c0540806f4e0749c6a811c1",
+    "sourceReceiptSha256": "a16705f5bb0f5bd55065ef465fff0cf72155160ac25d4f0f9cdf32c6be9b5c3b",
+    "sourceFolder": "/Users/Aone/RA2remaster/M2.3-Temperate-Gameplay-Fix-20261009-R6-v3/RA2-HD-M2.3-R6-Gameplay-Test",
+    "target": "darwin-arm64",
+    "resourceStorage": "independent copies",
+    "checkedRuntimeEntries": 7569,
+    "userVisualAcceptance": "PENDING_R6",
+    "userGameplayAcceptance": "NOT_RECORDED",
+    "mainIntegration": false,
+    "desktopArchive": "/Users/Aone/Desktop/M2.3-R6-Desktop-Mac-Test-20261009.zip",
+    "desktopArchiveSha256": "d700df38441f6a4c9a827d0b1a911f144c7bab012b9b3ea282c5cec14f596ec6",
+    "checkedExtractedEntries": 7582
+  },
+  "archive": {
+    "schemaVersion": 1,
+    "status": "PASS_COMPLETE_MAC_ARCHIVE_BYTES_LINKS_MODES_NO_PROFILES",
+    "folder": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/RA2-HD-M2.3-R6-Desktop-Test",
+    "app": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/RA2-HD-M2.3-R6-Desktop-Test/Red-Alert-2-HD-M2.3-Gameplay-Fix-R6.app",
+    "resources": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/RA2-HD-M2.3-R6-Desktop-Test/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/RA2-HD-M2.3-R6-Desktop-Test/RA2-HD-UI-Resources",
+    "executable": "RA2 HD Editions",
+    "launcher": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/RA2-HD-M2.3-R6-Desktop-Test/Launch-M2.3-R6-Test.command",
+    "runtimeSourceHead": "a81a94c77ad109835c0540806f4e0749c6a811c1",
+    "sourceReceiptSha256": "a16705f5bb0f5bd55065ef465fff0cf72155160ac25d4f0f9cdf32c6be9b5c3b",
+    "sourceFolder": "/Users/Aone/RA2remaster/M2.3-Temperate-Gameplay-Fix-20261009-R6-v3/RA2-HD-M2.3-R6-Gameplay-Test",
+    "target": "darwin-arm64",
+    "resourceStorage": "independent copies",
+    "checkedRuntimeEntries": 7569,
+    "userVisualAcceptance": "PENDING_R6",
+    "userGameplayAcceptance": "NOT_RECORDED",
+    "mainIntegration": false,
+    "archive": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/M2.3-R6-Desktop-Mac-Test-20261009.zip",
+    "sha256": "d700df38441f6a4c9a827d0b1a911f144c7bab012b9b3ea282c5cec14f596ec6",
+    "bytes": 3896346195,
+    "checkedArchiveEntries": 7582,
+    "manifestSha256": "dbb56e4568be6485f5d3fd5cf1080eeabeed64122f1e523fe5bf76355af022b3",
+    "codesign": "PASS"
+  },
+  "authoring": [
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/authoring/oil-master.png",
+      "bytes": 1085165,
+      "sha256": "89444f2328fe86a25542db3bc649942e0e618965a67b62bcee2fc591dce39e72"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/authoring/airport-master.png",
+      "bytes": 888481,
+      "sha256": "efb4074070a91ac5e87a794b07cba6d597fb31f2ba77c5377fde56d337454186"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/authoring/oil-master-prompt.txt",
+      "bytes": 1340,
+      "sha256": "d598b5acac726084c82bab8ce59ecac5f826c70190d0ca57c2bec0d69d03fa0c"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/authoring/airport-master-prompt.txt",
+      "bytes": 1233,
+      "sha256": "d3338aa87d8a6f9576a3757b4e8b30c767fa113a7f59ca39acde5f8325f32743"
+    }
+  ],
+  "reusedMapInventory": {
+    "file": ".artifacts/m2-3/inventory-v9/inventory.json",
+    "bytes": 71704220,
+    "sha256": "4f4c463f7a9c9b5430fde85c9ec36cbe4c15c7a43144703c8c94abb63178cbc3"
+  },
+  "nativeAvailabilityExceptions": [
+    "environment-city01",
+    "environment-city02",
+    "environment-city03",
+    "environment-city04",
+    "environment-city05",
+    "environment-cteur04",
+    "environment-ctgefgl",
+    "environment-ctmsc12",
+    "environment-ctpars07",
+    "environment-ctrufgl",
+    "environment-ctusfgl"
+  ],
+  "coverageBoundary": "All declared reusable TEMPERATE resources retain structural closure. The 61 selectable entries are not 61 independent full-match playthroughs. Historical inventory/support exceptions remain explicit.",
+  "priorR5WorkspaceArchive": {
+    "file": "/Users/Aone/RA2remaster/M2.3-R5-Desktop-Mac-Test-20261009-R2/M2.3-R5-Desktop-Mac-Test-20261009.zip",
+    "bytes": 3738908593,
+    "sha256": "697eefef625b8d433b35c469c23034257a8cb0876c558f527736e242e961fac3"
+  },
+  "priorR5DesktopArchivePresent": false,
+  "priorR5DesktopAbsencePolicy": "R6 does not remove or restore prior Desktop files; the hash-verified R5 workspace archive and extracted runtime remain preserved.",
+  "historicalAttempts": [
+    "baseline-grinder-bridges-4x/report.json FAIL retained; superseded by baseline-grinder-bridges-4x-v2",
+    "Partial environment complete-v16 missing input path retained",
+    "Earlier environment/terrain/build/app candidates retained; complete-v19/terrain-v12 selected",
+    "offline-review-native-v1/report.json navigation failure retained; six-page v2 passes",
+    "desktop-delivery-v1 archive retained, not selected for Desktop"
+  ],
+  "evidence": [
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/contact-export-v9.json",
+      "bytes": 71515,
+      "sha256": "722868831d2a5fbf65fa9c468edb25b6f34fc8ff6ecd497c1eae8813d4da7119"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/static-preservation-v5.json",
+      "bytes": 2521,
+      "sha256": "2ccb4a6e0fbf3b8ee72d7130e29b83aee67d0e3d568554b1689c4f488cb8863d"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/environment-registration-v5.json",
+      "bytes": 2016,
+      "sha256": "8bf9a73b94eaadad40d31ebb8f230f4d85d9a47ad66164a82a2d7878232e3282"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/selected-native-summary-v1.json",
+      "bytes": 6545,
+      "sha256": "2aeada8730e244dc5d66fce9f0ad69167c07dec1b5bdc3f4e90b44ac976e447c"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/archive-receipt.json",
+      "bytes": 1837,
+      "sha256": "89c0800333e58926c24e0c4e939edb9d819b5eff98743503c057c4a2e35b6694"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/desktop-delivery-v2/extracted-package-receipt.json",
+      "bytes": 1731,
+      "sha256": "73df3517a093a6d030bc8160eff934e03990d2d8388c8a18a0599cbb589d5454"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/desktop-files-v2.json",
+      "bytes": 921,
+      "sha256": "69e01b28e76b5e8e8e80abc61976e36f992b0473e5e0e89cdaa272b02065533c"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/offline-review-v2/review-manifest.json",
+      "bytes": 12686,
+      "sha256": "0f80f9c8db3cb439ce5c497c2b9e93b261e799eba3a93fedb61a1d1ad0988fcf"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/desktop-review-native-v2/report.json",
+      "bytes": 8342,
+      "sha256": "4764123ef545a14765f6e16245b37c1a475acca48c2a4e22d983189869c6375d"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/desktop-startup-v2/report.json",
+      "bytes": 5694,
+      "sha256": "26e98b2bebaea6956105b977fc078770584fffac5fb801d0a9d0700a5a3251b8"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/native-extracted-release-4x/report.json",
+      "bytes": 12290631,
+      "sha256": "0e3bff47302b6bb3567a19b596ea0e7e195337a65dd9b03a5902f11b64f24156"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/baseline-perf-grinder-4x/report.json",
+      "bytes": 6248542,
+      "sha256": "7d563506afd06bf8eca2db5826feb815f8e129b29809154f7193b7aaf7fae15d"
+    },
+    {
+      "file": ".artifacts/m2-3/feedback-r6-v1/native-selected-yr-grinder-4x/report.json",
+      "bytes": 6508767,
+      "sha256": "491843ba9dab7d0c5f7f5016e668468cbe053dc2957687862bc929ec162ce9aa"
+    }
+  ],
+  "userVisualAcceptance": "PENDING_R6",
+  "userGameplayAcceptance": "NOT_RECORDED",
+  "priorR5VisualAcceptance": "PRESERVED",
+  "mainObservedCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+  "mainIntegration": false,
+  "windows": "NOT_RUN",
+  "physicalInput": "NOT_RUN",
+  "remotePush": false,
+  "publication": false,
+  "handoffPolicy": "Continue R6 review and fixes in this execution conversation; coordinate integration after acceptance. Do not begin another theater automatically."
+}

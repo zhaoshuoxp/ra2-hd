@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "taskId": "E",
+  "status": "PASS_COMPLETE_DESKTOP_ZIP_AND_RELOCATED_RA2_YR_RUNTIME",
+  "desktopZip": "/Users/Aone/Desktop/RA2-HD-Yuri-Cameos-E-R3-Complete-macOS-arm64.zip",
+  "zipBytes": 1770666461,
+  "zipSha256": "7bc2cff1731510e151cf67609181b9b0a7e0b0bf6916b6ef4ff2cf8a56fdfeef",
+  "appSourceHead": "96a053cfc61c3e0908dae2ca0e672c54af564808",
+  "reportHead": "95e3722330482c58f900625e265568e0b034c1aa",
+  "target": "darwin-arm64",
+  "inventoryEntries": 5595,
+  "nativeWorldResourceFiles": 4771,
+  "registeredHdAndUiRoutes": 2451,
+  "nativeArchivesIncluded": true,
+  "profileShipped": false,
+  "cacheShipped": false,
+  "nativeResourceDiscovery": "PASS_AUTOMATIC_SIBLING_ONLY",
+  "uiRevision": "yuri-cameos-e-loading-v1",
+  "uiManifestSha256": "38965a16b78356712dab1582fa92b78b0f314685b50ad23e906165980be71976",
+  "originalR3Signature": "PRESERVED_AND_VERIFIED_AFTER_DESKTOP_EXTRACTION",
+  "cases": [
+    {
+      "edition": "ra2",
+      "status": "PASS_RELOCATED_PACKAGE_AUTODISCOVERY_AND_NATIVE_MATCH",
+      "automaticSiblingDiscovery": true,
+      "nativeFiles": 3,
+      "uiRevision": "yuri-cameos-e-loading-v1",
+      "shieldSha256": "037eeb4431d4b3fa847a388d05f8078f077b07439e7142ad4ce8988c2a70b706",
+      "gameStarted": true,
+      "yuriLoading": null,
+      "glError": 0
+    },
+    {
+      "edition": "yr",
+      "status": "PASS_RELOCATED_PACKAGE_AUTODISCOVERY_AND_NATIVE_MATCH",
+      "automaticSiblingDiscovery": true,
+      "nativeFiles": 7,
+      "uiRevision": "yuri-cameos-e-loading-v1",
+      "shieldSha256": "037eeb4431d4b3fa847a388d05f8078f077b07439e7142ad4ce8988c2a70b706",
+      "gameStarted": true,
+      "yuriLoading": {
+        "source": "hd",
+        "id": "loading-background-yuri",
+        "ui": {
+          "revision": "yuri-cameos-e-loading-v1",
+          "enabled": true,
+          "reservedBytes": 6290112,
+          "decodedCpuBytes": 6290112,
+          "gpuTextureBytesUpperBound": 6290112,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 0,
+          "domImageDecodedCpuBytesUpperBound": 0,
+          "textures": 1,
+          "budget": 16777216,
+          "domCanvasBytes": 7948800,
+          "mipmaps": false
+        }
+      },
+      "glError": 0
+    }
+  ],
+  "runtimeEvidence": ".artifacts/yuri-cameos/complete-zip-r3-v1/desktop-runtime-v1/result.json",
+  "archiveEvidence": ".artifacts/yuri-cameos/complete-zip-r3-v1/desktop-zip-validation.json",
+  "resourceScope": "Complete runtime/resource dependency set of the already reviewed R3 app; concurrent worktree changes are not integrated.",
+  "visualAcceptance": {
+    "31CanonicalCameosAnd12RankAliases": "USER_ACCEPTED",
+    "newYuriLoadingBackground": "USER_ACCEPTED"
+  },
+  "Windows": "NOT_INCLUDED_NOT_RUN",
+  "integration_status": "NOT_MERGED",
+  "finalUserAcceptance": {
+    "date": "2026-10-01",
+    "receipt": {
+      "file": ".artifacts/yuri-cameos/final-acceptance-v1.json",
+      "sha256": "c3b95f632637da4875a1e2a4c9df84374ab7249c2adc191fb4ea877b201c69cb",
+      "bytes": 4966
+    },
+    "completion": "docs/yuri-cameos-final-completion.json",
+    "historicalArtifactReceiptsPreserved": true
+  }
+}

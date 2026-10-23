@@ -1,0 +1,49 @@
+{
+  "status": "PASS_DESKTOP_HD_RESTORED_WITH_STARTUP_RECOVERY",
+  "runtimeSourceHead": "bd25c83b99286595933f1c528012d38a56fd9dc0",
+  "desktopFolder": "/Users/Aone/Desktop/RA2-HD-Resources-R6-bd25c83-macOS-arm64",
+  "target": "darwin-arm64",
+  "verifiedPayloadEntries": 1801,
+  "resourceFiles": 1214,
+  "tests": {
+    "passed": 13,
+    "assertions": 79,
+    "typecheck": "PASS"
+  },
+  "nativeCases": [
+    {
+      "edition": "ra2",
+      "theater": 1,
+      "hdBuildingFamilies": 18,
+      "unitValidation": "PASS_ACCEPTED_FAMILIES_AND_ORIGINAL_EXCEPTIONS",
+      "unitRendererBindings": 24,
+      "startup": {
+        "time": 1790311030502,
+        "type": "hd-startup-ready",
+        "attempts": 1,
+        "missingFamilies": []
+      }
+    },
+    {
+      "edition": "yr",
+      "theater": 1,
+      "hdBuildingFamilies": 18,
+      "unitValidation": "PASS_28_YR_SOVIET_ROOTS_AND_SHARED_ALLOCATION",
+      "unitRendererBindings": 28,
+      "startup": {
+        "time": 1790311056945,
+        "type": "hd-startup-ready",
+        "attempts": 1,
+        "missingFamilies": []
+      }
+    }
+  ],
+  "nativeResultSha256": "dbe75a3b02ebab684f8a326d3a98641f947adef5d0ea1b72fd3e545886bce91f",
+  "evidenceRoot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/hd-resource-r6",
+  "originalSessionUnexpectedMissingFamilies": 61,
+  "underlyingFilesystemTrigger": "UNCONFIRMED",
+  "speedReductionPreserved": 0.25,
+  "humanAcceptance": "PENDING",
+  "remotePush": false,
+  "createdUtc": "2026-09-25T04:39:18.341635+00:00"
+}

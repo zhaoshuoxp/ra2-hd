@@ -1,0 +1,40 @@
+{
+  "status": "PREFLIGHT_ORIGINAL_SOURCES_VERIFIED_HD_BINDINGS_PENDING",
+  "batch": 48,
+  "initialPreflight": {
+    "file": ".artifacts/m2-4/urban-building-preflight-batch48-v1/preflight.json",
+    "sha256": "b420f101e87892fa183e2f68a6e1d7a5b165c197a4b6b4bb54f241ba267ba21b"
+  },
+  "sourceClosure": {
+    "file": ".artifacts/m2-4/urban-building-preflight-batch48-v1/faction-original-closure-v3.json",
+    "sha256": "2e2123793e4ca98df97a9886e4cfb7cd10b762f9e15e326f3f482b23ffefc857"
+  },
+  "sourceScript": {
+    "file": "scripts/m2-4/audit-urban-faction-original-closure.ts",
+    "sha256": "ed872e287d3f0bd3b61e63af8d6036d687f105fe06922a01bb61f992932331e0"
+  },
+  "editionFamilyCells": 77,
+  "distinctFactionIdentities": 46,
+  "linkedMemberChecks": 320,
+  "originalSourceClosure": "PASS",
+  "hdPayloadAuthority": "PENDING",
+  "nativeBinding": "PENDING",
+  "artwork": "REUSE_ACCEPTED_NO_NEW_ART_SELECTED",
+  "remainingUrbanGroups": 207,
+  "remainingByKind": {
+    "building": 197,
+    "infantry": 4,
+    "vehicle": 6
+  },
+  "scopeNotes": [
+    "Original source and palette equality is proved through the actual ImageFinder filename resolver, edition-specific catalog priority and inherited Soviet definitions.",
+    "The special GAPOWR default is outside this catalog/default audit and still needs separate authority proof.",
+    "GAFWLL catalog presence does not establish activation by the current demanded-building roster.",
+    "Do not mark an unsupported audit cell as a missing map dependency: earlier v2 requested RA2 GAROBO although only YR maps demand it; v3 restricts cells to their actual map editions.",
+    "All earlier preparation failures and audit versions remain preserved."
+  ],
+  "resourcesChanged": false,
+  "coverageDeltaChanged": false,
+  "newUserReview": "NONE_REUSES_ACCEPTED_ART",
+  "m24Complete": false
+}

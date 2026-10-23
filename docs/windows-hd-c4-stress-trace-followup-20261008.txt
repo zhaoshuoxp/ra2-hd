@@ -1,0 +1,30 @@
+Existing C4 - one focused eight-player warmed trace
+
+Use the EXISTING complete C4 kit, source f850b5c.
+The target Verify-Kit receipt already PASSES all 8,089 files. Keep it and the
+old reports; no new ZIP, script editing or repeated integrity check is needed.
+
+Normal eight-player timings show remaining 0.10-0.19 second warmed stalls.
+Some occur in submission and others outside measured frame work. The user
+reports an enemy-arrival hitch during the automatic test. No Windows trace
+yet distinguishes shader waiting, resource work, GC or other scheduling.
+
+1. Start ONE fresh Launch-Diagnostics.cmd: [8] eight players / [4] 4X /
+   [N] lightweight timings. Do not select the automatic late Trace option.
+2. About TWENTY seconds after the FIRST live map appears, press F9 ONCE.
+   Do not wait for re-entry or the final capture-complete message.
+3. Keep the same monitor, DPI, AC power, quality and foreground conditions.
+   Keep focus. Do not press F8, change settings or steer the automatic camera.
+4. Wait for the final complete message, including trace saving, before closing.
+   The recording itself may hitch; this run locates causes and is excluded
+   from Normal A/B timing. One process records at most one F9 trace.
+5. Close the game, run Export-Reports.cmd and return the new C4 RETURN ZIP,
+   including verification, earlier reports and any failures. Note whether the
+   enemy-arrival hitch occurred and roughly when it happened after map entry.
+
+The selected eight-second trace targets the observed warmed stalls around
+23-27 seconds after map entry. Exact recurrence is not guaranteed; overlap
+will be checked from timestamps. Only this launch is requested. Generic app
+messages about comparing other modes do not request a new density matrix.
+Preserve all existing kits/resources/profiles/reports. No main/M2.3 changes,
+driver changes, memory-cap increases or speculative repair are included.

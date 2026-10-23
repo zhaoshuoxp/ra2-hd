@@ -1,0 +1,21 @@
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-units/feedback-r12.test.ts:
+10 | export const resourceRoot = path.resolve(process.env.RA2_TEST_RESOURCE_ROOT ?? '.local');
+11 | export const sha256 = (bytes: Uint8Array) => createHash('sha256').update(bytes).digest('hex');
+12 | export function requiredBytes(relative: string) {
+13 |     const file = path.resolve(resourceRoot, relative);
+14 |     if (!file.startsWith(resourceRoot + path.sep)) throw Error(`Resource path escapes root: ${relative}`);
+15 |     if (!existsSync(file)) throw Error(`Missing required integration resource: ${file}. Set RA2_TEST_RESOURCE_ROOT to the imported .local directory.`);
+                                                                                                                                                          ^
+error: Missing required integration resource: /private/tmp/ra2-missing-imports-for-test/yr-core-manifest.json. Set RA2_TEST_RESOURCE_ROOT to the imported .local directory.
+      at requiredBytes (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/test-support/resources.ts:15:150)
+      at retailTreeFor (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/test-support/resources.ts:22:36)
+      at retailMember (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/test-support/resources.ts:34:36)
+      at retailIni (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/test-support/resources.ts:41:20)
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/yuri-units/feedback-r12.test.ts:10:28)
+(fail) (unnamed) [6.42ms]
+
+ 0 pass
+ 1 fail
+Ran 1 test across 1 file. [38.00ms]

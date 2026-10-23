@@ -1,0 +1,655 @@
+{
+  "schema": "m2-3-feedback-r16-v1",
+  "status": "PASS_TECHNICAL_DESKTOP_DELIVERY_PENDING_USER_VISUAL_ACCEPTANCE",
+  "runtimeSourceCommit": "1c93a928d9ae13e91a4bcb35579e1cd532ae13da",
+  "scope": "Correct oil rear drive size, perspective, rod thickness and two-sided anatomy against Original; retain the accepted R13 walking beam.",
+  "environmentSelection": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-3-oil-paired-drive-complete-v31",
+    "sha256": "96d49880153aa1101704f15cca00c48afc28a9bb303c130c917f090c1952d447"
+  },
+  "terrainSelection": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-3-gameplay-feedback-v12",
+    "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+  },
+  "correction": {
+    "rootCause": "R15 modeled one undersized counterweight and thin rod with baked perspective, omitting the opposite mechanism.",
+    "method": "Two broad counterweights rotate around fixed shafts separated by a constant camera projection; two substantial rods connect through an upper shaft. Camera-axis extrusion is independent of rotor angle, and the fixed housing/A-frame occludes the far mechanism.",
+    "mechanismChecks": {
+      "rotors": 2,
+      "rearConnectingRods": 2,
+      "projectedRodEyeWidth": 4.2,
+      "constantShafts": true,
+      "constantSideSeparation": true,
+      "invariantRigidTransforms": true,
+      "constantCameraExtrusion": true,
+      "farSideOcclusion": true,
+      "fullCycleBounds": [
+        [
+          39.39410869706959,
+          29.934657035245905,
+          50.99605461833433,
+          44.95993538131203
+        ],
+        [
+          28.39410869706959,
+          24.434657035245905,
+          39.99605461833433,
+          39.45993538131203
+        ],
+        [
+          39.85402004728761,
+          31.010618460195115,
+          50.98939064702948,
+          46.28753926901217
+        ],
+        [
+          28.85402004728761,
+          25.510618460195115,
+          39.98939064702948,
+          40.78753926901217
+        ],
+        [
+          40.468421364353055,
+          31.015025317918255,
+          50.97625387692643,
+          47.43509757578954
+        ],
+        [
+          29.46842136435306,
+          25.515025317918255,
+          39.97625387692643,
+          41.93509757578954
+        ],
+        [
+          41.2175984478563,
+          31.006031872483955,
+          51.31314102691781,
+          48.37021021784158
+        ],
+        [
+          30.217598447856297,
+          25.506031872483955,
+          40.31314102691781,
+          42.87021021784158
+        ],
+        [
+          42.08405657717248,
+          31.00505260904921,
+          52.16656084343496,
+          49.04059403047959
+        ],
+        [
+          31.084056577172483,
+          25.50505260904921,
+          41.16656084343496,
+          43.54059403047959
+        ],
+        [
+          43.03349105111263,
+          31.00181613326959,
+          53.08496036867056,
+          49.415156083796326
+        ],
+        [
+          32.03349105111263,
+          25.50181613326959,
+          42.08496036867056,
+          43.915156083796326
+        ],
+        [
+          44.0197854997764,
+          31.002713893794414,
+          54.03368009864982,
+          49.46676101954522
+        ],
+        [
+          33.0197854997764,
+          25.502713893794414,
+          43.03368009864982,
+          43.96676101954522
+        ],
+        [
+          45.01131815388033,
+          31.012819299712874,
+          54.979655826082606,
+          49.2039217690639
+        ],
+        [
+          34.01131815388033,
+          25.512819299712874,
+          43.979655826082606,
+          43.7039217690639
+        ],
+        [
+          45.96255787492588,
+          31.021630500632366,
+          55.891496223375164,
+          48.663246739085
+        ],
+        [
+          34.96255787492588,
+          25.521630500632366,
+          44.891496223375164,
+          43.163246739085
+        ],
+        [
+          46.83883658783066,
+          31.03864507926726,
+          56.7196094278547,
+          47.83426748285883
+        ],
+        [
+          35.83883658783066,
+          25.53864507926726,
+          45.7196094278547,
+          42.33426748285883
+        ],
+        [
+          46.8499965629774,
+          31.05517255519608,
+          57.44363755285423,
+          46.76143310386167
+        ],
+        [
+          35.8499965629774,
+          25.55517255519608,
+          46.44363755285423,
+          41.26143310386167
+        ],
+        [
+          46.84848747409009,
+          30.15518523901905,
+          58.04746531185797,
+          45.477708012554
+        ],
+        [
+          35.84848747409009,
+          24.65518523901905,
+          47.04746531185797,
+          39.977708012554
+        ],
+        [
+          46.84428735531508,
+          28.71092879271858,
+          58.49937827328787,
+          44.00410588522276
+        ],
+        [
+          35.84428735531508,
+          23.21092879271858,
+          47.49937827328787,
+          38.50410588522276
+        ],
+        [
+          46.84424911932998,
+          27.18051429448977,
+          58.770703314446564,
+          42.420204871952464
+        ],
+        [
+          35.84424911932998,
+          21.68051429448977,
+          47.770703314446564,
+          36.920204871952464
+        ],
+        [
+          46.845092604673574,
+          25.609799742997417,
+          58.85389421366246,
+          40.78216174620471
+        ],
+        [
+          35.845092604673574,
+          20.109799742997417,
+          47.85389421366246,
+          35.28216174620471
+        ],
+        [
+          46.847718509396415,
+          24.057770116620855,
+          58.74403239559822,
+          39.1601888637762
+        ],
+        [
+          35.847718509396415,
+          18.557770116620855,
+          47.74403239559822,
+          33.6601888637762
+        ],
+        [
+          46.85394538166566,
+          22.590064618687958,
+          58.4558913029304,
+          37.615342964754085
+        ],
+        [
+          35.85394538166566,
+          17.090064618687958,
+          47.4558913029304,
+          32.115342964754085
+        ],
+        [
+          46.860609352970506,
+          21.262460730987808,
+          57.995979952712375,
+          36.53938153980487
+        ],
+        [
+          35.860609352970506,
+          15.762460730987808,
+          46.995979952712375,
+          31.03938153980487
+        ],
+        [
+          46.87374612307356,
+          20.114902424210445,
+          57.38157863564693,
+          36.53497468208173
+        ],
+        [
+          35.87374612307356,
+          14.614902424210445,
+          46.38157863564693,
+          31.03497468208173
+        ],
+        [
+          46.536858973082175,
+          19.179789782158405,
+          56.63240155214369,
+          36.54396812751603
+        ],
+        [
+          35.536858973082175,
+          13.679789782158403,
+          45.63240155214369,
+          31.04396812751603
+        ],
+        [
+          45.68343915656503,
+          18.509405969520397,
+          55.765943422827505,
+          36.54494739095078
+        ],
+        [
+          34.68343915656503,
+          13.0094059695204,
+          44.765943422827505,
+          31.044947390950778
+        ],
+        [
+          44.76503963132943,
+          18.13484391620366,
+          54.81650894888735,
+          36.5481838667304
+        ],
+        [
+          33.76503963132943,
+          12.63484391620366,
+          43.81650894888735,
+          31.048183866730398
+        ],
+        [
+          43.81631990135018,
+          18.08323898045477,
+          53.83021450022359,
+          36.54728610620557
+        ],
+        [
+          32.81631990135018,
+          12.583238980454768,
+          42.83021450022359,
+          31.047286106205572
+        ],
+        [
+          42.87034417391738,
+          18.346078230936083,
+          52.838681846119655,
+          36.53718070028711
+        ],
+        [
+          31.87034417391738,
+          12.846078230936083,
+          41.838681846119655,
+          31.037180700287113
+        ],
+        [
+          41.95850377662482,
+          18.88675326091499,
+          51.88744212507412,
+          36.52836949936762
+        ],
+        [
+          30.958503776624823,
+          13.38675326091499,
+          40.88744212507412,
+          31.02836949936762
+        ],
+        [
+          41.13039057214529,
+          19.71573251714116,
+          51.011163412169324,
+          36.51135492073273
+        ],
+        [
+          30.130390572145288,
+          14.215732517141161,
+          40.011163412169324,
+          31.011354920732728
+        ],
+        [
+          40.40636244714576,
+          20.788566896138317,
+          51.000003437022585,
+          36.4948274448039
+        ],
+        [
+          29.40636244714576,
+          15.288566896138319,
+          40.000003437022585,
+          30.994827444803907
+        ],
+        [
+          39.80253468814202,
+          22.072291987445986,
+          51.001512525909895,
+          37.394814760980935
+        ],
+        [
+          28.802534688142018,
+          16.572291987445986,
+          40.001512525909895,
+          31.894814760980935
+        ],
+        [
+          39.35062172671212,
+          23.545894114777223,
+          51.005712644684905,
+          38.83907120728141
+        ],
+        [
+          28.35062172671212,
+          18.045894114777223,
+          40.005712644684905,
+          33.33907120728141
+        ],
+        [
+          39.07929668555342,
+          25.129795128047526,
+          51.00575088067001,
+          40.369485705510215
+        ],
+        [
+          28.079296685553423,
+          19.629795128047526,
+          40.00575088067001,
+          34.869485705510215
+        ],
+        [
+          38.99610578633753,
+          26.767838253795272,
+          51.00490739532641,
+          41.940200257002566
+        ],
+        [
+          27.996105786337527,
+          21.267838253795272,
+          40.00490739532641,
+          36.440200257002566
+        ],
+        [
+          39.10596760440177,
+          28.38981113622378,
+          51.00228149060357,
+          43.49222988337913
+        ],
+        [
+          28.10596760440177,
+          22.88981113622378,
+          40.00228149060357,
+          37.99222988337913
+        ]
+      ],
+      "originalMeasuredPhases": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28
+      ],
+      "referencePinErrors": [
+        0.9491279481404868,
+        0.24071891402491832,
+        0.44972553430830553,
+        0.4693385879167584,
+        0.5354849645167632,
+        0.1622176151616038,
+        0.3574563253151359,
+        0.5249545023483668
+      ],
+      "originalLandmarkUncertaintyNativePixels": 2,
+      "originalReference": "Native untouched ctoild_a.shp",
+      "negativeControlR15": {
+        "rotors": 1,
+        "rearConnectingRods": 1,
+        "rodWidth": 2.1,
+        "rejected": "Wrong one-sided anatomy and baked perspective; fails required two-sided counts"
+      }
+    },
+    "originalReference": "Hash-pinned untouched Original frames 0-63, same-phase full-canvas comparisons and preserved Original native recordings.",
+    "uncertainty": "Eight manually inspected orbit landmarks have approximately two native pixels of uncertainty. This is a reconstructed HD rig, not a recovered exact Original 3D model."
+  },
+  "authoring": {
+    "mode": "built-in imagegen",
+    "selected": "authoring/rotor-front-v3.png",
+    "inputs": [
+      {
+        "file": ".artifacts/m2-3/feedback-r16-v1/authoring/edit-request-v2.json",
+        "sha256": "b418552fcc25c69be758f65de1adb30abe9ac117630fc207a44941e089ca9350"
+      },
+      {
+        "file": ".artifacts/m2-3/feedback-r16-v1/authoring/edit-request-v3.json",
+        "sha256": "7b276e8a1a47d9a9bc977ebf5cac1e9e26de3ffc20a8dd2fc434700fc1b1f98b"
+      },
+      {
+        "file": ".artifacts/m2-3/feedback-r16-v1/authoring/generate-request.json",
+        "sha256": "8abe1d25ad4da1125cbc6ac87f659937b4ae402770ade451bb92ea203ff905f6"
+      },
+      {
+        "file": ".artifacts/m2-3/feedback-r16-v1/authoring/rotor-front-v1.png",
+        "sha256": "c57d90987b11c8765ecc59ea85457d509273ec5d656c55e85d0e8944d3d15407"
+      },
+      {
+        "file": ".artifacts/m2-3/feedback-r16-v1/authoring/rotor-front-v2.png",
+        "sha256": "0a644d2ef5455dd3f5dc71570ff702a4ca9c10be25bc14cde105946b04a660f0"
+      },
+      {
+        "file": ".artifacts/m2-3/feedback-r16-v1/authoring/rotor-front-v3.png",
+        "sha256": "5f092b59cadd87ef1754d86162fda215424024428bb113376d72eb7930f026c0"
+      }
+    ]
+  },
+  "preservation": {
+    "acceptedR13BeamMaterialCoveragePosesAndFrontRod": "UNCHANGED",
+    "opaqueBeamPixelsAndCoverage": "EXACT_128_FRAMES",
+    "bodyFlagOwnerDataGeometryShadowsTiming": "UNCHANGED",
+    "nonOilFamilies": 237,
+    "nonOilFiles": 1970,
+    "applicationSourceFilesExceptEnvironmentSelection": 1454,
+    "nonEnvironmentWorldPackageEntries": 4738,
+    "uiPackageEntries": 360
+  },
+  "technicalStatus": {
+    "staticDensityStateFrames": 128,
+    "copiedNativeCases": 4,
+    "copiedNativeClips": 20,
+    "normalLoopFrames": 32,
+    "damagedLoopFrames": 31,
+    "extractedNativeCases": 2,
+    "reviewPages": 5,
+    "embeddedImages": 21,
+    "embeddedVideos": 31,
+    "sourceAndDesktopOfflinePlayback": "PASS",
+    "actualDesktopArchiveExtractionSignatureAndStartup": "PASS",
+    "visibleChecklistTitles": 61,
+    "samePhaseDensityStateSelections": 128,
+    "samePhasePreviousNextPlayControls": "PASS_SOURCE_AND_ACTUAL_DESKTOP"
+  },
+  "reusedR7NativeMapLoading": {
+    "ra2": 31,
+    "yr": 80,
+    "status": "REUSED_CLOSED_EVIDENCE_NOT_RERUN_R16",
+    "basis": "Application source, maps, logical frames and decoding contracts unchanged."
+  },
+  "desktopGame": {
+    "file": "/Users/Aone/Desktop/M2.3-R16-Desktop-Mac-Test-20261010.zip",
+    "bytes": 3796269037,
+    "sha256": "43fe5af2da7945f695683715d8987d2a3518ed844c6aa30cfd5a6a2e2910a5be"
+  },
+  "desktopReviewEntry": "/Users/Aone/Desktop/M2.3-R16-Offline-Review-20261010/Review.html",
+  "desktopReviewArchive": {
+    "file": "/Users/Aone/Desktop/M2.3-R16-Offline-Review-20261010.zip",
+    "bytes": 64906400,
+    "sha256": "ecf5c0b36541d5a04a8ac94d58d7def3e897ea25576f4a9ef06460304dbb0285"
+  },
+  "mapLists": [
+    {
+      "file": "/Users/Aone/Desktop/M2.3-R16-Temperate-Map-Test-List.txt",
+      "bytes": 3960,
+      "sha256": "5bf23028f6766bbd0aa317521e38738c6234416cdc3a8cfd877ec2b18c371a0f"
+    },
+    {
+      "file": "/Users/Aone/Desktop/M2.3-R16-Temperate-Map-Test-List.csv",
+      "bytes": 5522,
+      "sha256": "997cd350adc2d3da7e35bc088a461a014e01d7045e0f97dd0eee70a633c24d08"
+    }
+  ],
+  "observedMain": {
+    "head": "bc581b1c3c871199ac568939723324e4cfce6b2c",
+    "status": ""
+  },
+  "priorFeedback": [
+    {
+      "revision": "R13",
+      "beam": "USER_ACCEPTED",
+      "historicalReceipts": "PRESERVED"
+    },
+    {
+      "revision": "R14",
+      "rearMechanism": "USER_REJECTED_MISSING_COUNTERWEIGHT",
+      "technicalDelivery": "PASS_HISTORICAL"
+    },
+    {
+      "revision": "R15",
+      "rearMechanism": "USER_REJECTED_SIZE_PERSPECTIVE_ROD_WIDTH_AND_MISSING_SECOND_MECHANISM",
+      "technicalDelivery": "PASS_HISTORICAL"
+    }
+  ],
+  "visualAcceptance": "PENDING_R16_PAIRED_DRIVE",
+  "fullMatchUserAcceptance": "NOT_RECORDED_R16",
+  "windows": "NOT_RUN",
+  "physicalInput": "NOT_RUN",
+  "handoff": "Continue this correction and visual acceptance in the current execution chat; no main integration or adjacent milestone.",
+  "receipts": {
+    "oil-static-v3/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/oil-static-v3/report.json",
+      "sha256": "828180a0f7a35068e3af4bd198996ca6911773b9090561158692d1e41ca169e5"
+    },
+    "environment-assembly-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/environment-assembly-v1.json",
+      "sha256": "3601f4c6c3d41b202a9aea73a157031b927c5fc97dc42f9f02f4aa3e684879b1"
+    },
+    "registration-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/registration-v1.json",
+      "sha256": "5af16f22d759f8eedcf17968f9062e1e2b0aecb5168721bab41fa9ef0936a5d4"
+    },
+    "preservation-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/preservation-v1.json",
+      "sha256": "5b379d4e6aaccbbbc98d3f0c93bd7de0e85f45bd187b54402b88f991b3a04ec6"
+    },
+    "source-checks-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/source-checks-v1.json",
+      "sha256": "c911315fa1c94a86dd13e778b19671cff61ddda9f6d23c765a79af241e83cdc8"
+    },
+    "package-resource-parity-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/package-resource-parity-v1.json",
+      "sha256": "067a40a2e814817a5b4fb517ea22de77008a6f1e19ae872100158870cb6f4c84"
+    },
+    "native-summary-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/native-summary-v1.json",
+      "sha256": "1d9ffaa718e7a48f3f49bb668c5759b81604a3a10b13512be9e35b18da25c167"
+    },
+    "extracted-native-summary-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/extracted-native-summary-v1.json",
+      "sha256": "60177fd3171c1e843894753092fe7d377aa0cdcd1dff5fa936d8dc11752de680"
+    },
+    "offline-review-v1/review-manifest.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/offline-review-v1/review-manifest.json",
+      "sha256": "797754de9289dcbd74f06a5b31fcfd55ba65c11878d8a1c416a5905500f15025"
+    },
+    "offline-review-archive-v2/archive-receipt.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/offline-review-archive-v2/archive-receipt.json",
+      "sha256": "fd1829899d446d264a3cf6b20f3867c59fa4578667a75100a22c1aafdcdfe28d"
+    },
+    "offline-review-native-v1/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/offline-review-native-v1/report.json",
+      "sha256": "d376e6e2b6c9cfd75edf026deeb8f0bb8a42ee7899ab4b627ff866f9508aab16"
+    },
+    "desktop-review-native-v1/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/desktop-review-native-v1/report.json",
+      "sha256": "d376e6e2b6c9cfd75edf026deeb8f0bb8a42ee7899ab4b627ff866f9508aab16"
+    },
+    "desktop-delivery-v1/archive-receipt.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/desktop-delivery-v1/archive-receipt.json",
+      "sha256": "9d965df0b2756e64bda5a3a04fe8a1a5c49fcf47843b7740a960881a4daf733e"
+    },
+    "desktop-review-files-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/desktop-review-files-v1.json",
+      "sha256": "8f98e2c6c59ef3f0081dd1b7625bca52efb0b40d3f6c7d11941785c5053e6ad5"
+    },
+    "desktop-game-file-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/desktop-game-file-v1.json",
+      "sha256": "392a445f40ba40c0f5b3a2be82b060c7d106acf8bc00ecb487cc5fddd04ffb9d"
+    },
+    "desktop-extraction-v1/extracted-package-receipt.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/desktop-extraction-v1/extracted-package-receipt.json",
+      "sha256": "099551dc98878619f617de1ac2e2f8f85793404193ea8ec719adab36c998220e"
+    },
+    "desktop-startup-v1/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/desktop-startup-v1/report.json",
+      "sha256": "2174d09232e929f305e9164d7a759ea3d1598dbb6510220a2d909c602a4cb711"
+    },
+    "final-preservation-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/final-preservation-v1.json",
+      "sha256": "caded37952a5038aa2a7ea39467c56d0160ab5fe3ee79788543b4102ba4b3c8c"
+    },
+    "authoring-inputs-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/authoring-inputs-v1.json",
+      "sha256": "7316db4c7d55ad06f07ba257b27aec1fc0d39308f543cc0e36ce1d4a58a402c2"
+    },
+    "authoring/edit-request-v3.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/authoring/edit-request-v3.json",
+      "sha256": "7b276e8a1a47d9a9bc977ebf5cac1e9e26de3ffc20a8dd2fc434700fc1b1f98b"
+    },
+    "candidate-v1-disposition.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/candidate-v1-disposition.json",
+      "sha256": "1e3075ad74533447db286485c93cf5e4c848f619c0d64ffbf727c61b44c81065"
+    },
+    "reference-inspection-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/reference-inspection-v1.json",
+      "sha256": "9ca6fbe74fdf1700a2b8201587b57d5df614b22093f377ca6a16268e119811b1"
+    },
+    "phase-reference-v3/manifest.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/phase-reference-v3/manifest.json",
+      "sha256": "31379ecc4607557af987b0c03a34319a081d922a6c7019616b2108b4d8b31d10"
+    },
+    "oil-export-v2.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/oil-export-v2.json",
+      "sha256": "8b858fa058f8dcb1a9a33f8e0adce00ead633498217bc2df8dc7375a5751ca34"
+    }
+  }
+}

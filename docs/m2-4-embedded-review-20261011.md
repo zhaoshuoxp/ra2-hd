@@ -1,0 +1,9 @@
+# M2.4 standalone embedded review
+
+Open `/Users/Aone/RA2remaster/M2.4-Snow-Samples-Mac-20261010-v1/Review/index-embedded.html`. All 50 existing PNGs are embedded directly as exact source bytes. The single HTML file is 107,171,160 bytes (about 102 MiB) and displays images without JavaScript, sibling media files, a server or network access.
+
+The static page includes eight matched Original/2X/4X scenes, four recorded house states at both densities and 18 atlas comparisons. CSS controls select Original, 2X, 4X or all available images. Default 2X viewing preserves native pixel dimensions with scrolling; optional Fit preview changes only display size. Each case expands independently, and provenance JSON is embedded for download. Original house-state captures were not collected and are labeled explicitly.
+
+`index-embedded.json` records source manifest/index hashes, all PNG identities, output size/hash and static verification. The verifier checks all 50 embedded PNG byte hashes and dimensions, zero script elements/external image sources, internal navigation and preservation of the original source review files. `index-embedded-validation.json` records the isolated Electron rendering check: all density selections, actual 1489 × 1080 image rectangles, viewer height, Fit behavior and zero renderer errors. The settled screenshot was inspected. An earlier hidden-window capture raced the final repaint; its receipt is retained under `.artifacts/m2-4/embedded-review-ui-v1`.
+
+Generator: `scripts/m2-4/embed-review.py`; renderer verifier: `scripts/m2-4/verify-embedded-review.cjs`. Both refuse existing output targets. This companion is additive: the earlier linked review, artwork, copied app/resources/profile and prior receipts remain unchanged. Runtime source stays `3a74a19`. SNOW direction and full M2.4 acceptance remain pending; this page does not change their status. Continue feedback in the current execution conversation.

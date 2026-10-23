@@ -1,0 +1,85 @@
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/unified-desktop.test.ts:
+(pass) saved artwork choices survive output changes and older graphics preferences [2.93ms]
+(pass) HD origin boundary rejects remote URLs, opaque lookalikes and credentials [0.08ms]
+(pass) absent optional data exposes availability without exposing arbitrary files [24.36ms]
+
+scripts/editions/disk-drain.test.ts:
+(pass) native cell range includes the refinery edge even when center distance exceeds weapon range [0.70ms]
+(pass) a nearby guard target cannot interrupt refinery payments after FireOnce finishes [1.23ms]
+(pass) retaliation preserves an active drain, then normal acquisition resumes after Stop [0.31ms]
+(pass) drain payments cap at remaining enemy credits and repeated activation does not reset the timer [0.25ms]
+(pass) move-order ends the drain before another payment and releases blackout [0.10ms]
+(pass) new-target ends the drain before another payment and releases blackout [0.05ms]
+(pass) destroyed ends the drain before another payment and releases blackout [0.03ms]
+(pass) unspawned ends the drain before another payment and releases blackout [0.03ms]
+(pass) captured ends the drain before another payment and releases blackout [0.03ms]
+(pass) out-of-range ends the drain before another payment and releases blackout [0.03ms]
+(pass) owner-change ends the drain before another payment and releases blackout [0.04ms]
+(pass) source-unspawn ends the drain before another payment and releases blackout [0.03ms]
+(pass) pending drain protects FireOnce intent without early effects (power=0) [0.24ms]
+(pass) pending drain protects FireOnce intent without early effects (power=100) [0.20ms]
+(pass) stop cancels pending drain and rejects late impact [0.05ms]
+(pass) move cancels pending drain and rejects late impact [0.01ms]
+(pass) retarget cancels pending drain and rejects late impact
+(pass) captured cancels pending drain and rejects late impact
+(pass) destroyed cancels pending drain and rejects late impact
+(pass) projectile-removed cancels pending drain and rejects late impact [0.01ms]
+(pass) owner-change cancels pending drain and rejects late impact
+(pass) source-unspawn cancels pending drain and rejects late impact [0.01ms]
+(pass) an old projectile cannot replace a newer reservation; queued orders preserve it [0.27ms]
+(pass) drain approach reaches the building center while ordinary weapon movement retains edge range [0.49ms]
+
+scripts/m1/allied-units/feedback.test.ts:
+(pass) dolphin swim and attack use clockwise source bearings without changing animation phase [0.12ms]
+(pass) parking depth clears only the occupied sprite surface and preserves screen projection [2.69ms]
+(pass) native depth mask is traversed only beneath a high bridge [1.23ms]
+
+scripts/m1/allied-units/shared-reuse.test.ts:
+(pass) Allied and Soviet engineer leases share one allocation without matching foreign images [1.07ms]
+(pass) Source-identical stolen-tech units become available in RA2 without opening YR-only families [0.06ms]
+(pass) Reused member slots cover both native sequence maps, including fixed-facing differences [227.40ms]
+
+scripts/m1/yuri-units/registration.test.ts:
+(pass) miner registration retains manifests and selects one complete density for body and workers [59.26ms]
+
+scripts/m1/yuri-units/feedback-effects.test.ts:
+(pass) disc circumference radius is invariant under native turret bearings rather than the rotated box diagonal [0.79ms]
+(pass) retail normal and elite disc weapons admit their ring flag and explicit native colors [22.30ms]
+(pass) AreaFire centers on the live caster without mutating an ordinary enemy target [0.13ms]
+(pass) native TurretSpins completes headings independently of target acquisition; ordinary turrets retain aim [0.11ms]
+(pass) disc ring precedes the outgoing ray and expires as one disposable effect [1.72ms]
+(pass) magnetic ribbon follows elevated victim endpoints and releases at beam interruption [1.27ms]
+(pass) magnetic muzzle follows turret facing, body mount and full native FLH [0.05ms]
+(pass) magnetic muzzle uses the displayed paired-tip point at both independent HD densities [0.32ms]
+(pass) magnetic contact stays on the nearest bottom footprint edge through lift and rotation [0.31ms]
+(pass) magnetic HD contact excludes transparent padding and follows the visible lower silhouette through lift [0.20ms]
+(pass) control arcs obey native selection and intel visibility for vehicle and infantry controllers [0.53ms]
+(pass) an inactive HD controller retains its Original roof while the complete family loads [0.10ms]
+(pass) control source follows the rotated elevated vehicle roof and the camera-facing infantry crown [0.41ms]
+(pass) control line touches both supplied attachment points without a hidden vertical bias [0.13ms]
+(pass) the sprite crown excludes transparent padding and decodes lossless pooled alpha [0.24ms]
+(pass) magnetic field retains reference width and straight endpoints while animating without replacing geometry [0.39ms]
+
+scripts/m1/yuri-units/feedback-r12.test.ts:
+(pass) YURI one-shot deployment waits for mind-control cooldown before starting auto-undeploy [0.60ms]
+(pass) YURIPR one-shot deployment waits for mind-control cooldown before starting auto-undeploy [0.10ms]
+(pass) pending one-shot deployment can still be cancelled explicitly and redeployed [0.08ms]
+(pass) empty ammunition defers the one-shot countdown until the weapon can fire [0.04ms]
+(pass) continuous deployment and deployment without an AreaFire weapon retain their timer [0.07ms]
+
+scripts/m2/official-maps/waterfall-admission.test.ts:
+(pass) all eleven complete native waterfall manifests reach page validation at both densities [15.84ms]
+(pass) altered native identities, non-waterfall opacity and invalid opacity fail before page reads [1.56ms]
+
+scripts/m2/official-maps/terrain-loading.test.ts:
+(pass) new terrain closure loads only encountered groups at 2X [9.78ms]
+(pass) new terrain closure loads only encountered groups at 4X [10.91ms]
+(pass) corrupt new terrain atlas keeps the whole group native before publication [6.74ms]
+(pass) exhausted world capacity rejects the new closure without fetching its atlas [4.09ms]
+
+ 61 pass
+ 0 fail
+ 993 expect() calls
+Ran 61 tests across 9 files. [1300.00ms]

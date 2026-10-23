@@ -1,0 +1,274 @@
+{
+  "schema": "ra2-hd-m2-3-scoped-cleanup-v1",
+  "status": "PASS_AUTHORIZED_M2_3_CLEANUP_AND_PROTECTED_DELIVERY_VERIFICATION",
+  "date": "2026-10-10",
+  "authorization": "User requested removal of unnecessary intermediate files and versions after R16 acceptance and local-main integration.",
+  "scope": "Only the exact 76 audited obsolete M2.3 outputs and redundant integration resource copy.",
+  "mainBeforeCleanup": "a3259d91a5cce706a2cb39faee4d6e7838657fe3",
+  "runtimeMergeUnchanged": "a43c2cbb58bcec589f5babd3a851536e0962b2a0",
+  "space": {
+    "logicalBytesRemoved": 335174906087,
+    "retainedCompressedBytes": 5498441804,
+    "diskBefore": {
+      "availableBytes": 403980742656,
+      "freeBytes": 403980742656
+    },
+    "diskAfter": {
+      "availableBytes": 641775157248,
+      "freeBytes": 641775157248
+    },
+    "availableSpaceIncreaseBytes": 237794414592,
+    "physicalSpaceDisclosure": "Available-space change includes APFS clones, snapshots and concurrent activity. Logical totals are not physical reclamation claims."
+  },
+  "retiredCategories": {
+    "superseded-archive": {
+      "count": 13,
+      "bytes": 49352015618
+    },
+    "package-or-extraction": {
+      "count": 42,
+      "bytes": 279501025403
+    },
+    "integration-resource-copy": {
+      "count": 1,
+      "bytes": 6121323799
+    },
+    "old-build": {
+      "count": 20,
+      "bytes": 200541267
+    }
+  },
+  "retention": {
+    "entries": 705883,
+    "canonicalFiles": 7957,
+    "compressedObjects": 2012,
+    "compressedObjectBytes": 5498441804,
+    "root": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1",
+    "index": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/retained-files.jsonl",
+    "restoreHelper": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/restore-file.py",
+    "historicalPathResolution": "Look up the exact original path or ZIP path plus !/member in the retained index. Restore to an explicit unused destination.",
+    "oldZipPolicy": "Original archive identities and all member bytes, modes and symlink targets are retained. Superseded ZIP container bytes are not retained byte for byte.",
+    "durability": "Canonical references depend on the retained main/task resource roots and current packages. Preserve those paths together with this index and content objects.",
+    "authoringProvenance": {
+      "status": "PASS_DIRECT_RETAINED_AUTHORING_PROVENANCE",
+      "original": {
+        "path": "/Users/Aone/RA2remaster/M2.3-Temperate-Review-20261009-R3/RA2-HD-M2.3-Temperate-Review-20261009-R3/M2.3-AUTHORING-PROVENANCE.json",
+        "sha256": "7d8f7829d963971d7537cd4bb75e84f5543b2e67e67efe811143c76ca0804428",
+        "bytes": 372490
+      },
+      "retained": {
+        "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/retained-reports/r3-authoring-provenance.json",
+        "bytes": 372490,
+        "sha256": "7d8f7829d963971d7537cd4bb75e84f5543b2e67e67efe811143c76ca0804428"
+      }
+    }
+  },
+  "validation": {
+    "retention": {
+      "status": "PASS_ALL_CANONICAL_AND_COMPRESSED_HASHES_AND_RESTORATION",
+      "canonicalFiles": 7957,
+      "objects": 2012,
+      "restorationSamples": [
+        "895bc937aa4f264221fbf5baafea9d3945b5ec4c518bb314be0756998fed42d7",
+        "a477be0fc1b2efb6681eae53c3203e85a000f2a73c2558fb87825a3e698f1294",
+        "327b04630311b07c88aac8d4d8b4495a9b62a810a5989e67c7272490fa8a4067",
+        "1574d80fb5066e0825bfdc3897fb4b34a48dba4849da782ed24574ec6ace5a9d",
+        {
+          "kind": "link",
+          "target": "Versions/Current/Electron Framework"
+        }
+      ],
+      "retentionIndexSha256": "ccd8f38728bdc351b335e8bfbde2e767d709fab5119808925ffa39586d2db10a"
+    },
+    "protectedMainAndPackages": {
+      "status": "PASS_PROTECTED_MAIN_PACKAGES_AND_ACCEPTED_EVIDENCE",
+      "phase": "after",
+      "mainHead": "a3259d91a5cce706a2cb39faee4d6e7838657fe3",
+      "mainResourceDistChecks": 36378,
+      "protectedSourcePaths": 28,
+      "retainedPackages": [
+        {
+          "folder": "/Users/Aone/RA2remaster/M2.3-Temperate-Oil-Paired-Drive-Fix-20261010-R16-v1/RA2-HD-M2.3-R16-Gameplay-Test",
+          "files": 7585,
+          "signature": "PASS"
+        },
+        {
+          "folder": "/Users/Aone/RA2remaster/M2.3-Main-Integration-Mac-20261010-v1/RA2-HD-M2.3-Main-Integration-Test",
+          "files": 7593,
+          "signature": "PASS"
+        }
+      ],
+      "acceptedR16Zip": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r16-v1/desktop-delivery-v1/M2.3-R16-Desktop-Mac-Test-20261010.zip",
+      "acceptedR16ZipSha256": "43fe5af2da7945f695683715d8987d2a3518ed844c6aa30cfd5a6a2e2910a5be",
+      "hashPinnedIntegrationEvidence": 21
+    },
+    "mainRegistration": {
+      "status": "PASS_CURRENT_MAIN_COMPLETE_REGISTRATION",
+      "profileRoutes": 12,
+      "hdRoutes": 6857,
+      "environment": {
+        "revision": "environment-m2-3-oil-paired-drive-complete-v31",
+        "families": 238
+      },
+      "terrain": {
+        "revision": "temperate-m2-3-gameplay-feedback-v12",
+        "groups": 23
+      },
+      "ui": {
+        "revision": "yuri-emblem-ui-v1",
+        "assets": 490
+      },
+      "prepared": {
+        "type": "prepared-hd-registered",
+        "members": 453,
+        "pages": 1205,
+        "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+      }
+    },
+    "publicRestoration": {
+      "status": "PASS_PUBLIC_RECOVERY_COMPRESSED_CANONICAL_AND_LINK",
+      "phase": "after",
+      "checks": [
+        {
+          "status": "PASS_RESTORED_EXACT_RETIRED_FILE",
+          "original": "/Users/Aone/RA2remaster/M2.3-R5-Desktop-Mac-Test-20261009-R2/M2.3-R5-Desktop-Mac-Test-20261009.zip!/RA2-HD-M2.3-R5-Desktop-Test/RA2-HD-Editions-Resources/prepared-hd/56b9a8bacef55b38568eabafb6788fd071754d3dcd09bdf08fc95bbf9f391753/4/p0.bin",
+          "destination": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/public-restoration-samples/sample-0",
+          "kind": "file",
+          "retention": "VERIFIED_SURVIVING_CANONICAL_FILE"
+        },
+        {
+          "status": "PASS_RESTORED_EXACT_RETIRED_FILE",
+          "original": "/Users/Aone/RA2remaster/M2.3-R5-Desktop-Mac-Test-20261009-R2/M2.3-R5-Desktop-Mac-Test-20261009.zip!/RA2-HD-M2.3-R5-Desktop-Test/RA2-HD-Editions-Resources/terrain-selection.json",
+          "destination": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/public-restoration-samples/sample-1",
+          "kind": "file",
+          "retention": "VERIFIED_COMPRESSED_CONTENT_OBJECT"
+        },
+        {
+          "status": "PASS_RESTORED_EXACT_RETIRED_FILE",
+          "original": "/Users/Aone/RA2remaster/M2.3-R5-Desktop-Mac-Test-20261009-R2/M2.3-R5-Desktop-Mac-Test-20261009.zip!/RA2-HD-M2.3-R5-Desktop-Test/Red Alert 2 HD M2.3 Temperate Review R5.app/Contents/Frameworks/Electron Framework.framework/Electron Framework",
+          "destination": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/public-restoration-samples/sample-2",
+          "kind": "link",
+          "retention": "LINK_TARGET_RECORDED"
+        }
+      ]
+    },
+    "sourceOrRuntimeChanged": false,
+    "runtimeTests": "Accepted integration/runtime evidence remains byte-identical. No new full-match or platform acceptance is claimed."
+  },
+  "preserved": [
+    "Current accepted R16 runnable package and exact R16 full ZIP",
+    "Combined-main runnable Mac package, all package bytes and signatures",
+    "All source worktrees and branches, main dist and selected resources",
+    "Task raw source assets, authoring masters and historical resource versions",
+    "Reviews, animation videos, native profiles, failure logs and acceptance receipts outside exact obsolete copies",
+    "Independent Windows investigation and all other milestone outputs"
+  ],
+  "boundaries": {
+    "remotePush": "NOT_PERFORMED",
+    "otherMilestoneCleanup": "NOT_PERFORMED",
+    "branchOrWorktreeDeletion": "NOT_PERFORMED",
+    "nextMilestone": "NOT_STARTED"
+  },
+  "evidence": [
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/targets.json",
+      "bytes": 18370,
+      "sha256": "5b4c24fec39dfd9777aada7922feab0bb419cbaddf963e86a30cfadc69605650"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/plan.json",
+      "bytes": 196550479,
+      "sha256": "076aff3ace27f9ebfb050b7640a35511da6b65179d4f99c51956b63e938f9a75"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/prepared.json",
+      "bytes": 441,
+      "sha256": "a92fe50c2b5cea929fe67d57021309d3a58c45ab67e497d965ae78cc6603af61"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/verification.json",
+      "bytes": 621,
+      "sha256": "dd85ffb9abe93f74429bab44ae5411a47f0baff172a272dc93927fea4f887905"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/retained-files.jsonl",
+      "bytes": 551639026,
+      "sha256": "ccd8f38728bdc351b335e8bfbde2e767d709fab5119808925ffa39586d2db10a"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/canonical-references.json",
+      "bytes": 4003811,
+      "sha256": "094fc63defb2fbc3fb61df5626e7396361eb9632c6a17440a1e09d439d9e5387"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/content-objects.json",
+      "bytes": 579888,
+      "sha256": "34632cfb8f348a8459b0019243ed30f51b41b9a76306be89150aaf578e68a1e3"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/retired-archive-identities.json",
+      "bytes": 4282,
+      "sha256": "3da0c29c4762f6027b6e0528d7446ae7f2c7b3ed1f2da17b4b51449864982145"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/predeletion.json",
+      "bytes": 152,
+      "sha256": "2da263aa57dc69a3683628d8208b00a1f7d914cad2dd8c3e9392a4836c3847b6"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/deletion-journal.jsonl",
+      "bytes": 12389,
+      "sha256": "cecd74b224eefe366a37d240f832d8398467f28a9f32919c6f92ae9b677b4346"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/completed.json",
+      "bytes": 1713,
+      "sha256": "2d2340618aa59fe8971a065ccf4ed97852608cd24950a1f8ebc083be39c7110b"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/protected-before.json",
+      "bytes": 894,
+      "sha256": "667d0788f08745cc5197140ab0e5320f45a0af64f8b083d1d6246e911783f5da"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/protected-after.json",
+      "bytes": 893,
+      "sha256": "ad052014ecf2151f5f184798832d7d6211f10548c0788ec98f7e95c230a0f123"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/registration-after.json",
+      "bytes": 110867,
+      "sha256": "fedc29eea8a8fd6786587c750dccd9532fe08bd688c0b9a9f9200a5a5a43658d"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/public-restoration-check.json",
+      "bytes": 1602,
+      "sha256": "fe5fad69077f2db33f7621bed7e6dd6a3fa03a20738e7291acb89ca9626d7bfa"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/public-restoration-check-after.json",
+      "bytes": 1622,
+      "sha256": "22e0949064d65a00c4392667c219c4cda4a8e8b633db9e8306f3766906ee00b1"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/retained-authoring-provenance.json",
+      "bytes": 579,
+      "sha256": "aee5838d57652c79d178acb22267cbd979a154c079cf3be8208677f61cf9a4e2"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/restore-file.py",
+      "bytes": 2225,
+      "sha256": "9f6a35143c92b73b63b457887cea0a65bbe6fbd18e50b0ab88b6d8ece33844c3"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/retire.py",
+      "bytes": 17196,
+      "sha256": "29ebd253025335e28b204e3e290aa2ae78f94b572ed683c4ae9631cf45ab7c02"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1/protect.py",
+      "bytes": 3565,
+      "sha256": "767f9831b41d1b58db095bc7db2980b19c01cd30dec07782317b777ec6296c0a"
+    }
+  ]
+}

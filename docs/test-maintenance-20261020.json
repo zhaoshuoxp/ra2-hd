@@ -1,0 +1,1090 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-20",
+  "status": "COMPLETE_MAC_TEST_INFRASTRUCTURE_ACCEPTANCE",
+  "branch": "maintenance/test-fixtures-20261020",
+  "startingCommit": "84a0b34809a860de09162337bdc2d157faa16e81",
+  "commitReference": "The local commit containing this report; resolve with git log -1 -- docs/test-maintenance-20261020.json.",
+  "historicalBaseline": {
+    "pass": 491,
+    "skipped": 31,
+    "failedCases": 11,
+    "loadErrors": 9,
+    "bunFailTotal": 20,
+    "errorsAreNotAdditionalFailures": true,
+    "predecessorEvidence": "/Users/Aone/RA2remaster/project-history/buildup-final-20261020/main-before-tests.log",
+    "finalEvidence": "/Users/Aone/RA2remaster/project-history/buildup-final-20261020/main-final-tests.log",
+    "comparisonEvidence": "/Users/Aone/RA2remaster/project-history/buildup-final-20261020/final-test-comparison.json"
+  },
+  "finalVerification": {
+    "full": {
+      "counts": {
+        "pass": 589,
+        "failedCases": 0,
+        "loadErrors": 0,
+        "skipped": 0,
+        "processErrors": 0
+      },
+      "uniqueFiles": 145,
+      "processes": 146,
+      "fullRuns": 1,
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    "sourceOnly": {
+      "counts": {
+        "pass": 445,
+        "failedCases": 0,
+        "loadErrors": 0,
+        "skipped": 0,
+        "processErrors": 0
+      },
+      "omittedIntegrationFiles": [
+        "scripts/art/construction-storage.test.ts",
+        "scripts/editions/disk-drain.test.ts",
+        "scripts/m1/allied-units/contracts.test.ts",
+        "scripts/m1/allied-units/shared-reuse.test.ts",
+        "scripts/m1/helicopter-belly/bounds.test.ts",
+        "scripts/m1/helicopter-mount/geometry.test.ts",
+        "scripts/m1/helicopter-rear-mount/registration.test.ts",
+        "scripts/m1/helicopter-rotors/registration.test.ts",
+        "scripts/m1/lunar-infantry/contracts.test.ts",
+        "scripts/m1/napowr-family.test.ts",
+        "scripts/m1/napowr-pack.test.ts",
+        "scripts/m1/native-geometry-preparation.test.ts",
+        "scripts/m1/rhino-game.test.ts",
+        "scripts/m1/soviet-batch-pack.test.ts",
+        "scripts/m1/soviet-units-pack.test.ts",
+        "scripts/m1/unit-vxl-pipeline.test.ts",
+        "scripts/m1/unit-vxl-shaders.test.ts",
+        "scripts/m1/unit-vxl.test.ts",
+        "scripts/m1/yr-unit-registration.test.ts",
+        "scripts/m1/yuri-buildings/contracts.test.ts",
+        "scripts/m1/yuri-units/feedback-effects.test.ts",
+        "scripts/m1/yuri-units/feedback-r12.test.ts",
+        "scripts/m1/yuri-units/registration.test.ts",
+        "scripts/m2/environment.test.ts",
+        "scripts/m2/loading.test.ts",
+        "scripts/m2/official-maps/foundation-loading.test.ts",
+        "scripts/m2/official-maps/terrain-loading.test.ts",
+        "scripts/m2/official-maps/waterfall-admission.test.ts",
+        "scripts/m2/terrain.test.ts"
+      ],
+      "notFullAcceptance": true
+    },
+    "typecheckEntry": "PASS",
+    "postFullAffectedRuns": [
+      {
+        "file": "scripts/m1/yuri-buildings/contracts.test.ts",
+        "edition": "ra2",
+        "pass": 3,
+        "fail": 0,
+        "assertions": 809,
+        "change": "Remove the RA2 rejection-case early return so every reported case asserts behavior. YR behavior unchanged.",
+        "evidence": "test-maintenance-20261020/final-yuri-ra2.log"
+      },
+      {
+        "file": "scripts/m1/rhino-game.test.ts",
+        "pass": 4,
+        "fail": 0,
+        "assertions": 81,
+        "change": "Use actual registered Rhino route rather than hardcoding even the current owner-r3 directory.",
+        "evidence": "test-maintenance-20261020/final-rhino.log"
+      }
+    ]
+  },
+  "originalIssues": [
+    {
+      "originalKind": "FAILED_CASE",
+      "originalIssue": "Reused member slots cover both native sequence maps, including fixed-facing differences",
+      "file": "scripts/m1/allied-units/shared-reuse.test.ts",
+      "cause": "Retired coverage-ledger-v1.json.",
+      "fix": "Parse both editions original rules/art/SHP; check independent source hashes, native counts, sequence bounds and explicit Idle1/PTROOP Cheer facing differences.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/allied-units/shared-reuse.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 3,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "FAILED_CASE",
+      "originalIssue": "absent optional data exposes availability without exposing arbitrary files",
+      "file": "scripts/m1/unified-desktop.test.ts",
+      "cause": "Availability text predated campaign-only LUNR.",
+      "fix": "Assert independent 24/5 totals, LUNR membership, complete key reporting, Original fallback and forbidden routes.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/unified-desktop.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 3,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "FAILED_CASE",
+      "originalIssue": "accepted export identity rejects corruption",
+      "file": "scripts/m1/rhino-sprite.test.ts",
+      "cause": "Retired primary review PNG.",
+      "fix": "Replace historical artwork reacceptance with the standard SHA-256 abc vector, changed-content and changed-identity rejection. Preserve all geometry and lifetime tests. Current production art is checked by rhino-game.test.ts.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/rhino-sprite.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 5,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "FAILED_CASE",
+      "originalIssue": "complete local family matches accepted eight-heading base bytes and pinned identity",
+      "file": "scripts/m1/rhino-game.test.ts",
+      "cause": "Obsolete rhino-authored/1 plus candidate image equality.",
+      "fix": "Resolve the production manifest through registerHdResources, check runtime manifestHash, all 16 base/mask hashes, six independently resolved retail VXL/HVA identities and mask sizes.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/rhino-game.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 4,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "FAILED_CASE",
+      "originalIssue": "deployment event binds owner, complete HD family and native shadow before reverse animation creation",
+      "file": "scripts/m1/yr-unit-animation.test.ts",
+      "cause": "SCHP ImageFinder double lacked getHdOverride.",
+      "fix": "Provide the current interface; retain owner color, family binding, native shadow, reverse frames and disposal assertions.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/yr-unit-animation.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 3,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "FAILED_CASE",
+      "originalIssue": "four authored part identities and manifest reject corruption",
+      "file": "scripts/m1/rhino-parts.test.ts",
+      "cause": "Retired four-part prototype manifest/images.",
+      "fix": "Use deterministic hash/corruption coverage; retain unrelated eligibility, geometry, fallback and lifetime checks. The four-part proof adapter is not imported by production src.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/rhino-parts.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 5,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "FAILED_CASE",
+      "originalIssue": "miner registration retains manifests and selects one complete density for body and workers",
+      "file": "scripts/m1/yuri-units/registration.test.ts",
+      "cause": "mkdtemp parent was retired; the test also left its destructive copy behind.",
+      "fix": "Use the real OS temporary root, create copy parents, and remove in finally; preserve complete SMIN worker/body 4x -> 2x -> Original route checks.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/yuri-units/registration.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 1,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "FAILED_CASE",
+      "originalIssue": "native depth mask is traversed only beneath a high bridge",
+      "file": "scripts/m1/allied-units/feedback.test.ts",
+      "cause": "AMCV renderer double lacked family.identity and current rules.isGattling.",
+      "fix": "Provide an explicit non-Gattling AMCV family; retain all five bridge/ground/air traversal cases.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/allied-units/feedback.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 3,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "FAILED_CASE",
+      "originalIssue": "retail normal and elite disc weapons admit their ring flag and explicit native colors",
+      "file": "scripts/m1/yuri-units/feedback-effects.test.ts",
+      "cause": "Retired extracted rulesmd.ini.",
+      "fix": "Read the real precedence-selected member through editionRetailTree/resolveMember; verify imported archive hashes and receipt member provenance.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/yuri-units/feedback-effects.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 16,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "FAILED_CASE",
+      "originalIssue": "sixteen authored part identities and manifest reject corruption",
+      "file": "scripts/m1/rhino-eight.test.ts",
+      "cause": "Retired sixteen-part candidate manifest/images.",
+      "fix": "Use deterministic hash/corruption coverage and retain quantization, transforms, material restore, interpolation and disposal. Production Rhino uses its current registered sixteen-part family.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/rhino-eight.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 8,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "FAILED_CASE",
+      "originalIssue": "unit HD follows the accepted global preference and preserves explicit off saves",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "cause": "Serialized HD density suffix was omitted; additional restored tests predated engineer sharing and owner-r3 masks.",
+      "fix": "Test legacy default-4 migration, 2x round-trip, explicit off with/without density; preserve exact source/slot/shadow/color/budget/disposal checks and current shared-image isolation.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/soviet-units-pack.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 21,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "LOAD_ERROR",
+      "originalIssue": "scripts/editions/disk-drain.test.ts",
+      "file": "scripts/editions/disk-drain.test.ts",
+      "cause": "Module-level read of retired rulesmd.ini prevented collection.",
+      "fix": "Load and derive rules in beforeAll through the shared validated archive reader; execute range, payments, cancellation, ownership and projectile lifecycle checks.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/editions/disk-drain.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 24,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "LOAD_ERROR",
+      "originalIssue": "scripts/m0/rendering.test.ts",
+      "file": "scripts/m0/rendering.test.ts",
+      "cause": "Particle dependency loaded before global THREE existed.",
+      "fix": "Await browser-test-setup (production setupThreeGlobal), then dynamically import production consumers; independent child processes prevent order/cache dependence. All four files also pass individually.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m0/rendering.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 4,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "LOAD_ERROR",
+      "originalIssue": "scripts/m1/yuri-buildings/contracts.test.ts",
+      "file": "scripts/m1/yuri-buildings/contracts.test.ts",
+      "cause": "Retired source inventory and edition module-cache leakage.",
+      "fix": "Read original SHP bytes/frames independently of HD metadata, match stable member names, compare canvas/offsets/frames, use the existing PNG decoder, and run separate RA2/YR processes. Both editions execute rejection assertions.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/yuri-buildings/contracts.test.ts",
+          "edition": "yr",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 3,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        },
+        {
+          "file": "scripts/m1/yuri-buildings/contracts.test.ts",
+          "edition": "ra2",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 3,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "LOAD_ERROR",
+      "originalIssue": "scripts/m1/yuri-units/feedback-r12.test.ts",
+      "file": "scripts/m1/yuri-units/feedback-r12.test.ts",
+      "cause": "Module-level read of retired rulesmd.ini prevented collection.",
+      "fix": "Load through validated original archives in beforeAll; execute deployment cooldown and cancellation behavior checks.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m1/yuri-units/feedback-r12.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 5,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "LOAD_ERROR",
+      "originalIssue": "scripts/m2/official-maps/terrain-loading.test.ts",
+      "file": "scripts/m2/official-maps/terrain-loading.test.ts",
+      "cause": "Retired slopes-pilot directory read during collection.",
+      "fix": "Verify the current selected manifest hash and tmp-terrain-hd-v1 format; require m2-3-set23, resolve original TMPs, test both densities, corruption, atomic publication, budget, cancellation and release.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m2/official-maps/terrain-loading.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 5,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "LOAD_ERROR",
+      "originalIssue": "scripts/m2/official-maps/waterfall-admission.test.ts",
+      "file": "scripts/m2/official-maps/waterfall-admission.test.ts",
+      "cause": "Retired complete-v1 directory read during collection.",
+      "fix": "Verify current selector/manifest/member hashes, require all eleven named waterfalls and the named flag control, derive native SHP geometry, and retain admission/rejection at both densities.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/m2/official-maps/waterfall-admission.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 2,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "LOAD_ERROR",
+      "originalIssue": "scripts/windows-hd/combat-variants.test.ts",
+      "file": "scripts/windows-hd/combat-variants.test.ts",
+      "cause": "Particle dependency loaded before global THREE existed.",
+      "fix": "Await browser-test-setup (production setupThreeGlobal), then dynamically import production consumers; independent child processes prevent order/cache dependence. All four files also pass individually.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/windows-hd/combat-variants.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 2,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "LOAD_ERROR",
+      "originalIssue": "scripts/windows-hd/palette-program-warmup.test.ts",
+      "file": "scripts/windows-hd/palette-program-warmup.test.ts",
+      "cause": "Particle dependency loaded before global THREE existed.",
+      "fix": "Await browser-test-setup (production setupThreeGlobal), then dynamically import production consumers; independent child processes prevent order/cache dependence. All four files also pass individually.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/windows-hd/palette-program-warmup.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 4,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    },
+    {
+      "originalKind": "LOAD_ERROR",
+      "originalIssue": "scripts/windows-hd/program-warmup.test.ts",
+      "file": "scripts/windows-hd/program-warmup.test.ts",
+      "cause": "Particle dependency loaded before global THREE existed.",
+      "fix": "Await browser-test-setup (production setupThreeGlobal), then dynamically import production consumers; independent child processes prevent order/cache dependence. All four files also pass individually.",
+      "disposition": "REPAIRED_AND_EXECUTED",
+      "result": [
+        {
+          "file": "scripts/windows-hd/program-warmup.test.ts",
+          "edition": "default",
+          "exitCode": 0,
+          "signal": null,
+          "pass": 6,
+          "failedCases": 0,
+          "loadErrors": 0,
+          "skipped": 0,
+          "processErrors": 0
+        }
+      ],
+      "evidence": "test-maintenance-20261020/full/raw.log"
+    }
+  ],
+  "skipDispositionLegend": {
+    "1": "Migrated and executed",
+    "2": "Replaced by identified equivalent current test",
+    "3": "Retired historical behavior/artifact",
+    "4": "Blocked with exact prerequisite and gap"
+  },
+  "skipDispositionCounts": {
+    "1": 29,
+    "2": 0,
+    "3": 2,
+    "4": 0
+  },
+  "skipDispositions": [
+    {
+      "case": "CIVAN preserves 267 native slots, shadows and non-remapped skin and tan clothing",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "DESO preserves 322 native slots, shadows and non-remapped green canisters/effects",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "DOG body and 32 leap bearings commit together, preserve native shadows, and isolate the Allied dog",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "DRON complete native slots, owner-color coverage, byte budget and disposal",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "FLAKT preserves 301 native slots and embedded shadows without owner-coloring muzzle flames",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "IVAN preserves 267 native slots, shadows and non-remapped skin and tan clothing",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "NAPOWR respects an explicit unit reserve before uploading any rejected density",
+      "file": "scripts/m1/napowr-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate. Current pooled storage replaces raw-size assumptions; original SHP geometry, all 67 slots, exact allocated texture/index bytes, budget rejection before upload and release remain checked.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "SHAD changes only two rotor anchors and retains every belly frame, envelope and atlas hash",
+      "file": "scripts/m1/helicopter-rotors/registration.test.ts",
+      "disposition": 3,
+      "status": "RETIRED_HISTORICAL_DELTA_ACCEPTANCE",
+      "reason": "Historical belly-r1 -> rotor-r2 artwork delta acceptance; those intermediate resources are intentionally retired.",
+      "currentCoverage": "scripts/m1/helicopter-belly/bounds.test.ts: pinned complete current SHAD manifest/atlas hashes and all 24 frame corners; scripts/m1/helicopter-rotors/registration.test.ts: tandem hubs at both densities through yaw/spin/pitch/roll.",
+      "gap": "Old artwork delta is deliberately not revalidated; no current-scope gap."
+    },
+    {
+      "case": "SHAD metadata exposes every registered image corner without changing accepted artwork or pivots",
+      "file": "scripts/m1/helicopter-belly/bounds.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate. The pinned current manifest and all atlas hashes replace comparison to retired owner-r3 metadata; frame corner geometry remains independently asserted.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "SHK preserves 301 native slots, shadows and non-remapped gold coils and hair",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "SQD keeps both native members atomic, preserves partial collar remap and respects the combined cap",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate. Resource-format coverage only: shipped SQD and YURIPR Original guards remain tested separately; this does not claim gameplay acceptance.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "Soviet engineer completes every slot, protects gold from remap, and isolates the shared Allied source",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate. The accepted shared Allied image returns the same override; a foreign image object is still rejected.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "TERROR preserves 188 native slots, shadows and non-remapped skin",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate. owner-r3 supersedes the native-mask-only rule: all authored red-paint frames remap, including six native cheer slots without owner indices; native shadow and neutral skin checks remain.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "VXL desktop and runtime pin the same complete eight-bearing DTRUCK family",
+      "file": "scripts/m1/unit-vxl.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "VXL loading fails atomically on missing child, changed source, bad bytes, capacity or cancellation",
+      "file": "scripts/m1/unit-vxl.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "YURI preserves 316 native slots, shadows and non-remapped skin",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "YURIPR preserves 315 native slots, shadows and non-remapped skin and psychic effects",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate. Resource-format coverage only: shipped SQD and YURIPR Original guards remain tested separately; this does not claim gameplay acceptance.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "actual NAPOWR pages validate all 67 frames, RG8 values, native offsets and release",
+      "file": "scripts/m1/napowr-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate. Current pooled storage replaces raw-size assumptions; original SHP geometry, all 67 slots, exact allocated texture/index bytes, budget rejection before upload and release remain checked.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "all actual Soviet pages bind to retail sources, preserve accepted density and fit the measured combined budget",
+      "file": "scripts/m1/soviet-batch-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate. Runtime reservations are conservative minima, not immutable repaint sizes; actual allocations and both index maps are counted exactly and remain under the unchanged combined cap.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "complete family fallback handles corrupt, missing, incomplete, size and allocation failures",
+      "file": "scripts/m1/napowr-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate. Current pooled storage replaces raw-size assumptions; original SHP geometry, all 67 slots, exact allocated texture/index bytes, budget rejection before upload and release remain checked.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "desktop registers only pinned complete unit resources",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "every VXL family pins all component and child resources and eight registered bearings",
+      "file": "scripts/m1/unit-vxl.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "incomplete member and failed uploads choose complete lower density or Original",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "painted tandem hubs stay on native axes through yaw, spin, pitch and roll at both densities",
+      "file": "scripts/m1/helicopter-rotors/registration.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "pooled unit families reconstruct every color/remap byte and reject over-budget uploads atomically",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "rear correction retains front, body, belly, owner masks and every atlas",
+      "file": "scripts/m1/helicopter-rear-mount/registration.test.ts",
+      "disposition": 3,
+      "status": "RETIRED_HISTORICAL_DELTA_ACCEPTANCE",
+      "reason": "Historical rotor-r2 -> rear-mount delta acceptance; no supported product depends on the old intermediate manifest.",
+      "currentCoverage": "scripts/m1/helicopter-belly/bounds.test.ts: pinned current complete family; scripts/m1/helicopter-rear-mount/registration.test.ts: exact mount offset, fixed physical height, body attitude and spin independence.",
+      "gap": "Old artwork delta is deliberately not revalidated; no current-scope gap."
+    },
+    {
+      "case": "rear mount stays at one physical height through all body bearings",
+      "file": "scripts/m1/helicopter-rear-mount/registration.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "rules identity and image jointly bind unit art; another identity stays Original",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "the desktop resolves both helicopter families with complete body coverage",
+      "file": "scripts/m1/helicopter-belly/bounds.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "unit and limbo representation commit together within budget; cancellation and member failure dispose everything",
+      "file": "scripts/m1/soviet-units-pack.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    },
+    {
+      "case": "visible naval hull surfaces preserve registration above water and still descend with native sinking",
+      "file": "scripts/m1/unit-vxl.test.ts",
+      "disposition": 1,
+      "status": "MIGRATED_AND_EXECUTED",
+      "reason": "Required current-resource test now executes without an existence-based skip gate.",
+      "executedResult": "PASS",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "gap": null
+    }
+  ],
+  "additionalRepairs": [
+    {
+      "file": "scripts/m2/environment.test.ts",
+      "change": "Remove the surviving prepared-native-v2 review-source dependency too; parse original SHP using the approved environment contract."
+    },
+    {
+      "file": "scripts/m1/napowr-pack.test.ts",
+      "change": "Use current family pin and independently parsed native geometry; test pooled storage, exact texture/index-map accounting, corrupt/incomplete/member/budget/upload failures and disposal."
+    },
+    {
+      "file": "scripts/m1/soviet-batch-pack.test.ts",
+      "change": "Execute current selected families, count both pooled index maps, distinguish minimum reservation from measured allocation, retain density, source identity and 256 MiB combined-cap checks."
+    },
+    {
+      "file": "scripts/test-support/resources.ts",
+      "change": "Read-only portable root; validate archive hashes against import receipts and original member provenance; preserve RA2/YR resolution order. Receipt consistency is not external retail authenticity certification."
+    }
+  ],
+  "productionRuntimeChanges": [],
+  "changedFiles": [
+    "docs/test-maintenance-20261020.json",
+    "docs/test-maintenance-20261020.md",
+    "docs/test-maintenance-20261020/evidence-index.json",
+    "docs/test-maintenance-20261020/final-rhino.log",
+    "docs/test-maintenance-20261020/final-yuri-ra2.log",
+    "docs/test-maintenance-20261020/focused-bootstrap.log",
+    "docs/test-maintenance-20261020/focused-contracts.log",
+    "docs/test-maintenance-20261020/focused-current.log",
+    "docs/test-maintenance-20261020/focused-initial.log",
+    "docs/test-maintenance-20261020/focused-resources.log",
+    "docs/test-maintenance-20261020/focused-storage.log",
+    "docs/test-maintenance-20261020/focused-unskipped.log",
+    "docs/test-maintenance-20261020/focused-yuri-yr.log",
+    "docs/test-maintenance-20261020/full-runner.log",
+    "docs/test-maintenance-20261020/full/raw.log",
+    "docs/test-maintenance-20261020/full/summary.json",
+    "docs/test-maintenance-20261020/missing-input.log",
+    "docs/test-maintenance-20261020/preservation-after.json",
+    "docs/test-maintenance-20261020/preservation-before-full.json",
+    "docs/test-maintenance-20261020/source-runner.log",
+    "docs/test-maintenance-20261020/source/raw.log",
+    "docs/test-maintenance-20261020/source/summary.json",
+    "docs/test-maintenance-20261020/typecheck.log",
+    "package.json",
+    "scripts/art/construction-storage.test.ts",
+    "scripts/editions/disk-drain.test.ts",
+    "scripts/m0/rendering.test.ts",
+    "scripts/m1/allied-units/contracts.test.ts",
+    "scripts/m1/allied-units/feedback.test.ts",
+    "scripts/m1/allied-units/shared-reuse.test.ts",
+    "scripts/m1/helicopter-belly/bounds.test.ts",
+    "scripts/m1/helicopter-mount/geometry.test.ts",
+    "scripts/m1/helicopter-rear-mount/registration.test.ts",
+    "scripts/m1/helicopter-rotors/registration.test.ts",
+    "scripts/m1/lunar-infantry/contracts.test.ts",
+    "scripts/m1/napowr-family.test.ts",
+    "scripts/m1/napowr-pack.test.ts",
+    "scripts/m1/native-geometry-preparation.test.ts",
+    "scripts/m1/rhino-eight.test.ts",
+    "scripts/m1/rhino-game.test.ts",
+    "scripts/m1/rhino-parts.test.ts",
+    "scripts/m1/rhino-sprite.test.ts",
+    "scripts/m1/soviet-batch-pack.test.ts",
+    "scripts/m1/soviet-units-pack.test.ts",
+    "scripts/m1/unified-desktop.test.ts",
+    "scripts/m1/unit-vxl-pipeline.test.ts",
+    "scripts/m1/unit-vxl-shaders.test.ts",
+    "scripts/m1/unit-vxl.test.ts",
+    "scripts/m1/yr-unit-animation.test.ts",
+    "scripts/m1/yr-unit-registration.test.ts",
+    "scripts/m1/yuri-buildings/contracts.test.ts",
+    "scripts/m1/yuri-units/feedback-effects.test.ts",
+    "scripts/m1/yuri-units/feedback-r12.test.ts",
+    "scripts/m1/yuri-units/registration.test.ts",
+    "scripts/m2/environment.test.ts",
+    "scripts/m2/loading.test.ts",
+    "scripts/m2/official-maps/foundation-loading.test.ts",
+    "scripts/m2/official-maps/terrain-loading.test.ts",
+    "scripts/m2/official-maps/waterfall-admission.test.ts",
+    "scripts/m2/terrain.test.ts",
+    "scripts/test-suite.mjs",
+    "scripts/test-support/integration-files.json",
+    "scripts/test-support/resources.ts",
+    "scripts/windows-hd/combat-variants.test.ts",
+    "scripts/windows-hd/palette-program-warmup.test.ts",
+    "scripts/windows-hd/program-warmup.test.ts"
+  ],
+  "commands": [
+    {
+      "command": "bun run test:source --output docs/test-maintenance-20261020/source",
+      "evidence": "test-maintenance-20261020/source/raw.log",
+      "exitCode": 0
+    },
+    {
+      "command": "bun run test --resource-root /Users/Aone/RA2remaster/ra2-hd/.local --output docs/test-maintenance-20261020/full",
+      "evidence": "test-maintenance-20261020/full/raw.log",
+      "exitCode": 0
+    },
+    {
+      "command": "bun run typecheck:entry",
+      "evidence": "test-maintenance-20261020/typecheck.log",
+      "exitCode": 0
+    },
+    {
+      "command": "RA2_TEST_RESOURCE_ROOT=/Users/Aone/RA2remaster/ra2-hd/.local C_TEST_EDITION=ra2 bun test --preload ./scripts/windows-hd/browser-test-setup.ts scripts/m1/yuri-buildings/contracts.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/final-yuri-ra2.log",
+      "exitCode": 0
+    },
+    {
+      "command": "RA2_TEST_RESOURCE_ROOT=/Users/Aone/RA2remaster/ra2-hd/.local bun test scripts/m1/rhino-game.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/final-rhino.log",
+      "exitCode": 0
+    },
+    {
+      "command": "RA2_TEST_RESOURCE_ROOT=/private/tmp/ra2-missing-imports-for-test bun test scripts/m1/yuri-units/feedback-r12.test.ts",
+      "evidence": "test-maintenance-20261020/missing-input.log",
+      "exitCode": 1,
+      "expected": "Required import is absent: actionable beforeAll failure, no silent skip or module-load error."
+    },
+    {
+      "command": "RA2_TEST_RESOURCE_ROOT=/Users/Aone/RA2remaster/ra2-hd/.local bun test scripts/m1/unified-desktop.test.ts scripts/m1/yr-unit-animation.test.ts scripts/m1/allied-units/feedback.test.ts scripts/m1/yuri-units/registration.test.ts scripts/m1/rhino-sprite.test.ts scripts/m1/rhino-parts.test.ts scripts/m1/rhino-eight.test.ts scripts/m1/rhino-game.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/focused-initial.log",
+      "exitCode": 1,
+      "role": "Intermediate focused verification; failed receipts retained, superseded by final full/affected runs."
+    },
+    {
+      "command": "RA2_TEST_RESOURCE_ROOT=/Users/Aone/RA2remaster/ra2-hd/.local bun test scripts/m1/unified-desktop.test.ts scripts/m1/allied-units/feedback.test.ts scripts/m1/yuri-units/registration.test.ts scripts/m1/allied-units/shared-reuse.test.ts scripts/editions/disk-drain.test.ts scripts/m1/yuri-units/feedback-r12.test.ts scripts/m1/yuri-units/feedback-effects.test.ts scripts/m2/official-maps/terrain-loading.test.ts scripts/m2/official-maps/waterfall-admission.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/focused-resources.log",
+      "exitCode": 0,
+      "role": "Intermediate focused verification; failed receipts retained, superseded by final full/affected runs."
+    },
+    {
+      "command": "RA2_TEST_RESOURCE_ROOT=/Users/Aone/RA2remaster/ra2-hd/.local bun test scripts/m1/napowr-pack.test.ts scripts/m1/soviet-batch-pack.test.ts scripts/m1/soviet-units-pack.test.ts scripts/m1/unit-vxl.test.ts scripts/m1/helicopter-rotors/registration.test.ts scripts/m1/helicopter-rear-mount/registration.test.ts scripts/m1/helicopter-belly/bounds.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/focused-unskipped.log",
+      "exitCode": 1,
+      "role": "Intermediate focused verification; failed receipts retained, superseded by final full/affected runs."
+    },
+    {
+      "command": "RA2_TEST_RESOURCE_ROOT=/Users/Aone/RA2remaster/ra2-hd/.local bun test scripts/m1/yuri-buildings/contracts.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/focused-yuri-yr.log",
+      "exitCode": 0,
+      "role": "Intermediate focused verification; failed receipts retained, superseded by final full/affected runs."
+    },
+    {
+      "command": "RA2_TEST_RESOURCE_ROOT=/Users/Aone/RA2remaster/ra2-hd/.local bun test scripts/m1/napowr-pack.test.ts scripts/m1/soviet-batch-pack.test.ts scripts/m1/soviet-units-pack.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/focused-current.log",
+      "exitCode": 1,
+      "role": "Intermediate focused verification; failed receipts retained, superseded by final full/affected runs."
+    },
+    {
+      "command": "RA2_TEST_RESOURCE_ROOT=/Users/Aone/RA2remaster/ra2-hd/.local bun test scripts/m1/napowr-pack.test.ts scripts/m2/environment.test.ts scripts/m1/lunar-infantry/contracts.test.ts scripts/m1/yuri-units/feedback-effects.test.ts scripts/m1/allied-units/shared-reuse.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/focused-storage.log",
+      "exitCode": 0,
+      "role": "Intermediate focused verification; failed receipts retained, superseded by final full/affected runs."
+    },
+    {
+      "command": "RA2_TEST_RESOURCE_ROOT=/Users/Aone/RA2remaster/ra2-hd/.local bun test scripts/m1/allied-units/shared-reuse.test.ts scripts/m1/rhino-game.test.ts scripts/m2/official-maps/terrain-loading.test.ts scripts/m2/official-maps/waterfall-admission.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/focused-contracts.log",
+      "exitCode": 0,
+      "role": "Intermediate focused verification; failed receipts retained, superseded by final full/affected runs."
+    },
+    {
+      "command": "bun test scripts/m0/rendering.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/focused-bootstrap.log",
+      "exitCode": 0,
+      "role": "Each file ran in its own process without preload or preceding test files."
+    },
+    {
+      "command": "bun test scripts/windows-hd/program-warmup.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/focused-bootstrap.log",
+      "exitCode": 0,
+      "role": "Each file ran in its own process without preload or preceding test files."
+    },
+    {
+      "command": "bun test scripts/windows-hd/palette-program-warmup.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/focused-bootstrap.log",
+      "exitCode": 0,
+      "role": "Each file ran in its own process without preload or preceding test files."
+    },
+    {
+      "command": "bun test scripts/windows-hd/combat-variants.test.ts --timeout 30000",
+      "evidence": "test-maintenance-20261020/focused-bootstrap.log",
+      "exitCode": 0,
+      "role": "Each file ran in its own process without preload or preceding test files."
+    }
+  ],
+  "preservation": {
+    "canonicalHeadUnchanged": true,
+    "canonicalStatus": "",
+    "resourceMetadataUnchanged": true,
+    "resourceEntries": 14230,
+    "windowsZipMetadataUnchanged": true,
+    "m24": "No writes from this task. The independent active task advanced from ba79b68 at initial inspection to 243512c2 before full verification and created three untracked airport-marking scripts during verification; those files are untouched.",
+    "temporaryResources": "All runner temporary roots and focused destructive copies removed. Dependency packages were reused through an ignored node_modules link; no .local or node_modules directory was copied.",
+    "evidence": [
+      "test-maintenance-20261020/preservation-before-full.json",
+      "test-maintenance-20261020/preservation-after.json"
+    ]
+  },
+  "limitations": [
+    "Mac Bun contract/integration execution only; Windows compatibility, native Windows runtime, performance and physical input were not validated.",
+    "No new artwork or manual/full-map visual acceptance. Existing accepted artwork evidence is reused.",
+    "SQD and YURIPR resource tests do not remove their shipped Original/gameplay guards.",
+    "The entry typecheck covers production entry files, not a complete typecheck of every test file. All test files were executed by Bun.",
+    "The source-only mode omits all 29 mixed/resource files explicitly, including their embedded logic cases.",
+    "Two historical intermediate artwork-delta checks are intentionally retired, not passes. Current resource identity/geometry checks remain.",
+    "No full-suite rerun after two bounded final refinements; affected files passed separately with unchanged case totals.",
+    "Existing negative symlink and Python ZIP tests remain host-dependent; this task adds no Windows runtime validation."
+  ],
+  "remainingCurrentScopeFailures": [],
+  "remainingCurrentScopeCoverageGaps": [],
+  "lessons": [
+    "Use selected immutable contracts plus independent original parsing; never use retired review paths as required tests.",
+    "A minimum budget reservation is not a measured exact current allocation; count all pooled texture/index storage and assert actual caps.",
+    "Await the compatibility bootstrap before importing particle consumers. Isolate edition modules in processes.",
+    "Keep setup failures actionable and visible; missing inputs must not silently skip integration.",
+    "Separate historical artwork delta acceptance from current byte/geometry regression coverage.",
+    "Preserve failed intermediate receipts and disaggregate Bun loading errors from failed test cases."
+  ],
+  "integration": "Later, inspect a clean target main, then git cherry-pick the maintenance commit. Rerun bun run test --resource-root <canonical .local> and bun run typecheck:entry. No resource transfer, Windows repackaging, main merge or remote push is included."
+}

@@ -1,0 +1,44 @@
+<div id="m23-r5-airport-review">
+  <div class="viz-controls" aria-label="Airport owner color">
+    <button type="button" class="btn" data-owner="red" aria-pressed="true">Red</button>
+    <button type="button" class="btn" data-owner="blue" aria-pressed="false">Blue</button>
+  </div>
+  <figure>
+    <figcaption id="m23-airport-caption">ctairp · Original | HD · 2X · red · frames 0–3</figcaption>
+    <img id="m23-airport-image" src="__AIRPORT_RED__" width="688" height="1632" alt="Original and repaired HD airport, red owner, 2X, frames 0–3">
+  </figure>
+  <script type="application/json" id="m23-airport-pictures">__AIRPORT_PICTURES__</script>
+</div>
+<style>
+#m23-r5-airport-review figure { margin: 16px 0 0; }
+#m23-r5-airport-review figcaption { margin-bottom: 12px; color: var(--foreground); }
+#m23-r5-airport-review img { display: block; width: 100%; max-width: 688px; height: auto; }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('m23-r5-airport-review');
+  const image = root.querySelector('#m23-airport-image');
+  const caption = root.querySelector('#m23-airport-caption');
+  const pictures = JSON.parse(root.querySelector('#m23-airport-pictures').textContent);
+  function render(owner) {
+    owner = owner === 'blue' ? 'blue' : 'red';
+    image.src = pictures[owner];
+    image.alt = `Original and repaired HD airport, ${owner} owner, 2X, frames 0–3`;
+    caption.textContent = `ctairp · Original | HD · 2X · ${owner} · frames 0–3`;
+    root.querySelectorAll('[data-owner]').forEach(button => {
+      button.setAttribute('aria-pressed', String(button.dataset.owner === owner));
+    });
+  }
+  render(window.openai?.widgetState?.modelContent?.owner);
+  root.querySelectorAll('[data-owner]').forEach(button => {
+    button.addEventListener('click', () => {
+      const owner = button.dataset.owner;
+      render(owner);
+      window.openai?.setWidgetState?.({ modelContent: { building: 'ctairp', density: 2, owner } }).catch(() => {});
+    });
+  });
+  window.addEventListener('openai:set_globals', event => {
+    render(event.detail?.globals?.widgetState?.modelContent?.owner);
+  });
+})();
+</script>

@@ -1,0 +1,437 @@
+{
+  "status": "ACCEPTED_AND_DELIVERED",
+  "baselineRuntime": "0863d3c1b1c040bac83eb997100d3b00ee125c3e",
+  "artifactRoot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/pause-factory-feedback-20261005",
+  "resourceRevisions": [
+    {
+      "selection": "yuri-yaweap-temperate",
+      "predecessorFamily": ".local/hd-packs/yuri-coverage-yaweap-temperate/factory-state-r2/family.json",
+      "selectedFamily": "hd-packs/yuri-coverage-yaweap-temperate/factory-state-r3/family.json",
+      "selectedSha256": "0de4610af620b4927514b3420c798eb96464e40d0d531319a97804bb9bb2fa89",
+      "changedMembers": [
+        "ygweapbb.shp",
+        "ygweap_2.shp"
+      ]
+    },
+    {
+      "selection": "yuri-yaweap-snow",
+      "predecessorFamily": ".local/hd-packs/yuri-coverage-yaweap-snow/factory-state-r2/family.json",
+      "selectedFamily": "hd-packs/yuri-coverage-yaweap-snow/factory-state-r3/family.json",
+      "selectedSha256": "67cf8ab90baf033c13a263c5372a06e0a9bea09e394799e0b6014a6dce14ccf9",
+      "changedMembers": [
+        "yaweapbb.shp",
+        "yaweap_2.shp"
+      ]
+    },
+    {
+      "selection": "gaweap-temperate",
+      "predecessorFamily": ".local/hd-packs/allied-coverage-gaweap-temperate/factory-state-r2/family.json",
+      "selectedFamily": "hd-packs/allied-coverage-gaweap-temperate/factory-state-r3/family.json",
+      "selectedSha256": "e46418e8172299e7c5ac90b489613993895038561d1deff12ff2794c38b20f94",
+      "changedMembers": [
+        "ggweapbb.shp",
+        "ggweap_2.shp"
+      ]
+    },
+    {
+      "selection": "gaweap-snow",
+      "predecessorFamily": ".local/hd-packs/allied-coverage-gaweap-snow/factory-state-r2/family.json",
+      "selectedFamily": "hd-packs/allied-coverage-gaweap-snow/factory-state-r3/family.json",
+      "selectedSha256": "18c01260b99f828693524a60049dd770b31b9cf9fcfe5c58b4e1ef443e6f0c79",
+      "changedMembers": [
+        "gaweapbb.shp",
+        "gaweap_2.shp"
+      ]
+    }
+  ],
+  "preparedContract": {
+    "schemaVersion": 1,
+    "sha256": "3b7ef5279bf522a2c4070f4cb64a31d587fd25f5fc5f1fa9dee8a140c2c3a876",
+    "indexPath": "prepared-hd/indexes/3b7ef5279bf522a2c4070f4cb64a31d587fd25f5fc5f1fa9dee8a140c2c3a876.json"
+  },
+  "pause": {
+    "asset": "public/res/ui/yuri-pause-emblem-hd-v2.png",
+    "dimensions": [
+      1322,
+      1190
+    ],
+    "sha256": "cf0fc4171339d18b31211f253ff1b0375b3fe2be55182ba563fcf35267a7a052",
+    "filter": "brightness(0.5)",
+    "generationMode": "built-in imagegen opaque local reference edit",
+    "originalAssetRetained": true,
+    "radarUiRevisionUnchanged": "yuri-emblem-ui-v1",
+    "userAcceptance": "ACCEPTED_USER_TEST_PASSED"
+  },
+  "grayPatchRoot": "Opened-roof pixels in GAWEAP flat bib overlap the raised side wall; native bib isolation removes the reported patch",
+  "factoryChoice": "GAWEAP retains retail idle-open doorway; YAWEAP restores idle-closed shutter and complete opened delivery bay",
+  "nativeDevelopment": [
+    "development-4x/report.json",
+    "development-r2-4x/report.json"
+  ],
+  "nativeWindows": "NOT_RUN_NO_LOCAL_WINDOWS_RUNTIME",
+  "userAcceptance": "ACCEPTED_USER_TEST_PASSED",
+  "publication": "NOT_REQUESTED",
+  "cleanup": "NOT_PERFORMED",
+  "focusedChecks": {
+    "tests": 28,
+    "assertions": 243,
+    "entryAndWorkerTypecheck": "PASS",
+    "pixelOwnershipCases": 32,
+    "resourceAudit": ".artifacts/pause-factory-feedback-20261005/resource-audit-final.json",
+    "testsStatus": "PASS",
+    "failures": 0,
+    "testsLog": ".artifacts/pause-factory-feedback-20261005/focused-tests-final.log",
+    "typecheckLog": ".artifacts/pause-factory-feedback-20261005/typecheck-final.log",
+    "resourcePixelAudit": ".artifacts/pause-factory-feedback-20261005/resource-pixel-audit.json"
+  },
+  "developmentR2Pause": {
+    "uiBeforePause": {
+      "revision": "yuri-emblem-ui-v1",
+      "enabled": true,
+      "reservedBytes": 11828992,
+      "decodedCpuBytes": 9463552,
+      "gpuTextureBytesUpperBound": 9463552,
+      "transitionGpuBytes": 2365440,
+      "transitionCpuCanvasBytes": 2808960,
+      "domImageGpuBytesUpperBound": 0,
+      "domImageDecodedCpuBytesUpperBound": 0,
+      "textures": 32,
+      "budget": 16777216,
+      "domCanvasBytes": 0,
+      "mipmaps": false
+    },
+    "uiDuringPause": {
+      "revision": "yuri-emblem-ui-v1",
+      "enabled": true,
+      "reservedBytes": 16201712,
+      "decodedCpuBytes": 8726272,
+      "gpuTextureBytesUpperBound": 8726272,
+      "transitionGpuBytes": 1182720,
+      "transitionCpuCanvasBytes": 1404480,
+      "domImageGpuBytesUpperBound": 6292720,
+      "domImageDecodedCpuBytesUpperBound": 6292720,
+      "textures": 28,
+      "budget": 16777216,
+      "domCanvasBytes": 6292720,
+      "mipmaps": false
+    },
+    "uiAfterPause": {
+      "revision": "yuri-emblem-ui-v1",
+      "enabled": true,
+      "reservedBytes": 14778112,
+      "decodedCpuBytes": 12412672,
+      "gpuTextureBytesUpperBound": 12412672,
+      "transitionGpuBytes": 2365440,
+      "transitionCpuCanvasBytes": 2808960,
+      "domImageGpuBytesUpperBound": 0,
+      "domImageDecodedCpuBytesUpperBound": 0,
+      "textures": 48,
+      "budget": 16777216,
+      "domCanvasBytes": 0,
+      "mipmaps": false
+    },
+    "pauseSource": "yuri-pause-emblem-hd-v2.png"
+  },
+  "runtimeSourceHead": "1f2cdc64bdcec20d00755662eb7e1439f53b84c3",
+  "desktopDelivery": {
+    "status": "PASS_DESKTOP_COPY_AND_FRESH_EXTRACTION_HASHES_MODES_LINKS",
+    "receipt": ".artifacts/pause-factory-feedback-20261005/desktop-delivery.json",
+    "deliveries": [
+      {
+        "platform": "mac",
+        "archive": "/Users/Aone/Desktop/RA2-HD-Pause-Factory-Fix-20261005-1f2cdc6-macOS-arm64.zip",
+        "bytes": 3280534765,
+        "sha256": "2f98ad21ab0dacee816da0f7ef90d0f112c147634ee2c781bcc8e9439ae3ecd4",
+        "checkedEntries": 5487,
+        "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/pause-factory-feedback-20261005/desktop-extracted-mac/RA2-HD-Pause-Factory-Fix-20261005-1f2cdc6-macOS-arm64",
+        "excludedUserData": [
+          "Review-Profile",
+          "UserData"
+        ]
+      },
+      {
+        "platform": "windows",
+        "archive": "/Users/Aone/Desktop/RA2-HD-Pause-Factory-Fix-20261005-1f2cdc6-Windows-x64-portable.zip",
+        "bytes": 3304937200,
+        "sha256": "e5670eb72cfb29f3a0df1ae0afeec97a40602a156ad5be23d51e7f5cceb4d81d",
+        "checkedEntries": 5265,
+        "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/pause-factory-feedback-20261005/desktop-extracted-windows/RA2-HD-Pause-Factory-Fix-20261005-1f2cdc6-Windows-x64-portable",
+        "excludedUserData": [
+          "Review-Profile",
+          "UserData"
+        ]
+      }
+    ]
+  },
+  "packageParity": {
+    "status": "PASS_MAC_WINDOWS_SHARED_BUNDLE_WORLD_UI_PARITY",
+    "worldFiles": 4637,
+    "uiFiles": 360,
+    "bundleFiles": 164,
+    "unchangedUiFilesVsPredecessor": 360,
+    "unchangedCommonWorldFilesVsPredecessor": 4575,
+    "newWorldPaths": 62,
+    "retainedPredecessorPathsOmittedFromNewClosure": 62,
+    "runtimeSourceHead": "1f2cdc64bdcec20d00755662eb7e1439f53b84c3",
+    "sevenWindowsPE": [
+      "dxil.dll",
+      "Red Alert 2 HD.exe",
+      "dxcompiler.dll",
+      "d3dcompiler_47.dll",
+      "vk_swiftshader.dll",
+      "ffmpeg.dll",
+      "vulkan-1.dll"
+    ],
+    "nativeWindows": "NOT_RUN"
+  },
+  "hostPackageChecks": {
+    "macZip": ".artifacts/pause-factory-feedback-20261005/zip-verified-mac.json",
+    "windowsZip": ".artifacts/pause-factory-feedback-20261005/zip-verified-windows.json",
+    "macSignature": "PASS_STRICT_AD_HOC_SIGNATURE",
+    "macSignatureLog": ".artifacts/pause-factory-feedback-20261005/desktop-signature.log",
+    "windowsArchitecture": "PASS_SEVEN_WIN32_X64_PE_FILES",
+    "profilesExcluded": [
+      "Review-Profile",
+      "UserData"
+    ]
+  },
+  "nativeCopiedMac": [
+    {
+      "case": "copied-mac-4x-temperate",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/pause-factory-feedback-20261005/copied-mac-4x-temperate/report.json",
+      "density": 4,
+      "theater": "temperate",
+      "edition": "yr",
+      "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/pause-factory-feedback-20261005/desktop-extracted-mac/RA2-HD-Pause-Factory-Fix-20261005-1f2cdc6-macOS-arm64/RA2 HD Pause Factory Fix.app",
+      "resources": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/pause-factory-feedback-20261005/desktop-extracted-mac/RA2-HD-Pause-Factory-Fix-20261005-1f2cdc6-macOS-arm64/RA2-HD-Editions-Resources",
+      "disclosure": "Controlled legal fixtures followed by native orders; no rules or camera changes. Not a natural-match production claim.",
+      "checkedStages": [
+        "YAWEAP-YTNK-healthy-idle-before",
+        "YAWEAP-YTNK-healthy-delivery",
+        "YAWEAP-YTNK-healthy-idle-after",
+        "YAWEAP-YTNK-damaged-idle-before",
+        "YAWEAP-YTNK-damaged-delivery",
+        "YAWEAP-YTNK-damaged-idle-after",
+        "YAWEAP-DISK-damaged-idle-before",
+        "YAWEAP-DISK-damaged-delivery",
+        "YAWEAP-DISK-damaged-idle-after",
+        "GAWEAP-MTNK-healthy-idle-before",
+        "GAWEAP-MTNK-healthy-delivery",
+        "GAWEAP-MTNK-healthy-idle-after",
+        "GAWEAP-MTNK-damaged-idle-before",
+        "GAWEAP-MTNK-damaged-delivery",
+        "GAWEAP-MTNK-damaged-idle-after",
+        "Yuri-pause",
+        "Yuri-pause-options",
+        "Yuri-sidebar-return",
+        "Yuri-pause-original"
+      ],
+      "fullTechnologyNoScrollAndRepeatedPause": "PASS",
+      "pauseSource": "yuri-pause-emblem-hd-v2.png",
+      "uiBeforePause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 11828992,
+        "decodedCpuBytes": 9463552,
+        "gpuTextureBytesUpperBound": 9463552,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 32,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "uiDuringPause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 16201712,
+        "decodedCpuBytes": 8726272,
+        "gpuTextureBytesUpperBound": 8726272,
+        "transitionGpuBytes": 1182720,
+        "transitionCpuCanvasBytes": 1404480,
+        "domImageGpuBytesUpperBound": 6292720,
+        "domImageDecodedCpuBytesUpperBound": 6292720,
+        "textures": 28,
+        "budget": 16777216,
+        "domCanvasBytes": 6292720,
+        "mipmaps": false
+      },
+      "uiAfterPause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 14778112,
+        "decodedCpuBytes": 12412672,
+        "gpuTextureBytesUpperBound": 12412672,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 48,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "uiHdOffPause": {
+        "hiddenBitmap": false,
+        "bitmapWidth": 182,
+        "ui": {
+          "revision": "yuri-emblem-ui-v1",
+          "enabled": false,
+          "reservedBytes": 119392,
+          "decodedCpuBytes": 0,
+          "gpuTextureBytesUpperBound": 0,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 119392,
+          "domImageDecodedCpuBytesUpperBound": 119392,
+          "textures": 0,
+          "budget": 16777216,
+          "domCanvasBytes": 119392,
+          "mipmaps": false
+        }
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 134701332,
+        "total": 276639560,
+        "limit": 1342177280
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "handledErrors": [],
+      "reviewedCaptures": [
+        ".artifacts/pause-factory-feedback-20261005/copied-mac-4x-temperate/GAWEAP-MTNK-healthy-idle-after-detail.png",
+        ".artifacts/pause-factory-feedback-20261005/copied-mac-4x-temperate/YAWEAP-YTNK-healthy-phase-7.png",
+        ".artifacts/pause-factory-feedback-20261005/copied-mac-4x-temperate/Yuri-pause.png"
+      ]
+    },
+    {
+      "case": "copied-mac-2x-snow",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/pause-factory-feedback-20261005/copied-mac-2x-snow/report.json",
+      "density": 2,
+      "theater": "snow",
+      "edition": "yr",
+      "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/pause-factory-feedback-20261005/desktop-extracted-mac/RA2-HD-Pause-Factory-Fix-20261005-1f2cdc6-macOS-arm64/RA2 HD Pause Factory Fix.app",
+      "resources": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/pause-factory-feedback-20261005/desktop-extracted-mac/RA2-HD-Pause-Factory-Fix-20261005-1f2cdc6-macOS-arm64/RA2-HD-Editions-Resources",
+      "disclosure": "Controlled legal fixtures followed by native orders; no rules or camera changes. Not a natural-match production claim.",
+      "checkedStages": [
+        "YAWEAP-YTNK-healthy-idle-before",
+        "YAWEAP-YTNK-healthy-delivery",
+        "YAWEAP-YTNK-healthy-idle-after",
+        "YAWEAP-YTNK-damaged-idle-before",
+        "YAWEAP-YTNK-damaged-delivery",
+        "YAWEAP-YTNK-damaged-idle-after",
+        "YAWEAP-DISK-damaged-idle-before",
+        "YAWEAP-DISK-damaged-delivery",
+        "YAWEAP-DISK-damaged-idle-after",
+        "GAWEAP-MTNK-healthy-idle-before",
+        "GAWEAP-MTNK-healthy-delivery",
+        "GAWEAP-MTNK-healthy-idle-after",
+        "GAWEAP-MTNK-damaged-idle-before",
+        "GAWEAP-MTNK-damaged-delivery",
+        "GAWEAP-MTNK-damaged-idle-after",
+        "Yuri-pause",
+        "Yuri-pause-options",
+        "Yuri-sidebar-return",
+        "Yuri-pause-original"
+      ],
+      "fullTechnologyNoScrollAndRepeatedPause": "PASS",
+      "pauseSource": "yuri-pause-emblem-hd-v2.png",
+      "uiBeforePause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 11828992,
+        "decodedCpuBytes": 9463552,
+        "gpuTextureBytesUpperBound": 9463552,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 32,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "uiDuringPause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 16201712,
+        "decodedCpuBytes": 8726272,
+        "gpuTextureBytesUpperBound": 8726272,
+        "transitionGpuBytes": 1182720,
+        "transitionCpuCanvasBytes": 1404480,
+        "domImageGpuBytesUpperBound": 6292720,
+        "domImageDecodedCpuBytesUpperBound": 6292720,
+        "textures": 28,
+        "budget": 16777216,
+        "domCanvasBytes": 6292720,
+        "mipmaps": false
+      },
+      "uiAfterPause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 14778112,
+        "decodedCpuBytes": 12412672,
+        "gpuTextureBytesUpperBound": 12412672,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 48,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "uiHdOffPause": {
+        "hiddenBitmap": false,
+        "bitmapWidth": 182,
+        "ui": {
+          "revision": "yuri-emblem-ui-v1",
+          "enabled": false,
+          "reservedBytes": 119392,
+          "decodedCpuBytes": 0,
+          "gpuTextureBytesUpperBound": 0,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 119392,
+          "domImageDecodedCpuBytesUpperBound": 119392,
+          "textures": 0,
+          "budget": 16777216,
+          "domCanvasBytes": 119392,
+          "mipmaps": false
+        }
+      },
+      "worldAllocation": {
+        "baseline": 22008264,
+        "eager": 28522916,
+        "demand": 45873596,
+        "total": 96404776,
+        "limit": 268435456
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "handledErrors": [],
+      "reviewedCaptures": [
+        ".artifacts/pause-factory-feedback-20261005/copied-mac-2x-snow/GAWEAP-MTNK-healthy-idle-after-detail.png",
+        ".artifacts/pause-factory-feedback-20261005/copied-mac-2x-snow/YAWEAP-YTNK-healthy-idle-after-detail.png",
+        ".artifacts/pause-factory-feedback-20261005/copied-mac-2x-snow/GAWEAP-MTNK-damaged-phase-7.png",
+        ".artifacts/pause-factory-feedback-20261005/copied-mac-2x-snow/YAWEAP-DISK-damaged-phase-2.png"
+      ]
+    }
+  ],
+  "retainedDiagnostics": {
+    "intermediateResourceRevisions": [
+      "factory-state-r1",
+      "factory-state-r2"
+    ],
+    "initialOriginalNamedCaptures": "UNVERIFIED_FOR_ORIGINAL_WORLD_RENDERING",
+    "windowsInitialZipInputFailure": "RETAINED_CORRECTED_BEFORE_FINAL_ARCHIVE",
+    "cleanup": "NOT_PERFORMED"
+  },
+  "userAcceptanceScope": "User reported testing passed for the delivered Pause-Factory-Fix; platform was not restated."
+}

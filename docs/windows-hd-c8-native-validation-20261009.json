@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_NATIVE_MAC_SOURCE_REPAIR_WINDOWS_AB_PENDING",
+  "sourceFocus": "0bd0dc6ad829b4cf9e7d535218a555d17bca1e45",
+  "applicationIncrementFromC7": [
+    "src/engine/gfx/OctreeContainer.ts"
+  ],
+  "resources": {
+    "worldAndUIFiles": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+  },
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCPU": 128,
+    "ui": 16
+  },
+  "tests": {
+    "focusedAndShared": 15,
+    "assertions": 149,
+    "entryTypecheck": "PASS",
+    "logs": [
+      "c8-static-octree-tests-v2.log",
+      "c8-typecheck-v1.log"
+    ],
+    "expectedPreRepairFailure": "c8-static-octree-regression-before-v1.log"
+  },
+  "control": {
+    "path": ".artifacts/windows-hd-diagnostic/c7-native-static-octree-control-v1/report.json",
+    "status": "PASS_COPIED_MAC_STATIC_OCTREE_MATRIX_CONTROL",
+    "boundary": "Copied immutable C7 Mac runtime, frozen same-state A/B/B/A; not Windows FPS."
+  },
+  "copiedPackagedNative": {
+    "path": ".artifacts/windows-hd-diagnostic/c8-native-candidate-v2/report.json",
+    "sha256": "5cae0f7dae42fe23528a0cbccc9e8f4ec2435d903f6aa4f99922f9c8b43bff9d",
+    "status": "PASS_COPIED_MAC_STATIC_OCTREE_CANDIDATE",
+    "platform": "darwin",
+    "sourceManifestSha256": "17782523a53dedcd33b2d71b5e87c69b3c4f1ae754f0cd96901eec426652e296",
+    "cases": [
+      {
+        "mode": "4x",
+        "scene": "stress",
+        "runDirectory": "2026-10-10T05-55-17-670Z-stress-4x-none",
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 164,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                3840,
+                2160
+              ],
+              "effective": [
+                3840,
+                2160
+              ],
+              "caps": []
+            },
+            "hdBindings": 1922
+          },
+          {
+            "label": "warmed-steady",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 413,
+            "tickEnd": 609,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                3840,
+                2160
+              ],
+              "effective": [
+                3840,
+                2160
+              ],
+              "caps": []
+            },
+            "hdBindings": 1938
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 192,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                3840,
+                2160
+              ],
+              "effective": [
+                3840,
+                2160
+              ],
+              "caps": []
+            },
+            "hdBindings": 1922
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 470,
+            "tickEnd": 670,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                3840,
+                2160
+              ],
+              "effective": [
+                3840,
+                2160
+              ],
+              "caps": []
+            },
+            "hdBindings": 1940
+          }
+        ],
+        "pixels": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "differingBytes": 0,
+            "comparedBytes": 33177600,
+            "width": 3840,
+            "height": 2160,
+            "nonzeroBytes": 17594365,
+            "matrixParity": true
+          },
+          {
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "differingBytes": 0,
+            "comparedBytes": 33177600,
+            "width": 3840,
+            "height": 2160,
+            "nonzeroBytes": 17328653,
+            "matrixParity": true
+          },
+          {
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "differingBytes": 0,
+            "comparedBytes": 33177600,
+            "width": 3840,
+            "height": 2160,
+            "nonzeroBytes": 16710016,
+            "matrixParity": true
+          }
+        ],
+        "manual": [
+          {
+            "key": "F8",
+            "movement": {
+              "before": {
+                "x": -1860,
+                "y": 5250
+              },
+              "requested": {
+                "x": -1812,
+                "y": 5226
+              },
+              "actual": {
+                "x": -1812,
+                "y": 5226
+              }
+            }
+          },
+          {
+            "key": "F9",
+            "movement": {
+              "before": {
+                "x": -1812,
+                "y": 5226
+              },
+              "requested": {
+                "x": -1764,
+                "y": 5202
+              },
+              "actual": {
+                "x": -1764,
+                "y": 5202
+              }
+            }
+          }
+        ],
+        "debuggerRestored": true
+      },
+      {
+        "mode": "2x",
+        "scene": "small",
+        "runDirectory": "2026-10-10T05-59-29-517Z-small-2x-none",
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 201,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 1323
+          },
+          {
+            "label": "warmed-steady",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 414,
+            "tickEnd": 616,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 1324
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 196,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 1323
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 418,
+            "tickEnd": 619,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 1324
+          }
+        ],
+        "pixels": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "nonzeroBytes": 8446313,
+            "matrixParity": true
+          },
+          {
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "nonzeroBytes": 8446495,
+            "matrixParity": true
+          },
+          {
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "nonzeroBytes": 6804857,
+            "matrixParity": true
+          }
+        ]
+      },
+      {
+        "mode": "original",
+        "scene": "small",
+        "runDirectory": "2026-10-10T06-00-20-475Z-small-original-none",
+        "phases": [
+          {
+            "label": "fresh-process-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 204,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 0
+          },
+          {
+            "label": "warmed-steady",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 411,
+            "tickEnd": 612,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 0
+          },
+          {
+            "label": "same-process-reentry-first-use",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 0,
+            "tickEnd": 201,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 0
+          },
+          {
+            "label": "same-process-reentry-warmed",
+            "validity": "VALID_BOUNDED_SAMPLE",
+            "tickStart": 407,
+            "tickEnd": 609,
+            "output": {
+              "ratio": 2,
+              "requested": [
+                2560,
+                1600
+              ],
+              "effective": [
+                2560,
+                1600
+              ],
+              "caps": []
+            },
+            "hdBindings": 0
+          }
+        ],
+        "pixels": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "nonzeroBytes": 8238580,
+            "matrixParity": true
+          },
+          {
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "nonzeroBytes": 8238812,
+            "matrixParity": true
+          },
+          {
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "differingBytes": 0,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "nonzeroBytes": 6597478,
+            "matrixParity": true
+          }
+        ]
+      }
+    ],
+    "traceStatus": "CAPTURED",
+    "cpuProfile": "CAPTURED",
+    "requestedDuringStage": "complete",
+    "errors": [],
+    "boundary": "Copied packaged Mac candidate, native progressing matches and same-state pixel/matrix controls outside timing. No Windows FPS claim."
+  },
+  "preservedFailure": {
+    "report": ".artifacts/windows-hd-diagnostic/c8-native-candidate-v1/report.json",
+    "reason": "The test harness export deadline expired. The same game run later saved valid phases/trace with no game errors; the QA report remains FAIL.",
+    "correction": "Extend only the harness export wait from 30 to 150 seconds and retain each validated pixel case before manual capture.",
+    "gameSourceChanged": "NO",
+    "supersedingReport": ".artifacts/windows-hd-diagnostic/c8-native-candidate-v2/report.json"
+  },
+  "platformGates": {
+    "windowsPerformance": "PENDING",
+    "windowsVisualAcceptance": "PENDING",
+    "overallUserAcceptance": "OPEN",
+    "mainIntegration": "NOT_PERFORMED",
+    "remotePush": "NOT_PERFORMED"
+  }
+}

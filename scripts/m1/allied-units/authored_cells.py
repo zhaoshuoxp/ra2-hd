@@ -1,0 +1,40 @@
+"""Separate isolated authored sheet subjects without using native silhouettes."""
+import numpy as np
+from PIL import Image
+from scipy import ndimage
+
+
+def isolated_cells(image, columns, rows, occupied=None, replaced=()):
+    rgba = np.array(image.convert('RGBA'))
+    labels, count = ndimage.label(rgba[..., 3] > 128, np.ones((3, 3)))
+    sizes = np.bincount(labels.ravel())
+    sizes[0] = 0
+    threshold = max(12, sizes.max() * .002)
+    subjects = [[] for _ in range(columns * rows)]
+    for label, bounds in enumerate(ndimage.find_objects(labels), 1):
+        if bounds is None or sizes[label] < threshold:
+            continue
+        ys, xs = bounds
+        # A component belongs to the closest declared cell center. Wide subjects
+        # may cross a grid line, but must remain isolated from other subjects.
+        cx, cy = (xs.start + xs.stop) / 2, (ys.start + ys.stop) / 2
+        col = min(columns - 1, int(cx / image.width * columns))
+        row = min(rows - 1, int(cy / image.height * rows))
+        subjects[row * columns + col].append(label)
+    result = []
+    for index, ids in enumerate(subjects[:occupied]):
+        if index in replaced:
+            result.append(None)
+            continue
+        assert ids, ('Missing authored subject', index)
+        mask = np.isin(labels, ids)
+        ys, xs = np.nonzero(mask)
+        bounds = [int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1]
+        assert bounds[0] > 0 and bounds[1] > 0 and bounds[2] < image.width and bounds[3] < image.height, ('Clipped outer subject', index)
+        support = ndimage.binary_dilation(mask, iterations=2)
+        out = rgba.copy()
+        out[..., 3] *= support
+        bounds = [max(0, bounds[0] - 2), max(0, bounds[1] - 2),
+                  min(image.width, bounds[2] + 2), min(image.height, bounds[3] + 2)]
+        result.append((Image.fromarray(out).crop(bounds), bounds))
+    return result

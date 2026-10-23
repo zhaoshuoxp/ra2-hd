@@ -1,0 +1,6050 @@
+{
+  "schemaVersion": 1,
+  "baseline": "3b1bec1",
+  "status": "PASS_TASK_B_SELECTED_TECHNICAL_CHECKS_FINAL_USER_ACCEPTANCE_PENDING",
+  "counts": {
+    "ra2": 25,
+    "yr": 30,
+    "unionRoots": 30,
+    "uniqueSourceFamilies": 30,
+    "completeNewRuntimeFamilies": 26,
+    "completeAuthoredFamilies": 26,
+    "acceptedReuseIdentities": 4,
+    "completeNativeSelectedCases": 30
+  },
+  "rows": [
+    {
+      "edition": "ra2",
+      "id": "E1",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "GI",
+      "resolvedStem": "gi",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "gi.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "bceaee9c270d6382d80d509f2c4b2893c10565f779096b3add37a4d5321e8be1",
+          "canvas": [
+            78,
+            66
+          ],
+          "totalFrames": 744
+        }
+      ],
+      "sourceGroup": "c24930bafe96049c9dc78ce526d6d0ae697e5b9c6ff2ce6efc3c523028c67bd8",
+      "mappingGroup": "477c27482b290ca526a6da160c4febb42db83386eaf391aadc000ba12e698c2c",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "E1",
+        "familyPath": "hd-packs/allied-e1-family/1/family.json",
+        "hash": "b011c8044180e49c62314502370528a673b39d2e15f64f5e72befdbb441c66b6",
+        "familyHash": "b011c8044180e49c62314502370528a673b39d2e15f64f5e72befdbb441c66b6",
+        "members": [
+          {
+            "member": "gi.shp",
+            "frames": 372,
+            "totalFrames": 744,
+            "canvas": [
+              78,
+              66
+            ],
+            "sourceHash": "bceaee9c270d6382d80d509f2c4b2893c10565f779096b3add37a4d5321e8be1",
+            "manifestHash": "58090514acec2be29a99e906a8db769965e87d5a8924b1d7d982e8f4773355cb"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "walk",
+        "deploy/undeploy",
+        "deployed fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "ra2",
+      "id": "ENGINEER",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "ENGINEER",
+      "resolvedStem": "engineer",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "engineer.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "f8eb0dc0156a877028ac2ed57bf2e71a9445ffcb6ef6a4caf3b0dbb7b111834c",
+          "canvas": [
+            76,
+            80
+          ],
+          "totalFrames": 506
+        }
+      ],
+      "sourceGroup": "89a251d8d606879bc8815fe6d846ea32f64a8cb75dfe01edfd14347b28dd1a38",
+      "mappingGroup": "c7447387a0746a804727b8fe00290444b5e27e9218f09e4eab8089008d8076ba",
+      "acceptedReuseCandidate": "SENGINEER",
+      "reuseStatus": "SOURCE_IDENTICAL_MAPPING_AND_NATIVE_BINDING_VERIFIED",
+      "plannedDensity": 2,
+      "producedDensities": [],
+      "selectedResource": {
+        "acceptedIdentity": "SENGINEER",
+        "status": "REUSED_UNCHANGED"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "capture",
+        "repair"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "ra2",
+      "id": "JUMPJET",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "ROCK",
+      "resolvedStem": "rock",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "rock.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "3a7fd6cf0723ab06ee7b6d989233e1dc49288a8aaeebcc84cdb8f6ad1ead4525",
+          "canvas": [
+            94,
+            120
+          ],
+          "totalFrames": 854
+        }
+      ],
+      "sourceGroup": "33a9555f9c60d8e3e87bb189148948dcdf5458c67a36435ca7d29cb16747e156",
+      "mappingGroup": "dbc61e14cbe0e4af2d120d104618738738f65ef8cbf66aee3db69ce532eeb5ef",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "JUMPJET",
+        "familyPath": "hd-packs/allied-jumpjet-family/1/family.json",
+        "hash": "b808fcc38c7abd6da8616909aa6b94fc2811dc8e49fb438dbbc944a210585a1c",
+        "familyHash": "b808fcc38c7abd6da8616909aa6b94fc2811dc8e49fb438dbbc944a210585a1c",
+        "members": [
+          {
+            "member": "rock.shp",
+            "frames": 427,
+            "totalFrames": 854,
+            "canvas": [
+              94,
+              120
+            ],
+            "sourceHash": "3a7fd6cf0723ab06ee7b6d989233e1dc49288a8aaeebcc84cdb8f6ad1ead4525",
+            "manifestHash": "e9d3feae31afda2d8e6c6db2c572af8411977a4fbd5e4cf5fadda1247fa751b9"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "flight",
+        "attack",
+        "altitude/shadow"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "ra2",
+      "id": "CLEG",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "CLEG",
+      "resolvedStem": "cleg",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "cleg.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "bd0c5225cdf12601392eea393249861dfff699ad8bbce5f20effaf3afe492539",
+          "canvas": [
+            74,
+            88
+          ],
+          "totalFrames": 346
+        }
+      ],
+      "sourceGroup": "bc8b124a2152039b193c0cb8d8dc48e0d1085558ab02ea578959ef315c48cc44",
+      "mappingGroup": "252e40effc047664f97b3a6557fcfb7fea6f9e4b019bfbd0b63985b8911a1cca",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "CLEG",
+        "familyPath": "hd-packs/allied-cleg-family/1/family.json",
+        "hash": "39da49b809f2f39cdf6cb9757888e1012e8fdf235aaf04c9079b17717d416c73",
+        "familyHash": "39da49b809f2f39cdf6cb9757888e1012e8fdf235aaf04c9079b17717d416c73",
+        "members": [
+          {
+            "member": "cleg.shp",
+            "frames": 173,
+            "totalFrames": 346,
+            "canvas": [
+              74,
+              88
+            ],
+            "sourceHash": "bd0c5225cdf12601392eea393249861dfff699ad8bbce5f20effaf3afe492539",
+            "manifestHash": "36207c077caecad4bea955db24036abb36cceb0584982bbe1f281e9af7d59854"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "chrono transit",
+        "erase target"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "ra2",
+      "id": "SPY",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "SPY",
+      "resolvedStem": "spy",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "spy.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "6d7eb5a0ebd9795fcf4a82208ea154a39f615fd0df8732174095513f3f52710e",
+          "canvas": [
+            86,
+            86
+          ],
+          "totalFrames": 408
+        }
+      ],
+      "sourceGroup": "8a196916a70719fea25b846de861802a60d6ac77611c4435a6be83f23bdb70bf",
+      "mappingGroup": "dc73188e85015013838837588ce557549db106b4d1e1a3be00bc3ef87fb2cde9",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "SPY",
+        "familyPath": "hd-packs/allied-spy-family/1/family.json",
+        "hash": "24fb9511b6bb6917774fe0ace044f0e053b2e86b7dc4efbfb89235f9026b6273",
+        "familyHash": "24fb9511b6bb6917774fe0ace044f0e053b2e86b7dc4efbfb89235f9026b6273",
+        "members": [
+          {
+            "member": "spy.shp",
+            "frames": 204,
+            "totalFrames": 408,
+            "canvas": [
+              86,
+              86
+            ],
+            "sourceHash": "6d7eb5a0ebd9795fcf4a82208ea154a39f615fd0df8732174095513f3f52710e",
+            "manifestHash": "0565308b9b3ecb2a5d097feb5f9bae592679d6ac6bef8010ac75e84753c4dc0b"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "disguise",
+        "infiltrate"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "ra2",
+      "id": "CCOMAND",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "CCOMAND",
+      "resolvedStem": "ccomand",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "ccomand.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "5aba156dbbf64e84b794a2659216086566caf113cdeab3c1e414bc09cfb4549a",
+          "canvas": [
+            118,
+            72
+          ],
+          "totalFrames": 696
+        }
+      ],
+      "sourceGroup": "e47b88a3b278e8492015a017349c96200f733c562b04f045491ad320721e9c82",
+      "mappingGroup": "de62663a7befdd073829c36ddc12ee1bae8522369fd22bc4dbd83cea105e8138",
+      "acceptedReuseCandidate": "CCOMAND",
+      "reuseStatus": "SOURCE_IDENTICAL_MAPPING_AND_NATIVE_BINDING_VERIFIED",
+      "plannedDensity": 2,
+      "producedDensities": [],
+      "selectedResource": {
+        "acceptedIdentity": "CCOMAND",
+        "status": "REUSED_UNCHANGED"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "chrono transit",
+        "fire",
+        "C4"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "ra2",
+      "id": "PTROOP",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "PTROOP",
+      "resolvedStem": "ptroop",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "ptroop.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "a0344e19daceed8ae1642a58eab79a9dea20829f272e70fe0650b3f781e937ee",
+          "canvas": [
+            56,
+            70
+          ],
+          "totalFrames": 630
+        }
+      ],
+      "sourceGroup": "55e4a6b61ed2f29013f739bf81b51166f54a5bc3ad878010a6d6efb8ef506b13",
+      "mappingGroup": "8a6d0cdce8df9a091de9ac3eba35d0356606be41ae937de6e0f91b4dff33ab0a",
+      "acceptedReuseCandidate": "PTROOP",
+      "reuseStatus": "SOURCE_IDENTICAL_MAPPING_AND_NATIVE_BINDING_VERIFIED",
+      "plannedDensity": 2,
+      "producedDensities": [],
+      "selectedResource": {
+        "acceptedIdentity": "PTROOP",
+        "status": "REUSED_UNCHANGED"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "mind control",
+        "psi blast"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "ra2",
+      "id": "SNIPE",
+      "houses": [
+        "British"
+      ],
+      "image": "SNIPE",
+      "resolvedStem": "snipe",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "snipe.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "63efb2566adb05586ec96e7a65845f5c97cce46d0678be9e4cf965490858437b",
+          "canvas": [
+            112,
+            82
+          ],
+          "totalFrames": 602
+        }
+      ],
+      "sourceGroup": "76b71c80433820507fbdcb80c68e2cf5e07eb279fc7f5260b45ca61aa7bcb6d0",
+      "mappingGroup": "9c233f1f1582f8233d24250bfeaa7bdbde360dd6b727ffdc47fcb138908369c8",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "SNIPE",
+        "familyPath": "hd-packs/allied-snipe-family/1/family.json",
+        "hash": "730e01f95d100ee79c1560498a28bcbef4d1b02142a4e9419a60c9218ee40368",
+        "familyHash": "730e01f95d100ee79c1560498a28bcbef4d1b02142a4e9419a60c9218ee40368",
+        "members": [
+          {
+            "member": "snipe.shp",
+            "frames": 301,
+            "totalFrames": 602,
+            "canvas": [
+              112,
+              82
+            ],
+            "sourceHash": "63efb2566adb05586ec96e7a65845f5c97cce46d0678be9e4cf965490858437b",
+            "manifestHash": "f01a1585e050776bb8e3a94e5cf27fb9a726ba7113c81724fb7cb9d00de151d4"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "aim",
+        "fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "ra2",
+      "id": "TANY",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "TANY",
+      "resolvedStem": "tany",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "tany.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "a7ad3cecbfa4765774b9b6e72d69854ab997ae9a748f990ad7d23fc292b42feb",
+          "canvas": [
+            130,
+            110
+          ],
+          "totalFrames": 1238
+        }
+      ],
+      "sourceGroup": "08c1e37693c9ee886c1ef44cbdfade874e518769789d47713228bdcb903099c5",
+      "mappingGroup": "e2cdb58183606dc16f39f72ae094bbf890bdc6f9e8dfb5026f9ab0f76c153bf6",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "TANY",
+        "familyPath": "hd-packs/allied-tany-family/1/family.json",
+        "hash": "fb4a434d525cf511f600b38e9a937df83ab32c45300f9cb904ebc767801aedd0",
+        "familyHash": "fb4a434d525cf511f600b38e9a937df83ab32c45300f9cb904ebc767801aedd0",
+        "members": [
+          {
+            "member": "tany.shp",
+            "frames": 619,
+            "totalFrames": 1238,
+            "canvas": [
+              130,
+              110
+            ],
+            "sourceHash": "a7ad3cecbfa4765774b9b6e72d69854ab997ae9a748f990ad7d23fc292b42feb",
+            "manifestHash": "3ebe5c778970490a129a55093ab9e46d56f82409ec4c6b20cca55680e929485c"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "swim",
+        "fire",
+        "C4"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "ra2",
+      "id": "ADOG",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "ADOG",
+      "resolvedStem": "adog",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "adog.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "020c4ee87b55409f72bf1d15482f6ae7c7dc794bc8ecf172e2e0f80d133258b7",
+          "canvas": [
+            74,
+            72
+          ],
+          "totalFrames": 344
+        },
+        {
+          "member": "adogp.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "fba7506842bdb4f12fae6c500a2ef4393a3ec631a26372cafdcbf335b4bb5d44",
+          "canvas": [
+            74,
+            72
+          ],
+          "totalFrames": 64
+        }
+      ],
+      "sourceGroup": "7adb6a0d25eec07293ad331533591dc98afa09c45f4c8858b2a91beb68eb96e4",
+      "mappingGroup": "c9bed611c2ff33d48d5743dfe9661c9a4176544fae6d6310f66fda89c2fba4e1",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "ADOG",
+        "familyPath": "hd-packs/allied-adog-family/1/family.json",
+        "hash": "049e9c65bcfcb808abdeba22350233674fbef1437af7cf29af1bbb8b2082be22",
+        "familyHash": "049e9c65bcfcb808abdeba22350233674fbef1437af7cf29af1bbb8b2082be22",
+        "members": [
+          {
+            "member": "adog.shp",
+            "frames": 172,
+            "totalFrames": 344,
+            "canvas": [
+              74,
+              72
+            ],
+            "sourceHash": "020c4ee87b55409f72bf1d15482f6ae7c7dc794bc8ecf172e2e0f80d133258b7",
+            "manifestHash": "e648fefca866cf4550b0b1819a56f1f84f7b61d9e5bb00e4d2fab56969a5e9a1"
+          },
+          {
+            "member": "adogp.shp",
+            "frames": 32,
+            "totalFrames": 64,
+            "canvas": [
+              74,
+              72
+            ],
+            "sourceHash": "fba7506842bdb4f12fae6c500a2ef4393a3ec631a26372cafdcbf335b4bb5d44",
+            "manifestHash": "ff386b85ca1095c8e2d3ad704957dab54c5b2273faedb9e46074dcf6789b642e"
+          }
+        ],
+        "projectiles": [
+          {
+            "weapon": "GoodTeeth",
+            "projectile": "ADOGJUMP",
+            "member": "adogp.shp"
+          }
+        ]
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "move",
+        "limbo leap",
+        "return"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [
+        {
+          "role": "limbo-launched-unit",
+          "art": {
+            "Rotates": "yes"
+          },
+          "member": "adogp.shp",
+          "binding": "GoodTeeth/ADOGJUMP carries ADOG while the actor is in limbo"
+        }
+      ],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "ra2",
+      "id": "AMCV",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "MCV",
+      "resolvedStem": "mcv",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "mcv.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "4a19444ca2b4a0366fd4fa85de709efa9e431adb366698ad541c019af97288e4"
+        },
+        {
+          "member": "mcv.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "790b8ae4b6543cdd1969bf2e48246caf8ea9ab48b4d79ef2c2f87444ee20312c"
+        }
+      ],
+      "sourceGroup": "5e99c8f3cf8d69fe7d67413977475e1281cce909f6b48aa2931e4d4ebde889c0",
+      "mappingGroup": "ac2a89faa7bcc2544242da421a4e9c104ee38afff0336f1c8f05f8d9d7ef1228",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "5d91874050689d47d54d0533071ef815a40741f6d60b1f0d467a5fdf18ab7a71",
+        "members": [
+          "mcv.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-amcv-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "move",
+        "deploy to accepted GACNST"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "MTNK",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "GTNK",
+      "resolvedStem": "gtnk",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "gtnk.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "88b326908acb5c2a98860d8f65169e8745ae858c5cbfe98e0bb2f283f49a3b81"
+        },
+        {
+          "member": "gtnk.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "4a15fc9c2633667812465c4b08f28cab5d595ae4f80eddbb77d1a9f9ed0480a4"
+        },
+        {
+          "member": "gtnktur.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "deaee48689e1413a264c8945c5d943d1acb39eb3ab26aad93850901af4d7dffe"
+        },
+        {
+          "member": "gtnktur.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "4a15fc9c2633667812465c4b08f28cab5d595ae4f80eddbb77d1a9f9ed0480a4"
+        },
+        {
+          "member": "gtnkbarl.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "04c7ffd68d8f12589bf02767c0617014042c3a255567cf939cd6908c36c0d852"
+        },
+        {
+          "member": "gtnkbarl.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "4a15fc9c2633667812465c4b08f28cab5d595ae4f80eddbb77d1a9f9ed0480a4"
+        }
+      ],
+      "sourceGroup": "6fa521d04836d257bdcc4818eb078dbaacfd8f9a7b0ba1a0b528bce63c846f5c",
+      "mappingGroup": "6ae4e238d448ab53f57564bcb117874c34526cc01f6c9ef3f532d8d4573e1351",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "aebc342e41e287c363dd2103b492f35e9c94a5fc567c766a345ad7e7dd19c515",
+        "members": [
+          "gtnk.vxl",
+          "gtnkbarl.vxl",
+          "gtnktur.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-mtnk-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "move",
+        "independent turret/barrel fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "CARRIER",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "CARRIER",
+      "resolvedStem": "carrier",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "carrier.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "41e7ae6e9315747aa2f26df688e0648aba17b4d4e575546110076f2c62ec4c33"
+        },
+        {
+          "member": "carrier.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa"
+        },
+        {
+          "member": "hornet.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "dedf4d35a0b7fcedefeced629ec91c4f4248b0d5f2f6644bb598db4eac342ea1"
+        },
+        {
+          "member": "hornet.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "03e54f922a662410bf02af818a9569b0fc43cb85e3855d162789d334c3920aef"
+        }
+      ],
+      "sourceGroup": "31f927ab4607582488bd53e78df03a9f9561364ffde212d09c48c49c0f705872",
+      "mappingGroup": "8be21963e78db8f07b251c04f336d06f7bd000372dd489c3abd059241a52a070",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "f2ffe3f553bd23ea43da78217d17deeec04570d864e960bf80a0054ecbbf297b",
+        "members": [
+          "carrier.vxl",
+          "hornet.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-carrier-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "water movement",
+        "HORNET launch/attack/return"
+      ],
+      "requiredChildren": [
+        {
+          "id": "HORNET",
+          "role": "Spawns",
+          "members": [
+            "hornet.vxl",
+            "hornet.hva"
+          ]
+        }
+      ],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "DEST",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "DEST",
+      "resolvedStem": "dest",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "dest.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "e8067578fd5ec47cca18389a29df7de03d338f06df688eee83db0ff8b642b10b"
+        },
+        {
+          "member": "dest.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "f6329725bcb3643e79f3a78411950806b548ec85be90e367b856c47652b4bdd8"
+        },
+        {
+          "member": "destwo.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "725d93344939c23ef4152659b4a75861b78a2f4ae2d3ea34863762c6690a5c7d"
+        },
+        {
+          "member": "destwo.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "f6329725bcb3643e79f3a78411950806b548ec85be90e367b856c47652b4bdd8"
+        },
+        {
+          "member": "asw.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "9778e48e1ee9e5167619ad0c0f6252a0b7da0463474988e459508dad064a765d"
+        },
+        {
+          "member": "asw.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "f6329725bcb3643e79f3a78411950806b548ec85be90e367b856c47652b4bdd8"
+        }
+      ],
+      "sourceGroup": "ab67735379785a545ba3601b4cb959f79d8f9e3f31e6f50e5697f5fe832a621a",
+      "mappingGroup": "97dedb60c28e07e385151850270a6ce724cbc5b31951e11b5f4a3b4ed95dd965",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "99a055b804f60445f2a5cb93e111af26078f2500264c1a587ac0e4199643de91",
+        "members": [
+          "asw.vxl",
+          "dest.vxl",
+          "destwo.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-dest-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "water movement",
+        "ASW launch/return",
+        "no-spawn alternate"
+      ],
+      "requiredChildren": [
+        {
+          "id": "ASW",
+          "role": "Spawns",
+          "members": [
+            "asw.vxl",
+            "asw.hva"
+          ]
+        }
+      ],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "AEGIS",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "AEGIS",
+      "resolvedStem": "aegis",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "aegis.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "d3c6f1446c3121d839fcfb25972978f261e57bc3832a20a9f0bd55a4a0109892"
+        },
+        {
+          "member": "aegis.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa"
+        }
+      ],
+      "sourceGroup": "8b669b30c82a7f533b038f39188e9e11b327179fa2b313ee4fe8dddd771e3cea",
+      "mappingGroup": "56643b4f6a206b01a9b8940d11d628781407dcfd9c1886dbe97a3b1e7e27bee8",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "f1ade6663a192db8d3317519069d4fafc707b46affea06ad8d0c9806b379d4f0",
+        "members": [
+          "aegis.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-aegis-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "water movement",
+        "anti-air fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "LCRF",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "LCRF",
+      "resolvedStem": "lcrf",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "lcrf.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "01608134ed663b1923ed8406a2b5f11274a362f55f7c0ea896afd68b991f6b7e"
+        },
+        {
+          "member": "lcrf.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "5e6f85bf2e42fef64b4f53fe7871488269ee8d31c204565233753b2ae616ee9a"
+        }
+      ],
+      "sourceGroup": "b7af6bed4aaa2f699a72dd238a416844c1480c4a75aed59331c22d319384dc5e",
+      "mappingGroup": "57a126e8558d8d96e7722a11f6ef34caad490e1107f858b8eab1a7350d3ce13a",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "19c9a63cdfcb29ab69befa24608ee9e934843347fb23297c317b4a1ef2461709",
+        "members": [
+          "lcrf.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-lcrf-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "water/shore movement",
+        "transport/unload"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "SHAD",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "SHAD",
+      "resolvedStem": "shad",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "shad.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "2631eb06cdf90b3a2932ffeba8de48e349b2fab3b9b17d70a6f18a76c0371636"
+        },
+        {
+          "member": "shad.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "008ae1ea5f4b1c928aaffa4dcb86a3ee748af6d9396bdbdb528f8da8db0a3b0b"
+        }
+      ],
+      "sourceGroup": "0cc55f490353c617252f2c351489db11a677540cbedffc7adb0fe5fa596ef5aa",
+      "mappingGroup": "e1ee4eb21db797905bf26dc801c6098973cb34fb336aa902583de2cafcfb07fc",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "df399408eb4dfe6c085a80748c08e66976c278b258c167ebfe3d3b04b43d8ab1",
+        "members": [
+          "shad.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-shad-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "flight",
+        "rotors",
+        "transport/unload"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "DLPH",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "DLPH",
+      "resolvedStem": "dlph",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "dlph.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "e59b3a3f6518dd71c7de042ae4becbcdcbe0a6977700f8fb1e719e12b6ea6a0c",
+          "canvas": [
+            74,
+            158
+          ],
+          "totalFrames": 232
+        }
+      ],
+      "sourceGroup": "6189205a3339a1ed3c573467442909f3712467bee784a7c61362e8a7553c3471",
+      "mappingGroup": "e1da858a4a948d55d74e54f443c40e259efb59bdc1856a193b0f12c0e8c9e229",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "DLPH",
+        "familyPath": "hd-packs/allied-dlph-family/1/family.json",
+        "hash": "d28e9887517b99c8e79f57069f9db86de284369deed29b5369cbdf0233528e0c",
+        "familyHash": "d28e9887517b99c8e79f57069f9db86de284369deed29b5369cbdf0233528e0c",
+        "members": [
+          {
+            "member": "dlph.shp",
+            "frames": 116,
+            "totalFrames": 232,
+            "canvas": [
+              74,
+              158
+            ],
+            "sourceHash": "e59b3a3f6518dd71c7de042ae4becbcdcbe0a6977700f8fb1e719e12b6ea6a0c",
+            "manifestHash": "6b9f5e683a7fcab80d2b6ced0277cf1225fb2aa07ce48db34c93e3ec26409afd"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "swim",
+        "sonic attack",
+        "concealment/removal"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "ra2",
+      "id": "TNKD",
+      "houses": [
+        "Germans"
+      ],
+      "image": "TNKD",
+      "resolvedStem": "tnkd",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "tnkd.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "e5eadd502cd64aad8d751622a24156b8d0c06ef533afaf5a6f8e340fea28d94a"
+        },
+        {
+          "member": "tnkd.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        }
+      ],
+      "sourceGroup": "ac52ca9c1871ce59d0a838d4b36ed640d7834abe954dbab24eea82af1731c626",
+      "mappingGroup": "20356eda73b12aab5d1cd905b1c67fb1587db2a2f96fa6d3805e24205f2a2750",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "f52d03a415fbce02814c41ac00bed4e95b5882a0a8ba35620a650c0b13a9b3a5",
+        "members": [
+          "tnkd.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-tnkd-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "aim",
+        "fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "CMIN",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "CMIN",
+      "resolvedStem": "cmin",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "cmin.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "f9ab81a01eb3019e62f0eb2aa68d19b4cb25290b5886b491d020aa9bd2784e9c"
+        },
+        {
+          "member": "cmin.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "83acad38f7755df0a5197992df05b810e274704917279039e0f681d0aa900498"
+        },
+        {
+          "member": "cmon.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "362949de5608d8393f4483c348b2d833eb223d0f5beb998f849f66de416acb2c"
+        },
+        {
+          "member": "cmon.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "810dae94db5ae67cef0866897da63f20d3b8d36ff2b73769abc0f5664ff4a2fe"
+        }
+      ],
+      "sourceGroup": "2ff94cd5900e6f0f29f67d752f99842feead96c63de6105eec735d5545a464be",
+      "mappingGroup": "fb09342c4cf0e60ec3b078df9780d6559b2a379ba37ac1ea4d1e9a85bb94f5d3",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "f55476aa46e1473d2f89d6eb6529997f18ad02cf0cdba277df2a69b2effc0d43",
+        "members": [
+          "cmin.vxl",
+          "cmon.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-cmin-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "mine",
+        "CMON unload",
+        "chrono transit"
+      ],
+      "requiredChildren": [
+        {
+          "id": "CMON",
+          "role": "UnloadingClass",
+          "members": [
+            "cmon.vxl",
+            "cmon.hva"
+          ]
+        }
+      ],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "SREF",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "SREF",
+      "resolvedStem": "sref",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "sref.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "fa3e79d7e457d9368a77998f5de743e9559bbeb11b917a805aa8f4ee76cad979"
+        },
+        {
+          "member": "sref.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "bbc8b8d4cdadc47627fdc955fcc6d30e6844bb736f3b81bfd2f0298b06c39396"
+        },
+        {
+          "member": "sreftur.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "dbdf90aa9002796555450b6aa0ae05cb4926d83a2d6b21a4ed0cbe37e4af057b"
+        },
+        {
+          "member": "sreftur.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "bbc8b8d4cdadc47627fdc955fcc6d30e6844bb736f3b81bfd2f0298b06c39396"
+        },
+        {
+          "member": "sreftur1.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "13eea10c5395da2760c6cd0bf01611dd59116c45cc5321b569415ab3ec433fdf"
+        },
+        {
+          "member": "sreftur1.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "ae4ba7805d0b87dd7b98fa18ba034c36147c51b20cf037a8cf7448dab6a6d25b"
+        },
+        {
+          "member": "sreftur2.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "2f90e8585fc90c15f6ee086f28241382d012f631d7559afbcda1bc8ec08aa8e6"
+        },
+        {
+          "member": "sreftur2.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "ae4ba7805d0b87dd7b98fa18ba034c36147c51b20cf037a8cf7448dab6a6d25b"
+        },
+        {
+          "member": "sreftur3.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "5e3ad05ac7dde18ebc814c4dbd5c3ad3e74e1b48730500bfa53d82cba1d516c5"
+        },
+        {
+          "member": "sreftur3.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "c9e156df427bc5955cf5e99723c965fbd2ffadaef6c0299a4b2d2e51c9723f48"
+        }
+      ],
+      "sourceGroup": "9fe8c1319e606633ef7f4fc54760294cb52f2fb72440d6e46e11dc7e6bbf13bd",
+      "mappingGroup": "ad4cf99b44c2d3be294b5a145406bb20c64b0894a9b721b98a1b6212637951aa",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "39502dbc97d36706ca5571157aa760331628d46585cd7fb0836844e6d127ce09",
+        "members": [
+          "sref.vxl",
+          "sreftur.vxl",
+          "sreftur1.vxl",
+          "sreftur2.vxl",
+          "sreftur3.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-sref-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "aim",
+        "prism fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "MGTK",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "RTNK",
+      "resolvedStem": "rtnk",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "rtnk.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "5ffa424b33fbb14a51743c69a02d9fe0137922e19b474e32402f5aba0f00f985"
+        },
+        {
+          "member": "rtnk.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        }
+      ],
+      "sourceGroup": "b974ae070371b859b696923897462308a5e0f4c79174d91365185386ba448ec6",
+      "mappingGroup": "fb3ec763dce8e58e44af1c9b3cbde9d05cabf89b3ec1a37484f13830a524e781",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "708e5a7181c41efd801572dedfe9e6ccdae561b6d392fbeed95801961b4398f2",
+        "members": [
+          "rtnk.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-mgtk-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "disguise",
+        "reveal",
+        "fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "FV",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "FV",
+      "resolvedStem": "fv",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "fv.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "31e78a7559bbfb19a8e763550d17366e4e386d934c695188cd7336cef68a8f3e"
+        },
+        {
+          "member": "fv.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        },
+        {
+          "member": "fvtur.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "4569b2ae0ddd8ef64f487cc22a35b257bd8a617e75745ff48d6695fbbff8db8a"
+        },
+        {
+          "member": "fvtur.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        },
+        {
+          "member": "fvtur1.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "ffca0c67ae647262cbe39ceba68f8f00c6be182881f48de84f229d99a65598d2"
+        },
+        {
+          "member": "fvtur1.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        },
+        {
+          "member": "fvtur2.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "5f8b5e27adc3859eb78ac1280e89b1e03763ea8866fa3f62d2bc730a33181fef"
+        },
+        {
+          "member": "fvtur2.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        },
+        {
+          "member": "fvtur3.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "3f42cbdf6b82d2717b4cbaff328e066ae19ac15cf008d0b43095142a8d75a887"
+        },
+        {
+          "member": "fvtur3.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        }
+      ],
+      "sourceGroup": "a7567d69ff2a2fe67a4dbaa0056d0f66446409090c5d4ca5244c513492715630",
+      "mappingGroup": "5f0e84213c381c8c5a9ffcc46a1f0dd25950ee8f2ccc98cf115aa491fd8aa05d",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "c952f296bf865a8d33dec2feb7df7a876d4c447909be37551313578cbafedf06",
+        "members": [
+          "fv.vxl",
+          "fvtur.vxl",
+          "fvtur1.vxl",
+          "fvtur2.vxl",
+          "fvtur3.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-fv-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "four native turret forms",
+        "repair",
+        "passenger evacuation"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "ORCA",
+      "houses": [
+        "Americans",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "FALC",
+      "resolvedStem": "falc",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "falc.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "1594b9766bf624bffc75887fa5cef70029b63882cf057572a31e19848c1f1d1c"
+        },
+        {
+          "member": "falc.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "b73a3390ffcd11c0755fc23135b12b0df8203444cd1dbb04211bdcab0667cc4e"
+        }
+      ],
+      "sourceGroup": "ad95d0fbf08dd82ea1550aca7cc34155936632cdbb5727b544f66b87dcd93e65",
+      "mappingGroup": "5c6078d623f92ae695f1f913b37811c24fc97f8fa94b9228451b60802c587a33",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "e1982f5ad700c5233326dd034356d7cc6230a72bd6aa311e9f034160ccdfbe6a",
+        "members": [
+          "falc.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-orca-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v3/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "takeoff",
+        "attack",
+        "dock/reload"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "ra2",
+      "id": "BEAG",
+      "houses": [
+        "Alliance"
+      ],
+      "image": "BEAG",
+      "resolvedStem": "beag",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "beag.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "a061f70c5e8381d6d203db83ec035a3adcceef7432ee7ba011658cf61982c320"
+        },
+        {
+          "member": "beag.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "d297d7ec3ed352ca52286a4565d2ac5960904810369b20549cc376beaf2adf9c"
+        }
+      ],
+      "sourceGroup": "97e90f1f1644304aabe27c3136addd31ab2c6d6f0ccefcaae13f69784e73e7ed",
+      "mappingGroup": "00e605a4ee53562819c62dd699f110c3d9f7a0d4b541044835d92a774b9cff42",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "bcb62c19b051f14eb2a1023c51f76e850450d80fca35b3748340c7d2aa2a5902",
+        "members": [
+          "beag.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-beag-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v3/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "takeoff",
+        "attack",
+        "dock/reload"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "E1",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "GI",
+      "resolvedStem": "gi",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "gi.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "bceaee9c270d6382d80d509f2c4b2893c10565f779096b3add37a4d5321e8be1",
+          "canvas": [
+            78,
+            66
+          ],
+          "totalFrames": 744
+        }
+      ],
+      "sourceGroup": "c24930bafe96049c9dc78ce526d6d0ae697e5b9c6ff2ce6efc3c523028c67bd8",
+      "mappingGroup": "f034677b144850eacbcb009e5247b169e621504f2c96b176487d20469ee7a15a",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "E1",
+        "familyPath": "hd-packs/allied-e1-family/1/family.json",
+        "hash": "b011c8044180e49c62314502370528a673b39d2e15f64f5e72befdbb441c66b6",
+        "familyHash": "b011c8044180e49c62314502370528a673b39d2e15f64f5e72befdbb441c66b6",
+        "members": [
+          {
+            "member": "gi.shp",
+            "frames": 372,
+            "totalFrames": 744,
+            "canvas": [
+              78,
+              66
+            ],
+            "sourceHash": "bceaee9c270d6382d80d509f2c4b2893c10565f779096b3add37a4d5321e8be1",
+            "manifestHash": "58090514acec2be29a99e906a8db769965e87d5a8924b1d7d982e8f4773355cb"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "walk",
+        "deploy/undeploy",
+        "deployed fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "ENGINEER",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "ENGINEER",
+      "resolvedStem": "engineer",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "engineer.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "f8eb0dc0156a877028ac2ed57bf2e71a9445ffcb6ef6a4caf3b0dbb7b111834c",
+          "canvas": [
+            76,
+            80
+          ],
+          "totalFrames": 506
+        }
+      ],
+      "sourceGroup": "89a251d8d606879bc8815fe6d846ea32f64a8cb75dfe01edfd14347b28dd1a38",
+      "mappingGroup": "9ea850c51e34ddda33e64f67aece1a4c8628e3c008292d2a66defdd2003e02e8",
+      "acceptedReuseCandidate": "SENGINEER",
+      "reuseStatus": "SOURCE_IDENTICAL_MAPPING_AND_NATIVE_BINDING_VERIFIED",
+      "plannedDensity": 2,
+      "producedDensities": [],
+      "selectedResource": {
+        "acceptedIdentity": "SENGINEER",
+        "status": "REUSED_UNCHANGED"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "capture",
+        "repair"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "JUMPJET",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "ROCK",
+      "resolvedStem": "rock",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "rock.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "3a7fd6cf0723ab06ee7b6d989233e1dc49288a8aaeebcc84cdb8f6ad1ead4525",
+          "canvas": [
+            94,
+            120
+          ],
+          "totalFrames": 854
+        }
+      ],
+      "sourceGroup": "33a9555f9c60d8e3e87bb189148948dcdf5458c67a36435ca7d29cb16747e156",
+      "mappingGroup": "dbc61e14cbe0e4af2d120d104618738738f65ef8cbf66aee3db69ce532eeb5ef",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "JUMPJET",
+        "familyPath": "hd-packs/allied-jumpjet-family/1/family.json",
+        "hash": "b808fcc38c7abd6da8616909aa6b94fc2811dc8e49fb438dbbc944a210585a1c",
+        "familyHash": "b808fcc38c7abd6da8616909aa6b94fc2811dc8e49fb438dbbc944a210585a1c",
+        "members": [
+          {
+            "member": "rock.shp",
+            "frames": 427,
+            "totalFrames": 854,
+            "canvas": [
+              94,
+              120
+            ],
+            "sourceHash": "3a7fd6cf0723ab06ee7b6d989233e1dc49288a8aaeebcc84cdb8f6ad1ead4525",
+            "manifestHash": "e9d3feae31afda2d8e6c6db2c572af8411977a4fbd5e4cf5fadda1247fa751b9"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "flight",
+        "attack",
+        "altitude/shadow"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "GHOST",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "SEAL",
+      "resolvedStem": "seala",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "seala.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "213d3bc3c59b412c7c2391bcb52757e0a51f39ee5248590a80f36e1141a6e9c1",
+          "canvas": [
+            118,
+            72
+          ],
+          "totalFrames": 1238
+        }
+      ],
+      "sourceGroup": "f89d050ed9ae38bf1708135269ae18ce6547b967c30f90df5852272f0ffa2c26",
+      "mappingGroup": "069294458c7c094d3a1e2cf49ff4b11e39f1bf3a55537ea0c81dc1b2e301ab16",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "GHOST",
+        "familyPath": "hd-packs/allied-ghost-family/1/family.json",
+        "hash": "29828a901eba925ef477036eb1d2910f7b7f5160c3589baa9a9df248a44648fb",
+        "familyHash": "29828a901eba925ef477036eb1d2910f7b7f5160c3589baa9a9df248a44648fb",
+        "members": [
+          {
+            "member": "seala.shp",
+            "frames": 619,
+            "totalFrames": 1238,
+            "canvas": [
+              118,
+              72
+            ],
+            "sourceHash": "213d3bc3c59b412c7c2391bcb52757e0a51f39ee5248590a80f36e1141a6e9c1",
+            "manifestHash": "8f58c3303d63ee9fe2e297a48a210848283c7f066819b25cf55be5b3c07d1657"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "swim",
+        "fire",
+        "C4"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "CLEG",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "CLEG",
+      "resolvedStem": "cleg",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "cleg.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "bd0c5225cdf12601392eea393249861dfff699ad8bbce5f20effaf3afe492539",
+          "canvas": [
+            74,
+            88
+          ],
+          "totalFrames": 346
+        }
+      ],
+      "sourceGroup": "bc8b124a2152039b193c0cb8d8dc48e0d1085558ab02ea578959ef315c48cc44",
+      "mappingGroup": "d8e16caa0b95c192f9273a6069fd8f22973c37aa726c3ae25796bdafee13a3c9",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "CLEG",
+        "familyPath": "hd-packs/allied-cleg-family/1/family.json",
+        "hash": "39da49b809f2f39cdf6cb9757888e1012e8fdf235aaf04c9079b17717d416c73",
+        "familyHash": "39da49b809f2f39cdf6cb9757888e1012e8fdf235aaf04c9079b17717d416c73",
+        "members": [
+          {
+            "member": "cleg.shp",
+            "frames": 173,
+            "totalFrames": 346,
+            "canvas": [
+              74,
+              88
+            ],
+            "sourceHash": "bd0c5225cdf12601392eea393249861dfff699ad8bbce5f20effaf3afe492539",
+            "manifestHash": "36207c077caecad4bea955db24036abb36cceb0584982bbe1f281e9af7d59854"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "chrono transit",
+        "erase target"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "SPY",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "SPY",
+      "resolvedStem": "spy",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "spy.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "6d7eb5a0ebd9795fcf4a82208ea154a39f615fd0df8732174095513f3f52710e",
+          "canvas": [
+            86,
+            86
+          ],
+          "totalFrames": 408
+        }
+      ],
+      "sourceGroup": "8a196916a70719fea25b846de861802a60d6ac77611c4435a6be83f23bdb70bf",
+      "mappingGroup": "340e566bcf99dfb818bc19e87e7e068c107d765afb4db9c5fb140294b524a5e2",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "SPY",
+        "familyPath": "hd-packs/allied-spy-family/1/family.json",
+        "hash": "24fb9511b6bb6917774fe0ace044f0e053b2e86b7dc4efbfb89235f9026b6273",
+        "familyHash": "24fb9511b6bb6917774fe0ace044f0e053b2e86b7dc4efbfb89235f9026b6273",
+        "members": [
+          {
+            "member": "spy.shp",
+            "frames": 204,
+            "totalFrames": 408,
+            "canvas": [
+              86,
+              86
+            ],
+            "sourceHash": "6d7eb5a0ebd9795fcf4a82208ea154a39f615fd0df8732174095513f3f52710e",
+            "manifestHash": "0565308b9b3ecb2a5d097feb5f9bae592679d6ac6bef8010ac75e84753c4dc0b"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "disguise",
+        "infiltrate"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "CCOMAND",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "CCOMAND",
+      "resolvedStem": "ccomand",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "ccomand.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "5aba156dbbf64e84b794a2659216086566caf113cdeab3c1e414bc09cfb4549a",
+          "canvas": [
+            118,
+            72
+          ],
+          "totalFrames": 696
+        }
+      ],
+      "sourceGroup": "e47b88a3b278e8492015a017349c96200f733c562b04f045491ad320721e9c82",
+      "mappingGroup": "e967e6f2e0240825323ceb3fbbc09254faace8d242da6e0404c4e1c2da6a8702",
+      "acceptedReuseCandidate": "CCOMAND",
+      "reuseStatus": "SOURCE_IDENTICAL_MAPPING_AND_NATIVE_BINDING_VERIFIED",
+      "plannedDensity": 2,
+      "producedDensities": [],
+      "selectedResource": {
+        "acceptedIdentity": "CCOMAND",
+        "status": "REUSED_UNCHANGED"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "chrono transit",
+        "fire",
+        "C4"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "PTROOP",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "PTROOP",
+      "resolvedStem": "ptroop",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "ptroop.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "a0344e19daceed8ae1642a58eab79a9dea20829f272e70fe0650b3f781e937ee",
+          "canvas": [
+            56,
+            70
+          ],
+          "totalFrames": 630
+        }
+      ],
+      "sourceGroup": "55e4a6b61ed2f29013f739bf81b51166f54a5bc3ad878010a6d6efb8ef506b13",
+      "mappingGroup": "ed87076023c4b120cba9fc5f2dae8b4d3323741a2208956b90020c9b3ceec9e6",
+      "acceptedReuseCandidate": "PTROOP",
+      "reuseStatus": "SOURCE_IDENTICAL_MAPPING_AND_NATIVE_BINDING_VERIFIED",
+      "plannedDensity": 2,
+      "producedDensities": [],
+      "selectedResource": {
+        "acceptedIdentity": "PTROOP",
+        "status": "REUSED_UNCHANGED"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "mind control",
+        "psi blast"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVAN",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "CIVAN",
+      "resolvedStem": "civan",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "civan.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "48569d57cf5a77fe611a000ea8db14992160d0515d4e4b9bf22c03198c010523",
+          "canvas": [
+            104,
+            88
+          ],
+          "totalFrames": 534
+        }
+      ],
+      "sourceGroup": "fb17600fa69be0a2aa5b98d650ee663e133db7958058140ae2e7f56ce8b5c91e",
+      "mappingGroup": "57fbf4e74ba864f8bf3d224005782ac8ecb3ca8914be160172c4b49ecd49ea45",
+      "acceptedReuseCandidate": "CIVAN",
+      "reuseStatus": "SOURCE_IDENTICAL_MAPPING_AND_NATIVE_BINDING_VERIFIED",
+      "plannedDensity": 2,
+      "producedDensities": [],
+      "selectedResource": {
+        "acceptedIdentity": "CIVAN",
+        "status": "REUSED_UNCHANGED"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "chrono transit",
+        "bomb placement"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "SNIPE",
+      "houses": [
+        "British"
+      ],
+      "image": "SNIPE",
+      "resolvedStem": "snipe",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "snipe.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "63efb2566adb05586ec96e7a65845f5c97cce46d0678be9e4cf965490858437b",
+          "canvas": [
+            112,
+            82
+          ],
+          "totalFrames": 602
+        }
+      ],
+      "sourceGroup": "76b71c80433820507fbdcb80c68e2cf5e07eb279fc7f5260b45ca61aa7bcb6d0",
+      "mappingGroup": "a28f850b059851536d83f9564ff0f439bafecf0f20a0a0c114c4501f7f67449b",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "SNIPE",
+        "familyPath": "hd-packs/allied-snipe-family/1/family.json",
+        "hash": "730e01f95d100ee79c1560498a28bcbef4d1b02142a4e9419a60c9218ee40368",
+        "familyHash": "730e01f95d100ee79c1560498a28bcbef4d1b02142a4e9419a60c9218ee40368",
+        "members": [
+          {
+            "member": "snipe.shp",
+            "frames": 301,
+            "totalFrames": 602,
+            "canvas": [
+              112,
+              82
+            ],
+            "sourceHash": "63efb2566adb05586ec96e7a65845f5c97cce46d0678be9e4cf965490858437b",
+            "manifestHash": "f01a1585e050776bb8e3a94e5cf27fb9a726ba7113c81724fb7cb9d00de151d4"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "aim",
+        "fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "TANY",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "TANY",
+      "resolvedStem": "tany",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "tany.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "a7ad3cecbfa4765774b9b6e72d69854ab997ae9a748f990ad7d23fc292b42feb",
+          "canvas": [
+            130,
+            110
+          ],
+          "totalFrames": 1238
+        }
+      ],
+      "sourceGroup": "08c1e37693c9ee886c1ef44cbdfade874e518769789d47713228bdcb903099c5",
+      "mappingGroup": "b700a886d81d082444fc6e839742ca153b14d9a932db7837c985b05ce4b012ac",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "TANY",
+        "familyPath": "hd-packs/allied-tany-family/1/family.json",
+        "hash": "fb4a434d525cf511f600b38e9a937df83ab32c45300f9cb904ebc767801aedd0",
+        "familyHash": "fb4a434d525cf511f600b38e9a937df83ab32c45300f9cb904ebc767801aedd0",
+        "members": [
+          {
+            "member": "tany.shp",
+            "frames": 619,
+            "totalFrames": 1238,
+            "canvas": [
+              130,
+              110
+            ],
+            "sourceHash": "a7ad3cecbfa4765774b9b6e72d69854ab997ae9a748f990ad7d23fc292b42feb",
+            "manifestHash": "3ebe5c778970490a129a55093ab9e46d56f82409ec4c6b20cca55680e929485c"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "swim",
+        "fire",
+        "C4"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "ADOG",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "ADOG",
+      "resolvedStem": "adog",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "adog.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "020c4ee87b55409f72bf1d15482f6ae7c7dc794bc8ecf172e2e0f80d133258b7",
+          "canvas": [
+            74,
+            72
+          ],
+          "totalFrames": 344
+        },
+        {
+          "member": "adogp.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "fba7506842bdb4f12fae6c500a2ef4393a3ec631a26372cafdcbf335b4bb5d44",
+          "canvas": [
+            74,
+            72
+          ],
+          "totalFrames": 64
+        }
+      ],
+      "sourceGroup": "7adb6a0d25eec07293ad331533591dc98afa09c45f4c8858b2a91beb68eb96e4",
+      "mappingGroup": "ccc8fbd40ef64c984fd2dd81987b3f3e33d7a392df484e4ef61b5a1288d027a6",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "ADOG",
+        "familyPath": "hd-packs/allied-adog-family/1/family.json",
+        "hash": "049e9c65bcfcb808abdeba22350233674fbef1437af7cf29af1bbb8b2082be22",
+        "familyHash": "049e9c65bcfcb808abdeba22350233674fbef1437af7cf29af1bbb8b2082be22",
+        "members": [
+          {
+            "member": "adog.shp",
+            "frames": 172,
+            "totalFrames": 344,
+            "canvas": [
+              74,
+              72
+            ],
+            "sourceHash": "020c4ee87b55409f72bf1d15482f6ae7c7dc794bc8ecf172e2e0f80d133258b7",
+            "manifestHash": "e648fefca866cf4550b0b1819a56f1f84f7b61d9e5bb00e4d2fab56969a5e9a1"
+          },
+          {
+            "member": "adogp.shp",
+            "frames": 32,
+            "totalFrames": 64,
+            "canvas": [
+              74,
+              72
+            ],
+            "sourceHash": "fba7506842bdb4f12fae6c500a2ef4393a3ec631a26372cafdcbf335b4bb5d44",
+            "manifestHash": "ff386b85ca1095c8e2d3ad704957dab54c5b2273faedb9e46074dcf6789b642e"
+          }
+        ],
+        "projectiles": [
+          {
+            "weapon": "GoodTeeth",
+            "projectile": "ADOGJUMP",
+            "member": "adogp.shp"
+          }
+        ]
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "move",
+        "limbo leap",
+        "return"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [
+        {
+          "role": "limbo-launched-unit",
+          "art": {
+            "Rotates": "yes"
+          },
+          "member": "adogp.shp",
+          "binding": "GoodTeeth/ADOGJUMP carries ADOG while the actor is in limbo"
+        }
+      ],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "GGI",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "GGI",
+      "resolvedStem": "ggi",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "ggi.shp",
+          "archive": "ra2md.mix/conqmd.mix",
+          "sha256": "736bb542838bb62e556f9fabdf26b2ac2bd49068e35228d836fe8eac44fa7744",
+          "canvas": [
+            94,
+            78
+          ],
+          "totalFrames": 744
+        }
+      ],
+      "sourceGroup": "db3d9dd50ca9b815c53c198964c40c232ae4bd9a935eea798166222bc7c8555a",
+      "mappingGroup": "6c76e71c63d8d0fe09958b704ad0b3784d49b18f71a491cea9dbe62d93ecaf62",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "GGI",
+        "familyPath": "hd-packs/allied-ggi-family/2/family.json",
+        "hash": "bcdb5eb28af7dab31b01f1a81484ef76a68f2e0f2204104596c29cb767ab470a",
+        "familyHash": "bcdb5eb28af7dab31b01f1a81484ef76a68f2e0f2204104596c29cb767ab470a",
+        "members": [
+          {
+            "member": "ggi.shp",
+            "frames": 372,
+            "totalFrames": 744,
+            "canvas": [
+              94,
+              78
+            ],
+            "sourceHash": "736bb542838bb62e556f9fabdf26b2ac2bd49068e35228d836fe8eac44fa7744",
+            "manifestHash": "74b52f4da2ecbcf36f6fcb26dccccea4eee48928ba40f6e13c7a1feb4b7a271d"
+          }
+        ],
+        "projectiles": [],
+        "edition": "yr"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-infantry-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "walk",
+        "deploy/undeploy",
+        "ground/air weapon"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "AMCV",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "MCV",
+      "resolvedStem": "mcv",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "mcv.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "4a19444ca2b4a0366fd4fa85de709efa9e431adb366698ad541c019af97288e4"
+        },
+        {
+          "member": "mcv.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "790b8ae4b6543cdd1969bf2e48246caf8ea9ab48b4d79ef2c2f87444ee20312c"
+        }
+      ],
+      "sourceGroup": "5e99c8f3cf8d69fe7d67413977475e1281cce909f6b48aa2931e4d4ebde889c0",
+      "mappingGroup": "ac2a89faa7bcc2544242da421a4e9c104ee38afff0336f1c8f05f8d9d7ef1228",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "5d91874050689d47d54d0533071ef815a40741f6d60b1f0d467a5fdf18ab7a71",
+        "members": [
+          "mcv.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-amcv-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "move",
+        "deploy to accepted GACNST"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "MTNK",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "GTNK",
+      "resolvedStem": "gtnk",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "gtnk.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "88b326908acb5c2a98860d8f65169e8745ae858c5cbfe98e0bb2f283f49a3b81"
+        },
+        {
+          "member": "gtnk.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "4a15fc9c2633667812465c4b08f28cab5d595ae4f80eddbb77d1a9f9ed0480a4"
+        },
+        {
+          "member": "gtnktur.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "deaee48689e1413a264c8945c5d943d1acb39eb3ab26aad93850901af4d7dffe"
+        },
+        {
+          "member": "gtnktur.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "4a15fc9c2633667812465c4b08f28cab5d595ae4f80eddbb77d1a9f9ed0480a4"
+        },
+        {
+          "member": "gtnkbarl.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "04c7ffd68d8f12589bf02767c0617014042c3a255567cf939cd6908c36c0d852"
+        },
+        {
+          "member": "gtnkbarl.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "4a15fc9c2633667812465c4b08f28cab5d595ae4f80eddbb77d1a9f9ed0480a4"
+        }
+      ],
+      "sourceGroup": "6fa521d04836d257bdcc4818eb078dbaacfd8f9a7b0ba1a0b528bce63c846f5c",
+      "mappingGroup": "6ae4e238d448ab53f57564bcb117874c34526cc01f6c9ef3f532d8d4573e1351",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "aebc342e41e287c363dd2103b492f35e9c94a5fc567c766a345ad7e7dd19c515",
+        "members": [
+          "gtnk.vxl",
+          "gtnkbarl.vxl",
+          "gtnktur.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-mtnk-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "move",
+        "independent turret/barrel fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "CARRIER",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "CARRIER",
+      "resolvedStem": "carrier",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "carrier.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "41e7ae6e9315747aa2f26df688e0648aba17b4d4e575546110076f2c62ec4c33"
+        },
+        {
+          "member": "carrier.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa"
+        },
+        {
+          "member": "hornet.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "dedf4d35a0b7fcedefeced629ec91c4f4248b0d5f2f6644bb598db4eac342ea1"
+        },
+        {
+          "member": "hornet.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "03e54f922a662410bf02af818a9569b0fc43cb85e3855d162789d334c3920aef"
+        }
+      ],
+      "sourceGroup": "31f927ab4607582488bd53e78df03a9f9561364ffde212d09c48c49c0f705872",
+      "mappingGroup": "8be21963e78db8f07b251c04f336d06f7bd000372dd489c3abd059241a52a070",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "f2ffe3f553bd23ea43da78217d17deeec04570d864e960bf80a0054ecbbf297b",
+        "members": [
+          "carrier.vxl",
+          "hornet.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-carrier-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "water movement",
+        "HORNET launch/attack/return"
+      ],
+      "requiredChildren": [
+        {
+          "id": "HORNET",
+          "role": "Spawns",
+          "members": [
+            "hornet.vxl",
+            "hornet.hva"
+          ]
+        }
+      ],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "DEST",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "DEST",
+      "resolvedStem": "dest",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "dest.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "e8067578fd5ec47cca18389a29df7de03d338f06df688eee83db0ff8b642b10b"
+        },
+        {
+          "member": "dest.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "f6329725bcb3643e79f3a78411950806b548ec85be90e367b856c47652b4bdd8"
+        },
+        {
+          "member": "destwo.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "725d93344939c23ef4152659b4a75861b78a2f4ae2d3ea34863762c6690a5c7d"
+        },
+        {
+          "member": "destwo.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "f6329725bcb3643e79f3a78411950806b548ec85be90e367b856c47652b4bdd8"
+        },
+        {
+          "member": "asw.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "9778e48e1ee9e5167619ad0c0f6252a0b7da0463474988e459508dad064a765d"
+        },
+        {
+          "member": "asw.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "f6329725bcb3643e79f3a78411950806b548ec85be90e367b856c47652b4bdd8"
+        }
+      ],
+      "sourceGroup": "ab67735379785a545ba3601b4cb959f79d8f9e3f31e6f50e5697f5fe832a621a",
+      "mappingGroup": "97dedb60c28e07e385151850270a6ce724cbc5b31951e11b5f4a3b4ed95dd965",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "99a055b804f60445f2a5cb93e111af26078f2500264c1a587ac0e4199643de91",
+        "members": [
+          "asw.vxl",
+          "dest.vxl",
+          "destwo.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-dest-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "water movement",
+        "ASW launch/return",
+        "no-spawn alternate"
+      ],
+      "requiredChildren": [
+        {
+          "id": "ASW",
+          "role": "Spawns",
+          "members": [
+            "asw.vxl",
+            "asw.hva"
+          ]
+        }
+      ],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "AEGIS",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "AEGIS",
+      "resolvedStem": "aegis",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "aegis.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "d3c6f1446c3121d839fcfb25972978f261e57bc3832a20a9f0bd55a4a0109892"
+        },
+        {
+          "member": "aegis.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa"
+        }
+      ],
+      "sourceGroup": "8b669b30c82a7f533b038f39188e9e11b327179fa2b313ee4fe8dddd771e3cea",
+      "mappingGroup": "56643b4f6a206b01a9b8940d11d628781407dcfd9c1886dbe97a3b1e7e27bee8",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "f1ade6663a192db8d3317519069d4fafc707b46affea06ad8d0c9806b379d4f0",
+        "members": [
+          "aegis.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-aegis-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "water movement",
+        "anti-air fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "LCRF",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "LCRF",
+      "resolvedStem": "lcrf",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "lcrf.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "01608134ed663b1923ed8406a2b5f11274a362f55f7c0ea896afd68b991f6b7e"
+        },
+        {
+          "member": "lcrf.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "5e6f85bf2e42fef64b4f53fe7871488269ee8d31c204565233753b2ae616ee9a"
+        }
+      ],
+      "sourceGroup": "b7af6bed4aaa2f699a72dd238a416844c1480c4a75aed59331c22d319384dc5e",
+      "mappingGroup": "57a126e8558d8d96e7722a11f6ef34caad490e1107f858b8eab1a7350d3ce13a",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "19c9a63cdfcb29ab69befa24608ee9e934843347fb23297c317b4a1ef2461709",
+        "members": [
+          "lcrf.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-lcrf-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "water/shore movement",
+        "transport/unload"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "SHAD",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "SHAD",
+      "resolvedStem": "shad",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "shad.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "2631eb06cdf90b3a2932ffeba8de48e349b2fab3b9b17d70a6f18a76c0371636"
+        },
+        {
+          "member": "shad.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "008ae1ea5f4b1c928aaffa4dcb86a3ee748af6d9396bdbdb528f8da8db0a3b0b"
+        }
+      ],
+      "sourceGroup": "0cc55f490353c617252f2c351489db11a677540cbedffc7adb0fe5fa596ef5aa",
+      "mappingGroup": "5946c34ff0348e5fb5420d85c779fda8c2e0ed7d59dcee00983de640d3bdbb23",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "df399408eb4dfe6c085a80748c08e66976c278b258c167ebfe3d3b04b43d8ab1",
+        "members": [
+          "shad.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-shad-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "flight",
+        "rotors",
+        "transport/unload"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "DLPH",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "DLPH",
+      "resolvedStem": "dlph",
+      "representation": "SHP",
+      "source": [
+        {
+          "member": "dlph.shp",
+          "archive": "ra2.mix/conquer.mix",
+          "sha256": "e59b3a3f6518dd71c7de042ae4becbcdcbe0a6977700f8fb1e719e12b6ea6a0c",
+          "canvas": [
+            74,
+            158
+          ],
+          "totalFrames": 232
+        }
+      ],
+      "sourceGroup": "6189205a3339a1ed3c573467442909f3712467bee784a7c61362e8a7553c3471",
+      "mappingGroup": "e1da858a4a948d55d74e54f443c40e259efb59bdc1856a193b0f12c0e8c9e229",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 2,
+      "producedDensities": [
+        2
+      ],
+      "selectedResource": {
+        "identity": "DLPH",
+        "familyPath": "hd-packs/allied-dlph-family/1/family.json",
+        "hash": "d28e9887517b99c8e79f57069f9db86de284369deed29b5369cbdf0233528e0c",
+        "familyHash": "d28e9887517b99c8e79f57069f9db86de284369deed29b5369cbdf0233528e0c",
+        "members": [
+          {
+            "member": "dlph.shp",
+            "frames": 116,
+            "totalFrames": 232,
+            "canvas": [
+              74,
+              158
+            ],
+            "sourceHash": "e59b3a3f6518dd71c7de042ae4becbcdcbe0a6977700f8fb1e719e12b6ea6a0c",
+            "manifestHash": "6b9f5e683a7fcab80d2b6ced0277cf1225fb2aa07ce48db34c93e3ec26409afd"
+          }
+        ],
+        "projectiles": []
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v1/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "swim",
+        "sonic attack",
+        "concealment/removal"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW"
+    },
+    {
+      "edition": "yr",
+      "id": "TNKD",
+      "houses": [
+        "Germans"
+      ],
+      "image": "TNKD",
+      "resolvedStem": "tnkd",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "tnkd.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "e5eadd502cd64aad8d751622a24156b8d0c06ef533afaf5a6f8e340fea28d94a"
+        },
+        {
+          "member": "tnkd.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        }
+      ],
+      "sourceGroup": "ac52ca9c1871ce59d0a838d4b36ed640d7834abe954dbab24eea82af1731c626",
+      "mappingGroup": "20356eda73b12aab5d1cd905b1c67fb1587db2a2f96fa6d3805e24205f2a2750",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "f52d03a415fbce02814c41ac00bed4e95b5882a0a8ba35620a650c0b13a9b3a5",
+        "members": [
+          "tnkd.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-tnkd-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "aim",
+        "fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "CMIN",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "CMIN",
+      "resolvedStem": "cmin",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "cmin.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "f9ab81a01eb3019e62f0eb2aa68d19b4cb25290b5886b491d020aa9bd2784e9c"
+        },
+        {
+          "member": "cmin.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "83acad38f7755df0a5197992df05b810e274704917279039e0f681d0aa900498"
+        },
+        {
+          "member": "cmon.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "362949de5608d8393f4483c348b2d833eb223d0f5beb998f849f66de416acb2c"
+        },
+        {
+          "member": "cmon.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "810dae94db5ae67cef0866897da63f20d3b8d36ff2b73769abc0f5664ff4a2fe"
+        }
+      ],
+      "sourceGroup": "2ff94cd5900e6f0f29f67d752f99842feead96c63de6105eec735d5545a464be",
+      "mappingGroup": "fb09342c4cf0e60ec3b078df9780d6559b2a379ba37ac1ea4d1e9a85bb94f5d3",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "f55476aa46e1473d2f89d6eb6529997f18ad02cf0cdba277df2a69b2effc0d43",
+        "members": [
+          "cmin.vxl",
+          "cmon.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-cmin-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "mine",
+        "CMON unload",
+        "chrono transit"
+      ],
+      "requiredChildren": [
+        {
+          "id": "CMON",
+          "role": "UnloadingClass",
+          "members": [
+            "cmon.vxl",
+            "cmon.hva"
+          ]
+        }
+      ],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "SREF",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "SREF",
+      "resolvedStem": "sref",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "sref.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "fa3e79d7e457d9368a77998f5de743e9559bbeb11b917a805aa8f4ee76cad979"
+        },
+        {
+          "member": "sref.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "bbc8b8d4cdadc47627fdc955fcc6d30e6844bb736f3b81bfd2f0298b06c39396"
+        },
+        {
+          "member": "sreftur.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "dbdf90aa9002796555450b6aa0ae05cb4926d83a2d6b21a4ed0cbe37e4af057b"
+        },
+        {
+          "member": "sreftur.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "bbc8b8d4cdadc47627fdc955fcc6d30e6844bb736f3b81bfd2f0298b06c39396"
+        },
+        {
+          "member": "sreftur1.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "13eea10c5395da2760c6cd0bf01611dd59116c45cc5321b569415ab3ec433fdf"
+        },
+        {
+          "member": "sreftur1.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "ae4ba7805d0b87dd7b98fa18ba034c36147c51b20cf037a8cf7448dab6a6d25b"
+        },
+        {
+          "member": "sreftur2.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "2f90e8585fc90c15f6ee086f28241382d012f631d7559afbcda1bc8ec08aa8e6"
+        },
+        {
+          "member": "sreftur2.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "ae4ba7805d0b87dd7b98fa18ba034c36147c51b20cf037a8cf7448dab6a6d25b"
+        },
+        {
+          "member": "sreftur3.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "5e3ad05ac7dde18ebc814c4dbd5c3ad3e74e1b48730500bfa53d82cba1d516c5"
+        },
+        {
+          "member": "sreftur3.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "c9e156df427bc5955cf5e99723c965fbd2ffadaef6c0299a4b2d2e51c9723f48"
+        }
+      ],
+      "sourceGroup": "9fe8c1319e606633ef7f4fc54760294cb52f2fb72440d6e46e11dc7e6bbf13bd",
+      "mappingGroup": "ad4cf99b44c2d3be294b5a145406bb20c64b0894a9b721b98a1b6212637951aa",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "39502dbc97d36706ca5571157aa760331628d46585cd7fb0836844e6d127ce09",
+        "members": [
+          "sref.vxl",
+          "sreftur.vxl",
+          "sreftur1.vxl",
+          "sreftur2.vxl",
+          "sreftur3.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-sref-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "aim",
+        "prism fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "MGTK",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "RTNK",
+      "resolvedStem": "rtnk",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "rtnk.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "5ffa424b33fbb14a51743c69a02d9fe0137922e19b474e32402f5aba0f00f985"
+        },
+        {
+          "member": "rtnk.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        }
+      ],
+      "sourceGroup": "b974ae070371b859b696923897462308a5e0f4c79174d91365185386ba448ec6",
+      "mappingGroup": "fb3ec763dce8e58e44af1c9b3cbde9d05cabf89b3ec1a37484f13830a524e781",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "708e5a7181c41efd801572dedfe9e6ccdae561b6d392fbeed95801961b4398f2",
+        "members": [
+          "rtnk.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-mgtk-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "disguise",
+        "reveal",
+        "fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "FV",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "FV",
+      "resolvedStem": "fv",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "fv.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "31e78a7559bbfb19a8e763550d17366e4e386d934c695188cd7336cef68a8f3e"
+        },
+        {
+          "member": "fv.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        },
+        {
+          "member": "fvtur.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "4569b2ae0ddd8ef64f487cc22a35b257bd8a617e75745ff48d6695fbbff8db8a"
+        },
+        {
+          "member": "fvtur.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        },
+        {
+          "member": "fvtur1.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "ffca0c67ae647262cbe39ceba68f8f00c6be182881f48de84f229d99a65598d2"
+        },
+        {
+          "member": "fvtur1.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        },
+        {
+          "member": "fvtur2.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "5f8b5e27adc3859eb78ac1280e89b1e03763ea8866fa3f62d2bc730a33181fef"
+        },
+        {
+          "member": "fvtur2.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        },
+        {
+          "member": "fvtur3.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "3f42cbdf6b82d2717b4cbaff328e066ae19ac15cf008d0b43095142a8d75a887"
+        },
+        {
+          "member": "fvtur3.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        }
+      ],
+      "sourceGroup": "a7567d69ff2a2fe67a4dbaa0056d0f66446409090c5d4ca5244c513492715630",
+      "mappingGroup": "cef9044bb831626362d46e93cc3dc2bd06f47bb6d3040053065502bcb5d044de",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "c952f296bf865a8d33dec2feb7df7a876d4c447909be37551313578cbafedf06",
+        "members": [
+          "fv.vxl",
+          "fvtur.vxl",
+          "fvtur1.vxl",
+          "fvtur2.vxl",
+          "fvtur3.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-fv-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "four native turret forms",
+        "repair",
+        "passenger evacuation"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "BFRT",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "BFRT",
+      "resolvedStem": "bfrt",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "bfrt.vxl",
+          "archive": "ra2md.mix/localmd.mix",
+          "sha256": "8fccb3c58c4c4e391dc438d8c75e97e5fc4dc0d16b92582bbc14ba9eaa37493b"
+        },
+        {
+          "member": "bfrt.hva",
+          "archive": "ra2md.mix/localmd.mix",
+          "sha256": "5ce5108e541e25fa34f2d447f7ff3fd5351f8ebb0802dd45ccadb35ac159ab0f"
+        }
+      ],
+      "sourceGroup": "bd80509a29721539e8b34ff15affa924a881cc7d7e0151e1e3563bc2ddaecc8f",
+      "mappingGroup": "1140969bb5b460ad3a087e6e30c2df16047a97ddfe9d30e0eccd6b1aebdf6892",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "16cfa674149c5112af505d1db689954391473586168aa3820ab81177f4145ec0",
+        "members": [
+          "bfrt.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-bfrt-vxl/3/manifest.json",
+        "edition": "yr"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "transport",
+        "open-topped fire",
+        "evacuation"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "ROBO",
+      "houses": [
+        "Americans",
+        "Alliance",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "ROBO",
+      "resolvedStem": "robo",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "robo.vxl",
+          "archive": "ra2md.mix/localmd.mix",
+          "sha256": "1bb13bf3223c4765b1d66b2898a9a28485b8e656c4fcd2fdd0fa954285e6b4b5"
+        },
+        {
+          "member": "robo.hva",
+          "archive": "ra2md.mix/localmd.mix",
+          "sha256": "5cdbd478ec4396c99bfe470785dea9a7cfe9ecf61fa93249045ddb5d273bd221"
+        },
+        {
+          "member": "robotur.vxl",
+          "archive": "ra2md.mix/localmd.mix",
+          "sha256": "291ce09ca90f977c565133fa46c66adf30283bf9ca0b36af946e265bb96c04f2"
+        },
+        {
+          "member": "robotur.hva",
+          "archive": "ra2md.mix/localmd.mix",
+          "sha256": "5cdbd478ec4396c99bfe470785dea9a7cfe9ecf61fa93249045ddb5d273bd221"
+        }
+      ],
+      "sourceGroup": "9f7e9d8670f24c1fd7393b3b4528a7fe6e96f8e0d1274438ca179cdc056d8704",
+      "mappingGroup": "85da37bf26d02321c0eba18aa0c282f6207e789b6614400306669c1ba2803d8e",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "488300846531bbb48d01f6dcdf670633a5b768190086da05d729b3eaacee6a74",
+        "members": [
+          "robo.vxl",
+          "robotur.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-robo-vxl/3/manifest.json",
+        "edition": "yr"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-ground-v2/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "power loss/recovery",
+        "move",
+        "fire"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "ORCA",
+      "houses": [
+        "Americans",
+        "French",
+        "Germans",
+        "British"
+      ],
+      "image": "FALC",
+      "resolvedStem": "falc",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "falc.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "1594b9766bf624bffc75887fa5cef70029b63882cf057572a31e19848c1f1d1c"
+        },
+        {
+          "member": "falc.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "b73a3390ffcd11c0755fc23135b12b0df8203444cd1dbb04211bdcab0667cc4e"
+        }
+      ],
+      "sourceGroup": "ad95d0fbf08dd82ea1550aca7cc34155936632cdbb5727b544f66b87dcd93e65",
+      "mappingGroup": "5c6078d623f92ae695f1f913b37811c24fc97f8fa94b9228451b60802c587a33",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "e1982f5ad700c5233326dd034356d7cc6230a72bd6aa311e9f034160ccdfbe6a",
+        "members": [
+          "falc.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-orca-vxl/4/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v3/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "takeoff",
+        "attack",
+        "dock/reload"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    },
+    {
+      "edition": "yr",
+      "id": "BEAG",
+      "houses": [
+        "Alliance"
+      ],
+      "image": "BEAG",
+      "resolvedStem": "beag",
+      "representation": "VXL/HVA",
+      "source": [
+        {
+          "member": "beag.vxl",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "a061f70c5e8381d6d203db83ec035a3adcceef7432ee7ba011658cf61982c320"
+        },
+        {
+          "member": "beag.hva",
+          "archive": "ra2.mix/local.mix",
+          "sha256": "d297d7ec3ed352ca52286a4565d2ac5960904810369b20549cc376beaf2adf9c"
+        }
+      ],
+      "sourceGroup": "97e90f1f1644304aabe27c3136addd31ab2c6d6f0ccefcaae13f69784e73e7ed",
+      "mappingGroup": "00e605a4ee53562819c62dd699f110c3d9f7a0d4b541044835d92a774b9cff42",
+      "acceptedReuseCandidate": null,
+      "reuseStatus": "NEW_ART_REQUIRED",
+      "plannedDensity": 4,
+      "producedDensities": [
+        2,
+        4
+      ],
+      "selectedResource": {
+        "hash": "bcb62c19b051f14eb2a1023c51f76e850450d80fca35b3748340c7d2aa2a5902",
+        "members": [
+          "beag.vxl"
+        ],
+        "density": 4,
+        "path": "hd-packs/allied-beag-vxl/3/manifest.json"
+      },
+      "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+      "nativeRuntime": {
+        "status": "PASS_NATIVE_SELECTED_ACTIONS",
+        "edition": "yr",
+        "evidence": ".artifacts/allied-units/native-air-naval-v3/report.json",
+        "crossEditionChecks": ".artifacts/allied-units/native-combined-v1/report.json"
+      },
+      "complete": true,
+      "theaters": [
+        {
+          "theater": "TEMPERATE",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "SNOW",
+          "status": "NATIVE_LOOKUP_VERIFIED_AND_BATCH_MIXED_SMOKE_PASSED"
+        },
+        {
+          "theater": "URBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "NEWURBAN",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "DESERT",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        },
+        {
+          "theater": "LUNAR",
+          "status": "NATIVE_LOOKUP_AND_PALETTE_VERIFIED_NO_ADDITIONAL_RUNTIME_CLAIM"
+        }
+      ],
+      "requiredActions": [
+        "takeoff",
+        "attack",
+        "dock/reload"
+      ],
+      "requiredChildren": [],
+      "requiredAttachments": [],
+      "finalAcceptance": "PENDING_USER_REVIEW",
+      "feedbackReview": ".artifacts/allied-units/Allied-Units-Feedback-Review.html"
+    }
+  ],
+  "excluded": [
+    {
+      "edition": "ra2",
+      "id": "E2",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "SHK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "GHOST",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "YURI",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "IVAN",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "DESO",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "DOG",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIV1",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIV2",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIV3",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CTECH",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "WEEDGUY",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIVAN",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "YURIPR",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "COW",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "ALL",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "FLAKT",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "TERROR",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "SENGINEER",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "VLADIMIR",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "PENTGEN",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "PRES",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "SSRV",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIVA",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIVB",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIVC",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIVBBP",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIVBFM",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIVBF",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIVBTM",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIVSFM",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIVSF",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CIVSTM",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "POLARB",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "JOSH",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "HARV",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "APOC",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "HTNK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "SAPC",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "CAR",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "BUS",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "WINI",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "PICK",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "HORV",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "TRUCKA",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "TRUCKB",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "V3",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "ZEP",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "DRON",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "HTK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "SUB",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "DRED",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "SQD",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "SMCV",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "HOWI",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "TTNK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "HIND",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "LTNK",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CMON",
+      "reason": "INCLUDED_PARENT_DEPENDENCY"
+    },
+    {
+      "edition": "ra2",
+      "id": "XCOMET",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "HYD",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "DeathDummy",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "VLAD",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "DTRUCK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "ra2",
+      "id": "PROPA",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CONA",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "COP",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "EUROC",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "LIMO",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "STANG",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "SUVB",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "SUVW",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "TAXI",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "PTRUCK",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CRUISE",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "TUG",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CDEST",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "HORNET",
+      "reason": "INCLUDED_PARENT_DEPENDENCY"
+    },
+    {
+      "edition": "ra2",
+      "id": "V3ROCKET",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "ASW",
+      "reason": "INCLUDED_PARENT_DEPENDENCY"
+    },
+    {
+      "edition": "ra2",
+      "id": "DMISL",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "PDPLANE",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "id": "CARGOPLANE",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "ra2",
+      "category": "AircraftTypes",
+      "id": "APACHE",
+      "reason": "REGISTRY_ENTRY_WITHOUT_RULES_SECTION"
+    },
+    {
+      "edition": "yr",
+      "id": "YURI",
+      "reason": "UNAVAILABLE_NATIVE_ALLIED_FACTORY_OR_PREREQUISITE"
+    },
+    {
+      "edition": "yr",
+      "id": "E2",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "SHK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "IVAN",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "DESO",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "DOG",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "CIV1",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIV2",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIV3",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CTECH",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "WEEDGUY",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "YURIPR",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "COW",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "ALL",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "FLAKT",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "TERROR",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "SENGINEER",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "VLADIMIR",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "PENTGEN",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "PRES",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "SSRV",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVA",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVB",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVC",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVBBP",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVBFM",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVBF",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVBTM",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVSFM",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVSF",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVSTM",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "POLARB",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "JOSH",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "YENGINEER",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "INIT",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "BORIS",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "BRUTE",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "VIRUS",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "CLNT",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "ARND",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "STLN",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CAML",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "EINS",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "MUMY",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "RMNV",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "LUNR",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "DNOA",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "DNOB",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "SLAV",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "WWLF",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "YDOG",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "YADOG",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "HARV",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "APOC",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "HTNK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "SAPC",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "CAR",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "BUS",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "WINI",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "PICK",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "HORV",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "TRUCKA",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "TRUCKB",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "V3",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "ZEP",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "DRON",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "HTK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "SUB",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "DRED",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "SQD",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "SMCV",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "HOWI",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "TTNK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "HIND",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "LTNK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "CMON",
+      "reason": "INCLUDED_PARENT_DEPENDENCY"
+    },
+    {
+      "edition": "yr",
+      "id": "XCOMET",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "HYD",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "DeathDummy",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "VLAD",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "DTRUCK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "PROPA",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CONA",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "COP",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "EUROC",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "LIMO",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "STANG",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "SUVB",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "SUVW",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "TAXI",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "PTRUCK",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CRUISE",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "TUG",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CDEST",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "YHVR",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "PCV",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "SMIN",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "SMON",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "YCAB",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "YTNK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "TELE",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "CAOS",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "DDBX",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "BCAB",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "BSUB",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "SCHP",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "JEEP",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "MIND",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "DISK",
+      "reason": "NO_NATIVE_ALLIED_HOUSE_ACCESS"
+    },
+    {
+      "edition": "yr",
+      "id": "UTNK",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "SCHD",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "DOLY",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CBLC",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "FTRK",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "AMBU",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CIVP",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "HORNET",
+      "reason": "INCLUDED_PARENT_DEPENDENCY"
+    },
+    {
+      "edition": "yr",
+      "id": "V3ROCKET",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "ASW",
+      "reason": "INCLUDED_PARENT_DEPENDENCY"
+    },
+    {
+      "edition": "yr",
+      "id": "DMISL",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "PDPLANE",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CARGOPLANE",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "BPLN",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "SPYP",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "id": "CMISL",
+      "reason": "DISABLED_OR_NONPRODUCTION"
+    },
+    {
+      "edition": "yr",
+      "category": "VehicleTypes",
+      "id": "YDUM",
+      "reason": "REGISTRY_ENTRY_WITHOUT_RULES_SECTION"
+    },
+    {
+      "edition": "yr",
+      "category": "AircraftTypes",
+      "id": "APACHE",
+      "reason": "REGISTRY_ENTRY_WITHOUT_RULES_SECTION"
+    }
+  ],
+  "feedbackCorrections": {
+    "status": "PASS_INCREMENTAL_FEEDBACK_RUNTIME_FINAL_USER_ACCEPTANCE_PENDING",
+    "baseline": "8bc3c22",
+    "notes": "docs/allied-units-hd-feedback.md",
+    "selection": ".artifacts/allied-units/selected-candidates-v10.json",
+    "review": ".artifacts/allied-units/Allied-Units-Feedback-Review.html",
+    "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-units/feedback-package-v1/RA2-HD-Allied-B-Corrections/Red Alert 2 HD Offline Trainer R1.app",
+    "packageReceipt": ".artifacts/allied-units/feedback-package-v1/package-receipt.json",
+    "evidence": [
+      ".artifacts/allied-units/feedback-air-v1/report.json",
+      ".artifacts/allied-units/feedback-naval-v1/report.json",
+      ".artifacts/allied-units/feedback-parking-v1/report.json",
+      ".artifacts/allied-units/feedback-quality-v1/report.json",
+      ".artifacts/allied-units/feedback-registration-v1.json",
+      ".artifacts/allied-units/feedback-preservation-v1.json"
+    ],
+    "newVxlDensity": 4,
+    "shpDensity": 2,
+    "artworkRedrawn": false,
+    "sourceAlphaChanged": false,
+    "priorAcceptanceNotRepeated": true
+  }
+}

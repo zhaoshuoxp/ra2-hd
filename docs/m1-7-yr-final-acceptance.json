@@ -1,0 +1,43 @@
+{
+  "schema": "m1-7-yr-final-acceptance-v1",
+  "status": "M1_7_YR_ACCEPTED_AND_INTEGRATED_INTO_MAIN",
+  "decision": "The user explicitly accepted the complete review without exceptions and requested main integration while preserving M1.8 fixes.",
+  "acceptedFamilies": [
+    "BORIS",
+    "SCHP",
+    "CCOMAND",
+    "PTROOP"
+  ],
+  "dependencies": {
+    "BORIS": [
+      "BPLN"
+    ],
+    "SCHP": [
+      "SCHD",
+      "SCHDTUR",
+      "SCHPDEPL",
+      "main and tail rotors"
+    ]
+  },
+  "coverage": {
+    "yrSovietRoots": 28,
+    "acceptedHd": 27,
+    "acceptedOriginal": [
+      "SQD",
+      "SQDG"
+    ]
+  },
+  "review": {
+    "path": "/Users/Aone/RA2remaster/ra2-hd-units-yr/.artifacts/m1-7-yr/delivery-v2/RA2-HD-YR-Soviet-Units-R1-Mac-Test/YR-Soviet-Units-Full-Review.html",
+    "sha256": "01879e02b9791ee57d37c1d9e8e71f9088eb9b92f3ef7de1eca9ff1bfe4da7e3",
+    "status": "PASS_OFFLINE_COMPLETE_FAMILY_EMBEDDED_REVIEW"
+  },
+  "zip": "/Users/Aone/RA2remaster/ra2-hd-units-yr/.artifacts/m1-7-yr/delivery-v2/RA2-HD-YR-Soviet-Units-R1.zip",
+  "zipSha256": "2b7f6959142967a4b706d3237f20beebe700b4796c636676ace678196a9a6cfe",
+  "runtimeSourceHead": "1da6c75646e497086af5ceea66bf673aa33f2878",
+  "resourceInventorySha256AtReview": "9281328ee608617554db7fbc4b2cfb0fbea70af0f09b7a88b00afb6805cfff94",
+  "limits": "Acceptance does not expand Windows, campaigns, natural-match victory or other previously untested scope. RA2 YURIPR guarded Original is preserved.",
+  "mainPredecessor": "f508f430234c191c15583ecaf7dd822318e6e744",
+  "continuation": "Keep corrections and integration feedback in this task.",
+  "mainIntegration": "docs/m1-7-yr-main-integration.json"
+}

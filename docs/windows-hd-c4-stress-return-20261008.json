@@ -1,0 +1,2828 @@
+{
+  "status": "C4_WINDOWS_STRESS_VALID_NORMAL_CAPTURE_WITH_RESIDUAL_STALLS",
+  "frozenSource": "f850b5cb44b0f6a8a415ff0636705bd5566901ec",
+  "returnValidation": {
+    "status": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+    "archive": "/Users/Aone/Desktop/WINHD-20261008-D38F136-C4-RETURN-2026-10-09T03-50-28-663Z.zip",
+    "bytes": 79912402,
+    "sha256": "e3217e911c3be81db6ee5791482ac5f64a6718560bba23377cedd935be58dce0",
+    "files": 21,
+    "runs": 2,
+    "diagnosticId": "WINHD-20261008-D38F136-C4",
+    "diagnosticCommit": "f850b5cb44b0f6a8a415ff0636705bd5566901ec",
+    "manifestSha256": "bb7ec160e2a14e57f3d2b705c6d81a34d50d0eee1c1bc887d6244574a97fa0ac",
+    "extractedDirectory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/returns/2026-10-09T03-50-28-663Z-c4",
+    "launcherPolicy": "Inspected as data only; no returned scripts executed.",
+    "launchers": [
+      {
+        "file": "Export-Reports.cmd",
+        "status": "IDENTICAL",
+        "sha256": "25e23098719b40880c953b1ca32ce71489741e5840aae605e196fd858c64b0fc"
+      },
+      {
+        "file": "Launch-Diagnostics.cmd",
+        "status": "IDENTICAL",
+        "sha256": "7a5ef74807b27b272d5749209c834afb271d83eda2cec61d6bbcc26c131477fe"
+      },
+      {
+        "file": "Run-Control.cmd",
+        "status": "IDENTICAL",
+        "sha256": "69705b9577c1a5f9cceed33612b407d9110317d9a9eab76ec570507da20255db"
+      },
+      {
+        "file": "Verify-Kit.cmd",
+        "status": "IDENTICAL",
+        "sha256": "812399b452707c4a00757b168629eaedd761f5ec57d4584cd43dd3806d5d9722"
+      }
+    ]
+  },
+  "targetVerification": {
+    "schemaVersion": 1,
+    "diagnosticId": "WINHD-20261008-D38F136-C4",
+    "manifestSha256": "bb7ec160e2a14e57f3d2b705c6d81a34d50d0eee1c1bc887d6244574a97fa0ac",
+    "checked": 8089,
+    "failures": [],
+    "status": "PASS",
+    "verifiedAt": "2026-10-09T03:47:41.037Z"
+  },
+  "resourceIdentity": {
+    "worldAndUIFiles": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+  },
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCPU": 128,
+    "ui": 16
+  },
+  "runDirectory": "2026-10-09T03-48-15-550Z-stress-4x-none",
+  "runAnalysis": {
+    "directory": "2026-10-09T03-48-15-550Z-stress-4x-none",
+    "status": "CAPTURED",
+    "config": {
+      "mode": "4x",
+      "scene": "stress",
+      "control": "none",
+      "seconds": 15,
+      "trace": false,
+      "manual": false,
+      "experimentId": "WINHD-20261008-D38F136-C4-stress-4x-none",
+      "timestamp": 1700000000000,
+      "edition": "yr",
+      "shadows": 3,
+      "renderResolution": "native",
+      "contentSize": [
+        1707,
+        1067
+      ],
+      "displayMode": "native-fullscreen",
+      "presentationHeight": 900
+    },
+    "machine": {
+      "platform": "win32",
+      "arch": "x64",
+      "cpu": {
+        "model": "AMD Ryzen 7 5800H with Radeon Graphics         ",
+        "logicalProcessors": 16
+      },
+      "memoryBytes": 17024741376,
+      "onBattery": false,
+      "displays": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1707,
+            "height": 1067
+          },
+          "workArea": {
+            "x": 0,
+            "y": 0,
+            "width": 1707,
+            "height": 1019
+          },
+          "size": {
+            "width": 1707,
+            "height": 1067
+          },
+          "scaleFactor": 1.5,
+          "rotation": 0,
+          "displayFrequency": 165,
+          "internal": true,
+          "colorDepth": 24
+        }
+      ],
+      "gpuRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Laptop GPU (0x000024DD) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.9597)",
+      "runtime": {
+        "node": "24.21.0",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.8",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.2",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "149",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "0.0.0",
+        "simdjson": "4.6.7",
+        "simdutf": "7.7.0",
+        "sqlite": "3.53.4",
+        "tz": "2025c",
+        "undici": "7.29.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "15.2.124.19-electron.0",
+        "zlib": "1.3.2.1-motley",
+        "zstd": "1.6.0",
+        "electron": "44.4.0",
+        "chrome": "152.0.7977.78"
+      },
+      "gpuFeatureStatus": {
+        "2d_canvas": "enabled",
+        "direct_rendering_display_compositor": "disabled_off_ok",
+        "gpu_compositing": "enabled",
+        "multiple_raster_threads": "enabled_on",
+        "opengl": "enabled_on",
+        "rasterization": "enabled",
+        "raw_draw": "disabled_off_ok",
+        "skia_graphite": "disabled_off",
+        "trees_in_viz": "disabled_off",
+        "video_decode": "enabled",
+        "video_encode": "enabled",
+        "webgl": "enabled",
+        "webgpu": "enabled",
+        "webnn": "disabled_off"
+      }
+    },
+    "errors": [],
+    "phases": [
+      {
+        "label": "fresh-process-first-use",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "instrumented": false,
+        "elapsedMs": 15337.539999999106,
+        "loadingMs": 10244.380000002682,
+        "nativeTicks": 971,
+        "summary": {
+          "frameIntervals": {
+            "n": 999,
+            "median": 12.1349999999984,
+            "p95": 24.215000000000146,
+            "p99": 30.299999999999272,
+            "maximum": 406.0849999999991,
+            "above33ms": 7,
+            "above50ms": 4,
+            "above100ms": 4
+          },
+          "simulationCpuMs": {
+            "n": 1000,
+            "median": 1,
+            "p95": 7.340000003576279,
+            "p99": 12.174999997019768,
+            "maximum": 291.02000000327826,
+            "above33ms": 1,
+            "above50ms": 1,
+            "above100ms": 1
+          },
+          "renderUpdateCpuMs": {
+            "n": 1000,
+            "median": 5.255000002682209,
+            "p95": 7.410000003874302,
+            "p99": 9.800000004470348,
+            "maximum": 85.00500000268221,
+            "above33ms": 2,
+            "above50ms": 2,
+            "above100ms": 0
+          },
+          "renderSubmissionCpuMs": {
+            "n": 1000,
+            "median": 6.66499999910593,
+            "p95": 7.465000003576279,
+            "p99": 10.544999994337559,
+            "maximum": 312.1599999964237,
+            "above33ms": 2,
+            "above50ms": 2,
+            "above100ms": 2
+          },
+          "drawCalls": {
+            "n": 1000,
+            "median": 755,
+            "p95": 770,
+            "p99": 770,
+            "maximum": 774
+          },
+          "triangles": {
+            "n": 1000,
+            "median": 1625211,
+            "p95": 1625375,
+            "p99": 1850778,
+            "maximum": 1890886
+          }
+        },
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "logicalSize": [
+          1439.8313027179006,
+          900
+        ],
+        "players": 8,
+        "bots": 7,
+        "nodes": 6217,
+        "visibleNodes": 4995,
+        "programs": 48,
+        "threeMemory": {
+          "geometries": 582,
+          "textures": 600
+        },
+        "actualBindingCounts": {
+          "vxl": 31,
+          "shp": 1907
+        },
+        "focusedAtEnd": true,
+        "focusEvents": [],
+        "visibilityEvents": [],
+        "resizeEvents": []
+      },
+      {
+        "label": "warmed-steady",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "instrumented": false,
+        "elapsedMs": 15006.240000002086,
+        "loadingMs": 1.1849999949336052,
+        "nativeTicks": 991,
+        "summary": {
+          "frameIntervals": {
+            "n": 887,
+            "median": 18.154999999998836,
+            "p95": 24.260000000002037,
+            "p99": 42.424999999995634,
+            "maximum": 187.8249999999971,
+            "above33ms": 17,
+            "above50ms": 7,
+            "above100ms": 4
+          },
+          "simulationCpuMs": {
+            "n": 888,
+            "median": 1.1150000020861626,
+            "p95": 5.8599999994039536,
+            "p99": 13.965000003576279,
+            "maximum": 21.99499999731779,
+            "above33ms": 0,
+            "above50ms": 0,
+            "above100ms": 0
+          },
+          "renderUpdateCpuMs": {
+            "n": 888,
+            "median": 5.725000001490116,
+            "p95": 7.930000007152557,
+            "p99": 10.640000000596046,
+            "maximum": 28.87000000476837,
+            "above33ms": 0,
+            "above50ms": 0,
+            "above100ms": 0
+          },
+          "renderSubmissionCpuMs": {
+            "n": 888,
+            "median": 7.420000001788139,
+            "p95": 9.099999994039536,
+            "p99": 19.29500000178814,
+            "maximum": 150.17999999970198,
+            "above33ms": 3,
+            "above50ms": 3,
+            "above100ms": 1
+          },
+          "drawCalls": {
+            "n": 888,
+            "median": 783,
+            "p95": 790,
+            "p99": 792,
+            "maximum": 794
+          },
+          "triangles": {
+            "n": 888,
+            "median": 1646584,
+            "p95": 1686019,
+            "p99": 1686062,
+            "maximum": 1686086
+          }
+        },
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "logicalSize": [
+          1439.8313027179006,
+          900
+        ],
+        "players": 8,
+        "bots": 7,
+        "nodes": 6394,
+        "visibleNodes": 5079,
+        "programs": 48,
+        "threeMemory": {
+          "geometries": 590,
+          "textures": 734
+        },
+        "actualBindingCounts": {
+          "vxl": 30,
+          "shp": 1918
+        },
+        "focusedAtEnd": true,
+        "focusEvents": [],
+        "visibilityEvents": [],
+        "resizeEvents": []
+      },
+      {
+        "label": "same-process-reentry-first-use",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "instrumented": false,
+        "elapsedMs": 15245.435000002384,
+        "loadingMs": 8673.5,
+        "nativeTicks": 996,
+        "summary": {
+          "frameIntervals": {
+            "n": 996,
+            "median": 12.139999999999418,
+            "p95": 24.224999999998545,
+            "p99": 30.349999999998545,
+            "maximum": 272.72000000000116,
+            "above33ms": 9,
+            "above50ms": 3,
+            "above100ms": 2
+          },
+          "simulationCpuMs": {
+            "n": 998,
+            "median": 0.7849999964237213,
+            "p95": 6.924999997019768,
+            "p99": 11.524999998509884,
+            "maximum": 15.95499999821186,
+            "above33ms": 0,
+            "above50ms": 0,
+            "above100ms": 0
+          },
+          "renderUpdateCpuMs": {
+            "n": 998,
+            "median": 5.730000004172325,
+            "p95": 8.28999999910593,
+            "p99": 10.20499999821186,
+            "maximum": 80.89999999850988,
+            "above33ms": 2,
+            "above50ms": 1,
+            "above100ms": 0
+          },
+          "renderSubmissionCpuMs": {
+            "n": 998,
+            "median": 6.965000003576279,
+            "p95": 7.865000002086163,
+            "p99": 11.595000006258488,
+            "maximum": 180.21000000089407,
+            "above33ms": 3,
+            "above50ms": 3,
+            "above100ms": 1
+          },
+          "drawCalls": {
+            "n": 998,
+            "median": 755,
+            "p95": 770,
+            "p99": 778,
+            "maximum": 799
+          },
+          "triangles": {
+            "n": 998,
+            "median": 1625211,
+            "p95": 1625375,
+            "p99": 1890880,
+            "maximum": 1890904
+          }
+        },
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "logicalSize": [
+          1439.8313027179006,
+          900
+        ],
+        "players": 8,
+        "bots": 7,
+        "nodes": 6217,
+        "visibleNodes": 4995,
+        "programs": 48,
+        "threeMemory": {
+          "geometries": 581,
+          "textures": 629
+        },
+        "actualBindingCounts": {
+          "vxl": 31,
+          "shp": 1907
+        },
+        "focusedAtEnd": true,
+        "focusEvents": [],
+        "visibilityEvents": [],
+        "resizeEvents": []
+      },
+      {
+        "label": "same-process-reentry-warmed",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "instrumented": false,
+        "elapsedMs": 15014.585000000894,
+        "loadingMs": 0.8350000008940697,
+        "nativeTicks": 998,
+        "summary": {
+          "frameIntervals": {
+            "n": 896,
+            "median": 18.160000000003492,
+            "p95": 24.25,
+            "p99": 42.41500000000815,
+            "maximum": 193.9649999999965,
+            "above33ms": 12,
+            "above50ms": 5,
+            "above100ms": 1
+          },
+          "simulationCpuMs": {
+            "n": 897,
+            "median": 0.8650000020861626,
+            "p95": 5.304999999701977,
+            "p99": 13.074999995529652,
+            "maximum": 22.219999998807907,
+            "above33ms": 0,
+            "above50ms": 0,
+            "above100ms": 0
+          },
+          "renderUpdateCpuMs": {
+            "n": 897,
+            "median": 6.170000001788139,
+            "p95": 8.130000002682209,
+            "p99": 10.440000005066395,
+            "maximum": 15.629999995231628,
+            "above33ms": 0,
+            "above50ms": 0,
+            "above100ms": 0
+          },
+          "renderSubmissionCpuMs": {
+            "n": 897,
+            "median": 7.53999999910593,
+            "p95": 9.759999997913837,
+            "p99": 19.125,
+            "maximum": 56.96999999880791,
+            "above33ms": 4,
+            "above50ms": 1,
+            "above100ms": 0
+          },
+          "drawCalls": {
+            "n": 897,
+            "median": 784,
+            "p95": 791,
+            "p99": 794,
+            "maximum": 798
+          },
+          "triangles": {
+            "n": 897,
+            "median": 1646592,
+            "p95": 1686026,
+            "p99": 1686066,
+            "maximum": 1686086
+          }
+        },
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "logicalSize": [
+          1439.8313027179006,
+          900
+        ],
+        "players": 8,
+        "bots": 7,
+        "nodes": 6426,
+        "visibleNodes": 5101,
+        "programs": 50,
+        "threeMemory": {
+          "geometries": 600,
+          "textures": 736
+        },
+        "actualBindingCounts": {
+          "vxl": 31,
+          "shp": 1917
+        },
+        "focusedAtEnd": true,
+        "focusEvents": [],
+        "visibilityEvents": [],
+        "resizeEvents": []
+      }
+    ],
+    "trace": {
+      "status": null,
+      "rawTracePresent": false
+    }
+  },
+  "priorSmallRun": {
+    "status": "BYTE_IDENTICAL_REEXPORT_NOT_AN_INDEPENDENT_SAMPLE",
+    "directory": "2026-10-09T03-25-25-085Z-small-4x-none",
+    "files": [
+      {
+        "file": "errors.json",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "file": "machine.json",
+        "sha256": "87d6a83cf8a8641d47b2b76786a23dbe39ba5be538cb2e524123689d689bc23c"
+      },
+      {
+        "file": "os.json",
+        "sha256": "b77b5025dad2e901ac212d3d7108b2ba78b59251a73c8eef8de34100d75253a3"
+      },
+      {
+        "file": "phases.json",
+        "sha256": "3b9c6f28d3c9ddca3c8a81798e6cc86907720fb9493b8e2b20ab67ca34a6344d"
+      },
+      {
+        "file": "process-metrics.json",
+        "sha256": "ddc496b49440327caa6a89e6b9347c12f6723eb764d6ec9cf56479f0c5e55593"
+      },
+      {
+        "file": "run.json",
+        "sha256": "34992358c5b60d48aa033ced1de4360c7f1fcdce1d91c2eb6d065b2e047741fe"
+      },
+      {
+        "file": "summary.json",
+        "sha256": "5bf82ffdce2bad6d304d3415840b9fa6e25db30a14ae3e423f720b5755d89937"
+      }
+    ]
+  },
+  "frameCorrelation": [
+    {
+      "label": "fresh-process-first-use",
+      "elapsedMs": 15337.539999999106,
+      "loadingToFirstGameFrameMs": 10244.380000002682,
+      "tickStart": 0,
+      "tickEnd": 971,
+      "summary": {
+        "frameIntervals": {
+          "n": 999,
+          "median": 12.1349999999984,
+          "p95": 24.215000000000146,
+          "p99": 30.299999999999272,
+          "maximum": 406.0849999999991,
+          "above33ms": 7,
+          "above50ms": 4,
+          "above100ms": 4
+        },
+        "simulationCpuMs": {
+          "n": 1000,
+          "median": 1,
+          "p95": 7.340000003576279,
+          "p99": 12.174999997019768,
+          "maximum": 291.02000000327826,
+          "above33ms": 1,
+          "above50ms": 1,
+          "above100ms": 1
+        },
+        "renderUpdateCpuMs": {
+          "n": 1000,
+          "median": 5.255000002682209,
+          "p95": 7.410000003874302,
+          "p99": 9.800000004470348,
+          "maximum": 85.00500000268221,
+          "above33ms": 2,
+          "above50ms": 2,
+          "above100ms": 0
+        },
+        "renderSubmissionCpuMs": {
+          "n": 1000,
+          "median": 6.66499999910593,
+          "p95": 7.465000003576279,
+          "p99": 10.544999994337559,
+          "maximum": 312.1599999964237,
+          "above33ms": 2,
+          "above50ms": 2,
+          "above100ms": 2
+        },
+        "drawCalls": {
+          "n": 1000,
+          "median": 755,
+          "p95": 770,
+          "p99": 770,
+          "maximum": 774
+        },
+        "triangles": {
+          "n": 1000,
+          "median": 1625211,
+          "p95": 1625375,
+          "p99": 1850778,
+          "maximum": 1890886
+        }
+      },
+      "firstUseProgramCount": 42,
+      "endProgramCount": 48,
+      "longIntervalsAbove50ms": [
+        {
+          "intervalRowIndex": 1,
+          "relativeToFirstGameFrameMs": 313.7100000014907,
+          "intervalMs": 387.880000000001,
+          "precedingFrame": {
+            "rowIndex": 0,
+            "relativeToFirstGameFrameMs": -74.16999999851032,
+            "row": {
+              "rafTimestampMs": 14094.98,
+              "frameIntervalMs": null,
+              "simulationCpuMs": 0,
+              "simulationCalls": 0,
+              "renderUpdateCpuMs": 65.83500000089407,
+              "renderSubmissionCpuMs": 249.60000000149012,
+              "drawCalls": 678,
+              "triangles": 1850778
+            },
+            "followingRafIntervalMs": 387.880000000001
+          },
+          "previousMeasuredCpuTotalMs": 315.4350000023842,
+          "intervalMinusPreviousMeasuredCpuMs": 72.44499999761683
+        },
+        {
+          "intervalRowIndex": 2,
+          "relativeToFirstGameFrameMs": 647.01000000149,
+          "intervalMs": 333.2999999999993,
+          "precedingFrame": {
+            "rowIndex": 1,
+            "relativeToFirstGameFrameMs": 313.7100000014907,
+            "row": {
+              "rafTimestampMs": 14482.86,
+              "frameIntervalMs": 387.880000000001,
+              "simulationCpuMs": 291.02000000327826,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 23.095000006258488,
+              "renderSubmissionCpuMs": 16.424999997019768,
+              "drawCalls": 679,
+              "triangles": 1890778
+            },
+            "followingRafIntervalMs": 333.2999999999993
+          },
+          "previousMeasuredCpuTotalMs": 330.5400000065565,
+          "intervalMinusPreviousMeasuredCpuMs": 2.7599999934427615
+        },
+        {
+          "intervalRowIndex": 3,
+          "relativeToFirstGameFrameMs": 750.0500000014908,
+          "intervalMs": 103.04000000000087,
+          "precedingFrame": {
+            "rowIndex": 2,
+            "relativeToFirstGameFrameMs": 647.01000000149,
+            "row": {
+              "rafTimestampMs": 14816.16,
+              "frameIntervalMs": 333.2999999999993,
+              "simulationCpuMs": 8.029999986290932,
+              "simulationCalls": 12,
+              "renderUpdateCpuMs": 9.159999996423721,
+              "renderSubmissionCpuMs": 9.554999999701977,
+              "drawCalls": 679,
+              "triangles": 1890808
+            },
+            "followingRafIntervalMs": 103.04000000000087
+          },
+          "previousMeasuredCpuTotalMs": 26.74499998241663,
+          "intervalMinusPreviousMeasuredCpuMs": 76.29500001758424
+        },
+        {
+          "intervalRowIndex": 12,
+          "relativeToFirstGameFrameMs": 1325.84000000149,
+          "intervalMs": 406.0849999999991,
+          "precedingFrame": {
+            "rowIndex": 11,
+            "relativeToFirstGameFrameMs": 919.7550000014908,
+            "row": {
+              "rafTimestampMs": 15088.905,
+              "frameIntervalMs": 12.125,
+              "simulationCpuMs": 8.935000002384186,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 85.00500000268221,
+              "renderSubmissionCpuMs": 312.1599999964237,
+              "drawCalls": 726,
+              "triangles": 1625119
+            },
+            "followingRafIntervalMs": 406.0849999999991
+          },
+          "previousMeasuredCpuTotalMs": 406.1000000014901,
+          "intervalMinusPreviousMeasuredCpuMs": -0.015000001490989234
+        }
+      ],
+      "largestSubmissions": [
+        {
+          "rowIndex": 11,
+          "relativeToFirstGameFrameMs": 919.7550000014908,
+          "row": {
+            "rafTimestampMs": 15088.905,
+            "frameIntervalMs": 12.125,
+            "simulationCpuMs": 8.935000002384186,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 85.00500000268221,
+            "renderSubmissionCpuMs": 312.1599999964237,
+            "drawCalls": 726,
+            "triangles": 1625119
+          },
+          "followingRafIntervalMs": 406.0849999999991
+        },
+        {
+          "rowIndex": 0,
+          "relativeToFirstGameFrameMs": -74.16999999851032,
+          "row": {
+            "rafTimestampMs": 14094.98,
+            "frameIntervalMs": null,
+            "simulationCpuMs": 0,
+            "simulationCalls": 0,
+            "renderUpdateCpuMs": 65.83500000089407,
+            "renderSubmissionCpuMs": 249.60000000149012,
+            "drawCalls": 678,
+            "triangles": 1850778
+          },
+          "followingRafIntervalMs": 387.880000000001
+        },
+        {
+          "rowIndex": 6,
+          "relativeToFirstGameFrameMs": 822.7850000014896,
+          "row": {
+            "rafTimestampMs": 14991.935,
+            "frameIntervalMs": 17.81999999999971,
+            "simulationCpuMs": 1.2100000008940697,
+            "simulationCalls": 2,
+            "renderUpdateCpuMs": 5.884999997913837,
+            "renderSubmissionCpuMs": 26.234999999403954,
+            "drawCalls": 741,
+            "triangles": 1890880
+          },
+          "followingRafIntervalMs": 42.42000000000007
+        }
+      ],
+      "largestSimulations": [
+        {
+          "rowIndex": 1,
+          "relativeToFirstGameFrameMs": 313.7100000014907,
+          "row": {
+            "rafTimestampMs": 14482.86,
+            "frameIntervalMs": 387.880000000001,
+            "simulationCpuMs": 291.02000000327826,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 23.095000006258488,
+            "renderSubmissionCpuMs": 16.424999997019768,
+            "drawCalls": 679,
+            "triangles": 1890778
+          },
+          "followingRafIntervalMs": 333.2999999999993
+        },
+        {
+          "rowIndex": 116,
+          "relativeToFirstGameFrameMs": 2810.680000001492,
+          "row": {
+            "rafTimestampMs": 16979.83,
+            "frameIntervalMs": 30.30000000000291,
+            "simulationCpuMs": 18.524999998509884,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 6.75,
+            "renderSubmissionCpuMs": 6.904999993741512,
+            "drawCalls": 741,
+            "triangles": 1625211
+          },
+          "followingRafIntervalMs": 30.299999999999272
+        },
+        {
+          "rowIndex": 866,
+          "relativeToFirstGameFrameMs": 13392.59500000149,
+          "row": {
+            "rafTimestampMs": 27561.745,
+            "frameIntervalMs": 12.145000000000437,
+            "simulationCpuMs": 18.41499999910593,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 5.669999994337559,
+            "renderSubmissionCpuMs": 6.845000006258488,
+            "drawCalls": 770,
+            "triangles": 1625375
+          },
+          "followingRafIntervalMs": 36.345000000001164
+        }
+      ],
+      "preparedCpuCache": {
+        "start": {
+          "bytes": 129387136,
+          "peakBytes": 129387136,
+          "pendingBytes": 0,
+          "hits": 8,
+          "misses": 39,
+          "shared": 10,
+          "evictions": 0,
+          "uncached": 2
+        },
+        "end": {
+          "bytes": 133026652,
+          "peakBytes": 133721768,
+          "pendingBytes": 1152192,
+          "hits": 10,
+          "misses": 60,
+          "shared": 10,
+          "evictions": 6,
+          "uncached": 2
+        },
+        "phaseEvictionDelta": 6
+      },
+      "unitPool": {
+        "gpuBytes": 102820176,
+        "peakBytes": 102820176,
+        "budget": 762527496,
+        "preparation": {
+          "pages": 9,
+          "geometries": 0,
+          "workerMs": 218.48500000685453
+        },
+        "geometryPreparation": {
+          "pages": 0,
+          "geometries": 9,
+          "workerMs": 723.4900000095367
+        }
+      },
+      "requestedUnitFamilies": {
+        "E1": {
+          "density": 4,
+          "gpuBytes": 11308880,
+          "attempts": [],
+          "members": [
+            "gi.shp"
+          ],
+          "status": "READY"
+        },
+        "INIT": {
+          "density": 4,
+          "gpuBytes": 10870528,
+          "attempts": [],
+          "members": [
+            "init.shp"
+          ],
+          "status": "READY"
+        },
+        "AMCV": {
+          "density": 4,
+          "gpuBytes": 1653232,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "MTNK": {
+          "density": 4,
+          "gpuBytes": 972512,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "LTNK": {
+          "density": 4,
+          "gpuBytes": 1269264,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "PCV": {
+          "density": 1,
+          "gpuBytes": 0,
+          "status": "EVICTED_IDLE"
+        },
+        "SMCV": {
+          "density": 1,
+          "gpuBytes": 0,
+          "status": "EVICTED_IDLE"
+        },
+        "GACNST": {
+          "density": 4,
+          "gpuBytes": 26443848,
+          "attempts": [],
+          "members": [
+            "ggcnst.shp",
+            "ggcnst_b.shp",
+            "ggcnst_a.shp",
+            "gtcnstmk.shp"
+          ],
+          "status": "READY"
+        },
+        "GAPILE": {
+          "density": 4,
+          "gpuBytes": 9392088,
+          "attempts": [],
+          "members": [
+            "ggpile.shp",
+            "ggpile_a.shp",
+            "gtpilemk.shp"
+          ],
+          "status": "READY"
+        },
+        "NAHAND": {
+          "density": 4,
+          "gpuBytes": 3868236,
+          "attempts": [],
+          "members": [
+            "nghand.shp",
+            "nthandmk.shp"
+          ],
+          "status": "READY"
+        },
+        "NAREFN": {
+          "density": 1,
+          "gpuBytes": 0,
+          "status": "LOADING_COMPLETE_FAMILY"
+        },
+        "YACNST": {
+          "density": 4,
+          "gpuBytes": 20806724,
+          "attempts": [],
+          "members": [
+            "ygcnst.shp",
+            "ygcnst_c.shp",
+            "ygcnst_b.shp",
+            "ygcnst_a.shp",
+            "ygcnstmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YAPOWR": {
+          "density": 4,
+          "gpuBytes": 7575460,
+          "attempts": [],
+          "members": [
+            "ygpowr.shp",
+            "ygpowr_c.shp",
+            "ygpowr_a.shp",
+            "ygpowr_b.shp",
+            "ygpowrmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YAREFN": {
+          "density": 4,
+          "gpuBytes": 8659404,
+          "attempts": [],
+          "members": [
+            "ygrefn.shp",
+            "ygrefn_a.shp",
+            "ygrefnmk.shp"
+          ],
+          "status": "READY"
+        }
+      },
+      "content": {
+        "players": 8,
+        "bots": 7,
+        "nodes": 6217,
+        "visibleNodes": 4995,
+        "bindings": 2180,
+        "vxl": 31,
+        "shp": 1907,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      }
+    },
+    {
+      "label": "warmed-steady",
+      "elapsedMs": 15006.240000002086,
+      "loadingToFirstGameFrameMs": 1.1849999949336052,
+      "tickStart": 1195,
+      "tickEnd": 2186,
+      "summary": {
+        "frameIntervals": {
+          "n": 887,
+          "median": 18.154999999998836,
+          "p95": 24.260000000002037,
+          "p99": 42.424999999995634,
+          "maximum": 187.8249999999971,
+          "above33ms": 17,
+          "above50ms": 7,
+          "above100ms": 4
+        },
+        "simulationCpuMs": {
+          "n": 888,
+          "median": 1.1150000020861626,
+          "p95": 5.8599999994039536,
+          "p99": 13.965000003576279,
+          "maximum": 21.99499999731779,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "renderUpdateCpuMs": {
+          "n": 888,
+          "median": 5.725000001490116,
+          "p95": 7.930000007152557,
+          "p99": 10.640000000596046,
+          "maximum": 28.87000000476837,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "renderSubmissionCpuMs": {
+          "n": 888,
+          "median": 7.420000001788139,
+          "p95": 9.099999994039536,
+          "p99": 19.29500000178814,
+          "maximum": 150.17999999970198,
+          "above33ms": 3,
+          "above50ms": 3,
+          "above100ms": 1
+        },
+        "drawCalls": {
+          "n": 888,
+          "median": 783,
+          "p95": 790,
+          "p99": 792,
+          "maximum": 794
+        },
+        "triangles": {
+          "n": 888,
+          "median": 1646584,
+          "p95": 1686019,
+          "p99": 1686062,
+          "maximum": 1686086
+        }
+      },
+      "firstUseProgramCount": 50,
+      "endProgramCount": 48,
+      "longIntervalsAbove50ms": [
+        {
+          "intervalRowIndex": 13,
+          "relativeToFirstGameFrameMs": 327.92000000417465,
+          "intervalMs": 121.22000000000116,
+          "precedingFrame": {
+            "rowIndex": 12,
+            "relativeToFirstGameFrameMs": 206.7000000041735,
+            "row": {
+              "rafTimestampMs": 33058.72,
+              "frameIntervalMs": 18.169999999998254,
+              "simulationCpuMs": 1.0799999982118607,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 6.155000001192093,
+              "renderSubmissionCpuMs": 7.375,
+              "drawCalls": 782,
+              "triangles": 1665479
+            },
+            "followingRafIntervalMs": 121.22000000000116
+          },
+          "previousMeasuredCpuTotalMs": 14.609999999403954,
+          "intervalMinusPreviousMeasuredCpuMs": 106.61000000059721
+        },
+        {
+          "intervalRowIndex": 197,
+          "relativeToFirstGameFrameMs": 3406.750000004169,
+          "intervalMs": 90.81499999999505,
+          "precedingFrame": {
+            "rowIndex": 196,
+            "relativeToFirstGameFrameMs": 3315.935000004174,
+            "row": {
+              "rafTimestampMs": 36167.955,
+              "frameIntervalMs": 18.279999999998836,
+              "simulationCpuMs": 1.2100000008940697,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 6.045000001788139,
+              "renderSubmissionCpuMs": 7.894999995827675,
+              "drawCalls": 785,
+              "triangles": 1673833
+            },
+            "followingRafIntervalMs": 90.81499999999505
+          },
+          "previousMeasuredCpuTotalMs": 15.149999998509884,
+          "intervalMinusPreviousMeasuredCpuMs": 75.66500000148517
+        },
+        {
+          "intervalRowIndex": 237,
+          "relativeToFirstGameFrameMs": 4164.3250000041735,
+          "intervalMs": 103.02500000000146,
+          "precedingFrame": {
+            "rowIndex": 236,
+            "relativeToFirstGameFrameMs": 4061.300000004172,
+            "row": {
+              "rafTimestampMs": 36913.32,
+              "frameIntervalMs": 12.12999999999738,
+              "simulationCpuMs": 1.2849999964237213,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 13.614999994635582,
+              "renderSubmissionCpuMs": 87.0650000050664,
+              "drawCalls": 779,
+              "triangles": 1603883
+            },
+            "followingRafIntervalMs": 103.02500000000146
+          },
+          "previousMeasuredCpuTotalMs": 101.9649999961257,
+          "intervalMinusPreviousMeasuredCpuMs": 1.060000003875757
+        },
+        {
+          "intervalRowIndex": 384,
+          "relativeToFirstGameFrameMs": 6534.030000004175,
+          "intervalMs": 72.72500000000582,
+          "precedingFrame": {
+            "rowIndex": 383,
+            "relativeToFirstGameFrameMs": 6461.305000004169,
+            "row": {
+              "rafTimestampMs": 39313.325,
+              "frameIntervalMs": 18.18000000000029,
+              "simulationCpuMs": 2.339999996125698,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 19.064999997615814,
+              "renderSubmissionCpuMs": 51.53999999910593,
+              "drawCalls": 775,
+              "triangles": 1644902
+            },
+            "followingRafIntervalMs": 72.72500000000582
+          },
+          "previousMeasuredCpuTotalMs": 72.94499999284744,
+          "intervalMinusPreviousMeasuredCpuMs": -0.21999999284162186
+        },
+        {
+          "intervalRowIndex": 430,
+          "relativeToFirstGameFrameMs": 7400.7100000041755,
+          "intervalMs": 163.6600000000035,
+          "precedingFrame": {
+            "rowIndex": 429,
+            "relativeToFirstGameFrameMs": 7237.050000004172,
+            "row": {
+              "rafTimestampMs": 40089.07,
+              "frameIntervalMs": 12.110000000000582,
+              "simulationCpuMs": 2.3200000002980232,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 12.339999996125698,
+              "renderSubmissionCpuMs": 150.17999999970198,
+              "drawCalls": 780,
+              "triangles": 1644946
+            },
+            "followingRafIntervalMs": 163.6600000000035
+          },
+          "previousMeasuredCpuTotalMs": 164.8399999961257,
+          "intervalMinusPreviousMeasuredCpuMs": -1.1799999961222056
+        },
+        {
+          "intervalRowIndex": 449,
+          "relativeToFirstGameFrameMs": 7800.7000000041735,
+          "intervalMs": 54.520000000004075,
+          "precedingFrame": {
+            "rowIndex": 448,
+            "relativeToFirstGameFrameMs": 7746.180000004169,
+            "row": {
+              "rafTimestampMs": 40598.2,
+              "frameIntervalMs": 12.044999999998254,
+              "simulationCpuMs": 1.7049999982118607,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 6.255000002682209,
+              "renderSubmissionCpuMs": 7.424999997019768,
+              "drawCalls": 782,
+              "triangles": 1646564
+            },
+            "followingRafIntervalMs": 54.520000000004075
+          },
+          "previousMeasuredCpuTotalMs": 15.384999997913837,
+          "intervalMinusPreviousMeasuredCpuMs": 39.13500000209024
+        },
+        {
+          "intervalRowIndex": 455,
+          "relativeToFirstGameFrameMs": 8079.495000004172,
+          "intervalMs": 187.8249999999971,
+          "precedingFrame": {
+            "rowIndex": 454,
+            "relativeToFirstGameFrameMs": 7891.670000004175,
+            "row": {
+              "rafTimestampMs": 40743.69,
+              "frameIntervalMs": 18.235000000000582,
+              "simulationCpuMs": 1.125,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 5.865000002086163,
+              "renderSubmissionCpuMs": 7.410000003874302,
+              "drawCalls": 781,
+              "triangles": 1646565
+            },
+            "followingRafIntervalMs": 187.8249999999971
+          },
+          "previousMeasuredCpuTotalMs": 14.400000005960464,
+          "intervalMinusPreviousMeasuredCpuMs": 173.42499999403663
+        }
+      ],
+      "largestSubmissions": [
+        {
+          "rowIndex": 429,
+          "relativeToFirstGameFrameMs": 7237.050000004172,
+          "row": {
+            "rafTimestampMs": 40089.07,
+            "frameIntervalMs": 12.110000000000582,
+            "simulationCpuMs": 2.3200000002980232,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 12.339999996125698,
+            "renderSubmissionCpuMs": 150.17999999970198,
+            "drawCalls": 780,
+            "triangles": 1644946
+          },
+          "followingRafIntervalMs": 163.6600000000035
+        },
+        {
+          "rowIndex": 236,
+          "relativeToFirstGameFrameMs": 4061.300000004172,
+          "row": {
+            "rafTimestampMs": 36913.32,
+            "frameIntervalMs": 12.12999999999738,
+            "simulationCpuMs": 1.2849999964237213,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 13.614999994635582,
+            "renderSubmissionCpuMs": 87.0650000050664,
+            "drawCalls": 779,
+            "triangles": 1603883
+          },
+          "followingRafIntervalMs": 103.02500000000146
+        },
+        {
+          "rowIndex": 383,
+          "relativeToFirstGameFrameMs": 6461.305000004169,
+          "row": {
+            "rafTimestampMs": 39313.325,
+            "frameIntervalMs": 18.18000000000029,
+            "simulationCpuMs": 2.339999996125698,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 19.064999997615814,
+            "renderSubmissionCpuMs": 51.53999999910593,
+            "drawCalls": 775,
+            "triangles": 1644902
+          },
+          "followingRafIntervalMs": 72.72500000000582
+        }
+      ],
+      "largestSimulations": [
+        {
+          "rowIndex": 430,
+          "relativeToFirstGameFrameMs": 7400.7100000041755,
+          "row": {
+            "rafTimestampMs": 40252.73,
+            "frameIntervalMs": 163.6600000000035,
+            "simulationCpuMs": 21.99499999731779,
+            "simulationCalls": 2,
+            "renderUpdateCpuMs": 7.930000007152557,
+            "renderSubmissionCpuMs": 8.625,
+            "drawCalls": 778,
+            "triangles": 1644938
+          },
+          "followingRafIntervalMs": 42.424999999995634
+        },
+        {
+          "rowIndex": 94,
+          "relativeToFirstGameFrameMs": 1606.7200000041703,
+          "row": {
+            "rafTimestampMs": 34458.74,
+            "frameIntervalMs": 18.18000000000029,
+            "simulationCpuMs": 18.149999998509884,
+            "simulationCalls": 2,
+            "renderUpdateCpuMs": 6.119999997317791,
+            "renderSubmissionCpuMs": 8.884999997913837,
+            "drawCalls": 790,
+            "triangles": 1686018
+          },
+          "followingRafIntervalMs": 30.30500000000029
+        },
+        {
+          "rowIndex": 275,
+          "relativeToFirstGameFrameMs": 4782.510000004171,
+          "row": {
+            "rafTimestampMs": 37634.53,
+            "frameIntervalMs": 18.174999999995634,
+            "simulationCpuMs": 17.11999999731779,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 5.605000004172325,
+            "renderSubmissionCpuMs": 7.820000000298023,
+            "drawCalls": 783,
+            "triangles": 1653301
+          },
+          "followingRafIntervalMs": 30.31500000000233
+        }
+      ],
+      "preparedCpuCache": {
+        "start": {
+          "bytes": 132438320,
+          "peakBytes": 134178844,
+          "pendingBytes": 0,
+          "hits": 11,
+          "misses": 72,
+          "shared": 12,
+          "evictions": 13,
+          "uncached": 2
+        },
+        "end": {
+          "bytes": 132995248,
+          "peakBytes": 134178844,
+          "pendingBytes": 0,
+          "hits": 11,
+          "misses": 76,
+          "shared": 13,
+          "evictions": 15,
+          "uncached": 2
+        },
+        "phaseEvictionDelta": 2
+      },
+      "unitPool": {
+        "gpuBytes": 167867560,
+        "peakBytes": 167867560,
+        "budget": 762527496,
+        "preparation": {
+          "pages": 17,
+          "geometries": 0,
+          "workerMs": 501.52500000596046
+        },
+        "geometryPreparation": {
+          "pages": 0,
+          "geometries": 15,
+          "workerMs": 1587.8700000047684
+        }
+      },
+      "requestedUnitFamilies": {
+        "DOG": {
+          "density": 4,
+          "gpuBytes": 5478720,
+          "attempts": [],
+          "members": [
+            "dog.shp",
+            "dogp.shp"
+          ],
+          "status": "READY"
+        },
+        "E1": {
+          "density": 4,
+          "gpuBytes": 11308880,
+          "attempts": [],
+          "members": [
+            "gi.shp"
+          ],
+          "status": "READY"
+        },
+        "ADOG": {
+          "density": 4,
+          "gpuBytes": 5765312,
+          "attempts": [],
+          "members": [
+            "adog.shp",
+            "adogp.shp"
+          ],
+          "status": "READY"
+        },
+        "INIT": {
+          "density": 4,
+          "gpuBytes": 10870528,
+          "attempts": [],
+          "members": [
+            "init.shp"
+          ],
+          "status": "READY"
+        },
+        "SMIN": {
+          "density": 4,
+          "gpuBytes": 11104768,
+          "attempts": [],
+          "members": [
+            "slav.shp"
+          ],
+          "status": "READY"
+        },
+        "AMCV": {
+          "density": 4,
+          "gpuBytes": 1653232,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "MTNK": {
+          "density": 4,
+          "gpuBytes": 972512,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "CMIN": {
+          "density": 4,
+          "gpuBytes": 3741776,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "LTNK": {
+          "density": 4,
+          "gpuBytes": 1269264,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "PCV": {
+          "density": 1,
+          "gpuBytes": 0,
+          "status": "EVICTED_IDLE"
+        },
+        "HARV": {
+          "density": 4,
+          "gpuBytes": 2460432,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "SMCV": {
+          "density": 1,
+          "gpuBytes": 0,
+          "status": "EVICTED_IDLE"
+        },
+        "GAREFN": {
+          "density": 4,
+          "gpuBytes": 12440984,
+          "attempts": [],
+          "members": [
+            "ggrefn.shp",
+            "ggrefnbb.shp",
+            "ggrefnl1.shp",
+            "ggrefnl2.shp",
+            "ggrefnl3.shp",
+            "ggrefnor.shp",
+            "gtrefnmk.shp"
+          ],
+          "status": "READY"
+        },
+        "GACNST": {
+          "density": 4,
+          "gpuBytes": 26443848,
+          "attempts": [],
+          "members": [
+            "ggcnst.shp",
+            "ggcnst_b.shp",
+            "ggcnst_a.shp",
+            "gtcnstmk.shp"
+          ],
+          "status": "READY"
+        },
+        "GAPILE": {
+          "density": 4,
+          "gpuBytes": 9392088,
+          "attempts": [],
+          "members": [
+            "ggpile.shp",
+            "ggpile_a.shp",
+            "gtpilemk.shp"
+          ],
+          "status": "READY"
+        },
+        "NAHAND": {
+          "density": 4,
+          "gpuBytes": 3868236,
+          "attempts": [],
+          "members": [
+            "nghand.shp",
+            "nthandmk.shp"
+          ],
+          "status": "READY"
+        },
+        "NAREFN": {
+          "density": 4,
+          "gpuBytes": 12116048,
+          "attempts": [],
+          "members": [
+            "ngrefn.shp",
+            "ngrefnbb.shp",
+            "ngrefnl1.shp",
+            "ngrefnl2.shp",
+            "ngrefnl3.shp",
+            "ngrefnl4.shp",
+            "ngrefnor.shp",
+            "ntrefnmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YACNST": {
+          "density": 4,
+          "gpuBytes": 20806724,
+          "attempts": [],
+          "members": [
+            "ygcnst.shp",
+            "ygcnst_c.shp",
+            "ygcnst_b.shp",
+            "ygcnst_a.shp",
+            "ygcnstmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YAPOWR": {
+          "density": 4,
+          "gpuBytes": 7575460,
+          "attempts": [],
+          "members": [
+            "ygpowr.shp",
+            "ygpowr_c.shp",
+            "ygpowr_a.shp",
+            "ygpowr_b.shp",
+            "ygpowrmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YABRCK": {
+          "density": 4,
+          "gpuBytes": 11939344,
+          "attempts": [],
+          "members": [
+            "ygbrck.shp",
+            "ygbrck_a.shp",
+            "ygbrckmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YAREFN": {
+          "density": 4,
+          "gpuBytes": 8659404,
+          "attempts": [],
+          "members": [
+            "ygrefn.shp",
+            "ygrefn_a.shp",
+            "ygrefnmk.shp"
+          ],
+          "status": "READY"
+        }
+      },
+      "content": {
+        "players": 8,
+        "bots": 7,
+        "nodes": 6394,
+        "visibleNodes": 5079,
+        "bindings": 2200,
+        "vxl": 30,
+        "shp": 1918,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      }
+    },
+    {
+      "label": "same-process-reentry-first-use",
+      "elapsedMs": 15245.435000002384,
+      "loadingToFirstGameFrameMs": 8673.5,
+      "tickStart": 0,
+      "tickEnd": 996,
+      "summary": {
+        "frameIntervals": {
+          "n": 996,
+          "median": 12.139999999999418,
+          "p95": 24.224999999998545,
+          "p99": 30.349999999998545,
+          "maximum": 272.72000000000116,
+          "above33ms": 9,
+          "above50ms": 3,
+          "above100ms": 2
+        },
+        "simulationCpuMs": {
+          "n": 998,
+          "median": 0.7849999964237213,
+          "p95": 6.924999997019768,
+          "p99": 11.524999998509884,
+          "maximum": 15.95499999821186,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "renderUpdateCpuMs": {
+          "n": 998,
+          "median": 5.730000004172325,
+          "p95": 8.28999999910593,
+          "p99": 10.20499999821186,
+          "maximum": 80.89999999850988,
+          "above33ms": 2,
+          "above50ms": 1,
+          "above100ms": 0
+        },
+        "renderSubmissionCpuMs": {
+          "n": 998,
+          "median": 6.965000003576279,
+          "p95": 7.865000002086163,
+          "p99": 11.595000006258488,
+          "maximum": 180.21000000089407,
+          "above33ms": 3,
+          "above50ms": 3,
+          "above100ms": 1
+        },
+        "drawCalls": {
+          "n": 998,
+          "median": 755,
+          "p95": 770,
+          "p99": 778,
+          "maximum": 799
+        },
+        "triangles": {
+          "n": 998,
+          "median": 1625211,
+          "p95": 1625375,
+          "p99": 1890880,
+          "maximum": 1890904
+        }
+      },
+      "firstUseProgramCount": 43,
+      "endProgramCount": 48,
+      "longIntervalsAbove50ms": [
+        {
+          "intervalRowIndex": 2,
+          "relativeToFirstGameFrameMs": 227.57000000328117,
+          "intervalMs": 272.72000000000116,
+          "precedingFrame": {
+            "rowIndex": 1,
+            "relativeToFirstGameFrameMs": -45.14999999672,
+            "row": {
+              "rafTimestampMs": 57325.58,
+              "frameIntervalMs": null,
+              "simulationCpuMs": 0,
+              "simulationCalls": 0,
+              "renderUpdateCpuMs": 48.42000000178814,
+              "renderSubmissionCpuMs": 180.21000000089407,
+              "drawCalls": 678,
+              "triangles": 1850778
+            },
+            "followingRafIntervalMs": 272.72000000000116
+          },
+          "previousMeasuredCpuTotalMs": 228.6300000026822,
+          "intervalMinusPreviousMeasuredCpuMs": 44.089999997318955
+        },
+        {
+          "intervalRowIndex": 21,
+          "relativeToFirstGameFrameMs": 791.2050000032759,
+          "intervalMs": 163.62999999999738,
+          "precedingFrame": {
+            "rowIndex": 20,
+            "relativeToFirstGameFrameMs": 627.5750000032785,
+            "row": {
+              "rafTimestampMs": 57998.305,
+              "frameIntervalMs": 18.18000000000029,
+              "simulationCpuMs": 6.9849999994039536,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 80.89999999850988,
+              "renderSubmissionCpuMs": 79.0949999988079,
+              "drawCalls": 726,
+              "triangles": 1625119
+            },
+            "followingRafIntervalMs": 163.62999999999738
+          },
+          "previousMeasuredCpuTotalMs": 166.97999999672174,
+          "intervalMinusPreviousMeasuredCpuMs": -3.349999996724364
+        },
+        {
+          "intervalRowIndex": 374,
+          "relativeToFirstGameFrameMs": 5864.005000003279,
+          "intervalMs": 66.71500000000378,
+          "precedingFrame": {
+            "rowIndex": 373,
+            "relativeToFirstGameFrameMs": 5797.290000003275,
+            "row": {
+              "rafTimestampMs": 63168.02,
+              "frameIntervalMs": 24.224999999998545,
+              "simulationCpuMs": 2.5,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 8.484999999403954,
+              "renderSubmissionCpuMs": 54.21000000089407,
+              "drawCalls": 748,
+              "triangles": 1625235
+            },
+            "followingRafIntervalMs": 66.71500000000378
+          },
+          "previousMeasuredCpuTotalMs": 65.19500000029802,
+          "intervalMinusPreviousMeasuredCpuMs": 1.5199999997057603
+        }
+      ],
+      "largestSubmissions": [
+        {
+          "rowIndex": 1,
+          "relativeToFirstGameFrameMs": -45.14999999672,
+          "row": {
+            "rafTimestampMs": 57325.58,
+            "frameIntervalMs": null,
+            "simulationCpuMs": 0,
+            "simulationCalls": 0,
+            "renderUpdateCpuMs": 48.42000000178814,
+            "renderSubmissionCpuMs": 180.21000000089407,
+            "drawCalls": 678,
+            "triangles": 1850778
+          },
+          "followingRafIntervalMs": 272.72000000000116
+        },
+        {
+          "rowIndex": 20,
+          "relativeToFirstGameFrameMs": 627.5750000032785,
+          "row": {
+            "rafTimestampMs": 57998.305,
+            "frameIntervalMs": 18.18000000000029,
+            "simulationCpuMs": 6.9849999994039536,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 80.89999999850988,
+            "renderSubmissionCpuMs": 79.0949999988079,
+            "drawCalls": 726,
+            "triangles": 1625119
+          },
+          "followingRafIntervalMs": 163.62999999999738
+        },
+        {
+          "rowIndex": 373,
+          "relativeToFirstGameFrameMs": 5797.290000003275,
+          "row": {
+            "rafTimestampMs": 63168.02,
+            "frameIntervalMs": 24.224999999998545,
+            "simulationCpuMs": 2.5,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 8.484999999403954,
+            "renderSubmissionCpuMs": 54.21000000089407,
+            "drawCalls": 748,
+            "triangles": 1625235
+          },
+          "followingRafIntervalMs": 66.71500000000378
+        }
+      ],
+      "largestSimulations": [
+        {
+          "rowIndex": 2,
+          "relativeToFirstGameFrameMs": 227.57000000328117,
+          "row": {
+            "rafTimestampMs": 57598.3,
+            "frameIntervalMs": 272.72000000000116,
+            "simulationCpuMs": 15.95499999821186,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 8.719999998807907,
+            "renderSubmissionCpuMs": 12.720000006258488,
+            "drawCalls": 679,
+            "triangles": 1890778
+          },
+          "followingRafIntervalMs": 48.474999999998545
+        },
+        {
+          "rowIndex": 421,
+          "relativeToFirstGameFrameMs": 6651.845000003275,
+          "row": {
+            "rafTimestampMs": 64022.575,
+            "frameIntervalMs": 18.14999999999418,
+            "simulationCpuMs": 14.854999996721745,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 6.030000001192093,
+            "renderSubmissionCpuMs": 6.690000005066395,
+            "drawCalls": 748,
+            "triangles": 1625231
+          },
+          "followingRafIntervalMs": 24.260000000002037
+        },
+        {
+          "rowIndex": 210,
+          "relativeToFirstGameFrameMs": 3488.185000003279,
+          "row": {
+            "rafTimestampMs": 60858.915,
+            "frameIntervalMs": 12.125,
+            "simulationCpuMs": 14.21000000089407,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 5.404999993741512,
+            "renderSubmissionCpuMs": 6.6099999994039536,
+            "drawCalls": 738,
+            "triangles": 1613034
+          },
+          "followingRafIntervalMs": 24.24500000000262
+        }
+      ],
+      "preparedCpuCache": {
+        "start": {
+          "bytes": 134066824,
+          "peakBytes": 134178844,
+          "pendingBytes": 0,
+          "hits": 19,
+          "misses": 115,
+          "shared": 23,
+          "evictions": 73,
+          "uncached": 4
+        },
+        "end": {
+          "bytes": 131253284,
+          "peakBytes": 134178844,
+          "pendingBytes": 0,
+          "hits": 22,
+          "misses": 139,
+          "shared": 23,
+          "evictions": 84,
+          "uncached": 4
+        },
+        "phaseEvictionDelta": 11
+      },
+      "unitPool": {
+        "gpuBytes": 114936224,
+        "peakBytes": 114936224,
+        "budget": 762527496,
+        "preparation": {
+          "pages": 10,
+          "geometries": 0,
+          "workerMs": 258.7349999919534
+        },
+        "geometryPreparation": {
+          "pages": 0,
+          "geometries": 0,
+          "workerMs": 0
+        }
+      },
+      "requestedUnitFamilies": {
+        "E1": {
+          "density": 4,
+          "gpuBytes": 11308880,
+          "attempts": [],
+          "members": [
+            "gi.shp"
+          ],
+          "status": "READY"
+        },
+        "INIT": {
+          "density": 4,
+          "gpuBytes": 10870528,
+          "attempts": [],
+          "members": [
+            "init.shp"
+          ],
+          "status": "READY"
+        },
+        "AMCV": {
+          "density": 4,
+          "gpuBytes": 1653232,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "MTNK": {
+          "density": 4,
+          "gpuBytes": 972512,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "LTNK": {
+          "density": 4,
+          "gpuBytes": 1269264,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "PCV": {
+          "density": 1,
+          "gpuBytes": 0,
+          "status": "EVICTED_IDLE"
+        },
+        "HARV": {
+          "density": 1,
+          "gpuBytes": 0,
+          "status": "LOADING_COMPLETE_FAMILY"
+        },
+        "SMCV": {
+          "density": 1,
+          "gpuBytes": 0,
+          "status": "EVICTED_IDLE"
+        },
+        "GACNST": {
+          "density": 4,
+          "gpuBytes": 26443848,
+          "attempts": [],
+          "members": [
+            "ggcnst.shp",
+            "ggcnst_b.shp",
+            "ggcnst_a.shp",
+            "gtcnstmk.shp"
+          ],
+          "status": "READY"
+        },
+        "GAPILE": {
+          "density": 4,
+          "gpuBytes": 9392088,
+          "attempts": [],
+          "members": [
+            "ggpile.shp",
+            "ggpile_a.shp",
+            "gtpilemk.shp"
+          ],
+          "status": "READY"
+        },
+        "NAHAND": {
+          "density": 4,
+          "gpuBytes": 3868236,
+          "attempts": [],
+          "members": [
+            "nghand.shp",
+            "nthandmk.shp"
+          ],
+          "status": "READY"
+        },
+        "NAREFN": {
+          "density": 4,
+          "gpuBytes": 12116048,
+          "attempts": [],
+          "members": [
+            "ngrefn.shp",
+            "ngrefnbb.shp",
+            "ngrefnl1.shp",
+            "ngrefnl2.shp",
+            "ngrefnl3.shp",
+            "ngrefnl4.shp",
+            "ngrefnor.shp",
+            "ntrefnmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YACNST": {
+          "density": 4,
+          "gpuBytes": 20806724,
+          "attempts": [],
+          "members": [
+            "ygcnst.shp",
+            "ygcnst_c.shp",
+            "ygcnst_b.shp",
+            "ygcnst_a.shp",
+            "ygcnstmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YAPOWR": {
+          "density": 4,
+          "gpuBytes": 7575460,
+          "attempts": [],
+          "members": [
+            "ygpowr.shp",
+            "ygpowr_c.shp",
+            "ygpowr_a.shp",
+            "ygpowr_b.shp",
+            "ygpowrmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YAREFN": {
+          "density": 4,
+          "gpuBytes": 8659404,
+          "attempts": [],
+          "members": [
+            "ygrefn.shp",
+            "ygrefn_a.shp",
+            "ygrefnmk.shp"
+          ],
+          "status": "READY"
+        }
+      },
+      "content": {
+        "players": 8,
+        "bots": 7,
+        "nodes": 6217,
+        "visibleNodes": 4995,
+        "bindings": 2180,
+        "vxl": 31,
+        "shp": 1907,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      }
+    },
+    {
+      "label": "same-process-reentry-warmed",
+      "elapsedMs": 15014.585000000894,
+      "loadingToFirstGameFrameMs": 0.8350000008940697,
+      "tickStart": 1242,
+      "tickEnd": 2240,
+      "summary": {
+        "frameIntervals": {
+          "n": 896,
+          "median": 18.160000000003492,
+          "p95": 24.25,
+          "p99": 42.41500000000815,
+          "maximum": 193.9649999999965,
+          "above33ms": 12,
+          "above50ms": 5,
+          "above100ms": 1
+        },
+        "simulationCpuMs": {
+          "n": 897,
+          "median": 0.8650000020861626,
+          "p95": 5.304999999701977,
+          "p99": 13.074999995529652,
+          "maximum": 22.219999998807907,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "renderUpdateCpuMs": {
+          "n": 897,
+          "median": 6.170000001788139,
+          "p95": 8.130000002682209,
+          "p99": 10.440000005066395,
+          "maximum": 15.629999995231628,
+          "above33ms": 0,
+          "above50ms": 0,
+          "above100ms": 0
+        },
+        "renderSubmissionCpuMs": {
+          "n": 897,
+          "median": 7.53999999910593,
+          "p95": 9.759999997913837,
+          "p99": 19.125,
+          "maximum": 56.96999999880791,
+          "above33ms": 4,
+          "above50ms": 1,
+          "above100ms": 0
+        },
+        "drawCalls": {
+          "n": 897,
+          "median": 784,
+          "p95": 791,
+          "p99": 794,
+          "maximum": 798
+        },
+        "triangles": {
+          "n": 897,
+          "median": 1646592,
+          "p95": 1686026,
+          "p99": 1686066,
+          "maximum": 1686086
+        }
+      },
+      "firstUseProgramCount": 48,
+      "endProgramCount": 50,
+      "longIntervalsAbove50ms": [
+        {
+          "intervalRowIndex": 163,
+          "relativeToFirstGameFrameMs": 2676.755000003279,
+          "intervalMs": 72.74499999999534,
+          "precedingFrame": {
+            "rowIndex": 162,
+            "relativeToFirstGameFrameMs": 2604.0100000032835,
+            "row": {
+              "rafTimestampMs": 78865.115,
+              "frameIntervalMs": 18.154999999998836,
+              "simulationCpuMs": 0.8799999952316284,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 6.759999997913837,
+              "renderSubmissionCpuMs": 8.274999998509884,
+              "drawCalls": 788,
+              "triangles": 1685998
+            },
+            "followingRafIntervalMs": 72.74499999999534
+          },
+          "previousMeasuredCpuTotalMs": 15.91499999165535,
+          "intervalMinusPreviousMeasuredCpuMs": 56.830000008339994
+        },
+        {
+          "intervalRowIndex": 352,
+          "relativeToFirstGameFrameMs": 5767.685000003272,
+          "intervalMs": 60.63499999999476,
+          "precedingFrame": {
+            "rowIndex": 351,
+            "relativeToFirstGameFrameMs": 5707.050000003277,
+            "row": {
+              "rafTimestampMs": 81968.155,
+              "frameIntervalMs": 18.179999999993015,
+              "simulationCpuMs": 1.5099999979138374,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 8.850000001490116,
+              "renderSubmissionCpuMs": 49.934999994933605,
+              "drawCalls": 775,
+              "triangles": 1644902
+            },
+            "followingRafIntervalMs": 60.63499999999476
+          },
+          "previousMeasuredCpuTotalMs": 60.29499999433756,
+          "intervalMinusPreviousMeasuredCpuMs": 0.34000000565720256
+        },
+        {
+          "intervalRowIndex": 394,
+          "relativeToFirstGameFrameMs": 6579.800000003277,
+          "intervalMs": 72.72000000000116,
+          "precedingFrame": {
+            "rowIndex": 393,
+            "relativeToFirstGameFrameMs": 6507.080000003276,
+            "row": {
+              "rafTimestampMs": 82768.185,
+              "frameIntervalMs": 18.19000000000233,
+              "simulationCpuMs": 1.8599999994039536,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 15.629999995231628,
+              "renderSubmissionCpuMs": 56.96999999880791,
+              "drawCalls": 780,
+              "triangles": 1644946
+            },
+            "followingRafIntervalMs": 72.72000000000116
+          },
+          "previousMeasuredCpuTotalMs": 74.45999999344349,
+          "intervalMinusPreviousMeasuredCpuMs": -1.739999993442325
+        },
+        {
+          "intervalRowIndex": 419,
+          "relativeToFirstGameFrameMs": 7294.955000003276,
+          "intervalMs": 193.9649999999965,
+          "precedingFrame": {
+            "rowIndex": 418,
+            "relativeToFirstGameFrameMs": 7100.990000003279,
+            "row": {
+              "rafTimestampMs": 83362.095,
+              "frameIntervalMs": 18.17500000000291,
+              "simulationCpuMs": 1.1900000050663948,
+              "simulationCalls": 1,
+              "renderUpdateCpuMs": 7.670000001788139,
+              "renderSubmissionCpuMs": 19.125,
+              "drawCalls": 784,
+              "triangles": 1646577
+            },
+            "followingRafIntervalMs": 193.9649999999965
+          },
+          "previousMeasuredCpuTotalMs": 27.985000006854534,
+          "intervalMinusPreviousMeasuredCpuMs": 165.97999999314197
+        },
+        {
+          "intervalRowIndex": 533,
+          "relativeToFirstGameFrameMs": 9228.370000003284,
+          "intervalMs": 66.73500000000058,
+          "precedingFrame": {
+            "rowIndex": 532,
+            "relativeToFirstGameFrameMs": 9161.635000003283,
+            "row": {
+              "rafTimestampMs": 85422.74,
+              "frameIntervalMs": 30.310000000012224,
+              "simulationCpuMs": 19.91499999910593,
+              "simulationCalls": 2,
+              "renderUpdateCpuMs": 9.160000003874302,
+              "renderSubmissionCpuMs": 35.17999999970198,
+              "drawCalls": 779,
+              "triangles": 1634403
+            },
+            "followingRafIntervalMs": 66.73500000000058
+          },
+          "previousMeasuredCpuTotalMs": 64.25500000268221,
+          "intervalMinusPreviousMeasuredCpuMs": 2.479999997318373
+        }
+      ],
+      "largestSubmissions": [
+        {
+          "rowIndex": 393,
+          "relativeToFirstGameFrameMs": 6507.080000003276,
+          "row": {
+            "rafTimestampMs": 82768.185,
+            "frameIntervalMs": 18.19000000000233,
+            "simulationCpuMs": 1.8599999994039536,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 15.629999995231628,
+            "renderSubmissionCpuMs": 56.96999999880791,
+            "drawCalls": 780,
+            "triangles": 1644946
+          },
+          "followingRafIntervalMs": 72.72000000000116
+        },
+        {
+          "rowIndex": 351,
+          "relativeToFirstGameFrameMs": 5707.050000003277,
+          "row": {
+            "rafTimestampMs": 81968.155,
+            "frameIntervalMs": 18.179999999993015,
+            "simulationCpuMs": 1.5099999979138374,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 8.850000001490116,
+            "renderSubmissionCpuMs": 49.934999994933605,
+            "drawCalls": 775,
+            "triangles": 1644902
+          },
+          "followingRafIntervalMs": 60.63499999999476
+        },
+        {
+          "rowIndex": 202,
+          "relativeToFirstGameFrameMs": 3343.4650000032852,
+          "row": {
+            "rafTimestampMs": 79604.57,
+            "frameIntervalMs": 18.220000000001164,
+            "simulationCpuMs": 0.9699999988079071,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 9.634999997913837,
+            "renderSubmissionCpuMs": 37.73499999940395,
+            "drawCalls": 787,
+            "triangles": 1683442
+          },
+          "followingRafIntervalMs": 48.439999999987776
+        }
+      ],
+      "largestSimulations": [
+        {
+          "rowIndex": 394,
+          "relativeToFirstGameFrameMs": 6579.800000003277,
+          "row": {
+            "rafTimestampMs": 82840.905,
+            "frameIntervalMs": 72.72000000000116,
+            "simulationCpuMs": 22.219999998807907,
+            "simulationCalls": 2,
+            "renderUpdateCpuMs": 7.480000004172325,
+            "renderSubmissionCpuMs": 9.475000001490116,
+            "drawCalls": 778,
+            "triangles": 1644938
+          },
+          "followingRafIntervalMs": 42.41500000000815
+        },
+        {
+          "rowIndex": 532,
+          "relativeToFirstGameFrameMs": 9161.635000003283,
+          "row": {
+            "rafTimestampMs": 85422.74,
+            "frameIntervalMs": 30.310000000012224,
+            "simulationCpuMs": 19.91499999910593,
+            "simulationCalls": 2,
+            "renderUpdateCpuMs": 9.160000003874302,
+            "renderSubmissionCpuMs": 35.17999999970198,
+            "drawCalls": 779,
+            "triangles": 1634403
+          },
+          "followingRafIntervalMs": 66.73500000000058
+        },
+        {
+          "rowIndex": 569,
+          "relativeToFirstGameFrameMs": 9791.935000003272,
+          "row": {
+            "rafTimestampMs": 86053.04,
+            "frameIntervalMs": 12.129999999990105,
+            "simulationCpuMs": 17.674999997019768,
+            "simulationCalls": 1,
+            "renderUpdateCpuMs": 5.91499999910593,
+            "renderSubmissionCpuMs": 7.329999998211861,
+            "drawCalls": 776,
+            "triangles": 1584990
+          },
+          "followingRafIntervalMs": 36.370000000009895
+        }
+      ],
+      "preparedCpuCache": {
+        "start": {
+          "bytes": 132438320,
+          "peakBytes": 134178844,
+          "pendingBytes": 0,
+          "hits": 22,
+          "misses": 148,
+          "shared": 25,
+          "evictions": 87,
+          "uncached": 4
+        },
+        "end": {
+          "bytes": 132995248,
+          "peakBytes": 134178844,
+          "pendingBytes": 0,
+          "hits": 22,
+          "misses": 152,
+          "shared": 26,
+          "evictions": 89,
+          "uncached": 4
+        },
+        "phaseEvictionDelta": 2
+      },
+      "unitPool": {
+        "gpuBytes": 167867560,
+        "peakBytes": 167867560,
+        "budget": 762527496,
+        "preparation": {
+          "pages": 17,
+          "geometries": 0,
+          "workerMs": 555.5450000092387
+        },
+        "geometryPreparation": {
+          "pages": 0,
+          "geometries": 0,
+          "workerMs": 0
+        }
+      },
+      "requestedUnitFamilies": {
+        "DOG": {
+          "density": 4,
+          "gpuBytes": 5478720,
+          "attempts": [],
+          "members": [
+            "dog.shp",
+            "dogp.shp"
+          ],
+          "status": "READY"
+        },
+        "E1": {
+          "density": 4,
+          "gpuBytes": 11308880,
+          "attempts": [],
+          "members": [
+            "gi.shp"
+          ],
+          "status": "READY"
+        },
+        "ADOG": {
+          "density": 4,
+          "gpuBytes": 5765312,
+          "attempts": [],
+          "members": [
+            "adog.shp",
+            "adogp.shp"
+          ],
+          "status": "READY"
+        },
+        "INIT": {
+          "density": 4,
+          "gpuBytes": 10870528,
+          "attempts": [],
+          "members": [
+            "init.shp"
+          ],
+          "status": "READY"
+        },
+        "SMIN": {
+          "density": 4,
+          "gpuBytes": 11104768,
+          "attempts": [],
+          "members": [
+            "slav.shp"
+          ],
+          "status": "READY"
+        },
+        "AMCV": {
+          "density": 4,
+          "gpuBytes": 1653232,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "MTNK": {
+          "density": 4,
+          "gpuBytes": 972512,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "CMIN": {
+          "density": 4,
+          "gpuBytes": 3741776,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "LTNK": {
+          "density": 4,
+          "gpuBytes": 1269264,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "PCV": {
+          "density": 1,
+          "gpuBytes": 0,
+          "status": "EVICTED_IDLE"
+        },
+        "HARV": {
+          "density": 4,
+          "gpuBytes": 2460432,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        },
+        "SMCV": {
+          "density": 1,
+          "gpuBytes": 0,
+          "status": "EVICTED_IDLE"
+        },
+        "GAREFN": {
+          "density": 4,
+          "gpuBytes": 12440984,
+          "attempts": [],
+          "members": [
+            "ggrefn.shp",
+            "ggrefnbb.shp",
+            "ggrefnl1.shp",
+            "ggrefnl2.shp",
+            "ggrefnl3.shp",
+            "ggrefnor.shp",
+            "gtrefnmk.shp"
+          ],
+          "status": "READY"
+        },
+        "GACNST": {
+          "density": 4,
+          "gpuBytes": 26443848,
+          "attempts": [],
+          "members": [
+            "ggcnst.shp",
+            "ggcnst_b.shp",
+            "ggcnst_a.shp",
+            "gtcnstmk.shp"
+          ],
+          "status": "READY"
+        },
+        "GAPILE": {
+          "density": 4,
+          "gpuBytes": 9392088,
+          "attempts": [],
+          "members": [
+            "ggpile.shp",
+            "ggpile_a.shp",
+            "gtpilemk.shp"
+          ],
+          "status": "READY"
+        },
+        "NAHAND": {
+          "density": 4,
+          "gpuBytes": 3868236,
+          "attempts": [],
+          "members": [
+            "nghand.shp",
+            "nthandmk.shp"
+          ],
+          "status": "READY"
+        },
+        "NAREFN": {
+          "density": 4,
+          "gpuBytes": 12116048,
+          "attempts": [],
+          "members": [
+            "ngrefn.shp",
+            "ngrefnbb.shp",
+            "ngrefnl1.shp",
+            "ngrefnl2.shp",
+            "ngrefnl3.shp",
+            "ngrefnl4.shp",
+            "ngrefnor.shp",
+            "ntrefnmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YACNST": {
+          "density": 4,
+          "gpuBytes": 20806724,
+          "attempts": [],
+          "members": [
+            "ygcnst.shp",
+            "ygcnst_c.shp",
+            "ygcnst_b.shp",
+            "ygcnst_a.shp",
+            "ygcnstmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YAPOWR": {
+          "density": 4,
+          "gpuBytes": 7575460,
+          "attempts": [],
+          "members": [
+            "ygpowr.shp",
+            "ygpowr_c.shp",
+            "ygpowr_a.shp",
+            "ygpowr_b.shp",
+            "ygpowrmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YABRCK": {
+          "density": 4,
+          "gpuBytes": 11939344,
+          "attempts": [],
+          "members": [
+            "ygbrck.shp",
+            "ygbrck_a.shp",
+            "ygbrckmk.shp"
+          ],
+          "status": "READY"
+        },
+        "YAREFN": {
+          "density": 4,
+          "gpuBytes": 8659404,
+          "attempts": [],
+          "members": [
+            "ygrefn.shp",
+            "ygrefn_a.shp",
+            "ygrefnmk.shp"
+          ],
+          "status": "READY"
+        }
+      },
+      "content": {
+        "players": 8,
+        "bots": 7,
+        "nodes": 6426,
+        "visibleNodes": 5101,
+        "bindings": 2200,
+        "vxl": 31,
+        "shp": 1917,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        },
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        }
+      }
+    }
+  ],
+  "interpretation": {
+    "steadySubmissionSpike": "Warmed row 429 spends 150.180 ms in submission versus 2.320 ms simulation and 12.340 ms update; following interval 163.660 ms.",
+    "betweenCallbacksGap": "Warmed interval row 455 is 187.825 ms after only 14.400 ms measured CPU work. Re-entry warmed row 419 is 193.965 ms after 27.985 ms measured work. The difference does not attribute the cause.",
+    "shaderAttribution": "UNRESOLVED_FOR_THIS_STRESS_RUN; no shader-call/CPU/multiprocess trace returned. Net program counts do not identify relinks or material variants.",
+    "resourceAttribution": "Prepared CPU cache stays within 128 MiB and evicts two entries in each warmed window. Worker jobs and late family preparation occur. These aggregate observations do not establish causality for the long frames.",
+    "enemyCorrelation": "User reports a hitch when enemy units arrive, but raw phase rows contain no synchronized enemy-arrival marker or per-event material/family identity.",
+    "gpuTime": "UNAVAILABLE",
+    "actualProcessVram": "UNAVAILABLE",
+    "gpuBudget": "UNAVAILABLE",
+    "timingBoundary": "RAF intervals follow preceding row work. CPU submission is not GPU time. Interval-minus-measured-CPU is descriptive and can include unrelated callbacks, scheduling or presentation waits; it is not an exclusive category."
+  },
+  "userFeedback": {
+    "translation": "Normal smoothness is acceptable, but there is a hitch when enemy units come over.",
+    "automaticVersusManualTiming": "USER_CONFIRMED_DURING_AUTOMATIC_TEST",
+    "firstVersusRepeatedEnemyEvent": "NOT_SPECIFIED",
+    "loadingAndNewVisualAnomalies": "NOT_SEPARATELY_REPORTED",
+    "enemyCorrelationBoundary": "No synchronized enemy-arrival marker identifies which raw long frame matches the reported sensation."
+  },
+  "acceptance": {
+    "Small4X": "PREVIOUS_USER_ACCEPTANCE_PRESERVED",
+    "targetPackageIntegrity": "PASS_8089_FILES",
+    "eightPlayerCapture": "PASS_VALID_BOUNDED_NORMAL_MEASUREMENT",
+    "eightPlayerSmoothnessClosure": "OPEN_RESIDUAL_ENEMY_RELATED_HITCH",
+    "broaderVisualAcceptance": "NOT_SEPARATELY_ESTABLISHED",
+    "newRepair": "NO_SPECULATIVE_SOURCE_CHANGE",
+    "mainIntegration": "NOT_AUTHORIZED",
+    "M23": "UNTOUCHED",
+    "pushOrPublication": "NOT_PERFORMED"
+  },
+  "nextCapture": {
+    "kit": "EXISTING_C4_f850b5c",
+    "scene": "stress",
+    "mode": "4x",
+    "captureMenu": "Normal",
+    "traceTrigger": "F9 once approximately 20 seconds after the first live map appears",
+    "durationSeconds": 8,
+    "target": "Observed warmed submission stalls around game time 22.7/25.9 seconds and the gap around 26.8 seconds.",
+    "boundary": "One dedicated instrumented run, not another Normal A/B or density/control matrix. Confirm actual overlap from returned timestamps; exact recurrence is not guaranteed."
+  },
+  "localTraceRouteVerification": {
+    "status": "PASS_MAC_C4_STRESS_WARM_TRACE_ROUTE_AND_MAPPED_SUPPORT",
+    "platform": "darwin-arm64",
+    "frozenSource": "f850b5cb44b0f6a8a415ff0636705bd5566901ec",
+    "receipt": ".artifacts/windows-hd-diagnostic/c4-stress-warm-trace-support-v1.json",
+    "receiptSha256": "df93c91a5f1723b4a805dafc122ad60cb43e2bef10259c5c024142a43642201f",
+    "rawNativeReceipt": ".artifacts/windows-hd-diagnostic/c4-stress-warm-trace-route-v1/report.json",
+    "runDirectory": ".artifacts/windows-hd-diagnostic/candidate-c4-fresh-v3/RA2-HD-WINHD-20261008-D38F136-C4-f850b5c-Windows-x64/Diagnostic-Runs/2026-10-09T03-57-58-331Z-stress-4x-none",
+    "traceStatus": {
+      "status": "CAPTURED",
+      "categories": [
+        "toplevel",
+        "v8",
+        "gpu",
+        "cc",
+        "viz",
+        "blink",
+        "renderer.scheduler",
+        "devtools.timeline",
+        "disabled-by-default-v8.gc",
+        "disabled-by-default-devtools.timeline",
+        "disabled-by-default-gpu.service"
+      ],
+      "missingCategories": [],
+      "debuggerTransport": "In-process Electron WebContents debugger; no TCP port",
+      "durationSeconds": 8,
+      "cpuProfile": "CAPTURED",
+      "requestedDuringStage": "warmed-steady",
+      "overlap": "Existing/overlapping phases explicitly relabeled instrumented",
+      "materialProgramUploadEvents": "Trace dependent; unavailable if not emitted",
+      "webglCalls": {
+        "methods": {
+          "useProgram": {
+            "calls": 152239,
+            "cpuMs": 26.17000448703766,
+            "maximumCpuMs": 0.015000104904174805
+          },
+          "compileShader": {
+            "calls": 60,
+            "cpuMs": 0.04500007629394531,
+            "maximumCpuMs": 0.010000109672546387
+          },
+          "linkProgram": {
+            "calls": 30,
+            "cpuMs": 0.18500006198883057,
+            "maximumCpuMs": 0.015000104904174805
+          },
+          "getProgramInfoLog": {
+            "calls": 30,
+            "cpuMs": 74.31500017642975,
+            "maximumCpuMs": 6.039999961853027
+          },
+          "texImage2D": {
+            "calls": 0,
+            "cpuMs": 0,
+            "maximumCpuMs": 0
+          },
+          "texSubImage2D": {
+            "calls": 247,
+            "cpuMs": 5.289999723434448,
+            "maximumCpuMs": 0.7599999904632568
+          },
+          "compressedTexImage2D": {
+            "calls": 0,
+            "cpuMs": 0,
+            "maximumCpuMs": 0
+          },
+          "compressedTexSubImage2D": {
+            "calls": 0,
+            "cpuMs": 0,
+            "maximumCpuMs": 0
+          }
+        },
+        "programChanges": 152239,
+        "textureUploadBytes": "UNAVAILABLE",
+        "interpretation": "CPU WebGL call durations and counts; no GPU execution timing or residency measurement.",
+        "materialCalls": 365259,
+        "materialChanges": 288470
+      }
+    },
+    "phaseFlags": [
+      {
+        "label": "fresh-process-first-use",
+        "instrumented": false,
+        "validity": "VALID_BOUNDED_SAMPLE"
+      },
+      {
+        "label": "instrumented-warmed-steady",
+        "instrumented": true,
+        "validity": "VALID_BOUNDED_SAMPLE"
+      },
+      {
+        "label": "instrumented-same-process-reentry-first-use",
+        "instrumented": true,
+        "validity": "VALID_BOUNDED_SAMPLE"
+      },
+      {
+        "label": "instrumented-same-process-reentry-warmed",
+        "instrumented": true,
+        "validity": "VALID_BOUNDED_SAMPLE"
+      }
+    ],
+    "boundary": "Mac tooling and hypothesis support only, not Windows attribution or performance acceptance. No application/source changes. The large CpuProfiler::StartProfiling task is collection overhead; nested GC/worker spans are not added or called GPU execution time."
+  },
+  "sourceAndPackageChanges": "NONE; CURRENT_C4_REUSED",
+  "priorDocumentation": "Historical sealed delivery, Small acceptance and final-check records preserved; this new record supersedes only target-verification and stress-pending status.",
+  "workspaceAudit": {
+    "isolatedBranch": "perf/windows-hd-investigation",
+    "applicationSource": "f850b5cb44b0f6a8a415ff0636705bd5566901ec",
+    "main": {
+      "head": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+      "status": "CLEAN_READ_ONLY"
+    },
+    "peerM23": {
+      "head": "51a00a7ed30430346463599a8d7099a14ccc683a",
+      "observedChanges": [
+        "docs/m2-3-production-acceptance.json"
+      ],
+      "boundary": "Peer progress is independent; no peer file was changed by this task."
+    },
+    "newSourceChanges": false,
+    "newPackageChanges": false,
+    "mergePushOrPublication": false
+  }
+}

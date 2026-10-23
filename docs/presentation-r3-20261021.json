@@ -1,0 +1,281 @@
+{
+  "status": "PASS_R3_MAC_DELIVERED_VISUAL_ACCEPTANCE_PENDING",
+  "base": "ca081597316a0c275234986d5486fde612f387bf",
+  "fullSuite": {
+    "pass": 597,
+    "failedCases": 0,
+    "loadErrors": 0,
+    "skipped": 0,
+    "processErrors": 0
+  },
+  "fullSuiteProcesses": 148,
+  "focusedContracts": {
+    "tests": 8,
+    "assertions": 5337,
+    "status": "PASS"
+  },
+  "typecheck": "PASS",
+  "allRetailCursorFrames": 967,
+  "cursorFramesByEdition": {
+    "ra2": 450,
+    "yr": 517
+  },
+  "cursorTextureScale": 4,
+  "cursorLogicalCanvas": [
+    55,
+    43
+  ],
+  "cursorHotspot": [
+    0,
+    0
+  ],
+  "cursorBoundsToleranceNativePixels": 1,
+  "healthGeometrySamples": 24,
+  "buildingCellHeightRatio": 1.25,
+  "buildingCellWidthRatio": 1,
+  "buildingCellBottomDelta": 0,
+  "unitAndInfantryGeometry": "UNCHANGED",
+  "buildingHealthMaterialPixels": [
+    40,
+    40
+  ],
+  "nativeCases": [
+    {
+      "edition": "ra2",
+      "density": 2,
+      "snow": false,
+      "status": "PASS_NATIVE_MOVIE_CURVE_CURSORS_AND_TALLER_HEALTH",
+      "movie": {
+        "width": 632,
+        "height": 570,
+        "duration": 28.734,
+        "source": "ra2://game/local-ui/yuri-emblem-ui-v1/menu-original.webm",
+        "paused": false
+      },
+      "resumedMovieTime": 10.155528
+    },
+    {
+      "edition": "yr",
+      "density": 4,
+      "snow": true,
+      "status": "PASS_NATIVE_MOVIE_CURVE_CURSORS_AND_TALLER_HEALTH",
+      "movie": {
+        "width": 632,
+        "height": 570,
+        "duration": 28.734,
+        "source": "ra2://game/local-ui/yuri-emblem-ui-v1/menu-original.webm",
+        "paused": false
+      },
+      "resumedMovieTime": 1.692634
+    }
+  ],
+  "homeRecording": {
+    "file": "/Users/Aone/RA2remaster/project-history/presentation-r3-81d0f784-20261021/Review/media/home-native-compositor.webm",
+    "frames": 804,
+    "width": 1280,
+    "height": 720,
+    "method": "Actual native app compositor; CDP frames encoded locally.",
+    "encodedDurationSeconds": 36.439,
+    "originalRunFile": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/presentation-r3-20261020/native-ra2-final-v2/home-native-compositor.webm"
+  },
+  "originalMovie": {
+    "originalMovie": {
+      "source": "/Users/Aone/RA2remaster/ra2-hd/.local/ui-packs/yuri-emblem-ui-v1/menu-original.webm",
+      "sha256": "1c860b823cd86b54bda0969ee8a956707309d786ed336aa91b3cfbee4c1cfe55",
+      "width": 632,
+      "height": 570,
+      "duration": 28.734,
+      "recordedSeconds": 28.734
+    },
+    "provenance": "Existing M1 1:1 WebM transcode of ra2ts_l.bik. The native BIK and its decoder are not available here; this records the actual original-mode movie used by this project.",
+    "capture": "original-menu/original-menu-native-capture.webm",
+    "content": [
+      {
+        "seconds": [
+          0,
+          8
+        ],
+        "observed": "Statue of Liberty and airborne/paratroop montage."
+      },
+      {
+        "seconds": [
+          8,
+          14
+        ],
+        "observed": "Blue naval warfare montage with ships/submarine silhouettes."
+      },
+      {
+        "seconds": [
+          14,
+          21
+        ],
+        "observed": "Landing craft and armored forces near a city, with Kremlin-like architecture."
+      },
+      {
+        "seconds": [
+          21,
+          28.734
+        ],
+        "observed": "Armored columns, aircraft and urban attack montage."
+      }
+    ],
+    "inventoryCaution": "Scene descriptions are visual observations, not an assertion of exact unit identities or complete cinematic source titles.",
+    "referencePlate": {
+      "file": "public/res/presentation/menu-retail-reference-r3.png",
+      "sha256": "231cba439f30fb051f118e6f2aae62824227429df9fd4cad41b2aec882cd6126",
+      "method": "Median RGB of 28 native decoded samples (seconds 1 through 28), excluding the initial black decoder frame. Used only to suppress the old static bezel/logo/grid."
+    },
+    "limitations": "The moving source remains 632 x 570. Spatial filtering softens compression and old grid edges but does not recover missing HD cinematic detail. HD background/logo/grid are preserved separately. Some faint original grid detail remains inside moving footage.",
+    "newGeneratedArtwork": false,
+    "encodedCaptureDurationSeconds": 28.564,
+    "retainedCapture": "/Users/Aone/RA2remaster/project-history/presentation-r3-81d0f784-20261021/Review/media/original-menu-native-capture.webm",
+    "retainedInventory": "/Users/Aone/RA2remaster/project-history/presentation-r3-81d0f784-20261021/original-menu/content-inventory.json"
+  },
+  "protectedResourceReferences": 242,
+  "protectedLayoutAndResourceFiles": [
+    {
+      "file": "desktop/allied-building-coverage.json",
+      "sha256": "f4257e3cab2c5f26ab9a1b2b09300fac85d33710ecddd63f685fcbbc21c92735"
+    },
+    {
+      "file": "desktop/buildup-art-final.json",
+      "sha256": "a74aa085e212949a4ee59c1593a79ebb7a077662e2246245a0d4b72909c3cc31"
+    },
+    {
+      "file": "src/gui/UiObjectSprite.ts",
+      "sha256": "dd691441bea620602351b6b0bdac517ec6991b03a96030e33351f191b8edca2f"
+    },
+    {
+      "file": "src/gui/screen/mainMenu/component/MainMenu.ts",
+      "sha256": "41a42414ffadb0ec296b113d108554c037402be87448a52cf6215ab8aabe1d24"
+    },
+    {
+      "file": "public/res/presentation/menu-radar-neutral-r2.png",
+      "sha256": "ede30a27a43b0b3a9dec05a69e8502aec92e89ef59fb80af0ec7338a190c035c"
+    },
+    {
+      "file": "public/res/presentation/menu-logo-mask-r2.png",
+      "sha256": "59378ecb30f18ff5e2ad07a1567b498a7efd846d2d803d8e7ffc6064b1f898ca"
+    }
+  ],
+  "selectedRepairRevision": "presentation-r2-20261020-v3",
+  "acceptedConstructionRecords": 108,
+  "acceptedGacnst": "BYTE_IDENTICAL_SELECTION_AND_REFERENCED_RESOURCES",
+  "failedReceipts": "rejected-probes.json; raw intermediate reports and previews retained",
+  "visualReview": "PENDING_USER_REVIEW",
+  "physicalInput": "NOT_REACCEPTED",
+  "nativeWindows": "NOT_RUN",
+  "independentM24": "PRESERVED_NOT_INCLUDED",
+  "remotePush": false,
+  "desktopDelivery": {
+    "status": "PASS_TESTED_R3_ARCHIVE_DELIVERED_TO_DESKTOP",
+    "path": "/Users/Aone/Desktop/RA2-HD-Mac-81d0f784-20261021-UI-R3.zip",
+    "bytes": 3940029137,
+    "sha256": "7d04263be215547f60f8218b4553eaa83264c03629de0b2aa35763ae843ad9aa",
+    "runtimeSourceHead": "81d0f78483461e40f0127571216d8e7e0a5a4e09",
+    "storage": "Independent APFS clone; distinct inode",
+    "archiveEntries": 7714,
+    "nativeRuntime": "PASS_TWO_EXTRACTED_NATIVE_R3_CASES_MOVIE_AND_POST_MATCH_LAYOUT",
+    "nativePackageCases": 2,
+    "nativePostMatchPaths": [
+      "actual-abort",
+      "native-victory-condition-fixture"
+    ],
+    "reviewImages": 15,
+    "reviewClips": 4,
+    "reviewClipDurationsSeconds": {
+      "media/home-native-compositor.webm": 36.439,
+      "media/original-menu-native-capture.webm": 28.564,
+      "media/ra2-health-native.webm": 4.036,
+      "media/yr-health-native.webm": 4.067
+    },
+    "previousR2": {
+      "path": "/Users/Aone/Desktop/RA2-HD-Mac-01cd7e6f-20261020-UI-R2.zip",
+      "present": false,
+      "action": "NOT_MODIFIED"
+    }
+  },
+  "temporaryCopies": {
+    "status": "PASS_ONLY_AUDITED_R3_TEMPORARY_COPIES_RETIRED",
+    "target": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/presentation-r3-20261020",
+    "inventory": {
+      "files": 17305,
+      "links": 28,
+      "directories": 10052,
+      "logicalBytes": 18146169861
+    },
+    "duKiB": 17759236,
+    "availableBytesBefore": 1251657019392,
+    "availableBytesAfter": 1265720852480,
+    "observedAvailableDeltaBytes": 14063833088,
+    "accounting": "Logical retired bytes and du do not measure exclusive APFS blocks. Free-space delta is an observation and may include concurrent filesystem activity.",
+    "desktopSha256After": "7d04263be215547f60f8218b4553eaa83264c03629de0b2aa35763ae843ad9aa",
+    "protectedResourceReferencesAfter": 242,
+    "preserved": [
+      "canonical source and selected .local resources",
+      "compact R3 and prior evidence",
+      "Desktop R3 and any other existing packages",
+      "independent M2.4 worktree and Windows history"
+    ],
+    "timestampUtc": "2026-10-21T07:47:05.165398+00:00"
+  },
+  "runtimeSourceHead": "81d0f78483461e40f0127571216d8e7e0a5a4e09",
+  "evidenceRoot": "/Users/Aone/RA2remaster/project-history/presentation-r3-81d0f784-20261021",
+  "archiveVerification": "PASS_ARCHIVE_AND_EXTRACTION_BYTES_LINKS_MODES_SIGNATURE",
+  "packageNative": "PASS_TWO_EXTRACTED_NATIVE_R3_CASES_MOVIE_AND_POST_MATCH_LAYOUT",
+  "reviewPlayback": "PASS_OFFLINE_R3_REVIEW_IMAGES_AND_COMPLETE_SEQUENTIAL_PLAYBACK",
+  "branchCompatibility": {
+    "status": "PASS_NO_NEW_CONFLICT_FILES_AT_PINNED_INDEPENDENT_HEADS",
+    "mainHead": "81d0f78483461e40f0127571216d8e7e0a5a4e09",
+    "base": "ca081597316a0c275234986d5486fde612f387bf",
+    "m24Head": "500d84101cf65d5c0f2f186a8e563b553a104c18",
+    "windowsHead": "34856b4552968e7054f9607878431b0036b1724a",
+    "windowsKitBaseAncestor": true,
+    "comparisons": [
+      {
+        "branch": "m24",
+        "head": "500d84101cf65d5c0f2f186a8e563b553a104c18",
+        "stage": "before",
+        "exitCode": 1,
+        "conflictFiles": [
+          "scripts/m2/official-maps/terrain-loading.test.ts",
+          "src/engine/renderable/entity/Building.ts"
+        ]
+      },
+      {
+        "branch": "m24",
+        "head": "500d84101cf65d5c0f2f186a8e563b553a104c18",
+        "stage": "after",
+        "exitCode": 1,
+        "conflictFiles": [
+          "scripts/m2/official-maps/terrain-loading.test.ts",
+          "src/engine/renderable/entity/Building.ts"
+        ]
+      },
+      {
+        "branch": "windows",
+        "head": "34856b4552968e7054f9607878431b0036b1724a",
+        "stage": "before",
+        "exitCode": 1,
+        "conflictFiles": [
+          "AGENTS.md"
+        ]
+      },
+      {
+        "branch": "windows",
+        "head": "34856b4552968e7054f9607878431b0036b1724a",
+        "stage": "after",
+        "exitCode": 1,
+        "conflictFiles": [
+          "AGENTS.md"
+        ]
+      }
+    ],
+    "actualMerge": false
+  },
+  "reviewPlaybackReport": "/Users/Aone/RA2remaster/project-history/presentation-r3-81d0f784-20261021/review-playback.json",
+  "postCleanupVerification": {
+    "status": "PASS_DESKTOP_AND_242_PROTECTED_RESOURCE_HASHES_AFTER_RETIREMENT",
+    "receipt": "/Users/Aone/RA2remaster/project-history/presentation-r3-81d0f784-20261021/cleanup.json"
+  }
+}

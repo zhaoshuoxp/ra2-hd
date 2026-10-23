@@ -1,0 +1,165 @@
+{
+  "status": "ALLIED_BUILDINGS_A_ACCEPTED_AND_DELIVERED",
+  "task": "A Allied buildings only",
+  "runtimeSourceHead": "de0548b8cc3b79bc2f8202cde5d5e02bb3209bb1",
+  "roster": {
+    "ra2": 20,
+    "yr": 21,
+    "union": 21,
+    "newSelections": 39,
+    "cells": 186
+  },
+  "review": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-buildings/feedback-review-v1/Allied-Buildings-Corrections.html",
+  "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-buildings/feedback-package-v1/Allied-Buildings-Corrections-Mac/Red Alert 2 HD Offline Trainer R1.app",
+  "resourceRoot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-buildings/feedback-package-v1/Allied-Buildings-Corrections-Mac/RA2-HD-Editions-Resources",
+  "files": [
+    {
+      "path": "desktop/allied-building-coverage.json",
+      "sha256": "de1ea65b6b93897a8bc03af5881ad41b6c64ed624d67badb70f23ef48a5d5893"
+    },
+    {
+      "path": ".artifacts/allied-buildings/feedback-v1/structural.json",
+      "sha256": "a54e2d14b1cec71b55ee74cf507ae0ea94c2564c3cbd43bb6f706976e006081a"
+    },
+    {
+      "path": ".artifacts/allied-buildings/feedback-build-v1/identity.json",
+      "sha256": "753685e21316c25aa53e2e10dc0f1455d7db3831674ab2c6ce4a175428a23842"
+    },
+    {
+      "path": ".artifacts/allied-buildings/feedback-smoke-v1/result.json",
+      "sha256": "2566ba44c8851855fbee699e68d3ae935a3432f949a859eaa088040d53a00b5f"
+    },
+    {
+      "path": ".artifacts/allied-buildings/feedback-review-v1/receipt.json",
+      "sha256": "0c5c8bf13410835efd477af417b490425dd6a6ef1047924d87a84cb89deb7571"
+    },
+    {
+      "path": ".artifacts/allied-buildings/feedback-review-v1/Allied-Buildings-Corrections.html",
+      "sha256": "736660f60add9bbbf4b0a29beec703afa4f85a2624655661332e701736f9b60d"
+    },
+    {
+      "path": ".artifacts/allied-buildings/feedback-review-v1/html-check.json",
+      "sha256": "faa64801da30f40e9e7d824f1a7b72b2f0141bbf0cd8541dfeb6303f394851fe"
+    }
+  ],
+  "packagedCases": [
+    {
+      "case": "yr-temperate",
+      "bindings": 11,
+      "worldBytes": 217583380,
+      "scope": "AFFECTED_FAMILIES_ONLY",
+      "nativeEffects": "PASS_NATIVE_CHARGE_FIRE_CLOSE"
+    },
+    {
+      "case": "ra2-snow",
+      "bindings": 10,
+      "worldBytes": 203132956,
+      "scope": "AFFECTED_FAMILIES_ONLY",
+      "nativeEffects": "REUSED_TEMPERATE_ACTION_PATH"
+    }
+  ],
+  "budgetBytes": 268435456,
+  "exceptions": {
+    "nativeUnresolvedDeclarations": [
+      "GAGAP_A",
+      "GAREFNL4"
+    ],
+    "retainedOriginalUnits": [
+      "SQD",
+      "YURIPR"
+    ],
+    "nativeSharedEffects": true
+  },
+  "reviewQA": {
+    "status": "PASS_OFFLINE_DENSITY_AND_CONTROLS",
+    "animationGroups": 20,
+    "density": 2,
+    "externalRequests": [],
+    "overflow": false
+  },
+  "preservedPowerPlantFamilySha256": "31b76d8632f470e41886aaf2987c3df618370f1b25ea80725d044e450f94b2d2",
+  "continuation": "Task A is closed. Any correction to this result stays in this task. A materially different objective requires a separately selected task; no automatic B-E work or publication.",
+  "priorDelivery": ".artifacts/allied-buildings/feedback-v1/prior-delivery.json",
+  "correctionScope": [
+    "GTGCAN construction",
+    "GAPILL review density only",
+    "GAAIRC construction and shared AMRADR",
+    "GACSPH native electrical ramp",
+    "GAWEAT unpowered construction and native electrical ramp"
+  ],
+  "reusedEvidence": [
+    ".artifacts/allied-buildings/final-smoke-v1/result.json",
+    ".artifacts/allied-buildings/shared-smoke-v3/result.json"
+  ],
+  "reusedPackagedCases": {
+    "runtimeSourceHead": "6d0596b4b71b47c0b80880f18225cea423b567f5",
+    "cases": [
+      {
+        "case": "ra2-temperate",
+        "bindings": 11,
+        "worldBytes": 220059248,
+        "controls": [
+          [
+            "E2",
+            true
+          ],
+          [
+            "TTNK",
+            true
+          ]
+        ]
+      },
+      {
+        "case": "yr-temperate",
+        "bindings": 9,
+        "worldBytes": 219058736,
+        "controls": [
+          [
+            "E2",
+            true
+          ],
+          [
+            "TTNK",
+            true
+          ]
+        ]
+      },
+      {
+        "case": "ra2-snow",
+        "bindings": 8,
+        "worldBytes": 204114852,
+        "controls": [
+          [
+            "E2",
+            true
+          ],
+          [
+            "TTNK",
+            true
+          ]
+        ]
+      },
+      {
+        "case": "yr-snow",
+        "bindings": 10,
+        "worldBytes": 215757988,
+        "controls": [
+          [
+            "E2",
+            true
+          ],
+          [
+            "TTNK",
+            true
+          ]
+        ]
+      }
+    ]
+  },
+  "visualAcceptance": "USER_ACCEPTED_2026_09_28",
+  "acceptance": {
+    "path": "docs/allied-buildings-hd-acceptance.json",
+    "sha256": "77258d03eeeea7d31745ff66cea2f8078244ef430caf0393248fa02bff9c8f02"
+  },
+  "remainingInScopeWork": []
+}

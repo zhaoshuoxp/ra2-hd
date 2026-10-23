@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-30",
+  "status": "ALLIED_UNITS_B_AND_GRAPHICS_FOLLOWUPS_ACCEPTED_ON_MAIN",
+  "userDecision": "User accepts the final result despite minor visual imperfections, confirms all original objectives are complete, and requests main integration and a handoff for the main process.",
+  "task": "B Allied units in RA2 and Yuri's Revenge, plus explicitly authorized Allied/Soviet graphics and gameplay corrections",
+  "originalObjectivesComplete": true,
+  "remainingImplementationTasks": [],
+  "acceptance": {
+    "alliedRoster": "ACCEPTED",
+    "densityAndOptions": "ACCEPTED",
+    "shadowAndOwnerColor": "ACCEPTED",
+    "superweaponOption": "ACCEPTED",
+    "helicopterMounts": "ACCEPTED_WITH_MINOR_VISUAL_IMPERFECTIONS"
+  },
+  "integration": {
+    "branch": "main",
+    "checkout": "/Users/Aone/RA2remaster/ra2-hd",
+    "baseline": "3b1bec1",
+    "verifiedMainPredecessor": "d35ad51504a812ea8d09c5799a34514d4be239e0",
+    "reviewedRuntimeSourceHead": "e748dc8ad933b78f1333512177831ec6783180f6",
+    "implementationAlreadyOnMain": true,
+    "runtimeSourcesEqualToReviewedPackage": true,
+    "closureChange": "DOCUMENTATION_ONLY",
+    "remotePush": "NOT_PERFORMED"
+  },
+  "coverage": {
+    "ra2Roots": 25,
+    "yrRoots": 30,
+    "unionRoots": 30,
+    "editionRootRows": 55,
+    "authoredFamilies": 26,
+    "acceptedReuseIdentities": 4,
+    "currentRootBindings": [
+      {
+        "rulesIdentity": "ADOG",
+        "registeredIdentity": "ADOG"
+      },
+      {
+        "rulesIdentity": "AEGIS",
+        "registeredIdentity": "AEGIS"
+      },
+      {
+        "rulesIdentity": "AMCV",
+        "registeredIdentity": "AMCV"
+      },
+      {
+        "rulesIdentity": "BEAG",
+        "registeredIdentity": "BEAG"
+      },
+      {
+        "rulesIdentity": "BFRT",
+        "registeredIdentity": "BFRT"
+      },
+      {
+        "rulesIdentity": "CARRIER",
+        "registeredIdentity": "CARRIER"
+      },
+      {
+        "rulesIdentity": "CCOMAND",
+        "registeredIdentity": "CCOMAND"
+      },
+      {
+        "rulesIdentity": "CIVAN",
+        "registeredIdentity": "CIVAN"
+      },
+      {
+        "rulesIdentity": "CLEG",
+        "registeredIdentity": "CLEG"
+      },
+      {
+        "rulesIdentity": "CMIN",
+        "registeredIdentity": "CMIN"
+      },
+      {
+        "rulesIdentity": "DEST",
+        "registeredIdentity": "DEST"
+      },
+      {
+        "rulesIdentity": "DLPH",
+        "registeredIdentity": "DLPH"
+      },
+      {
+        "rulesIdentity": "E1",
+        "registeredIdentity": "E1"
+      },
+      {
+        "rulesIdentity": "ENGINEER",
+        "registeredIdentity": "SENGINEER"
+      },
+      {
+        "rulesIdentity": "FV",
+        "registeredIdentity": "FV"
+      },
+      {
+        "rulesIdentity": "GGI",
+        "registeredIdentity": "GGI"
+      },
+      {
+        "rulesIdentity": "GHOST",
+        "registeredIdentity": "GHOST"
+      },
+      {
+        "rulesIdentity": "JUMPJET",
+        "registeredIdentity": "JUMPJET"
+      },
+      {
+        "rulesIdentity": "LCRF",
+        "registeredIdentity": "LCRF"
+      },
+      {
+        "rulesIdentity": "MGTK",
+        "registeredIdentity": "MGTK"
+      },
+      {
+        "rulesIdentity": "MTNK",
+        "registeredIdentity": "MTNK"
+      },
+      {
+        "rulesIdentity": "ORCA",
+        "registeredIdentity": "ORCA"
+      },
+      {
+        "rulesIdentity": "PTROOP",
+        "registeredIdentity": "PTROOP"
+      },
+      {
+        "rulesIdentity": "ROBO",
+        "registeredIdentity": "ROBO"
+      },
+      {
+        "rulesIdentity": "SHAD",
+        "registeredIdentity": "SHAD"
+      },
+      {
+        "rulesIdentity": "SNIPE",
+        "registeredIdentity": "SNIPE"
+      },
+      {
+        "rulesIdentity": "SPY",
+        "registeredIdentity": "SPY"
+      },
+      {
+        "rulesIdentity": "SREF",
+        "registeredIdentity": "SREF"
+      },
+      {
+        "rulesIdentity": "TANY",
+        "registeredIdentity": "TANY"
+      },
+      {
+        "rulesIdentity": "TNKD",
+        "registeredIdentity": "TNKD"
+      }
+    ]
+  },
+  "graphics": {
+    "choices": [
+      "Original",
+      "2x",
+      "4x"
+    ],
+    "default": "4x",
+    "appliesCompletely": "NEXT_MATCH",
+    "sharedWorldTextureBudgetMiB": {
+      "2x": 256,
+      "4x": 1280
+    },
+    "modelsHighLowControl": "REMOVED",
+    "genuine4xRegeneratedPreviousExceptions": 24
+  },
+  "resourceSelection": {
+    "catalogPins": [
+      {
+        "file": "desktop/allied-unit-contracts.json",
+        "sha256": "d07f2592d5fd961ec8c950ae8571c1b4a6f4218ed2208811c4bad27b66aa5368"
+      },
+      {
+        "file": "desktop/allied-building-coverage.json",
+        "sha256": "4ebaecc9d37ce198d0094b4ffa7a48e4b439e74e0e5001a5b6ce5054527da217"
+      },
+      {
+        "file": "desktop/soviet-building-coverage.json",
+        "sha256": "88948224a28110da52e7e5a1f87fc255115a76c3fbbff33b24900dc3fd6f0ad8"
+      },
+      {
+        "file": "desktop/hd-profile.mjs",
+        "sha256": "6e2bfc123d1875f5a6733abd7bcff0b09f128700f323dfd2ecaa526873713f75"
+      },
+      {
+        "file": "src/engine/gfx/HdDensity.ts",
+        "sha256": "86dc3deca86cf76b3df7761194f2912cd418415be87be61b8e585df2d90b8f36"
+      }
+    ],
+    "finalHelicopterMetadataPins": [
+      {
+        "path": "hd-packs/allied-shad-vxl/mount-r7/manifest.json",
+        "sha256": "5d0f1ef4ef24d675757747a56f685ecc10d4dfcb21f10fe0e209738349670a0e"
+      },
+      {
+        "path": "hd-packs/yr-soviet-schp-vxl/mount-r6/manifest.json",
+        "sha256": "852c0661f770c427ddeca2b49823f77e981226feab3abdbb220d962ffbc83fa7"
+      },
+      {
+        "path": "hd-packs/yr-soviet-schp-family/mount-r6/family.json",
+        "sha256": "1668a6475b3b73a4e989b8a0d9935e3717d639708c8e74aeaa3da47b0f38ce67"
+      }
+    ],
+    "availabilityKeys": 138,
+    "routes": 2419,
+    "matchesReviewedPackage": true,
+    "registrationAudit": ".artifacts/allied-units/final-acceptance-2026-09-30/main-verification.json"
+  },
+  "acceptedExistingExceptions": [
+    "SQD/SQDG Original",
+    "edition-guarded YURIPR Original",
+    "four inherited CARRIER 4x bearings retain previously documented modest master enlargement"
+  ],
+  "delivery": {
+    "status": "PASS_DESKTOP_ZIP_EXTRACTED_INVENTORY_AND_SIGNATURE",
+    "source": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/helicopter-mount-r5/RA2-HD-Helicopter-Mounts-e748dc8-macOS-arm64.zip",
+    "desktop": "/Users/Aone/Desktop/RA2-HD-Helicopter-Mounts-e748dc8-macOS-arm64.zip",
+    "bytes": 1860009383,
+    "sha256": "2aa530ccffe19547bce8cbfdc2942414e50a32009a680ba78479e75c65b568ec",
+    "verifiedEntries": 3232,
+    "extracted": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/helicopter-mount-r5/desktop-extracted/RA2-HD-Helicopter-Mounts-e748dc8",
+    "runtimeSourceHead": "e748dc8ad933b78f1333512177831ec6783180f6",
+    "review": "HELICOPTER-MOUNT-REVIEW.html",
+    "nativeValidation": "PASS_PACKAGED_HELICOPTER_MOUNTS_4X_AND_2X",
+    "userAcceptance": "ACCEPTED_2026_09_30",
+    "priorDesktopFiles": "NOT_OVERWRITTEN_OR_DELETED",
+    "localPush": "NOT_PERFORMED",
+    "acceptanceSupersedesHistoricalDeliveryPendingLabel": true
+  },
+  "validation": {
+    "closure": "CURRENT_MAIN_ANCESTRY_RUNTIME_EQUALITY_AND_RESOURCE_REGISTRATION_PASS",
+    "finalRuntimeTests": 26,
+    "finalRuntimeAssertions": 15232,
+    "entryTypecheck": "PASS_REUSED_FINAL_RUNTIME_EVIDENCE",
+    "finalNativeSamples": {
+      "yr4x": 32,
+      "ra2_2x": 8
+    },
+    "nativeFlightLandingClips": 3,
+    "offlineReviewImages": 12,
+    "offlineReviewVideos": 3,
+    "desktopExtractedEntries": 3232,
+    "historicalMatrices": "REUSED_NOT_REPLAYED",
+    "rebuildForClosure": "NOT_NEEDED"
+  },
+  "preservation": "Accepted immutable resources, apps, profiles, dist, archived worktrees and historical evidence are retained. Prior pending receipts are not rewritten.",
+  "limits": [
+    "Minor rotor aesthetics accepted by the user",
+    "Windows NOT_RUN for these follow-ups",
+    "No new physical-input certification",
+    "Bounded M2 pressure tests are not universal GPU or sustained-battle certification",
+    "Existing campaign/upstream limits unchanged"
+  ],
+  "handoff": "docs/allied-units-final-handoff.md",
+  "nextFactionTasks": "NOT_STARTED; require explicit scope authorization",
+  "supersedesPendingLabelsForAcceptedScope": [
+    "docs/allied-units-hd-review.json",
+    "docs/allied-units-hd-production.json",
+    "docs/allied-units-hd-coverage.json",
+    "desktop/allied-unit-contracts.json status field",
+    "docs/helicopter-mount-delivery.json",
+    "docs/true-4x-regeneration.md",
+    "docs/graphics-options-shadow-aa.md"
+  ]
+}

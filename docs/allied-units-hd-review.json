@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "baseline": "3b1bec1",
+  "status": "PASS_TASK_B_SELECTED_TECHNICAL_CHECKS_FINAL_USER_ACCEPTANCE_PENDING",
+  "completeNewRuntimeFamilies": 26,
+  "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-units/feedback-package-v1/RA2-HD-Allied-B-Corrections/Red Alert 2 HD Offline Trainer R1.app",
+  "approval": {
+    "direction": "APPROVED_WITH_THREE_AUTHORIZED_CORRECTIONS",
+    "final": "PENDING_USER_REVIEW",
+    "record": "docs/allied-units-hd-direction.json"
+  },
+  "qa": {
+    "status": "PASS_OFFLINE_REPRESENTATIVE_REVIEW",
+    "failed": 0,
+    "images": 235,
+    "articles": 29,
+    "comparisons": 103,
+    "overflow": false,
+    "fullDensityBuffers": true,
+    "inspectionToggle": true,
+    "external": [],
+    "errors": []
+  },
+  "protectedFiles": [
+    {
+      "path": "desktop/allied-building-coverage.json",
+      "sha256": "de1ea65b6b93897a8bc03af5881ad41b6c64ed624d67badb70f23ef48a5d5893"
+    },
+    {
+      "path": "src/engine/renderable/builder/UnitHdDemand.ts",
+      "sha256": "5b219828a5a1ec91d0cf0c6bda3c4fb14266ca3a95533fa8106d28192a566247"
+    },
+    {
+      "path": "src/engine/renderable/builder/alliedBuildingDemand.ts",
+      "sha256": "c41a4bf68db0a3b123e20f7c724f0b1ca49126c0a61d8e73b7d3c9b7e19bea1f"
+    },
+    {
+      "path": "src/engine/renderable/builder/loadSovietUnitsHd.ts",
+      "sha256": "3bbbb5945233e6e5c746f58ef6a2569352e4e6a94dcd86db6d847ea9a6d32a62"
+    },
+    {
+      "path": "src/engine/ImageFinder.ts",
+      "sha256": "cea49c910625964c4a710ae09639487f3e9f563ec5d59e2115027bec476819d4"
+    },
+    {
+      "path": "desktop/hd-profile.mjs",
+      "sha256": "0e80fd7aa5968dc6c82bbf37734fde0f269499a4972d5b236bfdbfe85d099905"
+    },
+    {
+      "path": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+      "sha256": "28fc943c850045934b54f104d3f24786768ea86d767b3737148d1819f458f36b"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gagap-temperate/1/family.json",
+      "sha256": "a28c018fe9463d197151cc3f4ef80abc70f4b7cabb44610116f835adc1af39fa"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gagap-snow/1/family.json",
+      "sha256": "3b87e49d3577575627573eb846b049d8598a67567b958eb1d67bbb36a4b78450"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gapill-temperate/2/family.json",
+      "sha256": "25e37d6c1bb8e7f590400f08d827c7413d56f34713e45ca778bb0284ed516d4d"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gapill-snow/2/family.json",
+      "sha256": "2a6d0f35dc853c968611a09fe4caefce407add769175ab125f5b987ea2fdf66e"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gtgcan-temperate/feedback-1/family.json",
+      "sha256": "b771dddd08861d834a1d430f9b9f6af14854e13e34d9d5cf7e9da63dce39a393"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gtgcan-snow/feedback-1/family.json",
+      "sha256": "29ae4e70b8224ffb569925ebd494b09d1626da335bb969368af6250021f4bcbe"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-nasam-temperate/2/family.json",
+      "sha256": "af0478ffaba7f7b1f7d5251643e88ba54a266b65699e4558dbd9a573d6231037"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-nasam-snow/2/family.json",
+      "sha256": "ba9d5271034daf4410896bcefd10bb1c3f74b0d8f99cf583c77d81359c122b50"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gawall-temperate/2/family.json",
+      "sha256": "1ab7b69f535dd05cdfb096629e0daa5087712bed7803f2dfa2b20d11fe012ebe"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gawall-snow/2/family.json",
+      "sha256": "b15b6b7fe06284c527002b25574d0f959c5103c4ed79abe0d26c00b4dd4c0f48"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gapile-temperate/2/family.json",
+      "sha256": "8bdf4b9f536d793dde878d7df0838bd3b7b11445b7ee519b1eb7f5561825434a"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gapile-snow/2/family.json",
+      "sha256": "e44811e1db346ceba7b1ad855a0821dcef0d5bf94d3257f0148e0602c67bbefa"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gaorep-temperate/2/family.json",
+      "sha256": "0b0e33febb709c35eb35aded8b8caabaf4617f5ddf290683069241cd41af94d6"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gaorep-snow/2/family.json",
+      "sha256": "4cadbf13b9111f958a8a3e18d0634488b35b9340bd12fbb4c25869e70dbef36b"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gatech-temperate/2/family.json",
+      "sha256": "deb1c56d855d5cb738c096051b2551bd294ef369bafe55f4f05c3e11b5005fac"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gatech-snow/2/family.json",
+      "sha256": "8690f931b3375c802b96fc10645f49e2162b489db7fd09bfd191c40df2911dda"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gaspysat-temperate/1/family.json",
+      "sha256": "9a82c39e3d0cde52b032e712966af249bc38a8e8b3f7540a1ba033d09f10d184"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gaspysat-snow/1/family.json",
+      "sha256": "d917ffe6246d1ab96f095ede6f5ca5105a486fa3141f5030c23afa46987e8db4"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-garobo-temperate/1/family.json",
+      "sha256": "7b9b9509c5e8034a44959c71053889d673d1a1cdeedbe9e8a4a755170c97f36e"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-garobo-snow/1/family.json",
+      "sha256": "5f201ad926dd818e8ba2f5ec9a4e43b1102901eed10f03bf010e8a29d91a07b6"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gaairc-temperate/feedback-1/family.json",
+      "sha256": "b22e5bcfad13717d49a762a461df8e19dbd1bd60153901987f4d00e6b425eea1"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gaairc-snow/feedback-1/family.json",
+      "sha256": "335cf25ccb9dca5230ccfca7696a16a72baacc98531df64576b6b82ef9014bac"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gapowr-snow/1/family.json",
+      "sha256": "5a0a91f5e56e4e21cfcae2386e420fe970b4933255e40a62ede55f64362e5445"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-atesla-temperate/1/family.json",
+      "sha256": "5c5d1c1088c80a57988399f5da4fe43d8d20d98190d213bdced1bd1b887a521e"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-atesla-snow/1/family.json",
+      "sha256": "243ae36f91004694bd6ea6344e7327200911c9bafe66a0da4205b41c8ff53b2b"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gacsph-temperate/feedback-1/family.json",
+      "sha256": "11177d658868295a7237e8cf6c47a179b5e94287939c87a92d25c8ba9cb3f5f8"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gacsph-snow/feedback-1/family.json",
+      "sha256": "e7563b36e61a1225b8839dfcc90cef4bb4f97e56aad88d30177ea5a8908a9c95"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gaweat-temperate/feedback-1/family.json",
+      "sha256": "68cf36215bd98b9a78d0cfb6f61a4e56736c11131bdc58eff0b3ad32b8399fcd"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gaweat-snow/feedback-1/family.json",
+      "sha256": "28d788bcaf5ecf6b6b44930b82d117df1c77b41b9dce19f89f33886d21223af6"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gadept-temperate/1/family.json",
+      "sha256": "718e676ea3fd34f4417da106d5e62f1abdb9c9f66b0809ccbb8b8bda4bb8ed03"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gadept-snow/1/family.json",
+      "sha256": "d0fb9d1ac30d0c3284ef9fa8739e1a56cf4c0ddaf752b0604976bf2a85f9931e"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-garefn-temperate/1/family.json",
+      "sha256": "fbf3de1086f3ff2c6bbd920dcc1d580a53518852b96a48acea0ad341af6f69b6"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-garefn-snow/1/family.json",
+      "sha256": "6c1e9ba6308d81e59e728931751c2aa24902ecb81516f30f0f71b3668973815f"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gaweap-temperate/1/family.json",
+      "sha256": "a05564d2e5e77c41913196d2eb5ad6f55467236f27036639daa8ead73dd29152"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gaweap-snow/1/family.json",
+      "sha256": "391d46fd107fb6238edb7339924b54cc52e49beb3b3839408a4c3e64d210a2b1"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gacnst-temperate/1/family.json",
+      "sha256": "f7c2d99f1b07dee7b2d62f6221bdc5b6e8f0f6a2b8fa177109200cb091f5e452"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gacnst-snow/1/family.json",
+      "sha256": "bb5b203d96b10e527883d7d0eb1d964dc5ee6dabdd26cac418d849332d5b4fa8"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gayard-temperate/1/family.json",
+      "sha256": "c65aad52862745d3f6f04021ee471bca68fae197850f859f70b6596056081325"
+    },
+    {
+      "path": ".local/hd-packs/allied-coverage-gayard-snow/1/family.json",
+      "sha256": "2d5aaeff7f42e5fab0f03080183edb0ad7d69715c386bec7e46b46f18fd4ee95"
+    }
+  ],
+  "evidence": [
+    {
+      "path": ".artifacts/allied-units/coverage-ledger-v1.json",
+      "sha256": "edd419078ad7ef7c9ac6bd5b5e4b9a75d10432f4424e72fec834caf1f0c86068"
+    },
+    {
+      "path": ".artifacts/allied-units/source-verification-v1.json",
+      "sha256": "2257542183419e23184d6938f4775aad00e764ed2b707c2d67baf25d5e288f05"
+    },
+    {
+      "path": ".artifacts/allied-units/dependencies-v1.json",
+      "sha256": "07dbd9133bb2fd9ca52d7893f381fc1647fbf51c520a44c081da1b7c4bd6a320"
+    },
+    {
+      "path": ".artifacts/allied-units/reuse-audit-v1.json",
+      "sha256": "0defe991bd8937d19f01506d870c518bf668fd22004d676d7fa9e3f69453ed01"
+    },
+    {
+      "path": ".artifacts/allied-units/imagegen-prompts-v2.json",
+      "sha256": "77312797a68bf64dd850f3535fe4d9d81193c04ed4494379c54a6a5a77583555"
+    },
+    {
+      "path": ".artifacts/allied-units/review-v1/receipt.json",
+      "sha256": "b21085cbd5c3e21b4a7b995e553ee31751dd7bbce4d3a473f1d0ad985e78881e"
+    },
+    {
+      "path": ".artifacts/allied-units/review-v1/html-check.json",
+      "sha256": "8f55a70901677c0d14e2acdb89b83d7bd3ead77681021fa8175c7e26098dd59b"
+    },
+    {
+      "path": ".artifacts/allied-units/review-v1/Allied-Units-Representative-Review.html",
+      "sha256": "0850d25eb1c0706fac92289ee76f6ff551f73c6ea193ba621fa1ae9162f13d7e"
+    },
+    {
+      "path": ".artifacts/allied-units/delivery-receipt-v1.json",
+      "sha256": "b6f4ec2b4578a1c7ce4a83d3fce9d75dbe64e0210af2518bd1f49e7d0f762f8f"
+    }
+  ],
+  "representatives": [
+    {
+      "id": "ADOG",
+      "raw": ".artifacts/allied-units/art-v2/ADOG.png",
+      "rawSha256": "0aa172eea0695a725edd26e6079a484a4ba350b5b60b23b7f76fca0cf62065e0",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "AEGIS",
+      "raw": ".artifacts/allied-units/art-v1/AEGIS.png",
+      "rawSha256": "34da83a25a28d5939b83a5c905a057d778cb96e06b0a1c1c09db315f9a485ae1",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "AMCV",
+      "raw": ".artifacts/allied-units/art-v1/AMCV.png",
+      "rawSha256": "13d413485c404c0d3b3c8a5566db8ebf0eae2fee9ecebab1b1e9b5bfa9f22c12",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "ASW",
+      "raw": ".artifacts/allied-units/art-v1/ASW.png",
+      "rawSha256": "15c764c5f84395dff947fe09e018dcc94b6929181c8969741659bc69c83aa954",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "BEAG",
+      "raw": ".artifacts/allied-units/art-v2/BEAG.png",
+      "rawSha256": "c2d2dd6c4ecee392aee6501eabb0229b366a33b8d35b1cc5fb019cc0fc0463cb",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "BFRT",
+      "raw": ".artifacts/allied-units/art-v1/BFRT.png",
+      "rawSha256": "7315be647c6c534decdf768a30764332fc6ff30acd7f76b8f13933cf0d961ba4",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "CARRIER",
+      "raw": ".artifacts/allied-units/art-v1/CARRIER.png",
+      "rawSha256": "5b34e57b66c8f5cb1d50ae34aafb7f3384077036e9a7f781a199615d79cb49aa",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "CLEG",
+      "raw": ".artifacts/allied-units/art-v1/CLEG.png",
+      "rawSha256": "ed86cba0405b7baef4f780f55a4955b3315016eb2ef626ad69a4b8f1624a7d31",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "CMIN",
+      "raw": ".artifacts/allied-units/art-v1/CMIN.png",
+      "rawSha256": "97e28d511dbb7de1c4c4c1f8da443f45cc46dadd8c78ff4740a6b70b6143ac36",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "CMON",
+      "raw": ".artifacts/allied-units/art-v1/CMON.png",
+      "rawSha256": "b6947548d36f01056b06603237d8e7bdfe18a1b471d7a2d7bb59b057291f034b",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "DEST",
+      "raw": ".artifacts/allied-units/art-v1/DEST.png",
+      "rawSha256": "d36c0f61eaf45c3e1d2c17a3e3d4530104e00fb4f3cca21604d06e51dff4bc7e",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "DLPH",
+      "raw": ".artifacts/allied-units/art-v1/DLPH.png",
+      "rawSha256": "99c7e3b19f29b86d3b14d26f628cd06bb2658d74196e41c99bb1b08dacbef681",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "E1",
+      "raw": ".artifacts/allied-units/art-v1/E1.png",
+      "rawSha256": "1f68c58b24ed8f46fa9d464b4bac332f57786aa51c6e40b30751ac6c8ce61cda",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "FV",
+      "raw": ".artifacts/allied-units/art-v1/FV.png",
+      "rawSha256": "42efaa96ca0d2cd3d64e1cc755f4da6f4da7a79d749d78f16f97e8c84b27d88d",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "GGI",
+      "raw": ".artifacts/allied-units/art-v1/GGI.png",
+      "rawSha256": "60b491661dfe35ed623357c6a2b7c20f65c581570a1298fb5c9352c9ada9801c",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "GHOST",
+      "raw": ".artifacts/allied-units/art-v1/GHOST.png",
+      "rawSha256": "5c479e804fc0860fec83cbba10ce9633d3c417256bed0c84ead3cc93583bf1f0",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "HORNET",
+      "raw": ".artifacts/allied-units/art-v1/HORNET.png",
+      "rawSha256": "76e4fdd56243c37c4057e17ee0920f9d44611a5f4c19b229900b2b559ed3c6bc",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "JUMPJET",
+      "raw": ".artifacts/allied-units/art-v1/JUMPJET.png",
+      "rawSha256": "cf383f4ac2e8eaac0486f7017c09ccb55dc3b6264112a6bdf660ffc9c6534988",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "LCRF",
+      "raw": ".artifacts/allied-units/art-v1/LCRF.png",
+      "rawSha256": "4532b3df89586eda0bffadaa15ce1b5065601ed789e77a8da5fd4cb3c2c73bcc",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "MGTK",
+      "raw": ".artifacts/allied-units/art-v1/MGTK.png",
+      "rawSha256": "1312b32b4bc639d1dbd25cf754a4cf3797e4b93ab1517c8df5f7ab15d8ee1306",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "MTNK",
+      "raw": ".artifacts/allied-units/art-v1/MTNK.png",
+      "rawSha256": "1036cbc42f5f9300d06dca8ba763d52f8b1ad01403af3871a332be1b212c63f2",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "ORCA",
+      "raw": ".artifacts/allied-units/art-v1/ORCA.png",
+      "rawSha256": "18778b857d5dec722f22f5eae55da442f975b2747509f6d01e3e9e8bd50e36fc",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "ROBO",
+      "raw": ".artifacts/allied-units/art-v1/ROBO.png",
+      "rawSha256": "24d1caed57b84661ff7209168dacbf76604fdd6bb0da7dc1d901a16951571a12",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "SHAD",
+      "raw": ".artifacts/allied-units/art-v1/SHAD.png",
+      "rawSha256": "c89ad14e10e7c1051eafdd3a9acf70f3ad4868cdd925de21e368932b19f82a25",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "SNIPE",
+      "raw": ".artifacts/allied-units/art-v1/SNIPE.png",
+      "rawSha256": "2170c88b4f506f79ad8f6b1bb927699f61f2dd72ed648b886d61beacbc1f5ba2",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "SPY",
+      "raw": ".artifacts/allied-units/art-v1/SPY.png",
+      "rawSha256": "a12a0eecef149f734549303501b8055cbe4dc20cca53791881c0850cfb1d115f",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "SREF",
+      "raw": ".artifacts/allied-units/art-v2/SREF.png",
+      "rawSha256": "c17fe2823258c78cc9f10c7cbf0b7b045800b98ca3ef2b8b87407522d1665a66",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "TANY",
+      "raw": ".artifacts/allied-units/art-v1/TANY.png",
+      "rawSha256": "e9a955289c8a27c616816fdb65c655aa3d51decaad9c4c87f09ae1a08d621be8",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    },
+    {
+      "id": "TNKD",
+      "raw": ".artifacts/allied-units/art-v1/TNKD.png",
+      "rawSha256": "32850ca9fdd7f69404e1c578cc869dbbc3389a6824ac2ebd93020bcfe1fa19a9",
+      "status": "REPRESENTATIVE_ONLY_NOT_RUNTIME"
+    }
+  ],
+  "representativeCheckpointStatus": "GROUPED_REPRESENTATIVE_REVIEW_PENDING",
+  "delivery": {
+    "schemaVersion": 1,
+    "status": "PASS_TASK_B_SELECTED_TECHNICAL_CHECKS_FINAL_USER_ACCEPTANCE_PENDING",
+    "scope": "Task B Allied units only",
+    "authoredFamilies": 26,
+    "acceptedReuseIdentities": [
+      "ENGINEER",
+      "CCOMAND",
+      "PTROOP",
+      "CIVAN"
+    ],
+    "nativeFamilyCases": 30,
+    "shpBodySlots": 3407,
+    "shpMembers": 11,
+    "vxlComponents": 34,
+    "vxlBearings": 272,
+    "density": 2,
+    "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-units/final-package-v1/RA2-HD-Allied-B-Mac-Test/Red Alert 2 HD Offline Trainer R1.app",
+    "resources": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-units/final-package-v1/RA2-HD-Allied-B-Mac-Test/RA2-HD-Editions-Resources",
+    "runtimeSourceHead": "9bca90ccdd2b3451a9000bf0b646acd57da3c6a1",
+    "review": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+    "feedbackComparison": ".artifacts/allied-units/Feedback-Native-Comparison.png",
+    "maxCombinedAllocationBytes": 203268940,
+    "worldOptionalBudgetBytes": 268435456,
+    "finalAcceptance": "PENDING_USER_REVIEW",
+    "evidence": [
+      {
+        "path": ".artifacts/allied-units/registration-v5.json",
+        "sha256": "7eb2e741cce0505b4fc096ef4d78714ef45806dde46e4f27ae9cd1484e78afd8"
+      },
+      {
+        "path": ".artifacts/allied-units/native-family-results-v1.json",
+        "sha256": "a65bd2439a2ead538c1f8c55d37be888c38129f0557a6c2634cebdc60f047a06"
+      },
+      {
+        "path": ".artifacts/allied-units/native-combined-v1/report.json",
+        "sha256": "ac75e816c132598d39087d5b1a116149badb5933fae624dc32bc009b3ec87d9d"
+      },
+      {
+        "path": ".artifacts/allied-units/shared-results-v1.json",
+        "sha256": "9e3b2f1ad0cfd03adcc100ffd1f774ce84f15a628c24109acee5ef5cbec5aee2"
+      },
+      {
+        "path": ".artifacts/allied-units/final-review-ui-v1.json",
+        "sha256": "9d9b70b86a73499b85a114eb9a5b79c7e713686f34fcde88cde1d9bb782f557b"
+      },
+      {
+        "path": ".artifacts/allied-units/Allied-Units-Final-Review.html",
+        "sha256": "6746c2bacfe095a6e57e1cdcabb7de8cb285c05c6763771351910e2a4b0c5518"
+      },
+      {
+        "path": ".artifacts/allied-units/Feedback-Native-Comparison.png",
+        "sha256": "c4dfb95ee2c6d058be0c7d32a9a30c174c5e1daecf993feab0510b5892634709"
+      },
+      {
+        "path": ".artifacts/allied-units/final-package-v1/package-receipt.json",
+        "sha256": "069d1ad12df5260773efcf422b59e7a4f8a52241a8a8fbce57c8eb4f4395e2dc"
+      },
+      {
+        "path": ".artifacts/allied-units/final-build-v1/identity.json",
+        "sha256": "a03fd82bfbbed731e5c79d0adabc07b4c2c3f1d12414a79db2d7649bfd470927"
+      }
+    ],
+    "validationBoundary": "Controlled native actions in YR for 30 roots; four mixed RA2/YR temperate/snow cases and both-edition CPU resolution where available. Not a natural-match production claim. Unchanged Conscript/Rhino mechanics evidence is reused; old full milestone acceptance was not repeated.",
+    "knownTechnicalBlockers": [],
+    "feedbackCorrectionDelivery": {
+      "status": "PASS_INCREMENTAL_FEEDBACK_RUNTIME_FINAL_USER_ACCEPTANCE_PENDING",
+      "baseline": "8bc3c22",
+      "notes": "docs/allied-units-hd-feedback.md",
+      "selection": ".artifacts/allied-units/selected-candidates-v10.json",
+      "review": ".artifacts/allied-units/Allied-Units-Feedback-Review.html",
+      "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-units/feedback-package-v1/RA2-HD-Allied-B-Corrections/Red Alert 2 HD Offline Trainer R1.app",
+      "packageReceipt": ".artifacts/allied-units/feedback-package-v1/package-receipt.json",
+      "evidence": [
+        ".artifacts/allied-units/feedback-air-v1/report.json",
+        ".artifacts/allied-units/feedback-naval-v1/report.json",
+        ".artifacts/allied-units/feedback-parking-v1/report.json",
+        ".artifacts/allied-units/feedback-quality-v1/report.json",
+        ".artifacts/allied-units/feedback-registration-v1.json",
+        ".artifacts/allied-units/feedback-preservation-v1.json"
+      ],
+      "newVxlDensity": 4,
+      "shpDensity": 2,
+      "artworkRedrawn": false,
+      "sourceAlphaChanged": false,
+      "priorAcceptanceNotRepeated": true
+    }
+  },
+  "feedbackCorrections": {
+    "status": "PASS_INCREMENTAL_FEEDBACK_RUNTIME_FINAL_USER_ACCEPTANCE_PENDING",
+    "baseline": "8bc3c22",
+    "notes": "docs/allied-units-hd-feedback.md",
+    "selection": ".artifacts/allied-units/selected-candidates-v10.json",
+    "review": ".artifacts/allied-units/Allied-Units-Feedback-Review.html",
+    "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-units/feedback-package-v1/RA2-HD-Allied-B-Corrections/Red Alert 2 HD Offline Trainer R1.app",
+    "packageReceipt": ".artifacts/allied-units/feedback-package-v1/package-receipt.json",
+    "evidence": [
+      ".artifacts/allied-units/feedback-air-v1/report.json",
+      ".artifacts/allied-units/feedback-naval-v1/report.json",
+      ".artifacts/allied-units/feedback-parking-v1/report.json",
+      ".artifacts/allied-units/feedback-quality-v1/report.json",
+      ".artifacts/allied-units/feedback-registration-v1.json",
+      ".artifacts/allied-units/feedback-preservation-v1.json"
+    ],
+    "newVxlDensity": 4,
+    "shpDensity": 2,
+    "artworkRedrawn": false,
+    "sourceAlphaChanged": false,
+    "priorAcceptanceNotRepeated": true
+  },
+  "previousApp": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/allied-units/final-package-v1/RA2-HD-Allied-B-Mac-Test/Red Alert 2 HD Offline Trainer R1.app"
+}

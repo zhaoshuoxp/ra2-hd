@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "status": "STAGE_A_READY_WINDOWS_EVIDENCE_PENDING",
+  "diagnosticId": "WINHD-20261008-D38F136-A1",
+  "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+  "diagnosticCommit": "da085faa5416de063f12aedf9bc2c0fc19ebee34",
+  "gameplaySourceIdentity": {
+    "frozenMain": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "acceptedRuntime": "69a8ce57f187bd21d7de864b14473ecf9ed48e33",
+    "applicationSourceParity": "EXACT",
+    "gameplayChanges": [],
+    "bundleBoundary": "Frozen-source hidden-map rebuild; diagnostic bundle bytes differ from retained R10."
+  },
+  "branch": "perf/windows-hd-investigation",
+  "worktree": "/Users/Aone/RA2remaster/ra2-hd-windows-perf",
+  "archive": {
+    "status": "PASS_FULL_ARCHIVE_AND_FRESH_EXTRACTION",
+    "diagnosticId": "WINHD-20261008-D38F136-A1",
+    "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "diagnosticCommit": "da085faa5416de063f12aedf9bc2c0fc19ebee34",
+    "archive": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-A1-da085fa-Windows-x64.zip",
+    "bytes": 3499702463,
+    "sha256": "58a6313dfc4cf4aeb5800487a845d50a5d7c6cd86953ee86c625ccb76e72d731",
+    "manifestSha256": "02ed28acd60d9edcd204ca5b5230fdf03f91e4eb46e4a5e8ae8baa743399c95b",
+    "entries": 8061,
+    "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/fresh-asar/RA2-HD-WINHD-20261008-D38F136-A1-da085fa-Windows-x64",
+    "windowsNative": "NOT_RUN"
+  },
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCPU": 128,
+    "ui": 16
+  },
+  "resources": {
+    "worldAndUIFiles": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+  },
+  "validation": {
+    "archiveAndFreshExtraction": "PASS_ALL_8061_ENTRIES",
+    "electronBuiltInNodeKitVerification": {
+      "schemaVersion": 1,
+      "diagnosticId": "WINHD-20261008-D38F136-A1",
+      "manifestSha256": "02ed28acd60d9edcd204ca5b5230fdf03f91e4eb46e4a5e8ae8baa743399c95b",
+      "checked": 8060,
+      "failures": [],
+      "status": "PASS",
+      "verifiedAt": "2026-10-08T20:59:50.849Z"
+    },
+    "packagedExport": "PASS_FINAL_IDENTITY_VERIFICATION_ONLY",
+    "rawNativeExport": "PASS_CRC_HASH_IDENTITY_AND_PROFILE_EXCLUSIONS",
+    "nativeMac": "PASS_BOUNDED_TOOLING_SMOKE_WITH_REAL_GAME_BINDINGS_AND_TRACE",
+    "nativeReuseBoundary": "The final package changes only the export/verification module and its reference copy from the freshly extracted native-tested 88fd5aa kit. All 8058 other cataloged files, including actual capture app, bundles, complete resources and launchers, are byte-identical. Native runtime proof is reused without relabeling raw receipts. Final packaged CLI checks use the new identity.",
+    "earlierFocusedCases": [
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-small-original-v1/report.json",
+        "bytes": 1488402,
+        "sha256": "d63b437d1e3875d9aeda3cfea3e7e4375856a3f2479479457e0bbad4c33d8b6c"
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-small-2x-v5/report.json",
+        "bytes": 31288066,
+        "sha256": "9543f5eb3ab52692b5f6d875a7fd33dba9b80f8ec2c28fac9c39976e568d2bda"
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-small-4x-v1/report.json",
+        "bytes": 24962904,
+        "sha256": "82cb00e1d7f32d2cd2bd0a358fc42047c4db18887ca17364e1dedfe8b5b397e3"
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-stress-4x-v2/report.json",
+        "bytes": 57155748,
+        "sha256": "c948b5864c11d56f0f65015f34d05182cc81fab0a52dd0c4fabb07d1a6ca82f3"
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-first-use-trace-v2/report.json",
+        "bytes": 24962166,
+        "sha256": "37502bbef0e6f2ba99832fe477ab57f1874f3be230c4d6c152cc960292821cb6"
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-720p-control-v1/report.json",
+        "bytes": 24981630,
+        "sha256": "65be571ac8d9a83fa9d10f8363cf60f20c8a5c2dc0600cbbf450ffc112d7bd4b"
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-frozen-control-v1/report.json",
+        "bytes": 24968952,
+        "sha256": "0a057500404ea9bdf8d6b55af40c96bb3c5319cbab7b59ecab97ff2eb46ff424"
+      }
+    ],
+    "earlierCaseBoundary": "Incremental exploratory QA-copy functional cases, not final packet byte-identity proof or Windows benchmarks. Latest native smoke and byte-parity receipt are primary closure evidence.",
+    "protectedTests": {
+      "passed": 14,
+      "assertions": 138
+    },
+    "toolingTests": {
+      "passed": 5,
+      "assertions": 23
+    },
+    "sourceMaps": {
+      "exactMatchingMaps": 122,
+      "observedProfileMappedJavaScriptUrls": 25,
+      "nativeSymbols": "NOT_INCLUDED"
+    },
+    "readOnlyReferenceFiles": 1745,
+    "x64PEFiles": 7,
+    "evidence": {
+      "build.log": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/build.log",
+        "bytes": 22627,
+        "sha256": "b0563da14102e6fecccb06051376451ebbe5f17c38f108d10a3cb2f7a3e6eedb"
+      },
+      "typecheck.log": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/typecheck.log",
+        "bytes": 39,
+        "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+      },
+      "protected-regressions.log": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/protected-regressions.log",
+        "bytes": 1658,
+        "sha256": "965cfabf32227cb78b8cef81fb2b964a54ae993604e866534c8075a046b25a82"
+      },
+      "tooling-tests-asar.log": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/tooling-tests-asar.log",
+        "bytes": 605,
+        "sha256": "c4144f7eec7914ea38924d7c6cd20ddb0a933240536b3a1370fdcdcfb6bf50e0"
+      },
+      "archive-asar.json": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/archive-asar.json",
+        "bytes": 743,
+        "sha256": "ee610059e926c6caf4ee60fd904680fc1af9666fb15d66496fb146ad2692d3b8"
+      },
+      "verify-delivery.log": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/verify-delivery.log",
+        "bytes": 375,
+        "sha256": "9bb8d808633e7569415cd70c0eba60bcb8282372683c88b749481ebec21a1971"
+      },
+      "export-delivery-validation.json": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/export-delivery-validation.json",
+        "bytes": 553,
+        "sha256": "fdf4df1745ad9dc413072117ebdd60b33424ba4f366fa697f49e8eba39453df7"
+      },
+      "native-final-extracted/report.json": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-final-extracted/report.json",
+        "bytes": 31291189,
+        "sha256": "9e6e063dc90efd18d1616d016f03789b5f23c1400ac2bd2c7a7a6fd8fb441289"
+      },
+      "native-final-summary.json": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-final-summary.json",
+        "bytes": 439,
+        "sha256": "529cdb667d4cae51b6c2dff06ebe760f5b72ed032151d6bc6a3b47c7b4735c26"
+      },
+      "native-delivery-parity.json": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-delivery-parity.json",
+        "bytes": 566,
+        "sha256": "7a1e9c544617fbbdc29239f22c66a860e7ca923363c63eeb82b4a97b2fe1045b"
+      },
+      "export-native-final-validation.json": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/export-native-final-validation.json",
+        "bytes": 496,
+        "sha256": "251c5856a8823ae01a587bf55d0ab35c40791d133ace7baad734f9e876dd9d8b"
+      }
+    }
+  },
+  "preservedFailures": [
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-smoke-v1.log",
+      "bytes": 1051,
+      "sha256": "b5b697d7b20ad3afc254b8fd3374a132dc27c864654f7f80b60b8510e7252434"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-small-2x-v3.log",
+      "bytes": 486,
+      "sha256": "81312b7184684d85aba9c3e2992774121307bbd7a1782aeb89d173abea291fc0"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-small-2x-v4.log",
+      "bytes": 283,
+      "sha256": "79c2c774bc84d6604440a3a8ab04d3c63774b8083a92ea4cda979bfd7d7b3eb3"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-stress-4x-v1.log",
+      "bytes": 478,
+      "sha256": "4a1dcb65f8c264f001979c06898560021d3239f50b491e7ff77d25728bc1deac"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/native-first-use-trace-v1.log",
+      "bytes": 525,
+      "sha256": "b1490598f765dfec1525a419405a8b18fc4649f7346830cc7fbf315f83aac497"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/verification-asar-failure.json",
+      "bytes": 296,
+      "sha256": "ca8516ec3bc506024032e231746a85c4e58bd12be61a9f307ffc7841e899cbec"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/verify-final.log",
+      "bytes": 569,
+      "sha256": "412e33f71583e53b853d3bc3f854b10d0b7db838ab18aa917bf97e87732d37b6"
+    }
+  ],
+  "asarCorrection": "Electron virtual ASAR lookup made the original raw-byte verification reject default_app.asar. The dedicated export/verification process now uses installed process.noAsar=true. Raw failed receipts and the superseded 88fd5aa package remain preserved. This is a tooling correction, not a gameplay performance repair.",
+  "windows": {
+    "staticPackage": "PASS",
+    "nativeRuntime": "NOT_RUN",
+    "actualHardwareBackend": "EVIDENCE_PENDING",
+    "smallestReproducer": "USER_CONFIRMATION_PENDING",
+    "performanceCause": "NOT_CONFIRMED",
+    "sourceRepair": "PENDING_WINDOWS_EVIDENCE",
+    "physicalInputAcceptance": "NOT_RUN",
+    "userExperienceAcceptance": "PENDING"
+  },
+  "preservation": {
+    "main": "Verified clean at d38f136; no gameplay/build/dependency/production-entry changes",
+    "m2_3": "Independent and untouched",
+    "originalPackagesProfilesDistAndAssets": "Preserved",
+    "merge": "NOT_DONE",
+    "remotePush": "NOT_DONE"
+  },
+  "next": "Transfer final ZIP to Windows, follow START-HERE.txt, return exact raw RETURN ZIP and subjective notes to the same conversation; validate identity before investigation and inspect supplied scripts as data."
+}

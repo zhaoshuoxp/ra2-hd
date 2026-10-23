@@ -1,0 +1,9 @@
+# M2.4 NewUrban building preflight, batch 87
+
+Read-only comparison checks all 98 remaining original building bodies and nine linked sources against the selected accepted Urban contract. Actual source geometry, fixed palette colors, owner shades, contact, alpha and original shadows are compared per slot. Rubble uses the actual NewUrban isoubn palette. There are 397 eligible visible slots across body and linked sources; 69 building bodies match accepted normal/damaged/occupied slots. Sixteen sources have no unambiguous same-named donor under this bounded audit; they remain open rather than excluded.
+
+Twenty complete buildings are prepared for exact reuse of sixty body states and production of twenty different rubble states. Four additional complete-family candidates (CAPARK04/05/06 and CAMISC06) have exported exact accepted PNG payloads, but are not selected or claimed as native coverage. One built-in imagegen rubble mother is retained without selection; the remaining mothers and all new rubble exports are pending.
+
+Work is temporarily redirected to the user's airport marking correction in batch 86. No NewUrban selector, map, rule or coverage changes have occurred. Source/evidence paths are under `.artifacts/m2-4/newurban-reuse-batch87-preflight-v1`, `newurban-building-rubble-native-batch87-v1`, `newurban-building-rubble-authoring-batch87-v1` and `newurban-complete-reuse-export-batch87-v1`. The accepted artwork authority is inherited from the immutable batch 86 resource ledger and earlier user decisions; different NewUrban states still require production, technical validation and grouped visual review. Windows NOT_RUN. M2.4 remains incomplete.
+
+This historical preflight snapshot is superseded by the technical delivery and pending nineteen-study visual gate in docs/m2-4-newurban-buildings-batch87-20261020.md. Its original preparation-time counts and interruption record remain preserved.

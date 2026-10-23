@@ -1,0 +1,31 @@
+{
+  "schema": "m2-3-user-acceptance-v1",
+  "status": "USER_ACCEPTED",
+  "date": "2026-10-10",
+  "acceptedTaskCommit": "90cc0019df647f60251a24744be7f5f005cb45e8",
+  "runtimeSourceCommit": "1c93a928d9ae13e91a4bcb35579e1cd532ae13da",
+  "feedbackRevision": "R16",
+  "userDecision": "Accepted; integrate into local main and generate a handoff report for the existing planning conversation.",
+  "authorized": [
+    "Local main integration",
+    "Additive selected resource transfer",
+    "Focused combined-main validation",
+    "Integration report"
+  ],
+  "excluded": [
+    "Remote push",
+    "Cleanup",
+    "Adjacent milestone execution"
+  ],
+  "environmentSelection": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-3-oil-paired-drive-complete-v31",
+    "sha256": "96d49880153aa1101704f15cca00c48afc28a9bb303c130c917f090c1952d447"
+  },
+  "terrainSelection": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-3-gameplay-feedback-v12",
+    "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+  },
+  "historicalEvidencePolicy": "Retain historical pending and rejected receipts; this record supersedes the R16 user-acceptance gate only."
+}

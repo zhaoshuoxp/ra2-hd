@@ -1,0 +1,2257 @@
+{
+  "schema": "m1-7-consolidated-coverage-v3",
+  "status": "M1_7_ACCEPTED_AND_DELIVERED",
+  "representativeAcceptance": "24_OF_24_ACCEPTED",
+  "newFamilies": 24,
+  "technicalTemperateFamilies": 22,
+  "acceptedHdFamilies": 22,
+  "correctionReviewPending": [],
+  "originalRequested": [
+    "SQD"
+  ],
+  "artCorrectionBlocked": [],
+  "blocked": [
+    "YURIPR"
+  ],
+  "preserved": [
+    "E2",
+    "HTNK"
+  ],
+  "finalAcceptance": "ACCEPTED_DELIVERED_SCOPE_WITH_EXPLICIT_ORIGINAL_EXCEPTIONS",
+  "worktree": "/Users/Aone/RA2remaster/ra2-hd-units-m1-7",
+  "branch": "m1-7-soviet-units",
+  "buildingCheckpoint": "ee371e0f42b77fd943bf5cd7c1ef6fa8fd2b7cc6",
+  "app": "/Users/Aone/RA2remaster/ra2-hd-units-m1-7/.artifacts/m1-7/build-2026-09-23T03-19-41-727Z/Red Alert 2 HD M1.7.app",
+  "source": "5464d9daa1904278d4e5362074a95d0247ea7bcf",
+  "sourceDigest": "8cf66bde00ad91ac75d6ae4f77b6d0966a5d28e05d30d98387d2184c4f9b83f7",
+  "memory": {
+    "unitBytes": 46585172,
+    "acceptedBaselineBytes": 187108124,
+    "combinedBytes": 233693296,
+    "capBytes": 268435456,
+    "remainingBytes": 34742160
+  },
+  "commonValidation": {
+    "mixedStates": ".artifacts/m1-7/runtime-mixed-fire-scale-v1/result.json",
+    "bridgeAssessment": ".artifacts/m1-7/runtime-mixed-fire-scale-v1/bridge-assessment.json",
+    "nativeOutput": [
+      1491,
+      1080
+    ],
+    "referenceHeight": 900,
+    "cameraZoom": 1,
+    "typecheck": ".artifacts/m1-7/typecheck-fire-scale-final.log",
+    "regression": ".artifacts/m1-7/regression-fire-scale-final.log"
+  },
+  "limits": [
+    "All delivered units and corrections are accepted. SQD is user-selected Original; YURIPR guarded Original is accepted as a delivered exception while its upstream Psi Wave blocker remains unresolved.",
+    "Runtime activation is temperate only. Snow and urban retain Original and are not certified as HD.",
+    "Windows, physical panel output, long-battle performance, campaign, online and iCloud transfer are unverified.",
+    "Generic effects, shadows, wakes, sounds and cameos retain native resources. Native shadow opacity follows cloak/warp.",
+    "Native action scenarios use disclosed prerequisite/target placements; full frame/bearing sweeps and special-state fixtures are controlled tests.",
+    "Shared SHP geometry/shadow/opacity and accepted Conscript occlusion archetype tests are reused; not every infantry was separately marched through every terrain or transport context."
+  ],
+  "families": [
+    {
+      "id": "DRON",
+      "name": "Terror Drone",
+      "group": "ground",
+      "representation": "SHP",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-dron-family/2/family.json",
+      "manifestSha256": "891c33cca1a7c6e11da20d5ac67556e84de233d8a6cfee3255e166e4d938d498",
+      "members": [
+        "dron.shp",
+        "dronp.shp"
+      ],
+      "authoredPositions": 120,
+      "effectiveDensity": 2,
+      "gpuBytes": 844672,
+      "sourceBinding": {
+        "rulesIdentity": "DRON",
+        "resolvedArt": "DRON",
+        "sourceMemberHashes": {
+          "dron.shp": "c5d2a3a0b58c664bd5d8cbf033f865588224e6888552c83ec4b44f2b32dd2e94",
+          "dronp.shp": "ce9a848c52f36abe8f873c6c3efe421373c0cde3f304090a03c3188ecadff161"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "walk": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dron-v5/result.json"
+        },
+        "leap/infect": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dron-v5/result.json"
+        },
+        "hidden inside host": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dron-v5/result.json"
+        },
+        "host/removal cleanup": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dron-v5/result.json"
+        },
+        "limbo projectile / 32 native bearings": {
+          "status": "PASS_NATIVE_ACTION_AND_CONTROLLED_SWEEP",
+          "evidence": [
+            ".artifacts/m1-7/runtime-dron-v5/result.json",
+            ".artifacts/m1-7/runtime-dron-sweep-v4/result.json"
+          ]
+        }
+      },
+      "actions": "Normal production, movement, HD leap, hidden infection, host damage/death, return and removal.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-dron-v5/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-dron-sweep-v4/result.json",
+      "nativeStatus": "PASS_DRON_NATIVE_PRODUCTION_LEAP_INFECTION_RETURN_AND_REMOVAL",
+      "sweepStatus": "PASS_PAUSED_COMPLETE_BODY_AND_LIMBO_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "DRONICON",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": [
+        {
+          "role": "limbo-launched-unit",
+          "art": {
+            "Rotates": "yes"
+          },
+          "member": "dronp.shp",
+          "binding": "DroneJump/JUMP carries DRON while the actor is in limbo"
+        }
+      ]
+    },
+    {
+      "id": "SENGINEER",
+      "name": "Soviet Engineer",
+      "group": "infantry",
+      "representation": "SHP",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-sengineer-family/3/family.json",
+      "manifestSha256": "0b96c0291d1a0bbeda0370c25b28f52525278fe48b0cb9683c6d4bc5977faecc",
+      "members": [
+        "engineer.shp"
+      ],
+      "authoredPositions": 253,
+      "effectiveDensity": 2,
+      "gpuBytes": 2140544,
+      "sourceBinding": {
+        "rulesIdentity": "SENGINEER",
+        "resolvedArt": "ENGINEER",
+        "sourceMemberHashes": {
+          "engineer.shp": "f8eb0dc0156a877028ac2ed57bf2e71a9445ffcb6ef6a4caf3b0dbb7b111834c"
+        },
+        "sequence": "EngineerSequence",
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "walk": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-sengineer-v5/result.json"
+        },
+        "enter/capture/repair/removal": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-sengineer-v5/result.json"
+        },
+        "Allied ENGINEER isolation": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-sengineer-v5/result.json"
+        },
+        "captured-owner remap": {
+          "status": "PASS_PAUSED_TWO_OWNER_PALETTE_SWEEP",
+          "evidence": ".artifacts/m1-7/runtime-sengineer-sweep-v3/result.json",
+          "note": "Palette behavior is measured; no natural mind-control capture of this engineer is claimed."
+        }
+      },
+      "actions": "Normal production, movement, building entry/capture/repair and disposal; Allied ENGINEER retains Original.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-sengineer-v5/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-sengineer-sweep-v3/result.json",
+      "nativeStatus": "PASS_SENGINEER_NATIVE_PRODUCTION_CAPTURE_REPAIR_DEATH_AND_REMOVAL",
+      "sweepStatus": "PASS_PAUSED_INFANTRY_FRAMES_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "ENGNICON",
+        "altCameo": "ENGNUICO",
+        "explosion": [],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "DOG",
+      "name": "Attack Dog",
+      "group": "infantry",
+      "representation": "SHP",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-dog-family/1/family.json",
+      "manifestSha256": "f868b23d86eb301ed16c7e9eb092c14d15e744cb34626657f01009fe8d42dca4",
+      "members": [
+        "dog.shp",
+        "dogp.shp"
+      ],
+      "authoredPositions": 204,
+      "effectiveDensity": 2,
+      "gpuBytes": 1598144,
+      "sourceBinding": {
+        "rulesIdentity": "DOG",
+        "resolvedArt": "DOG",
+        "sourceMemberHashes": {
+          "dog.shp": "7fd747a5d874c8a3613fae87eb8ef438e9b31778c32150830afcd7a992383ff7",
+          "dogp.shp": "9571109f20bddd2ba051bf3ce0eae5071ddfa40275996f631235cc025f18d855"
+        },
+        "sequence": "DogSequence",
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "run": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dog-v2/result.json"
+        },
+        "leap/attack": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dog-v2/result.json"
+        },
+        "death": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dog-v2/result.json"
+        },
+        "hidden-state disposal": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dog-v2/result.json"
+        },
+        "limbo projectile / 32 native bearings": {
+          "status": "PASS_NATIVE_ACTION_AND_CONTROLLED_SWEEP",
+          "evidence": [
+            ".artifacts/m1-7/runtime-dog-v2/result.json",
+            ".artifacts/m1-7/runtime-dog-limbo-sweep-v1/result.json"
+          ]
+        }
+      },
+      "actions": "Normal production, running, HD leap, infantry kill, return and death; Allied ADOG retains Original.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-dog-v2/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-dog-limbo-sweep-v1/result.json",
+      "nativeStatus": "PASS_DOG_NATIVE_PRODUCTION_LEAP_KILL_RETURN_AND_REMOVAL",
+      "sweepStatus": "PASS_PAUSED_COMPLETE_BODY_AND_LIMBO_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "DOGICON",
+        "altCameo": "DOGUICO",
+        "explosion": [],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": [
+        {
+          "role": "limbo-launched-unit",
+          "art": {
+            "Rotates": "yes"
+          },
+          "member": "dogp.shp",
+          "binding": "BadTeeth/DOGJUMP carries DOG while the actor is in limbo"
+        }
+      ]
+    },
+    {
+      "id": "FLAKT",
+      "name": "Flak Trooper",
+      "group": "infantry",
+      "representation": "SHP",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-flakt-family/1/family.json",
+      "manifestSha256": "a904dbb18a1703d6caafc19b2b41dd2d6c003e208611379765441eaa1b2fdb61",
+      "members": [
+        "flakt.shp"
+      ],
+      "authoredPositions": 301,
+      "effectiveDensity": 2,
+      "gpuBytes": 3567936,
+      "sourceBinding": {
+        "rulesIdentity": "FLAKT",
+        "resolvedArt": "FLAKT",
+        "sourceMemberHashes": {
+          "flakt.shp": "2be57b9db70eefa6630f9c19abfb96715cc3da58de57a6c8fef08523851e64d9"
+        },
+        "sequence": "FlakSequence",
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "walk": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-flakt-v1/result.json"
+        },
+        "ground/air targeting": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-flakt-v1/result.json"
+        },
+        "fire": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-flakt-v1/result.json"
+        },
+        "death": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-flakt-v1/result.json"
+        }
+      },
+      "actions": "Normal production, movement, ground and airborne damage, native death and removal.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-flakt-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-flakt-sweep-v2/result.json",
+      "nativeStatus": "PASS_FLAKT_NATIVE_PRODUCTION_GROUND_AIR_FIRE_AND_REMOVAL",
+      "sweepStatus": "PASS_PAUSED_INFANTRY_FRAMES_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "FLKTICON",
+        "altCameo": "FLKTUICO",
+        "explosion": [],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "SHK",
+      "name": "Shock Trooper",
+      "group": "infantry",
+      "representation": "SHP",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-shk-family/1/family.json",
+      "manifestSha256": "4ea09a5114b828a1036ca2d68159564149d5c6719b4c7e19ece174d109a71904",
+      "members": [
+        "shk.shp"
+      ],
+      "authoredPositions": 301,
+      "effectiveDensity": 2,
+      "gpuBytes": 2991872,
+      "sourceBinding": {
+        "rulesIdentity": "SHK",
+        "resolvedArt": "SHK",
+        "sourceMemberHashes": {
+          "shk.shp": "7d46dcfc1509ce6684c89782be388f7a438f8946bd187300bd0490a48f8f4122"
+        },
+        "sequence": "ConSequence",
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "walk": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-shk-v4/result.json"
+        },
+        "ground firing": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-shk-v4/result.json"
+        },
+        "Tesla charging": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-shk-v4/result.json"
+        },
+        "death": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-shk-v4/result.json"
+        }
+      },
+      "actions": "Normal production, normal/elite electric attacks, powered-coil charging and release, death and removal.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-shk-v4/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-shk-sweep-v1/result.json",
+      "nativeStatus": "PASS_SHK_NATIVE_PRODUCTION_NORMAL_ELITE_FIRE_COIL_CHARGE_AND_REMOVAL",
+      "sweepStatus": "PASS_PAUSED_INFANTRY_FRAMES_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "SHKICON",
+        "altCameo": "SHKUICO",
+        "explosion": [],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "IVAN",
+      "name": "Crazy Ivan",
+      "group": "infantry",
+      "representation": "SHP",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-ivan-family/1/family.json",
+      "manifestSha256": "590fe3740c9b21299bb5bb10c62e7509b8e85786ecfe31266025fe78ba60cf03",
+      "members": [
+        "ivan.shp"
+      ],
+      "authoredPositions": 267,
+      "effectiveDensity": 2,
+      "gpuBytes": 2097536,
+      "sourceBinding": {
+        "rulesIdentity": "IVAN",
+        "resolvedArt": "IVAN",
+        "sourceMemberHashes": {
+          "ivan.shp": "4a78fb72494d380cdd34fa89bebf7f4c6c2270724202c3b6811340af66bc7959"
+        },
+        "sequence": "IvanSequence",
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "walk": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-ivan-v3/result.json"
+        },
+        "attach explosive": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-ivan-v3/result.json"
+        },
+        "native detonation": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-ivan-v3/result.json"
+        },
+        "death": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-ivan-v3/result.json"
+        }
+      },
+      "actions": "Normal production, movement, bomb attachment, 450-tick detonation, engineer disarm and removal.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-ivan-v3/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-ivan-sweep-v1/result.json",
+      "nativeStatus": "PASS_IVAN_NATIVE_PRODUCTION_BOMB_TIMER_DISARM_AND_REMOVAL",
+      "sweepStatus": "PASS_PAUSED_INFANTRY_FRAMES_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "IVANICON",
+        "explosion": [],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "YURI",
+      "name": "Yuri",
+      "group": "infantry",
+      "representation": "SHP",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-yuri-family/1/family.json",
+      "manifestSha256": "0e2e9950fbdf59bbcd8cafa96bd88a49130cb14fb1c2b9f743cd13a69258e306",
+      "members": [
+        "yuri.shp"
+      ],
+      "authoredPositions": 316,
+      "effectiveDensity": 2,
+      "gpuBytes": 2328064,
+      "sourceBinding": {
+        "rulesIdentity": "YURI",
+        "resolvedArt": "YURI",
+        "sourceMemberHashes": {
+          "yuri.shp": "8d5964c758cb6e51699ec0118a323c9ab096ac37df060bf3024ecbac0bfd9a3f"
+        },
+        "sequence": "YuriSequence",
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "walk": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-yuri-v1/result.json"
+        },
+        "mind control": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-yuri-v1/result.json"
+        },
+        "ownership transfer/remap": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-yuri-v1/result.json"
+        },
+        "deploy psi": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-yuri-v1/result.json"
+        },
+        "death/release": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-yuri-v1/result.json"
+        }
+      },
+      "actions": "Normal production, movement, mind control, Psi Wave and release of the controlled unit after death.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-yuri-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-yuri-sweep-v1/result.json",
+      "nativeStatus": "PASS_YURI_NATIVE_PRODUCTION_MIND_CONTROL_PSI_WAVE_AND_REMOVAL",
+      "sweepStatus": "PASS_PAUSED_INFANTRY_FRAMES_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "YURIICON",
+        "altCameo": "YURIUICO",
+        "explosion": [],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "TERROR",
+      "name": "Terrorist",
+      "group": "infantry",
+      "representation": "SHP",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-terror-family/1/family.json",
+      "manifestSha256": "768f3a1b4309b9e9e58d4296a15b93eb98a89f8181649aba67751523fa7ecd4a",
+      "members": [
+        "trst.shp"
+      ],
+      "authoredPositions": 188,
+      "effectiveDensity": 2,
+      "gpuBytes": 1491392,
+      "sourceBinding": {
+        "rulesIdentity": "TERROR",
+        "resolvedArt": "TRST",
+        "sourceMemberHashes": {
+          "trst.shp": "96a6ff78111593f5435116a0b3f36c1e9d740c72421ca62419282225cacd78db"
+        },
+        "sequence": "TerroristSequence",
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "walk": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-terror-v1/result.json"
+        },
+        "suicide attack": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-terror-v1/result.json"
+        },
+        "native detonation/removal": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-terror-v1/result.json"
+        }
+      },
+      "actions": "Cuban production, eight initial attack bearings, suicide damage, killed death-weapon damage and removal.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-terror-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-terror-sweep-v1/result.json",
+      "nativeStatus": "PASS_TERROR_CUBA_PRODUCTION_EIGHT_BEARING_SUICIDE_DEATHWEAPON_AND_REMOVAL",
+      "sweepStatus": "PASS_PAUSED_INFANTRY_FRAMES_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "TRSTICON",
+        "altCameo": "TRSTUICO",
+        "explosion": [],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "DESO",
+      "name": "Desolater",
+      "group": "infantry",
+      "representation": "SHP",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-deso-family/3/family.json",
+      "manifestSha256": "e322dfb182578690017cf78ca8275c993ce6c5d078ee7e8080ecc4936a1f5d3a",
+      "members": [
+        "deso.shp"
+      ],
+      "authoredPositions": 322,
+      "effectiveDensity": 2,
+      "gpuBytes": 3571296,
+      "sourceBinding": {
+        "rulesIdentity": "DESO",
+        "resolvedArt": "DESO",
+        "sourceMemberHashes": {
+          "deso.shp": "7f157a5089a3ec822ae73eb951993a410c8fabc0d1fa839ddb0eed255aabfcc4"
+        },
+        "sequence": "DesoSequence",
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "walk": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-deso-fire-scale-v1/result.json"
+        },
+        "fire": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-deso-fire-scale-v1/result.json"
+        },
+        "deploy/radiation": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-deso-fire-scale-v1/result.json"
+        },
+        "undeploy": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-deso-fire-scale-v1/result.json"
+        },
+        "death": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-deso-fire-scale-v1/result.json"
+        },
+        "green radiation canisters": {
+          "status": "PASS_COMPLETE_322_SLOT_CORRECTION",
+          "evidence": ".artifacts/m1-7/deso-fire-scale-v1/status.json"
+        },
+        "upper-right firing body-size continuity": {
+          "status": "PASS_STABLE_BODY_SIZE_SIX_PHASES_TWO_OWNERS",
+          "evidence": [
+            ".artifacts/m1-7/deso-fire-scale-v1/registration-check.json",
+            ".artifacts/m1-7/runtime-deso-fire-scale-sweep-v1/result.json",
+            ".artifacts/m1-7/runtime-deso-fire-scale-v1/result.json"
+          ],
+          "changedExports": [
+            208,
+            209,
+            210,
+            211
+          ],
+          "unchangedCandidateFrames": 318
+        }
+      },
+      "actions": "Iraqi production, normal/elite beams, deployment, radiation damage/immunity, undeployment, movement and death.",
+      "limitations": "Green radiation canisters cover the full 322-slot member. Upper-right FireUp frames 206-211 use stable anatomical registration; four resized exports correct muzzle-effect-driven growth. Three fully occluded-canister death frames retain accepted artwork. Corrected visual acceptance remains pending.",
+      "nativeEvidence": ".artifacts/m1-7/runtime-deso-fire-scale-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-deso-fire-scale-sweep-v1/result.json",
+      "nativeStatus": "PASS_DESO_IRAQ_PRODUCTION_NORMAL_ELITE_BEAMS_DEPLOY_RADIATION_IMMUNITY_UNDEPLOY_AND_REMOVAL",
+      "sweepStatus": "PASS_PAUSED_SHP_FRAMES_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "DESOICON",
+        "altCameo": "DESOUICO",
+        "explosion": [],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "CIVAN",
+      "name": "Chrono Ivan",
+      "group": "infantry",
+      "representation": "SHP",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-civan-family/1/family.json",
+      "manifestSha256": "2869f9fbd7b8e0df6aee09c5671a04867103b0cbc9c76d8437e18142eac1c7a2",
+      "members": [
+        "civan.shp"
+      ],
+      "authoredPositions": 267,
+      "effectiveDensity": 2,
+      "gpuBytes": 2307936,
+      "sourceBinding": {
+        "rulesIdentity": "CIVAN",
+        "resolvedArt": "CIVAN",
+        "sourceMemberHashes": {
+          "civan.shp": "48569d57cf5a77fe611a000ea8db14992160d0515d4e4b9bf22c03198c010523"
+        },
+        "sequence": "CIvanSequence",
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "native teleport/hide/reappear": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-civan-v2/result.json"
+        },
+        "attach explosive": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-civan-v2/result.json"
+        },
+        "native detonation": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-civan-v2/result.json"
+        },
+        "stolen Allied technology acquisition": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-civan-v2/result.json"
+        }
+      },
+      "actions": "Spy infiltration/stolen Allied technology, normal production, teleport/recovery, bomb timer/disarm and removal.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-civan-v2/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-civan-sweep-v1/result.json",
+      "nativeStatus": "PASS_CIVAN_NATIVE_INFILTRATION_PRODUCTION_TELEPORT_BOMB_TIMER_DISARM_AND_REMOVAL",
+      "sweepStatus": "PASS_PAUSED_INFANTRY_FRAMES_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "IVNCICON",
+        "explosion": [],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "YURIPR",
+      "name": "Yuri Prime",
+      "group": "infantry",
+      "representation": "SHP",
+      "status": "UPSTREAM_GAMEPLAY_BLOCKED",
+      "visualAcceptance": "ACCEPTED_ORIGINAL_DELIVERY",
+      "representative": "ACCEPTED",
+      "activation": "ORIGINAL_GUARDED",
+      "manifest": ".local/hd-packs/soviet-yuripr-family/1/family.json",
+      "manifestSha256": "b6c83e85f44879b3ceb7fe3a002056c384737376db7ffb43e9db918439a73aa8",
+      "members": [
+        "yuripr.shp"
+      ],
+      "authoredPositions": 315,
+      "effectiveDensity": 1,
+      "gpuBytes": 0,
+      "sourceBinding": {
+        "rulesIdentity": "YURIPR",
+        "resolvedArt": "YURIPR",
+        "sourceMemberHashes": {
+          "yuripr.shp": "1c73fa3a7bdce534f4c4d3a6470a974490dccad18ee2da7bca01177aa1098ef9"
+        },
+        "sequence": "YuriPrSequence",
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "mind control": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-yuripr-v2/result.json"
+        },
+        "ownership transfer/remap": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-yuripr-v2/result.json"
+        },
+        "deploy psi": {
+          "status": "UPSTREAM_GAMEPLAY_BLOCKED",
+          "evidence": [
+            ".artifacts/m1-7/runtime-yuripr-original-psi-v1/result.json",
+            ".artifacts/m1-7/runtime-yuripr-v2/result.json"
+          ]
+        },
+        "death/release": {
+          "status": "INCOMPLETE",
+          "evidence": ".artifacts/m1-7/runtime-yuripr-v2/result.json"
+        },
+        "stolen Soviet technology and build limit": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-yuripr-v2/result.json"
+        }
+      },
+      "actions": "Stolen Soviet technology, normal production, BuildLimit=1, movement and mind control pass. Psi Wave kills the caster in Original and HD; ordinary death/release coverage remains incomplete.",
+      "limitations": "UPSTREAM_GAMEPLAY_BLOCKED: native Psi Wave self-kill reproduced with Original. Complete candidate artwork is included but runtime activation is disabled before fetch/upload.",
+      "nativeEvidence": ".artifacts/m1-7/runtime-yuripr-v2/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-yuripr-sweep-v1/result.json",
+      "nativeStatus": "FAIL",
+      "sweepStatus": "PASS_PAUSED_INFANTRY_FRAMES_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "YURPICON",
+        "altCameo": "YURPUICO",
+        "explosion": [],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "SQD",
+      "name": "Giant Squid",
+      "group": "air-naval",
+      "representation": "SHP",
+      "status": "USER_REQUESTED_ORIGINAL",
+      "visualAcceptance": "ACCEPTED_ORIGINAL_DELIVERY",
+      "representative": "ACCEPTED",
+      "activation": "ORIGINAL_GUARDED",
+      "manifest": ".local/hd-packs/soviet-sqd-family/1/family.json",
+      "manifestSha256": "5b91c94ca404c7e4e020bef188fc10e20206ba76e0c040a2122c2f36cb76b11e",
+      "members": [
+        "sqd.shp",
+        "sqdg.shp"
+      ],
+      "authoredPositions": 536,
+      "effectiveDensity": 1,
+      "gpuBytes": 0,
+      "sourceBinding": {
+        "rulesIdentity": "SQD",
+        "resolvedArt": "SQD",
+        "sourceMemberHashes": {
+          "sqd.shp": "dcbac9af11d7d13be98de775ab23deff04116e5d9cc2920887930db2ae6835d2",
+          "sqdg.shp": "f75be15eb3b2d63c98966a8787a218aca3b6f975c6d1cc0c1127052835ae144c"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "swimming": {
+          "status": "PASS_NATIVE_ORIGINAL",
+          "evidence": ".artifacts/m1-7/runtime-sqd-original-v1/result.json"
+        },
+        "submerged concealment": {
+          "status": "PASS_NATIVE_ORIGINAL",
+          "evidence": ".artifacts/m1-7/runtime-sqd-original-v1/result.json"
+        },
+        "attack/grapple": {
+          "status": "PASS_NATIVE_ORIGINAL",
+          "evidence": ".artifacts/m1-7/runtime-sqd-original-v1/result.json"
+        },
+        "SQDG host-attached animation": {
+          "status": "PASS_NATIVE_ORIGINAL",
+          "evidence": ".artifacts/m1-7/runtime-sqd-original-v1/result.json"
+        },
+        "host/death/removal": {
+          "status": "PASS_NATIVE_ORIGINAL",
+          "evidence": ".artifacts/m1-7/runtime-sqd-original-v1/result.json"
+        }
+      },
+      "actions": "Native Original production, swimming/submersion, grapple attachment, rocking/damage, host death/return, secondary punch and removal; no HD body or attachment allocation.",
+      "limitations": "USER_REQUESTED_ORIGINAL: native body and SQDG grapple attachment are active. Candidate HD resources and earlier sweeps are retained as inactive history.",
+      "nativeEvidence": ".artifacts/m1-7/runtime-sqd-original-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-sqd-pooled-sweep-v1/result.json",
+      "nativeStatus": "PASS_SQD_USER_REQUESTED_ORIGINAL_BODY_GRAPPLE_NATIVE_ACTIONS",
+      "sweepStatus": "PASS_PAUSED_SHP_FRAMES_TWO_OWNER_GEOMETRY_SHADOW_AND_TEARDOWN",
+      "retainedOriginal": {
+        "cameo": "SQDICON",
+        "explosion": [],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": [
+        {
+          "role": "host-grapple",
+          "art": {
+            "Rate": "100",
+            "Layer": "ground",
+            "AltPalette": "yes"
+          },
+          "member": "sqdg.shp",
+          "binding": "Vehicle.updateSquidGrab creates SQDG on the host"
+        }
+      ]
+    },
+    {
+      "id": "DTRUCK",
+      "name": "Demolitions Truck",
+      "group": "ground",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-dtruck-vxl/3/manifest.json",
+      "manifestSha256": "e2348dc066b96272da32113793a32d2159399d2235b012ec0f1e72c5a6c2c134",
+      "members": [
+        "trucka.vxl"
+      ],
+      "authoredPositions": 8,
+      "effectiveDensity": 4,
+      "gpuBytes": 852972,
+      "sourceBinding": {
+        "rulesIdentity": "DTRUCK",
+        "resolvedArt": "TRUCKA",
+        "sourceMemberHashes": {
+          "trucka.vxl": "d535a5cff4f3f62d8aefa2edd01eda931d63933f38b08f708787843a8f6f1cf7",
+          "trucka.hva": "2deba143c6e9bca86e1ca357873082ec8e47f40e13eaacfc647e1e3fb63c21f3"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "move": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dtruck-v6/result.json"
+        },
+        "death/detonation": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dtruck-v6/result.json"
+        },
+        "cleanup": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dtruck-v6/result.json"
+        },
+        "civilian TRUCKA isolation": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dtruck-v6/result.json"
+        }
+      },
+      "actions": "Libyan 1500-credit production, movement, suicide and killed death-weapon damage, delayed explosion and cleanup; TRUCKA stays Original.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-dtruck-v6/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-dtruck-v6/result.json",
+      "nativeStatus": "PASS_DTRUCK_NATIVE_PRODUCTION_MOVEMENT_DETONATION_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_DTRUCK_NATIVE_PRODUCTION_MOVEMENT_DETONATION_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "TRKAICON",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "SMCV",
+      "name": "Soviet Construction Vehicle",
+      "group": "ground",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-smcv-vxl/2/manifest.json",
+      "manifestSha256": "d4f02bdfc534c82b81aa064cf97cc9c496a57224ebe32f5ef863a0192cbffd72",
+      "members": [
+        "smcv.vxl"
+      ],
+      "authoredPositions": 8,
+      "effectiveDensity": 4,
+      "gpuBytes": 1653416,
+      "sourceBinding": {
+        "rulesIdentity": "SMCV",
+        "resolvedArt": "SMCV",
+        "sourceMemberHashes": {
+          "smcv.vxl": "5df9009d9d5dbd320530e8485a82d17f888e04aad8a4b69a35687dcb7fdcdb1d",
+          "smcv.hva": "57667fe8ed4b3e3b934d0d34ed735458b1fba6a15b56743a2d7b5c42587d0275"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "move": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-smcv-v2/result.json"
+        },
+        "deploy to NACNST": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-smcv-v2/result.json"
+        },
+        "legal native repack only when enabled": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-smcv-v2/result.json"
+        }
+      },
+      "actions": "3000-credit production, movement, deployment into accepted NACNST, repacking only with the native McvRepacks host option and cleanup.",
+      "limitations": "Repacking is tested only with the existing McvRepacks option enabled. Building artwork remains the accepted building checkpoint.",
+      "nativeEvidence": ".artifacts/m1-7/runtime-smcv-v2/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-smcv-v2/result.json",
+      "nativeStatus": "PASS_SMCV_NATIVE_PRODUCTION_MOVEMENT_DEPLOY_REPACK_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_SMCV_NATIVE_PRODUCTION_MOVEMENT_DEPLOY_REPACK_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "SMCVICON",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "TTNK",
+      "name": "Tesla Tank",
+      "group": "ground",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-ttnk-vxl/3/manifest.json",
+      "manifestSha256": "6f3017bb6984f1f8074e872837ca72180190ae43da1143ea03a4c8d61a1d9a7c",
+      "members": [
+        "ttnk.vxl",
+        "ttnktur.vxl"
+      ],
+      "authoredPositions": 16,
+      "effectiveDensity": 4,
+      "gpuBytes": 1154084,
+      "sourceBinding": {
+        "rulesIdentity": "TTNK",
+        "resolvedArt": "TTNK",
+        "sourceMemberHashes": {
+          "ttnk.vxl": "9ad57394e667f3d555d48ab6bc7aa537658af4aa5ad1de5729840aa0758c797d",
+          "ttnk.hva": "8328e2797e58451c0b68865bcfef13f935ffb260e60083fe323a05c752c558a9",
+          "ttnktur.vxl": "7f5a8bd5b12e800b1edd7ce8f593e791857ffaf82341cc6e1c7c8ff93a78b4b7",
+          "ttnktur.hva": "8328e2797e58451c0b68865bcfef13f935ffb260e60083fe323a05c752c558a9"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "move": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-ttnk-v2/result.json"
+        },
+        "independent Tesla aim/fire": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-ttnk-v2/result.json"
+        },
+        "destruction": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-ttnk-v2/result.json"
+        }
+      },
+      "actions": "Country-gated production, movement, independent turret aiming, electric weapon damage and removal.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-ttnk-v2/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-ttnk-v2/result.json",
+      "nativeStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "TTNKICON",
+        "altCameo": "TTNKUICO",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "APOC",
+      "name": "Apocalypse",
+      "group": "ground",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-apoc-vxl/3/manifest.json",
+      "manifestSha256": "665a378ad7d780548c2db24b33e59cf2e21beef9efe165d19d85dd962aff793d",
+      "members": [
+        "mtnk.vxl",
+        "mtnktur.vxl",
+        "mtnkbarl.vxl"
+      ],
+      "authoredPositions": 24,
+      "effectiveDensity": 4,
+      "gpuBytes": 1321916,
+      "sourceBinding": {
+        "rulesIdentity": "APOC",
+        "resolvedArt": "MTNK",
+        "sourceMemberHashes": {
+          "mtnk.vxl": "fe82e553014591635d708e30d1b5088aad4c621ec820fe7c330c052bb188cf77",
+          "mtnk.hva": "bbc8b8d4cdadc47627fdc955fcc6d30e6844bb736f3b81bfd2f0298b06c39396",
+          "mtnktur.vxl": "1f16b4ba31c910e791d7db894c33a1554afe0918fd51df8d814000c4af672a4c",
+          "mtnktur.hva": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa",
+          "mtnkbarl.vxl": "fba8930030b65873227b4e1bab29af286f0ab588ddac6ae2a4e6e73f53050822",
+          "mtnkbarl.hva": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "move": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-apoc-v2/result.json"
+        },
+        "independent turret and twin barrels": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-apoc-v2/result.json"
+        },
+        "ground/air weapons": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-apoc-v2/result.json"
+        },
+        "destruction": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-apoc-v2/result.json"
+        }
+      },
+      "actions": "Normal production, movement, independent turret/barrel aiming, 120mm ground damage, MammothTusk anti-air damage and removal.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-apoc-v2/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-apoc-v2/result.json",
+      "nativeStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "MTNKICON",
+        "altCameo": "MTNKUICO",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "HTK",
+      "name": "Flak Track",
+      "group": "ground",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-htk-vxl/2/manifest.json",
+      "manifestSha256": "5558d3ef23a95af000019f9f6bcc852b05c4737dae2dabdf200dcee2874ae2f6",
+      "members": [
+        "htk.vxl",
+        "htktur.vxl",
+        "htkbarl.vxl"
+      ],
+      "authoredPositions": 24,
+      "effectiveDensity": 4,
+      "gpuBytes": 972652,
+      "sourceBinding": {
+        "rulesIdentity": "HTK",
+        "resolvedArt": "HTK",
+        "sourceMemberHashes": {
+          "htk.vxl": "b679002b9bb2a73706f74507032983b3ef2aff4dea540a33e08b549b22299339",
+          "htk.hva": "b7d3c838ed7f02ecfdcbc0dc8c3699db59d547b262b6ace72687bf5846fd99a8",
+          "htktur.vxl": "895c9c20bc66a33aea0a109c727f4a10ab0bc8b75bdf2aff7a2c28dd1d17907c",
+          "htktur.hva": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "htkbarl.vxl": "4e03e449f8a0575757b466a56a32d6019f976b03fc313b37b7e814a92a89813d",
+          "htkbarl.hva": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "move": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-htk-v1/result.json"
+        },
+        "independent aim/fire": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-htk-v1/result.json"
+        },
+        "passenger embark/disembark": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-htk-v1/result.json"
+        },
+        "transport visibility": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-htk-v1/result.json"
+        }
+      },
+      "actions": "Normal production, movement, independent turret/barrel aiming, ground/air flak and HD Conscript boarding/unloading.",
+      "limitations": "Bridge-under comparison has no leaked HD color or additional dark shadow pixels. Five pixels are lighter than Original where the approximate HD depth surface intersects the native shadow receiver; retain this visible-review limitation.",
+      "nativeEvidence": ".artifacts/m1-7/runtime-htk-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-htk-v1/result.json",
+      "nativeStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "HTKICON",
+        "altCameo": "HTKUICO",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "HARV",
+      "name": "War Miner",
+      "group": "ground",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-harv-vxl/4/manifest.json",
+      "manifestSha256": "caa26d9b28d5ec34e1f79f0e751afb46fda9c1fa12c10d28243dd7c288dce764",
+      "members": [
+        "harv.vxl",
+        "horv.vxl",
+        "harvtur.vxl"
+      ],
+      "authoredPositions": 24,
+      "effectiveDensity": 4,
+      "gpuBytes": 2460432,
+      "sourceBinding": {
+        "rulesIdentity": "HARV",
+        "resolvedArt": "HARV",
+        "sourceMemberHashes": {
+          "harv.vxl": "b51aa74470b8495d9484a8085c88624ce53116dac20ba886b89bbe251913503a",
+          "harv.hva": "6de96bd28d717ad4c4f51e36692a7f32f8f5e10836347fe7c4964e57f9da6581",
+          "harvtur.vxl": "bc7a2ab31a50c4c08bfc3cc72e42724891b139f352f5fad7fca01f96922e8b4d",
+          "harvtur.hva": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "horv.vxl": "450d1384251d34909181eebc07c45ebc49472076f7bd260a7a9ac921ae0e3204",
+          "horv.hva": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "harvest": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-harv-correction-v1/result.json"
+        },
+        "turret combat": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-harv-correction-v1/result.json"
+        },
+        "loaded/unloading HORV transition": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-harv-correction-v1/result.json"
+        },
+        "refinery docking": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-harv-correction-v1/result.json"
+        },
+        "credit deposit": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-harv-correction-v1/result.json"
+        }
+      },
+      "actions": "1400-credit production, native gathering/full cargo, refinery docking, HORV tipping transition, 2000-credit deposit, turret combat and removal.",
+      "limitations": "User-authorized uniform ore-filled artwork at all cargo levels; native cargo/economy and distinct tipping state remain live. No empty/partial visual states are claimed.",
+      "nativeEvidence": ".artifacts/m1-7/runtime-harv-correction-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-harv-correction-v1/result.json",
+      "nativeStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "HARVICON",
+        "altCameo": "HARVUICO",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [
+        {
+          "role": "UnloadingClass",
+          "id": "HORV",
+          "image": "HORV",
+          "stem": "horv",
+          "representation": "VXL/HVA",
+          "rules": {
+            "UIName": "Name:HORV",
+            "Name": "War Miner",
+            "Nominal": "yes",
+            "ToProtect": "yes",
+            "Category": "Support",
+            "Strength": "1000",
+            "Armor": "medium",
+            "Dock": "NAREFN,GAREFN",
+            "Harvester": "yes",
+            "TechLevel": "-1",
+            "Sight": "4",
+            "Speed": "4",
+            "Owner": "Russians,Confederation,Africans,Arabs",
+            "AllowedToStartInMultiplayer": "no",
+            "Cost": "1400",
+            "Points": "25",
+            "ROT": "5",
+            "Crusher": "yes",
+            "Crewed": "no",
+            "SelfHealing": "yes",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "VoiceSelect": "GenSovVehicleSelect",
+            "VoiceMove": "GenSovVehicleMove",
+            "VoiceAttack": "GenSovVehicleAttackCommand",
+            "VoiceFeedback": "",
+            "DieSound": "GenVehicleDie",
+            "Maxdebris": "3",
+            "DebrisTypes": "TIRE",
+            "DebrisMaximums": "4",
+            "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+            "Weight": "3.5",
+            "MovementZone": "Crusher",
+            "ThreatPosed": "0",
+            "ThreatAvoidanceCoefficient": "1",
+            "DamageParticleSystems": "SparkSys,SmallGreySSys",
+            "ImmuneToRadiation": "yes"
+          },
+          "art": {
+            "Voxel": "yes",
+            "Remapable": "yes"
+          },
+          "sequence": null,
+          "sequences": null,
+          "members": [
+            "horv.vxl",
+            "horv.hva"
+          ]
+        }
+      ],
+      "attachments": []
+    },
+    {
+      "id": "V3",
+      "name": "V3 Launcher",
+      "group": "ground",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-v3-vxl/3/manifest.json",
+      "manifestSha256": "cf5e5f426af4522c76b5c7bc565f222e6e57ee10e057cbc18923e2865f1fc6b7",
+      "members": [
+        "v3.vxl",
+        "v3wo.vxl",
+        "v3rocket.vxl"
+      ],
+      "authoredPositions": 24,
+      "effectiveDensity": 4,
+      "gpuBytes": 2546588,
+      "sourceBinding": {
+        "rulesIdentity": "V3",
+        "resolvedArt": "V3",
+        "sourceMemberHashes": {
+          "v3.vxl": "0bec1774299ab54471e0aec3b49c467832fe19e5c19fcaa3b2bb4964b31903c1",
+          "v3.hva": "03c5759b2e710f024f78add39e08eeb27040cf200b84b78bd4a0a45a2cd23faa",
+          "v3wo.vxl": "e7bc69e8bf43e2a96e355dfa72e4ff574e17f8f104e8802da0e9787bf31990b9",
+          "v3wo.hva": "b79f88d50a6caa564c10cfd17fed61f7e8335e6a57b7578cc114558eefe57165",
+          "v3rocket.vxl": "fd13949b0728d3543df1dd4fd39c9e6bfb65d322abec663819b42f51e141510d",
+          "v3rocket.hva": "03c5759b2e710f024f78add39e08eeb27040cf200b84b78bd4a0a45a2cd23faa"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "move": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-v3-v1/result.json"
+        },
+        "loaded/empty V3WO body": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-v3-v1/result.json"
+        },
+        "native V3ROCKET launch/flight": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-v3-v1/result.json"
+        },
+        "reload": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-v3-v1/result.json"
+        },
+        "destruction": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-v3-v1/result.json"
+        }
+      },
+      "actions": "800-credit production, movement, loaded/empty launcher, HD V3ROCKET pitch/yaw/altitude flight, impact, reload and removal.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-v3-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-v3-v1/result.json",
+      "nativeStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "V3ICON",
+        "altCameo": "V3UICO",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [
+        {
+          "role": "Spawns",
+          "id": "V3ROCKET",
+          "image": "V3ROCKET",
+          "stem": "v3rocket",
+          "representation": "VXL/HVA",
+          "rules": {
+            "UIName": "Name:V3ROCKET",
+            "Name": "V3 Rocket",
+            "FireAngle": "1",
+            "Strength": "50",
+            "Category": "AirPower",
+            "Armor": "special_2",
+            "Spawned": "yes",
+            "MissileSpawn": "yes",
+            "TechLevel": "-1",
+            "Sight": "1",
+            "RadarInvisible": "no",
+            "Landable": "yes",
+            "MoveToShroud": "yes",
+            "Ammo": "1",
+            "Speed": "15",
+            "Owner": "Russians,Confederation,Africans,Arabs",
+            "Cost": "50",
+            "Points": "20",
+            "ROT": "3",
+            "Crewed": "no",
+            "Explodes": "no",
+            "GuardRange": "30",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "Maxdebris": "2",
+            "Locomotor": "{B7B49766-E576-11d3-9BD9-00104B972FE8}",
+            "MovementZone": "Fly",
+            "ThreatPosed": "10",
+            "DamageParticleSystems": "SmallGreySSys",
+            "AuxSound1": "V3Attack",
+            "ImmuneToPsionics": "yes",
+            "NoShadow": "yes",
+            "Selectable": "no",
+            "Trainable": "no"
+          },
+          "art": {
+            "SpawnDelay": "2",
+            "Voxel": "yes",
+            "Remapable": "no",
+            "CanBeHidden": "no"
+          },
+          "sequence": null,
+          "sequences": null,
+          "members": [
+            "v3rocket.vxl",
+            "v3rocket.hva"
+          ]
+        }
+      ],
+      "attachments": []
+    },
+    {
+      "id": "DRED",
+      "name": "Dreadnought",
+      "group": "air-naval",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-dred-vxl/1/manifest.json",
+      "manifestSha256": "82efe3eedf8924f82a3ea5ed5203deb0cf8fe0fa36a4fb115a0872652a75853b",
+      "members": [
+        "dred.vxl",
+        "dredwo.vxl",
+        "dmisl.vxl"
+      ],
+      "authoredPositions": 24,
+      "effectiveDensity": 4,
+      "gpuBytes": 5480004,
+      "sourceBinding": {
+        "rulesIdentity": "DRED",
+        "resolvedArt": "DRED",
+        "sourceMemberHashes": {
+          "dred.vxl": "857eff8b607610bd4600466554839d36e4407940c247b9d08aee4c14ac546a1a",
+          "dred.hva": "810dae94db5ae67cef0866897da63f20d3b8d36ff2b73769abc0f5664ff4a2fe",
+          "dredwo.vxl": "793f2d514f6997995e767a9e0d59e66dbfa7e07e7e2c4636ea8ea170470177da",
+          "dredwo.hva": "8ae40169cd8f731cb040347293bcd1c49b612bfeb50c433abda119c1d88bc2f1",
+          "dmisl.vxl": "0cc017768c70fb08bbf29ee35396d770bbb270c9572f08411cb2aad6cb22569a",
+          "dmisl.hva": "78f4041017c6d4686ec09397a8be45db92f5d5dc007828072611219fe4963332"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "naval movement": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dred-correction-v1/result.json"
+        },
+        "loaded/empty DREDWO body": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dred-correction-v1/result.json"
+        },
+        "DMISL launch/flight": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dred-correction-v1/result.json"
+        },
+        "water/depth/shadow": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-dred-correction-v1/result.json"
+        },
+        "sinking": {
+          "status": "PASS_NATIVE_SINK_TRANSFORM_AND_REMOVAL",
+          "evidence": ".artifacts/m1-7/runtime-mixed-fire-scale-v1/result.json"
+        }
+      },
+      "actions": "2000-credit naval production, movement, loaded/empty launcher, HD DMISL flight/impact, reload, native sinking and removal.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-dred-correction-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-dred-correction-v1/result.json",
+      "nativeStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "DREDICON",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [
+        {
+          "role": "Spawns",
+          "id": "DMISL",
+          "image": "DMISL",
+          "stem": "dmisl",
+          "representation": "VXL/HVA",
+          "rules": {
+            "UIName": "Name:DMISL",
+            "Name": "Dread Missile",
+            "FireAngle": "1",
+            "Strength": "50",
+            "Category": "AirPower",
+            "Armor": "special_2",
+            "Spawned": "yes",
+            "MissileSpawn": "yes",
+            "TechLevel": "-1",
+            "Sight": "0",
+            "RadarInvisible": "no",
+            "Landable": "yes",
+            "MoveToShroud": "yes",
+            "Ammo": "1",
+            "Speed": "20",
+            "Owner": "Russians,Confederation,Africans,Arabs",
+            "Cost": "50",
+            "Points": "20",
+            "ROT": "4",
+            "Crewed": "no",
+            "Explodes": "no",
+            "GuardRange": "30",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "Maxdebris": "2",
+            "Locomotor": "{B7B49766-E576-11d3-9BD9-00104B972FE8}",
+            "MovementZone": "Fly",
+            "ThreatPosed": "10",
+            "DamageParticleSystems": "SmallGreySSys",
+            "AuxSound1": "DreadnoughtAttack",
+            "ImmuneToPsionics": "yes",
+            "NoShadow": "yes",
+            "Selectable": "no",
+            "Trainable": "no"
+          },
+          "art": {
+            "SpawnDelay": "2",
+            "Voxel": "yes",
+            "Remapable": "no",
+            "CanBeHidden": "no"
+          },
+          "sequence": null,
+          "sequences": null,
+          "members": [
+            "dmisl.vxl",
+            "dmisl.hva"
+          ]
+        }
+      ],
+      "attachments": []
+    },
+    {
+      "id": "SUB",
+      "name": "Typhoon Attack Sub",
+      "group": "air-naval",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-sub-vxl/1/manifest.json",
+      "manifestSha256": "d10f895b55cc5edf86622e28286b6dc8b95a2ea849a24f618e495282df0746e3",
+      "members": [
+        "sub.vxl"
+      ],
+      "authoredPositions": 8,
+      "effectiveDensity": 4,
+      "gpuBytes": 974620,
+      "sourceBinding": {
+        "rulesIdentity": "SUB",
+        "resolvedArt": "SUB",
+        "sourceMemberHashes": {
+          "sub.vxl": "450cd09a67e112c329707a465eaa6d7142ebcdb8d57640cf48abb60f3d0a5e89",
+          "sub.hva": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "naval movement": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-sub-correction-v1/result.json"
+        },
+        "submerged concealment": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-sub-correction-v1/result.json"
+        },
+        "surfacing/torpedo attack": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-sub-correction-v1/result.json"
+        },
+        "waterline": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-sub-correction-v1/result.json"
+        },
+        "sinking": {
+          "status": "NATIVE_EXPLOSION_REMOVAL_NO_SLOW_SINK",
+          "evidence": ".artifacts/m1-7/runtime-sub-correction-v1/result.json"
+        }
+      },
+      "actions": "Naval production/movement, cloak/submersion, hidden enemy zero-draw visibility, torpedo damage, native damage-triggered emergence and removal.",
+      "limitations": "Native underwater rules use explosion/removal, not the surface-ship slow-sinking animation. Friendly submerged opacity and enemy concealment are separate checks.",
+      "nativeEvidence": ".artifacts/m1-7/runtime-sub-correction-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-sub-correction-v1/result.json",
+      "nativeStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "SubICON",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "HYD",
+      "name": "Sea Scorpion",
+      "group": "air-naval",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-hyd-vxl/1/manifest.json",
+      "manifestSha256": "55a5bb0d65178c0574070df78f02b5be23a73bfef1e063b8badbd80a056e2984",
+      "members": [
+        "hyd.vxl"
+      ],
+      "authoredPositions": 8,
+      "effectiveDensity": 4,
+      "gpuBytes": 768516,
+      "sourceBinding": {
+        "rulesIdentity": "HYD",
+        "resolvedArt": "HYD",
+        "sourceMemberHashes": {
+          "hyd.vxl": "0dad9b2ae16a8607dacbdd604056dae601828c2027bd3b571be063dd15d97a6e",
+          "hyd.hva": "3e740a64abf078b26806289c7557494d7e31a5b2bc0836143b6ea84743654c51"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "naval movement": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-hyd-correction-v1/result.json"
+        },
+        "ground/air target fire": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-hyd-correction-v1/result.json"
+        },
+        "waterline/visibility": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-hyd-correction-v1/result.json"
+        },
+        "sinking": {
+          "status": "NATIVE_EXPLOSION_REMOVAL_NO_SLOW_SINK",
+          "evidence": ".artifacts/m1-7/runtime-hyd-correction-v1/result.json"
+        }
+      },
+      "actions": "600-credit naval production, movement, ground and airborne weapon damage, visibility/opacity and native removal.",
+      "limitations": "Native lightweight naval destruction removes the actor directly; no slow-sinking state is fabricated.",
+      "nativeEvidence": ".artifacts/m1-7/runtime-hyd-correction-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-hyd-correction-v1/result.json",
+      "nativeStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "HOVRICON",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "ZEP",
+      "name": "Kirov Airship",
+      "group": "air-naval",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-zep-vxl/1/manifest.json",
+      "manifestSha256": "48efe98ac39d3e8937cff6930c358c8eea7c73f68bf098361add4cf2ff218e19",
+      "members": [
+        "zep.vxl"
+      ],
+      "authoredPositions": 8,
+      "effectiveDensity": 4,
+      "gpuBytes": 3436180,
+      "sourceBinding": {
+        "rulesIdentity": "ZEP",
+        "resolvedArt": "ZEP",
+        "sourceMemberHashes": {
+          "zep.vxl": "29d1b0812553fb09889f41481b8315c65740b09b11d6c799e03562f6a91de1ba",
+          "zep.hva": "4d9feb87009d48a3bdd2b143fe410e785be149d93c1d0b6765d3edbc9dac82fa"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "flight altitude": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-zep-v1/result.json"
+        },
+        "movement": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-zep-v1/result.json"
+        },
+        "bombing": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-zep-v1/result.json"
+        },
+        "ground shadow": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-zep-v1/result.json"
+        },
+        "crash/fall/removal": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-zep-v1/result.json"
+        }
+      },
+      "actions": "2000-credit production, native airborne altitude/movement, bombing, native ground shadow, falling/crash and removal.",
+      "limitations": "",
+      "nativeEvidence": ".artifacts/m1-7/runtime-zep-v1/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-zep-v1/result.json",
+      "nativeStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "ZEPICON",
+        "altCameo": "ZEPUICO",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    },
+    {
+      "id": "SAPC",
+      "name": "Armored Transport",
+      "group": "air-naval",
+      "representation": "VXL/HVA",
+      "status": "COMPLETE_TEMPERATE_TECHNICAL_FAMILY",
+      "visualAcceptance": "ACCEPTED",
+      "representative": "ACCEPTED",
+      "activation": "HD_ON_DEMAND_TEMPERATE",
+      "manifest": ".local/hd-packs/soviet-sapc-vxl/1/manifest.json",
+      "manifestSha256": "872e1da3d0c572d9bd41aee1f11e43c5b8dd2a66c733ecec310e2669029a16d3",
+      "members": [
+        "trs.vxl"
+      ],
+      "authoredPositions": 8,
+      "effectiveDensity": 4,
+      "gpuBytes": 2024400,
+      "sourceBinding": {
+        "rulesIdentity": "SAPC",
+        "resolvedArt": "TRS",
+        "sourceMemberHashes": {
+          "trs.vxl": "2f954e765e62a15092e810ba7662d43136f7d74fc426d2227c58b70ef56eaaf9",
+          "trs.hva": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca"
+        },
+        "sequence": null,
+        "theaters": [
+          "TEMPERATE",
+          "SNOW",
+          "URBAN"
+        ],
+        "ownerPolicy": "Rules identity follows captured unit; current faction is never the identity gate. Native owner palette ramp governs remap."
+      },
+      "requiredStates": {
+        "water/shore/land movement": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-sapc-v3/result.json"
+        },
+        "load/unload": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-sapc-v3/result.json"
+        },
+        "bridge restrictions": {
+          "status": "PASS_NO_BRIDGE_DECK_ENTRY_AFTER_EXPLICIT_BRIDGE_ORDER",
+          "evidence": ".artifacts/m1-7/runtime-mixed-fire-scale-v1/result.json",
+          "note": "No bridge-deck entry; does not assert arrival under the requested tile."
+        },
+        "destruction": {
+          "status": "PASS_NATIVE",
+          "evidence": ".artifacts/m1-7/runtime-sapc-v3/result.json"
+        }
+      },
+      "actions": "900-credit naval production, water-to-land hover movement, HD Conscript boarding/unloading, explicit bridge-deck order restriction and native removal.",
+      "limitations": "Native bridge-deck order is rejected; the transport remains on the ground/water layer. The test does not claim bridge-deck traversal.",
+      "nativeEvidence": ".artifacts/m1-7/runtime-sapc-v3/result.json",
+      "sweepEvidence": ".artifacts/m1-7/runtime-sapc-v3/result.json",
+      "nativeStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "sweepStatus": "PASS_NATIVE_PRODUCTION_MOVEMENT_ACTIONS_REMOVAL_AND_CONTROLLED_BEARINGS",
+      "retainedOriginal": {
+        "cameo": "SAPCICON",
+        "explosion": [
+          "TWLT070",
+          "S_BANG48",
+          "S_BRNL58",
+          "S_CLSN58",
+          "S_TUMU60"
+        ],
+        "damageParticles": [
+          "SparkSys",
+          "SmallGreySSys"
+        ],
+        "generic": [
+          "native shadows",
+          "muzzle flashes",
+          "beams",
+          "wakes",
+          "parachutes",
+          "shared special death effects",
+          "sounds"
+        ]
+      },
+      "sourceDependencies": [],
+      "attachments": []
+    }
+  ],
+  "acceptance": {
+    "userStatement": "All the above acceptance tests passed; commit to the main branch, noting it has changed.",
+    "acceptedOn": "2026-09-23T03:45:10.116129+00:00",
+    "acceptedHdFamilies": [
+      "DRON",
+      "SENGINEER",
+      "DOG",
+      "FLAKT",
+      "SHK",
+      "IVAN",
+      "YURI",
+      "TERROR",
+      "DESO",
+      "CIVAN",
+      "DTRUCK",
+      "SMCV",
+      "TTNK",
+      "APOC",
+      "HTK",
+      "HARV",
+      "V3",
+      "DRED",
+      "SUB",
+      "HYD",
+      "ZEP",
+      "SAPC"
+    ],
+    "acceptedOriginal": [
+      "SQD",
+      "YURIPR"
+    ],
+    "technicalLimitsPreserved": true,
+    "reviewedDesktopPackage": "/Users/Aone/Desktop/RA2 HD Soviet Units Test v3",
+    "reviewedGameSource": "5464d9daa1904278d4e5362074a95d0247ea7bcf",
+    "packagingSource": "c4e69b2719da201e5ffd6460a97f817bddb47534",
+    "meaning": "Acceptance closes the delivered scope; it does not claim YURIPR HD gameplay, all 24 HD units, other theaters, Windows or campaign validation."
+  }
+}

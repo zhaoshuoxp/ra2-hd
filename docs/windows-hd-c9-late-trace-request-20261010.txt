@@ -1,0 +1,20 @@
+C9 late manual-play trace: reuse the existing complete Windows kit
+
+The new C9 return has six valid Normal phases. Retain them as the baseline;
+no new package, old-version rerun, density matrix or F8 repeat is requested.
+
+1. Use the existing WINHD-20261008-D38F136-C9 folder on Windows. If its
+   completed, unprofiled game process is still open, continue that match.
+   Otherwise launch eight players / 4X / Normal and let all four automatic
+   phases finish with focus retained. Do not select automatic Trace mode.
+2. Continue manual play until the sustained low-frame-rate condition appears.
+   Press F9 ONCE. Keep scrolling/playing through the eight-second detailed
+   capture. The manual camera remains available. Do not press F8 or F9 again.
+3. Wait until the title returns to "capture complete"; exporting can take
+   longer than the capture itself. Then close and run Export-Reports.cmd.
+   Return the resulting C9 RETURN ZIP, including any preserved errors.
+
+Use the same monitor, output/DPI, AC power and quality settings. A process can
+capture one trace only; use a fresh process if it already captured one.
+Profiler startup and instrumented FPS will be kept separate from the existing
+Normal manual baseline. No script editing or developer tools are required.

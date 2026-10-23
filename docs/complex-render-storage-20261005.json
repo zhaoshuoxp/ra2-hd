@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "runtimeSourceHead": "ebe4798b96ca284f322c6f289ced6f0a7dc23f4a",
+  "status": "PASS_FOCUSED_MAC_AND_HOST_CHECKS_WINDOWS_USER_RETEST_PENDING",
+  "feedback": {
+    "accepted": [
+      "icon latency",
+      "map entry latency",
+      "improved startup speed"
+    ],
+    "reported": [
+      "complex first-use stalls, especially DISK",
+      "construction Original-to-HD replacement, especially NAMISL",
+      "blocking Storage error"
+    ],
+    "clarification": "User tested accelerated construction; ordinary speed was not tried. Queue acceleration does not change the construction animation."
+  },
+  "causes": [
+    "Native geometry pool synchronously meshes first-use voxel sections on the render thread.",
+    "Queue-start family preparation can finish after instant construction; large families take longer. Visible previews need demand priority and stable pointer focus across asynchronous sidebar publication.",
+    "Storage lacks a browser directory handle in desktop mode, and the fallback returned a custom engine JSX node to a React component. React error 31 triggered the blocking global overlay."
+  ],
+  "tests": {
+    "passed": 70,
+    "assertions": 9383,
+    "files": 15,
+    "log": ".artifacts/complex-render-storage-20261005/focused-tests-final.log",
+    "workerAndEntryTypecheck": ".artifacts/complex-render-storage-20261005/typecheck-final.log"
+  },
+  "baseline": {
+    "status": "PASS_SELECTED_NATIVE_CASES",
+    "report": ".artifacts/complex-render-storage-20261005/baseline-visible-complete/report.json",
+    "cases": [
+      {
+        "name": "NAMISL",
+        "firstHd": false,
+        "firstConstructionFrame": 0,
+        "firstHdDelayMs": 430.95500004291534,
+        "maxFrameMs": 207.99500000476837,
+        "slowFrames": [
+          207.99500000476837,
+          144.0250000357628
+        ],
+        "allocation": {
+          "density": 4,
+          "gpuBytes": 59672372,
+          "attempts": [],
+          "members": [
+            "ngmisl.shp",
+            "ngmisl_e.shp",
+            "ngmisl_f.shp",
+            "ngmisl_g.shp",
+            "ngmisl_h.shp",
+            "ntmislmk.shp"
+          ],
+          "status": "READY"
+        }
+      },
+      {
+        "name": "NAINDP",
+        "firstHd": false,
+        "firstConstructionFrame": 0,
+        "firstHdDelayMs": 140.76500004529953,
+        "maxFrameMs": 28.285000026226044,
+        "slowFrames": [],
+        "allocation": {
+          "density": 4,
+          "gpuBytes": 23277624,
+          "attempts": [],
+          "members": [
+            "ngindp.shp",
+            "ngindp_a.shp",
+            "ngindpmk.shp"
+          ],
+          "status": "READY"
+        }
+      },
+      {
+        "name": "DISK",
+        "firstHd": true,
+        "firstConstructionFrame": null,
+        "firstHdDelayMs": 0.0,
+        "maxFrameMs": 182.62999999523163,
+        "slowFrames": [
+          182.62999999523163
+        ],
+        "allocation": {
+          "density": 4,
+          "gpuBytes": 3050448,
+          "attempts": [],
+          "members": [],
+          "status": "READY"
+        }
+      }
+    ],
+    "worldAllocation": {
+      "baseline": 91372196,
+      "eager": 50566032,
+      "demand": 176641676,
+      "total": 318579904,
+      "limit": 1342177280
+    },
+    "errors": [],
+    "consoleErrors": [],
+    "preparation": {
+      "pages": 7,
+      "workerMs": 173.73500001430511
+    },
+    "geometryPreparation": null
+  },
+  "native": {
+    "desktop-complex-4x": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/complex-render-storage-20261005/desktop-complex-4x/report.json",
+      "cases": [
+        {
+          "name": "NAMISL",
+          "firstHd": true,
+          "firstConstructionFrame": 0,
+          "firstHdDelayMs": 0.0,
+          "maxFrameMs": 199.2300000190735,
+          "slowFrames": [
+            52.15000003576279,
+            111.57499998807907,
+            199.2300000190735
+          ],
+          "allocation": {
+            "density": 4,
+            "gpuBytes": 59672372,
+            "attempts": [],
+            "members": [
+              "ngmisl.shp",
+              "ngmisl_e.shp",
+              "ngmisl_f.shp",
+              "ngmisl_g.shp",
+              "ngmisl_h.shp",
+              "ntmislmk.shp"
+            ],
+            "status": "READY"
+          }
+        },
+        {
+          "name": "NAINDP",
+          "firstHd": true,
+          "firstConstructionFrame": 0,
+          "firstHdDelayMs": 0.0,
+          "maxFrameMs": 46.6700000166893,
+          "slowFrames": [],
+          "allocation": {
+            "density": 4,
+            "gpuBytes": 23277624,
+            "attempts": [],
+            "members": [
+              "ngindp.shp",
+              "ngindp_a.shp",
+              "ngindpmk.shp"
+            ],
+            "status": "READY"
+          }
+        },
+        {
+          "name": "DISK",
+          "firstHd": true,
+          "firstConstructionFrame": null,
+          "firstHdDelayMs": 0.0,
+          "maxFrameMs": 96.03000003099442,
+          "slowFrames": [
+            96.03000003099442,
+            53.29000002145767
+          ],
+          "allocation": {
+            "density": 4,
+            "gpuBytes": 3050448,
+            "attempts": [],
+            "members": [],
+            "status": "READY"
+          }
+        }
+      ],
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 210070436,
+        "total": 352008664,
+        "limit": 1342177280
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "preparation": {
+        "pages": 56,
+        "geometries": 0,
+        "workerMs": 890.3050002455711
+      },
+      "geometryPreparation": {
+        "pages": 0,
+        "geometries": 45,
+        "workerMs": 2835.525000035763
+      }
+    },
+    "desktop-complex-2x": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/complex-render-storage-20261005/desktop-complex-2x/report.json",
+      "cases": [
+        {
+          "name": "NAMISL",
+          "firstHd": true,
+          "firstConstructionFrame": 0,
+          "firstHdDelayMs": 0.0,
+          "maxFrameMs": 39.50499999523163,
+          "slowFrames": [],
+          "allocation": {
+            "density": 2,
+            "gpuBytes": 14561928,
+            "attempts": [],
+            "members": [
+              "ngmisl.shp",
+              "ngmisl_e.shp",
+              "ngmisl_f.shp",
+              "ngmisl_g.shp",
+              "ngmisl_h.shp",
+              "ntmislmk.shp"
+            ],
+            "status": "READY"
+          }
+        },
+        {
+          "name": "NAINDP",
+          "firstHd": true,
+          "firstConstructionFrame": 0,
+          "firstHdDelayMs": 0.0,
+          "maxFrameMs": 30.62000000476837,
+          "slowFrames": [],
+          "allocation": {
+            "density": 2,
+            "gpuBytes": 9312772,
+            "attempts": [],
+            "members": [
+              "ngindp.shp",
+              "ngindp_a.shp",
+              "ngindpmk.shp"
+            ],
+            "status": "READY"
+          }
+        },
+        {
+          "name": "DISK",
+          "firstHd": true,
+          "firstConstructionFrame": null,
+          "firstHdDelayMs": 0.0,
+          "maxFrameMs": 43.08500003814697,
+          "slowFrames": [],
+          "allocation": {
+            "density": 2,
+            "gpuBytes": 823600,
+            "attempts": [],
+            "members": [],
+            "status": "READY"
+          }
+        }
+      ],
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 62235452,
+        "total": 102470732,
+        "limit": 268435456
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "preparation": {
+        "pages": 56,
+        "geometries": 0,
+        "workerMs": 703.3800000548363
+      },
+      "geometryPreparation": {
+        "pages": 0,
+        "geometries": 45,
+        "workerMs": 2567.6749999523163
+      }
+    }
+  },
+  "startupSidebar": {
+    "report": ".artifacts/complex-render-storage-20261005/desktop-startup-sidebar/report.json",
+    "status": "PASS_SELECTED_NATIVE_CASES",
+    "firstDrawUnits": [
+      {
+        "name": "PCV",
+        "id": 1308,
+        "vxl": true,
+        "shp": false,
+        "rhino": false
+      },
+      {
+        "name": "LTNK",
+        "id": 1309,
+        "vxl": true,
+        "shp": false,
+        "rhino": false
+      },
+      {
+        "name": "LTNK",
+        "id": 1310,
+        "vxl": true,
+        "shp": false,
+        "rhino": false
+      },
+      {
+        "name": "LTNK",
+        "id": 1311,
+        "vxl": true,
+        "shp": false,
+        "rhino": false
+      },
+      {
+        "name": "INIT",
+        "id": 1312,
+        "vxl": false,
+        "shp": true,
+        "rhino": false
+      },
+      {
+        "name": "INIT",
+        "id": 1313,
+        "vxl": false,
+        "shp": true,
+        "rhino": false
+      },
+      {
+        "name": "INIT",
+        "id": 1314,
+        "vxl": false,
+        "shp": true,
+        "rhino": false
+      },
+      {
+        "name": "INIT",
+        "id": 1315,
+        "vxl": false,
+        "shp": true,
+        "rhino": false
+      }
+    ],
+    "noScrollItems": 24,
+    "uiAfterOff": {
+      "revision": "lunar-infantry-ui-v1",
+      "enabled": false,
+      "reservedBytes": 0,
+      "decodedCpuBytes": 0,
+      "gpuTextureBytesUpperBound": 0,
+      "transitionGpuBytes": 0,
+      "transitionCpuCanvasBytes": 0,
+      "domImageGpuBytesUpperBound": 0,
+      "domImageDecodedCpuBytesUpperBound": 0,
+      "textures": 0,
+      "budget": 16777216,
+      "domCanvasBytes": 0,
+      "mipmaps": false
+    }
+  },
+  "storage": {
+    "report": ".artifacts/complex-render-storage-20261005/desktop-storage/report.json",
+    "mode": "verify",
+    "errors": [],
+    "returned": true,
+    "text": "\u5b58\u50a8\n\nGame files are managed outside this window. Storage browsing is available for a browser-imported game folder.\n\n\u4e0a\u4e00\u9875\n\u5b58\u50a8\n\u4e0a\u4e00\u9875",
+    "status": "PASS"
+  },
+  "resources": {
+    "status": "PASS",
+    "files": 4997,
+    "worldFiles": 4637,
+    "uiFiles": 360,
+    "comparison": "Accepted 6db0fb5 package, exact paths and SHA-256",
+    "preparedContract": {
+      "schemaVersion": 1,
+      "sha256": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604",
+      "indexPath": "prepared-hd/indexes/a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604.json"
+    },
+    "uiManifestSha256": "a8cf998c042066c05c119a6392e9b703ccd03622d89030e1dbf45089cd90ca18"
+  },
+  "packages": [
+    {
+      "platform": "mac",
+      "archive": "/Users/Aone/Desktop/RA2-HD-Render-Storage-Fix-20261005-ebe4798-macOS-arm64.zip",
+      "bytes": 3292559334,
+      "sha256": "7f1d95dc5874f37330879877afb32b84333620a4fb331e3036ed24befb9df4e4",
+      "checkedEntries": 5484,
+      "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/complex-render-storage-20261005/desktop-extracted-mac/RA2-HD-Render-Storage-Fix-20261005-ebe4798-macOS-arm64",
+      "excludedUserData": [
+        "Review-Profile",
+        "UserData"
+      ]
+    },
+    {
+      "platform": "windows",
+      "archive": "/Users/Aone/Desktop/RA2-HD-Render-Storage-Fix-20261005-ebe4798-Windows-x64-portable.zip",
+      "bytes": 3316868800,
+      "sha256": "b54224b986985cb52684c85929c3baecabbb6e3f0e8fe17d0990eb55e8d32cef",
+      "checkedEntries": 5262,
+      "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/complex-render-storage-20261005/desktop-extracted-windows/RA2-HD-Render-Storage-Fix-20261005-ebe4798-Windows-x64-portable",
+      "excludedUserData": [
+        "Review-Profile",
+        "UserData"
+      ]
+    }
+  ],
+  "windows": {
+    "status": "NATIVE_NOT_RUN",
+    "staticStatus": "PASS_STATIC_PACKAGE_WINDOWS_RUNTIME_NOT_RUN",
+    "verifiedX64PE": [
+      "dxil.dll",
+      "Red Alert 2 HD.exe",
+      "dxcompiler.dll",
+      "d3dcompiler_47.dll",
+      "vk_swiftshader.dll",
+      "ffmpeg.dll",
+      "vulkan-1.dll"
+    ]
+  },
+  "preserved": [
+    "Selected artwork and all 4997 resource files",
+    "256 MiB 2X / 1280 MiB 4X world limits, 16 MiB UI and 128 MiB prepared CPU cache",
+    "Native production/construction ticks and construction animation",
+    "Accepted icon/map/startup, DISK payment/rings/hover/audio and cursor repairs",
+    "Previous packages, profiles and failed diagnostic evidence"
+  ],
+  "limits": [
+    "Single Mac observations with controlled legal fixtures, not a controlled cross-platform hardware benchmark.",
+    "Final intervals include sidebar navigation and a fixed 600 ms pointer dwell before native accelerated production; no wait for HD readiness or modified native ticks.",
+    "An instant request for an unseen, unprepared or over-budget family can still use complete Original fallback. Resource errors retain complete-family fallback.",
+    "The complete 4X defense-sidebar window still records a 199.23 ms interval (old package 208.00 ms); this is not a zero-stall claim.",
+    "Native Windows GPU/input behavior and final user acceptance require retesting."
+  ],
+  "retainedDiagnostics": [
+    "baseline-4x (ordinary production timeout)",
+    "baseline-instant-4x",
+    "storage-baseline (menu registration race)",
+    "storage-baseline-v2 (React error 31)",
+    "geometry-v1-4x (serial worker preparation delayed first HD)",
+    "visible-v3-4x (initialization error)",
+    "visible-v4-4x",
+    "visible-v5-4x",
+    "visible-v5-debug",
+    "visible-v6-4x",
+    "visible-v6-pointer (missing stable focus)",
+    "visible-v7-4x",
+    "visible-v7-2x",
+    "storage-v5"
+  ],
+  "continuation": "Keep corrections and user acceptance in this conversation; no automatic next milestone or publication."
+}

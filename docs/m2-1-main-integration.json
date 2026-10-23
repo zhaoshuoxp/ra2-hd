@@ -1,0 +1,861 @@
+{
+  "schema": "m2-1-main-integration-v1",
+  "date": "2026-10-07",
+  "status": "M2_1_INTEGRATED_INTO_LOCAL_MAIN_MAC_FOCUSED_CHECKS_PASS",
+  "preMain": "11be1b2119696f1777b66c503cf0b7cb1a131d62",
+  "acceptedTip": "38a51d8f43e228f245843e181327a47cd9747a75",
+  "runtimeSourceHead": "bc945a2407bd9c29151cec62e7733dee4c70ec93",
+  "mergePolicy": "HISTORY_PRESERVED_SEMANTIC_DOCUMENT_RECONCILIATION",
+  "resource": {
+    "revision": "temperate-m2-1-seams-v13d",
+    "sha256": "47a93e1ae5c56150357dd3f040f654079de26f8c899ebbc923b3c099bbf97f38"
+  },
+  "build": ".artifacts/m2-integration/build",
+  "delivery": {
+    "app": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Integrated-Baseline-20261007-bc945a2-macOS-arm64/RA2 HD M2.1 Integrated Baseline.app",
+    "resources": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Integrated-Baseline-20261007-bc945a2-macOS-arm64/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Integrated-Baseline-20261007-bc945a2-macOS-arm64/RA2-HD-UI-Resources",
+    "runtimeSourceHead": "bc945a2407bd9c29151cec62e7733dee4c70ec93"
+  },
+  "verification": {
+    "tests": 24,
+    "failures": 0,
+    "assertions": 294,
+    "typecheck": "PASS",
+    "copiedFiles": 5483,
+    "copiedLinks": 14,
+    "copiedSignature": "PASS_DEEP_STRICT",
+    "preservedMainEntries": 27287
+  },
+  "native": [
+    {
+      "file": ".artifacts/m2-integration/matched-2x/report.json",
+      "sha256": "d6e0ef44de8151238526f6434f9e7758b14dc5e39cd506a1cc69f7a2717024ee",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "framebuffer": [
+        1489,
+        1080
+      ],
+      "bindings": 7962
+    },
+    {
+      "file": ".artifacts/m2-integration/matched-4x/report.json",
+      "sha256": "003c09d0f4a1b90122542958d680885d0dd10e8694b797614db0767a386cb772",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "framebuffer": [
+        1489,
+        1080
+      ],
+      "bindings": 7962
+    },
+    {
+      "file": ".artifacts/m2-integration/missing-terrain/report.json",
+      "sha256": "7c88c3b613e84d738a3f091b2314256404f0ec4dcb9aaf43ac42d62e8b2564ef",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "framebuffer": [
+        1489,
+        1080
+      ],
+      "bindings": 0
+    },
+    {
+      "file": ".artifacts/m2-integration/invalid-ground/report.json",
+      "sha256": "fa87bc0d616516926d2402f8cec20c0fb2392a749bd12320e4aa242550fd9b5a",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "framebuffer": [
+        1489,
+        1080
+      ],
+      "bindings": 3631
+    }
+  ],
+  "comparisons": [
+    {
+      "density": 2,
+      "baseline": "/Users/Aone/RA2remaster/ra2-hd-m2-1-temperate/.artifacts/m2-1/copied-seams-v13d-2x/report.json",
+      "baselineSha256": "cc41b760786c95b64e6c5d17e4c874a39144f51c1655a5591a144b45d7692b97",
+      "loadToFixtureMs": 9406,
+      "mapEntryToFixtureMs": 4394,
+      "baselineMapEntryToFixtureMs": 4303,
+      "phases": [
+        {
+          "name": "mixedFrames",
+          "accepted": {
+            "p50": 16.665000000000873,
+            "p95": 17.465000000000146,
+            "p99": 18.37000000000262,
+            "max": 18.590000000000146,
+            "stalls50": 0
+          },
+          "integrated": {
+            "p50": 16.669999999998254,
+            "p95": 17.635000000002037,
+            "p99": 18.600000000002183,
+            "max": 18.645000000000437,
+            "stalls50": 0
+          }
+        },
+        {
+          "name": "firstEncounterFrames",
+          "accepted": {
+            "p50": 16.665000000000873,
+            "p95": 17.44499999999971,
+            "p99": 18.3849999999984,
+            "max": 18.659999999999854,
+            "stalls50": 0
+          },
+          "integrated": {
+            "p50": 16.665000000000873,
+            "p95": 17.225000000002183,
+            "p99": 18.154999999998836,
+            "max": 18.61999999999898,
+            "stalls50": 0
+          }
+        },
+        {
+          "name": "sustainedPanFrames",
+          "accepted": {
+            "p50": 16.665000000000873,
+            "p95": 17.81000000000131,
+            "p99": 18.31999999999971,
+            "max": 18.474999999998545,
+            "stalls50": 0
+          },
+          "integrated": {
+            "p50": 16.669999999998254,
+            "p95": 17.74500000000262,
+            "p99": 18.4800000000032,
+            "max": 18.635000000002037,
+            "stalls50": 0
+          }
+        }
+      ],
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 43741360,
+        "terrainGpu": 38158336,
+        "terrainCpu": 38158336,
+        "terrainCharge": 76326992,
+        "totalCharged": 160303632,
+        "limit": 268435456
+      },
+      "prepared": {
+        "bytes": 72847596,
+        "peakBytes": 72847596,
+        "pendingBytes": 0,
+        "hits": 5,
+        "misses": 58,
+        "shared": 2,
+        "evictions": 0,
+        "uncached": 0
+      },
+      "processMemory": [
+        {
+          "label": "loaded-mixed-scene",
+          "residentMiB": 2859.046875,
+          "processPeakWorkingSetMiB": 4187.90625
+        },
+        {
+          "label": "mixedFrames",
+          "residentMiB": 2923.890625,
+          "processPeakWorkingSetMiB": 4209.8125
+        },
+        {
+          "label": "firstEncounterFrames",
+          "residentMiB": 2944.65625,
+          "processPeakWorkingSetMiB": 4209.84375
+        },
+        {
+          "label": "sustainedPanFrames",
+          "residentMiB": 3292.328125,
+          "processPeakWorkingSetMiB": 4209.84375
+        },
+        {
+          "label": "before-disposal",
+          "residentMiB": 2810.140625,
+          "processPeakWorkingSetMiB": 4232.09375
+        }
+      ],
+      "sceneMatrices": {
+        "automaticRoots": [
+          false,
+          false
+        ],
+        "terrain": [
+          {
+            "name": "map_tiles_hd",
+            "manualLocal": true,
+            "currentWorld": true
+          },
+          {
+            "name": "map_tiles_original",
+            "manualLocal": true,
+            "currentWorld": true
+          },
+          {
+            "name": "map_tiles_hd",
+            "manualLocal": true,
+            "currentWorld": true
+          },
+          {
+            "name": "map_tiles_hd",
+            "manualLocal": true,
+            "currentWorld": true
+          }
+        ],
+        "cached": [
+          {
+            "name": "unit-vxl-hd-mcv-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-mcv-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-smcv-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-smcv-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnk-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnk-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnktur-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnktur-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnkbarl-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnkbarl-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnk-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnk-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-CYLINDER14-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-CYLINDER14-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-CYLINDER22-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-CYLINDER22-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-cmin-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-cmin-DUMMY01-0",
+            "visible": true
+          }
+        ]
+      },
+      "ramp": {
+        "id": 1826,
+        "member": "slope02c.tem",
+        "start": [
+          68,
+          32,
+          5
+        ],
+        "ramp": [
+          69,
+          34,
+          5,
+          2
+        ],
+        "target": [
+          67,
+          34,
+          6
+        ],
+        "onRamp": {
+          "name": "MTNK",
+          "id": 1826,
+          "tick": 3325,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            69,
+            34
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        "after": {
+          "name": "MTNK",
+          "id": 1826,
+          "tick": 3447,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            67,
+            34
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0,
+          "nativeTileHeight": 6
+        }
+      },
+      "placement": {
+        "name": "GAPOWR",
+        "member": "glat08.tem",
+        "target": [
+          29,
+          87
+        ],
+        "point": {
+          "x": 359.68965517241384,
+          "y": 406
+        },
+        "picked": [
+          29,
+          87
+        ],
+        "preview": [
+          {
+            "rx": 29,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 29,
+            "ry": 88,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 88,
+            "buildable": true
+          }
+        ],
+        "grid": [
+          {
+            "rx": 29,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 29,
+            "ry": 88,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 88,
+            "buildable": true
+          }
+        ],
+        "visible": true,
+        "after": {
+          "tile": [
+            29,
+            87
+          ],
+          "occupied": [
+            [
+              29,
+              87
+            ],
+            [
+              29,
+              88
+            ],
+            [
+              30,
+              87
+            ],
+            [
+              30,
+              88
+            ]
+          ],
+          "canPlaceAgain": false
+        }
+      },
+      "reentry": null
+    },
+    {
+      "density": 4,
+      "baseline": "/Users/Aone/RA2remaster/ra2-hd-m2-1-temperate/.artifacts/m2-1/copied-seams-v13d-4x/report.json",
+      "baselineSha256": "d7a6c703d4124b7cd181ea2289f6bca422790cc96036e814f3b118c4d2191ee0",
+      "loadToFixtureMs": 10378,
+      "mapEntryToFixtureMs": 5469,
+      "baselineMapEntryToFixtureMs": 5161,
+      "phases": [
+        {
+          "name": "mixedFrames",
+          "accepted": {
+            "p50": 16.665000000000873,
+            "p95": 18.20499999999811,
+            "p99": 18.57499999999709,
+            "max": 18.674999999999272,
+            "stalls50": 0
+          },
+          "integrated": {
+            "p50": 16.665000000000873,
+            "p95": 17.50499999999738,
+            "p99": 18.43000000000029,
+            "max": 18.63000000000102,
+            "stalls50": 0
+          }
+        },
+        {
+          "name": "firstEncounterFrames",
+          "accepted": {
+            "p50": 16.669999999998254,
+            "p95": 17.69499999999971,
+            "p99": 18.55999999999767,
+            "max": 18.659999999999854,
+            "stalls50": 0
+          },
+          "integrated": {
+            "p50": 16.665000000000873,
+            "p95": 17.520000000000437,
+            "p99": 18.56500000000233,
+            "max": 18.63000000000102,
+            "stalls50": 0
+          }
+        },
+        {
+          "name": "sustainedPanFrames",
+          "accepted": {
+            "p50": 16.669999999998254,
+            "p95": 17.63499999999476,
+            "p99": 18.465000000003783,
+            "max": 18.62999999999738,
+            "stalls50": 0
+          },
+          "integrated": {
+            "p50": 16.665000000000873,
+            "p95": 18.040000000000873,
+            "p99": 18.55000000000291,
+            "max": 18.650000000001455,
+            "stalls50": 0
+          }
+        }
+      ],
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 139893828,
+        "terrainGpu": 149487616,
+        "terrainCpu": 149487616,
+        "terrainCharge": 298985552,
+        "totalCharged": 580817608,
+        "limit": 1342177280
+      },
+      "prepared": {
+        "bytes": 131396564,
+        "peakBytes": 134092504,
+        "pendingBytes": 0,
+        "hits": 17,
+        "misses": 111,
+        "shared": 27,
+        "evictions": 67,
+        "uncached": 4
+      },
+      "processMemory": [
+        {
+          "label": "loaded-mixed-scene",
+          "residentMiB": 2607.625,
+          "processPeakWorkingSetMiB": 4447.578125
+        },
+        {
+          "label": "mixedFrames",
+          "residentMiB": 2678.96875,
+          "processPeakWorkingSetMiB": 4447.578125
+        },
+        {
+          "label": "firstEncounterFrames",
+          "residentMiB": 2657.375,
+          "processPeakWorkingSetMiB": 4447.578125
+        },
+        {
+          "label": "sustainedPanFrames",
+          "residentMiB": 2975.921875,
+          "processPeakWorkingSetMiB": 4447.578125
+        },
+        {
+          "label": "before-disposal",
+          "residentMiB": 3033.0625,
+          "processPeakWorkingSetMiB": 4840.046875
+        }
+      ],
+      "sceneMatrices": {
+        "automaticRoots": [
+          false,
+          false
+        ],
+        "terrain": [
+          {
+            "name": "map_tiles_hd",
+            "manualLocal": true,
+            "currentWorld": true
+          },
+          {
+            "name": "map_tiles_original",
+            "manualLocal": true,
+            "currentWorld": true
+          },
+          {
+            "name": "map_tiles_hd",
+            "manualLocal": true,
+            "currentWorld": true
+          },
+          {
+            "name": "map_tiles_hd",
+            "manualLocal": true,
+            "currentWorld": true
+          }
+        ],
+        "cached": [
+          {
+            "name": "unit-vxl-hd-mcv-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-mcv-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-smcv-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-smcv-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnk-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnk-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnktur-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnktur-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnkbarl-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-gtnkbarl-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnk-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnk-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-CYLINDER14-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-CYLINDER14-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-CYLINDER22-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-CYLINDER22-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-ytnktur-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-cmin-DUMMY01-0",
+            "visible": true
+          },
+          {
+            "name": "unit-vxl-hd-cmin-DUMMY01-0",
+            "visible": true
+          }
+        ]
+      },
+      "ramp": {
+        "id": 1826,
+        "member": "ramp01.tem",
+        "start": [
+          33,
+          72,
+          4
+        ],
+        "ramp": [
+          35,
+          69,
+          7,
+          11
+        ],
+        "target": [
+          31,
+          69,
+          8
+        ],
+        "onRamp": {
+          "name": "MTNK",
+          "id": 1826,
+          "tick": 3374,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            35,
+            69
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        "after": {
+          "name": "MTNK",
+          "id": 1826,
+          "tick": 3503,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            31,
+            69
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0,
+          "nativeTileHeight": 8
+        }
+      },
+      "placement": {
+        "name": "GAPOWR",
+        "member": "glat08a.tem",
+        "target": [
+          29,
+          87
+        ],
+        "point": {
+          "x": 359.68965517241384,
+          "y": 406
+        },
+        "picked": [
+          29,
+          87
+        ],
+        "preview": [
+          {
+            "rx": 29,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 29,
+            "ry": 88,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 88,
+            "buildable": true
+          }
+        ],
+        "grid": [
+          {
+            "rx": 29,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 29,
+            "ry": 88,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 88,
+            "buildable": true
+          }
+        ],
+        "visible": true,
+        "after": {
+          "tile": [
+            29,
+            87
+          ],
+          "occupied": [
+            [
+              29,
+              87
+            ],
+            [
+              29,
+              88
+            ],
+            [
+              30,
+              87
+            ],
+            [
+              30,
+              88
+            ]
+          ],
+          "canPlaceAgain": false
+        }
+      },
+      "reentry": [
+        {
+          "enabled": false,
+          "loadMs": 4011,
+          "oldDisposed": true,
+          "charge": 0,
+          "bindings": 0
+        },
+        {
+          "enabled": true,
+          "loadMs": 5113,
+          "oldDisposed": true,
+          "charge": 298985552,
+          "bindings": 7962
+        }
+      ]
+    }
+  ],
+  "evidenceReuse": {
+    "acceptedMembers": 305,
+    "images": 742,
+    "densityPairs": 1484,
+    "fullArtworkReview": "REUSED_ACCEPTED_V13D_AND_V12C_NO_REEXPORT",
+    "crossEditionAndSecondMap": "REUSED_ACCEPTED_CLOSURE_PLUS_REAL_SOURCE_AND_PUBLICATION_TESTS"
+  },
+  "boundaries": {
+    "performance": "BOUND_SHORT_CONTROLLED_SEQUENCE_SAME_1489x1080_OUTPUT_VIEWPORT_PLAYERS_ROSTER_NATIVE_SPEED",
+    "processMemory": "Electron per-process KiB metrics sampled at five phases; aggregate resident and summed individual process peaks are not GPU or total physical-memory peaks",
+    "initialNative2X": "PASS_AT_NATIVE_RETINA_OUTPUT_RETAINED_NOT_USED_FOR_MATCHED_COMPARISON",
+    "windows": "DEFERRED_NOT_RUN_LOCALLY",
+    "physicalInput": "DEFERRED_NOT_ACCEPTED",
+    "pushPublicationCleanup": "NOT_PERFORMED"
+  },
+  "evidenceRoot": "/Users/Aone/RA2remaster/ra2-hd-m2-1-integration/.artifacts/m2-integration",
+  "additiveTransfer": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m2-1-integration/.artifacts/m2-integration/transfer-main.json",
+    "sha256": "d3135cb69b44e82fe02b2d2b955d2665539d6cf80a7b4c15aeea6d61d21435df"
+  }
+}

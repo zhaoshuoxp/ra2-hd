@@ -1,0 +1,382 @@
+{
+  "status": "PASS_SELECTED_COPIED_MAC_AND_HOST_WINDOWS_USER_RETEST_PENDING",
+  "baselineRuntime": "55180e4e1aa6d76edbf54ab137666f7ed7e9497e",
+  "scope": [
+    "Accepted 3D Yuri pause emblem",
+    "Matching closed Yuri radar cover",
+    "Full stationary Allied pier footing"
+  ],
+  "ui": {
+    "status": "PASS_ACCEPTED_EMBLEM_REUSE_AND_FRAME_PRESERVATION",
+    "selection": {
+      "schemaVersion": 1,
+      "revision": "yuri-emblem-ui-v1",
+      "sha256": "205c4780094f10e3685a8070ed2f0502e64e4ad1d8eeda25658744dbd481cb4b",
+      "reviewOnly": false
+    },
+    "previousRevision": "lunar-infantry-ui-v1",
+    "previousSha256": "a8cf998c042066c05c119a6392e9b703ccd03622d89030e1dbf45089cd90ca18",
+    "source": ".local/ui-packs/lunar-infantry-ui-v1/loading-background-yuri.png",
+    "sourceSha256": "730b7819866cc593ec5979d46e069c596ba69e77c7716d1fe4a002608ddbc93f",
+    "crop": [
+      16,
+      408,
+      744,
+      1064
+    ],
+    "changedAssets": [
+      "yuri-radar-base.png"
+    ],
+    "unchangedAssets": 489,
+    "radarScreen": [
+      56,
+      0,
+      620,
+      440
+    ],
+    "radarSha256": "82112b9f6327dfaa52bc1741f14494f93d982bc941424d6c2d44efb995f64715",
+    "pause": [
+      {
+        "file": "yuri-pause-emblem-original.png",
+        "sha256": "fd493ae7c7194bcddc8193e4064acfb730e4f866fdadb64e88a9802cf6e617fd"
+      },
+      {
+        "file": "yuri-pause-emblem.png",
+        "sha256": "cdf28341d5047c941d060714382a5dbd091abbb3ad2e0d99f9afec3c0fbaf6cc"
+      }
+    ]
+  },
+  "prepared": {
+    "schemaVersion": 1,
+    "sha256": "8106fc473251a28fc7711dc359d3639f626dd2268189eb1d6cd571a8a2753af7",
+    "indexPath": "prepared-hd/indexes/8106fc473251a28fc7711dc359d3639f626dd2268189eb1d6cd571a8a2753af7.json"
+  },
+  "activePrepared": {
+    "type": "prepared-hd-registered",
+    "members": 459,
+    "pages": 1224,
+    "index": "8106fc473251a28fc7711dc359d3639f626dd2268189eb1d6cd571a8a2753af7"
+  },
+  "buildingRevisions": [
+    {
+      "selection": "yuri-yayard-temperate",
+      "predecessorFamily": ".local/hd-packs/yuri-coverage-yayard-temperate/c4-feedback-r4/family.json",
+      "selectedFamily": "hd-packs/yuri-coverage-yayard-temperate/visual-feedback-r1/family.json",
+      "selectedSha256": "232bf27d4ef712c27381d902bb60fb1cc954e3e8e1247a3a5e40083a7048ec5c",
+      "changedMembers": [
+        "ygyard.shp",
+        "ygyard_a.shp",
+        "ygyard_d.shp",
+        "ygyard_c.shp",
+        "ygyard_s.shp",
+        "ygyardmk.shp"
+      ]
+    },
+    {
+      "selection": "yuri-yayard-snow",
+      "predecessorFamily": ".local/hd-packs/yuri-coverage-yayard-snow/c4-feedback-r4/family.json",
+      "selectedFamily": "hd-packs/yuri-coverage-yayard-snow/visual-feedback-r1/family.json",
+      "selectedSha256": "a0769b3b0c53129702ae6e662187cd459d29d533f383b615bfe5c6e3450b0d57",
+      "changedMembers": [
+        "yayard.shp",
+        "yayard_a.shp",
+        "yayard_d.shp",
+        "yayard_c.shp",
+        "yayard_s.shp",
+        "yayardmk.shp"
+      ]
+    },
+    {
+      "selection": "yuri-yaweap-temperate",
+      "predecessorFamily": ".local/hd-packs/yuri-coverage-yaweap-temperate/visual-feedback-r3/family.json",
+      "selectedFamily": "hd-packs/yuri-coverage-yaweap-temperate/visual-feedback-r5/family.json",
+      "selectedSha256": "feeabf7733257e6853683f01f1e9b9f18f215655511a44fe9bd9f7cc94a00270",
+      "changedMembers": [
+        "ygweapbb.shp",
+        "ygweap_2.shp",
+        "ygweap_1.shp",
+        "ygweap_3.shp",
+        "ygweap_4.shp"
+      ]
+    },
+    {
+      "selection": "yuri-yaweap-snow",
+      "predecessorFamily": ".local/hd-packs/yuri-coverage-yaweap-snow/visual-feedback-r3/family.json",
+      "selectedFamily": "hd-packs/yuri-coverage-yaweap-snow/visual-feedback-r5/family.json",
+      "selectedSha256": "8c59ca450443846b2b41d3e7e8a5fea660ef479698180d997b049cc433a15bf7",
+      "changedMembers": [
+        "yaweapbb.shp",
+        "yaweap_2.shp",
+        "yaweap_1.shp",
+        "yaweap_3.shp",
+        "yaweap_4.shp"
+      ]
+    },
+    {
+      "selection": "gaweap-temperate",
+      "predecessorFamily": ".local/hd-packs/allied-coverage-gaweap-temperate/visual-feedback-r2/family.json",
+      "selectedFamily": "hd-packs/allied-coverage-gaweap-temperate/visual-feedback-r3/family.json",
+      "selectedSha256": "3114aebe078fa1e2d6536a3120722523d1f683e946bb913fdcb8684cc31bc869",
+      "changedMembers": [
+        "ggweapbb.shp",
+        "ggweap_2.shp",
+        "ggweap_1.shp"
+      ]
+    },
+    {
+      "selection": "gaweap-snow",
+      "predecessorFamily": ".local/hd-packs/allied-coverage-gaweap-snow/visual-feedback-r2/family.json",
+      "selectedFamily": "hd-packs/allied-coverage-gaweap-snow/visual-feedback-r3/family.json",
+      "selectedSha256": "8cd6c9142a89fa72583c89913acffd94bca054c24c1adc09ad4f567f59ff43e0",
+      "changedMembers": [
+        "gaweapbb.shp",
+        "gaweap_2.shp",
+        "gaweap_1.shp"
+      ]
+    },
+    {
+      "selection": "gayard-temperate",
+      "predecessorFamily": ".local/hd-packs/allied-coverage-gayard-temperate/visual-feedback-r1/family.json",
+      "selectedFamily": "hd-packs/allied-coverage-gayard-temperate/visual-feedback-r3/family.json",
+      "selectedSha256": "89ffc1e9f26d187695781afa657868958f0da04767fe6450b8f79c7b3c582569",
+      "changedMembers": [
+        "ggyard_c.shp"
+      ]
+    },
+    {
+      "selection": "gayard-snow",
+      "predecessorFamily": ".local/hd-packs/allied-coverage-gayard-snow/visual-feedback-r1/family.json",
+      "selectedFamily": "hd-packs/allied-coverage-gayard-snow/visual-feedback-r3/family.json",
+      "selectedSha256": "a9116b959c244fa0b5f84caedc2b31b3e51106cc69a7d0f30389e89a9092edbd",
+      "changedMembers": [
+        "gayard_c.shp"
+      ]
+    }
+  ],
+  "hostChecks": {
+    "tests": 13,
+    "failed": 0,
+    "assertions": 116,
+    "typecheck": "PASS",
+    "resourceAuthority": "PASS_C33_D140_UI490",
+    "pierPixelAudit": "PASS_ALL_30_FRAMES_BOTH_HEALTH_STATES_THEATERS_DENSITIES"
+  },
+  "nativeDevelopment": {
+    "status": "PASS_SELECTED_NATIVE_CASES",
+    "report": ".artifacts/visual-feedback-followup-20261005/native-dev-4x/report.json",
+    "density": 4,
+    "visualReview": "PASS_ACCEPTED_PAUSE_AND_RADAR_EMBLEM_FULL_PIER_AND_MINIMAP_TRANSITION"
+  },
+  "limits": {
+    "world2X": 268435456,
+    "world4X": 1342177280,
+    "ui": 16777216,
+    "preparedCPU": 134217728
+  },
+  "nativeWindows": {
+    "status": "NOT_RUN_USER_VERIFICATION_REQUIRED",
+    "staticStatus": "PASS_STATIC_PACKAGE_WINDOWS_RUNTIME_NOT_RUN",
+    "verifiedX64PE": [
+      "dxil.dll",
+      "Red Alert 2 HD.exe",
+      "dxcompiler.dll",
+      "d3dcompiler_47.dll",
+      "vk_swiftshader.dll",
+      "ffmpeg.dll",
+      "vulkan-1.dll"
+    ],
+    "electronSha256": "596d5f7a77fc4f494f24ff9b362577954e16df819a81915bdb3b91d25f8eddd2"
+  },
+  "userVisualAcceptance": "PENDING",
+  "remotePush": "NOT_REQUESTED",
+  "evidenceRoot": ".artifacts/visual-feedback-followup-20261005",
+  "runtimeSourceHead": "0863d3c1b1c040bac83eb997100d3b00ee125c3e",
+  "delivery": [
+    {
+      "platform": "mac",
+      "archive": "/Users/Aone/Desktop/RA2-HD-Emblem-Pier-Fix-20261005-0863d3c-macOS-arm64.zip",
+      "bytes": 3281050198,
+      "sha256": "7614ed0873b2297aa9d9ed6609464f1ea1134a15d48346b15c1e3eb28651776d",
+      "checkedEntries": 5486,
+      "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/visual-feedback-followup-20261005/desktop-extracted-mac/RA2-HD-Emblem-Pier-Fix-20261005-0863d3c-macOS-arm64",
+      "excludedUserData": [
+        "Review-Profile",
+        "UserData"
+      ]
+    },
+    {
+      "platform": "windows",
+      "archive": "/Users/Aone/Desktop/RA2-HD-Emblem-Pier-Fix-20261005-0863d3c-Windows-x64-portable.zip",
+      "bytes": 3305519695,
+      "sha256": "d68cb40dfcfd657ca2eb3cff74e8cf5ec8f042125a1b40900f9090ff6866a960",
+      "checkedEntries": 5264,
+      "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/visual-feedback-followup-20261005/desktop-extracted-windows/RA2-HD-Emblem-Pier-Fix-20261005-0863d3c-Windows-x64-portable",
+      "excludedUserData": [
+        "Review-Profile",
+        "UserData"
+      ]
+    }
+  ],
+  "nativeMac": [
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/visual-feedback-followup-20261005/desktop-native-4x/report.json",
+      "density": 4,
+      "snow": false,
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "stages": [
+        "GAYARD-idle",
+        "GAYARD-other-owner",
+        "Yuri-radar-off",
+        "Yuri-radar-on",
+        "Yuri-radar-return",
+        "Yuri-pause",
+        "Yuri-pause-original"
+      ],
+      "clips": 1,
+      "pauseSource": "yuri-pause-emblem.png",
+      "uiBeforePause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 11644672,
+        "decodedCpuBytes": 9279232,
+        "gpuTextureBytesUpperBound": 9279232,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 31,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "uiDuringPause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 14154944,
+        "decodedCpuBytes": 9879232,
+        "gpuTextureBytesUpperBound": 9879232,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 1910272,
+        "domImageDecodedCpuBytesUpperBound": 1910272,
+        "textures": 32,
+        "budget": 16777216,
+        "domCanvasBytes": 1910272,
+        "mipmaps": false
+      },
+      "uiAfterPause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 11644672,
+        "decodedCpuBytes": 9279232,
+        "gpuTextureBytesUpperBound": 9279232,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 31,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 105363544,
+        "total": 247301772,
+        "limit": 1342177280
+      },
+      "errors": [],
+      "visualReview": "PASS_ACCEPTED_EMBLEM_MINIMAP_TRANSITION_AND_FULL_PIER"
+    },
+    {
+      "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/visual-feedback-followup-20261005/desktop-native-2x-snow/report.json",
+      "density": 2,
+      "snow": true,
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "stages": [
+        "GAYARD-idle",
+        "GAYARD-other-owner",
+        "Yuri-radar-off",
+        "Yuri-radar-on",
+        "Yuri-radar-return",
+        "Yuri-pause",
+        "Yuri-pause-original"
+      ],
+      "clips": 1,
+      "pauseSource": "yuri-pause-emblem.png",
+      "uiBeforePause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 11644672,
+        "decodedCpuBytes": 9279232,
+        "gpuTextureBytesUpperBound": 9279232,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 31,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "uiDuringPause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 14154944,
+        "decodedCpuBytes": 9879232,
+        "gpuTextureBytesUpperBound": 9879232,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 1910272,
+        "domImageDecodedCpuBytesUpperBound": 1910272,
+        "textures": 32,
+        "budget": 16777216,
+        "domCanvasBytes": 1910272,
+        "mipmaps": false
+      },
+      "uiAfterPause": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 11644672,
+        "decodedCpuBytes": 9279232,
+        "gpuTextureBytesUpperBound": 9279232,
+        "transitionGpuBytes": 2365440,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 31,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "worldAllocation": {
+        "baseline": 22008264,
+        "eager": 28522916,
+        "demand": 34216608,
+        "total": 84747788,
+        "limit": 268435456
+      },
+      "errors": [],
+      "visualReview": "PASS_ACCEPTED_EMBLEM_MINIMAP_TRANSITION_AND_FULL_PIER"
+    }
+  ],
+  "packageResourceParity": {
+    "status": "PASS_PREDECESSOR_UNAFFECTED_RESOURCE_BYTES",
+    "uiFiles": 360,
+    "unchangedUIFiles": 357,
+    "changedUI": [
+      "ui-packs/selected/manifest.json",
+      "ui-packs/selected/yuri-radar-base.png",
+      "ui-selection.json"
+    ],
+    "unchangedCommonWorldFiles": 4607,
+    "oldOnlyWorldFiles": 30,
+    "newOnlyWorldFiles": 30,
+    "worldFiles": 4637,
+    "cEntries": 33,
+    "dFiles": 140,
+    "uiEntries": 490
+  },
+  "localCommit": "RECORDED"
+}

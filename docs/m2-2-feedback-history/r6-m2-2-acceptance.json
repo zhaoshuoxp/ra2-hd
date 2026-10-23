@@ -1,0 +1,1007 @@
+{
+  "schema": "m2-2-acceptance-v2",
+  "status": "FEEDBACK_CORRECTIONS_REVIEW_READY_USER_ACCEPTANCE_PENDING",
+  "baseline": "7533e13ed8f19edd4cc888e44baf416acede3478",
+  "primaryMap": {
+    "edition": "yr",
+    "member": "xmp03t4.map",
+    "archive": "multimd.mix",
+    "sha256": "7a390de363f79743dd54897a49302869a795f839f3387ff03e8c0b70a519e17e",
+    "bytes": 156269,
+    "fullSize": {
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 85
+    },
+    "localSize": {
+      "x": 5,
+      "y": 5,
+      "width": 70,
+      "height": 73
+    },
+    "starts": [
+      {
+        "x": 28,
+        "y": 88
+      },
+      {
+        "x": 88,
+        "y": 31
+      },
+      {
+        "x": 141,
+        "y": 81
+      },
+      {
+        "x": 77,
+        "y": 134
+      }
+    ],
+    "tiles": 13515,
+    "lighting": {
+      "level": 0.028,
+      "ambient": 1,
+      "red": 1,
+      "green": 1,
+      "blue": 0.87,
+      "ground": 0,
+      "forceTint": false
+    },
+    "counts": {
+      "terrain": 573,
+      "structures": 80,
+      "vehicles": 45,
+      "infantry": 2,
+      "aircraft": 0,
+      "overlays": 659,
+      "smudges": 0
+    },
+    "semanticHashes": {
+      "tiles": "85a329bf93d28e48acc3989aa1d24cd9df96841ae0b437e8f5f449fb3dc1f6e1",
+      "terrains": "85906199bcf4e6a5a105c48c50c93c77bdb81c921ccf460dfb81f1a5ef56595b",
+      "structures": "9c5be535dd5ed9e714ed43066d4567423dbe62104094ba606e5fdf6e8326ce14",
+      "vehicles": "b4eb7348ce6d13de47df161af25d62b5ae7925684dc766b75cb3b1964ee596ea",
+      "infantries": "a5960d56c59856b01a3a390cc568d7c54e25bef0af3c58f83919d7004749e379",
+      "aircrafts": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "overlays": "f2f110ed5ad27028c0fb6d1bf34f0d906f072b1183898064d8628de04930df07",
+      "smudges": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "waypoints": "b3dea79ede45b1a49a67d6bcf17a6eb68597ecc066cb49d471ed15949061a38c"
+    },
+    "ruleOverrides": {
+      "__ROOT__": {},
+      "COP": {
+        "AmbientSound": "Dummy"
+      },
+      "YAYARD": {
+        "Name": "Yuri Submarine Pen",
+        "TechLevel": "11"
+      },
+      "GAYARD": {
+        "TechLevel": "-1"
+      },
+      "NAYARD": {
+        "TechLevel": "-1"
+      },
+      "VariableNames": {}
+    }
+  },
+  "counts": {
+    "ACCEPTED_HD_REUSED": 258,
+    "MISSING_HD_TO_PRODUCE": 375,
+    "EXISTING_HD_NOT_BINDING": 0,
+    "INTENTIONAL_NATIVE_EXCEPTION": 1,
+    "NOT_USED_BY_PRIMARY_MAP": 62
+  },
+  "worktree": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate",
+  "branch": "task/m2-2-temperate-showcase",
+  "artDirections": {
+    "ground-water": "APPROVED_DIRECTION_TARGETED_WATER_MATERIAL_CORRECTIONS_PENDING_REVIEW",
+    "props-resources": "APPROVED_DIRECTION_MINERAL_HIGHLIGHTS_AND_TREE14_FEEDBACK_PENDING_REVIEW",
+    "civil-buildings": "APPROVED",
+    "neutral-actors": "APPROVED",
+    "bridges": "APPROVED_DIRECTION_TARGETED_SEAMS_COLOR_OCCLUSION_CORRECTIONS_PENDING_REVIEW"
+  },
+  "nativeInputs": {
+    "status": "PASS_PINNED_NATIVE_INPUTS",
+    "counts": {
+      "sources": 368,
+      "images": 2608,
+      "empty": 582,
+      "indexed": 1884,
+      "palettes": 368,
+      "hva": 13,
+      "vpl": 13
+    },
+    "sourceSha256": "fa3d67c85575e6691c9a00757ae6d33ab4409b5922719683196b8df260d1a973",
+    "ledgerSha256": "081f1d18881a977576563a78e5c52df37b542c221c04a06313982664d6e0b588",
+    "boundary": "No authored HD family, in-game state or whole-map acceptance is implied."
+  },
+  "offlineReview": {
+    "path": ".artifacts/m2-2/direction-review-v1/index.html",
+    "status": "PASS_OFFLINE_DIRECTION_REVIEW",
+    "images": 38,
+    "sections": 6,
+    "densityPilots": 9,
+    "sha256": "fc7ed71eb09bae89ffb9d213c99337753b5bd6e8c02d12661ed0f0d945c7fd61",
+    "standaloneDelivery": {
+      "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Directions-Offline-20261007/M2.2-Directions-Offline.html",
+      "sha256": "fc7ed71eb09bae89ffb9d213c99337753b5bd6e8c02d12661ed0f0d945c7fd61",
+      "receipt": "docs/m2-2-offline-direction-delivery.json",
+      "status": "PASS_STANDALONE_OFFLINE_REVIEW",
+      "offlineModeVerified": true
+    }
+  },
+  "authoringProvenanceSha256": "5f0f80bc3f3d6f7ad04343853182c13586cc665104f64107157fca2c7818fb29",
+  "transferManifestSha256": "b125a1597939b2bbb23e7de31b41e426ac5be3b49e6b87b655961db740d35d97",
+  "newlyPublishedRuntimeFamilies": 110,
+  "combinedNativeStates": "PASS_SELECTED_NATIVE_CATEGORY_CASES",
+  "combinedUserAcceptance": "PENDING_REVIEW_OF_REPORTED_CORRECTIONS",
+  "wholeMapComplete": false,
+  "mainPromotion": "NOT_PERFORMED_PENDING_COMBINED_USER_VISUAL_ACCEPTANCE",
+  "delivery": {
+    "status": "PASS_COPIED_MAC_ARM64_FOCUSED_NATIVE_AND_RESOURCE_CHECKS",
+    "app": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R6b-20261007-macOS-arm64/RA2 HD M2.2 Temperate Showcase R6b.app",
+    "resources": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R6b-20261007-macOS-arm64/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R6b-20261007-macOS-arm64/RA2-HD-UI-Resources",
+    "runtimeSourceHead": "fc89fe9b01a3ffc1d9586c5f215d1ca227b74184",
+    "packageReceipt": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/package-feedback-r6b/package-receipt.json",
+    "launcher": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R6b-20261007-macOS-arm64/Launch-Isolated-Review.command",
+    "profile": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R6b-20261007-macOS-arm64/M2.2-Review-Profile",
+    "copiedVerification": {
+      "path": ".artifacts/m2-2/copied-feedback-r6b-verification.json",
+      "sha256": "5dc34fb30b7c690d8e1819f1f91e014bced4a8a0bde7e8e20a8e12c7fed63b6a"
+    },
+    "sharedParity": {
+      "path": ".artifacts/m2-2/copied-feedback-r6b-parity-v2.json",
+      "sha256": "aaf1fdba0416685c7d2d98bd7c1ed2c8df3cbc89dec16499edbd70d153a5f4de"
+    },
+    "signature": {
+      "path": ".artifacts/m2-2/copied-feedback-r6b-signature.log",
+      "sha256": "c337f0864960d15b2b149bd21d0d856eebd78a223e5630faf133255bfb4cf1ed"
+    },
+    "regularFiles": 6513,
+    "symlinks": 14,
+    "exactSharedPayloads": 4995,
+    "uiRevision": "yuri-emblem-ui-v1",
+    "uiManifestSha256": "205c4780094f10e3685a8070ed2f0502e64e4ad1d8eeda25658744dbd481cb4b",
+    "sourceDirtyAtPackaging": false,
+    "sourceBoundary": "Clean frozen runtime; documentation and offline-review checkpoint follows the packaged source."
+  },
+  "fixedLimitsBytes": {
+    "world2X": 268435456,
+    "world4X": 1342177280,
+    "preparedCPU": 134217728,
+    "UI": 16777216
+  },
+  "platform": {
+    "target": "macOS arm64",
+    "windowsPerformance": "DEFERRED_BY_USER",
+    "physicalInput": "DEFERRED_NO_PASS_CLAIM"
+  },
+  "next": "Review the R6 standalone offline page and copied R6b Mac app in this execution conversation. Main promotion follows acceptance and a fresh main audit.",
+  "directionDecision": {
+    "date": "2026-10-07",
+    "authority": "User feedback in the owning execution conversation",
+    "decision": "All other directions approved; water is too blue and must match the Original color and appearance. Continue production.",
+    "waterCorrection": "Only the top-right shoreline/sea and bottom-left sea panels change color. Restore the previous bottom-right waterfall and preserve top-left grass.",
+    "approvalBoundary": "Category production authorized; complete runtime review and combined visual acceptance remain pending.",
+    "waterfallDecision": "The user rejected the changed waterfall shape; restore the original direction-v1 waterfall."
+  },
+  "waterPanelSelection": {
+    "file": ".artifacts/m2-2/authoring-water-v2/panel-selection-v2.json",
+    "sha256": "50b369a4a492a98cfd8afa518efc4c72e73cce6e1cb2dd8e2165b4224b6046b1",
+    "originalGrassAndWaterfallExact": true,
+    "status": "HISTORICAL_DIRECTION_SELECTION_SUPERSEDED_BY_TARGETED_R5_R6_MATERIAL_CORRECTIONS"
+  },
+  "offlineSeaCorrectionReview": {
+    "schema": "m2-2-offline-direction-delivery-v2",
+    "status": "PASS_STANDALONE_OFFLINE_REVIEW",
+    "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Directions-Sea-Correction-20261007/M2.2-Directions-Sea-Correction-Offline.html",
+    "bytes": 17557639,
+    "sha256": "a0ffaec30cc9cb8e4e1f3e39d98bb3e888809c3d510fbd4d14d633e447643fcd",
+    "embeddedImages": 39,
+    "offlineModeVerified": true,
+    "networkRequests": [],
+    "requiresServer": false,
+    "requiresSiblingResources": false,
+    "requiresInstalledGame": false,
+    "scope": "Correct only top-right shore/sea and bottom-left sea; exact original grass and waterfall retained. Sea edge extends into otherwise unused center gutter.",
+    "waterPanels": {
+      "changedPixels": [
+        0,
+        123863,
+        152214,
+        5871
+      ],
+      "protectedChanges": 0,
+      "protectedPanelsExact": true,
+      "scope": "Top-right shoreline/sea and bottom-left sea only; previous grass and waterfall pixels are unchanged."
+    },
+    "artDirectionAcceptance": "OTHER_DIRECTIONS_APPROVED_CONTINUE_PRODUCTION",
+    "wholeMapComplete": false,
+    "evidence": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/offline-review-v3/qa.json",
+    "evidenceSha256": "f41afde51aae4c95b901bd07a67a7d5458c950da6fef080c2359e8f615ddd904",
+    "qaHelperSha256": "b187e8fac2b61df606d90f13acfe7c990abee7035c9a08e7be86cd95393a1934",
+    "previousReviewPreserved": true
+  },
+  "productionStatus": "SELECTED_FULL_PRODUCTION_EXPORTED_COPIED_NATIVE_REVIEW_PASS_WITH_DISCLOSED_LIMITS",
+  "firstBatchReceipt": "docs/m2-2-batch1-production.json",
+  "production": {
+    "terrain": {
+      "newMembers": 177,
+      "newImages": 724,
+      "selection": {
+        "schemaVersion": 1,
+        "revision": "temperate-m2-2-environment-v7",
+        "sha256": "e507c0b05f39855dd2c898b5e2659931fa5017ac32e7f518b03dd32959b9a663"
+      }
+    },
+    "environment": {
+      "completeFamilies": 98,
+      "canonicalMembers": 178,
+      "bodySlots": 978,
+      "selection": {
+        "schemaVersion": 1,
+        "revision": "environment-m2-2-complete-v4",
+        "sha256": "2a00c83b052c8c29d04b66fd509c82a9816396345fe8eb6ccd294ed3cf1f241f"
+      },
+      "sourceAliases": {
+        "tibtre02.tem": "tibtre01.tem",
+        "tib13.tem": "tib08.tem",
+        "tib14.tem": "tib02.tem",
+        "tib15.tem": "tib03.tem",
+        "tib16.tem": "tib04.tem",
+        "tib17.tem": "tib05.tem",
+        "tib18.tem": "tib06.tem",
+        "tib19.tem": "tib07.tem",
+        "tib20.tem": "tib01.tem"
+      }
+    },
+    "neutralVehicles": {
+      "newIdentities": 12,
+      "densities": [
+        2,
+        4
+      ],
+      "bearingsPerIdentity": 8,
+      "acceptedReuse": "TRUCKA reuses the source-identical DTRUCK body/HVA pair"
+    },
+    "technicalEvidence": {
+      ".artifacts/m2-2/authoring-tmp-v2/temperate-m2-2-environment-v3/validation.json": {
+        "path": ".artifacts/m2-2/authoring-tmp-v2/temperate-m2-2-environment-v3/validation.json",
+        "sha256": "e1234f5e7404a501b0a390d381541c8ffc973794e1ef7767b5fa5821d8cc80e8",
+        "status": "PASS_NEW_COMPLETE_GROUPS_NATIVE_METADATA_ALPHA_GUTTERS_AND_ACCEPTED_REUSE"
+      },
+      ".artifacts/m2-2/shp-verification-complete-v2.json": {
+        "path": ".artifacts/m2-2/shp-verification-complete-v2.json",
+        "sha256": "1481278310912cd6c9386bac8d4a67dce33ecf9c2f6652b2ec660c35e221dd4a",
+        "status": "PASS"
+      },
+      ".artifacts/m2-2/vxl-verification-v1.json": {
+        "path": ".artifacts/m2-2/vxl-verification-v1.json",
+        "sha256": "8bfd065793a22d04fad2e0e99611642e3d0032b631099f36b67474078627a655",
+        "status": "PASS_SOURCES_BEARINGS_DENSITIES_FIXED_COLORS"
+      },
+      ".artifacts/m2-2/registration-correction-v1/pack-parity.json": {
+        "path": ".artifacts/m2-2/registration-correction-v1/pack-parity.json",
+        "sha256": "a9a94a424c28f5347a976d538325ff728b2fedb29d2fcce7a77a9f754a66eb68",
+        "status": "PASS"
+      },
+      ".artifacts/m2-2/registration-correction-v1/unchanged-closure.json": {
+        "path": ".artifacts/m2-2/registration-correction-v1/unchanged-closure.json",
+        "sha256": "2b9bb9fda33ff04ca59a4236cbb4134f203a0242bf472b90cee617d73d21b65c",
+        "status": "PASS_UNCHANGED_CLOSURE_EXACT"
+      }
+    },
+    "wholeMapUserAcceptance": "PENDING_COMBINED_REVIEW",
+    "mainPromotion": "PENDING_USER_VISUAL_ACCEPTANCE",
+    "registrationCorrection": {
+      "path": ".artifacts/m2-2/registration-correction-v1/selection.json",
+      "sha256": "fb48ae212634eb1815769df2e969c3cdd961fbd488a9ac899ac416b3655ddbdb"
+    }
+  },
+  "newlyPublishedRuntimeFamilyBoundary": "98 canonical SHP families and 12 new neutral VXL families; five new TMP groups are counted separately.",
+  "runtimeSourceHead": "fc89fe9b01a3ffc1d9586c5f215d1ca227b74184",
+  "frozenBuild": {
+    "path": ".artifacts/m2-2/build-feedback-r6b/identity.json",
+    "sha256": "17361c020c181dda354b4c52048bfe9e6f76d569e1e39d46898b1e22c8f48635"
+  },
+  "performance": {
+    "path": "docs/m2-2-performance.json",
+    "sha256": "6070a3ae4f26115e056b44e2880f0e23aeffa82a6576e1cac919b9075e8e0749"
+  },
+  "technicalAcceptance": "PASS_R6_FOCUSED_MAC_NATIVE_AND_STATIC_CHECKS_WITH_REUSED_CLOSED_R4_EVIDENCE",
+  "userAcceptance": "PARTIAL_APPROVAL_OUTSIDE_FEEDBACK_CURRENT_CORRECTIONS_PENDING",
+  "remotePush": "NOT_PERFORMED",
+  "cleanup": "NOT_PERFORMED",
+  "nativeEvidence": {
+    "copied-complete-actions-2x-v4": {
+      "path": ".artifacts/m2-2/copied-complete-actions-2x-v4/report.json",
+      "sha256": "c914848ab1b4cc3b60732cca6cfb756efb3a76c4ec48e48a1e7179a9f39d865d",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "stages": 38,
+      "clips": 6,
+      "selectedMap": "xmp03t4.map",
+      "graphics": {
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "glError": 0,
+        "textures": 852
+      },
+      "worldAllocation": {
+        "terrain": 130080012,
+        "environment": 74856308,
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 21187576,
+        "total": 266359176,
+        "limit": 268435456
+      },
+      "environmentDensity": 2,
+      "encounteredFamilies": 97,
+      "actualBatchedHdBindings": 1166
+    },
+    "copied-complete-states-4x-v4": {
+      "path": ".artifacts/m2-2/copied-complete-states-4x-v4/report.json",
+      "sha256": "41de4463c027bb429b28065911422330c372d72934ffa6c2c7f579a0bab7822e",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "stages": 29,
+      "clips": 4,
+      "selectedMap": "xmp03t4.map",
+      "graphics": {
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "glError": 0,
+        "textures": 880
+      },
+      "worldAllocation": {
+        "terrain": 507796748,
+        "environment": 292144900,
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 38822236,
+        "total": 980702112,
+        "limit": 1342177280
+      },
+      "environmentDensity": 4,
+      "encounteredFamilies": 97,
+      "actualBatchedHdBindings": 1139
+    },
+    "copied-complete-ra2-2x-v4": {
+      "path": ".artifacts/m2-2/copied-complete-ra2-2x-v4/report.json",
+      "sha256": "59a64f8c8149415b9ceca9fcd6da7a7ccdf1dfd53113fd01b542a08be69c8828",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "stages": 21,
+      "clips": 0,
+      "selectedMap": "mp03t4.map",
+      "graphics": {
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "glError": 0,
+        "textures": 748
+      },
+      "worldAllocation": {
+        "terrain": 130080012,
+        "environment": 74856308,
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 9965356,
+        "total": 255136956,
+        "limit": 268435456
+      },
+      "environmentDensity": 2,
+      "encounteredFamilies": 97,
+      "actualBatchedHdBindings": 1166
+    },
+    "copied-complete-control-2x-v4": {
+      "path": ".artifacts/m2-2/copied-complete-control-2x-v4/report.json",
+      "sha256": "27a05f332fee260def2df0f4d842d141eca06bdf1053370efe49e93f4a83a0b2",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "stages": 19,
+      "clips": 0,
+      "selectedMap": "xmp19t4.map",
+      "graphics": {
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "glError": 0,
+        "textures": 399
+      },
+      "worldAllocation": {
+        "terrain": 130080012,
+        "environment": 13901060,
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 7589388,
+        "total": 191805740,
+        "limit": 268435456
+      },
+      "environmentDensity": 2,
+      "encounteredFamilies": 43,
+      "actualBatchedHdBindings": 1932
+    },
+    "copied-missing-environment-2x-v4": {
+      "path": ".artifacts/m2-2/copied-missing-environment-2x-v4/report.json",
+      "sha256": "e26cb9e5fb9e10253b8f2439c0bab3f250bb4099bb4e8b6d9d7a0fbdb826c0a1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "stages": 21,
+      "clips": 0,
+      "selectedMap": "xmp03t4.map",
+      "graphics": {
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "glError": 0,
+        "textures": 275
+      },
+      "worldAllocation": {
+        "terrain": 130080012,
+        "environment": 0,
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 9965356,
+        "total": 180280648,
+        "limit": 268435456
+      },
+      "environmentDensity": 1,
+      "encounteredFamilies": 0,
+      "actualBatchedHdBindings": 0
+    },
+    "R6-4X": {
+      "path": ".artifacts/m2-2/copied-feedback-4x-r6b/report.json",
+      "sha256": "5914a3dec9c4d98b92ca6815ef27547dcc37d174395528e56eebae401a172a5a",
+      "status": "PASS_SELECTED_NATIVE_CASES"
+    },
+    "R6-2X": {
+      "path": ".artifacts/m2-2/copied-feedback-2x-r6b/report.json",
+      "sha256": "87de7b6dc35cf821c0a8df23bfa213e0ab64df306f6cb5312dd99b1b849ae797",
+      "status": "PASS_SELECTED_NATIVE_CASES"
+    },
+    "R6-RA2-2X": {
+      "path": ".artifacts/m2-2/copied-feedback-ra2-2x-r6b/report.json",
+      "sha256": "78ab66d6f0269fa2299cd74ea9822167ba37ebc6edc67674928deeac84c06715",
+      "status": "PASS_SELECTED_NATIVE_CASES"
+    }
+  },
+  "evidenceReuse": {
+    "acceptedM1AndM2_1": "Accepted resources and closed artwork matrices reused without redraw or full rerun.",
+    "preparedContract": {
+      "schemaVersion": 1,
+      "sha256": "3b7ef5279bf522a2c4070f4cb64a31d587fd25f5fc5f1fa9dee8a140c2c3a876",
+      "indexPath": "prepared-hd/indexes/3b7ef5279bf522a2c4070f4cb64a31d587fd25f5fc5f1fa9dee8a140c2c3a876.json"
+    },
+    "preparedRegistration": {
+      "type": "prepared-hd-registered",
+      "members": 459,
+      "pages": 1224,
+      "index": "3b7ef5279bf522a2c4070f4cb64a31d587fd25f5fc5f1fa9dee8a140c2c3a876"
+    },
+    "corruptFamily": {
+      "path": ".artifacts/m2-2/copied-corrupt-environment-2x-v1/report.json",
+      "sha256": "cf3b9cc178754acd2d69ce812195a4fe30a36cd73461d3ae504633713fa505ab"
+    },
+    "corruptFamilyBoundary": "Unchanged CAGAS01 pages and admission path; full body/rubble Original fallback, peers HD.",
+    "baselineAndOriginalScenes": [
+      "copied-baseline-scenes-v1",
+      "copied-original-scenes-v1"
+    ],
+    "priorCompleteTests": ".artifacts/m2-2/complete-focused-tests-v1.log",
+    "currentBatchingTests": ".artifacts/m2-2/registration-batching-tests-v1.log",
+    "sceneMatrixTests": ".artifacts/m2-2/registration-scene-matrix-tests-v1.log",
+    "currentTypecheck": ".artifacts/m2-2/registration-batching-typecheck-v1.log",
+    "R4ClosedMatrices": "Retained for unchanged families, native actions, lifecycle, fallback and performance; targeted R6 reports supersede only feedback cases."
+  },
+  "combinedOfflineReview": {
+    "status": "PASS_SINGLE_FILE_OFFLINE_NATIVE_SCENES_EXPORTS_AND_CLIPS",
+    "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Combined-Offline-R2-20261007/M2.2-Combined-Offline.html",
+    "sha256": "b4f5f38b1791e869dfe8256403a2dcb8154af9b20f7bf41d5af162ea293f5f78",
+    "bytes": 368800922,
+    "counts": {
+      "scenes": 9,
+      "families": 110,
+      "states": 9,
+      "clips": 10
+    },
+    "fullSceneComparisons": 36,
+    "imageChecks": 377,
+    "clipPlaybackChecks": 10,
+    "networkRequests": 0,
+    "sourceReceipt": {
+      "path": ".artifacts/m2-2/combined-review-v2/review.json",
+      "sha256": "a3e910db72e3191d2f82e933cfb47a93a97b75aee0138e009e114a0c0b1d84fe"
+    },
+    "qa": {
+      "path": ".artifacts/m2-2/combined-offline-qa-v2/qa.json",
+      "sha256": "2f6d5a8757e9eb8331d1b134b192d43c72495cd498a6a958e786a39510c94845"
+    },
+    "requiresServer": false,
+    "requiresSiblingMedia": false,
+    "pixels": "Exact copied-runtime captures/exports; lossless compression and exact native canvas crop.",
+    "userAcceptance": "PENDING"
+  },
+  "limitations": [
+    "Combined whole-map visual acceptance remains pending; technical checks and direction approval do not grant it.",
+    "Fixed 2X world residency causes E1/INIT whole-family Original fallback in the six-actor mixed fixture; 4X retains HD. No budget increase or M1 redraw.",
+    "Complete-map loading costs 6.887/11.123 seconds at 2X/4X versus baseline 4.418/5.318 seconds in these observations.",
+    "Native fixtures use revealed shroud, legal controlled actors and suspended bot thinking; no every-object/every-action or unconstrained-match claim.",
+    "Windows performance and physical input remain deferred, not PASS."
+  ],
+  "retainedFailedReports": [
+    {
+      "path": ".artifacts/m2-2/combined-offline-qa-v1/qa.json",
+      "sha256": "d7af9e0ae472d9ea9b43d60f63a9f7ae6e130395369b2ef6439cb52765afbd4f",
+      "status": "FAIL_RETAINED",
+      "failure": "page.reload: net::ERR_ABORTED; maybe frame was detached?"
+    },
+    {
+      "path": ".artifacts/m2-2/copied-complete-actions-2x-v2/report.json",
+      "sha256": "395ff87e1bedbb3b2d742d056586431f11635bc863d9e874341aa588574c34bc",
+      "status": "FAIL_RETAINED",
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
+    },
+    {
+      "path": ".artifacts/m2-2/native-batch1-2x-v2/report.json",
+      "sha256": "5cbe79e67000d32bc3f5884673c638703d44b4b620b4326f0304fbf754cca0a5",
+      "status": "FAIL_RETAINED",
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
+    },
+    {
+      "path": ".artifacts/m2-2/native-batch2-2x-v1/report.json",
+      "sha256": "00822f12240f628f700862c1c1f39a6174e8353c11e4726fc3924d221ffab1c8",
+      "status": "FAIL_RETAINED",
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
+    },
+    {
+      "path": ".artifacts/m2-2/native-batch2-2x-v2/report.json",
+      "sha256": "5cfc296dacbb59b5183e869fb16652bd4ddf779690cd71cf2be783ce1b57d381",
+      "status": "FAIL_RETAINED",
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
+    },
+    {
+      "path": ".artifacts/m2-2/native-complete-2x-v1/report.json",
+      "sha256": "3f6c10033e76a9b22b880fc54cbdcc4c74650f9f0fd06374c11a0a3f17240fda",
+      "status": "FAIL_RETAINED",
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
+    },
+    {
+      "path": ".artifacts/m2-2/native-complete-states-2x-v1/report.json",
+      "sha256": "2a9a0c47a813041d462fc5fa99db5820e6156ebb4c439e4ab11394d796124aa8",
+      "status": "FAIL_RETAINED",
+      "failure": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'filter')"
+    },
+    {
+      "path": ".artifacts/m2-2/native-complete-states-4x-v1/report.json",
+      "sha256": "235f34c00bcdad7c4dd8851b75a84552992cc01ca294703f5f4c005b03ea16a5",
+      "status": "FAIL_RETAINED",
+      "failure": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'baselineBytes')"
+    },
+    {
+      "path": ".artifacts/m2-2/native-environment-actions-2x-v1/report.json",
+      "sha256": "31af6fd75aac7e9048df35e7aac1eb28ea94fabc464cea88cdb16eca1654e9c1",
+      "status": "FAIL_RETAINED",
+      "failure": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'healthTrait')"
+    },
+    {
+      "path": ".artifacts/m2-2/native-environment-actions-2x-v2/report.json",
+      "sha256": "a7b7d90fac6d4d597e51f44ea3b2d9e76a29acb5910d18bed7b3e52c8c050a6a",
+      "status": "FAIL_RETAINED",
+      "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:"
+    },
+    {
+      "path": ".artifacts/m2-2/native-environment-actions-2x-v3/report.json",
+      "sha256": "f09161eab0d3711073b51145fb60a3db0d8ba29eb433720e5ca8b2d3bb3f15da",
+      "status": "FAIL_RETAINED",
+      "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:"
+    },
+    {
+      "path": ".artifacts/m2-2/native-environment-tail-2x-v1/report.json",
+      "sha256": "029e66807773923b5fea22b414d860d886e5c6ee6b2d965ba1c8158e02f2e01d",
+      "status": "FAIL_RETAINED",
+      "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:"
+    }
+  ],
+  "supersededCandidates": {
+    "R1": "Technical passes retained; internally rejected for wrong water material and tree crop registration.",
+    "R2": "Copied failure: stale desktop terrain selection pin omitted new registration.",
+    "R3": "Intermediate registration pass; native mixed-shore material defects corrected by R4.",
+    "R4": "Current reviewed technical candidate; combined user visual acceptance pending.",
+    "R5": "Intermediate feedback art/copy retained; residual water/bridge joins and hut occlusion rejected by the marked user screenshot.",
+    "R6": "Intermediate copied diagnostic proved bridge page-material depth settings were lost; enemy fixture also needed its shroud revealed. Raw failed reports are retained."
+  },
+  "productionStateResolution": {
+    "path": "docs/m2-2-production-state-resolution.json",
+    "sha256": "9c0521c5ff1e696e6e07da9376440dc15acbef8d4ff3123c8ad446b2fc43f597"
+  },
+  "provenanceBoundary": "Early direction provenance is retained; final selected recipes, prompt/master/native hashes and repair history are in the pinned additive authoring inventory.",
+  "retainedCheckpoints": {
+    "R4": {
+      "delivery": {
+        "status": "PASS_COPIED_MAC_ARM64_NATIVE_AND_RESOURCE_CHECKS",
+        "app": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R4-20261007-macOS-arm64/RA2 HD M2.2 Temperate Showcase R4.app",
+        "resources": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R4-20261007-macOS-arm64/RA2-HD-Editions-Resources",
+        "uiRoot": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R4-20261007-macOS-arm64/RA2-HD-UI-Resources",
+        "uiResources": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R4-20261007-macOS-arm64/RA2-HD-UI-Resources",
+        "runtimeSourceHead": "36686b7e81e915e3c7a7d6c502b5adcfc4233070",
+        "launcher": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R4-20261007-macOS-arm64/Launch-Isolated-Review.command",
+        "profile": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R4-20261007-macOS-arm64/M2.2-Review-Profile",
+        "packageReceipt": {
+          "path": ".artifacts/m2-2/package-complete-frozen-v7/package-receipt.json",
+          "sha256": "78d7d846fcf41fcd6e61f08ee7c774c4962a08225d74df9a95e6868c1d8fd212"
+        },
+        "copiedVerification": {
+          "path": ".artifacts/m2-2/copied-complete-verification-v4.json",
+          "sha256": "8ad53143d6a7ed2e489e88fc0e089c7e8ea21bcf292b5a57a1ecb8532d56353b"
+        },
+        "sharedParity": {
+          "path": ".artifacts/m2-2/copied-complete-shared-parity-v4.json",
+          "sha256": "4faf5c3bd086863e1d6de99fe02c09352c3e7183341c30ce4f38d874201d2b70"
+        },
+        "signature": {
+          "path": ".artifacts/m2-2/copied-complete-signature-v4.log",
+          "sha256": "df6490d49a000c95b9fca9eb550649ba0adb4155727de9361b336b145b6dae29"
+        },
+        "regularFiles": 6513,
+        "symlinks": 14,
+        "exactSharedPayloads": 4995,
+        "uiRevision": "yuri-emblem-ui-v1",
+        "uiManifestSha256": "205c4780094f10e3685a8070ed2f0502e64e4ad1d8eeda25658744dbd481cb4b",
+        "sourceDirtyAtPackaging": " M scripts/m2/record-showcase-complete.py\n",
+        "sourceBoundary": "Only the authoring collector changed after the clean frozen runtime build; later helper/docs commits do not change this packaged runtime."
+      },
+      "production": {
+        "terrain": {
+          "newMembers": 177,
+          "newImages": 724,
+          "selection": {
+            "schemaVersion": 1,
+            "revision": "temperate-m2-2-environment-v3",
+            "sha256": "45e02f8a17be81191dd716d9cb043601e43fd3ea03daf5b7b74bfeb9e3527d40"
+          }
+        },
+        "environment": {
+          "completeFamilies": 98,
+          "canonicalMembers": 178,
+          "bodySlots": 978,
+          "selection": {
+            "schemaVersion": 1,
+            "revision": "environment-m2-2-complete-v2",
+            "sha256": "629a5b392e423039e8a079ae16e2768f6428fc9497422d6a0bd3b605b645d809"
+          },
+          "sourceAliases": {
+            "tibtre02.tem": "tibtre01.tem",
+            "tib13.tem": "tib08.tem",
+            "tib14.tem": "tib02.tem",
+            "tib15.tem": "tib03.tem",
+            "tib16.tem": "tib04.tem",
+            "tib17.tem": "tib05.tem",
+            "tib18.tem": "tib06.tem",
+            "tib19.tem": "tib07.tem",
+            "tib20.tem": "tib01.tem"
+          }
+        },
+        "neutralVehicles": {
+          "newIdentities": 12,
+          "densities": [
+            2,
+            4
+          ],
+          "bearingsPerIdentity": 8,
+          "acceptedReuse": "TRUCKA reuses the source-identical DTRUCK body/HVA pair"
+        },
+        "technicalEvidence": {
+          ".artifacts/m2-2/authoring-tmp-v2/temperate-m2-2-environment-v3/validation.json": {
+            "path": ".artifacts/m2-2/authoring-tmp-v2/temperate-m2-2-environment-v3/validation.json",
+            "sha256": "e1234f5e7404a501b0a390d381541c8ffc973794e1ef7767b5fa5821d8cc80e8",
+            "status": "PASS_NEW_COMPLETE_GROUPS_NATIVE_METADATA_ALPHA_GUTTERS_AND_ACCEPTED_REUSE"
+          },
+          ".artifacts/m2-2/shp-verification-complete-v2.json": {
+            "path": ".artifacts/m2-2/shp-verification-complete-v2.json",
+            "sha256": "1481278310912cd6c9386bac8d4a67dce33ecf9c2f6652b2ec660c35e221dd4a",
+            "status": "PASS"
+          },
+          ".artifacts/m2-2/vxl-verification-v1.json": {
+            "path": ".artifacts/m2-2/vxl-verification-v1.json",
+            "sha256": "8bfd065793a22d04fad2e0e99611642e3d0032b631099f36b67474078627a655",
+            "status": "PASS_SOURCES_BEARINGS_DENSITIES_FIXED_COLORS"
+          },
+          ".artifacts/m2-2/registration-correction-v1/pack-parity.json": {
+            "path": ".artifacts/m2-2/registration-correction-v1/pack-parity.json",
+            "sha256": "a9a94a424c28f5347a976d538325ff728b2fedb29d2fcce7a77a9f754a66eb68",
+            "status": "PASS"
+          },
+          ".artifacts/m2-2/registration-correction-v1/unchanged-closure.json": {
+            "path": ".artifacts/m2-2/registration-correction-v1/unchanged-closure.json",
+            "sha256": "2b9bb9fda33ff04ca59a4236cbb4134f203a0242bf472b90cee617d73d21b65c",
+            "status": "PASS_UNCHANGED_CLOSURE_EXACT"
+          }
+        },
+        "wholeMapUserAcceptance": "PENDING_COMBINED_REVIEW",
+        "mainPromotion": "PENDING_USER_VISUAL_ACCEPTANCE",
+        "registrationCorrection": {
+          "path": ".artifacts/m2-2/registration-correction-v1/selection.json",
+          "sha256": "fb48ae212634eb1815769df2e969c3cdd961fbd488a9ac899ac416b3655ddbdb"
+        }
+      },
+      "runtimeSourceHead": "36686b7e81e915e3c7a7d6c502b5adcfc4233070",
+      "frozenBuild": {
+        "path": ".artifacts/m2-2/build-complete-frozen-v6/identity.json",
+        "sha256": "8ae59a11fd68fae25125e01a7dc50c62c2c6025a2eb012fc17aab3741410d54d"
+      },
+      "combinedOfflineReview": {
+        "status": "PASS_SINGLE_FILE_OFFLINE_NATIVE_SCENES_EXPORTS_AND_CLIPS",
+        "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Combined-Offline-R2-20261007/M2.2-Combined-Offline.html",
+        "sha256": "b4f5f38b1791e869dfe8256403a2dcb8154af9b20f7bf41d5af162ea293f5f78",
+        "bytes": 368800922,
+        "counts": {
+          "scenes": 9,
+          "families": 110,
+          "states": 9,
+          "clips": 10
+        },
+        "fullSceneComparisons": 36,
+        "imageChecks": 377,
+        "clipPlaybackChecks": 10,
+        "networkRequests": 0,
+        "sourceReceipt": {
+          "path": ".artifacts/m2-2/combined-review-v2/review.json",
+          "sha256": "a3e910db72e3191d2f82e933cfb47a93a97b75aee0138e009e114a0c0b1d84fe"
+        },
+        "qa": {
+          "path": ".artifacts/m2-2/combined-offline-qa-v2/qa.json",
+          "sha256": "2f6d5a8757e9eb8331d1b134b192d43c72495cd498a6a958e786a39510c94845"
+        },
+        "requiresServer": false,
+        "requiresSiblingMedia": false,
+        "pixels": "Exact copied-runtime captures/exports; lossless compression and exact native canvas crop.",
+        "userAcceptance": "PENDING"
+      },
+      "nativeEvidence": {
+        "copied-complete-actions-2x-v4": {
+          "path": ".artifacts/m2-2/copied-complete-actions-2x-v4/report.json",
+          "sha256": "c914848ab1b4cc3b60732cca6cfb756efb3a76c4ec48e48a1e7179a9f39d865d",
+          "status": "PASS_SELECTED_NATIVE_CASES",
+          "stages": 38,
+          "clips": 6,
+          "selectedMap": "xmp03t4.map",
+          "graphics": {
+            "framebuffer": [
+              1489,
+              1080
+            ],
+            "viewport": [
+              1241.3793103448277,
+              900
+            ],
+            "glError": 0,
+            "textures": 852
+          },
+          "worldAllocation": {
+            "terrain": 130080012,
+            "environment": 74856308,
+            "baseline": 30503392,
+            "eager": 9731888,
+            "demand": 21187576,
+            "total": 266359176,
+            "limit": 268435456
+          },
+          "environmentDensity": 2,
+          "encounteredFamilies": 97,
+          "actualBatchedHdBindings": 1166
+        },
+        "copied-complete-states-4x-v4": {
+          "path": ".artifacts/m2-2/copied-complete-states-4x-v4/report.json",
+          "sha256": "41de4463c027bb429b28065911422330c372d72934ffa6c2c7f579a0bab7822e",
+          "status": "PASS_SELECTED_NATIVE_CASES",
+          "stages": 29,
+          "clips": 4,
+          "selectedMap": "xmp03t4.map",
+          "graphics": {
+            "framebuffer": [
+              1489,
+              1080
+            ],
+            "viewport": [
+              1241.3793103448277,
+              900
+            ],
+            "glError": 0,
+            "textures": 880
+          },
+          "worldAllocation": {
+            "terrain": 507796748,
+            "environment": 292144900,
+            "baseline": 91372196,
+            "eager": 50566032,
+            "demand": 38822236,
+            "total": 980702112,
+            "limit": 1342177280
+          },
+          "environmentDensity": 4,
+          "encounteredFamilies": 97,
+          "actualBatchedHdBindings": 1139
+        },
+        "copied-complete-ra2-2x-v4": {
+          "path": ".artifacts/m2-2/copied-complete-ra2-2x-v4/report.json",
+          "sha256": "59a64f8c8149415b9ceca9fcd6da7a7ccdf1dfd53113fd01b542a08be69c8828",
+          "status": "PASS_SELECTED_NATIVE_CASES",
+          "stages": 21,
+          "clips": 0,
+          "selectedMap": "mp03t4.map",
+          "graphics": {
+            "framebuffer": [
+              1489,
+              1080
+            ],
+            "viewport": [
+              1241.3793103448277,
+              900
+            ],
+            "glError": 0,
+            "textures": 748
+          },
+          "worldAllocation": {
+            "terrain": 130080012,
+            "environment": 74856308,
+            "baseline": 30503392,
+            "eager": 9731888,
+            "demand": 9965356,
+            "total": 255136956,
+            "limit": 268435456
+          },
+          "environmentDensity": 2,
+          "encounteredFamilies": 97,
+          "actualBatchedHdBindings": 1166
+        },
+        "copied-complete-control-2x-v4": {
+          "path": ".artifacts/m2-2/copied-complete-control-2x-v4/report.json",
+          "sha256": "27a05f332fee260def2df0f4d842d141eca06bdf1053370efe49e93f4a83a0b2",
+          "status": "PASS_SELECTED_NATIVE_CASES",
+          "stages": 19,
+          "clips": 0,
+          "selectedMap": "xmp19t4.map",
+          "graphics": {
+            "framebuffer": [
+              1489,
+              1080
+            ],
+            "viewport": [
+              1241.3793103448277,
+              900
+            ],
+            "glError": 0,
+            "textures": 399
+          },
+          "worldAllocation": {
+            "terrain": 130080012,
+            "environment": 13901060,
+            "baseline": 30503392,
+            "eager": 9731888,
+            "demand": 7589388,
+            "total": 191805740,
+            "limit": 268435456
+          },
+          "environmentDensity": 2,
+          "encounteredFamilies": 43,
+          "actualBatchedHdBindings": 1932
+        },
+        "copied-missing-environment-2x-v4": {
+          "path": ".artifacts/m2-2/copied-missing-environment-2x-v4/report.json",
+          "sha256": "e26cb9e5fb9e10253b8f2439c0bab3f250bb4099bb4e8b6d9d7a0fbdb826c0a1",
+          "status": "PASS_SELECTED_NATIVE_CASES",
+          "stages": 21,
+          "clips": 0,
+          "selectedMap": "xmp03t4.map",
+          "graphics": {
+            "framebuffer": [
+              1489,
+              1080
+            ],
+            "viewport": [
+              1241.3793103448277,
+              900
+            ],
+            "glError": 0,
+            "textures": 275
+          },
+          "worldAllocation": {
+            "terrain": 130080012,
+            "environment": 0,
+            "baseline": 30503392,
+            "eager": 9731888,
+            "demand": 9965356,
+            "total": 180280648,
+            "limit": 268435456
+          },
+          "environmentDensity": 1,
+          "encounteredFamilies": 0,
+          "actualBatchedHdBindings": 0
+        }
+      },
+      "technicalAcceptance": "PASS_REQUIRED_MAC_CHECKS_WITH_LOADING_AND_2X_RESIDENCY_LIMITS_DISCLOSED",
+      "productionStateResolution": {
+        "path": "docs/m2-2-feedback-history/r4-m2-2-production-state-resolution.json",
+        "sha256": "4eed2f2f2a8d179ae4d01920f7b958ec35c907aed87a853b9fceacbb8db0e761"
+      },
+      "transferManifestSha256": "e0da12188aab125469381e3a145019b42d648c26b5c43c72c6263ebf6bbb208d",
+      "artDirections": {
+        "ground-water": "APPROVED_GROUND_SEA_CORRECTION_RESTORED_PREVIOUS_GRASS_AND_WATERFALL",
+        "props-resources": "APPROVED",
+        "civil-buildings": "APPROVED",
+        "neutral-actors": "APPROVED",
+        "bridges": "APPROVED"
+      },
+      "userAcceptance": "PENDING",
+      "acceptanceSnapshot": {
+        "path": "docs/m2-2-feedback-history/r4-m2-2-acceptance.json",
+        "sha256": "7725acdfaa73710e69ba43dc099d5c2ff36d33d0c082951d1d1f4f2ac0fe49e9"
+      },
+      "resourceTransfer": {
+        "path": "docs/m2-2-feedback-history/r4-m2-2-resource-transfer.json",
+        "sha256": "e0da12188aab125469381e3a145019b42d648c26b5c43c72c6263ebf6bbb208d"
+      },
+      "metadataGitSource": "fc89fe9b01a3ffc1d9586c5f215d1ca227b74184",
+      "boundary": "Exact R4 metadata snapshots extracted from Git before current selection/evidence updates; frozen R4 runtime and raw receipts remain unchanged."
+    }
+  },
+  "feedbackCorrection": {
+    "path": "docs/m2-2-feedback-r6.json",
+    "sha256": "184e16b08cb635241816c4d6c7fa0a08d63ff30ee1c2182b6688afb722875cb9"
+  },
+  "feedbackOfflineReview": {
+    "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Feedback-Offline-R6-20261007/M2.2-R6-Feedback-Offline.html",
+    "sha256": "5658839f913daeee25b41fd9a5277dd80cb8ce4f1ed9f51670b89361204b8227",
+    "bytes": 183749425,
+    "counts": {
+      "scenes": 6,
+      "states": 8,
+      "clips": 4
+    },
+    "imagesVerified": 32,
+    "clipsVerified": 4,
+    "networkRequests": 0,
+    "receipt": {
+      "path": ".artifacts/m2-2/feedback-offline-r6/review.json",
+      "sha256": "65fbbaec3eee424634ac28a6ba6ede813a7ea246c393df67212b8c150019e1db"
+    },
+    "qa": {
+      "path": ".artifacts/m2-2/feedback-offline-qa-r6/qa.json",
+      "sha256": "fa11a8e4e128e15fba802ad9b01bd841d5311c543b5334a3fbff6e249ec98963"
+    },
+    "requiresServer": false,
+    "requiresSiblingMedia": false
+  },
+  "feedbackUserAcceptance": {
+    "outsideReportedFeedback": "APPROVED_BY_USER",
+    "reportedCorrections": "PENDING_REVIEW",
+    "reopenedTreeIdentity": "TREE14"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "status": "PASS_SCOPED_RETIREMENT",
+  "targets": 70,
+  "logicalBytesRemoved": 308541414712,
+  "allocatedBytesRemovedBeforeCloneAccounting": 309397831680,
+  "retentionObjectBytes": 5753833553,
+  "diskBefore": {
+    "availableBytes": 384919547904,
+    "freeBytes": 384919547904
+  },
+  "diskAfter": {
+    "availableBytes": 609968349184,
+    "freeBytes": 609968349184
+  },
+  "availableSpaceIncreaseBytes": 225048801280,
+  "physicalSpaceBoundary": "Actual available-space change includes APFS clone/snapshot accounting and concurrent filesystem activity; logical byte totals are not claimed as physical space freed.",
+  "preparedReceiptSha256": "2c49145ec6d250de1020347fdb28b7f80752d2761c25b009ceb12afc404c99f8",
+  "postVerification": "PASS_RETAINED_OBJECT_HASHES_KEPT_ARCHIVES_AND_MAIN_PRESERVATION",
+  "retainedObjects": 4284,
+  "retainedOriginalFiles": 373252,
+  "retainedResourceFiles": 6033,
+  "keptArchives": [
+    {
+      "path": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-A1-da085fa-Windows-x64.zip",
+      "bytes": 3499702463,
+      "sha256": "58a6313dfc4cf4aeb5800487a845d50a5d7c6cd86953ee86c625ccb76e72d731"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C8-5721aa5-Windows-x64.zip",
+      "bytes": 3500042357,
+      "sha256": "f95e02000de6f7406e26bcaa006e5c67dc185c3a87347fcd9d4d61193f55ae29"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C9-69c132d-Windows-x64.zip",
+      "bytes": 3500091590,
+      "sha256": "ffc5f39bbabb31c911c87ef03327ba7617f81a58d5106e56babb32006ee5bb6e"
+    }
+  ],
+  "preservedMainEntries": 29309,
+  "receipts": [
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/retirement-20261010-v1/plan.json",
+      "bytes": 128883209,
+      "sha256": "6d271c47a232cf410cc8cfc6bdd71640096dd53bcfbea9d172d0ec5fd7c19cea"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/retirement-20261010-v1/prepared.json",
+      "bytes": 2524,
+      "sha256": "2c49145ec6d250de1020347fdb28b7f80752d2761c25b009ceb12afc404c99f8"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/retirement-20261010-v1/retained-files.json",
+      "bytes": 330634284,
+      "sha256": "d6f01ffbc2a04bff6dd1fdbf414398714d2a9dffeed54df60e60f08f653c663d"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/retirement-20261010-v1/retired-archive-identities.json",
+      "bytes": 2001,
+      "sha256": "9a9f2bf4db665afccb5fbea20b2ef8df57817ca02762b0520e314de08625e021"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/retirement-20261010-v1/completed.json",
+      "bytes": 713,
+      "sha256": "3fbb324b454781f7952ed7bfa75345e481bba8ef4e275fd84bafd11add3167ca"
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "status": "PASS_SHARED_CAMEOS_DESKTOP_DELIVERY_NEW_ART_VISUAL_REVIEW_PENDING",
+  "baseline": "3795e365266f3e8efebd3bd3de4c3ea8247d934d",
+  "runtimeSourceHead": "4804ab4a2b6015afd0fabdf6aeb73d42d17d640b",
+  "acceptedR8": "docs/yuri-buildings-feedback-r8-acceptance.json",
+  "audit": [
+    {
+      "edition": "ra2",
+      "before": {
+        "nativeProductionRules": 87,
+        "scopedCameos": 117,
+        "missingHd": 0,
+        "missingNative": 1
+      },
+      "after": {
+        "nativeProductionRules": 87,
+        "scopedCameos": 117,
+        "missingHd": 0,
+        "missingNative": 1
+      },
+      "missingHdBefore": [],
+      "missingNativeInScope": [
+        "falcuico.shp"
+      ],
+      "sourceAbsenceResolution": "falcuico.shp uses falcicon.shp native frame and accepted HD base plus rank; verified in both editions"
+    },
+    {
+      "edition": "yr",
+      "before": {
+        "nativeProductionRules": 92,
+        "scopedCameos": 127,
+        "missingHd": 13,
+        "missingNative": 1
+      },
+      "after": {
+        "nativeProductionRules": 92,
+        "scopedCameos": 127,
+        "missingHd": 0,
+        "missingNative": 1
+      },
+      "missingHdBefore": [
+        {
+          "id": "bfrticon.shp",
+          "uses": [
+            "BFRT"
+          ],
+          "powers": []
+        },
+        {
+          "id": "bfrtuico.shp",
+          "uses": [
+            "BFRT"
+          ],
+          "powers": []
+        },
+        {
+          "id": "bnkricon.shp",
+          "uses": [
+            "NABNKR"
+          ],
+          "powers": []
+        },
+        {
+          "id": "brisicon.shp",
+          "uses": [
+            "BORIS"
+          ],
+          "powers": []
+        },
+        {
+          "id": "brisuico.shp",
+          "uses": [
+            "BORIS"
+          ],
+          "powers": []
+        },
+        {
+          "id": "gdgiicon.shp",
+          "uses": [
+            "GGI"
+          ],
+          "powers": []
+        },
+        {
+          "id": "gdgiuico.shp",
+          "uses": [
+            "GGI"
+          ],
+          "powers": []
+        },
+        {
+          "id": "indpicon.shp",
+          "uses": [
+            "NAINDP"
+          ],
+          "powers": []
+        },
+        {
+          "id": "rbccicon.shp",
+          "uses": [
+            "GAROBO"
+          ],
+          "powers": []
+        },
+        {
+          "id": "roboicon.shp",
+          "uses": [
+            "ROBO"
+          ],
+          "powers": []
+        },
+        {
+          "id": "schpicon.shp",
+          "uses": [
+            "SCHP",
+            "SCHD"
+          ],
+          "powers": []
+        },
+        {
+          "id": "schpuico.shp",
+          "uses": [
+            "SCHP"
+          ],
+          "powers": []
+        },
+        {
+          "id": "spypicon.shp",
+          "uses": [
+            "SPYP"
+          ],
+          "powers": [
+            "SpyPlaneSpecial"
+          ]
+        }
+      ],
+      "missingNativeInScope": [
+        "falcuico.shp"
+      ],
+      "sourceAbsenceResolution": "falcuico.shp uses falcicon.shp native frame and accepted HD base plus rank; verified in both editions"
+    }
+  ],
+  "catalog": {
+    "previous": {
+      "schemaVersion": 1,
+      "revision": "yuri-cameos-e-main-v1",
+      "sha256": "052c1ca0294344e21b3bb4fe881aece611232000e6efc3ec2ad1306efaf3a890",
+      "reviewOnly": false
+    },
+    "selected": {
+      "schemaVersion": 1,
+      "revision": "shared-cameos-ra2-yr-v1",
+      "sha256": "3f68065b6f3567a061cacf3cbb5219647fcaad1abf13c91c886563f372451e24",
+      "reviewOnly": false
+    },
+    "retainedEntries": 474,
+    "entries": 488,
+    "newCanonical": 9,
+    "newAliases": 5,
+    "uiBudgetBytes": 16777216,
+    "logicalDimensions": [
+      60,
+      48
+    ],
+    "runtimeDensity": 4,
+    "companionDensity": 2
+  },
+  "delivery": {
+    "runtimeSourceHead": "4804ab4a2b6015afd0fabdf6aeb73d42d17d640b",
+    "preparedContract": {
+      "schemaVersion": 1,
+      "sha256": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604",
+      "indexPath": "prepared-hd/indexes/a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604.json"
+    },
+    "uiRevision": "shared-cameos-ra2-yr-v1",
+    "uiEntries": 488,
+    "uiManifestSha256": "3f68065b6f3567a061cacf3cbb5219647fcaad1abf13c91c886563f372451e24",
+    "resourceFiles": 4488,
+    "status": "PASS_DESKTOP_ARCHIVE_AND_COMPLETE_EXTRACTION",
+    "folder": "/Users/Aone/Desktop/RA2-HD-Main-Shared-Cameos-R1-20261004-4804ab4-macOS-arm64",
+    "app": "/Users/Aone/Desktop/RA2-HD-Main-Shared-Cameos-R1-20261004-4804ab4-macOS-arm64/Red Alert 2 HD Shared Cameos R1.app",
+    "resources": "/Users/Aone/Desktop/RA2-HD-Main-Shared-Cameos-R1-20261004-4804ab4-macOS-arm64/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/Desktop/RA2-HD-Main-Shared-Cameos-R1-20261004-4804ab4-macOS-arm64/RA2-HD-UI-Resources",
+    "archive": "/Users/Aone/Desktop/RA2-HD-Main-Shared-Cameos-R1-20261004-4804ab4-macOS-arm64.zip",
+    "bytes": 3260427918,
+    "sha256": "d9cbfb6b4f88a441d7c5491f5e2fc963bca16e68ef446f1e2a2aeca8e3634fa4",
+    "checkedEntries": 5360
+  },
+  "desktopLauncher": "PASS_SHARED_CAMEO_DESKTOP_LAUNCH",
+  "desktopNative": {
+    "evidence": "/Users/Aone/RA2remaster/ra2-hd-shared-cameos-20261004/.artifacts/shared-cameos/desktop-native-v1/report.json",
+    "cases": [
+      {
+        "key": "yr-allied",
+        "status": "PASS_NATIVE_CAMEOS_RANKS_POWERS_AND_HD_OFF_ON",
+        "normal": [
+          "gdgiicon.shp",
+          "bfrticon.shp",
+          "rbccicon.shp",
+          "roboicon.shp",
+          "falcicon.shp"
+        ],
+        "veteran": [
+          "gdgiuico.shp",
+          "bfrtuico.shp",
+          "falcuico.shp"
+        ],
+        "powers": [
+          "forcicon.shp"
+        ],
+        "peakUiBytes": 16414976,
+        "rapidSwitchSamples": 16,
+        "rapidSwitchCoherent": true,
+        "hdOffNativeVisible": true,
+        "hdRestored": true
+      },
+      {
+        "key": "yr-soviet",
+        "status": "PASS_NATIVE_CAMEOS_RANKS_POWERS_AND_HD_OFF_ON",
+        "normal": [
+          "bnkricon.shp",
+          "brisicon.shp",
+          "indpicon.shp",
+          "schpicon.shp"
+        ],
+        "veteran": [
+          "brisuico.shp",
+          "schpuico.shp"
+        ],
+        "powers": [
+          "spypicon.shp",
+          "forcicon.shp"
+        ],
+        "peakUiBytes": 16621312,
+        "rapidSwitchSamples": 16,
+        "rapidSwitchCoherent": true,
+        "hdOffNativeVisible": true,
+        "hdRestored": true
+      },
+      {
+        "key": "ra2-allied",
+        "status": "PASS_NATIVE_CAMEOS_RANKS_POWERS_AND_HD_OFF_ON",
+        "normal": [
+          "powricon.shp",
+          "giicon.shp",
+          "gtnkicon.shp",
+          "falcicon.shp"
+        ],
+        "veteran": [
+          "falcuico.shp"
+        ],
+        "powers": [],
+        "peakUiBytes": 15493376,
+        "rapidSwitchSamples": 16,
+        "rapidSwitchCoherent": true,
+        "hdOffNativeVisible": true,
+        "hdRestored": true
+      },
+      {
+        "key": "ra2-soviet",
+        "status": "PASS_NATIVE_CAMEOS_RANKS_POWERS_AND_HD_OFF_ON",
+        "normal": [
+          "npwricon.shp",
+          "e2icon.shp",
+          "htnkicon.shp"
+        ],
+        "veteran": [
+          "e2uico.shp"
+        ],
+        "powers": [],
+        "peakUiBytes": 15884032,
+        "rapidSwitchSamples": 16,
+        "rapidSwitchCoherent": true,
+        "hdOffNativeVisible": true,
+        "hdRestored": true
+      }
+    ],
+    "pageErrors": 0
+  },
+  "offlineReview": {
+    "file": "/Users/Aone/Desktop/RA2-HD-Main-Shared-Cameos-R1-20261004-4804ab4-macOS-arm64/Shared-Cameos-Review.html",
+    "images": 50,
+    "externalRequests": 0
+  },
+  "focusedValidation": {
+    "tests": 16,
+    "assertions": 88,
+    "typecheck": "PASS",
+    "allSelectedUiFileHashes": "PASS",
+    "nativeRankPairPixels": "PASS"
+  },
+  "mainResourceTransfer": {
+    "status": "PASS_ADDITIVE_UI_MAIN_RESOURCE_COPY",
+    "retainedEntries": 474,
+    "entries": 488,
+    "retainedFiles": 349,
+    "source": "/Users/Aone/RA2remaster/ra2-hd-shared-cameos-20261004/.local/ui-packs/shared-cameos-ra2-yr-v1",
+    "target": "/Users/Aone/RA2remaster/ra2-hd/.local/ui-packs/shared-cameos-ra2-yr-v1",
+    "selection": {
+      "schemaVersion": 1,
+      "revision": "shared-cameos-ra2-yr-v1",
+      "sha256": "3f68065b6f3567a061cacf3cbb5219647fcaad1abf13c91c886563f372451e24",
+      "reviewOnly": false
+    }
+  },
+  "mainRegistration": {
+    "status": "PASS_MAIN_UI_REGISTRATION",
+    "revision": "shared-cameos-ra2-yr-v1",
+    "entries": 488,
+    "routes": 357
+  },
+  "diagnostic": "native-v1 retains a test-only RA2 publication race failure. The harness now waits for model/published cameo agreement; native-ra2-v2 and the fresh four-case Desktop run pass. Application source did not change after the recorded build.",
+  "preservation": "All previous 474 UI entries and bytes, menu/loading assets, world selections/prepared payloads and accepted R8 changes retained. Old Desktop packages retained.",
+  "limits": [
+    "New icon appearance pending user review",
+    "Windows not run",
+    "Source audit excludes nonbuildable scenery, campaign-only and unused declarations from build-menu completion"
+  ],
+  "evidenceRoot": "/Users/Aone/RA2remaster/ra2-hd-shared-cameos-20261004/.artifacts/shared-cameos"
+}

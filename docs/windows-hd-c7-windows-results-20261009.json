@@ -1,0 +1,353 @@
+{
+  "status": "C7_HITCH_IMPROVEMENT_SUSTAINED_MANUAL_RATE_OPEN",
+  "baselineRun": "2026-10-10T00-42-54-111Z-stress-4x-none",
+  "candidateRun": "2026-10-10T04-19-06-367Z-stress-4x-none",
+  "candidateReturn": {
+    "file": "WINHD-20261008-D38F136-C7-RETURN-2026-10-10T04-30-08-690Z.zip",
+    "bytes": 55917862,
+    "sha256": "bc63c90b662a46fddb71b57e4b55881bf4f31a161146cdc9e6184055e8db4530",
+    "members": 14
+  },
+  "candidateDiagnosticCommit": "3ab266e3b0b2c755f33ac65ca0866b1055f019d0",
+  "candidateManifestSha256": "1133beff253fc177d8b4a007077560a0a3a6de3aeb65f833464085dd65485458",
+  "returnValidation": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+  "matchedComparison": "MATCHED_WINDOWS_AB_ANALYZED",
+  "displayFrequencyHz": 165,
+  "nativeFramebuffer": [
+    2560,
+    1600
+  ],
+  "resourceIdentity": {
+    "worldAndUIFiles": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+  },
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCPU": 128,
+    "ui": 16
+  },
+  "phases": [
+    {
+      "version": "C6",
+      "phase": "fresh-process-first-use",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": false,
+      "intervalCount": 1015,
+      "intervalSpanMs": 15351.545,
+      "meanFrameIntervalMs": 15.12467487684729,
+      "averageRenderedLoopFps": 66.11712371621228,
+      "medianFrameIntervalMs": 12.12999999999738,
+      "renderUpdatePlusSubmissionMedianMs": 11.815000000002328,
+      "measuredSimulationPlusGraphicsMedianMs": 12.825000000011642,
+      "approximate165HzSlots": {
+        "2": 754,
+        "3": 211,
+        "4": 36,
+        "5": 7,
+        "6": 1,
+        "8": 1,
+        "10": 1,
+        "16": 1,
+        "53": 1,
+        "57": 1,
+        "63": 1
+      },
+      "percentWithinPoint2MsOf165HzGrid": 98.42364532019704,
+      "loopFpsBoundary": "Game render-loop rate over timestamp span; not a display-present counter or reciprocal of the median."
+    },
+    {
+      "version": "C6",
+      "phase": "warmed-steady",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": false,
+      "intervalCount": 950,
+      "intervalSpanMs": 15006.104999999996,
+      "meanFrameIntervalMs": 15.795899999999996,
+      "averageRenderedLoopFps": 63.30756715350188,
+      "medianFrameIntervalMs": 12.154999999998836,
+      "renderUpdatePlusSubmissionMedianMs": 12.830000000016298,
+      "measuredSimulationPlusGraphicsMedianMs": 14.019999999960419,
+      "approximate165HzSlots": {
+        "2": 511,
+        "3": 380,
+        "4": 42,
+        "5": 7,
+        "6": 2,
+        "7": 1,
+        "8": 2,
+        "10": 1,
+        "12": 1,
+        "14": 1,
+        "15": 1,
+        "25": 1
+      },
+      "percentWithinPoint2MsOf165HzGrid": 99.57894736842105,
+      "loopFpsBoundary": "Game render-loop rate over timestamp span; not a display-present counter or reciprocal of the median."
+    },
+    {
+      "version": "C6",
+      "phase": "same-process-reentry-first-use",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": false,
+      "intervalCount": 1061,
+      "intervalSpanMs": 15254.589999999997,
+      "meanFrameIntervalMs": 14.377558906691798,
+      "averageRenderedLoopFps": 69.552836228309,
+      "medianFrameIntervalMs": 12.130000000004657,
+      "renderUpdatePlusSubmissionMedianMs": 12.165000000037253,
+      "measuredSimulationPlusGraphicsMedianMs": 12.895000000018626,
+      "approximate165HzSlots": {
+        "2": 768,
+        "3": 256,
+        "4": 29,
+        "5": 5,
+        "6": 1,
+        "23": 1,
+        "43": 1
+      },
+      "percentWithinPoint2MsOf165HzGrid": 99.62299717247879,
+      "loopFpsBoundary": "Game render-loop rate over timestamp span; not a display-present counter or reciprocal of the median."
+    },
+    {
+      "version": "C6",
+      "phase": "same-process-reentry-warmed",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": false,
+      "intervalCount": 930,
+      "intervalSpanMs": 15006.080000000002,
+      "meanFrameIntervalMs": 16.13556989247312,
+      "averageRenderedLoopFps": 61.97487951550304,
+      "medianFrameIntervalMs": 18.135000000002037,
+      "renderUpdatePlusSubmissionMedianMs": 13.224999999976717,
+      "measuredSimulationPlusGraphicsMedianMs": 14.160000000032596,
+      "approximate165HzSlots": {
+        "2": 454,
+        "3": 399,
+        "4": 50,
+        "5": 17,
+        "6": 3,
+        "7": 1,
+        "8": 2,
+        "10": 3,
+        "15": 1
+      },
+      "percentWithinPoint2MsOf165HzGrid": 98.70967741935483,
+      "loopFpsBoundary": "Game render-loop rate over timestamp span; not a display-present counter or reciprocal of the median."
+    },
+    {
+      "version": "C7",
+      "phase": "fresh-process-first-use",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": false,
+      "intervalCount": 935,
+      "intervalSpanMs": 15363.675000000001,
+      "meanFrameIntervalMs": 16.43173796791444,
+      "averageRenderedLoopFps": 60.85783512082883,
+      "medianFrameIntervalMs": 12.159999999999854,
+      "renderUpdatePlusSubmissionMedianMs": 12.947500001639128,
+      "measuredSimulationPlusGraphicsMedianMs": 14.100000000558794,
+      "approximate165HzSlots": {
+        "2": 493,
+        "3": 383,
+        "4": 36,
+        "5": 12,
+        "6": 6,
+        "7": 1,
+        "17": 1,
+        "21": 1,
+        "54": 1,
+        "61": 1
+      },
+      "percentWithinPoint2MsOf165HzGrid": 99.67914438502675,
+      "loopFpsBoundary": "Game render-loop rate over timestamp span; not a display-present counter or reciprocal of the median."
+    },
+    {
+      "version": "C7",
+      "phase": "warmed-steady",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": false,
+      "intervalCount": 886,
+      "intervalSpanMs": 14987.894999999997,
+      "meanFrameIntervalMs": 16.916360045146725,
+      "averageRenderedLoopFps": 59.114371964842306,
+      "medianFrameIntervalMs": 18.165000000000873,
+      "renderUpdatePlusSubmissionMedianMs": 14.050000000745058,
+      "measuredSimulationPlusGraphicsMedianMs": 15.365000000223517,
+      "approximate165HzSlots": {
+        "2": 310,
+        "3": 489,
+        "4": 69,
+        "5": 14,
+        "6": 1,
+        "8": 1,
+        "9": 1,
+        "17": 1
+      },
+      "percentWithinPoint2MsOf165HzGrid": 99.09706546275395,
+      "loopFpsBoundary": "Game render-loop rate over timestamp span; not a display-present counter or reciprocal of the median."
+    },
+    {
+      "version": "C7",
+      "phase": "same-process-reentry-first-use",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": false,
+      "intervalCount": 994,
+      "intervalSpanMs": 15272.765,
+      "meanFrameIntervalMs": 15.36495472837022,
+      "averageRenderedLoopFps": 65.08317256240112,
+      "medianFrameIntervalMs": 12.145000000004075,
+      "renderUpdatePlusSubmissionMedianMs": 13.022499999962747,
+      "measuredSimulationPlusGraphicsMedianMs": 13.784999999217689,
+      "approximate165HzSlots": {
+        "2": 579,
+        "3": 362,
+        "4": 44,
+        "5": 5,
+        "7": 2,
+        "17": 1,
+        "44": 1
+      },
+      "percentWithinPoint2MsOf165HzGrid": 99.79879275653923,
+      "loopFpsBoundary": "Game render-loop rate over timestamp span; not a display-present counter or reciprocal of the median."
+    },
+    {
+      "version": "C7",
+      "phase": "same-process-reentry-warmed",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": false,
+      "intervalCount": 925,
+      "intervalSpanMs": 14999.970000000001,
+      "meanFrameIntervalMs": 16.216183783783784,
+      "averageRenderedLoopFps": 61.666790000246664,
+      "medianFrameIntervalMs": 18.154999999998836,
+      "renderUpdatePlusSubmissionMedianMs": 13.89500000141561,
+      "measuredSimulationPlusGraphicsMedianMs": 14.764999999664724,
+      "approximate165HzSlots": {
+        "2": 394,
+        "3": 474,
+        "4": 43,
+        "5": 9,
+        "7": 1,
+        "8": 2,
+        "10": 1,
+        "15": 1
+      },
+      "percentWithinPoint2MsOf165HzGrid": 100.0,
+      "loopFpsBoundary": "Game render-loop rate over timestamp span; not a display-present counter or reciprocal of the median."
+    }
+  ],
+  "actualContentControls": [
+    {
+      "phase": "fresh-process-first-use",
+      "actualHdFamilySetEqual": true,
+      "countDifferences": []
+    },
+    {
+      "phase": "warmed-steady",
+      "actualHdFamilySetEqual": true,
+      "countDifferences": [
+        {
+          "identity": "Cannon",
+          "baseline": 0,
+          "candidate": 1
+        },
+        {
+          "identity": null,
+          "baseline": 0,
+          "candidate": 3
+        }
+      ]
+    },
+    {
+      "phase": "same-process-reentry-first-use",
+      "actualHdFamilySetEqual": true,
+      "countDifferences": []
+    },
+    {
+      "phase": "same-process-reentry-warmed",
+      "actualHdFamilySetEqual": true,
+      "countDifferences": []
+    }
+  ],
+  "warmTailControls": [
+    {
+      "phase": "warmed-steady",
+      "baselineAbove33ms": 10,
+      "candidateAbove33ms": 4,
+      "baselineMaximumSubmissionMs": 136.77500000002328,
+      "candidateMaximumSubmissionMs": 13.364999998360872
+    },
+    {
+      "phase": "same-process-reentry-warmed",
+      "baselineAbove33ms": 10,
+      "candidateAbove33ms": 5,
+      "baselineMaximumSubmissionMs": 47.945000000006985,
+      "candidateMaximumSubmissionMs": 13.130000000819564
+    }
+  ],
+  "userFeedback": {
+    "hitches": "Improved in C7",
+    "sustainedRate": "Feels lower, similar to moving from 120 Hz to 60 Hz on a 165 Hz Windows display",
+    "affectedInterval": "Primarily later manual play after the automatic test",
+    "loadingAcceptance": "NOT_SEPARATELY_REPORTED",
+    "visualAcceptance": "NOT_SEPARATELY_REPORTED",
+    "originalArtworkFollowup": "User confirms HD was disabled and a new match was started; perceived smoothness did not clearly improve. FPS was not measured.",
+    "originalControlStatus": "USER_CONFIRMED_HD_OFF_NEW_MATCH_FPS_UNMEASURED",
+    "originalControl": {
+      "hdEnabled": false,
+      "newMatchStarted": true,
+      "fpsMeasured": false,
+      "actualBindingEvidence": "NOT_YET_CAPTURED"
+    }
+  },
+  "frameCapAudit": {
+    "sourcePaths": [
+      "src/engine/GameAnimationLoop.ts",
+      "src/gui/screen/game/GameScreen.ts",
+      "desktop/main.mjs"
+    ],
+    "renderScheduler": "requestAnimationFrame; render/update called once per foreground callback; no explicit 60 FPS render cap found",
+    "simulationSkipBudgetMs": 8,
+    "simulationBudgetInterpretation": "Limits catch-up simulation work before rendering; does not set render refresh rate",
+    "offscreenRendering": false,
+    "explicitSetFrameRate": false,
+    "syncOverrideSwitches": false,
+    "inference": "Cadence lies on approximately 165 Hz refresh slots. Steady graphics CPU/submission work exceeds a 6.06 ms 165 Hz or 8.33 ms 120 Hz frame budget.",
+    "remainingUnknowns": [
+      "Later manual-play loop rate",
+      "Actual GPU execution time and display presents",
+      "Driver frame limiting and compositor wait attribution"
+    ],
+    "limits": "One matched Normal pair. No explicit application-side 60 FPS cap was found; external driver or presentation limits remain unverified.",
+    "originalControlCaveat": "User confirms HD Off and a new match, satisfying the documented full-application boundary. Actual binding and matched frame measurements are still required for quantitative attribution."
+  },
+  "nextCapture": {
+    "tool": "C7 Manual Capture M1",
+    "sequence": [
+      "Finish unchanged automatic test",
+      "Continue until low-rate manual play occurs",
+      "One lightweight F8 phase preserving camera input",
+      "After F8 completes, one late instrumented F9 trace if condition persists",
+      "Close and export original C7 reports"
+    ],
+    "reason": "Original C7 F8 and late F9 use a forced camera route, and the returned four automatic phases omit the reported manual interval.",
+    "gameCandidate": "Unchanged C7",
+    "syncOrFrameLimitChange": false
+  },
+  "artifactPaths": {
+    "comparison": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c6-c7-windows-comparison-v1.json",
+    "candidateAnalysis": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c7-windows-analysis-v1/analysis.json",
+    "returnValidation": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/returns/2026-10-10T04-30-08-690Z-c7-validation.json"
+  },
+  "platformStatus": {
+    "WindowsC7Normal": "CAPTURED_FOUR_VALID_UNINSTRUMENTED_PHASES",
+    "manualLowRate": "NOT_CAPTURED",
+    "userHitchFeedback": "IMPROVED",
+    "sustainedRateAcceptance": "OPEN",
+    "mainIntegration": "NOT_APPLIED",
+    "remotePush": "NOT_PERFORMED",
+    "release": "NOT_DELIVERABLE_YET"
+  }
+}

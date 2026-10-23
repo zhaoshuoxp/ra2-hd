@@ -1,0 +1,734 @@
+{
+  "status": "MAC_TECHNICAL_PASS_NEW_ART_USER_ACCEPTED",
+  "batches": [
+    66,
+    67,
+    68
+  ],
+  "runtimeSourceHead": "3280ec01a36dc812fe95a12b7ed75cd4a8a28c4d",
+  "app": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/active-mac-validation-host-v1/Red Alert 2 HD M2.4 Validation Host.app",
+  "resources": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.local",
+  "profilePolicy": "Separate task-owned native profile per case; internal reusable signed arm64 app only",
+  "cases": [
+    {
+      "theater": "NEWURBAN",
+      "mode": "2x",
+      "report": {
+        "file": ".artifacts/m2-4/newurban-smudge-native-batch67-v1/native-rush-2x-v1/report.json",
+        "bytes": 2304804,
+        "sha256": "c20378645b6cbf2fdca12c4c18d5213377643f8921283ddd587fe1c8a53f19f7"
+      },
+      "worldBytes": 80988724,
+      "preparedPeakBytes": 45156556,
+      "nativeDecalCases": 24,
+      "exactOriginalBindings": 3
+    },
+    {
+      "theater": "NEWURBAN",
+      "mode": "4x",
+      "report": {
+        "file": ".artifacts/m2-4/newurban-smudge-native-batch67-v1/native-rush-4x-v1/report.json",
+        "bytes": 7741790,
+        "sha256": "9efd9256ef3a5fe8c23daae0ec36663f55b07cafdf1570d0491631eb853bafbe"
+      },
+      "worldBytes": 299430988,
+      "preparedPeakBytes": 108112788,
+      "nativeDecalCases": 24,
+      "exactOriginalBindings": 3,
+      "originalResetReentryAndCrossTheaterDisposal": "PASS"
+    },
+    {
+      "theater": "NEWURBAN",
+      "mode": "original",
+      "report": {
+        "file": ".artifacts/m2-4/newurban-smudge-native-batch67-v1/native-rush-original-v1/report.json",
+        "bytes": 2532,
+        "sha256": "53f7a6f3f3f4a66df61ab4818ec4033be3c8f3595cd3ecce20c99c83cf848265"
+      }
+    },
+    {
+      "theater": "DESERT",
+      "mode": "2x",
+      "report": {
+        "file": ".artifacts/m2-4/desert-smudge-native-batch68-v1/native-monument-2x-v1/report.json",
+        "bytes": 4007736,
+        "sha256": "7209a4d218fc369c1195a436e17582af1d0b2cea49517f4a63a062e9da764293"
+      },
+      "worldBytes": 57303072,
+      "preparedPeakBytes": 45156556,
+      "nativeDecalCases": 15,
+      "exactOriginalBindings": 6
+    },
+    {
+      "theater": "DESERT",
+      "mode": "4x",
+      "report": {
+        "file": ".artifacts/m2-4/desert-smudge-native-batch68-v1/native-monument-4x-v1/report.json",
+        "bytes": 9448067,
+        "sha256": "bd599cae0a0d526d5810a0a1f9181f4fd65aa78730b8b5476885d12da52d8fb6"
+      },
+      "worldBytes": 204641428,
+      "preparedPeakBytes": 108112788,
+      "nativeDecalCases": 15,
+      "exactOriginalBindings": 6,
+      "originalResetReentryAndCrossTheaterDisposal": "PASS"
+    },
+    {
+      "theater": "DESERT",
+      "mode": "original",
+      "report": {
+        "file": ".artifacts/m2-4/desert-smudge-native-batch68-v1/native-monument-original-v1/report.json",
+        "bytes": 2418,
+        "sha256": "9903bab7bd3d8cfa66b0a1d8fbf2c2432623f9d97a58263a3392ac89a7dfd7a4"
+      }
+    },
+    {
+      "theater": "NEWURBAN",
+      "mode": "4x",
+      "kind": "native-manhatta-4x-v1",
+      "report": {
+        "file": ".artifacts/m2-4/newurban-urban-accepted-reuse-batch66-v1/native-manhatta-4x-v1/report.json",
+        "bytes": 1820435,
+        "sha256": "ac6b7ccb45c4565b26b48f9c6766be746a88635b593590dff56ee26a83964643"
+      }
+    },
+    {
+      "theater": "NEWURBAN",
+      "mode": "4x",
+      "kind": "native-gate-rush-4x-v1",
+      "report": {
+        "file": ".artifacts/m2-4/newurban-urban-accepted-reuse-batch66-v1/native-gate-rush-4x-v1/report.json",
+        "bytes": 305609,
+        "sha256": "ec17b95562d2742f35c76b81968339313321442efb4973aa80971e416a678b9d"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "theater": "NEWURBAN",
+      "directoryEntries": 8,
+      "uniqueMapFiles": 8,
+      "originalModeLabelBindings": 9,
+      "unifiedSelectableEntries": 8,
+      "newAuthoredFamilies": 24,
+      "completeAcceptedReuseFamilies": 3,
+      "remainingSourceGroups": 703,
+      "remainingByKind": {
+        "tmp": 500,
+        "terrain": 42,
+        "building": 146,
+        "infantry": 2,
+        "overlay": 13
+      },
+      "parserIssues": 0
+    },
+    {
+      "theater": "DESERT",
+      "directoryEntries": 13,
+      "uniqueMapFiles": 13,
+      "originalModeLabelBindings": 14,
+      "unifiedSelectableEntries": 13,
+      "newAuthoredFamilies": 15,
+      "completeAcceptedReuseFamilies": 1,
+      "remainingSourceGroups": 483,
+      "remainingByKind": {
+        "tmp": 366,
+        "terrain": 16,
+        "overlay": 38,
+        "building": 63
+      },
+      "parserIssues": 0
+    }
+  ],
+  "mapModeLedger": [
+    {
+      "mapId": "yr:fight.map",
+      "source": {
+        "member": "fight.map",
+        "archive": "multimd.mix",
+        "sha256": "d751dce7cd3611077e9228c33235f39c71681fff6ac08ca1f716d963ad6ce070",
+        "bytes": 91254
+      },
+      "starts": 2,
+      "originalModes": [
+        "standard"
+      ],
+      "unified": {
+        "runtimeName": "fight.map",
+        "originalModes": [
+          "standard"
+        ],
+        "maxSlots": 2,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "d35d9f5cf145d6f6e14f3cd6c27c24fad29d94d88cb96be95df2798508f623fb",
+      "placementHash": "a94941e37e74a277625aa51f51854ce0b1870f17635a61006d2ed7e20aa5bee6",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:downtown.map",
+      "source": {
+        "member": "downtown.map",
+        "archive": "multimd.mix",
+        "sha256": "427bf97cbecdc4c79a69c06344f25c7c2e57257948c3e5fd28549f5eceaf0e8d",
+        "bytes": 177924
+      },
+      "starts": 4,
+      "originalModes": [
+        "standard"
+      ],
+      "unified": {
+        "runtimeName": "downtown.map",
+        "originalModes": [
+          "standard"
+        ],
+        "maxSlots": 4,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "ad7269868f34ea87fe633b762504a57c8653f23e361e2a6c0a6ef38b11fe9842",
+      "placementHash": "0079e88bca280553bb3e9245addca1883a22257ccbe2036805ef0c18a92ef4df",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:groundze.map",
+      "source": {
+        "member": "groundze.map",
+        "archive": "multimd.mix",
+        "sha256": "204556d9d760c08eaaa0bb1b6ed7de5f50417cd21844fd0db8a2bc6d24973218",
+        "bytes": 79818
+      },
+      "starts": 4,
+      "originalModes": [
+        "standard"
+      ],
+      "unified": {
+        "runtimeName": "groundze.map",
+        "originalModes": [
+          "standard"
+        ],
+        "maxSlots": 4,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "c5802cdd7704168a8c907349f6e121fd6d57c840103d2265e1e365738fad0b5c",
+      "placementHash": "50c1cd47afeef0e7baaef0aa92843b288bbc3e96aeff39a50c9899a72dfd2bdc",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:manhatta.map",
+      "source": {
+        "member": "manhatta.map",
+        "archive": "multimd.mix",
+        "sha256": "3016a9b96fc0df087f8f3487db2a5da023ee545906ae553eface0f83d77ddd8c",
+        "bytes": 211336
+      },
+      "starts": 4,
+      "originalModes": [
+        "standard"
+      ],
+      "unified": {
+        "runtimeName": "manhatta.map",
+        "originalModes": [
+          "standard"
+        ],
+        "maxSlots": 4,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "48968217f970d3344604ca35548dec1868813e4d61047645bc46d79d60b634fd",
+      "placementHash": "20a3cf6cc3d32b148ed93f71236853e21b162eb4b0f42a6bec64c9d26f23c5b6",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:rushhr.map",
+      "source": {
+        "member": "rushhr.map",
+        "archive": "multimd.mix",
+        "sha256": "db2e6bb52109f3307129e335efe0aec8b1453cf58ced05472928aa46c9a0014a",
+        "bytes": 230986
+      },
+      "starts": 4,
+      "originalModes": [
+        "standard"
+      ],
+      "unified": {
+        "runtimeName": "rushhr.map",
+        "originalModes": [
+          "standard"
+        ],
+        "maxSlots": 4,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "03cb9295f9f068e56bc1d9fa910945aa5d630c0411141b96923d4efddb1cdc12",
+      "placementHash": "4bca11766af50d5c6ece66f12e70b4466880abb0e544a19641f711400af5efff",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:groundzemw.map",
+      "source": {
+        "member": "groundzemw.map",
+        "archive": "multimd.mix",
+        "sha256": "01bc2f7363cdddb76e15db1594ef96d9b54795f62b7078c931f29a596dade662",
+        "bytes": 80153
+      },
+      "starts": 4,
+      "originalModes": [
+        "megawealth"
+      ],
+      "unified": {
+        "runtimeName": "groundzemw.map",
+        "originalModes": [
+          "megawealth"
+        ],
+        "maxSlots": 4,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "72f7764bc564e48657eae805557619d35e63d1142deaabc905fd7d73b47dea31",
+      "placementHash": "47f8961ab939d16bc5a2ed2cdc81bcf61fd1b84cf40396ff5352c01cf23db672",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:austintx.map",
+      "source": {
+        "member": "austintx.map",
+        "archive": "multimd.mix",
+        "sha256": "71fbd8bb35271b6fc7cab455cecd347693d92d422051cb029db64c17e9e939e7",
+        "bytes": 110951
+      },
+      "starts": 4,
+      "originalModes": [
+        "meatgrind",
+        "teamgame"
+      ],
+      "unified": {
+        "runtimeName": "austintx.map",
+        "originalModes": [
+          "meatgrind",
+          "teamgame"
+        ],
+        "maxSlots": 4,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "f3bb2f9d9029d66d23e1edcbcdd4e3c69120f569c550731fb4e78a3d10c433e9",
+      "placementHash": "c662ca58928e5a18bbf2135478d7b34a48128771264944551b50e7e4e78db190",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:turfwar.map",
+      "source": {
+        "member": "turfwar.map",
+        "archive": "multimd.mix",
+        "sha256": "dedf2001a7da999ae78e8f9ba29c94a1cdd6413660596233693fd6bc359cac71",
+        "bytes": 89017
+      },
+      "starts": 4,
+      "originalModes": [
+        "teamgame"
+      ],
+      "unified": {
+        "runtimeName": "turfwar.map",
+        "originalModes": [
+          "teamgame"
+        ],
+        "maxSlots": 4,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "aa22745f52f3c5bbe5cad216bb043522065ec75173bb7619459a7216c5acb9ad",
+      "placementHash": "9df52838d82966e2ddd7f9e25c8c66022c99efe88aec6ea913f6c80127a05c48",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:dunepatr.map",
+      "source": {
+        "member": "dunepatr.map",
+        "archive": "multimd.mix",
+        "sha256": "c60aee4317c1fcea1a9c3c750f2ca859fbe2ad13760cf14392907d4d4558524d",
+        "bytes": 68466
+      },
+      "starts": 2,
+      "originalModes": [
+        "standard"
+      ],
+      "unified": {
+        "runtimeName": "dunepatr.map",
+        "originalModes": [
+          "standard"
+        ],
+        "maxSlots": 2,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "3eef325a236fe291b84131d3a92aea965732e938c4f8a018f22ce6607f09cd38",
+      "placementHash": "bb6ae0f8c32515be4ddd397cd54b20eb91914bb2bd416693fa6a5af7593cd540",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:pcofdune.map",
+      "source": {
+        "member": "pcofdune.map",
+        "archive": "multimd.mix",
+        "sha256": "47f9f309c1377930e9d4a8d5d274e916b851ae37a261de4bea2f592f2fc9d1e3",
+        "bytes": 94375
+      },
+      "starts": 2,
+      "originalModes": [
+        "standard"
+      ],
+      "unified": {
+        "runtimeName": "pcofdune.map",
+        "originalModes": [
+          "standard"
+        ],
+        "maxSlots": 2,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "7a8d31d8ab78108b3adeca1181dde82936086bcbc3e3260f9d902ac73239c04b",
+      "placementHash": "243e9d23fe90736326d02b2c0bab75d19d227510e684de598ba3cd25d68ab368",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:saharami.map",
+      "source": {
+        "member": "saharami.map",
+        "archive": "multimd.mix",
+        "sha256": "09c148c7820a5f989297aedc1df6c36b2541a51bfb389ebd968fbd9279a1bc4e",
+        "bytes": 140184
+      },
+      "starts": 2,
+      "originalModes": [
+        "standard"
+      ],
+      "unified": {
+        "runtimeName": "saharami.map",
+        "originalModes": [
+          "standard"
+        ],
+        "maxSlots": 2,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "35640b2a61046b5309e15a599df43055b75b029e281719b0a4be7c23fa3b766e",
+      "placementHash": "4bb40475d6d0f22c156bfa99e4f0fb263cf804c48d6b12416b0ce2e017584376",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:dryheat.map",
+      "source": {
+        "member": "dryheat.map",
+        "archive": "multimd.mix",
+        "sha256": "2c922ac63feecfbab9266025fc1dd116f8baa9a142b696e8c5fecd1e412808ea",
+        "bytes": 81954
+      },
+      "starts": 4,
+      "originalModes": [
+        "standard",
+        "teamgame"
+      ],
+      "unified": {
+        "runtimeName": "dryheat.map",
+        "originalModes": [
+          "standard",
+          "teamgame"
+        ],
+        "maxSlots": 4,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "d3779bac8273657389226996eb6637f54a134d28ed095405a7e098c38a32e00b",
+      "placementHash": "be2453c0f337f1ce37725628ad7c30f48403e485c41c81e2405cebde45e6b3e3",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:monumentvalley.map",
+      "source": {
+        "member": "monumentvalley.map",
+        "archive": "multimd.mix",
+        "sha256": "21dbcf0fd3e1985b43830cd8c5ec546a61e27c8e86473f3e3d79b09149d67a99",
+        "bytes": 238057
+      },
+      "starts": 6,
+      "originalModes": [
+        "standard"
+      ],
+      "unified": {
+        "runtimeName": "monumentvalley.map",
+        "originalModes": [
+          "standard"
+        ],
+        "maxSlots": 6,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "5cd01a0801931be9c5f47edb70a14faadbc40aa471ed4685ae449a69c0d887cf",
+      "placementHash": "ff53e70cf79bf7e34972cb6e82e41fe3af31418ea5bdf97f6ee582657e58dd5a",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:sedonapass.map",
+      "source": {
+        "member": "sedonapass.map",
+        "archive": "multimd.mix",
+        "sha256": "7e83e619ac7f2868e2e2224cc06f5da44cb4932388b9c7de507c99cd944b6a1a",
+        "bytes": 249970
+      },
+      "starts": 6,
+      "originalModes": [
+        "standard"
+      ],
+      "unified": {
+        "runtimeName": "sedonapass.map",
+        "originalModes": [
+          "standard"
+        ],
+        "maxSlots": 6,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "0cd41d49f7f90a48da32c4192271b606b20a4488ae4a4ef04ecc8265ec49b372",
+      "placementHash": "f7862aada7cdde094b6859ff3491c21c907b5e158dbbb9c8d57fcdc741a683df",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:tourofegypt.map",
+      "source": {
+        "member": "tourofegypt.map",
+        "archive": "multimd.mix",
+        "sha256": "933a637e1030ad1b1c114f512f68b8b27c5e1f407d726a35a0611b1773a36295",
+        "bytes": 85613
+      },
+      "starts": 6,
+      "originalModes": [
+        "teamgame"
+      ],
+      "unified": {
+        "runtimeName": "tourofegypt.map",
+        "originalModes": [
+          "teamgame"
+        ],
+        "maxSlots": 6,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "20cc0f80d6ea4632fad0baef65f5d1e9eb166470b8e53b98c3908752700a8567",
+      "placementHash": "e5f9a61dcf3a0a2c14d54901876d9405eaa08ddf19bcb8a3e65b6997891e356b",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:saharamimw.map",
+      "source": {
+        "member": "saharamimw.map",
+        "archive": "multimd.mix",
+        "sha256": "6014872a1eb6ce10e08c0bb3e8dc6f29971b7ef08e1e3a72de5ce157e7e812c1",
+        "bytes": 139296
+      },
+      "starts": 2,
+      "originalModes": [
+        "megawealth"
+      ],
+      "unified": {
+        "runtimeName": "saharamimw.map",
+        "originalModes": [
+          "megawealth"
+        ],
+        "maxSlots": 2,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "adbbd16214b870a303dd3661dac03858e2e3cc9237add6f613a0676ae69f3cb0",
+      "placementHash": "279f7eb8be6639654ecea7e0b6554ba46d73b58217a820e6c2ace816218a1985",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:deathvalleygirlmw.map",
+      "source": {
+        "member": "deathvalleygirlmw.map",
+        "archive": "multimd.mix",
+        "sha256": "e131c58a802ad5d8b155ea23a112f3e83c233b8479c6acd650bbc13a09c018fe",
+        "bytes": 107836
+      },
+      "starts": 4,
+      "originalModes": [
+        "megawealth"
+      ],
+      "unified": {
+        "runtimeName": "deathvalleygirlmw.map",
+        "originalModes": [
+          "megawealth"
+        ],
+        "maxSlots": 4,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "df1a65b42a9309cc8139145b358132d963f11c5cce54e7da213f229147a9bbb2",
+      "placementHash": "d05da2fa01ac51b6882621ac6596d4e75ac0a1cbba8193a560d6ad7b5cd4cacd",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:dryheatmw.map",
+      "source": {
+        "member": "dryheatmw.map",
+        "archive": "multimd.mix",
+        "sha256": "b1cb7ea3c69231df3b5a2aef30b43c7305636a745c2ca2310927dc7233857af9",
+        "bytes": 80991
+      },
+      "starts": 4,
+      "originalModes": [
+        "megawealth"
+      ],
+      "unified": {
+        "runtimeName": "dryheatmw.map",
+        "originalModes": [
+          "megawealth"
+        ],
+        "maxSlots": 4,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "e7d3eec338200b2bdd495f4419e1c078d3e84d9cb36576abfe67c38ab0319b78",
+      "placementHash": "e064a87125024a0fd7e8d3c4997cbb24fb3ec0f02576b24eb927acf37e394f5d",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:monumentvalleymw.map",
+      "source": {
+        "member": "monumentvalleymw.map",
+        "archive": "multimd.mix",
+        "sha256": "cf6066770e752c92a08e70e188aec29c3904dc082682eae936581131da27c279",
+        "bytes": 239080
+      },
+      "starts": 6,
+      "originalModes": [
+        "megawealth"
+      ],
+      "unified": {
+        "runtimeName": "monumentvalleymw.map",
+        "originalModes": [
+          "megawealth"
+        ],
+        "maxSlots": 6,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "2aea351a7564ca714a2f9aeed677eaf69a748620af039408c7b5d394f0aca5c9",
+      "placementHash": "267c5c2b79438914a853dcaf22cb03d1f449aca0125fc4fe968379263b98babb",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:sedonapassmw.map",
+      "source": {
+        "member": "sedonapassmw.map",
+        "archive": "multimd.mix",
+        "sha256": "c58ff8d5c2d0cfc80f791c7726a9493f49bcad36c468fa08c3ada521c7b16211",
+        "bytes": 251447
+      },
+      "starts": 6,
+      "originalModes": [
+        "megawealth"
+      ],
+      "unified": {
+        "runtimeName": "sedonapassmw.map",
+        "originalModes": [
+          "megawealth"
+        ],
+        "maxSlots": 6,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "a8894762e700ea3b10818f54b9466f325e495374d8301c5b977763a404da9cd8",
+      "placementHash": "0bc3f0bada819cf227d04d0da7a7c2f5c3875716a96e79670ea7f3eaeedf02b1",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    },
+    {
+      "mapId": "yr:deathvalleygirl.map",
+      "source": {
+        "member": "deathvalleygirl.map",
+        "archive": "multimd.mix",
+        "sha256": "47bdd8695aa6a73e40595d7df46d132c9f7136067d4768d10418ea4e917bbc73",
+        "bytes": 108273
+      },
+      "starts": 4,
+      "originalModes": [
+        "teamgame"
+      ],
+      "unified": {
+        "runtimeName": "deathvalleygirl.map",
+        "originalModes": [
+          "teamgame"
+        ],
+        "maxSlots": 4,
+        "sourceVerified": true,
+        "adaptation": "STANDARD_MODE_INI_AND_DIALOG_WITH_ORIGINAL_MAP_MECHANISMS"
+      },
+      "geometryHash": "682c68f2cf484b194a1f00f9f659492133f83e279cd37ce4b492a0eab909617c",
+      "placementHash": "54538e36179f8f4b57765ed73bee38311bed46c4aabe99e794e2ab5c478a79c7",
+      "native": "UNCHANGED_SOURCE_MODE_MATRIX_REUSED; NEW_RESOURCE_PATHS_CHECKED_ON_REPRESENTATIVES"
+    }
+  ],
+  "resourceHandoffSha256": "e96088678808df9d00e833cedbb085e8541cf0305f2f0d6bb98d3ae86c05be1e",
+  "review": {
+    "status": "PASS_EXACT_DESKTOP_HTML_AND_JSON_COPY",
+    "files": [
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-NewUrban-Desert-Batches67-68-20261017/M2.4-NewUrban-Desert-Ground-Effects-Batches67-68-Embedded.html",
+        "bytes": 128071042,
+        "sha256": "772ad3369866d5536fd2b660fc01f247a1e2f8ccc69dad028907f46394e42529"
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-NewUrban-Desert-Batches67-68-20261017/M2.4-NewUrban-Desert-Ground-Effects-Batches67-68-Embedded.json",
+        "bytes": 121820,
+        "sha256": "ce63257ed55d0ac00a56da42415389a5ac44124fae83c8ca9f2f4dd960892c4b"
+      }
+    ],
+    "embeddedPngs": 175,
+    "sourceStaticQaSha256": "4326c0302bfe038f7aa927d5cd009854fb1ab8c0520920f8eaaf0397e35dd1e6",
+    "browser": "NOT_RUN_LOCAL_FILE_PROTOCOL_BLOCKED_BY_BROWSER_TOOL",
+    "newGamePackage": false
+  },
+  "tests": {
+    "newSmudgeCases": 78,
+    "assertions": 1874,
+    "regressionCases": 26,
+    "regressionAssertions": 446,
+    "completeReuseFamilies": 4,
+    "entryTypecheck": "PASS",
+    "isolatedBuild": "PASS"
+  },
+  "visual": "USER_ACCEPTED_ALL_39_NEW_SMUDGE_FAMILIES",
+  "acceptedReuse": "FOUR_COMPLETE_FAMILIES_NO_REVIEW_REQUIRED",
+  "ownerMapping": "CIVP_SEPARATE_USER_JUDGMENT_PENDING_NO_RUNTIME_CHANGE",
+  "windows": "NOT_RUN",
+  "mainHead": "748d0998aaf663acda8807c158155bf0a5bb157b",
+  "mainIntegration": "NOT_PERFORMED",
+  "push": "NOT_PERFORMED",
+  "m24Complete": false,
+  "closure": {
+    "file": ".artifacts/m2-4/ground-effects-closure-batches66-68-v1/closure.json",
+    "sha256": "715e219f2db258945a4e7275cae5cced695d72fc0c86e066f1a1c708a510cddf"
+  },
+  "resourceHandoff": {
+    "file": ".artifacts/m2-4/ground-effects-closure-batches66-68-v1/resource-handoff.json",
+    "sha256": "e96088678808df9d00e833cedbb085e8541cf0305f2f0d6bb98d3ae86c05be1e"
+  },
+  "failedAttempts": {
+    "file": ".artifacts/m2-4/ground-effects-closure-batches66-68-v1/failure-retention-v1.json",
+    "sha256": "e42219319bdb6838c4f9c6147d292fd03c24eddf99cea9f27a4260c02993a6a2"
+  },
+  "userAcceptance": {
+    "date": "2026-10-17",
+    "scope": "All 39 new ground-effect families in Batches67-68",
+    "response": "All artwork in Batches67-68 approved",
+    "excluded": [
+      "Separate CIVP owner-mapping decision",
+      "Rejected unselected Desert road mothers",
+      "Historical pending Batch59 acceptance",
+      "Remaining artwork"
+    ]
+  }
+}

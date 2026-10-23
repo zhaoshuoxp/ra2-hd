@@ -1,0 +1,140 @@
+{
+  "status": "TECHNICAL_MAC_DELIVERY_COMPLETE_ARTWORK_AND_PHYSICAL_ACCEPTANCE_PENDING",
+  "base": "5f3d94ef952b6220cc09ddd643aefd1b818282a0",
+  "fullSuite": {
+    "pass": 595,
+    "failedCases": 0,
+    "loadErrors": 0,
+    "skipped": 0,
+    "processErrors": 0
+  },
+  "fullSuiteProcesses": 148,
+  "typecheck": "PASS",
+  "nativeCases": 4,
+  "healthGeometrySamples": 36,
+  "healthGeometryMaxDelta": 0,
+  "nativeCursorSamples": 80,
+  "allRetailCursorFrames": 967,
+  "nativeComponentClips": 16,
+  "actualMatchEndPaths": [
+    "abort",
+    "native-victory"
+  ],
+  "postMatchViewportShapes": 6,
+  "selectedRepairRevision": "presentation-r2-20261020-v3",
+  "reopenedMembers": 8,
+  "restoredUnloadingMembers": 6,
+  "acceptedGacnst": "BYTE_IDENTICAL_SELECTION_AND_REFERENCED_RESOURCES",
+  "acceptedConstructionRecords": 108,
+  "artworkAcceptance": "PENDING_USER_REVIEW",
+  "physicalInput": "NOT_REACCEPTED",
+  "nativeWindows": "NOT_RUN",
+  "remotePush": "NOT_PERFORMED",
+  "independentM24": "NOT_INCLUDED_OR_MODIFIED",
+  "desktopDelivery": {
+    "status": "PASS_TESTED_R2_ARCHIVE_DELIVERED_TO_DESKTOP",
+    "path": "/Users/Aone/Desktop/RA2-HD-Mac-01cd7e6f-20261020-UI-R2.zip",
+    "bytes": 4070227341,
+    "sha256": "6721878c438989eb18c5e10cc71f591097487bd31787ac1f5274735f8128d708",
+    "runtimeSourceHead": "01cd7e6fe1a8572a0233fa6c5ff9ec1923ac6bc5",
+    "storage": "Independent APFS clone; distinct inode",
+    "archiveEntries": 7732,
+    "nativeRuntime": "PASS_TWO_EXTRACTED_NATIVE_CASES_AND_POST_MATCH_LAYOUT",
+    "nativePackageCases": 2,
+    "nativePostMatchPaths": [
+      "actual-abort",
+      "native-victory-condition-fixture"
+    ],
+    "reviewImages": 23,
+    "reviewClips": 16,
+    "previousDeliveryPaths": "NOT_MODIFIED; named R1, baseline Mac and Windows Desktop paths were absent at this audit."
+  },
+  "artProvenance": "presentation-r2-art-20261020.json",
+  "runtimeSourceHead": "01cd7e6fe1a8572a0233fa6c5ff9ec1923ac6bc5",
+  "evidenceRoot": "/Users/Aone/RA2remaster/project-history/presentation-r2-01cd7e6f-20261020",
+  "archiveVerification": {
+    "status": "PASS_ARCHIVE_AND_EXTRACTION_BYTES_LINKS_MODES_SIGNATURE",
+    "entries": 7732,
+    "sourcePayloadParity": "PASS_EXCEPT_DECLARED_PACKAGE_ENTRYPOINT"
+  },
+  "packageNative": "PASS_TWO_EXTRACTED_NATIVE_CASES_AND_POST_MATCH_LAYOUT",
+  "reviewPlayback": {
+    "status": "PASS_OFFLINE_REVIEW_IMAGES_AND_VIDEO_PLAYBACK",
+    "images": 23,
+    "clips": 16,
+    "method": "Complete sequential playback; the overly concurrent first probe is retained as failed."
+  },
+  "branchCompatibility": {
+    "mainHead": "01cd7e6fe1a8572a0233fa6c5ff9ec1923ac6bc5",
+    "base": "5f3d94ef952b6220cc09ddd643aefd1b818282a0",
+    "m24Head": "ffc4a6a9202cc20deded0285a01c30bf84217f25",
+    "windowsHead": "34856b4552968e7054f9607878431b0036b1724a",
+    "comparisons": [
+      {
+        "branch": "m24",
+        "stage": "before",
+        "exitCode": 1,
+        "conflictFiles": [
+          "scripts/m2/official-maps/terrain-loading.test.ts",
+          "src/engine/renderable/entity/Building.ts"
+        ]
+      },
+      {
+        "branch": "m24",
+        "stage": "after",
+        "exitCode": 1,
+        "conflictFiles": [
+          "scripts/m2/official-maps/terrain-loading.test.ts",
+          "src/engine/renderable/entity/Building.ts"
+        ]
+      },
+      {
+        "branch": "windows",
+        "stage": "before",
+        "exitCode": 1,
+        "conflictFiles": [
+          "AGENTS.md"
+        ]
+      },
+      {
+        "branch": "windows",
+        "stage": "after",
+        "exitCode": 1,
+        "conflictFiles": [
+          "AGENTS.md"
+        ]
+      }
+    ],
+    "windowsKitBase": "84a0b348",
+    "windowsKitBasePreserved": true,
+    "status": "PASS_NO_NEW_CONFLICT_FILES_AND_PRESERVED_WINDOWS_BASE"
+  },
+  "temporaryCopies": {
+    "status": "PASS_SCOPED_R2_TEMPORARY_COPY_RETIREMENT",
+    "target": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/presentation-r2-20261020",
+    "retiredInventory": {
+      "files": 18049,
+      "links": 28,
+      "directories": 10205,
+      "logicalBytes": 18624646444
+    },
+    "beforeDuKiB": 18228340,
+    "availableBytesBefore": 1253963280384,
+    "availableBytesAfter": 1268336594944,
+    "observedAvailableBytesChange": 14373314560,
+    "retainedEvidence": "/Users/Aone/RA2remaster/project-history/presentation-r2-01cd7e6f-20261020",
+    "desktopDelivery": "/Users/Aone/Desktop/RA2-HD-Mac-01cd7e6f-20261020-UI-R2.zip",
+    "desktopSha256AfterRetirement": "6721878c438989eb18c5e10cc71f591097487bd31787ac1f5274735f8128d708",
+    "selectedLocalResources": "PRESERVED",
+    "independentWorktrees": "PRESERVED",
+    "timestampUtc": "2026-10-21T05:59:38.027818+00:00",
+    "note": "Logical size and du include shared APFS content; the observed available-space change is a separate filesystem measurement."
+  },
+  "postCleanupVerification": {
+    "status": "PASS_CURRENT_SELECTED_RESOURCE_HASHES_AFTER_TEMPORARY_RETIREMENT",
+    "references": 242,
+    "distinctFiles": 242,
+    "protectedGacnst": "UNCHANGED",
+    "temporaryRootAbsent": true
+  }
+}

@@ -1,0 +1,27 @@
+Existing C6 - one focused eight-player warmed trace
+
+Use the EXISTING complete C6 kit, source 4d3e41f. Target verification already
+passes 8,107 files. Preserve that receipt, the valid Normal return and old kits.
+
+The C6 Normal pair has shorter warm long-interval tails, but the user perceives
+essentially no improvement. A 136.775 ms CPU submission still precedes the
+151.530 ms warm interval; 68-72 ms between-frame gaps remain unresolved.
+This trace selects the remaining repair. It does not change the game or quality.
+
+1. Start ONE fresh Launch-Diagnostics.cmd: [8] eight players / [4] 4X /
+   [N] lightweight timings. The automatic late Trace option is not this target.
+2. About TWENTY seconds after the FIRST live map appears, press F9 ONCE.
+   Stay in the automatic test; do not wait for re-entry or final completion.
+3. Keep the same monitor, DPI, AC power and settings. Keep the game focused;
+   do not press F8 or steer the camera. One process captures at most one trace.
+4. Wait for final capture completion AND trace saving before closing. Recording
+   can itself hitch; this instrumented run is excluded from Normal comparison.
+5. Close, run Export-Reports.cmd and return the new C6 RETURN ZIP, including
+   earlier reports and any failures. Note whether the usual combat hitch occurred.
+
+The eight-second capture targets the observed warmed submission events about
+22-26 seconds after first map entry. Recurrence/overlap is not guaranteed and
+will be checked against timestamps. Only this launch is requested; generic app
+messages do not request another density matrix. Both tracing hooks are exact
+previously validated C4 code. Preserve all kits, resources, profiles and reports.
+Source art, limits, drivers, main and peer M2.3 work are unchanged by this step.

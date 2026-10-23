@@ -1,0 +1,19 @@
+# M1.7 Soviet units: accepted delivery
+
+Status: `M1_7_ACCEPTED_AND_DELIVERED`. The user accepted the complete delivered scope and authorized local integration into the existing project main checkout. Earlier pending-review statements in historical reports are superseded by this acceptance; technical limitations remain explicit.
+
+The delivered roster contains 22 active temperate HD unit families. SQD and its SQDG attachment use the accepted Original fallback. YURIPR remains Original because the upstream PsiWave self-kill issue blocks its HD runtime acceptance; its accepted artwork is not proof of a completed HD gameplay unit. See [final coverage](m1-7-final-coverage.json) for every family and [resource inventory](m1-7-accepted-resources.json) for immutable paths, sizes and SHA-256 pins.
+
+Accepted corrections include DESO green rear canisters and stable upper-right firing scale, HARV review-recording continuity, and HYD/DRED/SUB hull visibility. HARV retains the approved full-ore artwork while native harvesting and unloading logic remain unchanged. SQD's rollback is deliberate. The disclosed HTK bridge comparison has five lighter shadow pixels, with no dark occlusion leak. Snow/urban HD, Windows runtime, campaigns and exhaustive long-match behavior are not claimed.
+
+The runtime implementation checkpoint is `5464d9daa1904278d4e5362074a95d0247ea7bcf`; portable packaging is `c4e69b2719da201e5ffd6460a97f817bddb47534`. The accepted runtime source digest is `8cf66bde00ad91ac75d6ae4f77b6d0966a5d28e05d30d98387d2184c4f9b83f7`. Acceptance changes only records, not artwork or runtime behavior.
+
+The accepted Mac package remains at `/Users/Aone/Desktop/RA2 HD Soviet Units Test v3`, including `RA2 HD Soviet Units.app` and its companion `Game Resources`. Historical native-size review, recordings, source binding and preservation reports remain under `/Users/Aone/RA2remaster/ra2-hd-units-m1-7/.artifacts/m1-7/delivery-v3/`. The offline review has embedded media and needs no web server. Existing artifacts are preserved without rewriting their historical pending statuses.
+
+Main integration completed by fast-forward into `/Users/Aone/RA2remaster/ra2-hd`, branch `m0-2-stabilization`, preserving its pre-integration checkpoint `ee371e0f42b77fd943bf5cd7c1ef6fa8fd2b7cc6`. That checkpoint is already an ancestor of the accepted unit branch. Only the 167 inventoried resource files (73,352,479 bytes) are added to `.local`; existing resources are verified and never overwritten. Other worktrees and their uncommitted work are outside this integration. No push or publication is authorized.
+
+Existing validation includes 166 passing M1 tests, entry type checking, 322 DESO frame slots, 707 native DESO gameplay samples, 22-family mixed-state coverage with 132 paired captures, explicit Original SQD evidence, offline-review checks, portable-app launch and Original-to-HD switching. The active unit allocation is 46,585,172 bytes; combined accepted allocation is 233,693,296 bytes under the 268,435,456-byte cap. Main-checkout integration results are recorded separately under `.artifacts/m1-7/main-integration-v1/`.
+
+The accepted outcome is closed. Corrections to this delivery belong in the same execution task; a materially new objective should start a new task after explicit selection.
+
+Main-checkout verification passed after integration at `e4140e1`: 166 tests, zero failures, 7,628,887 assertions, and entry type checking. Resource registration resolves all 22 active HD families plus Original SQD/YURIPR; all 167 added resource hashes match, and all 1,593 pre-existing HD files remain unchanged. Runtime source (`src/` and `desktop/`) is identical to the accepted `5464d9d` implementation. The machine-readable receipt is `.artifacts/m1-7/main-integration-v1/receipt.json`; regression, typecheck, registration and preservation records are adjacent. No other task worktree or accepted Desktop artifact was modified.

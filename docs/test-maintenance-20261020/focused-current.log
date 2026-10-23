@@ -1,0 +1,68 @@
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/napowr-pack.test.ts:
+(pass) actual NAPOWR pages validate all 67 frames, RG8 values, native offsets and release [809.02ms]
+66 |             textures.forEach(t => t.addEventListener('dispose', () => disposed++));
+67 |             if (failure === 'upload' && ++uploads === 1) throw Error('allocation-failure');
+68 |         });
+69 |         expect(loaded.report.density).toBe(failure === 'maxTexture' ? 1 : 2);
+70 |         expect([...loaded.overrides.values()].every(o => o.identity.endsWith('/2'))).toBe(true);
+71 |         if (failure !== 'maxTexture') expect(disposed).toBeGreaterThan(0);
+                                                            ^
+error: expect(received).toBeGreaterThan(expected)
+
+Expected: > 0
+Received: 0
+
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/napowr-pack.test.ts:71:56)
+(fail) complete family fallback handles corrupt, missing, incomplete, size and allocation failures [623.97ms]
+(pass) legacy graphics preferences migrate all HD families to enabled [0.28ms]
+ 97 |     }
+ 98 |     const uploaded: number[] = [];
+ 99 |     const loaded = await resolvePowerPlantHd(input, 4, 2048, textures => {
+100 |         uploaded.push(textures.reduce((sum, t) => sum + t.image.data.byteLength, 0));
+101 |     }, 'NAPOWR', 20 * 1024 * 1024, true);
+102 |     expect(loaded.report.density).toBe(2);
+                                        ^
+error: expect(received).toBe(expected)
+
+Expected: 2
+Received: 4
+
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/napowr-pack.test.ts:102:35)
+(fail) NAPOWR respects an explicit unit reserve before uploading any rejected density [606.31ms]
+
+scripts/m1/soviet-batch-pack.test.ts:
+(pass) all actual Soviet pages bind to retail sources, preserve accepted density and fit the measured combined budget [11283.94ms]
+
+scripts/m1/soviet-units-pack.test.ts:
+(pass) SQD keeps both native members atomic, preserves partial collar remap and respects the combined cap [1169.15ms]
+(pass) SQDG binding requires the parasite identity, animation and member, and returns its lifetime lease [0.16ms]
+(pass) pooled unit families reconstruct every color/remap byte and reject over-budget uploads atomically [6365.98ms]
+(pass) DRON complete native slots, owner-color coverage, byte budget and disposal [119.86ms]
+(pass) incomplete member and failed uploads choose complete lower density or Original [92.33ms]
+(pass) rules identity and image jointly bind unit art; another identity stays Original [73.54ms]
+(pass) desktop registers only pinned complete unit resources [2623.99ms]
+(pass) Soviet engineer completes every slot, protects gold from remap, and isolates the shared Allied source [384.72ms]
+(pass) unit HD follows the accepted global preference and preserves explicit off saves [0.18ms]
+(pass) unit and limbo representation commit together within budget; cancellation and member failure dispose everything [366.48ms]
+(pass) DOG body and 32 leap bearings commit together, preserve native shadows, and isolate the Allied dog [314.42ms]
+(pass) FLAKT preserves 301 native slots and embedded shadows without owner-coloring muzzle flames [464.72ms]
+(pass) SHK preserves 301 native slots, shadows and non-remapped gold coils and hair [408.36ms]
+(pass) IVAN preserves 267 native slots, shadows and non-remapped skin and tan clothing [323.67ms]
+(pass) YURI preserves 316 native slots, shadows and non-remapped skin [300.43ms]
+(pass) TERROR preserves 188 native slots, shadows and non-remapped skin [289.87ms]
+(pass) DESO preserves 322 native slots, shadows and non-remapped green canisters/effects [574.28ms]
+(pass) CIVAN preserves 267 native slots, shadows and non-remapped skin and tan clothing [490.89ms]
+(pass) YURIPR preserves 315 native slots, shadows and non-remapped skin and psychic effects [510.30ms]
+(pass) snow and temperate unit families request HD and fail closed on missing resources [7.58ms]
+(pass) user-disabled SQD body and attachment stay Original without fetch or allocation [1.00ms]
+
+2 tests failed:
+(fail) complete family fallback handles corrupt, missing, incomplete, size and allocation failures [623.97ms]
+(fail) NAPOWR respects an explicit unit reserve before uploading any rejected density [606.31ms]
+
+ 24 pass
+ 2 fail
+ 7712742 expect() calls
+Ran 26 tests across 3 files. [28.31s]

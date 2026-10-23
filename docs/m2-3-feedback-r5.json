@@ -1,0 +1,170 @@
+{
+  "schema": "m2-3-r5-feedback-acceptance-v1",
+  "status": "PASS_TECHNICAL_USER_VISUAL_ACCEPTED_GAMEPLAY_REVIEW_AVAILABLE",
+  "previousTaskCommit": "3afa783690d3742ee84a5f07ac2eb4f0fe8e9ac0",
+  "scope": {
+    "families": 116,
+    "buildingMembers": 135,
+    "densityFrames": 1556,
+    "ownerFrames": 336
+  },
+  "changes": [
+    "Localized builtin ImageGen clean-wall edits remove displaced duplicate airport numerals in normal and damaged states. Only the tower wall is selected from these masters.",
+    "Original occupied airport fixed-red lettering is retained.",
+    "Code-native contours reconstruct structural pixel stairs at independent 2X and 4X, with fractional alpha and owner coverage. All sixteen owner shade indices, native contacts, canvas, offsets, foundations and animation slots remain pinned.",
+    "Thin owner rims retain painted area through bounded subpixel contour balancing."
+  ],
+  "environment": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-3-edge-feedback-complete-v6",
+    "sha256": "de89fc0865c598568acd78a2fba11345d28ddcf411c718180f537e76e85cfe7e"
+  },
+  "terrain": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-3-material-feedback-v3",
+    "sha256": "450e7686d8fe4262ab92f4e62c23156c89d9122623ef9b847b8740fc6a67e1b2"
+  },
+  "prepared": {
+    "schemaVersion": 1,
+    "sha256": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b",
+    "indexPath": "prepared-hd/indexes/b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b.json"
+  },
+  "preservation": {
+    "environmentFamiliesExact": 122,
+    "oldR4Delivery": "PASS_7854_IMMUTABLE_FILES_AND_SYMLINKS",
+    "factionResources": "UNCHANGED",
+    "protectedPaths": 9,
+    "mainIntegration": false,
+    "finalReceipt": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r5-v1/preservation-final-v1.json"
+  },
+  "checks": {
+    "source": "PASS",
+    "allBuildingStates": "PASS",
+    "completeFamilyRegistration": "PASS",
+    "copiedMac": "PASS_ALL_30_COPIED_R5_NATIVE_CASES",
+    "focusedSource": "5 contour tests, 3 linear-light preview tests, 7 TypeScript tests / 119 assertions, entry type checking PASS",
+    "actualOwnerStates": "PASS_ALL_168_OWNED_NATIVE_STATES_OVERVIEW_INSPECTED",
+    "offlineReview": "PASS_ALL_EMBEDDED_PNG_BYTES_DIMENSIONS_AND_FULL_DECODING",
+    "offlineNativeHtmlRendering": "PASS_OFFLINE_NATIVE_HTML_RENDERING_EMBEDDED_IMAGES_ACTUAL_DIMENSIONS",
+    "macSignature": "PASS_MAC_CODESIGN_DEEP_STRICT",
+    "frozenShippingSource": "PASS_EXACT_SRC_AND_DESKTOP_AFTER_B8FED46"
+  },
+  "nativePlan": {
+    "cases": 30,
+    "mapsPerDensity": 12,
+    "familiesPerDensity": 105,
+    "nativeAvailabilityExceptions": [
+      "environment-city01",
+      "environment-city02",
+      "environment-city03",
+      "environment-city04",
+      "environment-city05",
+      "environment-cteur04",
+      "environment-ctgefgl",
+      "environment-ctmsc12",
+      "environment-ctpars07",
+      "environment-ctrufgl",
+      "environment-ctusfgl"
+    ]
+  },
+  "authoring": {
+    "mode": "builtin image_gen.imagegen",
+    "selectedJobs": [
+      "ctairp-shp-00",
+      "ctairp-shp-01"
+    ],
+    "root": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r5-v1/airport-lettering-authoring-v1/jobs",
+    "unselectedOccupiedMasterRetained": true
+  },
+  "userAcceptance": true,
+  "windows": "NOT_RUN",
+  "physicalInput": "NOT_RUN",
+  "mainIntegration": false,
+  "remotePush": false,
+  "publication": false,
+  "runtimeSourceCommit": "b8fed46e6d88820e1508f59203d9868c1527f0c5",
+  "package": {
+    "folder": "/Users/Aone/RA2remaster/M2.3-Temperate-Review-20261009-R5/RA2-HD-M2.3-Temperate-Review-20261009-R5",
+    "app": "/Users/Aone/RA2remaster/M2.3-Temperate-Review-20261009-R5/RA2-HD-M2.3-Temperate-Review-20261009-R5/Red Alert 2 HD M2.3 Temperate Review R5.app",
+    "resources": "/Users/Aone/RA2remaster/M2.3-Temperate-Review-20261009-R5/RA2-HD-M2.3-Temperate-Review-20261009-R5/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/M2.3-Temperate-Review-20261009-R5/RA2-HD-M2.3-Temperate-Review-20261009-R5/RA2-HD-UI-Resources",
+    "profile": "/Users/Aone/RA2remaster/M2.3-Temperate-Review-20261009-R5/RA2-HD-M2.3-Temperate-Review-20261009-R5/M2.3-Review-Profile",
+    "receipt": "/Users/Aone/RA2remaster/M2.3-Temperate-Review-20261009-R5/package-receipt.json",
+    "receiptSha256": "a1f8c419d1f3c58f8bcb72ef278c649f1d1a9b5e5dd8faa3925539e5eec4939b",
+    "sourceDirtyAtPackaging": false,
+    "packageReceiptPolicy": "Immutable packaging snapshot. The copied native summary and this ledger establish technical closure."
+  },
+  "copiedNative": {
+    "summary": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r5-v1/native-summary-v1.json",
+    "countsByDensity": {
+      "2": {
+        "maps": 12,
+        "buildings": 103,
+        "occupied": 73,
+        "evacuation": 73,
+        "criticalEvacuation": 73,
+        "owners": 8,
+        "fallback": 1
+      },
+      "4": {
+        "maps": 12,
+        "buildings": 103,
+        "occupied": 73,
+        "evacuation": 73,
+        "criticalEvacuation": 73,
+        "owners": 8,
+        "fallback": 1
+      }
+    },
+    "combinedWorldPeaks": {
+      "2": {
+        "case": "yr-xyuriplot.map-2x",
+        "terrain": 213098336,
+        "environment": 44873756,
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 19115136,
+        "total": 317322508,
+        "limit": 536870912
+      },
+      "4": {
+        "case": "yr-xyuriplot.map-4x",
+        "terrain": 833003360,
+        "environment": 175235476,
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 62908160,
+        "total": 1213085224,
+        "limit": 1342177280
+      }
+    },
+    "requestedFamiliesPerDensity": 105,
+    "fixturePolicy": "Legal empty foundations, native actor/animation publication and ordinary garrison, evacuation and damage transitions. No forced frame or shipping gameplay changes.",
+    "failedFirstFixture": "native-r5-v1/owners-2x/report.json remains FAIL; the default map did not demand CATEXS08. Native-r5-v2 uses the actual RA2 American Town map and true occupied frame 2."
+  },
+  "coverage": {
+    "audit": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r5-v1/static-review-v4/audit.json",
+    "fractionalOwnerAreaRatio": [
+      0.969412838127952,
+      1.019956642723096
+    ],
+    "previewPolicy": "Linear-light palette replacement and alpha compositing, matching the native sRGB texture path before world lighting",
+    "tinyFixtures": "Native categorical fixtures and index-12 contacts are retained."
+  },
+  "review": {
+    "entry": "/Users/Aone/RA2remaster/M2.3-Temperate-Review-20261009-R5/RA2-HD-M2.3-Temperate-Review-20261009-R5/M2.3-R5-Feedback-Review/M2.3-R5-REVIEW-EMBEDDED.html",
+    "pages": 350,
+    "embeddedImageInstances": 1359,
+    "uniqueImages": 1343,
+    "maxPageBytes": 104013824,
+    "externalImages": false,
+    "scripts": false,
+    "actualDimensions": true,
+    "offlineNativeRenderedPages": 9,
+    "renderingReceipt": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r5-v1/review-rendering-v1/report.json",
+    "safariChromeMatrix": "NOT_RUN"
+  },
+  "finalDeliveryVerification": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r5-v1/delivery-verification-v1.json",
+  "userVisualAcceptanceRecord": "docs/m2-3-r5-user-visual-acceptance-20261009.json",
+  "userGameplayAcceptance": "NOT_RECORDED"
+}

@@ -1,0 +1,172 @@
+{
+  "status": "TECHNICAL_CHECKS_AND_DESKTOP_DELIVERY_PASS_ARTWORK_ACCEPTANCE_PENDING",
+  "base": "31f66a1763f90e92b19e7969a3b6a8658c85a3b4",
+  "fullSuite": {
+    "pass": 593,
+    "failedCases": 0,
+    "loadErrors": 0,
+    "skipped": 0,
+    "processErrors": 0,
+    "scope": "Before final rotor material refinement; affected contracts and two native cycle cases passed afterward."
+  },
+  "fullSuiteProcesses": 147,
+  "layoutCases": 30,
+  "languageSettingCases": 4,
+  "nativeCases": 4,
+  "healthSamples": 36,
+  "cursorSamples": 80,
+  "yardCycleRefinementCases": 2,
+  "refinementScope": "Construction-yard rotor material cycle only; generic case labels in the raw focused receipt do not imply repeated health/cursor coverage.",
+  "refinementFollowupContracts": {
+    "pass": 3,
+    "assertions": 216
+  },
+  "typecheck": "PASS",
+  "resources": [
+    {
+      "family": "garefn-temperate",
+      "member": "ggrefnl1.shp",
+      "revision": "mechanical-layers-20261020-v1",
+      "manifestSha256": "a155a769e374d6c89d583bf69f4945af841855406bdbe641d221f92045c31db4",
+      "originalLogicalFramesPreserved": true
+    },
+    {
+      "family": "garefn-temperate",
+      "member": "ggrefnl2.shp",
+      "revision": "mechanical-layers-20261020-v1",
+      "manifestSha256": "0272c3718b188027eff9a6e6b2064ff2c680cbc7968a260502326a0272fdcd86",
+      "originalLogicalFramesPreserved": true
+    },
+    {
+      "family": "garefn-temperate",
+      "member": "ggrefnl3.shp",
+      "revision": "mechanical-layers-20261020-v1",
+      "manifestSha256": "26d5a27341f6dada7a3ea698c14f80ff390fdc316a2fadcaa998998b072013f4",
+      "originalLogicalFramesPreserved": true
+    },
+    {
+      "family": "garefn-snow",
+      "member": "garefnl1.shp",
+      "revision": "mechanical-layers-20261020-v1",
+      "manifestSha256": "9314108a9899a4edfea980492baae987e4c016bf25909bb9b623515b88e0df32",
+      "originalLogicalFramesPreserved": true
+    },
+    {
+      "family": "garefn-snow",
+      "member": "garefnl2.shp",
+      "revision": "mechanical-layers-20261020-v1",
+      "manifestSha256": "d9002ca19e81af74f39a6c3f24da2465e3764203110100d8a50e840979ba6216",
+      "originalLogicalFramesPreserved": true
+    },
+    {
+      "family": "garefn-snow",
+      "member": "garefnl3.shp",
+      "revision": "mechanical-layers-20261020-v1",
+      "manifestSha256": "598abe720ee858c6f539b795dd2126b6d075601325aae936544fa13385610628",
+      "originalLogicalFramesPreserved": true
+    },
+    {
+      "family": "gaweap-temperate",
+      "member": "ggweap_b.shp",
+      "revision": "mechanical-layers-20261020-v1",
+      "manifestSha256": "cc5eb5f081ba75a96fc8e4f39046f90bc226848057d163065c35a23062761de4",
+      "originalLogicalFramesPreserved": true
+    },
+    {
+      "family": "gaweap-snow",
+      "member": "gaweap_b.shp",
+      "revision": "mechanical-layers-20261020-v1",
+      "manifestSha256": "267bb9fd59deabe9b5244c260fe4b7d9107a9c53b4ffe7984be81e3845b82e43",
+      "originalLogicalFramesPreserved": true
+    },
+    {
+      "family": "gacnst-temperate",
+      "member": "ggcnst_a.shp",
+      "revision": "rotor-cycle-20261020-v2",
+      "manifestSha256": "0fc6eb140fdd71ad1928ea62f18e0623ea14b8e57ed8313f4f46a2672ba654fe",
+      "originalLogicalFramesPreserved": true
+    },
+    {
+      "family": "gacnst-snow",
+      "member": "gacnst_a.shp",
+      "revision": "rotor-cycle-20261020-v2",
+      "manifestSha256": "d2defea5b20db916dbfe03f2693a809b6dea7231b3e3763619f0b980c7e43048",
+      "originalLogicalFramesPreserved": true
+    }
+  ],
+  "artTool": "built-in image_gen",
+  "nativeWindows": "NOT_RUN",
+  "physicalInput": "NOT_REACCEPTED",
+  "sourceHistory": "PRESERVED",
+  "m24": "INDEPENDENT_NOT_MODIFIED",
+  "evidenceRoot": "/Users/Aone/RA2remaster/project-history/presentation-feedback-ec68d7e3-20261020",
+  "desktopDelivery": {
+    "status": "PASS_TESTED_ARCHIVE_DELIVERED_TO_DESKTOP",
+    "path": "/Users/Aone/Desktop/RA2-HD-Mac-ec68d7e3-20261020-UI-R1.zip",
+    "bytes": 3935243597,
+    "sha256": "132d0b54854e8dd9a675631ac607263997cd42b4c695f151c874862d3cb6c929",
+    "runtimeSourceHead": "ec68d7e3a2591402e7ff4b1db9d2d549740fa3a7",
+    "storage": "Independent APFS clone; distinct inode",
+    "archiveEntries": 7706,
+    "nativeRuntime": "PASS_TWO_EXTRACTED_NATIVE_CASES",
+    "baselineMac": "NOT_MODIFIED_EXTRACTED_DESKTOP_FOLDER_PRESENT",
+    "windowsKit": "NOT_MODIFIED_NAMED_DESKTOP_ARCHIVE_ABSENT"
+  },
+  "runtimeSourceHead": "ec68d7e3a2591402e7ff4b1db9d2d549740fa3a7",
+  "resultNavigationCases": 5,
+  "extractedPackageCases": 2,
+  "reviewPlayback": "PASS_OFFLINE_REVIEW_IMAGES_AND_COMPLETE_VIDEO_PLAYBACK",
+  "branchCompatibility": {
+    "status": "NO_NEW_MERGE_CONFLICTS",
+    "m24Head": "8addd36816339f8444a9bc3f838abf4885b292e5",
+    "m24ExistingConflictFiles": [
+      "scripts/m2/official-maps/terrain-loading.test.ts",
+      "src/engine/renderable/entity/Building.ts"
+    ],
+    "windowsInvestigationHead": "34856b4552968e7054f9607878431b0036b1724a",
+    "windowsExistingConflictFiles": [
+      "AGENTS.md"
+    ],
+    "externalWindowsReturn": "NOT_RECEIVED_OR_MODIFIED",
+    "futureIntegration": "Preserve history and selected resources; refresh the existing two-file resolution preview against the final independent heads."
+  },
+  "temporaryCopies": {
+    "status": "PASS_SCOPED_TEMPORARY_COPY_RETIREMENT",
+    "target": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/presentation-feedback-20261020",
+    "retiredEntries": 17355,
+    "logicalRetiredBytes": 17977234928,
+    "beforeDuKiB": 17594248,
+    "availableBytesBefore": 1265664000000,
+    "availableBytesAfter": 1277952000000,
+    "availableBytesChange": 12288000000,
+    "retainedEvidenceRoot": "/Users/Aone/RA2remaster/project-history/presentation-feedback-ec68d7e3-20261020",
+    "desktopArchive": "/Users/Aone/Desktop/RA2-HD-Mac-ec68d7e3-20261020-UI-R1.zip",
+    "selectedLocalResources": "PRESERVED",
+    "baselineMacAndWindowsKit": "NOT_MODIFIED_SEE_PRESERVATION_FINAL_PATH_AUDIT",
+    "independentM24": "PRESERVED",
+    "note": "Logical bytes and du include APFS shared/cloned content; available-space change is a separate observed filesystem value."
+  },
+  "historicalPackagePathAudit": {
+    "status": "PASS_TASK_DID_NOT_MODIFY_PREVIOUS_DELIVERY_PATHS",
+    "observedPaths": {
+      "RA2-HD-Mac-31f66a17-20261020": {
+        "path": "/Users/Aone/Desktop/RA2-HD-Mac-31f66a17-20261020",
+        "exists": true,
+        "kind": "directory"
+      },
+      "RA2-HD-Mac-31f66a17-20261020.zip": {
+        "path": "/Users/Aone/Desktop/RA2-HD-Mac-31f66a17-20261020.zip",
+        "exists": false,
+        "kind": "absent"
+      },
+      "RA2-HD-Windows-Dev-84a0b348-20261020.zip": {
+        "path": "/Users/Aone/Desktop/RA2-HD-Windows-Dev-84a0b348-20261020.zip",
+        "exists": false,
+        "kind": "absent"
+      }
+    },
+    "m24Worktree": "PRESERVED",
+    "windowsInvestigationRef": "34856b4552968e7054f9607878431b0036b1724a",
+    "interpretation": "PRESERVED in earlier raw receipts means no modification by this task, not proof that historical archive paths still exist. The previous Mac is currently an extracted Desktop folder. The named old Mac and Windows ZIPs were absent at the final path audit; no action here targeted those paths."
+  }
+}

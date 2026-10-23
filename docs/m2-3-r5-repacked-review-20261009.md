@@ -1,0 +1,11 @@
+# M2.3 R5 portable review navigation repair
+
+The Codex browser rejects `file:` navigation. The previous static review embedded every image, but its building links still navigated between local HTML documents. The new viewer opens all building and native match comparisons inside one page, through a dedicated loopback-only review server. The airport overview and conversation preview embed red and blue images directly. No artwork or application runtime changed.
+
+Complete review: `/Users/Aone/RA2remaster/M2.3-R5-Review-Repacked-20261009-R1`. Archive: `/Users/Aone/RA2remaster/M2.3-R5-Review-Repacked-20261009-R1.zip`. Double-click `Open-Review.command` after extraction; Python 3 is required. The review works without internet access. The server binds only to `127.0.0.1` and exposes an exact allowlist of review HTML documents.
+
+All 350 original pages, 1,359 embedded PNG occurrences and 1,343 unique original PNGs are retained byte for byte. The new airport overview uses lossless WebP with identical decoded RGBA pixels at 688 × 1,632; detailed pages retain the original PNG encoding and actual display dimensions. The conversation fragment is 887,146 bytes and contains both owner colors. The original complete R5 application package and historical receipts remain unchanged.
+
+Verification: all 350 local routes return the expected document length; paths outside the allowlist return 404. Every archived original HTML page matches its original SHA-256, and the viewer, launcher and server match their packaged copies. Archive size: 2,469,066,144 bytes. SHA-256: `c653ab59f8200ce8e88176d6d409090b14a9d8c75f3482111a57a52d24db41a1`.
+
+The Codex browser renders airport, Texas, New York, barn and technology comparisons, switches airport red/blue and returns from building details to the overview. Native airport owner pages at 2X and 4X render at 3,840 × 2,160. Both the full viewer and conversation preview report no browser errors. Verification receipts and screenshots are under `.artifacts/m2-3/feedback-r5-v1/review-repack-v1`. Prior copied Mac gameplay checks remain authoritative; this repair does not replay or change them. User visual acceptance and coordinated main integration remain pending.

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "taskId": "E",
+  "status": "YURI_CAMEOS_E_ACCEPTED_AND_DELIVERED_NOT_MERGED",
+  "acceptanceDate": "2026-10-01",
+  "branch": "task/e-yuri-cameos-hd",
+  "worktree": "/Users/Aone/RA2remaster/ra2-hd-yuri-cameos",
+  "baseMainSha": "ee35fcf04de2d24c1bce2ee7497e4156483b21f1",
+  "preAcceptanceClosureHead": "39f6c935faed534bf9c31ca834dcf384ca3bf744",
+  "finalSourceAndDocumentation": "Use the final committed tip of task/e-yuri-cameos-hd; the reviewed app source is pinned separately.",
+  "copiedAppSourceHead": "96a053cfc61c3e0908dae2ca0e672c54af564808",
+  "acceptanceReceipt": {
+    "file": ".artifacts/yuri-cameos/final-acceptance-v1.json",
+    "sha256": "c3b95f632637da4875a1e2a4c9df84374ab7249c2adc191fb4ea877b201c69cb",
+    "bytes": 4966
+  },
+  "visual": {
+    "canonicalCameos": "USER_ACCEPTED",
+    "rankAliases": "USER_ACCEPTED",
+    "newYuriLoadingBackground": "USER_ACCEPTED",
+    "pendingIdentities": []
+  },
+  "counts": {
+    "canonicalCameos": 31,
+    "newRankAliases": 12,
+    "reusedAcceptedReferences": 8,
+    "absentNativeVariants": 1,
+    "newLoadingBackgrounds": 1,
+    "additiveUiEntries": 44,
+    "acceptedBaselineEntriesPreserved": 430,
+    "isolatedCombinedEntries": 474
+  },
+  "selectedResources": {
+    "revision": "yuri-cameos-e-loading-v1",
+    "manifest": {
+      "file": ".local/ui-packs/yuri-cameos-e-loading-v1/manifest.json",
+      "sha256": "38965a16b78356712dab1582fa92b78b0f314685b50ad23e906165980be71976",
+      "bytes": 122092
+    },
+    "loadingMaster": {
+      "file": ".artifacts/yuri-cameos/loading-followup-v1/loading-background-yuri-master.png",
+      "sha256": "730b7819866cc593ec5979d46e069c596ba69e77c7716d1fe4a002608ddbc93f",
+      "bytes": 1770152
+    },
+    "loadingExport": {
+      "file": ".local/ui-packs/yuri-cameos-e-loading-v1/loading-background-yuri.png",
+      "sha256": "730b7819866cc593ec5979d46e069c596ba69e77c7716d1fe4a002608ddbc93f",
+      "bytes": 1770152
+    },
+    "forceShieldExport": {
+      "file": ".local/ui-packs/yuri-cameos-e-loading-v1/forcicon.png",
+      "sha256": "037eeb4431d4b3fa847a388d05f8078f077b07439e7142ad4ce8988c2a70b706",
+      "bytes": 106288
+    },
+    "prior473EntriesPreserved": true,
+    "entryLimit": 512,
+    "uiBudgetBytes": 16777216
+  },
+  "productionSourceFiles": [
+    "desktop/hd-profile.mjs",
+    "desktop/main.mjs",
+    "desktop/protocol.mjs",
+    "src/gui/screen/game/loadingScreen/loadingArtwork.ts",
+    "src/gui/screen/game/loadingScreen/prepareLoadingUnit.ts",
+    "src/gui/screen/game/loadingScreen/LoadingScreen.tsx",
+    "src/gui/screen/game/loadingScreen/LoadingBackdrop.tsx"
+  ],
+  "testChanges": [
+    "scripts/editions/loading-preparation.test.ts",
+    "scripts/ui/yuri-cameos/separate-ui-root.test.ts"
+  ],
+  "toolingDirectory": "scripts/ui/yuri-cameos/",
+  "technicalEvidence": {
+    "cameos": ".artifacts/yuri-cameos/production-v5/accepted-validation-receipt.json",
+    "nativeCameoMatrix": ".artifacts/yuri-cameos/production-v4/runtime-v5/result.json",
+    "forceShieldAndLoading": ".artifacts/yuri-cameos/loading-followup-v1/runtime-v1/result.json",
+    "desktopArchive": ".artifacts/yuri-cameos/complete-zip-r3-v1/desktop-zip-validation.json",
+    "relocatedDesktopRuntime": ".artifacts/yuri-cameos/complete-zip-r3-v1/desktop-runtime-v1/result.json",
+    "validationScope": "Reuse accepted technical results; metadata/hash checks only for this acceptance closure. No rebuild or repeated runtime matrix."
+  },
+  "desktopDelivery": {
+    "recordedDesktopFile": "/Users/Aone/Desktop/RA2-HD-Yuri-Cameos-E-R3-Complete-macOS-arm64.zip",
+    "bytes": 1770666461,
+    "sha256": "7bc2cff1731510e151cf67609181b9b0a7e0b0bf6916b6ef4ff2cf8a56fdfeef",
+    "receipt": {
+      "file": ".artifacts/yuri-cameos/complete-zip-r3-v1/final-delivery-receipt.json",
+      "sha256": "abea7ec118ae53c35a962f8fe4794b3aca9e1f84082f8326e556b05a11e1a0f6",
+      "bytes": 2836
+    },
+    "userAcceptance": "USER_ACCEPTED",
+    "repackedAfterAcceptance": false,
+    "recordedDesktopPathExistsAtClosure": false,
+    "preservedSourceZip": "/Users/Aone/RA2remaster/ra2-hd-yuri-cameos/.artifacts/yuri-cameos/complete-zip-r3-v1/RA2-HD-Yuri-Cameos-E-R3-Complete-macOS-arm64.zip",
+    "availabilityNote": "The previously verified Desktop path is absent at acceptance bookkeeping. The original source ZIP and extracted verification artifacts remain preserved; no automatic replacement or repackaging was performed."
+  },
+  "integration": {
+    "status": "NOT_MERGED",
+    "mainObservedHead": "0370e9b41d4736a0b80bbe35d2552b3f3a39a4a4",
+    "mainObservedDirty": true,
+    "unrelatedWorkingFilesPreserved": true,
+    "artworkTransferRequired": true,
+    "deltaOrder": [
+      {
+        "file": ".artifacts/yuri-cameos/production-v5/pack-delta.json",
+        "sha256": "795d6b4ac9590e8c86231c6a3f322a8da435cc6dd6bd76c167a9a954b8d968fe",
+        "bytes": 14145
+      },
+      {
+        "file": ".artifacts/yuri-cameos/loading-followup-v1/pack-delta.json",
+        "sha256": "77f4de6be2ca7793c68774fd22d2d8a6d7f551683bef458e808db3a29a04fac6",
+        "bytes": 608
+      }
+    ],
+    "additiveEntries": [
+      43,
+      1
+    ],
+    "newRankAliasesIncludedInCameoDelta": 12,
+    "strategy": "Reconcile source with current main and peers, then apply accepted additions to the current catalog with collision review. Preserve newer accepted entries; do not replace the catalog wholesale with the 474-entry review manifest.",
+    "resourceManifest": ".artifacts/yuri-cameos/final-handoff-v1/integration-resource-manifest.json",
+    "predecessorResourceManifests": [
+      {
+        "file": ".artifacts/yuri-cameos/loading-followup-v1/integration-resource-manifest.json",
+        "sha256": "fbcbe5c5723d7e6a0fcb270ac7d96c9c06ac7f75c3e763b3ec32fe8934c9803d",
+        "bytes": 85876
+      },
+      {
+        "file": ".artifacts/yuri-cameos/production-v5/accepted-integration-resource-manifest.json",
+        "sha256": "42522860c255a4d31510f445c745e4971b970a88858d16bab27820f807eabe95",
+        "bytes": 147537
+      }
+    ],
+    "sidebarPeer": {
+      "branch": "fix/allied-animation-sidebar",
+      "observedHead": "3b4202a8862ce637e3322dd0e31efaba87499149",
+      "taskECertifiedPeerFix": false,
+      "preserve": "Asynchronous preparation, lease release and current-model publication guards; recheck rapid switching after integration."
+    },
+    "loadingOptimizationPeer": {
+      "branch": "fix/skirmish-loading-isolated",
+      "observedHead": "4c7992dbd144af79b08822d1b4637177360c2f47",
+      "observedDirty": true,
+      "currentlyIntersectingProductionFiles": [
+        "desktop/hd-profile.mjs"
+      ],
+      "preserve": "Prepared-HD registration and the separate UI resource root; recheck current peer changes before integration."
+    }
+  },
+  "platform": {
+    "macOSArm64": "PASS_COPIED_APP_AND_RELOCATED_COMPLETE_ZIP",
+    "Windows": "NOT_RUN",
+    "combinedIntegratedBuild": "NOT_RUN"
+  },
+  "historicalPendingReceiptsPreserved": true,
+  "remotePush": "NOT_PUSHED",
+  "publication": "NOT_PUBLISHED",
+  "handoff": "docs/yuri-cameos-merge-handoff.md",
+  "futureCorrections": "Continue this accepted outcome in the existing execution conversation; main coordination handles integration."
+}

@@ -1,0 +1,4559 @@
+{
+  "status": "PASS_VALIDATED_WINDOWS_STRESS_TRACE_ATTRIBUTION",
+  "diagnosticId": "WINHD-20261008-D38F136-C6",
+  "diagnosticCommit": "4d3e41f5ffe2746ada9bc765a407f00638cb4705",
+  "runDirectory": "2026-10-10T00-59-01-073Z-stress-4x-none",
+  "verification": {
+    "schemaVersion": 1,
+    "diagnosticId": "WINHD-20261008-D38F136-C6",
+    "manifestSha256": "f7bdd2665e180d4aa7528c3520bea9af45bfa2b4f00b26418eb27ab471bf526a",
+    "checked": 8107,
+    "failures": [],
+    "status": "PASS",
+    "verifiedAt": "2026-10-10T00:40:25.815Z"
+  },
+  "traceStatus": {
+    "status": "CAPTURED",
+    "categories": [
+      "toplevel",
+      "v8",
+      "gpu",
+      "cc",
+      "viz",
+      "blink",
+      "renderer.scheduler",
+      "devtools.timeline",
+      "disabled-by-default-v8.gc",
+      "disabled-by-default-devtools.timeline",
+      "disabled-by-default-gpu.service"
+    ],
+    "missingCategories": [],
+    "debuggerTransport": "In-process Electron WebContents debugger; no TCP port",
+    "durationSeconds": 8,
+    "cpuProfile": "CAPTURED",
+    "requestedDuringStage": "warmed-steady",
+    "overlap": "Existing/overlapping phases explicitly relabeled instrumented",
+    "materialProgramUploadEvents": "Trace dependent; unavailable if not emitted",
+    "webglCalls": {
+      "methods": {
+        "useProgram": {
+          "calls": 142909,
+          "cpuMs": 53.80000000121072,
+          "maximumCpuMs": 0.060000000055879354
+        },
+        "compileShader": {
+          "calls": 4,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        },
+        "linkProgram": {
+          "calls": 2,
+          "cpuMs": 0.010000000009313226,
+          "maximumCpuMs": 0.005000000121071935
+        },
+        "getProgramInfoLog": {
+          "calls": 2,
+          "cpuMs": 194.6799999999348,
+          "maximumCpuMs": 128.95999999996275
+        },
+        "texImage2D": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        },
+        "texSubImage2D": {
+          "calls": 237,
+          "cpuMs": 7.090000000782311,
+          "maximumCpuMs": 0.42000000015832484
+        },
+        "compressedTexImage2D": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        },
+        "compressedTexSubImage2D": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        }
+      },
+      "programChanges": 142909,
+      "textureUploadBytes": "UNAVAILABLE",
+      "interpretation": "CPU WebGL call durations and counts; no GPU execution timing or residency measurement.",
+      "materialCalls": 342850,
+      "materialChanges": 270347
+    }
+  },
+  "boundary": "Profile sample weights are approximate CPU attribution, not API durations. Instrumented windows are not Normal A/B. Exact Windows shader material/family and enemy-arrival markers are unavailable.",
+  "tasks": [
+    {
+      "timestampUs": 1351260297,
+      "durationMs": 689.435,
+      "threadCpuMs": 688.512,
+      "attribution": "PROFILER_START_OVERHEAD",
+      "profilerStartMs": 689.192,
+      "topSelf": [
+        {
+          "sampleWeightMs": 688.956,
+          "stack": [
+            {
+              "columnNumber": -1,
+              "functionName": "(program)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        }
+      ],
+      "relatedNativeEvents": [],
+      "gcSpans": []
+    },
+    {
+      "timestampUs": 1356564673,
+      "durationMs": 158.866,
+      "threadCpuMs": 29.394,
+      "attribution": "GAME_FRAME",
+      "frame": {
+        "index": 429,
+        "columns": [
+          "rafTimestampMs",
+          "frameIntervalMs",
+          "simulationCpuMs",
+          "simulationCalls",
+          "renderUpdateCpuMs",
+          "renderSubmissionCpuMs",
+          "drawCalls",
+          "triangles"
+        ],
+        "row": [
+          42269.895,
+          12.134999999994761,
+          2.255000000121072,
+          1,
+          13.974999999860302,
+          142.29000000003725,
+          780,
+          1644950
+        ],
+        "callback": {
+          "args": {
+            "data": {
+              "columnNumber": 28378,
+              "frame": "370CC13919F446AF8BDEDF5DD35B7A23",
+              "functionName": "doFrame",
+              "isolate": "17748635805106876514",
+              "lineNumber": 64,
+              "sampleTraceId": 884253766538754,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js"
+            }
+          },
+          "cat": "devtools.timeline",
+          "dur": 158580,
+          "name": "FunctionCall",
+          "ph": "X",
+          "pid": 1784,
+          "tdur": 29163,
+          "tid": 9208,
+          "ts": 1356564703,
+          "tts": 35749750
+        },
+        "matchErrorMs": 0.059999999981386054,
+        "relativeToPhaseFirstFrameMs": 7842.560000000034,
+        "followingIntervalMs": 157.58000000000175
+      },
+      "topSelf": [
+        {
+          "sampleWeightMs": 128.198,
+          "stack": [
+            {
+              "columnNumber": -1,
+              "functionName": "getProgramInfoLog",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 36,
+              "functionName": "gl.<computed>",
+              "lineNumber": 161,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 283,
+              "functionName": "C",
+              "lineNumber": 3990,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 7135,
+                "column": 10,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 279,
+              "functionName": "getUniforms",
+              "lineNumber": 3997,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 7234,
+                "column": 20,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 39284,
+              "functionName": "bt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 18060,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28333,
+              "functionName": "Bh.renderBufferDirect",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 16953,
+                "column": 28,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36392,
+              "functionName": "gt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17883,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36160,
+              "functionName": "ht",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17856,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 34381,
+              "functionName": "pt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17708,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 31486,
+              "functionName": "Bh.render",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17388,
+                "column": 16,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8516,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 158,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8319,
+              "functionName": "render",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 151,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.render",
+              "lineNumber": 97,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30792,
+              "functionName": "render",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 217,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.772,
+          "stack": [
+            {
+              "columnNumber": 1189,
+              "functionName": "fromVirtualFile",
+              "lineNumber": 0,
+              "scriptId": "37",
+              "url": "ra2://game/assets/Palette-Ghh_dij8.js",
+              "original": {
+                "source": "../../../../src/data/ShpFile.ts",
+                "line": 29,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 2586,
+              "functionName": "ut.images",
+              "lineNumber": 3,
+              "scriptId": "30",
+              "url": "ra2://game/assets/Engine-AaGuLKZH.js",
+              "original": {
+                "source": "../../../../src/engine/Engine.ts",
+                "line": 63,
+                "column": 55,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 60512,
+              "functionName": "get",
+              "lineNumber": 0,
+              "scriptId": "30",
+              "url": "ra2://game/assets/Engine-AaGuLKZH.js",
+              "original": {
+                "source": "../../../../src/engine/LazyResourceCollection.ts",
+                "line": 26,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 23107,
+              "functionName": "find",
+              "lineNumber": 7,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../src/engine/ImageFinder.ts",
+                "line": 129,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 23047,
+              "functionName": "findByObjectArt",
+              "lineNumber": 7,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../src/engine/ImageFinder.ts",
+                "line": 123,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 95022,
+              "functionName": "createMainObject",
+              "lineNumber": 103,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/entity/Infantry.ts",
+                "line": 510,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 94132,
+              "functionName": "createObjects",
+              "lineNumber": 103,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/entity/Infantry.ts",
+                "line": 472,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 85620,
+              "functionName": "create3DObject",
+              "lineNumber": 103,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/entity/Infantry.ts",
+                "line": 133,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 770,
+              "functionName": "processRenderQueue",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 54,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 1043,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 70,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 81342,
+              "functionName": "update",
+              "lineNumber": 120,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/OctreeContainer.ts",
+                "line": 36,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 1043,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 70,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 52690,
+              "functionName": "update",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/WorldScene.ts",
+                "line": 218,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8256,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 146,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8227,
+              "functionName": "update",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 145,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.update",
+              "lineNumber": 74,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30565,
+              "functionName": "updateRenderer",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 199,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.631,
+          "stack": [
+            {
+              "columnNumber": 58292,
+              "functionName": "add",
+              "lineNumber": 0,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+                "line": 12380,
+                "column": 1,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 69301,
+              "functionName": "create3DObject",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/ShpRenderable.ts",
+                "line": 119,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 95022,
+              "functionName": "createMainObject",
+              "lineNumber": 103,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/entity/Infantry.ts",
+                "line": 510,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 94132,
+              "functionName": "createObjects",
+              "lineNumber": 103,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/entity/Infantry.ts",
+                "line": 472,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 85620,
+              "functionName": "create3DObject",
+              "lineNumber": 103,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/entity/Infantry.ts",
+                "line": 133,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 770,
+              "functionName": "processRenderQueue",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 54,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 1043,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 70,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 81342,
+              "functionName": "update",
+              "lineNumber": 120,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/OctreeContainer.ts",
+                "line": 36,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 1043,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 70,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 52690,
+              "functionName": "update",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/WorldScene.ts",
+                "line": 218,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8256,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 146,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8227,
+              "functionName": "update",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 145,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.update",
+              "lineNumber": 74,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30565,
+              "functionName": "updateRenderer",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 199,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.608,
+          "stack": [
+            {
+              "columnNumber": 1195,
+              "functionName": "onBeforeCompile",
+              "lineNumber": 120,
+              "scriptId": "49",
+              "url": "ra2://game/assets/ShpBuilder-w1euYHQz.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/material/PaletteBasicMaterial.ts",
+                "line": 99,
+                "column": 32,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36847,
+              "functionName": "_t",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17914,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 39284,
+              "functionName": "bt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 18060,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28333,
+              "functionName": "Bh.renderBufferDirect",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 16953,
+                "column": 28,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36392,
+              "functionName": "gt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17883,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36160,
+              "functionName": "ht",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17856,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 34381,
+              "functionName": "pt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17708,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 31486,
+              "functionName": "Bh.render",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17388,
+                "column": 16,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8516,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 158,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8319,
+              "functionName": "render",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 151,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.render",
+              "lineNumber": 97,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30792,
+              "functionName": "render",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 217,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.599,
+          "stack": [
+            {
+              "columnNumber": 60869,
+              "functionName": "updateMatrixWorld",
+              "lineNumber": 0,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+                "line": 12799,
+                "column": 1,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 60869,
+              "functionName": "updateMatrixWorld",
+              "lineNumber": 0,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+                "line": 12799,
+                "column": 1,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 60869,
+              "functionName": "updateMatrixWorld",
+              "lineNumber": 0,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+                "line": 12799,
+                "column": 1,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 60869,
+              "functionName": "updateMatrixWorld",
+              "lineNumber": 0,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+                "line": 12799,
+                "column": 1,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 60869,
+              "functionName": "updateMatrixWorld",
+              "lineNumber": 0,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+                "line": 12799,
+                "column": 1,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 16269,
+              "functionName": "zn",
+              "lineNumber": 0,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/SceneMatrices.ts",
+                "line": 6,
+                "column": 16,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 52690,
+              "functionName": "update",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/WorldScene.ts",
+                "line": 218,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8256,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 146,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8227,
+              "functionName": "update",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 145,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.update",
+              "lineNumber": 74,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30565,
+              "functionName": "updateRenderer",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 199,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.576,
+          "stack": [
+            {
+              "columnNumber": 5465,
+              "functionName": "clone",
+              "lineNumber": 0,
+              "scriptId": "37",
+              "url": "ra2://game/assets/Palette-Ghh_dij8.js",
+              "original": {
+                "source": "../../../../src/data/Palette.ts",
+                "line": 74,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 84849,
+              "functionName": "",
+              "lineNumber": 103,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/entity/Infantry.ts",
+                "line": 104,
+                "column": 66,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 84408,
+              "functionName": "zs",
+              "lineNumber": 103,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/entity/Infantry.ts",
+                "line": 86,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 59354,
+              "functionName": "create",
+              "lineNumber": 120,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/entity/RenderableFactory.ts",
+                "line": 203,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 85134,
+              "functionName": "createRenderable",
+              "lineNumber": 120,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/RenderableManager.ts",
+                "line": 134,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 82761,
+              "functionName": "Hc.onWorldObjectSpawned",
+              "lineNumber": 120,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/RenderableManager.ts",
+                "line": 31,
+                "column": 37,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 257,
+              "functionName": "",
+              "lineNumber": 0,
+              "scriptId": "22",
+              "url": "ra2://game/assets/event-tHLw4eoB.js",
+              "original": {
+                "source": "../../../../src/util/event.ts",
+                "line": 27,
+                "column": 32,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 228,
+              "functionName": "dispatch",
+              "lineNumber": 0,
+              "scriptId": "22",
+              "url": "ra2://game/assets/event-tHLw4eoB.js",
+              "original": {
+                "source": "../../../../src/util/event.ts",
+                "line": 26,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 138813,
+              "functionName": "spawnObject",
+              "lineNumber": 23,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/game/World.ts",
+                "line": 19,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 59497,
+              "functionName": "doSpawnObject",
+              "lineNumber": 0,
+              "scriptId": "69",
+              "url": "ra2://game/assets/ActionQueue-DOZO-Dsq.js",
+              "original": {
+                "source": "../../../../src/game/Game.ts",
+                "line": 616,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 58800,
+              "functionName": "spawnObject",
+              "lineNumber": 0,
+              "scriptId": "69",
+              "url": "ra2://game/assets/ActionQueue-DOZO-Dsq.js",
+              "original": {
+                "source": "../../../../src/game/Game.ts",
+                "line": 583,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 72624,
+              "functionName": "ls",
+              "lineNumber": 23,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/game/gameobject/trait/SlaveMinerTrait.ts",
+                "line": 68,
+                "column": 16,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 59646,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "20",
+              "url": "ra2://game/assets/SuperWeaponType-PRnZGW4z.js",
+              "original": {
+                "source": "../../../../src/game/gameobject/Techno.ts",
+                "line": 44,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 84782,
+              "functionName": "update",
+              "lineNumber": 4058,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../src/game/gameobject/Building.ts",
+                "line": 163,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 62499,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "69",
+              "url": "ra2://game/assets/ActionQueue-DOZO-Dsq.js",
+              "original": {
+                "source": "../../../../src/game/Game.ts",
+                "line": 752,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 72511,
+              "functionName": "doGameTurn",
+              "lineNumber": 0,
+              "scriptId": "202",
+              "url": "ra2://game/assets/GameScreen-BTEU-41S.js",
+              "original": {
+                "source": "../../../../src/network/gamestate/SoloPlayTurnManager.ts",
+                "line": 45,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 30365,
+              "functionName": "tickGame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 186,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 33,
+              "functionName": "loop.tickGame",
+              "lineNumber": 54,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.574,
+          "stack": [
+            {
+              "columnNumber": 3912,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/gui/UiObject.ts",
+                "line": 158,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 3912,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/gui/UiObject.ts",
+                "line": 158,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 3912,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/gui/UiObject.ts",
+                "line": 158,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 3912,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/gui/UiObject.ts",
+                "line": 158,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 3912,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/gui/UiObject.ts",
+                "line": 158,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 3912,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/gui/UiObject.ts",
+                "line": 158,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 45410,
+              "functionName": "update",
+              "lineNumber": 155,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/gui/screen/game/component/Hud.ts",
+                "line": 625,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 3912,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/gui/UiObject.ts",
+                "line": 158,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 10826,
+              "functionName": "update",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/gui/UiScene.ts",
+                "line": 74,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8256,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 146,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8227,
+              "functionName": "update",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 145,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.update",
+              "lineNumber": 74,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30565,
+              "functionName": "updateRenderer",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 199,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.568,
+          "stack": [
+            {
+              "columnNumber": 55238,
+              "functionName": "test",
+              "lineNumber": 0,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+                "line": 11625,
+                "column": 1,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36160,
+              "functionName": "ht",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17856,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 34381,
+              "functionName": "pt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17708,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 31486,
+              "functionName": "Bh.render",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17388,
+                "column": 16,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8516,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 158,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8319,
+              "functionName": "render",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 151,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.render",
+              "lineNumber": 97,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30792,
+              "functionName": "render",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 217,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        }
+      ],
+      "relatedNativeEvents": [
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356588579,
+          "durationMs": 128.948,
+          "threadCpuMs": 0.803
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 10912,
+          "timestampUs": 1356589920,
+          "durationMs": 0.888,
+          "threadCpuMs": 0.888
+        },
+        {
+          "name": "GLES2DecoderPassthroughImpl::DoLinkProgram",
+          "pid": 6088,
+          "tid": 6552,
+          "timestampUs": 1356589995,
+          "durationMs": 0.028,
+          "threadCpuMs": 0.026
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 3968,
+          "timestampUs": 1356590012,
+          "durationMs": 2.393,
+          "threadCpuMs": 2.389
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 3688,
+          "timestampUs": 1356590046,
+          "durationMs": 2.528,
+          "threadCpuMs": 0.181
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 3968,
+          "timestampUs": 1356592580,
+          "durationMs": 3.99,
+          "threadCpuMs": 3.886
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 3688,
+          "timestampUs": 1356592581,
+          "durationMs": 123.995,
+          "threadCpuMs": 123.65
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 10912,
+          "timestampUs": 1356592585,
+          "durationMs": 0.002,
+          "threadCpuMs": 0.001
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718265,
+          "durationMs": 0.215,
+          "threadCpuMs": 0.046
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718488,
+          "durationMs": 0.001,
+          "threadCpuMs": 0.001
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718491,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718515,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718522,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718528,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718535,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718541,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718548,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718554,
+          "durationMs": 0,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718559,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718566,
+          "durationMs": 0,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718571,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718577,
+          "durationMs": 0,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718583,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718588,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718594,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718608,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718614,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718620,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718626,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718637,
+          "durationMs": 0,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718639,
+          "durationMs": 0,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718648,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718654,
+          "durationMs": 0,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718659,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718664,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1356718670,
+          "durationMs": 0,
+          "threadCpuMs": null
+        }
+      ],
+      "gcSpans": []
+    },
+    {
+      "timestampUs": 1353366451,
+      "durationMs": 99.332,
+      "threadCpuMs": 32.744,
+      "attribution": "GAME_FRAME",
+      "frame": {
+        "index": 244,
+        "columns": [
+          "rafTimestampMs",
+          "frameIntervalMs",
+          "simulationCpuMs",
+          "simulationCalls",
+          "renderUpdateCpuMs",
+          "renderSubmissionCpuMs",
+          "drawCalls",
+          "triangles"
+        ],
+        "row": [
+          39069.92,
+          12.165000000000873,
+          1.1499999999068677,
+          1,
+          18.34000000008382,
+          79.45999999996275,
+          782,
+          1661434
+        ],
+        "callback": {
+          "args": {
+            "data": {
+              "columnNumber": 28378,
+              "frame": "370CC13919F446AF8BDEDF5DD35B7A23",
+              "functionName": "doFrame",
+              "isolate": "17748635805106876514",
+              "lineNumber": 64,
+              "sampleTraceId": 884253766544583,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js"
+            }
+          },
+          "cat": "devtools.timeline",
+          "dur": 99008,
+          "name": "FunctionCall",
+          "ph": "X",
+          "pid": 1784,
+          "tdur": 32479,
+          "tid": 9208,
+          "ts": 1353366480,
+          "tts": 32653925
+        },
+        "matchErrorMs": 0.058000000046561695,
+        "relativeToPhaseFirstFrameMs": 4642.5850000000355,
+        "followingIntervalMs": 103.00500000000466
+      },
+      "topSelf": [
+        {
+          "sampleWeightMs": 64.482,
+          "stack": [
+            {
+              "columnNumber": -1,
+              "functionName": "getProgramInfoLog",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 36,
+              "functionName": "gl.<computed>",
+              "lineNumber": 161,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 283,
+              "functionName": "C",
+              "lineNumber": 3990,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 7135,
+                "column": 10,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 279,
+              "functionName": "getUniforms",
+              "lineNumber": 3997,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 7234,
+                "column": 20,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 39284,
+              "functionName": "bt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 18060,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28333,
+              "functionName": "Bh.renderBufferDirect",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 16953,
+                "column": 28,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36392,
+              "functionName": "gt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17883,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36160,
+              "functionName": "ht",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17856,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 34381,
+              "functionName": "pt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17708,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 31486,
+              "functionName": "Bh.render",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17388,
+                "column": 16,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8516,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 158,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8319,
+              "functionName": "render",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 151,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.render",
+              "lineNumber": 97,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30792,
+              "functionName": "render",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 217,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 2.707,
+          "stack": [
+            {
+              "columnNumber": 1043,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 70,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 52690,
+              "functionName": "update",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/WorldScene.ts",
+                "line": 218,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8256,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 146,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8227,
+              "functionName": "update",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 145,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.update",
+              "lineNumber": 74,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30565,
+              "functionName": "updateRenderer",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 199,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.879,
+          "stack": [
+            {
+              "columnNumber": 9870,
+              "functionName": "convertShpToCanvas",
+              "lineNumber": 0,
+              "scriptId": "46",
+              "url": "ra2://game/assets/Image-CdcgqHls.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/ImageUtils.ts",
+                "line": 28,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 47291,
+              "functionName": "create3DObject",
+              "lineNumber": 120,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/fx/DamageSmokeFx.ts",
+                "line": 39,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 770,
+              "functionName": "processRenderQueue",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 54,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 1043,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 70,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 52690,
+              "functionName": "update",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/WorldScene.ts",
+                "line": 218,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8256,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 146,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8227,
+              "functionName": "update",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 145,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.update",
+              "lineNumber": 74,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30565,
+              "functionName": "updateRenderer",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 199,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.61,
+          "stack": [
+            {
+              "columnNumber": 23641,
+              "functionName": "n.Emitter._assignColorValue",
+              "lineNumber": 4073,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/shader-particle-engine/build/SPE.min.js",
+                "line": 42,
+                "column": 116,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8864,
+              "functionName": "n.Group.addEmitter",
+              "lineNumber": 4073,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/shader-particle-engine/build/SPE.min.js",
+                "line": 27,
+                "column": 590,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 47291,
+              "functionName": "create3DObject",
+              "lineNumber": 120,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/fx/DamageSmokeFx.ts",
+                "line": 39,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 770,
+              "functionName": "processRenderQueue",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 54,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 1043,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 70,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 52690,
+              "functionName": "update",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/WorldScene.ts",
+                "line": 218,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8256,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 146,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8227,
+              "functionName": "update",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 145,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.update",
+              "lineNumber": 74,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30565,
+              "functionName": "updateRenderer",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 199,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.575,
+          "stack": [
+            {
+              "columnNumber": 7061,
+              "functionName": "setGeometryAt",
+              "lineNumber": 0,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/batch/MergedSpriteMesh.ts",
+                "line": 124,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 6172,
+              "functionName": "updateFromMeshes",
+              "lineNumber": 0,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/batch/MergedSpriteMesh.ts",
+                "line": 85,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 1670,
+              "functionName": "update",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+                "line": 119,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 7399,
+              "functionName": "",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+                "line": 377,
+                "column": 20,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 5823,
+              "functionName": "update",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+                "line": 328,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 51284,
+              "functionName": "updateRhinoHd",
+              "lineNumber": 103,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/entity/Vehicle.ts",
+                "line": 304,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 52287,
+              "functionName": "update",
+              "lineNumber": 103,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/entity/Vehicle.ts",
+                "line": 342,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 1043,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 70,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 81342,
+              "functionName": "update",
+              "lineNumber": 120,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/OctreeContainer.ts",
+                "line": 36,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 1043,
+              "functionName": "update",
+              "lineNumber": 0,
+              "scriptId": "50",
+              "url": "ra2://game/assets/HtmlView-BOlTFXhu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/RenderableContainer.ts",
+                "line": 70,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 52690,
+              "functionName": "update",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/WorldScene.ts",
+                "line": 218,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8256,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 146,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8227,
+              "functionName": "update",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 145,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.update",
+              "lineNumber": 74,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30565,
+              "functionName": "updateRenderer",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 199,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.574,
+          "stack": [
+            {
+              "columnNumber": 33360,
+              "functionName": "ft",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17594,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 33360,
+              "functionName": "ft",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17594,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 33360,
+              "functionName": "ft",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17594,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 33360,
+              "functionName": "ft",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17594,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 33360,
+              "functionName": "ft",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17594,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 33360,
+              "functionName": "ft",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17594,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 33360,
+              "functionName": "ft",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17594,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 33360,
+              "functionName": "ft",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17594,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 33360,
+              "functionName": "ft",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17594,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 33360,
+              "functionName": "ft",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17594,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 33360,
+              "functionName": "ft",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17594,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 31486,
+              "functionName": "Bh.render",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17388,
+                "column": 16,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8516,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 158,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8319,
+              "functionName": "render",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 151,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.render",
+              "lineNumber": 97,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30792,
+              "functionName": "render",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 217,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.566,
+          "stack": [
+            {
+              "columnNumber": 9769,
+              "functionName": "a",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 14943,
+                "column": 10,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 9048,
+              "functionName": "i",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 14851,
+                "column": 10,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 39284,
+              "functionName": "bt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 18060,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28333,
+              "functionName": "Bh.renderBufferDirect",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 16953,
+                "column": 28,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36392,
+              "functionName": "gt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17883,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36160,
+              "functionName": "ht",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17856,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 34381,
+              "functionName": "pt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17708,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 31486,
+              "functionName": "Bh.render",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17388,
+                "column": 16,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8516,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 158,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8319,
+              "functionName": "render",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 151,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.render",
+              "lineNumber": 97,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30792,
+              "functionName": "render",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 217,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.566,
+          "stack": [
+            {
+              "columnNumber": -1,
+              "functionName": "getShaderInfoLog",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 283,
+              "functionName": "C",
+              "lineNumber": 3990,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 7135,
+                "column": 10,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 279,
+              "functionName": "getUniforms",
+              "lineNumber": 3997,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 7234,
+                "column": 20,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 39284,
+              "functionName": "bt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 18060,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28333,
+              "functionName": "Bh.renderBufferDirect",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 16953,
+                "column": 28,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36392,
+              "functionName": "gt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17883,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 36160,
+              "functionName": "ht",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17856,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 34381,
+              "functionName": "pt",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17708,
+                "column": 11,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 31486,
+              "functionName": "Bh.render",
+              "lineNumber": 4048,
+              "scriptId": "13",
+              "url": "ra2://game/assets/three.module-BqxyVk8C.js",
+              "original": {
+                "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+                "line": 17388,
+                "column": 16,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8516,
+              "functionName": "",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 158,
+                "column": 29,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 8319,
+              "functionName": "render",
+              "lineNumber": 3,
+              "scriptId": "28",
+              "url": "ra2://game/assets/App-LEl77ZKu.js",
+              "original": {
+                "source": "../../../../src/engine/gfx/Renderer.ts",
+                "line": 151,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 35,
+              "functionName": "renderer.render",
+              "lineNumber": 97,
+              "scriptId": "171",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 30792,
+              "functionName": "render",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 217,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 28377,
+              "functionName": "doFrame",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/GameAnimationLoop.ts",
+                "line": 65,
+                "column": 23,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        }
+      ],
+      "relatedNativeEvents": [
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353396746,
+          "durationMs": 65.711,
+          "threadCpuMs": 0.409
+        },
+        {
+          "name": "GLES2DecoderPassthroughImpl::DoLinkProgram",
+          "pid": 6088,
+          "tid": 6552,
+          "timestampUs": 1353397765,
+          "durationMs": 0.05,
+          "threadCpuMs": 0.049
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 10912,
+          "timestampUs": 1353397787,
+          "durationMs": 1.569,
+          "threadCpuMs": 1.569
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 3968,
+          "timestampUs": 1353397821,
+          "durationMs": 0.851,
+          "threadCpuMs": 0.851
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 3688,
+          "timestampUs": 1353397873,
+          "durationMs": 1.6,
+          "threadCpuMs": 0.12
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 10912,
+          "timestampUs": 1353399469,
+          "durationMs": 62.165,
+          "threadCpuMs": 61.75
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 3968,
+          "timestampUs": 1353399470,
+          "durationMs": 3.273,
+          "threadCpuMs": 3.021
+        },
+        {
+          "name": "ANGLEPlatformImpl::RunWorkerTask",
+          "pid": 6088,
+          "tid": 3688,
+          "timestampUs": 1353399478,
+          "durationMs": 8.084,
+          "threadCpuMs": 7.825
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463475,
+          "durationMs": 0.204,
+          "threadCpuMs": 0.038
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463689,
+          "durationMs": 0.002,
+          "threadCpuMs": 0.001
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463693,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463719,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463742,
+          "durationMs": 0,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463754,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463769,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463772,
+          "durationMs": 0,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463783,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463791,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463797,
+          "durationMs": 0,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463803,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463809,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        },
+        {
+          "name": "GLES2Implementation::GetProgramiv",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1353463815,
+          "durationMs": 0.001,
+          "threadCpuMs": null
+        }
+      ],
+      "gcSpans": []
+    },
+    {
+      "timestampUs": 1357253231,
+      "durationMs": 75.853,
+      "threadCpuMs": 74.999,
+      "attribution": "BETWEEN_FRAME_MAIN_THREAD_WORK",
+      "topSelf": [
+        {
+          "sampleWeightMs": 26.292,
+          "stack": [
+            {
+              "columnNumber": 305497,
+              "functionName": "Fi",
+              "lineNumber": 0,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/builder/resolveHdSprite.ts",
+                "line": 37,
+                "column": 22,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 17,
+          "stack": [
+            {
+              "columnNumber": -1,
+              "functionName": "getImageData",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 19455,
+              "functionName": "read",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/builder/loadSovietUnitsHd.ts",
+                "line": 135,
+                "column": 43,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 12.473,
+          "stack": [
+            {
+              "columnNumber": 199600,
+              "functionName": "",
+              "lineNumber": 0,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/builder/HdTilePoolPreparer.ts",
+                "line": 41,
+                "column": 19,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 199148,
+              "functionName": "request",
+              "lineNumber": 0,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/builder/HdTilePoolPreparer.ts",
+                "line": 27,
+                "column": 4,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 198865,
+              "functionName": "prepare",
+              "lineNumber": 0,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/builder/HdTilePoolPreparer.ts",
+                "line": 15,
+                "column": 10,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": 305497,
+              "functionName": "Fi",
+              "lineNumber": 0,
+              "scriptId": "29",
+              "url": "ra2://game/assets/BufferGeometrySerializer-KYlfLugz.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/builder/resolveHdSprite.ts",
+                "line": 37,
+                "column": 22,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 10.823,
+          "stack": [
+            {
+              "columnNumber": 19455,
+              "functionName": "read",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/builder/loadSovietUnitsHd.ts",
+                "line": 135,
+                "column": 43,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 4.996,
+          "stack": [
+            {
+              "columnNumber": -1,
+              "functionName": "(program)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 2.622,
+          "stack": [
+            {
+              "columnNumber": -1,
+              "functionName": "drawImage",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 19455,
+              "functionName": "read",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/builder/loadSovietUnitsHd.ts",
+                "line": 135,
+                "column": 43,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        },
+        {
+          "sampleWeightMs": 1.696,
+          "stack": [
+            {
+              "columnNumber": -1,
+              "functionName": "close",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            },
+            {
+              "columnNumber": 19455,
+              "functionName": "read",
+              "lineNumber": 63,
+              "scriptId": "203",
+              "url": "ra2://game/assets/WorldInteractionFactory-CeaP95NW.js",
+              "original": {
+                "source": "../../../../src/engine/renderable/builder/loadSovietUnitsHd.ts",
+                "line": 135,
+                "column": 43,
+                "name": null
+              }
+            },
+            {
+              "columnNumber": -1,
+              "functionName": "(root)",
+              "lineNumber": -1,
+              "scriptId": "0",
+              "url": "",
+              "original": null
+            }
+          ]
+        }
+      ],
+      "relatedNativeEvents": [
+        {
+          "name": "GetImageData",
+          "pid": 1784,
+          "tid": 9208,
+          "timestampUs": 1357261327,
+          "durationMs": 16.352,
+          "threadCpuMs": 16.187
+        }
+      ],
+      "gcSpans": [
+        {
+          "args": {},
+          "cat": "v8",
+          "dur": 982,
+          "name": "V8.GCScavenger",
+          "ph": "X",
+          "pid": 1784,
+          "tdur": 927,
+          "tid": 9208,
+          "ts": 1357289760,
+          "tts": 36335378
+        }
+      ]
+    }
+  ],
+  "workerThreads": [
+    {
+      "pid": 1784,
+      "tid": 3460,
+      "name": "DedicatedWorker thread"
+    },
+    {
+      "pid": 1784,
+      "tid": 1996,
+      "name": "DedicatedWorker thread"
+    },
+    {
+      "pid": 1784,
+      "tid": 12004,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 21180,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 4532,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 13396,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 11396,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 23328,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 19852,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 12016,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 8288,
+      "tid": 24036,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 8288,
+      "tid": 3752,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 18288,
+      "name": "DedicatedWorker thread"
+    },
+    {
+      "pid": 1784,
+      "tid": 2140,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 4448,
+      "name": "DedicatedWorker thread"
+    },
+    {
+      "pid": 6088,
+      "tid": 10912,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 6088,
+      "tid": 3968,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 6088,
+      "tid": 3688,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 8288,
+      "tid": 11304,
+      "name": "V8Worker"
+    },
+    {
+      "pid": 8288,
+      "tid": 5176,
+      "name": "V8Worker"
+    },
+    {
+      "pid": 8288,
+      "tid": 4396,
+      "name": "V8Worker"
+    },
+    {
+      "pid": 6088,
+      "tid": 3332,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 6088,
+      "tid": 3300,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 6088,
+      "tid": 3648,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 6088,
+      "tid": 3808,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 15784,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 22612,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 13316,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 11492,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 6344,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 7744,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 1784,
+      "tid": 6556,
+      "name": "DedicatedWorker thread"
+    },
+    {
+      "pid": 1784,
+      "tid": 19160,
+      "name": "ThreadPoolForegroundWorker"
+    },
+    {
+      "pid": 23180,
+      "tid": 5336,
+      "name": "ThreadPoolForegroundWorker"
+    }
+  ],
+  "normalFirstPhase": {
+    "label": "fresh-process-first-use",
+    "validity": "VALID_BOUNDED_SAMPLE",
+    "instrumented": false,
+    "elapsedMs": 15325.725000000093,
+    "loadingMs": 11706.619999999879,
+    "nativeTicks": 974,
+    "summary": {
+      "frameIntervals": {
+        "n": 1044,
+        "median": 12.12999999999738,
+        "p95": 18.20499999999811,
+        "p99": 30.264999999999418,
+        "maximum": 387.90999999999985,
+        "above33ms": 6,
+        "above50ms": 5,
+        "above100ms": 3
+      },
+      "simulationCpuMs": {
+        "n": 1045,
+        "median": 0.840000000083819,
+        "p95": 6.909999999916181,
+        "p99": 11.650000000139698,
+        "maximum": 288.26499999989755,
+        "above33ms": 1,
+        "above50ms": 1,
+        "above100ms": 1
+      },
+      "renderUpdateCpuMs": {
+        "n": 1045,
+        "median": 5.059999999823049,
+        "p95": 6.034999999916181,
+        "p99": 7.754999999888241,
+        "maximum": 77.96499999985099,
+        "above33ms": 2,
+        "above50ms": 2,
+        "above100ms": 0
+      },
+      "renderSubmissionCpuMs": {
+        "n": 1045,
+        "median": 6.635000000009313,
+        "p95": 7.400000000139698,
+        "p99": 8.895000000018626,
+        "maximum": 299.3100000000559,
+        "above33ms": 3,
+        "above50ms": 3,
+        "above100ms": 2
+      },
+      "drawCalls": {
+        "n": 1045,
+        "median": 755,
+        "p95": 770,
+        "p99": 770,
+        "maximum": 774
+      },
+      "triangles": {
+        "n": 1045,
+        "median": 1625211,
+        "p95": 1625375,
+        "p99": 1625375,
+        "maximum": 1890886
+      }
+    },
+    "graphics": {
+      "enabled": true,
+      "density": 4,
+      "models": 1,
+      "shadows": 3,
+      "renderResolution": "native",
+      "resolution": {
+        "width": 1024,
+        "height": 768
+      }
+    },
+    "output": {
+      "ratio": 1.5,
+      "requested": [
+        2560,
+        1600
+      ],
+      "effective": [
+        2560,
+        1600
+      ],
+      "caps": []
+    },
+    "logicalSize": [
+      1439.8313027179006,
+      900
+    ],
+    "players": 8,
+    "bots": 7,
+    "nodes": 6217,
+    "visibleNodes": 4995,
+    "programs": 50,
+    "threeMemory": {
+      "geometries": 577,
+      "textures": 600
+    },
+    "actualBindingCounts": {
+      "vxl": 31,
+      "shp": 1907
+    },
+    "focusedAtEnd": true,
+    "focusEvents": [],
+    "visibilityEvents": [],
+    "resizeEvents": []
+  },
+  "mainThread": {
+    "pid": 1784,
+    "tid": 9208
+  },
+  "gpuTime": "UNAVAILABLE",
+  "actualProcessVram": "UNAVAILABLE",
+  "returnValidation": {
+    "status": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+    "archive": "/Users/Aone/Desktop/WINHD-20261008-D38F136-C6-RETURN-2026-10-10T01-01-41-847Z.zip",
+    "bytes": 217583056,
+    "sha256": "594c2625b72d1c09b157b83424eca2fe163b4b2ea9c106196bc852f8bdba2ab9",
+    "files": 24,
+    "runs": 2,
+    "diagnosticId": "WINHD-20261008-D38F136-C6",
+    "diagnosticCommit": "4d3e41f5ffe2746ada9bc765a407f00638cb4705",
+    "manifestSha256": "f7bdd2665e180d4aa7528c3520bea9af45bfa2b4f00b26418eb27ab471bf526a",
+    "extractedDirectory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/returns/2026-10-10T01-01-41-847Z-c6",
+    "launcherPolicy": "Inspected as data only; no returned scripts executed.",
+    "launchers": [
+      {
+        "file": "Export-Reports.cmd",
+        "status": "IDENTICAL",
+        "sha256": "25e23098719b40880c953b1ca32ce71489741e5840aae605e196fd858c64b0fc"
+      },
+      {
+        "file": "Launch-Diagnostics.cmd",
+        "status": "IDENTICAL",
+        "sha256": "fc19bca2c7702ddf885c710ded6e6a6e822bc8318ea9b0b9450d0db320c12938"
+      },
+      {
+        "file": "Run-Control.cmd",
+        "status": "IDENTICAL",
+        "sha256": "69705b9577c1a5f9cceed33612b407d9110317d9a9eab76ec570507da20255db"
+      },
+      {
+        "file": "Verify-Kit.cmd",
+        "status": "IDENTICAL",
+        "sha256": "812399b452707c4a00757b168629eaedd761f5ec57d4584cd43dd3806d5d9722"
+      }
+    ]
+  },
+  "rawAttributionReceipt": ".artifacts/windows-hd-diagnostic/c6-windows-warmed-trace-v2.json",
+  "supersedes": "C6 trace attribution dependency in windows-hd-c5-c6-stress-ab-20261009.md",
+  "priorNormal": "All seven files of 2026-10-10T00-42-54-111Z-stress-4x-none remain byte-identical to the previously validated return.",
+  "supportingMacOwnership": {
+    "status": "PASS_NATIVE_INSTRUMENTED_PROGRAM_OWNERSHIP_PROBE",
+    "receipt": ".artifacts/windows-hd-diagnostic/c6-warmed-program-ownership-v1/report.json",
+    "windows": "NOT_RUN",
+    "ticks": [
+      1323,
+      1863
+    ],
+    "links": [
+      {
+        "tick": 1468,
+        "program": 1,
+        "material": {
+          "id": 7058,
+          "uuid": "b0dbb22a-3462-4766-898d-d45339aff4ef",
+          "type": "ShaderMaterial",
+          "name": "",
+          "defines": {
+            "HAS_PERSPECTIVE": false,
+            "COLORIZE": true,
+            "VALUE_OVER_LIFETIME_LENGTH": 4,
+            "SHOULD_ROTATE_TEXTURE": false,
+            "SHOULD_ROTATE_PARTICLES": false,
+            "SHOULD_WIGGLE_PARTICLES": false,
+            "SHOULD_CALCULATE_SPRITE": true
+          },
+          "customKey": "onBeforeCompile(){}",
+          "transparent": true,
+          "side": 0,
+          "forceSinglePass": true,
+          "alphaTest": 0,
+          "clippingPlanes": 0,
+          "map": null
+        },
+        "object": {
+          "id": 10962,
+          "name": "fx_damage_smoke",
+          "type": "Points",
+          "parents": [
+            {
+              "id": 10962,
+              "name": "fx_damage_smoke",
+              "type": "Points"
+            },
+            {
+              "id": 474,
+              "name": "",
+              "type": "Scene"
+            }
+          ],
+          "castShadow": false,
+          "attributes": [
+            "position",
+            "acceleration",
+            "velocity",
+            "rotation",
+            "rotationCenter",
+            "params",
+            "size",
+            "angle",
+            "color",
+            "opacity"
+          ],
+          "drawRange": {
+            "start": 0,
+            "count": 1000
+          }
+        },
+        "familyMatches": [],
+        "sources": [
+          "7e9934897e8f28828929686474fff50550eac76d195e183fe94302918e9efd27",
+          "bf740ba3d22ea207c850512525bbec1b8e66f421637e46a31c80eab2c7d8c3f3"
+        ]
+      },
+      {
+        "tick": 1626,
+        "program": 2,
+        "material": {
+          "id": 7138,
+          "uuid": "2178a1f4-4e75-4cb0-845c-790d83166984",
+          "type": "HdSpriteMaterial",
+          "name": "",
+          "defines": {
+            "HD_REMAP_TILE_POOL": "",
+            "HD_TILE_POOL": "",
+            "VERTEX_PALETTE_OFFSET": "",
+            "USE_VERTEX_COLOR_MULT": ""
+          },
+          "customKey": "m15-sprite-coverage-v2/lossless-remap-tiles-v1/lossless-tiles-v1",
+          "transparent": false,
+          "side": 2,
+          "forceSinglePass": false,
+          "alphaTest": 0.05,
+          "hdPass": 1,
+          "hdFiltering": true,
+          "clippingPlanes": 0,
+          "map": {
+            "name": "",
+            "width": 588,
+            "height": 584,
+            "uuid": "806033c9-8d96-4d0f-9fb6-c207b83a3ebf"
+          }
+        },
+        "object": {
+          "id": 11131,
+          "name": "",
+          "type": "Mesh",
+          "parents": [
+            {
+              "id": 11131,
+              "name": "",
+              "type": "Mesh"
+            },
+            {
+              "id": 11130,
+              "name": "",
+              "type": "Object3D"
+            },
+            {
+              "id": 8503,
+              "name": "mesh_batch_manager",
+              "type": "Object3D"
+            },
+            {
+              "id": 474,
+              "name": "",
+              "type": "Scene"
+            }
+          ],
+          "castShadow": false,
+          "attributes": [
+            "position",
+            "uv",
+            "hdFrameRect",
+            "vertexColorMult",
+            "vertexPaletteOffset"
+          ],
+          "drawRange": {
+            "start": 0,
+            "count": 12
+          }
+        },
+        "familyMatches": [
+          "YACNST"
+        ],
+        "sources": [
+          "4c1a4e272d65e6603c4ed1a53cc8cc960f4a3932de26332b787fe5e0f8d1cafd",
+          "518cda9caf9e73cac6a44b857ef794b103fba57a6e9e959cb097a708ef241477"
+        ]
+      },
+      {
+        "tick": 1626,
+        "program": 3,
+        "material": {
+          "id": 7139,
+          "uuid": "1e35c90b-2371-4a62-b413-32060b55e115",
+          "type": "HdSpriteMaterial",
+          "name": "",
+          "defines": {
+            "HD_REMAP_TILE_POOL": "",
+            "HD_TILE_POOL": "",
+            "VERTEX_PALETTE_OFFSET": "",
+            "USE_VERTEX_COLOR_MULT": ""
+          },
+          "customKey": "m15-sprite-coverage-v2/lossless-remap-tiles-v1/lossless-tiles-v1",
+          "transparent": true,
+          "side": 2,
+          "forceSinglePass": true,
+          "alphaTest": 0.001,
+          "hdPass": 2,
+          "hdFiltering": true,
+          "clippingPlanes": 0,
+          "map": {
+            "name": "",
+            "width": 588,
+            "height": 584,
+            "uuid": "806033c9-8d96-4d0f-9fb6-c207b83a3ebf"
+          }
+        },
+        "object": {
+          "id": 11132,
+          "name": "hd-sprite-edge",
+          "type": "Mesh",
+          "parents": [
+            {
+              "id": 11132,
+              "name": "hd-sprite-edge",
+              "type": "Mesh"
+            },
+            {
+              "id": 11131,
+              "name": "",
+              "type": "Mesh"
+            },
+            {
+              "id": 11130,
+              "name": "",
+              "type": "Object3D"
+            },
+            {
+              "id": 8503,
+              "name": "mesh_batch_manager",
+              "type": "Object3D"
+            },
+            {
+              "id": 474,
+              "name": "",
+              "type": "Scene"
+            }
+          ],
+          "castShadow": false,
+          "attributes": [
+            "position",
+            "uv",
+            "hdFrameRect",
+            "vertexColorMult",
+            "vertexPaletteOffset"
+          ],
+          "drawRange": {
+            "start": 0,
+            "count": 12
+          }
+        },
+        "familyMatches": [
+          "YACNST"
+        ],
+        "sources": [
+          "4c1a4e272d65e6603c4ed1a53cc8cc960f4a3932de26332b787fe5e0f8d1cafd",
+          "5ce95210b448d6be813c387e65708c7f2ab732b589528560d19267b024813e8c"
+        ]
+      },
+      {
+        "tick": 1679,
+        "program": 4,
+        "material": {
+          "id": 7154,
+          "uuid": "2757516d-488a-4d6c-b5b8-fca29e3117fc",
+          "type": "HdSpriteMaterial",
+          "name": "",
+          "defines": {
+            "INDEXED_COVERAGE": "",
+            "EMBEDDED_SHP_SHADOW": "",
+            "NEAREST_INDEXED_BODY": "",
+            "VERTEX_PALETTE_OFFSET": "",
+            "USE_VERTEX_COLOR_MULT": ""
+          },
+          "customKey": "m15-sprite-coverage-v2/embedded-shadow-v1",
+          "transparent": false,
+          "side": 2,
+          "forceSinglePass": false,
+          "alphaTest": 0.001,
+          "hdPass": 3,
+          "hdFiltering": true,
+          "clippingPlanes": 0,
+          "map": {
+            "name": "",
+            "width": 504,
+            "height": 478,
+            "uuid": "3d9d0cc1-683e-4d58-bfec-4d3883f567ac"
+          }
+        },
+        "object": {
+          "id": 11161,
+          "name": "",
+          "type": "Mesh",
+          "parents": [
+            {
+              "id": 11161,
+              "name": "",
+              "type": "Mesh"
+            },
+            {
+              "id": 11160,
+              "name": "",
+              "type": "Object3D"
+            },
+            {
+              "id": 8503,
+              "name": "mesh_batch_manager",
+              "type": "Object3D"
+            },
+            {
+              "id": 474,
+              "name": "",
+              "type": "Scene"
+            }
+          ],
+          "castShadow": false,
+          "attributes": [
+            "position",
+            "uv",
+            "hdFrameRect",
+            "shadowFrameRect",
+            "vertexColorMult",
+            "vertexPaletteOffset"
+          ],
+          "drawRange": {
+            "start": 0,
+            "count": 12
+          }
+        },
+        "familyMatches": [
+          "SLAV"
+        ],
+        "sources": [
+          "cb4fdfc84644c8d7f6fb0e3359779578d3274de13d4deaf0da2d4f517b6655f6",
+          "08a2f0234eda5904de79f883d9d0ef8bdde557dd4ec9745c5918a1ac975ff6e0"
+        ]
+      }
+    ]
+  },
+  "acceptance": {
+    "smallC4": "USER_ACCEPTED",
+    "stressC6": "OPEN_USER_REPORTS_ESSENTIALLY_NO_DIFFERENCE",
+    "coldStart": "OPEN",
+    "shaderIdentity": "WINDOWS_MATERIAL_AND_SHADER_SOURCE_NOT_RECORDED",
+    "nextStep": "Reuse C6 with opt-in S1 exact shader identity capture before another source repair.",
+    "mainIntegration": "NOT_AUTHORIZED",
+    "push": "NOT_AUTHORIZED"
+  }
+}

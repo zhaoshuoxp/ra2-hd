@@ -1,0 +1,1481 @@
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/napowr-pack.test.ts:
+30 | }
+31 | const resolve = (e = entries(), d = 4, max = 2048, upload = (_: THREE.Texture[]) => {}) => resolvePowerPlantHd(e, d, max, upload, 'NAPOWR');
+32 | local('actual NAPOWR pages validate all 67 frames, RG8 values, native offsets and release', async () => {
+33 |     const e = entries(); let disposed = 0;
+34 |     const loaded = await resolve(e, 4, 2048, textures => textures.forEach(t => t.addEventListener('dispose', () => disposed++)));
+35 |     expect(loaded.report.density).toBe(4); expect(loaded.report.gpuBytes).toBe(66712416);
+                                       ^
+error: expect(received).toBe(expected)
+
+Expected: 4
+Received: 2
+
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/napowr-pack.test.ts:35:35)
+(fail) actual NAPOWR pages validate all 67 frames, RG8 values, native offsets and release [684.04ms]
+(pass) complete family fallback handles corrupt, missing, incomplete, size and allocation failures [1765.03ms]
+(pass) legacy graphics preferences migrate all HD families to enabled [0.28ms]
+89 |         entry.read = async (...args: any[]) => { readDensities.push(args[0]); return read(...args); };
+90 |     }
+91 |     const loaded = await resolvePowerPlantHd(input, 4, 2048, () => {}, 'NAPOWR', 20 * 1024 * 1024);
+92 |     expect(loaded.report.density).toBe(2);
+93 |     expect(loaded.report.gpuBytes).toBeLessThanOrEqual(20 * 1024 * 1024);
+94 |     expect(loaded.report.attempts[0].reason).toBe('combined-hd-memory-limit');
+                                                  ^
+error: expect(received).toBe(expected)
+
+Expected: "combined-hd-memory-limit"
+Received: "building-family-memory-limit"
+
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/napowr-pack.test.ts:94:46)
+(fail) NAPOWR respects an explicit unit reserve before uploading any rejected density [89.19ms]
+
+scripts/m1/soviet-batch-pack.test.ts:
+42 |         const turretBytes=['NALASR','NAFLAK'].includes(name)?1152004:0;
+43 |         const loaded=await resolvePowerPlantHd(entries,2,2048,textures=>{
+44 |             allocated+=textures.length;textures.forEach(t=>t.addEventListener('dispose',()=>disposed++));
+45 |         },name,budget-turretBytes,true);
+46 |         expect(loaded.report.density).toBe(2);expect(loaded.overrides.size).toBe(expected.members.length);
+47 |         expect(loaded.report.gpuBytes+turretBytes).toBe(reserved[familyIndex]);
+                                                        ^
+error: expect(received).toBe(expected)
+
+Expected: 1152280
+Received: 1661176
+
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/soviet-batch-pack.test.ts:47:52)
+(fail) all actual Soviet pages bind to retail sources, preserve accepted density and fit the measured combined budget [210.71ms]
+
+scripts/m1/soviet-units-pack.test.ts:
+(pass) SQD keeps both native members atomic, preserves partial collar remap and respects the combined cap [1017.69ms]
+(pass) SQDG binding requires the parasite identity, animation and member, and returns its lifetime lease [0.17ms]
+(pass) pooled unit families reconstruct every color/remap byte and reject over-budget uploads atomically [6254.08ms]
+(pass) DRON complete native slots, owner-color coverage, byte budget and disposal [127.29ms]
+(pass) incomplete member and failed uploads choose complete lower density or Original [103.92ms]
+(pass) rules identity and image jointly bind unit art; another identity stays Original [90.71ms]
+(pass) desktop registers only pinned complete unit resources [3926.85ms]
+263 |             expect(missingShadow).toBe(0);
+264 |         }
+265 |         const finder = new ImageFinder(new Map([['engineer.shp', input.image]]), {}, undefined, undefined, undefined, undefined, {},
+266 |             { families: new Map([['SENGINEER', { members: loaded.members }]]), report: { gpuBytes: loaded.gpuBytes, budget: loaded.gpuBytes, families: {} } });
+267 |         expect(finder.getUnitHdOverride('SENGINEER', input.image)).toBe(override);
+268 |         expect(finder.getUnitHdOverride('ENGINEER', input.image)).toBeUndefined();
+                                                                        ^
+error: expect(received).toBeUndefined()
+
+Received: {
+  identity: "aa513d37328b77b0fdb0e0c0350e78e244a72f787affa2c53c363d54ce2d832c/f8eb0dc0156a877028ac2ed57bf2e71a9445ffcb6ef6a4caf3b0dbb7b111834c/TEMPERATE/2",
+  frames: [
+    {
+      page: 0,
+      sampleRect: {
+        x: 2,
+        y: 2,
+        width: 32,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 38,
+        y: 2,
+        width: 32,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 74,
+        y: 2,
+        width: 24,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 102,
+        y: 2,
+        width: 28,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 134,
+        y: 2,
+        width: 32,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 170,
+        y: 2,
+        width: 36,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 210,
+        y: 2,
+        width: 24,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 238,
+        y: 2,
+        width: 28,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 270,
+        y: 2,
+        width: 28,
+        height: 64,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 302,
+        y: 2,
+        width: 28,
+        height: 64,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 334,
+        y: 2,
+        width: 32,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 370,
+        y: 2,
+        width: 36,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 410,
+        y: 2,
+        width: 32,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 446,
+        y: 2,
+        width: 36,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 486,
+        y: 2,
+        width: 44,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 534,
+        y: 2,
+        width: 44,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 582,
+        y: 2,
+        width: 36,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 622,
+        y: 2,
+        width: 36,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 662,
+        y: 2,
+        width: 44,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 710,
+        y: 2,
+        width: 32,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 746,
+        y: 2,
+        width: 48,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 798,
+        y: 2,
+        width: 48,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 850,
+        y: 2,
+        width: 28,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 882,
+        y: 2,
+        width: 48,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 934,
+        y: 2,
+        width: 56,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 2,
+        y: 70,
+        width: 36,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 42,
+        y: 70,
+        width: 36,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 82,
+        y: 70,
+        width: 32,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 118,
+        y: 70,
+        width: 28,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 150,
+        y: 70,
+        width: 44,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 198,
+        y: 70,
+        width: 48,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 250,
+        y: 70,
+        width: 40,
+        height: 48,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 294,
+        y: 70,
+        width: 28,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 326,
+        y: 70,
+        width: 32,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 362,
+        y: 70,
+        width: 32,
+        height: 48,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 398,
+        y: 70,
+        width: 32,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 434,
+        y: 70,
+        width: 32,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 470,
+        y: 70,
+        width: 36,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 510,
+        y: 70,
+        width: 40,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 554,
+        y: 70,
+        width: 44,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 602,
+        y: 70,
+        width: 36,
+        height: 48,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 642,
+        y: 70,
+        width: 36,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 682,
+        y: 70,
+        width: 44,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 730,
+        y: 70,
+        width: 32,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 766,
+        y: 70,
+        width: 48,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 818,
+        y: 70,
+        width: 48,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 870,
+        y: 70,
+        width: 28,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 902,
+        y: 70,
+        width: 48,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 954,
+        y: 70,
+        width: 56,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 2,
+        y: 134,
+        width: 36,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 42,
+        y: 134,
+        width: 36,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 82,
+        y: 134,
+        width: 36,
+        height: 64,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 122,
+        y: 134,
+        width: 28,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 154,
+        y: 134,
+        width: 48,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 206,
+        y: 134,
+        width: 48,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 258,
+        y: 134,
+        width: 40,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 302,
+        y: 134,
+        width: 28,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 334,
+        y: 134,
+        width: 40,
+        height: 44,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 378,
+        y: 134,
+        width: 36,
+        height: 44,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 418,
+        y: 134,
+        width: 40,
+        height: 52,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 462,
+        y: 134,
+        width: 40,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 506,
+        y: 134,
+        width: 40,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 550,
+        y: 134,
+        width: 48,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 602,
+        y: 134,
+        width: 48,
+        height: 64,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 654,
+        y: 134,
+        width: 48,
+        height: 64,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 706,
+        y: 134,
+        width: 48,
+        height: 64,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 758,
+        y: 134,
+        width: 48,
+        height: 64,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 810,
+        y: 134,
+        width: 48,
+        height: 64,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 862,
+        y: 134,
+        width: 40,
+        height: 56,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 906,
+        y: 134,
+        width: 36,
+        height: 44,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 946,
+        y: 134,
+        width: 40,
+        height: 44,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 990,
+        y: 134,
+        width: 32,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 2,
+        y: 202,
+        width: 28,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 34,
+        y: 202,
+        width: 36,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 74,
+        y: 202,
+        width: 36,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 114,
+        y: 202,
+        width: 40,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 158,
+        y: 202,
+        width: 40,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 202,
+        y: 202,
+        width: 44,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 250,
+        y: 202,
+        width: 44,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 298,
+        y: 202,
+        width: 44,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 346,
+        y: 202,
+        width: 44,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 394,
+        y: 202,
+        width: 40,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 438,
+        y: 202,
+        width: 40,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 482,
+        y: 202,
+        width: 36,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 522,
+        y: 202,
+        width: 36,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 562,
+        y: 202,
+        width: 28,
+        height: 60,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 594,
+        y: 202,
+        width: 36,
+        height: 40,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 634,
+        y: 202,
+        width: 40,
+        height: 44,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 678,
+        y: 202,
+        width: 40,
+        height: 48,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 722,
+        y: 202,
+        width: 36,
+        height: 48,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 762,
+        y: 202,
+        width: 40,
+        height: 40,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 806,
+        y: 202,
+        width: 36,
+        height: 40,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 846,
+        y: 202,
+        width: 48,
+        height: 40,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 898,
+        y: 202,
+        width: 64,
+        height: 40,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 2,
+        y: 266,
+        width: 64,
+        height: 44,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 70,
+        y: 266,
+        width: 56,
+        height: 40,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 130,
+        y: 266,
+        width: 44,
+        height: 40,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 178,
+        y: 266,
+        width: 52,
+        height: 36,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 234,
+        y: 266,
+        width: 68,
+        height: 24,
+      },
+    }, {
+      page: 0,
+      sampleRect: {
+        x: 306,
+        y: 266,
+        width: 80,
+        height: 24,
+      },
+    },
+    ... 153 more items
+  ],
+  pages: [
+    {
+      base: DataTexture {
+        isTexture: true,
+        id: 203,
+        uuid: "34fcde45-629d-4604-8666-7e96d0227de1",
+        name: "",
+        source: Source {
+          isSource: true,
+          id: 203,
+          uuid: "ad88be5d-ba24-4fd3-aba2-2beb88b82377",
+          data: {
+            data: Uint8Array(3276800) [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ... 3276287 more ],
+            width: 1024,
+            height: 800,
+          },
+          dataReady: true,
+          version: 1,
+          getSize: [Function: getSize],
+          needsUpdate: [Setter],
+          toJSON: [Function: toJSON],
+        },
+        mipmaps: [],
+        mapping: 300,
+        channel: 0,
+        wrapS: 1001,
+        wrapT: 1001,
+        magFilter: 1003,
+        minFilter: 1003,
+        anisotropy: 1,
+        format: 1023,
+        internalFormat: null,
+        type: 1009,
+        offset: Vector2 {
+          x: 0,
+          y: 0,
+          width: [Getter/Setter],
+          height: [Getter/Setter],
+          set: [Function: set],
+          setScalar: [Function: setScalar],
+          setX: [Function: setX],
+          setY: [Function: setY],
+          setComponent: [Function: setComponent],
+          getComponent: [Function: getComponent],
+          clone: [Function: clone],
+          copy: [Function: copy],
+          add: [Function: add],
+          addScalar: [Function: addScalar],
+          addVectors: [Function: addVectors],
+          addScaledVector: [Function: addScaledVector],
+          sub: [Function: sub],
+          subScalar: [Function: subScalar],
+          subVectors: [Function: subVectors],
+          multiply: [Function: multiply],
+          multiplyScalar: [Function: multiplyScalar],
+          divide: [Function: divide],
+          divideScalar: [Function: divideScalar],
+          applyMatrix3: [Function: applyMatrix3],
+          min: [Function: min],
+          max: [Function: max],
+          clamp: [Function: clamp],
+          clampScalar: [Function: clampScalar],
+          clampLength: [Function: clampLength],
+          floor: [Function: floor],
+          ceil: [Function: ceil],
+          round: [Function: round],
+          roundToZero: [Function: roundToZero],
+          negate: [Function: negate],
+          dot: [Function: dot],
+          cross: [Function: cross],
+          lengthSq: [Function: lengthSq],
+          length: [Function: length],
+          manhattanLength: [Function: manhattanLength],
+          normalize: [Function: normalize],
+          angle: [Function: angle],
+          angleTo: [Function: angleTo],
+          distanceTo: [Function: distanceTo],
+          distanceToSquared: [Function: distanceToSquared],
+          manhattanDistanceTo: [Function: manhattanDistanceTo],
+          setLength: [Function: setLength],
+          lerp: [Function: lerp],
+          lerpVectors: [Function: lerpVectors],
+          equals: [Function: equals],
+          fromArray: [Function: fromArray],
+          toArray: [Function: toArray],
+          fromBufferAttribute: [Function: fromBufferAttribute],
+          rotateAround: [Function: rotateAround],
+          random: [Function: random],
+          isVector2: true,
+          [Symbol(Symbol.iterator)]: [GeneratorFunction],
+        },
+        repeat: Vector2 {
+          x: 1,
+          y: 1,
+          width: [Getter/Setter],
+          height: [Getter/Setter],
+          set: [Function: set],
+          setScalar: [Function: setScalar],
+          setX: [Function: setX],
+          setY: [Function: setY],
+          setComponent: [Function: setComponent],
+          getComponent: [Function: getComponent],
+          clone: [Function: clone],
+          copy: [Function: copy],
+          add: [Function: add],
+          addScalar: [Function: addScalar],
+          addVectors: [Function: addVectors],
+          addScaledVector: [Function: addScaledVector],
+          sub: [Function: sub],
+          subScalar: [Function: subScalar],
+          subVectors: [Function: subVectors],
+          multiply: [Function: multiply],
+          multiplyScalar: [Function: multiplyScalar],
+          divide: [Function: divide],
+          divideScalar: [Function: divideScalar],
+          applyMatrix3: [Function: applyMatrix3],
+          min: [Function: min],
+          max: [Function: max],
+          clamp: [Function: clamp],
+          clampScalar: [Function: clampScalar],
+          clampLength: [Function: clampLength],
+          floor: [Function: floor],
+          ceil: [Function: ceil],
+          round: [Function: round],
+          roundToZero: [Function: roundToZero],
+          negate: [Function: negate],
+          dot: [Function: dot],
+          cross: [Function: cross],
+          lengthSq: [Function: lengthSq],
+          length: [Function: length],
+          manhattanLength: [Function: manhattanLength],
+          normalize: [Function: normalize],
+          angle: [Function: angle],
+          angleTo: [Function: angleTo],
+          distanceTo: [Function: distanceTo],
+          distanceToSquared: [Function: distanceToSquared],
+          manhattanDistanceTo: [Function: manhattanDistanceTo],
+          setLength: [Function: setLength],
+          lerp: [Function: lerp],
+          lerpVectors: [Function: lerpVectors],
+          equals: [Function: equals],
+          fromArray: [Function: fromArray],
+          toArray: [Function: toArray],
+          fromBufferAttribute: [Function: fromBufferAttribute],
+          rotateAround: [Function: rotateAround],
+          random: [Function: random],
+          isVector2: true,
+          [Symbol(Symbol.iterator)]: [GeneratorFunction],
+        },
+        center: Vector2 {
+          x: 0,
+          y: 0,
+          width: [Getter/Setter],
+          height: [Getter/Setter],
+          set: [Function: set],
+          setScalar: [Function: setScalar],
+          setX: [Function: setX],
+          setY: [Function: setY],
+          setComponent: [Function: setComponent],
+          getComponent: [Function: getComponent],
+          clone: [Function: clone],
+          copy: [Function: copy],
+          add: [Function: add],
+          addScalar: [Function: addScalar],
+          addVectors: [Function: addVectors],
+          addScaledVector: [Function: addScaledVector],
+          sub: [Function: sub],
+          subScalar: [Function: subScalar],
+          subVectors: [Function: subVectors],
+          multiply: [Function: multiply],
+          multiplyScalar: [Function: multiplyScalar],
+          divide: [Function: divide],
+          divideScalar: [Function: divideScalar],
+          applyMatrix3: [Function: applyMatrix3],
+          min: [Function: min],
+          max: [Function: max],
+          clamp: [Function: clamp],
+          clampScalar: [Function: clampScalar],
+          clampLength: [Function: clampLength],
+          floor: [Function: floor],
+          ceil: [Function: ceil],
+          round: [Function: round],
+          roundToZero: [Function: roundToZero],
+          negate: [Function: negate],
+          dot: [Function: dot],
+          cross: [Function: cross],
+          lengthSq: [Function: lengthSq],
+          length: [Function: length],
+          manhattanLength: [Function: manhattanLength],
+          normalize: [Function: normalize],
+          angle: [Function: angle],
+          angleTo: [Function: angleTo],
+          distanceTo: [Function: distanceTo],
+          distanceToSquared: [Function: distanceToSquared],
+          manhattanDistanceTo: [Function: manhattanDistanceTo],
+          setLength: [Function: setLength],
+          lerp: [Function: lerp],
+          lerpVectors: [Function: lerpVectors],
+          equals: [Function: equals],
+          fromArray: [Function: fromArray],
+          toArray: [Function: toArray],
+          fromBufferAttribute: [Function: fromBufferAttribute],
+          rotateAround: [Function: rotateAround],
+          random: [Function: random],
+          isVector2: true,
+          [Symbol(Symbol.iterator)]: [GeneratorFunction],
+        },
+        rotation: 0,
+        matrixAutoUpdate: true,
+        matrix: Matrix3 {
+          elements: [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ],
+          set: [Function: set],
+          identity: [Function: identity],
+          copy: [Function: copy],
+          extractBasis: [Function: extractBasis],
+          setFromMatrix4: [Function: setFromMatrix4],
+          multiply: [Function: multiply],
+          premultiply: [Function: premultiply],
+          multiplyMatrices: [Function: multiplyMatrices],
+          multiplyScalar: [Function: multiplyScalar],
+          determinant: [Function: determinant],
+          invert: [Function: invert],
+          transpose: [Function: transpose],
+          getNormalMatrix: [Function: getNormalMatrix],
+          transposeIntoArray: [Function: transposeIntoArray],
+          setUvTransform: [Function: setUvTransform],
+          scale: [Function: scale],
+          rotate: [Function: rotate],
+          translate: [Function: translate],
+          makeTranslation: [Function: makeTranslation],
+          makeRotation: [Function: makeRotation],
+          makeScale: [Function: makeScale],
+          equals: [Function: equals],
+          fromArray: [Function: fromArray],
+          toArray: [Function: toArray],
+          clone: [Function: clone],
+          isMatrix3: true,
+        },
+        generateMipmaps: false,
+        premultiplyAlpha: false,
+        flipY: true,
+        unpackAlignment: 1,
+        colorSpace: "srgb",
+        userData: {},
+        updateRanges: [],
+        version: 1,
+        onUpdate: null,
+        renderTarget: null,
+        isRenderTargetTexture: false,
+        isArrayTexture: false,
+        pmremVersion: 0,
+        isDataTexture: true,
+        width: [Getter],
+        height: [Getter],
+        depth: [Getter],
+        image: [Getter/Setter],
+        updateMatrix: [Function: updateMatrix],
+        addUpdateRange: [Function: addUpdateRange],
+        clearUpdateRanges: [Function: clearUpdateRanges],
+        clone: [Function: clone],
+        copy: [Function: copy],
+        setValues: [Function: setValues],
+        toJSON: [Function: toJSON],
+        dispose: [Function: dispose],
+        transformUv: [Function: transformUv],
+        needsUpdate: [Setter],
+        needsPMREMUpdate: [Setter],
+        addEventListener: [Function: addEventListener],
+        hasEventListener: [Function: hasEventListener],
+        removeEventListener: [Function: removeEventListener],
+        dispatchEvent: [Function: dispatchEvent],
+      },
+      data: DataTexture {
+        isTexture: true,
+        id: 204,
+        uuid: "94e97806-7430-4a44-aefa-be7970ed5d71",
+        name: "",
+        source: Source {
+          isSource: true,
+          id: 204,
+          uuid: "b88b547e-b345-4151-8b81-962d03feff84",
+          data: {
+            data: Uint8Array(3276800) [ 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, 0, 0, 255, 0, ... 3276287 more ],
+            width: 1024,
+            height: 800,
+          },
+          dataReady: true,
+          version: 1,
+          getSize: [Function: getSize],
+          needsUpdate: [Setter],
+          toJSON: [Function: toJSON],
+        },
+        mipmaps: [],
+        mapping: 300,
+        channel: 0,
+        wrapS: 1001,
+        wrapT: 1001,
+        magFilter: 1003,
+        minFilter: 1003,
+        anisotropy: 1,
+        format: 1023,
+        internalFormat: null,
+        type: 1009,
+        offset: Vector2 {
+          x: 0,
+          y: 0,
+          width: [Getter/Setter],
+          height: [Getter/Setter],
+          set: [Function: set],
+          setScalar: [Function: setScalar],
+          setX: [Function: setX],
+          setY: [Function: setY],
+          setComponent: [Function: setComponent],
+          getComponent: [Function: getComponent],
+          clone: [Function: clone],
+          copy: [Function: copy],
+          add: [Function: add],
+          addScalar: [Function: addScalar],
+          addVectors: [Function: addVectors],
+          addScaledVector: [Function: addScaledVector],
+          sub: [Function: sub],
+          subScalar: [Function: subScalar],
+          subVectors: [Function: subVectors],
+          multiply: [Function: multiply],
+          multiplyScalar: [Function: multiplyScalar],
+          divide: [Function: divide],
+          divideScalar: [Function: divideScalar],
+          applyMatrix3: [Function: applyMatrix3],
+          min: [Function: min],
+          max: [Function: max],
+          clamp: [Function: clamp],
+          clampScalar: [Function: clampScalar],
+          clampLength: [Function: clampLength],
+          floor: [Function: floor],
+          ceil: [Function: ceil],
+          round: [Function: round],
+          roundToZero: [Function: roundToZero],
+          negate: [Function: negate],
+          dot: [Function: dot],
+          cross: [Function: cross],
+          lengthSq: [Function: lengthSq],
+          length: [Function: length],
+          manhattanLength: [Function: manhattanLength],
+          normalize: [Function: normalize],
+          angle: [Function: angle],
+          angleTo: [Function: angleTo],
+          distanceTo: [Function: distanceTo],
+          distanceToSquared: [Function: distanceToSquared],
+          manhattanDistanceTo: [Function: manhattanDistanceTo],
+          setLength: [Function: setLength],
+          lerp: [Function: lerp],
+          lerpVectors: [Function: lerpVectors],
+          equals: [Function: equals],
+          fromArray: [Function: fromArray],
+          toArray: [Function: toArray],
+          fromBufferAttribute: [Function: fromBufferAttribute],
+          rotateAround: [Function: rotateAround],
+          random: [Function: random],
+          isVector2: true,
+          [Symbol(Symbol.iterator)]: [GeneratorFunction],
+        },
+        repeat: Vector2 {
+          x: 1,
+          y: 1,
+          width: [Getter/Setter],
+          height: [Getter/Setter],
+          set: [Function: set],
+          setScalar: [Function: setScalar],
+          setX: [Function: setX],
+          setY: [Function: setY],
+          setComponent: [Function: setComponent],
+          getComponent: [Function: getComponent],
+          clone: [Function: clone],
+          copy: [Function: copy],
+          add: [Function: add],
+          addScalar: [Function: addScalar],
+          addVectors: [Function: addVectors],
+          addScaledVector: [Function: addScaledVector],
+          sub: [Function: sub],
+          subScalar: [Function: subScalar],
+          subVectors: [Function: subVectors],
+          multiply: [Function: multiply],
+          multiplyScalar: [Function: multiplyScalar],
+          divide: [Function: divide],
+          divideScalar: [Function: divideScalar],
+          applyMatrix3: [Function: applyMatrix3],
+          min: [Function: min],
+          max: [Function: max],
+          clamp: [Function: clamp],
+          clampScalar: [Function: clampScalar],
+          clampLength: [Function: clampLength],
+          floor: [Function: floor],
+          ceil: [Function: ceil],
+          round: [Function: round],
+          roundToZero: [Function: roundToZero],
+          negate: [Function: negate],
+          dot: [Function: dot],
+          cross: [Function: cross],
+          lengthSq: [Function: lengthSq],
+          length: [Function: length],
+          manhattanLength: [Function: manhattanLength],
+          normalize: [Function: normalize],
+          angle: [Function: angle],
+          angleTo: [Function: angleTo],
+          distanceTo: [Function: distanceTo],
+          distanceToSquared: [Function: distanceToSquared],
+          manhattanDistanceTo: [Function: manhattanDistanceTo],
+          setLength: [Function: setLength],
+          lerp: [Function: lerp],
+          lerpVectors: [Function: lerpVectors],
+          equals: [Function: equals],
+          fromArray: [Function: fromArray],
+          toArray: [Function: toArray],
+          fromBufferAttribute: [Function: fromBufferAttribute],
+          rotateAround: [Function: rotateAround],
+          random: [Function: random],
+          isVector2: true,
+          [Symbol(Symbol.iterator)]: [GeneratorFunction],
+        },
+        center: Vector2 {
+          x: 0,
+          y: 0,
+          width: [Getter/Setter],
+          height: [Getter/Setter],
+          set: [Function: set],
+          setScalar: [Function: setScalar],
+          setX: [Function: setX],
+          setY: [Function: setY],
+          setComponent: [Function: setComponent],
+          getComponent: [Function: getComponent],
+          clone: [Function: clone],
+          copy: [Function: copy],
+          add: [Function: add],
+          addScalar: [Function: addScalar],
+          addVectors: [Function: addVectors],
+          addScaledVector: [Function: addScaledVector],
+          sub: [Function: sub],
+          subScalar: [Function: subScalar],
+          subVectors: [Function: subVectors],
+          multiply: [Function: multiply],
+          multiplyScalar: [Function: multiplyScalar],
+          divide: [Function: divide],
+          divideScalar: [Function: divideScalar],
+          applyMatrix3: [Function: applyMatrix3],
+          min: [Function: min],
+          max: [Function: max],
+          clamp: [Function: clamp],
+          clampScalar: [Function: clampScalar],
+          clampLength: [Function: clampLength],
+          floor: [Function: floor],
+          ceil: [Function: ceil],
+          round: [Function: round],
+          roundToZero: [Function: roundToZero],
+          negate: [Function: negate],
+          dot: [Function: dot],
+          cross: [Function: cross],
+          lengthSq: [Function: lengthSq],
+          length: [Function: length],
+          manhattanLength: [Function: manhattanLength],
+          normalize: [Function: normalize],
+          angle: [Function: angle],
+          angleTo: [Function: angleTo],
+          distanceTo: [Function: distanceTo],
+          distanceToSquared: [Function: distanceToSquared],
+          manhattanDistanceTo: [Function: manhattanDistanceTo],
+          setLength: [Function: setLength],
+          lerp: [Function: lerp],
+          lerpVectors: [Function: lerpVectors],
+          equals: [Function: equals],
+          fromArray: [Function: fromArray],
+          toArray: [Function: toArray],
+          fromBufferAttribute: [Function: fromBufferAttribute],
+          rotateAround: [Function: rotateAround],
+          random: [Function: random],
+          isVector2: true,
+          [Symbol(Symbol.iterator)]: [GeneratorFunction],
+        },
+        rotation: 0,
+        matrixAutoUpdate: true,
+        matrix: Matrix3 {
+          elements: [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ],
+          set: [Function: set],
+          identity: [Function: identity],
+          copy: [Function: copy],
+          extractBasis: [Function: extractBasis],
+          setFromMatrix4: [Function: setFromMatrix4],
+          multiply: [Function: multiply],
+          premultiply: [Function: premultiply],
+          multiplyMatrices: [Function: multiplyMatrices],
+          multiplyScalar: [Function: multiplyScalar],
+          determinant: [Function: determinant],
+          invert: [Function: invert],
+          transpose: [Function: transpose],
+          getNormalMatrix: [Function: getNormalMatrix],
+          transposeIntoArray: [Function: transposeIntoArray],
+          setUvTransform: [Function: setUvTransform],
+          scale: [Function: scale],
+          rotate: [Function: rotate],
+          translate: [Function: translate],
+          makeTranslation: [Function: makeTranslation],
+          makeRotation: [Function: makeRotation],
+          makeScale: [Function: makeScale],
+          equals: [Function: equals],
+          fromArray: [Function: fromArray],
+          toArray: [Function: toArray],
+          clone: [Function: clone],
+          isMatrix3: true,
+        },
+        generateMipmaps: false,
+        premultiplyAlpha: false,
+        flipY: true,
+        unpackAlignment: 1,
+        colorSpace: "",
+        userData: {},
+        updateRanges: [],
+        version: 1,
+        onUpdate: null,
+        renderTarget: null,
+        isRenderTargetTexture: false,
+        isArrayTexture: false,
+        pmremVersion: 0,
+        isDataTexture: true,
+        width: [Getter],
+        height: [Getter],
+        depth: [Getter],
+        image: [Getter/Setter],
+        updateMatrix: [Function: updateMatrix],
+        addUpdateRange: [Function: addUpdateRange],
+        clearUpdateRanges: [Function: clearUpdateRanges],
+        clone: [Function: clone],
+        copy: [Function: copy],
+        setValues: [Function: setValues],
+        toJSON: [Function: toJSON],
+        dispose: [Function: dispose],
+        transformUv: [Function: transformUv],
+        needsUpdate: [Setter],
+        needsPMREMUpdate: [Setter],
+        addEventListener: [Function: addEventListener],
+        hasEventListener: [Function: hasEventListener],
+        removeEventListener: [Function: removeEventListener],
+        dispatchEvent: [Function: dispatchEvent],
+      },
+    }
+  ],
+  visualOpacity: 1,
+}
+
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/soviet-units-pack.test.ts:268:67)
+(fail) Soviet engineer completes every slot, protects gold from remap, and isolates the shared Allied source [180.45ms]
+(pass) unit HD follows the accepted global preference and preserves explicit off saves [0.23ms]
+(pass) unit and limbo representation commit together within budget; cancellation and member failure dispose everything [412.23ms]
+(pass) DOG body and 32 leap bearings commit together, preserve native shadows, and isolate the Allied dog [293.35ms]
+(pass) FLAKT preserves 301 native slots and embedded shadows without owner-coloring muzzle flames [512.49ms]
+(pass) SHK preserves 301 native slots, shadows and non-remapped gold coils and hair [402.88ms]
+(pass) IVAN preserves 267 native slots, shadows and non-remapped skin and tan clothing [314.89ms]
+(pass) YURI preserves 316 native slots, shadows and non-remapped skin [302.54ms]
+533 |                         expect(data[i]).toBe(0); skinPixels++;
+534 |                     }
+535 |                 }
+536 |             expect(missingShadow).toBe(0); if ([180, 181, 182, 184, 186, 187].includes(nativeFrame)) {
+537 |                 expect([...original.imageData].some(p => p >= 16 && p <= 31)).toBe(false);
+538 |                 expect(remap).toBe(0);
+                                    ^
+error: expect(received).toBe(expected)
+
+Expected: 0
+Received: 44
+
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/soviet-units-pack.test.ts:538:31)
+(fail) TERROR preserves 188 native slots, shadows and non-remapped skin [96.80ms]
+(pass) DESO preserves 322 native slots, shadows and non-remapped green canisters/effects [498.60ms]
+(pass) CIVAN preserves 267 native slots, shadows and non-remapped skin and tan clothing [337.19ms]
+(pass) YURIPR preserves 315 native slots, shadows and non-remapped skin and psychic effects [379.11ms]
+(pass) snow and temperate unit families request HD and fail closed on missing resources [4.11ms]
+(pass) user-disabled SQD body and attachment stay Original without fetch or allocation [0.26ms]
+
+scripts/m1/unit-vxl.test.ts:
+(pass) civilian truck reuses only its exact accepted source family [0.05ms]
+(pass) component registration preserves native pitch, roll, recoil and pivot translation independently of authored yaw [1.09ms]
+(pass) VXL and SHP leases share one cap and retain each other while a family waits for capacity [0.38ms]
+(pass) VXL desktop and runtime pin the same complete eight-bearing DTRUCK family [2667.77ms]
+(pass) component crops share depth while retaining each native pivot and image registration [7.96ms]
+(pass) every VXL family pins all component and child resources and eight registered bearings [49.72ms]
+(pass) VXL loading fails atomically on missing child, changed source, bad bytes, capacity or cancellation [300.10ms]
+(pass) visible naval hull surfaces preserve registration above water and still descend with native sinking [9.95ms]
+
+scripts/m1/helicopter-rear-mount/registration.test.ts:
+(pass) rear mount follows body attitude and cannot orbit with the spinning blade [0.50ms]
+(pass) rear mount stays at one physical height through all body bearings [0.22ms]
+
+scripts/m1/helicopter-rotors/registration.test.ts:
+(pass) painted tandem hubs stay on native axes through yaw, spin, pitch and roll at both densities [4.47ms]
+
+scripts/m1/helicopter-belly/bounds.test.ts:
+(pass) SHAD metadata exposes every registered image corner without changing accepted artwork or pivots [2.31ms]
+(pass) the desktop resolves both helicopter families with complete body coverage [2658.33ms]
+
+5 tests failed:
+(fail) actual NAPOWR pages validate all 67 frames, RG8 values, native offsets and release [684.04ms]
+(fail) NAPOWR respects an explicit unit reserve before uploading any rejected density [89.19ms]
+(fail) all actual Soviet pages bind to retail sources, preserve accepted density and fit the measured combined budget [210.71ms]
+(fail) Soviet engineer completes every slot, protects gold from remap, and isolates the shared Allied source [180.45ms]
+(fail) TERROR preserves 188 native slots, shadows and non-remapped skin [96.80ms]
+
+ 34 pass
+ 5 fail
+ 6627256 expect() calls
+Ran 39 tests across 7 files. [23.83s]

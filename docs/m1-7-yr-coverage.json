@@ -1,0 +1,2217 @@
+{
+  "schema": "m1-7-yr-soviet-coverage-v1",
+  "status": "M1_7_YR_ACCEPTED_AND_INTEGRATED_INTO_MAIN",
+  "baseline": "477341f",
+  "branch": "m1-7-yr-soviet-units",
+  "scope": "YR Soviet skirmish production, national variants, eligible stolen-tech identities and required unit-specific visual dependencies",
+  "counts": {
+    "sovietRoster": 28,
+    "acceptedHdReuse": 23,
+    "acceptedOriginal": 1,
+    "newFamilies": 4,
+    "newCompleteRuntimeFamilies": 4,
+    "hdRosterEntries": 27,
+    "originalRosterEntries": 1,
+    "newInfantryBodyFrames": 1072,
+    "schpDeploymentPhases": 11
+  },
+  "dependencies": {
+    "BORIS": [
+      "BPLN normal and elite airstrike"
+    ],
+    "SCHP": [
+      "SCHD body",
+      "SCHDTUR turret",
+      "SCHP rotor sections and HVA phases",
+      "SCHPDEPL forward/reverse transition"
+    ]
+  },
+  "exclusions": [
+    {
+      "id": "YURI",
+      "reason": "Yuri faction production or special map override; accepted RA2 art retained"
+    },
+    {
+      "id": "YURIPR",
+      "reason": "YR Yuri-faction YURIX appearance is outside Soviet scope; preserve RA2 guarded Original exception"
+    },
+    {
+      "id": "LUNR",
+      "reason": "Campaign-only tech level 11 and unavailable NAPILE prerequisite"
+    },
+    {
+      "id": "SQD",
+      "reason": "Included roster with explicit user-accepted Original body and attachment"
+    }
+  ],
+  "technicalRisks": [
+    "Source-matched theater reuse includes the current main snow fix; packaged temperate/snow regression is recorded separately.",
+    "Other theaters, Windows, campaigns and natural-match victory are not certified by the controlled fixtures.",
+    "General weapon effects and generic death animations remain native. Required unit-specific dependencies are included."
+  ],
+  "review": "YR-Soviet-Units-Full-Review-v1.html",
+  "representativeSamples": 24,
+  "reviewValidation": "full-review-check-v1.json",
+  "preservation": "production-preservation-v1.json",
+  "sourceAudit": "source-v1/inventory.json",
+  "productionAudit": "rules-audit.json",
+  "referenceEvidence": "native-references-v4/result.json",
+  "historicalReferenceFailures": {
+    "native-references-v1": "sandbox prevented native app launch",
+    "native-references-v2": "capture script reported PASS but later visual inspection rejected direction/deployment contamination; do not use",
+    "native-references-v3": "overlapping fixture placement prevented deployment; timeout retained"
+  },
+  "families": [
+    {
+      "id": "E2",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "cons.shp"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "cons.shp",
+          "yrSha256": "b60c5527b82a6e317e4958344443c4bbd9b2139e693f4641c470ff3f15f1f9f1",
+          "ra2Sha256": "b60c5527b82a6e317e4958344443c4bbd9b2139e693f4641c470ff3f15f1f9f1",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED_PRESERVED_CONTROL",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "SHK",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "shk.shp"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "shk.shp",
+          "yrSha256": "7d46dcfc1509ce6684c89782be388f7a438f8946bd187300bd0490a48f8f4122",
+          "ra2Sha256": "7d46dcfc1509ce6684c89782be388f7a438f8946bd187300bd0490a48f8f4122",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "IVAN",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "ivan.shp"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "ivan.shp",
+          "yrSha256": "4a78fb72494d380cdd34fa89bebf7f4c6c2270724202c3b6811340af66bc7959",
+          "ra2Sha256": "4a78fb72494d380cdd34fa89bebf7f4c6c2270724202c3b6811340af66bc7959",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "DESO",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Arabs"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "deso.shp"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "deso.shp",
+          "yrSha256": "7f157a5089a3ec822ae73eb951993a410c8fabc0d1fa839ddb0eed255aabfcc4",
+          "ra2Sha256": "7f157a5089a3ec822ae73eb951993a410c8fabc0d1fa839ddb0eed255aabfcc4",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "DOG",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "dog.shp",
+        "dogp.shp"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "dog.shp",
+          "yrSha256": "7fd747a5d874c8a3613fae87eb8ef438e9b31778c32150830afcd7a992383ff7",
+          "ra2Sha256": "7fd747a5d874c8a3613fae87eb8ef438e9b31778c32150830afcd7a992383ff7",
+          "identical": true
+        },
+        {
+          "member": "dogp.shp",
+          "yrSha256": "9571109f20bddd2ba051bf3ce0eae5071ddfa40275996f631235cc025f18d855",
+          "ra2Sha256": "9571109f20bddd2ba051bf3ce0eae5071ddfa40275996f631235cc025f18d855",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "CCOMAND",
+      "status": "ACCEPTED_HD_COMPLETE_FAMILY",
+      "newAuthoring": true,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": true,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "ccomand.shp"
+      ],
+      "requiredStates": [
+        "all 348 native body slots and 348 original shadow slots",
+        "standing/prone fire/death and teleport visibility",
+        "stolen Allied technology unlock; building demolition and owner remap"
+      ],
+      "sourceComparison": [
+        {
+          "member": "ccomand.shp",
+          "yrSha256": "5aba156dbbf64e84b794a2659216086566caf113cdeab3c1e414bc09cfb4549a",
+          "ra2Sha256": "5aba156dbbf64e84b794a2659216086566caf113cdeab3c1e414bc09cfb4549a",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "COMPLETE_VERSIONED_RESOURCES",
+      "runtimeValidation": "PASS_NATIVE_ACTIONS_FRAME_SWEEP_AND_PACKAGED_TEMPERATE_SNOW",
+      "blockers": [],
+      "bodySlots": 348,
+      "authoredCandidateSlots": 348,
+      "finalAcceptance": "ACCEPTED_WITHOUT_EXCEPTIONS",
+      "resourceFamily": {
+        "id": "CCOMAND",
+        "path": "hd-packs/yr-soviet-ccomand-family/1/family.json",
+        "sha256": "bf219292bdb1c67145fe97db78c2d9ba2f83fcab6728b72777fdbec66eb7243a"
+      },
+      "evidence": [
+        "native-ccomand-actions-v3/result.json",
+        "native-roster-v1/result.json",
+        "native-ccomand-sweep-v1/result.json",
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ],
+      "nativeDeathFrames": [
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148
+      ],
+      "validatedStates": [
+        "native Allied lab spy infiltration opens production gate",
+        "native production and teleport recovery",
+        "primary weapon damage and C4 building destruction",
+        "native gunfire death sequence",
+        "348 slots, two owners, geometry/shadow/disposal validation"
+      ]
+    },
+    {
+      "id": "PTROOP",
+      "status": "ACCEPTED_HD_COMPLETE_FAMILY",
+      "newAuthoring": true,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": true
+      },
+      "members": [
+        "ptroop.shp"
+      ],
+      "requiredStates": [
+        "all 315 native body slots and 315 original shadow slots",
+        "mind control, release on death, building demolition",
+        "stolen Yuri technology unlock; standing/prone poses and original shadows"
+      ],
+      "sourceComparison": [
+        {
+          "member": "ptroop.shp",
+          "yrSha256": "a0344e19daceed8ae1642a58eab79a9dea20829f272e70fe0650b3f781e937ee",
+          "ra2Sha256": "a0344e19daceed8ae1642a58eab79a9dea20829f272e70fe0650b3f781e937ee",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "COMPLETE_VERSIONED_RESOURCES",
+      "runtimeValidation": "PASS_NATIVE_ACTIONS_FRAME_SWEEP_AND_PACKAGED_TEMPERATE_SNOW",
+      "blockers": [],
+      "bodySlots": 315,
+      "authoredCandidateSlots": 315,
+      "finalAcceptance": "ACCEPTED_WITHOUT_EXCEPTIONS",
+      "resourceFamily": {
+        "id": "PTROOP",
+        "path": "hd-packs/yr-soviet-ptroop-family/1/family.json",
+        "sha256": "640b45499591ced5c0136d1021c98711956c91835a39d19eb068961a9da5dc46"
+      },
+      "evidence": [
+        "native-ptroop-actions-v3/result.json",
+        "native-roster-v1/result.json",
+        "native-ptroop-sweep-v1/result.json",
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ],
+      "nativeDeathFrames": [
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148
+      ],
+      "validatedStates": [
+        "native Yuri lab spy infiltration opens production gate",
+        "native production and movement",
+        "mind control and C4 building destruction",
+        "mind-control release on death",
+        "native gunfire death sequence",
+        "315 slots, two owners, geometry/shadow/disposal validation"
+      ]
+    },
+    {
+      "id": "CIVAN",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": true,
+        "third": false
+      },
+      "members": [
+        "civan.shp"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "civan.shp",
+          "yrSha256": "48569d57cf5a77fe611a000ea8db14992160d0515d4e4b9bf22c03198c010523",
+          "ra2Sha256": "48569d57cf5a77fe611a000ea8db14992160d0515d4e4b9bf22c03198c010523",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "FLAKT",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "flakt.shp"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "flakt.shp",
+          "yrSha256": "2be57b9db70eefa6630f9c19abfb96715cc3da58de57a6c8fef08523851e64d9",
+          "ra2Sha256": "2be57b9db70eefa6630f9c19abfb96715cc3da58de57a6c8fef08523851e64d9",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "TERROR",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Confederation"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "trst.shp"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "trst.shp",
+          "yrSha256": "96a6ff78111593f5435116a0b3f36c1e9d740c72421ca62419282225cacd78db",
+          "ra2Sha256": "96a6ff78111593f5435116a0b3f36c1e9d740c72421ca62419282225cacd78db",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "SENGINEER",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "engineer.shp"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "engineer.shp",
+          "yrSha256": "f8eb0dc0156a877028ac2ed57bf2e71a9445ffcb6ef6a4caf3b0dbb7b111834c",
+          "ra2Sha256": "f8eb0dc0156a877028ac2ed57bf2e71a9445ffcb6ef6a4caf3b0dbb7b111834c",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "BORIS",
+      "status": "ACCEPTED_HD_COMPLETE_FAMILY",
+      "newAuthoring": true,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "boris.shp",
+        "bpln.vxl",
+        "bpln.hva"
+      ],
+      "requiredStates": [
+        "all 409 native body slots and 409 original shadow slots",
+        "walk/crawl/prone/fire/secondary-designator/death",
+        "normal two-plane and elite four-plane BPLN airstrike; target destruction and plane return"
+      ],
+      "sourceComparison": [
+        {
+          "member": "boris.shp",
+          "yrSha256": "00c67236fb55c3992d3bd0ab55279adc058b83aa4105f5cd095ae8b9441db02e",
+          "ra2Sha256": null,
+          "identical": false
+        },
+        {
+          "member": "bpln.vxl",
+          "yrSha256": "9ea08a6ec3db7012f52ad8cec84946d50c83e7d2fa2ce045952967c5c5c4058b",
+          "ra2Sha256": null,
+          "identical": false
+        },
+        {
+          "member": "bpln.hva",
+          "yrSha256": "cfaf8d153836fdbfff0993bc7c49b884e6e2ff0babe10d57bf803633f24a327f",
+          "ra2Sha256": null,
+          "identical": false
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "COMPLETE_VERSIONED_RESOURCES",
+      "runtimeValidation": "PASS_NATIVE_ACTIONS_FRAME_SWEEP_AND_PACKAGED_TEMPERATE_SNOW",
+      "blockers": [],
+      "bodySlots": 409,
+      "authoredCandidateSlots": 409,
+      "finalAcceptance": "ACCEPTED_WITHOUT_EXCEPTIONS",
+      "resourceFamily": {
+        "id": "BORIS",
+        "path": "hd-packs/yr-soviet-boris-family/2/family.json",
+        "sha256": "9e9b08bc0de4b261f4d896bc8ddd4c06190d3b4ace0b105bd2a13919844071e1"
+      },
+      "evidence": [
+        "native-boris-actions-v3/result.json",
+        "native-roster-v1/result.json",
+        "native-boris-sweep-v1/result.json",
+        "native-bpln-v1/result.json",
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ],
+      "nativeDeathFrames": [
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153
+      ],
+      "validatedStates": [
+        "native production and movement",
+        "primary weapon damage",
+        "normal two-plane and elite four-plane HD airstrikes, target destruction and return",
+        "native gunfire death sequence",
+        "409 slots, two owners, geometry/shadow/disposal validation",
+        "BPLN two-owner eight-heading rendering"
+      ]
+    },
+    {
+      "id": "HARV",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "harv.vxl",
+        "harv.hva",
+        "harvtur.vxl",
+        "harvtur.hva",
+        "horv.vxl",
+        "horv.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "harv.vxl",
+          "yrSha256": "b51aa74470b8495d9484a8085c88624ce53116dac20ba886b89bbe251913503a",
+          "ra2Sha256": "b51aa74470b8495d9484a8085c88624ce53116dac20ba886b89bbe251913503a",
+          "identical": true
+        },
+        {
+          "member": "harv.hva",
+          "yrSha256": "6de96bd28d717ad4c4f51e36692a7f32f8f5e10836347fe7c4964e57f9da6581",
+          "ra2Sha256": "6de96bd28d717ad4c4f51e36692a7f32f8f5e10836347fe7c4964e57f9da6581",
+          "identical": true
+        },
+        {
+          "member": "harvtur.vxl",
+          "yrSha256": "bc7a2ab31a50c4c08bfc3cc72e42724891b139f352f5fad7fca01f96922e8b4d",
+          "ra2Sha256": "bc7a2ab31a50c4c08bfc3cc72e42724891b139f352f5fad7fca01f96922e8b4d",
+          "identical": true
+        },
+        {
+          "member": "harvtur.hva",
+          "yrSha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "ra2Sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "identical": true
+        },
+        {
+          "member": "horv.vxl",
+          "yrSha256": "450d1384251d34909181eebc07c45ebc49472076f7bd260a7a9ac921ae0e3204",
+          "ra2Sha256": "450d1384251d34909181eebc07c45ebc49472076f7bd260a7a9ac921ae0e3204",
+          "identical": true
+        },
+        {
+          "member": "horv.hva",
+          "yrSha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "ra2Sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "APOC",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "mtnk.vxl",
+        "mtnk.hva",
+        "mtnktur.vxl",
+        "mtnktur.hva",
+        "mtnkbarl.vxl",
+        "mtnkbarl.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "mtnk.vxl",
+          "yrSha256": "fe82e553014591635d708e30d1b5088aad4c621ec820fe7c330c052bb188cf77",
+          "ra2Sha256": "fe82e553014591635d708e30d1b5088aad4c621ec820fe7c330c052bb188cf77",
+          "identical": true
+        },
+        {
+          "member": "mtnk.hva",
+          "yrSha256": "bbc8b8d4cdadc47627fdc955fcc6d30e6844bb736f3b81bfd2f0298b06c39396",
+          "ra2Sha256": "bbc8b8d4cdadc47627fdc955fcc6d30e6844bb736f3b81bfd2f0298b06c39396",
+          "identical": true
+        },
+        {
+          "member": "mtnktur.vxl",
+          "yrSha256": "1f16b4ba31c910e791d7db894c33a1554afe0918fd51df8d814000c4af672a4c",
+          "ra2Sha256": "1f16b4ba31c910e791d7db894c33a1554afe0918fd51df8d814000c4af672a4c",
+          "identical": true
+        },
+        {
+          "member": "mtnktur.hva",
+          "yrSha256": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa",
+          "ra2Sha256": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa",
+          "identical": true
+        },
+        {
+          "member": "mtnkbarl.vxl",
+          "yrSha256": "fba8930030b65873227b4e1bab29af286f0ab588ddac6ae2a4e6e73f53050822",
+          "ra2Sha256": "fba8930030b65873227b4e1bab29af286f0ab588ddac6ae2a4e6e73f53050822",
+          "identical": true
+        },
+        {
+          "member": "mtnkbarl.hva",
+          "yrSha256": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa",
+          "ra2Sha256": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "HTNK",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "htnk.vxl",
+        "htnk.hva",
+        "htnktur.vxl",
+        "htnktur.hva",
+        "htnkbarl.vxl",
+        "htnkbarl.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "htnk.vxl",
+          "yrSha256": "0ca8517c29f8bed26c3a3f0138bb36bae01fbb751fc9eaa30bfa1fba352923a2",
+          "ra2Sha256": "0ca8517c29f8bed26c3a3f0138bb36bae01fbb751fc9eaa30bfa1fba352923a2",
+          "identical": true
+        },
+        {
+          "member": "htnk.hva",
+          "yrSha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "ra2Sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "identical": true
+        },
+        {
+          "member": "htnktur.vxl",
+          "yrSha256": "4fc6ca0efb803621ae4dc99357f81eb4bc524cc70a90e386831fa0e63a416451",
+          "ra2Sha256": "4fc6ca0efb803621ae4dc99357f81eb4bc524cc70a90e386831fa0e63a416451",
+          "identical": true
+        },
+        {
+          "member": "htnktur.hva",
+          "yrSha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "ra2Sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "identical": true
+        },
+        {
+          "member": "htnkbarl.vxl",
+          "yrSha256": "42a3a41fdc52a5491b172bddcd8aac5b9baedec1d7703f95a68a9b96f8531398",
+          "ra2Sha256": "42a3a41fdc52a5491b172bddcd8aac5b9baedec1d7703f95a68a9b96f8531398",
+          "identical": true
+        },
+        {
+          "member": "htnkbarl.hva",
+          "yrSha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "ra2Sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED_PRESERVED_CONTROL",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "SAPC",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "trs.vxl",
+        "trs.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "trs.vxl",
+          "yrSha256": "2f954e765e62a15092e810ba7662d43136f7d74fc426d2227c58b70ef56eaaf9",
+          "ra2Sha256": "2f954e765e62a15092e810ba7662d43136f7d74fc426d2227c58b70ef56eaaf9",
+          "identical": true
+        },
+        {
+          "member": "trs.hva",
+          "yrSha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "ra2Sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "V3",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "v3.vxl",
+        "v3.hva",
+        "v3wo.vxl",
+        "v3wo.hva",
+        "v3rocket.vxl",
+        "v3rocket.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "v3.vxl",
+          "yrSha256": "0bec1774299ab54471e0aec3b49c467832fe19e5c19fcaa3b2bb4964b31903c1",
+          "ra2Sha256": "0bec1774299ab54471e0aec3b49c467832fe19e5c19fcaa3b2bb4964b31903c1",
+          "identical": true
+        },
+        {
+          "member": "v3.hva",
+          "yrSha256": "03c5759b2e710f024f78add39e08eeb27040cf200b84b78bd4a0a45a2cd23faa",
+          "ra2Sha256": "03c5759b2e710f024f78add39e08eeb27040cf200b84b78bd4a0a45a2cd23faa",
+          "identical": true
+        },
+        {
+          "member": "v3wo.vxl",
+          "yrSha256": "e7bc69e8bf43e2a96e355dfa72e4ff574e17f8f104e8802da0e9787bf31990b9",
+          "ra2Sha256": "e7bc69e8bf43e2a96e355dfa72e4ff574e17f8f104e8802da0e9787bf31990b9",
+          "identical": true
+        },
+        {
+          "member": "v3wo.hva",
+          "yrSha256": "b79f88d50a6caa564c10cfd17fed61f7e8335e6a57b7578cc114558eefe57165",
+          "ra2Sha256": "b79f88d50a6caa564c10cfd17fed61f7e8335e6a57b7578cc114558eefe57165",
+          "identical": true
+        },
+        {
+          "member": "v3rocket.vxl",
+          "yrSha256": "fd13949b0728d3543df1dd4fd39c9e6bfb65d322abec663819b42f51e141510d",
+          "ra2Sha256": "fd13949b0728d3543df1dd4fd39c9e6bfb65d322abec663819b42f51e141510d",
+          "identical": true
+        },
+        {
+          "member": "v3rocket.hva",
+          "yrSha256": "03c5759b2e710f024f78add39e08eeb27040cf200b84b78bd4a0a45a2cd23faa",
+          "ra2Sha256": "03c5759b2e710f024f78add39e08eeb27040cf200b84b78bd4a0a45a2cd23faa",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "ZEP",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "zep.vxl",
+        "zep.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "zep.vxl",
+          "yrSha256": "29d1b0812553fb09889f41481b8315c65740b09b11d6c799e03562f6a91de1ba",
+          "ra2Sha256": "29d1b0812553fb09889f41481b8315c65740b09b11d6c799e03562f6a91de1ba",
+          "identical": true
+        },
+        {
+          "member": "zep.hva",
+          "yrSha256": "4d9feb87009d48a3bdd2b143fe410e785be149d93c1d0b6765d3edbc9dac82fa",
+          "ra2Sha256": "4d9feb87009d48a3bdd2b143fe410e785be149d93c1d0b6765d3edbc9dac82fa",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "DRON",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "dron.shp",
+        "dronp.shp"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "dron.shp",
+          "yrSha256": "c5d2a3a0b58c664bd5d8cbf033f865588224e6888552c83ec4b44f2b32dd2e94",
+          "ra2Sha256": "c5d2a3a0b58c664bd5d8cbf033f865588224e6888552c83ec4b44f2b32dd2e94",
+          "identical": true
+        },
+        {
+          "member": "dronp.shp",
+          "yrSha256": "ce9a848c52f36abe8f873c6c3efe421373c0cde3f304090a03c3188ecadff161",
+          "ra2Sha256": "ce9a848c52f36abe8f873c6c3efe421373c0cde3f304090a03c3188ecadff161",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "HTK",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "htk.vxl",
+        "htk.hva",
+        "htktur.vxl",
+        "htktur.hva",
+        "htkbarl.vxl",
+        "htkbarl.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "htk.vxl",
+          "yrSha256": "b679002b9bb2a73706f74507032983b3ef2aff4dea540a33e08b549b22299339",
+          "ra2Sha256": "b679002b9bb2a73706f74507032983b3ef2aff4dea540a33e08b549b22299339",
+          "identical": true
+        },
+        {
+          "member": "htk.hva",
+          "yrSha256": "b7d3c838ed7f02ecfdcbc0dc8c3699db59d547b262b6ace72687bf5846fd99a8",
+          "ra2Sha256": "b7d3c838ed7f02ecfdcbc0dc8c3699db59d547b262b6ace72687bf5846fd99a8",
+          "identical": true
+        },
+        {
+          "member": "htktur.vxl",
+          "yrSha256": "895c9c20bc66a33aea0a109c727f4a10ab0bc8b75bdf2aff7a2c28dd1d17907c",
+          "ra2Sha256": "895c9c20bc66a33aea0a109c727f4a10ab0bc8b75bdf2aff7a2c28dd1d17907c",
+          "identical": true
+        },
+        {
+          "member": "htktur.hva",
+          "yrSha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "ra2Sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "identical": true
+        },
+        {
+          "member": "htkbarl.vxl",
+          "yrSha256": "4e03e449f8a0575757b466a56a32d6019f976b03fc313b37b7e814a92a89813d",
+          "ra2Sha256": "4e03e449f8a0575757b466a56a32d6019f976b03fc313b37b7e814a92a89813d",
+          "identical": true
+        },
+        {
+          "member": "htkbarl.hva",
+          "yrSha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "ra2Sha256": "16f3cd28642a66b1a0dc3f6cb4b063889c9f4721e46f12054fd60ed88cdc32ca",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "SUB",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "sub.vxl",
+        "sub.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "sub.vxl",
+          "yrSha256": "450cd09a67e112c329707a465eaa6d7142ebcdb8d57640cf48abb60f3d0a5e89",
+          "ra2Sha256": "450cd09a67e112c329707a465eaa6d7142ebcdb8d57640cf48abb60f3d0a5e89",
+          "identical": true
+        },
+        {
+          "member": "sub.hva",
+          "yrSha256": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa",
+          "ra2Sha256": "7b89493e80659f917c4785849ad14e0e550283323b8f0149a4b571db76b528fa",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "DRED",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "dred.vxl",
+        "dred.hva",
+        "dredwo.vxl",
+        "dredwo.hva",
+        "dmisl.vxl",
+        "dmisl.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "dred.vxl",
+          "yrSha256": "857eff8b607610bd4600466554839d36e4407940c247b9d08aee4c14ac546a1a",
+          "ra2Sha256": "857eff8b607610bd4600466554839d36e4407940c247b9d08aee4c14ac546a1a",
+          "identical": true
+        },
+        {
+          "member": "dred.hva",
+          "yrSha256": "810dae94db5ae67cef0866897da63f20d3b8d36ff2b73769abc0f5664ff4a2fe",
+          "ra2Sha256": "810dae94db5ae67cef0866897da63f20d3b8d36ff2b73769abc0f5664ff4a2fe",
+          "identical": true
+        },
+        {
+          "member": "dredwo.vxl",
+          "yrSha256": "793f2d514f6997995e767a9e0d59e66dbfa7e07e7e2c4636ea8ea170470177da",
+          "ra2Sha256": "793f2d514f6997995e767a9e0d59e66dbfa7e07e7e2c4636ea8ea170470177da",
+          "identical": true
+        },
+        {
+          "member": "dredwo.hva",
+          "yrSha256": "8ae40169cd8f731cb040347293bcd1c49b612bfeb50c433abda119c1d88bc2f1",
+          "ra2Sha256": "8ae40169cd8f731cb040347293bcd1c49b612bfeb50c433abda119c1d88bc2f1",
+          "identical": true
+        },
+        {
+          "member": "dmisl.vxl",
+          "yrSha256": "0cc017768c70fb08bbf29ee35396d770bbb270c9572f08411cb2aad6cb22569a",
+          "ra2Sha256": "0cc017768c70fb08bbf29ee35396d770bbb270c9572f08411cb2aad6cb22569a",
+          "identical": true
+        },
+        {
+          "member": "dmisl.hva",
+          "yrSha256": "78f4041017c6d4686ec09397a8be45db92f5d5dc007828072611219fe4963332",
+          "ra2Sha256": "78f4041017c6d4686ec09397a8be45db92f5d5dc007828072611219fe4963332",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "SQD",
+      "status": "ACCEPTED_ORIGINAL_EXCEPTION",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "sqd.shp",
+        "sqdg.shp"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "sqd.shp",
+          "yrSha256": "dcbac9af11d7d13be98de775ab23deff04116e5d9cc2920887930db2ae6835d2",
+          "ra2Sha256": "dcbac9af11d7d13be98de775ab23deff04116e5d9cc2920887930db2ae6835d2",
+          "identical": true
+        },
+        {
+          "member": "sqdg.shp",
+          "yrSha256": "f75be15eb3b2d63c98966a8787a218aca3b6f975c6d1cc0c1127052835ae144c",
+          "ra2Sha256": "f75be15eb3b2d63c98966a8787a218aca3b6f975c6d1cc0c1127052835ae144c",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED_ORIGINAL_DELIVERY",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "SMCV",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "smcv.vxl",
+        "smcv.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "smcv.vxl",
+          "yrSha256": "5df9009d9d5dbd320530e8485a82d17f888e04aad8a4b69a35687dcb7fdcdb1d",
+          "ra2Sha256": "5df9009d9d5dbd320530e8485a82d17f888e04aad8a4b69a35687dcb7fdcdb1d",
+          "identical": true
+        },
+        {
+          "member": "smcv.hva",
+          "yrSha256": "57667fe8ed4b3e3b934d0d34ed735458b1fba6a15b56743a2d7b5c42587d0275",
+          "ra2Sha256": "57667fe8ed4b3e3b934d0d34ed735458b1fba6a15b56743a2d7b5c42587d0275",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "TTNK",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "ttnk.vxl",
+        "ttnk.hva",
+        "ttnktur.vxl",
+        "ttnktur.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "ttnk.vxl",
+          "yrSha256": "9ad57394e667f3d555d48ab6bc7aa537658af4aa5ad1de5729840aa0758c797d",
+          "ra2Sha256": "9ad57394e667f3d555d48ab6bc7aa537658af4aa5ad1de5729840aa0758c797d",
+          "identical": true
+        },
+        {
+          "member": "ttnk.hva",
+          "yrSha256": "8328e2797e58451c0b68865bcfef13f935ffb260e60083fe323a05c752c558a9",
+          "ra2Sha256": "8328e2797e58451c0b68865bcfef13f935ffb260e60083fe323a05c752c558a9",
+          "identical": true
+        },
+        {
+          "member": "ttnktur.vxl",
+          "yrSha256": "7f5a8bd5b12e800b1edd7ce8f593e791857ffaf82341cc6e1c7c8ff93a78b4b7",
+          "ra2Sha256": "7f5a8bd5b12e800b1edd7ce8f593e791857ffaf82341cc6e1c7c8ff93a78b4b7",
+          "identical": true
+        },
+        {
+          "member": "ttnktur.hva",
+          "yrSha256": "8328e2797e58451c0b68865bcfef13f935ffb260e60083fe323a05c752c558a9",
+          "ra2Sha256": "8328e2797e58451c0b68865bcfef13f935ffb260e60083fe323a05c752c558a9",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "HYD",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "hyd.vxl",
+        "hyd.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "hyd.vxl",
+          "yrSha256": "0dad9b2ae16a8607dacbdd604056dae601828c2027bd3b571be063dd15d97a6e",
+          "ra2Sha256": "0dad9b2ae16a8607dacbdd604056dae601828c2027bd3b571be063dd15d97a6e",
+          "identical": true
+        },
+        {
+          "member": "hyd.hva",
+          "yrSha256": "3e740a64abf078b26806289c7557494d7e31a5b2bc0836143b6ea84743654c51",
+          "ra2Sha256": "3e740a64abf078b26806289c7557494d7e31a5b2bc0836143b6ea84743654c51",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "DTRUCK",
+      "status": "ACCEPTED_REUSE_IDENTICAL_SOURCE",
+      "newAuthoring": false,
+      "houses": [
+        "Africans"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "trucka.vxl",
+        "trucka.hva"
+      ],
+      "requiredStates": [
+        "preserve accepted artwork; check both-edition and theater fallback"
+      ],
+      "sourceComparison": [
+        {
+          "member": "trucka.vxl",
+          "yrSha256": "d535a5cff4f3f62d8aefa2edd01eda931d63933f38b08f708787843a8f6f1cf7",
+          "ra2Sha256": "d535a5cff4f3f62d8aefa2edd01eda931d63933f38b08f708787843a8f6f1cf7",
+          "identical": true
+        },
+        {
+          "member": "trucka.hva",
+          "yrSha256": "2deba143c6e9bca86e1ca357873082ec8e47f40e13eaacfc647e1e3fb63c21f3",
+          "ra2Sha256": "2deba143c6e9bca86e1ca357873082ec8e47f40e13eaacfc647e1e3fb63c21f3",
+          "identical": true
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "PRESERVED",
+      "runtimeValidation": "PASS_PACKAGED_YR_TEMPERATE_AND_SNOW_BINDING",
+      "blockers": [],
+      "evidence": [
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ]
+    },
+    {
+      "id": "SCHP",
+      "status": "ACCEPTED_HD_COMPLETE_FAMILY",
+      "newAuthoring": true,
+      "houses": [
+        "Africans",
+        "Arabs",
+        "Confederation",
+        "Russians"
+      ],
+      "stolenTech": {
+        "allied": false,
+        "soviet": false,
+        "third": false
+      },
+      "members": [
+        "schp.vxl",
+        "schp.hva",
+        "schd.vxl",
+        "schd.hva",
+        "schdtur.vxl",
+        "schdtur.hva",
+        "schpdepl.shp"
+      ],
+      "requiredStates": [
+        "flight body and both animated rotor sections",
+        "landing, all 11 SCHPDEPL body phases with original shadows, reverse undeploy",
+        "SCHD ground body and independent SCHDTUR aim/fire",
+        "flight gun and ground 160mm normal/elite fire; movement/airborne death and shadows"
+      ],
+      "sourceComparison": [
+        {
+          "member": "schp.vxl",
+          "yrSha256": "c16f0d4dd2fdac3ed28741bb4160c921f3ac42adbbd2bd17641a1f514314ee3c",
+          "ra2Sha256": null,
+          "identical": false
+        },
+        {
+          "member": "schp.hva",
+          "yrSha256": "68f97095812ab96a5dfdadff362ea834713459cb884f6c063423ec1e290edc3c",
+          "ra2Sha256": null,
+          "identical": false
+        },
+        {
+          "member": "schd.vxl",
+          "yrSha256": "9f5189a029527ab8f9f856995e58348dd0b82a71cd9bd4970841c429556da2e6",
+          "ra2Sha256": null,
+          "identical": false
+        },
+        {
+          "member": "schd.hva",
+          "yrSha256": "dbc01391ee3c85f2c197223252fc2c1dc3efdd770bfb2c532a022f616cf16bb7",
+          "ra2Sha256": null,
+          "identical": false
+        },
+        {
+          "member": "schdtur.vxl",
+          "yrSha256": "dc200e64c249cf45626f15a56d76f0258266857426d44371cf011fee75733506",
+          "ra2Sha256": null,
+          "identical": false
+        },
+        {
+          "member": "schdtur.hva",
+          "yrSha256": "e0651414e7e7e3f4577300d8c44499fb87aca7cf329b0da7b5f8bb821abe26e6",
+          "ra2Sha256": null,
+          "identical": false
+        },
+        {
+          "member": "schpdepl.shp",
+          "yrSha256": "aaf691e3ba92bb071003005da69ebf02402ab727fb6b2f1d95b9c0050802250a",
+          "ra2Sha256": null,
+          "identical": false
+        }
+      ],
+      "representativeAcceptance": "ACCEPTED",
+      "fullProduction": "COMPLETE_VERSIONED_RESOURCES",
+      "runtimeValidation": "PASS_NATIVE_ACTIONS_FRAME_SWEEP_AND_PACKAGED_TEMPERATE_SNOW",
+      "blockers": [],
+      "bodySlots": 11,
+      "authoredCandidateSlots": 11,
+      "finalAcceptance": "ACCEPTED_WITHOUT_EXCEPTIONS",
+      "evidence": [
+        "native-chopper-v11/result.json",
+        "native-roster-v1/result.json",
+        "packaged-temperate-v2/result.json",
+        "packaged-snow-v2/result.json"
+      ],
+      "resourceFamily": {
+        "id": "SCHP",
+        "path": "hd-packs/yr-soviet-schp-family/1/family.json",
+        "sha256": "0a097522c39b04912b413309e75a67a4def0a479391d1d9226dbfd6bbe41c9ec"
+      }
+    }
+  ],
+  "acceptance": "representative-acceptance-v1.json",
+  "productionWorklist": "production-shp-v2/worklist.json",
+  "newCompleteRuntimeFamilies": 4,
+  "integratedMain": "f508f43",
+  "resourceInventory": "docs/m1-7-yr-resources.json",
+  "finalAcceptance": "ACCEPTED_WITHOUT_NEW_EXCEPTIONS",
+  "historicalValidationFailures": {
+    "native-boris-actions-v2": "Harness incorrectly expected unit Die frames for a tank warhead that selects the native generic explosion. v3 uses a native gunfire warhead and observes all 15 Die1 frames.",
+    "production-tests-v5": "Merged desktop empty-resource expectation omitted four YR entries; corrected expectation and rerun.",
+    "boris-authored/1": "Rejected export: alpha-zero label area became opaque during masking in two extended flare crops; revision 2 respects source alpha and excludes labels."
+  },
+  "allocation": {
+    "totalCapBytes": 268435456,
+    "measuredTemperateOptionalBaseBytes": 185996700,
+    "measuredUnitBytes": 59518140,
+    "measuredTotalBytes": 245514840,
+    "headroomBytes": 22920616,
+    "evidence": "native-roster-v1/result.json",
+    "disclosure": "Controlled simultaneous 28-root placement with accepted building/base allocation; packaged checks confirm final build. Retains existing cap and whole-family fallback."
+  },
+  "packagedValidation": [
+    {
+      "edition": "ra2",
+      "theater": 1,
+      "unitStatus": "PASS_ACCEPTED_FAMILIES_AND_ORIGINAL_EXCEPTIONS",
+      "unitBytes": 46585172,
+      "totalOptionalBytes": 233693296,
+      "buildingFamilies": 18,
+      "combat": "PASS",
+      "lightingScore": {},
+      "evidence": "packaged-temperate-v2/result.json"
+    },
+    {
+      "edition": "yr",
+      "theater": 1,
+      "unitStatus": "PASS_28_YR_SOVIET_ROOTS_AND_SHARED_ALLOCATION",
+      "unitBytes": 59518140,
+      "totalOptionalBytes": 245514840,
+      "buildingFamilies": 18,
+      "combat": "PASS",
+      "lightingScore": {},
+      "evidence": "packaged-temperate-v2/result.json"
+    },
+    {
+      "edition": "ra2",
+      "theater": 4,
+      "unitStatus": "PASS_ACCEPTED_FAMILIES_AND_ORIGINAL_EXCEPTIONS",
+      "unitBytes": 46585172,
+      "totalOptionalBytes": 212132200,
+      "buildingFamilies": 18,
+      "combat": "PASS",
+      "lightingScore": {
+        "scene": {
+          "map": "mp26s6.map",
+          "lamps": [
+            {
+              "name": "NEGLAMP",
+              "tile": [
+                169,
+                136
+              ],
+              "intensity": -0.15,
+              "tint": [
+                0.03,
+                0.04,
+                0.04
+              ]
+            },
+            {
+              "name": "NEGLAMP",
+              "tile": [
+                159,
+                128
+              ],
+              "intensity": -0.15,
+              "tint": [
+                0.03,
+                0.04,
+                0.04
+              ]
+            },
+            {
+              "name": "NEGLAMP",
+              "tile": [
+                158,
+                108
+              ],
+              "intensity": -0.15,
+              "tint": [
+                0.03,
+                0.04,
+                0.04
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                150,
+                107
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                148,
+                80
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                186,
+                103
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                177,
+                96
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                141,
+                142
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                139,
+                152
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                93,
+                180
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                86,
+                175
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                72,
+                115
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                67,
+                102
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                107,
+                82
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INGALITE",
+              "tile": [
+                153,
+                95
+              ],
+              "intensity": 0.2,
+              "tint": [
+                0.05,
+                0.05,
+                0.01
+              ]
+            }
+          ],
+          "shaders": [
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial"
+          ]
+        },
+        "lightsOn": {
+          "whiteFraction": 0.04100977381665668,
+          "mean": 166.05746944490522,
+          "pixels": 3418112
+        },
+        "lightsOff": {
+          "whiteFraction": 0.0007758669113241462,
+          "mean": 158.1016905432423,
+          "pixels": 3418112
+        },
+        "blendProbe": [
+          {
+            "sign": 1,
+            "rgba": [
+              128,
+              112,
+              102,
+              255
+            ],
+            "expected": [
+              128,
+              112,
+              102,
+              255
+            ],
+            "gl": 0
+          },
+          {
+            "sign": -1,
+            "rgba": [
+              76,
+              92,
+              102,
+              255
+            ],
+            "expected": [
+              76,
+              92,
+              102,
+              255
+            ],
+            "gl": 0
+          }
+        ],
+        "beforePause": {
+          "milliseconds": 66266.66666666577,
+          "sidebarSeconds": 66
+        },
+        "paused": {
+          "milliseconds": 66466.66666666578,
+          "speed": 2.220446049250313e-16
+        },
+        "expected": "0:01:06",
+        "status": "PASS_LIGHTING_AND_PAUSED_SCORE"
+      },
+      "evidence": "packaged-snow-v2/result.json"
+    },
+    {
+      "edition": "yr",
+      "theater": 4,
+      "unitStatus": "PASS_28_YR_SOVIET_ROOTS_AND_SHARED_ALLOCATION",
+      "unitBytes": 59518140,
+      "totalOptionalBytes": 223082308,
+      "buildingFamilies": 18,
+      "combat": "PASS",
+      "lightingScore": {
+        "scene": {
+          "map": "xmp26s6.map",
+          "lamps": [
+            {
+              "name": "NEGLAMP",
+              "tile": [
+                169,
+                136
+              ],
+              "intensity": -0.15,
+              "tint": [
+                0.03,
+                0.04,
+                0.04
+              ]
+            },
+            {
+              "name": "NEGLAMP",
+              "tile": [
+                159,
+                128
+              ],
+              "intensity": -0.15,
+              "tint": [
+                0.03,
+                0.04,
+                0.04
+              ]
+            },
+            {
+              "name": "NEGLAMP",
+              "tile": [
+                158,
+                108
+              ],
+              "intensity": -0.15,
+              "tint": [
+                0.03,
+                0.04,
+                0.04
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                150,
+                107
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                148,
+                80
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                186,
+                103
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                177,
+                96
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                141,
+                142
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                139,
+                152
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                93,
+                180
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                86,
+                175
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                72,
+                115
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                67,
+                102
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INYELWLAMP",
+              "tile": [
+                107,
+                82
+              ],
+              "intensity": 0.01,
+              "tint": [
+                0.4,
+                0.2,
+                0.01
+              ]
+            },
+            {
+              "name": "INGALITE",
+              "tile": [
+                153,
+                95
+              ],
+              "intensity": 0.2,
+              "tint": [
+                0.05,
+                0.05,
+                0.01
+              ]
+            }
+          ],
+          "shaders": [
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial",
+            "ShaderMaterial"
+          ]
+        },
+        "lightsOn": {
+          "whiteFraction": 0.0404998431882864,
+          "mean": 166.18726117400414,
+          "pixels": 3418112
+        },
+        "lightsOff": {
+          "whiteFraction": 0.0007746966746554824,
+          "mean": 158.22192494946262,
+          "pixels": 3418112
+        },
+        "blendProbe": [
+          {
+            "sign": 1,
+            "rgba": [
+              128,
+              112,
+              102,
+              255
+            ],
+            "expected": [
+              128,
+              112,
+              102,
+              255
+            ],
+            "gl": 0
+          },
+          {
+            "sign": -1,
+            "rgba": [
+              76,
+              92,
+              102,
+              255
+            ],
+            "expected": [
+              76,
+              92,
+              102,
+              255
+            ],
+            "gl": 0
+          }
+        ],
+        "beforePause": {
+          "milliseconds": 164666.6666666656,
+          "sidebarSeconds": 164
+        },
+        "paused": {
+          "milliseconds": 164733.33333333227,
+          "speed": 2.220446049250313e-16
+        },
+        "expected": "0:02:44",
+        "status": "PASS_LIGHTING_AND_PAUSED_SCORE"
+      },
+      "evidence": "packaged-snow-v2/result.json"
+    }
+  ],
+  "reviewStatus": "PASS_OFFLINE_COMPLETE_FAMILY_EMBEDDED_REVIEW",
+  "technicalTests": {
+    "passed": 52,
+    "failed": 0,
+    "entryTypecheck": "PASS",
+    "evidence": "production-tests-v6.log",
+    "additionalEvidence": "lighting-score-tests-v1.log",
+    "entryTypecheckEvidence": "typecheck-production-v12.log"
+  },
+  "delivery": "docs/m1-7-yr-delivery.json",
+  "acceptanceReceipt": "docs/m1-7-yr-final-acceptance.json",
+  "mainIntegration": "docs/m1-7-yr-main-integration.json"
+}

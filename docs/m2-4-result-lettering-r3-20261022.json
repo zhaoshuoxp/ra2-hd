@@ -1,0 +1,201 @@
+{
+  "schema": "m2-4-result-lettering-r3-review-delivery-v1",
+  "status": "DELIVERED_HTML_MAC_TECHNICAL_PASS_VISUAL_PENDING",
+  "runtimeSourceHead": "1e57dd335fda28aa79136358fdb880fc67155129",
+  "runtimeUnchangedByBookkeeping": true,
+  "publicVersion": "v0.2",
+  "packageSemver": "0.2.0",
+  "engineReplayCompatibility": "UNCHANGED_0.0.1",
+  "desktop": "/Users/Aone/Desktop/M2.4-Review-Result-Lettering-R3-20261022",
+  "review": "M2.4-Result-Lettering-R3-Embedded.html",
+  "files": [
+    {
+      "file": "Evidence/Focused-Tests.log",
+      "bytes": 3210,
+      "sha256": "6ec428f2e82798993ee2d982bfec459d375e40c6921848ad3c8075a2ea19cdb5"
+    },
+    {
+      "file": "Evidence/Initial-Observation-Failure.json",
+      "bytes": 1108,
+      "sha256": "05b340f5f08557eec026bbecb047d8dfa6119e1b5745ae5c30b1f3f707934f8d"
+    },
+    {
+      "file": "Evidence/Native-Mac.json",
+      "bytes": 14585,
+      "sha256": "8d7f497de6da4095936df46a68cb7530cca113982fb54d1f3792f678c2572ff1"
+    },
+    {
+      "file": "Evidence/Rejected-R1-Feedback.json",
+      "bytes": 480,
+      "sha256": "adbcf0b58e97db7eba7a67bd0308de444802e078b58fa4902b672170c815ea7f"
+    },
+    {
+      "file": "Evidence/Reused-R2-Native-Mac.json",
+      "bytes": 40040,
+      "sha256": "b8894707c03723385e354e17d5a4863a618056d114c86ae040f6b6fe850df2c6"
+    },
+    {
+      "file": "Evidence/Review-QA.json",
+      "bytes": 12195,
+      "sha256": "e306824cd07fd7d6fd9c51435d1a6d0099552d7464f0d7f08935c6367594cada"
+    },
+    {
+      "file": "Evidence/Typecheck.log",
+      "bytes": 39,
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    },
+    {
+      "file": "M2.4-Result-Lettering-R3-Embedded.html",
+      "bytes": 7966839,
+      "sha256": "afe5b6020f5c579130697f668e23c2514182b8f6631abc79d48f1b7fa2e1cd88"
+    },
+    {
+      "file": "Records/Correction.md",
+      "bytes": 2610,
+      "sha256": "70c07031647ee2a27080d49b02793c33b474ab0bb1f48d572b327b7e4a9de448"
+    },
+    {
+      "file": "Records/Startup-Notice-Acceptance.json",
+      "bytes": 2903,
+      "sha256": "caaf3e6a70b30855e97709f0682a131a49215ed2917fb143f8feca8012a7d188"
+    },
+    {
+      "file": "START-HERE.txt",
+      "bytes": 477,
+      "sha256": "b3378b8f91003c4283704ee4c041a4425dd305f0a58b4a833a30574ccb2d8ebe"
+    },
+    {
+      "file": "Sources/Production-Lettering.json",
+      "bytes": 32963,
+      "sha256": "bf6794e3bb3a0a7be37e097c9d8cd2a1484364c81f193af1531f17137ffd0555"
+    },
+    {
+      "file": "Sources/Startup-Notice.json",
+      "bytes": 1410,
+      "sha256": "2cc8577547e3c503153b12f038b12684c598883b7d79f6b7f09deb5f99602e56"
+    },
+    {
+      "file": "Startup-Disclaimer-en-US.txt",
+      "bytes": 573,
+      "sha256": "d5b2368a3f6a98efa6bb61ffb98accd92341cf11e46fffaa3af4e3d1ee5c1642"
+    },
+    {
+      "file": "Startup-Disclaimer-zh-CN.txt",
+      "bytes": 513,
+      "sha256": "e4fcd06ebe797ff8249ad3f30d57c792157adf5bb13d3c4f6eea456b745ed42d"
+    }
+  ],
+  "fileCount": 15,
+  "bytes": 8079945,
+  "exclusions": [
+    "Review-Receipt.json (self)"
+  ],
+  "tests": {
+    "focusedCases": 27,
+    "assertions": 4061,
+    "focusedEvidence": "REUSED_R2_UNCHANGED_PATHS",
+    "entryTypecheck": "PASS",
+    "isolatedBuild": "PASS",
+    "nativeMacCases": 1,
+    "rasterCases": 24,
+    "sourceBackgroundHashes": "PASS_UNCHANGED_ALL_FOUR",
+    "uiPeakBytes": 14010624,
+    "uiBudgetBytes": 16777216,
+    "nativeResultRelease": "PASS",
+    "startupTextAndNonoverlappingColumns": "PASS",
+    "firstNativeFailure": "Observed the initial v before Home React committed v0.2; corrected the observer wait, not runtime."
+  },
+  "sourceFiles": [
+    {
+      "file": "src/gui/screen/game/component/ResultBannerLettering.tsx",
+      "sha256": "a9dc22d2b351beff80f7435df429e82c2d62f7700d013a1a1a8598311c36b39f"
+    },
+    {
+      "file": "src/version.ts",
+      "sha256": "bd0e463a05f4237c6eed9ffeacf0e76e3a4a41ac58731b28e4ad262ca6be92cb"
+    },
+    {
+      "file": "src/gui/component/SplashScreen.tsx",
+      "sha256": "79ca4bd62081d970719bfbf668c7d7b61adeb44a55da4cca521aa04006a5788e"
+    },
+    {
+      "file": "src/Application.ts",
+      "sha256": "e21b96f3d7f5fde8f4dd52c008f87b10455c8d30f4ecb3361f6d3636257c0b64"
+    },
+    {
+      "file": "public/res/locale/zh-CN.json",
+      "sha256": "12e1b5239350c59759e109e65bd78aea222fd1fa7aac89776f4d299956c0ad91"
+    },
+    {
+      "file": "public/res/locale/zh-TW.json",
+      "sha256": "13a96a96ce1d2248f4b338c95f497241f92065eca7afe5cb1ad979a09364c605"
+    },
+    {
+      "file": "public/res/locale/en-US.json",
+      "sha256": "7a36a3b28da664dec991080d6ce8e32fd3cd5ccff3bc42e93736cc83f1d268fe"
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "25d67e9297338b8017ae0a27fc6daff6ac5f5684c7eb201acdca979fb0d28c84"
+    }
+  ],
+  "resultBackgroundFamily": {
+    "schema": "localized-result-banner-family-v1",
+    "logicalWidth": 436,
+    "logicalHeight": 112,
+    "assets": [
+      {
+        "outcome": "victory",
+        "density": 2,
+        "file": "result-victory-hd-v1-2x.png",
+        "sha256": "61c85e42d0fb6ddbee40d2d693f1904ef8e1f85c34af84b12fab15c72f848551",
+        "width": 872,
+        "height": 224
+      },
+      {
+        "outcome": "victory",
+        "density": 4,
+        "file": "result-victory-hd-v1-4x.png",
+        "sha256": "2de3b366af1942e3837bcf70d86382451c6b869cba4bb82130440b7a570ef492",
+        "width": 1744,
+        "height": 448
+      },
+      {
+        "outcome": "defeat",
+        "density": 2,
+        "file": "result-defeat-hd-v1-2x.png",
+        "sha256": "0defe58eff4ff3aba7c23d43ae50f995b622575f536974e946f2a849e8ca2d0c",
+        "width": 872,
+        "height": 224
+      },
+      {
+        "outcome": "defeat",
+        "density": 4,
+        "file": "result-defeat-hd-v1-4x.png",
+        "sha256": "4ddf4001c0a3a0c832232de90ac00e2c76dddf96bf04d198f8fb5b4497435e0c",
+        "width": 1744,
+        "height": 448
+      }
+    ]
+  },
+  "campaignSlots": [
+    0,
+    1
+  ],
+  "skirmishSlots": [
+    2,
+    3
+  ],
+  "resourcePolicy": "Accepted selectors, world/prepared dependencies and budgets are unchanged; no stale prepared data is relabeled.",
+  "reusedEvidence": "docs/m2-4-retail-presentation-delivery-20261022.json: six previous native catalog/language/name/tooltip/fallback cases.",
+  "newGamePackageCreated": false,
+  "previousDeliveriesOverwritten": false,
+  "visualAcceptance": "PENDING",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "startupNoticeAcceptance": "USER_ACCEPTED_AND_INTEGRATED_IN_GAME",
+  "cleanup": "USER_AUTHORIZED_AFTER_CORRECTION_ACCEPTANCE_DEFERRED",
+  "next": "After visual acceptance, refresh the final app once and execute scoped dependency-checked cleanup.",
+  "remotePush": false,
+  "published": false,
+  "m24Complete": false
+}

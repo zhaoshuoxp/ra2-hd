@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "status": "C9_COMPLETE_DIAGNOSTIC_DESKTOP_DELIVERED_WINDOWS_ACCEPTANCE_PENDING",
+  "sourceFocus": "ee1fc2769718a5d43533f124efd231399d8fbd3b",
+  "shippingSourceHead": "69c132d385771dabd385635aa036c51b27014797",
+  "baselineDiagnostic": "WINHD-20261008-D38F136-C8",
+  "applicationIncrementFromC8": [
+    "src/engine/renderable/unitVxl/VxlUnitRenderer.ts"
+  ],
+  "validatedWindowsBasis": {
+    "return": "WINHD-20261008-D38F136-C8-RETURN-2026-10-10T06-45-58-773Z.zip",
+    "sha256": "61ae304c80b736164c625dcffc87c5845a4967fe0123d50445b367729c7c43cf",
+    "attribution": ".artifacts/windows-hd-diagnostic/c8-trace-windows-attribution-v1.json",
+    "boundary": "Scoped late trace and retained separate Normal baseline; instrumented FPS is not Normal performance."
+  },
+  "buildParity": {
+    "status": "PASS_BYTE_IDENTICAL_NATIVE_TESTED_AND_FINAL_BUILD",
+    "nativeSourceHead": "ee1fc2769718a5d43533f124efd231399d8fbd3b",
+    "finalSourceHead": "69c132d385771dabd385635aa036c51b27014797",
+    "mappedFiles": 288,
+    "boundary": "Documentation-only checkpoint; every generated app output and hidden map is byte-identical to the native-tested build."
+  },
+  "applicationParity": {
+    "status": "PASS_COMPLETE_NATIVE_TESTED_APPLICATION_AND_RESOURCE_PARITY",
+    "nativeSourceHead": "ee1fc2769718a5d43533f124efd231399d8fbd3b",
+    "finalSourceHead": "69c132d385771dabd385635aa036c51b27014797",
+    "manifestSha256": "4b3914eaec2e053cd287c1d091e78803b3ccec7ca700cbf267013e3bf081e25e",
+    "applicationFiles": 205,
+    "resourceFiles": 6033,
+    "resourceInventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "boundary": "Final references/manifest differ; all executable app files and complete resources are exact to the copied native-tested kit."
+  },
+  "nativeValidation": {
+    "path": "docs/windows-hd-c9-native-validation-20261009.json",
+    "sha256": "53ff650c784b225351b9f5fe95b0051d598cf03596a518d9fc4d5f91216e9adb",
+    "status": "PASS_NATIVE_MAC_SELECTED_VXL_PREPARATION_WINDOWS_AB_PENDING"
+  },
+  "seal": {
+    "status": "PASS_FULL_ARCHIVE_AND_FRESH_EXTRACTION",
+    "diagnosticId": "WINHD-20261008-D38F136-C9",
+    "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "diagnosticCommit": "69c132d385771dabd385635aa036c51b27014797",
+    "archive": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C9-69c132d-Windows-x64.zip",
+    "bytes": 3500091590,
+    "sha256": "ffc5f39bbabb31c911c87ef03327ba7617f81a58d5106e56babb32006ee5bb6e",
+    "manifestSha256": "4b3914eaec2e053cd287c1d091e78803b3ccec7ca700cbf267013e3bf081e25e",
+    "entries": 8144,
+    "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c9-fresh-v1/RA2-HD-WINHD-20261008-D38F136-C9-69c132d-Windows-x64",
+    "windowsNative": "NOT_RUN"
+  },
+  "desktop": {
+    "status": "PASS_DESKTOP_FULL_ZIP_HASH_AND_ALL_MEMBER_CRC",
+    "source": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C9-69c132d-Windows-x64.zip",
+    "destination": "/Users/Aone/Desktop/RA2-HD-WINHD-20261008-D38F136-C9-69c132d-Windows-x64.zip",
+    "bytes": 3500091590,
+    "sha256": "ffc5f39bbabb31c911c87ef03327ba7617f81a58d5106e56babb32006ee5bb6e",
+    "entries": 8144,
+    "manifestSha256": "4b3914eaec2e053cd287c1d091e78803b3ccec7ca700cbf267013e3bf081e25e",
+    "copiedAt": "2026-10-10T07:30:28.593246+00:00",
+    "overwrite": "NO",
+    "boundary": "Unique complete candidate ZIP; source and older Desktop files retained."
+  },
+  "freshFixture": {
+    "status": "PASS_FRESH_MAC_FIXTURE_RETURN_IDENTITY_NATIVE_PHASES_AND_EXPORT",
+    "actualPlatform": "darwin-arm64",
+    "windows": "NOT_RUN",
+    "safeReturnValidation": {
+      "status": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+      "archive": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c9-fresh-v1/RA2-HD-WINHD-20261008-D38F136-C9-69c132d-Windows-x64/WINHD-20261008-D38F136-C9-RETURN-2026-10-10T07-28-58-401Z.zip",
+      "bytes": 55311972,
+      "sha256": "606f9c304317debe8646720d99aa267c8c05b5406dcbd0a5e89fc3146d0ca31b",
+      "files": 14,
+      "runs": 1,
+      "diagnosticId": "WINHD-20261008-D38F136-C9",
+      "diagnosticCommit": "69c132d385771dabd385635aa036c51b27014797",
+      "manifestSha256": "4b3914eaec2e053cd287c1d091e78803b3ccec7ca700cbf267013e3bf081e25e",
+      "extractedDirectory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/returns/c9-fresh-mac-fixture-v1",
+      "launcherPolicy": "Inspected as data only; no returned scripts executed.",
+      "launchers": [
+        {
+          "file": "Export-Reports.cmd",
+          "status": "IDENTICAL",
+          "sha256": "25e23098719b40880c953b1ca32ce71489741e5840aae605e196fd858c64b0fc"
+        },
+        {
+          "file": "Launch-Diagnostics.cmd",
+          "status": "IDENTICAL",
+          "sha256": "601e35dacf47038acef5735438a74eb3d13b23b273e18ddc8cef5d63cf765f4a"
+        },
+        {
+          "file": "Run-Control.cmd",
+          "status": "IDENTICAL",
+          "sha256": "69705b9577c1a5f9cceed33612b407d9110317d9a9eab76ec570507da20255db"
+        },
+        {
+          "file": "Verify-Kit.cmd",
+          "status": "IDENTICAL",
+          "sha256": "812399b452707c4a00757b168629eaedd761f5ec57d4584cd43dd3806d5d9722"
+        }
+      ]
+    },
+    "verification": {
+      "schemaVersion": 1,
+      "diagnosticId": "WINHD-20261008-D38F136-C9",
+      "manifestSha256": "4b3914eaec2e053cd287c1d091e78803b3ccec7ca700cbf267013e3bf081e25e",
+      "checked": 8143,
+      "failures": [],
+      "status": "PASS",
+      "verifiedAt": "2026-10-10T07:28:58.254Z"
+    },
+    "nativeReport": ".artifacts/windows-hd-diagnostic/c9-native-fresh-v1/report.json",
+    "nativePhaseCount": 4,
+    "errors": [],
+    "boundary": "Actual archive-extracted app/resources and official Mac Electron Node export CLI; no Windows execution claim."
+  },
+  "macExportHostWarnings": {
+    "status": "PASS_CLI_EXIT_ZERO_WITH_RETAINED_HOST_WARNINGS",
+    "platform": "darwin",
+    "windows": "NOT_RUN",
+    "invocations": [
+      "diagnostic-export.mjs --verify",
+      "diagnostic-export.mjs"
+    ],
+    "warningCount": 2,
+    "message": "electron/shell/common/mac/codesign_util.cc:79 task_name_for_pid: (os/kern) failure (5)",
+    "boundary": "Sandboxed Mac Electron Node CLI host stderr; both exited zero. Kit verification, export and safe return fixture passed; native game errors are separately empty."
+  },
+  "sourceCompatibility": {
+    "status": "PASS_FINAL_SOURCE_READ_ONLY_MAIN_APPLY_CHECK",
+    "finalHead": "69c132d385771dabd385635aa036c51b27014797",
+    "patchSha256": "57a06c69a77737572db804afa37cbb9af7857cd26683e491bf74d21ff7207844",
+    "renderingPathCount": 14,
+    "main": {
+      "folder": "/Users/Aone/RA2remaster/ra2-hd",
+      "head": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+      "status": ""
+    },
+    "m2_3": {
+      "folder": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate",
+      "head": "94b2e8508b7ffb4db1adf5b05269c541311f6a32",
+      "status": ""
+    },
+    "applied": false,
+    "boundary": "Main clean; peer is independently advancing and preserved. No merge/push/release."
+  },
+  "nextWindowsCheck": {
+    "scene": "stress",
+    "players": 8,
+    "AI": 7,
+    "density": "4x",
+    "capture": "Normal",
+    "manual": "Continue the same match about two minutes, then press F8 once while scrolling/playing for 15 seconds in the slow condition.",
+    "F9": "NOT_REQUESTED",
+    "baseline": "Reuse retained C8 automatic and pre-profile F8 data; manual scene differences must be disclosed.",
+    "feedback": "Sustained manual smoothness, loading wait and edge/occlusion/shadow/color changes."
+  },
+  "gates": {
+    "localSourceCommit": "COMMITTED",
+    "macNative": "PASS_SCOPED",
+    "windowsC9Performance": "PENDING",
+    "windowsC9VisualAcceptance": "PENDING",
+    "overallUserAcceptance": "OPEN",
+    "mainIntegration": "NOT_PERFORMED",
+    "remotePush": "NOT_PERFORMED",
+    "release": "NOT_PERFORMED"
+  },
+  "conversation": "Continue the same execution conversation for this candidate and Windows acceptance."
+}

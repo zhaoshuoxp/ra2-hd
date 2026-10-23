@@ -1,0 +1,98 @@
+{
+  "status": "VISUAL_REJECTED_PAINT_AND_CURB_GEOMETRY_REPAIR_IN_PROGRESS",
+  "runtimeSourceCommit": "40007cb11e06db01573a804f15d173e24a262240",
+  "candidate": {
+    "schemaVersion": 1,
+    "revision": "desert-m2-4-road-network-contacts-r1-v3",
+    "sha256": "bac5cbd39c5da4b7d9e1564e9c37b85a8d69e76002bc0d7103395cc75c512f86"
+  },
+  "baseline": {
+    "schemaVersion": 1,
+    "revision": "desert-m2-4-hybrid-roads-batch78-v4",
+    "sha256": "a4766095d804f3e1b5dce13b1d644d27891ed3e34e8b67aa78ca47b1e0465245"
+  },
+  "changedCompleteGroups": 2,
+  "changedAsphaltMembers": 16,
+  "exactStraightBodies": 8,
+  "exactOtherGroups": 19,
+  "exactOtherPayloads": 38,
+  "nativePlacementsPerDensity": {
+    "pavedRoads": 905,
+    "pavedRoadSlopes": 96
+  },
+  "validation": {
+    "loaderTests": 14,
+    "loaderAssertions": 936,
+    "typecheck": "PASS",
+    "isolatedBuild": "PASS",
+    "signedMacHost": "PASS",
+    "native": "PASS_MATCHED_NATIVE_2X_4X_ORIGINAL_AND_CROSS_THEATER_RELEASE",
+    "staticReview": "PASS_SOURCE_AND_ACTUAL_DESKTOP_46_EMBEDDED_IMAGES",
+    "interactiveBrowser": "NOT_RUN_PRIOR_LOCAL_PROTOCOL_DENIAL_RESPECTED"
+  },
+  "evidence": [
+    {
+      "file": ".artifacts/m2-4/desert-road-network-r1-20261019/feedback.json",
+      "sha256": "ec003972c64d7feb91fe265515d5aaf4d13ca0e5c82fd980e4f9895eee8d302f"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-network-r1-20261019/gutter-difference-audit.json",
+      "sha256": "99e4b60504ce0b982eed6bfa5aab40f334700694d15c79714a74bf8fedb72441"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-network-r1-20261019/internal-attempts-v1.json",
+      "sha256": "4250b99d6ea007a1e45e899bef13a1d8edeb8146d0f812f9809003fcaf43bd7a"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-network-r1-20261019/export-and-preservation-v3.json",
+      "sha256": "eb2ed6b13d765827fecaffe26350dcf973805b0d60333dff4f60bbc481031a1c"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-network-r1-20261019/independent-static-audit-v3.json",
+      "sha256": "c1f6035ee01c68994d16c6639fd873df24c7ea1b25e9d9bb50fdef0ba02b6e80"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-network-r1-20261019/native-suite-v3.json",
+      "sha256": "c725a22ec4d197bbba6f7a90fa09e04583b5c2e6a5a85f8c193a58b0e8e10787"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-network-r1-20261019/review-v3/static-qa.json",
+      "sha256": "e61fb3eb64ec364570064bb40154061b224b85cd6c279cbaa244fe2e0e959202"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-network-r1-20261019/resource-handoff-v3.json",
+      "sha256": "e0551ee88cdf96c844321103b0ef1cfd2b9cfa3d7dd4016c8d0a090f963e26ea"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-network-r1-20261019/desktop-delivery-v3.json",
+      "sha256": "b82c51cdf28b7dfa12bd26d10d8e8c9e9a0981bca909416db425bc8ffdffd560"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-road-network-r1-20261019/desktop-static-qa-v3.json",
+      "sha256": "6f807d8cf2a829a43dbc19b7334b2a6b478bbd121cdd20e90de064b37cfdff58"
+    }
+  ],
+  "review": {
+    "file": "/Users/Aone/Desktop/M2.4-Review-Desert-Road-Network-R1-20261019/M2.4-Desert-Road-Network-R1-Embedded.html",
+    "sha256": "0baa2e4452523218a299a5fa3c14f0365a3d1fe7a18b5a2526e39c4a16bf6c68",
+    "bytes": 33474359,
+    "images": 46
+  },
+  "resourceHandoff": {
+    "file": ".artifacts/m2-4/desert-road-network-r1-20261019/resource-handoff-v3.json",
+    "sha256": "e0551ee88cdf96c844321103b0ef1cfd2b9cfa3d7dd4016c8d0a090f963e26ea",
+    "files": 1492
+  },
+  "prepared": "UNCHANGED_CORE_INDEX_DIRECT_RGBA_TERRAIN",
+  "coverage": {
+    "newSourceGroups": 0,
+    "remainingDesertAuthoredGaps": 182,
+    "remainingNewUrbanAuthoredGaps": 358
+  },
+  "r5Bridge": "USER_ACCEPTED_UNCHANGED",
+  "visualAcceptance": "NEEDS_REVISION",
+  "windows": "NOT_RUN",
+  "perBatchMacPackageCreated": false,
+  "m24Complete": false,
+  "feedbackReceipt": ".artifacts/m2-4/desert-road-geometry-r2-20261019/feedback.json"
+}

@@ -1,0 +1,183 @@
+{
+  "schema": "m2-4-urban-props-checkpoint-v1",
+  "status": "USER_ACCEPTED_ALL_25_NEW_PROP_FAMILIES_MAC_PASS",
+  "batch": 47,
+  "theater": "URBAN",
+  "sourceCommit": "7800618f982d79c79fa2562ea2d9b69605bc1259",
+  "runtime": {
+    "status": "STAGED_INTERNAL_MAC_VALIDATION_HOST",
+    "app": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/active-mac-validation-host-v1/Red Alert 2 HD M2.4 Validation Host.app",
+    "resources": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.local",
+    "build": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/build-urban-props-batch47-v1",
+    "runtimeSourceHead": "7800618f982d79c79fa2562ea2d9b69605bc1259",
+    "target": "darwin-arm64",
+    "profile": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/active-mac-validation-host-v1/Review-Profile",
+    "resourceStorage": "Existing isolated task resources; no per-batch game or resource copy",
+    "preparedRegistration": {
+      "type": "prepared-hd-registered",
+      "members": 453,
+      "pages": 1205,
+      "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+    },
+    "policy": "Internal reusable packaged Mac host, not an independent delivery. Each native case pins source, selectors and metadata. Subsequent batch delivery is embedded HTML; final milestone packaging remains separate."
+  },
+  "newArtFamilies": 25,
+  "newBodyStates": 45,
+  "densityFrames": 90,
+  "selectedEnvironment": {
+    "schemaVersion": 1,
+    "revision": "urban-environment-m2-4-props-v1",
+    "sha256": "fd6403a4556d33b5bb3b62bc58ecc86f8880a4591f9399d85a05c11f915e197c"
+  },
+  "selectedTerrain": {
+    "schemaVersion": 1,
+    "revision": "urban-m2-4-structures-r14e",
+    "sha256": "d2cfbfc964d7ff4173468df90be55c3e5f589afe00e6e440acfc4fabe4399749"
+  },
+  "priorAcceptedFamiliesPreserved": 110,
+  "payloadFiles": 1125,
+  "technical": {
+    "static": "PASS_25_FAMILIES_90_DENSITY_FRAMES_52_PAGES",
+    "loading": "PASS_50_TESTS_800_ASSERTIONS_FALLBACK_AND_DISPOSAL",
+    "typecheck": "PASS_ENTRY",
+    "isolatedBuild": "PASS",
+    "macNative": "PASS_ALL_25_FAMILIES_AT_2X_AND_4X_ON_THREE_ORIGINAL_MAPS",
+    "nativeActions": "Six representative prop geometries: LT_SGN01, TRFF02, POLE01, HDSTN01, LT_EUR01 and SIGN01. Original legal duplicate fixtures, native stock warheads and removal; no source or rule changes.",
+    "spawner": "All 11 original body phases and another unchanged 333-tick cooldown spawn at both densities; TIBTRE02/03 sources, palettes and all 22 frames are exact duplicates.",
+    "release": "PASS_OLD_ENVIRONMENT_ZERO_AND_ORIGINAL_REENTRY_ZERO",
+    "worldPeaksBytes": {
+      "2": 233796720,
+      "4": 895903824
+    },
+    "worldLimitsBytes": {
+      "2": 536870912,
+      "4": 1342177280
+    },
+    "preparedPeakBytes": 108580412,
+    "preparedLimitBytes": 134217728,
+    "glErrors": 0,
+    "windows": "NOT_RUN"
+  },
+  "newVisualAcceptance": "ACCEPTED_ALL_25_PROP_FAMILIES",
+  "review": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-review-batch47-v1/M2.4-Urban-Batch47-Embedded.html",
+    "sha256": "674d1fcda6a4fbd77fd36860cd397f4cd0f23f643ab259e584d969b23d720432",
+    "bytes": 244616592,
+    "desktop": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch47-20261015/M2.4-Urban-Batch47-Embedded.html",
+    "images": 127,
+    "matchedScenes": 11,
+    "nativeStateRows": 22,
+    "nativePixelsUnscaled": true,
+    "externalImages": 0,
+    "javascriptRequired": false,
+    "desktopQa": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-embedded-desktop-qa-v1/report.json",
+      "sha256": "02cc9a726707021094a2185b6be99ce0a9a08acbd1e5ad36aeb0dba5e96d78b6",
+      "bytes": 2794
+    },
+    "gameOrResourceCopy": false
+  },
+  "production": {
+    "tool": "Builtin imagegen",
+    "prompts": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-authoring-batch47-v1/imagegen-jobs-v1.json",
+      "sha256": "d9b30b47c021f966bf1a58f690933f9cfc0a0a87a4f63b191097bd1e4e3c8029",
+      "bytes": 10344
+    },
+    "selectedPatch": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.local/environment-packs/urban-props-m2-4-r2/manifest.json",
+      "sha256": "5760c4a78c333b22970e68ba3449145f786d95b271a779b727cfc167f3f9a030",
+      "bytes": 6475
+    },
+    "materials": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-authoring-batch47-v1/material-profile-v3.json",
+      "sha256": "1c4c7a0d43088605c17535c8056aa8f5c401acf2008ad945af26f46fa464283e",
+      "bytes": 12148
+    },
+    "stationaryRegionProof": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-authoring-batch47-v1/stationary-machinery-qa-v1.json",
+      "sha256": "7eb1a1c85219e28699a6d4dd76d063d3a6057fa989eeb89677b724d469b767d7",
+      "bytes": 1176
+    },
+    "sourceEquivalence": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-authoring-batch47-v1/mineral-source-equivalence.json",
+      "sha256": "120b874f3e83d9895fa5cb1428cfcad220071a200491828963800a722ae42149",
+      "bytes": 524
+    }
+  },
+  "evidence": {
+    "resourceHandoff": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-batch47-v1/resource-handoff.json",
+      "sha256": "469f538a83655fe63aa8d76405e3e088d153fda21ea511e56d536e7ebd9f069d",
+      "bytes": 341084
+    },
+    "coverageDelta": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-batch47-v1/coverage-delta.json",
+      "sha256": "1f58bd26a8d22de58daf2eccf5d6d2cded16615eb321d35505d16138de401af2",
+      "bytes": 204210
+    },
+    "failedAttempts": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-batch47-v1/failed-attempts-v2.json",
+      "sha256": "feb82e369790ca4933d86c188f1c20749b60518213d28a9ccd378c98be8a8c27",
+      "bytes": 3237
+    },
+    "originalReports": [
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-native-yr-xpotomac-original-v1/report.json",
+        "sha256": "5b01f7acfc9f837dbd832793ff2263af18a35a218bdfab8ea461f40caec1875f",
+        "bytes": 2477
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-native-yr-xpowdrkeg-original-v1/report.json",
+        "sha256": "8bf19aa04b054766fc30dcdae5c38536af49ab28f3a2a88f56d913897340db6d",
+        "bytes": 2338
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-native-yr-xinvasion-original-v2/report.json",
+        "sha256": "2994c50c97226e29af38ed8d6fb42bc0acf068354538f330dde468cbf6503d83",
+        "bytes": 2037
+      }
+    ],
+    "matchedOutputRecapture": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-props-native-yr-xinvasion-4x-v2/report.json",
+      "sha256": "103621bac2d219fd35bdd7460f8b3bdfaea04b05e28f83874a97b728fcbc11f0",
+      "bytes": 4620197
+    },
+    "reusedCrossTheater": {
+      "file": ".artifacts/m2-4/urban-overlay-native-yr-xbarrel-4x-v2/report.json",
+      "sha256": "5ce5c237c45dff63de12c755617aecd78d192679e2449d2f63ba7c27bc4882a1",
+      "bytes": 14416304
+    },
+    "acceptedPriorArt": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-tree-batch46-v1/user-acceptance.json",
+      "sha256": "63af5c173c44ebb6d1fd48c8f5b05a0b36f695b1a9f6247b80a7d1399ce5456e",
+      "bytes": 1092
+    }
+  },
+  "coverage": {
+    "affectedMapEntries": 25,
+    "affectedMapHashes": 21,
+    "totalUrbanEntries": 32,
+    "uniqueUrbanMapHashes": 26,
+    "remainingUrbanGroups": 207,
+    "remainingByKind": {
+      "building": 197,
+      "infantry": 4,
+      "vehicle": 6
+    },
+    "newUrbanAndDesert": "Production and final scope closure remain pending"
+  },
+  "next": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-building-preflight-batch48-v1/preflight.json",
+    "sha256": "b420f101e87892fa183e2f68a6e1d7a5b165c197a4b6b4bb54f241ba267ba21b",
+    "bytes": 1258507
+  },
+  "main": "UNTOUCHED_748d0998aaf663acda8807c158155bf0a5bb157b",
+  "integration": "NOT_STARTED",
+  "remotePush": "NOT_RUN",
+  "m24Complete": false,
+  "userAcceptance": {
+    "file": ".artifacts/m2-4/urban-props-batch47-v1/user-acceptance.json",
+    "sha256": "fb9f8cb16c834da42bdfcb32d3b31e32cae27d91638c6ca84f59f6cd50febbf9"
+  }
+}

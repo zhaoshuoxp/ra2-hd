@@ -1,0 +1,305 @@
+{
+  "status": "TECHNICAL_VALIDATION_AND_DESKTOP_DELIVERY_COMPLETE",
+  "userLoadingReview": "PENDING",
+  "branch": "fix/skirmish-loading-isolated",
+  "integration": "NOT_MERGED",
+  "runtimeCommit": "69d8e3c2b3c8bb9f37def39b05c9cafebad89e3e",
+  "desktop": {
+    "status": "PASS_NONOVERWRITING_DESKTOP_COPY",
+    "path": "/Users/Aone/Desktop/RA2-HD-Loading-Optimized-69d8e3c-macOS-arm64.zip",
+    "bytes": 3291828647,
+    "sha256": "ca84ba689b721e66d692043ebdd979fb35028a45b91f216eafff900be901cd62"
+  },
+  "nativeArchiveProof": "PASS_COPIED_DESKTOP_ZIP_LAUNCHER_AND_ACTUAL_HD_BOTH_EDITIONS",
+  "focusedTests": {
+    "passed": 46,
+    "failed": 0,
+    "assertions": 11030
+  },
+  "mainBaseline": "0370e9b41d4736a0b80bbe35d2552b3f3a39a4a4",
+  "laterTaskCChanges": "EXCLUDED",
+  "timing": [
+    {
+      "case": "native-yr-4x-r2/first",
+      "edition": "yr",
+      "density": 4,
+      "worldSceneRegisteredMs": 4546.5,
+      "retailMs": 2218.304999999702,
+      "hdPreparationMs": 835.9250000007451,
+      "hdRequests": 41,
+      "pngRequests": 0,
+      "preparedRequests": 25,
+      "cache": {
+        "bytes": 82136564,
+        "peakBytes": 82136564,
+        "pendingBytes": 0,
+        "hits": 0,
+        "misses": 25,
+        "shared": 0,
+        "evictions": 0,
+        "uncached": 2
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 0,
+        "total": 141938228,
+        "limit": 1342177280
+      }
+    },
+    {
+      "case": "native-yr-4x-r2/second",
+      "edition": "yr",
+      "density": 4,
+      "worldSceneRegisteredMs": 4729.140000000596,
+      "retailMs": 3188.7050000000745,
+      "hdPreparationMs": 380.69999999925494,
+      "hdRequests": 18,
+      "pngRequests": 0,
+      "preparedRequests": 2,
+      "cache": {
+        "bytes": 82136564,
+        "peakBytes": 82136564,
+        "pendingBytes": 0,
+        "hits": 23,
+        "misses": 27,
+        "shared": 0,
+        "evictions": 0,
+        "uncached": 4
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 0,
+        "total": 141938228,
+        "limit": 1342177280
+      }
+    },
+    {
+      "case": "native-yr-2x-r2/first",
+      "edition": "yr",
+      "density": 2,
+      "worldSceneRegisteredMs": 3755.214999999851,
+      "retailMs": 2170.4599999990314,
+      "hdPreparationMs": 288.60500000044703,
+      "hdRequests": 31,
+      "pngRequests": 0,
+      "preparedRequests": 15,
+      "cache": {
+        "bytes": 38392016,
+        "peakBytes": 38392016,
+        "pendingBytes": 0,
+        "hits": 0,
+        "misses": 15,
+        "shared": 0,
+        "evictions": 0,
+        "uncached": 0
+      },
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 0,
+        "total": 40235280,
+        "limit": 268435456
+      }
+    },
+    {
+      "case": "native-yr-2x-r2/second",
+      "edition": "yr",
+      "density": 2,
+      "worldSceneRegisteredMs": 4414.4550000000745,
+      "retailMs": 3130.405000001192,
+      "hdPreparationMs": 137.06000000052154,
+      "hdRequests": 16,
+      "pngRequests": 0,
+      "preparedRequests": 0,
+      "cache": {
+        "bytes": 38392016,
+        "peakBytes": 38392016,
+        "pendingBytes": 0,
+        "hits": 15,
+        "misses": 15,
+        "shared": 0,
+        "evictions": 0,
+        "uncached": 0
+      },
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 0,
+        "total": 40235280,
+        "limit": 268435456
+      }
+    },
+    {
+      "case": "native-original-r2/first",
+      "edition": "yr",
+      "density": 1,
+      "worldSceneRegisteredMs": 3662.4850000012666,
+      "retailMs": 2203.359999999404,
+      "hdPreparationMs": 78.07000000029802,
+      "hdRequests": 0,
+      "pngRequests": 0,
+      "preparedRequests": 0,
+      "cache": {
+        "bytes": 0,
+        "peakBytes": 0,
+        "pendingBytes": 0,
+        "hits": 0,
+        "misses": 0,
+        "shared": 0,
+        "evictions": 0,
+        "uncached": 0
+      },
+      "worldAllocation": {
+        "baseline": 7372864,
+        "eager": 0,
+        "demand": 0,
+        "total": 7372864,
+        "limit": 1342177280
+      }
+    },
+    {
+      "case": "native-original-r2/second",
+      "edition": "yr",
+      "density": 1,
+      "worldSceneRegisteredMs": 4284.5800000000745,
+      "retailMs": 3130.7249999996275,
+      "hdPreparationMs": 53.25,
+      "hdRequests": 0,
+      "pngRequests": 0,
+      "preparedRequests": 0,
+      "cache": {
+        "bytes": 0,
+        "peakBytes": 0,
+        "pendingBytes": 0,
+        "hits": 0,
+        "misses": 0,
+        "shared": 0,
+        "evictions": 0,
+        "uncached": 0
+      },
+      "worldAllocation": {
+        "baseline": 7372864,
+        "eager": 0,
+        "demand": 0,
+        "total": 7372864,
+        "limit": 1342177280
+      }
+    },
+    {
+      "case": "native-ra2-4x-r2/first",
+      "edition": "ra2",
+      "density": 4,
+      "worldSceneRegisteredMs": 3891.320000000298,
+      "retailMs": 1680.5,
+      "hdPreparationMs": 852.929999999702,
+      "hdRequests": 41,
+      "pngRequests": 0,
+      "preparedRequests": 25,
+      "cache": {
+        "bytes": 82136564,
+        "peakBytes": 82136564,
+        "pendingBytes": 0,
+        "hits": 0,
+        "misses": 25,
+        "shared": 0,
+        "evictions": 0,
+        "uncached": 2
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 0,
+        "total": 141938228,
+        "limit": 1342177280
+      }
+    },
+    {
+      "case": "native-ra2-4x-r2/second",
+      "edition": "ra2",
+      "density": 4,
+      "worldSceneRegisteredMs": 3784.75,
+      "retailMs": 2283.6850000005215,
+      "hdPreparationMs": 393.0800000000745,
+      "hdRequests": 18,
+      "pngRequests": 0,
+      "preparedRequests": 2,
+      "cache": {
+        "bytes": 82136564,
+        "peakBytes": 82136564,
+        "pendingBytes": 0,
+        "hits": 23,
+        "misses": 27,
+        "shared": 0,
+        "evictions": 0,
+        "uncached": 4
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 0,
+        "total": 141938228,
+        "limit": 1342177280
+      }
+    },
+    {
+      "case": "native-ra2-2x-r2/first",
+      "edition": "ra2",
+      "density": 2,
+      "worldSceneRegisteredMs": 3454.5800000000745,
+      "retailMs": 1703.890000000596,
+      "hdPreparationMs": 412,
+      "hdRequests": 31,
+      "pngRequests": 0,
+      "preparedRequests": 15,
+      "cache": {
+        "bytes": 38392016,
+        "peakBytes": 38392016,
+        "pendingBytes": 0,
+        "hits": 0,
+        "misses": 15,
+        "shared": 0,
+        "evictions": 0,
+        "uncached": 0
+      },
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 0,
+        "total": 40235280,
+        "limit": 268435456
+      }
+    },
+    {
+      "case": "native-ra2-2x-r2/second",
+      "edition": "ra2",
+      "density": 2,
+      "worldSceneRegisteredMs": 3692.8450000006706,
+      "retailMs": 2371.7949999999255,
+      "hdPreparationMs": 131.8600000012666,
+      "hdRequests": 16,
+      "pngRequests": 0,
+      "preparedRequests": 0,
+      "cache": {
+        "bytes": 38392016,
+        "peakBytes": 38392016,
+        "pendingBytes": 0,
+        "hits": 15,
+        "misses": 15,
+        "shared": 0,
+        "evictions": 0,
+        "uncached": 0
+      },
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 0,
+        "total": 40235280,
+        "limit": 268435456
+      }
+    }
+  ],
+  "mainMutation": "NONE",
+  "push": "NOT_PERFORMED"
+}

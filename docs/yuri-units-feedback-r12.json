@@ -1,0 +1,504 @@
+{
+  "schema": "yuri-feedback-review-v1",
+  "revision": "R12",
+  "status": "PASS_SELECTED_NATIVE_YR_DEPLOY_DESKTOP_DELIVERED_USER_ACCEPTED",
+  "runtimeSourceHead": "484e8850cc8b8bf4903660d769e241fef42e6bb2",
+  "runtimeSourceDirty": "",
+  "packageReceipt": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/package-receipt.json",
+  "app": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12/RA2 HD Yuri Units D R12.app",
+  "resources": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12/RA2-HD-Editions-Resources",
+  "resourceFiles": 2754,
+  "resourcePreservation": "ALL_2754_SHA256_MATCH_R11",
+  "rootCause": "One-shot deploy was automatically cancelled before primary weapon cooldown completed.",
+  "gameplayChange": "Start auto-undeploy countdown after one-shot AreaFire emission; preserve weapon cooldown, damage, art and post-shot delay.",
+  "baseline": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/baseline-summary-v1.json",
+  "nativeCases": [
+    {
+      "case": "runtime-4-v2",
+      "sourceReport": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/runtime-4-v2/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "app": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12/RA2 HD Yuri Units D R12.app",
+      "resources": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12/RA2-HD-Editions-Resources",
+      "errors": [],
+      "consoleErrors": [],
+      "graphics": 4,
+      "abilities": [
+        {
+          "name": "YURI",
+          "phase": "idle",
+          "primaryCooldownAtDeploy": 0,
+          "activeDensity": 4,
+          "pulseShots": [
+            {
+              "tick": 126,
+              "name": "PsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": null,
+          "cancel": null,
+          "controlRecovery": null
+        },
+        {
+          "name": "YURI",
+          "phase": "after-control",
+          "primaryCooldownAtDeploy": 198,
+          "activeDensity": 4,
+          "pulseShots": [
+            {
+              "tick": 707,
+              "name": "PsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": null,
+          "cancel": null,
+          "controlRecovery": null
+        },
+        {
+          "name": "YURIPR",
+          "phase": "idle",
+          "primaryCooldownAtDeploy": 0,
+          "activeDensity": 4,
+          "pulseShots": [
+            {
+              "tick": 1144,
+              "name": "SuperPsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": null,
+          "cancel": null,
+          "controlRecovery": null
+        },
+        {
+          "name": "YURIPR",
+          "phase": "after-control",
+          "primaryCooldownAtDeploy": 199,
+          "activeDensity": 4,
+          "pulseShots": [
+            {
+              "tick": 1692,
+              "name": "SuperPsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": {
+            "actor": {
+              "name": "YURIPR",
+              "id": 1329,
+              "tick": 2297,
+              "spawned": true,
+              "destroyed": false,
+              "tile": [
+                45,
+                86
+              ],
+              "moving": false,
+              "firing": false,
+              "health": 100,
+              "frame": 3,
+              "shpHd": true,
+              "vxlHd": false,
+              "deployed": false,
+              "warped": false,
+              "zone": 0,
+              "elevation": 0
+            },
+            "target": {
+              "name": "E2",
+              "id": 1334,
+              "tick": 2297,
+              "spawned": false,
+              "destroyed": true,
+              "tile": [
+                48,
+                86
+              ],
+              "moving": false,
+              "firing": false,
+              "health": 0,
+              "shpHd": false,
+              "vxlHd": false,
+              "warped": false,
+              "zone": 0,
+              "elevation": 0
+            },
+            "shots": 2
+          },
+          "cancel": {
+            "deployed": false,
+            "shots": 2
+          },
+          "controlRecovery": {
+            "newTargetControlled": true,
+            "oldTargetReleased": true
+          }
+        }
+      ]
+    },
+    {
+      "case": "runtime-2-v2",
+      "sourceReport": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/runtime-2-v2/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "app": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12/RA2 HD Yuri Units D R12.app",
+      "resources": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12/RA2-HD-Editions-Resources",
+      "errors": [],
+      "consoleErrors": [],
+      "graphics": 2,
+      "abilities": [
+        {
+          "name": "YURI",
+          "phase": "idle",
+          "primaryCooldownAtDeploy": 0,
+          "activeDensity": 2,
+          "pulseShots": [
+            {
+              "tick": 115,
+              "name": "PsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": null,
+          "cancel": null,
+          "controlRecovery": null
+        },
+        {
+          "name": "YURI",
+          "phase": "after-control",
+          "primaryCooldownAtDeploy": 198,
+          "activeDensity": 2,
+          "pulseShots": [
+            {
+              "tick": 722,
+              "name": "PsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": null,
+          "cancel": null,
+          "controlRecovery": null
+        },
+        {
+          "name": "YURIPR",
+          "phase": "idle",
+          "primaryCooldownAtDeploy": 0,
+          "activeDensity": 2,
+          "pulseShots": [
+            {
+              "tick": 1134,
+              "name": "SuperPsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": null,
+          "cancel": null,
+          "controlRecovery": null
+        },
+        {
+          "name": "YURIPR",
+          "phase": "after-control",
+          "primaryCooldownAtDeploy": 199,
+          "activeDensity": 2,
+          "pulseShots": [
+            {
+              "tick": 1682,
+              "name": "SuperPsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": {
+            "actor": {
+              "name": "YURIPR",
+              "id": 1329,
+              "tick": 2285,
+              "spawned": true,
+              "destroyed": false,
+              "tile": [
+                45,
+                86
+              ],
+              "moving": false,
+              "firing": false,
+              "health": 100,
+              "frame": 3,
+              "shpHd": true,
+              "vxlHd": false,
+              "deployed": false,
+              "warped": false,
+              "zone": 0,
+              "elevation": 0
+            },
+            "target": {
+              "name": "E2",
+              "id": 1334,
+              "tick": 2285,
+              "spawned": false,
+              "destroyed": true,
+              "tile": [
+                48,
+                86
+              ],
+              "moving": false,
+              "firing": false,
+              "health": 0,
+              "shpHd": false,
+              "vxlHd": false,
+              "warped": false,
+              "zone": 0,
+              "elevation": 0
+            },
+            "shots": 2
+          },
+          "cancel": {
+            "deployed": false,
+            "shots": 2
+          },
+          "controlRecovery": {
+            "newTargetControlled": true,
+            "oldTargetReleased": true
+          }
+        }
+      ]
+    },
+    {
+      "case": "runtime-original-v2",
+      "sourceReport": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/runtime-original-v2/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "app": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12/RA2 HD Yuri Units D R12.app",
+      "resources": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12/RA2-HD-Editions-Resources",
+      "errors": [],
+      "consoleErrors": [],
+      "graphics": "Original",
+      "abilities": [
+        {
+          "name": "YURI",
+          "phase": "idle",
+          "primaryCooldownAtDeploy": 0,
+          "activeDensity": 1,
+          "pulseShots": [
+            {
+              "tick": 81,
+              "name": "PsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": null,
+          "cancel": null,
+          "controlRecovery": null
+        },
+        {
+          "name": "YURI",
+          "phase": "after-control",
+          "primaryCooldownAtDeploy": 199,
+          "activeDensity": 1,
+          "pulseShots": [
+            {
+              "tick": 623,
+              "name": "PsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": null,
+          "cancel": null,
+          "controlRecovery": null
+        },
+        {
+          "name": "YURIPR",
+          "phase": "idle",
+          "primaryCooldownAtDeploy": 0,
+          "activeDensity": 1,
+          "pulseShots": [
+            {
+              "tick": 982,
+              "name": "SuperPsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": null,
+          "cancel": null,
+          "controlRecovery": null
+        },
+        {
+          "name": "YURIPR",
+          "phase": "after-control",
+          "primaryCooldownAtDeploy": 199,
+          "activeDensity": 1,
+          "pulseShots": [
+            {
+              "tick": 1493,
+              "name": "SuperPsiWave"
+            }
+          ],
+          "casterHealth": 100,
+          "targetDestroyed": true,
+          "autoUndeployed": true,
+          "repeat": {
+            "actor": {
+              "name": "YURIPR",
+              "id": 1329,
+              "tick": 2082,
+              "spawned": true,
+              "destroyed": false,
+              "tile": [
+                45,
+                86
+              ],
+              "moving": false,
+              "firing": false,
+              "health": 100,
+              "frame": 0,
+              "shpHd": false,
+              "vxlHd": false,
+              "deployed": false,
+              "warped": false,
+              "zone": 0,
+              "elevation": 0
+            },
+            "target": {
+              "name": "E2",
+              "id": 1334,
+              "tick": 2082,
+              "spawned": false,
+              "destroyed": true,
+              "tile": [
+                48,
+                86
+              ],
+              "moving": false,
+              "firing": false,
+              "health": 0,
+              "shpHd": false,
+              "vxlHd": false,
+              "warped": false,
+              "zone": 0,
+              "elevation": 0
+            },
+            "shots": 2
+          },
+          "cancel": {
+            "deployed": false,
+            "shots": 2
+          },
+          "controlRecovery": {
+            "newTargetControlled": true,
+            "oldTargetReleased": true
+          }
+        }
+      ]
+    },
+    {
+      "case": "runtime-caos-regression-v1",
+      "sourceReport": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/runtime-caos-regression-v1/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "app": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12/RA2 HD Yuri Units D R12.app",
+      "resources": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12/RA2-HD-Editions-Resources",
+      "errors": [],
+      "consoleErrors": [],
+      "gasCleanup": true
+    }
+  ],
+  "tests": {
+    "passed": 25,
+    "expectations": 186,
+    "entryTypecheck": "PASS"
+  },
+  "historicalDiagnostics": {
+    "baseline-r11-v3": "Completed diagnostic with after-control deploy failure; superseded status is in baseline-summary-v1.json.",
+    "runtime-4x-v1": "Retained FAIL: clone auto-undeploy sampled too early after its delayed shot. Harness wait corrected; gameplay implementation unchanged."
+  },
+  "review": {
+    "status": "BUILT_EMBEDDED_NATIVE_MEDIA",
+    "html": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12/Review/Yuri-R12-Ability-Review.html",
+    "sha256": "c541f18e72f6f85da462469761e389e06da52b142261d2bae58881a2b44b1278",
+    "images": [],
+    "imageCount": 0,
+    "embeddedVideos": 5,
+    "mediaManifest": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/embedded-media-v1/manifest.json",
+    "nativeReports": [
+      "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/baseline-r11-v3/report.json",
+      "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/runtime-4-v2/report.json",
+      "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/runtime-original-v2/report.json",
+      "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/runtime-2-v2/report.json",
+      "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/runtime-4-v2/report.json"
+    ],
+    "humanAcceptance": "PENDING",
+    "uiValidation": "UNVERIFIED_PRIOR_BROWSER_URL_POLICY_BLOCK"
+  },
+  "reviewVerification": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/review-verification-v1/report.json",
+  "archive": {
+    "status": "PASS_ARCHIVE_BYTES_LINKS_MODES_NO_PROFILES",
+    "archive": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12-macOS-arm64.zip",
+    "sha256": "e12c28d37348db5bede4c3d739b7249d2c03fe1c4a2625dbb13820c8923c98e0",
+    "bytes": 1855798492,
+    "checkedFiles": 3220,
+    "resourceFiles": 2754,
+    "runtimeSourceHead": "484e8850cc8b8bf4903660d769e241fef42e6bb2",
+    "extendedAttributes": false,
+    "resourceForks": false
+  },
+  "delivery": {
+    "status": "PASS_DESKTOP_ZIP_SHA256_MATCH",
+    "desktop": "/Users/Aone/Desktop/RA2-HD-Yuri-Units-D-R12-macOS-arm64.zip",
+    "source": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/package-v1/RA2-HD-Yuri-Units-D-R12-macOS-arm64.zip",
+    "bytes": 1855798492,
+    "sha256": "e12c28d37348db5bede4c3d739b7249d2c03fe1c4a2625dbb13820c8923c98e0",
+    "nonOverwriting": true,
+    "runtimeFromDesktopArchive": "PASS_SELECTED_NATIVE_CASES",
+    "extractedStrictSignature": "PASS",
+    "runtimeReport": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/runtime-desktop-archive-v1/report.json"
+  },
+  "extractedInventory": {
+    "status": "PASS_EXTRACTED_PINNED_BYTES_AND_LINKS",
+    "checkedEntries": 3216,
+    "resourceFiles": 2754,
+    "root": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/desktop-extracted-v1/RA2-HD-Yuri-Units-D-R12",
+    "desktopArchive": "/Users/Aone/Desktop/RA2-HD-Yuri-Units-D-R12-macOS-arm64.zip"
+  },
+  "runtimeArchiveValidation": {
+    "status": "PASS_SELECTED_NATIVE_CASES",
+    "source": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/runtime-desktop-archive-v1/report.json",
+    "app": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/desktop-extracted-v1/RA2-HD-Yuri-Units-D-R12/RA2 HD Yuri Units D R12.app",
+    "resources": "/Users/Aone/RA2remaster/ra2-hd-yuri-units/.artifacts/yuri-units/feedback-r12/desktop-extracted-v1/RA2-HD-Yuri-Units-D-R12/RA2-HD-Editions-Resources",
+    "graphics": 4,
+    "errors": [],
+    "consoleErrors": [],
+    "activeDensities": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "disclosure": "Controlled legal fixtures followed by native orders; no rules or camera changes. Not a natural-match production claim."
+  },
+  "skillAcceptance": "USER_ACCEPTED",
+  "mainIntegration": "NOT_DONE",
+  "remotePush": "NOT_DONE",
+  "windows": "NOT_RUN",
+  "historicalRa2CasterDestruction": "OUTSIDE_THIS_YR_CORRECTION",
+  "handoff": "docs/yuri-units-main-merge-handoff.md",
+  "acceptanceDate": "2026-10-04",
+  "acceptanceReceipt": "docs/yuri-units-final-acceptance-r12.json"
+}

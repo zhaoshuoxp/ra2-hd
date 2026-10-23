@@ -1,0 +1,128 @@
+{
+  "status": "USER_ACCEPTED_ART_INTEGRATED_INTO_LOCAL_MAIN_AND_DIRECT_RETIREMENT_COMPLETE",
+  "date": "2026-10-20",
+  "acceptedKeysThisTurn": [
+    "nabnkr-snow",
+    "nabnkr-temperate",
+    "naflak",
+    "naflak-snow",
+    "napowr",
+    "napowr-snow",
+    "naradr",
+    "naradr-snow",
+    "narefn",
+    "narefn-snow",
+    "yuri-naclon-snow",
+    "yuri-naclon-temperate",
+    "yuri-natbnk-snow",
+    "yuri-natbnk-temperate",
+    "yuri-yabrck-snow",
+    "yuri-yabrck-temperate",
+    "yuri-yaggun-snow",
+    "yuri-yaggun-temperate",
+    "yuri-yapsyt-snow",
+    "yuri-yapsyt-temperate"
+  ],
+  "acceptedRepaintRecords": 106,
+  "retainedBaselineRecords": 2,
+  "userRequestEnglish": "Acceptance passed. Update main, then directly delete unnecessary intermediates and review documents. Keep only the final accepted version; full historical resource sets are not needed. Future work will use the new main.",
+  "scope": "Integrate accepted buildup art and necessary source locally; verify main independently; directly retire completed buildup artifacts and worktree after dependency checks. Preserve active independent M2.4 work; no remote push or runtime/performance expansion.",
+  "resourceTransfer": {
+    "status": "PASS_ADD_IF_ABSENT_OR_IDENTICAL_FINAL_RESOURCE_TRANSFER",
+    "selectedFiles": 7200,
+    "addedFiles": 1437,
+    "identicalExistingFiles": 5763,
+    "addedBytes": 1658308713,
+    "replacedFiles": 0,
+    "source": "/Users/Aone/RA2remaster/ra2-hd-buildup-art-20261011/.local",
+    "destination": "/Users/Aone/RA2remaster/ra2-hd/.local",
+    "planSha256": "dddf79d827d540b1908558303fe7f7dabdf7b5b72463867213d020217e29ae38"
+  },
+  "selectedResourceFiles": 7200,
+  "selectedResourceBytes": 6338045206,
+  "focusedRegressions": "13 PASS / 451 assertions",
+  "entryTypecheck": "PASS",
+  "cleanup": {
+    "status": "DIRECT_RETIREMENT_COMPLETE",
+    "obsoleteReviewDocumentsRemoved": 94,
+    "obsoletePackFilesDeleted": 18479,
+    "retiredRoots": [
+      "/Users/Aone/RA2remaster/ra2-hd-buildup-art-20261011",
+      "/Users/Aone/RA2remaster/ra2-hd-buildup-stage-check-20261011-r4-v1",
+      "/Users/Aone/RA2remaster/ra2-hd-buildup-stage-check-20261011-r4-v2",
+      "/Users/Aone/RA2remaster/ra2-hd-full-buildup-stage-check-20261011-r20-v1"
+    ],
+    "alreadyAbsentDesktopRoots": [
+      "/Users/Aone/Desktop/RA2-HD-Buildup-Art-Acceptance-20261020-V51",
+      "/Users/Aone/Desktop/RA2-HD-Buildup-Art-Acceptance-20261020-V52"
+    ],
+    "plannedLogicalRetiredBytes": 966973522800,
+    "retiredRootsDuAllocatedBytes": 958233964544,
+    "temporaryValidationLogicalRetiredBytes": 7668024521,
+    "observedAvailableGainBytes": 884457017344,
+    "accounting": "Logical bytes, allocated du bytes and observed APFS available-space gain are separate measurements.",
+    "retention": "Canonical main, its selected final resources, the single final Desktop gallery, Git source history, compact receipts and independent active M2.4 dependencies. No full historical resource backup."
+  },
+  "mainBaseline": "748d0998aaf663acda8807c158155bf0a5bb157b",
+  "acceptedSourceIntegration": "195cdb4deaf39c62a8561bce235caa32f97723ec",
+  "copiedMacRuntimeSourceHead": "486c39f3635e14106eb7cd3c1f4639f5fdb4cfaa",
+  "runtimeSourceDirtyAtCapture": "",
+  "finalization": "Final follow-up commits change only validation fixtures and this acceptance/cleanup report.",
+  "remotePush": "NOT_REQUESTED_NOT_PERFORMED",
+  "selectedRecords": 108,
+  "pendingOrUnpaintedRecords": 0,
+  "completeFamilyDependencyFiles": 17,
+  "completeFamilyDependencyBytes": 17061189,
+  "selectedResourceGraphAfterCleanup": "PASS_IDENTICAL_FILES_HASHES_AND_AVAILABILITY",
+  "resolverAndFamilyBudgets": {
+    "status": "PASS",
+    "records": 108,
+    "densityChecks": 216,
+    "ra2Records": 70,
+    "yrRecords": 38,
+    "familyLimitMiB": 64,
+    "nayardFamilyLimitMiB": 128
+  },
+  "copiedMac": {
+    "status": "PASS_SIX_COPIED_MAIN_SCOPES_AND_ACCEPTED_TRANSITION_PARITY",
+    "scopes": 6,
+    "cases": 20,
+    "clips": 40,
+    "identicalCompleteGpuPairs": 19,
+    "acceptedGaaIrcTransition": "Unmarked accepted construction terminal activates the pre-existing idle pad/active layers; same difference bounds and final family/member hashes as the accepted V16 control. This is not a new integration change.",
+    "newUrbanBoundary": "Capture-only legal empty-TMP guard; no shipped code/source modification and no stock NewUrban compatibility claim."
+  },
+  "fullSuite": {
+    "status": "NON_GREEN_EXISTING_FAILURES_WITHOUT_NEW_FAILING_CASES_OR_ERROR_MODULES",
+    "baseline": {
+      "pass": 506,
+      "skip": 0,
+      "fail": 24,
+      "errors": 9
+    },
+    "final": {
+      "pass": 491,
+      "skip": 31,
+      "fail": 20,
+      "errors": 9
+    },
+    "historicalFixtureLimit": "31 optional historical-fixture checks skipped after retirement; full-suite coverage differs from the baseline.",
+    "details": "/Users/Aone/RA2remaster/project-history/buildup-final-20261020/final-test-comparison.json"
+  },
+  "finalDesktopGallery": {
+    "path": "/Users/Aone/Desktop/RA2-HD-Buildup-Final-Accepted-20261020/Open-Final.html",
+    "status": "PASS_ALL_FRAMES_AND_RETAINED_HISTORICAL_CLIPS",
+    "sequences": 108,
+    "checkedFrames": 4890,
+    "clips": 212,
+    "files": 4755,
+    "bytes": 591869925,
+    "footageProvenance": "Retained historical construction/sale captures matched to final member hashes; not claimed as fresh Windows footage."
+  },
+  "returnedWindowsBaseline": "PASS_ANCESTRY_AND_UNCHANGED_CULLING_OCTREE_ANIMATION_CORE",
+  "windowsRuntime": "NOT_RUN",
+  "mcvDeploymentAnd90PlusFps": "DEFERRED_TO_ORIGINAL_WINDOWS_AGENT",
+  "operationalReceipts": "/Users/Aone/RA2remaster/project-history/buildup-final-20261020",
+  "futureSourceWorktree": "/Users/Aone/RA2remaster/ra2-hd",
+  "independentM24": "PRESERVED"
+}

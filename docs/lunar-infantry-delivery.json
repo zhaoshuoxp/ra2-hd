@@ -1,0 +1,159 @@
+{
+  "status": "LUNAR_INFANTRY_TECHNICALLY_DELIVERED",
+  "representativeAcceptance": "ACCEPTED",
+  "finalCompleteFamilyAcceptance": "PENDING",
+  "runtimeSourceHead": "c048f6f18c4251c0d46fb6d99b416cdc29e2982e",
+  "sourceMember": "lunr.shp",
+  "visibleSlots": 435,
+  "nativeShadowSlots": 435,
+  "densities": [
+    2,
+    4
+  ],
+  "uiRevision": "lunar-infantry-ui-v1",
+  "uiEntries": 490,
+  "preservedUiEntries": 488,
+  "manifestSha256": "1fa4038cfd853bb0d46a5cfbb63ad168e4b233de5437446eb034e42ce2901477",
+  "desktop": {
+    "folder": "/Users/Aone/Desktop/RA2-HD-Main-Lunar-Infantry-R1-20261004-c048f6f-macOS-arm64",
+    "app": "/Users/Aone/Desktop/RA2-HD-Main-Lunar-Infantry-R1-20261004-c048f6f-macOS-arm64/Red Alert 2 HD Lunar Infantry R1.app",
+    "archive": "/Users/Aone/Desktop/RA2-HD-Main-Lunar-Infantry-R1-20261004-c048f6f-macOS-arm64.zip",
+    "bytes": 3267335396,
+    "sha256": "56d17fdbe20e2989da73a5175dfa3e9180d7158dfcff33807a0c70433507d0a5",
+    "checkedEntries": 6213
+  },
+  "review": "/Users/Aone/Desktop/RA2-HD-Main-Lunar-Infantry-R1-20261004-c048f6f-macOS-arm64/Lunar-Infantry-Full-Review.html",
+  "runtime": [
+    {
+      "density": 2,
+      "report": ".artifacts/lunar-infantry/native-desktop-2x-v1/report.json",
+      "sha256": "8129e8709be9a4600efd924778088575899ca4bc1c587a1bf3b99c028144ca41",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "nativeActions": {
+        "flight": true,
+        "laserDamage": true
+      },
+      "visibleFrames": 435,
+      "ownerChanges": 3,
+      "allocation": {
+        "density": 2,
+        "gpuBytes": 4527616,
+        "attempts": [],
+        "members": [
+          "lunr.shp"
+        ],
+        "status": "READY"
+      },
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 5397176,
+        "total": 45632456,
+        "limit": 268435456
+      },
+      "cameos": [
+        {
+          "cameo": "lunricon",
+          "hd": true,
+          "entryId": "lunricon.shp",
+          "texture": [
+            240,
+            192
+          ],
+          "rank": false
+        },
+        {
+          "cameo": "lunruico",
+          "hd": true,
+          "entryId": "lunruico.shp",
+          "texture": [
+            240,
+            192
+          ],
+          "rank": true
+        }
+      ],
+      "maxUiReservedBytes": 11254016,
+      "preparedFallbacks": 0,
+      "hdToggle": [],
+      "errors": []
+    },
+    {
+      "density": 4,
+      "report": ".artifacts/lunar-infantry/native-desktop-4x-v1/report.json",
+      "sha256": "fcb73b68304b112c48983ad5c7018176cc71afb217c2ec9a0c0bf75e5911a66c",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "nativeActions": {
+        "flight": true,
+        "laserDamage": true
+      },
+      "visibleFrames": 435,
+      "ownerChanges": 3,
+      "allocation": {
+        "density": 4,
+        "gpuBytes": 15499264,
+        "attempts": [],
+        "members": [
+          "lunr.shp"
+        ],
+        "status": "READY"
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 17152496,
+        "total": 159090724,
+        "limit": 1342177280
+      },
+      "cameos": [
+        {
+          "cameo": "lunricon",
+          "hd": true,
+          "entryId": "lunricon.shp",
+          "texture": [
+            240,
+            192
+          ],
+          "rank": false
+        },
+        {
+          "cameo": "lunruico",
+          "hd": true,
+          "entryId": "lunruico.shp",
+          "texture": [
+            240,
+            192
+          ],
+          "rank": true
+        }
+      ],
+      "maxUiReservedBytes": 11254016,
+      "preparedFallbacks": 0,
+      "hdToggle": [
+        {
+          "enabled": false,
+          "hd": false
+        },
+        {
+          "enabled": true,
+          "hd": true
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "preparedContract": {
+    "schemaVersion": 1,
+    "sha256": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604",
+    "indexPath": "prepared-hd/indexes/a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604.json"
+  },
+  "tests": {
+    "focusedTests": 8,
+    "failed": 0,
+    "nativeSourceTests": 2,
+    "typecheck": "PASS"
+  },
+  "gameplay": "Native TechLevel 11, prerequisites, timing, shadows and weapons unchanged. Controlled unit and disabled cameo fixtures do not establish ordinary skirmish buildability or campaign support.",
+  "windows": "UNVERIFIED",
+  "publication": "NONE"
+}

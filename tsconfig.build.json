@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "types": ["vite/client"],
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": false
+  },
+  "include": [
+    "src/offline/main.tsx",
+    "src/App.tsx",
+    "src/vite-env.d.ts",
+    "src/types/**/*.d.ts"
+  ],
+  "exclude": [
+    "src/test/**",
+    "src/tools/**"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "m1-7-yr-main-integration-v1",
+  "status": "M1_7_YR_ACCEPTED_AND_INTEGRATED_INTO_MAIN",
+  "mainBranch": "m0-2-stabilization",
+  "predecessor": "f508f430234c191c15583ecaf7dd822318e6e744",
+  "fastForwardCommit": "39e3f5af6f7b682563a76231c48ea821e9dfa169",
+  "runtimeSourceHead": "8fc21e4a38a00c18ec27e6607a53567b8b055a17",
+  "acceptance": "docs/m1-7-yr-final-acceptance.json",
+  "coverage": {
+    "yrSovietRoots": 28,
+    "acceptedHd": 27,
+    "acceptedOriginal": [
+      "SQD",
+      "SQDG"
+    ]
+  },
+  "addedResources": 50,
+  "addedBytes": 22944610,
+  "replacedResources": 0,
+  "preservation": {
+    "status": "PASS_EXISTING_RESOURCES_DIST_AND_SIBLINGS_PRESERVED",
+    "existingEntries": 9376,
+    "siblings": 4,
+    "mainHead": "8fc21e4a38a00c18ec27e6607a53567b8b055a17",
+    "newResources": 50
+  },
+  "m1_8FixPreservation": {
+    "status": "PASS_M1_8_UI_AND_LIGHTING_SCORE_SOURCE_UNCHANGED",
+    "files": [
+      {
+        "path": "public/res/locale/zh-CN.json",
+        "sha256": "b56716b61255b9b0f67c4023d80fca0d97c4b0422af282ca5b4fe73fd0200897"
+      },
+      {
+        "path": "src/gui/hd/UiArt.ts",
+        "sha256": "0469b326ea366b3b9e192f3f51dc1c788672d9a0f727e08a67ac655e258a0c85"
+      },
+      {
+        "path": "src/gui/hd/UiArtSpriteBuilder.ts",
+        "sha256": "da37eeb7340be3d370f0a1c425a83c117496517cc9671be93d91933fc89a8a0b"
+      },
+      {
+        "path": "src/gui/hd/UiControlArt.ts",
+        "sha256": "a48c6c8b5752648c2be98a0f8a048fb8e2b7c182b3bb0d5158fd13a3f91e6cdc"
+      },
+      {
+        "path": "src/gui/screen/game/component/hud/SidebarCard.ts",
+        "sha256": "2af0e4ccca7af5fabcf2823a89b91cba6e55e17e0cab91bb855e5510de8ec989"
+      },
+      {
+        "path": "src/engine/renderable/building/LampMaterial.ts",
+        "sha256": "873be6e81447d259e7407b5077589beada63a85cf1c31bbaeea2b5891cd63422"
+      },
+      {
+        "path": "src/engine/renderable/entity/Building.ts",
+        "sha256": "e54a35293b1f417fe643454b4b35026ed70cca8a9385ffe0f0e529f49f3909d7"
+      },
+      {
+        "path": "src/gui/screen/mainMenu/score/ScoreTable.tsx",
+        "sha256": "8cee9e368f7d65396ad3f85348864956d72701da20726895dc6b241caf04b2ec"
+      }
+    ]
+  },
+  "tests": {
+    "passed": 66,
+    "failed": 0,
+    "evidence": ".artifacts/m1-7-yr-main-integration-v1/tests-v2.log",
+    "entryTypecheck": "PASS"
+  },
+  "nativeCases": [
+    {
+      "edition": "ra2",
+      "theater": 1,
+      "units": "PASS_ACCEPTED_FAMILIES_AND_ORIGINAL_EXCEPTIONS",
+      "buildingFamilies": 18,
+      "combat": "PASS",
+      "lightingScore": null,
+      "unitBytes": 46585172,
+      "totalOptionalBytes": 233693296,
+      "evidence": ".artifacts/m1-7-yr-main-integration-v1/native-temperate/result.json"
+    },
+    {
+      "edition": "yr",
+      "theater": 1,
+      "units": "PASS_28_YR_SOVIET_ROOTS_AND_SHARED_ALLOCATION",
+      "buildingFamilies": 18,
+      "combat": "PASS",
+      "lightingScore": null,
+      "unitBytes": 59518140,
+      "totalOptionalBytes": 245514840,
+      "evidence": ".artifacts/m1-7-yr-main-integration-v1/native-temperate/result.json"
+    },
+    {
+      "edition": "ra2",
+      "theater": 4,
+      "units": "PASS_ACCEPTED_FAMILIES_AND_ORIGINAL_EXCEPTIONS",
+      "buildingFamilies": 18,
+      "combat": "PASS",
+      "lightingScore": "PASS_LIGHTING_AND_PAUSED_SCORE",
+      "unitBytes": 46585172,
+      "totalOptionalBytes": 212132200,
+      "evidence": ".artifacts/m1-7-yr-main-integration-v1/native-snow/result.json"
+    },
+    {
+      "edition": "yr",
+      "theater": 4,
+      "units": "PASS_28_YR_SOVIET_ROOTS_AND_SHARED_ALLOCATION",
+      "buildingFamilies": 18,
+      "combat": "PASS",
+      "lightingScore": "PASS_LIGHTING_AND_PAUSED_SCORE",
+      "unitBytes": 59518140,
+      "totalOptionalBytes": 223082308,
+      "evidence": ".artifacts/m1-7-yr-main-integration-v1/native-snow/result.json"
+    }
+  ],
+  "package": {
+    "folder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m1-7-yr-main-integration-v1/package/RA2-HD-YR-Units-Accepted-Main",
+    "resources": 1214,
+    "inventoryEntries": 1681,
+    "inventoryAfterNativeRun": "PASS"
+  },
+  "historicalFailure": "Initial regression reached all lossless parity checks, then failed while writing an optional report to an absent authoring-only directory. Removed that report side effect; all assertions retained and 66 tests pass.",
+  "limits": "Retain RA2 YURIPR guarded Original, the 256 MiB cap and historical platform/campaign limitations. No publication or unrelated worktree changes.",
+  "continuation": "The accepted objective is complete. Continue this task for corrections or integration feedback; begin another objective only when requested."
+}

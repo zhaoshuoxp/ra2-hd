@@ -1,0 +1,212 @@
+{
+  "schema": "m2-3-feedback-r13-v1",
+  "status": "PASS_TECHNICAL_DESKTOP_DELIVERY_PENDING_USER_VISUAL_ACCEPTANCE",
+  "runtimeSourceCommit": "c230af4dcd5f5f87c83a4bf484ee9bf5993c3526",
+  "scope": "Correct incomplete oil walking-beam, connecting-rod and crank edges, preserving R8 metal style and a stationary background without duplicate moving mechanisms.",
+  "baseline": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-3-oil-static-beam-complete-v26",
+    "sha256": "8cc194f147d6d5b25736ec49a0c5e1fa6c665c2e9f869dc2ad15903b2cf0c8c6"
+  },
+  "environmentSelection": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-3-oil-complete-edges-complete-v28",
+    "sha256": "6b6157794dbbd8b8ff4e6770f19a894a94cc705438c8cfbc5b817755f6d0e71c"
+  },
+  "terrainSelection": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-3-gameplay-feedback-v12",
+    "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+  },
+  "correction": {
+    "rootCauses": [
+      "Palette-dependent foreground omitted bright/dark faces and the left head before x=5",
+      "Retail coverage clipped complete HD moving materials",
+      "Old moving-pose fragments remained in exposed background"
+    ],
+    "method": "Complete authored component coverage with native landmark registration, a straight affine bar and explicit foreground occlusion; localized clean fixed plate within the old motion sweep.",
+    "intentionalCoverageChange": "Moving HD texture alpha and revealed background inside unchanged logical frames. Original source alpha is not claimed byte-identical; picking/collision, shadow source and timing remain unchanged.",
+    "oldClippedMovingCoreSamples": 73722,
+    "newClippedMovingCoreSamples": 0,
+    "exposedBackgroundMovingPixels": 0
+  },
+  "authoring": {
+    "mode": "builtin_imagegen",
+    "master": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/authoring/fixed-drive.png",
+    "prompt": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/authoring/edit-request.json",
+    "use": "Localized stationary drive background donor; existing R8 gold-beam and R9 linkage masters supply continuous moving material."
+  },
+  "preservation": {
+    "bodyAndFlag": "ALL_FILES_BYTE_IDENTICAL_R12",
+    "ownerAndAuxiliaryData": "EXACT_R12",
+    "frameGeometrySourceLogicalColorSampler": "EXACT_R12",
+    "nativeShadowSource": "UNCHANGED",
+    "nonOilFamilies": 237,
+    "nonOilFilesByteIdentical": 1970,
+    "catalogFamilies": 238,
+    "catalogMembers": 333,
+    "applicationSourceFilesExactExceptEnvironmentSelection": 1454,
+    "nonEnvironmentWorldPackageEntries": 4738,
+    "uiPackageEntries": 360,
+    "protectedPaths": "NINE_SEPARATELY_PINNED_HASHES_AND_ABSENCES"
+  },
+  "technicalStatus": {
+    "staticAllPosesBothHealthStatesAndDensities": "PASS_128_FRAMES",
+    "copiedNativeCases": 4,
+    "copiedNativeClips": 20,
+    "originalIntactOccupiedFrames": 32,
+    "originalDamagedLoopFrames": 31,
+    "reviewPages": 4,
+    "embeddedImages": 13,
+    "embeddedVideos": 31,
+    "sourceAndActualDesktopOfflineRendering": "PASS_LOCAL_LINKS_DECODE_ACTUAL_IMAGE_DIMENSIONS_AND_VIDEO_ADVANCE",
+    "desktopArchiveAndFreshExtraction": "PASS_ALL_7580_BYTES_LINKS_MODES_SIGNATURE",
+    "actualExtractedDirectStartup": "PASS_ALL_61_VISIBLE_STANDARD_MAP_TITLES",
+    "actualExtractedOilStates": "PASS_RA2_2X_AND_YR_4X",
+    "nativeWorldChargeWithinBudgets": true
+  },
+  "reusedR7NativeMapLoading": {
+    "ra2": 31,
+    "yr": 80,
+    "density": 4,
+    "status": "REUSED_CLOSED_EVIDENCE_NOT_RERUN_R13",
+    "basis": "Application source, map resources, logical frame geometry and decoding formats are unchanged; R13 changes oil texture pixels and bounded moving coverage."
+  },
+  "desktopGame": {
+    "file": "/Users/Aone/Desktop/M2.3-R13-Desktop-Mac-Test-20261010.zip",
+    "bytes": 3789404301,
+    "sha256": "8fe12685448cbf2b5b09984f6f5f36bb98085f0317bb3611240bf8a70e88a99f"
+  },
+  "desktopReviewEntry": "/Users/Aone/Desktop/M2.3-R13-Offline-Review-20261010/Review.html",
+  "desktopReviewArchive": {
+    "file": "/Users/Aone/Desktop/M2.3-R13-Offline-Review-20261010.zip",
+    "bytes": 58343349,
+    "sha256": "25fc0c364343ebc3df1bf3e90656357c47b3ff261e13e83e457177f96ed54048"
+  },
+  "mapLists": [
+    {
+      "file": "/Users/Aone/Desktop/M2.3-R13-Temperate-Map-Test-List.txt",
+      "bytes": 3960,
+      "sha256": "d88795cb3cf80c7fa61d3aa3b138a9a2b49f9f94071238a965040d317590fe5a"
+    },
+    {
+      "file": "/Users/Aone/Desktop/M2.3-R13-Temperate-Map-Test-List.csv",
+      "bytes": 5522,
+      "sha256": "997cd350adc2d3da7e35bc088a461a014e01d7045e0f97dd0eee70a633c24d08"
+    }
+  ],
+  "observedMain": {
+    "head": "bc581b1c3c871199ac568939723324e4cfce6b2c",
+    "dirty": "",
+    "mainIntegration": false
+  },
+  "priorFeedback": [
+    {
+      "revision": "R12",
+      "status": "USER_REJECTED_INCOMPLETE_MOVING_EDGES_TECHNICAL_RECEIPTS_PRESERVED"
+    },
+    {
+      "revision": "R10_R11",
+      "status": "USER_REJECTED_HISTORICAL_PARTIAL_TECHNICAL_INTERMEDIATES"
+    }
+  ],
+  "visualAcceptance": "PENDING_R13",
+  "fullMatchUserAcceptance": "NOT_RECORDED_R13",
+  "windows": "NOT_RUN",
+  "physicalInput": "NOT_RUN",
+  "handoff": "Continue this oil correction and acceptance in the current execution chat; no main integration or adjacent milestone.",
+  "receipts": {
+    "authoring-inputs-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/authoring-inputs-v1.json",
+      "sha256": "01326ee7b3147961c9e7f31020ef2a2739c52e8f5375e354cffd4f76af4d3d4a"
+    },
+    "authoring/edit-request.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/authoring/edit-request.json",
+      "sha256": "a59f604e23808bc23e9e90f81dfac738686b6716707f298b0305bd4a05f32686"
+    },
+    "oil-export-v4.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/oil-export-v4.json",
+      "sha256": "1335060f7150105eba6251b2229494c8ab0a63173f9679214f76c02dbe677f49"
+    },
+    "oil-static-v5/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/oil-static-v5/report.json",
+      "sha256": "5b9bf92b336e5150d0c42f7d7b5788768dce5c3c8e4fd7319100a3f6993c3264"
+    },
+    "environment-assembly-v2.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/environment-assembly-v2.json",
+      "sha256": "3bf500b3685ef805962cbc406594a4698bf51aaf0b9d08e758ac93afa1f3917f"
+    },
+    "registration-v2.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/registration-v2.json",
+      "sha256": "6639e97421e57c360bd5f1d2178f631c66a1350695cf9864d697275fa44193ee"
+    },
+    "preservation-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/preservation-v1.json",
+      "sha256": "15bd454ddafd3e50628d2f071f9c6e8ca7a597b86db9da8d788753db88e4d133"
+    },
+    "source-checks-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/source-checks-v1.json",
+      "sha256": "39ca71b03809c26c0bee86476c22ef66acf23e640aa4416bb1a1a034c6118b48"
+    },
+    "package-resource-parity-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/package-resource-parity-v1.json",
+      "sha256": "b1b45ba0337bdde00bd780a2e91d9e257ffc128014ec46b04c4d391c7fe66c32"
+    },
+    "native-summary-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/native-summary-v1.json",
+      "sha256": "a17293ff7e30170d8c3a9100fc1584994779ba468656ba09d94ad0a966daf74c"
+    },
+    "extracted-native-summary-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/extracted-native-summary-v1.json",
+      "sha256": "915cc5c0f9a2049be258cb39034f96d85e0d0b8291888dbdc70b1a3cc8ffe5f7"
+    },
+    "offline-review-v1/review-manifest.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/offline-review-v1/review-manifest.json",
+      "sha256": "f538cf7b4cd6af5af65538eaf28b33e07cae53ed4a71b509d63f0f0e7fa85dde"
+    },
+    "offline-review-archive-v1/archive-receipt.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/offline-review-archive-v1/archive-receipt.json",
+      "sha256": "e58d9f0b786c653e3a5746895dcf0d7a37ce0768f1c40bff7ec4f622c0999875"
+    },
+    "offline-review-native-v1/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/offline-review-native-v1/report.json",
+      "sha256": "86f71e9e82c00683348fb3661f856bb2bd597d9ce434fa5c8174708115ce70d6"
+    },
+    "desktop-review-native-v1/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/desktop-review-native-v1/report.json",
+      "sha256": "86f71e9e82c00683348fb3661f856bb2bd597d9ce434fa5c8174708115ce70d6"
+    },
+    "desktop-delivery-v1/archive-receipt.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/desktop-delivery-v1/archive-receipt.json",
+      "sha256": "6a1e27032430eb3ce9ff11dba74a71972a1b9241ab2c19561b770bb5d6e52264"
+    },
+    "desktop-review-files-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/desktop-review-files-v1.json",
+      "sha256": "5eb1ef52e122b63582ca745c5fb641b903eb9116cfc9a8de47d2730189cab4ee"
+    },
+    "desktop-game-file-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/desktop-game-file-v1.json",
+      "sha256": "8c27cc86814b5b2b6a5f732e48ac52da8f6d31dffc1381553edce4728b399f57"
+    },
+    "desktop-extraction-v1/extracted-package-receipt.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/desktop-extraction-v1/extracted-package-receipt.json",
+      "sha256": "adc6b71aa34a7e58a5e662cefedc82b94af3d73296767cac75c04ee22faccb4d"
+    },
+    "desktop-startup-v1/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/desktop-startup-v1/report.json",
+      "sha256": "6252c4557bf6f7660eb203989530013a30d9cc8cbe8aed34aee36f7464852527"
+    },
+    "final-preservation-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/final-preservation-v1.json",
+      "sha256": "51469fe284870855864c884f5084e8b8d03c02b74ccbb5a96fc05c8a177c1758"
+    },
+    "candidate-disposition-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/candidate-disposition-v1.json",
+      "sha256": "25c3beb6ad86af68718fc0b6b4f88fa52883851506a07ef2b1051342bc4c9fc4"
+    },
+    "inspection-failures-v3.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r13-v1/inspection-failures-v3.json",
+      "sha256": "9957a877bf4ae61f1776701ac67806ad6ffa58657d9cd960ae1d47e776cbcf32"
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "schema": "m2-4-urban-road-smoothing-delivery-closure-v1",
+  "status": "PASS_TECHNICAL_AND_DESKTOP_DELIVERY_USER_REJECTED_VISUAL_REPAIR",
+  "runtimeSourceHead": "47cab48f8cf0cff5dc02328cdd28b513ea74b238",
+  "terrainSelection": {
+    "schemaVersion": 1,
+    "revision": "urban-m2-4-side-roads-smooth-r6",
+    "sha256": "c01ad7c682a3b049234b8a453f06a018a39e58b393ff20f8be3d7fa872bc6e00"
+  },
+  "scope": {
+    "families": 4,
+    "members": 82,
+    "indexedSubtiles": 573,
+    "nativePlaceholders": 128,
+    "densityPairs": 1146,
+    "unaffectedAcceptedGroups": 25,
+    "nativePlacedBindings": 3442,
+    "nativePlacedMembers": 56,
+    "staticOnlyMembersSharingFourVerifiedLoaders": 26
+  },
+  "mac": "PASS_NEW_2X_4X_FIVE_MATCHED_CAMERA_ROUTES",
+  "windows": "NOT_RUN",
+  "visual": "USER_REJECTED_MATERIAL_COLOR_CLARITY_REDO_USING_TEMPERATE_REFERENCE",
+  "milestone": "M2_4_INCOMPLETE",
+  "resourceContract": "Exact native alpha, dimensions, metadata, Z, indices, placeholders, accepted groups and atlas allocations; corrected RGB only",
+  "nativeLoadingDeduplication": "All 82 members have complete static source/hash/density closure. Unchanged xpowdrkeg.map exercises the same four complete family loader paths. Five cameras target straight sections, two bends, a junction and a slope. The 26 unplaced members share those exact four loaders; no per-map long matrix was repeated.",
+  "worldAllocations": {
+    "2": {
+      "terrain": 79658760,
+      "environment": 6966804,
+      "baseline": 30503392,
+      "eager": 9731888,
+      "demand": 7874796,
+      "total": 134735640,
+      "limit": 536870912
+    },
+    "4": {
+      "terrain": 308969224,
+      "environment": 27413804,
+      "baseline": 91372196,
+      "eager": 50566032,
+      "demand": 31337184,
+      "total": 509658440,
+      "limit": 1342177280
+    }
+  },
+  "preparedCpuBytes": {
+    "2": 44943988,
+    "4": 108580412
+  },
+  "review": {
+    "status": "PASS_EXACT_HTML_AND_JSON_ONLY",
+    "files": [
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch40-R1-20261014/M2.4-Urban-Batch40-R1-Embedded.html",
+        "sha256": "189021e15871686e82e02104246682a36ee600903e6739217d8ff5208b3c8995",
+        "bytes": 95719577
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch40-R1-20261014/M2.4-Urban-Batch40-R1-Embedded.json",
+        "sha256": "11ea21a595eb103f40f42f1cf88e23a9db215f17922a74ff92e9cceab6bbc7d8",
+        "bytes": 77756
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r6/selection-adoption.json",
+      "sha256": "1d55f4ed770fc73f738c9fafb07d9137d7a83083bebb2518c54d0f809d274d7e"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r6/resource-handoff.json",
+      "sha256": "1261c1f1354bdac075067c87a125bd2b2ba0ef966deed410628a95ff7e46b2c1"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r6/curve-tests.log",
+      "sha256": "3884f83255b63480b178b50a1cdd1576f7134f9a64ac130ceed6487a1c8b4e36"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r6/terrain-tests.log",
+      "sha256": "57ea9feb5a60effe495ed2f21c49a3d2b15f440767d92c88b81abafd49ed55b6"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r6/native-2x/report.json",
+      "sha256": "fa78627b50f3ec5e42b86fa31346ceb63ab3249d19ccb6b200ce4d8ff54c9bc5"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r6/native-4x/report.json",
+      "sha256": "7763aedc00af616ad6277b22c89ab424305d1b804c398a6eaf218dd3007297a7"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r6/before-after/index.json",
+      "sha256": "a5c345049a4f85e79159099ed1fc5cda96e4ef0bf7cb66dd930b625d7fb5389d"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r6/desktop-copy.json",
+      "sha256": "28ad1661a02545140957c4f010a1fc181c50f1ab0b7438ac95b84b3354bdc4b9"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r6/desktop-html-verification/report.json",
+      "sha256": "3c0f94ded7de3c5f99eee26794a0ecb7902b9c9dcefa55a7fc41490b71031279"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-dirt-roads-authoring-v1/urban-m2-4-side-roads-smooth-r6/recipe.json",
+      "sha256": "6a872d2d638b6d0e92c1ecd6a0dfe1578c4bd1a5ab2fffb714693fe93b702a40"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-dirt-roads-authoring-v1/urban-m2-4-side-roads-smooth-r6/validation.json",
+      "sha256": "b5acc0ae127cb292ec710bfc9cc9fee42abf625135d262072075d2136bd780c7"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r3/generated-materials.json",
+      "sha256": "96e876b23ee938bb264fec6929cd0c4fc3a8aa21dd74b9756f8fc37869d1dbf5"
+    },
+    {
+      "file": ".artifacts/m2-4/active-mac-road-smoothing-stage-v2.json",
+      "sha256": "ad0004d7ea5b219928da6e8076de671468e0a5c9835e5bc3790836d311631471"
+    },
+    {
+      "file": ".artifacts/m2-4/active-mac-road-smoothing-build-v2/identity.json",
+      "sha256": "2d82c40d86c16b08af88212fb69496b6c1fc891c6fa5b9733be1c3386fe75d7b"
+    }
+  ],
+  "reusedEvidence": [
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r5/original/report.json",
+      "sha256": "9eb904cbb6d84d7393d0b5eda51dac325116c0244e3cb321e62e9f5d3a5d63ea",
+      "role": "Original controls on identical source map, renderer and five camera routes; original source 49ba18d1"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r5/native-4x/report.json",
+      "sha256": "056e0be4bc56e66a781f4ae500a2f550777cb6bbeee0c8bd4c8e3897af357a5d",
+      "role": "R5 Original reset, released old environment/terrain charges and cross-theater Snow reentry; RGB-only R6 changes preserve identical loader, layout and metadata"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r5/typecheck.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+      "role": "Entry typecheck remains applicable: no changed TypeScript or JSON schema"
+    }
+  ],
+  "retainedCandidates": [
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r1/candidate-rejection.json",
+      "sha256": "d3c407365b7dc1ec929627ba2794b9fe358e3dedf9edc347af30c1249161d063"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r2/candidate-rejection.json",
+      "sha256": "a0316e96eae73507540bcadae5de6776c8b4638d88a600f3395eb151a07f17ed"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r3/candidate-rejection.json",
+      "sha256": "b593790f5acc706bceab0647d94c62499eac74578b82210fe03448294457f553"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r4/candidate-rejection.json",
+      "sha256": "36cfa6f49591be2ac763c9987c2c5d9887737f4ce5a7599ab0d2321df65611e5"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r5/candidate-rejection.json",
+      "sha256": "88a994046062ada24c8751df3785588c2c831cedc314f73a37887bbffc38a3c7"
+    }
+  ],
+  "main": {
+    "head": "748d0998aaf663acda8807c158155bf0a5bb157b",
+    "clean": true,
+    "integrated": false
+  },
+  "perBatchGamePackageCreated": false,
+  "finalIndependentMilestoneAppAndDependencies": "OUTSTANDING",
+  "continuation": "Keep road feedback and remaining Urban, NewUrban and Desert production in this execution conversation.",
+  "latestUserFeedback": {
+    "file": ".artifacts/m2-4/urban-side-roads-smoothing-r6/user-feedback-20261014-v1.json",
+    "sha256": "67951ffc63f5ae278705208f566d31bd666a4b99b085d82d8cc78afda6df0160"
+  },
+  "latestDirection": {
+    "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/user-direction.json",
+    "sha256": "39e1f7280d8c77308d25ecc4cac09120d39d623506ad37c7c9bd74a726860f35"
+  }
+}

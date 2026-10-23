@@ -1,0 +1,401 @@
+{
+  "schema": "m2-2-land-feedback-delivery-v1",
+  "status": "WHOLE_MAP_LAND_AND_BRIDGE_TECHNICAL_PASS_VISUAL_REVIEW_READY",
+  "runtimeSourceHead": "5eeb7667627f3c307493fbb1fdf786a71e442f51",
+  "mainHead": "7533e13ed8f19edd4cc888e44baf416acede3478",
+  "selectedTerrain": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-2-environment-v9",
+    "sha256": "b79a24ff94a4b5d98a7e8621c0b141b8c9d254ffd636fcfa4d713ca013dd4fbd"
+  },
+  "selectedEnvironment": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-2-complete-v6",
+    "sha256": "bd6673dddfab66bfd08af62ae3b9d7baf6f5176a797d3256de87dbac65e02c81"
+  },
+  "waterAcceptance": {
+    "status": "USER_ACCEPTED_R6_WATER_RETAINED_EXACT",
+    "authority": "Latest owning-conversation feedback on 2026-10-07",
+    "baseline": {
+      "schemaVersion": 1,
+      "revision": "temperate-m2-2-environment-v7",
+      "sha256": "e507c0b05f39855dd2c898b5e2659931fa5017ac32e7f518b03dd32959b9a663"
+    },
+    "audit": {
+      "path": ".artifacts/m2-2/land-feedback-r7b-audit.json",
+      "sha256": "3de6909641104a51bb71e1d787b66560154bfd9653dd24ca6a1c7995b2ff195e"
+    },
+    "scope": "Visible native water, shallow transitions, enclosed warm islands and a one-native-pixel guard; complete watercontacts atlas files remain exact."
+  },
+  "corrections": [
+    "Retail land material registration removes invented shore bevels and bright blocks across the complete 39-member shore group.",
+    "Concrete bridge asphalt includes native cool shades at contacts and removes low-frequency authored swatch variation; retail lane/curb/damage geometry stays exact."
+  ],
+  "changedTerrainGroups": [
+    "m2-2-shore"
+  ],
+  "exactPreservedTerrainGroups": [
+    "ground",
+    "road-representative",
+    "elevation-representative",
+    "m2-2-thickgrass",
+    "m2-2-pavecrop",
+    "m2-2-dirtroads",
+    "m2-2-watercontacts"
+  ],
+  "changedSHPFamilies": [
+    "environment-lobrdb"
+  ],
+  "exactPreservedSHPFamilies": [
+    "environment-wb04x",
+    "environment-wb01x",
+    "environment-tree05",
+    "environment-trff02",
+    "environment-trff03",
+    "environment-trff01",
+    "environment-tree03",
+    "environment-tree16",
+    "environment-lt_sgn04",
+    "environment-lt_sgn01",
+    "environment-tree01",
+    "environment-tree08",
+    "environment-tree04",
+    "environment-tree09",
+    "environment-tibtre01",
+    "environment-tree06",
+    "environment-tree07",
+    "environment-tree10",
+    "environment-tree11",
+    "environment-trff04",
+    "environment-tree18",
+    "environment-tree15",
+    "environment-tree13",
+    "environment-hdstn01",
+    "environment-tree02",
+    "environment-tree12",
+    "environment-tree17",
+    "environment-tree14",
+    "environment-tree19",
+    "environment-tree22",
+    "environment-tree21",
+    "environment-pole02",
+    "environment-tree28",
+    "environment-ctbhut",
+    "environment-ctgas01",
+    "environment-ctind01",
+    "environment-ctmsc10",
+    "environment-ctmisc05",
+    "environment-ctts01",
+    "environment-ctmisc04",
+    "environment-ctmsc02",
+    "environment-ctmisc03",
+    "environment-ctpark01",
+    "environment-cttexs08",
+    "environment-cttexs07",
+    "environment-cttexs06",
+    "environment-ctpars06",
+    "environment-ctmiam01",
+    "environment-ctmiam03",
+    "environment-ctmiam02",
+    "environment-ctpars14",
+    "environment-ctpars13",
+    "environment-ctpars10",
+    "environment-ctstl03",
+    "environment-ctwash18",
+    "environment-cthosp",
+    "environment-cthse01",
+    "environment-cthse02",
+    "environment-cthse03",
+    "environment-ctarmy02",
+    "environment-ctmsc06",
+    "environment-ctnwy26",
+    "environment-ctnwy25",
+    "environment-ctchig03",
+    "environment-cteuro05",
+    "environment-ctfrma",
+    "environment-ctpark02",
+    "environment-ctfarm01",
+    "environment-ctfarm02",
+    "environment-ctpark03",
+    "environment-ctmsc04",
+    "environment-ctmsc05",
+    "environment-ctrus11",
+    "environment-ctnewy20",
+    "environment-ctmsc11",
+    "environment-ctwt01",
+    "environment-ctarmy01",
+    "environment-cthse05",
+    "environment-ctfrmb",
+    "environment-ctstrt05",
+    "environment-cow",
+    "environment-trock01",
+    "environment-ore",
+    "environment-trock02",
+    "environment-gem",
+    "environment-trock04",
+    "environment-trock03",
+    "environment-trock05",
+    "environment-srock05",
+    "environment-srock04",
+    "environment-srock02",
+    "environment-ctfncb",
+    "environment-srock01",
+    "environment-srock03",
+    "environment-lobrdg",
+    "environment-ctkrmw",
+    "environment-ctfncw"
+  ],
+  "wholeMapInspection": {
+    "status": "PASS_ALL_PLAYABLE_TILE_VIEWPORT_COVERAGE_AT_2X_4X",
+    "cameraViews": 27,
+    "playableTiles": 10151,
+    "playableShoreBindings": 626,
+    "totalRenderedTerrainBindings": 13515,
+    "nativeReports": {
+      "original": {
+        "path": ".artifacts/m2-2/copied-land-audit-original-r7/report.json",
+        "sha256": "daa0b474bf1bd549372dfa848c102b1a2d02eb43113e9df8fce4ce58e62fed28"
+      },
+      "baseline": {
+        "path": ".artifacts/m2-2/copied-land-audit-r6/report.json",
+        "sha256": "221eecdd258e9fc2bd88b0ae2d1a0880370d76f4629345febafe8442c4058c75"
+      },
+      "two": {
+        "path": ".artifacts/m2-2/copied-land-audit-2x-r7c/report.json",
+        "sha256": "5a2261dca3ccc7899ba31046e764d79cabdae3e31ce20f9c7d7ebcea7026af49"
+      },
+      "four": {
+        "path": ".artifacts/m2-2/copied-land-audit-4x-r7c/report.json",
+        "sha256": "34dd93da722be514f0f7dcd973a65e5fc452c057348ecc91c30c27f17b605905"
+      }
+    },
+    "visualInspection": "All 27 views inspected for land blocks, diagonal bevels and context; newly corrected shore land uses the Original guide. No coordinate-specific replacements.",
+    "boundary": "Viewport coverage and assistant visual inspection do not grant user acceptance or prove every gameplay action.",
+    "closure": {
+      "path": ".artifacts/m2-2/whole-map-feedback-r7c.json",
+      "sha256": "855998f40fc79686e51f621ba582c93f0a303fec90d82e2153aeaf3ca0c02508"
+    }
+  },
+  "nativeReports": {
+    "four": {
+      "path": ".artifacts/m2-2/copied-feedback-4x-r7c/report.json",
+      "sha256": "75d9da93364d43777c8bd37edaa7c5865871a6aa96e17f28ebbff9fc26bb9069"
+    },
+    "two": {
+      "path": ".artifacts/m2-2/copied-feedback-2x-r7c/report.json",
+      "sha256": "420478023d86208f368551579b3a2d17170ccb319a2773610d0731fc5467d61a"
+    },
+    "ra2": {
+      "path": ".artifacts/m2-2/copied-feedback-ra2-2x-r7c/report.json",
+      "sha256": "af4e6f8b0771517c51dc445b8852547d7b443a5da6eef0da4de9e3d63f77437e"
+    }
+  },
+  "nativeResults": {
+    "four": {
+      "combinedAllocation": {
+        "terrain": 507796748,
+        "environment": 292124932,
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 42564012,
+        "total": 984423920,
+        "limit": 1342177280
+      },
+      "focusedFrameTiming": [
+        {
+          "scene": "bridge",
+          "samples": 180,
+          "meanMs": 16.667583333333337,
+          "p95Ms": 18.025000000001455,
+          "over50Ms": 0
+        },
+        {
+          "scene": "water-shore",
+          "samples": 180,
+          "meanMs": 16.668194444444413,
+          "p95Ms": 17.834999999999127,
+          "over50Ms": 0
+        },
+        {
+          "scene": "waterfall",
+          "samples": 180,
+          "meanMs": 16.67436111111112,
+          "p95Ms": 18.334999999999127,
+          "over50Ms": 0
+        }
+      ],
+      "glError": 0
+    },
+    "two": {
+      "combinedAllocation": {
+        "terrain": 130080012,
+        "environment": 74856308,
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 10957216,
+        "total": 256128816,
+        "limit": 268435456
+      },
+      "focusedFrameTiming": [
+        {
+          "scene": "bridge",
+          "samples": 180,
+          "meanMs": 16.667638888888863,
+          "p95Ms": 17.409999999996217,
+          "over50Ms": 0
+        },
+        {
+          "scene": "water-shore",
+          "samples": 180,
+          "meanMs": 16.6676111111111,
+          "p95Ms": 17.880000000004657,
+          "over50Ms": 0
+        },
+        {
+          "scene": "waterfall",
+          "samples": 180,
+          "meanMs": 16.667500000000008,
+          "p95Ms": 17.81500000000233,
+          "over50Ms": 0
+        }
+      ],
+      "glError": 0
+    },
+    "ra2": {
+      "combinedAllocation": {
+        "terrain": 130080012,
+        "environment": 74856308,
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 9965356,
+        "total": 255136956,
+        "limit": 268435456
+      },
+      "focusedFrameTiming": null,
+      "glError": null
+    }
+  },
+  "delivery": {
+    "status": "PASS_COPIED_MAC_ARM64_FOCUSED_NATIVE_AND_RESOURCE_CHECKS",
+    "app": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R7c-20261007-macOS-arm64/RA2 HD M2.2 Temperate Showcase R7c.app",
+    "resources": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R7c-20261007-macOS-arm64/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R7c-20261007-macOS-arm64/RA2-HD-UI-Resources",
+    "runtimeSourceHead": "5eeb7667627f3c307493fbb1fdf786a71e442f51",
+    "packageReceipt": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/package-feedback-r7c/package-receipt.json",
+    "launcher": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R7c-20261007-macOS-arm64/Launch-Isolated-Review.command",
+    "profile": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R7c-20261007-macOS-arm64/M2.2-Review-Profile",
+    "copiedVerification": {
+      "path": ".artifacts/m2-2/copied-feedback-r7c-verification.json",
+      "sha256": "005995b85db9f181c37645da4285f4c60bfff15548ad8fe14715f07d9e02fb21"
+    },
+    "sharedParity": {
+      "path": ".artifacts/m2-2/copied-feedback-r7c-parity.json",
+      "sha256": "d4d8ff5c0c389af7935aa620b64e19ac9545ce99717fb856d68fd61c91e8b21d"
+    },
+    "signature": {
+      "path": ".artifacts/m2-2/copied-feedback-r7c-signature.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "regularFiles": 6513,
+    "symlinks": 14,
+    "exactSharedPayloads": 4995,
+    "sourceDirtyAtPackaging": true,
+    "sourceDirtyDetails": "?? docs/m2-2-feedback-history/r6-m2-2-acceptance.json\n?? docs/m2-2-feedback-history/r6-m2-2-production-state-resolution.json\n?? docs/m2-2-feedback-history/r6-m2-2-resource-transfer.json\n",
+    "sourceBoundary": "Frozen committed runtime and unchanged tracked source. Only three untracked retained R6 documentation snapshots existed at packaging; they do not enter the application bundle.",
+    "uiRevision": "yuri-emblem-ui-v1",
+    "uiManifestSha256": "205c4780094f10e3685a8070ed2f0502e64e4ad1d8eeda25658744dbd481cb4b",
+    "signatureStatus": "PASS_CODESIGN_VERIFY_DEEP_STRICT"
+  },
+  "asphaltMeasurement": {
+    "path": ".artifacts/m2-2/feedback-r7c-bridge-color-measurement.json",
+    "sha256": "9edeeb8690ff6245605bb08a38de6ed0521f804f3305c9b2bb2b2a8236b15bab"
+  },
+  "offlineReview": {
+    "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Feedback-Offline-R7c-v2-20261007/M2.2-R7c-Feedback-Offline.html",
+    "sha256": "38533296697b579919fa0f87839ccd093793ad962f32ce77c62b8a076911c5e5",
+    "bytes": 610674235,
+    "counts": {
+      "scenes": 27,
+      "states": 8,
+      "clips": 4
+    },
+    "receipt": {
+      "path": ".artifacts/m2-2/feedback-offline-r7c-v2/review.json",
+      "sha256": "a3a2d6f3cb1ef1ec18f4ef75a6380f87539c80940d99b86d76aca8af650bd524"
+    },
+    "qa": {
+      "path": ".artifacts/m2-2/feedback-offline-qa-r7c-v2/qa.json",
+      "sha256": "3e3711d78c88bb5a6f68c5c5a8e1da9c414b4ef75b7d8eba89e9f3e1070bb491"
+    },
+    "requiresServer": false,
+    "requiresSiblingMedia": false
+  },
+  "sourceTests": {
+    "status": "PASS",
+    "tests": 24,
+    "expectations": 636,
+    "evidence": {
+      "path": ".artifacts/m2-2/feedback-r7-tests.log",
+      "sha256": "34a42fae2c023249f4ba14aca594b0730e07b623935a4d44cea2d4e38171977b"
+    },
+    "entryTypecheck": {
+      "path": ".artifacts/m2-2/feedback-r7-typecheck-entry.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    }
+  },
+  "staticChecks": {
+    "land": {
+      "path": ".artifacts/m2-2/land-feedback-r7b-audit.json",
+      "sha256": "3de6909641104a51bb71e1d787b66560154bfd9653dd24ca6a1c7995b2ff195e"
+    },
+    "shp": {
+      "path": ".artifacts/m2-2/environment-feedback-r7c-validation.json",
+      "sha256": "9dcfdc23942d93108326581f536cdd438fe72d9cb2f06808a8e2ccf3ec44b666"
+    },
+    "allocationFallbackDisposal": {
+      "path": ".artifacts/m2-2/environment-feedback-r7c-lifecycle.json",
+      "sha256": "894a331d8431ce79a5de17dfa3672f0cb49cd9845d0f3bf958bad5c68fb3b1af"
+    },
+    "exportClosure": {
+      "path": ".artifacts/m2-2/authoring-feedback-r7/exporter-closure-r7c.json",
+      "sha256": "57ad158f1ac3d26708932c3c34fb67190ec26c009c5d9883964e32573a6bd562"
+    }
+  },
+  "resourceTransfer": {
+    "path": "docs/m2-2-resource-transfer.json",
+    "sha256": "6e7c6bbf763d9ecf9f64b112180e0e94e52a79e5acda2d97a4784b5771539c2b"
+  },
+  "retainedR6": {
+    "receipt": {
+      "path": "docs/m2-2-feedback-r6.json",
+      "sha256": "184e16b08cb635241816c4d6c7fa0a08d63ff30ee1c2182b6688afb722875cb9"
+    },
+    "metadataSnapshots": {
+      "m2-2-acceptance.json": {
+        "path": "docs/m2-2-feedback-history/r6-m2-2-acceptance.json",
+        "sha256": "51b56cd4c5e7493f3052cb73cfba3db687fe0d26ed04891150316959078b444a"
+      },
+      "m2-2-resource-transfer.json": {
+        "path": "docs/m2-2-feedback-history/r6-m2-2-resource-transfer.json",
+        "sha256": "b125a1597939b2bbb23e7de31b41e426ac5be3b49e6b87b655961db740d35d97"
+      },
+      "m2-2-production-state-resolution.json": {
+        "path": "docs/m2-2-feedback-history/r6-m2-2-production-state-resolution.json",
+        "sha256": "9c0521c5ff1e696e6e07da9376440dc15acbef8d4ff3123c8ad446b2fc43f597"
+      }
+    },
+    "boundary": "R6 receipt and delivered files remain unchanged. Mutable metadata references from that receipt resolve to these exact retained snapshots."
+  },
+  "retainedOfflineDiagnostic": {
+    "path": ".artifacts/m2-2/feedback-offline-qa-r7c/qa.json",
+    "sha256": "d0f905ed67f3b6797eaec710155234169b179db55ac687bc674c7cbed3bc1145"
+  },
+  "acceptedOutsideFeedback": true,
+  "newVisualAcceptance": "PENDING_USER_LAND_AND_BRIDGE_REVIEW",
+  "boundary": "Native map/rules/geometry/ticks and fixed budgets unchanged. No main promotion, push, cleanup, Windows performance work or physical-input PASS claim.",
+  "supplementalDeliveryDocumentation": {
+    "path": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.2-Temperate-Showcase-R7c-20261007-macOS-arm64/Feedback-Review.txt",
+    "sha256": "1dbe0df08b48a3aabfb5b82a828fc6ab0741ad4ac460da4db96d3562a12d0621",
+    "boundary": "Outside the signed app and resource inventory"
+  }
+}

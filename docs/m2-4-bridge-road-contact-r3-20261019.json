@@ -1,0 +1,62 @@
+{
+  "status": "MAC_TECHNICAL_PASS_BRIDGE_CONTACT_VISUAL_PENDING",
+  "runtimeSourceCommit": "9c75fd39dbef3cc1db8c31ffa8072a40319da875",
+  "mainObserved": "748d0998aaf663acda8807c158155bf0a5bb157b",
+  "mainModified": false,
+  "scope": {
+    "theater": "NEWURBAN",
+    "member": "ovrps05.ubn",
+    "maps": [
+      "YR/manhatta.map"
+    ],
+    "policy": "Resource-level 12-native-pixel road-contact registration; no map or shared renderer edits",
+    "densityFramePairsChanged": 6,
+    "otherBridgePairsExact": 130,
+    "otherGroupsExact": 20
+  },
+  "artworkAcceptance": "R2_ACCEPTED_RETAINED",
+  "bridgeContactAcceptance": "REJECTED_BY_USER",
+  "technical": {
+    "mac": "PASS_2X_4X_NATIVE_SIMULATION_AND_4X_ORIGINAL_RESET_RELEASE_REENTRY",
+    "loaderTests": 7,
+    "loaderAssertions": 485,
+    "registrationTests": 3,
+    "entryTypecheck": "PASS",
+    "isolatedBuild": "PASS",
+    "internalSignedMacStage": "PASS",
+    "reviewStaticQa": "PASS_FIVE_EMBEDDED_IMAGES",
+    "browserInteractive": "NOT_RUN_PROTOCOL_DENIAL_RESPECTED"
+  },
+  "evidence": [
+    {
+      "file": ".artifacts/m2-4/bridge-road-contact-r3-20261019/native-suite.json",
+      "sha256": "6d6ea5479f8c50e57e80df4b5927bf7f828e7e22951f5b2fe3f2cd7f39fb75b9"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-road-contact-r3-20261019/resource-handoff-r3.json",
+      "sha256": "f3d8f483da1127edadcd44455fbea72567b28182f590eb06f67ce7381eb0b733"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-road-contact-r3-20261019/export-and-preservation-v2.json",
+      "sha256": "0a90c8ed8bbbd6485c4655f5852308de17e30ad5819ebdfb7397acaa631443cd"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-road-contact-r3-20261019/review/static-qa.json",
+      "sha256": "03d70852aac7f040144be10198ab41eb30c85dbe89c92802d07ec464b541f9cf"
+    }
+  ],
+  "review": {
+    "desktop": "/Users/Aone/Desktop/M2.4-Review-Bridge-Road-Contact-R3-20261019/M2.4-Bridge-Road-Contact-R3-Embedded.html",
+    "sha256": "2ee30bfd81d45d69c76bf7c472d9eb6497a95506adca18992a6fd3fbf6899b50"
+  },
+  "remaining": [
+    "User review of this bridge contact",
+    "Other reported seams remain open",
+    "Full NewUrban and Desert authored coverage",
+    "Final scope audit, acceptance and independent Mac delivery"
+  ],
+  "windows": "NOT_RUN",
+  "m24Complete": false,
+  "perBatchMacPackageCreated": false,
+  "subsequentCorrection": "docs/m2-4-bridge-network-seams-r4-20261019.md"
+}

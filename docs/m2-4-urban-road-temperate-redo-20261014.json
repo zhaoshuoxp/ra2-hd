@@ -1,0 +1,231 @@
+{
+  "schema": "m2-4-urban-road-temperate-redo-delivery-v1",
+  "status": "R2_USER_REJECTED_BOUNDARY_GEOMETRY_FOLLOWUP_DELIVERED",
+  "runtimeSourceHead": "279e70a7b7ec2861a124edc69a87ec0633c30a46",
+  "sourcePack": {
+    "schemaVersion": 1,
+    "revision": "urban-m2-4-side-roads-temperate-r9",
+    "sha256": "17aed4be39d88dcd175ce443619c2800a7bdbc64e9beb12448b1d7f9f189776c"
+  },
+  "externalReview": "Batch 40 R2",
+  "scope": {
+    "replacedFamilies": 4,
+    "members": 82,
+    "indexedSubtiles": 573,
+    "densityPairs": 1146,
+    "nativePlaceholderPairs": 256,
+    "unchangedAcceptedGroups": 25,
+    "mapCatalogEntries": 31,
+    "mapIds": [
+      "ra2:mp28u4.map@d871241b686b",
+      "ra2:mp29mw.map",
+      "ra2:mp29u2.map",
+      "ra2:mp29u4.map@c3f4f1c670fe",
+      "ra2:mp33u4.map",
+      "ra2:mp34u4.map",
+      "yr:hillbtwn.map",
+      "yr:mp28u4.map@d871241b686b",
+      "yr:mp29mw.map@f54919acf9ee",
+      "yr:mp29u2.map@0bc3e5c05954",
+      "yr:mp29u4.map@c3f4f1c670fe",
+      "yr:mp33u4.map@527f6765e21a",
+      "yr:mp34u4.map@a11379d07d0e",
+      "yr:xarena.map",
+      "yr:xbarrel.map",
+      "yr:xbayopigs.map",
+      "yr:xbermuda.map",
+      "yr:xeb1.map",
+      "yr:xeb1mw.map",
+      "yr:xgoldst.map",
+      "yr:xinvasion.map",
+      "yr:xkaliforn.map",
+      "yr:xmp28u4.map@e0b74cfb3cc1",
+      "yr:xmp29mw.map",
+      "yr:xmp29u2.map",
+      "yr:xmp33u4.map",
+      "yr:xmp34u4.map",
+      "yr:xoceansid.map",
+      "yr:xpotomac.map",
+      "yr:xpowdrkeg.map",
+      "yr:xrockets.map"
+    ],
+    "coverageChange": "No new map eligibility or claimed coverage; replace only previously rejected road RGB."
+  },
+  "sourceGeometry": "Native TMP alpha, metadata, dimensions, Z, indices, placeholders and original road/paint layout preserved; accepted unrelated resources exact.",
+  "newMaterials": {
+    "tool": "Builtin imagegen",
+    "mothers": 2,
+    "actualMotherPixels": [
+      1254,
+      1254
+    ],
+    "minimumCapacity": 5.225,
+    "profile": {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/profile.json",
+      "sha256": "a49123f9bd014105523f0004d3b7c04d2c7317b030ba684df5f95aeb91bf1567"
+    }
+  },
+  "nativeLoading": {
+    "map": "yr:xpowdrkeg.map",
+    "newRoadPlacements": 3442,
+    "newRoadMembers": 56,
+    "staticOnlyMembers": 26,
+    "deduplication": "All 82 members pass static closure. Five matching cameras exercise the four actual complete-family loading paths. Other 26 members share those four unchanged loader/metadata paths."
+  },
+  "mac": "PASS_NEW_2X_4X",
+  "windows": "NOT_RUN",
+  "visual": "USER_REJECTED_R2_BOUNDARY_GEOMETRY_REPAIR_IN_PROGRESS",
+  "m24Complete": false,
+  "worldAllocationBytes": {
+    "2": 134735640,
+    "4": 509658440
+  },
+  "preparedCpuBytes": {
+    "2": 44943988,
+    "4": 108580412
+  },
+  "review": {
+    "status": "PASS_EXACT_HTML_AND_JSON_ONLY",
+    "files": [
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch40-R2-20261014/M2.4-Urban-Batch40-R2-Embedded.html",
+        "sha256": "a6d5b7154a45c45b8986b87b09fc06fe315e1c22a56dff2a2cf2e417be17caa1",
+        "bytes": 105708239
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch40-R2-20261014/M2.4-Urban-Batch40-R2-Embedded.json",
+        "sha256": "a3772f07b674d729798f8859635f65b4a423712676b28a2f70a740a699d686eb",
+        "bytes": 79333
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/r9/resource-handoff.json",
+      "sha256": "d9c3c63368d20de0b9dc19905d5e39c7c39441db7b924edd52e7e227ebbd8011"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/r9/source-paint-audit.json",
+      "sha256": "1ed0840e6dfe0acf341338c562698f8fd1b45161354f7388956aba73c3197b36"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/r9/selection-adoption.json",
+      "sha256": "a1bb55441c94c3e36243cb0b3964f1552a8a02dd82ee16edfe527b21adc2f225"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/r9/terrain-tests.log",
+      "sha256": "1727df4aa403af37a6a3759be1e4385cc1faff00dae8a95b88838c109d568065"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/r9/native-2x/report.json",
+      "sha256": "96b1b4b3906d5223222161dcc537a4d31977ab77090d60e07ab580ec3af75074"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/r9/native-4x/report.json",
+      "sha256": "dfda344417efe4647bc2dc8ad9d30ab4e74fa4361cd78dae0d340bcb3453b88d"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/r9/before-after/index.json",
+      "sha256": "51cab322b3e510b46d9435a2e2b83d9a255a15c61d8f4ede85dcf4b384ae4f64"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/r9/desktop-copy.json",
+      "sha256": "06286510e8544a774294b176584efb17737f15b5d3c0696fc5b6e915425b7e1e"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/r9/desktop-html-verification/report.json",
+      "sha256": "21d5af3645244dce1238a799b0c2fc22b0b554ef45a7e1897a2258235a343780"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/curve-tests-r9.log",
+      "sha256": "e4ee951f766b63a2d30c719e8a976bb0154f6a794603d8a8f9a591f415faf77d"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/generated-materials.json",
+      "sha256": "52cd02a4a17b9ad9ec9b8dda1e888a78763eb82ed049e65e0ca2153b56424e08"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/prompts.json",
+      "sha256": "fa9bde03ad0cac5eb2019bfa5dc9520a620fa687a4d677d3811cb3985d3db102"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/accepted-temperate-reference.json",
+      "sha256": "dffb76acc85590cba4bdd86c873e0a39c96368820ad01f3c13a2a5fbd9a655b5"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/user-direction.json",
+      "sha256": "39e1f7280d8c77308d25ecc4cac09120d39d623506ad37c7c9bd74a726860f35"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/r7-internal-visual-rejection.json",
+      "sha256": "61bb6239bfb6aa7cd63f9b198d45616f79eeb845d041cd516e04012e2b783d8c"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/r8-internal-visual-rejection.json",
+      "sha256": "99ca291c91725922faebc5f74343dc3bfbea38649fd769e7188659d0849cd31c"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-road-temperate-redo-v1/reference-assembly-diagnostic.json",
+      "sha256": "e2636a237c526cb03a252fae4a08ce3a2f2cfd073f1a05f576e82d7361fd06d3"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-dirt-roads-authoring-v1/urban-m2-4-side-roads-temperate-r9/recipe.json",
+      "sha256": "1e946bd34f1b71d49bb135dd6c3378c4865d0d6c03ddaff870f9d18315f7cb59"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-dirt-roads-authoring-v1/urban-m2-4-side-roads-temperate-r9/validation.json",
+      "sha256": "9857477e49d1bfc9d5e354ad691662a8d9c4959078d9a62d804e902f12a4069e"
+    },
+    {
+      "file": ".artifacts/m2-4/active-mac-road-temperate-stage-v3.json",
+      "sha256": "2155c14fcb012040a1f3baecf4c44999a9f8d89cc6242e295dc00fe2d71568d3"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/active-mac-road-temperate-build-v3/identity.json",
+      "sha256": "ed94ab85a16905a92721113a2fdcb06df88d64366d2473750735a5c2aad1b1c7"
+    },
+    {
+      "file": ".artifacts/m2-4/inventory-urban-side-roads-v1/inventory.json",
+      "sha256": "771639c90cdb9c3b5df6da90f6f2c45d4a49af133f5939977890aa15a72327d6"
+    }
+  ],
+  "reusedEvidence": [
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r5/original/report.json",
+      "sha256": "9eb904cbb6d84d7393d0b5eda51dac325116c0244e3cb321e62e9f5d3a5d63ea",
+      "role": "Unchanged-map/renderer five-route Original controls at source 49ba18d1"
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r5/native-4x/report.json",
+      "sha256": "056e0be4bc56e66a781f4ae500a2f550777cb6bbeee0c8bd4c8e3897af357a5d",
+      "role": "Original fallback, zero old terrain/environment charges and Snow reentry. New changes affect offline RGB production only; same loaders, atlas dimensions and metadata."
+    },
+    {
+      "file": ".artifacts/m2-4/urban-side-roads-smoothing-r5/typecheck.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+      "role": "Entry typecheck reused: no TypeScript or schema changes; actual new contract registration passes 63 tests."
+    }
+  ],
+  "main": {
+    "head": "748d0998aaf663acda8807c158155bf0a5bb157b",
+    "clean": true,
+    "integrated": false
+  },
+  "perBatchIndependentGamePackage": false,
+  "finalMilestoneAppAndDependencies": "OUTSTANDING",
+  "remaining": "Complete remaining Urban/NewUrban/Desert art, resolve or retain four genuine map blockers and four absent source Stop signs, close visual acceptance and final independent delivery. Continue in this execution conversation.",
+  "latestUserFeedback": {
+    "file": ".artifacts/m2-4/urban-road-geometry-r3-v1/user-direction.json",
+    "sha256": "1749382646a618ddf0ca11fd50afec4017ebea4aaac0f94f5a41d3321c9cea8e"
+  },
+  "followUp": {
+    "externalReview": "Batch 40 R3",
+    "report": "docs/m2-4-urban-road-geometry-20261014.json",
+    "sourcePack": {
+      "schemaVersion": 1,
+      "revision": "urban-m2-4-side-roads-geometry-r10",
+      "sha256": "269a77b5faa0b19150b5f2804b6ab62f31b27ef50991fc8cc35c5b239c0a730d"
+    },
+    "visual": "USER_ACCEPTED"
+  }
+}

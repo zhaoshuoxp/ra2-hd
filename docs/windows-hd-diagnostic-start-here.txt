@@ -1,0 +1,31 @@
+RA2 HD Windows candidate - WINHD-20261008-D38F136-C9
+
+Extract the ENTIRE ZIP into a new writable local folder. Keep sibling resources
+and older kits unchanged. No Node, Bun, repository or script editing is needed.
+
+C9 prepares pose and uniforms only for the displayed cached VXL bearing. Each
+inactive bearing is still detached and receives fresh state when selected.
+Native movement, camera, shadows, art, limits and C1-C8 repairs are preserved.
+Windows benefit remains PENDING. See Reference/CANDIDATE-REPORT.md.
+
+1. Run Verify-Kit.cmd once. It must report PASS.
+2. Run Launch-Diagnostics.cmd: [8] eight players, [4] 4X, [N] Normal.
+   Keep the game focused through all four automatic phases. Do not press F8/F9
+   or change settings/camera until capture completion.
+3. Continue the same match manually for about two minutes, until the condition
+   that felt slow in C8. Scroll/play normally. Press F8 ONCE, continue for
+   15 seconds and wait for sample completion. This now preserves manual camera
+   input directly; the separate C8 M1 companion is unnecessary.
+4. Close the game, run Export-Reports.cmd and return the new *-RETURN-*.zip.
+   Describe sustained manual smoothness, loading wait and any edge, occlusion,
+   shadow or color changes. No F9 trace is requested for this first C9 check.
+
+Use the same Windows machine, monitor, DPI, AC power and display settings.
+Prior C8 automatic and manual evidence is retained; no old-version rerun or
+density/control matrix is requested. Independently advancing manual matches
+are not strict same-state A/B; scene counts and bindings must be compared.
+
+Optional USER-NOTES.txt belongs in a run folder under Diagnostic-Runs. Export
+excludes profiles, credentials and unrelated files. Run-Control.cmd is for an
+evidence-selected control only. Source/maps are read-only reference material,
+not an immediately buildable checkout. Main and M2.3 remain independent.

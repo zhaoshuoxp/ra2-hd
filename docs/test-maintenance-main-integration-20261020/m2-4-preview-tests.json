@@ -1,0 +1,63 @@
+[
+  {
+    "command": [
+      "bun",
+      "test",
+      "--preload",
+      "./scripts/windows-hd/browser-test-setup.ts",
+      "--timeout",
+      "30000",
+      "./scripts/m2/official-maps/terrain-loading.test.ts"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "bun",
+      "test",
+      "--preload",
+      "./scripts/windows-hd/browser-test-setup.ts",
+      "--timeout",
+      "30000",
+      "./scripts/m2/terrain.test.ts"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "bun",
+      "test",
+      "--preload",
+      "./scripts/windows-hd/browser-test-setup.ts",
+      "--timeout",
+      "30000",
+      "./scripts/art/construction-completion.test.ts"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "bun",
+      "test",
+      "--preload",
+      "./scripts/windows-hd/browser-test-setup.ts",
+      "--timeout",
+      "30000",
+      "./scripts/m2-4/gate-mechanism.test.ts"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "bun",
+      "test",
+      "--preload",
+      "./scripts/windows-hd/browser-test-setup.ts",
+      "--timeout",
+      "30000",
+      "./scripts/m2/official-maps/terrain-loading.test.ts"
+    ],
+    "terrainOverride": "/Users/Aone/RA2remaster/ra2-hd/.local/terrain-packs/temperate-m2-3-gameplay-feedback-v12",
+    "exit": 0
+  }
+]

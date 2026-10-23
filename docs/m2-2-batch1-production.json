@@ -1,0 +1,127 @@
+{
+  "schema": "m2-2-batch-production-v1",
+  "status": "FIRST_COMPLETE_FAMILIES_NATIVE_BINDINGS_VERIFIED_MAP_INCOMPLETE",
+  "newTmpMembers": 38,
+  "newTmpImages": 38,
+  "newShpMembers": 6,
+  "terrainPack": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-2-thickgrass-v1",
+    "sha256": "d2e1c1cfb8c79673e583009a18eeccc7b235baee81626c5097d3f975d957a2b1"
+  },
+  "environmentPack": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-2-trees-v3",
+    "sha256": "39aa37d0606ce2b36a3a47a54fca6d7ff43809553619f4c70ec7b64e8c6f375f"
+  },
+  "nativeInputSha256": "fa3d67c85575e6691c9a00757ae6d33ab4409b5922719683196b8df260d1a973",
+  "independentDensities": [
+    2,
+    4
+  ],
+  "wholeMapComplete": false,
+  "mainPromoted": false,
+  "acceptedV13dAtlases": "EXACT_BYTE_REUSE",
+  "originalWaterfallAndGrassDirection": "EXACT_ORIGINAL_MASTER",
+  "neutralVehicleReferences": {
+    "source": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/vxl-native-reference-v2/report.json",
+    "vehicles": 13,
+    "headings": 104,
+    "purpose": "Original reference, not action acceptance"
+  },
+  "failuresPreserved": [
+    "vxl-native-reference-v1-launch.log",
+    "trees-export-v1.log",
+    "trees-pack-validation-v2.log",
+    "tmp-registration-audit-v1.json",
+    "shp-registration-audit-v1.json",
+    "native-batch1-2x-v1.log",
+    "native-batch1-2x-v2/report.json"
+  ],
+  "nativeEvidence": [
+    {
+      "path": ".artifacts/m2-2/native-batch1-2x-v3/report.json",
+      "sha256": "394b059c508ea55194b39083fa08955a9ba751c2e415c2965d11be5cbed96db9",
+      "density": 2,
+      "map": "xmp03t4.map",
+      "placedTrees": 154,
+      "placedGrass": 1931,
+      "environmentWorldCharge": 555416,
+      "terrainWorldCharge": 79474520,
+      "glError": 0,
+      "nativeRemoval": {
+        "name": "TREE08",
+        "id": 24,
+        "before": {
+          "spawned": true,
+          "destroyed": false,
+          "renderable": true
+        },
+        "after": {
+          "spawned": false,
+          "destroyed": true,
+          "renderable": false,
+          "tileRetainsObject": false
+        }
+      },
+      "reentry": [
+        {
+          "enabled": false,
+          "oldDisposed": true,
+          "worldCharge": 0
+        },
+        {
+          "enabled": true,
+          "oldDisposed": true,
+          "worldCharge": 555416
+        }
+      ]
+    },
+    {
+      "path": ".artifacts/m2-2/native-batch1-4x-v1/report.json",
+      "sha256": "6040be2d1794083812860144c99bff0b1bef9ac8f3ec5a3e6efcfbcf65cec2e9",
+      "density": 4,
+      "map": "xmp03t4.map",
+      "placedTrees": 154,
+      "placedGrass": 1931,
+      "environmentWorldCharge": 1899288,
+      "terrainWorldCharge": 311177048,
+      "glError": 0,
+      "nativeRemoval": {
+        "name": "TREE08",
+        "id": 24,
+        "before": {
+          "spawned": true,
+          "destroyed": false,
+          "renderable": true
+        },
+        "after": {
+          "spawned": false,
+          "destroyed": true,
+          "renderable": false,
+          "tileRetainsObject": false
+        }
+      },
+      "reentry": []
+    },
+    {
+      "path": ".artifacts/m2-2/native-batch1-control-2x-v1/report.json",
+      "sha256": "980821da9afeaa8ed91b43293d2c426535f72ae4e62a3dceaedc1f3e3983aab0",
+      "density": 2,
+      "map": "xmp19t4.map",
+      "placedTrees": 218,
+      "placedGrass": 3929,
+      "environmentWorldCharge": 555416,
+      "terrainWorldCharge": 79474520,
+      "glError": 0,
+      "nativeRemoval": null,
+      "reentry": []
+    }
+  ],
+  "fixes": [
+    "Synchronize selected terrain manifest with the desktop compiled terrain contract",
+    "Keep unselected environment families explicit as not-selected"
+  ],
+  "independentShpVerification": ".artifacts/m2-2/trees-independent-verification-v1.json",
+  "truckSourceReuse": "Exact accepted DTRUCK VXL/HVA bytes; TRUCKA alias implemented; native action acceptance remains pending"
+}

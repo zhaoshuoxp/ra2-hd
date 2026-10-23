@@ -1,0 +1,15 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
+const output = path.resolve(process.argv[2]);
+execFileSync(process.execPath, ['scripts/editions/build-review.mjs', output], { stdio: 'inherit' });
+const metadataPath = path.join(output, 'package.json');
+const metadata = JSON.parse(await fs.readFile(metadataPath, 'utf8'));
+metadata.reviewMilestone = 'OFFLINE-TRAINER-R1';
+await fs.writeFile(metadataPath, JSON.stringify(metadata));
+const file = path.join(output, 'identity.json'), identity = JSON.parse(await fs.readFile(file, 'utf8'));
+identity.files.find(f => f.file === 'package.json').sha256 = createHash('sha256').update(await fs.readFile(metadataPath)).digest('hex');
+identity.sourceDirty = execFileSync('git', ['status', '--porcelain'], { encoding: 'utf8' });
+identity.trainerReference = '486720cfa7603ba849ae7f75b1f72ec2f196b242';
+await fs.writeFile(file, JSON.stringify(identity, null, 2));

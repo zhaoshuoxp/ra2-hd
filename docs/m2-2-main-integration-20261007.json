@@ -1,0 +1,48 @@
+{
+  "schema": "m2-2-local-main-integration-v1",
+  "status": "PASS_ACCEPTED_LOCAL_MAIN_PROMOTION",
+  "sourceRoot": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate",
+  "mainRoot": "/Users/Aone/RA2remaster/ra2-hd",
+  "beforeMainHead": "7533e13ed8f19edd4cc888e44baf416acede3478",
+  "promotedMainHead": "d101fdeb003df3f0a0b22226dc053548a879745e",
+  "runtimeSourceHead": "5eeb7667627f3c307493fbb1fdf786a71e442f51",
+  "runtimeSourceParity": "Exact src/desktop/public tree equality with accepted packaged runtime; documentation and authoring helpers follow separately.",
+  "beforeCheckpoint": {
+    "path": ".artifacts/m2-2/final-main-integration-20261007/before.json",
+    "sha256": "977733106334bbec84e76c6e6736968971632d58d107f6bad914e0a073044def"
+  },
+  "transfer": {
+    "path": ".artifacts/m2-2/final-main-integration-20261007/transfer.json",
+    "sha256": "3b1b749cdcf6b71efd2208cbec3fe5df1b21119f5003ac1049c20f4bb0ef34b9"
+  },
+  "afterCheckpoint": {
+    "path": ".artifacts/m2-2/final-main-integration-20261007/after.json",
+    "sha256": "d37cf5b835bef326ab3b7c467452107e086607286304ca0b1516dfd28e33771f"
+  },
+  "nativeRun": {
+    "path": ".artifacts/m2-2/final-main-native-4x-v2-20261007/report.json",
+    "sha256": "16cb7c3889e840ada5d5f2972ab559d291fa0ce50534ce33a27e3d4ae6f30676"
+  },
+  "inheritedFilesPreserved": 27308,
+  "closureFilesVerified": 14076,
+  "selections": {
+    "terrain": {
+      "schemaVersion": 1,
+      "revision": "temperate-m2-2-environment-v9",
+      "sha256": "b79a24ff94a4b5d98a7e8621c0b141b8c9d254ffd636fcfa4d713ca013dd4fbd"
+    },
+    "environment": {
+      "schemaVersion": 1,
+      "revision": "environment-m2-2-complete-v6",
+      "sha256": "bd6673dddfab66bfd08af62ae3b9d7baf6f5176a797d3256de87dbac65e02c81"
+    }
+  },
+  "authorization": "Original sequential task authorizes M2.2 main promotion after final combined visual acceptance; final bridge acceptance and Desktop ZIP request close that gate.",
+  "failedLaunchRetained": {
+    "path": ".artifacts/m2-2/final-main-native-4x-20261007/launch-failure.json",
+    "sha256": "bfe33c8737fb0d112f132feb0590c70bcc5f4eb5df22ab41d2af03de378d30dc"
+  },
+  "remotePush": "NOT_PERFORMED",
+  "cleanup": "NOT_PERFORMED",
+  "boundary": "Source fast-forward and only accepted terrain/environment selector changes. Existing world/UI/prepared resources, dist, profiles, old packs and deliveries retained."
+}

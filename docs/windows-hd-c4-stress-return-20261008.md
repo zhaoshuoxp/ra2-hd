@@ -1,0 +1,36 @@
+# C4 Windows eight-player return: integrity passes, residual stalls remain
+
+The new C4 return passes frozen identity and target package verification, including all 8,089 cataloged files. The retained eight-player/seven-AI 4X run is complete and valid. The user reports acceptable normal smoothness but a hitch when enemy units arrive, and confirms this occurred during the automatic test. This keeps the broader smoothness gate open. Previous Small 4X acceptance remains intact; no speculative source change, package replacement or main integration follows from this return.
+
+`WINHD-20261008-D38F136-C4-RETURN-2026-10-09T03-50-28-663Z.zip` is 79,912,402 bytes, SHA-256 `e3217e911c3be81db6ee5791482ac5f64a6718560bba23377cedd935be58dce0`. All 21 members pass CRC, safe paths, size, hashes, exact frozen manifest and run identity. Four returned launchers match the trusted kit and were inspected only as data. The target receipt reports PASS, zero failures and 8,089 checked files at `2026-10-09T03:47:41.037Z`, matching manifest SHA-256 `bb7ec160e2a14e57f3d2b705c6d81a34d50d0eee1c1bc887d6244574a97fa0ac`. This closes the previously missing C4 target-verification gate without changing historical missing receipts.
+
+The archive contains the new `2026-10-09T03-48-15-550Z-stress-4x-none` run and a byte-identical re-export of the accepted Small run. The latter is not an independent A/B sample. Package source remains `f850b5cb44b0f6a8a415ff0636705bd5566901ec`, with the same 6,033-resource inventory and 512/1280/128/16 MiB limits. The target is unchanged Ryzen 7 5800H / RTX 3070 Laptop / ANGLE D3D11 on AC power. Stress uses native fullscreen 2560x1600 output, density 4, high models/shadows, native simulation, fixed xmp27t8 setup and seven AI. No paired stress baseline is present, so no stress speedup percentage is claimed.
+
+All four new phases are valid Normal measurements with advancing native ticks, actual HD bindings, empty errors and no focus/visibility/resize events. Endpoints contain 30-31 VXL and 1,907-1,918 SHP bindings. Some families are still preparing at first-use endpoints; snapshots preserve those states rather than treating catalog presence as actual binding. No shader-call trace or CPU profile is present in this Windows return. Exact raw row correlation and allocation snapshots are in `windows-hd-c4-stress-return-20261008.json`.
+
+| Phase | Median | p95 | p99 | Maximum | >33 / >50 / >100 | Native ticks |
+|---|---:|---:|---:|---:|---:|---:|
+| fresh-process-first-use | 12.135 | 24.215 | 30.300 | 406.085 | 7 / 4 / 4 | 971 |
+| warmed-steady | 18.155 | 24.260 | 42.425 | 187.825 | 17 / 7 / 4 | 991 |
+| same-process-reentry-first-use | 12.140 | 24.225 | 30.350 | 272.720 | 9 / 3 / 2 | 996 |
+| same-process-reentry-warmed | 18.160 | 24.250 | 42.415 | 193.965 | 12 / 5 / 1 | 998 |
+
+Timings are milliseconds over approximately 15 seconds per phase. Warmed long frames remain: four intervals exceed 100 ms in the first warmed window and one does so after re-entry. Normal p95 is about 24.25 ms and warmed p99 about 42.42 ms; this is consistent with acceptable typical motion and noticeable isolated stalls, but does not directly identify the enemy-arrival event.
+
+| First warmed window, seconds after its first frame | Simulation CPU | Update CPU | Submission CPU | Following interval |
+|---|---:|---:|---:|---:|
+| 4.061 | 1.285 | 13.615 | 87.065 | 103.025 |
+| 6.461 | 2.340 | 19.065 | 51.540 | 72.725 |
+| 7.237 | 2.320 | 12.340 | 150.180 | 163.660 |
+
+These particular rows are dominated by submission, not simulation. Warmed simulation maxima are 21.995/22.220 ms. However, a different first-warmed interval lasts 187.825 ms after only 14.400 ms of measured simulation/update/submission; warmed re-entry has 193.965 ms after 27.985 ms of measured work. The interval-minus-measured-CPU differences of 173.425/165.980 ms locate additional unmeasured delay, without identifying its cause. Possible unrelated callbacks, preparation, GC, scheduling and presentation waits require the multiprocess trace. RAF intervals follow preceding row work, and CPU submission is not GPU time.
+
+Startup remains separate: fresh submission reaches 312.160 ms around game time 0.920 seconds with 85.005 ms update, producing a 406.085 ms interval. The first simulation call costs 291.020 ms. Fresh loading to first game frame is 10.244 seconds and re-entry 8.674 seconds. These are a different map/content set from Small, not a matched loading speedup or a user loading-acceptance statement.
+
+The prepared CPU cache peaks at 134,178,844 bytes, below its fixed 134,217,728-byte cap, with two additional evictions in each warmed phase. There are 89 cumulative evictions by the final endpoint, including loading/re-entry; this is not 89 warmed gameplay evictions. App-accounted unit allocations peak at 167,867,560 bytes within the remaining 762,527,496-byte unit allowance. These are not actual process VRAM or a GPU budget. Aggregate worker, preparation and program-count changes are useful leads but do not causally attribute the Windows stalls. There is no synchronized enemy-arrival marker, so the user's automatic-test observation remains separate from exact row ownership.
+
+One owned Mac session verifies the selected warm-phase F9 route in the exact copied C4 payload. Pressing F9 approximately 20 seconds after native play starts captures an eight-second CPU/multiprocess trace during warmed-steady, retains the first Normal phase, labels overlapping/subsequent phases instrumented, detaches the debugger and exits cleanly. All four native phases are valid and errors are empty. It observes 30 program links/log checks and 247 texture-upload calls; mapped profiles include pixel preparation and native voxel rendering. This is tooling and hypothesis support only. A large profiler-start task is collection overhead, and nested/background GC/worker spans are not exclusive main-thread delays or GPU timings. See `.artifacts/windows-hd-diagnostic/c4-stress-warm-trace-support-v1.json` and the raw owned receipt. No source/application/resource bytes were changed.
+
+The next bounded Windows action uses existing C4: one fresh eight-player 4X Normal launch, F9 once about 20 seconds after the first live map appears, then final completion/export. The selected eight-second window targets the measured warmed submission stalls at approximate game times 22.7/25.9 seconds and the gap around 26.8 seconds. Actual overlap and recurrence must be checked from the returned timestamps; profiling can perturb timing and its startup must not be mistaken for the original stall. Do not repeat density/control matrices or issue a new candidate until the Windows trace distinguishes program waiting, uploads/preparation and other callbacks/GC/scheduling. See `windows-hd-c4-stress-trace-followup-20261008.txt`.
+
+The frozen package, previous acceptance, old reports/failures, fixed limits and Mac regressions remain preserved. Target integrity is PASS; broad Windows smoothness remains OPEN for the automatic enemy-related hitch. Loading and new visual anomalies are not separately confirmed, and all-map/physical-input acceptance remains outside this evidence. Main and advancing M2.3 are untouched; no merge, push or publication occurred. Continue this execution conversation for the focused trace and any evidence-backed repair.

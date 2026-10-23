@@ -1,0 +1,950 @@
+{
+  "status": "PASS_VALIDATED_WINDOWS_RESIDUAL_SHADER_WAIT_ATTRIBUTION",
+  "diagnosticId": "WINHD-20261008-D38F136-C3",
+  "diagnosticCommit": "c2bcc16dd5530e1c7031312317b104a270fe8cf2",
+  "runDirectory": "2026-10-09T02-32-48-796Z-small-4x-none",
+  "instrumented": true,
+  "boundary": "CPU waits and sample correlation; not GPU time or Normal A/B. Exact Windows material/family is unresolved.",
+  "traceStatus": {
+    "status": "CAPTURED",
+    "categories": [
+      "toplevel",
+      "v8",
+      "gpu",
+      "cc",
+      "viz",
+      "blink",
+      "renderer.scheduler",
+      "devtools.timeline",
+      "disabled-by-default-v8.gc",
+      "disabled-by-default-devtools.timeline",
+      "disabled-by-default-gpu.service"
+    ],
+    "missingCategories": [],
+    "debuggerTransport": "In-process Electron WebContents debugger; no TCP port",
+    "durationSeconds": 8,
+    "cpuProfile": "CAPTURED",
+    "requestedDuringStage": "first-use",
+    "overlap": "Existing/overlapping phases explicitly relabeled instrumented",
+    "materialProgramUploadEvents": "Trace dependent; unavailable if not emitted",
+    "webglCalls": {
+      "methods": {
+        "useProgram": {
+          "calls": 137461,
+          "cpuMs": 49.95000001788139,
+          "maximumCpuMs": 0.054999999701976776
+        },
+        "compileShader": {
+          "calls": 4,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        },
+        "linkProgram": {
+          "calls": 2,
+          "cpuMs": 0.02500000223517418,
+          "maximumCpuMs": 0.015000000596046448
+        },
+        "getProgramInfoLog": {
+          "calls": 2,
+          "cpuMs": 212.73499999940395,
+          "maximumCpuMs": 106.7199999988079
+        },
+        "texImage2D": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        },
+        "texSubImage2D": {
+          "calls": 131,
+          "cpuMs": 2.7850000113248825,
+          "maximumCpuMs": 0.5500000007450581
+        },
+        "compressedTexImage2D": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        },
+        "compressedTexSubImage2D": {
+          "calls": 0,
+          "cpuMs": 0,
+          "maximumCpuMs": 0
+        }
+      },
+      "programChanges": 137461,
+      "textureUploadBytes": "UNAVAILABLE",
+      "interpretation": "CPU WebGL call durations and counts; no GPU execution timing or residency measurement.",
+      "materialCalls": 371820,
+      "materialChanges": 313253
+    }
+  },
+  "frame": {
+    "rowIndex": 452,
+    "columns": [
+      "rafTimestampMs",
+      "frameIntervalMs",
+      "simulationCpuMs",
+      "simulationCalls",
+      "renderUpdateCpuMs",
+      "renderSubmissionCpuMs",
+      "drawCalls",
+      "triangles"
+    ],
+    "row": [
+      26323.555,
+      18.174999999999272,
+      2.369999997317791,
+      1,
+      7.314999997615814,
+      226.45500000193715,
+      757,
+      1079650
+    ],
+    "relativeToFirstGameFrameMs": 8442.980000000745,
+    "followingIntervalMs": 236.41500000000087,
+    "callback": {
+      "args": {
+        "data": {
+          "columnNumber": 28376,
+          "frame": "4AC1B75A86F7F9E62ADC2C35905A2371",
+          "functionName": "doFrame",
+          "isolate": "17024731207465182119",
+          "lineNumber": 64,
+          "sampleTraceId": 771490201427117,
+          "scriptId": "203",
+          "url": "ra2://game/assets/WorldInteractionFactory-wvuSn0lj.js"
+        }
+      },
+      "cat": "devtools.timeline",
+      "dur": 236187,
+      "name": "FunctionCall",
+      "ph": "X",
+      "pid": 2776,
+      "tdur": 22949,
+      "tid": 9928,
+      "ts": 32154216319,
+      "tts": 20472710
+    },
+    "callbackDurationMatchErrorMs": 0.047000003129255674
+  },
+  "waitClusters": [
+    {
+      "firstSampleMonotonicUs": 32154234861,
+      "lastSampleMonotonicUs": 32154338668,
+      "sampleWeightMs": 105.318,
+      "stack": [
+        {
+          "columnNumber": -1,
+          "functionName": "getProgramInfoLog",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        {
+          "columnNumber": 36,
+          "functionName": "gl.<computed>",
+          "lineNumber": 161,
+          "scriptId": "171",
+          "url": ""
+        },
+        {
+          "columnNumber": 283,
+          "functionName": "C",
+          "lineNumber": 3990,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 279,
+          "functionName": "getUniforms",
+          "lineNumber": 3997,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 39284,
+          "functionName": "bt",
+          "lineNumber": 4048,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 28333,
+          "functionName": "Bh.renderBufferDirect",
+          "lineNumber": 4048,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 36160,
+          "functionName": "ht",
+          "lineNumber": 4048,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 34381,
+          "functionName": "pt",
+          "lineNumber": 4048,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 31486,
+          "functionName": "Bh.render",
+          "lineNumber": 4048,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 6988,
+          "functionName": "",
+          "lineNumber": 3,
+          "scriptId": "28",
+          "url": "ra2://game/assets/App-D3iiKjkA.js"
+        },
+        {
+          "columnNumber": 6791,
+          "functionName": "render",
+          "lineNumber": 3,
+          "scriptId": "28",
+          "url": "ra2://game/assets/App-D3iiKjkA.js"
+        },
+        {
+          "columnNumber": 35,
+          "functionName": "renderer.render",
+          "lineNumber": 97,
+          "scriptId": "171",
+          "url": ""
+        },
+        {
+          "columnNumber": 30790,
+          "functionName": "render",
+          "lineNumber": 63,
+          "scriptId": "203",
+          "url": "ra2://game/assets/WorldInteractionFactory-wvuSn0lj.js"
+        },
+        {
+          "columnNumber": 28375,
+          "functionName": "doFrame",
+          "lineNumber": 63,
+          "scriptId": "203",
+          "url": "ra2://game/assets/WorldInteractionFactory-wvuSn0lj.js"
+        },
+        {
+          "columnNumber": -1,
+          "functionName": "(root)",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "firstSampleMonotonicUs": 32154344861,
+      "lastSampleMonotonicUs": 32154449112,
+      "sampleWeightMs": 105.827,
+      "stack": [
+        {
+          "columnNumber": -1,
+          "functionName": "getProgramInfoLog",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        {
+          "columnNumber": 36,
+          "functionName": "gl.<computed>",
+          "lineNumber": 161,
+          "scriptId": "171",
+          "url": ""
+        },
+        {
+          "columnNumber": 283,
+          "functionName": "C",
+          "lineNumber": 3990,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 279,
+          "functionName": "getUniforms",
+          "lineNumber": 3997,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 39284,
+          "functionName": "bt",
+          "lineNumber": 4048,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 28333,
+          "functionName": "Bh.renderBufferDirect",
+          "lineNumber": 4048,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 36160,
+          "functionName": "ht",
+          "lineNumber": 4048,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 34381,
+          "functionName": "pt",
+          "lineNumber": 4048,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 31486,
+          "functionName": "Bh.render",
+          "lineNumber": 4048,
+          "scriptId": "13",
+          "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+        },
+        {
+          "columnNumber": 6988,
+          "functionName": "",
+          "lineNumber": 3,
+          "scriptId": "28",
+          "url": "ra2://game/assets/App-D3iiKjkA.js"
+        },
+        {
+          "columnNumber": 6791,
+          "functionName": "render",
+          "lineNumber": 3,
+          "scriptId": "28",
+          "url": "ra2://game/assets/App-D3iiKjkA.js"
+        },
+        {
+          "columnNumber": 35,
+          "functionName": "renderer.render",
+          "lineNumber": 97,
+          "scriptId": "171",
+          "url": ""
+        },
+        {
+          "columnNumber": 30790,
+          "functionName": "render",
+          "lineNumber": 63,
+          "scriptId": "203",
+          "url": "ra2://game/assets/WorldInteractionFactory-wvuSn0lj.js"
+        },
+        {
+          "columnNumber": 28375,
+          "functionName": "doFrame",
+          "lineNumber": 63,
+          "scriptId": "203",
+          "url": "ra2://game/assets/WorldInteractionFactory-wvuSn0lj.js"
+        },
+        {
+          "columnNumber": -1,
+          "functionName": "(root)",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "getProgramInfoLogFractionOfSubmission": 0.9394140116031183,
+  "mappedProfileTopSelf": [
+    {
+      "selfMs": 1081.951,
+      "inclusiveMs": 1081.951,
+      "frame": {
+        "columnNumber": -1,
+        "functionName": "(program)",
+        "lineNumber": -1,
+        "scriptId": "0",
+        "url": ""
+      },
+      "original": null
+    },
+    {
+      "selfMs": 852.601,
+      "inclusiveMs": 856.785,
+      "frame": {
+        "columnNumber": 11398,
+        "functionName": "p",
+        "lineNumber": 3611,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 1735,
+        "column": 10,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 274.837,
+      "inclusiveMs": 747.151,
+      "frame": {
+        "columnNumber": 9320,
+        "functionName": "upload",
+        "lineNumber": 3946,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 6244,
+        "column": 8,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 267.853,
+      "inclusiveMs": 277.117,
+      "frame": {
+        "columnNumber": 9769,
+        "functionName": "a",
+        "lineNumber": 4048,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 14943,
+        "column": 10,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 211.145,
+      "inclusiveMs": 211.145,
+      "frame": {
+        "columnNumber": -1,
+        "functionName": "getProgramInfoLog",
+        "lineNumber": -1,
+        "scriptId": "0",
+        "url": ""
+      },
+      "original": null
+    },
+    {
+      "selfMs": 196.45,
+      "inclusiveMs": 1754.43,
+      "frame": {
+        "columnNumber": 39284,
+        "functionName": "bt",
+        "lineNumber": 4048,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 18060,
+        "column": 11,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 170.892,
+      "inclusiveMs": 1248.639,
+      "frame": {
+        "columnNumber": 10584,
+        "functionName": "s",
+        "lineNumber": 3611,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 1599,
+        "column": 10,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 165.558,
+      "inclusiveMs": 165.558,
+      "frame": {
+        "columnNumber": -1,
+        "functionName": "uniform2fv",
+        "lineNumber": -1,
+        "scriptId": "0",
+        "url": ""
+      },
+      "original": null
+    },
+    {
+      "selfMs": 164.781,
+      "inclusiveMs": 3510.231,
+      "frame": {
+        "columnNumber": 36160,
+        "functionName": "ht",
+        "lineNumber": 4048,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 17856,
+        "column": 11,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 122.681,
+      "inclusiveMs": 122.681,
+      "frame": {
+        "columnNumber": 46897,
+        "functionName": "multiplyMatrices",
+        "lineNumber": 0,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+        "line": 10331,
+        "column": 1,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 116.391,
+      "inclusiveMs": 624.001,
+      "frame": {
+        "columnNumber": 60869,
+        "functionName": "updateMatrixWorld",
+        "lineNumber": 0,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+        "line": 12799,
+        "column": 1,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 114.42,
+      "inclusiveMs": 261.877,
+      "frame": {
+        "columnNumber": 148,
+        "functionName": "hi",
+        "lineNumber": 63,
+        "scriptId": "203",
+        "url": "ra2://game/assets/WorldInteractionFactory-wvuSn0lj.js"
+      },
+      "original": {
+        "source": "../../../../src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+        "line": 22,
+        "column": 16,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 112.777,
+      "inclusiveMs": 198.797,
+      "frame": {
+        "columnNumber": 1670,
+        "functionName": "update",
+        "lineNumber": 63,
+        "scriptId": "203",
+        "url": "ra2://game/assets/WorldInteractionFactory-wvuSn0lj.js"
+      },
+      "original": {
+        "source": "../../../../src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+        "line": 119,
+        "column": 4,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 107.812,
+      "inclusiveMs": 107.812,
+      "frame": {
+        "columnNumber": 46897,
+        "functionName": "multiplyMatrices",
+        "lineNumber": 0,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+        "line": 10331,
+        "column": 1,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 107.544,
+      "inclusiveMs": 107.544,
+      "frame": {
+        "columnNumber": -1,
+        "functionName": "(garbage collector)",
+        "lineNumber": -1,
+        "scriptId": "0",
+        "url": ""
+      },
+      "original": null
+    },
+    {
+      "selfMs": 106.441,
+      "inclusiveMs": 106.441,
+      "frame": {
+        "columnNumber": -1,
+        "functionName": "bindVertexArray",
+        "lineNumber": -1,
+        "scriptId": "0",
+        "url": ""
+      },
+      "original": null
+    },
+    {
+      "selfMs": 98.898,
+      "inclusiveMs": 416.532,
+      "frame": {
+        "columnNumber": 60869,
+        "functionName": "updateMatrixWorld",
+        "lineNumber": 0,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+        "line": 12799,
+        "column": 1,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 97.728,
+      "inclusiveMs": 3211.024,
+      "frame": {
+        "columnNumber": 28333,
+        "functionName": "Bh.renderBufferDirect",
+        "lineNumber": 4048,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 16953,
+        "column": 28,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 96.494,
+      "inclusiveMs": 96.494,
+      "frame": {
+        "columnNumber": 46897,
+        "functionName": "multiplyMatrices",
+        "lineNumber": 0,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+        "line": 10331,
+        "column": 1,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 94.737,
+      "inclusiveMs": 94.737,
+      "frame": {
+        "columnNumber": 10942,
+        "functionName": "d",
+        "lineNumber": 3611,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 1656,
+        "column": 10,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 92.595,
+      "inclusiveMs": 259.246,
+      "frame": {
+        "columnNumber": 33360,
+        "functionName": "ft",
+        "lineNumber": 4048,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 17594,
+        "column": 11,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 91.078,
+      "inclusiveMs": 91.078,
+      "frame": {
+        "columnNumber": 46897,
+        "functionName": "multiplyMatrices",
+        "lineNumber": 0,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+        "line": 10331,
+        "column": 1,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 90.666,
+      "inclusiveMs": 90.666,
+      "frame": {
+        "columnNumber": 46897,
+        "functionName": "multiplyMatrices",
+        "lineNumber": 0,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+        "line": 10331,
+        "column": 1,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 86.833,
+      "inclusiveMs": 86.833,
+      "frame": {
+        "columnNumber": -1,
+        "functionName": "bufferSubData",
+        "lineNumber": -1,
+        "scriptId": "0",
+        "url": ""
+      },
+      "original": null
+    },
+    {
+      "selfMs": 83.681,
+      "inclusiveMs": 83.681,
+      "frame": {
+        "columnNumber": -1,
+        "functionName": "bindTexture",
+        "lineNumber": -1,
+        "scriptId": "0",
+        "url": ""
+      },
+      "original": null
+    },
+    {
+      "selfMs": 83.62,
+      "inclusiveMs": 146.987,
+      "frame": {
+        "columnNumber": 3121,
+        "functionName": "Np",
+        "lineNumber": 3946,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 5405,
+        "column": 9,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 81.903,
+      "inclusiveMs": 81.903,
+      "frame": {
+        "columnNumber": 46897,
+        "functionName": "multiplyMatrices",
+        "lineNumber": 0,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+        "line": 10331,
+        "column": 1,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 77.256,
+      "inclusiveMs": 797.751,
+      "frame": {
+        "columnNumber": 60869,
+        "functionName": "updateMatrixWorld",
+        "lineNumber": 0,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+        "line": 12799,
+        "column": 1,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 73.095,
+      "inclusiveMs": 466.071,
+      "frame": {
+        "columnNumber": 33360,
+        "functionName": "ft",
+        "lineNumber": 4048,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 17594,
+        "column": 11,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 70.813,
+      "inclusiveMs": 536.884,
+      "frame": {
+        "columnNumber": 33360,
+        "functionName": "ft",
+        "lineNumber": 4048,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 17594,
+        "column": 11,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 60.83,
+      "inclusiveMs": 121.517,
+      "frame": {
+        "columnNumber": 33360,
+        "functionName": "ft",
+        "lineNumber": 4048,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.module.js",
+        "line": 17594,
+        "column": 11,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 60.602,
+      "inclusiveMs": 136.809,
+      "frame": {
+        "columnNumber": 10436,
+        "functionName": "updateFromMeshes",
+        "lineNumber": 0,
+        "scriptId": "29",
+        "url": "ra2://game/assets/BufferGeometrySerializer-CtDucUeS.js"
+      },
+      "original": {
+        "source": "../../../../src/engine/gfx/batch/MergedSpriteMesh.ts",
+        "line": 85,
+        "column": 4,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 56.528,
+      "inclusiveMs": 125.42,
+      "frame": {
+        "columnNumber": 12829,
+        "functionName": "update",
+        "lineNumber": 103,
+        "scriptId": "203",
+        "url": "ra2://game/assets/WorldInteractionFactory-wvuSn0lj.js"
+      },
+      "original": {
+        "source": "../../../../src/engine/renderable/entity/Building.ts",
+        "line": 429,
+        "column": 4,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 55.865,
+      "inclusiveMs": 105.673,
+      "frame": {
+        "columnNumber": 60384,
+        "functionName": "traverseVisible",
+        "lineNumber": 0,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+        "line": 12726,
+        "column": 1,
+        "name": null
+      }
+    },
+    {
+      "selfMs": 47.82,
+      "inclusiveMs": 263.253,
+      "frame": {
+        "columnNumber": 61242,
+        "functionName": "updateWorldMatrix",
+        "lineNumber": 0,
+        "scriptId": "13",
+        "url": "ra2://game/assets/three.module-BqxyVk8C.js"
+      },
+      "original": {
+        "source": "../../../../../ra2-hd/node_modules/three/build/three.core.js",
+        "line": 12846,
+        "column": 1,
+        "name": null
+      }
+    }
+  ],
+  "otherSubmissionStalls": [
+    {
+      "rowIndex": 0,
+      "row": [
+        17862.905,
+        null,
+        0,
+        0,
+        53.51500000059605,
+        227.41499999910593,
+        687,
+        1120440
+      ],
+      "attribution": "UNRESOLVED outside the matched callback"
+    }
+  ],
+  "largestInstrumentedInterval": {
+    "intervalMs": 533.4150000000009,
+    "boundary": "Instrumented capture; excluded from Normal performance. Startup attribution is separate."
+  },
+  "kitVerificationReceipt": "MISSING; full return CRC/hash identity passes separately.",
+  "errors": [],
+  "gpuTime": "UNAVAILABLE",
+  "actualProcessVram": "UNAVAILABLE",
+  "returnArchive": {
+    "path": "/Users/Aone/Desktop/WINHD-20261008-D38F136-C3-RETURN-2026-10-09T02-34-56-910Z.zip",
+    "bytes": 162943829,
+    "sha256": "10528d08a62145cd8453a6c4d9e3405c69016ea4a24d3f84e79021afa56ddb34",
+    "members": 23,
+    "validation": ".artifacts/windows-hd-diagnostic/returns/2026-10-09T02-34-56-910Z-c3-validation.json"
+  },
+  "priorNormalRun": "BYTE_IDENTICAL_TO_PREVIOUS_RETURN; reuse existing C2/C3 Normal comparison"
+}

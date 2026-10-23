@@ -1,0 +1,946 @@
+{
+  "schema": "m2-3-r8-oil-stationary-feedback-v1",
+  "date": "2026-10-10",
+  "status": "PASS_TECHNICAL_DELIVERY_USER_VISUAL_PENDING",
+  "runtimeSourceCommit": "d5a2d555d4b2561f29075554f5ea367530259065",
+  "applicationSourceMatchesR7": "EXACT_fd548c182b634daba5675311a229881402174eea",
+  "shippingSourceParity": "EXACT_SRC_AND_DESKTOP_AFTER_RUNTIME_FREEZE",
+  "target": "darwin-arm64",
+  "scope": {
+    "sharedResources": true,
+    "changedEnvironmentFamilies": [
+      "environment-ctoild"
+    ],
+    "changedMembers": [
+      "ctoild_a.shp"
+    ],
+    "changedNativeAnimationBodyFrames": 64,
+    "changedTerrainGroups": [],
+    "applicationChange": false,
+    "mapCoordinateOverrides": false,
+    "rulesTimingGeometryAlphaOwnerDataChanges": false
+  },
+  "diagnosis": {
+    "r7Visual": "USER_REJECTED_STATIONARY_TANK_MOTION_AND_MISSING_INTACT_OCCUPIED_ANIMATION",
+    "cause": "A broad walking-beam mask and full per-pose model samples included stationary tank/support material. Native oil animation includes a static cylinder region and a complementary body cutout.",
+    "repair": "Use one R6 composed reference per health state for stationary tank, supports and floor; map the isolated authored beam to native foreground coordinates and retain coherent R7 drive material.",
+    "transparentNativeCoverageFringes": "Original alpha/coverage unchanged; excluded from material invariance checks."
+  },
+  "environment": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-3-oil-stationary-complete-v21",
+    "sha256": "7c51c9dc0f93015afeda9c17641e5c1063695db760c299395c316fb167433fe9"
+  },
+  "terrain": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-3-gameplay-feedback-v12",
+    "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+  },
+  "prepared": {
+    "schemaVersion": 1,
+    "sha256": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b",
+    "indexPath": "prepared-hd/indexes/b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b.json"
+  },
+  "authoring": {
+    "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/authoring/receipt.json",
+    "bytes": 1246,
+    "sha256": "8d314fc314518c35da31e844abc7952457c5f7ef8a96b9952cd238529fa7162e",
+    "status": "GENERATED_ISOLATED_WALKING_BEAM_MATERIAL"
+  },
+  "oilExport": {
+    "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/oil-export-v8.json",
+    "bytes": 15430,
+    "sha256": "a6443c3b072d32c107ece147a597393325a6b436410de0c810322242f4cacabf",
+    "status": "EXPORTED_STATIONARY_OIL_PENDING_INDEPENDENT_AND_NATIVE_REVIEW"
+  },
+  "stationaryMaterialChecks": {
+    "status": "PASS_NATIVE_STATIONARY_PIXELS_AND_COMMON_BODY_REGISTRATION",
+    "cases": [
+      {
+        "density": 2,
+        "state": "normal",
+        "fixedPixels": 1074,
+        "nativeCoverageFringesExcluded": 2,
+        "r7MovingFixedPixels": 379,
+        "r8MovingFixedPixels": 0,
+        "commonReferenceMismatchPixels": 0
+      },
+      {
+        "density": 2,
+        "state": "damaged",
+        "fixedPixels": 855,
+        "nativeCoverageFringesExcluded": 1,
+        "r7MovingFixedPixels": 256,
+        "r8MovingFixedPixels": 0,
+        "commonReferenceMismatchPixels": 0
+      },
+      {
+        "density": 4,
+        "state": "normal",
+        "fixedPixels": 4276,
+        "nativeCoverageFringesExcluded": 28,
+        "r7MovingFixedPixels": 1513,
+        "r8MovingFixedPixels": 0,
+        "commonReferenceMismatchPixels": 0
+      },
+      {
+        "density": 4,
+        "state": "damaged",
+        "fixedPixels": 3398,
+        "nativeCoverageFringesExcluded": 26,
+        "r7MovingFixedPixels": 1023,
+        "r8MovingFixedPixels": 0,
+        "commonReferenceMismatchPixels": 0
+      }
+    ],
+    "movingSource": "New isolated walking-beam master; retained R7 drive material",
+    "stationarySource": "Common R6 composed material; native stationary tank, support and floor samples"
+  },
+  "preservation": {
+    "status": "PASS_R7_ACCEPTED_RESOURCE_AND_PROTECTED_PATH_PRESERVATION",
+    "unchangedFamilies": 237,
+    "exactNonAnimationFiles": 1980,
+    "terrainGroupsExact": 23,
+    "protectedPaths": [
+      {
+        "file": "src/engine/gfx/CachedMeshVisibility.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "a10361b84bf0ba558a4dd6565b36d15c04396e498596083000484c02c939d694"
+      },
+      {
+        "file": "src/engine/gfx/SceneMatrices.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "79ba66a3c1d96e78e2ddfc09f0528818d6317410c0a8ea8c9aea6b3d5b61a6bf"
+      },
+      {
+        "file": "src/engine/gfx/batch/MeshBatchManager.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "12cefd125b525f8e6968d583271fe194745152b6788a6ec4452b55d11dea0b1b"
+      },
+      {
+        "file": "src/engine/renderable/WorldScene.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "4967e6396f75ac783376d7df377e7e3b6f1b5333b7ecfb8b0848d7aea6a836ba"
+      },
+      {
+        "file": "src/engine/renderable/entity/plugin/MindControlStatusPlugin.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "a3f8527bff5e844a406976b9f5f4910e1aef1ac92615b7528161d7d4595b9c50"
+      },
+      {
+        "file": "src/engine/renderable/entity/plugin/mindControlStatusPalette.ts",
+        "status": "PRESERVED_ABSENCE"
+      },
+      {
+        "file": "src/engine/renderable/unitVxl/VxlUnitRenderer.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "9c6f699a5fa124f12f626cca7f38735177e8affc35fbab4891c055e4239473f3"
+      },
+      {
+        "file": "src/game/art/Art.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "a23baece5eed800716b104dd8b16728b0680f4f00a2401c2c2979f2e4493e897"
+      },
+      {
+        "file": "src/gui/UiScene.ts",
+        "status": "PASS_ACCEPTED_SHA_UNCHANGED_IN_MAIN_AND_TASK",
+        "sha256": "76a504a4b03cda28c958020004eaa136c64c3ec13bd41e04b2170a79720210bf"
+      }
+    ],
+    "applicationSourceParity": "EXACT_R7_fd548c1",
+    "bodyFlagSourceGeometryAlphaOwnerDataTiming": "EXACT_R7",
+    "selectedPack": "environment-m2-3-oil-stationary-complete-v21"
+  },
+  "packageResourceParity": {
+    "status": "PASS_EXACT_ALL_NON_ENVIRONMENT_WORLD_AND_UI_PACKAGE_PINS",
+    "checkedEntries": 5098,
+    "r7RuntimeSourceCommit": "fd548c182b634daba5675311a229881402174eea",
+    "r8RuntimeSourceCommit": "d5a2d555d4b2561f29075554f5ea367530259065",
+    "uiManifestSha256": "205c4780094f10e3685a8070ed2f0502e64e4ad1d8eeda25658744dbd481cb4b",
+    "policy": "Only the selected complete environment pack and selector are excluded; its per-member preservation is independently verified."
+  },
+  "nativeCases": [
+    {
+      "case": "native-oil-yr-4x-v2",
+      "edition": "yr",
+      "density": 4,
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "receipt": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-4x-v2/report.json",
+      "sha256": "a7f2924ae6b3c65f181987adebfc9a3a0acb20f585ad16985d770b9b1a484746",
+      "clips": [
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-4x-v2/oil-normal-motion.webm",
+          "actor": {
+            "id": 1043,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 240,
+              "g": 240,
+              "b": 240
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-4x-v2/oil-player-normal-motion.webm",
+          "actor": {
+            "id": 1043,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 255,
+              "g": 24,
+              "b": 24
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-4x-v2/oil-enemy-normal-motion.webm",
+          "actor": {
+            "id": 1043,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 34,
+              "g": 105,
+              "b": 212
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-4x-v2/oil-damaged-motion.webm",
+          "actor": {
+            "id": 1043,
+            "name": "CAOILD",
+            "health": 35,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 255,
+              "g": 24,
+              "b": 24
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-4x-v2/oil-enemy-damaged-motion.webm",
+          "actor": {
+            "id": 1043,
+            "name": "CAOILD",
+            "health": 35,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 34,
+              "g": 105,
+              "b": 212
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        }
+      ],
+      "combinedWorld": {
+        "terrain": 833003360,
+        "environment": 62219852,
+        "faction": 171688724,
+        "total": 1066911936,
+        "limit": 1342177280
+      },
+      "release": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 29750496,
+        "total": 171688724,
+        "limit": 446954068
+      }
+    },
+    {
+      "case": "native-oil-ra2-2x",
+      "edition": "ra2",
+      "density": 2,
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "receipt": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-2x/report.json",
+      "sha256": "cae2eccf63771a3c42f1b97ba47413ad876bff41084199c6b702642fcefb8436",
+      "clips": [
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-2x/oil-normal-motion.webm",
+          "actor": {
+            "id": 1497,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 240,
+              "g": 240,
+              "b": 240
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-2x/oil-player-normal-motion.webm",
+          "actor": {
+            "id": 1497,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 255,
+              "g": 24,
+              "b": 24
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-2x/oil-enemy-normal-motion.webm",
+          "actor": {
+            "id": 1497,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 34,
+              "g": 105,
+              "b": 212
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-2x/oil-damaged-motion.webm",
+          "actor": {
+            "id": 1497,
+            "name": "CAOILD",
+            "health": 35,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 255,
+              "g": 24,
+              "b": 24
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-2x/oil-enemy-damaged-motion.webm",
+          "actor": {
+            "id": 1497,
+            "name": "CAOILD",
+            "health": 35,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 34,
+              "g": 105,
+              "b": 212
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        }
+      ],
+      "combinedWorld": {
+        "terrain": 214936944,
+        "environment": 31503060,
+        "faction": 47656812,
+        "total": 294096816,
+        "limit": 536870912
+      },
+      "release": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 7421532,
+        "total": 47656812,
+        "limit": 290430908
+      }
+    },
+    {
+      "case": "native-oil-yr-2x",
+      "edition": "yr",
+      "density": 2,
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "receipt": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-2x/report.json",
+      "sha256": "7689a2919de84cd29b7a1e1ec74168e67c396b38be803daf08b85b256951ab0e",
+      "clips": [
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-2x/oil-normal-motion.webm",
+          "actor": {
+            "id": 1043,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 240,
+              "g": 240,
+              "b": 240
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-2x/oil-player-normal-motion.webm",
+          "actor": {
+            "id": 1043,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 255,
+              "g": 24,
+              "b": 24
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-2x/oil-enemy-normal-motion.webm",
+          "actor": {
+            "id": 1043,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 34,
+              "g": 105,
+              "b": 212
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-2x/oil-damaged-motion.webm",
+          "actor": {
+            "id": 1043,
+            "name": "CAOILD",
+            "health": 35,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 255,
+              "g": 24,
+              "b": 24
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-yr-2x/oil-enemy-damaged-motion.webm",
+          "actor": {
+            "id": 1043,
+            "name": "CAOILD",
+            "health": 35,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 34,
+              "g": 105,
+              "b": 212
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        }
+      ],
+      "combinedWorld": {
+        "terrain": 213098336,
+        "environment": 16322236,
+        "faction": 47656812,
+        "total": 277077384,
+        "limit": 536870912
+      },
+      "release": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 7421532,
+        "total": 47656812,
+        "limit": 307450340
+      }
+    },
+    {
+      "case": "native-oil-ra2-4x",
+      "edition": "ra2",
+      "density": 4,
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "receipt": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-4x/report.json",
+      "sha256": "743ff0b1669fee1376bc58f8f4e75100c421aa01ac724aebdb6f23fb971a7090",
+      "clips": [
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-4x/oil-normal-motion.webm",
+          "actor": {
+            "id": 1497,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 240,
+              "g": 240,
+              "b": 240
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-4x/oil-player-normal-motion.webm",
+          "actor": {
+            "id": 1497,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 255,
+              "g": 24,
+              "b": 24
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-4x/oil-enemy-normal-motion.webm",
+          "actor": {
+            "id": 1497,
+            "name": "CAOILD",
+            "health": 100,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 34,
+              "g": 105,
+              "b": 212
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-4x/oil-damaged-motion.webm",
+          "actor": {
+            "id": 1497,
+            "name": "CAOILD",
+            "health": 35,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 255,
+              "g": 24,
+              "b": 24
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        },
+        {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-oil-ra2-4x/oil-enemy-damaged-motion.webm",
+          "actor": {
+            "id": 1497,
+            "name": "CAOILD",
+            "health": 35,
+            "maxHitPoints": 1000,
+            "owner": {
+              "r": 34,
+              "g": 105,
+              "b": 212
+            }
+          },
+          "sourceBuffer": [
+            3840,
+            2160
+          ],
+          "fps": 15,
+          "timing": "UNCHANGED_NATIVE_GAME_TICKS"
+        }
+      ],
+      "combinedWorld": {
+        "terrain": 840609136,
+        "environment": 120369100,
+        "faction": 171688724,
+        "total": 1132666960,
+        "limit": 1342177280
+      },
+      "release": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 29750496,
+        "total": 171688724,
+        "limit": 381199044
+      }
+    }
+  ],
+  "extractedCases": [
+    {
+      "case": "extracted-oil-ra2-2x",
+      "edition": "ra2",
+      "density": 2,
+      "receipt": {
+        "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/extracted-oil-ra2-2x/report.json",
+        "bytes": 3502083,
+        "sha256": "f2028bba2aec477f7dafe840633720a6621ea3f1a60dca75deab16010612912f",
+        "status": "PASS_SELECTED_NATIVE_CASES"
+      },
+      "states": [
+        "CAOILD-hd",
+        "CAOILD-player",
+        "CAOILD-damaged",
+        "CAOILD-enemy-damaged"
+      ],
+      "combinedWorld": {
+        "terrain": 214936944,
+        "environment": 31503060,
+        "faction": 47656812,
+        "total": 294096816,
+        "limit": 536870912
+      }
+    },
+    {
+      "case": "extracted-oil-yr-4x",
+      "edition": "yr",
+      "density": 4,
+      "receipt": {
+        "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/extracted-oil-yr-4x/report.json",
+        "bytes": 6340570,
+        "sha256": "4c79a9944ee4f1a0cc21637a135d1c3139b6f79ee27d6cb2e549f8227969b78d",
+        "status": "PASS_SELECTED_NATIVE_CASES"
+      },
+      "states": [
+        "CAOILD-hd",
+        "CAOILD-player",
+        "CAOILD-damaged",
+        "CAOILD-enemy-damaged"
+      ],
+      "combinedWorld": {
+        "terrain": 833003360,
+        "environment": 62219852,
+        "faction": 171688724,
+        "total": 1066911936,
+        "limit": 1342177280
+      }
+    }
+  ],
+  "reusedNativeLoadMatrix": {
+    "basis": "REUSED_CLOSED_R7_NOT_RERUN",
+    "reason": "Application src, native core/map bytes and all non-oil resources are exact. The R7 native foundation delimiter repair remains unchanged.",
+    "cases": [
+      {
+        "edition": "yr",
+        "count": 80,
+        "density": 4,
+        "receipt": {
+          "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r7-v1/native-all-yr-4x-v1/report.json",
+          "bytes": 2672817,
+          "sha256": "f03e71c4a0a6fa8389448fd4208975db5d12609c0795d6246911096bb5963a73",
+          "status": "PASS_SELECTED_NATIVE_CASES"
+        },
+        "sameProcessReentries": 79,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "glErrors": 0
+      },
+      {
+        "edition": "ra2",
+        "count": 31,
+        "density": 4,
+        "receipt": {
+          "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r7-v1/native-all-ra2-4x-v1/report.json",
+          "bytes": 1123153,
+          "sha256": "44d53b2be511cc9dbd843b95c928b67a9849102d437e8c7c9917943d64984b7b",
+          "status": "PASS_SELECTED_NATIVE_CASES"
+        },
+        "sameProcessReentries": 30,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "glErrors": 0
+      }
+    ]
+  },
+  "checks": {
+    "oil-preservation-v1.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/oil-preservation-v1.json",
+      "bytes": 2873,
+      "sha256": "db1118034da90a9dffd3fb120ec18330682931a3bdf669a16e8f2ef6e9bb5fb6",
+      "status": "PASS"
+    },
+    "environment-assembly-v1.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/environment-assembly-v1.json",
+      "bytes": 390278,
+      "sha256": "97f137290cc297f8fe8b5e0ca262b73923a80403fa7efc371b116993dc111850",
+      "status": "PASS_COMPLETE_FAMILY_REPLACEMENT_EXACT_UNAFFECTED_BYTES"
+    },
+    "registration-v1.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/registration-v1.json",
+      "bytes": 869,
+      "sha256": "d7d792d91bf6a5089205a3b5b39c48bdd6465b00e7528680985304d8ebd3da07",
+      "status": "PASS_COMPLETE_FAMILIES_DENSITIES_ALLOCATION_FALLBACK_DISPOSAL"
+    },
+    "preservation-v1.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/preservation-v1.json",
+      "bytes": 2212,
+      "sha256": "1cd3201292e5d09cb67bf618d02c49a1993d38eac3fcec21d7ea0f558dc94f7d",
+      "status": "PASS_R7_ACCEPTED_RESOURCE_AND_PROTECTED_PATH_PRESERVATION"
+    },
+    "package-resource-parity-v1.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/package-resource-parity-v1.json",
+      "bytes": 474,
+      "sha256": "4c689b10dffa683a63f946f6713753989865fd8358af472fec6fb0ec208c9c91",
+      "status": "PASS_EXACT_ALL_NON_ENVIRONMENT_WORLD_AND_UI_PACKAGE_PINS"
+    },
+    "source-checks-final-v1.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/source-checks-final-v1.json",
+      "bytes": 300,
+      "sha256": "b157b77a12817136de35558edac3939a36f249466cb6ac246a0811e73c32ffce",
+      "status": "PASS_FINAL_SHIPPING_SRC_DESKTOP_PARITY_AND_DELIVERY_HELPER_SYNTAX"
+    },
+    "native-summary-v1.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/native-summary-v1.json",
+      "bytes": 14357,
+      "sha256": "2c538e7fca79dec7930dfc8535106312b95e927823769fd88c982e64dc0a9fb9",
+      "status": "PASS_ALL_FOUR_COPIED_EDITIONS_DENSITIES_FIVE_OIL_STATES"
+    },
+    "extracted-summary-v1.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/extracted-summary-v1.json",
+      "bytes": 1522,
+      "sha256": "beee62e4e965cc9c1c64120c38c32871139255b1e9b6fbc87dc4f656ea5de554",
+      "status": "PASS_BOTH_ACTUAL_DESKTOP_EXTRACTED_DENSITIES"
+    },
+    "oil-static-v10/report.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/oil-static-v10/report.json",
+      "bytes": 1221,
+      "sha256": "9ec26f39ef96123b11fafb7f6c9dc08eaf6d5cfa3a620df9c2303eb2a86a5d16",
+      "status": "PASS_NATIVE_STATIONARY_PIXELS_AND_COMMON_BODY_REGISTRATION"
+    },
+    "offline-review-archive-v1/archive-receipt.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/offline-review-archive-v1/archive-receipt.json",
+      "bytes": 386,
+      "sha256": "efe0b29c4bcb8f43706b8f319a325d11fd576e59a74aa2368da01ebf9289b99d",
+      "status": "PASS_EXACT_EMBEDDED_MEDIA_AND_OFFLINE_ARCHIVE_BYTES"
+    },
+    "offline-review-native-v1/report.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/offline-review-native-v1/report.json",
+      "bytes": 7172,
+      "sha256": "c08ccf27eb6cac1f2ed161c336f749de7f1364033d5bbd522154d3d9d7736d1c",
+      "status": "PASS_OFFLINE_NATIVE_HTML_RENDERING_EMBEDDED_IMAGES_ACTUAL_DIMENSIONS"
+    },
+    "desktop-review-native-v1/report.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/desktop-review-native-v1/report.json",
+      "bytes": 7172,
+      "sha256": "c08ccf27eb6cac1f2ed161c336f749de7f1364033d5bbd522154d3d9d7736d1c",
+      "status": "PASS_OFFLINE_NATIVE_HTML_RENDERING_EMBEDDED_IMAGES_ACTUAL_DIMENSIONS"
+    },
+    "desktop-delivery-v1/archive-receipt.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/desktop-delivery-v1/archive-receipt.json",
+      "bytes": 1849,
+      "sha256": "67f55fda52f50754b922dff5344c62bea3d19dd8dd05bfeea07d40d3639c1605",
+      "status": "PASS_COMPLETE_MAC_ARCHIVE_BYTES_LINKS_MODES_NO_PROFILES"
+    },
+    "desktop-extraction-v1/extracted-package-receipt.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/desktop-extraction-v1/extracted-package-receipt.json",
+      "bytes": 1436,
+      "sha256": "d025b5046ee5691fa79ab9f5668fa1774df5499bc55ebe4e8cf3c410779475f1",
+      "status": "PASS_ACTUAL_DESKTOP_ZIP_EXTRACTED_BYTES_LINKS_MODES"
+    },
+    "desktop-startup-v1/report.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/desktop-startup-v1/report.json",
+      "bytes": 5722,
+      "sha256": "989444c4a0f5e42a362d7d0e520f3e7747c7babcb2ec62167896139ec02399d4",
+      "status": "PASS_EXTRACTED_USER_LAUNCHER_AND_ALL_61_VISIBLE_MAP_TITLES"
+    },
+    "desktop-files-v1.json": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/desktop-files-v1.json",
+      "bytes": 2100,
+      "sha256": "2f0521f19fb14c494226d6d40ce7ebad6179d578fbae78000bd07d9fbc43029f",
+      "status": "PASS_DESKTOP_COPIES_MATCH_STAGED_BYTES"
+    }
+  },
+  "desktopFiles": {
+    "status": "PASS_DESKTOP_COPIES_MATCH_STAGED_BYTES",
+    "files": [
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R8-Desktop-Mac-Test-20261010.zip",
+        "bytes": 3780128878,
+        "sha256": "beb6ac425fb07d6223e387abd1fda4b170ad624ee47776e9dd1e7d47fef46c6f"
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R8-Offline-Review-20261010.zip",
+        "bytes": 49315572,
+        "sha256": "216ef51fb5a052821f3cc12bb88a6fe0353e7c392ede22c606fb124e24bb6050"
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R8-Temperate-Map-Test-List-20261010.txt",
+        "bytes": 3959,
+        "sha256": "565859b402195a6c6fb69aca88974c042c1b8560950ff96de6660ea471b50f22"
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R8-Temperate-Map-Test-List-20261010.csv",
+        "bytes": 5522,
+        "sha256": "997cd350adc2d3da7e35bc088a461a014e01d7045e0f97dd0eee70a633c24d08"
+      }
+    ],
+    "reviewFiles": [
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R8-Offline-Review-20261010/Review.html",
+        "bytes": 4361808,
+        "sha256": "ae45b286706a9bdd8e8610f4dffb4435db162f07eea76858a8fb80f026061025"
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R8-Offline-Review-20261010/intact-2x.html",
+        "bytes": 14129228,
+        "sha256": "9fa87c24c5f9f8520aeea7d72ec625ca84f1055f212a9ca2e6885f426742cb8b"
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R8-Offline-Review-20261010/review-manifest.json",
+        "bytes": 18791,
+        "sha256": "d10d0ccb1d051e0b12611c379a787b99da7f35c52534378e19cb9966b8b5bc75"
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R8-Offline-Review-20261010/intact-4x.html",
+        "bytes": 20134802,
+        "sha256": "9f76b2ebf242ddc1589bbac5faa56b78b3469c32f1b24ea3ebdb27d8833ba1d4"
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R8-Offline-Review-20261010/damaged.html",
+        "bytes": 26563606,
+        "sha256": "dbf8179d7544716f0fe2dfe3614c33d4eec78d54188e2069856ad2621e511c1d"
+      }
+    ],
+    "reviewEntry": "/Users/Aone/Desktop/M2.3-R8-Offline-Review-20261010/Review.html",
+    "reviewPages": 4,
+    "historicalR7WorkspaceArchive": "PASS_EXACT",
+    "historicalR7DesktopPresent": false
+  },
+  "review": {
+    "pages": 4,
+    "embeddedPictures": 15,
+    "embeddedVideos": 17,
+    "relativeLinks": 6,
+    "networkRequired": false,
+    "capturedDimensionsPreserved": true,
+    "intactOccupiedAnimation": "PLAYER_AND_ENEMY_HEALTH_100_PERCENT_AT_2X_AND_4X",
+    "nativeTiming": "UNCHANGED",
+    "beforeAfterTiming": "INDEPENDENT_UNSYNCHRONIZED_CLIPS"
+  },
+  "latestNativeAvailabilityExceptions": [
+    "environment-city01",
+    "environment-city02",
+    "environment-city03",
+    "environment-city04",
+    "environment-city05",
+    "environment-cteur04",
+    "environment-ctgefgl",
+    "environment-ctmsc12",
+    "environment-ctpars07",
+    "environment-ctrufgl",
+    "environment-ctusfgl"
+  ],
+  "historicalEvidence": {
+    "r7RecordSha256": "8d4868f73bea0c0564f79ef508864393aac59f6e01c078e6644172a0a8501678",
+    "r7FailedVisualPreserved": true,
+    "supersededR8CandidatesAndFailuresPreserved": true,
+    "candidateDisposition": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r8-v1/candidate-disposition-v1.json",
+      "bytes": 1088,
+      "sha256": "5e677e76599113db65f3b44e33233b7458e9ffffb06020e6408c487657e6ebea",
+      "status": "SELECTED_PATCH_V8_STATIC_PASS_NATIVE_REVIEW_PENDING"
+    }
+  },
+  "userVisualAcceptance": "PENDING_R8_OIL_STATIONARY_AND_INTACT_OCCUPIED_REVIEW",
+  "userGameplayAcceptance": "NOT_RECORDED_R8",
+  "windowsExecution": "NOT_RUN",
+  "physicalInput": "NOT_RUN",
+  "fullMatchEveryMap": "NOT_CLAIMED",
+  "mainIntegration": false,
+  "canonicalMainUntouched": true,
+  "mainHead": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+  "remotePush": false,
+  "publication": false,
+  "nextAction": "Continue R8 visual/gameplay feedback in this execution conversation. No new theater or integration until separately authorized."
+}

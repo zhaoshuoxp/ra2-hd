@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conscript — complete candidate review</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#172126;color:#edf1ec;font:18px/1.5 system-ui}
+main{max-width:1440px;padding:28px;margin:auto}h1{font-size:30px;margin:0 0 8px}h2{font-size:22px}
+p{max-width:1100px}.status{padding:12px 16px;background:#443728;border-left:4px solid #edb976}
+.controls{display:flex;flex-wrap:wrap;gap:16px;align-items:end;margin:18px 0}
+label{display:grid;gap:4px;font-size:15px}select,input,button{font:inherit;color:inherit;background:#2b3b42;border:1px solid #65808b;border-radius:5px;padding:7px 10px}
+button{cursor:pointer}input[type=number]{width:110px}a{color:#a4d9ee}button:hover{background:#38525b}
+.panels{display:flex;flex-wrap:wrap;gap:24px;align-items:start}.panel{background:#233139;border-radius:8px;padding:16px;max-width:100%;overflow:auto}
+.stage{position:relative;background:repeating-conic-gradient(#66746b 0% 25%,#78847b 0% 50%) 0/16px 16px;overflow:hidden}
+.stage img{position:absolute;image-rendering:auto}.stage.original img{image-rendering:pixelated}
+figure{margin:0}figcaption{font-weight:600;margin-bottom:12px}.small{font-size:15px;color:#b9c9ca}
+#notice{min-height:28px;color:#f0c48c}#cell{max-width:100%;width:384px;height:auto}#issues{max-width:1100px}
+li{margin:6px 0}details{margin-top:20px}summary{cursor:pointer}#frameLabel{font-weight:700}#phase{width:240px}
+.issue-buttons{display:flex;gap:8px;flex-wrap:wrap}.issue-buttons button{font-size:15px}
+@media(max-width:680px){main{padding:16px}h1{font-size:25px}.panel{padding:10px}}
+</style>
+<main>
+<h1>Conscript / complete candidate review</h1>
+<p class="status">301 / 301 candidate frames · Art corrections required · Gameplay not run · Game override disabled</p>
+<p>Compare each pose with the original and inspect animation continuity. Six accepted samples are preserved.
+Source detail uses each image's actual sampling density; display zoom and screen scale are shown separately.</p>
+<div class="controls">
+<label>Action<select id="action"></select></label>
+<label>Facing index<select id="facing"></select></label>
+<label>Image resolution<select id="density"><option value="detail">Source detail</option><option value="4x">4x export</option><option value="2x">2x export</option></select></label>
+<label>Display zoom<select id="zoom"><option value="1">1x native size</option><option value="2">2x</option><option value="4" selected>4x</option><option value="6">6x</option></select></label>
+<label>Team color<select id="team"><option value="base">Red</option><option value="blue">Blue preview</option><option value="data">Remap data</option></select></label>
+<label>Background<select id="background"><option value="">Checkerboard</option><option value="#c9d2da">Light gray</option><option value="#26342d">Dark green</option><option value="#733871">Purple</option></select></label>
+<label>Sampling<select id="sampling"><option value="auto">Smooth</option><option value="pixelated">Pixel inspection</option></select></label>
+</div>
+<div class="controls">
+<button id="previous" aria-label="Previous frame">Previous</button><button id="play">Play</button><button id="next" aria-label="Next frame">Next</button>
+<label>Review speed<select id="fps"><option>3</option><option selected>6</option><option>10</option><option>15</option></select></label>
+<label>Phase<input id="phase" type="range" min="0" max="0" value="0"></label>
+<label>Native frame<input id="raw" type="number" min="0" max="300" value="0"></label>
+<button id="jump">Go to frame</button><span id="frameLabel"></span>
+</div>
+<p id="notice"></p>
+<div class="panels">
+<figure class="panel"><figcaption>Original / native geometry</figcaption><div class="stage original" id="originalStage"><img id="original" alt="Original frame"></div></figure>
+<figure class="panel"><figcaption>Candidate / constrained export</figcaption><div class="stage" id="candidateStage"><img id="candidate" alt="Candidate frame"></div></figure>
+<figure class="panel"><figcaption id="cellCaption">Generated cell / before alpha constraint</figcaption><img id="cell" alt="Unconstrained generated cell"><p class="small" id="metrics"></p></figure>
+</div>
+<section id="issues"><h2>Current frame checks</h2><ul id="currentIssues"></ul></section>
+<details><summary>Known corrections and inspection ranges</summary><div id="allIssues"></div></details>
+<p class="small">Playback is a review loop at the selected speed, not an engine timing test. Direction indices follow archived sequence order.
+Blue is a palette-factor preview with owner RGB (64,128,255). Original shadows and game selection/occlusion are not rendered here.
+Frame 85 is included through “All native frames”.</p>
+<p><a href="candidate-review.json">Coverage, provenance and structural checks</a></p>
+</main>
+<script>
+'use strict';
+const report = __REVIEW_DATA__;
+const $ = id => document.getElementById(id);
+const ui = Object.fromEntries(['action','facing','density','zoom','team','background','sampling','fps','phase','raw'].map(id => [id,$(id)]));
+const labels = {Ready:'Standing',Walk:'Walking',FireUp:'Standing fire',Crawl:'Crawling',FireProne:'Prone fire',Down:'Going prone',Up:'Standing up',Idle1:'Idle 1',Idle2:'Idle 2',Die1:'Death 1',Die2:'Death 2',Cheer:'Cheer',Paradrop:'Paradrop',Prone:'Prone'};
+for(const [key,label] of Object.entries(labels)) ui.action.add(new Option(label,key));
+ui.action.add(new Option('All native frames','all'));
+for(let i=0;i<8;i++) ui.facing.add(new Option(String(i),String(i)));
+let frames=[0], phase=0, timer=null, renderToken=0;
+const cache=new Map();
+function load(path){
+  if(!cache.has(path)) cache.set(path,new Promise((resolve,reject)=>{
+    const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(new Error('Image failed: '+path));img.src=path;
+  }));
+  return cache.get(path);
+}
+function stop(){clearInterval(timer);timer=null;$('play').textContent='Play';}
+function sequence(){
+  stop();phase=0;
+  if(ui.action.value==='all'){
+    frames=report.frames.map(f=>f.nativeFrame);ui.facing.disabled=true;
+  }else{
+    const [start,count,stride]=report.sequences[ui.action.value].split(',').map(Number);
+    ui.facing.disabled=stride===0;
+    const facing=stride===0?0:Number(ui.facing.value);
+    frames=Array.from({length:count},(_,i)=>start+facing*stride+i);
+  }
+  ui.phase.max=frames.length-1;render();
+  // Preload the chosen loop to avoid blank transitions during playback.
+  for(const id of frames){
+    const f=report.frames[id],v=f.variants[ui.density.value];
+    load(f.original.file).catch(()=>{});load(v.files[ui.team.value].file).catch(()=>{});
+  }
+}
+function place(element,image,frame,density,zoom){
+  element.src=image.src;
+  Object.assign(element.style,{left:frame.trimOrigin[0]*zoom+'px',top:frame.trimOrigin[1]*zoom+'px',
+    width:image.naturalWidth/density*zoom+'px',height:image.naturalHeight/density*zoom+'px'});
+}
+async function render(){
+  const token=++renderToken;
+  const fid=frames[phase],f=report.frames[fid],v=f.variants[ui.density.value],z=Number(ui.zoom.value);
+  ui.phase.value=phase;ui.raw.value=fid;
+  $('frameLabel').textContent=`Frame ${String(fid).padStart(3,'0')} · ${phase+1}/${frames.length}`;
+  const required=z*devicePixelRatio;
+  $('notice').textContent=`Image ${v.density}x · Display ${z}x · Screen ${devicePixelRatio}x · `+
+    (required>v.density?`Enlarging image samples (${required}x needed at this display size).`:'Sufficient image samples at this display size.');
+  for(const id of ['originalStage','candidateStage']){
+    $(id).style.width=report.canvas[0]*z+'px';$(id).style.height=report.canvas[1]*z+'px';
+    $(id).style.background=ui.background.value;
+  }
+  $('candidate').style.imageRendering=ui.sampling.value;
+  $('currentIssues').replaceChildren();
+  const current=report.issues.filter(i=>f.issues.includes(i.id));
+  for(const issue of current){const li=document.createElement('li');li.textContent=issue.status+': '+issue.description;$('currentIssues').append(li);}
+  if(!current.length){const li=document.createElement('li');li.textContent=f.approvedSample?'Accepted six-frame sample. Full-member continuity and gameplay review remain open.':'No specific defect recorded yet. This is not an art approval.';$('currentIssues').append(li);}
+  $('metrics').textContent=`${f.group} · ${v.size.join(' × ')} px · Coverage retained ${(100*v.sourceCoverageRetained).toFixed(1)}%`;
+  $('cellCaption').textContent=f.approvedSample?'Batch alternative / NOT promoted':'Generated cell / before alpha constraint';
+  try{
+    const [original,candidate,cell]=await Promise.all([load(f.original.file),load(v.files[ui.team.value].file),load(f.cell.file)]);
+    if(token!==renderToken)return;
+    place($('original'),original,f,1,z);place($('candidate'),candidate,f,v.density,z);$('cell').src=cell.src;
+    document.body.dataset.renderedFrame=String(fid);document.body.dataset.renderedDensity=ui.density.value;
+  }catch(error){stop();$('notice').textContent=error.message;throw error;}
+}
+function step(delta){phase=(phase+delta+frames.length)%frames.length;render();}
+ui.action.onchange=sequence;ui.facing.onchange=sequence;
+for(const key of ['density','zoom','team','background','sampling'])ui[key].onchange=render;
+ui.phase.oninput=()=>{stop();phase=Number(ui.phase.value);render();};
+$('previous').onclick=()=>{stop();step(-1);};$('next').onclick=()=>{stop();step(1);};
+$('play').onclick=()=>{if(timer){stop();return;}timer=setInterval(()=>step(1),1000/Number(ui.fps.value));$('play').textContent='Pause';};
+ui.fps.onchange=()=>{if(timer){stop();$('play').click();}};
+function jump(id){stop();ui.action.value='all';sequence();phase=Math.max(0,Math.min(300,id));render();}
+$('jump').onclick=()=>{const value=Number(ui.raw.value);if(Number.isInteger(value))jump(value);};
+ui.raw.onkeydown=e=>{if(e.key==='Enter')$('jump').click();};
+for(const issue of report.issues){
+  const section=document.createElement('section'),p=document.createElement('p'),button=document.createElement('button');
+  p.textContent=`${issue.id} · ${issue.status} · ${issue.description}`;
+  button.textContent=`Inspect frame ${issue.frames[0]}`;button.onclick=()=>jump(issue.frames[0]);
+  section.append(p,button);$('allIssues').append(section);
+}
+sequence();
+</script>
+</html>

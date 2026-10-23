@@ -1,0 +1,887 @@
+{
+  "status": "DELIVERED_LOCAL_MAIN_WINDOWS_PERFORMANCE_ACCEPTANCE_PENDING",
+  "date": "2026-10-06",
+  "startingMain": "da3023cdd9cb882994a877b86b25e2fff5163a39",
+  "baselineRuntime": "a6bc72ebeebf61fff1406a26d30fdc690c456564",
+  "baselineWindowsUserAcceptance": {
+    "status": "PASS_REPORTED_BY_USER",
+    "platform": "Windows x64",
+    "source": "Current user message and supplied matching A6 Windows diagnostics",
+    "historicalLocalNativeWindows": "NOT_RUN_UNCHANGED"
+  },
+  "candidateWindowsNative": "NOT_RUN_USER_COMPARISON_REQUIRED",
+  "evidence": ".artifacts/windows-scene-performance-20261006",
+  "implementation": [
+    "Explicit world/UI matrix ownership with root computation and post-batch subtree refresh",
+    "Detach only unused cached HD heading/coverage passes; retain native picking/shadows and caches"
+  ],
+  "excludedExploratoryTiming": [
+    "native-eight-player: cached-mesh baseline reorder overhead",
+    "native-eight-player-v2: host timing variance",
+    "native-eight-player-v3: focused tests briefly overlapped early sampling"
+  ],
+  "resourcePolicy": "UNCHANGED_ARTWORK_QUALITY_CAPS_AND_NATIVE_GAMEPLAY",
+  "cleanup": "NOT_PERFORMED",
+  "focusedTests": {
+    "status": "PASS",
+    "tests": 29,
+    "assertions": 9883,
+    "failures": 0,
+    "report": ".artifacts/windows-scene-performance-20261006/regression-tests-final.log",
+    "initialTimeout": "One full resource-registration test exceeded its default five-second timeout; the complete suite passes with a sixty-second limit."
+  },
+  "entryTypecheck": {
+    "status": "PASS",
+    "report": ".artifacts/windows-scene-performance-20261006/typecheck.log"
+  },
+  "prePackageNative": {
+    "eightPlayer": ".artifacts/windows-scene-performance-20261006/native-eight-player-v3/report.json",
+    "status": "PASS_NATIVE_EIGHT_PLAYER_DIAGNOSTIC",
+    "pixelDifferentBytes": 0,
+    "pixelComparedBytes": 16384000,
+    "matrixSceneUpdatesPerFrame": {
+      "originalEmulation": 4,
+      "candidate": 2
+    },
+    "ytnkHeadings": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "headings": 8,
+      "report": ".artifacts/windows-scene-performance-20261006/native-ytnk-headings/report.json"
+    }
+  },
+  "runtimeSourceHead": "625ffd818d6a8f8b3ea97c9d252265001eadf105",
+  "sourceResourcePreservation": {
+    "status": "PASS_ALL_4778_SELECTED_SOURCE_FILES_UNCHANGED",
+    "files": 4778,
+    "previous": ".artifacts/mind-control-final-20261005/resource-audit-after.json",
+    "current": ".artifacts/windows-scene-performance-20261006/source-registration-final.json"
+  },
+  "packageParity": {
+    "status": "PASS_UNCHANGED_A6_RESOURCES_AND_CURRENT_MAC_WINDOWS_SHARED_PAYLOAD",
+    "worldFiles": 4637,
+    "uiFiles": 360,
+    "sharedPayloadFiles": 192,
+    "runtimeSourceHead": "625ffd818d6a8f8b3ea97c9d252265001eadf105",
+    "baselineRuntime": "a6bc72ebeebf61fff1406a26d30fdc690c456564",
+    "sourceDirty": "",
+    "excludedPlatformFiles": [
+      "package.json",
+      "desktop/packaged-review-main.mjs",
+      "desktop/restore-cursor"
+    ]
+  },
+  "retainedBaseline": {
+    "status": "PASS_RETAINED_A6_CANONICAL_DELIVERIES",
+    "deliveries": [
+      {
+        "platform": "mac",
+        "folder": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-Control-Fix-20261005-a6bc72e-macOS-arm64",
+        "checkedEntries": 5487,
+        "status": "PASS_RETAINED_A6_CANONICAL_DELIVERY"
+      },
+      {
+        "platform": "windows",
+        "folder": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-Control-Fix-20261005-a6bc72e-Windows-x64-portable",
+        "checkedEntries": 5265,
+        "status": "PASS_RETAINED_A6_CANONICAL_DELIVERY"
+      }
+    ],
+    "priorDesktopArchives": [
+      {
+        "path": "/Users/Aone/Desktop/RA2-HD-Main-Control-Fix-20261005-a6bc72e-macOS-arm64.zip",
+        "existsAtOriginalPath": false
+      },
+      {
+        "path": "/Users/Aone/Desktop/RA2-HD-Main-Control-Fix-20261005-a6bc72e-Windows-x64-portable.zip",
+        "existsAtOriginalPath": true,
+        "status": "PASS_RETAINED_DESKTOP_ARCHIVE_HASH",
+        "sha256": "3b46aeadcd6106a61e98e31177d86ecdd6297aba3e29af98c3d83cf821b535fc"
+      }
+    ],
+    "disclosure": "The older Mac Desktop ZIP is absent at its recorded path; the Windows ZIP remains present. Canonical extracted A6 deliveries are complete and byte-identical to immutable receipts. This task did not delete or recreate an old archive."
+  },
+  "delivery": {
+    "status": "PASS_DESKTOP_COPY_AND_FRESH_EXTRACTION_HASHES_MODES_LINKS",
+    "deliveries": [
+      {
+        "platform": "mac",
+        "archive": "/Users/Aone/Desktop/RA2-HD-Main-Scene-Performance-20261006-625ffd8-macOS-arm64.zip",
+        "bytes": 3280754535,
+        "sha256": "a1af6bf39a9f04e367f4c8f93d31e4de120437ab916d0a4f1903c118bc1d37b3",
+        "checkedEntries": 5487,
+        "extractedFolder": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-Scene-Performance-20261006-625ffd8-macOS-arm64",
+        "excludedUserData": [
+          "Review-Profile",
+          "UserData"
+        ]
+      },
+      {
+        "platform": "windows",
+        "archive": "/Users/Aone/Desktop/RA2-HD-Main-Scene-Performance-20261006-625ffd8-Windows-x64-portable.zip",
+        "bytes": 3304990309,
+        "sha256": "1ed10c408cf0406be784702bfb161990586224219c1ccd0b04d0692798c8a096",
+        "checkedEntries": 5265,
+        "extractedFolder": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-Scene-Performance-20261006-625ffd8-Windows-x64-portable",
+        "excludedUserData": [
+          "Review-Profile",
+          "UserData"
+        ]
+      }
+    ]
+  },
+  "windowsPackage": {
+    "status": "PASS_STATIC_PACKAGE_WINDOWS_RUNTIME_NOT_RUN",
+    "x64PEFiles": [
+      "dxil.dll",
+      "Red Alert 2 HD.exe",
+      "dxcompiler.dll",
+      "d3dcompiler_47.dll",
+      "vk_swiftshader.dll",
+      "ffmpeg.dll",
+      "vulkan-1.dll"
+    ],
+    "native": "NOT_RUN",
+    "userPerformanceAcceptance": "PENDING_SAME_MACHINE_COMPARISON"
+  },
+  "copiedNativeMac": [
+    {
+      "case": "copied-mac-2x-snow-factory",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/windows-scene-performance-20261006/copied-mac-2x-snow-factory/report.json",
+      "edition": "yr",
+      "snow": true,
+      "worldAllocation": {
+        "baseline": 22008264,
+        "eager": 28522916,
+        "demand": 45873596,
+        "total": 96404776,
+        "limit": 268435456
+      },
+      "errors": [],
+      "handledErrors": []
+    },
+    {
+      "case": "copied-mac-4x-disc-flight",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/windows-scene-performance-20261006/copied-mac-4x-disc-flight/report.json",
+      "edition": "yr",
+      "snow": false,
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 27758812,
+        "total": 169697040,
+        "limit": 1342177280
+      },
+      "errors": [],
+      "handledErrors": []
+    },
+    {
+      "case": "copied-mac-original-status",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": ".artifacts/windows-scene-performance-20261006/copied-mac-original-status/report.json",
+      "edition": "yr",
+      "snow": false,
+      "worldAllocation": {
+        "baseline": 7372864,
+        "eager": 0,
+        "demand": 0,
+        "total": 7372864,
+        "limit": 1342177280
+      },
+      "errors": [],
+      "handledErrors": []
+    }
+  ],
+  "copiedNativeEightPlayer": {
+    "status": "PASS_NATIVE_EIGHT_PLAYER_DIAGNOSTIC",
+    "report": ".artifacts/windows-scene-performance-20261006/copied-mac-eight-player/report.json",
+    "scenario": {
+      "players": 8,
+      "bots": 7,
+      "tick": 502,
+      "visibility": "visible",
+      "output": {
+        "ratio": 1.5,
+        "requested": [
+          2560,
+          1600
+        ],
+        "effective": [
+          2560,
+          1600
+        ],
+        "caps": []
+      }
+    },
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+    "renderEquivalence": {
+      "width": 2560,
+      "height": 1600,
+      "comparedBytes": 16384000,
+      "differentBytes": 0,
+      "nonzeroBytes": 9179647
+    },
+    "originalEmulationMedianUpdatePlusRenderMs": 8.874864583835006,
+    "candidateMedianUpdatePlusRenderMs": 6.973833333700895,
+    "reductionPercent": 21.42039725988289,
+    "sceneMatrixUpdatesPerFrame": {
+      "originalEmulation": 4,
+      "candidate": 2
+    },
+    "frozenNodes": {
+      "originalEmulation": 8127,
+      "candidate": 6112
+    },
+    "measurements": [
+      {
+        "label": "live-candidate",
+        "automatic": false,
+        "attached": false,
+        "frozen": false,
+        "duration": 8003.5150000452995,
+        "fps": 59.84870397535194,
+        "ticksPerSecond": 67.47035521229655,
+        "frames": {
+          "n": 479,
+          "mean": 16.667546972860126,
+          "p50": 16.669999999998254,
+          "p95": 17.899999999997817,
+          "p99": 18.56499999999869,
+          "max": 18.649999999997817
+        },
+        "update": {
+          "n": 480,
+          "mean": 3.472510418171684,
+          "p50": 3.324999988079071,
+          "p95": 4.5799999833106995,
+          "p99": 7.035000026226044,
+          "max": 7.460000038146973
+        },
+        "render": {
+          "n": 480,
+          "mean": 3.6260520813365775,
+          "p50": 3.5300000309944153,
+          "p95": 4.360000014305115,
+          "p99": 5.134999990463257,
+          "max": 5.379999995231628
+        },
+        "drawCalls": {
+          "n": 480,
+          "mean": 766.2583333333333,
+          "p50": 761,
+          "p95": 789,
+          "p99": 789,
+          "max": 789
+        },
+        "triangles": {
+          "n": 480,
+          "mean": 1592801.93125,
+          "p50": 1599843,
+          "p95": 1600057,
+          "p99": 1600057,
+          "max": 1600057
+        },
+        "sceneMatrixUpdatesPerFrame": 2,
+        "nodes": 6122,
+        "hd": 182,
+        "hiddenHd": 0,
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "visibility": "visible",
+        "visibilityEvents": [],
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "gl": {
+          "alpha": true,
+          "antialias": false,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "high-performance",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": true,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      {
+        "label": "control-original-a",
+        "automatic": true,
+        "attached": true,
+        "frozen": true,
+        "duration": 8000.5,
+        "fps": 59.8712580463721,
+        "ticksPerSecond": 0,
+        "frames": {
+          "n": 479,
+          "mean": 16.6676096033403,
+          "p50": 16.665000000000873,
+          "p95": 17.794999999998254,
+          "p99": 18.5,
+          "max": 18.659999999999854
+        },
+        "update": {
+          "n": 480,
+          "mean": 5.206062499557932,
+          "p50": 4.474999964237213,
+          "p95": 8.02999997138977,
+          "p99": 9.074999988079071,
+          "max": 17.975000023841858
+        },
+        "render": {
+          "n": 480,
+          "mean": 5.095822916055719,
+          "p50": 4.855000019073486,
+          "p95": 6.280000030994415,
+          "p99": 6.950000047683716,
+          "max": 9.125
+        },
+        "drawCalls": {
+          "n": 480,
+          "mean": 777.2770833333333,
+          "p50": 778,
+          "p95": 779,
+          "p99": 779,
+          "max": 779
+        },
+        "triangles": {
+          "n": 480,
+          "mean": 1592779.1416666666,
+          "p50": 1599997,
+          "p95": 1600001,
+          "p99": 1600001,
+          "max": 1600001
+        },
+        "sceneMatrixUpdatesPerFrame": 4,
+        "nodes": 8127,
+        "hd": 2184,
+        "hiddenHd": 2002,
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "visibility": "visible",
+        "visibilityEvents": [],
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "gl": {
+          "alpha": true,
+          "antialias": false,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "high-performance",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": true,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      {
+        "label": "control-matrix-only",
+        "automatic": false,
+        "attached": true,
+        "frozen": true,
+        "duration": 8000.895000040531,
+        "fps": 59.86830223338433,
+        "ticksPerSecond": 0,
+        "frames": {
+          "n": 479,
+          "mean": 16.667557411273492,
+          "p50": 16.665000000000873,
+          "p95": 16.93499999999767,
+          "p99": 17.935000000004948,
+          "max": 18.19000000000233
+        },
+        "update": {
+          "n": 480,
+          "mean": 4.23713541738689,
+          "p50": 4.2049999833106995,
+          "p95": 4.695000052452087,
+          "p99": 4.949999988079071,
+          "max": 5.465000033378601
+        },
+        "render": {
+          "n": 480,
+          "mean": 3.488802082960804,
+          "p50": 3.4449999928474426,
+          "p95": 3.8949999809265137,
+          "p99": 4.155000030994415,
+          "max": 4.384999990463257
+        },
+        "drawCalls": {
+          "n": 480,
+          "mean": 776.85625,
+          "p50": 778,
+          "p95": 778,
+          "p99": 778,
+          "max": 778
+        },
+        "triangles": {
+          "n": 480,
+          "mean": 1592777.4583333333,
+          "p50": 1599997,
+          "p95": 1599997,
+          "p99": 1599997,
+          "max": 1599997
+        },
+        "sceneMatrixUpdatesPerFrame": 2,
+        "nodes": 8127,
+        "hd": 2184,
+        "hiddenHd": 2002,
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "visibility": "visible",
+        "visibilityEvents": [],
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "gl": {
+          "alpha": true,
+          "antialias": false,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "high-performance",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": true,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      {
+        "label": "control-candidate-a",
+        "automatic": false,
+        "attached": false,
+        "frozen": true,
+        "duration": 8000.949999988079,
+        "fps": 59.86789068807,
+        "ticksPerSecond": 0,
+        "frames": {
+          "n": 479,
+          "mean": 16.667578288100202,
+          "p50": 16.665000000000873,
+          "p95": 16.970000000001164,
+          "p99": 18.56500000000233,
+          "max": 18.660000000003492
+        },
+        "update": {
+          "n": 480,
+          "mean": 3.461177083477378,
+          "p50": 3.424999952316284,
+          "p95": 3.900000035762787,
+          "p99": 5.180000007152557,
+          "max": 5.909999966621399
+        },
+        "render": {
+          "n": 480,
+          "mean": 3.5126562502235172,
+          "p50": 3.475000023841858,
+          "p95": 3.935000002384186,
+          "p99": 4.680000007152557,
+          "max": 5.2200000286102295
+        },
+        "drawCalls": {
+          "n": 480,
+          "mean": 776.8583333333333,
+          "p50": 778,
+          "p95": 778,
+          "p99": 778,
+          "max": 778
+        },
+        "triangles": {
+          "n": 480,
+          "mean": 1592797.4770833333,
+          "p50": 1599997,
+          "p95": 1599997,
+          "p99": 1599997,
+          "max": 1599997
+        },
+        "sceneMatrixUpdatesPerFrame": 2,
+        "nodes": 6112,
+        "hd": 182,
+        "hiddenHd": 0,
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "visibility": "visible",
+        "visibilityEvents": [],
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "gl": {
+          "alpha": true,
+          "antialias": false,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "high-performance",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": true,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      {
+        "label": "control-original-b",
+        "automatic": true,
+        "attached": true,
+        "frozen": true,
+        "duration": 8002.189999997616,
+        "fps": 59.85861370451623,
+        "ticksPerSecond": 0,
+        "frames": {
+          "n": 479,
+          "mean": 16.66759916492693,
+          "p50": 16.669999999998254,
+          "p95": 17.645000000004075,
+          "p99": 18.275000000001455,
+          "max": 18.64999999999418
+        },
+        "update": {
+          "n": 480,
+          "mean": 4.260958332940936,
+          "p50": 4.0799999833106995,
+          "p95": 5.235000014305115,
+          "p99": 6.930000007152557,
+          "max": 7.599999964237213
+        },
+        "render": {
+          "n": 480,
+          "mean": 4.61390625089407,
+          "p50": 4.444999992847443,
+          "p95": 5.555000007152557,
+          "p99": 6.0200000405311584,
+          "max": 6.314999997615814
+        },
+        "drawCalls": {
+          "n": 480,
+          "mean": 776.8583333333333,
+          "p50": 778,
+          "p95": 778,
+          "p99": 778,
+          "max": 778
+        },
+        "triangles": {
+          "n": 480,
+          "mean": 1592797.4770833333,
+          "p50": 1599997,
+          "p95": 1599997,
+          "p99": 1599997,
+          "max": 1599997
+        },
+        "sceneMatrixUpdatesPerFrame": 4,
+        "nodes": 8127,
+        "hd": 2184,
+        "hiddenHd": 2002,
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "visibility": "visible",
+        "visibilityEvents": [],
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "gl": {
+          "alpha": true,
+          "antialias": false,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "high-performance",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": true,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      {
+        "label": "control-candidate-b",
+        "automatic": false,
+        "attached": false,
+        "frozen": true,
+        "duration": 8008.275000035763,
+        "fps": 59.93800162929675,
+        "ticksPerSecond": 0,
+        "frames": {
+          "n": 480,
+          "mean": 16.66755208333334,
+          "p50": 16.66500000000815,
+          "p95": 17.920000000012806,
+          "p99": 18.535000000003492,
+          "max": 18.660000000003492
+        },
+        "update": {
+          "n": 481,
+          "mean": 3.717515592887347,
+          "p50": 3.5949999690055847,
+          "p95": 4.685000002384186,
+          "p99": 6.009999990463257,
+          "max": 6.960000038146973
+        },
+        "render": {
+          "n": 481,
+          "mean": 3.8052494801007786,
+          "p50": 3.665000021457672,
+          "p95": 4.784999966621399,
+          "p99": 5.200000047683716,
+          "max": 5.805000007152557
+        },
+        "drawCalls": {
+          "n": 481,
+          "mean": 776.8648648648649,
+          "p50": 778,
+          "p95": 778,
+          "p99": 778,
+          "max": 778
+        },
+        "triangles": {
+          "n": 481,
+          "mean": 1592878.0893970893,
+          "p50": 1599997,
+          "p95": 1599997,
+          "p99": 1599997,
+          "max": 1599997
+        },
+        "sceneMatrixUpdatesPerFrame": 2,
+        "nodes": 6112,
+        "hd": 182,
+        "hiddenHd": 0,
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "visibility": "visible",
+        "visibilityEvents": [],
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "gl": {
+          "alpha": true,
+          "antialias": false,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "high-performance",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": true,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      {
+        "label": "control-candidate-c",
+        "automatic": false,
+        "attached": false,
+        "frozen": true,
+        "duration": 8006.884999990463,
+        "fps": 59.9484069023811,
+        "ticksPerSecond": 0,
+        "frames": {
+          "n": 480,
+          "mean": 16.66671875000002,
+          "p50": 16.66500000000815,
+          "p95": 17.389999999999418,
+          "p99": 18.43499999999767,
+          "max": 18.625
+        },
+        "update": {
+          "n": 481,
+          "mean": 3.367754678716283,
+          "p50": 3.3399999737739563,
+          "p95": 3.865000009536743,
+          "p99": 4.055000007152557,
+          "max": 4.599999964237213
+        },
+        "render": {
+          "n": 481,
+          "mean": 3.5151663190857536,
+          "p50": 3.475000023841858,
+          "p95": 3.939999997615814,
+          "p99": 4.235000014305115,
+          "max": 4.4700000286102295
+        },
+        "drawCalls": {
+          "n": 481,
+          "mean": 776.8648648648649,
+          "p50": 778,
+          "p95": 778,
+          "p99": 778,
+          "max": 778
+        },
+        "triangles": {
+          "n": 481,
+          "mean": 1592878.0893970893,
+          "p50": 1599997,
+          "p95": 1599997,
+          "p99": 1599997,
+          "max": 1599997
+        },
+        "sceneMatrixUpdatesPerFrame": 2,
+        "nodes": 6112,
+        "hd": 182,
+        "hiddenHd": 0,
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "visibility": "visible",
+        "visibilityEvents": [],
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "gl": {
+          "alpha": true,
+          "antialias": false,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "high-performance",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": true,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      {
+        "label": "control-original-c",
+        "automatic": true,
+        "attached": true,
+        "frozen": true,
+        "duration": 8000.800000011921,
+        "fps": 59.86901309860093,
+        "ticksPerSecond": 0,
+        "frames": {
+          "n": 479,
+          "mean": 16.668517745302715,
+          "p50": 16.669999999998254,
+          "p95": 17.214999999996508,
+          "p99": 18.519999999989523,
+          "max": 18.639999999999418
+        },
+        "update": {
+          "n": 480,
+          "mean": 4.074010418355465,
+          "p50": 4.025000035762787,
+          "p95": 4.509999990463257,
+          "p99": 4.960000038146973,
+          "max": 5.600000023841858
+        },
+        "render": {
+          "n": 480,
+          "mean": 4.441979165747762,
+          "p50": 4.389999985694885,
+          "p95": 4.814999997615814,
+          "p99": 5.259999990463257,
+          "max": 5.694999992847443
+        },
+        "drawCalls": {
+          "n": 480,
+          "mean": 776.8604166666667,
+          "p50": 778,
+          "p95": 778,
+          "p99": 778,
+          "max": 778
+        },
+        "triangles": {
+          "n": 480,
+          "mean": 1592859.1666666667,
+          "p50": 1599997,
+          "p95": 1599997,
+          "p99": 1599997,
+          "max": 1599997
+        },
+        "sceneMatrixUpdatesPerFrame": 4,
+        "nodes": 8127,
+        "hd": 2184,
+        "hiddenHd": 2002,
+        "output": {
+          "ratio": 1.5,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "visibility": "visible",
+        "visibilityEvents": [],
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "gl": {
+          "alpha": true,
+          "antialias": false,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "high-performance",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": true,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      }
+    ],
+    "timingBoundary": "Same copied candidate runtime with frozen-simulation old-behavior emulation, no concurrent build/test/compression. Visual animation remains live. Host is capped near 60 Hz; not a candidate Windows FPS result."
+  },
+  "diagnosticCorrections": [
+    "Initial cached-mesh emulation reordered nodes; those timings are excluded.",
+    "The full DTRUCK registration test initially exceeded its five-second default; all 29 pass with a sixty-second timeout.",
+    "Resource audit calls initially omitted current revision flags and positional UI root; the corrected selected-authority audit passes with all 4778 files unchanged."
+  ],
+  "remainingPerformanceEvidence": "Windows first-use shader synchronization remains a separate observed contributor; this patch does not claim all long frames are eliminated.",
+  "nextValidation": "Repeat the same eight-player/seven-AI, 4X HD, native output, high-shadow Windows scene with continuous panning and first-use complex units. Compare steady update/render times and p95/p99/max frames against accepted A6."
+}

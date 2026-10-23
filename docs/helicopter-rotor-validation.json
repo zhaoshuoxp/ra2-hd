@@ -1,0 +1,189 @@
+{
+  "status": "PASS_PACKAGED_ALLIED_TANDEM_ROTORS",
+  "baseline": "81dd91f",
+  "runtimeSourceHead": "8fac6304d932778119b1c8bd5e034afab91b2f56",
+  "sourceCleanAtBuild": true,
+  "phaseRegistration": {
+    "report": ".artifacts/helicopter-rotors-r2/native-phase-4x-v2/report.json",
+    "bearings": 4,
+    "spinPhases": 6,
+    "rotorsPerSample": 2,
+    "actualDensity": 4,
+    "maxPaintedHubPixelError": 7.575448428874006e-07,
+    "horizontalPlanes": "PASS",
+    "fixedNativeAxisAttachment": "PASS"
+  },
+  "nativeCases": [
+    {
+      "report": ".artifacts/helicopter-rotors-r2/native-motion-4x/report.json",
+      "edition": "yr",
+      "selectedDensity": 4,
+      "bodyCoverageSamples": 20,
+      "landings": [
+        "SHAD-landed",
+        "SCHP-landed"
+      ],
+      "nativeRotorMotion": [
+        "SHAD",
+        "SCHP"
+      ],
+      "recordings": [
+        "/Users/Aone/RA2remaster/ra2-hd/.artifacts/helicopter-rotors-r2/native-motion-4x/SHAD-flight-and-landing.webm",
+        "/Users/Aone/RA2remaster/ra2-hd/.artifacts/helicopter-rotors-r2/native-motion-4x/SCHP-flight-and-landing.webm"
+      ],
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 381733320,
+        "demand": 9783112,
+        "total": 482888628,
+        "limit": 1342177280
+      },
+      "glErrors": 0,
+      "contextLost": false
+    },
+    {
+      "report": ".artifacts/helicopter-rotors-r2/native-motion-ra2-2x/report.json",
+      "edition": "ra2",
+      "selectedDensity": 2,
+      "bodyCoverageSamples": 4,
+      "landings": [
+        "SHAD-landed"
+      ],
+      "nativeRotorMotion": [
+        "SHAD"
+      ],
+      "recordings": [
+        "/Users/Aone/RA2remaster/ra2-hd/.artifacts/helicopter-rotors-r2/native-motion-ra2-2x/SHAD-flight-and-landing.webm"
+      ],
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 114102144,
+        "demand": 1473408,
+        "total": 146078944,
+        "limit": 268435456
+      },
+      "glErrors": 0,
+      "contextLost": false
+    }
+  ],
+  "metadata": {
+    "status": "PASS_IMMUTABLE_ATLAS_PRESERVATION",
+    "manifest": "/Users/Aone/RA2remaster/ra2-hd/.local/hd-packs/allied-shad-vxl/rotor-r2/manifest.json",
+    "sha256": "5d65aabceb827a0f401b83f8cbbe4850e5937bc786e12db7ba9371d62980911b",
+    "previousSha256": "7a57bb744f7b3d69795f14718c391d17e7b95325b6a7d97fe0406d40a1d52fa0",
+    "authoredHubPixels": {
+      "CYLINDER18": [
+        133,
+        54
+      ],
+      "CYLINDER09": [
+        132,
+        60
+      ]
+    },
+    "unchangedAtlasFiles": 6,
+    "unchangedBodyFrames": 8,
+    "bellyDepthEnvelope": "UNCHANGED"
+  },
+  "preservation": {
+    "status": "PASS_ALL_ACCEPTED_PACKAGE_RESOURCES_PRESERVED",
+    "runtimeSourceHead": "8fac6304d932778119b1c8bd5e034afab91b2f56",
+    "sourceCleanAtBuild": true,
+    "resourceEntries": 2755,
+    "unchangedResourceBytes": 2754,
+    "changedMetadata": [
+      "hd-packs/allied-shad-vxl/rotor-r2/manifest.json"
+    ],
+    "availability": "UNCHANGED",
+    "SHADBodyAndBellyEnvelope": "UNCHANGED",
+    "SCHPResourcesAndAxes": "UNCHANGED"
+  },
+  "tests": {
+    "passed": 14,
+    "assertions": 14319,
+    "entryTypecheck": "PASS"
+  },
+  "axisOnlyDiagnostic": {
+    "report": ".artifacts/helicopter-rotors-r2/axis-probe/report.json",
+    "remainingHubOffsetLogicalPixels": 3.339623256708427,
+    "decision": "Axis-only is incomplete; explicit authored hub registration is required"
+  },
+  "historicalAcceptanceMatrices": "REUSED",
+  "userAcceptance": "PENDING_CURRENT_ROTOR_CORRECTION",
+  "push": "NOT_PERFORMED",
+  "reviewMedia": {
+    "status": "PASS_OFFLINE_REVIEW_MEDIA",
+    "images": [
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      }
+    ],
+    "clips": [
+      {
+        "width": 3840,
+        "height": 2160,
+        "time": 0.449331,
+        "error": null
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "time": 0.455973,
+        "error": null
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "time": 0.452921,
+        "error": null
+      }
+    ]
+  },
+  "phaseHarnessCorrection": "Explicitly update native joint matrices after controlled quaternion overrides; prior labels superseded. Runtime unchanged.",
+  "deliveryReviewRevision": "V2"
+}

@@ -1,0 +1,171 @@
+{
+  "status": "PASS_C7_LOCAL_SOURCE_NATIVE_AND_COMPLETE_DESKTOP_DELIVERY_WINDOWS_AB_PENDING",
+  "sourceFocus": "baa847aa3a5366b6b99a5855bcf7a3c53611850a",
+  "shippedSource": "3ab266e3b0b2c755f33ac65ca0866b1055f019d0",
+  "archive": {
+    "status": "PASS_FULL_ARCHIVE_AND_FRESH_EXTRACTION",
+    "diagnosticId": "WINHD-20261008-D38F136-C7",
+    "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "diagnosticCommit": "3ab266e3b0b2c755f33ac65ca0866b1055f019d0",
+    "archive": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C7-3ab266e-Windows-x64.zip",
+    "bytes": 3499998753,
+    "sha256": "5e590732d1765b538cad25fca93c22fc80d448e111b6f9baa6edc501a113cb40",
+    "manifestSha256": "1133beff253fc177d8b4a007077560a0a3a6de3aeb65f833464085dd65485458",
+    "entries": 8123,
+    "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c7-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C7-3ab266e-Windows-x64",
+    "windowsNative": "NOT_RUN"
+  },
+  "desktop": {
+    "status": "PASS_DESKTOP_COPY_FULL_SHA256_AND_ALL_MEMBER_CRC",
+    "source": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C7-3ab266e-Windows-x64.zip",
+    "desktop": "/Users/Aone/Desktop/RA2-HD-WINHD-20261008-D38F136-C7-3ab266e-Windows-x64.zip",
+    "createdNewFile": true,
+    "bytes": 3499998753,
+    "sha256": "5e590732d1765b538cad25fca93c22fc80d448e111b6f9baa6edc501a113cb40",
+    "entries": 8123,
+    "verifiedAt": "2026-10-10T04:08:45.345557+00:00"
+  },
+  "byteParity": {
+    "status": "PASS_NATIVE_VERIFIED_APPLICATION_AND_MAPS_EXACT",
+    "nativeCheckpoint": "baa847aa3a5366b6b99a5855bcf7a3c53611850a",
+    "finalCheckpoint": "3ab266e3b0b2c755f33ac65ca0866b1055f019d0",
+    "comparedApplicationAndMapFiles": 469,
+    "mappedBuildFiles": 288,
+    "resources": {
+      "worldAndUIFiles": 6033,
+      "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+      "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+    },
+    "limitsMiB": {
+      "world2X": 512,
+      "world4X": 1280,
+      "preparedCPU": 128,
+      "ui": 16
+    }
+  },
+  "nativeSummary": {
+    "file": "docs/windows-hd-c7-native-validation-20261009.json",
+    "sha256": "90ffa3b5e6e878c164cec97eb450fb21714c41a017cd88c3d5f0d7afd455ab6e"
+  },
+  "freshNative": {
+    "status": "PASS_NATIVE_MAC_TOOLING_SMOKE",
+    "file": ".artifacts/windows-hd-diagnostic/c7-fresh-native-smoke-v2/report.json",
+    "sha256": "3781636a21bc5718e0e8bb50fa44074b3cd558e19542e356e39d287df8be2f49",
+    "boundary": "Final freshly extracted copy; Native Mac functional validation, not Windows timings.",
+    "phases": [
+      {
+        "label": "fresh-process-first-use",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "tickStart": 0,
+        "tickEnd": 194,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        }
+      },
+      {
+        "label": "warmed-steady",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "tickStart": 412,
+        "tickEnd": 614,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        }
+      },
+      {
+        "label": "same-process-reentry-first-use",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "tickStart": 0,
+        "tickEnd": 202,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        }
+      },
+      {
+        "label": "same-process-reentry-warmed",
+        "validity": "VALID_BOUNDED_SAMPLE",
+        "tickStart": 434,
+        "tickEnd": 636,
+        "players": 8,
+        "bots": 7,
+        "graphics": {
+          "enabled": true,
+          "density": 4,
+          "models": 1,
+          "shadows": 3,
+          "renderResolution": "native",
+          "resolution": {
+            "width": 1024,
+            "height": 768
+          }
+        }
+      }
+    ],
+    "errors": []
+  },
+  "integration": {
+    "mainHead": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "mainStatus": "CLEAN_UNCHANGED",
+    "mainApplyCheck": "PASS_READ_ONLY_D38_TO_C7_APPLICATION_PATCH",
+    "merged": false,
+    "pushed": false,
+    "published": false,
+    "peerStartHead": "12bc0c38b481cdb7d4eb9b3892f76f14cdde32b2",
+    "peerEndHead": "ba13182edff2983893ab3bbbb243c43688d15003",
+    "peerDirtyPath": "scripts/m2/official-maps/native-bridge-contacts.mjs",
+    "peerPolicy": "Independent work advanced; inspected only, never modified or reset."
+  },
+  "nextWindowsRequest": {
+    "scene": "stress",
+    "mode": "4x",
+    "capture": "Normal",
+    "phases": 4,
+    "secondsEach": 15,
+    "baselineRun": "2026-10-10T00-42-54-111Z-stress-4x-none",
+    "baselineReturn": ".artifacts/windows-hd-diagnostic/returns/2026-10-10T03-41-03-540Z-c6-s1",
+    "baselineCommit": "4d3e41f5ffe2746ada9bc765a407f00638cb4705",
+    "baselineManifestSha256": "f7bdd2665e180d4aa7528c3520bea9af45bfa2b4f00b26418eb27ab471bf526a",
+    "request": "One foreground 8-player / 4X / Normal launch on the same machine, then export the full RETURN ZIP and describe enemy/combat hitches, loading delay and any visual changes. No F8/F9 or new matrix."
+  },
+  "acceptance": {
+    "windowsRuntime": "NOT_RUN",
+    "windowsPerformance": "PENDING_MATCHED_NORMAL_AB",
+    "stressCombatUserAcceptance": "OPEN",
+    "loadingWait": "PENDING_WINDOWS_FEEDBACK",
+    "visual": "PENDING_USER_ACCEPTANCE",
+    "gpuTiming": "UNAVAILABLE",
+    "actualProcessVram": "UNAVAILABLE",
+    "smallC4Acceptance": "PRESERVED",
+    "mainPromotion": "NOT_PERFORMED"
+  },
+  "conversationRecommendation": "Continue this execution conversation for the same repair and acceptance; use a new conversation only after acceptance and a materially changed objective."
+}

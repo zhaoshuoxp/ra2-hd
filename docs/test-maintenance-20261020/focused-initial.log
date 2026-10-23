@@ -1,0 +1,297 @@
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/rhino-sprite.test.ts:
+(pass) deterministic bytes validate SHA-256 and reject changed content and identity [5.04ms]
+(pass) only the complete primary pose/state is eligible, including circular headings [0.10ms]
+(pass) registered world geometry projects to native 64x48 footprint and anchor at 900 reference [5.74ms]
+(pass) whole-family fallback, exact material restore, shared image lifetime and buffer reuse [2.02ms]
+(pass) entity disposal releases its proof and restores callbacks without disposing another instance [1.68ms]
+
+scripts/m1/rhino-eight.test.ts:
+(pass) deterministic bytes validate SHA-256 and reject changed content and identity [0.15ms]
+(pass) heading eligibility is circular, quantized and fail-closed with original state exclusions [4.80ms]
+(pass) two independently selected components reuse geometry, projection and exact native transform objects [9.29ms]
+(pass) fallback never leaves a partial vehicle, including owner and tilt [3.74ms]
+(pass) shared sixteen-part lifetime survives independent entity disposal and restores exact hooks [5.54ms]
+(pass) octant boundaries have a maximum 22.5 degree visual error without changing native angles [3.88ms]
+(pass) native in-place turning velocity stays supported and untouched [3.11ms]
+(pass) presentation follows the rendered interpolated body angle, not only the last game tick [1.91ms]
+
+scripts/m1/unified-desktop.test.ts:
+(pass) saved artwork choices survive output changes and older graphics preferences [0.39ms]
+(pass) HD origin boundary rejects remote URLs, opaque lookalikes and credentials [0.04ms]
+35 | test('absent optional data exposes availability without exposing arbitrary files', async () => {
+36 |     const root = await fs.mkdtemp(path.join(await fs.realpath(os.tmpdir()), 'm15-empty-'));
+37 |     try {
+38 |         const hd = await registerHdResources(root);
+39 |         expect(hd.routes.size).toBe(0);
+40 |         expect(Object.keys(hd.availability)).toEqual(expect.arrayContaining(['rhino', 'sovietUnits', 'lunr']));
+                                                  ^
+error: expect(received).toEqual(expected)
+
+- ExpectArrayContaining {}
++ [
++   "unit-lunr",
++   "unit-boris",
++   "unit-ccomand",
++   "unit-ptroop",
++   "unit-schp",
++   "unit-sqd",
++   "unit-yuripr",
++   "unit-civan",
++   "unit-deso",
++   "unit-terror",
++   "unit-yuri",
++   "unit-ivan",
++   "unit-shk",
++   "unit-flakt",
++   "unit-dog",
++   "unit-dron",
++   "unit-sengineer",
++   "unit-ggi",
++   "unit-dlph",
++   "unit-e1",
++   "unit-adog",
++   "unit-tany",
++   "unit-jumpjet",
++   "unit-cleg",
++   "unit-spy",
++   "unit-ghost",
++   "unit-snipe",
++   "unit-yr-init",
++   "unit-yr-brute",
++   "unit-yr-yuripr",
++   "unit-yr-virus",
++   "unit-yr-smin",
++   "unit-amcv",
++   "unit-mtnk",
++   "unit-aegis",
++   "unit-lcrf",
++   "unit-tnkd",
++   "unit-sref",
++   "unit-mgtk",
++   "unit-fv",
++   "unit-orca",
++   "unit-beag",
++   "unit-carrier",
++   "unit-dest",
++   "unit-shad",
++   "unit-cmin",
++   "unit-bfrt",
++   "unit-robo",
++   "unit-ltnk",
++   "unit-yhvr",
++   "unit-pcv",
++   "unit-ytnk",
++   "unit-tele",
++   "unit-caos",
++   "unit-bsub",
++   "unit-mind",
++   "unit-disk",
++   "unit-car",
++   "unit-bus",
++   "unit-pick",
++   "unit-suvb",
++   "unit-stang",
++   "unit-taxi",
++   "unit-suvw",
++   "unit-cop",
++   "unit-ptruck",
++   "unit-euroc",
++   "unit-limo",
++   "unit-cona",
++   "unit-dred",
++   "unit-v3",
++   "unit-harv",
++   "unit-apoc",
++   "unit-htk",
++   "unit-ttnk",
++   "unit-sapc",
++   "unit-sub",
++   "unit-hyd",
++   "unit-zep",
++   "unit-smcv",
++   "unit-dtruck",
++   "sovietUnits",
++   "conscript",
++   "powerPlant",
++   "napowr",
++   "nahand",
++   "narefn",
++   "naweap",
++   "nacnst",
++   "naradr",
++   "nadept",
++   "nayard",
++   "natech",
++   "nanrct",
++   "naclon",
++   "napsis",
++   "nalasr",
++   "naflak",
++   "tesla",
++   "nairon",
++   "namisl",
++   "nawall",
++   "naindp-temperate",
++   "nabnkr-temperate",
++   "napowr-newurban",
++   "nabnkr-snow",
++   "naclon-snow",
++   "nacnst-snow",
++   "nadept-snow",
++   "naflak-snow",
++   "nahand-snow",
++   "naindp-snow",
++   "nairon-snow",
++   "nalasr-snow",
++   "namisl-snow",
++   "nanrct-snow",
++   "napowr-snow",
++   "napsis-snow",
++   "naradr-snow",
++   "narefn-snow",
++   "natech-snow",
++   "nawall-snow",
++   "naweap-snow",
++   "nayard-snow",
++   "tesla-snow",
++   "gagap-temperate",
++   "gagap-snow",
++   "gapill-temperate",
++   "gapill-snow",
++   "gtgcan-temperate",
++   "gtgcan-snow",
++   "nasam-temperate",
++   "nasam-snow",
++   "gawall-temperate",
++   "gawall-snow",
++   "gapile-temperate",
++   "gapile-snow",
++   "gaorep-temperate",
++   "gaorep-snow",
++   "gatech-temperate",
++   "gatech-snow",
++   "gaspysat-temperate",
++   "gaspysat-snow",
++   "garobo-temperate",
++   "garobo-snow",
++   "gaairc-temperate",
++   "gaairc-snow",
++   "gapowr-snow",
++   "atesla-temperate",
++   "atesla-snow",
++   "gacsph-temperate",
++   "gacsph-snow",
++   "gaweat-temperate",
++   "gaweat-snow",
++   "gadept-temperate",
++   "gadept-snow",
++   "garefn-temperate",
++   "garefn-snow",
++   "gaweap-temperate",
++   "gaweap-snow",
++   "gacnst-temperate",
++   "gacnst-snow",
++   "gayard-temperate",
++   "gayard-snow",
++   "yuri-gafwll-temperate",
++   "yuri-gafwll-snow",
++   "yuri-yapowr-temperate",
++   "yuri-yapowr-snow",
++   "yuri-yaggun-temperate",
++   "yuri-yaggun-snow",
++   "yuri-yarefn-temperate",
++   "yuri-yarefn-snow",
++   "yuri-naclon-temperate",
++   "yuri-naclon-snow",
++   "yuri-yabrck-temperate",
++   "yuri-yabrck-snow",
++   "yuri-yacnst-temperate",
++   "yuri-yacnst-snow",
++   "yuri-yapsyt-temperate",
++   "yuri-yapsyt-snow",
++   "yuri-natbnk-temperate",
++   "yuri-natbnk-snow",
++   "yuri-natbnk-newurban",
++   "yuri-yagrnd-temperate",
++   "yuri-yagrnd-snow",
++   "yuri-napsis-temperate",
++   "yuri-napsis-snow",
++   "yuri-yatech-temperate",
++   "yuri-yatech-snow",
++   "yuri-yagntc-temperate",
++   "yuri-yagntc-snow",
++   "yuri-yappet-temperate",
++   "yuri-yappet-snow",
++   "yuri-yayard-temperate",
++   "yuri-yayard-snow",
++   "yuri-yaweap-temperate",
++   "yuri-yaweap-snow",
++   "rhino",
++ ]
+
+- Expected  - 1
++ Received  + 200
+
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/unified-desktop.test.ts:40:46)
+(fail) absent optional data exposes availability without exposing arbitrary files [16.38ms]
+
+scripts/m1/yr-unit-animation.test.ts:
+(pass) deployment event binds owner, complete HD family and native shadow before reverse animation creation [0.78ms]
+(pass) authored rotor occupies the native joint plane and keeps its reference projection [1.37ms]
+(pass) retail helicopter rotor joints are supplied only when explicit rotor metadata is absent [3.12ms]
+
+scripts/m1/rhino-parts.test.ts:
+(pass) deterministic bytes validate SHA-256 and reject changed content and identity [0.15ms]
+(pass) heading eligibility is circular, exact and fail-closed with original state exclusions [1.32ms]
+(pass) two independently selected components reuse geometry, projection and exact native transform objects [0.79ms]
+(pass) fallback never leaves a partial vehicle, including owner and tilt [0.61ms]
+(pass) shared four-part lifetime survives independent entity disposal and restores exact hooks [0.91ms]
+
+scripts/m1/rhino-game.test.ts:
+(pass) Rhino follows default-on global HD preference and persists explicit off [0.06ms]
+(pass) native Rhino render states are supported without mutating gameplay [0.09ms]
+(pass) team shading preserves reference red and shares only per-vehicle dynamic uniforms [0.40ms]
+(pass) complete local family matches accepted eight-heading base bytes and pinned identity [10.46ms]
+
+scripts/m1/allied-units/feedback.test.ts:
+(pass) dolphin swim and attack use clockwise source bearings without changing animation phase [0.12ms]
+(pass) parking depth clears only the occupied sprite surface and preserves screen projection [1.11ms]
+332 |         const now = performance.now(), elapsed = this.lastGattlingTime === undefined ? 0
+333 |             : Math.min(.1, (now - this.lastGattlingTime) / 1000);
+334 |         this.lastGattlingTime = now;
+335 |         const discPhase = this.family.identity === 'DISK' ? this.discRotation.update(
+336 |             u.turretTrait.facing, now, 1000 / (15 * (r.gameSpeed?.value ?? 1))) : 0;
+337 |         const gattlingActive = !!u.rules.isGattling && u.armedTrait.gattlingHeat > 0 && !u.attackTrait.isIdle();
+                                         ^
+TypeError: undefined is not an object (evaluating 'u.rules.isGattling')
+      at update (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/src/engine/renderable/unitVxl/VxlUnitRenderer.ts:337:36)
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/allied-units/feedback.test.ts:73:46)
+(fail) native depth mask is traversed only beneath a high bridge [0.98ms]
+
+scripts/m1/yuri-units/registration.test.ts:
+21 |     const manifest = JSON.parse(await fs.readFile(path.join(root, workerDirectory, 'manifest.json'), 'utf8'));
+22 |     const voxel = catalog.vxl.SMIN;
+23 |     for (const variant of voxel.variants) await copy(path.dirname(variant.path));
+24 |     const key = `/local-hd/${entry.selection}-selection.json`;
+25 |     const complete = await registerHdResources(root);
+26 |     expect(complete.selections.has(key)).toBe(true);
+                                              ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/yuri-units/registration.test.ts:26:42)
+(fail) miner registration retains manifests and selects one complete density for body and workers [15.41ms]
+
+3 tests failed:
+(fail) absent optional data exposes availability without exposing arbitrary files [16.38ms]
+(fail) native depth mask is traversed only beneath a high bridge [0.98ms]
+(fail) miner registration retains manifests and selects one complete density for body and workers [15.41ms]
+
+ 29 pass
+ 3 fail
+ 16863 expect() calls
+Ran 32 tests across 8 files. [283.00ms]

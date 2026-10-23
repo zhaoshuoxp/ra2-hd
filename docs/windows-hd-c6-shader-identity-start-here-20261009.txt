@@ -1,0 +1,25 @@
+C6 shader identity capture: one automatic stress trace
+
+Extract this ZIP's C6-Shader-Identity-S1 folder INSIDE the existing complete
+RA2-HD-WINHD-20261008-D38F136-C6-4d3e41f-Windows-x64 game folder. The new
+folder must sit beside Red Alert 2 HD.exe and the original Export-Reports.cmd.
+No existing file needs replacement. Keep the original C6 kit and reports.
+
+Open C6-Shader-Identity-S1/Capture-Shader-Identity.cmd. It verifies C6 and
+prepares an isolated byte-identical copy of its runtime before opening the
+game. This uses about 368 MiB of additional local space; full art is reused.
+No development software or network connection is required.
+
+The game automatically selects the same eight-player/seven-AI 4X setup and
+starts one eight-second F9 trace about 20 seconds after the first live map.
+Keep it focused. Do not press F8/F9 or change display/graphics settings.
+Wait for the usual final capture-complete title, then close the game.
+Use the ORIGINAL C6 Export-Reports.cmd and return its new RETURN ZIP.
+The new shader/material records are inside trace-status.json; provenance and
+any companion failure are also exported in USER-NOTES.txt.
+
+This is opt-in diagnosis, not another visual or performance candidate.
+Instrumented phases cannot replace the preserved Normal C5/C6 comparison.
+The game code, art, rules, map, HD limits, profiles and old ZIPs are preserved.
+If capture fails, keep its output and runtime folder; report the displayed
+failure and export any available C6 reports. Do not edit the original kit.

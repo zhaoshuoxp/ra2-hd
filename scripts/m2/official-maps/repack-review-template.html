@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; frame-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>M2.3 R5 Complete Review</title>
+<style>
+:root { color-scheme: dark; font: 20px/1.5 system-ui; background: #15191d; color: #e9edf0; }
+body { margin: 24px; }
+h1 { font-size: 32px; margin: 0 0 12px; }
+label { display: block; margin-bottom: 8px; }
+select { font: inherit; max-width: 100%; width: 100%; padding: 10px; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+button { font: inherit; padding: 8px 16px; }
+button[aria-pressed="true"] { background: #e9edf0; color: #15191d; }
+.picture { overflow: auto; }
+img { display: block; width: auto; height: auto; max-width: none; }
+iframe { display: block; border: 0; width: 100%; height: 1200px; background: #15191d; }
+[hidden] { display: none; }
+figcaption { margin-bottom: 12px; }
+a { color: #9acaff; }
+</style>
+</head>
+<body>
+<h1>M2.3 R5 Complete Review</h1>
+<label for="review-page">Building or native match state</label>
+<select id="review-page">__PAGE_OPTIONS__</select>
+<section id="airport-overview">
+<div class="controls" aria-label="Airport owner color">
+<button type="button" data-owner="red" aria-pressed="true">Red</button>
+<button type="button" data-owner="blue" aria-pressed="false">Blue</button>
+</div>
+<figure>
+<figcaption id="airport-caption">ctairp.shp · Original | HD · 2X · red · frames 0–3</figcaption>
+<div class="picture"><img id="airport-image" src="__AIRPORT_RED__" width="688" height="1632" alt="Original and repaired HD airport, red owner, 2X, frames 0–3"></div>
+</figure>
+</section>
+<iframe id="review-content" title="Selected building comparison" sandbox="allow-same-origin" hidden></iframe>
+<noscript><p><a href="M2.3-R5-REVIEW-EMBEDDED.html">Open the complete static review</a></p></noscript>
+<script type="application/json" id="airport-pictures">__AIRPORT_PICTURES__</script>
+<script>
+(() => {
+  const select = document.getElementById('review-page');
+  const overview = document.getElementById('airport-overview');
+  const frame = document.getElementById('review-content');
+  const image = document.getElementById('airport-image');
+  const caption = document.getElementById('airport-caption');
+  const pictures = JSON.parse(document.getElementById('airport-pictures').textContent);
+  function showPage() {
+    const home = select.value === 'overview';
+    overview.hidden = !home;
+    frame.hidden = home;
+    if (home) frame.removeAttribute('src');
+    else frame.src = select.value;
+  }
+  select.addEventListener('change', showPage);
+  document.querySelectorAll('[data-owner]').forEach(button => {
+    button.addEventListener('click', () => {
+      const owner = button.dataset.owner;
+      image.src = pictures[owner];
+      image.alt = `Original and repaired HD airport, ${owner} owner, 2X, frames 0–3`;
+      caption.textContent = `ctairp.shp · Original | HD · 2X · ${owner} · frames 0–3`;
+      document.querySelectorAll('[data-owner]').forEach(peer => {
+        peer.setAttribute('aria-pressed', String(peer === button));
+      });
+    });
+  });
+  frame.addEventListener('load', () => {
+    if (!frame.contentDocument) return;
+    frame.contentDocument.querySelectorAll('a').forEach(link => {
+      if (link.getAttribute('href') !== '../M2.3-R5-REVIEW-EMBEDDED.html') return;
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        select.value = 'overview';
+        showPage();
+        select.focus();
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

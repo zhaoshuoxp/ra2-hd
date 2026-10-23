@@ -1,0 +1,3228 @@
+{
+  "schema": "m2-1-complete-production-v1",
+  "status": "COMPLETE_SELECTED_PRODUCTION_COPIED_REVIEW_READY",
+  "branch": "task/m2-1-temperate-environment",
+  "authorization": "User accepted V11B flat ground with modest improvement and authorized continued selected production",
+  "scope": "Existing 305-member 742-image temperate ledger only",
+  "resource": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-1-production-v12c",
+    "sha256": "c09a69f129497128dc22b5c598aeb7f6a43c03b3c91d064721ddde6b415adc69"
+  },
+  "exportValidation": {
+    "status": "PASS",
+    "pack": {
+      "schemaVersion": 1,
+      "revision": "temperate-m2-1-production-v12c",
+      "sha256": "c09a69f129497128dc22b5c598aeb7f6a43c03b3c91d064721ddde6b415adc69"
+    },
+    "members": 305,
+    "images": 742,
+    "imageDensityPairs": 1484,
+    "exactAcceptedPairs": 272,
+    "exactNativePlaceholderPairs": 126,
+    "changedAuthoredPairs": 1100,
+    "exactNativeContactOnlyPairs": 8,
+    "exactVisibleNativeContactPixels": 814940,
+    "occludedNativeOverlapContactPixels": 0,
+    "nativeMetadataAlphaGeometry": "EXACT",
+    "completeTwoPixelGutters": "EXACT",
+    "generatedBoards": 41,
+    "newMembers": 236,
+    "minimumSourceCapacity": 4.466666666666667,
+    "newOpaqueFluorescentMatte": "NONE",
+    "exactRetainedNativeMarkerPixels": 60,
+    "atlasBytes": {
+      "2": 38158336,
+      "4": 149487616
+    },
+    "appearance": "PENDING_COPIED_RUNTIME_REVIEW"
+  },
+  "authoringRoot": ".artifacts/m2-1/authoring-production-v3",
+  "selectedGenerationBoards": 41,
+  "sourceCorrections": [
+    {
+      "member": "cliff28.tem",
+      "previous": "96ab79eba225fcac1f1469dca9b338fe2334bf4c12e836b35b63f9c1ee3e91a1",
+      "archiveSha256": "c6e6aefbea0821cea366868577bced5cdbcb33de7f38c113074f7e9aaf52ccfd",
+      "cause": "INVENTORY_HASHED_GROWN_POST_DECODE_STREAM",
+      "archiveBytes": 9726,
+      "postDecodeBytes": 238072,
+      "legacyExpandedArchiveHash": "96ab79eba225fcac1f1469dca9b338fe2334bf4c12e836b35b63f9c1ee3e91a1"
+    },
+    {
+      "member": "cliff32.tem",
+      "previous": "a4a49589f09fb4ab3ed4a0c95128a381b9f68a1c595e80c6b756d9036def592d",
+      "archiveSha256": "136a80495d1b711458461240c929d92ac87cb44d9f8fbcb21f7bf8d015990a43",
+      "cause": "INVENTORY_HASHED_GROWN_POST_DECODE_STREAM",
+      "archiveBytes": 7988,
+      "postDecodeBytes": 185932,
+      "legacyExpandedArchiveHash": "a4a49589f09fb4ab3ed4a0c95128a381b9f68a1c595e80c6b756d9036def592d"
+    }
+  ],
+  "diagnostics": [
+    {
+      "stage": "export-v12",
+      "status": "FAILED_RETAINED_UNSELECTED",
+      "reason": "Writable NumPy contact mask required; corrected copy allocation"
+    },
+    {
+      "stage": "export-v12b",
+      "status": "FAILED_RETAINED_UNSELECTED",
+      "reason": "Native Ramp09 yellow contact marker was rejected as external matte; exact native marker retained"
+    },
+    {
+      "stage": "independent-verification",
+      "status": "FAILED_RECEIPTS_RETAINED",
+      "reason": "Slope13 variants have four covered contact-only pixels and no eroded interior; transparent RGB extrusion is excluded from visual-change counts. Historical study records support both flat and nested master schemas"
+    },
+    {
+      "stage": "first-full-native-4x",
+      "status": "FAILED_RETAINED",
+      "reason": "Harness compared native base slope name with a selected original random variant; corrected to native entry.files membership"
+    },
+    {
+      "stage": "first-ra2-command",
+      "status": "FAILED_RETAINED_BEFORE_MATCH",
+      "reason": "Command omitted --edition=ra2; explicit map-identity guard rejected the YR default before match start"
+    },
+    {
+      "stage": "first-native-html-review",
+      "status": "FAILED_RETAINED_AFTER_BOUNDED_STOP",
+      "reason": "Decode inspection awaited lazy images in a collapsed gallery; exact task-owned Electron child was closed, and inspection now requests eager decoding while preserving user-facing lazy loading"
+    }
+  ],
+  "verification": {
+    "focusedTests": "18_PASS_0_FAIL_132_ASSERTIONS",
+    "entryTypecheck": "PASS",
+    "syntax": "PASS"
+  },
+  "technical": "PASS_BOUNDED_NATIVE_2X_4X_RA2_SECONDARY_FALLBACK_LIFECYCLE",
+  "visual": "USER_ACCEPTED_REMAINDER_WITH_ROAD_MIX_AND_GRASS_SLOPE_SEAM_EXCEPTIONS",
+  "windows": "NOT_RUN",
+  "main": "PRESERVED_NO_MERGE_PUSH_OR_PUBLICATION",
+  "runtimeSourceHead": "227dbc67c472ef0697b8e5c49fbe531dc70a250b",
+  "copiedReceipt": {
+    "app": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Production-Review-V12C-20261006-227dbc6-macOS-arm64/RA2 HD M2.1 Production Review V12C.app",
+    "resources": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Production-Review-V12C-20261006-227dbc6-macOS-arm64/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Production-Review-V12C-20261006-227dbc6-macOS-arm64/RA2-HD-UI-Resources",
+    "review": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Production-Review-V12C-20261006-227dbc6-macOS-arm64/M2.1-Production-Review-V12C-Embedded.html",
+    "coverageScene": "cliff-closure-full",
+    "reviewMasters": 41,
+    "originalReferences": 41,
+    "reviewMasterSizes": [
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1774,
+        887
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ]
+    ]
+  },
+  "copiedVerification": {
+    "status": "PASS_COPIED_HASHES_LINKS_MODES",
+    "sourceHead": "227dbc67c472ef0697b8e5c49fbe531dc70a250b",
+    "destination": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Production-Review-V12C-20261006-227dbc6-macOS-arm64",
+    "entries": 5497,
+    "regularFilesVerified": 5483,
+    "linksVerified": 14,
+    "profile": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Production-Review-V12C-20261006-227dbc6-macOS-arm64/M2.1-Review-Profile",
+    "errors": []
+  },
+  "native": [
+    {
+      "name": "copied-production-v12c-4x-final",
+      "file": ".artifacts/m2-1/copied-production-v12c-4x-final/report.json",
+      "sha256": "83105bb2e433136a37cbdacf7a864ee0f6e17a72ccdbcfcc9dba17f679875f26",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "yr",
+      "map": "xmp03t4.map",
+      "machine": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "release": "27.0.0",
+        "cpu": "Apple M2",
+        "memory": 25769803776
+      },
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "scene": {
+        "density": 4,
+        "sequence": "fixed-seed-start, mixed, first-pan, sustained-pan, exit-reentry",
+        "terrainMode": "SELECTED",
+        "boundary": "Same retail map, legal controlled roster, unchanged native camera and simulation. Bot thinking disabled in both observations."
+      },
+      "mapEntryMs": 5184,
+      "frames": {
+        "mixedFrames": {
+          "samples": 480,
+          "mean": 16.66758333333333,
+          "p95": 17.840000000000146,
+          "p99": 18.345000000001164,
+          "max": 18.56999999999971,
+          "stalls50": 0
+        },
+        "firstEncounterFrames": {
+          "samples": 480,
+          "mean": 16.669437499999997,
+          "p95": 17.854999999999563,
+          "p99": 18.594999999997526,
+          "max": 18.63000000000102,
+          "stalls50": 0
+        },
+        "sustainedPanFrames": {
+          "samples": 481,
+          "mean": 16.668087318087316,
+          "p95": 18.25499999999738,
+          "p99": 18.62000000000262,
+          "max": 18.67000000000553,
+          "stalls50": 0
+        }
+      },
+      "allocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 139893828,
+        "terrainGpu": 149487616,
+        "terrainCpu": 149487616,
+        "terrainCharge": 298985552,
+        "totalCharged": 580817608,
+        "limit": 1342177280
+      },
+      "uiBytes": 11991296,
+      "preparedPeakBytes": 134092504,
+      "groups": [
+        {
+          "id": "ground",
+          "status": "PUBLISHED",
+          "sha256": "c20806d9447390c01461fb8949ebca36ef192eb513f9d9eed684367cdc150a5b"
+        },
+        {
+          "id": "road-representative",
+          "status": "PUBLISHED",
+          "sha256": "e5e09dc11f6ae37eec639a0832cd03ff69c233838815532da26e955b51850dd4"
+        },
+        {
+          "id": "elevation-representative",
+          "status": "PUBLISHED",
+          "sha256": "b7ff1b37433d996793c0da5d95b70f85bfaf30ed2f0a7cc90ab878db535103ce"
+        }
+      ],
+      "declaredImages": 742,
+      "placedBindings": 7962,
+      "picking": [
+        {
+          "source": "dlat14.tem",
+          "expected": [
+            28,
+            88
+          ],
+          "point": {
+            "x": 299.68965517241384,
+            "y": 406
+          },
+          "actual": [
+            28,
+            88
+          ]
+        },
+        {
+          "source": "glat03.tem",
+          "expected": [
+            27,
+            88
+          ],
+          "point": {
+            "x": 269.68965517241384,
+            "y": 391
+          },
+          "actual": [
+            27,
+            88
+          ]
+        },
+        {
+          "source": "glat05.tem",
+          "expected": [
+            28,
+            87
+          ],
+          "point": {
+            "x": 329.68965517241384,
+            "y": 391
+          },
+          "actual": [
+            28,
+            87
+          ]
+        },
+        {
+          "source": "glat04.tem",
+          "expected": [
+            28,
+            89
+          ],
+          "point": {
+            "x": 269.68965517241384,
+            "y": 421
+          },
+          "actual": [
+            28,
+            89
+          ]
+        },
+        {
+          "source": "proad01b.tem",
+          "expected": [
+            28,
+            85
+          ],
+          "point": {
+            "x": 389.68965517241384,
+            "y": 361
+          },
+          "actual": [
+            28,
+            85
+          ]
+        },
+        {
+          "source": "proad01.tem",
+          "expected": [
+            27,
+            85
+          ],
+          "point": {
+            "x": 359.68965517241384,
+            "y": 346
+          },
+          "actual": [
+            27,
+            85
+          ]
+        },
+        {
+          "source": "proad01b.tem",
+          "expected": [
+            29,
+            85
+          ],
+          "point": {
+            "x": 419.68965517241384,
+            "y": 376
+          },
+          "actual": [
+            29,
+            85
+          ]
+        },
+        {
+          "source": "proad01c.tem",
+          "expected": [
+            26,
+            85
+          ],
+          "point": {
+            "x": 329.68965517241384,
+            "y": 331
+          },
+          "actual": [
+            26,
+            85
+          ]
+        }
+      ],
+      "placement": {
+        "name": "GAPOWR",
+        "member": "glat08.tem",
+        "target": [
+          29,
+          87
+        ],
+        "point": {
+          "x": 359.68965517241384,
+          "y": 406
+        },
+        "picked": [
+          29,
+          87
+        ],
+        "preview": [
+          {
+            "rx": 29,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 29,
+            "ry": 88,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 88,
+            "buildable": true
+          }
+        ],
+        "grid": [
+          {
+            "rx": 29,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 29,
+            "ry": 88,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 87,
+            "buildable": true
+          },
+          {
+            "rx": 30,
+            "ry": 88,
+            "buildable": true
+          }
+        ],
+        "visible": true,
+        "after": {
+          "tile": [
+            29,
+            87
+          ],
+          "occupied": [
+            [
+              29,
+              87
+            ],
+            [
+              29,
+              88
+            ],
+            [
+              30,
+              87
+            ],
+            [
+              30,
+              88
+            ]
+          ],
+          "canPlaceAgain": false
+        }
+      },
+      "rampPassage": {
+        "id": 1831,
+        "member": "ramp01.tem",
+        "start": [
+          33,
+          72,
+          4
+        ],
+        "ramp": [
+          35,
+          69,
+          7,
+          11
+        ],
+        "target": [
+          31,
+          69,
+          8
+        ],
+        "onRamp": {
+          "name": "MTNK",
+          "id": 1831,
+          "tick": 4680,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            35,
+            69
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        "after": {
+          "name": "MTNK",
+          "id": 1831,
+          "tick": 4807,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            31,
+            69
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0,
+          "nativeTileHeight": 8
+        }
+      },
+      "reentry": [
+        {
+          "enabled": false,
+          "loadMs": 3831,
+          "oldDisposed": true,
+          "charge": 0,
+          "bindings": 0
+        },
+        {
+          "enabled": true,
+          "loadMs": 5384,
+          "oldDisposed": true,
+          "charge": 298985552,
+          "bindings": 7962
+        }
+      ],
+      "productionViews": [
+        {
+          "name": "rough-ground-full",
+          "status": "CAPTURED",
+          "center": [
+            28,
+            88,
+            4
+          ]
+        },
+        {
+          "name": "grass-slope-full",
+          "status": "CAPTURED",
+          "center": [
+            37,
+            71,
+            5
+          ]
+        },
+        {
+          "name": "cliff-closure-full",
+          "status": "CAPTURED",
+          "center": [
+            31,
+            71,
+            4
+          ]
+        },
+        {
+          "name": "connector-full",
+          "status": "CAPTURED",
+          "center": [
+            35,
+            72,
+            4
+          ]
+        },
+        {
+          "name": "road-main-full",
+          "status": "CAPTURED",
+          "center": [
+            28,
+            85,
+            4
+          ]
+        },
+        {
+          "name": "road-end-full",
+          "status": "CAPTURED",
+          "center": [
+            40,
+            73,
+            4
+          ]
+        },
+        {
+          "name": "road-connection-full",
+          "status": "CAPTURED",
+          "center": [
+            40,
+            86,
+            4
+          ]
+        },
+        {
+          "name": "road-slope-full",
+          "status": "CAPTURED",
+          "center": [
+            86,
+            91,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "name": "copied-production-v12c-2x",
+      "file": ".artifacts/m2-1/copied-production-v12c-2x/report.json",
+      "sha256": "977717048243edf7c44f4ae074502dad280bf4dabeead71493aa9ee655a0b3e6",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "yr",
+      "map": "xmp03t4.map",
+      "machine": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "release": "27.0.0",
+        "cpu": "Apple M2",
+        "memory": 25769803776
+      },
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "scene": {
+        "density": 2,
+        "sequence": "fixed-seed-start, mixed, first-pan, sustained-pan, exit-reentry",
+        "terrainMode": "SELECTED",
+        "boundary": "Same retail map, legal controlled roster, unchanged native camera and simulation. Bot thinking disabled in both observations."
+      },
+      "mapEntryMs": 4220,
+      "frames": {
+        "mixedFrames": {
+          "samples": 480,
+          "mean": 16.6675625,
+          "p95": 17.895000000000437,
+          "p99": 18.584999999999127,
+          "max": 18.62000000000262,
+          "stalls50": 0
+        },
+        "firstEncounterFrames": {
+          "samples": 480,
+          "mean": 16.666499999999996,
+          "p95": 17.705000000001746,
+          "p99": 18.395000000000437,
+          "max": 18.514999999999418,
+          "stalls50": 0
+        },
+        "sustainedPanFrames": {
+          "samples": 480,
+          "mean": 16.664125000000006,
+          "p95": 17.485000000000582,
+          "p99": 18.375,
+          "max": 18.645000000000437,
+          "stalls50": 0
+        }
+      },
+      "allocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 43741360,
+        "terrainGpu": 38158336,
+        "terrainCpu": 38158336,
+        "terrainCharge": 76326992,
+        "totalCharged": 160303632,
+        "limit": 268435456
+      },
+      "uiBytes": 11991296,
+      "preparedPeakBytes": 72847596,
+      "groups": [
+        {
+          "id": "ground",
+          "status": "PUBLISHED",
+          "sha256": "a551620b9a7d4a6d67d404635dd584ed8519d933010d72a04af5cc37e1bdc6e5"
+        },
+        {
+          "id": "road-representative",
+          "status": "PUBLISHED",
+          "sha256": "ec1ec89c11f67c6dbe19bce45af58ad82d0d14670ee55a90ff3a581983ab9974"
+        },
+        {
+          "id": "elevation-representative",
+          "status": "PUBLISHED",
+          "sha256": "5dd81baf5bc9fdea4fbf13aff1172a49ceccbcb1bf338bd3c1cf191b1155b401"
+        }
+      ],
+      "declaredImages": 742,
+      "placedBindings": 7962,
+      "picking": null,
+      "placement": null,
+      "rampPassage": null,
+      "reentry": null,
+      "productionViews": [
+        {
+          "name": "rough-ground-full",
+          "status": "CAPTURED",
+          "center": [
+            28,
+            88,
+            4
+          ]
+        },
+        {
+          "name": "grass-slope-full",
+          "status": "CAPTURED",
+          "center": [
+            37,
+            71,
+            5
+          ]
+        },
+        {
+          "name": "cliff-closure-full",
+          "status": "CAPTURED",
+          "center": [
+            31,
+            71,
+            4
+          ]
+        },
+        {
+          "name": "connector-full",
+          "status": "CAPTURED",
+          "center": [
+            35,
+            72,
+            4
+          ]
+        },
+        {
+          "name": "road-main-full",
+          "status": "CAPTURED",
+          "center": [
+            28,
+            85,
+            4
+          ]
+        },
+        {
+          "name": "road-end-full",
+          "status": "CAPTURED",
+          "center": [
+            40,
+            73,
+            4
+          ]
+        },
+        {
+          "name": "road-connection-full",
+          "status": "CAPTURED",
+          "center": [
+            40,
+            86,
+            4
+          ]
+        },
+        {
+          "name": "road-slope-full",
+          "status": "CAPTURED",
+          "center": [
+            86,
+            91,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "name": "production-v12c-original-terrain",
+      "file": ".artifacts/m2-1/production-v12c-original-terrain/report.json",
+      "sha256": "ef8e1bcd124947c005fd601249a19feeb6d7639feee4de1189685f72ac47200f",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "yr",
+      "map": "xmp03t4.map",
+      "machine": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "release": "27.0.0",
+        "cpu": "Apple M2",
+        "memory": 25769803776
+      },
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "scene": {
+        "density": 4,
+        "sequence": "fixed-seed-start, mixed, first-pan, sustained-pan, exit-reentry",
+        "terrainMode": "ORIGINAL_TERRAIN_WITH_EXISTING_M1_HD",
+        "boundary": "Same retail map, legal controlled roster, unchanged native camera and simulation. Bot thinking disabled in both observations."
+      },
+      "mapEntryMs": 4486,
+      "frames": {
+        "mixedFrames": {
+          "samples": 481,
+          "mean": 16.668191268191272,
+          "p95": 17.700000000000728,
+          "p99": 18.610000000000582,
+          "max": 18.659999999999854,
+          "stalls50": 0
+        },
+        "firstEncounterFrames": {
+          "samples": 480,
+          "mean": 16.667281249999995,
+          "p95": 18.159999999999854,
+          "p99": 18.584999999999127,
+          "max": 18.63000000000102,
+          "stalls50": 0
+        },
+        "sustainedPanFrames": {
+          "samples": 480,
+          "mean": 16.66758333333333,
+          "p95": 17.389999999999418,
+          "p99": 18.62999999999738,
+          "max": 18.665000000000873,
+          "stalls50": 0
+        }
+      },
+      "allocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 139893828,
+        "terrainGpu": 0,
+        "terrainCpu": 0,
+        "terrainCharge": 0,
+        "totalCharged": 281832056,
+        "limit": 1342177280
+      },
+      "uiBytes": 11991296,
+      "preparedPeakBytes": 133975088,
+      "groups": [],
+      "declaredImages": 0,
+      "placedBindings": 0,
+      "picking": null,
+      "placement": null,
+      "rampPassage": null,
+      "reentry": null,
+      "productionViews": [
+        {
+          "name": "rough-ground-full",
+          "status": "CAPTURED",
+          "center": [
+            28,
+            88,
+            4
+          ]
+        },
+        {
+          "name": "grass-slope-full",
+          "status": "CAPTURED",
+          "center": [
+            37,
+            71,
+            5
+          ]
+        },
+        {
+          "name": "cliff-closure-full",
+          "status": "CAPTURED",
+          "center": [
+            31,
+            71,
+            4
+          ]
+        },
+        {
+          "name": "connector-full",
+          "status": "CAPTURED",
+          "center": [
+            35,
+            72,
+            4
+          ]
+        },
+        {
+          "name": "road-main-full",
+          "status": "CAPTURED",
+          "center": [
+            28,
+            85,
+            4
+          ]
+        },
+        {
+          "name": "road-end-full",
+          "status": "CAPTURED",
+          "center": [
+            40,
+            73,
+            4
+          ]
+        },
+        {
+          "name": "road-connection-full",
+          "status": "CAPTURED",
+          "center": [
+            40,
+            86,
+            4
+          ]
+        },
+        {
+          "name": "road-slope-full",
+          "status": "CAPTURED",
+          "center": [
+            86,
+            91,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "name": "copied-production-v12c-ra2-final",
+      "file": ".artifacts/m2-1/copied-production-v12c-ra2-final/report.json",
+      "sha256": "1f9a08bd6400edaea11a8964d0e01043097615e06a3c44facc5b3930a360ff5d",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "ra2",
+      "map": "mp03t4.map",
+      "machine": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "release": "27.0.0",
+        "cpu": "Apple M2",
+        "memory": 25769803776
+      },
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "scene": {
+        "density": 4,
+        "sequence": "fixed-seed-start, mixed, first-pan, sustained-pan, exit-reentry",
+        "terrainMode": "SELECTED",
+        "boundary": "Same retail map, legal controlled roster, unchanged native camera and simulation. Bot thinking disabled in both observations."
+      },
+      "mapEntryMs": 4648,
+      "frames": {},
+      "allocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 118549268,
+        "terrainGpu": 149487616,
+        "terrainCpu": 149487616,
+        "terrainCharge": 298985552,
+        "totalCharged": 559473048,
+        "limit": 1342177280
+      },
+      "uiBytes": 11806976,
+      "preparedPeakBytes": 133975088,
+      "groups": [
+        {
+          "id": "ground",
+          "status": "PUBLISHED",
+          "sha256": "c20806d9447390c01461fb8949ebca36ef192eb513f9d9eed684367cdc150a5b"
+        },
+        {
+          "id": "road-representative",
+          "status": "PUBLISHED",
+          "sha256": "e5e09dc11f6ae37eec639a0832cd03ff69c233838815532da26e955b51850dd4"
+        },
+        {
+          "id": "elevation-representative",
+          "status": "PUBLISHED",
+          "sha256": "b7ff1b37433d996793c0da5d95b70f85bfaf30ed2f0a7cc90ab878db535103ce"
+        }
+      ],
+      "declaredImages": 742,
+      "placedBindings": 7962,
+      "picking": [
+        {
+          "source": "dlat14.tem",
+          "expected": [
+            28,
+            88
+          ],
+          "point": {
+            "x": 299.68965517241384,
+            "y": 406
+          },
+          "actual": [
+            28,
+            88
+          ]
+        },
+        {
+          "source": "glat03a.tem",
+          "expected": [
+            27,
+            88
+          ],
+          "point": {
+            "x": 269.68965517241384,
+            "y": 391
+          },
+          "actual": [
+            27,
+            88
+          ]
+        },
+        {
+          "source": "glat05.tem",
+          "expected": [
+            28,
+            87
+          ],
+          "point": {
+            "x": 329.68965517241384,
+            "y": 391
+          },
+          "actual": [
+            28,
+            87
+          ]
+        },
+        {
+          "source": "glat04.tem",
+          "expected": [
+            28,
+            89
+          ],
+          "point": {
+            "x": 269.68965517241384,
+            "y": 421
+          },
+          "actual": [
+            28,
+            89
+          ]
+        },
+        {
+          "source": "proad01b.tem",
+          "expected": [
+            28,
+            85
+          ],
+          "point": {
+            "x": 389.68965517241384,
+            "y": 361
+          },
+          "actual": [
+            28,
+            85
+          ]
+        },
+        {
+          "source": "proad01a.tem",
+          "expected": [
+            27,
+            85
+          ],
+          "point": {
+            "x": 359.68965517241384,
+            "y": 346
+          },
+          "actual": [
+            27,
+            85
+          ]
+        },
+        {
+          "source": "proad01b.tem",
+          "expected": [
+            29,
+            85
+          ],
+          "point": {
+            "x": 419.68965517241384,
+            "y": 376
+          },
+          "actual": [
+            29,
+            85
+          ]
+        },
+        {
+          "source": "proad01c.tem",
+          "expected": [
+            26,
+            85
+          ],
+          "point": {
+            "x": 329.68965517241384,
+            "y": 331
+          },
+          "actual": [
+            26,
+            85
+          ]
+        }
+      ],
+      "placement": null,
+      "rampPassage": {
+        "id": 1824,
+        "member": "slope02c.tem",
+        "start": [
+          68,
+          32,
+          5
+        ],
+        "ramp": [
+          69,
+          34,
+          5,
+          2
+        ],
+        "target": [
+          67,
+          34,
+          6
+        ],
+        "onRamp": {
+          "name": "MTNK",
+          "id": 1824,
+          "tick": 2510,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            69,
+            34
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0
+        },
+        "after": {
+          "name": "MTNK",
+          "id": 1824,
+          "tick": 2632,
+          "spawned": true,
+          "destroyed": false,
+          "tile": [
+            67,
+            34
+          ],
+          "moving": false,
+          "firing": false,
+          "health": 100,
+          "shpHd": false,
+          "vxlHd": true,
+          "parts": [
+            "gtnk.vxl",
+            "gtnktur.vxl",
+            "gtnkbarl.vxl"
+          ],
+          "turret": 0,
+          "warped": false,
+          "zone": 0,
+          "elevation": 0,
+          "nativeTileHeight": 6
+        }
+      },
+      "reentry": null,
+      "productionViews": [
+        {
+          "name": "rough-ground-full",
+          "status": "CAPTURED",
+          "center": [
+            28,
+            88,
+            4
+          ]
+        },
+        {
+          "name": "grass-slope-full",
+          "status": "CAPTURED",
+          "center": [
+            37,
+            71,
+            5
+          ]
+        },
+        {
+          "name": "cliff-closure-full",
+          "status": "CAPTURED",
+          "center": [
+            31,
+            71,
+            4
+          ]
+        },
+        {
+          "name": "connector-full",
+          "status": "CAPTURED",
+          "center": [
+            35,
+            72,
+            4
+          ]
+        },
+        {
+          "name": "road-main-full",
+          "status": "CAPTURED",
+          "center": [
+            28,
+            85,
+            4
+          ]
+        },
+        {
+          "name": "road-end-full",
+          "status": "CAPTURED",
+          "center": [
+            40,
+            73,
+            4
+          ]
+        },
+        {
+          "name": "road-connection-full",
+          "status": "CAPTURED",
+          "center": [
+            40,
+            86,
+            4
+          ]
+        },
+        {
+          "name": "road-slope-full",
+          "status": "CAPTURED",
+          "center": [
+            86,
+            91,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "name": "copied-production-v12c-secondary",
+      "file": ".artifacts/m2-1/copied-production-v12c-secondary/report.json",
+      "sha256": "fbb5febc66851eae00daa9ff26aad71b63ffaf1e9a6fca1a537a878e94a1b806",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "yr",
+      "map": "xmp19t4.map",
+      "machine": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "release": "27.0.0",
+        "cpu": "Apple M2",
+        "memory": 25769803776
+      },
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "scene": {
+        "density": 4,
+        "sequence": "fixed-seed-start, mixed, first-pan, sustained-pan, exit-reentry",
+        "terrainMode": "SELECTED",
+        "boundary": "Same retail map, legal controlled roster, unchanged native camera and simulation. Bot thinking disabled in both observations."
+      },
+      "mapEntryMs": 5112,
+      "frames": {},
+      "allocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 139893828,
+        "terrainGpu": 149487616,
+        "terrainCpu": 149487616,
+        "terrainCharge": 298985552,
+        "totalCharged": 580817608,
+        "limit": 1342177280
+      },
+      "uiBytes": 11991296,
+      "preparedPeakBytes": 133975088,
+      "groups": [
+        {
+          "id": "ground",
+          "status": "PUBLISHED",
+          "sha256": "c20806d9447390c01461fb8949ebca36ef192eb513f9d9eed684367cdc150a5b"
+        },
+        {
+          "id": "road-representative",
+          "status": "PUBLISHED",
+          "sha256": "e5e09dc11f6ae37eec639a0832cd03ff69c233838815532da26e955b51850dd4"
+        },
+        {
+          "id": "elevation-representative",
+          "status": "PUBLISHED",
+          "sha256": "b7ff1b37433d996793c0da5d95b70f85bfaf30ed2f0a7cc90ab878db535103ce"
+        }
+      ],
+      "declaredImages": 742,
+      "placedBindings": 16005,
+      "picking": null,
+      "placement": null,
+      "rampPassage": null,
+      "reentry": null,
+      "productionViews": [
+        {
+          "name": "rough-ground-full",
+          "status": "CAPTURED",
+          "center": [
+            50,
+            114,
+            7
+          ]
+        },
+        {
+          "name": "grass-slope-full",
+          "status": "CAPTURED",
+          "center": [
+            48,
+            110,
+            6
+          ]
+        },
+        {
+          "name": "cliff-closure-full",
+          "status": "CAPTURED",
+          "center": [
+            141,
+            140,
+            7
+          ]
+        },
+        {
+          "name": "connector-full",
+          "status": "CAPTURED",
+          "center": [
+            48,
+            112,
+            6
+          ]
+        },
+        {
+          "name": "road-main-full",
+          "status": "CAPTURED",
+          "center": [
+            52,
+            97,
+            5
+          ]
+        },
+        {
+          "name": "road-end-full",
+          "status": "ABSENT_ON_THIS_UNCHANGED_RETAIL_MAP"
+        },
+        {
+          "name": "road-connection-full",
+          "status": "CAPTURED",
+          "center": [
+            52,
+            96,
+            5
+          ]
+        },
+        {
+          "name": "road-slope-full",
+          "status": "CAPTURED",
+          "center": [
+            64,
+            97,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "name": "copied-production-v12c-invalid-ground",
+      "file": ".artifacts/m2-1/copied-production-v12c-invalid-ground/report.json",
+      "sha256": "85e498c66c39daabc9c5803ae05d2c3ad8dab1687a681b4847df81d4724be636",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "edition": "yr",
+      "map": "xmp03t4.map",
+      "machine": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "release": "27.0.0",
+        "cpu": "Apple M2",
+        "memory": 25769803776
+      },
+      "graphics": {
+        "backend": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "vendor": "Google Inc. (Apple)",
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "framebuffer": [
+          1489,
+          1080
+        ],
+        "viewport": [
+          1241.3793103448277,
+          900
+        ],
+        "speed": 2
+      },
+      "scene": {
+        "density": 4,
+        "sequence": "fixed-seed-start, mixed, first-pan, sustained-pan, exit-reentry",
+        "terrainMode": "CORRUPT_GROUND_AT_FETCH_BOUNDARY",
+        "boundary": "Same retail map, legal controlled roster, unchanged native camera and simulation. Bot thinking disabled in both observations."
+      },
+      "mapEntryMs": 5138,
+      "frames": {},
+      "allocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 139893828,
+        "terrainGpu": 137297920,
+        "terrainCpu": 137297920,
+        "terrainCharge": 274604360,
+        "totalCharged": 556436416,
+        "limit": 1342177280
+      },
+      "uiBytes": 11991296,
+      "preparedPeakBytes": 133975088,
+      "groups": [
+        {
+          "id": "ground",
+          "status": "ORIGINAL",
+          "reason": "Error: terrain-atlas-hash"
+        },
+        {
+          "id": "road-representative",
+          "status": "PUBLISHED",
+          "sha256": "e5e09dc11f6ae37eec639a0832cd03ff69c233838815532da26e955b51850dd4"
+        },
+        {
+          "id": "elevation-representative",
+          "status": "PUBLISHED",
+          "sha256": "b7ff1b37433d996793c0da5d95b70f85bfaf30ed2f0a7cc90ab878db535103ce"
+        }
+      ],
+      "declaredImages": 654,
+      "placedBindings": 3631,
+      "picking": null,
+      "placement": null,
+      "rampPassage": null,
+      "reentry": null,
+      "productionViews": []
+    }
+  ],
+  "authoring": [
+    {
+      "file": ".artifacts/m2-1/authoring-production-v3/source.json",
+      "sha256": "637bebd8b6f92a898c1af06b00d6a3c9362623f4bff45dc54bc7eca88cea8e5a"
+    },
+    {
+      "file": ".artifacts/m2-1/authoring-production-v3/layout.json",
+      "sha256": "a5fa7633147a9c7d7bb778a113be3fe7574fda414bce90a17aa5e2f92caeb395"
+    },
+    {
+      "file": ".artifacts/m2-1/authoring-production-v3/batches.json",
+      "sha256": "e512dd5d7da7173eb6ed6c6b348e837fe70459514528434496a062ae4487b59b"
+    },
+    {
+      "file": ".artifacts/m2-1/authoring-production-v3/generation-plan.json",
+      "sha256": "de32da05fcc4b4d89f2d8bbfc92f6b5c7d262d1fbd7f21c846f2d65070a7f6c0"
+    },
+    {
+      "file": ".artifacts/m2-1/authoring-production-v3/generation-provenance.json",
+      "sha256": "d5cd7cb4c31d9da72ea5f4848cc068e78adec53c76235d9b7717562cd2c9248d"
+    }
+  ],
+  "package": {
+    "file": ".artifacts/m2-1/package-production-v12c/package-receipt.json",
+    "sha256": "2aff4236ce9cfbf486fbe3973df8ab266ea288b6fa1d170c5632f190a6f32473",
+    "resourceStorage": "independent copies",
+    "files": 5497
+  },
+  "signature": "PASS_DEEP_STRICT_AD_HOC",
+  "review": {
+    "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Production-Review-V12C-20261006-227dbc6-macOS-arm64/M2.1-Production-Review-V12C-Embedded.html",
+    "bytes": 397763747,
+    "sha256": "37ff29b09f15bc119648294de584c3b3acafea515064da9a3acb4c9350b35ee5",
+    "embedded": true,
+    "captures": 56,
+    "scenes": 16,
+    "videos": 3,
+    "masters": 41,
+    "originalReferences": 41,
+    "media": [
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/mixed-actual-size-framebuffer.png",
+        "sha256": "f10db16c29d8b824ce213b45ed1d7af3d28edfd0e1255d885d0e0818cf415e0d",
+        "bytes": 3058635
+      },
+      {
+        "file": ".artifacts/m2-1/copied-v11b-4x/mixed-actual-size-framebuffer.png",
+        "sha256": "7fd4ba49b29a85101013bbbaa5024388cc29cd91f989a3af727fc16089912511",
+        "bytes": 3927726
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/mixed-actual-size-framebuffer.png",
+        "sha256": "521581223844060e351eaa38443b94aa237afd53b42f7e519733a48b44f786a0",
+        "bytes": 4123243
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/mixed-actual-size-framebuffer.png",
+        "sha256": "6d69ce5ee9be9af116b81a21791c2180bcb3ef1d6d81582edfb0cda5bd5c0155",
+        "bytes": 4205059
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/grass-flat-actual-size-framebuffer.png",
+        "sha256": "e8f8f1c083e5d2f492755ab06af06850be6bc9de724d29219d8d44a1f6f0de17",
+        "bytes": 3059759
+      },
+      {
+        "file": ".artifacts/m2-1/copied-v11b-4x/grass-flat-actual-size-framebuffer.png",
+        "sha256": "f8b167ad9b35a9ca362ff01040fbeeaaa9d624d6b9e90a14288c717320b11d5d",
+        "bytes": 3926040
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/grass-flat-actual-size-framebuffer.png",
+        "sha256": "dbb656d3e179fafb7287bf8421912e97dabad27c5cb2c47078c89e2cf49a33ec",
+        "bytes": 4124256
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/grass-flat-actual-size-framebuffer.png",
+        "sha256": "87feedeac2cc99ee7bb9c2979c7bb5f7f800b023a0cb70ce72a5138dffa16af6",
+        "bytes": 4205166
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/dirt-flat-actual-size-framebuffer.png",
+        "sha256": "8cc4532bca2bf8f4e48c4bcec0fe4cbeca3498548949d67486e3636266482a51",
+        "bytes": 3055834
+      },
+      {
+        "file": ".artifacts/m2-1/copied-v11b-4x/dirt-flat-actual-size-framebuffer.png",
+        "sha256": "beab5f2907784ee07b9fae436501cfdd09ec229e0bdc4f2b83bc0b5999698901",
+        "bytes": 3927329
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/dirt-flat-actual-size-framebuffer.png",
+        "sha256": "d9e8880cb2b00ba1ccd12b865e7170508b5f01e7d4780e3242c9493e8b7ab416",
+        "bytes": 4124035
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/dirt-flat-actual-size-framebuffer.png",
+        "sha256": "335fd20b8ff4548bb6d5dc2a577f788f48e592f4c514500e660d76dbb45b5f22",
+        "bytes": 4205719
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/grass-dirt-transition-actual-size-framebuffer.png",
+        "sha256": "33a707b8c2ca7902c2e3f6baa21c42ac433c3d8b7f9b9133d57274ecbd7cc9b9",
+        "bytes": 3056078
+      },
+      {
+        "file": ".artifacts/m2-1/copied-v11b-4x/grass-dirt-transition-actual-size-framebuffer.png",
+        "sha256": "4f5e868cf52e1f77ed093ab4df5588aaafd996f361cfe0736571ee3ec30a4a0c",
+        "bytes": 3928139
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/grass-dirt-transition-actual-size-framebuffer.png",
+        "sha256": "f7816a5799f469cd9672af9972fc5aca888fa234b2d48fe13994b78c58668822",
+        "bytes": 4123979
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/grass-dirt-transition-actual-size-framebuffer.png",
+        "sha256": "f048c2a1a75c3fc30297f70e2bdbdae2138227f14edfffa39c1a1f51cb4d61a0",
+        "bytes": 4206260
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/ground-water-contact-actual-size-framebuffer.png",
+        "sha256": "ffffc1d73b3ba72b1ca7a3c112a54f7958d4840ed09975960bda997ebdf532b3",
+        "bytes": 3028904
+      },
+      {
+        "file": ".artifacts/m2-1/copied-v11b-4x/ground-water-contact-actual-size-framebuffer.png",
+        "sha256": "33c6ef6465a8f41ed0e1eff31284ebfea3423dc92e072647f820087fc83e287c",
+        "bytes": 3469157
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/ground-water-contact-actual-size-framebuffer.png",
+        "sha256": "6c8b524b0acbdcf2bb7bda260ede1a717f7b806688689b1934b1d66536e1d15c",
+        "bytes": 3876740
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/ground-water-contact-actual-size-framebuffer.png",
+        "sha256": "e346e08ac54631e59e34ea59eb6a57b4cf404b21259df02019a42aeb7aa5bac6",
+        "bytes": 3929792
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/cliff-center-actual-size-framebuffer.png",
+        "sha256": "e15763013f3387d69381b615f21b09f1924aac05ae01372f9891c3bd070812a9",
+        "bytes": 3009353
+      },
+      {
+        "file": ".artifacts/m2-1/copied-v11b-4x/cliff-center-actual-size-framebuffer.png",
+        "sha256": "1214d4c8695d645d6170b9c1c387df2c4131b81448f016151f66b2ead936950d",
+        "bytes": 3691772
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/cliff-center-actual-size-framebuffer.png",
+        "sha256": "799d6f4a7b784089c12bd0c004f04daac50240769c9ab9b4acd45c9ad425781d",
+        "bytes": 4034694
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/cliff-center-actual-size-framebuffer.png",
+        "sha256": "2d37b03fe1ff728ea5541aa069732a3e1a2c3aaa47e2358f0a3e190e9c9c1804",
+        "bytes": 4092730
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/cliff-left-actual-size-framebuffer.png",
+        "sha256": "28bfcc21efcb1d9cbcefd8c53ee7f44389b2094862aba7589604de12285279f4",
+        "bytes": 3024755
+      },
+      {
+        "file": ".artifacts/m2-1/copied-v11b-4x/cliff-left-actual-size-framebuffer.png",
+        "sha256": "050332e29c577f913328071057d34136900a8cc28cae1f93322b6e90482250aa",
+        "bytes": 3746150
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/cliff-left-actual-size-framebuffer.png",
+        "sha256": "6bc0fb91a6a2b86c177ef63179743fff1011cced5521daa08d45b1a67bac6b53",
+        "bytes": 4058314
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/cliff-left-actual-size-framebuffer.png",
+        "sha256": "8a0ec51009a1b955e429406c018e4f5867daf5c4e6b68ecadd3cd6fb84603705",
+        "bytes": 4124091
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/cliff-right-actual-size-framebuffer.png",
+        "sha256": "78d3af4bd313195eca44d4dd2c4df66a1adb3f2dc4526af9e2bfb9b5a1ef708a",
+        "bytes": 3007022
+      },
+      {
+        "file": ".artifacts/m2-1/copied-v11b-4x/cliff-right-actual-size-framebuffer.png",
+        "sha256": "154c919d32c86054a4588903b49b99776e3c5096818972bfb3470f9ea8e11ea4",
+        "bytes": 3576958
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/cliff-right-actual-size-framebuffer.png",
+        "sha256": "74512fc254ac8a5c1df494d5ee43247b40f9067d454cfd68280dac3f12276103",
+        "bytes": 3999121
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/cliff-right-actual-size-framebuffer.png",
+        "sha256": "6674052342e4607cf226b342a9fcbce27ecd9ff06f2507c18691bf3b13636c23",
+        "bytes": 4050824
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/rough-ground-full-actual-size-framebuffer.png",
+        "sha256": "5929384b63a7e72fd5730b8fe9880d63f98dc4436eb88268c5cdb2a5ba761385",
+        "bytes": 3056512
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/rough-ground-full-actual-size-framebuffer.png",
+        "sha256": "3dd3dfa5632a1a04bc9ac43e5d6fab211103b76a5e4ffbc204a73ec0700435ba",
+        "bytes": 4122818
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/rough-ground-full-actual-size-framebuffer.png",
+        "sha256": "6db6c9961ae8f1c17178987d598147e71ca51b87b9867d7fda8433c4831f03d0",
+        "bytes": 4205490
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/grass-slope-full-actual-size-framebuffer.png",
+        "sha256": "c2bf2e571e0f301ef0090346fb40f8be13c619bc9a7ced61265cca91db13fee6",
+        "bytes": 3007529
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/grass-slope-full-actual-size-framebuffer.png",
+        "sha256": "f42746215b6725593cf0a10fba0aa44a5ffff0eee449169026802d9d97bbc796",
+        "bytes": 4032587
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/grass-slope-full-actual-size-framebuffer.png",
+        "sha256": "33142cd534cac0754578023bdb644b62afc6899ff1ed4d8763b64ba382f190dc",
+        "bytes": 4092022
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/cliff-closure-full-actual-size-framebuffer.png",
+        "sha256": "7cb941d143ad408c66bfcef21ffb148686a0b9a521e6f38b1145828299886068",
+        "bytes": 3024315
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/cliff-closure-full-actual-size-framebuffer.png",
+        "sha256": "179b11c786f542889923ad8789de3d3136b8de5ba1f7306add34812a96a65829",
+        "bytes": 4074548
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/cliff-closure-full-actual-size-framebuffer.png",
+        "sha256": "6674045de1dfc924dcd66dc5c1c8eaf09aabac700312276c4e6c764d59726252",
+        "bytes": 4153626
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/connector-full-actual-size-framebuffer.png",
+        "sha256": "935247f1be652f58b674cc0aa606507871c76bac401898804f01760c81887876",
+        "bytes": 3027323
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/connector-full-actual-size-framebuffer.png",
+        "sha256": "b9736d00d78c41e2ea48e72ac02719a9e1453a4a4c86929649beda5d5e60900f",
+        "bytes": 4059224
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/connector-full-actual-size-framebuffer.png",
+        "sha256": "661a8bfcbc0f0a55bf06f1094abfe21237c2c09558a7807423b52abc17827e41",
+        "bytes": 4123947
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/road-main-full-actual-size-framebuffer.png",
+        "sha256": "fefde4be6645662530fef9287dca4ca72f91dcb83f2feac2faf99ab13e166f58",
+        "bytes": 3055770
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/road-main-full-actual-size-framebuffer.png",
+        "sha256": "ced27e69ba4de7279e0c29a1d4112f1b93298515d6c7f128f6d258e5cf0bd7be",
+        "bytes": 4123116
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/road-main-full-actual-size-framebuffer.png",
+        "sha256": "bde3267bbe8bb837a1a87a3d213b523c895b81219f9f23713408c41a1378b9c4",
+        "bytes": 4206037
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/road-end-full-actual-size-framebuffer.png",
+        "sha256": "58125be1800565e84a63ee2b80d7f712e5cbd7516d02603abe0eb39a9176383b",
+        "bytes": 2999091
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/road-end-full-actual-size-framebuffer.png",
+        "sha256": "1263751e65bfcdf6420996d9f85fbb9f26a862a404af547bcb05e9c76eeb1cd8",
+        "bytes": 4025233
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/road-end-full-actual-size-framebuffer.png",
+        "sha256": "a992afa73cf5f2a999c929cc3d3e935b4e85765f1d0b55c3c1dd6a02973cab66",
+        "bytes": 4088014
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/road-connection-full-actual-size-framebuffer.png",
+        "sha256": "4f3f4144e732d02ef1bf81157184f9190027d6a2eb94cd890b1153edac896b20",
+        "bytes": 3046411
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/road-connection-full-actual-size-framebuffer.png",
+        "sha256": "8a0b95c0661dfc65a5dbf9399492c15ccda8b20ebf97ae5c5a40900f9f901348",
+        "bytes": 3945934
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/road-connection-full-actual-size-framebuffer.png",
+        "sha256": "42e2c50eec47e9ddfc2068ecee7a056cbac97066d8e40f7ad3c7f5867cc9fd7b",
+        "bytes": 4017796
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/road-slope-full-actual-size-framebuffer.png",
+        "sha256": "824ecebe400299623a822dc6c24bd166e4ecb2a0de7ed417153cc338a505027b",
+        "bytes": 3134383
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/road-slope-full-actual-size-framebuffer.png",
+        "sha256": "70b1dc59b8f6192c1cd98a594d1e8efad0b636693d682df0699127a4ec7dc467",
+        "bytes": 3910804
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/road-slope-full-actual-size-framebuffer.png",
+        "sha256": "56761f8a9f76ba655ee33a9ba80cca5182be4cfaa914949c5a588391834740c0",
+        "bytes": 3948766
+      },
+      {
+        "file": ".artifacts/m2-1/production-v12c-original-terrain/terrain-pan.webm",
+        "sha256": "0cc179b81504d4b6010b9eebc50ed305728a9fb84249d4e8c51fd9ae82272607",
+        "bytes": 9958184
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-2x/terrain-pan.webm",
+        "sha256": "11e4ef188d0667128484cf488106216f99446e0b0da0a721be21b9148e84d2da",
+        "bytes": 9826374
+      },
+      {
+        "file": ".artifacts/m2-1/copied-production-v12c-4x-final/terrain-pan.webm",
+        "sha256": "dc81c0d5b97e83011426db703ddacc772e325ff52f3ce10af65c6d7fb1f1958c",
+        "bytes": 10502292
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/rough-material-1-reference.png",
+        "sha256": "c387ec4719d99c88c15cfed0eb911ccdd044c65b27b0e54ee273f46c5a46edbc",
+        "bytes": 33003
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/rough-material-1-master.png",
+        "sha256": "4047989db84c123fe90a17aa22a2a848762ec49a0dc6fc441ccf024cf6ed95b4",
+        "bytes": 635946
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/rough-transition-1-reference.png",
+        "sha256": "9fdc6ff1a2f99ea0df11dc04a1490730d0d4983de1b5ea808afc0eb46de33ee0",
+        "bytes": 58576
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/rough-transition-1-master.png",
+        "sha256": "2cde27a8556be63bdff9c0564bbe84f455a38d0dab4cfaa4a7f615196e803380",
+        "bytes": 1325218
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/rough-transition-2-reference.png",
+        "sha256": "76e1153574a1e549fcf986a2b650062f20e4728c562252d3f6c117523cfe8cfb",
+        "bytes": 57550
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/rough-transition-2-master.png",
+        "sha256": "9f490a7f902cc90a10d2ec832c7b5ef606275bb366096257581dd7b0d3b8eb78",
+        "bytes": 1220825
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-1-reference.png",
+        "sha256": "1ca386f6a6c373eeb92459ebccac63c2647b3eb0169af03f68dbc70ab89a995f",
+        "bytes": 47860
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-1-master.png",
+        "sha256": "b8f3bd075ee0c961181d5f61863597b2e40a9e7fba86532015d6515864eeafc8",
+        "bytes": 1241408
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-3-reference.png",
+        "sha256": "1adde641e67f2de8f5ed305ccbfe3ccdcf30f703cbbeef29c0c8831ba40af0f5",
+        "bytes": 49209
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-3-master.png",
+        "sha256": "dfc0658d21b2c88b7daf61cc687508be6f41cfd9d49d673ba43b532d2283243c",
+        "bytes": 1165111
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-4-reference.png",
+        "sha256": "6a14e4235b97f48b2cf31159d2fe057daa2512851510670e0bd896141cb1e040",
+        "bytes": 47174
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-4-master.png",
+        "sha256": "928fd719689ebb8d1d1177103785cbecea96263185f3bea1489a5f6d65af711f",
+        "bytes": 1442656
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-5-reference.png",
+        "sha256": "bcedf12f729fca687e1e1b37a790fdcd8ed9d21e829506521a683f4f05a38d34",
+        "bytes": 13406
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-5-master.png",
+        "sha256": "96efc551085dfd22c2d188567494b2bcbdb17139c5d55dac4f775a5856761458",
+        "bytes": 301302
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/fixup-1-reference.png",
+        "sha256": "50fb6762eb9bc72154e2d062494befc7fc84e22dd9f2d3ce8e88e44a7dbd2426",
+        "bytes": 28424
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/fixup-1-master.png",
+        "sha256": "0fa607c62680a7e1b12f541a6e7f847c393a7c8445e0a9eeeca0aff349653e24",
+        "bytes": 748522
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/fixup-2-reference.png",
+        "sha256": "5e92198d0cfe39b86cc397b6bec24dfdd766e361d336bef3b2c5d051972e1af8",
+        "bytes": 50102
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/fixup-2-master.png",
+        "sha256": "d3154f40c9ae115cf6f164f0006e53c1ad50e3b10404729a70c4175030c932a8",
+        "bytes": 1236625
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/fixup-3-reference.png",
+        "sha256": "fd3a7c24ff9136a6fe51d4e2328f59f8be578a5e0072137c9344acb56624dabd",
+        "bytes": 67312
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/fixup-3-master.png",
+        "sha256": "f4427e9b002d0ae3e8d807aa5407eabeacc6dfe28c21edb32af93a18f88d7cfc",
+        "bytes": 1700960
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-1-reference.png",
+        "sha256": "4b45f7b160bc2a828cfac2ec120f3f0c954ae2f88240e9db5a67eab3128b07fc",
+        "bytes": 99926
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-1-master.png",
+        "sha256": "31fa979ae344c2b5bd6deb0643a520b85e0ff0582529b004b3ff53dabcba04b6",
+        "bytes": 2290289
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-2-reference.png",
+        "sha256": "7cdf454225ecd977ee38ccc5e218596a082e07ef7750d68ee17fbd005f70ab43",
+        "bytes": 97259
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-2-master.png",
+        "sha256": "8d085c4f93f09b21fef672a2f9da81eef6eaeb71ba12d1e9ae9b2a8023eab7b2",
+        "bytes": 1924670
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-3-reference.png",
+        "sha256": "5ab877189bb8bf1e0c55d1c7dba0400af80b4d85c4cbd0d3ef93a289ebe12759",
+        "bytes": 87114
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-3-master.png",
+        "sha256": "828a33e93f14be0b483c5cbf1ad3ef53ea2eb9085e8488bea8a7d6ee17d02324",
+        "bytes": 1434966
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-4-reference.png",
+        "sha256": "e55abf8dd2b2639dc685aefaee986a9cd484c41d641fcbc1f0481bf4d9f64771",
+        "bytes": 49304
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-4-master.png",
+        "sha256": "be34ceb4dfe196e80d5f0d8afb5c7071ba93825bd8fd6aab0fb5cbc4a3e4064d",
+        "bytes": 1325871
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-5-reference.png",
+        "sha256": "fd579669c3d8ce13451eba355e2efe3013b80d1643b3ebf7e795e49234fb741a",
+        "bytes": 42990
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-5-master.png",
+        "sha256": "79259d20363b89b356749c0fd4c19bf80bff22fedaf46b553b4a4f28276d313c",
+        "bytes": 1253855
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-6-reference.png",
+        "sha256": "2ef068b7869e6b7a3cf021b00e1b547635f31993e51c9e011861a6a0d8b55480",
+        "bytes": 39236
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-6-master.png",
+        "sha256": "92db1963104ebbc11f7636cb3c264ef39e642e324611d98eb5058fd5320193ed",
+        "bytes": 1057797
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-7-reference.png",
+        "sha256": "1a6be3490645b0bbac6f30a94e9e9eb62a9e04d9c4755c201732fdc9a9928186",
+        "bytes": 32352
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-7-master.png",
+        "sha256": "9bac068c4699e43ef51f0822d7a9eb73d580031106276e8c3e2e565b6b50f16d",
+        "bytes": 1180571
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-8-reference.png",
+        "sha256": "d9232562de0e1c9f6c07feda8977e7208ba0e0e421a839b66018154eb846d493",
+        "bytes": 24688
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/cliff-8-master.png",
+        "sha256": "0ff5b6b55bb2179eb04285081b5912696188588e967a81bbaf01da49f8f4eb0c",
+        "bytes": 893210
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-1-reference.png",
+        "sha256": "cf54f5a3b1270dac883890a02f85f335f420e05a8439396939a76f5d0d1f1c52",
+        "bytes": 62341
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-1-master.png",
+        "sha256": "b1406d44941e3093226a3b75845433ff529d061795d9328a7e2039d228274e36",
+        "bytes": 1939299
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-2-reference.png",
+        "sha256": "6a2db53b3a7c37ad7b70cec93dcad3bb19322e8f2a13d5a1507eba5888ec8cc9",
+        "bytes": 62873
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-2-master.png",
+        "sha256": "ad04fd86bc8f284e7d8751a3d11868922207ccc4bd4908e5650c26bb652605c9",
+        "bytes": 1926059
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-3-reference.png",
+        "sha256": "1dfd344002b354d5ee98e2a4e254fc6e81dabfeac9dd27851fd8e7b1fad5f1d5",
+        "bytes": 62459
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-3-master.png",
+        "sha256": "f0c3e17151959322b1ad6679ec230a5421704c89ef118e85cb0ee7f1044656b9",
+        "bytes": 1994495
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-4-reference.png",
+        "sha256": "0f702f64189c8666c1e629c09c40d465836bb4908f7805ffed7297a692de5efc",
+        "bytes": 70064
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-4-master.png",
+        "sha256": "081aba8f52152cde5ff50eb6df1aa7632c630e0217885fcd9e9911ea7ceb9e74",
+        "bytes": 1988939
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-5-reference.png",
+        "sha256": "0c2c124ea14566d3c1d1e450bfc2f434b4244a310aec8aef3ba8fe410be01946",
+        "bytes": 75758
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-5-master.png",
+        "sha256": "74aeea173d0177e9f9fdfc72a5e199d4ceabb2dd09a8d8d328b5365bcf8d8e65",
+        "bytes": 2127694
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-6-reference.png",
+        "sha256": "f1260836623090fe96468e58eabccaea1319a8faea7dc88bf4d48f6d9939a40f",
+        "bytes": 72605
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-6-master.png",
+        "sha256": "aecffea28c44cfee282fff2839dd0529f60761f30ce09e89a853fa9ba2080d54",
+        "bytes": 1951662
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-7-reference.png",
+        "sha256": "4a36de887aa97d554280ca669b0e68e581a65275fe01a48cf7f1e62e48210c96",
+        "bytes": 86394
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-7-master.png",
+        "sha256": "db3ab57d4ed4323cd340baf802bb769b0cac0d5feb723080742db2b0d18da0bf",
+        "bytes": 2099687
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-8-reference.png",
+        "sha256": "6b335455f1fb13b58544b1f966901eec287cb293cc0f289f407a8d73825013dd",
+        "bytes": 94265
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-8-master.png",
+        "sha256": "835dcf5b534058e64e53f56325d8a291e0fc021f32d07935bb362c45962f2eb6",
+        "bytes": 2558167
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-9-reference.png",
+        "sha256": "7c39e31f30ecb6409ea2bc65d005983a1892190126010b2ce9a2f23e2c28f643",
+        "bytes": 92956
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-9-master.png",
+        "sha256": "8e07fa3433fa023edc43435fcb0e184de2ec737448558f83375503f5eb54b6cc",
+        "bytes": 2320756
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-10-reference.png",
+        "sha256": "6627e40d8e2120be4d7af268352dd186fe8ef745f27e15771986264995d38b07",
+        "bytes": 54212
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-main-10-master.png",
+        "sha256": "61c8dbc5b870b460b8d2b84b7452ee480b696f39246c266bddad69f42a063d0b",
+        "bytes": 1487004
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-bit-1-reference.png",
+        "sha256": "0044ab965827dde7c52f26e255da9528ff576ca170c9478043e60822e104162d",
+        "bytes": 37684
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-bit-1-master.png",
+        "sha256": "25d4ffac05dbc01257102e9f29abc7a2ee3f8c3a0515fa879670ff3877664090",
+        "bytes": 789448
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-connection-1-reference.png",
+        "sha256": "22d5f6090912d0294f2c249a061f994c2b16518b3f914d0043e989008e398256",
+        "bytes": 47598
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-connection-1-master.png",
+        "sha256": "b6c27a2c809294a311044722e6276c2ff4f7035a5f84e8026367d2a66a21dd6c",
+        "bytes": 897965
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-connection-2-reference.png",
+        "sha256": "a76ec24d1f512f4eff6a924a59b4815a5bcb7e807ac76b06af79bcec541dfc68",
+        "bytes": 32054
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-connection-2-master.png",
+        "sha256": "0ba9cee3c269b468f3f1fab553a3a10611a73a3dab4d0bf0fbc4484b954dbd6d",
+        "bytes": 682898
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-connection-3-reference.png",
+        "sha256": "bcb125f7096194f069e5b2d8599bacc1dcb3f75f377eac3c88edc35d6b6dd2ba",
+        "bytes": 31280
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/road-connection-3-master.png",
+        "sha256": "c6a13f3c3d594b4f6da6c7970770f165af717f47f2bc58319291f91885dc9cd2",
+        "bytes": 1046395
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp03-reference.png",
+        "sha256": "095d0fc34053a3d934c838fb0dd8bf0c5f94a9d32e47811d3399270ebd55169c",
+        "bytes": 59839
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp03-master.png",
+        "sha256": "ca66e3d82814df0e00fdc12686f313eff1840b8b4edde96e770af28344ee4649",
+        "bytes": 1819296
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp04-reference.png",
+        "sha256": "0f6e721ff46b6c7238e1ca510cfeb1291adf396d02c68a7fe6203f3e5fcb4ab4",
+        "bytes": 60315
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp04-master.png",
+        "sha256": "ded4fc8d42c65f65abe930928e85fef977f4ae0dd871d80d1c287363b0f0fb7c",
+        "bytes": 1709030
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp05-reference.png",
+        "sha256": "3dff72658b35f6bfc9d3a0a3dbcbcbb36ba4b9d18108aa2bb027f8912bc902b4",
+        "bytes": 29227
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp05-master.png",
+        "sha256": "7b6a7bef940b8e5a91e8e5712a1dbd70b2f5a49a7838d0ef3601e656a4e484ac",
+        "bytes": 844825
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp06-reference.png",
+        "sha256": "8ba2177d359c8aac721ac3cab335604ccd6aa9c6cb0105ca966b864f674d1cc3",
+        "bytes": 25195
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp06-master.png",
+        "sha256": "f32b92376ad6d44283428f537018d68919bec4cf0e25336cc74ef1427201bce3",
+        "bytes": 771921
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp07-reference.png",
+        "sha256": "938ee33488cc6f05f33ee6ccdd19776384106386c6b81dc61fb00d8964292d37",
+        "bytes": 13763
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp07-master.png",
+        "sha256": "460d4e600fcdda7081702e27d67c87ad726f23f111d75d8d29b68d21cc4aa319",
+        "bytes": 587964
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp08-reference.png",
+        "sha256": "8eab873fb9dd3a3ec81dfe8f6c1a6bda4d5aef56e786f255e2a2f023241f59af",
+        "bytes": 30786
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp08-master.png",
+        "sha256": "3f8fea40cacf7acc0c1c2bee9f17defa5f5b3a2410990a73cb2dac2075051548",
+        "bytes": 898993
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp09-reference.png",
+        "sha256": "490228b84af2a04d4964190a65d6eb345a39877284290da490c94aba84c39cbf",
+        "bytes": 21795
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp09-master.png",
+        "sha256": "f85f2ad8a7d1b23760a214be88a70d365910f765157339d733ad5aa385415a4d",
+        "bytes": 767365
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp10-reference.png",
+        "sha256": "3e06b8ff4c41478e30df32d925a071304eabfa6655c14f1b602d43a5385a82e8",
+        "bytes": 14000
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/ramp10-master.png",
+        "sha256": "529a923ce866b53d20da1e1622c888334cdc87f6f94a5956a6e82523b67f243e",
+        "bytes": 620213
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-2-reference.png",
+        "sha256": "b78c0c655c5b7c9d8138fab0c092b1f537ac13da32ef05b8b352573676a98857",
+        "bytes": 48161
+      },
+      {
+        "file": ".artifacts/m2-1/authoring-production-v3/slope-2-refined-master.png",
+        "sha256": "9db3f9bcf76f11f7e9ef196add0fb4f9c01e5a77bf978d132c7864cbec09965a",
+        "bytes": 1222235
+      }
+    ]
+  },
+  "embeddedVerification": {
+    "status": "PASS",
+    "payloads": 141,
+    "htmlSha256": "37ff29b09f15bc119648294de584c3b3acafea515064da9a3acb4c9350b35ee5",
+    "bytes": 397763747,
+    "externalMedia": 0,
+    "sourceHashes": "EXACT"
+  },
+  "nativeReview": {
+    "mode": "html",
+    "errors": [],
+    "frames": [
+      {
+        "scene": "mixed",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "mixed",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "mixed",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "mixed",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-flat",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-flat",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-flat",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-flat",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "dirt-flat",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "dirt-flat",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "dirt-flat",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "dirt-flat",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-dirt-transition",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-dirt-transition",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-dirt-transition",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-dirt-transition",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "ground-water-contact",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "ground-water-contact",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "ground-water-contact",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "ground-water-contact",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-center",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-center",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-center",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-center",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-left",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-left",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-left",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-left",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-right",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-right",
+        "density": 1,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-right",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-right",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "rough-ground-full",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "rough-ground-full",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "rough-ground-full",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-slope-full",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-slope-full",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "grass-slope-full",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-closure-full",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-closure-full",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "cliff-closure-full",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "connector-full",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "connector-full",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "connector-full",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-main-full",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-main-full",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-main-full",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-end-full",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-end-full",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-end-full",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-connection-full",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-connection-full",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-connection-full",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-slope-full",
+        "density": 0,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-slope-full",
+        "density": 2,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      },
+      {
+        "scene": "road-slope-full",
+        "density": 3,
+        "width": 1489,
+        "height": 1080,
+        "display": 1241.375
+      }
+    ],
+    "fit": {
+      "image": 1390,
+      "viewport": 1390
+    },
+    "coverage": {
+      "shown": true,
+      "markers": 976,
+      "authored": 684,
+      "original": 292
+    },
+    "masters": [
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1774,
+        887
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ]
+    ],
+    "originalReferences": [
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ],
+      [
+        1254,
+        1254
+      ]
+    ],
+    "videos": [
+      {
+        "width": 1489,
+        "height": 1080,
+        "completed": true,
+        "playedSeconds": 7.932,
+        "duration": 7.932,
+        "durationMetadata": "FINITE"
+      },
+      {
+        "width": 1489,
+        "height": 1080,
+        "completed": true,
+        "playedSeconds": 7.931,
+        "duration": 7.931,
+        "durationMetadata": "FINITE"
+      },
+      {
+        "width": 1489,
+        "height": 1080,
+        "completed": true,
+        "playedSeconds": 7.933,
+        "duration": 7.933,
+        "durationMetadata": "FINITE"
+      }
+    ],
+    "status": "PASS"
+  },
+  "ordinaryLaunch": {
+    "mode": "default",
+    "errors": [],
+    "userData": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Production-Review-V12C-20261006-227dbc6-macOS-arm64/M2.1-Review-Profile",
+    "ui": {
+      "revision": "yuri-emblem-ui-v1",
+      "enabled": true,
+      "reservedBytes": 0,
+      "decodedCpuBytes": 0,
+      "gpuTextureBytesUpperBound": 0,
+      "transitionGpuBytes": 0,
+      "transitionCpuCanvasBytes": 0,
+      "domImageGpuBytesUpperBound": 0,
+      "domImageDecodedCpuBytesUpperBound": 0,
+      "textures": 0,
+      "budget": 16777216,
+      "domCanvasBytes": 0,
+      "mipmaps": false
+    },
+    "registration": {
+      "schemaVersion": 1,
+      "directory": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Production-Review-V12C-20261006-227dbc6-macOS-arm64/RA2-HD-Editions-Resources"
+    },
+    "status": "PASS"
+  },
+  "mainPreservation": {
+    "head": "11be1b2119696f1777b66c503cf0b7cb1a131d62",
+    "status": "",
+    "taskWrites": "NONE"
+  },
+  "previews": [
+    {
+      "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Production-Review-V12C-20261006-227dbc6-macOS-arm64/Production-V12C-Actual-Size.png",
+      "sha256": "6674045de1dfc924dcd66dc5c1c8eaf09aabac700312276c4e6c764d59726252",
+      "source": ".artifacts/m2-1/copied-production-v12c-4x-final/cliff-closure-full-actual-size-framebuffer.png"
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-M2.1-Production-Review-V12C-20261006-227dbc6-macOS-arm64/Ground-Road-V12C-Actual-Size.png",
+      "sha256": "6db6c9961ae8f1c17178987d598147e71ca51b87b9867d7fda8433c4831f03d0",
+      "source": ".artifacts/m2-1/copied-production-v12c-4x-final/rough-ground-full-actual-size-framebuffer.png"
+    }
+  ],
+  "remaining": [
+    "Windows native checks and physical cursor/input acceptance"
+  ],
+  "nextScope": "After acceptance and separate authorization: consider the native thick-grass LAT closure before water/shore production",
+  "userReview": {
+    "date": "2026-10-07",
+    "reviewedRevision": "temperate-m2-1-production-v12c",
+    "decision": "ACCEPT_REMAINDER_REQUEST_BOUNDED_SEAM_CORRECTION",
+    "acceptedRemainder": "All selected production except dirt/paved-road mixtures and ordinary grassy slope seams/highlights",
+    "roadExceptions": [
+      "proad16.tem",
+      "proad17.tem",
+      "proad18.tem",
+      "proad19.tem",
+      "proad20.tem",
+      "proad21.tem"
+    ],
+    "slopeException": "Set 9 ordinary slopes and Set 43 grassy slope fixups. V12C stone detail within fixups remains exact; Native contact-only and zero-offset exceptions retained.",
+    "request": "Match adjoining paved-road colors and joins; remove visible square slope borders, seams and highlights",
+    "screenshot": "/Users/Aone/.codex/attachments/9942c81b-f1c2-441e-b055-f483ce7868d3/Screenshot 2026-10-07 at 10.57.45\u202fAM.png",
+    "boundary": "Preserve accepted V12C remainder exactly; no adjacent batch, main merge, push or publication"
+  },
+  "seamExceptionResolution": {
+    "date": "2026-10-07",
+    "status": "RESOLVED_IN_USER_ACCEPTED_V13D",
+    "receipt": "docs/m2-1-final-acceptance-20261007.json",
+    "resource": {
+      "schemaVersion": 1,
+      "revision": "temperate-m2-1-seams-v13d",
+      "sha256": "47a93e1ae5c56150357dd3f040f654079de26f8c899ebbc923b3c099bbf97f38"
+    },
+    "boundary": "Historical V12C art and native observations remain unchanged; this accepts the V13D correction, not the defective V12C seam appearance."
+  }
+}

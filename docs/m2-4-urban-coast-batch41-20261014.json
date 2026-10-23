@@ -1,0 +1,172 @@
+{
+  "schema": "m2-4-urban-coast-combined-production-v1",
+  "status": "BATCH41_AND_INHERITED_ROAD_FOLLOWUP_USER_ACCEPTED",
+  "scope": {
+    "sets": [
+      10,
+      12,
+      15,
+      21,
+      85,
+      106,
+      107,
+      110
+    ],
+    "nativeMembers": 130,
+    "indexedNativeSlots": 477,
+    "mapEntries": 22,
+    "verifiedNativeDependencies": 607
+  },
+  "acceptedBase": {
+    "schemaVersion": 1,
+    "revision": "urban-m2-4-side-roads-geometry-r10",
+    "sha256": "269a77b5faa0b19150b5f2804b6ab62f31b27ef50991fc8cc35c5b239c0a730d"
+  },
+  "artTool": "Builtin imagegen",
+  "newRuntimeEngineChanges": false,
+  "staticAuthoringTests": {
+    "passed": 21,
+    "log": ".artifacts/m2-4/urban-coast-authoring-v4/authoring-regressions-v5.log"
+  },
+  "visual": "USER_ACCEPTED",
+  "windows": "NOT_RUN",
+  "m24Complete": false,
+  "evidence": [
+    {
+      "file": ".artifacts/m2-4/urban-coast-authoring-v4/production-scope-v1.json",
+      "sha256": "dd74e9ec1dccc37e80ab5465f91d4e9121f985323777e4d94756f7c1a20dd67b",
+      "bytes": 7815
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-authoring-v4/imagegen-jobs-v1.json",
+      "sha256": "93b5cff7b17cdd2258a05f16d6cea19aa050a5d6368db0b5431239f3d3fe23bb",
+      "bytes": 64004
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-authoring-v4/reused-mother-cells-v1.json",
+      "sha256": "03a2c89e747b28183fbe1e796a55b24808222db192301054d5f2020bca417d35",
+      "bytes": 20171
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-authoring-v4/material-profile-source-forms-v1.json",
+      "sha256": "da9fafc0275300cbe834dfaaca562289e88a4b299a055c3e5c96e18c2b544ad1",
+      "bytes": 74897
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-authoring-v4/native-water-ownership-v1.json",
+      "sha256": "5d7afececf4af887dc17d371de33dff184c1134195ffc6a067cc5df9489871ac",
+      "bytes": 14353
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-authoring-v4/authoring-regressions-v1.log",
+      "sha256": "8f8d163459bb7e9d63ed6b2d036b2f2ae28e04d2ceff16e52212b737f8f853e5",
+      "bytes": 119
+    }
+  ],
+  "selectedPack": {
+    "schemaVersion": 1,
+    "revision": "urban-m2-4-coast-complete-v8",
+    "sha256": "6e77fab1e035558ed0a9a58612142ae5fe1732350dc579407080acfbe2e41d62"
+  },
+  "runtimeSourceHead": "8ebc898b2a556af94da44cc8a2ec5c2b26950726",
+  "mac": "PASS_THREE_OFFICIAL_MAPS_BOTH_DENSITIES_ORIGINAL_AND_RELEASE",
+  "desktopReview": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch41-20261014/M2.4-Urban-Batch41-Embedded.html",
+  "newGroups": 8,
+  "newMembers": 130,
+  "affectedMapEntries": 22,
+  "uniqueAffectedMapFiles": 19,
+  "totalUrbanMapEntries": 32,
+  "uniqueUrbanMapFiles": 26,
+  "remainingUrbanFamilies": 343,
+  "terrainLoadingTests": {
+    "passed": 21,
+    "assertions": 771,
+    "failedFixtureRetained": true
+  },
+  "preparedPeakBytes": 108580412,
+  "worldBudgetMiB": {
+    "twoX": 512,
+    "fourX": 1280
+  },
+  "nativeCameraViews": 16,
+  "embeddedImages": 308,
+  "finalEvidence": [
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/selection-adoption.json",
+      "sha256": "ef158478fee8baacd7cc24c68bc9470098a9255d72dc65b3843fcdce491cbcd6",
+      "bytes": 1633
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/coverage-delta.json",
+      "sha256": "9d0d6ebb1572438822ee849d6c87ea5971fc0f084b3fbc9c94ed242bd85168ae",
+      "bytes": 50810
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/native-placement-coverage.json",
+      "sha256": "b466c3fe7a40cb6ae22c54440ee874b6bbefbb48d23de69a8b8cfc7714f4d95c",
+      "bytes": 5675
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/native-validation.json",
+      "sha256": "d7339f6595c35c2662d52fc2bf889ac4565f92fb88fe420c151cf51ebf35a599",
+      "bytes": 4774
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/resource-handoff.json",
+      "sha256": "5b384b5fbc08a3453c475501b151c9df82e6aa10051b78b1087ef4b66cfee03d",
+      "bytes": 325921
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/preservation.json",
+      "sha256": "36bc67635e8a6ed0725bb5b5390340b71c5e4447a58172cbeb198e53399bcd07",
+      "bytes": 1843
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/next-production-scope.json",
+      "sha256": "bfbd29d081f023fba1a092a083197d1b580af71184d95052c95b0c0e29f65df1",
+      "bytes": 5337
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/terrain-loading-tests.log",
+      "sha256": "ca787687a8cff3c5d3483597ee45537c2d1d480d0e7ef2fcb54c27ca456e3985",
+      "bytes": 989
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/terrain-loading-tests-r1.log",
+      "sha256": "abe71299b4a33cc0d2a6f1caee480b164020dd31b7c98982628fc23d0345e87d",
+      "bytes": 2485
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/typecheck.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+      "bytes": 39
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/stage.json",
+      "sha256": "c81dd5a6b26fc9b14a302cebc8e0e5567ab396b62fd9fdc7ebd48a5e8615d7f2",
+      "bytes": 1094
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/build/identity.json",
+      "sha256": "55129fae52b5f914e9320eedc517cc719b44240064fcbd0e65b7500f6f6bbe1c",
+      "bytes": 31457
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/desktop-copy.json",
+      "sha256": "7d8810cdaa122ee3ea316b2946bdec1c501d9855dc221d0c29e3de43feeee1bc",
+      "bytes": 819
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-batch41-v1/desktop-html-verification/report.json",
+      "sha256": "9f018ecae85c101adc427ff43ee4659f30034168fe3c5f6e98b999f8db279dcc",
+      "bytes": 2824
+    },
+    {
+      "file": ".artifacts/m2-4/urban-coast-authoring-v4/urban-m2-4-coast-complete-v8/validation.json",
+      "sha256": "9da940fab1d833dd4997e635ecfdad64addc945a26320facea6900df95aabdc9"
+    }
+  ],
+  "userFeedback": "2026-10-15: RA2 mp33u4.map set12 camera has an inherited road join defect; all other batch content passes.",
+  "roadCorrection": "docs/m2-4-urban-road-seams-20261015.md",
+  "roadFollowupAcceptance": ".artifacts/m2-4/urban-junction-contact-r5-v1/user-acceptance.json"
+}

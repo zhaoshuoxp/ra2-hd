@@ -1,0 +1,219 @@
+{
+  "schema": "m2-4-environment-exact-source-variants-handoff-v1",
+  "status": "PASS_SHARED_BINDING_IMPLEMENTATION_AND_MAC_LEGACY_REGRESSION",
+  "runtimeSourceHead": "89ce9d5614cc2cec80142435e5799dcfd6dd0469",
+  "stage": {
+    "file": ".artifacts/m2-4/urban-source-variants-v1/active-stage.json",
+    "sha256": "16ff8595b5d6ba0d8bae268fba49fd729f49a0b58a65c51a1d39254047e1eee2",
+    "bytes": 1096
+  },
+  "buildIdentity": {
+    "file": ".artifacts/m2-4/build-urban-source-variants-v1/identity.json",
+    "sha256": "f35d3ee8267e61ce1cc08b614f1338c9205c3348d02c07f307cfab63a2ef9fe1",
+    "bytes": 31459
+  },
+  "acceptedBatch56": {
+    "file": "docs/m2-4-urban-buildings-batch56-20261016.json",
+    "sha256": "1e3a5909083862b00960a42fe3876ab40c5007c859cac71457d21918ac760355",
+    "bytes": 170236
+  },
+  "remainingSourceAudit": {
+    "file": "docs/m2-4-urban-remaining-after-batch56-20261016.json",
+    "sha256": "0af3bf85428516eea25ed0b9da209382d028fb4604e3c1a97911fbdddf0dcfe9",
+    "bytes": 314683
+  },
+  "originalEditionDifferences": {
+    "file": ".artifacts/m2-4/environment-source-variant-original-differences-v1.json",
+    "sha256": "0829e7ec90ebd39dff1b778b770783aeb86f0611a2fc72a8ca2f8d96b374981e",
+    "bytes": 9932
+  },
+  "tests": {
+    "focusedCases": 5,
+    "focusedAssertions": 67,
+    "retainedFamilyCases": 16,
+    "retainedFamilyAssertions": 256,
+    "entryTypecheck": "PASS"
+  },
+  "validationLogs": [
+    {
+      "file": ".artifacts/m2-4/environment-source-variants-tests-v3.log",
+      "sha256": "b9aa7ba6d82c53375067daa8e427f5a9daa7c8a0a115b8db4136ede0f5703a36",
+      "bytes": 614
+    },
+    {
+      "file": ".artifacts/m2-4/environment-source-variants-regression-v1.log",
+      "sha256": "b5d54208cf698754d9b4b173ee24d0d6c896f8b69ffe19e051b5759114af500a",
+      "bytes": 1445
+    },
+    {
+      "file": ".artifacts/m2-4/environment-source-variants-typecheck-v2.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+      "bytes": 39
+    },
+    {
+      "file": ".artifacts/m2-4/environment-source-variants-build-v1.log",
+      "sha256": "a17f38a882c3339721b019330d41f8a6ba85f5987184da046c14c2338a7117fe",
+      "bytes": 21563
+    },
+    {
+      "file": ".artifacts/m2-4/environment-source-variants-stage-v1.log",
+      "sha256": "38a07b5e27588d778b7911e7bae447f0ed82f3bcfb5d249d72fba0d28eaabdf3",
+      "bytes": 570
+    }
+  ],
+  "retainedFailures": [
+    {
+      "file": ".artifacts/m2-4/environment-source-variants-tests-v1.log",
+      "sha256": "307813174aeda9bc68db137bf1d606370b3bd461aed74afea574b64baebdd7a4",
+      "bytes": 1282
+    },
+    {
+      "file": ".artifacts/m2-4/environment-source-variants-tests-v2.log",
+      "sha256": "6efa242c14dab466a56dc222d64df4295f13adb2c9bd509a94279e14496bec83",
+      "bytes": 1505
+    },
+    {
+      "file": ".artifacts/m2-4/environment-source-variants-typecheck-v1.log",
+      "sha256": "bb363021c3e35bedd4e1b2af11571c93ae5ec2469b6f6b11d98916601c4d6066",
+      "bytes": 679
+    }
+  ],
+  "exportProof": {
+    "file": ".artifacts/m2-4/environment-source-variant-export-parity-v1.json",
+    "sha256": "c3b64f45be32e6fb2546a0faee00f6c5d17688e0588c9408d58f591dd3795a5f",
+    "bytes": 390
+  },
+  "independentExportVerification": {
+    "file": ".artifacts/m2-4/environment-source-variant-export-verification-v1.json",
+    "sha256": "703e882bbd3cfecc5cf466645b2d9512fe31e48c4c9720ee1fe7ccb8a18b55af",
+    "bytes": 1053
+  },
+  "diagnosticPack": {
+    "path": ".local/environment-packs/urban-source-variant-path-proof-v1",
+    "selected": false,
+    "newCoverageCredit": 0
+  },
+  "nativeLegacyRegressions": [
+    {
+      "edition": "yr",
+      "map": "xarena.map",
+      "density": 2,
+      "report": {
+        "file": ".artifacts/m2-4/urban-source-variants-v1/native-yr-urban-2x-v1/report.json",
+        "sha256": "f97887674b043495e949c316f2d7e8bc9050b7648a5cca137e27f5a0b16ad23b",
+        "bytes": 4780852
+      },
+      "worldBytes": 296105712,
+      "preparedPeakBytes": 45966964,
+      "originalBindings": 8
+    },
+    {
+      "edition": "ra2",
+      "map": "mp34u4.map",
+      "density": 4,
+      "report": {
+        "file": ".artifacts/m2-4/urban-source-variants-v1/native-ra2-urban-4x-v1/report.json",
+        "sha256": "aba9064514bf4ef8aca356aa89966c0a98c9c1bd53eac76bee747d5bc35d6211",
+        "bytes": 15043349
+      },
+      "worldBytes": 1189379644,
+      "preparedPeakBytes": 114010052,
+      "originalBindings": 21
+    }
+  ],
+  "preparedRegistration": {
+    "type": "prepared-hd-registered",
+    "members": 453,
+    "pages": 1205,
+    "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+  },
+  "selectedEnvironment": {
+    "schemaVersion": 1,
+    "revision": "urban-environment-m2-4-buildings-batch56-v1",
+    "sha256": "c6cffa512e3c5adcec9c2ed52acba67d50f4912038d6af21aea944afba2e62dc"
+  },
+  "unchangedSourcePreservation": {
+    "baseline": "67d043b3",
+    "changedRuntimeFiles": [
+      {
+        "file": "desktop/environment-profile.mjs",
+        "sha256": "dd0c4a326c55d5dd0042d291e27510eb4108c80467c8671e519980f501ca066e",
+        "bytes": 6006
+      },
+      {
+        "file": "src/engine/renderable/builder/EnvironmentHd.ts",
+        "sha256": "c80a28b811f42ddc9918d9e006a3b481e0fedc96fabd942a35f51ad618b5efab",
+        "bytes": 4609
+      },
+      {
+        "file": "src/engine/renderable/builder/environmentHdContract.ts",
+        "sha256": "8a5b460de780d2735749720ec5096c3dabc8734986fa5be25325dedaf493b0d8",
+        "bytes": 4409
+      },
+      {
+        "file": "src/engine/renderable/builder/loadEnvironmentHd.ts",
+        "sha256": "b714d902be7978f12b437b41d4068b95df97ae720cca6ba0b73450cd855c90ea",
+        "bytes": 10408
+      }
+    ],
+    "allOtherSourceAndDesktopFilesUnchanged": true,
+    "windowsRendererUiAndCameraCodeUnchanged": true
+  },
+  "selectors": [
+    {
+      "file": ".local/environment-desert-selection.json",
+      "sha256": "34bad228e0575f8ce543304fb7074132474c4093ecfe7a4ce9f8581b75b5a52f",
+      "bytes": 164
+    },
+    {
+      "file": ".local/environment-newurban-selection.json",
+      "sha256": "141f483d5c6b8b6693df9d3935d9412ab221c11ab3cee3a3819f0d83d67778b0",
+      "bytes": 179
+    },
+    {
+      "file": ".local/environment-selection.json",
+      "sha256": "34c19b7589aaee6f41f635a5df542fe15b3c7268f22fdb2718ddc2baa3bbdda3",
+      "bytes": 169
+    },
+    {
+      "file": ".local/environment-snow-selection.json",
+      "sha256": "1c999d398ba658582babf9a18adf0c0ec6d566258802f8edf0a247ad4865f813",
+      "bytes": 157
+    },
+    {
+      "file": ".local/environment-urban-selection.json",
+      "sha256": "dacf7f63220805048b2b9b00c2ba799501a84e7b2800b7a9888bfbc25a039136",
+      "bytes": 166
+    },
+    {
+      "file": ".local/terrain-selection.json",
+      "sha256": "611cf3e5f4eff724a785425281c0c2c4885ea097723041d0ecd9e958ba9fb71a",
+      "bytes": 159
+    },
+    {
+      "file": ".local/terrain-snow-selection.json",
+      "sha256": "3f17f7d5d3adf06b9ffcd314b5c10b4deeaf33c2bfd33b3081c63d680de2c427",
+      "bytes": 154
+    },
+    {
+      "file": ".local/terrain-urban-selection.json",
+      "sha256": "5e70a7d10763d28ec7c091d81c7e75118f90f7ec74694e8d0e8459559f3f58bb",
+      "bytes": 149
+    },
+    {
+      "file": ".local/ui-selection.json",
+      "sha256": "00ea0bd804db6771544c5b036ed776e9e3c67db9df64a25c2f4fca41888247a4",
+      "bytes": 163
+    }
+  ],
+  "mainHead": "748d0998aaf663acda8807c158155bf0a5bb157b",
+  "mainClean": true,
+  "mainMutated": false,
+  "newEditionVariantArtwork": "NOT_PRODUCED_OR_SELECTED",
+  "newEditionVariantNativeRendering": "PENDING_NEW_COMPLETE_ART_FAMILIES",
+  "remainingUrbanSourceGroups": 63,
+  "evidenceReused": "Accepted batch56 complete state/visual evidence; only shared-loader legacy bindings and lifecycle rechecked. No repeated faction unit/icon matrix.",
+  "applicationPolicy": "One internal signed arm64 host; no new Desktop game bundle. Final independent milestone app remains outstanding.",
+  "windows": "NOT_RUN",
+  "m24Complete": false
+}

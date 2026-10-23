@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_FOCUSED_COMBINED_MACOS_ARM64_AND_VERIFIED_CONSOLIDATION",
+  "observedMain": "e62c450",
+  "cClosure": "626d27a11eebe03a3f6f513c46ad088cbe0ca5b3",
+  "acceptedD": "9aba6cd06f24901df52bc54c9bcb46f6d91ca68f",
+  "historyPreservingMerge": "e65bda4d7b0a9f9e5fbed12b9af3a5264d4ddb55",
+  "runtimeSourceHead": "ba7a6d27289e369a234ae96fda5a3ca29b7522f0",
+  "mainPromotion": "COMPLETE_LOCAL_MAIN",
+  "delivery": {
+    "folder": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-CD-20261005-ba7a6d2-macOS-arm64",
+    "app": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-CD-20261005-ba7a6d2-macOS-arm64/Red Alert 2 HD Combined C D 20261005.app",
+    "launcher": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-CD-20261005-ba7a6d2-macOS-arm64/Launch-Isolated-Review.command",
+    "profile": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-CD-20261005-ba7a6d2-macOS-arm64/Review-Profile",
+    "resources": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-CD-20261005-ba7a6d2-macOS-arm64/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/deliveries/RA2-HD-Main-CD-20261005-ba7a6d2-macOS-arm64/RA2-HD-UI-Resources",
+    "resourceFiles": 4637,
+    "uiResourceFiles": 360,
+    "runtimeSourceHead": "ba7a6d27289e369a234ae96fda5a3ca29b7522f0"
+  },
+  "selectedManifest": "docs/main-selected-resources-20261005.json",
+  "validation": {
+    "schemaVersion": 1,
+    "status": "PASS_FOCUSED_COMBINED_MACOS_ARM64",
+    "runtimeSourceHead": "ba7a6d27289e369a234ae96fda5a3ca29b7522f0",
+    "evidence": [
+      {
+        "report": ".artifacts/main-integration-20261005/combined-2x-v1/report.json",
+        "sha256": "a09cf59dc615dba4449d786fcb4e96656c3a8f66c5ed5cf3a5245825e3900f34",
+        "status": "PASS_SELECTED_NATIVE_CASES"
+      },
+      {
+        "report": ".artifacts/main-integration-20261005/combined-4x-arcs-v4/report.json",
+        "sha256": "a7dd1b95509d698085fc5c51eef35400c42f01521425c062a6e937a8ad4c96f4",
+        "status": "PASS_SELECTED_NATIVE_CASES"
+      },
+      {
+        "report": ".artifacts/main-integration-20261005/r12-4x-v1/report.json",
+        "sha256": "8b76f682cb02aa5f6cd3e3ee83d64d8e6c8aba5f0a7fbe0898fa7d449b91acf1",
+        "status": "PASS_SELECTED_NATIVE_CASES"
+      },
+      {
+        "report": ".artifacts/main-integration-20261005/effects-4x-v1/report.json",
+        "sha256": "ced07e65fed0f08096f0b5977f4e75de3acb5cb1386225f7cc191807631f5f10",
+        "status": "PASS_SELECTED_NATIVE_CASES"
+      },
+      {
+        "report": ".artifacts/main-integration-20261005/bsub-child-4x-v1/report.json",
+        "sha256": "9a54257fdb04d0c2101f5cfa61ef5be8f8072826e8c6421e4959fe966bc4f694",
+        "status": "PASS_SELECTED_NATIVE_CASES"
+      },
+      {
+        "report": ".artifacts/main-integration-20261005/ra2-negative-4x-v1/report.json",
+        "sha256": "a03b87b1e1fe2010f86fbd61ac8040c87f6d6b4adfa7d1fb8517e3a9b5001145",
+        "status": "PASS_SELECTED_NATIVE_CASES"
+      },
+      {
+        "report": ".artifacts/main-integration-20261005/loading-first-repeat-v1/report.json",
+        "sha256": "acb61217755b21f7984d5b88c6425a6415f8ed458a66f0de7717856867f80d8e",
+        "status": "PASS_SELECTED_NATIVE_CASES"
+      },
+      {
+        "report": ".artifacts/main-integration-20261005/copied-launcher-final-v1/report.json",
+        "sha256": "470366c07326e885fa0ee2c95a13fece712d2d771abd646bc6cfb543b1290c7c",
+        "status": "PASS_COPIED_LAUNCHER_DISCOVERY_HD_BINDINGS_AND_VISIBLE_CLICK_TARGET"
+      }
+    ],
+    "densityChecks": {
+      "2": {
+        "report": ".artifacts/main-integration-20261005/combined-2x-v1/report.json",
+        "worldBytes": 140969564,
+        "worldLimitBytes": 268435456,
+        "preparedPeakBytes": 95866408,
+        "uiReservedBytes": 11644672,
+        "oldWorldBytesAfterTeardown": 0,
+        "uiBytesAfterTeardown": 0,
+        "bindings": 20
+      },
+      "4": {
+        "report": ".artifacts/main-integration-20261005/combined-4x-arcs-v4/report.json",
+        "worldBytes": 441593820,
+        "worldLimitBytes": 1342177280,
+        "preparedPeakBytes": 134189324,
+        "uiReservedBytes": 11644672,
+        "oldWorldBytesAfterTeardown": 0,
+        "uiBytesAfterTeardown": 0,
+        "bindings": 20
+      }
+    },
+    "deployment4x": {
+      "report": ".artifacts/main-integration-20261005/combined-4x-v3/report.json",
+      "scope": "Both native deployments, ownership, packing and redeployment passed before an unpowered tower fixture failed; later powered arc scene passed separately.",
+      "rawReportStatus": "FAIL"
+    },
+    "structure": {
+      "report": ".artifacts/main-integration-20261005/d-structure-v1.json",
+      "allDRoots": 19,
+      "children": [
+        "SLAV",
+        "CMISL"
+      ],
+      "densities": [
+        2,
+        4
+      ],
+      "uploads": 171,
+      "disposed": 171
+    },
+    "tests": {
+      "combined": "81 PASS, 0 FAIL across 22 files",
+      "cContracts": "Separate edition processes: YR 3 PASS / 277 assertions; RA2 3 PASS / 144 assertions",
+      "arcRepair": "17 PASS / 116 assertions",
+      "entryTypecheck": "PASS before and after runtime repair"
+    },
+    "sourceArtwork": "C/LUNR and D source deliveries user accepted",
+    "combinedUserAcceptance": "PENDING_USER_TESTING",
+    "windows": "UNVERIFIED",
+    "diskMoney": "NATIVE_RUNTIME_FAILURE_RECORDED_UNRESOLVED",
+    "loading": {
+      "first": {
+        "observedReadyMs": 4429.185000002384,
+        "cache": {
+          "bytes": 82136564,
+          "peakBytes": 82136564,
+          "pendingBytes": 0,
+          "hits": 0,
+          "misses": 25,
+          "shared": 0,
+          "evictions": 0,
+          "uncached": 2
+        }
+      },
+      "second": {
+        "observedReadyMs": 4837.72000002861,
+        "cache": {
+          "bytes": 82136564,
+          "peakBytes": 82136564,
+          "pendingBytes": 0,
+          "hits": 23,
+          "misses": 27,
+          "shared": 0,
+          "evictions": 0,
+          "uncached": 4
+        }
+      }
+    }
+  },
+  "preservation": {
+    "report": ".artifacts/main-integration-20261005/protected-files-check.json",
+    "uiManifestSha256": "a8cf998c042066c05c119a6392e9b703ccd03622d89030e1dbf45089cd90ca18",
+    "preparedContractSha256": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604"
+  },
+  "cleanup": "/Users/Aone/RA2remaster/archives/2026-10-05-final-cd/cleanup-ledger.json",
+  "continuation": "This conversation owns integrated user testing and incremental bug fixes. No push, publication, new milestone or new chat.",
+  "maintenanceReceipt": "docs/project-maintenance-20261005.json",
+  "postCleanup": {
+    "mainResources": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/main-integration-20261005/resources-main-post-cleanup.json",
+    "copiedResources": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/main-integration-20261005/resources-copied-post-cleanup.json",
+    "copiedDelivery": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/main-integration-20261005/retained-delivery-post-cleanup.json",
+    "status": "PASS_SELECTED_RESOURCE_BYTES_REGISTRATION_AND_COPIED_SIGNATURE",
+    "registeredFiles": 4778,
+    "packageEntries": 5480,
+    "runtimeSourceUnchanged": true
+  },
+  "subsequentRepairs": {
+    "diskRefineryPayment": {
+      "status": "RESOLVED_WITH_CONTINUOUS_ANIMATION_AND_CENTERED_HOVER_NATIVE_2X_4X",
+      "receipt": "docs/disk-drain-repair-20261005.json",
+      "historicalValidationStatusPreserved": true,
+      "runtimeSourceHead": "c7e4c0e504ef589ce8d801c840bfde834b0ac18e"
+    }
+  }
+}

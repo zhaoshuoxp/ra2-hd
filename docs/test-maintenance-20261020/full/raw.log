@@ -1,0 +1,2114 @@
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/art/construction-completion.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/art/construction-completion.test.ts:
+(pass) completed assembly publishes retained layers and their true initial poses without restarting clocks [0.43ms]
+(pass) controlled displayed terminal uses the same presentation while leaving native time untouched [0.05ms]
+(pass) native idle transition retains its own visibility and advancing frames [0.03ms]
+(pass) Original controls and unmarked accepted artwork receive no presentation changes [0.02ms]
+(pass) aggregate overrides declare completion only for their own assembly member offset [0.04ms]
+(pass) destruction and unpowered active layers are not made visible by completion [0.04ms]
+
+ 6 pass
+ 0 fail
+ 29 expect() calls
+Ran 6 tests across 1 file. [27.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/art/construction-storage.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/art/construction-storage.test.ts:
+(pass) actual Allied and Soviet construction pools retain native metadata at both densities [3216.99ms]
+(pass) the construction format extension rejects a matched Allied body source [3.44ms]
+(pass) construction pools require both pinned native identity and lossless building mode [0.34ms]
+(pass) completion presentation resolves only the supported marker on a construction member [113.64ms]
+
+ 4 pass
+ 0 fail
+ 345 expect() calls
+Ran 4 tests across 1 file. [3.39s]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/art/portable-registration.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/art/portable-registration.test.ts:
+(pass) first portable launch registers sibling resources and retains existing profile bytes [4.57ms]
+
+ 1 pass
+ 0 fail
+ 5 expect() calls
+Ran 1 test across 1 file. [49.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/ai-pacing.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/ai-pacing.test.ts:
+(pass) attack timing, active wave limit and economy budget: false/2 [0.65ms]
+(pass) attack timing, active wave limit and economy budget: false/4 [0.04ms]
+(pass) attack timing, active wave limit and economy budget: false/0 [0.03ms]
+(pass) attack timing, active wave limit and economy budget: true/2 [0.02ms]
+(pass) attack timing, active wave limit and economy budget: true/4
+(pass) attack timing, active wave limit and economy budget: true/0 [0.02ms]
+(pass) offensive powers respect preparation time and become available afterward [0.24ms]
+(pass) the three tiers remain ordered and expansion receives additional breathing room [0.06ms]
+(pass) both slave-economy production paths share the tier limit, including deployed miners [19.58ms]
+(pass) naval production cannot fill Yuri escort slots with extra Boomers [0.81ms]
+
+ 10 pass
+ 0 fail
+ 84 expect() calls
+Ran 10 tests across 1 file. [101.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/bundled-layout.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/bundled-layout.test.ts:
+(pass) Windows portable discovery resolves resources and profile beside the EXE [0.14ms]
+(pass) Mac discovery retains its validated sibling resource location [0.06ms]
+
+ 2 pass
+ 0 fail
+ 6 expect() calls
+Ran 2 tests across 1 file. [51.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/classic-powers-ai.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/classic-powers-ai.test.ts:
+(pass) classic AI powers choose enemy structures, protect own armor, and validate a complete chrono destination [2.19ms]
+(pass) classic support powers do not target collectors or organic vehicles [0.13ms]
+
+ 2 pass
+ 0 fail
+ 10 expect() calls
+Ran 2 tests across 1 file. [82.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/combat-ai.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/combat-ai.test.ts:
+(pass) guardian infantry deploy against armor and undeploy to move or fight infantry [1.30ms]
+(pass) siege choppers deploy artillery in range and leave artillery mode for air targets [0.12ms]
+
+ 2 pass
+ 0 fail
+ 8 expect() calls
+Ran 2 tests across 1 file. [161.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/combat-feedback.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/combat-feedback.test.ts:
+(pass) debris damage cannot create a lightning strike; actual strikes retain their visual effect [0.56ms]
+(pass) continuous fire reuses one loop, switches stages, and stops on idle [0.55ms]
+(pass) loops end on lost fire cadence, disabled weapons, removal, ownership change, and disposal [0.14ms]
+(pass) ordinary one-shot reports still play on every shot [0.06ms]
+
+ 4 pass
+ 0 fail
+ 27 expect() calls
+Ran 4 tests across 1 file. [66.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/difficulty.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/difficulty.test.ts:
+(pass) all selectable skirmish difficulties construct an active strategic bot [0.29ms]
+(pass) retail AI indexes select separate handicaps and leave a human on Normal [0.38ms]
+(pass) ownership changes immediately change difficulty armor and firing intervals [0.56ms]
+
+ 3 pass
+ 0 fail
+ 11 expect() calls
+Ran 3 tests across 1 file. [63.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/disk-drain.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/disk-drain.test.ts:
+(pass) native cell range includes the refinery edge even when center distance exceeds weapon range [0.97ms]
+(pass) a nearby guard target cannot interrupt refinery payments after FireOnce finishes [1.33ms]
+(pass) retaliation preserves an active drain, then normal acquisition resumes after Stop [0.31ms]
+(pass) drain payments cap at remaining enemy credits and repeated activation does not reset the timer [0.25ms]
+(pass) move-order ends the drain before another payment and releases blackout [0.11ms]
+(pass) new-target ends the drain before another payment and releases blackout [0.04ms]
+(pass) destroyed ends the drain before another payment and releases blackout [0.04ms]
+(pass) unspawned ends the drain before another payment and releases blackout [0.15ms]
+(pass) captured ends the drain before another payment and releases blackout [0.06ms]
+(pass) out-of-range ends the drain before another payment and releases blackout [0.08ms]
+(pass) owner-change ends the drain before another payment and releases blackout [0.12ms]
+(pass) source-unspawn ends the drain before another payment and releases blackout [0.06ms]
+(pass) pending drain protects FireOnce intent without early effects (power=0) [0.25ms]
+(pass) pending drain protects FireOnce intent without early effects (power=100) [0.15ms]
+(pass) stop cancels pending drain and rejects late impact [0.06ms]
+(pass) move cancels pending drain and rejects late impact [0.01ms]
+(pass) retarget cancels pending drain and rejects late impact [0.02ms]
+(pass) captured cancels pending drain and rejects late impact
+(pass) destroyed cancels pending drain and rejects late impact [0.01ms]
+(pass) projectile-removed cancels pending drain and rejects late impact [0.02ms]
+(pass) owner-change cancels pending drain and rejects late impact
+(pass) source-unspawn cancels pending drain and rejects late impact [0.01ms]
+(pass) an old projectile cannot replace a newer reservation; queued orders preserve it [0.10ms]
+(pass) drain approach reaches the building center while ordinary weapon movement retains edge range [1.22ms]
+
+ 24 pass
+ 0 fail
+ 121 expect() calls
+Ran 24 tests across 1 file. [642.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/drain-animation.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/drain-animation.test.ts:
+(pass) native drain frames keep cycling for refinery and power channels and release on cancellation [0.86ms]
+
+ 1 pass
+ 0 fail
+ 212 expect() calls
+Ran 1 test across 1 file. [36.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/economy-ai.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/economy-ai.test.ts:
+(pass) combat demand does not prevent replacing a lost miner, and refineries bound demand [0.37ms]
+(pass) deployed slave miners count toward the same mobile mining capacity [0.05ms]
+
+ 2 pass
+ 0 fail
+ 5 expect() calls
+Ran 2 tests across 1 file. [42.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/edition.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/edition.test.ts:
+(pass) edition identities isolate rule files, country/map preferences and archives [0.11ms]
+
+ 1 pass
+ 0 fail
+ 18 expect() calls
+Ran 1 test across 1 file. [31.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/expansion-rules.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/expansion-rules.test.ts:
+(pass) berserk passive acquisition prefers an original ally over a higher-threat enemy [0.39ms]
+(pass) case-insensitive section lookup and YR global fallback preserve original source [0.85ms]
+(pass) Dominator zero armor verses protect units while structures receive blast damage [0.37ms]
+(pass) disc power drains and Force Shield outages expire independently [0.14ms]
+(pass) retail sound references tolerate section-name casing differences [1.18ms]
+(pass) offline robots survive water bridges and magnetic suspension but sink after landing in water [5.71ms]
+
+ 6 pass
+ 0 fail
+ 19 expect() calls
+Ran 6 tests across 1 file. [52.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/guard-scan.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/guard-scan.test.ts:
+(pass) single-weapon units can scan in area guard without a secondary weapon [0.18ms]
+(pass) guard scan retains selected, dummy range, native guard range and range cap semantics [0.04ms]
+
+ 2 pass
+ 0 fail
+ 8 expect() calls
+Ran 2 tests across 1 file. [45.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/light-tint.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/light-tint.test.ts:
+(pass) retail blue lamps retain low green without changing generic comma lists [0.54ms]
+(pass) map overrides, negative tint, percentages and omitted defaults retain their values [0.05ms]
+
+ 2 pass
+ 0 fail
+ 7 expect() calls
+Ran 2 tests across 1 file. [35.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/lighting-score.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/lighting-score.test.ts:
+(pass) lamp coefficients retain their numeric intensity without display encoding [0.15ms]
+(pass) positive and negative lamps preserve destination alpha and raw coefficient sampling [0.28ms]
+(pass) score time follows elapsed simulation time across speed changes and paused exits [0.99ms]
+
+ 3 pass
+ 0 fail
+ 29 expect() calls
+Ran 3 tests across 1 file. [57.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/loading-artwork.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/loading-artwork.test.ts:
+(pass) RA2 keeps its shared palette while YR replacement images use country palettes [0.21ms]
+
+ 1 pass
+ 0 fail
+ 34 expect() calls
+Ran 1 test across 1 file. [35.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/loading-preparation.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/loading-preparation.test.ts:
+(pass) selected loading artwork remains leased through readiness and releases at teardown [0.63ms]
+(pass) cancel and timeout resolve to Original and ignore late completion [5.97ms]
+(pass) HD Off, missing art and observer do not wait for unsupported overlays [0.37ms]
+(pass) Yuri leases its full background before loading and falls back when it is unavailable [0.22ms]
+
+ 4 pass
+ 0 fail
+ 24 expect() calls
+Ran 4 tests across 1 file. [45.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/mind-control.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/mind-control.test.ts:
+(pass) retail tower capacity refuses a fourth victim and restoration frees one slot [1.61ms]
+(pass) Mastermind keeps excess targets, applies retail overload tiers and releases every target [1.51ms]
+(pass) single-slot Yuri replaces and restores the previous victim [0.06ms]
+(pass) a controller killed in transport releases victims without a second unspawn event [0.06ms]
+(pass) powered control towers release all victims during a power outage [0.10ms]
+
+ 5 pass
+ 0 fail
+ 22 expect() calls
+Ran 5 tests across 1 file. [42.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/missile-pose.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/missile-pose.test.ts:
+(pass) missile surface preserves level artwork and follows its native longitudinal axis through a dive [6.61ms]
+
+ 1 pass
+ 0 fail
+ 680 expect() calls
+Ran 1 test across 1 file. [43.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/prerequisites.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/prerequisites.test.ts:
+(pass) a packed slave miner continues to meet PROC without replacing unrelated prerequisites [0.35ms]
+(pass) retail override buildings unlock their named prerequisite path only [0.07ms]
+
+ 2 pass
+ 0 fail
+ 6 expect() calls
+Ran 2 tests across 1 file. [124.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/production-feedback.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/production-feedback.test.ts:
+(pass) waiting items retain a stationary full mask; only active production advances [0.19ms]
+(pass) unavailable single-instance superweapon construction icons stay shaded without masking usable powers [0.09ms]
+(pass) factory voices are owner-specific, do not duplicate CreateSound and do not fire for unrelated spawns [0.23ms]
+(pass) completed vehicle-to-building morph plays at the surviving object, with retail placement fallback [0.07ms]
+(pass) deploy feedback describes the resulting stance, including undeploy [0.23ms]
+
+ 5 pass
+ 0 fail
+ 32 expect() calls
+Ran 5 tests across 1 file. [93.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/superweapon-production.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/superweapon-production.test.ts:
+(pass) superweapon-off keeps labs and auxiliary powers available while disabling the two main powers per side [1.56ms]
+(pass) superweapon option preserves normal prerequisite and tech-level restrictions [0.29ms]
+
+ 2 pass
+ 0 fail
+ 27 expect() calls
+Ran 2 tests across 1 file. [63.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/tech-buildings.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/tech-buildings.test.ts:
+(pass) preplaced secret lab choices persist and explicit map overrides unlock only the named unit [2.76ms]
+(pass) tech healing stacks, separates organic/mechanical units, excludes aircraft and ends on loss of the structure [0.44ms]
+
+ 2 pass
+ 0 fail
+ 8 expect() calls
+Ran 2 tests across 1 file. [76.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/editions/visual-feedback.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/editions/visual-feedback.test.ts:
+THREE.WARNING: Multiple instances of Three.js being imported.
+(pass) airstrike designation draws after sprites and releases only its own target marker [1.14ms]
+(pass) repair indicator repeats its native animation and disposes it on stop or replacement [0.15ms]
+
+ 2 pass
+ 0 fail
+ 13 expect() calls
+Ran 2 tests across 1 file. [111.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/integration/animation-clock.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/integration/animation-clock.test.ts:
+(pass) frame advance follows elapsed time regardless of render cadence [0.64ms]
+(pass) a pause neither advances frames nor bursts on resume [0.03ms]
+
+ 2 pass
+ 0 fail
+ 106 expect() calls
+Ran 2 tests across 1 file. [74.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/integration/mind-control-status.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/integration/mind-control-status.test.ts:
+(pass) global status members absent from the animation list retain native art timing [1.31ms]
+(pass) unselected controlled victims retain one following marker and release it once [0.83ms]
+(pass) owner changes retain native palette and marker; permanent control, cloak and removal follow lifetime [0.28ms]
+
+ 3 pass
+ 0 fail
+ 21 expect() calls
+Ran 3 tests across 1 file. [32.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/integration/scene-matrices.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/integration/scene-matrices.test.ts:
+(pass) manual world updates preserve translated roots, moving joints and camera listeners before batching [1.67ms]
+(pass) manual UI updates preserve root placement, sprite scale and changes after the first frame [0.41ms]
+(pass) new instancing batches have current transforms and instance data without a renderer matrix pass [1.15ms]
+(pass) cached heading switches retain resources and update the newly mounted pose before ray picking [1.71ms]
+(pass) failed explicit matrix updates restore the renderer opt-out flag [0.37ms]
+
+ 5 pass
+ 0 fail
+ 90 expect() calls
+Ran 5 tests across 1 file. [34.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/integration/shp-geometry-key.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/integration/shp-geometry-key.test.ts:
+(pass) cached geometry keys match freshly built keys under every input change [0.66ms]
+(pass) HD layer depth changes occlusion without moving pixels and restores native depth on fallback [1.40ms]
+
+ 2 pass
+ 0 fail
+ 72 expect() calls
+Ran 2 tests across 1 file. [29.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/integration/static-octree-matrices.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/integration/static-octree-matrices.test.ts:
+(pass) unchanged actor matrices are not forced by the identity octree wrapper [0.79ms]
+(pass) movement, recoil, new children and parent translation retain current native world matrices [0.40ms]
+
+ 2 pass
+ 0 fail
+ 15 expect() calls
+Ran 2 tests across 1 file. [26.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/integration/view-culling.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/integration/view-culling.test.ts:
+(pass) objects outside the padded view leave traversal and keep game visibility [1.39ms]
+(pass) culled subtrees skip matrix work and are current once restored [0.39ms]
+(pass) a forced container pass reaches culled actors when they are restored [0.22ms]
+(pass) aircraft, range circles and non-positioned renderables are never culled [0.23ms]
+(pass) state changes are reported once [0.03ms]
+
+ 5 pass
+ 0 fail
+ 22 expect() calls
+Ran 5 tests across 1 file. [27.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m0/cursor-style.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m0/cursor-style.test.ts:
+(pass) native cursor caches frame zero without changing the active gameplay frame [0.30ms]
+
+ 1 pass
+ 0 fail
+ 8 expect() calls
+Ran 1 test across 1 file. [26.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m0/desktop.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m0/desktop.test.ts:
+(pass) desktop origin policy rejects opaque lookalikes and foreign blobs [0.62ms]
+(pass) protocol refuses unknown routes, methods, initiators and escaped paths [1.09ms]
+(pass) profile validation fails closed for missing data, and files cannot escape by symlink [2.00ms]
+
+ 3 pass
+ 0 fail
+ 25 expect() calls
+Ran 3 tests across 1 file. [35.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m0/import.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+[CsfFile] Parsing CSF file: ra2.csf
+[CsfFile] Header parsed. Stream position: 24, Declared labels: 0, Declared lang ID: 0
+[CsfFile] Finished parsing ra2.csf. Loaded 0 labels. Detected/Set language: EnglishUS (en-US)
+[CsfFile] Parsing CSF file: ra2.csf
+[CsfFile] Header parsed. Stream position: 24, Declared labels: 0, Declared lang ID: 0
+[CsfFile] Finished parsing ra2.csf. Loaded 0 labels. Detected/Set language: EnglishUS (en-US)
+[CsfFile] Parsing CSF file: ra2.csf
+[CsfFile] Header parsed. Stream position: 24, Declared labels: 0, Declared lang ID: 0
+[CsfFile] Finished parsing ra2.csf. Loaded 0 labels. Detected/Set language: EnglishUS (en-US)
+[CsfFile] Parsing CSF file: ra2.csf
+[CsfFile] Header parsed. Stream position: 24, Declared labels: 0, Declared lang ID: 0
+[CsfFile] Finished parsing ra2.csf. Loaded 0 labels. Detected/Set language: EnglishUS (en-US)
+[CsfFile] Parsing CSF file: ra2.csf
+[CsfFile] Header parsed. Stream position: 24, Declared labels: 0, Declared lang ID: 0
+[CsfFile] Finished parsing ra2.csf. Loaded 0 labels. Detected/Set language: EnglishUS (en-US)
+[CsfFile] Parsing CSF file: ra2.csf
+[CsfFile] Header parsed. Stream position: 24, Declared labels: 0, Declared lang ID: 0
+[CsfFile] Finished parsing ra2.csf. Loaded 0 labels. Detected/Set language: EnglishUS (en-US)
+[CsfFile] Parsing CSF file: ra2.csf
+
+scripts/m0/import.test.ts:
+(pass) missing and ambiguous case inputs fail [0.10ms]
+(pass) reject truncated headers, indices, duplicate IDs and out-of-range members [0.65ms]
+(pass) nested malformed archives fail through the upstream parser [0.20ms]
+(pass) dry run does not copy; overlays are excluded; repeat import preserves file inode [15.52ms]
+(pass) conflicting destination is preserved [7.99ms]
+(pass) source symlinks and output symlink directories are rejected [6.87ms]
+(pass) missing required archive member blocks the entire import [3.63ms]
+(pass) malformed archived CSF cannot pass as a readable language resource [3.25ms]
+
+ 8 pass
+ 0 fail
+ 20 expect() calls
+Ran 8 tests across 1 file. [75.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m0/menu-pointer.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m0/menu-pointer.test.ts:
+(pass) menu absolute movement uses current canvas bounds; lock retains the final menu coordinate [0.90ms]
+(pass) menu cycles and repeated lock loss retain at most one recovery click listener [0.31ms]
+Couldn't reacquire pointer lock. Will attempt to require lock on next click warn: Test-only lock denial
+      at request (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m0/menu-pointer.test.ts:36:40)
+      at lock (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/src/gui/Pointer.ts:139:18)
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m0/menu-pointer.test.ts:98:15)
+
+Couldn't acquire initial pointer lock warn: Test-only lock denial
+      at request (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m0/menu-pointer.test.ts:36:40)
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/src/gui/Pointer.ts:93:40)
+      at emit (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m0/menu-pointer.test.ts:18:13)
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m0/menu-pointer.test.ts:101:14)
+
+Couldn't reacquire pointer lock. Will attempt to require lock on next click warn: Test-only lock denial
+      at request (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m0/menu-pointer.test.ts:36:40)
+      at lock (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/src/gui/Pointer.ts:139:18)
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m0/menu-pointer.test.ts:108:15)
+
+(pass) denial leaves the system cursor available and one retry; menu opening cancels retry [0.74ms]
+(pass) promise-only and synchronous lock failures remove temporary DOM listeners [0.38ms]
+(pass) unsupported raw movement falls back without retaining failed request listeners [0.14ms]
+(pass) pause hands the final logical cursor to the desktop after unlock and ignores stale center events [0.16ms]
+
+ 6 pass
+ 0 fail
+ 128 expect() calls
+Ran 6 tests across 1 file. [30.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m0/rendering.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m0/rendering.test.ts:
+(pass) shadow frustum includes map-scale geometry and quality changes release the old target [0.94ms]
+(pass) shadow receiver has finite upward normals and cannot pollute later depth passes [0.81ms]
+(pass) scene clear enables depth writes after a transparent previous pass [0.14ms]
+(pass) render phase reaches units through world and octree containers [0.56ms]
+
+ 4 pass
+ 0 fail
+ 20 expect() calls
+Ran 4 tests across 1 file. [37.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m0/retailCompatibility.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m0/retailCompatibility.test.ts:
+(pass) adapter adds only the missing identity and preserves every archived rule entry [0.48ms]
+(pass) existing explicit configuration is preserved and malformed prerequisites fail [0.20ms]
+
+ 2 pass
+ 0 fail
+ 19 expect() calls
+Ran 2 tests across 1 file. [26.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m0/voxelPalette.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m0/voxelPalette.test.ts:
+(pass) VPL takes lookup indices after the embedded palette and owns its bytes [0.75ms]
+(pass) VPL rejects truncated, extended and incompatible RA2 tables [0.25ms]
+(pass) voxel material cloning retains shared lookup ownership and independent lighting [0.57ms]
+
+ 3 pass
+ 0 fail
+ 14 expect() calls
+Ran 3 tests across 1 file. [32.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/allied-buildings/contracts.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/allied-buildings/contracts.test.ts:
+(pass) each declared Allied family resolves atomically at its complete catalog member count [382.98ms]
+(pass) missing member, mismatched theater source, corrupt final page and exhausted budget publish no partial Allied family [4.38ms]
+(pass) American airfield shares the exact complete HQ texture family and aggregate binding [13.39ms]
+
+ 3 pass
+ 0 fail
+ 216 expect() calls
+Ran 3 tests across 1 file. [443.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/allied-buildings/demand.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/allied-buildings/demand.test.ts:
+(pass) building metadata survives shared queue caching; a live unit retains its allocation during building capacity fallback [0.85ms]
+
+ 1 pass
+ 0 fail
+ 8 expect() calls
+Ran 1 test across 1 file. [31.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/allied-buildings/factory-pose.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/allied-buildings/factory-pose.test.ts:
+(pass) retail roof range escapes its member; both production layers hold the correct native health pose [0.59ms]
+(pass) other families, construction and different source shapes keep their animation contract [0.08ms]
+
+ 2 pass
+ 0 fail
+ 75 expect() calls
+Ran 2 tests across 1 file. [27.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/allied-units/contracts.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/allied-units/contracts.test.ts:
+(pass) Allied contracts retain native identity and edition boundaries [0.06ms]
+(pass) a missing Allied atlas publishes no partial family and preserves an independent peer [30.97ms]
+
+ 2 pass
+ 0 fail
+ 12 expect() calls
+Ran 2 tests across 1 file. [71.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/allied-units/feedback.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/allied-units/feedback.test.ts:
+(pass) dolphin swim and attack use clockwise source bearings without changing animation phase [0.13ms]
+(pass) parking depth clears only the occupied sprite surface and preserves screen projection [2.12ms]
+(pass) native depth mask is traversed only beneath a high bridge [1.48ms]
+
+ 3 pass
+ 0 fail
+ 48 expect() calls
+Ran 3 tests across 1 file. [88.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/allied-units/shared-reuse.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/allied-units/shared-reuse.test.ts:
+(pass) Allied and Soviet engineer leases share one allocation without matching foreign images [0.94ms]
+(pass) Source-identical stolen-tech units become available in RA2 without opening YR-only families [0.05ms]
+(pass) Reused member slots cover both native sequence maps, including fixed-facing differences [810.36ms]
+
+ 3 pass
+ 0 fail
+ 325 expect() calls
+Ran 3 tests across 1 file. [881.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/building-coverage/garrison.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/building-coverage/garrison.test.ts:
+(pass) NABNKR: evacuation preserves military ownership and releases civilian ownership [0.39ms]
+(pass) CABUNK01: evacuation preserves military ownership and releases civilian ownership [0.03ms]
+(pass) entering an owned bunker is not counted as capturing a building [0.13ms]
+
+ 3 pass
+ 0 fail
+ 14 expect() calls
+Ran 3 tests across 1 file. [33.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/civilian-owner.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/civilian-owner.test.ts:
+(pass) civilian ownership resolves the numeric side used by parsed country rules [0.21ms]
+(pass) successful garrison entry completes its task before evacuation reuses the unit [0.28ms]
+
+ 2 pass
+ 0 fail
+ 5 expect() calls
+Ran 2 tests across 1 file. [34.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/desktop-controls.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/desktop-controls.test.ts:
+(pass) menu cursor maps normalized client coordinates without multiplying Retina density [0.13ms]
+(pass) desktop exit accepts only the trusted main frame and closes the application [0.44ms]
+
+ 2 pass
+ 0 fail
+ 9 expect() calls
+Ran 2 tests across 1 file. [33.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/desktop-feedback.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/desktop-feedback.test.ts:
+(pass) desktop window modes fit the current monitor in physical pixels [0.22ms]
+(pass) five solo tiers preserve the network and replay speed mapping [0.04ms]
+(pass) original Conscript coverage resolves palette entries before mixing and survives edge cloning [0.60ms]
+(pass) menu sprite scaling follows DOM scale without altering world billboard geometry [2.53ms]
+
+ 4 pass
+ 0 fail
+ 17 expect() calls
+Ran 4 tests across 1 file. [37.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/desktop-r3.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+[MainMenuController] Initialized
+[MainMenuController] Setting sidebar title: 
+[Controller] Pushing screen: 1
+
+scripts/m1/desktop-r3.test.ts:
+(pass) repeated display notifications preserve the current menu screen instead of replaying navigation [0.45ms]
+(pass) country artwork and live labels share a complete, uniformly scaled safe area [0.09ms]
+(pass) new solo preferences default to the midpoint and cannot misread a legacy seven-tier value [0.11ms]
+
+ 3 pass
+ 0 fail
+ 49 expect() calls
+Ran 3 tests across 1 file. [28.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/hd-coverage.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/hd-coverage.test.ts:
+(pass) HD edge views share buffers, preserve item ranges, palette/light and bounds, and reuse allocations [2.48ms]
+(pass) faded HD sprites use individually sorted full coverage; indexed batches gain no edge pass [0.48ms]
+(pass) bridge coverage blends before the deck band, including a fully faded body [0.56ms]
+
+ 3 pass
+ 0 fail
+ 43 expect() calls
+Ran 3 tests across 1 file. [33.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/hd-match-binding.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/hd-match-binding.test.ts:
+(pass) match override binds only the validated decoded image object, never another file or match [0.11ms]
+
+ 1 pass
+ 0 fail
+ 4 expect() calls
+Ran 1 test across 1 file. [41.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/hd-profile.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/hd-profile.test.ts:
+(pass) deferred startup validates page paths and sizes while strict audits still reject changed content [6.36ms]
+(pass) profile registers only content-identified declared files [2.74ms]
+(pass) only the 4x shipyard crane admits sixteen bounded pages [6.35ms]
+(pass) profile rejects missing, tampered, symlinked and undeclared paths [10.56ms]
+(pass) optional building routes withhold a broken complete density and retain valid lower density [3.29ms]
+
+ 5 pass
+ 0 fail
+ 22 expect() calls
+Ran 5 tests across 1 file. [62.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/hd-sprite.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/hd-sprite.test.ts:
+[HD prepared cache fallback] cons.shp p0 warn: corrupt optional payload
+      at prepared (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/hd-sprite.test.ts:29:72)
+      at resolveHdSprite (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/src/engine/renderable/builder/resolveHdSprite.ts:161:43)
+      at <anonymous> (/Users/Aone/RA2remaster/ra2-hd-test-fixtures-20261020/scripts/m1/hd-sprite.test.ts:30:26)
+
+(pass) unavailable or invalid optional prepared pages retain the complete validated PNG family [5.36ms]
+(pass) a 4x-only member produces actual 2x textures after validation and rejects corrupt source art [2.87ms]
+(pass) logical geometry preserves noncentral splits, odd padding, align, flat and camera rotation [2.62ms]
+(pass) selects complete 4x, downshifts to complete 2x, and honors disabled [0.73ms]
+(pass) missing or invalid 4x files discard candidate and downshift once [0.88ms]
+(pass) bad source identity, theater, metadata, color and schema fall back before reading pages [0.27ms]
+(pass) incomplete animations, duplicate frames, overlapping gutters and unsafe names reject whole member [0.30ms]
+(pass) actual GPU size limit downshifts or falls back; malformed decoded masks and sizes reject [0.66ms]
+(pass) HD batch material clones share immutable maps and keep live uniforms [0.58ms]
+(pass) failed GPU upload disposes candidate pages before 2x retry [0.65ms]
+(pass) opaque padding or remap coverage outside alpha rejects the member [0.29ms]
+
+ 11 pass
+ 0 fail
+ 471 expect() calls
+Ran 11 tests across 1 file. [47.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/hd-startup.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/hd-startup.test.ts:
+(pass) late files recover before publishing routes, retaining the accepted Original exception [0.33ms]
+(pass) a permanently missing packaged family stops startup after a bounded retry [0.10ms]
+(pass) optional profiles retain missing-family fallback after retry exhaustion [0.06ms]
+(pass) validation failures and deliberate Original exceptions are never retried [0.05ms]
+
+ 4 pass
+ 0 fail
+ 13 expect() calls
+Ran 4 tests across 1 file. [34.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/hd-tile-pool.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/hd-tile-pool.test.ts:
+(pass) lossless paired tile pooling reconstructs all bytes, partial boundary tiles and alpha-zero RGB [3.16ms]
+(pass) pooled atlas preserves geometry and UVs; filtering and cloned edge materials share one lookup [2.47ms]
+(pass) pooling declines non-saving or hardware-incompatible pages [0.31ms]
+(pass) distinct tiles with the same hash retain separate lossless storage [0.28ms]
+
+ 4 pass
+ 0 fail
+ 20 expect() calls
+Ran 4 tests across 1 file. [36.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/helicopter-belly/bounds.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/helicopter-belly/bounds.test.ts:
+(pass) SHAD metadata exposes every registered image corner without changing accepted artwork or pivots [7.04ms]
+(pass) the desktop resolves both helicopter families with complete body coverage [3573.51ms]
+
+ 2 pass
+ 0 fail
+ 208 expect() calls
+Ran 2 tests across 1 file. [3.62s]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/helicopter-mount/geometry.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/helicopter-mount/geometry.test.ts:
+(pass) fuselage depth stays inside physical height without moving pixels or cropping the belly [3.13ms]
+(pass) bearing stays fixed to the airframe while its rotor spins and follows native attitude [2.19ms]
+(pass) accepted Soviet family retains pinned body, deployment, tail rotor and atlas records [2.09ms]
+
+ 3 pass
+ 0 fail
+ 668 expect() calls
+Ran 3 tests across 1 file. [46.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/helicopter-rear-mount/registration.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/helicopter-rear-mount/registration.test.ts:
+(pass) rear mount follows body attitude and cannot orbit with the spinning blade [1.93ms]
+(pass) rear mount stays at one physical height through all body bearings [0.27ms]
+
+ 2 pass
+ 0 fail
+ 202 expect() calls
+Ran 2 tests across 1 file. [43.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/helicopter-rotors/registration.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/helicopter-rotors/registration.test.ts:
+(pass) painted tandem hubs stay on native axes through yaw, spin, pitch and roll at both densities [6.24ms]
+
+ 1 pass
+ 0 fail
+ 7296 expect() calls
+Ran 1 test across 1 file. [45.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/lunar-infantry/contracts.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/lunar-infantry/contracts.test.ts:
+(pass) LUNR preserves all native slots and both densities with owner paint and neutral armor [586.42ms]
+(pass) LUNR desktop registration rejects an incomplete family without leaking routes [45.16ms]
+
+ 2 pass
+ 0 fail
+ 2099240 expect() calls
+Ran 2 tests across 1 file. [838.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/menu-lifetime.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/menu-lifetime.test.ts:
+(pass) leaving the game menu releases its owned mask geometry and material [0.53ms]
+
+ 1 pass
+ 0 fail
+ 2 expect() calls
+Ran 1 test across 1 file. [62.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/napowr-family.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/napowr-family.test.ts:
+(pass) NAPOWR staged family identity rejects snow, urban reuse and incomplete sources [82.88ms]
+
+ 1 pass
+ 0 fail
+ 11 expect() calls
+Ran 1 test across 1 file. [128.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/napowr-pack.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/napowr-pack.test.ts:
+(pass) actual NAPOWR pages validate all 67 frames, RG8 values, native offsets and release [920.98ms]
+(pass) complete family fallback handles corrupt, missing, incomplete, size and allocation failures [2673.76ms]
+(pass) legacy graphics preferences migrate all HD families to enabled [0.26ms]
+(pass) NAPOWR respects an explicit unit reserve before uploading any rejected density [752.29ms]
+
+ 4 pass
+ 0 fail
+ 273 expect() calls
+Ran 4 tests across 1 file. [4.39s]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/native-geometry-preparation.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/native-geometry-preparation.test.ts:
+(pass) worker meshing preserves native DISK and multipart tank geometry exactly [289.97ms]
+(pass) owned worker returns geometry and cancels outstanding work on disposal [0.46ms]
+
+ 2 pass
+ 0 fail
+ 26 expect() calls
+Ran 2 tests across 1 file. [324.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/pause-and-shroud.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/pause-and-shroud.test.ts:
+(pass) shroud diamond partitions the original rectangle without changing its center or update stride [1.38ms]
+(pass) five solo speed choices map to the new rates, rejecting invalid selections [0.11ms]
+
+ 2 pass
+ 0 fail
+ 19 expect() calls
+Ran 2 tests across 1 file. [29.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/placement-preview.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/placement-preview.test.ts:
+(pass) placement footprint uses native tile corners and ramp heights with no textured grid [0.61ms]
+
+ 1 pass
+ 0 fail
+ 151 expect() calls
+Ran 1 test across 1 file. [30.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/power-plant-hd.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/power-plant-hd.test.ts:
+(pass) building selects one complete density; missing construction 4x downshifts all members [6.46ms]
+(pass) missing damaged frame, invalid source, missing page and unsupported theater reject complete family [1.12ms]
+(pass) native aggregation preserves offsets, retained tail data and original shadows alongside Conscript [0.94ms]
+
+ 3 pass
+ 0 fail
+ 119 expect() calls
+Ran 3 tests across 1 file. [45.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/presentation.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/presentation.test.ts:
+(pass) reference presentation scales uniformly and preserves vertical world span after HUD [0.42ms]
+(pass) native output follows measured backing density once and admits both Retina sizes [0.21ms]
+(pass) invalid settings fall back; GPU side and allocation caps remain explicit [0.06ms]
+
+ 3 pass
+ 0 fail
+ 70 expect() calls
+Ran 3 tests across 1 file. [29.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/range-preview.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/range-preview.test.ts:
+(pass) range band has logical width and contrasting borders, independent of output density [0.98ms]
+(pass) nuke preview resolves the detonating payload rather than the zero-spread launch warhead [0.10ms]
+(pass) Iron Curtain keeps the native aim center with concentric rings and no tile fill [0.79ms]
+(pass) changing a range at the same tile retains its world position and frees the old band [1.15ms]
+(pass) successful targeting and cancellation both remove the preview, without changing the command tile [0.20ms]
+(pass) HD target cursors cover all native animation frames and leave adjacent cursors original [1.53ms]
+
+ 6 pass
+ 0 fail
+ 76 expect() calls
+Ran 6 tests across 1 file. [32.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/render-resolution.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/render-resolution.test.ts:
+(pass) render targets reach 4K without exceeding aspect, hardware or output limits [0.26ms]
+(pass) graphics settings preserve old viewport preferences and persist sampling separately [0.23ms]
+(pass) 4K buffer and CSS scaling preserve click coordinates and all scroll edges [0.31ms]
+
+ 3 pass
+ 0 fail
+ 19 expect() calls
+Ran 3 tests across 1 file. [30.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/rhino-eight.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/rhino-eight.test.ts:
+(pass) deterministic bytes validate SHA-256 and reject changed content and identity [0.46ms]
+(pass) heading eligibility is circular, quantized and fail-closed with original state exclusions [8.54ms]
+(pass) two independently selected components reuse geometry, projection and exact native transform objects [8.25ms]
+(pass) fallback never leaves a partial vehicle, including owner and tilt [2.85ms]
+(pass) shared sixteen-part lifetime survives independent entity disposal and restores exact hooks [4.79ms]
+(pass) octant boundaries have a maximum 22.5 degree visual error without changing native angles [3.63ms]
+(pass) native in-place turning velocity stays supported and untouched [1.75ms]
+(pass) presentation follows the rendered interpolated body angle, not only the last game tick [1.92ms]
+
+ 8 pass
+ 0 fail
+ 16355 expect() calls
+Ran 8 tests across 1 file. [60.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/rhino-game.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/rhino-game.test.ts:
+(pass) Rhino follows default-on global HD preference and persists explicit off [0.23ms]
+(pass) native Rhino render states are supported without mutating gameplay [0.12ms]
+(pass) team shading preserves reference red and shares only per-vehicle dynamic uniforms [0.58ms]
+(pass) complete local family matches accepted eight-heading base bytes and pinned identity [218.61ms]
+
+ 4 pass
+ 0 fail
+ 79 expect() calls
+Ran 4 tests across 1 file. [253.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/rhino-geometry.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/rhino-geometry.test.ts:
+(pass) synthetic complete geometry stays inside native bounds with valid normals and discrete palette data [19.26ms]
+(pass) incomplete, tampered and wrong-source families reject before activation [50.25ms]
+(pass) oversized bounds, invalid normals, palette interpolation and broken indices reject [50.88ms]
+
+ 3 pass
+ 0 fail
+ 29 expect() calls
+Ran 3 tests across 1 file. [152.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/rhino-parts.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/rhino-parts.test.ts:
+(pass) deterministic bytes validate SHA-256 and reject changed content and identity [0.51ms]
+(pass) heading eligibility is circular, exact and fail-closed with original state exclusions [4.77ms]
+(pass) two independently selected components reuse geometry, projection and exact native transform objects [2.28ms]
+(pass) fallback never leaves a partial vehicle, including owner and tilt [1.46ms]
+(pass) shared four-part lifetime survives independent entity disposal and restores exact hooks [1.65ms]
+
+ 5 pass
+ 0 fail
+ 250 expect() calls
+Ran 5 tests across 1 file. [39.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/rhino-shadow.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/rhino-shadow.test.ts:
+(pass) Rhino shadow coverage is private, reversible and does not mutate native caster settings [0.74ms]
+
+ 1 pass
+ 0 fail
+ 21 expect() calls
+Ran 1 test across 1 file. [27.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/rhino-sprite.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/rhino-sprite.test.ts:
+(pass) deterministic bytes validate SHA-256 and reject changed content and identity [0.50ms]
+(pass) only the complete primary pose/state is eligible, including circular headings [0.10ms]
+(pass) registered world geometry projects to native 64x48 footprint and anchor at 900 reference [3.52ms]
+(pass) whole-family fallback, exact material restore, shared image lifetime and buffer reuse [1.68ms]
+(pass) entity disposal releases its proof and restores callbacks without disposing another instance [1.15ms]
+
+ 5 pass
+ 0 fail
+ 37 expect() calls
+Ran 5 tests across 1 file. [36.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/rhino-states.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/rhino-states.test.ts:
+(pass) flat artwork is exactly unchanged across all intermediate body headings [4.29ms]
+(pass) coverage blends within the native bridge band without disabling depth or losing alpha [0.21ms]
+(pass) residual pose matches native pitched, rolled and pivot-translated geometry for independent turret headings [0.32ms]
+(pass) native cloak visibility accepts normal Player and boxed player references [0.97ms]
+
+ 4 pass
+ 0 fail
+ 392 expect() calls
+Ran 4 tests across 1 file. [30.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/rhino-surface-transfer.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/rhino-surface-transfer.test.ts:
+(pass) source-derived surface constraints > convex occupied fixture stays within native bounds and faces outward [8.64ms]
+(pass) source-derived surface constraints > owner and dark regions remain discrete palette entries across triangle boundaries [6.45ms]
+(pass) source-derived surface constraints > native coordinate offsets and axis scales do not move or rescale the logical source [4.55ms]
+
+ 3 pass
+ 0 fail
+ 990 expect() calls
+Ran 3 tests across 1 file. [47.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/shadow-aa/shadow.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/shadow-aa/shadow.test.ts:
+(pass) shadow smoothing preserves native geometry/UVs and isolates frame/cache identity from the body [2.40ms]
+(pass) Original embedded shadows keep one draw, nearest body sampling and shared index textures [1.69ms]
+(pass) merged shadow animation keeps frame clamps and per-instance opacity without another draw pass [0.46ms]
+
+ 3 pass
+ 0 fail
+ 96 expect() calls
+Ran 3 tests across 1 file. [33.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/soviet-batch-pack.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/soviet-batch-pack.test.ts:
+(pass) all actual Soviet pages bind to retail sources, preserve accepted density and fit the measured combined budget [10957.45ms]
+
+ 1 pass
+ 0 fail
+ 616 expect() calls
+Ran 1 test across 1 file. [11.02s]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/soviet-batch.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/soviet-batch.test.ts:
+(pass) lossless family upload waits for complete validation and measured budget; rejected families allocate no GPU textures [40.31ms]
+(pass) NAHAND: exact identities, independent complete-density fallback and native layer offsets [1.23ms]
+(pass) NAHAND: budget preflight allocates no rejected density; corrupt pages release the whole family [0.67ms]
+(pass) NAREFN: exact identities, independent complete-density fallback and native layer offsets [1.60ms]
+(pass) NAREFN: budget preflight allocates no rejected density; corrupt pages release the whole family [1.67ms]
+(pass) NAWEAP: exact identities, independent complete-density fallback and native layer offsets [0.74ms]
+(pass) NAWEAP: budget preflight allocates no rejected density; corrupt pages release the whole family [0.90ms]
+(pass) NACNST: exact identities, independent complete-density fallback and native layer offsets [1.13ms]
+(pass) NACNST: budget preflight allocates no rejected density; corrupt pages release the whole family [1.38ms]
+(pass) NARADR: exact identities, independent complete-density fallback and native layer offsets [1.29ms]
+(pass) NARADR: budget preflight allocates no rejected density; corrupt pages release the whole family [1.65ms]
+(pass) NADEPT: exact identities, independent complete-density fallback and native layer offsets [1.55ms]
+(pass) NADEPT: budget preflight allocates no rejected density; corrupt pages release the whole family [2.17ms]
+(pass) NAYARD: exact identities, independent complete-density fallback and native layer offsets [2.61ms]
+(pass) NAYARD: budget preflight allocates no rejected density; corrupt pages release the whole family [3.28ms]
+(pass) NATECH: exact identities, independent complete-density fallback and native layer offsets [0.26ms]
+(pass) NATECH: budget preflight allocates no rejected density; corrupt pages release the whole family [0.32ms]
+(pass) NANRCT: exact identities, independent complete-density fallback and native layer offsets [0.46ms]
+(pass) NANRCT: budget preflight allocates no rejected density; corrupt pages release the whole family [0.60ms]
+(pass) NACLON: exact identities, independent complete-density fallback and native layer offsets [0.45ms]
+(pass) NACLON: budget preflight allocates no rejected density; corrupt pages release the whole family [0.60ms]
+(pass) NAPSIS: exact identities, independent complete-density fallback and native layer offsets [1.01ms]
+(pass) NAPSIS: budget preflight allocates no rejected density; corrupt pages release the whole family [1.38ms]
+(pass) NALASR: exact identities, independent complete-density fallback and native layer offsets [0.19ms]
+(pass) NALASR: budget preflight allocates no rejected density; corrupt pages release the whole family [0.21ms]
+(pass) NAFLAK: exact identities, independent complete-density fallback and native layer offsets [0.17ms]
+(pass) NAFLAK: budget preflight allocates no rejected density; corrupt pages release the whole family [0.19ms]
+(pass) TESLA: exact identities, independent complete-density fallback and native layer offsets [0.61ms]
+(pass) TESLA: budget preflight allocates no rejected density; corrupt pages release the whole family [0.82ms]
+(pass) NAIRON: exact identities, independent complete-density fallback and native layer offsets [1.09ms]
+(pass) NAIRON: budget preflight allocates no rejected density; corrupt pages release the whole family [1.58ms]
+(pass) NAMISL: exact identities, independent complete-density fallback and native layer offsets [0.93ms]
+(pass) NAMISL: budget preflight allocates no rejected density; corrupt pages release the whole family [1.31ms]
+(pass) NAWALL: exact identities, independent complete-density fallback and native layer offsets [0.26ms]
+(pass) NAWALL: budget preflight allocates no rejected density; corrupt pages release the whole family [0.36ms]
+(pass) NAINDP: exact identities, independent complete-density fallback and native layer offsets [0.47ms]
+(pass) NAINDP: budget preflight allocates no rejected density; corrupt pages release the whole family [0.46ms]
+(pass) NABNKR: exact identities, independent complete-density fallback and native layer offsets [0.18ms]
+(pass) NABNKR: budget preflight allocates no rejected density; corrupt pages release the whole family [0.21ms]
+(pass) only declared identical complete rectangles can share atlas storage [0.71ms]
+(pass) one default-on HD preference migrates legacy choices and persists explicit off [0.37ms]
+
+ 41 pass
+ 0 fail
+ 850 expect() calls
+Ran 41 tests across 1 file. [135.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/soviet-units-pack.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/soviet-units-pack.test.ts:
+(pass) SQD keeps both native members atomic, preserves partial collar remap and respects the combined cap [968.14ms]
+(pass) SQDG binding requires the parasite identity, animation and member, and returns its lifetime lease [0.18ms]
+(pass) pooled unit families reconstruct every color/remap byte and reject over-budget uploads atomically [5913.53ms]
+(pass) DRON complete native slots, owner-color coverage, byte budget and disposal [123.06ms]
+(pass) incomplete member and failed uploads choose complete lower density or Original [92.71ms]
+(pass) rules identity and image jointly bind unit art; another identity stays Original [88.55ms]
+(pass) desktop registers only pinned complete unit resources [2427.46ms]
+(pass) Soviet engineer completes every slot, protects gold from remap, and isolates the shared Allied source [380.92ms]
+(pass) unit HD follows the accepted global preference and preserves explicit off saves [0.39ms]
+(pass) unit and limbo representation commit together within budget; cancellation and member failure dispose everything [326.84ms]
+(pass) DOG body and 32 leap bearings commit together, preserve native shadows, and isolate the Allied dog [294.86ms]
+(pass) FLAKT preserves 301 native slots and embedded shadows without owner-coloring muzzle flames [389.41ms]
+(pass) SHK preserves 301 native slots, shadows and non-remapped gold coils and hair [343.17ms]
+(pass) IVAN preserves 267 native slots, shadows and non-remapped skin and tan clothing [271.94ms]
+(pass) YURI preserves 316 native slots, shadows and non-remapped skin [258.90ms]
+(pass) TERROR preserves 188 native slots, shadows and non-remapped skin [206.63ms]
+(pass) DESO preserves 322 native slots, shadows and non-remapped green canisters/effects [437.12ms]
+(pass) CIVAN preserves 267 native slots, shadows and non-remapped skin and tan clothing [281.46ms]
+(pass) YURIPR preserves 315 native slots, shadows and non-remapped skin and psychic effects [313.65ms]
+(pass) snow and temperate unit families request HD and fail closed on missing resources [3.95ms]
+(pass) user-disabled SQD body and attachment stay Original without fetch or allocation [0.35ms]
+
+ 21 pass
+ 0 fail
+ 7711947 expect() calls
+Ran 21 tests across 1 file. [13.19s]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/terrain-fallback.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/terrain-fallback.test.ts:
+(pass) blocked fallback candidates cannot escape the current terrain graph [0.96ms]
+(pass) an unreachable destination fails without inventing passable terrain [0.32ms]
+
+ 2 pass
+ 0 fail
+ 4 expect() calls
+Ran 2 tests across 1 file. [42.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/unified-density/options.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/unified-density/options.test.ts:
+(pass) old saves default to 4x while explicit 2x survives reload independently of HD and output size [0.43ms]
+(pass) 2x reduction excludes transparent matte colors and keeps palette data valid [0.27ms]
+(pass) 2x colors average in linear light and zero alpha cannot retain remap coverage [0.04ms]
+
+ 3 pass
+ 0 fail
+ 18 expect() calls
+Ran 3 tests across 1 file. [30.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/unified-desktop.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/unified-desktop.test.ts:
+(pass) saved artwork choices survive output changes and older graphics preferences [0.52ms]
+(pass) HD origin boundary rejects remote URLs, opaque lookalikes and credentials [0.05ms]
+(pass) absent optional data exposes availability without exposing arbitrary files [13.04ms]
+
+ 3 pass
+ 0 fail
+ 228 expect() calls
+Ran 3 tests across 1 file. [49.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/unit-hd-demand.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/unit-hd-demand.test.ts:
+(pass) prewarmed allocations transfer to real bindings without a second load or permanent warm pin [1.01ms]
+(pass) demand allocations are shared, capacity fallback preserves live leases, and idle families release before replacement [0.17ms]
+(pass) disposing during a pending allocation releases its completion without publishing to dead renderables [0.10ms]
+(pass) failed families do not retry per actor, unknown identities do not load, and source objects must match [0.29ms]
+(pass) publication failure restores Original and releases the complete allocation [0.08ms]
+(pass) visible previews yield their budget to queued production without evicting live actors [0.15ms]
+(pass) a visible preview transfers synchronously to first render without reloading [0.06ms]
+(pass) focused or queued demand overtakes pending visible previews [0.10ms]
+(pass) urgent demand cancels an in-flight preview at a loader boundary without permanently failing it [0.16ms]
+
+ 9 pass
+ 0 fail
+ 48 expect() calls
+Ran 9 tests across 1 file. [29.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/unit-hd-mixed.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/unit-hd-mixed.test.ts:
+(pass) mixed load shares one allocation and publishes body and transition only after the second resource completes [2.19ms]
+(pass) missing or corrupt child disposes the loaded body without exposing a partial family [0.16ms]
+(pass) capacity rejection releases both components and reports retryable whole-family fallback [0.09ms]
+(pass) cancellation after child completion releases both allocations [0.07ms]
+(pass) SHP fallback never requests a VXL-only substitute [0.05ms]
+
+ 5 pass
+ 0 fail
+ 17 expect() calls
+Ran 5 tests across 1 file. [29.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/unit-vxl-pipeline.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/unit-vxl-pipeline.test.ts:
+(pass) checked VXL reads overlap a blocked decoder with one page of lookahead and cancel without uploads [94.50ms]
+
+ 1 pass
+ 0 fail
+ 7 expect() calls
+Ran 1 test across 1 file. [143.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/unit-vxl-shaders.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/unit-vxl-shaders.test.ts:
+(pass) accepted VXL families compile native geometry and all coverage programs without replacing atlas pages [36.03ms]
+(pass) failed compilation releases detached coverage programs while preserving family textures [2.22ms]
+
+ 2 pass
+ 0 fail
+ 1874 expect() calls
+Ran 2 tests across 1 file. [77.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/unit-vxl.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/unit-vxl.test.ts:
+(pass) civilian truck reuses only its exact accepted source family [0.96ms]
+(pass) component registration preserves native pitch, roll, recoil and pivot translation independently of authored yaw [1.01ms]
+(pass) VXL and SHP leases share one cap and retain each other while a family waits for capacity [1.01ms]
+(pass) VXL desktop and runtime pin the same complete eight-bearing DTRUCK family [2373.30ms]
+(pass) component crops share depth while retaining each native pivot and image registration [5.34ms]
+(pass) every VXL family pins all component and child resources and eight registered bearings [39.74ms]
+(pass) VXL loading fails atomically on missing child, changed source, bad bytes, capacity or cancellation [269.34ms]
+(pass) visible naval hull surfaces preserve registration above water and still descend with native sinking [6.92ms]
+
+ 8 pass
+ 0 fail
+ 7553 expect() calls
+Ran 8 tests across 1 file. [2.74s]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/visual-corrections.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/visual-corrections.test.ts:
+(pass) shroud extension touches neutral exterior only, uses the original neighborhood, and cannot cross frame boundaries [0.14ms]
+(pass) shroud UV inset leaves world geometry exactly unchanged [0.98ms]
+(pass) normal/damaged animation freezes structure, alpha and remap while preserving local light motion at both densities [30.82ms]
+(pass) inconsistent phase geometry rejects before committing derived pixels [3.40ms]
+
+ 4 pass
+ 0 fail
+ 26 expect() calls
+Ran 4 tests across 1 file. [69.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/windows-cursor.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/windows-cursor.test.ts:
+(pass) Windows cursor shares one hidden helper and acknowledges numeric physical coordinates [2.65ms]
+(pass) closing or losing the helper settles pending cursor requests [0.32ms]
+(pass) Windows handoff converts DIP to physical pixels and cancels stale or unfocused requests [0.38ms]
+
+ 3 pass
+ 0 fail
+ 23 expect() calls
+Ran 3 tests across 1 file. [35.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yr-unit-animation.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yr-unit-animation.test.ts:
+(pass) deployment event binds owner, complete HD family and native shadow before reverse animation creation [0.72ms]
+(pass) authored rotor occupies the native joint plane and keeps its reference projection [2.79ms]
+(pass) retail helicopter rotor joints are supplied only when explicit rotor metadata is absent [4.89ms]
+
+ 3 pass
+ 0 fail
+ 87 expect() calls
+Ran 3 tests across 1 file. [50.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yr-unit-registration.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yr-unit-registration.test.ts:
+(pass) SCHP desktop registration is atomic: none [27.49ms]
+(pass) SCHP desktop registration is atomic: voxel-page [16.41ms]
+(pass) SCHP desktop registration is atomic: animation-pages [12.60ms]
+(pass) BORIS desktop registration is atomic: none [22.81ms]
+(pass) BORIS desktop registration is atomic: voxel-page [38.26ms]
+(pass) BORIS desktop registration is atomic: animation-pages [18.35ms]
+
+ 6 pass
+ 0 fail
+ 22 expect() calls
+Ran 6 tests across 1 file. [171.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-buildings/bunker-entry.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-buildings/bunker-entry.test.ts:
+(pass) bunker occupant reaches the native dock offset before entering, rather than stopping at the first occupied tile [0.29ms]
+(pass) occupancy waits for a native turn that aligns the hull with the bunker wheel strips [0.16ms]
+(pass) a cancelled or rejected approach clears the foundation rather than leaving a second tank inside [0.10ms]
+(pass) failed or cancelled bunker approach does not board or disable a unit [0.04ms]
+
+ 4 pass
+ 0 fail
+ 38 expect() calls
+Ran 4 tests across 1 file. [34.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-buildings/contracts.test.ts"] EDITION yr
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-buildings/contracts.test.ts:
+(pass) new Yuri selections are edition scoped and use the existing shared demand queue [0.36ms]
+(pass) actual new immutable pages resolve at both densities with exact native slots [37709.70ms]
+(pass) a broken required member/source/page or unavailable shared budget publishes no new family [109.99ms]
+
+ 3 pass
+ 0 fail
+ 1182 expect() calls
+Ran 3 tests across 1 file. [37.88s]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-buildings/contracts.test.ts"] EDITION ra2
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-buildings/contracts.test.ts:
+(pass) new Yuri selections are edition scoped and use the existing shared demand queue [0.33ms]
+(pass) actual new immutable pages resolve at both densities with exact native slots [744.62ms]
+(pass) a broken required member/source/page or unavailable shared budget publishes no new family [0.23ms]
+
+ 3 pass
+ 0 fail
+ 777 expect() calls
+Ran 3 tests across 1 file. [822.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-buildings/demand-theaters.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-buildings/demand-theaters.test.ts:
+(pass) existing Soviet families remain demand-loadable on all dry theaters under a Yuri player [1.01ms]
+(pass) disabled and already resident families acquire no additional demand lease [0.21ms]
+
+ 2 pass
+ 0 fail
+ 67 expect() calls
+Ran 2 tests across 1 file. [46.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-buildings/feedback-rendering.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-buildings/feedback-rendering.test.ts:
+(pass) rear wall recovery preserves projection and remains above its native dock floor [0.91ms]
+(pass) Gatling registration retains a consistent construction pose at both densities [0.11ms]
+(pass) ground shadows blend between ground and actor color without contributing depth [0.08ms]
+(pass) native-projected Gatling exports preserve yaw placement without a pitch-disk correction [0.02ms]
+
+ 4 pass
+ 0 fail
+ 63 expect() calls
+Ran 4 tests across 1 file. [29.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-buildings/mind-control-selection.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-buildings/mind-control-selection.test.ts:
+(pass) selected controlled targets expose only their link, without duplicate effects or hostile intel [0.56ms]
+
+ 1 pass
+ 0 fail
+ 10 expect() calls
+Ran 1 test across 1 file. [29.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-buildings/recycling.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-buildings/recycling.test.ts:
+(pass) native recycling keeps the refund first and identifies the receiving building [0.23ms]
+(pass) recycling uses the complete native normal/damaged sequence without the idle overlay [0.79ms]
+
+ 2 pass
+ 0 fail
+ 21 expect() calls
+Ran 2 tests across 1 file. [67.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-buildings/remap-pool.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-buildings/remap-pool.test.ts:
+(pass) independent remap pool reconstructs every categorical byte and clones its shader binding [10.30ms]
+
+ 1 pass
+ 0 fail
+ 10248 expect() calls
+Ran 1 test across 1 file. [40.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-units/animation-frame.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-units/animation-frame.test.ts:
+(pass) retail gas endpoint cannot sample beyond its resolved SHP or alter animation timing [0.13ms]
+
+ 1 pass
+ 0 fail
+ 7 expect() calls
+Ran 1 test across 1 file. [42.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-units/feedback-effects.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-units/feedback-effects.test.ts:
+THREE.WARNING: Multiple instances of Three.js being imported.
+(pass) disc circumference radius is invariant under native turret bearings rather than the rotated box diagonal [2.53ms]
+(pass) retail normal and elite disc weapons admit their ring flag and explicit native colors [455.40ms]
+(pass) AreaFire centers on the live caster without mutating an ordinary enemy target [0.12ms]
+(pass) native TurretSpins completes headings independently of target acquisition; ordinary turrets retain aim [0.11ms]
+(pass) disc ring precedes the outgoing ray and expires as one disposable effect [1.90ms]
+(pass) magnetic ribbon follows elevated victim endpoints and releases at beam interruption [1.10ms]
+(pass) magnetic muzzle follows turret facing, body mount and full native FLH [0.06ms]
+(pass) magnetic muzzle uses the displayed paired-tip point at both independent HD densities [0.40ms]
+(pass) magnetic contact stays on the nearest bottom footprint edge through lift and rotation [0.39ms]
+(pass) magnetic HD contact excludes transparent padding and follows the visible lower silhouette through lift [0.24ms]
+(pass) control arcs obey native selection and intel visibility for vehicle and infantry controllers [0.59ms]
+(pass) an inactive HD controller retains its Original roof while the complete family loads [0.09ms]
+(pass) control source follows the rotated elevated vehicle roof and the camera-facing infantry crown [0.43ms]
+(pass) control line touches both supplied attachment points without a hidden vertical bias [0.13ms]
+(pass) the sprite crown excludes transparent padding and decodes lossless pooled alpha [0.25ms]
+(pass) magnetic field retains reference width and straight endpoints while animating without replacing geometry [0.30ms]
+
+ 16 pass
+ 0 fail
+ 106 expect() calls
+Ran 16 tests across 1 file. [559.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-units/feedback-r10.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-units/feedback-r10.test.ts:
+(pass) Chaos Drone default scanner deploy selects usable gas while explicit and infantry weapons retain selection [0.29ms]
+(pass) DISK idle spin separates the fast retail turn ROT from its full revolution cadence [0.10ms]
+(pass) gattling face spin preserves paired base and owner sampling and only selects the native gun sections [0.58ms]
+(pass) gattling muzzle uses the live selected paired gun surface and retains the Original fallback [0.69ms]
+(pass) barrel coverage initializes its deferred edge draw before installing the shared spin uniforms [1.47ms]
+
+ 5 pass
+ 0 fail
+ 57 expect() calls
+Ran 5 tests across 1 file. [45.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-units/feedback-r11.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-units/feedback-r11.test.ts:
+(pass) gas interpolation cannot advance native animation frames or lifetime [0.45ms]
+(pass) disc motion crosses zero in the native direction and stops with the simulation [0.08ms]
+(pass) canonical disc silhouette retains translation and pitch at every native yaw [0.67ms]
+(pass) disc depth, opaque, edge and cloak passes keep fixed alpha and paired owner sampling [3.11ms]
+(pass) gas instances share native atlas and palette, interpolate trimmed frames and release only owned geometry/material [1.38ms]
+
+ 5 pass
+ 0 fail
+ 587 expect() calls
+Ran 5 tests across 1 file. [40.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-units/feedback-r12.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-units/feedback-r12.test.ts:
+(pass) YURI one-shot deployment waits for mind-control cooldown before starting auto-undeploy [0.50ms]
+(pass) YURIPR one-shot deployment waits for mind-control cooldown before starting auto-undeploy [0.09ms]
+(pass) pending one-shot deployment can still be cancelled explicitly and redeployed [0.08ms]
+(pass) empty ammunition defers the one-shot countdown until the weapon can fire [0.04ms]
+(pass) continuous deployment and deployment without an AreaFire weapon retain their timer [0.06ms]
+
+ 5 pass
+ 0 fail
+ 24 expect() calls
+Ran 5 tests across 1 file. [490.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-units/registration.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-units/registration.test.ts:
+(pass) miner registration retains manifests and selects one complete density for body and workers [57.34ms]
+
+ 1 pass
+ 0 fail
+ 15 expect() calls
+Ran 1 test across 1 file. [94.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m1/yuri-units/runtime-family.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/yuri-units/runtime-family.test.ts:
+(pass) density mismatch releases both allocations then reloads the entire miner family at 2x [0.56ms]
+(pass) missing miner body at both densities releases worker pages and leaves no partial binding [0.10ms]
+(pass) cancellation releases the private family and does not start a fallback load [0.09ms]
+(pass) edition filtering preserves the guarded RA2 hero before the YR same-name contract is merged [0.15ms]
+(pass) native slave lease shares the miner demand family while rejecting a different image object [0.75ms]
+
+ 5 pass
+ 0 fail
+ 30 expect() calls
+Ran 5 tests across 1 file. [40.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m2/environment-batching.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m2/environment-batching.test.ts:
+(pass) bridge depth policy survives HD page changes and Original fallback without leaking into actors [2.33ms]
+(pass) filtered native shadow batches clamp each frame and retain visibility and borrowed textures [0.83ms]
+(pass) water material opacity composes with native fade and clears on Original fallback [0.05ms]
+(pass) HD map batches preserve individual native geometry, pooled UVs, lighting and borrowed texture lifetime [1.29ms]
+(pass) native overlay state changes keep HD body-local frames and original aggregate shadow frames separate [0.21ms]
+
+ 5 pass
+ 0 fail
+ 89 expect() calls
+Ran 5 tests across 1 file. [44.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m2/environment.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m2/environment.test.ts:
+(pass) environment admission requires pinned native source, theater, canvas and body-slot closure [225.93ms]
+(pass) waterfall opacity is admitted only for pinned waterfall sources and preserves complete fallback [35.22ms]
+(pass) a complete environment family accounts retained CPU, uploads once and releases its shared pages [7.18ms]
+(pass) missing child, invalid child, insufficient budget and missing 4X leave the whole family Original [11.70ms]
+(pass) bridge and building aggregate views preserve explicit native frame order and borrow one page set [5.92ms]
+
+ 5 pass
+ 0 fail
+ 33 expect() calls
+Ran 5 tests across 1 file. [323.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m2/loading.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m2/loading.test.ts:
+(pass) real native closure publishes complete same-density shared terrain groups [660.75ms]
+(pass) corrupt atlas falls back for its whole dependency group and preserves valid peers [2273.78ms]
+(pass) edition source mismatch rejects the entire group before upload [487.75ms]
+(pass) zero remaining world capacity uses Original without allocating resident terrain [4.13ms]
+(pass) missing optional pack and Original preference retain the native path [0.12ms]
+
+ 5 pass
+ 0 fail
+ 15 expect() calls
+Ran 5 tests across 1 file. [3.69s]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m2/official-maps/demand.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m2/official-maps/demand.test.ts:
+(pass) map demand includes native explosion decals without loading unrelated tile animations [0.27ms]
+(pass) Yuri dog aliases borrow the accepted family only for the native member and edition [0.05ms]
+
+ 2 pass
+ 0 fail
+ 7 expect() calls
+Ran 2 tests across 1 file. [28.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m2/official-maps/foundation-loading.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m2/official-maps/foundation-loading.test.ts:
+(pass) both native Hell Hills buildings expose their retail footprint to game rendering [2.09ms]
+(pass) ordinary and zero-sized native foundations retain their declared dimensions [0.09ms]
+
+ 2 pass
+ 0 fail
+ 9 expect() calls
+Ran 2 tests across 1 file. [197.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m2/official-maps/generated-crate-demand.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m2/official-maps/generated-crate-demand.test.ts:
+(pass) ordinary generated crate dependencies > admits both native crate sources before their first spawn [0.22ms]
+(pass) ordinary generated crate dependencies > retains map demand without reserving disabled crate families [0.02ms]
+(pass) ordinary generated crate dependencies > ignores absent rule sources instead of inventing a crate identity [0.02ms]
+
+ 3 pass
+ 0 fail
+ 3 expect() calls
+Ran 3 tests across 1 file. [26.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m2/official-maps/terrain-loading.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m2/official-maps/terrain-loading.test.ts:
+(pass) new terrain closure loads only encountered groups at 2X [10.45ms]
+(pass) new terrain closure loads only encountered groups at 4X [8.47ms]
+(pass) corrupt new terrain atlas keeps the whole group native before publication [6.60ms]
+(pass) exhausted world capacity rejects the new closure without fetching its atlas [4.04ms]
+(pass) cancelled terrain loading publishes no group or retained allocation [8.05ms]
+
+ 5 pass
+ 0 fail
+ 34 expect() calls
+Ran 5 tests across 1 file. [314.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m2/official-maps/waterfall-admission.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m2/official-maps/waterfall-admission.test.ts:
+(pass) all eleven complete native waterfall manifests reach page validation at both densities [248.90ms]
+(pass) altered native identities, non-waterfall opacity and invalid opacity fail before page reads [1.02ms]
+
+ 2 pass
+ 0 fail
+ 133 expect() calls
+Ran 2 tests across 1 file. [289.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/m2/terrain.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/m2/terrain.test.ts:
+(pass) TMP terrain geometry and resource contract > 2X/4X sampling preserves every native world vertex and offsets [1.38ms]
+(pass) TMP terrain geometry and resource contract > rejects logical-size inflation, out-of-bounds sampling and native alpha holes [0.15ms]
+(pass) TMP terrain geometry and resource contract > cliff/ramp extra regions and native depth metadata survive identity decoding [81.77ms]
+(pass) TMP terrain geometry and resource contract > teardown releases all shared textures once and clears runtime bindings [0.15ms]
+
+ 4 pass
+ 0 fail
+ 19 expect() calls
+Ran 4 tests across 1 file. [122.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/offline-trainer/trainer.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/offline-trainer/trainer.test.ts:
+(pass) ra2 > master/context/session/actor gates fail closed; stale queue does not execute [0.44ms]
+(pass) ra2 > credits validation, pause queue, minimum, reset and completed actions [0.15ms]
+(pass) ra2 > power emits native changes, preserves blackout and removes only trainer supply [0.31ms]
+(pass) ra2 > healing/protection native health events, independent invulnerability, identity and owner cleanup [0.40ms]
+(pass) ra2 > all real special power types: ready event, power/active-effect restrictions, repeated recharge [0.33ms]
+(pass) ra2 > local timing caps do not mutate AI, rules, native lower times or already paid progress [0.08ms]
+(pass) yr > master/context/session/actor gates fail closed; stale queue does not execute [0.03ms]
+(pass) yr > credits validation, pause queue, minimum, reset and completed actions [0.03ms]
+(pass) yr > power emits native changes, preserves blackout and removes only trainer supply [0.04ms]
+(pass) yr > healing/protection native health events, independent invulnerability, identity and owner cleanup [0.07ms]
+(pass) yr > all real special power types: ready event, power/active-effect restrictions, repeated recharge [0.12ms]
+(pass) yr > local timing caps do not mutate AI, rules, native lower times or already paid progress [0.02ms]
+(pass) tech bypass preserves edition catalog, playable entries, spawn factories and options [0.26ms]
+(pass) native production still charges, pauses, refunds and ignores the global legacy flag [0.35ms]
+(pass) preferences validate version/types/ranges/duplicates and preserve separate edition storage [0.33ms]
+(pass) modified replay cannot serialize; ordinary replay format remains intact [0.35ms]
+(pass) bounded queue snapshots values and reports rejected stale targets without marking replay [0.14ms]
+(pass) OFF and absent trainer have identical deterministic native production and health outcomes [0.51ms]
+
+ 18 pass
+ 0 fail
+ 213 expect() calls
+Ran 18 tests across 1 file. [44.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/skirmish-loading/cache.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/skirmish-loading/cache.test.ts:
+(pass) cache deduplicates pending reads, retains a bounded LRU, and retries failures [0.69ms]
+(pass) clearing an in-flight cache prevents repopulation; oversized payloads remain unretained [0.21ms]
+(pass) cache reservation and completion share one memory cap [0.11ms]
+(pass) large prepared pages do not flush reusable smaller pages [0.06ms]
+(pass) prepared textures preserve colors, owner masks, filtering and independent match ownership [0.60ms]
+(pass) corrupt prepared payloads fail hash validation and never enter the reuse cache [0.43ms]
+(pass) serialized Yuri pages retain independent color/remap pools and both lookup textures [0.14ms]
+(pass) production preparation includes queued units, free units and MCV yards, with alias sharing and disposal [0.44ms]
+(pass) queue completion retains the warmed allocation until the actual renderer binds under eviction pressure [0.79ms]
+(pass) prepared lookahead shares checked payloads without allocating textures and rejects corruption [0.36ms]
+
+ 10 pass
+ 0 fail
+ 54 expect() calls
+Ran 10 tests across 1 file. [34.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/skirmish-loading/preparation.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/skirmish-loading/preparation.test.ts:
+(pass) worker pixel preparation retains exact 4X and 2X color, coverage, remap and allocation [3.89ms]
+(pass) worker requests transfer buffers, correlate out-of-order replies, and reject cancellation [0.71ms]
+(pass) texture uploads yield between slices and reject disposal before publication [0.27ms]
+
+ 3 pass
+ 0 fail
+ 18 expect() calls
+Ran 3 tests across 1 file. [30.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/skirmish-loading/registration.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/skirmish-loading/registration.test.ts:
+(pass) prepared registration uses an immutable pinned index and leaves PNG/UI bindings intact on failure [8.11ms]
+
+ 1 pass
+ 0 fail
+ 18 expect() calls
+Ran 1 test across 1 file. [39.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/cameo-geometry.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/ui/cameo-geometry.test.ts:
+(pass) 60px cameo in a 64px aggregate preserves geometry and UVs (60px trim) [1.75ms]
+(pass) 60px cameo in a 64px aggregate preserves geometry and UVs (56px trim) [0.23ms]
+
+ 2 pass
+ 0 fail
+ 18 expect() calls
+Ran 2 tests across 1 file. [29.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/command-bar.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/ui/command-bar.test.ts:
+(pass) Allied repeated rails use a seamless strip at retail registration and fall back cleanly [1.93ms]
+(pass) fractional command-bar span scales integral pixels without changing its vertical anchor [0.48ms]
+(pass) Allied command icons exclude their background rails in every native frame [1.19ms]
+
+ 3 pass
+ 0 fail
+ 32 expect() calls
+Ran 3 tests across 1 file. [31.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/menu.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+[HomeScreen] Entering home screen
+[HomeScreen] Leaving home screen
+[HomeScreen] Entering home screen
+[HomeScreen] Entering home screen
+
+scripts/ui/menu.test.ts:
+[Strings] String with name "GUI:MainMenu" not found"
+(pass) home routes preserve localized order, edition switching and inert placeholders [0.96ms]
+[Strings] String with name "GUI:MainMenu" not found"
+(pass) browser exit reports tab closure honestly; missing locale falls back to English [0.07ms]
+(pass) controller dispatch refuses disabled, collapsed and stale empty slots [0.05ms]
+(pass) UI manifests reject unsafe, oversized, duplicate and malformed asset groups [0.33ms]
+
+ 4 pass
+ 0 fail
+ 20 expect() calls
+Ran 4 tests across 1 file. [75.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/original-screens.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/ui/original-screens.test.ts:
+(pass) switching HUD sides removes nested import aliases that shadow the selected retail skin [0.57ms]
+(pass) a complete button atlas changes UVs without changing native geometry or decoding again [2.25ms]
+(pass) widescreen and MacBook-shaped viewports expand only the empty background corridor [0.07ms]
+(pass) video manifest rejects unsafe paths and altered aspect ratios [0.27ms]
+
+ 4 pass
+ 0 fail
+ 61 expect() calls
+Ran 4 tests across 1 file. [31.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/production-frame.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/ui/production-frame.test.ts:
+(pass) production frames hand off atomically; stale loads, failures, HD Off and teardown release leases [1.86ms]
+(pass) explicit factionless locale names are shared by labels and world/sidebar tooltips [0.36ms]
+
+ 2 pass
+ 0 fail
+ 36 expect() calls
+Ran 2 tests across 1 file. [31.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/shared-cameos/fallback.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/ui/shared-cameos/fallback.test.ts:
+(pass) missing veteran cameo retains its UI identity with the existing native base frame [0.08ms]
+
+ 1 pass
+ 0 fail
+ 4 expect() calls
+Ran 1 test across 1 file. [24.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/sidebar-page.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/ui/sidebar-page.test.ts:
+(pass) cold page publishes after all decoded assets; revisit is synchronous and leases are bounded [0.58ms]
+(pass) cancelled old decode cannot publish over newest page; HD Off releases retained pages [0.08ms]
+(pass) pending or hung optional decode has a bounded publication deadline and teardown releases it [31.50ms]
+(pass) old preparation leases are evicted before the next page reserves its texture budget [0.18ms]
+(pass) texture pressure evicts cached pages before the three-page count limit [0.26ms]
+(pass) a displayed old page releases its final leases before a cold replacement allocation [0.18ms]
+
+ 6 pass
+ 0 fail
+ 26 expect() calls
+Ran 6 tests across 1 file. [58.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/sidebar-publication.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/ui/sidebar-publication.test.ts:
+(pass) a model switch before the next UI frame rejects an old ready callback [0.26ms]
+(pass) hover requests the displayed identity and releases its preparation on exit [0.22ms]
+(pass) stationary hover follows a newly published page after asynchronous cameo preparation [0.14ms]
+(pass) hidden sidebar releases display and cached leases, rejects stale readiness and prepares the current page on return [0.10ms]
+
+ 4 pass
+ 0 fail
+ 12 expect() calls
+Ran 4 tests across 1 file. [35.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/ui-art.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/ui/ui-art.test.ts:
+(pass) page capacity counts shared images once and includes existing UI surface reservations [1.45ms]
+(pass) visible slots share one decode and release texture plus bitmap after the last lease [0.31ms]
+(pass) corrupt bytes retain Original without constructing a texture [0.12ms]
+(pass) cancelled screen decode cannot revive disposed art [20.74ms]
+(pass) normal and ranked IDs share a base decode until both leases end [0.24ms]
+(pass) rank overlays require matching full cameo canvases and cannot chain [0.35ms]
+(pass) DOM copies participate in the shared budget and release independently of a texture lease [0.17ms]
+(pass) a prepared canvas can acquire decoded pixels synchronously before its first paint [0.13ms]
+
+ 8 pass
+ 0 fail
+ 47 expect() calls
+Ran 8 tests across 1 file. [52.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/ui-profile.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/ui/ui-profile.test.ts:
+(pass) review selection requires review mode until promotion; corrupt manifest fails closed [4.61ms]
+
+ 1 pass
+ 0 fail
+ 6 expect() calls
+Ran 1 test across 1 file. [35.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/video-protocol.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/ui/video-protocol.test.ts:
+(pass) allowlisted menu video supports bounded byte ranges and rejects invalid requests [9.19ms]
+
+ 1 pass
+ 0 fail
+ 10 expect() calls
+Ran 1 test across 1 file. [41.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/ui/yuri-cameos/separate-ui-root.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/ui/yuri-cameos/separate-ui-root.test.ts:
+(pass) isolated UI root selects its own pack; a broken override cannot leak the native-root UI [29.06ms]
+
+ 1 pass
+ 0 fail
+ 8 expect() calls
+Ran 1 test across 1 file. [63.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/windows-hd/batch-lifetime.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/batch-lifetime.test.ts:
+(pass) batch replacement detaches immediately and retains one resource generation (1) [2.51ms]
+(pass) batch replacement detaches immediately and retains one resource generation (0) [0.71ms]
+(pass) shutdown releases both active and retired resources exactly once without another update [1.81ms]
+(pass) a disappearing source container still releases the previous retired generation [0.25ms]
+
+ 4 pass
+ 0 fail
+ 77 expect() calls
+Ran 4 tests across 1 file. [33.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/windows-hd/combat-variants.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/combat-variants.test.ts:
+(pass) four detached Windows variants borrow textures, preserve live art, and release once [2.91ms]
+(pass) cancellation and validation failure release pending variants; earlier owners remain scene-owned [2.96ms]
+
+ 2 pass
+ 0 fail
+ 28 expect() calls
+Ran 2 tests across 1 file. [37.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/windows-hd/diagnostic.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/diagnostic.test.ts:
+(pass) fixed experiment identity and one-variable controls reject malformed inputs [0.25ms]
+(pass) tail statistics retain raw values and count actual threshold exceedances [0.12ms]
+(pass) evidence ZIP round-trips binary data and refuses overwrite or traversal [81.27ms]
+(pass) export pins manifest identity and excludes profiles, credentials and unrelated files [76.26ms]
+(pass) full kit verification detects corruption and rejects paths leaving the kit [3.98ms]
+
+ 5 pass
+ 0 fail
+ 23 expect() calls
+Ran 5 tests across 1 file. [194.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/windows-hd/hidden-body.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/hidden-body.test.ts:
+(pass) hidden HD body leaves live sorted coverage and moving shared buffers across filtering toggles [1.97ms]
+(pass) preconfigured and changed shadow casters retain their body before rendering [0.36ms]
+(pass) opaque HD bodies and Original nearest infantry remain renderable [0.64ms]
+
+ 3 pass
+ 0 fail
+ 41 expect() calls
+Ran 3 tests across 1 file. [29.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/windows-hd/palette-program-warmup.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/palette-program-warmup.test.ts:
+(pass) combat owners borrow artwork without altering live geometry or draw materials [3.05ms]
+(pass) Original-only loading keeps its existing compile path and allocates no extra owners [0.42ms]
+(pass) cancellation during combat preparation releases both pending and retained owners [1.53ms]
+(pass) combat validation failures release pending owners and scene cleanup releases earlier owners [1.05ms]
+
+ 4 pass
+ 0 fail
+ 33 expect() calls
+Ran 4 tests across 1 file. [36.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/windows-hd/program-warmup.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/program-warmup.test.ts:
+(pass) Original indexed coverage does not create RGBA program owners [0.75ms]
+(pass) fixed-color HD without a remap texture still seeds the same shader variant [1.31ms]
+(pass) warmup borrows textures and holds only the detached measured opaque/coverage pair [0.69ms]
+(pass) scene preparation awaits validation, retains owners once, and releases them on exit or failure [2.27ms]
+(pass) scene exit during loading releases pending owners instead of retaining an orphan [0.51ms]
+(pass) renderer shutdown and context replacement clear all owners before releasing the old renderer [1.79ms]
+
+ 6 pass
+ 0 fail
+ 49 expect() calls
+Ran 6 tests across 1 file. [37.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/windows-hd/shader-identity.test.mjs"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/shader-identity.test.mjs:
+(pass) capture binds exact shader sources to the active material and restores nested GL wrappers [1.16ms]
+(pass) bounded evidence drops extra records without dropping native GL operations [0.59ms]
+(pass) failed installation or final family inspection restores all wrappers and reports the failure [0.21ms]
+(pass) runtime staging copies only pinned runtime bytes and rejects changed source bytes [6.16ms]
+
+ 4 pass
+ 0 fail
+ 39 expect() calls
+Ran 4 tests across 1 file. [42.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/windows-hd/tile-pool-worker.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/tile-pool-worker.test.ts:
+(pass) real worker preserves every pooled byte, hidden RGB, partial tiles, hash collisions and declined pages [7.55ms]
+(pass) borrowed subviews send only bounded page bytes and remain attached after worker output transfer [1.21ms]
+(pass) unavailable, rejected, failed and timed-out workers reuse identical CPU data without retrying the broken worker [12.61ms]
+(pass) owner disposal cancels outstanding pooling without fallback or a late result and rejects use after disposal [0.35ms]
+(pass) sprite resolution uses one owned worker across pages and preserves CPU textures, allocation and density [8.80ms]
+(pass) Original, unpooled and valid prepared pages create no pooling workers; cancellation after pooling publishes no textures [3.60ms]
+
+ 6 pass
+ 0 fail
+ 71 expect() calls
+Ran 6 tests across 1 file. [62.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./scripts/windows-hd/vxl-bearing-preparation.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+scripts/windows-hd/vxl-bearing-preparation.test.ts:
+(pass) prepare only the displayed cached bearing and refresh it across native turns [1.95ms]
+(pass) selected missile bearing retains continuous native attitude and joint offsets [0.24ms]
+(pass) disc and rotor views keep their non-bearing pose path [0.19ms]
+
+ 3 pass
+ 0 fail
+ 251 expect() calls
+Ran 3 tests across 1 file. [31.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./src/test/performance/GeneralOptions.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+src/test/performance/GeneralOptions.test.ts:
+(pass) GeneralOptions performance settings > loads legacy serialized options without performance suffix [0.51ms]
+(pass) GeneralOptions performance settings > round-trips performance settings in serialized options [0.12ms]
+
+ 2 pass
+ 0 fail
+ 12 expect() calls
+Ran 2 tests across 1 file. [28.00ms]
+
+COMMAND ["/Users/Aone/.bun/bin/bun","test","--preload","./scripts/windows-hd/browser-test-setup.ts","--timeout","30000","./src/test/performance/PerformanceHelpers.test.ts"] EDITION default
+bun test v1.3.14 (0d9b296a)
+
+src/test/performance/PerformanceHelpers.test.ts:
+(pass) RaycastHelper > returns the same intersection and reuses a single Raycaster when enabled [1.83ms]
+(pass) EntityIntersectHelper > preserves traversal results with nested children and array intersect targets [0.42ms]
+Tile coordinates (-267,-87) out of range
+Tile coordinates (-267,-87) out of range
+(pass) MapTileIntersectHelper > matches legacy results for center, boundary, fallback-style, and out-of-range points [0.97ms]
+(pass) WorldViewportHelper > matches legacy distances for iso and camera projection branches [0.33ms]
+Sound key "55" doesn't have a corresponding sound.ini entry
+Sound key "44" doesn't have a corresponding sound.ini entry
+Sound key "8" doesn't have a corresponding sound.ini entry
+Sound key "9" doesn't have a corresponding sound.ini entry
+Sound key "3" doesn't have a corresponding sound.ini entry
+Sound key "4" doesn't have a corresponding sound.ini entry
+Sound key "55" doesn't have a corresponding sound.ini entry
+Sound key "44" doesn't have a corresponding sound.ini entry
+Sound key "8" doesn't have a corresponding sound.ini entry
+Sound key "9" doesn't have a corresponding sound.ini entry
+Sound key "3" doesn't have a corresponding sound.ini entry
+Sound key "4" doesn't have a corresponding sound.ini entry
+(pass) WorldSound > keeps loop limits and output levels identical between legacy and optimized updates [0.73ms]
+
+ 5 pass
+ 0 fail
+ 16 expect() calls
+Ran 5 tests across 1 file. [32.00ms]

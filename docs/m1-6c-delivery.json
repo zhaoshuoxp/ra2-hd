@@ -1,0 +1,47 @@
+{
+  "status": "M1_6C_DELIVERED_FINAL_VISUAL_GAMEPLAY_ACCEPTANCE_PENDING",
+  "branch": "m1-6-soviet-edition-coverage",
+  "runtimeSourceHead": "9e635b1bddd61d605c5fb1367e44d16ae8168d76",
+  "integratedMainHead": "477341f",
+  "mainStatusAtDelivery": " M desktop/main.mjs\n M scripts/editions/build-review.mjs\n M scripts/editions/package-mac-test.mjs\n M scripts/editions/validate-bootstrap.mjs\n M scripts/editions/validate-package.mjs\n M src/engine/sound/WorldSound.ts\n M src/game/gameobject/Debris.ts\n M src/gui/screen/game/GameScreen.ts\n M src/gui/screen/game/SoundHandler.ts\n?? docs/game-editions-combat-r5.md\n?? scripts/editions/combat-feedback.test.ts\n?? scripts/editions/native-combat-feedback.mjs\n",
+  "coverage": {
+    "ra2": 18,
+    "yr": 18,
+    "union": 20,
+    "editionTheaterBuildingCells": 162,
+    "buildingOriginalExceptions": [],
+    "lunarBoundary": "Controlled native VFS/ImageFinder/GPU fixture, not an ordinary lunar skirmish"
+  },
+  "archive": {
+    "status": "PASS_ZIP_CRC_AND_ALL_SHIPPED_HASHES",
+    "path": "/Users/Aone/RA2remaster/ra2-hd-buildings-m1-6c/.artifacts/m1-6c/delivery-v2/RA2-HD-Soviet-Buildings-M1.6C-R1.zip",
+    "bytes": 890656327,
+    "sha256": "49ec4f5655c30cf1ab79115ee79bfa582bcd2ae4127eefa9ea49e8a26b82055d",
+    "checkedEntries": 1625,
+    "runtimeSourceHead": "9e635b1bddd61d605c5fb1367e44d16ae8168d76"
+  },
+  "package": ".artifacts/m1-6c/delivery-v2/RA2-HD-Soviet-Buildings-M1.6C-R1",
+  "dashboard": ".artifacts/m1-6c/delivery-v2/RA2-HD-Soviet-Buildings-M1.6C-R1/REVIEW-DASHBOARD.html",
+  "offlineReview": ".artifacts/m1-6c/delivery-v2/RA2-HD-Soviet-Buildings-M1.6C-R1/BUILDING-REVIEW.html",
+  "evidence": {
+    ".artifacts/m1-6c/delivery-v2/RA2-HD-Soviet-Buildings-M1.6C-R1/PACKAGE-VALIDATION.json": {
+      "sha256": "0904825dff93d84fe610031a04a34d22a549c87670faa193350838a3b89e8988"
+    },
+    ".artifacts/m1-6c/delivery-v2/RA2-HD-Soviet-Buildings-M1.6C-R1/DELIVERY-INVENTORY.json": {
+      "sha256": "ac12061b846d212623956d5ceea232a3c3983e6a5e6dcfcc780c44a0f2f6e9bb"
+    },
+    ".artifacts/m1-6c/delivery-browser-v2/result.json": {
+      "sha256": "28ecd430518bfeb4d8c152077a43027fe8b51077e073880cab0e2c18dfd90377"
+    },
+    ".artifacts/m1-6c/native-package-v2/result.json": {
+      "sha256": "076535bcd48df1f2e7a8f29d7f68809a3057610539a606f82e3adc6f6f6b1ce7"
+    }
+  },
+  "preservation": {
+    "mainUncommittedChanges": "Preserved and not included; re-audit before later integration",
+    "failedPackageV1": "Retained; legacy profile identity failed isolated check before gameplay",
+    "failedDashboardCheckV1": "Retained; waited for embedded payload initialization in v2 without changing review files",
+    "desktopApps": "No new Desktop app or overwrite",
+    "userProfiles": "Isolated validation profiles; accepted profiles preserved"
+  }
+}

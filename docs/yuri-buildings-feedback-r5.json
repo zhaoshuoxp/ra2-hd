@@ -1,0 +1,367 @@
+{
+  "status": "PASS_INCREMENTAL_C_FEEDBACK_R5",
+  "runtimeCommit": "0e3a8d9335582313fff26a89f3b19d27c25805e4",
+  "baseline": "53043ea2dbc2bde843f6f0ee44fb4df877f96979",
+  "selections": 33,
+  "identities": 16,
+  "densities": [
+    2,
+    4
+  ],
+  "changedSelections": 7,
+  "preservedSelections": 26,
+  "assetAudits": [
+    {
+      "audit": "gatling-export-audit-v2.json",
+      "cells": 4,
+      "slots": 64
+    },
+    {
+      "audit": "bunker-export-audit-v6.json",
+      "cells": 6,
+      "slots": 338
+    },
+    {
+      "audit": "grinder-export-audit-v4.json",
+      "cells": 4,
+      "slots": 604
+    }
+  ],
+  "native": [
+    {
+      "run": "native-pivots-2x-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-pivots-2x-v1/report.json",
+      "cases": {},
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 12055072,
+        "total": 52290352,
+        "limit": 268435456
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-pivots-4x-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-pivots-4x-v1/report.json",
+      "cases": {},
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 38556604,
+        "total": 180494832,
+        "limit": 1342177280
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-actions-4x-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-actions-4x-v1/report.json",
+      "cases": {
+        "YAGGUN-binding": "PASS",
+        "NATBNK-binding": "PASS",
+        "YAGRND-binding": "PASS",
+        "Tank-Bunker-occupy-evacuate": "PASS",
+        "Grinder-native-intake-animation": "PASS",
+        "Gatling-native-stages": "PASS",
+        "Gatling-native-air-rotation": "PASS",
+        "YAGGUN-construction-damage-selling": "PASS",
+        "NATBNK-construction-damage-selling": "PASS",
+        "YAGRND-construction-damage-selling": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 86716956,
+        "total": 228655184,
+        "limit": 1342177280
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-actions-2x-snow-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-actions-2x-snow-v1/report.json",
+      "cases": {
+        "YAGGUN-binding": "PASS",
+        "NATBNK-binding": "PASS",
+        "YAGRND-binding": "PASS",
+        "Tank-Bunker-occupy-evacuate": "PASS",
+        "Grinder-native-intake-animation": "PASS",
+        "Gatling-native-stages": "PASS",
+        "Gatling-native-air-rotation": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 22008264,
+        "eager": 28522916,
+        "demand": 35825668,
+        "total": 86356848,
+        "limit": 268435456
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-city-yuri-4x-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-city-yuri-4x-v1/report.json",
+      "cases": {},
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 374534948,
+        "total": 516473176,
+        "limit": 1342177280
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-city-soviet-2x-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-city-soviet-2x-v1/report.json",
+      "cases": {},
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 105178140,
+        "total": 145413420,
+        "limit": 268435456
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-original-bunker-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-original-bunker-v1/report.json",
+      "cases": {
+        "NATBNK-binding": "PASS",
+        "Tank-Bunker-occupy-evacuate": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 7372864,
+        "eager": 0,
+        "demand": 0,
+        "total": 7372864,
+        "limit": 1342177280
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-bindings-4x-snow-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-bindings-4x-snow-v1/report.json",
+      "cases": {
+        "YAGGUN-binding": "PASS",
+        "NATBNK-binding": "PASS",
+        "YAGRND-binding": "PASS",
+        "mixed-accepted-peer-residency": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 69948788,
+        "eager": 62731052,
+        "demand": 108104388,
+        "total": 240784228,
+        "limit": 1342177280
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-bunker-newurban-4x-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-bunker-newurban-4x-v1/report.json",
+      "cases": {
+        "NATBNK-binding": "PASS",
+        "Tank-Bunker-occupy-evacuate": "PASS",
+        "NATBNK-construction-damage-selling": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 90904572,
+        "eager": 50566032,
+        "demand": 34704820,
+        "total": 176175424,
+        "limit": 1342177280
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-bunker-spikes-4x-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "runtimeCommit": "f58ee20343a6b905920ae7dee991ce6b9d5869a1",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-bunker-spikes-4x-v1/report.json",
+      "cases": {
+        "NATBNK-binding": "PASS",
+        "Tank-Bunker-occupy-evacuate": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 34587476,
+        "total": 176525704,
+        "limit": 1342177280
+      },
+      "preparedFallbacks": 0,
+      "artStatus": "SUPERSEDED_BY_HORIZONTAL_EXTERIOR_SPIKES"
+    },
+    {
+      "run": "native-bunker-spikes-2x-snow-damaged-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "runtimeCommit": "f58ee20343a6b905920ae7dee991ce6b9d5869a1",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-bunker-spikes-2x-snow-damaged-v1/report.json",
+      "cases": {
+        "NATBNK-binding": "PASS",
+        "Tank-Bunker-occupy-evacuate": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 22008264,
+        "eager": 28522916,
+        "demand": 13820668,
+        "total": 64351848,
+        "limit": 268435456
+      },
+      "preparedFallbacks": 0,
+      "artStatus": "SUPERSEDED_BY_HORIZONTAL_EXTERIOR_SPIKES"
+    },
+    {
+      "run": "native-bunker-spikes-newurban-4x-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "runtimeCommit": "f58ee20343a6b905920ae7dee991ce6b9d5869a1",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-bunker-spikes-newurban-4x-v1/report.json",
+      "cases": {
+        "NATBNK-binding": "PASS",
+        "mixed-accepted-peer-residency": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 90904572,
+        "eager": 50566032,
+        "demand": 45674280,
+        "total": 187144884,
+        "limit": 1342177280
+      },
+      "preparedFallbacks": 0,
+      "artStatus": "SUPERSEDED_BY_HORIZONTAL_EXTERIOR_SPIKES"
+    },
+    {
+      "run": "native-bunker-horizontal-4x-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "runtimeCommit": "0e3a8d9335582313fff26a89f3b19d27c25805e4",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-bunker-horizontal-4x-v1/report.json",
+      "cases": {
+        "NATBNK-binding": "PASS",
+        "Tank-Bunker-occupy-evacuate": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 34582484,
+        "total": 176520712,
+        "limit": 1342177280
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-bunker-horizontal-2x-snow-damaged-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "runtimeCommit": "0e3a8d9335582313fff26a89f3b19d27c25805e4",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-bunker-horizontal-2x-snow-damaged-v1/report.json",
+      "cases": {
+        "NATBNK-binding": "PASS",
+        "Tank-Bunker-occupy-evacuate": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 22008264,
+        "eager": 28522916,
+        "demand": 13804924,
+        "total": 64336104,
+        "limit": 268435456
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-bunker-horizontal-newurban-4x-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "runtimeCommit": "0e3a8d9335582313fff26a89f3b19d27c25805e4",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-bunker-horizontal-newurban-4x-v1/report.json",
+      "cases": {
+        "NATBNK-binding": "PASS",
+        "mixed-accepted-peer-residency": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 90904572,
+        "eager": 50566032,
+        "demand": 45669288,
+        "total": 187139892,
+        "limit": 1342177280
+      },
+      "preparedFallbacks": 0
+    },
+    {
+      "run": "native-desktop-horizontal-4x-v1",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "runtimeCommit": "0e3a8d9335582313fff26a89f3b19d27c25805e4",
+      "app": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R5-Horizontal-Spikes-20261001-0e3a8d9-macOS-arm64/Red Alert 2 HD Task C Feedback R5.app",
+      "resources": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R5-Horizontal-Spikes-20261001-0e3a8d9-macOS-arm64/RA2-HD-Editions-Resources",
+      "report": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5/native-desktop-horizontal-4x-v1/report.json",
+      "cases": {
+        "NATBNK-binding": "PASS",
+        "Tank-Bunker-occupy-evacuate": "PASS"
+      },
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 34582484,
+        "total": 176520712,
+        "limit": 1342177280
+      },
+      "preparedFallbacks": 0
+    }
+  ],
+  "preparedIndex": "4a2a7b04ab5a16e93fe432f453f6d75c7a6ed3fcbbb0ded4bbdf398d6a62c8a7",
+  "uiRevision": "yuri-cameos-e-main-v1",
+  "uiEntries": 474,
+  "userVisualAcceptance": "PENDING",
+  "windows": "NOT_RUN",
+  "push": "NOT_PERFORMED",
+  "desktopDelivery": {
+    "status": "PASS_DESKTOP_C_R5_ARCHIVE_EXTRACTION_STARTUP_AND_NATIVE",
+    "archive": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R5-Horizontal-Spikes-20261001-0e3a8d9-macOS-arm64.zip",
+    "folder": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R5-Horizontal-Spikes-20261001-0e3a8d9-macOS-arm64",
+    "bytes": 3286449780,
+    "sha256": "f298d5e888728cde8dc06cd815aac79c8a53300ac874c15332da2b14c519a731",
+    "checkedEntries": 5322,
+    "runtimeSourceHead": "0e3a8d9335582313fff26a89f3b19d27c25805e4",
+    "visualAcceptance": "PENDING_USER_REVIEW"
+  },
+  "exceptions": [
+    "Five previously absent YR Soviet cameo identities remain Original in both predecessor and final package; no E artwork added.",
+    "The enlarged shadow fixture did not reproduce R4 body occlusion. Shared ground phase is corrected and native HD/Original coverage checks pass with disclosed RGB tolerance."
+  ],
+  "evidenceRoot": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r5",
+  "previousRuntimeCommit": "4f0489e7cc9b12741d7e5e60ff5601a1105e5c35",
+  "preparedManifestHistory": 662,
+  "preparedPhysicalPageHistory": 1756,
+  "spikeFollowup": {
+    "revision": "c5-feedback-r5-horizontal-v6",
+    "normalDamagedMasters": "art-v4/generation-receipt.json",
+    "fixedArtRetention": "bunker-v6-retention.json",
+    "retainedDensitySlots": 98,
+    "ownerProof": "owner-replacement-horizontal-v6.json",
+    "nativeMotion": "Horizontal exterior spikes rooted midway in vertical walls. Native full guard rise/return, firing and native tank dock unchanged. Rear inner faces plain; far exterior spikes occluded."
+  },
+  "evidenceReuseBoundary": "Earlier Gatling, Grinder, shadow, Soviet roster and retained Bunker construction evidence remains at runtime 4f0489e. Shared renderer and those selected pack bytes are unchanged; earlier Bunker guard appearances are superseded.",
+  "supersededCandidates": [
+    "c5-feedback-r5-original-v4: fixed pad retained; guard art superseded",
+    "c5-feedback-r5-spikes-v5: upward triangular art rejected by user horizontal-spike clarification",
+    "First horizontal master: inward rear spikes corrected before selection"
+  ],
+  "archiveMetadataPolicy": "No resource forks, extended attributes, quarantine or __MACOSX entries; actual extracted strict code signature must pass. First sequestered-resource ZIP failed FinderInfo validation and is diagnostic only.",
+  "offlineReview": {
+    "run": "offline-review-v4",
+    "status": "PASS_OFFLINE_R5_REVIEW",
+    "images": 33,
+    "nativeClips": 8,
+    "externalRequests": 0
+  },
+  "deliveryReceipt": "docs/yuri-buildings-feedback-r5-delivery.json"
+}

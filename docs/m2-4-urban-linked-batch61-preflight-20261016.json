@@ -1,0 +1,1165 @@
+{
+  "schema": "m2-4-urban-linked-batch61-preflight-v1",
+  "status": "COMPLETE_ORIGINAL_SOURCE_CLOSURE_AND_ACCEPTED_DONOR_AUDIT_READY",
+  "originalGuide": {
+    "file": ".artifacts/m2-4/urban-native-v2/source.json",
+    "sha256": "18c8be9b73be4b2e2e8c8766d4388da69fd34881f56dbbb27b088c430557bf09",
+    "bytes": 19784757
+  },
+  "originalAudit": {
+    "file": "docs/m2-4-urban-remaining-after-batch56-20261016.json",
+    "sha256": "0af3bf85428516eea25ed0b9da209382d028fb4604e3c1a97911fbdddf0dcfe9",
+    "bytes": 314683
+  },
+  "priorCoverage": {
+    "file": ".artifacts/m2-4/urban-placeholder-hd-repair-v1/coverage-delta.json",
+    "sha256": "eb68be63b8a768243a868f4eefd68f6d4da079d6fd1de300393d50c0cb479ac4",
+    "bytes": 24320
+  },
+  "preparedSource": {
+    "file": ".artifacts/m2-4/urban-linked-native-batch61-v1/source.json",
+    "sha256": "075a8dae8f592af2082bde2dfbc11184a4d3fa4192fce837c6b14189d2b3de08",
+    "bytes": 385606
+  },
+  "rows": [
+    {
+      "identity": "CAGARD01",
+      "bodyMember": "cugard01.shp",
+      "sourceSha256": "78398ff734b02773f011662cadcff2e2275e594c5bc3f435d33ef2c430ef813d",
+      "originalMapIds": [
+        "ra2:mp28u4.map@d871241b686b",
+        "yr:xeb1.map",
+        "yr:xeb1mw.map",
+        "yr:xmp28u4.map@e0b74cfb3cc1",
+        "yr:mp28u4.map@d871241b686b"
+      ],
+      "completeMembers": [
+        {
+          "member": "cugard01.shp",
+          "sourceSha256": "78398ff734b02773f011662cadcff2e2275e594c5bc3f435d33ef2c430ef813d",
+          "role": "body"
+        },
+        {
+          "member": "cugrd1_a.shp",
+          "sourceSha256": "92a93da60c98a06dff8713e44ae1f50a1e256f9984795c7850e40744750d30c9",
+          "role": "ACTIVE"
+        }
+      ],
+      "originalRulesAndArt": [
+        {
+          "edition": "ra2",
+          "id": "CAGARD01",
+          "key": "fd3f357bba3046f416084e83d8a3f3ab2de3e6f8881f5566e462edd4ec2b7f19",
+          "nativeRules": {
+            "UIName": "Name:CAGARD01",
+            "Name": "RA2 Guard Shack",
+            "TechLevel": "-1",
+            "Strength": "100",
+            "Insignificant": "yes",
+            "Nominal": "yes",
+            "RadarInvisible": "yes",
+            "Points": "5",
+            "Armor": "steel",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "DebrisAnims": "DBRIS2SM,DBRIS3LG,DBRIS5SM",
+            "MaxDebris": "3",
+            "MinDebris": "1",
+            "BaseNormal": "no",
+            "Sight": "6",
+            "ClickRepairable": "no",
+            "CanBeOccupied": "no",
+            "DistributedFire": "no"
+          },
+          "nativeArt": {
+            "Normalized": "yes",
+            "Remapable": "no",
+            "Foundation": "1x1",
+            "Height": "4",
+            "NewTheater": "no",
+            "ActiveAnim": "CAGRD1_A",
+            "ActiveAnimZAdjust": "-100",
+            "DemandLoad": "true",
+            "CanHideThings": "True",
+            "CanBeHidden": "False",
+            "OccupyHeight": "3",
+            "DamageFireOffset0": "-1,-4"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "normal",
+            "damaged",
+            "destruction",
+            "native-shadow"
+          ],
+          "usage": {
+            "ra2:mp28u4.map@d871241b686b": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "edition": "yr",
+          "id": "CAGARD01",
+          "key": "b7a8b4939deb3c734153d20dee65c72bfa321bfd3ecd521d4fa9f529f7f9a259",
+          "nativeRules": {
+            "UIName": "Name:CAGARD01",
+            "Name": "Guard Shack",
+            "TechLevel": "-1",
+            "Strength": "100",
+            "Insignificant": "yes",
+            "Nominal": "yes",
+            "Points": "5",
+            "Armor": "steel",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "DebrisAnims": "DBRIS2SM,DBRIS3LG,DBRIS5SM",
+            "MaxDebris": "3",
+            "MinDebris": "1",
+            "BaseNormal": "no",
+            "Sight": "6",
+            "ClickRepairable": "no",
+            "CanBeOccupied": "no",
+            "DistributedFire": "no"
+          },
+          "nativeArt": {
+            "Normalized": "yes",
+            "Remapable": "no",
+            "Foundation": "1x1",
+            "Height": "4",
+            "NewTheater": "no",
+            "ActiveAnim": "CAGRD1_A",
+            "ActiveAnimZAdjust": "-100",
+            "DemandLoad": "true",
+            "CanHideThings": "True",
+            "CanBeHidden": "False",
+            "OccupyHeight": "3",
+            "DamageFireOffset0": "-1,-4"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "normal",
+            "damaged",
+            "destruction",
+            "native-shadow"
+          ],
+          "usage": {
+            "yr:xeb1.map": {
+              "count": 12,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xeb1mw.map": {
+              "count": 12,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xmp28u4.map@e0b74cfb3cc1": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:mp28u4.map@d871241b686b": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "dependencyDeclarations": [
+        {
+          "role": "ACTIVE",
+          "animation": "CAGRD1_A",
+          "source": {
+            "member": "cugrd1_a.shp",
+            "archive": "ra2.mix/isourb.mix",
+            "sha256": "92a93da60c98a06dff8713e44ae1f50a1e256f9984795c7850e40744750d30c9",
+            "bytes": 4600,
+            "canvas": [
+              116,
+              90
+            ],
+            "totalFrames": 18,
+            "empty": false
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "remapable": true,
+          "hasShadow": true,
+          "nativeArt": {
+            "Layer": "ground",
+            "NewTheater": "yes",
+            "LoopStart": "0",
+            "LoopEnd": "8",
+            "LoopCount": "-1",
+            "Rate": "220",
+            "DemandLoad": "true",
+            "Shadow": "yes"
+          },
+          "extraOffset": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "identity": "CAMOV02",
+      "bodyMember": "cumov02.shp",
+      "sourceSha256": "36527bf347558246a646dadd8a5d010ac8e2492f0b1b82e2b8419f50f6a2f033",
+      "originalMapIds": [
+        "yr:hillbtwn.map",
+        "yr:xbarrel.map",
+        "yr:xarena.map",
+        "yr:xinvasion.map",
+        "yr:xrockets.map",
+        "yr:xbermuda.map"
+      ],
+      "completeMembers": [
+        {
+          "member": "cumov02.shp",
+          "sourceSha256": "36527bf347558246a646dadd8a5d010ac8e2492f0b1b82e2b8419f50f6a2f033",
+          "role": "body"
+        },
+        {
+          "member": "cumov02_a.shp",
+          "sourceSha256": "e34304ff353980361c7b68ee1ccbd996190945df25c3db6934a61440c8dd7ac2",
+          "role": "ACTIVE"
+        }
+      ],
+      "originalRulesAndArt": [
+        {
+          "edition": "yr",
+          "id": "CAMOV02",
+          "key": "1920cbddb5db44020ea8f443d74e6bc99df888a84ad65fede0263672e7e56887",
+          "nativeRules": {
+            "UIName": "Name:CAMOV02",
+            "Name": "Drive In Movie Concession Stand",
+            "TechLevel": "-1",
+            "Strength": "1000",
+            "Insignificant": "yes",
+            "Nominal": "yes",
+            "Points": "5",
+            "Armor": "steel",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "MaxDebris": "15",
+            "MinDebris": "5",
+            "DebrisAnim": "Dbris3sm,Dbris2sm,Dbris3lg,Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg",
+            "BaseNormal": "no",
+            "Sight": "6",
+            "ClickRepairable": "no",
+            "CanBeOccupied": "yes",
+            "MaxNumberOccupants": "5",
+            "CanOccupyFire": "yes",
+            "LeaveRubble": "yes"
+          },
+          "nativeArt": {
+            "Foundation": "2x2",
+            "Height": "4",
+            "NewTheater": "yes",
+            "DemandLoad": "true",
+            "MuzzleFlash0": "14,41",
+            "MuzzleFlash1": "-17,35",
+            "MuzzleFlash2": "-3,40",
+            "MuzzleFlash3": "-33,25",
+            "MuzzleFlash4": "25,36",
+            "ActiveAnim": "CAMOV02_A",
+            "ActiveAnimDamaged": "CAMOV02_AD",
+            "ActiveAnimZAdjust": "-200",
+            "ActiveAnimYSort": "362",
+            "DamageFireOffset0": "23,18",
+            "DamageFireOffset1": "-29,14",
+            "CanHideThings": "true",
+            "CanBeHidden": "false",
+            "OccupyHeight": "0"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "normal",
+            "damaged",
+            "destruction",
+            "native-shadow",
+            "occupied",
+            "evacuation",
+            "critical-damage-evacuation",
+            "rubble"
+          ],
+          "usage": {
+            "yr:hillbtwn.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xbarrel.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xarena.map": {
+              "count": 2,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xinvasion.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xrockets.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xbermuda.map": {
+              "count": 2,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "dependencyDeclarations": [
+        {
+          "role": "ACTIVE",
+          "animation": "CAMOV02_A",
+          "source": {
+            "member": "cumov02_a.shp",
+            "archive": "ra2.mix/isourb.mix",
+            "sha256": "e34304ff353980361c7b68ee1ccbd996190945df25c3db6934a61440c8dd7ac2",
+            "bytes": 7176,
+            "canvas": [
+              186,
+              118
+            ],
+            "totalFrames": 8,
+            "empty": false
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "remapable": true,
+          "hasShadow": true,
+          "nativeArt": {
+            "NewTheater": "yes",
+            "Normalized": "yes",
+            "LoopStart": "0",
+            "LoopEnd": "2",
+            "LoopCount": "-1",
+            "Rate": "100",
+            "Layer": "ground",
+            "Shadow": "yes",
+            "DemandLoad": "true"
+          },
+          "damagedNativeArt": {
+            "Image": "CAMOV02_A",
+            "Normalized": "yes",
+            "Start": "2",
+            "LoopStart": "2",
+            "LoopEnd": "4",
+            "LoopCount": "-1",
+            "Rate": "100",
+            "Layer": "ground",
+            "Shadow": "yes",
+            "DemandLoad": "true"
+          },
+          "extraOffset": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "identity": "CAMOV01",
+      "bodyMember": "cumov01.shp",
+      "sourceSha256": "a13eddd7147ae1a8d9708ad6f161a1d92a1c7757a4ec9ee2194247d0bf816f03",
+      "originalMapIds": [
+        "yr:hillbtwn.map",
+        "yr:xbarrel.map",
+        "yr:xarena.map",
+        "yr:xinvasion.map",
+        "yr:xrockets.map",
+        "yr:xbermuda.map"
+      ],
+      "completeMembers": [
+        {
+          "member": "cumov01.shp",
+          "sourceSha256": "a13eddd7147ae1a8d9708ad6f161a1d92a1c7757a4ec9ee2194247d0bf816f03",
+          "role": "body"
+        },
+        {
+          "member": "cumov01_a.shp",
+          "sourceSha256": "f79dc5e627336b1f00b3fefcb77202b1fb69f23e44e0ca0a7ca52e1f0d252b11",
+          "role": "ACTIVE"
+        }
+      ],
+      "originalRulesAndArt": [
+        {
+          "edition": "yr",
+          "id": "CAMOV01",
+          "key": "e517be1ae54cd97986028eeffafc574e2d75e12c121bf914dbb2ee17a9579dc7",
+          "nativeRules": {
+            "UIName": "Name:CAMOV01",
+            "Name": "Drive In Movie Screen",
+            "TechLevel": "-1",
+            "Strength": "500",
+            "Insignificant": "yes",
+            "Nominal": "yes",
+            "Points": "5",
+            "Armor": "steel",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "MaxDebris": "15",
+            "MinDebris": "5",
+            "DebrisAnim": "Dbris3sm,Dbris2sm,Dbris3lg,Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg",
+            "BaseNormal": "no",
+            "Sight": "6",
+            "ClickRepairable": "no",
+            "CanBeOccupied": "no"
+          },
+          "nativeArt": {
+            "Foundation": "1x4",
+            "Height": "6",
+            "NewTheater": "yes",
+            "DemandLoad": "true",
+            "ActiveAnim": "CAMOV01_A",
+            "ActiveAnimDamaged": "CAMOV01_AD",
+            "ActiveAnimZAdjust": "-60",
+            "ActiveAnimYSort": "724",
+            "DamageFireOffset0": "-85,-2",
+            "DamageFireOffset1": "-4,-56",
+            "CanHideThings": "true",
+            "CanBeHidden": "false",
+            "OccupyHeight": "3",
+            "AddOccupy1": "-2,0",
+            "AddOccupy2": "-2,1",
+            "AddOccupy3": "-2,-1",
+            "AddOccupy4": "-2,-2"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "normal",
+            "damaged",
+            "destruction",
+            "native-shadow"
+          ],
+          "usage": {
+            "yr:hillbtwn.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xbarrel.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xarena.map": {
+              "count": 2,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xinvasion.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xrockets.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xbermuda.map": {
+              "count": 2,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "dependencyDeclarations": [
+        {
+          "role": "ACTIVE",
+          "animation": "CAMOV01_A",
+          "source": {
+            "member": "cumov01_a.shp",
+            "archive": "ra2.mix/isourb.mix",
+            "sha256": "f79dc5e627336b1f00b3fefcb77202b1fb69f23e44e0ca0a7ca52e1f0d252b11",
+            "bytes": 494272,
+            "canvas": [
+              194,
+              166
+            ],
+            "totalFrames": 124,
+            "empty": false
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "remapable": true,
+          "hasShadow": true,
+          "nativeArt": {
+            "NewTheater": "yes",
+            "Normalized": "yes",
+            "LoopStart": "0",
+            "LoopEnd": "30",
+            "LoopCount": "-1",
+            "Rate": "220",
+            "Layer": "ground",
+            "Shadow": "yes",
+            "DemandLoad": "true"
+          },
+          "damagedNativeArt": {
+            "Image": "CAMOV01_A",
+            "Normalized": "yes",
+            "Start": "31",
+            "LoopStart": "31",
+            "LoopEnd": "61",
+            "LoopCount": "-1",
+            "Rate": "200",
+            "Layer": "ground",
+            "Shadow": "yes",
+            "DemandLoad": "true"
+          },
+          "extraOffset": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "identity": "CALA10",
+      "bodyMember": "cgla10.shp",
+      "sourceSha256": "876c455ae6230fa439dba9163436cc0f953d8490a7663570b2302e8689f524eb",
+      "originalMapIds": [
+        "yr:hillbtwn.map"
+      ],
+      "completeMembers": [
+        {
+          "member": "cgla10.shp",
+          "sourceSha256": "876c455ae6230fa439dba9163436cc0f953d8490a7663570b2302e8689f524eb",
+          "role": "body"
+        },
+        {
+          "member": "cgla10_a.shp",
+          "sourceSha256": "d63d1614dbf9066658e6a3d7c307040a4fefdcc8efd76dbd3f049f8c9ec8118b",
+          "role": "ACTIVE"
+        }
+      ],
+      "originalRulesAndArt": [
+        {
+          "edition": "yr",
+          "id": "CALA10",
+          "key": "0a578529b225aa23b4e93e520f23d9f91968acb9eeb42f0c9500f904d088c15c",
+          "nativeRules": {
+            "Name": "LA Billboard",
+            "UIName": "Name:CALA10",
+            "TechLevel": "-1",
+            "Strength": "200",
+            "Insignificant": "yes",
+            "Nominal": "yes",
+            "Points": "5",
+            "Armor": "wood",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+            "MaxDebris": "15",
+            "MinDebris": "5",
+            "BaseNormal": "no",
+            "Sight": "5",
+            "ClickRepairable": "no",
+            "CanBeOccupied": "no",
+            "CanOccupyFire": "no",
+            "LeaveRubble": "true"
+          },
+          "nativeArt": {
+            "Normalized": "yes",
+            "Remapable": "no",
+            "Foundation": "1x3",
+            "Height": "5",
+            "NewTheater": "yes",
+            "ActiveAnim": "CALA10_A",
+            "ActiveAnimDamaged": "CALA10_AD",
+            "ActiveAnimZAdjust": "-5",
+            "DemandLoad": "true",
+            "CanBeHidden": "False",
+            "CanHideThings": "True",
+            "OccupyHeight": "4"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "normal",
+            "damaged",
+            "destruction",
+            "native-shadow",
+            "rubble"
+          ],
+          "usage": {
+            "yr:hillbtwn.map": {
+              "count": 2,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "dependencyDeclarations": [
+        {
+          "role": "ACTIVE",
+          "animation": "CALA10_A",
+          "source": {
+            "member": "cgla10_a.shp",
+            "archive": "ra2md.mix/isogenmd.mix",
+            "sha256": "d63d1614dbf9066658e6a3d7c307040a4fefdcc8efd76dbd3f049f8c9ec8118b",
+            "bytes": 366528,
+            "canvas": [
+              162,
+              130
+            ],
+            "totalFrames": 90,
+            "empty": false
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "remapable": true,
+          "hasShadow": true,
+          "nativeArt": {
+            "Image": "CALA10_A",
+            "NewTheater": "yes",
+            "Normalized": "yes",
+            "LoopStart": "0",
+            "LoopEnd": "44",
+            "LoopCount": "-1",
+            "Rate": "200",
+            "Layer": "ground",
+            "Shadow": "yes",
+            "DemandLoad": "true"
+          },
+          "damagedNativeArt": {
+            "Image": "CALA10_A",
+            "NewTheater": "yes",
+            "Normalized": "yes",
+            "LoopStart": "0",
+            "LoopEnd": "44",
+            "LoopCount": "-1",
+            "Rate": "200",
+            "Layer": "ground",
+            "Shadow": "yes",
+            "DemandLoad": "true"
+          },
+          "extraOffset": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "identity": "NAPSYA",
+      "bodyMember": "nupsya.shp",
+      "sourceSha256": "d38f1d4ed65fdca3a13e21953e430672e35bb0c00c2cf0ae04c63f2dad5a428e",
+      "originalMapIds": [
+        "yr:xeb1.map",
+        "yr:xeb1mw.map"
+      ],
+      "completeMembers": [
+        {
+          "member": "nupsya.shp",
+          "sourceSha256": "d38f1d4ed65fdca3a13e21953e430672e35bb0c00c2cf0ae04c63f2dad5a428e",
+          "role": "body"
+        },
+        {
+          "member": "nupsya_a.shp",
+          "sourceSha256": "357fe8bfd295290cc1c4a2cd53d98890bff12ffc69f9f9ed0a1182d345fca4a8",
+          "role": "ACTIVE"
+        }
+      ],
+      "originalRulesAndArt": [
+        {
+          "edition": "yr",
+          "id": "NAPSYA",
+          "key": "4119f05c79adbea63c6f7802c659d7614f4bba8429e640b923eaba24f38a4d72",
+          "nativeRules": {
+            "UIName": "Name:NAPSYA",
+            "Name": "Psychic Amplifier",
+            "TechLevel": "-1",
+            "Strength": "1000",
+            "Insignificant": "yes",
+            "Nominal": "yes",
+            "Points": "5",
+            "Power": "-100",
+            "Powered": "true",
+            "Armor": "concrete",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "MaxDebris": "15",
+            "MinDebris": "5",
+            "DebrisAnim": "Dbris3sm,Dbris2sm,Dbris3lg,Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg",
+            "BaseNormal": "no",
+            "Sight": "6",
+            "ClickRepairable": "no",
+            "AmbientSound": "PsychicAmplifierLoop",
+            "DieSound": "PsychicAmplifierDie"
+          },
+          "nativeArt": {
+            "Foundation": "4x4",
+            "Height": "10",
+            "NewTheater": "yes",
+            "DemandLoad": "true",
+            "ActiveAnim": "NAPSYA_A",
+            "ActiveAnimDamaged": "NAPSYA_AD",
+            "ActiveAnimZAdjust": "-60",
+            "ActiveAnimPowered": "yes",
+            "DamageFireOffset0": "-20,44",
+            "DamageFireOffset1": "-74,64",
+            "CanHideThings": "true",
+            "CanBeHidden": "false",
+            "OccupyHeight": "0",
+            "AddOccupy1": "-1,-1"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "normal",
+            "damaged",
+            "destruction",
+            "native-shadow"
+          ],
+          "usage": {
+            "yr:xeb1.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xeb1mw.map": {
+              "count": 1,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "dependencyDeclarations": [
+        {
+          "role": "ACTIVE",
+          "animation": "NAPSYA_A",
+          "source": {
+            "member": "nupsya_a.shp",
+            "archive": "ra2.mix/isourb.mix",
+            "sha256": "357fe8bfd295290cc1c4a2cd53d98890bff12ffc69f9f9ed0a1182d345fca4a8",
+            "bytes": 273848,
+            "canvas": [
+              280,
+              232
+            ],
+            "totalFrames": 56,
+            "empty": false
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "remapable": true,
+          "hasShadow": true,
+          "nativeArt": {
+            "NewTheater": "yes",
+            "Normalized": "yes",
+            "LoopStart": "0",
+            "LoopEnd": "13",
+            "LoopCount": "-1",
+            "Rate": "220",
+            "Layer": "ground",
+            "Shadow": "yes",
+            "DemandLoad": "true"
+          },
+          "damagedNativeArt": {
+            "Image": "NAPSYA_A",
+            "Normalized": "yes",
+            "Start": "14",
+            "LoopStart": "14",
+            "LoopEnd": "27",
+            "LoopCount": "-1",
+            "Rate": "200",
+            "Layer": "ground",
+            "Shadow": "yes",
+            "DemandLoad": "true"
+          },
+          "extraOffset": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "identity": "NAPSYB",
+      "bodyMember": "ngpsyb.shp",
+      "sourceSha256": "80b15cc1d3a0a8adb0f13aafb4d144c24e69ab1edd241993f76053bfa2ba7eed",
+      "originalMapIds": [
+        "yr:xeb1.map",
+        "yr:xeb1mw.map"
+      ],
+      "completeMembers": [
+        {
+          "member": "ngpsyb.shp",
+          "sourceSha256": "80b15cc1d3a0a8adb0f13aafb4d144c24e69ab1edd241993f76053bfa2ba7eed",
+          "role": "body"
+        },
+        {
+          "member": "ngpsyb_a.shp",
+          "sourceSha256": "bdd5b6da84a6aa75a0c38b106bf5ac1b9f2cb2a99168cd875a6fbbd2d7462d93",
+          "role": "ACTIVE"
+        },
+        {
+          "member": "nupsybmk.shp",
+          "sourceSha256": "fcce0999139889c1d61a8730e34e9038d92c46d0e3bf70c47bfcdf1e7db013ff",
+          "role": "BUILDUP"
+        },
+        {
+          "member": "nupsybmk.shp",
+          "sourceSha256": "fcce0999139889c1d61a8730e34e9038d92c46d0e3bf70c47bfcdf1e7db013ff",
+          "role": "UNBUILD"
+        }
+      ],
+      "originalRulesAndArt": [
+        {
+          "edition": "yr",
+          "id": "NAPSYB",
+          "key": "fa76813afaf84c8eb2fa542c7bfdd49942b0d9ca77ac97d56e6f32c64917a241",
+          "nativeRules": {
+            "UIName": "Name:NAPSYB",
+            "Name": "Psychic Beacon",
+            "BuildCat": "Tech",
+            "Prerequisite": "NATECH",
+            "Strength": "750",
+            "Armor": "wood",
+            "TechLevel": "-1",
+            "Adjacent": "2",
+            "Sight": "10",
+            "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+            "Cost": "1000",
+            "Points": "50",
+            "Power": "-100",
+            "Powered": "true",
+            "Capturable": "false",
+            "Crewed": "yes",
+            "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+            "DebrisAnim": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg",
+            "MaxDebris": "15",
+            "MinDebris": "5",
+            "ThreatPosed": "0",
+            "DamageParticleSystems": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+            "DamageSmokeOffset": "220, 390, 150",
+            "AIBuildThis": "no",
+            "HasRadialIndicator": "true",
+            "DetectDisguise": "yes",
+            "BaseNormal": "yes",
+            "AmbientSound": "PsychicAmplifierLoop",
+            "DieSound": "PsychicAmplifierDie"
+          },
+          "nativeArt": {
+            "Remapable": "yes",
+            "Normalized": "yes",
+            "Height": "8",
+            "Cameo": "PSYBICON",
+            "Foundation": "2x2",
+            "Buildup": "NAPSYBMK",
+            "DemandLoadBuildup": "true",
+            "FreeBuildup": "true",
+            "ActiveAnim": "NAPSYB_A",
+            "ActiveAnimDamaged": "NAPSYB_AD",
+            "ActiveAnimZAdjust": "-75",
+            "ActiveAnimYSort": "100",
+            "CanBeHidden-False": "",
+            "OccupyHeight": "3",
+            "RemoveOccupy1": "0,-1",
+            "RemoveOccupy2": "-1,0",
+            "DamageFireOffset0": "-12,34"
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "states": [
+            "normal",
+            "damaged",
+            "destruction",
+            "native-shadow"
+          ],
+          "usage": {
+            "yr:xeb1.map": {
+              "count": 2,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            },
+            "yr:xeb1mw.map": {
+              "count": 2,
+              "reasons": [
+                "PLACED_OBJECT"
+              ],
+              "values": []
+            }
+          }
+        }
+      ],
+      "dependencyDeclarations": [
+        {
+          "role": "ACTIVE",
+          "animation": "NAPSYB_A",
+          "source": {
+            "member": "ngpsyb_a.shp",
+            "archive": "ra2.mix/generic.mix",
+            "sha256": "bdd5b6da84a6aa75a0c38b106bf5ac1b9f2cb2a99168cd875a6fbbd2d7462d93",
+            "bytes": 181552,
+            "canvas": [
+              306,
+              232
+            ],
+            "totalFrames": 60,
+            "empty": false
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "remapable": true,
+          "hasShadow": true,
+          "nativeArt": {
+            "Image": "NAPSYB_A",
+            "NewTheater": "yes",
+            "Normalized": "yes",
+            "LoopStart": "0",
+            "LoopEnd": "14",
+            "LoopCount": "-1",
+            "Rate": "220",
+            "Layer": "ground",
+            "Shadow": "yes",
+            "DemandLoad": "true"
+          },
+          "damagedNativeArt": {
+            "Image": "NAPSYB_A",
+            "Normalized": "yes",
+            "Start": "15",
+            "LoopStart": "15",
+            "LoopEnd": "29",
+            "LoopCount": "-1",
+            "Rate": "220",
+            "Layer": "ground",
+            "Shadow": "yes",
+            "DemandLoad": "true"
+          },
+          "extraOffset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "role": "BUILDUP",
+          "animation": "NAPSYBMK",
+          "source": {
+            "member": "nupsybmk.shp",
+            "archive": "ra2.mix/isourb.mix",
+            "sha256": "fcce0999139889c1d61a8730e34e9038d92c46d0e3bf70c47bfcdf1e7db013ff",
+            "bytes": 145504,
+            "canvas": [
+              306,
+              232
+            ],
+            "totalFrames": 50,
+            "empty": false
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "remapable": true,
+          "hasShadow": true,
+          "nativeArt": {
+            "Shadow": "yes"
+          },
+          "extraOffset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "role": "UNBUILD",
+          "animation": "NAPSYBMK",
+          "source": {
+            "member": "nupsybmk.shp",
+            "archive": "ra2.mix/isourb.mix",
+            "sha256": "fcce0999139889c1d61a8730e34e9038d92c46d0e3bf70c47bfcdf1e7db013ff",
+            "bytes": 145504,
+            "canvas": [
+              306,
+              232
+            ],
+            "totalFrames": 50,
+            "empty": false
+          },
+          "palette": {
+            "member": "uniturb.pal",
+            "archive": "ra2.mix/cache.mix",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "bytes": 768
+          },
+          "remapable": true,
+          "hasShadow": true,
+          "nativeArt": {
+            "Shadow": "yes",
+            "Reverse": "yes"
+          },
+          "extraOffset": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    }
+  ],
+  "completeFamilies": 6,
+  "sourceMembers": 13,
+  "originalVisibleSlots": 223,
+  "untouchedNativeShadows": 223,
+  "expectedDensityFrames": 446,
+  "sharedBuildUnbuildMember": "nupsybmk.shp",
+  "technicalCoverageAdded": 0,
+  "selectedResourcesChanged": false,
+  "nativeAcceptance": false,
+  "visual": "NOT_AUTHORED",
+  "windows": "NOT_RUN",
+  "m24Complete": false,
+  "temperateReuseAudit": {
+    "file": ".artifacts/m2-4/urban-linked-native-batch61-v1/temperate-body-reuse-v1.json",
+    "sha256": "34f4e7d87210e75537b7daf740f439e221efafe26c09cbd9f9167ffcdfdd2f5b",
+    "eligibleVisibleSlots": 0,
+    "distinctVisibleSlots": 0,
+    "allBodyMatchGroups": 0
+  },
+  "snowReuseAudit": {
+    "file": ".artifacts/m2-4/urban-linked-native-batch61-v1/snow-body-reuse-v1.json",
+    "sha256": "d0f513e6131fe944059a5ed1f07769884909fc8d0dd981a64178afccb5bc7ef0",
+    "eligibleVisibleSlots": 9,
+    "distinctVisibleSlots": 3,
+    "allBodyMatchGroups": 1
+  },
+  "reusableAcceptedSlots": [
+    {
+      "member": "cugrd1_a.shp",
+      "donorMember": "cagrd1_a.shp",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "currentTechnicalCoverage": {
+    "file": ".artifacts/m2-4/urban-buildings-batch60-v1/coverage-delta.json",
+    "sha256": "2e42f27857c264af788a0a6ec669c9525cf3d4bed5178ecd8f6106ff6c1f6b66",
+    "remainingFamilies": 15,
+    "remainingByKind": {
+      "building": 6,
+      "infantry": 3,
+      "vehicle": 6
+    }
+  }
+}

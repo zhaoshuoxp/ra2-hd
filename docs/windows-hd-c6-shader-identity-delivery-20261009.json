@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "status": "DELIVERED_OPT_IN_C6_SHADER_IDENTITY_COMPANION",
+  "companionSourceHead": "3261469aa6c5323dd2522458cdbbfa8c44ef397f",
+  "qaSourceHead": "3261469aa6c5323dd2522458cdbbfa8c44ef397f",
+  "baseApplicationSource": "4d3e41f5ffe2746ada9bc765a407f00638cb4705",
+  "copies": {
+    "status": "PASS_FINAL_COMPANION_DESKTOP_AND_DELIVERY_COPIES",
+    "sourceHead": "3261469aa6c5323dd2522458cdbbfa8c44ef397f",
+    "manifestSha256": "4f06f7fcf5ab2e55a7d4902b43c455b6d894235b79977a414e10f409ff4e4f4a",
+    "copies": [
+      {
+        "file": "/Users/Aone/RA2remaster/deliveries/RA2-HD-C6-Shader-Identity-S1-3261469.zip",
+        "bytes": 9295,
+        "sha256": "e6899598bf56d638f875fa38716c5a9a261be2f417e7bc813cf497af31ca62f1",
+        "crc": "PASS",
+        "members": 6
+      },
+      {
+        "file": "/Users/Aone/Desktop/RA2-HD-C6-Shader-Identity-S1-3261469.zip",
+        "bytes": 9295,
+        "sha256": "e6899598bf56d638f875fa38716c5a9a261be2f417e7bc813cf497af31ca62f1",
+        "crc": "PASS",
+        "members": 6
+      }
+    ]
+  },
+  "buildReceipt": ".artifacts/windows-hd-diagnostic/c6-shader-companion-build-v3/build-receipt.json",
+  "nativeReceipt": ".artifacts/windows-hd-diagnostic/c6-shader-identity-native-v4/report.json",
+  "nativeStatus": "PASS_NATIVE_AUTOMATIC_SHADER_IDENTITY_EXPORT_AND_RESTORATION",
+  "nativePlatform": "darwin-arm64",
+  "nativePackaged": true,
+  "nativePhases": [
+    {
+      "label": "fresh-process-first-use",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": false,
+      "ticks": 1012
+    },
+    {
+      "label": "instrumented-warmed-steady",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": true,
+      "ticks": 975
+    },
+    {
+      "label": "instrumented-same-process-reentry-first-use",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": true,
+      "ticks": 1010
+    },
+    {
+      "label": "instrumented-same-process-reentry-warmed",
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "instrumented": true,
+      "ticks": 1005
+    }
+  ],
+  "restoration": {
+    "direct": true,
+    "methods": {
+      "shaderSource": true,
+      "attachShader": true,
+      "linkProgram": true,
+      "getProgramInfoLog": true,
+      "useProgram": true,
+      "deleteProgram": true
+    },
+    "detailedAbsent": true
+  },
+  "deferredClose": true,
+  "nativeShaderIdentity": {
+    "status": "CAPTURED",
+    "shaderChecksEnabled": true,
+    "sourceCharacters": 58618,
+    "dropped": {},
+    "links": [
+      {
+        "atMs": 34255.58500003815,
+        "tick": 1468,
+        "playing": true,
+        "program": 1,
+        "material": {
+          "type": "ShaderMaterial",
+          "id": 7046,
+          "name": "",
+          "defines": {
+            "HAS_PERSPECTIVE": false,
+            "COLORIZE": true,
+            "VALUE_OVER_LIFETIME_LENGTH": 4,
+            "SHOULD_ROTATE_TEXTURE": false,
+            "SHOULD_ROTATE_PARTICLES": false,
+            "SHOULD_WIGGLE_PARTICLES": false,
+            "SHOULD_CALCULATE_SPRITE": true
+          },
+          "customKey": "onBeforeCompile(){}",
+          "transparent": true,
+          "side": 0,
+          "forceSinglePass": true,
+          "alphaTest": 0,
+          "clippingPlanes": 0,
+          "map": null,
+          "palette": null,
+          "particleTexture": {
+            "uuid": "32e57a1d-d3e0-49a3-adc9-042ccf2a020f",
+            "name": "",
+            "width": 960,
+            "height": 48,
+            "format": 1023,
+            "type": 1009
+          }
+        },
+        "object": {
+          "id": 10949,
+          "name": "fx_damage_smoke",
+          "type": "Points",
+          "parents": [
+            {
+              "id": 10949,
+              "name": "fx_damage_smoke",
+              "type": "Points"
+            },
+            {
+              "id": 468,
+              "name": "",
+              "type": "Scene"
+            }
+          ],
+          "castShadow": false,
+          "attributes": [
+            "position",
+            "acceleration",
+            "velocity",
+            "rotation",
+            "rotationCenter",
+            "params",
+            "size",
+            "angle",
+            "color",
+            "opacity"
+          ],
+          "drawRange": {
+            "start": 0,
+            "count": 1000
+          }
+        },
+        "familyMatchesAtCaptureEnd": [],
+        "sourceSha256": [
+          "7e9934897e8f28828929686474fff50550eac76d195e183fe94302918e9efd27",
+          "bf740ba3d22ea207c850512525bbec1b8e66f421637e46a31c80eab2c7d8c3f3"
+        ]
+      },
+      {
+        "atMs": 37386.205000042915,
+        "tick": 1679,
+        "playing": true,
+        "program": 2,
+        "material": {
+          "type": "HdSpriteMaterial",
+          "id": 7139,
+          "name": "",
+          "defines": {
+            "INDEXED_COVERAGE": "",
+            "EMBEDDED_SHP_SHADOW": "",
+            "NEAREST_INDEXED_BODY": "",
+            "VERTEX_PALETTE_OFFSET": "",
+            "USE_VERTEX_COLOR_MULT": ""
+          },
+          "customKey": "m15-sprite-coverage-v2/embedded-shadow-v1",
+          "transparent": false,
+          "side": 2,
+          "forceSinglePass": false,
+          "alphaTest": 0.001,
+          "clippingPlanes": 0,
+          "hdPass": 3,
+          "hdFiltering": true,
+          "map": {
+            "uuid": "d0faba2f-1ec2-4e9f-9ca6-d9c7d6d452f8",
+            "name": "",
+            "width": 504,
+            "height": 478,
+            "format": 1023,
+            "type": 1009
+          },
+          "palette": {
+            "uuid": "9998e21c-0bcf-4a8f-a46b-13239caa3a15",
+            "name": "",
+            "width": 256,
+            "height": 21,
+            "format": 1023,
+            "type": 1009
+          },
+          "particleTexture": null
+        },
+        "object": {
+          "id": 11145,
+          "name": "",
+          "type": "Mesh",
+          "parents": [
+            {
+              "id": 11145,
+              "name": "",
+              "type": "Mesh"
+            },
+            {
+              "id": 11144,
+              "name": "",
+              "type": "Object3D"
+            },
+            {
+              "id": 8497,
+              "name": "mesh_batch_manager",
+              "type": "Object3D"
+            },
+            {
+              "id": 468,
+              "name": "",
+              "type": "Scene"
+            }
+          ],
+          "castShadow": false,
+          "attributes": [
+            "position",
+            "uv",
+            "hdFrameRect",
+            "shadowFrameRect",
+            "vertexColorMult",
+            "vertexPaletteOffset"
+          ],
+          "drawRange": {
+            "start": 0,
+            "count": 12
+          }
+        },
+        "familyMatchesAtCaptureEnd": [
+          "SLAV"
+        ],
+        "sourceSha256": [
+          "cb4fdfc84644c8d7f6fb0e3359779578d3274de13d4deaf0da2d4f517b6655f6",
+          "08a2f0234eda5904de79f883d9d0ef8bdde557dd4ec9745c5918a1ac975ff6e0"
+        ]
+      }
+    ],
+    "waits": [
+      {
+        "atMs": 34259.235000014305,
+        "tick": 1468,
+        "playing": true,
+        "program": 1,
+        "cpuMs": 3.350000023841858,
+        "material": {
+          "type": "ShaderMaterial",
+          "id": 7046,
+          "name": "",
+          "defines": {
+            "HAS_PERSPECTIVE": false,
+            "COLORIZE": true,
+            "VALUE_OVER_LIFETIME_LENGTH": 4,
+            "SHOULD_ROTATE_TEXTURE": false,
+            "SHOULD_ROTATE_PARTICLES": false,
+            "SHOULD_WIGGLE_PARTICLES": false,
+            "SHOULD_CALCULATE_SPRITE": true
+          },
+          "customKey": "onBeforeCompile(){}",
+          "transparent": true,
+          "side": 0,
+          "forceSinglePass": true,
+          "alphaTest": 0,
+          "clippingPlanes": 0,
+          "map": null,
+          "palette": null,
+          "particleTexture": {
+            "uuid": "32e57a1d-d3e0-49a3-adc9-042ccf2a020f",
+            "name": "",
+            "width": 960,
+            "height": 48,
+            "format": 1023,
+            "type": 1009
+          }
+        },
+        "object": {
+          "id": 10949,
+          "name": "fx_damage_smoke",
+          "type": "Points",
+          "parents": [
+            {
+              "id": 10949,
+              "name": "fx_damage_smoke",
+              "type": "Points"
+            },
+            {
+              "id": 468,
+              "name": "",
+              "type": "Scene"
+            }
+          ],
+          "castShadow": false,
+          "attributes": [
+            "position",
+            "acceleration",
+            "velocity",
+            "rotation",
+            "rotationCenter",
+            "params",
+            "size",
+            "angle",
+            "color",
+            "opacity"
+          ],
+          "drawRange": {
+            "start": 0,
+            "count": 1000
+          }
+        }
+      },
+      {
+        "atMs": 37392.08500003815,
+        "tick": 1679,
+        "playing": true,
+        "program": 2,
+        "cpuMs": 5.8450000286102295,
+        "material": {
+          "type": "HdSpriteMaterial",
+          "id": 7139,
+          "name": "",
+          "defines": {
+            "INDEXED_COVERAGE": "",
+            "EMBEDDED_SHP_SHADOW": "",
+            "NEAREST_INDEXED_BODY": "",
+            "VERTEX_PALETTE_OFFSET": "",
+            "USE_VERTEX_COLOR_MULT": ""
+          },
+          "customKey": "m15-sprite-coverage-v2/embedded-shadow-v1",
+          "transparent": false,
+          "side": 2,
+          "forceSinglePass": false,
+          "alphaTest": 0.001,
+          "clippingPlanes": 0,
+          "hdPass": 3,
+          "hdFiltering": true,
+          "map": {
+            "uuid": "d0faba2f-1ec2-4e9f-9ca6-d9c7d6d452f8",
+            "name": "",
+            "width": 504,
+            "height": 478,
+            "format": 1023,
+            "type": 1009
+          },
+          "palette": {
+            "uuid": "9998e21c-0bcf-4a8f-a46b-13239caa3a15",
+            "name": "",
+            "width": 256,
+            "height": 21,
+            "format": 1023,
+            "type": 1009
+          },
+          "particleTexture": null
+        },
+        "object": {
+          "id": 11145,
+          "name": "",
+          "type": "Mesh",
+          "parents": [
+            {
+              "id": 11145,
+              "name": "",
+              "type": "Mesh"
+            },
+            {
+              "id": 11144,
+              "name": "",
+              "type": "Object3D"
+            },
+            {
+              "id": 8497,
+              "name": "mesh_batch_manager",
+              "type": "Object3D"
+            },
+            {
+              "id": 468,
+              "name": "",
+              "type": "Scene"
+            }
+          ],
+          "castShadow": false,
+          "attributes": [
+            "position",
+            "uv",
+            "hdFrameRect",
+            "shadowFrameRect",
+            "vertexColorMult",
+            "vertexPaletteOffset"
+          ],
+          "drawRange": {
+            "start": 0,
+            "count": 12
+          }
+        }
+      }
+    ],
+    "firstUses": [
+      {
+        "atMs": 34259.705000042915,
+        "tick": 1468,
+        "playing": true,
+        "program": 1
+      },
+      {
+        "atMs": 37392.60000002384,
+        "tick": 1679,
+        "playing": true,
+        "program": 2
+      }
+    ],
+    "deletions": [
+      {
+        "atMs": 36123.60500001907,
+        "tick": 1595,
+        "playing": true,
+        "program": 1
+      },
+      {
+        "atMs": 38243.90499997139,
+        "tick": 1738,
+        "playing": true,
+        "program": 2
+      }
+    ]
+  },
+  "exportValidation": {
+    "status": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+    "archive": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c6-shader-identity-kit-v4/WINHD-20261008-D38F136-C6-RETURN-2026-10-10T01-40-07-984Z.zip",
+    "bytes": 136066861,
+    "sha256": "e5c18f1dcdda9d33decba0ab71698b4e0853e786bb18b59802631bb42873ba61",
+    "files": 18,
+    "runs": 1,
+    "diagnosticId": "WINHD-20261008-D38F136-C6",
+    "diagnosticCommit": "4d3e41f5ffe2746ada9bc765a407f00638cb4705",
+    "manifestSha256": "f7bdd2665e180d4aa7528c3520bea9af45bfa2b4f00b26418eb27ab471bf526a",
+    "extractedDirectory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c6-shader-identity-export-validated-v4",
+    "launcherPolicy": "Inspected as data only; no returned scripts executed.",
+    "launchers": [
+      {
+        "file": "Export-Reports.cmd",
+        "status": "IDENTICAL",
+        "sha256": "25e23098719b40880c953b1ca32ce71489741e5840aae605e196fd858c64b0fc"
+      },
+      {
+        "file": "Launch-Diagnostics.cmd",
+        "status": "IDENTICAL",
+        "sha256": "fc19bca2c7702ddf885c710ded6e6a6e822bc8318ea9b0b9450d0db320c12938"
+      },
+      {
+        "file": "Run-Control.cmd",
+        "status": "IDENTICAL",
+        "sha256": "69705b9577c1a5f9cceed33612b407d9110317d9a9eab76ec570507da20255db"
+      },
+      {
+        "file": "Verify-Kit.cmd",
+        "status": "IDENTICAL",
+        "sha256": "812399b452707c4a00757b168629eaedd761f5ec57d4584cd43dd3806d5d9722"
+      }
+    ]
+  },
+  "runtimeStaging": {
+    "receipt": ".artifacts/windows-hd-diagnostic/c6-shader-identity-runtime-staging-v2.json",
+    "status": "PASS_BYTE_IDENTICAL_RUNTIME_STAGING",
+    "files": 73,
+    "bytes": 385513417,
+    "entryResolution": "PASS_RELATIVE_ENTRY_EXISTS",
+    "platform": "darwin",
+    "windowsExecution": "NOT_RUN"
+  },
+  "focusedTests": {
+    "pass": 9,
+    "assertions": 62,
+    "receipt": ".artifacts/windows-hd-diagnostic/c6-shader-identity-tests-v3.log"
+  },
+  "preservedFailedQA": [
+    ".artifacts/windows-hd-diagnostic/c6-shader-identity-native-v1-failure.json",
+    ".artifacts/windows-hd-diagnostic/c6-shader-identity-native-v2/report.json",
+    ".artifacts/windows-hd-diagnostic/c6-shader-identity-native-v3/report.json"
+  ],
+  "applicationParity": "No src, desktop or build/dependency file differences from 975cfc0; S1 modifies only opt-in standalone tooling.",
+  "main": {
+    "head": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "status": "CLEAN_UNMODIFIED"
+  },
+  "peerM23": {
+    "head": "12bc0c38b481cdb7d4eb9b3892f76f14cdde32b2",
+    "status": "CLEAN_READ_ONLY_AUDIT_UNTOUCHED"
+  },
+  "acceptance": {
+    "windowsCompanionExecution": "NOT_RUN",
+    "windowsExactShaderIdentity": "PENDING_RETURN",
+    "c6StressExperience": "OPEN_USER_REPORTS_ESSENTIALLY_NO_DIFFERENCE",
+    "c4Small": "USER_ACCEPTED",
+    "performanceFix": "NOT_CLAIMED",
+    "gpuExecutionTime": "UNAVAILABLE",
+    "actualProcessVram": "UNAVAILABLE",
+    "mainIntegration": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED"
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "schema": "m2-3-feedback-r15-v1",
+  "status": "TECHNICAL_DELIVERY_PASS_USER_REJECTED_REAR_MECHANISM",
+  "runtimeSourceCommit": "abc04de78ca80321c08146fde4f25e04422209b7",
+  "scope": "Restore the missing large eccentric oil rotor while preserving the user-accepted R13 beam and fixed-shaft rotation.",
+  "environmentSelection": {
+    "schemaVersion": 1,
+    "revision": "environment-m2-3-oil-eccentric-rotor-complete-v30",
+    "sha256": "6be0c27490f04a4991eee5711daa9cf2af167d2065b5769255ee3b8e1d6e5d42"
+  },
+  "terrainSelection": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-3-gameplay-feedback-v12",
+    "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+  },
+  "correction": {
+    "rootCause": "R14 retained only a small crank and omitted the substantial eccentric rotating counterweight visible in Original.",
+    "method": "A complete solid dark-steel rotor and crank rotate rigidly about the fixed axle; the eccentric pin connects to the posterior rod, with the beam shaft spacer retained.",
+    "mechanismChecks": {
+      "fixedCenter": [
+        49,
+        36
+      ],
+      "modelCrankRadius": 7.9,
+      "phases": 32,
+      "fullRevolution": true,
+      "projectedAffineAreaRange": [
+        -0.00015084566956897585,
+        -0.00015084566956897558
+      ],
+      "invariantTransformSingularValues": true,
+      "acceptedR13BeamCoverageAndOpaqueMaterial": "EXACT_128_FRAMES",
+      "negativeControlR13LinearScaleRatio": 3.973410936387834,
+      "negativeControlR13AreaRatio": 15.787994469406442,
+      "reference": "Untouched Original full cycle; posterior rod joint is separate from beam shaft spacer",
+      "largeEccentricCounterweight": {
+        "sourceOpaquePixels": 554992,
+        "modelMassCentroidRadius": 7.327167313755384,
+        "fullCycleInsideLogicalCanvas": true,
+        "silhouetteBounds": [
+          37.62809850107489,
+          60.37190149892511,
+          21.488477416631607,
+          50.51152258336839
+        ]
+      }
+    },
+    "originalReference": "Untouched Original full-cycle native recording, source frames and user reference; reconstructed geometry, not recovered Original 3D model.",
+    "alphaTailLimit": "Only authored alpha 1/255 tails extend beyond the native canvas; the opaque rotor silhouette is inside throughout, and complete moving core has no clipped samples."
+  },
+  "authoring": {
+    "mode": "builtin_imagegen",
+    "selectedAsset": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/authoring/eccentric-counterweight-v2.png",
+    "selectedPrompt": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/authoring/edit-request-v2.json",
+    "files": [
+      {
+        "file": ".artifacts/m2-3/feedback-r15-v1/authoring/eccentric-counterweight-v2.png",
+        "sha256": "9dd56025b77160643d8ace0019ffcd5da97475af4cc6f3e12d7f8aace583c1ff"
+      },
+      {
+        "file": ".artifacts/m2-3/feedback-r15-v1/authoring/edit-request-v2.json",
+        "sha256": "46fa5cb91bd86f7e0a982582eeebfc77f48c8632d2353c7162beb07d0935899b"
+      },
+      {
+        "file": ".artifacts/m2-3/feedback-r15-v1/authoring/eccentric-counterweight.png",
+        "sha256": "44c6ff733cfb056fb2704bc405cd887ac3ba57b51b9f53cec8d7f6fcd79cd35c"
+      },
+      {
+        "file": ".artifacts/m2-3/feedback-r15-v1/authoring/edit-request.json",
+        "sha256": "2701e0e8c7dbf68054efa44bf7538ee77d1eb6cc16af4db210dcd0b07918a074"
+      }
+    ]
+  },
+  "preservation": {
+    "acceptedR13BeamMaterialCoveragePosesAndFrontRod": "UNCHANGED",
+    "opaqueBeamPixelsAndCoverage": "EXACT_128_FRAMES",
+    "bodyFlagOwnerDataGeometryShadowsTiming": "UNCHANGED",
+    "nonOilFamilies": 237,
+    "nonOilFiles": 1970,
+    "applicationSourceFilesExceptEnvironmentSelection": 1454,
+    "nonEnvironmentWorldPackageEntries": 4738,
+    "uiPackageEntries": 360
+  },
+  "technicalStatus": {
+    "staticDensityStateFrames": 128,
+    "copiedNativeCases": 4,
+    "copiedNativeClips": 20,
+    "normalLoopFrames": 32,
+    "damagedLoopFrames": 31,
+    "extractedNativeCases": 2,
+    "reviewPages": 4,
+    "embeddedImages": 13,
+    "embeddedVideos": 31,
+    "sourceAndDesktopOfflinePlayback": "PASS",
+    "actualDesktopArchiveExtractionSignatureAndStartup": "PASS",
+    "visibleChecklistTitles": 61
+  },
+  "reusedR7NativeMapLoading": {
+    "ra2": 31,
+    "yr": 80,
+    "status": "REUSED_CLOSED_EVIDENCE_NOT_RERUN_R15",
+    "basis": "Application source, maps, logical frames and decoding contracts unchanged."
+  },
+  "desktopGame": {
+    "file": "/Users/Aone/Desktop/M2.3-R15-Desktop-Mac-Test-20261010.zip",
+    "bytes": 3789121574,
+    "sha256": "e877bd06bb5d927aed886f8c77115fc53947a47a58afddc10d9d06bcd93692d6"
+  },
+  "desktopReviewEntry": "/Users/Aone/Desktop/M2.3-R15-Offline-Review-20261010/Review.html",
+  "desktopReviewArchive": {
+    "file": "/Users/Aone/Desktop/M2.3-R15-Offline-Review-20261010.zip",
+    "bytes": 58162983,
+    "sha256": "a2b71220cc96389b77122f9097a7c513c7d284940b83f0cc7416ee3e8c75074c"
+  },
+  "mapLists": [
+    {
+      "file": "/Users/Aone/Desktop/M2.3-R15-Temperate-Map-Test-List.txt",
+      "bytes": 3960,
+      "sha256": "84da6452b92de4fad4426e60144aabdb013ca784048a027142ab9738b2919f73"
+    },
+    {
+      "file": "/Users/Aone/Desktop/M2.3-R15-Temperate-Map-Test-List.csv",
+      "bytes": 5522,
+      "sha256": "997cd350adc2d3da7e35bc088a461a014e01d7045e0f97dd0eee70a633c24d08"
+    }
+  ],
+  "observedMain": {
+    "head": "bc581b1c3c871199ac568939723324e4cfce6b2c",
+    "status": ""
+  },
+  "priorFeedback": [
+    {
+      "revision": "R13",
+      "beam": "USER_ACCEPTED",
+      "historicalReceipts": "PRESERVED"
+    },
+    {
+      "revision": "R14",
+      "rearMechanism": "USER_REJECTED_MISSING_LARGE_ECCENTRIC_COUNTERWEIGHT",
+      "technicalDelivery": "PASS_HISTORICAL_RECEIPTS_PRESERVED"
+    }
+  ],
+  "visualAcceptance": "USER_REJECTED_SIZE_PERSPECTIVE_THIN_ROD_MISSING_SECOND_MECHANISM",
+  "fullMatchUserAcceptance": "NOT_RECORDED_R15",
+  "windows": "NOT_RUN",
+  "physicalInput": "NOT_RUN",
+  "handoff": "Continue this correction and visual acceptance in the current execution chat; no main integration or adjacent milestone.",
+  "receipts": {
+    "oil-static-v2/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/oil-static-v2/report.json",
+      "sha256": "afe5a5f5765f4b5015d0923c5effbac70a6ab0c43b54d86dc90960addfcff2bd"
+    },
+    "environment-assembly-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/environment-assembly-v1.json",
+      "sha256": "80d4f6fe352d148e347884d41296b1d068ce80d971b38405e8dd06368f010f4e"
+    },
+    "registration-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/registration-v1.json",
+      "sha256": "57d4ef31362d7386829741d0f6c2d6e3628596048ba302753e2a7da2f7f23262"
+    },
+    "preservation-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/preservation-v1.json",
+      "sha256": "07a5c18ea5658239d726d9d6f9dd20acaa1605340526e5251337ebced0ecbe2e"
+    },
+    "source-checks-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/source-checks-v1.json",
+      "sha256": "09ce7723079234844bc48676349327e2827356ef27fbce8366dbf3d23d5ddb84"
+    },
+    "package-resource-parity-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/package-resource-parity-v1.json",
+      "sha256": "380c19068af8a5506da550ef160c6b24ec4ecae32947e9b008d94cacc8050ec6"
+    },
+    "native-summary-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/native-summary-v1.json",
+      "sha256": "ca5596c6d7781bebeb4f723cc9534027191000139379a742b4881fc6f0dbed86"
+    },
+    "extracted-native-summary-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/extracted-native-summary-v1.json",
+      "sha256": "f61bd238cd5f3dd31c85539b9c5f8c4197df358a29578407179e10615c6a6bf9"
+    },
+    "offline-review-v1/review-manifest.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/offline-review-v1/review-manifest.json",
+      "sha256": "a22b871fd9ab4f391a6fa1d5b23fd955821590d8601bed9213a78a96f19f9e7d"
+    },
+    "offline-review-archive-v1/archive-receipt.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/offline-review-archive-v1/archive-receipt.json",
+      "sha256": "5cbcfc3dc06db4ad257957f131fec7ba00697db70bcece77652dcb9e652289fb"
+    },
+    "offline-review-native-v1/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/offline-review-native-v1/report.json",
+      "sha256": "86f71e9e82c00683348fb3661f856bb2bd597d9ce434fa5c8174708115ce70d6"
+    },
+    "desktop-review-native-v1/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/desktop-review-native-v1/report.json",
+      "sha256": "86f71e9e82c00683348fb3661f856bb2bd597d9ce434fa5c8174708115ce70d6"
+    },
+    "desktop-delivery-v1/archive-receipt.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/desktop-delivery-v1/archive-receipt.json",
+      "sha256": "aca270a033793dbfdcd8ae973ff2df0441c917d09797cfee5e2733c157a6f573"
+    },
+    "desktop-review-files-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/desktop-review-files-v1.json",
+      "sha256": "78a269d7cfa7f1edeb4bb847a21dcfc19bc9ebf9611effeea3cfd52f0b5a45ab"
+    },
+    "desktop-game-file-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/desktop-game-file-v1.json",
+      "sha256": "103e7b823f7f065fb50a2940cf40864add05577f7a2f2645af8cf748ed7865e2"
+    },
+    "desktop-extraction-v1/extracted-package-receipt.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/desktop-extraction-v1/extracted-package-receipt.json",
+      "sha256": "b88ba6474a2602da9409bedab8f6f715fca56f99a995066e3b94f252d047c74f"
+    },
+    "desktop-startup-v1/report.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/desktop-startup-v1/report.json",
+      "sha256": "fba7a9be7ee19e69547e7280e1ab008f25e9e661202f9b2a24653dd295f1e0dc"
+    },
+    "final-preservation-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/final-preservation-v1.json",
+      "sha256": "caded37952a5038aa2a7ea39467c56d0160ab5fe3ee79788543b4102ba4b3c8c"
+    },
+    "authoring-inputs-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/authoring-inputs-v1.json",
+      "sha256": "b48afda177a7885f4ac717481fb20804c205358f53352943949ec06796a15fbf"
+    },
+    "authoring/edit-request-v2.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/authoring/edit-request-v2.json",
+      "sha256": "46fa5cb91bd86f7e0a982582eeebfc77f48c8632d2353c7162beb07d0935899b"
+    },
+    "candidate-disposition-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/candidate-disposition-v1.json",
+      "sha256": "37ea18b4fab3f50bc00a3c2b85161d29ab214aed3cb8831f3267878b0b1f20d8"
+    },
+    "alpha-tail-diagnostic-v1.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/alpha-tail-diagnostic-v1.json",
+      "sha256": "0f12ed273f9bf929774e95b61b65dd8c419a8f9b47a23e29987ce15e9b65caee"
+    },
+    "oil-export-v2.json": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/feedback-r15-v1/oil-export-v2.json",
+      "sha256": "2faaab6aecd13b0a45e2d53dcb725e463192379f6629459e4170f6696316e43e"
+    }
+  },
+  "visualRejection": {
+    "reason": "Counterweight too small, wrong perspective, connecting rod too thin; Original has two rotors and two rods on opposite sides of the fixed housing.",
+    "supersededBy": "R16"
+  }
+}

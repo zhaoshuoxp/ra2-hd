@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "taskId": "E",
+  "status": "YURI_CAMEOS_E_ACCEPTED_AND_INTEGRATED_INTO_MAIN",
+  "authorizationDate": "2026-10-01",
+  "worktree": "/Users/Aone/RA2remaster/ra2-hd",
+  "branch": "main",
+  "preMergeMainHead": "ee4c15f490464a2d6f90fc4ec3da47a155424146",
+  "acceptedEHead": "cd6944def05dc4444f0e904c8eea29f6c381cdbe",
+  "mergeCommit": "7ca2be924c66ae1ff0a85118c262fe0ef37460d3",
+  "appSourceHead": "5fa62ebff13c76f1c4c2c104253e07932e529787",
+  "packageCorrectionHead": "8062c92d459b3bc00ad40f9cb0b244c53f2225ea",
+  "finalCheckpoint": ".artifacts/yuri-cameos-main-integration-v1/final-checkpoint.json",
+  "historyPreserved": true,
+  "initialMainClean": true,
+  "initialEClean": true,
+  "excludedBranches": [
+    "task/d-yuri-units-hd",
+    "fix/allied-animation-sidebar",
+    "fix/skirmish-loading-isolated"
+  ],
+  "peerUncommittedContentUsedAsImplementation": false,
+  "sidebarFlashingFix": "NOT_MERGED_NOT_CERTIFIED",
+  "selectionBefore": {
+    "schemaVersion": 1,
+    "revision": "remaining-ui-v4",
+    "sha256": "1da8b86dccd529314d83836c990e2bf0f542397e32cd8d65bc1cd904585a08d8",
+    "reviewOnly": false
+  },
+  "selectionAfter": {
+    "schemaVersion": 1,
+    "revision": "yuri-cameos-e-main-v1",
+    "sha256": "052c1ca0294344e21b3bb4fe881aece611232000e6efc3ec2ad1306efaf3a890",
+    "reviewOnly": false
+  },
+  "selectionFile": "/Users/Aone/RA2remaster/ra2-hd/.local/ui-selection.json",
+  "activeUiPack": "/Users/Aone/RA2remaster/ra2-hd/.local/ui-packs/yuri-cameos-e-main-v1",
+  "stagingPack": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/resource-staging/yuri-cameos-e-main-v1",
+  "preservedUiEntries": 430,
+  "newCanonicalPictures": 31,
+  "newRankAliases": 12,
+  "newYuriLoadingBackgrounds": 1,
+  "additiveEntries": 44,
+  "combinedEntries": 474,
+  "acceptedSourceExportProvenanceCopies": 113,
+  "validatedAcceptedSupplementFiles": 55,
+  "existingWorldResourcesWritten": 0,
+  "resourcePreservation": {
+    "status": "PASS_C_WORLD_REGISTRATION_AND_EXISTING_RESOURCES_PRESERVED",
+    "existingEntriesPreserved": 20906,
+    "worldRegistrationEqual": true,
+    "criticalCSourceHashesPreserved": {
+      "desktop/yuri-building-coverage.json": "66f4a2f735fb6628d4dea3b59b30af268e4408f2bbfdb823a4a0e9830d21ceeb",
+      "desktop/building-turret-contracts.json": "4920562350ad73a5766ee7391f5c6d79dbb24dd8989a945851730a2e6fe613a6",
+      "desktop/profile.mjs": "70712e0ce4503ae0d6b6b25984d43e4070588893f4ce614069d7f5995447eeaf",
+      "src/game/gameobject/task/EnterBunkerTask.ts": "e1a768f09fdff2b3851ece3622609b8607abbe0da0b9e36ca9afd6e9f244c58c"
+    },
+    "checkMethod": "Exact existing metadata, symlinks and JSON hashes; no broad native archive rehash.",
+    "recoveryEvidence": ".artifacts/yuri-cameos-main-integration-v1/pre-merge/"
+  },
+  "runtimeBudgets": {
+    "uiBytes": 16777216,
+    "uiEntryLimit": 512,
+    "world2xBytes": 268435456,
+    "world4xBytes": 1342177280,
+    "changed": false
+  },
+  "tests": {
+    "loadingUiRootBunker": {
+      "passed": 8,
+      "assertions": 55
+    },
+    "focusedCBothDensityResources": {
+      "passed": 3,
+      "assertions": 310,
+      "families": [
+        "YAPPET",
+        "NATBNK",
+        "YAGNTC"
+      ]
+    },
+    "entryTypecheck": "PASS",
+    "applicationBuilds": 1
+  },
+  "eNative": {
+    "status": "PASS_MAIN_E_FOCUSED_BINDINGS_AND_YURI_LOADING",
+    "actualNewMatchCases": 1,
+    "canonicalBindings": [
+      "YABRCK",
+      "YAPOWR",
+      "INIT",
+      "LTNK"
+    ],
+    "powers": [
+      "ForceShieldSpecial",
+      "PsychicRevealSpecial",
+      "GeneticConverterSpecial",
+      "PsychicDominatorSpecial"
+    ],
+    "loadingArtworkId": "loading-background-yuri",
+    "loadingImageSha256": "730b7819866cc593ec5979d46e069c596ba69e77c7716d1fe4a002608ddbc93f",
+    "loadingReservationBytes": 6290112,
+    "peakUiBytes": 13672192,
+    "hdOffReservationBytes": 0,
+    "hdOriginalHd": "PASS",
+    "nativeGeometryUvName": "PASS",
+    "rendererErrors": 0,
+    "earlierThreeFactionForceShieldEvidence": "REUSED_ACCEPTED_NOT_RERUN"
+  },
+  "cNative": [
+    {
+      "report": ".artifacts/yuri-cameos-main-integration-v1/native-c-temperate-2x-v2/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "snow": false,
+      "density": 2,
+      "families": [
+        "YAPPET",
+        "NATBNK",
+        "YAGNTC"
+      ],
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 116391684,
+        "demand": 28876492,
+        "total": 175771568,
+        "limit": 268435456
+      },
+      "nativeBunkerDockExact": true,
+      "mutatorEffectSamples": 56,
+      "nativeCases": [
+        "Tank-Bunker-occupy-evacuate",
+        "YAGNTC-native-charge-fire-close",
+        "YAPPET-native-charge-fire-close"
+      ],
+      "errors": []
+    },
+    {
+      "report": ".artifacts/yuri-cameos-main-integration-v1/native-c-snow-4x/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "snow": true,
+      "density": 4,
+      "families": [
+        "YAPPET",
+        "NATBNK",
+        "YAGNTC",
+        "YAGGUN"
+      ],
+      "worldAllocation": {
+        "baseline": 69948788,
+        "eager": 431447736,
+        "demand": 112001104,
+        "total": 613397628,
+        "limit": 1342177280
+      },
+      "nativeBunkerDockExact": true,
+      "mutatorEffectSamples": 55,
+      "nativeCases": [
+        "Tank-Bunker-occupy-evacuate",
+        "YAGNTC-native-charge-fire-close",
+        "YAPPET-native-charge-fire-close"
+      ],
+      "errors": []
+    }
+  ],
+  "appDiscovery": {
+    "status": "PASS_COPIED_APP_AUTODISCOVERY_AND_INDEPENDENT_UI_ROOT",
+    "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/delivery/RA2-HD-Main-C-E-Review-R1/Red Alert 2 HD Main C E Review R1.app",
+    "profile": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/launch-check/profile",
+    "preseededRegistration": false,
+    "errors": [],
+    "uiRevision": "yuri-cameos-e-main-v1",
+    "defaultDensity": 4,
+    "registeredRoot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/delivery/RA2-HD-Main-C-E-Review-R1/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/delivery/RA2-HD-Main-C-E-Review-R1/RA2-HD-Main-E-UI-Resources"
+  },
+  "delivery": {
+    "status": "PASS_INDEPENDENT_MAIN_C_E_PACKAGE_REGISTRATION",
+    "sourceHead": "5fa62ebff13c76f1c4c2c104253e07932e529787",
+    "packagingHead": "8062c92d459b3bc00ad40f9cb0b244c53f2225ea",
+    "build": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/build",
+    "folder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/delivery/RA2-HD-Main-C-E-Review-R1",
+    "app": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/delivery/RA2-HD-Main-C-E-Review-R1/Red Alert 2 HD Main C E Review R1.app",
+    "executable": "RA2 HD Editions",
+    "resources": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/delivery/RA2-HD-Main-C-E-Review-R1/RA2-HD-Editions-Resources",
+    "uiRoot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/delivery/RA2-HD-Main-C-E-Review-R1/RA2-HD-Main-E-UI-Resources",
+    "uiRevision": "yuri-cameos-e-main-v1",
+    "uiManifestSha256": "052c1ca0294344e21b3bb4fe881aece611232000e6efc3ec2ad1306efaf3a890",
+    "nativeWorldResourceFiles": 5635,
+    "routes": 3384,
+    "signature": "PASS_DEEP_STRICT",
+    "profile": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/delivery/RA2-HD-Main-C-E-Review-R1/Review-Profile",
+    "launcher": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yuri-cameos-main-integration-v1/delivery/RA2-HD-Main-C-E-Review-R1/Launch-Isolated-Review.command",
+    "cFinalVisualAcceptance": "PENDING",
+    "eVisualAcceptance": "USER_ACCEPTED",
+    "builds": 1
+  },
+  "cFinalVisualAcceptance": "PENDING",
+  "eVisualAcceptance": "USER_ACCEPTED",
+  "compiledSourceBoundary": "One build from a clean merged main; subsequent changes are packaging/test/documents only. Compiled desktop production files match current main.",
+  "evidence": [
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/pre-merge/snapshot.json",
+      "sha256": "fb4cefbbfd2a908f05f09886db5cdf9704c73573ca42e1e3d744a950ceb9a859",
+      "bytes": 4215909
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/pre-merge/ui-selection.json",
+      "sha256": "d6ae8acb846fd73cb0a8235d340b444f37c7934642b3bbd534bd87986e821d0c",
+      "bytes": 161
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/pre-merge/registration.json",
+      "sha256": "190ef09f40579eb8c2d6f15c6dc45c2e512841059b31bc5514bf8e734014dd47",
+      "bytes": 1373736
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/resource-transfer.json",
+      "sha256": "f300b0acb224d65b6cedb9c815bfae923b041eb9e82c1431913242a1b13f2d3b",
+      "bytes": 33990
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/registration-after.json",
+      "sha256": "aa8f019b3d4e0bc4f77bebf735aa181b5e50f2dcc9934145d6bc44f01170e4b7",
+      "bytes": 663521
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/package.json",
+      "sha256": "e882912d88644ade4e7811a42807a07ff6a51002d7b5c5b0439a237638936700",
+      "bytes": 1515
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/diagnostic-attempts.json",
+      "sha256": "962d6fc235c049f08d3002656da352c7f2905ca71da69aa3ed69574e86d7f25c",
+      "bytes": 1831
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/runtime-e-v2/result.json",
+      "sha256": "085b45570f2dc40909be7872bfc5cffff292dc2f1fb55ba358018f44e91a4999",
+      "bytes": 30972
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/native-c-temperate-2x-v2/report.json",
+      "sha256": "45ccb7a37f5161f79a0faa10b60f381a5e16c0c2b67e98aed4045a0b84fc0967",
+      "bytes": 2489999
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/native-c-snow-4x/report.json",
+      "sha256": "ec83c238a18cd83e0c75707c04035573e953b82c83fcf550ac08c2105b03f289",
+      "bytes": 3172814
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/launch-check/report.json",
+      "sha256": "e0d8c724ab15c17fa13857b257f0710f936d987f76dfaca9fc74dc8e5af5d127",
+      "bytes": 765
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/ui-bunker-tests.log",
+      "sha256": "7aa3558d07424148d963c9718fd20d8404b4f59667dc9579539ee0d57468e75a",
+      "bytes": 1047
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/c-resource-tests.log",
+      "sha256": "bf86899d2497c1c32ee1b544446a968a2036af22a8cb927bd72683dda480d952",
+      "bytes": 447
+    },
+    {
+      "file": ".artifacts/yuri-cameos-main-integration-v1/typecheck.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+      "bytes": 39
+    }
+  ],
+  "diagnostics": ".artifacts/yuri-cameos-main-integration-v1/diagnostic-attempts.json",
+  "limits": [
+    "C final visual acceptance remains pending",
+    "Sidebar flashing peer remains unmerged",
+    "D and loading optimization excluded",
+    "Windows NOT_RUN",
+    "No repeated full historical matrix or new hardware pressure certification",
+    "Controlled legal fixtures, passive bots and one-time native superweapon charge presets disclosed"
+  ],
+  "remotePush": "NOT_PUSHED",
+  "branchesDeleted": false,
+  "historicalCleanup": false,
+  "cContinuationContract": "docs/yuri-cameos-task-c-handoff.md"
+}

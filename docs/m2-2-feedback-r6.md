@@ -1,0 +1,19 @@
+# M2.2 R6 feedback delivery
+
+The marked screenshot reopened water/shore tile edges, bridge joins/color and repair-hut occlusion, and TREE14 lighting/shadow. The corrected copied Mac runtime is `fc89fe9b01a3ffc1d9586c5f215d1ca227b74184`; the documentation checkpoint follows it. New visual acceptance remains pending. Content outside the reported feedback retains the user's approval.
+
+Water uses native color regions and per-sub-tile retail contact pixels, with a two-pixel fade and extruded transparent RGB. Land interiors and warm rock islands remain exact. Concrete asphalt is darker and closer to the adjoining road: sampled neutral asphalt mean changes from approximately 71/72/69 to 60/63/62, versus 60/62/58 on the road. Native lane, curb, damage and logical geometry remain authoritative.
+
+Bridge page changes had replaced the material and restored depth writing. Persistent depth options and separate cache keys now retain the native overlay policy across HD pages and Original fallback; filtered bridge contours draw before raised sprites. The repair hut remains fully visible in copied 2X/4X captures and the native damaged/demolished/repaired cases. TREE14 restores retail foliage tone and filters its native shadow contour at 0.38 opacity. Other trees and Original fallback keep their previous shadow path. Earlier R5 mineral and waterfall corrections are retained, including native waterfall masks/frame timing and 0.64 visual opacity.
+
+Six terrain groups and 92 SHP families remain byte-identical to R4. The changed SHP families are concrete bridge, ore, gem, WB01X, WB04X and TREE14. Both independent densities pass source/family/page, native alpha/remap/frame/contact and allocation/disposal checks. All 24 focused tests and entry type checking pass.
+
+Copied YR 2X/4X native garrison/evacuation, bridge damage/demolition/repair, ore harvesting and waterfall phases pass. The same gas station uses red and blue occupier player colors in its original remap regions, then returns to neutral. Enemy fixture commands are created by native ActionsApi and processed directly; both players have revealed shroud. Native simulation tasks perform ownership changes. This does not impose fixed Allied/Soviet/Yuri colors or recolor every building surface. RA2 2X shared map bindings also pass.
+
+The focused fixtures use 256,128,816 bytes at 2X against the unchanged 268,435,456-byte limit, and 984,423,920 bytes at 4X against 1,342,177,280. Three settled scene samples per density average approximately 16.67 ms, with p95 at most 18.32 ms and no frames above 50 ms. These short Mac samples do not establish Windows or natural-match performance. Previously closed R4 gameplay/lifecycle/fallback matrices remain reused for unchanged content.
+
+The independent copied delivery verifies 6,513 regular files, 14 symlinks, signature validity and 4,995 exact shared main payloads. The standalone review embeds six scenes across Original/R4/2X/4X, eight native-state images and four clips; all 32 images, exact framebuffer detail crops and video playback pass with zero network requests. It requires no server or sibling media.
+
+Delivery paths and hash-pinned evidence are in [m2-2-feedback-r6.json](m2-2-feedback-r6.json). The current [acceptance record](m2-2-acceptance.json) retains the R4 checkpoint and every raw diagnostic, including failed intermediate owner tests and the depth-policy investigation. The [resource transfer manifest](m2-2-resource-transfer.json) uses `ADD_IF_ABSENT_OR_IDENTICAL`; main is unchanged and promotion awaits combined visual acceptance. Windows performance and physical input remain deferred. No push, cleanup or publication was performed.
+
+Continue corrections and acceptance of this outcome in the same execution conversation. A new conversation is appropriate only after acceptance and a materially different objective.

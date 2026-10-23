@@ -1,0 +1,29 @@
+# M2.4 Urban road boundary geometry repair
+
+The user clarifies the R2 rejection: the dark asphalt and pale paving boundary must be straight on straight roads and regular circular arcs on bends. This supersedes the missing-detail state of R2. Material acceptance is not inferred. Reuse the two source-hashed Temperate-reference mothers and existing material calibration for a scoped geometry correction. No new generated image is needed.
+
+Gaussian distance-field smoothing retained the native boundary's low-frequency wiggles and dark paving stains. The new source-pinned vector profile separates material from boundary geometry. All 46 straight members use exact parallel lines, and seven ramp members use parallel lines in the actual ramp projection. The 29 bend/junction members use straight lines, ground-plane circles projected to ellipses, and tangent circular fillets. One compound corner retains its original major direction changes as several analytic pieces. Source masks establish location and footprint; they are not published as blurred enlarged boundaries. Independent 2X/4X scan conversion provides subpixel RGB antialiasing and a consistent pale curb.
+
+Original alpha, dimensions, TMP slots, offsets, Z, terrain/ramp types, map files, objects, source archives, gameplay and all 25 accepted unrelated groups remain exact. The vector profile is an offline authoring input reused by each source member on every map; no map-coordinate painting or runtime geometry/physics change occurs. Existing complete-family fallback, budgets and renderer behavior are unchanged. The exporter validates catalog hash, native member hash, source PNG hash and logical dimensions. Earlier export policies remain the default unless the explicit new geometry policy is present.
+
+Three new regressions verify that wavy source edges and dark paving stains produce exact parallel lines, a fitted projected bend has constant ground-plane radius, and a junction fillet meets both port tangents continuously. All eight earlier paint/material regressions also pass. Complete static native/atlas verification passes 82 members and 1,146 density pairs with 256 exact native-placeholder pairs. Native and final embedded review checks remain pending at this source checkpoint.
+
+Diagnostics retain initial general contour fits, the rejected cool-asphalt-only mask for bends, corrected opaque-composited previews and the corrected ramp-source diagnosis. Native slot/alpha comparisons did not support an empty-slot cause. Cool asphalt constrains straight/ramp strips; complete native masks constrain curved footprints so olive paint and wear do not split a bend. No source slot or native byte is deleted. Detailed attempts are in .artifacts/m2-4/urban-road-geometry-r3-v1/diagnostic-corrections.json.
+
+Technical results do not establish visual acceptance. R2 remains user rejected, R3 was subsequently accepted on 2026-10-14, Windows is NOT_RUN and M2.4 is INCOMPLETE. Preserve earlier resources, reviews and receipts. No main integration, push or independent per-batch game/resource package is produced.
+
+## External R3 delivered
+
+The isolated selection is urban-m2-4-side-roads-geometry-r10, SHA-256 269a77b5faa0b19150b5f2804b6ab62f31b27ef50991fc8cc35c5b239c0a730d. Runtime source b0b634cc passes new 2X/4X Mac cases with five matching cameras and 3,442 source placements across 56 road members. The other 26 members pass complete static closure and share the four actual family loading paths. All 63 loading tests pass 481 assertions, and all 11 road/material/geometry regressions pass. Original controls, loader disposal/Original fallback/Snow reentry and entry typecheck are explicitly reused.
+
+Atlas allocations remain 19,906,560/77,201,408 bytes, world charges 134,735,640/509,658,440 bytes and prepared CPU 44,943,988/108,580,412 bytes. The offline vector profile adds no runtime geometry, collision, camera or allocation cost. Both R2 generated mother hashes remain exact. The handoff pins all 59 ignored selected-pack files, the geometry/catalog inputs and prior complete material/source provenance.
+
+Desktop review: /Users/Aone/Desktop/M2.4-Review-Urban-Batch40-R3-20261014/M2.4-Urban-Batch40-R3-Embedded.html. SHA-256 16e00679748895a1e78d3c91d04c848d867168319e707080e5e1dff56a59db7c, 109,341,252 bytes. Its 207 exact embedded images comprise 15 matched native scene images, 164 member boards, 16 Original/R2/R3 boards, eight explicitly texture-free boundary controls and four matching native scene crops. Crops preserve 1:1 pixels; full captures remain embedded. The actual Desktop page passes native-size/density/fit checks with no scripts or external images. Only HTML and companion JSON are delivered.
+
+The native-slot diagnostic is closed: all seven ramps have exact native alpha. Its initial general check incorrectly zipped draw order with subTile order and stopped at a junction assertion. Identity lookup corrects that diagnostic; no source/slot change is made. The geometry fix uses source material/line authority rather than treating an unverified slot cause as an engine defect. All diagnostic outputs and prior rejected resources remain preserved.
+
+R3 technical status is PASS; visual acceptance is USER_ACCEPTED (2026-10-14). Windows is NOT_RUN and M2.4 is INCOMPLETE. Main remains clean at 748d0998, with no integration or push. No independent per-batch Mac game package is created; final milestone app/dependency delivery remains outstanding. Keep feedback and remaining theater production in this execution conversation.
+
+## User acceptance
+
+The user accepted Batch 40 R3 on 2026-10-14 and requested larger combined reviews for subsequent production. Acceptance covers the 82 road members and their corrected boundaries; earlier R1/R2 rejection records remain intact. Continue Urban water, shores, cliffs and related transitions. Full M2.4 delivery remains incomplete.

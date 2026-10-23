@@ -1,0 +1,143 @@
+{
+  "status": "PASS_DESKTOP_C_R6_DELIVERY_USER_VISUAL_REVIEW_PENDING",
+  "baseline": "bf8c55b",
+  "changedSelections": [
+    "yuri-yaggun-temperate",
+    "yuri-yaggun-snow",
+    "yuri-yagrnd-temperate",
+    "yuri-yagrnd-snow"
+  ],
+  "retainedSelections": 29,
+  "changedFamilies": [
+    "YAGGUN",
+    "YAGRND"
+  ],
+  "exports": [
+    "gatling-exports-v2",
+    "grinder-volume-exports-v2"
+  ],
+  "selectedRevisions": [
+    "c6-feedback-r6-bearing-v2",
+    "c6-feedback-r6-solid-spin-v2"
+  ],
+  "nativeSlots": 668,
+  "retainedFiles": 312,
+  "preparation": "Sequential RA2/YR resolver-equivalent preparation; all previous immutable indices and payloads retained",
+  "ui": {
+    "revision": "yuri-cameos-e-main-v1",
+    "entries": 474,
+    "sha256": "052c1ca0294344e21b3bb4fe881aece611232000e6efc3ec2ad1306efaf3a890"
+  },
+  "mapBaseline": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r6/map-desktop-baseline/report.json",
+  "rejectedCandidates": [
+    "Initial unoptimized export interrupted; partial output retained",
+    "Material finalizer v4 skipped snow member names; v5 verifies all 96 active slots in each theater/density",
+    "An early pack attempt preceded completed material output; incomplete spin-v5 root retained and immutable spin-v6 selected",
+    "Initial curved texture reprojection produced banded teeth in native video; replaced by solid ray-projected sphere and 24 beveled cuboids. Provisional package-v1 is diagnostic only."
+  ],
+  "boundary": "User artistic acceptance pending; historical unaffected tests reused; no D/new E or remote push",
+  "runtimeSourceHead": "508a0ad479c71ed1b680c934d1d6452f585e3db1",
+  "preparedContract": {
+    "schemaVersion": 1,
+    "sha256": "79dde528a52c9fb45423e0527a5c32a7a56c88dd1cdcddb707621927be5bff07",
+    "indexPath": "prepared-hd/indexes/79dde528a52c9fb45423e0527a5c32a7a56c88dd1cdcddb707621927be5bff07.json"
+  },
+  "deliveryReceipt": "yuri-buildings-feedback-r6-delivery.json",
+  "archive": {
+    "archive": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R6-20261002-508a0ad-macOS-arm64.zip",
+    "bytes": 3282460294,
+    "sha256": "4669cf47c0d5a25b1b64a96d4872e3c42fb8451f4589bad3a097b3fdfc34e288",
+    "checkedEntries": 5322
+  },
+  "validation": {
+    "nativeSlots": 668,
+    "retainedTextureFiles": 312,
+    "worldFiles": 4488,
+    "selectedFamilyTests": "3 tests / 153 assertions",
+    "feedbackRenderingTests": "3 tests / 55 assertions",
+    "native": [
+      {
+        "evidence": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r6/desktop-native-solid-4x-v1/report.json",
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "ownerColor": "rgb(60, 210, 45)",
+        "cases": {
+          "YAGGUN-binding": "PASS",
+          "YAGRND-binding": "PASS",
+          "Grinder-native-intake-animation": "PASS",
+          "Grinder-native-damaged-intake-animation": "PASS",
+          "Gatling-native-stages": "PASS",
+          "Gatling-native-air-rotation": "PASS"
+        },
+        "worldAllocation": {
+          "baseline": 91372196,
+          "eager": 50566032,
+          "demand": 85311156,
+          "total": 227249384,
+          "limit": 1342177280
+        },
+        "preparedCache": {
+          "bytes": 131932832,
+          "peakBytes": 131932832,
+          "pendingBytes": 0,
+          "hits": 0,
+          "misses": 45,
+          "shared": 0,
+          "evictions": 2,
+          "uncached": 3
+        },
+        "fallbacks": 0,
+        "pageErrors": 0
+      },
+      {
+        "evidence": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r6/desktop-native-solid-2x-snow-v1/report.json",
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "ownerColor": "rgb(49, 215, 230)",
+        "cases": {
+          "YAGGUN-binding": "PASS",
+          "YAGRND-binding": "PASS",
+          "Grinder-native-intake-animation": "PASS",
+          "Grinder-native-damaged-intake-animation": "PASS",
+          "Gatling-native-stages": "PASS",
+          "Gatling-native-air-rotation": "PASS"
+        },
+        "worldAllocation": {
+          "baseline": 22008264,
+          "eager": 28522916,
+          "demand": 34786212,
+          "total": 85317392,
+          "limit": 268435456
+        },
+        "preparedCache": {
+          "bytes": 81519200,
+          "peakBytes": 81519200,
+          "pendingBytes": 0,
+          "hits": 0,
+          "misses": 40,
+          "shared": 0,
+          "evictions": 0,
+          "uncached": 0
+        },
+        "fallbacks": 0,
+        "pageErrors": 0
+      }
+    ],
+    "mapCases": {
+      "finalDesktopYR": 2,
+      "copiedYR": 6,
+      "copiedRA2": 2
+    },
+    "nativeOwnerPixelAudit": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r6/owner-pixel-audit-v2.json",
+    "preparedFallbacks": 0,
+    "pageErrors": 0
+  },
+  "artMasters": [
+    {
+      "image": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r6/gatling-lower-bearing-raw.png",
+      "prompt": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r6/art-generation.json"
+    },
+    {
+      "image": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r6/crusher-brass-diffuse-raw.png",
+      "prompt": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r6/crusher-material-generation.json"
+    }
+  ]
+}

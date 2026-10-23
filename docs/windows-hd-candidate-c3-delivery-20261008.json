@@ -1,0 +1,1309 @@
+{
+  "schemaVersion": 1,
+  "status": "C3_SEALED_DESKTOP_NATIVE_REGRESSION_PASS_WINDOWS_AB_PENDING",
+  "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+  "packageCommit": "c2bcc16dd5530e1c7031312317b104a270fe8cf2",
+  "baselineDiagnostic": {
+    "id": "WINHD-20261008-D38F136-C2",
+    "commit": "84d502e233382b9525d7c44820881bdf372d085f",
+    "manifestSha256": "39fbe612b1c40f0e24d204fcec3ca358dccdd7ab50bff31a656959f7faa1bd99"
+  },
+  "gameplaySourceIdentity": {
+    "frozenMain": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "acceptedRuntime": "69a8ce57f187bd21d7de864b14473ecf9ed48e33",
+    "applicationSourceParity": "DECLARED_RENDERING_CHANGE",
+    "gameplayChanges": [],
+    "renderingChanges": [
+      "src/engine/gfx/batch/HdSpriteEdges.ts",
+      "src/engine/gfx/batch/MergedSpriteMesh.ts",
+      "src/engine/gfx/batch/MeshBatchManager.ts"
+    ],
+    "incrementalRenderingChangesFromC2": [
+      "src/engine/gfx/batch/MeshBatchManager.ts"
+    ],
+    "bundleBoundary": "Candidate hidden-map rebuild; accepted runtime is a source reference, not candidate parity."
+  },
+  "archive": {
+    "status": "PASS_FULL_ARCHIVE_AND_FRESH_EXTRACTION",
+    "diagnosticId": "WINHD-20261008-D38F136-C3",
+    "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "diagnosticCommit": "c2bcc16dd5530e1c7031312317b104a270fe8cf2",
+    "archive": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C3-c2bcc16-Windows-x64.zip",
+    "bytes": 3499858813,
+    "sha256": "743252439e1b2c6c84f99bd68d2bbaf01ae41e8bffb0a337f99812021290e2fd",
+    "manifestSha256": "880d8eba489f3549f575a2997c898ab0df29d219e0dfd2414b97a2b4c184b2f6",
+    "entries": 8084,
+    "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c3-fresh/RA2-HD-WINHD-20261008-D38F136-C3-c2bcc16-Windows-x64",
+    "windowsNative": "NOT_RUN"
+  },
+  "desktop": {
+    "status": "PASS_EXCLUSIVE_DESKTOP_COPY_SHA256_FULL_CRC",
+    "desktop": "/Users/Aone/Desktop/RA2-HD-WINHD-20261008-D38F136-C3-c2bcc16-Windows-x64.zip",
+    "bytes": 3499858813,
+    "sha256": "743252439e1b2c6c84f99bd68d2bbaf01ae41e8bffb0a337f99812021290e2fd",
+    "entries": 8084,
+    "freshExtraction": "Byte-identical to independently validated fresh extraction of the retained original."
+  },
+  "packagedVerification": {
+    "schemaVersion": 1,
+    "diagnosticId": "WINHD-20261008-D38F136-C3",
+    "manifestSha256": "880d8eba489f3549f575a2997c898ab0df29d219e0dfd2414b97a2b4c184b2f6",
+    "checked": 8083,
+    "failures": [],
+    "status": "PASS",
+    "verifiedAt": "2026-10-09T00:18:49.523Z"
+  },
+  "resources": {
+    "worldAndUIFiles": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+  },
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCPU": 128,
+    "ui": 16
+  },
+  "runtimeVersions": {
+    "electron": "44.4.0",
+    "three": "0.183.2",
+    "vite": "8.0.1",
+    "typescript": "5.9.3",
+    "@playwright/test": "1.58.2"
+  },
+  "verifiedX64PE": [
+    "Red Alert 2 HD.exe",
+    "d3dcompiler_47.dll",
+    "dxcompiler.dll",
+    "dxil.dll",
+    "ffmpeg.dll",
+    "vk_swiftshader.dll",
+    "vulkan-1.dll"
+  ],
+  "sourceOnlyPatch": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c3-rendering-candidate.patch",
+    "sha256": "b6b6c731ae1e5cf528bc7e4aafbefec77cfc5e5fccdb9713ccbd2511f8c084ed",
+    "currentMainApplyCheck": "PASS_READ_ONLY_NOT_APPLIED"
+  },
+  "tests": {
+    "focused": 28,
+    "assertions": 702,
+    "entryTypecheck": "PASS",
+    "mappedBuild": "PASS_SEPARATE_OUTDIR",
+    "nativePixelCases": 9,
+    "completeNativeRuns": 4,
+    "validNativePhases": 16
+  },
+  "nativeOwnership": {
+    "platform": "darwin-arm64",
+    "boundary": "Instrumented ownership/upload probe at initial debug renderer exposure, tick 0-2, for fifteen seconds. Loading and the first rendered frame may precede this hook. Not timing acceptance.",
+    "result": "Each GAPOWR body/coverage shader pair links once; no release/relink during the fifteen-second native route.",
+    "probe": {
+      "startTick": 0,
+      "endTick": 1005,
+      "startPrograms": 37,
+      "endPrograms": 42,
+      "shaderChecksEnabled": true
+    },
+    "hdLinks": [
+      {
+        "atMs": 21104.490000009537,
+        "tick": 520,
+        "program": 28,
+        "material": {
+          "id": 5865,
+          "uuid": "f5ab784d-2d68-4c36-97e0-c5fc508737ad",
+          "type": "HdSpriteMaterial",
+          "name": "",
+          "defines": {
+            "VERTEX_PALETTE_OFFSET": "",
+            "USE_VERTEX_COLOR_MULT": ""
+          },
+          "customKey": "m15-sprite-coverage-v2",
+          "transparent": false,
+          "side": 2,
+          "forceSinglePass": false,
+          "hdPass": 1,
+          "hdFiltering": true,
+          "clippingPlanes": 0,
+          "map": {
+            "name": "",
+            "width": 2048,
+            "height": 1200,
+            "uuid": "24cfe3e7-2a8c-4e7f-81d2-190a1e333479"
+          }
+        },
+        "object": {
+          "id": 8543,
+          "name": "",
+          "type": "Mesh",
+          "parents": [
+            {
+              "id": 8543,
+              "name": "",
+              "type": "Mesh"
+            },
+            {
+              "id": 8542,
+              "name": "",
+              "type": "Object3D"
+            },
+            {
+              "id": 7223,
+              "name": "mesh_batch_manager",
+              "type": "Object3D"
+            },
+            {
+              "id": 528,
+              "name": "",
+              "type": "Scene"
+            }
+          ],
+          "castShadow": false,
+          "attributes": [
+            "position",
+            "uv",
+            "hdFrameRect",
+            "vertexColorMult",
+            "vertexPaletteOffset"
+          ],
+          "drawRange": {
+            "start": 0,
+            "count": 12
+          }
+        },
+        "familyMatches": [
+          "GAPOWR"
+        ],
+        "sources": [
+          "34e2e9af1a0c7d352ac7ead3929f2ed459e6818def55944d7797fae1fc79b08c",
+          "66b2ef5f73f20aad761d40e2c1c1479cb284255e9d0fdc8988c8c6cce31040af"
+        ],
+        "stack": "Error\n    at gl.linkProgram (eval at evaluate (:290:30), <anonymous>:84:24)\n    at th (ra2://game/assets/three.module-BqxyVk8C.js:3991:259)\n    at Object.b [as acquireProgram] (ra2://game/assets/three.module-BqxyVk8C.js:3998:11609)\n    at _t (ra2://game/assets/three.module-BqxyVk8C.js:4049:37613)\n    at bt (ra2://game/assets/three.module-BqxyVk8C.js:4049:41254)\n    at Bh.renderBufferDirect (ra2://game/assets/three.module-BqxyVk8C.js:4049:28413)\n    at webgl.renderBufferDirect (eval at evaluate (:290:30), <anonymous>:52:33)\n    at gt (ra2://game/assets/three.module-BqxyVk8C.js:4049:36776)\n    at ht (ra2://game/assets/three.module-BqxyVk8C.js:4049:36365)\n    at pt (ra2://game/assets/three.module-BqxyVk8C.js:4049:34543)"
+      },
+      {
+        "atMs": 21111.610000014305,
+        "tick": 520,
+        "program": 29,
+        "material": {
+          "id": 5866,
+          "uuid": "c4eb7943-fe21-46ae-b502-c30d5176075f",
+          "type": "HdSpriteMaterial",
+          "name": "",
+          "defines": {
+            "VERTEX_PALETTE_OFFSET": "",
+            "USE_VERTEX_COLOR_MULT": ""
+          },
+          "customKey": "m15-sprite-coverage-v2",
+          "transparent": true,
+          "side": 2,
+          "forceSinglePass": true,
+          "hdPass": 2,
+          "hdFiltering": true,
+          "clippingPlanes": 0,
+          "map": {
+            "name": "",
+            "width": 2048,
+            "height": 1200,
+            "uuid": "24cfe3e7-2a8c-4e7f-81d2-190a1e333479"
+          }
+        },
+        "object": {
+          "id": 8544,
+          "name": "hd-sprite-edge",
+          "type": "Mesh",
+          "parents": [
+            {
+              "id": 8544,
+              "name": "hd-sprite-edge",
+              "type": "Mesh"
+            },
+            {
+              "id": 8543,
+              "name": "",
+              "type": "Mesh"
+            },
+            {
+              "id": 8542,
+              "name": "",
+              "type": "Object3D"
+            },
+            {
+              "id": 7223,
+              "name": "mesh_batch_manager",
+              "type": "Object3D"
+            },
+            {
+              "id": 528,
+              "name": "",
+              "type": "Scene"
+            }
+          ],
+          "castShadow": false,
+          "attributes": [
+            "position",
+            "uv",
+            "hdFrameRect",
+            "vertexColorMult",
+            "vertexPaletteOffset"
+          ],
+          "drawRange": {
+            "start": 0,
+            "count": 12
+          }
+        },
+        "familyMatches": [
+          "GAPOWR"
+        ],
+        "sources": [
+          "34e2e9af1a0c7d352ac7ead3929f2ed459e6818def55944d7797fae1fc79b08c",
+          "ae137aab975cfb0258abb9e2e08a7744db5622a77d2d0a42e66365520e29e1cc"
+        ],
+        "stack": "Error\n    at gl.linkProgram (eval at evaluate (:290:30), <anonymous>:84:24)\n    at th (ra2://game/assets/three.module-BqxyVk8C.js:3991:259)\n    at Object.b [as acquireProgram] (ra2://game/assets/three.module-BqxyVk8C.js:3998:11609)\n    at _t (ra2://game/assets/three.module-BqxyVk8C.js:4049:37613)\n    at bt (ra2://game/assets/three.module-BqxyVk8C.js:4049:41254)\n    at Bh.renderBufferDirect (ra2://game/assets/three.module-BqxyVk8C.js:4049:28413)\n    at webgl.renderBufferDirect (eval at evaluate (:290:30), <anonymous>:52:33)\n    at gt (ra2://game/assets/three.module-BqxyVk8C.js:4049:36776)\n    at ht (ra2://game/assets/three.module-BqxyVk8C.js:4049:36365)\n    at pt (ra2://game/assets/three.module-BqxyVk8C.js:4049:34587)"
+      }
+    ],
+    "hdDisposals": [
+      {
+        "atMs": 21980.304999947548,
+        "tick": 579,
+        "material": {
+          "id": 5866,
+          "uuid": "c4eb7943-fe21-46ae-b502-c30d5176075f",
+          "type": "HdSpriteMaterial",
+          "name": "",
+          "defines": {
+            "VERTEX_PALETTE_OFFSET": "",
+            "USE_VERTEX_COLOR_MULT": ""
+          },
+          "customKey": "m15-sprite-coverage-v2",
+          "transparent": true,
+          "side": 2,
+          "forceSinglePass": true,
+          "hdPass": 2,
+          "hdFiltering": true,
+          "clippingPlanes": 0,
+          "map": {
+            "name": "",
+            "width": 2048,
+            "height": 1200,
+            "uuid": "24cfe3e7-2a8c-4e7f-81d2-190a1e333479"
+          }
+        },
+        "stack": "Error\n    at M.listener (eval at evaluate (:290:30), <anonymous>:79:140)\n    at M.dispatchEvent (ra2://game/assets/three.module-BqxyVk8C.js:1:3360)\n    at M.dispose (ra2://game/assets/three.module-BqxyVk8C.js:1:123864)\n    at Mn.dispose (ra2://game/assets/BufferGeometrySerializer-CtDucUeS.js:1:8724)\n    at e.dispose (ra2://game/assets/BufferGeometrySerializer-CtDucUeS.js:1:12519)\n    at Ln.dispose (ra2://game/assets/BufferGeometrySerializer-CtDucUeS.js:1:14174)\n    at Rn.disposeRetiredBatches (ra2://game/assets/BufferGeometrySerializer-CtDucUeS.js:1:16090)\n    at Rn.updateMeshes (ra2://game/assets/BufferGeometrySerializer-CtDucUeS.js:1:14506)\n    at e.update (ra2://game/assets/WorldInteractionFactory-wvuSn0lj.js:64:53013)\n    at ra2://game/assets/App-D3iiKjkA.js:4:6735"
+      },
+      {
+        "atMs": 21980.40499997139,
+        "tick": 579,
+        "material": {
+          "id": 5865,
+          "uuid": "f5ab784d-2d68-4c36-97e0-c5fc508737ad",
+          "type": "HdSpriteMaterial",
+          "name": "",
+          "defines": {
+            "VERTEX_PALETTE_OFFSET": "",
+            "USE_VERTEX_COLOR_MULT": ""
+          },
+          "customKey": "m15-sprite-coverage-v2",
+          "transparent": false,
+          "side": 2,
+          "forceSinglePass": false,
+          "hdPass": 1,
+          "hdFiltering": true,
+          "clippingPlanes": 0,
+          "map": {
+            "name": "",
+            "width": 2048,
+            "height": 1200,
+            "uuid": "24cfe3e7-2a8c-4e7f-81d2-190a1e333479"
+          }
+        },
+        "stack": "Error\n    at M.listener (eval at evaluate (:290:30), <anonymous>:79:140)\n    at M.dispatchEvent (ra2://game/assets/three.module-BqxyVk8C.js:1:3360)\n    at M.dispose (ra2://game/assets/three.module-BqxyVk8C.js:1:123864)\n    at e.dispose (ra2://game/assets/BufferGeometrySerializer-CtDucUeS.js:1:12567)\n    at Ln.dispose (ra2://game/assets/BufferGeometrySerializer-CtDucUeS.js:1:14174)\n    at Rn.disposeRetiredBatches (ra2://game/assets/BufferGeometrySerializer-CtDucUeS.js:1:16090)\n    at Rn.updateMeshes (ra2://game/assets/BufferGeometrySerializer-CtDucUeS.js:1:14506)\n    at e.update (ra2://game/assets/WorldInteractionFactory-wvuSn0lj.js:64:53013)\n    at ra2://game/assets/App-D3iiKjkA.js:4:6735\n    at Set.forEach (<anonymous>)"
+      }
+    ]
+  },
+  "pixelComparisons": [
+    {
+      "mode": "2x",
+      "status": "PASS_NATIVE_BATCH_HANDOFF_PIXEL_AND_PROGRAM_EQUIVALENCE",
+      "run": "2026-10-09T00:22:16.347Z",
+      "tickStart": 672,
+      "tickEnd": 672,
+      "output": {
+        "ratio": 2,
+        "requested": [
+          2560,
+          1600
+        ],
+        "effective": [
+          2560,
+          1600
+        ],
+        "caps": []
+      },
+      "results": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "sources": 226,
+          "clonedMaterials": 116,
+          "retired": 116,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8446373,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 575,
+            "programs": 44
+          }
+        },
+        {
+          "offset": {
+            "x": -350,
+            "y": 150
+          },
+          "sources": 226,
+          "clonedMaterials": 116,
+          "retired": 116,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8446557,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 575,
+            "programs": 44
+          }
+        },
+        {
+          "offset": {
+            "x": 350,
+            "y": -150
+          },
+          "sources": 226,
+          "clonedMaterials": 116,
+          "retired": 116,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 6804895,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 575,
+            "programs": 44
+          }
+        }
+      ]
+    },
+    {
+      "mode": "4x",
+      "status": "PASS_NATIVE_BATCH_HANDOFF_PIXEL_AND_PROGRAM_EQUIVALENCE",
+      "run": "2026-10-09T00:20:49.002Z",
+      "tickStart": 674,
+      "tickEnd": 674,
+      "output": {
+        "ratio": 2,
+        "requested": [
+          2560,
+          1600
+        ],
+        "effective": [
+          2560,
+          1600
+        ],
+        "caps": []
+      },
+      "results": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "sources": 280,
+          "clonedMaterials": 119,
+          "retired": 119,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8445510,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 604,
+            "programs": 42
+          }
+        },
+        {
+          "offset": {
+            "x": -350,
+            "y": 150
+          },
+          "sources": 280,
+          "clonedMaterials": 119,
+          "retired": 119,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8445839,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 604,
+            "programs": 42
+          }
+        },
+        {
+          "offset": {
+            "x": 350,
+            "y": -150
+          },
+          "sources": 280,
+          "clonedMaterials": 119,
+          "retired": 119,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 6804164,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 604,
+            "programs": 42
+          }
+        }
+      ]
+    },
+    {
+      "mode": "original",
+      "status": "PASS_NATIVE_BATCH_HANDOFF_PIXEL_AND_PROGRAM_EQUIVALENCE",
+      "run": "2026-10-09T00:23:11.838Z",
+      "tickStart": 623,
+      "tickEnd": 623,
+      "output": {
+        "ratio": 2,
+        "requested": [
+          2560,
+          1600
+        ],
+        "effective": [
+          2560,
+          1600
+        ],
+        "caps": []
+      },
+      "results": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "sources": 226,
+          "clonedMaterials": 110,
+          "retired": 110,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8238498,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 152,
+            "programs": 23
+          }
+        },
+        {
+          "offset": {
+            "x": -350,
+            "y": 150
+          },
+          "sources": 226,
+          "clonedMaterials": 110,
+          "retired": 110,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 8238740,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 152,
+            "programs": 23
+          }
+        },
+        {
+          "offset": {
+            "x": 350,
+            "y": -150
+          },
+          "sources": 226,
+          "clonedMaterials": 110,
+          "retired": 110,
+          "detached": true,
+          "linksAfterReplacement": 0,
+          "totalLinks": 0,
+          "candidateDifferentBytes": 0,
+          "immediateDisposalDifferentBytes": 0,
+          "restoredDifferentBytes": 0,
+          "nonzeroBytes": 6597392,
+          "comparedBytes": 16384000,
+          "width": 2560,
+          "height": 1600,
+          "shaderChecksEnabled": true,
+          "resourcesAfterDrain": {
+            "retired": 0,
+            "geometry": 152,
+            "programs": 23
+          }
+        }
+      ]
+    }
+  ],
+  "nativeRuns": [
+    {
+      "directory": "2026-10-09T00-18-59-113Z-small-4x-none",
+      "platform": "darwin",
+      "status": "CAPTURED",
+      "config": {
+        "mode": "4x",
+        "scene": "small",
+        "control": "none",
+        "seconds": 15,
+        "trace": false,
+        "manual": false,
+        "experimentId": "WINHD-20261008-D38F136-C3-small-4x-none",
+        "timestamp": 1700000000000,
+        "edition": "yr",
+        "shadows": 3,
+        "renderResolution": "native",
+        "contentSize": [
+          1280,
+          800
+        ],
+        "displayMode": "window",
+        "presentationHeight": 900
+      },
+      "phases": [
+        {
+          "label": "instrumented-fresh-process-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": true,
+          "nativeTicks": 1014,
+          "graphics": {
+            "enabled": true,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1242
+          }
+        },
+        {
+          "label": "instrumented-warmed-steady",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": true,
+          "nativeTicks": 1011,
+          "graphics": {
+            "enabled": true,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1244
+          }
+        },
+        {
+          "label": "instrumented-same-process-reentry-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": true,
+          "nativeTicks": 1019,
+          "graphics": {
+            "enabled": true,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1242
+          }
+        },
+        {
+          "label": "instrumented-same-process-reentry-warmed",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": true,
+          "nativeTicks": 1012,
+          "graphics": {
+            "enabled": true,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1244
+          }
+        }
+      ]
+    },
+    {
+      "directory": "2026-10-09T00-20-49-000Z-small-4x-none",
+      "platform": "darwin",
+      "status": "CAPTURED",
+      "config": {
+        "mode": "4x",
+        "scene": "small",
+        "control": "none",
+        "seconds": 3,
+        "trace": false,
+        "manual": false,
+        "experimentId": "WINHD-20261008-D38F136-C3-small-4x-none",
+        "timestamp": 1700000000000,
+        "edition": "yr",
+        "shadows": 3,
+        "renderResolution": "native",
+        "contentSize": [
+          1280,
+          800
+        ],
+        "displayMode": "window",
+        "presentationHeight": 900
+      },
+      "phases": [
+        {
+          "label": "fresh-process-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 204,
+          "graphics": {
+            "enabled": true,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1240
+          }
+        },
+        {
+          "label": "warmed-steady",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 201,
+          "graphics": {
+            "enabled": true,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1241
+          }
+        },
+        {
+          "label": "same-process-reentry-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 201,
+          "graphics": {
+            "enabled": true,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1240
+          }
+        },
+        {
+          "label": "same-process-reentry-warmed",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 201,
+          "graphics": {
+            "enabled": true,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1241
+          }
+        }
+      ]
+    },
+    {
+      "directory": "2026-10-09T00-22-16-345Z-small-2x-none",
+      "platform": "darwin",
+      "status": "CAPTURED",
+      "config": {
+        "mode": "2x",
+        "scene": "small",
+        "control": "none",
+        "seconds": 3,
+        "trace": false,
+        "manual": false,
+        "experimentId": "WINHD-20261008-D38F136-C3-small-2x-none",
+        "timestamp": 1700000000000,
+        "edition": "yr",
+        "shadows": 3,
+        "renderResolution": "native",
+        "contentSize": [
+          1280,
+          800
+        ],
+        "displayMode": "window",
+        "presentationHeight": 900
+      },
+      "phases": [
+        {
+          "label": "fresh-process-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 204,
+          "graphics": {
+            "enabled": true,
+            "density": 2,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1267
+          }
+        },
+        {
+          "label": "warmed-steady",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 201,
+          "graphics": {
+            "enabled": true,
+            "density": 2,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1268
+          }
+        },
+        {
+          "label": "same-process-reentry-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 201,
+          "graphics": {
+            "enabled": true,
+            "density": 2,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1267
+          }
+        },
+        {
+          "label": "same-process-reentry-warmed",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 201,
+          "graphics": {
+            "enabled": true,
+            "density": 2,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 56,
+            "shp": 1268
+          }
+        }
+      ]
+    },
+    {
+      "directory": "2026-10-09T00-23-11-836Z-small-original-none",
+      "platform": "darwin",
+      "status": "CAPTURED",
+      "config": {
+        "mode": "original",
+        "scene": "small",
+        "control": "none",
+        "seconds": 3,
+        "trace": false,
+        "manual": false,
+        "experimentId": "WINHD-20261008-D38F136-C3-small-original-none",
+        "timestamp": 1700000000000,
+        "edition": "yr",
+        "shadows": 3,
+        "renderResolution": "native",
+        "contentSize": [
+          1280,
+          800
+        ],
+        "displayMode": "window",
+        "presentationHeight": 900
+      },
+      "phases": [
+        {
+          "label": "fresh-process-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 203,
+          "graphics": {
+            "enabled": false,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 0,
+            "shp": 0
+          }
+        },
+        {
+          "label": "warmed-steady",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 202,
+          "graphics": {
+            "enabled": false,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 0,
+            "shp": 0
+          }
+        },
+        {
+          "label": "same-process-reentry-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 208,
+          "graphics": {
+            "enabled": false,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 0,
+            "shp": 0
+          }
+        },
+        {
+          "label": "same-process-reentry-warmed",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "instrumented": false,
+          "nativeTicks": 201,
+          "graphics": {
+            "enabled": false,
+            "density": 4,
+            "models": 1,
+            "shadows": 3,
+            "renderResolution": "native",
+            "resolution": {
+              "width": 1024,
+              "height": 768
+            }
+          },
+          "output": {
+            "ratio": 2,
+            "requested": [
+              2560,
+              1600
+            ],
+            "effective": [
+              2560,
+              1600
+            ],
+            "caps": []
+          },
+          "hdBindings": {
+            "vxl": 0,
+            "shp": 0
+          }
+        }
+      ]
+    }
+  ],
+  "exportRoundtrip": {
+    "status": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+    "archive": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c3-fresh/RA2-HD-WINHD-20261008-D38F136-C3-c2bcc16-Windows-x64/WINHD-20261008-D38F136-C3-RETURN-2026-10-09T00-24-28-788Z.zip",
+    "bytes": 73967870,
+    "sha256": "66451aa477db64a58c3ee736497c6e65616ec0ac8ee75d562d2e81daeb438bf0",
+    "files": 35,
+    "runs": 4,
+    "diagnosticId": "WINHD-20261008-D38F136-C3",
+    "diagnosticCommit": "c2bcc16dd5530e1c7031312317b104a270fe8cf2",
+    "manifestSha256": "880d8eba489f3549f575a2997c898ab0df29d219e0dfd2414b97a2b4c184b2f6",
+    "extractedDirectory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c3-mac-export-roundtrip-v1",
+    "launcherPolicy": "Inspected as data only; no returned scripts executed.",
+    "launchers": [
+      {
+        "file": "Export-Reports.cmd",
+        "status": "IDENTICAL",
+        "sha256": "25e23098719b40880c953b1ca32ce71489741e5840aae605e196fd858c64b0fc"
+      },
+      {
+        "file": "Launch-Diagnostics.cmd",
+        "status": "IDENTICAL",
+        "sha256": "182436176864ce709b57d936c4a83f2c3b042aecd6a80d5245b74efb7a3faf92"
+      },
+      {
+        "file": "Run-Control.cmd",
+        "status": "IDENTICAL",
+        "sha256": "69705b9577c1a5f9cceed33612b407d9110317d9a9eab76ec570507da20255db"
+      },
+      {
+        "file": "Verify-Kit.cmd",
+        "status": "IDENTICAL",
+        "sha256": "812399b452707c4a00757b168629eaedd761f5ec57d4584cd43dd3806d5d9722"
+      }
+    ]
+  },
+  "toolingDeltaAfterSeal": "native-batch-lifetime.mjs only corrects the resource-count observation boundary; packaged application bytes and source remain frozen.",
+  "windowsNative": "NOT_RUN",
+  "windowsCandidatePerformance": "PENDING",
+  "userVisualAcceptance": "PENDING",
+  "acceptedC2": "User-reported clear Small steady improvement; residual scrolling skips remain open.",
+  "unresolved": [
+    "First-ever shader acquisition",
+    "Initial simulation/loading",
+    "Earlier Windows 224.675 ms submission preceding captured profile",
+    "Target full-kit verification receipt missing from C2 returns",
+    "All-map and physical-input acceptance"
+  ],
+  "gpuTime": "UNAVAILABLE",
+  "actualProcessVram": "UNAVAILABLE",
+  "gpuProcessBudget": "UNAVAILABLE",
+  "preservation": {
+    "main": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "m2_3Observed": "118d3c6f77780aba976f0d9742d84912c5e30dd7",
+    "mainModified": false,
+    "merge": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED",
+    "m2_3ModifiedByThisTask": false,
+    "m2_3ObservedWorkingTreeStatus": " M docs/m2-3-production-acceptance.json",
+    "m2_3Boundary": "Independent concurrent work; observed changes preserved without intervention."
+  },
+  "next": "Verify existing C2 and C3; one fresh Small 4X Normal launch each, wait for final completion, close and export both. No F9/settings/stress/control changes."
+}

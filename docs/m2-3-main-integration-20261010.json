@@ -1,0 +1,602 @@
+{
+  "schema": "m2-3-main-integration-handoff-v1",
+  "status": "PASS_USER_ACCEPTED_LOCAL_MAIN_INTEGRATION",
+  "date": "2026-10-10",
+  "main": {
+    "path": "/Users/Aone/RA2remaster/ra2-hd",
+    "branch": "main",
+    "before": "bc581b1c3c871199ac568939723324e4cfce6b2c",
+    "mergedRuntimeCommit": "a43c2cbb58bcec589f5babd3a851536e0962b2a0",
+    "handoffCommitPolicy": "Documentation-only closure follows this immutable merged runtime; obtain current report commit with git log -1.",
+    "resourceRoot": "/Users/Aone/RA2remaster/ra2-hd/.local"
+  },
+  "acceptedTask": {
+    "worktree": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate",
+    "branch": "task/m2-3-temperate-coverage",
+    "acceptanceCommit": "35fdfa7",
+    "artworkRuntimeCommit": "1c93a928d9ae13e91a4bcb35579e1cd532ae13da",
+    "feedback": "R16",
+    "decision": "USER_ACCEPTED"
+  },
+  "scope": {
+    "theater": "TEMPERATE",
+    "nativeSelectableTemperateMaps": 61,
+    "ra2TemperateMaps": 17,
+    "yrTemperateMaps": 44,
+    "remainingTemperateAuthoredGaps": 0,
+    "environmentFamilies": 238,
+    "environmentMembers": 333,
+    "terrainGroups": 23,
+    "terrainMembers": 633,
+    "officialSkirmishInventoryEntries": 305,
+    "inventoriedEntries": 417,
+    "excludedEntries": 112
+  },
+  "selection": {
+    "schema": "m2-3-main-accepted-runtime-identity-v1",
+    "acceptedRuntime": "1c93a928d9ae13e91a4bcb35579e1cd532ae13da",
+    "integratedRuntime": "a43c2cbb58bcec589f5babd3a851536e0962b2a0",
+    "resources": {
+      "environment": {
+        "selection": {
+          "schemaVersion": 1,
+          "revision": "environment-m2-3-oil-paired-drive-complete-v31",
+          "sha256": "96d49880153aa1101704f15cca00c48afc28a9bb303c130c917f090c1952d447"
+        },
+        "manifestBytes": 75642,
+        "families": 238,
+        "groups": 0,
+        "members": 333
+      },
+      "terrain": {
+        "selection": {
+          "schemaVersion": 1,
+          "revision": "temperate-m2-3-gameplay-feedback-v12",
+          "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+        },
+        "manifestBytes": 1203668,
+        "families": 0,
+        "groups": 23,
+        "members": 633
+      }
+    },
+    "prepared": {
+      "schemaVersion": 1,
+      "sha256": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b",
+      "indexPath": "prepared-hd/indexes/b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b.json"
+    },
+    "fixedBudgetsMiB": {
+      "world2X": 512,
+      "world4X": 1280,
+      "preparedPages": 128,
+      "ui": 16
+    },
+    "scope": "TEMPERATE only; selected official skirmish dependencies; no new other-theater artwork.",
+    "nativeAvailabilityExceptions": [
+      "environment-city01",
+      "environment-city02",
+      "environment-city03",
+      "environment-city04",
+      "environment-city05",
+      "environment-cteur04",
+      "environment-ctgefgl",
+      "environment-ctmsc12",
+      "environment-ctpars07",
+      "environment-ctrufgl",
+      "environment-ctusfgl"
+    ]
+  },
+  "integration": {
+    "policy": "ADD_IF_ABSENT_OR_IDENTICAL",
+    "resourceTransfer": {
+      "status": "PASS_EXCLUSIVE_SELECTED_TRANSFER",
+      "count": 7089,
+      "added": 2163,
+      "bytes": 6121323471
+    },
+    "authorizedSelectorUpdates": 2,
+    "retainedInheritedFiles": 29287,
+    "byteConflicts": 0,
+    "protectedSourcePaths": 28,
+    "exactProtectedSourcePaths": 25,
+    "reviewedSemanticMerges": 3,
+    "semanticMergePaths": [
+      "src/engine/renderable/builder/loadSovietUnitsHd.ts",
+      "src/engine/renderable/builder/resolveHdSprite.ts",
+      "src/gui/screen/game/GameScreen.ts"
+    ],
+    "retainedWindowsSource": "Validated main C1-C9 renderer and seven optional diagnostics, with main cancellation, worker preparation, scene warmup and disposal retained.",
+    "history": "Both accepted task and current main histories retained; clean predecessor fast-forwarded to reviewed merge."
+  },
+  "validation": {
+    "focusedTests": {
+      "pass": 91,
+      "fail": 0,
+      "assertions": 2976,
+      "files": 26,
+      "timeoutMs": 60000,
+      "browserBootstrap": ".artifacts/m2-3/main-integration-20261010/test-preload.ts",
+      "initialFailures": "Missing historical test fixtures and Bun SPE global initialization; final setup passes without runtime source changes. Earlier logs retained."
+    },
+    "typecheck": "PASS_IN_INTEGRATION_AND_ACTUAL_MAIN",
+    "environmentFamilies": "238 families at both densities; full native identity, allocation, over-budget fallback and texture disposal PASS",
+    "actualMainRegistration": {
+      "status": "PASS_CURRENT_MAIN_COMPLETE_REGISTRATION",
+      "profileRoutes": 12,
+      "hdRoutes": 6857,
+      "prepared": {
+        "type": "prepared-hd-registered",
+        "members": 453,
+        "pages": 1205,
+        "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+      }
+    },
+    "copiedNative": {
+      "status": "PASS_FOUR_COPIED_COMBINED_MAIN_NATIVE_CASES",
+      "runtimeSourceCommit": "a43c2cbb58bcec589f5babd3a851536e0962b2a0",
+      "cases": [
+        {
+          "case": "native-ra2-2x",
+          "status": "PASS_SELECTED_NATIVE_CASES",
+          "edition": "ra2",
+          "density": 2,
+          "map": "mp14t2.map",
+          "cases": [
+            "CAOILD"
+          ],
+          "nativeOwnershipDamageAnimationStates": "PASS",
+          "combinedWorld": {
+            "terrain": 214936944,
+            "environment": 30994060,
+            "faction": 47656812,
+            "total": 293587816,
+            "limit": 536870912
+          },
+          "preparedPool": null,
+          "report": "/Users/Aone/RA2remaster/ra2-hd-m2-3-integration-20261010/.artifacts/m2-3/main-integration-20261010/native-ra2-2x/report.json",
+          "sha256": "84f51676485b008964efa48cff260d4421282e2bb2484ea56057e547ebeea00f"
+        },
+        {
+          "case": "native-ra2-4x",
+          "status": "PASS_SELECTED_NATIVE_CASES",
+          "edition": "ra2",
+          "density": 4,
+          "map": "mp14t2.map",
+          "cases": [
+            "CAAIRP",
+            "CAOILD",
+            "INYELWLAMP"
+          ],
+          "nativeOwnershipDamageAnimationStates": "PASS",
+          "combinedWorld": {
+            "terrain": 840609136,
+            "environment": 116775844,
+            "faction": 171688724,
+            "total": 1129073704,
+            "limit": 1342177280
+          },
+          "preparedPool": null,
+          "report": "/Users/Aone/RA2remaster/ra2-hd-m2-3-integration-20261010/.artifacts/m2-3/main-integration-20261010/native-ra2-4x/report.json",
+          "sha256": "9730801ac0b4bd8441cfbca91e916e912fda1cc3d87cdfcfa29c26a1276a7306"
+        },
+        {
+          "case": "native-yr-2x",
+          "status": "PASS_SELECTED_NATIVE_CASES",
+          "edition": "yr",
+          "density": 2,
+          "map": "xgrinder.map",
+          "cases": [
+            "CAOILD"
+          ],
+          "nativeOwnershipDamageAnimationStates": "PASS",
+          "combinedWorld": {
+            "terrain": 213098336,
+            "environment": 15813236,
+            "faction": 47656812,
+            "total": 276568384,
+            "limit": 536870912
+          },
+          "preparedPool": null,
+          "report": "/Users/Aone/RA2remaster/ra2-hd-m2-3-integration-20261010/.artifacts/m2-3/main-integration-20261010/native-yr-2x/report.json",
+          "sha256": "30b6929dcf3c05209cfc8333412bf3b820ff4fbee07088e4de7b2634ab5f866c"
+        },
+        {
+          "case": "native-yr-4x",
+          "status": "PASS_SELECTED_NATIVE_CASES",
+          "edition": "yr",
+          "density": 4,
+          "map": "xgrinder.map",
+          "cases": [
+            "CAAIRP",
+            "CAOILD",
+            "INBLULMP"
+          ],
+          "nativeOwnershipDamageAnimationStates": "PASS",
+          "combinedWorld": {
+            "terrain": 833003360,
+            "environment": 58626596,
+            "faction": 179275444,
+            "total": 1070905400,
+            "limit": 1342177280
+          },
+          "preparedPool": null,
+          "report": "/Users/Aone/RA2remaster/ra2-hd-m2-3-integration-20261010/.artifacts/m2-3/main-integration-20261010/native-yr-4x/report.json",
+          "sha256": "7312189bec76c6f4723ff45246482c5548d33ed8c7ccfa0e34b3ce4e88524247"
+        }
+      ],
+      "closedArtworkEvidence": "User-accepted R16 full-cycle static and video evidence reused unchanged; no new artwork."
+    },
+    "mapLoads": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "maps": [
+        "hillbtwn.map",
+        "xgrinder.map"
+      ],
+      "resourceRelease": {
+        "environment": {
+          "disposed": true,
+          "worldChargeBytes": 0
+        },
+        "terrain": {
+          "disposed": true,
+          "worldChargeBytes": 0
+        }
+      },
+      "disclosure": "Original native placements and timing; map reveal, stopped AI, controlled ownership/damage and free camera for QA. Not full-match playthrough or physical-input acceptance."
+    },
+    "reusedAcceptedArtwork": {
+      "r16DensityStateFrames": 128,
+      "r16CopiedCases": 4,
+      "r16VideoClips": 20,
+      "r16ExtractedCases": 2,
+      "priorR7MapLoads": 111,
+      "priorR7SameProcessReentries": 109,
+      "basis": "Hash-pinned accepted evidence reused; recorded separately from new combined-main runtime checks."
+    }
+  },
+  "delivery": {
+    "combinedMainMacPackageReceipt": {
+      "path": "/Users/Aone/RA2remaster/M2.3-Main-Integration-Mac-20261010-v1/package-receipt.json",
+      "bytes": 1836984,
+      "sha256": "4b1c6e1aca6daf10936dffd6e85333da6277841a3d38803da8c448d8f0d40c12"
+    },
+    "combinedMainMacApp": "/Users/Aone/RA2remaster/M2.3-Main-Integration-Mac-20261010-v1/RA2-HD-M2.3-Main-Integration-Test/Red-Alert-2-HD-M2.3-Main-Integration.app",
+    "resourceCopies": "Independent complete package copies; fresh isolated profiles; signature and package parity PASS",
+    "rootDist": "Retained unchanged; use the distinct combined-main app for this runtime.",
+    "historicalDesktopDeliveries": [
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R16-Temperate-Map-Test-List.txt",
+        "bytes": 3960,
+        "sha256": "5bf23028f6766bbd0aa317521e38738c6234416cdc3a8cfd877ec2b18c371a0f",
+        "currentExists": false
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R16-Temperate-Map-Test-List.csv",
+        "bytes": 5522,
+        "sha256": "997cd350adc2d3da7e35bc088a461a014e01d7045e0f97dd0eee70a633c24d08",
+        "currentExists": false
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.3-R16-Desktop-Mac-Test-20261010.zip",
+        "bytes": 3796269037,
+        "sha256": "43fe5af2da7945f695683715d8987d2a3518ed844c6aa30cfd5a6a2e2910a5be",
+        "currentExists": false
+      }
+    ],
+    "newDesktopGameZip": false
+  },
+  "boundaries": {
+    "otherTheaterArtwork": "DEFERRED",
+    "allOfficialMapsFullyRemastered": false,
+    "allTemperateMapsIndependentlyFullMatchTested": false,
+    "combinedM2_3WindowsRuntime": "NOT_RUN",
+    "windowsDenseSceneAcceptance": "OPEN_IN_SEPARATE_PERFORMANCE_INVESTIGATION",
+    "physicalInput": "NOT_RUN",
+    "remotePush": "NOT_PERFORMED",
+    "nextMilestoneExecution": "NOT_STARTED",
+    "cleanupAtIntegrationTime": "NOT_PERFORMED",
+    "cleanup": "AUTHORIZED_SCOPED_M2_3_CLEANUP_COMPLETED_2026_10_10"
+  },
+  "nextPlanning": {
+    "conversation": "Return to the existing main planning conversation; this M2.3 execution outcome is accepted and closed. No conversation created.",
+    "recommendation": "SNOW (923 measured gaps and 32 native eligible entries), then URBAN (1030 gaps and 18 eligible entries); artwork deferred.",
+    "preserve": "Start from current clean local main, preserve accepted selections/assets/budgets and fixed rings/scene-matrix/Windows source. Keep independent worktrees/resources and frozen Windows baselines separate.",
+    "ignoredAuthoringInputs": "Selected runtime bytes, current inventory and key R16 authoring/receipts are copied to main; complete historical donor inputs and videos remain in the accepted source worktree. Preserve that worktree for reproduction."
+  },
+  "evidence": [
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/main-baseline.json",
+      "bytes": 6867817,
+      "sha256": "d00fbe80736f5a875811de64774b4c6a1dff2dcfcd9f837f0101d12f77712886"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/main-baseline-preserved.json",
+      "bytes": 6867449,
+      "sha256": "880ffe7bb8b4c9493cd3e8a84455406ae9fdcab7b527833dc8b62beed799c830"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/selected-transfer-manifest.json",
+      "bytes": 2793693,
+      "sha256": "8488ccaca8f3c918ec527825e3bcfc8386e1d0c7604caf2fb1d58cfeb8ca8615"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/resource-transfer.json",
+      "bytes": 3098952,
+      "sha256": "ff710c3821b87474d19d3de556c08a0db19528ee8ad6b6151a3612e040880c35"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/selector-updates.json",
+      "bytes": 1212,
+      "sha256": "26887ce31397f208faffbe631f3114ea2e7c49146bdd751336d7a3a5eb0f644d"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/accepted-evidence-manifest.json",
+      "bytes": 13769,
+      "sha256": "8e5724ae78fb81d0306dcdf3930716ed1dbb319e45413dba19ec9ac5d7998b71"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/accepted-evidence-transfer.json",
+      "bytes": 15316,
+      "sha256": "5c4cd5d284886d3e4163096d12c2782b1556f65e17bfef4e171c8ff1790a9695"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/accepted-evidence-reuse.json",
+      "bytes": 8895,
+      "sha256": "37f4f18d02336dc1c121cc104c8affd2f9f55f0aa8dba7c43fd538f7b228e57c"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/accepted-runtime-identity.json",
+      "bytes": 1643,
+      "sha256": "5d728f075037ebf16857e5d2d0465019309adaf34baec7bce074743838a59a88"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/source-preservation.json",
+      "bytes": 8147,
+      "sha256": "b0d73c97208d210a13e91ffb336024e6272a220c25351f884c0daa897a674165"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/focused-tests-v4.log",
+      "bytes": 10627,
+      "sha256": "e4f36dd550677afa0cc6cbd388c4f17b87825e1519b461b0c2f96219fb5a92ae"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/typecheck.log",
+      "bytes": 39,
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/environment-registration-v2.json",
+      "bytes": 89335,
+      "sha256": "b0b886f873c5654dc4225932c2f0036398e53a986844fdb44ccd5061bd5fa603"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/registration-guides/source.json",
+      "bytes": 4920147,
+      "sha256": "78e89b65d890b9df220997d3d9327aded962eca19bb4af48b30ea0609c79caee"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/native-summary.json",
+      "bytes": 3126,
+      "sha256": "b3e76eb96ece208206858d973fcbd321c157c69a4a11cc3566201445e9751585"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/native-hell-hills-reentry/report.json",
+      "bytes": 91188,
+      "sha256": "2b2721df1c255d04035c0ec928db3bc8793aa9a6654b72cac589861b2b1feb6b"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/main-before-fast-forward.json",
+      "bytes": 537,
+      "sha256": "cce7ad66ce044b9829f41424c76c607c099eb465b3f9aff630ec3da6626beba7"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/main-source-final.json",
+      "bytes": 7869,
+      "sha256": "9d160f3ea8ab248dc332f277d4f5b3feffcd70632317d6b0fb0376d5afd0526f"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/main-registration.json",
+      "bytes": 110867,
+      "sha256": "fedc29eea8a8fd6786587c750dccd9532fe08bd688c0b9a9f9200a5a5a43658d"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/main-typecheck.log",
+      "bytes": 39,
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    },
+    {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/main-integration-20261010/main-final-retained-files.json",
+      "bytes": 75,
+      "sha256": "bea25219d901d70b37ee782e1380ed652ee1496fbc72028dc61582ff218d0624"
+    }
+  ],
+  "protectedAncestors": [
+    "c31f3a7",
+    "a6bc72e",
+    "da3023c",
+    "625ffd8",
+    "a4a8b01",
+    "ee1fc27",
+    "35fdfa7"
+  ],
+  "nativeAvailabilityExceptions": [
+    "environment-city01",
+    "environment-city02",
+    "environment-city03",
+    "environment-city04",
+    "environment-city05",
+    "environment-cteur04",
+    "environment-ctgefgl",
+    "environment-ctmsc12",
+    "environment-ctpars07",
+    "environment-ctrufgl",
+    "environment-ctusfgl"
+  ],
+  "inventory": {
+    "latest": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/inventory-v9/inventory.json",
+      "sha256": "4f4c463f7a9c9b5430fde85c9ec36cbe4c15c7a43144703c8c94abb63178cbc3",
+      "bytes": 71704220
+    },
+    "matrix": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/inventory-v9/matrix.json",
+      "sha256": "526cb0c134c005ed554f46195844c68b7661e911276013ee03b423e65c62a7fa",
+      "bytes": 13554728
+    },
+    "sourceProvenance": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/inventory-v9/source-provenance.json",
+      "sha256": "221aad82bd0ba0e29bcbea96196f40563916c299a38c955c2b95b4cf7a1d2c06",
+      "bytes": 2172083
+    },
+    "gaps": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/inventory-v9/gaps.json",
+      "sha256": "3db0795ee7d8725148194437bfb06c690f66188a45aec386313e45de5b231a47",
+      "bytes": 4339305
+    },
+    "counts": {
+      "catalogEntries": 298,
+      "inventoriedMapEntries": 417,
+      "officialSkirmishEntries": 305,
+      "excludedCooperativeCampaignEntries": 110,
+      "excludedArchiveCampaignOrUnclassifiedEntries": 2,
+      "excludedArchiveCustomOrUnclassifiedEntries": 0,
+      "totalExcludedEntries": 112
+    },
+    "theaters": [
+      {
+        "theater": "TEMPERATE",
+        "maps": 161,
+        "blockedMaps": 68,
+        "resources": 1111,
+        "gapResources": 0,
+        "gapsByKind": {
+          "tmp": 0,
+          "terrain": 0,
+          "building": 0,
+          "vehicle": 0,
+          "smudge": 0,
+          "overlay": 0,
+          "infantry": 0,
+          "aircraft": 0,
+          "animation": 0,
+          "overlay-registry-slot": 0
+        },
+        "production": "AUTHORIZED_M2_3",
+        "nativeSelectableEligibleEntries": 61
+      },
+      {
+        "theater": "URBAN",
+        "maps": 32,
+        "blockedMaps": 6,
+        "resources": 1112,
+        "gapResources": 1030,
+        "gapsByKind": {
+          "tmp": 592,
+          "terrain": 52,
+          "building": 233,
+          "vehicle": 11,
+          "smudge": 24,
+          "overlay": 79,
+          "infantry": 39,
+          "aircraft": 0,
+          "overlay-registry-slot": 0
+        },
+        "production": "DEFERRED_NEW_ARTWORK",
+        "nativeSelectableEligibleEntries": 18
+      },
+      {
+        "theater": "SNOW",
+        "maps": 91,
+        "blockedMaps": 42,
+        "resources": 1058,
+        "gapResources": 923,
+        "gapsByKind": {
+          "tmp": 641,
+          "terrain": 45,
+          "building": 71,
+          "smudge": 24,
+          "overlay": 106,
+          "infantry": 31,
+          "vehicle": 5,
+          "aircraft": 0,
+          "overlay-registry-slot": 0
+        },
+        "production": "DEFERRED_NEW_ARTWORK",
+        "nativeSelectableEligibleEntries": 32
+      },
+      {
+        "theater": "LUNAR",
+        "maps": 0,
+        "blockedMaps": 0,
+        "resources": 0,
+        "gapResources": 0,
+        "gapsByKind": {},
+        "production": "DEFERRED_NEW_ARTWORK",
+        "nativeSelectableEligibleEntries": 0
+      },
+      {
+        "theater": "DESERT",
+        "maps": 13,
+        "blockedMaps": 13,
+        "resources": 798,
+        "gapResources": 732,
+        "gapsByKind": {
+          "tmp": 476,
+          "terrain": 24,
+          "smudge": 24,
+          "overlay": 101,
+          "overlay-registry-slot": 0,
+          "building": 78,
+          "infantry": 26,
+          "vehicle": 3,
+          "aircraft": 0
+        },
+        "production": "DEFERRED_NEW_ARTWORK",
+        "nativeSelectableEligibleEntries": 0
+      },
+      {
+        "theater": "NEWURBAN",
+        "maps": 8,
+        "blockedMaps": 8,
+        "resources": 1036,
+        "gapResources": 957,
+        "gapsByKind": {
+          "tmp": 614,
+          "terrain": 47,
+          "building": 171,
+          "vehicle": 11,
+          "infantry": 38,
+          "smudge": 24,
+          "overlay": 52,
+          "overlay-registry-slot": 0,
+          "aircraft": 0
+        },
+        "production": "DEFERRED_NEW_ARTWORK",
+        "nativeSelectableEligibleEntries": 0
+      }
+    ],
+    "temperateEntries": 161,
+    "cheapStructuralPasses": 157,
+    "originalStructuralExceptions": 4,
+    "nativeEligibility": {
+      "ELIGIBLE_FOR_FOCUSED_NATIVE_MATCH": 61,
+      "BLOCKED_NATIVE_GAMEPLAY_SUPPORT": 47,
+      "ARCHIVE_ONLY_NOT_SELECTABLE_IN_CURRENT_NATIVE_CATALOG": 53
+    },
+    "remainingTemperateAuthoredGaps": 0
+  },
+  "feedbackHistoryPreservedSha256": "d7a88c92259375338897f039b3745766808e80c8f5156eaa9fa050d182ec6bd0",
+  "postIntegrationCleanup": {
+    "status": "PASS_AUTHORIZED_M2_3_CLEANUP_AND_PROTECTED_DELIVERY_VERIFICATION",
+    "date": "2026-10-10",
+    "report": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd/docs/m2-3-cleanup-20261010.json",
+      "bytes": 12493,
+      "sha256": "8706b0a90ca23810d91258c6086af352551cc8e33a901b328c27a94ebb96dc7b"
+    },
+    "logicalBytesRemoved": 335174906087,
+    "availableSpaceIncreaseBytes": 237794414592,
+    "retentionRoot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m2-3/cleanup-20261010-v1",
+    "allCurrentPackageBytesPreserved": true
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "status": "BATCH87_TECHNICAL_PASS_ARTWORK_REVISION_REQUIRED",
+  "candidate": {
+    "schemaVersion": 1,
+    "revision": "newurban-environment-buildings-batch87-v1-combined",
+    "sha256": "3481d855362fef34c90337213ddeecd7c81f4305f1bafa52f2e87b92aa23bbc0"
+  },
+  "newCompleteFamilies": 24,
+  "sourceMembers": 24,
+  "sourceBodySlots": 86,
+  "densityFrames": 172,
+  "originalShadowFrames": 86,
+  "uniqueNewRubbleStudies": 19,
+  "acceptedDensityFramesReused": 132,
+  "newRubbleDensityFramesShared": 2,
+  "preservedFamilies": 112,
+  "staticVerification": [
+    {
+      "file": ".artifacts/m2-4/newurban-building-rubble-authoring-batch87-v1/verification-v1.json",
+      "sha256": "31d7c6934681d2d093b2297133cbb013eef9c077d3eb71320bf3d6f1d99a5fb2",
+      "bytes": 1071
+    },
+    {
+      "file": ".artifacts/m2-4/newurban-complete-reuse-export-batch87-v1/verification-v1.json",
+      "sha256": "afbe6d6a32f03781eee08c17adcb6b221a1445622e284509c393c826ed40abf2",
+      "bytes": 1058
+    }
+  ],
+  "motherVerification": {
+    "file": ".artifacts/m2-4/newurban-building-rubble-authoring-batch87-v1/mother-source-verification-v1.json",
+    "sha256": "c0daabdbd256e9086e22b2df115780588c9b38b3c0fd3a25bf397132415cc3c1",
+    "bytes": 20316
+  },
+  "sourceGuide": {
+    "file": ".artifacts/m2-4/newurban-building-rubble-native-batch87-v1/source.json",
+    "sha256": "d1330c05890c2c441ec15fb329028f5d431811b46cad59e4d795ca067bb3e394",
+    "bytes": 213233
+  },
+  "selection": {
+    "file": ".artifacts/m2-4/newurban-buildings-batch87-20261020/selection-v1.json",
+    "sha256": "078c13f3e86223aeab2be1acb341e9f45e8304c6570b14e4a6cd331ec5f1b1cf",
+    "bytes": 159662
+  },
+  "nativePlan": {
+    "file": ".artifacts/m2-4/newurban-buildings-batch87-20261020/native-plan-v1.json",
+    "sha256": "f33176299b7419cdb6688e1aab47f8be4857f0e5b7fe6511c5395509e082872a",
+    "bytes": 2068
+  },
+  "macNative": "PASS_24_FAMILY_PATHS_AT_BOTH_DENSITIES",
+  "visualAcceptance": "REJECTED_ALL_19_NEW_RUBBLE_STUDIES_PIXELATION_AND_GRAIN",
+  "windows": "NOT_RUN",
+  "mainIntegration": "NOT_PERFORMED",
+  "m24Complete": false,
+  "runtimeSourceCommit": "fcb4829135b233bdc2951065d8702a316003606a",
+  "nativeScope": "Twenty-two intact family paths at each density use original source bindings and legal native state fixtures. Two map-authored destroyed groups are observed directly at both densities. No invented live map placement; no natural-match claim.",
+  "deduplication": "Other official maps share identical original source hashes, palette, native slots and rules. All 24 complete families are exercised on unchanged manhatta.map and fight.map; all eight maps are statically inventoried.",
+  "technicalClosure": {
+    "file": ".artifacts/m2-4/newurban-buildings-batch87-20261020/coverage-and-native-closure-v1.json",
+    "sha256": "dd3e8e74a4b451751e514791212bf2aa36eefc4252e0f6f20f87b2eac850877c",
+    "bytes": 28807
+  },
+  "inventoryReconciliation": {
+    "file": ".artifacts/m2-4/newurban-buildings-batch87-20261020/inventory-reconciliation-v1.json",
+    "sha256": "6ff5997597cc9c468c4ed076ab4e13abb01e565b597d6e7940d48360af96cda2",
+    "bytes": 237008
+  },
+  "review": {
+    "file": ".artifacts/m2-4/newurban-buildings-batch87-20261020/review-v1/M2.4-NewUrban-Buildings-Batch87-Embedded.html",
+    "sha256": "65fb97960578e41fbbbca82e8fbc0ce7b124e1042d96aad8c624501826cf0884",
+    "bytes": 36990195
+  },
+  "reviewMetadata": {
+    "file": ".artifacts/m2-4/newurban-buildings-batch87-20261020/review-v1/review-metadata-v1.json",
+    "sha256": "3079bc830436b296ddf5c756b2ee432c9ea4043ce96419f3f3aa25fd0cc14816",
+    "bytes": 37262
+  },
+  "reviewQa": {
+    "file": ".artifacts/m2-4/newurban-buildings-batch87-20261020/source-static-qa-v1.json",
+    "sha256": "1054ab6076e0f275676d13fa80915be004ca5bba67c538f44405488d86484724",
+    "bytes": 843
+  },
+  "resourceHandoff": {
+    "file": ".artifacts/m2-4/newurban-buildings-batch87-20261020/resource-handoff-v1.json",
+    "sha256": "dbfd405ffa2ad8edeee75c21d0e10bec8e0472e69d2a3ef9f57ebebeb4f761bc",
+    "bytes": 4833877
+  },
+  "resourceFiles": 18967,
+  "desktopDelivery": {
+    "file": ".artifacts/m2-4/newurban-buildings-batch87-20261020/desktop-delivery-v1.json",
+    "sha256": "92055d2c9954d1c3d9c7a99350df79e27c5ef2c7c255cdc1e269758ae304ce73",
+    "bytes": 1896
+  },
+  "desktopReview": "/Users/Aone/Desktop/M2.4-Review-NewUrban-Buildings-Batch87-20261020/M2.4-NewUrban-Buildings-Batch87-Embedded.html",
+  "worldPeakBytes": {
+    "2": 223263132,
+    "4": 851119048
+  },
+  "preparedPeakBytes": 108112788,
+  "lifecycle": {
+    "OriginalFallback": true,
+    "oldEnvironmentChargeBytes": 0,
+    "oldTerrainChargeBytes": 0,
+    "exitAndReentry": true,
+    "crossEnvironment": "NEWURBAN manhatta.map to DESERT saharami.map",
+    "newEnvironmentDensity": 4
+  },
+  "remainingCoverage": {
+    "DESERTAuthoredGaps": 0,
+    "NEWURBANAuthoredGaps": 286,
+    "DESERTConditionalGroups": 22,
+    "NEWURBANConditionalGroups": 22,
+    "NEWURBANByKind": {
+      "tmp": 198,
+      "building": 74,
+      "infantry": 2,
+      "overlay": 12
+    }
+  },
+  "main": {
+    "head": "31f66a1763f90e92b19e7969a3b6a8658c85a3b4",
+    "clean": true,
+    "porcelain": "",
+    "changedByTask": false
+  },
+  "perBatchMacPackage": "NOT_CREATED_HTML_ONLY_USER_REQUEST",
+  "browserInteractive": "NOT_RUN_LOCAL_PROTOCOL_RESTRICTION_RETAINED",
+  "latestFeedback": {
+    "file": ".artifacts/m2-4/newurban-rubble-continuous-r1-20261020/user-feedback-20261020.json",
+    "sha256": "6d9f8776ced9349749cb2e7c3d35ed7d968d7977349bee393bfde04eebbdf06c",
+    "bytes": 1578
+  }
+}

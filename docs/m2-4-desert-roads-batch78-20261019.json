@@ -1,0 +1,99 @@
+{
+  "status": "ORIGINAL_REVIEW_REJECTED_ROAD_NETWORK_REPAIR_DELIVERED_PENDING",
+  "runtimeSourceCommit": "7b5b62b0d3f2f19089772cbc0a9b13cf4e0b398c",
+  "candidate": {
+    "schemaVersion": 1,
+    "revision": "desert-m2-4-hybrid-roads-batch78-v4",
+    "sha256": "a4766095d804f3e1b5dce13b1d644d27891ed3e34e8b67aa78ca47b1e0465245"
+  },
+  "completeFamilies": 1,
+  "members": 20,
+  "actualNativeSubtiles": 170,
+  "actualDensitySubtiles": 340,
+  "unreferencedZeroPointerCompatibilitySlots": 14,
+  "exactAcceptedReuseMembers": 12,
+  "adaptedMembers": 8,
+  "maps": [
+    "yr:saharami.map",
+    "yr:saharamimw.map"
+  ],
+  "nativeRoadPlacementsPerCase": 905,
+  "validation": {
+    "loaderTests": 7,
+    "loaderAssertions": 468,
+    "typecheck": "PASS",
+    "isolatedBuild": "PASS",
+    "signedMacHost": "PASS",
+    "native": "PASS_2X_4X_BOTH_OFFICIAL_MAP_PATHS_STANDARD_RULES_TICKS_ORIGINAL_AND_RELEASE",
+    "staticEmbeddedImages": 49,
+    "browserInteractive": "NOT_RUN_PRIOR_PROTOCOL_DENIAL_RESPECTED"
+  },
+  "review": {
+    "file": "/Users/Aone/Desktop/M2.4-Review-Desert-Roads-Batch78-20261019/M2.4-Desert-Roads-Batch78-Embedded.html",
+    "sha256": "a2f896bcb59223368ef67ee3ee94428feb2f24835986be3a3096e00eeec23c2d",
+    "bytes": 54108236
+  },
+  "resourceHandoff": {
+    "file": ".artifacts/m2-4/desert-roads-batch78-20261019/resource-handoff-v4.json",
+    "sha256": "49c35fcedc471dc899f7c824dd913b0fa7b8e6b9a86e4479b00a864eb2c3c6db",
+    "files": 1325
+  },
+  "evidence": [
+    {
+      "file": ".artifacts/m2-4/desert-roads-batch78-20261019/independent-static-audit-v4.json",
+      "sha256": "c68c06477bbbcd09c0d8e51c3fe199f4f232c06ec0163f1c9ed33acf720bfd18"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-roads-batch78-20261019/native-suite-v4.json",
+      "sha256": "7c398f22a90853c4ecc226d9a8a558fde6454902294dff633556bd20153137e5"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-roads-batch78-20261019/coverage-delta-v4.json",
+      "sha256": "3c1b733be7c18463f0beb7dc6a121190cc65e3154d803f8c4c4ac90baedde0ee"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-roads-batch78-20261019/review-v5/static-qa.json",
+      "sha256": "48dd93e53eb651dc3b360a2487d54a9df5141e691aa2b7188e263117365fec22"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-roads-batch78-20261019/resource-handoff-v4.json",
+      "sha256": "49c35fcedc471dc899f7c824dd913b0fa7b8e6b9a86e4479b00a864eb2c3c6db"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-roads-batch78-20261019/desktop-delivery-v5.json",
+      "sha256": "5184da257f444183a6e2bbcdc7e89da13f68c8f5a9d440a23199001bea267c22"
+    }
+  ],
+  "prepared": "UNCHANGED_CORE_INDEX_TERRAIN_CONSUMES_VALIDATED_RGBA",
+  "main": {
+    "head": "748d0998aaf663acda8807c158155bf0a5bb157b",
+    "modified": false
+  },
+  "coverage": {
+    "remainingDesertAuthoredGaps": 182,
+    "remainingNewUrbanAuthoredGaps": 358,
+    "basis": "Scoped two-map recalculation plus source-qualified global delta"
+  },
+  "r5Acceptance": "USER_ACCEPTED_RECORDED_IN_f79fad86",
+  "nextPreparation": ".artifacts/m2-4/accepted-faction-theater-routing-preparation-20261019.json",
+  "visualAcceptance": "NEEDS_REVISION",
+  "windows": "NOT_RUN",
+  "perBatchMacPackageCreated": false,
+  "m24Complete": false,
+  "feedbackReceipt": ".artifacts/m2-4/desert-road-network-r1-20261019/feedback.json",
+  "repair": {
+    "report": "docs/m2-4-desert-road-network-r1-20261019.md",
+    "candidate": {
+      "schemaVersion": 1,
+      "revision": "desert-m2-4-road-network-contacts-r1-v3",
+      "sha256": "bac5cbd39c5da4b7d9e1564e9c37b85a8d69e76002bc0d7103395cc75c512f86"
+    },
+    "review": {
+      "file": "/Users/Aone/Desktop/M2.4-Review-Desert-Road-Network-R1-20261019/M2.4-Desert-Road-Network-R1-Embedded.html",
+      "sha256": "0baa2e4452523218a299a5fa3c14f0365a3d1fe7a18b5a2526e39c4a16bf6c68",
+      "bytes": 33474359,
+      "images": 46
+    },
+    "visualAcceptance": "PENDING"
+  }
+}

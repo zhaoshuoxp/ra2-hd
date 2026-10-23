@@ -1,0 +1,65 @@
+{
+  "status": "PASS_SIGNED_PACKAGE_INVENTORY_ZIP_AND_FOUR_EDITION_THEATER_RUNS",
+  "folder": "/Users/Aone/RA2remaster/ra2-hd-units-yr/.artifacts/m1-7-yr/delivery-v2/RA2-HD-YR-Soviet-Units-R1-Mac-Test",
+  "app": "/Users/Aone/RA2remaster/ra2-hd-units-yr/.artifacts/m1-7-yr/delivery-v2/RA2-HD-YR-Soviet-Units-R1-Mac-Test/RA2 HD YR Soviet Units R1.app",
+  "resources": "/Users/Aone/RA2remaster/ra2-hd-units-yr/.artifacts/m1-7-yr/delivery-v2/RA2-HD-YR-Soviet-Units-R1-Mac-Test/RA2-HD-Editions-Resources",
+  "zip": "/Users/Aone/RA2remaster/ra2-hd-units-yr/.artifacts/m1-7-yr/delivery-v2/RA2-HD-YR-Soviet-Units-R1.zip",
+  "zipBytes": 858972304,
+  "zipSha256": "2b7f6959142967a4b706d3237f20beebe700b4796c636676ace678196a9a6cfe",
+  "runtimeSourceHead": "1da6c75646e497086af5ceea66bf673aa33f2878",
+  "inventoryEntries": 1681,
+  "resourceFiles": 1214,
+  "newUnitResourceFiles": 50,
+  "review": {
+    "path": "/Users/Aone/RA2remaster/ra2-hd-units-yr/.artifacts/m1-7-yr/delivery-v2/RA2-HD-YR-Soviet-Units-R1-Mac-Test/YR-Soviet-Units-Full-Review.html",
+    "sha256": "01879e02b9791ee57d37c1d9e8e71f9088eb9b92f3ef7de1eca9ff1bfe4da7e3",
+    "status": "PASS_OFFLINE_COMPLETE_FAMILY_EMBEDDED_REVIEW"
+  },
+  "cases": [
+    {
+      "name": "packaged-temperate-v2",
+      "status": "PASS_PACKAGED_YR_ROSTER_AND_RA2_REGRESSION",
+      "cases": [
+        {
+          "edition": "ra2",
+          "theater": 1,
+          "units": "PASS_ACCEPTED_FAMILIES_AND_ORIGINAL_EXCEPTIONS"
+        },
+        {
+          "edition": "yr",
+          "theater": 1,
+          "units": "PASS_28_YR_SOVIET_ROOTS_AND_SHARED_ALLOCATION"
+        }
+      ]
+    },
+    {
+      "name": "packaged-snow-v2",
+      "status": "PASS_PACKAGED_YR_ROSTER_AND_RA2_REGRESSION",
+      "cases": [
+        {
+          "edition": "ra2",
+          "theater": 4,
+          "units": "PASS_ACCEPTED_FAMILIES_AND_ORIGINAL_EXCEPTIONS"
+        },
+        {
+          "edition": "yr",
+          "theater": 4,
+          "units": "PASS_28_YR_SOVIET_ROOTS_AND_SHARED_ALLOCATION"
+        }
+      ]
+    }
+  ],
+  "finalAcceptance": "ACCEPTED_WITHOUT_NEW_EXCEPTIONS",
+  "mainIntegration": "docs/m1-7-yr-main-integration.json",
+  "disclosure": "Controlled native action, frame, resource and package tests; not Windows, campaign or natural-match completion.",
+  "schema": "m1-7-yr-final-review-delivery-v1",
+  "integratedMain": "f508f43",
+  "sourceBranch": "m1-7-yr-soviet-units",
+  "reviewedRuntimeChangesSinceActions": "Only main lamp blending and score-time corrections; unit renderers, manifests and unit loader are unchanged from the complete action-tested build.",
+  "retainedPreviousDelivery": "delivery-v1 is historical; select delivery-v2.",
+  "currentMainHeadAtHandoff": "f508f430234c191c15583ecaf7dd822318e6e744",
+  "currentMainWorkingStatusAtHandoff": "",
+  "preservation": "production-preservation-v1.json",
+  "continuation": "Continue complete-family review, corrections and acceptance in this same task.",
+  "acceptanceReceipt": "docs/m1-7-yr-final-acceptance.json"
+}

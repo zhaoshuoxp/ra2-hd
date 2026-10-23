@@ -1,0 +1,108 @@
+{
+  "schema": "m2-4-urban-actors-batch62-handoff-v1",
+  "status": "MAC_TECHNICAL_PASS_USER_ACCEPTED",
+  "mainHead": "748d0998aaf663acda8807c158155bf0a5bb157b",
+  "mainClean": true,
+  "mainWasMutatedByThisBatch": false,
+  "sourceCheckpoint": "606b8891ea6fa298f5fd51b81450ee764b66cba5",
+  "runtimeSourceHead": "c4e4b2427e16c22d6c3aeee787bb18c074a48a20",
+  "counts": {
+    "newShpFamilies": 3,
+    "newVxlFamilies": 6,
+    "shpMembers": 3,
+    "originalBodyFrames": 602,
+    "densityFrames": 1204,
+    "voxelNativeHeadings": 48,
+    "densityBearings": 96,
+    "priorShpFamilies": 284,
+    "protectedPriorPayloadFiles": 2257,
+    "selectedShpFamilies": 287,
+    "priorVoxelDescriptors": 2,
+    "nativeCases": 12,
+    "officialMapEntries": 32,
+    "uniqueMapHashes": 26,
+    "remainingUrbanAuthoredSourceGaps": 0
+  },
+  "selectedEnvironment": {
+    "schemaVersion": 1,
+    "revision": "urban-environment-m2-4-actors-batch62-v1-combined",
+    "sha256": "d9c2da03f5583d16d8d3eb06ae6b8a2a4eaec1d013bf89cb47e4c70ac39994e8"
+  },
+  "sourceContract": {
+    "file": "desktop/environment-urban-hd-contract.json",
+    "sha256": "f1feb7536ed67ec8745e3215eea38df0682f6b40b818fbba4329aa38befa634b",
+    "bytes": 470850
+  },
+  "resourceHandoff": {
+    "file": ".artifacts/m2-4/urban-actors-native-batch62-v1/resource-handoff-v2.json",
+    "sha256": "802ddadbea04900f634244c3a2e547fef00bd8b2f416bd8024bd3c687cf98539",
+    "bytes": 1739077
+  },
+  "nativeClosure": {
+    "file": ".artifacts/m2-4/urban-actors-native-batch62-v1/native-closure.json",
+    "sha256": "d6c5942cac79c050e8f3938adc919bb9616ef51d371741f682987fa61cffe8d0",
+    "bytes": 7724
+  },
+  "sourceCoverageDelta": {
+    "file": ".artifacts/m2-4/urban-actors-native-batch62-v1/coverage-delta.json",
+    "sha256": "876d2c490bde58e1c01f842a5e9eaa61a62f33c95c33d3b81f31204c6dca5f0d",
+    "bytes": 7698
+  },
+  "runtimeStage": {
+    "file": ".artifacts/m2-4/urban-actors-native-batch62-v1/active-stage.json",
+    "sha256": "e18bc520b0d53955942f9cbefecde8664f70e5e8fa8beac9db4c2e5d133b43ad",
+    "bytes": 1095
+  },
+  "build": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/build-urban-actors-batch62-v1",
+  "desktopReview": [
+    {
+      "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch62-20261017/M2.4-Urban-Batch62-Embedded.html",
+      "sha256": "24cbeeb7744ebe3bb070238b261c7b9987af20480b1dba1580ea0a05e6244279",
+      "bytes": 137016007
+    },
+    {
+      "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch62-20261017/M2.4-Urban-Batch62-Embedded.json",
+      "sha256": "bf8fd6c2526a90293902537ac1263689f99e33a6c574d61e8a58d73e87669b7a",
+      "bytes": 86693
+    }
+  ],
+  "reviewManifest": {
+    "file": ".artifacts/m2-4/urban-actors-review-batch62-v2/review-manifest.json",
+    "sha256": "ff1e83e84caadaf8ca4f673e8b4f82aa055aa23ce8b8f523abf7bd9f03524d64",
+    "bytes": 126295
+  },
+  "staticReviewQa": {
+    "file": ".artifacts/m2-4/urban-actors-review-batch62-v2/static-qa-v1.json",
+    "sha256": "9b70c6462f54955b7c91f67805ff9ea6b76d250a67341faae2d2aae991db80c7",
+    "bytes": 537
+  },
+  "browserInteraction": "NOT_RUN_BROWSER_TOOL_DENIED_LOCAL_FILE_PROTOCOL; NO_POLICY_WORKAROUND_ATTEMPTED",
+  "tests": {
+    "passed": 7,
+    "assertions": 131,
+    "entryTypecheck": "PASS",
+    "isolatedBuild": "PASS"
+  },
+  "budgets": {
+    "world2x": 536870912,
+    "world4x": 1342177280,
+    "preparedCpu": 134217728,
+    "ui": 16777216
+  },
+  "observedWorldBytes": {
+    "2": 328011108,
+    "4": 1259753248
+  },
+  "observedPreparedPeakBytes": 114010052,
+  "visual": "USER_ACCEPTED_BATCH62",
+  "priorBatchAcceptance": "UNCHANGED",
+  "windows": "NOT_RUN",
+  "localMainIntegration": "NOT_PERFORMED",
+  "remotePush": "NOT_PERFORMED",
+  "m24Complete": false,
+  "remaining": "Other explicit pending decisions, NewUrban and Desert production/coverage, final scope closure and independent Mac delivery.",
+  "userAcceptance": {
+    "file": ".artifacts/m2-4/urban-actors-native-batch62-v1/user-acceptance-20261017.json",
+    "sha256": "1f8215926c07e43ee3e0244270034e1ff6df512c990fe71f2aeeba36b61e98fd"
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "schema": "m2-4-structures-technical-closure-v1",
+  "status": "MAC_TECHNICAL_PASS_VISUAL_PENDING",
+  "batches": [
+    76,
+    77
+  ],
+  "families": 6,
+  "members": 64,
+  "mothers": 28,
+  "runtimeSourceHead": "0880721a543016a480ad1e1dcbff6f0190d6668f",
+  "stage": {
+    "status": "STAGED_INTERNAL_MAC_VALIDATION_HOST",
+    "app": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/active-mac-validation-host-v1/Red Alert 2 HD M2.4 Validation Host.app",
+    "resources": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.local",
+    "build": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/build-structures-batches76-77-v1",
+    "runtimeSourceHead": "0880721a543016a480ad1e1dcbff6f0190d6668f",
+    "target": "darwin-arm64",
+    "profile": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/active-mac-validation-host-v1/Review-Profile",
+    "resourceStorage": "Existing isolated task resources; no per-batch game or resource copy",
+    "preparedRegistration": {
+      "type": "prepared-hd-registered",
+      "members": 453,
+      "pages": 1205,
+      "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+    },
+    "policy": "Internal reusable packaged Mac host, not an independent delivery. Each native case pins source, selectors and metadata. Subsequent batch delivery is embedded HTML; final milestone packaging remains separate."
+  },
+  "selectedTerrain": {
+    "NEWURBAN": {
+      "schemaVersion": 1,
+      "revision": "newurban-m2-4-structures-batch76-v4",
+      "sha256": "2722ad87edc191628f195e2193edf4e4c0993146d27e2118a1b21beb56640164"
+    },
+    "DESERT": {
+      "schemaVersion": 1,
+      "revision": "desert-m2-4-structures-batch77-v1",
+      "sha256": "098261f835e4a4cdf77f0c0d857875b0dcb9f3f278cefeeb59bc23f49e0ee006"
+    }
+  },
+  "cases": [
+    {
+      "stem": "fight",
+      "theater": "NEWURBAN",
+      "map": "fight.map",
+      "density": 2,
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-fight-2x-v1/report.json",
+      "sha256": "824c94ef74b5b3b6f4864e5f159bb45696ffb5d5e9389e3460d4ad3f123269a7",
+      "combinedWorldAllocation": {
+        "terrain": 72785880,
+        "environment": 4122100,
+        "baseline": 30715960,
+        "eager": 9731888,
+        "demand": 7862164,
+        "total": 125217992,
+        "limit": 536870912
+      },
+      "preparedCpuPeak": 45156556
+    },
+    {
+      "stem": "fight",
+      "theater": "NEWURBAN",
+      "map": "fight.map",
+      "density": 4,
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-fight-4x-v1/report.json",
+      "sha256": "a3af2494e16f5211d3cd710f23beb7b6f06ba7598fb3f1250ec9cade3f25966a",
+      "combinedWorldAllocation": {
+        "terrain": 286171096,
+        "environment": 15227256,
+        "baseline": 90904572,
+        "eager": 50566032,
+        "demand": 31336440,
+        "total": 474205396,
+        "limit": 1342177280
+      },
+      "preparedCpuPeak": 108112788
+    },
+    {
+      "stem": "fight",
+      "theater": "NEWURBAN",
+      "map": "fight.map",
+      "density": "original",
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-fight-original-v1/report.json",
+      "sha256": "a5f2f3109951d6f951db9738333c9bfef2f70a21a8bab286aa4366ef0d4f395e"
+    },
+    {
+      "stem": "downtown",
+      "theater": "NEWURBAN",
+      "map": "downtown.map",
+      "density": 2,
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-downtown-2x-v1/report.json",
+      "sha256": "46b0f61009db71c1a99e20f4a245a6882a2d10cb6c312c18a772f1537bed9b03",
+      "combinedWorldAllocation": {
+        "terrain": 63738312,
+        "environment": 6950212,
+        "baseline": 30715960,
+        "eager": 9731888,
+        "demand": 8868088,
+        "total": 120004460,
+        "limit": 536870912
+      },
+      "preparedCpuPeak": 45156556
+    },
+    {
+      "stem": "downtown",
+      "theater": "NEWURBAN",
+      "map": "downtown.map",
+      "density": 4,
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-downtown-4x-v1/report.json",
+      "sha256": "6f49fa09bdb22bededc84ca73f484d516bd264484decd513d7f43e21d146dfe1",
+      "combinedWorldAllocation": {
+        "terrain": 250384840,
+        "environment": 26085580,
+        "baseline": 90904572,
+        "eager": 50566032,
+        "demand": 34904748,
+        "total": 452845772,
+        "limit": 1342177280
+      },
+      "preparedCpuPeak": 108112788
+    },
+    {
+      "stem": "downtown",
+      "theater": "NEWURBAN",
+      "map": "downtown.map",
+      "density": "original",
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-downtown-original-v1/report.json",
+      "sha256": "74013a18d544ba517776547b4b4c634825797942f78cef3e1eb7637ea1eb35df"
+    },
+    {
+      "stem": "manhattan",
+      "theater": "NEWURBAN",
+      "map": "manhatta.map",
+      "density": 2,
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-manhattan-2x-v1/report.json",
+      "sha256": "dbcb02bb7323a20c74b3f75835eb548e835abcdff13c18ad0701db99fefe2eeb",
+      "combinedWorldAllocation": {
+        "terrain": 99304192,
+        "environment": 13335804,
+        "baseline": 30715960,
+        "eager": 9731888,
+        "demand": 8341248,
+        "total": 161429092,
+        "limit": 536870912
+      },
+      "preparedCpuPeak": 45156556
+    },
+    {
+      "stem": "manhattan",
+      "theater": "NEWURBAN",
+      "map": "manhatta.map",
+      "density": 4,
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-manhattan-4x-v1/report.json",
+      "sha256": "74bae13bf64aace3e47016157147d67e191a7cab525903281ebcf8511006bcc1",
+      "combinedWorldAllocation": {
+        "terrain": 389333760,
+        "environment": 50860508,
+        "baseline": 90904572,
+        "eager": 50566032,
+        "demand": 32977552,
+        "total": 614642424,
+        "limit": 1342177280
+      },
+      "preparedCpuPeak": 108112788,
+      "lifecycle": {
+        "originalFallbackZeroAllocation": true,
+        "crossTheaterHdDensity": 4,
+        "oldResourcesDisposed": true
+      }
+    },
+    {
+      "stem": "manhattan",
+      "theater": "NEWURBAN",
+      "map": "manhatta.map",
+      "density": "original",
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-manhattan-original-v1/report.json",
+      "sha256": "cdf61f55d7ee1b351ccdbae506e4ab88cb9ffe3d4b581ebdeee06a91bcac215f"
+    },
+    {
+      "stem": "rush",
+      "theater": "NEWURBAN",
+      "map": "rushhr.map",
+      "density": 2,
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-rush-2x-v1/report.json",
+      "sha256": "04d12f96ed4dd6104e704d92f4b60ab25e77b3c783b6f6fc8dc2039e95b82d1c",
+      "combinedWorldAllocation": {
+        "terrain": 100125192,
+        "environment": 19546080,
+        "baseline": 30715960,
+        "eager": 9731888,
+        "demand": 10027716,
+        "total": 170146836,
+        "limit": 536870912
+      },
+      "preparedCpuPeak": 45156556
+    },
+    {
+      "stem": "rush",
+      "theater": "NEWURBAN",
+      "map": "rushhr.map",
+      "density": 4,
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-rush-4x-v1/report.json",
+      "sha256": "503cd48e3df0ed41899a2f83e4b889acd393e361f2c042a7dc9e5ca606938b19",
+      "combinedWorldAllocation": {
+        "terrain": 392481288,
+        "environment": 75267816,
+        "baseline": 90904572,
+        "eager": 50566032,
+        "demand": 39004592,
+        "total": 648224300,
+        "limit": 1342177280
+      },
+      "preparedCpuPeak": 108112788
+    },
+    {
+      "stem": "rush",
+      "theater": "NEWURBAN",
+      "map": "rushhr.map",
+      "density": "original",
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-rush-original-v1/report.json",
+      "sha256": "3b99f996f1bea4bf1eba5cca8f1272e6a07d72ee86b043581e5533e9645ffa52"
+    },
+    {
+      "stem": "dryheat",
+      "theater": "DESERT",
+      "map": "dryheat.map",
+      "density": 2,
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-dryheat-2x-v1/report.json",
+      "sha256": "43ef49e53eb485f2d5365eaca690cc1959d739ea6d18fd81722b371c0100df89",
+      "combinedWorldAllocation": {
+        "terrain": 57010072,
+        "environment": 7082952,
+        "baseline": 30715960,
+        "eager": 9731888,
+        "demand": 7421532,
+        "total": 111962404,
+        "limit": 536870912
+      },
+      "preparedCpuPeak": 45156556
+    },
+    {
+      "stem": "dryheat",
+      "theater": "DESERT",
+      "map": "dryheat.map",
+      "density": 4,
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-dryheat-4x-v1/report.json",
+      "sha256": "7d30a3291330f5bf35b2a73d6562007946f9dd5fb853b4907fb5d0a8c3b5c76d",
+      "combinedWorldAllocation": {
+        "terrain": 224159640,
+        "environment": 24344992,
+        "baseline": 90904572,
+        "eager": 50566032,
+        "demand": 29750496,
+        "total": 419725732,
+        "limit": 1342177280
+      },
+      "preparedCpuPeak": 108112788,
+      "lifecycle": {
+        "originalFallbackZeroAllocation": true,
+        "crossTheaterHdDensity": 4,
+        "oldResourcesDisposed": true
+      }
+    },
+    {
+      "stem": "dryheat",
+      "theater": "DESERT",
+      "map": "dryheat.map",
+      "density": "original",
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-dryheat-original-v1/report.json",
+      "sha256": "b4fc111e75d1629a75cf94857cfff0a3f56e5d2b557249db26db74911f3e7ddf"
+    }
+  ],
+  "nativeSimulation": [
+    {
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-simulation-v1/newurban/report.json",
+      "sha256": "42625a9d84bdb03aa8324a3bc02e927528cc1170272712a0ef4f99a7258109ad",
+      "status": "PASS_NATIVE_TICK_PROGRESSION",
+      "theater": "NEWURBAN",
+      "map": "fight.map",
+      "before": 2,
+      "after": {
+        "tick": 16,
+        "status": 1,
+        "environmentDensity": 4,
+        "terrainDensity": 4,
+        "glError": 0
+      },
+      "boundary": "Native simulation advancement with original map and existing inspection fixtures."
+    },
+    {
+      "file": ".artifacts/m2-4/structures-batches76-77-v1/native-simulation-v1/desert/report.json",
+      "sha256": "6cde8eebf158563d43f8556ea0bd6ee6acddca0e14ebd810a1e73aca8e38fdc1",
+      "status": "PASS_NATIVE_TICK_PROGRESSION",
+      "theater": "DESERT",
+      "map": "dryheat.map",
+      "before": 2,
+      "after": {
+        "tick": 14,
+        "status": 1,
+        "environmentDensity": 4,
+        "terrainDensity": 4,
+        "glError": 0
+      },
+      "boundary": "Native simulation advancement with original map and existing inspection fixtures."
+    }
+  ],
+  "coverage": [
+    {
+      "theater": "NEWURBAN",
+      "file": ".artifacts/m2-4/inventory-newurban-after-batch76-v1/inventory.json",
+      "sha256": "3cd8782f66c9ea011c8ac30afe6d640fcfb38e5cfea372b460e05c1090652657",
+      "mapEntries": 8,
+      "uniqueFiles": 8,
+      "remainingMembers": 363,
+      "parseIssues": 0
+    },
+    {
+      "theater": "DESERT",
+      "file": ".artifacts/m2-4/inventory-desert-after-batch77-v1/inventory.json",
+      "sha256": "829e78128cce558f3b716026bddcdd306ad27d38913407b9bd86beff1d3fb0b7",
+      "mapEntries": 13,
+      "uniqueFiles": 13,
+      "remainingMembers": 202,
+      "parseIssues": 0
+    }
+  ],
+  "review": {
+    "file": ".artifacts/m2-4/structures-review-batches76-77-v2/M2.4-NewUrban-Desert-Structures-Batches76-77-Embedded.html",
+    "sha256": "b3a4d3f92f0cfff9cda17d1f531e0f3f6618c02202478962fd7b1464b380c6cc",
+    "embeddedPngs": 157
+  },
+  "delivery": {
+    "status": "PASS_DESKTOP_EMBEDDED_REVIEW_EXACT_HASH_COPY",
+    "source": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/structures-review-batches76-77-v2",
+    "target": "/Users/Aone/Desktop/M2.4-Review-NewUrban-Desert-Batches76-77-20261018",
+    "files": [
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-NewUrban-Desert-Batches76-77-20261018/M2.4-NewUrban-Desert-Structures-Batches76-77-Embedded.html",
+        "bytes": 128131376,
+        "sha256": "b3a4d3f92f0cfff9cda17d1f531e0f3f6618c02202478962fd7b1464b380c6cc"
+      },
+      {
+        "file": "/Users/Aone/Desktop/M2.4-Review-NewUrban-Desert-Batches76-77-20261018/M2.4-NewUrban-Desert-Structures-Batches76-77-Embedded.json",
+        "bytes": 78549,
+        "sha256": "0ed0833874c7751b8166da4ccf5bc97d28df3831040785aecf115277346bfc12"
+      }
+    ],
+    "gamePackageCreated": false
+  },
+  "resourceHandoff": {
+    "file": ".artifacts/m2-4/structures-batches76-77-v1/resource-handoff-final-v2.json",
+    "sha256": "23f007f1714a57234c78e213d1e80938f440e337b50695187d7044864678b781",
+    "counts": {
+      "selectedFiles": 88,
+      "authoringFiles": 237,
+      "nativeGuideFiles": 442
+    }
+  },
+  "tests": {
+    "focusedLoaderAndTerrain": 27,
+    "finalWaterTargetedRecheck": 7,
+    "pythonChecks": 19,
+    "entryTypecheck": "PASS"
+  },
+  "userAcceptance": "PENDING",
+  "windows": "NOT_RUN",
+  "m24Complete": false,
+  "perBatchGamePackageCreated": false,
+  "browser": "NOT_RUN_LOCAL_FILE_PROTOCOL_BLOCKED_BY_BROWSER_TOOL",
+  "mainHead": "748d0998aaf663acda8807c158155bf0a5bb157b",
+  "mainStatus": ""
+}

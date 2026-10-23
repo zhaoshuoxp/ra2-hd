@@ -1,0 +1,155 @@
+{
+  "schema": "m2-2-final-acceptance-v1",
+  "date": "2026-10-07",
+  "status": "M2_2_ACCEPTED_AND_INTEGRATED_INTO_LOCAL_MAIN_MAC_DESKTOP_ZIP_DELIVERED",
+  "map": "XMP03T4.map",
+  "counterpart": "MP03T4.map",
+  "runtimeSourceHead": "5eeb7667627f3c307493fbb1fdf786a71e442f51",
+  "userDecision": {
+    "bridge": "APPROVED_RESIDUAL_SEAMS_ACCEPTABLE",
+    "otherFeedback": "ACCEPTED_WITH_FINAL_DELIVERY_REQUEST",
+    "instruction": "Accept the bridge despite residual seams; continue any missing HD map elements, otherwise deliver a Mac ZIP to Desktop."
+  },
+  "selections": {
+    "terrain": {
+      "schemaVersion": 1,
+      "revision": "temperate-m2-2-environment-v9",
+      "sha256": "b79a24ff94a4b5d98a7e8621c0b141b8c9d254ffd636fcfa4d713ca013dd4fbd"
+    },
+    "environment": {
+      "schemaVersion": 1,
+      "revision": "environment-m2-2-complete-v6",
+      "sha256": "bd6673dddfab66bfd08af62ae3b9d7baf6f5176a797d3256de87dbac65e02c81"
+    }
+  },
+  "coverage": {
+    "path": ".artifacts/m2-2/final-visible-coverage-audit-20261007.json",
+    "sha256": "a0361a408771daf7bbbafa4483516f3f7ef5f9b4254bf2d6729f880976a89bde"
+  },
+  "currentAcceptance": {
+    "path": "docs/m2-2-acceptance.json",
+    "sha256": "078dcfbf474580b63bfd972a03f60d001561b4886d31e9cd9ba4ad5505207f82"
+  },
+  "productionResolution": {
+    "path": "docs/m2-2-production-state-resolution.json",
+    "sha256": "9b014c406ec4b53140398a39a2fd2eef6ed038ca92cf9b941f5f16b8268a0e2d"
+  },
+  "transferManifest": {
+    "path": "docs/m2-2-resource-transfer.json",
+    "sha256": "a112d0e339f89d4c8707e7eac921fce2e04887f93649570bf14ac468af9f7cad"
+  },
+  "retainedR7Acceptance": {
+    "path": "docs/m2-2-feedback-history/r7-m2-2-acceptance.json",
+    "sha256": "8cc24e7531779d818a2d8436abf16cff1a6c235fde10adbc226c0778c38d254a"
+  },
+  "mainPromotion": {
+    "status": "PASS_ACCEPTED_LOCAL_MAIN_PROMOTION",
+    "receipt": {
+      "path": "docs/m2-2-main-integration-20261007.json",
+      "sha256": "a4c462a8728f2e62a24e619bf8b514e55cf4815346e2c1ab3376cd514f53aaa9"
+    }
+  },
+  "desktopZip": {
+    "status": "PASS_EXACT_DESKTOP_COPY",
+    "file": "/Users/Aone/Desktop/RA2-HD-M2.2-Temperate-Accepted-20261007-macOS-arm64.zip",
+    "bytes": 3470111771,
+    "sha256": "dcc842fb4bdd944edc2c4f55d83f23d977c96011ab6b35ae456d7d3ef6569481",
+    "source": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/.artifacts/m2-2/final-mac-archive-20261007/RA2-HD-M2.2-Temperate-Accepted-20261007-macOS-arm64.zip",
+    "policy": "Create exclusively; existing Desktop archives retained.",
+    "independentCopy": true
+  },
+  "windowsPerformance": "DEFERRED",
+  "physicalInput": "DEFERRED",
+  "remotePush": "NOT_PERFORMED",
+  "cleanup": "NOT_PERFORMED",
+  "adjacentMilestone": "NOT_STARTED",
+  "evidenceRoot": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate",
+  "retainedR7Verification": {
+    "path": ".artifacts/m2-2/final-retained-r7-verification-20261007.json",
+    "sha256": "75d53f12a1e2081ed053f843000fb7b935c4be95e55ce5a4577e358097afbb31"
+  },
+  "package": {
+    "staging": {
+      "path": ".artifacts/m2-2/final-mac-archive-20261007/stage-receipt.json",
+      "sha256": "3adcd40fe4a905f48e1b0444843722b93e873307778f018267c95f20d041872b"
+    },
+    "archive": {
+      "path": ".artifacts/m2-2/final-mac-archive-20261007/archive-receipt.json",
+      "sha256": "b3af8c07a8fecebd35a9986df7700211eca906bc44d4a4aa0703c6fc4378efcf"
+    },
+    "zipInventory": {
+      "path": ".artifacts/m2-2/final-mac-archive-20261007/zip-inventory-receipt.json",
+      "sha256": "42f772ad31c2b7ac6c9fd8b0b4e7b89a5ff16c3ecd21b0127c8bb0544797895a"
+    },
+    "extraction": {
+      "path": ".artifacts/m2-2/final-mac-archive-20261007/extraction-receipt.json",
+      "sha256": "4c4424748c193e39cad538f2ca78a7ea6639b09fe95516ee222059c177ce7d63"
+    },
+    "signature": {
+      "path": ".artifacts/m2-2/final-mac-archive-20261007/signature.json",
+      "sha256": "9383b447e83005e8fb82e22f8a9bcb571210946932e3215aa0e80bbfc47d2fe9"
+    },
+    "copiedRuntimeSourceHead": "5eeb7667627f3c307493fbb1fdf786a71e442f51",
+    "nativeChecks": {
+      "4": {
+        "path": ".artifacts/m2-2/final-extracted-native-4x-20261007/report.json",
+        "sha256": "51de9718897c999545e69b75e6e15257a8491ef0b5c4c6e36bb3a130a81a55bd",
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "density": 4,
+        "visibleHdBindings": 1321,
+        "terrainBindings": 13515,
+        "allocation": {
+          "terrain": 507796748,
+          "environment": 292124932,
+          "baseline": 91372196,
+          "eager": 50566032,
+          "demand": 38822236,
+          "total": 980682144,
+          "limit": 1342177280
+        },
+        "glError": 0
+      },
+      "2": {
+        "path": ".artifacts/m2-2/final-extracted-native-2x-20261007/report.json",
+        "sha256": "94b53ee8fed230ef658a0e580db8cfb6e3fbb8f74f3021e0c8323533b5525e6e",
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "density": 2,
+        "visibleHdBindings": 1321,
+        "terrainBindings": 13515,
+        "allocation": {
+          "terrain": 130080012,
+          "environment": 74856308,
+          "baseline": 30503392,
+          "eager": 9731888,
+          "demand": 9965356,
+          "total": 255136956,
+          "limit": 268435456
+        },
+        "glError": 0
+      }
+    },
+    "launchAfterExtraction": "RA2-HD-M2.2-Temperate-Accepted-20261007-macOS-arm64/Launch-Isolated-Review.command",
+    "visualInspection": {
+      "path": ".artifacts/m2-2/final-extracted-visual-20261007.json",
+      "sha256": "919d1538be6a558a9e80ef602a9a00528baa0bdf4329057d0362d6da102f559c"
+    },
+    "includedProfile": false,
+    "resourcePolicy": "Exact accepted signed app and complete independent sibling resources; no duplicate build."
+  },
+  "validationReuse": {
+    "focusedTests": {
+      "path": ".artifacts/m2-2/feedback-r7-tests.log",
+      "sha256": "34a42fae2c023249f4ba14aca594b0730e07b623935a4d44cea2d4e38171977b"
+    },
+    "entryTypecheck": {
+      "path": ".artifacts/m2-2/feedback-r7-typecheck-entry.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    },
+    "priorSelectedNativeStates": {
+      "path": "docs/m2-2-feedback-r7.json",
+      "sha256": "a12261f3bd9589f53818607696eaecb215bd1fde3c4ed62b13b652b628560ff4"
+    },
+    "scope": "Exact runtime/resource relocation retains closed complete-family, gameplay-state, fallback/disposal, RA2/control-map and performance evidence. Fresh extracted checks cover registration, selected map views and both densities; no repeated gameplay-state matrix."
+  },
+  "continuation": "Continue corrections to this accepted map in the same conversation. A materially expanded objective should start a new execution conversation after the user chooses it."
+}

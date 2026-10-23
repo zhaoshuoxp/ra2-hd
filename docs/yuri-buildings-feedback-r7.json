@@ -1,0 +1,136 @@
+{
+  "status": "PASS_DESKTOP_C_R7_DELIVERY_USER_VISUAL_REVIEW_PENDING",
+  "baseline": "07de40c261c7e8367f70df2a993d4067c52000ce",
+  "runtimeSourceHead": "f74bcf9cf6cf02c72ac598c6ced3585b0030e0d9",
+  "preparedContract": {
+    "schemaVersion": 1,
+    "sha256": "860bb312dbfbb13db91441aa1b187eaa526e4caa771660c27ef8dc80a72b510e",
+    "indexPath": "prepared-hd/indexes/860bb312dbfbb13db91441aa1b187eaa526e4caa771660c27ef8dc80a72b510e.json"
+  },
+  "changedSelections": [
+    "yuri-yaggun-temperate",
+    "yuri-yaggun-snow",
+    "yuri-yagrnd-temperate",
+    "yuri-yagrnd-snow"
+  ],
+  "retainedSelections": 29,
+  "selectedRevisions": [
+    "c7-feedback-r7-native-pivot-v1",
+    "c7-feedback-r7-central-spin-v3"
+  ],
+  "nativeSlots": 668,
+  "preservationAudit": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r7/preservation-audit-v1.json",
+  "originalReferences": [
+    "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r7/original-gatling-yaw-v2/report.json",
+    "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r7/original-actions-v2/report.json"
+  ],
+  "originalReferenceMode": "HD-disabled retail VXL/HVA/SHP resources in this client, not the Windows Westwood executable",
+  "candidateYaw": [
+    "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r7/r7-gatling-yaw-2x-v1/report.json",
+    "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r7/r7-gatling-yaw-4x-v1/report.json"
+  ],
+  "centralDecodedFrames": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r7/r7-grinder-decoded-v1/report.json",
+  "originalDecodedFrames": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r7/original-grinder-decoded-v3/report.json",
+  "ui": {
+    "uiRevision": "yuri-cameos-e-main-v1",
+    "uiEntries": 474,
+    "uiManifestSha256": "052c1ca0294344e21b3bb4fe881aece611232000e6efc3ec2ad1306efaf3a890"
+  },
+  "delivery": {
+    "archive": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R7-Original-Motion-20261004-f74bcf9-macOS-arm64.zip",
+    "folder": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R7-Original-Motion-20261004-f74bcf9-macOS-arm64",
+    "app": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R7-Original-Motion-20261004-f74bcf9-macOS-arm64/Red Alert 2 HD Task C Feedback R7.app",
+    "bytes": 3417399895,
+    "sha256": "77f02f3717146bb3cd4321cfe45234e1c29ef84fee92fe89c65d68437e4d7920",
+    "checkedEntries": 5322
+  },
+  "review": {
+    "file": "/Users/Aone/Desktop/RA2-HD-Main-C-Feedback-R7-Original-Motion-20261004-f74bcf9-macOS-arm64/C-Feedback-R7-Review.html",
+    "images": 18,
+    "videos": 14,
+    "externalRequests": 0
+  },
+  "validation": {
+    "selectedFamilyTests": "3 tests / 181 assertions",
+    "feedbackRenderingTests": "4 tests / 63 assertions",
+    "typecheck": "PASS",
+    "launcher": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r7/desktop-launch-v1/report.json",
+    "native": [
+      {
+        "evidence": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r7/desktop-native-4x-v1/report.json",
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "ownerColor": "rgb(60, 210, 45)",
+        "cases": {
+          "YAGGUN-binding": "PASS",
+          "YAGRND-binding": "PASS",
+          "Grinder-native-intake-animation": "PASS",
+          "Grinder-native-damaged-intake-animation": "PASS",
+          "Gatling-native-stages": "PASS",
+          "Gatling-native-air-rotation": "PASS"
+        },
+        "worldAllocation": {
+          "baseline": 91372196,
+          "eager": 50566032,
+          "demand": 88140208,
+          "total": 230078436,
+          "limit": 1342177280
+        },
+        "preparedCache": {
+          "bytes": 125150592,
+          "peakBytes": 125150592,
+          "pendingBytes": 0,
+          "hits": 0,
+          "misses": 45,
+          "shared": 0,
+          "evictions": 0,
+          "uncached": 4
+        },
+        "preparedFallbacks": 0,
+        "pageErrors": 0
+      },
+      {
+        "evidence": "/Users/Aone/RA2remaster/ra2-hd-yuri-feedback-r5-20261001/.artifacts/yuri-buildings/feedback-r7/desktop-native-2x-snow-v1/report.json",
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "ownerColor": "rgb(49, 215, 230)",
+        "cases": {
+          "YAGGUN-binding": "PASS",
+          "YAGRND-binding": "PASS",
+          "Grinder-native-intake-animation": "PASS",
+          "Grinder-native-damaged-intake-animation": "PASS",
+          "Gatling-native-stages": "PASS",
+          "Gatling-native-air-rotation": "PASS"
+        },
+        "worldAllocation": {
+          "baseline": 22008264,
+          "eager": 28522916,
+          "demand": 35758524,
+          "total": 86289704,
+          "limit": 268435456
+        },
+        "preparedCache": {
+          "bytes": 82491512,
+          "peakBytes": 82491512,
+          "pendingBytes": 0,
+          "hits": 0,
+          "misses": 40,
+          "shared": 0,
+          "evictions": 0,
+          "uncached": 0
+        },
+        "preparedFallbacks": 0,
+        "pageErrors": 0
+      }
+    ]
+  },
+  "mainResourceCopy": {
+    "status": "PASS_ADDITIVE_IMMUTABLE_RESOURCE_COPY",
+    "addedFiles": 198,
+    "retainedIdenticalFiles": 1836
+  },
+  "fidelityLimits": [
+    "Eight discrete HD Gatling views versus continuous Original voxel yaw",
+    "Central shaft one-turn phase mapping is a candidate; hidden Original angular speed is unverified"
+  ],
+  "mapLayout": "R6 actual Desktop layout evidence reused; UI code and styling are unchanged",
+  "boundary": "Technical delivery passed; user appearance acceptance and Windows validation pending. Historical unaffected tests reused. No D/new E or remote push."
+}

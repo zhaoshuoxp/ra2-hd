@@ -1,0 +1,135 @@
+{
+  "status": "PASS_SIX_PACKAGED_MAC_CASES",
+  "runtimeSourceHead": "bd6dab8d7400a15634b7a5cb30b1b4aa8a8e8e9e",
+  "stage": {
+    "file": ".artifacts/m2-4/urban-bridge-batch43-v1/active-stage.json",
+    "sha256": "e886b686878ff3fd960139b2dce8df5f1b4adf434e90b44929c91d3e15094d66"
+  },
+  "nativeCaptureTool": {
+    "file": "scripts/m2/official-maps/native-bridge.mjs",
+    "sha256": "c8f39cbdb31aa44c476d6c7eacd2b7677a75899b26f13592b9271d370e6fcd88"
+  },
+  "cases": [
+    {
+      "report": ".artifacts/m2-4/urban-bridge-native-ra2-mp34-2x-v3/report.json",
+      "sha256": "9ddd97a10838ff8a6fefcd3142f1fb6e1d94fb60ea6d946e48179a1462e671f0",
+      "edition": "ra2",
+      "map": "mp34u4.map",
+      "density": "2x",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "bridgeStatus": "PASS_NATIVE_HIGH_CONCRETE_BRIDGE_PASSAGE_DAMAGE_DEMOLITION_REPAIR",
+      "glError": 0,
+      "combinedWorldBytes": 260200504,
+      "worldBudgetBytes": 536870912,
+      "preparedPeakBytes": 44943988
+    },
+    {
+      "report": ".artifacts/m2-4/urban-bridge-native-ra2-mp34-4x-v3/report.json",
+      "sha256": "38ed716c1f0924e176f87cf6a91923087bd7900aac7fee11a52d4e033c8a00eb",
+      "edition": "ra2",
+      "map": "mp34u4.map",
+      "density": "4x",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "bridgeStatus": "PASS_NATIVE_HIGH_CONCRETE_BRIDGE_PASSAGE_DAMAGE_DEMOLITION_REPAIR",
+      "glError": 0,
+      "combinedWorldBytes": 998132324,
+      "worldBudgetBytes": 1342177280,
+      "preparedPeakBytes": 108580412
+    },
+    {
+      "report": ".artifacts/m2-4/urban-bridge-native-ra2-mp34-original-v3/report.json",
+      "sha256": "1157378d128fceae86315193a8000d5e6b22d630d108bcf77e6af7a997e530f1",
+      "edition": "ra2",
+      "map": "mp34u4.map",
+      "density": "original",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "glError": 0,
+      "originalWorldResourceBytes": 0
+    },
+    {
+      "report": ".artifacts/m2-4/urban-bridge-native-yr-oceansid-2x-v3/report.json",
+      "sha256": "84acc3b615165c2930cfbe4ea3c78e85dda29165a8d43cbefd43e233fe7d1ee4",
+      "edition": "yr",
+      "map": "xoceansid.map",
+      "density": "2x",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "bridgeStatus": "PASS_NATIVE_LOW_WOOD_BRIDGE_PASSAGE_DAMAGE_DEMOLITION_REPAIR",
+      "glError": 0,
+      "combinedWorldBytes": 189121748,
+      "worldBudgetBytes": 536870912,
+      "preparedPeakBytes": 44943988
+    },
+    {
+      "report": ".artifacts/m2-4/urban-bridge-native-yr-oceansid-4x-v3/report.json",
+      "sha256": "1d3e933cb951cf2d155c88ed116004222e8ac8fc6cd92de835dc56c736eb923c",
+      "edition": "yr",
+      "map": "xoceansid.map",
+      "density": "4x",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "bridgeStatus": "PASS_NATIVE_LOW_WOOD_BRIDGE_PASSAGE_DAMAGE_DEMOLITION_REPAIR",
+      "glError": 0,
+      "combinedWorldBytes": 719636000,
+      "worldBudgetBytes": 1342177280,
+      "preparedPeakBytes": 133896592,
+      "originalResetRelease": "PASS",
+      "urbanToSnowRelease": "PASS"
+    },
+    {
+      "report": ".artifacts/m2-4/urban-bridge-native-yr-oceansid-original-v3/report.json",
+      "sha256": "2271241e925f796cb00ba3cd712e9e9e93b28fe71f3fe4d51a28f48edf632613",
+      "edition": "yr",
+      "map": "xoceansid.map",
+      "density": "original",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "glError": 0,
+      "originalWorldResourceBytes": 0
+    }
+  ],
+  "loaderTests": {
+    "file": ".artifacts/m2-4/urban-bridge-loading-v2.log",
+    "sha256": "dc33a8b3d4024c87b616c6697eb4bdbacebbdc6e2d4f9a2bf03ab5f2007e263f",
+    "tests": 4,
+    "assertions": 164
+  },
+  "reusedCivilianTests": {
+    "file": ".artifacts/m2-4/urban-bridge-accepted-reuse-regression-v1.log",
+    "tests": 7,
+    "assertions": 86
+  },
+  "disclosure": "Controlled reveal, stopped AI and legal spawned vehicle/engineer fixtures on unchanged original bridge placements; native orders, damage and demolition. No natural full-match or physical-input claim. The V3 capture tool fixes asynchronous camera timing and pins the original bridge midpoint across demolition. Earlier mechanics passes remain evidence but their incorrect state captures are excluded from review.",
+  "deduplication": "Two actual bridge render/load paths: high-concrete native frame selection and low-wood virtual 26-source frame-1 aggregation. Every source/frame/density is statically checked; these two original map paths exercise native passage and state transitions at both densities. The other 14 affected directory entries reuse those paths without repeating full matches.",
+  "reusedEvidence": "Accepted 32-entry/26-source-hash Urban inventory, catalog/mode adaptation and map dependency graph, accepted TMP/three-faction resources. All original archives freshly rehashed. Accepted Batch42 and earlier art are unchanged.",
+  "technical": "PASS",
+  "visual": "USER_ACCEPTED",
+  "windows": "NOT_RUN",
+  "m24Complete": false,
+  "review": {
+    "html": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch43-20261015/M2.4-Urban-Batch43-Embedded.html",
+    "sha256": "2347a8f83a7ae2852f78961ffd2dd2c217a4ca6642d89449f80fb26fe5e193d8",
+    "images": 84,
+    "status": "PASS_NATIVE_SIZE_AND_DENSITY_CONTROLS"
+  },
+  "coverage": {
+    "affectedMapEntries": 16,
+    "affectedUniqueMapHashes": 13,
+    "remainingUrbanSourceGroups": 292
+  },
+  "acceptedPriorBatch42": true,
+  "userAcceptance": {
+    "status": "USER_ACCEPTED",
+    "date": "2026-10-15",
+    "batch": 43,
+    "feedback": "Batch 43 all accepted.",
+    "scope": "All 27 new Urban high-concrete and low-wood bridge members, including native state artwork.",
+    "review": {
+      "projectFile": ".artifacts/m2-4/urban-bridge-review-v1/M2.4-Urban-Batch43-Embedded.html",
+      "desktopAtValidation": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch43-20261015/M2.4-Urban-Batch43-Embedded.html",
+      "sha256": "2347a8f83a7ae2852f78961ffd2dd2c217a4ca6642d89449f80fb26fe5e193d8",
+      "qaSha256": "49146c4af375451a13f1cec2a51bae6ac8fa41143b2ca22903b70da0cda68594",
+      "note": "Desktop path was removed externally after review; unchanged project review and actual Desktop validation receipt retain its accepted identity."
+    },
+    "technical": "PASS_SIX_PACKAGED_MAC_CASES",
+    "windows": "NOT_RUN",
+    "m24Complete": false
+  }
+}

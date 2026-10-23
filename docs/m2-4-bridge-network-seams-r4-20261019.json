@@ -1,0 +1,114 @@
+{
+  "status": "PARTIAL_TERRAIN_PASS_OVERLAY_OMISSION_CONFIRMED",
+  "runtimeSourceCommit": "158767ba13a1b2651dfab407a37897fa0810c91c",
+  "controlToolCommit": "59f3d40d",
+  "priorR3SeamAcceptance": "REJECTED_BY_USER",
+  "newSeamAcceptance": "USER_REPORTS_IMPROVED_JOINS_COLOR_MISMATCH_OPEN",
+  "acceptedArtwork": "R2_RETAINED_EXCEPT_REOPENED_CONNECTED_ROAD_SURFACE",
+  "candidate": {
+    "schemaVersion": 1,
+    "revision": "newurban-m2-4-shared-bridge-road-r4-v1",
+    "sha256": "4ad8d222cabc86640546c6ddb0939979f86bcd85a97162ae440a85d26052d693"
+  },
+  "temperateAuthority": {
+    "schemaVersion": 1,
+    "revision": "temperate-m2-3-gameplay-feedback-v12",
+    "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+  },
+  "scope": {
+    "bridgeMembers": [
+      "ovrps04.ubn",
+      "ovrps05.ubn",
+      "ovrps06.ubn"
+    ],
+    "roadMembers": [
+      "proad02.ubn",
+      "proad02a.ubn",
+      "proad02b.ubn",
+      "proad02c.ubn"
+    ],
+    "maps": [
+      "yr:austintx.map",
+      "yr:downtown.map",
+      "yr:fight.map",
+      "yr:groundze.map",
+      "yr:groundzemw.map",
+      "yr:manhatta.map",
+      "yr:rushhr.map",
+      "yr:turfwar.map"
+    ],
+    "changedBridgePairs": 36,
+    "exactOtherBridgePairs": 124,
+    "exactOtherGroups": 20,
+    "newCompleteRoadMembers": 4,
+    "remainingNewUrbanAuthoredGaps": 359,
+    "remainingDesertAuthoredGaps": 202
+  },
+  "validation": {
+    "loaderTests": 14,
+    "assertions": 982,
+    "entryTypecheck": "PASS",
+    "isolatedBuild": "PASS",
+    "signedMacStage": "PASS",
+    "nativeSuite": "PASS_SCOPED_MAC_ORIGINAL_2X_4X_AND_RELEASE_REENTRY",
+    "staticReview": "PASS_9_EMBEDDED_IMAGES",
+    "browserInteractive": "NOT_RUN_PROTOCOL_DENIAL_RESPECTED"
+  },
+  "evidence": [
+    {
+      "file": ".artifacts/m2-4/bridge-network-seams-r4-20261019/export-and-preservation-v1.json",
+      "sha256": "e139e4d5f1218aa62d9c01f9a1be53ea92dcaf516721f7f3e099aba05b59d2b5"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-network-seams-r4-20261019/independent-audit-v1.json",
+      "sha256": "df42f71a16827bd8ee774648014d2d79f73785f3dece0bd91e6f4c2014b5f105"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-network-seams-r4-20261019/coverage-delta-v1.json",
+      "sha256": "01ced166886a2c5c32554b012d528bda83b582a3d12bb696c8b1a98adf8de1ed"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-network-seams-r4-20261019/native-suite.json",
+      "sha256": "36bb71ec7014770358451a8d70819161a91926fade9871eca1c7ae9208aca3aa"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-network-seams-r4-20261019/resource-handoff-r4.json",
+      "sha256": "5d2ddc3bc1a6ad69dd1d1d6f38fc5c77e16b7252f7ef55bf03b697a92ab3a0cf"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-network-seams-r4-20261019/desktop-delivery-r4.json",
+      "sha256": "974eba458e5d82c30c63138c2f0a77adba90f65328bc65a8f9baf8e1295790f7"
+    },
+    {
+      "file": ".artifacts/m2-4/bridge-network-seams-r4-20261019/review/static-qa.json",
+      "sha256": "95572d63ea6c6dbbcda0eefa321d6801fafabd6e47d901b15bb1af5c4e3fb38f"
+    }
+  ],
+  "review": {
+    "file": "/Users/Aone/Desktop/M2.4-Review-Bridge-Network-Seams-R4-20261019/M2.4-Bridge-Network-Seams-R4-Embedded.html",
+    "sha256": "92e11c5c515474f47d739470965e1b2749da74d82aa2cc1bb7da4ba81a663b97",
+    "embeddedImages": 9
+  },
+  "resources": {
+    "hashVerifiedFiles": 315,
+    "newMotherFiles": 0,
+    "previousAcceptedMotherFilesExact": 19,
+    "preparedIndexUnchanged": true,
+    "perBatchMacPackageCreated": false
+  },
+  "main": {
+    "observed": "748d0998aaf663acda8807c158155bf0a5bb157b",
+    "clean": true,
+    "modified": false
+  },
+  "windows": "NOT_RUN",
+  "m24Complete": false,
+  "remaining": [
+    "User appearance review of the connected roadway",
+    "Other reported seams",
+    "Remaining NewUrban and Desert authored dependencies",
+    "Final all-scope audit, acceptance, independent Mac delivery and authorized local integration"
+  ],
+  "subsequentCorrection": "docs/m2-4-bridge-overlay-completion-r5-20261019.md",
+  "limitation": "The connected destructible BRIDGE1/BRIDGE2 overlay was still Original; TMP publication did not establish its HD coverage."
+}

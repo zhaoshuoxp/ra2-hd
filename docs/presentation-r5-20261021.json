@@ -1,0 +1,169 @@
+{
+  "baseSourceHead": "5425b922b64ad9485675abaa1d9547bc9c3cf1e6",
+  "runtimeSourceHead": "4fa6c143e5b7e1cfb9f941b28757eedf5f84f015",
+  "scope": [
+    "Actual persistent BEHIND occlusion indicator",
+    "Original Home movie registration and former erased-title area"
+  ],
+  "indicator": {
+    "name": "BEHIND",
+    "member": "behind.shp",
+    "sourceSha256": "ef26a68a4579fc630b1743ec0febe42b4f09182d80b0ab708f012c716f33f4e3",
+    "frames": 18,
+    "canvas": [
+      55,
+      43
+    ],
+    "renderOrder": 999995,
+    "retailGeometry": "UNCHANGED",
+    "method": "Native convex arrows and neutral planar faces, supersampled straight edges, blended coverage"
+  },
+  "movieSourceSha256": "1c860b823cd86b54bda0969ee8a956707309d786ed336aa91b3cfbee4c1cfe55",
+  "movieDetailLimit": [
+    632,
+    570
+  ],
+  "registration": {
+    "file": "public/res/presentation/menu-retail-glyph-guard-r5.png",
+    "sha256": "a923081aafb266f4663e4ffcc85a51da9c81e7acef16f105cfc94054be597e57",
+    "referenceSha256": "231cba439f30fb051f118e6f2aae62824227429df9fd4cad41b2aec882cd6126",
+    "protectedPixels": 53693,
+    "registration": {
+      "offset": [
+        245,
+        -45
+      ],
+      "scale": [
+        1.87,
+        1.94
+      ]
+    },
+    "method": "Reference-colored logo pixels only, with a two-pixel sampling guard; no broad erased rectangle."
+  },
+  "fullSuite": {
+    "pass": 597,
+    "failedCases": 0,
+    "loadingErrors": 0,
+    "skipped": 0,
+    "processErrors": 0,
+    "processes": 148
+  },
+  "nativeCandidate": "PASS_RA2_2X_COMPLETE_MOVIE_LOOP_AND_18_BEHIND_FRAMES",
+  "finalNativeMatrix": {
+    "status": "PASS_NATIVE_R5_CORRECT_BEHIND_AND_HOME_CASES",
+    "cases": 4,
+    "geometryComparisons": 72,
+    "maxGeometryDelta": 0,
+    "homeProbes": 64,
+    "originalGlyphInfluenceMax": 0
+  },
+  "extractedPackageNative": {
+    "status": "PASS_TWO_EXTRACTED_NATIVE_R5_CASES_BEHIND_REGISTERED_FILM_AND_POST_MATCH_LAYOUT",
+    "cases": 2,
+    "editions": [
+      "ra2",
+      "yr"
+    ]
+  },
+  "desktopDelivery": {
+    "status": "PASS_COMPLETE_MAC_R5_DESKTOP_BYTES",
+    "path": "/Users/Aone/Desktop/RA2-HD-Mac-4fa6c143-20261021-UI-R5.zip",
+    "bytes": 3963974708,
+    "sha256": "f8e10e003c3ff60f5fbcc0a2579f2557af2880ec625ff64afad0a075100fe2b0",
+    "sourceHead": "4fa6c143e5b7e1cfb9f941b28757eedf5f84f015",
+    "timestampUtc": "2026-10-22T01:14:50.505325+00:00",
+    "earlierDesktopPackages": "NOT_MODIFIED"
+  },
+  "visualAcceptance": "PENDING_USER_REVIEW",
+  "physicalInput": "NOT_REACCEPTED",
+  "nativeWindows": "NOT_RUN",
+  "independentM24": "PRESERVED_UNMERGED",
+  "preservation": {
+    "resourceReferences": 242,
+    "acceptedConstructionRecords": 108,
+    "resourceSelectorsChanged": false,
+    "ring": "EXACT_PRE_R5_SOURCE",
+    "giDeathRevision": "PRESERVED_R4_V3"
+  },
+  "failedEvidence": "/Users/Aone/RA2remaster/project-history/presentation-r5-4fa6c143-20261021/rejected-probes.json",
+  "conversation": "Continue this conversation for corrections and acceptance.",
+  "frozenPayloadParity": "PASS_NATIVE_CANDIDATE_AND_FROZEN_RUNTIME_PAYLOAD_PARITY",
+  "archive": {
+    "status": "PASS_ARCHIVE_AND_EXTRACTION_BYTES_LINKS_MODES_SIGNATURE",
+    "archive": "/Users/Aone/Desktop/RA2-HD-Mac-4fa6c143-20261021-UI-R5.zip",
+    "bytes": 3963974708,
+    "sha256": "f8e10e003c3ff60f5fbcc0a2579f2557af2880ec625ff64afad0a075100fe2b0",
+    "entries": 7716,
+    "sourcePayloadParity": "PASS_EXCEPT_DECLARED_PACKAGE_ENTRYPOINT"
+  },
+  "branchCompatibility": {
+    "status": "PASS_R5_ADDS_NO_CONFLICT_PATHS_TO_INDEPENDENT_BRANCH_PREVIEWS",
+    "baseSourceHead": "5425b922b64ad9485675abaa1d9547bc9c3cf1e6",
+    "r5RuntimeSourceHead": "4fa6c143e5b7e1cfb9f941b28757eedf5f84f015",
+    "branches": [
+      {
+        "ref": "refs/heads/task/m2-4-all-skirmish-theaters",
+        "tip": "6d02ff16eab12ed12a11ff33f800fb965d1d176e",
+        "previews": {
+          "base": {
+            "exitCode": 1,
+            "tree": "a722d61f60e60410217fc864a0dcb19316c87fdf",
+            "conflictPaths": [
+              "scripts/m2/official-maps/terrain-loading.test.ts",
+              "src/engine/renderable/entity/Building.ts"
+            ]
+          },
+          "r5": {
+            "exitCode": 1,
+            "tree": "4ba5b6bbeb0441946d00b2910ddf123ad91a6848",
+            "conflictPaths": [
+              "scripts/m2/official-maps/terrain-loading.test.ts",
+              "src/engine/renderable/entity/Building.ts"
+            ]
+          }
+        },
+        "newConflictPaths": []
+      },
+      {
+        "ref": "refs/heads/perf/windows-hd-investigation",
+        "tip": "34856b4552968e7054f9607878431b0036b1724a",
+        "previews": {
+          "base": {
+            "exitCode": 1,
+            "tree": "47c79a9f5c2e8ccbd41611e0caf9e0e37643f784",
+            "conflictPaths": [
+              "AGENTS.md"
+            ]
+          },
+          "r5": {
+            "exitCode": 1,
+            "tree": "0751c313afe085ac76db1e69b045beb9fb6caa41",
+            "conflictPaths": [
+              "AGENTS.md"
+            ]
+          }
+        },
+        "newConflictPaths": []
+      }
+    ],
+    "limits": "Read-only worktree/history review. Merge objects only; no index, branch or working files changed. These heads are snapshots of independently active work. Existing conflicts require resolution when that work is ready."
+  },
+  "reviewPlayback": {
+    "status": "PASS_OFFLINE_R5_REVIEW_IMAGES_AND_COMPLETE_SEQUENTIAL_PLAYBACK",
+    "images": 12,
+    "completeClips": 5,
+    "homeRecordingSeconds": 40.703
+  },
+  "evidenceRoot": "/Users/Aone/RA2remaster/project-history/presentation-r5-4fa6c143-20261021",
+  "typecheck": "PASS_ENTRY",
+  "temporaryRetirement": {
+    "status": "PASS_ONLY_AUDITED_R5_TEMPORARY_COPIES_RETIRED",
+    "logicalBytes": 19117777135,
+    "observedAvailableDeltaBytes": 18925457408,
+    "accounting": "Logical retired bytes and du do not measure exclusive APFS blocks. Free-space delta is an observation and may include concurrent filesystem activity.",
+    "protectedResourceReferencesAfter": 242,
+    "retainedIndexedFiles": 611,
+    "retainedIndexedBytes": 711273049
+  },
+  "technicalDelivery": "COMPLETE_DESKTOP_AND_VERIFIED_SCOPED_RETIREMENT"
+}

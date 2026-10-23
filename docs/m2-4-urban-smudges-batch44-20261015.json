@@ -1,0 +1,88 @@
+{
+  "status": "PASS_THREE_PACKAGED_MAC_CASES_AND_ALL_24_DECAL_BINDINGS",
+  "runtimeSourceHead": "fdfb54a7181f52ea52f31df7de68a145a7c52903",
+  "cases": [
+    {
+      "file": ".artifacts/m2-4/urban-smudge-native-ra2-mp34-2x-v2/report.json",
+      "sha256": "eaef937dd84bf86fd571e18a7a18b7c4d93085bb4ea45533934f1137c04f3ebf",
+      "density": "2x",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "nativeDecals": 24,
+      "glError": 0,
+      "combinedWorldBytes": 258742296,
+      "budget": 536870912,
+      "preparedPeakBytes": 44943988
+    },
+    {
+      "file": ".artifacts/m2-4/urban-smudge-native-ra2-mp34-4x-v2/report.json",
+      "sha256": "74ff622d938f7517cfcbf7684f212b6ad942085e48d3bc0c3ab88a9cf71198ec",
+      "density": "4x",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "nativeDecals": 24,
+      "glError": 0,
+      "combinedWorldBytes": 992933412,
+      "budget": 1342177280,
+      "preparedPeakBytes": 108580412
+    },
+    {
+      "file": ".artifacts/m2-4/urban-smudge-native-ra2-mp34-original-v2/report.json",
+      "sha256": "8668cdee1da4800a533672eb970c951faf09178dbca1b801aba2183cad97792c",
+      "density": "original",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "glError": 0,
+      "hdResourceBytes": 0
+    }
+  ],
+  "stage": {
+    "file": ".artifacts/m2-4/urban-smudge-batch44-v1/active-stage.json",
+    "sha256": "5206aaa45ccedcb50f7db789d05cc8b45563c77b675c6fac8afd7b4359fe5651"
+  },
+  "captureTool": {
+    "file": "scripts/m2/official-maps/native-decals.mjs",
+    "sha256": "fd15bfa35a1d682d9cec5a6cd20c36fc49f7eecdeb89697657bb6a76e82c86cb"
+  },
+  "loader": {
+    "tests": 48,
+    "assertions": 1153,
+    "log": ".artifacts/m2-4/urban-smudge-loading-v1.log"
+  },
+  "regression": {
+    "tests": 4,
+    "assertions": 97,
+    "log": ".artifacts/m2-4/urban-smudge-snow-regression-v1.log"
+  },
+  "deduplication": "All 48 edition/identity bindings resolve the same 24 source hashes, palette and shared native SmudgeLayer path. Every family and density is statically and loader-tested; one original RA2 map provides 24 native cases at each HD density. The accepted 32-map dependency/mode audit and unchanged YR native renderer path are reused; no new YR run is claimed for Batch44.",
+  "reusedRelease": {
+    "file": ".artifacts/m2-4/urban-bridge-native-yr-oceansid-4x-v3/report.json",
+    "sha256": "1d3e933cb951cf2d155c88ed116004222e8ac8fc6cd92de835dc56c736eb923c",
+    "scope": "Accepted Batch43 Original reset, lobby reentry, Urban-to-Snow switch and shared-loader release remain unchanged. New smudge family disposal is checked separately by all 48 loader cases."
+  },
+  "disclosure": "Original map placements and source files are unchanged. Controlled native createObject/spawnObject/unspawnObject fixtures on legal empty tiles prove all 24 identities, actual native SmudgeLayer batching, selected manifest/source hashes and frame zero. These fixtures are not a natural full match or a weapon-triggered generation test. Unchanged stock weapon-to-smudge creation mechanics are reused separately; no gameplay code changed. A four-cell unit clearance prevents fixture-vehicle occlusion; original camera scale and screenshot pixels remain unchanged.",
+  "review": {
+    "html": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch44-20261015/M2.4-Urban-Batch44-Embedded.html",
+    "sha256": "f68bbb1972b887506be2bdd6dc05e71ce1bc1746373ac0349f90d22164644cee",
+    "images": 99,
+    "bytes": 74021922,
+    "desktopQA": ".artifacts/m2-4/urban-smudge-embedded-desktop-qa-v1/report.json"
+  },
+  "technical": "PASS",
+  "visual": "USER_ACCEPTED",
+  "windows": "NOT_RUN",
+  "m24Complete": false,
+  "userAcceptance": {
+    "status": "USER_ACCEPTED",
+    "date": "2026-10-15",
+    "batch": 44,
+    "feedback": "Accepted; continue.",
+    "scope": "All 24 Urban burnt-ground and crater families in the submitted Batch44 review.",
+    "review": {
+      "projectFile": ".artifacts/m2-4/urban-smudge-review-batch44-v1/M2.4-Urban-Batch44-Embedded.html",
+      "desktopAtValidation": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch44-20261015/M2.4-Urban-Batch44-Embedded.html",
+      "sha256": "f68bbb1972b887506be2bdd6dc05e71ce1bc1746373ac0349f90d22164644cee",
+      "desktopQAsha256": "2550de1388e631c0aa02c3991a3b3160a0c73d814f581b4b05516a72f4554647"
+    },
+    "technical": "PASS_THREE_PACKAGED_MAC_CASES_AND_ALL_24_DECAL_BINDINGS",
+    "windows": "NOT_RUN",
+    "m24Complete": false
+  }
+}

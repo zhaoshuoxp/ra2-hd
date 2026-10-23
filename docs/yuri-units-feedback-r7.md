@@ -1,0 +1,5 @@
+# TELE R7: brighter, more vivid translucent field
+
+The user requested more brightness, saturation and contrast after selecting the R6 partial hull contact. Preserve that exact contact behavior, the between-barrels emission and 38 to 64 percent coverage. R7 adjusts the rendered field color only: linear brightness 1.35, saturation 1.18 and palette contrast 1.2. The deeper violet/lavender palette is retained; the field remains normally alpha blended with visible terrain beneath it.
+
+Native lift/pull motion, targeting, timings, logical geometry, camera and gameplay rules remain unchanged. The latest user-selected contact image, original retail reference, prior apps and accepted resources are retained. Verify the current copied app at both densities and embed the new native videos alongside the original and selected-contact references. TELE visual acceptance remains pending; all other R3 visuals and clean mothers retain acceptance. DISK payment and YURIPR PsiWave exceptions, main integration and Windows remain outside this correction.

@@ -1,0 +1,11 @@
+# Startup and trainer sidebar corrections
+
+Runtime `ae203d3` fixes two reproduced first-use presentation failures. Native initial PCV/LTNK/INIT units previously drew Original before demand loading completed. Actual initial unit families now resolve behind the loading screen and transfer their warm leases to renderers. Visited sidebar pages previously exhausted the fixed 16 MiB texture budget: NADEPT/NATECH/NANRCT/NAINDP stayed Original after all technology until scrolling. Preparation now evicts by capacity as well as page count and releases displayed old leases only when both pages cannot fit.
+
+Retail `rulesmd.ini` and live weapon rules both specify `DiskDrain.Report=KirovAttack`, shared with `BlimpBomb`. Native drain audio dispatch confirms this key followed by the original FloatingDiscStealLoop. Audio is preserved.
+
+47 focused tests with 476 assertions, entry type checking and the production build pass. Packaged Yuri 2X, Allied/Soviet 4X, Original control, actual Desktop ZIP extraction with delayed UI decoding, and DISK payment/animation/centering/cancellation scenarios pass. First actual world draws and 24 visible all-technology cameos/labels are checked without scrolling; HD Off releases the UI allocation. Controlled legal fixtures validate these paths rather than claiming a complete natural-match matrix. An early Original harness preference-timing failure is retained; applying preferences after edition GUI initialization resolves the fixture and the control passes.
+
+The new Mac arm64 and Windows x64 portable ZIPs are on Desktop with `Startup-Sidebar-Fix-20261005-ae203d3` in their names. Archive bytes, fresh extraction, modes, links, absent user data, and the Mac strict signature verify. All 4,637 world files and 360 UI files match the previous delivery; the 490-entry selection and prepared index remain unchanged. Windows has architecture/module/resource/archive checks only on this host. Exact receipts, hashes and evidence paths are in `startup-sidebar-fixes-20261005.json`.
+
+The user reported prior Mac and Windows acceptance, then Windows startup and new-object performance concerns. New corrections remain pending user review. Continue that performance work in this conversation, preserving these packages and evidence; do not claim a native Windows performance improvement from Mac measurements.

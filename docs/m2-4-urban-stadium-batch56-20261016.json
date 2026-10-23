@@ -1,0 +1,1536 @@
+{
+  "schema": "m2-4-urban-stadium-unselected-checkpoint-v1",
+  "status": "STATIC_COMPLETE_UNSELECTED_MAC_AND_WHOLE_ASSEMBLY_VISUAL_PENDING",
+  "families": [
+    "urban-castl05a",
+    "urban-castl05b",
+    "urban-castl05c",
+    "urban-castl05d",
+    "urban-castl05e",
+    "urban-castl05f",
+    "urban-castl05g",
+    "urban-castl05h"
+  ],
+  "originalMapIds": [
+    "yr:xarena.map",
+    "yr:xbermuda.map",
+    "yr:xrockets.map"
+  ],
+  "sourceStates": 32,
+  "densityFrames": 64,
+  "nativeApplicableStateImagesPlanned": 24,
+  "unusedBodySlots": 8,
+  "unusedPolicy": "The original stadium disallows garrison. Preserve slot 2; do not change rules to activate it.",
+  "source": {
+    "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/source.json",
+    "sha256": "f3f8fa41fcaffb2a5615e3fc22af2ce793aa90833455d6b94a3499db190b08a2",
+    "bytes": 76556
+  },
+  "sourceContract": {
+    "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/contract.json",
+    "sha256": "5cc681da9378071245305e0dbcac89bccdf6cdc50c771ad98a9fc27ddb6a2825",
+    "bytes": 9256
+  },
+  "preflight": {
+    "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/preflight-v1.json",
+    "sha256": "4e3ead2a91a835581461bec8e86ed5424540e4f49bf20af03da944f6520b0577",
+    "bytes": 804
+  },
+  "independentVerification": {
+    "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/verification-v1.json",
+    "sha256": "d3448c3672ec0b073af15ee6860e1b3867cb41fc22a8c03e02ba04847f784542",
+    "bytes": 1056
+  },
+  "exportRecipe": {
+    "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-m2-4-batch56-r1/recipe.json",
+    "sha256": "652cb01b9933cdabfe776592a6e2aa5fe109457c9fe986e84f7cdf3e754800f8",
+    "bytes": 19269
+  },
+  "exactPrompts": {
+    "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-jobs-v4.json",
+    "sha256": "f9ab791db3bbd9ace3763c8caf64ffe51aa3540a778b83dc535ddff47d0d3f07",
+    "bytes": 52431
+  },
+  "worklist": {
+    "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/worklist.json",
+    "sha256": "e2f3aecf2b980e181b8bf65560f888459ba08de7f17e236502a9892344d091b1",
+    "bytes": 55665
+  },
+  "slotRegistration": {
+    "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/slot-overrides.json",
+    "sha256": "49057bbec64d0e696655e4055ce9b39951121f0ebccc1ef1a7b789301e8f87ad",
+    "bytes": 9616
+  },
+  "materialProfile": {
+    "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/material-profile-v1.json",
+    "sha256": "a471a7f8f1513ba1dd773fc84a67d67583717268fa10b0470a82bb8194d6daab",
+    "bytes": 3507
+  },
+  "minimumActualMotherDensity": 4.25531914893617,
+  "motherCount": 16,
+  "generationMode": "Built-in image_gen; no external API or raster-detail substitute",
+  "mothers": [
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-01.json",
+        "sha256": "749f3c925dcb27f071ea382302a28dbb23638dc00d889176e09817c4167fc296",
+        "bytes": 3871
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-d510fe91-0a19-4c66-bfb8-707df0efb130.png",
+        "sha256": "171f36ccffd384a9d994fb787ef3a7059f3ebba4d8a52575ef85870bca11808c",
+        "bytes": 2522795
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-01-layout-v3-master.png",
+        "sha256": "171f36ccffd384a9d994fb787ef3a7059f3ebba4d8a52575ef85870bca11808c",
+        "bytes": 2522795
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-01-layout-v3-reference.png",
+        "sha256": "daa07b9c0751c7520e900c7c5c78709a4255c3ee237f16be11a4ca1b32fb7c2a",
+        "bytes": 78901
+      },
+      "slots": [
+        "custl05a.shp-000",
+        "custl05a.shp-001"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-02.json",
+        "sha256": "b8d683e7a95221df2566bdfbb75a463638e726f1193c320f6664bf0477c9e4dc",
+        "bytes": 3874
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-10a4ac68-41f6-45dd-8e25-98bafbceca05.png",
+        "sha256": "4b879f86adae011793c9d52d7503906117bd69847fff36697463d5cb48637bbe",
+        "bytes": 1878636
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-02-layout-v3-master.png",
+        "sha256": "4b879f86adae011793c9d52d7503906117bd69847fff36697463d5cb48637bbe",
+        "bytes": 1878636
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-02-layout-v3-reference.png",
+        "sha256": "b53ce62cc4f497524334e862c1823df5d521a107d9ff57c607f628a647231faf",
+        "bytes": 81994
+      },
+      "slots": [
+        "custl05a.shp-002",
+        "custl05a.shp-003"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-03.json",
+        "sha256": "ebad304cc33d1ac4bfcd2304ac3ddb52a7e773c0963faf21666534c078332424",
+        "bytes": 3869
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-a8653d24-e5a3-415b-9c44-cf94f4f5f79c.png",
+        "sha256": "54a3d03a3a223efd8c8b0d9863436fae159699b9d36bf7b244775da485f6f91b",
+        "bytes": 2921568
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-03-layout-v3-master.png",
+        "sha256": "54a3d03a3a223efd8c8b0d9863436fae159699b9d36bf7b244775da485f6f91b",
+        "bytes": 2921568
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-03-layout-v3-reference.png",
+        "sha256": "64877551fefa9a07895c716e84a49ca36fa33f09ca775a7a7564ab6cc7aa04e6",
+        "bytes": 110849
+      },
+      "slots": [
+        "custl05b.shp-000",
+        "custl05b.shp-001"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-04.json",
+        "sha256": "885c18da117ca7316b4f2f41f1a3d19b259548d59753794ea9ff808ba802ab01",
+        "bytes": 3869
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-c9b55d01-0610-4869-b9eb-e784abcd5054.png",
+        "sha256": "087e013ee60d06f8d610c571b6be1ba309d36e0154a3ce9257b0efa7fa0f8440",
+        "bytes": 2643808
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-04-layout-v3-master.png",
+        "sha256": "087e013ee60d06f8d610c571b6be1ba309d36e0154a3ce9257b0efa7fa0f8440",
+        "bytes": 2643808
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-04-layout-v3-reference.png",
+        "sha256": "46d456ee66c7201a050db1eea03f194315ebfeec37be04ade0baaa903e0a261a",
+        "bytes": 104275
+      },
+      "slots": [
+        "custl05b.shp-002",
+        "custl05b.shp-003"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-05.json",
+        "sha256": "10b109a906dc2dadd625e3835078db27456f9dffa9363191da1ddb0c0c014f4b",
+        "bytes": 3874
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-8e15ec7b-4bb7-4f1e-95a9-1984d7ad7323.png",
+        "sha256": "2129dfa28dfa494e6d46801eca073d6e6407ae77dc4534394d2c669dda43064b",
+        "bytes": 1594626
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-05-layout-v3-master.png",
+        "sha256": "2129dfa28dfa494e6d46801eca073d6e6407ae77dc4534394d2c669dda43064b",
+        "bytes": 1594626
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-05-layout-v3-reference.png",
+        "sha256": "0201ed153ef9db27dec7fd7e345f4e6a7011f3f4d8fed599504fdc46ade4e03c",
+        "bytes": 68514
+      },
+      "slots": [
+        "custl05c.shp-000",
+        "custl05c.shp-001"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-06.json",
+        "sha256": "565f34a71b0a9de0b9cb8e1efcb3f9b6efefeb2e5eff868039fa8cd957124474",
+        "bytes": 3871
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-51befbe8-55e6-4556-a40f-ca6fee3ffcfe.png",
+        "sha256": "8fa54cda2687948ce46b19ce4e07c8c1162deb47cfd4457a4019f1ba364db4fd",
+        "bytes": 2381741
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-06-layout-v3-master.png",
+        "sha256": "8fa54cda2687948ce46b19ce4e07c8c1162deb47cfd4457a4019f1ba364db4fd",
+        "bytes": 2381741
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-06-layout-v3-reference.png",
+        "sha256": "3be78462792364aca704780e160be52e3e1fefbb6fb77659a84d4b3481fb5d50",
+        "bytes": 81287
+      },
+      "slots": [
+        "custl05c.shp-002",
+        "custl05c.shp-003"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-07.json",
+        "sha256": "93b7f90dab9f7a8ad0bbcc5ff7bc317279e616dcd001830424e9ce2351b0092b",
+        "bytes": 3870
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-0e23f226-ae97-4aab-80fe-8459236fc808.png",
+        "sha256": "e8df5ce1ef87577064a3be7c7362179b2f3e5f396bed9d2d16e734f2a1710202",
+        "bytes": 2747117
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-07-layout-v3-master.png",
+        "sha256": "e8df5ce1ef87577064a3be7c7362179b2f3e5f396bed9d2d16e734f2a1710202",
+        "bytes": 2747117
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-07-layout-v3-reference.png",
+        "sha256": "dd34ec6e19aba7e7928d7db057779612b0c5c99764e12f76824d71018d039cbe",
+        "bytes": 113959
+      },
+      "slots": [
+        "custl05d.shp-000",
+        "custl05d.shp-001"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-08.json",
+        "sha256": "dddac9efc6f34de3bea2835fd4206a0c8ffdc611bc459267084aa08a219760d2",
+        "bytes": 3873
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-d5e895a0-64e1-4b28-882a-06656d600729.png",
+        "sha256": "175af72a6f8d439211d558b15bc0abfbad7ba812f8d6f22af1b92a8284956b4b",
+        "bytes": 2047291
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-08-layout-v3-master.png",
+        "sha256": "175af72a6f8d439211d558b15bc0abfbad7ba812f8d6f22af1b92a8284956b4b",
+        "bytes": 2047291
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-08-layout-v3-reference.png",
+        "sha256": "db039edf2318e5c3b65d5b30a87e00a51a79736829c7b7e7ccd1bc7986bc99ae",
+        "bytes": 110337
+      },
+      "slots": [
+        "custl05d.shp-002",
+        "custl05d.shp-003"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-09.json",
+        "sha256": "e82ad44fa76ce24113e0dfd63858bdb6cb29094ba5fde2030a3270b3192d1b1c",
+        "bytes": 3870
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-8d9fa1f6-0279-4b73-90f9-738f0493edf0.png",
+        "sha256": "95e42d3b32d43dae47f22f8f112872489de8e8c1ec5a9367261f9b4085f0412b",
+        "bytes": 2513556
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-09-layout-v3-master.png",
+        "sha256": "95e42d3b32d43dae47f22f8f112872489de8e8c1ec5a9367261f9b4085f0412b",
+        "bytes": 2513556
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-09-layout-v3-reference.png",
+        "sha256": "0a17eaa7fe448aced462beb93df343792f2025d164ee191a70786461b0a495db",
+        "bytes": 90388
+      },
+      "slots": [
+        "custl05e.shp-000",
+        "custl05e.shp-001"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-10.json",
+        "sha256": "9e8205e35d55642af27eea6511f7389b2a6d448ccb6828e097f106e5a4ec556d",
+        "bytes": 3871
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-85e71553-935f-4d1f-b88c-19d599ee3fd6.png",
+        "sha256": "30667dce07473912c8ee3a468215d6c77d7b53407d8e6e03c67fe61ef6235d36",
+        "bytes": 2636599
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-10-layout-v3-master.png",
+        "sha256": "30667dce07473912c8ee3a468215d6c77d7b53407d8e6e03c67fe61ef6235d36",
+        "bytes": 2636599
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-10-layout-v3-reference.png",
+        "sha256": "f21a4a163ca2be54d4bda18c4ae701f122c2eb47326122edda30af2ff340a49a",
+        "bytes": 88386
+      },
+      "slots": [
+        "custl05e.shp-002",
+        "custl05e.shp-003"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-11.json",
+        "sha256": "be554de89453272c0e12731ef216034a804fbfc71b67f04b680a35b5e20e876c",
+        "bytes": 3871
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-30925dc3-74e7-4e6c-986a-f1906a5105dc.png",
+        "sha256": "7138260e9a6dddd3d4f7805778394d5ab7e82d967147d82d69ffa07c619fa715",
+        "bytes": 1487497
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-11-layout-v3-master.png",
+        "sha256": "7138260e9a6dddd3d4f7805778394d5ab7e82d967147d82d69ffa07c619fa715",
+        "bytes": 1487497
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-11-layout-v3-reference.png",
+        "sha256": "4cde1603c87ea7661725eeeeb82756a2a1178ba94fdbb125723cc12df0cd9168",
+        "bytes": 64051
+      },
+      "slots": [
+        "custl05f.shp-000",
+        "custl05f.shp-001"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-12.json",
+        "sha256": "a84fc4527d3742d664fcfb99b6a04fa766a562a70d1cee40f11e054c3a5f908e",
+        "bytes": 3873
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-71316956-5ba8-44cf-83be-5eb92898c237.png",
+        "sha256": "cd553644339ec0c7fd50524177e16cf2b833dfc25a63a8ecc558578606e63048",
+        "bytes": 1871343
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-12-layout-v3-master.png",
+        "sha256": "cd553644339ec0c7fd50524177e16cf2b833dfc25a63a8ecc558578606e63048",
+        "bytes": 1871343
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-12-layout-v3-reference.png",
+        "sha256": "f4efa1f920cb5eb9734af8585ab453ed83e1222e92b2a3b359b0976466a1eff7",
+        "bytes": 78243
+      },
+      "slots": [
+        "custl05f.shp-002",
+        "custl05f.shp-003"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-13.json",
+        "sha256": "327d02c60050d7eb2ea047568d68d420fd0519f80a2016064b0faf44c95914dc",
+        "bytes": 3871
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-61099ee9-2973-47be-b491-5eb319df7c04.png",
+        "sha256": "e914f70285f77309fd4d026cd3dcf754f89f962588d163f770aec96b15ed33d9",
+        "bytes": 2333689
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-13-layout-v3-master.png",
+        "sha256": "e914f70285f77309fd4d026cd3dcf754f89f962588d163f770aec96b15ed33d9",
+        "bytes": 2333689
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-13-layout-v3-reference.png",
+        "sha256": "ae5a58b47d2d4f2ac284426fbf38631d78231300ca6bff7327e5cadcc151c3a0",
+        "bytes": 86364
+      },
+      "slots": [
+        "custl05g.shp-000",
+        "custl05g.shp-001"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-14.json",
+        "sha256": "88f15aeb2081a4c3e485dc26c74dbcc092e43a184a0d16ff04cbd3ebac4301db",
+        "bytes": 3858
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-9978bfb7-7a4f-4baa-9bc5-f6e1195a1b7f.png",
+        "sha256": "058b0ee06a4ad31e04835ab72751f3603ad18cb3292b4cffb4601353fa4228a2",
+        "bytes": 2530955
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-14-layout-v3-master.png",
+        "sha256": "058b0ee06a4ad31e04835ab72751f3603ad18cb3292b4cffb4601353fa4228a2",
+        "bytes": 2530955
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-14-layout-v3-reference.png",
+        "sha256": "66d57f18e4382a36a9265a4c7b14523ff9370a716d5628bb82961d1cd9d2067b",
+        "bytes": 86024
+      },
+      "slots": [
+        "custl05g.shp-002",
+        "custl05g.shp-003"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-15.json",
+        "sha256": "d56a593a511accf33ba27df0b0394e4f913b020b87e432ac84b5683245d5216d",
+        "bytes": 3871
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-2f45bd39-6d68-45b7-bc70-a947032f79d6.png",
+        "sha256": "c6e9e1000f8b928b264130faeac1f9a3ceb552c958da3e6adad65ec281b8896d",
+        "bytes": 2343325
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-15-layout-v3-master.png",
+        "sha256": "c6e9e1000f8b928b264130faeac1f9a3ceb552c958da3e6adad65ec281b8896d",
+        "bytes": 2343325
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-15-layout-v3-reference.png",
+        "sha256": "ea40065ee083bf6df5a1eb32901577559d80bfa3575f166ec9ecd89adf51999b",
+        "bytes": 71541
+      },
+      "slots": [
+        "custl05h.shp-000",
+        "custl05h.shp-001"
+      ]
+    },
+    {
+      "receipt": {
+        "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/imagegen-receipt-16.json",
+        "sha256": "c3d9b59ef4627c6ae5729b535b114a4f2a6a425505fe5d6e6de13ff0e80d2e93",
+        "bytes": 3870
+      },
+      "raw": {
+        "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-2e0d0720-227c-4c27-99bc-6a8754e1e965.png",
+        "sha256": "65ce33f58debeecce44019ed7c55e6be33becc4cc1ab3d907a703a67e7da72d8",
+        "bytes": 1713215
+      },
+      "workspace": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-16-layout-v3-master.png",
+        "sha256": "65ce33f58debeecce44019ed7c55e6be33becc4cc1ab3d907a703a67e7da72d8",
+        "bytes": 1713215
+      },
+      "reference": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-buildings-authoring-batch56-v1/urban-buildings-1254-1x2-16-layout-v3-reference.png",
+        "sha256": "60fd1ecbd20efc1b8b06edc3e9de4e30e2659e8aeeaf56f1a2067e4ff099d03a",
+        "bytes": 78642
+      },
+      "slots": [
+        "custl05h.shp-002",
+        "custl05h.shp-003"
+      ]
+    }
+  ],
+  "originalDependencies": [
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/custl05a.shp",
+      "sha256": "31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028",
+      "bytes": 71128
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+      "sha256": "6ccf92dbe3378868c51b906da0ae9d760aadbb01e03901cdb91ac39b1420d2e9",
+      "bytes": 94760
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+      "sha256": "29a57e92af03c487166ed1c4d0a520e664036c2f3022f4ad1cce5490512de30f",
+      "bytes": 23690
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+      "sha256": "df2c32df331ca674969555192a99aa956bc148c8ee8b3e432765645a210732eb",
+      "bytes": 93936
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+      "sha256": "7391c87855b5775cb2dbcc1ec6bddbc081ae221e1c36e8e7a0324da6f06f8d4a",
+      "bytes": 23484
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+      "sha256": "df2c32df331ca674969555192a99aa956bc148c8ee8b3e432765645a210732eb",
+      "bytes": 93936
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+      "sha256": "7391c87855b5775cb2dbcc1ec6bddbc081ae221e1c36e8e7a0324da6f06f8d4a",
+      "bytes": 23484
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+      "sha256": "6789b9b4be8c2205608d4065fb3f3c82993a0fff11f961e01b1903aa9da9dbfe",
+      "bytes": 67320
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+      "sha256": "3e2c358843c8b8c8f8e4e1bb32d933e9a3ba2e466f8506c0f901c5b4dd153525",
+      "bytes": 16830
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+      "sha256": "de6ad274dbe5968bcc73cf204df450b6257d68fb40a4f9fc52ca889e8d488862",
+      "bytes": 113160
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+      "sha256": "b0b8ed02d300d6e616eb80a460e8de231f2a0c3d999153b5121bec0aa92f63ac",
+      "bytes": 28290
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+      "sha256": "c48c9e37e326a4ed52a2cda414c52c299a83cc4092f54331c7ad21a9ce99d008",
+      "bytes": 111192
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+      "sha256": "68d05c20370c28d2a9efbfc3cf2a43f4b679aac3686b2616e4d724e075340e6c",
+      "bytes": 27798
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+      "sha256": "c48c9e37e326a4ed52a2cda414c52c299a83cc4092f54331c7ad21a9ce99d008",
+      "bytes": 111192
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+      "sha256": "68d05c20370c28d2a9efbfc3cf2a43f4b679aac3686b2616e4d724e075340e6c",
+      "bytes": 27798
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+      "sha256": "b35609f49b290928c1b333b069e4e4d72f76b70d945fe1ca3099f81f613f6cbc",
+      "bytes": 67164
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05a-shp-31bd5aafbdb901f53ef0969813b5eaf8881ed336150b1a0f8197d59d0ece0028-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+      "sha256": "94f3d0e6393d46946675c5f6bf16e2020e1ba35148af43327614be00da0ea6cb",
+      "bytes": 16791
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/custl05b.shp",
+      "sha256": "407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83",
+      "bytes": 88528
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+      "sha256": "ce3cb752899ce0d9254e3be605921c5adf7b48f42248e1c6eb7d13d571bad1b1",
+      "bytes": 141696
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+      "sha256": "8f729268c92b06d23b764e88c5e0719c1e7417abec224dc644a3255b21a930dd",
+      "bytes": 35424
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+      "sha256": "7db3b6a1c151b16b5435fe17d60c932a93c9c3a56d71a8d1190b36155eeb237a",
+      "bytes": 131856
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+      "sha256": "9a667f9fecb460110df5ca851435c5a54bcdbf66f4e8963e612ec90437520d44",
+      "bytes": 32964
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+      "sha256": "7db3b6a1c151b16b5435fe17d60c932a93c9c3a56d71a8d1190b36155eeb237a",
+      "bytes": 131856
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+      "sha256": "9a667f9fecb460110df5ca851435c5a54bcdbf66f4e8963e612ec90437520d44",
+      "bytes": 32964
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+      "sha256": "085c9812beb969b2adaae8716ec0bf8bb1a70d5b26f63c6997ebac971a064c3a",
+      "bytes": 92020
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+      "sha256": "60658fbad0af10db712dcc58eafda3842dadf4371971a151f40381dce82d446d",
+      "bytes": 23005
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+      "sha256": "98b959a485d89ae119b7f26ba4e769008ec766eba97d9a79e0a2b48b6e31928a",
+      "bytes": 140836
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+      "sha256": "4943a4be2b6ce1c0978a3294ea538d6411089ed03442f0b2b456843d6924dcc5",
+      "bytes": 35209
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+      "sha256": "8e44213e87b4b7454dbc6631731c02dada075a1228cd6fa80a05628bf66a6c57",
+      "bytes": 134992
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+      "sha256": "8ead1c9dd3984278ae01b89fd3f613973ce9249f4f71da72e6d9d91a50a1a459",
+      "bytes": 33748
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+      "sha256": "8e44213e87b4b7454dbc6631731c02dada075a1228cd6fa80a05628bf66a6c57",
+      "bytes": 134992
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+      "sha256": "8ead1c9dd3984278ae01b89fd3f613973ce9249f4f71da72e6d9d91a50a1a459",
+      "bytes": 33748
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+      "sha256": "ef1450a8341890434f2317a03a25f70c5d449080b1c40c62491d8e79a8b85e60",
+      "bytes": 86932
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05b-shp-407fbe4dcb742d7238676ed4609e3c96c8111c965ec607681fd0f489f4e18e83-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+      "sha256": "75ef1ec9f17194897295f436e7c8764be6e138dbb883215b98a744a9591486e6",
+      "bytes": 21733
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/custl05c.shp",
+      "sha256": "453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493",
+      "bytes": 61944
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+      "sha256": "d0b326f2ef3b079d15af8b8018792c11a7707fc6c8f379a28a1a037cb989e31e",
+      "bytes": 71876
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+      "sha256": "2f61a77dc592fe95628680df31959c9ce4fb0d68ee5e88aa6ca2945681b968ce",
+      "bytes": 17969
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+      "sha256": "74718f03667977f04e1a5f6cdf7dbe0714328e00f7ff9b125fc90c853f64e989",
+      "bytes": 71876
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+      "sha256": "bf989f56ac99e2d945530d4e91dbbe5839b141e3432feac5ea74485652269d80",
+      "bytes": 17969
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+      "sha256": "74718f03667977f04e1a5f6cdf7dbe0714328e00f7ff9b125fc90c853f64e989",
+      "bytes": 71876
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+      "sha256": "bf989f56ac99e2d945530d4e91dbbe5839b141e3432feac5ea74485652269d80",
+      "bytes": 17969
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+      "sha256": "e601681a5a468de8ec34995073e0d674d8a2a359010a0fbc330216e94a40c946",
+      "bytes": 73332
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+      "sha256": "48892a4cb56a63377117201a71f0393c633bb7b8ed3aca575c50a24212a463b7",
+      "bytes": 18333
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+      "sha256": "c97c2ab284449af98b27c9718fc1258a850254e8538a88d9e34a55052556aacc",
+      "bytes": 86292
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+      "sha256": "23ae0de59f77f08f72671def15d5c42099d04ed25e5d98173c454f47e1dff2aa",
+      "bytes": 21573
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+      "sha256": "c9ede8184d113f46c6b5c79fe5df5c6ffd47ccf54ac4dd67de716de994f3b1cb",
+      "bytes": 85728
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+      "sha256": "ceaf00b12f7f91bf6a1e69f1e8032d45440af8789a1914c95948226a156214c9",
+      "bytes": 21432
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+      "sha256": "c9ede8184d113f46c6b5c79fe5df5c6ffd47ccf54ac4dd67de716de994f3b1cb",
+      "bytes": 85728
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+      "sha256": "ceaf00b12f7f91bf6a1e69f1e8032d45440af8789a1914c95948226a156214c9",
+      "bytes": 21432
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+      "sha256": "c15dc87eef6671f6d0fb51375d0930c17d87668e3ab6aecefd11d0bd6f2d9b33",
+      "bytes": 69920
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05c-shp-453cf603da54a5d69e6e09229e18b73cd2859edb9f5439be75bcc2f2639a9493-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+      "sha256": "62eb34685664b5e0340b70e071fcd2fe36d75045849b1bc48e9df5fa255e5747",
+      "bytes": 17480
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/custl05d.shp",
+      "sha256": "67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70",
+      "bytes": 84464
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+      "sha256": "7d9049c69f68f80c2adfc80720372c24c7efec78aa44a2388cbcfa52cecfd8f4",
+      "bytes": 149160
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+      "sha256": "6d9731c29a4fa4ef4aa6cccf5804fc88f7c1a65cacc8b9f0935f15dbc3465d2b",
+      "bytes": 37290
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+      "sha256": "7606eb9dd19b0c63a1c3dc83526806515e8b5209ac5bb272bee5c08538397ec8",
+      "bytes": 149160
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+      "sha256": "d3d37894aab09e253867676717c9938aa76fac063b6afa847469914938aef272",
+      "bytes": 37290
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+      "sha256": "7606eb9dd19b0c63a1c3dc83526806515e8b5209ac5bb272bee5c08538397ec8",
+      "bytes": 149160
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+      "sha256": "d3d37894aab09e253867676717c9938aa76fac063b6afa847469914938aef272",
+      "bytes": 37290
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+      "sha256": "e12a3590910d7a92f9fc4c4415ca06899b97c198593968f4de5e1689608b8011",
+      "bytes": 82320
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+      "sha256": "20f2ca34581583796cd3e4ad4382b052c4e80e0755e650d8dc37d7b953d3b6f3",
+      "bytes": 20580
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+      "sha256": "95cd212b7749ad78957e53ebc9f8aa80ed95a0f299a5498a63e2e9945de6bf71",
+      "bytes": 129360
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+      "sha256": "6d648b95588b828c0f1b57a5c7169ab632e62adf3fd13126d2659f23b372f813",
+      "bytes": 32340
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+      "sha256": "f0a74a29f377ecdfda7494a241ada82c5bb208828483a4d31611b65952d72be2",
+      "bytes": 129360
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+      "sha256": "352c2d1f051e61da215cbcfcfab99ac10638445bdb409d4d6962a7bbcc80b61a",
+      "bytes": 32340
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+      "sha256": "f0a74a29f377ecdfda7494a241ada82c5bb208828483a4d31611b65952d72be2",
+      "bytes": 129360
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+      "sha256": "352c2d1f051e61da215cbcfcfab99ac10638445bdb409d4d6962a7bbcc80b61a",
+      "bytes": 32340
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+      "sha256": "358f7bc7e9d3bd17fcf9f3b9110b423b1fb318e1b4fe8724cc3a3b8947b41402",
+      "bytes": 76400
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05d-shp-67a46abeb6dbe16edbdcbc5b0ddd8c3bf7b090221ecf659690aca2993ab9ab70-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+      "sha256": "bb13805dbf3478879f45d548905a55328055959d4d712176d0c99ed9b5ad30ce",
+      "bytes": 19100
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/custl05f.shp",
+      "sha256": "9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede",
+      "bytes": 56176
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+      "sha256": "7c0c7cea3869887b2b628de21c90f71648161a802990a624afcf2f6f65ec1b1a",
+      "bytes": 72688
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+      "sha256": "f22cee3f6abdfaadb2c80cfaa080c30edbc22f4ab7de1dfe0bcccec05d87c8dd",
+      "bytes": 18172
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+      "sha256": "6035db70dd1a4c80946673227813139e5420999aa136c23e91f28791e0d982b3",
+      "bytes": 72688
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+      "sha256": "a907b07fc4cdcba9bee8d4e692d284686c176ab223dfa78070b898f61e21ea29",
+      "bytes": 18172
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+      "sha256": "6035db70dd1a4c80946673227813139e5420999aa136c23e91f28791e0d982b3",
+      "bytes": 72688
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+      "sha256": "a907b07fc4cdcba9bee8d4e692d284686c176ab223dfa78070b898f61e21ea29",
+      "bytes": 18172
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+      "sha256": "61e54eccbb0f5c46354c6ac3e17b805f941e2f20c547a83b59de73a71e3da894",
+      "bytes": 73336
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+      "sha256": "4ea934d71e7086acc9039e5d98c8a6664c4fb87ede53e74b074e9001fcfac459",
+      "bytes": 18334
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+      "sha256": "5dfae22ff1351dde96e01657a30ad417df81cf5da7a2cb22ba67ef028aac8503",
+      "bytes": 91680
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+      "sha256": "104c15dc7d1263d6d07fdc24949447f5dfd3130f27f877369b1a746b54176e32",
+      "bytes": 22920
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+      "sha256": "986520d265454fa909a7c317650ae4479c523dcabe6d53409e2e1c74913a1b0f",
+      "bytes": 71520
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+      "sha256": "a785133b390eb320c8caba8e50e9dfa03a450c974073fa06ad1dc306905f611f",
+      "bytes": 17880
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+      "sha256": "986520d265454fa909a7c317650ae4479c523dcabe6d53409e2e1c74913a1b0f",
+      "bytes": 71520
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+      "sha256": "a785133b390eb320c8caba8e50e9dfa03a450c974073fa06ad1dc306905f611f",
+      "bytes": 17880
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+      "sha256": "cda0d96495d79c1069c9e6d57ec6fd381304bdd28a5c421a6c63e37cf1b641cd",
+      "bytes": 67816
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05f-shp-9ff0dcfa2eebd2d607f1ecee313ad58aa4a6c174017bdd8b0be765de084f7ede-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+      "sha256": "1be755a354bfa06001a627b8e24e3f24bf57f3690ca7eb0902b0eec131021932",
+      "bytes": 16954
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/custl05g.shp",
+      "sha256": "0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60",
+      "bytes": 72400
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+      "sha256": "eeb0d5cda3bfaa69e48acbdedf632e77bc3dbe8d8da6fba6084b3f6bc350fcad",
+      "bytes": 118776
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+      "sha256": "cbb56ef66635e2d4f1bdb622e78f1811249a0518808c6c483e6754f5c1fe9fe7",
+      "bytes": 29694
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+      "sha256": "fb8f457d3c64e08cdd5e5b60a092194412fe26c0542b9fb691dbe413d1b1cb9d",
+      "bytes": 116352
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+      "sha256": "06d399a863458b7a6c7283dda22a467ae5ea55e172f175036b481598a41fb054",
+      "bytes": 29088
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+      "sha256": "fb8f457d3c64e08cdd5e5b60a092194412fe26c0542b9fb691dbe413d1b1cb9d",
+      "bytes": 116352
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+      "sha256": "06d399a863458b7a6c7283dda22a467ae5ea55e172f175036b481598a41fb054",
+      "bytes": 29088
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+      "sha256": "21d0ef3a68db986e030d27483e3a71e530913bb14d91f20643005a637900fb43",
+      "bytes": 75072
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+      "sha256": "f2e0116f130d13566e98dcd289571c7690d706226eeecd9f5d93a2a71f3e3442",
+      "bytes": 18768
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+      "sha256": "76db4305207321f57712abb5a660e99126fba131d140801bf094e875b998c7a4",
+      "bytes": 125268
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+      "sha256": "0656d8521615c03cb61d3231e27b040ea91fec17e183ee90a8a591b580ad160d",
+      "bytes": 31317
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+      "sha256": "5daa4f5bbe17494caa63caff406c0efdcddc5bb9f869a0cb9a97e7e417da771f",
+      "bytes": 115080
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+      "sha256": "a3f282805b2faa7a10da23beeac94501611079f9f4a356a0c31e37af1147b86e",
+      "bytes": 28770
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+      "sha256": "5daa4f5bbe17494caa63caff406c0efdcddc5bb9f869a0cb9a97e7e417da771f",
+      "bytes": 115080
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+      "sha256": "a3f282805b2faa7a10da23beeac94501611079f9f4a356a0c31e37af1147b86e",
+      "bytes": 28770
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+      "sha256": "75e560c689074761c1f7feebcf3057e24cc6c3a78034e0d16c52ec42c163910b",
+      "bytes": 70656
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05g-shp-0c663f05d0013072b04fad7d93de87d4cfe85e980d407955993be29578223f60-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+      "sha256": "d87d98400e12ce370133c6921145c015250719d8ed6cf4b1550e8baca157ecab",
+      "bytes": 17664
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/custl05e.shp",
+      "sha256": "b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d",
+      "bytes": 76952
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+      "sha256": "af004a87d5dfeeb4bb59bca075bfc1a960f9dc5688ae39dbe2608ed8d8e06d2c",
+      "bytes": 108928
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+      "sha256": "1c408c0a7da6451c0e58e75df088fe7c37764f60069040f8b12841707c8d5613",
+      "bytes": 27232
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+      "sha256": "3030a571d667a80b13df6cfb554c357ca5834a6c4d96c3d4c1d56daa95cde160",
+      "bytes": 107456
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+      "sha256": "f9a47f49b8953c3ccb0501ecb2623f949526c5af57efb4639beab8ce35fbabc8",
+      "bytes": 26864
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+      "sha256": "3030a571d667a80b13df6cfb554c357ca5834a6c4d96c3d4c1d56daa95cde160",
+      "bytes": 107456
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+      "sha256": "f9a47f49b8953c3ccb0501ecb2623f949526c5af57efb4639beab8ce35fbabc8",
+      "bytes": 26864
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+      "sha256": "925a8bc2a58205e48d2b2be70d97ce2f7eae6bd572fa153ce443e9aa9ae72d60",
+      "bytes": 75648
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+      "sha256": "0b8a4e9085d7ecc7d2c399ec7658b0ab6303986a2c74136ceb2e5b31e6e1518c",
+      "bytes": 18912
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+      "sha256": "74f583526155d0467ecad30c17fbe8d35d63b1da72403fa1f5c4d465778b948f",
+      "bytes": 125656
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+      "sha256": "d84291885dc577d92aa2946c35427494b11fadeda0d9a72e63415a089dbad8fd",
+      "bytes": 31414
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+      "sha256": "b4edcb522129d8cf5486febfc52084001a60b1502488119e863b31e0bcb98455",
+      "bytes": 125656
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+      "sha256": "d94e28bdf9917a67562fe4a2d7ac0cf1370a92e21abee2495582bf4c3d131307",
+      "bytes": 31414
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+      "sha256": "b4edcb522129d8cf5486febfc52084001a60b1502488119e863b31e0bcb98455",
+      "bytes": 125656
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+      "sha256": "d94e28bdf9917a67562fe4a2d7ac0cf1370a92e21abee2495582bf4c3d131307",
+      "bytes": 31414
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+      "sha256": "7c495b095f2e8b2e8a0476aa1c4bad9faba792fcdbfaff2771bc440791a93c13",
+      "bytes": 74860
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05e-shp-b04f68e27ea98f5d20ed9a32d0d2a23f796764fbbc8d70517c3eb13a588d2d8d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+      "sha256": "43b1be939f6a627ceb5ccf78865c233822bec6df181c98f3dbc1cbc08c1afabf",
+      "bytes": 18715
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/custl05h.shp",
+      "sha256": "e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6",
+      "bytes": 68536
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+      "sha256": "979fcf10d3ca45ff7fcfe7f3f8e9b8d3014387f61fb4b11e920243b4fbcd4ba4",
+      "bytes": 85536
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+      "sha256": "52b78860f957150d3307ddebe0af6458be20d574a5920105e899a9f192e844fa",
+      "bytes": 21384
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+      "sha256": "77fbe3abf738d3b388831c4743fd824a956f602bfd7e8ca0aba0330cb3c85b63",
+      "bytes": 85536
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+      "sha256": "61c7f7ecca229cd81ee72fd5dc80b95cf5a52b5a40cc32e35c59c56c9ea90adf",
+      "bytes": 21384
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+      "sha256": "77fbe3abf738d3b388831c4743fd824a956f602bfd7e8ca0aba0330cb3c85b63",
+      "bytes": 85536
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+      "sha256": "61c7f7ecca229cd81ee72fd5dc80b95cf5a52b5a40cc32e35c59c56c9ea90adf",
+      "bytes": 21384
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+      "sha256": "fb10c2e42f8d48ff3bb9731341a0d1553002a06c7c4f8d05447dd4234de43051",
+      "bytes": 71440
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+      "sha256": "4ae069762a1877b0dafa93b115cdea1da1bc5e19c5292f18e9b813e9d7724faf",
+      "bytes": 17860
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+      "sha256": "7777c5a47b432ee9e1dfd5cac19f43e688bdd10107dca177e22e32b6dc854d17",
+      "bytes": 94672
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+      "sha256": "cb8f007d4361a6197ba3d6f3c2688ffa7a61ad93732d66f253f845b2c286d40e",
+      "bytes": 23668
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+      "sha256": "d14de3b235c1d8abfc4d4f87e9c07859646827fb4164fd2dae864643e255858f",
+      "bytes": 84832
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+      "sha256": "9b7a4117ef57572ed51e1188d3f2d02c179f05c464816e78db7e022d4425a613",
+      "bytes": 21208
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+      "sha256": "d14de3b235c1d8abfc4d4f87e9c07859646827fb4164fd2dae864643e255858f",
+      "bytes": 84832
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+      "sha256": "9b7a4117ef57572ed51e1188d3f2d02c179f05c464816e78db7e022d4425a613",
+      "bytes": 21208
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+      "sha256": "4212076821a17ebcd8fff2992aae3da756d8a7573496155a1ff54f39b9db3dcc",
+      "bytes": 57904
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/custl05h-shp-e4aee877a6a092d71c97ca98f358ed29232c6d8347a923a3526963038e15f1a6-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+      "sha256": "dc4e95dc7ad10d9bc1af78fad86456c1194e8aa91d572b4737b131b379f10329",
+      "bytes": 14476
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3.pal",
+      "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+      "bytes": 768
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/native/b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3.pal",
+      "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+      "bytes": 768
+    }
+  ],
+  "ignoredCandidatePack": {
+    "path": ".local/environment-packs/urban-buildings-m2-4-batch56-r1",
+    "manifest": {
+      "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/manifest.json",
+      "sha256": "e4d4fe2d4ddbbe6b81a1ac3e45349dd221a7099152477427cdba2d3004b2e217",
+      "bytes": 2193
+    },
+    "completeFiles": [
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/manifest.json",
+        "sha256": "e4d4fe2d4ddbbe6b81a1ac3e45349dd221a7099152477427cdba2d3004b2e217",
+        "bytes": 2193
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05a-shp/2/p0/base.png",
+        "sha256": "1dc1ad0bd52dbb06207d7d32b333e7c3d140c8b3ec468cd41531ce4c1b43bc81",
+        "bytes": 657884
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05a-shp/2/p0/data.png",
+        "sha256": "90bbbf5c6516cb119c598826f24c7ad96e498de1d4fcd2070a3692078aac3517",
+        "bytes": 3372
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05a-shp/4/p0/base.png",
+        "sha256": "536e39d4616ad2b3b0a9657c7b57cc356fe92a41a74198ea80735ad60e8b21b4",
+        "bytes": 2392135
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05a-shp/4/p0/data.png",
+        "sha256": "1b76516fc59178da9d1023d3976c23fed04a7fcb26f0b8bf9cabcacd2b6ee188",
+        "bytes": 9418
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05a-shp/manifest.json",
+        "sha256": "f85defb4bc86eb31e88aaf62f073c0f463498bd1ea54e988b881b9e670be0896",
+        "bytes": 3802
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05b-shp/2/p0/base.png",
+        "sha256": "625e3335b40fd915ea4cc3e64d7ca06ab03b107e232d294b70195a808b9c9e56",
+        "bytes": 857976
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05b-shp/2/p0/data.png",
+        "sha256": "0c170be12774aaeb1cd11113457fd008d5fc5cf34c8e4540bbd072656bee9578",
+        "bytes": 4647
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05b-shp/4/p0/base.png",
+        "sha256": "456915bffb52250225c6156bafbfb06e6921375c00df472e5a36c4e68413bde9",
+        "bytes": 2594067
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05b-shp/4/p0/data.png",
+        "sha256": "bd9e11b35ebf8f529b3e7e849dc027510db126a4b11bb28e3d0e067bb308561c",
+        "bytes": 11226
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05b-shp/4/p1/base.png",
+        "sha256": "114d421439ffc07de9d4f33f997b72c9118024ab4a280203013d5415b2a78a6c",
+        "bytes": 547806
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05b-shp/4/p1/data.png",
+        "sha256": "bd679c53ce08c1c435032026deec03fb0adb2a1e91d09140113a0e7611671fe0",
+        "bytes": 2541
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05b-shp/manifest.json",
+        "sha256": "a13fe22ccfc7e4ea05a076e4cc747241239bef44ec5ab5a6546c9e5f23d4fd7b",
+        "bytes": 4071
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05c-shp/2/p0/base.png",
+        "sha256": "1a1b7d3333f437d0cee732864e2c80eb67a5c8f1da6116a22bbdaadf2bbae9dc",
+        "bytes": 507768
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05c-shp/2/p0/data.png",
+        "sha256": "7dfb13a3752fbd67a12aea2ae88f205df8ad3c50db7ebd9f6b64d4495f4c3756",
+        "bytes": 4021
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05c-shp/4/p0/base.png",
+        "sha256": "3615790122d0565778d903bbb10bba10840fe2d208654d9675b3ab83e68c61fb",
+        "bytes": 1423653
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05c-shp/4/p0/data.png",
+        "sha256": "c673aa3e7c704e2150a89f1c040247d1958d0979ab3a701d5b8e3f4e050608bf",
+        "bytes": 9497
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05c-shp/4/p1/base.png",
+        "sha256": "14570055b7ad89bb16e1fb79f8a2d703cdce5ac652bfc3fca475553a61504f46",
+        "bytes": 433107
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05c-shp/4/p1/data.png",
+        "sha256": "f38916bffde77e712c3143b215db7ee92535baedfa33f791df5b4254f15cda14",
+        "bytes": 2117
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05c-shp/manifest.json",
+        "sha256": "39fe403b0bb592cc1086d9551146bbfc6618dc8d157228ed7278ac5a3ee10257",
+        "bytes": 4066
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05d-shp/2/p0/base.png",
+        "sha256": "e2857c46bbdbc2342ecb66b7b99a03a98d64f8eeafc0955b7b9d243b03e69c40",
+        "bytes": 868431
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05d-shp/2/p0/data.png",
+        "sha256": "479d2815d0417e26cfe54696eb984909c5da44a98030a081cb50ec02bec3ea7b",
+        "bytes": 5136
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05d-shp/4/p0/base.png",
+        "sha256": "161a1204d0b39c0578108c74ebb817ceabf3641153aa132c1049823b0a68caa4",
+        "bytes": 2597278
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05d-shp/4/p0/data.png",
+        "sha256": "fc7ebcfdc7258d810e9a0c36c4cd7772b81eeccca19674d3b10615b61dbdabcb",
+        "bytes": 11862
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05d-shp/4/p1/base.png",
+        "sha256": "54c55512da845b447648c8068582fdedc7291bada4bb85cf5197385822e39f64",
+        "bytes": 553367
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05d-shp/4/p1/data.png",
+        "sha256": "7d14b5d428d40349d3d6c4de29595b26fa336b858200d08e5917c3b70e2f3195",
+        "bytes": 2603
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05d-shp/manifest.json",
+        "sha256": "1d967964dd3fa8a1e4db41b74bc51c6fa062cca7cb70b7c12521d2f6017900fe",
+        "bytes": 4078
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05e-shp/2/p0/base.png",
+        "sha256": "00bf63368dd0e8dfeb952d9af31cea8fbf2da367b9c6514c9bbf7facb8181ad8",
+        "bytes": 670086
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05e-shp/2/p0/data.png",
+        "sha256": "e9d5ac4e342c10f87d241b83affd41fd2d7ba1180bfef3e617895148c2e63e08",
+        "bytes": 4167
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05e-shp/4/p0/base.png",
+        "sha256": "f0b3d564e03781475d9dfdc7c34e917d99f5bc3d56fc1952620325365a969421",
+        "bytes": 2005851
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05e-shp/4/p0/data.png",
+        "sha256": "8b652cdf7a9a40ee9acf0be373de0190000a25f29d486fd32e294369666a7288",
+        "bytes": 9612
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05e-shp/4/p1/base.png",
+        "sha256": "72a7ead0b44522b22f6f8aebcacf0b2088139e55743f6be00f4caf8bbe1404d9",
+        "bytes": 455548
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05e-shp/4/p1/data.png",
+        "sha256": "fb552cef4fdf25472d1e3e38f33231a0eddba679a29cc0bdf5b3d4c963a6ddb1",
+        "bytes": 2173
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05e-shp/manifest.json",
+        "sha256": "e07d2e1eadbb2a99b08b518965e22d5110d2f1d513792715c107cfa6f961a387",
+        "bytes": 4078
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05f-shp/2/p0/base.png",
+        "sha256": "96e384ddd0efd5914a0c8ba1b0a664ac6eeb5777a517ea785321f89f348e3741",
+        "bytes": 480745
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05f-shp/2/p0/data.png",
+        "sha256": "237dc81f87463c9ddec66d9a84dfc4ab46aa30addd6b0842e79e7e4d29074cb7",
+        "bytes": 4105
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05f-shp/4/p0/base.png",
+        "sha256": "588de8d95464d2403d7bd6686552b6ac18fba345118d8a05c95200a8bc2bd8dc",
+        "bytes": 1361063
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05f-shp/4/p0/data.png",
+        "sha256": "5a4dab31318856265c2c56bd6fed5be42627877ba0aeef8a2f9635d86e836d7d",
+        "bytes": 9620
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05f-shp/4/p1/base.png",
+        "sha256": "b0a9131a30e9350817c844e7ba801f099e42c596c0be0432d6b1ebfd4fa83283",
+        "bytes": 366357
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05f-shp/4/p1/data.png",
+        "sha256": "7b967b89c9a29be4543a91f43ecc1598a5fd6d7a3259d93a9febfe52b10877dc",
+        "bytes": 2240
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05f-shp/manifest.json",
+        "sha256": "67701d7344fa189a72941879f1322440f70205d25445e0536bdbc12a50121341",
+        "bytes": 4077
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05g-shp/2/p0/base.png",
+        "sha256": "67323cd22ae5d123985927b0b741b88a34ad0d2c520b8340d139ed4fe9f79f23",
+        "bytes": 688535
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05g-shp/2/p0/data.png",
+        "sha256": "4f637937b84e9bee65248d98bf285a1ada54f0a1c3a4e02afb8855602bec8879",
+        "bytes": 4182
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05g-shp/4/p0/base.png",
+        "sha256": "31c10ed58a7ea5a59012e2d5a3e4cd8f5417f6dba16608662027293157c4f075",
+        "bytes": 2017881
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05g-shp/4/p0/data.png",
+        "sha256": "fb5f820f3cc8c281dd9f2a6475b6a1d63eef31e79ec8478194dcf366a65156a8",
+        "bytes": 9526
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05g-shp/4/p1/base.png",
+        "sha256": "157adb9713a20372c1f0cec917f49160cde17d9d219559606f1c8797ac280f23",
+        "bytes": 462529
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05g-shp/4/p1/data.png",
+        "sha256": "850fba5674de8d499355effa01b115a148679de43caffc5a2b7d94f896891c7d",
+        "bytes": 2302
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05g-shp/manifest.json",
+        "sha256": "04ec0e406278a92c0e31b273acd4f0687d845a5be8773bdd4801caee1d75a646",
+        "bytes": 4079
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05h-shp/2/p0/base.png",
+        "sha256": "5ec393f05f3c1a0087cc233f26ca60c3ac70959186602e08e22fdcf89093d2d9",
+        "bytes": 605762
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05h-shp/2/p0/data.png",
+        "sha256": "deb797fff91aec500dda6efb854a54211f229ad3ad3a3e04ffe20f14a7a152ca",
+        "bytes": 3102
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05h-shp/4/p0/base.png",
+        "sha256": "15c65cf6bb1e330fe8f50b933eab7f06a4a7a62d79049e24e30a8e4ad976e688",
+        "bytes": 2214424
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05h-shp/4/p0/data.png",
+        "sha256": "f4d7ea2fd5f3a9010cbb082a346a80c710646fcde7c05942da1461831ceace41",
+        "bytes": 9043
+      },
+      {
+        "file": ".local/environment-packs/urban-buildings-m2-4-batch56-r1/members/custl05h-shp/manifest.json",
+        "sha256": "68d1ea75165cc5bd096c3cabfe3c80f936a7db5a6fed99e185e4ebdf75420249",
+        "bytes": 3797
+      }
+    ]
+  },
+  "comparisonIndexes": [
+    {
+      "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/comparison-2x-v1/index.json",
+      "sha256": "52e489b18cc9decc0a67dcfbfc29f1ecdd76e56b4c5a02452f451337f49826d9",
+      "bytes": 3003
+    },
+    {
+      "file": ".artifacts/m2-4/urban-buildings-authoring-batch56-v1/comparison-4x-v1/index.json",
+      "sha256": "3a7de1cb0694b2ec657eb9d52f61c21a309afc575c97e04c39b10105ba973064",
+      "bytes": 3003
+    }
+  ],
+  "decodedInputBytes": {
+    "2": 30185472,
+    "4": 115490816
+  },
+  "selected": false,
+  "preservedSelectedPack": {
+    "schemaVersion": 1,
+    "revision": "urban-environment-m2-4-buildings-batch55-v1",
+    "sha256": "04d93fa6f406a702e9035338ff90ba5cc10391b0f9aee293e79bd78ca2202940"
+  },
+  "priorReviewHandoff": {
+    "file": ".artifacts/m2-4/urban-buildings-batch55-v1/technical-handoff-before-acceptance.json",
+    "sha256": "3560a8e1042914696e5202da595d067e9eee2eb048561fbaef6b6d323acc6097",
+    "bytes": 165913
+  },
+  "sourceHead": "308c53a425fcda90939ed0dc72517c86529cc034",
+  "mainHead": "748d0998aaf663acda8807c158155bf0a5bb157b",
+  "mainClean": true,
+  "mainMutated": false,
+  "native": "NOT_RUN_BATCH56",
+  "visual": "PENDING",
+  "windows": "NOT_RUN",
+  "m24Complete": false,
+  "remaining": "Whole original stadium assembly and all 24 applicable native states at 2X/4X, matched Original, lifecycle, grouped embedded HTML and user acceptance. No coverage-delta credit before native closure.",
+  "sourceTreeState": "Base commit plus pinned production tools; no runtime source change",
+  "productionTools": [
+    {
+      "file": "scripts/m2-4/prepare-urban-buildings-batch54.py",
+      "sha256": "4b2e0ab5d9a2886615bc31727e3163c1f2d327d008ded87d6bfa193a10e9ca95",
+      "bytes": 10955
+    },
+    {
+      "file": "scripts/m2-4/layout-urban-buildings-batch55.py",
+      "sha256": "e0565f5d1c905c44fc78771effe1553505cfd953dbb8d9afdbc5826ef83a2267",
+      "bytes": 3357
+    },
+    {
+      "file": "scripts/m2-4/record-urban-building-mother.py",
+      "sha256": "cc025b846e4b56d2e74ad42dd518d29c5e61aa04d57fb843e9145d8c3411e9a1",
+      "bytes": 2850
+    },
+    {
+      "file": "scripts/m2-4/checkpoint-urban-stadium-batch56.py",
+      "sha256": "a1a7038649ed3cf206e25384e2b1d24d8d50d4ac09cc563f89390dbc81f5338f",
+      "bytes": 7092
+    },
+    {
+      "file": "scripts/m2/export-showcase-shp.py",
+      "sha256": "65f8fb11a49fd53736a7a2690fdfe8ca57328941649deb03ee5a176411c42a42",
+      "bytes": 37393
+    },
+    {
+      "file": "scripts/m2/verify-showcase-shp.py",
+      "sha256": "d7ee99d24bd1aaba7e48148b1cba78b8d54c5029c5000b4b1292aca48aee9323",
+      "bytes": 28151
+    }
+  ],
+  "priorUserAcceptedHandoff": {
+    "file": "docs/m2-4-urban-buildings-batch55-20261016.json",
+    "sha256": "87aa6da5a55dc12949d6690c1ecf50f2aedd18bab2b5c3b45c5aeddea9515803",
+    "bytes": 166374
+  },
+  "historicalStaticCheckpoint": {
+    "file": ".artifacts/m2-4/urban-buildings-native-batch56-v1/checkpoint-before-batch55-acceptance.json",
+    "sha256": "883fc768f904d7fa38e6cbde0899c118fb17d1eec1b2b5810572fec9c67a36a4",
+    "bytes": 84893
+  }
+}

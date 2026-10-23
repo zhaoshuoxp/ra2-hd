@@ -1,0 +1,82 @@
+{
+  "status": "ARTWORK_CANDIDATE_PENDING_USER_REVIEW",
+  "tool": "built-in image_gen",
+  "skill": "/Users/Aone/.codex/skills/.system/imagegen/SKILL.md",
+  "assets": [
+    {
+      "name": "refinery-end-master.png",
+      "file": "art/presentation-r2-20261020/refinery-end-master.png",
+      "tool": "built-in image_gen",
+      "output": "exec-02ce9bae-a80f-4324-8cba-ee2a18477db3.png",
+      "prompt": "Use case: precise-object-edit. Asset: a tiny Red Alert 2 refinery SHP repair, strict matching of the existing sprite. Image 1 is the edit target: the existing HD refinery on a transparent 840x784 canvas. Image 2 is the untouched original 210x196 game sprite and is the geometry authority. Repair ONLY the truncated right/rear barrel end, located around native x145-173 y102-143 (multiply by 4 in the HD target). It is currently cut off by a straight vertical edge at the right. Restore a COMPLETE curved semicircular steel end rim, as in the original: a round arched dark inner endwall, its continuous weathered silver rim curving all the way around the right side, and the existing two rods and center bracket in front. Fit the completed round form inside the original sprite's rightmost boundary; do not add a rectangular extension. Match the original perspective and proportions. Keep the rest of the HD refinery, both chimneys, all three top caps, pipes, red team-color paint and platform exactly unchanged. Keep the same full-canvas framing, object registration, scale and transparent empty background. No text, no labels, no border, no new components.",
+      "use": "Bounded repair exported with native-coordinate registration, preserved unrelated pixels and immutable resource revisions.",
+      "size": [
+        1299,
+        1211
+      ],
+      "bytes": 984210,
+      "sha256": "548c783387083740ca381de37894b1646c0855f50c2f2bef7530b47b97a12a43"
+    },
+    {
+      "name": "factory-vent-master.png",
+      "file": "art/presentation-r2-20261020/factory-vent-master.png",
+      "tool": "built-in image_gen",
+      "output": "exec-6757cbbf-aeca-4c9f-ad78-64738d494d11.png",
+      "prompt": "Use case: precise-object-edit. Asset: a minimal registration repair to a Red Alert 2 war-factory sprite. Image 1 is the existing HD sprite, transparent 1064x896 canvas, the edit target. Image 2 is the untouched original 266x224 sprite, the geometry authority. Change ONLY the SMALL low cylindrical ventilation housing immediately to the LEFT of the big factory roof, below the tall central tower. Its current fan/grille is too far right. Reposition and slightly reduce this small cylinder to match the original precisely: top vent opening centered at native (90,145.25), meaning (360,581) in the 4X HD target, outer top ellipse about native 18x9, base centered around native (90,158). Restore its short dark metal cylinder and steel ring centered on that same axis, with the neighboring yellow/silver pipes connected naturally. Erase the old displaced cylinder footprint. The new fan opening should be a plain dark recess because its rotor is a separate animated game layer. Keep the original native camera perspective, canvas registration and scale. Preserve ALL other HD factory parts exactly: the roof, tower, red owner-color braces, door, apron, pipes outside the small repair area, and transparent empty background. No new components, no labels, no redesign.",
+      "use": "Bounded repair exported with native-coordinate registration, preserved unrelated pixels and immutable resource revisions.",
+      "size": [
+        1367,
+        1151
+      ],
+      "bytes": 1011353,
+      "sha256": "feb40bc99a95b00ff294af481fbb6ff12a067da06ccf2e9eef6dcb5166dacb30"
+    },
+    {
+      "name": "menu-radar-neutral-r2.png",
+      "file": "public/res/presentation/menu-radar-neutral-r2.png",
+      "tool": "built-in image_gen",
+      "output": "exec-11ebe7bb-be2e-471d-93b5-7f471e41357b.png",
+      "prompt": "Use case: precise-object-edit. Asset: neutral animation plate for the existing RA2 Home radar scene. The reference image is the exact current HD plate. Preserve its full composition, red world map, radar grid and tick marks, and the existing COMMAND & CONQUER / RED ALERT 2 logo exactly. Remove ONLY the fixed bright white/orange wedge and fixed black aircraft silhouettes in the lower-left quadrant; replace that region with the same uniformly dark-red cloud and map detail as the rest of the radar screen. The radar must be evenly lit dark red all around the circle so a separate rotating light mask can illuminate it later. No baked bright patch in any quadrant, no aircraft anywhere, no new effects. Keep the logo crisp and unchanged and do not add a television frame or sidebar. Exact 1672x941 composition, fill the canvas with the original red artwork. Opaque background, no captions or watermark.",
+      "use": "Rendered through a dark RGB transfer curve; logo recovered through the source silhouette.",
+      "size": [
+        1671,
+        941
+      ],
+      "bytes": 1999181,
+      "sha256": "ede30a27a43b0b3a9dec05a69e8502aec92e89ef59fb80af0ec7338a190c035c"
+    },
+    {
+      "name": "menu-radar-lit-r2.png",
+      "file": "public/res/presentation/menu-radar-lit-r2.png",
+      "tool": "built-in image_gen",
+      "output": "exec-fdeee715-13cf-4f43-bb7a-9921ce7701b4.png",
+      "prompt": "Use case: precise-object-edit. Asset: the illuminated background plate for an animated RA2 radar scan. Reference image is the current HD Home screen artwork. Preserve the exact 1672x941 canvas, radar center at (836,438), all concentric red grid rings, tick marks and the existing COMMAND & CONQUER / RED ALERT 2 logo. Extend the existing lower-left warm luminous aerial-cloud and aircraft scene across the ENTIRE circular radar background: a coherent softly glowing ivory/amber cloudy wartime sky with small dark WWII aircraft silhouettes, behind the red radar grid in every quadrant. Uniform illumination all around the circle, NO single fixed wedge, no directional spotlight, no solid gray overlay, no new wording. Keep the central logo exactly where it is; it will be protected by a separate accurate logo mask. This bright plate will only be revealed through a rotating 60-degree radar sector over a matching dark-red plate, so cloud texture should be clear and natural in every quadrant. Keep exact composition and perspective; no television bezel, no sidebar, no border, no extra symbols.",
+      "use": "Only revealed through a moving approximately 50-degree sector; never used as the full Home background.",
+      "size": [
+        1672,
+        941
+      ],
+      "bytes": 2428408,
+      "sha256": "39b3da5ae6b741f43a8315c55238c8f8486975c9c9cf1f08aff2c2e4ca637e08"
+    }
+  ],
+  "productionExport": "Electron Canvas, scripts/ui/export-feedback-r2.mjs. Python contact sheets and crops are diagnostic only.",
+  "logoMask": "scripts/ui/export-feedback-r2-logo-mask.mjs extracts and closes the existing logo silhouette; it does not redraw the logo.",
+  "nativeInterface": "All cursor and health textures are derived from the actual retail bitmaps and palettes through NativeUiImage. No AI icon redesign.",
+  "darkHomeTreatment": {
+    "rgbSlopes": [
+      0.27,
+      0.2,
+      0.2
+    ],
+    "rgbIntercepts": [
+      -0.025,
+      -0.02,
+      -0.02
+    ],
+    "scanPeriodSeconds": 14,
+    "reducedMotionPeriodSeconds": 28,
+    "scanApproximateDegrees": 50,
+    "logo": "Stationary source silhouette, independent of the dark base transfer."
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_MAC_NATIVE_AND_DESKTOP_ARCHIVES_WINDOWS_RUNTIME_NOT_RUN",
+  "runtimeSourceHead": "ae203d351c1070848491bd5e2b75ea65e7a39aa4",
+  "priorUserFeedback": {
+    "mac": "User reported Mac testing passed before the three bug reports.",
+    "windows": "User subsequently reported Windows acceptance; the exact tested revision was not specified. Windows performance feedback is a separate active continuation."
+  },
+  "repairs": {
+    "startup": "Prewarm actual initial unit families behind the loading screen, retain leases until renderer handoff.",
+    "sidebar": "Estimate shared UI texture capacity; evict old preparation pages by bytes and clear displayed leases only when necessary before replacement allocations.",
+    "audio": "No production audio change: retail DiskDrain and BlimpBomb both report KirovAttack; native drain dispatch confirms the key."
+  },
+  "baselineEvidence": {
+    "initialArmy": "baseline-full-page-2x: PCV/LTNK/INIT were Original in the first draw and HD later.",
+    "sidebar": "baseline-visited-pages-2x: NADEPT/NATECH/NANRCT/NAINDP remained Original after all technology without scrolling; texture requests refused at 16621312 bytes."
+  },
+  "tests": {
+    "focused": "47 PASS / 476 assertions across 7 files",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "native": [
+      {
+        "scenario": "native-yuri-2x",
+        "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/startup-sidebar-20261005/native-yuri-2x/report.json"
+      },
+      {
+        "scenario": "native-allied-4x",
+        "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/startup-sidebar-20261005/native-allied-4x/report.json"
+      },
+      {
+        "scenario": "native-soviet-4x",
+        "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/startup-sidebar-20261005/native-soviet-4x/report.json"
+      },
+      {
+        "scenario": "native-original-v2",
+        "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/startup-sidebar-20261005/native-original-v2/report.json"
+      },
+      {
+        "scenario": "desktop-yuri-4x-slow-ui",
+        "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/startup-sidebar-20261005/desktop-yuri-4x-slow-ui/report.json"
+      },
+      {
+        "scenario": "native-disk-sound-2x",
+        "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/startup-sidebar-20261005/native-disk-sound-2x/report.json"
+      }
+    ]
+  },
+  "retailRules": {
+    "file": ".artifacts/yuri-units/source-v2/rulesmd.ini",
+    "sha256": "3d341ef8a13a4b5ab24af2eef48ac94931ac2bb87d950fe3330a07e2d25672ef",
+    "DiskDrain": "KirovAttack",
+    "BlimpBomb": "KirovAttack",
+    "DiskLaser": "FloatingDiscAttack"
+  },
+  "resources": {
+    "unchangedWorldFiles": 4637,
+    "unchangedUIFiles": 360,
+    "uiEntries": 490,
+    "preparedIndex": "a330f2dd15fef0fcf43af8bc1a8640ac183e6d9680a106990f91a196b9622604"
+  },
+  "deliveries": [
+    {
+      "platform": "mac",
+      "archive": "/Users/Aone/Desktop/RA2-HD-Main-Startup-Sidebar-Fix-20261005-ae203d3-macOS-arm64.zip",
+      "bytes": 3292753599,
+      "sha256": "d08f04931b10d7c1b035f1e41fd86392fe9334ec9d0d8e6a91009b814a63c14d",
+      "checkedEntries": 5482,
+      "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/startup-sidebar-20261005/desktop-extracted-mac/RA2-HD-Main-Startup-Sidebar-Fix-20261005-ae203d3-macOS-arm64",
+      "excludedUserData": [
+        "Review-Profile",
+        "UserData"
+      ]
+    },
+    {
+      "platform": "windows",
+      "archive": "/Users/Aone/Desktop/RA2-HD-Main-Startup-Sidebar-Fix-20261005-ae203d3-Windows-x64-portable.zip",
+      "bytes": 3316883590,
+      "sha256": "0c4c1994b2af7c0fa454418ad67011a1240832856c6c0cdbb841045013cc1aa7",
+      "checkedEntries": 5260,
+      "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/startup-sidebar-20261005/desktop-extracted-windows/RA2-HD-Main-Startup-Sidebar-Fix-20261005-ae203d3-Windows-x64-portable",
+      "excludedUserData": [
+        "Review-Profile",
+        "UserData"
+      ]
+    }
+  ],
+  "validationLimits": {
+    "windowsNative": "NOT_RUN_ON_THIS_HOST",
+    "newFixesUserReview": "PENDING",
+    "originalFixture": "native-original failed because preferences were applied before edition GUI restoration; corrected harness native-original-v2 passed. Preserve the diagnostic failure."
+  },
+  "continuation": "Continue the newly reported startup and first-use performance investigation in this conversation; preserve these packages and evidence."
+}

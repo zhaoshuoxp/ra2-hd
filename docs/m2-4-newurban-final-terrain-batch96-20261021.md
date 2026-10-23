@@ -1,0 +1,32 @@
+# M2.4 NewUrban final terrain batch 96
+
+Batch 95 is user accepted in full on 2026-10-21. Batch 96 adds candidates for the remaining 21 NewUrban physical TMP sources. This is a terrain checkpoint; full M2.4 remains open.
+
+The candidate is `newurban-m2-4-final-terrain-batch96-v2`, manifest SHA-256 `c54d438f607fe7b388cc5a44237aeee315e7e372f553655891d74f5a7d42a393`. Evidence is under `.artifacts/m2-4/newurban-final-terrain-reuse-batch96-20261021/`. The selected pack adds 12 complete load cohorts to 98 unchanged prior groups. All 196 inherited atlas files, their rectangles and filtering guards remain byte-exact. New 4X atlases occupy 22,381,632 raw bytes; residency is map dependent and keeps the existing budgets.
+
+| Sources | Production |
+| --- | --- |
+| `droads16`, `droads47–49` | Accepted complete Temperate dirt-track structures with accepted NewUrban grass |
+| `rough01` | Accepted Urban parking lot, mirrored with a transposed source grid |
+| `drslpe04` | Accepted same-direction NewUrban narrow paved slope |
+| `rough04/05/09/10` | Original quarter-circle layout with accepted Urban red pavers and NewUrban pale paving |
+| `grfix05/06`, `gbfix03` | Accepted paving and grass with smooth source-local material boundaries |
+| `droads43/46` | Accepted asphalt and paving with continuous original dead-end shapes and markings |
+| `prslpe01–04` | Shared accepted straight-road surface, inverse native slope projection and continuous port-registered paint |
+| `libbas01`, `cliffa07` | Two new native-guided HD masters; accepted surrounding grass and paving |
+
+Both masters were produced with the built-in image generation tool. Their retained source images, references, exact prompts and hashes are pinned in `mother-jobs-v1.json`, `mother-retention-v1.json` and `authoring-v6.json`. The measured content supports at least 4.67X for the stone base and 11.29X for the timber support. Each density is independently sampled from the retained mother. Original RGB supplies source identity and material-boundary evidence, never new HD detail.
+
+All 247 target slots remain present: 207 positive-pointer slots have complete new density pairs; 40 unreferenced zero-pointer compatibility slots retain Original data and receive no HD credit. Independent original-TMP parsing verifies headers, logical extents, indices, terrain and ramp rules, native depth and source hashes. The timber extra edge uses the existing `hd-extra-contours-v1` contract inside the original canvas and one-cell boundary envelope; the complete main block and its guard remain exact. No engine code, map, archive or installation data is modified.
+
+The first prototype incorrectly chose NewUrban parking material as a same-name red-paver sample. Internal visual inspection caught it; the new candidate explicitly selects accepted Urban red pavers. A geometry equivalence assertion also included unrelated native radar colors; target radar metadata is retained independently. The first loader run rejected the timber cohort because its contour declaration and main-block guard were incomplete. The final candidate uses the existing strict contour policy, without weakening the loader. Failed attempts and receipts remain preserved.
+
+Four focused loader/registration tests pass with 341 assertions; the entry typecheck and isolated build pass. The native plan exhaustively proves a four-map minimum source cover: Downtown, Manhattan, Rush Hour and Turf War. All 42 density/source paths pass actual packaged Mac execution, original simulation, standard skirmish settings, Original controls, resource release and reentry. World peaks are 343,577,340 bytes at 2X and 1,306,339,212 bytes at 4X, below the unchanged budgets. Prepared CPU peaks remain 45,156,556 and 108,112,788 bytes; the same 453 source members and 1,205 pages retain their original prepared index and actual dependencies.
+
+The refreshed eight-map inventory has no parsing issues and no remaining TMP source gaps. The same eight catalog entries, files, streams and selectable maps remain, with nine overlapping original mode variants. Thirteen buildings, two infantry and one overlay remain open, together with 22 conditional dependency groups. Their exact identities are retained in `inventory-reconciliation-v1.json`; full M2.4 remains incomplete.
+
+The combined review is `review-v3/M2.4-NewUrban-Final-Terrain-Batch96-Embedded.html`, with 118 embedded image instances. Lossless encoding reduces the page from 197,382,198 to 115,297,732 bytes while preserving every decoded RGBA pixel and image dimension. Original, 2X, 4X and Compare all controls retain detailed native display scale. The final page corrects the adjacent Manhattan statue's identifier to CANEWY04, verified from its original rules; all imagery and runtime evidence remain unchanged. The earlier page, technical closure and complete handoff remain frozen, with an additive editorial correction and handoff extension. Consolidated visual acceptance was granted on 2026-10-21. Interactive browser execution is not claimed because the retained local-protocol restriction remains applicable.
+
+Per-batch delivery remains an embedded HTML review with metadata and a complete hash ledger; no per-batch game or resource copy is created. The internal mutable Mac arm64 validation host is separate from the final independent milestone application. Main and Windows work remain untouched; Windows validation and main integration are not performed by this batch.
+
+Desktop delivery is complete at `/Users/Aone/Desktop/M2.4-Review-NewUrban-Final-Terrain-Batch96-20261021/`. Exactly three files occupy 128,377,790 bytes: the embedded page, image metadata and complete resource ledger. All 118 embedded images independently decode to the original RGBA pixels. The final page SHA-256 is `318fe3b4bff6cc1f6cb010e8f5c05bb38270e416094e41591f92a7f6da3062a5`. `resource-handoff-v2.json` contains 50,826 pins, reusing 50,818 independently verified frozen pins and eight additive editorial-correction files. Its SHA-256 is `17941b24ced3653b99ed978110d0313701d945d07405ebd1c27245ffbc6de05c`. Runtime build source is `7a0b9529aeb232e7f636570913e9ffd8fdb918bc`; the corrected handoff source is `25728e42`. Subsequent helper/documentation commits do not change the application or resource selection. The user accepted the complete consolidated batch on 2026-10-21; the additive acceptance receipt is `user-acceptance-20261021.json`. Historical technical receipts and ledgers remain immutable.

@@ -1,0 +1,780 @@
+{
+  "status": "LOCAL_DELIVERY_COMPLETE_WINDOWS_STRESS_AB_PENDING",
+  "diagnosticId": "WINHD-20261008-D38F136-C5",
+  "frozenPackageSource": "b71f7631149140a19bd1963d4f086d540252889e",
+  "sourceCommits": [
+    "4f4ed2e47686406be6860abecff51cdebacbf71b",
+    "b71f7631149140a19bd1963d4f086d540252889e"
+  ],
+  "archive": {
+    "status": "PASS_FULL_ARCHIVE_AND_FRESH_EXTRACTION",
+    "diagnosticId": "WINHD-20261008-D38F136-C5",
+    "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "diagnosticCommit": "b71f7631149140a19bd1963d4f086d540252889e",
+    "archive": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C5-b71f763-Windows-x64.zip",
+    "bytes": 3499900638,
+    "sha256": "0021eb538363ec92354e0325e5340d8630a6a06b5f07d80612048bbc21ae4281",
+    "manifestSha256": "8563552e3208838b082d0802b75ea30fb7727e97c9198c9b78ed29029c0f2188",
+    "entries": 8097,
+    "extractedFolder": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c5-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C5-b71f763-Windows-x64",
+    "windowsNative": "NOT_RUN"
+  },
+  "desktop": {
+    "status": "PASS_EXACT_DESKTOP_COPY_AND_FULL_CRC",
+    "file": "/Users/Aone/Desktop/RA2-HD-WINHD-20261008-D38F136-C5-b71f763-Windows-x64.zip",
+    "bytes": 3499900638,
+    "sha256": "0021eb538363ec92354e0325e5340d8630a6a06b5f07d80612048bbc21ae4281",
+    "entries": 8097
+  },
+  "freshKitVerification": {
+    "schemaVersion": 1,
+    "diagnosticId": "WINHD-20261008-D38F136-C5",
+    "manifestSha256": "8563552e3208838b082d0802b75ea30fb7727e97c9198c9b78ed29029c0f2188",
+    "checked": 8096,
+    "failures": [],
+    "status": "PASS",
+    "verifiedAt": "2026-10-09T04:40:01.764Z"
+  },
+  "resources": {
+    "worldAndUIFiles": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "parity": "Exact retained accepted R10 bytes; every file rehashed before copying."
+  },
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCPU": 128,
+    "ui": 16
+  },
+  "windowsEvidence": "docs/windows-hd-c4-stress-trace-20261008.json",
+  "baselineNormalRun": "2026-10-09T03-48-15-550Z-stress-4x-none",
+  "tests": {
+    "focused": 22,
+    "focusedAssertions": 223,
+    "shared": 8,
+    "sharedAssertions": 185,
+    "entryTypecheck": "PASS",
+    "hiddenMapBuild": "PASS_SEPARATE_OUTDIR",
+    "nativeMacValidPhases": 16,
+    "freshExtractionValidPhases": 12,
+    "fullBufferPixelCases": 9
+  },
+  "nativeMacCombatProof": {
+    "status": "PASS_NATIVE_PREPARED_COMBAT_PAIR_REUSED_WITHOUT_RELINK",
+    "platform": "darwin-arm64",
+    "windows": "NOT_RUN",
+    "boundary": "Instrumented stress loading and 28 seconds of native combat ownership proof. Exact Mac shader-source identity and lifecycle only, not Windows timing acceptance.",
+    "receipt": ".artifacts/windows-hd-diagnostic/c5-prepared-combat-4x-v2/report.json",
+    "nativeTickRange": [
+      0,
+      1858
+    ],
+    "shaderChecksEnabled": true,
+    "owners": [
+      {
+        "program": 45,
+        "side": 1,
+        "usedTimes": 1,
+        "links": [
+          {
+            "atMs": 10458.269999980927,
+            "tick": 0,
+            "playing": false,
+            "program": 45,
+            "sources": [
+              "11bd85c0c1bf1b947b280c5cf2c42b0955c1977004963494cba8726a2578bcb2",
+              "858d989e8feeedee9ceebc6dcdb8024a034a7e726f27e746081175da29e1c490"
+            ]
+          }
+        ],
+        "validation": [
+          {
+            "atMs": 10470.710000038147,
+            "tick": 0,
+            "playing": false,
+            "program": 45,
+            "cpuMs": 0.08000004291534424
+          }
+        ],
+        "firstUses": [
+          {
+            "program": 45,
+            "firstUse": {
+              "atMs": 28436.925000071526,
+              "tick": 1186,
+              "playing": true
+            }
+          }
+        ],
+        "deletedDuringCapture": false
+      },
+      {
+        "program": 46,
+        "side": 0,
+        "usedTimes": 1,
+        "links": [
+          {
+            "atMs": 10458.585000038147,
+            "tick": 0,
+            "playing": false,
+            "program": 46,
+            "sources": [
+              "ccf731683fd40be6fda025c8ea9a8848dbeffaf7b73f2f547e42c4f4b862b760",
+              "d8c94cba8a66ee02d0fb9d17f6a50a2dc62d42807f106b009329deed12535df8"
+            ]
+          }
+        ],
+        "validation": [
+          {
+            "atMs": 10470.90499997139,
+            "tick": 0,
+            "playing": false,
+            "program": 46,
+            "cpuMs": 0.04999995231628418
+          }
+        ],
+        "firstUses": [
+          {
+            "program": 46,
+            "firstUse": {
+              "atMs": 28437.06500005722,
+              "tick": 1186,
+              "playing": true
+            }
+          }
+        ],
+        "deletedDuringCapture": false
+      }
+    ],
+    "exit": {
+      "before": [
+        1,
+        1
+      ],
+      "after": [
+        0,
+        0
+      ],
+      "released": [
+        1,
+        1
+      ],
+      "textureDisposals": 0,
+      "ownerCount": 0
+    },
+    "phaseValidity": [
+      "VALID_BOUNDED_SAMPLE",
+      "VALID_BOUNDED_SAMPLE",
+      "VALID_BOUNDED_SAMPLE",
+      "VALID_BOUNDED_SAMPLE"
+    ]
+  },
+  "freshNativeRuns": [
+    {
+      "run": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c5-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C5-b71f763-Windows-x64/Diagnostic-Runs/2026-10-09T04-41-55-426Z-stress-4x-none",
+      "config": {
+        "mode": "4x",
+        "scene": "stress",
+        "control": "none",
+        "seconds": 3,
+        "trace": false,
+        "manual": false,
+        "experimentId": "WINHD-20261008-D38F136-C5-stress-4x-none",
+        "timestamp": 1700000000000,
+        "edition": "yr",
+        "shadows": 3,
+        "renderResolution": "native",
+        "contentSize": [
+          1707,
+          1067
+        ],
+        "displayMode": "native-fullscreen",
+        "presentationHeight": 900
+      },
+      "phases": [
+        {
+          "label": "fresh-process-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 198,
+          "instrumented": false,
+          "hdBindings": 1914
+        },
+        {
+          "label": "warmed-steady",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 202,
+          "instrumented": false,
+          "hdBindings": 1930
+        },
+        {
+          "label": "same-process-reentry-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 198,
+          "instrumented": false,
+          "hdBindings": 1914
+        },
+        {
+          "label": "same-process-reentry-warmed",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 201,
+          "instrumented": false,
+          "hdBindings": 1930
+        }
+      ]
+    },
+    {
+      "run": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c5-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C5-b71f763-Windows-x64/Diagnostic-Runs/2026-10-09T04-43-16-347Z-small-2x-none",
+      "config": {
+        "mode": "2x",
+        "scene": "small",
+        "control": "none",
+        "seconds": 3,
+        "trace": false,
+        "manual": false,
+        "experimentId": "WINHD-20261008-D38F136-C5-small-2x-none",
+        "timestamp": 1700000000000,
+        "edition": "yr",
+        "shadows": 3,
+        "renderResolution": "native",
+        "contentSize": [
+          1280,
+          800
+        ],
+        "displayMode": "window",
+        "presentationHeight": 900
+      },
+      "phases": [
+        {
+          "label": "fresh-process-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 205,
+          "instrumented": false,
+          "hdBindings": 1323
+        },
+        {
+          "label": "warmed-steady",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 201,
+          "instrumented": false,
+          "hdBindings": 1324
+        },
+        {
+          "label": "same-process-reentry-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 209,
+          "instrumented": false,
+          "hdBindings": 1323
+        },
+        {
+          "label": "same-process-reentry-warmed",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 202,
+          "instrumented": false,
+          "hdBindings": 1324
+        }
+      ]
+    },
+    {
+      "run": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c5-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C5-b71f763-Windows-x64/Diagnostic-Runs/2026-10-09T04-43-55-231Z-small-original-none",
+      "config": {
+        "mode": "original",
+        "scene": "small",
+        "control": "none",
+        "seconds": 3,
+        "trace": false,
+        "manual": false,
+        "experimentId": "WINHD-20261008-D38F136-C5-small-original-none",
+        "timestamp": 1700000000000,
+        "edition": "yr",
+        "shadows": 3,
+        "renderResolution": "native",
+        "contentSize": [
+          1280,
+          800
+        ],
+        "displayMode": "window",
+        "presentationHeight": 900
+      },
+      "phases": [
+        {
+          "label": "fresh-process-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 204,
+          "instrumented": false,
+          "hdBindings": 0
+        },
+        {
+          "label": "warmed-steady",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 202,
+          "instrumented": false,
+          "hdBindings": 0
+        },
+        {
+          "label": "same-process-reentry-first-use",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 202,
+          "instrumented": false,
+          "hdBindings": 0
+        },
+        {
+          "label": "same-process-reentry-warmed",
+          "validity": "VALID_BOUNDED_SAMPLE",
+          "nativeTicks": 202,
+          "instrumented": false,
+          "hdBindings": 0
+        }
+      ]
+    }
+  ],
+  "nativeMacPixelControls": [
+    {
+      "receipt": ".artifacts/windows-hd-diagnostic/c5-fresh-pixels-stress-4x-v2/report.json",
+      "mode": "4x",
+      "boundary": "Same-state pixel comparisons outside timing loops; native ticking and automatic renderer updates are frozen only for equivalence. Explicit renderer.update(0) and render still exercise the production paths.",
+      "comparisons": {
+        "startTick": 725,
+        "endTick": 725,
+        "results": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "sources": 205,
+            "clonedMaterials": 35,
+            "retired": 35,
+            "detached": true,
+            "linksAfterReplacement": 0,
+            "totalLinks": 0,
+            "candidateDifferentBytes": 0,
+            "immediateDisposalDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 17594687,
+            "comparedBytes": 33177600,
+            "width": 3840,
+            "height": 2160,
+            "shaderChecksEnabled": true,
+            "resourcesAfterDrain": {
+              "retired": 0,
+              "geometry": 563,
+              "programs": 50
+            },
+            "warmupEquivalence": {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          },
+          {
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "sources": 205,
+            "clonedMaterials": 35,
+            "retired": 35,
+            "detached": true,
+            "linksAfterReplacement": 0,
+            "totalLinks": 0,
+            "candidateDifferentBytes": 0,
+            "immediateDisposalDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 17328970,
+            "comparedBytes": 33177600,
+            "width": 3840,
+            "height": 2160,
+            "shaderChecksEnabled": true,
+            "resourcesAfterDrain": {
+              "retired": 0,
+              "geometry": 563,
+              "programs": 50
+            },
+            "warmupEquivalence": {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          },
+          {
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "sources": 205,
+            "clonedMaterials": 35,
+            "retired": 35,
+            "detached": true,
+            "linksAfterReplacement": 0,
+            "totalLinks": 0,
+            "candidateDifferentBytes": 0,
+            "immediateDisposalDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 16710337,
+            "comparedBytes": 33177600,
+            "width": 3840,
+            "height": 2160,
+            "shaderChecksEnabled": true,
+            "resourcesAfterDrain": {
+              "retired": 0,
+              "geometry": 563,
+              "programs": 50
+            },
+            "warmupEquivalence": {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          }
+        ],
+        "output": {
+          "ratio": 2,
+          "requested": [
+            3840,
+            2160
+          ],
+          "effective": [
+            3840,
+            2160
+          ],
+          "caps": []
+        },
+        "density": 4
+      }
+    },
+    {
+      "receipt": ".artifacts/windows-hd-diagnostic/c5-fresh-pixels-small-2x-v1/report.json",
+      "mode": "2x",
+      "boundary": "Same-state pixel comparisons outside timing loops; native ticking and automatic renderer updates are frozen only for equivalence. Explicit renderer.update(0) and render still exercise the production paths.",
+      "comparisons": {
+        "startTick": 671,
+        "endTick": 671,
+        "results": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "sources": 226,
+            "clonedMaterials": 116,
+            "retired": 116,
+            "detached": true,
+            "linksAfterReplacement": 0,
+            "totalLinks": 0,
+            "candidateDifferentBytes": 0,
+            "immediateDisposalDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8446336,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "shaderChecksEnabled": true,
+            "resourcesAfterDrain": {
+              "retired": 0,
+              "geometry": 575,
+              "programs": 46
+            },
+            "warmupEquivalence": {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          },
+          {
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "sources": 226,
+            "clonedMaterials": 116,
+            "retired": 116,
+            "detached": true,
+            "linksAfterReplacement": 0,
+            "totalLinks": 0,
+            "candidateDifferentBytes": 0,
+            "immediateDisposalDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8446595,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "shaderChecksEnabled": true,
+            "resourcesAfterDrain": {
+              "retired": 0,
+              "geometry": 575,
+              "programs": 46
+            },
+            "warmupEquivalence": {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          },
+          {
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "sources": 226,
+            "clonedMaterials": 116,
+            "retired": 116,
+            "detached": true,
+            "linksAfterReplacement": 0,
+            "totalLinks": 0,
+            "candidateDifferentBytes": 0,
+            "immediateDisposalDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 6804940,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "shaderChecksEnabled": true,
+            "resourcesAfterDrain": {
+              "retired": 0,
+              "geometry": 575,
+              "programs": 46
+            },
+            "warmupEquivalence": {
+              "ownerGroups": 1,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 1
+            }
+          }
+        ],
+        "output": {
+          "ratio": 2,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "density": 2
+      }
+    },
+    {
+      "receipt": ".artifacts/windows-hd-diagnostic/c5-fresh-pixels-small-original-v1/report.json",
+      "mode": "original",
+      "boundary": "Same-state pixel comparisons outside timing loops; native ticking and automatic renderer updates are frozen only for equivalence. Explicit renderer.update(0) and render still exercise the production paths.",
+      "comparisons": {
+        "startTick": 619,
+        "endTick": 619,
+        "results": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "sources": 226,
+            "clonedMaterials": 110,
+            "retired": 110,
+            "detached": true,
+            "linksAfterReplacement": 0,
+            "totalLinks": 0,
+            "candidateDifferentBytes": 0,
+            "immediateDisposalDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8238571,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "shaderChecksEnabled": true,
+            "resourcesAfterDrain": {
+              "retired": 0,
+              "geometry": 152,
+              "programs": 23
+            },
+            "warmupEquivalence": {
+              "ownerGroups": 0,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 0
+            }
+          },
+          {
+            "offset": {
+              "x": -350,
+              "y": 150
+            },
+            "sources": 226,
+            "clonedMaterials": 110,
+            "retired": 110,
+            "detached": true,
+            "linksAfterReplacement": 0,
+            "totalLinks": 0,
+            "candidateDifferentBytes": 0,
+            "immediateDisposalDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 8238841,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "shaderChecksEnabled": true,
+            "resourcesAfterDrain": {
+              "retired": 0,
+              "geometry": 152,
+              "programs": 23
+            },
+            "warmupEquivalence": {
+              "ownerGroups": 0,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 0
+            }
+          },
+          {
+            "offset": {
+              "x": 350,
+              "y": -150
+            },
+            "sources": 226,
+            "clonedMaterials": 110,
+            "retired": 110,
+            "detached": true,
+            "linksAfterReplacement": 0,
+            "totalLinks": 0,
+            "candidateDifferentBytes": 0,
+            "immediateDisposalDifferentBytes": 0,
+            "restoredDifferentBytes": 0,
+            "nonzeroBytes": 6597552,
+            "comparedBytes": 16384000,
+            "width": 2560,
+            "height": 1600,
+            "shaderChecksEnabled": true,
+            "resourcesAfterDrain": {
+              "retired": 0,
+              "geometry": 152,
+              "programs": 23
+            },
+            "warmupEquivalence": {
+              "ownerGroups": 0,
+              "removedDifferentBytes": 0,
+              "restoredDifferentBytes": 0,
+              "retainedAfterRestore": 0
+            }
+          }
+        ],
+        "output": {
+          "ratio": 2,
+          "requested": [
+            2560,
+            1600
+          ],
+          "effective": [
+            2560,
+            1600
+          ],
+          "caps": []
+        },
+        "density": 4
+      }
+    }
+  ],
+  "timingBoundary": "Mac functional/mechanism QA only; no Mac throughput or Windows speedup claim. Instrumented source ownership and native pixel controls are separate from Normal Windows acceptance.",
+  "applicationBuildParity": {
+    "finalSnapshot": "b71f7631149140a19bd1963d4f086d540252889e",
+    "initialCandidate": "4f4ed2e47686406be6860abecff51cdebacbf71b",
+    "exactBuildFilesExcludingIdentity": 286,
+    "delta": "Native checker correction only; application and map bytes exact."
+  },
+  "preservedFailures": [
+    {
+      "receipt": ".artifacts/windows-hd-diagnostic/c5-prepared-combat-4x-v1/report.json",
+      "cause": "Combat exit checker assumed HD remap uniform on an indexed material. Source mechanism checks passed; corrected checker retry passes."
+    },
+    {
+      "receipt": ".artifacts/windows-hd-diagnostic/c5-pixels-stress-4x-v1/report.json",
+      "cause": "Only native ticks were frozen; automatic renderer updates advanced animation between asynchronous comparison captures. Frozen renderer-update retry has zero pixel differences."
+    }
+  ],
+  "sourcePatch": {
+    "file": ".artifacts/windows-hd-diagnostic/c5-rendering-candidate.patch",
+    "sha256": "816a4f62ea7138cd088095b5d12b822e1fc82ad807faf78c503150b461054561",
+    "paths": 7,
+    "applyCheckOnFrozenMain": "PASS_READ_ONLY",
+    "applied": "NO"
+  },
+  "acceptance": {
+    "smallC4FourX": "USER_ACCEPTED",
+    "c4EightPlayerEnemyHitch": "OPEN",
+    "c5WindowsExecution": "NOT_RUN",
+    "c5WindowsGain": "PENDING",
+    "c5UserExperience": "PENDING",
+    "actualGpuExecutionAndVram": "UNAVAILABLE",
+    "physicalInputAndAllMaps": "NOT_ESTABLISHED",
+    "mainMerge": "NOT_PERFORMED",
+    "push": "NOT_PERFORMED"
+  },
+  "nextWindowsAction": "Verify C5, launch eight-player/4X/Normal once on same target, wait final completion, export and report automatic combat hitch plus visual/loading feedback. Reuse prior valid C4 stress Normal baseline; no F8/F9 initially.",
+  "remainingMeasuredSourceIssue": "84.106/189.468 ms synchronous SHP pixel preparation; unchanged in C5 for one-variable evaluation.",
+  "mainAudit": {
+    "head": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+    "dirty": false
+  },
+  "peerM23Audit": {
+    "head": "51a00a7ed30430346463599a8d7099a14ccc683a",
+    "dirty": [
+      "docs/m2-3-production-acceptance.json"
+    ],
+    "action": "UNTOUCHED"
+  },
+  "nativeMacOwnershipBaseline": {
+    "summary": ".artifacts/windows-hd-diagnostic/c4-combat-ownership-summary-v1.json",
+    "receipt": ".artifacts/windows-hd-diagnostic/c4-stress-warm-ownership-v2/report.json",
+    "selectedIndexedPairLinksDuringWarmWindow": [
+      16,
+      16
+    ],
+    "selectedIndexedPairDeletesDuringWarmWindow": [
+      16,
+      16
+    ],
+    "boundary": "Mac ownership/source evidence supporting the Windows shader-wait hypothesis; exact Windows material/family unresolved."
+  },
+  "freshMacExportRoundtrip": {
+    "status": "PASS_RETURN_CRC_HASH_FROZEN_IDENTITY_AND_SAFE_EXTRACTION",
+    "archive": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c5-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C5-b71f763-Windows-x64/WINHD-20261008-D38F136-C5-RETURN-2026-10-09T04-45-39-229Z.zip",
+    "bytes": 80123573,
+    "sha256": "9371ee9fd91d07897bb393f040c767716fdbf995803b23feee8eb03cebcaae0c",
+    "files": 28,
+    "runs": 3,
+    "diagnosticId": "WINHD-20261008-D38F136-C5",
+    "diagnosticCommit": "b71f7631149140a19bd1963d4f086d540252889e",
+    "manifestSha256": "8563552e3208838b082d0802b75ea30fb7727e97c9198c9b78ed29029c0f2188",
+    "extractedDirectory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/c5-fresh-export-validated-v1",
+    "launcherPolicy": "Inspected as data only; no returned scripts executed.",
+    "launchers": [
+      {
+        "file": "Export-Reports.cmd",
+        "status": "IDENTICAL",
+        "sha256": "25e23098719b40880c953b1ca32ce71489741e5840aae605e196fd858c64b0fc"
+      },
+      {
+        "file": "Launch-Diagnostics.cmd",
+        "status": "IDENTICAL",
+        "sha256": "a2ffeb2136ed6a4ee688670591216cf07730c76fa82525de88717ef4ed4a8576"
+      },
+      {
+        "file": "Run-Control.cmd",
+        "status": "IDENTICAL",
+        "sha256": "69705b9577c1a5f9cceed33612b407d9110317d9a9eab76ec570507da20255db"
+      },
+      {
+        "file": "Verify-Kit.cmd",
+        "status": "IDENTICAL",
+        "sha256": "812399b452707c4a00757b168629eaedd761f5ec57d4584cd43dd3806d5d9722"
+      }
+    ],
+    "boundary": "Mac functional export/validation QA, not actual Windows execution."
+  }
+}

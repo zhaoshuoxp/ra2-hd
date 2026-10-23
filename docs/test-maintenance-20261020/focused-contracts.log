@@ -1,0 +1,28 @@
+bun test v1.3.14 (0d9b296a)
+
+scripts/m1/rhino-game.test.ts:
+(pass) Rhino follows default-on global HD preference and persists explicit off [3.59ms]
+(pass) native Rhino render states are supported without mutating gameplay [0.18ms]
+(pass) team shading preserves reference red and shares only per-vehicle dynamic uniforms [1.70ms]
+(pass) complete local family matches accepted eight-heading base bytes and pinned identity [386.56ms]
+
+scripts/m1/allied-units/shared-reuse.test.ts:
+(pass) Allied and Soviet engineer leases share one allocation without matching foreign images [2.13ms]
+(pass) Source-identical stolen-tech units become available in RA2 without opening YR-only families [0.05ms]
+(pass) Reused member slots cover both native sequence maps, including fixed-facing differences [599.83ms]
+
+scripts/m2/official-maps/waterfall-admission.test.ts:
+(pass) all eleven complete native waterfall manifests reach page validation at both densities [20.47ms]
+(pass) altered native identities, non-waterfall opacity and invalid opacity fail before page reads [1.13ms]
+
+scripts/m2/official-maps/terrain-loading.test.ts:
+(pass) new terrain closure loads only encountered groups at 2X [11.06ms]
+(pass) new terrain closure loads only encountered groups at 4X [9.76ms]
+(pass) corrupt new terrain atlas keeps the whole group native before publication [8.30ms]
+(pass) exhausted world capacity rejects the new closure without fetching its atlas [3.97ms]
+(pass) cancelled terrain loading publishes no group or retained allocation [6.99ms]
+
+ 14 pass
+ 0 fail
+ 571 expect() calls
+Ran 14 tests across 4 files. [1373.00ms]

@@ -1,0 +1,154 @@
+{
+  "schema": "m2-3-r5-desktop-gameplay-test-delivery-v1",
+  "date": "2026-10-09",
+  "status": "PASS_COMPLETE_DESKTOP_MAC_TEST_ZIP_AND_ALL_61_MAP_TITLES",
+  "target": "darwin-arm64",
+  "runtimeSourceCommit": "b8fed46e6d88820e1508f59203d9868c1527f0c5",
+  "runtimeSourceParity": "No src/ or desktop/ changes relative to the frozen R5 runtime source.",
+  "userVisualAcceptance": true,
+  "userGameplayAcceptance": "NOT_RECORDED",
+  "environment": "environment-m2-3-edge-feedback-complete-v6",
+  "terrain": "temperate-m2-3-material-feedback-v3",
+  "desktopFiles": [
+    {
+      "source": "/Users/Aone/RA2remaster/M2.3-R5-Desktop-Mac-Test-20261009-R2/M2.3-R5-Desktop-Mac-Test-20261009.zip",
+      "file": "/Users/Aone/Desktop/M2.3-R5-Desktop-Mac-Test-20261009.zip",
+      "sha256": "697eefef625b8d433b35c469c23034257a8cb0876c558f527736e242e961fac3",
+      "bytes": 3738908593
+    },
+    {
+      "source": "/Users/Aone/RA2remaster/M2.3-R5-Desktop-Mac-Test-20261009-R2/RA2-HD-M2.3-R5-Desktop-Test/M2.3-R5-Temperate-Map-Test-List.txt",
+      "file": "/Users/Aone/Desktop/M2.3-R5-Temperate-Map-Test-List-20261009.txt",
+      "sha256": "f869cc7e3393f6b960f6d7ef74683ffd2bfd22a735a4ae441ad24919fc8a83af",
+      "bytes": 3959
+    },
+    {
+      "source": "/Users/Aone/RA2remaster/M2.3-R5-Desktop-Mac-Test-20261009-R2/RA2-HD-M2.3-R5-Desktop-Test/M2.3-R5-Temperate-Map-Test-List.csv",
+      "file": "/Users/Aone/Desktop/M2.3-R5-Temperate-Map-Test-List-20261009.csv",
+      "sha256": "997cd350adc2d3da7e35bc088a461a014e01d7045e0f97dd0eee70a633c24d08",
+      "bytes": 5522
+    }
+  ],
+  "sourceFolder": "/Users/Aone/RA2remaster/M2.3-Temperate-Review-20261009-R5/RA2-HD-M2.3-Temperate-Review-20261009-R5",
+  "stagingFolder": "/Users/Aone/RA2remaster/M2.3-R5-Desktop-Mac-Test-20261009-R2/RA2-HD-M2.3-R5-Desktop-Test",
+  "sourceManifestSha256": "8d4de6828b20ebe148e05f1427a4f145e16c16719f67c58016e689365df41708",
+  "checkedRuntimeEntries": 7569,
+  "checkedRuntimeBytes": 6437800266,
+  "checkedZipEntries": 7578,
+  "symlinks": 14,
+  "codesign": "PASS",
+  "profileIncludedInArchive": false,
+  "launcher": "Launch-M2.3-R5-Test.command",
+  "launcherBehavior": "The external launcher uses the shipped Electron runtime to register sibling R5 world resources and the sibling UI root in a private profile. It does not change the app bundle or reuse an old installation registration.",
+  "maps": {
+    "ra2": 17,
+    "yr": 44,
+    "total": 61,
+    "previousR5NativeCases": 12
+  },
+  "titlePolicy": "Shipped general.csf, its shipped locale JSON, missing retail labels, and native MapManifest title suffix.",
+  "mapList": {
+    "file": "/Users/Aone/RA2remaster/M2.3-R5-Desktop-Mac-Test-20261009-R2/RA2-HD-M2.3-R5-Desktop-Test/M2.3-R5-Temperate-Map-Test-List.json",
+    "sha256": "876155d57e80a0260d79dcf740de64117ecf3765ea59c5282a6ebfec39e1669a",
+    "bytes": 36619
+  },
+  "actualVisibleMapTitles": "PASS_ALL_61_IN_THE_CORRESPONDING_EDITION_STANDARD_MODE",
+  "nativeControls": [
+    {
+      "edition": "ra2",
+      "member": "mp03t4.map",
+      "density": 2,
+      "report": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/desktop-test-r5-20261009-delivery-v1/native-ra2-2x/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "environmentRevision": "environment-m2-3-edge-feedback-complete-v6",
+      "encounteredFamilies": 47,
+      "nativeHdBindings": 80,
+      "terrainPlacedBindings": 13515,
+      "combinedWorldAllocation": {
+        "terrain": 130080012,
+        "environment": 76824324,
+        "baseline": 30503392,
+        "eager": 9731888,
+        "demand": 9965356,
+        "total": 257104972,
+        "limit": 536870912
+      },
+      "glError": 0,
+      "errors": []
+    },
+    {
+      "edition": "yr",
+      "member": "xnewhghts.map",
+      "density": 4,
+      "report": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/desktop-test-r5-20261009-delivery-v1/native-yr-4x/report.json",
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "environmentRevision": "environment-m2-3-edge-feedback-complete-v6",
+      "encounteredFamilies": 20,
+      "nativeHdBindings": 38,
+      "terrainPlacedBindings": 5643,
+      "combinedWorldAllocation": {
+        "terrain": 473194640,
+        "environment": 264859024,
+        "baseline": 91372196,
+        "eager": 50566032,
+        "demand": 29750496,
+        "total": 909742388,
+        "limit": 1342177280
+      },
+      "glError": 0,
+      "errors": []
+    }
+  ],
+  "reusedR5NativeCases": 30,
+  "coverageBoundary": "The declared reusable TEMPERATE artwork is complete. This list contains 61 selectable edition/map entries (17 RA2 and 44 YR), including edition counterparts. Focused native checks do not establish complete natural-match playthroughs of all 61 entries. Other theaters remain outside this milestone.",
+  "historicalAttempts": [
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/desktop-test-r5-20261009-delivery-v1/user-launcher-and-catalog-v1/report.json",
+      "sha256": "2eda41ce0a23f2fb14b6c5b97868f855200a375f7eb03ee610b29339173da6a1",
+      "bytes": 481
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/desktop-test-r5-20261009-delivery-v1/restricted-launch-disposition.json",
+      "sha256": "034f108389566c9a2f4008e2878083e4bb2a2a8f36c577340e7c9741dc4d4287",
+      "bytes": 883
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/desktop-test-r5-20261009-map-list-v1/candidate-v1-disposition.json",
+      "sha256": "38fc0867b61f576a7104fa1c6df726eae4b42fa49a6866904ac7912098e39b00",
+      "bytes": 445
+    }
+  ],
+  "evidence": [
+    {
+      "file": "/Users/Aone/RA2remaster/M2.3-R5-Desktop-Mac-Test-20261009-R2/archive-receipt.json",
+      "sha256": "dd5d7016508fe49649c0131eb72afcf219aff2da24fe279060b4073c53f605fd",
+      "bytes": 1778
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/desktop-test-r5-20261009-delivery-v1/desktop-copy-receipt.json",
+      "sha256": "fbbfe1e8a3fff49e958982137beec6c7918771061c1d3d5400ade1932f56e1d7",
+      "bytes": 1205
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/desktop-test-r5-20261009-delivery-v1/extracted-package-receipt.json",
+      "sha256": "b1ae4574a0beec4e9e12e324ca6a974929225b7f7ce4a1810a892b4e702760d2",
+      "bytes": 1253
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/desktop-test-r5-20261009-delivery-v1/user-launcher-and-catalog-v2/report.json",
+      "sha256": "732d2e17d50ad0db9b8e3ed1fc4a4de3952d6a23186e3a2a6cd19c8a43c36733",
+      "bytes": 5624
+    },
+    {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate/.artifacts/m2-3/desktop-test-r5-20261009-delivery-v1/native-summary.json",
+      "sha256": "da3ea8a09b3a3fd2e47558b5f816561c6696738a96842d501c090acf0f35b3b8",
+      "bytes": 1640
+    }
+  ],
+  "mainObservedCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+  "mainIntegration": false,
+  "windows": "NOT_RUN",
+  "physicalInput": "NOT_RUN",
+  "remotePush": false,
+  "publication": false
+}

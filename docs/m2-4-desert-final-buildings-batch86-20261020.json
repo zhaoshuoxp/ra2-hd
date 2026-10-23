@@ -1,0 +1,1329 @@
+{
+  "status": "BATCH86_USER_ACCEPTED_AND_DELIVERED_MAC_TECHNICAL_COMPLETE",
+  "candidate": {
+    "schemaVersion": 1,
+    "revision": "desert-environment-final-buildings-batch86-v1-combined",
+    "sha256": "83f3e56e6b43b158ac7e3110f68ad65120eec4e44e899c6a0a877b0f2a4cc637"
+  },
+  "completeFamilies": 4,
+  "sourceMembers": 6,
+  "logicalBodySlots": 49,
+  "originalShadowFrames": 29,
+  "densityFrames": 98,
+  "reusedSourceStates": 19,
+  "newBodyStudies": 10,
+  "newRadarPhaseStudies": 10,
+  "activeBuiltinMothers": 11,
+  "sourceVerification": {
+    "file": ".artifacts/m2-4/desert-final-buildings-authoring-batch86-v1/verification-v2.json",
+    "sha256": "ad9f1e77d41ef916706460d94214401b301602efb5618cf41509b019c591932d",
+    "bytes": 1063
+  },
+  "temporalVerification": {
+    "file": ".artifacts/m2-4/desert-final-buildings-authoring-batch86-v1/temporal-and-reuse-verification-v1.json",
+    "sha256": "e50a08ae2f5bdd75a211e6a61bc200c9199ed1fbfcba1aa3f200d389917d01f3",
+    "bytes": 1553
+  },
+  "selection": {
+    "file": ".artifacts/m2-4/desert-final-buildings-native-batch86-v1/selection-v1.json",
+    "sha256": "28ddc80d54b66de27f32ade2d0d010e7f9250198c8f94d389712fd8c1723f175",
+    "bytes": 150247
+  },
+  "nativePlan": {
+    "file": ".artifacts/m2-4/desert-final-buildings-native-batch86-v1/native-plan-v1.json",
+    "sha256": "f601bdb1d886651e53364f9aa04e89861e889f3e9da83b3fcb8807ac4b3bebb9",
+    "bytes": 962
+  },
+  "loaderTests": {
+    "file": ".artifacts/m2-4/desert-final-buildings-batch86-20261020/loader-tests-v1.log",
+    "sha256": "a28f21d37f9602e2fe0bdc92009b648b7d7f87ce7940a807b863d6de24d22b42",
+    "bytes": 795
+  },
+  "entryTypecheck": {
+    "file": ".artifacts/m2-4/desert-final-buildings-batch86-20261020/entry-typecheck-v1.log",
+    "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+    "bytes": 39
+  },
+  "concurrentMain": {
+    "file": ".artifacts/m2-4/desert-final-buildings-batch86-20261020/concurrent-main-observation-v2.json",
+    "sha256": "ca5734ee9ab504b18cad2d31c1c311a74c4681a182a2bd867de7f4621f9d5dc5",
+    "bytes": 650
+  },
+  "runtime": "PASS_FOCUSED_MAC_NATIVE_CASES",
+  "visualAcceptance": "USER_ACCEPTED_BATCH86_ALL_NEW_AIRPORT_PYRAMID_AND_HOUSE_STATES",
+  "windows": "NOT_RUN",
+  "perBatchGamePackage": false,
+  "m24Complete": false,
+  "runtimeSourceCommit": "f67d42adefcec8843a5edf431b74144b48a745b0",
+  "nativeClosure": {
+    "file": ".artifacts/m2-4/desert-final-buildings-batch86-20261020/coverage-and-native-closure-v1.json",
+    "sha256": "6b286c91a9d44feca00748de77231770e02aadf3dfe9e6d84de5e7c10036f9ae",
+    "bytes": 272380
+  },
+  "resourceLedger": {
+    "file": ".artifacts/m2-4/desert-final-buildings-batch86-20261020/resource-handoff-v1.json",
+    "sha256": "b2f6df63875e8a1bb9c2cbe5f6bfefc49b1f9de7c949500afc2ff0599129e42a",
+    "bytes": 3081096
+  },
+  "sourceMediaQA": {
+    "file": ".artifacts/m2-4/desert-final-buildings-batch86-20261020/source-static-qa-v2/report.json",
+    "sha256": "fc639da250de683078279687abfc60528d40a521f3e029724a7f7367cef28d22",
+    "bytes": 3213
+  },
+  "desktopDelivery": {
+    "file": ".artifacts/m2-4/desert-final-buildings-batch86-20261020/desktop-delivery-v1.json",
+    "sha256": "821f53bd1871ac77483b1f99c77cce27cfa79ae8106f34e6f5eaae5178266fde",
+    "bytes": 1503
+  },
+  "userAcceptance": {
+    "file": ".artifacts/m2-4/desert-final-buildings-batch86-20261020/user-acceptance-20261020.json",
+    "sha256": "699dfdb6ced96b57be34771b669ecdacbbf76cc76c89205d61f4b1a101a82001",
+    "bytes": 1919
+  },
+  "worldPeakBytes": {
+    "2": 223032816,
+    "4": 846448976
+  },
+  "preparedPeakBytes": 108112788,
+  "preparedIndex": {
+    "type": "prepared-hd-registered",
+    "members": 453,
+    "pages": 1205,
+    "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+  },
+  "remaining": [
+    {
+      "theater": "DESERT",
+      "authoredGaps": 0,
+      "conditionalOrUnresolved": [
+        {
+          "key": "DESERT:smudge:cr1.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "cr1.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR1"
+          ],
+          "rowKeys": [
+            "03aa16f2924e340d3bc0ea6cb62dc1846fcf04d88179258e6e751f73104c6158"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:cr2.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "cr2.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR2"
+          ],
+          "rowKeys": [
+            "6ac2b432ab01a5096df80dbf917cbef32487bc7e4874d85a1bf8df4a39d36e23"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:cr3.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "cr3.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR3"
+          ],
+          "rowKeys": [
+            "c031d2e3898621aaaaba05e2a3370279b2815a9abc2c957c1a713d565f30ac05"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:cr4.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "cr4.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR4"
+          ],
+          "rowKeys": [
+            "ee8ed581ffae19e906835dba3cf87c2318a7a010e740658932f7791814d8d743"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:cr5.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "cr5.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR5"
+          ],
+          "rowKeys": [
+            "c6d80365f4f2fd9727e2cacf16360fd650533d64fd3b63166514767695caea3f"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:cr6.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "cr6.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR6"
+          ],
+          "rowKeys": [
+            "7ef21e41808085abb8225156d914c407c048b16fac404ea17d124278b0745941"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn01.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn01.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN01"
+          ],
+          "rowKeys": [
+            "602ec8fa5ce0e3172a356da6615aecf2e51b5ccfe71efc3ae60170ebd45c028d"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn02.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn02.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN02"
+          ],
+          "rowKeys": [
+            "7d2f9a893d133a90284210eed8dc1aad389f72d27f6292ca1a343429a2ce9383"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn03.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn03.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN03"
+          ],
+          "rowKeys": [
+            "9243bb0f1a6e3439ddae23e70b0eb7d8200ef1c46fd240353c34f3903a1b01b6"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn04.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn04.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN04"
+          ],
+          "rowKeys": [
+            "f917619f8a1e373cbf9ee7496672c4533ec832fe66deb1b78bd4a8004af93654"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn05.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn05.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN05"
+          ],
+          "rowKeys": [
+            "a641840ceaa94db682559f381885761e2e12a6a7fb0d1b0caa777ca6a63dc648"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn06.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn06.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN06"
+          ],
+          "rowKeys": [
+            "64cc13d3b64043cbe0ce8d2dad7c5ad1e83d11b16192a11d6cb9d9b85d59b775"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn07.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn07.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN07"
+          ],
+          "rowKeys": [
+            "4d1b057fcf301cfad480cd729e319ec71015534feb214e93e8888b96183b55d8"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn08.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn08.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN08"
+          ],
+          "rowKeys": [
+            "5fe3ae99a851ec314893a2a49673e2a18580c0227fa948acc293f704d9c3130c"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn09.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn09.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN09"
+          ],
+          "rowKeys": [
+            "a84535b1a1f330288b2dd705db354a403ebb507340eefc96c50f7817f5ae56bb"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn10.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn10.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN10"
+          ],
+          "rowKeys": [
+            "217224db15879399e4c2098ecae5a4a819bda6d002e7fe035f11da7ea4d268a7"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn11.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn11.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN11"
+          ],
+          "rowKeys": [
+            "bc69dc4ae0b2bd3051bb051bd53ed6e007be84bdf1044edb2aa7363037d4b295"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn12.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn12.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN12"
+          ],
+          "rowKeys": [
+            "bc6c7ce09fbfd49d56ec229f9f49fbd81ff0cb7fd2a0eb4da0081e9478a481fa"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn13.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn13.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN13"
+          ],
+          "rowKeys": [
+            "44ef1f27224153104374b8c77a1a871f6db1472e098c5b7d51e4881eba269994"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn14.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn14.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN14"
+          ],
+          "rowKeys": [
+            "7e89587e636c1110c6a5ca5d8999b837bb28f18bd5aa95151f465ee4c1931907"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn15.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn15.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN15"
+          ],
+          "rowKeys": [
+            "957ec679f3da48be1ba1f49ac8809204d3eae2c61c3b27fb378af439c60beceb"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        },
+        {
+          "key": "DESERT:smudge:burn16.shp:unresolved",
+          "theater": "DESERT",
+          "kind": "smudge",
+          "member": "burn16.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN16"
+          ],
+          "rowKeys": [
+            "330c9592a3dc6503776660e1f15b51154b57201b9ad9f3209624d1ebccd5a714"
+          ],
+          "maps": [
+            "yr:dunepatr.map",
+            "yr:pcofdune.map",
+            "yr:saharami.map",
+            "yr:dryheat.map",
+            "yr:monumentvalley.map",
+            "yr:sedonapass.map",
+            "yr:tourofegypt.map",
+            "yr:saharamimw.map",
+            "yr:deathvalleygirlmw.map",
+            "yr:dryheatmw.map",
+            "yr:monumentvalleymw.map",
+            "yr:sedonapassmw.map",
+            "yr:deathvalleygirl.map"
+          ]
+        }
+      ]
+    },
+    {
+      "theater": "NEWURBAN",
+      "authoredGaps": 310,
+      "conditionalOrUnresolved": [
+        {
+          "key": "NEWURBAN:smudge:cr1.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "cr1.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR1"
+          ],
+          "rowKeys": [
+            "3246afd45a4df331cde1847f4e268fa10ad67ed8a3b1a8c340de19edaee333d8"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:cr2.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "cr2.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR2"
+          ],
+          "rowKeys": [
+            "7207f33ed1ad45a466be2789c822b165ff698a8da7538a9281963381c260080d"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:cr3.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "cr3.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR3"
+          ],
+          "rowKeys": [
+            "f8330ac564e879edfb71ce6657578f3e06a74bdd3f03b473fa636fd714fe8d41"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:cr4.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "cr4.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR4"
+          ],
+          "rowKeys": [
+            "3e0d58f39adde0bdca0393b7a769e6b508a2b9cfe393fb681272f1279d53b506"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:cr5.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "cr5.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR5"
+          ],
+          "rowKeys": [
+            "74f8d4eb68c3c602a5fac364f3d45a8e76dc8403cfd5729cea8f2576c5f4136f"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:cr6.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "cr6.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "CR6"
+          ],
+          "rowKeys": [
+            "fff3f3216e8d969ac047332eb09131a38c27555e0d86b01f4a7e864bd032d3f8"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn01.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn01.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN01"
+          ],
+          "rowKeys": [
+            "6b800832f51bc6f8a30e382e99f44ed9f2445d4007b99fad5f6c0044256344d6"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn02.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn02.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN02"
+          ],
+          "rowKeys": [
+            "27e054020082cf9755bea09a3089af88c38512f4f967ed6bf707c1250e06e7fb"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn03.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn03.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN03"
+          ],
+          "rowKeys": [
+            "e3aae6b6651f037a1eba734663c9c6c92f737140d8eaa38d30723d049c0c3e53"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn04.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn04.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN04"
+          ],
+          "rowKeys": [
+            "17faa27ac04bc303148ccdb36f7c059adfe6d50555ba75657f5a0756472e0057"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn05.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn05.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN05"
+          ],
+          "rowKeys": [
+            "078d1239abcc87d7dc0458e3ed39662001eaec1fa18068c06dc841a5df396b3b"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn06.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn06.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN06"
+          ],
+          "rowKeys": [
+            "e34f6a044923f895a1dadc0aa5fa67b1d42d22fc2506428593d738ecb1fcc862"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn07.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn07.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN07"
+          ],
+          "rowKeys": [
+            "cf76b294418f05be17a4034783a6807fc7ba3893da70e704a53b68ff2b41e01e"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn08.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn08.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN08"
+          ],
+          "rowKeys": [
+            "cef3397b3a157b41dd860dc7ed755c039def04276e5e4126919ec6ae08aea58b"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn09.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn09.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN09"
+          ],
+          "rowKeys": [
+            "da6476557eee22799babe2f73138fcdf5b32fc6a8f917ebc8fc6bbc9e5b1398c"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn10.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn10.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN10"
+          ],
+          "rowKeys": [
+            "672515b03e7d511565a68926c9ffb862941f5094a19a24b513e0bd9ee03d156e"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn11.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn11.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN11"
+          ],
+          "rowKeys": [
+            "32c35d9e7ae0c51d0844353e9ab79fd7c4ccbe47748c85eb5398710f49b3f278"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn12.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn12.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN12"
+          ],
+          "rowKeys": [
+            "3f932c4592bf7cc2c4ee7925c29a9b8d48dc7a1394d9400db557137cae407602"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn13.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn13.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN13"
+          ],
+          "rowKeys": [
+            "e96a845f719b6c656121c3c8afaa8eff92c40a2211e6b5edc844fea91cbf78d0"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn14.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn14.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN14"
+          ],
+          "rowKeys": [
+            "a799d901276530b53788adcd74301be6c45bbadf67e0355952f90c5a87689ec8"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn15.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn15.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN15"
+          ],
+          "rowKeys": [
+            "d2b98badacb79c905faa7513bed5b8cd511408556984356738b110659a8b25c5"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        },
+        {
+          "key": "NEWURBAN:smudge:burn16.shp:unresolved",
+          "theater": "NEWURBAN",
+          "kind": "smudge",
+          "member": "burn16.shp",
+          "decisions": [
+            "UNSUPPORTED_OR_UNRESOLVED_DEPENDENCY"
+          ],
+          "identities": [
+            "BURN16"
+          ],
+          "rowKeys": [
+            "60e5172b49fb923ebbad6b86b903f5be69991a706f75a38aa028a3ddd9317f7b"
+          ],
+          "maps": [
+            "yr:fight.map",
+            "yr:downtown.map",
+            "yr:groundze.map",
+            "yr:manhatta.map",
+            "yr:rushhr.map",
+            "yr:groundzemw.map",
+            "yr:austintx.map",
+            "yr:turfwar.map"
+          ]
+        }
+      ]
+    }
+  ],
+  "mainIntegration": "NOT_PERFORMED",
+  "review": {
+    "file": "/Users/Aone/Desktop/M2.4-Review-Desert-Final-Buildings-Batch86-20261020/M2.4-Desert-Final-Buildings-Batch86-Embedded.html",
+    "sha256": "1b5310a82bbe379c1c239c98bf97f323564d3193256277c3796af90070482d9c",
+    "bytes": 137510526
+  },
+  "macApp": {
+    "file": ".artifacts/m2-4/desert-final-buildings-batch86-20261020/active-stage-v1.json",
+    "sha256": "4ba179490a9ab97741742650b596d4220baa5d0b6b66d8a04aef8f5e3207da2e",
+    "bytes": 1105
+  }
+}

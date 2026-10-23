@@ -1,0 +1,759 @@
+{
+  "schema": "m2-4-urban-batch49-handoff-v1",
+  "status": "USER_ACCEPTED_ALL_12_NEW_RUBBLE_STATES_MAC_PASS",
+  "userFeedback": {
+    "batch47": "ACCEPTED_ALL_25_PROP_FAMILIES",
+    "batch49": "ACCEPTED_ALL_12_NEW_RUBBLE_STATES"
+  },
+  "sourceBranch": "task/m2-4-all-skirmish-theaters",
+  "runtimeSourceHead": "91b100247380f49cdc4e0250812d611f158bab44",
+  "mainHead": "748d0998aaf663acda8807c158155bf0a5bb157b",
+  "mainCleanAndUnchanged": true,
+  "selectedEnvironment": {
+    "schemaVersion": 1,
+    "revision": "urban-environment-m2-4-civilian-rubble-v1",
+    "sha256": "7226eb0cd3267cbb67256ad654052e0ee3a579e04e5c4b6c09db57b8308876ec"
+  },
+  "selectedTerrain": {
+    "schemaVersion": 1,
+    "revision": "urban-m2-4-structures-r14e",
+    "sha256": "d2cfbfc964d7ff4173468df90be55c3e5f589afe00e6e440acfc4fabe4399749"
+  },
+  "families": [
+    "urban-cachig01",
+    "urban-cachig02",
+    "urban-camiam01",
+    "urban-canewy16",
+    "urban-castl01",
+    "urban-castl02",
+    "urban-castl03",
+    "urban-catexs03",
+    "urban-catexs04",
+    "urban-catexs06",
+    "urban-catexs07",
+    "urban-catexs08"
+  ],
+  "counts": {
+    "completeNewFamilies": 12,
+    "members": 12,
+    "newRubbleStates": 12,
+    "reusedAcceptedBodyStates": 36,
+    "densityFrames": 96,
+    "exactCopiedDensityFrames": 72,
+    "newAuthoredDensityFrames": 24,
+    "priorFamiliesPreserved": 135,
+    "selectedFamilies": 147,
+    "selectedPayloadFiles": 1205,
+    "patchPayloadFiles": 81,
+    "macFullStateCases": 24,
+    "yrActualFamilyBindings": 12,
+    "reviewEmbeddedImages": 60,
+    "reviewScenes": 4,
+    "reviewNewStateRows": 12
+  },
+  "coveredMapEntries": [
+    "ra2:mp29mw.map",
+    "ra2:mp29u2.map",
+    "ra2:mp29u4.map@c3f4f1c670fe",
+    "ra2:mp33u4.map",
+    "ra2:mp34u4.map",
+    "yr:hillbtwn.map",
+    "yr:mp29mw.map@f54919acf9ee",
+    "yr:mp29u2.map@0bc3e5c05954",
+    "yr:mp29u4.map@c3f4f1c670fe",
+    "yr:mp33u4.map@527f6765e21a",
+    "yr:mp34u4.map@a11379d07d0e",
+    "yr:xarena.map",
+    "yr:xbarrel.map",
+    "yr:xbayopigs.map",
+    "yr:xbermuda.map",
+    "yr:xeb1.map",
+    "yr:xeb1mw.map",
+    "yr:xgoldst.map",
+    "yr:xinvasion.map",
+    "yr:xkaliforn.map",
+    "yr:xmp29mw.map",
+    "yr:xmp29u2.map",
+    "yr:xmp33u4.map",
+    "yr:xmp34u4.map",
+    "yr:xoceansid.map",
+    "yr:xpowdrkeg.map",
+    "yr:xrockets.map"
+  ],
+  "sourceContract": {
+    "file": ".artifacts/m2-4/urban-building-rubble-native-batch49-v1/contract.json",
+    "sha256": "73e8d1c68027dccc02db8ce3e6449eb6007c8f3bd45665562c4023e2550ccd27",
+    "bytes": 25424
+  },
+  "preparedSource": {
+    "file": ".artifacts/m2-4/urban-building-rubble-native-batch49-v1/source.json",
+    "sha256": "277e284bf85fd7165f8df2c46ef145085bed01923c9a45386ad56bc0b4bff086",
+    "bytes": 161512
+  },
+  "bodyReuseProof": {
+    "file": ".artifacts/m2-4/urban-civilians-native-batch49-v1/temperate-body-reuse-v2.json",
+    "sha256": "37687d660dcc1b8911001023b8410f94c8936842b3cd98a1c80e809f5d69ec46",
+    "bytes": 196832
+  },
+  "materialProfile": {
+    "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/material-profile-v3.json",
+    "sha256": "f5d5b27fb2c0a35ac862490fd3d41932797d1d82e5bb4d1ea7f57c58cf167292",
+    "bytes": 16436
+  },
+  "authoring": {
+    "mode": "built-in imagegen",
+    "jobs": {
+      "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/imagegen-jobs-v1.json",
+      "sha256": "6e334964cc3d3db0964ba2b3b0ff99cadf4ce85b8ee948a18b3649858827ea7d",
+      "bytes": 12793
+    },
+    "masters": [
+      {
+        "master": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-01-master.png",
+          "sha256": "8d3c84b9d868d5968a432086e961d6fca8629c00be329964206606936b6bf55d",
+          "bytes": 1845999
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-01-imagegen.json",
+          "sha256": "6251a0998e33307f01ec7d5cca88d62633f238da1a5e238120952768f84b5814",
+          "bytes": 2373
+        },
+        "capacity": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-01-capacity-v1.json",
+          "sha256": "23b7ebc2a1087813a957df0655b4436d779d21dd2a09778cbff2ae47ec4d05f4",
+          "bytes": 730
+        },
+        "minimumAuthoredDensity": 5.6875
+      },
+      {
+        "master": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-02-master.png",
+          "sha256": "ecb102d4d7f76cba1e0d885e104b88c5218d510f815e4697bc738fc78441386f",
+          "bytes": 2138759
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-02-imagegen.json",
+          "sha256": "9fea5094631048a0c7107a0175dcfa1760171a037faf49b2266d661488cbff7d",
+          "bytes": 2373
+        },
+        "capacity": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-02-capacity-v1.json",
+          "sha256": "ef86f82ff998a05675bf97a2c161c6265fa331cccab489bcfcb86e50cb6e7274",
+          "bytes": 738
+        },
+        "minimumAuthoredDensity": 7.26797385620915
+      },
+      {
+        "master": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-03-master.png",
+          "sha256": "739d430e828e23b2fa3180be2539dd6f2c11c68287d7362663166c28abb3a3f2",
+          "bytes": 1806666
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-03-imagegen.json",
+          "sha256": "ca20c800352c8e5d6c62900b99bbe70583b76f3f174eb988d5a65c310abdbbef",
+          "bytes": 2373
+        },
+        "capacity": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-03-capacity-v1.json",
+          "sha256": "f9ba65c5ec5886024e7c5c16c59747c9c46edc8eb7915063434a06ba7aac90cb",
+          "bytes": 739
+        },
+        "minimumAuthoredDensity": 7.658064516129032
+      },
+      {
+        "master": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-04-master.png",
+          "sha256": "29aa5db6b2435b91e694992bdff965815322acac45ac186b2ec27219cce38208",
+          "bytes": 1496014
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-04-imagegen.json",
+          "sha256": "8b779e6e37d1f3ee79ef50a21293a3ba7f972b004a2a39ac198485c29061458c",
+          "bytes": 2373
+        },
+        "capacity": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-04-capacity-v1.json",
+          "sha256": "f2b621398278a82bba8634d0a5ca200386a35ab0d7188e11cc4d8b98b414c2e9",
+          "bytes": 741
+        },
+        "minimumAuthoredDensity": 7.2272727272727275
+      },
+      {
+        "master": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-05-master.png",
+          "sha256": "939062481f33c8139c0409df859eaff9196dfb73e1980afe419b8e536d2ed527",
+          "bytes": 2220662
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-05-imagegen.json",
+          "sha256": "f351b496633bbed31c98f24a2b618b297d0a96b2e19d0f492a44b07177b98853",
+          "bytes": 2369
+        },
+        "capacity": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-05-capacity-v1.json",
+          "sha256": "ae5ba12501132725ae57d5db3df0c93f75a64b0f7e440d18077e15c5712856bc",
+          "bytes": 737
+        },
+        "minimumAuthoredDensity": 5.988505747126437
+      },
+      {
+        "master": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-06-master.png",
+          "sha256": "50a52f036cd51b5ab3d3f6df7642230b7d6fa523f7e62f0828d4da223c6311e3",
+          "bytes": 1766828
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-06-imagegen.json",
+          "sha256": "b963e0c2b766ccfe6ddd572a05357e9205c815490d25e0931d3c35f15994a2bc",
+          "bytes": 2371
+        },
+        "capacity": {
+          "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/urban-rubble-1x2-06-capacity-v1.json",
+          "sha256": "c08354e9e41d31fad4535cce57e3fcc741479f098d72a8988ed089212882da36",
+          "bytes": 741
+        },
+        "minimumAuthoredDensity": 5.7988505747126435
+      }
+    ],
+    "minimumAuthoredDensity": 5.6875
+  },
+  "verification": {
+    "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/verify-r3.json",
+    "sha256": "dc5a895c41b1a493873ee592a3af5b28e34f5a10f57f4b3384fe60fb4bf53113",
+    "bytes": 1016
+  },
+  "nativeClosure": {
+    "file": ".artifacts/m2-4/urban-rubble-batch49-v1/native-closure.json",
+    "sha256": "c95053d4bb56f54fcac677661e113c5502767ceed302434ffb34b4bea0ab211b",
+    "bytes": 13131
+  },
+  "yrClosure": {
+    "file": ".artifacts/m2-4/urban-rubble-batch49-v1/yr-native-closure.json",
+    "sha256": "f2e3b715e4a383aa267bd291367ca100d74ecc78311fab026c18cd0094890a76",
+    "bytes": 6134
+  },
+  "sourceCoverageDelta": {
+    "file": ".artifacts/m2-4/urban-rubble-batch49-v1/coverage-delta.json",
+    "sha256": "e2d2aa7a9cf0d5e8d1849f3dc41fb4e0b95eefe3674416120295ed9ef7d7c8c6",
+    "bytes": 115543
+  },
+  "resourceHandoff": {
+    "patchRoot": ".local/environment-packs/urban-civilian-rubble-m2-4-r3",
+    "selectedRoot": ".local/environment-packs/urban-environment-m2-4-civilian-rubble-v1",
+    "ignoredResourcesExplicitlyIncluded": true,
+    "patchFiles": [
+      {
+        "path": "manifest.json",
+        "sha256": "ca8f43a4c9b1377232d1faf915df5291ce7b974dc634a480f408c2c543aa7b28",
+        "bytes": 3210
+      },
+      {
+        "path": "members/cuchig01-shp/2/p0/base.png",
+        "sha256": "4076356ab42c8e5f1ca4bb779455ad68349a6a9c76f369feb7303ee98c39fa51",
+        "bytes": 710849
+      },
+      {
+        "path": "members/cuchig01-shp/2/p0/data.png",
+        "sha256": "bb24d9acaf7489ca2d35500b0aa611cd0697c53fdb293ac824b3010d9ee7a9e3",
+        "bytes": 7593
+      },
+      {
+        "path": "members/cuchig01-shp/4/p0/base.png",
+        "sha256": "6baaaaf30af3db926afc3f2221f2a866587a10a058254b164a72692fbdaa631f",
+        "bytes": 1610750
+      },
+      {
+        "path": "members/cuchig01-shp/4/p0/data.png",
+        "sha256": "6d0acf308c16f296e51786d56c65668b985228748822f193b4dd996db5a83863",
+        "bytes": 6784
+      },
+      {
+        "path": "members/cuchig01-shp/4/p1/base.png",
+        "sha256": "558802a89a3f674b2f1bf2fe29579bef5166b714858a3ecb4fe02f34027ff10c",
+        "bytes": 1072909
+      },
+      {
+        "path": "members/cuchig01-shp/4/p1/data.png",
+        "sha256": "797b1d1f2072c484db4212befc5e3c1482b98bb1dd6935fbef689718e3cba666",
+        "bytes": 11531
+      },
+      {
+        "path": "members/cuchig01-shp/manifest.json",
+        "sha256": "d4eb93c8decca5e3e5accd019c96380ac380acd99fb2a0602779b23020ca7c01",
+        "bytes": 4608
+      },
+      {
+        "path": "members/cuchig02-shp/2/p0/base.png",
+        "sha256": "a74f87d2d9268b8a2b5580cbf4d3451b267233e5fa9e9059e84702e86000e2b5",
+        "bytes": 682599
+      },
+      {
+        "path": "members/cuchig02-shp/2/p0/data.png",
+        "sha256": "359a121ce1dc99e57c9ede15856edbf7e9c117716c35b15ac4ba0906fd833f5a",
+        "bytes": 7197
+      },
+      {
+        "path": "members/cuchig02-shp/4/p0/base.png",
+        "sha256": "ceb171ea3bdfca5ca618267027706e104fe6346bfc31f9018adcfe9ebde5fac0",
+        "bytes": 1568325
+      },
+      {
+        "path": "members/cuchig02-shp/4/p0/data.png",
+        "sha256": "eddcfd57fc2776bb0463751bbb40ea90b03f5539b9021dc2d5b1474f8acb9abb",
+        "bytes": 6821
+      },
+      {
+        "path": "members/cuchig02-shp/4/p1/base.png",
+        "sha256": "16e1595cf5ff2bc96e7e28aaf652e520c22e020f1978816a067e5db3002fd6eb",
+        "bytes": 1045650
+      },
+      {
+        "path": "members/cuchig02-shp/4/p1/data.png",
+        "sha256": "71b381861f280c39cb2685710b556d3cee29962d5a5c68343c12493e6aff11a0",
+        "bytes": 10278
+      },
+      {
+        "path": "members/cuchig02-shp/manifest.json",
+        "sha256": "4479e7bb307c2e6a56c62a96958fbf6d6b0d52a3ea79fecf84b16b28f972941c",
+        "bytes": 4607
+      },
+      {
+        "path": "members/cumiam01-shp/2/p0/base.png",
+        "sha256": "d2944aa3eb7f3776b52dbd568e36027d524d8f918f9c887d854265f178f167b7",
+        "bytes": 1008567
+      },
+      {
+        "path": "members/cumiam01-shp/2/p0/data.png",
+        "sha256": "794ba77ffebff2274d1c873aae277f4b3ac030b1af903b2131754989badd1f26",
+        "bytes": 18098
+      },
+      {
+        "path": "members/cumiam01-shp/4/p0/base.png",
+        "sha256": "ec68f8fb95354b98a82f9d082248f67b2b45799edc09756a82a67970012913d8",
+        "bytes": 2250365
+      },
+      {
+        "path": "members/cumiam01-shp/4/p0/data.png",
+        "sha256": "ea70c8c81ab21f87fef97138465a98a73b8b0f3be5690ab220d53937c01d62b3",
+        "bytes": 19549
+      },
+      {
+        "path": "members/cumiam01-shp/4/p1/base.png",
+        "sha256": "f76e44f28882975bdb841140e590ca420cb4993937dd7dfacb0017439bc31941",
+        "bytes": 1408902
+      },
+      {
+        "path": "members/cumiam01-shp/4/p1/data.png",
+        "sha256": "7b6f5d6f00990c82c4fdd2afb5cbc21d8b219743b6587446489f5c4c6ab10c22",
+        "bytes": 17780
+      },
+      {
+        "path": "members/cumiam01-shp/manifest.json",
+        "sha256": "903a9a08b8a3f46687273b2f12ded70ca86a3fdc3d336e9502b8e252511a512d",
+        "bytes": 4600
+      },
+      {
+        "path": "members/cunewy16-shp/2/p0/base.png",
+        "sha256": "4a75bb394715c793f519e538e3180227f59b94feeb37d0aea5126c1c02daaf73",
+        "bytes": 698701
+      },
+      {
+        "path": "members/cunewy16-shp/2/p0/data.png",
+        "sha256": "c85c1d978357f1a6b9f6dcf3f95982dfdb316a85343a69905cb2796114aeaee1",
+        "bytes": 11638
+      },
+      {
+        "path": "members/cunewy16-shp/4/p0/base.png",
+        "sha256": "e1ed1c6eb6ae579cce219c8c33db2ff87d8d20f861bea7166a1040ea44d4060e",
+        "bytes": 1601804
+      },
+      {
+        "path": "members/cunewy16-shp/4/p0/data.png",
+        "sha256": "0048bf19966868410ca98c45dd03504c120b361fe6251395fe8aec8412b24ceb",
+        "bytes": 15507
+      },
+      {
+        "path": "members/cunewy16-shp/4/p1/base.png",
+        "sha256": "8c38ed9cae27d4bf9570c44d854ad259893cd02e491fb5f4f2faaff5eeeef34d",
+        "bytes": 1011410
+      },
+      {
+        "path": "members/cunewy16-shp/4/p1/data.png",
+        "sha256": "1ccfcf2f8b8f32139ef7e494311026e0571d99b5180bdf54c539980a40044364",
+        "bytes": 12559
+      },
+      {
+        "path": "members/cunewy16-shp/manifest.json",
+        "sha256": "6c568efab14906e5491e4e9f5bbf4a069974003d7d1123d5ef08267398952d10",
+        "bytes": 4601
+      },
+      {
+        "path": "members/custl01-shp/2/p0/base.png",
+        "sha256": "54373a62226076e22a6e32bc5b856bb2f12eaa7fdb4f863f5c4f45cf4fe4c209",
+        "bytes": 700314
+      },
+      {
+        "path": "members/custl01-shp/2/p0/data.png",
+        "sha256": "8bf7089472dc77ea2c587243aa143ee6b80a1bb8b61c77d260227cc2b3a1ce59",
+        "bytes": 7504
+      },
+      {
+        "path": "members/custl01-shp/4/p0/base.png",
+        "sha256": "f7c71ee7a9639e28736089d06c31d81692bc3815df33dc49c162490896c3de66",
+        "bytes": 1441464
+      },
+      {
+        "path": "members/custl01-shp/4/p0/data.png",
+        "sha256": "6e8c2530cc91b6b88ea6e56ecaf40b269e0b82289a6338d64c871c7e8200fcb8",
+        "bytes": 6639
+      },
+      {
+        "path": "members/custl01-shp/4/p1/base.png",
+        "sha256": "063d38352f8362119225ee602852531b6c61d92738b7cc138e1d50468157635f",
+        "bytes": 1168227
+      },
+      {
+        "path": "members/custl01-shp/4/p1/data.png",
+        "sha256": "ef4fa1fddb9851305a746c59e6eb5b03b5bc1a011d9df54ff838b94164a65b3d",
+        "bytes": 10646
+      },
+      {
+        "path": "members/custl01-shp/manifest.json",
+        "sha256": "278497965ee83d20e51ec571e7526eb925395eb17ba1d796a8be10aa76c2bd6c",
+        "bytes": 4598
+      },
+      {
+        "path": "members/custl02-shp/2/p0/base.png",
+        "sha256": "4b00d3c0d3ce0ca86aa1bad3c02da039227446c3fdc5b8eaed4ab723508f63b3",
+        "bytes": 656535
+      },
+      {
+        "path": "members/custl02-shp/2/p0/data.png",
+        "sha256": "98265ee6ee97a6f5fd7dc22a845fca19c44a92082cd3f0cf3eb954a0bdff4812",
+        "bytes": 8299
+      },
+      {
+        "path": "members/custl02-shp/4/p0/base.png",
+        "sha256": "3778722594bb432bbdf75f8bacbb76f7397ac01fe79c21a2ca8d1627c2b36819",
+        "bytes": 1306463
+      },
+      {
+        "path": "members/custl02-shp/4/p0/data.png",
+        "sha256": "3c16ded1ecfe8673016fa691da3862324e1332207122f3bd2fed31cf11e53e50",
+        "bytes": 6561
+      },
+      {
+        "path": "members/custl02-shp/4/p1/base.png",
+        "sha256": "1938c7434e887a1f4e3ad764cb4eea484c3813a0c4466e1ffd68e27d53864e36",
+        "bytes": 1116613
+      },
+      {
+        "path": "members/custl02-shp/4/p1/data.png",
+        "sha256": "bf44b62fa30433bc4bb52bb66d547694999ec48cd0b69f09791d64f6e59e7305",
+        "bytes": 12367
+      },
+      {
+        "path": "members/custl02-shp/manifest.json",
+        "sha256": "885735fc27e7cdebb072ee9f286c1acad7bcc3eff70de973d4bc4ce15e331b00",
+        "bytes": 4601
+      },
+      {
+        "path": "members/custl03-shp/2/p0/base.png",
+        "sha256": "122c1726185922ca62cc7559a3223e99f9b4001346d45ee07f5483bee7a9db72",
+        "bytes": 648686
+      },
+      {
+        "path": "members/custl03-shp/2/p0/data.png",
+        "sha256": "2483400bc08e19422883fb642433943bde75f2c4d80b10232e720c5e9b7a892e",
+        "bytes": 10789
+      },
+      {
+        "path": "members/custl03-shp/4/p0/base.png",
+        "sha256": "25af469c64ed2324f33074117fbe17d71db66184bd2751c3f824189459cda796",
+        "bytes": 2041785
+      },
+      {
+        "path": "members/custl03-shp/4/p0/data.png",
+        "sha256": "2955dfaedce8f86c5f34ea5428bb7b345f5a3399e4bb4c347c41105296aae5d7",
+        "bytes": 20634
+      },
+      {
+        "path": "members/custl03-shp/4/p1/base.png",
+        "sha256": "55f9dc938a67051f09b71a3b517621d256d505500f7aca8ce9005a52e84ac600",
+        "bytes": 388689
+      },
+      {
+        "path": "members/custl03-shp/4/p1/data.png",
+        "sha256": "689de991797913fc2580b6be7ee80f48770222ef92876d4f228e631a3c0791ea",
+        "bytes": 1784
+      },
+      {
+        "path": "members/custl03-shp/manifest.json",
+        "sha256": "d5e79689f247814d997f26c0737995ed88152c80cc935baeea01ee10b47bd209",
+        "bytes": 4600
+      },
+      {
+        "path": "members/cutexs03-shp/2/p0/base.png",
+        "sha256": "6022f1a60598794fe56c804e6e8df40f1ab56471301373c5f796b6515709e7f6",
+        "bytes": 975740
+      },
+      {
+        "path": "members/cutexs03-shp/2/p0/data.png",
+        "sha256": "8a19573e66104b15000bac3278cbaa681f23a474ce14973fa6455ffaeb4cd657",
+        "bytes": 26036
+      },
+      {
+        "path": "members/cutexs03-shp/4/p0/base.png",
+        "sha256": "577372e322ea1f1f44727c313ec015167851ba8f08d91ff9a2fdfdc47b168596",
+        "bytes": 2033250
+      },
+      {
+        "path": "members/cutexs03-shp/4/p0/data.png",
+        "sha256": "68da4cae92dd23e31096a52ca1de5cb012ab6820ef5528a595fd5ca2d1514d39",
+        "bytes": 9189
+      },
+      {
+        "path": "members/cutexs03-shp/4/p1/base.png",
+        "sha256": "9a8759e77b6fdabe6b8675259beefcfeca1941ebe234818a78c5dcb380a214dd",
+        "bytes": 1561183
+      },
+      {
+        "path": "members/cutexs03-shp/4/p1/data.png",
+        "sha256": "6326d3e0456467f9aa16103afd0a8595ceb4906c13cda42637f9f49efae605a6",
+        "bytes": 44050
+      },
+      {
+        "path": "members/cutexs03-shp/manifest.json",
+        "sha256": "76f9c79b595a248f47c77aa9fb501521e35292397dd83a78a5ab059a59379dbb",
+        "bytes": 4611
+      },
+      {
+        "path": "members/cutexs04-shp/2/p0/base.png",
+        "sha256": "04ba3260b2fe3b0b113dd6b6d8e417d2f8f9a972b5c1c9100c1684759c6c3dc4",
+        "bytes": 950368
+      },
+      {
+        "path": "members/cutexs04-shp/2/p0/data.png",
+        "sha256": "a1fd2c8881783708b11ff2905c35633621c6187fc76099d6e1e9ca462527fa04",
+        "bytes": 25817
+      },
+      {
+        "path": "members/cutexs04-shp/4/p0/base.png",
+        "sha256": "ad941e70d725f40315925b22a7b9e319b06aac1a0710be332f0d0f637accf7b0",
+        "bytes": 2016474
+      },
+      {
+        "path": "members/cutexs04-shp/4/p0/data.png",
+        "sha256": "4eef81ff6b8205a0a7fd8a92818901721ba4ded451f73d1c82a829dce3c7300f",
+        "bytes": 8943
+      },
+      {
+        "path": "members/cutexs04-shp/4/p1/base.png",
+        "sha256": "db22a85478da6d22839e4ba814f398f7818f81f3637988e23a5435de5be230db",
+        "bytes": 1573731
+      },
+      {
+        "path": "members/cutexs04-shp/4/p1/data.png",
+        "sha256": "fafdea011d84f74174b04e95caffe2407c969d9c9725efda713507d018d172fc",
+        "bytes": 42252
+      },
+      {
+        "path": "members/cutexs04-shp/manifest.json",
+        "sha256": "8ea947fdc5779a2cd8b6fa479c2a50831622fe552b03eaa075416ba4692f517b",
+        "bytes": 4603
+      },
+      {
+        "path": "members/cutexs06-shp/2/p0/base.png",
+        "sha256": "3c62ca769b353b998695d23ebd982c568c3350084274bcb629e8f0628ae0d815",
+        "bytes": 456897
+      },
+      {
+        "path": "members/cutexs06-shp/2/p0/data.png",
+        "sha256": "a84a605e71ae27e5f126dca620e4a0b7cab31c26a575e0effa3d1e21a5dbed4b",
+        "bytes": 12314
+      },
+      {
+        "path": "members/cutexs06-shp/4/p0/base.png",
+        "sha256": "92f188c69de4f65979c9a90708520170c9b0036cb4b96bd06869800864819574",
+        "bytes": 1691407
+      },
+      {
+        "path": "members/cutexs06-shp/4/p0/data.png",
+        "sha256": "2b200ed65a3d8933aedbb5f1cded9d0eed9f26e8bab41c926ce9b879ca72fa0f",
+        "bytes": 23731
+      },
+      {
+        "path": "members/cutexs06-shp/manifest.json",
+        "sha256": "121197c6fce81f5533557d09f992b37c6281c4d9ab6b7326377d3f6e509f703d",
+        "bytes": 4335
+      },
+      {
+        "path": "members/cutexs07-shp/2/p0/base.png",
+        "sha256": "24c9b54574f9d2bb264eef2d38bc3f4a2ad5eb59b17bcfa3ba956e8631bebfa8",
+        "bytes": 589168
+      },
+      {
+        "path": "members/cutexs07-shp/2/p0/data.png",
+        "sha256": "569f00988710cf1971684a06361619cb9ddb90849a405c4cd8acf5ad39805c0a",
+        "bytes": 15283
+      },
+      {
+        "path": "members/cutexs07-shp/4/p0/base.png",
+        "sha256": "3c97da7eb78afa05fd51e98cb0f167dbf26f9cd80966a226afb945660be76e7e",
+        "bytes": 1923653
+      },
+      {
+        "path": "members/cutexs07-shp/4/p0/data.png",
+        "sha256": "b86a88f2b378695bc2d8fa85b33217d79b4a207adefbe658f22d13f7979cb57c",
+        "bytes": 28759
+      },
+      {
+        "path": "members/cutexs07-shp/4/p1/base.png",
+        "sha256": "e4e836bcf1d084c056f776cd4795b04317aba9c7da89fd49aaf145b1fb7919ed",
+        "bytes": 276486
+      },
+      {
+        "path": "members/cutexs07-shp/4/p1/data.png",
+        "sha256": "66e0956b88d0945aa19d3e93e38c160b9335cc051ce74418d6f3fceeee4dc521",
+        "bytes": 1707
+      },
+      {
+        "path": "members/cutexs07-shp/manifest.json",
+        "sha256": "3a37c4517020aba2de59d91a21f1565fba988ebd36ff1aa60c04b28035def4b3",
+        "bytes": 4599
+      },
+      {
+        "path": "members/cutexs08-shp/2/p0/base.png",
+        "sha256": "cd1e3d6c9af1c9c2843e80dcda6d7aff13421ae17ba52e9b0a43790735a0d51b",
+        "bytes": 401083
+      },
+      {
+        "path": "members/cutexs08-shp/2/p0/data.png",
+        "sha256": "8982acc461370e205157ccb25ff24bd051afc0ea2ce41438863a81e58ecdade0",
+        "bytes": 10105
+      },
+      {
+        "path": "members/cutexs08-shp/4/p0/base.png",
+        "sha256": "3aa6fe2c42899a23dbc31c6ae24813c9e0e3a91d6d67b70ba5fa6528a8a8f760",
+        "bytes": 1473240
+      },
+      {
+        "path": "members/cutexs08-shp/4/p0/data.png",
+        "sha256": "acdfc562dcb1875d2b3770f4a45eed87bc8abe93a313c2a149f09f1063507a69",
+        "bytes": 19861
+      },
+      {
+        "path": "members/cutexs08-shp/manifest.json",
+        "sha256": "2df88e4db384ddc9fdab0d54203d03f9e3d6ac42d682f1c9a53c3e78374a34ed",
+        "bytes": 4333
+      }
+    ],
+    "assembly": {
+      "file": ".artifacts/m2-4/urban-building-rubble-native-batch49-v1/assembly-v1.json",
+      "sha256": "e6a0e92acbc292e607f5e910bc27ea0b40b7a25e13758d2cb92dcf40a78860a0",
+      "bytes": 134626
+    },
+    "selectedManifest": {
+      "file": ".local/environment-packs/urban-environment-m2-4-civilian-rubble-v1/manifest.json",
+      "sha256": "7226eb0cd3267cbb67256ad654052e0ee3a579e04e5c4b6c09db57b8308876ec",
+      "bytes": 45930
+    },
+    "policy": "Append complete new families; every accepted prior payload preserved exactly. No transfer to main yet."
+  },
+  "checks": {
+    "loadingTests": {
+      "passCount": 24,
+      "assertions": 384,
+      "log": {
+        "file": ".artifacts/m2-4/urban-rubble-family-loading-tests-v1.log",
+        "sha256": "d031b8ea3f510a92bb019030a557c9c2d502d08486ab66ce956fc57b53148ee7",
+        "bytes": 2085
+      }
+    },
+    "contourTests": {
+      "passCount": 5,
+      "log": {
+        "file": ".artifacts/m2-4/urban-rubble-contour-tests-v1.log",
+        "sha256": "0e628cb3078fa3ef493bd5a6614aae5fc2e52bb11383774d0738b3c32af009c1",
+        "bytes": 103
+      }
+    },
+    "unchangedBinaryVerifierRegression": {
+      "file": ".artifacts/m2-4/urban-building-rubble-authoring-batch49-v1/verify-unchanged-props-regression.json",
+      "sha256": "ab7032a64043c254ad962775356424fbfd57ddd6f69bae4b5e50969061e44ed3",
+      "bytes": 1002
+    },
+    "typecheck": {
+      "file": ".artifacts/m2-4/urban-rubble-typecheck-v1.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+      "bytes": 39
+    },
+    "isolatedBuild": {
+      "file": ".artifacts/m2-4/build-urban-rubble-batch49-v1/identity.json",
+      "sha256": "87809a8d429f165d1bc2ed96e7ae02163079c310a02a475b7ab4f53269c61279",
+      "bytes": 31458
+    },
+    "stage": {
+      "file": ".artifacts/m2-4/urban-rubble-batch49-v1/active-stage.json",
+      "sha256": "07e8d506ce38509e7709835d69c4b95e3bac62749213c4f2be4ce8af6ee7da3e",
+      "bytes": 1095
+    }
+  },
+  "performance": {
+    "worldAllocationBytes": {
+      "2": 183799812,
+      "4": 694804600
+    },
+    "preparedPeakBytes": 108580412,
+    "budgetsBytes": {
+      "world2X": 536870912,
+      "world4X": 1342177280,
+      "preparedCPU": 134217728,
+      "ui": 16777216
+    },
+    "budgetsChanged": false
+  },
+  "review": {
+    "html": {
+      "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch49-20261015/M2.4-Urban-Batch49-Embedded.html",
+      "sha256": "7970f5b255e731673279414dc6a4451067ca92369fa72496a71cd7e72e525c1a",
+      "bytes": 134471123
+    },
+    "metadata": {
+      "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch49-20261015/M2.4-Urban-Batch49-Embedded.json",
+      "sha256": "5e2d45bd9572131a41cf36c8dea10fc0051e9ca1480f445d076182f5d374271b",
+      "bytes": 25169
+    },
+    "desktopQa": {
+      "file": ".artifacts/m2-4/urban-rubble-embedded-desktop-qa-v1/report.json",
+      "sha256": "2a2074dbbf5e6d524a7470cc3703192f915e4da930161981baf3e2d7ccd6c4c0",
+      "bytes": 2850
+    },
+    "delivery": "Embedded HTML and JSON only; no per-batch application copy",
+    "scope": "Only twelve new rubble states require user review; accepted normal, damaged and occupied artwork is reused unchanged.",
+    "userAcceptance": "ACCEPTED"
+  },
+  "diagnostics": {
+    "file": ".artifacts/m2-4/urban-rubble-batch49-v1/diagnostic-history.json",
+    "sha256": "b2c8d864d5913cec896f5e72954ed0345ce532c7f5deb0f8c98c86d44007837d",
+    "bytes": 1660
+  },
+  "remainingUrbanSourceGroups": 146,
+  "remainingByKind": {
+    "building": 136,
+    "infantry": 4,
+    "vehicle": 6
+  },
+  "nextPreflight": {
+    "file": ".artifacts/m2-4/urban-civilian-batch50-preflight-v1/source-reuse-queue.json",
+    "sha256": "a2fce859754c92373168eb437e97ec86fda11b51c012de1235539a4289b78137",
+    "bytes": 343719
+  },
+  "windows": "NOT_RUN",
+  "finalIndependentMacApplication": "PENDING_FULL_MILESTONE_COMPLETION",
+  "m24Complete": false,
+  "noPush": true,
+  "noMainMerge": true
+}

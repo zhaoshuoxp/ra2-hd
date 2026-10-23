@@ -1,0 +1,29 @@
+# M2.4 Snow production batch 12
+
+## Complete wooden bridge TMP group
+
+Batch 12 adds all twelve original set 73 wooden bridge TMP sources, including both orientations, water and land bridge heads, original intact and damaged variants, raised deck and support subtiles, and original snow ground footprints. It preserves the source maps, archives, indices, geometry, collision, shadows, and simulation. Bridge body overlay objects and their gameplay states remain separate unfinished resources.
+
+The frozen base is `snow-m2-4-production-batch11-v1`, SHA-256 `4ab0ada37cb3dc6fea5631d3148eb599dfa3fc97bec1ae4949fee3ba2fb4dfc9`. All 35 inherited groups and 629 members and their immutable atlases are exact. The new selected pack is `snow-m2-4-production-batch12-v1`, SHA-256 `c78e1951e99c134c1eadbefd4acf14f6ee1db589c4796725435064479c56fab9`. The new complete group contains 12 files and 160 nonempty subtiles. Its atlases allocate 15,450,112 bytes at 2X and 61,145,088 bytes at 4X. Cumulative coverage is 36 groups, 641 files, and 2,724 nonempty subtiles.
+
+## Source and production evidence
+
+Preparation reuses source-pinned inventory v6 and the original decoded Snow native sources, independently verifying 172 native paths. Bounded native source SHA-256 is `dabf8fe6111a86164156f2fc106b4548be3c0df2f136cc49818445bc894ca5fe`; bounded authoring source SHA-256 is `6221e5720054001742464e4fbee48999f47a228ca9e3ee23cd2f6c8bf2a4dcd0`. All twelve native layouts and reference boards match the earlier full staging exactly. The authoring folder copies 39 exact production inputs, eight versioned worklists, actual prompts and receipts, and the failed attempt. Twelve accepted independent mothers have minimum registered capacity 4.958333X. No generated mother is edited or enlarged to manufacture HD detail.
+
+The first `ovrpsb05a.sno` result omitted the original water footprint. Its raw SHA-256 `ff3dcb97ac87bec4c89d33fa99d52899cee398493f34eafed80c2d4dd3100cae`, actual receipt, and rejection reason are retained. The strengthened replacement restores the original water and full silhouette, SHA-256 `6380b7b77ce683134da4c5cb39f803278dd46db3f9c71e25ba16190ff2915b18`. Land-only bridge heads explicitly retain their original snow ground and grey shadow.
+
+The existing source-pinned bridge sea ownership profile gains a separate explicit `--wood-bridge` allowlist: `ovrpsb02.sno`, `ovrpsb02a.sno`, `ovrpsb05.sno`, and `ovrpsb05a.sno`. The runtime TMP decoder and drawable verify every original native RGBA and palette value. Masks select 19,901 visible level-zero main-layer dark sea pixels, excluding nonzero extra supports and raised decks. Unlisted land heads receive no sea correction. Steel and ice profiles retain their prior behavior and output bytes.
+
+## Incremental checks and remaining scope
+
+Both densities pass complete-file native metadata, alpha, placeholder, geometry, and composition checks for every new member. Original and HD 4X water-head and damaged land-head comparisons were inspected. Loading and atomic family fallback validation passes 68 tests with 1,188 assertions; four pinned mask tests and entry type checking pass. No renderer, Windows worker, cancellation, shader preparation, budget, or gameplay implementation is changed.
+
+The source-pinned incremental delta affects three official directory identities and leaves 246 Snow missing resource groups with zero TMP gaps. These remaining objects, animation, bridge overlay states, neutral buildings, resources, and ground marks stay explicit. Original YR `frstbite.map`, SHA-256 `48f67ff9ae3b78555d67fb94bcee781c764501ad7c32a4a657a2c3c53e6a110b`, has four real starts and is the packaged native bridge map. New batch visual status is `PENDING_USER_REVIEW`, Windows is `NOT_RUN`, and Snow and M2.4 are `INCOMPLETE`.
+
+## Independent Mac delivery
+
+Clean runtime/source checkpoint is `7025d3b`. Independent delivery `/Users/Aone/RA2remaster/M2.4-Snow-Batch12-Mac-20261011-v1` contains `RA2-HD-M2.4-Snow-Batch12/Red Alert 2 HD M2.4 Snow Batch 12.app`, complete sibling resources, and its own `M2.4-Review-Profile`. It copies 6,832 world files and 360 UI files, the full retail archive dependencies, and unchanged valid faction prepared data. All 14 framework links remain internal, with no external runtime dependency links.
+
+Fresh native 2X and 4X checks pass actual original Frostbite bridge placements and complete family bindings, with world allocations of 245,601,884 and 895,302,984 bytes against unchanged 512/1,280 MiB limits. Original fallback passes with zero terrain/environment world charge and zero GL errors. Three matching camera routes capture the wooden bridge group and two encountered accepted tree families. Actual native-scale 4X bridge-head display was inspected; bridge body overlays, nearby neutral buildings, and ore remain explicit unfinished resources. The fixture reveals the map and suspends AI for controlled binding checks; it does not establish full natural-match completion.
+
+`Review/index-embedded.html` contains 33 exact source PNGs without rescaling or external images. It is 54,622,181 bytes, SHA-256 `14a4b33eee011dfdc2bb8d4e498eb19c81ce72920d7325fd8641687cae0759a6`; native-size image and density-control UI verification passes without errors. The independent source handoff contains 274 files totaling 48,661,864 bytes, including all original native TMP/RGBA/palette inputs, mothers, actual receipts and prompts, failed production, masks, recipes, and validation evidence. Its manifest SHA-256 is `566e6bdc0cdac5f2b169df34634140a5f8914d614cadd4e6ddcab235d992087d`. Delivery validation passes, receipt SHA-256 `515313cafa47da38654dc13a7260d3c4c9f9a74237b824e29412629bbbbd7ac9`. No main integration, push, publication, or cleanup occurs. Visual acceptance remains pending and Windows remains untested.

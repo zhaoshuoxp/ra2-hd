@@ -1,0 +1,267 @@
+{
+  "schema": "m2-4-remaining-theater-direction-delivery-v1",
+  "status": "MAC_TECHNICAL_PASS_NEW_ART_USER_ACCEPTED",
+  "counts": {
+    "newFamilies": 13,
+    "newTerrainMembers": 224,
+    "newPlantMembers": 6,
+    "newSourceMembers": 230,
+    "densityFrames": 460,
+    "embeddedPngs": 541,
+    "selectedMothers": 28,
+    "rejectedRoadMothers": 2
+  },
+  "coverage": [
+    {
+      "theater": "NEWURBAN",
+      "directoryEntries": 8,
+      "uniqueMapSourceHashes": 8,
+      "originalModeLabelBindings": 9,
+      "unifiedSelectableEntries": 8,
+      "newTerrainMembers": 114,
+      "newPlantMembers": 3,
+      "remainingAuthoredGroups": 730,
+      "remainingByKind": {
+        "tmp": 500,
+        "terrain": 43,
+        "building": 147,
+        "vehicle": 0,
+        "infantry": 2,
+        "smudge": 24,
+        "overlay": 14,
+        "aircraft": 0
+      },
+      "originalParserIssues": 0,
+      "runtimeCaveat": "Rush Hour CIVP original owner mapping remains a separate unresolved issue"
+    },
+    {
+      "theater": "DESERT",
+      "directoryEntries": 13,
+      "uniqueMapSourceHashes": 13,
+      "originalModeLabelBindings": 14,
+      "unifiedSelectableEntries": 13,
+      "newTerrainMembers": 110,
+      "newPlantMembers": 3,
+      "remainingAuthoredGroups": 499,
+      "remainingByKind": {
+        "tmp": 366,
+        "terrain": 17,
+        "smudge": 15,
+        "overlay": 38,
+        "building": 63,
+        "infantry": 0,
+        "vehicle": 0,
+        "aircraft": 0
+      },
+      "originalParserIssues": 0,
+      "runtimeCaveat": "Rejected road mothers remain unselected; all four source roads stay Original"
+    }
+  ],
+  "nativeCases": [
+    {
+      "theater": "NEWURBAN",
+      "mode": "2x",
+      "report": {
+        "file": ".artifacts/m2-4/newurban-representative-native-batch64-v1/native-rush-2x-v1/report.json",
+        "sha256": "c5c1f154c187bc82078836a7ab0bde67ad8462765ac3cf70682e7615fd99be2f",
+        "bytes": 2376719
+      },
+      "worldBytes": 83105740,
+      "preparedPeakBytes": 45156556,
+      "terrainBindings": 4971,
+      "newPlantBindings": 72
+    },
+    {
+      "theater": "NEWURBAN",
+      "mode": "4x",
+      "report": {
+        "file": ".artifacts/m2-4/newurban-representative-native-batch64-v1/native-rush-4x-v1/report.json",
+        "sha256": "67e700923a98dc6fe97f9d78578d5baf8baa6563e8925b12a3bb9fa62cadb1af",
+        "bytes": 3976418
+      },
+      "worldBytes": 305435824,
+      "preparedPeakBytes": 108112788,
+      "terrainBindings": 4971,
+      "newPlantBindings": 72,
+      "originalResetAndCrossTheaterRelease": "PASS"
+    },
+    {
+      "theater": "NEWURBAN",
+      "mode": "original",
+      "report": {
+        "file": ".artifacts/m2-4/newurban-representative-native-batch64-v1/native-rush-original-v1/report.json",
+        "sha256": "c85b80b60c713d63da116b9adcbb317decbbb1caf0a3be697eb886d95eba581e",
+        "bytes": 3364
+      }
+    },
+    {
+      "theater": "DESERT",
+      "mode": "2x",
+      "report": {
+        "file": ".artifacts/m2-4/desert-representative-native-batch65-v1/native-dune-2x-v1/report.json",
+        "sha256": "2a4af1e7169d0c373d59388e7a3f6d1ffc53f5a5f4b20c07072426e75ecfb8a7",
+        "bytes": 667603
+      },
+      "worldBytes": 71189152,
+      "preparedPeakBytes": 45156556,
+      "terrainBindings": 1310,
+      "newPlantBindings": 23
+    },
+    {
+      "theater": "DESERT",
+      "mode": "4x",
+      "report": {
+        "file": ".artifacts/m2-4/desert-representative-native-batch65-v1/native-dune-4x-v1/report.json",
+        "sha256": "f05e404ec9be4ee9d8d598c19f5b79ed2523df53e2fe7f7d2ca8aa25240ccbef",
+        "bytes": 2713867
+      },
+      "worldBytes": 256535344,
+      "preparedPeakBytes": 108112788,
+      "terrainBindings": 1310,
+      "newPlantBindings": 23,
+      "originalResetAndCrossTheaterRelease": "PASS"
+    },
+    {
+      "theater": "DESERT",
+      "mode": "original",
+      "report": {
+        "file": ".artifacts/m2-4/desert-representative-native-batch65-v1/native-dune-original-v1/report.json",
+        "sha256": "6e16871364fb519846a2df701c2c63be1f4c056288a1cbb8f48829df57b475bb",
+        "bytes": 3183
+      }
+    }
+  ],
+  "runtimeStages": [
+    {
+      "theater": "NEWURBAN",
+      "status": "STAGED_INTERNAL_MAC_VALIDATION_HOST",
+      "app": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/active-mac-validation-host-v1/Red Alert 2 HD M2.4 Validation Host.app",
+      "resources": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.local",
+      "build": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/build-newurban-representatives-batch64-v1",
+      "runtimeSourceHead": "bbaf9030a689b6f441715ec66d65c66a81f1773b",
+      "target": "darwin-arm64",
+      "profile": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/active-mac-validation-host-v1/Review-Profile",
+      "resourceStorage": "Existing isolated task resources; no per-batch game or resource copy",
+      "preparedRegistration": {
+        "type": "prepared-hd-registered",
+        "members": 453,
+        "pages": 1205,
+        "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+      },
+      "policy": "Internal reusable packaged Mac host, not an independent delivery. Each native case pins source, selectors and metadata. Subsequent batch delivery is embedded HTML; final milestone packaging remains separate.",
+      "receipt": {
+        "file": ".artifacts/m2-4/newurban-representative-native-batch64-v1/active-stage.json",
+        "sha256": "b52855de761553e03dc325a07b57115fa76a30479e83bf42c3060cd417d9a6d1",
+        "bytes": 1107
+      }
+    },
+    {
+      "theater": "DESERT",
+      "status": "STAGED_INTERNAL_MAC_VALIDATION_HOST",
+      "app": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/active-mac-validation-host-v1/Red Alert 2 HD M2.4 Validation Host.app",
+      "resources": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.local",
+      "build": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/build-remaining-representatives-batches64-65-v1",
+      "runtimeSourceHead": "ccbd8817eeb2f20a825f363e972f5bc5ac372382",
+      "target": "darwin-arm64",
+      "profile": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/active-mac-validation-host-v1/Review-Profile",
+      "resourceStorage": "Existing isolated task resources; no per-batch game or resource copy",
+      "preparedRegistration": {
+        "type": "prepared-hd-registered",
+        "members": 453,
+        "pages": 1205,
+        "index": "b729828392970f5e7a91ece16990924bd86c2daea7c76f79af2639de3ebae54b"
+      },
+      "policy": "Internal reusable packaged Mac host, not an independent delivery. Each native case pins source, selectors and metadata. Subsequent batch delivery is embedded HTML; final milestone packaging remains separate.",
+      "receipt": {
+        "file": ".artifacts/m2-4/desert-representative-native-batch65-v1/active-stage.json",
+        "sha256": "76c761c8984998ba23fff155ce2bb266f97bc0fc16e2d44dc0efb3fd8ca09e3e",
+        "bytes": 1113
+      }
+    }
+  ],
+  "tests": {
+    "passed": 28,
+    "assertions": 471,
+    "entryTypecheck": "PASS",
+    "isolatedBuild": "PASS"
+  },
+  "budgets": {
+    "world2x": 536870912,
+    "world4x": 1342177280,
+    "preparedCpu": 134217728,
+    "ui": 16777216
+  },
+  "generationPromptSets": [
+    {
+      "file": ".artifacts/m2-4/newurban-representative-tmp-batch64-v1/imagegen-jobs.json",
+      "sha256": "c8db1c3f45d7fbb86f49f8f7abc30181f059cebd5be060a64271c631464417dc",
+      "tool": "Builtin imagegen"
+    },
+    {
+      "file": ".artifacts/m2-4/newurban-representative-shp-batch64-v1/imagegen-jobs.json",
+      "sha256": "9515fe6f946986c0a40d488c007248e5665a10125d5029c65cfe85817f3e780d",
+      "tool": "Builtin imagegen"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-representative-tmp-batch65-v1/imagegen-jobs.json",
+      "sha256": "cb93010c3dd1c870088c7839b8b798f4bd4ba4dde3c53ad233c085e6b80d4ef9",
+      "tool": "Builtin imagegen"
+    },
+    {
+      "file": ".artifacts/m2-4/desert-representative-shp-batch65-v1/imagegen-jobs.json",
+      "sha256": "6c48782fd8b44bcd0ddab80fcca77ed34a799891b8638234f4763ac278e1d60f",
+      "tool": "Builtin imagegen"
+    }
+  ],
+  "resourceHandoff": {
+    "file": ".artifacts/m2-4/remaining-representatives-closure-batches64-65-v1/resource-handoff.json",
+    "sha256": "2993bf05752fa1f62b806825d0361b63aad6c192fe3fe089dbebd3f0ceeb406d"
+  },
+  "closure": {
+    "file": ".artifacts/m2-4/remaining-representatives-closure-batches64-65-v1/closure.json",
+    "sha256": "6c3d9df98a781027ebf80a933a7aba0341ebf1269586368aca6c9afafa976c4f"
+  },
+  "desktop": [
+    {
+      "source": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/remaining-representatives-review-batches64-65-v1/M2.4-NewUrban-Desert-Batches64-65-Embedded.html",
+      "file": "/Users/Aone/Desktop/M2.4-Review-NewUrban-Desert-Batches64-65-20261017/M2.4-NewUrban-Desert-Batches64-65-Embedded.html",
+      "sha256": "bb0a0c1b14c9dc93b0e1a2037ab249502f24b5a069af2bcd96270f4c9ad03fad",
+      "bytes": 223114200
+    },
+    {
+      "source": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/remaining-representatives-review-batches64-65-v1/M2.4-NewUrban-Desert-Batches64-65-Embedded.json",
+      "file": "/Users/Aone/Desktop/M2.4-Review-NewUrban-Desert-Batches64-65-20261017/M2.4-NewUrban-Desert-Batches64-65-Embedded.json",
+      "sha256": "a548785cde99a956471280724cb8aad297c284afae5dc720a37b2504e2431f53",
+      "bytes": 253092
+    }
+  ],
+  "desktopVerification": {
+    "file": ".artifacts/m2-4/remaining-representatives-review-batches64-65-v1/desktop-delivery-v1.json",
+    "sha256": "60715b727f26ab9bf3055a537de2517f377f9cd08e876cd51d9feb587dbc68d6"
+  },
+  "sourceCommits": {
+    "newurban": "bbaf9030a689b6f441715ec66d65c66a81f1773b",
+    "combinedRuntime": "ccbd8817eeb2f20a825f363e972f5bc5ac372382"
+  },
+  "deliveryCommitReceipt": ".artifacts/m2-4/remaining-representatives-closure-batches64-65-v1/delivery-commit.json",
+  "visual": "USER_ACCEPTED_BATCHES64_65",
+  "ownerMappingDecision": "PENDING_SEPARATE_USER_JUDGMENT",
+  "windows": "NOT_RUN",
+  "mainHead": "748d0998aaf663acda8807c158155bf0a5bb157b",
+  "mainClean": true,
+  "mainIntegration": "NOT_PERFORMED",
+  "push": "NOT_PERFORMED",
+  "perBatchGamePackageCreated": false,
+  "m24Complete": false,
+  "remaining": "NewUrban 730 and Desert 499 authored source groups, rejected Desert roads, CIVP owner mapping decision, other explicitly pending acceptance, final scope closure and independent Mac delivery.",
+  "userAcceptance": {
+    "date": "2026-10-17",
+    "message": "t approved; continue",
+    "scope": "All 13 new families in the combined Batches 64-65 review",
+    "excluded": [
+      "Separate CIVP owner-mapping decision",
+      "Two rejected and unselected Desert road mothers",
+      "Remaining authored gaps and other pending batches"
+    ]
+  }
+}

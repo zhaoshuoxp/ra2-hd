@@ -1,0 +1,4 @@
+export class LadderHead {
+    constructor() {
+    }
+}

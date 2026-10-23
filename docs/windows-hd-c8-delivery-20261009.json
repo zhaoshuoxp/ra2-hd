@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "status": "DELIVERED_C8_DIAGNOSTIC_CANDIDATE_WINDOWS_ACCEPTANCE_PENDING",
+  "diagnosticId": "WINHD-20261008-D38F136-C8",
+  "baseCommit": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+  "shippedSourceCheckpoint": "5721aa57d3785a8fbc9c8aad5adf9a4172bbe3af",
+  "sourceRepairCheckpoint": "0bd0dc6ad829b4cf9e7d535218a555d17bca1e45",
+  "applicationIncrementFromC7": [
+    "src/engine/gfx/OctreeContainer.ts"
+  ],
+  "delivery": {
+    "original": "/Users/Aone/RA2remaster/deliveries/RA2-HD-WINHD-20261008-D38F136-C8-5721aa5-Windows-x64.zip",
+    "desktop": "/Users/Aone/Desktop/RA2-HD-WINHD-20261008-D38F136-C8-5721aa5-Windows-x64.zip",
+    "bytes": 3500042357,
+    "sha256": "f95e02000de6f7406e26bcaa006e5c67dc185c3a87347fcd9d4d61193f55ae29",
+    "zipMembers": 8134,
+    "catalogEntries": 8133,
+    "manifestSha256": "f480c99fd8e4a52a81b4f40d10f1a6a372d956fb58f96ee7e7aa62a46cc1bad0",
+    "desktopCheck": "PASS_DESKTOP_FULL_SHA256_AND_ALL_MEMBER_CRCS",
+    "pristineAssemblyWasLaunched": false,
+    "shippedProfilesOrRuns": false
+  },
+  "preservedIncomingReturn": {
+    "source": "/Users/Aone/Desktop/WINHD-20261008-D38F136-C7-RETURN-2026-10-10T05-06-27-875Z.zip",
+    "preservedCopy": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/WINHD-20261008-D38F136-C7-RETURN-2026-10-10T05-06-27-875Z-incoming-v1.zip",
+    "bytes": 267183811,
+    "sha256": "01c855138057b95811b0ce0f590845f19d4714c534455866bf97195bc6e2bd67",
+    "policy": "Read-only source; new exclusive workspace copy."
+  },
+  "windowsBaseline": {
+    "diagnosticCommit": "3ab266e3b0b2c755f33ac65ca0866b1055f019d0",
+    "runDirectory": "2026-10-10T04-59-19-054Z-stress-4x-none",
+    "manualNormal": {
+      "label": "manual-5",
+      "instrumented": false,
+      "validity": "VALID_BOUNDED_SAMPLE",
+      "meanLoopFps": 21.350527624913912,
+      "tickStart": 9453,
+      "tickEnd": 10356,
+      "cameraRoute": {
+        "mode": "manual-input",
+        "start": {
+          "x": -1812,
+          "y": 4458
+        },
+        "end": {
+          "x": -1812,
+          "y": 4050
+        }
+      },
+      "intervals": {
+        "n": 320,
+        "median": 42.45000000001164,
+        "p95": 60.62999999997555,
+        "p99": 78.78500000000349,
+        "maximum": 109.06500000000233,
+        "above33ms": 320,
+        "above50ms": 61,
+        "above100ms": 1
+      },
+      "simulation": {
+        "n": 321,
+        "median": 4.680000001564622,
+        "p95": 19.240000000223517,
+        "p99": 28.25,
+        "maximum": 70.14500000141561,
+        "above33ms": 2,
+        "above50ms": 1,
+        "above100ms": 0
+      },
+      "update": {
+        "n": 321,
+        "median": 17.52500000037253,
+        "p95": 22.87000000104308,
+        "p99": 30.949999999254942,
+        "maximum": 59.88500000163913,
+        "above33ms": 2,
+        "above50ms": 1,
+        "above100ms": 0
+      },
+      "submission": {
+        "n": 321,
+        "median": 19.345000000670552,
+        "p95": 23.15000000037253,
+        "p99": 24.949999999254942,
+        "maximum": 27.31000000052154,
+        "above33ms": 0,
+        "above50ms": 0,
+        "above100ms": 0
+      },
+      "graphics": {
+        "n": 321,
+        "mean": 37.72118380065787,
+        "p50": 36.85499999858439,
+        "p95": 44.20499999821186,
+        "p99": 57.28500000014901,
+        "maximum": 79.46000000275671
+      },
+      "drawCalls": {
+        "n": 321,
+        "median": 1420,
+        "p95": 1457,
+        "p99": 1462,
+        "maximum": 1471
+      },
+      "triangles": {
+        "n": 321,
+        "median": 2783034,
+        "p95": 2837292,
+        "p99": 2849585,
+        "maximum": 2849593
+      },
+      "nodes": 10065,
+      "visibleNodes": 6746,
+      "hdNodes": 1461,
+      "renderables": 2251,
+      "players": 8,
+      "bots": 7,
+      "graphicsSettings": {
+        "enabled": true,
+        "density": 4,
+        "models": 1,
+        "shadows": 3,
+        "renderResolution": "native",
+        "resolution": {
+          "width": 1024,
+          "height": 768
+        }
+      },
+      "output": {
+        "ratio": 1.5,
+        "requested": [
+          2560,
+          1600
+        ],
+        "effective": [
+          2560,
+          1600
+        ],
+        "caps": []
+      },
+      "bindingCount": 2251,
+      "programs": 62
+    },
+    "details": "docs/windows-hd-c7-manual-windows-results-20261009.json",
+    "boundary": "Loop throughput, not presented-frame counting. Separate instrumented trace excludes profiler startup. Submission is not GPU execution."
+  },
+  "resources": {
+    "worldAndUIFiles": 6033,
+    "inventorySha256": "071134520e28ebf9bff42137117d8aac62b24b22c0e1fef269920a35d3672dbc",
+    "parity": "Exact accepted R10 bytes; no M2.3 assets"
+  },
+  "limitsMiB": {
+    "world2X": 512,
+    "world4X": 1280,
+    "preparedCPU": 128,
+    "ui": 16
+  },
+  "sourceChecks": {
+    "focusedAndSharedTests": 15,
+    "assertions": 149,
+    "entryTypecheck": "PASS",
+    "nativeValidation": "docs/windows-hd-c8-native-validation-20261009.json",
+    "mappedBuildFiles": 288,
+    "executableApplicationFiles": 205,
+    "parityBoundary": "Every final build/map/application/resource byte matches the copied native-tested candidate."
+  },
+  "freshExtraction": {
+    "directory": "/Users/Aone/RA2remaster/ra2-hd-windows-perf/.artifacts/windows-hd-diagnostic/candidate-c8-fresh-v2/RA2-HD-WINHD-20261008-D38F136-C8-5721aa5-Windows-x64",
+    "verifyKit": "PASS",
+    "nativeSmoke": "PASS_NATIVE_MAC_TOOLING_SMOKE",
+    "actualPlatform": "darwin-arm64",
+    "errors": [],
+    "nativePhaseTicks": [
+      198,
+      201,
+      199,
+      203
+    ],
+    "safeExportReturn": "PASS_FRESH_MAC_FIXTURE_RETURN_IDENTITY_NATIVE_PHASES_AND_EXPORT",
+    "windows": "NOT_RUN",
+    "legacyAnalyzerStatusBoundary": "The legacy analyzer status label does not establish Windows execution; actual machine.platform is darwin."
+  },
+  "receipts": [
+    {
+      "path": ".artifacts/windows-hd-diagnostic/candidate-c8-assembly-v2/assembly-receipt.json",
+      "sha256": "a8b2ddae082def2d76858141c7c043c170ee58a0a8b045862c5230f7c590d068",
+      "status": "PASS_STATIC_WINDOWS_NATIVE_PENDING"
+    },
+    {
+      "path": ".artifacts/windows-hd-diagnostic/c8-seal-v2.json",
+      "sha256": "78729ebd476a71a478b75c735dc379583dd35a1053fe9e224dd99926cbcc924e",
+      "status": "PASS_FULL_ARCHIVE_AND_FRESH_EXTRACTION"
+    },
+    {
+      "path": ".artifacts/windows-hd-diagnostic/c8-desktop-copy-v1.json",
+      "sha256": "9cc51aa0c308c7f94f080a1874c14628d6cfbec6db1558e99f2d0fa70bcbdce7",
+      "status": "PASS_DESKTOP_FULL_SHA256_AND_ALL_MEMBER_CRCS"
+    },
+    {
+      "path": ".artifacts/windows-hd-diagnostic/c8-fresh-verification-v1.json",
+      "sha256": "ef1cbe4e456de40bc28bbbe373a6070488c0f92b57248189a67bc7cd43932cbe",
+      "status": "PASS"
+    },
+    {
+      "path": ".artifacts/windows-hd-diagnostic/c8-final-build-parity-v1.json",
+      "sha256": "84e351de53875975ffa242d536e7b174046d599c5b0611cef4816c05fa238413",
+      "status": "PASS_BYTE_IDENTICAL_NATIVE_TESTED_AND_FINAL_BUILD"
+    },
+    {
+      "path": ".artifacts/windows-hd-diagnostic/c8-final-application-parity-v1.json",
+      "sha256": "639b89c2fcf617e93946263c715348d69f209d1f18eb9f7bab69d2a4fb149b48",
+      "status": "PASS_COMPLETE_NATIVE_TESTED_APPLICATION_AND_RESOURCE_PARITY"
+    },
+    {
+      "path": ".artifacts/windows-hd-diagnostic/c8-native-fresh-v1/report.json",
+      "sha256": "d6154c3ef0601abbdeb49602e6d45572949324ccc59a2c94bb598aa8d5d1ce85",
+      "status": "PASS_NATIVE_MAC_TOOLING_SMOKE"
+    },
+    {
+      "path": ".artifacts/windows-hd-diagnostic/c8-fresh-return-validation-v1.json",
+      "sha256": "628eaa0662fd588611f9a5390a9af64cd4ebb70352efbf9adb336e02025e0d72",
+      "status": "PASS_FRESH_MAC_FIXTURE_RETURN_IDENTITY_NATIVE_PHASES_AND_EXPORT"
+    },
+    {
+      "path": ".artifacts/windows-hd-diagnostic/c8-main-apply-check-v1.json",
+      "sha256": "338fba39f41044b3e34e920c0b9f9b929e9b6d886ab114c4583e6066d56f1e2a",
+      "status": "PASS_MAIN_APPLICATION_PATCH_APPLY_CHECK_ONLY"
+    },
+    {
+      "path": ".artifacts/windows-hd-diagnostic/c7-native-static-octree-control-v1/report.json",
+      "sha256": "0c59608ae21c2afd4a9f7b3cab11e33f0afba903639f5ee0294dbf060862b90f",
+      "status": "PASS_COPIED_MAC_STATIC_OCTREE_MATRIX_CONTROL"
+    },
+    {
+      "path": ".artifacts/windows-hd-diagnostic/c8-native-candidate-v2/report.json",
+      "sha256": "5cae0f7dae42fe23528a0cbccc9e8f4ec2435d903f6aa4f99922f9c8b43bff9d",
+      "status": "PASS_COPIED_MAC_STATIC_OCTREE_CANDIDATE"
+    },
+    {
+      "path": ".artifacts/windows-hd-diagnostic/c7-m1-windows-trace-attribution-v1.json",
+      "sha256": "ce196cb6a5ae22ed131f7a315b2a0a56961956df8cf323ecffb828e47cd5063a",
+      "status": "PASS_VALIDATED_WINDOWS_MANUAL_TRACE_ATTRIBUTION"
+    }
+  ],
+  "preservedFailures": {
+    "missingReturn": [
+      "c7-m1-return-availability-v1.json",
+      "c7-m1-return-availability-v2.json"
+    ],
+    "initialAttribution": "c7-m1-windows-trace-attribution-v1.log",
+    "preRepairRegression": "c8-static-octree-regression-before-v1.log",
+    "nativeQAExportDeadline": "c8-native-candidate-v1/report.json",
+    "supersession": "All original failure records remain immutable; passing records have distinct names."
+  },
+  "integration": {
+    "main": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd",
+      "head": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+      "porcelain": "",
+      "access": "READ_ONLY"
+    },
+    "peer": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m2-3-temperate",
+      "head": "2bf54b1252b3a6fb1741e82c5e45f51667f9b882",
+      "porcelain": "",
+      "access": "READ_ONLY"
+    },
+    "mainApplyCheck": {
+      "status": "PASS_MAIN_APPLICATION_PATCH_APPLY_CHECK_ONLY",
+      "mainHead": "d38f1366942f586a1a9df2964a40f05cc9db4cdc",
+      "sourceHead": "5721aa57d3785a8fbc9c8aad5adf9a4172bbe3af",
+      "patch": ".artifacts/windows-hd-diagnostic/c8-source-d38-to-c8-v1.patch",
+      "sha256": "ff692617f1aa93b09ceab36276d164233f580aacff18d47df4408c6d47439fc6",
+      "files": [
+        "src/engine/gfx/OctreeContainer.ts",
+        "src/engine/gfx/Renderer.ts",
+        "src/engine/gfx/batch/CombatProgramWarmup.ts",
+        "src/engine/gfx/batch/HdSpriteEdges.ts",
+        "src/engine/gfx/batch/HdSpriteProgramWarmup.ts",
+        "src/engine/gfx/batch/MergedSpriteMesh.ts",
+        "src/engine/gfx/batch/MeshBatchManager.ts",
+        "src/engine/gfx/batch/PaletteSpriteProgramWarmup.ts",
+        "src/engine/renderable/builder/HdTilePoolPreparer.ts",
+        "src/engine/renderable/builder/loadSovietUnitsHd.ts",
+        "src/engine/renderable/builder/poolHdPage.worker.ts",
+        "src/engine/renderable/builder/resolveHdSprite.ts",
+        "src/gui/screen/game/GameScreen.ts"
+      ],
+      "mainMutation": "NONE",
+      "remotePush": "NONE"
+    },
+    "mainMerged": false,
+    "remotePush": false,
+    "published": false
+  },
+  "gates": {
+    "sourceRepair": "PASS_LOCAL",
+    "macNativeAndPixels": "PASS",
+    "windowsStaticPackage": "PASS",
+    "freshExtractedMacToolingAndExport": "PASS",
+    "desktopDelivery": "PASS",
+    "c8WindowsNative": "NOT_RUN",
+    "c8WindowsPerformance": "PENDING",
+    "windowsPhysicalInput": "PENDING",
+    "visualUserAcceptance": "PENDING",
+    "finalDeliverability": "PENDING"
+  },
+  "nextWindowsRun": [
+    "Extract complete C8 to a new local folder; Verify-Kit must pass.",
+    "Select eight players, 4X, Normal; keep focus through all four automatic phases.",
+    "Continue the same match manually about two minutes; take one F8 sample in the slow condition and keep scrolling/playing for 15 seconds.",
+    "Wait for capture completion, close, Export-Reports and return the new ZIP with smoothness, loading and visual feedback."
+  ],
+  "comparisonBoundary": "Keep machine/display/power/output settings. No initial F9, no M1 companion, no old matrix rerun. Independent manual scenes require tick/camera/actor/binding disclosure; no strict same-state A/B claim.",
+  "continuation": "Continue this conversation for Windows verification and acceptance of this repair."
+}

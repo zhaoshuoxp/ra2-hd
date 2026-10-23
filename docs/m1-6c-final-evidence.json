@@ -1,0 +1,207 @@
+{
+  "status": "PASS_162_RUNTIME_BUILDING_CELLS_FINAL_HUMAN_ACCEPTANCE_PENDING",
+  "currentMainIntegratedBaseline": "477341f",
+  "editions": {
+    "ra2": 18,
+    "yr": 18
+  },
+  "union": 20,
+  "runtimeCells": 162,
+  "buildingOriginalExceptions": [],
+  "unitExceptionsUnchanged": [
+    "SQD",
+    "YURIPR"
+  ],
+  "retainedRepresentativeFiles": 497,
+  "retainedUnitResourceFiles": 167,
+  "newSelectedFiles": 245,
+  "newFamilySelections": 23,
+  "packValidation": ".artifacts/m1-6c/pack-validation-v3.json",
+  "lifecycle": ".artifacts/m1-6c/native-lifecycle-v1/result.json",
+  "display": ".artifacts/m1-6c/native-yr-snow-display-v2/result.json",
+  "sustained": ".artifacts/m1-6c/native-sustained-v1/result.json",
+  "civilian": ".artifacts/m1-6c/native-civilian-default-v1/result.json",
+  "review": ".artifacts/m1-6c/full-review-v2/Soviet-Buildings-Complete-Review.html",
+  "familyLedger": [
+    {
+      "identity": "NABNKR",
+      "cells": 6,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NACLON",
+      "cells": 3,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NACNST",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NADEPT",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NAFLAK",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NAHAND",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NAINDP",
+      "cells": 6,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NAIRON",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NALASR",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NAMISL",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NANRCT",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NAPOWR",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NAPSIS",
+      "cells": 3,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NARADR",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NAREFN",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NATECH",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NAWALL",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NAWEAP",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "NAYARD",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    },
+    {
+      "identity": "TESLA",
+      "cells": 9,
+      "runtime": "HD_ACTIVE_COMPLETE_FAMILY",
+      "finalVisualAcceptance": "PENDING_NEW_SCOPE"
+    }
+  ],
+  "failures": [
+    {
+      "family": "NAINDP",
+      "revision": "exports-v2",
+      "failure": "Independent image strips produced floating architecture",
+      "resolution": "exports-v3 fixed-size assembly under fixed ground occlusion"
+    },
+    {
+      "family": "NATECH",
+      "revision": "snow-v1",
+      "failure": "Native snow canvas is larger",
+      "resolution": "Center-preserving 19x5 logical offset, no scale change"
+    },
+    {
+      "family": "NAPOWR",
+      "revision": "variant-pack-1",
+      "failure": "Unused data alpha outside reused canvas was zero",
+      "resolution": "Member revision 2 normalizes unused data alpha"
+    },
+    {
+      "family": "NACNST",
+      "revision": "snow-pack-1",
+      "failure": "Empty frame bitmap placeholder was used as logical dimensions",
+      "resolution": "Member revision 2 retains native zero-size logical rectangles"
+    },
+    {
+      "family": "TESLA",
+      "revision": "runtime-v2",
+      "failure": "Rules identity was used instead of NATSLA image identity",
+      "resolution": "Pinned source catalog uses native Image name"
+    },
+    {
+      "family": "NABNKR",
+      "revision": "runtime-v3",
+      "failure": "Evacuation made a built military bunker neutral",
+      "resolution": "Runtime v4 retains buildable-defense ownership; native enter/fire/exit/destroy and civilian regressions pass"
+    },
+    {
+      "family": "NAMISL",
+      "revision": "offline-review-v1",
+      "failure": "Offline resting preview omitted the first SUPER layer",
+      "resolution": "Review v2 includes the native superweapon idle layer"
+    },
+    {
+      "family": "TEST_HARNESS",
+      "failure": "Naval-only snow map selected in standard mode; ZEP incorrectly treated as AircraftTypes; guard fixture ran after attacks were disabled",
+      "resolution": "Correct standard snow map and VehicleTypes identity; guard regression runs in separate packaged matches"
+    },
+    {
+      "family": "PACKAGE_PROFILE",
+      "revision": "delivery-v1",
+      "failure": "New M1.6C metadata fell through to legacy app profile identity; isolated packaged test rejected it before gameplay",
+      "resolution": "Dedicated M1.6C profile and companion-resource discovery in runtime-final-v2; retained failed delivery and test receipt"
+    },
+    {
+      "family": "DISPLAY_HARNESS",
+      "failure": "macOS constrained requested 1080-high content window to 927 pixels",
+      "resolution": "960x540 native window produces exact 1920x1080 and 3840x2160 buffers; 1440x900 validates 16:10"
+    }
+  ]
+}

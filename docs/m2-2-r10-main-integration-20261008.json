@@ -1,0 +1,288 @@
+{
+  "schema": "m2-2-r10-local-main-integration-v1",
+  "date": "2026-10-08",
+  "status": "PASS_USER_ACCEPTED_LOCAL_MAIN_INTEGRATION",
+  "mainRoot": "/Users/Aone/RA2remaster/ra2-hd",
+  "branch": "main",
+  "beforeMainHead": "538a8508c439d126e98d664effdb25a204a34f29",
+  "integratedSourceHead": "740382a227550dad97fa0ae32e1cc336a83ad253",
+  "acceptedRuntimeSourceHead": "69a8ce57f187bd21d7de864b14473ecf9ed48e33",
+  "acceptedTaskCheckpoint": "0c5b83836c992a559817d3e36af6730e9a22c306",
+  "integrationMethod": "CLEAN_VERIFIED_FAST_FORWARD",
+  "userAcceptance": "docs/m2-2-r10-user-acceptance-20261008.json",
+  "finalDocumentationCheckpoint": "Written separately after the report commit to .artifacts/m2-2/r10-main-integration-20261008/final-main-state.json; application code remains unchanged.",
+  "m1_16Preservation": {
+    "status": "PASS_PROTECTED_SOURCE_UNCHANGED_AFTER_FAST_FORWARD",
+    "verifiedAncestorCommits": [
+      "c31f3a7",
+      "a6bc72e",
+      "da3023c",
+      "625ffd8"
+    ],
+    "protectedPaths": 9,
+    "before": {
+      "path": ".artifacts/m2-2/r10-main-integration-20261008/m1-16-before.json",
+      "bytes": 2196,
+      "sha256": "62c4d68644016c51325d015aaff5dab6b7004154742700d79b75aa6892e1d029"
+    },
+    "after": {
+      "path": ".artifacts/m2-2/r10-main-integration-20261008/m1-16-after.json",
+      "bytes": 2223,
+      "sha256": "a2ab7b09832951cc85f4ec363a326c259a48c1a4d557a875b9acadd7e869c950"
+    },
+    "nativeControlRing": {
+      "path": ".artifacts/m2-2/r10-main-integration-20261008/native-ring-4x/report.json",
+      "bytes": 734356,
+      "sha256": "e23687ba1921f30308e3463c47d9ef504cba5bc10c981403d67681d841d9ba58"
+    },
+    "nativeScenePerformance": {
+      "path": ".artifacts/m2-2/r10-main-integration-20261008/native-eight-player/report.json",
+      "bytes": 18160,
+      "sha256": "dc86a07487b9f4c64ca5ac483f60cc7023eb8479e402c40952490e199fa50489"
+    },
+    "performanceSummary": {
+      "status": "PASS_NATIVE_EIGHT_PLAYER_DIAGNOSTIC",
+      "players": 8,
+      "bots": 7,
+      "nativeLiveTicksPerSecond": 67.47204127342015,
+      "candidateSceneMatrixUpdatesPerFrame": 2,
+      "diagnosticOldPathSceneMatrixUpdatesPerFrame": 4,
+      "medianUpdateRenderSubmissionMs": {
+        "diagnosticOldPath": 10.18129166662693,
+        "candidate": 7.806208334366481
+      },
+      "renderEquivalence": {
+        "width": 2560,
+        "height": 1600,
+        "comparedBytes": 16384000,
+        "differentBytes": 0,
+        "nonzeroBytes": 9186041
+      },
+      "platformBoundary": "Matched Mac diagnostic, not Windows FPS evidence; diagnostic controls are temporary and restored."
+    },
+    "namingBoundary": "No tracked report uses the literal M1.16 label. The user-named safeguards map to the verified fixed-blue persistent control-ring, both native animation members, explicit scene-matrix ownership and detached inactive HD passes already present on main."
+  },
+  "beforeCheckpoint": {
+    "path": ".artifacts/m2-2/r10-main-integration-20261008/before.json",
+    "bytes": 6638846,
+    "sha256": "8b4f284d6c743ebe7e977ea0037932b4106b8af7fd9e311b7d12ceb3b45e7e35"
+  },
+  "protectedCheckpoint": {
+    "path": ".artifacts/m2-2/r10-main-integration-20261008/before-protected.json",
+    "bytes": 6638730,
+    "sha256": "4dd0dfec4023dd469f7cb388d4002a8b2c173d4a449512599613941d65210165"
+  },
+  "ignoredTransfer": {
+    "status": "PASS_ADD_IF_ABSENT_OR_IDENTICAL",
+    "verifiedFiles": 951,
+    "verifiedBytes": 106529738,
+    "addedFiles": 950,
+    "identicalFiles": 1,
+    "replacedFiles": 0,
+    "livePreflight": {
+      "path": ".artifacts/m2-2/r10-main-integration-20261008/preflight.json",
+      "bytes": 302829,
+      "sha256": "60815dd101435030ec732b39a4081cc77d3541bb223711573a35a79886db71a7"
+    },
+    "evidence": {
+      "path": ".artifacts/m2-2/r10-main-integration-20261008/transfer.json",
+      "bytes": 338055,
+      "sha256": "f1accfb6947cd59c073b7ac0bd86015d6b387efb8b40b976001a63af4f2b0dc6"
+    }
+  },
+  "preservation": {
+    "status": "PASS_PRESERVED_FILES",
+    "inheritedEntriesBefore": 28344,
+    "inheritedEntriesPreserved": 28343,
+    "authorizedException": ".local/environment-selection.json",
+    "proof": {
+      "path": ".artifacts/m2-2/r10-main-integration-20261008/preserved.json",
+      "bytes": 75,
+      "sha256": "a8ec5efc9c84082329ad0b2d006cf4a14ede2b8b233c17e73263a963284745d3"
+    },
+    "selectorChange": {
+      "path": ".artifacts/m2-2/r10-main-integration-20261008/selector-update.json",
+      "bytes": 698,
+      "sha256": "c52d1be42c785f2e035c1435cc4fb45147af6b07bb5e668169ccd45503d6d517"
+    },
+    "oldHandoff": {
+      "path": ".artifacts/m2-2/r10-main-integration-20261008/handoff-before-main-integration.md",
+      "bytes": 15485,
+      "sha256": "c521ddc0e64603f32c9b7f61cdb9608b110e8ed5c72c8355eee35789f73f1e02"
+    },
+    "terrainWorldUiPreparedDistProfiles": "Existing payloads and selectors preserved, apart from the authorized environment v6-to-v10 pointer. New runtime profiles are isolated under the evidence root."
+  },
+  "selectedResources": {
+    "terrain": {
+      "schemaVersion": 1,
+      "revision": "temperate-m2-2-environment-v9",
+      "sha256": "b79a24ff94a4b5d98a7e8621c0b141b8c9d254ffd636fcfa4d713ca013dd4fbd"
+    },
+    "environment": {
+      "schemaVersion": 1,
+      "revision": "environment-m2-2-complete-v10",
+      "sha256": "78b60d991b33324212d2dac5805fb16c640cf22b4b5ddd4f164f2e73c011e844"
+    },
+    "ui": {
+      "schemaVersion": 1,
+      "revision": "yuri-emblem-ui-v1",
+      "sha256": "205c4780094f10e3685a8070ed2f0502e64e4ad1d8eeda25658744dbd481cb4b",
+      "reviewOnly": false
+    }
+  },
+  "preparedContract": {
+    "schemaVersion": 1,
+    "sha256": "3b7ef5279bf522a2c4070f4cb64a31d587fd25f5fc5f1fa9dee8a140c2c3a876",
+    "indexPath": "prepared-hd/indexes/3b7ef5279bf522a2c4070f4cb64a31d587fd25f5fc5f1fa9dee8a140c2c3a876.json"
+  },
+  "worldLimitsMiB": {
+    "2X": 512,
+    "4X": 1280,
+    "preparedCpu": 128,
+    "ui": 16
+  },
+  "verification": {
+    "applicationSourceParity": {
+      "status": "PASS_MAIN_APPLICATION_SOURCE_EQUALS_ACCEPTED_R10_RUNTIME",
+      "files": 1476,
+      "evidence": {
+        "path": ".artifacts/m2-2/r10-main-integration-20261008/runtime-source-parity.json",
+        "bytes": 258080,
+        "sha256": "7547b81b26e64d0f9707de0d055f834975caa6913de206bb982e00923949432d"
+      },
+      "reuse": "Exact accepted R10 app reused with the actual main .local world/UI resource root; normal dist and prior packages are untouched."
+    },
+    "mainResourceAuthority": {
+      "status": "PASS_COMBINED_RESOURCE_AUTHORITY_AND_PREPARED_COMPATIBILITY",
+      "uiEntries": 490,
+      "preparedRegistration": {
+        "type": "prepared-hd-registered",
+        "members": 459,
+        "pages": 1224,
+        "index": "3b7ef5279bf522a2c4070f4cb64a31d587fd25f5fc5f1fa9dee8a140c2c3a876"
+      },
+      "filesVerified": 5810,
+      "evidence": {
+        "path": ".artifacts/m2-2/r10-main-integration-20261008/registration.json",
+        "bytes": 1551214,
+        "sha256": "d1ed93ff92347823750860220690c3fb5db10ac666515432c3450359ca14fe67"
+      }
+    },
+    "focusedTests": {
+      "passes": 60,
+      "assertions": 10093,
+      "files": 13,
+      "testTimeoutMs": 30000,
+      "evidence": {
+        "path": ".artifacts/m2-2/r10-main-integration-20261008/tests-final.log",
+        "bytes": 6688,
+        "sha256": "73ed182b6a1f9920fddd11a81f6966d0c0ef7df1cdc65856fa62b81de43c37ef"
+      },
+      "rawInitialRun": {
+        "path": ".artifacts/m2-2/r10-main-integration-20261008/tests.log",
+        "bytes": 6512,
+        "sha256": "2fe9bd3eb993ef7ecddce6c87aa6e63051198e4879c4c918aefeb5b2f12c3597"
+      },
+      "initialRunBoundary": "A five-second full-resource DTRUCK registration timeout was retained. The final corrected file list includes shared engineer reuse; all 60 tests pass with a 30-second allowance and no implementation changes."
+    },
+    "entryTypecheck": {
+      "status": "PASS",
+      "evidence": {
+        "path": ".artifacts/m2-2/r10-main-integration-20261008/typecheck.log",
+        "bytes": 39,
+        "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+      }
+    },
+    "nativeMainHud2X": {
+      "status": "PASS",
+      "sessions": 2,
+      "editionCases": [
+        [
+          "yr",
+          10
+        ],
+        [
+          "ra2",
+          5
+        ]
+      ],
+      "nativePointerDispatch": "One click per edition; pressed/released captures; physical input unverified.",
+      "evidence": {
+        "path": ".artifacts/m2-2/r10-main-integration-20261008/native-hud-2x/result.json",
+        "bytes": 149740,
+        "sha256": "4b19330fa654362dd81e0654603a057dea829e54314da03018c8350f2011a1c7"
+      }
+    },
+    "nativeMainMixed2X": {
+      "status": "PASS_NATIVE_MIXED_DENSITY",
+      "actors": 42,
+      "combinedWorldAccountingBytes": 364573336,
+      "limitBytes": 536870912,
+      "budgetFallbacks": 0,
+      "glError": 0,
+      "nativeMovement": {
+        "before": [
+          27,
+          82
+        ],
+        "after": [
+          26,
+          82
+        ],
+        "hd": true
+      },
+      "evidence": {
+        "path": ".artifacts/m2-2/r10-main-integration-20261008/native-mixed-2x/mixed-result.json",
+        "bytes": 45420,
+        "sha256": "ab63e87be29294f7f9e00cb9e16c1fe74eee0747fc87a259d7afa993911da1cf"
+      }
+    },
+    "nativeMainControlRing4X": {
+      "status": "PASS_SELECTED_NATIVE_CASES",
+      "controllers": [
+        "YURI",
+        "YURIPR",
+        "MIND",
+        "YAPSYT"
+      ],
+      "normalAndPermanentPalette": "ALL_DRAWN_INDICES_EQUAL_ORIGINAL_PALETTE",
+      "permanentUniqueFrames": 8,
+      "targetRemoval": "PASS_ZERO_MARKERS",
+      "evidence": {
+        "path": ".artifacts/m2-2/r10-main-integration-20261008/native-ring-4x/report.json",
+        "bytes": 734356,
+        "sha256": "e23687ba1921f30308e3463c47d9ef504cba5bc10c981403d67681d841d9ba58"
+      }
+    },
+    "nativeMainEightPlayer": {
+      "status": "PASS_NATIVE_EIGHT_PLAYER_DIAGNOSTIC",
+      "summary": {
+        "path": ".artifacts/m2-2/r10-main-integration-20261008/performance-summary.json",
+        "bytes": 626,
+        "sha256": "bd9ca327bd9c7364d352d08018feb5b29eac2e6fb3d40d960854dba757315a42"
+      },
+      "evidence": {
+        "path": ".artifacts/m2-2/r10-main-integration-20261008/native-eight-player/report.json",
+        "bytes": 18160,
+        "sha256": "dc86a07487b9f4c64ca5ac483f60cc7023eb8479e402c40952490e199fa50489"
+      }
+    },
+    "unchangedOccupiedBuildingStates": "Accepted R8/R9 native occupation/evacuation/damage matrices reused because runtime and environment v10 bytes are exact; no replay or relabeling of historical receipts."
+  },
+  "desktopPackages": {
+    "status": "REUSE_ACCEPTED_UNCHANGED_R10_PACKAGES",
+    "receipt": "/Users/Aone/RA2remaster/ra2-hd-m2-2-temperate/docs/m2-2-hud-2x-20261008.json",
+    "newArchive": "NOT_CREATED_IN_THIS_INTEGRATION",
+    "boundary": "Integrated main application source equals the existing accepted R10 packages. Running applications and old dist are not hot-updated."
+  },
+  "limits": {
+    "windowsNativeExecutionOnThisHost": "NOT_RUN_ON_THIS_MAC",
+    "windowsHdStutter": "UNRESOLVED",
+    "physicalInput": "UNVERIFIED",
+    "allMapProduction": "NOT_STARTED",
+    "remotePush": "NOT_PERFORMED",
+    "cleanup": "NOT_PERFORMED"
+  },
+  "handoff": "docs/m2-2-all-maps-handoff-20261008.md",
+  "conversationRecommendation": "This repair/integration is accepted. Keep corrections here, give the updated handoff to the existing main planning conversation, and use a new execution conversation once the materially different all-map scope is agreed."
+}

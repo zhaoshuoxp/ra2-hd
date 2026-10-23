@@ -1,0 +1,5 @@
+# TELE R8: smooth vivid translucent field without white noise
+
+The user identified white noise absent from the supplied retail reference. It came from the added random grain and native-color highlight flecks, made more conspicuous by R7 brightness. R8 removes both random shader layers and uses a continuous, slowly moving purple gradient. Keep the requested brightness, saturation and palette contrast factors, 38 to 64 percent coverage, ten-logical-pixel width, between-barrels source and user-selected partial hull contact. Terrain texture can remain visible through the transparent field; it is not an added beam-noise layer.
+
+Native targeting, lift/pull motion, timings, camera, geometry and rules remain unchanged. Preserve accepted mothers/resources and all earlier apps, references and evidence. Verify both densities in the current copied app, including active lift interruption and cleanup. Embed current native media and retain the original retail and selected-contact screenshots. Other R3 visuals remain user accepted; new TELE visual acceptance remains pending. DISK payment and YURIPR PsiWave exceptions, main integration and Windows validation remain separate.

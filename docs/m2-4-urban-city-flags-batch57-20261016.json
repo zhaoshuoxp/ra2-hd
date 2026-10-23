@@ -1,0 +1,2709 @@
+{
+  "schema": "m2-4-urban-city-flags-batch57-handoff-v1",
+  "status": "USER_ACCEPTED_MAC_TECHNICAL_PASS_EIGHT_COMPLETE_CITY_FLAG_FAMILIES",
+  "sourceBranch": "task/m2-4-all-skirmish-theaters",
+  "runtimeSourceHead": "a39fbb5e982f55f25a106f5d55e7f64b46ff416d",
+  "mainHead": "748d0998aaf663acda8807c158155bf0a5bb157b",
+  "mainClean": true,
+  "mainWasMutatedByThisBatch": false,
+  "selectedEnvironment": {
+    "schemaVersion": 1,
+    "revision": "urban-environment-m2-4-city-flags-batch57-v1",
+    "sha256": "362bf24a20870e378602e665c96b5f80c8f8016277eed2aa1175cb4b66b1afba"
+  },
+  "selectedTerrain": {
+    "schemaVersion": 1,
+    "revision": "urban-m2-4-structures-r14e",
+    "sha256": "d2cfbfc964d7ff4173468df90be55c3e5f589afe00e6e440acfc4fabe4399749"
+  },
+  "families": [
+    "urban-cacity01",
+    "urban-cacity02",
+    "urban-cacity03",
+    "urban-cacity04",
+    "urban-cafrfgl",
+    "urban-calbfgl",
+    "urban-caskfgl",
+    "urban-caukfgl"
+  ],
+  "counts": {
+    "completeNewFamilies": 8,
+    "sourceMembers": 12,
+    "sourceBodyStates": 88,
+    "densityFrames": 176,
+    "reusedAcceptedBodyStates": 24,
+    "exactReusedDensityFrames": 48,
+    "newFlagSourcePhases": 64,
+    "originalShadowFrames": 88,
+    "authoredMothers": 4,
+    "priorFamiliesPreserved": 230,
+    "selectedFamilies": 238,
+    "selectedFiles": 1855,
+    "patchFiles": 69,
+    "applicableRuntimeStates": 20,
+    "nativeFamilyDensityCases": 16,
+    "activeFlagPhases": 60,
+    "nativeFlagDensityLoops": 8,
+    "matchedOriginalLoops": 4,
+    "originalMapsExecuted": 2,
+    "embeddedImages": 206,
+    "animatedPngPreviews": 12,
+    "remainingUrbanSourceGroups": 55
+  },
+  "coveredMapEntries": [
+    "ra2:mp29u4.map@c3f4f1c670fe",
+    "yr:mp29u4.map@c3f4f1c670fe",
+    "yr:xbayopigs.map",
+    "yr:xhailmary.map"
+  ],
+  "authoring": {
+    "mode": "built-in image_gen",
+    "jobs": {
+      "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-jobs-v2.json",
+      "sha256": "7555a0b24b2d742fb56f1796f5fa6757f043a55fc404d941fb1a85cf810c8a72",
+      "bytes": 8939
+    },
+    "mothers": [
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-9a83b839-4f6a-44ba-953b-026349908a10.png",
+          "sha256": "c14ea217e25561b1de2ec5213a9a5b9030814429ac58768bb563d44aeda83883",
+          "bytes": 1579270
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cufrfgl_a-shp-all-phases-master.png",
+          "sha256": "c14ea217e25561b1de2ec5213a9a5b9030814429ac58768bb563d44aeda83883",
+          "bytes": 1579270
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-receipt-01.json",
+          "sha256": "9c8ee0d54fca88c9a186528cfe8d94aef6c3e662931ced5b7dbf797a5fe3bc09",
+          "bytes": 4609
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cufrfgl_a-shp-all-phases-reference.png",
+          "sha256": "bead0f8cf4815e4ae99cfc0d3e11c40eef0330c3eb3d1d0ed457842cc3541854",
+          "bytes": 25111
+        },
+        "prompt": "Use case: precise-object-edit. Repaint this exact original Red Alert 2 French blue-white-red tricolor waving flag animation. A square 4 by 4 sheet contains all 16 original flutter phases, row-major. Preserve the exact original flag pattern, colors, silhouette, cloth folds, attachment point, lighting, apparent size and placement in EVERY corresponding cell. Add genuinely resolved fine woven cloth and clean printed national symbols suitable for independent 2X and 4X game sprites. Keep the original small isometric cloth planes and all phase-specific occlusion, with restrained material detail and smooth edges. Do not redesign the flags, change national patterns, add poles, grounds, shadows, extra subjects, text, checkerboards, grid lines or borders. No simple enlargement, sharpening, pixel blocks or interpolation as detail. Keep transparent gutters between all 16 cells and generous outer transparent margins. Preserve exactly 4 columns and 4 rows; output one square transparent sprite sheet matching the reference positions.",
+        "selectedSlots": [
+          "cufrfgl_a.shp-000",
+          "cufrfgl_a.shp-001",
+          "cufrfgl_a.shp-002",
+          "cufrfgl_a.shp-003",
+          "cufrfgl_a.shp-004",
+          "cufrfgl_a.shp-005",
+          "cufrfgl_a.shp-006",
+          "cufrfgl_a.shp-007",
+          "cufrfgl_a.shp-008",
+          "cufrfgl_a.shp-009",
+          "cufrfgl_a.shp-010",
+          "cufrfgl_a.shp-011",
+          "cufrfgl_a.shp-012",
+          "cufrfgl_a.shp-013",
+          "cufrfgl_a.shp-014",
+          "cufrfgl_a.shp-015"
+        ],
+        "minimumAuthoredDensity": 7.885714285714286
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-77f32eac-1777-4cb0-998f-9746f8140e8a.png",
+          "sha256": "34fbc63604664fa1be98e90df99d3b032c86afff9f039ac42e19f3099b21a5a3",
+          "bytes": 1788966
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cuukfgl_a-shp-all-phases-master.png",
+          "sha256": "34fbc63604664fa1be98e90df99d3b032c86afff9f039ac42e19f3099b21a5a3",
+          "bytes": 1788966
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-receipt-02.json",
+          "sha256": "5127af18248e6d8d729abe579f0f726bfe6818d04932c22ee5fb000c54597896",
+          "bytes": 4600
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cuukfgl_a-shp-all-phases-reference.png",
+          "sha256": "50c40416fb79c62c676354a632d30bab70e3ac5eb5136325b807b91d4366d9d6",
+          "bytes": 43186
+        },
+        "prompt": "Use case: precise-object-edit. Repaint this exact original Red Alert 2 British Union Jack waving flag animation. A square 4 by 4 sheet contains all 16 original flutter phases, row-major. Preserve the exact original flag pattern, colors, silhouette, cloth folds, attachment point, lighting, apparent size and placement in EVERY corresponding cell. Add genuinely resolved fine woven cloth and clean printed national symbols suitable for independent 2X and 4X game sprites. Keep the original small isometric cloth planes and all phase-specific occlusion, with restrained material detail and smooth edges. Do not redesign the flags, change national patterns, add poles, grounds, shadows, extra subjects, text, checkerboards, grid lines or borders. No simple enlargement, sharpening, pixel blocks or interpolation as detail. Keep transparent gutters between all 16 cells and generous outer transparent margins. Preserve exactly 4 columns and 4 rows; output one square transparent sprite sheet matching the reference positions.",
+        "selectedSlots": [
+          "cuukfgl_a.shp-000",
+          "cuukfgl_a.shp-001",
+          "cuukfgl_a.shp-002",
+          "cuukfgl_a.shp-003",
+          "cuukfgl_a.shp-004",
+          "cuukfgl_a.shp-005",
+          "cuukfgl_a.shp-006",
+          "cuukfgl_a.shp-007",
+          "cuukfgl_a.shp-008",
+          "cuukfgl_a.shp-009",
+          "cuukfgl_a.shp-010",
+          "cuukfgl_a.shp-011",
+          "cuukfgl_a.shp-012",
+          "cuukfgl_a.shp-013",
+          "cuukfgl_a.shp-014",
+          "cuukfgl_a.shp-015"
+        ],
+        "minimumAuthoredDensity": 7.6571428571428575
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-e110628f-aae6-478a-bafb-71375cf59000.png",
+          "sha256": "dc3eeea2e64af25d2401e4aa27f89a9c8a5711451c522ee19037559ca60b43fe",
+          "bytes": 2177252
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cuskfgl_a-shp-all-phases-master.png",
+          "sha256": "dc3eeea2e64af25d2401e4aa27f89a9c8a5711451c522ee19037559ca60b43fe",
+          "bytes": 2177252
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-receipt-03.json",
+          "sha256": "834376155ffce5185265cfafca8e2b949bfd8b04b2ad9c8c37c85acacc08e0fb",
+          "bytes": 4614
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cuskfgl_a-shp-all-phases-reference.png",
+          "sha256": "2aa99d4d910aa7a0d64ce545e932c376c5488fa36ebfbb5e837886a95c212a8b",
+          "bytes": 40466
+        },
+        "prompt": "Use case: precise-object-edit. Repaint this exact original Red Alert 2 South Korean Taegeukgi waving flag animation. A square 4 by 4 sheet contains all 16 original flutter phases, row-major. Preserve the exact original flag pattern, colors, silhouette, cloth folds, attachment point, lighting, apparent size and placement in EVERY corresponding cell. Add genuinely resolved fine woven cloth and clean printed national symbols suitable for independent 2X and 4X game sprites. Keep the original small isometric cloth planes and all phase-specific occlusion, with restrained material detail and smooth edges. Do not redesign the flags, change national patterns, add poles, grounds, shadows, extra subjects, text, checkerboards, grid lines or borders. No simple enlargement, sharpening, pixel blocks or interpolation as detail. Keep transparent gutters between all 16 cells and generous outer transparent margins. Preserve exactly 4 columns and 4 rows; output one square transparent sprite sheet matching the reference positions.",
+        "selectedSlots": [
+          "cuskfgl_a.shp-000",
+          "cuskfgl_a.shp-001",
+          "cuskfgl_a.shp-002",
+          "cuskfgl_a.shp-003",
+          "cuskfgl_a.shp-004",
+          "cuskfgl_a.shp-005",
+          "cuskfgl_a.shp-006",
+          "cuskfgl_a.shp-007",
+          "cuskfgl_a.shp-008",
+          "cuskfgl_a.shp-009",
+          "cuskfgl_a.shp-010",
+          "cuskfgl_a.shp-011",
+          "cuskfgl_a.shp-012",
+          "cuskfgl_a.shp-013",
+          "cuskfgl_a.shp-014",
+          "cuskfgl_a.shp-015"
+        ],
+        "minimumAuthoredDensity": 7.685714285714286
+      },
+      {
+        "raw": {
+          "file": "/Users/Aone/.codex/generated_images/01a12952-7158-7751-8e8f-141015378d61/exec-defcf948-8186-4a25-9eed-f4c6ee16a0d2.png",
+          "sha256": "433397de5f911be639bee729b1a3632737faa605d99edc057b002eadd23d3f3e",
+          "bytes": 1687824
+        },
+        "workspace": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-city-flags-authoring-batch57-v1/culbfgl_a-shp-all-phases-master.png",
+          "sha256": "433397de5f911be639bee729b1a3632737faa605d99edc057b002eadd23d3f3e",
+          "bytes": 1687824
+        },
+        "receipt": {
+          "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-receipt-04.json",
+          "sha256": "08ea22d24ef0b967737291f88a1697aaa52b5df7b0a281c5b1fe7bf7654d4402",
+          "bytes": 4760
+        },
+        "reference": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m2-4-theaters/.artifacts/m2-4/urban-city-flags-authoring-batch57-v1/culbfgl_a-shp-all-phases-reference.png",
+          "sha256": "5617ce54856b85e138b2538315a667de4d10f289fa54bf02467e99b37c583616",
+          "bytes": 15819
+        },
+        "prompt": "Use case: precise-object-edit. Repaint this exact original Red Alert 2 original solid green Libyan national flag waving flag animation. A square 4 by 4 sheet contains all 16 original flutter phases, row-major. Preserve the exact original flag pattern, colors, silhouette, cloth folds, attachment point, lighting, apparent size and placement in EVERY corresponding cell. Add genuinely resolved fine woven cloth and clean printed national symbols suitable for independent 2X and 4X game sprites. Keep the original small isometric cloth planes and all phase-specific occlusion, with restrained material detail and smooth edges. Do not redesign the flags, change national patterns, add poles, grounds, shadows, extra subjects, text, checkerboards, grid lines or borders. No simple enlargement, sharpening, pixel blocks or interpolation as detail. Keep transparent gutters between all 16 cells and generous outer transparent margins. Preserve exactly 4 columns and 4 rows; output one square transparent sprite sheet matching the reference positions. Solid green cloth only: no emblem, crescent, star, text or stripes. Retain the exact dark green of the supplied original. Do not use the modern Libyan tricolor.",
+        "selectedSlots": [
+          "culbfgl_a.shp-000",
+          "culbfgl_a.shp-001",
+          "culbfgl_a.shp-002",
+          "culbfgl_a.shp-003",
+          "culbfgl_a.shp-004",
+          "culbfgl_a.shp-005",
+          "culbfgl_a.shp-006",
+          "culbfgl_a.shp-007",
+          "culbfgl_a.shp-008",
+          "culbfgl_a.shp-009",
+          "culbfgl_a.shp-010",
+          "culbfgl_a.shp-011",
+          "culbfgl_a.shp-012",
+          "culbfgl_a.shp-013",
+          "culbfgl_a.shp-014",
+          "culbfgl_a.shp-015"
+        ],
+        "minimumAuthoredDensity": 7.4
+      }
+    ],
+    "initialJobs": {
+      "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-jobs-v1.json",
+      "sha256": "0e599a4d6fea53a07328b7da8c78edbf0c98b7ebd2ae8f75e73947612b028669",
+      "bytes": 8778
+    },
+    "samplingRecipe": {
+      "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/urban-city-flags-m2-4-batch57-r1/recipe.json",
+      "sha256": "c45e8ccc5e4d4e91ea41faa6a63c5250de0c043b79901c948fc824ff1e6a55cb",
+      "bytes": 35441
+    },
+    "acceptedBodyProof": {
+      "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/accepted-body-proof-v1.json",
+      "sha256": "242ab468f91d605997f321cd226669cd9e4368991e93a341c856f748835751a7",
+      "bytes": 13091
+    },
+    "acceptedSnowAuthority": {
+      "file": ".artifacts/m2-4/snow-batch24-user-acceptance-20261013-v1.json",
+      "sha256": "f1a542b79dce4a16e28611ab117c65869c84c1b5f5b1e233e6a16f7de9618159",
+      "bytes": 1413
+    }
+  },
+  "resourceHandoff": {
+    "patchRoot": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1",
+    "selectedRoot": ".local/environment-packs/urban-environment-m2-4-city-flags-batch57-v1",
+    "ignoredResourcesExplicitlyIncluded": true,
+    "patchFiles": [
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/manifest.json",
+        "sha256": "00cd5dbf4cf9fd999e5644c784301535800b3aa1e0b6c65ef75f569c53b9b288",
+        "bytes": 2774
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity01-shp/2/p0/base.png",
+        "sha256": "d836eee58612bea43d99303f1cdecc8641f2b2140b68ad21cc8536da55d4038c",
+        "bytes": 765252
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity01-shp/2/p0/data.png",
+        "sha256": "c3cc3f198f2fa893e780cf61ff09472d5d4994efee24105e6a2b1857001cbc8e",
+        "bytes": 4317
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity01-shp/4/p0/base.png",
+        "sha256": "f7175196490d6adf618fc0226d8101b4dc2b319d58f635ea2510c20e6cccf368",
+        "bytes": 1907961
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity01-shp/4/p0/data.png",
+        "sha256": "044fe980de0c8546b9c8265bdd46f0a63b3e35e059ce610927b8f8ab901bc664",
+        "bytes": 8128
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity01-shp/4/p1/base.png",
+        "sha256": "95c4b72f075df8397a1a5d04d7721de9d227b4850d767d86d583a33f9c894725",
+        "bytes": 953971
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity01-shp/4/p1/data.png",
+        "sha256": "50b39b8a40216958e397d40800c72cefcf87e98e76d1eacad51a4a38da3a7300",
+        "bytes": 4108
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity01-shp/manifest.json",
+        "sha256": "eb7de2bdc653803b4c7f1342561fc8c001d35493338411174c34f2074bf4ec67",
+        "bytes": 3358
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity02-shp/2/p0/base.png",
+        "sha256": "8d53106c5f19c9f77adb2de21c3113ee2233cb3f5fecdbc18962023c51c51a14",
+        "bytes": 1066597
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity02-shp/2/p0/data.png",
+        "sha256": "62049174f0a2e16a6bf891b425af4fe22087244156b8a7b6a6877dccfa344b7f",
+        "bytes": 5235
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity02-shp/4/p0/base.png",
+        "sha256": "3e8bbefcaf557af030254f7d17d7d45bf2161831f3b27814a17cb0b0e37e19e6",
+        "bytes": 2719428
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity02-shp/4/p0/data.png",
+        "sha256": "069f9131f244710650c9953505824e37c0ec3f39b6486aa0337d519360749844",
+        "bytes": 10439
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity02-shp/4/p1/base.png",
+        "sha256": "9ccbf0dbfc1ed045932e7dd35ab0c46a19b7dc0b37da332ee569d20382af4bfa",
+        "bytes": 1359751
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity02-shp/4/p1/data.png",
+        "sha256": "3bf3b3707e8efd0b132066e5117c4f920d32dd4a06d411321c9e58131b745caf",
+        "bytes": 5264
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity02-shp/manifest.json",
+        "sha256": "4f937c48e5675e9ccfea5bba972a0151cceca51cf457f95f76f1ad95d863337f",
+        "bytes": 3366
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity03-shp/2/p0/base.png",
+        "sha256": "a05065d32c0df4a5a3fdace66712fd745f3123ca031b53ea4c3f7fe1760f1143",
+        "bytes": 490764
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity03-shp/2/p0/data.png",
+        "sha256": "0c0872b0fa495814ff1c367d9c780668e23aa9e89dec7cddd307bf7ae90e3bc7",
+        "bytes": 3597
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity03-shp/4/p0/base.png",
+        "sha256": "601c95cd003e139065dee9a13c689893d30cc4956b7e595b5cab8c1e47a9cd1f",
+        "bytes": 1236288
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity03-shp/4/p0/data.png",
+        "sha256": "97285bd3652f402ce7bcf5c8eccee64ea798fa0413d89e304d4e65b5a9977dbf",
+        "bytes": 6352
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity03-shp/4/p1/base.png",
+        "sha256": "9db2b6a78ea163b82a5138088a97c1ee090fddf5816a6eb3b10a3ec6622d092b",
+        "bytes": 618181
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity03-shp/4/p1/data.png",
+        "sha256": "781371e40b5d9e5b5b51cf441595d5a5137e2026d929209d7b775dbdc5b27765",
+        "bytes": 3220
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity03-shp/manifest.json",
+        "sha256": "d5b22dcaf592b8674491ddebb003625675828ece54b17c1bff18819aec7d2b81",
+        "bytes": 3361
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity04-shp/2/p0/base.png",
+        "sha256": "99bb161668a16e135d96b5e452ba23fbc186b31736cb602e162da778043f78c3",
+        "bytes": 600417
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity04-shp/2/p0/data.png",
+        "sha256": "0bf077690f817db7c0ec02f4f1152bb91440c4118574309e36a613cfbaa6fe05",
+        "bytes": 3825
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity04-shp/4/p0/base.png",
+        "sha256": "d0d09eb8b42b8f52894926491601ec948fd0dfee515a2c2e07e209fe4a6ac72c",
+        "bytes": 1486703
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity04-shp/4/p0/data.png",
+        "sha256": "bd8e6724488daf91adc8b67e6b92ad846961a8bc4e38ead78252943a526bab8e",
+        "bytes": 7344
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity04-shp/4/p1/base.png",
+        "sha256": "adf2e78bb5ab4422bb68e1c4e012fb210188fcf2212da76e24b9f40b4cb48caf",
+        "bytes": 743361
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity04-shp/4/p1/data.png",
+        "sha256": "048c961cabc4f49be5f6c1926c7a3c066a9c4d6dde9287bc88cbe1465ee7a9b2",
+        "bytes": 3716
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cucity04-shp/manifest.json",
+        "sha256": "6511db8464af9669fdc2d5591b7622ed7215574b103ffeb66aec286b6503bfd6",
+        "bytes": 3361
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cufrfgl-shp/2/p0/base.png",
+        "sha256": "04e4059be828f9480ed47581e3201f3f84a95208d358bcb28d75068cc699ae68",
+        "bytes": 42413
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cufrfgl-shp/2/p0/data.png",
+        "sha256": "6f8aa82e14d7f816ed9f9185ed6b8fc1ebd7c36b3f91d54251a229c281a9b60e",
+        "bytes": 2695
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cufrfgl-shp/4/p0/base.png",
+        "sha256": "cc14747c8db6bfbe43450ec3e2a16005b36fdee213cb792c60b20d01dca1b09e",
+        "bytes": 214509
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cufrfgl-shp/4/p0/data.png",
+        "sha256": "ccc96c001987eeb6a38d96de7a7ed81470a608ef64c62246fa7c85562cf003cd",
+        "bytes": 6793
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cufrfgl-shp/manifest.json",
+        "sha256": "d597fed1eed661143b32c84cbc0ca3b45c786a71ea89741f3b2f5ed6c237763d",
+        "bytes": 3089
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cufrfgl_a-shp/2/p0/base.png",
+        "sha256": "7c7d13e9f8b9ecce5e5ac1cbc51c2e9e46f4cff13bf29722b99ba524d73f455c",
+        "bytes": 85904
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cufrfgl_a-shp/2/p0/data.png",
+        "sha256": "daf556fd4da616efc2f6318d906b774ebf0da0d3daa89834a4c24fa403b203c4",
+        "bytes": 1155
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cufrfgl_a-shp/4/p0/base.png",
+        "sha256": "78cd55cd03118ef30d127aad3cff41c17c00cf790775394a82fdde700591db30",
+        "bytes": 307975
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cufrfgl_a-shp/4/p0/data.png",
+        "sha256": "53a5ad07388fb2e5009cf2a6776532ba79796eaac7e0b6148ea31438b7f04a66",
+        "bytes": 4095
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cufrfgl_a-shp/manifest.json",
+        "sha256": "eb4a7d517d9c98ad2a72b68cbf6c8944bc2257c446314d1d3845ee8ae2276ca7",
+        "bytes": 6166
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/culbfgl-shp/2/p0/base.png",
+        "sha256": "04e4059be828f9480ed47581e3201f3f84a95208d358bcb28d75068cc699ae68",
+        "bytes": 42413
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/culbfgl-shp/2/p0/data.png",
+        "sha256": "6f8aa82e14d7f816ed9f9185ed6b8fc1ebd7c36b3f91d54251a229c281a9b60e",
+        "bytes": 2695
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/culbfgl-shp/4/p0/base.png",
+        "sha256": "cc14747c8db6bfbe43450ec3e2a16005b36fdee213cb792c60b20d01dca1b09e",
+        "bytes": 214509
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/culbfgl-shp/4/p0/data.png",
+        "sha256": "ccc96c001987eeb6a38d96de7a7ed81470a608ef64c62246fa7c85562cf003cd",
+        "bytes": 6793
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/culbfgl-shp/manifest.json",
+        "sha256": "68e51ca351b32fbf0acb0d46b5ff84371e8b6c6272e208a70b07eeac7c152bbf",
+        "bytes": 3089
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/culbfgl_a-shp/2/p0/base.png",
+        "sha256": "3c3e6623ae345b4fa247de37c6f2d99081942e81e8b5eb79f77ecf5d65babcb7",
+        "bytes": 76383
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/culbfgl_a-shp/2/p0/data.png",
+        "sha256": "daf556fd4da616efc2f6318d906b774ebf0da0d3daa89834a4c24fa403b203c4",
+        "bytes": 1155
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/culbfgl_a-shp/4/p0/base.png",
+        "sha256": "bb66c11474a7e61d8f391c43e36662fe0c1fa9a3ef8c072baa2cfbd00c7bd91e",
+        "bytes": 286138
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/culbfgl_a-shp/4/p0/data.png",
+        "sha256": "53a5ad07388fb2e5009cf2a6776532ba79796eaac7e0b6148ea31438b7f04a66",
+        "bytes": 4095
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/culbfgl_a-shp/manifest.json",
+        "sha256": "f2db986677a4ef7218964134a7621f8ba3c47c78117851bd097e9c49e59f1c2e",
+        "bytes": 6166
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuskfgl-shp/2/p0/base.png",
+        "sha256": "04e4059be828f9480ed47581e3201f3f84a95208d358bcb28d75068cc699ae68",
+        "bytes": 42413
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuskfgl-shp/2/p0/data.png",
+        "sha256": "6f8aa82e14d7f816ed9f9185ed6b8fc1ebd7c36b3f91d54251a229c281a9b60e",
+        "bytes": 2695
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuskfgl-shp/4/p0/base.png",
+        "sha256": "cc14747c8db6bfbe43450ec3e2a16005b36fdee213cb792c60b20d01dca1b09e",
+        "bytes": 214509
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuskfgl-shp/4/p0/data.png",
+        "sha256": "ccc96c001987eeb6a38d96de7a7ed81470a608ef64c62246fa7c85562cf003cd",
+        "bytes": 6793
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuskfgl-shp/manifest.json",
+        "sha256": "ed2581265f28f011e5bc92595468d492501d1c6b194be89c989e13bae88faa4a",
+        "bytes": 3089
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuskfgl_a-shp/2/p0/base.png",
+        "sha256": "0d7b1f3f33c7eaa572190dfe6c5fa19902c3adb87080d906e88d5f041dbdaeb6",
+        "bytes": 104174
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuskfgl_a-shp/2/p0/data.png",
+        "sha256": "daf556fd4da616efc2f6318d906b774ebf0da0d3daa89834a4c24fa403b203c4",
+        "bytes": 1155
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuskfgl_a-shp/4/p0/base.png",
+        "sha256": "47dfee34934cb7d6447899ab892e76fcb9f3ef36a231b374bb5a1c8e3f4fc37a",
+        "bytes": 366489
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuskfgl_a-shp/4/p0/data.png",
+        "sha256": "53a5ad07388fb2e5009cf2a6776532ba79796eaac7e0b6148ea31438b7f04a66",
+        "bytes": 4095
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuskfgl_a-shp/manifest.json",
+        "sha256": "44e91757bb4c0247609ab055cdad08d6ac952e2e6e8e5c639b8744297da989f7",
+        "bytes": 6167
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuukfgl-shp/2/p0/base.png",
+        "sha256": "04e4059be828f9480ed47581e3201f3f84a95208d358bcb28d75068cc699ae68",
+        "bytes": 42413
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuukfgl-shp/2/p0/data.png",
+        "sha256": "6f8aa82e14d7f816ed9f9185ed6b8fc1ebd7c36b3f91d54251a229c281a9b60e",
+        "bytes": 2695
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuukfgl-shp/4/p0/base.png",
+        "sha256": "cc14747c8db6bfbe43450ec3e2a16005b36fdee213cb792c60b20d01dca1b09e",
+        "bytes": 214509
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuukfgl-shp/4/p0/data.png",
+        "sha256": "ccc96c001987eeb6a38d96de7a7ed81470a608ef64c62246fa7c85562cf003cd",
+        "bytes": 6793
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuukfgl-shp/manifest.json",
+        "sha256": "210d19a79de1279a49eead2df3943b7acae58c336b62c91baeae915b6ecb58d9",
+        "bytes": 3089
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuukfgl_a-shp/2/p0/base.png",
+        "sha256": "aeeda1337d49c5910ee93746510e3aa44714a0af2a47e5d4db0b0d9af777a559",
+        "bytes": 116601
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuukfgl_a-shp/2/p0/data.png",
+        "sha256": "daf556fd4da616efc2f6318d906b774ebf0da0d3daa89834a4c24fa403b203c4",
+        "bytes": 1155
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuukfgl_a-shp/4/p0/base.png",
+        "sha256": "7317c2a694c07643c574124c3777c6323fbe480e9144cb8f4e2a234fbbf4f87b",
+        "bytes": 397730
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuukfgl_a-shp/4/p0/data.png",
+        "sha256": "53a5ad07388fb2e5009cf2a6776532ba79796eaac7e0b6148ea31438b7f04a66",
+        "bytes": 4095
+      },
+      {
+        "file": ".local/environment-packs/urban-city-flags-m2-4-batch57-r1/members/cuukfgl_a-shp/manifest.json",
+        "sha256": "730090c9ff496bd8ef57f4abccdd420150012f0b929ed319ed50c36264dcfbf7",
+        "bytes": 6167
+      }
+    ],
+    "completeSelectedAssembly": {
+      "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/assembly-v1.json",
+      "sha256": "cd7f2007e57813c362e7dc129a897e7aa2746a55c544498e2269cdf07a03622c",
+      "bytes": 207860
+    },
+    "nativeDependencies": [
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0.pal",
+        "sha256": "79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0",
+        "bytes": 768
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/0.index",
+        "sha256": "323adfdf383537abe2339fa57362bae5de390a8ac4b97fdea80484d02709aa34",
+        "bytes": 37944
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/0.rgba",
+        "sha256": "4887f1472df2227d4b57163c110ddf978f90967b53836f9ddaa76ddbad9936c0",
+        "bytes": 151776
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/1.index",
+        "sha256": "323adfdf383537abe2339fa57362bae5de390a8ac4b97fdea80484d02709aa34",
+        "bytes": 37944
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/1.rgba",
+        "sha256": "4887f1472df2227d4b57163c110ddf978f90967b53836f9ddaa76ddbad9936c0",
+        "bytes": 151776
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/2.index",
+        "sha256": "323adfdf383537abe2339fa57362bae5de390a8ac4b97fdea80484d02709aa34",
+        "bytes": 37944
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/2.rgba",
+        "sha256": "4887f1472df2227d4b57163c110ddf978f90967b53836f9ddaa76ddbad9936c0",
+        "bytes": 151776
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/3.index",
+        "sha256": "ce76ccbb4cc10c067ba8c1235d7c9484470d298e3c71c4a55b9a1fc613c90341",
+        "bytes": 33674
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/3.rgba",
+        "sha256": "ee088c80cad7d107e0d0af1d5c4014155808240ae2662be5ccc7d86cd60f832c",
+        "bytes": 134696
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/4.index",
+        "sha256": "ce76ccbb4cc10c067ba8c1235d7c9484470d298e3c71c4a55b9a1fc613c90341",
+        "bytes": 33674
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/4.rgba",
+        "sha256": "ee088c80cad7d107e0d0af1d5c4014155808240ae2662be5ccc7d86cd60f832c",
+        "bytes": 134696
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/5.index",
+        "sha256": "ce76ccbb4cc10c067ba8c1235d7c9484470d298e3c71c4a55b9a1fc613c90341",
+        "bytes": 33674
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/5.rgba",
+        "sha256": "ee088c80cad7d107e0d0af1d5c4014155808240ae2662be5ccc7d86cd60f832c",
+        "bytes": 134696
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity01-shp-7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/cucity01.shp",
+        "sha256": "7219f468060fcf77c503c8accda9654735b75a3d34add54d81ddc2eaf95fe3d7",
+        "bytes": 86528
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/0.index",
+        "sha256": "4fac35276a4e88b83dc98a981ea9bf6bbd0783bf425a8417f14a37d5a1f87f72",
+        "bytes": 48995
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/0.rgba",
+        "sha256": "e06d6a8e018761c5e851e2dbed0266433264d6b644d54b6531430dedce1e1b88",
+        "bytes": 195980
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/1.index",
+        "sha256": "4fac35276a4e88b83dc98a981ea9bf6bbd0783bf425a8417f14a37d5a1f87f72",
+        "bytes": 48995
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/1.rgba",
+        "sha256": "e06d6a8e018761c5e851e2dbed0266433264d6b644d54b6531430dedce1e1b88",
+        "bytes": 195980
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/2.index",
+        "sha256": "4fac35276a4e88b83dc98a981ea9bf6bbd0783bf425a8417f14a37d5a1f87f72",
+        "bytes": 48995
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/2.rgba",
+        "sha256": "e06d6a8e018761c5e851e2dbed0266433264d6b644d54b6531430dedce1e1b88",
+        "bytes": 195980
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/3.index",
+        "sha256": "8a6fc08f4ac1049f38fcaab513a967592e2fbea37a260ffd05530067e0cadf60",
+        "bytes": 60770
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/3.rgba",
+        "sha256": "c851ffbe1b77c1ebbc0f7eff4575baa7aceca21d1956b0eda00735b6a8ba09cb",
+        "bytes": 243080
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/4.index",
+        "sha256": "8a6fc08f4ac1049f38fcaab513a967592e2fbea37a260ffd05530067e0cadf60",
+        "bytes": 60770
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/4.rgba",
+        "sha256": "c851ffbe1b77c1ebbc0f7eff4575baa7aceca21d1956b0eda00735b6a8ba09cb",
+        "bytes": 243080
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/5.index",
+        "sha256": "8a6fc08f4ac1049f38fcaab513a967592e2fbea37a260ffd05530067e0cadf60",
+        "bytes": 60770
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/5.rgba",
+        "sha256": "c851ffbe1b77c1ebbc0f7eff4575baa7aceca21d1956b0eda00735b6a8ba09cb",
+        "bytes": 243080
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity02-shp-91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/cucity02.shp",
+        "sha256": "91630025b88905ed82632a2839d215ae4845c821e031512b7dca68aaa2d609d2",
+        "bytes": 128168
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/0.index",
+        "sha256": "4a381e362ccef4d7b3639df44b6de719e5438551525fb0953c33ae77711e5645",
+        "bytes": 23187
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/0.rgba",
+        "sha256": "f80768a3bb17bee53a65df97315760570b9dac45bbcea4f553c28d61d7788f44",
+        "bytes": 92748
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/1.index",
+        "sha256": "4a381e362ccef4d7b3639df44b6de719e5438551525fb0953c33ae77711e5645",
+        "bytes": 23187
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/1.rgba",
+        "sha256": "f80768a3bb17bee53a65df97315760570b9dac45bbcea4f553c28d61d7788f44",
+        "bytes": 92748
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/2.index",
+        "sha256": "4a381e362ccef4d7b3639df44b6de719e5438551525fb0953c33ae77711e5645",
+        "bytes": 23187
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/2.rgba",
+        "sha256": "f80768a3bb17bee53a65df97315760570b9dac45bbcea4f553c28d61d7788f44",
+        "bytes": 92748
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/3.index",
+        "sha256": "03a12b665a5be42fa22907ca0d3660f4bdff69d3e0a82ef31e61ff102ec41527",
+        "bytes": 24073
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/3.rgba",
+        "sha256": "3c79a8cb5b500c0b266014d6d9d51df0140e4bcfc3ce69adf457fe4eeb082d5c",
+        "bytes": 96292
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/4.index",
+        "sha256": "03a12b665a5be42fa22907ca0d3660f4bdff69d3e0a82ef31e61ff102ec41527",
+        "bytes": 24073
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/4.rgba",
+        "sha256": "3c79a8cb5b500c0b266014d6d9d51df0140e4bcfc3ce69adf457fe4eeb082d5c",
+        "bytes": 96292
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/5.index",
+        "sha256": "03a12b665a5be42fa22907ca0d3660f4bdff69d3e0a82ef31e61ff102ec41527",
+        "bytes": 24073
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/5.rgba",
+        "sha256": "3c79a8cb5b500c0b266014d6d9d51df0140e4bcfc3ce69adf457fe4eeb082d5c",
+        "bytes": 96292
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity03-shp-e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/cucity03.shp",
+        "sha256": "e8753f23d0f5e6889d5a7503e1b495e31b8c2cdbf8e1de05b90ed11e4655b752",
+        "bytes": 68840
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/0.index",
+        "sha256": "502b296a71f3a0a04d0b2fa227444c2dd31159e252c3821b86b1aa07ddf00508",
+        "bytes": 32208
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/0.rgba",
+        "sha256": "28a4036e4661f79d404b62df76e466464f5baaa700cc4149030ba1092cc9aa84",
+        "bytes": 128832
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/1.index",
+        "sha256": "502b296a71f3a0a04d0b2fa227444c2dd31159e252c3821b86b1aa07ddf00508",
+        "bytes": 32208
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/1.rgba",
+        "sha256": "28a4036e4661f79d404b62df76e466464f5baaa700cc4149030ba1092cc9aa84",
+        "bytes": 128832
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/2.index",
+        "sha256": "502b296a71f3a0a04d0b2fa227444c2dd31159e252c3821b86b1aa07ddf00508",
+        "bytes": 32208
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/2.rgba",
+        "sha256": "28a4036e4661f79d404b62df76e466464f5baaa700cc4149030ba1092cc9aa84",
+        "bytes": 128832
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/3.index",
+        "sha256": "96a1bcf37ab78a5363c52d4b667438ae45e2b2dc851e3689f0457d63499b7cd3",
+        "bytes": 13545
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/3.rgba",
+        "sha256": "b2671e9646948648a0348f47c1f678184adb4425ec6c266b6743208e3d428380",
+        "bytes": 54180
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/4.index",
+        "sha256": "96a1bcf37ab78a5363c52d4b667438ae45e2b2dc851e3689f0457d63499b7cd3",
+        "bytes": 13545
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/4.rgba",
+        "sha256": "b2671e9646948648a0348f47c1f678184adb4425ec6c266b6743208e3d428380",
+        "bytes": 54180
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/5.index",
+        "sha256": "96a1bcf37ab78a5363c52d4b667438ae45e2b2dc851e3689f0457d63499b7cd3",
+        "bytes": 13545
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/5.rgba",
+        "sha256": "b2671e9646948648a0348f47c1f678184adb4425ec6c266b6743208e3d428380",
+        "bytes": 54180
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cucity04-shp-0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4-79e668c9bd08bc5eed811df19de2af418cf8b434b97abf1fe2d65809321507e0/cucity04.shp",
+        "sha256": "0c26ccf72982cb4bde981b1485950ff1a60f012981ebec64b5db1e1acdada4b4",
+        "bytes": 64904
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cufrfgl.shp",
+        "sha256": "919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f",
+        "bytes": 10568
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "8eb037cb2636bebee8a2d6a22cb4fbd577a0a5356d41627ed4cdefb5333891c5",
+        "bytes": 784
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "b982894f4f522b1b3050852292a00ec80427cb0af36879d554080e94794b6ad8",
+        "bytes": 3136
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "851c81a5f046df29e164cc191e95007878ecf2ce8907584bff186eaf3c42cd6c",
+        "bytes": 870
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "3c8473a7b07d0e8834fa87f2c926d53db88a8ffbcf145024fdb8f02166b77d99",
+        "bytes": 3480
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/10.index",
+        "sha256": "dc52c193c3363e0081c948ab7180450b677e6b77d2e27b2519117c3941f915de",
+        "bytes": 961
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/10.rgba",
+        "sha256": "e2ed9861bd0ef1907b1d6112507501229b430e6c3d00d5bccff2f2a529a6c1f6",
+        "bytes": 3844
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/11.index",
+        "sha256": "875a39efcc5cb86e178abadef7a3b26baccb13871ab1a61d90cd732459024eb1",
+        "bytes": 1023
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/11.rgba",
+        "sha256": "ffcf3e181c9f091c7478104e54c0f51b7c6a6e5e1e6ad823e32a9aa2400af604",
+        "bytes": 4092
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/12.index",
+        "sha256": "1d98593a5d7ed95c07ea71a776e07027c90dc057ed276dc6ea906d419b31c070",
+        "bytes": 1020
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/12.rgba",
+        "sha256": "5164661c3b5e2e4f568c7ab48d109e0a10a56f98b84e7727ddebcc8877d76831",
+        "bytes": 4080
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/13.index",
+        "sha256": "7c395659a61390144cf2d37d6dd2a8affec9332b3ff1fe7458a686d2c4121582",
+        "bytes": 1015
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/13.rgba",
+        "sha256": "65240ef461a0edea63a5f1ef47d8db1b56dc544263bb1a285596a5651a0dc34e",
+        "bytes": 4060
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/14.index",
+        "sha256": "20fa76aaef659d4de6c63df54125a6c0704b95ce55b89c552299c9ff980feca9",
+        "bytes": 868
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/14.rgba",
+        "sha256": "c6f34861a8bff44fcaaea927427d9ac8a7b8bec699f4f72535d87b6e3d923e54",
+        "bytes": 3472
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/15.index",
+        "sha256": "ce329ff2841909350d357533540c596c1376bb04bff894e7b62828f5bddfcfe3",
+        "bytes": 812
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/15.rgba",
+        "sha256": "3eb47d50bb752ddb87e89eeba1b7b4eb4e093afc7447ea702c8771d96612105a",
+        "bytes": 3248
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/16.index",
+        "sha256": "e65b985b23e0c4f6c7666da692ff85b7362ff043d8c061adbeb22e064ed65c20",
+        "bytes": 6474
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/16.rgba",
+        "sha256": "3bda27d3ef1f3db7cddc21e2bd55214fe22ea63985fec1e034762d4cdd54664f",
+        "bytes": 25896
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/17.index",
+        "sha256": "2c15f8a30db8d6bb14370684ec9e87ed9e098d9def097b92bedd959488e3e656",
+        "bytes": 6319
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/17.rgba",
+        "sha256": "1772908908f8233350a58ad71b3b63789a9f25dc2d61e3660f261a1315488ba3",
+        "bytes": 25276
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/18.index",
+        "sha256": "6fcdd68a508eb854124611d5b0f819b7de15c0db19e9e2e2d701b3f87b583e6a",
+        "bytes": 9800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/18.rgba",
+        "sha256": "a05b4155d8eddba0573f8e5fe87b4dd3230789f5661cd54fc38ff38c9421f92e",
+        "bytes": 39200
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/19.index",
+        "sha256": "f5db4f8aaaaa119291ccc7991ae41d0684767ec5d87543f3d29a5e3ce1a99959",
+        "bytes": 5822
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/19.rgba",
+        "sha256": "2bfbf5532efd5aae45cbff01afb092f03b733a67b3befb043e0b8f619a640317",
+        "bytes": 23288
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "b191fd50ab001e1f54243530304c5536e23acede1c9005c160d477b172a7e78c",
+        "bytes": 992
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "c561dc0c10baae68b35977af39c6878a16cbc3d8e21b45bdc5bc9179c34e1aa1",
+        "bytes": 3968
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/20.index",
+        "sha256": "ff64662bec33915546280ddde7e0d29132790104a3f76af221fc95410cfb1978",
+        "bytes": 9999
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/20.rgba",
+        "sha256": "ece3a25f4cafa2eb3d58c1d9f2275f2561d3786c3aabdf5b225092e319a132ec",
+        "bytes": 39996
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/21.index",
+        "sha256": "88fa381a16797ad2288ae5b0d9ceea0763b36a49f6bed0bfa56d4975cc6e57ef",
+        "bytes": 407
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/21.rgba",
+        "sha256": "fcb22440e5b33f1e4049f0fa3327e486d4545b83e728696de68748f2096db238",
+        "bytes": 1628
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/22.index",
+        "sha256": "d09983eb899272f5a0c77e0cb3b9742f59bc03af5e98b80a98bda48ff684f1aa",
+        "bytes": 7857
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/22.rgba",
+        "sha256": "c770ea0f7d219deb019463a3cfdef36539f2bd33426e0e1f4a51fb8c95f526cc",
+        "bytes": 31428
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/23.index",
+        "sha256": "1444c97095a4be5b6f7bd2b22d73187c64ff64b5b92f663dc01731054bbc843c",
+        "bytes": 8366
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/23.rgba",
+        "sha256": "6fc9446e01929d26e0da629ba5821692f97ae3cae0ef0d3e5884df889e58fa6e",
+        "bytes": 33464
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/24.index",
+        "sha256": "2d1a7bb7466d3f5da41f77168e1575f6a51689bc676c1de63c51bfcfcef8c14e",
+        "bytes": 9898
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/24.rgba",
+        "sha256": "6204317176b8f0b8f8f2ffb1a3bc21a7cdf24a4b137c55fa90233386a90cddec",
+        "bytes": 39592
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/25.index",
+        "sha256": "f4d6a8b379bdbd716d9501a1be39c7145bd81fba6ccbc219eab338efbd859cc8",
+        "bytes": 6216
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/25.rgba",
+        "sha256": "74bc73edaeee1c79e75dce4ed28f0063030d2baabf256720f0a4fa0b7fd009bf",
+        "bytes": 24864
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/26.index",
+        "sha256": "3a1476830406e484858608bbc450e7cf92f2201d9648775a40d37bc8c3f4e501",
+        "bytes": 9800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/26.rgba",
+        "sha256": "e1b444585265a7fae807b62e50ce3eba09bf12b443bfed05a3c3f25055165016",
+        "bytes": 39200
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/27.index",
+        "sha256": "65aa757ac0e5508f5d0ac50566808ad7c453615b9fee103ac4de4cb693978225",
+        "bytes": 9700
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/27.rgba",
+        "sha256": "10135396bc2f266d08fce051462ff11c458d659f803dcf3e73348fccf86e9bf0",
+        "bytes": 38800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/28.index",
+        "sha256": "6918b151684422b1dd15c2bc3fca491cc291b92d7ed0658f1254565747b469b2",
+        "bytes": 10100
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/28.rgba",
+        "sha256": "c1d413d38783a589e3552c8aaf76c5745cbb3a28812f62e62b44d8a579064e1b",
+        "bytes": 40400
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/29.index",
+        "sha256": "b028876014f174a4f03633a7fae17a8c35bb91eee9ce34ae45df6ea7311ddc9d",
+        "bytes": 10403
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/29.rgba",
+        "sha256": "0cf752a56e1204d57ec48004835a1ca120515c00ab71285a934db5e9cde924ee",
+        "bytes": 41612
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "d688770bb3a7f015a4fe84be14ecb68cceec1c6aba62935aabca3d76465c9899",
+        "bytes": 1023
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "d8c9d46f243da39d0f2b03082b6b0a1d61f62d26625bd62f8a2f24b0a6145503",
+        "bytes": 4092
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/30.index",
+        "sha256": "7116dd8a86dd25bba8c5a2dc0f8ce9cf32187c6d20a107c4ab04202a86ca1e46",
+        "bytes": 8256
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/30.rgba",
+        "sha256": "7f275813bde90d5c3e1900a4ef5a15c3c46e7988e3039aee4f75b3c63a042c17",
+        "bytes": 33024
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/31.index",
+        "sha256": "0068c0b4d9e2ec6cfdbebbe57171b3e5e0b2b6e7e8922bac4c1dee5210da2b99",
+        "bytes": 6336
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/31.rgba",
+        "sha256": "10fda165858debe01dff92ad54959e915ed0ca1ee283b1c737fa33e9ac7af3ba",
+        "bytes": 25344
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "75087f3c6a844c781ff4277828ddf1cbeae1ad99b0d3342ffa9cd33a62c441c4",
+        "bytes": 1054
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "c7769f903526b6acf224e5218f2a32f63ea907401edfcde453f57c33609720d5",
+        "bytes": 4216
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "fcbdd02f977fbe575bc426b2e0105c3c40ad6033d0526c4a0abdb060305c017d",
+        "bytes": 990
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "9b20b00572b35ae1859fe96c9b2e0ad1b2d781e4a072ea3a41218880ea74a864",
+        "bytes": 3960
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "b93311f6509e7821cede7daaddff5f1cb052750207618490d45ffd47d25bb455",
+        "bytes": 960
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "e7defd647767c6c41f33e152317ccc39098d9ebe3a39fb5ca1eb7aa3b0342695",
+        "bytes": 3840
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "0db530ee6fcc5ffb96142ed391cbe14e946212e3173b64e30149e523984c7a36",
+        "bytes": 900
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "b0a1a24e363891076d5698754e0b10f658b70dda0381e5859e784fa35168b09f",
+        "bytes": 3600
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/8.index",
+        "sha256": "496eeb8a133a4d7644b6de67d8fa6ae1135b5f323ae3315ffd54357ed5478acb",
+        "bytes": 840
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/8.rgba",
+        "sha256": "aecc2cdd1c3b6527f4ac642c7bb9a1b40a5a37e420b88c389fc1c1b9a4b1c3c8",
+        "bytes": 3360
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/9.index",
+        "sha256": "a05c7018a04d2027a56069417e8ffff8b300eb1f71419c4833e4b7ff4386a32e",
+        "bytes": 899
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/9.rgba",
+        "sha256": "496de695ccb7269f524330120b7404e0b1579f59f25f5c25d247f8cc2665edf1",
+        "bytes": 3596
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cufrfgl_a-shp-5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cufrfgl_a.shp",
+        "sha256": "5f15b078d003c8551053faaed366d653044bd6701fab9844ffe8eae1ada187fc",
+        "bytes": 21632
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/culbfgl.shp",
+        "sha256": "919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f",
+        "bytes": 10568
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "073b8dab9f21306a2d8d0484dc2a79b002607630a836c8dca99c0492ab6c83af",
+        "bytes": 784
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "688ca95640c2d8f300969aa31755948c7ff997668bf43243515266663d7a8eaa",
+        "bytes": 3136
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "d68c33cf93b325c3d2a56646bc4ea34a5bfaf022aae77501976d16b33dc475b9",
+        "bytes": 870
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "a83de6e13c9c1dd46dc3d1ea2bd7595bb84dbed96bf51af0c4ee3b5c7e42ff4a",
+        "bytes": 3480
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/10.index",
+        "sha256": "05a9d3c8ebf9793c96c164c8dd130d859d5d30c83b436bbfb37176150aa5e733",
+        "bytes": 961
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/10.rgba",
+        "sha256": "637b1260a3132ed1914e7130424366ff796f2db26178be0398da10884ed44853",
+        "bytes": 3844
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/11.index",
+        "sha256": "5ae10bd430a33763deb132c02829daefc0443ad55e059cd8fd1c3fbbcea41ea9",
+        "bytes": 1023
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/11.rgba",
+        "sha256": "ba4d872ea6ae5b964793dd45ba236fcb464a476c6656a9d0aade6519a2be7e42",
+        "bytes": 4092
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/12.index",
+        "sha256": "91e1b3fbce6a9384739673d195fe2f0f315fa74d8f269723002af6c951b87318",
+        "bytes": 1020
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/12.rgba",
+        "sha256": "c41af9c87a79dabcf79b46a0a34bb5a0b84ee7e13ef1a3815c5ff9cf35fab665",
+        "bytes": 4080
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/13.index",
+        "sha256": "28994084ad5f63084790d26c1b877d5d2c0aae01ec2c86d0b1836becfe765777",
+        "bytes": 1015
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/13.rgba",
+        "sha256": "950c71a0e70932f9482e18b0e16a49969e8ab5eb4f97925f432d01408ca0cdf8",
+        "bytes": 4060
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/14.index",
+        "sha256": "ce3262f5779e9e834765ad6a0a69c612e20f99e014e629e44d0913cbcc378e6c",
+        "bytes": 868
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/14.rgba",
+        "sha256": "841c976955d7295d35481f0358d0d09c32dbd987f51199c24128280be2b5a1c1",
+        "bytes": 3472
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/15.index",
+        "sha256": "2b8df5786f485c44c17d885126824a83092267a5ee6a754546befabbcc34643c",
+        "bytes": 812
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/15.rgba",
+        "sha256": "fdb6a1d1567423fd4ffce543aebcfa25e7dd9666cfe76866d103e913d9a15a2e",
+        "bytes": 3248
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/16.index",
+        "sha256": "601a6b708e327fede19c0629a239ab39b5e8534249850c13143bca2220fd3311",
+        "bytes": 6474
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/16.rgba",
+        "sha256": "187e70bcea451b06b32e49f4cfbb29e6d594fbf1208d753562cf884553da59c3",
+        "bytes": 25896
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/17.index",
+        "sha256": "17a3e03f0f91551c8d19eef047950ae8efd82894d616c5f0f208df30fe4d8935",
+        "bytes": 6319
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/17.rgba",
+        "sha256": "7a5ba3a591278122f027df79217ef818f4ba426f94247cd8fd6dd7ea48a8f496",
+        "bytes": 25276
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/18.index",
+        "sha256": "5a26b4d0c61c6717b7ed6619c2dd4a2d541a9d6019398dae50553ba8b3d32534",
+        "bytes": 9800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/18.rgba",
+        "sha256": "95da4e633a6e7acfb72b95fabce719e0f15f4c71a9a06183d1fd29b7016fceac",
+        "bytes": 39200
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/19.index",
+        "sha256": "f5db4f8aaaaa119291ccc7991ae41d0684767ec5d87543f3d29a5e3ce1a99959",
+        "bytes": 5822
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/19.rgba",
+        "sha256": "2bfbf5532efd5aae45cbff01afb092f03b733a67b3befb043e0b8f619a640317",
+        "bytes": 23288
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "f4d68cfa8773fdc964da913ad8226e165b6ced48077f354faccb3228f28d3346",
+        "bytes": 992
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "5175f3ca294fd270aacb7a28e2c516c86277db07af77929947201a590986a8fe",
+        "bytes": 3968
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/20.index",
+        "sha256": "ff64662bec33915546280ddde7e0d29132790104a3f76af221fc95410cfb1978",
+        "bytes": 9999
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/20.rgba",
+        "sha256": "ece3a25f4cafa2eb3d58c1d9f2275f2561d3786c3aabdf5b225092e319a132ec",
+        "bytes": 39996
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/21.index",
+        "sha256": "0884808ea5e1a617689d339a6c6f58e1d4f63a51e0f7d3d05ccb2247cce01294",
+        "bytes": 407
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/21.rgba",
+        "sha256": "1c7f5f451273f56d766c96b1f8880b0d9532132ba21a48688a5af46d5e2afc8b",
+        "bytes": 1628
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/22.index",
+        "sha256": "dd0a114e7c5cc2a0960761edcd4854b199674bc719f7d4b2b09224eaa82c339b",
+        "bytes": 7857
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/22.rgba",
+        "sha256": "c5fe3cfc49d3b5b53e825929f0d7bb0042bd205268037ccab3e1f8241c4a0601",
+        "bytes": 31428
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/23.index",
+        "sha256": "1444c97095a4be5b6f7bd2b22d73187c64ff64b5b92f663dc01731054bbc843c",
+        "bytes": 8366
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/23.rgba",
+        "sha256": "6fc9446e01929d26e0da629ba5821692f97ae3cae0ef0d3e5884df889e58fa6e",
+        "bytes": 33464
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/24.index",
+        "sha256": "2d1a7bb7466d3f5da41f77168e1575f6a51689bc676c1de63c51bfcfcef8c14e",
+        "bytes": 9898
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/24.rgba",
+        "sha256": "6204317176b8f0b8f8f2ffb1a3bc21a7cdf24a4b137c55fa90233386a90cddec",
+        "bytes": 39592
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/25.index",
+        "sha256": "d7a998a93655a80817d17117fb59323e6d893d545bc15b8f541924f0a28c600e",
+        "bytes": 6216
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/25.rgba",
+        "sha256": "c0f683468ba74282eb83a1fdf39c6daa24b0b6df02f3d6ec047d09318f1eb2c5",
+        "bytes": 24864
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/26.index",
+        "sha256": "3a1476830406e484858608bbc450e7cf92f2201d9648775a40d37bc8c3f4e501",
+        "bytes": 9800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/26.rgba",
+        "sha256": "e1b444585265a7fae807b62e50ce3eba09bf12b443bfed05a3c3f25055165016",
+        "bytes": 39200
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/27.index",
+        "sha256": "87eb4f43825dded56651b4f492faeb6db7f2ed09f31a5e1326c50cf3630c1e70",
+        "bytes": 9700
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/27.rgba",
+        "sha256": "3b0f8a843e61a5ff752fd785ed02ecdd38ab225d748e8660ebbc032151736755",
+        "bytes": 38800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/28.index",
+        "sha256": "26c0d5cfe15b8e3497828323a781d7f325766cf9d1e917f8d9d1ef3a8b70ed6f",
+        "bytes": 10100
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/28.rgba",
+        "sha256": "17eb7b99b22bf54b314c70a78ce41ab825a3f8743003914cb767d83789d36a5d",
+        "bytes": 40400
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/29.index",
+        "sha256": "b028876014f174a4f03633a7fae17a8c35bb91eee9ce34ae45df6ea7311ddc9d",
+        "bytes": 10403
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/29.rgba",
+        "sha256": "0cf752a56e1204d57ec48004835a1ca120515c00ab71285a934db5e9cde924ee",
+        "bytes": 41612
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "6ab86416202459629934395affd3bdbc3355e1fefa85bbbb982315105f1a5c44",
+        "bytes": 1023
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "30a76a8ca1a7f945f43036f3d61f901f2fd9b9f36cccc73499d875fe9eeb9054",
+        "bytes": 4092
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/30.index",
+        "sha256": "7116dd8a86dd25bba8c5a2dc0f8ce9cf32187c6d20a107c4ab04202a86ca1e46",
+        "bytes": 8256
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/30.rgba",
+        "sha256": "7f275813bde90d5c3e1900a4ef5a15c3c46e7988e3039aee4f75b3c63a042c17",
+        "bytes": 33024
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/31.index",
+        "sha256": "0068c0b4d9e2ec6cfdbebbe57171b3e5e0b2b6e7e8922bac4c1dee5210da2b99",
+        "bytes": 6336
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/31.rgba",
+        "sha256": "10fda165858debe01dff92ad54959e915ed0ca1ee283b1c737fa33e9ac7af3ba",
+        "bytes": 25344
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "3111e0b065383ec2b09b91f6dffccb5023acd1b8b7cec8406d3779b8fdcc5438",
+        "bytes": 1054
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "bd898b4166db942bbe9c65296c6df323d43f037d7cbc4d82cfa93fd1239f05a2",
+        "bytes": 4216
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "7f42d1b305bd919ff35c705d33b2c14130393880a71e196cbc2c3c680040c1f0",
+        "bytes": 990
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "2e114a202e45b01ab1c8e5467a99b17e03221e5e6ccfe01de8e89060ac7bbba1",
+        "bytes": 3960
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "5e9dc3c5f603cdb004dcfb920bcef6f840274943fb0c65ef5d858ad08bd5bb6f",
+        "bytes": 960
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "b29b7f524bb6e2a8cbe5f14e25bda244d2d346230964426117f0273362afdbf6",
+        "bytes": 3840
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "8edf5a9b353cebdc4c0f434a8459422910d1e7139cd8fffadea87534867a14b3",
+        "bytes": 900
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "ccab94a4e23276c3704c58bb5cf4c9b8ded5db3ae234ea1cd6462246058c916b",
+        "bytes": 3600
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/8.index",
+        "sha256": "4b27fb829bfcff91780f53f9883297ec342c8b82a17a9a8e70b564a9eec242b5",
+        "bytes": 840
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/8.rgba",
+        "sha256": "b82ed48d73d1782010b509bf824d429d3d00af26c10b6f1e98f84f2437b7c098",
+        "bytes": 3360
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/9.index",
+        "sha256": "d57deef92a536ad50bcbe34568996a9b3525f5cf7d5ffd0c10e6c3da06505c54",
+        "bytes": 899
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/9.rgba",
+        "sha256": "5807cc681942751142186fb507a70eb46bdcdef862fa4d252b6d0b83aa5624eb",
+        "bytes": 3596
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/culbfgl_a-shp-1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/culbfgl_a.shp",
+        "sha256": "1d6cbd1b385604ee9158351c0875848a96fce48e1b11f4fed7b0b632bea52a34",
+        "bytes": 21632
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuskfgl.shp",
+        "sha256": "919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f",
+        "bytes": 10568
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "9a7ea5033ce586a50d1fd453a5949b538c3859fb2fd03ba68e8b74735b16adcf",
+        "bytes": 784
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "437e038f38c152535ac31753d218bf26afa492f748bda9ed67ffcbdee54fa21d",
+        "bytes": 3136
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "5222822b46e22e83212503d3f4c5217bdd1563ca15bbfd46d98762bef2ccc7c9",
+        "bytes": 870
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "7d4cf2871d0de47c7ad14e627c3d922a8c22cef88a49ffd2c362318ee45959db",
+        "bytes": 3480
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/10.index",
+        "sha256": "3d0373378a0b74a116bbcdb37d8e57e8f731a6be16709c62960f38cc24f379b2",
+        "bytes": 961
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/10.rgba",
+        "sha256": "e6d7dc6db387ac4a2ce571f4548300afcdfdfa54d6c1bf9ba669f812bbd9b729",
+        "bytes": 3844
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/11.index",
+        "sha256": "5f6385c7ec33ddf91f365fcf34ad4e5a214c10281d4d7cb5cd13c40df079e0fd",
+        "bytes": 1023
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/11.rgba",
+        "sha256": "20e2597646a07631fea08d25e9d81fad2f1cbf2671861a2930c32327c47cdbf3",
+        "bytes": 4092
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/12.index",
+        "sha256": "5482efffd7f8c55962032e87bbb9351f29f1cbd2eb806eb3358fd573b2226394",
+        "bytes": 1020
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/12.rgba",
+        "sha256": "7a86278f09a380e166f4679c7702571158ca9afb35e9e2aba12725bc4301a0f5",
+        "bytes": 4080
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/13.index",
+        "sha256": "cac0eff880e8adbae3132bb416087d0686821507e8782fa8217bd0409e3f7327",
+        "bytes": 1015
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/13.rgba",
+        "sha256": "75b25f7eb5130ce6e970df1cf771082fed92082813c69fef5bdbacebd97ca2dc",
+        "bytes": 4060
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/14.index",
+        "sha256": "9d5af03366bd5f10b0333fded2d2bfa59a0fe3c9121c8a7c98cf79b21ca23a1f",
+        "bytes": 868
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/14.rgba",
+        "sha256": "a9c897e575eb490f3c1b2dde251a1bc67b5ce7949f0ac698eeee920664a99b6d",
+        "bytes": 3472
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/15.index",
+        "sha256": "f26d99f272f26f2025360d8cb9868229f730753eaaca083dbb968731f09d54a7",
+        "bytes": 812
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/15.rgba",
+        "sha256": "93b4858a6f2123b22eb9482e3d55a6a309b8e268c6cb23b30df6a624abaa37d5",
+        "bytes": 3248
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/16.index",
+        "sha256": "6ab2cd36291c214a146fd40291bdaa417ddedc935243eaa48334f4ede69a35c4",
+        "bytes": 6474
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/16.rgba",
+        "sha256": "65ab0af075ca7a4e6d2d0f6e6ead76a07a0448e6790aabecab48ac6da44a773a",
+        "bytes": 25896
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/17.index",
+        "sha256": "2c15f8a30db8d6bb14370684ec9e87ed9e098d9def097b92bedd959488e3e656",
+        "bytes": 6319
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/17.rgba",
+        "sha256": "1772908908f8233350a58ad71b3b63789a9f25dc2d61e3660f261a1315488ba3",
+        "bytes": 25276
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/18.index",
+        "sha256": "6fcdd68a508eb854124611d5b0f819b7de15c0db19e9e2e2d701b3f87b583e6a",
+        "bytes": 9800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/18.rgba",
+        "sha256": "a05b4155d8eddba0573f8e5fe87b4dd3230789f5661cd54fc38ff38c9421f92e",
+        "bytes": 39200
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/19.index",
+        "sha256": "f3d912570bc185831d93b43fdf98bd1c9560be65088caf4f3a5ceb12215bc48e",
+        "bytes": 396
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/19.rgba",
+        "sha256": "e8b4c47506ace9af2fefcb8ef444e2c7feb3771cf539c0fbd6fab6246f2e4253",
+        "bytes": 1584
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "ffe172bc59041fe376061ad7ea75ed034f492a55624f3ae8126073edaed3fe20",
+        "bytes": 992
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "bb46ffc150540f1547bceedc0d3533b49bda5f7e81050537bdb40ec537b8e6ec",
+        "bytes": 3968
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/20.index",
+        "sha256": "ff64662bec33915546280ddde7e0d29132790104a3f76af221fc95410cfb1978",
+        "bytes": 9999
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/20.rgba",
+        "sha256": "ece3a25f4cafa2eb3d58c1d9f2275f2561d3786c3aabdf5b225092e319a132ec",
+        "bytes": 39996
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/21.index",
+        "sha256": "0884808ea5e1a617689d339a6c6f58e1d4f63a51e0f7d3d05ccb2247cce01294",
+        "bytes": 407
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/21.rgba",
+        "sha256": "1c7f5f451273f56d766c96b1f8880b0d9532132ba21a48688a5af46d5e2afc8b",
+        "bytes": 1628
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/22.index",
+        "sha256": "b0377262dcb59a7b6de7bd5a1bde7f4a1fd41328e2823c3c71c8508aaea6e42e",
+        "bytes": 7938
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/22.rgba",
+        "sha256": "067e926d53b4e26887355122335ee2dcd1b5dd043b4024cc3e1c5f02ab6c5c74",
+        "bytes": 31752
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/23.index",
+        "sha256": "1444c97095a4be5b6f7bd2b22d73187c64ff64b5b92f663dc01731054bbc843c",
+        "bytes": 8366
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/23.rgba",
+        "sha256": "6fc9446e01929d26e0da629ba5821692f97ae3cae0ef0d3e5884df889e58fa6e",
+        "bytes": 33464
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/24.index",
+        "sha256": "c81c89dbdc2caee1951bb7bb0cfa03c7a63287a3a2b528d254235d5714b3d60b",
+        "bytes": 9898
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/24.rgba",
+        "sha256": "5d73eda0a695f50c88411d421ce500f0c0490dcf35c12846c43d7afce510b1a4",
+        "bytes": 39592
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/25.index",
+        "sha256": "f4d6a8b379bdbd716d9501a1be39c7145bd81fba6ccbc219eab338efbd859cc8",
+        "bytes": 6216
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/25.rgba",
+        "sha256": "74bc73edaeee1c79e75dce4ed28f0063030d2baabf256720f0a4fa0b7fd009bf",
+        "bytes": 24864
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/26.index",
+        "sha256": "cf7c30384011d6dd96a4eb17397116545d1326ca091baf813e4b3c041a3301ac",
+        "bytes": 9800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/26.rgba",
+        "sha256": "16d86a83143c444b56828e5560010fefe216d10ae8b2dd1b11b7e6c21be1b5ff",
+        "bytes": 39200
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/27.index",
+        "sha256": "45e2b99b26eaaa5ea990b0437fdd3459e90b39c5882c1743b276e09b22873276",
+        "bytes": 9700
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/27.rgba",
+        "sha256": "121bd8ae4c431656ca3000143fdb35891f84600b24f917b9f9f4d6f30364e0d9",
+        "bytes": 38800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/28.index",
+        "sha256": "8ca2a29b3d9039a6e844c651e645acb47e6a84ca3c13f36cd08820c2c5191fc9",
+        "bytes": 10100
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/28.rgba",
+        "sha256": "2b1a15d846455eb5acefb3fc35f9902b7d28fc3bdef754149907efa48ccd6bf4",
+        "bytes": 40400
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/29.index",
+        "sha256": "58c22e3984b48bf48f6cb861ee08ceef37528df52550b8e69ef0fa6ed9a4a037",
+        "bytes": 10403
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/29.rgba",
+        "sha256": "b8001618b33b475be5e2d754b4e9f8bddf56a693d5195a1bf7c0a11de908e6db",
+        "bytes": 41612
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "5e66403a0c0ee7534bdd095c0c55de8a45b56331c9114e8a6b27fa5f927af5cd",
+        "bytes": 1023
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "63d4bdc11375afd278b4af481b46c63f486e7e09a9a6543c82b8503b84d77bcb",
+        "bytes": 4092
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/30.index",
+        "sha256": "7116dd8a86dd25bba8c5a2dc0f8ce9cf32187c6d20a107c4ab04202a86ca1e46",
+        "bytes": 8256
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/30.rgba",
+        "sha256": "7f275813bde90d5c3e1900a4ef5a15c3c46e7988e3039aee4f75b3c63a042c17",
+        "bytes": 33024
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/31.index",
+        "sha256": "381356e1664f80b47c2557275ad0c08c39b0af1602925c58dde6088b7ab62996",
+        "bytes": 6336
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/31.rgba",
+        "sha256": "e71ae32eab7be3df3149e371ba2a9370ef28f54a8f540bb5512839be5489ad56",
+        "bytes": 25344
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "2ec27fe9fe30c8b7fee3cf8cb82accd5d18bbf993d87802c8f183d88ccee6112",
+        "bytes": 1054
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "fb0be0a7dd5cf20697cfc7c5694dac2269a4f501c94b123bf41cf201adfaf90e",
+        "bytes": 4216
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "5de3076b42e3110bbb4ae13b3aa09e0512cf3d3aaecdcfdba3fa7ca10914d1d2",
+        "bytes": 990
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "24217966165edb20d5f182f7b3499a8512525df41fafa501db13b6848453043d",
+        "bytes": 3960
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "557a9761d80bd8f207c146fdcb792721bf8394103bd41a8ac0c1fa610e7393d5",
+        "bytes": 960
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "d104eb6c2ce4b3312749f09e902bb2d11c0b18c82d28b9b23a00e57042049163",
+        "bytes": 3840
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "ef292fc0d3c634e0013197588910a97528bc57a119ec8148d54e0550d602d10d",
+        "bytes": 900
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "0f2cda39146c8293edd3d64f73b7954daeed74ba3e04725977c516944469a4b3",
+        "bytes": 3600
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/8.index",
+        "sha256": "d6f65fe67eaecc7a560c9638917165c69df3b88beee78f9e869d711b8a0d03e6",
+        "bytes": 840
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/8.rgba",
+        "sha256": "0e9dedf20e3c4758b81457777de6b94a4e3af0c79e909611c0d07b1d92235b8e",
+        "bytes": 3360
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/9.index",
+        "sha256": "dadadb3bd3d4849e5ae09b38f9e07aca986ba72f91fba9609e455605618dea85",
+        "bytes": 899
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/9.rgba",
+        "sha256": "413d9a8e7228615133998991ff7948c690a7fe0ea8116ab7645cb70f23efdda5",
+        "bytes": 3596
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuskfgl_a-shp-66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuskfgl_a.shp",
+        "sha256": "66e54720b118138be824c89659a3812f856e8235cb23f790cf261de18b6f905d",
+        "bytes": 21384
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "3801fc9702a4b55eb14a194dd6269b9b64d0b4a1b60363d12b8175d6d39b7061",
+        "bytes": 7482
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "256b6fda3a495caf437b74c1acbcb94ac16943fd0a037a8ae29d6b073efc334a",
+        "bytes": 29928
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "412da76b2685e004724d9240183f01e7e88d32e33e7500bfa0b61346a8813c7b",
+        "bytes": 13640
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "a4e807863e570b51c75d60ffb4d5ae19d030f7689a85fcef214b12e660724d9a",
+        "bytes": 54560
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl-shp-919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuukfgl.shp",
+        "sha256": "919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f",
+        "bytes": 10568
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.index",
+        "sha256": "b9998685380577a22a093c51ae39ce9512f888b554fbf71711779d4f60da716c",
+        "bytes": 784
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/0.rgba",
+        "sha256": "598542146ab69b3011b43f549231eb54d2c34a1d1b9f524462f4e8b679c8e3eb",
+        "bytes": 3136
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.index",
+        "sha256": "5f92cd5fb8fa14e777968b0efd8763f883586d9ae518d9599e358411272075d2",
+        "bytes": 870
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/1.rgba",
+        "sha256": "492ae66a3bad6489d98b537135272660abb17daa451cd3cef88de50ea96f2a77",
+        "bytes": 3480
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/10.index",
+        "sha256": "ffdadcfd3873387958d9484879e135c9f0b7dffe343d11bea8196f58cc1526be",
+        "bytes": 961
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/10.rgba",
+        "sha256": "bbbf6ad146f5893d7842f4f3590e06ec599fa58845ebe224d042f9e69d94591d",
+        "bytes": 3844
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/11.index",
+        "sha256": "7837618347ef0c20bbcba58a9ac1b12fc3b1d375824b49774d1b1ed3783a7639",
+        "bytes": 1023
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/11.rgba",
+        "sha256": "4d10b4b0185a3012266176f415e767e9449ec53143daccf8be500cf504c846b9",
+        "bytes": 4092
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/12.index",
+        "sha256": "7248326f718f0a1a967f53c16d80e5e5ff5f815d929fbe6e15bfa71ce093da53",
+        "bytes": 1020
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/12.rgba",
+        "sha256": "1b9ddc9c57c3f2c9e0d9b55f346f5dd9e0ceacb97ee9f507ce79ae881226024f",
+        "bytes": 4080
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/13.index",
+        "sha256": "46a9be76ef67f057f7108c9b8c5cce24a38641df3fd46248dfa0766b159f95b8",
+        "bytes": 1015
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/13.rgba",
+        "sha256": "9bc2ca49e072a3ce322bc972006132a9e9510fc22cf3401e85d2d536e4829b35",
+        "bytes": 4060
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/14.index",
+        "sha256": "4833ef369704e0cab954244a7c9523f0ec5f476bed7d0277e8f994994accdc24",
+        "bytes": 868
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/14.rgba",
+        "sha256": "30039d0c9b3ee184774cefc64e612550d1d53cf2770d297b9fb2c36dbc2d974b",
+        "bytes": 3472
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/15.index",
+        "sha256": "67a3ab796b96b81d05c72343ff4fa59e64b3cf09c07eeb6ffd66a28414c6dea5",
+        "bytes": 812
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/15.rgba",
+        "sha256": "ac9a61b7046ce5a7de7fc72501abe59a3fa09bdeec9637357522150683956aba",
+        "bytes": 3248
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/16.index",
+        "sha256": "5f311e4bd919f9a00f72efd4076789fda019e2ac681effdacbaaa38c27afe6a4",
+        "bytes": 6474
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/16.rgba",
+        "sha256": "d10d3b2ccfc3d6bab755132630b8d98ec7058c0a2f830dafad9a202d50495c85",
+        "bytes": 25896
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/17.index",
+        "sha256": "cf0c3ddffb2289a07ec0833efad2fd51b0bf257ca9b9896b7308d10cb616d779",
+        "bytes": 6319
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/17.rgba",
+        "sha256": "3f9e2a87ec35971057b5d4f6bef2c6b3fbc89d47166e34e6bf227b30f74f79d0",
+        "bytes": 25276
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/18.index",
+        "sha256": "6fcdd68a508eb854124611d5b0f819b7de15c0db19e9e2e2d701b3f87b583e6a",
+        "bytes": 9800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/18.rgba",
+        "sha256": "a05b4155d8eddba0573f8e5fe87b4dd3230789f5661cd54fc38ff38c9421f92e",
+        "bytes": 39200
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/19.index",
+        "sha256": "47514ba40f46a49a219c9c295daf14e5d3cde96ce80b8097eaec9cf34cb63b4b",
+        "bytes": 5822
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/19.rgba",
+        "sha256": "94247dece3e9fd4911fa5d687b18453409d5e07d90d16a42845e9f30eee0852b",
+        "bytes": 23288
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.index",
+        "sha256": "acedee4a4adb0a7c1f8d506d780da5919691aca67cb39f7ad3b242755892b812",
+        "bytes": 992
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/2.rgba",
+        "sha256": "c62fc667140ef2cb13c3387b569a25e7b0fc7a47d7b000662f1567cf7ada9b02",
+        "bytes": 3968
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/20.index",
+        "sha256": "344f4b7a6efce51b9912a937a9bc2f3f66c68b6396cf6e42a00188b8e15b152e",
+        "bytes": 9999
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/20.rgba",
+        "sha256": "a031f1f292f0f2620a1e27641d7c3da03abcff3d82a4f0b89f27c357406ecc9b",
+        "bytes": 39996
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/21.index",
+        "sha256": "bd9c4dad7cf65247fa562215f8c8608de45377f4ed076a453db7eea2779a7639",
+        "bytes": 407
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/21.rgba",
+        "sha256": "aba993f0252fbc50d9e0bd13824a67d7f44a64043092d994c008be6ef219b470",
+        "bytes": 1628
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/22.index",
+        "sha256": "b0377262dcb59a7b6de7bd5a1bde7f4a1fd41328e2823c3c71c8508aaea6e42e",
+        "bytes": 7938
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/22.rgba",
+        "sha256": "067e926d53b4e26887355122335ee2dcd1b5dd043b4024cc3e1c5f02ab6c5c74",
+        "bytes": 31752
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/23.index",
+        "sha256": "28c97a77f1f949176d367083e118cd8eda6a4a772dd8a4c1c1fad3d7d5b3d46c",
+        "bytes": 8366
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/23.rgba",
+        "sha256": "19b76a19b4fc070ee276ba8d6b8184b2d3417d421b9129501f58eab91cc79e48",
+        "bytes": 33464
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/24.index",
+        "sha256": "a1777deec8ddcbeba6d575b71605ad31b4d5c2e7e7ba1e68a9a9d28c2dae5164",
+        "bytes": 9898
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/24.rgba",
+        "sha256": "8fd6f905b7f5f19bd464365e07dc1a1219d802769afeda2b1eef7866b84e3eeb",
+        "bytes": 39592
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/25.index",
+        "sha256": "f4d6a8b379bdbd716d9501a1be39c7145bd81fba6ccbc219eab338efbd859cc8",
+        "bytes": 6216
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/25.rgba",
+        "sha256": "74bc73edaeee1c79e75dce4ed28f0063030d2baabf256720f0a4fa0b7fd009bf",
+        "bytes": 24864
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/26.index",
+        "sha256": "cf7c30384011d6dd96a4eb17397116545d1326ca091baf813e4b3c041a3301ac",
+        "bytes": 9800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/26.rgba",
+        "sha256": "16d86a83143c444b56828e5560010fefe216d10ae8b2dd1b11b7e6c21be1b5ff",
+        "bytes": 39200
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/27.index",
+        "sha256": "65aa757ac0e5508f5d0ac50566808ad7c453615b9fee103ac4de4cb693978225",
+        "bytes": 9700
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/27.rgba",
+        "sha256": "10135396bc2f266d08fce051462ff11c458d659f803dcf3e73348fccf86e9bf0",
+        "bytes": 38800
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/28.index",
+        "sha256": "ff643b888e0dc791bb6ed935e3e986d1d2459dda739c02e66f63368864adf029",
+        "bytes": 10100
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/28.rgba",
+        "sha256": "bfade9b31a01479c5b33decb2ff9a0dfc0c9ae3f234597aa546cd726dce4f18c",
+        "bytes": 40400
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/29.index",
+        "sha256": "b028876014f174a4f03633a7fae17a8c35bb91eee9ce34ae45df6ea7311ddc9d",
+        "bytes": 10403
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/29.rgba",
+        "sha256": "0cf752a56e1204d57ec48004835a1ca120515c00ab71285a934db5e9cde924ee",
+        "bytes": 41612
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.index",
+        "sha256": "356bf6bbc4870084d0ad2664249b57a45323bde63cfed85a5fdcf3736ceb6899",
+        "bytes": 1023
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/3.rgba",
+        "sha256": "3af4b7a6293c660881f68f7a6f6784b4ff68299807494479cdeed63aefd73265",
+        "bytes": 4092
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/30.index",
+        "sha256": "7116dd8a86dd25bba8c5a2dc0f8ce9cf32187c6d20a107c4ab04202a86ca1e46",
+        "bytes": 8256
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/30.rgba",
+        "sha256": "7f275813bde90d5c3e1900a4ef5a15c3c46e7988e3039aee4f75b3c63a042c17",
+        "bytes": 33024
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/31.index",
+        "sha256": "ae71c65055a48be54ed0183afc2465b67003786d04fe51361c3b680024db287c",
+        "bytes": 6336
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/31.rgba",
+        "sha256": "4d2d883be27ab90cf2deff619d03c047ee76ac213a80b0d6b400fcf07352f948",
+        "bytes": 25344
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.index",
+        "sha256": "12af0a4ba295d795c05e40ce90faa2259243c62a10fa6e80b58400762cc3c189",
+        "bytes": 1054
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/4.rgba",
+        "sha256": "0618cdbed7ba0e99ddb951b8d7682b5c421f087c485cd419d3fd8392888a9b2e",
+        "bytes": 4216
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.index",
+        "sha256": "c818e3505dec05462214e222eb09e0633c1db92c1de24c2ed2dffa70cbd6bd17",
+        "bytes": 990
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/5.rgba",
+        "sha256": "0caad14adbfd65ce74db1a6c1bd49a3d299c2f445c412552bc22a2e2150643ba",
+        "bytes": 3960
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.index",
+        "sha256": "5d8e459f396275d8ee9f53e25dc08d8b740a9a28dfe4b9aa3097d40e024d8ee7",
+        "bytes": 960
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/6.rgba",
+        "sha256": "d69b99481fc6ce81b7d9447c90473b66e2a13218050d3fbc33875d2a786f7e03",
+        "bytes": 3840
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.index",
+        "sha256": "e79116241b5b3c433b128609858fecbd4eef92ac8e53782b332d27eb52e9f18b",
+        "bytes": 900
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/7.rgba",
+        "sha256": "2bada6ef6851dad91866d027e5a7ccdb3ac38f66919f3fe5ca0c2378f2f9b286",
+        "bytes": 3600
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/8.index",
+        "sha256": "edcf0648a97edcc9729acfb79eb54dd4ea89d1655c2354190d73dd4439d2cdb0",
+        "bytes": 840
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/8.rgba",
+        "sha256": "f4a9acc66dcede80b8e2afa837a678c0202a2d0cf8f4f9f12c505b924489b662",
+        "bytes": 3360
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/9.index",
+        "sha256": "f43883600356f9938e87f456e22c63a95d1378796a9db8aaf67a8ecb06ee143b",
+        "bytes": 899
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/9.rgba",
+        "sha256": "5daca27f224d5e0536a8a0ad02ff623de74abae4aad671e55dd32fb5f4451867",
+        "bytes": 3596
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/cuukfgl_a-shp-a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9-ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3/cuukfgl_a.shp",
+        "sha256": "a2c94eb9dabe00f0ea1c03846a602036c2113b7a9b61a7904f7772928702f8b9",
+        "bytes": 21648
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native/ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3.pal",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "bytes": 768
+      }
+    ],
+    "authoringDependencies": [
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/accepted-body-proof-v1.json",
+        "sha256": "242ab468f91d605997f321cd226669cd9e4368991e93a341c856f748835751a7",
+        "bytes": 13091
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/comparisons-2x/cufrfgl_a.shp-2x.png",
+        "sha256": "7274d53f5c0a73f3bbb039a55d86d96686e557d55587ea5b8a18f5e001212218",
+        "bytes": 249287
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/comparisons-2x/culbfgl_a.shp-2x.png",
+        "sha256": "0ecc37028e0b37352b1c3923fd8685f1514031ddd1b88130ad9f9180eeacfbbf",
+        "bytes": 232948
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/comparisons-2x/cuskfgl_a.shp-2x.png",
+        "sha256": "545e5109ad0488d5dec072ad5ce73acc90835b448752646a17f2a3acfb21e439",
+        "bytes": 283770
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/comparisons-2x/cuukfgl_a.shp-2x.png",
+        "sha256": "f203a1f16e533b528afe0c0c2e2d445a8ec8101b0dacf0b7c7135fc36e63b8a1",
+        "bytes": 289542
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/comparisons-2x/index.json",
+        "sha256": "e592ec95e6fdd00e255595f15379380eb52a0125d23a701b7cb47ddd548e946a",
+        "bytes": 1963
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/comparisons-4x/cufrfgl_a.shp-4x.png",
+        "sha256": "851fd609af95e5768c4a585a3204882ca6bfd2c72a4a80b3a3b9f8e2dd704428",
+        "bytes": 572704
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/comparisons-4x/culbfgl_a.shp-4x.png",
+        "sha256": "b8e6acb393f7ab08742e35eee448493be0ca79caeabb1e47a1786cea8ca69a16",
+        "bytes": 548285
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/comparisons-4x/cuskfgl_a.shp-4x.png",
+        "sha256": "89e26271d6f22c014483cfb734244b3b2b05fa72fbbfa94b5474d80652449511",
+        "bytes": 644962
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/comparisons-4x/cuukfgl_a.shp-4x.png",
+        "sha256": "24282c21ee82a2782dd688f27a1036228e333b9e2b64f08fa253db26870f52ea",
+        "bytes": 653617
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/comparisons-4x/index.json",
+        "sha256": "8ee2c16545c1656ee6cdb078bd5d9c46ba16fd276dd21615b2a5c0bd05455bd9",
+        "bytes": 1963
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cufrfgl_a-shp-all-phases-master.png",
+        "sha256": "c14ea217e25561b1de2ec5213a9a5b9030814429ac58768bb563d44aeda83883",
+        "bytes": 1579270
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cufrfgl_a-shp-all-phases-reference.png",
+        "sha256": "bead0f8cf4815e4ae99cfc0d3e11c40eef0330c3eb3d1d0ed457842cc3541854",
+        "bytes": 25111
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/culbfgl_a-shp-all-phases-master.png",
+        "sha256": "433397de5f911be639bee729b1a3632737faa605d99edc057b002eadd23d3f3e",
+        "bytes": 1687824
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/culbfgl_a-shp-all-phases-reference.png",
+        "sha256": "5617ce54856b85e138b2538315a667de4d10f289fa54bf02467e99b37c583616",
+        "bytes": 15819
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cuskfgl_a-shp-all-phases-master.png",
+        "sha256": "dc3eeea2e64af25d2401e4aa27f89a9c8a5711451c522ee19037559ca60b43fe",
+        "bytes": 2177252
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cuskfgl_a-shp-all-phases-reference.png",
+        "sha256": "2aa99d4d910aa7a0d64ce545e932c376c5488fa36ebfbb5e837886a95c212a8b",
+        "bytes": 40466
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cuukfgl_a-shp-all-phases-master.png",
+        "sha256": "34fbc63604664fa1be98e90df99d3b032c86afff9f039ac42e19f3099b21a5a3",
+        "bytes": 1788966
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/cuukfgl_a-shp-all-phases-reference.png",
+        "sha256": "50c40416fb79c62c676354a632d30bab70e3ac5eb5136325b807b91d4366d9d6",
+        "bytes": 43186
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-jobs-v1.json",
+        "sha256": "0e599a4d6fea53a07328b7da8c78edbf0c98b7ebd2ae8f75e73947612b028669",
+        "bytes": 8778
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-jobs-v2.json",
+        "sha256": "7555a0b24b2d742fb56f1796f5fa6757f043a55fc404d941fb1a85cf810c8a72",
+        "bytes": 8939
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-receipt-01.json",
+        "sha256": "9c8ee0d54fca88c9a186528cfe8d94aef6c3e662931ced5b7dbf797a5fe3bc09",
+        "bytes": 4609
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-receipt-02.json",
+        "sha256": "5127af18248e6d8d729abe579f0f726bfe6818d04932c22ee5fb000c54597896",
+        "bytes": 4600
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-receipt-03.json",
+        "sha256": "834376155ffce5185265cfafca8e2b949bfd8b04b2ad9c8c37c85acacc08e0fb",
+        "bytes": 4614
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/imagegen-receipt-04.json",
+        "sha256": "08ea22d24ef0b967737291f88a1697aaa52b5df7b0a281c5b1fe7bf7654d4402",
+        "bytes": 4760
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/material-profile-v1.json",
+        "sha256": "8ab3fdd66884347dd0b77ea55d28b7125e6fbaa644f9582bdb91dacccc89191a",
+        "bytes": 5832
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/urban-city-flags-m2-4-batch57-r1/recipe.json",
+        "sha256": "c45e8ccc5e4d4e91ea41faa6a63c5250de0c043b79901c948fc824ff1e6a55cb",
+        "bytes": 35441
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/verification-v1.json",
+        "sha256": "2e2234bdcefe7f1fdea22145a3bb982b586eb7e4d2403411ad61c09556ab1aa4",
+        "bytes": 1059
+      },
+      {
+        "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/worklist.json",
+        "sha256": "123580fa4e55d3902e5a877db66839edc458746eca86dc5462ea47cafb8d7f6c",
+        "bytes": 125185
+      }
+    ],
+    "priorAcceptedHandoff": {
+      "file": "docs/m2-4-urban-buildings-batch56-20261016.json",
+      "sha256": "1e3a5909083862b00960a42fe3876ab40c5007c859cac71457d21918ac760355",
+      "bytes": 170236
+    }
+  },
+  "verification": {
+    "file": ".artifacts/m2-4/urban-city-flags-authoring-batch57-v1/verification-v1.json",
+    "sha256": "2e2234bdcefe7f1fdea22145a3bb982b586eb7e4d2403411ad61c09556ab1aa4",
+    "bytes": 1059
+  },
+  "nativeClosure": {
+    "file": ".artifacts/m2-4/urban-city-flags-batch57-v1/native-closure.json",
+    "sha256": "9618975da273f207480e7787ce60383da41e40d3f56f6dc2a531c15233dad509",
+    "bytes": 14886
+  },
+  "sourceCoverageDelta": {
+    "file": ".artifacts/m2-4/urban-city-flags-batch57-v1/coverage-delta.json",
+    "sha256": "2a1ad6d36ee421820f19eff8d77a7af2b07fb0a2ec2128ea7732a3659a17a676",
+    "bytes": 42596
+  },
+  "nativePlan": {
+    "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native-plan-v1.json",
+    "sha256": "f5a645052275b55fab798525ff29e9e62a39f8712d844e921d73238afee887fd",
+    "bytes": 2067
+  },
+  "flagRetryPlan": {
+    "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/native-plan-flags-r2.json",
+    "sha256": "4cd841813dcf474b2b60a62557f530599da8c7ccb77e95134bd02a6890722b4d",
+    "bytes": 1871
+  },
+  "sourceContract": {
+    "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/contract.json",
+    "sha256": "f0099ad914d1fd63ae09b25351645c3546ca18e039110647e2c118df7c84f8c0",
+    "bytes": 9876
+  },
+  "preparedSource": {
+    "file": ".artifacts/m2-4/urban-city-flags-native-batch57-v1/source.json",
+    "sha256": "93ba5e7b999ea2ee5259ab90d791a7f5fcae25948044497489eab9cd81fbc03a",
+    "bytes": 178749
+  },
+  "desktopReview": {
+    "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch57-20261016/M2.4-Urban-Batch57-Embedded.html",
+    "sha256": "f781a6ce4f29a271e7004e5364290473d2015c80d75f66959b325ae9a4c4a52c",
+    "bytes": 164556718
+  },
+  "embeddedMetadata": {
+    "file": "/Users/Aone/Desktop/M2.4-Review-Urban-Batch57-20261016/M2.4-Urban-Batch57-Embedded.json",
+    "sha256": "e4a4c85061b5c418b081c94dac80d0db0e5c7742674b3421a7b8398b237fb643",
+    "bytes": 95030
+  },
+  "desktopQa": {
+    "file": ".artifacts/m2-4/urban-city-flags-batch57-embedded-desktop-qa-v1/report.json",
+    "sha256": "9a75306677b2b2dfbdb6e42cda2c2c0a3b97b51cba734451b4ffddebd140e519",
+    "bytes": 2752
+  },
+  "stage": {
+    "file": ".artifacts/m2-4/urban-city-flags-batch57-v1/active-stage.json",
+    "sha256": "6573f37dd83d990720c7fdda81c81d4e1c7b22ef9d7a2d4e6714f5167504628d",
+    "bytes": 1099
+  },
+  "reviewManifest": {
+    "file": ".artifacts/m2-4/urban-city-flags-review-batch57-v1/review-manifest.json",
+    "sha256": "10b519ef1325228946f7b3ebcebc53b43ac07df68a2f96966b797e004f74c526",
+    "bytes": 149923
+  },
+  "validationLogs": [
+    {
+      "file": ".artifacts/m2-4/urban-city-flags-batch57-loading-tests-v1.log",
+      "sha256": "6b39cd1ad7259b2fa9514ee2be2a9f00c612b313841a9464b659371e49a153f3",
+      "bytes": 2817
+    },
+    {
+      "file": ".artifacts/m2-4/urban-city-flags-batch57-typecheck-v2.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc",
+      "bytes": 39
+    },
+    {
+      "file": ".artifacts/m2-4/urban-city-flags-batch57-build-v1.log",
+      "sha256": "4385f85398108a5086c65da54dc990b51342c0dfe583967a0eb9aa6b7b3b0758",
+      "bytes": 22007
+    },
+    {
+      "file": ".artifacts/m2-4/urban-city-flags-batch57-stage-v1.log",
+      "sha256": "e5d2795d34d392910169d2197fb3c9d87a2853517cb4ae64f17689cf731f84c1",
+      "bytes": 573
+    },
+    {
+      "file": ".artifacts/m2-4/urban-city-flags-batch57-native-v1.log",
+      "sha256": "42cc3313cd4dd2435fd07f282c32e07a988931d5ea452d528f6f2b443066be5f",
+      "bytes": 1231
+    },
+    {
+      "file": ".artifacts/m2-4/urban-city-flags-batch57-native-flags-r2.log",
+      "sha256": "2afac6cebcbb0dcb790a8b548b8226bc55a2d38a97ac24278c37301d301f825f",
+      "bytes": 263
+    }
+  ],
+  "retainedFailure": {
+    "report": {
+      "file": ".artifacts/m2-4/urban-city-flags-batch57-v1/native-flags-2x-v1/report.json",
+      "sha256": "364e19ab1fdc4ae189155b42cbbcdf5ac66549a9994c6cd4593e36cf9298af3c",
+      "bytes": 4670724
+    },
+    "cause": "Validation tool parsed an absent LoopStart as NaN; unchanged AnimProps defaults to zero.",
+    "correction": "Validator now applies original LoopStart=0 and exclusive LoopEnd defaults. Only incomplete flag cases repeated; city evidence reused. No app or art correction."
+  },
+  "originalPaletteCorrection": "Only exact Urban archive map c3f4f1c670fe and the four previously approved raw city source hashes; original liburb and libsno bytes are identical. Both editions and Original fallback checked.",
+  "reviewPacing": "APNG previews contain exact native phase captures at an explicit 100 ms per phase. Native rate/ticks and full loop-return evidence remain in source reports; previews are not real-time recordings.",
+  "applicationPolicy": "One reused internal signed Mac arm64 host; no per-batch game bundle or resource copy. Final standalone M2.4 delivery remains pending.",
+  "visual": "USER_ACCEPTED",
+  "windows": "NOT_RUN",
+  "m24Complete": false,
+  "userAcceptance": {
+    "file": ".artifacts/m2-4/urban-city-flags-batch57-v1/user-acceptance.json",
+    "sha256": "8abe22c8f460a8196d978d83be6afab202d8f9b962cd2c2d49513aafd2227ff4"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "status": "PASS_PACKAGED_HELICOPTER_BELLY_CORRECTION",
+  "baseline": "34944fc",
+  "runtimeSourceHead": "343295231964ed62cadb88439bd151fbb0e8fa43",
+  "sourceCleanAtBuild": true,
+  "metadata": {
+    "status": "PASS_ATLAS_AND_REGISTRATION_PRESERVATION",
+    "previousManifest": "/Users/Aone/RA2remaster/ra2-hd/.local/hd-packs/allied-shad-vxl/owner-r3/manifest.json",
+    "manifest": "/Users/Aone/RA2remaster/ra2-hd/.local/hd-packs/allied-shad-vxl/belly-r1/manifest.json",
+    "sha256": "7a57bb744f7b3d69795f14718c391d17e7b95325b6a7d97fe0406d40a1d52fa0",
+    "previousBounds": [
+      -63.9426722145148,
+      -57.26711075514463,
+      63.829743835181425,
+      17.996075156441393
+    ],
+    "correctedBounds": {
+      "SHAD": [
+        -86.82079584066831,
+        -57.26711075514463,
+        86.27991951475646,
+        60.43394282929226
+      ]
+    },
+    "unchangedFiles": [
+      {
+        "file": "SHAD-shad-CYLINDER18-base.png",
+        "sha256": "4280b173cd4909769104afa8c181ecb402a5478a22e8164efdfa347d9273ebfd",
+        "bytes": 177541
+      },
+      {
+        "file": "SHAD-shad-CYLINDER18-data.png",
+        "sha256": "bc199fc7f7c579f9bc42340febc4f33e70e7378322e4f86cae7958fc08a18bec",
+        "bytes": 9032
+      },
+      {
+        "file": "SHAD-shad-CYLINDER09-base.png",
+        "sha256": "466d6f88ce830b4c34136859b393e5a6f354cdc350380bd8313486a8653ed7af",
+        "bytes": 181442
+      },
+      {
+        "file": "SHAD-shad-CYLINDER09-data.png",
+        "sha256": "d484c6dda15e4ab8aede86222a2ff4c052b1b615a8e49366216676a5ce831cf9",
+        "bytes": 5360
+      },
+      {
+        "file": "SHAD-shad-DUMMY01-base.png",
+        "sha256": "79a092d5382b7666e55161c0c7cbe9a0132431d5f8df0a9a6a7a3468c90ca3be",
+        "bytes": 384530
+      },
+      {
+        "file": "SHAD-shad-DUMMY01-data.png",
+        "sha256": "819c585cff9df970766a5bba0d3cf50f7f8f525c7594559f926a72a62e546bfd",
+        "bytes": 25070
+      }
+    ],
+    "changedBindings": [
+      "SHAD"
+    ]
+  },
+  "preservation": {
+    "status": "PASS_ALL_ACCEPTED_PACKAGE_RESOURCES_PRESERVED",
+    "runtimeSourceHead": "343295231964ed62cadb88439bd151fbb0e8fa43",
+    "sourceCleanAtBuild": true,
+    "oldResourceEntries": 2755,
+    "newResourceEntries": 2755,
+    "unchangedResourceBytes": 2754,
+    "changedMetadata": [
+      "hd-packs/allied-shad-vxl/belly-r1/manifest.json"
+    ],
+    "availability": "UNCHANGED",
+    "runtimeGeometryShadersRules": "UNCHANGED"
+  },
+  "tests": {
+    "passed": 12,
+    "assertions": 7014,
+    "entryTypecheck": "PASS"
+  },
+  "nativeCases": [
+    {
+      "report": ".artifacts/helicopter-belly-r1/native-4x-v2/report.json",
+      "edition": "yr",
+      "selectedDensity": 4,
+      "samples": 20,
+      "landings": [
+        "SHAD-landed",
+        "SCHP-landed"
+      ],
+      "rotorMotion": [
+        "SHAD",
+        "SCHP"
+      ],
+      "recordings": [
+        "/Users/Aone/RA2remaster/ra2-hd/.artifacts/helicopter-belly-r1/native-4x-v2/SHAD-flight-and-landing.webm",
+        "/Users/Aone/RA2remaster/ra2-hd/.artifacts/helicopter-belly-r1/native-4x-v2/SCHP-flight-and-landing.webm"
+      ],
+      "worldAllocation": {
+        "baseline": 91372196,
+        "eager": 381733320,
+        "demand": 9783112,
+        "total": 482888628,
+        "limit": 1342177280
+      },
+      "glErrors": 0,
+      "contextLost": false
+    },
+    {
+      "report": ".artifacts/helicopter-belly-r1/native-ra2-2x/report.json",
+      "edition": "ra2",
+      "selectedDensity": 2,
+      "samples": 4,
+      "landings": [
+        "SHAD-landed"
+      ],
+      "rotorMotion": [
+        "SHAD"
+      ],
+      "recordings": [
+        "/Users/Aone/RA2remaster/ra2-hd/.artifacts/helicopter-belly-r1/native-ra2-2x/SHAD-flight-and-landing.webm"
+      ],
+      "worldAllocation": {
+        "baseline": 30503392,
+        "eager": 114102144,
+        "demand": 1473408,
+        "total": 146078944,
+        "limit": 268435456
+      },
+      "glErrors": 0,
+      "contextLost": false
+    }
+  ],
+  "supersededHarnessRun": {
+    "report": ".artifacts/helicopter-belly-r1/native-4x/report.json",
+    "status": "FAIL_INACTIVE_CONTROL_COMPONENT_LOOKUP",
+    "resolution": "Ignore inactive SCHP deployed/turret layers; corrected v2 run passes. No product change."
+  },
+  "previousCorrectionUserAcceptance": "ACCEPTED_EXCEPT_HELICOPTER_BELLY",
+  "currentUserAcceptance": "PENDING_VISUAL_TEST",
+  "historicalFullMatrices": "REUSED",
+  "push": "NOT_PERFORMED",
+  "reviewMedia": {
+    "status": "PASS_OFFLINE_REVIEW_MEDIA",
+    "images": [
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      },
+      {
+        "width": 600,
+        "height": 420
+      }
+    ],
+    "clips": [
+      {
+        "width": 3840,
+        "height": 2160,
+        "time": 0.455796,
+        "error": null
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "time": 0.441106,
+        "error": null
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "time": 0.444332,
+        "error": null
+      }
+    ]
+  }
+}

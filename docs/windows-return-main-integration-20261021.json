@@ -1,0 +1,176 @@
+{
+  "status": "INTEGRATED_INTO_LOCAL_MAIN_AND_CLEANED",
+  "baseMain": "07eb4ddd4246a0015ccb754afba825cd93460912",
+  "runtimeSourceHead": "266da1e890cff9cd2991334c05e2086ad0632254",
+  "returnedBase": "84a0b34809a860de09162337bdc2d157faa16e81",
+  "returnedHead": "5f975f551cdadd0823a99abdc8e6b81dcb9f6fdf",
+  "returnFiles": 713,
+  "returnBytes": 30237106,
+  "returnManifestSha256": "cc6eb638419043a8f9362991541b25db9238f8d20793e18e54a0edcd7086f0fc",
+  "sourceParity": "FOUR_RUNTIME_FILES_EXACT_RETURNED_BYTES",
+  "uiR6Acceptance": "USER_ACCEPTED_AND_PRESERVED",
+  "fullSuite": {
+    "pass": 603,
+    "failedCases": 0,
+    "loadErrors": 0,
+    "skipped": 0,
+    "processErrors": 0
+  },
+  "typecheck": "PASS",
+  "cleanBuild": "PASS",
+  "focusedTests": {
+    "pass": 16,
+    "fail": 0,
+    "assertions": 502
+  },
+  "nativeMac": {
+    "status": "PASS_SIX_MAC_NATIVE_COMBINED_RETURN_CASES",
+    "cases": 6,
+    "deferredYardAtlases": 0,
+    "glErrors": 0
+  },
+  "returnedWindows": {
+    "evidence": "PASS_RETURNED_WINDOWS_RAW_EVIDENCE_RECOMPUTED",
+    "denseWindows": 48,
+    "simulationCostReductionPercent": 10.56899704641342,
+    "sameDayDenseGroups": {
+      "day1-p1-001": {
+        "windows": 9,
+        "fpsMean": 60.07337865881291
+      },
+      "day1-p2-001": {
+        "windows": 9,
+        "fpsMean": 61.99192355747641
+      },
+      "day1-p3-001": {
+        "windows": 6,
+        "fpsMean": 60.12264954325081
+      },
+      "day1-p4-001": {
+        "windows": 6,
+        "fpsMean": 64.31184740192444
+      },
+      "day2-p1-001": {
+        "windows": 6,
+        "fpsMean": 56.175140468011264
+      },
+      "day2-p5-001": {
+        "windows": 6,
+        "fpsMean": 57.9233351444805
+      }
+    },
+    "ninetyFps": "NOT_ACHIEVED",
+    "originalArtShaderWarmup": "REPORTED_RESIDUAL_NOT_CHANGED"
+  },
+  "freshCombinedWindows": "NOT_RUN_ON_THIS_MAC",
+  "mapPreview": {
+    "status": "PASS_ACTUAL_AUTOMATIC_MERGE_IN_ISOLATED_PREVIEW",
+    "mapHead": "11de13ce00a6531201ceb8aca924d28e1ac8fa05",
+    "candidateMain": "266da1e890cff9cd2991334c05e2086ad0632254",
+    "tree": "e1dea65efd2825ee98c8a7aa64e14ff5c69f468a",
+    "conflicts": "",
+    "actualActiveMapWorktree": "NOT_MODIFIED",
+    "typecheck": "PASS",
+    "focusedTests": {
+      "pass": 26,
+      "fail": 0,
+      "assertions": 565,
+      "files": 7
+    },
+    "constructionTests": {
+      "pass": 6,
+      "fail": 0,
+      "assertions": 29,
+      "files": 1
+    },
+    "totalPass": 32
+  },
+  "activeMapPolicy": "PRESERVE_ACTUAL_WORKTREE_AND_CONCURRENT_EDITS",
+  "evidenceRoot": "/Users/Aone/RA2remaster/project-history/windows-return-5f975f55-20261021",
+  "cleanup": {
+    "status": "PASS_ONLY_AUDITED_WINDOWS_RETURN_TEMPORARY_COPIES_RETIRED",
+    "target": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/windows-return-20261021",
+    "inventory": {
+      "files": 608,
+      "links": 0,
+      "logicalBytes": 209018079
+    },
+    "observedAvailableDeltaBytes": 210440192,
+    "accounting": "Logical retired bytes and observed APFS free-space change are separate; no exclusive-block claim.",
+    "emptyLegacyLoadingDirectory": "EMPTY_DIRECTORY_RETIRED",
+    "protectedPathsVerified": 260,
+    "protectedResourceReferences": 242,
+    "acceptedConstructionRecords": 108,
+    "preserved": [
+      "canonical main and selected resources",
+      "original Desktop return and ZIP",
+      "raw returned and compact local evidence",
+      "active map worktree and concurrent changes",
+      "M1.6A full exports and M2.2 authoring/prepared inputs"
+    ],
+    "timestampUtc": "2026-10-22T02:40:56.347021+00:00"
+  },
+  "remotePush": false,
+  "protectedTree": {
+    "status": "PASS_PROTECTED_RESOURCES_SOURCE_AND_OUTPUT_UNCHANGED",
+    "treeEntries": 14665,
+    "hashCheckedPaths": 260,
+    "selectedResourceReferences": 242,
+    "acceptedConstructionRecords": 108,
+    "metadataIncludes": [
+      "file size",
+      "mtime",
+      "mode",
+      "symlink target"
+    ],
+    "authoringDependenciesPreserved": [
+      ".artifacts/m1-6a/full-exports-v2",
+      ".artifacts/m2-2/authoring-shp-v1",
+      ".artifacts/m2-2/prepared-native-v2"
+    ],
+    "retailResourceIndex": "RETURN_DIGEST_ATTESTATION_PRESERVED_ORIGINAL_SOURCE_INDEX_NOT_IN_RETURN"
+  },
+  "retiredBranches": {
+    "status": "PASS_OBSOLETE_WINDOWS_BRANCH_NAMES_RETIRED_HISTORY_PRESERVED",
+    "branches": [
+      {
+        "ref": "refs/heads/integrate/windows-return-20261011",
+        "head": "748d0998aaf663acda8807c158155bf0a5bb157b",
+        "output": "Deleted branch integrate/windows-return-20261011 (was 748d0998).\n",
+        "mergedIntoMain": true,
+        "historicalBundle": null
+      },
+      {
+        "ref": "refs/heads/windows-return-20261011",
+        "head": "e57bfa414e249fb5a87cd27a4be97247f9b8f266",
+        "output": "Deleted branch windows-return-20261011 (was e57bfa41).\n",
+        "mergedIntoMain": true,
+        "historicalBundle": null
+      },
+      {
+        "ref": "refs/heads/perf/windows-hd-investigation",
+        "head": "34856b4552968e7054f9607878431b0036b1724a",
+        "output": "Deleted branch perf/windows-hd-investigation (was 34856b45).\n",
+        "mergedIntoMain": false,
+        "historicalBundle": "/Users/Aone/RA2remaster/project-history/windows-return-5f975f55-20261021/retired-windows-unique.bundle"
+      },
+      {
+        "ref": "refs/heads/import/windows-return-20261021",
+        "head": "5f975f551cdadd0823a99abdc8e6b81dcb9f6fdf",
+        "output": "Deleted branch import/windows-return-20261021 (was 5f975f55).\n",
+        "mergedIntoMain": true,
+        "historicalBundle": null
+      }
+    ],
+    "activeMapRef": "11de13ce00a6531201ceb8aca924d28e1ac8fa05",
+    "remainingBranches": "refs/heads/main aec386a7fb297871ad3dd5b70bdbe983de14f14a\nrefs/heads/task/m2-4-all-skirmish-theaters 11de13ce00a6531201ceb8aca924d28e1ac8fa05\n"
+  },
+  "promotedMapMerge": {
+    "status": "PASS_PROMOTED_MAIN_AUTOMATIC_MAP_MERGE",
+    "mainHead": "aec386a7fb297871ad3dd5b70bdbe983de14f14a",
+    "mapHead": "11de13ce00a6531201ceb8aca924d28e1ac8fa05",
+    "raw": "51b42b920e7b7d31df01e370608c3ad211733012\n\nAuto-merging src/game/map/Terrain.ts\nAuto-merging src/gui/screen/game/GameLoader.ts\n",
+    "runtimeSourceAlreadyTestedAt": "266da1e890cff9cd2991334c05e2086ad0632254"
+  },
+  "futureWork": "CANONICAL_MAIN_WITH_EXISTING_ACTIVE_MAP_TASK_PRESERVED"
+}
