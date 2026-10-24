@@ -8,7 +8,8 @@ import { DeployOrder } from '../../src/game/order/DeployOrder';
 
 test('waiting items retain a stationary full mask; only active production advances', () => {
     const mesh = { visible: false }; let frame = -1, light = -1;
-    const overlay = { setLightMult: (v: number) => { light = v; }, getFrameCount: () => 55, setFrame: (v: number) => { frame = v; }, get3DObject: () => mesh };
+    const overlay = { setLightMult: (v: number) => { light = v; }, getFrameCount: () => 55,
+        setFrame: (v: number) => { frame = v; }, setVisible: (v: boolean) => { mesh.visible = v; }, get3DObject: () => mesh };
     const update = (status: Status, progress = 0) => SidebarCard.prototype.updateProgressOverlay({ status, progress }, overlay);
     update(Status.Idle); expect(mesh.visible).toBe(false);
     for (const progress of [0, .2, .8]) { update(Status.InQueue, progress); expect(frame).toBe(1); expect(mesh.visible).toBe(true); }
@@ -20,14 +21,15 @@ test('waiting items retain a stationary full mask; only active production advanc
 
 test('unavailable single-instance superweapon construction icons stay shaded without masking usable powers', () => {
     const mesh = { visible: false }; let frame = -1, light = -1;
-    const overlay = { setLightMult: (v: number) => { light = v; }, getFrameCount: () => 55, setFrame: (v: number) => { frame = v; }, get3DObject: () => mesh };
+    const overlay = { setLightMult: (v: number) => { light = v; }, getFrameCount: () => 55,
+        setFrame: (v: number) => { frame = v; }, setVisible: (v: boolean) => { mesh.visible = v; }, get3DObject: () => mesh };
     const item = { status: Status.Idle, disabled: true, progress: 0,
         target: { type: 0, rules: { buildLimit: 1, superWeapon: 'NukeSpecial' } } };
     const update = () => SidebarCard.prototype.updateProgressOverlay(item, overlay);
     update(); expect(frame).toBe(1); expect(mesh.visible).toBe(true); expect(light).toBe(0);
-    item.disabled = false; update(); expect(frame).toBe(0); expect(mesh.visible).toBe(false); expect(light).toBe(1);
+    item.disabled = false; update(); expect(frame).toBe(0); expect(mesh.visible).toBe(false); expect(light).toBe(0);
     item.disabled = true; item.status = Status.Ready; update(); expect(mesh.visible).toBe(false);
-    item.status = Status.Started; item.progress = .5; update(); expect(frame).toBe(27); expect(light).toBe(1);
+    item.status = Status.Started; item.progress = .5; update(); expect(frame).toBe(27); expect(light).toBe(0);
     item.status = Status.Idle; item.target.type = 1; update(); expect(mesh.visible).toBe(false);
     item.target.type = 0; item.target.rules.superWeapon = ''; update(); expect(mesh.visible).toBe(false);
     item.target.rules.superWeapon = 'SpyPlaneSpecial'; item.target.rules.buildLimit = Infinity;

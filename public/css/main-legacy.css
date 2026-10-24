@@ -168,14 +168,22 @@ html:-moz-full-screen body {
 }
 
 #ra2web-root .message-box-content {
+    position: relative;
+    z-index: 1;
     padding: 50px;
+    text-shadow: 1px 1px 2px black;
 }
 
 #ra2web-root .message-box-footer {
+    z-index: 1;
     position: absolute;
     bottom: 0;
     right: 0;
     padding: 20px;
+}
+
+#ra2web-root .message-box > canvas[data-native-ui-backdrop] {
+    filter: brightness(.65);
 }
 
 #ra2web-root .toasts {
@@ -223,6 +231,7 @@ html:-moz-full-screen body {
 
 #ra2web-root .menu-version-string {
     text-align: center;
+    white-space: nowrap;
 }
 
 #ra2web-root .menu-mp-slot {

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "status": "MAC_TEST_DELIVERY_READY_USER_ACCEPTANCE_PENDING",
+  "source": {
+    "branch": "main",
+    "head": "dc494dbd59363439ae830fad5e81134ef36ee95b",
+    "status": "UNCOMMITTED_LOCAL_MAIN_REPAIR",
+    "frozenBuild": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/candidate-r8",
+    "identity": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/candidate-r8/identity.json",
+      "sha256": "f573fe7ccadab7e76f9b0d9be29bf38114429fc4460f3072391fe53e4796ec0d"
+    },
+    "snapshot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/source-snapshot-final/manifest.json",
+    "unchangedImplementation": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/implementation-preservation-final.json",
+      "sha256": "205d1b88ca5342e6416bad33c1722bb1841b088ea2cca872fdd3e3c367d2ab5d"
+    }
+  },
+  "fixes": [
+    "Stable HD fountain surface without overlapping dry basin",
+    "Distinct queued defeat voices and localized player-colored messages, including the final opponent",
+    "Persistent named skirmish saves and exact built-in AI continuation in RA2 and YR"
+  ],
+  "delivery": {
+    "target": "darwin-arm64",
+    "app": "/Users/Aone/Applications/Red Alert 2 HD Skirmish Repairs 20261023.app",
+    "desktopEntry": {
+      "file": "/Users/Aone/Desktop/Red Alert 2 HD Skirmish Repairs 20261023.app",
+      "kind": "symbolic-link",
+      "startup": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/final-desktop-entry-startup-r2/report.json",
+        "sha256": "7b26e7ff0913225d713e17824eb065cdd1cae0fbfd93a81ee199c8ac48654ebf"
+      }
+    },
+    "archive": {
+      "status": "PASS_DESKTOP_COMPLETE_ZIP_COPY_SHA256",
+      "file": "/Users/Aone/Desktop/Red Alert 2 HD Skirmish Repairs 20261023 Mac arm64.zip",
+      "bytes": 5650550584,
+      "sha256": "dc678fbf087b8d4defff4f77c394d2a39ec13a4eff4642fc37eed2a38958e160",
+      "sourceArchive": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/full-zip-v2/Red Alert 2 HD Skirmish Repairs 20261023 Mac arm64.zip",
+      "desktopEntry": "/Users/Aone/Desktop/Red Alert 2 HD Skirmish Repairs 20261023.app",
+      "installedApp": "/Users/Aone/Applications/Red Alert 2 HD Skirmish Repairs 20261023.app",
+      "desktopEntryPresent": true
+    },
+    "archiveValidation": {
+      "status": "PASS_COMPLETE_MAC_ZIP_ALL_DECOMPRESSED_BYTES_MODES_SYMLINKS",
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/full-zip-v2/Red Alert 2 HD Skirmish Repairs 20261023 Mac arm64.zip",
+      "bytes": 5650550584,
+      "sha256": "dc678fbf087b8d4defff4f77c394d2a39ec13a4eff4642fc37eed2a38958e160",
+      "app": "Red Alert 2 HD Skirmish Repairs 20261023.app",
+      "sourceApp": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/mac-single-app-v4/Red Alert 2 HD Skirmish Repairs 20261023.app",
+      "verifiedEntries": 14507,
+      "directories": 10703,
+      "logicalBytes": 9801884337,
+      "resourceFiles": 13978,
+      "appInventorySha256": "4e7538e4c2387923beb2a23c07cc8f8f9baa13fe9b97a2c27007e3f1fda3facc",
+      "compression": "DEFLATE_LEVEL_1_ZIP64",
+      "timestamp": "2026-10-24T02:33:15Z"
+    },
+    "decodedValidation": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/zip-extracted-v2/package-receipt.json",
+      "sha256": "959463822dda9ff33d24693b4cea56caaa44a115b881b6c9264df23910fa154a"
+    },
+    "decodedNativeValidation": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/zip-decoded-native-fountain/fountain.json",
+      "sha256": "ab61a6f406bd2e4f1d9269b420311f32c18cb43a9a138206e9563d1b21a05033"
+    },
+    "appInventory": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/mac-single-app-v4/app-inventory.json",
+      "sha256": "4e7538e4c2387923beb2a23c07cc8f8f9baa13fe9b97a2c27007e3f1fda3facc"
+    },
+    "resourceInventory": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/mac-single-app-v4/resource-inventory.json",
+      "sha256": "8cb55cf80e9280f45f1f488db2f010c823525eedbc356c7c1d98cc30987f4da5"
+    },
+    "signing": "AD_HOC_DEEP_STRICT_PASS_NOT_NOTARIZED",
+    "installedSignature": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/local-app-v2/signature-diagnostic.json",
+      "sha256": "aca8487d9efa1d3bf9d461f6d16515be1cfffeacbed8e1abda60b2a1ea5f6e8e"
+    },
+    "userData": "~/Library/Application Support/Red Alert 2 HD Skirmish Repairs 20261023"
+  },
+  "validation": {
+    "focusedSource": {
+      "status": "PASS",
+      "cases": 20,
+      "assertions": 153,
+      "log": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/focused-tests-r8.log",
+        "sha256": "396b39a0f17f946bc5bb643fde9c97f40c1f7d9523cba7889f41af7e72278402"
+      }
+    },
+    "loadingAndCache": {
+      "status": "PASS_UNCHANGED_IMPLEMENTATION_REUSED",
+      "cases": 13,
+      "assertions": 72,
+      "log": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/loading-tests.log",
+        "sha256": "c537d24b93191c000009f13a0a627b66114f0631a00fc93ad0a912a675a535ab"
+      }
+    },
+    "typecheck": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/typecheck-r8.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    },
+    "build": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/build-r8.log",
+      "sha256": "d3f57985d22c10a22334b2b7833394e11086a5c55fe74a03314e9b8887c4e0fc"
+    },
+    "saveRestartYR": {
+      "status": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+      "builtInAi": "LIVE_UNMODIFIED",
+      "savedTick": 2181,
+      "continuationTicks": 600,
+      "controls": "PASS_LOAD_CANCEL_OVERWRITE_CANCEL_OVERWRITE_DELETE_CANCEL_DELETE",
+      "evidence": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/packaged-save-yr-4x/report.json",
+        "sha256": "3dac299f52793dde25cc5fc962203b1b6ee7a484742a2d08d9af9bf555c86e0a"
+      },
+      "revision": "candidate-r7; unchanged seven-file implementation verified against final source"
+    },
+    "saveRestartRA2": {
+      "status": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+      "evidence": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/native-ra2-2x/report.json",
+        "sha256": "90c93fc349b198019e70383be6eff22dccc247151a4c7579db6e2ee93a0f180c"
+      },
+      "revision": "Earlier native RA2 2X control; unchanged save implementation"
+    },
+    "defeatFeedback": {
+      "status": "PASS_NATIVE_FOUR_ELIMINATIONS_INCLUDING_FINAL_RESULT_AND_DECODED_QUEUED_VOICES",
+      "voices": 4,
+      "distinctColoredMessages": 4,
+      "evidence": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/packaged-defeat-localized/feedback.json",
+        "sha256": "695a409bdb757098e7d87ac97aecf1bfa9da86b246154abcb52035704e84b11d"
+      },
+      "recording": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/packaged-defeat-localized/defeat-voices.webm",
+        "sha256": "741d61b6af2f3c43aaec34d56b907f20b65b2e5e15eecf29265730567d588ec4"
+      }
+    },
+    "fountainFrames": [
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/fountain-repair-2x/fountain.json",
+        "sha256": "5c7b3723dfc7e8373d936f9b1cede0551d22735e874e094bef855601e03f1414"
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/fountain-repair-4x/fountain.json",
+        "sha256": "aa9c1135680877e5a5008cc9a4153bec0269be118ccb2d1e7be81f1cd45a09ed"
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/fountain-original-control/fountain.json",
+        "sha256": "fd0070d488dfc438a1b7daaf229a43378381ccb055e6630824b0a7f03b94dbb0"
+      }
+    ],
+    "acceptedUiPressure": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/final-ui-result-r7/diagnosis.json",
+      "sha256": "c33b81890f6a0610f9fb6ced82df33c13ba5e253a85a4acd37ad5fea9c04e118"
+    },
+    "acceptedResources": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/accepted-resources-preserved-final.json",
+      "sha256": "79a42dd865b68f57a1acedb060755d23096cbc4c95734e902df64ea23d382d88"
+    }
+  },
+  "limits": {
+    "saves": "Ordinary built-in AI skirmishes; trainer/debug-altered games and custom AI scripts are rejected. Reconstruction time grows with match duration.",
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "physicalInputAudioAndNewVisualAcceptance": "PENDING_USER_TEST",
+    "priorLongPlayUiAndRoadAcceptance": "USER_ACCEPTED_2026_10_23"
+  },
+  "preservation": {
+    "previousLocalApp": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/local-app-v1-preserved.app",
+    "previousNamedDesktopApp": "ALREADY_ABSENT_AT_PREFLIGHT_NOT_DELETED_BY_THIS_TASK",
+    "profiles": "PRESERVED",
+    "earlyFailures": "RETAINED_UNDER_EVIDENCE_ROOT",
+    "unselectedLauncherExperiments": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023/launcher-experiments/source/receipt.json",
+    "campaignWorktree": "UNCHANGED",
+    "commit": "NOT_CREATED",
+    "push": "NOT_PERFORMED"
+  },
+  "evidenceRoot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-repair-20261023"
+}

@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import { NativeUiBackdrop } from '../hd/NativeUiBackdrop';
+import { mountSaveMenuArt } from '../save/SaveMenuArt';
+import '../save/SkirmishSaveDialog.css';
 interface DialogViewport {
     x: number;
     y: number;
@@ -22,6 +25,12 @@ export interface DialogProps {
     };
     zIndex?: number;
 }
+function DialogButtons({ buttons }: { buttons: ButtonConfig[] }) {
+    const ref = useRef<HTMLDivElement>(null);
+    useLayoutEffect(() => mountSaveMenuArt(ref.current!), []);
+    return <div className="message-box-footer" ref={ref}>{buttons.map((button, index) =>
+        <button key={index} className="dialog-button save-native-button" onClick={button.onClick}>{button.label}</button>)}</div>;
+}
 export class Dialog extends React.Component<DialogProps> {
     render(): React.ReactNode {
         if (this.props.hidden) {
@@ -29,15 +38,10 @@ export class Dialog extends React.Component<DialogProps> {
         }
         const contentChildren = React.Children.toArray(this.props.children);
         return React.createElement('div', { style: this.getWrapperStyle() }, React.createElement('div', {
-            className: 'message-box ' + (this.props.className || '')
-        }, React.createElement('div', { className: 'message-box-content' }, contentChildren), React.createElement('div', { className: 'message-box-footer' }, this.props.buttons.map((button, index) => this.renderButton(button, index)))));
-    }
-    private renderButton(button: ButtonConfig, index: number): React.ReactElement {
-        return React.createElement('button', {
-            key: index,
-            className: 'dialog-button',
-            onClick: button.onClick
-        }, button.label);
+            className: 'message-box ' + (this.props.className || 'standard-message-box'),
+        }, React.createElement(NativeUiBackdrop, { kind: 'dialog' }),
+        React.createElement('div', { className: 'message-box-content' }, contentChildren),
+        React.createElement(DialogButtons, { buttons: this.props.buttons })));
     }
     private getWrapperStyle(): React.CSSProperties {
         const viewport = this.props.viewport;

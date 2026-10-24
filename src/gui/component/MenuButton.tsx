@@ -1,6 +1,7 @@
 import React from "react";
 interface ButtonConfig {
     label: string;
+    action?: string;
     disabled?: boolean;
     tooltip?: string;
 }
@@ -16,6 +17,8 @@ interface MenuButtonProps {
     onMouseDown?: (event: React.MouseEvent) => void;
     onMouseUp?: (event: React.MouseEvent) => void;
     onClick?: (event: React.MouseEvent) => void;
+    onMouseEnter?: (event: React.MouseEvent) => void;
+    onMouseLeave?: (event: React.MouseEvent) => void;
 }
 export class MenuButton extends React.Component<MenuButtonProps> {
     render() {
@@ -33,7 +36,10 @@ export class MenuButton extends React.Component<MenuButtonProps> {
             onMouseDown: (event) => this.onMouseDown(event),
             onMouseUp: (event) => this.onMouseUp(event),
             onClick: (event) => this.onClick(event),
+            onMouseEnter: (event) => { if (!buttonConfig.disabled) this.props.onMouseEnter?.(event); },
+            onMouseLeave: (event) => this.props.onMouseLeave?.(event),
             "data-r-tooltip": buttonConfig.tooltip,
+            "data-action": buttonConfig.action,
         }, buttonConfig.label);
     }
     getClassName(buttonConfig: ButtonConfig): string {

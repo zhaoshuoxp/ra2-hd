@@ -15,8 +15,12 @@ export class UiObjectSprite extends UiObject {
     private verticalScale = 1;
     static fromShpFile(shpFile: ShpFile, palette: Palette, camera: THREE.Camera): UiObjectSprite {
         const builder = new ShpBuilder(shpFile, palette, camera);
-        builder.setBatched(true);
-        builder.setBatchPalettes([palette]);
+        const clock = shpFile.filename?.toLowerCase() === 'gclock2.shp';
+        // Keep fallback clocks in the same transparent draw order as HD cameos.
+        builder.setBatched(!clock);
+        if (!clock) builder.setBatchPalettes([palette]);
+        // A translucent clock must not occlude the cameo when HD art is unavailable.
+        if (clock) builder.setDepthOptions(true, false);
         builder.setOffset({
             x: Math.floor(shpFile.width / 2),
             y: Math.floor(shpFile.height / 2)

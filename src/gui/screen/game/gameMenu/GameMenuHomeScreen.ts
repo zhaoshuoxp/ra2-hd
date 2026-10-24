@@ -10,6 +10,8 @@ interface GameMenuHomeParams {
     onQuit?: () => void;
     onObserve?: () => void;
     observeAllowed?: boolean;
+    onSave?: () => void;
+    onLoad?: () => void;
 }
 interface SidebarButton {
     label: string;
@@ -43,6 +45,8 @@ export class GameMenuHomeScreen extends GameMenuScreen {
     private initView(params: GameMenuHomeParams): void {
         const strings = this.strings;
         const buttons: SidebarButton[] = [
+            ...(params.onSave ? [{ label: strings.get('HD:SaveGame'), onClick: params.onSave }] : []),
+            ...(params.onLoad ? [{ label: strings.get('HD:LoadGame'), onClick: params.onLoad }] : []),
             {
                 label: strings.get("GUI:Options"),
                 onClick: () => {

@@ -1,4 +1,4 @@
-"""Build private complete archives and small platform packages from accepted M2 bytes."""
+"""Build private complete archives and modular packages from a verified current build."""
 import argparse
 import hashlib
 import json
@@ -18,6 +18,7 @@ parser.add_argument('phase', choices=['stage', 'archive'])
 parser.add_argument('--accepted', type=Path, required=True)
 parser.add_argument('--output', type=Path, required=True)
 parser.add_argument('--downloads', type=Path)
+parser.add_argument('--package-receipt', type=Path)
 parser.add_argument('--reuse-resource-parts-from', type=Path)
 args = parser.parse_args()
 OUT = args.output.resolve()
@@ -96,11 +97,23 @@ if args.phase == 'stage':
     OUT.mkdir(parents=True, exist_ok=False)
     head = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
     assert not subprocess.check_output(['git', 'status', '--porcelain'], cwd=ROOT)
-    # Reuse exact accepted game bytes; only the distribution bootstrap changes.
-    subprocess.run(['git', 'diff', '--exit-code', 'fbaac0f5', '--', 'src', 'public'], cwd=ROOT, check=True)
     accepted = args.accepted.resolve()
-    ledger = json.loads((accepted / 'Delivery-Inventory.json').read_text())
+    assert args.package_receipt, 'A current package receipt is required; historical runtime pins are not supported'
+    ledger = json.loads(args.package_receipt.read_text())
+    assert Path(ledger['folder']).resolve() == accepted
+    assert ledger['runtimeSourceHead'] == ledger['sourceHead'] == head
+    assert not ledger['sourceDirty'], 'Package source must be committed and clean'
+    for row in ledger['files']:
+        relative = Path(row['file'])
+        assert not relative.is_absolute() and '..' not in relative.parts
+        file = accepted / relative
+        if 'link' in row:
+            assert file.is_symlink() and os.readlink(file) == row['link']
+        else:
+            assert file.stat().st_size == row['bytes'] and sha(file) == row['sha256'], str(file)
     app_source, = accepted.glob('*.app')
+    runtime_head = json.loads((app_source / 'Contents/Resources/app/package.json').read_text())['sourceHead']
+    assert runtime_head == head
     mac = OUT / 'Red Alert 2 HD.app'
     clone(app_source, mac)
     resources = mac / 'Contents/Resources/GameResources'
@@ -116,14 +129,16 @@ if args.phase == 'stage':
         file = resources.joinpath(*relative.parts[1:])
         assert file.stat().st_size == row['bytes'] and sha(file) == row['sha256'], str(file)
         protected.append(dict(file=str(Path(*relative.parts[1:])), bytes=row['bytes'], sha256=row['sha256']))
-    assert len(protected) == 13978
+    assert protected and len({row['file'] for row in protected}) == len(protected)
+    assert {row['file']: row for row in protected} == {row['file']: row for row in inventory(resources)}, \
+        'Combined resource inventory must match the complete receipt'
     save(OUT / 'resource-inventory.json', protected)
     payload = mac / 'Contents/Resources/app'
     configure(payload, 'complete-macos-arm64', head)
     plist_file = mac / 'Contents/Info.plist'
     plist = plistlib.loads(plist_file.read_bytes())
     plist.update(CFBundleName='Red Alert 2 HD', CFBundleDisplayName='Red Alert 2 HD',
-                 CFBundleIdentifier='local.ra2hd.desktop', CFBundleVersion='25',
+                 CFBundleIdentifier='local.ra2hd.desktop', CFBundleVersion=time.strftime('%Y%m%d%H%M'),
                  CFBundleIconFile='app-icon.icns',
                  LSApplicationCategoryType='public.app-category.games')
     plist_file.write_bytes(plistlib.dumps(plist))
@@ -185,7 +200,7 @@ if args.phase == 'stage':
         names = [str(f.relative_to(folder)).casefold() for f in folder.rglob('*') if f.is_file()]
         assert len(names) == len(set(names)), 'Case-insensitive collision'
     save(OUT / 'stage.json', dict(status='STAGED_PENDING_NATIVE_MAC_AND_ARCHIVE_VERIFICATION',
-        packagingSourceHead=head, acceptedRuntimeSourceHead='fbaac0f53fc6f0a93b570d8fcf26b2658e68a69b',
+        packagingSourceHead=head, acceptedRuntimeSourceHead=runtime_head,
         resources=len(protected), mac=str(mac), windows=str(win), electron=electron_version,
         electronArchiveSha256=checksums[runtime.name], windowsRuntime='NOT_RUN_ON_THIS_MAC',
         macSigning='AD_HOC_LOCAL_ONLY_NOT_NOTARIZED', sharedResources='PRIVATE_IMPORT_DATA_INCLUDED'))

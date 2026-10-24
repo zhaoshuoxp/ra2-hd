@@ -56,20 +56,24 @@ export async function startSession(receiptFile, output, edition = 'yr', snow = f
         const requestedMap = process.argv.find(arg => arg.startsWith('--map='))?.slice(6);
         if (requestedMap) assert(/^[a-z0-9_-]+\.map$/i.test(requestedMap), 'Invalid fixture map name');
         const botSlot = Number(process.argv.find(arg => arg.startsWith('--bot-slot='))?.slice(11) ?? 3);
+        const botSlots = process.argv.find(arg => arg.startsWith('--bot-slots='))?.slice(12).split(',').map(Number) ?? [botSlot];
         const cratesAppear = process.argv.includes('--crates');
         assert(Number.isInteger(botSlot) && botSlot >= 1 && botSlot <= 7, 'Invalid native bot slot');
-        await page.evaluate(({ edition, snow, highResolution, requestedMap, botSlot, cratesAppear }) => {
+        assert(botSlots.length && new Set(botSlots).size === botSlots.length &&
+            botSlots.every(slot => Number.isInteger(slot) && slot >= 1 && slot <= 7), 'Invalid native bot slots');
+        await page.evaluate(({ edition, snow, highResolution, requestedMap, botSlots, cratesAppear }) => {
             const d = window.__ra2debug;
             d.generalOptions.graphics.renderResolution.value = highResolution ? '4k' : '1080p';
             const bots = Array(8).fill(null);
-            bots[botSlot] = { d: 4, c: 5, co: 2, s: botSlot, t: 1 };
+            for (const slot of botSlots) bots[slot] = { d: 4, c: botSlots.length > 1 ? slot + 1 : 5,
+                co: 2, s: slot, t: botSlots.length > 1 ? slot : 1 };
             Object.entries({
                 _r_lastMap: requestedMap ?? (edition === 'yr' ? 'X' : '') + (snow ? 'MP26S6.map' : 'MP01T4.map'), _r_lastMode: '1',
                 _r_lastCountry: '0', _r_lastColor: '1', _r_lastStartPos: '0', _r_lastTeam: '0',
                 _r_hostOpts: `6;10000;0;1;1;0;1;${Number(cratesAppear)};;0;1;0;0`,
                 _r_lastBots: JSON.stringify(bots),
             }).forEach(([key, value]) => localStorage.setItem(`_edition:${edition}:${key}`, value));
-        }, { edition, snow, highResolution, requestedMap, botSlot, cratesAppear });
+        }, { edition, snow, highResolution, requestedMap, botSlots, cratesAppear });
         const locale = JSON.parse(await fs.readFile('public/res/locale/zh-CN.json', 'utf8'));
         await page.getByRole('button', { name: new RegExp(`${locale['hd:menuskirmish']}|Skirmish`, 'i') }).click();
         await page.waitForFunction(() => window.__ra2debug?.skirmishLobby);

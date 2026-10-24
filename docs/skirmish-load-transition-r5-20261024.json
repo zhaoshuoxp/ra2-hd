@@ -1,0 +1,141 @@
+{
+  "status": "DELIVERED_MAC_NATIVE_AND_PACKAGE_PASS_USER_ACCEPTANCE_PENDING",
+  "deliveredAt": "2026-10-24T21:53:50.514456+00:00",
+  "sourceHead": "dc494dbd59363439ae830fad5e81134ef36ee95b",
+  "sourceStatus": "UNCOMMITTED_LOCAL_MAIN_REPAIR_SNAPSHOT",
+  "runtime": "candidate-r2",
+  "revision": "save-load-transition-r5",
+  "bundleVersion": 34,
+  "changes": [
+    "Direct save-page to game navigation avoids parent menu reactivation and duplicate sidebar animation",
+    "Restore progress is integrated into the existing map-loading progress bar without transient working dialogs",
+    "Saved-game loading retains button and Escape cancellation; cancelled loading does not report an error",
+    "Save pages release their manual dialog when the enclosing screen is destroyed"
+  ],
+  "technical": {
+    "entryTypecheck": "PASS",
+    "focusedCases": 16,
+    "assertions": 175,
+    "failures": 0
+  },
+  "nativeCandidate": "PASS_RA2_2X_AND_YR_4X_HOME_AND_IN_GAME_LOAD_BACK_BUTTON_CANCEL_ESCAPE_DURING_RESTORE_AND_IDENTICAL_R4_TRAINER_SAVES",
+  "nativeInstalled": "PASS_DEFAULT_PROFILE_STARTUP_AND_YR_4X_TRAINER_RESTART_SAVE_LOAD_600_TICK_CONTINUATION_RESAVE_AND_CONTROLS",
+  "nativeExtractedZip": "PASS_ACTUAL_ZIP_EXTRACTED_RA2_2X_HOME_AND_IN_GAME_LOAD_NO_TRANSIENT_DIALOGS_BACK_BOTH_CANCEL_PATHS_AND_IDENTICAL_R4_SAVE_STATE",
+  "nativeMethod": "Actual native Mac UI actions with runtime call and animation-frame observation; only initial button-cancel loading is delayed by 700 ms for reproducibility",
+  "resourceFiles": 13978,
+  "resourceInventorySha256": "8cb55cf80e9280f45f1f488db2f010c823525eedbc356c7c1d98cc30987f4da5",
+  "preserved": "R4 resource pins menu and popup materials faction voices trainer save format fountain road and long-play repairs; five accepted loading artwork source files remain byte-identical",
+  "desktopEntry": "/Users/Aone/Desktop/Red Alert 2 HD Skirmish Repairs R5 20261024.app",
+  "physicalApp": "/Users/Aone/Applications/Red Alert 2 HD Skirmish Repairs R5 20261024.app",
+  "desktopEntryType": "SYMLINK_TO_COMPLETE_APPLICATIONS_APP",
+  "zip": {
+    "status": "PASS_DESKTOP_COMPLETE_ZIP_EXACT_BYTES_AND_SHA256",
+    "file": "/Users/Aone/Desktop/Red Alert 2 HD Skirmish Repairs R5 20261024 Mac arm64.zip",
+    "bytes": 5660978657,
+    "sha256": "a84d39f8aabd3f98a5fba11a40868a40fac1d0e6464400ca4141fbce78bd8816",
+    "app": "Red Alert 2 HD Skirmish Repairs R5 20261024.app",
+    "sourceApp": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-load-transition-r5-20261024/mac-single-app-r2/Red Alert 2 HD Skirmish Repairs R5 20261024.app",
+    "verifiedEntries": 14523,
+    "directories": 10703,
+    "logicalBytes": 9812624427,
+    "resourceFiles": 13978,
+    "appInventorySha256": "3644d31d5c8e05e5185cf3a6cfda58c356f650a8753baa528328ab266f7e2ac2",
+    "compression": "DEFLATE_LEVEL_1_ZIP64",
+    "timestamp": "2026-10-24T21:50:05Z",
+    "copiedFrom": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-load-transition-r5-20261024/Red-Alert-2-HD-Skirmish-Repairs-R5-20261024-Mac-arm64.zip"
+  },
+  "profile": "/Users/Aone/Library/Application Support/Red Alert 2 HD Skirmish Repairs 20261023",
+  "profileSnapshot": "preserved-default-profile-before-r5",
+  "sourceSnapshot": "source-snapshot-final/manifest.json",
+  "priorDeliveries": "PRESERVED",
+  "preliminaryEvidence": [
+    {
+      "path": "native-r1-ra2/report.json",
+      "reason": "Back instrumentation started before the save page finished entering; harness synchronization corrected"
+    },
+    {
+      "path": "native-r1-ra2-rerun/report.json",
+      "reason": "Normal cancelled loading was logged as an error; final runtime returns before logging when the token is cancelled"
+    }
+  ],
+  "visualAcceptance": "PENDING_USER_REVIEW",
+  "physicalInputAcceptance": "PENDING_USER_TEST",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "localCommit": "NOT_CREATED",
+  "remotePush": "NOT_PERFORMED",
+  "handoff": "Continue same-outcome testing and corrections in this conversation",
+  "evidenceHashes": [
+    {
+      "file": "baseline-r4-ra2/report.json",
+      "sha256": "3758ec98c7a71ef0feb930267d62da9653819430629fad31ef7269b8da8171f4"
+    },
+    {
+      "file": "native-r2-ra2/report.json",
+      "sha256": "e462f9307d5e32a9a18295389c733b0eaace85265d8bf7318b523cbacf270f4a"
+    },
+    {
+      "file": "native-r2-yr/report.json",
+      "sha256": "239a7de98cc319621114367eea52277f075b6b08b690d557d869c1da88aca2a6"
+    },
+    {
+      "file": "native-transition-summary.json",
+      "sha256": "a918690d4186cb995c9d87b4ac43a129294001df776fc4570496e9a609fccc8d"
+    },
+    {
+      "file": "focused-tests-final.log",
+      "sha256": "9ef64e11cf5c2cd82811e37bf3298f4450de6670252034b899a4a974aee6b366"
+    },
+    {
+      "file": "typecheck-final.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    },
+    {
+      "file": "packaged-final-soviet/report.json",
+      "sha256": "d040c2189a8e65ddeb8c6001f298110e6ce31da5c0cc83063edf24e6848aa92f"
+    },
+    {
+      "file": "desktop-direct-final/report.json",
+      "sha256": "a63f5c450d4ee2b3a2200d3c9a8606f07fbb286f93508f616200f24895279b32"
+    },
+    {
+      "file": "zip-extracted-final-receipt.json",
+      "sha256": "75e5f32f43f28e98356bf003aace72a39058f4677f17c32a501ba6385931b269"
+    },
+    {
+      "file": "extracted-final-ra2/report.json",
+      "sha256": "a46bc31b2a41a929cd7d7c99394a387ee33ecb3393bc09245c444c403e603e54"
+    },
+    {
+      "file": "default-profile-preservation.json",
+      "sha256": "c7912ac065e50e87f97b151debfd9fed12db44ef12f312903cf60c16118515b5"
+    },
+    {
+      "file": "default-profile-after-launch.json",
+      "sha256": "093cb8de870037e841bf0dfed5697f57e82712d5a347890514a28e3b5909f585"
+    },
+    {
+      "file": "resource-preservation.json",
+      "sha256": "5e2b60dbf4df4a173a647076d16f7548b9aa5f0ea58f432e08737e159a30af57"
+    },
+    {
+      "file": "r4-source-preservation.json",
+      "sha256": "637bf242dd965ffee61596a779721902e0f36ec74fd609f5215f4f323f7fefe2"
+    },
+    {
+      "file": "map-loading-preservation.json",
+      "sha256": "2407d034f747a093d0825ecd6b3fec92b2216ab22464c8b682dbe2e2a4efb836"
+    },
+    {
+      "file": "desktop-entry-final.json",
+      "sha256": "d51b16fd4b3688b8dc5efefb03b16649cbf2cbd0038b83bed0aa2077fe3faa48"
+    },
+    {
+      "file": "desktop-zip-final.json",
+      "sha256": "07ab368d2fef29f08ecc4a63f6f1b7dcd4d3a27f256ceb4c8320285407fbdc1f"
+    },
+    {
+      "file": "source-snapshot-final/manifest.json",
+      "sha256": "cc8a596a7037d4141e808f2c9bc344eb496d31f0da826d2510d1cca2825b2765"
+    }
+  ]
+}

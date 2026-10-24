@@ -7,6 +7,7 @@ import { HtmlView } from "@/gui/jsx/HtmlView";
 import { UiComponent, UiComponentProps } from "@/gui/jsx/UiComponent";
 type SidebarMenuButton = {
     label: string;
+    action?: string;
     disabled?: boolean;
     isBottom?: boolean;
     onClick?: () => void;
@@ -41,7 +42,7 @@ export class SidebarMenu extends UiComponent<SidebarMenuProps> {
         }), jsx(HtmlView, {
             component: MenuButton,
             props: {
-                buttonConfig: { label: btn.label, disabled: !!btn.disabled },
+                buttonConfig: { label: btn.label, action: btn.action, disabled: !!btn.disabled },
                 box: { x: box.x, y: box.y, width: box.width, height: box.height },
                 onMouseDown: (e: any) => {
                     spriteRef.current.setFrame(1);

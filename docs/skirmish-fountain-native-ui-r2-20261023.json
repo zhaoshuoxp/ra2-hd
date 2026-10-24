@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_MAC_DELIVERY_PENDING_USER_VISUAL_ACCEPTANCE",
+  "timestamp": "2026-10-24T04:30:06.510612+00:00",
+  "source": {
+    "branch": "main",
+    "head": "dc494dbd59363439ae830fad5e81134ef36ee95b",
+    "state": "UNCOMMITTED_LOCAL_REPAIR_SNAPSHOT",
+    "selectedBuild": "candidate-r6",
+    "identitySha256": "caf08dbd526c1d3610bc1f0ef6f1568dc07135908d7a4b7b7cc93e2d4bf588e6",
+    "snapshot": "../.artifacts/skirmish-visual-r2-20261023/source-snapshot-selected/manifest.json",
+    "remotePush": false,
+    "campaignWorktree": "UNTOUCHED_BY_THIS_TASK"
+  },
+  "fountain": {
+    "publishedMaps": 27,
+    "placements4X": 79,
+    "coverage": "fountain-coverage.json",
+    "bulkRuntime": "candidate-r2a",
+    "strictManhattanRecheckRuntime": "candidate-r5",
+    "density2Runtime": "candidate-r5",
+    "density2Maps": 4,
+    "bayContinuousSecondsPerDensity": 30,
+    "originalControl": "fountain-original-control/fountain-loop.json",
+    "finalExtractedApp": "extracted-fountain-bay-4x/fountain-loop.json",
+    "finalExtractedBasinHashes": [
+      2067880235
+    ]
+  },
+  "validation": {
+    "focusedCases": 22,
+    "assertions": 187,
+    "entryTypecheck": "PASS",
+    "frozenBuild": "PASS",
+    "whitespace": "PASS",
+    "broaderHistoricalTypecheck": "UNCHANGED_MODMETA_TS_52_PARSE_ERROR",
+    "hdEditionCountryCombinations": 19,
+    "originalAndMissingMapControls": 4,
+    "minimumHdCanvasDensity": 1.973431333027084,
+    "maximumUiBytesIncludingResultHeadroom": 16704384,
+    "uiBudgetBytes": 16777216,
+    "nativeSaveRa2_2X": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+    "nativeSaveYr_4X": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+    "nativeSaveTick": 2181,
+    "nativeSaveContinuationTicks": 600,
+    "nativeUiPressure": "PASS_NATIVE_MAC_ROADS_CLOCK_ALPHA_RESULT_PRESSURE_AND_RELEASE",
+    "nativeDefaultProfile": "PASS_DESKTOP_DIRECT_APP_INTERNAL_RESOURCES_PRIVATE_DEFAULT_PROFILE",
+    "nativeProfilePreexisting": true,
+    "nativeExtractedApp": "PASS_NATIVE_CONTINUOUS_FOUNTAIN_OBSERVATION",
+    "canonicalResourcePinsIdenticalToPreviousDelivery": 13978,
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "userAcceptance": "PENDING"
+  },
+  "artwork": {
+    "tool": "Built-in ImageGen",
+    "selectedBitmaps": [
+      "public/res/ui/dialog-background-r2.png",
+      "public/res/ui/dialog-background-yr-r2.png",
+      "public/res/ui/save-files-ra2-r2.png",
+      "public/res/ui/save-files-yr-r2.png",
+      "public/res/ui/loading-allied-r2.png",
+      "public/res/ui/loading-soviet-r2.png"
+    ],
+    "pixelEditingAfterGeneration": false,
+    "prompts": [
+      "authoring/prompts.json",
+      "authoring/edition-prompts.json"
+    ],
+    "provenance": [
+      "authoring/asset-receipt.json",
+      "authoring/edition-assets.json"
+    ],
+    "nativeReferences": "original-edition-ui-palettes/inventory.json"
+  },
+  "delivery": {
+    "app": "/Users/Aone/Applications/Red Alert 2 HD Skirmish Repairs 20261023.app",
+    "desktopEntry": "/Users/Aone/Desktop/Red Alert 2 HD Skirmish Repairs R2 20261023.app",
+    "desktopEntryKind": "SYMLINK_TO_COMPLETE_APPLICATIONS_BUNDLE",
+    "bundleVersion": "31",
+    "profile": "/Users/Aone/Library/Application Support/Red Alert 2 HD Skirmish Repairs 20261023",
+    "profileBackup": "preserved-default-profile-before-r2",
+    "previousApp": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/skirmish-visual-r2-20261023/preserved-installed-v4/Red Alert 2 HD Skirmish Repairs 20261023.app",
+    "zip": "/Users/Aone/Desktop/Red Alert 2 HD Skirmish Repairs R2 20261023 Mac arm64.zip",
+    "zipBytes": 5669319156,
+    "zipSha256": "d24303f5c20d7c03a1022ac77c2ba7153266da95e757ec3370b93b93e1d0a4ee",
+    "zipVerification": "PASS_COMPLETE_MAC_ZIP_ALL_DECOMPRESSED_BYTES_MODES_SYMLINKS",
+    "verifiedAppEntries": 14530,
+    "nativeResourceRoot": "/Users/Aone/Applications/Red Alert 2 HD Skirmish Repairs 20261023.app/Contents/Resources/GameResources",
+    "sourcePackageReceipt": "mac-single-app-r4/package-receipt.json",
+    "installedSignatureDiagnostic": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "rootAttributes": "com.apple.provenance: \u0001\u0002\n",
+      "cleanSourceSignature": "AD_HOC_DEEP_STRICT_PASS_NOT_NOTARIZED"
+    }
+  }
+}

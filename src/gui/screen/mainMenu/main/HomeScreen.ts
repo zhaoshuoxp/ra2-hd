@@ -7,6 +7,7 @@ import { MessageBoxApi } from '../../../component/MessageBoxApi';
 import { FullScreen } from '../../../FullScreen';
 import { getHumanReadableKey } from '@/gui/screen/options/component/getHumanReadableKey';
 import { currentLanguage, preferredLanguage } from '@/gui/Language';
+import { activeEdition } from '@/editions/activeEdition';
 interface SidebarButton {
     label: string;
     tooltip?: string;
@@ -24,7 +25,8 @@ export class HomeScreen implements Screen {
     private controller?: MainMenuController;
     public title: string;
     public musicType: MusicType;
-    constructor(strings: Strings, messageBoxApi: MessageBoxApi, appVersion: string, storageEnabled: boolean = false, quickMatchEnabled: boolean = false, fullScreen?: FullScreen) {
+    constructor(strings: Strings, messageBoxApi: MessageBoxApi, appVersion: string, storageEnabled: boolean = false, quickMatchEnabled: boolean = false, fullScreen?: FullScreen,
+        private rootController?: any) {
         this.strings = strings;
         this.messageBoxApi = messageBoxApi;
         this.appVersion = appVersion;
@@ -56,6 +58,8 @@ export class HomeScreen implements Screen {
                 tooltip: text('HD:MenuSkirmishHint', 'Play against local AI opponents'),
                 onClick: () => this.controller?.goToScreen(MainMenuScreenType.Skirmish),
             },
+            { label: text('HD:LoadGame', 'Load Game'), onClick: () =>
+                this.controller?.pushScreen(MainMenuScreenType.LoadGame) },
             placeholder('HD:MenuLAN', 'LAN'),
             placeholder('HD:MenuMovies', 'Movies'),
             {
@@ -79,7 +83,8 @@ export class HomeScreen implements Screen {
             this.controller.setSidebarButtons(buttons);
             this.controller.showSidebarButtons();
             this.controller.toggleMainVideo(true);
-            this.controller.showVersion(this.appVersion);
+            this.controller.showVersion(this.appVersion,
+                this.strings.get(activeEdition === 'yr' ? 'HD:EditionYr' : 'HD:EditionRa2'));
         }
     }
     async onLeave(): Promise<void> {

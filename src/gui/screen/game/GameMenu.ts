@@ -30,7 +30,8 @@ export class GameMenu {
     get onSendMessage() {
         return this._onSendMessage.asEvent();
     }
-    constructor(private screens: Map<number, any>, private game: any, private localPlayer: any, private chatHistory: any, private gservCon?: any, private isSinglePlayer: boolean = false, private isTournament: boolean = false, private gameSpeed?: GameSpeedControl) { }
+    constructor(private screens: Map<number, any>, private game: any, private localPlayer: any, private chatHistory: any, private gservCon?: any, private isSinglePlayer: boolean = false, private isTournament: boolean = false, private gameSpeed?: GameSpeedControl,
+        private saves?: { onSave(): void; onLoad(): void }) { }
     init(hud: any): void {
         const controller = this.controller = new GameMenuController(hud, this.gameSpeed);
         for (const [screenType, screen] of this.screens) {
@@ -45,6 +46,7 @@ export class GameMenu {
             return;
         this._onOpen.dispatch(this);
         this.controller.goToScreen(ScreenType.Home, {
+            ...this.saves,
             observeAllowed: !(this.isTournament ||
                 this.isSinglePlayer ||
                 this.localPlayer === undefined ||
@@ -117,6 +119,12 @@ export class GameMenu {
     }
     getCurrentScreen(): any {
         return this.controller?.getCurrentScreen();
+    }
+    openSaves(params: any): void {
+        void this.controller?.pushScreen(ScreenType.Saves, params);
+    }
+    setExternalDialogVisible(visible: boolean): void {
+        this.controller?.setExternalDialogVisible(visible);
     }
     dispose(): void {
         this.disposables.dispose();

@@ -139,6 +139,11 @@ export class MainMenuRootScreen extends RootScreen {
         else if (screenType === MainMenuScreenType.Options) {
             screen = new screenClass(this.strings, this.jsxRenderer, this.generalOptions, this.localPrefs, this.fullScreen, false, true);
         }
+        else if (screenType === MainMenuScreenType.LoadGame) {
+            screen = new screenClass(this.strings, this.jsxRenderer, {
+                rootController: this.rootController, options: { engineVersion: this.appVersion },
+            });
+        }
         else if (screenType === MainMenuScreenType.OptionsSound) {
             screen = new screenClass(this.strings, this.jsxRenderer, this.mixer, this.music, this.localPrefs);
         }
@@ -226,7 +231,7 @@ export class MainMenuRootScreen extends RootScreen {
             screen = new screenClass(this.rootController, this.strings, this.jsxRenderer, rules, mapFileLoader, mapList, gameModes, this.localPrefs, this.messageBoxApi, mapDir);
         }
         else if (screenType === MainMenuScreenType.Home) {
-            screen = new screenClass(this.strings, this.messageBoxApi, this.appVersion, false, false, this.fullScreen);
+            screen = new screenClass(this.strings, this.messageBoxApi, this.appVersion, false, false, this.fullScreen, this.rootController);
         }
         else {
             screen = new screenClass(this.strings, this.messageBoxApi, this.appVersion, false, false);
@@ -237,7 +242,7 @@ export class MainMenuRootScreen extends RootScreen {
         console.log('[MainMenuRootScreen] Leaving main menu root screen');
         if (this.mainMenuCtrl) {
             this.mainMenuCtrl.toggleMainVideo(false);
-            await this.mainMenuCtrl.leaveCurrentScreen();
+            await this.mainMenuCtrl.close();
             this.mainMenuCtrl.destroy();
             this.mainMenuCtrl = undefined;
         }

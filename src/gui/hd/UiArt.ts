@@ -1,8 +1,10 @@
 import * as THREE from 'three';
+import resultBanners from './resultBannerSources.json';
 export interface UiArtEntry { id: string; file: string; sha256: string; width: number; height: number; logicalWidth: number; logicalHeight: number; overlay?: string }
 export interface UiMenuVideo { file: string; sha256: string; width: number; height: number }
 export interface UiArtManifest { schemaVersion: 1; revision: string; assets: UiArtEntry[]; menuVideo?: { original: UiMenuVideo; hd: UiMenuVideo } }
 export const UI_TEXTURE_BUDGET = 16 * 1024 * 1024;
+export const UI_RESULT_BANNER_BYTES = Math.min(...resultBanners.assets.map(asset => asset.width * asset.height * 4));
 export function validateUiManifest(value: any): UiArtManifest {
     if (value?.schemaVersion !== 1 || !/^[\w-]{1,64}$/.test(value.revision) || !Array.isArray(value.assets) || value.assets.length > 512) throw Error('Invalid UI manifest');
     const ids = new Set<string>();
@@ -32,6 +34,7 @@ export function validateUiManifest(value: any): UiArtManifest {
 }
 type Loaded = { bitmap: ImageBitmap; texture: THREE.Texture; bytes: number; url?: string };
 type Slot = { refs: number; promise: Promise<Loaded | undefined>; loaded?: Loaded };
+type SurfaceKind = 'transition' | 'dom' | 'result';
 export interface UiCameoSource { id: string; width: number; height: number; sequence?: string; transitionBase?: number; atlas?: { width: number; height: number; x: number; y: number } }
 export class UiArtStore {
     readonly frames = new WeakMap<object, UiCameoSource[]>();
@@ -41,10 +44,23 @@ export class UiArtStore {
     private readEnabled = () => false;
     private generation = 0;
     private reserved = 0;
-    private surfaces = new Map<object, { gpu: number; cpu: number; kind: 'transition' | 'dom' }>();
-    reserveSurface(owner: object, gpu: number, cpu: number, kind: 'transition' | 'dom' = 'transition'): boolean {
+    private resultUsers = 0;
+    private surfaces = new Map<object, { gpu: number; cpu: number; kind: SurfaceKind }>();
+    protectResultBanner(): () => void {
+        this.resultUsers++;
+        let live = true;
+        return () => { if (live) { live = false; this.resultUsers--; } };
+    }
+    private resultHeadroom(): number {
+        if (!this.resultUsers) return 0;
+        const allocated = [...this.surfaces.values()].reduce((sum, surface) =>
+            sum + (surface.kind === 'result' ? surface.gpu : 0), 0);
+        return Math.max(0, UI_RESULT_BANNER_BYTES - allocated);
+    }
+    reserveSurface(owner: object, gpu: number, cpu: number, kind: SurfaceKind = 'transition'): boolean {
         if (this.surfaces.has(owner)) return true;
-        if (this.reserved + gpu > UI_TEXTURE_BUDGET) return false;
+        const limit = UI_TEXTURE_BUDGET - (kind === 'result' ? 0 : this.resultHeadroom());
+        if (this.reserved + gpu > limit) return false;
         this.surfaces.set(owner, { gpu, cpu, kind }); this.reserved += gpu; return true;
     }
     releaseSurface(owner: object): void {
@@ -70,6 +86,10 @@ export class UiArtStore {
     }
     get enabled(): boolean { return this.readEnabled() && !!this.manifest; }
     get revision(): string | undefined { return this.manifest?.revision; }
+    source(id: string): (UiArtEntry & { url: string }) | undefined {
+        const entry = this.manifest?.assets.find(asset => asset.id === id);
+        return entry && this.enabled ? { ...entry, url: `/local-ui/${this.manifest!.revision}/${entry.file}` } : undefined;
+    }
     menuVideoSource(original = false): string | undefined {
         const video = this.manifest?.menuVideo?.[!original && this.enabled ? 'hd' : 'original'];
         return video ? `/local-ui/${this.manifest!.revision}/${video.file}` : undefined;
@@ -98,7 +118,8 @@ export class UiArtStore {
             const key = this.slotKey(entry);
             if (!this.slots.has(key)) additional.set(key, entry.width * entry.height * 4);
         }
-        return this.reserved + [...additional.values()].reduce((sum, bytes) => sum + bytes, 0) <= UI_TEXTURE_BUDGET;
+        return this.reserved + [...additional.values()].reduce((sum, bytes) => sum + bytes, 0)
+            <= UI_TEXTURE_BUDGET - this.resultHeadroom();
     }
     acquire(id: string, ready: (asset?: Loaded) => void, immediateIfLoaded = false): () => void {
         const entry = this.manifest?.assets.find(a => a.id === id);
@@ -108,7 +129,7 @@ export class UiArtStore {
         let slot = this.slots.get(key);
         if (!slot) {
             const bytes = entry.width * entry.height * 4;
-            if (this.reserved + bytes > UI_TEXTURE_BUDGET) { ready(); return () => {}; }
+            if (this.reserved + bytes > UI_TEXTURE_BUDGET - this.resultHeadroom()) { ready(); return () => {}; }
             this.reserved += bytes;
             slot = { refs: 0, promise: Promise.resolve(undefined) };
             const created = slot;
@@ -157,14 +178,15 @@ export class UiArtStore {
     }
     metrics() {
         return { revision: this.revision, enabled: this.enabled, reservedBytes: this.reserved,
+            resultHeadroomBytes: this.resultHeadroom(),
             decodedCpuBytes: [...this.slots.values()].reduce((n,s) => n + (s.loaded?.bytes ?? 0), 0),
             gpuTextureBytesUpperBound: [...this.slots.values()].reduce((n,s) => n + (s.loaded?.bytes ?? 0), 0),
             transitionGpuBytes: [...this.surfaces.values()].reduce((n,s) => n + (s.kind === 'transition' ? s.gpu : 0), 0),
             transitionCpuCanvasBytes: [...this.surfaces.values()].reduce((n,s) => n + (s.kind === 'transition' ? s.cpu : 0), 0),
-            domImageGpuBytesUpperBound: [...this.surfaces.values()].reduce((n,s) => n + (s.kind === 'dom' ? s.gpu : 0), 0),
-            domImageDecodedCpuBytesUpperBound: [...this.surfaces.values()].reduce((n,s) => n + (s.kind === 'dom' ? s.cpu : 0), 0),
+            domImageGpuBytesUpperBound: [...this.surfaces.values()].reduce((n,s) => n + (s.kind !== 'transition' ? s.gpu : 0), 0),
+            domImageDecodedCpuBytesUpperBound: [...this.surfaces.values()].reduce((n,s) => n + (s.kind !== 'transition' ? s.cpu : 0), 0),
             textures: [...this.slots.values()].filter(s => s.loaded).length, budget: UI_TEXTURE_BUDGET,
-            domCanvasBytes: [...document.querySelectorAll<HTMLCanvasElement>('canvas[data-ui-art],canvas[data-loading-backdrop]')]
+            domCanvasBytes: [...document.querySelectorAll<HTMLCanvasElement>('canvas[data-ui-art],canvas[data-loading-backdrop],canvas[data-native-ui-backdrop]')]
                 .reduce((n,c) => n + (c.hidden ? 0 : c.width * c.height * 4), 0), mipmaps: false };
     }
     dispose(): void {

@@ -8,6 +8,8 @@ const staticFiles = ['index.html', 'config.ini', 'mods.ini', 'servers.ini', '7zz
     'other/file-explorer.css', 'other/fileexplorer_sprites.png', 'res/locale/en-US.json', 'res/locale/zh-CN.json', 'res/locale/zh-TW.json',
     ...['ra2', 'yr'].flatMap(edition => ['en-US', 'zh-CN', 'zh-TW'].map(language => `res/locale/retail-${edition}-${language}.json`)),
     ...['victory', 'defeat'].flatMap(outcome => [2, 4].map(density => `res/ui/result-${outcome}-hd-v1-${density}x.png`)),
+    ...['dialog-background-r2.png', 'dialog-background-yr-r2.png', 'save-files-neutral-r3.png',
+        'save-files-allied-r3.png', 'save-files-soviet-r3.png', 'yuri-pause-emblem-hd-v2.png'].map(name => `res/ui/${name}`),
     'res/img/drag-archive.png', 'res/img/drag-folder.png', 'res/img/download-arrow.png', 'res/fonts/fonts.css',
     'res/fonts/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWU3IuMR0cg.woff2', 'res/fonts/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWQXOuMR0cg.woff2'];
 const emitted = await fs.readdir('dist/assets');

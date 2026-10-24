@@ -33,6 +33,7 @@ import * as DebugRenderable from "@/engine/renderable/DebugRenderable";
 import * as MathUtils from "@/engine/gfx/MathUtils";
 import * as THREE from "three";
 import { BunkerDepth } from '../building/BunkerDepth';
+import { FountainSurface } from '../building/FountainSurface';
 import { BuildingTurretRenderer } from '../building/BuildingTurretHd';
 import { configureWarFactoryLayerPose } from './building/WarFactoryLayerPose';
 import { isViewCulled } from '../../gfx/ViewCulling';
@@ -133,6 +134,7 @@ export class Building {
     }
     buildingTurretHd?: BuildingTurretRenderer;
     private bunkerDepth?: BunkerDepth;
+    private fountainSurface?: FountainSurface;
     static lampTextures = new Map();
     gameObject: any;
     selectionModel: any;
@@ -446,6 +448,7 @@ export class Building {
     update(i) {
         const viewCulled = isViewCulled(this.target);
         this.bunkerDepth?.restore();
+        this.fountainSurface?.restore();
         if (!this.objectRules.isLightpost) {
             this.gameObject.isDestroyed ||
                 void 0 !== this.currentAnimType ||
@@ -736,6 +739,10 @@ export class Building {
         if (this.gameObject.name === 'NATBNK') {
             this.bunkerDepth ??= new BunkerDepth(this);
             this.bunkerDepth.update();
+        }
+        if (this.gameObject.name === 'CAWASH18') {
+            this.fountainSurface ??= new FountainSurface(this);
+            this.fountainSurface.update();
         }
     }
     updateConstructionCompletion() {
@@ -1459,6 +1466,7 @@ export class Building {
     }
     dispose() {
         this.bunkerDepth?.dispose();
+        this.fountainSurface?.dispose();
         this.plugins.forEach((e) => e.dispose()),
             this.pipOverlay?.dispose(),
             this.placeholderObj?.dispose(),

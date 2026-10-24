@@ -1,0 +1,518 @@
+{
+  "schema": "road-marking-parking-repair-v1",
+  "date": "2026-10-22",
+  "branch": "main",
+  "head": "dc494dbd59363439ae830fad5e81134ef36ee95b",
+  "sourceStatus": "UNCOMMITTED_LOCAL_WORKTREE",
+  "technicalStatus": "PASS_NATIVE_MAC_AND_FOCUSED_CHECKS",
+  "visualAcceptance": "PENDING",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "naturalLongMatch": "NOT_RUN",
+  "counts": {
+    "repairedMembers": 36,
+    "changedFrames": 814,
+    "verifiedFrames": 23182,
+    "verifiedFiles": 468,
+    "nativeCases": 8,
+    "nativeCaptures": 46,
+    "bunTests": 373,
+    "assertions": 4623,
+    "pythonTests": 7
+  },
+  "selections": [
+    {
+      "theater": "temperate",
+      "baseline": {
+        "schemaVersion": 1,
+        "revision": "temperate-m2-3-gameplay-feedback-v12",
+        "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+      },
+      "selected": {
+        "schemaVersion": 1,
+        "revision": "temperate-road-markings-v5",
+        "sha256": "64c9c73e64cbd30355de2b2b7dcfdce584040859a263fbc6911da2127c8e1e1f"
+      },
+      "members": [
+        "proad03.tem",
+        "proadc13.tem",
+        "proadc14.tem"
+      ]
+    },
+    {
+      "theater": "urban",
+      "baseline": {
+        "schemaVersion": 1,
+        "revision": "urban-road-hd-repair-v2",
+        "sha256": "fc18a6621272d04d713fc455e60a15fc0fbac6375ea77a3ce0aa0d2a951442b9"
+      },
+      "selected": {
+        "schemaVersion": 1,
+        "revision": "urban-road-markings-v5",
+        "sha256": "73f5f86edbeb72730d84a5d20dda966dc9161f1e73cc1fc9658d097928586d20"
+      },
+      "members": [
+        "proad06.urb",
+        "proad08.urb",
+        "proad03.urb",
+        "proad14.urb",
+        "proad07.urb",
+        "proad09.urb",
+        "proad04.urb",
+        "proad05.urb",
+        "proadc13.urb",
+        "proadc14.urb",
+        "prslpe01.urb",
+        "prslpe02.urb",
+        "rough03.urb",
+        "rough01.urb",
+        "rough02.urb",
+        "rough06.urb"
+      ]
+    },
+    {
+      "theater": "newurban",
+      "baseline": {
+        "schemaVersion": 1,
+        "revision": "newurban-m2-4-final-terrain-batch96-v2",
+        "sha256": "c54d438f607fe7b388cc5a44237aeee315e7e372f553655891d74f5a7d42a393"
+      },
+      "selected": {
+        "schemaVersion": 1,
+        "revision": "newurban-road-markings-v5",
+        "sha256": "51734f2008fc4a9a15361f9b47724973ecd98eeb6a3c703d84a21a109e3e11e8"
+      },
+      "members": [
+        "proad09.ubn",
+        "proad06.ubn",
+        "proad08.ubn",
+        "proad07.ubn",
+        "proad04.ubn",
+        "proad03.ubn",
+        "proad05.ubn",
+        "proadc13.ubn",
+        "proadc14.ubn",
+        "rough06.ubn",
+        "rough02.ubn",
+        "rough03.ubn",
+        "rough01.ubn",
+        "prslpe02.ubn",
+        "prslpe01.ubn"
+      ]
+    },
+    {
+      "theater": "snow",
+      "baseline": {
+        "schemaVersion": 1,
+        "revision": "snow-m2-4-relief-contacts-r7-v2",
+        "sha256": "a9711d2cde92970c4305f125b0d13d426add0539b5caf7f8eaea917a76ae967a"
+      },
+      "selected": {
+        "schemaVersion": 1,
+        "revision": "snow-m2-4-relief-contacts-r7-v2",
+        "sha256": "a9711d2cde92970c4305f125b0d13d426add0539b5caf7f8eaea917a76ae967a"
+      },
+      "members": []
+    },
+    {
+      "theater": "desert",
+      "baseline": {
+        "schemaVersion": 1,
+        "revision": "desert-m2-4-dirt-roads-batch81-v7",
+        "sha256": "f8e9e55c8bbfe37ecd837b71debb1a911f82fdb350bbb67395eadf13a2df9b96"
+      },
+      "selected": {
+        "schemaVersion": 1,
+        "revision": "desert-road-markings-v5",
+        "sha256": "60e05d855f5ef5b20aa23ca1007a2c07599bd822930357021f11bae638f1b921"
+      },
+      "members": [
+        "proadc13.des",
+        "proadc14.des"
+      ]
+    }
+  ],
+  "originalSources": [
+    {
+      "theater": "temperate",
+      "palette": {
+        "member": "isotem.pal",
+        "sha256": "5d6e40fcd11a592a31494c635d93c21796cfe86a2743f0258b1f7d0aff850795"
+      },
+      "members": 179,
+      "nativeFrames": 1458
+    },
+    {
+      "theater": "urban",
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3"
+      },
+      "members": 161,
+      "nativeFrames": 1194
+    },
+    {
+      "theater": "newurban",
+      "palette": {
+        "member": "isoubn.pal",
+        "sha256": "1aa49468a9439a5cff3e5f66fae0678501e9dc3ef7a4d90f23127c38ad6e4676"
+      },
+      "members": 134,
+      "nativeFrames": 1044
+    },
+    {
+      "theater": "snow",
+      "palette": {
+        "member": "isosno.pal",
+        "sha256": "9f411f95251d7e62fbdef34b37a9b8361ea15941621a88010d4e2c06486e67aa"
+      },
+      "members": 163,
+      "nativeFrames": 1391
+    },
+    {
+      "theater": "desert",
+      "palette": {
+        "member": "isodes.pal",
+        "sha256": "5d6e40fcd11a592a31494c635d93c21796cfe86a2743f0258b1f7d0aff850795"
+      },
+      "members": 111,
+      "nativeFrames": 957
+    }
+  ],
+  "integrity": [
+    {
+      "theater": "temperate",
+      "baseline": {
+        "schemaVersion": 1,
+        "revision": "temperate-m2-3-gameplay-feedback-v12",
+        "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+      },
+      "candidate": {
+        "schemaVersion": 1,
+        "revision": "temperate-road-markings-v5",
+        "sha256": "64c9c73e64cbd30355de2b2b7dcfdce584040859a263fbc6911da2127c8e1e1f"
+      },
+      "atlasFiles": 46,
+      "changedFiles": 2,
+      "frames": 5454,
+      "changedFrames": 30,
+      "preservedFrames": 5424,
+      "preservedCropFieldFrames": 560,
+      "emptyFrames": 12,
+      "nativeMetadata": "EXACT",
+      "alpha": "EXACT",
+      "atlasLayout": "EXACT",
+      "status": "PASS"
+    },
+    {
+      "theater": "urban",
+      "baseline": {
+        "schemaVersion": 1,
+        "revision": "urban-road-hd-repair-v2",
+        "sha256": "fc18a6621272d04d713fc455e60a15fc0fbac6375ea77a3ce0aa0d2a951442b9"
+      },
+      "candidate": {
+        "schemaVersion": 1,
+        "revision": "urban-road-markings-v5",
+        "sha256": "73f5f86edbeb72730d84a5d20dda966dc9161f1e73cc1fc9658d097928586d20"
+      },
+      "atlasFiles": 82,
+      "changedFiles": 8,
+      "frames": 4606,
+      "changedFrames": 398,
+      "preservedFrames": 4208,
+      "preservedCropFieldFrames": 0,
+      "emptyFrames": 8,
+      "nativeMetadata": "EXACT",
+      "alpha": "EXACT",
+      "atlasLayout": "EXACT",
+      "status": "PASS"
+    },
+    {
+      "theater": "newurban",
+      "baseline": {
+        "schemaVersion": 1,
+        "revision": "newurban-m2-4-final-terrain-batch96-v2",
+        "sha256": "c54d438f607fe7b388cc5a44237aeee315e7e372f553655891d74f5a7d42a393"
+      },
+      "candidate": {
+        "schemaVersion": 1,
+        "revision": "newurban-road-markings-v5",
+        "sha256": "51734f2008fc4a9a15361f9b47724973ecd98eeb6a3c703d84a21a109e3e11e8"
+      },
+      "atlasFiles": 220,
+      "changedFiles": 28,
+      "frames": 4384,
+      "changedFrames": 374,
+      "preservedFrames": 4010,
+      "preservedCropFieldFrames": 0,
+      "emptyFrames": 4,
+      "nativeMetadata": "EXACT",
+      "alpha": "EXACT",
+      "atlasLayout": "EXACT",
+      "status": "PASS"
+    },
+    {
+      "theater": "snow",
+      "baseline": {
+        "schemaVersion": 1,
+        "revision": "snow-m2-4-relief-contacts-r7-v2",
+        "sha256": "a9711d2cde92970c4305f125b0d13d426add0539b5caf7f8eaea917a76ae967a"
+      },
+      "candidate": {
+        "schemaVersion": 1,
+        "revision": "snow-m2-4-relief-contacts-r7-v2",
+        "sha256": "a9711d2cde92970c4305f125b0d13d426add0539b5caf7f8eaea917a76ae967a"
+      },
+      "atlasFiles": 72,
+      "changedFiles": 0,
+      "frames": 5448,
+      "changedFrames": 0,
+      "preservedFrames": 5448,
+      "preservedCropFieldFrames": 560,
+      "emptyFrames": 12,
+      "nativeMetadata": "EXACT",
+      "alpha": "EXACT",
+      "atlasLayout": "EXACT",
+      "status": "PASS"
+    },
+    {
+      "theater": "desert",
+      "baseline": {
+        "schemaVersion": 1,
+        "revision": "desert-m2-4-dirt-roads-batch81-v7",
+        "sha256": "f8e9e55c8bbfe37ecd837b71debb1a911f82fdb350bbb67395eadf13a2df9b96"
+      },
+      "candidate": {
+        "schemaVersion": 1,
+        "revision": "desert-road-markings-v5",
+        "sha256": "60e05d855f5ef5b20aa23ca1007a2c07599bd822930357021f11bae638f1b921"
+      },
+      "atlasFiles": 48,
+      "changedFiles": 2,
+      "frames": 3290,
+      "changedFrames": 12,
+      "preservedFrames": 3278,
+      "preservedCropFieldFrames": 112,
+      "emptyFrames": 0,
+      "nativeMetadata": "EXACT",
+      "alpha": "EXACT",
+      "atlasLayout": "EXACT",
+      "status": "PASS"
+    }
+  ],
+  "native": [
+    {
+      "case": "after-alamo-4x",
+      "edition": "yr",
+      "map": "xmp29u2.map",
+      "density": 4,
+      "groups": 18,
+      "captures": 9,
+      "glErrors": 0,
+      "pageErrors": 0,
+      "status": "PASS_NATIVE_MAC_MARKING_PLACEMENTS",
+      "file": ".artifacts/road-markings-repair/after-alamo-4x/captures.json",
+      "sha256": "8fe8013dabd85104d81b95714ada3abb7dd249115c38144533d32eb4e07b6550"
+    },
+    {
+      "case": "after-ra2-alamo-2x-r2",
+      "edition": "ra2",
+      "map": "mp29u2.map",
+      "density": 2,
+      "groups": 18,
+      "captures": 9,
+      "glErrors": 0,
+      "pageErrors": 0,
+      "status": "PASS_NATIVE_MAC_MARKING_PLACEMENTS",
+      "file": ".artifacts/road-markings-repair/after-ra2-alamo-2x-r2/captures.json",
+      "sha256": "ef78174ed3fa8744388ebb18d0376fbfe77c216ad89e7e8b412e52421ac05bb5"
+    },
+    {
+      "case": "after-austin-4x",
+      "edition": "yr",
+      "map": "austintx.map",
+      "density": 4,
+      "groups": 34,
+      "captures": 5,
+      "glErrors": 0,
+      "pageErrors": 0,
+      "status": "PASS_NATIVE_MAC_MARKING_PLACEMENTS",
+      "file": ".artifacts/road-markings-repair/after-austin-4x/captures.json",
+      "sha256": "c41c27c0feeeb1023737b10ac3dfb08fc903a50c0b18270e7e3e941cd8826c31"
+    },
+    {
+      "case": "after-rush-hour-4x",
+      "edition": "yr",
+      "map": "rushhr.map",
+      "density": 4,
+      "groups": 74,
+      "captures": 5,
+      "glErrors": 0,
+      "pageErrors": 0,
+      "status": "PASS_NATIVE_MAC_MARKING_PLACEMENTS",
+      "file": ".artifacts/road-markings-repair/after-rush-hour-4x/captures.json",
+      "sha256": "e34ff87ce8dc9a792e73128f8a19b608a820d156829b94922dc09e24c250e6fc"
+    },
+    {
+      "case": "after-small-town-4x",
+      "edition": "yr",
+      "map": "xmp03t4.map",
+      "density": 4,
+      "groups": 8,
+      "captures": 4,
+      "glErrors": 0,
+      "pageErrors": 0,
+      "status": "PASS_NATIVE_MAC_MARKING_PLACEMENTS",
+      "file": ".artifacts/road-markings-repair/after-small-town-4x/captures.json",
+      "sha256": "7d2fe5e9647df70c94fdddb17bde2c9f21df0bc33601f6aa224586c1ba351a64"
+    },
+    {
+      "case": "after-sahara-4x",
+      "edition": "yr",
+      "map": "saharami.map",
+      "density": 4,
+      "groups": 20,
+      "captures": 4,
+      "glErrors": 0,
+      "pageErrors": 0,
+      "status": "PASS_NATIVE_MAC_MARKING_PLACEMENTS",
+      "file": ".artifacts/road-markings-repair/after-sahara-4x/captures.json",
+      "sha256": "57bf262ba0ecfca61be6282fd0b852c247565bc645ecc70f62fa7fe1c44b6947"
+    },
+    {
+      "case": "after-austin-2x-slopes",
+      "edition": "yr",
+      "map": "austintx.map",
+      "density": 2,
+      "groups": 34,
+      "captures": 6,
+      "glErrors": 0,
+      "pageErrors": 0,
+      "status": "PASS_NATIVE_MAC_MARKING_PLACEMENTS",
+      "file": ".artifacts/road-markings-repair/after-austin-2x-slopes/captures.json",
+      "sha256": "1d3344b74d3cda399ff8337227790ef2eaa5ab4f38e646da97c5df183c1c1ab0"
+    },
+    {
+      "case": "after-rush-hour-2x-slopes",
+      "edition": "yr",
+      "map": "rushhr.map",
+      "density": 2,
+      "groups": 74,
+      "captures": 4,
+      "glErrors": 0,
+      "pageErrors": 0,
+      "status": "PASS_NATIVE_MAC_MARKING_PLACEMENTS",
+      "file": ".artifacts/road-markings-repair/after-rush-hour-2x-slopes/captures.json",
+      "sha256": "e6112e7cde515579f84f2a710d41829a6783967447c10b0a1b7b56d6b4543a97"
+    }
+  ],
+  "uiPressure": {
+    "status": "PASS_NATIVE_MAC_ROADS_CLOCK_ALPHA_RESULT_PRESSURE_AND_RELEASE",
+    "clockPixels": {
+      "samples": 3740,
+      "median": 0.5017301038062284
+    },
+    "result": {
+      "hidden": false,
+      "size": [
+        872,
+        224
+      ],
+      "data": {
+        "uiArt": "localized-result-banner",
+        "resultSource": "result-victory-hd-v1-2x.png",
+        "resultState": "ready"
+      },
+      "ui": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 16776216,
+        "resultHeadroomBytes": 0,
+        "decodedCpuBytes": 9441536,
+        "gpuTextureBytesUpperBound": 9441536,
+        "transitionGpuBytes": 6553368,
+        "transitionCpuCanvasBytes": 2808960,
+        "domImageGpuBytesUpperBound": 781312,
+        "domImageDecodedCpuBytesUpperBound": 781312,
+        "textures": 33,
+        "budget": 16777216,
+        "domCanvasBytes": 781312,
+        "mipmaps": false
+      }
+    },
+    "release": {
+      "ui": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 8663296,
+        "resultHeadroomBytes": 0,
+        "decodedCpuBytes": 8524928,
+        "gpuTextureBytesUpperBound": 8524928,
+        "transitionGpuBytes": 0,
+        "transitionCpuCanvasBytes": 0,
+        "domImageGpuBytesUpperBound": 138368,
+        "domImageDecodedCpuBytesUpperBound": 138368,
+        "textures": 3,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "banners": 0,
+      "resultSurfaces": 0
+    }
+  },
+  "runtime": {
+    "build": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/road-markings-repair/candidate-v5",
+    "receipt": {
+      "file": ".artifacts/road-markings-repair/candidate-v5-receipt.json",
+      "sha256": "1a33b0e98ce39afb9cd53995717044b09b98594396f3a66b4b205d6e826b7986",
+      "bytes": 149
+    },
+    "identity": {
+      "file": ".artifacts/road-markings-repair/candidate-v5/identity.json",
+      "sha256": "3714314872f5fbc9c5baa887076fed2237f97fe875b20da7f5bd263ba301ae8a",
+      "bytes": 36458
+    },
+    "comparison": {
+      "status": "PASS",
+      "files": 242,
+      "changedSincePreviousVerifiedRuntime": [
+        "desktop/terrain-hd-contract.json",
+        "desktop/terrain-theater-hd-contracts.json"
+      ],
+      "priorUiRuntime": "BYTE_IDENTICAL",
+      "visualAcceptance": "PENDING"
+    }
+  },
+  "review": {
+    "file": ".artifacts/road-markings-repair/Road Repair Review.html",
+    "sha256": "c2b07cfa0e2cfc684b8a26c392d2c2025cfe4b8afae7acd01b3a0624067b50b7",
+    "bytes": 30847202
+  },
+  "launcher": {
+    "file": ".artifacts/road-markings-repair/Launch Road Repairs.command",
+    "sha256": "cfded80b88fe5da22f32a1690171fcec6e877b7c4a167bef8bd2924f0acc0a04",
+    "bytes": 639
+  },
+  "evidenceIndex": {
+    "file": ".artifacts/road-markings-repair/evidence-index.json",
+    "sha256": "05a56162b6fcda54b254b2545d8ba411d2ce050301dfcdeb6ab5d5ad127dd2cd",
+    "bytes": 14716
+  },
+  "retainedFailures": [
+    "export-v1.log",
+    "export-v2.json",
+    "export-v3.json",
+    "export-v4.json",
+    "geometry-tests-v5.log",
+    "loading-tests-v5.log",
+    "after-ra2-alamo-2x"
+  ],
+  "delivery": {
+    "desktopMutation": false,
+    "cleanup": false,
+    "commit": false,
+    "push": false,
+    "conversation": "CONTINUE_SAME_OUTCOME_FEEDBACK"
+  }
+}

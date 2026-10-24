@@ -1,0 +1,147 @@
+#ra2web-root .skirmish-saves {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: yellow;
+    font-size: 16px;
+    container-type: size;
+}
+.save-native-screen { position: absolute; inset: 0; }
+.save-file-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: clamp(16px, 4cqw, 44px);
+    gap: clamp(10px, 2.5cqh, 24px);
+    overflow: hidden;
+    border: 2px ridge #707b83;
+    background: #080808;
+}
+.save-file-content > :not(canvas) { position: relative; z-index: 1; }
+.save-file-background { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+#ra2web-root .save-file-content h2 {
+    margin: 0;
+    flex: none;
+    font: inherit;
+    font-size: clamp(22px, 3.2cqh, 30px);
+    text-align: center;
+    text-shadow: 1px 2px 3px black;
+}
+.save-native-list {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    border: 1px solid #827b43;
+    background: #000b;
+    scrollbar-color: #877d3a #080808;
+}
+#ra2web-root .save-native-list > button {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 36px;
+    padding: 6px 12px;
+    border: 0;
+    text-align: left;
+    color: #e5d66b;
+    background: transparent;
+}
+.save-native-list > button > span { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.save-native-list time { display: block; font-size: .8em; color: #b6ac60; }
+#ra2web-root .save-native-list > button[aria-selected=true] { color: yellow; background: #610000; }
+#ra2web-root .save-native-list > button:disabled { opacity: .8; }
+#ra2web-root .save-native-name {
+    box-sizing: border-box;
+    flex: none;
+    width: 100%;
+    height: 2.2em;
+    padding: 4px 10px;
+    border: 2px inset #796d3b;
+    background: #080808;
+    color: yellow;
+    caret-color: yellow;
+}
+#ra2web-root .save-native-details { flex: none; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .85em; }
+#ra2web-root .save-native-button {
+    display: block;
+    box-sizing: border-box;
+    flex: none;
+    width: 100%;
+    height: clamp(36px, 5.8vh, 54px);
+    padding: 0 8px;
+    border: 0;
+    border-radius: 0;
+    color: yellow;
+    background-image: var(--save-button-sheet);
+    background-size: 400% 100%;
+    background-position: left top;
+    background-color: #8a0000;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+#ra2web-root .save-native-button:hover:not(:disabled) { background-position: 33.333333% top; background-color: #db9c00; }
+#ra2web-root .save-native-button:active:not(:disabled) { background-position: 66.666667% top; background-color: #fff000; }
+#ra2web-root .save-native-button:disabled { color: #8b895d; background-position: right top; filter: brightness(.7); }
+#ra2web-root .save-native-button:focus-visible, #ra2web-root .save-native-name:focus-visible,
+#ra2web-root .save-native-list:focus-visible { outline: 1px solid #d9ca53; outline-offset: 2px; }
+#ra2web-root .save-native-popup {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: yellow;
+    overflow: hidden;
+}
+#ra2web-root .save-native-popup[open] { display: grid; place-items: center; }
+.save-native-popup::backdrop { background: #000a; }
+.save-popup-panel {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: min(clamp(420px, 44vw, 900px), calc(100vw - 32px));
+    aspect-ratio: 451 / 326;
+    max-height: calc(100vh - 48px);
+    padding: clamp(24px, 3vw, 48px);
+    gap: 24px;
+    font-size: clamp(16px, 1.5vw, 24px);
+    background: #120c07;
+    border: 2px ridge #85827b;
+}
+.save-popup-panel > canvas { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; pointer-events: none; filter: brightness(.65); }
+.save-popup-panel > p { position: relative; flex: 1; margin: 0; overflow-y: auto; font-size: inherit; line-height: 1.5; text-shadow: 1px 1px 2px black; }
+.save-popup-buttons { position: relative; display: flex; justify-content: flex-end; gap: 12px; }
+#ra2web-root .save-popup-buttons .save-native-button { width: clamp(136px, 15vw, 230px); height: clamp(36px, 4vw, 52px); font-size: inherit; }
+@media (max-height: 500px) {
+    .save-file-content { padding: 16px; gap: 12px; }
+    .save-popup-panel { padding: 24px; }
+}
+#ra2web-root .message-box .save-native-button {
+    width: clamp(136px, 15vw, 230px);
+    height: clamp(36px, 4vw, 52px);
+    background-size: 400% 100%;
+}
+#ra2web-root .standard-message-box {
+    box-sizing: border-box;
+    width: min(clamp(420px, 44vw, 900px), calc(100vw - 32px));
+    height: auto;
+    min-height: min(280px, calc(100vh - 48px));
+    max-height: calc(100vh - 48px);
+    aspect-ratio: 451 / 326;
+    font-size: clamp(16px, 1.5vw, 24px);
+}
+#ra2web-root .standard-message-box .message-box-content { padding: clamp(24px, 3vw, 48px); padding-bottom: 100px; }
+#ra2web-root .standard-message-box .message-box-footer { display: flex; gap: 12px; padding: clamp(20px, 2vw, 40px); }

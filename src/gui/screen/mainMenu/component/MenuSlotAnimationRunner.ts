@@ -13,7 +13,8 @@ export enum MenuButtonState {
     Hidden = 0,
     Unlit = 1,
     Normal = 2,
-    Active = 3
+    Active = 3,
+    Hover = 4
 }
 export class MenuSlotAnimationRunner {
     protected delayFrames: number;
@@ -90,6 +91,9 @@ export class MenuSlotAnimationRunner {
         }
         else if (this.buttonState === MenuButtonState.Active) {
             frame = 4;
+        }
+        else if (this.buttonState === MenuButtonState.Hover) {
+            frame = 3;
         }
         else {
             throw new Error(`Unknown buttonState "${this.buttonState}"`);

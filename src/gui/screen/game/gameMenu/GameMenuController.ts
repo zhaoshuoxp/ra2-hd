@@ -13,12 +13,14 @@ interface Hud {
     hideSidebarMenu(): void;
     setMenuContentComponent(component?: any): void;
     toggleMenuContentVisibility(visible: boolean): void;
+    setMenuContentExpanded(expanded: boolean): void;
 }
 export class GameMenuController extends Controller {
     private hud: Hud;
     private contentAreaVisible = false;
     private sidebarButtons?: SidebarButton[];
     private mainContentComponent?: any;
+    private contentExpanded = false;
     constructor(hud: Hud, public readonly gameSpeed?: GameSpeedControl) {
         super();
         this.hud = hud;
@@ -67,7 +69,17 @@ export class GameMenuController extends Controller {
         this.contentAreaVisible = visible;
         this.hud.toggleMenuContentVisibility(visible);
     }
+    setContentAreaExpanded(expanded: boolean): void {
+        this.contentExpanded = expanded;
+        this.hud.setMenuContentExpanded(expanded);
+    }
+    setExternalDialogVisible(visible: boolean): void {
+        this.hud.toggleMenuContentVisibility(!visible && this.contentAreaVisible);
+        if (visible) this.hud.hideSidebarMenu();
+        else if (this.sidebarButtons) this.hud.showSidebarMenu(this.sidebarButtons);
+    }
     rerenderCurrentScreen(): void {
+        this.hud.setMenuContentExpanded(this.contentExpanded);
         if (this.sidebarButtons) {
             this.hud.showSidebarMenu(this.sidebarButtons);
         }

@@ -1,0 +1,52 @@
+{
+  "status": "PASS_SELF_CONTAINED_DESKTOP_APP_BYTES_DIRECT_STARTUP_AND_NATIVE_REPAIRS",
+  "app": "/Users/Aone/Desktop/Red Alert 2 HD Repairs 20261022.app",
+  "resources": "/Users/Aone/Desktop/Red Alert 2 HD Repairs 20261022.app/Contents/Resources/GameResources",
+  "target": "darwin-arm64",
+  "architecture": "arm64",
+  "logicalBytes": 9801863078,
+  "resourceFiles": 13978,
+  "entries": 14504,
+  "runtimeSourceHead": "dc494dbd59363439ae830fad5e81134ef36ee95b",
+  "frozenRuntimeFilesUnchanged": 241,
+  "filesReverifiedAfterNative": 14504,
+  "defaultHdDensity": 4,
+  "defaultProfile": "/Users/Aone/Library/Application Support/Red Alert 2 HD Repairs 20261022",
+  "signing": {
+    "cleanBundle": "PASS_AD_HOC_DEEP_STRICT",
+    "desktopBundle": "FINDERINFO_REATTACHED_BY_FILEPROVIDER",
+    "diagnostic": ".artifacts/road-markings-repair/mac-single-app-v1/desktop-signature-diagnostic.json",
+    "payloadBytes": "IDENTICAL_TO_SIGNED_CLEAN_BUNDLE"
+  },
+  "native": {
+    "direct": {
+      "file": ".artifacts/road-markings-repair/mac-single-app-v1/direct-desktop-r2/report.json",
+      "status": "PASS_DESKTOP_DIRECT_APP_INTERNAL_RESOURCES_PRIVATE_DEFAULT_PROFILE",
+      "sha256": "71c11f67e8514ea1a4666546ee4209b0e0a684fe3b625957634e1bb789b722cb"
+    },
+    "ra2_2x": {
+      "file": ".artifacts/road-markings-repair/mac-single-app-v1/desktop-ra2-alamo-2x/captures.json",
+      "status": "PASS_NATIVE_MAC_MARKING_PLACEMENTS",
+      "sha256": "aa47359bb64c61776e60016200b3c15a913fa9b83edbbc47b9537542ef307419"
+    },
+    "yr_4x": {
+      "file": ".artifacts/road-markings-repair/mac-single-app-v1/desktop-yr-austin-4x/captures.json",
+      "status": "PASS_NATIVE_MAC_MARKING_PLACEMENTS",
+      "sha256": "f6098f6bc05cdf25ba3ddae5809d79a0ef6869fb92256f18f350a40f867a9a34"
+    },
+    "ui_pressure_4x": {
+      "file": ".artifacts/road-markings-repair/mac-single-app-v1/desktop-yr-ui-4x/diagnosis.json",
+      "status": "PASS_NATIVE_MAC_ROADS_CLOCK_ALPHA_RESULT_PRESSURE_AND_RELEASE",
+      "sha256": "4bb0ff1a3b287a4644904d40c8f781f0f01120048d1f745796c791f77a33010c"
+    }
+  },
+  "userVisualAcceptance": "PENDING",
+  "naturalLongMatch": "NOT_RUN",
+  "receipt": {
+    "file": ".artifacts/road-markings-repair/mac-single-app-v1/delivery.json",
+    "sha256": "7c6426bc9e1f47d59b04191527c6c9c9ab47d828f9682413dcdc00ac1fd45a6c"
+  },
+  "desktopSingleApp": true,
+  "zipCreated": false,
+  "profilesCopied": false
+}

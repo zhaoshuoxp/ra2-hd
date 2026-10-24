@@ -17,4 +17,6 @@ is authorized by this packaging task. Upload to private storage as appropriate.
 SHA256SUMS.txt records the complete archives and resource parts.
 Mac: local ad-hoc signing, no Apple Developer ID notarization.
 Windows: static package checks only, native testing still pending.
-Existing accepted R2 applications and settings were not overwritten.
+Saved games and settings remain in the normal per-user application profile,
+outside the application bundle. Updating or moving the app preserves that profile.
+Private user profiles and saves are not included in these archives.

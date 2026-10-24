@@ -331,6 +331,8 @@ export class Gui {
         console.log('[Gui] Video source:', videoSrc);
         const subScreens = new Map<MainMenuScreenType, any>();
         subScreens.set(MainMenuScreenType.Home, HomeScreen);
+        const { SkirmishSaveScreen } = await import('./gui/save/SkirmishSaveScreen');
+        subScreens.set(MainMenuScreenType.LoadGame, SkirmishSaveScreen);
         subScreens.set(MainMenuScreenType.OptionsStorage, StorageScreen);
         const { SkirmishScreen } = await import('./gui/screen/mainMenu/lobby/SkirmishScreen.js');
         subScreens.set(MainMenuScreenType.Skirmish, SkirmishScreen);
@@ -390,6 +392,8 @@ export class Gui {
         window.dispatchEvent(new CustomEvent('CdApiReady', { detail: clientApi }));
         (window as any).CdApi = clientApi;
         const gameMenuSubScreens = new Map<number, any>();
+        gameMenuSubScreens.set((await import('./gui/screen/game/gameMenu/ScreenType.js')).ScreenType.Saves,
+            new (await import('./gui/save/SkirmishSaveScreen')).SkirmishSaveScreen(this.strings, this.jsxRenderer!));
         gameMenuSubScreens.set((await import('./gui/screen/game/gameMenu/ScreenType.js')).ScreenType.Home, new (await import('./gui/screen/game/gameMenu/GameMenuHomeScreen.js')).GameMenuHomeScreen(this.strings, this.fullScreen!));
         gameMenuSubScreens.set((await import('./gui/screen/game/gameMenu/ScreenType.js')).ScreenType.Diplo, new (await import('./gui/screen/game/gameMenu/DiploScreen.js')).DiploScreen(this.strings, this.jsxRenderer!, this.renderer!, Engine.getMpModes() as any, tauntsEnabled, mutedPlayers));
         gameMenuSubScreens.set((await import('./gui/screen/game/gameMenu/ScreenType.js')).ScreenType.ConnectionInfo, new (await import('./gui/screen/game/gameMenu/ConnectionInfoScreen.js')).ConnectionInfoScreen(this.strings, this.jsxRenderer!));

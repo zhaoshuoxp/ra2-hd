@@ -1,0 +1,95 @@
+{
+  "status": "COMPLETE_LOCAL_MAIN_INTEGRATION_AND_AUTHORIZED_TEST_PACKAGE_CLEANUP",
+  "completedAt": "2026-10-24T23:05:54.906172+00:00",
+  "codeCommit": "629872fdff176e66344503566b96f6aa64a7aae6",
+  "branch": "main",
+  "changes": [
+    "Remove the visible saved-game loading cancel button while retaining Escape cancellation",
+    "Show the localized active edition beside v0.2 and keep it at the footer after viewport changes",
+    "Integrate the preceding skirmish rendering terrain fountain elimination save trainer menu and voice repairs",
+    "Allowlist all six HD file and dialog backgrounds in the development desktop routes"
+  ],
+  "validation": {
+    "entryTypecheck": "PASS",
+    "focusedCases": 48,
+    "assertions": 498,
+    "failures": 0,
+    "editionLanguageRoutes": 6,
+    "footerLayoutChecks": 30,
+    "nativeSaveLoad": "PASS_RA2_2X_AND_YR_4X_IDENTICAL_LEGACY_TRAINER_SAVES_600_TICK_CONTINUATION_BACK_ESCAPE_NO_VISIBLE_CANCEL_BUTTON_NO_TRANSIENT_DIALOGS",
+    "staticHdBackgroundRoutes": 6,
+    "postCleanupResourceFiles": 13978,
+    "postCleanupCombinedRegisteredRoutes": 13740,
+    "postCleanupSelections": 157,
+    "userProfileFilesUnchanged": 139
+  },
+  "cleanup": {
+    "historicalTargetsRemoved": 14,
+    "completeApplicationsTestAppsRemoved": 5,
+    "desktopRepairAppAndZip": "REMOVED",
+    "obsoleteArtifactTreesRemoved": 7,
+    "finalTaskRuntimeAndProfiles": "REMOVED",
+    "logicalBytesRemoved": 483489162346,
+    "availableBytesBeforeDeletion": 876639084544,
+    "availableBytesAfterDeletion": 1097835909120,
+    "observedAvailableBytesIncrease": 221196824576,
+    "accounting": "Logical bytes and APFS free-space change are separate measurements",
+    "artifactDirectory": "ABSENT_AFTER_FINAL_TASK_RETIREMENT",
+    "evidenceFilesRetained": 4093,
+    "evidenceBytesRetained": 2822716282
+  },
+  "protected": [
+    "canonical .local resource bytes and metadata",
+    "original installation and installed development dependencies",
+    "actual user saves and settings in Library profiles",
+    "independent task/m3-1-soviet01 worktree and its active delivery",
+    "Git history and retained reports native images authoring metadata and legacy save fixtures"
+  ],
+  "portableManifestExceptions": [
+    "ra2-core-manifest.json",
+    "upstream-support/manifest.json"
+  ],
+  "history": "/Users/Aone/RA2remaster/project-history/skirmish-repairs-main-20261024",
+  "newMacPackage": "NOT_REQUESTED_NOT_CREATED",
+  "remotePush": "NOT_PERFORMED",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "handoff": "Continue same-outcome corrections here; use a new execution conversation for a new feature",
+  "evidence": [
+    {
+      "file": "Cleanup/Integration.json",
+      "sha256": "d59692cc03e87a545d3d23282a1c8061b6d4af3d1cb67fc1cbb799abde501520"
+    },
+    {
+      "file": "Cleanup/Targets.json",
+      "sha256": "9207747373d530ed23b05af38252006745027db0e44f8164992f00848c36894a"
+    },
+    {
+      "file": "Cleanup/Deletion.json",
+      "sha256": "a3d5804e272b01919c2469d97fc98c5b52401c0441dd84844be049863fcb1a94"
+    },
+    {
+      "file": "Cleanup/Post-Cleanup.json",
+      "sha256": "62c38ebc975e930e0ccd0ed32bc082399b00ade5dc54785bef0e9bbbaf047445"
+    },
+    {
+      "file": "Cleanup/Registration.json",
+      "sha256": "b4c20f1230426a11c25d870ecaf4b3b02ac35490d5948a0b2efb42af8dc653ae"
+    },
+    {
+      "file": "Cleanup/Final-Temporary-Retirement.json",
+      "sha256": "77dd0c2fbf8899e862f36fc975464edd23296fe703057c1a082362de39345d18"
+    },
+    {
+      "file": "Cleanup/Main-Development-Output.json",
+      "sha256": "f3dd58b099b06b14cc2638e1b8589263a7154ee7c36ea679d317441d71993f33"
+    },
+    {
+      "file": "Cleanup/Preserved-User-Profiles.json",
+      "sha256": "83d9ecd8667746d2d754c4fcd4cc3cdb577e7b306599adfca830eb8f1843791f"
+    },
+    {
+      "file": "Cleanup/Legacy-Save-Fixtures.json",
+      "sha256": "70f9c37588a0355a8871d4ad8cd1c789d3ed632bccefe8e955e61d82cac2ca0c"
+    }
+  ]
+}

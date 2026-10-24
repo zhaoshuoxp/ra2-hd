@@ -31,6 +31,7 @@ export function trainerProtects(game: any, object: any): boolean {
 export function tickTrainer(game: any): void { sessions.get(game)?.tick(); }
 export function forgetTrainerObject(game: any, object: any): void { sessions.get(game)?.protectedObjects.delete(object); }
 export function disposeTrainer(game: any): void { sessions.get(game)?.dispose(); }
+export function getTrainerSession(game: any): TrainerSession | undefined { return sessions.get(game); }
 
 /** Bound only by the offline skirmish screen. Playback never creates a session. */
 export class TrainerSession {
@@ -44,12 +45,15 @@ export class TrainerSession {
     lastResult: 'applied' | 'rejected' = 'applied';
     constructor(readonly game: any, readonly player: any, readonly edition: GameEdition,
         private readonly enabled: () => boolean, private readonly offline: () => boolean,
-        private readonly changed: () => void, private readonly markModified: () => void) {
+        private readonly changed: () => void, private readonly markModified: () => void,
+        private readonly record?: (command: TrainerCommand, phase: 'boundary' | 'tick') => void) {
         sessions.get(game)?.dispose();
         sessions.set(game, this);
         players.set(player, this);
     }
     get pending(): number { return this.queue.length; }
+    get enabledForSave(): boolean { return this.enabled(); }
+    pendingCommands(): TrainerCommand[] { return this.queue.map(envelope => envelope.command); }
     isEffectEnabled(effect: TrainerEffect): boolean {
         const pending = this.queue.map(e => e.command).filter(c => c.type === 'effect' && c.effect === effect).at(-1);
         return pending?.type === 'effect' ? pending.enabled : this.enabledEffects.has(effect);
@@ -101,13 +105,14 @@ export class TrainerSession {
         return true;
     }
     tick(): void {
-        if (!this.allowed()) { this.reset(); return; }
+        if (!this.allowed()) { this.reset('tick'); return; }
         const queued = this.queue.splice(0);
         for (const envelope of queued) {
             if (!this.validate(envelope)) { this.lastResult = 'rejected'; continue; }
             this.lastResult = 'applied';
             this.modified = true;
             this.markModified();
+            this.record?.(envelope.command, 'tick');
             this.apply(envelope.command);
         }
         for (const object of this.protectedObjects) if (!this.validTarget(object)) this.protectedObjects.delete(object);
@@ -155,8 +160,9 @@ export class TrainerSession {
             this.game.events.dispatch(new SuperWeaponReadyEvent(power));
         }
     }
-    reset(): void {
+    reset(phase: 'boundary' | 'tick' = 'boundary'): void {
         const dirty = this.pending || this.protectedObjects.size || this.enabledEffects.size;
+        if (dirty && !this.disposed) this.record?.({ type: 'reset' }, phase);
         this.queue = [];
         this.protectedObjects.clear();
         this.effects = emptyEffects();
@@ -166,8 +172,8 @@ export class TrainerSession {
     }
     dispose(): void {
         if (this.disposed) return;
-        this.reset();
         this.disposed = true;
+        this.reset();
         sessions.delete(this.game);
         if (players.get(this.player) === this) players.delete(this.player);
         this.changed();

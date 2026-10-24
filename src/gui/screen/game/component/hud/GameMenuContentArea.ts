@@ -27,11 +27,27 @@ type GameMenuContentAreaProps = UiComponentProps & {
 };
 export class GameMenuContentArea extends UiComponent<GameMenuContentAreaProps> {
     private yuriBackground?: HtmlReactElement<{ active: boolean }>;
+    private background?: UiObject;
+    private content?: UiObject;
+    private expanded = false;
+    private backgroundVisible = false;
+    private originalBounds?: { x: number; y: number; width: number; height: number };
     setBackgroundVisible(active: boolean): void {
+        this.backgroundVisible = active;
         // Return the pause canvas allocation before restoring hidden HUD textures.
         if (this.yuriBackground) flushSync(() => {
-            this.yuriBackground!.applyOptions(props => { props.active = active; });
+            this.yuriBackground!.applyOptions(props => { props.active = active && !this.expanded; });
         });
+    }
+    setExpanded(expanded: boolean): void {
+        this.expanded = expanded;
+        const bounds = expanded ? this.props.viewport : this.originalBounds;
+        if (this.content && bounds) {
+            this.content.setPosition(expanded ? 0 : bounds.x, expanded ? 0 : bounds.y);
+            this.content.getHtmlContainer()!.setSize(bounds.width, bounds.height);
+        }
+        this.background?.setVisible(!expanded);
+        this.setBackgroundVisible(this.backgroundVisible);
     }
     createUiObject({ viewport, hidden }: GameMenuContentAreaProps): UiObject {
         const obj = new UiObject(new THREE.Object3D(), new HtmlContainer());
@@ -52,9 +68,11 @@ export class GameMenuContentArea extends UiComponent<GameMenuContentAreaProps> {
         const y = bkgd ? (viewport.height - bkgd.height) / 2 : 0;
         const width = (bkgd || viewport).width;
         const height = (bkgd || viewport).height;
+        this.originalBounds = { x, y, width, height };
         return jsx("fragment", null, jsx("mesh", null, this.createMask(viewport)),
-            jsx("container", { zIndex: 1, x, y, width, height, ref: innerRef },
-                bkgd && jsx("sprite", { image: bkgd, palette: "uibkgd.pal" }),
+            jsx("container", { zIndex: 1, x, y, width, height,
+                ref: (ref: UiObject) => { this.content = ref; innerRef?.(ref); } },
+                bkgd && jsx("sprite", { image: bkgd, palette: "uibkgd.pal", ref: (ref: any) => { this.background = ref; } }),
                 this.props.side === SideType.ThirdSide && jsx(HtmlView, { x: 6, y: 6,
                     width: width - 12, height: height - 12, component: YuriPauseBackdrop,
                     props: { active: !this.props.hidden }, innerRef: (html: HtmlReactElement<{ active: boolean }>) => { this.yuriBackground = html; } })));

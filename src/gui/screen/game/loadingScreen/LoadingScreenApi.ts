@@ -3,4 +3,5 @@ export interface LoadingScreenApi {
     onLoadProgress(percent: number): void;
     dispose(): void;
     updateViewport(): void;
+    setOnCancel?(handler: () => void): void;
 }

@@ -1,0 +1,19 @@
+# Saved-game loading transition repair R5
+
+Loading a save in R4 briefly returned to the parent menu before starting the game. The Home sidebar consequently slid out twice and slid back in between. A save-page working dialog and a separate restoration message box also appeared briefly. The delivered R4 Mac app reproduces all three behaviors.
+
+R5 navigates directly from the save page into the game. Closing the root menu leaves its active page without resuming suspended parents. Save pages release their manually mounted dialogs when the enclosing game or menu is destroyed. Restoration progress uses the existing map-loading progress bar. Saved-game loading retains cancellation through a common menu-style button and Escape; a cancelled loader exits without reporting an error. Explicit Back continues to resume the parent page once.
+
+The accepted map-loading artwork, menu and popup materials, faction voices, trainer save format, fountain repairs, road repairs and resource selections are preserved. The five recorded map-loading artwork source files are byte-identical. All 13,978 packaged resource pins match R4, including their complete resource-inventory hash.
+
+Validation uses actual native Mac apps and isolated profiles copied from the previous delivered tests. Runtime instrumentation records sidebar calls, parent-page resumes, dialog creation, restoration progress and animation-frame DOM changes. Home loading changes from two sidebar exits, one entrance and two transient dialogs to one exit, no entrance and no transient dialogs. In-game loading also has no newly opened transient dialog after its intentional confirmation. Explicit Back, button cancellation and Escape during restoration pass in RA2 2X and Yuri's Revenge 4X. Only the initial cancellation case adds a controlled 700 ms loader delay to make the click reproducible.
+
+The old trainer-enabled R4 saves restore at tick 2183 with identical hashes. Continuing for 600 ticks matches R4 again. The actual installed R5 app additionally passes creating a trainer-enabled save, restarting, loading, continuing, saving again, reloading and the overwrite/delete/cancel controls. Entry typechecking and 16 focused cases with 175 assertions pass. Raw baseline and preliminary failures remain under the artifact directory: an early Back measurement overlapped page entry, and a subsequent cancellation check exposed the cancelled-load error log corrected in the final runtime.
+
+The source baseline is local main `dc494dbd59363439ae830fad5e81134ef36ee95b`, with the ongoing repairs retained as an uncommitted snapshot. The final runtime is `candidate-r2`, repair revision `save-load-transition-r5`, bundle version 34. Mac native and package evidence are separate from pending user visual/input acceptance. Windows remains `NOT_RUN_ON_THIS_MAC`. No commit, push or cleanup is part of this correction.
+
+The Desktop app entry is `Red Alert 2 HD Skirmish Repairs R5 20261024.app`, pointing to the complete app at `~/Applications/Red Alert 2 HD Skirmish Repairs R5 20261024.app`. The complete ZIP is `~/Desktop/Red Alert 2 HD Skirmish Repairs R5 20261024 Mac arm64.zip`. Existing settings and saves use the same profile, `~/Library/Application Support/Red Alert 2 HD Skirmish Repairs 20261023`, preserved before the default-profile check. Previous deliveries are retained.
+
+The ZIP contains 14,523 verified non-directory entries and 10,703 directories. It is 5,660,978,657 bytes, SHA-256 `a84d39f8aabd3f98a5fba11a40868a40fac1d0e6464400ca4141fbce78bd8816`. Decompressed bytes, modes, symlinks and the extracted app's strict signature are verified. Detailed evidence and the final delivery receipt are in `.artifacts/skirmish-load-transition-r5-20261024`; the accompanying JSON records final native-package outcomes and evidence hashes.
+
+Continue same-outcome testing and corrections in this conversation.

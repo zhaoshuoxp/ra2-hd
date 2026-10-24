@@ -1,0 +1,246 @@
+{
+  "schema": "long-play-ui-urban-road-repair-v1",
+  "date": "2026-10-22",
+  "baseMain": "dc494dbd59363439ae830fad5e81134ef36ee95b",
+  "sourceState": "MAIN_WORKING_TREE_MODIFICATIONS_NOT_COMMITTED",
+  "technical": "PASS_FOCUSED_AND_NATIVE_MAC",
+  "visual": "PENDING_USER_CONFIRMATION",
+  "naturalLongMatch": "NOT_RUN_CONTROLLED_PRESSURE_USED",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "focusedTests": {
+    "passed": 119,
+    "failed": 0,
+    "assertions": 2863,
+    "files": 8,
+    "raw": ".artifacts/long-play-repair/final-focused-tests.log"
+  },
+  "typecheck": "PASS",
+  "isolatedBuild": "PASS",
+  "mainDevelopmentBuild": "PASS",
+  "native": [
+    {
+      "case": "verified-alamo-4x",
+      "status": "PASS_NATIVE_MAC_ROADS_CLOCK_ALPHA_RESULT_PRESSURE_AND_RELEASE",
+      "map": "xmp29u2.map",
+      "terrainDensity": 4,
+      "terrainGroups": 18,
+      "clockPixels": {
+        "samples": 3740,
+        "median": 0.5017301038062284
+      },
+      "resultSource": "result-victory-hd-v1-2x.png",
+      "resultPixels": [
+        872,
+        224
+      ],
+      "peakUiReservedBytes": 16776216,
+      "resultSurfacesAfterExit": 0,
+      "resultHeadroomAfterExit": 0,
+      "raw": ".artifacts/long-play-repair/verified-alamo-4x/diagnosis.json"
+    },
+    {
+      "case": "verified-ra2-alamo-2x",
+      "status": "PASS_NATIVE_MAC_ROADS_CLOCK_ALPHA_RESULT_PRESSURE_AND_RELEASE",
+      "map": "mp29u2.map",
+      "terrainDensity": 2,
+      "terrainGroups": 18,
+      "clockPixels": {
+        "samples": 3740,
+        "median": 0.5017301038062284
+      },
+      "resultSource": "result-defeat-hd-v1-2x.png",
+      "resultPixels": [
+        872,
+        224
+      ],
+      "peakUiReservedBytes": 16223256,
+      "resultSurfacesAfterExit": 0,
+      "resultHeadroomAfterExit": 0,
+      "raw": ".artifacts/long-play-repair/verified-ra2-alamo-2x/diagnosis.json"
+    },
+    {
+      "case": "verified-austin-4x",
+      "status": "PASS_NATIVE_MAC_ROADS_CLOCK_ALPHA_RESULT_PRESSURE_AND_RELEASE",
+      "map": "austintx.map",
+      "terrainDensity": 4,
+      "terrainGroups": 34,
+      "clockPixels": {
+        "samples": 3740,
+        "median": 0.5017301038062284
+      },
+      "resultSource": "result-victory-hd-v1-2x.png",
+      "resultPixels": [
+        872,
+        224
+      ],
+      "peakUiReservedBytes": 16776216,
+      "resultSurfacesAfterExit": 0,
+      "resultHeadroomAfterExit": 0,
+      "raw": ".artifacts/long-play-repair/verified-austin-4x/diagnosis.json"
+    },
+    {
+      "case": "verified-original-snow",
+      "status": "PASS_NATIVE_MAC_ROADS_CLOCK_ALPHA_RESULT_PRESSURE_AND_RELEASE",
+      "map": "xmp26s6.map",
+      "terrainDensity": 1,
+      "terrainGroups": 0,
+      "clockPixels": {
+        "samples": 3559,
+        "median": 0.5
+      },
+      "resultSource": "result-defeat-hd-v1-2x.png",
+      "resultPixels": [
+        872,
+        224
+      ],
+      "peakUiReservedBytes": 16776216,
+      "resultSurfacesAfterExit": 0,
+      "resultHeadroomAfterExit": 0,
+      "raw": ".artifacts/long-play-repair/verified-original-snow/diagnosis.json"
+    }
+  ],
+  "resources": {
+    "baseline": {
+      "schemaVersion": 1,
+      "revision": "urban-m2-4-structures-r14e",
+      "sha256": "d2cfbfc964d7ff4173468df90be55c3e5f589afe00e6e440acfc4fabe4399749"
+    },
+    "selected": {
+      "schemaVersion": 1,
+      "revision": "urban-road-hd-repair-v2",
+      "sha256": "fc18a6621272d04d713fc455e60a15fc0fbac6375ea77a3ce0aa0d2a951442b9"
+    },
+    "members": 47,
+    "densitySlots": 578,
+    "changedAtlasFiles": 10,
+    "unchangedAtlasFiles": 72,
+    "unchangedNativeGroups": 41,
+    "metadataSourceHashesRulesDepthAndAtlasSizes": "UNCHANGED",
+    "targetFormException": "proad14.urb retains its Urban form with accepted asphalt material because donor depth differs"
+  },
+  "review": {
+    "file": ".artifacts/long-play-repair/Repair Review.html",
+    "sha256": "15d0d993b17706b748069aa235ad8c3466aa4d854e545b867d8f16741cfdbbcb",
+    "assets": [
+      {
+        "file": ".artifacts/long-play-repair/urban-roads-before-after.png",
+        "sha256": "8db823a8eb281e48df3a9274cf1bf855b225082223ba7deb3b741728ada10656",
+        "bytes": 4314539
+      },
+      {
+        "file": ".artifacts/long-play-repair/urban-roads-before-after.png",
+        "sha256": "8db823a8eb281e48df3a9274cf1bf855b225082223ba7deb3b741728ada10656",
+        "bytes": 4314539
+      },
+      {
+        "file": ".artifacts/long-play-repair/baseline-forced-fallback/clock-pressure.png",
+        "sha256": "c1012343c1da43a8d7fda849e82a471e7bf7719a717688f66dfb04dd49646945",
+        "bytes": 8610389
+      },
+      {
+        "file": ".artifacts/long-play-repair/baseline-forced-fallback/clock-pressure.png",
+        "sha256": "c1012343c1da43a8d7fda849e82a471e7bf7719a717688f66dfb04dd49646945",
+        "bytes": 8610389
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-alamo-4x/clock-pressure.png",
+        "sha256": "3c5907cb3004de2a9e27612072e20e7addedcec331d6d5fd2b9641d837eed2a4",
+        "bytes": 8567806
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-alamo-4x/clock-pressure.png",
+        "sha256": "3c5907cb3004de2a9e27612072e20e7addedcec331d6d5fd2b9641d837eed2a4",
+        "bytes": 8567806
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-alamo-4x/result-pressure.png",
+        "sha256": "a817acc125b23b1529699e5e49135fd67a44870b1d3d695357ca96a837121cf6",
+        "bytes": 8446004
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-alamo-4x/result-pressure.png",
+        "sha256": "a817acc125b23b1529699e5e49135fd67a44870b1d3d695357ca96a837121cf6",
+        "bytes": 8446004
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-ra2-alamo-2x/result-pressure.png",
+        "sha256": "77ba7e447c8211d7de2e75af130abaa19ff580acbbe216975891b6fb56645588",
+        "bytes": 8033352
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-ra2-alamo-2x/result-pressure.png",
+        "sha256": "77ba7e447c8211d7de2e75af130abaa19ff580acbbe216975891b6fb56645588",
+        "bytes": 8033352
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-austin-4x/initial.png",
+        "sha256": "192ef23ecb5fe6575ee09f21bd1df07dc57c2299ba43f954ffdb2d96018c0397",
+        "bytes": 8407063
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-austin-4x/initial.png",
+        "sha256": "192ef23ecb5fe6575ee09f21bd1df07dc57c2299ba43f954ffdb2d96018c0397",
+        "bytes": 8407063
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-original-snow/initial.png",
+        "sha256": "0a7ea72b4b1fb70ba7eea30305f2df3fe2e7372b6f5a158dcdb2fef612b824b6",
+        "bytes": 5743755
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-original-snow/initial.png",
+        "sha256": "0a7ea72b4b1fb70ba7eea30305f2df3fe2e7372b6f5a158dcdb2fef612b824b6",
+        "bytes": 5743755
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-alamo-4x/clock-clear.png",
+        "sha256": "5399339763b3cdf63b69ffaadb9d5e50f0a687987519e3be801e019078d71e32",
+        "bytes": 12087
+      },
+      {
+        "file": ".artifacts/long-play-repair/verified-alamo-4x/clock-shaded.png",
+        "sha256": "d8c401ad16984671f91e8e38cde90b5852d98ac90172f48137475e1db10a4e2d",
+        "bytes": 10743
+      }
+    ],
+    "verifiedEmbeddedImages": 9
+  },
+  "launcher": ".artifacts/long-play-repair/Launch Repairs.command",
+  "existingDesktopDeliveries": "UNCHANGED",
+  "remotePush": "NOT_PERFORMED",
+  "independentCampaignWorktree": "NOT_MODIFIED_BY_THIS_TASK",
+  "failureRecords": [
+    "baseline-alamo-4x-native: initial non-unified diagnostic packaging; not HD evidence",
+    "baseline-forced-fallback: reproduced opaque clocks and budget-only result panel",
+    "urban-road-sources-v1: signed zero metadata comparison guard",
+    "urban-road-sources-v2 and v3: explicit proad14 native depth mismatch; resolved by retaining target form",
+    "urban-road-hd-repair-v1: incomplete unselected export after duplicate receipt key error",
+    "candidate-alamo-4x: depth-only repair exposed missing fallback overlay",
+    "candidate-r2: rejected by unit tests before native execution; non-batched palette setup corrected",
+    "candidate-r3-alamo-4x: UI update restored the mask in the unshaded pixel control; capture corrected",
+    "final-alamo-4x: actual pixels and result passed; overly broad DOM-release assertion counted score artwork; narrowed to result surfaces"
+  ],
+  "runtimeSourceFiles": [
+    {
+      "file": "src/gui/UiObjectSprite.ts",
+      "sha256": "9ef490e34892f9662a9456f34f4ef99eff6bd8ef9603267ca6bda4e2273b7ff4"
+    },
+    {
+      "file": "src/gui/hd/UiArt.ts",
+      "sha256": "00e88c91576b19b2862c90aeeb9fb844a18b672046974c706e9f5f125e63b19f"
+    },
+    {
+      "file": "src/gui/screen/game/GameScreen.ts",
+      "sha256": "6339ebeec9b2c772a54e8199f11a7965ff430ba7821374a1984d3544e977d239"
+    },
+    {
+      "file": "src/gui/screen/game/component/LocalizedGameResultBanner.tsx",
+      "sha256": "7921f472e22746d1741e9b4f8e2154613f0eb7b830e02acb38b5c019ed682bc2"
+    },
+    {
+      "file": "desktop/terrain-theater-hd-contracts.json",
+      "sha256": "4c45a385914fc4dfdd087f8124a1e2f55b20a032d0d869bc23c292818d4b97ba"
+    }
+  ],
+  "mainDevelopmentAllowlistEntries": 172
+}

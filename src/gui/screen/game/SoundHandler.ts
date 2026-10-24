@@ -6,6 +6,8 @@ import { Coords } from '@/game/Coords';
 import { PowerupType } from '@/game/type/PowerupType';
 import { SuperWeaponType } from '@/game/type/SuperWeaponType';
 import { RadarEventType } from '@/game/rules/general/RadarRules';
+import { aiUiNames } from '@/game/gameopts/constants';
+import { OrderFeedbackType } from '@/game/order/OrderFeedbackType';
 
 const detectedSuperWeaponEvaByType = new Map([
     [SuperWeaponType.MultiMissile, 'EVA_NuclearSiloDetected'],
@@ -302,13 +304,11 @@ export class SoundHandler {
         if (player === this.player && !this.player.isObserver) {
             return;
         }
-        if (!player.resigned) {
-            const playerName = player.isAi
-                ? this.strings.get(`AI_${player.aiDifficulty}`)
-                : player.name;
-            this.eva.play(player !== this.player ? 'EVA_PlayerDefeated' : 'EVA_YouHaveLost');
-            this.messageList.addSystemMessage(this.strings.get('TXT_PLAYER_DEFEATED', playerName), player);
-        }
+        const playerName = player.isAi
+            ? `${this.strings.get(aiUiNames.get(player.aiDifficulty) || 'GUI:AIDummy')} (${this.game.getPlayerNumber(player) + 1})`
+            : player.name;
+        this.eva.play(player !== this.player ? 'EVA_PlayerDefeated' : 'EVA_YouHaveLost', true);
+        this.messageList.addSystemMessage(this.strings.get('TXT_PLAYER_DEFEATED', playerName), player);
     }
     private handleUnitPromoteSound(event: any): void {
         if (event.target.owner === this.player) {
@@ -344,14 +344,17 @@ export class SoundHandler {
         if (!this.lastFeedbackTime || now - this.lastFeedbackTime >= 250) {
             let sound: string | undefined;
             switch (feedbackType) {
-                case 'Attack':
+                case OrderFeedbackType.Attack:
                     sound = unit.rules.voiceAttack;
                     break;
-                case 'Move':
+                case OrderFeedbackType.Move:
                     sound = unit.rules.voiceMove;
                     break;
-                case 'Capture':
+                case OrderFeedbackType.Capture:
                     sound = unit.rules.voiceCapture || unit.rules.voiceSpecialAttack;
+                    break;
+                case OrderFeedbackType.SpecialAttack:
+                    sound = unit.rules.voiceSpecialAttack;
                     break;
             }
             if (sound) {

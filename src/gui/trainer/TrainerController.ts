@@ -73,9 +73,10 @@ export class TrainerController {
         if (digit !== undefined && (!Number.isInteger(digit) || digit < 0 || digit > 9 || this.bindingConflict(action, digit))) return false;
         this.preferences.bindings[action] = digit; this.persist(); return true;
     }
-    beginSession(game: any, player: any, offline: () => boolean, markModified: () => void): void {
+    beginSession(game: any, player: any, offline: () => boolean, markModified: () => void,
+        record?: (command: TrainerCommand, phase: 'boundary' | 'tick') => void): void {
         this.endSession();
-        this.session = new TrainerSession(game, player, activeEdition, () => this.preferences.enabled, offline, this.changed, markModified);
+        this.session = new TrainerSession(game, player, activeEdition, () => this.preferences.enabled, offline, this.changed, markModified, record);
         this.status = 'readyStatus'; this.changed();
     }
     endSession(): void {

@@ -23,6 +23,7 @@ export interface Viewport {
 }
 export interface ButtonConfig {
     label: string;
+    action?: string;
     tooltip?: string;
     disabled?: boolean;
     isBottom?: boolean;
@@ -114,6 +115,7 @@ export class MainMenu extends UiObject {
         const sidebarImage = this.getImage("sdtp.shp");
         const sidebarViewport = this.computeSidebarViewport(sidebarImage);
         this.sidebarContainer.setPosition(sidebarViewport.x, sidebarViewport.y);
+        this.version.getUiObject().setPosition(0, sidebarViewport.height - 20);
         if (Math.abs(previousHeight - this.viewport.height) < 0.01) return;
         this.sidebarContainer.remove(...this.sidebarObjects);
         this.sidebarObjects.forEach((obj) => obj.destroy());
@@ -182,6 +184,7 @@ export class MainMenu extends UiObject {
             if (this.sidebarButtons[slotIndex]) {
                 this.sidebarButtons[slotIndex].applyOptions((options: any) => (options.buttonConfig = {
                     label: buttonConfig.label,
+                    action: buttonConfig.action,
                     tooltip: buttonConfig.tooltip,
                     disabled: !!buttonConfig.disabled,
                 }));
@@ -242,10 +245,13 @@ export class MainMenu extends UiObject {
         this.menuVideo.getElement()?.applyOptions((options: any) => { options.active = visible; });
         console.log('[MainMenu] Video visibility set to:', visible);
     }
-    showVersion(version: string): void {
+    showVersion(version: string, edition?: string): void {
         console.log('[MainMenu] showVersion called, version:', version, 'version element exists:', !!this.version);
         this.version.getUiObject().setVisible(true);
-        this.version.getElement().applyOptions((options: any) => (options.value = releaseVersion));
+        this.version.getElement().applyOptions((options: any) => {
+            options.value = releaseVersion;
+            options.edition = edition;
+        });
         console.log('[MainMenu] Version shown:', releaseVersion);
     }
     hideVersion(): void {
@@ -348,6 +354,7 @@ export class MainMenu extends UiObject {
         this.sidebarButtons = [];
         this.sidebarObjects = this.jsxRenderer.render(jsx("fragment", null, new Array(slotCount).fill(0).map((_, slotIndex) => {
             let animRunner = new MenuSlotAnimationRunner(slotIndex);
+            let hovered = false, pressed = false;
             return jsx("fragment", null, jsx("container", { x: viewport.x, y: viewport.y + buttonBgImage.height * slotIndex }, jsx("sprite", { image: buttonBgImage, palette: "shell2.pal" }), !slotIndex
                 ? jsx("container", {
                     zIndex: 1,
@@ -381,10 +388,21 @@ export class MainMenu extends UiObject {
                 props: {
                     box: { x: 0, y: 0, width: 146, height: buttonAnimImage.height },
                     buttonConfig: null,
+                    onMouseEnter: () => {
+                        hovered = true;
+                        if (!pressed) (animRunner as any).buttonState = MenuButtonState.Hover;
+                    },
+                    onMouseLeave: () => {
+                        hovered = false;
+                        if (!pressed && !this.sidebarButtonConfigs[slotIndex]?.disabled)
+                            (animRunner as any).buttonState = MenuButtonState.Normal;
+                    },
                     onMouseDown: () => {
+                        pressed = true;
                         (animRunner as any).buttonState = MenuButtonState.Active;
                         let mouseUpHandler = () => {
-                            (animRunner as any).buttonState = MenuButtonState.Normal;
+                            pressed = false;
+                            (animRunner as any).buttonState = hovered ? MenuButtonState.Hover : MenuButtonState.Normal;
                             document.removeEventListener("mouseup", mouseUpHandler);
                         };
                         document.addEventListener("mouseup", mouseUpHandler);

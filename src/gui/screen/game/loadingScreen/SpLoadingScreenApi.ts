@@ -54,6 +54,7 @@ export class SpLoadingScreenApi implements LoadingScreenApi {
     private lastRenderTime?: number;
     private disposed = false;
     private unitArtworkReady = false;
+    private onCancel?: () => void;
     private handleLoadInfoUpdate = (loadPercent: number) => {
         if (this.loadingScreen) {
             const now = performance.now();
@@ -69,6 +70,7 @@ export class SpLoadingScreenApi implements LoadingScreenApi {
         }
     };
     constructor(private rules: Rules, private strings: Strings, private uiScene: UiScene, private jsxRenderer: JsxRenderer, private gameResConfig: GameResConfig) { }
+    setOnCancel(handler: () => void): void { this.onCancel = handler; }
     async start(players: Player[], mapName: string, localPlayerName: string): Promise<void> {
         if (this.disposed) return;
         this.players = players;
@@ -121,6 +123,15 @@ export class SpLoadingScreenApi implements LoadingScreenApi {
         }));
         this.uiScene.add(uiObject);
         this.disposables.add(uiObject, () => this.uiScene.remove(uiObject));
+        if (this.onCancel) {
+            const keydown = (event: KeyboardEvent) => {
+                if (event.key === 'Escape') {
+                    event.preventDefault(); event.stopPropagation(); this.onCancel?.();
+                }
+            };
+            document.addEventListener('keydown', keydown, true);
+            this.disposables.add(() => document.removeEventListener('keydown', keydown, true));
+        }
     }
     dispose(): void {
         this.disposed = true;

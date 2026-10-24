@@ -24,11 +24,11 @@ export function LocalizedGameResultBanner({ victory, text, rasterScale, mission 
             // world/UI pack. A busy sidebar can leave room for 2X but not 4X.
             const densities = uiArt.enabled && rasterScale > 2 ? [4, 2] : [2];
             const selected = densities.map(density => family.assets.find(asset => asset.outcome === outcome && asset.density === density)!)
-                .find(asset => uiArt.reserveSurface(owner, asset.width * asset.height * 4, asset.width * asset.height * 4, 'dom'));
+                .find(asset => uiArt.reserveSurface(owner, asset.width * asset.height * 4, asset.width * asset.height * 4, 'result'));
             if (!selected) { canvas.dataset.resultState = 'budget'; return; }
             const bytes = selected.width * selected.height * 4;
             canvas.dataset.resultState = 'pending';
-            uiArt.reserveSurface(decodeOwner, 0, bytes, 'dom');
+            uiArt.reserveSurface(decodeOwner, 0, bytes, 'result');
             let live = true;
             cancel = () => {
                 live = false; abort.abort();

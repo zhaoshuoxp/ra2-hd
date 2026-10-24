@@ -1,4 +1,5 @@
 import { offlineTrainer } from '@/gui/trainer/TrainerController';
+import { uiArt } from '@/gui/hd/UiArt';
 import { activeEdition } from '@/editions/activeEdition';
 import { TheaterType } from '@/engine/TheaterType';
 import { loadSovietUnitsHd, disposeSovietUnitsHd, type LoadedSovietUnitsHd } from '@/engine/renderable/builder/loadSovietUnitsHd';
@@ -61,9 +62,10 @@ import { EventType } from '@/game/event/EventType';
 import { CommandBarButtonList } from '@/gui/screen/game/component/hud/commandBar/CommandBarButtonList';
 import { CommandBarButtonType } from '@/gui/screen/game/component/hud/commandBar/CommandBarButtonType';
 import { LoadingScreenType } from '@/gui/screen/game/loadingScreen/LoadingScreenApiFactory';
+import { SkirmishSaveJournal, restoreSkirmish, SaveError } from '@/gui/save/SkirmishSave';
 import { MapFile } from '@/data/MapFile';
 import { VirtualFile } from '@/data/vfs/VirtualFile';
-import { base64StringToUint8Array, binaryStringToUint8Array } from '@/util/string';
+import { base64StringToUint8Array, binaryStringToUint8Array, uint8ArrayToBase64String } from '@/util/string';
 import { MapDigest } from '@/engine/MapDigest';
 import { MapSupport } from '@/engine/MapSupport';
 import { OBS_COUNTRY_ID } from '@/game/gameopts/constants';
@@ -88,6 +90,7 @@ export class GameScreen extends RootScreen {
     private game?: any;
     private replay?: any;
     private replayRecorderInstance?: ReplayRecorder;
+    private saveJournal?: SkirmishSaveJournal;
     private gameTurnMgr?: any;
     private gameAnimationLoop?: any;
     private hud?: any;
@@ -137,6 +140,10 @@ export class GameScreen extends RootScreen {
     }
     async onEnter(params: any): Promise<void> {
         this.gameEndHandled = false;
+        this.pausedAtSpeed = undefined;
+        this.saveJournal = undefined;
+        // Keep a complete 2X result background available after any number of sidebar pages.
+        this.disposables.add(uiArt.protectResultBanner());
         this.pointer.lock();
         this.pointer.setVisible(false);
         await this.music?.play(MusicType.Loading);
@@ -188,7 +195,10 @@ export class GameScreen extends RootScreen {
         offlineTrainer.endSession();
         let mapFile: any;
         try {
-            const mapFileData = await this.transferAndLoadMapFile(params, gameOpts.mapName, gameOpts.mapDigest, cancellationToken);
+            const mapFileData = params.savedGame
+                ? VirtualFile.fromBytes(base64StringToUint8Array(params.savedGame.mapData), gameOpts.mapName)
+                : await this.transferAndLoadMapFile(params, gameOpts.mapName, gameOpts.mapDigest, cancellationToken);
+            if (isSinglePlayer) params.saveMapData = uint8ArrayToBase64String(mapFileData.getBytes());
             if (!gameOpts.mapOfficial) {
                 this.debugMapFile = mapFileData;
                 this.disposables.add(() => this.debugMapFile = undefined);
@@ -212,6 +222,15 @@ export class GameScreen extends RootScreen {
                     : LoadingScreenType.MultiPlayer;
         const loadingScreenApi = this.loadingScreenApiFactory.create(loadingScreenType, this.lanMatchSession);
         this.loadingScreenApi = loadingScreenApi;
+        if (params.savedGame) {
+            this.pointer.unlock(true);
+            this.pointer.setVisible(true);
+            loadingScreenApi.setOnCancel?.(() => {
+                if (cancellationToken.isCancelled()) return;
+                cancellationTokenSource.cancel();
+                this.controller?.goToScreen(ScreenType.MainMenuRoot);
+            });
+        }
         this.disposables.add(loadingScreenApi, () => this.loadingScreenApi = undefined);
         this.disposables.add(() => this.gameLoader.clearStaticCaches());
         if (cancellationToken.isCancelled()) {
@@ -223,11 +242,12 @@ export class GameScreen extends RootScreen {
             // the retail loader; multiplayer keeps its existing progress API.
             const loaderProgress = this.isSinglePlayer ? {
                 start: (...args: any[]) => loadingScreenApi.start(...args),
-                onLoadProgress: (percent: number) => loadingScreenApi.onLoadProgress(percent * .6),
+                onLoadProgress: (percent: number) => loadingScreenApi.onLoadProgress(percent * (params.savedGame ? .4 : .6)),
             } : loadingScreenApi;
             gameLoadResult = await this.gameLoader.load(gameId, timestamp, gameOpts, mapFile, playerName, this.isSinglePlayer, loaderProgress, cancellationToken);
         }
         catch (error) {
+            if (cancellationToken.isCancelled()) return;
             console.error('[GameScreen] Failed to load game', {
                 isLanGame: this.isLanGame,
                 isSinglePlayer: this.isSinglePlayer,
@@ -265,6 +285,38 @@ export class GameScreen extends RootScreen {
             throw error;
         }
         let uiInitResult: any;
+        const actionFactory = new ActionFactory();
+        new ActionFactoryReg().register(actionFactory, game, playerName);
+        if (this.isSinglePlayer) {
+            const saved = params.savedGame;
+            let recordingTrainer = !saved;
+            this.saveJournal = new SkirmishSaveJournal({ edition: activeEdition,
+                engineVersion: this.engineVersion, modHash: this.engineModHash, gameId, gameTimestamp: timestamp,
+                playerName, gameOpts: structuredClone(gameOpts), mapData: params.saveMapData,
+                initialSpeed: saved?.initialSpeed ?? game.speed.value }, saved);
+            if (!this.isLanGame && !localPlayer.isObserver) {
+                offlineTrainer.beginSession(game, localPlayer, () => this.isSinglePlayer && !this.isLanGame && !this.lanMatchSession,
+                    () => { if (this.replay) this.replay.trainerModified = true; },
+                    (command, phase) => { if (recordingTrainer) this.saveJournal?.recordTrainer(game, command, phase); });
+                this.disposables.add(() => offlineTrainer.endSession());
+                this.disposables.add(() => { recordingTrainer = false; });
+            }
+            if (saved) {
+                try {
+                    if (saved.engineVersion !== this.engineVersion || saved.modHash !== this.engineModHash)
+                        throw new SaveError('HD:SaveIncompatible');
+                    await restoreSkirmish(game, localPlayer, actionFactory, saved,
+                        fraction => loadingScreenApi.onLoadProgress(40 + fraction * 20), cancellationToken,
+                        offlineTrainer.session && { session: offlineTrainer.session,
+                            setEnabled: enabled => offlineTrainer.setEnabled(enabled) });
+                } catch (error) {
+                    if (!cancellationToken.isCancelled()) this.handleError(error,
+                        this.strings.get(error instanceof SaveError ? error.key : 'HD:SaveRestoreError'));
+                    return;
+                }
+            }
+            recordingTrainer = true;
+        }
         const hdDensity = this.generalOptions.graphics.hdDensity.value;
         const hdBudget = hdTextureBudget(hdDensity);
         const initialBuildingFamilies = new Set<string>(game.getWorld().getAllObjects().flatMap(object => {
@@ -393,8 +445,6 @@ export class GameScreen extends RootScreen {
             this.handleGameError(error, errorMessage, game);
             return;
         }
-        const actionFactory = new ActionFactory();
-        new ActionFactoryReg().register(actionFactory, game, playerName);
         const actionQueue = new ActionQueue();
         const replay = this.replay = new Replay();
         replay.gameId = gameId;
@@ -408,9 +458,10 @@ export class GameScreen extends RootScreen {
         replay.name = Replay.sanitizeFileName(`${playerNames} - ${mapTitle}`);
         this.disposables.add(() => this.replay = undefined);
         const replayRecorder = this.replayRecorderInstance = new ReplayRecorder(game, replay);
+        if (params.savedGame?.trainer?.events.length) replay.trainerModified = true;
         this.disposables.add(() => this.replayRecorderInstance = undefined);
         if (this.isSinglePlayer) {
-            this.gameTurnMgr = new SoloPlayTurnManager(game, localPlayer, actionQueue, this.actionLogger, replayRecorder);
+            this.gameTurnMgr = new SoloPlayTurnManager(game, localPlayer, actionQueue, this.actionLogger, replayRecorder, this.saveJournal);
         }
         else if (this.isLanGame) {
             if (!this.lanMatchSession) {
@@ -440,15 +491,11 @@ export class GameScreen extends RootScreen {
                 }));
             }
         }
-        if (this.isSinglePlayer && !this.isLanGame && !localPlayer.isObserver) {
-            offlineTrainer.beginSession(game, localPlayer, () => this.isSinglePlayer && !this.isLanGame && !this.lanMatchSession,
-                () => { replay.trainerModified = true; });
-            this.disposables.add(() => offlineTrainer.endSession());
-        }
         this.gameTurnMgr.init();
         const startGameHandler = () => {
-            if (game.status !== GameStatus.Started) {
+            if (!this.gameAnimationLoop) {
                 try {
+                    if (params.savedGame) this.pointer.lock();
                     this.onGameStart(localPlayer, game, uiInitResult, actionQueue, actionFactory, replay);
                 }
                 catch (error) {
@@ -511,6 +558,10 @@ export class GameScreen extends RootScreen {
         }
         this.gameTurnMgr?.dispose();
         this.gameTurnMgr = undefined;
+        this.saveJournal = undefined;
+        this.pausedAtSpeed = undefined;
+        this.mixer.setMuted(ChannelType.Effect, false);
+        this.mixer.setMuted(ChannelType.Ambient, false);
         this.lanMatchSession?.leaveRoom();
         this.lanMatchSession?.dispose();
         this.lanMatchSession = undefined;
@@ -853,6 +904,8 @@ export class GameScreen extends RootScreen {
         const renderableManager = uiInitResult.worldViewInitResult?.renderableManager;
         const worldInteraction = this.playerUi?.worldInteraction;
         debugRoot.gameScreen = this;
+        debugRoot.eva = eva;
+        this.disposables.add(() => { if (debugRoot.eva === eva) delete debugRoot.eva; });
         debugRoot.preparedHdCache = preparedHdCache.report;
         debugRoot.renderer = this.renderer;
         debugRoot.uiScene = this.uiScene;
@@ -1238,7 +1291,7 @@ export class GameScreen extends RootScreen {
         const gameEndHandler = () => this.onGameEnd(game, localPlayer, eva, replay);
         game.onEnd.subscribe(gameEndHandler);
         this.disposables.add(() => game.onEnd.unsubscribe(gameEndHandler));
-        game.start?.();
+        if (game.status !== GameStatus.Started) game.start?.();
         if (this.usesServerConnection()) {
             this.initNetStats(localPlayer);
         }
@@ -1272,6 +1325,17 @@ export class GameScreen extends RootScreen {
                     if (this.pausedAtSpeed !== undefined) this.pausedAtSpeed = speed;
                     else game.desiredSpeed.value = speed;
                 },
+            } : undefined, this.isSinglePlayer && this.saveJournal ? {
+                onSave: () => menu.openSaves({ rootController: this.controller!, options: {
+                    engineVersion: this.engineVersion, modHash: this.engineModHash,
+                    menuArt: hud.getSaveMenuArt(),
+                    capture: (name, id) => this.saveJournal!.capture(game, this.pausedAtSpeed ?? game.speed.value, name, id),
+                    currentGame: true,
+                } }),
+                onLoad: () => menu.openSaves({ rootController: this.controller!, options: {
+                    engineVersion: this.engineVersion, modHash: this.engineModHash, currentGame: true,
+                    menuArt: hud.getSaveMenuArt(),
+                } }),
             } : undefined);
         menu.init(hud);
         this.initGameMenuEvents(menu, eva, game, localPlayer, actionQueue, actionFactory);
@@ -1311,8 +1375,12 @@ export class GameScreen extends RootScreen {
             this.pointer.unlock(true);
             this.playerUi.worldInteraction.setEnabled(false);
             if (this.isSinglePlayer) {
+                if (this.pausedAtSpeed !== undefined) return;
+                this.gameTurnMgr.doGameTurn(performance.now());
                 this.pausedAtSpeed = game.speed.value;
+                this.gameTurnMgr.setPaused(true);
                 game.desiredSpeed.value = Number.EPSILON;
+                game.speed.value = Number.EPSILON;
                 this.mixer.setMuted(ChannelType.Effect, true);
                 this.mixer.setMuted(ChannelType.Ambient, true);
             }
@@ -1393,7 +1461,8 @@ export class GameScreen extends RootScreen {
             this.playerUi.worldInteraction.setEnabled(true);
             if (this.isSinglePlayer && this.pausedAtSpeed) {
                 game.desiredSpeed.value = this.pausedAtSpeed;
-                this.gameTurnMgr.doGameTurn(performance.now());
+                game.speed.value = this.pausedAtSpeed;
+                this.gameTurnMgr.setPaused(false);
                 this.pausedAtSpeed = undefined;
                 this.mixer.setMuted(ChannelType.Effect, false);
                 this.mixer.setMuted(ChannelType.Ambient, false);
@@ -1408,6 +1477,13 @@ export class GameScreen extends RootScreen {
         this.gameEndHandled = true;
 
         let gameResultPopup: any;
+        const releaseResult = () => {
+            if (!gameResultPopup) return;
+            this.uiScene?.remove(gameResultPopup);
+            gameResultPopup.destroy?.();
+            gameResultPopup = undefined;
+        };
+        this.disposables.add(releaseResult);
 
         try {
             const isObserver = Boolean(localPlayer?.isObserver);
@@ -1436,6 +1512,7 @@ export class GameScreen extends RootScreen {
             this.pointer?.setVisible(false);
             this.gameTurnMgr?.setErrorState?.();
             this.gameAnimationLoop?.stop?.();
+            this.uiAnimationLoop.start();
             if (this.isLanGame) {
                 this.lanMatchSession?.leaveRoom();
             }
@@ -1472,11 +1549,10 @@ export class GameScreen extends RootScreen {
             }
 
             await sleep(5000);
-
-            if (gameResultPopup) {
-                this.uiScene?.remove(gameResultPopup);
-                gameResultPopup.destroy?.();
-            }
+            const voiceDeadline = performance.now() + 10000;
+            while (!eva.isIdle() && performance.now() < voiceDeadline && this.game === game) await sleep(100);
+            releaseResult();
+            if (this.game !== game) return;
 
             const route = localPlayer
                 ? new MainMenuRoute(MainMenuScreenType.Score, {
@@ -1492,10 +1568,8 @@ export class GameScreen extends RootScreen {
         }
         catch (error) {
             console.error('[GameScreen] onGameEnd failed', error);
-            if (gameResultPopup) {
-                this.uiScene?.remove(gameResultPopup);
-                gameResultPopup.destroy?.();
-            }
+            releaseResult();
+            if (this.game !== game) return;
             this.controller?.goToScreen(ScreenType.MainMenuRoot, {
                 route: new MainMenuRoute(MainMenuScreenType.Home, undefined)
             });

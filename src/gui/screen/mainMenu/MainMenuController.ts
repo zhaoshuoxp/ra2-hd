@@ -60,6 +60,13 @@ export class MainMenuController extends Controller {
             this.setSidebarTitle(currentScreen.title);
         }
     }
+    async close(): Promise<void> {
+        // Leaving the root menu must not reactivate its suspended parent pages.
+        await this.currentScreen?.onLeave();
+        this.currentScreen = undefined;
+        this.screenStack = [];
+        this._onScreenChange.dispatch(this, undefined);
+    }
     setSidebarButtons(buttons: any[], mpSlotEnabled?: boolean): void {
         console.log(`[MainMenuController] Setting ${buttons.length} sidebar buttons`);
         if (this.mainMenu && this.mainMenu.setButtons) {
@@ -107,10 +114,10 @@ export class MainMenuController extends Controller {
             this.mainMenu.toggleVideo(show);
         }
     }
-    showVersion(version: string): void {
+    showVersion(version: string, edition?: string): void {
         console.log(`[MainMenuController] Showing version: ${version}`);
         if (this.mainMenu && this.mainMenu.showVersion) {
-            this.mainMenu.showVersion(version);
+            this.mainMenu.showVersion(version, edition);
         }
     }
     hideVersion(): void {

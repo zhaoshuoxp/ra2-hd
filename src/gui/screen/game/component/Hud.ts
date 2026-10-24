@@ -505,6 +505,11 @@ export class Hud extends UiObject {
             buttons: buttons,
         }))[0];
     }
+    getSaveMenuArt() {
+        const faction = this.sideType === SideType.GDI ? 'allied' : this.sideType === SideType.ThirdSide ? 'yuri' : 'soviet';
+        return { faction,
+            background: faction !== 'yuri' ? { image: this.getImage('bkgdmd.shp'), palette: this.palettes.get('uibkgd.pal') } : undefined } as const;
+    }
     showSidebarMenu(buttons: any[]): void {
         this.destroySidebarMenu();
         this.sideCameoRepeaters.setVisible(false);
@@ -554,6 +559,9 @@ export class Hud extends UiObject {
     toggleMenuContentVisibility(visible: boolean): void {
         this.menuContentContainer.setVisible(visible);
         this.menuContentArea?.setBackgroundVisible(visible);
+    }
+    setMenuContentExpanded(expanded: boolean): void {
+        this.menuContentArea?.setExpanded(expanded);
     }
     private renderCommandBarButtons(aggregatedImageData: any, buttonTypes: CommandBarButtonType[], buttonWidth: number, maxButtons: number): any[] {
         let xOffset = 0;

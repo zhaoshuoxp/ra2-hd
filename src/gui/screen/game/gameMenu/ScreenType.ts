@@ -5,5 +5,6 @@ export enum ScreenType {
     QuitConfirm = 3,
     Options = 4,
     OptionsSound = 5,
-    OptionsKeyboard = 6
+    OptionsKeyboard = 6,
+    Saves = 7
 }

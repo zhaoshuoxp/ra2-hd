@@ -47,7 +47,9 @@ for (const density of [2, 4] as const) test(`new terrain closure loads only enco
     expect(loaded.bindings.size).toBe(nativeImages);
     expect(new Set([...loaded.bindings.values()].map(binding => binding.group))).toEqual(new Set([group.id]));
     expect(loaded.textures.length).toBe(1);
-    expect(loaded.report.worldChargeBytes).toBeGreaterThan(loaded.report.gpuBytes * 2);
+    expect(loaded.report.retainedCpuBytes).toBeGreaterThan(0);
+    expect(loaded.report.worldChargeBytes).toBeGreaterThanOrEqual(
+        loaded.report.gpuBytes + loaded.report.retainedCpuBytes);
     expect(loaded.report.worldChargeBytes).toBeLessThanOrEqual(budget);
     let released = 0;
     loaded.textures[0].addEventListener('dispose', () => released++);

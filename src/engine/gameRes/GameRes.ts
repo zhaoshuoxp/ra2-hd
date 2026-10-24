@@ -1,4 +1,5 @@
 import { DataStream } from '../../data/DataStream';
+import { activeEdition } from '../../editions/activeEdition';
 import { MixFile } from '../../data/MixFile';
 import { MixEntry } from '../../data/MixEntry';
 import { VirtualFileSystem } from '../../data/vfs/VirtualFileSystem';
@@ -558,7 +559,7 @@ export class GameRes {
             string,
             string?
         ][] = [
-            ["pudlgbgn.shp", "dialog.pal"],
+            ["pudlgbgn.shp", activeEdition === 'yr' ? 'dialogn.pal' : 'dialog.pal'],
             ["mnbttn.shp", "mainbttn.pal"],
             ["cue_i.pcx"],
             ["cce_i.pcx"],
