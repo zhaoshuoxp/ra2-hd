@@ -10,7 +10,7 @@ const locale = JSON.parse(await fs.readFile('public/res/locale/zh-CN.json', 'utf
 await fs.mkdir(out, { recursive: false }); await fs.cp(path.join(priorEvidence, 'profile'), profile, { recursive: true });
 await fs.writeFile(path.join(profile, 'resource-registration.json'), JSON.stringify({ schemaVersion: 1, directory: artifact.resources }));
 const report = { status: 'RUNNING', baseline, edition: prior.edition, errors: [], transitions: [],
-    disclosure: 'Copied prior delivered test profile. Actual native menu actions and frames are observed; only a controlled 700 ms loader delay is used to make cancellation reproducible.' };
+    disclosure: 'Copied prior delivered test profile. Actual native menu actions and frames are observed; controlled 350 ms loading-screen holds expose flag rendering and a 700 ms delay makes cancellation reproducible.' };
 const app = await electron.launch({ executablePath: artifact.app ? path.join(artifact.app, 'Contents/MacOS/RA2 HD Editions')
     : await fs.realpath('node_modules/electron/dist/Electron.app/Contents/MacOS/Electron'),
     args: artifact.app ? [] : [artifact.build], cwd: '/private/tmp', timeout: 60000,
@@ -79,6 +79,21 @@ async function checkLoaded() {
     assert.equal(actual.popups, 0, 'The exited save page must release its dialog'); assert.equal(actual.cancelControls, 0);
     assert.equal(actual.glError, 0); return actual;
 }
+async function checkLoadingFlag() {
+    await page.waitForFunction(edition => {
+        const c = document.querySelector('canvas[data-loading-backdrop]');
+        return c && c.width > 1 && (edition !== 'yr' || c.dataset.loadingFlag === 'ready');
+    }, prior.edition);
+    const flag = await page.locator('canvas[data-loading-backdrop]').evaluate(c => {
+        const x = Math.round((500 + parseFloat(c.style.width) - 800) * 2);
+        const pixels = c.getContext('2d').getImageData(x, 800, 432, 240).data;
+        let bright = 0;
+        for (let i = 0; i < pixels.length; i += 4) if (Math.max(pixels[i], pixels[i + 1], pixels[i + 2]) > 40) bright++;
+        return { ready: c.dataset.loadingFlag === 'ready', bright };
+    });
+    assert.equal(flag.ready, prior.edition === 'yr'); assert(flag.bright > 1000);
+    return flag;
+}
 try {
     await page.locator(`[data-edition=${prior.edition}]`).click({ timeout: 90000 });
     await page.waitForFunction(() => window.__ra2debug?.mainMenuController, undefined, { timeout: 90000 });
@@ -94,9 +109,10 @@ try {
     });
     await page.getByRole('button', { name: locale['hd:loadgame'], exact: true }).click();
     await page.getByTestId('skirmish-saves').getByRole('option', { name: /Native persistence checkpoint/ }).click();
-    await trace('home-load'); await page.locator('[data-action=LoadGame]').click();
+    await trace('home-load', 350); await page.locator('[data-action=LoadGame]').click();
     await page.locator('.loading-screen').waitFor({ timeout: 120000 });
     if (!baseline) assert.equal(await page.getByTestId('saved-game-loading-cancel').count(), 0);
+    if (!baseline) report.homeLoadingFlag = await checkLoadingFlag();
     await page.screenshot({ path: path.join(out, 'home-loading.png') });
     await freeze();
     report.homeLoaded = await checkLoaded(); const home = await finishTrace();
@@ -117,7 +133,13 @@ try {
     await page.getByRole('button', { name: locale['hd:loadgame'], exact: true }).click();
     await page.getByTestId('skirmish-saves').getByRole('option', { name: /Native persistence checkpoint/ }).click();
     await page.locator('[data-action=LoadGame]').click(); await page.locator('[data-action=ConfirmSaveAction]').waitFor();
-    await trace('in-game-load'); await page.locator('[data-action=ConfirmSaveAction]').click(); await freeze();
+    await trace('in-game-load', 350); await page.locator('[data-action=ConfirmSaveAction]').click();
+    if (!baseline) {
+        await page.locator('.loading-screen').waitFor({ timeout: 120000 });
+        report.inGameLoadingFlag = await checkLoadingFlag();
+        await page.screenshot({ path: path.join(out, 'in-game-loading.png') });
+    }
+    await freeze();
     report.inGameLoaded = await checkLoaded(); const inGame = await finishTrace();
     console.log(JSON.stringify({ stage: 'in-game-load', resume: inGame.parentResume, dialogs: inGame.dialogs.length, messageBoxes: inGame.messageBoxes.length }));
     if (!baseline) { assert.equal(inGame.parentResume, 0); assert.equal(inGame.dialogs.length, 0); assert.equal(inGame.messageBoxes.length, 0); }

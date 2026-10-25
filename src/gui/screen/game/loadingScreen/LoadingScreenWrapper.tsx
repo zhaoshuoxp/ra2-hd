@@ -1,6 +1,7 @@
 import { activeEdition } from '@/editions/activeEdition';
 import { loadingLayout } from './loadingLayout';
 import { getLoadingArtwork } from './loadingArtwork';
+import { createLoadingFlag } from './loadingFlag';
 import { jsx } from '@/gui/jsx/jsx';
 import { HtmlContainer } from '@/gui/HtmlContainer';
 import { UiComponent } from '@/gui/jsx/UiComponent';
@@ -54,6 +55,7 @@ export class LoadingScreenWrapper extends UiComponent<LoadingScreenWrapperProps>
     private declare countryName: string;
     private declare color: string;
     private declare bgHtmlImg?: string;
+    private declare flagHtmlImg?: string;
     private declare bgSpriteImg?: string;
     private declare bgSpritePal?: string;
     private declare htmlEl?: any;
@@ -76,6 +78,11 @@ export class LoadingScreenWrapper extends UiComponent<LoadingScreenWrapperProps>
             color = this.props.rules.colors.get(loadColorKey)?.asHexString() ?? "#fff";
         }
         this.color = color;
+        try {
+            this.flagHtmlImg = createLoadingFlag(countryName, activeEdition, Engine.vfs);
+        } catch (error) {
+            console.warn('Unable to decode loading flag', countryName, error);
+        }
         const artwork = getLoadingArtwork(countryName, activeEdition);
         if (artwork) {
             if (gameResConfig.isCdn()) {
@@ -156,6 +163,7 @@ export class LoadingScreenWrapper extends UiComponent<LoadingScreenWrapperProps>
                 color: this.color,
                 playerInfos: this.props.playerInfos,
                 bgImageSrc: this.bgHtmlImg,
+                flagImageSrc: this.flagHtmlImg,
                 unitArtworkReady: this.props.unitArtworkReady,
             },
         }));

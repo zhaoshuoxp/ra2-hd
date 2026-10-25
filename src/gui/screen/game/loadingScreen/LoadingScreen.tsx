@@ -31,6 +31,7 @@ interface LoadingScreenProps {
     countryName: string;
     color: string;
     bgImageSrc?: string;
+    flagImageSrc?: string;
     unitArtworkReady?: boolean;
     viewport: Viewport;
     strings: {
@@ -74,6 +75,7 @@ export class LoadingScreen extends React.Component<LoadingScreenProps> {
         <div className="loading-content" style={{ position: 'absolute', width: layout.contentWidth, height: 600,
             left: layout.contentX, top: layout.contentY, transformOrigin: 'top left', transform: `scale(${layout.contentScale})` }}>
         <LoadingBackdrop src={this.props.bgImageSrc} width={layout.contentWidth}
+            flagSrc={this.props.flagImageSrc}
             hdId={this.props.unitArtworkReady !== false ? loadingBackgroundArtwork.get(countryName) : undefined} />
         {this.props.unitArtworkReady !== false && loadingUnitArtwork.has(countryName) && <UiArtSurface
             id={`loading-unit-${loadingUnitArtwork.get(countryName)}`}

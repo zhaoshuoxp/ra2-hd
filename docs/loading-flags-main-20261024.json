@@ -1,0 +1,98 @@
+{
+  "status": "PASS_NATIVE_REPAIR_MAIN_AND_SCOPED_CLEANUP",
+  "source": {
+    "baseHead": "34e6fbe6b5d2808db4034e21d9e2dad36e7a7c3a",
+    "runtime": "candidate-r2",
+    "files": [
+      {
+        "file": "src/gui/screen/game/loadingScreen/loadingFlag.ts",
+        "sha256": "ba8d4031c811a5c9a052fd50b2dab10d6e39e71a614079d3ae5a571487c2a7ce"
+      },
+      {
+        "file": "src/gui/screen/game/loadingScreen/LoadingBackdrop.tsx",
+        "sha256": "632407518a7ae85f80068dd4f9521972f1c781f00c142e349165250af6020ea3"
+      },
+      {
+        "file": "src/gui/screen/game/loadingScreen/LoadingScreen.tsx",
+        "sha256": "1d8433958a45cbecdd2f95536b93a2e39a7db7659d664f576db315282bd00dff"
+      },
+      {
+        "file": "src/gui/screen/game/loadingScreen/LoadingScreenWrapper.tsx",
+        "sha256": "4293546a1be667db8f12ebb265ead711ad9b7ce0c0b9444b5dc94ed812cb6e9f"
+      }
+    ]
+  },
+  "checks": {
+    "native-final-yr-r4": {
+      "status": "PASS_RETAIL_BACKDROPS_AND_FLAGS_ALL_COUNTRIES_HD_MODES_AND_VIEWPORTS",
+      "reportSha256": "1f1b5bcdcb18758d9be412a23ea6ab558bd91bcc6258b9cd0ae8341a989fd9a0",
+      "countries": 11,
+      "layouts": 55
+    },
+    "native-final-ra2": {
+      "status": "PASS_RETAIL_BACKDROPS_AND_FLAGS_ALL_COUNTRIES_HD_MODES_AND_VIEWPORTS",
+      "reportSha256": "57485344dbf0aee85acc92597b425546f6b8ef92249b8dbf8ee8a5346d74bdaf",
+      "countries": 10,
+      "layouts": 48
+    },
+    "save-final-yr": {
+      "status": "PASS_DIRECT_HOME_AND_IN_GAME_LOAD_NO_TRANSIENT_DIALOGS_BACK_CANCEL_AND_IDENTICAL_R4_SAVE_STATE",
+      "reportSha256": "dbe7a43757efb3dcd95efcee5d675960eb06cf4fae60740e361ff0f4fc83ac8d",
+      "countries": 0,
+      "layouts": 0
+    },
+    "save-final-ra2": {
+      "status": "PASS_DIRECT_HOME_AND_IN_GAME_LOAD_NO_TRANSIENT_DIALOGS_BACK_CANCEL_AND_IDENTICAL_R4_SAVE_STATE",
+      "reportSha256": "943911fcd73233701d307aa5035676dfa5cc13b64b4d18e9305d16a94559e250",
+      "countries": 0,
+      "layouts": 0
+    },
+    "unit": {
+      "passed": 9,
+      "failed": 0,
+      "assertions": 119
+    },
+    "typecheck": "PASS",
+    "isolatedBuild": "PASS"
+  },
+  "protection": {
+    "status": "PASS",
+    "historicalBaseline": "/Users/Aone/RA2remaster/project-history/distribution-20261024/protected-before.json.gz",
+    "files": 26095,
+    "changes": [],
+    "resourceMetadataPins": 13978,
+    "metadataChanges": [],
+    "persistentUserFiles": 52
+  },
+  "evidence": "../project-history/loading-flags-main-20261024",
+  "platforms": {
+    "mac": "PASS_NATIVE",
+    "windows": "NOT_RUN_ON_THIS_MAC"
+  },
+  "localMainCommit": "7598b5e8173feccf8d38d44d965e8a1710a91a2c",
+  "cleanup": {
+    "status": "PASS_SCOPED_CLEANUP",
+    "implementationCommit": "7598b5e8173feccf8d38d44d965e8a1710a91a2c",
+    "removed": [
+      "/Users/Aone/RA2remaster/ra2-hd/.artifacts/loading-flag-repair-20261024"
+    ],
+    "emptyViteCacheRemoved": true,
+    "canonicalAndOriginalFilesHashCheckedBeforeCleanup": 26095,
+    "persistentUserFilesVerifiedAfterCleanup": 52,
+    "profileChanges": [],
+    "resourceMetadataPinsVerifiedAfterCleanup": 13978,
+    "resourceChanges": [],
+    "campaignWorktreePreserved": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign",
+    "macPackageCreated": false,
+    "remotePush": false,
+    "desktop": {
+      "historicalDeliveryPath": "/Users/Aone/Desktop/RA2-HD-v0.2-20261024",
+      "existsAtPostCheck": false,
+      "writtenOrRemovedByThisTask": false
+    },
+    "cleanupDiagnostic": "The first cleanup attempt completed its scoped deletions and preservation checks, then stopped at an outdated assertion that the historical Desktop delivery still existed. This final audit records its absence without recreating or deleting Desktop files.",
+    "evidenceCopyVerifiedBeforeDeletion": true
+  },
+  "macPackageCreated": false,
+  "remotePush": false
+}

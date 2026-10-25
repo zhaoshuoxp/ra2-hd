@@ -33,6 +33,13 @@ for (const edition of ['ra2', 'yr'] as GameEdition[]) {
         const row = { edition, country, ...artwork, imageSource: source.source, paletteSource: pal.source,
             sourceSha256: hash(source.file.getBytes()), paletteSha256: hash(pal.file.getBytes()),
             rgbaSha256: hash(rgba), whiteFraction: white / (800 * 600) };
+        if ((edition === 'ra2' && country !== 'Observer') || country === 'YuriCountry') {
+            const [x, y, width, height] = country === 'YuriCountry' ? [100, 250, 250, 304] : [487, 400, 242, 121];
+            const flag = new Uint8Array(width * height * 4);
+            for (let line = 0; line < height; line++) flag.set(rgba.subarray(((y + line) * 800 + x) * 4,
+                ((y + line) * 800 + x + width) * 4), line * width * 4);
+            Object.assign(row, { flag: { width, height, rgbaSha256: hash(flag) } });
+        }
         rows.push(row);
     }
 }
