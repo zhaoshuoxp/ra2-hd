@@ -4,6 +4,8 @@
 
 <img src="desktop/icons/app-icon.png" width="160" alt="Red Alert 2 HD application icon">
 
+[![Red Alert 2 HD: faction artwork, battlefield, interface and combat — 4320 × 4320](docs/images/ra2-hd-showcase.jpg)](docs/images/ra2-hd-showcase.jpg)
+
 <a id="中文介绍"></a>
 
 ## 项目介绍
