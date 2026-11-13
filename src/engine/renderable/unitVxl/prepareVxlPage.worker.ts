@@ -24,7 +24,7 @@ self.onmessage = async ({ data: request }) => {
                     rgba: new Uint8Array(context.getImageData(0, 0, bitmap.width, bitmap.height).data) });
             } finally { bitmap.close(); }
         }
-        const pixels = prepareVxlPixels(decoded[0], decoded[1], request.scale, request.limit);
+        const pixels = prepareVxlPixels(decoded[0], decoded[1], request.scale, request.limit, request.packedLighting === true);
         self.postMessage({ id: request.id, pixels }, { transfer: [pixels.color.buffer, pixels.remap.buffer, pixels.lookup.buffer] });
     } catch (error) {
         self.postMessage({ id: request.id, error: error instanceof Error ? error.message : 'vxl-preparation-failure' });

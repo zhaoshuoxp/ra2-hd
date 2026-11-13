@@ -9,14 +9,14 @@ const srgb = (value: number) => Math.round(255 * (value <= 0.0031308
 
 // Reduce verified 4x art to 2x before pooling/upload. Alpha-weighted linear
 // color prevents transparent matte fringes; palette indices remain categorical.
-export function downsampleHdPage(base: DecodedHdPage, data: DecodedHdPage): [DecodedHdPage, DecodedHdPage] {
+export function downsampleHdPage(base: DecodedHdPage, data: DecodedHdPage, packedLighting = false): [DecodedHdPage, DecodedHdPage] {
     if (base.width !== data.width || base.height !== data.height
         || base.rgba.length !== base.width * base.height * 4 || data.rgba.length !== base.rgba.length)
         throw Error('downsample-page-size');
     const width = Math.ceil(base.width / 2), height = Math.ceil(base.height / 2);
     const color = new Uint8Array(width * height * 4), remap = new Uint8Array(color.length);
     for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
-        let alpha = 0, red = 0, green = 0, blue = 0, owner = 0, shade = 0, samples = 0;
+        let alpha = 0, red = 0, green = 0, blue = 0, owner = 0, shade = 0, samples = 0, illumination = 0;
         for (let dy = 0; dy < 2; dy++) for (let dx = 0; dx < 2; dx++) {
             const sx = x * 2 + dx, sy = y * 2 + dy;
             if (sx >= base.width || sy >= base.height) continue;
@@ -26,7 +26,8 @@ export function downsampleHdPage(base: DecodedHdPage, data: DecodedHdPage): [Dec
             green += linear[base.rgba[at + 1]] * a;
             blue += linear[base.rgba[at + 2]] * a;
             const weight = a * data.rgba[at] / 255;
-            owner += weight; shade += weight * data.rgba[at + 1];
+            owner += weight; shade += weight * (packedLighting ? data.rgba[at + 1] & 15 : data.rgba[at + 1]);
+            if (packedLighting) illumination += a * (data.rgba[at + 1] >>> 4);
         }
         const at = (y * width + x) * 4;
         color[at + 3] = Math.round(alpha / samples);
@@ -35,6 +36,7 @@ export function downsampleHdPage(base: DecodedHdPage, data: DecodedHdPage): [Dec
             color[at] = srgb(red / alpha); color[at + 1] = srgb(green / alpha); color[at + 2] = srgb(blue / alpha);
             remap[at] = Math.round(owner / alpha * 255);
             remap[at + 1] = owner ? Math.round(shade / owner) : 0;
+            if (packedLighting) remap[at + 1] |= Math.round(illumination / alpha) << 4;
         }
     }
     return [{ width, height, rgba: color }, { width, height, rgba: remap }];

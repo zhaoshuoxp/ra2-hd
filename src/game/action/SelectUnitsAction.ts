@@ -4,11 +4,14 @@ import { DataStream } from '@/data/DataStream';
 import { OrderUnitsAction, ORDER_UNIT_LIMIT } from './OrderUnitsAction';
 import { OrderActionContext } from './OrderActionContext';
 import { GameObject } from '../gameobject/GameObject';
+import { controllablePlayers } from '../campaign/CampaignControl';
 export class SelectUnitsAction extends Action {
     private _unitIds: number[] = [];
     private orderActionContext: OrderActionContext;
+    private game: any;
     constructor(game: any, orderActionContext: OrderActionContext) {
         super(ActionType.SelectUnits);
+        this.game = game;
         this.orderActionContext = orderActionContext;
     }
     get unitIds(): number[] {
@@ -39,11 +42,12 @@ export class SelectUnitsAction extends Action {
         const player = this.player;
         const units: GameObject[] = [];
         for (const id of this.unitIds) {
-            const unit = player.getOwnedObjectById(id);
+            const unit = controllablePlayers(player).map(owner => owner.getOwnedObjectById(id)).find(Boolean);
             if (unit) {
                 units.push(unit);
             }
         }
         this.orderActionContext.getOrCreateSelection(player).update(units);
+        if (player === this.game.localPlayer) this.game.campaign?.noteSelected(units);
     }
 }

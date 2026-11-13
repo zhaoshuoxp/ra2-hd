@@ -1,0 +1,46 @@
+{
+  "mission": "sov12s.map",
+  "sourceSha256": "f69c18a54ce5915c9cdc08c2f10113853bc8656cf3e5f1392a64818a700d2720",
+  "semanticsVersion": 14,
+  "enemyHouse": "BadGuy1 House",
+  "controlledHouses": 1,
+  "triggers": 54,
+  "aiTriggers": 133,
+  "ignoreGlobal": false,
+  "teamDelays": [
+    2000,
+    2500,
+    3500
+  ],
+  "cases": {
+    "easy": {
+      "credits": 10050,
+      "human": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "enemy": [
+        0.8,
+        1.2,
+        1
+      ],
+      "aiDelay": 3500
+    },
+    "hard": {
+      "credits": 9950,
+      "human": [
+        0.8,
+        1.2,
+        1
+      ],
+      "enemy": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "aiDelay": 2000
+    }
+  },
+  "authority": "Original sov12s.map Player House Credits=100/TechLevel=10, no map-local General or difficulty overrides. Archived rules.ini supplies CampaignMoneyDeltaEasy=50/Hard=-50, TeamDelays=2000,2500,3500 and original handicaps. Original IgnoreGlobalAITriggers=no includes107 archived global and26 local AI records. Source54 trigger difficulty flags retain the first six-IFV chrono attack on all difficulties and further chained island attacks on Normal/Hard only."
+}

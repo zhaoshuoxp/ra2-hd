@@ -11,15 +11,21 @@ import { ZoneType } from "@/game/gameobject/unit/ZoneType";
 import { MoveTask } from "@/game/gameobject/task/move/MoveTask";
 import { MovementZone } from "@/game/type/MovementZone";
 import { LocomotorType } from "@/game/type/LocomotorType";
+import { campaignChargeApproach } from '../campaign/CampaignChargedWeapon';
+import { WaitTicksTask } from '../gameobject/task/system/WaitTicksTask';
 interface AttackOrderOptions {
     forceAttack?: boolean;
     noIvanBomb?: boolean;
+    campaignScriptTarget?: boolean;
+    campaignWeaponOnly?: boolean;
 }
 export class AttackOrder extends Order {
     protected game: any;
     protected isC4: boolean = false;
     protected forceAttack: boolean;
     protected ivanBombAllowed: boolean;
+    private readonly campaignScriptTarget: boolean;
+    private readonly campaignWeaponOnly: boolean;
     public targetOptional: boolean = false;
     public feedbackType: OrderFeedbackType = OrderFeedbackType.None;
     protected rangeHelper: RangeHelper;
@@ -31,6 +37,10 @@ export class AttackOrder extends Order {
         this.game = game;
         this.forceAttack = forceAttack;
         this.ivanBombAllowed = !noIvanBomb || forceAttack;
+        this.campaignScriptTarget = options.campaignScriptTarget === true
+            && (game.campaign?.launch.semanticsVersion ?? 1) >= 21;
+        this.campaignWeaponOnly = options.campaignWeaponOnly === true
+            && game.campaign?.launch.edition === 'yr' && (game.campaign?.launch.semanticsVersion ?? 1) >= 28;
         this.rangeHelper = new RangeHelper(this.game.map.tileOccupation);
         this.losHelper = new LosHelper(this.game.map.tiles, game.map.tileOccupation);
     }
@@ -74,7 +84,7 @@ export class AttackOrder extends Order {
     isValid(): boolean {
         if (!this.sourceObject.attackTrait)
             return false;
-        if (this.forceAttack &&
+        if (this.forceAttack && !this.campaignScriptTarget &&
             this.game.mapShroudTrait
                 .getPlayerShroud(this.sourceObject.owner)
                 ?.isShrouded(this.target.tile, this.target.obj?.tileElevation) &&
@@ -86,11 +96,12 @@ export class AttackOrder extends Order {
             .getGroundObjectsOnTile(this.target.tile)
             .find((obj: any) => obj.isTerrain());
         this.terminal = !targetObj && !terrainObj;
-        if (this.sourceObject.c4 &&
+        if (!this.campaignWeaponOnly && this.sourceObject.c4 &&
             targetObj?.isBuilding() &&
             targetObj.c4ChargeTrait &&
             (this.forceAttack ||
-                !this.game.areFriendly(targetObj, this.sourceObject) ||
+                !((this.game.campaign?.launch.semanticsVersion ?? 1) >= 16
+                    ? this.game.areFriendly(this.sourceObject, targetObj) : this.game.areFriendly(targetObj, this.sourceObject)) ||
                 targetObj.cabHutTrait)) {
             this.isC4 = true;
             this.feedbackType = OrderFeedbackType.SpecialAttack;
@@ -162,7 +173,11 @@ export class AttackOrder extends Order {
             return [new PlantC4Task(this.game, this.target.obj)];
         }
         const weapon = this.sourceObject.attackTrait.selectWeaponVersus(this.sourceObject, this.target, this.game, this.forceAttack);
+        const approach = weapon?.warhead.rules.electricAssault
+            && campaignChargeApproach(this.game, this.sourceObject, this.target.obj);
         return [
+            ...(approach ? [new MoveTask(this.game, approach.tile, false, { strictCloseEnough: true, closeEnoughTiles: 0 }),
+                new WaitTicksTask(approach.wait)] : []),
             new AttackTask(this.game, this.target, weapon, {
                 force: this.forceAttack,
             }),

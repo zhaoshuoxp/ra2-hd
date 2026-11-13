@@ -3,6 +3,7 @@ import argparse
 import copy
 import hashlib
 import json
+import os
 import re
 from collections import defaultdict
 from pathlib import Path
@@ -11,9 +12,22 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 from showcase_registration import capacity, extrude, independently_sample, matte, register, sha
+from showcase_shore import load_shore, render_shore
+from showcase_coastal_beach import load_coastal_beach, render_coastal_beach
+from showcase_accepted_roads import load_accepted_roads, render_accepted_road
 from showcase_urban_roads import register_urban_road
+from showcase_urban_ground import load_urban_ground, render_urban_ground
+from showcase_coastal_sea import load_coastal_sea, render_coastal_sea
+from showcase_bridge_road_paint import load_bridge_paint, reconstruct_bridge_paint, retain_bridge_main_rgb
 from showcase_structure_contacts import continuous_structure_contacts
-from showcase_reconstruction import (POLICY as CONTOUR_POLICY, extra_alpha,
+from showcase_snow_scope import SPECS as SNOW_SCOPES, admit_snow_scope
+from showcase_snow_road_contacts import load as load_snow_road_ports, sample as sample_snow_road_ports
+from showcase_snow_road_contacts import load_material_light as load_snow_road_light, register_material_light
+from showcase_snow_road_material import load_earth_material, compose_earth_material
+from showcase_temperate_road_contacts import load as load_temperate_roads, sample_plate as sample_temperate_road
+from showcase_temperate_road_contacts import render_materials as render_temperate_road_materials
+from showcase_reconstruction import (POLICY as CONTOUR_POLICY, ROCK_POLICY, extra_alpha,
+                                     COHERENT_POLICY, SNOW_GROUND_POLICY, coherent_extra_alpha, native_member_mask,
                                      continuous_water_detail, continuous_water_weight)
 from showcase_materials import (register_water, register_contacts, water_mask,
                                pinned_native_water_mask, register_coast_contacts, authored_pool_water_weight, reject_new_matte,
@@ -33,12 +47,16 @@ parser.add_argument('--max-groups', type=int, default=8)
 parser.add_argument('--schema', default='m2-2-tmp-export-v1')
 parser.add_argument('--replace-selected-groups', action='store_true')
 parser.add_argument('--allow-empty-base', action='store_true')
+parser.add_argument('--link-accepted-atlases', action='store_true')
 args = parser.parse_args()
 root = args.root
 profile = json.loads(args.material_profile.read_text()) if args.material_profile else {}
 prepared = args.prepared
 source = json.loads((root / 'source.json').read_text())
 assert source['preparedSourceSha256'] == sha(prepared / 'source.json')
+source_editions = source.get('editions', ['ra2', 'yr'])
+assert source_editions and len(set(source_editions)) == len(source_editions)
+assert set(source_editions) <= {'ra2', 'yr'}
 layout = json.loads((root / 'layout.json').read_text())
 overrides = json.loads((root / 'slot-overrides.json').read_text()) if (root / 'slot-overrides.json').exists() else {}
 batches = {batch['name'] + '-master.png': batch for batch in json.loads((root / 'batches.json').read_text())}
@@ -50,12 +68,85 @@ wanted = args.groups or list(groups)
 assert all(group in groups for group in wanted)
 members = [member for member in source['members'] if any(member['setIndex'] in groups[group] for group in wanted)]
 member_sets = {member['member']: member['setIndex'] for member in members}
+urban_ground_geometry, urban_ground_materials, urban_ground_masters = load_urban_ground(profile, source, root)
+shore_geometry, shore_plates, shore_water, shore_land, shore_masters = load_shore(profile, source, root)
+accepted_road_geometry, accepted_road_materials, accepted_road_records = load_accepted_roads(profile, source, root)
+continuous_authored_rgb = profile.get('continuousAuthoredRgb', {})
+if continuous_authored_rgb:
+    assert source_editions == ['yr'], 'New campaign surfaces require an explicit YR source scope'
+    assert set(continuous_authored_rgb) == set(member_sets), 'Author complete selected native members'
+    assert set(profile) <= {'continuousAuthoredRgb', 'authoredSurfaceReconstruction',
+                            'sourcePinnedBridgeRoadPaint', 'sourcePinnedCoastalBeach',
+                            'sourcePinnedExposedRockContours', 'sourcePinnedCoastalSea',
+                            'sourcePinnedSnowCliffContours', 'sourcePinnedSnowCliffPlanarLight',
+                            'sourcePinnedSnowRampContours', 'sourcePinnedSnowRampPlanarLight',
+                            'sourcePinnedSnowRampGroundContacts',
+                            'sourcePinnedSnowGroundContours', 'sourcePinnedSnowGroundPlanarLight',
+                            'sourcePinnedSnowCrevasseContours', 'sourcePinnedSnowCrevassePlanarLight',
+                            'sourcePinnedSnowRoadContours', 'sourcePinnedSnowRoadPlanarLight',
+                            'sourcePinnedSnowRoadRgbPorts',
+                            'sourcePinnedSnowRoadMaterialLight',
+                            'sourcePinnedSnowRoadEarthMaterial',
+                            'sourcePinnedTemperateRoadPortMaterials',
+                            'sourcePinnedSnowCoastalContours', 'sourcePinnedSnowCoastalPlanarLight'}, \
+        'Do not combine continuous authored RGB with retail material restoration'
+    if 'authoredSurfaceReconstruction' in profile:
+        assert profile['authoredSurfaceReconstruction'] == continuous_authored_rgb
+    for member in members:
+        assert continuous_authored_rgb[member['member']] == member['native']['sha256']
+coastal_masks, coastal_water = load_coastal_sea(profile, source, root)
+beach_masks, beach_land = load_coastal_beach(profile, source, root)
+bridge_paint = load_bridge_paint(profile, source, root)
+snow_road_ports = load_snow_road_ports(profile, {**source, 'members': members}, root)
+snow_road_light = load_snow_road_light(profile, {**source, 'members': members})
+snow_road_earth = load_earth_material(profile, {**source, 'members': members})
+temperate_roads, temperate_road_materials = load_temperate_roads(profile, {**source, 'members': members}, root)
 reconstructed = profile.get('authoredSurfaceReconstruction', {})
+exposed_rock = profile.get('sourcePinnedExposedRockContours', {})
+snow_surfaces, snow_light_key = {}, None
+if any(key in profile for key in SNOW_SCOPES):
+    _, contour_key, snow_light_key = admit_snow_scope(profile, {**source, 'members': members})
+    snow_surfaces = profile[contour_key]
+else:
+    assert not any(light_key in profile for light_key, *_ in SNOW_SCOPES.values())
+snow_ground = profile.get('sourcePinnedSnowRampGroundContacts')
+if snow_ground:
+    contract = json.loads((Path(__file__).resolve().parents[2] / 'docs/campaign-art/yr-v1'
+        / 'terrain-snow-large-ramps-ground-contact-contract-r2.json').read_text())
+    assert contract['schema'] == 'yr-source-pinned-snow-large-ramp-ground-contacts-v1'
+    assert contract['setIndex'] == 77
+    assert source['theater'] == 'SNOW' and source_editions == ['yr']
+    assert snow_surfaces == profile['sourcePinnedSnowRampContours'] == contract['members']
+    assert contract['policy'] == SNOW_GROUND_POLICY
+    assert snow_ground == dict(policy=SNOW_GROUND_POLICY, members=contract['members'])
+    assert all(member['native']['palette'] == contract['palette'] for member in members)
+if exposed_rock:
+    assert source_editions == ['yr'] and source['theater'] == 'NEWURBAN'
+    rock_contract = json.loads((Path(__file__).resolve().parents[2] / 'docs/campaign-art/yr-v1'
+        / 'terrain-newurban-natural-ramp-rock-contour-contract-r1.json').read_text())
+    assert rock_contract['policy'] == ROCK_POLICY and exposed_rock == rock_contract['rockMembers']
+    assert continuous_authored_rgb == rock_contract['members']
+    assert all(member_sets.get(name) == 115 and reconstructed.get(name) == pin
+               for name, pin in exposed_rock.items()), 'Pin new natural ramp rock contours to exact source members'
+    assert all(member['native']['palette']['sha256'] == rock_contract['palette']['sha256'] for member in members)
+if source.get('theater') == 'LUNAR':
+    assert source_editions == ['yr'], 'Lunar source identities belong to YR only'
+    assert profile.get('lunarSourceBinding') == dict(schema='yr-lunar-native-terrain-v1',
+        preparedSourceSha256=source['preparedSourceSha256'],
+        paletteSha256='cdcbb615ede0d3e289adb0a16ef2b2b420eecd122de413bcc745a5f94939876a')
+    for member in members:
+        native = member['native']
+        archive = 'isolunmd.mix' if member['setIndex'] == 84 else 'isolun.mix'
+        assert native['archive'] == 'ra2md.mix/' + archive and member['member'].endswith('.lun')
+        assert native['palette']['member'] == 'isolun.pal'
+        assert native['palette']['sha256'] == profile['lunarSourceBinding']['paletteSha256']
+        assert all(binding['edition'] == 'yr' for binding in native['bindings'])
 continuous_structure_members = profile.get('nativeContinuousStructureContacts', {})
 for name, pin in continuous_structure_members.items():
     assert name in reconstructed and pin == reconstructed[name], 'Pin corrected structure contacts to their native source'
 for name, pin in reconstructed.items():
-    assert source.get('theater') in ('NEWURBAN', 'DESERT')
+    assert source.get('theater') in ('NEWURBAN', 'DESERT', 'LUNAR') or (
+        source.get('theater') == 'SNOW' and name in snow_surfaces)
     assert name in member_sets and pin == next(row['native']['sha256'] for row in members if row['member'] == name)
 assert not reconstructed or set(reconstructed) == set(member_sets), 'Reconstruct complete source groups'
 water_sets = profile.get('waterRegistrationSetIndices')
@@ -107,6 +198,9 @@ assert sha(base_root / 'manifest.json') == base_pointer['sha256']
 base = json.loads((base_root / 'manifest.json').read_text())
 assert (0 if args.allow_empty_base else 1) <= len(base['groups']) <= args.max_groups
 assert base['theater'] == source.get('theater', 'TEMPERATE'), 'Cross-theater base mismatch'
+if source['theater'] == 'LUNAR':
+    assert base.get('schema') == 'tmp-terrain-hd-v1', 'Lunar base must use the runtime manifest schema'
+    assert base.get('editions') == ['yr'], 'Lunar runtime manifests belong to YR only'
 replaced_groups = []
 if args.replace_selected_groups:
     assert args.set_indices, 'Group replacement requires an explicit native set allowlist.'
@@ -132,9 +226,12 @@ if mother_audits is not None:
         audit = json.loads(audit_file.read_text())
         assert audit['status'] == 'PASS' and audit['rawSha256'] == declaration['masterSha256'], \
             f'Used mother must pass source-pinned cell containment: {file}'
-masters, plates, originals, registered = {}, {}, {}, []
+masters, plates, originals, registered = {}, {}, {}, list(urban_ground_masters) + shore_masters + accepted_road_records
 for member in members:
     name = member['member']
+    if name in urban_ground_geometry or name in accepted_road_geometry:
+        originals[name] = np.asarray(Image.open(root / f'{name}-native.png').convert('RGBA'))
+        continue
     info = {**layout[name], **overrides.get(name, {})}
     structure_key = ('nativeTheaterStructureMaterials' if name in profile.get('nativeTheaterStructureMaterials', {})
                      else 'nativeUrbanStructureMaterials')
@@ -157,6 +254,8 @@ for member in members:
     assert available >= 4, (name, available)
     originals[name] = np.asarray(Image.open(root / f'{name}-native.png').convert('RGBA'))
     plates[name] = plate
+    if name in snow_road_ports:
+        assert sha(file) == snow_road_ports[name]['masterSha256']
     registered.append(dict(member=name, master=str(file), sha256=sha(file), sourceRect=rect,
                            capacity=available, nativeBounds=info['nativeAlphaBounds']))
 
@@ -166,13 +265,15 @@ palette = {}
 material_corrections = {}
 for member in members:
     name, info = member['member'], layout[member['member']]
+    if name in urban_ground_geometry or name in accepted_road_geometry:
+        continue
     a = info['nativeAlphaBounds']
     native = originals[name][a[1]:a[3], a[0]:a[2]]
     rgb = native[..., :3].astype(float)
     active = native[..., 3] > 0
     projected = np.asarray(Image.fromarray(plates[name]).resize((a[2] - a[0], a[3] - a[1]), Image.Resampling.LANCZOS)).astype(float)
     regions = {'surface': active}
-    if member['setIndex'] in [12, 21, 49, 76]:
+    if member['setIndex'] in [12, 21, 49, 76] and name not in continuous_authored_rgb and name not in shore_geometry:
         deep = active & (rgb[..., 2] > rgb[..., 1] + 8) & (rgb[..., 2] > rgb[..., 0] + 5)
         shallow = active & (rgb[..., 1] > rgb[..., 0] + 4) & ~deep
         regions = {'deep-water': deep, 'shallow-water': shallow, 'other': active & ~deep & ~shallow}
@@ -470,11 +571,34 @@ pool_water_support = {}
 
 
 def assembly(name, density):
+    if name in accepted_road_geometry:
+        material_corrections.setdefault(name, {})['sourcePinnedAcceptedRoadGeometry'] = dict(
+            **profile['sourcePinnedAcceptedRoadGeometry'],
+            registration='Original curb direction, cap and median phase with exact independent accepted material pixels; no original RGB texture, geometry or alpha changes')
+        return render_accepted_road(accepted_road_geometry[name], accepted_road_materials, density)
+    if name in shore_geometry:
+        material_corrections.setdefault(name, {})['sourcePinnedShoreMaterials'] = dict(
+            **profile['sourcePinnedShoreMaterials'][name],
+            registration='Each independently sampled authored mother meets the exact accepted density-specific sea material at continuous original sea contacts. No source RGB texture or shape warping is rendered.')
+        return render_shore(shore_geometry[name], shore_plates[name], shore_water, density, shore_land)
+    if name in urban_ground_geometry:
+        material_corrections.setdefault(name, {})['sourcePinnedUrbanGroundMaterials'] = dict(
+            sourceSha256=profile['sourcePinnedUrbanGroundMaterials'][name]['sourceSha256'],
+            geometrySha256=profile['sourcePinnedUrbanGroundMaterials'][name]['geometrySha256'],
+            registration='Continuous original material boundaries and independent authored surfaces; native pixel RGB is never restored as texture')
+        materials = (urban_ground_materials['members'][name]
+            if urban_ground_materials.get('schema') == 'accepted-native-density-regions-v1'
+            else urban_ground_materials)
+        return render_urban_ground(urban_ground_geometry[name], materials, density,
+            urban_ground_materials.get('contourGuard'))
     info = layout[name]
     a = info['nativeAlphaBounds']
     rgb = np.zeros((info['bounds'][3] * density, info['bounds'][2] * density, 3), np.uint8)
     target_size = ((a[2] - a[0]) * density, (a[3] - a[1]) * density)
-    sampled = independently_sample(plates[name], target_size).copy()
+    sampled = (sample_temperate_road(plates[name], a, density, temperate_roads[name]['fields'])
+               if name in temperate_roads else
+               sample_snow_road_ports(plates[name], originals[name], a, density, snow_road_ports[name])
+               if name in snow_road_ports else independently_sample(plates[name], target_size).copy())
     if name in red_paving:
         region = red_paving[name]
         mask = np.repeat(np.repeat(region['mask'], density, 0), density, 1)
@@ -482,6 +606,53 @@ def assembly(name, density):
         sampled[mask] = alternate[mask]
     rgb[a[1] * density:a[3] * density, a[0] * density:a[2] * density] = sampled
     native = originals[name]
+    if name in continuous_authored_rgb:
+        if name in temperate_roads:
+            rgb = render_temperate_road_materials(rgb, native, temperate_roads[name], temperate_road_materials, density)
+            material_corrections.setdefault(name, {})['sourcePinnedTemperateRoadPortMaterials'] = dict(
+                **profile['sourcePinnedTemperateRoadPortMaterials'],
+                mappedDensity=temperate_roads[name]['mappedDensity'],
+                registration='Immutable mother UV ports and qualified independent grass/soil fields; original geometry and alpha remain')
+        if snow_road_light:
+            colors = snow_road_light[str(density)] if isinstance(snow_road_light, dict) else None
+            rgb, evidence = register_material_light(rgb, native, colors)
+            material_corrections.setdefault(name, {})['sourcePinnedSnowRoadMaterialLight'] = evidence
+        if snow_road_earth:
+            rgb = compose_earth_material(rgb, snow_road_earth, density, native, name)
+            material_corrections.setdefault(name, {})['sourcePinnedSnowRoadEarthMaterial'] = dict(
+                **profile['sourcePinnedSnowRoadEarthMaterial'],
+                registration='Qualified independent earth detail with genuine authored light; Snow, original road roles, geometry and alpha remain')
+        if snow_light_key:
+            light = profile[snow_light_key]
+            assert light['members'][name] == continuous_authored_rgb[name]
+            rgb, evidence = register_snow_planar_photometry(rgb, native, degree=light['degree'])
+            material_corrections.setdefault(name, {})[snow_light_key] = evidence
+        material_corrections.setdefault(name, {})['continuousAuthoredRgb'] = dict(
+            sourceSha256=continuous_authored_rgb[name],
+            registration='Independent authored RGB throughout the unchanged native footprint; no retail border or subtile RGB restoration')
+        if name in snow_road_ports:
+            material_corrections[name]['sourcePinnedSnowRoadRgbPorts'] = dict(
+                **profile['sourcePinnedSnowRoadRgbPorts'],
+                geometryModified=False, originalRgbRendered=False, motherPixelsModified=False,
+                registration='Source-pinned tangential UV registration at original road ports; each density independently samples the unchanged authored mother')
+        if name in beach_masks:
+            material_corrections[name]['sourcePinnedCoastalBeach'] = dict(
+                **profile['sourcePinnedCoastalBeach'],
+                registration='Shared independent-density beach material on original zero-height floor; visible extra and nonplanar main wall pixels retain exact authored RGB')
+            rgb = render_coastal_beach(rgb, beach_masks[name], beach_land, density)
+        if name in coastal_masks:
+            material_corrections[name]['sourcePinnedCoastalSea'] = dict(
+                **profile['sourcePinnedCoastalSea'],
+                registration='Original height-zero floor ownership and exact accepted independent-density sea RGB; no original RGB texture is restored')
+            rgb = render_coastal_sea(rgb, coastal_masks[name], coastal_water, density)
+        if bridge_paint and name in bridge_paint['models']:
+            material_corrections[name]['sourcePinnedBridgeRoadPaint'] = dict(
+                **profile['sourcePinnedBridgeRoadPaint'], geometryModified=False,
+                originalRgbRendered=False, motherPixelsModified=False,
+                registration='Continuous source-plane analytic paint inside exact raised-road main diamonds')
+            native = next(member['native'] for member in members if member['member'] == name)
+            rgb = reconstruct_bridge_paint(rgb, native, info, density, bridge_paint)
+        return rgb
     if name in continuous_roads:
         material_corrections.setdefault(name, {})['continuousUrbanRoads'] = dict(
             **continuous_roads[name],
@@ -554,6 +725,10 @@ def assembly(name, density):
                 sample_diffuse_rgb(native, target) if name in snow_diffuse_contacts else
                 np.asarray(Image.fromarray(native[..., :3]).resize(target, Image.Resampling.NEAREST)))
     result = np.uint8(np.clip(rgb.astype(float) * (1 - weight[..., None]) + original * weight[..., None], 0, 255))
+    if source.get('theater') == 'LUNAR' and name in reconstructed:
+        # New Lunar surfaces use authored RGB across the whole native footprint.
+        # Restoring sampled retail borders would leave a visible pixel grid.
+        result = rgb.copy()
     if name in coast_materials:
         result = rgb.copy()
         policy_key = ('nativeTheaterStructureMaterials' if name in theater_structure_materials else
@@ -667,7 +842,7 @@ if replaced_groups:
     previous_members = {member['member']: member for group in replaced_groups for member in group['members']}
     for member in members:
         previous = previous_members[member['member']]
-        assert previous['sourceHashes'] == {edition: member['native']['sha256'] for edition in ['ra2', 'yr']}
+        assert previous['sourceHashes'] == {edition: member['native']['sha256'] for edition in source_editions}
         assert previous['images'] == [{key: image[key] for key in metadata_keys}
             for image in member['native']['images']], 'Material correction must preserve native metadata.'
 
@@ -706,7 +881,7 @@ for identity in wanted:
     if pending:
         chunks.append(pending)
     expanded_groups.extend((f'{identity}-part{index:02d}', chunk) for index, chunk in enumerate(chunks, 1))
-assert len(base['groups']) + len(expanded_groups) <= args.max_groups <= 64
+assert len(base['groups']) + len(expanded_groups) <= args.max_groups <= 256
 destination = Path('.local/terrain-packs') / args.revision
 destination.mkdir(parents=True, exist_ok=False)
 evidence = root / args.revision
@@ -721,19 +896,33 @@ for group in manifest['groups']:
     for variant in group['variants']:
         original = base_root / variant['file']
         assert sha(original) == variant['sha256']
-        with (destination / variant['file']).open('xb') as stream:
-            stream.write(original.read_bytes())
+        if args.link_accepted_atlases:
+            os.link(original, destination / variant['file'])
+        else:
+            with (destination / variant['file']).open('xb') as stream:
+                stream.write(original.read_bytes())
 new_atlas_bytes = defaultdict(int)
 for identity, selected in expanded_groups:
     declared = []
     for member in selected:
         native = member['native']
-        declared.append(dict(member=member['member'], sourceHashes={'ra2': native['sha256'], 'yr': native['sha256']},
+        declared.append(dict(member=member['member'], sourceHashes={edition: native['sha256'] for edition in source_editions},
                              images=[{key: image[key] for key in metadata_keys} for image in native['images']]))
     assert selected, f'Empty resource group: {identity}'
     group = dict(id=args.group_prefix + '-' + identity, scope='COMPLETE_REUSABLE_NATIVE_RESOURCE_GROUP', members=declared, variants=[])
     if reconstructed:
         group['contourReconstruction'] = CONTOUR_POLICY
+    coherent_masks = {}
+    if reconstructed and continuous_authored_rgb:
+        group['coherentMemberExtraContours'] = COHERENT_POLICY
+        if exposed_rock:
+            group['sourcePinnedExposedRockContours'] = dict(policy=ROCK_POLICY, members=exposed_rock)
+        if snow_ground:
+            group['sourcePinnedSnowRampGroundContacts'] = snow_ground
+        for member in selected:
+            name = member['member']
+            coherent_masks[name] = native_member_mask(member['native'], layout[name], prepared)
+            assert np.array_equal(coherent_masks[name], originals[name][..., 3] > 0)
     for density in [2, 4]:
         frames = []
         for member in selected:
@@ -750,6 +939,12 @@ for identity, selected in expanded_groups:
                     rect = next(part['rect'] for part in info['parts'] if part['subTile'] == image['subTile'])
                     x, y, w, h = [n * density for n in rect]
                     rgb = extrude(whole[y:y + h, x:x + w], expected[..., 3] > 0)
+                    rgb = retain_bridge_main_rgb(rgb, whole[y:y+h, x:x+w], expected[..., 3],
+                        image, density, bridge_paint)
+                    if accepted_road_geometry.get(name, {}).get('retainTransparentMainRgb'):
+                        assert not image['hasExtraData'] and image['offset'] == [0, 0]
+                        assert image['logical'] == [60, 30]
+                        rgb = whole[y:y+h, x:x+w].copy()
                     if name in reconstructed:
                         # The mother provides all visible material detail. Do not
                         # restore native pixel RGB or per-cell photometry at cuts.
@@ -772,7 +967,10 @@ for identity, selected in expanded_groups:
                         if residue:
                             material_corrections.setdefault(name, {}).setdefault('removedCalibrationMattePixels', {})[
                                 str(density) + ':' + str(image['subTile'])] = residue
-                    alpha = extra_alpha(np.asarray(original), image, density) if name in reconstructed else expected[..., 3]
+                    alpha = (coherent_extra_alpha(np.asarray(original), image, density, coherent_masks[name], rect,
+                                                  exposed_rock=name in exposed_rock, snow_ground=bool(snow_ground))
+                             if name in coherent_masks else extra_alpha(np.asarray(original), image, density)
+                             if name in reconstructed else expected[..., 3])
                     frame = Image.fromarray(np.dstack([rgb, alpha]))
                 frames.append(frame)
         width, x, y, row, rects = (2048 if density == 2 else 4096), 2, 2, 0, []
@@ -800,6 +998,7 @@ with (destination / 'manifest.json').open('x') as stream:
 pointer = dict(schemaVersion=1, revision=args.revision, sha256=sha(destination / 'manifest.json'))
 recipe = dict(schema=args.schema, pack=pointer, acceptedBase=base_pointer,
               acceptedAtlases='Exact unaffected accepted base bytes; no re-export',
+              acceptedAtlasStorage='HARD_LINKED_UNCHANGED' if args.link_accepted_atlases else 'COPIED_UNCHANGED',
               authorizedReplacementGroups=[dict(id=group['id'], members=[member['member']
                   for member in group['members']], variants=group['variants']) for group in replaced_groups],
               groups=[identity for identity, _ in expanded_groups],

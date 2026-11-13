@@ -27,11 +27,13 @@ export class CountryRules {
     private veteranAircraft: string[];
     private veteranInfantry: string[];
     private veteranUnits: string[];
+    public parentCountry?: string;
     constructor(id: string) {
         this.id = id;
     }
     readIni(ini: any): CountryRules {
         this.name = ini.name;
+        this.parentCountry = ini.getString('ParentCountry') || undefined;
         this.uiName = ini.getString("UIName");
         this.uiTooltip = ini.getString("UITooltip") || tooltipMap.get(this.name);
         const sideStr = ini.getString("Side");

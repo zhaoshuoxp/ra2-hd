@@ -10,19 +10,21 @@
 
 ## 项目介绍
 
-基于 TypeScript、React、Three.js 和 Electron 实现的《命令与征服：红色警戒 2》及《尤里的复仇》离线桌面高清重制项目。在 macOS 和 Windows 上提供本地 AI 遭遇战，高清化三阵营美术、地图环境和界面，同时以保留原版玩法规则和等距视角表现为兼容目标。
+基于 TypeScript、React、Three.js 和 Electron 实现的《命令与征服：红色警戒 2》及《尤里的复仇》离线桌面高清重制项目。提供本地 AI 遭遇战与双版本原版战役，高清化三阵营美术、地图环境、界面和剧情影片，同时以保留原版玩法规则和等距视角表现为兼容目标。
 
 ### 参考项目与本项目实现
 
 代码基于 [huangkaoya/ts-redalert2](https://github.com/huangkaoya/ts-redalert2)，此前仓库地址为 `huangkaoya/redalert2`。该项目说明其来源是对 RA2WEB（[Chrono Divide](https://chronodivide.com/) 中文改编版）的分析；Chrono Divide 是使用网页技术重现红警 2 的项目。
 
-本项目在这一基础上实现双版本离线游戏、高清资源管线、完整遭遇战地图环境覆盖、本地化桌面界面和本地资源打包。TypeScript 负责游戏与资源逻辑，React 构建界面，Three.js 渲染战场，Electron 提供桌面窗口和本地资源访问。游戏通过这一引擎运行，不会启动或修改原版 Windows 游戏可执行文件。
+本项目在这一基础上实现双版本离线游戏、战役流程与选关、高清资源管线、遭遇战和战役地图环境、本地化桌面界面、存档及本地资源打包。TypeScript 负责游戏与资源逻辑，React 构建界面，Three.js 渲染战场，Electron 提供桌面窗口和本地资源访问。游戏通过这一引擎运行，不会启动或修改原版 Windows 游戏可执行文件。
 
 高清化以改善画面为重点，不为放置更大的美术而改变单位占地、建筑位置、移动距离或战斗规则。引擎兼容性、AI 行为与美术还原是不同问题；内置 AI 并不是原版游戏可执行文件中的 AI。
 
 ### 游戏体验
 
 - **双版本切换：**选择红警 2 或尤里的复仇，使用对应阵营、单位、建筑和地图。
+- **原版战役：**红警 2 苏军 12 关、盟军 12 关、训练 2 关；尤里的复仇苏军和盟军各 7 关。支持选关、三种难度、存档读档、任务结算和继续下一关。
+- **高清剧情影片：**接入 136 个影片身份，覆盖全屏过场和雷达区通讯，保留原版影片切换与回退。
 - **离线遭遇战：**对战多个 AI，在地图出生点数量限制内选择阵营、队伍和玩家位置；所有支持的地图统一使用标准遭遇战设置。
 - **原图、2X 与 4X：**可选择原版画面或高清资源，高清资源组无法完整加载时提供回退。
 - **稳定的显示尺度：**渲染分辨率与逻辑显示尺寸分开。在同一显示器、相同窗口视口下，提高输出分辨率会增加细节，不会缩小单位和界面或改变地图可视范围；窗口大小及宽高比变化可以改变可视面积。
@@ -68,7 +70,7 @@
 - macOS：`~/Library/Application Support/Red Alert 2 HD`
 - Windows：`%APPDATA%/Red Alert 2 HD`
 
-移动或更换应用时，设置保留在用户数据目录。安装好本地资源后，不需要在线账号或运行时下载。macOS 是主要验证平台；提供 Windows 程序包，但新整合版本的性能与兼容性仍需 Windows 实机验证。不支持 Intel Mac。
+移动或更换应用时，设置保留在用户数据目录。安装好本地资源后，不需要在线账号或运行时下载。macOS 是主要验证平台；提供 Windows 程序包，但新整合版本的性能与兼容性仍需 Windows 实机验证。不支持 Intel Mac。大规模对局的稳定 60 FPS 尚未达到，后续性能开发已暂停。
 
 ### 源码与开发
 
@@ -87,7 +89,7 @@ bun run build
 
 ### 范围与权利说明
 
-当前可玩内容以离线遭遇战为主。战役运行、战役影片、局域网和在线多人游戏尚未启用，预留菜单不表示这些模式已经实现。原版玩法是兼容目标，不表示与原版引擎完全等价。
+当前可玩内容包括离线遭遇战和双版本原版战役。局域网和在线多人游戏尚未启用。原版玩法是兼容目标，不表示与原版引擎完全等价。
 
 本项目为非官方项目，与 Electronic Arts 或 Chrono Divide 团队没有隶属关系。命令与征服、红警 2、尤里的复仇及其原始资源的权利属于各自权利人。源码备份不包含原版游戏归档；包含本地导入游戏数据的私人完整包不作为公开分发资源包。
 
@@ -112,6 +114,8 @@ The emphasis is on improving the game's appearance without changing unit footpri
 ## Playing experience
 
 - **Two editions:** select Red Alert 2 or Yuri's Revenge, with their corresponding factions, units, buildings and maps.
+- **Original campaigns:** 12 Soviet, 12 Allied and two training missions in Red Alert 2, plus seven Soviet and seven Allied missions in Yuri's Revenge. Mission selection, three difficulties, saves, outcomes and continuing to the next mission are supported.
+- **HD cinematics:** 136 movie identities cover full-screen sequences and radar communications, with Original selection and fallback.
 - **Offline skirmish:** play against multiple AI opponents, choosing sides, teams and player slots within each map's starting-position limits. All supported maps use one standard skirmish setup.
 - **Original, 2X and 4X graphics:** choose original artwork or higher-density resources, with fallback when an HD resource family cannot be loaded.
 - **Stable display scale:** rendering resolution and logical presentation are separate. On the same display and viewport, increasing output resolution adds detail without shrinking units and interface elements or changing the visible battlefield. Different window sizes and aspect ratios can reveal different amounts of the map.
@@ -157,7 +161,7 @@ The common resource pack is platform-independent and can be split into separate 
 - macOS: `~/Library/Application Support/Red Alert 2 HD`
 - Windows: `%APPDATA%/Red Alert 2 HD`
 
-Settings remain in the user-data directory when the application is moved or replaced. No online account or runtime resource download is required once the local resources are installed. macOS is the primary validation platform; Windows packages are available, but performance and compatibility of a newly combined build require native Windows testing. Intel Macs are outside the supported target.
+Settings remain in the user-data directory when the application is moved or replaced. No online account or runtime resource download is required once the local resources are installed. macOS is the primary validation platform; Windows packages are available, but performance and compatibility of a newly combined build require native Windows testing. Stable 60 FPS under the heavy-match workload remains unachieved; further performance work is paused. Intel Macs are outside the supported target.
 
 ## Source checkout and development
 
@@ -176,7 +180,7 @@ With the required local resources imported and registered, `bun run start:offlin
 
 ## Scope and attribution
 
-The playable focus is offline skirmish. Campaign execution, campaign movies, LAN and online multiplayer are not enabled; reserved menu entries do not indicate those modes are implemented. The original gameplay is the compatibility target, not a claim of complete equivalence with the retail engine.
+Playable content includes offline skirmish and both editions' original campaigns. LAN and online multiplayer remain disabled. The original gameplay is the compatibility target, not a claim of complete equivalence with the retail engine.
 
 This is an unofficial project, unaffiliated with Electronic Arts or the Chrono Divide team. Command & Conquer, Red Alert 2, Yuri's Revenge and their original assets belong to their respective rights holders. Original game archives are not included in this source backup; private complete packages containing imported game data are not public redistribution packages.
 

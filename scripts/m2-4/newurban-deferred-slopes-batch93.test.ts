@@ -17,15 +17,16 @@ const files = names.map(name => new TmpFile(resolveMember(tree, name).file));
 const originalFetch = globalThis.fetch, originalVfs = Engine.vfs;
 afterEach(() => { globalThis.fetch = originalFetch; Engine.vfs = originalVfs; });
 
-for (const density of [2, 4] as const) test(`Unresolved NewUrban slopes retain complete Original at ${density}X`, async () => {
-    expect(manifest.deferredSources.members.toSorted()).toEqual(names);
-    expect(manifest.groups.flatMap((g: any) => g.members).some((m: any) => names.includes(m.member))).toBe(false);
+for (const density of [2, 4] as const) test(`NewUrban slopes with deliberately omitted HD groups retain complete Original at ${density}X`, async () => {
+    for (const name of names) expect(manifest.groups.some((g: any) => g.members.some((m: any) => m.member === name))).toBe(true);
+    const omitted = { ...manifest, groups: manifest.groups.filter((g: any) =>
+        !g.members.some((m: any) => names.includes(m.member))) };
     const requested: string[] = [];
     Engine.vfs = {} as any;
     globalThis.fetch = (async (url: any) => {
         requested.push(String(url));
         if (!String(url).endsWith('/selection.json')) throw Error('No deferred HD payload may be requested');
-        return Response.json(manifest);
+        return Response.json(omitted);
     }) as any;
     const theater = { type: TheaterType.NewUrban, tileSets: {
         readMaxTileNum: () => files.length, getTile: (index: number) => ({ files: [files[index]] }),

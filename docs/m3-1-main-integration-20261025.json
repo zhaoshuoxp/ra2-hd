@@ -1,0 +1,142 @@
+{
+  "status": "PASS_ACCEPTED_M31_INTEGRATED_UPDATED_MAIN_AND_SCOPED_CLEANUP_COMPLETE",
+  "date": "2026-10-25",
+  "canonicalMain": "/Users/Aone/RA2remaster/ra2-hd",
+  "acceptedTask": "e8b3f79bb18b079cb5f9eef611b5ffa4760c991f",
+  "updatedMainBeforeMerge": "7ae771edbc8eb6edd309190897c4a760274ce64c",
+  "merge": "12fe4b4e0c1ff7d741f8aa74eea1541443d7db5d",
+  "runtimeFix": "c738af56f786171d01ba286cc0b359aa8f30ec35",
+  "developmentEntryFix": "1d776564f4f89ab48a6c0d72e0ac4b18563bd1b6",
+  "history": "/Users/Aone/RA2remaster/project-history/m3-1-accepted-main-20261025",
+  "verification": {
+    "status": "PASS_SCOPED_MAIN_INTEGRATION_MAC_VERIFICATION",
+    "runtimeSource": "c738af56f786171d01ba286cc0b359aa8f30ec35",
+    "developmentEntrySource": "1d776564f4f89ab48a6c0d72e0ac4b18563bd1b6",
+    "focusedTests": {
+      "pass": 104,
+      "fail": 0,
+      "assertions": 13791,
+      "files": 31,
+      "raw": "focused-tests-main-final.log"
+    },
+    "typecheck": "PASS",
+    "native": {
+      "main-development-fresh-r2": {
+        "status": "PASS_MAIN_DEVELOPMENT_ENTRY_CAMPAIGN_HD_AND_CURRENT_TERRAIN_WITH_UNCHANGED_PROFILE_NAME",
+        "errors": 0,
+        "report": "Evidence/integration-manifest.json#native-fixed/main-development-fresh-r2/report.json"
+      },
+      "naval-yr": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "errors": 0,
+        "report": "Evidence/integration-manifest.json#native-fixed/naval-yr/report.json"
+      },
+      "skirmish-yr": {
+        "status": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+        "errors": 0,
+        "report": "Evidence/integration-manifest.json#native-fixed/skirmish-yr/report.json"
+      },
+      "naval-ra2": {
+        "status": "PASS_SELECTED_NATIVE_CASES",
+        "errors": 0,
+        "report": "Evidence/integration-manifest.json#native-fixed/naval-ra2/report.json"
+      },
+      "skirmish-ra2": {
+        "status": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+        "errors": 0,
+        "report": "Evidence/integration-manifest.json#native-fixed/skirmish-ra2/report.json"
+      },
+      "main-development-r2": {
+        "status": "PASS_MAIN_DEVELOPMENT_ENTRY_CAMPAIGN_HD_AND_CURRENT_TERRAIN_WITH_UNCHANGED_PROFILE_NAME",
+        "errors": 0,
+        "report": "Evidence/integration-manifest.json#native-fixed/main-development-r2/report.json"
+      },
+      "campaign-saves": {
+        "status": "PASS_NATIVE_CAMPAIGN_NAMED_SAVE_LOAD_RESTART_REPLACE_DELETE_AND_LEGACY_COMPATIBILITY",
+        "errors": 0,
+        "report": "Evidence/integration-manifest.json#native-fixed/campaign-saves/report.json"
+      },
+      "boat-hulls-4x": {
+        "status": "PASS_NATIVE_NAVAL_HEADINGS_AND_WATERLINE",
+        "errors": 0,
+        "report": "Evidence/integration-manifest.json#native-fixed/boat-hulls-4x/report.json"
+      },
+      "opening-native": {
+        "status": "PASS_ORIGINAL_SCRIPTED_FLAG_CHANGE_AND_MATCHED_3600_TICK_ORIGINAL_2X_4X_OPENING",
+        "errors": 0,
+        "report": "Evidence/integration-manifest.json#native-fixed/opening-native/report.json"
+      }
+    },
+    "failedPredecessors": {
+      "campaignRestore": "Menu pause drained an extra tick; observed 4063 instead of 4062, repaired in c738af56.",
+      "developmentAllowlist": "Seven existing public images were omitted; repaired in 1d776564.",
+      "focusedWithoutPreload": "Legacy Three facade was not installed; final run uses browser preload."
+    },
+    "hostSuite": {
+      "pass": 982,
+      "failedCases": 182,
+      "loadErrors": 11,
+      "skipped": 0,
+      "processErrors": 0
+    },
+    "baselineFailureComparison": {
+      "file": "baseline-failure-comparison.json",
+      "noNewFailingCaseNames": true,
+      "fullSuiteAcceptance": false
+    },
+    "developmentPayload": {
+      "matchedNativeWebFiles": 215,
+      "allowlistFiles": 208
+    },
+    "platform": {
+      "mac": "PASS_SCOPED_NATIVE",
+      "windows": "NOT_RUN_ON_THIS_MAC",
+      "userAcceptance": "M3.1 through R8 accepted; native combined-main evidence remains separately identified."
+    }
+  },
+  "resources": {
+    "addedFiles": 2393,
+    "immutablePackFiles": 2364,
+    "campaignFiles": 29,
+    "overwrittenExistingPackFiles": 0,
+    "changedExistingSelector": "environment-urban-selection.json",
+    "combinedPlanFiles": 14070,
+    "metadataOverrides": 0,
+    "mainNewUrban": "newurban-road-markings-v5",
+    "mainDesert": "desert-road-markings-v5"
+  },
+  "retainedEvidence": {
+    "taskPaths": 3486,
+    "taskUniqueObjects": 1918,
+    "freshMainPaths": 250,
+    "freshMainUniqueObjects": 184,
+    "indexes": [
+      "Evidence/manifest.json",
+      "Evidence/integration-manifest.json"
+    ]
+  },
+  "cleanup": {
+    "status": "COMPLETE_VERIFIED",
+    "receipt": "cleanup-result.json",
+    "scope": [
+      "retired M3.1 worktree and merged task branch",
+      "main .artifacts/m3-1-main-integration derived test builds/profiles"
+    ],
+    "desktopR8": "ABSENT_AT_PREFLIGHT_NO_DESKTOP_MUTATION",
+    "realProfiles": "PRESERVE_UNCHANGED",
+    "protectedRecords": 48695,
+    "hashedFiles": 28488,
+    "existingProtectedFilesChangedDuringCleanup": 0,
+    "activeWorktrees": 1,
+    "localBranches": [
+      "main"
+    ],
+    "observedFreeSpaceIncreaseBytes": 209006493696,
+    "retainedVerifiedObjects": 2035,
+    "postCleanupMainStartup": "PASS",
+    "postCleanupRelatedTests": "104_PASS_0_FAIL"
+  },
+  "next": "Plan the next mission in the main conversation; do not start it automatically.",
+  "remotePush": "NOT_REQUESTED_NOT_PERFORMED",
+  "newPackage": "NOT_REQUESTED_NOT_PRODUCED"
+}

@@ -1,0 +1,67 @@
+; Standalone compatibility fixture. This is not an original campaign mission.
+; It uses original Urban terrain0, original rules, normal garrison entry and combat.
+[Basic]
+Name=Specialized occupied Evict111 compatibility scene
+NewINIFormat=4
+Player=Player House
+IgnoreGlobalAITriggers=yes
+Theme=No theme
+Intro=<none>
+Brief=<none>
+Win=<none>
+Lose=<none>
+[Map]
+Theater=URBAN
+Size=0,0,48,48
+LocalSize=5,5,38,36
+[IsoMapPack5]
+0=AAAAAA==
+[Overlay]
+[Waypoints]
+0=48040
+[Houses]
+0=Player House
+1=Enemy House
+2=Civie1 House
+[Player House]
+Country=Americans
+PlayerControl=yes
+Allies=Player House,Civie1 House
+Credits=1000
+TechLevel=10
+IQ=0
+Edge=South
+Color=DarkBlue
+[Enemy House]
+Country=Russians
+Allies=Enemy House
+Credits=0
+TechLevel=10
+IQ=0
+Edge=North
+Color=DarkRed
+[Civie1 House]
+Country=Americans
+Allies=Player House,Civie1 House
+Credits=0
+TechLevel=1
+IQ=0
+Color=Grey
+[Triggers]
+EV=Enemy House,<none>,Evict after genuine factory loss,0,1,1,1,0
+[Events]
+EV=1,17,0,0
+[Actions]
+EV=1,111,0,0,0,0,0,0,A
+[Tags]
+TG=0,Occupied source-compatible building,EV
+[Structures]
+0=Civie1 House,CANEWY01,256,46,45,0,TG,1,0,1,0,0,None,None,None,0,0
+1=Enemy House,NAHAND,256,50,52,0,None,1,0,1,0,0,None,None,None,0,0
+2=Player House,GACNST,256,38,51,0,None,1,0,1,0,0,None,None,None,0,0
+[Units]
+0=Player House,MTNK,256,45,54,0,Guard,None,0,-1,0,-1,1,1
+1=Player House,MTNK,256,44,54,0,Guard,None,0,-1,0,-1,1,1
+[Infantry]
+0=Player House,E1,256,44,46,0,Guard,0,None,0,-1,0,-1,1,0
+1=Player House,E1,256,44,47,0,Guard,0,None,0,-1,0,-1,1,0

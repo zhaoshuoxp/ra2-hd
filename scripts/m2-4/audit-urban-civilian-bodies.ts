@@ -10,9 +10,12 @@ import { resolveMember } from '../../src/offline/retail';
 
 const [prepared, output, contractFile = 'desktop/environment-hd-contract.json'] = process.argv.slice(2);
 assert(prepared && output);
+const donorEdition = process.argv.find(value => value.startsWith('--donor-edition='))?.slice(16);
+assert(!donorEdition || ['ra2', 'yr'].includes(donorEdition));
 const read = (file: string) => JSON.parse(readFileSync(file, 'utf8'));
 const sha = (bytes: Uint8Array) => createHash('sha256').update(bytes).digest('hex');
-const guideFile = path.join(prepared, 'source.json'), native = read(guideFile);
+const guideFile = process.argv.find(value => value.startsWith('--source-file='))?.slice(14)
+    ?? path.join(prepared, 'source.json'), native = read(guideFile);
 const accepted = read(contractFile);
 const top = new Map(['ra2.mix', 'language.mix', 'multi.mix', 'expandmd01.mix', 'langmd.mix', 'ra2md.mix', 'multimd.mix']
     .map(name => [name, readFileSync(`.local/assets/${name.includes('md') ? 'yr' : 'ra2'}/${name}`)]));
@@ -26,7 +29,9 @@ const exactMember = (name: string, expected?: string) => {
 };
 const rows = [];
 for (const source of native.sources) {
-    const familyNames = [...new Set(source.bindings.map((binding: any) => accepted.identities[binding.edition]?.[binding.id]).filter(Boolean))];
+    const bindings = source.bindings ?? [{ edition: 'ra2', id: source.identity }];
+    const familyNames = [...new Set(bindings.map((binding: any) =>
+        accepted.identities[donorEdition ?? binding.edition]?.[binding.id ?? binding.identity]).filter(Boolean))];
     const donorNames = [...new Set(familyNames.flatMap((family: any) => accepted.families[family].members))]
         .filter((name: any) => name === source.member || name.slice(2) === source.member.slice(2));
     const count = source.totalFrames / (source.hasShadow ? 2 : 1);
@@ -38,7 +43,7 @@ for (const source of native.sources) {
     const donorName = donorNames[0] as string, descriptor = accepted.sources[donorName];
     const donorFile = exactMember(donorName, descriptor.sha256);
     assert(donorFile, donorName + ': accepted original source must remain available');
-    const bytes = readFileSync(path.join(prepared, 'native', source.nativeFile));
+    const bytes = readFileSync(path.join(prepared, 'native', source.nativeFile ?? source.member));
     assert.equal(sha(bytes), source.sha256);
     const target = new ShpFile(VirtualFile.fromBytes(bytes, source.member));
     const donor = new ShpFile(donorFile), slots = [];
@@ -47,9 +52,12 @@ for (const source of native.sources) {
         assert.equal(sha(b.imageData), frame.indexSha256);
         const role = descriptor.framePalettes?.[String(slot)];
         const donorPalette = role ?? descriptor.palette;
-        const targetPaletteName = role?.role === 'rubble' ? 'isourb.pal' : source.palette.member;
+        const targetPalette = source.framePalettes?.[String(slot)] ?? source.palette;
+        const targetPaletteName = role?.role === 'rubble' ? source.framePalettes?.[String(slot)]?.member ?? 'isourb.pal'
+            : targetPalette.member;
         const oldPalette = exactMember(donorPalette.member, donorPalette.sha256);
-        const newPalette = exactMember(targetPaletteName, role?.role === 'rubble' ? undefined : source.palette.sha256);
+        const newPalette = exactMember(targetPaletteName,
+            role?.role === 'rubble' && !source.framePalettes?.[String(slot)] ? undefined : targetPalette.sha256);
         assert(oldPalette && newPalette);
         const xPalette = oldPalette.getBytes(), yPalette = newPalette.getBytes();
         const oldOwner = role?.remapable ?? descriptor.remapable;
@@ -70,6 +78,7 @@ for (const source of native.sources) {
         slots.push({ slot, empty: frame.empty, sameGeometry: geometry, differingRenderedPixels: differences,
             differingContactPixels: contactDifferences, differingOwnerPixels: ownerDifferences,
             differingAlphaPixels: alphaDifferences, differingNativeIndices: indexDifferences,
+            nativeIndexSha256: frame.indexSha256, paletteSha256: sha(yPalette),
             role: role?.role ?? 'body', donorPaletteSha256: sha(xPalette), targetPaletteSha256: sha(yPalette),
             status: frame.empty ? 'EXACT_NATIVE_EMPTY_REQUIRED' : exact ? 'ELIGIBLE_EXACT_RENDERED_BODY_DONOR' : 'DISTINCT_BODY_REQUIRES_AUTHORING' });
     }
@@ -82,6 +91,7 @@ const slots = rows.flatMap(row => row.slots ?? []);
 writeFileSync(output, JSON.stringify({ status: 'PASS_READ_ONLY_RENDERED_BODY_COMPARISON_NOT_FAMILY_COVERAGE',
     sourceFile: guideFile, sourceSha256: sha(readFileSync(guideFile)), acceptedContract: contractFile,
     acceptedContractSha256: sha(readFileSync(contractFile)), donorSelectedPack: accepted.selectedPack, rows,
+    explicitDonorEdition: donorEdition,
     eligibleVisibleSlots: slots.filter(row => row.status === 'ELIGIBLE_EXACT_RENDERED_BODY_DONOR').length,
     distinctVisibleSlots: slots.filter(row => row.status === 'DISTINCT_BODY_REQUIRES_AUTHORING').length,
     allBodyMatchGroups: rows.filter(row => row.status === 'ALL_BODY_SLOTS_MATCH_FAMILY_CLOSURE_STILL_REQUIRED').length,

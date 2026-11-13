@@ -5,6 +5,7 @@ import constructionStorageSources from './construction-storage-sources.json' wit
 import fs from 'node:fs/promises';
 import alliedUnits from './allied-unit-contracts.json' with { type: 'json' };
 import yuriUnits from './yuri-unit-contracts.json' with { type: 'json' };
+import campaignNpcs from './yr-campaign-npc-contracts.json' with { type: 'json' };
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 
@@ -96,11 +97,18 @@ export async function validateHdPack(directory, packId, revision, { allowUnavail
     if (manifest.schemaVersion !== 2 || manifest.packId !== packId || manifest.packRevision !== revision
         || !([...Object.values(buildingCoverage), ...Object.values(alliedCoverage), ...Object.values(yuriCoverage)].some(f => f.members.some(m => m.member === manifest.source?.member
             && m.sha256 === manifest.source?.sha256 && m.theater === manifest.source?.theater))
+            || Object.values(campaignNpcs.shp).some(family => family.authoringTheater === manifest.source?.theater
+                && manifest.packId === `yr-task-npc-${family.identity.toLowerCase()}`
+                && JSON.stringify(manifest.rulesIdentities) === JSON.stringify([family.identity])
+                && family.members.some(member => member.member === manifest.source?.member
+                    && member.sourceHash === manifest.source?.sha256
+                    && member.frames === manifest.logical?.frames?.length
+                    && JSON.stringify(member.canvas) === JSON.stringify(manifest.logical?.canvas)))
             || (manifest.source?.theater === 'TEMPERATE' && [...Object.values(alliedUnits.shp), ...Object.values(yuriUnits.shp)].some(family =>
                 family.members.some(member => member.member === manifest.source?.member
                     && member.sourceHash === manifest.source?.sha256)))
             || manifest.source?.member === 'cons.shp' || (manifest.source?.theater === 'TEMPERATE'
-            && ['lunr.shp', 'boris.shp', 'ccomand.shp', 'ptroop.shp', 'schpdepl.shp', 'sqd.shp', 'sqdg.shp', 'dron.shp', 'dronp.shp', 'engineer.shp', 'dog.shp', 'dogp.shp', 'flakt.shp', 'shk.shp', 'ivan.shp', 'civan.shp', 'yuripr.shp', 'yuri.shp', 'trst.shp', 'deso.shp'].includes(manifest.source?.member)
+            && ['arnd.shp', 'stln.shp', 'lunr.shp', 'boris.shp', 'ccomand.shp', 'ptroop.shp', 'schpdepl.shp', 'sqd.shp', 'sqdg.shp', 'dron.shp', 'dronp.shp', 'engineer.shp', 'dog.shp', 'dogp.shp', 'flakt.shp', 'shk.shp', 'ivan.shp', 'civan.shp', 'yuripr.shp', 'yuri.shp', 'trst.shp', 'deso.shp'].includes(manifest.source?.member)
             && ({ 'ccomand.shp': '5aba156dbbf64e84b794a2659216086566caf113cdeab3c1e414bc09cfb4549a', 'ptroop.shp': 'a0344e19daceed8ae1642a58eab79a9dea20829f272e70fe0650b3f781e937ee', 'boris.shp': '00c67236fb55c3992d3bd0ab55279adc058b83aa4105f5cd095ae8b9441db02e', 'schpdepl.shp': 'aaf691e3ba92bb071003005da69ebf02402ab727fb6b2f1d95b9c0050802250a',
                 'sqd.shp': 'dcbac9af11d7d13be98de775ab23deff04116e5d9cc2920887930db2ae6835d2', 'sqdg.shp': 'f75be15eb3b2d63c98966a8787a218aca3b6f975c6d1cc0c1127052835ae144c', 'dron.shp': 'c5d2a3a0b58c664bd5d8cbf033f865588224e6888552c83ec4b44f2b32dd2e94',
                 'dronp.shp': 'ce9a848c52f36abe8f873c6c3efe421373c0cde3f304090a03c3188ecadff161',
@@ -109,6 +117,8 @@ export async function validateHdPack(directory, packId, revision, { allowUnavail
                 'dogp.shp': '9571109f20bddd2ba051bf3ce0eae5071ddfa40275996f631235cc025f18d855',
                 'yuripr.shp': '1c73fa3a7bdce534f4c4d3a6470a974490dccad18ee2da7bca01177aa1098ef9',
                 'lunr.shp': 'f77d9f32a5d48ca1ec983f1be83059f46cb26c0038636e1616ae407de2b35633',
+                'arnd.shp': '463bd4a1102135bb6e98ce5dd2e57d84417ccbbdc9fa05cb92592175565c6dc2',
+                'stln.shp': '22888b61e76b553d17a931962d2b1406e5366db1469205063a71e881f1c175e8',
                 'civan.shp': '48569d57cf5a77fe611a000ea8db14992160d0515d4e4b9bf22c03198c010523',
                 'deso.shp': '7f157a5089a3ec822ae73eb951993a410c8fabc0d1fa839ddb0eed255aabfcc4',
                 'trst.shp': '96a6ff78111593f5435116a0b3f36c1e9d740c72421ca62419282225cacd78db',
@@ -148,7 +158,13 @@ export async function validateHdPack(directory, packId, revision, { allowUnavail
                 && entry.frames === manifest.logical.frames.length);
         const yuriStorage = manifest.packId?.startsWith('yuri-coverage-')
             && Object.values(yuriCoverage).some(entry => entry.members.some(member => member.sha256 === manifest.source.sha256));
-        if (variant.storage !== undefined && (!serialized || (!yuriStorage && !constructionStorage)))
+        const dinosaur = campaignNpcs.shp.DNOB;
+        const dinosaurStorage = manifest.packId === 'yr-task-npc-dnob'
+            && dinosaur?.authoringTheater === manifest.source.theater
+            && dinosaur.members.some(member => member.member === manifest.source.member
+                && member.sourceHash === manifest.source.sha256 && member.frames === manifest.logical.frames.length
+                && JSON.stringify(member.canvas) === JSON.stringify(manifest.logical.canvas));
+        if (variant.storage !== undefined && (!serialized || (!yuriStorage && !constructionStorage && !dinosaurStorage)))
             throw new Error('Unsupported HD storage');
         if (![2, 4].includes(variant.density) || densities.has(variant.density)
             || !Array.isArray(variant.pages) || !variant.pages.length || variant.pages.length > (variant.density === 4 && manifest.source.member === 'ngyard_d.shp' ? 16 : 8)) throw new Error('Invalid HD variant');

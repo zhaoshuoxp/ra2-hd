@@ -1,0 +1,113 @@
+{
+  "schema": "yr-current-feedback-checkpoint-v1",
+  "date": "2026-11-09",
+  "revision": "r5",
+  "status": "TECHNICALLY_QUALIFIED_NATIVE_SOURCE_FROZEN_PACKAGE_PENDING",
+  "originalPlayableMaps": 26,
+  "yrPlayableMaps": 14,
+  "semanticsVersion": 48,
+  "simulationChanged": false,
+  "plannedWorldArtMaterialWaits": [],
+  "scope": [
+    "Pause objectives without notification history",
+    "Coherent Soviet07 destruction animation",
+    "Prior Lunar material restored and original voxel slope volume retained",
+    "Original CATIME01 fixed red verified"
+  ],
+  "acceptedOtherItems": {
+    "file": "docs/yr-campaign-feedback-acceptance-20261109.json",
+    "sha256": "ad7ed2a6b8aa9290c934888f9497e1d825d8aac3873fa788ce8e122b4aa4b24d"
+  },
+  "originalRed": {
+    "file": "docs/yr-campaign-catime01-original-red-20261109.json",
+    "sha256": "a1ce6bb1c439489ce68a3d5aaf6caab241e760860cddd0d8db5134b5f382a379"
+  },
+  "lunar": {
+    "file": "docs/yr-campaign-lunar-rollback-20261109.json",
+    "sha256": "64804e5741a65dabea208b7fbb1ec1d148e5489a44bc4a2a3884e04cb7ff0f8a"
+  },
+  "groundVolume": {
+    "file": "docs/yr-campaign-ground-volume-20261109.json",
+    "sha256": "85f47e226e4e83708a9c6b4980a16387f654573866394bb4903d4b4066bb0425"
+  },
+  "collapse": {
+    "file": "docs/yr-campaign-castle-collapse-continuity-20261109.json",
+    "sha256": "33172d16904de753dd7b08f84d88f9dd106fe409b611a0d87bf246a8e632d758"
+  },
+  "host": {
+    "file": ".artifacts/yr-campaign/feedback-20261109-host-suite-r2/summary.json",
+    "sha256": "aa67cb30dd55d95d1435241dab3ac0dbdaa57774da0d96a2c8d4f2b460858812",
+    "counts": {
+      "pass": 2201,
+      "failedCases": 0,
+      "loadErrors": 0,
+      "skipped": 0,
+      "processErrors": 0
+    },
+    "executions": 320,
+    "omittedFiles": 0
+  },
+  "typecheck": {
+    "status": "PASS",
+    "log": "/private/tmp/ra2-feedback-20261109-typecheck-r3.log"
+  },
+  "native": [
+    {
+      "file": ".artifacts/yr-campaign/pause-objectives-only-native-r1/report.json",
+      "sha256": "2748671391faeaa002a94b586f52297e74e12744d070713c7ad7dc8b9399e713",
+      "status": "PASS_NATIVE_CAMPAIGN_PAUSE_OBJECTIVES_WITHOUT_MESSAGE_HISTORY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/ground-volume-native-2x-r2/report.json",
+      "sha256": "0c5e8fe45332d39815a2af4924a76a25781f1dc38b91ddffbd53cddc0b44d341",
+      "status": "PASS_NATIVE_ORDINARY_MOON_TANK_MOVEMENT_AND_RIGID_HD_SLOPE_SURFACES"
+    },
+    {
+      "file": ".artifacts/yr-campaign/ground-volume-native-4x-r2/report.json",
+      "sha256": "8ffd7a34476ce553c1af1094e5b47661e62e431399c2b0733c0a577765f08241",
+      "status": "PASS_NATIVE_ORDINARY_MOON_TANK_MOVEMENT_AND_RIGID_HD_SLOPE_SURFACES"
+    },
+    {
+      "file": ".artifacts/yr-campaign/generic-volume-mtnk-native-4x-r1/report.json",
+      "sha256": "6b61595b8b7dba89ed76f9aac70348b72aeb17b67c4262d223a68ac3802b0bf9",
+      "status": "PASS_NATIVE_GENERIC_VXL_PROJECTED_VOLUME_ALL_HEADINGS_PITCH_AND_ROLL"
+    },
+    {
+      "file": ".artifacts/yr-campaign/generic-volume-ltnk-native-2x-r1/report.json",
+      "sha256": "9f58eaca0455cb8cc012c9fff28463503f3090f8ca9d9bac7424ddc9f0af8d1d",
+      "status": "PASS_NATIVE_GENERIC_VXL_PROJECTED_VOLUME_ALL_HEADINGS_PITCH_AND_ROLL"
+    },
+    {
+      "file": ".artifacts/yr-campaign/castle-continuity-all87-native-2x-r2/report.json",
+      "sha256": "d739f5a8ef589e8d44831fcea45de9fd7c6a785288913553ba079ef1b4fcb983",
+      "status": "PASS_NATIVE_FROZEN_COMPLETE_SHP_DISPLAY_STATES_AND_BOTH_AXES_HD_DENSITY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/castle-continuity-all87-native-4x-r2/report.json",
+      "sha256": "1e4dc78b15cf8280e4f43bc3b49349579f2e9063f765abc095a2f548bce65266",
+      "status": "PASS_NATIVE_FROZEN_COMPLETE_SHP_DISPLAY_STATES_AND_BOTH_AXES_HD_DENSITY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/castle-continuity-combat-native-4x-r1/report.json",
+      "sha256": "a8af77840860dbe5a90f99d8d7f9bca6ca15eeae831c1b9ca1c084b4f8106819",
+      "status": "PASS_NATIVE_REAL_COMBAT_CASTLE_DESTRUCTION_HD_COLLAPSE_AND_ORIGINAL_VICTORY"
+    }
+  ],
+  "storyHdLoading": "RETAINED_R3",
+  "retainedOriginalQualifications": [
+    "All14 unmodified source45 campaign goal qualifications remain historical.",
+    "Fresh48 targeted and supported-play regressions do not establish all14 new-version unmodified full victories at every difficulty.",
+    "The exact prior Soviet01 missing-cell crash trigger was not reproduced technically; the user passed the correction.",
+    "Original installation includes CnCNet patches. Pristine executable RNG/AI/particle equivalence retains its existing boundary."
+  ],
+  "inheritedR4": "docs/yr-campaign-material-delivery-20261108-r4.json",
+  "retainedMissionQualifications": "All fourteen source45 mission qualifications remain historical. This display/render revision has targeted native regressions; it does not repeat every mission or difficulty.",
+  "oldSaveQualification": "The legitimate post-nuclear Soviet07 checkpoint restores under its recorded policy and ordinary Kirov attacks reach the original victory with the revised collapse.",
+  "originalMapsAndAcceptedArt": "Frozen package preservation is verified independently before delivery. No source maps, accepted statue/bridge, snow, actor paint or construction paint are edited.",
+  "userVisualAcceptance": "PENDING_CURRENT_FOUR_ITEMS",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "physical8And16GiB": "NOT_RUN_ON_THIS_MAC",
+  "realProfilesTouched": false,
+  "localMainOnly": true,
+  "remotePush": false
+}

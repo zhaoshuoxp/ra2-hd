@@ -74,8 +74,9 @@ export class ImageFinder {
         return this.getUnitHdOverride(identity, image);
     }
     getBuildingTurretHd(name: string) {
-        return isSovietBuildingHdFamily(name) || isAlliedBuildingHdFamily(name) || isYuriBuildingHdFamily(name)
-            ? this.sovietBuildingsHd[name]?.turret : undefined;
+        return this.theater.environmentHd?.turrets?.get(name)
+            ?? (isSovietBuildingHdFamily(name) || isAlliedBuildingHdFamily(name) || isYuriBuildingHdFamily(name)
+                ? this.sovietBuildingsHd[name]?.turret : undefined);
     }
     hasWallHdDemand(name: string): boolean {
         const environment = environmentHdContractForTheater(this.theater.type)?.identities[this.edition]?.[name];
@@ -89,6 +90,9 @@ export class ImageFinder {
             publishAlliedBuilding(this.sovietBuildingsHd, name, loaded);
             apply(this.getHdOverride(image));
         }) ?? (() => {});
+    }
+    usesViewportBuildingDemand(name: string): boolean {
+        return !!this.sovietUnitsHd?.viewportBuildingDemand?.has(canonicalAlliedBuildingHdFamily(name));
     }
     bindBuildingHd(name: string, aggregate: { imageIndexes: Map<object, number> }, apply: (override?: HdSpriteOverride) => void) {
         return this.sovietUnitsHd?.bindBuilding?.(canonicalAlliedBuildingHdFamily(name), loaded => {
@@ -106,7 +110,7 @@ export class ImageFinder {
                 const frames = [...aggregate.imageIndexes].flatMap(([image, offset]) =>
                     Array.from({ length: family.get(image)?.frames.length ?? 0 }, (_, nativeFrame) =>
                         ({ image, nativeFrame, offset: offset + nativeFrame })));
-                if ([...family.keys()].some(image => !aggregate.imageIndexes.has(image))) return;
+                if ([...aggregate.imageIndexes.keys()].some(image => !family.has(image))) return;
                 const view = aggregateEnvironmentHd(frames, family);
                 if (view) {
                     const arranged: HdSpriteOverride['frames'] = [];

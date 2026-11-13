@@ -1,0 +1,154 @@
+{
+  "status": "COMPLETE_FAMILY_REGISTERED_NATIVE_AND_USER_REVIEW_PENDING",
+  "family": "yr-task-newurban-caseat01-v1",
+  "mission": {
+    "edition": "yr",
+    "mission": "all03umd.map",
+    "sha256": "b84a2e689cc00f0be064ecbfcd385635ac037f28bf8f72c02b426a0e52ff1547"
+  },
+  "theater": "NEWURBAN",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yr-campaign/task-newurban-caseat01-stage-r1",
+  "preparation": {
+    "status": "PREPARED_NATIVE_REGISTRATION_AND_RUNTIME_PENDING",
+    "recipe": "/Users/Aone/RA2remaster/ra2-hd/docs/campaign-art/yr-v1/task-newurban-caseat01.json",
+    "recipeSha256": "c1de1c6195aea83da9198a2d340ffa4e006c7ae8f2bf79a805b4f517f58d164d",
+    "originalSourceJsonSha256": "3ffebe98d59e65dff65677a4b6e4d3eb2c3d6cbb9622292eca28eae7b59f33cd",
+    "sourceSha256": "d55f2f098fbb3b9399e2d91cd8d92576d9479ca5607578576c487d449e5fd4ce",
+    "masters": [
+      {
+        "slot": 0,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-caseat01/masters-r1/frame-0.png",
+        "sha256": "10b9c0e98bab8dd10417b6d318ac2586fdab394ffaf7d56c4da1745e994a2e79"
+      },
+      {
+        "slot": 1,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-caseat01/masters-r1/frame-1.png",
+        "sha256": "e2b22b2198ca02124e8108529fe2d7e69e95f83cb4cceeb6cc4407875eafb99e"
+      },
+      {
+        "slot": 2,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-caseat01/masters-r1/frame-2.png",
+        "sha256": "b60cf62ea036abcd68bd0e218688829e092f77cffcf6685e6e3b83dd0277867a"
+      },
+      {
+        "slot": 3,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-caseat01/masters-r1/frame-3.png",
+        "sha256": "4f2946baaa95282631d6165e8173b50e219d1e96acf6338ae6b4716e1b8eb451"
+      }
+    ],
+    "directionAuthorization": {
+      "file": "docs/campaign-art/yr-v1/authorization.json",
+      "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+    },
+    "userVisualAcceptance": "PENDING",
+    "qualification": "Only original guides are converted. Authored masters are referenced without copying or modification. Complete state coverage, independent exports, alpha/geometry and runtime acceptance require subsequent verification."
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "040f135f0d571da6968d68b5912e1d9135ed54f66e92e320e8ded0d0b9291bb0",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 8,
+      "pages": 2,
+      "ownerStates": 2,
+      "neutralStates": 6,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 4,
+      "preservedAcceptedDensityFrames": 0
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 2162688,
+      "4": 8585216
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "internalVisualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "packSha256": "040f135f0d571da6968d68b5912e1d9135ed54f66e92e320e8ded0d0b9291bb0",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "inspectedExports": [
+      ".artifacts/yr-campaign/task-newurban-caseat01-stage-r1/inspection/states-2x.png",
+      ".artifacts/yr-campaign/task-newurban-caseat01-stage-r1/inspection/states-4x.png"
+    ],
+    "observations": [
+      "All original normal, damaged, garrison and rubble body states have independently sampled clean authored materials and transparent edges. Source canvas, trim, pivots, separate shadows, original owner/non-owner roles and animation timing remain unchanged.",
+      "Both actual independent density exports were inspected, including thin roof/porch/wire details and broken structural openings. Technical and internal inspection remain separate from user visual acceptance."
+    ],
+    "nativeRuntime": "PENDING",
+    "userVisualAcceptance": "PENDING"
+  },
+  "bundle": {
+    "schema": "campaign-environment-extension-v1",
+    "identity": "yr-task-newurban-caseat01-v1",
+    "familyHash": "9066927a557d633727182bc486031eb111de45961e109c088174e23fff78e464",
+    "mission": "all03umd.map",
+    "theater": "NEWURBAN",
+    "revision": "yr-task-newurban-caseat01-r1",
+    "members": [
+      {
+        "member": "cnseat01.shp",
+        "manifest": "yr-task-newurban-caseat01-r1-cnseat01-shp.json",
+        "sha256": "a8b6bd30ed538cd95969c2c924edd3617fbe280bcd5a98ffdc7d227df893d665"
+      }
+    ],
+    "acceptance": "FAITHFUL_DIRECTION_AUTHORIZED_COMPLETE_NATIVE_RUNTIME_AND_USER_VISUAL_REVIEW_PENDING",
+    "edition": "yr"
+  },
+  "files": [
+    {
+      "name": "yr-task-newurban-caseat01-r1-cnseat01-shp-2-p0-base.png",
+      "bytes": 267528,
+      "sha256": "fac1e2d07bc788a5f919686f56c18df87475305f2d82e6f9e8c270635783c5da",
+      "route": "/local-campaign/yr/all03umd/yr-task-newurban-caseat01-r1-cnseat01-shp-2-p0-base.png"
+    },
+    {
+      "name": "yr-task-newurban-caseat01-r1-cnseat01-shp-2-p0-data.png",
+      "bytes": 11411,
+      "sha256": "d957b0c06906f982b01053f8b5893ae940e70021e0bc7e5473453c41f6291534",
+      "route": "/local-campaign/yr/all03umd/yr-task-newurban-caseat01-r1-cnseat01-shp-2-p0-data.png"
+    },
+    {
+      "name": "yr-task-newurban-caseat01-r1-cnseat01-shp-4-p0-base.png",
+      "bytes": 910956,
+      "sha256": "2b5edcabae1ee1bb814c31f0bb814aeab651a21d2bdb5345a945d33ede0a877e",
+      "route": "/local-campaign/yr/all03umd/yr-task-newurban-caseat01-r1-cnseat01-shp-4-p0-base.png"
+    },
+    {
+      "name": "yr-task-newurban-caseat01-r1-cnseat01-shp-4-p0-data.png",
+      "bytes": 33773,
+      "sha256": "ba9982f05c9ece6ec5edcd6f14efcb9753897a3d424d62c7436d93d820e4638d",
+      "route": "/local-campaign/yr/all03umd/yr-task-newurban-caseat01-r1-cnseat01-shp-4-p0-data.png"
+    },
+    {
+      "name": "yr-task-newurban-caseat01-r1-cnseat01-shp.json",
+      "bytes": 5744,
+      "sha256": "a8b6bd30ed538cd95969c2c924edd3617fbe280bcd5a98ffdc7d227df893d665",
+      "route": "/local-campaign/yr/all03umd/yr-task-newurban-caseat01-r1-cnseat01-shp.json"
+    },
+    {
+      "name": "environment-family-yr-task-newurban-caseat01-r1.json",
+      "bytes": 620,
+      "sha256": "4b4282b64de882cbfa81300badb151c14e863677cf9952527af2b9cad9793e4e",
+      "route": "/local-campaign/yr/all03umd/environment-family-yr-task-newurban-caseat01-r1.json"
+    }
+  ],
+  "contractBeforeSha256": "fc50bb04a23a09c5749bbe909000feb957911a80cf7d7d80cee3f17efc02b367",
+  "contractAfterSha256": "a722c7938f85b2044f8eeb86642df413a52fd994ed49f2a615a6d2f6f55bf926",
+  "existingRootSelectorChanges": {},
+  "acceptedPayloadsReplaced": 0,
+  "ownershipCorrection": null,
+  "artCorrection": null,
+  "bridgeCorrection": null,
+  "policy": "Independent densities, original shadows/state timing and existing fixed budgets; complete-family fallback retained."
+}

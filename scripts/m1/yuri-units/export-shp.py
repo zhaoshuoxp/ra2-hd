@@ -11,6 +11,7 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 from authored_slots import isolated_cells
+from task_npc_ground import source_foot_shadow
 
 parser = argparse.ArgumentParser()
 parser.add_argument('identity')
@@ -20,12 +21,19 @@ parser.add_argument('--member')
 parser.add_argument('--density', type=int, choices=[2, 4], default=2)
 parser.add_argument('--audit-only', action='store_true')
 parser.add_argument('--allow-partial', action='store_true')
+parser.add_argument('--inspect-candidate', action='store_true',
+    help='Export unapproved YR task NPC boards only into isolated density-inspection artifacts')
 args = parser.parse_args()
 work = json.loads(args.worklist.read_text())['families'][args.identity]
 member = next(m for m in work['members'] if not args.member or m['sourceMember'] == args.member)
-batches = [b for b in member['batches'] if b.get('selectedArt') and b.get('visualQa') == 'PASS']
+batches = [b for b in member['batches'] if b.get('selectedArt')
+    and (b.get('visualQa') == 'PASS' or args.inspect_candidate)]
 assert batches and (args.allow_partial or len(batches) == len(member['batches']))
 source = json.loads(Path(member['sourceFile']).read_text())
+if args.inspect_candidate:
+    assert args.allow_partial and args.identity in ['CAML', 'EINS', 'MUMY', 'RMNV', 'PENTGEN', 'DNOB']
+    assert source['schema'] == 'yr-original-task-infantry-slots-v1'
+    assert args.output.resolve().is_relative_to(Path('.artifacts/yr-campaign').resolve())
 args.output.mkdir(parents=True, exist_ok=False)
 density = args.density
 sampling = []
@@ -111,7 +119,10 @@ for batch in batches:
         candidate = Image.new('RGBA', canvas)
         # Preserve indexed ground patches beneath the authored body; never fill body RGB.
         ground = np.zeros((*indices.shape, 4), dtype=np.uint8)
-        ground[..., 3] = (indices == 12).astype(np.uint8) * 255
+        retained_ground = (source_foot_shadow(indices, body)
+            if source.get('schema') == 'yr-original-task-infantry-slots-v1'
+                and args.identity != 'DNOB' else indices == 12)
+        ground[..., 3] = retained_ground.astype(np.uint8) * 255
         native_ground = Image.fromarray(ground).resize((native['width'] * density, native['height'] * density), Image.Resampling.NEAREST)
         candidate.alpha_composite(native_ground, (native['x'] * density, native['y'] * density))
         anchor = (round((native['x'] + (left + right) / 2) * density - sprite.width / 2),
@@ -126,7 +137,9 @@ for batch in batches:
         candidate.save(output)
         frames[n] = {'frame': n, 'path': str(output), 'sha256': sha(output), 'batch': batch['id'],
                      'sourceFrameSha256': native['sha256'], 'scale': scale, 'anchor': anchor,
-                     'nativeBodyBounds': body, 'registration': registration, 'retainedGroundPixels': int((indices == 12).sum())}
+                     'nativeBodyBounds': body, 'registration': registration,
+                     'retainedGroundPixels': int(retained_ground.sum()),
+                     'omittedSourceBodyInkPixels': int(((indices == 12) & ~retained_ground).sum())}
 if args.audit_only:
     report = {'identity': args.identity, 'member': member['sourceMember'], 'density': density,
               'eligible': all(s['availableDensity'] >= density for s in sampling),
@@ -141,7 +154,8 @@ for slot in member['slots']:
         Image.new('RGBA', canvas).save(output)
         frames[n] = {'frame': n, 'path': str(output), 'sha256': sha(output), 'empty': True}
 assert args.allow_partial or sorted(frames) == list(range(member['requiredSlots']))
-manifest = {'status': 'PARTIAL_AUTHORED_SLOT_EXPORT' if args.allow_partial else 'COMPLETE_AUTHORED_SLOT_EXPORT_RUNTIME_PENDING', 'identity': args.identity,
+manifest = {'status': 'CANDIDATE_DENSITY_INSPECTION_ONLY_UNAPPROVED' if args.inspect_candidate
+                else 'PARTIAL_AUTHORED_SLOT_EXPORT' if args.allow_partial else 'COMPLETE_AUTHORED_SLOT_EXPORT_RUNTIME_PENDING', 'identity': args.identity,
             'sourceFile': member['sourceFile'], 'sourceSha256': source['sha256'], 'density': density,
             'frames': [frames[n] for n in sorted(frames)], 'worklistSha256': sha(args.worklist),
             'sourceUse': 'Native registration and shadow only; full authored owner masks are derived independently at packaging; no source body RGB'}

@@ -1,5 +1,6 @@
 import { PointerType } from '@/engine/type/PointerType';
 import { Coords } from '@/game/Coords';
+import { canControlOwner } from '@/game/campaign/CampaignControl';
 import { isNotNullOrUndefined } from '@/util/typeGuard';
 import { EventDispatcher } from '@/util/event';
 import { MoveOrder } from '@/game/order/MoveOrder';
@@ -50,7 +51,7 @@ class SelectAction {
             !this.currentPlayer.isObserver &&
             target.isTechno?.() &&
             !this.game.areFriendly(target, selected[0]) &&
-            selected[0].owner === this.currentPlayer) {
+            canControlOwner(this.currentPlayer, selected[0].owner)) {
             return false;
         }
         return (target.rules.selectable &&
@@ -160,11 +161,11 @@ export class DefaultActionHandler {
         const hoveredObject = hover.gameObject;
         const selectAction = this.selectAction.setForce(force).setTypeSelect(false);
         if (keyboardEvent?.targetedAttackMove) {
-            if (!sourceObject || sourceObject.owner !== this.currentPlayer || sourceObject.rules.spawned) return;
+            if (!sourceObject || !canControlOwner(this.currentPlayer, sourceObject.owner) || sourceObject.rules.spawned) return;
             const target = this.attackMoveAction && this.createTargetForAction(hover, sourceObject, this.attackMoveAction);
             return target && this.attackMoveAction.set(sourceObject, target).isValid() ? this.attackMoveAction : undefined;
         }
-        if (!sourceObject || sourceObject.owner !== this.currentPlayer || sourceObject.rules.spawned) {
+        if (!sourceObject || !canControlOwner(this.currentPlayer, sourceObject.owner) || sourceObject.rules.spawned) {
             return !minimap && filter !== ActionFilter.NoSelect && selectAction.isValidTarget(hoveredObject)
                 ? selectAction
                 : undefined;

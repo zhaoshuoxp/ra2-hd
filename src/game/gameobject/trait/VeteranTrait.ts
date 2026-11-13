@@ -96,6 +96,9 @@ export class VeteranTrait implements NotifyTargetDestroy {
     setRelativeXP(percentage: number): void {
         this.gainXP(Math.floor(percentage * this.promotionThresh));
     }
+    activateStartingAbilities(gameManager: GameManager): void {
+        if (this.veteranLevel > VeteranLevel.None) this.handlePromotion(this.gameObject, gameManager, false);
+    }
     gainXP(amount: number): boolean {
         this.xp += amount;
         if (this.xp >= this.promotionThresh) {

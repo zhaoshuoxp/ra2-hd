@@ -15,6 +15,13 @@ import { CallbackTask } from '../task/system/CallbackTask';
 import { TriggerSoundFxEvent } from '@/game/event/TriggerSoundFxEvent';
 import { globalRules } from '@/game/rules/globalRules';
 import { fnv32a } from '@/util/math';
+
+export function airstrikeExitTile(game: any, entry: any, target: any, legacyExit: any): any {
+    const launch = game.gameOpts?.campaign;
+    if (launch?.edition !== 'yr' || (launch.semanticsVersion ?? 1) < 47) return legacyExit;
+    const outward = new Vector2(entry.rx - target.rx, entry.ry - target.ry).normalize().multiplyScalar(8);
+    return game.map.tiles.getPlaceholderTile(Math.round(entry.rx + outward.x), Math.round(entry.ry + outward.y));
+}
 export class AirstrikeTrait {
     private planes: any[] = [];
     private readyAt = 0;
@@ -33,6 +40,9 @@ export class AirstrikeTrait {
         const path = new ParadropEffect(0, this.spotter.owner, target.tile, undefined, 0);
         const size = game.map.tiles.getMapSize();
         const { fromTile, toTile } = path.computeFlightPath(new Vector2(target.tile.rx, target.tile.ry), new Vector2(Math.floor(size.width / 2), 0), game);
+        // Paradrop's endpoint is only a short distance beyond its drop zone.
+        // Strike aircraft must leave via the ingress edge before disposal.
+        const exitTile = airstrikeExitTile(game, fromTile, target.tile, toTile);
         for (let i = 0; i < count; i++) {
             const plane = game.createUnitForPlayer(game.rules.getObject(type, ObjectType.Aircraft), this.spotter.owner);
             plane.zone = ZoneType.Air;
@@ -42,7 +52,7 @@ export class AirstrikeTrait {
             if (elite) plane.armedTrait.toggleEliteWeapons(true);
             const attack = new AttackTask(game, game.createTarget(target, target.tile), plane.primaryWeapon);
             plane.unitOrderTrait.addTask(new TaskGroup(attack,
-                new MoveTask(game, toTile, false, { allowOutOfBoundsTarget: true }),
+                new MoveTask(game, exitTile, false, { allowOutOfBoundsTarget: true }),
                 new CallbackTask(() => { game.unspawnObject(plane); plane.dispose(); })).setCancellable(false));
             this.planes.push({ plane, attack });
         }

@@ -15,6 +15,14 @@ function resolveHoverTooltipText(hover: any, strings: any, debugMode = false): s
     if (hover?.entity) {
         const uiName = hover.entity.getUiName?.();
         tooltip = resolveUiNameText(uiName, strings);
+        const object = hover.entity.gameObject;
+        if (tooltip && object?.campaignMapWeaponRange) {
+            tooltip += '\n' + strings.get('HD:EiffelChargeHint') + '\n'
+                + strings.get('HD:EiffelCharging', object.overpoweredTrait.getChargeCount());
+            if (object.poweredTrait.isPoweredOn() && object.overpoweredTrait.hasChargersToPowerOn()) {
+                tooltip += '\n' + strings.get('HD:EiffelCharged');
+            }
+        }
         if (debugMode && tooltip !== undefined) {
             tooltip += ` (ID: ${hover.entity.gameObject.id})`;
         }

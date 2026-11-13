@@ -1,0 +1,74 @@
+{
+  "mission": "all12s.map",
+  "sourceSha256": "e6d31134742f8566a425a252113fa6b8e3f3eb178b00e34124deec4f7e11250b",
+  "semanticsVersion": 26,
+  "enemyHouse": "BadGuy1 House",
+  "controlledHouses": 2,
+  "triggers": 61,
+  "aiTriggers": 127,
+  "ignoreGlobal": false,
+  "teamDelays": [
+    1000,
+    750,
+    500
+  ],
+  "cases": {
+    "easy": {
+      "credits": 16000,
+      "human": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "enemy": [
+        0.8,
+        1.2,
+        1
+      ],
+      "aiDelay": 500,
+      "openingActors": {
+        "GHOST": 3
+      },
+      "openingRanks": {
+        "GHOST": [
+          2,
+          2,
+          2
+        ]
+      },
+      "controlledCredits": {
+        "Player House": 16000,
+        "Other2 House": 4000
+      }
+    },
+    "hard": {
+      "credits": 8000,
+      "human": [
+        0.8,
+        1.2,
+        1
+      ],
+      "enemy": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "aiDelay": 1000,
+      "openingActors": {
+        "GHOST": 3
+      },
+      "openingRanks": {
+        "GHOST": [
+          2,
+          2,
+          2
+        ]
+      },
+      "controlledCredits": {
+        "Player House": 8000,
+        "Other2 House": 0
+      }
+    }
+  },
+  "authority": "Original all12s.map General.TeamDelays and campaign money deltas, expanded original AI library and elite three-SEAL paradrop. The shorter Easy delay is preserved. Native opening checks do not claim complete Easy/Hard victories. Original Other2 House is also PlayerControl=yes; its separate ledger receives the original difficulty money delta."
+}

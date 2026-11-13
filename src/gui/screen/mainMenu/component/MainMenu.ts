@@ -43,6 +43,8 @@ export interface JsxRenderer {
 export class MainMenu extends UiObject {
     private viewport: Viewport;
     private menuScale = 1;
+    private physicalViewport: Viewport;
+    private campaignLayout = false;
     private mainBackground?: UiObjectSprite;
     private statusBackground?: UiObjectSprite;
     private images: ImageMap;
@@ -72,6 +74,7 @@ export class MainMenu extends UiObject {
     private version!: HtmlView;
     constructor(viewport: Viewport, images: ImageMap, jsxRenderer: JsxRenderer, videoSrc: string) {
         super(new THREE.Object3D(), new HtmlContainer());
+        this.physicalViewport = viewport;
         this.viewport = this.fitViewport(viewport);
         this.images = images;
         registerMainMenuArt(images);
@@ -86,6 +89,11 @@ export class MainMenu extends UiObject {
     private fitViewport(viewport: Viewport): Viewport {
         this.menuScale = Math.min(viewport.width / 800, viewport.height / 600);
         return { x: 0, y: 0, width: viewport.width / this.menuScale, height: viewport.height / this.menuScale };
+    }
+    setCampaignLayout(active: boolean): void {
+        if (active === this.campaignLayout) return;
+        this.campaignLayout = active;
+        this.setViewport(this.physicalViewport);
     }
     private applyMenuScale(): void {
         const object = this.get3DObject()!;
@@ -106,6 +114,7 @@ export class MainMenu extends UiObject {
         }
     }
     setViewport(viewport: Viewport): void {
+        this.physicalViewport = viewport;
         const previousHeight = this.viewport.height;
         this.viewport = this.fitViewport(viewport);
         this.setPosition(this.viewport.x, this.viewport.y);

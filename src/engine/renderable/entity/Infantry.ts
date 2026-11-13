@@ -43,6 +43,7 @@ export class Infantry {
     private crashingSequencePlaying: boolean = false;
     private deathAnimSequencePlaying: boolean = false;
     private idleActionDue: boolean = false;
+    private campaignIdleRequests = 0;
     private disguiseChanged: boolean = false;
     private highlightAnimRunner: HighlightAnimRunner;
     private lastBerserk = false;
@@ -290,6 +291,10 @@ export class Infantry {
         const wasIdleActionDue = this.idleActionDue;
         this.idleActionDue = this.gameObject.idleActionTrait.actionDueThisTick();
         let shouldTriggerIdleAction = this.idleActionDue && !wasIdleActionDue;
+        const campaignRequests = this.gameObject.idleActionTrait.getCampaignIdleRequests();
+        const campaignIdle = campaignRequests !== this.campaignIdleRequests;
+        this.campaignIdleRequests = campaignRequests;
+        shouldTriggerIdleAction ||= campaignIdle;
         const slaveWorkState = (this.gameObject as any).slaveWorkState;
         if (this.lastSlaveWorkState !== slaveWorkState || this.lastMoving === undefined || this.lastMoving !== isMoving ||
             this.lastFiring === undefined || this.lastFiring !== isFiring ||
@@ -364,13 +369,13 @@ export class Infantry {
         if (!slaveWorkState && !this.sequenceQueue.length && !isMoving && !isFiring &&
             (stance === StanceType.None || stance === StanceType.Guard) &&
             zone !== ZoneType.Air && shouldTriggerIdleAction) {
-            if (Math.random() >= 0.5) {
+            if (campaignIdle || Math.random() >= 0.5) {
                 const idleSequence = this.findIdleSequence(zone, stance, this.objectArt);
                 if (idleSequence) {
                     this.setAnimParams(idleSequence, deltaTime, false);
                 }
             }
-            else {
+            else if (!(zone === ZoneType.Water && !this.gameObject.rules.isHuman)) {
                 this.computedDirection = Math.floor(360 * Math.random());
             }
         }
@@ -400,7 +405,8 @@ export class Infantry {
         let sequences = sequenceMap.getIdleSequenceBy(zone, stance);
         if (sequences?.length) {
             sequences = sequences.filter((seq) => art.sequences.has(seq));
-            if (!sequences.length && zone !== ZoneType.Ground) {
+            if (!sequences.length && zone !== ZoneType.Ground
+                && !(zone === ZoneType.Water && !this.gameObject.rules.isHuman)) {
                 sequences = sequenceMap.getIdleSequenceBy(ZoneType.Ground, stance)?.filter((seq) => art.sequences.has(seq));
             }
         }
@@ -423,7 +429,12 @@ export class Infantry {
         const work = (this.gameObject as any).slaveWorkState;
         const workSequence = work === "shovel" && !isMoving ? SequenceType.Shovel : work === "carry" && isMoving ? SequenceType.Carry : undefined;
         if (!isFiring && workSequence !== undefined && this.objectArt.sequences.has(workSequence)) return workSequence;
-        const sequence = sequenceMap.findSequence(zone, stance, isMoving, isFiring, isPanicked, [...this.objectArt.sequences.keys()]);
+        // Original aquatic animals can use ordinary Ready/Walk/FireUp rows.
+        // Their water movement is gameplay state, not a human swimming sheet.
+        const animationZone = zone === ZoneType.Water && !this.gameObject.rules.isHuman
+            && !this.objectArt.sequences.has(SequenceType.Swim) && !this.objectArt.sequences.has(SequenceType.Tread)
+            ? ZoneType.Ground : zone;
+        const sequence = sequenceMap.findSequence(animationZone, stance, isMoving, isFiring, isPanicked, [...this.objectArt.sequences.keys()]);
         if (sequence !== undefined)
             return sequence;
         console.warn(`Couldn't find a sequence for infantry "${this.gameObject.name}" ` +
@@ -532,12 +543,13 @@ export class Infantry {
         }
         const drawOffset = art.getDrawOffset();
         const renderable = this.shpRenderable = ShpRenderable.factory(image, this.palette, this.camera, drawOffset, art.hasShadow);
-        const hdOverride = this.imageFinder.getUnitHdOverride?.(this.gameObject.name, image)
+        const identity = this.disguise?.identity ?? this.gameObject.name;
+        const hdOverride = this.imageFinder.getUnitHdOverride?.(identity, image)
             ?? this.imageFinder.getHdOverride?.(image);
         if (hdOverride) renderable.setHdOverride(hdOverride);
-        renderable.setHdLease(this.imageFinder.bindUnitHd?.(this.gameObject.name, image,
+        renderable.setHdLease(this.imageFinder.bindUnitHd?.(identity, image,
             override => renderable.setHdOverride(override)) ?? (() => {}));
-        renderable.setSmoothCoverage(this.gameObject.name === "E2");
+        renderable.setSmoothCoverage(identity === "E2");
         renderable.setEmbeddedShadow(true);
         renderable.setBatched(this.useSpriteBatching);
         if (this.useSpriteBatching) {
@@ -557,9 +569,9 @@ export class Infantry {
         if (this.gameObject.isDestroyed || this.gameObject.isCrashing)
             return;
         this.objectArt = disguise?.objectArt ?? this.gameObject.art;
+        this.disguise = disguise;
         this.updateShpRenderableFromArt(this.objectArt);
         this.disguiseChanged = true;
-        this.disguise = disguise;
     }
     updateShpRenderableFromArt(art: any): void {
         const currentObject = (this.shpRenderable ?? this.placeholder)?.get3DObject();

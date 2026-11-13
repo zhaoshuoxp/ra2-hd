@@ -4,6 +4,7 @@ import type { GameSpeedControl } from '@/gui/screen/game/gameMenu/GameMenuContro
 import { ScreenType } from '@/gui/screen/game/gameMenu/ScreenType';
 import { EventDispatcher } from '@/util/event';
 export class GameMenu {
+    campaignOperations?: { save(): void; load(): void; restart(): void; briefing?(): string };
     private _onOpen = new EventDispatcher<GameMenu, void>();
     private _onQuit = new EventDispatcher<GameMenu, void>();
     private _onObserve = new EventDispatcher<GameMenu, void>();
@@ -47,6 +48,7 @@ export class GameMenu {
         this._onOpen.dispatch(this);
         this.controller.goToScreen(ScreenType.Home, {
             ...this.saves,
+            campaign: this.campaignOperations,
             observeAllowed: !(this.isTournament ||
                 this.isSinglePlayer ||
                 this.localPlayer === undefined ||
@@ -75,6 +77,7 @@ export class GameMenu {
         }
     }
     openDiplo(): void {
+        if (this.game.campaign) { this.open(); return; }
         if (!this.controller)
             return;
         this._onOpen.dispatch(this);

@@ -1,0 +1,54 @@
+{
+  "edition": "yr",
+  "authorization": {
+    "file": "docs/campaign-art/yr-v1/authorization.json",
+    "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+  },
+  "source": ".local/source-art/yr-campaign-v1/transylvania-castle/original/source.json",
+  "sourceJsonSha256": "df23de21b0c82e87a0cf7b8b67975e10ca74d5bf0bc5b84d46cb3ba1dc9d41fa",
+  "mission": "sov07tmd.map",
+  "missionSha256": "eacf89952cb6e8eacd762f97895a062e0b6bfa16c8f916b901c1e667def266d4",
+  "identity": "CATRAN03",
+  "kind": "building",
+  "sourceSha256": "1a97dd0917dcea67b9d769f9607a26d53d362c9c23962956ccc54500ee23c37c",
+  "family": "yr-sov07-transylvania-castle-v1",
+  "masters": {
+    "0": {
+      "file": ".local/source-art/yr-campaign-v1/transylvania-castle/intact-master-r1.png",
+      "sha256": "531e598660b58665c049e8d4d758cc134cbf683e2f1d274faed153a59481a9dd"
+    },
+    "1": {
+      "file": ".local/source-art/yr-campaign-v1/transylvania-castle/damaged-master-r3.png",
+      "sha256": "c25f8913ea9af97486a9e0ba4bc1a47ce5956f21bfa0c15c1faf661606e7d197"
+    },
+    "3": {
+      "file": ".local/source-art/yr-campaign-v1/transylvania-castle/rubble-master-r2.png",
+      "sha256": "6c8eaf23d1177c7ab69e2cc78ac4a11872830ef96cfc96955d518c68b274f5f9"
+    }
+  },
+  "bodyIndex12Material": {
+    "cttran03.shp": {
+      "schema": "source-pinned-body-index12-material-v1",
+      "classification": "AUTHORED_BODY_SHADE_WITH_SEPARATE_NATIVE_SHADOWS",
+      "sourceSha256": "1a97dd0917dcea67b9d769f9607a26d53d362c9c23962956ccc54500ee23c37c",
+      "paletteSha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+      "frames": {
+        "0": {
+          "indexSha256": "7cf139f4ce0c2b10461ac0fef79c8a76671148e02726d7f2ae34fa202beb7114",
+          "paletteSha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+          "bodyShadePixels": 502
+        },
+        "1": {
+          "indexSha256": "059649899e804e98b4d03a389481c3518e621bc1e22415b9184bb38a730b5fed",
+          "paletteSha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+          "bodyShadePixels": 1971
+        },
+        "2": {
+          "indexSha256": "059649899e804e98b4d03a389481c3518e621bc1e22415b9184bb38a730b5fed",
+          "paletteSha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+          "bodyShadePixels": 1971
+        }
+      }
+    }
+  }
+}

@@ -31,7 +31,9 @@ export class RepairOrder extends Order {
             ((!this.target.obj.owner.isCombatant() &&
                 (!!this.target.obj.garrisonTrait ||
                     !!this.target.obj.cabHutTrait)) ||
-                this.game.areFriendly(this.target.obj, this.sourceObject)));
+                ((this.game.campaign?.launch.semanticsVersion ?? 1) >= 22
+                    ? this.game.areFriendly(this.sourceObject, this.target.obj)
+                    : this.game.areFriendly(this.target.obj, this.sourceObject))));
     }
     isAllowed(): boolean {
         const target = this.target.obj;

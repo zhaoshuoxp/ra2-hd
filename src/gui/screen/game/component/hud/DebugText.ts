@@ -5,6 +5,7 @@ import { UiComponent, UiComponentProps } from "@/gui/jsx/UiComponent";
 import { HtmlContainer } from "@/gui/HtmlContainer";
 import { SpriteUtils } from "@/engine/gfx/SpriteUtils";
 import { CanvasUtils } from "@/engine/gfx/CanvasUtils";
+import { resizeUiTextCanvas, UI_FONT_FAMILY, UI_FONT_WEIGHT } from '@/engine/gfx/UiTypography';
 type ColorType = {
     r: number;
     g: number;
@@ -48,8 +49,9 @@ export class DebugText extends UiComponent<DebugTextProps> {
         const texture = new THREE.Texture(canvas);
         texture.needsUpdate = true;
         texture.flipY = false;
-        texture.minFilter = THREE.NearestFilter;
-        texture.magFilter = THREE.NearestFilter;
+        texture.minFilter = THREE.LinearFilter;
+        texture.magFilter = THREE.LinearFilter;
+        texture.generateMipmaps = false;
         return texture;
     }
     createMesh(width: number, height: number): THREE.Mesh {
@@ -69,6 +71,7 @@ export class DebugText extends UiComponent<DebugTextProps> {
         return jsx("mesh", { zIndex: this.props.zIndex }, this.mesh);
     }
     onFrame(t: number) {
+        if (this.ctx && resizeUiTextCanvas(this.ctx, this.texture, this.props.width, this.props.height)) this.lastText = undefined;
         if (!this.lastUpdate || t - this.lastUpdate >= 1000 / 30) {
             this.lastUpdate = t;
             const text = this.props.text.value;
@@ -97,9 +100,9 @@ export class DebugText extends UiComponent<DebugTextProps> {
     }
     drawLine(text: string, color: ColorType, y: number): number {
         const style = {
-            fontFamily: "'Fira Sans Condensed', Arial, sans-serif",
-            fontSize: 12,
-            fontWeight: "400",
+            fontFamily: UI_FONT_FAMILY,
+            fontSize: 13,
+            fontWeight: UI_FONT_WEIGHT,
             paddingTop: 6,
             height: 20,
         };

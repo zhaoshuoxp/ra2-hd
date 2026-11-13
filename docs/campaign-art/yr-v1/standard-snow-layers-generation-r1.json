@@ -1,0 +1,29 @@
+{
+  "schema": "authored-snow-only-layer-extraction-v1",
+  "tool": "image_gen.imagegen",
+  "jobs": [
+    {
+      "name": "napowr-snow-layer-r1",
+      "reference": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/napowr-snow-normal-master-r1.png",
+      "prompt": "Use case: background-extraction. Exact technical overlay extraction for an existing strategy-game building. Keep ONLY the clean white accumulated snow caps and snow patches from the provided image, with their existing faint cool recess shading and antialiased alpha. Remove every non-snow surface by making it fully transparent. The entire blue electrical sphere, glowing energy and all pale painted sloping metal plates are NOT snow and must be transparent. Metal, glass, hardware, brick, red ownership panels, lights, base/platform and all equipment must be fully transparent. Preserve each snow patch's exact position, shape, size, thickness, color, edge and shading. This is a sparse transparent snow-only layer in the exact original 1536 by 1536 canvas. Preserve the original full-canvas framing; do not recenter, scale, rearrange, enlarge, connect or add snow patches. Preserve the clear gaps between snow areas. Do not add icicles, outlines, labels, ground or shadow planes. Return a true RGBA image with every non-snow pixel transparent.",
+      "output": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/napowr-snow-normal-layer-r1.png",
+      "referenceSha256": "0ab3bbec46168d66d1aa7334ce09bd3e24c39ee3c108c13ea2cf21a2b6ccb045"
+    },
+    {
+      "name": "gapowr-snow-layer-r1",
+      "reference": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/gapowr-snow-normal-master-r2.png",
+      "prompt": "Use case: background-extraction. Exact technical overlay extraction for an existing strategy-game building. Keep ONLY the clean white accumulated snow caps and snow patches from the provided image, with their existing faint cool recess shading and antialiased alpha. Remove every non-snow surface by making it fully transparent. All three blue-gray metal tower bodies, white metal highlights, warm gold equipment and glowing yellow energy slots must be transparent. Metal, glass, hardware, brick, red ownership panels, lights, base/platform and all equipment must be fully transparent. Preserve each snow patch's exact position, shape, size, thickness, color, edge and shading. This is a sparse transparent snow-only layer in the exact original 1536 by 1536 canvas. Preserve the original full-canvas framing; do not recenter, scale, rearrange, enlarge, connect or add snow patches. Preserve the clear gaps between snow areas. Do not add icicles, outlines, labels, ground or shadow planes. Return a true RGBA image with every non-snow pixel transparent.",
+      "output": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/gapowr-snow-normal-layer-r1.png",
+      "referenceSha256": "7eba16c3553132660b7f6bc1e89fb0e885de15b994d854739d7e3a2d19b4ea9a"
+    },
+    {
+      "name": "yapowr-snow-layer-r1",
+      "reference": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/yuri-yapowr-snow-normal-master-r2.png",
+      "prompt": "Use case: background-extraction. Exact technical overlay extraction for an existing strategy-game building. Keep ONLY the clean white accumulated snow caps and snow patches from the provided image, with their existing faint cool recess shading and antialiased alpha. Remove every non-snow surface by making it fully transparent. All glass tanks, white glass reflections, yellow energy, brass metal and red electrical coils must be transparent. Metal, glass, hardware, brick, red ownership panels, lights, base/platform and all equipment must be fully transparent. Preserve each snow patch's exact position, shape, size, thickness, color, edge and shading. This is a sparse transparent snow-only layer in the exact original 1536 by 1536 canvas. Preserve the original full-canvas framing; do not recenter, scale, rearrange, enlarge, connect or add snow patches. Preserve the clear gaps between snow areas. Do not add icicles, outlines, labels, ground or shadow planes. Return a true RGBA image with every non-snow pixel transparent.",
+      "output": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/yuri-yapowr-snow-normal-layer-r1.png",
+      "referenceSha256": "f7148fe38ef097fdcb2bf1421e9f63766bbbf12cae3316b2af2b88da53350693"
+    }
+  ],
+  "status": "CANDIDATES_NOT_REGISTERED",
+  "userVisualAcceptance": "PENDING"
+}

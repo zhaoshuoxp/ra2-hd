@@ -26,5 +26,8 @@ export enum MainMenuScreenType {
     OptionsStorage = 19,
     TestEntry = 20,
     LanSetup = 21,
-    LoadGame = 22
+    Campaign = 22,
+    LoadGame = 23,
+    CampaignSaves = 24,
+    Movies = 25
 }

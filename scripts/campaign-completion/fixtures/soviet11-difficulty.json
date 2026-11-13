@@ -1,0 +1,46 @@
+{
+  "mission": "sov11s.map",
+  "sourceSha256": "2f51c08a063f3c4d648bd486672eacc50d3f32903aa14e9566bfd2030464fc7f",
+  "semanticsVersion": 13,
+  "enemyHouse": "BadGuy1 House",
+  "controlledHouses": 1,
+  "triggers": 46,
+  "aiTriggers": 26,
+  "ignoreGlobal": true,
+  "teamDelays": [
+    1000,
+    750,
+    500
+  ],
+  "cases": {
+    "easy": {
+      "credits": 12500,
+      "human": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "enemy": [
+        0.8,
+        1.2,
+        1
+      ],
+      "aiDelay": 500
+    },
+    "hard": {
+      "credits": 8000,
+      "human": [
+        0.8,
+        1.2,
+        1
+      ],
+      "enemy": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "aiDelay": 1000
+    }
+  },
+  "authority": "Original sov11s.map Player House Credits=100, TechLevel=9, local CampaignMoneyDeltaEasy=2500/Hard=-2000, TeamDelays=1000,750,500 and TotalAITeamCap=60,45,30. One controlled house; intact original difficulty flags and archived handicap. Team delays deliberately are not reordered to a monotonic assumption."
+}

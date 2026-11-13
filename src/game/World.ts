@@ -25,7 +25,8 @@ export class World {
     }
     removeObject(object: GameObject): void {
         if (!this.allObjects.has(object.id)) {
-            throw new Error("Trying to remove non-existent object");
+            throw new Error(`Trying to remove non-existent object "${object.name}#${object.id}" `
+                + `(spawned=${object.isSpawned}, destroyed=${object.isDestroyed})`);
         }
         this.allObjects.delete(object.id);
         this._onObjectRemoved.dispatch(this, object);

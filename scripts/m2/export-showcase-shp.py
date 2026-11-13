@@ -14,6 +14,14 @@ from showcase_contours import register_contours
 from showcase_components import accepted_flag_components, accepted_outpost_motion, flag_frame_material
 from showcase_body_reuse import accepted_body_frames
 from showcase_airport import RegisteredAirport
+from showcase_authored_regions import AuthoredRegions
+from showcase_curved_arch import RegisteredCurvedArch
+from showcase_body_material import BodyIndex12Material
+from showcase_authored_rubble import AuthoredRubble
+from showcase_authored_terrain import AuthoredTerrain
+from showcase_bridge_material import BridgePlanarMaterial
+from showcase_component_assembly import SourcePinnedComponentAssembly
+from showcase_lunar import validate_lunar_smudge_contours
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('revision')
@@ -23,13 +31,17 @@ parser.add_argument('--material-profile', type=Path)
 parser.add_argument('--prepared', type=Path, default=Path('.artifacts/m2-2/prepared-native-v2'))
 parser.add_argument('--contract', type=Path, default=Path('desktop/environment-hd-contract.json'))
 parser.add_argument('--schema', default='m2-2-shp-export-v1')
+parser.add_argument('--output', type=Path, help='Independent task-owned pack directory; defaults to the local environment pack root')
 parser.add_argument('--source-hash-paths', action='store_true',
                     help='Namespace new payload folders by exact source hash for same-named edition variants')
 args = parser.parse_args()
 root = args.root
 profile = json.loads(args.material_profile.read_text()) if args.material_profile else {}
 coverage_policy = profile.get('nativeStructuralCoverage')
+coverage_kinds = profile.get('nativeStructuralCoverageKinds', ['building'])
+assert coverage_kinds and set(coverage_kinds).issubset({'building', 'overlay'})
 terrain_contours = profile.get('nativeTerrainStructuralCoverage', {})
+pinned_contours = profile.get('sourcePinnedStructuralCoverage', {})
 if coverage_policy:
     assert coverage_policy['schema'] == 'native-structural-subpixel-coverage-v1'
     assert coverage_policy['toleranceNativePixels'] == .7 and coverage_policy['maximumContourAreaChangeFraction'] == .025
@@ -46,8 +58,35 @@ accepted_components.update(motion_components)
 component_evidence.update(motion_evidence)
 body_reuse = accepted_body_frames(profile, native)
 airport = RegisteredAirport(profile, native, prepared)
+authored_regions = AuthoredRegions(profile.get('authoredRegionRegistration', {}), native, prepared / 'native')
+body_index12 = BodyIndex12Material(profile.get('bodyIndex12Material', {}), native, prepared / 'native')
+curved_arch = RegisteredCurvedArch(profile.get('sourcePinnedCurvedArchRegistration', {}), native, prepared)
+authored_rubble = AuthoredRubble(profile.get('sourcePinnedAuthoredRubbleContours', {}), native, prepared)
+authored_terrain = AuthoredTerrain(profile.get('sourcePinnedAuthoredTerrainContours', {}), native, prepared)
+bridge_planar = BridgePlanarMaterial(profile.get('sourcePinnedBridgePlanarMaterial', {}), native, prepared)
+component_assembly = SourcePinnedComponentAssembly(profile.get('sourcePinnedComponentAssembly', {}), native, prepared)
+for name in component_assembly.declarations:
+    assert all(body_index12.owns(name, frame) for frame in range(native[name]['bodyFrames']))
+assert not authored_rubble.declarations.keys() & curved_arch.declarations.keys()
+assert not authored_terrain.declarations.keys() & (authored_rubble.declarations.keys() | curved_arch.declarations.keys())
 contract = json.loads(args.contract.read_text())
 theater = contract.get('theater', 'TEMPERATE')
+for name, declaration in pinned_contours.items():
+    source = native[name]
+    if declaration['schema'] == 'yr-lunar-smudge-contours-v1':
+        validate_lunar_smudge_contours(declaration, source, theater)
+    else:
+        assert declaration['schema'] in ('source-pinned-structural-contours-v1', 'source-pinned-structural-contours-v2')
+        assert declaration['kind'] in ('terrain', 'overlay')
+    if declaration['schema'] == 'source-pinned-structural-contours-v2':
+        assert declaration['continuousDiagonalBody'] is True and declaration['kind'] == 'terrain'
+        assert source['bodyFrames'] == 1 and source['hasShadow'] and not source['remapable']
+    assert declaration['theater'] == theater
+    assert declaration['sourceSha256'] == source['sha256']
+    assert declaration['paletteSha256'] == source['palette']['sha256']
+    assert declaration['bodyIndexSha256'] == [frame['indexSha256'] for frame in source['frames'][:source['bodyFrames']]]
+    assert all(binding['kind'] == declaration['kind'] for binding in source['bindings'])
+    assert not coverage_policy and name not in terrain_contours
 shared_rubble = profile.get('sharedNativeRubbleFrames', {})
 for name, declaration in shared_rubble.items():
     canonical = declaration['canonicalMember']
@@ -89,7 +128,7 @@ for name, declaration in marker_frames.items():
         indices = np.frombuffer(file.read_bytes(), np.uint8)
         assert marker_index in indices and set(indices).issubset({0, marker_index})
         if marker_index == 1:
-            assert all(binding['role'] == 'ACTIVE' and int(number) > int(
+            assert all(binding['role'] == 'ACTIVE' and int(binding['nativeArt'].get('LoopCount', '1')) == -1 and int(number) >= int(
                 binding['nativeArt']['LoopEnd']) for binding in source['bindings'])
         marker_keys.add(f'{name}-{int(number):03d}')
 slots = {key: info for key, info in work['slots'].items() if info['member'] in required}
@@ -368,8 +407,9 @@ def pixels(name, slot, density):
     else:
         assert marker or slot['status'] == 'EXACT_NATIVE_CONTACT_ONLY'
         assert marker or not body.any()
-    # Index 12 is a native negligible contact/shadow patch, never authored body.
-    ground = enlarged == 12
+    # Historical exports retain index-12 contacts. A source-qualified building
+    # body shade uses its HD master; its separate original shadows stay native.
+    ground = (enlarged == 12) & (not body_index12.owns(name, frame['slot']))
     original_file = prepared / 'native' / frame['file']
     assert sha(original_file) == frame['rgbaSha256']
     frame_palette = contract['sources'][name].get('framePalettes', {}).get(str(frame['slot']))
@@ -505,34 +545,55 @@ def pixels(name, slot, density):
             local = detached[max(0, py - 1):py + 2, max(0, px - 1):px + 2]
             assert local.sum() <= 2
             rgb[py * density:(py + 1) * density, px * density:(px + 1) * density] = palette[value]
+    authored_regions.register(rgb, name, frame, density)
+    if bridge_planar.owns(name, frame['slot']):
+        rgb[:] = bridge_planar.frame(name, density)
     base[:height * density, :width * density, :3][ground] = original[..., :3][ground]
     if (frame_palette or contract['sources'][name])['remapable']:
         owner = (enlarged >= 16) & (enlarged <= 31) & body
         data[:height * density, :width * density, 0][owner] = 255
         data[:height * density, :width * density, 1][owner] = enlarged[owner] - 16
     base[..., :3][base[..., 3] == 0] = 0
-    if (coverage_policy or name in terrain_contours) and not marker:
-        if name in terrain_contours:
+    if (coverage_policy or name in terrain_contours or name in pinned_contours) and not marker:
+        if name in pinned_contours:
+            assert pinned_contours[name]['sourceSha256'] == native[name]['sha256']
+        elif name in terrain_contours:
             assert not coverage_policy and theater == 'NEWURBAN'
             assert terrain_contours[name]['schema'] == 'source-pinned-terrain-contours-v1'
             assert terrain_contours[name]['sourceSha256'] == native[name]['sha256']
             assert all(binding['kind'] == 'terrain' for binding in native[name]['bindings'])
         else:
-            assert all(binding['kind'] == 'building' for binding in native[name]['bindings'])
+            assert all(binding['kind'] in coverage_kinds for binding in native[name]['bindings'])
         base, data = register_contours(base, data, index, density,
-            (frame_palette or contract['sources'][name])['remapable'])
+            (frame_palette or contract['sources'][name])['remapable'],
+            continuous_diagonals=pinned_contours.get(name, {}).get('continuousDiagonalBody', False),
+            body_shade=body_index12.smooths_contours(name, frame['slot']))
         if tone:
             tone_evidence[name, frame['slot'], density]['outputMean'] = rgb[body].mean(0).tolist()
+    if curved_arch.owns(name):
+        base[:height * density, :width * density] = curved_arch.frame(name, frame['slot'], density)
+        if contract['sources'][name]['remapable']:
+            empty = base[:height * density, :width * density, 3] == 0
+            data[:height * density, :width * density, :2][empty] = 0
+    if authored_rubble.owns(name, frame['slot']):
+        base[:height * density, :width * density] = authored_rubble.frame(name, frame['slot'], density)
+    if authored_terrain.owns(name, frame['slot']):
+        base[:height * density, :width * density] = authored_terrain.frame(name, frame['slot'], density)
+    if component_assembly.owns(name, frame['slot']):
+        base[:height * density, :width * density] = component_assembly.frame(name, density)
     base = airport.freeze_registered_pedestal(base, name, frame, density)
     return base, data
 
 
-destination = Path('.local/environment-packs') / args.revision
+destination = args.output or Path('.local/environment-packs') / args.revision
 destination.mkdir(parents=True, exist_ok=False)
 evidence = root / args.revision
 evidence.mkdir(exist_ok=False)
 pack = dict(schema='environment-shp-pack-v1', theater=theater, editions=['ra2', 'yr'],
             revision=args.revision, families={})
+if theater == 'LUNAR':
+    assert all(contract['families'][identity]['editions'] == ['yr'] for identity in wanted)
+    pack['editions'] = ['yr']
 member_records, allocation = {}, {'2': 0, '4': 0}
 for member in work['members']:
     name = member['member']
@@ -550,12 +611,28 @@ for member in work['members']:
               source=dict(member=name, sha256=pinned['sha256'], theater=theater, kind='resolved-shp-member'),
               logical=dict(canvas=native[name]['canvas'], frames=logical),
               color=dict(representation='authored-sRGB-RGBA8-plus-RGBA8-data'), variants=[])
-    if coverage_policy:
+    if coverage_policy and not curved_arch.owns(name):
         hd['color']['structuralCoverage'] = coverage_policy
+    if curved_arch.owns(name):
+        hd['color']['curvedArchRegistration'] = curved_arch.metadata(name)
+    if name in authored_rubble.declarations:
+        hd['color']['authoredRubbleRegistration'] = authored_rubble.metadata(name)
+    if name in authored_terrain.declarations:
+        hd['color']['authoredTerrainRegistration'] = authored_terrain.metadata(name)
     if name in terrain_contours:
         hd['color']['terrainStructuralCoverage'] = terrain_contours[name]
+    if name in pinned_contours:
+        hd['color']['sourcePinnedStructuralCoverage'] = pinned_contours[name]
     if name in component_evidence:
         hd['color']['acceptedNativeComponentMaterial'] = component_evidence[name]
+    if name in authored_regions.declarations:
+        hd['color']['authoredRegionRegistration'] = authored_regions.declarations[name]
+    if name in body_index12.declarations:
+        hd['color']['bodyIndex12Material'] = body_index12.declarations[name]
+    if name in bridge_planar.declarations:
+        hd['color']['bridgePlanarMaterial'] = bridge_planar.declarations[name]
+    if name in component_assembly.declarations:
+        hd['color']['sourceComponentAssembly'] = component_assembly.declarations[name]
     if name in shared_rubble:
         hd['color']['sharedNativeRubbleFrame'] = shared_rubble[name]
     if name in body_reuse:

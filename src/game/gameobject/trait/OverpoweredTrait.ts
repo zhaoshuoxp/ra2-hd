@@ -1,6 +1,7 @@
 import { NotifyTick } from './interface/NotifyTick';
 import { AttackTask } from '../task/AttackTask';
 import { GameObject } from '@/game/gameobject/GameObject';
+import { canCampaignChargeTarget } from '../../campaign/CampaignChargedWeapon';
 export class OverpoweredTrait {
     private obj: GameObject;
     private chargers: Set<GameObject>;
@@ -18,17 +19,18 @@ export class OverpoweredTrait {
     hasChargersToPowerOn(): boolean {
         return this.chargers.size >= 2;
     }
+    getChargeCount(): number { return this.chargers.size; }
     chargeFrom(charger: GameObject): void {
         this.chargers.add(charger);
         this.swapAttackTaskWeapon();
     }
-    [NotifyTick.onTick](gameObject: GameObject): void {
+    [NotifyTick.onTick](gameObject: GameObject, game?: any): void {
         if (this.chargers.size > 0) {
             let needsUpdate = false;
             this.chargers.forEach((charger) => {
                 if (charger.isDestroyed ||
                     charger.isCrashing ||
-                    charger.owner !== gameObject.owner ||
+                    charger.owner !== gameObject.owner && !canCampaignChargeTarget(charger, gameObject, game) ||
                     charger.attackTrait?.currentTarget?.obj !== gameObject) {
                     this.chargers.delete(charger);
                     needsUpdate = true;
@@ -54,6 +56,7 @@ export class OverpoweredTrait {
     private getWeapon(): any {
         return this.isOverpowered()
             ? this.obj?.secondaryWeapon
+                ?? ((this.obj?.owner?.campaignSemanticsVersion ?? 0) >= 7 ? this.obj?.primaryWeapon : undefined)
             : this.obj?.primaryWeapon;
     }
     dispose(): void {

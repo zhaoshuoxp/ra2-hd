@@ -20,6 +20,7 @@ export enum HarvesterStatus {
     Unloading = 8
 }
 export class HarvesterTrait {
+    readonly debugStateKey = 'HarvesterTrait';
     private storage: number;
     private ore: number;
     private gems: number;

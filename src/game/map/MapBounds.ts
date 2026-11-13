@@ -36,7 +36,7 @@ export class MapBounds {
     private clampedFullSize: Rect;
     private rawLocalSize: Rect;
     private _onLocalResize: EventDispatcher<MapBounds>;
-    constructor() {
+    constructor(private fullScenario = false) {
         this.mapCutoffHeight = 0;
         this.mapBuildableSize = { x: 0, y: 0, width: 0, height: 0 };
         this.localSize = { x: 0, y: 0, width: 0, height: 0 };
@@ -70,8 +70,8 @@ export class MapBounds {
         this.updateRawLocalSize(localSize);
         return this;
     }
-    updateRawLocalSize(size: Rect): void {
-        if (this.rawLocalSize.width &&
+    updateRawLocalSize(size: Rect, allowReposition = false): void {
+        if (!allowReposition && this.rawLocalSize.width &&
             this.rawLocalSize.height &&
             !rectContainsRect(size, this.rawLocalSize)) {
             console.warn("New map limits must be outside old limits. Skipping.");
@@ -109,6 +109,10 @@ export class MapBounds {
         return this.clampedFullSize;
     }
     isWithinBounds(tile: Tile): boolean {
+        if (this.fullScenario) return rectContainsPoint(this.clampedFullSize, { x: tile.dx, y: tile.dy - tile.z });
+        return this.isWithinPlayerBounds(tile);
+    }
+    isWithinPlayerBounds(tile: Tile): boolean {
         return rectContainsPoint(this.mapBuildableSize, {
             x: tile.dx,
             y: tile.dy - tile.z,

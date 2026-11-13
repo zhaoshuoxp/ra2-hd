@@ -1,6 +1,47 @@
 import { expect, test } from 'bun:test';
 import { UnitHdDemand } from '../../src/engine/renderable/builder/UnitHdDemand';
 
+test('campaign camera return reuses idle complete families and evicts only when capacity is needed', async () => {
+  const images = new Map(['A', 'B', 'C'].map(name => [name, { filename: `${name}.shp` }]));
+  const calls: string[] = [], disposed: string[] = [];
+  const demand = new UnitHdDemand(new Set(images.keys()), 16, async (name, remaining) => {
+    calls.push(name);
+    if (remaining < 8) return { density: 1, gpuBytes: 0, members: new Map(), attempts: [{ reason: 'combined-budget' }] };
+    const image = images.get(name)!;
+    return { density: 4, gpuBytes: 8, attempts: [], members: new Map([[image.filename,
+      { image, override: { identity: name, frames: [], pages: [] } }]]) };
+  }, family => family.members.forEach(member => disposed.push(member.override.identity)), true);
+  const first = demand.bind('A', images.get('A'), () => {}); await demand.idle(); first();
+  const second = demand.bind('B', images.get('B'), () => {}); await demand.idle();
+  expect(calls).toEqual(['A', 'B']); expect(disposed).toEqual([]);
+  let returned: string | undefined;
+  const back = demand.bind('A', images.get('A'), value => returned = value?.identity);
+  expect(returned).toBe('A'); expect(calls).toEqual(['A', 'B']); back();
+  const third = demand.bind('C', images.get('C'), () => {}); await demand.idle();
+  expect(disposed).toEqual(['A']); expect(demand.families.has('B')).toBe(true);
+  expect(demand.families.has('C')).toBe(true); expect(demand.report.peakBytes).toBeLessThanOrEqual(16);
+  second(); third(); demand.dispose(); expect(new Set(disposed)).toEqual(new Set(['A', 'B', 'C']));
+});
+
+test('idle cache capacity cannot force a visible family down to 2X when its requested 4X allocation fits', async () => {
+  const images = new Map(['A', 'B'].map(name => [name, { filename: `${name}.shp` }]));
+  const disposed: string[] = [], shown: string[] = [], calls: [string, number][] = [];
+  const demand = new UnitHdDemand(new Set(images.keys()), 16, async (name, remaining) => {
+    calls.push([name, remaining]);
+    const density = name === 'B' && remaining < 12 ? 2 : 4;
+    const image = images.get(name)!;
+    return { density, gpuBytes: name === 'A' ? 8 : density === 2 ? 3 : 12,
+      attempts: density === 2 ? [{ density: 4, reason: 'combined-budget' }] : [],
+      members: new Map([[image.filename, { image, override: { identity: `${name}-${density}`, frames: [], pages: [] } }]]) };
+  }, family => family.members.forEach(member => disposed.push(member.override.identity)), true);
+  const first = demand.bind('A', images.get('A'), () => {}); await demand.idle(); first();
+  demand.bind('B', images.get('B'), value => shown.push(value!.identity)); await demand.idle();
+  expect(calls).toEqual([['A', 16], ['B', 8], ['B', 16]]);
+  expect(disposed).toEqual(['A-4', 'B-2']); expect(shown).toEqual(['B-4']);
+  expect(demand.report.families.B.density).toBe(4); expect(demand.report.gpuBytes).toBe(12);
+  expect(demand.report.peakBytes).toBeLessThanOrEqual(16); demand.dispose();
+});
+
 function fixture() {
   const images = new Map(['A', 'B', 'C'].map((name) => [name, { filename: `${name}.shp` }]));
   const calls: string[] = [],

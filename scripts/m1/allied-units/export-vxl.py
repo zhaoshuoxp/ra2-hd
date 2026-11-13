@@ -19,6 +19,7 @@ p.add_argument("review", type=Path)
 p.add_argument("--ownership-references", type=Path, required=True)
 p.add_argument("--output", type=Path, help="Task-owned staging pack root")
 p.add_argument("--density", type=int, choices=[2, 4], default=2)
+p.add_argument("--inventory", type=Path, default=Path(".artifacts/allied-units/source-v2/yr/inventory.json"))
 a = p.parse_args()
 work = json.loads(a.worklist.read_text())
 boards = [b for b in work["boards"] if b["family"] == a.identity]
@@ -28,7 +29,7 @@ assert boards and all(
 pack = a.output or Path(f".artifacts/allied-units/staged-packs/allied-{a.identity.lower()}-vxl/{a.revision}")
 pack.mkdir(parents=True, exist_ok=False)
 a.review.mkdir(parents=True, exist_ok=False)
-inv = json.loads(Path(".artifacts/allied-units/source-v2/yr/inventory.json").read_text())
+inv = json.loads(a.inventory.read_text())
 family = next(f for f in inv["families"] if f["id"] == a.identity)
 members = set(family["members"])
 for child in family["children"]:

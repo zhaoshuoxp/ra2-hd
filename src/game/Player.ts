@@ -37,6 +37,11 @@ export class Player {
     public readonly isObserver: boolean;
     public readonly isNeutral: boolean;
     public aiDifficulty?: any;
+    public campaignTechLevel?: number;
+    public campaignController?: Player;
+    public campaignControlledPlayers?: Player[];
+    public campaignSemanticsVersion?: number;
+    public campaignChargingVersion?: 1;
     public handicap = new DifficultyRules();
     public customBotId?: string;
     public powerTrait?: any;
@@ -53,13 +58,13 @@ export class Player {
         }
         this._credits = value;
     }
-    constructor(name: string, country?: Country, startLocation?: any, color: Color = new Color(255, 0, 0)) {
+    constructor(name: string, country?: Country, startLocation?: any, color: Color = new Color(255, 0, 0), campaignCombatant = false) {
         this.name = name;
         this.country = country;
         this.startLocation = startLocation;
         this.color = color;
         this.isObserver = !country;
-        this.isNeutral = !!country && !country.isPlayable();
+        this.isNeutral = !!country && !campaignCombatant && !country.isPlayable();
     }
     getOrCreateObjectsForType(type: ObjectType): Set<PlayerOwnedObject> {
         let objects = this.objectsByType.get(type);
@@ -168,7 +173,7 @@ export class Player {
             traits: this.traits.getAll().reduce((acc, trait) => {
                 const state = trait.debugGetState?.();
                 if (state !== undefined) {
-                    acc[trait.constructor.name] = state;
+                    acc[trait.debugStateKey ?? trait.constructor.name] = state;
                 }
                 return acc;
             }, {} as Record<string, any>)

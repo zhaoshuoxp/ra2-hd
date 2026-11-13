@@ -135,7 +135,8 @@ export class GameLoader {
         });
         const dominatorAnim = game.rules.getIni().getSection('General')?.getString('DominatorFirstAnim');
         const virusAnim = game.rules.audioVisual.infantryVirus;
-        for (const name of [dominatorAnim, virusAnim, game.rules.audioVisual.infantryMutate].filter(Boolean)) {
+        const weatherClouds = (game.gameOpts.campaign?.semanticsVersion ?? 0) >= 12 ? game.rules.audioVisual.weatherConClouds : [];
+        for (const name of [dominatorAnim, virusAnim, game.rules.audioVisual.infantryMutate, ...weatherClouds].filter(Boolean)) {
             const art = game.art.getAnimation(name);
             art.animationFrameCount = new ImageFinder(Engine.getImages() as any, theater).findByObjectArt(art).numImages;
         }

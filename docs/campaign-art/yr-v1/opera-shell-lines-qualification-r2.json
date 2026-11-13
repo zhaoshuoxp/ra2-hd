@@ -1,0 +1,138 @@
+{
+  "schema": "yr-opera-shell-lines-qualification-v1",
+  "status": "PASS_LOCALIZED_SHELL_LINE_REFINEMENT_EXPORTS_NATIVE_STATES_AND_RELEASE",
+  "family": "yr-task-urban-casydn03-v2",
+  "registration": "docs/campaign-art/yr-v1/task-urban-casydn03-registration-r2.json",
+  "scope": "Existing warm-gray square tile grid and curved course lines on white shell surfaces in normal, damaged and garrison states.",
+  "acceptedBasis": {
+    "file": ".local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r1/frame-0.png",
+    "sha256": "8be7806eff8951d5b99fbe52007bd8eefac293d4a3a497cb45534a783b3b1962",
+    "attachedReferenceSha256": "8be7806eff8951d5b99fbe52007bd8eefac293d4a3a497cb45534a783b3b1962",
+    "acceptanceScope": "Full-resolution normal-state basis; independent export and runtime line legibility remain under review."
+  },
+  "native": [
+    {
+      "density": 2,
+      "mission": "all05umd.map",
+      "originalActor": {
+        "id": 1900,
+        "health": 100,
+        "destroyed": false,
+        "originalRubble": false,
+        "tile": [
+          39,
+          72
+        ]
+      },
+      "frames": 4,
+      "sourceWorldExact": true,
+      "originalShadows": true,
+      "visibleNativeCapturesInspected": true,
+      "ownerColors": {
+        "frame": 2,
+        "nativeOwnerPixels": 1449,
+        "changedPixels": 32497,
+        "changedAlphaPixels": 0,
+        "fixedMaterial": false,
+        "scope": "Diagnostic renderer palettes only. Original actor ownership, simulation and source objectives remain unchanged."
+      },
+      "releaseZero": true,
+      "pendingShaderLifetimeChecks": 41,
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/opera-shell-lines-complete-native-2x-r2.json.gz",
+      "reportSha256": "77c164e18531659cfbbafa7fbf5a9ca9717702d697cf891dcf99b51d0e669437"
+    },
+    {
+      "density": 4,
+      "mission": "all05umd.map",
+      "originalActor": {
+        "id": 1900,
+        "health": 100,
+        "destroyed": false,
+        "originalRubble": false,
+        "tile": [
+          39,
+          72
+        ]
+      },
+      "frames": 4,
+      "sourceWorldExact": true,
+      "originalShadows": true,
+      "visibleNativeCapturesInspected": true,
+      "ownerColors": {
+        "frame": 2,
+        "nativeOwnerPixels": 1449,
+        "changedPixels": 29898,
+        "changedAlphaPixels": 0,
+        "fixedMaterial": false,
+        "scope": "Diagnostic renderer palettes only. Original actor ownership, simulation and source objectives remain unchanged."
+      },
+      "releaseZero": true,
+      "pendingShaderLifetimeChecks": 41,
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/opera-shell-lines-complete-native-4x-r2.json.gz",
+      "reportSha256": "2107dcdf5c47ae908476f1437952a4cfd5b1cc2ba098b1e870fee53f780a3449"
+    }
+  ],
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "bbd164e097975b2866f55b6cc8268c089c482aea38d16c33f9f0c1a59047af58",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 8,
+      "pages": 3,
+      "ownerStates": 2,
+      "neutralStates": 6,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 4,
+      "preservedAcceptedDensityFrames": 0
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 10584064,
+      "4": 42074112
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "rubblePreservation": [
+    {
+      "density": 2,
+      "rubbleBaseRgbaIdentical": true,
+      "rubbleOwnerDataIdentical": true
+    },
+    {
+      "density": 4,
+      "rubbleBaseRgbaIdentical": true,
+      "rubbleOwnerDataIdentical": true
+    }
+  ],
+  "previousProtection": {
+    "previousFamilyRetained": true,
+    "previousSourceDescriptorsUnchanged": true,
+    "previousPhysicalFilesVerifiedUnchanged": 23
+  },
+  "checks": {
+    "buildingCases": 3,
+    "buildingAssertions": 38,
+    "buildingLog": "/private/tmp/ra2-opera-binding-contracts-r2b.log",
+    "registrationCases": 3,
+    "registrationLog": "/private/tmp/ra2-opera-refinement-registration-r2.log",
+    "entryTypecheck": "PASS_R62",
+    "entryTypecheckLog": "/private/tmp/ra2-yr-typecheck-r62.log",
+    "desktopPreparation": "PASS_R62_219_BUILT_FILES",
+    "desktopLog": "/private/tmp/ra2-yr-desktop-r62.log"
+  },
+  "artTool": "image_gen.imagegen",
+  "prompts": [
+    "docs/campaign-art/yr-v1/material-detail-normal-generation-r1.json",
+    "docs/campaign-art/yr-v1/opera-shell-line-states-generation-r2.json"
+  ],
+  "runtimeQualification": "Renderer-only diagnostic poses in the original mission; source actor ownership, health, simulation, state timing and objectives remain unchanged.",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "userVisualAcceptance": "R1_FULL_RESOLUTION_NORMAL_BASIS_ACCEPTED_R2_REFINEMENT_PENDING"
+}

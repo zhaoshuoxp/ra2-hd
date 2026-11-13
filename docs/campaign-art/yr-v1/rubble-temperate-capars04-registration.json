@@ -1,0 +1,174 @@
+{
+  "status": "COMPLETE_FAMILY_REGISTERED_NATIVE_AND_USER_REVIEW_PENDING",
+  "family": "yr-rubble-temperate-capars04-v1",
+  "mission": {
+    "edition": "yr",
+    "mission": "sov07tmd.map",
+    "sha256": "eacf89952cb6e8eacd762f97895a062e0b6bfa16c8f916b901c1e667def266d4"
+  },
+  "theater": "TEMPERATE",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yr-campaign/rubble-temperate-capars04-stage-r1",
+  "preparation": {
+    "status": "PREPARED_NATIVE_REGISTRATION_AND_RUNTIME_PENDING",
+    "recipe": "/Users/Aone/RA2remaster/ra2-hd/docs/campaign-art/yr-v1/rubble-temperate-capars04.json",
+    "recipeSha256": "7f362d5fda4638cff1fa5f284f4567314726b3b53cab3b50004209537a29572c",
+    "originalSourceJsonSha256": "3a4b37784c99e8d2330533bae9e70459613612f367bc001588d15673b04ecebd",
+    "sourceSha256": "dcd571a439976773d21de40f352b66fe951b8e51a5824c45b5ebb8ef41429191",
+    "masters": [
+      {
+        "slot": 3,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-building-rubble/temperate-capars04/masters-r1/rubble.png",
+        "sha256": "166c8dc34b1667d377160fce94589aae2280b518a95114cc74c7c31f3a457e01"
+      }
+    ],
+    "directionAuthorization": {
+      "file": "docs/campaign-art/yr-v1/authorization.json",
+      "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+    },
+    "userVisualAcceptance": "PENDING",
+    "acceptedBodyFrames": {
+      "ctpars04.shp": {
+        "sourceSha256": "dcd571a439976773d21de40f352b66fe951b8e51a5824c45b5ebb8ef41429191",
+        "donorMember": "cupars04.shp",
+        "manifestFile": "/Users/Aone/RA2remaster/ra2-hd/.local/environment-packs/urban-campaign-sov01-hd-r7-clean-r2/members/cupars04-shp/manifest.json",
+        "manifestSha256": "5b9eb6d2574ddbaef1c09ca7d6f4977d0bbfdeb61421255dcca47c5d37393eaa",
+        "proofFile": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-building-rubble/temperate-capars04/accepted-body-proof-r1.json",
+        "proofSha256": "47aaa3dacc28ceb62f8be837e41428050f8e5d4abb14b341d001b531ae7c630a",
+        "slots": [
+          0,
+          1,
+          2
+        ],
+        "preserveAcceptedCoverage": {
+          "schema": "preserve-pinned-accepted-body-coverage-v1",
+          "slots": [
+            0,
+            1,
+            2
+          ],
+          "donorManifestSha256": "5b9eb6d2574ddbaef1c09ca7d6f4977d0bbfdeb61421255dcca47c5d37393eaa",
+          "donorColorSha256": "72c04922eb96d1cd37bf03271ebffa04cf4fed0ff502a17b7f0f33b65deb2a79"
+        }
+      }
+    },
+    "qualification": "Only original guides are converted. Authored masters are referenced without copying or modification. Complete state coverage, independent exports, alpha/geometry and runtime acceptance require subsequent verification."
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "1f3f821df4639fe085307218d10363ae14a7e3c1e1e31734055a82a15915cc91",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 8,
+      "pages": 2,
+      "ownerStates": 4,
+      "neutralStates": 4,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 4,
+      "preservedAcceptedDensityFrames": 6
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 3899392,
+      "4": 15466496
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "internalVisualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "packSha256": "1f3f821df4639fe085307218d10363ae14a7e3c1e1e31734055a82a15915cc91",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "inspectedExports": [
+      ".artifacts/yr-campaign/rubble-last3-exports-2x.png",
+      ".artifacts/yr-campaign/rubble-last3-exports-4x.png"
+    ],
+    "observations": [
+      "The new rubble retains the exact original broad forms, footprint, palette and thin details with smooth materials and authored antialiased contours.",
+      "All accepted normal, damaged and alternate samples remain byte-identical. The laboratory also retains all 32 accepted activity samples, including its original empty states.",
+      "Original canvas, placement, separate shadows, ownership and animation ranges are unchanged."
+    ],
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "bundle": {
+    "schema": "campaign-environment-extension-v1",
+    "identity": "yr-rubble-temperate-capars04-v1",
+    "familyHash": "ea186633e6fb7ff17ca067aa93d4b01fdbcc5d665607d4d2ca69bff5e75f1a2f",
+    "mission": "sov07tmd.map",
+    "theater": "TEMPERATE",
+    "revision": "yr-rubble-temperate-capars04-r1",
+    "members": [
+      {
+        "member": "ctpars04.shp",
+        "manifest": "yr-rubble-temperate-capars04-r1-ctpars04-shp.json",
+        "sha256": "827424416c8789c079ee6b15f0fb645868c113cf7e2b7d0b82869f07a7a7f6db"
+      }
+    ],
+    "acceptance": "FAITHFUL_DIRECTION_AUTHORIZED_COMPLETE_NATIVE_RUNTIME_AND_USER_VISUAL_REVIEW_PENDING",
+    "edition": "yr"
+  },
+  "files": [
+    {
+      "name": "yr-rubble-temperate-capars04-r1-ctpars04-shp-2-p0-base.png",
+      "bytes": 636358,
+      "sha256": "dbc8175cf672795dcb8ccacf8e911cfd787cdc154311707b5747f51758c74646",
+      "route": "/local-campaign/yr/sov07tmd/yr-rubble-temperate-capars04-r1-ctpars04-shp-2-p0-base.png"
+    },
+    {
+      "name": "yr-rubble-temperate-capars04-r1-ctpars04-shp-2-p0-data.png",
+      "bytes": 8396,
+      "sha256": "e3bee022215924e76716938a53abe4d3251d1d715d3e636b88347dccd8a7cc0d",
+      "route": "/local-campaign/yr/sov07tmd/yr-rubble-temperate-capars04-r1-ctpars04-shp-2-p0-data.png"
+    },
+    {
+      "name": "yr-rubble-temperate-capars04-r1-ctpars04-shp-4-p0-base.png",
+      "bytes": 2324935,
+      "sha256": "ca12192024009046054b4793fd0545c989639696dbe9bebf76303f3eedbb6651",
+      "route": "/local-campaign/yr/sov07tmd/yr-rubble-temperate-capars04-r1-ctpars04-shp-4-p0-base.png"
+    },
+    {
+      "name": "yr-rubble-temperate-capars04-r1-ctpars04-shp-4-p0-data.png",
+      "bytes": 19547,
+      "sha256": "6b92e5ef23376616206fec48ad67b5b8e13aa95c1ef084e239d06b197d1ffec5",
+      "route": "/local-campaign/yr/sov07tmd/yr-rubble-temperate-capars04-r1-ctpars04-shp-4-p0-data.png"
+    },
+    {
+      "name": "yr-rubble-temperate-capars04-r1-ctpars04-shp.json",
+      "bytes": 6105,
+      "sha256": "827424416c8789c079ee6b15f0fb645868c113cf7e2b7d0b82869f07a7a7f6db",
+      "route": "/local-campaign/yr/sov07tmd/yr-rubble-temperate-capars04-r1-ctpars04-shp.json"
+    },
+    {
+      "name": "environment-family-yr-rubble-temperate-capars04-r1.json",
+      "bytes": 630,
+      "sha256": "275101a1d9f234eaf73806e3d987648de069b096c3db11e5efd805606fe88b95",
+      "route": "/local-campaign/yr/sov07tmd/environment-family-yr-rubble-temperate-capars04-r1.json"
+    }
+  ],
+  "contractBeforeSha256": "3cbb010acc267f0eb1beae0dc7a788657e7176fb9bb380aecececc7566531cf6",
+  "contractAfterSha256": "f82cc11c2eedf4e384d872fbfefc27decb403be109c97d0e94dac988701ffca5",
+  "existingRootSelectorChanges": {},
+  "acceptedPayloadsReplaced": 0,
+  "ownershipCorrection": null,
+  "artCorrection": null,
+  "bridgeCorrection": null,
+  "policy": "Independent densities, original shadows/state timing and existing fixed budgets; complete-family fallback retained.",
+  "nativeValidation": {
+    "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_SLOTS_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+    "framesPerDensity": 4,
+    "evidence": [
+      "../project-history/yr-campaign-implementation-20261104/Evidence/rubble-temperate-capars04-native-2x-r2.json.gz",
+      "../project-history/yr-campaign-implementation-20261104/Evidence/rubble-temperate-capars04-native-4x-r1.json.gz"
+    ],
+    "originalZeroHealthRubbleUnchanged": true
+  }
+}

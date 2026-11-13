@@ -1,6 +1,28 @@
 import { WaveFile } from '@ra2web/wavefile';
 import type { VirtualFile } from './vfs/VirtualFile';
 import type { DataStream } from './DataStream';
+import { fastMonoImaAdpcmWav } from './imaAdpcmWav';
+
+// First playback of each battle sound decodes it synchronously. Mono audio-bag
+// IMA ADPCM uses the byte-identical fast path; all other layouts are unchanged.
+export function decodeWavData(data: Uint8Array): Uint8Array {
+    const wav = new WaveFile();
+    wav.fromBuffer(data as any);
+    if (wav.bitDepth === '4') {
+        const fast = fastMonoImaAdpcmWav(wav as any);
+        if (fast) return fast;
+        wav.fromIMAADPCM();
+    }
+    return new Uint8Array(wav.toBuffer() as any);
+}
+
+// Original library path, retained for equivalence tests.
+export function decodeWavDataReference(data: Uint8Array): Uint8Array {
+    const wav = new WaveFile();
+    wav.fromBuffer(data as any);
+    if (wav.bitDepth === '4') wav.fromIMAADPCM();
+    return new Uint8Array(wav.toBuffer() as any);
+}
 export class WavFile {
     private rawData?: Uint8Array;
     private decodedData?: Uint8Array;
@@ -53,12 +75,7 @@ export class WavFile {
         this.decodedData = decodedData;
     }
     private decodeData(data: Uint8Array): Uint8Array {
-        const wav = new WaveFile();
-        wav.fromBuffer(data as any);
-        if (wav.bitDepth === '4') {
-            wav.fromIMAADPCM();
-        }
-        return new Uint8Array(wav.toBuffer() as any);
+        return decodeWavData(data);
     }
     isRawImaAdpcm(): boolean {
         if (!this.rawData)

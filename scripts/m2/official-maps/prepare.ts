@@ -28,10 +28,10 @@ if (memberAllowlist) for (const member of memberAllowlist)
 for (const row of rows) for (const [role, source, context] of [
     ['body', row.source, row], ...(row.dependencies ?? []).map((child: any) => [child.role, child.source, child]),
 ] as [string, any, any][]) {
-    if (!source?.sha256 || !/\.(tem|sno|urb|ubn|des|shp|vxl)$/.test(source.member)) continue;
+    if (!source?.sha256 || !/\.(tem|sno|urb|ubn|des|lun|shp|vxl)$/.test(source.member)) continue;
     const tree = trees.get(row.edition)!;
     const paletteIdentity = context.palette ?? row.palette ?? (() => {
-        const name = ({ TEMPERATE: 'isotem', SNOW: 'isosno', URBAN: 'isourb', NEWURBAN: 'isoubn', DESERT: 'isodes' } as any)[theater] + '.pal';
+        const name = ({ TEMPERATE: 'isotem', SNOW: 'isosno', URBAN: 'isourb', NEWURBAN: 'isoubn', DESERT: 'isodes', LUNAR: 'isolun' } as any)[theater] + '.pal';
         const file = resolveMember(tree, name);
         return { member: name, archive: file.source, sha256: sha(file.file.getBytes()) };
     })();

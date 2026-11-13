@@ -10,6 +10,7 @@ import { HealthChangeEvent } from '@/game/event/HealthChangeEvent';
 import { GameObject } from '@/game/gameobject/GameObject';
 import { World } from '@/game/World';
 export class HealthTrait {
+    readonly debugStateKey = 'HealthTrait';
     private maxHitPoints: number;
     private hitPoints: number;
     private _computedHealth: number;
@@ -48,6 +49,9 @@ export class HealthTrait {
     }
     getHitPoints(): number {
         return this.hitPoints;
+    }
+    getMaxHitPoints(): number {
+        return this.maxHitPoints;
     }
     getProjectedHitPoints(): number {
         return this.projectedHitPoints;

@@ -1,4 +1,4 @@
-import * as LiangBarsky from "liang-barsky";
+import { clip as clipLine } from "liang-barsky";
 import * as GameVehicle from "@/game/gameobject/Vehicle";
 import * as Coords from "@/game/Coords";
 import * as WithPosition from "@/engine/renderable/WithPosition";
@@ -29,7 +29,6 @@ import * as DebugRenderable from "@/engine/renderable/DebugRenderable";
 import * as GfxMathUtils from "@/engine/gfx/MathUtils";
 import * as THREE from "three";
 import { isViewCulled } from "@/engine/gfx/ViewCulling";
-const o = LiangBarsky;
 const a = GameVehicle;
 const S = Coords;
 const y = WithPosition;
@@ -202,6 +201,8 @@ export class Vehicle {
     lastSubmerged?: boolean;
     lastRockingFacing?: number;
     lastSquidGrabbed?: boolean;
+    private lastRotorTimestamp?: number;
+    private rotorsMayAdvance = true;
     lastTilt?: {
         yaw: number;
         pitch: number;
@@ -343,6 +344,8 @@ export class Vehicle {
                 this.highlightAnimRunner.animate(2));
     }
     update(i, r = 0) {
+        this.rotorsMayAdvance = this.lastRotorTimestamp !== i;
+        this.lastRotorTimestamp = i;
         this.plugins.forEach((e) => e.update(i)),
             this.pipOverlay?.update(i),
             this.updateBridgeRenderOrder(),
@@ -478,28 +481,14 @@ export class Vehicle {
             this.objectArt.isVoxel
                 ? (this.updateVxlRotation(e, p),
                     this.updateBodyVxl(),
-                    (v =
-                        ((T = this.gameObject.rocking?.facing as any) !==
-                            this.lastRockingFacing) as any),
-                    (this.lastRockingFacing = T as any),
-                    !v ||
-                        void 0 === T ||
-                        (0 < (f = this.gameObject.rocking.factor) &&
-                            this.startRocking(T, f, i)),
-                    (f =
-                        (b = !(!this.gameObject.parasiteableTrait?.isInfested() ||
-                            !this.gameObject.parasiteableTrait.getParasite()
-                                ?.rules.organic)) !== this.lastSquidGrabbed),
-                    (this.lastSquidGrabbed = b),
-                    this.updateRocking(i, b),
                     this.gameObject.turretTrait &&
                         1 < this.objectRules.turretCount &&
                         t &&
-                        this.updateActiveTurret(this.currentTurretIdx),
-                    this.updateSquidGrab(i, b, f, p, e, T, v))
+                        this.updateActiveTurret(this.currentTurretIdx))
                 : this.shpAnimRunner &&
                     (this.shpAnimRunner.tick(i),
                         this.updateShapeFrame(e, y, d));
+            this.updateParasiteAnimation(i, p, e);
         }
         // HD bearing pose/uniform preparation is presentation only. Native
         // state above keeps advancing; onViewCullRestore catches up the pose.
@@ -539,7 +528,7 @@ export class Vehicle {
                 }
             }
         }
-        this.rotors?.forEach((rotor, rotorIndex) => {
+        if (this.rotorsMayAdvance) this.rotors?.forEach((rotor, rotorIndex) => {
             (this.rotorSpeeds[rotorIndex] =
                 g.RotorHelper.computeRotationStep(this.gameObject, this.rotorSpeeds[rotorIndex] ?? 0, this.objectArt.rotors[rotorIndex])),
                 this.rotorSpeeds[rotorIndex] &&
@@ -549,7 +538,6 @@ export class Vehicle {
     }
     startRocking(i, r, s) {
         if (this.bodyVxlBuilder) {
-            (this.rockingStartTime = s), (this.rockingFactor = r);
             const aabb = this.bodyVxlBuilder.getLocalBoundingBox();
             if (!aabb)
                 return;
@@ -559,22 +547,35 @@ export class Vehicle {
             let t = new THREE.Vector2(10, 0)
                 .rotateAround(new THREE.Vector2(), n)
                 .setLength(e.getSize(tmp).length() + 1);
-            let arr: any = t.toArray();
-            const clip: any = (o as any).default || (o as any);
-            try {
-                clip([0, 0], arr, [e.min.x, e.min.y, e.max.x, e.max.y]);
-            }
-            catch { }
+            const arr = t.toArray();
+            // VxlBuilder stores the native ground footprint in x/y. Clip the
+            // pivot to its hull edge before mapping that plane into world x/z.
+            if (!clipLine([0, 0], arr, [e.min.x, e.min.y, e.max.x, e.max.y])) return;
             this.rockingPoint = new THREE.Vector3(arr[0], 0, arr[1]);
             const perp = t
                 .clone()
                 .rotateAround(new THREE.Vector2(), -Math.PI / 2)
                 .normalize();
             this.rockingAxis = new THREE.Vector3(perp.x, 0, perp.y);
+            this.rockingStartTime = s;
+            this.rockingFactor = r;
         }
     }
+    updateParasiteAnimation(time: number, directionChanged: boolean, direction: number) {
+        const facing = this.gameObject.rocking?.facing;
+        const rockingChanged = facing !== this.lastRockingFacing;
+        this.lastRockingFacing = facing;
+        if (rockingChanged && facing !== undefined && this.gameObject.rocking.factor > 0)
+            this.startRocking(facing, this.gameObject.rocking.factor, time);
+        const grabbed = !!(this.gameObject.parasiteableTrait?.isInfested() &&
+            this.gameObject.parasiteableTrait.getParasite()?.rules.organic);
+        const changed = grabbed !== this.lastSquidGrabbed;
+        this.lastSquidGrabbed = grabbed;
+        this.updateRocking(time, grabbed);
+        this.updateSquidGrab(time, grabbed, changed, directionChanged, direction, facing, rockingChanged);
+    }
     updateRocking(t, i) {
-        if (this.rockingStartTime) {
+        if (this.rockingStartTime !== undefined) {
             var r = t - this.rockingStartTime;
             let e = this.rockingFactor;
             i ||
@@ -663,9 +664,10 @@ export class Vehicle {
         if (this.shpRenderable && this.shpAnimRunner) {
             let e;
             var s = this.objectArt.facings, a = Math.round((((t - 45 + 360) % 360) / 360) * s) % s, s = this.shpAnimRunner.animation.getCurrentFrame();
-            // Dolphin bearings run clockwise in the source sheet, unlike the
-            // generic vehicle SHP convention. Keep movement and weapon logic native.
-            if (this.gameObject.name === 'DLPH') a = (this.objectArt.facings - a) % this.objectArt.facings;
+            // Both original sea-creature sheets store headings clockwise.
+            // Their native movement direction and artwork remain unchanged.
+            if (this.gameObject.name === 'DLPH' || this.gameObject.name === 'SQD')
+                a = (this.objectArt.facings - a) % this.objectArt.facings;
             (e = r
                 ? this.objectArt.startFiringFrame +
                     this.objectArt.firingFrames * a +

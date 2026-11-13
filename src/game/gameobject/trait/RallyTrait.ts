@@ -8,6 +8,7 @@ import { GameMap } from '@/game/GameMap';
 import { GameObject } from '@/game/gameobject/GameObject';
 type RallyContext = {
     map: GameMap;
+    gameOpts?: { bridgeRallyVersion?: 1; campaign?: { bridgeRallyVersion?: 1 } };
 };
 export class RallyTrait {
     private rallyPoint?: Tile;
@@ -15,13 +16,15 @@ export class RallyTrait {
         return this.rallyPoint;
     }
     changeRallyPoint(targetTile: Tile, gameObject: GameObject, world: RallyContext): void {
-        const validPoint = this.findValidRallyPoint(gameObject, targetTile, world.map);
+        const validPoint = this.findValidRallyPoint(gameObject, targetTile, world.map,
+            world.gameOpts?.bridgeRallyVersion === 1 || world.gameOpts?.campaign?.bridgeRallyVersion === 1);
         if (validPoint) {
             this.rallyPoint = validPoint;
         }
     }
-    findValidRallyPoint(gameObject: GameObject, targetTile: Tile, map: GameMap): Tile | undefined {
-        const finder = new RadialTileFinder(map.tiles, map.mapBounds, targetTile, { width: 1, height: 1 }, 0, 20, (tile) => (gameObject.rules.naval || tile.terrainType !== TerrainType.Water) &&
+    findValidRallyPoint(gameObject: GameObject, targetTile: Tile, map: GameMap, bridgeDecks = true): Tile | undefined {
+        const finder = new RadialTileFinder(map.tiles, map.mapBounds, targetTile, { width: 1, height: 1 }, 0, 20, (tile) => (gameObject.rules.naval
+            || tile.terrainType !== TerrainType.Water || bridgeDecks && tile.onBridgeLandType !== undefined && !!map.tileOccupation.getBridgeOnTile(tile)) &&
             !map.tileOccupation.isTileOccupiedBy(tile, gameObject));
         let validTile = finder.getNextTile();
         if (!validTile && gameObject.factoryTrait?.type === FactoryType.NavalUnitType) {

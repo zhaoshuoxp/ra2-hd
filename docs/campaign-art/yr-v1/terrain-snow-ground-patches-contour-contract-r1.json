@@ -1,0 +1,29 @@
+{
+  "schema": "yr-source-pinned-snow-ground-patch-contours-v1",
+  "members": {
+    "clifxl02.sno": "00d7e35dc515229dc6506eb9020201003e7e3191e473ea711a2916123d95b1c0",
+    "slope19.sno": "b048090f89635639cfc47e7ed443e41f2bbdc1a1ff464693128de422adddfe77"
+  },
+  "memberSetIndices": {
+    "clifxl02.sno": 82,
+    "slope19.sno": 9
+  },
+  "setIndices": [
+    9,
+    82
+  ],
+  "palette": {
+    "member": "isosno.pal",
+    "archive": "ra2.mix/cache.mix",
+    "sha256": "9f411f95251d7e62fbdef34b37a9b8361ea15941621a88010d4e2c06486e67aa"
+  },
+  "policy": {
+    "schema": "hd-coherent-member-extra-contours-v1",
+    "maximumNativeDistance": 1,
+    "protectMainBlock": true,
+    "protectInternalCuts": true
+  },
+  "scope": "Only the original clifxl02.sno low ice patch and slope19.sno triangular Snow ramp. Preserve original source masks, main-block contacts, native depth, ramp type, palette and every gameplay field. Retain all inherited terrain and all user-retained Snow building and construction payloads.",
+  "sourceRgbUsedAsOutputTexture": false,
+  "userVisualAcceptance": "PENDING"
+}

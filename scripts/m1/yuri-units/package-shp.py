@@ -17,13 +17,16 @@ parser.add_argument("identity")
 parser.add_argument("--reviews", nargs=2, type=Path, required=True)
 parser.add_argument("--worklist", type=Path, required=True)
 parser.add_argument("--revision", required=True)
+parser.add_argument("--campaign-task-inspection", type=Path,
+    help="Require complete independent export inspection for an original YR task NPC")
 args = parser.parse_args()
-root = Path(".artifacts/yuri-units")
+task_npc = args.campaign_task_inspection is not None
+root = Path(".artifacts/yr-campaign/task-npc-packs" if task_npc else ".artifacts/yuri-units")
 work = json.loads(args.worklist.read_text())
-ledger = json.loads((root / "ledger.json").read_text())
 family_identity = args.identity
 if args.identity == "SLAV":
     # The slave artwork belongs to the complete mixed SMIN demand family.
+    ledger = json.loads((root / "ledger.json").read_text())
     parents = [r["id"] for r in ledger["rows"] if r["rules"].get("Enslaves") == "SLAV"]
     assert parents == ["SMIN"], "Native Enslaves identity changed"
     family_identity = parents[0]
@@ -32,6 +35,30 @@ reviews = [json.loads(p.read_text()) for p in review_paths]
 assert sorted(r["density"] for r in reviews) == [2, 4]
 review = reviews[0]
 source = json.loads(Path(review["sourceFile"]).read_text())
+sha = lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+if task_npc:
+    assert args.identity in ('CAML', 'EINS', 'MUMY', 'RMNV', 'PENTGEN', 'DNOB')
+    assert source['schema'] == 'yr-original-task-infantry-slots-v1'
+    assert source['identity'] == args.identity
+    guide_file = Path(source['originalGuide']['file'])
+    assert sha(guide_file) == source['originalGuide']['sha256']
+    native, = [entry for entry in json.loads(guide_file.read_text())['sources']
+        if entry['identity'] == args.identity]
+    assert native['sha256'] == source['sha256']
+    assert sha(guide_file.parent / 'native' / source['member']) == source['sha256']
+    assert native['palette'] == source['paletteIdentity']
+    assert sha(guide_file.parent / 'native' / native['palette']['member']) == native['palette']['sha256']
+    inspection = json.loads(args.campaign_task_inspection.read_text())
+    assert inspection['status'] == 'PASS_INTERNAL_COMPLETE_NPC_DENSITY_EXPORT_INSPECTION'
+    assert inspection['identity'] == args.identity and inspection['densities'] == [2, 4]
+    assert inspection['manifestSha256'] == [sha(p) for p in review_paths]
+    assert inspection['worklistSha256'] == sha(args.worklist)
+    assert all(entry['worklistSha256'] == inspection['worklistSha256'] for entry in reviews)
+    for batch in work['families'][args.identity]['members'][0]['batches']:
+        assert batch['visualQa'] == 'PASS' and sha(batch['selectedArt']) == batch['selectedArtSha256']
+        for sample in batch['samples']:
+            if sample.get('selectedArt'):
+                assert sha(sample['selectedArt']) == sample['selectedArtSha256']
 member = next(m for m in work["families"][args.identity]["members"] if m["sourceMember"] == source["member"])
 count, source_hash = member["requiredSlots"], member["sourceSha256"]
 assert source["sha256"] == source_hash
@@ -40,10 +67,9 @@ assert review["status"] == "COMPLETE_AUTHORED_SLOT_EXPORT_RUNTIME_PENDING"
 assert [f["frame"] for f in review["frames"]] == list(range(count))
 assert len(review["frames"]) == count and review["sourceSha256"] == source["sha256"]
 assert args.revision.replace("-", "").isalnum()
-pack_id = f"yuri-{Path(source["member"]).stem}-authored"
+pack_id = f"yr-task-npc-{args.identity.lower()}" if task_npc else f"yuri-{Path(source['member']).stem}-authored"
 out = (root / "staged-packs") / pack_id / args.revision
 out.mkdir(parents=True, exist_ok=False)
-sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
 logical = [
     {
         "nativeFrame": i,
@@ -103,10 +129,14 @@ for review in sorted(reviews, key=lambda r: r["density"]):
         data[:, :, 3] = 255
         # Apply the accepted infantry neutral-material policy to new infantry IDs.
         # This changes only classification, never constrains paint to native pixels.
-        policy_identity = 'E2' if args.identity in ('INIT', 'BRUTE', 'VIRUS', 'SLAV') else args.identity
-        data, added, neutral = complete_data(rgba, data, density, policy_identity, source['member'])
-        paint = data[:, :, 0] >= 128
         native_owner = np.any((indices >= 16) & (indices <= 31))
+        policy_identity = 'E2' if args.identity in ('INIT', 'BRUTE', 'VIRUS', 'SLAV', 'RMNV', 'PENTGEN') else args.identity
+        if task_npc and not native_owner:
+            # Original neutral NPC materials, including pink animal skin, stay fixed.
+            added, neutral = 0, 0
+        else:
+            data, added, neutral = complete_data(rgba, data, density, policy_identity, source['member'])
+        paint = data[:, :, 0] >= 128
         if not native_owner:
             assert not paint.any(), f'Unexpected owner material in native neutral frame: {i}'
         elif not f['empty']:
@@ -173,13 +203,13 @@ manifest = {
     "source": {
         "member": source["member"],
         "sha256": source["sha256"],
-        "theater": "TEMPERATE",
+        "theater": source['sourceContexts'][0]['theater'] if task_npc else "TEMPERATE",
         "kind": "resolved-shp-member",
     },
     "logical": {"canvas": source["canvas"], "frames": logical},
     "color": {"representation": "authored-sRGB-RGBA8-plus-RGBA8-data"},
     "variants": variants,
-    "provenance": {
+    "provenance": {} if task_npc else {
         "reviewSha256": [sha(p) for p in review_paths],
         "worklistSha256": sha(args.worklist),
         "representativeAcceptanceSha256": sha(
@@ -188,6 +218,21 @@ manifest = {
         "remap": "Full authored owner-paint components, independently derived without clipping to native coordinates; skin, brown material and hot psychic effects are excluded; original palette verifies per-frame owner-material presence",
     },
 }
+if task_npc:
+    manifest['provenance'] = {
+        'reviewSha256': [sha(p) for p in review_paths],
+        'worklistSha256': sha(args.worklist),
+        'sourceSlotsSha256': sha(Path(review['sourceFile'])),
+        'originalGuide': source['originalGuide'],
+        'sourcePalette': source['paletteIdentity'],
+        'sourceContexts': source['sourceContexts'],
+        'sourceSequences': source['sequences'],
+        'originalShadowRendering': source['originalShadowRendering'],
+        'inspectionSha256': sha(args.campaign_task_inspection),
+        'artStandardSha256': sha(Path('docs/hd-art-standard.md')),
+        'remap': 'Native owner presence gates each frame. Authored red uniform material uses the existing infantry classifier; original neutral frames remain fixed. Native geometry, independent shadow renderer and sequence timing remain unchanged.',
+        'userVisualAcceptance': 'PENDING',
+    }
 (out / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
 report = {
     "status": "COMPLETE_NATIVE_SLOT_PACK_RUNTIME_PENDING",

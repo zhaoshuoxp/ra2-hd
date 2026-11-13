@@ -1,0 +1,60 @@
+{
+  "schema": "yr-original-missing-animation-source-dispositions-v1",
+  "status": "PINNED_SOURCE_AND_EXISTING_RENDERER_QUALIFICATION",
+  "renderer": {
+    "file": "src/engine/renderable/entity/building/BuildingShpHelper.ts",
+    "sha256": "5fd113546253b25c3aee908d20c55d0228bdcf72952cee98913206342393581b",
+    "behavior": "collectAnimShpFiles catches only MissingImageError, warns and skips the absent declaration. Existing available main-body frames remain in the aggregate."
+  },
+  "records": [
+    {
+      "id": "lunar-yacomd-original-missing-buildup",
+      "edition": "yr",
+      "theater": "LUNAR",
+      "identity": "YACOMD",
+      "mission": "sov06lmd.map",
+      "missionSha256": "f55b65fd33a53dd03f61b48259d7732d260a4f97170e6dcf0767a61af82403a4",
+      "family": "yr-sov06-lunar-yacomd-v1",
+      "bodyMember": "ylcomd.shp",
+      "bodySha256": "1405d484b26556f787ea068b9afaf7f60a28a2c55a3f635a05dce48ca219fbb9",
+      "requestedImage": "YACOMDMK",
+      "resolvedMember": "yacomdmk.shp",
+      "originalLookupCandidates": [
+        "ylcomdmk.shp",
+        "ygcomdmk.shp",
+        "yacomdmk.shp"
+      ],
+      "paletteSha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+      "declarations": [
+        {
+          "role": "BUILDUP",
+          "nativeArt": {
+            "Shadow": "yes"
+          },
+          "extraOffset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "role": "UNBUILD",
+          "nativeArt": {
+            "Shadow": "yes",
+            "Reverse": "yes"
+          },
+          "extraOffset": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ],
+      "qualification": "Both source-declared build/unbuild roles resolve to an absent original member after the real Lunar/new-theater fallback. The body and all four source states retain their existing complete HD family. No missing animation is invented, skipped through a new runtime rule or counted as newly authored art."
+    }
+  ],
+  "nativeBodyEvidence": [
+    "../project-history/yr-campaign-implementation-20261104/Evidence/lunar-command-states-2x-r3.json.gz",
+    "../project-history/yr-campaign-implementation-20261104/Evidence/lunar-command-states-4x-r3.json.gz"
+  ],
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "userVisualAcceptance": "PENDING"
+}

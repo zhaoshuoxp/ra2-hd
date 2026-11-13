@@ -22,8 +22,9 @@ describe('accepted neutral voxel demand scope', () => {
         const accepted = { ...allied.vxl, ...yuri.vxl, ...temperate.vxl };
         for (const [identity, declaration] of Object.entries(accepted)) {
             expect(vxlUnitFamilies[identity]).toEqual(declaration);
+            const verifiedTheaters = 'theaters' in declaration ? declaration.theaters : theaters;
             for (const theater of theaters) {
-                expect(vxlUnitAvailableInTheater(vxlUnitFamilies[identity], theater)).toBe(true);
+                expect(vxlUnitAvailableInTheater(vxlUnitFamilies[identity], theater)).toBe(verifiedTheaters.includes(theater));
             }
         }
     });

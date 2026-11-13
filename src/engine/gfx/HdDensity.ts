@@ -5,5 +5,7 @@ export function parseHdDensity(value: unknown): HdDensity {
 }
 
 export function hdTextureBudget(density: HdDensity): number {
-    return (density === 2 ? 512 : 1280) * 1024 * 1024;
+    // Target physical memory: 8GiB at2X, 16GiB at4X. The shared cap covers
+    // terrain, scenery and complete actor families; ownership stays unchanged.
+    return (density === 2 ? 512 : 1536) * 1024 * 1024;
 }

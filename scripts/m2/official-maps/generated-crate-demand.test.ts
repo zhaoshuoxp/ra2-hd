@@ -21,6 +21,10 @@ describe('ordinary generated crate dependencies', () => {
     test('retains map demand without reserving disabled crate families', () => {
         expect([...environmentMapDemand(fixture(false), {})]).toEqual(['TREE01']);
     });
+    test('campaign building rewards retain HD crate dependencies with random crates disabled', () => {
+        const game = { ...fixture(false), campaign: {} };
+        expect([...environmentMapDemand(game, {})].sort()).toEqual(['CRATE', 'TREE01', 'WCRATE']);
+    });
     test('ignores absent rule sources instead of inventing a crate identity', () => {
         const game = fixture(true);
         game.rules.crateRules.waterCrateImg = 'UNREGISTERED';

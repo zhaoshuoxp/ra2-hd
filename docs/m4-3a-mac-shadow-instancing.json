@@ -1,0 +1,4022 @@
+{
+  "schema": "m4-3a-mac-shadow-closeout-v1",
+  "recordedAt": "2026-11-13T09:11:43.118010+00:00",
+  "status": "PROTOTYPE_EVALUATION_COMPLETE_NOT_ADMITTED",
+  "admission": {
+    "defaultEnabled": false,
+    "reliableMacBenefit": false,
+    "stable60": "NOT_PASSED",
+    "sameFrameCorrectness": "PASS_EXACT_RGBA",
+    "crossProcessStartupFidelity": "QUALIFIED_BY_UNRESOLVED_UI_VARIANCE",
+    "lifecycle": "PASS",
+    "hostAndNativeChecks": "PASS",
+    "userVisualAcceptance": "NOT_ESTABLISHED",
+    "newAppOrZip": "NOT_CREATED_UNQUALIFIED_CANDIDATE"
+  },
+  "scope": {
+    "platform": "Mac",
+    "branch": "main",
+    "agents": 0,
+    "newBranchesOrWorktrees": 0,
+    "remotePush": false,
+    "release": false,
+    "windowsWork": false,
+    "resourceFormatMigration": false,
+    "simulationChanges": false,
+    "artworkChanges": false
+  },
+  "identity": {
+    "startingMain": "e334bbb2233c04cd4c583a520b7ca1c1560477b4",
+    "runtimeCommit": "a70ee2a4f50b51b4831cc2c88b79486a8bd5deac",
+    "baselineManifest": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/baseline-runtime.json",
+      "sha256": "e9ba4ce7c0e23bd5f67662900d19baacc64f72d3ad0ac365f14df2ef908fff68"
+    },
+    "candidateManifest": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/candidate-final-runtime.json",
+      "sha256": "989fdc98092f42f51ef719cf29ef3eb9f3b109da076b5cad9f69176de687efc4"
+    },
+    "candidateSourceDiffSha256": "cc149748cb4f44b9d62fcbf23c2e8693fd96c039dae630588c1a56b8899b451a",
+    "candidateRuntimeFiles": 297,
+    "candidateRuntimeBytes": 61424389,
+    "candidateSourceFiles": 1694,
+    "committedSourceVerification": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/source-commit-verification.json",
+      "sha256": "d4f8202b3ca33eaee1dc2f7f0457df28fd415cfe0e8322277339d5ffb8db1da8"
+    },
+    "rebuiltSourceAndProductionVerification": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/post-host-source-verification.json",
+      "sha256": "fc4e7b0ab024620b454858c3821801d666bc055accf1a45e7a67bba8e954d37f"
+    },
+    "formalComparison": "All ten formal windows use the same final production build with explicit off/on switch. Original e334bbb2 pixels and short diagnostics are separate."
+  },
+  "machine": {
+    "receipt": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/machine.json",
+      "sha256": "0750a40afc6b38327cbf633c424c169ba0f9266b8e00ba6c1c1809e295d81a17"
+    },
+    "chip": "Apple M2",
+    "memoryGiB": 24,
+    "model": "Mac14,2",
+    "macOS": "27.2.1 (26B131)",
+    "electron": "44.4.0",
+    "backend": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+    "display": "DELL S2722QC",
+    "logicalSize": [
+      1920,
+      1080
+    ],
+    "scaleFactor": 2,
+    "framebuffer": [
+      3840,
+      2160
+    ],
+    "refreshHz": 59.996700286865234,
+    "power": "AC",
+    "lowPowerMode": 0,
+    "thermal": "Every pre-window nominal; some final readings fair. Per-run receipts retained.",
+    "gpuDuration": "UNAVAILABLE",
+    "actualVram": "UNAVAILABLE",
+    "presentedFrameCount": "UNAVAILABLE"
+  },
+  "resources": {
+    "selectedFiles": 16444,
+    "selectedBytes": 17689836587,
+    "selectedLedgerSha256": "fe938de7f3fb61ba41fa85537e5c905e4d1fa6468df1c0a1d0b8212c4871c0ac",
+    "status": "UNCHANGED"
+  },
+  "performance": {
+    "contract": {
+      "schema": "m4-frame-contract-v1",
+      "seconds": 120,
+      "targetFps": 60,
+      "frameBudgetMs": 16.666666666666668,
+      "cadenceToleranceMs": 0.35,
+      "perSecondToleranceFps": 0.5,
+      "longStallMs": 50,
+      "onePercentLow": "1000 / arithmetic mean of slowest ceil(0.01 * N) intervals",
+      "quantiles": "Nearest rank; every positive interval retained, including first-use and stalls.",
+      "validity": "Foreground throughout; live seven AI; same production runtime/resources/settings/scenario.",
+      "gate": "At least 99% elapsed interval time within 17.0167ms; no two consecutive complete bins below 59.5 callbacks/s; simulation >=99% nominal.",
+      "presentation": "rAF callback cadence is not an independently measured screen-present counter.",
+      "caches": "Fresh process/profile is cold application cache; OS/driver caches are not flushed."
+    },
+    "measurements": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/measurements.json",
+      "sha256": "9adb0cd5a7db50dfe77caddc76f197f17f0e1a50a00ec56de794589d8cf893d3"
+    },
+    "formalWindows": 10,
+    "stable60PassedWindows": 0,
+    "groups": [
+      {
+        "scenario": "yr/sustained",
+        "modes": {
+          "off": {
+            "n": 3,
+            "names": [
+              "formal-sustained-1-off",
+              "formal-sustained-4-off",
+              "formal-sustained-5-off"
+            ],
+            "callbackFps": 53.44641717945412,
+            "callbackFpsRange": [
+              53.33777231570087,
+              53.65654254622798
+            ],
+            "onePercentLow": 16.649078375135204,
+            "submissionMs": 5.4083404567967115,
+            "updateMs": 5.627493325852,
+            "simulationMs": 5.051034872774068,
+            "simulationRatio": 0.9591854111607513
+          },
+          "on": {
+            "n": 3,
+            "names": [
+              "formal-sustained-2-on",
+              "formal-sustained-3-on",
+              "formal-sustained-6-on"
+            ],
+            "callbackFps": 53.641854623897956,
+            "callbackFpsRange": [
+              53.25650355058301,
+              53.89982707137904
+            ],
+            "onePercentLow": 16.55510451866499,
+            "submissionMs": 5.306912930267878,
+            "updateMs": 5.708003258863562,
+            "simulationMs": 5.0183177779830945,
+            "simulationRatio": 0.9608485318711671
+          }
+        },
+        "callbackChangePercent": 0.3656698704192385,
+        "submissionChangePercent": -1.8753909325617268
+      },
+      {
+        "scenario": "ra2/dense",
+        "modes": {
+          "off": {
+            "n": 1,
+            "names": [
+              "formal-ra2-dense-2-off"
+            ],
+            "callbackFps": 55.98796492038011,
+            "callbackFpsRange": [
+              55.98796492038011,
+              55.98796492038011
+            ],
+            "onePercentLow": 18.61458233555183,
+            "submissionMs": 4.345818452297577,
+            "updateMs": 4.950555059650824,
+            "simulationMs": 3.074426339242962,
+            "simulationRatio": 0.9749745906737062
+          },
+          "on": {
+            "n": 1,
+            "names": [
+              "formal-ra2-dense-1-on"
+            ],
+            "callbackFps": 56.28060137914698,
+            "callbackFpsRange": [
+              56.28060137914698,
+              56.28060137914698
+            ],
+            "onePercentLow": 18.507153150948916,
+            "submissionMs": 4.334512141079531,
+            "updateMs": 5.155654426779943,
+            "simulationMs": 2.7172993784045056,
+            "simulationRatio": 0.9759976548404689
+          }
+        },
+        "callbackChangePercent": 0.5226774346648089,
+        "submissionChangePercent": -0.2601652908917007
+      },
+      {
+        "scenario": "yr/overload",
+        "modes": {
+          "off": {
+            "n": 1,
+            "names": [
+              "formal-yr-overload-1-off"
+            ],
+            "callbackFps": 48.70934199936883,
+            "callbackFpsRange": [
+              48.70934199936883,
+              48.70934199936883
+            ],
+            "onePercentLow": 12.824093646303703,
+            "submissionMs": 6.519322613769715,
+            "updateMs": 6.281220492698173,
+            "simulationMs": 4.76059527908781,
+            "simulationRatio": 0.9144284128003776
+          },
+          "on": {
+            "n": 1,
+            "names": [
+              "formal-yr-overload-2-on"
+            ],
+            "callbackFps": 49.00927851792863,
+            "callbackFpsRange": [
+              49.00927851792863,
+              49.00927851792863
+            ],
+            "onePercentLow": 12.55709220281361,
+            "submissionMs": 6.269310608435269,
+            "updateMs": 6.380832200201747,
+            "simulationMs": 4.667490649333781,
+            "simulationRatio": 0.9183794223017578
+          }
+        },
+        "callbackChangePercent": 0.6157679538427718,
+        "submissionChangePercent": -3.8349383846472906
+      }
+    ],
+    "runs": [
+      {
+        "name": "formal-sustained-1-off",
+        "edition": "yr",
+        "scene": "sustained",
+        "mode": "off",
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-1-off/report.json",
+          "sha256": "03b1c5e30137358a89e2d4ec0f58f61523cff070670150e53654817ac6b797e1"
+        },
+        "rawSamples": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-1-off/samples.json",
+          "sha256": "aaf4c13bd982f151208ff81c3381e9e3f255c8f3beb42e877c2a4c56455ae733"
+        },
+        "durationMs": 120027.6399999857,
+        "sampleCount": 6402,
+        "callbackFps": 53.33777231570087,
+        "onePercentLow": 16.522854285103275,
+        "frameMs": {
+          "n": 6402,
+          "mean": 18.748439550139093,
+          "p50": 17.17500001192093,
+          "p95": 28.96500000357628,
+          "p99": 37.810000002384186,
+          "max": 482.9599999785423
+        },
+        "withinCadenceBudgetTimeFraction": 0.37941335282340094,
+        "longStalls": [
+          {
+            "atMs": 482.9599999785423,
+            "ms": 482.9599999785423,
+            "tick": 0
+          },
+          {
+            "atMs": 642.6999999880791,
+            "ms": 159.74000000953674,
+            "tick": 1
+          },
+          {
+            "atMs": 761.1299999952316,
+            "ms": 68.75499999523163,
+            "tick": 4
+          },
+          {
+            "atMs": 862.6899999976158,
+            "ms": 52.400000005960464,
+            "tick": 7
+          },
+          {
+            "atMs": 1077.405000001192,
+            "ms": 80.95500001311302,
+            "tick": 11
+          },
+          {
+            "atMs": 1856.6949999928474,
+            "ms": 66.77500000596046,
+            "tick": 54
+          },
+          {
+            "atMs": 6265.780000001192,
+            "ms": 136.5,
+            "tick": 321
+          },
+          {
+            "atMs": 6951.42999997735,
+            "ms": 66.86499997973442,
+            "tick": 359
+          },
+          {
+            "atMs": 8013.114999979734,
+            "ms": 129.23999997973442,
+            "tick": 421
+          },
+          {
+            "atMs": 8501.209999978542,
+            "ms": 63.54499998688698,
+            "tick": 448
+          },
+          {
+            "atMs": 12359.219999998808,
+            "ms": 50.72500002384186,
+            "tick": 674
+          },
+          {
+            "atMs": 12725.030000001192,
+            "ms": 62.51000002026558,
+            "tick": 697
+          },
+          {
+            "atMs": 12823.144999980927,
+            "ms": 62.48499998450279,
+            "tick": 704
+          },
+          {
+            "atMs": 13177.109999984503,
+            "ms": 83.0949999988079,
+            "tick": 725
+          },
+          {
+            "atMs": 20524.634999990463,
+            "ms": 92.15999999642372,
+            "tick": 1183
+          },
+          {
+            "atMs": 22509.089999973774,
+            "ms": 62.61999997496605,
+            "tick": 1308
+          },
+          {
+            "atMs": 23712.139999985695,
+            "ms": 52.889999985694885,
+            "tick": 1387
+          },
+          {
+            "atMs": 63192.67499998212,
+            "ms": 73.09999999403954,
+            "tick": 3983
+          },
+          {
+            "atMs": 63717.20999997854,
+            "ms": 51.275000005960464,
+            "tick": 4019
+          },
+          {
+            "atMs": 79114.50999999046,
+            "ms": 67.42500001192093,
+            "tick": 5041
+          },
+          {
+            "atMs": 80688.76999998093,
+            "ms": 58.269999980926514,
+            "tick": 5142
+          },
+          {
+            "atMs": 91864.75,
+            "ms": 81.30000001192093,
+            "tick": 5882
+          },
+          {
+            "atMs": 104436.25499999523,
+            "ms": 55.74000000953674,
+            "tick": 6721
+          }
+        ],
+        "continuousLowBins": [
+          {
+            "startSecond": 0,
+            "endSecond": 38,
+            "seconds": 38
+          },
+          {
+            "startSecond": 43,
+            "endSecond": 44,
+            "seconds": 1
+          },
+          {
+            "startSecond": 47,
+            "endSecond": 55,
+            "seconds": 8
+          },
+          {
+            "startSecond": 56,
+            "endSecond": 64,
+            "seconds": 8
+          },
+          {
+            "startSecond": 66,
+            "endSecond": 67,
+            "seconds": 1
+          },
+          {
+            "startSecond": 68,
+            "endSecond": 69,
+            "seconds": 1
+          },
+          {
+            "startSecond": 70,
+            "endSecond": 72,
+            "seconds": 2
+          },
+          {
+            "startSecond": 73,
+            "endSecond": 74,
+            "seconds": 1
+          },
+          {
+            "startSecond": 77,
+            "endSecond": 83,
+            "seconds": 6
+          },
+          {
+            "startSecond": 84,
+            "endSecond": 88,
+            "seconds": 4
+          },
+          {
+            "startSecond": 90,
+            "endSecond": 93,
+            "seconds": 3
+          },
+          {
+            "startSecond": 94,
+            "endSecond": 96,
+            "seconds": 2
+          },
+          {
+            "startSecond": 97,
+            "endSecond": 100,
+            "seconds": 3
+          },
+          {
+            "startSecond": 101,
+            "endSecond": 102,
+            "seconds": 1
+          },
+          {
+            "startSecond": 103,
+            "endSecond": 105,
+            "seconds": 2
+          },
+          {
+            "startSecond": 106,
+            "endSecond": 120,
+            "seconds": 14
+          }
+        ],
+        "simulationRatio": 0.9558292233850436,
+        "ticksPerSecond": 64.51847257849045,
+        "cpuUpdateMs": {
+          "n": 6402,
+          "mean": 5.634828178808489,
+          "p50": 5.384999990463257,
+          "p95": 8.094999998807907,
+          "p99": 9.925000011920929,
+          "max": 331.625
+        },
+        "cpuRenderSubmissionMs": {
+          "n": 6402,
+          "mean": 5.396251952655611,
+          "p50": 4.990000009536743,
+          "p95": 8.900000005960464,
+          "p99": 10.770000010728836,
+          "max": 150.37999999523163
+        },
+        "cpuSimulationMs": {
+          "n": 6402,
+          "mean": 4.973330209210343,
+          "p50": 3.8250000178813934,
+          "p95": 11.705000013113022,
+          "p99": 20.520000010728836,
+          "max": 109.9500000178814
+        },
+        "callbackWorkMs": {
+          "n": 6402,
+          "mean": 16.004410340674443,
+          "p50": 14.629999995231628,
+          "p95": 25.769999980926514,
+          "p99": 32.44999998807907,
+          "max": 482.0049999952316
+        },
+        "objectRanges": {
+          "units": {
+            "min": 236,
+            "max": 392
+          },
+          "buildings": {
+            "min": 44,
+            "max": 128
+          },
+          "projectiles": {
+            "min": 0,
+            "max": 10
+          },
+          "moving": {
+            "min": 0,
+            "max": 121
+          },
+          "firing": {
+            "min": 0,
+            "max": 28
+          },
+          "objects": {
+            "min": 2357,
+            "max": 2485
+          }
+        },
+        "shadowRanges": {
+          "registered": {
+            "min": 140,
+            "max": 341
+          },
+          "instances": {
+            "min": 0,
+            "max": 0
+          },
+          "batches": {
+            "min": 0,
+            "max": 0
+          },
+          "uploadedBytes": {
+            "min": 0,
+            "max": 0
+          },
+          "capacity": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "thermal": {
+          "initial": "nominal",
+          "preWindow": "nominal",
+          "final": "nominal",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 0.5378749999999854
+          }
+        },
+        "callbackGate": false,
+        "placementSha256": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "map": {
+          "name": "xmp27t8.map",
+          "bytes": 370329,
+          "sha256": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146"
+        }
+      },
+      {
+        "name": "formal-sustained-2-on",
+        "edition": "yr",
+        "scene": "sustained",
+        "mode": "on",
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-2-on/report.json",
+          "sha256": "969a03864928c67e9c0e49b86be1dd80f3ff9a9003c5f4d56bec5227fdee1b31"
+        },
+        "rawSamples": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-2-on/samples.json",
+          "sha256": "29f4ebbdacc76a38fe7fc7a2736e04ee8e51b8cb81a2c97ac5b7dbe00435b5a6"
+        },
+        "durationMs": 120013.11500000954,
+        "sampleCount": 6453,
+        "callbackFps": 53.769233249731826,
+        "onePercentLow": 16.84561897286313,
+        "frameMs": {
+          "n": 6453,
+          "mean": 18.597996280800366,
+          "p50": 17.115000009536743,
+          "p95": 29.044999986886978,
+          "p99": 38.014999985694885,
+          "max": 447.39500001072884
+        },
+        "withinCadenceBudgetTimeFraction": 0.39286515688006574,
+        "longStalls": [
+          {
+            "atMs": 447.39500001072884,
+            "ms": 447.39500001072884,
+            "tick": 0
+          },
+          {
+            "atMs": 597.0200000107288,
+            "ms": 149.625,
+            "tick": 1
+          },
+          {
+            "atMs": 708.9600000083447,
+            "ms": 62.43000000715256,
+            "tick": 4
+          },
+          {
+            "atMs": 852.8499999940395,
+            "ms": 50.229999989271164,
+            "tick": 9
+          },
+          {
+            "atMs": 952.2400000095367,
+            "ms": 53.76000002026558,
+            "tick": 11
+          },
+          {
+            "atMs": 1026.280000001192,
+            "ms": 74.03999999165535,
+            "tick": 13
+          },
+          {
+            "atMs": 1729.5999999940395,
+            "ms": 69.875,
+            "tick": 54
+          },
+          {
+            "atMs": 5894.294999986887,
+            "ms": 124.78499999642372,
+            "tick": 313
+          },
+          {
+            "atMs": 6585.1500000059605,
+            "ms": 62.224999994039536,
+            "tick": 357
+          },
+          {
+            "atMs": 7537.840000003576,
+            "ms": 105.78999999165535,
+            "tick": 415
+          },
+          {
+            "atMs": 8020.960000008345,
+            "ms": 62.04000002145767,
+            "tick": 445
+          },
+          {
+            "atMs": 11987.014999985695,
+            "ms": 63.974999994039536,
+            "tick": 691
+          },
+          {
+            "atMs": 12212.064999997616,
+            "ms": 87.05000001192093,
+            "tick": 704
+          },
+          {
+            "atMs": 12448.435000002384,
+            "ms": 82.62000000476837,
+            "tick": 717
+          },
+          {
+            "atMs": 19693.860000014305,
+            "ms": 71.19000002741814,
+            "tick": 1173
+          },
+          {
+            "atMs": 21628.194999992847,
+            "ms": 61.50999999046326,
+            "tick": 1297
+          },
+          {
+            "atMs": 52338.89500001073,
+            "ms": 51.90999999642372,
+            "tick": 3319
+          },
+          {
+            "atMs": 62371.534999996424,
+            "ms": 74.77500000596046,
+            "tick": 3982
+          },
+          {
+            "atMs": 78229.18999999762,
+            "ms": 70.31499999761581,
+            "tick": 5041
+          },
+          {
+            "atMs": 79789.8600000143,
+            "ms": 62.49000000953674,
+            "tick": 5142
+          },
+          {
+            "atMs": 90928.53000000119,
+            "ms": 63.375,
+            "tick": 5882
+          },
+          {
+            "atMs": 103513.44999998808,
+            "ms": 72.13499999046326,
+            "tick": 6721
+          },
+          {
+            "atMs": 107949.1399999857,
+            "ms": 51.48999997973442,
+            "tick": 7016
+          }
+        ],
+        "continuousLowBins": [
+          {
+            "startSecond": 0,
+            "endSecond": 35,
+            "seconds": 35
+          },
+          {
+            "startSecond": 36,
+            "endSecond": 37,
+            "seconds": 1
+          },
+          {
+            "startSecond": 42,
+            "endSecond": 43,
+            "seconds": 1
+          },
+          {
+            "startSecond": 45,
+            "endSecond": 46,
+            "seconds": 1
+          },
+          {
+            "startSecond": 47,
+            "endSecond": 50,
+            "seconds": 3
+          },
+          {
+            "startSecond": 51,
+            "endSecond": 55,
+            "seconds": 4
+          },
+          {
+            "startSecond": 56,
+            "endSecond": 65,
+            "seconds": 9
+          },
+          {
+            "startSecond": 68,
+            "endSecond": 71,
+            "seconds": 3
+          },
+          {
+            "startSecond": 74,
+            "endSecond": 75,
+            "seconds": 1
+          },
+          {
+            "startSecond": 76,
+            "endSecond": 77,
+            "seconds": 1
+          },
+          {
+            "startSecond": 78,
+            "endSecond": 81,
+            "seconds": 3
+          },
+          {
+            "startSecond": 83,
+            "endSecond": 87,
+            "seconds": 4
+          },
+          {
+            "startSecond": 88,
+            "endSecond": 89,
+            "seconds": 1
+          },
+          {
+            "startSecond": 90,
+            "endSecond": 92,
+            "seconds": 2
+          },
+          {
+            "startSecond": 94,
+            "endSecond": 95,
+            "seconds": 1
+          },
+          {
+            "startSecond": 96,
+            "endSecond": 98,
+            "seconds": 2
+          },
+          {
+            "startSecond": 100,
+            "endSecond": 101,
+            "seconds": 1
+          },
+          {
+            "startSecond": 103,
+            "endSecond": 104,
+            "seconds": 1
+          },
+          {
+            "startSecond": 105,
+            "endSecond": 112,
+            "seconds": 7
+          },
+          {
+            "startSecond": 113,
+            "endSecond": 120,
+            "seconds": 7
+          }
+        ],
+        "simulationRatio": 0.9634749471307401,
+        "ticksPerSecond": 65.03455893132497,
+        "cpuUpdateMs": {
+          "n": 6453,
+          "mean": 5.678355028684539,
+          "p50": 5.455000013113022,
+          "p95": 8.004999995231628,
+          "p99": 9.75,
+          "max": 324.4050000011921
+        },
+        "cpuRenderSubmissionMs": {
+          "n": 6453,
+          "mean": 5.312378738525208,
+          "p50": 4.975000023841858,
+          "p95": 8.620000004768372,
+          "p99": 10.334999978542328,
+          "max": 122.2199999988079
+        },
+        "cpuSimulationMs": {
+          "n": 6453,
+          "mean": 4.95527971469763,
+          "p50": 3.834999978542328,
+          "p95": 11.555000007152557,
+          "p99": 20.87000000476837,
+          "max": 106.84000000357628
+        },
+        "callbackWorkMs": {
+          "n": 6453,
+          "mean": 15.946013481907377,
+          "p50": 14.675000011920929,
+          "p95": 25.185000002384186,
+          "p99": 32.764999985694885,
+          "max": 446.625
+        },
+        "objectRanges": {
+          "units": {
+            "min": 234,
+            "max": 392
+          },
+          "buildings": {
+            "min": 44,
+            "max": 130
+          },
+          "projectiles": {
+            "min": 0,
+            "max": 17
+          },
+          "moving": {
+            "min": 0,
+            "max": 134
+          },
+          "firing": {
+            "min": 0,
+            "max": 28
+          },
+          "objects": {
+            "min": 2353,
+            "max": 2491
+          }
+        },
+        "shadowRanges": {
+          "registered": {
+            "min": 140,
+            "max": 324
+          },
+          "instances": {
+            "min": 7,
+            "max": 202
+          },
+          "batches": {
+            "min": 3,
+            "max": 22
+          },
+          "uploadedBytes": {
+            "min": 448,
+            "max": 12928
+          },
+          "capacity": {
+            "min": 160,
+            "max": 752
+          }
+        },
+        "thermal": {
+          "initial": "nominal",
+          "preWindow": "nominal",
+          "final": "nominal",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 0.769083999999566
+          }
+        },
+        "callbackGate": false,
+        "placementSha256": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "map": {
+          "name": "xmp27t8.map",
+          "bytes": 370329,
+          "sha256": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146"
+        }
+      },
+      {
+        "name": "formal-sustained-3-on",
+        "edition": "yr",
+        "scene": "sustained",
+        "mode": "on",
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-3-on/report.json",
+          "sha256": "0ca49b2bb5913b6d34d29898f81377d71a0e60138989705bfb61a6fcbefb4134"
+        },
+        "rawSamples": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-3-on/samples.json",
+          "sha256": "e172cbcdd002b3df4192941197eba7db651920e4dda952a718527b94844e7549"
+        },
+        "durationMs": 120023.17999997735,
+        "sampleCount": 6392,
+        "callbackFps": 53.25650355058301,
+        "onePercentLow": 16.17366472505761,
+        "frameMs": {
+          "n": 6392,
+          "mean": 18.777049436792264,
+          "p50": 17.030000001192093,
+          "p95": 29.455000013113022,
+          "p99": 40.38500002026558,
+          "max": 460.0300000011921
+        },
+        "withinCadenceBudgetTimeFraction": 0.39773813997321084,
+        "longStalls": [
+          {
+            "atMs": 460.0300000011921,
+            "ms": 460.0300000011921,
+            "tick": 0
+          },
+          {
+            "atMs": 617.3599999845028,
+            "ms": 157.3299999833107,
+            "tick": 1
+          },
+          {
+            "atMs": 728.2749999761581,
+            "ms": 64.5949999988079,
+            "tick": 4
+          },
+          {
+            "atMs": 1035.5349999964237,
+            "ms": 78.4200000166893,
+            "tick": 11
+          },
+          {
+            "atMs": 1786.744999974966,
+            "ms": 74.39499998092651,
+            "tick": 54
+          },
+          {
+            "atMs": 6430.689999997616,
+            "ms": 129.6550000011921,
+            "tick": 325
+          },
+          {
+            "atMs": 7232.435000002384,
+            "ms": 85.99500000476837,
+            "tick": 371
+          },
+          {
+            "atMs": 8371.949999988079,
+            "ms": 110.93500000238419,
+            "tick": 433
+          },
+          {
+            "atMs": 8871.169999986887,
+            "ms": 63.229999989271164,
+            "tick": 461
+          },
+          {
+            "atMs": 11473.514999985695,
+            "ms": 56.520000010728836,
+            "tick": 617
+          },
+          {
+            "atMs": 12972.05499997735,
+            "ms": 95.79499998688698,
+            "tick": 704
+          },
+          {
+            "atMs": 13023.024999976158,
+            "ms": 50.96999999880791,
+            "tick": 709
+          },
+          {
+            "atMs": 13409.114999979734,
+            "ms": 57.28499999642372,
+            "tick": 731
+          },
+          {
+            "atMs": 13802.034999996424,
+            "ms": 77.53499999642372,
+            "tick": 755
+          },
+          {
+            "atMs": 20554.280000001192,
+            "ms": 86.0300000011921,
+            "tick": 1184
+          },
+          {
+            "atMs": 22449.134999990463,
+            "ms": 70.99000000953674,
+            "tick": 1306
+          },
+          {
+            "atMs": 24786.42999997735,
+            "ms": 54.394999980926514,
+            "tick": 1459
+          },
+          {
+            "atMs": 58146.12999999523,
+            "ms": 58.58500000834465,
+            "tick": 3655
+          },
+          {
+            "atMs": 63183.29499998689,
+            "ms": 71.99000000953674,
+            "tick": 3984
+          },
+          {
+            "atMs": 63742.534999996424,
+            "ms": 54.980000019073486,
+            "tick": 4021
+          },
+          {
+            "atMs": 79129.06499999762,
+            "ms": 55.96000000834465,
+            "tick": 5041
+          },
+          {
+            "atMs": 80729.14999997616,
+            "ms": 61.75999999046326,
+            "tick": 5144
+          },
+          {
+            "atMs": 91818.58499997854,
+            "ms": 65.84000000357628,
+            "tick": 5882
+          },
+          {
+            "atMs": 104425.86999997497,
+            "ms": 59.839999973773956,
+            "tick": 6721
+          }
+        ],
+        "continuousLowBins": [
+          {
+            "startSecond": 0,
+            "endSecond": 37,
+            "seconds": 37
+          },
+          {
+            "startSecond": 38,
+            "endSecond": 39,
+            "seconds": 1
+          },
+          {
+            "startSecond": 40,
+            "endSecond": 41,
+            "seconds": 1
+          },
+          {
+            "startSecond": 42,
+            "endSecond": 43,
+            "seconds": 1
+          },
+          {
+            "startSecond": 44,
+            "endSecond": 45,
+            "seconds": 1
+          },
+          {
+            "startSecond": 47,
+            "endSecond": 53,
+            "seconds": 6
+          },
+          {
+            "startSecond": 54,
+            "endSecond": 55,
+            "seconds": 1
+          },
+          {
+            "startSecond": 56,
+            "endSecond": 59,
+            "seconds": 3
+          },
+          {
+            "startSecond": 60,
+            "endSecond": 64,
+            "seconds": 4
+          },
+          {
+            "startSecond": 67,
+            "endSecond": 68,
+            "seconds": 1
+          },
+          {
+            "startSecond": 70,
+            "endSecond": 72,
+            "seconds": 2
+          },
+          {
+            "startSecond": 73,
+            "endSecond": 74,
+            "seconds": 1
+          },
+          {
+            "startSecond": 75,
+            "endSecond": 76,
+            "seconds": 1
+          },
+          {
+            "startSecond": 77,
+            "endSecond": 84,
+            "seconds": 7
+          },
+          {
+            "startSecond": 85,
+            "endSecond": 89,
+            "seconds": 4
+          },
+          {
+            "startSecond": 90,
+            "endSecond": 93,
+            "seconds": 3
+          },
+          {
+            "startSecond": 94,
+            "endSecond": 95,
+            "seconds": 1
+          },
+          {
+            "startSecond": 96,
+            "endSecond": 99,
+            "seconds": 3
+          },
+          {
+            "startSecond": 101,
+            "endSecond": 102,
+            "seconds": 1
+          },
+          {
+            "startSecond": 104,
+            "endSecond": 105,
+            "seconds": 1
+          },
+          {
+            "startSecond": 106,
+            "endSecond": 120,
+            "seconds": 14
+          }
+        ],
+        "simulationRatio": 0.9564819062452908,
+        "ticksPerSecond": 64.56252867155713,
+        "cpuUpdateMs": {
+          "n": 6392,
+          "mean": 5.824077753534305,
+          "p50": 5.560000002384186,
+          "p95": 8.365000009536743,
+          "p99": 10.139999985694885,
+          "max": 329.5349999964237
+        },
+        "cpuRenderSubmissionMs": {
+          "n": 6392,
+          "mean": 5.2947739362017305,
+          "p50": 4.935000002384186,
+          "p95": 8.6700000166893,
+          "p99": 10.350000023841858,
+          "max": 129.8299999833107
+        },
+        "cpuSimulationMs": {
+          "n": 6392,
+          "mean": 5.1389338233705155,
+          "p50": 3.905000001192093,
+          "p95": 11.905000001192093,
+          "p99": 21.415000021457672,
+          "max": 107.93500000238419
+        },
+        "callbackWorkMs": {
+          "n": 6392,
+          "mean": 16.25778551310655,
+          "p50": 14.765000015497208,
+          "p95": 26.224999994039536,
+          "p99": 33.20000001788139,
+          "max": 459.3649999797344
+        },
+        "objectRanges": {
+          "units": {
+            "min": 236,
+            "max": 392
+          },
+          "buildings": {
+            "min": 44,
+            "max": 128
+          },
+          "projectiles": {
+            "min": 0,
+            "max": 15
+          },
+          "moving": {
+            "min": 0,
+            "max": 117
+          },
+          "firing": {
+            "min": 0,
+            "max": 25
+          },
+          "objects": {
+            "min": 2357,
+            "max": 2486
+          }
+        },
+        "shadowRanges": {
+          "registered": {
+            "min": 140,
+            "max": 344
+          },
+          "instances": {
+            "min": 7,
+            "max": 202
+          },
+          "batches": {
+            "min": 3,
+            "max": 24
+          },
+          "uploadedBytes": {
+            "min": 448,
+            "max": 12928
+          },
+          "capacity": {
+            "min": 176,
+            "max": 672
+          }
+        },
+        "thermal": {
+          "initial": "nominal",
+          "preWindow": "nominal",
+          "final": "fair",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 0.9229579999991984
+          }
+        },
+        "callbackGate": false,
+        "placementSha256": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "map": {
+          "name": "xmp27t8.map",
+          "bytes": 370329,
+          "sha256": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146"
+        }
+      },
+      {
+        "name": "formal-sustained-4-off",
+        "edition": "yr",
+        "scene": "sustained",
+        "mode": "off",
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-4-off/report.json",
+          "sha256": "9d4550988d88602f455648dd43c14ffd991568b979024813878e68e69923e306"
+        },
+        "rawSamples": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-4-off/samples.json",
+          "sha256": "6e31587d4d4d8845b2c6e426f735a2073f4ba6f20a9897dab4d11a91d2fec52a"
+        },
+        "durationMs": 120011.4849999845,
+        "sampleCount": 6402,
+        "callbackFps": 53.34493667643349,
+        "onePercentLow": 16.58408642075332,
+        "frameMs": {
+          "n": 6402,
+          "mean": 18.745921587001828,
+          "p50": 17.169999986886978,
+          "p95": 28.759999990463257,
+          "p99": 37.86500000953674,
+          "max": 462.97499999403954
+        },
+        "withinCadenceBudgetTimeFraction": 0.3885869082915848,
+        "longStalls": [
+          {
+            "atMs": 462.97499999403954,
+            "ms": 462.97499999403954,
+            "tick": 0
+          },
+          {
+            "atMs": 619.3700000047684,
+            "ms": 156.39500001072884,
+            "tick": 1
+          },
+          {
+            "atMs": 725.8599999845028,
+            "ms": 61.82499998807907,
+            "tick": 4
+          },
+          {
+            "atMs": 990.6349999904633,
+            "ms": 51.94499999284744,
+            "tick": 11
+          },
+          {
+            "atMs": 1068.0799999833107,
+            "ms": 77.44499999284744,
+            "tick": 13
+          },
+          {
+            "atMs": 1809.2700000107288,
+            "ms": 73.84500002861023,
+            "tick": 54
+          },
+          {
+            "atMs": 6074.159999996424,
+            "ms": 123.87000000476837,
+            "tick": 320
+          },
+          {
+            "atMs": 6805.125,
+            "ms": 71.99500000476837,
+            "tick": 363
+          },
+          {
+            "atMs": 7816.159999996424,
+            "ms": 123,
+            "tick": 421
+          },
+          {
+            "atMs": 8292.799999982119,
+            "ms": 68.04499998688698,
+            "tick": 449
+          },
+          {
+            "atMs": 12431.074999988079,
+            "ms": 87.94499999284744,
+            "tick": 704
+          },
+          {
+            "atMs": 12505.430000007153,
+            "ms": 74.35500001907349,
+            "tick": 709
+          },
+          {
+            "atMs": 12905.194999992847,
+            "ms": 84.4249999821186,
+            "tick": 733
+          },
+          {
+            "atMs": 20138.069999992847,
+            "ms": 74.90000000596046,
+            "tick": 1186
+          },
+          {
+            "atMs": 22114.919999986887,
+            "ms": 67.18999999761581,
+            "tick": 1310
+          },
+          {
+            "atMs": 62807.45499998331,
+            "ms": 90.14999997615814,
+            "tick": 3983
+          },
+          {
+            "atMs": 78659.07499998808,
+            "ms": 66.65999999642372,
+            "tick": 5041
+          },
+          {
+            "atMs": 80270.86500000954,
+            "ms": 64.55500000715256,
+            "tick": 5145
+          },
+          {
+            "atMs": 91343.59999999404,
+            "ms": 64.75,
+            "tick": 5882
+          },
+          {
+            "atMs": 103920.31000000238,
+            "ms": 63.88500002026558,
+            "tick": 6721
+          }
+        ],
+        "continuousLowBins": [
+          {
+            "startSecond": 0,
+            "endSecond": 37,
+            "seconds": 37
+          },
+          {
+            "startSecond": 38,
+            "endSecond": 43,
+            "seconds": 5
+          },
+          {
+            "startSecond": 46,
+            "endSecond": 55,
+            "seconds": 9
+          },
+          {
+            "startSecond": 56,
+            "endSecond": 58,
+            "seconds": 2
+          },
+          {
+            "startSecond": 59,
+            "endSecond": 64,
+            "seconds": 5
+          },
+          {
+            "startSecond": 66,
+            "endSecond": 67,
+            "seconds": 1
+          },
+          {
+            "startSecond": 70,
+            "endSecond": 72,
+            "seconds": 2
+          },
+          {
+            "startSecond": 74,
+            "endSecond": 75,
+            "seconds": 1
+          },
+          {
+            "startSecond": 76,
+            "endSecond": 82,
+            "seconds": 6
+          },
+          {
+            "startSecond": 83,
+            "endSecond": 85,
+            "seconds": 2
+          },
+          {
+            "startSecond": 86,
+            "endSecond": 87,
+            "seconds": 1
+          },
+          {
+            "startSecond": 89,
+            "endSecond": 92,
+            "seconds": 3
+          },
+          {
+            "startSecond": 93,
+            "endSecond": 95,
+            "seconds": 2
+          },
+          {
+            "startSecond": 96,
+            "endSecond": 98,
+            "seconds": 2
+          },
+          {
+            "startSecond": 100,
+            "endSecond": 101,
+            "seconds": 1
+          },
+          {
+            "startSecond": 103,
+            "endSecond": 104,
+            "seconds": 1
+          },
+          {
+            "startSecond": 106,
+            "endSecond": 113,
+            "seconds": 7
+          },
+          {
+            "startSecond": 114,
+            "endSecond": 120,
+            "seconds": 6
+          }
+        ],
+        "simulationRatio": 0.9610191335716596,
+        "ticksPerSecond": 64.86879151608703,
+        "cpuUpdateMs": {
+          "n": 6402,
+          "mean": 5.691619806189494,
+          "p50": 5.465000003576279,
+          "p95": 7.965000003576279,
+          "p99": 9.985000014305115,
+          "max": 336.06999999284744
+        },
+        "cpuRenderSubmissionMs": {
+          "n": 6402,
+          "mean": 5.483142767812602,
+          "p50": 5.109999984502792,
+          "p95": 8.889999985694885,
+          "p99": 11.034999996423721,
+          "max": 126.31000000238419
+        },
+        "cpuSimulationMs": {
+          "n": 6402,
+          "mean": 5.121416745079528,
+          "p50": 3.9800000190734863,
+          "p95": 11.705000013113022,
+          "p99": 20.8299999833107,
+          "max": 108.625
+        },
+        "callbackWorkMs": {
+          "n": 6402,
+          "mean": 16.296179319081624,
+          "p50": 14.969999998807907,
+          "p95": 25.75499999523163,
+          "p99": 33.25499999523163,
+          "max": 462.3799999952316
+        },
+        "objectRanges": {
+          "units": {
+            "min": 236,
+            "max": 392
+          },
+          "buildings": {
+            "min": 44,
+            "max": 129
+          },
+          "projectiles": {
+            "min": 0,
+            "max": 11
+          },
+          "moving": {
+            "min": 0,
+            "max": 135
+          },
+          "firing": {
+            "min": 0,
+            "max": 26
+          },
+          "objects": {
+            "min": 2355,
+            "max": 2487
+          }
+        },
+        "shadowRanges": {
+          "registered": {
+            "min": 140,
+            "max": 330
+          },
+          "instances": {
+            "min": 0,
+            "max": 0
+          },
+          "batches": {
+            "min": 0,
+            "max": 0
+          },
+          "uploadedBytes": {
+            "min": 0,
+            "max": 0
+          },
+          "capacity": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "thermal": {
+          "initial": "fair",
+          "preWindow": "nominal",
+          "final": "fair",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 20012.555
+          }
+        },
+        "callbackGate": false,
+        "placementSha256": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "map": {
+          "name": "xmp27t8.map",
+          "bytes": 370329,
+          "sha256": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146"
+        }
+      },
+      {
+        "name": "formal-sustained-5-off",
+        "edition": "yr",
+        "scene": "sustained",
+        "mode": "off",
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-5-off/report.json",
+          "sha256": "030a2f341a7d551193359aa5781c41de6f83029bf8d399867bcf28d9a08404bb"
+        },
+        "rawSamples": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-5-off/samples.json",
+          "sha256": "2c10c8de5aecf9e2fb3c232040f4e73a7e027e7149de3948f48a5b673bbad827"
+        },
+        "durationMs": 120004.10499998927,
+        "sampleCount": 6439,
+        "callbackFps": 53.65654254622798,
+        "onePercentLow": 16.84029441954902,
+        "frameMs": {
+          "n": 6439,
+          "mean": 18.637056219909184,
+          "p50": 17.12999999523163,
+          "p95": 28.819999992847443,
+          "p99": 38.025000005960464,
+          "max": 456.7349999845028
+        },
+        "withinCadenceBudgetTimeFraction": 0.38953762418319915,
+        "longStalls": [
+          {
+            "atMs": 456.7349999845028,
+            "ms": 456.7349999845028,
+            "tick": 0
+          },
+          {
+            "atMs": 613.8100000023842,
+            "ms": 157.0750000178814,
+            "tick": 1
+          },
+          {
+            "atMs": 726.4950000047684,
+            "ms": 66.46000000834465,
+            "tick": 4
+          },
+          {
+            "atMs": 1028.7249999940395,
+            "ms": 81.25999999046326,
+            "tick": 11
+          },
+          {
+            "atMs": 1784.2100000083447,
+            "ms": 72.16500002145767,
+            "tick": 54
+          },
+          {
+            "atMs": 5056.0199999809265,
+            "ms": 57.66999998688698,
+            "tick": 254
+          },
+          {
+            "atMs": 6123.384999990463,
+            "ms": 129.3599999845028,
+            "tick": 316
+          },
+          {
+            "atMs": 6824.254999995232,
+            "ms": 67.2199999988079,
+            "tick": 357
+          },
+          {
+            "atMs": 7853.180000007153,
+            "ms": 103.72500002384186,
+            "tick": 417
+          },
+          {
+            "atMs": 8353.555000007153,
+            "ms": 65.23000001907349,
+            "tick": 446
+          },
+          {
+            "atMs": 12525.34999999404,
+            "ms": 66.93999999761581,
+            "tick": 701
+          },
+          {
+            "atMs": 12643.609999984503,
+            "ms": 91.0799999833107,
+            "tick": 704
+          },
+          {
+            "atMs": 12983.740000009537,
+            "ms": 80.41000002622604,
+            "tick": 726
+          },
+          {
+            "atMs": 20152.019999980927,
+            "ms": 71.24499997496605,
+            "tick": 1186
+          },
+          {
+            "atMs": 22032.055000007153,
+            "ms": 69.9200000166893,
+            "tick": 1305
+          },
+          {
+            "atMs": 62931.764999985695,
+            "ms": 69.7049999833107,
+            "tick": 3986
+          },
+          {
+            "atMs": 78754.22999998927,
+            "ms": 55.724999994039536,
+            "tick": 5041
+          },
+          {
+            "atMs": 80315.875,
+            "ms": 61.360000014305115,
+            "tick": 5142
+          },
+          {
+            "atMs": 91441.21500000358,
+            "ms": 65.25499999523163,
+            "tick": 5882
+          },
+          {
+            "atMs": 104027.43000000715,
+            "ms": 57.58000001311302,
+            "tick": 6721
+          }
+        ],
+        "continuousLowBins": [
+          {
+            "startSecond": 0,
+            "endSecond": 37,
+            "seconds": 37
+          },
+          {
+            "startSecond": 38,
+            "endSecond": 41,
+            "seconds": 3
+          },
+          {
+            "startSecond": 44,
+            "endSecond": 45,
+            "seconds": 1
+          },
+          {
+            "startSecond": 46,
+            "endSecond": 47,
+            "seconds": 1
+          },
+          {
+            "startSecond": 48,
+            "endSecond": 55,
+            "seconds": 7
+          },
+          {
+            "startSecond": 57,
+            "endSecond": 58,
+            "seconds": 1
+          },
+          {
+            "startSecond": 59,
+            "endSecond": 60,
+            "seconds": 1
+          },
+          {
+            "startSecond": 61,
+            "endSecond": 64,
+            "seconds": 3
+          },
+          {
+            "startSecond": 66,
+            "endSecond": 67,
+            "seconds": 1
+          },
+          {
+            "startSecond": 70,
+            "endSecond": 72,
+            "seconds": 2
+          },
+          {
+            "startSecond": 74,
+            "endSecond": 75,
+            "seconds": 1
+          },
+          {
+            "startSecond": 76,
+            "endSecond": 77,
+            "seconds": 1
+          },
+          {
+            "startSecond": 78,
+            "endSecond": 79,
+            "seconds": 1
+          },
+          {
+            "startSecond": 80,
+            "endSecond": 82,
+            "seconds": 2
+          },
+          {
+            "startSecond": 85,
+            "endSecond": 87,
+            "seconds": 2
+          },
+          {
+            "startSecond": 89,
+            "endSecond": 92,
+            "seconds": 3
+          },
+          {
+            "startSecond": 94,
+            "endSecond": 95,
+            "seconds": 1
+          },
+          {
+            "startSecond": 96,
+            "endSecond": 98,
+            "seconds": 2
+          },
+          {
+            "startSecond": 100,
+            "endSecond": 101,
+            "seconds": 1
+          },
+          {
+            "startSecond": 103,
+            "endSecond": 105,
+            "seconds": 2
+          },
+          {
+            "startSecond": 107,
+            "endSecond": 120,
+            "seconds": 13
+          }
+        ],
+        "simulationRatio": 0.9607078765255505,
+        "ticksPerSecond": 64.84778166547466,
+        "cpuUpdateMs": {
+          "n": 6439,
+          "mean": 5.556031992558015,
+          "p50": 5.299999982118607,
+          "p95": 8.020000010728836,
+          "p99": 9.719999998807907,
+          "max": 334.0799999833107
+        },
+        "cpuRenderSubmissionMs": {
+          "n": 6439,
+          "mean": 5.345626649921921,
+          "p50": 4.964999973773956,
+          "p95": 8.774999976158142,
+          "p99": 10.599999994039536,
+          "max": 122.07499998807907
+        },
+        "cpuSimulationMs": {
+          "n": 6439,
+          "mean": 5.058357664032333,
+          "p50": 3.905000001192093,
+          "p95": 11.78999999165535,
+          "p99": 20.49500000476837,
+          "max": 108.20500001311302
+        },
+        "callbackWorkMs": {
+          "n": 6439,
+          "mean": 15.96001630651227,
+          "p50": 14.58500000834465,
+          "p95": 25.569999992847443,
+          "p99": 31.92500001192093,
+          "max": 456.15499997138977
+        },
+        "objectRanges": {
+          "units": {
+            "min": 236,
+            "max": 392
+          },
+          "buildings": {
+            "min": 44,
+            "max": 129
+          },
+          "projectiles": {
+            "min": 0,
+            "max": 10
+          },
+          "moving": {
+            "min": 0,
+            "max": 131
+          },
+          "firing": {
+            "min": 0,
+            "max": 28
+          },
+          "objects": {
+            "min": 2355,
+            "max": 2487
+          }
+        },
+        "shadowRanges": {
+          "registered": {
+            "min": 140,
+            "max": 330
+          },
+          "instances": {
+            "min": 0,
+            "max": 0
+          },
+          "batches": {
+            "min": 0,
+            "max": 0
+          },
+          "uploadedBytes": {
+            "min": 0,
+            "max": 0
+          },
+          "capacity": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "thermal": {
+          "initial": "fair",
+          "preWindow": "nominal",
+          "final": "fair",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 20014.764916
+          }
+        },
+        "callbackGate": false,
+        "placementSha256": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "map": {
+          "name": "xmp27t8.map",
+          "bytes": 370329,
+          "sha256": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146"
+        }
+      },
+      {
+        "name": "formal-sustained-6-on",
+        "edition": "yr",
+        "scene": "sustained",
+        "mode": "on",
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-6-on/report.json",
+          "sha256": "2f9e0572ed09844f16ba57399db70206ddaa7646c0d062e37e049e5a5d79acc4"
+        },
+        "rawSamples": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-sustained-6-on/samples.json",
+          "sha256": "adfef17e1a94266f268fed44e2ed11d6bbe0789143069366e0a0d4afdec573e1"
+        },
+        "durationMs": 120000.48000001907,
+        "sampleCount": 6468,
+        "callbackFps": 53.89982707137904,
+        "onePercentLow": 16.64602985807423,
+        "frameMs": {
+          "n": 6468,
+          "mean": 18.552935219545496,
+          "p50": 17.064999997615814,
+          "p95": 28.360000014305115,
+          "p99": 38.270000010728836,
+          "max": 439.65000000596046
+        },
+        "withinCadenceBudgetTimeFraction": 0.39794001494100406,
+        "longStalls": [
+          {
+            "atMs": 439.65000000596046,
+            "ms": 439.65000000596046,
+            "tick": 0
+          },
+          {
+            "atMs": 594.5600000023842,
+            "ms": 154.90999999642372,
+            "tick": 1
+          },
+          {
+            "atMs": 702.7800000011921,
+            "ms": 58.58499997854233,
+            "tick": 4
+          },
+          {
+            "atMs": 755.8500000238419,
+            "ms": 53.070000022649765,
+            "tick": 5
+          },
+          {
+            "atMs": 1013.1700000166893,
+            "ms": 84.65000000596046,
+            "tick": 11
+          },
+          {
+            "atMs": 1724.6899999976158,
+            "ms": 64.55999997258186,
+            "tick": 54
+          },
+          {
+            "atMs": 5840.189999997616,
+            "ms": 126.89999997615814,
+            "tick": 303
+          },
+          {
+            "atMs": 6575.94500002265,
+            "ms": 69.56499999761581,
+            "tick": 349
+          },
+          {
+            "atMs": 7579.710000008345,
+            "ms": 109.03499999642372,
+            "tick": 407
+          },
+          {
+            "atMs": 8025.75,
+            "ms": 61.41499999165535,
+            "tick": 434
+          },
+          {
+            "atMs": 11993.960000008345,
+            "ms": 66.34999999403954,
+            "tick": 677
+          },
+          {
+            "atMs": 12422.835000008345,
+            "ms": 119.21500000357628,
+            "tick": 701
+          },
+          {
+            "atMs": 12480.610000014305,
+            "ms": 57.775000005960464,
+            "tick": 703
+          },
+          {
+            "atMs": 12552.855000019073,
+            "ms": 72.24500000476837,
+            "tick": 705
+          },
+          {
+            "atMs": 19712.344999998808,
+            "ms": 68.61999997496605,
+            "tick": 1164
+          },
+          {
+            "atMs": 21653.390000015497,
+            "ms": 70.46000000834465,
+            "tick": 1291
+          },
+          {
+            "atMs": 53592.909999996424,
+            "ms": 56.18499997258186,
+            "tick": 3389
+          },
+          {
+            "atMs": 62542.42000001669,
+            "ms": 67.11000001430511,
+            "tick": 3983
+          },
+          {
+            "atMs": 78474.71999999881,
+            "ms": 55.46999999880791,
+            "tick": 5041
+          },
+          {
+            "atMs": 78550.18500000238,
+            "ms": 56.12000000476837,
+            "tick": 5043
+          },
+          {
+            "atMs": 80047.19500002265,
+            "ms": 64.00500002503395,
+            "tick": 5143
+          },
+          {
+            "atMs": 91155.90500000119,
+            "ms": 66.98999997973442,
+            "tick": 5882
+          },
+          {
+            "atMs": 96617.3600000143,
+            "ms": 62.80500000715256,
+            "tick": 6246
+          },
+          {
+            "atMs": 97432.55000001192,
+            "ms": 50.32499998807907,
+            "tick": 6301
+          },
+          {
+            "atMs": 103743.42000001669,
+            "ms": 58.53499999642372,
+            "tick": 6721
+          }
+        ],
+        "continuousLowBins": [
+          {
+            "startSecond": 0,
+            "endSecond": 35,
+            "seconds": 35
+          },
+          {
+            "startSecond": 36,
+            "endSecond": 37,
+            "seconds": 1
+          },
+          {
+            "startSecond": 38,
+            "endSecond": 39,
+            "seconds": 1
+          },
+          {
+            "startSecond": 43,
+            "endSecond": 45,
+            "seconds": 2
+          },
+          {
+            "startSecond": 46,
+            "endSecond": 47,
+            "seconds": 1
+          },
+          {
+            "startSecond": 48,
+            "endSecond": 55,
+            "seconds": 7
+          },
+          {
+            "startSecond": 56,
+            "endSecond": 64,
+            "seconds": 8
+          },
+          {
+            "startSecond": 66,
+            "endSecond": 67,
+            "seconds": 1
+          },
+          {
+            "startSecond": 68,
+            "endSecond": 71,
+            "seconds": 3
+          },
+          {
+            "startSecond": 73,
+            "endSecond": 74,
+            "seconds": 1
+          },
+          {
+            "startSecond": 75,
+            "endSecond": 76,
+            "seconds": 1
+          },
+          {
+            "startSecond": 78,
+            "endSecond": 79,
+            "seconds": 1
+          },
+          {
+            "startSecond": 80,
+            "endSecond": 81,
+            "seconds": 1
+          },
+          {
+            "startSecond": 83,
+            "endSecond": 85,
+            "seconds": 2
+          },
+          {
+            "startSecond": 86,
+            "endSecond": 87,
+            "seconds": 1
+          },
+          {
+            "startSecond": 88,
+            "endSecond": 89,
+            "seconds": 1
+          },
+          {
+            "startSecond": 91,
+            "endSecond": 93,
+            "seconds": 2
+          },
+          {
+            "startSecond": 94,
+            "endSecond": 95,
+            "seconds": 1
+          },
+          {
+            "startSecond": 96,
+            "endSecond": 98,
+            "seconds": 2
+          },
+          {
+            "startSecond": 99,
+            "endSecond": 100,
+            "seconds": 1
+          },
+          {
+            "startSecond": 103,
+            "endSecond": 104,
+            "seconds": 1
+          },
+          {
+            "startSecond": 106,
+            "endSecond": 112,
+            "seconds": 6
+          },
+          {
+            "startSecond": 115,
+            "endSecond": 120,
+            "seconds": 5
+          }
+        ],
+        "simulationRatio": 0.9625887422374707,
+        "ticksPerSecond": 64.97474010102927,
+        "cpuUpdateMs": {
+          "n": 6468,
+          "mean": 5.621576994371842,
+          "p50": 5.385000020265579,
+          "p95": 8.069999992847443,
+          "p99": 9.780000001192093,
+          "max": 317.16499999165535
+        },
+        "cpuRenderSubmissionMs": {
+          "n": 6468,
+          "mean": 5.313586116076696,
+          "p50": 4.979999989271164,
+          "p95": 8.544999986886978,
+          "p99": 10.375,
+          "max": 121.89000001549721
+        },
+        "cpuSimulationMs": {
+          "n": 6468,
+          "mean": 4.960739795881137,
+          "p50": 3.8799999952316284,
+          "p95": 11.400000005960464,
+          "p99": 20.645000010728836,
+          "max": 109.72500002384186
+        },
+        "callbackWorkMs": {
+          "n": 6468,
+          "mean": 15.895902906329674,
+          "p50": 14.600000023841858,
+          "p95": 25.25499999523163,
+          "p99": 31.950000017881393,
+          "max": 439.05500000715256
+        },
+        "objectRanges": {
+          "units": {
+            "min": 235,
+            "max": 392
+          },
+          "buildings": {
+            "min": 44,
+            "max": 130
+          },
+          "projectiles": {
+            "min": 0,
+            "max": 11
+          },
+          "moving": {
+            "min": 0,
+            "max": 137
+          },
+          "firing": {
+            "min": 0,
+            "max": 25
+          },
+          "objects": {
+            "min": 2354,
+            "max": 2487
+          }
+        },
+        "shadowRanges": {
+          "registered": {
+            "min": 140,
+            "max": 330
+          },
+          "instances": {
+            "min": 7,
+            "max": 207
+          },
+          "batches": {
+            "min": 3,
+            "max": 22
+          },
+          "uploadedBytes": {
+            "min": 448,
+            "max": 13248
+          },
+          "capacity": {
+            "min": 176,
+            "max": 832
+          }
+        },
+        "thermal": {
+          "initial": "fair",
+          "preWindow": "nominal",
+          "final": "fair",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 20009.513124999998
+          }
+        },
+        "callbackGate": false,
+        "placementSha256": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "map": {
+          "name": "xmp27t8.map",
+          "bytes": 370329,
+          "sha256": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146"
+        }
+      },
+      {
+        "name": "formal-ra2-dense-1-on",
+        "edition": "ra2",
+        "scene": "dense",
+        "mode": "on",
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-ra2-dense-1-on/report.json",
+          "sha256": "fe7494c8333ad51c1fac9801a344087dd726de4a169a61f8b583c17522113fca"
+        },
+        "rawSamples": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-ra2-dense-1-on/samples.json",
+          "sha256": "8891fe99d9c87603202e112edfc3d32b68c4604e91020d7a1d5acadaa9ed617e"
+        },
+        "durationMs": 120006.3599999845,
+        "sampleCount": 6754,
+        "callbackFps": 56.28060137914698,
+        "onePercentLow": 18.507153150948916,
+        "frameMs": {
+          "n": 6754,
+          "mean": 17.768111489485946,
+          "p50": 16.839999973773956,
+          "p95": 26.125,
+          "p99": 33.21500000357628,
+          "max": 443.0149999856949
+        },
+        "withinCadenceBudgetTimeFraction": 0.4468925570940486,
+        "longStalls": [
+          {
+            "atMs": 443.0149999856949,
+            "ms": 443.0149999856949,
+            "tick": 0
+          },
+          {
+            "atMs": 595.1649999916553,
+            "ms": 152.15000000596046,
+            "tick": 1
+          },
+          {
+            "atMs": 709.7249999940395,
+            "ms": 65.19999998807907,
+            "tick": 4
+          },
+          {
+            "atMs": 1010.0399999916553,
+            "ms": 74.72999998927116,
+            "tick": 12
+          },
+          {
+            "atMs": 1727.219999998808,
+            "ms": 69.09000000357628,
+            "tick": 54
+          },
+          {
+            "atMs": 5857.674999982119,
+            "ms": 157.44499999284744,
+            "tick": 308
+          },
+          {
+            "atMs": 6541.555000007153,
+            "ms": 70.63500002026558,
+            "tick": 350
+          },
+          {
+            "atMs": 7527.479999989271,
+            "ms": 139.37999999523163,
+            "tick": 406
+          },
+          {
+            "atMs": 8015.7750000059605,
+            "ms": 85.03499999642372,
+            "tick": 432
+          },
+          {
+            "atMs": 12136.490000009537,
+            "ms": 78.13500002026558,
+            "tick": 690
+          },
+          {
+            "atMs": 12533.47499999404,
+            "ms": 96.08500000834465,
+            "tick": 714
+          },
+          {
+            "atMs": 15362.340000003576,
+            "ms": 70.65999999642372,
+            "tick": 891
+          },
+          {
+            "atMs": 77403.50999999046,
+            "ms": 51.560000002384186,
+            "tick": 5041
+          },
+          {
+            "atMs": 102370.70499998331,
+            "ms": 53.08499997854233,
+            "tick": 6721
+          }
+        ],
+        "continuousLowBins": [
+          {
+            "startSecond": 0,
+            "endSecond": 21,
+            "seconds": 21
+          },
+          {
+            "startSecond": 23,
+            "endSecond": 26,
+            "seconds": 3
+          },
+          {
+            "startSecond": 29,
+            "endSecond": 30,
+            "seconds": 1
+          },
+          {
+            "startSecond": 33,
+            "endSecond": 34,
+            "seconds": 1
+          },
+          {
+            "startSecond": 36,
+            "endSecond": 37,
+            "seconds": 1
+          },
+          {
+            "startSecond": 38,
+            "endSecond": 39,
+            "seconds": 1
+          },
+          {
+            "startSecond": 41,
+            "endSecond": 42,
+            "seconds": 1
+          },
+          {
+            "startSecond": 46,
+            "endSecond": 47,
+            "seconds": 1
+          },
+          {
+            "startSecond": 51,
+            "endSecond": 52,
+            "seconds": 1
+          },
+          {
+            "startSecond": 53,
+            "endSecond": 54,
+            "seconds": 1
+          },
+          {
+            "startSecond": 59,
+            "endSecond": 60,
+            "seconds": 1
+          },
+          {
+            "startSecond": 65,
+            "endSecond": 66,
+            "seconds": 1
+          },
+          {
+            "startSecond": 67,
+            "endSecond": 68,
+            "seconds": 1
+          },
+          {
+            "startSecond": 69,
+            "endSecond": 70,
+            "seconds": 1
+          },
+          {
+            "startSecond": 77,
+            "endSecond": 78,
+            "seconds": 1
+          },
+          {
+            "startSecond": 86,
+            "endSecond": 87,
+            "seconds": 1
+          },
+          {
+            "startSecond": 89,
+            "endSecond": 90,
+            "seconds": 1
+          },
+          {
+            "startSecond": 95,
+            "endSecond": 96,
+            "seconds": 1
+          },
+          {
+            "startSecond": 97,
+            "endSecond": 98,
+            "seconds": 1
+          },
+          {
+            "startSecond": 102,
+            "endSecond": 103,
+            "seconds": 1
+          }
+        ],
+        "simulationRatio": 0.9759976548404689,
+        "ticksPerSecond": 65.87984170173165,
+        "cpuUpdateMs": {
+          "n": 6754,
+          "mean": 5.155654426779943,
+          "p50": 5.144999980926514,
+          "p95": 7.895000010728836,
+          "p99": 9.685000002384186,
+          "max": 318.7650000154972
+        },
+        "cpuRenderSubmissionMs": {
+          "n": 6754,
+          "mean": 4.334512141079531,
+          "p50": 3.5100000202655792,
+          "p95": 8.959999978542328,
+          "p99": 11.155000001192093,
+          "max": 123.68500000238419
+        },
+        "cpuSimulationMs": {
+          "n": 6754,
+          "mean": 2.7172993784045056,
+          "p50": 1.3149999976158142,
+          "p95": 9.525000005960464,
+          "p99": 16.155000001192093,
+          "max": 108.49000000953674
+        },
+        "callbackWorkMs": {
+          "n": 6754,
+          "mean": 12.20746594626398,
+          "p50": 10.055000007152557,
+          "p95": 23.34000000357628,
+          "p99": 29.640000015497208,
+          "max": 442.4500000178814
+        },
+        "objectRanges": {
+          "units": {
+            "min": 55,
+            "max": 392
+          },
+          "buildings": {
+            "min": 44,
+            "max": 99
+          },
+          "projectiles": {
+            "min": 0,
+            "max": 19
+          },
+          "moving": {
+            "min": 0,
+            "max": 109
+          },
+          "firing": {
+            "min": 0,
+            "max": 34
+          },
+          "objects": {
+            "min": 2086,
+            "max": 2483
+          }
+        },
+        "shadowRanges": {
+          "registered": {
+            "min": 87,
+            "max": 430
+          },
+          "instances": {
+            "min": 13,
+            "max": 283
+          },
+          "batches": {
+            "min": 3,
+            "max": 26
+          },
+          "uploadedBytes": {
+            "min": 832,
+            "max": 18112
+          },
+          "capacity": {
+            "min": 192,
+            "max": 720
+          }
+        },
+        "thermal": {
+          "initial": "fair",
+          "preWindow": "nominal",
+          "final": "nominal",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 20011.830374999998
+          }
+        },
+        "callbackGate": false,
+        "placementSha256": "1bdbe49448fbe42f45a061b1db7cc4b681b5daca1c41fda873e82cbf561aaf81",
+        "map": {
+          "name": "mp27t8.map",
+          "bytes": 374465,
+          "sha256": "64674a3d16a321207b1edb6e223ca87690d50ee0e293aea0c56de5b1f9b98aa4"
+        }
+      },
+      {
+        "name": "formal-ra2-dense-2-off",
+        "edition": "ra2",
+        "scene": "dense",
+        "mode": "off",
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-ra2-dense-2-off/report.json",
+          "sha256": "441af7d8baa58fa2f25cb97473b627ddcd3a1c6efe1a3eb2199d642c5a9fddb6"
+        },
+        "rawSamples": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-ra2-dense-2-off/samples.json",
+          "sha256": "36f23224d85f22d12fd763a032b7dcb657060dca811a3d2f64be2b568b8fb447"
+        },
+        "durationMs": 120025.91999998689,
+        "sampleCount": 6720,
+        "callbackFps": 55.98796492038011,
+        "onePercentLow": 18.61458233555183,
+        "frameMs": {
+          "n": 6720,
+          "mean": 17.86098139880757,
+          "p50": 16.900000005960464,
+          "p95": 26.75,
+          "p99": 33.519999980926514,
+          "max": 437.1099999845028
+        },
+        "withinCadenceBudgetTimeFraction": 0.43775669222121616,
+        "longStalls": [
+          {
+            "atMs": 437.1099999845028,
+            "ms": 437.1099999845028,
+            "tick": 0
+          },
+          {
+            "atMs": 593.75,
+            "ms": 156.6400000154972,
+            "tick": 1
+          },
+          {
+            "atMs": 709.0349999964237,
+            "ms": 70.18999999761581,
+            "tick": 4
+          },
+          {
+            "atMs": 975.8499999940395,
+            "ms": 83.88499999046326,
+            "tick": 11
+          },
+          {
+            "atMs": 1689.5149999856949,
+            "ms": 71.7800000011921,
+            "tick": 54
+          },
+          {
+            "atMs": 5942.354999989271,
+            "ms": 157.3449999988079,
+            "tick": 310
+          },
+          {
+            "atMs": 6653.879999995232,
+            "ms": 65.29499998688698,
+            "tick": 353
+          },
+          {
+            "atMs": 7624.479999989271,
+            "ms": 126.5,
+            "tick": 412
+          },
+          {
+            "atMs": 8146.030000001192,
+            "ms": 83.9200000166893,
+            "tick": 443
+          },
+          {
+            "atMs": 12404.990000009537,
+            "ms": 72.73000001907349,
+            "tick": 711
+          },
+          {
+            "atMs": 12809.84999999404,
+            "ms": 92.38999998569489,
+            "tick": 735
+          },
+          {
+            "atMs": 77472.6399999857,
+            "ms": 52.889999985694885,
+            "tick": 5041
+          },
+          {
+            "atMs": 102503.83500000834,
+            "ms": 51.21999999880791,
+            "tick": 6721
+          }
+        ],
+        "continuousLowBins": [
+          {
+            "startSecond": 0,
+            "endSecond": 27,
+            "seconds": 27
+          },
+          {
+            "startSecond": 30,
+            "endSecond": 32,
+            "seconds": 2
+          },
+          {
+            "startSecond": 36,
+            "endSecond": 37,
+            "seconds": 1
+          },
+          {
+            "startSecond": 38,
+            "endSecond": 39,
+            "seconds": 1
+          },
+          {
+            "startSecond": 42,
+            "endSecond": 43,
+            "seconds": 1
+          },
+          {
+            "startSecond": 44,
+            "endSecond": 45,
+            "seconds": 1
+          },
+          {
+            "startSecond": 46,
+            "endSecond": 47,
+            "seconds": 1
+          },
+          {
+            "startSecond": 62,
+            "endSecond": 63,
+            "seconds": 1
+          },
+          {
+            "startSecond": 77,
+            "endSecond": 78,
+            "seconds": 1
+          },
+          {
+            "startSecond": 89,
+            "endSecond": 90,
+            "seconds": 1
+          },
+          {
+            "startSecond": 102,
+            "endSecond": 103,
+            "seconds": 1
+          }
+        ],
+        "simulationRatio": 0.9749745906737062,
+        "ticksPerSecond": 65.81078487047517,
+        "cpuUpdateMs": {
+          "n": 6720,
+          "mean": 4.950555059650824,
+          "p50": 4.870000004768372,
+          "p95": 7.870000004768372,
+          "p99": 9.574999988079071,
+          "max": 319.0600000023842
+        },
+        "cpuRenderSubmissionMs": {
+          "n": 6720,
+          "mean": 4.345818452297577,
+          "p50": 3.5,
+          "p95": 9.194999992847443,
+          "p99": 11.519999980926514,
+          "max": 117.49000000953674
+        },
+        "cpuSimulationMs": {
+          "n": 6720,
+          "mean": 3.074426339242962,
+          "p50": 1.7099999785423279,
+          "p95": 10.044999986886978,
+          "p99": 15.969999998807907,
+          "max": 108.30500000715256
+        },
+        "callbackWorkMs": {
+          "n": 6720,
+          "mean": 12.370799851191363,
+          "p50": 10.08500000834465,
+          "p95": 23.875,
+          "p99": 30.3299999833107,
+          "max": 436.55000001192093
+        },
+        "objectRanges": {
+          "units": {
+            "min": 54,
+            "max": 392
+          },
+          "buildings": {
+            "min": 44,
+            "max": 99
+          },
+          "projectiles": {
+            "min": 0,
+            "max": 19
+          },
+          "moving": {
+            "min": 0,
+            "max": 114
+          },
+          "firing": {
+            "min": 0,
+            "max": 33
+          },
+          "objects": {
+            "min": 2086,
+            "max": 2483
+          }
+        },
+        "shadowRanges": {
+          "registered": {
+            "min": 87,
+            "max": 430
+          },
+          "instances": {
+            "min": 0,
+            "max": 0
+          },
+          "batches": {
+            "min": 0,
+            "max": 0
+          },
+          "uploadedBytes": {
+            "min": 0,
+            "max": 0
+          },
+          "capacity": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "thermal": {
+          "initial": "nominal",
+          "preWindow": "nominal",
+          "final": "nominal",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 0.7076250000000073
+          }
+        },
+        "callbackGate": false,
+        "placementSha256": "1bdbe49448fbe42f45a061b1db7cc4b681b5daca1c41fda873e82cbf561aaf81",
+        "map": {
+          "name": "mp27t8.map",
+          "bytes": 374465,
+          "sha256": "64674a3d16a321207b1edb6e223ca87690d50ee0e293aea0c56de5b1f9b98aa4"
+        }
+      },
+      {
+        "name": "formal-yr-overload-1-off",
+        "edition": "yr",
+        "scene": "overload",
+        "mode": "off",
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-yr-overload-1-off/report.json",
+          "sha256": "a41932a5e66faa01de2b996ef338cfad6db20d53cefce3c45f17061808e67373"
+        },
+        "rawSamples": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-yr-overload-1-off/samples.json",
+          "sha256": "911abade744b246b86753e0384a091db8d41d46d9cb935b349b2c54b03aee3bd"
+        },
+        "durationMs": 120018.30500000715,
+        "sampleCount": 5846,
+        "callbackFps": 48.70934199936883,
+        "onePercentLow": 12.824093646303703,
+        "frameMs": {
+          "n": 5846,
+          "mean": 20.529942695858175,
+          "p50": 17.3299999833107,
+          "p95": 36.89000001549721,
+          "p99": 47.105000019073486,
+          "max": 568.1999999880791
+        },
+        "withinCadenceBudgetTimeFraction": 0.33688113316777357,
+        "longStalls": [
+          {
+            "atMs": 568.1999999880791,
+            "ms": 568.1999999880791,
+            "tick": 0
+          },
+          {
+            "atMs": 790.4549999833107,
+            "ms": 222.25499999523163,
+            "tick": 1
+          },
+          {
+            "atMs": 878.1599999964237,
+            "ms": 87.70500001311302,
+            "tick": 2
+          },
+          {
+            "atMs": 953.9149999916553,
+            "ms": 75.75499999523163,
+            "tick": 3
+          },
+          {
+            "atMs": 1006.5649999976158,
+            "ms": 52.650000005960464,
+            "tick": 4
+          },
+          {
+            "atMs": 1075.3299999833107,
+            "ms": 68.76499998569489,
+            "tick": 5
+          },
+          {
+            "atMs": 1135.905000001192,
+            "ms": 60.57500001788139,
+            "tick": 6
+          },
+          {
+            "atMs": 1222.9650000035763,
+            "ms": 87.06000000238419,
+            "tick": 8
+          },
+          {
+            "atMs": 2232.4000000059605,
+            "ms": 54.34499999880791,
+            "tick": 38
+          },
+          {
+            "atMs": 2598.9300000071526,
+            "ms": 79.11500000953674,
+            "tick": 54
+          },
+          {
+            "atMs": 2684.969999998808,
+            "ms": 52.354999989271164,
+            "tick": 57
+          },
+          {
+            "atMs": 4531.240000009537,
+            "ms": 56.04000002145767,
+            "tick": 141
+          },
+          {
+            "atMs": 8205.905000001192,
+            "ms": 254.98500001430511,
+            "tick": 317
+          },
+          {
+            "atMs": 9113.289999991655,
+            "ms": 98.60999998450279,
+            "tick": 365
+          },
+          {
+            "atMs": 10370.984999984503,
+            "ms": 151.58499997854233,
+            "tick": 425
+          },
+          {
+            "atMs": 10965.264999985695,
+            "ms": 100.6550000011921,
+            "tick": 454
+          },
+          {
+            "atMs": 11791.159999996424,
+            "ms": 52.19999998807907,
+            "tick": 491
+          },
+          {
+            "atMs": 11955.824999988079,
+            "ms": 52.00499999523163,
+            "tick": 495
+          },
+          {
+            "atMs": 12189.064999997616,
+            "ms": 56.09499999880791,
+            "tick": 505
+          },
+          {
+            "atMs": 14252.305000007153,
+            "ms": 50.79000002145767,
+            "tick": 610
+          },
+          {
+            "atMs": 16162.844999998808,
+            "ms": 96,
+            "tick": 705
+          },
+          {
+            "atMs": 16660.55000001192,
+            "ms": 105.5300000011921,
+            "tick": 727
+          },
+          {
+            "atMs": 17246.055000007153,
+            "ms": 151.9350000023842,
+            "tick": 755
+          },
+          {
+            "atMs": 17302.87999999523,
+            "ms": 56.82499998807907,
+            "tick": 757
+          },
+          {
+            "atMs": 18648.844999998808,
+            "ms": 57.58500000834465,
+            "tick": 829
+          },
+          {
+            "atMs": 18874.064999997616,
+            "ms": 54.974999994039536,
+            "tick": 841
+          },
+          {
+            "atMs": 21247.07499998808,
+            "ms": 57.354999989271164,
+            "tick": 959
+          },
+          {
+            "atMs": 22135.44999998808,
+            "ms": 52.41999998688698,
+            "tick": 1002
+          },
+          {
+            "atMs": 23016.27500000596,
+            "ms": 50.65999999642372,
+            "tick": 1051
+          },
+          {
+            "atMs": 26022.49500000477,
+            "ms": 77.26500001549721,
+            "tick": 1219
+          },
+          {
+            "atMs": 26570.44999998808,
+            "ms": 64.64499998092651,
+            "tick": 1249
+          },
+          {
+            "atMs": 27421.719999998808,
+            "ms": 86.55500000715256,
+            "tick": 1297
+          },
+          {
+            "atMs": 29905.159999996424,
+            "ms": 77.57499998807907,
+            "tick": 1436
+          },
+          {
+            "atMs": 31560.64500001073,
+            "ms": 51.15500000119209,
+            "tick": 1543
+          },
+          {
+            "atMs": 33239.18000000715,
+            "ms": 51.87999999523163,
+            "tick": 1645
+          },
+          {
+            "atMs": 38410.71999999881,
+            "ms": 51.610000014305115,
+            "tick": 1968
+          },
+          {
+            "atMs": 39279.060000002384,
+            "ms": 53.62000000476837,
+            "tick": 2020
+          },
+          {
+            "atMs": 40228.164999991655,
+            "ms": 55.13499999046326,
+            "tick": 2077
+          },
+          {
+            "atMs": 50175.34499999881,
+            "ms": 62.18000000715256,
+            "tick": 2717
+          },
+          {
+            "atMs": 84820.24000000954,
+            "ms": 54.30000001192093,
+            "tick": 5041
+          },
+          {
+            "atMs": 97351.28000000119,
+            "ms": 69.37000000476837,
+            "tick": 5882
+          },
+          {
+            "atMs": 109821.31000000238,
+            "ms": 55.99500000476837,
+            "tick": 6721
+          }
+        ],
+        "continuousLowBins": [
+          {
+            "startSecond": 0,
+            "endSecond": 54,
+            "seconds": 54
+          },
+          {
+            "startSecond": 55,
+            "endSecond": 56,
+            "seconds": 1
+          },
+          {
+            "startSecond": 57,
+            "endSecond": 58,
+            "seconds": 1
+          },
+          {
+            "startSecond": 59,
+            "endSecond": 61,
+            "seconds": 2
+          },
+          {
+            "startSecond": 62,
+            "endSecond": 63,
+            "seconds": 1
+          },
+          {
+            "startSecond": 64,
+            "endSecond": 69,
+            "seconds": 5
+          },
+          {
+            "startSecond": 72,
+            "endSecond": 73,
+            "seconds": 1
+          },
+          {
+            "startSecond": 74,
+            "endSecond": 76,
+            "seconds": 2
+          },
+          {
+            "startSecond": 84,
+            "endSecond": 85,
+            "seconds": 1
+          },
+          {
+            "startSecond": 92,
+            "endSecond": 93,
+            "seconds": 1
+          },
+          {
+            "startSecond": 94,
+            "endSecond": 95,
+            "seconds": 1
+          },
+          {
+            "startSecond": 96,
+            "endSecond": 98,
+            "seconds": 2
+          },
+          {
+            "startSecond": 102,
+            "endSecond": 103,
+            "seconds": 1
+          },
+          {
+            "startSecond": 109,
+            "endSecond": 110,
+            "seconds": 1
+          },
+          {
+            "startSecond": 115,
+            "endSecond": 118,
+            "seconds": 3
+          },
+          {
+            "startSecond": 119,
+            "endSecond": 120,
+            "seconds": 1
+          }
+        ],
+        "simulationRatio": 0.9144284128003776,
+        "ticksPerSecond": 61.72391786402548,
+        "cpuUpdateMs": {
+          "n": 5846,
+          "mean": 6.281220492698173,
+          "p50": 5.694999992847443,
+          "p95": 10.849999994039536,
+          "p99": 13.349999994039536,
+          "max": 433.8449999988079
+        },
+        "cpuRenderSubmissionMs": {
+          "n": 5846,
+          "mean": 6.519322613769715,
+          "p50": 5.324999988079071,
+          "p95": 13.259999990463257,
+          "p99": 16.709999978542328,
+          "max": 133.75499999523163
+        },
+        "cpuSimulationMs": {
+          "n": 5846,
+          "mean": 4.76059527908781,
+          "p50": 3.0349999964237213,
+          "p95": 14.009999990463257,
+          "p99": 21.23999997973442,
+          "max": 165.98500001430511
+        },
+        "callbackWorkMs": {
+          "n": 5846,
+          "mean": 17.561138385555697,
+          "p50": 14.120000004768372,
+          "p95": 34.55000001192093,
+          "p99": 42.26000002026558,
+          "max": 567.5999999940395
+        },
+        "objectRanges": {
+          "units": {
+            "min": 98,
+            "max": 776
+          },
+          "buildings": {
+            "min": 44,
+            "max": 102
+          },
+          "projectiles": {
+            "min": 0,
+            "max": 19
+          },
+          "moving": {
+            "min": 0,
+            "max": 159
+          },
+          "firing": {
+            "min": 0,
+            "max": 49
+          },
+          "objects": {
+            "min": 2207,
+            "max": 2867
+          }
+        },
+        "shadowRanges": {
+          "registered": {
+            "min": 135,
+            "max": 633
+          },
+          "instances": {
+            "min": 0,
+            "max": 0
+          },
+          "batches": {
+            "min": 0,
+            "max": 0
+          },
+          "uploadedBytes": {
+            "min": 0,
+            "max": 0
+          },
+          "capacity": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "thermal": {
+          "initial": "nominal",
+          "preWindow": "nominal",
+          "final": "nominal",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 0.7013749999996435
+          }
+        },
+        "callbackGate": false,
+        "placementSha256": "735213c7c275460903be86de49d85640ef5b2604579fe5286d97c77b743c6aa3",
+        "map": {
+          "name": "xmp27t8.map",
+          "bytes": 370329,
+          "sha256": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146"
+        }
+      },
+      {
+        "name": "formal-yr-overload-2-on",
+        "edition": "yr",
+        "scene": "overload",
+        "mode": "on",
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-yr-overload-2-on/report.json",
+          "sha256": "f56b517957724406c7b065c802c4d391f71fa1ca4bd1ae821afff6d53e43bc61"
+        },
+        "rawSamples": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/formal-yr-overload-2-on/samples.json",
+          "sha256": "acb56cef47f826cf4433cc8b06079606f22e089a6b240a88275317362bd110e9"
+        },
+        "durationMs": 120018.17500001192,
+        "sampleCount": 5882,
+        "callbackFps": 49.00927851792863,
+        "onePercentLow": 12.55709220281361,
+        "frameMs": {
+          "n": 5882,
+          "mean": 20.404299557974085,
+          "p50": 17.274999976158142,
+          "p95": 35.974999994039536,
+          "p99": 46.6700000166893,
+          "max": 573.7350000143051
+        },
+        "withinCadenceBudgetTimeFraction": 0.3432840415970281,
+        "longStalls": [
+          {
+            "atMs": 573.7350000143051,
+            "ms": 573.7350000143051,
+            "tick": 0
+          },
+          {
+            "atMs": 798.9449999928474,
+            "ms": 225.20999997854233,
+            "tick": 1
+          },
+          {
+            "atMs": 884.7299999892712,
+            "ms": 85.78499999642372,
+            "tick": 2
+          },
+          {
+            "atMs": 959.2299999892712,
+            "ms": 74.5,
+            "tick": 3
+          },
+          {
+            "atMs": 1019.3100000023842,
+            "ms": 60.08000001311302,
+            "tick": 4
+          },
+          {
+            "atMs": 1088.4799999892712,
+            "ms": 69.16999998688698,
+            "tick": 5
+          },
+          {
+            "atMs": 1150.199999988079,
+            "ms": 61.71999999880791,
+            "tick": 6
+          },
+          {
+            "atMs": 1247.4799999892712,
+            "ms": 97.2800000011921,
+            "tick": 8
+          },
+          {
+            "atMs": 1704.7150000035763,
+            "ms": 56.59000000357628,
+            "tick": 19
+          },
+          {
+            "atMs": 1850.0850000083447,
+            "ms": 55.064999997615814,
+            "tick": 22
+          },
+          {
+            "atMs": 2142.5099999904633,
+            "ms": 55.91499999165535,
+            "tick": 29
+          },
+          {
+            "atMs": 2395.550000011921,
+            "ms": 56.46500000357628,
+            "tick": 38
+          },
+          {
+            "atMs": 2802.9900000095367,
+            "ms": 108.05500000715256,
+            "tick": 54
+          },
+          {
+            "atMs": 2889.330000013113,
+            "ms": 51.89000001549721,
+            "tick": 57
+          },
+          {
+            "atMs": 3258.390000015497,
+            "ms": 66.2950000166893,
+            "tick": 71
+          },
+          {
+            "atMs": 4761.5999999940395,
+            "ms": 63.375,
+            "tick": 141
+          },
+          {
+            "atMs": 8433.615000009537,
+            "ms": 253.08500000834465,
+            "tick": 321
+          },
+          {
+            "atMs": 9136.185000002384,
+            "ms": 50.40999999642372,
+            "tick": 362
+          },
+          {
+            "atMs": 9353.449999988079,
+            "ms": 78.7199999988079,
+            "tick": 371
+          },
+          {
+            "atMs": 10617.615000009537,
+            "ms": 144.84999999403954,
+            "tick": 431
+          },
+          {
+            "atMs": 11261.830000013113,
+            "ms": 97.74500000476837,
+            "tick": 462
+          },
+          {
+            "atMs": 14359.354999989271,
+            "ms": 53.37999999523163,
+            "tick": 621
+          },
+          {
+            "atMs": 15881.515000015497,
+            "ms": 69.2950000166893,
+            "tick": 704
+          },
+          {
+            "atMs": 16219.134999990463,
+            "ms": 54.4549999833107,
+            "tick": 725
+          },
+          {
+            "atMs": 16711.240000009537,
+            "ms": 101.18000000715256,
+            "tick": 749
+          },
+          {
+            "atMs": 17246.955000013113,
+            "ms": 136.83500000834465,
+            "tick": 773
+          },
+          {
+            "atMs": 18420.335000008345,
+            "ms": 51.685000002384186,
+            "tick": 841
+          },
+          {
+            "atMs": 20947.634999990463,
+            "ms": 67.04499998688698,
+            "tick": 959
+          },
+          {
+            "atMs": 22005.860000014305,
+            "ms": 59.660000026226044,
+            "tick": 1009
+          },
+          {
+            "atMs": 25840.585000008345,
+            "ms": 73.9050000011921,
+            "tick": 1229
+          },
+          {
+            "atMs": 26413.39500001073,
+            "ms": 67.48500001430511,
+            "tick": 1264
+          },
+          {
+            "atMs": 27069.840000003576,
+            "ms": 66.77500000596046,
+            "tick": 1304
+          },
+          {
+            "atMs": 27285.159999996424,
+            "ms": 85.66499999165535,
+            "tick": 1316
+          },
+          {
+            "atMs": 29038.590000003576,
+            "ms": 54.145000010728836,
+            "tick": 1411
+          },
+          {
+            "atMs": 29185.77500000596,
+            "ms": 71.75,
+            "tick": 1415
+          },
+          {
+            "atMs": 29240.15000000596,
+            "ms": 54.375,
+            "tick": 1419
+          },
+          {
+            "atMs": 29699.189999997616,
+            "ms": 57.979999989271164,
+            "tick": 1444
+          },
+          {
+            "atMs": 29928.5,
+            "ms": 75.34000000357628,
+            "tick": 1457
+          },
+          {
+            "atMs": 31564.17500001192,
+            "ms": 55.89000001549721,
+            "tick": 1557
+          },
+          {
+            "atMs": 33236.99000000954,
+            "ms": 60.849999994039536,
+            "tick": 1658
+          },
+          {
+            "atMs": 40185.335000008345,
+            "ms": 57.58000001311302,
+            "tick": 2090
+          },
+          {
+            "atMs": 84369.68500000238,
+            "ms": 51.21500000357628,
+            "tick": 5041
+          },
+          {
+            "atMs": 96954.03000000119,
+            "ms": 107.00499999523163,
+            "tick": 5883
+          },
+          {
+            "atMs": 109368.27000001073,
+            "ms": 52.525000005960464,
+            "tick": 6721
+          }
+        ],
+        "continuousLowBins": [
+          {
+            "startSecond": 0,
+            "endSecond": 52,
+            "seconds": 52
+          },
+          {
+            "startSecond": 53,
+            "endSecond": 54,
+            "seconds": 1
+          },
+          {
+            "startSecond": 55,
+            "endSecond": 56,
+            "seconds": 1
+          },
+          {
+            "startSecond": 57,
+            "endSecond": 60,
+            "seconds": 3
+          },
+          {
+            "startSecond": 64,
+            "endSecond": 69,
+            "seconds": 5
+          },
+          {
+            "startSecond": 73,
+            "endSecond": 75,
+            "seconds": 2
+          },
+          {
+            "startSecond": 79,
+            "endSecond": 80,
+            "seconds": 1
+          },
+          {
+            "startSecond": 81,
+            "endSecond": 82,
+            "seconds": 1
+          },
+          {
+            "startSecond": 84,
+            "endSecond": 85,
+            "seconds": 1
+          },
+          {
+            "startSecond": 90,
+            "endSecond": 91,
+            "seconds": 1
+          },
+          {
+            "startSecond": 93,
+            "endSecond": 95,
+            "seconds": 2
+          },
+          {
+            "startSecond": 96,
+            "endSecond": 97,
+            "seconds": 1
+          },
+          {
+            "startSecond": 99,
+            "endSecond": 100,
+            "seconds": 1
+          },
+          {
+            "startSecond": 103,
+            "endSecond": 105,
+            "seconds": 2
+          },
+          {
+            "startSecond": 109,
+            "endSecond": 110,
+            "seconds": 1
+          },
+          {
+            "startSecond": 111,
+            "endSecond": 112,
+            "seconds": 1
+          },
+          {
+            "startSecond": 114,
+            "endSecond": 117,
+            "seconds": 3
+          },
+          {
+            "startSecond": 118,
+            "endSecond": 120,
+            "seconds": 2
+          }
+        ],
+        "simulationRatio": 0.9183794223017578,
+        "ticksPerSecond": 61.990611005368656,
+        "cpuUpdateMs": {
+          "n": 5882,
+          "mean": 6.380832200201747,
+          "p50": 5.825000017881393,
+          "p95": 10.820000022649765,
+          "p99": 13.560000002384186,
+          "max": 441.25999999046326
+        },
+        "cpuRenderSubmissionMs": {
+          "n": 5882,
+          "mean": 6.269310608435269,
+          "p50": 5.120000004768372,
+          "p95": 12.685000002384186,
+          "p99": 15.41499999165535,
+          "max": 131.8949999809265
+        },
+        "cpuSimulationMs": {
+          "n": 5882,
+          "mean": 4.667490649333781,
+          "p50": 2.8400000035762787,
+          "p95": 13.930000007152557,
+          "p99": 21.05000001192093,
+          "max": 169.13499999046326
+        },
+        "callbackWorkMs": {
+          "n": 5882,
+          "mean": 17.317633457970796,
+          "p50": 13.955000013113022,
+          "p95": 34.025000005960464,
+          "p99": 41.47500002384186,
+          "max": 573.1549999713898
+        },
+        "objectRanges": {
+          "units": {
+            "min": 98,
+            "max": 776
+          },
+          "buildings": {
+            "min": 44,
+            "max": 102
+          },
+          "projectiles": {
+            "min": 0,
+            "max": 20
+          },
+          "moving": {
+            "min": 0,
+            "max": 184
+          },
+          "firing": {
+            "min": 0,
+            "max": 52
+          },
+          "objects": {
+            "min": 2206,
+            "max": 2867
+          }
+        },
+        "shadowRanges": {
+          "registered": {
+            "min": 135,
+            "max": 619
+          },
+          "instances": {
+            "min": 33,
+            "max": 402
+          },
+          "batches": {
+            "min": 3,
+            "max": 41
+          },
+          "uploadedBytes": {
+            "min": 2112,
+            "max": 25728
+          },
+          "capacity": {
+            "min": 384,
+            "max": 1472
+          }
+        },
+        "thermal": {
+          "initial": "nominal",
+          "preWindow": "nominal",
+          "final": "fair",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 0.7290830000001733
+          }
+        },
+        "callbackGate": false,
+        "placementSha256": "735213c7c275460903be86de49d85640ef5b2604579fe5286d97c77b743c6aa3",
+        "map": {
+          "name": "xmp27t8.map",
+          "bytes": 370329,
+          "sha256": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146"
+        }
+      }
+    ],
+    "diagnostic": {
+      "receipt": {
+        "path": ".artifacts/m4-3a-mac-shadow-instancing/r4b-paired-diagnostic/report.json",
+        "sha256": "f4453ee87edfacedc1aaf1aa17d0ec81c3bb192833086870fdc144021de3a154"
+      },
+      "timingScope": "Paused ABBA; 16 warmup and 16 kept per block; instrumented CPU timings",
+      "paired": {
+        "off": {
+          "samples": 32,
+          "submitMs": 8.802500009536743,
+          "shadowMs": 0.8549999892711639,
+          "uploadMs": 0.0,
+          "uploadCalls": 0.0,
+          "uploadBytes": 0.0,
+          "shadowDraws": 236.0,
+          "colourDraws": 947.0,
+          "fullFrameCalls": 1183.0,
+          "triangles": 2139082.0,
+          "maintenanceMs": 0.0,
+          "instances": 0.0,
+          "batches": 0.0
+        },
+        "on": {
+          "samples": 32,
+          "submitMs": 8.782500013709068,
+          "shadowMs": 0.9224999845027924,
+          "uploadMs": 0.022499993443489075,
+          "uploadCalls": 20.0,
+          "uploadBytes": 13248.0,
+          "shadowDraws": 49.0,
+          "colourDraws": 947.0,
+          "fullFrameCalls": 996.0,
+          "triangles": 2139082.0,
+          "maintenanceMs": 0.14249999821186066,
+          "instances": 207.0,
+          "batches": 20.0
+        }
+      },
+      "uploadedBytesMeaning": "Manager counts active matrix bytes. Native uploadBytes counts actual intercepted GL upload bytes; new buffers can upload capacity.",
+      "qualification": "Large draw-count reduction, tiny CPU total-submit difference, and higher shadow-submit median do not establish a reliable full-scene gain."
+    },
+    "confidence": "Sustained off/on ranges overlap across three windows each; dense and overload have one pair each. Coarse thermal labels, visual RNG and OS/driver caches limit attribution.",
+    "screenPresentation": "Callback cadence does not measure presented FPS."
+  },
+  "correctness": {
+    "finalSameBuildDynamic": [
+      {
+        "density": 4,
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/final-dynamic-4x/report.json",
+          "sha256": "78ea8f750268fd027757d483d35a9372546d91e6a03d27d20f064bbe45ea0bff"
+        },
+        "status": "PASS_EXACT_DYNAMIC_RGBA",
+        "cases": 35,
+        "labels": [
+          "native-initial-batches",
+          "rhino-and-normal-tank",
+          "independent-body-0-turret-90",
+          "independent-body-45-turret-270",
+          "independent-body-180-turret-0",
+          "independent-body-315-turret-135",
+          "ramp-1",
+          "ramp-2",
+          "ramp-3",
+          "ramp-4",
+          "high-bridge-on",
+          "high-bridge-under",
+          "elevated",
+          "native-clipping-plane-fallback",
+          "translucent-warp-shadow",
+          "cloaked-own",
+          "cloaked-enemy-hidden",
+          "uncloaked",
+          "camera-leave",
+          "camera-reenter",
+          "source-root-hidden",
+          "source-root-restored",
+          "capacity-growth",
+          "destroy-and-release-slots",
+          "new-object-reuses-capacity",
+          "native-motion-tick-24",
+          "native-motion-tick-60",
+          "native-mcv-before-deploy",
+          "native-mcv-deploy-transition",
+          "native-mcv-deployed",
+          "native-mcv-repack-transition",
+          "native-mcv-repacked",
+          "fixture-removal",
+          "runtime-hd-request-off",
+          "hd-restored"
+        ]
+      },
+      {
+        "density": 2,
+        "report": {
+          "path": ".artifacts/m4-3a-mac-shadow-instancing/final-dynamic-2x/report.json",
+          "sha256": "5312c30b91bfa3e89d924e4ee67d3038a6356cdc2440f05e9d337834eeb9eb41"
+        },
+        "status": "PASS_EXACT_DYNAMIC_RGBA",
+        "cases": 35,
+        "labels": [
+          "native-initial-batches",
+          "rhino-and-normal-tank",
+          "independent-body-0-turret-90",
+          "independent-body-45-turret-270",
+          "independent-body-180-turret-0",
+          "independent-body-315-turret-135",
+          "ramp-1",
+          "ramp-2",
+          "ramp-3",
+          "ramp-4",
+          "high-bridge-on",
+          "high-bridge-under",
+          "elevated",
+          "native-clipping-plane-fallback",
+          "translucent-warp-shadow",
+          "cloaked-own",
+          "cloaked-enemy-hidden",
+          "uncloaked",
+          "camera-leave",
+          "camera-reenter",
+          "source-root-hidden",
+          "source-root-restored",
+          "capacity-growth",
+          "destroy-and-release-slots",
+          "new-object-reuses-capacity",
+          "native-motion-tick-24",
+          "native-motion-tick-60",
+          "native-mcv-before-deploy",
+          "native-mcv-deploy-transition",
+          "native-mcv-deployed",
+          "native-mcv-repack-transition",
+          "native-mcv-repacked",
+          "fixture-removal",
+          "runtime-hd-request-off",
+          "hd-restored"
+        ]
+      }
+    ],
+    "latestSeparateProcessPixels": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/pixel-parity-repeat.json",
+      "sha256": "b76e16494bf363d722b2cbb279421e4ee7e0b957c21260520cdda40dfe90149e"
+    },
+    "latestSeparateProcessExactControls": 8,
+    "startupUiVariance": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/startup-ui-variance.json",
+      "sha256": "8a646e2bbf217783d9ff410af31a204ad21e1aa273ad32c1f863ff08601d7ccf"
+    },
+    "earlierDifferentComparisons": [
+      {
+        "path": ".artifacts/m4-3a-mac-shadow-instancing/pixel-parity-before-ui-clock.json",
+        "sha256": "c93406098cc7365368500c95c405c1dfa5ef25690a7f67663b2932260bca46d3"
+      },
+      {
+        "path": ".artifacts/m4-3a-mac-shadow-instancing/pixel-parity-final.json",
+        "sha256": "0e5eee8ab9122796fa2f9f7ede78a580ca5878607d5f261b76db9c5d8b087d97"
+      }
+    ],
+    "varianceDisposition": "Earlier full-frame differences retained. Final repeats match, but cause remains unconfirmed; no mask, blur, threshold change, UI artwork edit or claim of a proven fix.",
+    "original": {
+      "report": {
+        "path": ".artifacts/m4-3a-mac-shadow-instancing/final-pixels-0x/report.json",
+        "sha256": "97fa1db4b0df48c3dfd58035c2368833879bb09a6e0917618d729f837a367606"
+      },
+      "exactControls": 4,
+      "registeredCasters": 0,
+      "instances": 0
+    },
+    "saveRestartLifecycle": {
+      "report": {
+        "path": ".artifacts/m4-3a-mac-shadow-instancing/r4b-native-save-lifecycle/report.json",
+        "sha256": "147469e3db3f076dff13aa9c9612941c1b81854a3a22268789b64fa3b6c89aed"
+      },
+      "runtime": {
+        "path": ".artifacts/m4-3a-mac-shadow-instancing/candidate-r4b-runtime.json",
+        "sha256": "aa462b3b2135208b9cc37999080353ba4601328d128e2f95da3f63890c08736f"
+      },
+      "status": "PASS_SAVE_RESTART_CONTINUATION_RELEASE_AND_NEW_MATCH",
+      "qualification": "R4b runtime differs from final only by empty morph-layout guard allocation; final host and native save/restart regressions also pass."
+    },
+    "nativeRegressions": {
+      "status": "PASS_NATIVE_APP_REGRESSIONS",
+      "report": {
+        "path": ".artifacts/m4-3a-mac-shadow-instancing/native-final/report.json",
+        "sha256": "b5ff2fc89b4916e34d6f0b4ee120b460a7cfa420822ece764db2287f7a142634"
+      },
+      "cases": [
+        {
+          "name": "edition-menu",
+          "status": "PASS_NATIVE_EDITION_MENU_LOGO_REPLACEMENT_RADAR_FALLBACK_EXPORTS_VERSION_AND_LIFECYCLE",
+          "report": {
+            "path": ".artifacts/m4-3a-mac-shadow-instancing/native-final/edition-menu/report.json",
+            "sha256": "3d750b1a168375005568ef0076db24b4d8aed948f40a5f5868719f6681c51095"
+          },
+          "activeProbes": 0,
+          "peakInstances": 0,
+          "preparationErrors": 0
+        },
+        {
+          "name": "ra2-media-save-restart",
+          "status": "PASS_NATIVE_HD_OPENING_RADAR_SAVE_RESTART_FALLBACK_AND_RELEASE",
+          "report": {
+            "path": ".artifacts/m4-3a-mac-shadow-instancing/native-final/ra2-media-save-restart/report.json",
+            "sha256": "498a4aaaebdf85589155192e5445dc4d9e1be0a0884a68cd3c342304093f05b8"
+          },
+          "activeProbes": 2,
+          "peakInstances": 17,
+          "preparationErrors": 0
+        },
+        {
+          "name": "yr-media-save-restart",
+          "status": "PASS_NATIVE_HD_OPENING_RADAR_SAVE_RESTART_FALLBACK_AND_RELEASE",
+          "report": {
+            "path": ".artifacts/m4-3a-mac-shadow-instancing/native-final/yr-media-save-restart/report.json",
+            "sha256": "6cacf0c32cd547c5b55616e82ded09469eb78c609b74dca0897c3c0447caff68"
+          },
+          "activeProbes": 2,
+          "peakInstances": 42,
+          "preparationErrors": 0
+        },
+        {
+          "name": "ra2-victory-next",
+          "status": "PASS_SOURCE_ENDING_REPORT_DRAINS_BEFORE_SCORE_AND_CONTINUE_WITHOUT_SELECTION_FLASH",
+          "report": {
+            "path": ".artifacts/m4-3a-mac-shadow-instancing/native-final/ra2-victory-next/report.json",
+            "sha256": "49fc7a87febf43b036841e530966c24d5b37427d9fa79ee38d864d37f8e2b93b"
+          },
+          "activeProbes": 2,
+          "peakInstances": 6,
+          "preparationErrors": 0
+        }
+      ]
+    }
+  },
+  "verification": {
+    "host": {
+      "receipt": {
+        "path": ".artifacts/m4-3a-mac-shadow-instancing/host-final/summary.json",
+        "sha256": "4da1257ec1258f48dbf65c79a1ac0477de8c11e3c9e3468765cb93aad2df28fb"
+      },
+      "counts": {
+        "pass": 2173,
+        "failedCases": 0,
+        "loadErrors": 0,
+        "skipped": 0,
+        "processErrors": 0
+      },
+      "executions": 329,
+      "omitted": [],
+      "scope": "One complete host suite; first invocation aborted before discovery because resource-root was omitted."
+    },
+    "typecheck": {
+      "status": "PASS",
+      "log": {
+        "path": ".artifacts/m4-3a-mac-shadow-instancing/typecheck-final.log",
+        "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+      }
+    },
+    "productionBuild": {
+      "status": "PASS",
+      "log": {
+        "path": ".artifacts/m4-3a-mac-shadow-instancing/build-verification.log",
+        "sha256": "6cb25fba791f1ecb59c57645908930d8a9d94abe67fe5ac3cfa29185ea4d1396"
+      }
+    },
+    "protection": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/protection-after-cleanup.json",
+      "sha256": "2bb1803c743b33ca541eb9da52e9f1cf5a8fab85493cef4bbfacb3d46456886e"
+    },
+    "protectedWorkingFiles": [
+      {
+        "path": "scripts/yr-campaign/supported-prism-column.mjs",
+        "sha256": "2f33f231f8808708fbacaf7757cf803c62376e874adb4ff1372eb91d884de207",
+        "unchanged": true
+      },
+      {
+        "path": "scripts/yr-campaign/native-allied06-robot-column.mjs",
+        "sha256": "0edcc195a2a82755f23d088b1ee3eddc322c528e5c5c2c7743d203482cf9455e",
+        "unchanged": true
+      },
+      {
+        "path": "scripts/yr-campaign/native-allied06-robot-final-force.mjs",
+        "sha256": "dc28d91708c6d6b3a0860f6f51aa0668fe0e65507cbb11d9264a3bf67c9f3aa9",
+        "unchanged": true
+      },
+      {
+        "path": "scripts/yr-campaign/native-allied06-supported-robots.mjs",
+        "sha256": "dd3ba0287863dc7bc755002e7d28cd9e65c2cb1ff36705d30349ac666d14b93a",
+        "unchanged": true
+      },
+      {
+        "path": "scripts/yr-campaign/native-soviet07-boris-beacon.mjs",
+        "sha256": "43056f222126ac5bf1f3d0e5bf353dce8cf14d552d9fdf8b56893b646b1dc2d8",
+        "unchanged": true
+      }
+    ],
+    "realProfileFilesUnchanged": 245
+  },
+  "delivery": {
+    "applications": [
+      {
+        "path": "/Users/Aone/RA2remaster/RA2-HD-Mac-v0.5-20261112/Red Alert 2 HD.app",
+        "signature": "PASS_DEEP_STRICT",
+        "sourceHead": "88ac426b84723bc4a0451c221e6a43b35704791b"
+      },
+      {
+        "path": "/Users/Aone/RA2remaster/RA2-HD-Mac-M4.1-20261112/Red Alert 2 HD.app",
+        "signature": "PASS_DEEP_STRICT",
+        "sourceHead": "32c0f11b4118a0f0dac091afff909cc3ec17afaa"
+      }
+    ],
+    "newApp": null,
+    "newZip": null,
+    "previousM41Zip": {
+      "path": "/Users/Aone/Desktop/RA2-HD-Mac-M4.1-20261112.zip",
+      "existsAtCloseout": false,
+      "historicalSha256": "f104b4a72cb70e075431b576175408839be9b7fd8b0a41071301ee62b6a268ac",
+      "disposition": "Historical receipt retained; absent at closeout. This task did not remove or recreate it."
+    },
+    "reason": "Candidate remains opt-in and unqualified; existing review applications keep their own frozen code."
+  },
+  "cleanup": {
+    "receipt": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/cleanup.json",
+      "sha256": "fc47ef02eb438d1335630d461c2b7b7b8d9d6eca98b789ccd233691e742fd6ff"
+    },
+    "identicalScreenshotDedup": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/screenshot-dedup.json",
+      "sha256": "088e5d4917c817665ead12db810a8686c0bad3f72a960dbb3abb502fdc32f485"
+    },
+    "supersededScreenshots": {
+      "path": ".artifacts/m4-3a-mac-shadow-instancing/superseded-screenshot-cleanup.json",
+      "sha256": "bcfe0a71de5ed709b609f0d5a55db8e728b27b02d08d77993e9f7b19ab07fc44"
+    }
+  },
+  "nextBoundedProposal": "Measure and reduce HD vehicle colour/depth/edge material binding or submission cost while preserving accepted pixels. Diagnostic colour draws remain 947. A new objective requires planning approval.",
+  "continuation": "Same-goal corrections and feedback stay in this execution chat; return to the planning chat to choose later optimization work."
+}

@@ -1,0 +1,154 @@
+{
+  "status": "COMPLETE_FAMILY_REGISTERED_NATIVE_AND_USER_REVIEW_PENDING",
+  "family": "yr-task-newurban-casanf05-v1",
+  "mission": {
+    "edition": "yr",
+    "mission": "all01umd.map",
+    "sha256": "dee38769f2247a85908705486c175ef14a4cf90437899defe7c8b4c0d1c51fb0"
+  },
+  "theater": "NEWURBAN",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yr-campaign/task-newurban-casanf05-stage-r1",
+  "preparation": {
+    "status": "PREPARED_NATIVE_REGISTRATION_AND_RUNTIME_PENDING",
+    "recipe": "/Users/Aone/RA2remaster/ra2-hd/docs/campaign-art/yr-v1/task-newurban-casanf05.json",
+    "recipeSha256": "2f4d025e7e2460dfbe88b5823ce62921259420f018b632f331d60ba2f4c06f6b",
+    "originalSourceJsonSha256": "7899798fda59245edc84ad6c9644ea92cda4f94972409dec516e972ffb83e354",
+    "sourceSha256": "13f18f473e033a8fdc556e740b633256d888d6c5cae369c96a347c2bb58c97a7",
+    "masters": [
+      {
+        "slot": 0,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-casanf05/masters-r1/frame-0.png",
+        "sha256": "7411efdc20c52e983d6498b5a68e7baa88c645fc1d897222b260b5b5419fb9e6"
+      },
+      {
+        "slot": 1,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-casanf05/masters-r1/frame-1.png",
+        "sha256": "e1638e317dd166d80474d4e7e9f5b4c8ec3a9ba64ae8c8900a910102deb607d3"
+      },
+      {
+        "slot": 2,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-casanf05/masters-r1/frame-2.png",
+        "sha256": "b55e1ba2c0b27296735ae69576e3181bb5d89af954f6ed7ae8347d26eced9258"
+      },
+      {
+        "slot": 3,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-casanf05/masters-r1/frame-3.png",
+        "sha256": "b8ad36005642e0c634680f2017f84241b64e0d726a589fb638fb88a5938ec587"
+      }
+    ],
+    "directionAuthorization": {
+      "file": "docs/campaign-art/yr-v1/authorization.json",
+      "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+    },
+    "userVisualAcceptance": "PENDING",
+    "qualification": "Only original guides are converted. Authored masters are referenced without copying or modification. Complete state coverage, independent exports, alpha/geometry and runtime acceptance require subsequent verification."
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "23f006a4a2b8a48544c7d1a9eb2b864d45a84727fb3f6f55b59d2a70e230b967",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 8,
+      "pages": 2,
+      "ownerStates": 2,
+      "neutralStates": 6,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 4,
+      "preservedAcceptedDensityFrames": 0
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 5505024,
+      "4": 21889024
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "internalVisualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "packSha256": "23f006a4a2b8a48544c7d1a9eb2b864d45a84727fb3f6f55b59d2a70e230b967",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "inspectedExports": [
+      ".artifacts/yr-campaign/task-newurban-casanf05-stage-r1/inspection/states-2x.png",
+      ".artifacts/yr-campaign/task-newurban-casanf05-stage-r1/inspection/states-4x.png"
+    ],
+    "observations": [
+      "All original normal, damaged, garrison and rubble body states have independently sampled clean authored materials and transparent edges. Source canvas, trim, pivots, separate shadows, original owner/non-owner roles and animation timing remain unchanged.",
+      "Both actual independent density exports were inspected, including thin roof/porch/wire details and broken structural openings. Technical and internal inspection remain separate from user visual acceptance."
+    ],
+    "nativeRuntime": "PENDING",
+    "userVisualAcceptance": "PENDING"
+  },
+  "bundle": {
+    "schema": "campaign-environment-extension-v1",
+    "identity": "yr-task-newurban-casanf05-v1",
+    "familyHash": "7d11b025a90fcab4e30d561b02de431f93901189a953d7f19913cf233ec3aa74",
+    "mission": "all01umd.map",
+    "theater": "NEWURBAN",
+    "revision": "yr-task-newurban-casanf05-r1",
+    "members": [
+      {
+        "member": "cnsanf05.shp",
+        "manifest": "yr-task-newurban-casanf05-r1-cnsanf05-shp.json",
+        "sha256": "341c8add89f71b1df546ea012383236934cbb1f53a2b470747276d59d6cde6df"
+      }
+    ],
+    "acceptance": "FAITHFUL_DIRECTION_AUTHORIZED_COMPLETE_NATIVE_RUNTIME_AND_USER_VISUAL_REVIEW_PENDING",
+    "edition": "yr"
+  },
+  "files": [
+    {
+      "name": "yr-task-newurban-casanf05-r1-cnsanf05-shp-2-p0-base.png",
+      "bytes": 1046510,
+      "sha256": "0f8a1b86310b6aa127ece9ecb87dbe41bcdd9f37311be3ec27cb836a188ae764",
+      "route": "/local-campaign/yr/all01umd/yr-task-newurban-casanf05-r1-cnsanf05-shp-2-p0-base.png"
+    },
+    {
+      "name": "yr-task-newurban-casanf05-r1-cnsanf05-shp-2-p0-data.png",
+      "bytes": 21908,
+      "sha256": "0ef8a65f3ab73b7377b3633b080e7fb1d91f9a13e6f355c7f4022eda1806c354",
+      "route": "/local-campaign/yr/all01umd/yr-task-newurban-casanf05-r1-cnsanf05-shp-2-p0-data.png"
+    },
+    {
+      "name": "yr-task-newurban-casanf05-r1-cnsanf05-shp-4-p0-base.png",
+      "bytes": 3840459,
+      "sha256": "077064da943e839bf5d21b2215bb9148d33534e07bc504a8e03cf4081d1c2d6c",
+      "route": "/local-campaign/yr/all01umd/yr-task-newurban-casanf05-r1-cnsanf05-shp-4-p0-base.png"
+    },
+    {
+      "name": "yr-task-newurban-casanf05-r1-cnsanf05-shp-4-p0-data.png",
+      "bytes": 65204,
+      "sha256": "574d50b27e50fa0a1f9e0ac050209e55a114b545992b7342d8968ee4f8340fe6",
+      "route": "/local-campaign/yr/all01umd/yr-task-newurban-casanf05-r1-cnsanf05-shp-4-p0-data.png"
+    },
+    {
+      "name": "yr-task-newurban-casanf05-r1-cnsanf05-shp.json",
+      "bytes": 5777,
+      "sha256": "341c8add89f71b1df546ea012383236934cbb1f53a2b470747276d59d6cde6df",
+      "route": "/local-campaign/yr/all01umd/yr-task-newurban-casanf05-r1-cnsanf05-shp.json"
+    },
+    {
+      "name": "environment-family-yr-task-newurban-casanf05-r1.json",
+      "bytes": 620,
+      "sha256": "82401ac1fa21b394795b1d2bae8954903fa6b259fe71b4653ffc006718ca81b2",
+      "route": "/local-campaign/yr/all01umd/environment-family-yr-task-newurban-casanf05-r1.json"
+    }
+  ],
+  "contractBeforeSha256": "1e2133a028dd97dda3808e1caa6f332a7dada150b7151cb6bd962239f59ea9e3",
+  "contractAfterSha256": "135f1bf037368408e7f9013e0da5e6fc7f652ff756c26dd2725a08ee8aa89b79",
+  "existingRootSelectorChanges": {},
+  "acceptedPayloadsReplaced": 0,
+  "ownershipCorrection": null,
+  "artCorrection": null,
+  "bridgeCorrection": null,
+  "policy": "Independent densities, original shadows/state timing and existing fixed budgets; complete-family fallback retained."
+}

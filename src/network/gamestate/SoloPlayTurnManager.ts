@@ -8,6 +8,7 @@ export class SoloPlayTurnManager {
     private errorState = false;
     private gameSpeedChanged = false;
     private paused = false;
+    private campaignPaused = false;
     public readonly onActionsSent = new EventDispatcher<this, void>();
 
     private readonly onGameSpeedChanged = () => {
@@ -34,27 +35,37 @@ export class SoloPlayTurnManager {
 
     setErrorState(): void {
         this.errorState = true;
+        this.updatePlayClock();
     }
 
     getErrorState(): boolean {
         return this.errorState;
     }
+    setCampaignPaused(paused: boolean): void {
+        if (!this.game.campaign) throw new Error('Campaign pause requires a campaign world');
+        this.campaignPaused = paused;
+        this.updatePlayClock();
+    }
 
     getTurnMillis(): number {
         return this.gameTurnMillis;
     }
+    isSimulationPaused(): boolean { return this.errorState || this.paused || this.campaignPaused; }
 
     setPaused(paused: boolean): void {
         this.paused = paused;
+        this.updatePlayClock();
         if (!paused) this.computeGameTurn(this.game.speed.value);
     }
 
     doGameTurn(_timestamp: number): boolean {
+        this.updatePlayClock();
         if (this.errorState || this.paused) {
             return false;
         }
+        if (this.campaignPaused) return true;
 
-        if (this.game.status !== GameStatus.Ended) {
+        if (this.game.status !== GameStatus.Ended && !this.game.campaign?.failure) {
             let actions = this.inputActions.dequeueAll();
             actions.forEach(action => action.player = this.currentPlayer);
             this.saveJournal?.beforeTick(this.game, actions);
@@ -65,9 +76,11 @@ export class SoloPlayTurnManager {
                 actions = [new NoAction()];
             }
             this.processActions(actions);
+            this.game.campaign?.journal.record(this.game, this.currentPlayer, actions);
         }
 
         this.game.update();
+        this.updatePlayClock();
 
         if (this.gameSpeedChanged) {
             this.game.speed.value = this.game.desiredSpeed.value;
@@ -89,7 +102,14 @@ export class SoloPlayTurnManager {
         });
     }
 
+    private updatePlayClock(): void {
+        const campaign = this.game.campaign;
+        (this.game.playTime ?? campaign?.playTime)?.setRunning(!this.errorState && !this.paused && !this.campaignPaused
+            && !campaign?.restoring && !campaign?.result && !campaign?.failure && this.game.status === GameStatus.Started);
+    }
+
     dispose(): void {
+        (this.game.playTime ?? this.game.campaign?.playTime)?.setRunning(false);
         this.game.desiredSpeed.onChange.unsubscribe(this.onGameSpeedChanged);
     }
 }

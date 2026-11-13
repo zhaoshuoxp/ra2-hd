@@ -9,7 +9,8 @@ export type TrainerEffect = 'minimum' | 'power' | 'construction' | 'production' 
 export type TrainerCommand =
     | { type: 'credits'; mode: 'set' | 'add'; value: number }
     | { type: 'effect'; effect: TrainerEffect; enabled: boolean; value?: number }
-    | { type: 'heal' | 'protect' | 'unprotect' | 'transfer'; targets: readonly any[] }
+    | { type: 'heal' | 'unprotect' | 'transfer'; targets: readonly any[] }
+    | { type: 'protect'; targets: readonly any[]; retainLimbo?: boolean }
     | { type: 'reveal' | 'ready' | 'clearProtection' | 'reset' };
 export interface TrainerEnvelope { session: string; edition: GameEdition; actor: any; command: TrainerCommand }
 export interface TrainerEffects {
@@ -26,17 +27,18 @@ export function trainerEffects(player: any): Readonly<TrainerEffects> | undefine
 }
 export function trainerProtects(game: any, object: any): boolean {
     const session = game && sessions.get(game);
-    return !!(session?.allowed() && object.owner === session.player && session.protectedObjects.has(object));
+    return !!(session?.allowed() && session.controls(object) && session.protectedObjects.has(object));
 }
 export function tickTrainer(game: any): void { sessions.get(game)?.tick(); }
 export function forgetTrainerObject(game: any, object: any): void { sessions.get(game)?.protectedObjects.delete(object); }
 export function disposeTrainer(game: any): void { sessions.get(game)?.dispose(); }
 export function getTrainerSession(game: any): TrainerSession | undefined { return sessions.get(game); }
 
-/** Bound only by the offline skirmish screen. Playback never creates a session. */
+/** Bound only by an offline human game screen. Playback never creates a session. */
 export class TrainerSession {
     readonly id = `trainer-${++generation}`;
     readonly protectedObjects = new Set<any>();
+    private limboProtectedObjects = new WeakSet<object>();
     readonly enabledEffects = new Set<TrainerEffect>();
     effects = emptyEffects();
     private queue: TrainerEnvelope[] = [];
@@ -63,11 +65,14 @@ export class TrainerSession {
             this.game.localPlayer === this.player && !this.player.isAi && !this.player.isObserver && !this.player.defeated &&
             sessions.get(this.game) === this && players.get(this.player) === this;
     }
+    controls(object: any): boolean {
+        return object?.owner === this.player || !!this.game.campaign && object?.owner?.campaignController === this.player;
+    }
     private validTarget(object: any, transfer = false): boolean {
         return !!(object?.isTechno?.() && object.isSpawned && !object.isDestroyed && !object.isCrashing &&
             object.healthTrait?.getHitPoints() > 0 && this.game.getWorld().hasObjectId(object.id) && this.game.getWorld().getObjectById(object.id) === object &&
             !object.warpedOutTrait?.isActive() && !object.temporalTrait?.isActive?.() &&
-            (transfer ? object.owner !== this.player : object.owner === this.player));
+            (transfer ? !this.controls(object) : this.controls(object)));
     }
     canTransfer(object: any): boolean { return this.allowed() && this.validTarget(object, true); }
     validate(envelope: TrainerEnvelope): boolean {
@@ -89,12 +94,14 @@ export class TrainerSession {
                 }
             case 'heal': case 'protect': case 'unprotect': case 'transfer':
                 return Array.isArray(c.targets) && c.targets.length > 0 && c.targets.length <= TRAINER_LIMITS.targets &&
+                    (c.type !== 'protect' || c.retainLimbo === undefined || typeof c.retainLimbo === 'boolean') &&
                     c.targets.every(o => this.validTarget(o, c.type === 'transfer'));
             case 'reveal': case 'ready': case 'clearProtection': case 'reset': return true;
             default: return false;
         }
     }
     dispatch(envelope: TrainerEnvelope): boolean {
+        if (this.game.campaign?.inputLocked && !this.game.campaign.restoring) return false;
         if (!this.validate(envelope)) return false;
         // Reset is a supported paused cleanup transaction; it cannot advance simulation.
         if (envelope.command.type === 'reset') { this.reset(); return true; }
@@ -115,7 +122,12 @@ export class TrainerSession {
             this.record?.(envelope.command, 'tick');
             this.apply(envelope.command);
         }
-        for (const object of this.protectedObjects) if (!this.validTarget(object)) this.protectedObjects.delete(object);
+        for (const object of this.protectedObjects) {
+            const retainedLimbo = this.limboProtectedObjects.has(object) && object.limboData && !object.isSpawned
+                && !object.isDestroyed && !object.isCrashing && object.healthTrait?.getHitPoints() > 0
+                && this.controls(object) && object.owner?.getOwnedObjectById?.(object.id) === object;
+            if (!this.validTarget(object) && !retainedLimbo) this.protectedObjects.delete(object);
+        }
         if (this.effects.minimum) this.player.credits = Math.max(this.player.credits, this.effects.minimum);
         if (this.effects.recharge) this.readyPowers();
         if (queued.length) this.changed();
@@ -132,9 +144,17 @@ export class TrainerSession {
                 break;
             }
             case 'heal': for (const o of c.targets) o.healthTrait.healToFull(o, this.game); break;
-            case 'protect': for (const o of c.targets) this.protectedObjects.add(o); break;
-            case 'unprotect': for (const o of c.targets) this.protectedObjects.delete(o); break;
-            case 'clearProtection': this.protectedObjects.clear(); break;
+            case 'protect':
+                for (const o of c.targets) {
+                    this.protectedObjects.add(o);
+                    if (c.retainLimbo) this.limboProtectedObjects.add(o);
+                    else this.limboProtectedObjects.delete(o);
+                }
+                break;
+            case 'unprotect':
+                for (const o of c.targets) { this.protectedObjects.delete(o); this.limboProtectedObjects.delete(o); }
+                break;
+            case 'clearProtection': this.protectedObjects.clear(); this.limboProtectedObjects = new WeakSet(); break;
             case 'transfer':
                 for (const o of c.targets) {
                     o.slaveMaster?.slaveMinerTrait?.releaseSlave(o, this.game);
@@ -165,6 +185,7 @@ export class TrainerSession {
         if (dirty && !this.disposed) this.record?.({ type: 'reset' }, phase);
         this.queue = [];
         this.protectedObjects.clear();
+        this.limboProtectedObjects = new WeakSet();
         this.effects = emptyEffects();
         this.enabledEffects.clear();
         this.player.powerTrait?.setTrainerSupply(0, this.game);

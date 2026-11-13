@@ -11,7 +11,10 @@ export class SellTrait {
     sell(target: any): void {
         if (!target.isBuilding() || !target.rules.unsellable) {
             let refundValue = this.computeRefundValue(target);
-            if (refundValue) {
+            const launch = this.game.gameOpts?.campaign;
+            const freeSourceBuilding = launch?.edition === 'yr' && launch.semanticsVersion >= 40
+                && target.isBuilding() && target.rules.cost === 0;
+            if (refundValue || freeSourceBuilding) {
                 if (target.rules.wall) {
                     refundValue = 0;
                 }

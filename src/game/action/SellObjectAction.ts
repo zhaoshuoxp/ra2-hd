@@ -4,6 +4,7 @@ import { Building, BuildStatus } from '../gameobject/Building';
 import { ActionType } from './ActionType';
 import { DockableTrait } from '../gameobject/trait/DockableTrait';
 import { Game } from '../Game';
+import { canControlOwner } from '../campaign/CampaignControl';
 export class SellObjectAction extends Action {
     private game: Game;
     private objectId: number;
@@ -28,7 +29,7 @@ export class SellObjectAction extends Action {
         if (this.game.getWorld().hasObjectId(this.objectId)) {
             const object = this.game.getObjectById(this.objectId);
             if (object.isTechno() &&
-                player === object.owner &&
+                canControlOwner(player, object.owner) &&
                 object.isSpawned) {
                 const canSell = object.isBuilding()
                     ? object.buildStatus === BuildStatus.Ready && !object.warpedOutTrait.isActive()

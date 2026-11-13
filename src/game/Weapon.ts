@@ -57,6 +57,7 @@ interface GameObject {
     tile: any;
     tileElevation: number;
     owner: {
+        campaignSemanticsVersion?: number;
         removeOwnedObject(obj: GameObject): void;
     };
     baseDamageMultiplier?: number;
@@ -243,6 +244,8 @@ export class Weapon {
         if (this.gameObject.isBuilding() &&
             !this.gameObject.overpoweredTrait &&
             this.type === WeaponType.Secondary &&
+            (!this.gameObject.rules.isGattling || this.gameObject.owner?.campaignSemanticsVersion
+                && this.gameObject.owner.campaignSemanticsVersion < 46) &&
             this.gameObject.primaryWeapon) {
             return Math.min(this.gameObject.primaryWeapon.rules.range, this.rules.range);
         }

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "status": "ORIGINAL_BACKGROUND_RESTORED_GENERATED_HD_REPLACEMENT_BLOCKED",
+  "method": "Existing verified retail bitmap, rendered through the responsive canvas; no generated output was produced.",
+  "asset": "public/res/presentation/campaign-backdrop-soviet-score-original-r4.png",
+  "dimensions": [
+    632,
+    568
+  ],
+  "sha256": "a803b4683d5907ee0e367e0c6be0a883dfc008e158e74cb49bd5ff0efe9cb5f2",
+  "source": {
+    "member": "sscrbkmd.shp",
+    "archive": "ra2.mix/neutral.mix",
+    "sha256": "cd353c2e8cc81396cc8371d4caffb7745ad7661baa4fedcfc4af65e1c277da79",
+    "palette": "sscore.pal",
+    "paletteSha256": "fc25f3833926eaa0618cb8782680da1b2a148f003e8ef16d45003d50ef71d2c6",
+    "decodedPixelMismatches": 0
+  },
+  "rendering": "Remove the native silver border and its shadow with a 12px inset, retain one centered native-proportion insignia, reflect and extend only the outer 16px background rays into wide margins with matching boundary texels. Original pixel density is retained, not certified as HD artwork.",
+  "uiBudgetBytes": 16777216,
+  "maxCompositedPixels": 1700000,
+  "generation": {
+    "mode": "Built-in image_gen",
+    "references": [
+      ".artifacts/m3-1/score-source/sscrbkmd-0.png",
+      "/Users/Aone/.codex/attachments/469c5ba0-b5a7-46d1-b31d-7c200c374c0e/download.png"
+    ],
+    "prompt": "Use case: ui-mockup\nAsset type: production full-screen Soviet campaign score background plate for a classic Red Alert 2 HD interface.\nInput images: Image 1 is the actual retail sscrbkmd.shp Soviet score background, the authoritative reference for subject, proportions, material, darkness and palette. Image 2 is the user's reference crop confirming the same large background insignia; ignore the foreground mechanical device along its top.\nPrimary request: Reconstruct the retail background at high definition and extend it sideways into a much wider, approximately 2:1 landscape image (around 1792 x 896). Keep ONE large, subdued, centered Soviet hammer-and-sickle insignia on its angular, aged dark-red metal shield, with the native muted olive-gold five-pointed star behind it. Continue the very dark maroon and black-red radiating starburst rays naturally to all four edges. Keep the original background's restrained near-black shadows, dim ochre-gold mark, deep red metal and subtle worn texture. The center insignia should be about 85% of canvas height, not enlarged or repeated to fill the extra width. Preserve the native symbol and original visual vocabulary rather than redesigning it.\nComposition/framing: flat straight-on 2D game background, one centered large dim insignia, additional width filled only with extended dark red/black radial background rays. Edge to edge without any frame. This background will sit BEHIND the existing separate smaller animated metal score apparatus, so keep the background quiet and dark with no baked foreground UI.\nConstraints: no silver border, no silver frame, no instrument, no mechanical apparatus, no small foreground badge, no text, no numbers, no statistics boxes, no glowing neon, no inset rectangles, no topographic map, no extra emblems, no watermark. Do not copy the foreground object at the top of image 2. Opaque background.",
+    "status": "REJECTED_BY_IMAGE_GENERATION_SAFETY_SYSTEM",
+    "error": "HTTP 400 moderation_blocked, output moderation category other, safety_violations=[abuse]",
+    "requestId": "a55809a1-4adf-4e0b-b233-fbf650564b02",
+    "fallback": "No retry, alternate generation or CLI/API fallback attempted."
+  },
+  "loadingColor": {
+    "source": "spldbr.shp / spldbr.pal",
+    "nativeFillDimensions": [
+      456,
+      25
+    ],
+    "nativeMeanRgbByRow": [
+      [
+        1,
+        249,
+        155,
+        19
+      ],
+      [
+        7,
+        251,
+        246,
+        60
+      ],
+      [
+        12,
+        252,
+        106,
+        10
+      ],
+      [
+        18,
+        236,
+        1,
+        0
+      ],
+      [
+        23,
+        128,
+        3,
+        3
+      ]
+    ],
+    "change": "Bright yellow-orange tone curves retain the shared cylinder, seams and highlights. A continuous 92% red floor prevents pure-black source texels becoming irregular black pinholes along the bottom edge. The green highlight curve has unit amplitude to avoid clipping the original left-to-right brightness variation. Lighting remains registered to the entire housing and is only revealed by progress, never rescaled to the loaded fraction."
+  }
+}

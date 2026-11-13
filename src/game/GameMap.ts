@@ -9,6 +9,7 @@ import { AutoLat } from '@/game/theater/AutoLat';
 import { TheaterType } from '@/engine/TheaterType';
 import { Vector2 } from '@/game/math/Vector2';
 import { Box2 } from '@/game/math/Box2';
+import { Coords } from '@/game/Coords';
 interface MapFile {
     startingLocations: any[];
     tiles: any[];
@@ -82,10 +83,10 @@ export class GameMap {
     get startingLocations() {
         return this.mapFile.startingLocations;
     }
-    constructor(mapFile: MapFile, t: any, i: any, r: any) {
+    constructor(mapFile: MapFile, t: any, i: any, r: any, fullScenario = false) {
         this.mapFile = mapFile;
         this.tiles = new TileCollection(this.mapFile.tiles, t, i.general, r);
-        this.mapBounds = new MapBounds().fromMapFile(this.mapFile as any, this.tiles);
+        this.mapBounds = new MapBounds(fullScenario).fromMapFile(this.mapFile as any, this.tiles);
         this.tileOccupation = new TileOccupation(this.tiles);
         this.tileOcclusion = new TileOcclusion(this.tiles);
         this.terrain = new Terrain(this.tiles, this.mapFile.theaterType, this.mapBounds, this.tileOccupation, i);
@@ -184,7 +185,10 @@ export class GameMap {
         return resultTile;
     }
     isWithinHardBounds(tile: Tile): boolean {
-        return this.mapBounds.isWithinHardBounds(tile as any);
+        const point = tile as any;
+        return this.mapBounds.isWithinHardBounds(point)
+            && !!this.tiles.getByMapCoords(Math.floor(point.x / Coords.LEPTONS_PER_TILE),
+                Math.floor((point.z ?? point.y) / Coords.LEPTONS_PER_TILE));
     }
     getInitialMapObjects(): InitialMapObjects {
         return {

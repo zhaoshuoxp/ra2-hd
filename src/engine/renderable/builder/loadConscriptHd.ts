@@ -62,7 +62,7 @@ export async function loadConscriptHd(theater: any, renderer: any, enabled = fal
             }, binding.prepared), textures => {
                 textures.forEach(texture => glRenderer.initTexture(texture));
                 check(glRenderer.getContext().getError() === 0, 'texture-upload-failure');
-            });
+            }, true, true);
         const report = { density: selected.density, gpuBytes: selected.gpuBytes,
             attempts: selected.attempts, manifestHash: binding.sha256 };
         console.info('[Conscript HD selection]', report);

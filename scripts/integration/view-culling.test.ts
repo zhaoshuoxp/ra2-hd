@@ -97,3 +97,13 @@ test('state changes are reported once', () => {
     expect(setViewCulled(object, false)).toBe(true);
     expect(object.visible).toBe(true);
 });
+
+test('resource notifications run once per transition and precede restored animation frames', () => {
+    const f = fixture(), object = f.renderable('building', 9000), events: string[] = [];
+    Object.assign(object, { onViewCullChanged: (visible: boolean) => events.push(visible ? 'acquire' : 'release'),
+        onViewCullRestore: () => events.push('frames') });
+    f.frame(); f.frame();
+    expect(events).toEqual(['release']);
+    f.camera.position.x = 9000; f.camera.updateMatrixWorld(); f.frame(); f.frame();
+    expect(events).toEqual(['release', 'acquire', 'frames']);
+});

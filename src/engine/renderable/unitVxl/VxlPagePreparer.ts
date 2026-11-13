@@ -7,8 +7,8 @@ export class VxlPagePreparer {
     private sequence = 0;
     private disposed = false;
     constructor(private createWorker = () => new Worker(new URL('./prepareVxlPage.worker.ts', import.meta.url), { type: 'module' })) {}
-    prepare(images: ArrayBuffer[], size: [number, number], scale: number, limit: number): Promise<PooledHdPixels> {
-        return this.request({ images, size, scale, limit }, images, 'pages');
+    prepare(images: ArrayBuffer[], size: [number, number], scale: number, limit: number, packedLighting = false): Promise<PooledHdPixels> {
+        return this.request({ images, size, scale, limit, packedLighting }, images, 'pages');
     }
     prepareGeometry(bytes: ArrayBuffer): Promise<ArrayBuffer[]> {
         return this.request({ geometry: bytes }, [bytes], 'geometries');

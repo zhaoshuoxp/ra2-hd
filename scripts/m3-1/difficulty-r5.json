@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "scope": "RA2 Soviet 01 all three campaign difficulties; original resources remain unchanged.",
+  "rules": {
+    "member": "rules.ini",
+    "archive": "ra2.mix/local.mix",
+    "sha256": "fd1e95cea0306ea78049dc81c8cd816e18c28c496872a1ff02edd50bd082062f",
+    "sections": {
+      "Easy": {
+        "Groundspeed": "1.0",
+        "Airspeed": "1.0",
+        "BuildTime": ".8",
+        "Armor": "1.2",
+        "ROF": ".8",
+        "Cost": "1.0",
+        "RepairDelay": ".02",
+        "BuildDelay": ".03",
+        "DestroyWalls": "no",
+        "ContentScan": "yes"
+      },
+      "Normal": {
+        "Groundspeed": "1.0",
+        "Airspeed": "1.0",
+        "BuildTime": "1",
+        "Armor": "1.0",
+        "ROF": "1.0",
+        "Cost": "1.0",
+        "RepairDelay": ".02",
+        "BuildDelay": ".03",
+        "BuildSlowdown": "yes",
+        "DestroyWalls": "no",
+        "ContentScan": "yes"
+      },
+      "Difficult": {
+        "Groundspeed": "1.0",
+        "Airspeed": "1.0",
+        "BuildTime": "1.0",
+        "Armor": ".8",
+        "ROF": "1.2",
+        "Cost": "1.0",
+        "RepairDelay": ".05",
+        "BuildDelay": ".1",
+        "BuildSlowdown": "yes",
+        "DestroyWalls": "no"
+      }
+    },
+    "teamDelays": [
+      2000,
+      2500,
+      3500
+    ]
+  },
+  "map": {
+    "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f",
+    "teamDelaysOverrideHardNormalEasy": [1000, 750, 500],
+    "teamDelaysOverrideNote": "The original mission General section overrides the global table. Preserve the source ordering, including the longer Hard interval; do not sort it into an assumed difficulty curve.",
+    "difficultyTriggers": [
+      {
+        "id": "084584CC",
+        "name": "Angry GI's 3",
+        "disabled": true,
+        "flags": {
+          "easy": false,
+          "normal": true,
+          "hard": true
+        }
+      },
+      {
+        "id": "084581DC",
+        "name": "Angry GI's 4",
+        "disabled": true,
+        "flags": {
+          "easy": false,
+          "normal": true,
+          "hard": true
+        }
+      },
+      {
+        "id": "079EF4FC",
+        "name": "Angry GI's 1",
+        "disabled": true,
+        "flags": {
+          "easy": false,
+          "normal": true,
+          "hard": true
+        }
+      },
+      {
+        "id": "08458F3C",
+        "name": "Angry GI's 2",
+        "disabled": true,
+        "flags": {
+          "easy": false,
+          "normal": true,
+          "hard": true
+        }
+      },
+      {
+        "id": "0BB24A9C",
+        "name": "Begin Production",
+        "disabled": false,
+        "flags": {
+          "easy": false,
+          "normal": true,
+          "hard": true
+        }
+      }
+    ],
+    "ai": [
+      {
+        "id": "08B56C60",
+        "name": "Defense 1",
+        "flags": {
+          "easy": true,
+          "normal": true,
+          "hard": true
+        },
+        "units": [
+          {
+            "count": 1,
+            "type": "E1"
+          }
+        ]
+      },
+      {
+        "id": "080D348C",
+        "name": "BG1 - GI 1",
+        "flags": {
+          "easy": false,
+          "normal": true,
+          "hard": false
+        },
+        "units": [
+          {
+            "count": 1,
+            "type": "E1"
+          }
+        ]
+      },
+      {
+        "id": "080D326C",
+        "name": "BG1 - GI 2",
+        "flags": {
+          "easy": false,
+          "normal": false,
+          "hard": true
+        },
+        "units": [
+          {
+            "count": 2,
+            "type": "E1"
+          }
+        ]
+      },
+      {
+        "id": "080D312C",
+        "name": "BG1 - GI d",
+        "flags": {
+          "easy": true,
+          "normal": true,
+          "hard": true
+        },
+        "units": [
+          {
+            "count": 1,
+            "type": "E1"
+          }
+        ]
+      }
+    ],
+    "ranking": {
+      "ParTimeEasy": "00:25:00",
+      "ParTimeMedium": "00:15:00",
+      "ParTimeHard": "00:06:00",
+      "UnderParTitle": "GUI:ParTitleSov02",
+      "UnderParMessage": "GUI:UnderParMsgSov01",
+      "OverParTitle": "GUI:ParTitleSov01",
+      "OverParMessage": "GUI:OverParMsgSov01"
+    }
+  },
+  "implementation": {
+    "humanSections": {
+      "easy": "Easy",
+      "normal": "Normal",
+      "hard": "Difficult"
+    },
+    "aiSections": {
+      "easy": "Difficult",
+      "normal": "Normal",
+      "hard": "Easy"
+    },
+    "aiIndexes": {
+      "easy": 2,
+      "normal": 1,
+      "hard": 0
+    },
+    "interpretation": "The source records and table values are directly verified. Bilateral campaign selection follows the retail rule comments and the complementary scenario difficulty fields in YRpp. Exact native-Windows binary parity is not certified.",
+    "saveCompatibility": "Retain journal-v3, both existing database versions and the legacy Normal key. Difficulty is already part of signed checkpoint options.",
+    "progress": "Keep one completion per mission/difficulty without opening another mission."
+  },
+  "primaryReferences": [
+    {
+      "url": "https://raw.githubusercontent.com/Phobos-developers/YRpp/master/GeneralDefinitions.h",
+      "supports": "AIDifficulty: Hard 0, Normal 1, Easy 2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Phobos-developers/YRpp/master/ScenarioClass.h",
+      "supports": "Complementary scenario difficulty fields and per-difficulty par times"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Phobos-developers/YRpp/master/RulesClass.h",
+      "supports": "Separate firepower, armor, ROF, build, cost and other difficulty factors"
+    },
+    {
+      "url": "https://github.com/Phobos-developers/Phobos/blob/develop/docs/AI-Scripting-and-Mapping.md",
+      "supports": "TeamDelays arrays are ordered Difficult, Normal, Easy"
+    }
+  ],
+  "loading": {
+    "greenExponentBefore": 0.44,
+    "greenExponentAfter": 0.35,
+    "redFloor": 0.92,
+    "sharedHousingUnchanged": true,
+    "lightingCoordinates": "Entire cylinder; progress only reveals a fixed prefix"
+  }
+}

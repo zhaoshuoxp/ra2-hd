@@ -1,6 +1,6 @@
 import { DeathType } from '../common/DeathType';
 import { ZoneType } from '../unit/ZoneType';
-import { Vehicle } from '../Vehicle';
+import { ROCKING_TICKS } from '../Vehicle';
 import { NotifyAttack } from './interface/NotifyAttack';
 import { NotifyDestroy } from './interface/NotifyDestroy';
 import { NotifyHeal } from './interface/NotifyHeal';
@@ -11,7 +11,12 @@ import { WaitMinutesTask } from '../task/system/WaitMinutesTask';
 import { GameSpeed } from '../../GameSpeed';
 import { RadialTileFinder } from '../../map/tileFinder/RadialTileFinder';
 import { AttackTask } from '../task/AttackTask';
-const getRockingTicks = (): number => (Vehicle as any).ROCKING_TICKS + 2;
+function getRockingTicks(game: any): number {
+    // Old journals used an undefined class property and therefore inflicted
+    // organic parasite damage every turn. Preserve their reconstruction.
+    return (game?.gameOpts?.campaign ?? game?.gameOpts)?.parasiteCadenceVersion === 1
+        ? ROCKING_TICKS + 2 : Number.NaN;
+}
 export class ParasiteableTrait implements NotifyTick, NotifyHeal, NotifyDamage, NotifyAttack, NotifyDestroy, NotifyTeleport {
     private gameObject: any;
     private beingBoarded: boolean = false;
@@ -23,11 +28,11 @@ export class ParasiteableTrait implements NotifyTick, NotifyHeal, NotifyDamage, 
     constructor(gameObject: any) {
         this.gameObject = gameObject;
     }
-    infest(parasite: any, weapon: any): void {
+    infest(parasite: any, weapon: any, game?: any): void {
         this.beingBoarded = false;
         this.parasite = parasite;
         this.parasiteWeapon = weapon;
-        this.damageTickCooldown = parasite.rules.organic ? getRockingTicks() : 0;
+        this.damageTickCooldown = parasite.rules.organic ? getRockingTicks(game) : 0;
         this.lastExternalDamageInflicted = undefined;
         this.lastExternalDamageTick = undefined;
         if (weapon.warhead.rules.paralyzes) {
@@ -65,7 +70,7 @@ export class ParasiteableTrait implements NotifyTick, NotifyHeal, NotifyDamage, 
         }
         const weapon = this.parasiteWeapon;
         this.damageTickCooldown = this.parasite.rules.organic
-            ? getRockingTicks()
+            ? getRockingTicks(gameState)
             : weapon.getCooldownTicks();
         let damage = weapon.rules.damage;
         if (this.parasite.veteranTrait) {

@@ -6,6 +6,8 @@ import { renderOutput, type RenderResolution } from './RenderResolution';
 import { HdSpriteProgramWarmup } from './batch/HdSpriteProgramWarmup';
 import { PaletteSpriteProgramWarmup } from './batch/PaletteSpriteProgramWarmup';
 import { CombatProgramWarmup } from './batch/CombatProgramWarmup';
+import { installShadowOnlyPass } from './ShadowOnlyMaterials';
+import { VehicleShadowBatcher, supportsNativeInstancing } from './batch/VehicleShadowBatcher';
 export class Renderer {
     private width: number;
     private height: number;
@@ -14,12 +16,15 @@ export class Renderer {
     public outputMetrics?: ReturnType<typeof renderOutput>;
     private renderer!: THREE.WebGLRenderer;
     private scenes: Set<any> = new Set();
+    private preparingScenes = new Set<any>();
     private hdProgramWarmups = new Map<any, HdSpriteProgramWarmup>();
     private paletteProgramWarmups = new Map<any, PaletteSpriteProgramWarmup>();
     private combatProgramWarmups = new Map<any, CombatProgramWarmup>();
     private isContextLost: boolean = false;
     private renderResolution: RenderResolution = 'original';
     private stats?: Stats;
+    private vehicleShadows?: VehicleShadowBatcher;
+    private vehicleShadowInstancing = false;
     private _onFrame = new EventDispatcher<string, number>();
     constructor(width: number, height: number) {
         this.width = width;
@@ -38,8 +43,20 @@ export class Renderer {
         if (!this.renderer) {
             throw new Error('Renderer not yet initialized');
         }
-        return !!this.renderer.extensions.get('ANGLE_instanced_arrays');
+        return supportsNativeInstancing(this.renderer);
     }
+    usesLegacyInstancing(): boolean { return false; }
+    setVehicleShadowInstancing(enabled: boolean): void {
+        this.vehicleShadowInstancing = enabled;
+        if (this.vehicleShadows) {
+            this.vehicleShadows.enabled = enabled;
+            if (!enabled) this.vehicleShadows.clear();
+        }
+    }
+    setVehicleShadowDiagnosticTiming(enabled: boolean): void {
+        if (this.vehicleShadows) this.vehicleShadows.diagnosticTiming = enabled;
+    }
+    vehicleShadowDiagnostics() { return this.vehicleShadows?.diagnostics(); }
     initStats(container: HTMLElement): void {
         if (!this.stats) {
             this.stats = new Stats();
@@ -90,6 +107,9 @@ export class Renderer {
         renderer.autoClear = false;
         renderer.autoClearDepth = false;
         renderer.shadowMap.enabled = true;
+        installShadowOnlyPass(renderer);
+        this.vehicleShadows = new VehicleShadowBatcher(renderer);
+        this.vehicleShadows.enabled = this.vehicleShadowInstancing;
         renderer.localClippingEnabled = true;
         renderer.toneMapping = THREE.NoToneMapping;
         renderer.outputColorSpace = (THREE as any).SRGBColorSpace ?? THREE.LinearSRGBColorSpace;
@@ -135,6 +155,7 @@ export class Renderer {
         scene.create3DObject();
     }
     removeScene(scene: any): void {
+        this.vehicleShadows?.removeScene(scene.scene);
         this.hdProgramWarmups.get(scene)?.dispose();
         this.hdProgramWarmups.delete(scene);
         this.paletteProgramWarmups.get(scene)?.dispose();
@@ -148,6 +169,7 @@ export class Renderer {
     }
     update(deltaTime: number, ...args: any[]): void {
         this.scenes.forEach((scene) => {
+            if (this.preparingScenes?.has(scene)) return;
             scene.update(deltaTime, ...args);
         });
         this._onFrame.dispatch('frame', deltaTime);
@@ -160,20 +182,42 @@ export class Renderer {
         this.renderer.state.buffers.depth.setMask(true);
         this.renderer.clear();
         this.scenes.forEach((scene) => {
+            if (this.preparingScenes?.has(scene)) return;
             // A transparent pass may disable depth writes; gl.clear respects that mask.
             this.renderer.state.buffers.depth.setMask(true);
             this.renderer.clearDepth();
             const viewportY = this.height - scene.viewport.y - scene.viewport.height;
             this.renderer.setViewport(scene.viewport.x, viewportY, scene.viewport.width, scene.viewport.height);
             this.renderer.render(scene.scene, scene.camera);
+            scene.screenEffect?.render(this.renderer);
         });
     }
     flush(): void {
         this.renderer.renderLists.dispose();
     }
-    async prepareScene(scene: any, isCancelled: () => boolean = () => false): Promise<void> {
+    async prepareScene(scene: any, isCancelled: () => boolean = () => false,
+        settleResources?: () => Promise<void>): Promise<void> {
+        const preparing = this.preparingScenes ??= new Set();
+        if (preparing.has(scene)) throw new Error('Scene preparation is already running');
+        preparing.add(scene);
+        try { await this.prepareScenePrograms(scene, isCancelled, settleResources); }
+        finally { preparing.delete(scene); }
+    }
+    private async prepareScenePrograms(scene: any, isCancelled: () => boolean,
+        settleResources?: () => Promise<void>): Promise<void> {
+        // The loading UI keeps rendering while parallel compilation waits.
+        // Freeze this scene so batch replacement cannot dispose its pending programs.
         scene.update(0);
+        if (settleResources) {
+            // First updates bind actual unit and building renderers. Their async
+            // HD callbacks can replace materials even while scene updates stop.
+            await settleResources();
+            if (isCancelled()) return;
+            // Publish settled materials into batches before compiling them.
+            scene.update(0);
+        }
         await this.renderer.compileAsync(scene.scene, scene.camera);
+        if (!isCancelled()) await scene.screenEffect?.prepare(this.renderer);
         if (isCancelled()) return;
         if (!this.hdProgramWarmups.has(scene)) {
             const warmup = HdSpriteProgramWarmup.create(scene.scene);
@@ -226,6 +270,7 @@ export class Renderer {
         this.combatProgramWarmups.clear();
     }
     dispose(): void {
+        this.vehicleShadows?.dispose();
         this.releaseHdProgramWarmups();
         this.renderer.domElement.remove();
         this.renderer.domElement.removeEventListener('webglcontextlost', this.handleContextLost);
@@ -239,6 +284,7 @@ export class Renderer {
     };
     private handleContextRestored = (): void => {
         const canvas = this.renderer.domElement;
+        this.vehicleShadows?.dispose();
         this.releaseHdProgramWarmups();
         this.renderer.dispose();
         this.renderer = this.createGlRenderer(canvas);

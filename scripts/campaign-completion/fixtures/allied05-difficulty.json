@@ -1,0 +1,71 @@
+{
+  "mission": "all05s.map",
+  "sourceSha256": "d09cebddc1f4009098dfa48b18bf4022e6e4d00801f1ca8efd99917f185bb225",
+  "semanticsVersion": 19,
+  "enemyHouse": "RedTeam House",
+  "controlledHouses": 4,
+  "triggers": 128,
+  "aiTriggers": 109,
+  "ignoreGlobal": false,
+  "teamDelays": [
+    2000,
+    2500,
+    3500
+  ],
+  "cases": {
+    "easy": {
+      "credits": 10050,
+      "human": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "enemy": [
+        0.8,
+        1.2,
+        1
+      ],
+      "aiDelay": 3500,
+      "openingActors": {
+        "TANY": 1,
+        "E1": 3
+      },
+      "openingRanks": {
+        "TANY": [
+          2
+        ],
+        "E1": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "hard": {
+      "credits": 9950,
+      "human": [
+        0.8,
+        1.2,
+        1
+      ],
+      "enemy": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "aiDelay": 2000,
+      "openingActors": {
+        "TANY": 1,
+        "E1": 0
+      },
+      "openingRanks": {
+        "TANY": [
+          2
+        ],
+        "E1": []
+      }
+    }
+  },
+  "authority": "Original all05s.map Player credits100 and retail General CampaignMoneyDeltaEasy50/CampaignMoneyDeltaHard-50; all four original PlayerControl houses receive the selected human handicap and their own original money plus that source bonus. Map General has no TeamDelays override; retail General is2000,2500,3500 in Easy/Normal/Difficult order, with opposite AI handicap. Original0B9ECBBC is Easy-only, enabled by07EFD7A0 after6 seconds. Its named Seals task force0CDC482C explicitly contains3,E1; team VeteranLevel2 means veteran. Initial TANY raw200 separately means elite. No Easy/Hard full-goal claim. Original Basic IgnoreGlobalAITriggers=no retains107 retail AI records plus2 distinct local records, giving109 in the live merged definition; the source map alone still has2.",
+  "sourceAiTriggers": 2
+}

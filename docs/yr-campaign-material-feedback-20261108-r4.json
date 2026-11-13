@@ -1,0 +1,126 @@
+{
+  "schema": "yr-material-feedback-checkpoint-v1",
+  "date": "2026-11-08",
+  "revision": "material-r4",
+  "status": "TECHNICALLY_QUALIFIED_PACKAGE_AND_USER_VISUAL_REVIEW_PENDING",
+  "originalPlayableMaps": 26,
+  "yrPlayableMaps": 14,
+  "semanticsVersion": 48,
+  "plannedWorldArtMaterialWaits": [],
+  "scope": [
+    "Soviet05 CAEAST02 complete body material",
+    "NEWURBAN supported bridge terrain deck asphalt"
+  ],
+  "inheritedR3": "docs/yr-campaign-feedback-delivery-20261108-r3.json",
+  "srcCodeChangedFromR3": false,
+  "host": {
+    "status": "PASS",
+    "cases": 223,
+    "failures": 0,
+    "files": 4,
+    "log": "/private/tmp/ra2-material-feedback-r4-focused-tests-r2.log",
+    "inheritedFullHost": "docs/yr-campaign-feedback-checkpoint-20261108-r3.json"
+  },
+  "typecheck": {
+    "status": "PASS",
+    "log": "/private/tmp/ra2-material-feedback-r4-final-typecheck.log"
+  },
+  "native": [
+    {
+      "file": ".artifacts/yr-campaign/statue-owner-material-r4-native-2x-r1/report.json",
+      "sha256": "547b50a5217d63c0729417bd90da647885435d32225a6c2a99a0d5c12d11e3dd",
+      "status": "PASS_COMPLETE_ORIGINAL_BUILDING_HD_TURRET_BEARINGS_BODY_STATES_AND_OWNER_MATERIAL"
+    },
+    {
+      "file": ".artifacts/yr-campaign/statue-owner-material-r4-native-4x-r1/report.json",
+      "sha256": "69392eb1ed032aa43738249f46cc8d666e652e73b3158edb582a9810695ca9f8",
+      "status": "PASS_COMPLETE_ORIGINAL_BUILDING_HD_TURRET_BEARINGS_BODY_STATES_AND_OWNER_MATERIAL"
+    },
+    {
+      "file": ".artifacts/yr-campaign/statue-owner-material-r4-combat-4x-r1/report.json",
+      "sha256": "44c72704b63eca54da9bdb420016a121d7d2eb800be01819beb954e38053d4e6",
+      "status": "PASS_NATIVE_ORDINARY_SOURCE_ATTACK_COMPLETE_HD_BUST_DESTRUCTION_AND_RUBBLE"
+    },
+    {
+      "file": ".artifacts/yr-campaign/bridge-deck-material-r11-native-2x-r1/report.json",
+      "sha256": "fc63f1d951aa639b057583b01525e96c36f11166afc3b3cb00b965ed7f39f040",
+      "status": "OBSERVED_ORIGINAL_ALLIED06_BRIDGE_TEAMS_AND_CONTACTS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/bridge-deck-material-r11-native-4x-r1/report.json",
+      "sha256": "cc74f65b56c29585e252c6d0926b08cdd03668727e93a118c37222fe91a6b928",
+      "status": "OBSERVED_ORIGINAL_ALLIED06_BRIDGE_TEAMS_AND_CONTACTS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/bridge-deck-material-r11-soviet03-2x-r2/report.json",
+      "sha256": "d54ba549093cce2c86c2f6720d9cd7b77ddae73a618583cc4e977c0fd46184ee",
+      "status": "PASS_NATIVE_ORIGINAL_TMP_PLACEMENTS_HD_MESH_DENSITY_FROZEN_WORLD_AND_SCENE_RELEASE"
+    },
+    {
+      "file": ".artifacts/yr-campaign/bridge-deck-material-r11-soviet03-4x-r1/report.json",
+      "sha256": "ba560fa6db6581ca84f96eb0abfd9ab505cbbeba477618da1e2cf3eca546d731",
+      "status": "PASS_NATIVE_ORIGINAL_TMP_PLACEMENTS_HD_MESH_DENSITY_FROZEN_WORLD_AND_SCENE_RELEASE"
+    }
+  ],
+  "materials": [
+    {
+      "file": "docs/yr-campaign-statue-owner-material-20261108-r4.json",
+      "sha256": "61d19998de6b2305eb71f1cc916403bcc2203b70a64b84fce13d92f060454d19"
+    },
+    {
+      "file": "docs/yr-campaign-bridge-deck-material-20261108-r11.json",
+      "sha256": "7ba17e637c2d99f5b2bd2bb1a1bd3d17b7f2dfb85a8b94197bcdabdad7cd7c49"
+    }
+  ],
+  "roadSourceAudit": {
+    "file": ".artifacts/yr-campaign/all-map-road-material-r4-r1/report.json",
+    "sha256": "4489da5e3d98acacf0d63dc5d4bbb73258ac0339eada83d473b59758ecf023b4"
+  },
+  "resourcePlan": {
+    "file": ".artifacts/yr-campaign/material-feedback-r4-final-resource-plan.json",
+    "sha256": "5112dbca15f61dc1f7275eb312d1f8e354e3c106e675e8d930a4751839f7e01e"
+  },
+  "userRouteRetests": [
+    "Allied04 transport-over-pyramid rescue did not reproduce in the original source route; source rescue conditions are retained.",
+    "Allied06 exact stalled-on-bridge user route did not reproduce; original fresh48 assault observation passes."
+  ],
+  "storyHdLoading": "RETAINED_R3",
+  "retainedOriginalQualifications": [
+    "All14 unmodified source45 campaign goal qualifications remain historical.",
+    "Fresh48 targeted and supported-play regressions do not establish all14 new-version unmodified full victories at every difficulty.",
+    "The exact prior Soviet01 missing-cell crash trigger was not reproduced technically; the user passed the correction.",
+    "Original installation includes CnCNet patches. Pristine executable RNG/AI/particle equivalence retains its existing boundary."
+  ],
+  "reusedArtwork": {
+    "head": "Complete yr-cahead-r2, eight headings",
+    "snow": "User-selected prior Snow retained",
+    "units": "Accepted unit paint retained"
+  },
+  "artworkProvenance": ".local/source-art/yr-campaign-v1/task-buildings/newurban-caeast02/masters-r2/generation.json",
+  "realProfilesTouched": false,
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "userVisualAcceptance": "PENDING",
+  "resourceCounts": {
+    "sharedFiles": 14542,
+    "campaignFiles": 1741,
+    "routes": 16801,
+    "selections": 211,
+    "theaterLayers": 12,
+    "movieLibraryFiles": 61
+  },
+  "castingMasterRecord": "docs/yr-campaign-statue-body-material-20261108-r3.json",
+  "originalOwnerMaterialPreservation": {
+    "independentDensities": [
+      2,
+      4
+    ],
+    "dataPagesExact": true,
+    "ownerPaintRgbaExact": true,
+    "reference": "yr-task-newurban-caeast02-r1",
+    "record": "docs/yr-campaign-statue-owner-material-20261108-r4.json"
+  },
+  "resourceRegistration": {
+    "file": ".artifacts/yr-campaign/material-feedback-r4-final-resource-registration/report.json",
+    "sha256": "84c9145d652bf2466be6ba599f047dff063291b7cabe6e869a88685565f1a154"
+  }
+}

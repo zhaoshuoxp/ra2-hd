@@ -4,6 +4,7 @@ import { AutoRepairTrait } from '../gameobject/trait/AutoRepairTrait';
 import { BuildingRepairStartEvent } from '../event/BuildingRepairStartEvent';
 import { ActionType } from './ActionType';
 import { Game } from '../Game';
+import { canControlOwner } from '../campaign/CampaignControl';
 export class ToggleRepairAction extends Action {
     private game: Game;
     private buildingId: number;
@@ -28,7 +29,7 @@ export class ToggleRepairAction extends Action {
         if (this.game.getWorld().hasObjectId(this.buildingId)) {
             const building = this.game.getObjectById(this.buildingId);
             if (building.isBuilding() &&
-                player === building.owner &&
+                canControlOwner(player, building.owner) &&
                 !building.isDestroyed &&
                 building.rules.repairable &&
                 building.rules.clickRepairable &&

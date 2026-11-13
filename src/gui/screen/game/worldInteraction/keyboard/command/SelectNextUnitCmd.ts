@@ -1,4 +1,5 @@
 import { CompositeDisposable } from '@/util/disposable/CompositeDisposable';
+import { canControlOwner, controllableObjects } from '@/game/campaign/CampaignControl';
 export class SelectNextUnitCmd {
     private unitSelectionHandler: any;
     private mapPanningHelper: any;
@@ -20,7 +21,7 @@ export class SelectNextUnitCmd {
         this.unitList = [];
         this.disposables = new CompositeDisposable();
         const onObjectSpawned = (gameObject: any) => {
-            if (gameObject.isTechno() && gameObject.owner === player) {
+            if (gameObject.isTechno() && canControlOwner(player, gameObject.owner)) {
                 this.unitList.push(gameObject);
             }
         };
@@ -35,8 +36,7 @@ export class SelectNextUnitCmd {
     }
     *generate(): Generator<any, void, unknown> {
         while (true) {
-            const sortedUnits = (this.unitList = this.player
-                .getOwnedObjects()
+            const sortedUnits = (this.unitList = controllableObjects(this.player)
                 .filter((obj: any) => obj.isUnit())
                 .sort((a: any, b: any) => a.tile.dx +
                 1000 * a.tile.dy -
@@ -58,7 +58,7 @@ export class SelectNextUnitCmd {
                         break;
                     }
                     const unit = sortedUnits[index];
-                    if (unit.owner === this.player && unit.isSpawned) {
+                    if (canControlOwner(this.player, unit.owner) && unit.isSpawned) {
                         yield unit;
                     }
                 }

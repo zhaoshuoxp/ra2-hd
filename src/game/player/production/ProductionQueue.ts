@@ -57,22 +57,18 @@ export class ProductionQueue {
     set maxSize(value: number) {
         const oldSize = this.size;
         this.size = Math.min(value, this.size);
-        let totalQuantity = 0;
-        let itemIndex = 0;
-        while (totalQuantity <= this.size && itemIndex < this.items.length) {
-            const item = this.items[itemIndex];
-            totalQuantity += item.quantity;
-            if (totalQuantity > this.size) {
-                item.quantity -= totalQuantity - this.size;
-            }
-            if (item.quantity > 0) {
-                itemIndex++;
-            }
+        let remaining = this.size;
+        const retained: QueueItem[] = [];
+        for (const item of this.items) {
+            if (remaining <= 0) break;
+            const quantity = Math.min(item.quantity, remaining);
+            if (quantity <= 0) continue;
+            item.quantity = quantity;
+            retained.push(item);
+            remaining -= quantity;
         }
+        this.items = retained;
         this._maxSize = value;
-        if (this.items[itemIndex]) {
-            this.items.splice(itemIndex);
-        }
         if (oldSize !== this.size) {
             if (!this.size) {
                 this._status = QueueStatus.Idle;
@@ -96,6 +92,7 @@ export class ProductionQueue {
         quantity = Math.min(this.maxSize - this.size, quantity);
         const existingQuantity = this.find(rules).reduce((sum, item) => sum + item.quantity, 0);
         quantity = Math.min(this.maxItemQuantity - existingQuantity, quantity);
+        if (quantity <= 0) return;
         const lastItem = this.items[this.items.length - 1];
         if (lastItem?.rules === rules) {
             lastItem.quantity += quantity;

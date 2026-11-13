@@ -1,0 +1,677 @@
+{
+  "status": "PASS_MAC_THREE_CAMPAIGN_DIFFICULTIES_SAVES_ORIGINAL_VICTORIES_AND_YELLOW_LOADING_MATERIAL",
+  "runtimeSourceHead": "81f19a1e38a9b6fec1b6a1eae8e54833240abbb4",
+  "previousRuntimeSourceHead": "0e381129030a03a239a9357fed48520c51b665c7",
+  "reusedOutcomeSourceHead": "440504e13db612bf66e0b592629a3b5a051aa7a8",
+  "sourceReuse": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/final-source-reuse.json",
+    "bytes": 1567,
+    "sha256": "9f1ba49446b38b5d980773b26b6053330c30e5e9ca008bcc2341e1d528bde320"
+  },
+  "changes": [
+    "Yellow loading transfer curve on the same shared metal cylinder; fixed highlights and clean lower edge retained.",
+    "Actual Easy/Normal/Hard launch, original opposing handicaps, map trigger flags and AI task-force selection.",
+    "Difficulty-aware named/legacy saves, original Normal compatibility, correct return selection and separate completion entries."
+  ],
+  "difficultySource": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/difficulty-r5.json",
+    "bytes": 6007,
+    "sha256": "275dff4828d82e0bf5e4d97230775d0423b88a3869959c10e2c454e5b602532b"
+  },
+  "originalSourcesUnchanged": {
+    "resourceFiles": 14004,
+    "campaignManifestSha256": "8400a42032b4de312cab9a3c7a083373fd8f113f131d91d1adadc86d48942596",
+    "map": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f",
+    "rules": "fd1e95cea0306ea78049dc81c8cd816e18c28c496872a1ff02edd50bd082062f"
+  },
+  "loading": {
+    "color": {
+      "scope": "Same native screenshot prefix, excluding caps, seams outside the crop and the unloaded remainder. No screenshot pixels were changed.",
+      "region": [
+        417,
+        51,
+        1066,
+        55
+      ],
+      "measurements": [
+        {
+          "source": "feedback-r4/native-loading-current",
+          "rgb": [
+            236,
+            98,
+            12
+          ]
+        },
+        {
+          "source": "feedback-r5/native-loading",
+          "rgb": [
+            236,
+            116,
+            12
+          ]
+        }
+      ],
+      "previousRetailReference": {
+        "rgb": [
+          237,
+          111,
+          17
+        ],
+        "evidence": ".artifacts/m3-1/feedback-r4/loading-color-comparison.json",
+        "limit": "Original palette reference retained from R4; no claim of identical texture or all pixel values."
+      }
+    },
+    "pixels": {
+      "region": [
+        417,
+        51,
+        1725,
+        55
+      ],
+      "prefixMismatches": 0,
+      "bottomDarkPixels": 0,
+      "bottomPixels": 18975,
+      "materialCorrelation": 0.9348390027814659,
+      "highlightGreenLeftToRight": [
+        215,
+        216,
+        214,
+        211,
+        207,
+        205,
+        208,
+        217,
+        229,
+        242,
+        249,
+        252
+      ]
+    }
+  },
+  "difficulties": [
+    {
+      "difficulty": "easy",
+      "sourceHead": "440504e13db612bf66e0b592629a3b5a051aa7a8",
+      "human": {
+        "name": "Player House",
+        "ai": false,
+        "aiDifficulty": 1,
+        "handicap": {
+          "firepower": 1,
+          "groundSpeed": 1,
+          "airSpeed": 1,
+          "armor": 1.2,
+          "rof": 0.8,
+          "cost": 1,
+          "buildTime": 0.8,
+          "repairDelay": 0.02,
+          "buildDelay": 0.03,
+          "teamDelay": 500
+        }
+      },
+      "enemy": {
+        "name": "BadGuy1 House",
+        "ai": true,
+        "aiDifficulty": 2,
+        "handicap": {
+          "firepower": 1,
+          "groundSpeed": 1,
+          "airSpeed": 1,
+          "armor": 0.8,
+          "rof": 1.2,
+          "cost": 1,
+          "buildTime": 1,
+          "repairDelay": 0.05,
+          "buildDelay": 0.1,
+          "teamDelay": 500
+        }
+      },
+      "weapon": {
+        "rof": 20,
+        "baseRof": 25
+      },
+      "save": {
+        "id": "12202c6e-a479-44f9-9b45-15471e471fad",
+        "tick": 4170,
+        "hash": 828859235,
+        "continuation": "PASS"
+      },
+      "bridge": 1607,
+      "garrisons": [
+        1591,
+        1592
+      ],
+      "airport": 1602,
+      "victoryTick": 24016,
+      "originalVictoryTrigger": true,
+      "trusted": true,
+      "modified": false,
+      "parTime": "00:25:00",
+      "additionalGiActions": []
+    },
+    {
+      "difficulty": "normal",
+      "sourceHead": "440504e13db612bf66e0b592629a3b5a051aa7a8",
+      "human": {
+        "name": "Player House",
+        "ai": false,
+        "aiDifficulty": 1,
+        "handicap": {
+          "firepower": 1,
+          "groundSpeed": 1,
+          "airSpeed": 1,
+          "armor": 1,
+          "rof": 1,
+          "cost": 1,
+          "buildTime": 1,
+          "repairDelay": 0.02,
+          "buildDelay": 0.03,
+          "teamDelay": 750
+        }
+      },
+      "enemy": {
+        "name": "BadGuy1 House",
+        "ai": true,
+        "aiDifficulty": 1,
+        "handicap": {
+          "firepower": 1,
+          "groundSpeed": 1,
+          "airSpeed": 1,
+          "armor": 1,
+          "rof": 1,
+          "cost": 1,
+          "buildTime": 1,
+          "repairDelay": 0.02,
+          "buildDelay": 0.03,
+          "teamDelay": 750
+        }
+      },
+      "weapon": {
+        "rof": 25,
+        "baseRof": 25
+      },
+      "save": {
+        "id": "cec1b8d5-b71a-4518-826c-cd75db8aa7f1",
+        "tick": 4530,
+        "hash": 132450628,
+        "continuation": "PASS"
+      },
+      "bridge": 1607,
+      "garrisons": [
+        1591,
+        1592
+      ],
+      "airport": 1602,
+      "victoryTick": 24689,
+      "originalVictoryTrigger": true,
+      "trusted": true,
+      "modified": false,
+      "parTime": "00:15:00",
+      "additionalGiActions": [
+        "084584CC",
+        "084581DC",
+        "08458F3C",
+        "079EF4FC"
+      ]
+    },
+    {
+      "difficulty": "hard",
+      "sourceHead": "440504e13db612bf66e0b592629a3b5a051aa7a8",
+      "human": {
+        "name": "Player House",
+        "ai": false,
+        "aiDifficulty": 1,
+        "handicap": {
+          "firepower": 1,
+          "groundSpeed": 1,
+          "airSpeed": 1,
+          "armor": 0.8,
+          "rof": 1.2,
+          "cost": 1,
+          "buildTime": 1,
+          "repairDelay": 0.05,
+          "buildDelay": 0.1,
+          "teamDelay": 1000
+        }
+      },
+      "enemy": {
+        "name": "BadGuy1 House",
+        "ai": true,
+        "aiDifficulty": 0,
+        "handicap": {
+          "firepower": 1,
+          "groundSpeed": 1,
+          "airSpeed": 1,
+          "armor": 1.2,
+          "rof": 0.8,
+          "cost": 1,
+          "buildTime": 0.8,
+          "repairDelay": 0.02,
+          "buildDelay": 0.03,
+          "teamDelay": 1000
+        }
+      },
+      "weapon": {
+        "rof": 30,
+        "baseRof": 25
+      },
+      "save": {
+        "id": "07faaa0f-5a61-49d7-80e3-58c34517c62c",
+        "tick": 4530,
+        "hash": 3458470134,
+        "continuation": "PASS"
+      },
+      "bridge": 1607,
+      "garrisons": [
+        1591,
+        1592
+      ],
+      "airport": 1602,
+      "victoryTick": 54377,
+      "originalVictoryTrigger": true,
+      "trusted": true,
+      "modified": false,
+      "parTime": "00:06:00",
+      "additionalGiActions": [
+        "079EF4FC",
+        "084581DC",
+        "084584CC",
+        "08458F3C"
+      ]
+    }
+  ],
+  "tests": {
+    "passed": 59,
+    "failed": 0,
+    "assertions": 875,
+    "files": 15,
+    "proof": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/tests-current.log",
+      "bytes": 7704,
+      "sha256": "37f0517e436ab11f6bb9d714c1ba789385cb8ce21f36d9f78f866dc694783f7e"
+    }
+  },
+  "entryTypecheck": {
+    "status": "PASS",
+    "proof": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/typecheck-current.log",
+      "bytes": 39,
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    }
+  },
+  "native": [
+    {
+      "name": "native-loading",
+      "status": "PASS_NATIVE_LOADING_COLOR_NO_BLACK_PINHOLES_FIXED_PROGRESS_HIGHLIGHTS_AND_FOUR_ASPECTS",
+      "rawStatus": "PASS_NATIVE_LOADING_COLOR_NO_BLACK_PINHOLES_FIXED_PROGRESS_HIGHLIGHTS_AND_FOUR_ASPECTS",
+      "sourceHead": "440504e13db612bf66e0b592629a3b5a051aa7a8",
+      "cases": 4,
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-loading/report.json",
+        "bytes": 6406,
+        "sha256": "4cedc1be57c6a8c889e21f6163d509976136c989213e4c43c2bd2c375ab1859c"
+      },
+      "harness": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-loading/harness.mjs",
+        "bytes": 8111,
+        "sha256": "41ca7a828c082a0aa14be9738fccab67fc0c951050bc78b7cac48dd78eea4bb0"
+      }
+    },
+    {
+      "name": "native-three-difficulties-j",
+      "status": "PASS_SCOPED_THREE_ORIGINAL_VICTORIES_SAVES_PROGRESS_RETURN_FAILURE_REPAIRED_SEPARATELY",
+      "rawStatus": "FAIL",
+      "sourceHead": "440504e13db612bf66e0b592629a3b5a051aa7a8",
+      "cases": 5,
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties-j/report.json",
+        "bytes": 974296,
+        "sha256": "307e51cf277b6add63b2edccb6f675a9f32ccab6193c7aeeaf8867494a4f31ac"
+      },
+      "harness": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties-j/harness.mjs",
+        "bytes": 27128,
+        "sha256": "dc0f9b564a80165ad361138bfab2aafb9e0b36a5ccd746fb5ec8ec62dc473abe"
+      }
+    },
+    {
+      "name": "native-return-current",
+      "status": "PASS_FINAL_RUNTIME_ALL_THREE_CROSS_BUILD_SAVES_EXACT_RESTORE_RETURN_SELECTION_AND_PROGRESS",
+      "rawStatus": "PASS_FINAL_RUNTIME_ALL_THREE_CROSS_BUILD_SAVES_EXACT_RESTORE_RETURN_SELECTION_AND_PROGRESS",
+      "sourceHead": "81f19a1e38a9b6fec1b6a1eae8e54833240abbb4",
+      "cases": 4,
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-return-current/report.json",
+        "bytes": 3169,
+        "sha256": "5d22fda88a707cd41670ec739f97723f92f41a7e400ae42316aa5b4b3e416ca6"
+      },
+      "harness": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-return-current/harness.mjs",
+        "bytes": 7348,
+        "sha256": "962e7723a477deac7587e729738c6d69ada96b46d647e5b7e1f32f6a94ed743a"
+      }
+    },
+    {
+      "name": "native-desktop-original",
+      "status": "PASS_PACKAGED_ENTRY_EDITION_RECOVERY_AND_PLAYABLE_MISSION",
+      "rawStatus": "PASS_PACKAGED_ENTRY_EDITION_RECOVERY_AND_PLAYABLE_MISSION",
+      "sourceHead": "81f19a1e38a9b6fec1b6a1eae8e54833240abbb4",
+      "cases": 9,
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-desktop-original/report.json",
+        "bytes": 22200,
+        "sha256": "921131193cadda892ce57451c05e21352e746bf3d53f0fb61681f53daed60191"
+      },
+      "harness": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-desktop-original/harness.mjs",
+        "bytes": 18770,
+        "sha256": "b78ef2075e83cdf9753db10dc094cfa5e8435b5d9e3200d86b3c61e455b7b25c"
+      }
+    },
+    {
+      "name": "current-main-native-campaign",
+      "status": "PASS_NATIVE_CAMPAIGN_NAMED_SAVE_LOAD_RESTART_REPLACE_DELETE_AND_LEGACY_COMPATIBILITY",
+      "rawStatus": "PASS_NATIVE_CAMPAIGN_NAMED_SAVE_LOAD_RESTART_REPLACE_DELETE_AND_LEGACY_COMPATIBILITY",
+      "sourceHead": "c2cd235c4360e5a69989225981557663519bdab9",
+      "cases": 7,
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/current-main-native-campaign/report.json",
+        "bytes": 2478,
+        "sha256": "3774170ba792aafdfdcb7c3b60671f03fc99e315f31ff8eb1f50ba078239d796"
+      },
+      "harness": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/current-main-native-campaign/harness.mjs",
+        "bytes": 12651,
+        "sha256": "01e387ea4d1b06e3dd0925cd0d408ec084166b76f22a4d3530051332a396ad2e"
+      }
+    },
+    {
+      "name": "current-main-native-skirmish",
+      "status": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+      "rawStatus": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+      "sourceHead": "c2cd235c4360e5a69989225981557663519bdab9",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/current-main-native-skirmish/report.json",
+        "bytes": 2852633,
+        "sha256": "c1441f330570d1b65b0bde8e3358f7ce471f3726edb3ec5309e9bce49f1386ed"
+      },
+      "harness": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/current-main-native-skirmish/harness.mjs",
+        "bytes": 23022,
+        "sha256": "bfd22ce3c8214883267400089c6fa51f5c34a475746c4e8d9b842217bf3d9c5c"
+      },
+      "observerIdentity": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/current-main-skirmish-observer-identity.json",
+        "bytes": 573,
+        "sha256": "9b656d8195a1936aa079eb8748fc2cf9dd7b8add0614d08997e065c7b833fa1a"
+      }
+    }
+  ],
+  "nativeScope": {
+    "scope": "Actual difficulty slider and Soviet entry, real save/load UI and application restart. Gameplay uses ordinary serialized legal player actions with accelerated turns. No result, health, damage, ownership, money, trigger or shroud injection. This is assisted mission validation, not physical-input full completion.",
+    "inheritedProof": {
+      "directory": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties-i",
+      "reportSha256": "0e6f209de2e732c92bcb9f6fb42623c9679531609754ceb975f87c347c74cec8",
+      "harnessSha256": "4f053c6bf95e617169bf73d9f1004ed3589786231974ff4b7a1c83226213aa44",
+      "scope": "Reuse matching-runtime Easy/Normal victories and all three fresh-start/save checks. Clone the isolated profile and restore its authentic named Hard save through actual UI; no checkpoint edits or resigned data."
+    },
+    "disclosure": "All original victories, saves and progress passed before the final abort-menu assertion failed. The final runtime changes only that route; exact cross-build restore and correct returns pass separately for all three difficulties and the late Hard save. Earlier complete Easy/Normal proof and fresh-start checks are reused through the pinned chain."
+  },
+  "delivery": {
+    "status": "PASS_DESKTOP_COPY_HASH_MATCH",
+    "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R5.zip",
+    "bytes": 5759875960,
+    "sha256": "678964c9d16b1b3af2f05eea1a3c61497750bde367166e47aa9206dc3f8d148a",
+    "entries": 14547,
+    "inventorySha256": "9cff6eb40e8a9887be953a7191be92bfa5f7810ed9684b11930584ab9803f223",
+    "sourceArchive": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/RA2-HD-M3.1-Mac-arm64-20261024-R5.zip",
+    "extractedStatus": "PASS_ACTUAL_DESKTOP_ZIP_EXTRACTED_ALL_BYTES_LINKS_MODES_AND_SIGNATURE",
+    "signature": "PASS_DEEP_STRICT",
+    "allAppBytesIdenticalToNativeCandidate": true,
+    "resourceFilesUnchanged": 14004,
+    "userDataInArchive": false,
+    "profile": "~/Library/Application Support/RA2 HD M3.1 Campaign Test 20261023",
+    "extractedReceipt": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/extracted.json",
+      "bytes": 612,
+      "sha256": "779659caa67f4c720c134021c6c25a81bc5c6ac6d6bffa8413941c06cbe41ec0"
+    }
+  },
+  "finalDesktopPresence": {
+    "scope": "Read-only presence/size audit. The current R5 archive has its independently verified delivery receipt. Previous source archives and historical evidence remain retained.",
+    "files": [
+      {
+        "file": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R5.zip",
+        "status": "PRESENT",
+        "bytes": 5759875960
+      },
+      {
+        "file": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R4.zip",
+        "status": "ABSENT_AT_READ_ONLY_AUDIT",
+        "cause": "Unknown; this task did not remove or recreate older deliveries."
+      },
+      {
+        "file": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R3b.zip",
+        "status": "ABSENT_AT_READ_ONLY_AUDIT",
+        "cause": "Unknown; this task did not remove or recreate older deliveries."
+      }
+    ]
+  },
+  "review": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/M3.1-Feedback-R5-Review.html",
+    "bytes": 53045991,
+    "sha256": "7a039ee933ce65cf9b3dc821fb671a78b12b32516eb5ed8b3442d5678ae138d0",
+    "images": 17,
+    "embedding": "PASS_EMBEDDED_NATIVE_THREE_DIFFICULTIES_AND_LOADING_SCREENSHOTS",
+    "browserPreview": "Not retried after the prior file:// URL-policy rejection. Embedded PNG decoding and hash validation pass."
+  },
+  "integration": {
+    "status": "PASS_ISOLATED_COMMITTED_MAIN_MERGE_AND_BOTH_NATIVE_SAVE_FLOWS_RECHECK_LIVE_MAIN_BEFORE_MERGE",
+    "mainBase": "9ab3c54441bf21b6872da0c7f63937a4e577fb31",
+    "resolvedHead": "c2cd235c4360e5a69989225981557663519bdab9",
+    "observedLiveMainAtFinalAudit": {
+      "head": "86c467e42f273b23f403f56845ea4c280f31d802",
+      "workingTree": "",
+      "testedBase": "9ab3c54441bf21b6872da0c7f63937a4e577fb31",
+      "runtimeMatchesTestedMainBase": true,
+      "changedRuntimePathsSinceBase": "",
+      "identicalTrees": {
+        "src": {
+          "tested": "7a2d27f68d395de3ee45033bfc70acb1cdab30fa",
+          "current": "7a2d27f68d395de3ee45033bfc70acb1cdab30fa"
+        },
+        "public": {
+          "tested": "c1afc8c87b079731081e3d67df15b08917f38ed1",
+          "current": "c1afc8c87b079731081e3d67df15b08917f38ed1"
+        },
+        "desktop": {
+          "tested": "45ad74d062f244eecbdb8151d000b884df4a4a9c",
+          "current": "45ad74d062f244eecbdb8151d000b884df4a4a9c"
+        }
+      },
+      "changedDocumentation": "AGENTS.md\nREADME.md\ndocs/distribution-main-20261024-r2.md\ndocs/images/ra2-hd-showcase.jpg"
+    },
+    "resolution": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/latest-main-final-resolution.json",
+      "bytes": 7775,
+      "sha256": "ab7eaff2c40f474d1f2b83c86da7fb939e26b361d8161b13b35caa2ca09f7c88"
+    },
+    "bundle": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/M3.1-R5-Final-Latest-Main-Integration-Preparation.bundle",
+      "bytes": 3914195,
+      "sha256": "3dde59d39bedacb03badd7d71bb9920b1f0a48b3a287dd29fad9dbfd65ea4c26"
+    },
+    "prerequisites": [
+      "dc494dbd59363439ae830fad5e81134ef36ee95b",
+      "34e6fbe6b5d2808db4034e21d9e2dad36e7a7c3a",
+      "9ab3c54441bf21b6872da0c7f63937a4e577fb31"
+    ],
+    "tests": {
+      "passed": 64,
+      "failed": 0,
+      "assertions": 908,
+      "files": 17,
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/latest-main-tests-current.log",
+        "bytes": 8341,
+        "sha256": "6ec6577410e704f180a3dddc5d593970032080340eef301dde5afe9b625703cf"
+      }
+    },
+    "entryTypecheck": {
+      "status": "PASS",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/latest-main-typecheck-current.log",
+        "bytes": 39,
+        "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+      }
+    },
+    "native": [
+      {
+        "name": "current-main-native-campaign",
+        "status": "PASS_NATIVE_CAMPAIGN_NAMED_SAVE_LOAD_RESTART_REPLACE_DELETE_AND_LEGACY_COMPATIBILITY",
+        "rawStatus": "PASS_NATIVE_CAMPAIGN_NAMED_SAVE_LOAD_RESTART_REPLACE_DELETE_AND_LEGACY_COMPATIBILITY",
+        "sourceHead": "c2cd235c4360e5a69989225981557663519bdab9",
+        "cases": 7,
+        "proof": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/current-main-native-campaign/report.json",
+          "bytes": 2478,
+          "sha256": "3774170ba792aafdfdcb7c3b60671f03fc99e315f31ff8eb1f50ba078239d796"
+        },
+        "harness": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/current-main-native-campaign/harness.mjs",
+          "bytes": 12651,
+          "sha256": "01e387ea4d1b06e3dd0925cd0d408ec084166b76f22a4d3530051332a396ad2e"
+        }
+      },
+      {
+        "name": "current-main-native-skirmish",
+        "status": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+        "rawStatus": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+        "sourceHead": "c2cd235c4360e5a69989225981557663519bdab9",
+        "proof": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/current-main-native-skirmish/report.json",
+          "bytes": 2852633,
+          "sha256": "c1441f330570d1b65b0bde8e3358f7ce471f3726edb3ec5309e9bce49f1386ed"
+        },
+        "harness": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/current-main-native-skirmish/harness.mjs",
+          "bytes": 23022,
+          "sha256": "bfd22ce3c8214883267400089c6fa51f5c34a475746c4e8d9b842217bf3d9c5c"
+        },
+        "observerIdentity": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/current-main-skirmish-observer-identity.json",
+          "bytes": 573,
+          "sha256": "9b656d8195a1936aa079eb8748fc2cf9dd7b8add0614d08997e065c7b833fa1a"
+        }
+      }
+    ],
+    "limit": "Preparation targets the recorded completed main commit. The earlier uncommitted work was observed read-only; only its later committed state entered this separate preview. No canonical-main merge, staging or commit occurred."
+  },
+  "retainedFailures": [
+    {
+      "name": "native-three-difficulties",
+      "status": "FAIL",
+      "firstError": "page.waitForFunction: TypeError: Cannot read properties of undefined (reading 'menu')",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties/report.json",
+        "bytes": 1219,
+        "sha256": "adb1638413b3c1230d3ac25260f34334d425f731aa222b5beb749718054c684e"
+      }
+    },
+    {
+      "name": "native-three-difficulties-b",
+      "status": "FAIL",
+      "firstError": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties-b/report.json",
+        "bytes": 91392,
+        "sha256": "b2753a666dea6deace939861cb4b70f8ddb3f6500b692f8118a7854e9c9db20d"
+      }
+    },
+    {
+      "name": "native-three-difficulties-c",
+      "status": "FAIL",
+      "firstError": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties-c/report.json",
+        "bytes": 179903,
+        "sha256": "5875081010408824712c27f8c3dc009efb3636c01baac8996c2f0ef966698a4f"
+      }
+    },
+    {
+      "name": "native-three-difficulties-d",
+      "status": "FAIL",
+      "firstError": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties-d/report.json",
+        "bytes": 185887,
+        "sha256": "fd6f6f0d56f3d0ed20ea3bd9fa9709aff78b7f554d6fc5d649980ae7df956288"
+      }
+    },
+    {
+      "name": "native-three-difficulties-e",
+      "status": "FAIL",
+      "firstError": "AssertionError [ERR_ASSERTION]: Visible target and engineer required: CAAIRP",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties-e/report.json",
+        "bytes": 391508,
+        "sha256": "cb3d131b3a537275157f0906d6531139422ec310f9cba1ada0a7643539767225"
+      }
+    },
+    {
+      "name": "native-three-difficulties-f",
+      "status": "FAIL",
+      "firstError": "AssertionError [ERR_ASSERTION]: Engineer operation failed: CABHUT",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties-f/report.json",
+        "bytes": 640153,
+        "sha256": "b8419173e1d88ca6265caccd33b968616c8ff3a0e1979b942c6ed98f0ee18b48"
+      }
+    },
+    {
+      "name": "native-three-difficulties-g",
+      "status": "FAIL",
+      "firstError": "AssertionError [ERR_ASSERTION]: Visible target and engineer required: CAAIRP",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties-g/report.json",
+        "bytes": 641743,
+        "sha256": "ba14de4f0e15c32109c231f643f53afcf2908ef8a2f368b1f6b3be79e3edc88e"
+      }
+    },
+    {
+      "name": "native-three-difficulties-h",
+      "status": "FAIL",
+      "firstError": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties-h/report.json",
+        "bytes": 651842,
+        "sha256": "988efd00f421b46962d8e5d82f6cfad36d5f103bcc8807f6effe89972226820b"
+      }
+    },
+    {
+      "name": "native-three-difficulties-i",
+      "status": "FAIL",
+      "firstError": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r5/native-three-difficulties-i/report.json",
+        "bytes": 653417,
+        "sha256": "0e6f209de2e732c92bcb9f6fb42623c9679531609754ceb975f87c347c74cec8"
+      }
+    }
+  ],
+  "failureInterpretation": "Observer readiness/JSON normalization errors and a global-vs-mission TeamDelays expectation were corrected in the harness. Direct battle routes lost engineers/infantry or did not reveal the airport. Oversized bulk orders were truncated by the original production queue cap; the final observer trains 150 actual field infantry in legal queue-sized batches, uses original civilian garrisons and ordinarily produced replacements. No gameplay values or queue limits were patched to pass.",
+  "outstandingPriorWork": {
+    "generatedHdScoreBackground": "BLOCKED_BY_IMAGE_TOOL",
+    "currentDensity": "ORIGINAL",
+    "record": "scripts/m3-1/score-background-r4.json",
+    "requestId": "a55809a1-4adf-4e0b-b233-fbf650564b02"
+  },
+  "acceptance": {
+    "technicalMac": "PASS",
+    "visualAndPhysicalInput": "PENDING_USER_REVIEW",
+    "nativeWindows": "NOT_RUN_ON_THIS_MAC",
+    "exactOriginalWindowsBinaryParity": "NOT_CERTIFIED",
+    "mainIntegration": "PREPARED_NOT_MERGED",
+    "remotePush": "NOT_REQUESTED"
+  }
+}

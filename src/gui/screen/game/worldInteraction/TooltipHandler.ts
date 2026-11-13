@@ -18,6 +18,7 @@ export class TooltipHandler {
     private readonly currentHover = new HoverTarget();
     private readonly lastHover = new HoverTarget();
     private tooltip?: Tooltip;
+    private shownText?: string;
     private hoverStartTime?: number;
     private lastUpdateTime?: number;
     private isTouch = false;
@@ -66,6 +67,7 @@ export class TooltipHandler {
             if (this.hoverStartTime !== undefined &&
                 now - this.hoverStartTime > hoverDelay) {
                 const tooltipText = this.getTooltipText(this.currentHover);
+                if (this.tooltip && tooltipText !== this.shownText) this.destroyTooltip();
                 if (tooltipText && !this.tooltip && !this.isTouch) {
                     const canvas = this.renderer.getCanvas();
                     const logicalWidth = Number(canvas.dataset.logicalWidth) || canvas.clientWidth || canvas.width;
@@ -73,6 +75,7 @@ export class TooltipHandler {
                         this.uiScene.viewport, canvas.width / logicalWidth);
                     tooltip.setZIndex(TooltipHandler.ZINDEX);
                     this.tooltip = tooltip;
+                    this.shownText = tooltipText;
                     this.uiScene.add(tooltip);
                 }
             }
@@ -105,6 +108,7 @@ export class TooltipHandler {
             this.uiScene.remove(this.tooltip);
             this.tooltip.destroy();
             this.tooltip = undefined;
+            this.shownText = undefined;
         }
     }
     dispose(): void {

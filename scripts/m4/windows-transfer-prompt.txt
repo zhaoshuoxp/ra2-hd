@@ -1,0 +1,74 @@
+Execute M4.2: test and optimize RA2 HD on this Windows computer, using this transferred M4.1 checkpoint.
+
+Communicate with the user in Chinese. Keep newly saved code, comments, reports, filenames and evidence in English except existing game localization. This is an implementation task: establish the baseline, investigate measured bottlenecks, implement justified changes, verify correctness and export a compact return. Do not stop after producing a plan.
+
+1. Workspace and authority
+
+The directory containing this prompt is the transfer root. The development repository is its source/ directory, on local main. Read TRANSFER.json first: sourceHead is the exact exported Git base; acceptedRuntimeSourceHead identifies the frozen Mac game payload used by the initial portable executable. Later source changes before export are transfer tooling/documentation, not game optimizations.
+
+Read README-FIRST.txt, source/AGENTS.md, docs/m4-performance-plan-20261112.md, docs/m4-1-measurement-contract.md, docs/m4-1-mac-performance-20261112.md and docs/m4-1-windows-handoff-20261112.md inside source. This Windows task supersedes the previous Mac-only/no-Windows-package boundary. All development stays on this exported main. Do not create branches/worktrees, push, publish, fetch upstream game source or modify another installation. A small number of read-only agents may inspect evidence; one main agent owns edits, benchmarks and packaging. Run pressure experiments sequentially.
+
+The five unrelated uncommitted Mac diagnostic files were not exported. Do not recreate them or assume they are pending Windows changes. Historical absolute Mac paths in reports are provenance, not instructions to access or recreate Mac directories. Use paths relative to this transfer root. Retain the source base and resource hashes for the return.
+
+2. Verified starting boundary
+
+M4.1 did not pass the stable 60 FPS target. Actual extracted Mac application sustained averages were 50.49-51.36 callbacks/s; a later frozen-code check was 51.18. The native fixed-layout VXL vertex merger improves measured mesh CPU work and preserves output bytes, but whole-match improvement was not established. HD edge sharing was withdrawn. Do not present these Mac measurements as Windows results.
+
+Keep the accepted RA2 26 campaign/training maps, YR 14 maps, 136 HD movies, current UI, saves, trainer, artwork and existing Windows fixes. Public version remains 0.5. Keep unproven/reverted AI/C10 experiments reverted unless a new isolated proposal proves their correctness. The indexed resource container experiment is not adopted: its compressed sample is smaller but read/decode/integrity work is slower.
+
+3. Initialize safely
+
+Use a short local path such as C:\RA2-M4.2; fully extract the ZIP. Do not benchmark inside a ZIP or a synchronizing cloud directory. Run Verify-Package.cmd before changing files. Start-Game.cmd runs the initial portable application offline without development setup, with UserData/ isolated inside this transfer. Do not import or reset real user saves/settings.
+
+For development, Git for Windows must be available. Setup-Development.cmd uses the bundled pinned Node and Bun, installs frozen-lockfile Windows dependencies (network access required once), installs the verified bundled Electron runtime into its native module, and creates source/.local as a directory junction to the single GameResources tree. Do not copy Mac node_modules or duplicate all resources. If setup fails, diagnose its actual error rather than upgrading dependencies speculatively. Do not alter global execution policy or disable security software.
+
+Capture hardware using Collect-System.cmd and the benchmark's Electron report. Confirm Ryzen 7 5800H, RTX 3070 Laptop, 2560x1600 native output, actual GPU selection, driver, RAM, refresh/scale and power mode. Keep AC/power/background conditions stable. Mark unavailable GPU time, VRAM, thermal or actual-present measurements as unavailable rather than substituting unrelated counters.
+
+4. Baseline and fixed acceptance
+
+Keep 4X HD, native 2560x1600 output, high shadows, unchanged camera/UI scale, seven Brutal AI and original simulation. Original and 2X are diagnostic controls, not acceptance substitutes.
+
+After setup, run the portable executable through:
+Run-Benchmark.cmd yr sustained measure
+Run-Benchmark.cmd ra2 dense measure
+Run-Benchmark.cmd yr overload measure
+
+Read each generated report.json and samples.json under evidence/windows. COMPLETE means the technical run finished; check the separate callback gate and simulation throughput. Retain failures, slow runs and all formal samples. Do not delete outliers or compare different scenarios as an A/B improvement.
+
+Use the existing 120-second measurement contract and tolerances without changing them after seeing results: callback interval budget 16.6667 + 0.35 ms; at least 99% elapsed interval time within that budget; no two consecutive complete one-second bins below 59.5 callbacks/s; at least 99% nominal simulation throughput. This is a callback-cadence gate, not independent screen-present proof. Report actual presentation evidence separately if available. The user still requires stable 60 FPS under the agreed large-map/many-unit workload; do not claim success when sustained dips or simulation backlog remain.
+
+Keep the exact native maps, seed, placement and camera/input hashes. Dense/sustained begins with 392 units and 44 buildings, overload with 776/44; the harness uses source-native production and combat. Verify actual object counts rather than assuming they remain constant. Loading is separate; new-unit/effect first-use stalls in battle remain inside measurement. Do not freeze AI, remove combat, lower game speed, change timers or reduce workload to pass.
+
+Formal timing must exclude heavy profiler, GPU-query, screenshot and diagnostic work. Use Run-Benchmark.cmd yr sustained profile for a separate short CPU capture. Interleave baseline/candidate repetitions when thermal/load variation could explain the difference. Keep the tested application path, source, resources, density, output and power settings explicit.
+
+5. Optimize measured costs
+
+Inspect current scene update, submission/binding/attribute validation, draw counts, simulation/pathfinding, VXL cache misses, upload/preparation, shadows/overdraw, allocations and resource lifetime. Mac hotspot attribution is a starting hypothesis; confirm Windows behavior first.
+
+For each candidate record the evidence, hypothesis, exact edit, matched comparison and correctness result. Prefer small attributable changes. Potential structural experiments include grouping compatible submissions without changing order/depth/remap/coverage, removing redundant validated work with correct invalidation, and moving eligible cold meshing into existing worker preparation. Do not assume any one will help until measured.
+
+Do not meet the target by lowering resolution/density/shadows, omitting visible objects/effects, slowing AI/simulation, increasing memory caps without a separately justified design, or silently falling back to low-resolution art. Preserve prepared-page ownership and mutable-consumer isolation. A smoother renderer with slower simulation does not pass.
+
+6. Prevent regressions throughout
+
+For simulation changes, compare reproducible full-state checkpoints at comparable ticks: RNG, identities, positions, health, ownership, orders, resources, timers and mission state. For render-only changes, preserve same-tick/camera output; use existing deterministic static controls at 4X and 2X and inspect unexpected differences without relaxing thresholds.
+
+Check relevant previous failure areas: view exit/re-entry, matrices/poses, bridges/slopes, occlusion, shadows/soft edges, remap, cloak/reveal, infantry stances, turrets, construction/deploy/repack/death, UI publication and Original fallback. Public-code changes also need bounded RA2/YR campaign/movie/radar, save/full-process restart and outcome/next-mission checks. Do not replay every accepted mission or regenerate approved art merely because an optimization is being tested.
+
+Run focused current-resource tests during edits; run an appropriate broader check once stable. The transfer includes current runtime resources and tracked fixtures, not historical authoring trees. Missing historical art-review inputs are unavailable coverage, not automatically product regressions or passing tests. Preserve meaningful checks with current data/small fixtures where relevant; do not restore giant historical packs, skip assertions or fabricate success. Entry typecheck is bun run typecheck:entry.
+
+7. Test the actual updated application
+
+Source edits do not change the initial portable executable's web/desktop payload. Commit intended source changes, then run Refresh-Portable.cmd to build a clean production candidate and replace the portable app payload. It keeps one small baseline program copy and shares GameResources. Run-Benchmark.cmd always tests the actual portable executable, whose packageSourceHead must identify the candidate commit. Check the reported app path and runtime identity each time.
+
+Do not overwrite baseline evidence. Use fresh output directories. A build alone is not proof of native startup or performance. Native Windows tests cannot certify Mac regressions; M4.3 will check the exact integrated commit on both machines.
+
+8. Completion and return
+
+Continue toward stable 60 FPS and higher measured headroom. If a structural blocker remains after justified experiments, report the unmet gate and a concrete next experiment; do not call partial improvement complete. Keep technical tests, performance, user visual/play acceptance and platform boundaries separate.
+
+Write a concise English Windows handoff in source/docs and a detailed result summary under evidence/windows. Include hardware/settings, exact base/head/package identities, every retained optimization and rejected experiment, raw matched runs/outliers, state/image evidence, regression results, unresolved issues and any resource modifications.
+
+Commit source/documentation changes on local main. Run Verify-Resources.cmd if resources should remain unchanged. After final production refresh and actual application tests, run Create-Return.cmd. It exports a prerequisite Git bundle, binary patch, changed-file list, numerical evidence, package identity and only changed/new resource payloads plus deletions. It scans for resource differences and omits test-profile caches and unchanged full resources. Its tar.gz and SHA256 file belong in the return to the Mac.
+
+If only reports change after the final runtime build, explain that difference explicitly; packagedMatchesHead is not automatically true. Do not claim the Mac can simply trust a Windows pass on another commit. No remote push, publication or direct communication with the Mac account is authorized. The user will copy the return. Preserve the transfer base, current candidate, formal resources and compact evidence; remove only your own redundant temporary builds/profiles after they are no longer needed.

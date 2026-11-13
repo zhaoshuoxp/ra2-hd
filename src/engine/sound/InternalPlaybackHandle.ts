@@ -7,6 +7,19 @@ export class InternalPlaybackHandle {
     private panNode?: StereoPannerNode;
     private volumeRequested?: number;
     private panRequested?: number;
+    private resolveCompletion?: (reason: 'ended' | 'stopped' | 'error') => void;
+    private completionReason?: 'ended' | 'stopped' | 'error';
+    private completionPromise?: Promise<'ended' | 'stopped' | 'error'>;
+    get completed(): Promise<'ended' | 'stopped' | 'error'> {
+        return this.completionPromise ??= this.completionReason ? Promise.resolve(this.completionReason)
+            : new Promise(resolve => { this.resolveCompletion = resolve; });
+    }
+    finish(reason: 'ended' | 'stopped' | 'error'): void {
+        if (!this.playing) return;
+        this.playing = false;
+        this.completionReason = reason;
+        this.resolveCompletion?.(reason);
+    }
     setNodes(sourceNode: AudioBufferSourceNode, gainNode: GainNode, panNode: StereoPannerNode): void {
         this.sourceNode = sourceNode;
         this.gainNode = gainNode;
@@ -27,6 +40,7 @@ export class InternalPlaybackHandle {
         return this.playing;
     }
     stop(): void {
+        this.stopRequested = true;
         try {
             if (this.sourceNode) {
                 this.sourceNode.stop();
@@ -34,9 +48,10 @@ export class InternalPlaybackHandle {
             else {
                 this.stopRequested = true;
             }
-            this.playing = false;
+            this.finish('stopped');
         }
         catch (error) {
+            this.finish('error');
             console.error(error);
         }
     }

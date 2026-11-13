@@ -1,3 +1,4 @@
+import { campaignHomeTile } from '@/game/campaign/CampaignHome';
 import { offlineTrainer } from '@/gui/trainer/TrainerController';
 import React from 'react';
 import { CompositeDisposable } from '@/util/disposable/CompositeDisposable';
@@ -643,7 +644,8 @@ export class CombatantUi {
         });
         this.disposables.add(selectNextUnitCmd);
         const startLocation = this.game.map.startingLocations[this.player.startLocation];
-        const startTile = this.game.map.tiles.getByMapCoords(startLocation.x, startLocation.y);
+        const startTile = this.game.campaign?.yr ? campaignHomeTile(this.game)
+            : startLocation && this.game.map.tiles.getByMapCoords(startLocation.x, startLocation.y);
         const defaultCameraLocation = startTile
             ? mapPanningHelper.computeCameraPanFromTile(startTile.rx, startTile.ry)
             : this.worldScene.cameraPan.getPan();

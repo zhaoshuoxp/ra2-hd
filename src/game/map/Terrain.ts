@@ -65,6 +65,7 @@ interface PathOptions {
     bestEffort?: boolean;
     excludeTiles?: (node: PathNode) => boolean;
     ignoredBlockers?: GameObject[];
+    avoidMissingCorners?: boolean;
 }
 interface Obstacle {
     obj: GameObject;
@@ -224,7 +225,14 @@ export class Terrain {
             bestEffort,
             maxExpandedNodes,
             excludedNodes: excludeTiles,
-            distance: calculateDistance,
+            distance: options.avoidMissingCorners ? (from, to) => {
+                const a = from.data.tile, b = to.data.tile;
+                // A subcell-to-subcell diagonal can cross either neighboring
+                // square. Missing physical cells cannot carry that segment.
+                if (a.rx !== b.rx && a.ry !== b.ry && (!this.tiles.getByMapCoords(a.rx, b.ry)
+                    || !this.tiles.getByMapCoords(b.rx, a.ry))) return Number.POSITIVE_INFINITY;
+                return calculateDistance(from, to);
+            } : calculateDistance,
             heuristic: calculateHeuristic
         });
         let path = pathFinder
@@ -437,8 +445,8 @@ export class Terrain {
             }
         };
     }
-    public getPassableSpeed(tile: Tile, speedType: SpeedType, onBridge: boolean, bridgeLevel: boolean, ignoredBlockers: GameObject[] = [], skipBlockerCheck = false): number {
-        if (!this.mapBounds.isWithinBounds(tile))
+    public getPassableSpeed(tile: Tile, speedType: SpeedType, onBridge: boolean, bridgeLevel: boolean, ignoredBlockers: GameObject[] = [], skipBlockerCheck = false, allowOutsideLocalBounds = false): number {
+        if (!allowOutsideLocalBounds && !this.mapBounds.isWithinBounds(tile))
             return 0;
         let landType = bridgeLevel ? tile.onBridgeLandType : tile.landType;
         if (landType === undefined)

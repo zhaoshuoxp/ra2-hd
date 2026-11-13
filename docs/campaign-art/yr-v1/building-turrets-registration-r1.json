@@ -1,0 +1,626 @@
+{
+  "schema": "yr-complete-building-turret-registration-v1",
+  "status": "REGISTERED_COMPLETE_BODY_AND_TURRET_TRANSACTION_NATIVE_PENDING",
+  "families": [
+    {
+      "identity": "CAEAST02",
+      "environmentFamily": "yr-task-newurban-caeast02-v1",
+      "theater": "NEWURBAN",
+      "attachment": {
+        "family": "CAEAST02",
+        "sources": {
+          "cahead.vxl": "8b4662e02274ecaad9b4e06616484d4d1fd06c9665a39c127da396e86edd5bee",
+          "cahead.hva": "8191fcdc3f02e99e5c84a5e0d15ae6223b29befa649c6f91a404f3752b20f474"
+        },
+        "palette": {
+          "member": "unitubn.pal",
+          "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3"
+        },
+        "variants": {
+          "2": {
+            "sha256": "7ace0006884269df5698116d62452e02e5f5c5c8ace88b725ca8c54dd0fb15fb",
+            "workingBytes": 201002
+          },
+          "4": {
+            "sha256": "039619e719b0b98069b5826be3fc1faf70c5ad3e86ebaf40644ea1e7d9ee4fc2",
+            "workingBytes": 672410
+          }
+        },
+        "sourceScope": {
+          "campaignSources": [
+            {
+              "edition": "yr",
+              "mission": "sov05umd.map",
+              "sha256": "22518e8b4a86331a9172048e10de13b45c2826ea4fdf4d2203b58994b897761b"
+            }
+          ]
+        }
+      },
+      "selection": ".local/source-art/yr-campaign-v1/building-turrets/cahead/selected-masters-r1.json",
+      "selectionSha256": "ed220db465c87759e147f95298dcb3cdad2ae04d2a82b61dff3481e21186dc05",
+      "exports": ".artifacts/yr-campaign/cahead-turret-stage-r1/export.json",
+      "bundle": {
+        "schema": "campaign-environment-turret-v1",
+        "identity": "yr-task-newurban-caeast02-v1",
+        "family": "CAEAST02",
+        "theater": "NEWURBAN",
+        "mission": "sov05umd.map",
+        "revision": "yr-cahead-r1",
+        "variants": {
+          "2": {
+            "sha256": "7ace0006884269df5698116d62452e02e5f5c5c8ace88b725ca8c54dd0fb15fb",
+            "manifest": "yr-cahead-r1-2-manifest.json",
+            "files": {
+              "0.png": "yr-cahead-r1-2-0.png",
+              "0.mask": "yr-cahead-r1-2-0.mask",
+              "45.png": "yr-cahead-r1-2-45.png",
+              "45.mask": "yr-cahead-r1-2-45.mask",
+              "90.png": "yr-cahead-r1-2-90.png",
+              "90.mask": "yr-cahead-r1-2-90.mask",
+              "135.png": "yr-cahead-r1-2-135.png",
+              "135.mask": "yr-cahead-r1-2-135.mask",
+              "180.png": "yr-cahead-r1-2-180.png",
+              "180.mask": "yr-cahead-r1-2-180.mask",
+              "225.png": "yr-cahead-r1-2-225.png",
+              "225.mask": "yr-cahead-r1-2-225.mask",
+              "270.png": "yr-cahead-r1-2-270.png",
+              "270.mask": "yr-cahead-r1-2-270.mask",
+              "315.png": "yr-cahead-r1-2-315.png",
+              "315.mask": "yr-cahead-r1-2-315.mask"
+            }
+          },
+          "4": {
+            "sha256": "039619e719b0b98069b5826be3fc1faf70c5ad3e86ebaf40644ea1e7d9ee4fc2",
+            "manifest": "yr-cahead-r1-4-manifest.json",
+            "files": {
+              "0.png": "yr-cahead-r1-4-0.png",
+              "0.mask": "yr-cahead-r1-4-0.mask",
+              "45.png": "yr-cahead-r1-4-45.png",
+              "45.mask": "yr-cahead-r1-4-45.mask",
+              "90.png": "yr-cahead-r1-4-90.png",
+              "90.mask": "yr-cahead-r1-4-90.mask",
+              "135.png": "yr-cahead-r1-4-135.png",
+              "135.mask": "yr-cahead-r1-4-135.mask",
+              "180.png": "yr-cahead-r1-4-180.png",
+              "180.mask": "yr-cahead-r1-4-180.mask",
+              "225.png": "yr-cahead-r1-4-225.png",
+              "225.mask": "yr-cahead-r1-4-225.mask",
+              "270.png": "yr-cahead-r1-4-270.png",
+              "270.mask": "yr-cahead-r1-4-270.mask",
+              "315.png": "yr-cahead-r1-4-315.png",
+              "315.mask": "yr-cahead-r1-4-315.mask"
+            }
+          }
+        }
+      },
+      "addedFiles": [
+        {
+          "name": "yr-cahead-r1-2-manifest.json",
+          "bytes": 8295,
+          "sha256": "7ace0006884269df5698116d62452e02e5f5c5c8ace88b725ca8c54dd0fb15fb",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-manifest.json"
+        },
+        {
+          "name": "yr-cahead-r1-2-0.png",
+          "bytes": 18165,
+          "sha256": "80dd5cb4fb42e7472329f5d45b8ee41d61873888141c49681ece3a25a9016245",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-0.png"
+        },
+        {
+          "name": "yr-cahead-r1-2-0.mask",
+          "bytes": 25600,
+          "sha256": "c65206769723a13afe80c0d925531639ceef9c2eb97eee3b1b542739ec40597f",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-0.mask"
+        },
+        {
+          "name": "yr-cahead-r1-2-45.png",
+          "bytes": 17011,
+          "sha256": "1b691f5e49a3a5775c548a66d8e2d0bc5125783f4a82bb0a2e805137313ef2a7",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-45.png"
+        },
+        {
+          "name": "yr-cahead-r1-2-45.mask",
+          "bytes": 25600,
+          "sha256": "c65206769723a13afe80c0d925531639ceef9c2eb97eee3b1b542739ec40597f",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-45.mask"
+        },
+        {
+          "name": "yr-cahead-r1-2-90.png",
+          "bytes": 18753,
+          "sha256": "934904c3ea5eedae0ffa654d64d9a60169e32f42ce2acfe16057e797ff2090ed",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-90.png"
+        },
+        {
+          "name": "yr-cahead-r1-2-90.mask",
+          "bytes": 25600,
+          "sha256": "c65206769723a13afe80c0d925531639ceef9c2eb97eee3b1b542739ec40597f",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-90.mask"
+        },
+        {
+          "name": "yr-cahead-r1-2-135.png",
+          "bytes": 19695,
+          "sha256": "e346c149886203a7628a669e3a93a4c9c8d581a72191c676171353b7201c6322",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-135.png"
+        },
+        {
+          "name": "yr-cahead-r1-2-135.mask",
+          "bytes": 25600,
+          "sha256": "c65206769723a13afe80c0d925531639ceef9c2eb97eee3b1b542739ec40597f",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-135.mask"
+        },
+        {
+          "name": "yr-cahead-r1-2-180.png",
+          "bytes": 19079,
+          "sha256": "53efb71c9e619a1ffdf455c8947279c5db63642d64791c9ce60ca9566347af58",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-180.png"
+        },
+        {
+          "name": "yr-cahead-r1-2-180.mask",
+          "bytes": 25600,
+          "sha256": "c65206769723a13afe80c0d925531639ceef9c2eb97eee3b1b542739ec40597f",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-180.mask"
+        },
+        {
+          "name": "yr-cahead-r1-2-225.png",
+          "bytes": 18794,
+          "sha256": "6f39a664cd4ea0c4ce0d820435a389bd7f76f9b3b66d8d38e91f250b2b83bc6d",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-225.png"
+        },
+        {
+          "name": "yr-cahead-r1-2-225.mask",
+          "bytes": 25600,
+          "sha256": "c65206769723a13afe80c0d925531639ceef9c2eb97eee3b1b542739ec40597f",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-225.mask"
+        },
+        {
+          "name": "yr-cahead-r1-2-270.png",
+          "bytes": 20029,
+          "sha256": "2e8545b1a1ed43e3c2595cab39756799f4c55a8bfd2949766cc121c1a8ba389a",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-270.png"
+        },
+        {
+          "name": "yr-cahead-r1-2-270.mask",
+          "bytes": 25600,
+          "sha256": "c65206769723a13afe80c0d925531639ceef9c2eb97eee3b1b542739ec40597f",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-270.mask"
+        },
+        {
+          "name": "yr-cahead-r1-2-315.png",
+          "bytes": 20117,
+          "sha256": "692a6cb225347ec742d771886524b37752424539227af30c1b46b8dbe946db64",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-315.png"
+        },
+        {
+          "name": "yr-cahead-r1-2-315.mask",
+          "bytes": 25600,
+          "sha256": "c65206769723a13afe80c0d925531639ceef9c2eb97eee3b1b542739ec40597f",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-2-315.mask"
+        },
+        {
+          "name": "yr-cahead-r1-4-manifest.json",
+          "bytes": 8292,
+          "sha256": "039619e719b0b98069b5826be3fc1faf70c5ad3e86ebaf40644ea1e7d9ee4fc2",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-manifest.json"
+        },
+        {
+          "name": "yr-cahead-r1-4-0.png",
+          "bytes": 56021,
+          "sha256": "34cb27405c1b42656ad27c43c8335d36f7fe52ad01c108686bd2edb0a893c17a",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-0.png"
+        },
+        {
+          "name": "yr-cahead-r1-4-0.mask",
+          "bytes": 102400,
+          "sha256": "f627ca4c2c322f15db26152df306bd4f983f0146409b81a4341b9b340c365a16",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-0.mask"
+        },
+        {
+          "name": "yr-cahead-r1-4-45.png",
+          "bytes": 52065,
+          "sha256": "8982d1111eaf8db6e57ae4f4b3d0f802a52f912f29490dd697a6ef4c6274543e",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-45.png"
+        },
+        {
+          "name": "yr-cahead-r1-4-45.mask",
+          "bytes": 102400,
+          "sha256": "f627ca4c2c322f15db26152df306bd4f983f0146409b81a4341b9b340c365a16",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-45.mask"
+        },
+        {
+          "name": "yr-cahead-r1-4-90.png",
+          "bytes": 57689,
+          "sha256": "39b7ef6ee82587f7e17443db202c016c01e9dd54a1e9ed0b65ddf51224f329ab",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-90.png"
+        },
+        {
+          "name": "yr-cahead-r1-4-90.mask",
+          "bytes": 102400,
+          "sha256": "f627ca4c2c322f15db26152df306bd4f983f0146409b81a4341b9b340c365a16",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-90.mask"
+        },
+        {
+          "name": "yr-cahead-r1-4-135.png",
+          "bytes": 60336,
+          "sha256": "fde9040434246ebd9fa4d75244db44a5f54304008ca45ca175cc835135fad35e",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-135.png"
+        },
+        {
+          "name": "yr-cahead-r1-4-135.mask",
+          "bytes": 102400,
+          "sha256": "f627ca4c2c322f15db26152df306bd4f983f0146409b81a4341b9b340c365a16",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-135.mask"
+        },
+        {
+          "name": "yr-cahead-r1-4-180.png",
+          "bytes": 59146,
+          "sha256": "18c214f4df2fe44639c186b98c978c6790b4210d8c4c0165786a811468363243",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-180.png"
+        },
+        {
+          "name": "yr-cahead-r1-4-180.mask",
+          "bytes": 102400,
+          "sha256": "f627ca4c2c322f15db26152df306bd4f983f0146409b81a4341b9b340c365a16",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-180.mask"
+        },
+        {
+          "name": "yr-cahead-r1-4-225.png",
+          "bytes": 59568,
+          "sha256": "38d0b3782fb37bfc0e3dd275b22eb65e1c0ce07b2a21fe9d53faf89666018ac5",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-225.png"
+        },
+        {
+          "name": "yr-cahead-r1-4-225.mask",
+          "bytes": 102400,
+          "sha256": "f627ca4c2c322f15db26152df306bd4f983f0146409b81a4341b9b340c365a16",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-225.mask"
+        },
+        {
+          "name": "yr-cahead-r1-4-270.png",
+          "bytes": 63821,
+          "sha256": "32583a1f8f6c2a25a63ec4d72a0614ce22d5a67f9796b70818c574232a5e7ddb",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-270.png"
+        },
+        {
+          "name": "yr-cahead-r1-4-270.mask",
+          "bytes": 102400,
+          "sha256": "f627ca4c2c322f15db26152df306bd4f983f0146409b81a4341b9b340c365a16",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-270.mask"
+        },
+        {
+          "name": "yr-cahead-r1-4-315.png",
+          "bytes": 62570,
+          "sha256": "5efd18a052a5a2f95354f39e1a07ba764204d6778972b95c56ff2373931febbe",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-315.png"
+        },
+        {
+          "name": "yr-cahead-r1-4-315.mask",
+          "bytes": 102400,
+          "sha256": "f627ca4c2c322f15db26152df306bd4f983f0146409b81a4341b9b340c365a16",
+          "route": "/local-campaign/yr/sov05umd/yr-cahead-r1-4-315.mask"
+        },
+        {
+          "name": "environment-turret-yr-cahead-r1.json",
+          "bytes": 2015,
+          "sha256": "c7e0569119147364c53269265d2c316085570a55ba96348dde32c99df2136f9f",
+          "route": "/local-campaign/yr/sov05umd/environment-turret-yr-cahead-r1.json"
+        }
+      ],
+      "preservedAcceptedPedestal": false,
+      "copiedAcceptedPngFiles": 0,
+      "replacedAcceptedPayloads": 0,
+      "nativeRuntime": "PENDING",
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "identity": "CAOUTP",
+      "environmentFamily": "snow-caoutp",
+      "theater": "SNOW",
+      "attachment": {
+        "family": "CAOUTP",
+        "sources": {
+          "outp.vxl": "30ab6767edd33b4e15a63c93b714ec6664ae95d725b9b2c9065595407a11be73",
+          "outp.hva": "da9ad51682011fcda6492c3f34ae3dd1382f32818374c06a55791bad5f92433f"
+        },
+        "palette": {
+          "member": "unitsno.pal",
+          "sha256": "c5281f05b0039fb8edb6a91dd61c6493d2de9fc90ab3a9acb442a5e203260f7f"
+        },
+        "variants": {
+          "2": {
+            "sha256": "1db9bc6569337d93c17fe681d883492568b12fb527a0485f3de2e4e4f5884347",
+            "workingBytes": 83478
+          },
+          "4": {
+            "sha256": "51f6179cc25d21459fe5a4d8fc112a612abaea4ac975c850e01bd4a88e4a1fb3",
+            "workingBytes": 224222
+          }
+        },
+        "sourceScope": {
+          "campaignSources": [
+            {
+              "edition": "yr",
+              "mission": "sov02smd.map",
+              "sha256": "139a7f17a17cefc20d12c21e9221d94ff6e1e8894ac09ab716fc9f6975d5a665"
+            }
+          ]
+        }
+      },
+      "selection": ".local/source-art/yr-campaign-v1/building-turrets/outp/selected-masters-r1.json",
+      "selectionSha256": "607b509b197735da1ae903e723952a9d2e7f4b88b1341fae6923ce9db3bc8415",
+      "exports": ".artifacts/yr-campaign/outp-turret-stage-r1/export.json",
+      "bundle": {
+        "schema": "campaign-environment-turret-v1",
+        "identity": "snow-caoutp",
+        "family": "CAOUTP",
+        "theater": "SNOW",
+        "mission": "sov02smd.map",
+        "revision": "yr-task-snow-caoutp-turret-r1",
+        "variants": {
+          "2": {
+            "sha256": "1db9bc6569337d93c17fe681d883492568b12fb527a0485f3de2e4e4f5884347",
+            "manifest": "yr-task-snow-caoutp-turret-r1-2-manifest.json",
+            "files": {
+              "0.png": "yr-task-snow-caoutp-turret-r1-2-0.png",
+              "0.mask": "yr-task-snow-caoutp-turret-r1-2-0.mask",
+              "45.png": "yr-task-snow-caoutp-turret-r1-2-45.png",
+              "45.mask": "yr-task-snow-caoutp-turret-r1-2-45.mask",
+              "90.png": "yr-task-snow-caoutp-turret-r1-2-90.png",
+              "90.mask": "yr-task-snow-caoutp-turret-r1-2-90.mask",
+              "135.png": "yr-task-snow-caoutp-turret-r1-2-135.png",
+              "135.mask": "yr-task-snow-caoutp-turret-r1-2-135.mask",
+              "180.png": "yr-task-snow-caoutp-turret-r1-2-180.png",
+              "180.mask": "yr-task-snow-caoutp-turret-r1-2-180.mask",
+              "225.png": "yr-task-snow-caoutp-turret-r1-2-225.png",
+              "225.mask": "yr-task-snow-caoutp-turret-r1-2-225.mask",
+              "270.png": "yr-task-snow-caoutp-turret-r1-2-270.png",
+              "270.mask": "yr-task-snow-caoutp-turret-r1-2-270.mask",
+              "315.png": "yr-task-snow-caoutp-turret-r1-2-315.png",
+              "315.mask": "yr-task-snow-caoutp-turret-r1-2-315.mask"
+            }
+          },
+          "4": {
+            "sha256": "51f6179cc25d21459fe5a4d8fc112a612abaea4ac975c850e01bd4a88e4a1fb3",
+            "manifest": "yr-task-snow-caoutp-turret-r1-4-manifest.json",
+            "files": {
+              "0.png": "yr-task-snow-caoutp-turret-r1-4-0.png",
+              "0.mask": "yr-task-snow-caoutp-turret-r1-4-0.mask",
+              "45.png": "yr-task-snow-caoutp-turret-r1-4-45.png",
+              "45.mask": "yr-task-snow-caoutp-turret-r1-4-45.mask",
+              "90.png": "yr-task-snow-caoutp-turret-r1-4-90.png",
+              "90.mask": "yr-task-snow-caoutp-turret-r1-4-90.mask",
+              "135.png": "yr-task-snow-caoutp-turret-r1-4-135.png",
+              "135.mask": "yr-task-snow-caoutp-turret-r1-4-135.mask",
+              "180.png": "yr-task-snow-caoutp-turret-r1-4-180.png",
+              "180.mask": "yr-task-snow-caoutp-turret-r1-4-180.mask",
+              "225.png": "yr-task-snow-caoutp-turret-r1-4-225.png",
+              "225.mask": "yr-task-snow-caoutp-turret-r1-4-225.mask",
+              "270.png": "yr-task-snow-caoutp-turret-r1-4-270.png",
+              "270.mask": "yr-task-snow-caoutp-turret-r1-4-270.mask",
+              "315.png": "yr-task-snow-caoutp-turret-r1-4-315.png",
+              "315.mask": "yr-task-snow-caoutp-turret-r1-4-315.mask"
+            }
+          }
+        }
+      },
+      "addedFiles": [
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-manifest.json",
+          "bytes": 8244,
+          "sha256": "1db9bc6569337d93c17fe681d883492568b12fb527a0485f3de2e4e4f5884347",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-manifest.json"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-0.png",
+          "bytes": 6125,
+          "sha256": "8be531f8b9dbab0204edeca45ac50d99c3b345907e65468f595263aad2435b62",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-0.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-0.mask",
+          "bytes": 7680,
+          "sha256": "12b261c9fbda441be6ef8c5fbac37564263afb5e11bc6368432f59bc4024900a",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-0.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-45.png",
+          "bytes": 3814,
+          "sha256": "5dddcca83f06a1544b0bb99bfc58bdedaa62faa9ea2e9a04e642d219ccecd464",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-45.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-45.mask",
+          "bytes": 7680,
+          "sha256": "996cf56f646a36b85115ede6058f485ca924828bd8c9d4ac52594ed90931b28a",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-45.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-90.png",
+          "bytes": 6155,
+          "sha256": "008fdabe36a33fd9422e26cb2e7b5df705dedb499b1ab4b03f77a0894201ab87",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-90.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-90.mask",
+          "bytes": 7680,
+          "sha256": "00009b9ef3bcbbc56b4fac59abe49ed6e581fce795e9771b93f6ef0400769ad2",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-90.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-135.png",
+          "bytes": 5260,
+          "sha256": "4fb8db668737b1b19524f6587be6aa5371a07e83c74cc45456dc31f4afa647fa",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-135.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-135.mask",
+          "bytes": 7680,
+          "sha256": "291e5211e68a277ba64bf6e273ebb857b74952ccc420bc7c2f1e9153a31fbfb3",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-135.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-180.png",
+          "bytes": 6114,
+          "sha256": "14e76961ce0e9e922adce7136e8dfdb874d1d927dda5efa9aa1d7e2061c42b83",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-180.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-180.mask",
+          "bytes": 7680,
+          "sha256": "c223c526ced3ff0bba36ca2385e240f90c187e8fd74ccc7592e84026f0cd6885",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-180.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-225.png",
+          "bytes": 4186,
+          "sha256": "bfe44a73eb13e8dda5ee202bfbea31994bfe6115b86fe3ae937ead72ae740605",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-225.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-225.mask",
+          "bytes": 7680,
+          "sha256": "656d3034a0f13409c15da57a61c610789bba23ad84748ca32655902426ab5d93",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-225.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-270.png",
+          "bytes": 6066,
+          "sha256": "16b088e866134b5476886ccca9370ae1a5b0b53d13c4813f104200821f3b2780",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-270.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-270.mask",
+          "bytes": 7680,
+          "sha256": "f032644db2f2abf895dd269774c2dd7c21a12e33ad65ed9e9606a55a49be2fb4",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-270.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-315.png",
+          "bytes": 5405,
+          "sha256": "ab18b7deafab2397480d72a29aa488b65c0a84e188f50365d2c99e6cd27ccc39",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-315.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-2-315.mask",
+          "bytes": 7680,
+          "sha256": "50948832731f0a4f38cb56df3a5ac70a2e939d9b2d8d3a35cb975adc94f65305",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-2-315.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-manifest.json",
+          "bytes": 8303,
+          "sha256": "51f6179cc25d21459fe5a4d8fc112a612abaea4ac975c850e01bd4a88e4a1fb3",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-manifest.json"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-0.png",
+          "bytes": 18904,
+          "sha256": "efba1e92624822627fdc74ba3d72d4a94eefba0dc14d74dba6b4b745c8b859e9",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-0.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-0.mask",
+          "bytes": 30720,
+          "sha256": "44da5565d0a199d26f43e1cb053dac33cacd166bcf8df3ddc569b494307a64f5",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-0.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-45.png",
+          "bytes": 11528,
+          "sha256": "b5d6e510bd2cb68c83e7d617751dc91d552d62f04863e3c747ae97ce72bd9006",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-45.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-45.mask",
+          "bytes": 30720,
+          "sha256": "19b465ee9bdb92ffa886ab0c9f483dec5189e084daa68644ef4248f5775915f0",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-45.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-90.png",
+          "bytes": 18790,
+          "sha256": "e9e0f4be38292eec4a1ee37550ea628c943a0833d545cc119fc25326fdbf7ea2",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-90.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-90.mask",
+          "bytes": 30720,
+          "sha256": "4d5cd036440988182fb62f42ba15bbc641bd204dbb29d281177d6465ca772d3d",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-90.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-135.png",
+          "bytes": 16166,
+          "sha256": "45a5586fa0a82c61ac6ca0844e235aeb2c1bbd3b17ccaedf50281ad6d974bcb7",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-135.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-135.mask",
+          "bytes": 30720,
+          "sha256": "cdb2c905713cb344f75e109a489a97ca56489302382ac66afcf4f058c0e1b339",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-135.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-180.png",
+          "bytes": 18927,
+          "sha256": "b4366dcc071e33519845a8c5853ddf7b514dd0867721b14c0997e033a0288ba8",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-180.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-180.mask",
+          "bytes": 30720,
+          "sha256": "36f2bbef143c2a8890641b7de1e4de3d3145579f071c3fb847e3d46e0083a4c7",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-180.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-225.png",
+          "bytes": 12239,
+          "sha256": "df2d248930b43e61e513c3deae398ab7d9efb19b4f4ce2f292d2b14fd8368d41",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-225.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-225.mask",
+          "bytes": 30720,
+          "sha256": "cfe47a982a03352e60d5b0e0e51958d9b9e6dda0ef09ece0908f729d22e93cb4",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-225.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-270.png",
+          "bytes": 18766,
+          "sha256": "5c9a8ddc17c3a6e9d4a9830bed59c9fa8f86516a7f8b2e9e608923cb13ffcd50",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-270.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-270.mask",
+          "bytes": 30720,
+          "sha256": "b42e21050545d94f3e251cd1b02b72f912f19dab9aff5f267fd8056b3aff1585",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-270.mask"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-315.png",
+          "bytes": 16404,
+          "sha256": "67c44ef0a1069c43a3828353715355cb9dba6379437e32cc74b756669e7633d9",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-315.png"
+        },
+        {
+          "name": "yr-task-snow-caoutp-turret-r1-4-315.mask",
+          "bytes": 30720,
+          "sha256": "f002709f64aaabcf51cb3868d037da19b597dd9f00ee9e46ecd1f1dcfa13683e",
+          "route": "/local-campaign/yr/sov02smd/yr-task-snow-caoutp-turret-r1-4-315.mask"
+        },
+        {
+          "name": "environment-turret-yr-task-snow-caoutp-turret-r1.json",
+          "bytes": 2587,
+          "sha256": "c48208bcf109eec405e8d2faa49178c0970d3ca51599d1961a42b7595fb30402",
+          "route": "/local-campaign/yr/sov02smd/environment-turret-yr-task-snow-caoutp-turret-r1.json"
+        }
+      ],
+      "preservedAcceptedPedestal": true,
+      "copiedAcceptedPngFiles": 0,
+      "replacedAcceptedPayloads": 0,
+      "nativeRuntime": "PENDING",
+      "userVisualAcceptance": "PENDING"
+    }
+  ],
+  "userVisualAcceptance": "PENDING",
+  "windows": "NOT_RUN_ON_THIS_MAC"
+}

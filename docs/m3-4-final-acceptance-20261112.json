@@ -1,0 +1,53 @@
+{
+  "schema": "m3-4-complete-user-acceptance-v1",
+  "status": "USER_ACCEPTED_M3_4_MOVIES_AND_V05_YURI_MENU",
+  "date": "2026-11-12",
+  "userStatement": "Accepted. Update main, perform cleanup, then write a handoff that the user will relay to the main conversation.",
+  "acceptedRuntimeCommit": "88ac426b84723bc4a0451c221e6a43b35704791b",
+  "observedLocalMainHead": "f9a01fa2ce6e164cd4c656f05f3d916d83276e7e",
+  "releaseVersion": "0.5",
+  "bundleVersion": "0.5.0",
+  "scope": {
+    "movieIdentities": 136,
+    "ra2": 80,
+    "yr": 56,
+    "downloadedFullscreen": 51,
+    "retainedHdRadar": 83,
+    "retainedLibraryOnly": 2,
+    "completeYuriMenuBadge": "USER_ACCEPTED",
+    "movieLibraryScrollRepair": "RETAINED"
+  },
+  "selectedMovies": {
+    "schema": "hd-movie-selection-v1",
+    "manifest": "media/hd-movies/downloaded-1080p-r1/manifest.json",
+    "sha256": "cc4ab6015567a7055f89177ebbbc9d8aa196aefede5f06409efa367dd72cc11a"
+  },
+  "verifiedDelivery": {
+    "file": "docs/yuri-menu-logo-final-20261112.json",
+    "sha256": "e271a81d5c5afc1dfcd7670085f32cc1f11e76a492008e2317f8e9dbcd18afa3"
+  },
+  "movieAcceptance": {
+    "file": "docs/hd-movies-user-acceptance-20261112.json",
+    "bytes": 1062,
+    "sha256": "8bab145dcca1ec9370ade9d51d6fb91909ff9f8c236551568a2dacfd94edabae"
+  },
+  "desktopZip": {
+    "status": "PASS_COMPLETE_MAC_ZIP_ALL_DECOMPRESSED_BYTES_MODES_SYMLINKS",
+    "file": "/Users/Aone/Desktop/RA2-HD-Mac-arm64-v0.5-20261112.zip",
+    "app": "Red Alert 2 HD.app",
+    "bytes": 13366380602,
+    "sha256": "6fdf923635ce22dd018de0fd0f23e3969a4753c6435747602638e1bae62f1412",
+    "appInventorySha256": "d10207a6e17fa2cb040edc16c94fab0b6ea1a8cb317ed019227b7bc3649b43ac",
+    "entries": 17017,
+    "sourceHead": "88ac426b84723bc4a0451c221e6a43b35704791b",
+    "sourceDigest": "93fde77f621a537b4e1c0a74ce3265fa611e869c7f1daa5eafda53eb918aa28a",
+    "policy": "Single complete app; no real user profiles, extra build directory or resource fork entries."
+  },
+  "branch": "main",
+  "localOnly": true,
+  "remotePush": false,
+  "mainConversationTransfer": "USER_WILL_RELAY_HANDOFF_DOCUMENT",
+  "qualification": "User acceptance retains source watermarks/interpolation and the documented two library-only downloaded-source exceptions. Windows, physical 8/16 GiB targets and unlisted exhaustive compatibility checks remain unverified.",
+  "cleanupScope": "Audited M3.4 test extraction, receipted source derivatives and isolated test-profile caches; preserve canonical resources/masters, original inputs, accepted apps/ZIPs, real profiles, source history and unrelated working files.",
+  "cleanupHistory": "../project-history/m3-4-accepted-20261112"
+}

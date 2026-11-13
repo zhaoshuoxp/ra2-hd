@@ -1,0 +1,203 @@
+{
+  "schema": "yr-rocket-complete-family-qualification-v1",
+  "status": "PASS_COMPLETE_ROCKET_BODY_ACTIVE_COMPOSITE_CLOCK_AND_RELEASE_NATIVE_2X4X",
+  "family": "yr-task-newurban-yarock-v2",
+  "registration": "docs/campaign-art/yr-v1/task-newurban-yarock-registration-r5.json",
+  "counts": {
+    "members": 2,
+    "uniqueBodyMasters": 1,
+    "uniqueActiveMasters": 20,
+    "bodySourceStates": 3,
+    "authoredActiveFrames": 20,
+    "retainedOriginalUnusedActiveMarkerFrames": 20,
+    "densityFrames": 86,
+    "authoredDensityFrames": 46,
+    "originalSeparateShadowFrames": 3,
+    "nativeSessions": 2,
+    "nativeSamples": 46
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "623116728973882a2c282a8ecf76316ee2798481414991784d7691d4d9a348b6",
+    "counts": {
+      "families": 1,
+      "members": 2,
+      "densityFrames": 86,
+      "pages": 4,
+      "ownerStates": 46,
+      "neutralStates": 40,
+      "unusedMarkerDensityFrames": 40,
+      "nativeSeparateShadowFrames": 3,
+      "preservedAcceptedDensityFrames": 0
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 9666560,
+      "4": 38273024
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "native": [
+    {
+      "density": 2,
+      "mission": "sov05umd.map",
+      "originalActor": {
+        "id": 1952,
+        "health": 100,
+        "destroyed": false,
+        "originalRubble": false,
+        "tile": [
+          136,
+          135
+        ]
+      },
+      "bodyStates": 3,
+      "compositeActiveStates": 20,
+      "nativeActiveClock": [
+        {
+          "start": 0,
+          "loopStart": 19,
+          "loopEnd": 19,
+          "loopCount": -1,
+          "rate": 15,
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            19,
+            19,
+            19
+          ]
+        }
+      ],
+      "sourceWorldExact": true,
+      "allOriginalBodyShadowsAndActiveGeometryExact": true,
+      "sceneExitChargesZero": true,
+      "glErrors": 0,
+      "nativeOverviewInspected": true,
+      "ownerColors": {
+        "frame": 2,
+        "nativeOwnerPixels": 549,
+        "changedPixels": 2556,
+        "changedAlphaPixels": 0,
+        "fixedMaterial": false,
+        "scope": "Diagnostic renderer palettes only. Original actor ownership, simulation and source objectives remain unchanged."
+      },
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/rocket-composite-native-2x-r6.json.gz",
+      "reportSha256": "68567c818861c975edc5dd0f973dd4319fe617a5417768b02f116752d8ff0d1b"
+    },
+    {
+      "density": 4,
+      "mission": "sov05umd.map",
+      "originalActor": {
+        "id": 1952,
+        "health": 100,
+        "destroyed": false,
+        "originalRubble": false,
+        "tile": [
+          136,
+          135
+        ]
+      },
+      "bodyStates": 3,
+      "compositeActiveStates": 20,
+      "nativeActiveClock": [
+        {
+          "start": 0,
+          "loopStart": 19,
+          "loopEnd": 19,
+          "loopCount": -1,
+          "rate": 15,
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            19,
+            19,
+            19
+          ]
+        }
+      ],
+      "sourceWorldExact": true,
+      "allOriginalBodyShadowsAndActiveGeometryExact": true,
+      "sceneExitChargesZero": true,
+      "glErrors": 0,
+      "nativeOverviewInspected": true,
+      "ownerColors": {
+        "frame": 2,
+        "nativeOwnerPixels": 549,
+        "changedPixels": 2456,
+        "changedAlphaPixels": 0,
+        "fixedMaterial": false,
+        "scope": "Diagnostic renderer palettes only. Original actor ownership, simulation and source objectives remain unchanged."
+      },
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/rocket-composite-native-4x-r6.json.gz",
+      "reportSha256": "6a73e1b6f325dfe07c1973d57182d464d4064aa91049c4cb392f793bd4a160dc"
+    }
+  ],
+  "ownerDataRefinement": {
+    "proof": "docs/campaign-art/yr-v1/rocket-authored-owner-region-r5.json",
+    "allBasePagesAndAuthoredMastersUnchanged": true,
+    "previousFamilyAndAllPriorPhysicalPayloadsRetained": true,
+    "previousCatalogEntriesRetained": 74,
+    "sourceDescriptorChanges": 0,
+    "registrationGuardCases": 3,
+    "ownerMaterialCases": 5
+  },
+  "scope": "Original source placement inspected with frozen renderer poses and original animation clock. Ordinary mission camera/movie and objective timing retain separate campaign evidence. All unused original palette-marker tails retain exact bytes and receive no authored HD credit.",
+  "userVisualAcceptance": "PENDING",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "checks": {
+    "selectedFamiliesCases": 33,
+    "selectedFamiliesAssertions": 465,
+    "selectedFamiliesLog": "/private/tmp/ra2-yr-linked-buildings-contracts-r3.log",
+    "rocketV2Cases": 3,
+    "rocketV2Assertions": 59,
+    "rocketV2Log": "/private/tmp/ra2-yr-rocket-v2-contracts-r5.log",
+    "candidateOwnerRegistrationGuardCases": 3,
+    "ownerMaterialPythonCases": 5,
+    "entryTypecheck": "PASS_R65",
+    "desktopPreparation": "PASS_R65_219_BUILT_FILES",
+    "qualification": "The 33-case run precedes the ledger switch from retained Rocket v1 to v2. The separate three-case run verifies selected v2 source geometry, 2X/4X binding, complete-family fallback and release."
+  }
+}

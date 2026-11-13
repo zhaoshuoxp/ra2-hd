@@ -1,0 +1,46 @@
+{
+  "mission": "all03u.map",
+  "sourceSha256": "186e317d4be77eaeec8e0b09e5c813f6ff95aa01e4e206f4b4c82178bf679a61",
+  "semanticsVersion": 17,
+  "enemyHouse": "Russian1 House",
+  "controlledHouses": 1,
+  "triggers": 62,
+  "aiTriggers": 25,
+  "ignoreGlobal": true,
+  "teamDelays": [
+    2900,
+    1600,
+    1000
+  ],
+  "cases": {
+    "easy": {
+      "credits": 15000,
+      "human": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "enemy": [
+        0.8,
+        1.2,
+        1
+      ],
+      "aiDelay": 1000
+    },
+    "hard": {
+      "credits": 5000,
+      "human": [
+        0.8,
+        1.2,
+        1
+      ],
+      "enemy": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "aiDelay": 2900
+    }
+  },
+  "authority": "Original maps01.mix/all03u.map Player House Credits100, TechLevel3; local General +5000/-5000 and Hard/Normal/Easy TeamDelays2900/1600/1000. All62 trigger difficulty flags and25 local AI records retained; global AI explicitly ignored."
+}

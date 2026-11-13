@@ -1,0 +1,313 @@
+{
+  "schema": "yr-easter-stone-family-qualification-v1",
+  "status": "PASS_NEW_STONE_MATERIAL_COMPLETE_BODY_AND_DESTRUCTION_NATIVE_2X4X",
+  "family": "yr-task-newurban-caeast01-v1",
+  "registration": "docs/campaign-art/yr-v1/task-newurban-caeast01-registration-r2.json",
+  "counts": {
+    "members": 2,
+    "uniqueMasters": 28,
+    "bodySourceStates": 4,
+    "destructionFrames": 25,
+    "densityFrames": 58,
+    "originalSeparateShadows": 29,
+    "nativeSessions": 4,
+    "nativeSamples": 58
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "f8a317b71741c565a5c7f966af736c90c24a9c03aaa3d5895dea26237a8e67f0",
+    "counts": {
+      "families": 1,
+      "members": 2,
+      "densityFrames": 58,
+      "pages": 6,
+      "ownerStates": 0,
+      "neutralStates": 58,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 29,
+      "preservedAcceptedDensityFrames": 0
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 21135360,
+      "4": 85655552
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "minimumAuthoredDestructionDensityCapacity": 4.059171597633136,
+  "native": [
+    {
+      "role": "body",
+      "density": 2,
+      "mission": "sov05umd.map",
+      "originalActor": {
+        "id": 1983,
+        "health": 100,
+        "destroyed": false,
+        "originalRubble": false,
+        "tile": [
+          134,
+          181
+        ]
+      },
+      "frames": 4,
+      "sourceWorldExact": true,
+      "originalShadows": true,
+      "nativeOverviewInspected": true,
+      "releaseZero": true,
+      "shaderSpans": 14,
+      "earlyMaterialDisposals": 0,
+      "rendererClockPlayback": null,
+      "ownerColors": {
+        "frame": 0,
+        "nativeOwnerPixels": 0,
+        "changedPixels": 0,
+        "changedAlphaPixels": 0,
+        "fixedMaterial": true,
+        "scope": "Diagnostic renderer palettes only. Original actor ownership, simulation and source objectives remain unchanged."
+      },
+      "environmentFamily": {
+        "density": 2,
+        "worldChargeBytes": 8689402,
+        "gpuBytes": 5297028,
+        "loadingPeakBytes": 13577288,
+        "restoreWorkingBytes": 4409984,
+        "retainedCpuBytes": 3392374,
+        "attempts": [],
+        "members": [
+          "cneast01.shp",
+          "cneast01dm.shp"
+        ],
+        "status": "PUBLISHED_COMPLETE_FAMILY"
+      },
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/easter-material-body-native-2x-r2.json.gz",
+      "reportSha256": "db9c9c137df709db1f335af99c658a3f8505110000d3bedfd3fbfa114ee30437"
+    },
+    {
+      "role": "destruction",
+      "density": 2,
+      "mission": "sov05umd.map",
+      "originalActor": {
+        "id": 1983,
+        "health": 100,
+        "destroyed": false,
+        "originalRubble": false,
+        "tile": [
+          134,
+          181
+        ]
+      },
+      "frames": 25,
+      "sourceWorldExact": true,
+      "originalShadows": true,
+      "nativeOverviewInspected": true,
+      "releaseZero": true,
+      "shaderSpans": 14,
+      "earlyMaterialDisposals": 0,
+      "rendererClockPlayback": {
+        "rate": 18.75,
+        "sourceFrames": 25,
+        "frames": [
+          0,
+          0,
+          2,
+          2,
+          3,
+          5,
+          5,
+          6,
+          8,
+          8,
+          9,
+          11,
+          11,
+          12,
+          14,
+          14,
+          15,
+          17,
+          17,
+          18,
+          20,
+          20,
+          21,
+          23,
+          23,
+          24,
+          24,
+          24
+        ],
+        "removed": true,
+        "scope": "The native animation and transient lifecycle consume an explicit renderer clock while simulation remains frozen."
+      },
+      "ownerColors": null,
+      "environmentFamily": {
+        "density": 2,
+        "worldChargeBytes": 8689402,
+        "gpuBytes": 5297028,
+        "loadingPeakBytes": 13577288,
+        "restoreWorkingBytes": 4409984,
+        "retainedCpuBytes": 3392374,
+        "attempts": [],
+        "members": [
+          "cneast01.shp",
+          "cneast01dm.shp"
+        ],
+        "status": "PUBLISHED_COMPLETE_FAMILY"
+      },
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/easter-material-destruction-native-2x-r2.json.gz",
+      "reportSha256": "d782d7244f0a74fd9110fb8e7a3de7207fdd3699db172ba66976a6eb9593c0e1"
+    },
+    {
+      "role": "body",
+      "density": 4,
+      "mission": "sov05umd.map",
+      "originalActor": {
+        "id": 1983,
+        "health": 100,
+        "destroyed": false,
+        "originalRubble": false,
+        "tile": [
+          134,
+          181
+        ]
+      },
+      "frames": 4,
+      "sourceWorldExact": true,
+      "originalShadows": true,
+      "nativeOverviewInspected": true,
+      "releaseZero": true,
+      "shaderSpans": 14,
+      "earlyMaterialDisposals": 0,
+      "rendererClockPlayback": null,
+      "ownerColors": {
+        "frame": 0,
+        "nativeOwnerPixels": 0,
+        "changedPixels": 0,
+        "changedAlphaPixels": 0,
+        "fixedMaterial": true,
+        "scope": "Diagnostic renderer palettes only. Original actor ownership, simulation and source objectives remain unchanged."
+      },
+      "environmentFamily": {
+        "density": 4,
+        "worldChargeBytes": 33260936,
+        "gpuBytes": 20529288,
+        "loadingPeakBytes": 46543103,
+        "restoreWorkingBytes": 8317440,
+        "retainedCpuBytes": 12731648,
+        "attempts": [],
+        "members": [
+          "cneast01.shp",
+          "cneast01dm.shp"
+        ],
+        "status": "PUBLISHED_COMPLETE_FAMILY"
+      },
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/easter-material-body-native-4x-r2.json.gz",
+      "reportSha256": "62128817d66ba4624627924f21afc291a47778f7112aaf1664b258d5d30411f2"
+    },
+    {
+      "role": "destruction",
+      "density": 4,
+      "mission": "sov05umd.map",
+      "originalActor": {
+        "id": 1983,
+        "health": 100,
+        "destroyed": false,
+        "originalRubble": false,
+        "tile": [
+          134,
+          181
+        ]
+      },
+      "frames": 25,
+      "sourceWorldExact": true,
+      "originalShadows": true,
+      "nativeOverviewInspected": true,
+      "releaseZero": true,
+      "shaderSpans": 14,
+      "earlyMaterialDisposals": 0,
+      "rendererClockPlayback": {
+        "rate": 18.75,
+        "sourceFrames": 25,
+        "frames": [
+          0,
+          0,
+          2,
+          2,
+          3,
+          5,
+          5,
+          6,
+          8,
+          8,
+          9,
+          11,
+          11,
+          12,
+          14,
+          14,
+          15,
+          17,
+          17,
+          18,
+          20,
+          20,
+          21,
+          23,
+          23,
+          24,
+          24,
+          24
+        ],
+        "removed": true,
+        "scope": "The native animation and transient lifecycle consume an explicit renderer clock while simulation remains frozen."
+      },
+      "ownerColors": null,
+      "environmentFamily": {
+        "density": 4,
+        "worldChargeBytes": 33260936,
+        "gpuBytes": 20529288,
+        "loadingPeakBytes": 46543103,
+        "restoreWorkingBytes": 8317440,
+        "retainedCpuBytes": 12731648,
+        "attempts": [],
+        "members": [
+          "cneast01.shp",
+          "cneast01dm.shp"
+        ],
+        "status": "PUBLISHED_COMPLETE_FAMILY"
+      },
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/easter-material-destruction-native-4x-r2.json.gz",
+      "reportSha256": "65cc03177d5e39f0b8c2a1c086643d4b52e9bc7dec1b91822a006b0a525575d4"
+    }
+  ],
+  "inspection": {
+    "exports": "All independent body and destruction export sheets were inspected. The merged body pages exactly match the separately inspected material preview.",
+    "native": "All four native body/destruction overviews and raw lower-flash/final-base detail captures were inspected.",
+    "palette": "Standing/damaged states retain muted salmon-gray and olive-gray stone; rubble retains its distinct original pale olive/tan palette.",
+    "phaseControls": "Frames 0/1 have no added effects; original upper blast/smoke, the separate lower flash in 16\u201318, fading wisps and the no-smoke/no-fire final broken base are retained."
+  },
+  "checks": {
+    "buildingCases": 3,
+    "buildingAssertions": 67,
+    "buildingLog": "/private/tmp/ra2-easter-family-contracts-r2.log",
+    "entryTypecheck": "PASS_R63",
+    "entryTypecheckLog": "/private/tmp/ra2-yr-typecheck-r63.log",
+    "desktopPreparation": "PASS_R63_219_BUILT_FILES",
+    "desktopLog": "/private/tmp/ra2-yr-desktop-r63.log"
+  },
+  "previousProtection": {
+    "previousFamilyLeavesUnchanged": true,
+    "previousSourceDescriptorsUnchanged": true,
+    "previousCampaignPayloadsVerifiedUnchanged": 48
+  },
+  "runtimeQualification": "Renderer-only diagnostic poses and the original transient animation clock in the original mission. Actor ownership, health, world simulation, objectives and native state timing are unchanged. Ordinary combat-trigger evidence remains separate.",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "userVisualAcceptance": "PENDING"
+}

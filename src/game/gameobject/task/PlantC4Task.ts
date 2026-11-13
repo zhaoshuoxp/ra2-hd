@@ -1,7 +1,9 @@
 import { GameSpeed } from "@/game/GameSpeed";
 import { EnterObjectEvent } from "@/game/event/EnterObjectEvent";
 import { EnterBuildingTask } from "@/game/gameobject/task/EnterBuildingTask";
+import { DemolitionRetreatTask, demolitionRetreatEnabled } from './DemolitionRetreatTask';
 export class PlantC4Task extends EnterBuildingTask {
+    private planted = false;
     isAllowed(e: any): boolean {
         return (!this.target.isDestroyed &&
             !this.target.invulnerableTrait.isActive());
@@ -14,8 +16,13 @@ export class PlantC4Task extends EnterBuildingTask {
             player: e.owner,
             obj: e,
         });
+        this.planted = true;
         this.game.events.dispatch(new EnterObjectEvent(this.target, e));
         return false;
+    }
+    protected createExitTask(unit: any) {
+        return this.planted && demolitionRetreatEnabled(this.game)
+            ? new DemolitionRetreatTask(this.game, this.target) : super.createExitTask(unit);
     }
     getTargetLinesConfig(e: any): {
         target: any;

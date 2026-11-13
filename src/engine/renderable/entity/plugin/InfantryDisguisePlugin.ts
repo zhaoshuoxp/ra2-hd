@@ -49,6 +49,7 @@ export class InfantryDisguisePlugin {
                 if (disguise) {
                     objectArt = this.art.getObject(disguise.rules.name, ObjectType.Infantry);
                     this.renderable.setDisguise({
+                        identity: disguise.rules.name,
                         objectArt,
                         owner: disguise.owner,
                     });

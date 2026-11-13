@@ -6,6 +6,7 @@ import snowContract from './environment-snow-hd-contract.json' with { type: 'jso
 import urbanContract from './environment-urban-hd-contract.json' with { type: 'json' };
 import newurbanContract from './environment-newurban-hd-contract.json' with { type: 'json' };
 import desertContract from './environment-desert-hd-contract.json' with { type: 'json' };
+import lunarContract from './environment-lunar-hd-contract.json' with { type: 'json' };
 
 const digest = bytes => createHash('sha256').update(bytes).digest('hex');
 const same = (left, right) => JSON.stringify(left) === JSON.stringify(right);
@@ -26,6 +27,8 @@ export async function registerEnvironmentPack(root, record, contract, pointerFil
         if (manifest.schema !== 'environment-shp-pack-v1' || manifest.theater !== contract.theater
             || !identities.length || identities.some(identity => !contract.families[identity]))
             throw Error('Environment complete catalog mismatch');
+        if (contract.theater === 'LUNAR' && JSON.stringify(manifest.editions) !== '["yr"]')
+            throw Error('Lunar environment edition mismatch');
         const registered = {};
         for (const identity of identities) {
             const declared = contract.families[identity];
@@ -81,7 +84,7 @@ export async function registerEnvironmentPack(root, record, contract, pointerFil
 export async function registerEnvironmentResources(root, record = () => {}) {
     const result = await registerEnvironmentPack(root, record, contract,
         'environment-selection.json', '/local-environment/selection.json');
-    for (const contract of [snowContract, urbanContract, newurbanContract, desertContract]) {
+    for (const contract of [snowContract, urbanContract, newurbanContract, desertContract, lunarContract]) {
         const theater = contract.theater.toLowerCase();
         const extra = await registerEnvironmentPack(root, record, contract,
             `environment-${theater}-selection.json`, `/local-environment/${theater}/selection.json`);

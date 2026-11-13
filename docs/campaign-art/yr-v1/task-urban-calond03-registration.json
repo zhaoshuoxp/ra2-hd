@@ -1,0 +1,154 @@
+{
+  "status": "COMPLETE_FAMILY_REGISTERED_NATIVE_AND_USER_REVIEW_PENDING",
+  "family": "yr-task-urban-calond03-v1",
+  "mission": {
+    "edition": "yr",
+    "mission": "all05umd.map",
+    "sha256": "7ee8148ad4b0092b7970588d9b064ddd6b753fc7bfb352bcc043affeb72c6aed"
+  },
+  "theater": "URBAN",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yr-campaign/task-urban-calond03-stage-r1",
+  "preparation": {
+    "status": "PREPARED_NATIVE_REGISTRATION_AND_RUNTIME_PENDING",
+    "recipe": "/Users/Aone/RA2remaster/ra2-hd/docs/campaign-art/yr-v1/task-urban-calond03.json",
+    "recipeSha256": "5014c004ef06b47c2d346f4353021bb4f7745f16110be2ae1f866f07c7ad4e5a",
+    "originalSourceJsonSha256": "f0cd42b463daf642d2b50ed926f093ea54167d00e1f1d655fdf8476fd5ca3ed8",
+    "sourceSha256": "d0ee73fa2fafea97751618ff7278f0114e0a2ebd55f47669e5011f1b55669d89",
+    "masters": [
+      {
+        "slot": 0,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-calond03/masters-r1/frame-0.png",
+        "sha256": "bbd1402ef28632df448a35439d4467fa2ebb1f0564e2bb7c1501455a10d88fa4"
+      },
+      {
+        "slot": 1,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-calond03/masters-r1/frame-1.png",
+        "sha256": "aad3cfb5d5462cadf653ef571eb374213338f84483a023847c54b914e0d499c9"
+      },
+      {
+        "slot": 2,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-calond03/masters-r1/frame-2.png",
+        "sha256": "b0452d0820c35f1076f04f7d75dce4bf067e6399c9dd7a93a08a2b3f58b0cb0a"
+      },
+      {
+        "slot": 3,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/urban-calond03/masters-r1/frame-3.png",
+        "sha256": "791b036d9b13ac464f969c119b992da86634701d3a23f5bb94fa94456ac80fea"
+      }
+    ],
+    "directionAuthorization": {
+      "file": "docs/campaign-art/yr-v1/authorization.json",
+      "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+    },
+    "userVisualAcceptance": "PENDING",
+    "qualification": "Only original guides are converted. Authored masters are referenced without copying or modification. Complete state coverage, independent exports, alpha/geometry and runtime acceptance require subsequent verification."
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "805a9c2b000c6b2c9a559e4648093eacd87c90b01e8a41f0811a2395021f9dd0",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 8,
+      "pages": 2,
+      "ownerStates": 2,
+      "neutralStates": 6,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 4,
+      "preservedAcceptedDensityFrames": 0
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 2932736,
+      "4": 11632640
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "internalVisualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "packSha256": "805a9c2b000c6b2c9a559e4648093eacd87c90b01e8a41f0811a2395021f9dd0",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "inspectedExports": [
+      ".artifacts/yr-campaign/task-urban-calond03-stage-r1/inspection/states-2x.png",
+      ".artifacts/yr-campaign/task-urban-calond03-stage-r1/inspection/states-4x.png"
+    ],
+    "observations": [
+      "Complete original normal, damaged, garrison and rubble forms retain their source footprint, logical geometry, separate shadows and state timing. Actual independent exports were inspected, including thin Gothic details, open broken surfaces, wires and transparent edges.",
+      "The first three source states exactly match their NewUrban source rasters and share the same three authored master files. The distinct URBAN original Iso palette has a separate new pale rubble master, checked against its actual Original native palette and indices."
+    ],
+    "nativeRuntime": "PENDING",
+    "userVisualAcceptance": "PENDING"
+  },
+  "bundle": {
+    "schema": "campaign-environment-extension-v1",
+    "identity": "yr-task-urban-calond03-v1",
+    "familyHash": "c1860d48dc5d4166fbac5701c6a77446c7668f06821154f911385335dd259e35",
+    "mission": "all05umd.map",
+    "theater": "URBAN",
+    "revision": "yr-task-urban-calond03-r1",
+    "members": [
+      {
+        "member": "cglond03.shp",
+        "manifest": "yr-task-urban-calond03-r1-cglond03-shp.json",
+        "sha256": "daa85a918d62c2ac351372ae1b357a0d484a7d1474b5bce4d3c3324da8cccd96"
+      }
+    ],
+    "acceptance": "FAITHFUL_DIRECTION_AUTHORIZED_COMPLETE_NATIVE_RUNTIME_AND_USER_VISUAL_REVIEW_PENDING",
+    "edition": "yr"
+  },
+  "files": [
+    {
+      "name": "yr-task-urban-calond03-r1-cglond03-shp-2-p0-base.png",
+      "bytes": 437420,
+      "sha256": "4ea48676c57f9736789dc07edf56f5cff561cf3a5c170c72d532d96a41e9b0e3",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-calond03-r1-cglond03-shp-2-p0-base.png"
+    },
+    {
+      "name": "yr-task-urban-calond03-r1-cglond03-shp-2-p0-data.png",
+      "bytes": 6931,
+      "sha256": "c2db7aec6c40288793a67db4ae7fe9db7462ec3811f18a0c72ce8ff8fbabe495",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-calond03-r1-cglond03-shp-2-p0-data.png"
+    },
+    {
+      "name": "yr-task-urban-calond03-r1-cglond03-shp-4-p0-base.png",
+      "bytes": 1557684,
+      "sha256": "ac09792207b00d9785b613449653eac5c259a124d98e827134cb75c37bd7dab6",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-calond03-r1-cglond03-shp-4-p0-base.png"
+    },
+    {
+      "name": "yr-task-urban-calond03-r1-cglond03-shp-4-p0-data.png",
+      "bytes": 19884,
+      "sha256": "fd1ffc556c92dce199b158b06a0efc72aa9ceac2a39d956be066443f9ceb057a",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-calond03-r1-cglond03-shp-4-p0-data.png"
+    },
+    {
+      "name": "yr-task-urban-calond03-r1-cglond03-shp.json",
+      "bytes": 6392,
+      "sha256": "daa85a918d62c2ac351372ae1b357a0d484a7d1474b5bce4d3c3324da8cccd96",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-calond03-r1-cglond03-shp.json"
+    },
+    {
+      "name": "environment-family-yr-task-urban-calond03-r1.json",
+      "bytes": 608,
+      "sha256": "b9250eb0e348bcd0e8232654a9ba705e3793cea866bc59757883ca3c3fb51f58",
+      "route": "/local-campaign/yr/all05umd/environment-family-yr-task-urban-calond03-r1.json"
+    }
+  ],
+  "contractBeforeSha256": "c2651deb633084915852aa02946bbe616af63622a2166b76f88d9d9ea37a7d3f",
+  "contractAfterSha256": "2be9f37af71ec936077a0e0401c037384e153d8e09c9fb32f3091ab53362615a",
+  "existingRootSelectorChanges": {},
+  "acceptedPayloadsReplaced": 0,
+  "ownershipCorrection": null,
+  "artCorrection": null,
+  "bridgeCorrection": null,
+  "policy": "Independent densities, original shadows/state timing and existing fixed budgets; complete-family fallback retained."
+}

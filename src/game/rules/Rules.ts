@@ -223,6 +223,7 @@ export class Rules {
         }
         return this.countryRules.get(name)!;
     }
+    hasCountry(name: string): boolean { return this.countryRules.has(name); }
     getMultiplayerCountries(): CountryRules[] {
         return [...this.countryRules.values()].filter(country => country.multiplay);
     }

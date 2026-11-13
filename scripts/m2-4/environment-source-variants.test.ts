@@ -1,3 +1,5 @@
+import { retailMember } from '../test-support/resources';
+import { ShpFile } from '../../src/data/ShpFile';
 import { expect, test } from 'bun:test';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -10,7 +12,11 @@ import { registerEnvironmentPack } from '../../desktop/environment-profile.mjs';
 
 const sha = (bytes: string | Uint8Array) => createHash('sha256').update(bytes).digest('hex');
 const repository = process.cwd();
-const guide = JSON.parse(await fs.readFile('.artifacts/m2-4/urban-civilians-native-batch49-v1/source.json', 'utf8'));
+const guide = { sources: ['cgpars11.shp', 'cgwash01.shp', 'cgwash14.shp', 'cgwash15.shp'].flatMap(member =>
+    (['ra2', 'yr'] as const).map(edition => {
+        const original = retailMember(edition, member), shp = new ShpFile(original.file);
+        return { member, sha256: original.sha256, totalFrames: shp.numImages, canvas: [shp.width, shp.height] };
+    })) };
 for (const member of ['cgpars11.shp', 'cgwash01.shp', 'cgwash14.shp', 'cgwash15.shp']) {
     test(`${member} keeps both original edition hashes and rejects wrong geometry`, () => {
         const originals = guide.sources.filter((source: any) => source.member === member);

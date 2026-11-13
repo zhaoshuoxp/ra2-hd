@@ -10,6 +10,9 @@ export class ActionQueue {
     getLast(): Action | undefined {
         return this.actions[this.actions.length - 1];
     }
+    getAll(): Action[] {
+        return [...this.actions];
+    }
     dequeueAll(): Action[] {
         const actions = [...this.actions];
         this.actions.length = 0;

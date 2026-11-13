@@ -1,0 +1,55 @@
+{
+  "schema": "hd-movie-source-damage-handling-v1",
+  "date": "2026-11-10",
+  "identity": "ra2:s10_f00e",
+  "userSteeringEnglish": "Missing 4 KB likely only drops one or two frames and should not prevent conversion.",
+  "action": "Continue production with the verified source clock and localized matched-author picture recovery; retain original audio/captions and audit the complete film.",
+  "holdSeconds": 0.06666666666666667,
+  "originalFrames": 973,
+  "validDecodedFrames": 972,
+  "sourceBytesMissing": 4096,
+  "originalRetained": true,
+  "noAlternateOriginalAvailable": true,
+  "status": "SOURCE_CLOCK_AND_BOUNDED_LOCALIZED_RECOVERY_VERIFIED_FULL_FILM_PRODUCTION_PENDING",
+  "sourceClockHold": {
+    "receipt": ".artifacts/hd-movies/source-motion/proxies/ra2-s10_f00e-hold/source-hold.json",
+    "decodedFrames": 973,
+    "all972ValidFramesUnchanged": true,
+    "heldPts": 272,
+    "seconds": 0.06666666666666667
+  },
+  "decodedTailFinding": "One rejected compressed frame also propagates colored-block damage into later predicted pictures; rejected-frame count alone understates visible damage.",
+  "localizedRecovery": {
+    "receipt": ".artifacts/hd-movies/source-motion/proxies/ra2-s10_f00e-localized-r2/source-recovery.json",
+    "sourceFrameRange": [
+      272,
+      312
+    ],
+    "sourceSeconds": [
+      18.133333333333333,
+      20.8
+    ],
+    "donor": "User-supplied author remaster",
+    "donorSha256": "f75bd4c1bf163bf297fc8068f5f02b80d20d15d2ca2fe376f72fda7c75bc869a",
+    "sourcePoseMapping": "donor_frame = 4 * original_frame in the verified local window",
+    "meanCleanImageCorrelation": 0.9984973669052124,
+    "minimumCleanImageCorrelation": 0.9941193461418152,
+    "audio": "Original retail BIK only",
+    "clock": "973 frames at15fps;64.866667seconds",
+    "pixelScope": "Only the recorded picture/hand/coat region in40frames; every other pixel matches the verified clock base"
+  },
+  "boundedRestoration": {
+    "receipt": ".artifacts/hd-movies/production/probes/s10-localized-context-r3/receipt.json",
+    "frames": 60,
+    "startFrame": 250,
+    "decode": "PASS_ALL_VIDEO_AND_AUDIO",
+    "presentationClock": "PASS_EVERY_PRESENTATION_TIMESTAMP",
+    "nativeReport": ".artifacts/hd-movies/source-motion/native-s10-recovery-r1/report.json",
+    "candidateDistinctPresentedFrames": 60,
+    "candidateDroppedFrames": 0,
+    "captionCues": 3,
+    "released": true,
+    "worldTickHashUnchanged": true
+  },
+  "visualQualification": "Independent recovered-source checkpoints and three full2X restored stills show no broad colored blocks. Narrow chromatic edge fringes and inherited motion row texture remain; these bounded checks do not establish complete-film visual acceptance."
+}

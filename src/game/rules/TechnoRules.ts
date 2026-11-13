@@ -15,6 +15,7 @@ import { VhpScan } from "@/game/type/VhpScan";
 import { Vector3 } from "@/game/math/Vector3";
 interface House {
     name: string;
+    matchesCountry?(name: string): boolean;
 }
 export enum BuildCat {
     Combat = 0,
@@ -110,6 +111,7 @@ export class TechnoRules extends ObjectRules {
     declare produceCashAmount: number;
     declare produceCashDelay: number;
     declare explosion: string[];
+    declare destroyAnim: string[];
     declare explodes: boolean;
     declare ifvMode: number;
     declare turretIndexesByIfvMode: Map<number, number>;
@@ -420,6 +422,7 @@ export class TechnoRules extends ObjectRules {
         this.produceCashAmount = this.ini.getNumber("ProduceCashAmount");
         this.produceCashDelay = this.ini.getNumber("ProduceCashDelay");
         this.explosion = this.ini.getArray("Explosion");
+        this.destroyAnim = this.ini.getArray("DestroyAnim");
         this.explodes = this.ini.getBool("Explodes");
         this.ifvMode = this.ini.getNumber("IFVMode");
         this.turretIndexesByIfvMode = this.parseTurretIndexes();
@@ -706,12 +709,12 @@ export class TechnoRules extends ObjectRules {
         return burstDelays;
     }
     public hasOwner(house: House): boolean {
-        return this.owner.length > 0 && this.owner.indexOf(house.name) !== -1;
+        return this.owner.some(name => house.matchesCountry?.(name) ?? house.name === name);
     }
     public isAvailableTo(house: House): boolean {
         const hasRequiredHouse = this.requiredHouses.length === 0 ||
-            this.requiredHouses.indexOf(house.name) !== -1;
-        const isForbidden = this.forbiddenHouses.indexOf(house.name) !== -1;
+            this.requiredHouses.some(name => house.matchesCountry?.(name) ?? house.name === name);
+        const isForbidden = this.forbiddenHouses.some(name => house.matchesCountry?.(name) ?? house.name === name);
         return hasRequiredHouse && !isForbidden;
     }
     public getWeaponAtIndex(index: number): string | undefined {

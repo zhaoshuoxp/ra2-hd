@@ -1,10 +1,12 @@
 import { NotifyDestroy } from './interface/NotifyDestroy';
+import { NotifySell } from './interface/NotifySell';
 import { RadialTileFinder } from '@/game/map/tileFinder/RadialTileFinder';
 import { NotifyDamage } from './interface/NotifyDamage';
 import { fnv32a } from '@/util/math';
 import { BuildingEvacuateEvent } from '@/game/event/BuildingEvacuateEvent';
 import { ScatterTask } from '@/game/gameobject/task/ScatterTask';
 export class GarrisonTrait {
+    readonly debugStateKey = 'GarrisonTrait';
     private building: Building;
     private evacThreshold: number;
     private maxOccupants: number;
@@ -40,6 +42,14 @@ export class GarrisonTrait {
     getHash(): number {
         return fnv32a(this.units.map(unit => unit.getHash()));
     }
+    [NotifySell.onSell](_building: Building, context: GameContext): void {
+        const launch = (context as any).gameOpts?.campaign;
+        if (launch?.edition === 'yr' && launch.semanticsVersion >= 48) {
+            // Source fire sales include occupied civilian buildings. Release
+            // residents before disposal; the seller retains ownership/refund.
+            this.evacuate(context, false, false);
+        }
+    }
     debugGetState(): {
         units: any[];
     } {
@@ -48,7 +58,7 @@ export class GarrisonTrait {
     dispose(): void {
         this.building = undefined;
     }
-    evacuate(context: GameContext, forceDestroy: boolean = false): void {
+    evacuate(context: GameContext, forceDestroy: boolean = false, returnToNeutral: boolean = true): void {
         const building = this.building;
         const units = this.units;
         if (units.length) {
@@ -79,7 +89,7 @@ export class GarrisonTrait {
             const oldOwner = building.owner;
             // Buildable garrison defenses retain their owner when emptied.
             // Civilian/map-only structures return to neutral as before.
-            if (!units.length && !building.isDestroyed && building.rules.techLevel < 0) {
+            if (returnToNeutral && !units.length && !building.isDestroyed && building.rules.techLevel < 0) {
                 context.changeObjectOwner(building, context.getCivilianPlayer());
             }
             context.events.dispatch(new BuildingEvacuateEvent(building, oldOwner));

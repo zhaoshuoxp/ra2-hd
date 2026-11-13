@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "method": "Built-in imagegen; reference-guided background-only generation. Original foreground resources are unchanged and composited at their original aspect ratio.",
+  "uiBudgetBytes": 16777216,
+  "maxCompositedPixels": 1700000,
+  "assets": [
+    {
+      "file": "public/res/presentation/campaign-backdrop-topography-r2a.png",
+      "master": "/Users/Aone/.codex/generated_images/01a166b0-3b7b-7212-bd96-264b476e987a/exec-d5f19201-d73d-45a8-b3ff-dd8baa913b4c.png",
+      "dimensions": [
+        1898,
+        829
+      ],
+      "sha256": "436e6b45cd468949ec00ff6541bb0d31e2e8a72a62c70ab0348796cc7343935b",
+      "prompt": "Use case: ui-mockup\nAsset type: production widescreen background texture for an existing classic strategy-game interface.\nInput image: reference for background texture and palette only; its three foreground insignias and metal frame are NOT part of the requested output.\nPrimary request: generate a much wider frameless background, approximately 2.3:1 landscape. Fill the entire image edge to edge with very dark black and restrained fine deep-crimson topographic contour lines in the style of the reference. Use crisp fine map-like relief lines with subtle natural variation and broad quiet black areas. Match the almost black center, deep red low-contrast lines and original understated texture. The result will sit behind the existing unchanged three insignias and score panel.\nConstraints: background only, no insignias, no badges, no weapons, no people, no units, no photographs, no letters, no numbers, no text, no border, no metallic frame, no inset rectangles, no interface controls. Do not add focal subjects. Continue the map texture naturally across the full wider canvas."
+    },
+    {
+      "file": "public/res/presentation/campaign-backdrop-world-r2a.png",
+      "master": "/Users/Aone/.codex/generated_images/01a166b0-3b7b-7212-bd96-264b476e987a/exec-52cf14d0-9b2b-4e07-ab5c-2fd67dc8afd7.png",
+      "dimensions": [
+        1915,
+        821
+      ],
+      "sha256": "cac525710da77cac0c9be65917bf60c195f4934c1ca22f3701d42f857f0059f8",
+      "prompt": "Use case: ui-mockup\nAsset type: wide frameless background plate for an existing classic strategy-game mission loading page.\nInput image: style and palette reference only. Keep its foreground emblems, arrows, framed map inset, photographs, title bar and progress controls OUT of this output; those are preserved as separate existing layers.\nPrimary request: Create an approximately 2.3:1 landscape background that fills the full canvas with a dark world-map backdrop continuing the reference's existing visual vocabulary: black oceans, subdued cobalt/navy land masses, small low-contrast deep crimson regions, thin deep red latitude/longitude grid, subtle dark green coastlines. Clean crisp edges with fine detail, considerably darker and quieter than foreground information. Main center remains calm and readable for the unchanged loading page content. Extend geography/background texture toward both sides without introducing new focal subjects.\nConstraints: background plate only, edge to edge. No rectangular border or frame, no inset windows, no insignias, no badges, no photos, no icons, no arrows, no people, no vehicles, no controls, no words or numbers, no watermark."
+    }
+  ]
+}

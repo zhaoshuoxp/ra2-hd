@@ -1,0 +1,81 @@
+{
+  "identity": "VLAD",
+  "states": [
+    "loaded",
+    "empty"
+  ],
+  "headings": [
+    0,
+    45,
+    90,
+    135,
+    180,
+    225,
+    270,
+    315
+  ],
+  "variants": [
+    {
+      "hash": "65f83af7bf3c52c228b46c8fb761342ff369ac05bc5eb5a24449c326bee89531",
+      "density": 2,
+      "path": "hd-packs/campaign-sov02-vlad-vxl/loaded-empty-r3-2x/manifest.json"
+    },
+    {
+      "hash": "8482a354c5c5e4c044e83114603debabf646f4aa7923b18b4ad5ad6e188660f7",
+      "density": 4,
+      "path": "hd-packs/campaign-sov02-vlad-vxl/loaded-empty-r3-4x/manifest.json"
+    }
+  ],
+  "acceptance": "REPRESENTATIVE_ACCEPTED_FULL_FAMILY_REVIEW_PENDING",
+  "reusedChild": "DMISL",
+  "source": {
+    "vlad.vxl": {
+      "sha256": "baa1a012eefda5cea15d01f46c27b00b8000a3cee72b103dcd94a8277fb21d85",
+      "archive": "ra2.mix/local.mix",
+      "bytes": 125948
+    },
+    "vlad.hva": {
+      "sha256": "8ae40169cd8f731cb040347293bcd1c49b612bfeb50c433abda119c1d88bc2f1",
+      "archive": "ra2.mix/local.mix",
+      "bytes": 88
+    },
+    "vladwo.vxl": {
+      "sha256": "1e2c20007de1444e2754a9f3aab824d737954eb87a8962ef2cc5b7a5f63668f0",
+      "archive": "ra2.mix/local.mix",
+      "bytes": 123102
+    },
+    "vladwo.hva": {
+      "sha256": "8ae40169cd8f731cb040347293bcd1c49b612bfeb50c433abda119c1d88bc2f1",
+      "archive": "ra2.mix/local.mix",
+      "bytes": 88
+    },
+    "dmisl.vxl": {
+      "sha256": "0cc017768c70fb08bbf29ee35396d770bbb270c9572f08411cb2aad6cb22569a",
+      "archive": "ra2.mix/local.mix",
+      "bytes": 7444
+    },
+    "dmisl.hva": {
+      "sha256": "78f4041017c6d4686ec09397a8be45db92f5d5dc007828072611219fe4963332",
+      "archive": "ra2.mix/local.mix",
+      "bytes": 88
+    },
+    "unittem.pal": {
+      "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+      "archive": "ra2.mix/cache.mix",
+      "bytes": 768
+    },
+    "voxels.vpl": {
+      "sha256": "2d75fff8a6872ffe98308c7009858a9e904696e1529bc649181a44993979081c",
+      "archive": "ra2.mix/local.mix",
+      "bytes": 8976
+    }
+  },
+  "budgetPolicy": "Existing complete-family fallback and memory budgets; no budget increase",
+  "densityRepair": [
+    {
+      "density": 2,
+      "member": "dmisl.vxl",
+      "invisibleSamples": 77
+    }
+  ]
+}

@@ -10,12 +10,20 @@ import { registration, supported, heading } from './contract';
 import { nativePose } from './pose';
 import { nativeCoverage } from './coverage';
 import { RhinoShadow } from './RhinoShadow';
+import { registerShadowOnlyMaterial, unregisterShadowOnlyMaterial } from '../../gfx/ShadowOnlyMaterials';
+import { registerVehicleShadowCaster, unregisterVehicleShadowCaster } from '../../gfx/batch/VehicleShadowBatcher';
+import { authoredLightReference } from '../unitVxl/authoredLightReference';
+import { constructionSlopePositions } from '../unitVxl/componentGeometry';
+import { groundVolumeCorrection } from '../unitVxl/groundVolume';
 
 export class PartLayer {
     readonly source: BatchedMesh;
     readonly batch: MergedSpriteMesh;
     readonly proxy: THREE.Mesh;
     readonly translucent: THREE.Mesh;
+    private readonly levelPositions: Float32Array;
+    private readonly slopePositions = new Map<number, Float32Array>();
+    private attitudeKey = -1;
     constructor(readonly key: string, readonly resource: RhinoArtwork, camera: THREE.Camera, parent: THREE.Object3D) {
         const geometry = createSpriteGeometry({ camera, texture: resource.texture,
             logicalSize: { width: registration.width, height: registration.height },
@@ -31,6 +39,7 @@ export class PartLayer {
             if (key.startsWith('turret')) point.addScaledVector(towardCamera, 0.5);
             pos.setXYZ(i, point.x, point.y, point.z);
         }
+        this.levelPositions = Float32Array.from(pos.array);
         this.source = new BatchedMesh(geometry, resource.material()); this.source.matrixWorld.identity();
         this.batch = new MergedSpriteMesh(geometry, this.source.material as THREE.Material, 1);
         this.batch.name = `rhino-hd-${key}`; this.batch.matrixAutoUpdate = false; this.batch.visible = false;
@@ -47,6 +56,19 @@ export class PartLayer {
         this.translucent.matrixAutoUpdate = false;
         this.translucent.frustumCulled = false; this.translucent.visible = false;
         parent.add(this.proxy, this.batch, this.translucent); resource.retain();
+    }
+    setGroundAttitude(tilted: boolean, bodyHeading: number, camera: THREE.Camera): void {
+        const key = tilted ? bodyHeading : -1;
+        if (key === this.attitudeKey) return;
+        this.attitudeKey = key;
+        const position = this.source.geometry.getAttribute('position') as THREE.BufferAttribute;
+        if (tilted && !this.slopePositions.has(key)) {
+            const original = new THREE.BufferAttribute(this.levelPositions, 3);
+            this.slopePositions.set(key, constructionSlopePositions(original,
+                new THREE.Matrix4().makeRotationY(THREE.MathUtils.degToRad(bodyHeading)).toArray(), camera));
+        }
+        (position.array as Float32Array).set(tilted ? this.slopePositions.get(key)! : this.levelPositions);
+        position.needsUpdate = true;
     }
     update(visible: boolean, light: THREE.Vector3, order: number, clipping: any,
         pose: THREE.Matrix4, opacity: number): void {
@@ -87,7 +109,7 @@ export class RhinoRenderer {
     private colorKey = '';
     active = false;
     disposed = false;
-    constructor(readonly renderable: any, readonly resources: LoadedRhinoHd, camera: THREE.Camera) {
+    constructor(readonly renderable: any, readonly resources: LoadedRhinoHd, private readonly camera: THREE.Camera) {
         const r = renderable;
         if (r.objectArt.imageName.toUpperCase() !== 'HTNK' || !r.objectArt.isVoxel
             || r.objectArt.turretOffset || r.objectRules.turretCount !== 1 || r.objectArt.noHva)
@@ -98,8 +120,12 @@ export class RhinoRenderer {
         this.originals = this.originalMeshes.map(m => m.material);
         this.hidden = this.originals.map(m => { const c = m.clone(); c.colorWrite = c.depthWrite = false; return c; });
         this.shadow = new RhinoShadow(this.originalMeshes);
-        this.baseLight = r.baseShpExtraLight.clone();
+        this.baseLight = authoredLightReference(r);
         this.layers = new Map([...resources.parts].map(([key, resource]) => [key, new PartLayer(key, resource, camera, r.posObj)]));
+        // Native sections stay shadow casters without empty colour-pass draws.
+        // Register only after construction succeeded so a fallback leaves no entry.
+        this.hidden.forEach(material => registerShadowOnlyMaterial(material));
+        this.originalMeshes.forEach(registerVehicleShadowCaster);
     }
     update(): void {
         if (this.disposed) return;
@@ -133,10 +159,20 @@ export class RhinoRenderer {
         const bodyFacing = r.dirWrapObj ? THREE.MathUtils.radToDeg(r.dirWrapObj.rotation.y + r.tiltObj.rotation.y) : u.direction;
         const turretFacing = r.dirWrapObj ? Math.floor(u.turretTrait?.facing) : u.turretTrait?.facing;
         const body = `body-${heading(bodyFacing)}`, turret = `turret-${heading(turretFacing)}`;
+        const tilted = Math.abs(r.tiltObj.rotation.x) > .0001 || Math.abs(r.tiltObj.rotation.z) > .0001;
+        const hullLayer = this.layers.get(body);
+        if (tilted && hullLayer) {
+            hullLayer.setGroundAttitude(true, heading(bodyFacing)!, this.camera);
+            const correction = groundVolumeCorrection(new THREE.Matrix4(),
+                hullLayer.source.geometry, this.pose, this.camera);
+            this.pose.premultiply(correction);
+        }
         const clipping = this.originalMeshes[0].getClippingPlanes?.() ?? this.originals[0].clippingPlanes;
         for (const [key, layer] of this.layers) {
             const isTurret = key.startsWith('turret');
             const selected = key === (isTurret ? turret : body);
+            if (selected) layer.setGroundAttitude(Math.abs(r.tiltObj.rotation.x) > .0001
+                || Math.abs(r.tiltObj.rotation.z) > .0001, heading(bodyFacing)!, this.camera);
             layer.update(this.active && r.mainObj.visible && selected, this.light,
                 this.originalMeshes[0].renderOrder, clipping, this.pose, opacity);
         }
@@ -144,8 +180,10 @@ export class RhinoRenderer {
     dispose(): void {
         if (this.disposed) return;
         this.originalMeshes.forEach((mesh, i) => mesh.material = this.originals[i]);
+        this.originalMeshes.forEach(unregisterVehicleShadowCaster);
         this.shadow.dispose();
         this.active = false; this.disposed = true;
-        this.layers.forEach(p => p.dispose()); this.hidden.forEach(m => m.dispose());
+        this.layers.forEach(p => p.dispose());
+        this.hidden.forEach(m => { unregisterShadowOnlyMaterial(m); m.dispose(); });
     }
 }

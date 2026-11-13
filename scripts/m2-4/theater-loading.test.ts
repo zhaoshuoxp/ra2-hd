@@ -1,6 +1,6 @@
+import { environmentEntries } from '../test-support/environment';
 import { afterEach, expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
-import { execFileSync } from 'node:child_process';
 import { Engine } from '../../src/engine/Engine';
 import { TmpFile } from '../../src/data/TmpFile';
 import { editionRetailTree } from '../../src/offline/editionRetail';
@@ -99,31 +99,8 @@ for (const group of productionGroups) for (const density of [2, 4] as const) {
     });
 }
 
-function environmentEntry(): PowerPlantHdEntry {
-    const prepared = JSON.parse(readFileSync('.artifacts/m2-4/snow-native-representatives-v1/source.json', 'utf8'));
-    const native = prepared.sources.find((source: any) => source.member === 'caeur1.shp');
-    const folder = '.local/environment-packs/snow-environment-m2-4-representatives-v1/members/caeur1-shp';
-    const bytes = readFileSync(`${folder}/manifest.json`), manifest = JSON.parse(bytes.toString());
-    return { image: { filename: native.member }, manifest,
-        manifestHash: new Bun.CryptoHasher('sha256').update(bytes).digest('hex'),
-        source: { member: native.member, sha256: native.sha256, theater: 'SNOW', canvas: native.canvas,
-            frames: native.frames.slice(0, native.frames.length / 2).map((frame: any) => ({ nativeFrame: frame.slot,
-                trimOrigin: frame.origin, trimSize: frame.size,
-                legacyRenderSize: frame.size.map((size: number) => size + size % 2), empty: frame.empty })) },
-        read: async filename => {
-            const page = manifest.variants.flatMap((variant: any) => variant.pages.map((page: any) =>
-                ({ ...page, density: variant.density }))).find((page: any) => [page.base, page.data].includes(filename));
-            const role = page.base === filename ? 'base' : 'data';
-            const decoded = execFileSync('python3', ['-c',
-                'import sys,struct;from PIL import Image;im=Image.open(sys.argv[1]).convert("RGBA");sys.stdout.buffer.write(struct.pack("<II",*im.size)+im.tobytes())',
-                `${folder}/${page.density}/${page.id}/${role}.png`], { maxBuffer: 32 * 1024 * 1024 });
-            return { width: decoded.readUInt32LE(0), height: decoded.readUInt32LE(4),
-                rgba: new Uint8Array(decoded.subarray(8)) };
-        } };
-}
-
 test('complete SNOW house states load from actual exports; corrupt, missing or over-budget closure stays Original', async () => {
-    const entry = environmentEntry();
+    const entry = environmentEntries('SNOW', 'snow-caeur1')[0];
     expect(isEnvironmentHdSource(entry.source)).toBe(true);
     expect(isEnvironmentHdSource({ ...entry.source, theater: 'TEMPERATE' })).toBe(false);
     for (const density of [2, 4] as const) {

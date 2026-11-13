@@ -1,0 +1,52 @@
+{
+  "mission": "all04u.map",
+  "sourceSha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093",
+  "semanticsVersion": 18,
+  "enemyHouse": "Russian1 House",
+  "controlledHouses": 3,
+  "triggers": 85,
+  "aiTriggers": 18,
+  "ignoreGlobal": true,
+  "teamDelays": [
+    3000,
+    2000,
+    1000
+  ],
+  "cases": {
+    "easy": {
+      "credits": 15000,
+      "human": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "enemy": [
+        0.8,
+        1.2,
+        1
+      ],
+      "aiDelay": 1000,
+      "openingActors": {
+        "JUMPJET": 6
+      }
+    },
+    "hard": {
+      "credits": 5000,
+      "human": [
+        0.8,
+        1.2,
+        1
+      ],
+      "enemy": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "aiDelay": 3000,
+      "openingActors": {
+        "JUMPJET": 0
+      }
+    }
+  },
+  "authority": "Original all04u.map Player credits100 and General+5000/-5000; all three source PlayerControl houses retain their own money and handicap. Original Hard/Normal/Easy TeamDelays3000/2000/1000. Easy/Normal triggers create six/four Rocketeers. The nominal HARD trigger087DBCCC has all three difficulty flags0 and therefore creates none. Its two-actor task force is retained without enabling this source record."
+}

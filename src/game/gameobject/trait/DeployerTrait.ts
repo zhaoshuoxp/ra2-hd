@@ -53,6 +53,7 @@ interface GameContext {
     createTarget(bridge: any, tile: any): any;
 }
 export class DeployerTrait implements NotifyTick {
+    readonly debugStateKey = 'DeployerTrait';
     private gameObject: GameObject;
     private deployed: boolean = false;
     private deployFireDelay: number = 0;

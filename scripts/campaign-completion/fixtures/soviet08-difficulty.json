@@ -1,0 +1,16 @@
+{
+  "mission": "sov08u.map",
+  "sourceSha256": "91817fa1585e631cd929b6356ccc29c99f1dfb8144c52cd225e3eeb924370b7e",
+  "semanticsVersion": 10,
+  "enemyHouse": "Vlad1 House",
+  "controlledHouses": 1,
+  "triggers": 35,
+  "aiTriggers": 25,
+  "ignoreGlobal": true,
+  "teamDelays": [2000, 1750, 1500],
+  "cases": {
+    "easy": { "credits": 15000, "human": [1.2, 0.8, 0.8], "enemy": [0.8, 1.2, 1], "aiDelay": 1500 },
+    "hard": { "credits": 5000, "human": [0.8, 1.2, 1], "enemy": [1.2, 0.8, 0.8], "aiDelay": 2000 }
+  },
+  "authority": "Archived original rules.ini difficulty sections; original sov08u.map Player House Credits=100 and General CampaignMoneyDeltaEasy=5000/Hard=-5000, TeamDelays=2000,1750,1500. No map difficulty-section override. Starting money is observed before ordinary harvesting income."
+}

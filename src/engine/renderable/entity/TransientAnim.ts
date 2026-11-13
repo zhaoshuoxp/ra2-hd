@@ -1,7 +1,7 @@
 import { Anim } from './Anim';
 export class TransientAnim extends Anim {
     private container: any;
-    attachment?: { position: any; active: boolean };
+    attachment?: { position: any; active: boolean; frame?: number; translucency?: number };
     constructor(e: any, t: any, i: any, r: any, s: any, a: any, n: any, o: any, l: any, c: any, h: any) {
         super(e, t, i, r, s, a, n, o, l, undefined, h);
         this.container = c;
@@ -23,6 +23,7 @@ export class TransientAnim extends Anim {
             }
         }
         super.update(e);
+        if (this.attachment?.frame !== undefined) this.setSimulationFrame(this.attachment.frame, this.attachment.translucency);
         if (this.isAnimFinished()) {
             this.remove();
             this.dispose();

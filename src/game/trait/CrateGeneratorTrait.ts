@@ -96,8 +96,12 @@ export class CrateGeneratorTrait implements NotifyTick {
         for (const crate of this.crates) {
             crate.ticksLeft--;
             if (crate.ticksLeft <= 0) {
-                gameState.unspawnObject(crate.obj);
-                crate.obj.dispose();
+                // Combat may already have destroyed this crate. Keep its
+                // original expiry, without removing or disposing it twice.
+                if (crate.obj.isSpawned) {
+                    gameState.unspawnObject(crate.obj);
+                    crate.obj.dispose();
+                }
             }
         }
         this.crates = this.crates.filter(crate => crate.ticksLeft > 0);

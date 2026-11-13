@@ -28,12 +28,14 @@ import { DelayedKillTrait } from "@/game/gameobject/trait/DelayedKillTrait";
 import { BuildStatusChangeEvent } from "@/game/event/BuildStatusChangeEvent";
 import { NotifyBuildStatus } from "@/game/gameobject/trait/interface/NotifyBuildStatus";
 import { GateTrait } from "@/game/gameobject/trait/GateTrait";
+import { neutralStructureRules } from './neutralStructureTargeting';
 export enum BuildStatus {
     BuildUp = 0,
     Ready = 1,
     BuildDown = 2
 }
 export class Building extends Techno {
+    public neutralTargetOrigin = false;
     public showWeaponRange: boolean = false;
     public direction: number = 0;
     private _buildStatus: BuildStatus;
@@ -60,6 +62,7 @@ export class Building extends Techno {
     public psychicDetectorTrait?: PsychicDetectorTrait;
     static factory(owner: any, rules: TechnoRules, gameRules: any, art: any, world: any, coords: any): Building {
         const building = new this(owner, rules, art);
+        building.neutralTargetOrigin = neutralStructureRules(rules);
         if (rules.canBeOccupied) {
             building.garrisonTrait = new GarrisonTrait(building, gameRules.audioVisual.conditionRed, rules.maxNumberOccupants);
             building.traits.add(building.garrisonTrait);

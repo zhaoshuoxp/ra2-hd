@@ -16,6 +16,7 @@ parser.add_argument('output', type=Path)
 parser.add_argument('--prepared', type=Path, required=True)
 parser.add_argument('--members', nargs='+', required=True)
 parser.add_argument('--density', type=int, choices=[2, 4], default=2)
+parser.add_argument('--edition', choices=['ra2', 'yr'])
 args = parser.parse_args()
 sha = lambda path: hashlib.sha256(path.read_bytes()).hexdigest()
 manifest_path = args.pack / 'manifest.json'
@@ -43,7 +44,8 @@ for group in manifest['groups']:
     for member in selected:
         name = member['member']
         source = sources[name]
-        assert member['sourceHashes'] == {'ra2': source['sha256'], 'yr': source['sha256']}
+        assert member['sourceHashes'] == {edition: source['sha256'] for edition in
+            ([args.edition] if args.edition else ['ra2', 'yr'])}
         native_images = source['images']
         assert len(native_images) == len(member['images']) == len(entries[name])
         positions = [(row['origin'][0] + row['offset'][0],

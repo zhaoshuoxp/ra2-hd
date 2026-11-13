@@ -57,6 +57,12 @@ export class WingedLocomotor {
     private cancelDestLeptons?: Vector2;
     private thrustFacing?: number;
     static tickStationary(s: Unit, a: Game): void {
+        const parent = s.spawnLinkTrait?.getParent();
+        if (s.zone === ZoneType.Ground && parent && s.tile === parent.tile && !s.unitOrderTrait.getCurrentTask()) {
+            // A cancelled launch can leave an aircraft on deck before its first airborne tick.
+            parent.airSpawnTrait.storeAircraft(s, a);
+            return;
+        }
         if (s.zone === ZoneType.Air) {
             const n = s.tile.onBridgeLandType
                 ? a.map.tileOccupation.getBridgeOnTile(s.tile)

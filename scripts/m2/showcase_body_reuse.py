@@ -1,4 +1,5 @@
 """Read accepted body states whose original geometry, color and owner data match exactly."""
+import hashlib
 import json
 from pathlib import Path
 import numpy as np
@@ -22,7 +23,27 @@ def accepted_body_frames(profile, native):
         assert manifest['source']['member'] == row['donorMember']
         assert manifest['source']['sha256'] == row['donorSourceSha256']
         assert manifest['logical']['canvas'] == native[name]['canvas']
-        assert manifest['color'].get('structuralCoverage') == profile.get('nativeStructuralCoverage')
+        coverage_admission = declaration.get('preserveAcceptedCoverage')
+        if coverage_admission:
+            animation = declaration.get('completeOriginalAnimation') is True
+            count = native[name]['bodyFrames']
+            expected_slots = list(range(count)) if animation else [0, 1, 2]
+            assert declaration['slots'] == expected_slots
+            assert count == len(manifest['logical']['frames'])
+            assert animation or count == 4
+            color_hash = hashlib.sha256(json.dumps(manifest['color'], sort_keys=True,
+                separators=(',', ':')).encode()).hexdigest()
+            schema = 'preserve-pinned-accepted-animation-coverage-v1' if animation else 'preserve-pinned-accepted-body-coverage-v1'
+            assert coverage_admission == dict(schema=schema, slots=expected_slots,
+                donorManifestSha256=declaration['manifestSha256'], donorColorSha256=color_hash)
+            for number in declaration['slots']:
+                slot = row['slots'][number]
+                assert slot['nativeIndexSha256'] == native[name]['frames'][number]['indexSha256']
+                assert slot['paletteSha256'] == native[name]['palette']['sha256']
+                assert all(slot[key] == 0 for key in ['differingRenderedPixels', 'differingOwnerPixels',
+                    'differingAlphaPixels', 'differingContactPixels', 'differingNativeIndices'])
+        else:
+            assert manifest['color'].get('structuralCoverage') == profile.get('nativeStructuralCoverage')
         unused_rubble = declaration.get('sourceIdenticalUnusedRubble') is True
         complete_animation = declaration.get('completeOriginalAnimation') is True
         normal_damaged = declaration.get('sourceIdenticalNormalDamagedOnly') is True

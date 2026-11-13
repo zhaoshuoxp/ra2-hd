@@ -25,6 +25,13 @@ export interface AiPlayerInfo {
     teamId: number;
 }
 export interface GameOpts {
+    bridgeRallyVersion?: 1;
+    civilianTargetingVersion?: 1 | 2;
+    demolitionSafetyVersion?: 1;
+    neutralStructureTargetingVersion?: 1;
+    retaliationVersion?: 1;
+    parasiteCadenceVersion?: 1;
+    campaign?: import('../campaign/CampaignRuntime').CampaignLaunch;
     gameMode: number;
     gameSpeed: number;
     credits: number;

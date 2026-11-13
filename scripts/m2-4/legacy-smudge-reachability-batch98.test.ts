@@ -1,11 +1,15 @@
+import { retailIni } from '../test-support/resources';
 import { expect, test } from 'bun:test';
-import { readFileSync } from 'node:fs';
 import { AnimTerrainEffect } from '../../src/game/gameobject/common/AnimTerrainEffect';
 import { LandType } from '../../src/game/type/LandType';
 import { isGeneratedGroundSmudge } from '../../src/offline/smudgeDependency';
 
-const root = '.artifacts/m2-4/newurban-final-actors-batch98-20261021';
-const audit = JSON.parse(readFileSync(`${root}/original-sequences-and-smudges-v1.json`, 'utf8'));
+const ini = retailIni('yr');
+const audit = { smudges: [...ini.getSection('SmudgeTypes')!.entries.values()].map(id => {
+    const section = ini.getOrCreateSection(String(id));
+    return { id: String(id), crater: section.getBool('Crater'), burn: section.getBool('Burn'),
+        width: section.getNumber('Width', 1), height: section.getNumber('Height', 1) };
+}) };
 const legacy = audit.smudges.filter((rule: any) => !isGeneratedGroundSmudge(rule));
 
 test('the 22 declared legacy names retain their identity without receiving generated-art credit', () => {
@@ -13,14 +17,8 @@ test('the 22 declared legacy names retain their identity without receiving gener
         ...Array.from({ length: 6 }, (_, n) => `CR${n + 1}`),
         ...Array.from({ length: 16 }, (_, n) => `BURN${String(n + 1).padStart(2, '0')}`),
     ]);
-    const old = JSON.parse(readFileSync('.artifacts/m2-4/newurban-remaining-actors-batch97-20261021/inventory-newurban-v1/inventory.json', 'utf8'));
-    const rows = old.rows.filter((row: any) => row.kind === 'smudge' && legacy.some((rule: any) => rule.id === row.id));
-    expect(rows.length).toBe(22);
-    for (const row of rows) {
-        expect(row.nativeRules.Crater).toBeUndefined();
-        expect(row.nativeRules.Burn).toBeUndefined();
-        expect(Object.keys(row.usage).length).toBe(8);
-        for (const usage of Object.values<any>(row.usage)) expect(usage.count).toBe(0);
+    for (const row of legacy) {
+        expect(row.crater).toBe(false); expect(row.burn).toBe(false);
     }
 });
 

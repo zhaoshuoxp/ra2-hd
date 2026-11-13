@@ -1,0 +1,137 @@
+{
+  "schema": "yuri-menu-logo-authoring-v1",
+  "method": "Built-in imagegen; no CLI or user API key",
+  "designAuthority": {
+    "file": "/Users/Aone/.codex/attachments/8aa1513c-ecfe-4dcf-931b-93ad43602c9e/68ea2e66cc03495199e70b354fa66761.jpg.png",
+    "sha256": "7f0f33aa93e3711c3cb530809c55ea53720a4572fe3851dafce5858efdac0536"
+  },
+  "finishAuthority": "docs/hd-art-standard.md",
+  "prompts": [
+    {
+      "file": "art/yuri-menu-logo-20261112/logo-prompt.txt",
+      "sha256": "4cd4f02af2825f52b114734f5b48d68276595d30afd7ebc70f6569078822e045"
+    },
+    {
+      "file": "art/yuri-menu-logo-20261112/radar-clean-plate-prompt.txt",
+      "sha256": "d495d86eaae84a39a16b9a598d0f5a557cd262d2a333f47aa73a2d8cc2e9b944"
+    }
+  ],
+  "assets": [
+    {
+      "file": "art/yuri-menu-logo-20261112/yuri-logo-master-r1.png",
+      "sha256": "0134fcdd8834b37368aeced74e96c8b3e29d889ec3f550bc02a303eb5d88a463",
+      "bytes": 1530794,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        39,
+        17,
+        2160,
+        724
+      ]
+    },
+    {
+      "file": "art/yuri-menu-logo-20261112/radar-clean-master-r1.png",
+      "sha256": "6ba71756373d8cbca85b9fa225c7752a1436bc014b5a6ef92a9ebed9cfdb4b34",
+      "bytes": 1961111,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "file": "public/res/presentation/menu-yuri-logo-r1-2x.png",
+      "sha256": "5b64d489bfbd513e13c73c9bdf5959f0acc6dbbf9f4817063b7110060ca195a7",
+      "bytes": 379086,
+      "width": 960,
+      "height": 320,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        18,
+        9,
+        954,
+        320
+      ]
+    },
+    {
+      "file": "public/res/presentation/menu-yuri-logo-r1-4x.png",
+      "sha256": "c13a3e6b9d5185a5a1ee09e1c7cbe91971486d3d6abfd0de5f6a1ec5238523bf",
+      "bytes": 1343247,
+      "width": 1920,
+      "height": 640,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        35,
+        15,
+        1909,
+        640
+      ]
+    },
+    {
+      "file": "public/res/presentation/menu-yuri-radar-clean-r1.png",
+      "sha256": "6ba71756373d8cbca85b9fa225c7752a1436bc014b5a6ef92a9ebed9cfdb4b34",
+      "bytes": 1961111,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    }
+  ],
+  "export": {
+    "method": "Independent sips resampling from the same 2172x724 RGBA authored master",
+    "logicalSize": [
+      480,
+      160
+    ],
+    "densities": [
+      2,
+      4
+    ],
+    "nativeExports": [
+      [
+        960,
+        320
+      ],
+      [
+        1920,
+        640
+      ]
+    ],
+    "masterUpscaled": false
+  },
+  "composition": {
+    "radarViewBox": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "logoRect": [
+      396,
+      265,
+      880,
+      293.333333
+    ],
+    "background": "New logo-free radar plate used only for Yuri",
+    "retailLogoSuppression": "Yuri-only source-space title/wing exclusion with a 12-source-pixel outside fade; no RA2 change",
+    "videoFailure": "Hide failed Yuri footage and retain clean radar sweep plus badge"
+  },
+  "text": [
+    "COMMAND",
+    "&",
+    "CONQUER",
+    "YURI'S REVENGE"
+  ],
+  "userVisualAcceptance": "PENDING"
+}

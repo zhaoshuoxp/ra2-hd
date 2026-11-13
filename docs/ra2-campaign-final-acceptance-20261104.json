@@ -1,0 +1,106 @@
+{
+  "status": "RA2_CAMPAIGN_03_USER_ACCEPTED_ON_CANONICAL_MAIN",
+  "date": "2026-11-04",
+  "releaseVersion": "0.3",
+  "userAcceptance": "User accepted the repair, declared the RA2 campaign complete, requested main-only future development, scoped cleanup and a main-conversation handoff.",
+  "repository": "/Users/Aone/RA2remaster/ra2-hd",
+  "branch": "main",
+  "merge": "NO_MERGE_NEEDED_ALL_IMPLEMENTATION_ALREADY_ON_CANONICAL_MAIN",
+  "acceptedRuntimeCommit": "0fc2321dd644524ebc54ee50490f476c69336b46",
+  "preAcceptanceMain": "fbf10285d94242baee46f4b12f1a7dc1874e4824",
+  "playableMaps": {
+    "soviet": 12,
+    "allied": 12,
+    "training": 2,
+    "total": 26
+  },
+  "hdStoryLoading": {
+    "complete": 24,
+    "total": 24
+  },
+  "hdTrainingLoading": {
+    "complete": 2,
+    "total": 2
+  },
+  "plannedProductionBlockers": [],
+  "yrCampaign": "UNAVAILABLE_OUTSIDE_ACCEPTED_SCOPE",
+  "technicalVerification": "PASS_POST_CLEANUP_HOST_AND_PROTECTED_RESOURCES_RETAINED_NATIVE_MAC_EVIDENCE",
+  "userVisualAndGameplayAcceptance": "ACCEPTED",
+  "finalApp": "/Users/Aone/RA2remaster/RA2-HD-Original-Campaigns-Mac-20261104-v56/Red Alert 2 HD.app",
+  "desktopV56FilesAtPreflight": "ZIP_LAUNCHER_AND_REVIEW_ALREADY_ABSENT_NO_REBUILD_REQUESTED",
+  "formalResourceFiles": 14948,
+  "resourceSelectionsChanged": false,
+  "runtimeChangedAtCloseout": false,
+  "actualUserProfilesTouched": false,
+  "hostBaseline": {
+    "pass": 1590,
+    "executions": 270,
+    "failedCases": 0,
+    "loadErrors": 0,
+    "processErrors": 0,
+    "skipped": 0,
+    "omissions": 0
+  },
+  "cleanup": {
+    "status": "PASS_AUTHORIZED_CAMPAIGN_DERIVED_OUTPUTS_REMOVED",
+    "evidence": "../project-history/ra2-campaign-accepted-20261104",
+    "obsoleteDeliveriesRemoved": 8,
+    "logicalBytesRemoved": 111388031518,
+    "measuredFreeBytesIncrease": 110592000000,
+    "protectedFilesExact": 51062,
+    "protectedBytesExact": 41355873698,
+    "finalAppDeepStrictSignature": "PASS",
+    "uniqueAuthoringFilesRetained": 131,
+    "uniqueAuthoringBytesRetained": 22027684,
+    "postCleanupFullHost": {
+      "pass": 1590,
+      "failedCases": 0,
+      "loadErrors": 0,
+      "skipped": 0,
+      "processErrors": 0,
+      "executions": 270,
+      "omissions": 0,
+      "summary": "../project-history/ra2-campaign-accepted-20261104/HostFinal/summary.json"
+    },
+    "entryTypecheck": "PASS",
+    "campaignRegistration": {
+      "status": "PASS_FORMAL_CAMPAIGN_HASHES_AND_CATALOG",
+      "missions": {
+        "soviet": 12,
+        "allied": 12,
+        "training": 2
+      },
+      "total": 26,
+      "routes": 762,
+      "selections": 27,
+      "source": "canonical .local/campaign",
+      "yrCampaign": "UNAVAILABLE"
+    }
+  },
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "physical8And16GiBTargets": "NOT_RUN_ON_THIS_MAC",
+  "publication": "LOCAL_ONLY_NO_PUSH",
+  "handoff": "ra2-campaign-final-handoff-20261104.md",
+  "acceptanceCommit": "3b2bf18a8f8cb36ca43df0c38ec1c0ea9a82474e",
+  "finalMainReceipt": "../project-history/ra2-campaign-accepted-20261104/final-main.json",
+  "hostPostCleanup": {
+    "pass": 1590,
+    "failedCases": 0,
+    "loadErrors": 0,
+    "skipped": 0,
+    "processErrors": 0,
+    "executions": 270,
+    "omissions": 0,
+    "summary": "../project-history/ra2-campaign-accepted-20261104/HostFinal/summary.json"
+  },
+  "nativeReexecutedAtCloseout": false,
+  "nativeEvidencePolicy": "Accepted V56 native evidence retained; the entire signed app is hash-identical and no runtime change is made at closeout.",
+  "retainedOriginalQualifications": [
+    "Soviet01 particle12 reachability/allocation/lifecycle remains unconfirmed.",
+    "Local installation contains CnCNet patches; pristine original AI recruitment/cadence/ties, RNG/particle/transport ordering remain qualified.",
+    "Allied03 spark phase/blend, selected optional unattached media ordinals and archive-absent CASIN01W/S/E art retain their existing boundaries.",
+    "Complete victories for every mission at all three difficulties are not claimed.",
+    "Native Tanya debris attribution is verified; pristine-executable debris trajectories are not compared.",
+    "Naval C4 repair uses source C4Delay with a real retreat; pristine-executable naval fuse and escape trajectories are not compared."
+  ]
+}

@@ -114,6 +114,9 @@ export class MainMenuController extends Controller {
             this.mainMenu.toggleVideo(show);
         }
     }
+    setCampaignLayout(active: boolean): void {
+        this.mainMenu?.setCampaignLayout(active);
+    }
     showVersion(version: string, edition?: string): void {
         console.log(`[MainMenuController] Showing version: ${version}`);
         if (this.mainMenu && this.mainMenu.showVersion) {

@@ -28,6 +28,21 @@ def extrude(rgb, valid):
     return result
 
 
+def reflect_padding(rgb, valid):
+    """Continue authored material through padding without constant color streaks."""
+    assert valid.any(), 'No covered authored pixels'
+    if valid.all():
+        return rgb.copy()
+    indices = ndimage.distance_transform_edt(~valid, return_distances=False, return_indices=True)
+    yy, xx = np.indices(valid.shape)
+    ry = np.clip(2 * indices[0] - yy, 0, valid.shape[0] - 1)
+    rx = np.clip(2 * indices[1] - xx, 0, valid.shape[1] - 1)
+    sy, sx = indices[:, ry, rx]
+    result = rgb.copy()
+    result[~valid] = rgb[sy[~valid], sx[~valid]]
+    return result
+
+
 def authored_coverage(pixels, alpha_cutoff, fringe_guard=False):
     active = pixels[..., 3] > alpha_cutoff
     valid = active & ~matte(pixels[..., :3])
@@ -68,7 +83,34 @@ def register(master, info, board_size, isolated=False):
             int(ys.max() - ys.min() + 1)]
     crop = np.asarray(master.crop((rect[0], rect[1], rect[0] + rect[2], rect[1] + rect[3])))
     valid = authored_coverage(crop, alpha_cutoff, info.get('rejectFluorescentFringe', False))
-    return rect, extrude(crop[..., :3], valid)
+    continuation = info.get('exteriorSurfaceContinuation')
+    reflected = False
+    if continuation:
+        assert continuation['schema'] == 'hd-authored-exterior-color-continuation-v1'
+        assert continuation['maximumNativeInset'] == 1
+        assert hashlib.sha256(master.tobytes()).hexdigest() == continuation['masterRgbaSha256']
+        inset = continuation['masterPixels']
+        bounds = info['nativeAlphaBounds']
+        assert type(inset) is int and 0 < inset <= 8
+        assert inset <= min(rect[2]/(bounds[2]-bounds[0]), rect[3]/(bounds[3]-bounds[1]))
+        silhouette = ndimage.binary_fill_holes(crop[..., 3] > alpha_cutoff)
+        distance = ndimage.distance_transform_edt(np.pad(silhouette, 1))[1:-1, 1:-1]
+        valid &= distance > inset
+        padding = continuation.get('padding', 'nearest')
+        assert padding in ('nearest', 'reflected-interior')
+        reflected = padding == 'reflected-interior'
+    guard = info.get('exteriorDarkMatteExtrusion')
+    if guard:
+        assert guard['schema'] == 'pinned-exterior-dark-matte-extrusion-v1'
+        assert hashlib.sha256(master.tobytes()).hexdigest() == guard['masterRgbaSha256']
+        inset, channel = guard['maximumInsetMasterPixels'], guard['maximumChannel']
+        assert 0 < inset <= 8 and 0 <= channel <= 40
+        # Keep the measured rectangle and all native output geometry intact.
+        # Interior windows/holes do not become exterior sampling boundaries.
+        silhouette = ndimage.binary_fill_holes(crop[..., 3] > alpha_cutoff)
+        distance = ndimage.distance_transform_edt(np.pad(silhouette, 1))[1:-1, 1:-1]
+        valid &= ~((distance <= inset) & (crop[..., :3].max(2) <= channel))
+    return rect, reflect_padding(crop[..., :3], valid) if reflected else extrude(crop[..., :3], valid)
 
 
 def capacity(rect, bounds):

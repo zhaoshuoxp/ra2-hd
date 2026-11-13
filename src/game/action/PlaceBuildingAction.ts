@@ -1,9 +1,9 @@
 import { Action } from './Action';
 import { DataStream } from '@/data/DataStream';
 import { BuildingPlaceEvent } from '../event/BuildingPlaceEvent';
-import { ProductionQueue, QueueStatus } from '../player/production/ProductionQueue';
+import { QueueStatus } from '../player/production/ProductionQueue';
 import { TechnoRules, FactoryType } from '../rules/TechnoRules';
-import { FactoryTrait, FactoryStatus } from '../gameobject/trait/FactoryTrait';
+import { FactoryStatus } from '../gameobject/trait/FactoryTrait';
 import { ActionType } from './ActionType';
 import { BuildingFailedPlaceEvent } from '../event/BuildingFailedPlaceEvent';
 import { NotifyPlaceBuilding } from '../trait/interface/NotifyPlaceBuilding';
@@ -44,43 +44,35 @@ export class PlaceBuildingAction extends Action {
     process(): void {
         const tile = this.game.map.tiles.getByMapCoords(this.tile.x, this.tile.y);
         if (tile) {
-            const player = this.player;
-            const building = this.tryPlaceBuilding(player, tile);
-            if (building) {
-                this.game.traits
-                    .filter(NotifyPlaceBuilding)
-                    .forEach(trait => {
-                    trait[NotifyPlaceBuilding.onPlace](building, this.game);
-                });
-                this.game.events.dispatch(new BuildingPlaceEvent(building));
-            }
-            else {
-                this.game.events.dispatch(new BuildingFailedPlaceEvent(this.buildingRules.name, player, tile));
+            if (!placeProducedBuilding(this.game, this.player, this.buildingRules, tile)) {
+                this.game.events.dispatch(new BuildingFailedPlaceEvent(this.buildingRules.name, this.player, tile));
             }
         }
         else {
             console.warn(`Tile ${this.tile.x},${this.tile.y} doesn't exist`);
         }
     }
-    private tryPlaceBuilding(player: Player, tile: Tile): GameObject | undefined {
-        const buildingRules = this.buildingRules;
-        if (player.production) {
-            const queue = player.production.getQueueForObject(buildingRules);
-            if (queue.status === QueueStatus.Ready && queue.getFirst().rules === buildingRules) {
-                const worker = this.game.getConstructionWorker(player);
-                if (player.production.isAvailableForProduction(buildingRules as any) &&
-                    worker.canPlaceAt(buildingRules.name, tile, { normalizedTile: true })) {
-                    const placed = worker.placeAt(buildingRules.name, tile, true);
-                    player.addUnitsBuilt(buildingRules as any, 1);
-                    queue.shift(buildingRules as any, 1);
-                    const factory = player.production.getPrimaryFactory(FactoryType.BuildingType);
-                    if (factory) {
-                        factory.factoryTrait.status = FactoryStatus.Delivering;
-                    }
-                    return placed[0] as any;
-                }
+}
+
+export function placeProducedBuilding(game: Game, player: Player, buildingRules: TechnoRules, tile: Tile,
+    scenarioBase = false, campaignBaseNode = false): GameObject | undefined {
+    if (player.production) {
+        const queue = player.production.getQueueForObject(buildingRules);
+        if (queue.status === QueueStatus.Ready && queue.getFirst().rules === buildingRules) {
+            const worker = game.getConstructionWorker(player);
+            if (player.production.isAvailableForProduction(buildingRules as any, campaignBaseNode) &&
+                worker.canPlaceAt(buildingRules.name, tile, { normalizedTile: true,
+                    ignoreAdjacent: scenarioBase, ignoreShroud: scenarioBase })) {
+                const placed = worker.placeAt(buildingRules.name, tile, true);
+                player.addUnitsBuilt(buildingRules as any, 1);
+                queue.shift(buildingRules as any, 1);
+                const factory = player.production.getPrimaryFactory(FactoryType.BuildingType);
+                if (factory) factory.factoryTrait.status = FactoryStatus.Delivering;
+                game.traits.filter(NotifyPlaceBuilding).forEach(trait => trait[NotifyPlaceBuilding.onPlace](placed[0], game));
+                game.events.dispatch(new BuildingPlaceEvent(placed[0]));
+                return placed[0] as any;
             }
         }
-        return undefined;
     }
+    return undefined;
 }

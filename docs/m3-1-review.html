@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: 'self'; media-src data: 'self'; style-src 'unsafe-inline'">
+<title>M3.1: HD campaign interface and original bridge repair</title>
+<style>
+body { margin: 0; background: #161717; color: #eee9de; font: 18px/1.55 system-ui, sans-serif; }
+main { max-width: 1320px; margin: auto; padding: 32px; }
+h1 { font-size: 32px; margin: 0 0 12px; }
+a, summary { color: #edbf79; }
+.status { padding: 18px 22px; background: #253229; border-left: 5px solid #88b87f; }
+figure { margin: 28px 0; }
+img, video { display: block; width: 100%; height: auto; background: #000; }
+figcaption { margin-top: 10px; }
+code { overflow-wrap: anywhere; }
+summary { cursor: pointer; }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #494840; vertical-align: top; }
+@media (max-width: 700px) { main { padding: 18px; } h1 { font-size: 28px; } }
+</style>
+<main>
+<h1>M3.1: Soviet 01, Red Dawn</h1>
+<p class="status"><strong>M3.1 is user-accepted as of 2026-10-23.</strong> Acceptance includes the playable RA2 Soviet 01 Normal Mac prototype, memorial, roads, localized rank, original animated result, HD campaign interface and original bridge initialization/engineer repair. Native image/video bytes are unchanged from the approved review. Windows remains unverified.</p>
+<p>Review runtime: <code>bc0e41de</code>. Updated 2026-10-23. All images, two silent native clips and downloadable evidence are embedded in this single offline file. It requires no running game, local server or neighboring media directory.</p>
+<h2>HD faction selection and hover animation</h2>
+<figure><img src="../.artifacts/m3-1/review-media/native-r4_02-hd-faction-menu.webp" alt="Actual native RA2 campaign selection with authored HD emblems and the original layout"><figcaption>Actual native window. Authored 2X artwork replaces the 632 × 568 panel with a 1264 × 1136 source. Allied, tutorial and Soviet anchors, difficulty controls and the original composition are retained. The displayed canvas pixels match the registered HD image.</figcaption></figure>
+<figure><video controls muted playsinline preload="metadata" src="../.artifacts/m3-1/interface-hd/native-r4/menu-animation.webm"></video><figcaption>Actual native Soviet hover animation. All seven original moving-arrow frames are represented by vector paths at their original positions and requested 15 frames/s. The recording uses timestamped, unresized window captures; capture cadence does not certify retail-engine animation timing.</figcaption></figure>
+<h2>HD Soviet 01 loading screen</h2>
+<figure><img src="../.artifacts/m3-1/review-media/native-r4_03-hd-soviet01-loading.webp" alt="Actual native HD Soviet 01 loading illustration with live localized objectives and progress"><figcaption>Actual ordinary loading at 36%: 1600 × 1040 artwork, an authored high-resolution Soviet emblem and all four repainted illustration slots, source-backed vector geography, and clean vector title/progress controls. The original localized briefing and real progress remain live. No loading delay or screenshot placeholder is used.</figcaption></figure>
+<table><thead><tr><th>Interface element</th><th>Delivered density and boundary</th></tr></thead><tbody>
+<tr><td>Faction background</td><td>Authored 2X; original layout and emblem anchors</td></tr>
+<tr><td>Hover arrows and loading controls</td><td>Vector paths; original arrow frame order and anchors</td></tr>
+<tr><td>Loading illustration</td><td>2X rasterized surface; authored emblem and four image slots; source-derived map contours retain the original geographic detail</td></tr>
+<tr><td>Result panel and badge</td><td>Accepted Original-density source frames with animated text, badge and tally; no new HD repaint is claimed</td></tr>
+</tbody></table>
+<p>The interface uses the existing shared 16 MiB UI reservation budget. Measured reservations are 15,277,056 bytes at faction selection and 6,918,144 bytes during loading. Scene-specific surfaces are released on exit. Original mode, missing resources and budget pressure retain complete source-art fallback. A 4X world setting does not imply 4X UI artwork.</p>
+<details><summary>Original faction-selection control</summary>
+<figure><img src="../.artifacts/m3-1/review-media/native-r4_01-original-faction-menu.webp" alt="Original-density faction selection in the same native runtime"><figcaption>HD disabled in the same build: all four original canvases render normally, with zero HD UI reservation.</figcaption></figure>
+</details>
+<h2>Bridge check: broken initially, repaired by an engineer</h2>
+<p><strong>The existing implementation conforms to the original source behavior.</strong> At tick 0, before any player command, the original BreakBridge trigger executes eight scripted explosions across its two bridge locations. Both associated repair huts report missing bridge pieces. The unrelated intact bridge remains intact.</p>
+<figure><img src="../.artifacts/m3-1/review-media/native-r4_bridge-detail-4x-before.webp" alt="Actual 4X native gameplay before engineer repair, with a visible gap in the bridge deck"><figcaption>Before repair, tick 9440: a visible gap separates the road decks. The target bridge is missing tile [88,84], and its hut is repairable. This is an exact crop of the native screenshot, with no repaint or resampling.</figcaption></figure>
+<figure><img src="../.artifacts/m3-1/review-media/native-r4_bridge-detail-4x-after.webp" alt="The same 4X native camera after an engineer enters the repair hut, showing the restored bridge deck"><figcaption>After engineer entry, tick 10548: the missing deck is restored. The ordinary repair event occurs at tick 10547, the engineer is consumed, and the other broken bridge remains unrepaired. The action is entry into the bridge repair hut; changing ownership is not required.</figcaption></figure>
+<p>The repair probe restores the proven tick-4062 checkpoint and replays its recorded ordinary selection and order journal. It changes neither the source map nor bridge state directly. Original and 4X both match the frozen full-input run: world hash 1110797913 before repair and 282093055 after repair. This bounded replay is separate from the earlier complete mouse/keyboard campaign run.</p>
+<details><summary>Original bridge-rendering control</summary>
+<figure><img src="../.artifacts/m3-1/review-media/native-r4_bridge-detail-1x-before.webp" alt="Original-density rendering of the same broken bridge"><figcaption>Original, before engineer entry: the same missing deck and game state.</figcaption></figure>
+<figure><img src="../.artifacts/m3-1/review-media/native-r4_bridge-detail-1x-after.webp" alt="Original-density rendering of the same restored bridge"><figcaption>Original, after engineer entry: the same restored deck, consumed engineer and repair event.</figcaption></figure>
+</details>
+<details><summary>Accepted memorial, roads, localized rank and result animation</summary>
+<p>The preceding <code>247f6df7</code> review is accepted. Its artwork, rank correction, Urban v5 road selection and original result behavior are preserved. These historical captures retain runtime <code>abf441f7</code>; they are not relabeled as new full-campaign completion.</p>
+<figure><img src="../.artifacts/m3-1/review-media/feedback-native-r4_memorial-detail-4x.webp" alt="Previously accepted 4X memorial and animated flag artwork"><figcaption>Accepted 4X memorial and flag detail. Current bridge screenshots also show the preserved Urban v5 roads.</figcaption></figure>
+<figure><img src="../.artifacts/m3-1/review-media/feedback-score-r1_02-original-campaign-medal-and-text.webp" alt="Previously accepted original animated campaign badge, corrected localized rank and result text"><figcaption>Accepted original campaign result badge and localized rank.</figcaption></figure>
+<figure><video controls muted playsinline preload="metadata" src="../.artifacts/m3-1/feedback-score-r1/result-animation.webm"></video><figcaption>Accepted native result animation: changing original badge frames, progressive text and score tally. Silent, unresized recording; the panel and badge remain Original-density source art.</figcaption></figure>
+</details>
+<details><summary>Evidence, source correspondence and validation limits</summary>
+<p>Download the <a href="m3-1-final-acceptance.json">final user acceptance receipt</a>, <a href="m3-1-interface-bridge.json">interface and bridge receipt</a>, <a href="m3-1-interface-bridge.md">implementation notes</a>, <a href="m3-1-interface-prompts.json">built-in imagegen prompts and asset paths</a>, <a href="../.artifacts/m3-1/interface-hd/native-r4/report.json">native report</a>, <a href="m3-1-handoff.md">handoff</a>, <a href="m3-1-feedback-corrections.json">accepted preceding correction receipt</a>, <a href="m3-1-soviet01-acceptance.json">frozen full-gameplay acceptance record</a>, <a href="m3-1-runtime-mapping.md">runtime correspondence</a> and <a href="m3-1-source-audit.json">original source audit</a>.</p>
+<p>Focused checks: 47 cases, 303 assertions, zero failures; entry typecheck and isolated review build pass. Native interface, original initialization and repair checks report no page errors, console errors or failed resources. The 22 previously controlled campaign files retain their hashes; exactly three optional HD interface files are added. The map and mission instructions are unchanged.</p>
+<p>The built-in imagegen tool authored the panel, emblem and four image slots; prompts, source guides, selected masters and superseded attempts are retained. These are illustrative HD restorations, not claims of original photographic pixels. Source-derived map contours preserve source detail rather than inventing new geographic resolution. Windows is NOT_RUN_ON_THIS_MAC. Easy/Hard, other missions, exact retail-engine differential timing and unverified HD-video replacements remain outside this prototype. The supported review browser currently exposes no tab; native captures, byte-identical embedding and complete clip decoding are verified separately from browser playback.</p>
+<p>No main integration, remote push, publication or Desktop package update is included. The earlier full native-input completion remains frozen at <code>d1e21e8c</code>. Full raw receipts, failed checker attempts and the complete historical gameplay evidence remain retained in the workspace and Git history.</p>
+</details>
+<p>M3.1 acceptance is closed. Retain this conversation for same-outcome corrections and the planning/review conversation for future planning. Start a new execution conversation for a separately authorized next campaign batch. Mission two does not start automatically.</p>
+</main>
+</html>

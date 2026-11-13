@@ -25,7 +25,8 @@ export function surfacePoint(shape: any, uvPoint: THREE.Vector2): THREE.Vector3 
 }
 
 function visibleFrame(renderable: any, turret: boolean): any {
-    const layer = renderable?.unitVxlHd?.active && renderable.unitVxlHd.layers.find((layer: any) => layer.turret === turret);
+    if (!renderable?.unitVxlHd?.active) return;
+    const layer = renderable.unitVxlHd.layers.find((layer: any) => layer.turret === turret);
     return layer?.frames.find((frame: any) => frame.batch.visible || frame.translucent.visible);
 }
 

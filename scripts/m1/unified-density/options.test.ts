@@ -15,7 +15,7 @@ test('old saves default to 4x while explicit 2x survives reload independently of
     expect(restored.resolution.value).toEqual({ width: 1920, height: 1080 });
     expect(new GraphicsOptions().unserialize(graphics.serialize().replace(/,2$/, ',invalid')).hdDensity.value).toBe(4);
     expect(hdTextureBudget(2)).toBe(512 * 1024 * 1024);
-    expect(hdTextureBudget(4)).toBe(1280 * 1024 * 1024);
+    expect(hdTextureBudget(4)).toBe(1536 * 1024 * 1024);
     expect(requestedHdDensity(true, 'unit-hd', 'ra2://game/', 2)).toBe(2);
     expect(requestedHdDensity(false, 'unit-hd', 'ra2://game/', 2)).toBeUndefined();
     expect(requestedHdDensity(true, 'unit-hd', 'https://example.com/', 2)).toBeUndefined();

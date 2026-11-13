@@ -23,6 +23,7 @@ export class UnitHdDemand {
   private pending = new Set<string>();
   private blocked = new Set<string>();
   private stopped = false;
+  private knownBytes = new Map<string, number>();
   private pumping?: Promise<void>;
   constructor(
     private identities: ReadonlySet<string>,
@@ -33,6 +34,7 @@ export class UnitHdDemand {
       cancelled: () => boolean,
     ) => Promise<Selection>,
     private release: (family: Family) => void,
+    private retainIdle = false,
   ) {
     this.report = { gpuBytes: 0, peakBytes: 0, budget: Math.max(0, budget), families: {} };
     identities.forEach(
@@ -110,8 +112,10 @@ export class UnitHdDemand {
       )
         continue;
       // No live renderable may reference an allocation being evicted.
+      const needed = this.knownBytes.get(identity) ?? 0;
       for (const [name, family] of this.families)
         if (!this.bindings.get(name)?.size || (this.hasDemand(identity) && !this.hasDemand(name))) {
+          if (this.retainIdle && this.report.budget - this.report.gpuBytes >= needed) continue;
           this.release(family);
           this.families.delete(name);
           this.report.gpuBytes -= this.report.families[name].gpuBytes;
@@ -142,6 +146,19 @@ export class UnitHdDemand {
         const ready = selected.members.size > 0 || !!selected.vxl;
         const capacity =
           !ready && selected.attempts.some((attempt) => attempt.reason === 'combined-budget');
+        const reducedByCapacity = selected.attempts.some(attempt =>
+          attempt.reason === 'combined-budget' && attempt.density > selected.density);
+        if ((capacity || reducedByCapacity) && this.retainIdle) {
+          let evicted = false;
+          for (const [name, family] of this.families) {
+            if (this.bindings.get(name)?.size && !(this.hasDemand(identity) && !this.hasDemand(name))) continue;
+            this.release(family); this.families.delete(name);
+            this.report.gpuBytes -= this.report.families[name].gpuBytes;
+            this.report.families[name] = { density: 1, gpuBytes: 0, status: 'EVICTED_IDLE' };
+            evicted = true;
+          }
+          if (evicted) { this.release(selected); this.pending.add(identity); continue; }
+        }
         this.report.families[identity] = {
           density: selected.density,
           gpuBytes: selected.gpuBytes,
@@ -152,6 +169,7 @@ export class UnitHdDemand {
         if (capacity) this.blocked.add(identity);
         else this.blocked.delete(identity);
         if (!ready) continue;
+        this.knownBytes.set(identity, selected.gpuBytes);
         this.families.set(identity, { members: selected.members, vxl: selected.vxl, building: selected.building });
         this.report.gpuBytes += selected.gpuBytes;
         this.report.peakBytes = Math.max(this.report.peakBytes, this.report.gpuBytes);
@@ -191,6 +209,7 @@ export class UnitHdDemand {
     this.stopped = true;
     this.pending.clear();
     this.blocked.clear();
+    this.knownBytes.clear();
     this.bindings.clear();
     this.families.forEach(this.release);
     this.families.clear();

@@ -19,6 +19,11 @@ export class BuildingTurretHd {
         this.gpuBytes = 8 * contract.canvas[0] * contract.canvas[1] * density * density * 5 + 4;
     }
     disposed = false;
+    get textures(): THREE.Texture[] {
+        return [this.palette, ...[...this.parts.values()].flatMap(part => [part.base, part.mask])];
+    }
+    // ImageBitmaps and binary masks remain available for context restoration.
+    get retainedCpuBytes() { return this.gpuBytes; }
     upload(renderer: THREE.WebGLRenderer) {
         for (const texture of [this.palette, ...[...this.parts.values()].flatMap(p => [p.base, p.mask])]) renderer.initTexture(texture);
         if (renderer.getContext().getError() !== 0) throw Error('turret-upload');
@@ -30,12 +35,18 @@ export class BuildingTurretHd {
     }
 }
 
-export async function loadBuildingTurretHd(binding: any, family: string, requestedDensity: 2 | 4 = 4): Promise<BuildingTurretHd> {
+export type BuildingTurretSource = {
+    theater: string; sources: Record<string, string>; palette: { member: string; sha256: string };
+};
+
+export async function loadBuildingTurretHd(binding: any, family: string, requestedDensity: 2 | 4 = 4,
+    source?: BuildingTurretSource, stopped = () => false): Promise<BuildingTurretHd> {
     const check = (value: unknown, message: string) => { if (!value) throw Error(message); };
     const contract = contracts[family as keyof typeof contracts];
     check(contract && /^[a-f0-9]{64}$/.test(binding?.sha256), 'missing-turret-family');
     const prefix = `/local-hd/${binding.sha256}/turret/`;
     const read = async (file: string, hash: string, maxBytes: number) => {
+        check(!stopped(), 'cancelled');
         check(/^(manifest\.json|(?:0|45|90|135|180|225|270|315)\.(png|mask))$/.test(file), 'invalid-turret-file');
         const response = await fetch(prefix + file, { signal: AbortSignal.timeout(15000) });
         check(response.ok, 'missing-turret-file');
@@ -44,13 +55,21 @@ export async function loadBuildingTurretHd(binding: any, family: string, request
         return bytes;
     };
     const manifest = JSON.parse(new TextDecoder().decode(await read('manifest.json', binding.sha256, 32768)));
-    check(manifest.schemaVersion === 1 && manifest.family === family && manifest.theater === 'TEMPERATE'
+    check(manifest.schemaVersion === 1 && manifest.family === family && manifest.theater === (source?.theater ?? 'TEMPERATE')
         && [2, 4].includes(manifest.density) && JSON.stringify(manifest.canvas) === JSON.stringify(contract.canvas)
         && JSON.stringify(manifest.offset) === JSON.stringify(contract.offset) && manifest.headings.length === 8, 'turret-contract');
     const members = contract.members;
     check(Object.keys(manifest.sources).length === members.length, 'turret-source-count');
-    for (const member of members) check(await digest(Uint8Array.from(Engine.vfs!.openFile(member).getBytes()).buffer)
-        === manifest.sources[member], 'turret-retail-identity');
+    if (source) {
+        check(manifest.density === requestedDensity, 'turret-independent-density');
+        check(Object.keys(source.sources).length === members.length, 'turret-pinned-source-count');
+        check(manifest.palette?.member === source.palette.member && manifest.palette?.sha256 === source.palette.sha256
+            && await digest(Uint8Array.from(Engine.vfs!.openFile(source.palette.member).getBytes()).buffer)
+                === source.palette.sha256, 'turret-palette-identity');
+    }
+    for (const member of members) check((!source || source.sources[member] === manifest.sources[member])
+        && await digest(Uint8Array.from(Engine.vfs!.openFile(member).getBytes()).buffer)
+            === manifest.sources[member], 'turret-retail-identity');
     const [width, height] = contract.canvas.map(v => v * manifest.density);
     const density = Math.min(manifest.density, requestedDensity);
     check(manifest.assemblyCompletionFrame === undefined ||
@@ -71,6 +90,7 @@ export async function loadBuildingTurretHd(binding: any, family: string, request
             let image = await createImageBitmap(new Blob([png], { type: 'image/png' }),
                 { imageOrientation: 'flipY', premultiplyAlpha: 'none', colorSpaceConversion: 'none' });
             if (image.width !== width || image.height !== height) { image.close(); throw Error('turret-size'); }
+            if (stopped()) { image.close(); throw Error('cancelled'); }
             if (density < manifest.density) {
                 mask = downsampleMask(mask, width, height);
                 image = await downsampleHdBitmap(image);
@@ -115,6 +135,9 @@ export class BuildingTurretRenderer {
             depth.material.colorWrite = false; depth.material.alphaTest = .985;
             for (const mesh of [depth, color]) {
                 mesh.name = `building-hd-turret-${h}`; mesh.matrixAutoUpdate = false; mesh.visible = false;
+                // HD may arrive after the static parent has settled. Mark the
+                // new local transform dirty for the next manual world pass.
+                mesh.updateMatrix();
                 r.turret.add(mesh);
             }
             this.meshes.set(h, [depth, color]);

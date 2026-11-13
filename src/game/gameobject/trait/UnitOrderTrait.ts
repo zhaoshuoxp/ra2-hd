@@ -127,6 +127,9 @@ export class UnitOrderTrait implements NotifyTick, NotifyOwnerChange, NotifyTele
         }
     }
     addOrder(order: Order, queued = false): void {
+        if ((this.gameObject as any).campaignSleeping) (this.gameObject as any).campaignSleeping = false;
+        if ((this.gameObject as any).campaignSticky) (this.gameObject as any).campaignSticky = false;
+        if ((this.gameObject as any).campaignHarmless) (this.gameObject as any).campaignHarmless = false;
         if ((this.gameObject as any).berserkTrait?.isActive()) return;
         if ((this.gameObject as any).slaveMaster?.isSpawned) return;
         const addResult = order.onAdd(this.tasks, queued);

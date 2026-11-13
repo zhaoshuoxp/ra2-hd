@@ -9,6 +9,13 @@ from PIL import Image
 from scipy import ndimage
 from showcase_contours import coverage
 from showcase_body_reuse import accepted_body_frames
+from showcase_curved_arch import RegisteredCurvedArch
+from showcase_body_material import BodyIndex12Material
+from showcase_authored_rubble import AuthoredRubble
+from showcase_authored_terrain import AuthoredTerrain
+from showcase_bridge_material import BridgePlanarMaterial
+from showcase_component_assembly import SourcePinnedComponentAssembly
+from showcase_lunar import validate_lunar_smudge_contours
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('pack', type=Path)
@@ -34,20 +41,62 @@ for identity, family in pack['families'].items():
 counts = dict(families=len(pack['families']), members=len(members), densityFrames=0,
               pages=0, nativeEmpty=0, sharedFrames=0, nativePaletteMarkers=0,
               nativeToneFrames=0, nativeThinMetalFrames=0, authoredParticlePixels=0, authoredMuzzlePixels=0,
-              authoredFixedColorPixels=0, structuralCoverageFrames=0, exactAcceptedBodyFrames=0)
+              authoredFixedColorPixels=0, structuralCoverageFrames=0, curvedContourFrames=0,
+              exactAcceptedBodyFrames=0, authoredRubbleFrames=0, authoredTerrainFrames=0)
 decoded = {'2': 0, '4': 0}
 fixed_payloads, fixed_declarations = {}, []
 rubble_payloads, rubble_declarations = {}, []
+component_proofs = {}
 for name, row in members.items():
     manifest_path = args.pack / row['path']
     assert sha(manifest_path) == row['sha256']
     manifest = json.loads(manifest_path.read_text())
     native, declared = source[name], contract['sources'][name]
+    body_material = manifest['color'].get('bodyIndex12Material')
+    body_index12 = BodyIndex12Material({name: body_material} if body_material else {}, source, prepared / 'native')
+    planar = manifest['color'].get('bridgePlanarMaterial')
+    bridge_planar = BridgePlanarMaterial({name: planar} if planar else {}, source, prepared)
+    assembly = manifest['color'].get('sourceComponentAssembly')
+    component_assembly = SourcePinnedComponentAssembly({name: assembly} if assembly else {}, source, prepared)
+    if assembly:
+        assert all(body_index12.owns(name, frame) for frame in range(native['bodyFrames']))
+    curved_declaration = manifest['color'].get('curvedArchRegistration')
+    curved_arch = RegisteredCurvedArch({name: curved_declaration} if curved_declaration else {}, source, prepared)
+    if curved_declaration:
+        assert curved_declaration == curved_arch.metadata(name)
+    rubble_declaration = manifest['color'].get('authoredRubbleRegistration')
+    authored_rubble = AuthoredRubble({name: rubble_declaration} if rubble_declaration else {}, source, prepared)
+    if rubble_declaration:
+        assert not curved_declaration
+        assert rubble_declaration == authored_rubble.metadata(name)
+    terrain_declaration = manifest['color'].get('authoredTerrainRegistration')
+    authored_terrain = AuthoredTerrain({name: terrain_declaration} if terrain_declaration else {}, source, prepared)
+    if terrain_declaration:
+        assert not curved_declaration and not rubble_declaration
+        assert terrain_declaration == authored_terrain.metadata(name)
+        assert not any(manifest['color'].get(key) for key in
+            ['structuralCoverage', 'terrainStructuralCoverage', 'sourcePinnedStructuralCoverage', 'authoredRegionRegistration'])
     assert manifest['source'] == dict(member=name, sha256=native['sha256'],
         theater=theater, kind='resolved-shp-member')
     assert manifest['logical']['canvas'] == native['canvas'] == declared['canvas']
     frames = native['frames'][:declared['bodyFrames']]
     terrain_structural = manifest['color'].get('terrainStructuralCoverage')
+    pinned_structural = manifest['color'].get('sourcePinnedStructuralCoverage')
+    if pinned_structural:
+        if pinned_structural['schema'] == 'yr-lunar-smudge-contours-v1':
+            validate_lunar_smudge_contours(pinned_structural, native, theater)
+        else:
+            assert pinned_structural['schema'] in ('source-pinned-structural-contours-v1', 'source-pinned-structural-contours-v2')
+            assert pinned_structural['kind'] in ('terrain', 'overlay')
+        if pinned_structural['schema'] == 'source-pinned-structural-contours-v2':
+            assert pinned_structural['continuousDiagonalBody'] is True and pinned_structural['kind'] == 'terrain'
+            assert native['bodyFrames'] == 1 and native['hasShadow'] and not native['remapable']
+        assert pinned_structural['theater'] == theater
+        assert pinned_structural['sourceSha256'] == native['sha256']
+        assert pinned_structural['paletteSha256'] == native['palette']['sha256']
+        assert pinned_structural['bodyIndexSha256'] == [frame['indexSha256'] for frame in frames]
+        assert all(binding['kind'] == pinned_structural['kind'] for binding in native['bindings'])
+        assert not terrain_structural and not manifest['color'].get('structuralCoverage')
     if terrain_structural:
         assert theater == 'NEWURBAN' and terrain_structural['sourceSha256'] == native['sha256']
         assert all(binding['kind'] == 'terrain' for binding in native['bindings'])
@@ -178,6 +227,33 @@ for name, row in members.items():
                 file = prepared / 'native' / frame.get('indexFile', f'{name}-{frame["slot"]}.index')
                 assert sha(file) == frame['indexSha256']
                 indices = np.frombuffer(file.read_bytes(), np.uint8).reshape(h, w)
+                if bridge_planar.owns(name, frame['slot']):
+                    expected_rgb = bridge_planar.frame(name, density)
+                    core = np.repeat(np.repeat(ndimage.binary_erosion(indices != 0), density, 0), density, 1)
+                    actual = base[y:y + h * density, x:x + w * density]
+                    core &= actual[..., 3] == 255
+                    assert core.any() and np.array_equal(actual[..., :3][core], expected_rgb[core])
+                    counts['bridgePlanarMaterialDensityFrames'] = counts.get('bridgePlanarMaterialDensityFrames', 0) + 1
+                preserved = reuse.get(name, {}).get((frame['slot'], density))
+                if preserved is not None and manifest['color']['acceptedNativeBodyFrames'].get('preserveAcceptedCoverage'):
+                    # These states retain their pinned accepted contour and all
+                    # RGBA/owner samples. Apply the new contour only to authored
+                    # states; never reinterpret accepted architecture/contact.
+                    original = prepared / 'native' / frame['file']
+                    assert sha(original) == frame['rgbaSha256']
+                    palette = native.get('framePalettes', {}).get(str(frame['slot']), native['palette'])
+                    palette_file = prepared / 'native' / palette['member']
+                    if not palette_file.exists():
+                        palette_file = prepared / 'native' / (palette['sha256'] + '.pal')
+                    assert sha(palette_file) == palette['sha256']
+                    expected_base, expected_data = preserved
+                    assert np.array_equal(base[y:y + rh, x:x + rw], expected_base), (name, frame['slot'], 'accepted base drift')
+                    assert np.array_equal(data[y:y + rh, x:x + rw], expected_data), (name, frame['slot'], 'accepted owner drift')
+                    used[entry['page']][y:y + rh, x:x + rw] = True
+                    counts['exactAcceptedBodyFrames'] += 1
+                    counts['densityFrames'] += 1
+                    counts['sharedFrames'] += int('sharedWith' in entry)
+                    continue
                 if fixed_color and 86 <= frame['slot'] < 134:
                     ys, xs = np.where(indices == 250)
                     declaration = fixed_color['frames'].get(str(frame['slot']))
@@ -249,7 +325,7 @@ for name, row in members.items():
                     assert markers['frames'][str(frame['slot'])] == frame['indexSha256']
                     assert marker_index in indices and set(indices.ravel()).issubset({0, marker_index})
                     if marker_index == 1:
-                        assert all(binding['role'] == 'ACTIVE' and frame['slot'] > int(
+                        assert all(binding['role'] == 'ACTIVE' and int(binding['nativeArt'].get('LoopCount', '1')) == -1 and frame['slot'] >= int(
                             binding['nativeArt']['LoopEnd']) for binding in native['bindings'])
                     original = prepared / 'native' / frame['file']
                     assert sha(original) == frame['rgbaSha256']
@@ -297,9 +373,11 @@ for name, row in members.items():
                     owner = (indices >= 16) & (indices <= 31)
                     expected_owner[:h * density, :w * density] = np.uint8(owner) * 255
                     expected_shades[:h * density, :w * density][owner] = indices[owner] - 16
-                if structural or terrain_structural:
-                    geometric = coverage(native_indices != 0, density)
-                    contact = indices == 12
+                if (structural or terrain_structural or pinned_structural) and not authored_rubble.owns(name, frame['slot']) \
+                        and str(frame['slot']) not in markers.get('frames', {}):
+                    geometric = coverage(native_indices != 0, density,
+                        linear_strips=bool(pinned_structural and pinned_structural.get('continuousDiagonalBody')))
+                    contact = (indices == 12) & (not body_index12.smooths_contours(name, frame['slot']))
                     if declared['remapable'] and not is_rubble:
                         native_owner = (native_indices >= 16) & (native_indices <= 31)
                         owner_mask = coverage(native_owner, density, linear_strips=True)
@@ -334,7 +412,7 @@ for name, row in members.items():
                     assert (output[body] <= bound[body, None] + 1).all()
                     counts['nativeThinMetalFrames'] += 1
                 contacts = indices == 12
-                if contacts.any():
+                if contacts.any() and not curved_declaration and not body_index12.owns(name, frame['slot']):
                     original = prepared / 'native' / frame['file']
                     assert sha(original) == frame['rgbaSha256']
                     if is_rubble:
@@ -349,9 +427,97 @@ for name, row in members.items():
                         native_rgba = np.repeat(np.repeat(native_rgba, density, axis=0), density, axis=1)
                     assert np.array_equal(base[y:y + h * density, x:x + w * density, :3][contacts],
                                           native_rgba[..., :3][contacts])
+            if curved_declaration:
+                expected_alpha[:h * density, :w * density] = curved_arch.geometry.alpha(native_indices, frame['slot'], density)
+                if declared['remapable'] and frame['slot'] != 3:
+                    owner = (native_indices >= 16) & (native_indices < 32)
+                    mask = coverage(owner, density, linear_strips=True)
+                    mask[(indices == 12) | (expected_alpha[:h * density, :w * density] == 0)] = 0
+                    expected_owner[:h * density, :w * density] = mask
+                    if owner.any():
+                        nearest = ndimage.distance_transform_edt(~owner, return_distances=False, return_indices=True)
+                        shades = (native_indices[tuple(nearest)] - 16).repeat(density, 0).repeat(density, 1)
+                        expected_shades[:h * density, :w * density] = np.where(mask > 0, shades, 0)
+                counts['curvedContourFrames'] += 1
+            if authored_rubble.owns(name, frame['slot']):
+                registered = authored_rubble.frame(name, frame['slot'], density)
+                assert np.array_equal(base[y:y + h * density, x:x + w * density], registered), (name, 'rubble registration')
+                expected_alpha[:h * density, :w * density] = registered[..., 3]
+                counts['authoredRubbleFrames'] += 1
+            if authored_terrain.owns(name, frame['slot']):
+                registered = authored_terrain.frame(name, frame['slot'], density)
+                np.testing.assert_array_equal(base[y:y + h * density, x:x + w * density], registered)
+                expected_alpha[:h * density, :w * density] = registered[..., 3]
+                counts['authoredTerrainFrames'] += 1
+            if component_assembly.owns(name, frame['slot']):
+                registered = component_assembly.frame(name, density)
+                np.testing.assert_array_equal(base[y:y + h * density, x:x + w * density], registered)
+                expected_alpha[:h * density, :w * density] = registered[..., 3]
+                counts['componentAssemblyDensityFrames'] = counts.get('componentAssemblyDensityFrames', 0) + 1
+                component_proofs[name, density] = component_assembly.evidence[name, density]
             assert np.array_equal(base[y:y + rh, x:x + rw, 3], expected_alpha), (name, frame['slot'], 'alpha')
             assert np.array_equal(data[y:y + rh, x:x + rw, 0], expected_owner)
             assert np.array_equal(data[y:y + rh, x:x + rw, 1], expected_shades)
+            authored_regions = manifest['color'].get('authoredRegionRegistration')
+            if authored_regions:
+                assert authored_regions['schema'] in ['source-pinned-authored-regions-v1',
+                    'source-pinned-unowned-authored-regions-v2', 'source-pinned-owned-authored-regions-v3']
+                assert authored_regions['sourceSha256'] == native['sha256']
+                assert authored_regions['paletteSha256'] == native['palette']['sha256']
+                unowned_regions = authored_regions['schema'] == 'source-pinned-unowned-authored-regions-v2'
+                owned_regions = authored_regions['schema'] == 'source-pinned-owned-authored-regions-v3'
+                if not unowned_regions and not owned_regions:
+                    assert not declared['remapable'] and not declared.get('framePalettes')
+                region_rgb = np.zeros((h * density, w * density, 3), dtype=np.uint8)
+                region_mask = np.zeros((h * density, w * density), dtype=bool)
+                for region in authored_regions['regions']:
+                    if region['nativeFrame'] != frame['slot']:
+                        continue
+                    assert region['indexSha256'] == frame['indexSha256']
+                    file = Path(region['master'])
+                    assert sha(file) == region['masterSha256']
+                    left, top, right, bottom = region['nativeBounds']
+                    if owned_regions:
+                        assert declared['remapable'] and region['paletteSha256'] == native['palette']['sha256']
+                        original_owner = (native_indices[top:bottom, left:right] >= 16) & (native_indices[top:bottom, left:right] < 32)
+                        assert region['nativeOwnerPixels'] == int(original_owner.sum())
+                        assert region['nativeOwnerMaskSha256'] == hashlib.sha256(original_owner.astype(np.uint8).tobytes()).hexdigest()
+                    assert 0 <= left < right <= w and 0 <= top < bottom <= h
+                    if unowned_regions:
+                        palette = declared.get('framePalettes', {}).get(str(frame['slot']), declared['palette'])
+                        assert region['paletteSha256'] == palette['sha256']
+                        selected = native_indices[top:bottom, left:right]
+                        assert not (palette.get('remapable', declared['remapable'])
+                            and ((selected >= 16) & (selected < 32)).any()), 'Authored components must preserve all native owner regions'
+                    mx, my, mw, mh = region['masterRect']
+                    assert mw >= (right - left) * 4 and mh >= (bottom - top) * 4
+                    with Image.open(file) as image:
+                        pixels = np.asarray(image.convert('RGBA').crop((mx, my, mx + mw, my + mh)))
+                    from showcase_registration import authored_coverage
+                    valid = authored_coverage(pixels, 180, fringe_guard=True)
+                    assert valid.any()
+                    nearest = ndimage.distance_transform_edt(~valid, return_distances=False, return_indices=True)
+                    material = pixels[..., :3].copy()
+                    material[~valid] = material[tuple(nearest[:, ~valid])]
+                    expected_rgb = np.asarray(Image.fromarray(material).resize(
+                        ((right - left) * density, (bottom - top) * density), Image.Resampling.LANCZOS))
+                    mask = ((indices != 0) & (indices != 12))[top * density:bottom * density,
+                        left * density:right * density]
+                    mask &= base[y + top * density:y + bottom * density,
+                        x + left * density:x + right * density, 3] > 0
+                    if owned_regions:
+                        # Fractional owner edges use fixed-color underlay so
+                        # changing the house palette cannot expose stale red.
+                        original_owner = original_owner.repeat(density, 0).repeat(density, 1)
+                        alpha_owner = expected_owner[top*density:bottom*density, left*density:right*density]
+                        mask &= ~((original_owner | (alpha_owner > 0)) & (alpha_owner < 255))
+                    assert mask.any(), 'The authored component must remain visible'
+                    # Declarations composite in order. Shared boundary pixels
+                    # belong to the final component, as in the authored source.
+                    region_rgb[top * density:bottom * density, left * density:right * density] = expected_rgb
+                    region_mask[top * density:bottom * density, left * density:right * density] |= mask
+                actual_rgb = base[y:y + h * density, x:x + w * density, :3]
+                assert np.array_equal(actual_rgb[region_mask], region_rgb[region_mask]), (name, frame['slot'], 'authored region')
             fragments = manifest['color'].get('nativePreservedFragments')
             if fragments and frame['slot'] == fragments['nativeFrame']:
                 assert fragments['schema'] == 'source-pinned-microscopic-rubble-fragments-v1'
@@ -432,7 +598,10 @@ counts['verifiedFixedPartPixels'] = fixed_pixels
 report = dict(schema='m2-2-shp-independent-verification-v1', status='PASS',
     pack=str(args.pack), sha256=sha(args.pack / 'manifest.json'), counts=counts, decodedInputBytes=decoded,
     nativeShadows='Unmodified original frame dependencies',
-    verification='Exact source/family/page closure, body slots, independent densities, native masks, native owner indices, contact patches and transparent gutters',
+    verification='Exact source/family/page closure, body slots, independent densities, source-qualified coverage and owner/contact policies, and transparent gutters',
     runtimeAcceptance=False, wholeMapComplete=False)
+if component_proofs:
+    report['componentAssemblyEvidence'] = [dict(member=name, density=density, **proof)
+        for (name, density), proof in sorted(component_proofs.items())]
 args.output.write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps(report))

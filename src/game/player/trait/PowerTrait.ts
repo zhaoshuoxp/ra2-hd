@@ -8,6 +8,7 @@ export enum PowerLevel {
     Normal = 1
 }
 export class PowerTrait {
+    readonly debugStateKey = 'PowerTrait';
     private player: any;
     private power: number;
     private drain: number;

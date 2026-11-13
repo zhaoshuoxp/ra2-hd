@@ -45,8 +45,8 @@ export function retailIni(edition: GameEdition, kind: 'rules' | 'art' = 'rules')
         || member.memberId !== expected.memberId) throw Error(`Retail ${edition}/${kind} resolution differs from import receipt`);
     return new IniFile(member.file.readAsString());
 }
-export function selectedPack(kind: 'environment' | 'terrain') {
-    const selection = JSON.parse(requiredBytes(`${kind}-selection.json`).toString());
+export function selectedPack(kind: 'environment' | 'terrain', theater = 'TEMPERATE') {
+    const selection = JSON.parse(requiredBytes(`${kind}${theater === 'TEMPERATE' ? '' : '-' + theater.toLowerCase()}-selection.json`).toString());
     const relative = `${kind}-packs/${selection.revision}/manifest.json`;
     const bytes = requiredBytes(relative);
     if (sha256(bytes) !== selection.sha256) throw Error(`Selected ${kind} manifest identity mismatch: ${relative}`);

@@ -1,0 +1,172 @@
+{
+  "status": "COMPLETE_FAMILY_REGISTERED_NATIVE_AND_USER_REVIEW_PENDING",
+  "family": "yr-rubble-snow-catech01-v1",
+  "mission": {
+    "edition": "yr",
+    "mission": "all07smd.map",
+    "sha256": "0ec687c320382e4c02cf66eec0153b713e56c4449fab7d29b5a19b61bf10e4f3"
+  },
+  "theater": "SNOW",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yr-campaign/rubble-snow-catech01-stage-r1",
+  "preparation": {
+    "status": "PREPARED_NATIVE_REGISTRATION_AND_RUNTIME_PENDING",
+    "recipe": "/Users/Aone/RA2remaster/ra2-hd/docs/campaign-art/yr-v1/rubble-snow-catech01.json",
+    "recipeSha256": "475fd6a4d5f0ad8699ef9a8a6821297cb5a61fd1ed173fb4f3d3731f20fd0036",
+    "originalSourceJsonSha256": "2e510deedf698c31558c4382c2fdaa7ad7dd1cfef6e41ef59769b17343f2b487",
+    "sourceSha256": "fe897403e241c3f3915518ad60cf2cbc241d43fc08ab8fe04a70366559b2fe0b",
+    "masters": [
+      {
+        "slot": 3,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-building-rubble/snow-catech01/masters-r1/rubble.png",
+        "sha256": "01676183fef807f76291a15627c72c8bd743b9e73a6f5ca70208f5b3553f1c88"
+      }
+    ],
+    "directionAuthorization": {
+      "file": "docs/campaign-art/yr-v1/authorization.json",
+      "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+    },
+    "userVisualAcceptance": "PENDING",
+    "acceptedBodyFrames": {
+      "catech01.shp": {
+        "sourceSha256": "fe897403e241c3f3915518ad60cf2cbc241d43fc08ab8fe04a70366559b2fe0b",
+        "donorMember": "cttech01.shp",
+        "manifestFile": "/Users/Aone/RA2remaster/ra2-hd/.local/environment-packs/environment-m2-3-oil-paired-drive-complete-v31/members/cttech01-shp/manifest.json",
+        "manifestSha256": "86d92d8a816749740f5fbabf749c762ee44ec00a901a10c609c92859d20461e1",
+        "proofFile": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-building-rubble/snow-catech01/accepted-body-proof-r1.json",
+        "proofSha256": "7b985e508ff5f295f56ecc9e88d11a5669a7f22e07f441144696619296ea2f76",
+        "slots": [
+          0,
+          1,
+          2
+        ],
+        "preserveAcceptedCoverage": {
+          "schema": "preserve-pinned-accepted-body-coverage-v1",
+          "slots": [
+            0,
+            1,
+            2
+          ],
+          "donorManifestSha256": "86d92d8a816749740f5fbabf749c762ee44ec00a901a10c609c92859d20461e1",
+          "donorColorSha256": "dc8be8dd93fc246ffaaa360a0d893bdfae463050fd3c75c854d676d98283973d"
+        }
+      }
+    },
+    "qualification": "Only original guides are converted. Authored masters are referenced without copying or modification. Complete state coverage, independent exports, alpha/geometry and runtime acceptance require subsequent verification."
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "e224f0bee3383d9ec09aa47d8167e92aa7b741bf7ca6a9e5163452bfa137a54a",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 8,
+      "pages": 2,
+      "ownerStates": 2,
+      "neutralStates": 6,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 4,
+      "preservedAcceptedDensityFrames": 6
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 4030464,
+      "4": 15990784
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "internalVisualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "packSha256": "e224f0bee3383d9ec09aa47d8167e92aa7b741bf7ca6a9e5163452bfa137a54a",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "inspectedExports": [
+      ".artifacts/yr-campaign/rubble-next6-exports-2-2x.png",
+      ".artifacts/yr-campaign/rubble-next6-exports-2-4x.png"
+    ],
+    "observations": [
+      "The complete new rubble preserves the original silhouette, foundation, palette, surviving beams and nearby debris with clean authored antialiased contours.",
+      "Both exports are independently sampled from the authored master. Accepted body base/data samples remain byte-identical; target native geometry and shadows are unchanged."
+    ],
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "bundle": {
+    "schema": "campaign-environment-extension-v1",
+    "identity": "yr-rubble-snow-catech01-v1",
+    "familyHash": "9bbb7d0ae96bff4897cc2ec1b3dd57b8c1c8a670e9d40dc6365a1b874aeff905",
+    "mission": "all07smd.map",
+    "theater": "SNOW",
+    "revision": "yr-rubble-snow-catech01-r1",
+    "members": [
+      {
+        "member": "catech01.shp",
+        "manifest": "yr-rubble-snow-catech01-r1-catech01-shp.json",
+        "sha256": "c1d11c91875ac662a678f6e50edb1af8e69b91f1f1279f414aaade19c56264b1"
+      }
+    ],
+    "acceptance": "FAITHFUL_DIRECTION_AUTHORIZED_COMPLETE_NATIVE_RUNTIME_AND_USER_VISUAL_REVIEW_PENDING",
+    "edition": "yr"
+  },
+  "files": [
+    {
+      "name": "yr-rubble-snow-catech01-r1-catech01-shp-2-p0-base.png",
+      "bytes": 544139,
+      "sha256": "eefd06ab0b7f1bdb68bec3435f21aa549686acae954f617c5b9abc42160c79fb",
+      "route": "/local-campaign/yr/all07smd/yr-rubble-snow-catech01-r1-catech01-shp-2-p0-base.png"
+    },
+    {
+      "name": "yr-rubble-snow-catech01-r1-catech01-shp-2-p0-data.png",
+      "bytes": 8257,
+      "sha256": "bb931e735a7dd2faba474dc614d1599d0cb90eefd274bd3a387506b09279e3fa",
+      "route": "/local-campaign/yr/all07smd/yr-rubble-snow-catech01-r1-catech01-shp-2-p0-data.png"
+    },
+    {
+      "name": "yr-rubble-snow-catech01-r1-catech01-shp-4-p0-base.png",
+      "bytes": 1960407,
+      "sha256": "0ef5ad38519563f7eff8c245604e352b8e8822cfece546e58e06c2f7a918fa45",
+      "route": "/local-campaign/yr/all07smd/yr-rubble-snow-catech01-r1-catech01-shp-4-p0-base.png"
+    },
+    {
+      "name": "yr-rubble-snow-catech01-r1-catech01-shp-4-p0-data.png",
+      "bytes": 18784,
+      "sha256": "e0f61e3f6c35f827e094c63b3e7391b6c6cb4cb7a869e89a3d0f6b71c25fb46f",
+      "route": "/local-campaign/yr/all07smd/yr-rubble-snow-catech01-r1-catech01-shp-4-p0-data.png"
+    },
+    {
+      "name": "yr-rubble-snow-catech01-r1-catech01-shp.json",
+      "bytes": 6075,
+      "sha256": "c1d11c91875ac662a678f6e50edb1af8e69b91f1f1279f414aaade19c56264b1",
+      "route": "/local-campaign/yr/all07smd/yr-rubble-snow-catech01-r1-catech01-shp.json"
+    },
+    {
+      "name": "environment-family-yr-rubble-snow-catech01-r1.json",
+      "bytes": 610,
+      "sha256": "5073f1bc13092493af34918683f6aa6b7915b8a8898530857ef233ca5de44af5",
+      "route": "/local-campaign/yr/all07smd/environment-family-yr-rubble-snow-catech01-r1.json"
+    }
+  ],
+  "contractBeforeSha256": "0329c082398915f55ffa075e0e71fe845b1c0f627a769b857af337cfc0dc93da",
+  "contractAfterSha256": "b2d14bf311d5146d87a0e211b7634f6802942ea90166373a693dc70de5036982",
+  "existingRootSelectorChanges": {},
+  "acceptedPayloadsReplaced": 0,
+  "ownershipCorrection": null,
+  "artCorrection": null,
+  "bridgeCorrection": null,
+  "policy": "Independent densities, original shadows/state timing and existing fixed budgets; complete-family fallback retained.",
+  "nativeValidation": {
+    "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_SLOTS_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+    "framesPerDensity": 4,
+    "evidence": [
+      "../project-history/yr-campaign-implementation-20261104/Evidence/rubble-snow-catech01-native-2x-r1.json.gz",
+      "../project-history/yr-campaign-implementation-20261104/Evidence/rubble-snow-catech01-native-4x-r1.json.gz"
+    ]
+  }
+}

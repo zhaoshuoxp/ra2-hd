@@ -3,6 +3,8 @@ export interface Renderable {
     create3DObject(): void;
     get3DObject(): THREE.Object3D | undefined;
     update(deltaTime: number, ...args: any[]): void;
+    onViewCullChanged?(visible: boolean): void;
+    onViewCullRestore?(): void;
     destroy?(): void;
 }
 export class RenderableContainer {

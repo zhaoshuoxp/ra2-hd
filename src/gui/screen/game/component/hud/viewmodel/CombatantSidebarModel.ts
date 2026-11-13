@@ -37,7 +37,8 @@ export class CombatantSidebarModel extends SidebarModel {
         return Math.floor(this.player.credits);
     }
     get radarEnabled(): boolean {
-        return !!this.player.radarTrait && !this.player.radarTrait.isDisabled();
+        return !!this.player.radarTrait && !this.player.radarTrait.isDisabled()
+            && !(this.player.campaignRadarBlackoutUntil > this.game.currentTick);
     }
     constructor(player: any, game: any) {
         super(game);

@@ -84,7 +84,7 @@ export class TrainerController {
         this.interaction = undefined; this.pointer = undefined; this.selection = []; this.status = 'menu'; this.changed();
     }
     bindInteraction(interaction: any, pointer: any): void { this.interaction = interaction; this.pointer = pointer; }
-    get canAct(): boolean { return this.session?.allowed() ?? false; }
+    get canAct(): boolean { return !!this.session?.allowed() && !this.session.game.campaign?.inputLocked; }
     get canUseKeys(): boolean { return this.canAct && !!this.interaction?.isEnabled() && !this.inputHeld; }
     captureInput(): void {
         if (this.inputHeld || !this.interaction?.isEnabled()) return;
@@ -104,6 +104,9 @@ export class TrainerController {
         return this.inputHeld ? this.selection : this.session?.game.getUnitSelection().getSelectedUnits() ?? [];
     }
     send(command: TrainerCommand): boolean {
+        // Record the retention policy in new commands; older saved commands
+        // keep their original behavior when replayed through TrainerSession.
+        if (command.type === 'protect' && command.retainLimbo === undefined) command = { ...command, retainLimbo: true };
         const field = command.type === 'credits' || (command.type === 'effect' && command.effect === 'minimum') ? 'credits' :
             command.type === 'effect' && command.effect === 'power' ? 'power' : command.type === 'effect' && command.effect === 'production' ? 'seconds' : undefined;
         if (field && typeof document !== 'undefined' && document.querySelector(`input[data-trainer-number="${field}"][aria-invalid="true"]`)) {

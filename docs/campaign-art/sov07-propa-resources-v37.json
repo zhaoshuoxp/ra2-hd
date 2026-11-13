@@ -1,0 +1,161 @@
+{
+  "status": "COMPLETE_SOURCE_QUALIFIED_NATIVE_2X4X_AND_USER_FULL_VISUAL_ACCEPTED",
+  "identity": "PROPA",
+  "mission": "sov07s.map",
+  "authoringTheater": "SNOW",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/campaign-completion/sov07-propa-v37-r1",
+  "variants": [
+    {
+      "hash": "e0358249c03a9164b7987e6ba81a9199600e7d42580f26603c8164a7dc2c5819",
+      "density": 2,
+      "path": "hd-packs/campaign-sov07-propa-vxl/full-v37-r1-2x/manifest.json"
+    },
+    {
+      "hash": "16f5580ce257cdb8a2828d78b82e7bd010a9f2b388bf02fb7bda55b339f78c98",
+      "density": 4,
+      "path": "hd-packs/campaign-sov07-propa-vxl/full-v37-r1-4x/manifest.json"
+    }
+  ],
+  "preparation": {
+    "status": "PASS_SOURCE_PINNED_APPROVED_DIRECTION_EXPORT_INPUTS",
+    "mission": "sov07s.map",
+    "theater": "SNOW",
+    "sourceSha256": "c563541a3af774a82e0292700cb0f3a8b0727e52f83e99278552355ebb3a518f",
+    "approvalSha256": "d4125aeb42f1309a380dd777440a7063ca71a644d8b11bacd2ae861b52e70761",
+    "masterSha256": "15d18732bff905c844b152518a34eb5e0092920ca68b79f8c8ed0a04253dc8cc",
+    "sourcePalette": {
+      "member": "unitsno.pal",
+      "sha256": "c5281f05b0039fb8edb6a91dd61c6493d2de9fc90ab3a9acb442a5e203260f7f",
+      "archive": "ra2.mix/cache.mix",
+      "bytes": 768
+    },
+    "sourceVpl": {
+      "member": "voxels.vpl",
+      "sha256": "2d75fff8a6872ffe98308c7009858a9e904696e1529bc649181a44993979081c"
+    },
+    "qualification": "Original VXL/HVA, projection, pivots and control references are unchanged. Authored masters are referenced without image modification. Independent exports and native/full-group review are subsequent checks."
+  },
+  "sourceVerification": {
+    "schema": "m2-2-neutral-vxl-verification-v1",
+    "status": "PASS_SOURCES_BEARINGS_DENSITIES_FIXED_COLORS",
+    "authoredIdentities": 1,
+    "reused": [],
+    "densityBearings": 16,
+    "records": [
+      {
+        "identity": "PROPA",
+        "density": 2,
+        "manifest": ".local/../.artifacts/campaign-completion/sov07-propa-v37-r1/pack-2x/manifest.json",
+        "sha256": "e0358249c03a9164b7987e6ba81a9199600e7d42580f26603c8164a7dc2c5819",
+        "bearings": 8,
+        "ownerPixels": 0,
+        "decodedRgbaBytes": 813120
+      },
+      {
+        "identity": "PROPA",
+        "density": 4,
+        "manifest": ".local/../.artifacts/campaign-completion/sov07-propa-v37-r1/pack-4x/manifest.json",
+        "sha256": "16f5580ce257cdb8a2828d78b82e7bd010a9f2b388bf02fb7bda55b339f78c98",
+        "bearings": 8,
+        "ownerPixels": 0,
+        "decodedRgbaBytes": 3025152
+      }
+    ],
+    "boundary": "Source registration and export validation; native movement, turning, destruction and combined user visual acceptance are separate."
+  },
+  "visualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "manifestSha256": {
+      "2": "e0358249c03a9164b7987e6ba81a9199600e7d42580f26603c8164a7dc2c5819",
+      "4": "16f5580ce257cdb8a2828d78b82e7bd010a9f2b388bf02fb7bda55b339f78c98"
+    },
+    "sheets": [
+      ".artifacts/campaign-completion/sov07-export-inspection-v37-r1/propa-2x-all-headings.png",
+      ".artifacts/campaign-completion/sov07-export-inspection-v37-r1/propa-4x-all-headings.png"
+    ],
+    "findings": [
+      "All original eight headings and narrow/side poses retain their source projection and pivot registration.",
+      "White cab, blue-violet rails, two speaker panels, wheel arrangement and clean materials follow the approved direction.",
+      "Actual independently sampled2X/4X sprites and transparent edges inspected; neutral red/blue source controls match byte-for-byte."
+    ],
+    "userVisualAcceptance": "PENDING_COMPLETE_GROUP_NATIVE_REVIEW"
+  },
+  "allocations": [
+    {
+      "density": 2,
+      "decodedRgbaBytes": 813120
+    },
+    {
+      "density": 4,
+      "decodedRgbaBytes": 3025152
+    }
+  ],
+  "sourcePalette": {
+    "member": "unitsno.pal",
+    "sha256": "c5281f05b0039fb8edb6a91dd61c6493d2de9fc90ab3a9acb442a5e203260f7f",
+    "archive": "ra2.mix/cache.mix",
+    "bytes": 768
+  },
+  "sourceVpl": {
+    "member": "voxels.vpl",
+    "sha256": "2d75fff8a6872ffe98308c7009858a9e904696e1529bc649181a44993979081c"
+  },
+  "originalOwnerControl": "NEUTRAL_FIXED_COLOR_IN_ALL_EIGHT_NATIVE_HEADINGS",
+  "contractBeforeSha256": "7c4c79ec2361bc50b6d0fad33df8981a16eba8abcd3b8a357bcdca65604effb9",
+  "contractAfterSha256": "9f0434c07146a9f4afcd1d3e1625d8b2f60369d097109421bb2aa6a83b9d16b2",
+  "addedFiles": [
+    {
+      "path": ".local/hd-packs/campaign-sov07-propa-vxl/full-v37-r1-2x/PROPA-propa-DUMMY01-base.png",
+      "bytes": 92741,
+      "sha256": "e4cc662ccbdb9f4315eefa1ed884ee171d4a19f09ef697025f22304f0e927216"
+    },
+    {
+      "path": ".local/hd-packs/campaign-sov07-propa-vxl/full-v37-r1-2x/PROPA-propa-DUMMY01-data.png",
+      "bytes": 928,
+      "sha256": "d0cc093363bff885762b7bf4b0c8e2c0b68f4b41ccc2b20ec09c77d737adaa16"
+    },
+    {
+      "path": ".local/hd-packs/campaign-sov07-propa-vxl/full-v37-r1-2x/manifest.json",
+      "bytes": 14601,
+      "sha256": "e0358249c03a9164b7987e6ba81a9199600e7d42580f26603c8164a7dc2c5819"
+    },
+    {
+      "path": ".local/hd-packs/campaign-sov07-propa-vxl/full-v37-r1-4x/PROPA-propa-DUMMY01-base.png",
+      "bytes": 306991,
+      "sha256": "5d49c808481967d9f088b5742562e323cfbd4112d599ef46d2ca99b0e6fa0745"
+    },
+    {
+      "path": ".local/hd-packs/campaign-sov07-propa-vxl/full-v37-r1-4x/PROPA-propa-DUMMY01-data.png",
+      "bytes": 2461,
+      "sha256": "c78cd9966ffabaa24d708bf3d11df5a6b6eb9b831494dfa30cd4c28c02281e32"
+    },
+    {
+      "path": ".local/hd-packs/campaign-sov07-propa-vxl/full-v37-r1-4x/manifest.json",
+      "bytes": 14608,
+      "sha256": "16f5580ce257cdb8a2828d78b82e7bd010a9f2b388bf02fb7bda55b339f78c98"
+    }
+  ],
+  "acceptedPayloadsReplaced": 0,
+  "originalMapRulesVxlHvaAndPaletteChanged": false,
+  "policy": "Complete independent density families, RA2/Snow source identity, original geometry/HVA/ownership, fixed budgets and existing Windows loading path.",
+  "nativeRuntime": [
+    {
+      "path": ".artifacts/campaign-completion/v37-sov07-art-2x-r1/report.json",
+      "bytes": 21011,
+      "sha256": "cb3742ff168aef6e9dbc45e22ae96197b8d1a7026fcc225aa54d6e5ce82b42b4"
+    },
+    {
+      "path": ".artifacts/campaign-completion/v37-sov07-art-4x-r1/report.json",
+      "bytes": 21021,
+      "sha256": "0384d916483814df3d5589468d519f2a03c4eae556009daab5ba1ea9525c133e"
+    }
+  ],
+  "userDirection": "APPROVED_2026_10_30",
+  "userFullVisualAcceptance": "USER_ACCEPTED_2026_10_31",
+  "maintenance": "Re-export the hash-pinned original-source recipe and retained full-resolution masters into a new stage. Preserve source geometry, fixed ownership, original shadows and fixed budgets. Do not edit formal pages in place.",
+  "userVisualAcceptance": "campaign-art/v37-partial-acceptance-and-lamp-feedback-20261031.json"
+}

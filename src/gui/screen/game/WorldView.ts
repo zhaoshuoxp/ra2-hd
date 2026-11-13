@@ -27,12 +27,15 @@ import { disposeConscriptHd, type LoadedConscriptHd } from '@/engine/renderable/
 import { disposePowerPlantHd, type LoadedPowerPlantHd } from '@/engine/renderable/builder/resolvePowerPlantHd';
 import { disposeSovietBuildingsHd, type LoadedSovietBuildingsHd } from '@/engine/renderable/builder/loadSovietBuildingsHd';
 import { disposeSovietUnitsHd, type LoadedSovietUnitsHd } from '@/engine/renderable/builder/loadSovietUnitsHd';
+import { campaignHomeTile } from '@/game/campaign/CampaignHome';
+import { CampaignChronoScreenFx, campaignChronoScreenBytes } from '@/engine/gfx/CampaignChronoScreenFx';
 export class WorldView {
     private disposables = new CompositeDisposable();
     private worldScene?: WorldScene;
     private worldSound?: WorldSound;
     private mapRenderable?: MapRenderable;
     private renderableManager?: RenderableManager;
+    private superWeaponFxHandler?: SuperWeaponFxHandler;
     constructor(private hudDimensions: {
         width: number;
         height: number;
@@ -54,13 +57,19 @@ export class WorldView {
         const worldScene = WorldScene.factory(worldViewport, this.runtimeVars.freeCamera, this.generalOptions.graphics.shadows);
         this.disposables.add(worldScene);
         this.worldScene = worldScene;
+        if (campaignChronoScreenBytes(this.game)) {
+            const effect = new CampaignChronoScreenFx(() => this.game.campaign.yr.chronoScreenEffect());
+            worldScene.screenEffect = effect;
+            this.disposables.add(effect, () => { worldScene.screenEffect = undefined; });
+        }
         this.updatePanLimits(this.game.map, worldScene.cameraPan, worldViewport);
         const startLocationIndex = (!localPlayer || localPlayer.isObserver)
             ? this.game.getCombatants()[0].startLocation
             : localPlayer.startLocation;
-        const startPos = this.game.map.startingLocations[startLocationIndex];
+        const home = this.game.campaign?.yr ? campaignHomeTile(this.game) : undefined;
+        const startPos = home ? { x: home.rx, y: home.ry } : this.game.map.startingLocations[startLocationIndex];
         const panningHelper = new MapPanningHelper(this.game.map);
-        worldScene.cameraPan.setPan(panningHelper.computeCameraPanFromTile(startPos.x, startPos.y));
+        if (startPos) worldScene.cameraPan.setPan(panningHelper.computeCameraPanFromTile(startPos.x, startPos.y));
         try {
             console.log('[WorldView.init] startLocation', { startLocationIndex, startPos });
         }
@@ -108,7 +117,8 @@ export class WorldView {
         debugRoot.environmentHd = theater.environmentHd?.report;
         this.disposables.add(mapRenderable, () => (this.mapRenderable = undefined));
         this.mapRenderable = mapRenderable;
-        const useInstancing = this.renderer.supportsInstancing?.() ?? false;
+        // Legacy palette/sprite instancing needs a separate compatibility audit.
+        const useInstancing = this.renderer.usesLegacyInstancing?.() ?? false;
         if (!Engine.vfs) throw new Error('Voxel palette requires the local game VFS');
         const vpl = new VplFile(Engine.vfs.openFile('voxels.vpl'));
         const voxelLookup = new DataTexture(vpl.tables, 256, 32, RedFormat);
@@ -138,7 +148,8 @@ export class WorldView {
         this.disposables.add(warheadFx);
         const superWeaponFxHandler = new SuperWeaponFxHandler(this.game, renderableManager as any, lightingDirector as any);
         superWeaponFxHandler.init();
-        this.disposables.add(superWeaponFxHandler);
+        this.superWeaponFxHandler = superWeaponFxHandler;
+        this.disposables.add(superWeaponFxHandler, () => this.superWeaponFxHandler = undefined);
         const crateFxHandler = new CrateFxHandler(this.game, renderableManager as any);
         crateFxHandler.init();
         this.disposables.add(crateFxHandler);
@@ -215,6 +226,7 @@ export class WorldView {
         const bottomRight = IsoCoords.screenTileToScreen(localSize.x + localSize.width, localSize.y + localSize.height - 1);
         return { x: topLeft.x, y: topLeft.y, width: bottomRight.x - topLeft.x, height: bottomRight.y - topLeft.y };
     }
+    restoreCampaignWeather(): void { this.superWeaponFxHandler?.restoreCampaignWeather(); }
     dispose(): void {
         this.disposables.dispose();
         disposeSovietUnitsHd(this.sovietUnitsHd); this.sovietUnitsHd = undefined;

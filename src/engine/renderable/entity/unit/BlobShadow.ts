@@ -35,7 +35,7 @@ export class BlobShadow {
         const obj = this.obj;
         if (!obj)
             return;
-        let isVisible = this.gameObject.zone === ZoneType.Air ||
+        let isVisible = this.gameObject.zone === ZoneType.Air || this.gameObject.campaignParadropping ||
             (this.gameObject.isInfantry() &&
                 this.gameObject.stance === StanceType.Paradrop);
         obj.visible = isVisible;

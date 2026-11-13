@@ -23,12 +23,13 @@ p.add_argument("review", type=Path)
 p.add_argument("--ownership-references", type=Path, required=True)
 p.add_argument("--output", type=Path, help="Task-owned staging pack root")
 p.add_argument("--density", type=int, choices=[2, 4], default=2)
-p.add_argument("--theater", choices=["TEMPERATE", "SNOW", "URBAN"], default="TEMPERATE")
+p.add_argument("--theater", choices=["TEMPERATE", "SNOW", "URBAN", "NEWURBAN"], default="TEMPERATE")
 p.add_argument("--acceptance", choices=["REPRESENTATIVE_ACCEPTED_FULL_FAMILY_REVIEW_PENDING",
     "SOURCE_DERIVED_CANDIDATE_VISUAL_REVIEW_PENDING"],
     default="REPRESENTATIVE_ACCEPTED_FULL_FAMILY_REVIEW_PENDING")
 p.add_argument("--inventory", type=Path, default=Path(".artifacts/yuri-units/source-v2/inventory.json"))
 p.add_argument("--reference-report", default="result.json")
+p.add_argument("--source-context", type=Path, help="Pinned original YR task-vehicle palette and VPL inputs")
 a = p.parse_args()
 work = json.loads(a.worklist.read_text())
 boards = [b for b in work["boards"] if b["family"] == a.identity]
@@ -56,6 +57,17 @@ manifest = {
     "parts": [],
     "acceptance": a.acceptance,
 }
+if a.source_context:
+    context = json.loads(a.source_context.read_text())
+    assert context['schema'] == 'yr-task-vehicle-native-reference-inputs-v1'
+    assert context['edition'] == 'yr' and context['theater'] == a.theater == 'NEWURBAN'
+    assert a.identity in ['CBLC', 'DOLY', 'DDBX']
+    original, = [source for source in context['sources'] if source['identity'] == a.identity]
+    assert manifest['sources'] == {original['member']: original['sha256'],
+        original['hva']['member']: original['hva']['sha256']}
+    assert original['palette']['member'] == 'unitubn.pal' and original['vpl']['member'] == 'voxels.vpl'
+    manifest.update(sourcePalette=original['palette']['sha256'], sourceVpl=original['vpl']['sha256'],
+        sourceContextSha256=hashlib.sha256(a.source_context.read_bytes()).hexdigest())
 review = []
 
 

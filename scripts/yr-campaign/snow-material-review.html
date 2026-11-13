@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RA2 HD · Snow Material Review</title>
+<style>
+:root{color-scheme:dark;font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#11161c;color:#e6edf4;--stage:#29323b}
+*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:1320px;margin:auto;padding:30px 28px}
+header{padding-bottom:18px}h1{font-size:34px;line-height:1.2;margin:12px 0}h2{font-size:25px;margin:0}p{max-width:960px;margin:12px 0;color:#b7c6d5}
+.badge{display:inline-block;padding:5px 10px;border:1px solid #665431;border-radius:6px;color:#f4cb73;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.controls{position:sticky;top:0;z-index:5;background:#17212bea;backdrop-filter:blur(12px);border-block:1px solid #344352;padding:12px 28px;display:flex;justify-content:center;gap:22px;flex-wrap:wrap}
+label{display:flex;gap:9px;align-items:center;font-size:15px}select,button{font:inherit;color:inherit;background:#243443;border:1px solid #506171;border-radius:6px;padding:7px 12px;cursor:pointer}button:hover{background:#344c60}select:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #82d6eb;outline-offset:3px}
+section{margin:14px 0 36px;padding:24px;border:1px solid #344351;border-radius:12px;background:#19222c}section>p{margin:6px 0 20px;font-size:14px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px}.label{display:flex;justify-content:space-between;margin-bottom:10px;font-weight:650}.label span{font-weight:400;color:#a9bbc9;font-size:13px}
+.stage{background:var(--stage);border:1px solid #445160;border-radius:8px;min-height:510px;display:flex;align-items:center;justify-content:center;padding:20px;overflow:auto}.stage img{display:block;max-width:100%;height:auto}.native .stage img{max-width:none}.wipe{display:none}.wipe-view{position:relative;margin:auto;max-width:100%;overflow:hidden}.wipe-view img{width:100%;display:block}.wipe-new{position:absolute;inset:0;clip-path:inset(0 50% 0 0)}.wipe-line{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#f2ca76;pointer-events:none}.slider{width:100%;margin-top:16px;accent-color:#f2ca76}.wipe-labels{display:flex;justify-content:space-between;margin-top:6px;font-size:14px;color:#c7d6e1}
+details{margin-top:22px;border-top:1px solid #344351;padding-top:16px}summary{cursor:pointer;font-weight:600}details p{font-size:14px}.animation-stage{max-width:100%;overflow:auto;background:var(--stage);border:1px solid #445160;border-radius:8px;margin:14px 0;text-align:center;padding:14px}canvas{max-width:100%;height:auto}.animation-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.animation-controls input{flex:1;min-width:180px;accent-color:#82d6eb}.frame-number{font-variant-numeric:tabular-nums;min-width:110px}.master{max-width:100%;max-height:850px;background:var(--stage);margin-top:16px;border-radius:8px;object-fit:contain}.note{color:#e9c98d}footer{padding-top:0;font-size:14px;color:#aabbc9}
+@media(max-width:800px){header,main,footer{padding:22px 16px}.controls{padding:10px 14px;gap:12px}.pair{grid-template-columns:1fr}section{padding:16px}.stage{min-height:360px}h1{font-size:29px}}
+</style>
+<header>
+<span class="badge">Review pending · Active resources unchanged</span>
+<h1>Snow material review</h1>
+<p>Compare the current snow finish with new material previews for three faction power plants. Inspect clean snow surfaces, coverage, fine equipment details and transparent edges at 2X or 4X.</p>
+<p class="note">These candidates have not been applied. Your review will determine whether to proceed. Construction and reverse construction require verification before any approved revision is applied.</p>
+</header>
+<div class="controls">
+<label>Density <select id="density"><option value="4">4X</option><option value="2">2X</option></select></label>
+<label>View <select id="mode"><option value="pair">Side by side</option><option value="wipe">Swipe comparison</option></select></label>
+<label>Background <select id="background"><option value="#29323b">Slate</option><option value="#d9e4ec">Snow gray</option><option value="#ffffff">White</option><option value="#101418">Dark</option></select></label>
+<label>Scale <select id="scale"><option value="fit">Fit</option><option value="native">Native pixels</option></select></label>
+</div>
+<main id="buildings"></main>
+<footer>All images are embedded in this file. No network connection is needed. Share your preference in the task conversation; original campaign production continues while the Snow review is pending.</footer>
+<script>
+const buildings=__REVIEW_DATA__;
+const root=document.querySelector('#buildings');
+for(const building of buildings){
+ const section=document.createElement('section');section.dataset.identity=building.identity;
+ section.innerHTML=`<h2>${building.title}</h2><p>${building.identity} · Normal-state material preview</p>
+ <div class="pair"><div><div class="label">Current<span>Selected game resource</span></div><div class="stage"><img class="current" alt="${building.title}, current snow material"></div></div><div><div class="label">Candidate<span>Awaiting your review</span></div><div class="stage"><img class="candidate" alt="${building.title}, candidate snow material"></div></div></div>
+ <div class="wipe"><div class="stage"><div class="wipe-view"><img class="wipe-old" alt="Current material"><img class="wipe-new" alt="Candidate material"><div class="wipe-line"></div></div></div><input class="slider" type="range" min="0" max="100" value="50" aria-label="Reveal candidate material"><div class="wipe-labels"><span>Candidate</span><span>Current</span></div></div>
+ <details class="construction"><summary>Current construction and reverse-construction reference</summary><p>The selected construction sprite frames are preserved. Scrub or reverse this reference to inspect the original frame order and fixed placement. Preview speed is for inspection; in-game timing is unchanged.</p><div class="animation-stage"><canvas aria-label="Current construction animation"></canvas></div><div class="animation-controls"><button class="play">Play</button><button class="reverse" aria-pressed="false">Reverse</button><input class="scrub" type="range" min="0" max="${building.animation.count-1}" value="0" aria-label="Construction frame"><span class="frame-number"></span></div><p>Before applying a material revision, verify both construction and reverse construction in Snow scenes at 2X and 4X, including frame count, placement, shadows and timing.</p></details>
+ <details><summary>Full-resolution candidate artwork</summary><img class="master" alt="Full-resolution material candidate" src="${building.master}"></details>`;
+ root.append(section);
+ const slider=section.querySelector('.slider');slider.addEventListener('input',()=>{section.querySelector('.wipe-new').style.clipPath=`inset(0 ${100-slider.value}% 0 0)`;section.querySelector('.wipe-line').style.left=slider.value+'%'});
+ const animation=building.animation,canvas=section.querySelector('canvas'),ctx=canvas.getContext('2d');canvas.width=animation.width;canvas.height=animation.height;
+ const sheet=new Image();sheet.src=animation.sheet;let frame=0,playing=false,reverse=false,last=0;const scrub=section.querySelector('.scrub'),button=section.querySelector('.play');
+ const draw=()=>{ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(sheet,frame%animation.columns*animation.width,Math.floor(frame/animation.columns)*animation.height,animation.width,animation.height,0,0,animation.width,animation.height);scrub.value=frame;section.querySelector('.frame-number').textContent=`${frame+1} / ${animation.count}`};sheet.onload=draw;
+ scrub.addEventListener('input',()=>{playing=false;button.textContent='Play';frame=Number(scrub.value);draw()});button.addEventListener('click',()=>{playing=!playing;button.textContent=playing?'Pause':'Play'});
+ section.querySelector('.reverse').addEventListener('click',event=>{reverse=!reverse;event.currentTarget.setAttribute('aria-pressed',String(reverse));event.currentTarget.textContent=reverse?'Forward':'Reverse'});
+ section.querySelector('.construction').addEventListener('toggle',event=>{if(!event.target.open){playing=false;button.textContent='Play'}});
+ const tick=time=>{if(playing&&time-last>=100){frame=(frame+(reverse?-1:1)+animation.count)%animation.count;draw();last=time}requestAnimationFrame(tick)};requestAnimationFrame(tick);
+}
+function update(){const density=document.querySelector('#density').value,mode=document.querySelector('#mode').value;document.body.classList.toggle('native',document.querySelector('#scale').value==='native');document.documentElement.style.setProperty('--stage',document.querySelector('#background').value);
+ for(const building of buildings){const section=document.querySelector(`[data-identity="${building.identity}"]`),images=building.images[density];for(const [selector,key] of [['.current','current'],['.candidate','candidate'],['.wipe-old','current'],['.wipe-new','candidate']]){const image=section.querySelector(selector);image.src=images[key];image.width=images.width;image.height=images.height}section.querySelector('.pair').style.display=mode==='pair'?'grid':'none';section.querySelector('.wipe').style.display=mode==='wipe'?'block':'none';section.querySelector('.wipe-view').style.width=images.width+'px';}}
+document.querySelectorAll('.controls select').forEach(select=>select.addEventListener('change',update));update();
+</script>
+</html>

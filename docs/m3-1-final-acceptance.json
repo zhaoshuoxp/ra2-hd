@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "status": "M3_1_MAC_NORMAL_PROTOTYPE_USER_ACCEPTED",
+  "acceptedOn": "2026-10-23",
+  "decision": {
+    "source": "Explicit acceptance in the current user conversation",
+    "englishTranslation": "Acceptance passed."
+  },
+  "scope": [
+    "RA2 Soviet 01 Normal playable campaign prototype",
+    "Original mission objectives, source-driven scripts, victory, failure and save/restore",
+    "Accepted memorial, flag, Urban v5 roads, localized rank and animated original result",
+    "Authored 2X faction/loading interface and original hover animation",
+    "Original initial bridge destruction and ordinary engineer repair"
+  ],
+  "source": {
+    "taskBranch": "task/m3-1-soviet01",
+    "approvedTaskHead": "3959b372fae1a96402204e23d7d85ebff1bfd66d",
+    "runtimeHead": "bc0e41defd68250d0ed40686b4b1c51b345b5800",
+    "campaignManifest": {
+      "path": ".local/campaign/ra2/sov01t/manifest.json",
+      "bytes": 12123,
+      "sha256": "8400a42032b4de312cab9a3c7a083373fd8f113f131d91d1adadc86d48942596"
+    }
+  },
+  "approvedReview": {
+    "path": ".artifacts/m3-1/M3.1-Embedded-Review.html",
+    "bytes": 17745411,
+    "sha256": "51b14d566d4bec67d50bf24b069601b028f4564e3c02da7415da82dce01bcb56",
+    "scope": "Identity observed at user acceptance, before the acceptance-status/document update. Native image/video bytes remain unchanged.",
+    "receipt": {
+      "path": ".artifacts/m3-1/user-accepted-review-receipt.json",
+      "bytes": 5320,
+      "sha256": "677802a7046f58d3eeeb67da15f84c18200a2b5354430533e0e6aee18cef3329"
+    },
+    "verification": {
+      "path": ".artifacts/m3-1/user-accepted-review-verification.json",
+      "bytes": 1184,
+      "sha256": "69057f0de708a97b3b9da8dce1c8721b07a675f54b320cecb15e8e785bd6b18f"
+    }
+  },
+  "approvedMedia": [
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_02-hd-faction-menu.webp",
+      "bytes": 2035338,
+      "sha256": "260f28be37bca9549fa0c95a6950cc4a193790041a81ba0f156ab05b41306312"
+    },
+    {
+      "path": ".artifacts/m3-1/interface-hd/native-r4/menu-animation.webm",
+      "bytes": 391849,
+      "sha256": "c20f5d670c328048d13d83bed98c23061bc6aa6b1f7f9735a2ab22202e7e6118"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_03-hd-soviet01-loading.webp",
+      "bytes": 1896564,
+      "sha256": "dea5ea559c7ce9591821734659acde9588da5710d3d689a9aab27a8c02e9aa00"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_01-original-faction-menu.webp",
+      "bytes": 1103252,
+      "sha256": "089353fc198bc938971a6c8fe70b6af56c2a286797c24fcc25769a5f20ecf29b"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_bridge-detail-4x-before.webp",
+      "bytes": 1470752,
+      "sha256": "014d4283aedfad5cf6956118531bed8b9cf8cea9d68957392921c9c3edff2d17"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_bridge-detail-4x-after.webp",
+      "bytes": 1506328,
+      "sha256": "867fd7f8668254f67077c9647f4796cf3a006db74837fa420bfd1a5cadefbd92"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_bridge-detail-1x-before.webp",
+      "bytes": 944298,
+      "sha256": "c9978b8aa19d0828a388b381e0316c3a86c16d2bf9561195fdcfa812a0372f3f"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_bridge-detail-1x-after.webp",
+      "bytes": 952622,
+      "sha256": "16760fb41b9db77a818fcca660bf5f437c429f04ad8bf1867e83863cfcb09fd4"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-native-r4_memorial-detail-4x.webp",
+      "bytes": 458620,
+      "sha256": "c6fe631dfbcf96233f7f483e74ad4f17bd649b5fdcd580ef9c8c291cf513402e"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-score-r1_02-original-campaign-medal-and-text.webp",
+      "bytes": 1591098,
+      "sha256": "d7a14de068ef3819b0567033e728a3c04bcfa2935f022833133d4def873e9d73"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-score-r1/result-animation.webm",
+      "bytes": 723838,
+      "sha256": "503a38fcb1518714b98d08ca804237ff601aea45e6e5811630a6905b197c0111"
+    }
+  ],
+  "technicalReceiptAtAcceptance": {
+    "path": "docs/m3-1-interface-bridge.json",
+    "bytes": 34679,
+    "sha256": "e5fdd98282ef737eb1ab141e2ce874c7dbbe2a6b043f2be30edd072bf62e6aa8",
+    "preservedAtGitHead": "3959b372fae1a96402204e23d7d85ebff1bfd66d"
+  },
+  "validation": {
+    "focusedCases": 47,
+    "failed": 0,
+    "assertions": 303,
+    "entryTypecheck": "PASS",
+    "macNativeInterfaceAndBridge": "PASS",
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "originalEngineDifferentialTiming": "NOT_CERTIFIED"
+  },
+  "boundaries": {
+    "onlyMission": "RA2 Soviet 01 Normal",
+    "otherDifficultiesAndMissions": "OUTSIDE_ACCEPTED_SCOPE",
+    "mainIntegrated": false,
+    "pushed": false,
+    "published": false,
+    "desktopPackagesModified": false,
+    "cleanupPerformed": false
+  },
+  "preservation": "Keep the frozen runtime, controlled campaign resources, native/failed evidence, image masters, final gallery, profiles and Git history.",
+  "nextWork": "Use this conversation for same-outcome corrections; start a new execution conversation for a separately authorized next campaign batch. Keep the planning/review conversation available."
+}

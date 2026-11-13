@@ -1,0 +1,111 @@
+{
+  "schema": "yr-feedback-correction-checkpoint-v1",
+  "date": "2026-11-08",
+  "revision": "r2",
+  "status": "URGENT_SOVIET01_SOURCE_AND_NATIVE_CORRECTION_QUALIFIED",
+  "baseMain": "fba24c852f062bf9e556bd42fcbae1e78ae390ff",
+  "originalPlayableMaps": 26,
+  "yrPlayableMaps": 14,
+  "semanticsVersion": 46,
+  "storyHdLoading": {
+    "complete": 38,
+    "total": 38,
+    "original": {
+      "complete": 24,
+      "total": 24
+    },
+    "yr": {
+      "complete": 14,
+      "total": 14
+    }
+  },
+  "plannedWorldArtMaterialWaits": [],
+  "retainedOriginalQualifications": [
+    "Soviet01 particle12 reachability/allocation/lifecycle remains unconfirmed.",
+    "Local installation contains CnCNet patches; pristine original AI recruitment/cadence/ties, RNG/particle/transport ordering remain qualified.",
+    "Allied03 spark phase/blend, selected optional unattached media ordinals and archive-absent CASIN01W/S/E art retain their existing boundaries.",
+    "Complete victories for every mission at all three difficulties are not claimed.",
+    "Native Tanya debris attribution is verified; pristine-executable debris trajectories are not compared.",
+    "Naval C4 repair uses source C4Delay with a real retreat; pristine-executable naval fuse and escape trajectories are not compared.",
+    "The exact reported Soviet01 missing-cell trigger has not been reproduced. Position/movement guards and native travel routes are qualified separately.",
+    "The source45 all14-goal qualifications remain historical. The urgent source46 correction has targeted native stage checks; full new-version victories across all missions are not claimed.",
+    "Thirteen Allied feedback groups remain partially open; see the feedback ledger."
+  ],
+  "originalDelivery": "docs/yr-campaign-delivery-20261108.json",
+  "alliedFeedback": "docs/yr-campaign-allied-feedback-20261108.json",
+  "sovietFeedback": "docs/yr-campaign-soviet01-feedback-20261108.json",
+  "host": {
+    "file": ".artifacts/yr-campaign/feedback-host-r2/summary.json",
+    "sha256": "9bc7ecda611bede16e7057de2715bf63e28081bb182ecd1019009d94f60db772",
+    "counts": {
+      "pass": 2188,
+      "failedCases": 0,
+      "loadErrors": 0,
+      "skipped": 0,
+      "processErrors": 0
+    },
+    "executions": 318,
+    "omitted": 0
+  },
+  "typecheck": {
+    "file": "/private/tmp/ra2-yr-feedback-typecheck-r5.log",
+    "status": "PASS"
+  },
+  "sourceNative": [
+    {
+      "file": ".artifacts/yr-campaign/soviet-feedback-trainer-source46-base-r1/report.json",
+      "sha256": "dd8f171cc4cd317b5eceb47415beff589146438de13fb7a5d9c5b3ed9ebd99c1",
+      "status": "PASS_NATIVE_SOVIET01_BOTH_ORIGINAL_TIME_TRAVELS_BASE_CONTACT_AND_3600_STABLE_TICKS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet-feedback-return46-4x-r2/report.json",
+      "sha256": "51a9eee3e0ca0b97572a78d40d2a0146736f4b9db44a9046532214ba00b1f2cd",
+      "status": "PASS_ORIGINAL_RETURN_CHECKPOINT_BASE_CONTACT_AND_9600_TURNS_NO_MISSING_CELL"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet-feedback-jurassic46-2x-r1/report.json",
+      "sha256": "232cca64ce8f63487611387ac46b41815aa583b10adfaddd60de148a070781a3",
+      "status": "PASS_SOURCE_JURASSIC_AUTONOMOUS_FIRE_AND_NATIVE_WATER_DINOSAUR_WALK_FRAMES"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet-feedback-jurassic46-4x-r2/report.json",
+      "sha256": "ef9d150f8558c0faab7ec8f496b4a925ddf13017d322fd6143dc4eaaa59f284d",
+      "status": "PASS_SOURCE_JURASSIC_AUTONOMOUS_FIRE_AND_NATIVE_WATER_DINOSAUR_WALK_FRAMES"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet-feedback-fresh46-naval-4x-r1/report.json",
+      "sha256": "b5322d12adf126c7241570e4178ba7338336bb3d7bd95a59869919bf5ecb2404",
+      "status": "PASS_NATIVE_ORIGINAL_NAVAL_OBJECTIVE_LANDING_AND_NAMED_RESTART"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-native-ui-r2/report.json",
+      "sha256": "f149725fd41aad991f8cbd27cc4e072c94ca3cd659db0083d7bf470e04ca091d",
+      "status": "PASS_ORIGINAL_CAMPAIGN_OBJECTIVES_AND_NATIVE_MOUSE_SKIP_WITH_UNLOCKED_POINTER"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-fixed-all01-r1/report.json",
+      "sha256": "b9d77f35d89107cd0156c4126990d6a27e0baed4085593f55c9d0d71bd8b82e8",
+      "status": "PASS_REPORTED_OPENING_REGRESSIONS_ORIGINAL_MAPS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-fixed-all02-r1/report.json",
+      "sha256": "eba8507e13c2e15b186a855b22c66d17b5088320c138e258000e67025315d4e7",
+      "status": "PASS_REPORTED_OPENING_REGRESSIONS_ORIGINAL_MAPS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-fixed-all06-r2/report.json",
+      "sha256": "73e42e51d3c2be56576858dc8d83cd0cf2ab34af1c8049f26367cd1144750022",
+      "status": "PASS_REPORTED_OPENING_REGRESSIONS_ORIGINAL_MAPS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-all07-redeploy-r2/report.json",
+      "sha256": "573af7e8d978b90eb16fc2884055887162f09f4dd4413a5143c8463bf1a8b34f",
+      "status": "PASS_ORIGINAL_ALLIED07_CRITICAL_YARD_PACK_MCV_REDEPLOY_AND_RESTART"
+    }
+  ],
+  "packagedVerification": "PENDING_SEPARATE_DELIVERY_RECEIPT",
+  "acceptedResources": "All accepted unit artwork, old building snow and original campaign maps remain selected. No new artwork replaces accepted resources.",
+  "userAcceptance": "PENDING",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "publication": "LOCAL_ONLY_NO_PUSH"
+}

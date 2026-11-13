@@ -3,6 +3,7 @@ import { Vector3 } from "@/game/math/Vector3";
 import { InfDeathType } from "@/game/gameobject/infantry/InfDeathType";
 import { StanceType } from "@/game/gameobject/infantry/StanceType";
 import { Task } from "@/game/gameobject/task/system/Task";
+import { notifyCampaignParadropLanding } from '../../campaign/CampaignLanding';
 export class ParadropTask extends Task {
     private game: any;
     constructor(game: any) {
@@ -28,6 +29,7 @@ export class ParadropTask extends Task {
             e.infDeathType = InfDeathType.None;
             this.game.destroyObject(e, undefined, true);
         }
+        else notifyCampaignParadropLanding(this.game, e);
         return true;
     }
 }

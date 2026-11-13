@@ -7,6 +7,9 @@ export class IdleActionTrait {
     private cooldownTicks: number = Number.POSITIVE_INFINITY;
     private _actionDueThisTick: boolean = false;
     private idle: boolean = false;
+    private campaignIdleRequests = 0;
+    requestCampaignIdle(): void { this.campaignIdleRequests++; }
+    getCampaignIdleRequests(): number { return this.campaignIdleRequests; }
     [NotifyTick.onTick](gameObject: GameObject, world: World): void {
         this._actionDueThisTick = false;
         const isIdle = !gameObject.unitOrderTrait.hasTasks();

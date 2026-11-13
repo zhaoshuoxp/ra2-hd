@@ -31,6 +31,7 @@ import type { Unit } from "@/game/gameobject/Unit";
 import type { Locomotor } from "@/game/gameobject/locomotor/Locomotor";
 import type { Weapon } from "@/game/gameobject/Weapon";
 import { Target } from "@/game/Target";
+import { findCampaignNavalEntry } from '@/game/map/findCampaignNavalEntry';
 const VELOCITY_FACTOR = 1.5;
 const MAX_PLANNING_TICKS = 200;
 const WAIT_TICKS = 40;
@@ -38,6 +39,7 @@ const MAX_UNREACHABLE_TARGETS = 5;
 interface MoveOptions {
     targetOffset?: Vector2;
     allowOutOfBoundsTarget?: boolean;
+    campaignNavalEntry?: boolean;
     forceMove?: boolean;
     strictCloseEnough?: boolean;
     closeEnoughTiles?: number;
@@ -248,6 +250,12 @@ export class MoveTask extends Task {
             ignoredBlockers: [],
             blockedPathNodes: []
         };
+        let entryPath: Tile[] | undefined;
+        if (this.allowsCampaignNavalEntry(unit) && !this.game.map.mapBounds.isWithinBounds(startTile)) {
+            entryPath = findCampaignNavalEntry(this.game.map, unit, this.targetTile);
+            if (!entryPath) return plan;
+            startTile = entryPath[0]; startBridge = undefined;
+        }
         const startBuilding = this.game.map
             .getObjectsOnTile(startTile)
             .find((obj) => obj.isBuilding());
@@ -293,6 +301,8 @@ export class MoveTask extends Task {
         const allBlockedNodes = [...this.blockedPathNodes, ...plan.blockedPathNodes];
         const hasExcludedNodes = forceGroundLayer || this.allObstaclesAreBlockers || !!allBlockedNodes.length;
         const path = this.game.map.terrain.computePath(unit.rules.speedType, unit.isInfantry(), startTile, !!startBridge, this.targetTile, forceGroundLayer ? false : this.toBridge, {
+            avoidMissingCorners: this.game.gameOpts.campaign?.edition === 'yr'
+                && (this.game.gameOpts.campaign.semanticsVersion ?? 0) >= 40,
             maxExpandedNodes: this.allObstaclesAreBlockers
                 ? Math.min(300, this.options?.maxExpandedPathNodes ?? Number.POSITIVE_INFINITY)
                 : this.options?.maxExpandedPathNodes,
@@ -304,8 +314,14 @@ export class MoveTask extends Task {
                         this.nodeIsBlockedForPathfinding(node, unit, allIgnoredBlockers, allBlockedNodes))
                 : undefined
         });
-        plan.path = path;
+        plan.path = entryPath && (path.length || startTile === this.targetTile)
+            ? [...(path.length ? path : [{ tile: startTile, onBridge: undefined }]),
+                ...entryPath.slice(1).map(tile => ({ tile, onBridge: undefined }))] : path;
         return plan;
+    }
+    private allowsCampaignNavalEntry(unit: Unit): boolean {
+        return !!this.options?.campaignNavalEntry && !!unit.rules.naval
+            && (this.game.gameOpts.campaign?.semanticsVersion ?? 0) >= 18;
     }
     private ensureGroundLayerUnderBridge(unit: Unit): void {
         if (!Target.usesGroundLayerUnderBridge(unit) || !unit.onBridge) {
@@ -399,6 +415,9 @@ export class MoveTask extends Task {
     }
     protected hasReachedDestination(unit: Unit): boolean {
         return !this.path!.length;
+    }
+    hasTarget(tile: Tile, toBridge: boolean): boolean {
+        return this.targetTile === tile && this.toBridge === toBridge;
     }
     updateTarget(tile: Tile, toBridge: boolean): void {
         this.targetTile = tile;
@@ -570,7 +589,8 @@ export class MoveTask extends Task {
                     }
                 }
                 for (const node of pathToCheck) {
-                    if (!map.terrain.getPassableSpeed(node.tile, unit.rules.speedType, unit.isInfantry(), !!node.onBridge, this.options?.ignoredBlockers)) {
+                    if (!map.terrain.getPassableSpeed(node.tile, unit.rules.speedType, unit.isInfantry(), !!node.onBridge,
+                        this.options?.ignoredBlockers, false, this.allowsCampaignNavalEntry(unit))) {
                         if (this.options?.stopOnBlocker &&
                             map.terrain
                                 .findObstacles(node, unit)
@@ -895,6 +915,21 @@ export class MoveTask extends Task {
             if (distance.length()) {
                 const oldTile = unit.tile;
                 const allowOutOfBounds = locomotor.allowOutOfBounds;
+                const offset = unit.position.getTileOffset();
+                const nextX = oldTile.rx + (offset.x + distance.x) / Coords.LEPTONS_PER_TILE;
+                const nextY = oldTile.ry + (offset.y + distance.z) / Coords.LEPTONS_PER_TILE;
+                if (!allowOutOfBounds && !this.game.map.tiles.getByMapCoords(Math.floor(nextX), Math.floor(nextY))) {
+                    // Steering and subcell offsets can cross an absent edge
+                    // cell even when the path nodes themselves are valid.
+                    // Fail this route from its last real position so the
+                    // caller may replan, without inventing ground cells.
+                    unit.moveTrait.unreservePathNodes();
+                    unit.moveTrait.velocity.set(0, 0, 0);
+                    unit.moveTrait.moveState = MoveState.Idle;
+                    unit.moveTrait.lastMoveResult = MoveResult.Fail;
+                    unit.moveTrait.locomotor = undefined;
+                    return true;
+                }
                 if (distance.y) {
                     const oldElevation = unit.tileElevation;
                     unit.position.moveByLeptons3(distance, allowOutOfBounds);

@@ -23,6 +23,7 @@ export class Production {
     private maxTechLevel: number;
     private gameOpts: any;
     private rules: any;
+    private sourcePrerequisiteTypes?: Set<string>;
     private allAvailableObjects: any[];
     private buildSpeedModifier: number;
     private queues: Map<QueueType, ProductionQueue>;
@@ -32,7 +33,7 @@ export class Production {
     private veteranTypes: Set<any>;
     private stolenTech: Set<SideType>;
     static factory(player: any, rules: any, gameOpts: any, availableObjects: any[]): Production {
-        const production = new Production(player, rules.mpDialogSettings.techLevel, gameOpts, rules, availableObjects);
+        const production = new Production(player, player.campaignTechLevel ?? rules.mpDialogSettings.techLevel, gameOpts, rules, availableObjects);
         const maxQueueSize = rules.general.maximumQueuedObjects + 1;
         production.addQueue(QueueType.Structures, new ProductionQueue(QueueType.Structures, 1, 1));
         production.addQueue(QueueType.Armory, new ProductionQueue(QueueType.Armory, 1, 1));
@@ -47,6 +48,10 @@ export class Production {
         this.maxTechLevel = techLevel;
         this.gameOpts = gameOpts;
         this.rules = rules;
+        if (gameOpts.campaign?.edition === 'yr' && gameOpts.campaign.semanticsVersion >= 39) {
+            this.sourcePrerequisiteTypes = new Set<string>([...rules.getIni().getSection('BuildingTypes').entries.values()]
+                .map((name: string) => name.toUpperCase()));
+        }
         this.allAvailableObjects = availableObjects;
         this.buildSpeedModifier = 1;
         this.queues = new Map();
@@ -121,7 +126,7 @@ export class Production {
     getQueueForFactory(type: FactoryType): ProductionQueue {
         return this.getQueue(this.getQueueTypeForFactory(type));
     }
-    isAvailableForProduction(object: any): boolean {
+    isAvailableForProduction(object: any, campaignBaseNode = false): boolean {
         if (!this.gameOpts.superWeapons && object.superWeapon &&
             PRIMARY_SUPER_WEAPONS.has(this.rules.getSuperWeapon(object.superWeapon).type)) return false;
         if (trainerEffects(this.player)?.technology) {
@@ -131,12 +136,21 @@ export class Production {
         const secret = this.hasSecretProduction(object);
         if (secret) return object.techLevel !== -1 && object.techLevel <= this.maxTechLevel &&
             Array.from(this.player.buildings).some((b: any) => b.factoryTrait?.type === this.getFactoryTypeFor(object));
-        return (object.isAvailableTo(this.player.country) &&
-            object.techLevel !== -1 &&
-            object.techLevel <= this.maxTechLevel &&
+        // Scenario AI countries are distinct registered identities. Their
+        // explicit team requests must not inherit a parent country's bans.
+        const country = this.player.isAi && (this.player.campaignSemanticsVersion ?? 1) >= 17
+            ? { name: this.player.country.name } : this.player.country;
+        // Explicit scenario AI base nodes do not use the human prerequisite
+        // tree. Original YR plans also contain non-sidebar technology levels.
+        const scriptedBase = campaignBaseNode && object.type === ObjectType.Building && this.player.isAi
+            && (this.player.campaignSemanticsVersion ?? 1) >= 18;
+        const sourceTechnology = scriptedBase && this.gameOpts.campaign?.edition === 'yr'
+            && this.gameOpts.campaign.semanticsVersion >= 40;
+        return (object.isAvailableTo(country) &&
+            (sourceTechnology || object.techLevel !== -1 && object.techLevel <= this.maxTechLevel) &&
             !(object.buildLimit === 0 && !this.player.isAi) &&
             this.hasFactoryFor(object) &&
-            this.meetsPrerequisites(object) &&
+            (scriptedBase || this.meetsPrerequisites(object)) &&
             this.meetsStolenTech(object));
     }
     private hasSecretProduction(object: any): boolean {
@@ -196,7 +210,9 @@ export class Production {
                     return false;
             }
             else if (buildingNames.indexOf(upperPrereq) === -1) {
-                return false;
+                // The original parser omits names absent from the allocated
+                // BuildingType list. Registered slots without rules still count.
+                if (!this.sourcePrerequisiteTypes || this.sourcePrerequisiteTypes.has(upperPrereq)) return false;
             }
         }
         return true;

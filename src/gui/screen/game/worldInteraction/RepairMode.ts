@@ -1,4 +1,5 @@
 import { PointerType } from '@/engine/type/PointerType';
+import { canControlOwner } from '@/game/campaign/CampaignControl';
 import { EventDispatcher } from '@/util/event';
 export class RepairMode {
     private readonly _onExecute = new EventDispatcher<RepairMode, any>();
@@ -38,7 +39,7 @@ export class RepairMode {
         return this.game.map
             .getObjectsOnTile(tile)
             .find((gameObject: any) => gameObject.isBuilding?.() &&
-            gameObject.owner === this.player &&
+            canControlOwner(this.player, gameObject.owner) &&
             gameObject.healthTrait.health < 100 &&
             gameObject.rules.repairable &&
             gameObject.rules.clickRepairable);

@@ -1,0 +1,1208 @@
+{
+  "status": "M3_1_FEEDBACK_R2A_MAC_TECHNICAL_AND_DESKTOP_DELIVERY_PASS_USER_TEST_PENDING",
+  "recordedAt": "2026-10-24T07:10:57.617Z",
+  "source": {
+    "runtimeHead": "3c33a07ee732fb5e97fa00f0c57e6787d67b9e04",
+    "acceptedBaseHead": "bc0e41defd68250d0ed40686b4b1c51b345b5800",
+    "changedRuntimePaths": [
+      "desktop/main.mjs",
+      "public/res/locale/en-US.json",
+      "public/res/locale/zh-CN.json",
+      "public/res/locale/zh-TW.json",
+      "public/res/presentation/campaign-backdrop-topography-r2a.png",
+      "public/res/presentation/campaign-backdrop-world-r2a.png",
+      "public/res/presentation/campaign-loading-housing-r2.png",
+      "src/gui/campaign/CampaignBackdrop.tsx",
+      "src/gui/campaign/CampaignChrome.tsx",
+      "src/gui/campaign/CampaignInterfaceHd.ts",
+      "src/gui/campaign/CampaignLoadingArtwork.ts",
+      "src/gui/campaign/CampaignMediaPlayer.ts",
+      "src/gui/campaign/CampaignPresentation.ts",
+      "src/gui/campaign/CampaignResult.tsx",
+      "src/gui/campaign/CampaignScorePresentation.ts",
+      "src/gui/campaign/CampaignSelection.tsx",
+      "src/gui/campaign/CampaignSubtitleTracks.ts",
+      "src/gui/campaign/CampaignSubtitles.ts",
+      "src/gui/screen/game/GameScreen.ts",
+      "src/gui/screen/game/loadingScreen/CampaignLoadingScreenApi.tsx",
+      "src/gui/screen/mainMenu/MainMenuRootScreen.ts",
+      "src/gui/screen/mainMenu/campaign/CampaignScreen.ts",
+      "src/gui/screen/mainMenu/component/MainMenu.ts",
+      "src/gui/screen/mainMenu/score/ScoreScreen.ts",
+      "src/gui/trainer/TrainerToolbar.tsx",
+      "src/gui/trainer/trainer.css"
+    ],
+    "unchangedGameRulesScriptsAndSaveSchema": true,
+    "gameAndCampaignModulesVerifiedInReleaseNativeEndChecks": [
+      {
+        "path": "assets/CampaignScreen-BZA7F6jn.js",
+        "bytes": 10825,
+        "sha256": "309bb3c05b400eefaaa4bfd26d0d0d09287510132fd463d5498cf609484b8a9a"
+      },
+      {
+        "path": "assets/GameScreen-CNtiT_wg.js",
+        "bytes": 136916,
+        "sha256": "d3930bd06fca329bdf8b3c41adf23727414d07d9d9fdff1cac7578702ea8e314"
+      }
+    ]
+  },
+  "changes": [
+    "Native vector faction arrows with mutually exclusive hover/keyboard focus animation.",
+    "Generated frameless wide backgrounds for selection, loading and results; original subject proportions and one loading world background.",
+    "Reference-derived silver loading end caps and ribbed grips, dark socket, cables and segmented luminous fill; fixed Original fallback geometry.",
+    "Media-time captions in all three UI languages with native DOM text rendering.",
+    "Original campaign accomplishment/failure voices and one completed victory cheer.",
+    "Offline campaign trainer sessions and popup layering; real changes mark the mission modified and disable formal checkpoint/completion eligibility."
+  ],
+  "preservation": {
+    "unchangedBundledGameResourceFiles": 14004,
+    "campaignManifest": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r2a/Relocated R2a Test/RA2-HD-M3.1-Mac-arm64-20261023-R2a/Red Alert 2 HD M3.1 Campaign R2a.app/Contents/Resources/GameResources/campaign/ra2/sov01t/manifest.json",
+      "bytes": 12123,
+      "sha256": "8400a42032b4de312cab9a3c7a083373fd8f113f131d91d1adadc86d48942596"
+    },
+    "map": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r2a/Relocated R2a Test/RA2-HD-M3.1-Mac-arm64-20261023-R2a/Red Alert 2 HD M3.1 Campaign R2a.app/Contents/Resources/GameResources/campaign/ra2/sov01t/sov01t.map",
+      "bytes": 184260,
+      "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f"
+    },
+    "signedCandidatePromotion": {
+      "candidateStage": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r2a/stage-native-release-r2",
+      "candidateInventorySha256": "f38ea51484a3ed96159f0dde341096f1d03b33a81d962d694afb4e46e5db984b",
+      "allAppBytesIdenticalToNativeCandidate": true,
+      "nativeSignaturePreservedAndVerified": true,
+      "review": {
+        "status": "PASS_ALL_NATIVE_SCREENSHOTS_EMBEDDED_BYTE_IDENTICALLY",
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r2a/M3.1-Feedback-R2a-Review.html",
+        "bytes": 48466095,
+        "sha256": "d436e953ffa6712a6f5bf5fb73d9b012027f9e5336ae1ff9174639d070c6f8d9",
+        "sourceHead": "3c33a07ee732fb5e97fa00f0c57e6787d67b9e04",
+        "images": [
+          {
+            "path": ".artifacts/m3-1/interface-hd/source/progressHousing-0.png",
+            "bytes": 22859,
+            "sha256": "34b97f8584f03b93aca83d7deb34c7de6f109b6c2308679ddbc00f1b8a137bcd"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/selection-1680x720.png",
+            "bytes": 3225561,
+            "sha256": "5098dfa3474923293305ef4fb23eb40d5249180daf738d8f5650bcaefef31cef"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/selection-720x900.png",
+            "bytes": 1937287,
+            "sha256": "47557a8b7b0e86315d9e406e8ee216f860c21f58c8dbde0bba8634af070b04a7"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/arrows-one-active-faction.png",
+            "bytes": 2530180,
+            "sha256": "5fbe5e455b0bafda03d09627539f963fa62d5119cfde5ef17ffc3368ebe8b48f"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/loading-zh-CN-1680x720.png",
+            "bytes": 3209898,
+            "sha256": "d53af2c98399b29fc483b0c9fe08ccebfa460c466a3267f532bd4735f8fa462f"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/loading-zh-CN-720x900.png",
+            "bytes": 1754374,
+            "sha256": "6ad24366d8128e0a7c682393437f167be06da9ec2ef3f9b7d8940ebb237e3694"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/loading-complete-component.png",
+            "bytes": 321825,
+            "sha256": "8de1306aaa0380078b6a202e3fa9900ac14dc7e61eab17ba4a6df584ac217d76"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/subtitle-zh-CN.png",
+            "bytes": 1624788,
+            "sha256": "2d4fe458e0d3000a10daadc0e9021c5c9271af7e2531de294b4c2f9d998884ea"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/native-en-final/subtitle-en-US.png",
+            "bytes": 2369790,
+            "sha256": "154dc7de7e4d7e04eaa3641366d9ae9cb1907bc170434c7e7767614965dc99a3"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/native-tw-final/subtitle-zh-TW.png",
+            "bytes": 2366220,
+            "sha256": "65fcacdd844a9e95d6c78c78f141c57a3753d4b717db0c0dc67eef38bc78af97"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/game-information-upper-right.png",
+            "bytes": 5800675,
+            "sha256": "278669eccf5c349a9e3a5a11852b2d36a0ebc962c267db3ed68cd21c771aa892"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/trainer-clickable-modified-campaign.png",
+            "bytes": 5711610,
+            "sha256": "7f88e5c7000eeee5177e2ae94c27bef6055fb111c57d1aa0e714ffe1b34f964f"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/end-victory-release/score-victory-1680x720.png",
+            "bytes": 3712096,
+            "sha256": "45a20ba09150790a60ff69f2351e1ac6f9ae4baccefaee3f76bc9fcddb60c134"
+          },
+          {
+            "path": ".artifacts/m3-1/feedback-r2a/end-defeat-release/score-defeat-720x900.png",
+            "bytes": 1752851,
+            "sha256": "df4c54ed9c947aaf1c56e1bc863353fd704cee80dc27a69f1791a85b2056d989"
+          }
+        ]
+      }
+    },
+    "uiBudgetBytes": 16777216,
+    "metalMasterIncludedInBudget": true,
+    "retainedPriorSourceArchive": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/campaign-entry-r1/RA2-HD-M3.1-Mac-arm64-20261023-R1.zip",
+      "bytes": 5705323481,
+      "sha256": "042fc46991b963e13a9e5fdae189b8ae1f3e18b1c990466da832a6727a027574"
+    },
+    "priorDesktopArchiveAtFinalAudit": {
+      "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261023-R1.zip",
+      "status": "NOT_PRESENT_AT_FINAL_AUDIT",
+      "note": "The preceding delivered Desktop path is absent. Its source ZIP and verified historical delivery receipt remain retained; no cause is inferred."
+    },
+    "acceptedGallery": {
+      "path": ".artifacts/m3-1/M3.1-Embedded-Review.html",
+      "bytes": 17755438,
+      "sha256": "6fc934a851f7be5e3a4e9b402d4e31e7a22936d18b85f6694e5c7a53a61221f5"
+    },
+    "olderPackagesProfilesArtEvidenceAndReviewPreserved": true
+  },
+  "media": {
+    "source": "/Users/Aone/RA2remaster/Resource/Command and Conquer Red Alert II/subtitle.txt",
+    "sourceSha256": "c26df01e686f8a988a21f1d48998fd01b35b0b269f3d780f2089d3d86e586229",
+    "tracks": [
+      {
+        "movie": "s01_f00e",
+        "sourceBlockSha256": "24103f593c57e1f5dccfbc0ea7ca3b8e2fa18ad62ad7d37c4a8f10c6ed58719d",
+        "cues": 33
+      },
+      {
+        "movie": "s01_p01e",
+        "sourceBlockSha256": "e939b80e2c89952eeea1772f9f7018dc2a20f0d5b5070ab5605b1351bc28e106",
+        "cues": 2
+      }
+    ],
+    "timing": "hours:minutes:seconds:sixtieths; explicit durations are clipped at the next cue",
+    "localization": {
+      "zh-CN": "Locally supplied original subtitle text and timecodes.",
+      "zh-TW": "ICU Simplified-Traditional conversion of the supplied Chinese track.",
+      "en-US": "English translation of the supplied Chinese track; not a verbatim English-audio transcription."
+    },
+    "scope": "Only the two prepared Soviet Mission 01 movies. Original movie, map and manifest bytes remain unchanged."
+  },
+  "material": {
+    "schema": "campaign-loading-housing-reference-r2",
+    "tool": "Built-in image_gen imagegen skill",
+    "source": ".artifacts/m3-1/interface-hd/source/progressHousing-0.png",
+    "sourceSha256": "34b97f8584f03b93aca83d7deb34c7de6f109b6c2308679ddbc00f1b8a137bcd",
+    "asset": "public/res/presentation/campaign-loading-housing-r2.png",
+    "assetSha256": "2ee36a24f2aed4adbd60c9489d6404b420041ce433d14c798967f7865119e9ee",
+    "generatedMaster": "/Users/Aone/.codex/generated_images/01a166b0-3b7b-7212-bd96-264b476e987a/exec-29737987-cce3-4b75-8ce7-56d3ceb2f698.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "rendering": "The unchanged generated master is displayed through three SVG viewports at source y=410, height=81. Fixed 172-logical-pixel end slices retain the original cap and grip proportions. The center extends with the viewport; native SVG draws red cables and the separate luminous fill. The full decoded master is charged to the existing 16 MiB UI budget.",
+    "prompt": "Edit target: this isolated horizontal software progress-indicator metal frame. It is an empty ornamental UI frame, with no objects or scenes.\nRecreate it faithfully at high definition, ideally 3200 by 160 pixels (20:1 aspect ratio), on a truly transparent background. Keep the full original layout and outline exactly: sculpted brushed silver end caps at both ends, dark finely ribbed grips, two small silver collars framing a long empty dark segmented tube. Thin red decorative cables follow the outer edge. Match the original faceted shapes, dark charcoal color, silver reflections and small material scuffs. Improve only surface clarity and detail. The end caps should have realistic brushed metal grain and carefully defined bevels, without becoming flat smooth gradients. Front-facing orthographic UI sprite. Keep the empty center dark; the application will draw the orange progress fill separately. No text, no added bolts, no backdrop, no drop shadow, no cropping, no extra objects. The full frame should occupy the entire width of the output with its original extremely narrow height.",
+    "retainedAttempt": "The first request produced no image after a false-positive violence moderation rejection; request ID 20a38bb9-e899-4429-9910-3a2b6ed4ad32. A neutral description of the same harmless software ornament succeeded. No CLI fallback was used."
+  },
+  "backgrounds": {
+    "schemaVersion": 1,
+    "method": "Built-in imagegen; reference-guided background-only generation. Original foreground resources are unchanged and composited at their original aspect ratio.",
+    "uiBudgetBytes": 16777216,
+    "maxCompositedPixels": 1700000,
+    "assets": [
+      {
+        "file": "public/res/presentation/campaign-backdrop-topography-r2a.png",
+        "master": "/Users/Aone/.codex/generated_images/01a166b0-3b7b-7212-bd96-264b476e987a/exec-d5f19201-d73d-45a8-b3ff-dd8baa913b4c.png",
+        "dimensions": [
+          1898,
+          829
+        ],
+        "sha256": "436e6b45cd468949ec00ff6541bb0d31e2e8a72a62c70ab0348796cc7343935b",
+        "prompt": "Use case: ui-mockup\nAsset type: production widescreen background texture for an existing classic strategy-game interface.\nInput image: reference for background texture and palette only; its three foreground insignias and metal frame are NOT part of the requested output.\nPrimary request: generate a much wider frameless background, approximately 2.3:1 landscape. Fill the entire image edge to edge with very dark black and restrained fine deep-crimson topographic contour lines in the style of the reference. Use crisp fine map-like relief lines with subtle natural variation and broad quiet black areas. Match the almost black center, deep red low-contrast lines and original understated texture. The result will sit behind the existing unchanged three insignias and score panel.\nConstraints: background only, no insignias, no badges, no weapons, no people, no units, no photographs, no letters, no numbers, no text, no border, no metallic frame, no inset rectangles, no interface controls. Do not add focal subjects. Continue the map texture naturally across the full wider canvas."
+      },
+      {
+        "file": "public/res/presentation/campaign-backdrop-world-r2a.png",
+        "master": "/Users/Aone/.codex/generated_images/01a166b0-3b7b-7212-bd96-264b476e987a/exec-52cf14d0-9b2b-4e07-ab5c-2fd67dc8afd7.png",
+        "dimensions": [
+          1915,
+          821
+        ],
+        "sha256": "cac525710da77cac0c9be65917bf60c195f4934c1ca22f3701d42f857f0059f8",
+        "prompt": "Use case: ui-mockup\nAsset type: wide frameless background plate for an existing classic strategy-game mission loading page.\nInput image: style and palette reference only. Keep its foreground emblems, arrows, framed map inset, photographs, title bar and progress controls OUT of this output; those are preserved as separate existing layers.\nPrimary request: Create an approximately 2.3:1 landscape background that fills the full canvas with a dark world-map backdrop continuing the reference's existing visual vocabulary: black oceans, subdued cobalt/navy land masses, small low-contrast deep crimson regions, thin deep red latitude/longitude grid, subtle dark green coastlines. Clean crisp edges with fine detail, considerably darker and quieter than foreground information. Main center remains calm and readable for the unchanged loading page content. Extend geography/background texture toward both sides without introducing new focal subjects.\nConstraints: background plate only, edge to edge. No rectangular border or frame, no inset windows, no insignias, no badges, no photos, no icons, no arrows, no people, no vehicles, no controls, no words or numbers, no watermark."
+      }
+    ]
+  },
+  "validation": {
+    "tests": {
+      "pass": 44,
+      "fail": 0,
+      "assertions": 625
+    },
+    "typecheck": "PASS",
+    "nativeDirectories": [
+      "native-final-r2",
+      "native-en-final",
+      "native-tw-final",
+      "end-victory-release",
+      "end-defeat-release",
+      "native-desktop",
+      "native-original-final",
+      "native-default"
+    ],
+    "victory": {
+      "tick": 20090,
+      "hash": 3978379262,
+      "cheer": [
+        {
+          "key": 10,
+          "channel": 3,
+          "handle": true,
+          "playing": true,
+          "completion": "ended"
+        }
+      ],
+      "speech": [
+        {
+          "id": "Mis_S1_SofiaReinforcements",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_EnemyInfantryBattalionDetected",
+          "reason": "ended"
+        },
+        {
+          "id": "Unit_Sofia_GI",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaRepairBridge",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaRepairBridge",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaRepairBridge",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaUrbanHint",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaAirportHint1",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_UnitPromoted",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_UnitPromoted",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaAirportHint2",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_UnitPromoted",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_UnitPromoted",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaDestroyPentagon",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaVictorySpeech",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_MissionAccomplished",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_OreMinerUnderAttack",
+          "reason": "stopped"
+        }
+      ]
+    },
+    "defeat": {
+      "tick": 7703,
+      "speech": [
+        {
+          "id": "EVA_EstablishBattlefieldControl",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaCrushPentagon",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_BattlefieldControlOnline",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_NewObjectiveReceived",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_EnemyInfantryBattalionDetected",
+          "reason": "ended"
+        },
+        {
+          "id": "Unit_Sofia_GI",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_MissionFailed",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_OurBaseIsUnderAttack",
+          "reason": "stopped"
+        }
+      ],
+      "cheer": []
+    },
+    "actualDesktopTrainer": {
+      "before": {
+        "credits": 5500,
+        "commands": 0,
+        "worldEvents": [],
+        "enabled": true,
+        "locked": false
+      },
+      "after": {
+        "credits": 15500,
+        "modified": true,
+        "checkpointError": "A diagnostic reveal cannot produce a campaign checkpoint",
+        "commands": 0,
+        "status": "待恢复／下一帧 (1)",
+        "worldEvents": []
+      },
+      "fieldEditing": true,
+      "lockedInputFixture": {
+        "mode": "CONTROLLED_LOCK_STATE_WITH_REAL_CANVAS_MOUSE_EVENTS",
+        "handoffs": 1,
+        "worldEvents": [],
+        "layer": "2000"
+      }
+    },
+    "pointerLock": {
+      "actualHostAttempt": {
+        "error": "The root document of this element is not valid for pointer lock.",
+        "clickTarget": "CANVAS",
+        "targetIsCanvas": true
+      },
+      "nativeAcquisition": "UNVERIFIED_REJECTED_DURING_AUTOMATION",
+      "controlledHandoff": "PASS_WITH_REAL_MOUSE_EVENTS_NO_WORLD_LEAK",
+      "physicalMouseFeel": "USER_REVIEW_REQUIRED"
+    },
+    "defaultProfileSave": {
+      "exists": false,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "unchanged": true
+    },
+    "retainedFailedObservers": [
+      {
+        "directory": "native-r1",
+        "error": "page.evaluate: TypeError: Cannot read properties of null (reading 'getBoundingClientRect')\n    at eval (eval at evaluate (:290:30), <anonymous>:2:94)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at selectionBounds (/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/feedback-native.mjs:24:30)\n    at /Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/feedback-native.mjs:59:43"
+      },
+      {
+        "directory": "native-r2",
+        "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(Math.abs(state.sidebar.right - state.viewport[0]) < 2)\n\n    at selectionBounds (file:///Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/feedback-native.mjs:32:5)\n    at async file:///Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/feedback-native.mjs:60:37"
+      },
+      {
+        "directory": "native-r3",
+        "error": "AssertionError [ERR_ASSERTION]: {\"viewport\":[800,600],\"sidebar\":{\"left\":948,\"right\":1200},\"panel\":{\"x\":0,\"y\":0,\"width\":632,\"height\":568,\"top\":0,\"right\":632,\"bottom\":568,\"left\":0},\"content\":{\"x\":0,\"y\":0,\"width\":632,\"height\":568,\"top\":0,\"right\":632,\"bottom\":568,\"left\":0},\"menu\":{\"viewport\":{\"x\":0,\"y\":0,\"width\":800,\"height\":600},\"scale\":1.5},\"ui\":{\"revision\":\"yuri-emblem-ui-v1\",\"enabled\":true,\"reservedBytes\":15277056,\"decodedCpuBytes\":8828928,\"gpuTextureBytesUpperBound\":8828928,\"transitionGpuBytes\":0,\"transitionCpuCanvasBytes\":0,\"domImageGpuBytesUpperBound\":6448128,\"domImageDecodedCpuBytesUpperBound\":11929600,\"textures\":2,\"budget\":16777216,\"domCanvasBytes\":0,\"mipmaps\":false}}\n    at selectionBounds (file:///Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/feedback-native.mjs:33:5)\n    at async file:///Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/feedback-native.mjs:61:37"
+      },
+      {
+        "directory": "native-r4",
+        "error": "page.waitForFunction: Timeout 30000ms exceeded.\n    at /Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/feedback-native.mjs:133:54"
+      },
+      {
+        "directory": "end-victory-r1",
+        "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  {\n    cameoFlashes: [\n      [\n        'SENGINEER',\n        2322\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 1,\n          line: 3,\n          members: [\n            1889,\n            1890,\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 2,\n          line: 3,\n          members: [\n            1892,\n            1893,\n...\n          aiTrigger: '08B56C60',\n+         flight: undefined,\n          id: 3,\n          line: 0,\n          members: [\n            1900\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 8,\n          line: 0,\n          members: [\n            1777\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 9,\n          line: 0,\n          members: [\n            1778\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 10,\n          line: 0,\n          members: [\n            1787\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 11,\n          line: 1,\n          members: [\n            1788\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 12,\n          line: 0,\n          members: [\n            1789\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 13,\n          line: 0,\n          members: [\n            1790\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 14,\n          line: 0,\n          members: [\n            1791\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 15,\n          line: 1,\n          members: [\n            1792\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 16,\n          line: 1,\n          members: [\n            1793\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 17,\n          line: 1,\n          members: [\n            1794\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 18,\n          line: 0,\n          members: [\n            1776\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 19,\n          line: 0,\n          members: [\n            1781\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 20,\n          line: 0,\n          members: [\n            1795\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 21,\n          line: 0,\n          members: [\n            1796\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 22,\n          line: 0,\n          members: [\n            1797\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 23,\n          line: 1,\n          members: [\n            1798\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 24,\n          line: 0,\n          members: [\n            1799\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 25,\n          line: 0,\n          members: [\n            1800\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 26,\n          line: 0,\n          members: [\n            1801\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 27,\n          line: 0,\n          members: [],\n          owner: 'Civie1 House',\n          phase: 'assembling',\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 28,\n          line: 0,\n          members: [\n            1779\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 29,\n          line: 0,\n          members: [\n            1780\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 30,\n          line: 0,\n          members: [\n            1802\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 31,\n          line: 0,\n          members: [\n            1803\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 32,\n          line: 0,\n          members: [\n            1804\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 33,\n          line: 0,\n          members: [\n            1805\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 34,\n          line: 0,\n          members: [\n            1806\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 35,\n          line: 0,\n          members: [\n            1807\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 36,\n          line: 0,\n          members: [\n            1808\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 37,\n          line: 0,\n          members: [\n            1809\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 38,\n          line: 2,\n          members: [\n            1823\n          ],\n...\n          aiTrigger: '080D312C',\n+         flight: undefined,\n          id: 39,\n          line: 1,\n          members: [\n            1934\n          ],\n...\n          aiTrigger: null,\n+         flight: undefined,\n          id: 40,\n          line: 2,\n          members: [\n            1905,\n            1906,\n...\n          aiTrigger: '080D312C',\n+         flight: undefined,\n          id: 41,\n          line: 1,\n          members: [\n            1935\n          ],\n...\n          aiTrigger: '080D312C',\n+         flight: undefined,\n          id: 42,\n          line: 1,\n          members: [\n            1938\n          ],\n...\n          aiTrigger: '080D312C',\n+         flight: undefined,\n          id: 43,\n          line: 1,\n          members: [\n            1939\n          ],\n...\n          aiTrigger: '08B56C60',\n+         flight: undefined,\n          id: 44,\n          line: 0,\n          members: [\n            1943\n          ],\n\n    at file:///Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/feedback-end-native.mjs:81:16"
+      }
+    ],
+    "retainedReproductionObserver": "repro-r1 incorrectly expected group buttons to be disabled. repro-r2 opens the group and verifies the actual disabled action buttons in the unchanged R1 app; both snapshots are retained.",
+    "retainedEnglishObserverOutlier": "The first English case passed, but a Chinese-only observer addition changed the live source hash after compilation. Both the executed snapshot and sampled hash are retained. native-en-r2 freezes the observer and passes with matching hashes.",
+    "scope": "Bounded native UI and assisted original gameplay checks. The accepted physical-input full-mission baseline is retained; no new physical-input full completion is claimed."
+  },
+  "interimR2": {
+    "status": "PRESERVED_NOT_FINAL",
+    "directory": ".artifacts/m3-1/feedback-r2",
+    "reason": "Native visual inspection found that the scaled game root trapped the trainer below the body-level objective. R2a portals the trainer to the same page context and applies viewport scale once.",
+    "layerProbe": {
+      "path": ".artifacts/m3-1/feedback-r2/native-desktop-layer-probe/report.json",
+      "bytes": 14808,
+      "sha256": "b9248c1f5c43d4a0a81875a4ce52f8ae5f74d698e0beb7d23367d447fd5133e3"
+    }
+  },
+  "objective": {
+    "bounds": {
+      "x": 1015,
+      "y": 0,
+      "width": 130.6015625,
+      "height": 16,
+      "top": 0,
+      "right": 1145.6015625,
+      "bottom": 16,
+      "left": 1015
+    },
+    "fontSize": "10.4px",
+    "expectedTop": 0,
+    "scale": 0.8,
+    "expectedFontSize": 10.4,
+    "nativeMessageFont": "500 13px \"Fira Sans Condensed\", Arial, sans-serif",
+    "inlineColor": "rgb(255, 24, 24)",
+    "nativeInlineColor": "rgb(255, 24, 24)",
+    "maxRight": 1145.6
+  },
+  "speechHud": {
+    "text": "正在建立战场控制……",
+    "bounds": {
+      "x": 1041.8203125,
+      "y": 16,
+      "width": 103.78125,
+      "height": 16,
+      "top": 16,
+      "right": 1145.6015625,
+      "bottom": 32,
+      "left": 1041.8203125
+    },
+    "objective": {
+      "x": 1015,
+      "y": 0,
+      "width": 130.6015625,
+      "height": 16,
+      "top": 0,
+      "right": 1145.6015625,
+      "bottom": 16,
+      "left": 1015
+    },
+    "font": "500 10.4px / 12px \"Fira Sans Condensed\", Arial, sans-serif",
+    "fontSize": "10.4px",
+    "color": "rgb(255, 24, 24)"
+  },
+  "loadingArtwork": {
+    "outsideSubjects": [
+      {
+        "x": 20,
+        "y": 25,
+        "alpha": 0
+      },
+      {
+        "x": 400,
+        "y": 480,
+        "alpha": 0
+      },
+      {
+        "x": 755,
+        "y": 120,
+        "alpha": 0
+      }
+    ],
+    "focusAlpha": 255,
+    "photoAlpha": 255,
+    "title": "军事行动：红色黎明 - 地点：华盛顿特区",
+    "titleZ": "4"
+  },
+  "retainedVisualIterations": [
+    "native-wide-r1 retains the SVGRect observer serialization failure.",
+    "native-wide-r2 passed the functional observer, but the user rejected its doubled world-map background.",
+    "native-foreground fixes the background and title; its larger HUD was superseded by the native-scaled final build.",
+    "native-final caught the objective fallback color; native-final-r2 verifies the actual player color for both right-hand lines."
+  ],
+  "retainedOriginalObserverFailure": "native-original read a menu debug reference after the product correctly disposed it. native-original-r2 fixes that reference and retains a second observer failure: CSS serialization differs by 0.0005 logical pixels from exact alignment. native-original-final uses a 0.01-pixel tolerance and repeats the actual Desktop check.",
+  "review": {
+    "status": "PASS_ALL_NATIVE_SCREENSHOTS_EMBEDDED_BYTE_IDENTICALLY",
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r2a/M3.1-Feedback-R2a-Review.html",
+    "bytes": 48466095,
+    "sha256": "d436e953ffa6712a6f5bf5fb73d9b012027f9e5336ae1ff9174639d070c6f8d9",
+    "sourceHead": "3c33a07ee732fb5e97fa00f0c57e6787d67b9e04",
+    "images": [
+      {
+        "path": ".artifacts/m3-1/interface-hd/source/progressHousing-0.png",
+        "bytes": 22859,
+        "sha256": "34b97f8584f03b93aca83d7deb34c7de6f109b6c2308679ddbc00f1b8a137bcd"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/selection-1680x720.png",
+        "bytes": 3225561,
+        "sha256": "5098dfa3474923293305ef4fb23eb40d5249180daf738d8f5650bcaefef31cef"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/selection-720x900.png",
+        "bytes": 1937287,
+        "sha256": "47557a8b7b0e86315d9e406e8ee216f860c21f58c8dbde0bba8634af070b04a7"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/arrows-one-active-faction.png",
+        "bytes": 2530180,
+        "sha256": "5fbe5e455b0bafda03d09627539f963fa62d5119cfde5ef17ffc3368ebe8b48f"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/loading-zh-CN-1680x720.png",
+        "bytes": 3209898,
+        "sha256": "d53af2c98399b29fc483b0c9fe08ccebfa460c466a3267f532bd4735f8fa462f"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/loading-zh-CN-720x900.png",
+        "bytes": 1754374,
+        "sha256": "6ad24366d8128e0a7c682393437f167be06da9ec2ef3f9b7d8940ebb237e3694"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/loading-complete-component.png",
+        "bytes": 321825,
+        "sha256": "8de1306aaa0380078b6a202e3fa9900ac14dc7e61eab17ba4a6df584ac217d76"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/subtitle-zh-CN.png",
+        "bytes": 1624788,
+        "sha256": "2d4fe458e0d3000a10daadc0e9021c5c9271af7e2531de294b4c2f9d998884ea"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/native-en-final/subtitle-en-US.png",
+        "bytes": 2369790,
+        "sha256": "154dc7de7e4d7e04eaa3641366d9ae9cb1907bc170434c7e7767614965dc99a3"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/native-tw-final/subtitle-zh-TW.png",
+        "bytes": 2366220,
+        "sha256": "65fcacdd844a9e95d6c78c78f141c57a3753d4b717db0c0dc67eef38bc78af97"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/game-information-upper-right.png",
+        "bytes": 5800675,
+        "sha256": "278669eccf5c349a9e3a5a11852b2d36a0ebc962c267db3ed68cd21c771aa892"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/trainer-clickable-modified-campaign.png",
+        "bytes": 5711610,
+        "sha256": "7f88e5c7000eeee5177e2ae94c27bef6055fb111c57d1aa0e714ffe1b34f964f"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/end-victory-release/score-victory-1680x720.png",
+        "bytes": 3712096,
+        "sha256": "45a20ba09150790a60ff69f2351e1ac6f9ae4baccefaee3f76bc9fcddb60c134"
+      },
+      {
+        "path": ".artifacts/m3-1/feedback-r2a/end-defeat-release/score-defeat-720x900.png",
+        "bytes": 1752851,
+        "sha256": "df4c54ed9c947aaf1c56e1bc863353fd704cee80dc27a69f1791a85b2056d989"
+      }
+    ]
+  },
+  "delivery": {
+    "status": "PASS_DESKTOP_COPY_HASH_MATCH",
+    "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261023-R2a.zip",
+    "bytes": 5746075367,
+    "sha256": "eb3289a8e41c60d5fe4ae69a3e1e2e0bf86e49af5dc7271223f2b7166d6d1aca",
+    "entries": 14541,
+    "inventorySha256": "bd4bfe83010642f27c5336dc16fadcd0f07066fdb27af1a6b1b50aaa3a3cf2ea",
+    "sourceArchive": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r2a/RA2-HD-M3.1-Mac-arm64-20261023-R2a.zip",
+    "actualZip": {
+      "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261023-R2a.zip",
+      "bytes": 5746075367,
+      "sha256": "eb3289a8e41c60d5fe4ae69a3e1e2e0bf86e49af5dc7271223f2b7166d6d1aca"
+    },
+    "app": "Red Alert 2 HD M3.1 Campaign R2a.app",
+    "signature": "PASS_DEEP_STRICT_AD_HOC_LOCAL_TEST"
+  },
+  "boundaries": {
+    "acceptedM3Base": "USER_ACCEPTED_PRESERVED",
+    "r2UserAcceptance": "PENDING",
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "mainIntegration": "NOT_REQUESTED",
+    "push": "NOT_REQUESTED",
+    "publication": "NOT_REQUESTED",
+    "cleanup": "NOT_REQUESTED",
+    "nextMission": "NOT_REQUESTED"
+  },
+  "evidence": [
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/stage/stage.json",
+      "bytes": 7240,
+      "sha256": "2b75e23a0aeccbda44240cf7fc18fd004a5a730249f8576e5d0f4be436b19442"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/stage/inventory.json",
+      "bytes": 4357288,
+      "sha256": "bd4bfe83010642f27c5336dc16fadcd0f07066fdb27af1a6b1b50aaa3a3cf2ea"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/archive.json",
+      "bytes": 391,
+      "sha256": "ef38f24b24f33a847d2e8a84e1b0dec229ed4f5335067c7bc2c22d9f8108a2b6"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/desktop-delivery.json",
+      "bytes": 466,
+      "sha256": "435610e40235f8ac50853ba5cf2f89791d4a6935694fd98141ae53f62aef4ffc"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/extracted.json",
+      "bytes": 620,
+      "sha256": "7af8f590ca6d0ecec4fbc00476c6363a23c4d51597f60fbbd27befc7b67348bb"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/review.json",
+      "bytes": 3274,
+      "sha256": "22ee2a7d889101bb9bb0f615137dc47a5ec5dbce729cc8df3454d43133471b69"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/tests-final-r2a.log",
+      "bytes": 5434,
+      "sha256": "5bfb9d854dd7e21ab71598d81ff8c53b70881763d411209f2610e5819789f53d"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/typecheck-final-r2a.log",
+      "bytes": 39,
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/subtitles/provenance.json",
+      "bytes": 1009,
+      "sha256": "820fea10d50e62729173fe32195cf2d0291b6d6e4ceb64d6e712e8a49567686e"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/repro-r1/report.json",
+      "bytes": 1278,
+      "sha256": "6b499c16a714f3c4022c871e78f519cd23e58802c58af64b73054ec3d6165769"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/repro-r1/harness.mjs",
+      "bytes": 4417,
+      "sha256": "e74114b6a02b21a90de82a0cfc1dc89aabefabdb0fcf200c2e83ae30dd79efe9"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/repro-r2/report.json",
+      "bytes": 1026,
+      "sha256": "5d90a20f6645e5456a46acd3e55720b9f1c8511b674e8ab28ca7038e342b92c6"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/repro-r2/harness.mjs",
+      "bytes": 4513,
+      "sha256": "5e05e70228a4240e417b44fff9e0bf231341d3d714e2cd31f5828eb290bcbb2c"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/native-en/report.json",
+      "bytes": 2129,
+      "sha256": "75bda2701f9a3c0785ce36f4aa2345f4dedd78b5f53cee59a4dc1992888a1f8f"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/native-en/harness.mjs",
+      "bytes": 17171,
+      "sha256": "15cf7be3446fefe7f46a713120bb208e62fb308d0b6b5c7a617af1a4e27859dd"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/native-en/sampled-harness.mjs",
+      "bytes": 18988,
+      "sha256": "10bf929b29a715e2c98a3722f4003058e7eff1114e27ce8934a46b6b33c40086"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/report.json",
+      "bytes": 16539,
+      "sha256": "3739399da9ae0feb4437ebe8de68dbc2e12481cbe6cf6bb0c387d26d222a5c7c"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/harness.mjs",
+      "bytes": 23534,
+      "sha256": "747ea551ad0eac016068a274d2a185eaae23b8f84992d43b1b37d01d09011f59"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/selection-800x600.png",
+      "bytes": 1640898,
+      "sha256": "fe2c9ea6206cb72cc2340b997157ea1d845abaea914e2609abc51c74a236723a"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/selection-1280x720.png",
+      "bytes": 2520940,
+      "sha256": "30c028ae7c99bdfe611a19ccb690d51632687bff038a41b9e495311ab1b58c03"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/selection-1680x720.png",
+      "bytes": 3225561,
+      "sha256": "5098dfa3474923293305ef4fb23eb40d5249180daf738d8f5650bcaefef31cef"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/selection-720x900.png",
+      "bytes": 1937287,
+      "sha256": "47557a8b7b0e86315d9e406e8ee216f860c21f58c8dbde0bba8634af070b04a7"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/selection-fullscreen.png",
+      "bytes": 4548893,
+      "sha256": "05d79eda245547aa3bef7a8afb7816833c2b21d0027ee629cef4f99df44efd21"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/arrows-one-active-faction.png",
+      "bytes": 2530180,
+      "sha256": "5fbe5e455b0bafda03d09627539f963fa62d5119cfde5ef17ffc3368ebe8b48f"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/subtitle-zh-CN.png",
+      "bytes": 1624788,
+      "sha256": "2d4fe458e0d3000a10daadc0e9021c5c9271af7e2531de294b4c2f9d998884ea"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/loading-zh-CN-800x600.png",
+      "bytes": 1754453,
+      "sha256": "12d1a19d00e162b634822ad8ce930cacf7f52d6a143b96fe7d37c286f3bc2324"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/loading-zh-CN-1280x720.png",
+      "bytes": 2791155,
+      "sha256": "78f08008ebeef9382c0bddb97229259c52179508e2c8409e6c5ba7c5c6847165"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/loading-complete-component.png",
+      "bytes": 321825,
+      "sha256": "8de1306aaa0380078b6a202e3fa9900ac14dc7e61eab17ba4a6df584ac217d76"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/loading-zh-CN-1680x720.png",
+      "bytes": 3209898,
+      "sha256": "d53af2c98399b29fc483b0c9fe08ccebfa460c466a3267f532bd4735f8fa462f"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/loading-zh-CN-720x900.png",
+      "bytes": 1754374,
+      "sha256": "6ad24366d8128e0a7c682393437f167be06da9ec2ef3f9b7d8940ebb237e3694"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/game-information-upper-right.png",
+      "bytes": 5800675,
+      "sha256": "278669eccf5c349a9e3a5a11852b2d36a0ebc962c267db3ed68cd21c771aa892"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final-r2/trainer-clickable-modified-campaign.png",
+      "bytes": 5711610,
+      "sha256": "7f88e5c7000eeee5177e2ae94c27bef6055fb111c57d1aa0e714ffe1b34f964f"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-en-final/report.json",
+      "bytes": 3756,
+      "sha256": "b73ab9d99390f6fb3da168c953c33cb3dbb2c1d2cedbc92d40fca84115a94904"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-en-final/harness.mjs",
+      "bytes": 23534,
+      "sha256": "747ea551ad0eac016068a274d2a185eaae23b8f84992d43b1b37d01d09011f59"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-en-final/subtitle-en-US.png",
+      "bytes": 2369790,
+      "sha256": "154dc7de7e4d7e04eaa3641366d9ae9cb1907bc170434c7e7767614965dc99a3"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-en-final/loading-en-US-1280x720.png",
+      "bytes": 2795528,
+      "sha256": "4c1a4d747f110056f3f197cf6a87594922be190d48421e290ef0d0fb84a3ad43"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-en-final/game-information-upper-right.png",
+      "bytes": 5838435,
+      "sha256": "955fe6f7921f60fbbb5f0c3cf495cd4027a895d6f6713eac1da5101530d73be3"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-tw-final/report.json",
+      "bytes": 3744,
+      "sha256": "c9c6f7f3e53b1e776bd94831b963e6d2f96de6fe0d35f50a9e81a7bb7fad40cb"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-tw-final/harness.mjs",
+      "bytes": 23534,
+      "sha256": "747ea551ad0eac016068a274d2a185eaae23b8f84992d43b1b37d01d09011f59"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-tw-final/subtitle-zh-TW.png",
+      "bytes": 2366220,
+      "sha256": "65fcacdd844a9e95d6c78c78f141c57a3753d4b717db0c0dc67eef38bc78af97"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-tw-final/loading-zh-TW-1280x720.png",
+      "bytes": 2793554,
+      "sha256": "95c42ce6dd1462c992138621f08fa473ecebd0c178e9b113a2b87734fe4623eb"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-tw-final/game-information-upper-right.png",
+      "bytes": 5840507,
+      "sha256": "759fc2ca825e4d01f514e06ae21e697797114b52c9d1e959e22f4eb165daf33f"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-victory-release/report.json",
+      "bytes": 200715,
+      "sha256": "9656dbf37433e3a9dbbb07fb639aa2f8d717e78a837252f0e093eb1bc4ca5b29"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-victory-release/harness.mjs",
+      "bytes": 14664,
+      "sha256": "a58470a77132eef2696386bee93f8470db509ff84914eb47b755bd3f1754229f"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-victory-release/score-victory-800x600.png",
+      "bytes": 1600038,
+      "sha256": "1c2ebeea3c8bd51a750e97d0bb3f5194ad36d7662c8e174e90efeb9bb5e9603e"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-victory-release/score-victory-1280x720.png",
+      "bytes": 2876670,
+      "sha256": "11998a93b72cf05c7662f04942dbea3eda4fd812bed658ec9956addf0a680307"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-victory-release/score-victory-1680x720.png",
+      "bytes": 3712096,
+      "sha256": "45a20ba09150790a60ff69f2351e1ac6f9ae4baccefaee3f76bc9fcddb60c134"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-victory-release/score-victory-720x900.png",
+      "bytes": 2142922,
+      "sha256": "222d7f83d4f86d96bce3bcdc6220e1ac09b9ab0bd585411c710db4eec8fa1c33"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-defeat-release/report.json",
+      "bytes": 127087,
+      "sha256": "151178a3dfc751a12741a5ccff73d40210c3e0c3109af86af9ec3ddf1f17a9d1"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-defeat-release/harness.mjs",
+      "bytes": 14664,
+      "sha256": "a58470a77132eef2696386bee93f8470db509ff84914eb47b755bd3f1754229f"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-defeat-release/score-defeat-800x600.png",
+      "bytes": 1466790,
+      "sha256": "eeb5d683db091469826c8890472901ca0af6166dc7db69714173ed46ef8d1826"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-defeat-release/score-defeat-1280x720.png",
+      "bytes": 2491460,
+      "sha256": "8b35a8b4de647183e917199454af629b0377e08c6ac12c2edd87121b3fe45ade"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-defeat-release/score-defeat-1680x720.png",
+      "bytes": 3191116,
+      "sha256": "d0be17643d566e287602cda9c7814fff6568a7256dd5ca4e73170c27a7b4fb8e"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/end-defeat-release/score-defeat-720x900.png",
+      "bytes": 1752851,
+      "sha256": "df4c54ed9c947aaf1c56e1bc863353fd704cee80dc27a69f1791a85b2056d989"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/report.json",
+      "bytes": 16504,
+      "sha256": "b225cba9d9051db65a382f152b26df5b8d65e4071f222792a90fc669da686e30"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/harness.mjs",
+      "bytes": 23534,
+      "sha256": "747ea551ad0eac016068a274d2a185eaae23b8f84992d43b1b37d01d09011f59"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/selection-800x600.png",
+      "bytes": 1640649,
+      "sha256": "6a87bb241c3041ba013026d136fcdacbbde22d8251537fd418b4f78c0375da97"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/selection-1280x720.png",
+      "bytes": 2521208,
+      "sha256": "6306fcac887581aaf99bb88d737475f9e77a32e2b18a92ae5afd087c0a19e846"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/selection-1680x720.png",
+      "bytes": 3225413,
+      "sha256": "885bcfd9ffb6c7b86994383d12fa40484d0cd42a623a0dbeffd7d9a98b5497de"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/selection-720x900.png",
+      "bytes": 1924961,
+      "sha256": "9706d5bef06ebad273418036d3b4f9eaaa360627e7a724a7a1cc98031aa1234d"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/selection-fullscreen.png",
+      "bytes": 4548801,
+      "sha256": "4d23c80e24fcfc12a382774133842fd2e1c1f0e9449a062dcdc6b6c5df8d1c20"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/arrows-one-active-faction.png",
+      "bytes": 2530036,
+      "sha256": "dedaf4b841e381d45325d793c167ea578d7b3df987642ee1e151cc731865ddeb"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/subtitle-zh-CN.png",
+      "bytes": 1624788,
+      "sha256": "2d4fe458e0d3000a10daadc0e9021c5c9271af7e2531de294b4c2f9d998884ea"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/loading-zh-CN-800x600.png",
+      "bytes": 1754453,
+      "sha256": "12d1a19d00e162b634822ad8ce930cacf7f52d6a143b96fe7d37c286f3bc2324"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/loading-zh-CN-1280x720.png",
+      "bytes": 2791155,
+      "sha256": "78f08008ebeef9382c0bddb97229259c52179508e2c8409e6c5ba7c5c6847165"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/loading-complete-component.png",
+      "bytes": 321825,
+      "sha256": "8de1306aaa0380078b6a202e3fa9900ac14dc7e61eab17ba4a6df584ac217d76"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/loading-zh-CN-1680x720.png",
+      "bytes": 3209898,
+      "sha256": "d53af2c98399b29fc483b0c9fe08ccebfa460c466a3267f532bd4735f8fa462f"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/loading-zh-CN-720x900.png",
+      "bytes": 1754374,
+      "sha256": "6ad24366d8128e0a7c682393437f167be06da9ec2ef3f9b7d8940ebb237e3694"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/game-information-upper-right.png",
+      "bytes": 5800115,
+      "sha256": "770dc1a352391f8850b4bb6f08f9a99e2f8091f801ce85406b9b328612e36570"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-desktop/trainer-clickable-modified-campaign.png",
+      "bytes": 5712247,
+      "sha256": "6e646174d96f54e5c495f4b8f2e0f1675f30ed130ec43bd3ed6cb7ae3fe000f0"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-final/report.json",
+      "bytes": 21479,
+      "sha256": "7334b685f50dcd4208f7b2f6670cdef83a0906634dec8d6fee381b78158af7a3"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-final/harness.mjs",
+      "bytes": 18067,
+      "sha256": "5c0fc895611d53ea022e50fd170579347e2bf203c480f5bf0cb9047d6a8a3089"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-final/01-direct-ra2-faction-menu.png",
+      "bytes": 3092334,
+      "sha256": "9eaf60fb438c64218349b5e0247a8ba90169cc4f4c4137e7bc9740da0ddc9c0c"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-final/02-window-1280x900.png",
+      "bytes": 3072380,
+      "sha256": "34c7609bc3167270952c518f7e2d2e2b3e08ca9a3f3ba2e49a80a7c6dc30679a"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-final/02-window-1774x1163.png",
+      "bytes": 3915872,
+      "sha256": "8b761a039aaec9b8d12b182cbdcc04e431c55d17ed3117ce2ba6b2b5b12f8f22"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-final/03-application-fullscreen.png",
+      "bytes": 4544324,
+      "sha256": "88726880df5f1f98caea44fa05170592f1a22b7fb3e4d0bb0da1ee693c44ed31"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-final/04-yr-direct-ra2-entry.png",
+      "bytes": 1201437,
+      "sha256": "61961ccd0e0208b87f1b2423f3278e32771febed5ff025937264ed4fcff6f065"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-final/05-original-faction-menu.png",
+      "bytes": 1991269,
+      "sha256": "87d3f520988751da9356ddc905bf497b32ca457d6a6685fa2cb464b35d621a03"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-final/06-original-introduction.png",
+      "bytes": 1356170,
+      "sha256": "ec19087fc114080f3b23716461fb411d467db6c05a2a6c1f940d4d1151334876"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-final/07-hd-soviet01-loading.png",
+      "bytes": 2676945,
+      "sha256": "e674e9fe1cae4ce4b42e216975f7c65f4a63b7ca2de7cb436ec4089557779ca9"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-final/08-playable-soviet01-real-keyboard-order.png",
+      "bytes": 3404518,
+      "sha256": "a674a445513603a68b560be1c39d7594e89e3d7b7ef59b65cafad32b2bcaf776"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-default/report.json",
+      "bytes": 5581,
+      "sha256": "4500095afda5d488d4aebe1144e05400810d69640634ebb6f8e8b9af8a78e97b"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-default/harness.mjs",
+      "bytes": 18067,
+      "sha256": "5c0fc895611d53ea022e50fd170579347e2bf203c480f5bf0cb9047d6a8a3089"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-default/01-direct-ra2-faction-menu.png",
+      "bytes": 3092334,
+      "sha256": "9eaf60fb438c64218349b5e0247a8ba90169cc4f4c4137e7bc9740da0ddc9c0c"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/native-r1/report.json",
+      "bytes": 1157,
+      "sha256": "26d1bfdee714355cd5afeccda1ed8e4b6eefe1b751df8fd94a9731f0165310c7"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/native-r1/harness.mjs",
+      "bytes": 14374,
+      "sha256": "2d067c5fefacabc8899fe6639773219fed182ed362a3c6cf1b7081d4edcf2c82"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/native-r2/report.json",
+      "bytes": 1064,
+      "sha256": "ca14ad812bf3ea539588ae8d92d4013b14c86659692a36f605425a2f0fcbbfc4"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/native-r2/harness.mjs",
+      "bytes": 14476,
+      "sha256": "b123bb7586076b932b7e53a7e4dab696f45cb2a294452a8827cfdc4c0c052676"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/native-r3/report.json",
+      "bytes": 2893,
+      "sha256": "feb525900823cb7e4e8a600faaab9e51e9598bf626679cf68fb248e37457c794"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/native-r3/harness.mjs",
+      "bytes": 14508,
+      "sha256": "5baa2a2fb35328fbeae0bf6b5d850362da4aff14248471c8c76c9fd2e948fae7"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/native-r4/report.json",
+      "bytes": 10686,
+      "sha256": "e5847c88af04c8d4446464d2b05061679a271f28b3727b1ca873ebe5bbfb05fd"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/native-r4/harness.mjs",
+      "bytes": 14591,
+      "sha256": "662d3a0a9d9306a75dfcf57e3bdd510c39e136625bdf438d82714bb9f888bbb1"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/end-victory-r1/report.json",
+      "bytes": 584227,
+      "sha256": "0f423065b7fab34c275d0c983adc53b57d5d8aa55687ad44ad8884f5376bfdfd"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2/end-victory-r1/harness.mjs",
+      "bytes": 14273,
+      "sha256": "bf28e14c43605b2da2bc5a6eee00bd2f6e51576699d930f31e7dee81aaf66633"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-wide-r1/report.json",
+      "bytes": 11303,
+      "sha256": "6781b88a784f6c196fba5f3c984a2107fd6f12963f53c8ffc6059cbaa13d6401"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-wide-r1/harness.mjs",
+      "bytes": 21990,
+      "sha256": "65e02ba38fc6979b3afd2c316c35c7250445411feb9dc5a097c4dbbaa0962ae9"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-wide-r2/report.json",
+      "bytes": 15930,
+      "sha256": "e9735fc9160c54d5a908ad4c56fc60ad7edee5becab2d33b4a2f01becc876e0f"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-wide-r2/harness.mjs",
+      "bytes": 22097,
+      "sha256": "320dac806649d1750c4b28a968ce80d5f8a96c79e5325f38d21a7a9a4091ddec"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-foreground/report.json",
+      "bytes": 16310,
+      "sha256": "8e16e548e8e3983122f07aa079ef5104b34f05999b40d4e8ce0f65c5d94f4ab5"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-foreground/harness.mjs",
+      "bytes": 23053,
+      "sha256": "991c0125b3c5daa9fbe57ba0b2316fe8f8f6297e9a6bb0fab0f59942a943e193"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final/report.json",
+      "bytes": 14582,
+      "sha256": "0781b4f1145d77498fecb50744595ffcd805cec2996f7e1a5ecc84e822151f60"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-final/harness.mjs",
+      "bytes": 23534,
+      "sha256": "747ea551ad0eac016068a274d2a185eaae23b8f84992d43b1b37d01d09011f59"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original/report.json",
+      "bytes": 16631,
+      "sha256": "6ef01c4ea51f7259a447fba0fd0831a8b327ecb88018d945a98c079d1666b40c"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original/harness.mjs",
+      "bytes": 17968,
+      "sha256": "f7aade202880ecd36b83d1d212a589dd5b0cc4350c0e884103affebb6217e96d"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-r2/report.json",
+      "bytes": 17357,
+      "sha256": "52ff73144df75a0000bfa7d62f60dc19ad751cac579eb287663e3218a88d7712"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-r2a/native-original-r2/harness.mjs",
+      "bytes": 18069,
+      "sha256": "55f72e1b33197f71db17e997eafccef2ab3b55708f590b3c5a68aba2685e856c"
+    },
+    {
+      "path": "scripts/m3-1/backdrops-r2a.json",
+      "bytes": 3315,
+      "sha256": "95bc9f8b25c44dd6002e74472de8ff49f46686160788865a98f42149c579b211"
+    },
+    {
+      "path": "scripts/m3-1/loading-housing-r2.json",
+      "bytes": 2347,
+      "sha256": "4054a0f6b4632ba47be37a06db71cb566aa5643241deeae4ad9a0ca001349514"
+    }
+  ]
+}

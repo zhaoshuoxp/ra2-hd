@@ -2,7 +2,7 @@ export const menuFootageVertex = `attribute vec2 position; varying vec2 uv;
 void main() { uv = position * .5 + .5; gl_Position = vec4(position, 0., 1.); }`;
 export const menuFootageFragment = `precision highp float;
 uniform sampler2D movie; uniform sampler2D reference; uniform sampler2D cleanMask;
-uniform float movieTime; uniform float cycleDuration; varying vec2 uv;
+uniform float movieTime; uniform float cycleDuration; uniform float suppressRetailLogo; varying vec2 uv;
 vec3 movieSample(vec2 p) {
     return mix(texture2D(reference, p).rgb, texture2D(movie, p).rgb, texture2D(cleanMask, p).r);
 }
@@ -44,7 +44,13 @@ void main() {
     float tail = mod(leading - atan(radar.y, radar.x) + 25.13274123, 6.28318531);
     float sweep = smoothstep(0., .06, tail) * pow(1. - smoothstep(0., 2.1, tail), 2.);
     alpha *= 1. - smoothstep(.97, 1.02, length(p));
-    // Register the source logo under the HD foreground instead of erasing movie pixels above it.
+    // The expansion uses a clean radar plate beneath its independently authored badge.
+    vec2 titleEdge = abs(sourcePixel - vec2(317., 143.)) - vec2(128., 42.);
+    float title = 1. - smoothstep(0., 12., max(titleEdge.x, titleEdge.y));
+    float wingEdge = max(max(71. - sourcePixel.x, sourcePixel.x - 562.),
+        max(139. - sourcePixel.y, sourcePixel.y - (309. - abs(sourcePixel.x - 316.) * .29)));
+    float wings = 1. - smoothstep(0., 12., wingEdge);
+    alpha *= 1. - suppressRetailLogo * max(title, wings);
     float radial = smoothstep(.05, .2, length(radar)) * (1. - smoothstep(1.05, 1.45, length(radar)));
     float light = sweep * radial * .27;
     float combined = alpha + light * (1. - alpha);

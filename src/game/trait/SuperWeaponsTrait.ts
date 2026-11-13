@@ -77,6 +77,35 @@ export class SuperWeaponsTrait {
     hasActiveEffect(type: SuperWeaponType, owner: any): boolean {
         return this.effects.some(effect => effect.type === type && effect.owner === owner && effect.status !== EffectStatus.Finished);
     }
+    hasActiveEffectType(type: SuperWeaponType): boolean {
+        return this.effects.some(effect => effect.type === type && effect.status !== EffectStatus.Finished);
+    }
+    startCampaignLightning(game: any, duration: number): void {
+        if ((game.gameOpts.campaign?.semanticsVersion ?? 0) < 18) throw new Error('Source storm duration requires campaign interpreter 18');
+        if (!Number.isSafeInteger(duration) || duration <= 0) throw new Error('Invalid original storm duration');
+        if (this.hasActiveEffectType(SuperWeaponType.LightningStorm)) return;
+        const tiles = game.map.tiles, size = tiles.getMapSize();
+        let tile;
+        // Original targetless storms sample Y before X until a full-map cell
+        // is valid. Local camera/buildable limits do not restrict the target.
+        do {
+            const y = game.generateRandomInt(0, size.height - 1);
+            const x = game.generateRandomInt(0, size.width - 1);
+            tile = tiles.getByMapCoords(x, y);
+        } while (!tile);
+        this.addEffect(new LightningStormEffect(SuperWeaponType.LightningStorm, undefined, tile, duration));
+        game.traits.filter(NotifySuperWeaponActivate).forEach((trait: any) =>
+            trait[NotifySuperWeaponActivate.onActivate](SuperWeaponType.LightningStorm, undefined, game, tile, undefined));
+        game.events.dispatch(new SuperWeaponActivateEvent(SuperWeaponType.LightningStorm, undefined, tile, undefined, true));
+    }
+    campaignLightningSnapshot(): unknown[] {
+        return this.effects.filter((effect): effect is LightningStormEffect => effect instanceof LightningStormEffect)
+            .map(effect => effect.campaignSnapshot());
+    }
+    campaignLightningPresentation(game: any): ReturnType<LightningStormEffect['campaignPresentation']>[] {
+        return this.effects.filter((effect): effect is LightningStormEffect => effect instanceof LightningStormEffect)
+            .map(effect => effect.campaignPresentation(game));
+    }
     private addEffect(e: SuperWeaponEffect) {
         this.effects.push(e);
     }

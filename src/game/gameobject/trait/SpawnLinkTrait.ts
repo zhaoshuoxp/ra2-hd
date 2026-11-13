@@ -62,17 +62,19 @@ export class SpawnLinkTrait {
         }
     }
     private tryMoveToParent(gameObject: GameObject, parent: GameObject, world: World): void {
-        if (gameObject.tile !== parent.tile) {
-            const currentTask = gameObject.unitOrderTrait.getCurrentTask();
-            if (currentTask instanceof MoveTask) {
-                currentTask.updateTarget(parent.tile, parent.isUnit() && parent.onBridge);
+        const currentTask = gameObject.unitOrderTrait.getCurrentTask();
+        const toBridge = parent.isUnit() && parent.onBridge;
+        if (currentTask instanceof MoveTask) {
+            // Retarget even inside the parent's tile, without restarting an unchanged approach.
+            if (!currentTask.hasTarget(parent.tile, toBridge)) {
+                currentTask.updateTarget(parent.tile, toBridge);
             }
-            else {
-                gameObject.unitOrderTrait.addTask(new MoveTask(world as any, parent.tile, parent.isUnit() && parent.onBridge, {
-                    closeEnoughTiles: 0,
-                    strictCloseEnough: true
-                }));
-            }
+        }
+        else if (gameObject.tile !== parent.tile) {
+            gameObject.unitOrderTrait.addTask(new MoveTask(world as any, parent.tile, toBridge, {
+                closeEnoughTiles: 0,
+                strictCloseEnough: true
+            }));
         }
     }
 }

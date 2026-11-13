@@ -1,0 +1,140 @@
+{
+  "status": "COMPLETE_FAMILY_REGISTERED_NATIVE_AND_USER_REVIEW_PENDING",
+  "family": "yr-task-snow-ammocrat-v1",
+  "mission": {
+    "edition": "yr",
+    "mission": "sov02smd.map",
+    "sha256": "139a7f17a17cefc20d12c21e9221d94ff6e1e8894ac09ab716fc9f6975d5a665"
+  },
+  "theater": "SNOW",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yr-campaign/task-snow-ammocrat-stage-r1",
+  "preparation": {
+    "status": "PREPARED_NATIVE_REGISTRATION_AND_RUNTIME_PENDING",
+    "recipe": "/Users/Aone/RA2remaster/ra2-hd/docs/campaign-art/yr-v1/task-snow-ammocrat.json",
+    "recipeSha256": "1fb81f05d4db3703abb9581fc8c8e60d273cc2d46c646c312bbe2e9a98ca1705",
+    "originalSourceJsonSha256": "3709a1194cb5eab84561781ef40e0744f9cae1fb9a97105e4e2807eefb1678bb",
+    "sourceSha256": "9f81495431e21798f2e321045bc132c8b1e421f401cd9bd674e3cbc66ccd7561",
+    "masters": [
+      {
+        "slot": 0,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/snow-ammocrat/masters-r1/frame-0.png",
+        "sha256": "d1dfc45ae0b2640d48828fbe34113b1d0e534f6db81ddeb009ca785599bb0827"
+      }
+    ],
+    "directionAuthorization": {
+      "file": "docs/campaign-art/yr-v1/authorization.json",
+      "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+    },
+    "userVisualAcceptance": "PENDING",
+    "qualification": "Only original guides are converted. Authored masters are referenced without copying or modification. Complete state coverage, independent exports, alpha/geometry and runtime acceptance require subsequent verification."
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "ffd9626f0376f96f77d48e818313077f0847e1529141167e060d919f53e29065",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 6,
+      "pages": 2,
+      "ownerStates": 0,
+      "neutralStates": 6,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 3,
+      "preservedAcceptedDensityFrames": 0
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 311296,
+      "4": 1212416
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "internalVisualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "packSha256": "ffd9626f0376f96f77d48e818313077f0847e1529141167e060d919f53e29065",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "inspectedExports": [
+      ".artifacts/yr-campaign/task-small3-actual-2x.png",
+      ".artifacts/yr-campaign/task-small3-actual-4x.png"
+    ],
+    "observations": [
+      "The authored cutouts preserve the original arrangement, palette, visible construction and thin edges with clean continuous materials and antialiased alpha.",
+      "The V3 rack has the original three rockets; the steel barrier has three intersecting beams. The crate cluster keeps its original layered wood and light parcel arrangement.",
+      "All native body states and original separate shadow frames are retained. Both density exports are independently sampled from the higher-resolution authored master."
+    ],
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "bundle": {
+    "schema": "campaign-environment-extension-v1",
+    "identity": "yr-task-snow-ammocrat-v1",
+    "familyHash": "b8d0fad79cc939a2246b29dd7a98cd74eea96f31eac7b67fe19d76cd0cf98d40",
+    "mission": "sov02smd.map",
+    "theater": "SNOW",
+    "revision": "yr-task-snow-ammocrat-r1",
+    "members": [
+      {
+        "member": "ammo01.shp",
+        "manifest": "yr-task-snow-ammocrat-r1-ammo01-shp.json",
+        "sha256": "832a82806527a806231758bbfc2663ab02a7cc003f14b6b6a0e54d41936bace4"
+      }
+    ],
+    "acceptance": "FAITHFUL_DIRECTION_AUTHORIZED_COMPLETE_NATIVE_RUNTIME_AND_USER_VISUAL_REVIEW_PENDING",
+    "edition": "yr"
+  },
+  "files": [
+    {
+      "name": "yr-task-snow-ammocrat-r1-ammo01-shp-2-p0-base.png",
+      "bytes": 30347,
+      "sha256": "4442d23466ca0e84d24d05a093f11d9f01e7daa068d72cb9616a9a07f42d5e1b",
+      "route": "/local-campaign/yr/sov02smd/yr-task-snow-ammocrat-r1-ammo01-shp-2-p0-base.png"
+    },
+    {
+      "name": "yr-task-snow-ammocrat-r1-ammo01-shp-2-p0-data.png",
+      "bytes": 543,
+      "sha256": "07458fe18d6575df70838f5735c05594b0a76796eadb581234323d5764fce17c",
+      "route": "/local-campaign/yr/sov02smd/yr-task-snow-ammocrat-r1-ammo01-shp-2-p0-data.png"
+    },
+    {
+      "name": "yr-task-snow-ammocrat-r1-ammo01-shp-4-p0-base.png",
+      "bytes": 97892,
+      "sha256": "2d9edce00be87b731378ec76532126607bbbf0642eee1447cbe205a942c14e1e",
+      "route": "/local-campaign/yr/sov02smd/yr-task-snow-ammocrat-r1-ammo01-shp-4-p0-base.png"
+    },
+    {
+      "name": "yr-task-snow-ammocrat-r1-ammo01-shp-4-p0-data.png",
+      "bytes": 1308,
+      "sha256": "01aa6949efd2f8a869e064134e3cc14b6cbdc97e491ee431321abd125215ccf7",
+      "route": "/local-campaign/yr/sov02smd/yr-task-snow-ammocrat-r1-ammo01-shp-4-p0-data.png"
+    },
+    {
+      "name": "yr-task-snow-ammocrat-r1-ammo01-shp.json",
+      "bytes": 4792,
+      "sha256": "832a82806527a806231758bbfc2663ab02a7cc003f14b6b6a0e54d41936bace4",
+      "route": "/local-campaign/yr/sov02smd/yr-task-snow-ammocrat-r1-ammo01-shp.json"
+    },
+    {
+      "name": "environment-family-yr-task-snow-ammocrat-r1.json",
+      "bytes": 600,
+      "sha256": "134e9cdc49864437543ccd76c2103111ace95dfe17b5317eaaa91802c6eef18e",
+      "route": "/local-campaign/yr/sov02smd/environment-family-yr-task-snow-ammocrat-r1.json"
+    }
+  ],
+  "contractBeforeSha256": "b2d14bf311d5146d87a0e211b7634f6802942ea90166373a693dc70de5036982",
+  "contractAfterSha256": "b894128d4a36ae80bcebc028c3e52d6dc5dff86f9f3eeebc5a3d195c49529abc",
+  "existingRootSelectorChanges": {},
+  "acceptedPayloadsReplaced": 0,
+  "ownershipCorrection": null,
+  "artCorrection": null,
+  "bridgeCorrection": null,
+  "policy": "Independent densities, original shadows/state timing and existing fixed budgets; complete-family fallback retained."
+}

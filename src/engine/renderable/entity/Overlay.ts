@@ -28,6 +28,7 @@ interface GameObject {
     isDestroyed?: boolean;
     deathType?: DeathType;
     isHighBridge(): boolean;
+    bridgeDisplayValue?: number;
     isBridge(): boolean;
     isTiberium(): boolean;
     isBridgePlaceholder(): boolean;
@@ -159,7 +160,7 @@ export class Overlay {
             this.gameObject.healthTrait.health <=
                 100 * this.rules.audioVisual.conditionYellow);
         const overlayHash = 1e5 * this.gameObject.overlayId +
-            10 * this.gameObject.value +
+            10 * (this.gameObject.bridgeDisplayValue ?? this.gameObject.value) +
             Number(isDamaged);
         if (overlayHash !== this.lastOverlayHash) {
             this.lastOverlayHash = overlayHash;
@@ -176,7 +177,7 @@ export class Overlay {
     }
     private computeFrame(isDamaged: boolean): number {
         const gameObject = this.gameObject;
-        let value = gameObject.value;
+        let value = gameObject.bridgeDisplayValue ?? gameObject.value;
         if (gameObject.isBridge()) {
             if (value === 0) {
                 value = MathUtils.getRandomInt(0, 3);
@@ -294,8 +295,8 @@ export class Overlay {
                         (shapeMesh as any).orderedHdCoverage = true;
                     }
                     const mat = (shapeMesh as THREE.Mesh).material as THREE.Material;
-                    mat.depthTest = false;
-                    mat.depthWrite = false;
+                    mat.depthTest = this.gameObject.isHighBridge();
+                    mat.depthWrite = this.gameObject.isHighBridge();
                 }
                 const shadowMesh = mainRenderable.getShadowMesh();
                 if (shadowMesh) {
@@ -363,14 +364,20 @@ export class Overlay {
         const heightOffset = this.gameObject.isHighBridge() ? 4 : 0;
         const hasShadow = this.objectArt.hasShadow && !this.gameObject.isLowBridge() && !this.gameObject.isHighBridge();
         const renderable = ShpRenderable.factory(imageSource, this.palette, this.camera, drawOffset, hasShadow, heightOffset, isWall);
-        if (this.gameObject.isBridge()) renderable.setDepthOptions(false, false);
+        if (this.gameObject.isBridge()) {
+            const high = this.gameObject.isHighBridge();
+            renderable.setDepthOptions(high, high);
+        }
         const hd = this.imageFinder.getHdOverride(imageSource);
         if (hd) renderable.setHdOverride(hd);
         renderable.setBatched(this.useSpriteBatching);
         if (this.useSpriteBatching) {
             renderable.setBatchPalettes([this.palette]);
         }
-        renderable.setFlat(this.objectArt.flat);
+        // A high bridge's native position already includes its deck elevation.
+        // A horizontal depth surface preserves projected pixels while allowing
+        // nearby towers and units below the deck to intersect it correctly.
+        renderable.setFlat(this.gameObject.isHighBridge() || this.objectArt.flat);
         renderable.setExtraLight(this.extraLight);
         return renderable;
     }

@@ -1,0 +1,893 @@
+{
+  "schemaVersion": 2,
+  "status": "M3_1_IMPLEMENTED_MAC_NORMAL_PASS_USER_REVIEW_PENDING",
+  "edition": "ra2",
+  "mission": "sov01t.map",
+  "difficulty": "normal",
+  "formalPlayEnabled": true,
+  "campaignCompletionRecordedInIsolatedValidationProfile": true,
+  "userAcceptance": {
+    "originalFactionAndLoadingCorrection": "Approved to continue in the current conversation",
+    "finalMissionVisualAndListening": "PENDING"
+  },
+  "newArtAuthored": false,
+  "source": {
+    "branch": "task/m3-1-soviet01",
+    "mainBaseline": "dc494dbd59363439ae830fad5e81134ef36ee95b",
+    "reviewRuntimeHead": "d1e21e8c888e98191e250939050b9d08330a7f67",
+    "receiptPreparedAtHead": "d1e21e8c888e98191e250939050b9d08330a7f67",
+    "canonicalMainAtReceipt": "dc494dbd59363439ae830fad5e81134ef36ee95b",
+    "originalMapSha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f",
+    "mainIntegrated": false,
+    "pushed": false,
+    "published": false
+  },
+  "review": {
+    "launcher": "M3.1-Campaign-Review.command",
+    "gallery": ".artifacts/m3-1/M3.1-Embedded-Review.html",
+    "galleryReceipt": ".artifacts/m3-1/embedded-review-receipt.json",
+    "galleryVerification": ".artifacts/m3-1/embedded-review-verification.json",
+    "handoff": "docs/m3-1-handoff.md",
+    "payload": ".artifacts/m3-1/review-runtime",
+    "canonicalResources": "../ra2-hd/.local",
+    "campaignResources": ".local/campaign/ra2/sov01t",
+    "isolatedUserProfile": ".local/m3-1-review-profile",
+    "portableDistribution": false,
+    "buildIdentity": {
+      "path": ".artifacts/m3-1/review-runtime/package.json",
+      "bytes": 233,
+      "sha256": "7867e21cf87ce16a86ff19162375fe17ba5e6197a64fac5c0d70a2e1dea019a6"
+    },
+    "buildInventory": {
+      "path": ".artifacts/m3-1/review-runtime/build.json",
+      "bytes": 32538,
+      "sha256": "e0df8daaa8e29257f8d215f9004c91eb8347a6a494f4040713048246edf8b868"
+    },
+    "remoteReview": "Single offline file embeds actual native screenshots, silent canvas recording and evidence documents; no local game/server is required."
+  },
+  "validation": {
+    "nativeMouseKeyboardNormalPlay": {
+      "status": "PASS",
+      "evidence": {
+        "path": ".artifacts/m3-1/input-final/report.json",
+        "bytes": 7705304,
+        "sha256": "3a97182494baf99f24c9121fc1d4b5a0b5d96846b4f756a9f953bb49e853a0de"
+      },
+      "humanPhysicalInputCertification": "NOT_RUN",
+      "winner": {
+        "tick": 20089,
+        "section": "Actions",
+        "key": "0A301C50",
+        "index": 0,
+        "opcode": 1,
+        "resultTick": 20090
+      },
+      "objectives": "All four original Pentagon sections",
+      "bridgeRepair": true,
+      "twoCivilianGarrisons": true,
+      "airportCapture": true,
+      "sourceReinforcements": true,
+      "skirmishBots": 0,
+      "debugCommands": 0,
+      "directSimulationTicks": false,
+      "injectedOrders": false,
+      "finalMissionSpeechAndEva": "NATURAL_COMPLETION",
+      "nextMissionPlayable": false
+    },
+    "originalFailure": {
+      "status": "PASS",
+      "evidence": {
+        "path": ".artifacts/m3-1/failure-final/report.json",
+        "bytes": 411193,
+        "sha256": "cc694ac4957baff7ac2e3cede57005415ff7c57e646dff4d1004290a45d02e73"
+      },
+      "mode": "Accelerated ordinary serialized player commands; independent of native input victory",
+      "loser": {
+        "tick": 6946,
+        "section": "Actions",
+        "key": "0A115A1C",
+        "index": 0,
+        "opcode": 2
+      },
+      "resultTick": 6947
+    },
+    "saveAndDensityContinuity": {
+      "status": "PASS",
+      "evidence": {
+        "path": ".artifacts/m3-1/continuity-final/report.json",
+        "bytes": 9131164,
+        "sha256": "9d779998de705d6df8b2a7cc7255119f80547cfb5dd9eb0fd69f7c300bb02eb5"
+      },
+      "checkpoint": {
+        "tick": 4062,
+        "worldHash": 2873760633,
+        "checksum": "d4d03473246abb2455c7a8efa883fbe329a6232c88954da8a9202ed0d86b7eec",
+        "commandCount": 11,
+        "bytes": 206470,
+        "file": {
+          "path": ".artifacts/m3-1/input-final/mid-mission-checkpoint.json",
+          "bytes": 206470,
+          "sha256": "3e061013510d516b82c5ecb0783c53c9cbcf242649cf26d6cc7b0cf717161225"
+        },
+        "compatibility": "m3-1-campaign-journal-v3"
+      },
+      "checks": [
+        "Fresh changed world",
+        "Full serialized world",
+        "Full PRNG",
+        "Triggers/variables/teams/scripts/waits/particles",
+        "Pending simulation callback count",
+        "300-tick matched continuation at Original/2X/4X",
+        "Actual HD materials",
+        "Restart at source tick zero",
+        "Return and reentry"
+      ],
+      "cases": [
+        {
+          "density": 1,
+          "tick": 4062,
+          "worldHash": 2873760633,
+          "fullStateMatches": true,
+          "continuationTick": 4362,
+          "continuationHash": 3762824249,
+          "continuationDigest": "7112c313fbe309e8e6337f79bed115d755def93028f326f9c7de7006e85f3603"
+        },
+        {
+          "density": 2,
+          "tick": 4062,
+          "worldHash": 2873760633,
+          "fullStateMatches": true,
+          "continuationTick": 4362,
+          "continuationHash": 3762824249,
+          "continuationDigest": "7112c313fbe309e8e6337f79bed115d755def93028f326f9c7de7006e85f3603"
+        },
+        {
+          "density": 4,
+          "tick": 4062,
+          "worldHash": 2873760633,
+          "fullStateMatches": true,
+          "continuationTick": 4362,
+          "continuationHash": 3762824249,
+          "continuationDigest": "7112c313fbe309e8e6337f79bed115d755def93028f326f9c7de7006e85f3603"
+        }
+      ]
+    },
+    "transportPipeline": {
+      "status": "PASS_BOUNDED_INSTRUCTION_PROBE",
+      "evidence": {
+        "path": ".artifacts/m3-1/transport-final/report.json",
+        "bytes": 106966,
+        "sha256": "2446bd65d7e0cc69d7604d6513eea8cc9ad7b5e917488fef87a365e827ccfc68"
+      },
+      "scope": "Bounded diagnostic probe: explicitly request unchanged original reinforcement TeamTypes, then execute their real transport/script pipeline. Not normal-entry, optional-trigger discovery or victory evidence.",
+      "originalTeamTypes": [
+        "0AA795CC",
+        "09D3357C"
+      ],
+      "preloadedPassengers": "Four HTNK and four SENGINEER",
+      "originalReturnTrigger": "0C67682C",
+      "withdrawalScriptOpcode": 37
+    },
+    "tests": {
+      "status": "PASS",
+      "cases": 45,
+      "assertions": 2046,
+      "evidence": {
+        "path": ".artifacts/m3-1/final-tests.log",
+        "bytes": 5527,
+        "sha256": "1b68ed8d46794b34356dec985092eed0a8e5d5fa96e8480480080917623f6505"
+      }
+    },
+    "typecheck": {
+      "status": "PASS",
+      "evidence": {
+        "path": ".artifacts/m3-1/final-typecheck.log",
+        "bytes": 39,
+        "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+      }
+    },
+    "wholeSuite": {
+      "status": "NOT_RERUN",
+      "note": "Relevant shared checks pass; historic whole-suite failures are not reclassified as a clean suite."
+    },
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "easy": "PARSED_NOT_VALIDATED_OR_ADMITTED",
+    "hard": "PARSED_NOT_VALIDATED_OR_ADMITTED"
+  },
+  "media": {
+    "manifest": "docs/m3-1-media-manifest.json",
+    "intro": {
+      "width": 640,
+      "height": 480,
+      "duration": 102.103,
+      "muted": false,
+      "audioDecodedBytes": 19167
+    },
+    "naturalIntroEnd": true,
+    "transmission": "No source-bound ingame movie in Soviet 01; reusable top-right candidate end/skip/cancel evidence is retained separately",
+    "sourceSpeechResources": 16,
+    "observedOpening": [
+      {
+        "id": "EVA_EstablishBattlefieldControl",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_ReinforcementsHaveArrived",
+        "reason": "ended"
+      },
+      {
+        "id": "Mis_S1_SofiaCrushPentagon",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_BattlefieldControlOnline",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_NewObjectiveReceived",
+        "reason": "ended"
+      },
+      {
+        "id": "Unit_Sofia_Engineer",
+        "reason": "ended"
+      }
+    ],
+    "observedAfterRestore": [
+      {
+        "id": "Mis_S1_SofiaReinforcements",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_OreMinerUnderAttack",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_EnemyInfantryBattalionDetected",
+        "reason": "ended"
+      },
+      {
+        "id": "Unit_Sofia_GI",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_ReinforcementsHaveArrived",
+        "reason": "ended"
+      },
+      {
+        "id": "Mis_S1_SofiaRepairBridge",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "Mis_S1_SofiaRepairBridge",
+        "reason": "ended"
+      },
+      {
+        "id": "Mis_S1_SofiaRepairBridge",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_ReinforcementsHaveArrived",
+        "reason": "ended"
+      },
+      {
+        "id": "Mis_S1_SofiaUrbanHint",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "Mis_S1_SofiaAirportHint1",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_ReinforcementsHaveArrived",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitPromoted",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitPromoted",
+        "reason": "ended"
+      },
+      {
+        "id": "Mis_S1_SofiaAirportHint2",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_ReinforcementsHaveArrived",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_ReinforcementsHaveArrived",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitPromoted",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitPromoted",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_OreMinerUnderAttack",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "Mis_S1_SofiaDestroyPentagon",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_ReinforcementsHaveArrived",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_ReinforcementsReady",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      },
+      {
+        "id": "Mis_S1_SofiaVictorySpeech",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_YouAreVictorious",
+        "reason": "ended"
+      },
+      {
+        "id": "EVA_UnitLost",
+        "reason": "ended"
+      }
+    ],
+    "savingWhilePending": "REFUSED_EXPLICITLY; save after mission media finishes",
+    "hdVideoReplacement": "NONE_ACCEPTED_OR_DOWNLOADED"
+  },
+  "resources": {
+    "audit": "docs/m3-1-source-audit.json",
+    "declaredPrimaryIdentities": 103,
+    "additionalNativePrimaryIdentities": 4,
+    "counts": {
+      "REUSE_SOURCE_HASH_VERIFIED": 46,
+      "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND": 27,
+      "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING": 15,
+      "ORIGINAL_FALLBACK_CONFIRMED": 2,
+      "REUSE_UNCHANGED_EARLIER_NATIVE_BINDING": 2,
+      "REUSE_UNIT_CONTROLLER_MISSION_BINDING_PENDING": 1,
+      "REUSE_NATIVE_MISSION_HD_BINDING_CONFIRMED": 7,
+      "REUSE_EXISTING_WORLD_CONTROLLER_MISSION_BINDING_PENDING": 7
+    },
+    "theater": "Task accepted immutable Urban baseline, opt-in registration; canonical selector and concurrent road work preserved",
+    "limits": "Primary images only; Pentagon A/B and unmatched art retain Original fallback. Earlier unchanged Pentagon C/D bindings remain separately identified."
+  },
+  "screenshots": [
+    {
+      "path": ".artifacts/m3-1/input-final/01-original-faction-menu.png",
+      "bytes": 222022,
+      "sha256": "5a7ddc6e4267b1038c0ed1a8770571d3520c142c785829ec0d68114375b51399",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/02-original-intro.png",
+      "bytes": 1413370,
+      "sha256": "9b44364525d29ff1353b6ee817f9a9b243ab6f4432ceece52fdfb65bfa659b95",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/03-original-opening.png",
+      "bytes": 4130588,
+      "sha256": "ef043a9017c3aa000a22dc3bf66ace0fb83d9758783a1f66049daf5a9fce875a",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/04-base-and-engineers.png",
+      "bytes": 4037246,
+      "sha256": "0218038de02d96f2eaaadd2dbcc9685a2ac24eec46109d296420d6d99747b46d",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/05-mid-mission-saved.png",
+      "bytes": 1272709,
+      "sha256": "cd589a489b6ae33fb1e00532632056e177a30de31f03841f7903419f4fbbc8a3",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/06-mid-mission-restored.png",
+      "bytes": 660311,
+      "sha256": "c1288309552e136584dd2620dad03d9862bbf5f387645a798488f9565d45817c",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/07-first-base.png",
+      "bytes": 4103220,
+      "sha256": "9fffd5abe61a5723e91df3d79bc171ebc9858ff3d1c2eb18b2c89e87cb189572",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/08-bridge-repair.png",
+      "bytes": 3685944,
+      "sha256": "8ea15355b0161d61f2e16f165e8ae9ff452f72e8e284b8c80a4d6b8375b90897",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/09-urban-combat.png",
+      "bytes": 3046045,
+      "sha256": "1849c8b6035ba385fad57abdc21d351c2213e108f9eefd911ab3d8e50f94ad7d",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/10-airport.png",
+      "bytes": 3799903,
+      "sha256": "9d2bc169184e2ec1cf8c41c59f2f080265fcbe8606cff8d425e9fb28426af6ce",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/11-pentagon-approach.png",
+      "bytes": 3842823,
+      "sha256": "ce2631da17731b2b0ed259e05f41a6746e89fef41b2c77bcdbd2c03f6b1a6fe2",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/12-pentagon-0.png",
+      "bytes": 3219572,
+      "sha256": "11c1bbf2757ef87d0c964ab2390bc31fcc99b2e355516db4d569c8e4dfbd55db",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/12-pentagon-4.png",
+      "bytes": 4608880,
+      "sha256": "d4ab1ce79adcbc945b0cee18df0f0ef4d307845981201e6a12744a114a8bb4f9",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/13-original-victory-banner.png",
+      "bytes": 4690846,
+      "sha256": "3000b2ec95a55095e3f9f27333396a3c79fe01b00eec149655ed325860f81c95",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/input-final/14-campaign-victory-result.png",
+      "bytes": 4130008,
+      "sha256": "899b5683e72c816720a0a836df80ea5b17e3d29bf13fd1b72c7b9ad38f0bdb52",
+      "scope": "Formal Normal native mouse/keyboard run, Original world display"
+    },
+    {
+      "path": ".artifacts/m3-1/continuity-final/base-1x.png",
+      "bytes": 4305225,
+      "sha256": "0254505744eab3c950dec06881c503bf413c9036742e29e3d560a3c699ee1028",
+      "scope": "continuity probe; see its report"
+    },
+    {
+      "path": ".artifacts/m3-1/continuity-final/base-2x.png",
+      "bytes": 8572024,
+      "sha256": "6a0d012f9564179a278b772952e807a9941a3fc4f985a5af6c332df1c77d0851",
+      "scope": "continuity probe; see its report"
+    },
+    {
+      "path": ".artifacts/m3-1/continuity-final/base-4x.png",
+      "bytes": 9078498,
+      "sha256": "c05799d955c6ee362d6d306a50934b2a11b58300bbe0e20926f56598a7cbc333",
+      "scope": "continuity probe; see its report"
+    },
+    {
+      "path": ".artifacts/m3-1/continuity-final/restart-original-opening.png",
+      "bytes": 1043007,
+      "sha256": "d6be1bc80b548bf4202630872e6b469c03795e3b7ea6fb47e4b44faa9573e0f5",
+      "scope": "continuity probe; see its report"
+    },
+    {
+      "path": ".artifacts/m3-1/failure-final/01-opening-unlocked.png",
+      "bytes": 3829644,
+      "sha256": "70b48707fe5d389c8510b9ca97a5cf6fd1861309692de513507ec12634b63ed5",
+      "scope": "failure probe; see its report"
+    },
+    {
+      "path": ".artifacts/m3-1/failure-final/02-original-defeat-banner.png",
+      "bytes": 576652,
+      "sha256": "69cd546943d336105af91df76669358a7843a8e161adc95810bf5764650cf3ed",
+      "scope": "failure probe; see its report"
+    },
+    {
+      "path": ".artifacts/m3-1/failure-final/03-campaign-failure-result.png",
+      "bytes": 4135457,
+      "sha256": "65ac2b109aeec767f83a79e0f7b3876647eab04604df9083ddb855d98dc6e116",
+      "scope": "failure probe; see its report"
+    },
+    {
+      "path": ".artifacts/m3-1/transport-final/01-opening-unlocked.png",
+      "bytes": 3830446,
+      "sha256": "3dc8461612fea93a7eec8a9ea9a60bd7053147569bc696a4641a0a7a5b213a85",
+      "scope": "transport probe; see its report"
+    },
+    {
+      "path": ".artifacts/m3-1/transport-final/02-original-transport-pipeline.png",
+      "bytes": 3848513,
+      "sha256": "c54f15f622ff52f5cdc4b7da1d642dd7644087cf2f6bd6608427c9ce30e474c4",
+      "scope": "transport probe; see its report"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_01-original-faction-menu.webp",
+      "bytes": 112612,
+      "sha256": "1ef6c0a21331ac468fac755b94330bb540db8e2a26e17f8bec1d8501f2bfa4f1",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/01-original-faction-menu.png",
+        "bytes": 222022,
+        "sha256": "5a7ddc6e4267b1038c0ed1a8770571d3520c142c785829ec0d68114375b51399"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "858084ab659cc8c1ffaa6e334282997e0c2494be075bf6fa6465d1715ae4348d",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-final_04-original-soviet01-loading.webp",
+      "bytes": 1708022,
+      "sha256": "758d6e97a2212b77236b217aae858a28dfb12ef925829fc160d3ac55cb54eb30",
+      "source": {
+        "path": ".artifacts/m3-1/presentation/native-final/04-original-soviet01-loading.png",
+        "bytes": 2395633,
+        "sha256": "128590c4d98f190a5ac51f5b6f11b453b86b1967aa09ff7a04ac56a5ff871047"
+      },
+      "rgbaBytes": 19046400,
+      "rgbaSha256": "0609ebe64f1e5751fe0bd72d89ee46f69f5f26ea7c9e00a363ea3b9192b73d3a",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_02-original-intro.webp",
+      "bytes": 936150,
+      "sha256": "f262931761c5e8e4a95b24e81639e2f89bc6ccd2f8c6c19c3b7a2f06e3e1e2b6",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/02-original-intro.png",
+        "bytes": 1413370,
+        "sha256": "9b44364525d29ff1353b6ee817f9a9b243ab6f4432ceece52fdfb65bfa659b95"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "2ef3e56c31a2e212459749885c4077467a6277b73894dd90ae35103032e4db7b",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_03-original-opening.webp",
+      "bytes": 3430182,
+      "sha256": "0f3350f8a81f5c5b7a0c35b3460a6894283e66789aeb238ca850bc669a9329b2",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/03-original-opening.png",
+        "bytes": 4130588,
+        "sha256": "ef043a9017c3aa000a22dc3bf66ace0fb83d9758783a1f66049daf5a9fce875a"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "389559c21a5ac94fc30e2d442f476bbf9617e794e06c6bb88659640afc275e25",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_05-mid-mission-saved.webp",
+      "bytes": 915884,
+      "sha256": "766b15ed19fc8c006b7c6dc5d8ce33d99e1cee6252ccb0ca03cf85ef0dbf4b21",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/05-mid-mission-saved.png",
+        "bytes": 1272709,
+        "sha256": "cd589a489b6ae33fb1e00532632056e177a30de31f03841f7903419f4fbbc8a3"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "399388d15550c781f4eb8595a38fac7aa75791dfca4c74ae3875654e708e29f6",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_06-mid-mission-restored.webp",
+      "bytes": 445614,
+      "sha256": "1389dd810ff0a69c76a99f4e46f7d2a7c277a624aec463f945d4c03f2fef324e",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/06-mid-mission-restored.png",
+        "bytes": 660311,
+        "sha256": "c1288309552e136584dd2620dad03d9862bbf5f387645a798488f9565d45817c"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "e51c7d679e3a58f14d43e6127663b73f9534c2f718c35da364d44e01367509bb",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_08-bridge-repair.webp",
+      "bytes": 3079352,
+      "sha256": "854abc7a5b6ee164cd5bcab4a3d74a5e7d39122368ea8f209f1f9164db731999",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/08-bridge-repair.png",
+        "bytes": 3685944,
+        "sha256": "8ea15355b0161d61f2e16f165e8ae9ff452f72e8e284b8c80a4d6b8375b90897"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "637ccbc22b36d0f99c111855ea0dd5e56e3fd1d4aea6ae2c4dcd20af90e737be",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_09-urban-combat.webp",
+      "bytes": 2493810,
+      "sha256": "349857d73a1506c2dfd1e4beb49477bb69f9f237c53195c1fbb5ba76c98a49c7",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/09-urban-combat.png",
+        "bytes": 3046045,
+        "sha256": "1849c8b6035ba385fad57abdc21d351c2213e108f9eefd911ab3d8e50f94ad7d"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "169f7a5c53da4d76726f53954359849bcdf58f83b18b3eb50b4e22e8c23ca647",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_10-airport.webp",
+      "bytes": 3139268,
+      "sha256": "def2622af22ebd73c357e0e52d183e531c47710ace94d2f4790e78d1e5087a92",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/10-airport.png",
+        "bytes": 3799903,
+        "sha256": "9d2bc169184e2ec1cf8c41c59f2f080265fcbe8606cff8d425e9fb28426af6ce"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "aa7b169134f55f4fdd61f653f5a77f42d7514a51696a7a364d19af7027a08c82",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_13-original-victory-banner.webp",
+      "bytes": 3973762,
+      "sha256": "0edde18450a2f5b1e385c089a1ce7e3ed2e709a3f2225a82a55a20cdb25beeef",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/13-original-victory-banner.png",
+        "bytes": 4690846,
+        "sha256": "3000b2ec95a55095e3f9f27333396a3c79fe01b00eec149655ed325860f81c95"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "071c4397dcfbcfd39ff3ef05ef8568d00a0e4512c93b65acd9cf90552e005537",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_14-campaign-victory-result.webp",
+      "bytes": 2978836,
+      "sha256": "b119caa65f69b262b7098d355f6c02583fa524b1039b84cb6ffe965d8169980b",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/14-campaign-victory-result.png",
+        "bytes": 4130008,
+        "sha256": "899b5683e72c816720a0a836df80ea5b17e3d29bf13fd1b72c7b9ad38f0bdb52"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "c502b0ecb9552060a9f8a5bc667b49c4aa26fea21cd93b52dce40994ecd97b9e",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/failure-final_03-campaign-failure-result.webp",
+      "bytes": 2984046,
+      "sha256": "78b25cdb5ba2508b336bfb9d76858daed9cfcb4b697d4e9e7afbcb737b8371d9",
+      "source": {
+        "path": ".artifacts/m3-1/failure-final/03-campaign-failure-result.png",
+        "bytes": 4135457,
+        "sha256": "65ac2b109aeec767f83a79e0f7b3876647eab04604df9083ddb855d98dc6e116"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "2172c1af397d710117995f808ad7ff03508b33e40232f207b2b2f005f250a626",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/continuity-final_base-4x.webp",
+      "bytes": 6994332,
+      "sha256": "80828719aca5ed1e6544bb12f7ec0c2e170f75ea05453dc082623f0211a99cf2",
+      "source": {
+        "path": ".artifacts/m3-1/continuity-final/base-4x.png",
+        "bytes": 9078498,
+        "sha256": "c05799d955c6ee362d6d306a50934b2a11b58300bbe0e20926f56598a7cbc333"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "7c1dc574ff487889cfa57c46d5c110e5d377f937d1b7a09fd88d731517334b7c",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/continuity-final_base-1x.webp",
+      "bytes": 3598612,
+      "sha256": "9980b3d0ea3c0cb542e28d7256e37cee1ca72734e4b241350fc5eb4121329d13",
+      "source": {
+        "path": ".artifacts/m3-1/continuity-final/base-1x.png",
+        "bytes": 4305225,
+        "sha256": "0254505744eab3c950dec06881c503bf413c9036742e29e3d560a3c699ee1028"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "039e502a2d4d2e5cf9b71e4fc04d689e741100ac257de17c86052f6c34d404be",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/continuity-final_base-2x.webp",
+      "bytes": 6615996,
+      "sha256": "73bdee8e3ea60367ad2f0a12bc189cb2bf29e1122d0ada62cac627c7f25a07e6",
+      "source": {
+        "path": ".artifacts/m3-1/continuity-final/base-2x.png",
+        "bytes": 8572024,
+        "sha256": "6a0d012f9564179a278b772952e807a9941a3fc4f985a5af6c332df1c77d0851"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "2c9e3faaccf76c5d7369487b42909cc397a4b787e9a9cdbed506460b6c397bf0",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    }
+  ],
+  "videos": [
+    {
+      "path": ".artifacts/m3-1/continuity-final/native-4x-playback.webm",
+      "bytes": 2854319,
+      "sha256": "b10df2e59b46a84c63cc625b1aca0def08143597a63b6fc8793cc6ca3b5f33f4"
+    }
+  ],
+  "remaining": {
+    "requiredMacNormalImplementationBlockers": [],
+    "userReview": [
+      "Mission HUD/subtitle readability",
+      "Mission/results appearance",
+      "Perceptual speech and audiovisual review"
+    ],
+    "unverified": [
+      "Windows",
+      "Easy/Hard",
+      "Exact retail particle motion/menu frame cadence",
+      "Original Windows-engine differential parity",
+      "External HD-video candidates"
+    ],
+    "guardedFutureCapabilities": [
+      "Linked-trigger semantics",
+      "Recruitment into preloaded transports"
+    ],
+    "outsideScope": [
+      "Mission two and other campaigns/YR execution",
+      "Original RA2/YR binary saves",
+      "Main integration",
+      "Push/publication",
+      "New performance project"
+    ]
+  },
+  "historical": [
+    {
+      "path": ".artifacts/m3-1/input-r1/report.json",
+      "bytes": 55561,
+      "sha256": "87dddf9b17a37f43ff4b931ce4f0122ff834fdffb0d6d6ca5e3274a232cf52bc",
+      "status": "FAIL",
+      "disposition": "Retained historical development evidence; final matched receipts take precedence",
+      "reason": "locator.click: Timeout 30000ms exceeded."
+    },
+    {
+      "path": ".artifacts/m3-1/input-r2/report.json",
+      "bytes": 104032,
+      "sha256": "afc679246f8f7dd1189b4111f2556548b7b28aa8e1cf2f7e1e60d2d4a227c984",
+      "status": "FAIL",
+      "disposition": "Retained historical development evidence; final matched receipts take precedence",
+      "reason": "page.evaluate: Error: Capture target or engineer unavailable: CAAIRP"
+    },
+    {
+      "path": ".artifacts/m3-1/input-r3/report.json",
+      "bytes": 7701854,
+      "sha256": "7bc51027ba8ab822f60c9c0d75b6656860a7be54267e286d16a1044f80f92b6c",
+      "status": "PASS_NATIVE_INPUT_ORIGINAL_VICTORY_AND_RESTORE",
+      "disposition": "Retained historical development evidence; final matched receipts take precedence"
+    },
+    {
+      "path": ".artifacts/m3-1/mission-r1/report.json",
+      "bytes": 511893,
+      "sha256": "fa4ec754200bbb8e795421bb2e151d75f1822d8f87dac8a7ca05f4fb67816d73",
+      "status": "FAIL",
+      "disposition": "Retained historical development evidence; final matched receipts take precedence",
+      "reason": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'gameTurnMgr')"
+    },
+    {
+      "path": ".artifacts/m3-1/mission-r2/report.json",
+      "bytes": 615166,
+      "sha256": "5d9138decfcb363250ccd78886026b28b89edcce8a50327c31a7c8a4321aabc2",
+      "status": "PASS_BASE_AND_MID_MISSION_RECONSTRUCTION",
+      "disposition": "Retained historical development evidence; final matched receipts take precedence"
+    },
+    {
+      "path": ".artifacts/m3-1/mission-r3/report.json",
+      "bytes": 2401555,
+      "sha256": "9d693641d18e40858a62b1ff9708f6f9353a3babe4f6bc8d7d8fde37793555e1",
+      "status": "PASS_ASSISTED_ORIGINAL_VICTORY_AND_RESTORE",
+      "disposition": "Retained historical development evidence; final matched receipts take precedence"
+    },
+    {
+      "path": ".artifacts/m3-1/mission-r4/report.json",
+      "bytes": 8998700,
+      "sha256": "678dbee229c1f87b011233e553950646da687c39b89abfbb97121eb6e5c3bcf8",
+      "status": "FAIL",
+      "disposition": "Retained historical development evidence; final matched receipts take precedence",
+      "reason": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:"
+    },
+    {
+      "path": ".artifacts/m3-1/failure-r1/report.json",
+      "bytes": 410505,
+      "sha256": "c19964718a7c63fd7167aa8db031110e53219c02934b1f459403a4794108b07b",
+      "status": "PASS_ORIGINAL_FAILURE_FROM_ORDINARY_COMMANDS",
+      "disposition": "Retained historical development evidence; final matched receipts take precedence"
+    },
+    {
+      "path": ".artifacts/m3-1/continuity-r1/report.json",
+      "bytes": 7392,
+      "sha256": "812ff4bf8b2618ffcce6fb88931e00057c42e3ab2eb46e81bb428ec208bdfc99",
+      "status": "FAIL",
+      "disposition": "Retained historical development evidence; final matched receipts take precedence",
+      "reason": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:"
+    },
+    {
+      "path": ".artifacts/m3-1/continuity-r2/report.json",
+      "bytes": 9131170,
+      "sha256": "cf725bcf3ae098fd37e83234d560bccac908ddf0343674a77683049fc0e19bd2",
+      "status": "PASS_MATCHED_ORIGINAL_2X_4X_CONTINUITY_AND_RESTART",
+      "disposition": "Retained historical development evidence; final matched receipts take precedence"
+    }
+  ],
+  "cleanupReceipt": ".artifacts/m3-1/cleanup-final.json",
+  "nextConversation": "Continue current execution conversation for M3.1 review/corrections; a new campaign batch requires separate authorization after acceptance."
+}

@@ -19,7 +19,7 @@ test('NewUrban and Desert register independently and preserve all existing selec
         expect(events.find(event => event.theater === theater).sha256).toBe(contract.selectedPack.sha256);
     }
     expect(events.filter(event => event.type === 'environment-original')).toEqual([]);
-    expect(environmentHdContractForTheater('LUNAR')).toBeUndefined();
+    expect(environmentHdContractForTheater('LUNAR')?.theater).toBe('LUNAR');
 });
 
 test('remaining-theater source admission rejects changed source bytes and logical frames', () => {

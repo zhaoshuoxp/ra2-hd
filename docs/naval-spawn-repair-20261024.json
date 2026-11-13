@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "status": "RETURN_STALL_REPAIRED_ORIGINAL_CRASH_UNREPRODUCED",
+  "baselineHead": "86c467e42f273b23f403f56845ea4c280f31d802",
+  "sourceState": "COMMITTED_ON_CANONICAL_LOCAL_MAIN",
+  "reportedIssue": {
+    "edition": "yr",
+    "map": "xbayopigs.map",
+    "error": "Trying to remove non-existent object",
+    "originalStack": "UNAVAILABLE_AFTER_EXIT_IN_OLD_BUILD"
+  },
+  "findings": [
+    "Aircraft return paths were restarted for unchanged parent tiles and could retain a stale target after entering a moving parent tile.",
+    "An aborted launch could leave a spawned aircraft on deck before its first airborne tick.",
+    "The previously delivered build did not persist handled game-error stacks. The screenshot error has not been reproduced and is not claimed fixed."
+  ],
+  "changes": [
+    "Retarget an existing return movement only when the parent tile or bridge layer changes, including when aircraft and parent share a tile.",
+    "Store an idle aircraft still on its parent deck after a cancelled launch.",
+    "Keep removal assertions and include affected object identity and lifecycle state.",
+    "Immediately persist bounded handled-error stack, map, tick and ship/aircraft state through the desktop console listener."
+  ],
+  "validation": {
+    "focusedTests": 7,
+    "assertions": 26,
+    "entryTypecheck": "PASS",
+    "candidateBuild": "PASS",
+    "native": [
+      {
+        "edition": "yr",
+        "map": "xbayopigs.map",
+        "nativePlatform": "macOS arm64",
+        "cases": 10,
+        "modes": [
+          "parent-destroyed",
+          "parent-moving",
+          "return",
+          "target-destroyed",
+          "target-destroyed-before-takeoff"
+        ],
+        "invalidRemovals": 0,
+        "pageErrors": 0,
+        "diagnosticPersistence": {
+          "status": "PASS",
+          "synthetic": true,
+          "file": "profile/game-error-latest.json"
+        },
+        "runtimeReceipt": "/Users/Aone/RA2remaster/project-history/naval-spawn-20261024/candidate-receipt.json",
+        "runtimeBuildRetention": "RETIRED_AFTER_SOURCE_COMMIT_IDENTITY_RECEIPT_RETAINED"
+      },
+      {
+        "edition": "ra2",
+        "map": "mp01t4.map",
+        "nativePlatform": "macOS arm64",
+        "cases": 10,
+        "modes": [
+          "parent-destroyed",
+          "parent-moving",
+          "return",
+          "target-destroyed",
+          "target-destroyed-before-takeoff"
+        ],
+        "invalidRemovals": 0,
+        "pageErrors": 0,
+        "diagnosticPersistence": null,
+        "runtimeReceipt": "/Users/Aone/RA2remaster/project-history/naval-spawn-20261024/candidate-receipt.json",
+        "runtimeBuildRetention": "RETIRED_AFTER_SOURCE_COMMIT_IDENTITY_RECEIPT_RETAINED"
+      }
+    ],
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "physicalUserAcceptance": "NOT_RUN_FOR_THIS_SOURCE_CHANGE",
+    "mainDevelopmentPayload": {
+      "status": "PASS_MAIN_WEB_PAYLOAD_MATCHES_NATIVE_TESTED_CANDIDATE",
+      "matchedCandidateFiles": 205,
+      "mainDistFiles": 205,
+      "routeAllowlistFiles": 191,
+      "missing": [],
+      "different": [],
+      "extraFiles": []
+    }
+  },
+  "newLog": "~/Library/Application Support/Red Alert 2 HD/game-error-latest.json",
+  "delivery": "SOURCE_AND_INTERNAL_TEST_RUNTIME_ONLY_EXISTING_USER_APPLICATION_UNCHANGED",
+  "preservation": "Canonical resources, original installation, existing user profiles and independent campaign worktree were not modified.",
+  "sourceManifest": [
+    {
+      "file": "src/game/gameobject/task/move/MoveTask.ts",
+      "sha256": "1f0c03d384748d3d31ec0af6572287b081ad9a60c2e27ee3b42102167e3b7c10"
+    },
+    {
+      "file": "src/game/gameobject/trait/SpawnLinkTrait.ts",
+      "sha256": "e4397fc6224dd11ec6899a29a945232b98736bf865696b965b1ffa4b481379f5"
+    },
+    {
+      "file": "src/game/gameobject/locomotor/WingedLocomotor.ts",
+      "sha256": "810117fb841fffa1a56c884f644fae4ad6a29d9c0f621e14019af9b91be3d46b"
+    },
+    {
+      "file": "src/game/gameErrorDiagnostic.ts",
+      "sha256": "78d67dca8fb2ec9abd8e4246015d5d8b978a53bee74e2af13045471d9b40eb4e"
+    },
+    {
+      "file": "src/game/World.ts",
+      "sha256": "c5b54dc2499f579aabb0445d4713d2fd38a14d16d238b70b061eb5abb6f7287c"
+    },
+    {
+      "file": "src/gui/screen/game/GameScreen.ts",
+      "sha256": "a2c136479c9c69bdb0463b0ea403a1a1142f839765be345071c0f51b15e12721"
+    },
+    {
+      "file": "desktop/main.mjs",
+      "sha256": "6e155e215082f65d363c54c5ce81109692c3a30e3f11d2a3c24f6f3db886cb28"
+    },
+    {
+      "file": "desktop/game-error-log.mjs",
+      "sha256": "97ea70969ede68d147c2604d7a3e20467d339ceb36233a66411e49171aa88540"
+    }
+  ],
+  "evidence": [
+    {
+      "case": "baseline-destroyer-native",
+      "file": "/Users/Aone/RA2remaster/project-history/naval-spawn-20261024/baseline-destroyer-native.json.gz",
+      "rawSha256": "3d7aff2c47fc3e22382f4c2582148e89113c2cfca378bd87893746685407c2fa",
+      "gzipSha256": "0cc2dbfe554da5d2fdf1c35cbdb9700424c9230236fef6672718b6f9f5118435"
+    },
+    {
+      "case": "baseline-regression",
+      "file": "/Users/Aone/RA2remaster/project-history/naval-spawn-20261024/baseline-regression.json.gz",
+      "rawSha256": "29ab64b93f53b129be8932606f32d51f9ce5721bf66f73f823a16b870599acfe",
+      "gzipSha256": "3f8c33de98973563dad98c07ffe79172c1eae195f4548b47311d3230895b672c"
+    },
+    {
+      "case": "baseline-regression-flight",
+      "file": "/Users/Aone/RA2remaster/project-history/naval-spawn-20261024/baseline-regression-flight.json.gz",
+      "rawSha256": "fccd964aa684271f3358b6ad088b3f1b358e980e87e4deff61897854812d4d7f",
+      "gzipSha256": "6a1373a0443835cc6171681892ff93977a780a9ae959a08f1eba017b04d8aa1b"
+    },
+    {
+      "case": "follow-probe",
+      "file": "/Users/Aone/RA2remaster/project-history/naval-spawn-20261024/follow-probe.json.gz",
+      "rawSha256": "f6cb78af48695ebf12614bd47df147d150c424f686a7249dcb039fc4d75fd6ad",
+      "gzipSha256": "b45580da094b641e25c9e4aa360b2b046c3523f721f3196213989472b10a1f38"
+    },
+    {
+      "case": "candidate-yr",
+      "file": "/Users/Aone/RA2remaster/project-history/naval-spawn-20261024/candidate-yr.json.gz",
+      "rawSha256": "543441e55d4e53c3c2e4d366de3823d76fadb729add2921e8f1482a046069366",
+      "gzipSha256": "2d423c2859af7eb284ba1be5d8516fa9e8ed67246a5837b4ca754208f216b302"
+    },
+    {
+      "case": "candidate-ra2",
+      "file": "/Users/Aone/RA2remaster/project-history/naval-spawn-20261024/candidate-ra2.json.gz",
+      "rawSha256": "1d8ebc5b9866bd7a02c0ba4fe95c513fb6fe204ced9fae8805e96c21d34c9b0a",
+      "gzipSha256": "506cb188bdc03dad2ef6a4d0e99c76de57736f83781e66e3c2829e9798b62bba"
+    }
+  ],
+  "mainIntegration": {
+    "branch": "main",
+    "authorization": "User requests local-main integration, main-only future development and scoped cleanup.",
+    "status": "COMPLETE",
+    "futureDevelopment": "Canonical local main only; no automatic new task branches or worktrees.",
+    "implementationCommit": "bd3f22eebf8f9b3a6eae75ae7ea717a1f396c820"
+  },
+  "logLocations": {
+    "normalDevelopment": "~/Library/Application Support/RA2 HD/game-error-latest.json",
+    "distribution": "~/Library/Application Support/Red Alert 2 HD/game-error-latest.json",
+    "override": "RA2_DESKTOP_USER_DATA/game-error-latest.json",
+    "scope": "Electron desktop; browser-only preview retains console output."
+  },
+  "cleanup": {
+    "status": "COMPLETE",
+    "plan": "/Users/Aone/RA2remaster/project-history/naval-spawn-20261024/main-cleanup-plan.json",
+    "target": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/naval-spawn-20261024",
+    "retention": "Compressed raw reports, key screenshots and source/build identity receipts remain under project-history.",
+    "result": "/Users/Aone/RA2remaster/project-history/naval-spawn-20261024/main-cleanup-result.json",
+    "removedFiles": 828,
+    "logicalBytesRemoved": 205213731,
+    "observedFreeBytesDelta": 0,
+    "protectedFiles": 26377,
+    "protectedHashedFiles": 2638,
+    "protectionDifferences": [],
+    "externalDesktopObservation": {
+      "file": "/Users/Aone/RA2remaster/project-history/naval-spawn-20261024/main-precleanup-external-changes.json.gz",
+      "rawSha256": "4a17f4e3d93f31c88c984c73b7dca203142cc885912d587cb6600dc2c3f7beeb",
+      "gzipSha256": "150f53e72ab943760da196f514ae452780a8a3029081c100b20d909f8c462ad1"
+    },
+    "externalDesktopDisclosure": "The old Desktop M3.1 folder and ZIP disappeared before this task deleted anything; retained separately, not counted as this cleanup or claimed preserved.",
+    "spaceDisclosure": "Logical retired bytes and observed filesystem free-space change are separate measurements."
+  },
+  "retiredArtifactRoot": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/naval-spawn-20261024",
+  "evidenceAdditional": [
+    {
+      "file": "images/baseline-destroyer-native--DEST-moving.png",
+      "sha256": "c87d625c5dd5a72fdb0b6c277d9e680312418f92dcc743d0b530db0c6ce022c3"
+    },
+    {
+      "file": "images/baseline-destroyer-native--DEST-ready.png",
+      "sha256": "fc551fd9c7e5c4691b83e222b234820068a752bb15c3641b0d564bca3c7cd98f"
+    },
+    {
+      "file": "images/baseline-regression--naval-spawn-regression.png",
+      "sha256": "31ab35c065d3008b2071fe6322d66e35a5ffcb1a0f9c577535e46a748b25208f"
+    },
+    {
+      "file": "images/baseline-regression-flight--naval-spawn-regression.png",
+      "sha256": "cd1af8c9878ab15c036202c97ddcbffc33a0b266bb17448ec2294502a6a03932"
+    },
+    {
+      "file": "images/candidate-ra2--naval-spawn-regression.png",
+      "sha256": "ae49f6742f092bd7c2985e7e214d98f7cdb35133867e455cbd417686410a2524"
+    },
+    {
+      "file": "images/candidate-yr--naval-spawn-regression.png",
+      "sha256": "fb6458a4647402b0af789e41cb4e8c13af819117a450eb59b06f2e8c8343bbc3"
+    },
+    {
+      "file": "images/follow-probe--naval-spawn-regression.png",
+      "sha256": "84bcbeb14fc24b99ffab72404cd78aaf4c5bfe71bb55ffd0eebd130d2e39b1c6"
+    },
+    {
+      "file": "baseline-receipt.json",
+      "sha256": "8593a376f399fcdf90a96a6705f0302d2cc2ba9883cecd2d1432775b77a7ace5"
+    },
+    {
+      "file": "candidate-receipt.json",
+      "sha256": "e8534851a5dd1ac6fe759caf8700659d5582eeb1e44802514649fb2ec44edfea"
+    },
+    {
+      "file": "baseline-build-identity.json.gz",
+      "sha256": "6129de8afe72f4eaf0a6cf7098a59e9c1a479a0839cf317b2d1e5e90b1bcf45d",
+      "rawSha256": "119d11e34bfba8d288f7cce7cca786aefca3623627e7ee5e168bc7783f8513c5"
+    },
+    {
+      "file": "candidate-build-identity.json.gz",
+      "sha256": "987bc45195137afb28c84b2aa57342b61a03e6a4792aadaae8ddb8974fa11664",
+      "rawSha256": "4b792c42f5252d90cdee1d23926f172293e0472d5ad06dd77035d08e291c4563"
+    }
+  ]
+}

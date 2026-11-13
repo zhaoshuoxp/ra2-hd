@@ -6,6 +6,7 @@ import { isSovietBuildingHdSource } from './sovietBuildingHdFamilies';
 import { isAlliedUnitHdSource } from './alliedUnitHdSources';
 import { isYuriUnitHdSource } from './yuriUnitHdSources';
 import { isSovietUnitHdSource } from './sovietUnitHdFamilies';
+import { isTaskNpcHdSource, isTaskNpcTiledHdSource } from './campaignTaskNpcHd';
 import { createPooledHdPage } from './poolHdPage';
 import { HdTilePoolPreparer } from './HdTilePoolPreparer';
 import { downsampleHdPage } from './downsampleHdPage';
@@ -54,8 +55,12 @@ export async function resolveHdSprite(manifest: any, manifestHash: string, sourc
         || (completionPresentation === 'retained-idle-v1' && source.member.endsWith('mk.shp')
             && source.frames.length > 1);
     const batchSource = isSovietBuildingHdSource(source) || isBuildingCoverageSource(source) || environmentSource;
-    const unitSource = isSovietUnitHdSource(source) || isAlliedUnitHdSource(source) || isYuriUnitHdSource(source);
-    const compactData = (losslessTiles && unitSource) || batchSource || (source.theater === 'TEMPERATE' && napowrHdFamily.members.some(
+    const unitSource = isSovietUnitHdSource(source) || isAlliedUnitHdSource(source)
+        || isYuriUnitHdSource(source) || isTaskNpcHdSource(source);
+    const retailConscript = source.member === 'cons.shp'
+        && source.sha256 === 'b60c5527b82a6e317e4958344443c4bbd9b2139e693f4641c470ff3f15f1f9f1'
+        && same(source.canvas, [76, 96]) && source.frames.length === 301;
+    const compactData = (losslessTiles && (unitSource || retailConscript)) || batchSource || (source.theater === 'TEMPERATE' && napowrHdFamily.members.some(
         member => member.member === source.member && member.sha256 === source.sha256));
     const headerValid = manifest?.schemaVersion === 2 && hash(manifestHash)
         && /^[a-z0-9-]+$/.test(manifest.packId) && /^[a-zA-Z0-9.-]+$/.test(manifest.packRevision)
@@ -87,7 +92,7 @@ export async function resolveHdSprite(manifest: any, manifestHash: string, sourc
                     && same(entry.canvas, source.canvas) && entry.frames === source.frames.length);
             if (variant.storage !== undefined && (!serialized || !losslessTiles || !compactData
                 || (!(isBuildingCoverageSource(source) && manifest.packId?.startsWith('yuri-coverage-'))
-                    && !constructionStorage) || derived)) fail('unsupported-hd-storage');
+                    && !constructionStorage && !isTaskNpcTiledHdSource(source)) || derived)) fail('unsupported-hd-storage');
             const maxPages = hdAtlasPageLimit(source, sourceDensity, losslessTiles, compactData);
             if (!Array.isArray(variant.pages) || !variant.pages.length || variant.pages.length > maxPages) fail('page-limit');
             if (!Array.isArray(variant.frames) || variant.frames.length !== source.frames.length) fail('incomplete-animation');

@@ -1,0 +1,155 @@
+{
+  "status": "COMPLETE_FAMILY_REGISTERED_NATIVE_AND_USER_REVIEW_PENDING",
+  "family": "yr-task-newurban-calond06-v1",
+  "mission": {
+    "edition": "yr",
+    "mission": "sov03umd.map",
+    "sha256": "df69d0f63f982823bb5818d3d49776028a719a2c20ced2526fab8f5cecb49fe6"
+  },
+  "theater": "NEWURBAN",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yr-campaign/task-newurban-calond06-stage-r2",
+  "preparation": {
+    "status": "PREPARED_NATIVE_REGISTRATION_AND_RUNTIME_PENDING",
+    "recipe": "/Users/Aone/RA2remaster/ra2-hd/docs/campaign-art/yr-v1/task-newurban-calond06-r2.json",
+    "recipeSha256": "431bd09052066e49a4633d8af3ff34e010dcc028a81c74a2d3662a36998ffab3",
+    "originalSourceJsonSha256": "3c4e176b13924129078f20cd0b63af2a170865ce0bf5842b11d863f9a08402d3",
+    "sourceSha256": "678361811f934238846fe260572ca6ae0b29e75b6aa817e76492fde30a13298f",
+    "masters": [
+      {
+        "slot": 0,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-calond06/masters-r1/frame-0.png",
+        "sha256": "b72143ea42a2a0f3d961d1b2faccc8a9fd04f82e4bb5e464cf2df368b4feb636"
+      },
+      {
+        "slot": 1,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-calond06/masters-r1/frame-1.png",
+        "sha256": "694737a77b1c526006b4ae9bbff9d1d4d4fcee4f96ccae5df98b3457d0a2ed6b"
+      },
+      {
+        "slot": 2,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-calond06/masters-r1/frame-2.png",
+        "sha256": "7e24ad38adee39ee7ea0c87cb393cfa6cc2992a3b761c907c06bc07ec753fa4c"
+      },
+      {
+        "slot": 3,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-calond06/masters-r1/frame-3.png",
+        "sha256": "17f6380e997284a49ed9e265bf65ffa83ac95d5b73f7e3b5dae54b9be93a4a97"
+      }
+    ],
+    "directionAuthorization": {
+      "file": "docs/campaign-art/yr-v1/authorization.json",
+      "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+    },
+    "userVisualAcceptance": "PENDING",
+    "qualification": "Only original guides are converted. Authored masters are referenced without copying or modification. Complete state coverage, independent exports, alpha/geometry and runtime acceptance require subsequent verification."
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "b4ac13408284c012daa76d8118d682629019b307c85ee37c86023b3b93e071b2",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 8,
+      "pages": 2,
+      "ownerStates": 2,
+      "neutralStates": 6,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 4,
+      "preservedAcceptedDensityFrames": 0
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 8323072,
+      "4": 33161216
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "internalVisualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "packSha256": "b4ac13408284c012daa76d8118d682629019b307c85ee37c86023b3b93e071b2",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "inspectedExports": [
+      ".artifacts/yr-campaign/task-newurban-calond06-stage-r2/inspection/states-2x.png",
+      ".artifacts/yr-campaign/task-newurban-calond06-stage-r2/inspection/states-4x.png",
+      ".artifacts/yr-campaign/task-newurban-calond06-stage-r2/inspection/garrison-density-pair-r2.png"
+    ],
+    "observations": [
+      "Complete original normal, damaged, garrison and rubble forms retain their source footprint, logical geometry, separate shadows and state timing. Actual independent exports were inspected, including thin Gothic details, open broken surfaces, wires and transparent edges.",
+      "Every base RGBA and alpha byte matches the inspected first export. The selected explicit source-pinned owner-red policy preserves warm fixed materials; its actual 2X/4X garrison pair is inspected separately."
+    ],
+    "nativeRuntime": "PENDING",
+    "userVisualAcceptance": "PENDING"
+  },
+  "bundle": {
+    "schema": "campaign-environment-extension-v1",
+    "identity": "yr-task-newurban-calond06-v1",
+    "familyHash": "50b85b1f1194a244c2555a9b63c65af3ee45add46139fb6c85c9e88cd86c93e1",
+    "mission": "sov03umd.map",
+    "theater": "NEWURBAN",
+    "revision": "yr-task-newurban-calond06-r2",
+    "members": [
+      {
+        "member": "cglond06.shp",
+        "manifest": "yr-task-newurban-calond06-r2-cglond06-shp.json",
+        "sha256": "adc92c332100b04dc824f91cc3011c01059ca4d2fb546cf10153cb1cedfe768e"
+      }
+    ],
+    "acceptance": "FAITHFUL_DIRECTION_AUTHORIZED_COMPLETE_NATIVE_RUNTIME_AND_USER_VISUAL_REVIEW_PENDING",
+    "edition": "yr"
+  },
+  "files": [
+    {
+      "name": "yr-task-newurban-calond06-r2-cglond06-shp-2-p0-base.png",
+      "bytes": 1184155,
+      "sha256": "29472baf5716e77a8e8aa522947db17e6683c5c724cb4d3fad4502826e96fbd6",
+      "route": "/local-campaign/yr/sov03umd/yr-task-newurban-calond06-r2-cglond06-shp-2-p0-base.png"
+    },
+    {
+      "name": "yr-task-newurban-calond06-r2-cglond06-shp-2-p0-data.png",
+      "bytes": 16863,
+      "sha256": "b5c9bacc7c72e0e0b05758c8c168d848a75aa791dd8207b73548124688ffeb9f",
+      "route": "/local-campaign/yr/sov03umd/yr-task-newurban-calond06-r2-cglond06-shp-2-p0-data.png"
+    },
+    {
+      "name": "yr-task-newurban-calond06-r2-cglond06-shp-4-p0-base.png",
+      "bytes": 4380317,
+      "sha256": "f409e555f13193ae7ce57ca4ab13435219fb838cd269041b8ea70982f581d096",
+      "route": "/local-campaign/yr/sov03umd/yr-task-newurban-calond06-r2-cglond06-shp-4-p0-base.png"
+    },
+    {
+      "name": "yr-task-newurban-calond06-r2-cglond06-shp-4-p0-data.png",
+      "bytes": 49214,
+      "sha256": "5ad9686b5fc003bcea4cff609a1979fc07c45364d3cb33889168de5cdb9516d2",
+      "route": "/local-campaign/yr/sov03umd/yr-task-newurban-calond06-r2-cglond06-shp-4-p0-data.png"
+    },
+    {
+      "name": "yr-task-newurban-calond06-r2-cglond06-shp.json",
+      "bytes": 6432,
+      "sha256": "adc92c332100b04dc824f91cc3011c01059ca4d2fb546cf10153cb1cedfe768e",
+      "route": "/local-campaign/yr/sov03umd/yr-task-newurban-calond06-r2-cglond06-shp.json"
+    },
+    {
+      "name": "environment-family-yr-task-newurban-calond06-r2.json",
+      "bytes": 620,
+      "sha256": "53a8b41910cb9b6bd98245a5046599eaf98017a6ead0f460f5fb1fe96382d6c8",
+      "route": "/local-campaign/yr/sov03umd/environment-family-yr-task-newurban-calond06-r2.json"
+    }
+  ],
+  "contractBeforeSha256": "616a1685a921e29eb3c3736971db7e06cffba8e72793ee6eccc3946280279893",
+  "contractAfterSha256": "acbfd707208cdae6ea1e24c52e3847d3f3bfedb6f4e6c9e9b65224be88c4a6dc",
+  "existingRootSelectorChanges": {},
+  "acceptedPayloadsReplaced": 0,
+  "ownershipCorrection": null,
+  "artCorrection": null,
+  "bridgeCorrection": null,
+  "policy": "Independent densities, original shadows/state timing and existing fixed budgets; complete-family fallback retained."
+}

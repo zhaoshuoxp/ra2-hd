@@ -1,4 +1,5 @@
 import { Coords } from '@/game/Coords';
+import { campaignChargedWeaponRange } from '../../campaign/CampaignChargedWeapon';
 import * as MathUtil from '@/util/math';
 import { ZoneType } from './ZoneType';
 import { MovementZone } from '@/game/type/MovementZone';
@@ -144,7 +145,7 @@ export class RangeHelper {
         }
         return {
             minRange: weapon.minRange,
-            range: weapon.range + rangeBonus
+            range: campaignChargedWeaponRange(shooter, weapon) ?? weapon.range + rangeBonus
         };
     }
     isInRange(source: RangeTarget, target: RangeTarget, minRange: number, maxRange: number, useTileRange = false): boolean {

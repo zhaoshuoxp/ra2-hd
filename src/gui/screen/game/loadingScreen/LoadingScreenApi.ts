@@ -4,4 +4,5 @@ export interface LoadingScreenApi {
     dispose(): void;
     updateViewport(): void;
     setOnCancel?(handler: () => void): void;
+    setCampaignMission?(mission: string, edition: 'ra2' | 'yr'): void;
 }

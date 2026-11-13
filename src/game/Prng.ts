@@ -26,4 +26,8 @@ export class Prng {
     getLastRandom(): number {
         return this.lastRandom;
     }
+    snapshot(): { version: 1; words: number[]; index: number; lastRandom: number | null } {
+        const engine = this.prng as any;
+        return { version: 1, words: [...engine.mt], index: engine.mti, lastRandom: this.lastRandom ?? null };
+    }
 }

@@ -32,14 +32,19 @@ const temporary = fs.realpathSync(fs.mkdtempSync(path.join(os.tmpdir(), 'ra2-tes
 try {
     for (const file of selected) {
         // Edition modules are cached per process; test both Yuri catalog boundaries independently.
-        const editions = file === 'scripts/m1/yuri-buildings/contracts.test.ts' ? ['yr', 'ra2'] : [undefined];
+        const editions = file === 'scripts/m1/yuri-buildings/contracts.test.ts' ? ['yr', 'ra2']
+            : file.startsWith('scripts/yr-campaign/')
+                || ['scripts/m2-4/newurban-terrain-loading.test.ts', 'scripts/m2-4/newurban-deferred-slopes-batch93.test.ts',
+                    'scripts/m2-4/desert-terrain-loading.test.ts'].includes(file)
+                ? ['yr'] : [undefined];
         for (const edition of editions) {
             const env = { ...process.env, TMPDIR: temporary, TEMP: temporary, TMP: temporary, FORCE_COLOR: '0' };
             delete env.C_TEST_FAMILIES;
             delete env.C_TEST_EDITION;
+            delete env.RA2_TEST_EDITION;
             delete env.RA2_UI_RESOURCE_ROOT;
             delete env.BUILDUP_STORAGE_AUTHORING;
-            if (edition) env.C_TEST_EDITION = edition;
+            if (edition) { env.C_TEST_EDITION = edition; env.RA2_TEST_EDITION = edition; }
             if (mode !== 'source') env.RA2_TEST_RESOURCE_ROOT = path.resolve(resourceRoot);
             else delete env.RA2_TEST_RESOURCE_ROOT;
             const command = ['test', '--preload', './scripts/windows-hd/browser-test-setup.ts', '--timeout', '30000', `./${file}`];

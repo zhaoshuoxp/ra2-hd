@@ -1,0 +1,554 @@
+{
+  "schemaVersion": 1,
+  "status": "MAC_ZIP_DELIVERED_NATIVE_VALIDATED_MANUAL_TEST_PENDING",
+  "deliveredOn": "2026-10-23",
+  "request": "Create a Mac ZIP on Desktop for manual testing",
+  "target": "darwin-arm64",
+  "archive": {
+    "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261023.zip",
+    "bytes": 5705145891,
+    "sha256": "5ff0cd146eecef508fb0688af21c3dcdaab84cc616eb24fdddab8f1b3bcb9993",
+    "entries": 14535
+  },
+  "app": {
+    "name": "Red Alert 2 HD M3.1 Campaign.app",
+    "runtimeSourceHead": "bc0e41defd68250d0ed40686b4b1c51b345b5800",
+    "packagingSourceHead": "8d521a1b3628cd4a50126a3411babf2d49d3b8c4",
+    "architecture": "arm64",
+    "independentResources": true,
+    "worldUiFiles": 13978,
+    "campaignFiles": 26,
+    "userData": "/Users/Aone/Library/Application Support/RA2 HD M3.1 Campaign Test 20261023",
+    "defaultGraphics": {
+      "hd": true,
+      "density": 4
+    },
+    "signing": "AD_HOC_DEEP_STRICT_PASS_NOT_NOTARIZED",
+    "frozenWebFilesUnchanged": 194,
+    "frozenDesktopFilesUnchanged": 45
+  },
+  "scope": "Accepted M3.1 RA2 Soviet 01 Normal runtime, original media, optional HD interface, memorial/flag and Urban v5 roads. No new mission, gameplay or artwork implementation.",
+  "validation": {
+    "archive": "PASS_ALL_BYTES_LINKS_AND_MODES",
+    "actualDesktopCopy": "PASS_HASH_MATCH",
+    "extraction": "PASS_ACTUAL_DESKTOP_ZIP_EXTRACTED_ALL_BYTES_LINKS_MODES_AND_SIGNATURE",
+    "native": "PASS_EXTRACTED_DESKTOP_MAC_PACKAGE_CAMPAIGN_MEDIA_HD_BRIDGES_AND_PRIVATE_PROFILE",
+    "packagedBootstrap": {
+      "packaged": true,
+      "appPath": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/mac-delivery/Relocated Manual Test/RA2-HD-M3.1-Mac-arm64-20261023/Red Alert 2 HD M3.1 Campaign.app/Contents/Resources/app",
+      "userData": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/mac-delivery/native-r2/profile",
+      "resources": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/mac-delivery/Relocated Manual Test/RA2-HD-M3.1-Mac-arm64-20261023/Red Alert 2 HD M3.1 Campaign.app/Contents/Resources/GameResources",
+      "campaign": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/mac-delivery/Relocated Manual Test/RA2-HD-M3.1-Mac-arm64-20261023/Red Alert 2 HD M3.1 Campaign.app/Contents/Resources/GameResources/campaign"
+    },
+    "intro": {
+      "dimensions": [
+        640,
+        480
+      ],
+      "audioDecodedBytes": 12856,
+      "currentTime": 0.507829
+    },
+    "loading": {
+      "density": "2",
+      "percent": 36,
+      "size": [
+        1600,
+        1040
+      ],
+      "controls": [
+        "ttlbr800.shp",
+        "spldbrl.shp",
+        "spldbr.shp"
+      ],
+      "ui": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 6918144,
+        "decodedCpuBytes": 0,
+        "gpuTextureBytesUpperBound": 0,
+        "transitionGpuBytes": 0,
+        "transitionCpuCanvasBytes": 0,
+        "domImageGpuBytesUpperBound": 6918144,
+        "domImageDecodedCpuBytesUpperBound": 13312000,
+        "textures": 0,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      }
+    },
+    "hdMenu": {
+      "density": "2",
+      "size": [
+        1264,
+        1136
+      ],
+      "ui": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 15277056,
+        "decodedCpuBytes": 8828928,
+        "gpuTextureBytesUpperBound": 8828928,
+        "transitionGpuBytes": 0,
+        "transitionCpuCanvasBytes": 0,
+        "domImageGpuBytesUpperBound": 6448128,
+        "domImageDecodedCpuBytesUpperBound": 11929600,
+        "textures": 2,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      },
+      "sha256": "f4773bbc18588dcabaf1d5f5e9aa3fab9962f7d662aa6474f56f22a80e2ed6c0"
+    },
+    "memorial": {
+      "family": {
+        "density": 4,
+        "worldChargeBytes": 9114253,
+        "gpuBytes": 5554500,
+        "loadingPeakBytes": 12377863,
+        "restoreWorkingBytes": 2862848,
+        "retainedCpuBytes": 3559753,
+        "attempts": [],
+        "members": [
+          "cuwa19_a.shp",
+          "cuwash19.shp"
+        ],
+        "status": "PUBLISHED_COMPLETE_FAMILY"
+      },
+      "parts": [
+        {
+          "frames": 52,
+          "frame": 2,
+          "gpuHd": true
+        },
+        {
+          "frames": 52,
+          "frame": 11,
+          "gpuHd": true
+        }
+      ],
+      "roadRevision": "urban-road-markings-v5",
+      "terrainGroups": [
+        {
+          "id": "m2-4-urban-representative-set00",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-representative-set09",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-representative-set43",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-representative-set20",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-pavement-set39",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-pavement-set46",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-pavement-set80",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-roads-set20",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-roads-set36",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-roads-set40",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-roads-set47",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-ground-set13",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-ground-set14",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-ground-set33",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-ground-set34",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-ground-set35",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-ground-set41",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-ground-set42",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-side-roads-set16",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-side-roads-set23",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-coast-set10",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-coast-set12",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-coast-set15",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-coast-set21",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-coast-set106",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-coast-set107",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-side-roads-set18",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-side-roads-set17",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-structure-set19",
+          "status": "PUBLISHED",
+          "density": 4
+        },
+        {
+          "id": "m2-4-urban-structure-set25",
+          "status": "PUBLISHED",
+          "density": 4
+        }
+      ],
+      "glError": 0
+    },
+    "bridges": [
+      {
+        "density": 4,
+        "beforeTick": 9440,
+        "beforeHash": 1110797913,
+        "afterTick": 10548,
+        "afterHash": 282093055,
+        "events": [
+          {
+            "tick": 10547,
+            "type": 14
+          }
+        ],
+        "engineerConsumed": true
+      },
+      {
+        "density": 1,
+        "beforeTick": 9440,
+        "beforeHash": 1110797913,
+        "afterTick": 10548,
+        "afterHash": 282093055,
+        "events": [
+          {
+            "tick": 10547,
+            "type": 14
+          }
+        ],
+        "engineerConsumed": true
+      }
+    ],
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "failedResources": 0,
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "boundary": "Packaging/media/HD checks and bounded checkpoint replay, separate from the accepted full native-input campaign completion and pending manual testing."
+  },
+  "resourceSnapshot": {
+    "layers": [
+      {
+        "route": "/local-environment/desert/selection.json",
+        "revision": "desert-environment-airport-markings-r1-v1-combined"
+      },
+      {
+        "route": "/local-environment/newurban/selection.json",
+        "revision": "newurban-final-actors-batch98-v4-combined"
+      },
+      {
+        "route": "/local-environment/selection.json",
+        "revision": "environment-m2-3-oil-paired-drive-complete-v31"
+      },
+      {
+        "route": "/local-environment/snow/selection.json",
+        "revision": "snow-environment-m2-4-civilians-v1"
+      },
+      {
+        "route": "/local-environment/urban/selection.json",
+        "revision": "urban-environment-m2-4-actors-batch62-v1-combined"
+      },
+      {
+        "route": "/local-terrain/desert/selection.json",
+        "revision": "desert-m2-4-dirt-roads-batch81-v7"
+      },
+      {
+        "route": "/local-terrain/newurban/selection.json",
+        "revision": "newurban-m2-4-final-terrain-batch96-v2"
+      },
+      {
+        "route": "/local-terrain/selection.json",
+        "revision": "temperate-m2-3-gameplay-feedback-v12"
+      },
+      {
+        "route": "/local-terrain/snow/selection.json",
+        "revision": "snow-m2-4-relief-contacts-r7-v2"
+      },
+      {
+        "route": "/local-terrain/urban/selection.json",
+        "revision": "urban-road-markings-v5"
+      }
+    ],
+    "prepared": {
+      "type": "prepared-hd-registered",
+      "members": 448,
+      "pages": 1189,
+      "index": "f993e5c0c3e235e0fdaf57bb74b8590eaac7992f30529763e003885d540ad9b1"
+    },
+    "urbanRoadRevision": "urban-road-markings-v5",
+    "packageOnlySelectorOverrides": [
+      {
+        "file": "terrain-selection.json",
+        "value": {
+          "schemaVersion": 1,
+          "revision": "temperate-m2-3-gameplay-feedback-v12",
+          "sha256": "903e84385331c5b07c7af295ee8e2b7681002532c41fd8a90e156bf6bd2820d8"
+        },
+        "canonicalValue": {
+          "schemaVersion": 1,
+          "revision": "temperate-road-markings-v5",
+          "sha256": "64c9c73e64cbd30355de2b2b7dcfdce584040859a263fbc6911da2127c8e1e1f"
+        },
+        "reason": "Restore the frozen runtime contract in the independent package only"
+      },
+      {
+        "file": "terrain-newurban-selection.json",
+        "value": {
+          "schemaVersion": 1,
+          "revision": "newurban-m2-4-final-terrain-batch96-v2",
+          "sha256": "c54d438f607fe7b388cc5a44237aeee315e7e372f553655891d74f5a7d42a393"
+        },
+        "canonicalValue": {
+          "schemaVersion": 1,
+          "revision": "newurban-road-markings-v5",
+          "sha256": "51734f2008fc4a9a15361f9b47724973ecd98eeb6a3c703d84a21a109e3e11e8"
+        },
+        "reason": "Restore the frozen runtime contract in the independent package only"
+      },
+      {
+        "file": "terrain-desert-selection.json",
+        "value": {
+          "schemaVersion": 1,
+          "revision": "desert-m2-4-dirt-roads-batch81-v7",
+          "sha256": "f8e9e55c8bbfe37ecd837b71debb1a911f82fdb350bbb67395eadf13a2df9b96"
+        },
+        "canonicalValue": {
+          "schemaVersion": 1,
+          "revision": "desert-road-markings-v5",
+          "sha256": "60e05d855f5ef5b20aa23ca1007a2c07599bd822930357021f11bae638f1b921"
+        },
+        "reason": "Restore the frozen runtime contract in the independent package only"
+      }
+    ],
+    "importMetadata": "Three portable import/support manifests omit unused local import metadata; archive identities and asset bytes retain their pins.",
+    "storage": "Independent files, not symlinks or hard links to the checkout; canonical roots are read-only inputs."
+  },
+  "evidence": [
+    {
+      "path": ".artifacts/m3-1/mac-delivery/stage/stage.json",
+      "bytes": 2082,
+      "sha256": "11c7f7f203fc830d054d35c815323b32f52a9aaf84dabb5417d47fcc669fe001"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/stage/inventory.json",
+      "bytes": 4297891,
+      "sha256": "f566d1728faa9c6dec005282fcf2177523436b54daf9016120a8ad250b703e3a"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/stage/resource-inventory.json",
+      "bytes": 3005929,
+      "sha256": "99d4cbc7f11c62f81863949de7d3e46f2fd80a430617590d6eaed31f0db6de04"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/stage/packaged-registration.json",
+      "bytes": 1467618,
+      "sha256": "4c35073fa272f6f1dcb247d221034f892747e8ca0320931e000361f83b02db97"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/archive.json",
+      "bytes": 387,
+      "sha256": "1abfb1fd9a0af397ca90919fca3f5c1c2621d2c309a514e2fe57708b82ae1ba5"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/desktop-delivery.json",
+      "bytes": 458,
+      "sha256": "28ac727b51ba2c749283fe89ff020b9f41b0334efdf8919ef3b844f49fef9c55"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/extracted.json",
+      "bytes": 610,
+      "sha256": "9865fc21d3c2e17036e46c72d160cf032f4180fc3010914180c28aa62816313b"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/report.json",
+      "bytes": 21398,
+      "sha256": "e7e0f904e52409f127862c3b507810f48b43651f543a05055aee80147501cf12"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/01-original-faction-menu.png",
+      "bytes": 1675115,
+      "sha256": "d3d70cb6f1489b64cb1751b5bac0075d87aeec7acaeb3724dd9e2792389c48cd"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/02-hd-faction-menu.png",
+      "bytes": 3073791,
+      "sha256": "60c0d7cb9186b892821eea04b8accd54c655476eef20b277a552b8503e1f5e12"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/02b-hd-source-arrow-animation.png",
+      "bytes": 3075709,
+      "sha256": "6d6979e6379b57f8d2f97b0c50eba4eecc7178d614061f9ac44ae65291e019e3"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/03a-packaged-original-intro.png",
+      "bytes": 1785897,
+      "sha256": "19056b960cb52079212d0325a421cf4eac3cd4a68aa46e8558b00ca1ba1fca86"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/03-hd-soviet01-loading.png",
+      "bytes": 2636254,
+      "sha256": "f489f46ffa32370160a750f692f97f3e281e5f6b9c46aa167fa8ed62b3a733ae"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/04-packaged-memorial-4x.png",
+      "bytes": 9187324,
+      "sha256": "e5d5db1e35d7cb14618f029e3af8838fa3da2a974374d5f46c55d4608fff5020"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/bridge-4x-before-engineer.png",
+      "bytes": 6713522,
+      "sha256": "991810dba92528c6ee690a2b59972bd11fd461371dc3c15a8f8ea21f8dde800a"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/bridge-4x-after-engineer.png",
+      "bytes": 6784902,
+      "sha256": "ed8a8e484efb529fc1cb4e667f0e9d63c7f1cdaaa9b330d481199938c2139948"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/bridge-1x-before-engineer.png",
+      "bytes": 3487158,
+      "sha256": "b1681cb45fb85175062ab43a500cb3cfdcac9b3013cceb159208f9f3696690d7"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/bridge-1x-after-engineer.png",
+      "bytes": 3496453,
+      "sha256": "74508ccb99090ab4249ea43accb06a585f3081990c051eb126ca5a6712a6544b"
+    },
+    {
+      "path": ".artifacts/m3-1/mac-delivery/native-r2/05-own-default-profile-menu.png",
+      "bytes": 3195922,
+      "sha256": "da63976bbfbf785ff78116e1deea4cad28ed3ec887019027f047cfcc007dd684"
+    }
+  ],
+  "retainedAttempts": [
+    {
+      "evidence": {
+        "path": ".artifacts/m3-1/mac-delivery/native-r1/report.json",
+        "bytes": 13756,
+        "sha256": "b5316f9b5d1cf8bbcd1ea2932c98d6978f8635fc3fd6eb7432dfa8a2e51fd8aa"
+      },
+      "harness": {
+        "path": ".artifacts/m3-1/mac-delivery/native-r1/harness.mjs",
+        "bytes": 20108,
+        "sha256": "e32a1b0dc028aae84da403ab579bc9ba55fa9396e6c3541ae0fcad5e37f26cb2"
+      },
+      "reason": "The observer closed the pause menu before waiting for a memorial capture, permitting simulation to run past 31 journal commands. Close-and-pause is now atomic; the shipped app/ZIP did not change."
+    },
+    {
+      "evidence": {
+        "path": ".artifacts/m3-1/mac-plan-r1.log",
+        "bytes": 523,
+        "sha256": "fae47aa47e42b05d506fd3e8398b27aa95dd7f0331d710fc70d6b62853ecce65"
+      },
+      "reason": "Initial planner expected ten active layers; concurrent canonical selectors had advanced in three other theaters. The package restores its frozen runtime contracts in its own copies only."
+    }
+  ],
+  "preservation": {
+    "existingDesktopAppsModified": false,
+    "existingProfilesCopiedOrReset": false,
+    "canonicalSelectorsModified": false,
+    "mainIntegrated": false,
+    "pushed": false,
+    "published": false,
+    "cleanupPerformed": false
+  },
+  "acceptance": {
+    "baseMilestone": "USER_ACCEPTED",
+    "manualPackageTest": "PENDING",
+    "record": "docs/m3-1-final-acceptance.json"
+  },
+  "instructions": "Extract the ZIP, open the app, then select RA2 > Campaign > Soviet > Normal. Continue manual-test feedback in the current conversation."
+}

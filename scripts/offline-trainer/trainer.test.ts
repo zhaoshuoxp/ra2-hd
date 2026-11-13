@@ -82,6 +82,24 @@ for (const edition of ['ra2', 'yr'] as const) describe(edition, () => {
         f.send({ type: 'heal', targets: [own] }); f.objects.set(own.id, { ...own }); f.tick(); expect(own.healthTrait.getHitPoints()).toBe(170);
         expect(f.send({ type: 'heal', targets: [own] })).toBe(false);
     });
+    test('new dog protection survives owned attack limbo while legacy commands and stale identities retain cleanup', () => {
+        const f = fixture(edition); f.enable(); const dog = f.object(), enemy = f.object(f.enemy);
+        const owned = new Map([[dog.id, dog]]); f.player.getOwnedObjectById = (id: number) => owned.get(id);
+        expect(f.send({ type: 'protect', targets: [dog], retainLimbo: true })).toBe(true); f.tick();
+        dog.isSpawned = false; dog.limboData = { selected: true }; f.objects.delete(dog.id); f.tick();
+        expect(trainerProtects(f.game, dog)).toBe(true);
+        expect(f.send({ type: 'protect', targets: [dog], retainLimbo: true })).toBe(false);
+        dog.isSpawned = true; dog.limboData = undefined; f.objects.set(dog.id, dog); f.tick();
+        dog.healthTrait.inflictDamage(500, enemy, f.game); expect(dog.healthTrait.getHitPoints()).toBe(200);
+        f.send({ type: 'protect', targets: [dog] }); f.tick();
+        dog.isSpawned = false; dog.limboData = {}; f.objects.delete(dog.id); f.tick();
+        expect(trainerProtects(f.game, dog)).toBe(false);
+        dog.isSpawned = true; dog.limboData = undefined; f.objects.set(dog.id, dog);
+        f.send({ type: 'protect', targets: [dog], retainLimbo: true }); f.tick();
+        dog.isSpawned = false; dog.limboData = {}; owned.set(dog.id, { ...dog }); f.objects.delete(dog.id); f.tick();
+        expect(trainerProtects(f.game, dog)).toBe(false); f.session.dispose();
+    });
+
     test('all real special power types: ready event, power/active-effect restrictions, repeated recharge', () => {
         const f = fixture(edition); f.enable();
         const types = Object.values(SuperWeaponType).filter(x => typeof x === 'number' && x !== 4 && (edition === 'yr' || x < 7)) as number[];

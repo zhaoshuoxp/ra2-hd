@@ -1,0 +1,53 @@
+{
+  "schema": "hd-movie-natural-sample-acceptance-v1",
+  "date": "2026-11-10",
+  "userStatementEnglish": "The revised version is more natural and can be adopted.",
+  "status": "ACCEPTED_REPRESENTATIVE_DIRECTION",
+  "priorFeedback": "docs/hd-movies-sharpness-feedback-20261110.json",
+  "scope": "Five retained two-second source windows and the revised representative processing settings; complete films still require production and audits.",
+  "settings": {
+    "model": "RealBasicVSR x4 GAN EMA",
+    "checkpointSha256": "52f77c2c835aaa3fe675b3959b2f85010a6c6f63f77f7e279394646e55a4e376",
+    "detailGain": 0.5,
+    "cleanThreshold": 255,
+    "resizeFilter": "area",
+    "fullscreenScale": 2,
+    "radarScale": 4,
+    "fps": 15
+  },
+  "samples": [
+    {
+      "identity": "ra2:s01_f00e",
+      "sourceStartFrame": 1425,
+      "frames": 30,
+      "revisedSha256": "ea08d189af7dab86d0ec252863f78c6895948fd67ec4812e2a693ddb18f55d96"
+    },
+    {
+      "identity": "ra2:a00_f00e",
+      "sourceStartFrame": 2475,
+      "frames": 30,
+      "revisedSha256": "9e3c3d6b7fc674b34b5918e9cbff23342761721ff93e7d2b5bc8f6a35c40acfb"
+    },
+    {
+      "identity": "yr:a00_f00e",
+      "sourceStartFrame": 2025,
+      "frames": 30,
+      "revisedSha256": "195b80a6152d250115ed2ee6e43f3c55914d68c5a720bba61f2f8780541960ca"
+    },
+    {
+      "identity": "ra2:s03_p01e",
+      "sourceStartFrame": 0,
+      "frames": 30,
+      "revisedSha256": "b73bdb2df52d11495bf2409279d92b930c0f7544a06c19ae37d944e799092c05"
+    },
+    {
+      "identity": "yr:s03_p01e",
+      "sourceStartFrame": 0,
+      "frames": 30,
+      "revisedSha256": "447721924933beb005301808dc51c5cf68d1f5b32b16c0969a4daddf6edf636d"
+    }
+  ],
+  "fullBatchAuthorized": true,
+  "completeProductionHdMoviesAtAcceptance": 0,
+  "productionSelectionChanged": false
+}

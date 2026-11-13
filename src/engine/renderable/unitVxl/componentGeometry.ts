@@ -3,6 +3,21 @@ import { createSpriteGeometry } from '../../gfx/SpriteUtils';
 import { Coords } from '../../../game/Coords';
 import type { VxlFrame, VxlPart } from './loadVxlFamily';
 
+// Keep ground artwork on one camera-facing plane before applying the native
+// slope bearing. Its projection is corrected as one rigid image, including
+// roof, side walls and tracks; depth folds must not compress painted details.
+export function constructionSlopePositions(positions: THREE.BufferAttribute | THREE.InterleavedBufferAttribute,
+    _referenceLinear: number[], camera: THREE.Camera): Float32Array {
+    const toward = new THREE.Vector3(0, 0, 1).applyQuaternion(camera.quaternion);
+    const output = new Float32Array(positions.count * 3);
+    for (let i = 0; i < positions.count; i++) {
+        const p = new THREE.Vector3().fromBufferAttribute(positions, i);
+        p.addScaledVector(toward, -p.dot(toward));
+        output.set(p.toArray(), i * 3);
+    }
+    return output;
+}
+
 // Clip one shared actor depth surface to each component's registered image.
 // Independent crop bounds must never change the depth at overlapping pixels.
 export function componentGeometry(

@@ -1,0 +1,46 @@
+{
+  "mission": "all11t.map",
+  "sourceSha256": "08456515dd5e258f5a9ff73b8961491883eccaa3635a8f008dcb1f9369d43887",
+  "semanticsVersion": 25,
+  "enemyHouse": "BadGuy2 House",
+  "controlledHouses": 1,
+  "triggers": 102,
+  "aiTriggers": 34,
+  "ignoreGlobal": true,
+  "teamDelays": [
+    2000,
+    2500,
+    3500
+  ],
+  "cases": {
+    "easy": {
+      "credits": 10050,
+      "human": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "enemy": [
+        0.8,
+        1.2,
+        1
+      ],
+      "aiDelay": 3500
+    },
+    "hard": {
+      "credits": 9950,
+      "human": [
+        0.8,
+        1.2,
+        1
+      ],
+      "enemy": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "aiDelay": 2000
+    }
+  },
+  "authority": "Original all11t.map and retail campaign handicaps. The source's three target-preference triggers remain difficulty-disabled; eligible AI and trigger counts are checked separately. Native opening parameters do not claim complete Easy/Hard victories."
+}

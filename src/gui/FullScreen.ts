@@ -39,6 +39,8 @@ export class FullScreen {
         const desktop = (window as any).desktopDisplay;
         if (desktop) {
             const refresh = () => desktop.get().then((state: any) => {
+                document.documentElement.style.setProperty('--ra2-safe-top', `${state.safeAreaTop ?? 0}px`);
+                window.dispatchEvent(new Event('ra2-display-safe-area'));
                 if (this.desktopFullScreen !== state.fullscreen) {
                     this.desktopFullScreen = state.fullscreen;
                     this.handleFullScreenChange(state.fullscreen);

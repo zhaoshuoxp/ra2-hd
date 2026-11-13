@@ -1,0 +1,25 @@
+{
+  "schema": "yr-source-pinned-snow-large-ramp-ground-contacts-v1",
+  "members": {
+    "rmpx04.sno": "9ce998fdfc5d95ae1b77f3de4fab0c94e10f53f9383969c8ef0042590dcd4765",
+    "rmpx01.sno": "56bdb3287457eb0f7b5905ea8c49a74033055cbb94100bca628fe7e8502eb4ae",
+    "rmpx09.sno": "e50333bef9d59f0784eb9b6f6ec02fad3045505b59d3b4638f7e9f84d2203b37",
+    "rmpx06.sno": "1bbbf3a2f637bae095e462da0833830a5b22976b3672104393e8ac13bcea847f",
+    "rmpx10.sno": "ffc994e55360fd99d7cd3cb9f992b2f277defcbcba4e27eb4a5b9ed13ccdee9f",
+    "rmpx07.sno": "116e94d2dcb7f73d24554cae79ce51a4fbd5909504190ebfc5227a924bb55bc8"
+  },
+  "palette": {
+    "archive": "ra2.mix/cache.mix",
+    "member": "isosno.pal",
+    "sha256": "9f411f95251d7e62fbdef34b37a9b8361ea15941621a88010d4e2c06486e67aa"
+  },
+  "setIndex": 77,
+  "policy": {
+    "schema": "hd-source-pinned-raised-snow-ground-contacts-v1",
+    "minimumChannel": 170,
+    "maximumChroma": 70,
+    "nativeNeighborhood": 1
+  },
+  "sourceRgbUsedAsOutputTexture": false,
+  "reason": "The source stores some raised ramp-floor contacts in TMP extra data. Their opaque Snow pixels and one-native-pixel neighborhood must retain exact original contact coverage alongside neighboring tiles. Only source masks classify contacts; independently authored RGB, exposed dark ice contours, gameplay geometry and all inherited payloads remain unchanged."
+}

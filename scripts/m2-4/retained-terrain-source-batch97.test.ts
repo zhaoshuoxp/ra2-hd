@@ -2,6 +2,7 @@ import { expect, test } from 'bun:test';
 import * as THREE from 'three';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import theaterContracts from '../../desktop/terrain-theater-hd-contracts.json';
 import { encodeRgbaRuns, decodeRgbaRuns, retainTerrainSource }
     from '../../src/engine/renderable/entity/map/retainedTerrainSource';
 
@@ -9,8 +10,10 @@ const sha = (value: Uint8Array) => createHash('sha256').update(value).digest('he
 
 test('All selected NewUrban terrain atlases restore every RGBA byte including hidden color', () => {
     const selected = JSON.parse(readFileSync('.local/terrain-newurban-selection.json', 'utf8'));
+    expect(selected).toEqual(theaterContracts.NEWURBAN);
     const root = `.local/terrain-packs/${selected.revision}`;
     const manifest = JSON.parse(readFileSync(`${root}/manifest.json`, 'utf8'));
+    expect(sha(readFileSync(`${root}/manifest.json`))).toBe(selected.sha256);
     let decodedBytes = 0, retainedBytes = 0;
     for (const group of manifest.groups) for (const variant of group.variants) {
         const rgba = new Uint8Array(readFileSync(`${root}/${variant.file}`));
@@ -20,7 +23,6 @@ test('All selected NewUrban terrain atlases restore every RGBA byte including hi
         decodedBytes += rgba.byteLength;
         retainedBytes += packed?.byteLength ?? rgba.byteLength;
     }
-    expect(manifest.groups.length).toBe(110);
     expect(retainedBytes).toBeLessThan(decodedBytes * .75);
 });
 

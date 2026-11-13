@@ -1,0 +1,173 @@
+{
+  "status": "COMPLETE_FAMILY_REGISTERED_NATIVE_AND_USER_REVIEW_PENDING",
+  "family": "yr-rubble-newurban-cawash10-v1",
+  "mission": {
+    "edition": "yr",
+    "mission": "all01umd.map",
+    "sha256": "dee38769f2247a85908705486c175ef14a4cf90437899defe7c8b4c0d1c51fb0"
+  },
+  "theater": "NEWURBAN",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yr-campaign/rubble-newurban-cawash10-stage-r1",
+  "preparation": {
+    "status": "PREPARED_NATIVE_REGISTRATION_AND_RUNTIME_PENDING",
+    "recipe": "/Users/Aone/RA2remaster/ra2-hd/docs/campaign-art/yr-v1/rubble-newurban-cawash10.json",
+    "recipeSha256": "1e6c18b897c6c17d9d4d6284b92b1859a9bb3f9f668ed81b70fb0943405aabb4",
+    "originalSourceJsonSha256": "c30d62d7c4efb70588cdcbb3c7650d9c50bb5e75cb0326bf8cef5326b3036935",
+    "sourceSha256": "e161d0cb83252c3756722c7bb2c31f7985b3c90a4d27a923b406cf76e6e7cdc2",
+    "masters": [
+      {
+        "slot": 3,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-building-rubble/newurban-cawash10/masters-r1/rubble.png",
+        "sha256": "901e79659745803ee794635536d6d3b60b990238bbfb989c05ca9fef91d75bfa"
+      }
+    ],
+    "directionAuthorization": {
+      "file": "docs/campaign-art/yr-v1/authorization.json",
+      "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+    },
+    "userVisualAcceptance": "PENDING",
+    "acceptedBodyFrames": {
+      "cnwash10.shp": {
+        "sourceSha256": "e161d0cb83252c3756722c7bb2c31f7985b3c90a4d27a923b406cf76e6e7cdc2",
+        "donorMember": "cuwash10.shp",
+        "manifestFile": "/Users/Aone/RA2remaster/ra2-hd/.local/environment-packs/urban-campaign-sov01-hd-r7-clean-r2/members/cuwash10-shp/manifest.json",
+        "manifestSha256": "ae965ce3234fc3a663980013b449fd53a1a675b1ddf8d9084935151001000688",
+        "proofFile": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-building-rubble/newurban-cawash10/accepted-body-proof-r1.json",
+        "proofSha256": "88a906902c17b00c4dd91b93aa88f214ec32ca21ce6c5adcc95e2c9c02c1fea1",
+        "slots": [
+          0,
+          1,
+          2
+        ],
+        "preserveAcceptedCoverage": {
+          "schema": "preserve-pinned-accepted-body-coverage-v1",
+          "slots": [
+            0,
+            1,
+            2
+          ],
+          "donorManifestSha256": "ae965ce3234fc3a663980013b449fd53a1a675b1ddf8d9084935151001000688",
+          "donorColorSha256": "ab4e8b4d83a7478072b2ddf2b027f9fbcfcc2071781dd7434c711250ea6f6a15"
+        }
+      }
+    },
+    "qualification": "Only original guides are converted. Authored masters are referenced without copying or modification. Complete state coverage, independent exports, alpha/geometry and runtime acceptance require subsequent verification."
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "19f7eac8d9cda7f0a58a1cefb99e36131c368c4084dd6f57a3c9f34fe6408a7f",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 8,
+      "pages": 2,
+      "ownerStates": 2,
+      "neutralStates": 6,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 4,
+      "preservedAcceptedDensityFrames": 6
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 5439488,
+      "4": 21626880
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "internalVisualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "packSha256": "19f7eac8d9cda7f0a58a1cefb99e36131c368c4084dd6f57a3c9f34fe6408a7f",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "inspectedExports": [
+      ".artifacts/yr-campaign/rubble-first6-exports-2-2x.png",
+      ".artifacts/yr-campaign/rubble-first6-exports-2-4x.png"
+    ],
+    "observations": [
+      "The new rubble retains the source footprint, palette, broad debris arrangement and complete thin fragments with continuous authored alpha.",
+      "Both densities are independently sampled from a higher-resolution authored master. No source-pixel enlargement or filtering is used to create the artwork.",
+      "Six accepted body base/data samples remain byte-identical. Original target geometry, all four body states and native shadows are unchanged."
+    ],
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "bundle": {
+    "schema": "campaign-environment-extension-v1",
+    "identity": "yr-rubble-newurban-cawash10-v1",
+    "familyHash": "2ae2a2d0bf57a6410b72c4c182324da97eb6f6bf296d771434bcf2887246fb20",
+    "mission": "all01umd.map",
+    "theater": "NEWURBAN",
+    "revision": "yr-rubble-newurban-cawash10-r1",
+    "members": [
+      {
+        "member": "cnwash10.shp",
+        "manifest": "yr-rubble-newurban-cawash10-r1-cnwash10-shp.json",
+        "sha256": "d8c96e086bfcea35d6f231c228bda6c098f63d47fab2982d1f75c97895f1a82d"
+      }
+    ],
+    "acceptance": "FAITHFUL_DIRECTION_AUTHORIZED_COMPLETE_NATIVE_RUNTIME_AND_USER_VISUAL_REVIEW_PENDING",
+    "edition": "yr"
+  },
+  "files": [
+    {
+      "name": "yr-rubble-newurban-cawash10-r1-cnwash10-shp-2-p0-base.png",
+      "bytes": 894455,
+      "sha256": "7a00f598548f2183bb79edf3e08041463b5aded79d8ca1c4524c49a72183c4b0",
+      "route": "/local-campaign/yr/all01umd/yr-rubble-newurban-cawash10-r1-cnwash10-shp-2-p0-base.png"
+    },
+    {
+      "name": "yr-rubble-newurban-cawash10-r1-cnwash10-shp-2-p0-data.png",
+      "bytes": 10661,
+      "sha256": "192d42a554cc931d2059e37f6a4c444dda3d8e49a0440a161afff87e86273841",
+      "route": "/local-campaign/yr/all01umd/yr-rubble-newurban-cawash10-r1-cnwash10-shp-2-p0-data.png"
+    },
+    {
+      "name": "yr-rubble-newurban-cawash10-r1-cnwash10-shp-4-p0-base.png",
+      "bytes": 3268487,
+      "sha256": "82f15f8fc7478d594c7825fccbfceab3c60327ddb24758606d363813c37cf430",
+      "route": "/local-campaign/yr/all01umd/yr-rubble-newurban-cawash10-r1-cnwash10-shp-4-p0-base.png"
+    },
+    {
+      "name": "yr-rubble-newurban-cawash10-r1-cnwash10-shp-4-p0-data.png",
+      "bytes": 24831,
+      "sha256": "13be0ca7bcd7526b770c3cf40878d749638499c9c22d30c661382994fccb7a30",
+      "route": "/local-campaign/yr/all01umd/yr-rubble-newurban-cawash10-r1-cnwash10-shp-4-p0-data.png"
+    },
+    {
+      "name": "yr-rubble-newurban-cawash10-r1-cnwash10-shp.json",
+      "bytes": 6110,
+      "sha256": "d8c96e086bfcea35d6f231c228bda6c098f63d47fab2982d1f75c97895f1a82d",
+      "route": "/local-campaign/yr/all01umd/yr-rubble-newurban-cawash10-r1-cnwash10-shp.json"
+    },
+    {
+      "name": "environment-family-yr-rubble-newurban-cawash10-r1.json",
+      "bytes": 626,
+      "sha256": "3f69f840949cc792a5dd4515b17ba41e8a6da07165a44ec7dc8ff5342cadd94c",
+      "route": "/local-campaign/yr/all01umd/environment-family-yr-rubble-newurban-cawash10-r1.json"
+    }
+  ],
+  "contractBeforeSha256": "c882b0264cba272c78150d03a8a50adfaa97ecd293cca96dfeb4788f9fcecae7",
+  "contractAfterSha256": "8b54bacb71139f6f2425e89c694bbb176ca49a384c3725467988845b2b66fb57",
+  "existingRootSelectorChanges": {},
+  "acceptedPayloadsReplaced": 0,
+  "ownershipCorrection": null,
+  "artCorrection": null,
+  "bridgeCorrection": null,
+  "policy": "Independent densities, original shadows/state timing and existing fixed budgets; complete-family fallback retained.",
+  "nativeValidation": {
+    "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_SLOTS_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+    "framesPerDensity": 4,
+    "evidence": [
+      "../project-history/yr-campaign-implementation-20261104/Evidence/rubble-newurban-cawash10-native-2x-r1.json.gz",
+      "../project-history/yr-campaign-implementation-20261104/Evidence/rubble-newurban-cawash10-native-4x-r1.json.gz"
+    ]
+  }
+}

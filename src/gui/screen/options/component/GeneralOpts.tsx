@@ -9,6 +9,7 @@ import { FlyerHelperMode } from "@/engine/renderable/entity/unit/FlyerHelperMode
 import { ShadowQuality } from "@/engine/renderable/entity/unit/ShadowQuality";
 import { Image } from "@/gui/component/Image";
 import { HdOptions } from './HdOptions';
+import { MovieOptions } from './MovieOptions';
 import { DisplayResolution } from './DisplayResolution';
 import type { GameSpeedControl } from '@/gui/screen/game/gameMenu/GameMenuController';
 interface Strings {
@@ -121,6 +122,7 @@ export const GeneralOpts: React.FC<GeneralOptsProps> = ({ strings, options, full
         <DisplayResolution graphics={options.graphics} fullScreen={fullScreen}/>
       </div>
       <HdOptions graphics={options.graphics} inGame={inGame} strings={strings}/>
+      <MovieOptions strings={strings}/>
       <div className="item" data-r-tooltip={strings.get("STT:GfxShadows")}>
         <span className="label">{strings.get("TS:GfxShadows")}</span>
         <Select initialValue={String(options.graphics.shadows.value)} onSelect={(value) => (options.graphics.shadows.value = Number(value) as ShadowQuality)}>

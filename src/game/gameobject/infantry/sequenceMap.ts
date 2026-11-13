@@ -42,6 +42,7 @@ export const getIdleSequenceBy = (zone: ZoneType, stance: StanceType = StanceTyp
     return undefined;
 };
 export const getStillSequenceBy = (zone: ZoneType, stance: StanceType = StanceType.None): SequenceType => {
+    if (stance === StanceType.Paradrop) return SequenceType.Paradrop;
     if (stance === StanceType.Deployed) {
         return SequenceType.Deployed;
     }
@@ -56,9 +57,6 @@ export const getStillSequenceBy = (zone: ZoneType, stance: StanceType = StanceTy
     }
     if (stance === StanceType.Guard) {
         return SequenceType.Guard;
-    }
-    if (stance === StanceType.Paradrop) {
-        return SequenceType.Paradrop;
     }
     return SequenceType.Ready;
 };
@@ -168,6 +166,7 @@ export const getDeathAnim = (unit: {
 };
 export const findSequence = (zone: ZoneType, stance: StanceType, isMoving: boolean, isFiring: boolean, isPanic: boolean, availableSequences: SequenceType[]): SequenceType | undefined => {
     const isAvailable = (seq: SequenceType) => availableSequences.indexOf(seq) !== -1;
+    if (stance === StanceType.Paradrop && isAvailable(SequenceType.Paradrop)) return SequenceType.Paradrop;
     let sequence: SequenceType | undefined;
     if (isFiring) {
         sequence = getFireSequenceBy(zone, stance);

@@ -11,6 +11,7 @@ import { isNotNullOrUndefined } from "@/util/typeGuard";
 import { ScatterPositionHelper } from "@/game/gameobject/unit/ScatterPositionHelper";
 import { ActionType } from "@/game/action/ActionType";
 import { TargetBridgeMode } from "@/game/Target";
+import { canControlOwner } from '../campaign/CampaignControl';
 export const ORDER_UNIT_LIMIT = 128;
 export class OrderUnitsAction extends Action {
     private game: any;
@@ -75,8 +76,11 @@ export class OrderUnitsAction extends Action {
             stream.writeUint16(this.target.tile.rx);
             stream.writeUint16(this.target.tile.ry);
             extraDataSize += 2;
-            const objectId = (this.target.obj || this.target.getBridge())?.id;
-            const hasExplicitBridgeMode = this.target.hasExplicitBridgeMode?.();
+            // A resolved bridge supplies height for a cell target. Promoting
+            // it to target.obj on replay changes order validation and intent.
+            const implicitBridge = !this.target.obj && !!this.target.getBridge();
+            const objectId = this.target.obj?.id;
+            const hasExplicitBridgeMode = implicitBridge || this.target.hasExplicitBridgeMode?.();
             if (this.queue || objectId !== undefined || hasExplicitBridgeMode) {
                 stream.writeUint8(Number(this.queue));
                 extraDataSize += 1;
@@ -86,7 +90,7 @@ export class OrderUnitsAction extends Action {
                 extraDataSize += 1;
             }
             if (hasExplicitBridgeMode) {
-                stream.writeUint8(this.target.getBridgeMode());
+                stream.writeUint8(this.target.getBridgeMode?.() ?? TargetBridgeMode.Auto);
                 extraDataSize += 1;
             }
         }
@@ -242,7 +246,10 @@ export class OrderUnitsAction extends Action {
                 this.game.events.dispatch(new CheerEvent(player));
             }
         }
-        processedOrders.forEach((order: any) => order.sourceObject.unitOrderTrait.addOrder(order, this.queue));
+        processedOrders.forEach((order: any) => {
+            this.game.campaign?.notePlayerOrder(order.sourceObject, player);
+            order.sourceObject.unitOrderTrait.addOrder(order, this.queue);
+        });
         this.updateWaypointPaths(processedOrders);
     }
     private validateOrders(player: any): any[] {
@@ -250,9 +257,10 @@ export class OrderUnitsAction extends Action {
         const selectedUnits = selection.getSelectedUnits();
         const baseOrder = this.orderFactory.create(this.orderType, selection);
         baseOrder.target = this.target;
+        if (!this.target && !baseOrder.targetOptional) return [];
         const validOrders: any[] = [];
         for (const unit of selectedUnits) {
-            if (unit.owner !== player ||
+            if (!canControlOwner(player, unit.owner) ||
                 unit.rules.spawned ||
                 unit.isDestroyed ||
                 unit.isCrashing ||

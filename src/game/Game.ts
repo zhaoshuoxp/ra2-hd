@@ -1,10 +1,12 @@
 import { tickTrainer, forgetTrainerObject, disposeTrainer } from '@/game/trainer/TrainerRuntime';
+import { originalCampaignStartingVeterancy } from './campaign/CampaignStartingVeterancy';
 import { ConstructionWorker } from "./ConstructionWorker";
 import { GameOpts, isHumanPlayerInfo } from "./gameopts/GameOpts";
 import { ObjectType } from "../engine/type/ObjectType";
 import { EventDispatcher } from "../util/event";
 import { OreSpread } from "./map/OreSpread";
 import { Infantry } from "./gameobject/Infantry";
+import { BuildStatus } from './gameobject/Building';
 import { AllianceStatus } from "./Alliances";
 import { BoxedVar } from "../util/BoxedVar";
 import { StartingUnitsGenerator } from "./StartingUnitsGenerator";
@@ -52,6 +54,8 @@ export enum GameStatus {
     Ended = 2
 }
 export class Game {
+    public campaign?: import('./campaign/CampaignRuntime').CampaignRuntime;
+    public playTime?: import('./PhysicalPlayTime').PhysicalPlayTime;
     public updatableObjects = new Set<any>();
     public constructionWorkers = new Map<any, ConstructionWorker>();
     public currentTick = 0;
@@ -164,12 +168,13 @@ export class Game {
     init(localPlayer: any) {
         this.localPlayer = localPlayer;
         this.createMapObjects();
-        this.createPlayerInitialUnits();
+        if (!this.campaign) this.createPlayerInitialUnits();
         this.map.terrain.computeAllPassabilityGraphs();
+        if (this.campaign) this.campaign.initialize();
         this.mapShroudTrait.init(this);
         this.crateGeneratorTrait.init(this);
-        this.playerList.getAll().forEach((player: any) => (player.credits = this.gameOpts.credits));
-        if (this.rules.mpDialogSettings.alliesAllowed) {
+        if (!this.campaign) this.playerList.getAll().forEach((player: any) => (player.credits = this.gameOpts.credits));
+        if (!this.campaign && this.rules.mpDialogSettings.alliesAllowed) {
             this.createInitialTeams();
         }
     }
@@ -177,8 +182,8 @@ export class Game {
         this.status = GameStatus.Started;
         this.currentTick = 0;
         this.currentTime = 0;
-        this.botManager.init(this);
-        this.triggers.init(this);
+        if (this.campaign) this.campaign.start();
+        else { this.botManager.init(this); this.triggers.init(this); }
     }
     createInitialTeams() {
         for (let teamId = 0; teamId < this.gameOpts.maxSlots; teamId++) {
@@ -349,12 +354,12 @@ export class Game {
                 console.warn(`Invalid map object location (${techno.rx},${techno.ry})`, techno);
                 continue;
             }
-            const owner = playersByCountry.get(techno.owner);
+            const owner = this.campaign ? this.campaign.resolveHouse(techno.owner) : playersByCountry.get(techno.owner);
             if (!owner) {
                 console.warn(`Invalid owner "${techno.owner}" for map object`, techno);
                 continue;
             }
-            if (!(owner as any).isNeutral) {
+            if (!this.campaign && !(owner as any).isNeutral) {
                 continue;
             }
             const obj = this.createObject(techno.type, name);
@@ -390,7 +395,8 @@ export class Game {
                     obj.position.tileElevation += this.map.tileOccupation.getBridgeOnTile(tile)?.tileElevation ?? 0;
                 }
                 if (techno.veterancy) {
-                    obj.veteranTrait?.setRelativeXP(techno.veterancy);
+                    obj.veteranTrait?.setRelativeXP(originalCampaignStartingVeterancy(this.gameOpts.campaign)
+                        ? techno.veterancy / 100 : techno.veterancy);
                 }
             }
             else {
@@ -398,6 +404,14 @@ export class Game {
             }
             this.changeObjectOwner(obj, owner);
             this.spawnObject(obj, tile);
+            if (obj.isBuilding() && this.gameOpts.campaign?.edition === 'yr'
+                && (this.gameOpts.campaign.semanticsVersion ?? 1) >= 46) {
+                // Source placements are completed structures. A synthetic
+                // buildup delay makes the opening bunker teams miss them.
+                obj.setBuildStatus(BuildStatus.Ready, this);
+            }
+            if (originalCampaignStartingVeterancy(this.gameOpts.campaign)) obj.veteranTrait?.activateStartingAbilities(this);
+            if (this.campaign) this.campaign.teams.bindInitial(obj, techno);
             if (shouldDestroy) {
                 this.destroyObject(obj, undefined, true);
             }
@@ -660,6 +674,18 @@ export class Game {
         });
         this.events.dispatch(new ObjectUnspawnEvent(obj));
     }
+    removeBuildingRubble(obj: any): void {
+        if (!obj.isBuilding() || !obj.isDestroyed || !obj.rules.leaveRubble || !this.world.hasObjectId(obj.id)) {
+            throw new Error('Only retained destroyed building rubble can be removed');
+        }
+        // Destruction already removed ownership, power, occlusion and traits.
+        // Retire the remaining map/world registration without a second unspawn.
+        const cells = this.map.tileOccupation.calculateTilesForGameObject(obj.tile, obj);
+        this.map.tileOccupation.unoccupyTileRange(obj.tile, obj);
+        this.map.technosByTile.remove(obj);
+        this.world.removeObject(obj);
+        this.map.terrain.invalidateTiles(cells);
+    }
     destroyObject(obj: any, killer?: any, silent: boolean = false, skipEvents: boolean = false) {
         if (obj.isDestroyed) {
             throw new Error(`Object with ID "${obj.id}" is already destroyed`);
@@ -676,6 +702,7 @@ export class Game {
                 originalOwner.addUnitsLost(obj.type, 1);
             }
         }
+        const previousHealth = obj.healthTrait?.health;
         obj.isDestroyed = true;
         if (obj.healthTrait) {
             obj.healthTrait.health = 0;
@@ -688,7 +715,7 @@ export class Game {
         creditObject?.traits.filter(NotifyTargetDestroy).forEach((trait: NotifyTargetDestroy) => {
             trait[NotifyTargetDestroy.onDestroy](creditObject, obj, killer.weapon, this);
         });
-        this.events.dispatch(new ObjectDestroyEvent(obj, killer, skipEvents));
+        this.events.dispatch(new ObjectDestroyEvent(obj, killer, skipEvents, previousHealth));
         if (obj.isBuilding() && obj.rules.leaveRubble && obj.deathType !== DeathType.Temporal) {
             obj.owner.removeOwnedObject(obj);
             this.unitSelection.cleanupUnit(obj);
@@ -721,6 +748,7 @@ export class Game {
     changeObjectOwner(obj: any, newOwner: any) {
         if (obj.owner !== newOwner) forgetTrainerObject(this, obj);
         const oldOwner = obj.owner;
+        if (!oldOwner && obj.isBuilding() && newOwner.isNeutral) obj.neutralTargetOrigin = true;
         if (oldOwner) {
             oldOwner.removeOwnedObject(obj);
         }
@@ -754,8 +782,9 @@ export class Game {
             return;
         }
         tickTrainer(this);
-        this.botManager.update(this);
-        if (this.status !== GameStatus.Ended) {
+        if (this.campaign?.failure) return;
+        if (!this.campaign) this.botManager.update(this);
+        if (!this.campaign && this.status !== GameStatus.Ended) {
             if (this.lastGameEndCheck === undefined || this.currentTime - this.lastGameEndCheck >= 1000) {
                 this.checkGameEndConditions();
                 this.lastGameEndCheck = this.currentTime;
@@ -791,7 +820,8 @@ export class Game {
             callback();
         }
         this.afterTickCallbacks.length = 0;
-        this.triggers.update(this);
+        if (this.campaign) this.campaign.update();
+        else this.triggers.update(this);
         this.countdownTimer.update(this);
         this.currentTick++;
         this.currentTime += 1000 / GameSpeed.BASE_TICKS_PER_SECOND;
@@ -811,6 +841,7 @@ export class Game {
     end() {
         if (this.status !== GameStatus.Ended) {
             this.status = GameStatus.Ended;
+            (this.playTime ?? this.campaign?.playTime)?.setRunning(false);
             this._onEnd.dispatch(this, undefined);
         }
     }
@@ -924,19 +955,21 @@ export class Game {
             traits: this.traits.getAll().reduce((acc: any, trait: any) => {
                 const state = trait.debugGetState?.();
                 if (state !== undefined) {
-                    acc[trait.constructor.name] = state;
+                    acc[trait.debugStateKey ?? trait.constructor.name] = state;
                 }
                 return acc;
             }, {}),
         };
     }
     dispose() {
+        (this.playTime ?? this.campaign?.playTime)?.setRunning(false);
         disposeTrainer(this);
         this.world.getAllObjects().forEach((obj: any) => obj.dispose());
         this.playerList.getAll().forEach((player: any) => player.dispose());
         this.constructionWorkers.forEach((worker: any) => worker.dispose());
         this.botManager.dispose();
         this.triggers.dispose();
+        this.campaign?.dispose();
         this.map.dispose();
         this.traits.dispose();
     }

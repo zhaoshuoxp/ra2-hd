@@ -1,0 +1,1015 @@
+{
+  "schemaVersion": 1,
+  "status": "MAC_TECHNICAL_PASS_USER_VISUAL_REVIEW_PENDING",
+  "scope": "Correct localized ranks, replace the premature review capture, author the mission memorial/flag HD family and reuse the verified Urban road/parking repair.",
+  "source": {
+    "runtimeHead": "abf441f732842b344208f84427e2a5d8bf79575d",
+    "taskBranch": "task/m3-1-soviet01",
+    "map": {
+      "name": "sov01t.map",
+      "bytes": 184260,
+      "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f",
+      "route": "/local-campaign/ra2/sov01t/sov01t.map"
+    },
+    "roadPatch": {
+      "origin": "Concurrent canonical main working tree; no published bugfix commit at reuse time",
+      "selected": {
+        "schemaVersion": 1,
+        "revision": "urban-road-markings-v5",
+        "sha256": "73f5f86edbeb72730d84a5d20dda966dc9161f1e73cc1fc9658d097928586d20"
+      },
+      "manifest": {
+        "path": "../ra2-hd/.local/terrain-packs/urban-road-markings-v5/manifest.json",
+        "bytes": 1040405,
+        "sha256": "73f5f86edbeb72730d84a5d20dda966dc9161f1e73cc1fc9658d097928586d20"
+      },
+      "notes": {
+        "path": "../ra2-hd/docs/road-markings-parking-repair-20261022.json",
+        "bytes": 15361,
+        "sha256": "b75607c316606d20b7f3a56a5de9ead0f7b198fefde7cafb7e80535be6622ba2"
+      },
+      "integration": "Only the Urban terrain pin is imported. Other theater contracts and concurrent main source edits are preserved."
+    },
+    "campaignManifest": {
+      "path": ".local/campaign/ra2/sov01t/manifest.json",
+      "bytes": 11430,
+      "sha256": "8f0a4fff21e85131f5c20e52d02ceca6d205d4182f4bec237d4aec6ae778ae0d"
+    }
+  },
+  "corrections": {
+    "ranks": {
+      "keys": [
+        "GUI:ParTitleSov01",
+        "GUI:ParTitleSov02"
+      ],
+      "languages": [
+        "zh-CN",
+        "zh-TW"
+      ],
+      "labels": [
+        "Private",
+        "Corporal"
+      ],
+      "sourceCatalogs": "Unmodified retail catalogs; localized UI overrides retain original map rank selection."
+    },
+    "captures": {
+      "factionCanvasFrames": [
+        {
+          "image": "fsbkgdlg.shp",
+          "frame": "0",
+          "sourcePixelsMatch": true
+        },
+        {
+          "image": "fsalg.shp",
+          "frame": "0",
+          "sourcePixelsMatch": true
+        },
+        {
+          "image": "fsbclg.shp",
+          "frame": "0",
+          "sourcePixelsMatch": true
+        },
+        {
+          "image": "fsslg.shp",
+          "frame": "0",
+          "sourcePixelsMatch": true
+        }
+      ],
+      "loading": {
+        "source": "ls800s01.shp",
+        "progressAtSample": 24,
+        "decodedSourcePixelsMatch": true,
+        "resourceGate": false,
+        "reviewPlacement": "Faction selection and mission loading are unfolded at the start of the embedded review."
+      }
+    },
+    "memorial": {
+      "family": "campaign-sov01-memorial",
+      "revision": "m3-1-memorial-hd-v1",
+      "familyHash": "0e7df4d43e37c1a4781f180df81946907b2a034a12a9cd188d6db2309d7858f1",
+      "completeMembers": [
+        {
+          "member": "cuwash19.shp",
+          "manifest": "memorial-body-hd.json",
+          "sha256": "e247e26fbee28b691ac63afc1e270b938276974c2ff70bf81e6b8816972eb790"
+        },
+        {
+          "member": "cuwa19_a.shp",
+          "manifest": "memorial-flag-hd.json",
+          "sha256": "f54529765641ece54a1ce904da219ef4c01fca9cc288d936a1e2bc99975b5e07"
+        }
+      ],
+      "bodyStates": 4,
+      "flagFrames": 48,
+      "densities": [
+        2,
+        4
+      ],
+      "tool": "Built-in imagegen",
+      "prompts": {
+        "path": "docs/m3-1-memorial-prompts.json",
+        "bytes": 4786,
+        "sha256": "c53a065bd76fe450328d244a3245429d5cda9eb3312d1dce863a027f886ec5ec"
+      },
+      "masters": [
+        {
+          "path": ".artifacts/m3-1/memorial/body-master-r1.png",
+          "bytes": 2762769,
+          "sha256": "3a9bd6e384ad8c6bc3b14bfc0193439f8d4e145d0b2a2ed116846d7c3f70b174"
+        },
+        {
+          "path": ".artifacts/m3-1/memorial/flag-master-r1.png",
+          "bytes": 774370,
+          "sha256": "799f3b1b4eba9ccc1683bf700c1e3732894a3c5ebfbdc70ca942b1787ac65a4f"
+        }
+      ],
+      "export": {
+        "path": ".artifacts/m3-1/memorial/export.json",
+        "bytes": 5013,
+        "sha256": "736302acdb8e569580ab0a542bba87d350385640e14d5ab7594b9ecf06e0149b"
+      },
+      "sourceAnchorsAndAnimation": "Native canvas, trim, slot order, playback rate, source state rules and separate shadows retained. One continuous source-fitted shaft joins the body and animated flag.",
+      "nativeGpu": [
+        {
+          "density": 1,
+          "parts": [
+            {
+              "image": "agg_CAWASH19.shp",
+              "identity": "ORIGINAL",
+              "frames": 0,
+              "frame": 2,
+              "material": "PaletteBasicMaterial",
+              "gpuHd": false,
+              "visible": true
+            },
+            {
+              "image": "agg_CAWASH19.shp",
+              "identity": "ORIGINAL",
+              "frames": 0,
+              "frame": 6,
+              "material": "PaletteBasicMaterial",
+              "gpuHd": false,
+              "visible": true
+            }
+          ],
+          "family": "ORIGINAL"
+        },
+        {
+          "density": 2,
+          "parts": [
+            {
+              "image": "agg_CAWASH19.shp",
+              "identity": "environment-aggregate/e247e26fbee28b691ac63afc1e270b938276974c2ff70bf81e6b8816972eb790/da2d330700df7a21e820946a5a9c2253259f6276c5c47340086aa096b1d55238/URBAN/tiles/2|f54529765641ece54a1ce904da219ef4c01fca9cc288d936a1e2bc99975b5e07/f04d5e2f788e7b58b9e4d299c411b6cac0fb30f1aa0ff241fa4c269149540286/URBAN/tiles/2",
+              "frames": 52,
+              "frame": 2,
+              "material": "HdSpriteMaterial",
+              "gpuHd": true,
+              "visible": true
+            },
+            {
+              "image": "agg_CAWASH19.shp",
+              "identity": "environment-aggregate/e247e26fbee28b691ac63afc1e270b938276974c2ff70bf81e6b8816972eb790/da2d330700df7a21e820946a5a9c2253259f6276c5c47340086aa096b1d55238/URBAN/tiles/2|f54529765641ece54a1ce904da219ef4c01fca9cc288d936a1e2bc99975b5e07/f04d5e2f788e7b58b9e4d299c411b6cac0fb30f1aa0ff241fa4c269149540286/URBAN/tiles/2",
+              "frames": 52,
+              "frame": 4,
+              "material": "HdSpriteMaterial",
+              "gpuHd": true,
+              "visible": true
+            }
+          ],
+          "family": {
+            "density": 2,
+            "worldChargeBytes": 2473369,
+            "gpuBytes": 1534468,
+            "loadingPeakBytes": 3406427,
+            "restoreWorkingBytes": 767360,
+            "retainedCpuBytes": 938901,
+            "attempts": [],
+            "members": [
+              "cuwa19_a.shp",
+              "cuwash19.shp"
+            ],
+            "status": "PUBLISHED_COMPLETE_FAMILY"
+          }
+        },
+        {
+          "density": 4,
+          "parts": [
+            {
+              "image": "agg_CAWASH19.shp",
+              "identity": "environment-aggregate/e247e26fbee28b691ac63afc1e270b938276974c2ff70bf81e6b8816972eb790/da2d330700df7a21e820946a5a9c2253259f6276c5c47340086aa096b1d55238/URBAN/tiles/4|f54529765641ece54a1ce904da219ef4c01fca9cc288d936a1e2bc99975b5e07/f04d5e2f788e7b58b9e4d299c411b6cac0fb30f1aa0ff241fa4c269149540286/URBAN/tiles/4",
+              "frames": 52,
+              "frame": 2,
+              "material": "HdSpriteMaterial",
+              "gpuHd": true,
+              "visible": true
+            },
+            {
+              "image": "agg_CAWASH19.shp",
+              "identity": "environment-aggregate/e247e26fbee28b691ac63afc1e270b938276974c2ff70bf81e6b8816972eb790/da2d330700df7a21e820946a5a9c2253259f6276c5c47340086aa096b1d55238/URBAN/tiles/4|f54529765641ece54a1ce904da219ef4c01fca9cc288d936a1e2bc99975b5e07/f04d5e2f788e7b58b9e4d299c411b6cac0fb30f1aa0ff241fa4c269149540286/URBAN/tiles/4",
+              "frames": 52,
+              "frame": 8,
+              "material": "HdSpriteMaterial",
+              "gpuHd": true,
+              "visible": true
+            }
+          ],
+          "family": {
+            "density": 4,
+            "worldChargeBytes": 9114253,
+            "gpuBytes": 5554500,
+            "loadingPeakBytes": 12377863,
+            "restoreWorkingBytes": 2862848,
+            "retainedCpuBytes": 3559753,
+            "attempts": [],
+            "members": [
+              "cuwa19_a.shp",
+              "cuwash19.shp"
+            ],
+            "status": "PUBLISHED_COMPLETE_FAMILY"
+          }
+        }
+      ]
+    },
+    "roads": {
+      "revision": "urban-road-markings-v5",
+      "selectedManifestHash": "73f5f86edbeb72730d84a5d20dda966dc9161f1e73cc1fc9658d097928586d20",
+      "nativeGroups": [
+        {
+          "density": 2,
+          "groups": [
+            {
+              "id": "m2-4-urban-roads-set20",
+              "sha256": "4425f2aedc509131d6274059c6dbbf32fc7cb598eca6e7a5c2daaf01677cf608",
+              "members": [
+                "proad02.urb",
+                "proad02a.urb",
+                "proad02b.urb",
+                "proad02c.urb",
+                "proad06.urb",
+                "proad18.urb",
+                "proad08.urb",
+                "proad03.urb",
+                "proad14.urb",
+                "proad13.urb",
+                "proad20.urb",
+                "proad17.urb",
+                "proad07.urb",
+                "proad21.urb",
+                "proad09.urb",
+                "proad04.urb",
+                "proad11.urb",
+                "proad10.urb",
+                "proad19.urb",
+                "proad05.urb",
+                "proad16.urb"
+              ],
+              "selectedHashMatches": true
+            },
+            {
+              "id": "m2-4-urban-roads-set40",
+              "sha256": "98766808e67d7d9827c29cd10d4b2e7b9c27bc88461beb3a79a9b43d0d0bd889",
+              "members": [
+                "proadc13.urb",
+                "proadc14.urb",
+                "proadc01.urb",
+                "proadc02.urb",
+                "proadc03.urb",
+                "proadc06.urb",
+                "proadc05.urb",
+                "proadc10.urb",
+                "proadc12.urb",
+                "proadc04.urb",
+                "proadc11.urb",
+                "proadc07.urb",
+                "proadc08.urb",
+                "proadc09.urb"
+              ],
+              "selectedHashMatches": true
+            },
+            {
+              "id": "m2-4-urban-roads-set47",
+              "sha256": "973ae65713292a3fb7664e178f75bd764171e9166b65673e1524b9712a43e8f4",
+              "members": [
+                "prslpe01.urb",
+                "prslpe04.urb",
+                "prslpe02.urb",
+                "prslpe03.urb"
+              ],
+              "selectedHashMatches": true
+            },
+            {
+              "id": "m2-4-urban-ground-set35",
+              "sha256": "311b98f883e36bead8cff084dd4b5bc4e44066d596be1519ed76b29eb3811ed3",
+              "members": [
+                "rough03.urb",
+                "rough01.urb",
+                "rough02.urb",
+                "rough06.urb",
+                "rough07.urb",
+                "rough09.urb",
+                "rough10.urb",
+                "rough05.urb",
+                "rough04.urb",
+                "rough08.urb"
+              ],
+              "selectedHashMatches": true
+            }
+          ]
+        },
+        {
+          "density": 4,
+          "groups": [
+            {
+              "id": "m2-4-urban-roads-set20",
+              "sha256": "8e7c67d51e00b40db804062aee35b2261df3801efbef28673079ced102ce5de2",
+              "members": [
+                "proad02.urb",
+                "proad02a.urb",
+                "proad02b.urb",
+                "proad02c.urb",
+                "proad06.urb",
+                "proad18.urb",
+                "proad08.urb",
+                "proad03.urb",
+                "proad14.urb",
+                "proad13.urb",
+                "proad20.urb",
+                "proad17.urb",
+                "proad07.urb",
+                "proad21.urb",
+                "proad09.urb",
+                "proad04.urb",
+                "proad11.urb",
+                "proad10.urb",
+                "proad19.urb",
+                "proad05.urb",
+                "proad16.urb"
+              ],
+              "selectedHashMatches": true
+            },
+            {
+              "id": "m2-4-urban-roads-set40",
+              "sha256": "cec4df69d4828ce9a5563c49c3f867736d07760c41db442c8a1aa97019b4f729",
+              "members": [
+                "proadc13.urb",
+                "proadc14.urb",
+                "proadc01.urb",
+                "proadc02.urb",
+                "proadc03.urb",
+                "proadc06.urb",
+                "proadc05.urb",
+                "proadc10.urb",
+                "proadc12.urb",
+                "proadc04.urb",
+                "proadc11.urb",
+                "proadc07.urb",
+                "proadc08.urb",
+                "proadc09.urb"
+              ],
+              "selectedHashMatches": true
+            },
+            {
+              "id": "m2-4-urban-roads-set47",
+              "sha256": "71b5e2fba6abd3278c277f207dc31316009e3fc6ab64e1c3e9682e949e5e8f2b",
+              "members": [
+                "prslpe01.urb",
+                "prslpe04.urb",
+                "prslpe02.urb",
+                "prslpe03.urb"
+              ],
+              "selectedHashMatches": true
+            },
+            {
+              "id": "m2-4-urban-ground-set35",
+              "sha256": "bcc4567b0fcda4baf6ae4f775856c2b0b5e41e6d0f7d20548c8d2f933cabcb4e",
+              "members": [
+                "rough03.urb",
+                "rough01.urb",
+                "rough02.urb",
+                "rough06.urb",
+                "rough07.urb",
+                "rough09.urb",
+                "rough10.urb",
+                "rough05.urb",
+                "rough04.urb",
+                "rough08.urb"
+              ],
+              "selectedHashMatches": true
+            }
+          ]
+        }
+      ]
+    },
+    "remainingOriginal": [
+      "Faction/loading bitmaps",
+      "Campaign result panel and badge bitmaps"
+    ]
+  },
+  "validation": {
+    "focusedTests": {
+      "cases": 44,
+      "failed": 0,
+      "assertions": 266,
+      "evidence": {
+        "path": ".artifacts/m3-1/feedback-focused-tests.log",
+        "bytes": 6091,
+        "sha256": "2bda5a5611d5b43cb3faacda493a067b96535883d5ce6e293f37686e45f94bdb"
+      }
+    },
+    "entryTypecheck": {
+      "path": ".artifacts/m3-1/feedback-typecheck.log",
+      "bytes": 39,
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    },
+    "build": {
+      "path": ".artifacts/m3-1/feedback-build.log",
+      "bytes": 20028,
+      "sha256": "8f58624f45673804e9a1ad6b9ebc5a60b92e4c829d5853526a8008d2441ee84b"
+    },
+    "localeKeys": {
+      "path": ".artifacts/m3-1/feedback-locales.json",
+      "bytes": 223,
+      "sha256": "5b201ce699148f8fb65294a70bb14c55fd87ba6f054d72b64a9801a4f12932f9"
+    },
+    "nativeContinuity": {
+      "evidence": {
+        "path": ".artifacts/m3-1/feedback-native-r4/report.json",
+        "bytes": 18120567,
+        "sha256": "2e26ab64a2dc1f1dc344c9a091a260f8dbe4be0d61e3df97f30b0beff2097e12"
+      },
+      "cases": [
+        {
+          "density": 1,
+          "worldHash": 2873760633,
+          "continuationTick": 4362,
+          "continuationHash": 3762824249,
+          "continuationDigest": "652476fad94162bde0e325a1ca603bd83ab5b6de93ab8a6199a0e6de9d64c16f",
+          "fullStateMatches": true
+        },
+        {
+          "density": 2,
+          "worldHash": 2873760633,
+          "continuationTick": 4362,
+          "continuationHash": 3762824249,
+          "continuationDigest": "652476fad94162bde0e325a1ca603bd83ab5b6de93ab8a6199a0e6de9d64c16f",
+          "fullStateMatches": true
+        },
+        {
+          "density": 4,
+          "worldHash": 2873760633,
+          "continuationTick": 4362,
+          "continuationHash": 3762824249,
+          "continuationDigest": "652476fad94162bde0e325a1ca603bd83ab5b6de93ab8a6199a0e6de9d64c16f",
+          "fullStateMatches": true
+        }
+      ],
+      "stableIdentitySave": {
+        "tick": 4062,
+        "checksum": "395577c576a2c2d82cb0056f2baeb2923ee161cb79f5e42f55ae4af4dc03946c",
+        "fullFreshWorldMatch": true
+      },
+      "restart": {
+        "freshWorld": true,
+        "tick": 0,
+        "result": null,
+        "failure": null,
+        "commands": 0,
+        "paused": false,
+        "variables": [
+          [
+            "0",
+            false
+          ],
+          [
+            "1",
+            true
+          ],
+          [
+            "2",
+            false
+          ],
+          [
+            "3",
+            false
+          ],
+          [
+            "4",
+            false
+          ],
+          [
+            "5",
+            false
+          ],
+          [
+            "6",
+            false
+          ],
+          [
+            "7",
+            false
+          ]
+        ]
+      },
+      "reentry": {
+        "campaignMenuPresent": true
+      },
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "failedResources": 0
+    },
+    "nativeScore": {
+      "evidence": {
+        "path": ".artifacts/m3-1/feedback-score-r1/report.json",
+        "bytes": 142445,
+        "sha256": "b4cddc2604ea39a6da1246e776313d8833c2fc19000e5f605fa1023950f72746"
+      },
+      "sourceWinner": {
+        "tick": 20089,
+        "section": "Actions",
+        "key": "0A301C50",
+        "index": 0,
+        "opcode": 1
+      },
+      "callbackTurn": {
+        "before": 20090,
+        "after": 20091,
+        "status": 2,
+        "time": 1339400.0000000945,
+        "kills": 55
+      },
+      "correctedLocalizedRankMatches": true,
+      "titleKey": "GUI:ParTitleSov01",
+      "changingBadgeFrames": 14,
+      "partialTextCaptured": true,
+      "speech": [
+        {
+          "id": "Mis_S1_SofiaReinforcements",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_EnemyInfantryBattalionDetected",
+          "reason": "ended"
+        },
+        {
+          "id": "Unit_Sofia_GI",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaRepairBridge",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaRepairBridge",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaRepairBridge",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaUrbanHint",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaAirportHint1",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_UnitPromoted",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_UnitPromoted",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaAirportHint2",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_UnitPromoted",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_UnitPromoted",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaDestroyPentagon",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_ReinforcementsHaveArrived",
+          "reason": "ended"
+        },
+        {
+          "id": "Mis_S1_SofiaVictorySpeech",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_YouAreVictorious",
+          "reason": "ended"
+        },
+        {
+          "id": "EVA_OreMinerUnderAttack",
+          "reason": "stopped"
+        }
+      ],
+      "returnToCampaign": true,
+      "scope": "Presentation correction: restore the proven native-input checkpoint, replay its remaining original serialized commands with accelerated simulation, then capture the genuine source-triggered result. This is assisted replay, not a new physical-input completion."
+    },
+    "resultVideo": {
+      "path": ".artifacts/m3-1/feedback-score-r1/video-verification.json",
+      "bytes": 3355,
+      "sha256": "753a869be2a9476f4025fe2c1cf739d4dbb7e3aedb9877e35d6f2c3283038259"
+    },
+    "memorialVideo": {
+      "path": ".artifacts/m3-1/feedback-native-r4/video-verification.json",
+      "bytes": 372,
+      "sha256": "16c5b1479d5f0723e0db3c4cfafa6e1b1820ef1304204032f66b3871ee6609b4"
+    },
+    "nativeCrops": {
+      "path": ".artifacts/m3-1/feedback-native-r4/crops.json",
+      "bytes": 1393,
+      "sha256": "7144d5d59000c8753c85265aafdc82cd680827485a765e3bfa6f3b8eea3f4940"
+    },
+    "imagePackaging": {
+      "path": ".artifacts/m3-1/review-media/feedback-images.json",
+      "bytes": 14304,
+      "sha256": "dee3aee71db856ffeac4ece4b247c478777d7df89573977fa1ff7127254742f8"
+    },
+    "fullGameplayBaseline": {
+      "path": "docs/m3-1-soviet01-acceptance.json",
+      "bytes": 33782,
+      "sha256": "b20d7ef7aea23a7b3edc2523325bba22fd480e22574759eb08b4529dd4e4527d"
+    },
+    "reuse": "The frozen full native-input completion retains runtime d1e21e8c. Current assisted reconstruction/replay is identified separately.",
+    "browserRender": "NOT_RUN_NO_CONNECTED_TAB",
+    "windows": "NOT_RUN_ON_THIS_MAC"
+  },
+  "screenshots": [
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-native-r4_01-ready-original-faction-menu.webp",
+      "bytes": 1598242,
+      "sha256": "5f32970c5e1e010b3a049882d30bbc024f31d1055866b690e619e0252f76b7d5",
+      "source": {
+        "path": ".artifacts/m3-1/feedback-native-r4/01-ready-original-faction-menu.png",
+        "bytes": 2415520,
+        "sha256": "6f97d895b9c028892c0d98955152bd605844fa2f5c4c2e2e43b20f5db60de9c1"
+      },
+      "rgbaBytes": 19046400,
+      "rgbaSha256": "57752a1b73a1ad24eab6c1ce8e00754b8acdf8a8d573fa8d755a791cbb7a3e53",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-native-r4_03-actual-soviet01-loading.webp",
+      "bytes": 1711574,
+      "sha256": "99dc918e53f54755bfbead12390e8fe7ec48905a687d5ab970aedb35e57e4b34",
+      "source": {
+        "path": ".artifacts/m3-1/feedback-native-r4/03-actual-soviet01-loading.png",
+        "bytes": 2402776,
+        "sha256": "566b2398704e75395c88ae078a6ab041022c48c9729a0cb385cd6e5bc18067c3"
+      },
+      "rgbaBytes": 19046400,
+      "rgbaSha256": "8d11fd3718e2987c512d6d2423496b31c332e46d8e216d1ae3d6d8861f2eb08b",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-native-r4_memorial-4x.webp",
+      "bytes": 6787742,
+      "sha256": "af5c7b46e22122ea9b43c873b59b00a7f414dbb46c737872603ec4bd9d622e23",
+      "source": {
+        "path": ".artifacts/m3-1/feedback-native-r4/memorial-4x.png",
+        "bytes": 9196260,
+        "sha256": "52b108e1b667221ad0dc29e2cb056ae4d4ac0adcb831eebda1ea79551bb52ac0"
+      },
+      "rgbaBytes": 19046400,
+      "rgbaSha256": "35d792dd629e9beb4c2e42c8c887551800a50305327d4e2793e8e620a26b4816",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-native-r4_memorial-detail-1x.webp",
+      "bytes": 266744,
+      "sha256": "7843a205dc88920fdff17746d683ace7663eae9fd7ff6a63f3aef2e1a19ae3d4",
+      "source": {
+        "path": ".artifacts/m3-1/feedback-native-r4/memorial-detail-1x.png",
+        "bytes": 335134,
+        "sha256": "71cc964e689404ea46ee4b0a647a76a691ec9b8096879f692acc5d2fee965dfe"
+      },
+      "rgbaBytes": 1104000,
+      "rgbaSha256": "ab48fda50bff289ca074dd839bdc33cefe3a274a77d228d8b09017f21a8972c4",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-native-r4_memorial-detail-4x.webp",
+      "bytes": 458620,
+      "sha256": "c6fe631dfbcf96233f7f483e74ad4f17bd649b5fdcd580ef9c8c291cf513402e",
+      "source": {
+        "path": ".artifacts/m3-1/feedback-native-r4/memorial-detail-4x.png",
+        "bytes": 681897,
+        "sha256": "7b794840a8abf0b291d35beed5c6f95593ea3a8f3a7825cf425b6c34c60e0905"
+      },
+      "rgbaBytes": 1104000,
+      "rgbaSha256": "b48c5b6fd56c9942fb4f13073b2da4d349a3c17eb3c0cbde5dfa3d9c25e494d7",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-native-r4_memorial-1x.webp",
+      "bytes": 3709812,
+      "sha256": "d1b3a3ff50ee79ff42e3f7135e7935f7cb5165bb1a1af6fedab7389721357f36",
+      "source": {
+        "path": ".artifacts/m3-1/feedback-native-r4/memorial-1x.png",
+        "bytes": 4456851,
+        "sha256": "ca6d25f90c3c78d7d85f3afa113bc7ab18ed6383246d0b183025a834bd013110"
+      },
+      "rgbaBytes": 19046400,
+      "rgbaSha256": "60b8a8e480a15b3b15cbfa20200f670124f1e7ca62e6c00057d056db2572a3d1",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-native-r4_memorial-2x.webp",
+      "bytes": 6356846,
+      "sha256": "060160cdbfcbb365e66123d2ac92a7ccef5bd847cf08b68a93292f357c50915a",
+      "source": {
+        "path": ".artifacts/m3-1/feedback-native-r4/memorial-2x.png",
+        "bytes": 8585983,
+        "sha256": "2c210c8f2cdefedc4a656f14f31f58e69bcc0320fa222c4e1ea797ab3205efbc"
+      },
+      "rgbaBytes": 19046400,
+      "rgbaSha256": "a1f312c74cce7e185619a92e2b08c084d5880d9e1b5c4a7e7418df731dca193d",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/score-r4_01-statue-original-fallback-at-4x.webp",
+      "bytes": 7048784,
+      "sha256": "841e668de1781d066524935e63c8ff15d93483c2698d9366c9b524af84f6155e",
+      "source": {
+        "path": ".artifacts/m3-1/score-r4/01-statue-original-fallback-at-4x.png",
+        "bytes": 9130145,
+        "sha256": "ec592a032f0ddd4fcf3c576392963e6d1eb35f7c0f39e1abe2dbac6be2fd928c"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "494a44f435ca5a36fb28b85c550696d07e82073ee00b451556aaf0a2a5a25e7e",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-score-r1_02-original-campaign-medal-and-text.webp",
+      "bytes": 1591098,
+      "sha256": "d7a14de068ef3819b0567033e728a3c04bcfa2935f022833133d4def873e9d73",
+      "source": {
+        "path": ".artifacts/m3-1/feedback-score-r1/02-original-campaign-medal-and-text.png",
+        "bytes": 2379782,
+        "sha256": "a99bdbec6b7c7b615561d1a53298cd212ea393d12c8059bcd8c2488d7bd74482"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "4ec2e61e0106337000e9b2fcd044a0abfb089f124e2171cc1160ae5138e8c5de",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_02-original-intro.webp",
+      "bytes": 936150,
+      "sha256": "f262931761c5e8e4a95b24e81639e2f89bc6ccd2f8c6c19c3b7a2f06e3e1e2b6",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/02-original-intro.png",
+        "bytes": 1413370,
+        "sha256": "9b44364525d29ff1353b6ee817f9a9b243ab6f4432ceece52fdfb65bfa659b95"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "2ef3e56c31a2e212459749885c4077467a6277b73894dd90ae35103032e4db7b",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_03-original-opening.webp",
+      "bytes": 3430182,
+      "sha256": "0f3350f8a81f5c5b7a0c35b3460a6894283e66789aeb238ca850bc669a9329b2",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/03-original-opening.png",
+        "bytes": 4130588,
+        "sha256": "ef043a9017c3aa000a22dc3bf66ace0fb83d9758783a1f66049daf5a9fce875a"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "389559c21a5ac94fc30e2d442f476bbf9617e794e06c6bb88659640afc275e25",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_05-mid-mission-saved.webp",
+      "bytes": 915884,
+      "sha256": "766b15ed19fc8c006b7c6dc5d8ce33d99e1cee6252ccb0ca03cf85ef0dbf4b21",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/05-mid-mission-saved.png",
+        "bytes": 1272709,
+        "sha256": "cd589a489b6ae33fb1e00532632056e177a30de31f03841f7903419f4fbbc8a3"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "399388d15550c781f4eb8595a38fac7aa75791dfca4c74ae3875654e708e29f6",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_06-mid-mission-restored.webp",
+      "bytes": 445614,
+      "sha256": "1389dd810ff0a69c76a99f4e46f7d2a7c277a624aec463f945d4c03f2fef324e",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/06-mid-mission-restored.png",
+        "bytes": 660311,
+        "sha256": "c1288309552e136584dd2620dad03d9862bbf5f387645a798488f9565d45817c"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "e51c7d679e3a58f14d43e6127663b73f9534c2f718c35da364d44e01367509bb",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_08-bridge-repair.webp",
+      "bytes": 3079352,
+      "sha256": "854abc7a5b6ee164cd5bcab4a3d74a5e7d39122368ea8f209f1f9164db731999",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/08-bridge-repair.png",
+        "bytes": 3685944,
+        "sha256": "8ea15355b0161d61f2e16f165e8ae9ff452f72e8e284b8c80a4d6b8375b90897"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "637ccbc22b36d0f99c111855ea0dd5e56e3fd1d4aea6ae2c4dcd20af90e737be",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_09-urban-combat.webp",
+      "bytes": 2493810,
+      "sha256": "349857d73a1506c2dfd1e4beb49477bb69f9f237c53195c1fbb5ba76c98a49c7",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/09-urban-combat.png",
+        "bytes": 3046045,
+        "sha256": "1849c8b6035ba385fad57abdc21d351c2213e108f9eefd911ab3d8e50f94ad7d"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "169f7a5c53da4d76726f53954359849bcdf58f83b18b3eb50b4e22e8c23ca647",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_10-airport.webp",
+      "bytes": 3139268,
+      "sha256": "def2622af22ebd73c357e0e52d183e531c47710ace94d2f4790e78d1e5087a92",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/10-airport.png",
+        "bytes": 3799903,
+        "sha256": "9d2bc169184e2ec1cf8c41c59f2f080265fcbe8606cff8d425e9fb28426af6ce"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "aa7b169134f55f4fdd61f653f5a77f42d7514a51696a7a364d19af7027a08c82",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/input-final_13-original-victory-banner.webp",
+      "bytes": 3973762,
+      "sha256": "0edde18450a2f5b1e385c089a1ce7e3ed2e709a3f2225a82a55a20cdb25beeef",
+      "source": {
+        "path": ".artifacts/m3-1/input-final/13-original-victory-banner.png",
+        "bytes": 4690846,
+        "sha256": "3000b2ec95a55095e3f9f27333396a3c79fe01b00eec149655ed325860f81c95"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "071c4397dcfbcfd39ff3ef05ef8568d00a0e4512c93b65acd9cf90552e005537",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/failure-final_03-campaign-failure-result.webp",
+      "bytes": 2984046,
+      "sha256": "78b25cdb5ba2508b336bfb9d76858daed9cfcb4b697d4e9e7afbcb737b8371d9",
+      "source": {
+        "path": ".artifacts/m3-1/failure-final/03-campaign-failure-result.png",
+        "bytes": 4135457,
+        "sha256": "65ac2b109aeec767f83a79e0f7b3876647eab04604df9083ddb855d98dc6e116"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "2172c1af397d710117995f808ad7ff03508b33e40232f207b2b2f005f250a626",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/continuity-final_base-4x.webp",
+      "bytes": 6994332,
+      "sha256": "80828719aca5ed1e6544bb12f7ec0c2e170f75ea05453dc082623f0211a99cf2",
+      "source": {
+        "path": ".artifacts/m3-1/continuity-final/base-4x.png",
+        "bytes": 9078498,
+        "sha256": "c05799d955c6ee362d6d306a50934b2a11b58300bbe0e20926f56598a7cbc333"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "7c1dc574ff487889cfa57c46d5c110e5d377f937d1b7a09fd88d731517334b7c",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/continuity-final_base-1x.webp",
+      "bytes": 3598612,
+      "sha256": "9980b3d0ea3c0cb542e28d7256e37cee1ca72734e4b241350fc5eb4121329d13",
+      "source": {
+        "path": ".artifacts/m3-1/continuity-final/base-1x.png",
+        "bytes": 4305225,
+        "sha256": "0254505744eab3c950dec06881c503bf413c9036742e29e3d560a3c699ee1028"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "039e502a2d4d2e5cf9b71e4fc04d689e741100ac257de17c86052f6c34d404be",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/continuity-final_base-2x.webp",
+      "bytes": 6615996,
+      "sha256": "73bdee8e3ea60367ad2f0a12bc189cb2bf29e1122d0ada62cac627c7f25a07e6",
+      "source": {
+        "path": ".artifacts/m3-1/continuity-final/base-2x.png",
+        "bytes": 8572024,
+        "sha256": "6a0d012f9564179a278b772952e807a9941a3fc4f985a5af6c332df1c77d0851"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "2c9e3faaccf76c5d7369487b42909cc397a4b787e9a9cdbed506460b6c397bf0",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    }
+  ],
+  "videos": [
+    {
+      "path": ".artifacts/m3-1/feedback-native-r4/native-4x-playback.webm",
+      "bytes": 2937967,
+      "sha256": "e553ec46960312ca5c9a241b1ab8769a32e1e36b754b3b42f97b35ca7e1dfdc1"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-score-r1/result-animation.webm",
+      "bytes": 723838,
+      "sha256": "503a38fcb1518714b98d08ca804237ff601aea45e6e5811630a6905b197c0111"
+    }
+  ],
+  "retainedAttempts": [
+    {
+      "attempt": "r1",
+      "evidence": {
+        "path": ".artifacts/m3-1/feedback-native-r1/report.json",
+        "bytes": 9784,
+        "sha256": "d63470ee0b476cba2799d8a5670b32c11024efb892b8147fe4f514c8337f16b3"
+      },
+      "reason": "Real campaign atlas root routing failure; corrected and directly regression tested"
+    },
+    {
+      "attempt": "r2",
+      "evidence": {
+        "path": ".artifacts/m3-1/feedback-native-r2/report.json",
+        "bytes": 13022,
+        "sha256": "1ec61f801ca00f5fd3091977c5dfaa8ffce0921900af51928bd53e0ed58be463"
+      },
+      "reason": "Checker expected separate frame arrays; engine correctly uses a 52-frame aggregate"
+    },
+    {
+      "attempt": "r3",
+      "evidence": {
+        "path": ".artifacts/m3-1/feedback-native-r3/report.json",
+        "bytes": 9064203,
+        "sha256": "341c7c6f6235f70b58022df6bf7d0a0fa6b688a3abc502ee16b957f48077603f"
+      },
+      "reason": "Custom-scheme page interception did not gate requests; ordinary native loading capture replaces that instrument"
+    }
+  ],
+  "review": {
+    "path": ".artifacts/m3-1/M3.1-Embedded-Review.html",
+    "userVisualAcceptance": "PENDING",
+    "sourceIntegratedIntoMain": false,
+    "remotePush": false,
+    "publication": false,
+    "desktopPackagesModified": false
+  }
+}

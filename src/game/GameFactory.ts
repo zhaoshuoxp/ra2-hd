@@ -30,12 +30,15 @@ import { SharedDetectCloakTrait } from './trait/SharedDetectCloakTrait';
 import { CrateGeneratorTrait } from './trait/CrateGeneratorTrait';
 import { StalemateDetectTrait } from './trait/StalemateDetectTrait';
 import { GameOptSanitizer } from './gameopts/GameOptSanitizer';
+import { CampaignDefinition } from '../data/campaign/CampaignDefinition';
+import { campaignAiSourceSha256 } from '../data/campaign/CampaignAiLibrary';
 import { GameOptRandomGen } from './gameopts/GameOptRandomGen';
 import { MapLightingTrait } from './trait/MapLightingTrait';
 import { Prng } from './Prng';
 import { Ai } from './ai/Ai';
 import { BotFactory } from './bot/BotFactory';
 import { BotManager } from './BotManager';
+import { CampaignRuntime } from './campaign/CampaignRuntime';
 import { isHumanPlayerInfo } from './gameopts/GameOpts';
 import { applyOfficialStartingUnitRules, applyStandardSkirmishDialog,
     getOfficialSkirmishEntry } from '../offline/officialSkirmish';
@@ -69,8 +72,8 @@ interface MultiplayerCountry {
 }
 export class GameFactory {
     static create(gameOptions: GameCreationOptions, mapData: any, baseRules: IniFile, baseArt: IniFile, aiConfig: any, modRules: IniFile, additionalRules: IniFile[], randomSeed1: number | string, randomSeed2: number, gameOpts: GameOpts, gameModeRegistry: GameModeRegistry, skipStalemate: boolean, botConfig: any, debugFlags: any, speedCheat: any, debugBotIndex?: any, actionLogger?: any): Game {
-        const mergedRules: IniFile = baseRules.clone().mergeWith(modRules);
-        for (const additionalRule of additionalRules) {
+        const mergedRules: IniFile = gameOpts.campaign ? baseRules.clone() : baseRules.clone().mergeWith(modRules);
+        for (const additionalRule of gameOpts.campaign ? [] : additionalRules) {
             mergedRules.mergeWith(additionalRule);
         }
         const standardRules = mergedRules.clone();
@@ -90,7 +93,8 @@ export class GameFactory {
         const multiplayerCountries: MultiplayerCountry[] = baseMultiplayerRules.getMultiplayerCountries();
         const multiplayerColors: string[] = [...baseMultiplayerRules.getMultiplayerColors().values()] as any;
         const prng: Prng = Prng.factory(randomSeed1, randomSeed2);
-        const gameMap: GameMap = new GameMap(gameOptions as any, mapData, rules, prng.generateRandomInt.bind(prng));
+        const fullScenario = gameOpts.campaign?.edition === 'yr' && (gameOpts.campaign.semanticsVersion ?? 1) >= 29;
+        const gameMap: GameMap = new GameMap(gameOptions as any, mapData, rules, prng.generateRandomInt.bind(prng), fullScenario);
         const world: World = new World();
         const gameMode: GameMode = gameModeRegistry.getById(gameOpts.gameMode as any);
         const playerList: PlayerList = new PlayerList();
@@ -114,7 +118,20 @@ export class GameFactory {
             ...gameOpts.humanPlayers,
             ...gameOpts.aiPlayers
         ].filter(isNotNullOrUndefined) as any;
-        this.createPlayers(game, allPlayers, playerFactory, multiplayerCountries, multiplayerColors, rules, generatedCountries, generatedColors, generatedStartLocations);
+        if (gameOpts.campaign) {
+            let definition = (gameOptions as any).campaignDefinition;
+            if (!definition || definition.edition !== gameOpts.campaign.edition || definition.filename !== gameOpts.campaign.mission) {
+                throw new Error('A verified campaign map with matching edition and mission is required');
+            }
+            if ((gameOpts.campaign.semanticsVersion ?? 1) >= 6) {
+                if (gameOpts.campaign.globalAiSha256 !== campaignAiSourceSha256(gameOpts.campaign.edition)) throw new Error('Missing original campaign AI identity');
+                definition = new CampaignDefinition(definition.edition, definition.filename, definition.source, ai.getIni(),
+                    { semanticsVersion: gameOpts.campaign.semanticsVersion ?? 1, sourceSha256: gameOpts.campaign.sourceSha256 });
+                definition.assertValid();
+            }
+            game.campaign = new CampaignRuntime(definition, gameOpts.campaign, game);
+            game.campaign.createPlayers(playerFactory);
+        } else this.createPlayers(game, allPlayers, playerFactory, multiplayerCountries, multiplayerColors, rules, generatedCountries, generatedColors, generatedStartLocations);
         game.addPlayer(playerFactory.createNeutral(rules, "@@NEUTRAL@@"));
         return game;
     }

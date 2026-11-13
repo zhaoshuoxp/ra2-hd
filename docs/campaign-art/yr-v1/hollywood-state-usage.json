@@ -1,0 +1,56 @@
+{
+  "schema": "yr-hollywood-source-state-usage-v1",
+  "mission": "all02umd.map",
+  "missionSha256": "168ed42024991b6c2af4de0e5a667e9c2bf15767741efe99dac975721460b303",
+  "sourceJsonSha256": "99eb461f838827c6872ac78e64e3e6463018198973e061d407baf07a84aec2b2",
+  "stateTest": "scripts/yr-campaign/hollywood-state-usage.test.ts",
+  "testResult": {
+    "passed": 3,
+    "assertions": 13
+  },
+  "states": [
+    {
+      "identity": "CALA04",
+      "sourceSha256": "4cedb9c941d75da218d45c60c20e580fb0f258e81fcfd3ef5455c38c69bc29a5",
+      "nativeCanBeOccupied": "yes",
+      "ordinaryVisibleSlots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "unusedAlternateSlots": [],
+      "allNativeTrimsShadowSlotsAndOwnerMaterialPolicyUnchanged": true
+    },
+    {
+      "identity": "CALA11",
+      "sourceSha256": "7a43fde01bedd32e02f75875272aeae75573730b392d966b193d4c743f6f977e",
+      "nativeCanBeOccupied": "no",
+      "ordinaryVisibleSlots": [
+        0,
+        1,
+        3
+      ],
+      "unusedAlternateSlots": [
+        2
+      ],
+      "allNativeTrimsShadowSlotsAndOwnerMaterialPolicyUnchanged": true
+    },
+    {
+      "identity": "CALA12",
+      "sourceSha256": "2d2360f23bda64275763d809f07d273e85b6182733cf65eca0fd9c5a12e2eb6a",
+      "nativeCanBeOccupied": "no",
+      "ordinaryVisibleSlots": [
+        0,
+        1,
+        3
+      ],
+      "unusedAlternateSlots": [
+        2
+      ],
+      "allNativeTrimsShadowSlotsAndOwnerMaterialPolicyUnchanged": true
+    }
+  ],
+  "scope": "Source-pinned state reachability and technical export qualification. Diagnostic forced alternate views do not represent original mission events.",
+  "userVisualAcceptance": "PENDING"
+}

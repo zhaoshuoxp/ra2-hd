@@ -16,6 +16,7 @@ interface BridgeObject {
     tile: Tile;
     overlayId: number;
     value: number;
+    bridgeDisplayValue?: number;
     name: string;
     tileElevation: number;
     healthTrait?: {
@@ -305,6 +306,7 @@ export class Bridges {
             }
             if (obj.isHighBridge()) {
                 obj.value = overlayValue;
+                obj.bridgeDisplayValue = this.computeHighBridgeDisplayValue(piece, overlayValue);
             }
             else {
                 obj.overlayId = (bridgeType === OverlayBridgeType.Wood
@@ -317,6 +319,20 @@ export class Bridges {
         if (overlayChanged) {
             obj.name = this.rules.getOverlayName(obj.overlayId);
         }
+    }
+    private computeHighBridgeDisplayValue(piece: BridgePiece, value: number): number {
+        const obj = piece.obj, normal = value - (obj.isXBridge() ? 0 : 9);
+        if (![7, 8].includes(normal) || (obj.healthTrait?.health ?? 100) <= 50) return value;
+        // Retail overlay cells address the middle lane. Runtime occupancy uses
+        // the three-cell footprint's corner. Check its centre at TMP-supported
+        // abutments and bridge middle tiles before drawing a broken end.
+        const x = obj.tile.rx + Number(!obj.isXBridge()), y = obj.tile.ry + Number(obj.isXBridge());
+        const dx = Number(obj.isXBridge()), dy = Number(!obj.isXBridge());
+        const height = obj.tile.z + obj.tileElevation;
+        const previous = this.tiles.getByMapCoords(x - dx, y - dy);
+        const next = this.tiles.getByMapCoords(x + dx, y + dy);
+        return (piece.prev || previous?.z === height) && (piece.next || next?.z === height)
+            ? obj.isXBridge() ? 0 : 9 : value;
     }
     findClosestBridgeSpec(centerTile: Tile): BridgeSpec | undefined {
         const finder = new RadialTileFinder(this.tiles, this.mapBounds, centerTile, { width: 1, height: 1 }, 1, 3, (tile: Tile) => {

@@ -48,7 +48,8 @@ export function TrainerOptions({ strings }: { strings: Strings }) {
     return <fieldset className="trainer-options"><legend>{label(strings, 'title')}</legend>
         <label className="trainer-master"><input type="checkbox" checked={trainer.preferences.enabled}
             onChange={e => trainer.setEnabled(e.target.checked)}/>{label(strings, 'enable')}</label>
-        {trainer.preferences.enabled && <><p>{label(strings, 'help')}</p><Parameters strings={strings}/><Bindings strings={strings}/></>}
+        {trainer.preferences.enabled && <><p>{label(strings, 'help')}</p><p>{label(strings, 'campaignHelp')}</p>
+            <Parameters strings={strings}/><Bindings strings={strings}/></>}
     </fieldset>;
 }
 const groups = {
@@ -71,7 +72,7 @@ function Toolbar({ strings, onClose }: { strings: Strings; onClose(): void }) {
         window.addEventListener('blur', onBlur);
         return () => { document.removeEventListener('pointerdown', onPointerDown, true); window.removeEventListener('blur', onBlur); };
     }, []);
-    if (!enabled) return null;
+    if (!enabled || !trainer.session) return null;
     const actionButton = (action: TrainerAction) => {
         const active = !!trainer.session?.isEffectEnabled(action as TrainerEffect) || (action === 'transfer' && trainer.targeting);
         const digit = trainer.preferences.bindings[action];
@@ -110,7 +111,7 @@ function Toolbar({ strings, onClose }: { strings: Strings; onClose(): void }) {
             <span className="trainer-status" role="status" title={label(strings, 'help')}>
                 {trainer.targeting ? label(strings, 'target') : trainer.session?.pending ? `${label(strings, 'queued')} (${trainer.session.pending})` :
                     label(strings, trainer.status === 'queued' ? trainer.session?.lastResult ?? 'applied' : trainer.status)}
-                {trainer.session?.modified && ` · ${label(strings, 'modified')}`}
+                {trainer.session?.modified && ` · ${label(strings, trainer.session.game.campaign ? 'campaignModified' : 'modified')}`}
             </span>
         </div>
     </section>;
@@ -120,12 +121,12 @@ export class TrainerToolbar implements OptionalToolbarSlot {
     readonly maxLogicalHeight = 32;
     constructor(private strings: Strings, private viewport: any, private pointer: any, private renderer: any) {}
     mount(host: HTMLElement): () => void {
-        const element = document.createElement('div'); element.className = 'trainer-host'; host.appendChild(element);
+        const element = document.createElement('div'); element.className = 'trainer-host'; document.body.appendChild(element);
         const updateSize = () => {
-            const scale = this.viewport.value.scale ?? 1;
+            const scale = this.viewport.value.scale ?? 1, bounds = host.getBoundingClientRect();
             element.style.transform = `scale(${scale})`;
-            element.style.left = `${(this.viewport.value.x ?? 0) + 12 * scale}px`;
-            element.style.bottom = `${36 * scale}px`;
+            element.style.left = `${bounds.left + 12 * scale}px`;
+            element.style.bottom = `${innerHeight - bounds.bottom + 36 * scale}px`;
         };
         updateSize(); this.viewport.onChange.subscribe(updateSize);
         const root = createRoot(element);
@@ -140,12 +141,15 @@ export class TrainerToolbar implements OptionalToolbarSlot {
         const lockedBarTarget = (): HTMLElement | undefined => {
             if (!trainer.canUseKeys || !this.pointer.getPointerLock().isActive()) return;
             const p = this.pointer.getPosition(), scale = this.viewport.value.scale ?? 1;
-            const x = p.x * scale + (this.viewport.value.x ?? 0), y = p.y * scale + (this.viewport.value.y ?? 0);
+            const bounds = host.getBoundingClientRect();
+            const x = p.x * scale + bounds.left, y = p.y * scale + bounds.top;
             const target = document.elementFromPoint(x, y) as HTMLElement | null;
             return target?.closest('.trainer-bar') && element.contains(target) ? target : undefined;
         };
         let hoveredButton: HTMLButtonElement | undefined;
         const frame = () => {
+            const cursor = host.style.getPropertyValue('--ra2-ui-cursor');
+            if (element.style.getPropertyValue('--ra2-ui-cursor') !== cursor) element.style.setProperty('--ra2-ui-cursor', cursor);
             const target = lockedBarTarget();
             const button = target?.closest('button') as HTMLButtonElement | undefined;
             if (button !== hoveredButton) {

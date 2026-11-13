@@ -5,11 +5,13 @@ import { MpLoadingScreenApi } from './MpLoadingScreenApi';
 import { ReplayLoadingScreenApi } from './ReplayLoadingScreenApi';
 import { SpLoadingScreenApi } from './SpLoadingScreenApi';
 import { LoadingScreenApi } from './LoadingScreenApi';
+import { CampaignLoadingScreenApi } from './CampaignLoadingScreenApi';
 export enum LoadingScreenType {
     SinglePlayer = 0,
     MultiPlayer = 1,
     Replay = 2,
-    Lan = 3
+    Lan = 3,
+    Campaign = 4
 }
 interface Rules {
     getMultiplayerCountries(): any[];
@@ -45,6 +47,8 @@ export class LoadingScreenApiFactory {
     create(type: LoadingScreenType, lanMatchSession?: LanMatchSession): LoadingScreenApi {
         const { rules, strings, uiScene, jsxRenderer, gameResConfig, gservCon, } = this;
         switch (type) {
+            case LoadingScreenType.Campaign:
+                return new CampaignLoadingScreenApi(rules, strings, uiScene, jsxRenderer);
             case LoadingScreenType.SinglePlayer:
                 return new SpLoadingScreenApi(rules, strings, uiScene, jsxRenderer, gameResConfig);
             case LoadingScreenType.MultiPlayer:

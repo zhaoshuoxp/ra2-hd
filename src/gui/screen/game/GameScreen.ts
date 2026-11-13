@@ -1,16 +1,23 @@
 import { offlineTrainer } from '@/gui/trainer/TrainerController';
+import { CampaignMovieAssets } from '@/gui/campaign/CampaignMovieAssets';
+import { CampaignMediaPlayer } from '@/gui/campaign/CampaignMediaPlayer';
+import { CampaignCameraPan } from '@/gui/campaign/CampaignCameraPan';
+import { MapPanningHelper } from '@/engine/util/MapPanningHelper';
 import { uiArt } from '@/gui/hd/UiArt';
+import { SoundKey } from '@/engine/sound/SoundKey';
 import { activeEdition } from '@/editions/activeEdition';
 import { TheaterType } from '@/engine/TheaterType';
 import { loadSovietUnitsHd, disposeSovietUnitsHd, type LoadedSovietUnitsHd } from '@/engine/renderable/builder/loadSovietUnitsHd';
 import { loadTerrainHd } from '@/engine/renderable/entity/map/TerrainHd';
 import { loadEnvironmentHd } from '@/engine/renderable/builder/loadEnvironmentHd';
 import type { EnvironmentSourceContext } from '@/engine/renderable/builder/environmentHdContract';
-import { environmentMapDemand } from '@/engine/renderable/builder/environmentMapDemand';
+import { prewarmCampaignUnits, environmentMapDemand } from '@/engine/renderable/builder/environmentMapDemand';
 import { loadRhinoHd, type LoadedRhinoHd } from '@/engine/renderable/rhino/loadRhinoHd';
 import { hdTextureBudget } from '@/engine/gfx/HdDensity';
+import { campaignChronoScreenBytes } from '@/engine/gfx/CampaignChronoScreenFx';
 import { logicalCanvasSize } from '@/engine/gfx/RenderResolution';
 import { nearestGameSpeed, selectedGameSpeed } from './gameMenu/gameSpeedControl';
+import { PhysicalPlayTime } from '@/game/PhysicalPlayTime';
 import { loadConscriptHd, disposeConscriptHd, type LoadedConscriptHd } from '@/engine/renderable/builder/loadConscriptHd';
 import { loadPowerPlantHd } from '@/engine/renderable/builder/loadPowerPlantHd';
 import { loadSovietBuildingsHd, disposeSovietBuildingsHd, type LoadedSovietBuildingsHd } from '@/engine/renderable/builder/loadSovietBuildingsHd';
@@ -25,6 +32,7 @@ import { MedianPing } from './MedianPing';
 import { ScreenType, MainMenuScreenType } from '@/gui/screen/ScreenType';
 import { sleep } from '@puzzl/core/lib/async/sleep';
 import { GameStatus } from '@/game/Game';
+import { reportGameError } from '@/game/gameErrorDiagnostic';
 import { GameTurnManager } from '@/game/GameTurnManager';
 import { ActionFactory } from '@/game/action/ActionFactory';
 import { ActionQueue } from '@/game/action/ActionQueue';
@@ -34,6 +42,10 @@ import { GameResultPopup, GameResultType } from '@/gui/screen/game/component/Gam
 import { jsx } from '@/gui/jsx/jsx';
 import { SoundHandler } from '@/gui/screen/game/SoundHandler';
 import { StorageKey } from '@/LocalPrefs';
+import { completeCampaignProgress } from '@/gui/campaign/CampaignProgress';
+import { campaignRouteFaction } from '@/data/campaign/CampaignMission';
+import { campaignStartGlobals } from '@/game/campaign/CampaignGlobals';
+import { IniFile } from '@/data/IniFile';
 import { CombatantUi } from '@/gui/screen/game/CombatantUi';
 import { ObserverUi } from '@/gui/screen/game/ObserverUi';
 import { GameMenu } from '@/gui/screen/game/GameMenu';
@@ -64,6 +76,14 @@ import { CommandBarButtonType } from '@/gui/screen/game/component/hud/commandBar
 import { LoadingScreenType } from '@/gui/screen/game/loadingScreen/LoadingScreenApiFactory';
 import { SkirmishSaveJournal, restoreSkirmish, SaveError } from '@/gui/save/SkirmishSave';
 import { MapFile } from '@/data/MapFile';
+import { CampaignMapFile } from '@/data/campaign/CampaignMapFile';
+import { verifyOriginalCampaignAi } from '@/data/campaign/CampaignAiLibrary';
+import { loadPreparedCampaign } from '@/offline/campaign';
+import { CampaignSpeechQueue } from '@/gui/campaign/CampaignSpeechQueue';
+import { CampaignSaveLibrary, campaignSaveRecord } from '@/gui/campaign/CampaignSaveLibrary';
+import { SaveBrowserScreen } from '@/gui/save/SaveBrowserScreen';
+import { SaveBrowserError } from '@/gui/save/SaveBrowser';
+import { ScreenType as GameMenuScreenType } from '@/gui/screen/game/gameMenu/ScreenType';
 import { VirtualFile } from '@/data/vfs/VirtualFile';
 import { base64StringToUint8Array, binaryStringToUint8Array, uint8ArrayToBase64String } from '@/util/string';
 import { MapDigest } from '@/engine/MapDigest';
@@ -113,6 +133,10 @@ export class GameScreen extends RootScreen {
     private returnTo?: any;
     private debugMapFile?: any;
     private pausedAtSpeed?: number;
+    private campaignMovieAssets?: CampaignMovieAssets;
+    private campaignMediaPlayer?: CampaignMediaPlayer;
+    private campaignSpeech?: CampaignSpeechQueue;
+    private campaignMediaPaused = false;
     private gameEndHandled = false;
     constructor(private workerHostApi: any, private gservCon: any, private wgameresService: any, private wolService: any, private mapTransferService: any, private engineVersion: string, private engineModHash: string, private errorHandler: any, private gameMenuSubScreens: any, private loadingScreenApiFactory: any, private gameOptsParser: any, private gameOptsSerializer: any, private config: any, private strings: any, private renderer: any, private uiScene: any, private runtimeVars: any, private messageBoxApi: any, private toastApi: any, private uiAnimationLoop: any, private viewport: any, private jsxRenderer: any, private pointer: any, private sound: any, private music: any, private mixer: any, private keyBinds: any, private generalOptions: any, private localPrefs: any, private actionLogger: any, private lockstepLogger: any, private replayManager: any, private fullScreen: any, private mapFileLoader: any, private mapDir: any, private mapList: any, private gameLoader: any, private vxlGeometryPool: any, private buildingImageDataCache: any, private mutedPlayers: any, private tauntsEnabled: any, private speedCheat: any, private sentry: any, private battleControlApi: any) {
         super();
@@ -144,6 +168,9 @@ export class GameScreen extends RootScreen {
         this.saveJournal = undefined;
         // Keep a complete 2X result background available after any number of sidebar pages.
         this.disposables.add(uiArt.protectResultBanner());
+        if (params.gameOpts?.campaign) {
+            this.mixer.setMuted(ChannelType.Effect, false); this.mixer.setMuted(ChannelType.Ambient, false);
+        }
         this.pointer.lock();
         this.pointer.setVisible(false);
         await this.music?.play(MusicType.Loading);
@@ -161,7 +188,10 @@ export class GameScreen extends RootScreen {
         const isSinglePlayer = this.isSinglePlayer = params.create && params.singlePlayer;
         const isLanGame = this.isLanGame = Boolean(lanLaunch);
         if (isSinglePlayer) {
-            gameOpts = params.gameOpts;
+            gameOpts = !params.savedGame && !params.gameOpts.campaign
+                ? { ...params.gameOpts, bridgeRallyVersion: 1, civilianTargetingVersion: 2,
+                    demolitionSafetyVersion: 1, neutralStructureTargetingVersion: 1, retaliationVersion: 1,
+                    parasiteCadenceVersion: 1 } : params.gameOpts;
         }
         else if (isLanGame) {
             gameOpts = lanLaunch.gameOpts;
@@ -194,16 +224,30 @@ export class GameScreen extends RootScreen {
         this.speedCheat.value = false;
         offlineTrainer.endSession();
         let mapFile: any;
+        let nextCampaignMission: string | undefined;
         try {
-            const mapFileData = params.savedGame
+            const campaign = gameOpts.campaign ? await loadPreparedCampaign(gameOpts.campaign.mission, gameOpts.campaign.edition) : undefined;
+            if (campaign && (campaign.manifest.files.find(file => file.name === campaign.manifest.mission)?.sha256 !== gameOpts.campaign.sourceSha256
+                || campaign.manifest.provenanceDigest !== gameOpts.campaign.provenanceDigest)) throw new Error('Campaign launch/resource identity mismatch');
+            if (campaign) {
+                if ((gameOpts.campaign!.semanticsVersion ?? 1) >= 6) {
+                    await verifyOriginalCampaignAi(Engine.getAi(), gameOpts.campaign!.globalAiSha256, gameOpts.campaign!.edition);
+                }
+                nextCampaignMission = campaign.manifest.catalog.find(entry => entry.filename === campaign.manifest.mission)?.next;
+                const assets = await CampaignMovieAssets.load(campaign.manifest);
+                if (cancellationToken.isCancelled()) { assets.dispose(); return; }
+                this.campaignMovieAssets = assets;
+                this.disposables.add(() => { assets.dispose(); this.campaignMovieAssets = undefined; });
+            }
+            const mapFileData = campaign?.map ?? (params.savedGame
                 ? VirtualFile.fromBytes(base64StringToUint8Array(params.savedGame.mapData), gameOpts.mapName)
-                : await this.transferAndLoadMapFile(params, gameOpts.mapName, gameOpts.mapDigest, cancellationToken);
-            if (isSinglePlayer) params.saveMapData = uint8ArrayToBase64String(mapFileData.getBytes());
+                : await this.transferAndLoadMapFile(params, gameOpts.mapName, gameOpts.mapDigest, cancellationToken));
+            if (isSinglePlayer && !campaign) params.saveMapData = uint8ArrayToBase64String(mapFileData.getBytes());
             if (!gameOpts.mapOfficial) {
                 this.debugMapFile = mapFileData;
                 this.disposables.add(() => this.debugMapFile = undefined);
             }
-            mapFile = new MapFile(mapFileData);
+            mapFile = campaign ? new CampaignMapFile(mapFileData, gameOpts.campaign) : new MapFile(mapFileData);
             const mapSupportError = MapSupport.check(mapFile, this.strings);
             if (mapSupportError) {
                 this.handleError(mapSupportError, mapSupportError);
@@ -215,12 +259,15 @@ export class GameScreen extends RootScreen {
             return;
         }
         const loadingScreenType =
-            isSinglePlayer
+            gameOpts.campaign
+                ? LoadingScreenType.Campaign
+                : isSinglePlayer
                 ? LoadingScreenType.SinglePlayer
                 : isLanGame
                     ? LoadingScreenType.Lan
                     : LoadingScreenType.MultiPlayer;
         const loadingScreenApi = this.loadingScreenApiFactory.create(loadingScreenType, this.lanMatchSession);
+        if (gameOpts.campaign) loadingScreenApi.setCampaignMission?.(gameOpts.campaign.mission, gameOpts.campaign.edition);
         this.loadingScreenApi = loadingScreenApi;
         if (params.savedGame) {
             this.pointer.unlock(true);
@@ -264,8 +311,42 @@ export class GameScreen extends RootScreen {
             return;
         }
         const { game, theater, hudSide, cameoFilenames } = gameLoadResult;
+        if (game.campaign) game.campaign.nextMission = nextCampaignMission;
+        if (game.campaign && this.isSinglePlayer && !this.isLanGame && !game.localPlayer.isObserver) {
+            offlineTrainer.beginSession(game, game.localPlayer,
+                () => this.isSinglePlayer && !this.isLanGame && !this.lanMatchSession,
+                () => {
+                    if (this.replay) this.replay.trainerModified = true;
+                    game.campaign.trainerModified = true;
+                }, (command, phase) => game.campaign.journal.recordTrainer(game, command, phase));
+            this.disposables.add(() => offlineTrainer.endSession());
+        }
+        if (params.campaignCheckpoint) {
+            try {
+                if (!game.campaign) throw new Error('Campaign checkpoint requires a campaign world');
+                const restoreActions = new ActionFactory();
+                new ActionFactoryReg().register(restoreActions, game, playerName);
+                game.start();
+                const restoreObservation = { mission: params.campaignCheckpoint.identity.mission,
+                    tick: 0, target: params.campaignCheckpoint.tick, status: 'replaying' };
+                if ((window as any).__ra2debug) (window as any).__ra2debug.campaignRestore = restoreObservation;
+                await game.campaign.journal.restore(game, restoreActions, params.campaignCheckpoint, {
+                    cancelled: () => cancellationToken.isCancelled(), progress: async (tick) => {
+                        restoreObservation.tick = tick;
+                        await sleep(1);
+                    },
+                    legacyPlaySpeed: selectedGameSpeed(gameOpts.gameSpeed),
+                    trainer: offlineTrainer.session?.game === game ? { session: offlineTrainer.session,
+                        setEnabled: enabled => offlineTrainer.setEnabled(enabled) } : undefined,
+                });
+                restoreObservation.tick = game.currentTick; restoreObservation.status = 'reconstructed';
+            } catch (error) {
+                game.dispose(); this.handleGameLoadError(error, params, gameOpts); return;
+            }
+        }
         if (this.isSinglePlayer) {
-            game.desiredSpeed.value = selectedGameSpeed(gameOpts.gameSpeed);
+            game.playTime = game.campaign?.playTime ?? new PhysicalPlayTime();
+            game.desiredSpeed.value = params.campaignCheckpoint?.playTime?.speed ?? selectedGameSpeed(gameOpts.gameSpeed);
             game.speed.value = game.desiredSpeed.value;
         }
         this.game = game;
@@ -287,7 +368,7 @@ export class GameScreen extends RootScreen {
         let uiInitResult: any;
         const actionFactory = new ActionFactory();
         new ActionFactoryReg().register(actionFactory, game, playerName);
-        if (this.isSinglePlayer) {
+        if (this.isSinglePlayer && !game.campaign) {
             const saved = params.savedGame;
             let recordingTrainer = !saved;
             this.saveJournal = new SkirmishSaveJournal({ edition: activeEdition,
@@ -319,11 +400,14 @@ export class GameScreen extends RootScreen {
         }
         const hdDensity = this.generalOptions.graphics.hdDensity.value;
         const hdBudget = hdTextureBudget(hdDensity);
+        const screenEffectWorkingBytes = campaignChronoScreenBytes(game);
         const initialBuildingFamilies = new Set<string>(game.getWorld().getAllObjects().flatMap(object => {
             const name = object.isBuilding() || object.isOverlay() && ['GAWALL', 'NAWALL'].includes(object.name)
                 ? object.name : constructionYardForMcv[object.name];
             return name ? [canonicalAlliedBuildingHdFamily(name)] : [];
         }));
+        const sharedCampaignBuildings = (game.campaign?.launch.semanticsVersion ?? 1) >= 25;
+        let fixedHdActorBytes = 0;
         let conscriptHd: LoadedConscriptHd | undefined;
         let powerPlantHd: LoadedPowerPlantHd | undefined;
         let napowrHd: LoadedPowerPlantHd | undefined;
@@ -333,7 +417,8 @@ export class GameScreen extends RootScreen {
         try {
             if (this.isSinglePlayer) {
                 const terrainHd = await loadTerrainHd(game.map, theater, this.renderer,
-                    this.generalOptions.graphics.hdEnabled.value, hdDensity, hdBudget, () => cancellationToken.isCancelled());
+                    this.generalOptions.graphics.hdEnabled.value, hdDensity, hdBudget - screenEffectWorkingBytes,
+                    () => cancellationToken.isCancelled());
                 theater.terrainHd = terrainHd;
                 this.disposables.add(terrainHd, () => { theater.terrainHd = undefined; });
             }
@@ -351,7 +436,7 @@ export class GameScreen extends RootScreen {
             if (this.isSinglePlayer) rhinoHd = await loadRhinoHd(theater, this.renderer, this.generalOptions.graphics.rhinoHd, hdDensity);
             if (cancellationToken.isCancelled()) { disposeConscriptHd(conscriptHd); disposePowerPlantHd(powerPlantHd); disposePowerPlantHd(napowrHd); rhinoHd?.dispose(); return; }
             if (this.isSinglePlayer) {
-                const baselineBytes = (theater.terrainHd?.report.worldChargeBytes ?? 0)
+                const baselineBytes = screenEffectWorkingBytes + (theater.terrainHd?.report.worldChargeBytes ?? 0)
                     + (conscriptHd?.report.gpuBytes ?? 0) + (powerPlantHd?.report.gpuBytes ?? 0)
                     + (napowrHd?.report.gpuBytes ?? 0) + [...(rhinoHd?.parts.values() ?? [])].reduce((sum, part) =>
                         sum + part.bitmap.width * part.bitmap.height * 5 + part.palette.image.data.byteLength, 0);
@@ -359,8 +444,9 @@ export class GameScreen extends RootScreen {
                     () => this.generalOptions.graphics.hdEnabled.value,
                     baselineBytes, () => cancellationToken.isCancelled(),
                     fraction => loadingScreenApi.onLoadProgress(66 + fraction * 29), hdDensity,
-                    initialBuildingFamilies);
+                    sharedCampaignBuildings ? new Set<string>() : initialBuildingFamilies);
                 const used = baselineBytes + Object.values(sovietBuildingsHd).reduce((sum, family) => sum + (family?.report.gpuBytes ?? 0), 0);
+                fixedHdActorBytes = used - (theater.terrainHd?.report.worldChargeBytes ?? 0) - screenEffectWorkingBytes;
                 const environmentIdentities = environmentMapDemand(game, theater);
                 const environmentHd = await loadEnvironmentHd(theater, this.renderer,
                     this.generalOptions.graphics.hdEnabled.value, hdDensity, hdBudget - used,
@@ -374,17 +460,16 @@ export class GameScreen extends RootScreen {
                 sovietUnitsHd = await loadSovietUnitsHd(theater, this.renderer, this.generalOptions.graphics.sovietUnitsHd.value,
                     hdBudget - used - environmentHd.report.worldChargeBytes - restoreWorkingBytes, () => cancellationToken.isCancelled(),
                     alliedBuildingDemand(sovietBuildingsHd, theater, this.renderer,
-                        this.generalOptions.graphics.hdEnabled.value, () => cancellationToken.isCancelled(), hdDensity), hdDensity, this.vxlGeometryPool);
+                        this.generalOptions.graphics.hdEnabled.value, () => cancellationToken.isCancelled(), hdDensity), hdDensity,
+                    this.vxlGeometryPool, sharedCampaignBuildings, game as typeof game & EnvironmentSourceContext);
                 // Resolve actual starting units behind the loading screen. Warm leases
                 // transfer to renderers on their first update, including voxel units.
-                const initialUnits = new Set<string>(game.getWorld().getAllObjects()
-                    .filter(object => object.isUnit()).map(object => object.name));
-                for (const name of initialUnits) {
-                    const release = sovietUnitsHd.prewarm?.(name);
-                    if (release) this.disposables.add(release);
-                }
+                prewarmCampaignUnits(game, sovietUnitsHd, release => this.disposables.add(release));
                 if (sovietUnitsHd.prewarmBuilding) {
-                    for (const name of initialBuildingFamilies) sovietUnitsHd.prewarmBuilding(name);
+                    for (const name of initialBuildingFamilies) {
+                        if (sharedCampaignBuildings) sovietUnitsHd.prefetch?.(name);
+                        else sovietUnitsHd.prewarmBuilding(name);
+                    }
                     await sovietUnitsHd.idle?.();
                     this.disposables.add(productionHdPrewarm(game.getAllPlayers().flatMap(player =>
                         player.production ? [player.production] : []), sovietUnitsHd.prewarm!));
@@ -400,7 +485,8 @@ export class GameScreen extends RootScreen {
                 ...Object.fromEntries(Object.entries(sovietBuildingsHd).map(([name, family]) => [name.toLowerCase(),
                     family?.overrides.size ? `HD active (${family.report.density}x)` : 'Original in this match'])),
                 ...Object.fromEntries(Object.keys(sovietUnitsHd?.report.families ?? {})
-                    .filter(name => name.startsWith('GA') || ['GTGCAN', 'GAPILL', 'NASAM', 'ATESLA'].includes(name))
+                    .filter(name => name.startsWith('GA') || ['GTGCAN', 'GAPILL', 'NASAM', 'ATESLA'].includes(name)
+                        || sharedCampaignBuildings && (name.startsWith('NA') || name === 'TESLA'))
                     .map(name => [name.toLowerCase(), 'HD families load when used; incomplete or over-budget families use Original.'])),
                 amradr: sovietUnitsHd?.report.families.GAAIRC
                     ? 'HD families load when used; incomplete or over-budget families use Original.' : 'Original in this match',
@@ -409,14 +495,17 @@ export class GameScreen extends RootScreen {
             if (this.isSinglePlayer) {
                 const worldScene = uiInitResult.worldViewInitResult.worldScene;
                 this.disposables.add(() => this.renderer.removeScene(worldScene));
-                await this.renderer.prepareScene(worldScene, () => cancellationToken.isCancelled());
+                await this.renderer.prepareScene(worldScene, () => cancellationToken.isCancelled(),
+                    sovietUnitsHd?.idle ? () => sovietUnitsHd.idle!() : undefined);
                 if (!cancellationToken.isCancelled()) {
                     const terrain = theater.terrainHd?.report, environment = theater.environmentHd?.report;
                     const actors = sovietUnitsHd?.report;
                     console.info('[World HD match] ' + JSON.stringify({ schema: 'world-hd-match-v1',
                         edition: activeEdition, map: gameOpts.mapName, theater: TheaterType[theater.type],
                         requestedDensity: this.generalOptions.graphics.hdEnabled.value ? hdDensity : 1,
-                        worldBudget: hdBudget, actorBudget: actors?.budget,
+                        worldBudget: hdBudget, actorBudget: actors?.budget, fixedActorBytes: fixedHdActorBytes,
+                        ...(screenEffectWorkingBytes ? { screenEffectWorkingBytes } : {}),
+                        actorPolicy: sharedCampaignBuildings ? 'shared-campaign-family-demand' : 'legacy-fixed-building-preload',
                         restoreWorkingBytes: Math.max(terrain?.restoreWorkingBytes ?? 0, environment?.restoreWorkingBytes ?? 0),
                         terrain: { density: terrain?.density, worldChargeBytes: terrain?.worldChargeBytes,
                             fallbacks: terrain?.groups.filter(group => group.status !== 'PUBLISHED') },
@@ -446,6 +535,7 @@ export class GameScreen extends RootScreen {
             return;
         }
         const actionQueue = new ActionQueue();
+        game.campaign?.journal.bindInput(game, localPlayer, actionQueue, actionFactory, params.campaignCheckpoint);
         const replay = this.replay = new Replay();
         replay.gameId = gameId;
         replay.gameTimestamp = Math.floor(timestamp / 1000);
@@ -458,7 +548,7 @@ export class GameScreen extends RootScreen {
         replay.name = Replay.sanitizeFileName(`${playerNames} - ${mapTitle}`);
         this.disposables.add(() => this.replay = undefined);
         const replayRecorder = this.replayRecorderInstance = new ReplayRecorder(game, replay);
-        if (params.savedGame?.trainer?.events.length) replay.trainerModified = true;
+        if (params.savedGame?.trainer?.events.length || params.campaignCheckpoint?.trainer?.events.length) replay.trainerModified = true;
         this.disposables.add(() => this.replayRecorderInstance = undefined);
         if (this.isSinglePlayer) {
             this.gameTurnMgr = new SoloPlayTurnManager(game, localPlayer, actionQueue, this.actionLogger, replayRecorder, this.saveJournal);
@@ -492,8 +582,10 @@ export class GameScreen extends RootScreen {
             }
         }
         this.gameTurnMgr.init();
+        let uiStarted = false;
         const startGameHandler = () => {
-            if (!this.gameAnimationLoop) {
+            if (!uiStarted) {
+                uiStarted = true;
                 try {
                     if (params.savedGame) this.pointer.lock();
                     this.onGameStart(localPlayer, game, uiInitResult, actionQueue, actionFactory, replay);
@@ -509,6 +601,8 @@ export class GameScreen extends RootScreen {
         };
         if (isSinglePlayer) {
             startGameHandler();
+            if (game.campaign) this.initCampaignControls(game, params, uiInitResult.messageList);
+            if (game.campaign?.launch.diagnostic) this.initCampaignDiagnostic(game, params);
             DevToolsApi.registerCommand('reset', async () => {
                 await this.onLeave();
                 await this.onEnter(params);
@@ -533,6 +627,119 @@ export class GameScreen extends RootScreen {
             this.disposables.add(() => this.gservCon.onGameStart.unsubscribe(startGameHandler));
             this.gservCon.sendLoadedPercent(100);
         }
+    }
+
+    private initCampaignDiagnostic(game: any, params: any): void {
+        const panel = document.createElement('aside');
+        panel.dataset.campaignDiagnostic = 'true';
+        panel.style.cssText = 'position:fixed;left:20px;top:20px;width:min(520px,60vw);padding:18px;background:rgba(20,15,13,.94);color:#eee1c8;border:1px solid #bd8b50;z-index:9000;font:17px/1.5 sans-serif';
+        const title = document.createElement('strong'); title.textContent = this.strings.get('HD:CampaignDiagnosticTitle');
+        const note = document.createElement('p'); note.textContent = this.strings.get('HD:CampaignDiagnosticHint');
+        const reason = document.createElement('p'); reason.dataset.campaignFailure = 'true';
+        const restart = document.createElement('button'); restart.textContent = this.strings.get('HD:CampaignRestart');
+        const back = document.createElement('button'); back.textContent = this.strings.get('HD:CampaignReturn');
+        const reveal = document.createElement('button'); reveal.textContent = this.strings.get('HD:CampaignReveal');
+        for (const button of [restart, back, reveal]) button.style.cssText = 'font:inherit;color:inherit;background:#412720;border:1px solid #bd8b50;padding:8px 16px;margin:4px 10px 4px 0;cursor:pointer';
+        restart.onclick = async () => { await this.onLeave(); await this.onEnter(params); };
+        back.onclick = () => this.controller?.goToScreen(ScreenType.MainMenuRoot, { route: new MainMenuRoute(MainMenuScreenType.Campaign, undefined) });
+        reveal.onclick = () => {
+            game.campaign.inspectionModified = true;
+            game.mapShroudTrait.revealMap(game.localPlayer, game);
+            const tile = game.map.getTileAtWaypoint(47);
+            if (tile) this.playerUi.worldInteraction.minimapHandler.panToTile(tile);
+            note.textContent = this.strings.get('HD:CampaignRevealHint');
+            panel.dataset.campaignRevealed = 'true';
+        };
+        panel.append(title, note, reason, restart, back, reveal); document.body.append(panel);
+        const update = () => { reason.textContent = game.campaign.failure ?? this.strings.get('HD:CampaignNotReady'); };
+        this.renderer.onFrame.subscribe(update);
+        this.disposables.add(() => { panel.remove(); this.renderer.onFrame.unsubscribe(update); });
+        const home = game.map.getTileAtWaypoint(Number(game.campaign.definition.ini.getSection('Basic').getString('HomeCell')));
+        if (home) this.playerUi?.worldInteraction?.minimapHandler?.panToTile(home);
+        this.pointer.unlock(true);
+    }
+
+    private setCampaignMediaPaused(paused: boolean): void {
+        this.campaignMediaPaused = paused;
+        this.campaignMediaPlayer?.setPaused(paused);
+        const currentPolicy = (this.game?.campaign?.launch.semanticsVersion ?? 1) >= 46;
+        this.campaignSpeech?.setPaused(paused || (currentPolicy
+            ? !!this.campaignMediaPlayer?.playing : !!this.campaignMediaPlayer?.pending.length));
+        this.syncCampaignMediaControls();
+    }
+    private syncCampaignMediaControls(): void {
+        if (!this.game?.campaign || (this.game.campaign.launch.semanticsVersion ?? 1) < 14) return;
+        const paused = this.gameEndHandled || this.campaignMediaPaused || !!this.campaignMediaPlayer?.fullscreenPending;
+        this.gameTurnMgr?.setCampaignPaused(paused);
+        this.playerUi?.worldInteraction.setEnabled(!paused && !this.game.campaign.inputLocked);
+    }
+
+    private initCampaignControls(game: any, params: any, messages: any): void {
+        const campaign = game.campaign;
+        const faction = campaignRouteFaction(campaign.launch.edition, campaign.launch.mission);
+        const sourceBriefing = new IniFile(Engine.vfs.openFile(campaign.launch.edition === 'yr' ? 'missionmd.ini' : 'mission.ini').readAsString()).getSection(campaign.launch.mission)
+            ?.getString('LSLoadBriefing') || campaign.definition.ini.getSection('Basic').getString('Briefing');
+        this.returnTo = new MainMenuRoute(MainMenuScreenType.Campaign, { faction, mission: campaign.launch.mission, difficulty: campaign.launch.difficulty });
+        const openSaves = (saving: boolean) => this.menu!.openSaves({ rootController: this.controller!, options: {
+            scope: 'campaign', engineVersion: this.engineVersion, currentGame: true, menuArt: this.hud.getSaveMenuArt(),
+            storage: new CampaignSaveLibrary(this.strings.get('HD:LegacyCampaignSave')),
+            capture: saving ? async (name: string, id?: string) => {
+                if (campaign.inspectionModified || !campaign.journal.trusted) throw new SaveBrowserError('HD:SaveModified');
+                return campaignSaveRecord(await campaign.journal.capture(game), name, id);
+            } : undefined,
+            loadRecord: async (record: any) => {
+                const checkpoint = record.checkpoint;
+                await this.controller!.goToScreenBlocking(ScreenType.Game, { ...params,
+                    gameId: checkpoint.gameId, timestamp: checkpoint.timestamp,
+                    gameOpts: checkpoint.options, campaignCheckpoint: checkpoint });
+            },
+        } });
+        this.menu!.campaignOperations = {
+            save: () => openSaves(true), load: () => openSaves(false),
+            briefing: () => sourceBriefing ? this.strings.get(sourceBriefing).replace(/\\n/g, '\n') : '',
+            restart: async () => {
+                await this.controller!.goToScreen(ScreenType.MainMenuRoot, { route: new MainMenuRoute(MainMenuScreenType.Campaign,
+                    { faction, mission: campaign.launch.mission, difficulty: campaign.launch.difficulty, start: campaign.launch.mission,
+                        incomingGlobals: campaignStartGlobals(campaign, false) }) });
+            },
+        };
+        const status = document.createElement('div');
+        status.dataset.campaignFailure = 'true';
+        status.hidden = true;
+        status.style.cssText = "position:fixed;z-index:1000;background:rgba(0,0,0,.75);font-family:'Fira Sans Condensed',Arial,sans-serif;font-weight:500;text-align:right;white-space:pre-line;overflow-wrap:anywhere;pointer-events:none";
+        status.style.color = game.localPlayer.color.asHexString();
+        document.body.append(status);
+        const position = () => {
+            const bounds = this.renderer.getCanvas().getBoundingClientRect(), scale = this.viewport.value.scale ?? 1;
+            const sidebar = (this.hud?.sidebarWidth ?? 168) * scale;
+            status.style.top = `${bounds.top}px`;
+            status.style.right = `${Math.max(0, innerWidth - bounds.right + sidebar)}px`;
+            status.style.fontSize = `${13 * scale}px`;
+            status.style.lineHeight = `${15 * scale}px`;
+            status.style.padding = `${5 * scale}px ${4 * scale}px 0`;
+            status.style.maxWidth = `${Math.max(120, bounds.width - sidebar - 8 * scale)}px`;
+        };
+        position(); this.viewport.onChange.subscribe(position);
+        const update = () => {
+            status.textContent = campaign.failure ? this.strings.get('HD:CampaignStopped') + ': ' + campaign.failure
+                : '';
+            status.hidden = !campaign.failure;
+            for (const object of game.world.getAllObjects()) if (object.campaignFlashUntil > game.currentTick) {
+                const renderable = (window as any).__ra2debug?.renderableManager?.getRenderableByGameObject(object);
+                renderable?.highlight?.();
+            }
+        };
+        this.renderer.onFrame.subscribe(update);
+        this.disposables.add(() => { status.remove(); this.renderer.onFrame.unsubscribe(update); this.viewport.onChange.unsubscribe(position); });
+        campaign.particles.showRestored();
+        if (params.campaignCheckpoint) {
+            this.worldView?.restoreCampaignWeather();
+            this.setCampaignMediaPaused(true);
+            if (params.campaignCheckpoint.presentation) campaign.restoreMedia?.(params.campaignCheckpoint.presentation);
+            this.menu!.open();
+        }
+        const home = game.map.getTileAtWaypoint(Number(campaign.definition.ini.getSection('Basic').getString('HomeCell')));
+        if (home && !params.campaignCheckpoint) this.playerUi.worldInteraction.minimapHandler.panToTile(home);
     }
 
     private async waitForLanPlayersLoaded(cancellationToken: any): Promise<void> {
@@ -671,6 +878,7 @@ export class GameScreen extends RootScreen {
     }
     private onGservClose: (error: any) => void;
     private handleError(error: any, message: string, skipGoToMenu?: boolean): void {
+        reportGameError(error, this.game);
         if (this.gameTurnMgr) {
             this.gameTurnMgr.setErrorState();
         }
@@ -879,15 +1087,131 @@ export class GameScreen extends RootScreen {
     private onGameStart(localPlayer: any, game: any, uiInitResult: any, actionQueue: any, actionFactory: any, replay: any): void {
         this.localPrefs.removeItem(StorageKey.LastConnection);
         this.loadingScreenApi?.dispose();
-        this.music?.play(MusicType.Normal);
+        if (game.campaign && (game.campaign.launch.semanticsVersion ?? 1) >= 4) {
+            void this.music?.playCampaignTheme(game.campaign.musicTheme
+                ?? game.campaign.definition.ini.getSection('Basic')?.getString('Theme') ?? '')
+                .catch((error: Error) => { if (this.game === game) game.campaign.failure ??= error.message; });
+        } else this.music?.play(MusicType.Normal);
         const evaSpecs = new EvaSpecs(localPlayer?.country?.side ?? SideType.GDI).readIni(Engine.getIni(Engine.getFileNameVariant('eva.ini')));
-        const eva = new Eva(evaSpecs, this.sound, this.renderer);
+        const subtitle = game.campaign ? document.createElement('div') : undefined;
+        if (subtitle) {
+            subtitle.dataset.campaignSubtitle = 'true';
+            subtitle.style.cssText = "position:fixed;z-index:1000;background:rgba(0,0,0,.75);font-family:'Fira Sans Condensed',Arial,sans-serif;font-weight:500;text-align:right;overflow-wrap:anywhere;pointer-events:none";
+            subtitle.style.color = localPlayer.color.asHexString();
+            subtitle.hidden = true;
+            const position = () => {
+                const bounds = this.renderer.getCanvas().getBoundingClientRect(), scale = this.viewport.value.scale ?? 1;
+                const sidebar = (this.hud?.sidebarWidth ?? 168) * scale;
+                subtitle.style.top = `${bounds.top + 5 * scale}px`;
+                subtitle.style.right = `${Math.max(0, innerWidth - bounds.right + sidebar)}px`;
+                subtitle.style.fontSize = `${13 * scale}px`;
+                subtitle.style.lineHeight = `${15 * scale}px`;
+                subtitle.style.padding = `${5 * scale}px ${4 * scale}px 0`;
+                subtitle.style.maxWidth = `${Math.max(120, Math.min(420 * scale, bounds.width - sidebar - 8 * scale))}px`;
+            };
+            document.body.append(subtitle);
+            this.renderer.onFrame.subscribe(position); this.viewport.onChange.subscribe(position); position();
+            this.disposables.add(() => { subtitle.remove(); this.renderer.onFrame.unsubscribe(position); this.viewport.onChange.unsubscribe(position); });
+        }
+        const eva = game.campaign ? new CampaignSpeechQueue(evaSpecs, this.sound, this.mixer, this.strings,
+            text => { subtitle!.textContent = text; subtitle!.hidden = !text; }, ids => { game.campaign.pendingMedia = ids; },
+            error => { game.campaign.failure ??= error; }) : new Eva(evaSpecs, this.sound, this.renderer);
+        if (game.campaign) game.campaign.speechOutcomes = (eva as CampaignSpeechQueue).outcomes;
         eva.init();
         this.disposables.add(eva);
         this.initUi(localPlayer, game, undefined, actionQueue, actionFactory, this.hud, eva, uiInitResult);
+        if (game.campaign) {
+            const speech = eva as CampaignSpeechQueue;
+            this.campaignSpeech = speech;
+            let restoreMoviePointer = false;
+            const media = new CampaignMediaPlayer(active => {
+                if (active) {
+                    restoreMoviePointer ||= this.pointer?.getUserLockMode() ?? false;
+                    this.pointer?.unlock(true);
+                } else if (restoreMoviePointer && !this.campaignMediaPaused && !this.gameEndHandled) {
+                    restoreMoviePointer = false;
+                    this.pointer?.lock();
+                }
+                this.gameTurnMgr?.setCampaignPaused(active || this.campaignMediaPaused);
+                this.syncCampaignMediaControls();
+            }, () => [ChannelType.Master, ChannelType.Voice].reduce((volume, channel) =>
+                volume * (this.mixer.isMuted(channel) ? 0 : this.mixer.getVolume(channel)), 1), active => {
+                const placement = media.snapshot()[0]?.placement;
+                const full = (game.campaign.launch.semanticsVersion ?? 1) >= 14
+                    && (placement === 'fullscreen' || placement === 'transmission-paused');
+                this.sound.audioSystem.setDucking(media, ChannelType.Music, active ? full ? 0 : .3 : undefined);
+                speech.setPaused(active || this.campaignMediaPaused);
+            }, () => this.hud?.getCampaignRadarHost(), (game.campaign.launch.semanticsVersion ?? 1) >= 14,
+            (game.campaign.launch.semanticsVersion ?? 1) >= 46 ? () => {
+                speech.setPaused(this.campaignMediaPaused);
+                return speech.snapshot().some(item => item.mission) ? speech.whenMissionBoundaryComplete() : undefined;
+            } : undefined);
+            this.campaignMediaPlayer = media;
+            game.campaign.movieOutcomes = media.outcomes;
+            const camera = (game.campaign.launch.semanticsVersion ?? 1) >= 22
+                ? new CampaignCameraPan(uiInitResult.worldViewInitResult.worldScene.cameraPan) : undefined;
+            if (camera) {
+                game.campaign.uiTeamCamera = (tile: any, speed: number) => camera.center(
+                    new MapPanningHelper(game.map).computeCameraPanFromTile(tile.rx, tile.ry), speed, game.currentTick);
+                game.campaign.presentationTick = () => camera.update(game.currentTick);
+            }
+            game.campaign.captureMedia = () => ({ movies: media.snapshot(), speech: speech.snapshot(), speechPolicy: 'restart-current-utterance',
+                music: this.music?.capturePlayback(), ...((game.campaign.launch.semanticsVersion ?? 1) >= 12
+                    ? { cameraPan: { ...uiInitResult.worldViewInitResult.worldScene.cameraPan.getPan() } } : {}),
+                ...(camera?.snapshot() ? { cameraMove: camera.snapshot() } : {}) });
+            game.campaign.restoreMedia = (snapshot: any) => {
+                speech.restore(snapshot.speech);
+                if (snapshot.cameraPan) uiInitResult.worldViewInitResult.worldScene.cameraPan.setPan(snapshot.cameraPan);
+                camera?.restore(snapshot.cameraMove);
+                if (snapshot.music && !this.music) throw new Error('Saved original mission music resources are unavailable');
+                if (snapshot.music) void this.music?.restorePlayback(snapshot.music)
+                    .catch((error: Error) => { if (this.game === game) game.campaign.failure ??= error.message; });
+                for (const movie of snapshot.movies) this.campaignMovieAssets!.request(movie.id, media, this.strings, movie.placement, movie.time)
+                    .catch((error: Error) => { if (this.game === game) game.campaign.failure ??= error.message; });
+            };
+            this.disposables.add(() => {
+                this.campaignMediaPlayer = undefined; this.campaignSpeech = undefined; this.campaignMediaPaused = false;
+                media.dispose(); this.sound.audioSystem.setDucking(media, ChannelType.Music);
+                game.campaign.captureMedia = game.campaign.restoreMedia = undefined;
+                game.campaign.uiTeamCamera = game.campaign.presentationTick = undefined; camera?.cancel();
+            });
+            this.disposables.add(game.events.subscribe((event: any) => {
+                if (game.campaign.restoring) return;
+                if (event.type === EventType.TriggerEva) (eva as CampaignSpeechQueue).playMission(event.soundId);
+                if (event.type === EventType.TriggerText) uiInitResult.messageList.addSystemMessage(this.strings.get(event.label), localPlayer);
+            }));
+            game.campaign.uiAction = (action: any) => {
+                if (action.opcode === 20) {
+                    if (!this.music) throw new Error('Original campaign music resources are unavailable');
+                    void this.music.playCampaignTheme(action.params[1])
+                        .catch((error: Error) => { if (this.game === game) game.campaign.failure ??= error.message; });
+                }
+                if ([46, 47].includes(action.opcode)) {
+                    if ((game.campaign.launch.semanticsVersion ?? 1) >= 14) this.syncCampaignMediaControls();
+                    else this.playerUi.worldInteraction.setEnabled(!game.campaign.inputLocked);
+                }
+                if (action.opcode === 48 || action.opcode === 112) {
+                    camera?.cancel();
+                    const waypoint = action.params[6].toUpperCase();
+                    const number = [...waypoint].reduce((value: number, char: string) => value * 26 + char.charCodeAt(0) - 64, 0) - 1;
+                    const tile = game.map.getTileAtWaypoint(number);
+                    if (!tile) throw new Error(`Missing camera waypoint: ${waypoint}`);
+                    this.playerUi.worldInteraction.minimapHandler.panToTile(tile);
+                }
+                if (action.opcode === 114) this.sidebarModel.selectTab(Number(action.params[1]));
+                if ([10, 100, 117].includes(action.opcode)) this.campaignMovieAssets!.trigger(Number(action.params[1]), media, this.strings,
+                    action.opcode === 10 ? 'fullscreen' : action.opcode === 117 ? 'transmission-paused' : 'transmission')
+                    .catch((error: Error) => { if (this.game === game) game.campaign.failure ??= error.message; });
+            };
+            if ((game.campaign.launch.semanticsVersion ?? 1) >= 14) this.syncCampaignMediaControls();
+            else this.playerUi.worldInteraction.setEnabled(!game.campaign.inputLocked);
+            this.disposables.add(() => { game.campaign.uiAction = undefined; });
+        }
         const worldScene = uiInitResult.worldViewInitResult?.worldScene;
         if (worldScene) {
             this.activeWorldScene = worldScene;
+            worldScene.setAnimationPauseProvider(() => !(this.gameEndHandled && game.campaign?.launch.edition === 'yr')
+                && !!this.gameTurnMgr?.isSimulationPaused?.());
             console.log('[GameScreen.onGameStart] adding worldScene to renderer');
             this.renderer.removeScene(this.uiScene);
             this.renderer.addScene(worldScene);
@@ -1317,7 +1641,9 @@ export class GameScreen extends RootScreen {
         soundHandler.init?.();
         this.disposables.add(soundHandler);
         this.uiScene.add(hud);
-        const menu = this.menu = new GameMenu(this.gameMenuSubScreens, game, localPlayer, chatHistory,
+        const menuScreens = new Map<number, any>(this.gameMenuSubScreens);
+        if (game.campaign) menuScreens.set(GameMenuScreenType.Saves, new SaveBrowserScreen(this.strings, this.jsxRenderer));
+        const menu = this.menu = new GameMenu(menuScreens, game, localPlayer, chatHistory,
             this.gservCon, this.isSinglePlayer, this.isTournament, this.isSinglePlayer ? {
                 getValue: () => nearestGameSpeed(this.pausedAtSpeed ?? game.desiredSpeed.value),
                 setValue: (value: number) => {
@@ -1376,16 +1702,27 @@ export class GameScreen extends RootScreen {
             this.playerUi.worldInteraction.setEnabled(false);
             if (this.isSinglePlayer) {
                 if (this.pausedAtSpeed !== undefined) return;
-                this.gameTurnMgr.doGameTurn(performance.now());
+                // Skirmish drains queued commands before pausing; campaign
+                // checkpoint restoration must retain its exact restored tick.
+                if (!game.campaign) this.gameTurnMgr.doGameTurn(performance.now());
                 this.pausedAtSpeed = game.speed.value;
-                this.gameTurnMgr.setPaused(true);
-                game.desiredSpeed.value = Number.EPSILON;
-                game.speed.value = Number.EPSILON;
+                if (game.campaign) { this.gameTurnMgr.setCampaignPaused(true); this.setCampaignMediaPaused(true); }
+                else {
+                    this.gameTurnMgr.setPaused(true);
+                    game.desiredSpeed.value = Number.EPSILON;
+                    game.speed.value = Number.EPSILON;
+                }
                 this.mixer.setMuted(ChannelType.Effect, true);
                 this.mixer.setMuted(ChannelType.Ambient, true);
             }
         });
         menu.onQuit.subscribe(async () => {
+            if (game.campaign) {
+                this.mixer.setMuted(ChannelType.Effect, false); this.mixer.setMuted(ChannelType.Ambient, false);
+                this.controller?.goToScreen(ScreenType.MainMenuRoot, { route: this.returnTo
+                    ?? new MainMenuRoute(MainMenuScreenType.Campaign, { difficulty: game.campaign.launch.difficulty }) });
+                return;
+            }
             console.log('[Quit] onQuit start', {
                 isSinglePlayer: this.isSinglePlayer,
                 pausedAtSpeed: this.pausedAtSpeed
@@ -1458,7 +1795,14 @@ export class GameScreen extends RootScreen {
         });
         menu.onCancel.subscribe(() => {
             this.pointer.lock();
-            this.playerUi.worldInteraction.setEnabled(true);
+            this.playerUi.worldInteraction.setEnabled(!game.campaign?.inputLocked);
+            if (game.campaign) {
+                if (this.pausedAtSpeed !== undefined) game.desiredSpeed.value = this.pausedAtSpeed;
+                this.pausedAtSpeed = undefined; this.gameTurnMgr.setCampaignPaused(false);
+                this.setCampaignMediaPaused(false);
+                this.mixer.setMuted(ChannelType.Effect, false); this.mixer.setMuted(ChannelType.Ambient, false);
+                return;
+            }
             if (this.isSinglePlayer && this.pausedAtSpeed) {
                 game.desiredSpeed.value = this.pausedAtSpeed;
                 game.speed.value = this.pausedAtSpeed;
@@ -1475,7 +1819,7 @@ export class GameScreen extends RootScreen {
             return;
         }
         this.gameEndHandled = true;
-
+        document.querySelector('[data-campaign-diagnostic]')?.remove();
         let gameResultPopup: any;
         const releaseResult = () => {
             if (!gameResultPopup) return;
@@ -1487,7 +1831,21 @@ export class GameScreen extends RootScreen {
 
         try {
             const isObserver = Boolean(localPlayer?.isObserver);
-            const isVictory = !localPlayer?.defeated ||
+            this.pointer?.setVisible(false);
+            this.gameTurnMgr?.setErrorState?.();
+            this.gameAnimationLoop?.stop?.();
+            this.uiAnimationLoop.start();
+            if (game.campaign) {
+                const retainNarration = game.campaign.launch.edition === 'yr';
+                const speechDrain = retainNarration ? this.campaignSpeech?.finishForResult() : undefined;
+                if (!retainNarration) { this.campaignSpeech?.cancel(); this.campaignSpeech?.setPaused(false); }
+                this.setCampaignMediaPaused(false);
+                const completed = await this.campaignMediaPlayer?.finishForResult();
+                if (completed === false || this.game !== game) return;
+                await speechDrain;
+                if (this.game !== game) return;
+            }
+            const isVictory = game.campaign ? game.campaign.result === 'victory' : !localPlayer?.defeated ||
                 game?.alliances?.getAllies(localPlayer)?.some((ally: any) => !ally.defeated);
 
             console.log('[GameScreen] onGameEnd', {
@@ -1500,19 +1858,14 @@ export class GameScreen extends RootScreen {
 
             if (this.jsxRenderer && this.viewport) {
                 [gameResultPopup] = this.jsxRenderer.render(jsx(GameResultPopup, {
-                    type: isVictory && !isObserver
-                        ? GameResultType.MpVictory
-                        : GameResultType.MpDefeat,
+                    type: game.campaign ? (isVictory ? GameResultType.SpVictory : GameResultType.SpDefeat)
+                        : isVictory && !isObserver ? GameResultType.MpVictory : GameResultType.MpDefeat,
                     viewport: this.viewport.value,
                     strings: this.strings,
                     rasterScale: this.renderer.getCanvas().width / this.renderer.width,
                 }));
             }
 
-            this.pointer?.setVisible(false);
-            this.gameTurnMgr?.setErrorState?.();
-            this.gameAnimationLoop?.stop?.();
-            this.uiAnimationLoop.start();
             if (this.isLanGame) {
                 this.lanMatchSession?.leaveRoom();
             }
@@ -1527,7 +1880,10 @@ export class GameScreen extends RootScreen {
             }
 
             if (!isObserver) {
-                eva?.play?.(isVictory ? 'EVA_YouAreVictorious' : 'EVA_YouHaveLost', true);
+                eva?.play?.(game.campaign
+                    ? isVictory ? 'EVA_MissionAccomplished' : 'EVA_MissionFailed'
+                    : isVictory ? 'EVA_YouAreVictorious' : 'EVA_YouHaveLost', true);
+                if (game.campaign && isVictory) this.sound?.play(SoundKey.CheerSound, ChannelType.Effect);
             }
 
             if (replay) {
@@ -1551,8 +1907,24 @@ export class GameScreen extends RootScreen {
             await sleep(5000);
             const voiceDeadline = performance.now() + 10000;
             while (!eva.isIdle() && performance.now() < voiceDeadline && this.game === game) await sleep(100);
-            releaseResult();
             if (this.game !== game) return;
+            if (game.campaign) {
+                await eva.whenMissionComplete();
+                if (this.game !== game) return;
+                if (this.campaignMovieAssets && this.campaignMediaPlayer) {
+                    this.setCampaignMediaPaused(false);
+                    const completed = await this.campaignMovieAssets.sequence(game.campaign.definition,
+                        [isVictory ? 'Win' : 'Lose'], this.campaignMediaPlayer, this.strings, () => this.game === game);
+                    if (!completed) return;
+                }
+                if (game.campaign.result === 'victory' && !game.campaign.launch.diagnostic && !game.campaign.failure
+                    && !game.campaign.inspectionModified && !game.campaign.trainerModified && game.campaign.journal.trusted) {
+                    this.localPrefs.setItem('_r_campaignProgress_v1', JSON.stringify(completeCampaignProgress(
+                        this.localPrefs.getItem('_r_campaignProgress_v1'), game.campaign.launch)));
+                }
+            }
+
+            releaseResult();
 
             const route = localPlayer
                 ? new MainMenuRoute(MainMenuScreenType.Score, {

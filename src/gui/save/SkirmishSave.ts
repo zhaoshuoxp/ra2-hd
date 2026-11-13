@@ -4,8 +4,8 @@ import { GameStatus } from '@/game/Game';
 import { GameSpeed } from '@/game/GameSpeed';
 import { SOLO_TICKS_PER_SECOND } from '@/gui/screen/game/gameMenu/gameSpeedControl';
 import { AiDifficulty } from '@/game/gameopts/GameOpts';
-import { getTrainerSession, TRAINER_LIMITS, type TrainerCommand, type TrainerSession } from '@/game/trainer/TrainerRuntime';
-import { serializeTrainerCommand, restoreTrainerCommand, validSavedTrainerCommand,
+import { getTrainerSession, type TrainerCommand, type TrainerSession } from '@/game/trainer/TrainerRuntime';
+import { serializeTrainerCommand, restoreTrainerCommand, validSavedTrainer,
     type SavedTrainer, type SavedTrainerEvent } from '@/game/trainer/TrainerSave';
 
 export const SAVE_SIMULATION_VERSION = 1;
@@ -32,6 +32,7 @@ export interface SkirmishSave {
     actions: SavedAction[];
     speeds: { tick: number; value: number }[];
     checkpoints: { tick: number; hash: number }[];
+    playTime?: { elapsedMs: number };
     trainer?: SavedTrainer;
 }
 export class SaveError extends Error {
@@ -46,6 +47,10 @@ export function validateSave(save: SkirmishSave, edition?: string): void {
         throw new SaveError('HD:SaveIncompatible');
     if (!['ra2', 'yr'].includes(save.edition) || edition && edition !== save.edition)
         throw new SaveError('HD:SaveEditionMismatch');
+    for (const key of ['bridgeRallyVersion', 'demolitionSafetyVersion', 'neutralStructureTargetingVersion', 'retaliationVersion', 'parasiteCadenceVersion']) {
+        if (save.gameOpts?.[key] !== undefined && save.gameOpts[key] !== 1) invalid();
+    }
+    if (save.gameOpts?.civilianTargetingVersion !== undefined && ![1, 2].includes(save.gameOpts.civilianTargetingVersion)) invalid();
     if (typeof save.id !== 'string' || !save.id || typeof save.name !== 'string' || save.name.length > 80 ||
         typeof save.gameId !== 'string' || typeof save.playerName !== 'string' ||
         typeof save.engineVersion !== 'string' || typeof save.modHash !== 'string' ||
@@ -80,24 +85,20 @@ export function validateSave(save: SkirmishSave, edition?: string): void {
             !Number.isInteger(point.hash)) invalid();
         lastTick = point.tick;
     }
-    if (save.trainer !== undefined) {
-        const trainer = save.trainer;
-        if (!trainer || trainer.version !== 1 || typeof trainer.enabled !== 'boolean'
-            || !Array.isArray(trainer.events) || trainer.events.length > 2_000_000
-            || !Array.isArray(trainer.pending) || trainer.pending.length > TRAINER_LIMITS.pending
-            || !trainer.enabled && trainer.pending.length > 0
-            || trainer.pending.some(command => !validSavedTrainerCommand(command) || command.type === 'reset')) invalid();
-        lastTick = -1;
-        let lastPhase = 'boundary';
-        for (const event of trainer.events) {
-            if (!Number.isSafeInteger(event.tick) || event.tick < lastTick || event.tick > save.tick
-                || !['boundary', 'tick'].includes(event.phase) || event.tick === save.tick && event.phase !== 'boundary'
-                || event.tick === lastTick && lastPhase === 'tick' && event.phase === 'boundary'
-                || !validSavedTrainerCommand(event.command)
-                || event.phase === 'boundary' && event.command.type !== 'reset') invalid();
-            lastTick = event.tick; lastPhase = event.phase;
-        }
+    if (save.trainer !== undefined && !validSavedTrainer(save.trainer, save.tick)) invalid();
+    if (save.playTime !== undefined && (!save.playTime || !Number.isFinite(save.playTime.elapsedMs)
+        || save.playTime.elapsedMs < 0)) invalid();
+}
+
+// Legacy saves did not record wall time. Their speed history provides a
+// nominal active-time estimate; new saves retain the measured duration exactly.
+export function legacySkirmishPlayTime(save: Pick<SkirmishSave, 'tick' | 'initialSpeed' | 'speeds'>): number {
+    let elapsed = 0, tick = 0, speed = save.initialSpeed;
+    for (const change of save.speeds) {
+        elapsed += (change.tick - tick) * 1000 / (GameSpeed.BASE_TICKS_PER_SECOND * speed);
+        tick = change.tick; speed = change.value;
     }
+    return elapsed + (save.tick - tick) * 1000 / (GameSpeed.BASE_TICKS_PER_SECOND * speed);
 }
 
 // Rebuild the simulation before creating renderers. Running the original seeded
@@ -110,7 +111,7 @@ export class SkirmishSaveJournal {
     private lastSpeed?: number;
     private trainerEvents: SavedTrainerEvent[] = [];
     constructor(private readonly header: Omit<SkirmishSave,
-        'version' | 'simulationVersion' | 'id' | 'name' | 'savedAt' | 'tick' | 'hash' | 'speed' | 'actions' | 'speeds' | 'checkpoints' | 'trainer'>,
+        'version' | 'simulationVersion' | 'id' | 'name' | 'savedAt' | 'tick' | 'hash' | 'speed' | 'actions' | 'speeds' | 'checkpoints' | 'trainer' | 'playTime'>,
         saved?: SkirmishSave) {
         if (header.gameOpts.aiPlayers?.some((player: any) => player?.difficulty === AiDifficulty.Custom))
             this.invalid = 'HD:SaveCustomAi';
@@ -155,6 +156,7 @@ export class SkirmishSaveJournal {
             tick: game.currentTick, hash: game.getHash(), speed,
             actions: structuredClone(this.actions), speeds: structuredClone(this.speeds),
             checkpoints: structuredClone(this.checkpoints) };
+        if (game.playTime) save.playTime = { elapsedMs: game.playTime.elapsedMs };
         const trainer = getTrainerSession(game);
         if (trainer && (trainer.enabledForSave || this.trainerEvents.length || trainer.pending))
             save.trainer = { version: 1, enabled: trainer.enabledForSave, events: structuredClone(this.trainerEvents),
@@ -218,5 +220,6 @@ export async function restoreSkirmish(game: any, player: any, factory: any, save
     }
     if (game.getHash() !== save.hash) throw new SaveError('HD:SaveRestoreMismatch');
     game.speed.value = game.desiredSpeed.value = save.speed;
+    game.playTime?.restore(save.playTime?.elapsedMs ?? legacySkirmishPlayTime(save));
     progress(1);
 }

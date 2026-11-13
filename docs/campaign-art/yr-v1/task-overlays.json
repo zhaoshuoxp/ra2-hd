@@ -1,0 +1,132 @@
+{
+  "schema": "yr-authored-task-overlay-ledger-v1",
+  "status": "COMPLETE_SOURCE_AND_NATIVE_2X4X_QUALIFIED_USER_PENDING",
+  "families": [
+    {
+      "family": "yr-task-newurban-trock03-v1",
+      "identity": "TROCK03",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-trock03-registration-r1.json",
+      "recipe": "docs/campaign-art/yr-v1/task-newurban-trock03.json",
+      "sourceSha256": "0ab1ed8a2fe575d4512577f4f7dd57604edf7c388d7546ef394fb5789052a191",
+      "primaryMission": "all02umd.map",
+      "nativeValidation": {
+        "status": "PASS_ACTUAL_ORIGINAL_OVERLAY_BODY_AND_SHADOW_BATCH_2X4X_FIXED_MATERIAL_AND_RELEASE",
+        "cases": [
+          {
+            "density": 2,
+            "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/rock-overlays-native-2x-r1.json.gz",
+            "sample": [
+              48,
+              48
+            ],
+            "logical": [
+              24,
+              24
+            ],
+            "visibleBodyPixels": 1182,
+            "visibleShadowPixels": 412,
+            "originalIndexedShadow": true,
+            "fixedMaterialChangedPixels": 0,
+            "sourceWorldExact": true,
+            "sceneRelease": true
+          },
+          {
+            "density": 4,
+            "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/rock-overlays-native-4x-r1.json.gz",
+            "sample": [
+              96,
+              96
+            ],
+            "logical": [
+              24,
+              24
+            ],
+            "visibleBodyPixels": 4667,
+            "visibleShadowPixels": 1549,
+            "originalIndexedShadow": true,
+            "fixedMaterialChangedPixels": 0,
+            "sourceWorldExact": true,
+            "sceneRelease": true
+          }
+        ]
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-srock05-v1",
+      "identity": "SROCK05",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-srock05-registration-r1.json",
+      "recipe": "docs/campaign-art/yr-v1/task-newurban-srock05.json",
+      "sourceSha256": "a3f6013a0e709e6a5ea2e19b058ebab6b0c3cb5648696ab13b57916822c07bdf",
+      "primaryMission": "all02umd.map",
+      "nativeValidation": {
+        "status": "PASS_ACTUAL_ORIGINAL_OVERLAY_BODY_AND_SHADOW_BATCH_2X4X_FIXED_MATERIAL_AND_RELEASE",
+        "cases": [
+          {
+            "density": 2,
+            "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/rock-overlays-native-2x-r1.json.gz",
+            "sample": [
+              64,
+              40
+            ],
+            "logical": [
+              32,
+              20
+            ],
+            "visibleBodyPixels": 1406,
+            "visibleShadowPixels": 196,
+            "originalIndexedShadow": true,
+            "fixedMaterialChangedPixels": 0,
+            "sourceWorldExact": true,
+            "sceneRelease": true
+          },
+          {
+            "density": 4,
+            "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/rock-overlays-native-4x-r1.json.gz",
+            "sample": [
+              128,
+              80
+            ],
+            "logical": [
+              32,
+              20
+            ],
+            "visibleBodyPixels": 5745,
+            "visibleShadowPixels": 798,
+            "originalIndexedShadow": true,
+            "fixedMaterialChangedPixels": 0,
+            "sourceWorldExact": true,
+            "sceneRelease": true
+          }
+        ]
+      },
+      "userVisualAcceptance": "PENDING"
+    }
+  ],
+  "counts": {
+    "families": 2,
+    "members": 2,
+    "densityFrames": 4,
+    "pages": 4,
+    "ownerStates": 0,
+    "neutralStates": 4,
+    "nativeSeparateShadowFrames": 2
+  },
+  "nativeDensities": [
+    2,
+    4
+  ],
+  "nativeGeometryAndOriginalShadowsUnchanged": true,
+  "acceptedPayloadsReplaced": 0,
+  "userVisualAcceptance": "PENDING",
+  "visualInspection": "All four actual export/native density samples were inspected; original warm rock colors, major forms and detached pebbles are retained.",
+  "tests": {
+    "cases": 2,
+    "assertions": 92,
+    "typecheck": "PASS_TYPECHECK_ENTRY_R70",
+    "linkedSceneryAndOverlayCases": 16,
+    "linkedAssertions": 668
+  }
+}

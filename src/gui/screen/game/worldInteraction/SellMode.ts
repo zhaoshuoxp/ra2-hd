@@ -1,4 +1,5 @@
 import { PointerType } from '@/engine/type/PointerType';
+import { canControlOwner } from '@/game/campaign/CampaignControl';
 import { EventDispatcher } from '@/util/event';
 import { BuildStatus } from '@/game/gameobject/Building';
 import { DockableTrait } from '@/game/gameobject/trait/DockableTrait';
@@ -49,7 +50,7 @@ export class SellMode {
     }
     isRefundableObject(gameObject: any): boolean {
         return !!(gameObject.isTechno?.() &&
-            gameObject.owner === this.player &&
+            canControlOwner(this.player, gameObject.owner) &&
             !gameObject.rules.unsellable &&
             this.game.sellTrait.computeRefundValue(gameObject) > 0 &&
             (gameObject.isBuilding?.()

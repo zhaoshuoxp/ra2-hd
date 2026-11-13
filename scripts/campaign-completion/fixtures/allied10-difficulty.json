@@ -1,0 +1,16 @@
+{
+  "mission": "all10s.map",
+  "sourceSha256": "ac0ea14ec650256a014626db7c78135bb74168ba86d4eb863d987f04b07d1593",
+  "semanticsVersion": 24,
+  "enemyHouse": "BadGuy3 House",
+  "controlledHouses": 1,
+  "triggers": 89,
+  "aiTriggers": 32,
+  "ignoreGlobal": true,
+  "teamDelays": [1500, 750, 500],
+  "cases": {
+    "easy": { "credits": 10050, "human": [1.2, 0.8, 0.8], "enemy": [0.8, 1.2, 1], "aiDelay": 500, "openingActors": { "MGTK": 0 } },
+    "hard": { "credits": 9950, "human": [0.8, 1.2, 1], "enemy": [1.2, 0.8, 0.8], "aiDelay": 1500, "openingActors": { "MGTK": 0 } }
+  },
+  "authority": "Original all10s.map Player credits100 and retail CampaignMoneyDeltaEasy50/CampaignMoneyDeltaHard-50. The map TeamDelays1500,750,500 are nonmonotonic in hard/normal/easy order. At75 team0E5FA71C spawns3 MGTK under Einstein, then script0E65590C moves7/5, sets local0, marks success, waits20 seconds and transfers them to Player14. They remain outside player ownership at this360-tick observation; this is not a missing gift. Three enemy babysitter triggers exclude Easy. Focused source graph checks retain18/29/32 eligible AI records and the actual240-second linked production fallback. No full Easy/Hard victory is claimed."
+}

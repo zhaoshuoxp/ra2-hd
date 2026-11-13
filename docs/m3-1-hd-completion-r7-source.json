@@ -1,0 +1,95 @@
+{
+  "schema": "m3-1-hd-completion-r7-source-checkpoint-v1",
+  "status": "SOURCE_AND_STATIC_RESOURCE_CHECKS_PASS_NATIVE_PENDING",
+  "baseline": "72ae405885f2365f28df9f494572c2e7722fe0ec",
+  "retainedR6Runtime": "580c985417a218e0d53f5c71579ac404d2ae7889",
+  "standard": "docs/hd-art-standard.md",
+  "scope": {
+    "reuseIdentities": 23,
+    "newCompleteShpFamilies": [
+      "CAWA2A",
+      "CAWA2B",
+      "BRIDGEB1"
+    ],
+    "newCompleteVxlFamilies": [
+      "CRUISE",
+      "TUG",
+      "PDPLANE"
+    ],
+    "userRetainedArtwork": [
+      "TUG",
+      "PDPLANE"
+    ]
+  },
+  "pins": {
+    ".artifacts/m3-1/hd-completion-r7/source/source.json": {
+      "sha256": "8eac56b7bc51501aa0275ca70276a7b3d7b6d365231b312de69c606aca6082e4",
+      "bytes": 42768
+    },
+    ".artifacts/m3-1/hd-completion-r7/user-art-disposition-20261024.json": {
+      "sha256": "e86ba89e7fbb35d5876c368e5774dd11ab142a4c7281dc3253256b06f9971978",
+      "bytes": 3573
+    },
+    ".artifacts/m3-1/hd-completion-r7/clean-authoring-jobs-r2.json": {
+      "sha256": "b784fc58156cacd5ad4d64e136fc50afdb1c9235cc98189fbc51584926ddca29",
+      "bytes": 34181
+    },
+    ".artifacts/m3-1/hd-completion-r7/clean-authoring-jobs-r3.json": {
+      "sha256": "5c864ca5492d61e83319dd0ed9ce41fea6f310c1244a59b2a550caa2a8473218",
+      "bytes": 16482
+    },
+    ".artifacts/m3-1/hd-completion-r7/vxl-final/exports.json": {
+      "sha256": "024a3dcf367b7962f91e4b029c62d9ef4b4030035b354ac2d31e0176bf421a94",
+      "bytes": 2756
+    },
+    ".artifacts/m3-1/hd-completion-r7/reuse-receipt.json": {
+      "sha256": "5de8e392ec1c80b63cf99afdf88159fb96acf6a91adc94137af5e742583c7ed5",
+      "bytes": 5296
+    },
+    ".artifacts/m3-1/hd-completion-r7/registration-receipt.json": {
+      "sha256": "1a4ed84e1ecf0e1f540459cdd7864a5f4510b17c498d472247c5bc85b0a7e2b5",
+      "bytes": 3227
+    },
+    ".artifacts/m3-1/hd-completion-r7/static-check.json": {
+      "sha256": "098a9774405c6cb39b3d0c7497933da533a5892730f806189579ef4bfc5f4296",
+      "bytes": 1949
+    },
+    ".artifacts/m3-1/hd-completion-r7/resource-plan.json": {
+      "sha256": "1df2bce4abe59145f58d5534aee7071d44205a2e7c1e3671a8ccd7fbacd51b5d",
+      "bytes": 1441823
+    },
+    ".artifacts/m3-1/hd-completion-r7/focused-tests-source.log": {
+      "sha256": "9049d6d0e5f944224d745abe0b8f3c36aa0c60d6c3efb3011f96a7aae182852d",
+      "bytes": 10724
+    }
+  },
+  "tests": {
+    "passed": 84,
+    "failed": 0,
+    "assertions": 1198,
+    "entryTypecheck": "PASS",
+    "retainedEarlierAttempt": "Packaged core receipts do not expose the import-only core.resources fixture. The first test run against the packaged resource root had one fixture error; the matching imported-source suite passes. See focused-tests.log."
+  },
+  "memorialOriginal": {
+    "source": "Retail RA2 art.ini and unmodified sov01t.map",
+    "building": "CAWASH19",
+    "normal": "CAWA19_A",
+    "damaged": "CAWA19_AD",
+    "garrisoned": "CAWA19_AG",
+    "occupiedStart": 33,
+    "occupiedLoop": [
+      33,
+      47
+    ],
+    "rate": 220,
+    "team": "0A0C1A7C",
+    "house": "Other3",
+    "script": "0A0C6DBC",
+    "orders": [
+      "3,46",
+      "46,131281"
+    ],
+    "buildingTypeIndex": 209,
+    "meaning": "Original Soviet paradrop team occupies the memorial; garrisoned art selects the red flag. Native sequence validation remains pending."
+  }
+}

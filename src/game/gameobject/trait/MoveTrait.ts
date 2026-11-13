@@ -244,6 +244,7 @@ export class MoveTrait {
                     .getGroundObjectsOnTile(gameObject.tile)
                     .filter(obj => (!obj.isUnit() || obj.onBridge === gameObject.onBridge) &&
                     canCrush(gameObject, obj) &&
+                    !obj.campaignParadropping &&
                     !(obj.isInfantry() && obj.stance === StanceType.Paradrop) &&
                     (!(obj.isTechno() && !teleporting) || !gameState.areFriendly(obj, gameObject)));
                 for (const crushable of crushableObjects) {

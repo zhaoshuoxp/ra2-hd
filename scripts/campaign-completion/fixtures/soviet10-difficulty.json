@@ -1,0 +1,46 @@
+{
+  "mission": "sov10t.map",
+  "sourceSha256": "5c3d8b26e05a0a73530630db8353637fa9ed7072144d5360e1ab994869428449",
+  "semanticsVersion": 12,
+  "enemyHouse": "BadGuy1 House",
+  "controlledHouses": 2,
+  "triggers": 59,
+  "aiTriggers": 21,
+  "ignoreGlobal": true,
+  "teamDelays": [
+    2000,
+    2500,
+    3500
+  ],
+  "cases": {
+    "easy": {
+      "credits": 20000,
+      "human": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "enemy": [
+        0.8,
+        1.2,
+        1
+      ],
+      "aiDelay": 3500
+    },
+    "hard": {
+      "credits": 10000,
+      "human": [
+        0.8,
+        1.2,
+        1
+      ],
+      "enemy": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "aiDelay": 2000
+    }
+  },
+  "authority": "Original sov10t.map Player House Credits=150, General CampaignMoneyDeltaEasy=5000/Hard=-5000. Player and Other2 remain separate controlled houses. Original archived difficulty and TeamDelays sections have no map-local override. Original Nuke Buster trigger 08C8503C is Normal/Hard only; it is not replaced by unit-count scaling."
+}

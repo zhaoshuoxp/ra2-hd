@@ -1,6 +1,7 @@
 import { offlineTrainer } from '@/gui/trainer/TrainerController';
 import { TrainerToolbar } from '@/gui/trainer/TrainerToolbar';
 import { activeEdition } from './editions/activeEdition';
+import { loadPreparedLocalMusic } from './offline/music';
 import { uiArt } from './gui/hd/UiArt';
 import { UiCssArt } from './gui/hd/UiCssArt';
 import { Renderer } from './engine/gfx/Renderer.js';
@@ -333,6 +334,8 @@ export class Gui {
         subScreens.set(MainMenuScreenType.Home, HomeScreen);
         const { SkirmishSaveScreen } = await import('./gui/save/SkirmishSaveScreen');
         subScreens.set(MainMenuScreenType.LoadGame, SkirmishSaveScreen);
+        const { CampaignScreen } = await import('./gui/screen/mainMenu/campaign/CampaignScreen');
+        subScreens.set(MainMenuScreenType.Campaign, CampaignScreen);
         subScreens.set(MainMenuScreenType.OptionsStorage, StorageScreen);
         const { SkirmishScreen } = await import('./gui/screen/mainMenu/lobby/SkirmishScreen.js');
         subScreens.set(MainMenuScreenType.Skirmish, SkirmishScreen);
@@ -394,7 +397,7 @@ export class Gui {
         const gameMenuSubScreens = new Map<number, any>();
         gameMenuSubScreens.set((await import('./gui/screen/game/gameMenu/ScreenType.js')).ScreenType.Saves,
             new (await import('./gui/save/SkirmishSaveScreen')).SkirmishSaveScreen(this.strings, this.jsxRenderer!));
-        gameMenuSubScreens.set((await import('./gui/screen/game/gameMenu/ScreenType.js')).ScreenType.Home, new (await import('./gui/screen/game/gameMenu/GameMenuHomeScreen.js')).GameMenuHomeScreen(this.strings, this.fullScreen!));
+        gameMenuSubScreens.set((await import('./gui/screen/game/gameMenu/ScreenType.js')).ScreenType.Home, new (await import('./gui/screen/game/gameMenu/GameMenuHomeScreen.js')).GameMenuHomeScreen(this.strings, this.fullScreen!, this.jsxRenderer!));
         gameMenuSubScreens.set((await import('./gui/screen/game/gameMenu/ScreenType.js')).ScreenType.Diplo, new (await import('./gui/screen/game/gameMenu/DiploScreen.js')).DiploScreen(this.strings, this.jsxRenderer!, this.renderer!, Engine.getMpModes() as any, tauntsEnabled, mutedPlayers));
         gameMenuSubScreens.set((await import('./gui/screen/game/gameMenu/ScreenType.js')).ScreenType.ConnectionInfo, new (await import('./gui/screen/game/gameMenu/ConnectionInfoScreen.js')).ConnectionInfoScreen(this.strings, this.jsxRenderer!));
         gameMenuSubScreens.set((await import('./gui/screen/game/gameMenu/ScreenType.js')).ScreenType.QuitConfirm, new (await import('./gui/screen/game/gameMenu/QuitConfirmScreen.js')).QuitConfirmScreen(this.strings));
@@ -561,7 +564,8 @@ export class Gui {
                     }, rate?: number, attack?: boolean, decay?: boolean, loops?: number) => {
                         return this.audioSystem!.playWavLoop(files, channel, volume, pan, delayMs, rate, attack, decay, loops);
                     },
-                    setMuted: (muted: boolean) => this.audioSystem!.setMuted(muted)
+                    setMuted: (muted: boolean) => this.audioSystem!.setMuted(muted),
+                    setDucking: (owner: object, channel: ChannelType, gain?: number) => this.audioSystem!.setDucking(owner, channel, gain)
                 };
                 this.sound = new Sound(soundAudioSystemAdapter, Engine.getSounds(), soundSpecs, audioVisualRules, document);
                 this.sound.initialize();
@@ -600,14 +604,17 @@ export class Gui {
                 console.warn('Could not check music directory:', error);
                 hasMusicDir = false;
             }
-            if (hasMusicDir) {
+            const musicFiles = hasMusicDir ? Engine.getThemes()
+                : await loadPreparedLocalMusic(activeEdition);
+            if (musicFiles) {
                 const themeIniFileName = Engine.getFileNameVariant('theme.ini');
                 const themeIni = Engine.getIni(themeIniFileName);
                 const musicSpecs = new MusicSpecs(themeIni);
                 const musicAudioSystemAdapter = {
-                    playMusicFile: async (file: any, repeat: boolean, onEnded?: () => void): Promise<boolean> => {
+                    getMusicPlaybackState: () => this.audioSystem!.getMusicPlaybackState(),
+                    playMusicFile: async (file: any, repeat: boolean, onEnded?: () => void, startTime = 0): Promise<boolean> => {
                         try {
-                            await this.audioSystem!.playMusicFile(file, repeat, onEnded);
+                            await this.audioSystem!.playMusicFile(file, repeat, onEnded, startTime);
                             return true;
                         }
                         catch (error) {
@@ -617,7 +624,7 @@ export class Gui {
                     },
                     stopMusic: () => this.audioSystem!.stopMusic()
                 };
-                this.music = new Music(musicAudioSystemAdapter, Engine.getThemes(), musicSpecs);
+                this.music = new Music(musicAudioSystemAdapter, musicFiles, musicSpecs);
                 const musicOptions = this.localPrefs.getItem(StorageKey.MusicOpts);
                 if (musicOptions) {
                     try {

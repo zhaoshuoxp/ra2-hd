@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M3.4 Full Motion Repair</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:24px;background:#101820;color:#e6edf3;font:19px/1.5 system-ui}
+h1{font-size:32px}
+h2{font-size:25px}
+p{max-width:1100px}
+button,select,input{font:inherit}
+button,select{padding:8px 12px;background:#213342;color:inherit;border:1px solid #72899b;border-radius:6px}
+button{cursor:pointer}
+label{display:inline-block;margin:7px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pane{min-width:0}
+.pane h2{margin-bottom:6px}
+video{width:100%;aspect-ratio:4/3;background:#000;object-fit:contain}
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:14px 0}
+.controls input{flex:1;min-width:180px}
+.native{overflow:auto;border:1px solid #72899b;height:620px;background:#000}
+.native img{display:block;max-width:none;width:auto;height:auto}
+.note{color:#b9ccda}
+table{border-collapse:collapse;width:100%;max-width:1100px}
+th,td{text-align:left;border-bottom:1px solid #405260;padding:8px}
+details{margin-top:24px}
+select{max-width:100%}
+@media(max-width:850px){.pair{grid-template-columns:1fr}
+.native{height:480px}
+}
+
+</style>
+<h1>M3.4 Full Motion Repair</h1>
+<p>136 movies audited across RA2 and Yuri's Revenge. 44 full-screen movies receive selective motion correction. 9 full-screen movies and all 83 radar communications retain their verified HD masters.</p>
+<p class="note">Compare the previous HD delivery with the repaired HD master at the same source frames. Fitted playback can hide thin horizontal lines. Use the native-size stills below to inspect faces, edges and remaining source texture. The natural restoration strength stays unchanged.</p>
+<label>Comparison <select id="sample"></select></label>
+<p id="metadata"></p>
+<div class="pair"><div class="pane"><h2>Previous HD (R5)</h2><video id="before" muted playsinline preload="metadata"></video></div><div class="pane"><h2>Repaired HD (R6)</h2><video id="after" muted playsinline preload="metadata"></video></div></div>
+<div class="controls"><button id="play">Play / pause both</button><button id="restart">Restart</button><input id="seek" type="range" min="0" value="0" step="1" aria-label="Source frame"><output id="clock"></output><label><input id="sound" type="checkbox"> Original sound</label><button id="fullscreen">Fullscreen comparison</button></div>
+<audio id="audio" preload="metadata"></audio>
+<h2>Native-size stills</h2><p id="stillNote" class="note"></p>
+<div class="pair"><div class="pane"><h2>Previous HD</h2><div class="native" id="leftNative"><img id="beforeStill" alt="Previous full HD master frame"></div></div><div class="pane"><h2>Repaired HD</h2><div class="native" id="rightNative"><img id="afterStill" alt="Repaired full HD master frame"></div></div></div>
+<p class="note">These PNGs decode directly from the complete masters. Each image pixel occupies one CSS pixel at 100% browser zoom; scroll to inspect the full frame. Matched playback excerpts are re-encoded at 15 fps, with one common original-audio excerpt. Fine inherited ripple, motion softness and existing facial texture can remain. This page supports user review; technical checks and selected-still engineering checks do not establish complete-film visual acceptance.</p>
+<details><summary>Complete coverage (136 identities)</summary><table><thead><tr><th>Movie identity</th><th>Action</th></tr></thead><tbody id="coverage"></tbody></table></details>
+<script>
+const samples = __MOVIE_DATA__, coverage = __COVERAGE_DATA__;
+const el = id => document.getElementById(id);
+const before = el('before'), after = el('after'), audio = el('audio'), seek = el('seek');
+let index = 0, changing = false;
+el('sample').replaceChildren(...samples.map((sample, i) => {
+    const option = document.createElement('option');
+    option.value = i; option.textContent = sample.title;
+    return option;
+}));
+el('coverage').replaceChildren(...coverage.map(row => {
+    const tr = document.createElement('tr');
+    for (const key of ['identity', 'action']) {
+        const td = document.createElement('td'); td.textContent = row[key]; tr.append(td);
+    }
+    return tr;
+}));
+function pause() { before.pause(); after.pause(); audio.pause(); }
+function centerNative(image) {
+    const pane = image.parentElement;
+    pane.scrollTop = Math.max(0, (image.naturalHeight - pane.clientHeight) / 2);
+    pane.scrollLeft = Math.max(0, (image.naturalWidth - pane.clientWidth) / 2);
+}
+function load(i) {
+    pause(); index = i;
+    const sample = samples[i];
+    before.src = sample.before; after.src = sample.after; audio.src = sample.audio;
+    el('beforeStill').src = sample.beforeStill; el('afterStill').src = sample.afterStill;
+    seek.max = sample.frames - 1; seek.value = 0;
+    el('metadata').textContent = `${sample.identity} | ${sample.width} × ${sample.height} | 15 fps | `
+        + `source frames ${sample.first}–${sample.first + sample.frames - 1} | `
+        + (sample.changed ? 'Selectively repaired' : 'Identical retained master');
+    el('stillNote').textContent = `Source frame ${sample.still}, ${sample.width} × ${sample.height}. `
+        + 'Scroll either pane; both remain aligned.';
+    updateClock();
+}
+function updateClock() {
+    const sample = samples[index];
+    el('clock').textContent = `Frame ${sample.first + Number(seek.value)} / ${sample.first + sample.frames - 1}`;
+}
+async function play() {
+    if (!before.paused) { pause(); return; }
+    if (before.ended) before.currentTime = after.currentTime = audio.currentTime = 0;
+    await Promise.all([before.play(), after.play()]);
+    if (el('sound').checked) { audio.currentTime = before.currentTime; await audio.play(); }
+}
+el('sample').onchange = () => load(Number(el('sample').value));
+el('play').onclick = play;
+el('restart').onclick = () => {
+    pause(); before.currentTime = after.currentTime = audio.currentTime = 0;
+    seek.value = 0; updateClock();
+};
+seek.oninput = () => {
+    pause(); const time = Number(seek.value) / 15;
+    before.currentTime = after.currentTime = audio.currentTime = time; updateClock();
+};
+el('sound').onchange = () => {
+    audio.muted = !el('sound').checked;
+    if (!before.paused && el('sound').checked) { audio.currentTime = before.currentTime; audio.play(); }
+    else audio.pause();
+};
+el('fullscreen').onclick = () => document.documentElement.requestFullscreen();
+before.onended = pause;
+before.ontimeupdate = () => {
+    seek.value = Math.min(Number(seek.max), Math.floor(before.currentTime * 15)); updateClock();
+    if (!before.paused && Math.abs(after.currentTime - before.currentTime) > .09) {
+        after.currentTime = before.currentTime;
+    }
+};
+for (const [a, b] of [['leftNative', 'rightNative'], ['rightNative', 'leftNative']]) {
+    el(a).onscroll = () => {
+        if (changing) return;
+        changing = true;
+        el(b).scrollLeft = el(a).scrollLeft; el(b).scrollTop = el(a).scrollTop;
+        requestAnimationFrame(() => changing = false);
+    };
+}
+for (const id of ['beforeStill', 'afterStill']) el(id).onload = () => centerNative(el(id));
+load(0);
+</script></html>

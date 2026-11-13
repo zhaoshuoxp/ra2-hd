@@ -32,13 +32,15 @@ export class MergedSpriteMesh extends THREE.Mesh {
             (attribute as THREE.BufferAttribute).setUsage(THREE.DynamicDrawUsage);
         }
         if (sourceGeometry.index) {
-            mergedGeometry.setIndex(new THREE.BufferAttribute(new Uint32Array(maxInstances * sourceGeometry.index.array.length), 1));
-            for (let i = 0; i < maxInstances; i++) {
+            const sourceIndexArray = sourceGeometry.index.array, stride = sourceIndexArray.length;
+            const indexArray = new Uint32Array(maxInstances * stride);
+            // Same per-instance offset indices, written directly instead of one
+            // mapped temporary array per instance on every batch creation.
+            for (let i = 0, target = 0; i < maxInstances; i++) {
                 const vertexOffset = i * vertexCount;
-                const indexArray = mergedGeometry.index!.array as Uint32Array;
-                const sourceIndexArray = sourceGeometry.index.array;
-                indexArray.set(Uint32Array.from(sourceIndexArray, (index: number) => index + vertexOffset), i * sourceIndexArray.length);
+                for (let j = 0; j < stride; j++) indexArray[target++] = sourceIndexArray[j] + vertexOffset;
             }
+            mergedGeometry.setIndex(new THREE.BufferAttribute(indexArray, 1));
         }
         return mergedGeometry;
     }

@@ -67,6 +67,19 @@ export class Art {
             });
         });
         const animationNames = new Set<string>(this.rules.animationNames);
+        if (this.mapFile?.campaignDefinition?.edition === 'yr' && this.mapFile.campaignSemanticsVersion >= 28) {
+            // YR building art references state aliases absent from [Animations],
+            // including CATIME_AD. Resolve their original sections without
+            // changing the registry indices used by scenario instructions.
+            const property = /^(?:IdleAnim|ActiveAnim(?:Two|Three|Four)?|SuperAnim(?:Two|Three|Four)?|SpecialAnim(?:Two|Three|Four)?|DeployingAnim|UnderDoorAnim|RoofDeployingAnim|UnderRoofDoorAnim|Buildup)(?:Damaged|Garrisoned)?$/;
+            for (const building of this.objectArt.get(ObjectType.Building)?.values() ?? []) {
+                for (const key of (building.art as IniSection).entries.keys()) {
+                    if (!property.test(key)) continue;
+                    const name = building.art.getString(key);
+                    if (name && this.artIni.getSection(name)) animationNames.add(name);
+                }
+            }
+        }
         // Engine-selected status members can be absent from the retail animation list.
         const globals = globalRules(this.rules);
         for (const key of ['ControlledAnimationType', 'PermaControlledAnimationType']) {

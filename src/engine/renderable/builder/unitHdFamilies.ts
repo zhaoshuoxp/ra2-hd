@@ -2,10 +2,12 @@ import catalog from '../../../../desktop/allied-unit-contracts.json';
 import yuriCatalog from '../../../../desktop/yuri-unit-contracts.json';
 import { sovietUnitHdFamilies } from './sovietUnitHdFamilies';
 import { unitHdAvailableInEdition } from './sharedAlliedUnitHd';
+import { taskNpcContracts } from './campaignTaskNpcHd';
 
 export interface UnitHdFamilyContract {
     identity: string;
     edition?: string;
+    authoringTheater?: string;
     blockedReason?: string;
     selection?: string;
     sameDensity?: boolean;
@@ -21,6 +23,7 @@ export interface UnitHdFamilyContract {
 export const unitHdFamilies: Record<string, UnitHdFamilyContract> = {
     ...sovietUnitHdFamilies,
     ...catalog.shp,
+    ...taskNpcContracts,
 };
 
 // Filter before merging: YR yurix.shp must not hide RA2's legacy yuripr.shp.

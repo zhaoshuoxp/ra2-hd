@@ -1,0 +1,140 @@
+{
+  "status": "COMPLETE_FAMILY_REGISTERED_NATIVE_AND_USER_REVIEW_PENDING",
+  "family": "yr-task-newurban-cabarr02-v1",
+  "mission": {
+    "edition": "yr",
+    "mission": "all02umd.map",
+    "sha256": "168ed42024991b6c2af4de0e5a667e9c2bf15767741efe99dac975721460b303"
+  },
+  "theater": "NEWURBAN",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yr-campaign/task-newurban-cabarr02-stage-r1",
+  "preparation": {
+    "status": "PREPARED_NATIVE_REGISTRATION_AND_RUNTIME_PENDING",
+    "recipe": "/Users/Aone/RA2remaster/ra2-hd/docs/campaign-art/yr-v1/task-newurban-cabarr02.json",
+    "recipeSha256": "bad3b4c2d1600e8d378ffd45487f283e42f2d350acceb834798153ef217b95d8",
+    "originalSourceJsonSha256": "aabcf74d6a54a9f54566a50ff2e9467ac9fb75173b5f6c704aed0e7bc98a0829",
+    "sourceSha256": "20dabf07131015b7dbdb65bda3a9916a3324ac8e162c2bbcf0e996e99bb80aa4",
+    "masters": [
+      {
+        "slot": 0,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/newurban-cabarr02/masters-r1/frame-0.png",
+        "sha256": "ab35f821bc2d9b7058c60152a00a54f962386774e5e71445670dfa4d37142f4a"
+      }
+    ],
+    "directionAuthorization": {
+      "file": "docs/campaign-art/yr-v1/authorization.json",
+      "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+    },
+    "userVisualAcceptance": "PENDING",
+    "qualification": "Only original guides are converted. Authored masters are referenced without copying or modification. Complete state coverage, independent exports, alpha/geometry and runtime acceptance require subsequent verification."
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "e92a6fe425243ce74e9b554e1bf8f476152bad56d5666853c72180bf29d7e377",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 4,
+      "pages": 2,
+      "ownerStates": 0,
+      "neutralStates": 4,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 2,
+      "preservedAcceptedDensityFrames": 0
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 69632,
+      "4": 270336
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "internalVisualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "packSha256": "e92a6fe425243ce74e9b554e1bf8f476152bad56d5666853c72180bf29d7e377",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "inspectedExports": [
+      ".artifacts/yr-campaign/task-small3-actual-2x.png",
+      ".artifacts/yr-campaign/task-small3-actual-4x.png"
+    ],
+    "observations": [
+      "The authored cutouts preserve the original arrangement, palette, visible construction and thin edges with clean continuous materials and antialiased alpha.",
+      "The V3 rack has the original three rockets; the steel barrier has three intersecting beams. The crate cluster keeps its original layered wood and light parcel arrangement.",
+      "All native body states and original separate shadow frames are retained. Both density exports are independently sampled from the higher-resolution authored master."
+    ],
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "bundle": {
+    "schema": "campaign-environment-extension-v1",
+    "identity": "yr-task-newurban-cabarr02-v1",
+    "familyHash": "d47fc54333cae766dd56d1edffab5aa10a160462a564d12b8a6fc84d34585982",
+    "mission": "all02umd.map",
+    "theater": "NEWURBAN",
+    "revision": "yr-task-newurban-cabarr02-r1",
+    "members": [
+      {
+        "member": "cnbarr02.shp",
+        "manifest": "yr-task-newurban-cabarr02-r1-cnbarr02-shp.json",
+        "sha256": "55097d52d091b2a4ac22bca79d02dc4af93092597bb9b3000fccd9ff6b400b12"
+      }
+    ],
+    "acceptance": "FAITHFUL_DIRECTION_AUTHORIZED_COMPLETE_NATIVE_RUNTIME_AND_USER_VISUAL_REVIEW_PENDING",
+    "edition": "yr"
+  },
+  "files": [
+    {
+      "name": "yr-task-newurban-cabarr02-r1-cnbarr02-shp-2-p0-base.png",
+      "bytes": 5339,
+      "sha256": "6cc715d57d43eea5febbc797c935b096243a26941f603331ec540f0ba30fc6d2",
+      "route": "/local-campaign/yr/all02umd/yr-task-newurban-cabarr02-r1-cnbarr02-shp-2-p0-base.png"
+    },
+    {
+      "name": "yr-task-newurban-cabarr02-r1-cnbarr02-shp-2-p0-data.png",
+      "bytes": 249,
+      "sha256": "2209ed8f160a7c24ddfa7f582e810736605e9431e227b7a9e7e934721a513fe9",
+      "route": "/local-campaign/yr/all02umd/yr-task-newurban-cabarr02-r1-cnbarr02-shp-2-p0-data.png"
+    },
+    {
+      "name": "yr-task-newurban-cabarr02-r1-cnbarr02-shp-4-p0-base.png",
+      "bytes": 14525,
+      "sha256": "baf14da3fad6f18b18cc22bed82a946ab6676637e0fb15ea8da833b004a97be6",
+      "route": "/local-campaign/yr/all02umd/yr-task-newurban-cabarr02-r1-cnbarr02-shp-4-p0-base.png"
+    },
+    {
+      "name": "yr-task-newurban-cabarr02-r1-cnbarr02-shp-4-p0-data.png",
+      "bytes": 483,
+      "sha256": "f432bb093abbaa1b6288fb1427962ec533de6e91c95baf9567d5a151efe8704b",
+      "route": "/local-campaign/yr/all02umd/yr-task-newurban-cabarr02-r1-cnbarr02-shp-4-p0-data.png"
+    },
+    {
+      "name": "yr-task-newurban-cabarr02-r1-cnbarr02-shp.json",
+      "bytes": 3928,
+      "sha256": "55097d52d091b2a4ac22bca79d02dc4af93092597bb9b3000fccd9ff6b400b12",
+      "route": "/local-campaign/yr/all02umd/yr-task-newurban-cabarr02-r1-cnbarr02-shp.json"
+    },
+    {
+      "name": "environment-family-yr-task-newurban-cabarr02-r1.json",
+      "bytes": 620,
+      "sha256": "7ed67165bf6c883e54207ad4f0d42ba2ced3eb36eefcbca26cf7194761f473b5",
+      "route": "/local-campaign/yr/all02umd/environment-family-yr-task-newurban-cabarr02-r1.json"
+    }
+  ],
+  "contractBeforeSha256": "a636bbab1d8b44dafbcd87d41bd7c9abccf312ac4cf7f41f63dcb36a80ba3c27",
+  "contractAfterSha256": "877959146f73e105b7eba56d5635347570fe95a8a81aafdee85a3d03c227e25a",
+  "existingRootSelectorChanges": {},
+  "acceptedPayloadsReplaced": 0,
+  "ownershipCorrection": null,
+  "artCorrection": null,
+  "bridgeCorrection": null,
+  "policy": "Independent densities, original shadows/state timing and existing fixed budgets; complete-family fallback retained."
+}

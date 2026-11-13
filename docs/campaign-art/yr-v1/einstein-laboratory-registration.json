@@ -1,0 +1,180 @@
+{
+  "status": "COMPLETE_FAMILY_REGISTERED_NATIVE_AND_USER_REVIEW_PENDING",
+  "family": "yr-allied01-einstein-laboratory-v1",
+  "mission": {
+    "mission": "all01umd.map",
+    "sha256": "dee38769f2247a85908705486c175ef14a4cf90437899defe7c8b4c0d1c51fb0",
+    "edition": "yr"
+  },
+  "theater": "NEWURBAN",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yr-campaign/einstein-lab-stage-r1",
+  "preparation": {
+    "status": "PREPARED_NATIVE_REGISTRATION_AND_RUNTIME_PENDING",
+    "recipe": "/Users/Aone/RA2remaster/ra2-hd/docs/campaign-art/yr-v1/einstein-laboratory.json",
+    "recipeSha256": "e4a2b4f72d5564c5e880f6c6c9af9f4668dbbdcd8669ecb462b981d6dee518fb",
+    "originalSourceJsonSha256": "b54d5714d546909951021190620f2a46bfee4828afb3a12585b2daa719cc7d8d",
+    "sourceSha256": "f118b56e1bb58437e31505b51a8a774a3468e8e0aa87d4de02c12f1d285efa73",
+    "masters": [
+      {
+        "slot": 3,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/einstein-laboratory/masters-r2/lab-03.png",
+        "sha256": "8a5266874aeb256bd04dec2ee9d70012796735d6c0d490ee4b5a7f3df41aa59c"
+      }
+    ],
+    "directionAuthorization": {
+      "file": "docs/campaign-art/yr-v1/authorization.json",
+      "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+    },
+    "userVisualAcceptance": "PENDING",
+    "acceptedBodyFrames": {
+      "cnlab.shp": {
+        "sourceSha256": "f118b56e1bb58437e31505b51a8a774a3468e8e0aa87d4de02c12f1d285efa73",
+        "donorMember": "calab.shp",
+        "manifestFile": "/Users/Aone/RA2remaster/ra2-hd/.local/campaign/ra2/all10s/campaign-all10-calab-v46-r2-calab-shp.json",
+        "manifestSha256": "a80e3b10111f4f2fd15a503c2e0a3dd37095b4016f5b2d1118a33d4324d84a62",
+        "proofFile": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/einstein-laboratory/accepted-body-proof-r1.json",
+        "proofSha256": "83ecc99d956b97bab77a14302610fbbba99afe9cc68b50ac98b99336bca1830a",
+        "slots": [
+          0,
+          1,
+          2
+        ],
+        "preserveAcceptedCoverage": {
+          "schema": "preserve-pinned-accepted-body-coverage-v1",
+          "slots": [
+            0,
+            1,
+            2
+          ],
+          "donorManifestSha256": "a80e3b10111f4f2fd15a503c2e0a3dd37095b4016f5b2d1118a33d4324d84a62",
+          "donorColorSha256": "5360877846f010dbbd023bf0c2650af94c20272afda66f1ebf8e5ba5f9dd1a83"
+        }
+      }
+    },
+    "qualification": "Only original guides are converted. Authored masters are referenced without copying or modification. Complete state coverage, independent exports, alpha/geometry and runtime acceptance require subsequent verification."
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "e73928d8dedc4ec9019a19da2a691f458572828ab9507c1b4719488edcd11079",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 8,
+      "pages": 2,
+      "ownerStates": 4,
+      "neutralStates": 4,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 4,
+      "preservedAcceptedDensityFrames": 6
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 3833856,
+      "4": 15204352
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "internalVisualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "packSha256": "e73928d8dedc4ec9019a19da2a691f458572828ab9507c1b4719488edcd11079",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "inspectedExports": [
+      ".artifacts/yr-campaign/einstein-lab-stage-r1/actual-2x-contact.png",
+      ".artifacts/yr-campaign/einstein-lab-stage-r1/actual-4x-contact.png"
+    ],
+    "observations": [
+      "The original normal, damaged and alternate body states match the accepted donor in every native body index, visible palette color, owner shade, contact mask and geometry. Their complete HD base/data samples remain byte-identical at both densities.",
+      "Only the original NewUrban rubble state receives new authored material and continuous alpha.",
+      "The original target source, canvas, pivots, all four body states and native separate shadows are unchanged."
+    ],
+    "acceptedDonorManifestSha256": "a80e3b10111f4f2fd15a503c2e0a3dd37095b4016f5b2d1118a33d4324d84a62",
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "bundle": {
+    "schema": "campaign-environment-extension-v1",
+    "identity": "yr-allied01-einstein-laboratory-v1",
+    "familyHash": "6d284480b01b62735713a17dcc514c40345e744b08665a71e43f0dd163c2f951",
+    "mission": "all01umd.map",
+    "theater": "NEWURBAN",
+    "revision": "yr-einstein-lab-r1",
+    "members": [
+      {
+        "member": "cnlab.shp",
+        "manifest": "yr-einstein-lab-r1-cnlab-shp.json",
+        "sha256": "4ef0b3bf8b6b727bc324bd7cef34e27c1a488062b21566c74d9cd6c2b6594bd2"
+      }
+    ],
+    "acceptance": "FAITHFUL_DIRECTION_AUTHORIZED_COMPLETE_NATIVE_RUNTIME_AND_USER_VISUAL_REVIEW_PENDING",
+    "edition": "yr"
+  },
+  "files": [
+    {
+      "name": "yr-einstein-lab-r1-cnlab-shp-2-p0-base.png",
+      "bytes": 472522,
+      "sha256": "3081f62e3057fd0452ab31ddbd08174db3cd25dd0c3691d275c394b7c5998267",
+      "route": "/local-campaign/yr/all01umd/yr-einstein-lab-r1-cnlab-shp-2-p0-base.png"
+    },
+    {
+      "name": "yr-einstein-lab-r1-cnlab-shp-2-p0-data.png",
+      "bytes": 7603,
+      "sha256": "70e78a4f7ac12d344603e8dac20068cfb5f9ae7cd6a7738a5ee718aa1d2ca0fd",
+      "route": "/local-campaign/yr/all01umd/yr-einstein-lab-r1-cnlab-shp-2-p0-data.png"
+    },
+    {
+      "name": "yr-einstein-lab-r1-cnlab-shp-4-p0-base.png",
+      "bytes": 1691506,
+      "sha256": "024f8e1b6468ed9a3058c1044f4d3e92efefa7790d847f8e6d74c4b11a024aca",
+      "route": "/local-campaign/yr/all01umd/yr-einstein-lab-r1-cnlab-shp-4-p0-base.png"
+    },
+    {
+      "name": "yr-einstein-lab-r1-cnlab-shp-4-p0-data.png",
+      "bytes": 20402,
+      "sha256": "5ec7f6739fd1fdeee77b8914d3f8ce75f3909d29e81cf6842ab7d75cbb238101",
+      "route": "/local-campaign/yr/all01umd/yr-einstein-lab-r1-cnlab-shp-4-p0-data.png"
+    },
+    {
+      "name": "yr-einstein-lab-r1-cnlab-shp.json",
+      "bytes": 6014,
+      "sha256": "4ef0b3bf8b6b727bc324bd7cef34e27c1a488062b21566c74d9cd6c2b6594bd2",
+      "route": "/local-campaign/yr/all01umd/yr-einstein-lab-r1-cnlab-shp.json"
+    },
+    {
+      "name": "environment-family-yr-einstein-lab-r1.json",
+      "bytes": 600,
+      "sha256": "e829e2b94a4d1f8ba13f932a15e7c4823f914cb7807147fee52b738c40f9ea28",
+      "route": "/local-campaign/yr/all01umd/environment-family-yr-einstein-lab-r1.json"
+    }
+  ],
+  "contractBeforeSha256": "9e9f72708f8a56671253a81a920c15782fb7fc2f66e9fbee10c29c210971b13a",
+  "contractAfterSha256": "6294f10b60080e36992bba0bbc6a96bf35733b7e38360c31fb9f2a20c19497f8",
+  "existingRootSelectorChanges": {},
+  "acceptedPayloadsReplaced": 0,
+  "ownershipCorrection": null,
+  "artCorrection": null,
+  "bridgeCorrection": null,
+  "policy": "Independent densities, original shadows/state timing and existing fixed budgets; complete-family fallback retained.",
+  "nativeValidation": {
+    "status": "PASS_2X_4X_ALL_FOUR_SOURCE_STATES_OWNER_COLORS_AND_NATIVE_SHADOWS",
+    "evidence": [
+      "../project-history/yr-campaign-implementation-20261104/Evidence/einstein-lab-native-2x-r1.json.gz",
+      "../project-history/yr-campaign-implementation-20261104/Evidence/einstein-lab-native-4x-r1.json.gz"
+    ],
+    "contracts": {
+      "passed": 3,
+      "assertions": 43
+    },
+    "preservedAcceptedDensityFrames": 6,
+    "newAuthoredStates": 1,
+    "userVisualAcceptance": "PENDING"
+  }
+}

@@ -41,7 +41,7 @@ test('absent optional data exposes availability without exposing arbitrary files
         for (const [key, value] of Object.entries(hd.availability)) {
             if (key !== 'sovietUnits') expect(value).toBe('Original fallback');
         }
-        expect(hd.availability.sovietUnits).toMatch(/^0 of 24 vanilla additions available; 0 of 5 YR additions available/);
+        expect(hd.availability.sovietUnits).toMatch(/^0 of 24 vanilla additions available; 0 of 7 YR additions available/);
         expect(hd.availability.sovietUnits).toContain('campaign-only LUNR');
         expect(hd.availability.sovietUnits).toEndWith('others use Original.');
         const handler = createHandler({ appRoot: root, appFiles: new Set(), getProfile: () => ({ root, ...hd }), getError: () => '' });

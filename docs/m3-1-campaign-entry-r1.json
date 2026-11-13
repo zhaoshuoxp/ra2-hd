@@ -1,0 +1,613 @@
+{
+  "status": "M3_1_CAMPAIGN_ENTRY_R1_MAC_TECHNICAL_AND_DESKTOP_DELIVERY_PASS_USER_TEST_PENDING",
+  "recordedAt": "2026-10-24T04:17:18.108Z",
+  "source": {
+    "runtimeHead": "83a4d9b2d27d154fee876432ce4e3d08d32183c7",
+    "acceptedBaseHead": "bc0e41defd68250d0ed40686b4b1c51b345b5800",
+    "changedRuntimePaths": [
+      "desktop/main.mjs",
+      "public/res/locale/en-US.json",
+      "public/res/locale/zh-CN.json",
+      "public/res/locale/zh-TW.json",
+      "src/gui/campaign/CampaignSelection.tsx",
+      "src/gui/screen/mainMenu/MainMenuRootScreen.ts",
+      "src/gui/screen/mainMenu/campaign/CampaignScreen.ts"
+    ],
+    "unchangedGameDataAndSaveSchema": true,
+    "harness": {
+      "path": "scripts/m3-1/campaign-entry-native.mjs",
+      "bytes": 16515,
+      "sha256": "6048970215240ab1da11a72a8e449c33d80db2299f4df68602ac11aa65b4c79d"
+    },
+    "recorder": {
+      "path": "scripts/m3-1/record-entry-repair.mjs",
+      "bytes": 11614,
+      "sha256": "a7d3ee74bc118e52a60a16dd5753b6c802e3a72725fb1feb7a17595ea6755eb6"
+    }
+  },
+  "report": {
+    "userScreenshot": {
+      "path": ".artifacts/m3-1/campaign-entry-r1/user-report.png",
+      "bytes": 1985802,
+      "sha256": "6c724b6411cc402bd3ab75492d66e9afee90befc9734195bda68a7071c7cd32b"
+    },
+    "reproduction": {
+      "path": ".artifacts/m3-1/campaign-entry-repro-r1/report.json",
+      "bytes": 1314,
+      "sha256": "5694ba21c35d21c433613d526fae60bfd7e83338ac445a6040077c1c5c32e028"
+    },
+    "finding": "The retained delivered app reproduces the blank unavailable campaign page under Yuri's Revenge. The same app enters Soviet 01 under RA2. The user screenshot alone does not establish the selected edition or executable.",
+    "resolution": "The R1 campaign app opens RA2 faction selection directly. The unsupported edition offers central and sidebar buttons which reload RA2 and open its faction selection. The entry route is consumed so normal Back behavior is preserved."
+  },
+  "preservation": {
+    "verifiedUnchangedBundledResourceFiles": 14004,
+    "campaignManifest": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/campaign-entry-r1/Relocated Manual Test/RA2-HD-M3.1-Mac-arm64-20261023-R1/Red Alert 2 HD M3.1 Campaign R1.app/Contents/Resources/GameResources/campaign/ra2/sov01t/manifest.json",
+      "bytes": 12123,
+      "sha256": "8400a42032b4de312cab9a3c7a083373fd8f113f131d91d1adadc86d48942596"
+    },
+    "map": {
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/campaign-entry-r1/Relocated Manual Test/RA2-HD-M3.1-Mac-arm64-20261023-R1/Red Alert 2 HD M3.1 Campaign R1.app/Contents/Resources/GameResources/campaign/ra2/sov01t/sov01t.map",
+      "bytes": 184260,
+      "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f"
+    },
+    "priorArchive": {
+      "path": ".artifacts/m3-1/mac-delivery/RA2-HD-M3.1-Mac-arm64-20261023.zip",
+      "bytes": 5705145891,
+      "sha256": "5ff0cd146eecef508fb0688af21c3dcdaab84cc616eb24fdddab8f1b3bcb9993"
+    },
+    "acceptedBaseReview": {
+      "path": ".artifacts/m3-1/M3.1-Embedded-Review.html",
+      "bytes": 17755438,
+      "sha256": "6fc934a851f7be5e3a4e9b402d4e31e7a22936d18b85f6694e5c7a53a61221f5"
+    },
+    "priorPackageInventorySha256": "f566d1728faa9c6dec005282fcf2177523436b54daf9016120a8ad250b703e3a",
+    "defaultProfile": "/Users/Aone/Library/Application Support/RA2 HD M3.1 Campaign Test 20261023",
+    "savePreservation": {
+      "exists": false,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "unchanged": true
+    },
+    "note": "No profile or save is shipped. The existing M3.1 profile is retained; registration binds to the app's own relocated resources. Its manual slot was empty and stayed empty; this default-profile check does not exercise migration of an existing save. Other apps and profiles are untouched."
+  },
+  "validation": {
+    "focusedTests": {
+      "cases": 5,
+      "assertions": 47,
+      "failures": 0,
+      "log": {
+        "path": ".artifacts/m3-1/campaign-entry-tests-r1.log",
+        "bytes": 779,
+        "sha256": "ea0d209954baa78630a6a7560f7319d24cc1d3f8bf2d1cabd649b225aa57b6d4"
+      }
+    },
+    "entryTypecheck": {
+      "status": "PASS",
+      "log": {
+        "path": ".artifacts/m3-1/campaign-entry-typecheck-r1.log",
+        "bytes": 39,
+        "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+      }
+    },
+    "stagedNative": "PASS_PACKAGED_ENTRY_EDITION_RECOVERY_AND_PLAYABLE_MISSION",
+    "actualDesktopExtractedNative": "PASS_PACKAGED_ENTRY_EDITION_RECOVERY_AND_PLAYABLE_MISSION",
+    "defaultProfile": "PASS_DEFAULT_PROFILE_DIRECT_ENTRY_AND_SAVE_PRESERVATION",
+    "cases": [
+      {
+        "name": "Direct RA2 campaign startup",
+        "size": [
+          1280,
+          928
+        ],
+        "dpr": 2,
+        "density": "2"
+      },
+      {
+        "name": "Window 1280x900",
+        "size": [
+          1280,
+          900
+        ],
+        "dpr": 2,
+        "density": "2"
+      },
+      {
+        "name": "Window 1774x1163",
+        "size": [
+          1774,
+          930
+        ],
+        "dpr": 2,
+        "density": "2"
+      },
+      {
+        "name": "Application fullscreen",
+        "size": [
+          1920,
+          1080
+        ],
+        "dpr": 2,
+        "density": "2"
+      },
+      {
+        "name": "YR central button returns to RA2 selection",
+        "size": [
+          1280,
+          771
+        ],
+        "dpr": 2,
+        "density": "2"
+      },
+      {
+        "name": "YR sidebar button returns to RA2 selection",
+        "size": [
+          1280,
+          771
+        ],
+        "dpr": 2,
+        "density": "2"
+      },
+      {
+        "name": "Original faction menu reentry",
+        "size": [
+          1280,
+          771
+        ],
+        "dpr": 2,
+        "density": "1"
+      },
+      {
+        "name": "HD faction menu reentry",
+        "size": [
+          1280,
+          771
+        ],
+        "dpr": 2,
+        "density": "2"
+      },
+      {
+        "name": "Abort returns to campaign without entry loop",
+        "size": [
+          1280,
+          771
+        ],
+        "dpr": 2,
+        "density": "2"
+      }
+    ],
+    "fullscreen": {
+      "id": "fullscreen",
+      "width": 3840,
+      "height": 2160,
+      "fullscreen": true,
+      "choices": [
+        {
+          "id": "1280x720",
+          "label": "1280 × 720 (window)",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "id": "1600x900",
+          "label": "1600 × 900 (window)",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "id": "1920x1080",
+          "label": "1920 × 1080 (window)",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": "2560x1440",
+          "label": "2560 × 1440 (window)",
+          "width": 2560,
+          "height": 1440
+        },
+        {
+          "id": "fullscreen",
+          "label": "3840 × 2160 (full screen)"
+        }
+      ]
+    },
+    "intro": {
+      "dimensions": [
+        640,
+        480
+      ],
+      "currentTime": 0.516271,
+      "audioDecodedBytes": 12856
+    },
+    "loading": {
+      "density": "2",
+      "size": [
+        1600,
+        1040
+      ],
+      "ui": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 6918144,
+        "decodedCpuBytes": 0,
+        "gpuTextureBytesUpperBound": 0,
+        "transitionGpuBytes": 0,
+        "transitionCpuCanvasBytes": 0,
+        "domImageGpuBytesUpperBound": 6918144,
+        "domImageDecodedCpuBytesUpperBound": 13312000,
+        "textures": 0,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      }
+    },
+    "opening": {
+      "tick": 1,
+      "diagnostic": false,
+      "commands": 0,
+      "bridgeExplosions": [
+        {
+          "tick": 0,
+          "section": "Actions",
+          "key": "0823BDEC",
+          "index": 0,
+          "opcode": 63
+        },
+        {
+          "tick": 0,
+          "section": "Actions",
+          "key": "0823BDEC",
+          "index": 1,
+          "opcode": 63
+        },
+        {
+          "tick": 0,
+          "section": "Actions",
+          "key": "0823BDEC",
+          "index": 2,
+          "opcode": 63
+        },
+        {
+          "tick": 0,
+          "section": "Actions",
+          "key": "0823BDEC",
+          "index": 3,
+          "opcode": 63
+        },
+        {
+          "tick": 0,
+          "section": "Actions",
+          "key": "0823BDEC",
+          "index": 4,
+          "opcode": 63
+        },
+        {
+          "tick": 0,
+          "section": "Actions",
+          "key": "0823BDEC",
+          "index": 5,
+          "opcode": 63
+        },
+        {
+          "tick": 0,
+          "section": "Actions",
+          "key": "0823BDEC",
+          "index": 6,
+          "opcode": 63
+        },
+        {
+          "tick": 0,
+          "section": "Actions",
+          "key": "0823BDEC",
+          "index": 7,
+          "opcode": 63
+        }
+      ],
+      "brokenBridges": 2,
+      "unlockedAtTick": 1395,
+      "inputLocked": false
+    },
+    "realInput": {
+      "tick": 1468,
+      "commands": [
+        {
+          "tick": 1423,
+          "player": 0,
+          "type": 8,
+          "data": [
+            113,
+            7,
+            0,
+            0,
+            114,
+            7,
+            0,
+            0,
+            115,
+            7,
+            0,
+            0,
+            116,
+            7,
+            0,
+            0,
+            117,
+            7,
+            0,
+            0,
+            118,
+            7,
+            0,
+            0,
+            119,
+            7,
+            0,
+            0,
+            120,
+            7,
+            0,
+            0,
+            121,
+            7,
+            0,
+            0,
+            122,
+            7,
+            0,
+            0,
+            123,
+            7,
+            0,
+            0,
+            124,
+            7,
+            0,
+            0,
+            125,
+            7,
+            0,
+            0,
+            126,
+            7,
+            0,
+            0,
+            127,
+            7,
+            0,
+            0,
+            128,
+            7,
+            0,
+            0,
+            129,
+            7,
+            0,
+            0,
+            130,
+            7,
+            0,
+            0,
+            131,
+            7,
+            0,
+            0,
+            132,
+            7,
+            0,
+            0,
+            133,
+            7,
+            0,
+            0
+          ]
+        },
+        {
+          "tick": 1452,
+          "player": 0,
+          "type": 9,
+          "data": [
+            5,
+            0
+          ]
+        }
+      ],
+      "glError": 0
+    },
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "failedResources": 0,
+    "retainedObserverFailures": [
+      {
+        "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r1",
+        "reason": "Observer requested macOS Spaces fullscreen instead of the application's borderless fullscreen control."
+      },
+      {
+        "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r2",
+        "reason": "Observer inspected tick zero before executing the opening trigger. The final observer advances the first original turn before checking initialization."
+      }
+    ],
+    "applicationChangedBetweenNativeAttempts": false,
+    "scope": "Fresh UI launch and real keyboard orders after accelerated opening simulation. Full-mission completion and engineer repair reuse their matched accepted baseline evidence; no new full physical-input run is claimed."
+  },
+  "delivery": {
+    "status": "PASS_DESKTOP_COPY_HASH_MATCH",
+    "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261023-R1.zip",
+    "bytes": 5705323481,
+    "sha256": "042fc46991b963e13a9e5fdae189b8ae1f3e18b1c990466da832a6727a027574",
+    "entries": 14536,
+    "inventorySha256": "de1e95d53bd82e0eda5f488ae60962421d913c1eac6036f5fc42d8e993fb8107",
+    "sourceArchive": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/campaign-entry-r1/RA2-HD-M3.1-Mac-arm64-20261023-R1.zip",
+    "archive": {
+      "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261023-R1.zip",
+      "bytes": 5705323481,
+      "sha256": "042fc46991b963e13a9e5fdae189b8ae1f3e18b1c990466da832a6727a027574"
+    },
+    "app": "Red Alert 2 HD M3.1 Campaign R1.app",
+    "signature": "PASS_DEEP_STRICT_AD_HOC_LOCAL_TEST"
+  },
+  "statusBoundaries": {
+    "acceptedM3Base": "USER_ACCEPTED_UNCHANGED",
+    "entryCorrectionUserAcceptance": "PENDING",
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "mainIntegration": "NOT_REQUESTED",
+    "remotePush": "NOT_REQUESTED",
+    "cleanup": "NOT_REQUESTED"
+  },
+  "evidence": [
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/stage/stage.json",
+      "bytes": 2457,
+      "sha256": "cf50490edcc6b72faaa8a82e3b211be9c5301d6324930c6d6656a040f064e60b"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/stage/inventory.json",
+      "bytes": 4341644,
+      "sha256": "de1e95d53bd82e0eda5f488ae60962421d913c1eac6036f5fc42d8e993fb8107"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/archive.json",
+      "bytes": 395,
+      "sha256": "cbd91e1f1fa85513631bdbd0d83f5670d2f7238adb5ff5416155d5cd030c22f9"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/desktop-delivery.json",
+      "bytes": 469,
+      "sha256": "995c0677ed75aae2b99672c0834267d3e4d2bac5d26bc16d15b0dbc67fc09808"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/extracted.json",
+      "bytes": 632,
+      "sha256": "d6188ba826f634d5e996c98bc47e01b5450b83d5a1ea4c1af4b8ac91b9bf955c"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r1/report.json",
+      "bytes": 7196,
+      "sha256": "da3011cecc3ca0bad46e4feba4c68eb03095277880055bc290347a6441b89d45"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r1/harness.mjs",
+      "bytes": 16154,
+      "sha256": "304b6c6fcff4213640b7dbf04a4b5104f6aadabc9cf8f596775cee55a83d3bd3"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r2/report.json",
+      "bytes": 17040,
+      "sha256": "72c1808176a2a7e058b05876c6e167cc180309fa9f61df66a8aaf9f7152214ea"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r2/harness.mjs",
+      "bytes": 16308,
+      "sha256": "aa38b84321424ccfc3994066b2388671022d21ce130a896592d910902de41143"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r3/report.json",
+      "bytes": 21071,
+      "sha256": "dca649d8f76b28754940a263f3607d100b09672eaa2ea9cba029b302c4122816"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-desktop-r1/report.json",
+      "bytes": 21137,
+      "sha256": "d62f501be5b5b82abb001c8e1719365bdaf1c25a2636ad80411dfa0e849444cf"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-default-r1/report.json",
+      "bytes": 5599,
+      "sha256": "3231feefb683a89b9d705fd5b0f91d07361b24317da87f058ee6a6c28272321e"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r3/01-direct-ra2-faction-menu.png",
+      "bytes": 3054721,
+      "sha256": "eb6fe8917ee6dac42337336b3af4eee2bde30d110ed67db8c51e238d96ca1b7a"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r3/02-window-1280x900.png",
+      "bytes": 2980852,
+      "sha256": "cb462876714b1a13c4a225e7d92b8b585ab07e76465ca78f429667d91f2f9cc1"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r3/02-window-1774x1163.png",
+      "bytes": 3181211,
+      "sha256": "1c79557466ef4c1de36d63a329a2a02b764a502e2d5db784eb795b3c9b13054f"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r3/03-application-fullscreen.png",
+      "bytes": 3934974,
+      "sha256": "9b7d9af9198c921b5bd251bb4ace080e614fd26b3501c206ba02f3e6827a108d"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r3/04-yr-direct-ra2-entry.png",
+      "bytes": 859571,
+      "sha256": "f4b90710398be02c46e3fb2315ff7e25f46fd177c71dc2a52cb9d61bee7a6f52"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r3/05-original-faction-menu.png",
+      "bytes": 1392595,
+      "sha256": "2240069eaf2800695ce03019736ce9ac55d5a044f4b4f93bd79756b37c638668"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r3/06-original-introduction.png",
+      "bytes": 1356170,
+      "sha256": "ec19087fc114080f3b23716461fb411d467db6c05a2a6c1f940d4d1151334876"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r3/07-hd-soviet01-loading.png",
+      "bytes": 1983488,
+      "sha256": "b03c5a72313724b5d833e5eb10241af1e029ac7a31aad520dbe23af977e8662f"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-stage-r3/08-playable-soviet01-real-keyboard-order.png",
+      "bytes": 6638168,
+      "sha256": "984c0e262c0481ac2dbff0fa73a6a3b321115f45ac9c31a732d590f97f0f6d0a"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-desktop-r1/01-direct-ra2-faction-menu.png",
+      "bytes": 3054887,
+      "sha256": "b5db50ebb2aee95f88afd574e10ce7e756ab7777db36b612bd1a59f5d9c4c803"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-desktop-r1/02-window-1280x900.png",
+      "bytes": 2981012,
+      "sha256": "3fdfeb87bbb0c514246c8197da189269fc3a9f2f0c6d889fb28354ca452d2b7f"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-desktop-r1/02-window-1774x1163.png",
+      "bytes": 3181167,
+      "sha256": "55d1476926f4c544edf88d8c2e0e6dd91874980026f84705569356b29336cf0b"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-desktop-r1/03-application-fullscreen.png",
+      "bytes": 3935466,
+      "sha256": "49c442aaa8a4b2970f9d404c761e3f4f5a9ad03556162629ddd29a1e720db011"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-desktop-r1/04-yr-direct-ra2-entry.png",
+      "bytes": 859571,
+      "sha256": "f4b90710398be02c46e3fb2315ff7e25f46fd177c71dc2a52cb9d61bee7a6f52"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-desktop-r1/05-original-faction-menu.png",
+      "bytes": 1392328,
+      "sha256": "543265bcc62e1395cb5a17e314bd0901afa5957081b39724769aadd7162f491c"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-desktop-r1/06-original-introduction.png",
+      "bytes": 1451819,
+      "sha256": "d1214bae28fe3beae150ef1594a44ca2101447b67ae07aae258bb56ec72093a9"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-desktop-r1/07-hd-soviet01-loading.png",
+      "bytes": 1983488,
+      "sha256": "b03c5a72313724b5d833e5eb10241af1e029ac7a31aad520dbe23af977e8662f"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-desktop-r1/08-playable-soviet01-real-keyboard-order.png",
+      "bytes": 6637877,
+      "sha256": "8ee9b56dd1db0d7819fcca44e1fac1f41dbc920893589daa865d8cc322baecc4"
+    },
+    {
+      "path": ".artifacts/m3-1/campaign-entry-r1/native-default-r1/01-direct-ra2-faction-menu.png",
+      "bytes": 3054973,
+      "sha256": "8c18c2fa0e1ebf452a03afd23936218dd4df3a9e785269f7c88fc5428e2fa984"
+    }
+  ]
+}

@@ -3,9 +3,10 @@ import yuriCatalog from '../../../../desktop/yuri-unit-contracts.json';
 import environmentCatalog from '../../../../desktop/environment-hd-contract.json';
 import snowEnvironmentCatalog from '../../../../desktop/environment-snow-hd-contract.json';
 import urbanEnvironmentCatalog from '../../../../desktop/environment-urban-hd-contract.json';
+import campaignVehicleCatalog from '../../../../desktop/yr-campaign-vehicle-contracts.json';
 
 export type VxlUnitContract = { hash: string; members: string[]; edition?: 'yr'; density?: 2 | 4;
-    authoringTheater?: 'TEMPERATE' | 'SNOW' | 'URBAN'; theaters?: string[];
+    authoringTheater?: 'TEMPERATE' | 'SNOW' | 'URBAN' | 'NEWURBAN'; theaters?: string[];
     variants?: { hash: string; density: 2 | 4; path: string }[] };
 const snowVxlFamilies = (snowEnvironmentCatalog as unknown as { vxl?: Record<string, VxlUnitContract> }).vxl ?? {};
 const urbanVxlFamilies = (urbanEnvironmentCatalog as unknown as { vxl?: Record<string, VxlUnitContract> }).vxl ?? {};
@@ -18,6 +19,7 @@ export const vxlUnitFamilies: Record<string, VxlUnitContract> = {
     ...environmentCatalog.vxl as Record<string, VxlUnitContract>,
     ...snowVxlFamilies,
     ...urbanVxlFamilies,
+    ...campaignVehicleCatalog.vxl as Record<string, VxlUnitContract>,
     BORIS: { edition: 'yr', hash: '9886a08e99d141884b59e272bdde8c89033293c7eccdfbe6961a876ce2204e7a', members: ['bpln.vxl'] },
     SCHP: {
         edition: 'yr', hash: '852c0661f770c427ddeca2b49823f77e981226feab3abdbb220d962ffbc83fa7',
@@ -60,8 +62,12 @@ export const vxlUnitFamilies: Record<string, VxlUnitContract> = {
         members: ['htk.vxl', 'htktur.vxl', 'htkbarl.vxl'],
     },
     APOC: {
-        hash: '9f0d08ad6f67ec38679d36d3b3aab8d3d5ac8aecd618332291e8cbac0ecfc682',
+        hash: '1ffe1d81481327a4fecf47f3ea4b47ca4008bf8e2720b5926cea7a802667cec8', density: 4,
         members: ['mtnk.vxl', 'mtnktur.vxl', 'mtnkbarl.vxl'],
+        variants: [
+            { path: 'hd-packs/soviet-apoc-vxl/r7-upper-seated-2x/manifest.json', hash: '54fcd7c20f3dc81bda2ce8adad57ae0445c4dbaf15ad448935ccc1e4800a3f89', density: 2 },
+            { path: 'hd-packs/soviet-apoc-vxl/r7-upper-seated-4x/manifest.json', hash: '1ffe1d81481327a4fecf47f3ea4b47ca4008bf8e2720b5926cea7a802667cec8', density: 4 },
+        ],
     },
     SMCV: {
         hash: '0c93d425f9393b734c28f20dc019589029a73d21f506d5319a1d7069ee853328',

@@ -6,6 +6,8 @@ import yuriUnits from './yuri-unit-contracts.json' with { type: 'json' };
 import environmentUnits from './environment-hd-contract.json' with { type: 'json' };
 import snowEnvironmentUnits from './environment-snow-hd-contract.json' with { type: 'json' };
 import urbanEnvironmentUnits from './environment-urban-hd-contract.json' with { type: 'json' };
+import campaignVehicleUnits from './yr-campaign-vehicle-contracts.json' with { type: 'json' };
+import campaignNpcs from './yr-campaign-npc-contracts.json' with { type: 'json' };
 import turretContracts from './building-turret-contracts.json' with { type: 'json' };
 import { registerUiResources } from './ui-profile.mjs';
 import { registerTerrainResources } from './terrain-profile.mjs';
@@ -55,12 +57,19 @@ export const vxlUnitIdentities = {
     ...environmentUnits.vxl,
     ...snowEnvironmentUnits.vxl,
     ...urbanEnvironmentUnits.vxl,
+    ...campaignVehicleUnits.vxl,
     BORIS: { edition: 'yr', path: 'hd-packs/yr-soviet-boris-vxl/owner-r3/manifest.json', hash: '9886a08e99d141884b59e272bdde8c89033293c7eccdfbe6961a876ce2204e7a' },
     SCHP: { edition: 'yr', path: 'hd-packs/yr-soviet-schp-vxl/mount-r6/manifest.json', hash: '852c0661f770c427ddeca2b49823f77e981226feab3abdbb220d962ffbc83fa7' },
     DRED: { path: 'hd-packs/soviet-dred-vxl/owner-r3/manifest.json', hash: '63b20f0fef66a5bddf8869879ce05a50dc9f927554e24964fc55080480535157' },
     V3: { path: 'hd-packs/soviet-v3-vxl/owner-r3/manifest.json', hash: '2cb3eaff6dbad7ea64042636eaa984160bbc04b78e038e5175a0b8d223f4bd5f' },
     HARV: { path: 'hd-packs/soviet-harv-vxl/owner-r3/manifest.json', hash: 'be64b4adffdd84ca7bb61e5ca49f9b0b0cde90605267ef0c77b876a361284481' },
-    APOC: { path: 'hd-packs/soviet-apoc-vxl/owner-r3/manifest.json', hash: '9f0d08ad6f67ec38679d36d3b3aab8d3d5ac8aecd618332291e8cbac0ecfc682' },
+    APOC: {
+        path: 'hd-packs/soviet-apoc-vxl/r7-upper-seated-4x/manifest.json', hash: '1ffe1d81481327a4fecf47f3ea4b47ca4008bf8e2720b5926cea7a802667cec8', density: 4,
+        variants: [
+            { path: 'hd-packs/soviet-apoc-vxl/r7-upper-seated-2x/manifest.json', hash: '54fcd7c20f3dc81bda2ce8adad57ae0445c4dbaf15ad448935ccc1e4800a3f89', density: 2 },
+            { path: 'hd-packs/soviet-apoc-vxl/r7-upper-seated-4x/manifest.json', hash: '1ffe1d81481327a4fecf47f3ea4b47ca4008bf8e2720b5926cea7a802667cec8', density: 4 },
+        ],
+    },
     HTK: { path: 'hd-packs/soviet-htk-vxl/owner-r3/manifest.json', hash: '83cb65389ffc700aa295ab4c891307672837c772671af9baeac2dca14016c2a2' },
     TTNK: { path: 'hd-packs/soviet-ttnk-vxl/owner-r3/manifest.json', hash: 'bac440f0b2b634e2795cd7c09fd7662565f48f997c8287c57d27ab37ca51c5ae' },
     SAPC: { path: 'hd-packs/soviet-sapc-vxl/owner-r3/manifest.json', hash: 'ee981f1ca23e3ee8e945e1d2cbeca7953306d53d7cf952b77eb14407b942c206' },
@@ -71,6 +80,10 @@ export const vxlUnitIdentities = {
     DTRUCK: { path: 'hd-packs/soviet-dtruck-vxl/owner-r3/manifest.json', hash: 'eba4572bc4d8cd575a9d668e218133c28fa82cbc6e403ebf81b0b4cbf0a858c5' },
 };
 export const sovietUnitIdentities = {
+    STLN: { edition: 'yr', familyPath: 'hd-packs/yr-hollywood-heroes-stln-family/yr-hollywood-r1/family.json',
+        hash: 'b7c750a0aff473d9c2d3d505707e3fe042d713bdd4186e35c9cf88c85eb58a68' },
+    ARND: { edition: 'yr', familyPath: 'hd-packs/yr-hollywood-heroes-arnd-family/yr-hollywood-r1/family.json',
+        hash: '7060c3038d45ce1aeb095a151b9772ae3bce130b4ec09fb5d851d4db80a32c05' },
     LUNR: { edition: 'yr', familyPath: 'hd-packs/lunar-infantry-family/1/family.json',
         hash: '85a3f1b904063107edf63aa29a828794f965dc408e3434982fbb0a5281013afa' },
     BORIS: { edition: 'yr', familyPath: 'hd-packs/yr-soviet-boris-family/owner-r3/family.json',
@@ -106,7 +119,7 @@ export const sovietUnitIdentities = {
     SENGINEER: { familyPath: 'hd-packs/soviet-sengineer-family/owner-r3/family.json',
         hash: '32c1feee54d370d8a70ea088b7ae3eedc11e65a5d946e1b93c99aacf99620aa9' },
 };
-export const unitIdentities = { ...sovietUnitIdentities, ...alliedUnits.shp };
+export const unitIdentities = { ...sovietUnitIdentities, ...alliedUnits.shp, ...campaignNpcs.shp };
 async function pinnedFile(root, relative, hash, maxBytes) {
     const file = await safeFile(root, relative);
     if ((await fs.stat(file)).size > maxBytes) throw Error('Optional resource exceeds size limit');
@@ -194,7 +207,8 @@ export async function registerHdResources(root, record = () => {}, { deferPageHa
         if (entry.blockedReason) throw Error(entry.blockedReason);
         const { bytes } = await pinnedFile(root, entry.familyPath, entry.hash, 16384);
         const family = JSON.parse(bytes);
-        if (family.identity !== identity || family.theater !== 'TEMPERATE') throw Error('Unit family identity mismatch');
+        if (family.identity !== identity || family.theater !== (entry.authoringTheater ?? 'TEMPERATE'))
+            throw Error('Unit family identity mismatch');
         const packs = [];
         for (const member of family.members) {
             const pack = await validateHdPack(root, member.packId, member.revision, packOptions);
@@ -218,7 +232,8 @@ export async function registerHdResources(root, record = () => {}, { deferPageHa
         const bindings = install(key, packs, densities);
         for (const [route, file] of voxel.routes) routes.set(route, file);
         selections.set(`/local-hd/${key}-selection.json`, { familyHash: entry.hash, rulesIdentity: identity, members: bindings });
-        if (!alliedUnits.shp[identity] && !entry.selection && availability[key].startsWith('HD available'))
+        if (!alliedUnits.shp[identity] && !campaignNpcs.shp[identity] && !entry.selection
+            && availability[key].startsWith('HD available'))
             entry.edition === 'yr' ? availableYrUnits++ : availableUnits++;
     });
     for (const [identity, entry] of Object.entries(vxlUnitIdentities)) await attempt(`unit-${identity.toLowerCase()}`, async () => {
@@ -227,11 +242,12 @@ export async function registerHdResources(root, record = () => {}, { deferPageHa
         for (const [route, file] of pending.routes) routes.set(route, file);
         availability[`unit-${identity.toLowerCase()}`] = `HD available at ${pending.densities[0]}x`;
         if (!alliedUnits.vxl[identity] && !yuriUnits.vxl[identity] && !environmentUnits.vxl[identity]
-            && !snowEnvironmentUnits.vxl?.[identity] && !urbanEnvironmentUnits.vxl?.[identity])
+            && !snowEnvironmentUnits.vxl?.[identity] && !urbanEnvironmentUnits.vxl?.[identity]
+            && !campaignVehicleUnits.vxl[identity])
             entry.edition === 'yr' ? availableYrUnits++ : availableUnits++;
         record({ type: 'hd-registered', family: `unit-${identity.toLowerCase()}`, hash: entry.hash });
     });
-    availability.sovietUnits = `${availableUnits} of 24 vanilla additions available; ${availableYrUnits} of 5 YR additions available, including campaign-only LUNR (source-matched theaters); others use Original.`;
+    availability.sovietUnits = `${availableUnits} of 24 vanilla additions available; ${availableYrUnits} of 7 YR additions available, including campaign-only LUNR, ARND and STLN (source-matched theaters); others use Original.`;
     await attempt('conscript', async () => {
         const pack = await validateHdPack(root, 'conscript-authored', 'owner-r3', packOptions);
         if (pack.sha256 !== hdIdentities.conscript) throw Error('Unrecognized Conscript manifest');

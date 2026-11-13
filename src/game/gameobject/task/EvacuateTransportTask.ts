@@ -99,6 +99,10 @@ export class EvacuateTransportTask extends Task {
     forceEvac(): void {
         this.evacState = EvacuationState.All;
     }
+    canUnloadFrom(transport: Transport): boolean {
+        const unit = transport.transportTrait.units.at(-1);
+        return !!unit && !!this.findValidEvacTarget(transport, unit);
+    }
     onStart(transport: Transport): void {
         if (!transport.transportTrait) {
             throw new Error(`Object "${transport.name}" is not a valid transport`);

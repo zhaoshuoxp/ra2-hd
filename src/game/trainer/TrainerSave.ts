@@ -1,13 +1,32 @@
 import { TRAINER_LIMITS, type TrainerCommand } from './TrainerRuntime';
 
 export type SavedTrainerCommand = Exclude<TrainerCommand, { targets: readonly any[] }>
-    | { type: 'heal' | 'protect' | 'unprotect' | 'transfer'; targets: number[] };
+    | { type: 'heal' | 'unprotect' | 'transfer'; targets: number[] }
+    | { type: 'protect'; targets: number[]; retainLimbo?: boolean };
 export interface SavedTrainerEvent { tick: number; phase: 'boundary' | 'tick'; command: SavedTrainerCommand }
 export interface SavedTrainer {
     version: 1;
     enabled: boolean;
     events: SavedTrainerEvent[];
     pending: SavedTrainerCommand[];
+}
+
+export function validSavedTrainer(trainer: SavedTrainer, tick: number): boolean {
+    if (!trainer || trainer.version !== 1 || typeof trainer.enabled !== 'boolean'
+        || !Array.isArray(trainer.events) || trainer.events.length > 2_000_000
+        || !Array.isArray(trainer.pending) || trainer.pending.length > TRAINER_LIMITS.pending
+        || !trainer.enabled && trainer.pending.length > 0
+        || trainer.pending.some(command => !validSavedTrainerCommand(command) || command.type === 'reset')) return false;
+    let previousTick = -1, previousPhase = 'boundary';
+    for (const event of trainer.events) {
+        if (!event || !Number.isSafeInteger(event.tick) || event.tick < previousTick || event.tick > tick
+            || !['boundary', 'tick'].includes(event.phase) || event.tick === tick && event.phase !== 'boundary'
+            || event.tick === previousTick && previousPhase === 'tick' && event.phase === 'boundary'
+            || !validSavedTrainerCommand(event.command)
+            || event.phase === 'boundary' && event.command.type !== 'reset') return false;
+        previousTick = event.tick; previousPhase = event.phase;
+    }
+    return true;
 }
 
 export function serializeTrainerCommand(command: TrainerCommand): SavedTrainerCommand {
@@ -36,6 +55,7 @@ export function validSavedTrainerCommand(command: SavedTrainerCommand): boolean 
             }
         case 'heal': case 'protect': case 'unprotect': case 'transfer': return Array.isArray(command.targets)
             && command.targets.length > 0 && command.targets.length <= TRAINER_LIMITS.targets
+            && (command.type !== 'protect' || command.retainLimbo === undefined || typeof command.retainLimbo === 'boolean')
             && command.targets.every(id => Number.isSafeInteger(id) && id >= 0);
         case 'reveal': case 'ready': case 'clearProtection': case 'reset': return true;
         default: return false;

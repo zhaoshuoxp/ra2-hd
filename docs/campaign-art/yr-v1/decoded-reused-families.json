@@ -1,0 +1,109 @@
+{
+  "schema": "yr-complete-decoded-native-body-aliases-v1",
+  "status": "PASS_THREE_COMPLETE_SOURCE_BODY_ALIASES_NATIVE_2X_4X",
+  "sourceReportSha256": "cf3764925e459f4d7080cea28b7d969fae688e7e7363b46ffeb2f76520f410f2",
+  "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/decoded-alias-applied-r1.json.gz",
+  "families": [
+    {
+      "family": "yr-reuse-desert-gagate-a-v1",
+      "id": "GAGATE_A",
+      "theater": "DESERT",
+      "familyHash": "68304c3a650d69235843d09d24b4b593a525fbd94026e850cf4d758d03e81053",
+      "campaignSources": [
+        {
+          "edition": "yr",
+          "mission": "all04dmd.map",
+          "sha256": "f1621a21e7221c1e475a52dccd4a04bb3125f8a095377c917e2122019f2157b2"
+        }
+      ]
+    },
+    {
+      "family": "yr-reuse-snow-camsc11-v1",
+      "id": "CAMSC11",
+      "theater": "SNOW",
+      "familyHash": "adac1ccb6749636f36bc30bbdd389813b8bd1dfaf75b7618f7fdf750429e5d99",
+      "campaignSources": [
+        {
+          "edition": "yr",
+          "mission": "sov02smd.map",
+          "sha256": "139a7f17a17cefc20d12c21e9221d94ff6e1e8894ac09ab716fc9f6975d5a665"
+        }
+      ]
+    },
+    {
+      "family": "yr-reuse-snow-ctech-v1",
+      "id": "CTECH",
+      "theater": "SNOW",
+      "familyHash": "8f8f495e4c18ad94d1e8066110ad2d96b085a5ea18ca8e910d105d4b68723edc",
+      "campaignSources": [
+        {
+          "edition": "yr",
+          "mission": "sov02smd.map",
+          "sha256": "139a7f17a17cefc20d12c21e9221d94ff6e1e8894ac09ab716fc9f6975d5a665"
+        }
+      ]
+    }
+  ],
+  "copiedPngFiles": 0,
+  "replacedAcceptedPayloads": 0,
+  "userVisualAcceptance": "PENDING",
+  "nativeValidation": {
+    "runs": [
+      {
+        "run": "decoded-desert-gate-native-2x-r4",
+        "status": "PASS_NATIVE_FROZEN_COMPLETE_SHP_DISPLAY_STATES_AND_BOTH_AXES_HD_DENSITY",
+        "frames": 21,
+        "density": 2,
+        "identity": "GAGATE_A"
+      },
+      {
+        "run": "decoded-desert-gate-native-4x-r2",
+        "status": "PASS_NATIVE_FROZEN_COMPLETE_SHP_DISPLAY_STATES_AND_BOTH_AXES_HD_DENSITY",
+        "frames": 21,
+        "density": 4,
+        "identity": "GAGATE_A"
+      },
+      {
+        "run": "decoded-snow-task-object-native-2x-r1",
+        "status": "PASS_NATIVE_FROZEN_COMPLETE_SHP_DISPLAY_STATES_AND_BOTH_AXES_HD_DENSITY",
+        "frames": 3,
+        "density": 2,
+        "identity": "CAMSC11"
+      },
+      {
+        "run": "decoded-snow-task-object-native-4x-r1",
+        "status": "PASS_NATIVE_FROZEN_COMPLETE_SHP_DISPLAY_STATES_AND_BOTH_AXES_HD_DENSITY",
+        "frames": 3,
+        "density": 4,
+        "identity": "CAMSC11"
+      },
+      {
+        "run": "decoded-snow-technician-native-2x-r1",
+        "status": "PASS_NATIVE_ORIGINAL_INFANTRY_COMPLETE_BODY_AND_NATIVE_SHADOW_SLOTS_FROZEN_WORLD_AND_REQUESTED_DENSITY",
+        "frames": 237,
+        "density": 2,
+        "identity": "CTECH"
+      },
+      {
+        "run": "decoded-snow-technician-native-4x-r1",
+        "status": "PASS_NATIVE_ORIGINAL_INFANTRY_COMPLETE_BODY_AND_NATIVE_SHADOW_SLOTS_FROZEN_WORLD_AND_REQUESTED_DENSITY",
+        "frames": 237,
+        "density": 4,
+        "identity": "CTECH"
+      }
+    ],
+    "evidence": [
+      "../project-history/yr-campaign-implementation-20261104/Evidence/decoded-desert-gate-native-2x-r4.json.gz",
+      "../project-history/yr-campaign-implementation-20261104/Evidence/decoded-desert-gate-native-4x-r2.json.gz",
+      "../project-history/yr-campaign-implementation-20261104/Evidence/decoded-snow-task-object-native-2x-r1.json.gz",
+      "../project-history/yr-campaign-implementation-20261104/Evidence/decoded-snow-task-object-native-4x-r1.json.gz",
+      "../project-history/yr-campaign-implementation-20261104/Evidence/decoded-snow-technician-native-2x-r1.json.gz",
+      "../project-history/yr-campaign-implementation-20261104/Evidence/decoded-snow-technician-native-4x-r1.json.gz"
+    ],
+    "scope": "Fresh original placements with a frozen simulation; complete original display slots, target shadows and requested-density GPU sampling. No objective or public lifecycle acceptance."
+  },
+  "additionalSourceEvidence": "../project-history/yr-campaign-implementation-20261104/Evidence/decoded-infantry-applied-r1.json.gz",
+  "contracts": {
+    "passed": 7
+  }
+}

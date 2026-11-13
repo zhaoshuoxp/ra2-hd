@@ -1,0 +1,283 @@
+{
+  "schema": "yr-complete-building-turret-art-v1",
+  "status": "PASS_COMPLETE_ATOMIC_BODY_TURRET_NATIVE_2X_4X_AND_FALLBACK",
+  "families": [
+    {
+      "identity": "CAEAST02",
+      "environmentFamily": "yr-task-newurban-caeast02-v1",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/building-turrets-registration-r1.json",
+      "sourceAttachment": {
+        "family": "CAEAST02",
+        "sources": {
+          "cahead.vxl": "8b4662e02274ecaad9b4e06616484d4d1fd06c9665a39c127da396e86edd5bee",
+          "cahead.hva": "8191fcdc3f02e99e5c84a5e0d15ae6223b29befa649c6f91a404f3752b20f474"
+        },
+        "palette": {
+          "member": "unitubn.pal",
+          "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3"
+        },
+        "variants": {
+          "2": {
+            "sha256": "7ace0006884269df5698116d62452e02e5f5c5c8ace88b725ca8c54dd0fb15fb",
+            "workingBytes": 201002
+          },
+          "4": {
+            "sha256": "039619e719b0b98069b5826be3fc1faf70c5ad3e86ebaf40644ea1e7d9ee4fc2",
+            "workingBytes": 672410
+          }
+        },
+        "sourceScope": {
+          "campaignSources": [
+            {
+              "edition": "yr",
+              "mission": "sov05umd.map",
+              "sha256": "22518e8b4a86331a9172048e10de13b45c2826ea4fdf4d2203b58994b897761b"
+            }
+          ]
+        }
+      },
+      "nativeValidation": [
+        {
+          "density": 2,
+          "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/cahead-complete-native-2x-r2.json.gz",
+          "poses": 11,
+          "ownerMaterial": {
+            "changedPixels": 0,
+            "changedAlpha": 0,
+            "originalOwnershipUnchanged": true
+          },
+          "allocation": {
+            "density": 2,
+            "worldChargeBytes": 2784529,
+            "gpuBytes": 1501844,
+            "loadingPeakBytes": 3350331,
+            "restoreWorkingBytes": 364800,
+            "retainedCpuBytes": 1282685,
+            "attempts": [],
+            "turret": {
+              "family": "CAEAST02",
+              "density": 2,
+              "headings": 8,
+              "gpuBytes": 1024004,
+              "retainedCpuBytes": 1024004
+            },
+            "members": [
+              "cneast02.shp"
+            ],
+            "status": "PUBLISHED_COMPLETE_FAMILY"
+          }
+        },
+        {
+          "density": 4,
+          "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/cahead-complete-native-4x-r1.json.gz",
+          "poses": 11,
+          "ownerMaterial": {
+            "changedPixels": 0,
+            "changedAlpha": 0,
+            "originalOwnershipUnchanged": true
+          },
+          "allocation": {
+            "density": 4,
+            "worldChargeBytes": 10932148,
+            "gpuBytes": 5893992,
+            "loadingPeakBytes": 12987534,
+            "restoreWorkingBytes": 1382976,
+            "retainedCpuBytes": 5038156,
+            "attempts": [],
+            "turret": {
+              "family": "CAEAST02",
+              "density": 4,
+              "headings": 8,
+              "gpuBytes": 4096004,
+              "retainedCpuBytes": 4096004
+            },
+            "members": [
+              "cneast02.shp"
+            ],
+            "status": "PUBLISHED_COMPLETE_FAMILY"
+          }
+        }
+      ],
+      "nativeFallback": "../project-history/yr-campaign-implementation-20261104/Evidence/cahead-native-fallback-4x-r1.json.gz",
+      "preservedAcceptedPedestal": false,
+      "copiedAcceptedPngFiles": 0,
+      "replacedAcceptedPayloads": 0,
+      "ordinaryCombat": {
+        "status": "PASS_NATIVE_ORDINARY_SOURCE_ATTACK_COMPLETE_HD_BUST_DESTRUCTION_AND_RUBBLE",
+        "density": 4,
+        "difficulty": "easy",
+        "semanticsVersion": 38,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/cahead-original-combat-4x-r1.json.gz",
+        "tick": 51105,
+        "ordinaryAction": "Visible original Yuri bust attacked by an original paid Kirov after exact legitimate source-checkpoint restoration.",
+        "result": {
+          "tick": 51105,
+          "health": 0,
+          "destroyed": true,
+          "turretVisible": false,
+          "activeHdTurret": true,
+          "bodyVisible": false,
+          "rubbleVisible": true,
+          "rubbleFrame": 3,
+          "rubbleGpu": true,
+          "rubbleDensity": 4,
+          "glError": 0
+        },
+        "qualification": "Actual original damage and retained rubble, with the stored interpreter policy. Separate from a fresh public start and turret firing at ground opponents."
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "identity": "CAOUTP",
+      "environmentFamily": "snow-caoutp",
+      "theater": "SNOW",
+      "registration": "docs/campaign-art/yr-v1/building-turrets-registration-r1.json",
+      "sourceAttachment": {
+        "family": "CAOUTP",
+        "sources": {
+          "outp.vxl": "30ab6767edd33b4e15a63c93b714ec6664ae95d725b9b2c9065595407a11be73",
+          "outp.hva": "da9ad51682011fcda6492c3f34ae3dd1382f32818374c06a55791bad5f92433f"
+        },
+        "palette": {
+          "member": "unitsno.pal",
+          "sha256": "c5281f05b0039fb8edb6a91dd61c6493d2de9fc90ab3a9acb442a5e203260f7f"
+        },
+        "variants": {
+          "2": {
+            "sha256": "1db9bc6569337d93c17fe681d883492568b12fb527a0485f3de2e4e4f5884347",
+            "workingBytes": 83478
+          },
+          "4": {
+            "sha256": "51f6179cc25d21459fe5a4d8fc112a612abaea4ac975c850e01bd4a88e4a1fb3",
+            "workingBytes": 224222
+          }
+        },
+        "sourceScope": {
+          "campaignSources": [
+            {
+              "edition": "yr",
+              "mission": "sov02smd.map",
+              "sha256": "139a7f17a17cefc20d12c21e9221d94ff6e1e8894ac09ab716fc9f6975d5a665"
+            }
+          ]
+        }
+      },
+      "nativeValidation": [
+        {
+          "density": 2,
+          "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/outp-complete-native-2x-r2.json.gz",
+          "poses": 11,
+          "ownerMaterial": {
+            "changedPixels": 209,
+            "changedAlpha": 0,
+            "originalOwnershipUnchanged": true
+          },
+          "allocation": {
+            "density": 2,
+            "worldChargeBytes": 12936808,
+            "gpuBytes": 7860848,
+            "loadingPeakBytes": 15550403,
+            "restoreWorkingBytes": 1024128,
+            "retainedCpuBytes": 5075960,
+            "attempts": [],
+            "turret": {
+              "family": "CAOUTP",
+              "density": 2,
+              "headings": 8,
+              "gpuBytes": 307204,
+              "retainedCpuBytes": 307204
+            },
+            "members": [
+              "caoutp.shp",
+              "caoutp_a.shp",
+              "caoutp_b.shp",
+              "caoutp_c.shp",
+              "caoutp_d.shp",
+              "caoutp_f.shp",
+              "caoutpbb.shp"
+            ],
+            "status": "PUBLISHED_COMPLETE_FAMILY"
+          }
+        },
+        {
+          "density": 4,
+          "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/outp-complete-native-4x-r1.json.gz",
+          "poses": 11,
+          "ownerMaterial": {
+            "changedPixels": 595,
+            "changedAlpha": 0,
+            "originalOwnershipUnchanged": true
+          },
+          "allocation": {
+            "density": 4,
+            "worldChargeBytes": 49249402,
+            "gpuBytes": 30213360,
+            "loadingPeakBytes": 58938978,
+            "restoreWorkingBytes": 1700416,
+            "retainedCpuBytes": 19036042,
+            "attempts": [],
+            "turret": {
+              "family": "CAOUTP",
+              "density": 4,
+              "headings": 8,
+              "gpuBytes": 1228804,
+              "retainedCpuBytes": 1228804
+            },
+            "members": [
+              "caoutp.shp",
+              "caoutp_a.shp",
+              "caoutp_b.shp",
+              "caoutp_c.shp",
+              "caoutp_d.shp",
+              "caoutp_f.shp",
+              "caoutpbb.shp"
+            ],
+            "status": "PUBLISHED_COMPLETE_FAMILY"
+          }
+        }
+      ],
+      "nativeFallback": "../project-history/yr-campaign-implementation-20261104/Evidence/outp-native-fallback-2x-r1.json.gz",
+      "preservedAcceptedPedestal": true,
+      "copiedAcceptedPngFiles": 0,
+      "replacedAcceptedPayloads": 0,
+      "ordinaryCombat": "PENDING_SEPARATE_GAMEPLAY_ACTION_EVIDENCE",
+      "userVisualAcceptance": "PENDING"
+    }
+  ],
+  "counts": {
+    "attachedBuildingFamilies": 2,
+    "newTurretDirections": 16,
+    "independentDensityTurretFrames": 32,
+    "newShpFamilies": 1,
+    "newShpDensityFrames": 8,
+    "preservedAcceptedShpFamilies": 1
+  },
+  "checks": {
+    "affectedCases": 14,
+    "assertions": 434,
+    "log": "/private/tmp/ra2-yr-turret-regressions-r2.log",
+    "typecheck": "PASS_ENTRY_R54_FINAL",
+    "desktop": "PASS_PREPARE_R54_219_FILES",
+    "unchangedShpArtRegression": {
+      "cases": 77,
+      "assertions": 1381,
+      "log": "/private/tmp/ra2-yr-turret-art-regressions-r1.log"
+    },
+    "sourceExporter": {
+      "cases": 4,
+      "assertions": 47,
+      "log": "/private/tmp/ra2-yr-turret-source-export-r1.log"
+    },
+    "totalCases": 95,
+    "totalAssertions": 1862
+  },
+  "qualification": "Frozen renderer poses and native missing-bearing fault injection establish source registration, complete admission, independent densities, material ownership and fallback. Ordinary combat and later mission art/actions remain separately tracked.",
+  "worldCapsBytes": {
+    "2": 536870912,
+    "4": 1610612736
+  },
+  "uiCapBytes": 16777216,
+  "userVisualAcceptance": "PENDING",
+  "windows": "NOT_RUN_ON_THIS_MAC"
+}

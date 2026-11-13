@@ -7,6 +7,7 @@ import { SpriteUtils } from "@/engine/gfx/SpriteUtils";
 import { CanvasUtils } from "@/engine/gfx/CanvasUtils";
 import { GameSpeed } from "@/game/GameSpeed";
 import { formatTimeDuration } from "@/util/format";
+import { resizeUiTextCanvas, UI_FONT_FAMILY, UI_FONT_WEIGHT } from '@/engine/gfx/UiTypography';
 type Player = {
     defeated: boolean;
     color: {
@@ -75,8 +76,9 @@ export class SuperWeaponTimers extends UiComponent<SuperWeaponTimersProps> {
         const texture = new THREE.Texture(canvas);
         texture.needsUpdate = true;
         texture.flipY = false;
-        texture.minFilter = THREE.NearestFilter;
-        texture.magFilter = THREE.NearestFilter;
+        texture.minFilter = THREE.LinearFilter;
+        texture.magFilter = THREE.LinearFilter;
+        texture.generateMipmaps = false;
         return texture;
     }
     createMesh(width: number, height: number) {
@@ -96,6 +98,7 @@ export class SuperWeaponTimers extends UiComponent<SuperWeaponTimersProps> {
         return jsx("mesh", { zIndex: this.props.zIndex }, this.mesh);
     }
     onFrame(now: number) {
+        if (resizeUiTextCanvas(this.ctx, this.texture, this.props.width, this.props.height)) this.lastHasTimers = undefined;
         if (!this.lastUpdate || now - this.lastUpdate >= 100) {
             this.lastUpdate = now;
             const lines: TimerLine[] = [];
@@ -158,7 +161,7 @@ export class SuperWeaponTimers extends UiComponent<SuperWeaponTimersProps> {
             if (hasTimers !== this.lastHasTimers || hasTimers) {
                 this.lastHasTimers = hasTimers;
                 this.ctx.clearRect(0, 0, this.props.width, this.props.height);
-                let y = this.props.height - 20;
+                let y = this.props.height - 22;
                 for (const { text, color, flash } of lines) {
                     let drawColor = color;
                     if (flash) {
@@ -173,11 +176,12 @@ export class SuperWeaponTimers extends UiComponent<SuperWeaponTimersProps> {
     drawLine(text: string, color: string, y: number): number {
         return CanvasUtils.drawText(this.ctx, text, 0, y, {
             color,
-            fontFamily: "'Fira Sans Condensed', Arial, sans-serif",
-            fontSize: 12,
-            fontWeight: "500",
-            paddingTop: 6,
-            height: 20,
+            fontFamily: UI_FONT_FAMILY,
+            fontSize: 14,
+            fontWeight: UI_FONT_WEIGHT,
+            paddingTop: 5,
+            height: 22,
+            width: this.props.width,
             backgroundColor: "rgba(0, 0, 0, .75)",
             textAlign: "right",
             paddingLeft: 4,

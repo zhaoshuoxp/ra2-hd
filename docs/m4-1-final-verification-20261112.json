@@ -1,0 +1,376 @@
+{
+  "schema": "m4-1-final-verification-v1",
+  "runtimeSourceHead": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+  "runtimeSourceDigest": "3594ea4188f0f7782a87c7583afef1cf640a58258a0ed586fc04b16afcb618c1",
+  "status": {
+    "technical": "PASS_SCOPED_MAC_CHECKPOINT",
+    "performance": "NOT_PASSED_60_FPS",
+    "userPlayVisualAcceptance": "PENDING",
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "publication": "LOCAL_MAIN_ONLY"
+  },
+  "hostTests": {
+    "counts": {
+      "pass": 2158,
+      "failedCases": 0,
+      "loadErrors": 0,
+      "skipped": 0,
+      "processErrors": 0
+    },
+    "executions": 325,
+    "omittedFiles": 0,
+    "evidence": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/host-final/summary.json",
+      "sha256": "ad72bbb9b79f9887a4a944aebcefeec9bb63b8fc81a5d975c6cb71e7fe8b2e44"
+    }
+  },
+  "entryTypecheck": {
+    "exitCode": 0,
+    "evidence": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/typecheck-final.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    }
+  },
+  "productionBuild": {
+    "exitCode": 0,
+    "evidence": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/final-build.log",
+      "sha256": "7e642b08af1b7ad25f94d6f7cc2443ece6270f5a93d5153d7d4babb281d1d7d0"
+    },
+    "runtimeInventory": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/release-runtime.json",
+      "sha256": "f0d34af778a98f8aa173c5a468f6aaa8f4349d2051f7571cf62c92a3f865013a"
+    }
+  },
+  "pixelParity": {
+    "result": {
+      "status": "PASS_EXACT_BASELINE_FINAL_RGBA",
+      "scope": "Visual draws, separate UUID stream and world clock are fixed; pointer normalized in 2X repeat. Native simulation tick zero and RNG unchanged. Repeated renders are also byte-identical. All earlier uncontrolled captures and differences remain.",
+      "rows": [
+        {
+          "density": 4,
+          "camera": "center",
+          "tick": 0,
+          "comparedBytes": 33177600,
+          "differentBytes": 0,
+          "sha256": "66f32099cf40673ae3f08d0bfb0cba6ec9dbe2df750e6f8ba9eb17b060c13205",
+          "baseline": "pixels-controlled-baseline-4x",
+          "final": "pixels-controlled-final-4x"
+        },
+        {
+          "density": 4,
+          "camera": "leave",
+          "tick": 0,
+          "comparedBytes": 33177600,
+          "differentBytes": 0,
+          "sha256": "21f16c7d2884ff4ba5f0df377369af50596cc0c7f255fcef8d01056d7af47a5c",
+          "baseline": "pixels-controlled-baseline-4x",
+          "final": "pixels-controlled-final-4x"
+        },
+        {
+          "density": 4,
+          "camera": "reenter",
+          "tick": 0,
+          "comparedBytes": 33177600,
+          "differentBytes": 0,
+          "sha256": "31581bfe4aea69cac489f3aafb1520569098756f33dec4fec1130ba5a2cd24dc",
+          "baseline": "pixels-controlled-baseline-4x",
+          "final": "pixels-controlled-final-4x"
+        },
+        {
+          "density": 4,
+          "camera": "opposite",
+          "tick": 0,
+          "comparedBytes": 33177600,
+          "differentBytes": 0,
+          "sha256": "571c74552482510a308962b2039f02a733fa53dd724c87d7f42cb8397a896f0c",
+          "baseline": "pixels-controlled-baseline-4x",
+          "final": "pixels-controlled-final-4x"
+        },
+        {
+          "density": 2,
+          "camera": "center",
+          "tick": 0,
+          "comparedBytes": 33177600,
+          "differentBytes": 0,
+          "sha256": "9204c50df562ce50897eea48dae01b995193dfe11e1bcb3ef11dedeeaeeffaf7",
+          "baseline": "pixels-pointer-baseline-2x",
+          "final": "pixels-pointer-final-2x"
+        },
+        {
+          "density": 2,
+          "camera": "leave",
+          "tick": 0,
+          "comparedBytes": 33177600,
+          "differentBytes": 0,
+          "sha256": "b53ce54cf6d7a298dc2a48da77de16e16f6369f9c984dc182151ef571189f52b",
+          "baseline": "pixels-pointer-baseline-2x",
+          "final": "pixels-pointer-final-2x"
+        },
+        {
+          "density": 2,
+          "camera": "reenter",
+          "tick": 0,
+          "comparedBytes": 33177600,
+          "differentBytes": 0,
+          "sha256": "877014223351f72ca3faee78cd7397c8f4c8ae70a80c4f6b70c1f4065d994de9",
+          "baseline": "pixels-pointer-baseline-2x",
+          "final": "pixels-pointer-final-2x"
+        },
+        {
+          "density": 2,
+          "camera": "opposite",
+          "tick": 0,
+          "comparedBytes": 33177600,
+          "differentBytes": 0,
+          "sha256": "5069e9cec93a226adb434468d0e498520c6d552ee11bae3d6049b76e95bfe5de",
+          "baseline": "pixels-pointer-baseline-2x",
+          "final": "pixels-pointer-final-2x"
+        }
+      ]
+    },
+    "evidence": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/pixel-parity.json",
+      "sha256": "9fc4e3624618f17e83b2522f5406ad9fc7fa1c9ef365a2a602e899fb1f0ca181"
+    }
+  },
+  "actualCompleteApp": {
+    "result": {
+      "schema": "m4-native-regression-suite-v1",
+      "app": "/Users/Aone/RA2remaster/RA2-HD-Mac-M4.1-20261112/Red Alert 2 HD.app",
+      "status": "PASS_NATIVE_APP_REGRESSIONS",
+      "cases": [
+        {
+          "name": "edition-menu",
+          "script": "scripts/ui/native-edition-menu-title.mjs",
+          "options": [],
+          "exitCode": 0,
+          "status": "PASS_NATIVE_EDITION_MENU_LOGO_REPLACEMENT_RADAR_FALLBACK_EXPORTS_VERSION_AND_LIFECYCLE",
+          "passed": true,
+          "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/app-regressions/edition-menu/report.json",
+          "sha256": "992dcfbecd4b02e91df4d5dc5bc09b5b362c278e9d2c7a92b188707cd4c5bf48"
+        },
+        {
+          "name": "ra2-media-save-restart",
+          "script": "scripts/hd-movies/native-playback.mjs",
+          "options": [
+            "--hd",
+            "--ra2",
+            "--density=4"
+          ],
+          "exitCode": 0,
+          "status": "PASS_NATIVE_HD_OPENING_RADAR_SAVE_RESTART_FALLBACK_AND_RELEASE",
+          "passed": true,
+          "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/app-regressions/ra2-media-save-restart/report.json",
+          "sha256": "39c03f1dacbcda426bbd18c5c293ccc54e877ff5dac0c843042692bf7d74ad93"
+        },
+        {
+          "name": "yr-media-save-restart",
+          "script": "scripts/hd-movies/native-playback.mjs",
+          "options": [
+            "--hd",
+            "--density=4"
+          ],
+          "exitCode": 0,
+          "status": "PASS_NATIVE_HD_OPENING_RADAR_SAVE_RESTART_FALLBACK_AND_RELEASE",
+          "passed": true,
+          "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/app-regressions/yr-media-save-restart/report.json",
+          "sha256": "40d3a60a2f6db2d0d023facb6c9a2520fd812766ed5c89a4f23cc172071d1ff5"
+        },
+        {
+          "name": "ra2-victory-next",
+          "script": "scripts/campaign-completion/native-ending-flow-v53.mjs",
+          "options": [
+            "--hd",
+            "--density=4"
+          ],
+          "exitCode": 0,
+          "status": "PASS_SOURCE_ENDING_REPORT_DRAINS_BEFORE_SCORE_AND_CONTINUE_WITHOUT_SELECTION_FLASH",
+          "passed": true,
+          "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/app-regressions/ra2-victory-next/report.json",
+          "sha256": "377651867817a5b2b293699e1e78c564aa25823c9a4339cd4cfcdea36562f407"
+        },
+        {
+          "name": "yr-victory-next",
+          "script": "scripts/yr-campaign/native-soviet06-ending-feedback.mjs",
+          "options": [
+            "--public-next",
+            "--density=4",
+            "--checkpoint=/Users/Aone/RA2remaster/project-history/yr-campaign-accepted-20261109/Artifacts/sov06-easy-full-source45-4x-r1/continued-source-input-replay-checkpoint.json"
+          ],
+          "exitCode": 0,
+          "status": "PASS_NATIVE_ORIGINAL_SOVIET06_ENDING_NARRATION_DRAINS_NATURALLY_BEFORE_SCORE_WITH_FROZEN_SIMULATION",
+          "passed": true,
+          "report": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/app-regressions/yr-victory-next/report.json",
+          "sha256": "ee814a6ef8dadc96b77c2cdb2c5bfa29e98cd6b998c58295c8d9a4089441fd59"
+        }
+      ]
+    },
+    "evidence": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/app-regressions/report.json",
+      "sha256": "1ec9f5ab96764e95ef8ee140836a178d2786e844f82a6c616b0d760199739d71"
+    }
+  },
+  "delivery": {
+    "schema": "m4-mac-delivery-v1",
+    "status": "ZIP_EXTRACTED_BYTES_MODES_LINKS_SIGNATURE_PASS",
+    "app": "/Users/Aone/RA2remaster/RA2-HD-Mac-M4.1-20261112/Red Alert 2 HD.app",
+    "sourceHead": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+    "sourceDigest": "3594ea4188f0f7782a87c7583afef1cf640a58258a0ed586fc04b16afcb618c1",
+    "runtime": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/release-runtime",
+    "resources": "/Users/Aone/RA2remaster/RA2-HD-Mac-M4.1-20261112/Red Alert 2 HD.app/Contents/Resources/GameResources",
+    "resourceCount": 16444,
+    "portableMetadataDifferences": [],
+    "inventorySha256": "b2b60975ad0d074a91edc71e2dbdf9c0657a1e4ba1bc95ba04d620de6b67dbab",
+    "files": 17028,
+    "logicalBytes": 18071615683,
+    "checkpoint": {
+      "schema": "m4-mac-checkpoint-v1",
+      "runtimeSourceHead": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+      "priorAcceptedRuntime": "88ac426b84723bc4a0451c221e6a43b35704791b",
+      "resourceManifestSha256": "410ff242d0527902fc1d3fffe4e4a103994cdc8eb6b9d6fc4c220f43e2a3066b",
+      "selectedFiles": 16444,
+      "performanceTarget": "NOT_PASSED_60_FPS",
+      "userAcceptance": "PENDING",
+      "windows": "NOT_RUN_ON_THIS_MAC",
+      "defaultProfile": "RA2 HD M4.1 Review 20261112",
+      "publicVersion": "0.5",
+      "packageVersion": "0.5.0"
+    },
+    "zip": {
+      "path": "/Users/Aone/Desktop/RA2-HD-Mac-M4.1-20261112.zip",
+      "bytes": 13517472341,
+      "sha256": "f104b4a72cb70e075431b576175408839be9b7fd8b0a41071301ee62b6a268ac",
+      "entries": 17028
+    },
+    "extractedApp": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/zip-extracted/Red Alert 2 HD.app"
+  },
+  "actualZip": {
+    "menuStatus": "PASS_NATIVE_EDITION_MENU_LOGO_REPLACEMENT_RADAR_FALLBACK_EXPORTS_VERSION_AND_LIFECYCLE",
+    "menuEvidence": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/zip-menu/report.json",
+      "sha256": "faf6c3acefc872e4df7750fe1aefadde3b5fa5afe1aee91542f7d55b2850ee87"
+    },
+    "formalRuns": [
+      {
+        "name": "zip-sustained",
+        "report": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/zip-sustained/report.json",
+          "sha256": "b553b30d8c87dc97cdf6bb82586e69aa7496005299a8324c5770dedcae3e16dd"
+        },
+        "fps": 51.363353730359734,
+        "onePercentLow": 12.071416054927317,
+        "frameMs": {
+          "n": 6164,
+          "mean": 19.469133679425653,
+          "p50": 17.455000013113022,
+          "p95": 30.0799999833107,
+          "p99": 40.7049999833107,
+          "max": 1020.8349999785423
+        },
+        "simulationRatio": 0.9417861622669963,
+        "thermal": [
+          "nominal",
+          "nominal"
+        ]
+      },
+      {
+        "name": "zip-check-runtime",
+        "report": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/zip-check-runtime/report.json",
+          "sha256": "583cf951cab2ac1b0c0e47219ed2ee72884c3f1a90d9bb3799beae5b6b0d0445"
+        },
+        "fps": 51.17740949334831,
+        "onePercentLow": 14.277522803607685,
+        "frameMs": {
+          "n": 6143,
+          "mean": 19.539871398335887,
+          "p50": 17.5799999833107,
+          "p95": 30.540000021457672,
+          "p99": 40.189999997615814,
+          "max": 593.089999973774
+        },
+        "simulationRatio": 0.9477576606373567,
+        "thermal": [
+          "nominal",
+          "fair"
+        ]
+      },
+      {
+        "name": "zip-sustained-repeat",
+        "report": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/zip-sustained-repeat/report.json",
+          "sha256": "d045f479cc385a4381bc4e484d0c12d89ab3ce0fffd64d72fc0cf457b5014a56"
+        },
+        "fps": 50.488404496432985,
+        "onePercentLow": 14.26837169840632,
+        "frameMs": {
+          "n": 6060,
+          "mean": 19.806528052805675,
+          "p50": 17.860000014305115,
+          "p95": 30.219999998807907,
+          "p99": 38.78000000119209,
+          "max": 580.244999974966
+        },
+        "simulationRatio": 0.9475564443849674,
+        "thermal": [
+          "nominal",
+          "fair"
+        ]
+      }
+    ],
+    "executedAppPath": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/zip-extracted/Red Alert 2 HD.app/Contents/Resources/app",
+    "specializedPathGenericCloneCalls": 0,
+    "pathCheckEvidence": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/zip-native-path-self-check/report.json",
+      "sha256": "79295a677935aa08a1b974927d69bd05fddddfcc68462807cbe7f534f47d29b3"
+    },
+    "pathCounterControlCalls": 1,
+    "pathCounterScope": "Builder-result geometry class, verified by one explicit clone; zero generic clones across 132 native scratch builds. One untimed priming build is excluded from timings."
+  },
+  "protection": {
+    "schema": "m4-protection-final-v1",
+    "status": "PASS",
+    "runtimeSourceHead": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+    "workingFiles": {
+      "count": 5,
+      "allSha256Unchanged": true
+    },
+    "realProfiles": {
+      "profiles": 5,
+      "records": 245,
+      "allNamesAndHashesUnchanged": true
+    },
+    "canonicalSelectedResources": {
+      "files": 16444,
+      "bytes": 17689836587,
+      "allSha256Unchanged": true
+    },
+    "retainedMovieZip": {
+      "file": "/Users/Aone/RA2remaster/RA2-HD-Movie-Pack-downloaded-1080p-r1.zip",
+      "bytes": 5541587802,
+      "sha256": "82c3cef82c1740dc653e4c82e3cfc2012f5c366518351cb363dec39b5caddd33"
+    },
+    "baselineAppSignature": "PASS_DEEP_STRICT",
+    "reviewAppSignature": "PASS_DEEP_STRICT",
+    "actualZipAppSignatureAfterNativeUse": "PASS_DEEP_STRICT",
+    "bothReviewAppNamesModesLinks": "EXACT_INVENTORY",
+    "runtimeSourceCleanRelativeToHead": true,
+    "oldDesktopV05ZipAbsentAtPreflight": true,
+    "noPushOrPublication": true
+  },
+  "protectionEvidence": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-performance-20261112/protection-final.json",
+    "sha256": "539da9b137287a4b2068fd4240e9faf70ffe861b968087c504a053b12053b4be"
+  },
+  "qualifications": [
+    "All formal and adverse runs remain retained.",
+    "Native mesh CPU gains do not establish steady battle FPS gains.",
+    "Later actual-app and frozen-runtime scores vary; no package-only cause is established.",
+    "Screen-present counts, reliable GPU duration and actual VRAM are unavailable.",
+    "Formal visual randomness and OS/driver/background state are not fully controlled.",
+    "Prior M3 content acceptance remains; this app awaits user play/visual acceptance.",
+    "No Windows optimization or complete development export is performed.",
+    "Accepted v0.5 and current movie ZIP remain; task duplicate cleanup follows acceptance."
+  ]
+}

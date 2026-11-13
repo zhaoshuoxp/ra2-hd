@@ -1,5 +1,6 @@
 import { bresenham } from '@/util/bresenham';
 import { LandType } from '@/game/type/LandType';
+import { campaignChargedWeaponRange } from '../../campaign/CampaignChargedWeapon';
 interface TileOccupation {
     getBridgeOnTile(tile: any): any;
 }
@@ -39,6 +40,7 @@ export class LosHelper {
         this.tileOccupation = tileOccupation;
     }
     hasLineOfSight(source: GameObject | any, target: GameObject | any, weapon: WeaponRules): boolean {
+        if (campaignChargedWeaponRange(source, weapon) !== undefined) return true;
         const ignoreWalls = weapon.warhead.rules.wall || !weapon.projectileRules.subjectToWalls;
         const checkCliffs = weapon.projectileRules.subjectToCliffs;
         const isSpawner = weapon.rules.spawner;

@@ -25,6 +25,24 @@ test('worker pixel preparation retains exact 4X and 2X color, coverage, remap an
         expect(() => prepareVxlPixels(base, corrupt, 1, 2048)).toThrow('vxl-owner-data');
     }
 });
+test('disc lighting requires explicit decoding and survives lossless RG pooling and density reduction', () => {
+    const [base, data] = pixels();
+    for (let i = 0; i < data.rgba.length; i += 4) data.rgba[i + 1] |= 7 << 4;
+    expect(() => prepareVxlPixels(base, data, 1, 2048)).toThrow('vxl-owner-data');
+    const pooled = prepareVxlPixels(base, data, 1, 2048, true);
+    for (let y = 0; y < base.height; y++) for (let x = 0; x < base.width; x++) {
+        const tile = (Math.floor(y / 4) * pooled.columns + Math.floor(x / 4)) * 4;
+        const index = pooled.lookup[tile] | pooled.lookup[tile + 1] << 8 | pooled.lookup[tile + 2] << 16;
+        const px = index % (pooled.width / 4) * 4 + x % 4, py = Math.floor(index / (pooled.width / 4)) * 4 + y % 4;
+        expect(pooled.remap[(py * pooled.width + px) * 2 + 1]).toBe(data.rgba[(y * base.width + x) * 4 + 1]);
+    }
+    const color = { width: 2, height: 2, rgba: Uint8Array.from([20, 30, 40, 255, 20, 30, 40, 0,
+        20, 30, 40, 128, 20, 30, 40, 255]) };
+    const remap = { width: 2, height: 2, rgba: Uint8Array.from([255, 4 * 16 + 2, 0, 255, 0, 12 * 16 + 5, 0, 255,
+        128, 10 * 16 + 8, 0, 255, 0, 14 * 16 + 15, 0, 255]) };
+    const reduced = downsampleHdPage(color, remap, true)[1].rgba;
+    expect(reduced[0]).toBe(128); expect(reduced[1] & 15).toBe(3); expect(reduced[1] >>> 4).toBe(9);
+});
 test('worker requests transfer buffers, correlate out-of-order replies, and reject cancellation', async () => {
     const messages: any[] = []; let terminated = 0;
     const worker: any = { postMessage: (...args: any[]) => messages.push(args), terminate: () => terminated++ };

@@ -84,7 +84,9 @@ try {
     const sharedProfile = path.join(output, 'shared-profile');
     await fs.mkdir(sharedProfile);
     execFileSync('cp', ['-cR', path.join(originalApp, 'Contents/Resources/GameResources'), path.join(sharedProfile, 'GameResources')]);
-    const lite = path.join(stage, 'RA2-HD-v0.2-macOS-arm64-program/Red Alert 2 HD.app');
+    const programFolders = (await fs.readdir(stage)).filter(name => /^RA2-HD-v[\d.]+-macOS-arm64-program$/.test(name));
+    assert.equal(programFolders.length, 1, 'Expected exactly one current Mac program package');
+    const lite = path.join(stage, programFolders[0], 'Red Alert 2 HD.app');
     const small = await launch(lite, sharedProfile);
     try {
         await small.page.locator('[data-edition=yr]').click();

@@ -76,6 +76,7 @@ export class Anim {
     private gasMotion?: ChaosGasMotion;
     private commandHd?: ReturnType<typeof acquireCommandMarkerHd>;
     private occlusionHd?: ReturnType<typeof acquireOcclusionMarkerHd>;
+    private sourceBuildingFoundation?: { width: number; height: number };
     constructor(name: string, objectArt: ObjectArt, extraOffset: {
         x: number;
         y: number;
@@ -96,6 +97,10 @@ export class Anim {
     }
     get3DObject(): THREE.Object3D | undefined {
         return this.target;
+    }
+    setSourceBuildingGeometry(foundation: { width: number; height: number }): void {
+        if (this.mainObj) throw new Error('Building animation geometry must precede object creation');
+        this.sourceBuildingFoundation = { width: foundation.width, height: foundation.height };
     }
     create3DObject(): void {
         let obj = this.get3DObject();
@@ -118,6 +123,11 @@ export class Anim {
     }
     getPosition(): THREE.Vector3 {
         return this.withPosition.getPosition();
+    }
+    setSimulationFrame(frame: number, translucency?: number): void {
+        if (!this.mainObj) return;
+        this.mainObj.setFrame(Math.min(this.mainObj.frameCount - 1, Math.max(0, frame)));
+        if (translucency !== undefined) this.mainObj.setOpacity(1 - translucency / 100);
     }
     update(deltaTime: number): void {
         this.syncOcclusionMarkerHd();
@@ -158,7 +168,7 @@ export class Anim {
         }
     }
     private createObjects(parentObj: THREE.Object3D): void {
-        const dimensions = { width: 1, height: 1 };
+        const dimensions = this.sourceBuildingFoundation ?? { width: 1, height: 1 };
         if (this.debugFrame.value) {
             const wireframe = DebugUtils.createWireframe(dimensions, 0);
             parentObj.add(wireframe);
@@ -260,7 +270,8 @@ export class Anim {
             throw error;
         }
         const animProps = new AnimProps(this.animationArt ?? this.objectArt.art, shpFile);
-        const renderable = ShpRenderable.factory(shpFile, this.palette, this.camera, offset, animProps.shadow);
+        const renderable = ShpRenderable.factory(shpFile, this.palette, this.camera, offset, animProps.shadow,
+            0, !!this.sourceBuildingFoundation);
         const environment = this.imageFinder.getHdOverride(shpFile);
         if (environment) renderable.setHdOverride(environment);
         if (this.name === 'RING' && shpFile.filename === 'ring.shp' && uiArt.enabled) {

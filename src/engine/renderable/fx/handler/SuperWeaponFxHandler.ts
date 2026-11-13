@@ -7,7 +7,10 @@ import { LightningStormFx } from '@/engine/gfx/lighting/LightningStormFx';
 import { GameSpeed } from '@/game/GameSpeed';
 import { SuperWeaponType } from '@/game/type/SuperWeaponType';
 import { Coords } from '@/game/Coords';
+import type { CampaignLightningVisual } from '@/game/campaign/CampaignLightning';
 interface Game {
+    campaign?: { lightningPresentation(): { clouds: CampaignLightningVisual[];
+        storms: { manifestTicks?: number; clouds: CampaignLightningVisual[] }[] } | undefined };
     events: {
         subscribe: (event: EventType, handler: (event: any) => void) => {
             dispose: () => void;
@@ -54,6 +57,8 @@ interface LightingDirector {
 }
 interface LightningStormEvent {
     position: any;
+    animationName?: string;
+    frame?: number;
 }
 interface SuperWeaponActivateEvent {
     target: SuperWeaponType;
@@ -67,6 +72,7 @@ export class SuperWeaponFxHandler {
     private disposables: CompositeDisposable;
     private lightingFx?: LightningStormFx;
     private chronoSphereAnim?: any;
+    private restoredWeather = false;
     constructor(game: Game, renderableManager: RenderableManager, lightingDirector: LightingDirector) {
         this.game = game;
         this.renderableManager = renderableManager;
@@ -74,18 +80,10 @@ export class SuperWeaponFxHandler {
         this.disposables = new CompositeDisposable();
     }
     init(): void {
-        this.disposables.add(this.game.events.subscribe(EventType.LightningStormCloud, (event: LightningStormEvent) => {
-            const clouds = this.game.rules.audioVisual.weatherConClouds;
-            const cloudAnim = clouds[getRandomInt(0, clouds.length - 1)];
-            const anim = this.renderableManager.createTransientAnim(cloudAnim, (anim) => {
-                anim.setPosition(event.position);
-            });
-            this.lightingFx?.waitForCloudAnim(anim);
-        }), this.game.events.subscribe(EventType.LightningStormManifest, () => {
-            const fx = new LightningStormFx(this.game.rules.general.lightningStorm.duration / GameSpeed.BASE_TICKS_PER_SECOND, this.game.map.getIonLighting());
-            this.lightingFx = fx;
-            this.lightingDirector.addEffect(fx);
-        }), this.game.events.subscribe(EventType.SuperWeaponActivate, (event: SuperWeaponActivateEvent) => {
+        this.disposables.add(this.game.events.subscribe(EventType.LightningStormCloud,
+            (event: LightningStormEvent) => this.showCloud(event)),
+        this.game.events.subscribe(EventType.LightningStormManifest, () => this.showStorm()),
+        this.game.events.subscribe(EventType.SuperWeaponActivate, (event: SuperWeaponActivateEvent) => {
             const weaponType = event.target;
             if (weaponType === SuperWeaponType.PsychicDominator) {
                 const game = this.game as any;
@@ -116,6 +114,36 @@ export class SuperWeaponFxHandler {
                 });
             }
         }));
+    }
+    restoreCampaignWeather(): void {
+        if (this.restoredWeather) return;
+        this.restoredWeather = true;
+        // Shader preparation advances the new scene at time zero. Restore
+        // surviving visuals afterwards, on the actual presentation clock.
+        const restored = this.game.campaign?.lightningPresentation?.();
+        if (restored) {
+            for (const storm of restored.storms) {
+                if (storm.manifestTicks !== undefined) this.showStorm(storm.manifestTicks);
+                for (const cloud of storm.clouds) this.showCloud(cloud);
+            }
+            for (const cloud of restored.clouds) this.showCloud(cloud);
+        }
+    }
+    private showStorm(ticks = this.game.rules.general.lightningStorm.duration): void {
+        const fx = new LightningStormFx(ticks / GameSpeed.BASE_TICKS_PER_SECOND, this.game.map.getIonLighting());
+        this.lightingFx = fx; this.lightingDirector.addEffect(fx);
+    }
+    private showCloud(event: LightningStormEvent): void {
+        const clouds = this.game.rules.audioVisual.weatherConClouds;
+        const name = event.animationName ?? clouds[getRandomInt(0, clouds.length - 1)];
+        const anim = this.renderableManager.createTransientAnim(name, anim => {
+            anim.setPosition(event.position);
+            if (event.frame) {
+                anim.setArtOverrides({ Start: String(event.frame), LoopStart: String(event.frame) });
+                anim.worldSound = undefined;
+            }
+        });
+        this.lightingFx?.waitForCloudAnim(anim);
     }
     createChronoSphereAnim(tile: Tile): void {
         this.chronoSphereAnim = this.renderableManager.createAnim(this.game.rules.audioVisual.chronoPlacement, (anim) => {

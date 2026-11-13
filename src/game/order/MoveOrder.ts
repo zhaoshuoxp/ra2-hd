@@ -79,6 +79,8 @@ export class MoveOrder extends Order {
         if (!this.target.obj) {
             return true;
         }
+        if (this.target.obj.isOverlay() && this.target.obj.isBridge?.()
+            && (this.game.gameOpts.bridgeRallyVersion === 1 || this.game.gameOpts.campaign?.bridgeRallyVersion === 1)) return true;
         if ((this.target.obj.isOverlay() || this.target.obj.isBuilding()) &&
             this.target.obj.rules.wall) {
             return true;
@@ -99,6 +101,8 @@ export class MoveOrder extends Order {
         return false;
     }
     isAllowed(): boolean {
+        if (this.game.gameOpts?.campaign?.edition === 'yr' && (this.game.gameOpts.campaign.semanticsVersion ?? 1) >= 29
+            && !this.map.mapBounds.isWithinPlayerBounds(this.target.tile)) return false;
         if (this.sourceObject.isUnit() &&
             this.sourceObject.moveTrait.isDisabled() && !this.sourceObject.bunker && !(this.sourceObject.rules.isSimpleDeployer && this.sourceObject.deployerTrait?.isDeployed())) {
             return false;

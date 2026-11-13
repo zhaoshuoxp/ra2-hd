@@ -1,0 +1,56 @@
+{
+  "schema": "yr-source-pinned-newurban-bridge-continuous-paint-v1",
+  "theater": "NEWURBAN",
+  "editions": [
+    "yr"
+  ],
+  "preparedSourceSha256": "26a8e8577a586570f12dcfbd9171b3f974785ef86cd5f3fc5b055c1da8a44a17",
+  "members": {
+    "ovrps09.ubn": "170b9757bfedcac9a7f8192ad87de03a5792dc0110f85c3577af2daeb0a4afb2",
+    "ovrps07.ubn": "2e0ac291b665bad7c4bc0c63d09f4af01dc355169def8a64d2ad519827746101",
+    "ovrps12.ubn": "8283eaa24e3a00a6d698c85624f58ce3173c69d86112c02ec6ef1fdb352b6cbb"
+  },
+  "models": {
+    "ovrps07.ubn": {
+      "kind": "strip",
+      "sign": -1,
+      "center": -2.5,
+      "ramp": 0
+    },
+    "ovrps12.ubn": {
+      "kind": "strip",
+      "sign": 1,
+      "center": 62.5,
+      "ramp": 0
+    }
+  },
+  "retainedDamagedMember": "ovrps09.ubn",
+  "originalNativeAssembly": {
+    "ovrps09.ubn": "899b855ae0d70541521de86f7894550be85b0a239ea889029809706a5d3747e2",
+    "ovrps07.ubn": "4f4d838ff7670d04582aa467bd660d2959adcf172a2cf9ccda1af0815c8d6c53",
+    "ovrps12.ubn": "4659b2871df2d50bc002d671bb1c307f1d3105e0684746f2fe1b2af689ce7381"
+  },
+  "paint": {
+    "centerOffsets": [
+      -2.12,
+      2.12
+    ],
+    "centerWidth": 1.35,
+    "edgeOffsets": [
+      -51,
+      51
+    ],
+    "edgeWidth": 1.05,
+    "whiteOffsets": [
+      -25.45,
+      25.45
+    ],
+    "whiteWidth": 1.25,
+    "dashPeriod": 10,
+    "dashLength": 8.3
+  },
+  "geometryPolicy": "Only original height4 terrain11 road main-block diamonds may reconstruct analytic source-plane paint. Preserve exact original opacity, offsets, height/depth, every raw mother and all non-road body RGB. The two flat-road centers share the original road lattice; every repeated main block samples the same continuous paint field. Preserve all authored broken09 road details exactly.",
+  "materialPolicy": "Paint colors and clean asphalt under replaced old paint come only from independently sampled genuine HD mother RGB. Original RGB supplies source paint/design anchors only, never output texture, noise or pixel cells.",
+  "nativeValidation": "PENDING",
+  "userVisualAcceptance": "PENDING"
+}

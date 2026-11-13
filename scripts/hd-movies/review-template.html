@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>__TITLE__</title>
+<style>
+body{margin:0;background:#101419;color:#edf1f5;font:18px/1.5 system-ui,sans-serif}
+main{max-width:1500px;margin:auto;padding:28px}h1{font-size:32px;margin:0 0 14px}h2{font-size:23px;margin:0}
+p{max-width:1200px}button{font:inherit;color:inherit;background:#2a3642;border:1px solid #647687;border-radius:5px;padding:7px 12px;cursor:pointer}
+article{background:#19222b;border:1px solid #425160;border-radius:8px;margin:24px 0;padding:20px}
+.labels,.captures{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:14px 0}
+.screen{aspect-ratio:8/3;background:#000;display:flex;align-items:center;justify-content:center;overflow:hidden}
+video{width:100%;height:100%;display:block;object-fit:contain}
+.radar .screen{height:220px;aspect-ratio:auto;align-items:flex-start;justify-content:flex-start}
+.radar .pair{width:280px;height:110px}.radar.enlarged .pair{width:560px;height:220px}
+.sources{display:none;grid-template-columns:repeat(3,1fr);gap:18px;margin:18px 0}.reference .sources{display:grid}
+.source-screen{background:#000;aspect-ratio:4/3;overflow:hidden}
+.radar .source-screen{height:110px;aspect-ratio:auto}.radar .source-screen video{width:140px;height:110px}
+video:fullscreen{width:100% !important;height:100% !important;object-fit:contain;background:#000}
+.fullscreen-stage{position:fixed;inset:0;background:#000;display:flex;align-items:center;justify-content:center}
+.fullscreen-stage button{position:absolute;right:18px;top:18px;z-index:2}
+.spec{font-size:15px;color:#bdcbd9}.note{color:#ffdda1}.controls{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.captures img{width:100%;height:auto;display:block}summary{cursor:pointer;padding:10px 0}
+@media(max-width:760px){main{padding:14px}.sources,.captures{grid-template-columns:1fr}.labels{font-size:16px}}
+</style><main><h1>__TITLE__</h1>
+<p id="status">__STATUS__</p>
+<p>__INTRO__</p>
+<p class="note">__NOTICE__</p>
+<div id="samples"></div></main><script>
+const rows = __DATA__, allVideos = [];
+const pauseAll = () => allVideos.forEach(video => video.pause());
+let restoreFullscreen;
+const showFullscreen = async video => {
+    pauseAll(); const parent = video.parentElement, next = video.nextSibling;
+    const stage = document.createElement('div'), exit = document.createElement('button');
+    stage.className = 'fullscreen-stage'; stage.dataset.reviewFullscreen = 'true';
+    exit.textContent = 'Exit full screen'; exit.dataset.action = 'exit-fullscreen';
+    exit.onclick = () => document.exitFullscreen(); video.controls = true;
+    stage.append(video, exit); document.body.append(stage);
+    restoreFullscreen = () => { parent.insertBefore(video, next); video.controls = false; stage.remove(); restoreFullscreen = undefined; };
+    try { await stage.requestFullscreen(); } catch (error) { restoreFullscreen(); throw error; }
+};
+const register = video => {
+    allVideos.push(video);
+    video.addEventListener('play', () => allVideos.filter(other => other !== video).forEach(other => other.pause()));
+};
+for (const row of rows) {
+    const article = document.createElement('article');
+    article.dataset.identity = row.identity; article.className = row.radar ? 'radar' : '';
+    const title = document.createElement('h2'); title.textContent = row.title + ' · ' + row.identity; article.append(title);
+    const timing = document.createElement('p'); timing.className = 'spec';
+    timing.textContent = row.timingText;
+    article.append(timing);
+    const labels = document.createElement('div'); labels.className = 'labels'; article.append(labels);
+    for (const entry of row.videos.filter(video => video.kind !== 'original')) {
+        const label = document.createElement('div'), name = document.createElement('strong'), spec = document.createElement('div');
+        name.textContent = entry.label; spec.className = 'spec';
+        spec.textContent = `${entry.width} × ${entry.height} · ${entry.fps} fps · 2 s · ${(entry.bytes / 1048576).toFixed(2)} MiB`;
+        label.append(name, spec); labels.append(label);
+    }
+    const screen = document.createElement('div'), pair = document.createElement('video'); screen.className = 'screen';
+    pair.src = row.pair.file; pair.preload = 'auto'; pair.playsInline = true; pair.className = 'pair';
+    pair.dataset.kind = 'pair'; pair.dataset.identity = row.identity; screen.append(pair); article.append(screen); register(pair);
+    const note = document.createElement('p'); note.className = 'spec note';
+    note.textContent = row.note;
+    article.append(note);
+    const controls = document.createElement('div'); controls.className = 'controls'; article.append(controls);
+    const button = (name, action, handler) => {
+        const element = document.createElement('button'); element.textContent = name;
+        element.dataset.action = action; element.onclick = handler; controls.append(element);
+    };
+    const videos = new Map();
+    button('Play synchronized pair', 'play', () => { pauseAll(); pair.currentTime = 0; return pair.play(); });
+    button('Pause', 'pause', pauseAll);
+    button('Full screen pair', 'fullscreen-pair', () => showFullscreen(pair));
+    button('Full screen ' + row.leftName, 'fullscreen-local', () => showFullscreen(videos.get('local')));
+    button('Full screen ' + row.rightName, 'fullscreen-community', () => showFullscreen(videos.get('community')));
+    button('Show / hide references', 'reference', () => article.classList.toggle('reference'));
+    button('Full screen original', 'fullscreen-original', () => showFullscreen(videos.get('original')));
+    if (row.radar) button('Radar 1× / 2×', 'radar-scale', () => article.classList.toggle('enlarged'));
+    const sources = document.createElement('div'); sources.className = 'sources'; article.append(sources);
+    for (const entry of row.videos) {
+        const panel = document.createElement('div'), label = document.createElement('div'); label.textContent = entry.label;
+        const sourceScreen = document.createElement('div'), video = document.createElement('video'); sourceScreen.className = 'source-screen';
+        video.src = entry.file; video.preload = 'auto'; video.playsInline = true;
+        video.dataset.kind = entry.kind; video.dataset.identity = row.identity;
+        sourceScreen.append(video); panel.append(label, sourceScreen); sources.append(panel); videos.set(entry.kind, video); register(video);
+    }
+    if (row.native.length) {
+        const detail = document.createElement('details'), summary = document.createElement('summary');
+        summary.textContent = 'Actual campaign surface captures'; detail.append(summary);
+        const text = document.createElement('p'); text.className = 'spec';
+        text.textContent = 'Independent short previews on real full-screen/radar surfaces with simulation paused. '
+            + 'These are layout/playback checks; complete-film and native story integration remain pending.';
+        detail.append(text);
+        const captures = document.createElement('div'); captures.className = 'captures'; detail.append(captures);
+        for (const capture of row.native) {
+            const panel = document.createElement('div'), label = document.createElement('div'); label.textContent = capture.label;
+            const link = document.createElement('a'), image = document.createElement('img');
+            link.href = image.src = capture.file; image.alt = row.identity + ' ' + capture.label; image.loading = 'lazy';
+            link.append(image); panel.append(label, link); captures.append(panel);
+        }
+        article.append(detail);
+    }
+    document.querySelector('#samples').append(article);
+}
+document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement) restoreFullscreen?.();
+});
+</script></html>

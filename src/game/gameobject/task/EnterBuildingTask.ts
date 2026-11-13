@@ -29,13 +29,13 @@ export class EnterBuildingTask extends Task {
         }
         if (this.game.map.tileOccupation.isTileOccupiedBy(gameObject.tile, this.target)) {
             if (!this.isAllowed(gameObject) || this.isCancelling()) {
-                this.children.push(new MoveOutsideTask(this.game, this.target, this.lastOutsideTile));
+                this.children.push(this.createExitTask(gameObject));
                 this.aborted = true;
                 return false;
             }
             this.game.events.dispatch(new EnterObjectEvent(this.target, gameObject));
             if (this.onEnter(gameObject) === false) {
-                this.children.push(new MoveOutsideTask(this.game, this.target, this.lastOutsideTile));
+                this.children.push(this.createExitTask(gameObject));
                 this.aborted = true;
                 return false;
             }
@@ -56,6 +56,9 @@ export class EnterBuildingTask extends Task {
     }
     protected isAllowed(gameObject: any): boolean {
         return true;
+    }
+    protected createExitTask(gameObject: any): Task {
+        return new MoveOutsideTask(this.game, this.target, this.lastOutsideTile);
     }
     protected onEnter(gameObject: any): any {
         return true;

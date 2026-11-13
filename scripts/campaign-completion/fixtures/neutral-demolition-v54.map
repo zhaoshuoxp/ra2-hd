@@ -1,0 +1,65 @@
+; Standalone compatibility fixture. This is not an original campaign mission.
+; It uses original Urban terrain0 and original unmodified combat rules.
+[Basic]
+Name=Specialized neutral response and commando demolition scene
+NewINIFormat=4
+Player=Player House
+IgnoreGlobalAITriggers=yes
+Theme=No theme
+Intro=<none>
+Brief=<none>
+Win=<none>
+Lose=<none>
+[Map]
+Theater=URBAN
+Size=0,0,48,48
+LocalSize=5,5,38,36
+[IsoMapPack5]
+0=AAAAAA==
+[Overlay]
+[Waypoints]
+0=48040
+[Houses]
+0=Player House
+1=Enemy House
+2=Civie1 House
+[Player House]
+Country=Americans
+PlayerControl=yes
+Allies=Player House,Civie1 House
+Credits=1000
+TechLevel=10
+IQ=0
+Edge=South
+Color=DarkBlue
+[Enemy House]
+Country=Russians
+Allies=Enemy House
+Credits=0
+TechLevel=10
+IQ=0
+Edge=North
+Color=DarkRed
+[Civie1 House]
+Country=Americans
+Allies=Player House,Civie1 House
+Credits=0
+TechLevel=1
+IQ=0
+Color=Grey
+[Triggers]
+[Events]
+[Actions]
+[Tags]
+[Structures]
+0=Enemy House,CAOILD,256,51,61,0,None,1,0,1,0,0,None,None,None,0,0
+1=Enemy House,CAOUTP,256,62,58,0,None,1,0,1,0,0,None,None,None,0,0
+2=Player House,GACNST,256,38,51,0,None,1,0,1,0,0,None,None,None,0,0
+3=Enemy House,NAHAND,256,42,45,0,None,1,0,1,0,0,None,None,None,0,0
+4=Enemy House,NAWEAP,256,56,43,0,None,1,0,1,0,0,None,None,None,0,0
+5=Enemy House,NAPOWR,256,66,51,0,None,1,0,1,0,0,None,None,None,0,0
+[Units]
+0=Player House,MTNK,256,48,60,0,Guard,None,0,-1,0,-1,1,1
+[Infantry]
+0=Player House,TANY,256,40,44,0,Guard,0,None,0,-1,0,-1,1,0
+1=Player House,GHOST,256,54,42,0,Guard,0,None,0,-1,0,-1,1,0

@@ -30,3 +30,17 @@ test('unrestricted accepted families retain their existing availability', () => 
     expect(environmentFamilyScopeIssue(unrestricted, {})).toBeUndefined();
     expect(environmentFamilyScopeIssue(unrestricted, { officialSkirmishSourceSha256: source })).toBeUndefined();
 });
+
+test('YR campaign artwork needs an explicit edition and exact source while legacy scope remains RA2', () => {
+    const launch = { edition: 'yr', mission: 'sov01umd.map', sourceSha256: source };
+    const scoped: EnvironmentFamily = { ...family,
+        sourceScope: { campaignSources: [{ edition: 'yr', mission: launch.mission, sha256: source }] } };
+    expect(environmentFamilyScopeIssue(scoped, { campaign: { launch } })).toBeUndefined();
+    expect(environmentFamilyScopeIssue(scoped, { campaign: { launch: { ...launch, edition: 'ra2' } } }))
+        .toBe('campaign-map-source-scope-mismatch');
+    expect(environmentFamilyScopeIssue(scoped, { campaign: { launch: { ...launch, sourceSha256: 'b'.repeat(64) } } }))
+        .toBe('campaign-map-source-scope-mismatch');
+    const legacy: EnvironmentFamily = { ...family, sourceScope: { campaignSources: [{ mission: launch.mission, sha256: source }] } };
+    expect(environmentFamilyScopeIssue(legacy, { campaign: { launch } })).toBe('campaign-map-source-scope-mismatch');
+    expect(environmentFamilyScopeIssue(legacy, { campaign: { launch: { ...launch, edition: 'ra2' } } })).toBeUndefined();
+});

@@ -36,7 +36,10 @@ import { BunkerDepth } from '../building/BunkerDepth';
 import { FountainSurface } from '../building/FountainSurface';
 import { BuildingTurretRenderer } from '../building/BuildingTurretHd';
 import { configureWarFactoryLayerPose } from './building/WarFactoryLayerPose';
+import { buildingAnimationDisplayFrame } from './building/BuildingAnimationFrame';
 import { isViewCulled } from '../../gfx/ViewCulling';
+import type { HdSpriteOverride } from '../builder/HdSpriteOverride';
+import { activeEdition } from '@/editions/activeEdition';
 const d = ShpBuilder;
 const p = DamageType;
 const A = AnimationType;
@@ -216,6 +219,7 @@ export class Building {
     ambientSound: any;
     turretRotateSound: any;
     poweredSound: any;
+    private destructionAnimCreated = false;
     constructor(e: any, t: any, i: any, r: any, s: any, a: any, n: any, o: any, l: any, c: any, h: any, u: any, d: any, g: any, p: any, m: any, f: any, y: any, T: any, v: any, b: any, S = A.AnimationType.IDLE) {
         this.gameObject = e;
         this.selectionModel = t;
@@ -362,19 +366,33 @@ export class Building {
                             ? e.setExtraLight(this.shpExtraLight)
                             : e.setExtraLight(this.vxlExtraLight);
                     }));
-            if (this.aggregatedImageData) this.releaseBuildingHd = this.imageFinder.bindBuildingHd(
-                this.gameObject.name, this.aggregatedImageData, hd => {
-                    const apply = () => {
-                        for (const sprite of [this.mainObj, this.bib, ...[...this.animObjects.values()].flat()])
-                            sprite?.setHdOverride(hd);
-                        if (!hd) { this.buildingTurretHd?.dispose(); this.buildingTurretHd = undefined; }
-                    };
-                    // A family that finishes loading mid-construction would swap
-                    // art partway through the sequence; publish it when it ends.
-                    if (this.currentAnimType === A.AnimationType.BUILDUP || this.currentAnimType === A.AnimationType.UNBUILD)
-                        this.pendingBuildingHd = apply;
-                    else { this.pendingBuildingHd = undefined; apply(); }
-                });
+        }
+        if (!isViewCulled(t)) this.bindBuildingHd();
+    }
+    private applyBuildingHd(hd?: HdSpriteOverride) {
+        for (const sprite of [this.mainObj, this.bib, this.rubbleObj, ...[...this.animObjects.values()].flat()])
+            sprite?.setHdOverride(hd);
+        if (!hd) { this.buildingTurretHd?.dispose(); this.buildingTurretHd = undefined; }
+    }
+    private bindBuildingHd() {
+        if (!this.aggregatedImageData || this.releaseBuildingHd) return;
+        this.releaseBuildingHd = this.imageFinder.bindBuildingHd(this.gameObject.name, this.aggregatedImageData, hd => {
+            const apply = () => this.applyBuildingHd(hd);
+            // Keep an in-progress construction sequence on its current art.
+            // Clearing a released allocation must always happen synchronously.
+            if (hd && (this.currentAnimType === A.AnimationType.BUILDUP || this.currentAnimType === A.AnimationType.UNBUILD))
+                this.pendingBuildingHd = apply;
+            else { this.pendingBuildingHd = undefined; apply(); }
+        });
+    }
+    onViewCullChanged(visible: boolean) {
+        if (!this.imageFinder.usesViewportBuildingDemand(this.gameObject.name)) return;
+        if (visible) this.bindBuildingHd();
+        else {
+            this.pendingBuildingHd = undefined;
+            // Drop all material references before the shared queue can evict.
+            this.applyBuildingHd();
+            this.releaseBuildingHd?.(); this.releaseBuildingHd = undefined;
         }
     }
     createLamp(e) {
@@ -442,7 +460,8 @@ export class Building {
         this.animations.forEach((animation, sprite) => {
             const state = animation.getState();
             if (state !== f.AnimationState.STOPPED && state !== f.AnimationState.NOT_STARTED)
-                sprite.setFrame(animation.getCurrentFrame());
+                sprite.setFrame(buildingAnimationDisplayFrame(activeEdition, this.gameObject.name,
+                    animation.props, animation.getCurrentFrame()));
         });
     }
     update(i) {
@@ -455,6 +474,11 @@ export class Building {
                 this.setAnimation(this.initialAnimType, i),
                 this.plugins.forEach((e) => e.update(i)),
                 this.pipOverlay?.update(i);
+            // Source placements and restored worlds can become Ready after
+            // their renderer is created. Completed construction is authoritative
+            // even when a paused world clock cannot finish the old buildup.
+            if (!this.gameObject.isDestroyed && this.gameObject.buildStatus === m.BuildStatus.Ready
+                && this.currentAnimType === A.AnimationType.BUILDUP) this.setAnimation(A.AnimationType.IDLE, i);
             if (this.pendingUnitRecycle) {
                 this.pendingUnitRecycle = false;
                 if (!this.gameObject.isDestroyed && this.gameObject.buildStatus === m.BuildStatus.Ready &&
@@ -656,7 +680,8 @@ export class Building {
                         }
                         // Animation state always advances; an off-screen sprite skips
                         // the frame upload until onViewCullRestore re-applies it.
-                        if (!viewCulled) t.setFrame(e.getCurrentFrame());
+                        if (!viewCulled) t.setFrame(buildingAnimationDisplayFrame(activeEdition,
+                            this.gameObject.name, e.props, e.getCurrentFrame()));
                     }),
                         this.animObjects.forEach((e, t) => {
                             let a = this.animArtProps.getByType(t);
@@ -693,8 +718,7 @@ export class Building {
                     (c || d || g) && this.updateImage(h),
                     g &&
                         h === p.DamageType.DESTROYED &&
-                        this.objectRules.explosion?.length &&
-                        this.createExplosionAnims(this.renderableManager)),
+                        this.createDestructionAnims(this.renderableManager)),
                 this.gameObject.turretTrait &&
                     ((h = this.gameObject.turretTrait.facing) !==
                         this.lastTurretFacing &&
@@ -726,9 +750,15 @@ export class Building {
                                     !n &&
                                     (this.poweredSound = this.worldSound?.playEffect(u, this.gameObject, this.gameObject.owner, 0.25))));
         }
-        if (!this.buildingTurretHd && this.turret) {
-            const resource = this.imageFinder.getBuildingTurretHd(this.gameObject.name);
-            if (resource) this.buildingTurretHd = new BuildingTurretRenderer(this, resource);
+        const turretResource = this.imageFinder.getBuildingTurretHd(this.gameObject.name);
+        if (this.buildingTurretHd && (this.buildingTurretHd.resources.disposed ||
+            this.buildingTurretHd.resources !== turretResource)) {
+            this.buildingTurretHd.dispose();
+            this.buildingTurretHd = undefined;
+        }
+        if (!this.buildingTurretHd && this.turret &&
+            !(viewCulled && this.imageFinder.usesViewportBuildingDemand(this.gameObject.name))) {
+            if (turretResource && !turretResource.disposed) this.buildingTurretHd = new BuildingTurretRenderer(this, turretResource);
         }
         this.buildingTurretHd?.update();
         if (this.gameObject.gateTrait && this.gameObject.buildStatus === m.BuildStatus.Ready &&
@@ -747,6 +777,22 @@ export class Building {
     }
     updateConstructionCompletion() {
         updateBuildingConstructionCompletion(this);
+    }
+    createDestructionAnims(manager) {
+        const declared = activeEdition === 'yr' ? this.objectRules.destroyAnim : undefined;
+        if (declared?.length) {
+            if (this.destructionAnimCreated) return;
+            this.destructionAnimCreated = true;
+            manager.createTransientAnim(declared[u.getRandomInt(0, declared.length - 1)], (anim) => {
+                anim.setSourceBuildingGeometry(this.objectArt.foundation);
+                anim.setPosition(this.withPosition.getPosition());
+                if (anim.objectArt.remapable) {
+                    anim.palette = anim.palette.clone();
+                    anim.palette.remap(this.gameObject.owner.color);
+                }
+            });
+        }
+        if (this.objectRules.explosion?.length) this.createExplosionAnims(manager);
     }
     createExplosionAnims(e) {
         var i = this.objectArt.foundation, r = this.objectRules.explosion;
@@ -820,11 +866,13 @@ export class Building {
                         l && a.forEach((e) => (e.get3DObject().visible = false));
                         let e = this.animations.get(t);
                         var r = o !== p.DamageType.NORMAL, s = this.animArtProps.getByType(n)[i];
+                        const art = BuildingAnimArtProps.buildingAnimationArtForState(s, r,
+                            !!this.gameObject.garrisonTrait?.isOccupied());
                         if (configureWarFactoryLayerPose(e.props, this.gameObject.name, n, r)) {
                             e.rewind();
                             t.setFrame(e.getCurrentFrame());
-                        } else !r || s.damagedArt
-                            ? (e.props.setArt(r ? s.damagedArt : s.art),
+                        } else art
+                            ? (e.props.setArt(art),
                                 e.rewind())
                             : console.warn(`<${this.gameObject.name}>: Missing damaged anim ${A.AnimationType[n]},` +
                                 i);
@@ -903,7 +951,7 @@ export class Building {
                 this.mainObj.getFlat() &&
                     (M.MathUtils.translateTowardsCamera(this.mainObj.get3DObject(), this.camera, +g.Coords.ISO_WORLD_SCALE),
                         this.mainObj.get3DObject().updateMatrix()))
-            : ((this.placeholderObj = new O.DebugRenderable(e, this.objectArt.height, this.palette)),
+            : this.debugFrame.value && ((this.placeholderObj = new O.DebugRenderable(e, this.objectArt.height, this.palette)),
                 this.placeholderObj.setBatched(this.useSpriteBatching),
                 this.useSpriteBatching &&
                     this.placeholderObj.setBatchPalettes(this.paletteRemaps),
@@ -1066,7 +1114,9 @@ export class Building {
         }
     }
     createAnimObject(e, t, i, r, s) {
-        var a = e.art;
+        var a = BuildingAnimArtProps.buildingAnimationArtForState(e,
+            this.computeDamageType(this.gameObject.healthTrait.health) !== p.DamageType.NORMAL,
+            !!this.gameObject.garrisonTrait?.isOccupied()) ?? e.art;
         let n = new y.AnimProps(a, t);
         configureWarFactoryLayerPose(n, this.gameObject.name, e.type,
             this.computeDamageType(this.gameObject.healthTrait.health) !== p.DamageType.NORMAL);
@@ -1079,6 +1129,9 @@ export class Building {
         // The HD body has opaque pavement behind the crane claw. Keep the
         // moving crane in front without altering native art or animation time.
         if (this.gameObject.name === 'NACNST' && e.name === 'NACNST_C') l.setHdDepthOffset(-1);
+        // Keep the HD crane in front of the fixed mast cap when native trim
+        // widths and atlas pages change. Retain the ordering of docking parts.
+        if (this.gameObject.name === 'NAYARD' && /^NAYARD_(A|D|S[123])$/.test(e.name)) l.setHdDepthOffset(r + 3);
         const hd = this.imageFinder.getBuildingHdOverride(this.gameObject.name, this.aggregatedImageData);
         if (hd) l.setHdOverride(hd);
         return (l.setSize(t),
@@ -1461,8 +1514,7 @@ export class Building {
             return this.gameObject.deathType === n.DeathType.Temporal ||
                 this.gameObject.deathType === n.DeathType.None
                 ? void 0
-                : void (this.objectRules.explosion?.length &&
-                    this.createExplosionAnims(t));
+                : void this.createDestructionAnims(t);
     }
     dispose() {
         this.bunkerDepth?.dispose();

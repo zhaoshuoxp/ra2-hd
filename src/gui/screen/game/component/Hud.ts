@@ -556,6 +556,7 @@ export class Hud extends UiObject {
     setMinimap(minimap: any): void {
         this.sidebarRadar.setMinimap(minimap);
     }
+    getCampaignRadarHost(): HTMLElement | undefined { return this.sidebarRadar.getTransmissionHost(); }
     toggleMenuContentVisibility(visible: boolean): void {
         this.menuContentContainer.setVisible(visible);
         this.menuContentArea?.setBackgroundVisible(visible);

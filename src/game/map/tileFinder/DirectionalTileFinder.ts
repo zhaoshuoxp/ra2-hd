@@ -23,7 +23,7 @@ export class DirectionalTileFinder {
         this.dirY = dirY;
         this.predicate = predicate;
         this.checkBounds = checkBounds;
-        this.finished = false;
+        this.finished = distance > maxDistance;
         this.distance = distance;
     }
     getNextTile(): Tile | undefined {
@@ -38,7 +38,7 @@ export class DirectionalTileFinder {
                     (!this.checkBounds || this.mapBounds.isWithinBounds(tile)) &&
                     this.predicate(tile) &&
                     (result = tile),
-                    this.maxDistance && this.distance >= this.maxDistance) {
+                    this.distance >= this.maxDistance) {
                     this.finished = true;
                     return result;
                 }

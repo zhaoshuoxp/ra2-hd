@@ -10,6 +10,7 @@ import { VxlGeometryMonotoneBuilder } from '../../src/engine/renderable/builder/
 import { BufferGeometrySerializer } from '../../src/engine/gfx/geometry/BufferGeometrySerializer';
 import { prepareVxlGeometry } from '../../src/engine/renderable/unitVxl/prepareVxlGeometry';
 import { VxlPagePreparer } from '../../src/engine/renderable/unitVxl/VxlPagePreparer';
+import { BufferGeometryUtils } from '../../src/engine/gfx/BufferGeometryUtils';
 
 const local = test;
 
@@ -25,15 +26,28 @@ local('worker meshing preserves native DISK and multipart tank geometry exactly'
         expect(prepared.length).toBe(native.sections.length);
         for (const [index, section] of native.sections.entries()) {
             const expected = new VxlGeometryMonotoneBuilder().build(section);
+            const reference = new VxlGeometryMonotoneBuilder(BufferGeometryUtils.mergeVertices).build(section);
             const actual = new BufferGeometrySerializer().unserialize(new DataStream(prepared[index]));
             expect(Object.keys(actual.attributes)).toEqual(Object.keys(expected.attributes));
             for (const key of Object.keys(expected.attributes)) {
                 expect(actual.getAttribute(key).array).toEqual(expected.getAttribute(key).array);
+                expect(expected.getAttribute(key).array).toEqual(reference.getAttribute(key).array);
+                const a = expected.getAttribute(key).array, b = reference.getAttribute(key).array;
+                expect(Buffer.from(a.buffer, a.byteOffset, a.byteLength)).toEqual(Buffer.from(b.buffer, b.byteOffset, b.byteLength));
             }
             expect(actual.index!.array).toEqual(expected.index!.array);
+            expect(expected.index!.array).toEqual(reference.index!.array);
+            const serializer = new BufferGeometrySerializer();
+            expect(new Uint8Array(serializer.serialize(expected))).toEqual(new Uint8Array(serializer.serialize(reference)));
+            expect(new Uint8Array(prepared[index])).toEqual(new Uint8Array(serializer.serialize(reference)));
             actual.computeBoundingBox();
             expect(actual.boundingBox).toEqual(expected.boundingBox);
-            actual.dispose(); expected.dispose();
+            expect(expected.boundingBox).toEqual(reference.boundingBox);
+            const smooth = new VxlGeometryMonotoneBuilder().build(section, true);
+            const smoothReference = new VxlGeometryMonotoneBuilder(BufferGeometryUtils.mergeVertices).build(section, true);
+            for (const name of Object.keys(smooth.attributes)) expect(smooth.attributes[name].array).toEqual(smoothReference.attributes[name].array);
+            expect(smooth.index!.array).toEqual(smoothReference.index!.array);
+            actual.dispose(); expected.dispose(); reference.dispose(); smooth.dispose(); smoothReference.dispose();
         }
     }
 });

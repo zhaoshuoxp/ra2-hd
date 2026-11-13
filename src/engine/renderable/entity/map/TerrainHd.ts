@@ -3,7 +3,8 @@ import { activeEdition } from '@/editions/activeEdition';
 import { Engine } from '@/engine/Engine';
 import { TmpDrawable } from '@/engine/gfx/drawable/TmpDrawable';
 import { theaterName } from '@/engine/theaterName';
-import { MAX_TERRAIN_HD_GROUPS, nativeTerrainMetadata, checkTerrainRect, checkTerrainCoverage } from './terrainHdContract';
+import { MAX_TERRAIN_HD_GROUPS, nativeTerrainMetadata, checkTerrainRect, checkTerrainCoverage,
+    admitTerrainRockContours } from './terrainHdContract';
 import type { TmpFile } from '@/data/TmpFile';
 import type { TmpImage } from '@/data/TmpImage';
 import type { HdDensity } from '@/engine/gfx/HdDensity';
@@ -85,6 +86,9 @@ export async function loadTerrainHd(map: any, theater: any, renderer: any, enabl
                     });
                     files.push(file!);
                 }
+                const exposedRock = group.sourcePinnedExposedRockContours === undefined ? undefined
+                    : admitTerrainRockContours(group.sourcePinnedExposedRockContours,
+                        files.map(file => ({ member: file.filename, sha256: sourceHashes.get(file)! })), name, activeEdition);
                 check(variant.rects.length === group.members.reduce((n: number, m: any) => n + m.images.length, 0),
                     'terrain-incomplete-rects');
                 const response = await fetch(`/local-terrain/${manifest.revision}/${variant.file}`,
@@ -97,7 +101,7 @@ export async function loadTerrainHd(map: any, theater: any, renderer: any, enabl
                     checkTerrainRect(rect, native.logical, density, variant.size);
                     const bitmap = new TmpDrawable().draw(files[i].images[index] as any, files[i].blockWidth, files[i].blockHeight);
                     checkTerrainCoverage(rgba, variant.size[0], rect, bitmap.data, native.logical, density,
-                        group.contourReconstruction, native);
+                        group.contourReconstruction, native, exposedRock?.get(files[i].filename));
                     temporary.push({ texture: undefined!, rect: { x: rect[0], y: rect[1], width: rect[2], height: rect[3] },
                         logical: { width: native.logical[0], height: native.logical[1] }, group: group.id,
                         source: { member: files[i].filename, sha256: sourceHashes.get(files[i])!, subTile: index } });

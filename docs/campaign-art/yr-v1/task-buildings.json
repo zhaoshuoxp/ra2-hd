@@ -1,0 +1,822 @@
+{
+  "schema": "yr-original-task-building-art-v1",
+  "status": "PASS_32_COMPLETE_SHP_FAMILIES_WITH_NATIVE_2X4X_AND_SOURCE_TIMING",
+  "families": [
+    {
+      "family": "yr-task-snow-ammocrat-v1",
+      "identity": "AMMOCRAT",
+      "theater": "SNOW",
+      "registration": "docs/campaign-art/yr-v1/task-snow-ammocrat-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-snow-ammocrat.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 3,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-snow-ammocrat-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-snow-ammocrat-native-4x-r1.json.gz"
+        ],
+        "originalZeroHealthRubbleUnchanged": false,
+        "ownerColors": "NO_ORIGINAL_OWNER_REGION"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-snow-camisc06-v1",
+      "identity": "CAMISC06",
+      "theater": "SNOW",
+      "registration": "docs/campaign-art/yr-v1/task-snow-camisc06-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-snow-camisc06-r3.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 3,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-snow-camisc06-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-snow-camisc06-native-4x-r1.json.gz"
+        ],
+        "originalZeroHealthRubbleUnchanged": false,
+        "ownerColors": "PASS_ORIGINAL_HOUSE_PALETTES"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-cabarr02-v1",
+      "identity": "CABARR02",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-cabarr02-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-cabarr02.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 2,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-newurban-cabarr02-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-newurban-cabarr02-native-4x-r1.json.gz"
+        ],
+        "originalZeroHealthRubbleUnchanged": false,
+        "ownerColors": "NO_ORIGINAL_OWNER_REGION"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-desert-caegyp03-v1",
+      "identity": "CAEGYP03",
+      "theater": "DESERT",
+      "registration": "docs/campaign-art/yr-v1/task-desert-caegyp03-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-desert-caegyp03.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-desert-caegyp03-native-2x-r2.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-desert-caegyp03-native-4x-r2.json.gz"
+        ],
+        "originalZeroHealthRubbleUnchanged": false,
+        "ownerColors": "NO_ORIGINAL_OWNER_REGION"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-desert-caegyp06-v1",
+      "identity": "CAEGYP06",
+      "theater": "DESERT",
+      "registration": "docs/campaign-art/yr-v1/task-desert-caegyp06-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-desert-caegyp06.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-desert-caegyp06-native-2x-r5.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-desert-caegyp06-native-4x-r2.json.gz"
+        ],
+        "originalZeroHealthRubbleUnchanged": true,
+        "ownerColors": "NO_ORIGINAL_OWNER_REGION",
+        "diagnosticOccludersHidden": [
+          "CAEGYP01",
+          "CAEGYP04",
+          "CAEGYP05"
+        ],
+        "qualification": "Frozen diagnostic renderer isolation exposes the original mound, which is covered by neighboring source pyramid parts. Every world object and the original zero health remain unchanged."
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-egypt-great-pyramid-v1",
+      "identity": "CAEGYP01/CAEGYP04/CAEGYP05",
+      "theater": "DESERT",
+      "registration": "docs/campaign-art/yr-v1/egypt-pyramid-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-desert-caegyp01-r4.json",
+        "docs/campaign-art/yr-v1/task-desert-caegyp04-r4.json",
+        "docs/campaign-art/yr-v1/task-desert-caegyp05-r4.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 12,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/pyramid-caegyp01-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/pyramid-caegyp01-native-4x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/pyramid-caegyp04-native-2x-r4.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/pyramid-caegyp04-native-4x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/pyramid-caegyp05-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/pyramid-caegyp05-native-4x-r1.json.gz"
+        ],
+        "originalZeroHealthRubbleUnchanged": false,
+        "ownerColors": "NO_ORIGINAL_OWNER_REGION",
+        "compoundPosesPerDensity": 4,
+        "diagnosticOccludersHidden": true,
+        "qualification": "Individual states isolate neighboring renderers. Compound captures restore all three original parts at their unchanged original placements. World, tick, RNG, health, teams and objectives stay frozen and identical."
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-hollywood-bowl-v1",
+      "identity": "CALA04/CALA11/CALA12",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/hollywood-bowl-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-cala04.json",
+        "docs/campaign-art/yr-v1/task-newurban-cala11.json",
+        "docs/campaign-art/yr-v1/task-newurban-cala12.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_SLOTS_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 12,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/hollywood-cala04-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/hollywood-cala04-native-4x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/hollywood-cala11-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/hollywood-cala11-native-4x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/hollywood-cala12-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/hollywood-cala12-native-4x-r1.json.gz"
+        ],
+        "compoundPosesPerDensity": 4,
+        "ownerColors": "PASS_ORIGINAL_HOUSE_PALETTES_FOR_OCCUPIED_STAGE",
+        "qualification": "The stage owner-color probe uses original registered palettes. Each source actor is isolated through renderer visibility, then all three source placements are restored for compound captures. The two seating alternate slots remain unreachable under original CanBeOccupied=no; forced diagnostic images do not claim source garrison events."
+      },
+      "sourceStateUsage": "docs/campaign-art/yr-v1/hollywood-state-usage.json",
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-yapppt-v1",
+      "identity": "YAPPPT",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-yapppt-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-yapppt.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 3,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/mission-device-yapppt-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/mission-device-yapppt-native-4x-r1.json.gz"
+        ],
+        "ownerColors": "PASS_ORIGINAL_REGISTERED_HOUSE_PALETTES",
+        "qualification": "Fresh original source placement."
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-catime02-v1",
+      "identity": "CATIME02",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-catime02-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-catime02.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 3,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/mission-device-catime02-native-2x-r3.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/mission-device-catime02-native-4x-r3.json.gz"
+        ],
+        "ownerColors": "PASS_ORIGINAL_REGISTERED_HOUSE_PALETTES",
+        "qualification": "Original Jurassic phase entered by historical ordinary inputs from fresh original constructors under YR45. Both densities and different observer batch boundaries retain identical tick 11120, world, RNG, mission, teams and callbacks. This is source-phase/art evidence, separate from fresh public initialization."
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-casanf01-v1",
+      "identity": "CASANF01",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-casanf01-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-casanf01.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-newurban-casanf01-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-newurban-casanf01-native-4x-r1.json.gz"
+        ],
+        "ownerColors": "PASS_ORIGINAL_REGISTERED_HOUSE_PALETTES",
+        "originalGarrisonEligibility": "ORIGINAL_RULES_CAN_BE_OCCUPIED_YES",
+        "qualification": "Frozen native normal/damaged/garrison/rubble display poses and original owner palettes. Source actors, their original damaged health/fire overlays, world/RNG/tasks and shadows remain unchanged."
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-casanf02-v1",
+      "identity": "CASANF02",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-casanf02-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-casanf02.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-newurban-casanf02-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-newurban-casanf02-native-4x-r1.json.gz"
+        ],
+        "ownerColors": "PASS_ORIGINAL_REGISTERED_HOUSE_PALETTES",
+        "originalGarrisonEligibility": "ORIGINAL_RULES_CAN_BE_OCCUPIED_YES",
+        "qualification": "Frozen native normal/damaged/garrison/rubble display poses and original owner palettes. Source actors, their original damaged health/fire overlays, world/RNG/tasks and shadows remain unchanged."
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-casanf03-v1",
+      "identity": "CASANF03",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-casanf03-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-casanf03.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_AND_GPU_DENSITY",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-newurban-casanf03-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/task-newurban-casanf03-native-4x-r1.json.gz"
+        ],
+        "ownerColors": "PASS_ORIGINAL_REGISTERED_HOUSE_PALETTES",
+        "originalGarrisonEligibility": "ORIGINAL_RULES_CAN_BE_OCCUPIED_YES",
+        "qualification": "Frozen native normal/damaged/garrison/rubble display poses and original owner palettes. Source actors, their original damaged health/fire overlays, world/RNG/tasks and shadows remain unchanged."
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-golden-gate-v1",
+      "identity": "GOLDEN_GATE",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-golden-gate-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-casanf04.json",
+        "docs/campaign-art/yr-v1/task-newurban-casanf09.json",
+        "docs/campaign-art/yr-v1/task-newurban-casanf10.json",
+        "docs/campaign-art/yr-v1/task-newurban-casanf11.json",
+        "docs/campaign-art/yr-v1/task-newurban-casanf12.json",
+        "docs/campaign-art/yr-v1/task-newurban-casanf13.json",
+        "docs/campaign-art/yr-v1/task-newurban-casanf14.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_SURVIVING_COMPONENT_STATES_2X_4X_AND_COMPLETE_SEVEN_MEMBER_GPU_ADMISSION",
+        "framesPerDensity": 21,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf04-native-2x-r2.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf04-native-4x-r2.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf09-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf09-native-4x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf11-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf11-native-4x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf12-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf12-native-4x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf13-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf13-native-4x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf14-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/golden-gate-casanf14-native-4x-r1.json.gz"
+        ],
+        "originalRemovedMembers": [
+          "CASANF10"
+        ],
+        "ownerColors": "PASS_ZERO_ORIGINAL_OWNER_PIXELS_AND_ZERO_RED_BLUE_PALETTE_RESPONSE",
+        "originalGarrisonEligibility": "ORIGINAL_RULES_CAN_BE_OCCUPIED_NO",
+        "qualification": "Six surviving original bridge components retain all three frozen renderer slots and their original shadows at both densities. The source-zero-health CASANF10 actor remains removed; all three of its slots are export-qualified and GPU-resident through complete atomic family admission. Alternate third slots do not establish an original garrison event."
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-casanf08-v1",
+      "identity": "CASANF08",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-casanf08-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-casanf08-r2.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_GPU_DENSITY_AND_RELEASE",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf08-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf08-native-4x-r1.json.gz"
+        ],
+        "ownerColors": "PASS_ORIGINAL_REGISTERED_HOUSE_PALETTES",
+        "originalCanBeOccupied": "yes",
+        "ordinaryGarrison": "NOT_CLAIMED_BY_DIAGNOSTIC_POSES"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-casanf06-v1",
+      "identity": "CASANF06",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-casanf06-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-casanf06.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_GPU_DENSITY_AND_RELEASE",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf06-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf06-native-4x-r1.json.gz"
+        ],
+        "ownerColors": "PASS_ORIGINAL_REGISTERED_HOUSE_PALETTES",
+        "originalCanBeOccupied": "yes",
+        "ordinaryGarrison": "NOT_CLAIMED_BY_DIAGNOSTIC_POSES"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-casanf16-v1",
+      "identity": "CASANF16",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-casanf16-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-casanf16.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_GPU_DENSITY_AND_RELEASE",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf16-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf16-native-4x-r1.json.gz"
+        ],
+        "ownerColors": "NO_ORIGINAL_OWNER_REGION",
+        "originalCanBeOccupied": "no",
+        "ordinaryGarrison": "NOT_CLAIMED_BY_DIAGNOSTIC_POSES"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-casanf07-v1",
+      "identity": "CASANF07",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-casanf07-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-casanf07.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_GPU_DENSITY_AND_RELEASE",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf07-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf07-native-4x-r1.json.gz"
+        ],
+        "ownerColors": "PASS_ORIGINAL_REGISTERED_HOUSE_PALETTES",
+        "originalCanBeOccupied": "yes",
+        "ordinaryGarrison": "NOT_CLAIMED_BY_DIAGNOSTIC_POSES"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-casanf05-v1",
+      "identity": "CASANF05",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-casanf05-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-casanf05.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_GPU_DENSITY_AND_RELEASE",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf05-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf05-native-4x-r1.json.gz"
+        ],
+        "ownerColors": "PASS_ORIGINAL_REGISTERED_HOUSE_PALETTES",
+        "originalCanBeOccupied": "yes",
+        "ordinaryGarrison": "NOT_CLAIMED_BY_DIAGNOSTIC_POSES"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-casanf17-v1",
+      "identity": "CASANF17",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-casanf17-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-casanf17.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_GPU_DENSITY_AND_RELEASE",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf17-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf17-native-4x-r1.json.gz"
+        ],
+        "ownerColors": "PASS_ORIGINAL_REGISTERED_HOUSE_PALETTES",
+        "originalCanBeOccupied": "yes",
+        "ordinaryGarrison": "NOT_CLAIMED_BY_DIAGNOSTIC_POSES"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-caseat01-v1",
+      "identity": "CASEAT01",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-caseat01-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-caseat01.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ORIGINAL_DISPLAY_STATES_2X_4X_NATIVE_SHADOWS_GPU_DENSITY_AND_RELEASE",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-caseat01-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-caseat01-native-4x-r1.json.gz"
+        ],
+        "ownerColors": "PASS_ORIGINAL_REGISTERED_HOUSE_PALETTES",
+        "originalCanBeOccupied": "yes",
+        "ordinaryGarrison": "NOT_CLAIMED_BY_DIAGNOSTIC_POSES"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-urban-casydn03-v2",
+      "identity": "CASYDN03",
+      "theater": "URBAN",
+      "registration": "docs/campaign-art/yr-v1/task-urban-casydn03-registration-r2.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-urban-casydn03-r2.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_FROZEN_COMPLETE_SOURCE_STATES_AND_RELEASE_BOTH_DENSITIES",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/opera-shell-lines-complete-native-2x-r2.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/opera-shell-lines-complete-native-4x-r2.json.gz"
+        ],
+        "qualification": "docs/campaign-art/yr-v1/opera-shell-lines-qualification-r2.json"
+      },
+      "userVisualAcceptance": "R1_FULL_RESOLUTION_NORMAL_BASIS_ACCEPTED_R2_REFINEMENT_PENDING"
+    },
+    {
+      "family": "yr-task-urban-calond03-v1",
+      "identity": "CALOND03",
+      "theater": "URBAN",
+      "registration": "docs/campaign-art/yr-v1/task-urban-calond03-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-urban-calond03.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_FROZEN_COMPLETE_SOURCE_STATES_AND_RELEASE_BOTH_DENSITIES",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-urban-calond03-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-urban-calond03-native-4x-r1.json.gz"
+        ],
+        "qualification": "docs/campaign-art/yr-v1/city-buildings-qualification-r1.json"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-calond01-v1",
+      "identity": "CALOND01",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-calond01-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-calond01-r2.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_FROZEN_COMPLETE_SOURCE_STATES_AND_RELEASE_BOTH_DENSITIES",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond01-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond01-native-4x-r1.json.gz"
+        ],
+        "qualification": "docs/campaign-art/yr-v1/city-buildings-qualification-r1.json"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-calond03-v1",
+      "identity": "CALOND03",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-calond03-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-calond03-r2.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_FROZEN_COMPLETE_SOURCE_STATES_AND_RELEASE_BOTH_DENSITIES",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond03-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond03-native-4x-r1.json.gz"
+        ],
+        "qualification": "docs/campaign-art/yr-v1/city-buildings-qualification-r1.json"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-calond04-v1",
+      "identity": "CALOND04",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-calond04-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-calond04-r2.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_FROZEN_COMPLETE_SOURCE_STATES_AND_RELEASE_BOTH_DENSITIES",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond04-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond04-native-4x-r1.json.gz"
+        ],
+        "qualification": "docs/campaign-art/yr-v1/city-buildings-qualification-r1.json"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-calond05-v1",
+      "identity": "CALOND05",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-calond05-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-calond05-r2.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_FROZEN_COMPLETE_SOURCE_STATES_AND_RELEASE_BOTH_DENSITIES",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond05-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond05-native-4x-r1.json.gz"
+        ],
+        "qualification": "docs/campaign-art/yr-v1/city-buildings-qualification-r1.json"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-calond06-v1",
+      "identity": "CALOND06",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-calond06-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-calond06-r2.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_FROZEN_COMPLETE_SOURCE_STATES_AND_RELEASE_BOTH_DENSITIES",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond06-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond06-native-4x-r1.json.gz"
+        ],
+        "qualification": "docs/campaign-art/yr-v1/city-buildings-qualification-r1.json"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-caseat02-v1",
+      "identity": "CASEAT02",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-caseat02-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-caseat02-body.json",
+        "docs/campaign-art/yr-v1/task-newurban-caseat02-active.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_BODY_ACTIVE_EXPORTS_NATIVE_CLOCKS_DENSITIES_AND_RELEASE",
+        "framesPerDensity": 44,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/caseat02-complete-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/caseat02-complete-native-4x-r1.json.gz"
+        ],
+        "qualification": "docs/campaign-art/yr-v1/seattle-campus-qualification-r1.json"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-temperate-catran01-v1",
+      "identity": "CATRAN01",
+      "theater": "TEMPERATE",
+      "registration": "docs/campaign-art/yr-v1/task-temperate-catran01-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-temperate-catran01.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_FROZEN_COMPLETE_SOURCE_STATES_AND_RELEASE_BOTH_DENSITIES",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/crypt1-complete-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/crypt1-complete-native-4x-r1.json.gz"
+        ],
+        "qualification": "docs/campaign-art/yr-v1/transylvania-crypts-qualification-r1.json"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-temperate-catran02-v1",
+      "identity": "CATRAN02",
+      "theater": "TEMPERATE",
+      "registration": "docs/campaign-art/yr-v1/task-temperate-catran02-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-temperate-catran02.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_FROZEN_COMPLETE_SOURCE_STATES_AND_RELEASE_BOTH_DENSITIES",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/crypt2-complete-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/crypt2-complete-native-4x-r1.json.gz"
+        ],
+        "qualification": "docs/campaign-art/yr-v1/transylvania-crypts-qualification-r1.json"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-caeast01-v1",
+      "identity": "CAEAST01",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-caeast01-registration-r2.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-caeast01-body-r2.json",
+        "docs/campaign-art/yr-v1/task-newurban-caeast01-destruction-r3.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_NEW_STONE_MATERIAL_COMPLETE_BODY_AND_DESTRUCTION_NATIVE_2X4X",
+        "bodyFramesPerDensity": 4,
+        "destructionFramesPerDensity": 25,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/easter-material-body-native-2x-r2.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/easter-material-destruction-native-2x-r2.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/easter-material-body-native-4x-r2.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/easter-material-destruction-native-4x-r2.json.gz"
+        ],
+        "qualification": "docs/campaign-art/yr-v1/easter-stone-qualification-r2.json"
+      },
+      "userVisualAcceptance": "PENDING"
+    },
+    {
+      "family": "yr-task-newurban-yarock-v2",
+      "identity": "YAROCK",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-yarock-registration-r5.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-yarock-body-r4.json",
+        "docs/campaign-art/yr-v1/task-newurban-yarock-active-r4.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_ROCKET_BODY_ACTIVE_COMPOSITE_CLOCK_AND_RELEASE_NATIVE_2X4X",
+        "qualification": "docs/campaign-art/yr-v1/rocket-complete-qualification-r5.json",
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/rocket-composite-native-2x-r6.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/rocket-composite-native-4x-r6.json.gz"
+        ],
+        "sourceWorldExact": true,
+        "sceneExitChargesZero": true,
+        "completeBodyAndActiveComposite": true
+      },
+      "userVisualAcceptance": "PENDING"
+    }
+  ],
+  "userVisualAcceptance": "PENDING",
+  "counts": {
+    "families": 32,
+    "members": 45,
+    "densityFrames": 518,
+    "pages": 97,
+    "ownerStates": 106,
+    "neutralStates": 412,
+    "unusedMarkerDensityFrames": 40,
+    "nativeSeparateShadowFrames": 219,
+    "preservedAcceptedDensityFrames": 0,
+    "preservedAcceptedBaseDensityFrames": 6
+  },
+  "contracts": {
+    "passed": 84,
+    "sourceExporterTests": 4,
+    "hollywoodStateUsageCases": 3,
+    "goldenGateStateUsageCases": 2,
+    "campaignArtCases": 16,
+    "totalCases": 109,
+    "status": "PASS_ALL_109_AFFECTED_CASES_AFTER_ISOLATED_EXISTING_TIMEOUT_RECHECK",
+    "log": "/private/tmp/ra2-yr-golden-gate-contracts-r1.log",
+    "recheckLog": "/private/tmp/ra2-yr-golden-gate-contracts-r2.log",
+    "qualification": "108 cases pass in the initial run. The existing missing-lamp test exceeds its five-second limit while resource audits run concurrently, then passes alone in 6.50 seconds with a thirty-second runner timeout. The failed log is retained.",
+    "entryTypecheck": "PASS_R57"
+  },
+  "sourceStandard": "docs/hd-art-standard.md",
+  "pendingFamilies": [],
+  "attachedFamilies": [
+    {
+      "family": "yr-task-newurban-caeast02-v1",
+      "identity": "CAEAST02",
+      "theater": "NEWURBAN",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-caeast02-registration.json",
+      "recipes": [
+        "docs/campaign-art/yr-v1/task-newurban-caeast02.json"
+      ],
+      "preservedAcceptedDensityFrames": 0,
+      "nativeValidation": {
+        "status": "PASS_COMPLETE_BODY_AND_TURRET_WITH_RETAINED_EXACT_SHP_STATE_PROOF",
+        "framesPerDensity": 4,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/cahead-complete-native-2x-r2.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/cahead-complete-native-4x-r1.json.gz"
+        ],
+        "bodyGeometryShadowAndOwnerEvidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/mission-device-caeast02-native-2x-r4.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/mission-device-caeast02-native-4x-r4.json.gz"
+        ],
+        "ownerColors": "PASS_SHP_REGISTERED_HOUSE_PALETTES_AND_ZERO_OWNER_CAHEAD_VOXELS"
+      },
+      "userVisualAcceptance": "PENDING",
+      "status": "PASS_COMPLETE_BODY_AND_TURRET_SOURCE_SCOPED_NATIVE_2X_4X",
+      "completeAttachmentLedger": "docs/campaign-art/yr-v1/building-turrets.json"
+    }
+  ],
+  "countsQualification": "Counts cover the thirty-two SHP families in this ledger, including linked activity/destruction members and all seven Golden Gate members. Original unused marker slots are retained and counted separately from authored HD states. Additional complete turret attachments are counted in building-turrets.json.",
+  "coastalContracts": {
+    "buildingCases": 105,
+    "buildingAssertions": 2070,
+    "sourceExporterCases": 4,
+    "sourceExporterAssertions": 47,
+    "ownerPaintPythonCases": 2,
+    "logs": [
+      "/private/tmp/ra2-yr-coastal-b-contracts-r1.log",
+      "/private/tmp/ra2-yr-coastal-source-export-r1.log",
+      "/private/tmp/ra2-yr-owner-paint-tests-r1.log"
+    ],
+    "entryTypecheck": "PASS_R59",
+    "entryTypecheckLog": "/private/tmp/ra2-yr-typecheck-r59.log",
+    "desktopPreparation": "PASS_R59_219_BUILT_FILES",
+    "desktopLog": "/private/tmp/ra2-yr-desktop-r59.log"
+  },
+  "cityContracts": {
+    "buildingCases": 21,
+    "buildingAssertions": 250,
+    "log": "/private/tmp/ra2-yr-city-c-contracts-r1.log",
+    "entryTypecheck": "PASS_R60",
+    "entryTypecheckLog": "/private/tmp/ra2-yr-typecheck-r60.log",
+    "desktopPreparation": "PASS_R60_219_BUILT_FILES",
+    "desktopLog": "/private/tmp/ra2-yr-desktop-r60.log"
+  },
+  "latestLinkedFamilyChecks": {
+    "selectedFamiliesCases": 33,
+    "selectedFamiliesAssertions": 465,
+    "selectedFamiliesLog": "/private/tmp/ra2-yr-linked-buildings-contracts-r3.log",
+    "rocketV2Cases": 3,
+    "rocketV2Assertions": 59,
+    "rocketV2Log": "/private/tmp/ra2-yr-rocket-v2-contracts-r5.log",
+    "candidateOwnerRegistrationGuardCases": 3,
+    "ownerMaterialPythonCases": 5,
+    "entryTypecheck": "PASS_R65",
+    "desktopPreparation": "PASS_R65_219_BUILT_FILES",
+    "qualification": "The 33-case run precedes the ledger switch from retained Rocket v1 to v2. The separate three-case run verifies selected v2 source geometry, 2X/4X binding, complete-family fallback and release."
+  }
+}

@@ -52,7 +52,7 @@ export class HomeScreen implements Screen {
             label: text(key, fallback), tooltip: unavailable, disabled: true, onClick: () => {},
         });
         const buttons: SidebarButton[] = [
-            placeholder('HD:MenuCampaign', 'Campaign'),
+            { label: text('HD:MenuCampaign', 'Campaign'), onClick: () => this.controller?.goToScreen(MainMenuScreenType.Campaign, { playIntroduction: true }) },
             {
                 label: text('HD:MenuSkirmish', 'Skirmish'),
                 tooltip: text('HD:MenuSkirmishHint', 'Play against local AI opponents'),
@@ -61,14 +61,15 @@ export class HomeScreen implements Screen {
             { label: text('HD:LoadGame', 'Load Game'), onClick: () =>
                 this.controller?.pushScreen(MainMenuScreenType.LoadGame) },
             placeholder('HD:MenuLAN', 'LAN'),
-            placeholder('HD:MenuMovies', 'Movies'),
+            { label: text('HD:MenuMovies', 'Movies'), onClick: () => this.controller?.goToScreen(MainMenuScreenType.Movies) },
             {
                 label: text('HD:MenuOptions', 'Options'),
                 onClick: () => this.controller?.pushScreen(MainMenuScreenType.Options),
             },
             {
                 label: text('HD:MenuEdition', 'Switch Game'),
-                onClick: () => { const url = new URL(location.href); url.searchParams.delete('edition'); location.replace(url.href); },
+                onClick: () => { const url = new URL(location.href);
+                    url.searchParams.delete('edition'); url.searchParams.delete('campaign'); location.replace(url.href); },
             },
             {
                 label: text('HD:MenuExit', 'Exit Game'),

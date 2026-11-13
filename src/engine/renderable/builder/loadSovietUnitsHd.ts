@@ -19,6 +19,10 @@ import { vxlUnitAvailableInTheater, vxlUnitFamilies } from '../unitVxl/identitie
 import { theaterName } from '@/engine/theaterName';
 import { VxlPagePreparer } from '../unitVxl/VxlPagePreparer';
 import { uploadHdTextures } from './uploadHdTextures';
+import { campaignVxlReuseAllowed, hasCampaignVxlReuseForTheater } from '../unitVxl/campaignVxlReuse';
+import type { EnvironmentSourceContext } from './environmentHdContract';
+import { campaignTaskNpcAllowed, hasTaskNpcForTheater, isTaskNpcTiledHdSource,
+    taskNpcContracts } from './campaignTaskNpcHd';
 
 type LoadedMember = { image: any; override: HdSpriteOverride };
 export interface LoadedSovietUnitsHd {
@@ -30,6 +34,8 @@ export interface LoadedSovietUnitsHd {
     prewarmBuilding?: (identity: string) => () => void;
     preview?: (identity: string) => () => void;
     prewarm?: (identity: string) => () => void;
+    prefetch?: (identity: string) => () => void;
+    viewportBuildingDemand?: ReadonlySet<string>;
     idle?: () => Promise<void>;
     dispose?: () => void;
 }
@@ -40,8 +46,8 @@ const check = (value: unknown, reason: string) => { if (!value) throw Error(reas
 const digest = async (bytes: ArrayBuffer) => Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)))
     .map(b => b.toString(16).padStart(2, '0')).join('');
 const disposeMembers = (members: Map<string, LoadedMember>) => members.forEach(member => disposeHdSprite(member.override));
-const vxlParent = (identity: string) => ({ V3ROCKET: 'V3', DMISL: 'DRED', BPLN: 'BORIS',
-    HORNET: 'CARRIER', ASW: 'DEST', CMON: 'CMIN', CMISL: 'BSUB', TRUCKA: 'DTRUCK' } as Record<string, string>)[identity] ?? identity;
+export const vxlParent = (identity: string) => ({ V3ROCKET: 'V3', DMISL: 'DRED', BPLN: 'BORIS',
+    HORNET: 'CARRIER', ASW: 'DEST', HORV: 'HARV', CMON: 'CMIN', CMISL: 'BSUB', TRUCKA: 'DTRUCK', CARGOPLANE: 'PDPLANE' } as Record<string, string>)[identity] ?? identity;
 const demandParent = (identity: string) => vxlParent(activeEdition === 'yr'
     ? ({ YDOG: 'DOG', YADOG: 'ADOG' } as Record<string, string>)[identity] ?? identity : identity);
 
@@ -78,7 +84,8 @@ export async function resolveSovietUnitMembers(inputs: PreparedMember[], request
             // Validate and pool the entire family on CPU before any upload.
             // The measured allocation, including lookup textures, must fit.
             if (losslessTiles) await upload([...members.values()].flatMap(member => member.override.pages.flatMap(page =>
-                page.tiles ? [page.base, page.data, page.tiles.map] : [page.base, page.data])));
+                page.tiles ? [page.base, page.data, page.tiles.map, page.tiles.dataMap].filter(Boolean) as THREE.Texture[]
+                    : [page.base, page.data])));
             check(!cancelled(), 'cancelled');
             return { density, members, gpuBytes, attempts };
         } catch (error) {
@@ -90,7 +97,9 @@ export async function resolveSovietUnitMembers(inputs: PreparedMember[], request
 }
 
 export async function loadSovietUnitsHd(theater: any, renderer: any, enabled: boolean,
-    budget: number, cancelled: () => boolean, buildings?: AdditionalBuildingDemand, preferredDensity: 2 | 4 = 4, geometryPool?: VxlGeometryPool): Promise<LoadedSovietUnitsHd> {
+    budget: number, cancelled: () => boolean, buildings?: AdditionalBuildingDemand, preferredDensity: 2 | 4 = 4,
+    geometryPool?: VxlGeometryPool, viewportBuildingDemand = false,
+    sourceContext: EnvironmentSourceContext = {}): Promise<LoadedSovietUnitsHd> {
     const result: LoadedSovietUnitsHd = { families: new Map(), report: { gpuBytes: 0, budget: Math.max(0, budget), families: {} } };
     const requested = requestedHdDensity(enabled, 'soviet-units-hd', location.href, preferredDensity);
     // Unit artwork is shared across theaters, including snow. Each SHP/VXL/HVA
@@ -99,11 +108,23 @@ export async function loadSovietUnitsHd(theater: any, renderer: any, enabled: bo
     const gl = renderer.renderer;
     const preparer = typeof Worker === 'function' && typeof OffscreenCanvas === 'function' ? new VxlPagePreparer() : undefined;
     const geometryPreparer = geometryPool && preparer ? new VxlPagePreparer() : undefined;
+    const currentTheater = theaterName(theater.type);
+    let campaignUnitPalette: string | undefined;
+    if (sourceContext.campaign && (hasCampaignVxlReuseForTheater(currentTheater)
+        || hasTaskNpcForTheater(currentTheater))) {
+        try {
+            const bytes = Engine.vfs!.openFile(theater.settings.unitPaletteName).getBytes();
+            campaignUnitPalette = await digest(Uint8Array.from(bytes).buffer);
+        } catch (error) { console.info('[Campaign VXL Original]', 'Unqualified source palette', String(error)); }
+    }
     const contracts = new Map(Object.values(unitHdFamiliesForEdition(activeEdition))
+        .filter(family => !taskNpcContracts[family.identity]
+            || campaignTaskNpcAllowed(family, currentTheater, sourceContext, campaignUnitPalette))
         .map(family => [family.identity as string, family]));
     const vxlContracts = new Set(Object.keys(vxlUnitFamilies).filter(identity =>
         (!vxlUnitFamilies[identity].edition || vxlUnitFamilies[identity].edition === activeEdition)
-        && vxlUnitAvailableInTheater(vxlUnitFamilies[identity], theaterName(theater.type))));
+        && (vxlUnitAvailableInTheater(vxlUnitFamilies[identity], currentTheater)
+            || campaignVxlReuseAllowed(identity, vxlUnitFamilies[identity], currentTheater, sourceContext, campaignUnitPalette))));
     const loadShp = async (identity: string, remaining: number, disposed: () => boolean, density = requested) => {
             const family = contracts.get(identity)!;
             if (family.blockedReason) throw Error(family.blockedReason.split(':')[0]);
@@ -130,15 +151,16 @@ export async function loadSovietUnitsHd(theater: any, renderer: any, enabled: bo
                 check(image && image.numImages === member.totalFrames && Engine.vfs, 'missing-original-member');
                 const sourceHash = await digest(Uint8Array.from(Engine.vfs!.openFile(member.member).getBytes()).buffer);
                 check(sourceHash === member.sourceHash, 'source-hash-mismatch');
-                const source = { member: member.member, sha256: sourceHash, theater: 'TEMPERATE',
+                const source = { member: member.member, sha256: sourceHash, theater: family.authoringTheater ?? 'TEMPERATE',
                     canvas: [image.width, image.height], frames: Array.from({ length: member.frames }, (_, nativeFrame) => {
                         const f = image.getImage(nativeFrame);
                         return { nativeFrame, trimOrigin: [f.x, f.y], trimSize: [f.width, f.height],
                             legacyRenderSize: [f.width + f.width % 2, f.height + f.height % 2], empty: !f.imageData.some(Boolean) };
                     }) };
+                const pageRoles = isTaskNpcTiledHdSource(source) ? 'base|data|map' : 'base|data';
                 const read: HdPageReader = async (filename, hash, size) => {
                     const route = entry.files?.[filename];
-                    check(typeof route === 'string' && new RegExp(`^${prefix}[24]/[a-zA-Z0-9_-]+/(base|data)\\.png$`).test(route), 'undeclared-page');
+                    check(typeof route === 'string' && new RegExp(`^${prefix}[24]/[a-zA-Z0-9_-]+/(${pageRoles})\\.png$`).test(route), 'undeclared-page');
                     const response = await fetch(route, { signal: AbortSignal.timeout(15000) });
                     check(response.ok, 'missing-page');
                     const bytes = await response.arrayBuffer();
@@ -177,7 +199,8 @@ export async function loadSovietUnitsHd(theater: any, renderer: any, enabled: bo
             const selected = await loadFamily(identity, remaining, disposed);
             await nativeReady;
             return selected;
-        }, release);
+        }, release, sourceContext.campaign?.launch.edition === 'yr'
+            && (sourceContext.campaign.launch.semanticsVersion ?? 1) >= 46);
     const loadFamily = async (identity: string, remaining: number, disposed: () => boolean) => {
         const stopped = () => cancelled() || disposed();
         if (buildings?.identities.has(identity)) return buildings.load(identity, remaining, stopped);
@@ -216,6 +239,7 @@ export async function loadSovietUnitsHd(theater: any, renderer: any, enabled: bo
     };
     const report = Object.assign(demand.report, { preparation: preparer?.report, geometryPreparation: geometryPreparer?.report });
     return { families: demand.families, report,
+        viewportBuildingDemand: viewportBuildingDemand ? buildings?.identities : undefined,
         bind: demand.bind.bind(demand),
         bindBuilding: (identity, apply) => buildings?.identities.has(identity)
             ? demand.bindFamily(identity, family => apply(family?.building)) : () => {},
@@ -225,6 +249,7 @@ export async function loadSovietUnitsHd(theater: any, renderer: any, enabled: bo
             return buildings?.identities.has(name) || vxlContracts.has(name) ? demand.preview(name) : () => {};
         },
         prewarm: identity => demand.prewarm(demandParent(identity)),
+        prefetch: identity => demand.preview(demandParent(identity)),
         idle: demand.idle.bind(demand),
         bindVxl: (identity, apply) => {
             const parent = vxlParent(identity);

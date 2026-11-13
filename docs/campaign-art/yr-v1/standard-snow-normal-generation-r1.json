@@ -1,0 +1,44 @@
+{
+  "schema": "source-bound-snow-material-reconstruction-v1",
+  "tool": "image_gen.imagegen",
+  "jobs": [
+    {
+      "identity": "NAPOWR",
+      "stem": "napowr",
+      "prompt": "Use case: precise-object-edit. Asset: source-faithful isometric strategy-game HD building, NAPOWR, normal Snow body state.\nImage 1 is the exact edit target: the existing Soviet electrical power plant with brick towers, steel pipes, blue electrical sphere and red house-color panels. Preserve the recognizable original design, camera, composition, silhouette, dimensions, geometry, red ownership panels, hardware, windows, pipes, lights and original material colors.\nThe only requested edit is rebuilding the existing accumulated SNOW material and its edges. Existing white snow patches mark exactly where the snow belongs; keep the coverage and thickness source faithful. Reconstruct clean compact soft-white snow caps with gently cool blue-gray recess shading, subtle smooth shape-based tonal transitions and coherent contact shadows. Resolve the little rounded snow lips as continuous crisp antialiased contours. Remove dirty tan flecks, mixed-color pixels, repetitive gritty grain, mosaic blocks, staircase edges and stippled snow sampling. Do not carry over the low-resolution pixel texture. Snow should read as clean settled snow on the existing surfaces, not glitter, foam, frosting, furry outlines or white paint. Keep fine exposed bolts, ribs and pipe openings clear. Preserve every exposed non-snow surface, ownership-color panel and energy/glass effect; do not repaint their colors or change their design. No extra snow blanket, icicles, objects, stylization, ground or shadow plane.\nReturn one carefully reconstructed high-resolution full-building RGBA sprite on a genuinely transparent background, 1536 by 1536, with a small clear margin and complete uncropped framing. Match the input viewing angle and light direction exactly. No text, labels or border.",
+      "references": [
+        {
+          "file": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/napowr-snow-formal-4x-frame-0.png",
+          "sha256": "282e97d9aa46c56b3f4e0b43de782dd2232e3d7652b54ea814dc9444a83bae20"
+        }
+      ],
+      "output": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/napowr-snow-normal-master-r1.png"
+    },
+    {
+      "identity": "GAPOWR",
+      "stem": "gapowr",
+      "prompt": "Use case: precise-object-edit. Asset: source-faithful isometric strategy-game HD building, GAPOWR, normal Snow body state.\nImage 1 is the exact edit target: the existing Allied electrical power plant with three blue-gray metal towers, warm gold equipment and red house-color panels. Preserve the recognizable original design, camera, composition, silhouette, dimensions, geometry, red ownership panels, hardware, windows, pipes, lights and original material colors.\nThe only requested edit is rebuilding the existing accumulated SNOW material and its edges. Existing white snow patches mark exactly where the snow belongs; keep the coverage and thickness source faithful. Reconstruct clean compact soft-white snow caps with gently cool blue-gray recess shading, subtle smooth shape-based tonal transitions and coherent contact shadows. Resolve the little rounded snow lips as continuous crisp antialiased contours. Remove dirty tan flecks, mixed-color pixels, repetitive gritty grain, mosaic blocks, staircase edges and stippled snow sampling. Do not carry over the low-resolution pixel texture. Snow should read as clean settled snow on the existing surfaces, not glitter, foam, frosting, furry outlines or white paint. Keep fine exposed bolts, ribs and pipe openings clear. Preserve every exposed non-snow surface, ownership-color panel and energy/glass effect; do not repaint their colors or change their design. No extra snow blanket, icicles, objects, stylization, ground or shadow plane.\nReturn one carefully reconstructed high-resolution full-building RGBA sprite on a genuinely transparent background, 1536 by 1536, with a small clear margin and complete uncropped framing. Match the input viewing angle and light direction exactly. No text, labels or border.",
+      "references": [
+        {
+          "file": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/gapowr-snow-formal-4x-frame-0.png",
+          "sha256": "0d5c2aeeb0136e8a10be8523c3e4b07ac9479605e76c87e3735590d7fd4ca603"
+        }
+      ],
+      "output": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/gapowr-snow-normal-master-r1.png"
+    },
+    {
+      "identity": "YAPOWR",
+      "stem": "yuri-yapowr",
+      "prompt": "Use case: precise-object-edit. Asset: source-faithful isometric strategy-game HD building, YAPOWR, normal Snow body state.\nImage 1 is the exact edit target: the existing Yuri power plant with glass tanks, yellow energy, brass pipes and red house-color panels. Preserve the recognizable original design, camera, composition, silhouette, dimensions, geometry, red ownership panels, hardware, windows, pipes, lights and original material colors.\nThe only requested edit is rebuilding the existing accumulated SNOW material and its edges. Existing white snow patches mark exactly where the snow belongs; keep the coverage and thickness source faithful. Reconstruct clean compact soft-white snow caps with gently cool blue-gray recess shading, subtle smooth shape-based tonal transitions and coherent contact shadows. Resolve the little rounded snow lips as continuous crisp antialiased contours. Remove dirty tan flecks, mixed-color pixels, repetitive gritty grain, mosaic blocks, staircase edges and stippled snow sampling. Do not carry over the low-resolution pixel texture. Snow should read as clean settled snow on the existing surfaces, not glitter, foam, frosting, furry outlines or white paint. Keep fine exposed bolts, ribs and pipe openings clear. Preserve every exposed non-snow surface, ownership-color panel and energy/glass effect; do not repaint their colors or change their design. No extra snow blanket, icicles, objects, stylization, ground or shadow plane.\nReturn one carefully reconstructed high-resolution full-building RGBA sprite on a genuinely transparent background, 1536 by 1536, with a small clear margin and complete uncropped framing. Match the input viewing angle and light direction exactly. No text, labels or border.",
+      "references": [
+        {
+          "file": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/yuri-yapowr-snow-formal-4x-frame-0.png",
+          "sha256": "14c0036f597bced81c04e44636fa9141d9daa62487e570b2d875f43024288974"
+        }
+      ],
+      "output": ".local/source-art/yr-campaign-v1/material-and-snow-quality-r1/yuri-yapowr-snow-normal-master-r1.png"
+    }
+  ],
+  "status": "CANDIDATES_NOT_REGISTERED",
+  "userVisualAcceptance": "PENDING"
+}

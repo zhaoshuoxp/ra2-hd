@@ -1,0 +1,395 @@
+{
+  "status": "PASS_M3_1_R6_MAC_MAP_PROPORTIONS_AND_TOP_LAYER_ARROW_PENDING_USER_ACCEPTANCE",
+  "runtimeSourceHead": "580c985417a218e0d53f5c71579ac404d2ae7889",
+  "previousRuntimeSourceHead": "81f19a1e38a9b6fec1b6a1eae8e54833240abbb4",
+  "changedRuntimePaths": [
+    "src/engine/renderable/fx/handler/TriggerActionFxHandler.ts",
+    "src/gui/campaign/CampaignBackdrop.tsx"
+  ],
+  "changes": {
+    "world": {
+      "proportionalScale": 0.8,
+      "sourceCrop": [
+        0,
+        0,
+        1760,
+        821
+      ],
+      "sourceDimensions": [
+        1915,
+        821
+      ],
+      "sourceWashington": [
+        520,
+        248
+      ],
+      "originalLocator": [
+        264,
+        160
+      ],
+      "drawCopies": 1,
+      "extension": "Empty ocean and source-aligned grid only"
+    },
+    "arrow": {
+      "sourceAnimation": "ARRWSE",
+      "originalArtLayer": "Top",
+      "renderOrder": 1000000,
+      "depthTest": false,
+      "sourceFramesTimingAndPositionUnchanged": true
+    }
+  },
+  "tests": {
+    "status": "PASS",
+    "cases": 17,
+    "assertions": 281,
+    "proof": {
+      "path": ".artifacts/m3-1/feedback-r6/tests-current.log",
+      "bytes": 2063,
+      "sha256": "c8b35424077d9fa586d9357ec7bf56ae59d6c571df528ad047e1430f18895c8e"
+    }
+  },
+  "entryTypecheck": {
+    "status": "PASS",
+    "proof": {
+      "path": ".artifacts/m3-1/feedback-r6/typecheck-current.log",
+      "bytes": 39,
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    }
+  },
+  "native": [
+    {
+      "name": "native-loading-current",
+      "status": "PASS_NATIVE_SINGLE_PROPORTIONAL_WORLD_NO_WRAPPED_ALASKA_REGISTERED_LOCATOR_FIVE_ASPECTS_AND_PRESERVED_METAL",
+      "sourceHead": "580c985417a218e0d53f5c71579ac404d2ae7889",
+      "changedRuntimePathsSinceCapture": [],
+      "proof": {
+        "path": ".artifacts/m3-1/feedback-r6/native-loading-current/report.json",
+        "bytes": 10534,
+        "sha256": "25d12a42dca2950e4c3f111540495c37fef2982b949710e53a3bd1e1a596c723"
+      },
+      "harness": {
+        "path": ".artifacts/m3-1/feedback-r6/native-loading-current/harness.mjs",
+        "bytes": 9600,
+        "sha256": "49ae63512f8bc45f8dacab587dfff626230623e7f6f24af68ba92104f2b5406e"
+      }
+    },
+    {
+      "name": "native-arrow-d",
+      "status": "PASS_ORIGINAL_AND_HD_TOP_LAYER_ARROW_ABOVE_BROKEN_BRIDGE_AND_ORIGINAL_ENGINEER_REPAIR",
+      "sourceHead": "859f7a436aa7d3783256e93d4ef5fcd505720354",
+      "changedRuntimePathsSinceCapture": [
+        "src/gui/campaign/CampaignBackdrop.tsx"
+      ],
+      "proof": {
+        "path": ".artifacts/m3-1/feedback-r6/native-arrow-d/report.json",
+        "bytes": 3794,
+        "sha256": "cde01b5fb3f89e662c5ada2e2e7e7fd177ae5bca5cb960ea9837460bf51baa6d"
+      },
+      "harness": {
+        "path": ".artifacts/m3-1/feedback-r6/native-arrow-d/harness.mjs",
+        "bytes": 12802,
+        "sha256": "5d27cc5c85f960a5430171cdd48b028cad48ad2fce33019df5060106e7401bd4"
+      },
+      "cases": [
+        {
+          "density": 4,
+          "before": {
+            "tick": 9440,
+            "hash": 1110797913,
+            "missing": 1,
+            "repairable": true,
+            "trusted": true,
+            "modified": false
+          },
+          "after": {
+            "tick": 10548,
+            "hash": 282093055,
+            "missing": 0,
+            "repairable": false,
+            "trusted": true,
+            "modified": false
+          },
+          "referenceGreen": 1557,
+          "visibleGreen": 1557,
+          "visibleFraction": 1
+        },
+        {
+          "density": 1,
+          "before": {
+            "tick": 9440,
+            "hash": 1110797913,
+            "missing": 1,
+            "repairable": true,
+            "trusted": true,
+            "modified": false
+          },
+          "after": {
+            "tick": 10548,
+            "hash": 282093055,
+            "missing": 0,
+            "repairable": false,
+            "trusted": true,
+            "modified": false
+          },
+          "referenceGreen": 1557,
+          "visibleGreen": 1557,
+          "visibleFraction": 1
+        }
+      ]
+    },
+    {
+      "name": "native-desktop-original",
+      "status": "PASS_PACKAGED_ENTRY_EDITION_RECOVERY_AND_PLAYABLE_MISSION",
+      "sourceHead": "580c985417a218e0d53f5c71579ac404d2ae7889",
+      "changedRuntimePathsSinceCapture": [],
+      "proof": {
+        "path": ".artifacts/m3-1/feedback-r6/native-desktop-original/report.json",
+        "bytes": 22200,
+        "sha256": "1e165ba3c556360c403a8101d34f8573e832a6e622eed261101ced13a1821dec"
+      },
+      "harness": {
+        "path": ".artifacts/m3-1/feedback-r6/native-desktop-original/harness.mjs",
+        "bytes": 18770,
+        "sha256": "b78ef2075e83cdf9753db10dc094cfa5e8435b5d9e3200d86b3c61e455b7b25c"
+      }
+    }
+  ],
+  "review": {
+    "status": "PASS_EMBEDDED_NATIVE_MAP_AND_TOP_LAYER_ARROW_SCREENSHOTS",
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r6/final-review/M3.1-Feedback-R6-Review.html",
+    "sourceHead": "580c985417a218e0d53f5c71579ac404d2ae7889",
+    "sha256": "12fae3a0d95d6318de1681152a7cba2ea7f34f73def48db14c45fd492bc269ad",
+    "bytes": 41721925,
+    "images": [
+      {
+        "file": ".artifacts/m3-1/feedback-r6/native-loading-current/loading-62-1280x720.png",
+        "bytes": 2835100,
+        "sha256": "8cb44ea698ce12e46bab4c3357e3c615b7e2e55408418c3045a1ff72460eadf1",
+        "dimensions": [
+          2560,
+          1440
+        ],
+        "sourceHead": "580c985417a218e0d53f5c71579ac404d2ae7889"
+      },
+      {
+        "file": ".artifacts/m3-1/feedback-r6/native-loading-current/loading-800x600.png",
+        "bytes": 1789874,
+        "sha256": "25d72f7cb2cf46177c53833c9b46582b0a3e552e90c7d9a583ad50de8439fca6",
+        "dimensions": [
+          1600,
+          1200
+        ],
+        "sourceHead": "580c985417a218e0d53f5c71579ac404d2ae7889"
+      },
+      {
+        "file": ".artifacts/m3-1/feedback-r6/native-loading-current/loading-1680x720.png",
+        "bytes": 3268479,
+        "sha256": "4de611e756c209ccee112307ee1822f49863b9f32f91f1cdb5b0d8be847e32b8",
+        "dimensions": [
+          3360,
+          1440
+        ],
+        "sourceHead": "580c985417a218e0d53f5c71579ac404d2ae7889"
+      },
+      {
+        "file": ".artifacts/m3-1/feedback-r6/native-loading-current/loading-720x900.png",
+        "bytes": 1698180,
+        "sha256": "14d6fe2770db12c0e6ac73026f9e09cd6c7aec0ebd0abc556ec2833f8454fbfb",
+        "dimensions": [
+          1440,
+          1800
+        ],
+        "sourceHead": "580c985417a218e0d53f5c71579ac404d2ae7889"
+      },
+      {
+        "file": ".artifacts/m3-1/feedback-r6/native-loading-current/loading-2560x720.png",
+        "bytes": 3562299,
+        "sha256": "5c27367b97d5eb044156b78b059380498e964c082e33f4c24f54c354dee5115c",
+        "dimensions": [
+          5120,
+          1440
+        ],
+        "sourceHead": "580c985417a218e0d53f5c71579ac404d2ae7889"
+      },
+      {
+        "file": ".artifacts/m3-1/feedback-r6/native-arrow-d/bridge-4x-arrow-top.png",
+        "bytes": 6732612,
+        "sha256": "99640b41655f07f1e026142d79d7d4ec9df6f10cb2dc36c3ef84973ac1398c9e",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "sourceHead": "859f7a436aa7d3783256e93d4ef5fcd505720354"
+      },
+      {
+        "file": ".artifacts/m3-1/feedback-r6/native-arrow-d/bridge-4x-isolated-reference.png",
+        "bytes": 1100194,
+        "sha256": "f82a970a185873ee88dd0a1c6a6d4dae93ff9a66f4a92c521cd1744a513fd4df",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "sourceHead": "859f7a436aa7d3783256e93d4ef5fcd505720354"
+      },
+      {
+        "file": ".artifacts/m3-1/feedback-r6/native-arrow-d/bridge-1x-arrow-top.png",
+        "bytes": 3472511,
+        "sha256": "bee407be3a9eeecc21c662d70bb79662aa693941bd4bd3e159aa2a65413ec332",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "sourceHead": "859f7a436aa7d3783256e93d4ef5fcd505720354"
+      },
+      {
+        "file": ".artifacts/m3-1/feedback-r6/native-arrow-d/bridge-4x-engineer-repaired.png",
+        "bytes": 6811658,
+        "sha256": "9d69469a77ba9d80a351d19815686d89e4f14633bfe33776aeb77b7718f4f0fe",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "sourceHead": "859f7a436aa7d3783256e93d4ef5fcd505720354"
+      }
+    ],
+    "native": [
+      {
+        "directory": ".artifacts/m3-1/feedback-r6/native-loading-current",
+        "sha256": "25d12a42dca2950e4c3f111540495c37fef2982b949710e53a3bd1e1a596c723",
+        "status": "PASS_NATIVE_SINGLE_PROPORTIONAL_WORLD_NO_WRAPPED_ALASKA_REGISTERED_LOCATOR_FIVE_ASPECTS_AND_PRESERVED_METAL"
+      },
+      {
+        "directory": ".artifacts/m3-1/feedback-r6/native-arrow-d",
+        "sha256": "cde01b5fb3f89e662c5ada2e2e7e7fd177ae5bca5cb960ea9837460bf51baa6d",
+        "status": "PASS_ORIGINAL_AND_HD_TOP_LAYER_ARROW_ABOVE_BROKEN_BRIDGE_AND_ORIGINAL_ENGINEER_REPAIR"
+      }
+    ],
+    "browserPreview": "Not retried after the prior file:// URL-policy rejection. Embedded PNG decoding and hash validation pass.",
+    "proof": {
+      "path": ".artifacts/m3-1/feedback-r6/final-review/review.json",
+      "bytes": 4068,
+      "sha256": "9c3e1156c20f64299c9c88daf6b27bde2d495cda95167796ca14175bbb0a60a8"
+    }
+  },
+  "delivery": {
+    "status": "PASS_DESKTOP_COPY_HASH_MATCH",
+    "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R6.zip",
+    "bytes": 5751094992,
+    "sha256": "589afb56842eb0232dbaf855c0166153b08cb1c9dec28ed6536eadccbe3d67ee",
+    "entries": 14547,
+    "inventorySha256": "c697f0213bb3c1f6c666489bb6861bb2fe7806b33a0eb4b235ef0bcbd3dc43b3",
+    "sourceArchive": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r6/RA2-HD-M3.1-Mac-arm64-20261024-R6.zip"
+  },
+  "extraction": {
+    "status": "PASS_ACTUAL_DESKTOP_ZIP_EXTRACTED_ALL_BYTES_LINKS_MODES_AND_SIGNATURE",
+    "desktopZip": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R6.zip",
+    "zipSha256": "589afb56842eb0232dbaf855c0166153b08cb1c9dec28ed6536eadccbe3d67ee",
+    "folder": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r6/Relocated R6 Test/RA2-HD-M3.1-Mac-arm64-20261024-R6",
+    "app": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r6/Relocated R6 Test/RA2-HD-M3.1-Mac-arm64-20261024-R6/Red Alert 2 HD M3.1 Campaign R6.app",
+    "executable": "RA2 HD M3.1",
+    "entries": 14547
+  },
+  "packageInventory": {
+    "path": ".artifacts/m3-1/feedback-r6/stage-current/inventory.json",
+    "bytes": 4344241,
+    "sha256": "c697f0213bb3c1f6c666489bb6861bb2fe7806b33a0eb4b235ef0bcbd3dc43b3"
+  },
+  "sourceReuse": {
+    "previousThreeDifficultyProof": {
+      "path": "docs/m3-1-feedback-r5.json",
+      "bytes": 26823,
+      "sha256": "11abda627b10db9de7e2cb380b3d90ee99d02c253b3c86738b7e90b0d3d81cc8"
+    },
+    "gameplayDataSourceArtSaveRoutesAndResourcesUnchangedFromR5": true,
+    "disclosure": "R6 reruns only affected loading and bridge presentation plus relocated package entry. The three unchanged complete battles and difficulty/save outcomes remain pinned to R5. Arrow proof uses 859f7a43; final 580c9854 changes only background-grid rendering."
+  },
+  "integrationPreparation": {
+    "status": "PASS_ISOLATED_SOURCE_RESOLUTION_TESTS_AND_TYPECHECK",
+    "sourceHead": "34be885b22c2328f6d386857c39f9b75e1ac85c6",
+    "previousPreparedSourceHead": "c2cd235c4360e5a69989225981557663519bdab9",
+    "changedRuntimePaths": [
+      "src/engine/renderable/fx/handler/TriggerActionFxHandler.ts",
+      "src/gui/campaign/CampaignBackdrop.tsx"
+    ],
+    "mainObservedHead": "86c467e42f273b23f403f56845ea4c280f31d802",
+    "mainCleanAtAudit": true,
+    "mainRuntimeChangesSinceTestedFlagsBase": "",
+    "canonicalMainModifiedByThisTask": false,
+    "tests": {
+      "status": "PASS",
+      "cases": 17,
+      "assertions": 281,
+      "proof": {
+        "path": ".artifacts/m3-1/feedback-r6/latest-main-tests-current.log",
+        "bytes": 2063,
+        "sha256": "b913b65afcdcb88b22efd32d90ab81945ace7f5bfca8f661bbee16cd5301741a"
+      }
+    },
+    "entryTypecheck": {
+      "status": "PASS",
+      "proof": {
+        "path": ".artifacts/m3-1/feedback-r6/latest-main-typecheck-current.log",
+        "bytes": 39,
+        "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+      }
+    },
+    "bundle": {
+      "path": ".artifacts/m3-1/feedback-r6/M3.1-R6-Final-Latest-Main-Integration-Preparation.bundle",
+      "bytes": 3924457,
+      "sha256": "62eafda7228cff8de11f6dc9b31b45413913eea1cfd3be56792acbd278353a8c"
+    },
+    "bundlePrerequisites": [
+      "dc494dbd59363439ae830fad5e81134ef36ee95b",
+      "34e6fbe6b5d2808db4034e21d9e2dad36e7a7c3a",
+      "9ab3c54441bf21b6872da0c7f63937a4e577fb31"
+    ],
+    "nativeScope": "The isolated combined source was not rerun natively for R6. Its unchanged save/flag routes retain the pinned R5 native proof; both new runtime files equal the R6 Mac-tested task files."
+  },
+  "retainedAttempts": [
+    {
+      "name": "native-arrow",
+      "error": "AssertionError [ERR_ASSERTION]: The original bridge hint must actually create an arrow\n    at file:///Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/feedback-r6-arrow-native.mjs:104:9",
+      "proof": {
+        "path": ".artifacts/m3-1/feedback-r6/native-arrow/report.json",
+        "bytes": 1155,
+        "sha256": "4456175bd2f8a2f4b3b9d282a3ee0b125e5d06f2bcdcc2ebe80991f91aff0c05"
+      }
+    },
+    {
+      "name": "native-arrow-b",
+      "error": "AssertionError [ERR_ASSERTION]: The original bridge hint must actually create an arrow\n    at file:///Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/feedback-r6-arrow-native.mjs:108:9",
+      "proof": {
+        "path": ".artifacts/m3-1/feedback-r6/native-arrow-b/report.json",
+        "bytes": 36506,
+        "sha256": "6b952ef10385371c2c6f654b5cfd0addd7e4ae030000a852f410d65a2246d281"
+      }
+    },
+    {
+      "name": "native-arrow-c",
+      "error": "AssertionError [ERR_ASSERTION]: The repaired layer must reveal green pixels hidden by actual bridge geometry\n    at file:///Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/feedback-r6-arrow-native.mjs:131:9",
+      "proof": {
+        "path": ".artifacts/m3-1/feedback-r6/native-arrow-c/report.json",
+        "bytes": 3709,
+        "sha256": "74d287a700e033a97ebff82442141dfe67d2a873464c1f24840a8f9feb7b56ac"
+      }
+    }
+  ],
+  "priorDesktopPresence": [
+    {
+      "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R5.zip",
+      "present": false,
+      "modifiedByThisTask": false
+    },
+    {
+      "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R4.zip",
+      "present": false,
+      "modifiedByThisTask": false
+    }
+  ],
+  "limits": {
+    "userVisualAndPhysicalAcceptance": "PENDING",
+    "nativeWindows": "NOT_RUN_ON_THIS_MAC",
+    "earlierScoreBackgroundLimitation": "Original-density background retained as documented in R4/R5; no new generated score background.",
+    "inAppBrowser": "Prior file-URL policy rejection was not retried or bypassed. Embedded PNG bytes decode and hashes match."
+  }
+}

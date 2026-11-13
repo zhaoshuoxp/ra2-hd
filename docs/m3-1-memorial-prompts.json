@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "tool": "Built-in imagegen",
+  "status": "EXPORTED_NATIVE_GPU_BINDINGS_VERIFIED_VISUAL_REVIEW_PENDING",
+  "prompts": {
+    "body": "Use case: precise-object-edit. Asset type: production HD isometric Red Alert 2 Iwo Jima memorial sprite sheet. Image 1 is the authoritative edit target, a four-cell source guide, 1536 x 1024 with a 2 x 2 equal grid. Repaint only the four sprites in place into crisp, richly detailed classic RTS rendered artwork. Preserve their exact isometric viewpoint, cell locations, scale, native silhouette, stepped pink/beige circular plaza, staircases, low walls, yellow flower borders, dark blue/black octagonal pedestal and the recognizable six bronze Marines raising the flagpole. Top left is intact. Top right is the source-damaged version with broken plaza/walls but standing statue. Bottom left is the second intact source state, visually matching top left. Bottom right is the original collapsed rubble state; preserve the specific broken shapes, dark pit, red fragment and scattered rubble. Preserve all reference anchors and the precise thin flagpole segment above the soldiers; render the pole as a smooth slender continuous metal shaft. Define readable helmets, hands, rifles, bronze clothing folds, polished bronze highlights, stone joints and stair nosings. Match the original restrained colors and overhead-left game light. No new flag: only the existing lower pole segment in these sprites; the flag is a separate animated asset. No extra props, captions, cell borders, numbers, text, ornaments, new pedestal shapes or cast shadows outside the source silhouettes. Keep each object entirely within its exact original cell and approximately exact guide bounds, with intact states identical in geometry. Output the same 3:2 sheet at the highest resolution, at least 1536 x 1024; prefer 3072 x 2048 so each large sprite genuinely supports 4X detail. Remove the neutral gray guide background to genuine transparency. Smooth authored edges and detailed surfaces, no pixel stair steps, no blur, no grain filter, no screenshot or mockup.",
+    "flags": "Use case: precise-object-edit. Asset type: production transparent HD flag-and-pole keyframe sheet for the same Red Alert 2 Iwo Jima memorial. Image 1 is the authoritative three-cell source edit target, 1536 x 768 with three equal vertical cells in one row. Repaint the three existing flags IN PLACE at exactly their current scale, placement, outline, lean, wave silhouette and game lighting. Left: the existing US stars-and-stripes flag, with clean correctly ordered red/white stripes, blue canton and small white stars following the existing cloth folds. Middle and right: the original plain deep red flags from two source states; retain their distinct folds and lighting, no invented symbols or inscriptions. Keep the original very slender light gray metal flagpole to the left of each flag, including its slight diagonal lean and entire visible length down to its lower end. This flagpole must be crisp, straight, continuous, smoothly antialiased and consistently slim, with realistic restrained metal highlights, not a stair-stepped pixel column. Match all cloth edges, trailing corners and contact points from the guide; do not change the pole angle or add ropes, bases, eagles, finials, new hardware or extra flags. Crisp detailed cloth folds and weave at high resolution in classic RTS rendered style; no pixelation, no motion blur, no painterly smears. No labels, text, borders, cell marks or unrelated scenery. Remove the neutral gray background to genuine transparency, preserve empty margins and separation between the three cells. Same 2:1 sheet composition, highest resolution at least 1536 x 768. These are animation keyframe inputs; preserve source silhouette geometry for registration."
+  },
+  "masters": [
+    {
+      "path": ".artifacts/m3-1/memorial/body-master-r1.png",
+      "bytes": 2762769,
+      "sha256": "3a9bd6e384ad8c6bc3b14bfc0193439f8d4e145d0b2a2ed116846d7c3f70b174"
+    },
+    {
+      "path": ".artifacts/m3-1/memorial/flag-master-r1.png",
+      "bytes": 774370,
+      "sha256": "799f3b1b4eba9ccc1683bf700c1e3732894a3c5ebfbdc70ca942b1787ac65a4f"
+    }
+  ],
+  "registration": {
+    "script": "scripts/m3-1/export-memorial-hd.mjs",
+    "resources": ".local/campaign/ra2/sov01t/memorial-family.json",
+    "bodyStates": 4,
+    "animatedFlagSlots": 48,
+    "densities": [
+      2,
+      4
+    ],
+    "originalSeparateShadows": true,
+    "note": "Mechanical native-slot registration and atlas export from built-in generated masters. The joint shaft uses a source-fitted continuous contour with sampled authored metal; source cloth contours and column motion retain all original flag slots. No new animation timing, map geometry or owner rules."
+  }
+}

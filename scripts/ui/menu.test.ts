@@ -7,6 +7,7 @@ import { validateUiManifest, UI_TEXTURE_BUDGET } from '../../src/gui/hd/UiArt';
 const locale = await Bun.file('public/res/locale/zh-CN.json').json();
 function home(desktop = false, localized = true) {
     let buttons: any[] = []; const routes: any[] = []; const messages: string[] = [];
+    (globalThis as any).localStorage = { getItem: () => null };
     (globalThis as any).window = { desktopApp: desktop ? { quit: () => routes.push('quit') } : undefined };
     (globalThis as any).location = { href: 'ra2://game/?edition=yr', replace: (url: string) => routes.push(['reload', url]) };
     const screen = new HomeScreen(new Strings(localized ? locale : {}), { alert: async (message: string) => { messages.push(message); } } as any, 'test');
@@ -17,23 +18,27 @@ function home(desktop = false, localized = true) {
     screen.onEnter();
     return { screen, buttons, routes, messages };
 }
-test('home routes preserve localized order, edition switching and inert placeholders', async () => {
+test('home routes preserve localized order, movie access, edition switching and the unavailable LAN entry', async () => {
     const { buttons, routes, screen } = home(true);
-    expect(buttons.map(b=>b.label)).toEqual(['campaign','skirmish','lan','movies','options','edition','exit'].map(k=>locale['hd:menu'+k]));
-    expect(buttons.map(b=>!!b.disabled)).toEqual([true,false,true,true,false,false,false]);
-    for (const i of [0,2,3]) await buttons[i].onClick();
+    expect(buttons.map(b=>b.label)).toEqual(['campaign','skirmish','load','lan','movies','options','edition','exit']
+        .map(k=>locale[k === 'load' ? 'hd:loadgame' : 'hd:menu'+k]));
+    expect(buttons.map(b=>!!b.disabled)).toEqual([false,false,false,true,false,false,false,false]);
+    await buttons[3].onClick();
     expect(routes).toEqual([['video',true]]);
-    await buttons[1].onClick(); await buttons[4].onClick(); await buttons[6].onClick();
-    expect(routes.slice(1)).toEqual([['go',MainMenuScreenType.Skirmish],['push',MainMenuScreenType.Options],'quit']);
-    await buttons[5].onClick();
+    await buttons[4].onClick();
+    await buttons[0].onClick(); await buttons[2].onClick();
+    await buttons[1].onClick(); await buttons[5].onClick(); await buttons[7].onClick();
+    expect(routes.slice(1)).toEqual([['go',MainMenuScreenType.Movies], ['go',MainMenuScreenType.Campaign], ['push',MainMenuScreenType.LoadGame],
+        ['go',MainMenuScreenType.Skirmish],['push',MainMenuScreenType.Options],'quit']);
+    await buttons[6].onClick();
     expect(routes.at(-1)).toEqual(['reload', 'ra2://game/']);
     await screen.onStack(); screen.onUnstack();
     expect(routes.at(-1)).toEqual(['video',true]);
 });
 test('browser exit reports tab closure honestly; missing locale falls back to English', async () => {
     const { buttons, messages, routes } = home(false, false);
-    expect(buttons.map(b=>b.label)).toEqual(['Campaign','Skirmish','LAN','Movies','Options','Switch Game','Exit Game']);
-    await buttons[6].onClick(); expect(messages[0]).toContain('close this tab'); expect(routes).toEqual([['video',true]]);
+    expect(buttons.map(b=>b.label)).toEqual(['Campaign','Skirmish','Load Game','LAN','Movies','Options','Switch Game','Exit Game']);
+    await buttons[7].onClick(); expect(messages[0]).toContain('close this tab'); expect(routes).toEqual([['video',true]]);
 });
 test('controller dispatch refuses disabled, collapsed and stale empty slots', () => {
     let clicks = 0;

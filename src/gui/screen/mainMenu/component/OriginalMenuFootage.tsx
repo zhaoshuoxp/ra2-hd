@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from 'react';
 
 import { menuFootageVertex as vertex, menuFootageFragment as fragment } from './OriginalMenuShader';
 
-/** Register the retail movie under the HD logo, retaining unobstructed cinematic pixels above it. */
-export function OriginalMenuFootage({ src, onReady, playbackTime }: {
-    src: string; onReady: (ready: boolean) => void; playbackTime?: { current: number };
+/** Register the retail movie under the edition badge, preserving its radar motion and clock. */
+export function OriginalMenuFootage({ src, onReady, playbackTime, suppressRetailLogo = false }: {
+    src: string; onReady: (ready: boolean) => void; playbackTime?: { current: number }; suppressRetailLogo?: boolean;
 }) {
     const ref = useRef<HTMLCanvasElement>(null);
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -27,6 +27,7 @@ export function OriginalMenuFootage({ src, onReady, playbackTime }: {
             shaders.forEach(shader => gl.deleteShader(shader)); gl.deleteProgram(program); onReady(false); return;
         }
         gl.useProgram(program);
+        gl.uniform1f(gl.getUniformLocation(program, 'suppressRetailLogo'), suppressRetailLogo ? 1 : 0);
         const buffer = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
         gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
         const position = gl.getAttribLocation(program, 'position');
@@ -90,10 +91,11 @@ export function OriginalMenuFootage({ src, onReady, playbackTime }: {
             gl.deleteBuffer(buffer); gl.deleteProgram(program); shaders.forEach(shader => gl.deleteShader(shader));
             gl.getExtension('WEBGL_lose_context')?.loseContext();
         };
-    }, [src, onReady, playbackTime]);
+    }, [src, onReady, playbackTime, suppressRetailLogo]);
     return <div style={{ width: '100%', height: '100%' }}>
         <video ref={videoRef} hidden muted playsInline data-retail-menu-video="true"/>
         <canvas ref={ref} width={1672} height={941} data-retail-menu-footage={src}
+            data-retail-logo-suppressed={suppressRetailLogo}
             style={{ display: 'block', width: '100%', height: '100%' }} />
     </div>;
 }

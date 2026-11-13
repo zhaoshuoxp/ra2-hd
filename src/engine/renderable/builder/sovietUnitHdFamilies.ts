@@ -4,6 +4,26 @@ type ProjectileBinding = { weapon: string; projectile: string; member: string };
 
 // Each family includes every native visible representation of the unit.
 export const sovietUnitHdFamilies = {
+    STLN: {
+        identity: 'STLN', edition: 'yr',
+        familyHash: 'b7c750a0aff473d9c2d3d505707e3fe042d713bdd4186e35c9cf88c85eb58a68',
+        members: [
+            { member: 'stln.shp', frames: 340, totalFrames: 680, canvas: [94, 106],
+                sourceHash: '22888b61e76b553d17a931962d2b1406e5366db1469205063a71e881f1c175e8',
+                manifestHash: '6448473faab97064adff84186e003cf7fdf22bf8539b2f48c06f0a64c04d678e' },
+        ],
+        projectiles: [] as readonly ProjectileBinding[],
+    },
+    ARND: {
+        identity: 'ARND', edition: 'yr',
+        familyHash: '7060c3038d45ce1aeb095a151b9772ae3bce130b4ec09fb5d851d4db80a32c05',
+        members: [
+            { member: 'arnd.shp', frames: 292, totalFrames: 584, canvas: [94, 106],
+                sourceHash: '463bd4a1102135bb6e98ce5dd2e57d84417ccbbdc9fa05cb92592175565c6dc2',
+                manifestHash: '4de7805cb5e85545349e701252260248a421a7cce48854a452164704ec9992d0' },
+        ],
+        projectiles: [] as readonly ProjectileBinding[],
+    },
     LUNR: {
         identity: 'LUNR', edition: 'yr',
         familyHash: '85a3f1b904063107edf63aa29a828794f965dc408e3434982fbb0a5281013afa',

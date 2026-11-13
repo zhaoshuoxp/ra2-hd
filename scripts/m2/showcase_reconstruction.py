@@ -1,10 +1,60 @@
 """Continuous visual contours inside unchanged native gameplay geometry."""
+import hashlib
 import numpy as np
 from scipy import ndimage
 from showcase_contours import coverage
 
 
 POLICY = dict(schema='hd-extra-contours-v1', maximumNativeDistance=1, protectMainBlock=True)
+COHERENT_POLICY = dict(schema='hd-coherent-member-extra-contours-v1', maximumNativeDistance=1,
+                       protectMainBlock=True, protectInternalCuts=True)
+ROCK_POLICY = dict(schema='hd-source-pinned-exposed-rock-contours-v1', maximumNativeDistance=1,
+                   protectGroundContacts=True, protectInternalCuts=True)
+SNOW_GROUND_POLICY = dict(schema='hd-source-pinned-raised-snow-ground-contacts-v1',
+                         minimumChannel=170, maximumChroma=70, nativeNeighborhood=1)
+
+
+def native_member_mask(native, layout, prepared):
+    width, height = layout['bounds'][2:]
+    mask = np.zeros((height, width), bool)
+    for part in layout['parts']:
+        image = next(image for image in native['images'] if image['subTile'] == part['subTile'])
+        raw = (prepared / 'native' / image['file']).read_bytes()
+        assert hashlib.sha256(raw).hexdigest() == image['rgbaSha256']
+        pixels = np.frombuffer(raw, np.uint8).reshape(*image['logical'][::-1], 4)
+        x, y, w, h = part['rect']
+        assert [w, h] == image['logical']
+        mask[y:y+h, x:x+w] |= pixels[..., 3] > 0
+    return mask
+
+
+def coherent_extra_alpha(original, image, density, whole_mask, rect,
+                         exposed_rock=False, snow_ground=False):
+    """Reconstruct exposed member contours while retaining opaque internal cuts."""
+    mask = original[..., 3] > 0
+    exact = np.uint8(mask.repeat(density, 0).repeat(density, 1)) * 255
+    if not image['hasExtraData'] and not exposed_rock:
+        return exact
+    x, y, width, height = rect
+    assert (height, width) == mask.shape
+    boundary = ndimage.maximum_filter(whole_mask, 3) != ndimage.minimum_filter(whole_mask, 3)
+    boundary = boundary[y:y+height, x:x+width]
+    local_boundary = ndimage.maximum_filter(mask, 3) != ndimage.minimum_filter(mask, 3)
+    yy, xx = np.indices(mask.shape)
+    ox, oy = [-value for value in image['offset']]
+    protected = (xx >= ox-1) & (xx < ox+image['block'][0]+1) & (yy >= oy-1) & (yy < oy+image['block'][1]+1)
+    if snow_ground:
+        rgb = original[..., :3].astype(np.int16)
+        snow = mask & (rgb.min(2) >= SNOW_GROUND_POLICY['minimumChannel']) \
+            & (np.ptp(rgb, axis=2) <= SNOW_GROUND_POLICY['maximumChroma'])
+        protected |= ndimage.maximum_filter(snow, 3)
+    if exposed_rock:
+        rgb = original[..., :3].astype(np.int16)
+        rock = mask & (rgb[..., 0]-rgb[..., 1] > 20) & (rgb[..., 0]-rgb[..., 2] > 35)
+        protected &= ~ndimage.maximum_filter(rock, 3)
+    permitted = (boundary & local_boundary & ~protected).repeat(density, 0).repeat(density, 1)
+    reconstructed = coverage(whole_mask, density)[y*density:(y+height)*density, x*density:(x+width)*density]
+    return np.where(permitted, reconstructed, exact).astype(np.uint8)
 
 
 def continuous_water_detail(authored, native_anchor, density):

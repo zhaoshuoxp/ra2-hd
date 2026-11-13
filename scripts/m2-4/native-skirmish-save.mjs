@@ -23,6 +23,7 @@ const names = country === 9 ? ['PCV', 'YAPOWR', 'YABRCK', 'INIT', 'YAREFN']
     : country === 8 ? ['SMCV', 'NAPOWR', 'NAHAND', 'E2', 'NAREFN'] : ['AMCV', 'GAPOWR', 'GAPILE', 'E1', 'GAREFN'];
 const locale = JSON.parse(await fs.readFile('public/res/locale/zh-CN.json', 'utf8'));
 const report = { status: 'RUNNING', edition, density, trainerCheck, errors: [], stages: [],
+    failedResources: [],
     disclosure: 'Live built-in AI and legal queued human commands. Manual simulation ticks accelerate validation. No spawned, destroyed or revealed fixtures before persistence and continuation comparisons.' };
 const saveReport = () => fs.writeFile(path.join(out, 'report.json'), JSON.stringify(report, null, 2) + '\n');
 let app, page;
@@ -34,6 +35,9 @@ async function launch() {
         env: { ...process.env, RA2_DESKTOP_USER_DATA: profile, RA2_DESKTOP_NO_DISCOVERY: '1' },
     });
     page = await app.firstWindow();
+    page.on('response', response => { if (response.status() >= 400) {
+        report.failedResources.push({ url: response.url(), status: response.status() }); void saveReport();
+    } });
     page.on('pageerror', error => report.errors.push(error.stack));
     page.on('console', message => { if (message.type() === 'error')
         report.errors.push(message.text().slice(0, 1200)); });
@@ -338,6 +342,15 @@ try {
     await clickAction('DeleteSave'); await clickAction('ConfirmSaveAction');
     await page.waitForFunction(() => document.querySelectorAll('[data-testid=skirmish-saves] [role=option]').length === 1);
     report.controls = 'PASS_LOAD_CANCEL_OVERWRITE_CANCEL_OVERWRITE_DELETE_CANCEL_DELETE';
+    if (country === 9 && process.argv.includes('--original-pause')) {
+        await clickAction('CloseSaves');
+        await page.evaluate(() => window.__ra2debug.generalOptions.graphics.hdEnabled.value = false);
+        await page.waitForFunction(() => { const canvas = document.querySelector('[data-ui-art=pause-yuri]');
+            return canvas && !canvas.hidden && canvas.dataset.pauseSource === 'yuri-pause-emblem-original.png'; });
+        report.originalPause = await page.evaluate(() => { const c = document.querySelector('[data-ui-art=pause-yuri]');
+            return { source: c.dataset.pauseSource, size: [c.width, c.height] }; });
+        await page.screenshot({ path: path.join(out, 'original-yuri-pause.png') });
+    }
     assert.equal(report.errors.length, 0, report.errors.join('\n'));
     report.status = 'PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE';
 } catch (error) {

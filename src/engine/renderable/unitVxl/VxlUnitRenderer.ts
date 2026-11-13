@@ -2,8 +2,10 @@ import * as THREE from 'three';
 import { BatchedMesh } from '../../gfx/batch/BatchedMesh';
 import { MergedSpriteMesh } from '../../gfx/batch/MergedSpriteMesh';
 import { setCachedMeshVisibility } from '../../gfx/CachedMeshVisibility';
+import { registerShadowOnlyMaterial, unregisterShadowOnlyMaterial } from '../../gfx/ShadowOnlyMaterials';
+import { registerVehicleShadowCaster, unregisterVehicleShadowCaster } from '../../gfx/batch/VehicleShadowBatcher';
 import { HdSpriteMaterial } from '../../gfx/material/HdSpriteMaterial';
-import { componentGeometry } from './componentGeometry';
+import { componentGeometry, constructionSlopePositions } from './componentGeometry';
 import { textureFromPalette } from '../../gfx/TextureUtils';
 import { heading } from '../rhino/contract';
 import { nativeCoverage } from '../rhino/coverage';
@@ -16,6 +18,8 @@ import { RotorMast } from './RotorMast';
 import { enableGattlingSpin, gattlingSpinRates, isGattlingBarrel } from './GattlingBarrelSpin';
 import { DiscRotation, enableDiscSurfaceSpin } from './DiscSurfaceSpin';
 import { Coords } from '../../../game/Coords';
+import { groundVolumeCorrection } from './groundVolume';
+import { authoredLightReference } from './authoredLightReference';
 
 // Remove only the continuously varying yaw already represented by the authored
 // bearing. Native translation, roll/pitch, joint offsets and recoil remain live.
@@ -53,6 +57,9 @@ class FrameLayer {
     readonly batch: MergedSpriteMesh;
     readonly depth: THREE.Mesh<THREE.BufferGeometry, HdSpriteMaterial>;
     readonly translucent: THREE.Mesh<THREE.BufferGeometry, HdSpriteMaterial>;
+    private levelPositions?: Float32Array;
+    private slopePositions?: Float32Array;
+    private tilted = false;
     constructor(
         readonly part: VxlPart,
         readonly frame: VxlFrame,
@@ -64,6 +71,7 @@ class FrameLayer {
         missile = false,
         bodyHeight?: [number, number],
         disc = false,
+        readonly rigidSlope = false,
     ) {
         const page = part.override.pages[0];
         const bias = /barl\d*\.vxl$/.test(part.member)
@@ -72,6 +80,14 @@ class FrameLayer {
               ? 0.5
               : 0;
         const geometry = componentGeometry(part, frame, camera, ground, bias, rotor, missile, bodyHeight);
+        if (rigidSlope) {
+            // The depth fold used for level sprites is a sorting surface. A
+            // pitched ground vehicle needs one rigid plane through its
+            // native longitudinal axis; otherwise that fold bends the body.
+            const position = geometry.getAttribute('position');
+            this.levelPositions = Float32Array.from(position.array);
+            this.slopePositions = constructionSlopePositions(position, frame.referenceLinear, camera);
+        }
         const material = new HdSpriteMaterial({
             map: page.base,
             remapMap: page.data,
@@ -115,6 +131,13 @@ class FrameLayer {
             mesh.visible = false;
             parent.add(mesh);
         }
+    }
+    setGroundAttitude(tilted: boolean) {
+        if (!this.levelPositions || tilted === this.tilted) return;
+        this.tilted = tilted;
+        const position = this.source.geometry.getAttribute('position') as THREE.BufferAttribute;
+        (position.array as Float32Array).set(tilted ? this.slopePositions! : this.levelPositions);
+        position.needsUpdate = true;
     }
     update(
         visible: boolean,
@@ -185,10 +208,12 @@ export async function warmVxlShaders(family: VxlFamily, renderer: THREE.WebGLRen
     } catch (error) { dispose(); throw error; }
 }
 
-// Retail TRUCKA shares the accepted DTRUCK VXL/HVA pair. Loading verifies both
-// source hashes; construction below also checks the complete native component graph.
+// Retail aliases share accepted VXL/HVA pairs. Loading verifies every source
+// hash; construction below also checks the complete native component graph.
 export function vxlActorIdentity(family: string, actor: string): string {
-    return family === 'DTRUCK' && actor === 'TRUCKA' ? 'DTRUCK' : actor;
+    if (family === 'HARV' && actor === 'HORV') return 'HARV';
+    if (family === 'DTRUCK' && actor === 'TRUCKA') return 'DTRUCK';
+    return family === 'PDPLANE' && actor === 'CARGOPLANE' ? 'PDPLANE' : actor;
 }
 
 export class VxlUnitRenderer {
@@ -212,10 +237,13 @@ export class VxlUnitRenderer {
     constructor(
         readonly r: any,
         readonly family: VxlFamily,
-        camera: THREE.Camera,
+        private readonly camera: THREE.Camera,
     ) {
         this.towardCamera = new THREE.Vector3(0, 0, 1).applyQuaternion(camera.quaternion);
-        const expected = family.parts.filter((p) => p.actor === vxlActorIdentity(family.identity, r.gameObject.name));
+        // A directly placed HORV has only the native unloading body. Load and
+        // validate the complete HARV family, then bind this exact component.
+        const expected = family.parts.filter(p => p.actor === vxlActorIdentity(family.identity, r.gameObject.name)
+            && !(family.identity === 'HARV' && r.gameObject.name === 'HORV' && p.member !== 'horv.vxl'));
         if (!expected.length || !r.objectArt.isVoxel || !r.posObj)
             throw Error('Unrecognized VXL actor');
         const actual = r.vxlBuilders.flatMap((b: any) =>
@@ -231,7 +259,7 @@ export class VxlUnitRenderer {
             )
         )
             throw Error('Incomplete native VXL component graph');
-        this.baseLight = r.baseShpExtraLight?.clone() ?? new THREE.Vector3();
+        this.baseLight = authoredLightReference(r);
         const palette = textureFromPalette(r.palette);
         try {
             for (const part of expected) {
@@ -242,6 +270,9 @@ export class VxlUnitRenderer {
                 this.originals.push(mesh.material);
                 const hidden = mesh.material.clone();
                 hidden.colorWrite = hidden.depthWrite = false;
+                // The native section remains the shadow caster; it no longer
+                // submits an empty colour-pass draw beneath the HD layers.
+                registerShadowOnlyMaterial(hidden);
                 this.hidden.push(hidden);
                 // Native bridge decks do not write depth. Preserve the original
                 // voxel depth before the later ground-shadow receiver pass, so
@@ -301,21 +332,21 @@ export class VxlUnitRenderer {
                             camera,
                             r.posObj,
                             palette,
-                            // Surface-visible hull pixels must not start below the native water plane.
-                            // Native pitch, sinking and cloak still apply through the live pose.
-                            (!r.objectRules.naval ||
-                                ['HYD', 'DRED', 'SUB', 'BSUB', 'DEST', 'CARRIER', 'AEGIS', 'LCRF'].includes(family.identity)) &&
-                                !r.gameObject.isAircraft() &&
-                                !r.objectRules.balloonHover,
+                            // Keep ground and naval artwork above the reference surface,
+                            // including civilian and future hulls. Native pitch and sinking
+                            // still apply through the live pose.
+                            !r.gameObject.isAircraft() && !r.objectRules.balloonHover,
                             rotor,
                             !!r.objectRules.missileSpawn,
                             bodyHeight,
-                            disc && layer.turret,
+                            disc,
+                            !!r.gameObject.tilterTrait && !r.objectRules.naval && !r.gameObject.isAircraft()
+                                && !r.objectRules.balloonHover && !r.objectRules.missileSpawn && !rotor && !bodyHeight,
                         ),
                     );
             }
         } catch (error) {
-            this.hidden.forEach((m) => m.dispose());
+            this.hidden.forEach((m) => { unregisterShadowOnlyMaterial(m); m.dispose(); });
             this.shadowOccluders.forEach((m) => {
                 m.removeFromParent();
                 (m.material as THREE.Material).dispose();
@@ -324,6 +355,7 @@ export class VxlUnitRenderer {
             throw error;
         }
         this.shadow = new RhinoShadow(this.meshes);
+        if (r.gameObject.isVehicle?.()) this.meshes.forEach(registerVehicleShadowCaster);
     }
     update() {
         if (this.disposed) return;
@@ -374,6 +406,20 @@ export class VxlUnitRenderer {
             }
         }
         // The SHP multiplier above preserves authored detail during Iron Curtain.
+        const tiltedGround = !!u.tilterTrait && !r.objectRules.naval && !u.isAircraft()
+            && (Math.abs(r.tiltObj.rotation.x) > .0001 || Math.abs(r.tiltObj.rotation.z) > .0001);
+        const volume = tiltedGround ? new THREE.Matrix4() : undefined;
+        if (tiltedGround) {
+            const hull = this.layers.find(layer => !layer.turret && !layer.rotor && layer.frames[0]?.rigidSlope);
+            const selectedHull = hull?.frames.find(layer => layer.frame.heading === heading(bodyYaw));
+            if (hull && selectedHull) {
+                selectedHull.setGroundAttitude(true);
+                const currentHull = inversePosition.clone().multiply(hull.mesh.matrixWorld);
+                const hullPose = componentPose(new THREE.Matrix4(), currentHull,
+                    selectedHull.frame.referenceLinear, bodyYaw, selectedHull.frame.heading);
+                groundVolumeCorrection(volume!, selectedHull.source.geometry, hullPose, this.camera);
+            }
+        }
         this.layers.forEach(({ mesh, frames, turret, rotor, mast, rotorAxis }, i) => {
             // Flat rotor artwork rotates on its native joint in 3D; it must
             // retain body yaw as well as rotor phase, unlike bearing sprites.
@@ -416,7 +462,7 @@ export class VxlUnitRenderer {
                         mesh.getClippingPlanes?.() ?? this.originals[i].clippingPlanes, opacity);
                     continue;
                 }
-                if (disc && turret) {
+                if (disc) {
                     for (const pass of [layer.batch.material, layer.depth.material, layer.translucent.material,
                         ...layer.batch.children.map(child => (child as THREE.Mesh).material)])
                         (pass as HdSpriteMaterial).uniforms.discPhase.value = THREE.MathUtils.degToRad(discPhase % 360);
@@ -432,6 +478,8 @@ export class VxlUnitRenderer {
                     layer.batch.userData.gattlingStage = u.armedTrait.getGattlingStage();
                     layer.batch.userData.gattlingSpinRate = gattlingActive ? gattlingSpinRates[u.armedTrait.getGattlingStage()] : 0;
                 }
+                if (layer.rigidSlope)
+                    layer.setGroundAttitude(Math.abs(r.tiltObj.rotation.x) > .0001 || Math.abs(r.tiltObj.rotation.z) > .0001);
                 // The recovered missile axis must follow continuous native yaw
                 // as well as pitch, even between the eight authored bearings.
                 componentPose(
@@ -441,6 +489,7 @@ export class VxlUnitRenderer {
                     u.rules.missileSpawn ? layer.frame.heading : yaw,
                     layer.frame.heading,
                 );
+                if (volume && layer.rigidSlope) this.pose.premultiply(volume);
                 if (dockMeshes.length && selected === layer.frame.heading) {
                     const world = r.posObj.matrixWorld.clone().multiply(this.pose);
                     const key = `${dock!.id}/${selected}/${world.elements.join(',')}/${dockMeshes.map(m => m.geometry.uuid).join(',')}`;
@@ -471,8 +520,9 @@ export class VxlUnitRenderer {
         this.disposed = true;
         this.active = false;
         this.meshes.forEach((mesh, i) => (mesh.material = this.originals[i]));
+        this.meshes.forEach(unregisterVehicleShadowCaster);
         this.shadow.dispose();
-        this.hidden.forEach((m) => m.dispose());
+        this.hidden.forEach((m) => { unregisterShadowOnlyMaterial(m); m.dispose(); });
         this.shadowOccluders.forEach((m) => {
             m.removeFromParent();
             (m.material as THREE.Material).dispose();

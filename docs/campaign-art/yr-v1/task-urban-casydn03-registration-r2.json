@@ -1,0 +1,182 @@
+{
+  "status": "COMPLETE_FAMILY_REGISTERED_NATIVE_AND_USER_REVIEW_PENDING",
+  "family": "yr-task-urban-casydn03-v2",
+  "mission": {
+    "edition": "yr",
+    "mission": "all05umd.map",
+    "sha256": "7ee8148ad4b0092b7970588d9b064ddd6b753fc7bfb352bcc043affeb72c6aed"
+  },
+  "theater": "URBAN",
+  "stage": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/yr-campaign/task-urban-casydn03-stage-r2",
+  "preparation": {
+    "status": "PREPARED_NATIVE_REGISTRATION_AND_RUNTIME_PENDING",
+    "recipe": "/Users/Aone/RA2remaster/ra2-hd/docs/campaign-art/yr-v1/task-urban-casydn03-r2.json",
+    "recipeSha256": "2d7a7fe8f2b2e1f999b11d3c30c5a6a98228132de5353181ace385798667ded4",
+    "originalSourceJsonSha256": "f0cd42b463daf642d2b50ed926f093ea54167d00e1f1d655fdf8476fd5ca3ed8",
+    "sourceSha256": "3fb8a8929fc7f2e95f21963db1b8728c236eaf7396a54e341af2c4daa25890cc",
+    "masters": [
+      {
+        "slot": 0,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r2/frame-0.png",
+        "sha256": "2b197ad9e5c5ddd1213eeb93ba39eb77f2a675ab30e04d0a415902db8036585d"
+      },
+      {
+        "slot": 1,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r2/frame-1.png",
+        "sha256": "28013e7b405c3c32924f2d260fdd2537bf875b66524b4f6687a62cbfded80957"
+      },
+      {
+        "slot": 2,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r2/frame-2.png",
+        "sha256": "8a710687b04f27920e7fc73c986f1d160e2faa7a546e64a790019f54cd90da4b"
+      },
+      {
+        "slot": 3,
+        "file": "/Users/Aone/RA2remaster/ra2-hd/.local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r1/frame-3.png",
+        "sha256": "4ce54307331aaa627753b8c5161a01e93ae149f8c17260548cc07a8e33511aaa"
+      }
+    ],
+    "directionAuthorization": {
+      "file": "docs/campaign-art/yr-v1/authorization.json",
+      "sha256": "06c13af2fb41a84798b1d7ab4dc0b70814477a09315823b48cd7a2ffcb4a6ec3"
+    },
+    "userVisualAcceptance": "PENDING",
+    "qualification": "Only original guides are converted. Authored masters are referenced without copying or modification. Complete state coverage, independent exports, alpha/geometry and runtime acceptance require subsequent verification."
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "sha256": "bbd164e097975b2866f55b6cc8268c089c482aea38d16c33f9f0c1a59047af58",
+    "counts": {
+      "families": 1,
+      "members": 1,
+      "densityFrames": 8,
+      "pages": 3,
+      "ownerStates": 2,
+      "neutralStates": 6,
+      "unusedMarkerDensityFrames": 0,
+      "nativeSeparateShadowFrames": 4,
+      "preservedAcceptedDensityFrames": 0
+    },
+    "independentDensities": [
+      2,
+      4
+    ],
+    "unpooledRgbaBytes": {
+      "2": 10584064,
+      "4": 42074112
+    },
+    "nativeGeometryAndStateTimingUnchanged": true,
+    "nativeSeparateShadowsUnchanged": true,
+    "userVisualAcceptance": "PENDING",
+    "nativeRuntime": "PENDING"
+  },
+  "internalVisualInspection": {
+    "status": "PASS_INTERNAL_NATIVE_GEOMETRY_AND_DENSITY_INSPECTION",
+    "packSha256": "bbd164e097975b2866f55b6cc8268c089c482aea38d16c33f9f0c1a59047af58",
+    "independentDensities": [
+      2,
+      4
+    ],
+    "inspectedExports": [
+      ".artifacts/yr-campaign/task-urban-casydn03-stage-r2/inspection/states-2x.png",
+      ".artifacts/yr-campaign/task-urban-casydn03-stage-r2/inspection/states-4x.png",
+      ".artifacts/yr-campaign/task-urban-casydn03-stage-r2/inspection/cusydn03.shp-4x-frame-0.png"
+    ],
+    "observations": [
+      "The existing fine warm-gray square grid and curved courses are clearer on the white shell surfaces in normal, damaged and garrison states. The accepted full-resolution normal-state basis remains the design, light and material reference.",
+      "Actual independent density exports were inspected. Existing shell ribs, white shading, podium, stairs, windows, damage openings, owner panels, native geometry and shadows remain source faithful. The rubble master remains the original r1 master."
+    ],
+    "nativeRuntime": "PENDING",
+    "userVisualAcceptance": "PENDING"
+  },
+  "bundle": {
+    "schema": "campaign-environment-extension-v1",
+    "identity": "yr-task-urban-casydn03-v2",
+    "familyHash": "c62f0664338515460a16409f9f5ae4b4db7830852defce3882068e927e124bfe",
+    "mission": "all05umd.map",
+    "theater": "URBAN",
+    "revision": "yr-task-urban-casydn03-r2",
+    "members": [
+      {
+        "member": "cusydn03.shp",
+        "manifest": "yr-task-urban-casydn03-r2-cusydn03-shp.json",
+        "sha256": "23759e4bc4bb926172583a8ebd635921d6d60dbd7ce3261162e18370fab6ae31"
+      }
+    ],
+    "acceptance": "FAITHFUL_DIRECTION_AUTHORIZED_COMPLETE_NATIVE_RUNTIME_AND_USER_VISUAL_REVIEW_PENDING",
+    "edition": "yr"
+  },
+  "files": [
+    {
+      "name": "yr-task-urban-casydn03-r2-cusydn03-shp-2-p0-base.png",
+      "bytes": 988273,
+      "sha256": "0c07ec49f9c50586e623eb349199fd8cb1928693e4223dd45083689081e8d690",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-casydn03-r2-cusydn03-shp-2-p0-base.png"
+    },
+    {
+      "name": "yr-task-urban-casydn03-r2-cusydn03-shp-2-p0-data.png",
+      "bytes": 12293,
+      "sha256": "8aaa8f5431ed4d38c8d2d7da6e92a394e7a6136a97759fff9b39ca9d6a911925",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-casydn03-r2-cusydn03-shp-2-p0-data.png"
+    },
+    {
+      "name": "yr-task-urban-casydn03-r2-cusydn03-shp-4-p0-base.png",
+      "bytes": 2641056,
+      "sha256": "24e29506e38c2aa6a208326712972cda4e6a124955a7a90b9dacf17b6432b007",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-casydn03-r2-cusydn03-shp-4-p0-base.png"
+    },
+    {
+      "name": "yr-task-urban-casydn03-r2-cusydn03-shp-4-p0-data.png",
+      "bytes": 30363,
+      "sha256": "91a1171f9dff93b6f7b0f620e2ace166cae6b575e32be504493e8ada90d53011",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-casydn03-r2-cusydn03-shp-4-p0-data.png"
+    },
+    {
+      "name": "yr-task-urban-casydn03-r2-cusydn03-shp-4-p1-base.png",
+      "bytes": 916149,
+      "sha256": "80d00d65da78cfd2581ff7a33b61badd47f766f144c8eac0d4256150b6178681",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-casydn03-r2-cusydn03-shp-4-p1-base.png"
+    },
+    {
+      "name": "yr-task-urban-casydn03-r2-cusydn03-shp-4-p1-data.png",
+      "bytes": 6024,
+      "sha256": "03abb945c7650ce0a95a3c193a531e6c8b53dbce9b1aab5dfc28d4bddfc46e1b",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-casydn03-r2-cusydn03-shp-4-p1-data.png"
+    },
+    {
+      "name": "yr-task-urban-casydn03-r2-cusydn03-shp.json",
+      "bytes": 6252,
+      "sha256": "23759e4bc4bb926172583a8ebd635921d6d60dbd7ce3261162e18370fab6ae31",
+      "route": "/local-campaign/yr/all05umd/yr-task-urban-casydn03-r2-cusydn03-shp.json"
+    },
+    {
+      "name": "environment-family-yr-task-urban-casydn03-r2.json",
+      "bytes": 608,
+      "sha256": "ac6b549a8f656c19a07259e76a97b7985291134dfe6ec35c7dd9aa20ec7cc22a",
+      "route": "/local-campaign/yr/all05umd/environment-family-yr-task-urban-casydn03-r2.json"
+    }
+  ],
+  "contractBeforeSha256": "2be9f37af71ec936077a0e0401c037384e153d8e09c9fb32f3091ab53362615a",
+  "contractAfterSha256": "e1c7cf25d2409e5e0b9fcc1b6c46555d56d62d2c420c27c087a8036db913be21",
+  "existingRootSelectorChanges": {
+    "CASYDN03": "yr-task-urban-casydn03-v1"
+  },
+  "acceptedPayloadsReplaced": 0,
+  "ownershipCorrection": null,
+  "artCorrection": null,
+  "bridgeCorrection": null,
+  "buildingRefinement": {
+    "previousReceipt": "docs/campaign-art/yr-v1/task-urban-casydn03-registration.json",
+    "previousReceiptSha256": "60c39753b43b4bdc78f537ecd8d6b24b00afcc602f7668aaa5650818ae88dffe",
+    "feedback": "docs/campaign-art/yr-v1/material-detail-reopening-20261105.json",
+    "feedbackSha256": "9ab4c12860820ffa3761c1d5d297d1dcd38e00f83bef84207a0301a433ffbdc4",
+    "oldFamilyAndPayloadsRetained": true,
+    "sourceGeometryComparison": [
+      {
+        "member": "cusydn03.shp",
+        "nativeSourceAndLogicalGeometryUnchanged": true
+      }
+    ]
+  },
+  "policy": "Independent densities, original shadows/state timing and existing fixed budgets; complete-family fallback retained."
+}

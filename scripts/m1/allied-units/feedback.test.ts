@@ -5,7 +5,7 @@ import { VxlUnitRenderer } from '../../../src/engine/renderable/unitVxl/VxlUnitR
 import { TextureUtils } from '../../../src/engine/gfx/TextureUtils';
 import { dockDepthOffset } from '../../../src/engine/renderable/unitVxl/dockDepth';
 
-test('dolphin swim and attack use clockwise source bearings without changing animation phase', () => {
+test('dolphin and squid swim and attack use clockwise source bearings without changing animation phase', () => {
     for (const firing of [false, true]) for (let direction = 0; direction < 360; direction += 45) {
         let frame = -1;
         const probe: any = {
@@ -20,7 +20,7 @@ test('dolphin swim and attack use clockwise source bearings without changing ani
         expect(frame).toBe((firing ? 56 : 0) + bearing * 6 + 3);
         probe.gameObject.name = 'SQD';
         Vehicle.prototype.updateShapeFrame.call(probe, direction, true, firing);
-        expect(frame).toBe((firing ? 56 : 0) + ((direction / 45 + 7) % 8) * 6 + 3);
+        expect(frame).toBe((firing ? 56 : 0) + bearing * 6 + 3);
     }
 });
 

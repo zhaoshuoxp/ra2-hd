@@ -31,6 +31,7 @@ export interface VxlPart {
     override: HdSpriteOverride;
     depthBounds?: [number, number, number, number];
     rotorMast?: RotorMastSpec;
+    surfaceLighting?: 'material-normalized-g4-v1';
 }
 export interface VxlFamily {
     identity: string;
@@ -119,6 +120,13 @@ async function loadVxlFamilyVariant(
                 'vxl-source-identity',
             );
         }
+        if (m.sourcePalette) {
+            const palette = m.theater === 'TEMPERATE' ? 'unittem.pal'
+                : m.theater === 'NEWURBAN' && ['CBLC', 'DOLY', 'DDBX'].includes(identity) ? 'unitubn.pal' : undefined;
+            check(palette && await digest(Uint8Array.from(Engine.vfs!.openFile(palette).getBytes()).buffer)
+                === m.sourcePalette, 'vxl-source-palette');
+        }
+        if (m.sourceVpl) check(await digest(Uint8Array.from(Engine.vfs!.openFile('voxels.vpl').getBytes()).buffer) === m.sourceVpl, 'vxl-source-vpl');
         for (const member of contract.members)
             check(
                 m.sources[member] && m.sources[member.replace('.vxl', '.hva')],
@@ -139,6 +147,9 @@ async function loadVxlFamilyVariant(
         let gpuBytes = 0;
         let nextImages = readImages(m.parts[0]);
         for (const [index, part] of m.parts.entries()) {
+            const packedLighting = part.surfaceLighting === 'material-normalized-g4-v1';
+            check(!part.surfaceLighting || (packedLighting && identity === 'DISK' && part.member === 'disktur.vxl'),
+                'vxl-surface-lighting');
             check(!part.rotorMast || (part.frames[0]?.rotorAnchor &&
                 Number.isFinite(part.rotorMast.height) && part.rotorMast.height > 1.8 && part.rotorMast.height < 32 &&
                 Number.isFinite(part.rotorMast.baseRadius) && part.rotorMast.baseRadius >= 1.1 && part.rotorMast.baseRadius < 8),
@@ -189,7 +200,7 @@ async function loadVxlFamilyVariant(
             if (index + 1 < m.parts.length) nextImages = readImages(m.parts[index + 1]);
             const scale = density / sourceDensity;
             let pixels;
-            if (preparer) pixels = await preparer.prepare(images, part.pageSize, scale, renderer.capabilities.maxTextureSize);
+            if (preparer) pixels = await preparer.prepare(images, part.pageSize, scale, renderer.capabilities.maxTextureSize, packedLighting);
             else {
                 const decoded: DecodedHdPage[] = [];
                 for (const imageBytes of images) {
@@ -221,7 +232,7 @@ async function loadVxlFamilyVariant(
                         bitmap.close();
                     }
                 }
-                pixels = prepareVxlPixels(decoded[0], decoded[1], scale, renderer.capabilities.maxTextureSize);
+                pixels = prepareVxlPixels(decoded[0], decoded[1], scale, renderer.capabilities.maxTextureSize, packedLighting);
             }
             check(!stopped(), 'cancelled');
             const frames = part.frames.map((frame: VxlFrame) => ({ ...frame,

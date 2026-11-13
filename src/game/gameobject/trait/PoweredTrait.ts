@@ -16,6 +16,9 @@ export class PoweredTrait {
     }
     isPoweredOn(checkCharged: boolean = false): boolean {
         if ((this.obj as any).drainedBy?.size) return false;
+        // Original campaign buildings can start switched off yet receive real
+        // ElectricAssault charge. The strict query still excludes that supply.
+        if (!checkCharged && (this.obj?.owner?.campaignSemanticsVersion ?? 0) >= 7 && this.isCharged()) return true;
         return (!(!this.obj || !this.turnedOn) &&
             (!(checkCharged || !this.isCharged()) ||
                 (!this.obj.rules.power && this.obj.rules.needsEngineer

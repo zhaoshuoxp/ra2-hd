@@ -1,0 +1,2333 @@
+{
+  "schemaVersion": 1,
+  "status": "SOURCE_PREFLIGHT_READY_SEE_SEPARATE_NATIVE_ACCEPTANCE",
+  "sourceHash": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f",
+  "priorAssessmentSourceMatches": true,
+  "admission": {
+    "formalPlay": true,
+    "difficulties": [
+      "normal"
+    ],
+    "reason": "No required Soviet 01 executor gaps; native completion, display and platform status are recorded separately in m3-1-soviet01-acceptance.json",
+    "events": [
+      1,
+      4,
+      6,
+      9,
+      10,
+      13,
+      21,
+      30,
+      32,
+      36,
+      37,
+      44,
+      48,
+      56,
+      57
+    ],
+    "actions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      11,
+      12,
+      17,
+      19,
+      21,
+      22,
+      38,
+      41,
+      46,
+      47,
+      48,
+      53,
+      54,
+      55,
+      56,
+      57,
+      63,
+      74,
+      80,
+      88,
+      99,
+      108,
+      113,
+      114,
+      115
+    ],
+    "scripts": [
+      0,
+      3,
+      5,
+      6,
+      8,
+      9,
+      11,
+      19,
+      20,
+      21,
+      37,
+      46,
+      49,
+      50
+    ],
+    "subsystems": [
+      {
+        "id": "retail-teams",
+        "ready": true,
+        "reason": "Required team, task force and script executors are implemented"
+      },
+      {
+        "id": "campaign-ai",
+        "ready": true,
+        "reason": "Original map AI trigger conditions, weights, limits and factory recruitment are implemented"
+      },
+      {
+        "id": "world-save-restore",
+        "ready": true,
+        "reason": "Native changed-world reconstruction and deterministic continuation pass"
+      },
+      {
+        "id": "mission-media",
+        "ready": true,
+        "reason": "The original map references its intro and speech; it does not reference an ingame movie action or script"
+      },
+      {
+        "id": "normal-play-acceptance",
+        "ready": true,
+        "reason": "Native ordinary-command objective victory, independent original defeat and changed-world continuation pass; input and presentation acceptance is recorded separately"
+      }
+    ]
+  },
+  "declared": {
+    "triggers": 132,
+    "tags": 132,
+    "houses": 8,
+    "teams": 44,
+    "scripts": 31,
+    "taskForces": 29,
+    "waypoints": 101,
+    "cellTags": 158,
+    "actions": 380,
+    "events": 138
+  },
+  "currentGaps": [],
+  "unimplementedOpcodes": {
+    "actions": [],
+    "scripts": []
+  },
+  "resources": [
+    {
+      "name": "CAAIRP",
+      "placements": 1,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cuairp.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "b19984bcdfb2f4303e12fef2db9f02a8c0c4bfad6093c88defc2d7a18622dd92"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-caairp"
+    },
+    {
+      "name": "CABHUT",
+      "placements": 3,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cubhut.shp",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "945216ab1eba7e34e6785fd54e916d096a6df4dee1df1052094e0b68f02630ff"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-ctbhut"
+    },
+    {
+      "name": "CAGAS01",
+      "placements": 2,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cugas01.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "11c0947ce864c9df654ea2b8c601d3439188fddc944feb3d25fead0e201fa232"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-cagas01"
+    },
+    {
+      "name": "CAMISC03",
+      "placements": 4,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cumisc03.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "2bcef904fd968c5bf400e436e5c195000612e174313c810de9c650f5ac4d9161"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-ctmisc03"
+    },
+    {
+      "name": "CAMISC04",
+      "placements": 4,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cumisc04.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "9eb000783eb74448da023b3572164a266c01e7d53602927adc1d44e3a16a3e03"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-ctmisc04"
+    },
+    {
+      "name": "CAMISC05",
+      "placements": 6,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cumisc05.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "577b67cefbb0c80d0af376f67707cbee7bf1d982bd5aa77df53859ab6da2ddeb"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-ctmisc05"
+    },
+    {
+      "name": "CAMOV01",
+      "placements": 1,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cumov01.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "a13eddd7147ae1a8d9708ad6f161a1d92a1c7757a4ec9ee2194247d0bf816f03"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CAMOV02",
+      "placements": 1,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cumov02.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "36527bf347558246a646dadd8a5d010ac8e2492f0b1b82e2b8419f50f6a2f033"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CAMSC10",
+      "placements": 1,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cumsc10.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "d747850f715a5952efd319064c583e0535ff1e53723f0b5259e0079e31aff75c"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CAMSC11",
+      "placements": 4,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cumsc11.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "b5e65dbe6069ac17ca299d9617505ebfd069efe71f0beca5b36e28b7ba2e6b4c"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CANEWY20",
+      "placements": 3,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cunewy20.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "1a082be595f45697d43dd504caa855e2f29d3941ef6fbaf46e09ffa60af84568"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-canewy20"
+    },
+    {
+      "name": "CANEWY21",
+      "placements": 4,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cunewy21.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "11b33feffb5c421899f8fb0f9db30a0dff7398dad590c9ed49bee28915f16166"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CAOILD",
+      "placements": 2,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cuoild.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "8cfe3e11b7f96ae3c29fbbbd3aeafc09648d75de8bfd6c580b4bd28dc6595d67"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-caoild"
+    },
+    {
+      "name": "CAPARK01",
+      "placements": 5,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cupark01.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "17e27b323c9732cc443fe5b0798516fba81b976cf5db6b6b8b2e45507af2bf16"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-ctpark01"
+    },
+    {
+      "name": "CAPARK02",
+      "placements": 2,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cupark02.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "74e5406c6d90625fb379d7f58f14e04b716e13fee7498a5c9a976bd3bf794ff0"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-ctpark02"
+    },
+    {
+      "name": "CAPARS07",
+      "placements": 3,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cupars07.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "5700edd5ae8b1f4ed61bc1bc434c27b65550434509ea2b897b16d90318ab839c"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-ctpars07"
+    },
+    {
+      "name": "CAR",
+      "placements": 2,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "car.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "a03a5991c9620f3abff6e69bd3facb8c567ad6b4fdc2dfee088e23e95f2d8f72"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "8473960979af8e0669cb795f266a9849a997273a09b6e287be231def7affa257"
+    },
+    {
+      "name": "CATEXS06",
+      "placements": 2,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cutexs06.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "28c0ac462d36ca58062ace9de53b2642990fde507120efbb7f17c8a68abd38fa"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-catexs06"
+    },
+    {
+      "name": "CATEXS07",
+      "placements": 1,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cutexs07.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "3041a6363979ab3702c7c888138545fc5f45298a6ccf4208e632f06925fb43ba"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-catexs07"
+    },
+    {
+      "name": "CATEXS08",
+      "placements": 6,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cutexs08.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "cae296c54a52abb8c0ea0abbd8e9694b4ad8a45e9b86ed5cb9c5b6fa31778561"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-catexs08"
+    },
+    {
+      "name": "CAUSFGL",
+      "placements": 18,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cuusfgl.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "919504b35df81f1df5e6652b66065cf573ac4eb5735ba48dfd4c915597c2668f"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-ctusfgl"
+    },
+    {
+      "name": "CAWA2A",
+      "placements": 1,
+      "referencedBy": [
+        "Structures",
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "cuwa2a.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "c038d379d1326a717fcbae6608f0020d77bb985bb44c8d0735beb311ef231d6c"
+      },
+      "status": "ORIGINAL_FALLBACK_CONFIRMED",
+      "contract": null,
+      "nativeEvidence": [
+        {
+          "name": "CAWA2A",
+          "density": 1,
+          "identity": "ORIGINAL",
+          "pages": 0,
+          "tile": [
+            60,
+            36
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        },
+        {
+          "name": "CAWA2A",
+          "density": 1,
+          "identity": "ORIGINAL",
+          "pages": 0,
+          "tile": [
+            60,
+            36
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        }
+      ]
+    },
+    {
+      "name": "CAWA2B",
+      "placements": 1,
+      "referencedBy": [
+        "Structures",
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "cuwa2b.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "671e5858df0f13f9befb2a73ef208198eb7942f925c082e2e11591637b5d09c0"
+      },
+      "status": "ORIGINAL_FALLBACK_CONFIRMED",
+      "contract": null,
+      "nativeEvidence": [
+        {
+          "name": "CAWA2B",
+          "density": 1,
+          "identity": "ORIGINAL",
+          "pages": 0,
+          "tile": [
+            60,
+            40
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        },
+        {
+          "name": "CAWA2B",
+          "density": 1,
+          "identity": "ORIGINAL",
+          "pages": 0,
+          "tile": [
+            60,
+            40
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        }
+      ]
+    },
+    {
+      "name": "CAWA2C",
+      "placements": 1,
+      "referencedBy": [
+        "Structures",
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "cuwa2c.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "9ebaec815adfb3e00637edc3d8520610bb61626a4ac83db06670ab11e307a059"
+      },
+      "status": "REUSE_UNCHANGED_EARLIER_NATIVE_BINDING",
+      "contract": "urban-cawa2c",
+      "nativeEvidence": [
+        {
+          "name": "CAWA2C",
+          "density": 2,
+          "identity": "environment-aggregate/b48223c3bf157b8792607a49ff802415b08a548c648775d5aa1b51bce0715788/9ebaec815adfb3e00637edc3d8520610bb61626a4ac83db06670ab11e307a059/URBAN/tiles/2",
+          "pages": 1,
+          "tile": [
+            56,
+            40
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        },
+        {
+          "name": "CAWA2C",
+          "density": 4,
+          "identity": "environment-aggregate/b48223c3bf157b8792607a49ff802415b08a548c648775d5aa1b51bce0715788/9ebaec815adfb3e00637edc3d8520610bb61626a4ac83db06670ab11e307a059/URBAN/tiles/4",
+          "pages": 2,
+          "tile": [
+            56,
+            40
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        }
+      ]
+    },
+    {
+      "name": "CAWA2D",
+      "placements": 1,
+      "referencedBy": [
+        "Structures",
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "cuwa2d.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "91c9763a48bb6d7e82ce5603f1efd044f265aa38c0216b1deed621d2a8fd1b5e"
+      },
+      "status": "REUSE_UNCHANGED_EARLIER_NATIVE_BINDING",
+      "contract": "urban-cawa2d",
+      "nativeEvidence": [
+        {
+          "name": "CAWA2D",
+          "density": 2,
+          "identity": "environment-aggregate/26a2b57572be83136aa6a4aa922c42af6da8e76ad5124e46fcc07c46af7feda9/91c9763a48bb6d7e82ce5603f1efd044f265aa38c0216b1deed621d2a8fd1b5e/URBAN/tiles/2",
+          "pages": 1,
+          "tile": [
+            56,
+            36
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        },
+        {
+          "name": "CAWA2D",
+          "density": 4,
+          "identity": "environment-aggregate/26a2b57572be83136aa6a4aa922c42af6da8e76ad5124e46fcc07c46af7feda9/91c9763a48bb6d7e82ce5603f1efd044f265aa38c0216b1deed621d2a8fd1b5e/URBAN/tiles/4",
+          "pages": 1,
+          "tile": [
+            56,
+            36
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        }
+      ]
+    },
+    {
+      "name": "CAWASH04",
+      "placements": 4,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cuwash04.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "0724bca51bffb2f6c09b78d924471d8c8021d93ad2670352f302d364c5a30721"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-cawash04"
+    },
+    {
+      "name": "CAWASH05",
+      "placements": 4,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cuwash05.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "66a9e94696b4c5e159eab1c2b2a7cb52a78a400925e8d42802928d5eeacc5d82"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-cawash05"
+    },
+    {
+      "name": "CAWASH06",
+      "placements": 2,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cuwash06.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "8ee2ee63a1501798527462857610a8a3fba70e32e0fdb2ec655b719fe5d5251f"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CAWASH07",
+      "placements": 4,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cuwash07.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "5fd0054c3718d21f89b0b983fa2764cc97503e6ba3701f0e610145783a9a5a2c"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-cawash07"
+    },
+    {
+      "name": "CAWASH08",
+      "placements": 3,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cuwash08.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "c774b5d6ae00d9d9d1a90a5e498172b7c4481d7da0805b8120c395967d13ffe2"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-cawash08"
+    },
+    {
+      "name": "CAWASH10",
+      "placements": 3,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cuwash10.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "5041860bb6dd91b091f8523e66384d757b4476ad5d15b62896b9731aefaaf9e9"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-cawash10"
+    },
+    {
+      "name": "CAWASH19",
+      "placements": 1,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "cuwash19.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "da2d330700df7a21e820946a5a9c2253259f6276c5c47340086aa096b1d55238"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CIV1",
+      "placements": 9,
+      "referencedBy": [
+        "Infantry",
+        "TaskForce:08AE42E0",
+        "TaskForce:07ADAF1C",
+        "TaskForce:0AE0BDEC"
+      ],
+      "original": {
+        "member": "civ1.shp",
+        "archive": "ra2.mix/conquer.mix",
+        "sha256": "f5ad97d867e974012b2d80f79b554fd51ca462fc631e6510dff9f9a2bc524cef"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CIV2",
+      "placements": 10,
+      "referencedBy": [
+        "Infantry",
+        "TaskForce:07ADAF1C",
+        "TaskForce:0AE0A43C"
+      ],
+      "original": {
+        "member": "civ2.shp",
+        "archive": "ra2.mix/conquer.mix",
+        "sha256": "a92dce1327c5b6f05e99a839f4beb5654796881ccade696a8076da1694f35b22"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CIV3",
+      "placements": 10,
+      "referencedBy": [
+        "Infantry",
+        "TaskForce:0A328380",
+        "TaskForce:07ADAF1C",
+        "TaskForce:0AE0A1FC"
+      ],
+      "original": {
+        "member": "civ3.shp",
+        "archive": "ra2.mix/conquer.mix",
+        "sha256": "68bafef09a00fc721b6c580be94d2bdbf8d39da6f12fff5051d347ff44c0b204"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CIVBBP",
+      "placements": 0,
+      "referencedBy": [
+        "TaskForce:09C0E1DC"
+      ],
+      "original": {
+        "member": "civbbp.shp",
+        "archive": "ra2.mix/conquer.mix",
+        "sha256": "70d3fd19f4c69552501aedbfaa9d31f7c42ee600aca41c8ffc34aa6473a45bff"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-civbbp"
+    },
+    {
+      "name": "CIVSF",
+      "placements": 0,
+      "referencedBy": [
+        "TaskForce:09C1DB7C"
+      ],
+      "original": {
+        "member": "civsf.shp",
+        "archive": "ra2.mix/conquer.mix",
+        "sha256": "8f1bcf34f8acba998dad7077c1a51defff35e31c31082e743de47ebefd30bd8e"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CIVSFM",
+      "placements": 0,
+      "referencedBy": [
+        "TaskForce:09C1DB7C"
+      ],
+      "original": {
+        "member": "civsfm.shp",
+        "archive": "ra2.mix/conquer.mix",
+        "sha256": "fc8b75a2b7b10da6405e8692ad91ebcf884cb366dff93e5e0c49b14dae181dee"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CIVSTM",
+      "placements": 0,
+      "referencedBy": [
+        "TaskForce:09C1DB7C"
+      ],
+      "original": {
+        "member": "civstm.shp",
+        "archive": "ra2.mix/conquer.mix",
+        "sha256": "b5099d3c6de60ae44f16a8682a6564e5f0da0dcaacbfe800bbf2c7fba53ece71"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "CONA",
+      "placements": 2,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "cona.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "11eef26d8ed7d7fa73e24496987ce3ed3cc1c57f19a6f32dd7096447d64e5518"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "6156131c696b1066c511aaf483f832e02abaeb5d3941695aa267d06ded8916b2"
+    },
+    {
+      "name": "COP",
+      "placements": 5,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "cop.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "cf85d7a292f3589ec3ed557eeae3a3c79d200dfdf2d02969b7ec17cf1bf0e78f"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "7462f593d16489a3b15718f3e3824d3fc074941dcfdf00ca134ce251907ade35"
+    },
+    {
+      "name": "CRUISE",
+      "placements": 3,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "cruise.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "bd3881d5c6a568a7e180b124eb6669425df56a0bc206a57a447f80ec1216eb5b"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "E1",
+      "placements": 31,
+      "referencedBy": [
+        "Infantry",
+        "TaskForce:08E731E0",
+        "TaskForce:085F1810",
+        "TaskForce:07ABCD10",
+        "TaskForce:041731DC",
+        "TaskForce:093801A0"
+      ],
+      "original": {
+        "member": "gi.shp",
+        "archive": "ra2.mix/conquer.mix",
+        "sha256": "bceaee9c270d6382d80d509f2c4b2893c10565f779096b3add37a4d5321e8be1"
+      },
+      "status": "REUSE_UNIT_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "0780ba108d9e1ed07fc17cce89a71960832a3e63f866694faf08d98e757a4c2c"
+    },
+    {
+      "name": "E2",
+      "placements": 0,
+      "referencedBy": [
+        "TaskForce:09CCD90C",
+        "TaskForce:0A0C196C",
+        "TaskForce:08263DEC",
+        "TaskForce:0C591C7C",
+        "TaskForce:0AE3608C",
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "cons.shp",
+        "archive": "ra2.mix/conquer.mix",
+        "sha256": "b60c5527b82a6e317e4958344443c4bbd9b2139e693f4641c470ff3f15f1f9f1"
+      },
+      "status": "REUSE_NATIVE_MISSION_HD_BINDING_CONFIRMED",
+      "contract": null,
+      "nativeEvidence": [
+        {
+          "name": "E2",
+          "density": 2,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        },
+        {
+          "name": "E2",
+          "density": 4,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        }
+      ]
+    },
+    {
+      "name": "EUROC",
+      "placements": 5,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "euroc.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "a8765dd2c6f0450b78bf1140c0beb393aee622a11c8fff0faccafb1cb143b454"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "350f99fff90c75d48de69d5b8e30362dd4821283d40ff58828cd67217b66f8f9"
+    },
+    {
+      "name": "FV",
+      "placements": 0,
+      "referencedBy": [
+        "TaskForce:0B67690C",
+        "TaskForce:07B4932C"
+      ],
+      "original": {
+        "member": "fv.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "31e78a7559bbfb19a8e763550d17366e4e386d934c695188cd7336cef68a8f3e"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "c03e00d6307d392dda9e87740ad640eb26752f3ba308b215549d33cca781835e"
+    },
+    {
+      "name": "GACNST",
+      "placements": 1,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "ggcnst.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "9b6110016d5cefa2d9509ce7dd62848e4a548c17faa3c2e69681fdb92c57643c"
+      },
+      "status": "REUSE_EXISTING_WORLD_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": null
+    },
+    {
+      "name": "GAPILE",
+      "placements": 4,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "ggpile.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "0568894bba630cb6a143a7dbb801f821dc16638544e229e0b2aa3a2fa741734a"
+      },
+      "status": "REUSE_EXISTING_WORLD_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": null
+    },
+    {
+      "name": "GAPILL",
+      "placements": 6,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "ggpill.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "baf5382bd6adb17668591f5a242d3c446584b4bb8758b7f6a0c0cf741e1cbfdf"
+      },
+      "status": "REUSE_EXISTING_WORLD_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": null
+    },
+    {
+      "name": "GAPOWR",
+      "placements": 7,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "ggpowr.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "f758f01ddde6994eb2056d0a45a91e820a544fed513e38a6dad512c14484e37c"
+      },
+      "status": "REUSE_EXISTING_WORLD_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": null
+    },
+    {
+      "name": "GAREFN",
+      "placements": 1,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "ggrefn.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "2efe8ebec22dc70c58d59d2b453352bf4ee21ebf98e27a28a666b195fbf50b93"
+      },
+      "status": "REUSE_EXISTING_WORLD_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": null
+    },
+    {
+      "name": "HARV",
+      "placements": 0,
+      "referencedBy": [
+        "TaskForce:0A0A10E0",
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "harv.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "b51aa74470b8495d9484a8085c88624ce53116dac20ba886b89bbe251913503a"
+      },
+      "status": "REUSE_NATIVE_MISSION_HD_BINDING_CONFIRMED",
+      "contract": "be64b4adffdd84ca7bb61e5ca49f9b0b0cde90605267ef0c77b876a361284481",
+      "nativeEvidence": [
+        {
+          "name": "HARV",
+          "density": 2,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        },
+        {
+          "name": "HARV",
+          "density": 4,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        }
+      ]
+    },
+    {
+      "name": "HTK",
+      "placements": 0,
+      "referencedBy": [
+        "TaskForce:09CF0CAC",
+        "TaskForce:078FC35C",
+        "TaskForce:07902CAC"
+      ],
+      "original": {
+        "member": "htk.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "b679002b9bb2a73706f74507032983b3ef2aff4dea540a33e08b549b22299339"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "83cb65389ffc700aa295ab4c891307672837c772671af9baeac2dca14016c2a2"
+    },
+    {
+      "name": "HTNK",
+      "placements": 0,
+      "referencedBy": [
+        "TaskForce:081BDD7C",
+        "TaskForce:0836F48C"
+      ],
+      "original": {
+        "member": "htnk.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "0ca8517c29f8bed26c3a3f0138bb36bae01fbb751fc9eaa30bfa1fba352923a2"
+      },
+      "status": "REUSE_EXISTING_WORLD_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": null
+    },
+    {
+      "name": "INBLULMP",
+      "placements": 9,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "gglite.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "f1e41e109a305a93a692257f1642ddad9305a32921da33023087fed43d4802ea"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "INYELWLAMP",
+      "placements": 27,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "gglite.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "f1e41e109a305a93a692257f1642ddad9305a32921da33023087fed43d4802ea"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "LIMO",
+      "placements": 6,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "limo.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "96bfbe29d4554749eab8b4399214bf6bf183f83628434f29167f03063fdff350"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "7eddc0d63fbc839b533bf171fa4520df35086d971d779003193548f2ce70269a"
+    },
+    {
+      "name": "LT_GEN01",
+      "placements": 25,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "lt_gen01.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "6993ebd02c09d9672543b19846ffbff11426fde46f8e3022a8250067e52700c6"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-lt_gen01"
+    },
+    {
+      "name": "LT_GEN02",
+      "placements": 52,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "lt_gen02.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "b372677e7c624425a305a53b1a39412c2b7830ba0276c52f7308a23bd0305eab"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-lt_gen02"
+    },
+    {
+      "name": "LT_GEN03",
+      "placements": 23,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "lt_gen03.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "7ad6f3fe45635b372c0e20c016d3285cb1de99453c0d62fd191afc0e7ecff9aa"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-lt_gen03"
+    },
+    {
+      "name": "LT_GEN04",
+      "placements": 53,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "lt_gen04.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "b11cb3e304a93a65c84a11629024682c02860a76d504a52f6d1b44fc918da31e"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-lt_gen04"
+    },
+    {
+      "name": "LT_SGN01",
+      "placements": 5,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "lt_sgn01.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "b706601233fed04d8771b7236ab8c215cd7283c9d87711d9bb2b440113a4989a"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "LT_SGN02",
+      "placements": 4,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "lt_sgn02.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "c7f866b69295b5a021b1c3f2655811c62579169cb23baba2753de62e99198f77"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-lt_sgn02"
+    },
+    {
+      "name": "LT_SGN03",
+      "placements": 10,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "lt_sgn03.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "a2bd5a153ea6fe50e3eb87ea6a5f094597f940c17b748da77052d31bcc086478"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "LT_SGN04",
+      "placements": 6,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "lt_sgn04.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "edc78885baf8c4fddf00506b5976e4cb3068111684f62e30efe258e958ad38c0"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "NACNST",
+      "placements": 0,
+      "referencedBy": [
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "ngcnst.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "669fa7aa0c591b49f331ccb2785b5fc866f6ffe2cae65d912b036b461bdea938"
+      },
+      "status": "REUSE_NATIVE_MISSION_HD_BINDING_CONFIRMED",
+      "contract": null,
+      "nativeEvidence": [
+        {
+          "name": "NACNST",
+          "density": 2,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        },
+        {
+          "name": "NACNST",
+          "density": 4,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        }
+      ]
+    },
+    {
+      "name": "NAHAND",
+      "placements": 0,
+      "referencedBy": [
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "nghand.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "10adf62a6fccf29ca7df7e0dd82c90fcd513dbe2a2482dbb89bc212708a59af6"
+      },
+      "status": "REUSE_NATIVE_MISSION_HD_BINDING_CONFIRMED",
+      "contract": null,
+      "nativeEvidence": [
+        {
+          "name": "NAHAND",
+          "density": 2,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        },
+        {
+          "name": "NAHAND",
+          "density": 4,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        }
+      ]
+    },
+    {
+      "name": "NAPOWR",
+      "placements": 0,
+      "referencedBy": [
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "ngpowr.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "7030206e7d9a740bb61852850449040b83c18a29888fb22926bf5e3304af9797"
+      },
+      "status": "REUSE_NATIVE_MISSION_HD_BINDING_CONFIRMED",
+      "contract": null,
+      "nativeEvidence": [
+        {
+          "name": "NAPOWR",
+          "density": 2,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        },
+        {
+          "name": "NAPOWR",
+          "density": 4,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        }
+      ]
+    },
+    {
+      "name": "NAREFN",
+      "placements": 0,
+      "referencedBy": [
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "ngrefn.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "8008d9beccc491b40f773c1e90b763fbf84eabe84f1e48ef9be799afe443e771"
+      },
+      "status": "REUSE_NATIVE_MISSION_HD_BINDING_CONFIRMED",
+      "contract": null,
+      "nativeEvidence": [
+        {
+          "name": "NAREFN",
+          "density": 2,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        },
+        {
+          "name": "NAREFN",
+          "density": 4,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        }
+      ]
+    },
+    {
+      "name": "NASAM",
+      "placements": 8,
+      "referencedBy": [
+        "Structures"
+      ],
+      "original": {
+        "member": "ngsam.shp",
+        "archive": "ra2.mix/generic.mix",
+        "sha256": "c2311ddd597e80c36984c84d391aed0350307c3764c43e81f044cbc4250e69f9"
+      },
+      "status": "REUSE_EXISTING_WORLD_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": null
+    },
+    {
+      "name": "PICK",
+      "placements": 8,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "pick.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "3d160f8c647285ffed82a5da4316f543d265d554dbc25c42eb1ca6c84dbfbf9e"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "1e354aec102f8549e09b338123206f57a784c578dc860329c3bf1915bf326ffc"
+    },
+    {
+      "name": "POLE02",
+      "placements": 12,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "pole02.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "6c58a4bdc4a94aadfbf5556b02461f110e5d451551f05e97788d60c027419e33"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "PTRUCK",
+      "placements": 8,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "ptruck.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "c3a7a8b117a49af493f99c7423a59802cf061aadddd5ab0fb467a36f6f6947ec"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "470868109c74ea0297d39da09cebdd4797cc969463baa5974b39792cb7940d0a"
+    },
+    {
+      "name": "SAPC",
+      "placements": 0,
+      "referencedBy": [
+        "TaskForce:081BDD7C",
+        "TaskForce:084310BC"
+      ],
+      "original": {
+        "member": "trs.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "2f954e765e62a15092e810ba7662d43136f7d74fc426d2227c58b70ef56eaaf9"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "ee981f1ca23e3ee8e945e1d2cbeca7953306d53d7cf952b77eb14407b942c206"
+    },
+    {
+      "name": "SENGINEER",
+      "placements": 0,
+      "referencedBy": [
+        "TaskForce:0A0FD12C",
+        "TaskForce:078FC35C",
+        "TaskForce:08263DEC",
+        "TaskForce:0AE3608C",
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "engineer.shp",
+        "archive": "ra2.mix/conquer.mix",
+        "sha256": "f8eb0dc0156a877028ac2ed57bf2e71a9445ffcb6ef6a4caf3b0dbb7b111834c"
+      },
+      "status": "REUSE_NATIVE_MISSION_HD_BINDING_CONFIRMED",
+      "contract": "32c1feee54d370d8a70ea088b7ae3eedc11e65a5d946e1b93c99aacf99620aa9",
+      "nativeEvidence": [
+        {
+          "name": "SENGINEER",
+          "density": 2,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        },
+        {
+          "name": "SENGINEER",
+          "density": 4,
+          "evidence": ".artifacts/m3-1/continuity-final/report.json",
+          "runtime": "d1e21e8c888e98191e250939050b9d08330a7f67",
+          "scope": "Current changed-world native binding"
+        }
+      ]
+    },
+    {
+      "name": "SIGN01",
+      "placements": 8,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "sign01.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "41a7a3c646f335997507ccfcf8004f3659bdd04de35a21c85270404f3ba92782"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "SMCV",
+      "placements": 1,
+      "referencedBy": [
+        "Units",
+        "TaskForce:0815EA1C"
+      ],
+      "original": {
+        "member": "smcv.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "5df9009d9d5dbd320530e8485a82d17f888e04aad8a4b69a35687dcb7fdcdb1d"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "0c93d425f9393b734c28f20dc019589029a73d21f506d5319a1d7069ee853328"
+    },
+    {
+      "name": "STANG",
+      "placements": 8,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "stang.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "a35db9c7bb8c7e877c27394b383ac1c247b9d47f6c0df9676757af76665deca2"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "a4c37142b028fd2fb3e06c33063349815d71e68c717c85a8cebea1a9a5810cc3"
+    },
+    {
+      "name": "SUVB",
+      "placements": 10,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "suvb.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "a8e418da9f52bcda735781c2c7d3508473b05f4e5b0fc9c478991fd302a38316"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "6c4f6df97919a27ea0923d3df1ea6c33f99f0eb7b0d6e9966d8b2126d50621b0"
+    },
+    {
+      "name": "SUVW",
+      "placements": 9,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "suvw.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "d981a788d749aac095e1acf631e41b29f6b97e4ced1a22ce538871cb4c421a0b"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "e27ba09128910bc97147b0c6421796e5709b76fbd3f3b9963d40170b7be1a087"
+    },
+    {
+      "name": "TAXI",
+      "placements": 8,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "taxi.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "4d49df77fb434203e56cc381bcb3e773f0348b886c6802c74a565c43cdeb5c2f"
+      },
+      "status": "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING",
+      "contract": "eb0581a61dd51021cc4c07b70bda18ef9040b289f280d8e3bdd1e77563091c44"
+    },
+    {
+      "name": "TIBTRE01",
+      "placements": 1,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tibtre01.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "0a9218d1c55745b98c7cfe6ca4e02cf730ea00c40bae43eac0b298e6045df47c"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tibtre01"
+    },
+    {
+      "name": "TIBTRE03",
+      "placements": 1,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tibtre03.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "0a9218d1c55745b98c7cfe6ca4e02cf730ea00c40bae43eac0b298e6045df47c"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tibtre03"
+    },
+    {
+      "name": "TREE01",
+      "placements": 52,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree01.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "2b86f20219f1ac0459b5598b67df491b319bdd8e5668066d79f4174d88709409"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree01"
+    },
+    {
+      "name": "TREE02",
+      "placements": 59,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree02.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "a6a6f8e6b313a37601e07a82d47c1da218b61a6e83345f457e09b453d9985f95"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree02"
+    },
+    {
+      "name": "TREE03",
+      "placements": 11,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree03.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "6f3977cd41b0164a86af32da4fd20242f32738e87482245085649219bd4c49f4"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree03"
+    },
+    {
+      "name": "TREE04",
+      "placements": 75,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree04.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "67767c767433ce01004a217b2f1df2faab970419d6d06aef6b3b6c638123843a"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree04"
+    },
+    {
+      "name": "TREE05",
+      "placements": 76,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree05.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "03fe4be1a779988d32bb39ec371017b77bd6c3b2be75bb050d2a2141eed7b7e6"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree05"
+    },
+    {
+      "name": "TREE06",
+      "placements": 51,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree06.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "b129294f875869b46222dfc36927bd320627a479eb7d0250f2e00fcd22501d40"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree06"
+    },
+    {
+      "name": "TREE07",
+      "placements": 28,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree07.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "42f7a1c57ab0c6977401da3f23e3bcb8b6698055d55e8465bd3613ff70ff5061"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree07"
+    },
+    {
+      "name": "TREE08",
+      "placements": 45,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree08.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "c4197f22d69b1229addf6bd2c95fbe475adb004a59b812ff28189a33d79d6d0f"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree08"
+    },
+    {
+      "name": "TREE09",
+      "placements": 17,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree09.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "8c3242d9b9dc064423fd830b1dccb3bb42e0bda1dbaf32395a504312aadf8230"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree09"
+    },
+    {
+      "name": "TREE10",
+      "placements": 13,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree10.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "90153cbf83b2f0100adeee20611204bb02340a3ccaf1452ae81f6dcdd3861771"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree10"
+    },
+    {
+      "name": "TREE11",
+      "placements": 29,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree11.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "2a5c0f0c612f4c78024293fee4c95f19f3ef30b00be06f5f3c4a73de23a0db28"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree11"
+    },
+    {
+      "name": "TREE12",
+      "placements": 14,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree12.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "a2e8a4e4b3df83948ecd21a13d4eb42ecf8b56ab1e60fe0188455e22d4d2b8cb"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree12"
+    },
+    {
+      "name": "TREE13",
+      "placements": 1,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree13.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "090e4a86287a2b45283e833846a8d90fdfadbcd7e6c82d5e3c3146d0f5ec6f2d"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree13"
+    },
+    {
+      "name": "TREE14",
+      "placements": 5,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree14.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "d097642461dd7b24d83afadb8c2b227df7fbc8499250afe8a51453e39c9a2d7f"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree14"
+    },
+    {
+      "name": "TREE15",
+      "placements": 4,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree15.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "139ec61f9993dde00e92e2406952e5bd912ef66f82d0d7c0fd0e772aa39ca719"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree15"
+    },
+    {
+      "name": "TREE16",
+      "placements": 13,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree16.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "33d13bad3d56c32542339fdd88da0db21e5f673b1f2c7d21369ec9ed6813901e"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree16"
+    },
+    {
+      "name": "TREE18",
+      "placements": 17,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree18.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "4edc02f72a05795b022d3df6d1d93cf5cd85bc37ed2379c42c6f495d0a5292ac"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree18"
+    },
+    {
+      "name": "TREE22",
+      "placements": 1,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree22.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "407ea6c33be06aa75718ead6a08c40243aabdbe68091ea36b98daf7b9955d927"
+      },
+      "status": "REUSE_SOURCE_HASH_VERIFIED",
+      "contract": "urban-tree22"
+    },
+    {
+      "name": "TREE25",
+      "placements": 10,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree25.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "7828fb075e6ad35b51d3f26f7de7678e967048f69cb42d233d3cfbdb40c38ab1"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "TREE26",
+      "placements": 14,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree26.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "72b64d30694a2ceb26eeb184e864a4b0c8aceda75a9397d4e61a635387383270"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "TREE27",
+      "placements": 8,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "tree27.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "a0a4dab84e50f8539733c9746a5172de33413da6a985aaa1f620b5a96cfa115c"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "TRFF01",
+      "placements": 1,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "trff01.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "e25ead134a13b7d5630a7be7ceaea46bcd98be72c18c830d34ecfdc2a0b07242"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "TRFF02",
+      "placements": 2,
+      "referencedBy": [
+        "Terrain"
+      ],
+      "original": {
+        "member": "trff02.urb",
+        "archive": "ra2.mix/urban.mix",
+        "sha256": "9833bd1d84515ef6eb06877c8e27dffd0e1adeebaf838bd92f718306b886d54e"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    },
+    {
+      "name": "TUG",
+      "placements": 3,
+      "referencedBy": [
+        "Units"
+      ],
+      "original": {
+        "member": "tug.vxl",
+        "archive": "ra2.mix/local.mix",
+        "sha256": "72518394c43d83b14f00c7ae08d29762bb85cdafa2b2038bb3b68c221333611d"
+      },
+      "status": "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND",
+      "contract": null
+    }
+  ],
+  "declaredResourceIdentities": 103,
+  "nativeAdditionalResourceIdentities": 4,
+  "resourceCounts": {
+    "REUSE_SOURCE_HASH_VERIFIED": 46,
+    "NO_CURRENT_THEATER_SHP_CONTRACT_FOUND": 27,
+    "REUSE_VXL_CONTROLLER_MISSION_BINDING_PENDING": 15,
+    "ORIGINAL_FALLBACK_CONFIRMED": 2,
+    "REUSE_UNCHANGED_EARLIER_NATIVE_BINDING": 2,
+    "REUSE_UNIT_CONTROLLER_MISSION_BINDING_PENDING": 1,
+    "REUSE_NATIVE_MISSION_HD_BINDING_CONFIRMED": 7,
+    "REUSE_EXISTING_WORLD_CONTROLLER_MISSION_BINDING_PENDING": 7
+  },
+  "resourceScope": "Primary techno/terrain images, including task-force-only references and observed produced/deployed actors. Subordinate animations, rubble, overlays and TMP coverage are not a complete HD audit.",
+  "media": {
+    "speech": [
+      {
+        "name": "Mis_S1_SofiaRepairBridge",
+        "original": "ms1so02.wav",
+        "bytes": 84618,
+        "sha256": "b3a3bd19ecf56770c23e1c212c7a2fa2fad447912e79f91abbe3e86a2972898c",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "Mis_S1_SofiaAirportHint1",
+        "original": "ms1so11.wav",
+        "bytes": 53898,
+        "sha256": "6256d6717de54f769d8cf30bd86b038a227e609504fbd5128975c68a9e27b2a0",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "EVA_ReinforcementsHaveArrived",
+        "original": "csof038.wav",
+        "bytes": 21642,
+        "sha256": "bac475da4b8c5619d9b11713b8237b57fc9968edbe40ae29923782bfd76412a5",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "Mis_S1_SofiaUrbanHint",
+        "original": "ms1so04.wav",
+        "bytes": 61578,
+        "sha256": "ec5ed5ddd545b195a13ff4e9eb3d9973bdda03899ada6e2bfd4621d1b2295436",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "Mis_S1_SofiaDestroyPentagon",
+        "original": "ms1so05.wav",
+        "bytes": 54922,
+        "sha256": "e814330e94994e92f3df8c7b6d25c734dc3c414ca027597841dd3518b085b1da",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "Mis_S1_SofiaVictorySpeech",
+        "original": "ms1so07.wav",
+        "bytes": 42122,
+        "sha256": "4a864a4d32c4465810059ece21e799e0ba96f9af38a270e624ef7de14312814f",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "EVA_BattlefieldControlOnline",
+        "original": "csof120.wav",
+        "bytes": 20106,
+        "sha256": "2d8d612df57b54eee88e68ce86fdb39ec06044fbd95e0b197eaa9f4b57b7448a",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "EVA_NewObjectiveReceived",
+        "original": "csof104.wav",
+        "bytes": 16010,
+        "sha256": "b7eff25a9331d77e95b713a645d1b1c5a488e0a15dc855588d54e46ea40c2660",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "Mis_S1_SofiaBuildPower",
+        "original": "ms1so09.wav",
+        "bytes": 75402,
+        "sha256": "dfb50b98887dcf1a4eebfe7e97e6aa038ebd284a7049e929f89fb3c65b56afdf",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "EVA_EstablishBattlefieldControl",
+        "original": "csof016.wav",
+        "bytes": 31882,
+        "sha256": "68637101dcff579205bae54ea04dae68d4c59c22864c3d11f116f43991f99d84",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "Mis_S1_SofiaAirportHint2",
+        "original": "ms1so12.wav",
+        "bytes": 87178,
+        "sha256": "5a7da88f8b426a7e218ceb2c9ece759122b54da226915bad031ef0e5add38ae4",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "Mis_S1_SofiaReinforcements",
+        "original": "ms1so03.wav",
+        "bytes": 96394,
+        "sha256": "032233a220a3c16002b10ccd2c5b82a12f1438e1344f6718f47608066263ba26",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "Mis_S1_SofiaCrushPentagon",
+        "original": "ms1so01.wav",
+        "bytes": 154762,
+        "sha256": "85c03a22ab00dbb43810823a1f32ce7adc53a09df6293e3e4431d94531e39c67",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "Unit_Sofia_Engineer",
+        "original": "csofu16.wav",
+        "bytes": 75914,
+        "sha256": "2d5f03e3a666e6e42ee516663fa1765e64df531c0179a828bb70a91d09df24d1",
+        "textAvailable": false,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "EVA_EnemyInfantryBattalionDetected",
+        "original": "csof099.wav",
+        "bytes": 31882,
+        "sha256": "fb64ca3cc9c7e45b4ca0747f7e8ac44506a0902fd489ff7578d6d30cf9bfe5d8",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      },
+      {
+        "name": "Unit_Sofia_GI",
+        "original": "csofu21.wav",
+        "bytes": 106634,
+        "sha256": "635e0f54a63acc41dcd922451f11ce246e075a95dc332fb458e53641db132ed6",
+        "textAvailable": true,
+        "use": "speech",
+        "language": "archive-declared-localization; not inferred from English EVA text"
+      }
+    ],
+    "movies": [
+      {
+        "edition": "ra2",
+        "name": "s01_f00e",
+        "original": "s01_f00e.bik",
+        "use": "fullscreen-intro",
+        "binding": "Basic.Intro",
+        "file": "s01_f00e.webm",
+        "source": "movies02.mix",
+        "sha256": "342f454d73c3438373f664316aa35d9bdd78a0ae6e073e42278a58781b4be1f4",
+        "width": 640,
+        "height": 480,
+        "durationSeconds": 102.07,
+        "audio": [
+          {
+            "stream": 1,
+            "format": "binkaudio_rdft, 44100 Hz, stereo, flt"
+          }
+        ],
+        "language": "embedded original audio; listening validation pending",
+        "hdCandidate": null,
+        "fallback": "s01_f00e.webm",
+        "conversion": {
+          "converterVersion": "ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+          "args": [
+            "-nostdin",
+            "-y",
+            "-i",
+            "s01_f00e.bik",
+            "-map",
+            "0:v:0",
+            "-map",
+            "0:a?",
+            "-c:v",
+            "libvpx-vp9",
+            "-crf",
+            "20",
+            "-b:v",
+            "0",
+            "-pix_fmt",
+            "yuv420p",
+            "-c:a",
+            "libopus",
+            "-b:a",
+            "128k",
+            "s01_f00e.webm"
+          ],
+          "policy": "VP9 + Opus WebM; original frame rate, duration and aspect ratio; no cropping, scaling or audio removal"
+        }
+      },
+      {
+        "edition": "ra2",
+        "name": "s01_p01e",
+        "original": "s01_p01e.bik",
+        "use": "transmission-candidate",
+        "binding": "Art.Movies; trigger binding unverified",
+        "file": "s01_p01e.webm",
+        "source": "movies02.mix",
+        "sha256": "640bb5457d333e7e2554779cf7911fb808988fb4358fd2de6241d43c22116b17",
+        "width": 140,
+        "height": 110,
+        "durationSeconds": 10.27,
+        "audio": [
+          {
+            "stream": 1,
+            "format": "binkaudio_rdft, 22050 Hz, mono, flt"
+          }
+        ],
+        "language": "embedded original audio; listening validation pending",
+        "hdCandidate": null,
+        "fallback": "s01_p01e.webm",
+        "conversion": {
+          "converterVersion": "ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+          "args": [
+            "-nostdin",
+            "-y",
+            "-i",
+            "s01_p01e.bik",
+            "-map",
+            "0:v:0",
+            "-map",
+            "0:a?",
+            "-c:v",
+            "libvpx-vp9",
+            "-crf",
+            "20",
+            "-b:v",
+            "0",
+            "-pix_fmt",
+            "yuv420p",
+            "-c:a",
+            "libopus",
+            "-b:a",
+            "128k",
+            "s01_p01e.webm"
+          ],
+          "policy": "VP9 + Opus WebM; original frame rate, duration and aspect ratio; no cropping, scaling or audio removal"
+        }
+      }
+    ]
+  },
+  "artworkPolicy": "No authored art or accepted resource is changed. Resource contracts are source-matched where stated; presence does not establish mission runtime activation.",
+  "missionSpecificArt": [
+    {
+      "name": "CAWA2A",
+      "placements": 1,
+      "referencedBy": [
+        "Structures",
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "cuwa2a.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "c038d379d1326a717fcbae6608f0020d77bb985bb44c8d0735beb311ef231d6c"
+      },
+      "status": "ORIGINAL_FALLBACK_CONFIRMED",
+      "contract": null,
+      "nativeEvidence": [
+        {
+          "name": "CAWA2A",
+          "density": 1,
+          "identity": "ORIGINAL",
+          "pages": 0,
+          "tile": [
+            60,
+            36
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        },
+        {
+          "name": "CAWA2A",
+          "density": 1,
+          "identity": "ORIGINAL",
+          "pages": 0,
+          "tile": [
+            60,
+            36
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        }
+      ]
+    },
+    {
+      "name": "CAWA2B",
+      "placements": 1,
+      "referencedBy": [
+        "Structures",
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "cuwa2b.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "671e5858df0f13f9befb2a73ef208198eb7942f925c082e2e11591637b5d09c0"
+      },
+      "status": "ORIGINAL_FALLBACK_CONFIRMED",
+      "contract": null,
+      "nativeEvidence": [
+        {
+          "name": "CAWA2B",
+          "density": 1,
+          "identity": "ORIGINAL",
+          "pages": 0,
+          "tile": [
+            60,
+            40
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        },
+        {
+          "name": "CAWA2B",
+          "density": 1,
+          "identity": "ORIGINAL",
+          "pages": 0,
+          "tile": [
+            60,
+            40
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        }
+      ]
+    },
+    {
+      "name": "CAWA2C",
+      "placements": 1,
+      "referencedBy": [
+        "Structures",
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "cuwa2c.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "9ebaec815adfb3e00637edc3d8520610bb61626a4ac83db06670ab11e307a059"
+      },
+      "status": "REUSE_UNCHANGED_EARLIER_NATIVE_BINDING",
+      "contract": "urban-cawa2c",
+      "nativeEvidence": [
+        {
+          "name": "CAWA2C",
+          "density": 2,
+          "identity": "environment-aggregate/b48223c3bf157b8792607a49ff802415b08a548c648775d5aa1b51bce0715788/9ebaec815adfb3e00637edc3d8520610bb61626a4ac83db06670ab11e307a059/URBAN/tiles/2",
+          "pages": 1,
+          "tile": [
+            56,
+            40
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        },
+        {
+          "name": "CAWA2C",
+          "density": 4,
+          "identity": "environment-aggregate/b48223c3bf157b8792607a49ff802415b08a548c648775d5aa1b51bce0715788/9ebaec815adfb3e00637edc3d8520610bb61626a4ac83db06670ab11e307a059/URBAN/tiles/4",
+          "pages": 2,
+          "tile": [
+            56,
+            40
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        }
+      ]
+    },
+    {
+      "name": "CAWA2D",
+      "placements": 1,
+      "referencedBy": [
+        "Structures",
+        "NativeRuntime"
+      ],
+      "original": {
+        "member": "cuwa2d.shp",
+        "archive": "ra2.mix/isourb.mix",
+        "sha256": "91c9763a48bb6d7e82ce5603f1efd044f265aa38c0216b1deed621d2a8fd1b5e"
+      },
+      "status": "REUSE_UNCHANGED_EARLIER_NATIVE_BINDING",
+      "contract": "urban-cawa2d",
+      "nativeEvidence": [
+        {
+          "name": "CAWA2D",
+          "density": 2,
+          "identity": "environment-aggregate/26a2b57572be83136aa6a4aa922c42af6da8e76ad5124e46fcc07c46af7feda9/91c9763a48bb6d7e82ce5603f1efd044f265aa38c0216b1deed621d2a8fd1b5e/URBAN/tiles/2",
+          "pages": 1,
+          "tile": [
+            56,
+            36
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        },
+        {
+          "name": "CAWA2D",
+          "density": 4,
+          "identity": "environment-aggregate/26a2b57572be83136aa6a4aa922c42af6da8e76ad5124e46fcc07c46af7feda9/91c9763a48bb6d7e82ce5603f1efd044f265aa38c0216b1deed621d2a8fd1b5e/URBAN/tiles/4",
+          "pages": 1,
+          "tile": [
+            56,
+            36
+          ],
+          "health": 100,
+          "evidence": ".artifacts/m3-1/native-final-20261022/report.json",
+          "runtime": "49c33325e6b1192a2beed470e2c10d53a033d38c",
+          "scope": "Unchanged earlier source-matched Pentagon art; diagnostic reveal"
+        }
+      ]
+    }
+  ],
+  "sourceNotes": "All original map bytes and records stay in controlled ignored local resources. This metadata does not substitute for gameplay acceptance."
+}

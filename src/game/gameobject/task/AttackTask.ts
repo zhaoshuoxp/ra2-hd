@@ -21,6 +21,7 @@ import { TaskStatus } from "@/game/gameobject/task/system/TaskStatus";
 import { MoveTask } from "@/game/gameobject/task/move/MoveTask";
 import { Vector3 } from "@/game/math/Vector3";
 import { Vector2 } from "@/game/math/Vector2";
+import { DemolitionRetreatTask, demolitionRetreatEnabled } from './DemolitionRetreatTask';
 const MAX_MOVE_ATTEMPTS = 3;
 const FACING_TOLERANCE = 11.25;
 const FACING_TOLERANCE_PROJECTILE = 4 * FACING_TOLERANCE;
@@ -342,6 +343,11 @@ export class AttackTask extends Task {
                 forcedMove = true;
             }
             this.weapon.fire(this.target, this.game, damageMultiplier);
+            if (obj.isInfantry() && obj.c4 && this.weapon.rules.sabotageCursor && targetObj
+                && demolitionRetreatEnabled(this.game)) {
+                this.children.push(new DemolitionRetreatTask(this.game, targetObj));
+                return true;
+            }
             if (forcedMove) {
                 return true;
             }

@@ -334,7 +334,9 @@ export class SidebarCard extends UiComponent<SidebarCardProps> {
         }
         slotObject.setFrame(frameId);
         slotObject.setVisible(true);
-        slotObject.setLightMult(item.disabled ? 0.5 : 1);
+        const game = this.props.sidebarModel.game;
+        const flashing = game.campaign?.cameoFlashes.get(item.target.rules.name) > game.currentTick && Math.floor(game.currentTick / 3) % 2 === 0;
+        slotObject.setLightMult(flashing ? 1.8 : item.disabled ? 0.5 : 1);
     }
     updateProgressOverlay(item: any, progressOverlay: any): void {
         let frame = 0;

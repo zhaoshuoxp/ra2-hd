@@ -19,8 +19,9 @@ interface MusicSpecs {
     getAll(): MusicSpec[];
 }
 interface AudioSystem {
-    playMusicFile(file: any, repeat: boolean, onEnded?: () => void): Promise<boolean>;
+    playMusicFile(file: any, repeat: boolean, onEnded?: () => void, startTime?: number): Promise<boolean>;
     stopMusic(): void;
+    getMusicPlaybackState?(): { playing: boolean; time: number; duration: number; gain?: number } | undefined;
 }
 interface AudioFiles {
     get(filename: string): Promise<any>;
@@ -35,6 +36,8 @@ export class Music {
     private repeat: boolean = false;
     private currentMusicType?: MusicType;
     private initialRepeatName?: string;
+    private playbackRevision = 0;
+    private playingSpec?: MusicSpec;
     constructor(audioSystem: AudioSystem, audioFiles: AudioFiles, musicSpecs: MusicSpecs) {
         this.audioSystem = audioSystem;
         this.audioFiles = audioFiles;
@@ -69,6 +72,25 @@ export class Music {
             return this.playlist[this.currentPlaylistIdx];
         }
     }
+    getPlaybackState() {
+        const state = this.audioSystem.getMusicPlaybackState?.();
+        return state ? { ...state, sound: this.playingSpec?.sound } : undefined;
+    }
+    capturePlayback(): { sound: string; time: number } | undefined {
+        const state = this.getPlaybackState();
+        return state && this.playingSpec?.normal ? { sound: this.playingSpec.sound, time: state.time } : undefined;
+    }
+    async restorePlayback(snapshot: { sound: string; time: number }): Promise<void> {
+        if (!Number.isFinite(snapshot.time) || snapshot.time < 0 || snapshot.time > 86400) throw new Error('Invalid campaign music position');
+        const spec = this.musicSpecs.getAll().find(spec => spec.normal && spec.sound === snapshot.sound);
+        if (!spec) throw new Error(`Saved original music track is unavailable: ${snapshot.sound}`);
+        const revision = ++this.playbackRevision;
+        this.playlist = this.buildPlaylist(this.shuffle); this.currentPlaylistIdx = this.playlist.indexOf(spec);
+        const success = await this.playSpec(spec, () => this.advancePlaylist(), snapshot.time);
+        if (revision !== this.playbackRevision) return;
+        if (!success) throw new Error(`Saved original music track could not load: ${snapshot.sound}`);
+        this.currentMusicType = MusicType.Normal;
+    }
     dispose(): void {
         this.stopPlaying();
     }
@@ -86,6 +108,7 @@ export class Music {
     async play(type: MusicType): Promise<void> {
         if (this.currentMusicType === type)
             return;
+        this.playbackRevision++;
         if (type === MusicType.Normal || type === MusicType.NormalShuffle) {
             const shouldShuffle = this.shuffle || type === MusicType.NormalShuffle;
             this.playlist = this.buildPlaylist(shouldShuffle);
@@ -114,7 +137,22 @@ export class Music {
             }
         }
     }
+    async playCampaignTheme(name: string): Promise<void> {
+        if (!name || /^(no theme|<none>)$/i.test(name)) { await this.play(MusicType.Normal); return; }
+        const spec = this.musicSpecs.getSpec(name);
+        if (!spec?.normal) throw new Error(`Original campaign theme is unavailable: ${name}`);
+        const revision = ++this.playbackRevision;
+        this.playlist = this.buildPlaylist(this.shuffle);
+        this.currentPlaylistIdx = this.playlist.indexOf(spec);
+        if (this.currentPlaylistIdx < 0) throw new Error(`Original campaign theme is outside the music playlist: ${name}`);
+        const success = await this.playSpec(spec, () => this.advancePlaylist());
+        if (revision !== this.playbackRevision) return;
+        if (!success) throw new Error(`Original campaign theme could not load: ${name}`);
+        this.currentMusicType = MusicType.Normal;
+    }
     stopPlaying(): void {
+        this.playbackRevision++;
+        this.playingSpec = undefined;
         this.audioSystem.stopMusic();
         this.currentMusicType = undefined;
     }
@@ -133,12 +171,14 @@ export class Music {
     setRepeatMode(repeat: boolean): void {
         this.repeat = repeat;
     }
-    private async playSpec(spec: MusicSpec, onEnded?: () => void): Promise<boolean> {
+    private async playSpec(spec: MusicSpec, onEnded?: () => void, startTime = 0): Promise<boolean> {
+        const revision = this.playbackRevision;
         const file = await this.getMp3File(spec.sound);
-        if (!file)
+        if (!file || revision !== this.playbackRevision)
             return false;
-        await this.audioSystem.playMusicFile(file, spec.repeat, onEnded);
-        return true;
+        const played = await this.audioSystem.playMusicFile(file, spec.repeat, onEnded, startTime);
+        if (played && revision === this.playbackRevision) this.playingSpec = spec;
+        return played && revision === this.playbackRevision;
     }
     private async getMp3File(name: string): Promise<any> {
         const filename = name.toLowerCase() + ".mp3";

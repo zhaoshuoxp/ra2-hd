@@ -1,0 +1,49 @@
+{
+  "status": "R8_SOURCE_AND_FLAG_EXPORT_READY_NATIVE_VALIDATION_PENDING",
+  "boatRuntimeCommit": "a86ec3f7",
+  "artTool": "Built-in imagegen",
+  "master": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/naval-hull-r8/flag-authoring/soviet-flag-master-r1.png",
+  "masterSha256": "374d779168d8f7a33b2a8e12f4e8c13f9f7227670df1257a0254542ecb811c42",
+  "prompt": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/naval-hull-r8/flag-authoring/prompt.txt",
+  "promptSha256": "aab38da417e58992067b497bf98e77ee91a74eb2e04b3b0f0fed8cf63dde7263",
+  "campaignActivation": {
+    "status": "PASS_TASK_LOCAL_SOVIET_FLAG_EXTENSION_ACTIVE",
+    "target": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.local/campaign/ra2/sov01t",
+    "preservedBaseline": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/hd-completion-r7/resources/campaign/ra2/sov01t",
+    "files": [
+      {
+        "file": "manifest.json",
+        "sha256": "0716d962ea7f521396ab3a62b2e07edc0d01f5d9685c5590b88cd1d0a3be6b59",
+        "bytes": 12840,
+        "expectedPreviousSha256": "8400a42032b4de312cab9a3c7a083373fd8f113f131d91d1adadc86d48942596"
+      },
+      {
+        "file": "memorial-family.json",
+        "sha256": "c6b0e4f9f8fbd19ead4a00d8b41da7fac2a66de0611699a6af3a890054648f52",
+        "bytes": 587,
+        "expectedPreviousSha256": "f8bba24503b2c8fcdd41d48fa8eaf8c8925bfc60f7518f8760390f1192e017ee"
+      },
+      {
+        "file": "memorial-flag-hd-r8.json",
+        "sha256": "fe30cb656a878579a8f4c503f43c933b43c48d09bc9c380461316d7931a1981d",
+        "bytes": 41874,
+        "expectedPreviousSha256": null
+      },
+      {
+        "file": "memorial-flag-r8-2-p0-base.png",
+        "sha256": "24b5f2aa8f203bf04f6554fc99c5e139e6b4bca213f3133083c855546cfa322f",
+        "bytes": 410349,
+        "expectedPreviousSha256": null
+      },
+      {
+        "file": "memorial-flag-r8-4-p0-base.png",
+        "sha256": "bfbf19a52b566f7479784100e15b791be4378bfe60dc54f12bccfb7e2346e2ba",
+        "bytes": 1388623,
+        "expectedPreviousSha256": null
+      }
+    ]
+  },
+  "export": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/naval-hull-r8/flag-export-v2/export.json",
+  "validation": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/naval-hull-r8/flag-validation.json",
+  "integration": "Add the three versioned files if absent or identical; compare the two expected previous metadata hashes before applying their complete revised bytes. Keep canonical main and all prior packages unchanged until integration is requested. The existing campaign save schema is unchanged."
+}

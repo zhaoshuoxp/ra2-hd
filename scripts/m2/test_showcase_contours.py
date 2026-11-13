@@ -1,12 +1,39 @@
 """Regression checks for subpixel geometry and native remap semantics."""
+import hashlib
+import json
+from pathlib import Path
 import unittest
 
 import numpy as np
+from scipy import ndimage
 
 from showcase_contours import coverage, register_contours
 
 
 class StructuralCoverageTests(unittest.TestCase):
+    def test_original_lamp_diagonals_remain_connected_with_native_area_and_clean_material(self):
+        fixture = Path(__file__).resolve().parents[1] / 'campaign-completion/fixtures/sov07-lamp-contours.json'
+        for frame in json.loads(fixture.read_text())['frames']:
+            payload = bytes.fromhex(frame['indicesHex'])
+            self.assertEqual(hashlib.sha256(payload).hexdigest(), frame['indexSha256'])
+            indices = np.frombuffer(payload, np.uint8).reshape(frame['size'][::-1])
+            self.assertEqual(np.count_nonzero(indices), 61)
+            for density in [2, 4]:
+                expanded = indices.repeat(density, 0).repeat(density, 1)
+                base = np.zeros((*expanded.shape, 4), np.uint8)
+                base[..., :3][expanded != 0] = [160, 150, 130]
+                base[..., 3] = (expanded != 0) * 255
+                data = np.zeros_like(base)
+                data[..., 3] = 255
+                result, owner = register_contours(base, data, indices, density, False,
+                    continuous_diagonals=True)
+                self.assertEqual(ndimage.label(result[..., 3] > 32, np.ones((3, 3)))[1], 1)
+                self.assertAlmostEqual(result[..., 3].sum() / 255 / density**2, 61, delta=61 * .025)
+                self.assertTrue(((result[..., 3] > 0) & (result[..., 3] < 255)).any())
+                self.assertTrue((result[..., :3][result[..., 3] > 0] == [160, 150, 130]).all())
+                self.assertFalse(owner[..., :3].any())
+                self.assertTrue((owner[..., 3] == 255).all())
+
     def test_diagonal_owner_strip_keeps_width_and_has_subpixel_edges(self):
         mask = np.zeros((24, 32), bool)
         for x in range(4, 26):

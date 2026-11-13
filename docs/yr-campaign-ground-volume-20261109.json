@@ -1,0 +1,30 @@
+{
+  "schema": "yr-native-voxel-ground-volume-correction-v1",
+  "status": "PASS_NATIVE_RHINO_ORDINARY_MOON_SLOPES_AND_GENERIC_VXL_ALL_HEADINGS_PITCH_ROLL",
+  "nativeReports": [
+    {
+      "file": ".artifacts/yr-campaign/ground-volume-native-2x-r2/report.json",
+      "sha256": "0c5e8fe45332d39815a2af4924a76a25781f1dc38b91ddffbd53cddc0b44d341",
+      "status": "PASS_NATIVE_ORDINARY_MOON_TANK_MOVEMENT_AND_RIGID_HD_SLOPE_SURFACES"
+    },
+    {
+      "file": ".artifacts/yr-campaign/ground-volume-native-4x-r2/report.json",
+      "sha256": "8ffd7a34476ce553c1af1094e5b47661e62e431399c2b0733c0a577765f08241",
+      "status": "PASS_NATIVE_ORDINARY_MOON_TANK_MOVEMENT_AND_RIGID_HD_SLOPE_SURFACES"
+    },
+    {
+      "file": ".artifacts/yr-campaign/generic-volume-mtnk-native-4x-r1/report.json",
+      "sha256": "6b61595b8b7dba89ed76f9aac70348b72aeb17b67c4262d223a68ac3802b0bf9",
+      "status": "PASS_NATIVE_GENERIC_VXL_PROJECTED_VOLUME_ALL_HEADINGS_PITCH_AND_ROLL"
+    },
+    {
+      "file": ".artifacts/yr-campaign/generic-volume-ltnk-native-2x-r1/report.json",
+      "sha256": "9f58eaca0455cb8cc012c9fff28463503f3090f8ca9d9bac7424ddc9f0af8d1d",
+      "status": "PASS_NATIVE_GENERIC_VXL_PROJECTED_VOLUME_ALL_HEADINGS_PITCH_AND_ROLL"
+    }
+  ],
+  "unitTests": "scripts/m1/ground-volume.test.ts",
+  "scope": "A common camera-space correction preserves the relative projected width and height of the original 3D voxel hull. All HD body and turret parts retain the same correction and native pivot. Exact accepted flat vertices, source images, UVs, native simulation and placement remain unchanged.",
+  "tested": "Ordinary source Moon HTNK movement at 2X/4X, MTNK at 4X and LTNK at 2X over all eight headings and both signs of pitch/roll.",
+  "userVisualAcceptance": "PENDING"
+}

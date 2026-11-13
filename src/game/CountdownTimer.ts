@@ -3,6 +3,10 @@ import { GameSpeed } from './GameSpeed';
 export class CountdownTimer {
     private ticks: number = 0;
     private running: boolean = false;
+    text?: string;
+    snapshot(): { ticks: number; running: boolean; text: string | null } {
+        return { ticks: this.ticks, running: this.running, text: this.text ?? null };
+    }
     getSeconds(): number {
         return Math.floor(this.ticks / GameSpeed.BASE_TICKS_PER_SECOND);
     }

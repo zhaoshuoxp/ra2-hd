@@ -3,20 +3,23 @@ import { beforeAll, test, expect, afterEach } from 'bun:test';
 import { readFileSync } from 'node:fs';
 import { Engine } from '../../src/engine/Engine';
 import { TmpFile } from '../../src/data/TmpFile';
-import { editionRetailTree } from '../../src/offline/editionRetail';
 import { resolveMember } from '../../src/offline/retail';
 import { loadTerrainHd } from '../../src/engine/renderable/entity/map/TerrainHd';
+import { activeEdition } from '../../src/editions/activeEdition';
 
 let directory: string, manifest: any, expectedImages: number, affectedGroup: any, peerImages: number;
 let theater: any, map: any;
+let admittedGroups: any[];
 beforeAll(() => {
     ({ directory, manifest } = selectedPack('terrain'));
-    expectedImages = manifest.groups.reduce((sum: number, group: any) => sum
+    admittedGroups = manifest.groups.filter((group: any) => manifest.editions.includes(activeEdition)
+        && group.members.every((member: any) => member.sourceHashes[activeEdition]));
+    expectedImages = admittedGroups.reduce((sum: number, group: any) => sum
         + group.members.reduce((n: number, member: any) => n + member.images.length, 0), 0);
     affectedGroup = manifest.groups.find((group: any) => group.id === 'elevation-representative');
     if (!affectedGroup) throw Error('Selected terrain lacks elevation-representative');
     peerImages = expectedImages - affectedGroup.members.reduce((n: number, member: any) => n + member.images.length, 0);
-    const tree = retailTreeFor('ra2');
+    const tree = retailTreeFor(activeEdition);
     const files = manifest.groups.flatMap((group: any) => group.members.map((member: any) =>
         new TmpFile(resolveMember(tree, member.member).file)));
     theater = { type: 1, tileSets: { getTile: (index: number) => ({ files: [files[index]] }), readMaxTileNum: () => files.length } };
@@ -39,10 +42,18 @@ function serve(mutate?: (url: string, bytes: Uint8Array) => Uint8Array) {
 test('real native closure publishes complete same-density shared terrain groups', async () => {
     serve();
     const loaded = await loadTerrainHd(map, theater, renderer, true, 4, 1280 * 1024 * 1024, () => false);
-    expect(loaded.report.groups.filter(group => group.status === 'PUBLISHED').length).toBe(manifest.groups.length);
+    expect(loaded.report.groups.filter(group => group.status === 'PUBLISHED').length).toBe(admittedGroups.length);
     expect(loaded.bindings.size).toBe(expectedImages);
-    expect(new Set([...loaded.bindings.values()].map(binding => binding.texture)).size).toBe(manifest.groups.length);
-    expect(loaded.report.worldChargeBytes).toBeGreaterThan(loaded.report.gpuBytes * 2);
+    expect(new Set([...loaded.bindings.values()].map(binding => binding.texture)).size).toBe(admittedGroups.length);
+    for (const group of manifest.groups.filter((group: any) => !admittedGroups.includes(group))) {
+        expect(loaded.report.groups.find(row => row.id === group.id)?.status).toBe('ORIGINAL');
+        expect([...loaded.bindings.values()].some(binding => binding.group === group.id)).toBe(false);
+    }
+    const validationBytes = admittedGroups.reduce((sum: number, group: any) => sum + Math.max(
+        ...group.members.flatMap((member: any) => member.images.map((image: any) => image.logical[0] * image.logical[1]))), 0);
+    expect(loaded.report.retainedCpuBytes).toBeGreaterThan(0);
+    expect(loaded.report.retainedCpuBytes).toBeLessThan(loaded.report.gpuBytes);
+    expect(loaded.report.worldChargeBytes).toBe(loaded.report.gpuBytes + loaded.report.retainedCpuBytes + validationBytes);
     loaded.dispose();
 });
 
@@ -67,7 +78,7 @@ test('edition source mismatch rejects the entire group before upload', async () 
     serve((url, bytes) => {
         if (!url.endsWith('selection.json')) return bytes;
         const altered = JSON.parse(new TextDecoder().decode(bytes));
-        altered.groups.find((g: any) => g.id === affectedGroup.id).members[1].sourceHashes.ra2 = '0'.repeat(64);
+        altered.groups.find((g: any) => g.id === affectedGroup.id).members[1].sourceHashes[activeEdition] = '0'.repeat(64);
         return new TextEncoder().encode(JSON.stringify(altered));
     });
     const loaded = await loadTerrainHd(map, theater, renderer, true, 4, 1280 * 1024 * 1024, () => false);

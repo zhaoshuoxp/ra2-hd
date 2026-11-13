@@ -7,6 +7,7 @@ import { ZoneType } from '../unit/ZoneType';
 import { GameObject } from '../GameObject';
 import { World } from '@/game/World';
 export class TransportTrait {
+    readonly debugStateKey = 'TransportTrait';
     private obj: GameObject;
     public units: GameObject[] = [];
     private loadQueue: GameObject[] = [];

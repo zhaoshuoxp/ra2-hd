@@ -85,7 +85,7 @@ def balance_area(points, target):
     return result if abs(area(result) - target) < .01 else points
 
 
-def simplify(points, tolerance=.7, preserve_area=False):
+def simplify(points, tolerance=.7, preserve_area=False, maximum_stair_run=8):
     """Bound displacement and area; preserve very small native fixtures and holes."""
     original_area = area(points)
     if abs(original_area) <= 4:
@@ -101,7 +101,7 @@ def simplify(points, tolerance=.7, preserve_area=False):
     for previous, current, following in zip(np.roll(corners, 1, axis=0), corners, np.roll(corners, -1, axis=0)):
         before, after = current - previous, following - current
         a, b = np.linalg.norm(before), np.linalg.norm(after)
-        if min(a, b) <= 1.01 and max(a, b) <= 8.01:
+        if min(a, b) <= 1.01 and max(a, b) <= maximum_stair_run + .01:
             rounded.extend([current - before / a * .5, current + after / b * .5])
         else:
             rounded.append(current)
@@ -141,7 +141,7 @@ def rasterize(contours, shape, density, samples=8):
     return np.uint8(np.rint(coverage * 255))
 
 
-def coverage(mask, density, linear_strips=False):
+def coverage(mask, density, linear_strips=False, maximum_stair_run=8):
     remaining, strips = mask.copy(), []
     if linear_strips:
         labels, count = ndimage.label(mask, np.ones((3, 3)))
@@ -174,21 +174,21 @@ def coverage(mask, density, linear_strips=False):
                 continue
             remaining[labels == component] = False
             strips.append(shape)
-    result = rasterize([simplify(p, preserve_area=linear_strips) for p in
+    result = rasterize([simplify(p, preserve_area=linear_strips, maximum_stair_run=maximum_stair_run) for p in
                         trace(remaining, connect_diagonal=linear_strips)], mask.shape, density)
     for strip in strips:
         result = np.maximum(result, strip)
     return result
 
 
-def register_contours(base, data, indices, density, remapable):
+def register_contours(base, data, indices, density, remapable, continuous_diagonals=False, body_shade=False):
     """Change coverage only; retain contact cells, palette identity, and native bounds."""
     height, width = indices.shape
     rgb, alpha = base[:height * density, :width * density, :3], base[:height * density, :width * density, 3]
     owner_data = data[:height * density, :width * density]
     original_alpha = alpha.copy()
-    geometric = coverage(indices != 0, density)
-    contact = (indices == 12).repeat(density, 0).repeat(density, 1)
+    geometric = coverage(indices != 0, density, linear_strips=continuous_diagonals)
+    contact = ((indices == 12) & (not body_shade)).repeat(density, 0).repeat(density, 1)
     geometric[contact] = original_alpha[contact]
     # Newly covered edge pixels need color extrusion, never transparent black.
     valid = original_alpha > 0

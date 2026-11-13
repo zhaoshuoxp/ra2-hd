@@ -1,0 +1,313 @@
+{
+  "status": "PASS_MAC_LOADING_REPAIR_AND_ORIGINAL_BACKGROUND_RESTORE_GENERATED_HD_BACKGROUND_BLOCKED",
+  "runtimeSourceHead": "0e381129030a03a239a9357fed48520c51b665c7",
+  "previousRuntimeSourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d",
+  "changedRuntimePaths": [
+    "public/res/presentation/campaign-backdrop-soviet-score-original-r4.png",
+    "src/gui/campaign/CampaignBackdrop.tsx",
+    "src/gui/campaign/CampaignChrome.tsx",
+    "src/gui/campaign/CampaignScorePresentation.ts"
+  ],
+  "fixes": [
+    "Brighter retail yellow-orange loading palette on the existing shared metal cylinder.",
+    "Continuous red floor removes irregular black pinholes; original green/blue relief remains.",
+    "Unsaturated fixed highlights retain the unlit cylinder gradient and do not move with progress.",
+    "Restore sscrbkmd.shp Soviet insignia/starburst instead of the faction-selection topographic backdrop.",
+    "Remove the native border/shadow, retain one proportional insignia and extend only outer background rays."
+  ],
+  "sourceVerification": {
+    "member": "sscrbkmd.shp",
+    "archive": "ra2.mix/neutral.mix",
+    "sha256": "cd353c2e8cc81396cc8371d4caffb7745ad7661baa4fedcfc4af65e1c277da79",
+    "palette": "sscore.pal",
+    "paletteSha256": "fc25f3833926eaa0618cb8782680da1b2a148f003e8ef16d45003d50ef71d2c6",
+    "decodedPixelMismatches": 0
+  },
+  "background": {
+    "asset": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/public/res/presentation/campaign-backdrop-soviet-score-original-r4.png",
+      "bytes": 83003,
+      "sha256": "a803b4683d5907ee0e367e0c6be0a883dfc008e158e74cb49bd5ff0efe9cb5f2"
+    },
+    "density": "ORIGINAL",
+    "generationStatus": "REJECTED_BY_IMAGE_GENERATION_SAFETY_SYSTEM",
+    "generationRequestId": "a55809a1-4adf-4e0b-b233-fbf650564b02",
+    "promptAndFailureRecord": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/scripts/m3-1/score-background-r4.json",
+      "bytes": 4478,
+      "sha256": "994dc1d1aafda097450e8666e0a3fbe83dd702f048e17ce2b68ac8466f4fe78d"
+    },
+    "outstanding": "The newly generated HD full-screen background was rejected by the built-in tool. No generated output or alternate generation was produced."
+  },
+  "loadingPixels": {
+    "region": [
+      417,
+      51,
+      1725,
+      55
+    ],
+    "prefixMismatches": 0,
+    "bottomDarkPixels": 0,
+    "bottomPixels": 18975,
+    "materialCorrelation": 0.9561870830207685,
+    "highlightGreenLeftToRight": [
+      206,
+      207,
+      205,
+      202,
+      197,
+      195,
+      198,
+      208,
+      223,
+      239,
+      247,
+      251
+    ]
+  },
+  "loadingColor": {
+    "status": "PASS_FINAL_BRIGHTER_COLOR_CONTINUOUS_LOWER_EDGE_AND_FIXED_DIRECTIONAL_HIGHLIGHTS",
+    "sourceHead": "0e381129",
+    "previousSourceHead": "fa849470",
+    "previousMeanRgb": [
+      113,
+      49,
+      11
+    ],
+    "finalMeanRgb": [
+      236,
+      97,
+      12
+    ],
+    "retailMeanRgb": [
+      237,
+      111,
+      17
+    ],
+    "pixelChecks": {
+      "region": [
+        417,
+        51,
+        1725,
+        55
+      ],
+      "prefixMismatches": 0,
+      "bottomDarkPixels": 0,
+      "bottomPixels": 18975,
+      "materialCorrelation": 0.9561870830207685,
+      "highlightGreenLeftToRight": [
+        206,
+        207,
+        205,
+        202,
+        197,
+        195,
+        198,
+        208,
+        223,
+        239,
+        247,
+        251
+      ]
+    },
+    "scope": "Same loaded prefix of native screenshots; Original fill is a palette reference, not a claim of identical texture or every RGB value."
+  },
+  "tests": {
+    "passed": 51,
+    "failed": 0,
+    "assertions": 811,
+    "files": 13
+  },
+  "entryTypecheck": "PASS",
+  "native": [
+    {
+      "name": "native-loading-current",
+      "status": "PASS_NATIVE_LOADING_COLOR_NO_BLACK_PINHOLES_FIXED_PROGRESS_HIGHLIGHTS_AND_FOUR_ASPECTS",
+      "sourceHead": "0e381129030a03a239a9357fed48520c51b665c7",
+      "cases": 4,
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/native-loading-current/report.json",
+        "bytes": 6414,
+        "sha256": "97d615a234e09b0ad83021f97f32c577ca02d2bd2bc8e8ab2a3ac82e9b159fe2"
+      }
+    },
+    {
+      "name": "native-victory-current",
+      "status": "PASS_ORIGINAL_VICTORY_AUDIO_AND_RESPONSIVE_SCORE",
+      "sourceHead": "0e381129030a03a239a9357fed48520c51b665c7",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/native-victory-current/report.json",
+        "bytes": 201812,
+        "sha256": "ac185b488cdd056fd0fc325f1aa3cf6659cd58788e1ffbc3ab34a53d77714bad"
+      }
+    },
+    {
+      "name": "native-defeat-current",
+      "status": "PASS_ORIGINAL_DEFEAT_AUDIO_AND_RESPONSIVE_SCORE",
+      "sourceHead": "0e381129030a03a239a9357fed48520c51b665c7",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/native-defeat-current/report.json",
+        "bytes": 128145,
+        "sha256": "dd478ea7e84c86b58628b0f4cfa9d95b49c944fabcc0613df178bc6a823b114c"
+      }
+    },
+    {
+      "name": "native-desktop-original",
+      "status": "PASS_PACKAGED_ENTRY_EDITION_RECOVERY_AND_PLAYABLE_MISSION",
+      "sourceHead": "0e381129030a03a239a9357fed48520c51b665c7",
+      "cases": 9,
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/native-desktop-original/report.json",
+        "bytes": 22200,
+        "sha256": "21a5e629df4e148dc332ceb91095e09f1f98e09829441eef122229d87447e7c0"
+      }
+    },
+    {
+      "name": "current-main-native-campaign",
+      "status": "PASS_NATIVE_CAMPAIGN_NAMED_SAVE_LOAD_RESTART_REPLACE_DELETE_AND_LEGACY_COMPATIBILITY",
+      "sourceHead": "528e5cfb65d5ebf16171dbd389e3aa7dca884eec",
+      "cases": 7,
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/current-main-native-campaign/report.json",
+        "bytes": 2478,
+        "sha256": "471de084571bc227ef105d6d805ba6f6fadca62d1fd6ccf86738857ba99abc61"
+      }
+    },
+    {
+      "name": "current-main-native-skirmish",
+      "status": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+      "sourceHead": "528e5cfb65d5ebf16171dbd389e3aa7dca884eec",
+      "proof": {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/current-main-native-skirmish/report.json",
+        "bytes": 2852638,
+        "sha256": "c44efb5079af25f50e0e9b4d5befa575c6bb16b49ee2b2d61b674c406eb3c003"
+      }
+    }
+  ],
+  "delivery": {
+    "status": "PASS_DESKTOP_COPY_HASH_MATCH",
+    "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R4.zip",
+    "bytes": 5732434635,
+    "sha256": "f403fda1bb9f4029893ee813be74005ddecbefd2cb51542c214e86726312a35f",
+    "entries": 14547,
+    "inventorySha256": "843c721d9cc616ad77b2dfc53e58b9ccf519cb9d7f8daec5966c7fdb19681bc0",
+    "sourceArchive": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/RA2-HD-M3.1-Mac-arm64-20261024-R4.zip",
+    "extractedStatus": "PASS_ACTUAL_DESKTOP_ZIP_EXTRACTED_ALL_BYTES_LINKS_MODES_AND_SIGNATURE",
+    "signature": "PASS_DEEP_STRICT",
+    "resourceFilesUnchanged": 14004,
+    "profile": "~/Library/Application Support/RA2 HD M3.1 Campaign Test 20261023",
+    "userDataInArchive": false,
+    "signedAppIdenticalToNativeCandidate": true
+  },
+  "review": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/M3.1-Feedback-R4-Review.html",
+    "bytes": 17492030,
+    "sha256": "df351240723e9ac52d4877d90b377283ce89c6a7e1b7cda3ae9f6247a4a01d84",
+    "images": 9,
+    "embedding": "PASS_EMBEDDED_NATIVE_SCREENSHOTS_WITH_BLOCKED_HD_BACKGROUND_EXPLICIT",
+    "browserPreview": "Not retried after the prior file:// URL-policy rejection. Embedded PNG decoding and hash validation pass."
+  },
+  "integration": {
+    "status": "PASS_CURRENT_MAIN_ISOLATED_MERGE_AND_FRESH_BOTH_NATIVE_SAVE_FLOWS_MAIN_UNCHANGED",
+    "mainBase": "34e6fbe6b5d2808db4034e21d9e2dad36e7a7c3a",
+    "campaignRuntime": "0e381129030a03a239a9357fed48520c51b665c7",
+    "resolvedHead": "528e5cfb65d5ebf16171dbd389e3aa7dca884eec",
+    "bundle": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/M3.1-R4-Current-Main-Integration-Preparation.bundle",
+      "bytes": 3887095,
+      "sha256": "620d92051cfbb794c73db89a30cab2b6cbacbb47bb84726842610bae3cb8c93d"
+    },
+    "requiredBundleBase": "34e6fbe6b5d2808db4034e21d9e2dad36e7a7c3a",
+    "resolution": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/current-main-resolution.json",
+      "bytes": 3130,
+      "sha256": "b99c2eef34b64df89331719c3801e4c072d5272c863d2cefb7109663414fcf4e"
+    },
+    "tests": {
+      "passed": 56,
+      "failed": 0,
+      "assertions": 844,
+      "files": 15
+    },
+    "native": [
+      {
+        "name": "current-main-native-campaign",
+        "status": "PASS_NATIVE_CAMPAIGN_NAMED_SAVE_LOAD_RESTART_REPLACE_DELETE_AND_LEGACY_COMPATIBILITY",
+        "sourceHead": "528e5cfb65d5ebf16171dbd389e3aa7dca884eec",
+        "cases": 7,
+        "proof": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/current-main-native-campaign/report.json",
+          "bytes": 2478,
+          "sha256": "471de084571bc227ef105d6d805ba6f6fadca62d1fd6ccf86738857ba99abc61"
+        }
+      },
+      {
+        "name": "current-main-native-skirmish",
+        "status": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE",
+        "sourceHead": "528e5cfb65d5ebf16171dbd389e3aa7dca884eec",
+        "proof": {
+          "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r4/current-main-native-skirmish/report.json",
+          "bytes": 2852638,
+          "sha256": "c44efb5079af25f50e0e9b4d5befa575c6bb16b49ee2b2d61b674c406eb3c003"
+        }
+      }
+    ],
+    "limit": "Preparation only; canonical main is clean and unchanged. Recheck its live identity before integration. Windows was not run."
+  },
+  "unchanged": [
+    "Original mission map, rules, scripts, objectives and source media.",
+    "Safe Original sprite clock, loading-world registration and foreground layers.",
+    "Both save schemas, modified-save gate, trainer scope and in-game native information styling.",
+    "16 MiB UI reservation and 1.7 million composited-pixel cap."
+  ],
+  "retained": [
+    "Accepted base and all earlier delivery archives/profiles where present.",
+    "R4 early candidate with the reported dark pinholes and pre-final highlight curve.",
+    "Earlier frozen-donor merge preparations and all raw native evidence.",
+    "Initial current-main fixture failures and their explicit layout correction."
+  ],
+  "acceptance": {
+    "technicalMac": "PASS",
+    "visualAndPhysicalInput": "PENDING_USER_REVIEW",
+    "generatedHdScoreBackground": "BLOCKED_BY_IMAGE_TOOL",
+    "nativeWindows": "NOT_RUN_ON_THIS_MAC",
+    "mainIntegration": "PREPARED_NOT_MERGED",
+    "remotePush": "NOT_REQUESTED"
+  },
+  "finalDeliveryPresence": {
+    "status": "CURRENT_DELIVERY_AND_R3B_DESKTOP_PRESENT_OLDER_SOURCE_ARCHIVES_RETAINED",
+    "files": [
+      {
+        "file": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R4.zip",
+        "status": "PRESENT",
+        "bytes": 5732434635
+      },
+      {
+        "file": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R3b.zip",
+        "status": "PRESENT",
+        "bytes": 5755930109
+      },
+      {
+        "file": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R3.zip",
+        "status": "ABSENT_AT_FINAL_AUDIT",
+        "cause": "Unknown; this task did not remove or recreate this file."
+      },
+      {
+        "file": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261023-R2a.zip",
+        "status": "ABSENT_AT_FINAL_AUDIT",
+        "cause": "Unknown; this task did not remove or recreate this file."
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r3/RA2-HD-M3.1-Mac-arm64-20261024-R3.zip",
+        "status": "RETAINED_SOURCE_ARCHIVE",
+        "bytes": 5753835777
+      },
+      {
+        "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r2a/RA2-HD-M3.1-Mac-arm64-20261023-R2a.zip",
+        "status": "RETAINED_SOURCE_ARCHIVE",
+        "bytes": 5746075367
+      }
+    ],
+    "scope": "Presence/size audit. Earlier immutable receipts retain their historical archive hashes; missing older Desktop files are not attributed to a cause or automatically recreated."
+  }
+}

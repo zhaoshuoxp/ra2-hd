@@ -5,6 +5,7 @@ import path from 'node:path';
 import { isGameURL, isLocalRequest } from '../../desktop/url-policy.mjs';
 import { createHandler } from '../../desktop/protocol.mjs';
 import { safeFile, validateProfile } from '../../desktop/profile.mjs';
+import { staticAppFiles } from '../../desktop/static-files.mjs';
 
 test('desktop origin policy rejects opaque lookalikes and foreign blobs', () => {
     expect(new URL('ra2://game/').origin).toBe('null'); // Node URL is not Chromium scheme registration.
@@ -37,5 +38,23 @@ test('profile validation fails closed for missing data, and files cannot escape 
         await fs.symlink('/etc/hosts', path.join(root, 'link'));
         await expect(safeFile(root, 'link')).rejects.toThrow();
         await expect(safeFile(root, '../outside')).rejects.toThrow();
+    } finally { await fs.rm(root, { recursive: true }); }
+});
+
+test('desktop serves all three existing HD score backgrounds through its explicit application allowlist', async () => {
+    const root = await fs.realpath(await fs.mkdtemp(path.join(os.tmpdir(), 'ra2-score-routes-')));
+    try {
+        const handler = createHandler({ appRoot: root, appFiles: new Set(staticAppFiles.map(file => 'dist/' + file)),
+            getProfile: () => undefined, getError: () => '' });
+        await fs.mkdir(path.join(root, 'dist/res/presentation'), { recursive: true });
+        for (const faction of ['allied', 'soviet', 'yuri']) {
+            const route = `res/presentation/score-${faction}-hd.png`;
+            const expected = await fs.readFile(path.resolve(import.meta.dir, '../../public', route));
+            await fs.writeFile(path.join(root, 'dist', route), expected);
+            const response = await handler(new Request('ra2://game/' + route));
+            expect(response.status).toBe(200); expect(response.headers.get('content-type')).toBe('image/png');
+            expect(Buffer.from(await response.arrayBuffer()).equals(expected)).toBe(true);
+        }
+        expect((await handler(new Request('ra2://game/res/presentation/unlisted-score.png'))).status).toBe(404);
     } finally { await fs.rm(root, { recursive: true }); }
 });

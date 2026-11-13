@@ -21,9 +21,15 @@ export class SidebarRadar extends UiComponent<SidebarRadarProps> {
     minimap?: any;
     coverOpen?: boolean;
     createUiObject() {
-        const obj = new UiObject(new THREE.Object3D(), new HtmlContainer());
+        const html = new HtmlContainer(), element = document.createElement('div');
+        element.dataset.sidebarRadar = 'true'; element.style.pointerEvents = 'none';
+        html.setElement(element); html.setSize(this.props.image.width, this.props.image.height);
+        const obj = new UiObject(new THREE.Object3D(), html);
         obj.setPosition(this.props.x || 0, this.props.y || 0);
         return obj;
+    }
+    getTransmissionHost(): HTMLElement | undefined {
+        return this.getUiObject().getHtmlContainer()?.getElement();
     }
     defineChildren() {
         return jsx("fragment", null, jsx("sprite", {
@@ -41,6 +47,8 @@ export class SidebarRadar extends UiComponent<SidebarRadarProps> {
     onFrame(now: number) {
         const obj = this.getUiObject().get3DObject();
         obj.visible = this.visible;
+        const host = this.getTransmissionHost();
+        if (host) host.style.visibility = this.visible ? 'visible' : 'hidden';
         const sidebarModel = this.props.sidebarModel;
         const radarEnabled = sidebarModel?.radarEnabled ?? true;
         if (radarEnabled !== this.coverOpen) {

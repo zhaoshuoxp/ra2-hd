@@ -1,0 +1,846 @@
+{
+  "status": "R8_NATIVE_AND_MAC_PACKAGE_TECHNICAL_PASS_USER_VISUAL_ACCEPTANCE_PENDING",
+  "runtimeSourceHead": "1fc8038ca5f497ccdf34b5e2c855db021b8b3be0",
+  "renderFixCommit": "a86ec3f7",
+  "changes": [
+    "Apply reference-surface depth recovery to civilian and future non-airborne VXL hulls; preserve native projection, pose, water clipping and depth testing.",
+    "Add the generated yellow Soviet hammer/sickle and outlined star to the garrison flag, retaining original cloth/pole/alpha/registration, other slots and timing."
+  ],
+  "native": {
+    "modes": [
+      {
+        "density": 1,
+        "placements": 6,
+        "headings": 16,
+        "clippedHullPixels": 34,
+        "worldHashPreserved": true
+      },
+      {
+        "density": 2,
+        "placements": 6,
+        "headings": 16,
+        "clippedHullPixels": 0,
+        "worldHashPreserved": true
+      },
+      {
+        "density": 4,
+        "placements": 6,
+        "headings": 16,
+        "clippedHullPixels": 0,
+        "worldHashPreserved": true
+      }
+    ],
+    "openingHashAtTick3600": 1965294077,
+    "activeGarrisonSlotsInspectedAtEachHdDensity": [
+      33,
+      47
+    ],
+    "actualDesktopPackageUiCases": [
+      {
+        "name": "Direct RA2 campaign startup",
+        "url": "ra2://game/?edition=ra2",
+        "ready": "true",
+        "density": "2",
+        "size": [
+          1280,
+          928
+        ],
+        "dpr": 2,
+        "status": "请选择阵营。苏军第一关已开放普通难度。",
+        "factions": [
+          {
+            "faction": "allied",
+            "bounds": [
+              67.72927856445312,
+              40.21333312988281,
+              881.5999755859375,
+              208.8000030517578
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "tutorial",
+            "bounds": [
+              148.15594482421875,
+              289.2266845703125,
+              723.8400268554688,
+              167.03997802734375
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "soviet",
+            "bounds": [
+              172.90261840820312,
+              460.90667724609375,
+              686.719970703125,
+              230.45330810546875
+            ],
+            "visible": true,
+            "hit": true
+          }
+        ],
+        "ui": {
+          "revision": "yuri-emblem-ui-v1",
+          "enabled": true,
+          "reservedBytes": 16333440,
+          "decodedCpuBytes": 8828928,
+          "gpuTextureBytesUpperBound": 8828928,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 7504512,
+          "domImageDecodedCpuBytesUpperBound": 32293768,
+          "textures": 2,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        }
+      },
+      {
+        "name": "Window 1280x900",
+        "url": "ra2://game/?edition=ra2",
+        "ready": "true",
+        "density": "2",
+        "size": [
+          1280,
+          900
+        ],
+        "dpr": 2,
+        "status": "请选择阵营。苏军第一关已开放普通难度。",
+        "factions": [
+          {
+            "faction": "allied",
+            "bounds": [
+              84.99609375,
+              39,
+              855,
+              202.5
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "tutorial",
+            "bounds": [
+              162.99609375,
+              280.5,
+              702,
+              162
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "soviet",
+            "bounds": [
+              186.99609375,
+              447,
+              666,
+              223.5
+            ],
+            "visible": true,
+            "hit": true
+          }
+        ],
+        "ui": {
+          "revision": "yuri-emblem-ui-v1",
+          "enabled": true,
+          "reservedBytes": 16333440,
+          "decodedCpuBytes": 8828928,
+          "gpuTextureBytesUpperBound": 8828928,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 7504512,
+          "domImageDecodedCpuBytesUpperBound": 32293768,
+          "textures": 2,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        }
+      },
+      {
+        "name": "Window 1774x1163",
+        "url": "ra2://game/?edition=ra2",
+        "ready": "true",
+        "density": "2",
+        "size": [
+          1774,
+          930
+        ],
+        "dpr": 2,
+        "status": "请选择阵营。苏军第一关已开放普通难度。",
+        "factions": [
+          {
+            "faction": "allied",
+            "bounds": [
+              313.4961242675781,
+              40.29999923706055,
+              883.5,
+              209.24998474121094
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "tutorial",
+            "bounds": [
+              394.09613037109375,
+              289.8500061035156,
+              725.3999633789062,
+              167.39999389648438
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "soviet",
+            "bounds": [
+              418.8961181640625,
+              461.8999938964844,
+              688.2000732421875,
+              230.94998168945312
+            ],
+            "visible": true,
+            "hit": true
+          }
+        ],
+        "ui": {
+          "revision": "yuri-emblem-ui-v1",
+          "enabled": true,
+          "reservedBytes": 16333440,
+          "decodedCpuBytes": 8828928,
+          "gpuTextureBytesUpperBound": 8828928,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 7504512,
+          "domImageDecodedCpuBytesUpperBound": 32293768,
+          "textures": 2,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        }
+      },
+      {
+        "name": "Application fullscreen",
+        "url": "ra2://game/?edition=ra2",
+        "ready": "true",
+        "density": "2",
+        "size": [
+          1920,
+          1080
+        ],
+        "dpr": 2,
+        "status": "请选择阵营。苏军第一关已开放普通难度。",
+        "factions": [
+          {
+            "faction": "allied",
+            "bounds": [
+              293.9905700683594,
+              46.80000305175781,
+              1026.0001220703125,
+              243.00001525878906
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "tutorial",
+            "bounds": [
+              387.590576171875,
+              336.6000061035156,
+              842.400146484375,
+              194.39999389648438
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "soviet",
+            "bounds": [
+              416.3905944824219,
+              536.4000244140625,
+              799.199951171875,
+              268.20001220703125
+            ],
+            "visible": true,
+            "hit": true
+          }
+        ],
+        "ui": {
+          "revision": "yuri-emblem-ui-v1",
+          "enabled": true,
+          "reservedBytes": 16333440,
+          "decodedCpuBytes": 8828928,
+          "gpuTextureBytesUpperBound": 8828928,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 7504512,
+          "domImageDecodedCpuBytesUpperBound": 32293768,
+          "textures": 2,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        }
+      },
+      {
+        "name": "YR central button returns to RA2 selection",
+        "url": "ra2://game/?edition=ra2",
+        "ready": "true",
+        "density": "2",
+        "size": [
+          1280,
+          771
+        ],
+        "dpr": 2,
+        "status": "请选择阵营。苏军第一关已开放普通难度。",
+        "factions": [
+          {
+            "faction": "allied",
+            "bounds": [
+              164.5432891845703,
+              33.40999984741211,
+              732.4500122070312,
+              173.47500610351562
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "tutorial",
+            "bounds": [
+              231.36329650878906,
+              240.2949981689453,
+              601.3800048828125,
+              138.78001403808594
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "soviet",
+            "bounds": [
+              251.9232940673828,
+              382.92999267578125,
+              570.5400390625,
+              191.46502685546875
+            ],
+            "visible": true,
+            "hit": true
+          }
+        ],
+        "ui": {
+          "revision": "yuri-emblem-ui-v1",
+          "enabled": true,
+          "reservedBytes": 16333440,
+          "decodedCpuBytes": 8828928,
+          "gpuTextureBytesUpperBound": 8828928,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 7504512,
+          "domImageDecodedCpuBytesUpperBound": 32293768,
+          "textures": 2,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        }
+      },
+      {
+        "name": "YR sidebar button returns to RA2 selection",
+        "url": "ra2://game/?edition=ra2",
+        "ready": "true",
+        "density": "2",
+        "size": [
+          1280,
+          771
+        ],
+        "dpr": 2,
+        "status": "请选择阵营。苏军第一关已开放普通难度。",
+        "factions": [
+          {
+            "faction": "allied",
+            "bounds": [
+              164.5432891845703,
+              33.40999984741211,
+              732.4500122070312,
+              173.47500610351562
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "tutorial",
+            "bounds": [
+              231.36329650878906,
+              240.2949981689453,
+              601.3800048828125,
+              138.78001403808594
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "soviet",
+            "bounds": [
+              251.9232940673828,
+              382.92999267578125,
+              570.5400390625,
+              191.46502685546875
+            ],
+            "visible": true,
+            "hit": true
+          }
+        ],
+        "ui": {
+          "revision": "yuri-emblem-ui-v1",
+          "enabled": true,
+          "reservedBytes": 16333440,
+          "decodedCpuBytes": 8828928,
+          "gpuTextureBytesUpperBound": 8828928,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 7504512,
+          "domImageDecodedCpuBytesUpperBound": 32293768,
+          "textures": 2,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        }
+      },
+      {
+        "name": "Original faction menu reentry",
+        "url": "ra2://game/?edition=ra2",
+        "ready": "true",
+        "density": "1",
+        "size": [
+          1280,
+          771
+        ],
+        "dpr": 2,
+        "status": "请选择阵营。苏军第一关已开放普通难度。",
+        "factions": [
+          {
+            "faction": "allied",
+            "bounds": [
+              164.5432891845703,
+              33.40999984741211,
+              732.4500122070312,
+              173.47500610351562
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "tutorial",
+            "bounds": [
+              231.36329650878906,
+              240.2949981689453,
+              601.3800048828125,
+              138.78001403808594
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "soviet",
+            "bounds": [
+              251.9232940673828,
+              382.92999267578125,
+              570.5400390625,
+              191.46502685546875
+            ],
+            "visible": true,
+            "hit": true
+          }
+        ],
+        "ui": {
+          "revision": "yuri-emblem-ui-v1",
+          "enabled": false,
+          "reservedBytes": 6800000,
+          "decodedCpuBytes": 0,
+          "gpuTextureBytesUpperBound": 0,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 6800000,
+          "domImageDecodedCpuBytesUpperBound": 20364168,
+          "textures": 0,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        }
+      },
+      {
+        "name": "HD faction menu reentry",
+        "url": "ra2://game/?edition=ra2",
+        "ready": "true",
+        "density": "2",
+        "size": [
+          1280,
+          771
+        ],
+        "dpr": 2,
+        "status": "请选择阵营。苏军第一关已开放普通难度。",
+        "factions": [
+          {
+            "faction": "allied",
+            "bounds": [
+              164.5432891845703,
+              33.40999984741211,
+              732.4500122070312,
+              173.47500610351562
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "tutorial",
+            "bounds": [
+              231.36329650878906,
+              240.2949981689453,
+              601.3800048828125,
+              138.78001403808594
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "soviet",
+            "bounds": [
+              251.9232940673828,
+              382.92999267578125,
+              570.5400390625,
+              191.46502685546875
+            ],
+            "visible": true,
+            "hit": true
+          }
+        ],
+        "ui": {
+          "revision": "yuri-emblem-ui-v1",
+          "enabled": true,
+          "reservedBytes": 16333440,
+          "decodedCpuBytes": 8828928,
+          "gpuTextureBytesUpperBound": 8828928,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 7504512,
+          "domImageDecodedCpuBytesUpperBound": 32293768,
+          "textures": 2,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        }
+      },
+      {
+        "name": "Abort returns to campaign without entry loop",
+        "url": "ra2://game/?edition=ra2",
+        "ready": "true",
+        "density": "2",
+        "size": [
+          1280,
+          771
+        ],
+        "dpr": 2,
+        "status": "请选择阵营。苏军第一关已开放普通难度。",
+        "factions": [
+          {
+            "faction": "allied",
+            "bounds": [
+              164.5432891845703,
+              33.40999984741211,
+              732.4500122070312,
+              173.47500610351562
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "tutorial",
+            "bounds": [
+              231.36329650878906,
+              240.2949981689453,
+              601.3800048828125,
+              138.78001403808594
+            ],
+            "visible": true,
+            "hit": true
+          },
+          {
+            "faction": "soviet",
+            "bounds": [
+              251.9232940673828,
+              382.92999267578125,
+              570.5400390625,
+              191.46502685546875
+            ],
+            "visible": true,
+            "hit": true
+          }
+        ],
+        "ui": {
+          "revision": "yuri-emblem-ui-v1",
+          "enabled": true,
+          "reservedBytes": 16333440,
+          "decodedCpuBytes": 8828928,
+          "gpuTextureBytesUpperBound": 8828928,
+          "transitionGpuBytes": 0,
+          "transitionCpuCanvasBytes": 0,
+          "domImageGpuBytesUpperBound": 7504512,
+          "domImageDecodedCpuBytesUpperBound": 32293768,
+          "textures": 2,
+          "budget": 16777216,
+          "domCanvasBytes": 0,
+          "mipmaps": false
+        }
+      }
+    ],
+    "userProfile": "Untouched; every automated run uses a new task-local profile."
+  },
+  "tests": {
+    "passed": 86,
+    "failed": 0,
+    "assertions": 22567,
+    "entryTypecheck": "PASS",
+    "resourceRoots": "Campaign cases use the imported source root and active R8 campaign extension; VXL cases use the immutable R7 resource snapshot.",
+    "retainedInitialRootMismatch": "failed-default-resource-root-tests.log: three resource registration checks ran against canonical resource links without the private campaign VXL packs. The corrected, explicitly selected resource-root runs pass."
+  },
+  "artwork": {
+    "tool": "Built-in imagegen",
+    "source": "docs/m3-1-r8-source.json",
+    "selectedExport": "flag-export-v2/export.json",
+    "retainedPreliminaryExport": "flag-export/export.json: not selected; the second export explicitly protects poles and rejects gray material from the gold print mask.",
+    "preserved": {
+      "status": "PASS_R7_RESOURCES_PRESERVED_WITH_SCOPED_SOVIET_INSIGNIA_EXTENSION",
+      "files": 14070,
+      "originalInventorySha256": "b159c375d306f0340514ebd8134fa6e3585f58726c4ba815a433c4eb16092f25",
+      "originalDesktopZip": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261025-R7.zip",
+      "originalDesktopZipSha256": "b18e14fee9f46af11875a6e8255759c6f03bcc93fe505722f9f409fd09e1355c",
+      "permittedChanges": [
+        "campaign/ra2/sov01t/manifest.json",
+        "campaign/ra2/sov01t/memorial-family.json",
+        "campaign/ra2/sov01t/memorial-flag-hd-r8.json",
+        "campaign/ra2/sov01t/memorial-flag-r8-2-p0-base.png",
+        "campaign/ra2/sov01t/memorial-flag-r8-4-p0-base.png"
+      ],
+      "unchangedOriginalResourceFiles": 14065,
+      "artwork": "All R7 masters, existing atlases, palettes, ownership masks, source geometry and resource selectors are retained unchanged. The optional flag extension adds two insignia atlases and a versioned member manifest, updating only the task-owned campaign family/index metadata."
+    },
+    "originalMode": "Retail source artwork, including its low-resolution flag, is unchanged."
+  },
+  "desktopZip": {
+    "status": "PASS_DESKTOP_COPY_HASH_MATCH",
+    "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261025-R8.zip",
+    "bytes": 5749149671,
+    "sha256": "c1f79720094515cf9a4a8e2536bdda081020e1c44911f1f3364f648116ad4b89",
+    "entries": 14619,
+    "inventorySha256": "3d1190e35a268fc4744c7b150c3fdda70c52e28e527dc26a78ec99fd81113945",
+    "sourceArchive": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/naval-hull-r8/RA2-HD-M3.1-Mac-arm64-20261025-R8.zip"
+  },
+  "extractedPackage": {
+    "status": "PASS_ACTUAL_DESKTOP_ZIP_EXTRACTED_ALL_BYTES_LINKS_MODES_AND_SIGNATURE",
+    "desktopZip": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261025-R8.zip",
+    "zipSha256": "c1f79720094515cf9a4a8e2536bdda081020e1c44911f1f3364f648116ad4b89",
+    "folder": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/naval-hull-r8/Relocated R8 Test/RA2-HD-M3.1-Mac-arm64-20261025-R8",
+    "app": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/naval-hull-r8/Relocated R8 Test/RA2-HD-M3.1-Mac-arm64-20261025-R8/Red Alert 2 HD M3.1 Campaign R8.app",
+    "executable": "RA2 HD M3.1",
+    "entries": 14619
+  },
+  "review": {
+    "status": "PASS_SELF_CONTAINED_UNCHANGED_NATIVE_PNG_REVIEW",
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/naval-hull-r8/review/M3.1-Naval-Hull-R8-Review.html",
+    "bytes": 32052432,
+    "sha256": "5749130f5e97e656397d7dde9343fbb585c81073a382b9934b70cb41629ccd2b",
+    "embeddedImages": 26,
+    "sources": [
+      {
+        "file": "baseline-4x/cruise-0-context.png",
+        "bytes": 762782,
+        "sha256": "53c0cdfaffdf4238eb3b4cde7bb93d5ae04a5e3fa09c93536a87d772dfc6c851"
+      },
+      {
+        "file": "native-4x/cruise-0-context.png",
+        "bytes": 777282,
+        "sha256": "04eb0bea86befb65a83f0aec34fd0daf33139baf43af6743772d0ade4e4494cf"
+      },
+      {
+        "file": "baseline-4x/tug-0-context.png",
+        "bytes": 820888,
+        "sha256": "48db81b01c901a881e53928c97ca173f67537c7261df931287103d75acf985fd"
+      },
+      {
+        "file": "native-4x/tug-0-context.png",
+        "bytes": 826309,
+        "sha256": "c6f24ed8b8c40817f4fb0f18edc4d4243c9b84688eb975ee9ed0fcc880571844"
+      },
+      {
+        "file": "native-original/cruise-45-context.png",
+        "bytes": 337583,
+        "sha256": "023e1dacb23a8b5c8a31b68630153e6287745e18ff05757fb3ad76895315e813"
+      },
+      {
+        "file": "native-2x/cruise-45-context.png",
+        "bytes": 736612,
+        "sha256": "8a1417b3046c1950c53a9f887eb6835219dfcf0d3594eb1c28c139295d995d9a"
+      },
+      {
+        "file": "native-4x/cruise-45-context.png",
+        "bytes": 771019,
+        "sha256": "622331be6f7774b7953d8ee8d1c9d51c9e57ac4b0a873ad2495ad34437c83c8f"
+      },
+      {
+        "file": "native-4x/cruise-1821-natural-scene.png",
+        "bytes": 7889529,
+        "sha256": "68ded3099d9e61c826e165add15294c7d10a2cf4f62cd7c2d9ebb69d3ec43e23"
+      },
+      {
+        "file": "native-4x/tug-1873-natural-scene.png",
+        "bytes": 8211195,
+        "sha256": "28c05a8d6f4e1864e19340f89887839122a6475e3e6a532ed41fe7768313951d"
+      },
+      {
+        "file": "opening-native/2x-soviet-insignia-33.png",
+        "bytes": 161974,
+        "sha256": "0bf2fa849594185b7c80adf4d6f2ee624e26d14f7be16fc408c709e52bcabc62"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-33.png",
+        "bytes": 171205,
+        "sha256": "44ad492afb2c3fae1e0aa64062e6f23140997bc60f469f55ebd2274d52611d6e"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-33.png",
+        "bytes": 171205,
+        "sha256": "44ad492afb2c3fae1e0aa64062e6f23140997bc60f469f55ebd2274d52611d6e"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-34.png",
+        "bytes": 171134,
+        "sha256": "812dea679dd07dae52dab9112a52b9a0b5647b4bef56b3c9f2905530553dc4e0"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-35.png",
+        "bytes": 171125,
+        "sha256": "129ad3d83763aebaca69a6106828ccd075b1e1bc55559e6d7b2b1f033e13b1ea"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-36.png",
+        "bytes": 171136,
+        "sha256": "783b9c8d8eaa337fc088d8c55ccf61d50f6755cf9f9319b820d50f663686f71b"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-37.png",
+        "bytes": 171161,
+        "sha256": "2301e2394a5ab85a426914807f2fd45988add24203137bd3b5d6c79fc6e8b43e"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-38.png",
+        "bytes": 171156,
+        "sha256": "d7b6b6c9976b8f39365190cfdf6278d50fef825b1872faab4b24e352863e06e9"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-39.png",
+        "bytes": 171160,
+        "sha256": "69801d10c89031a11bfe0319d01766a974ac7039b9786aef98cfa64642d23f30"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-40.png",
+        "bytes": 171218,
+        "sha256": "8a9b99536d557dccee2847b8a8d13a034e287d0558fbc76e5d6ab35ee1fd87c6"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-41.png",
+        "bytes": 171157,
+        "sha256": "f6f693cc78f766ecc8398a2dd8a6158eaf07ed36021e3d206d8d778caf5b8edc"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-42.png",
+        "bytes": 171130,
+        "sha256": "8e747354f22b7b2769264107a1b8746ba6266f17439f2a935645e59259caafba"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-43.png",
+        "bytes": 171138,
+        "sha256": "547be606eed554455a5493307765bf520c7469a13817caadb8e33b5e7dbf303a"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-44.png",
+        "bytes": 171134,
+        "sha256": "50452aa66f03e5946d524be6d657f33c0be7b6982b3ceadab35e22d6ea7334df"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-45.png",
+        "bytes": 171150,
+        "sha256": "bd7e17384cf4c356ab36a65c2cfcc368f193a3056dc2391632e8235fe07d4f99"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-46.png",
+        "bytes": 171187,
+        "sha256": "0f6ada9b22f6633ac1627bdafa174c9c250097ce047773c3105c2a1395834aba"
+      },
+      {
+        "file": "opening-native/4x-soviet-insignia-47.png",
+        "bytes": 171299,
+        "sha256": "305454d5edb48b9f9505f7ce04b301cbf3bd7aef4beab2095159690552228ba1"
+      }
+    ]
+  },
+  "retainedR7": {
+    "status": "PASS_RETAINED_R7_SOURCE_ARCHIVE_UNCHANGED",
+    "path": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/hd-completion-r7/RA2-HD-M3.1-Mac-arm64-20261025-R7.zip",
+    "bytes": 5833790221,
+    "sha256": "b18e14fee9f46af11875a6e8255759c6f03bcc93fe505722f9f409fd09e1355c",
+    "formerDesktopPath": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261025-R7.zip",
+    "desktopPathExists": false,
+    "policy": "Retain the source archive. Do not infer why the Desktop path is absent or recreate that path."
+  },
+  "integration": "docs/m3-1-r8-source.json pins three additive versioned files and two metadata replacements with exact expected predecessor hashes. Apply on top of the R7 resource integration plan. No main merge, push, save-schema change, accepted resource cleanup or next mission is included.",
+  "evidence": [
+    {
+      "file": "baseline-4x/report.json",
+      "sha256": "083e1c2a6de22f2a1517810bb1a18970852e5746771b2a926a5687d4fdbba2f0"
+    },
+    {
+      "file": "native-original/report.json",
+      "sha256": "6122bc7bd6e4a46c9bfd3bafd531efa00816a6e70402a11dc57f10d56c5c0ab0"
+    },
+    {
+      "file": "native-2x/report.json",
+      "sha256": "529171ba422a2fdf90b30d9ab4d11403d601076bc2d9c4d8f446a573d0b49588"
+    },
+    {
+      "file": "native-4x/report.json",
+      "sha256": "2658d81ac382c639356fba6d7150cab43a74b74e6a74bc2d79c21b227b1d9746"
+    },
+    {
+      "file": "opening-native/report.json",
+      "sha256": "f2d0e98e5dcf687a7e3b0936883ce9e15ce2832b8a67aef6412df9e2ddf7e0e5"
+    },
+    {
+      "file": "native-desktop/report.json",
+      "sha256": "c1412755b5476110ff020ee35b2e76e5b7cbb342a0fe1b0c6e506df5ddefef32"
+    },
+    {
+      "file": "flag-validation.json",
+      "sha256": "799366f7759ba847cafa6aa77ecac4749695b89506bd1dcfe2172177e5e1df00"
+    },
+    {
+      "file": "review/review.json",
+      "sha256": "108e8c822fef03304100d13181f9f349d90855ad18d160535c30604df03df0a9"
+    },
+    {
+      "file": "resource-preservation-with-flag.json",
+      "sha256": "fd9b99448dbb0148ad5c7352730f8b4d7b130e7aa757b3c90160b0dcac863a5f"
+    },
+    {
+      "file": "r7-preservation.json",
+      "sha256": "9b8465261647f3c87bae4845c66f86272fd2b731102a3a5bb05b65c1eef4cb23"
+    },
+    {
+      "file": "task-campaign-activation.json",
+      "sha256": "a4a77accd3d4178587fd0713f58dfbfe03a4578cd0a1017c4b4f182f6dc121ca"
+    }
+  ],
+  "nativeWindows": "NOT_RUN_ON_THIS_MAC",
+  "userVisualAcceptance": "PENDING"
+}

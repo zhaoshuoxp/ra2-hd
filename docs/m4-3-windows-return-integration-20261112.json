@@ -1,0 +1,3201 @@
+{
+  "schema": "m4-3-windows-return-main-integration-v1",
+  "date": "2026-11-12",
+  "timezone": "America/Los_Angeles",
+  "status": "PASS_VERIFIED_RETURN_INTEGRATION_AND_MAC_REGRESSIONS",
+  "runtimeIntegrationCommit": "5b8e6efa40d00ceba97153307b8d9e892df3b693",
+  "beforeMain": "f1e14096b8b60e062177750a31547d94e7fb5071",
+  "archive": {
+    "archive": "/Users/Aone/Desktop/M4.2-Windows-Return-2026-11-13T04-45-16-955Z.tar.gz",
+    "archiveBytes": 12510289,
+    "archiveSha256": "72a275ca8f484825c9dce186e7075c5324e0bdce775109f4e1e57a6067c7ec37",
+    "files": 159,
+    "manifestFiles": 158,
+    "logicalBytes": 57211187
+  },
+  "incomingFilesManifestSha256": "b97abc9dc3ba455a17de43c50cc4d1d08b6b63f8bedcddc0fda04f49b04a7b6c",
+  "source": {
+    "status": "PASS",
+    "patchBytes": 72468,
+    "patchSha256": "283660ca16b79aed6be2c814c84efdacd4f79db2e5f27d69327231ed9f5e3547",
+    "patchGitAbbreviation": 7,
+    "base": "61a4bbbe75cb12bfbb4cd605b09dbbf39ae9f6bd",
+    "returnHead": "1d68c2b1a0ccd59f2b6a56b7fe05aca97fc6349e",
+    "packagedHead": "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad",
+    "packagedRuntimeMatchesReturn": true,
+    "changedPaths": [
+      "M\tAGENTS.md",
+      "A\tdocs/m4-2-windows-handoff-20261112.md",
+      "M\tscripts/hd-movies/native-playback.mjs",
+      "M\tscripts/m3-2/native-session.mjs",
+      "M\tscripts/m4/benchmark.mjs",
+      "A\tscripts/m4/collect-windows-evidence.mjs",
+      "A\tscripts/m4/compare-pixel-controls.mjs",
+      "A\tscripts/m4/m4-2-host.test.ts",
+      "A\tscripts/m4/native-weld-resources.ts",
+      "A\tscripts/m4/wav-decode-equivalence.ts",
+      "M\tscripts/ui/native-edition-menu-title.mjs",
+      "M\tsrc/data/WavFile.ts",
+      "A\tsrc/data/imaAdpcmWav.ts",
+      "M\tsrc/engine/gfx/Renderer.ts",
+      "A\tsrc/engine/gfx/ShadowOnlyMaterials.ts",
+      "M\tsrc/engine/gfx/batch/MergedSpriteMesh.ts",
+      "M\tsrc/engine/renderable/builder/vxlGeometry/mergeNativeVxlVertices.ts",
+      "M\tsrc/engine/renderable/rhino/RhinoRenderer.ts",
+      "M\tsrc/engine/renderable/unitVxl/VxlUnitRenderer.ts"
+    ],
+    "runtimePaths": [
+      "src/data/WavFile.ts",
+      "src/data/imaAdpcmWav.ts",
+      "src/engine/gfx/Renderer.ts",
+      "src/engine/gfx/ShadowOnlyMaterials.ts",
+      "src/engine/gfx/batch/MergedSpriteMesh.ts",
+      "src/engine/renderable/builder/vxlGeometry/mergeNativeVxlVertices.ts",
+      "src/engine/renderable/rhino/RhinoRenderer.ts",
+      "src/engine/renderable/unitVxl/VxlUnitRenderer.ts"
+    ],
+    "commits": [
+      "ebf93dfaa28eb6c51429983b97649595964988e2 Add Windows portable launch support and draw diagnostics to M4 tooling",
+      "0d593e25c9f19aa3aa312ab44abd2182c1e9ed0c Skip empty colour-pass draws of hidden native VXL sections",
+      "550551d6f95ecf4e3ff520b0deef4cb8f60756e9 Decode mono IMA ADPCM sounds without the generic wavefile codec",
+      "05421e83588e419c782990a17d76a20c30c940fd Weld native VXL vertices with an integer tuple table",
+      "9b655e8c2e4fc22a51986c5ce557fb4b8e23cefb Write merged sprite batch indices without per-instance temporaries",
+      "a196e40f511a33875f0c17925dcbf91bf9b65e10 Add static pixel-control comparison for baseline and candidate runs",
+      "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad Extend shadow-only native sections to the Rhino HD renderer",
+      "d03b23979ed1acea72ef5e6aed2565e2af38d58d Compare full-screen movie holders with the exact visual viewport",
+      "1d68c2b1a0ccd59f2b6a56b7fe05aca97fc6349e Record M4.2 Windows performance results and handoff"
+    ]
+  },
+  "frozenWindowsSources": [
+    {
+      "file": "freeze-2026-11-13T03-04-24-346Z.json",
+      "sourceHead": "05421e83588e419c782990a17d76a20c30c940fd",
+      "sourceFiles": 1693,
+      "sourceFilesMatchGit": true,
+      "sha256": "a71d0587f8d5ef572c1198a73f6514017636829b5f7f7cd730cfdac9d787a206"
+    },
+    {
+      "file": "freeze-2026-11-13T03-15-15-466Z.json",
+      "sourceHead": "a196e40f511a33875f0c17925dcbf91bf9b65e10",
+      "sourceFiles": 1693,
+      "sourceFilesMatchGit": true,
+      "sha256": "503f730af4a29559a6f77efbdbc1a93623c1b066b29e6dd788772cc94f37390f"
+    },
+    {
+      "file": "freeze-2026-11-13T03-54-23-602Z.json",
+      "sourceHead": "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad",
+      "sourceFiles": 1693,
+      "sourceFilesMatchGit": true,
+      "sha256": "82938cd66507571ade5f7bfdffb40f45de02ac034ac159e8370ce573cbd77d51"
+    }
+  ],
+  "integratedRuntimeSourceFiles": 1693,
+  "integratedRuntimeMatchesTestedWindowsSource": true,
+  "windows": {
+    "schema": "m4-3-independent-return-verification-v1",
+    "status": "PASS_RECEIPT_CONSISTENCY",
+    "formalRuns": 17,
+    "completedFormal": 16,
+    "failedFormal": [
+      {
+        "name": "ab-matched-ra2dense-1-base-32c0f11b",
+        "status": "FAIL",
+        "edition": "ra2",
+        "scene": "dense",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "64674a3d16a321207b1edb6e223ca87690d50ee0e293aea0c56de5b1f9b98aa4",
+        "placements": "1bdbe49448fbe42f45a061b1db7cc4b681b5daca1c41fda873e82cbf561aaf81",
+        "failure": "page.evaluate: Execution context was destroyed, most likely because of a navigation.\n    at D:\\Games\\YR\\RA2-HD-M4.2-Windows-20261112\\source\\scripts\\m4\\benchmark.mjs:181:29",
+        "reportSha256": "87f9bff5bfe96eaf2a4812ceec2b36f5b58e29f6d18b90efe6badb3f16e8b3cd"
+      }
+    ],
+    "anyGatePassed": false,
+    "runs": [
+      {
+        "name": "ab-final-ra2dense-1-cand-a196e40f",
+        "status": "COMPLETE",
+        "edition": "ra2",
+        "scene": "dense",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "a196e40f511a33875f0c17925dcbf91bf9b65e10",
+        "map": "64674a3d16a321207b1edb6e223ca87690d50ee0e293aea0c56de5b1f9b98aa4",
+        "placements": "1bdbe49448fbe42f45a061b1db7cc4b681b5daca1c41fda873e82cbf561aaf81",
+        "reportSha256": "dab332ad2f481ac45805389a260e50363df2e6d527a2291ff0c8a2f78f45d0db",
+        "samplesSha256": "ee4d014d5659a5ed18e0b1d2c113cd11fdf9f6454f0f10f4a25dc251e323b524",
+        "sampleCount": 7734,
+        "durationMs": 120018.93000000017,
+        "callbackFps": 64.43992320700843,
+        "onePercentLow": 10.852808094524361,
+        "simulationRatio": 0.9135595896784307,
+        "gate": false,
+        "longStalls": 102,
+        "worstMs": 1201.1650000000373,
+        "callbackWorkMs": 14.849580424104655,
+        "requestedTicks": 8101,
+        "executedTicks": 7401
+      },
+      {
+        "name": "ab-final-yroverload-1-cand-a196e40f",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "overload",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "a196e40f511a33875f0c17925dcbf91bf9b65e10",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "735213c7c275460903be86de49d85640ef5b2604579fe5286d97c77b743c6aa3",
+        "reportSha256": "105f7485a208e5820a0b3fb4fee46bbdcb7ce12ff6a1c4ff71c4b84a3c265d73",
+        "samplesSha256": "d1b5d5a658e8492fdfcd4bb681d27e0f546fab7813bb8a760e74454cbe689ac6",
+        "sampleCount": 3555,
+        "durationMs": 120023.23500000034,
+        "callbackFps": 29.619315559688772,
+        "onePercentLow": 4.9740211022855,
+        "simulationRatio": 0.6524662588132281,
+        "gate": false,
+        "longStalls": 731,
+        "worstMs": 1399.7250000000931,
+        "callbackWorkMs": 32.08696061885744,
+        "requestedTicks": 8100,
+        "executedTicks": 5286
+      },
+      {
+        "name": "ab-matched-ra2dense-1-base-32c0f11b",
+        "status": "FAIL",
+        "edition": "ra2",
+        "scene": "dense",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "64674a3d16a321207b1edb6e223ca87690d50ee0e293aea0c56de5b1f9b98aa4",
+        "placements": "1bdbe49448fbe42f45a061b1db7cc4b681b5daca1c41fda873e82cbf561aaf81",
+        "failure": "page.evaluate: Execution context was destroyed, most likely because of a navigation.\n    at D:\\Games\\YR\\RA2-HD-M4.2-Windows-20261112\\source\\scripts\\m4\\benchmark.mjs:181:29",
+        "reportSha256": "87f9bff5bfe96eaf2a4812ceec2b36f5b58e29f6d18b90efe6badb3f16e8b3cd"
+      },
+      {
+        "name": "ab-matched-ra2dense-retry-1-base-32c0f11b",
+        "status": "COMPLETE",
+        "edition": "ra2",
+        "scene": "dense",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "64674a3d16a321207b1edb6e223ca87690d50ee0e293aea0c56de5b1f9b98aa4",
+        "placements": "1bdbe49448fbe42f45a061b1db7cc4b681b5daca1c41fda873e82cbf561aaf81",
+        "reportSha256": "53f466618f2b88795b1598ec689060d37e8bb69ceb9ae562ee6f4f67e9794f20",
+        "samplesSha256": "511da4f62c974a80371a2250f296b025f01fe0808b30c2434160c8e82998a389",
+        "sampleCount": 7633,
+        "durationMs": 120015.37999999989,
+        "callbackFps": 63.60029319626848,
+        "onePercentLow": 10.180465273708432,
+        "simulationRatio": 0.9060567132374271,
+        "gate": false,
+        "longStalls": 116,
+        "worstMs": 1193.1650000000373,
+        "callbackWorkMs": 15.072797720429236,
+        "requestedTicks": 8100,
+        "executedTicks": 7340
+      },
+      {
+        "name": "ab-matched-yroverload-1-base-32c0f11b",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "overload",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "735213c7c275460903be86de49d85640ef5b2604579fe5286d97c77b743c6aa3",
+        "reportSha256": "1c99469ce95b4a5f16907db723334fa3653d49f004db6fa7ba93de09daf4527d",
+        "samplesSha256": "2db346a3166f16fc40c9075425b1a9e156687c89d61585e246993dd4fdd65f3d",
+        "sampleCount": 3209,
+        "durationMs": 120043.46499999985,
+        "callbackFps": 26.732015295311047,
+        "onePercentLow": 4.16918818325879,
+        "simulationRatio": 0.6117537263443464,
+        "gate": false,
+        "longStalls": 846,
+        "worstMs": 1648.0949999997392,
+        "callbackWorkMs": 35.52193518229503,
+        "requestedTicks": 8100,
+        "executedTicks": 4957
+      },
+      {
+        "name": "ab-sustained-1-base-32c0f11b",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "16f480db49e84c43321a6490579bf18806c13afaae9a65e312834dc903a3e4dd",
+        "samplesSha256": "a5af65896a2d49d6dfa398cdb1b6cdcd0ebf63cd40388321faea84f673ab0df6",
+        "sampleCount": 4544,
+        "durationMs": 120022.4049999998,
+        "callbackFps": 37.85966578346889,
+        "onePercentLow": 7.001127790368347,
+        "simulationRatio": 0.851569399958346,
+        "gate": false,
+        "longStalls": 168,
+        "worstMs": 1290.6450000000186,
+        "callbackWorkMs": 24.294179137322406,
+        "requestedTicks": 8100,
+        "executedTicks": 6899
+      },
+      {
+        "name": "ab-sustained-2-cand-a196e40f",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "a196e40f511a33875f0c17925dcbf91bf9b65e10",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "859f4f671cfe838bfb1601d84097cae6a0e073b5e2496972341f1087405c6165",
+        "samplesSha256": "80a5bbf52e1000b803111b9485f6ff5df12b1d67c461c40661fa0f7493620aba",
+        "sampleCount": 4564,
+        "durationMs": 120051.8450000002,
+        "callbackFps": 38.0169701957448,
+        "onePercentLow": 7.761859404041011,
+        "simulationRatio": 0.8572839386060109,
+        "gate": false,
+        "longStalls": 132,
+        "worstMs": 1116.285000000149,
+        "callbackWorkMs": 24.14557843997217,
+        "requestedTicks": 8102,
+        "executedTicks": 6947
+      },
+      {
+        "name": "ab-sustained-3-cand-a196e40f",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "a196e40f511a33875f0c17925dcbf91bf9b65e10",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "7bb16c35621c7a70027db1a3d8530d27d859f2f5896df583fb35c042b27bc555",
+        "samplesSha256": "1bd280fb6d1ce0cf8eb49325e250cd251f28bc5da002488bbdf246572375570d",
+        "sampleCount": 4746,
+        "durationMs": 120045.67500000028,
+        "callbackFps": 39.53501952218598,
+        "onePercentLow": 7.951179756298377,
+        "simulationRatio": 0.8678178349847051,
+        "gate": false,
+        "longStalls": 127,
+        "worstMs": 1100.5649999999441,
+        "callbackWorkMs": 23.218194268859516,
+        "requestedTicks": 8101,
+        "executedTicks": 7032
+      },
+      {
+        "name": "ab-sustained-4-base-32c0f11b",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "db326942f35fe44216baff5821bab2d46c5b667dae683ee3d5b63bc34dc1485e",
+        "samplesSha256": "d74216f2b21da9b38872f72deae8fba2dfc043d72de320dc22e530a3f60a9cbc",
+        "sampleCount": 4532,
+        "durationMs": 120041.61499999976,
+        "callbackFps": 37.75363222514103,
+        "onePercentLow": 6.948934396015558,
+        "simulationRatio": 0.8508160551933056,
+        "gate": false,
+        "longStalls": 162,
+        "worstMs": 1289.2900000000373,
+        "callbackWorkMs": 24.35314651368624,
+        "requestedTicks": 8101,
+        "executedTicks": 6894
+      },
+      {
+        "name": "ab-v3-ra2dense-1-cand-8db5523e",
+        "status": "COMPLETE",
+        "edition": "ra2",
+        "scene": "dense",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad",
+        "map": "64674a3d16a321207b1edb6e223ca87690d50ee0e293aea0c56de5b1f9b98aa4",
+        "placements": "1bdbe49448fbe42f45a061b1db7cc4b681b5daca1c41fda873e82cbf561aaf81",
+        "reportSha256": "c7ab418cb81d47db3073fc859dc46d71904a2a78c228d46193772a10672282c0",
+        "samplesSha256": "fe9982c8af38472698b774f2cca472705ed98513351f96cd8990076aa56dcc63",
+        "sampleCount": 8220,
+        "durationMs": 120016.5549999997,
+        "callbackFps": 68.49063105242726,
+        "onePercentLow": 11.89040201018801,
+        "simulationRatio": 0.9290076381237287,
+        "gate": false,
+        "longStalls": 78,
+        "worstMs": 1023.8899999996647,
+        "callbackWorkMs": 13.974649026758126,
+        "requestedTicks": 8100,
+        "executedTicks": 7526
+      },
+      {
+        "name": "ab-v3-sustained-1-cand-8db5523e",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "995811656f06ba343832778d3b4c3bd689a820c9543e5096aafe9a52b5436d30",
+        "samplesSha256": "31ebb63b6ec3ac0cd3f154e8d192a13ffb20117786df50756480148ba4445969",
+        "sampleCount": 4755,
+        "durationMs": 120023.27500000037,
+        "callbackFps": 39.61738520841793,
+        "onePercentLow": 8.169913781873648,
+        "simulationRatio": 0.870695318917963,
+        "gate": false,
+        "longStalls": 124,
+        "worstMs": 1088.6749999998137,
+        "callbackWorkMs": 23.151157728709148,
+        "requestedTicks": 8100,
+        "executedTicks": 7054
+      },
+      {
+        "name": "ab-v3-sustained-2-base-32c0f11b",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "9b05c8bbaf5fbcdf1cf8185e52cf366f1830d5447572a3c99169bb1f320dc8a8",
+        "samplesSha256": "80c7f8a6cc803a0240b87d5081b69ae533431563cf234df4a3c751f66b3eb00c",
+        "sampleCount": 4647,
+        "durationMs": 120028.19000000041,
+        "callbackFps": 38.71596143616982,
+        "onePercentLow": 7.289014060040171,
+        "simulationRatio": 0.8583168855768122,
+        "gate": false,
+        "longStalls": 154,
+        "worstMs": 1284.7050000000745,
+        "callbackWorkMs": 23.725445448679675,
+        "requestedTicks": 8100,
+        "executedTicks": 6954
+      },
+      {
+        "name": "ab-v3-sustained-3-cand-8db5523e",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "fa2fd2a90f20b5543387440060f915d451a3a3b8db8c432bd2055433c7d26ae5",
+        "samplesSha256": "a7a160635726344778d09f966eb3665135797190dce18a545a37fe8200910117",
+        "sampleCount": 4694,
+        "durationMs": 120105.06500000041,
+        "callbackFps": 39.082513435238376,
+        "onePercentLow": 7.953941601142208,
+        "simulationRatio": 0.8654151324987034,
+        "gate": false,
+        "longStalls": 138,
+        "worstMs": 1091.9599999999627,
+        "callbackWorkMs": 23.469594162758273,
+        "requestedTicks": 8103,
+        "executedTicks": 7016
+      },
+      {
+        "name": "ab-v3-yroverload-1-cand-8db5523e",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "overload",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "735213c7c275460903be86de49d85640ef5b2604579fe5286d97c77b743c6aa3",
+        "reportSha256": "4880355b225900ade698b3142d5ca223aa5be04a7c7b272bf5d677b7cc3ecfa8",
+        "samplesSha256": "2b012153a625169aaa84b56850db8d4340ff3f4cda958bee51027dd79d370b7b",
+        "sampleCount": 3737,
+        "durationMs": 120023.16999999993,
+        "callbackFps": 31.13570417931621,
+        "onePercentLow": 5.230161515643205,
+        "simulationRatio": 0.6711049887129977,
+        "gate": false,
+        "longStalls": 699,
+        "worstMs": 1302.5750000001863,
+        "callbackWorkMs": 30.51292614397738,
+        "requestedTicks": 8100,
+        "executedTicks": 5437
+      },
+      {
+        "name": "ra2-dense-measure-2026-11-13T02-40-47-368Z",
+        "status": "COMPLETE",
+        "edition": "ra2",
+        "scene": "dense",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "64674a3d16a321207b1edb6e223ca87690d50ee0e293aea0c56de5b1f9b98aa4",
+        "placements": "1bdbe49448fbe42f45a061b1db7cc4b681b5daca1c41fda873e82cbf561aaf81",
+        "reportSha256": "b6c4b32fda06fadcfe2a876369e813cff82585f525584862f90b607bc4abff0b",
+        "samplesSha256": "975aab037532e6dd0adf3d0cc13a9fcd6ab4802de582a9a34bf5394f2dfa5df1",
+        "sampleCount": 5737,
+        "durationMs": 120027.23999999999,
+        "callbackFps": 47.79754702022241,
+        "onePercentLow": 8.197555432435555,
+        "simulationRatio": 0.8754802783224999,
+        "gate": false,
+        "longStalls": 183,
+        "worstMs": 1253.9500000000698,
+        "callbackWorkMs": 20.052973679622955,
+        "requestedTicks": 8101,
+        "executedTicks": 7093
+      },
+      {
+        "name": "yr-overload-measure-2026-11-13T02-43-44-183Z",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "overload",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "735213c7c275460903be86de49d85640ef5b2604579fe5286d97c77b743c6aa3",
+        "reportSha256": "01858edcf92895397813ca907751d6f0a5b68d7693dfc1a9465ecd8fc0576d98",
+        "samplesSha256": "6d5f62896d0f7e491d0242a306374b3e61e8094a26295e2cd7d4df77324648d4",
+        "sampleCount": 2717,
+        "durationMs": 120028.56999999983,
+        "callbackFps": 22.63631506451352,
+        "onePercentLow": 3.355208091803245,
+        "simulationRatio": 0.5375263449237011,
+        "gate": false,
+        "longStalls": 1011,
+        "worstMs": 2095.5999999998603,
+        "callbackWorkMs": 41.918774383511334,
+        "requestedTicks": 8100,
+        "executedTicks": 4355
+      },
+      {
+        "name": "yr-sustained-measure-2026-11-13T02-37-38-196Z",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": true,
+        "phase": "measure",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "a1f42faa2a14f88a6386fb6cc33ccdcc74a12c425c8491a37fd4f9ad59e5102a",
+        "samplesSha256": "48e1506dde589690e5a4390b5ac20533cd3ba99cf07d64592fc9cc791382eed2",
+        "sampleCount": 3541,
+        "durationMs": 120064.45000000007,
+        "callbackFps": 29.492581836917246,
+        "onePercentLow": 5.108350237006396,
+        "simulationRatio": 0.7344203698744943,
+        "gate": false,
+        "longStalls": 467,
+        "worstMs": 1474.5800000000745,
+        "callbackWorkMs": 31.009343405817752,
+        "requestedTicks": 8100,
+        "executedTicks": 5952
+      }
+    ],
+    "diagnostics": [
+      {
+        "name": "ab-diag-density0-1-cand-8db5523e",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 0,
+        "formal": false,
+        "phase": "explore",
+        "source": "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "e03bb6f59962e57dc80aefe6a5ac1c6b27ee13faf824a9f64a3b2ae496a5b1e6",
+        "samplesSha256": "11842cf06403da2c272ec060860ab7fc1269af97711306c517b99e6fc6f8e7cd",
+        "sampleCount": 10496,
+        "durationMs": 120014.13499999978,
+        "callbackFps": 87.45647434338565,
+        "onePercentLow": 16.412019850740716,
+        "simulationRatio": 0.9571712038259017,
+        "gate": false,
+        "longStalls": 25,
+        "worstMs": 1060.1500000003725,
+        "callbackWorkMs": 11.132816787351103,
+        "requestedTicks": 8100,
+        "executedTicks": 7754
+      },
+      {
+        "name": "ab-diag-density2-1-cand-8db5523e",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 2,
+        "formal": false,
+        "phase": "explore",
+        "source": "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "708f0d3b9dd0e05ba55992370fea4e6abe0ba7fdb8d6d9ba9b94bf66c6cea8a7",
+        "samplesSha256": "cd41cf403d51482a149a59cdc78a505b71382480bfc423883f1c1b55cd0045a9",
+        "sampleCount": 4873,
+        "durationMs": 120050.9450000003,
+        "callbackFps": 40.59117679594069,
+        "onePercentLow": 7.848859792933889,
+        "simulationRatio": 0.8711116582862177,
+        "gate": false,
+        "longStalls": 129,
+        "worstMs": 1071.9850000003353,
+        "callbackWorkMs": 23.244550584856917,
+        "requestedTicks": 8101,
+        "executedTicks": 7059
+      },
+      {
+        "name": "ab-final-draws-1-cand-a196e40f",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": false,
+        "phase": "explore",
+        "source": "a196e40f511a33875f0c17925dcbf91bf9b65e10",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "b83e389e8be3b891094f7b2f032ee3235b5964da07e9953087d8ed36bd15cafb",
+        "samplesSha256": "8a090a38645685a36f70dc3618eb9babc49029a73d831ccf90503a0262de0f35",
+        "sampleCount": 557,
+        "durationMs": 25042.24500000011,
+        "callbackFps": 22.245688250442882,
+        "onePercentLow": 2.79651181759373,
+        "simulationRatio": 0.6667252195758097,
+        "gate": false,
+        "longStalls": 80,
+        "worstMs": 1091.2099999999627,
+        "callbackWorkMs": 40.58440754038768,
+        "requestedTicks": 1687,
+        "executedTicks": 1127
+      },
+      {
+        "name": "ab-final-pixels2x-1-cand-a196e40f",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "dense",
+        "density": 2,
+        "formal": false,
+        "phase": "explore",
+        "source": "a196e40f511a33875f0c17925dcbf91bf9b65e10",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "22dab4ffb2143bab7019113707b46a849b1be801b6df200800c64cdfd3d05488",
+        "pixels": [
+          {
+            "label": "center",
+            "sha256": "36f10bc24223eb23abada542423303f564afd19d85608ffbcc3dc6708c4d98bc",
+            "hdVehicles": 177
+          },
+          {
+            "label": "leave",
+            "sha256": "02791ce54515eafecd8d6d5c49c5c92ce51811fd7679bbeded7f18420cd5760e",
+            "hdVehicles": 210
+          },
+          {
+            "label": "reenter",
+            "sha256": "bdc2be9e219c1b31ac4e8d6291595af35a127acab7a85e7b1dd55ee3c157628a",
+            "hdVehicles": 210
+          },
+          {
+            "label": "opposite",
+            "sha256": "8f4d287c5352b4e3f2c083c99791072ae0e9fe5d956c0f3325e79c631bacfba8",
+            "hdVehicles": 215
+          }
+        ]
+      },
+      {
+        "name": "ab-final-pixels4x-1-cand-a196e40f",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "dense",
+        "density": 4,
+        "formal": false,
+        "phase": "explore",
+        "source": "a196e40f511a33875f0c17925dcbf91bf9b65e10",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "9a22903bfbe5969c76166d3ecdb28b57389d5e372bed581a0c6abf9fa223e970",
+        "pixels": [
+          {
+            "label": "center",
+            "sha256": "57425bba3eda535b1f6c9f1aa4382f7bfb85321d21fdc3270deb653c84f1ebd6",
+            "hdVehicles": 177
+          },
+          {
+            "label": "leave",
+            "sha256": "343a3b27d8b3d9809fdf94467c4caeb5fdb600dbfb0562905380b4526ad3aa1c",
+            "hdVehicles": 210
+          },
+          {
+            "label": "reenter",
+            "sha256": "d081c866085407e91dd08d9a1a98d6bcd93146ced77e475a8be832c1f6bfca61",
+            "hdVehicles": 210
+          },
+          {
+            "label": "opposite",
+            "sha256": "56afca460c9c421f4405e7540d8a4c8dbcc28c19ebe0f95bfc54e8c47091a871",
+            "hdVehicles": 215
+          }
+        ]
+      },
+      {
+        "name": "ab-final-pixels4x-repeat-1-cand-a196e40f",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "dense",
+        "density": 4,
+        "formal": false,
+        "phase": "explore",
+        "source": "a196e40f511a33875f0c17925dcbf91bf9b65e10",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "9cd78405d1bb98c99acfec02d69f90e2772797834051c4b8baef396500aa1b9a",
+        "pixels": [
+          {
+            "label": "center",
+            "sha256": "3f379dcca7847b20346cdd166eb723da1508abd8df3bb7852cf86d3af8d60775",
+            "hdVehicles": 177
+          },
+          {
+            "label": "leave",
+            "sha256": "343a3b27d8b3d9809fdf94467c4caeb5fdb600dbfb0562905380b4526ad3aa1c",
+            "hdVehicles": 210
+          },
+          {
+            "label": "reenter",
+            "sha256": "a948b7cc1231df7339eeae2c5b1641661acba3f5312d3f4b9fbca4931ba47dab",
+            "hdVehicles": 210
+          },
+          {
+            "label": "opposite",
+            "sha256": "3f428f0edcdccc60cc39ccb9c185be4457b9540c803e3673daedcfa477d35a66",
+            "hdVehicles": 215
+          }
+        ]
+      },
+      {
+        "name": "ab-final-profile-1-cand-a196e40f",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": false,
+        "phase": "profile",
+        "source": "a196e40f511a33875f0c17925dcbf91bf9b65e10",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "d32fa4f022c0fdd6bc45ccd848c4bc17dd4c300313ef54f6cb469f39159b5cc8",
+        "samplesSha256": "6b8e4c0fede5be9a88e4d80a2c73732d7fc7cc219138bde38dba71dcb9be2836",
+        "sampleCount": 511,
+        "durationMs": 25054.90500000026,
+        "callbackFps": 20.39544004259485,
+        "onePercentLow": 2.519404664677599,
+        "simulationRatio": 0.5747377609294407,
+        "gate": false,
+        "longStalls": 104,
+        "worstMs": 1187.625,
+        "callbackWorkMs": 44.22714285715347,
+        "requestedTicks": 1688,
+        "executedTicks": 972
+      },
+      {
+        "name": "ab-pixels2x-1-base-32c0f11b",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "dense",
+        "density": 2,
+        "formal": false,
+        "phase": "explore",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "a5a05cc0b765c7ef67128cf375286faaf64bb587b7f610f64e2f28e57ffe110c",
+        "pixels": [
+          {
+            "label": "center",
+            "sha256": "36f10bc24223eb23abada542423303f564afd19d85608ffbcc3dc6708c4d98bc",
+            "hdVehicles": 177
+          },
+          {
+            "label": "leave",
+            "sha256": "02791ce54515eafecd8d6d5c49c5c92ce51811fd7679bbeded7f18420cd5760e",
+            "hdVehicles": 210
+          },
+          {
+            "label": "reenter",
+            "sha256": "bdc2be9e219c1b31ac4e8d6291595af35a127acab7a85e7b1dd55ee3c157628a",
+            "hdVehicles": 210
+          },
+          {
+            "label": "opposite",
+            "sha256": "8f4d287c5352b4e3f2c083c99791072ae0e9fe5d956c0f3325e79c631bacfba8",
+            "hdVehicles": 215
+          }
+        ]
+      },
+      {
+        "name": "ab-pixels2x-2-cand-05421e83",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "dense",
+        "density": 2,
+        "formal": false,
+        "phase": "explore",
+        "source": "05421e83588e419c782990a17d76a20c30c940fd",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "e773bfe821a3024a7ea50543a8e1938e9f31a7dd49a17808df8c29762f47eea4",
+        "pixels": [
+          {
+            "label": "center",
+            "sha256": "36f10bc24223eb23abada542423303f564afd19d85608ffbcc3dc6708c4d98bc",
+            "hdVehicles": 177
+          },
+          {
+            "label": "leave",
+            "sha256": "02791ce54515eafecd8d6d5c49c5c92ce51811fd7679bbeded7f18420cd5760e",
+            "hdVehicles": 210
+          },
+          {
+            "label": "reenter",
+            "sha256": "bdc2be9e219c1b31ac4e8d6291595af35a127acab7a85e7b1dd55ee3c157628a",
+            "hdVehicles": 210
+          },
+          {
+            "label": "opposite",
+            "sha256": "8f4d287c5352b4e3f2c083c99791072ae0e9fe5d956c0f3325e79c631bacfba8",
+            "hdVehicles": 215
+          }
+        ]
+      },
+      {
+        "name": "ab-pixels4x-1-base-32c0f11b",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "dense",
+        "density": 4,
+        "formal": false,
+        "phase": "explore",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "d9b6699a4d7448e8ce835fd764f7d698a17da7eda0966fdfe8809e0835c56add",
+        "pixels": [
+          {
+            "label": "center",
+            "sha256": "57425bba3eda535b1f6c9f1aa4382f7bfb85321d21fdc3270deb653c84f1ebd6",
+            "hdVehicles": 177
+          },
+          {
+            "label": "leave",
+            "sha256": "343a3b27d8b3d9809fdf94467c4caeb5fdb600dbfb0562905380b4526ad3aa1c",
+            "hdVehicles": 210
+          },
+          {
+            "label": "reenter",
+            "sha256": "5d4b725ae2607ff3075867dcf158919db466cd3e69aab20b3f108b3fc8517b4e",
+            "hdVehicles": 210
+          },
+          {
+            "label": "opposite",
+            "sha256": "3f428f0edcdccc60cc39ccb9c185be4457b9540c803e3673daedcfa477d35a66",
+            "hdVehicles": 215
+          }
+        ]
+      },
+      {
+        "name": "ab-pixels4x-2-cand-05421e83",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "dense",
+        "density": 4,
+        "formal": false,
+        "phase": "explore",
+        "source": "05421e83588e419c782990a17d76a20c30c940fd",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "49de4aafbe65518b73bafcdf0fc77fa9874e50da722598d058e386ef7e46a2c7",
+        "pixels": [
+          {
+            "label": "center",
+            "sha256": "57425bba3eda535b1f6c9f1aa4382f7bfb85321d21fdc3270deb653c84f1ebd6",
+            "hdVehicles": 177
+          },
+          {
+            "label": "leave",
+            "sha256": "343a3b27d8b3d9809fdf94467c4caeb5fdb600dbfb0562905380b4526ad3aa1c",
+            "hdVehicles": 210
+          },
+          {
+            "label": "reenter",
+            "sha256": "5d4b725ae2607ff3075867dcf158919db466cd3e69aab20b3f108b3fc8517b4e",
+            "hdVehicles": 210
+          },
+          {
+            "label": "opposite",
+            "sha256": "3f428f0edcdccc60cc39ccb9c185be4457b9540c803e3673daedcfa477d35a66",
+            "hdVehicles": 215
+          }
+        ]
+      },
+      {
+        "name": "ab-v3-draws-1-cand-8db5523e",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": false,
+        "phase": "explore",
+        "source": "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "fde7b0a8547754a3751a6122db6d029dce923942a08b9edb64fb1c21e9c68a71",
+        "samplesSha256": "578b644c18aa846cc0e1bf599acd8066ce33f1bc0d90d32b6667c0b02107426d",
+        "sampleCount": 572,
+        "durationMs": 25068.929999999702,
+        "callbackFps": 22.817348125516514,
+        "onePercentLow": 2.7079722703631774,
+        "simulationRatio": 0.6731070721436565,
+        "gate": false,
+        "longStalls": 59,
+        "worstMs": 1117.6699999999255,
+        "callbackWorkMs": 39.50405594407926,
+        "requestedTicks": 1690,
+        "executedTicks": 1139
+      },
+      {
+        "name": "ab-v3-pixels2x-1-cand-8db5523e",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "dense",
+        "density": 2,
+        "formal": false,
+        "phase": "explore",
+        "source": "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "13103567032f90dace21447295b2ffcb9a7c5a455d7edba6c66c883c615bc189",
+        "pixels": [
+          {
+            "label": "center",
+            "sha256": "36f10bc24223eb23abada542423303f564afd19d85608ffbcc3dc6708c4d98bc",
+            "hdVehicles": 177
+          },
+          {
+            "label": "leave",
+            "sha256": "02791ce54515eafecd8d6d5c49c5c92ce51811fd7679bbeded7f18420cd5760e",
+            "hdVehicles": 210
+          },
+          {
+            "label": "reenter",
+            "sha256": "bdc2be9e219c1b31ac4e8d6291595af35a127acab7a85e7b1dd55ee3c157628a",
+            "hdVehicles": 210
+          },
+          {
+            "label": "opposite",
+            "sha256": "8f4d287c5352b4e3f2c083c99791072ae0e9fe5d956c0f3325e79c631bacfba8",
+            "hdVehicles": 215
+          }
+        ]
+      },
+      {
+        "name": "ab-v3-pixels4x-1-cand-8db5523e",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "dense",
+        "density": 4,
+        "formal": false,
+        "phase": "explore",
+        "source": "8db5523e5b387a816ad50170a0a2cfa1e6ed72ad",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "b02a690b88a9b335d1ccc78e8da697016b0897011b144dc79a738d1526c8ea6a",
+        "pixels": [
+          {
+            "label": "center",
+            "sha256": "57425bba3eda535b1f6c9f1aa4382f7bfb85321d21fdc3270deb653c84f1ebd6",
+            "hdVehicles": 177
+          },
+          {
+            "label": "leave",
+            "sha256": "343a3b27d8b3d9809fdf94467c4caeb5fdb600dbfb0562905380b4526ad3aa1c",
+            "hdVehicles": 210
+          },
+          {
+            "label": "reenter",
+            "sha256": "5d4b725ae2607ff3075867dcf158919db466cd3e69aab20b3f108b3fc8517b4e",
+            "hdVehicles": 210
+          },
+          {
+            "label": "opposite",
+            "sha256": "3f428f0edcdccc60cc39ccb9c185be4457b9540c803e3673daedcfa477d35a66",
+            "hdVehicles": 215
+          }
+        ]
+      },
+      {
+        "name": "diag-draws-yr-sustained-20261112185101",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": false,
+        "phase": "explore",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "fdd6538b174e671e3b129173ca17fd44db6f2b61747b75b4c6225491bed3f7e3",
+        "samplesSha256": "d8af5ba97e5b82f395bedf534fb7179605e0c00ab7288933cc09d8e30ab7452d",
+        "sampleCount": 473,
+        "durationMs": 25063.24499999988,
+        "callbackFps": 18.872479097632198,
+        "onePercentLow": 1.6697334103637067,
+        "simulationRatio": 0.516618983222173,
+        "gate": false,
+        "longStalls": 122,
+        "worstMs": 1461.0200000000186,
+        "callbackWorkMs": 47.77447145877418,
+        "requestedTicks": 1689,
+        "executedTicks": 874
+      },
+      {
+        "name": "diag-draws2-yr-sustained-20261112185318",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": false,
+        "phase": "explore",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "093230ebdceba77f4b4ad0ae5b743906b883179e93ba342e504e5d284602af0a",
+        "samplesSha256": "744fefdaf29b21cc7d38d29905bd14e3a421f33ded2bbdc68d9a5150812d604e",
+        "sampleCount": 502,
+        "durationMs": 25053.01000000001,
+        "callbackFps": 20.037752402833895,
+        "onePercentLow": 2.047872431199941,
+        "simulationRatio": 0.5730072177177733,
+        "gate": false,
+        "longStalls": 106,
+        "worstMs": 1331.1749999998137,
+        "callbackWorkMs": 45.305358565746864,
+        "requestedTicks": 1688,
+        "executedTicks": 969
+      },
+      {
+        "name": "diag-draws3-yr-sustained-20261112190154",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": false,
+        "phase": "explore",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "0b8fd6bf4d11ce2d1ed6311af01ec4754e1e1b5d6f9c808bfd41e11b02639a96",
+        "samplesSha256": "d87933ca9b51dabc5277d25153f42bbfeeb7b1c921065fd10d7eb6128c37a13c",
+        "sampleCount": 427,
+        "durationMs": 25124.90500000026,
+        "callbackFps": 16.99531912293809,
+        "onePercentLow": 1.3743777504737336,
+        "simulationRatio": 0.41629049977538823,
+        "gate": false,
+        "longStalls": 151,
+        "worstMs": 1813.0049999998882,
+        "callbackWorkMs": 53.157423887579576,
+        "requestedTicks": 1693,
+        "executedTicks": 706
+      },
+      {
+        "name": "yr-sustained-profile-2026-11-13T02-47-01-060Z",
+        "status": "COMPLETE",
+        "edition": "yr",
+        "scene": "sustained",
+        "density": 4,
+        "formal": false,
+        "phase": "profile",
+        "source": "32c0f11b4118a0f0dac091afff909cc3ec17afaa",
+        "map": "75b4de164c19e39a040285ff0dd0db983ae88f7f750da02e2a2b407832f33146",
+        "placements": "631ab2bb307d6cb1b4a9949d932f4ad40b22dc37537a22607339d1c7c7c74765",
+        "reportSha256": "1580be700bc6c450727e193797b03ef02292936b2e4ea8f72e8032871041bd09",
+        "samplesSha256": "148ad9cd901bdedca724bf56ef36966f642db3d6a5a4ef075eb3ebd33d345e0b",
+        "sampleCount": 468,
+        "durationMs": 25077.57999999984,
+        "callbackFps": 18.66226641262601,
+        "onePercentLow": 1.7513288207428244,
+        "simulationRatio": 0.4897394996439672,
+        "gate": false,
+        "longStalls": 126,
+        "worstMs": 1372.4749999998603,
+        "callbackWorkMs": 48.7098611111088,
+        "requestedTicks": 1689,
+        "executedTicks": 829
+      }
+    ],
+    "regressionReceipts": [
+      {
+        "name": "regressions-baseline-32c0f11b-ra2-media",
+        "status": "FAIL",
+        "phase": "hd-premission-opening-and-skip"
+      },
+      {
+        "name": "regressions-final-8db5523",
+        "status": "FAIL"
+      },
+      {
+        "name": "regressions-final-8db5523-rerun-ra2-media-save-restart",
+        "status": "PASS_NATIVE_HD_OPENING_RADAR_SAVE_RESTART_FALLBACK_AND_RELEASE",
+        "phase": "normal-mission-exit-and-release"
+      },
+      {
+        "name": "regressions-final-8db5523-rerun-yr-media-save-restart",
+        "status": "PASS_NATIVE_HD_OPENING_RADAR_SAVE_RESTART_FALLBACK_AND_RELEASE",
+        "phase": "normal-mission-exit-and-release"
+      }
+    ],
+    "pixels": {
+      "controls": 8,
+      "status": "PASS_EXACT_RGBA",
+      "pngFilesIncluded": false
+    },
+    "host": {
+      "executions": 328,
+      "counts": {
+        "pass": 1642,
+        "failedCases": 294,
+        "loadErrors": 31,
+        "skipped": 0,
+        "processErrors": 0
+      },
+      "acceptance": "NOT_PASSING",
+      "failingFilesCompared": 75,
+      "identicalCounts": 74,
+      "differing": [
+        {
+          "file": "scripts/yr-campaign/castle-collapse.test.ts",
+          "edition": "yr",
+          "candidate": {
+            "pass": 0,
+            "failedCases": 3,
+            "loadErrors": 0
+          },
+          "baseline": {
+            "pass": 0,
+            "failedCases": 0,
+            "loadErrors": 1,
+            "exitCode": 1
+          },
+          "same": false
+        }
+      ]
+    },
+    "qualification": "Independent receipt recomputation and source review; no new native Windows execution."
+  },
+  "returnedNativeRegressions": [
+    {
+      "case": "edition-menu",
+      "initial": "PASS_NATIVE_EDITION_MENU_LOGO_REPLACEMENT_RADAR_FALLBACK_EXPORTS_VERSION_AND_LIFECYCLE",
+      "receiptSha256": "623918279f66dd9b6767fabb82b98999af0798897653ee3993c1efd3124858d3",
+      "error": null
+    },
+    {
+      "case": "ra2-media-save-restart",
+      "initial": "FAIL",
+      "receiptSha256": "f99edffdce400908ab1c09d80276479a868d27b378b5febe4d2f7969632b5937",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   1707.3333740234375,\n+   1067.3333740234375\n-   1707,\n-   1067\n  ]\n\n    at file:///D:/Games/YR/RA2-HD-M4.2-Windows-20261112/source/scripts/hd-movies/native-playback.mjs:98:12"
+    },
+    {
+      "case": "yr-media-save-restart",
+      "initial": "FAIL",
+      "receiptSha256": "ee03640f97ee6e3c52e7c6916b5e3157644e57546775aa7a8ad7e2a8d2f4a0f9",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   1707.3333740234375,\n+   1067.3333740234375\n-   1707,\n-   1067\n  ]\n\n    at file:///D:/Games/YR/RA2-HD-M4.2-Windows-20261112/source/scripts/hd-movies/native-playback.mjs:98:12"
+    },
+    {
+      "case": "ra2-victory-next",
+      "initial": "PASS_SOURCE_ENDING_REPORT_DRAINS_BEFORE_SCORE_AND_CONTINUE_WITHOUT_SELECTION_FLASH",
+      "receiptSha256": "6822e25a0d6fd32dd2181042150b1b85a0bb133a1f3dc2a179aade6d6ce8320e",
+      "error": null
+    },
+    {
+      "case": "ra2-media-save-restart",
+      "rerun": "PASS_NATIVE_HD_OPENING_RADAR_SAVE_RESTART_FALLBACK_AND_RELEASE",
+      "receiptSha256": "1590fdb15cf069ebf5f71681ce7034f5b26a4fcce56cb27013b5de8d32d1e8a5",
+      "viewport": {
+        "viewport": [
+          1707.3333740234375,
+          1067.3333740234375
+        ],
+        "roundedViewport": [
+          1707,
+          1067
+        ],
+        "holder": [
+          1707.3333740234375,
+          1067.3333740234375
+        ],
+        "fit": "contain",
+        "time": 1.124235,
+        "width": 1440,
+        "height": 1080
+      }
+    },
+    {
+      "case": "yr-media-save-restart",
+      "rerun": "PASS_NATIVE_HD_OPENING_RADAR_SAVE_RESTART_FALLBACK_AND_RELEASE",
+      "receiptSha256": "80485d0ff9b508a5eddee3cd3ff3b70d63f79e470ae96f9553d9c9f99c34f67e",
+      "viewport": {
+        "viewport": [
+          1707.3333740234375,
+          1067.3333740234375
+        ],
+        "roundedViewport": [
+          1707,
+          1067
+        ],
+        "holder": [
+          1707.3333740234375,
+          1067.3333740234375
+        ],
+        "fit": "contain",
+        "time": 1.114953,
+        "width": 1440,
+        "height": 1080
+      }
+    }
+  ],
+  "mac": {
+    "hostExecutions": 328,
+    "hostCounts": {
+      "pass": 2166,
+      "failedCases": 0,
+      "loadErrors": 0,
+      "skipped": 0,
+      "processErrors": 0
+    },
+    "hostAcceptance": "HOST_TESTS_PASS_NATIVE_RUNTIME_NOT_RUN",
+    "typecheck": "PASS",
+    "productionBuild": "PASS",
+    "pixels": {
+      "schema": "m4-2-pixel-parity-v1",
+      "status": "PASS_EXACT_RGBA",
+      "rows": [
+        {
+          "density": 4,
+          "label": "center",
+          "tick": 0,
+          "bytes": 33177600,
+          "baselineHead": null,
+          "candidateHead": null,
+          "baselineSha256": "66f32099cf40673ae3f08d0bfb0cba6ec9dbe2df750e6f8ba9eb17b060c13205",
+          "candidateSha256": "66f32099cf40673ae3f08d0bfb0cba6ec9dbe2df750e6f8ba9eb17b060c13205",
+          "identical": true,
+          "repeatedIdentical": true,
+          "hdVehicles": [
+            192,
+            192
+          ],
+          "cameraMatch": true,
+          "baseline": "mac-baseline-pixels4x",
+          "candidate": "mac-integrated-pixels4x"
+        },
+        {
+          "density": 4,
+          "label": "leave",
+          "tick": 0,
+          "bytes": 33177600,
+          "baselineHead": null,
+          "candidateHead": null,
+          "baselineSha256": "21f16c7d2884ff4ba5f0df377369af50596cc0c7f255fcef8d01056d7af47a5c",
+          "candidateSha256": "21f16c7d2884ff4ba5f0df377369af50596cc0c7f255fcef8d01056d7af47a5c",
+          "identical": true,
+          "repeatedIdentical": true,
+          "hdVehicles": [
+            215,
+            215
+          ],
+          "cameraMatch": true,
+          "baseline": "mac-baseline-pixels4x",
+          "candidate": "mac-integrated-pixels4x"
+        },
+        {
+          "density": 4,
+          "label": "reenter",
+          "tick": 0,
+          "bytes": 33177600,
+          "baselineHead": null,
+          "candidateHead": null,
+          "baselineSha256": "31581bfe4aea69cac489f3aafb1520569098756f33dec4fec1130ba5a2cd24dc",
+          "candidateSha256": "31581bfe4aea69cac489f3aafb1520569098756f33dec4fec1130ba5a2cd24dc",
+          "identical": true,
+          "repeatedIdentical": true,
+          "hdVehicles": [
+            215,
+            215
+          ],
+          "cameraMatch": true,
+          "baseline": "mac-baseline-pixels4x",
+          "candidate": "mac-integrated-pixels4x"
+        },
+        {
+          "density": 4,
+          "label": "opposite",
+          "tick": 0,
+          "bytes": 33177600,
+          "baselineHead": null,
+          "candidateHead": null,
+          "baselineSha256": "571c74552482510a308962b2039f02a733fa53dd724c87d7f42cb8397a896f0c",
+          "candidateSha256": "571c74552482510a308962b2039f02a733fa53dd724c87d7f42cb8397a896f0c",
+          "identical": true,
+          "repeatedIdentical": true,
+          "hdVehicles": [
+            215,
+            215
+          ],
+          "cameraMatch": true,
+          "baseline": "mac-baseline-pixels4x",
+          "candidate": "mac-integrated-pixels4x"
+        },
+        {
+          "density": 2,
+          "label": "center",
+          "tick": 0,
+          "bytes": 33177600,
+          "baselineHead": null,
+          "candidateHead": null,
+          "baselineSha256": "9204c50df562ce50897eea48dae01b995193dfe11e1bcb3ef11dedeeaeeffaf7",
+          "candidateSha256": "9204c50df562ce50897eea48dae01b995193dfe11e1bcb3ef11dedeeaeeffaf7",
+          "identical": true,
+          "repeatedIdentical": true,
+          "hdVehicles": [
+            192,
+            192
+          ],
+          "cameraMatch": true,
+          "baseline": "mac-baseline-pixels2x",
+          "candidate": "mac-integrated-pixels2x"
+        },
+        {
+          "density": 2,
+          "label": "leave",
+          "tick": 0,
+          "bytes": 33177600,
+          "baselineHead": null,
+          "candidateHead": null,
+          "baselineSha256": "b53ce54cf6d7a298dc2a48da77de16e16f6369f9c984dc182151ef571189f52b",
+          "candidateSha256": "b53ce54cf6d7a298dc2a48da77de16e16f6369f9c984dc182151ef571189f52b",
+          "identical": true,
+          "repeatedIdentical": true,
+          "hdVehicles": [
+            215,
+            215
+          ],
+          "cameraMatch": true,
+          "baseline": "mac-baseline-pixels2x",
+          "candidate": "mac-integrated-pixels2x"
+        },
+        {
+          "density": 2,
+          "label": "reenter",
+          "tick": 0,
+          "bytes": 33177600,
+          "baselineHead": null,
+          "candidateHead": null,
+          "baselineSha256": "877014223351f72ca3faee78cd7397c8f4c8ae70a80c4f6b70c1f4065d994de9",
+          "candidateSha256": "877014223351f72ca3faee78cd7397c8f4c8ae70a80c4f6b70c1f4065d994de9",
+          "identical": true,
+          "repeatedIdentical": true,
+          "hdVehicles": [
+            215,
+            215
+          ],
+          "cameraMatch": true,
+          "baseline": "mac-baseline-pixels2x",
+          "candidate": "mac-integrated-pixels2x"
+        },
+        {
+          "density": 2,
+          "label": "opposite",
+          "tick": 0,
+          "bytes": 33177600,
+          "baselineHead": null,
+          "candidateHead": null,
+          "baselineSha256": "5069e9cec93a226adb434468d0e498520c6d552ee11bae3d6049b76e95bfe5de",
+          "candidateSha256": "5069e9cec93a226adb434468d0e498520c6d552ee11bae3d6049b76e95bfe5de",
+          "identical": true,
+          "repeatedIdentical": true,
+          "hdVehicles": [
+            215,
+            215
+          ],
+          "cameraMatch": true,
+          "baseline": "mac-baseline-pixels2x",
+          "candidate": "mac-integrated-pixels2x"
+        }
+      ]
+    },
+    "wav": {
+      "schema": "m4-wav-decode-equivalence-v1",
+      "root": "/Users/Aone/RA2remaster/ra2-hd/.local",
+      "editions": [
+        {
+          "edition": "ra2",
+          "files": 1153,
+          "imaMono": 1126,
+          "otherLayouts": 27,
+          "decodedBytes": 67037390,
+          "digest": "0da6db5ec69d181a9672555e62fce3ffa856d4c2fd44e2d4699901d4c95a0b89"
+        },
+        {
+          "edition": "yr",
+          "files": 2285,
+          "imaMono": 2192,
+          "otherLayouts": 93,
+          "decodedBytes": 137120478,
+          "digest": "091460060eb3075cb44791f09488fc0920f378818ccbb00460a9fed4c7188807"
+        }
+      ],
+      "synthetic": [
+        {
+          "label": "partial-final-block",
+          "bytes": 1000,
+          "blockAlign": 512,
+          "same": true
+        },
+        {
+          "label": "index-above-table",
+          "bytes": 64,
+          "blockAlign": 64,
+          "same": true
+        },
+        {
+          "label": "one-byte-tail",
+          "bytes": 513,
+          "blockAlign": 512,
+          "same": true
+        },
+        {
+          "label": "three-byte-tail",
+          "bytes": 515,
+          "blockAlign": 512,
+          "same": true
+        },
+        {
+          "label": "clamp-extremes",
+          "bytes": 408,
+          "blockAlign": 204,
+          "same": true
+        },
+        {
+          "label": "empty",
+          "bytes": 0,
+          "blockAlign": 512,
+          "same": true
+        }
+      ],
+      "mismatches": [],
+      "timing": {
+        "referenceMs": 3544.44195699999,
+        "fastMs": 1286.2868660000056,
+        "note": "Bun host timing over all retail sounds; not an in-game measurement."
+      },
+      "status": "PASS"
+    },
+    "nativeVxlWeld": {
+      "schema": "m4-native-weld-resources-v1",
+      "root": "/Users/Aone/RA2remaster/ra2-hd/.local",
+      "files": 123,
+      "sections": 134,
+      "builds": 268,
+      "vertices": 3921560,
+      "mismatches": [],
+      "outputDigest": "b9813e4f85e676cfcf62895c5a3be0624e33b2ad7cd50d1270edb06521203c3c",
+      "timing": {
+        "nativeMs": 1719.4920009999992,
+        "genericMs": 5706.313252999998,
+        "note": "Complete builder time including meshing; Bun host timing."
+      },
+      "status": "PASS"
+    },
+    "nativeRegressions": [
+      {
+        "case": "mac-edition-menu",
+        "status": "PASS_NATIVE_EDITION_MENU_LOGO_REPLACEMENT_RADAR_FALLBACK_EXPORTS_VERSION_AND_LIFECYCLE",
+        "report": ".artifacts/m4-3-windows-return-20261112/mac-edition-menu/report.json",
+        "sha256": "0bfeaa9a99c5db95a927d66158876f79931f13d86cf3625412c9f965254b7008",
+        "launch": "Current repository development entry; no --app argument",
+        "runtimeManifestSha256": "ee3ab3170763d64ea35f4dab907e792bf9dc35461b0712cd174edb209b94bf0b"
+      },
+      {
+        "case": "mac-ra2-media-save-restart",
+        "status": "PASS_NATIVE_HD_OPENING_RADAR_SAVE_RESTART_FALLBACK_AND_RELEASE",
+        "report": ".artifacts/m4-3-windows-return-20261112/mac-ra2-media-save-restart/report.json",
+        "sha256": "c554f69c5161570502beae2c8aa783ba47ba6289048469c339393ec887d93fe3",
+        "launch": "Current repository development entry; no --app argument",
+        "runtimeManifestSha256": "ee3ab3170763d64ea35f4dab907e792bf9dc35461b0712cd174edb209b94bf0b"
+      },
+      {
+        "case": "mac-yr-media-save-restart",
+        "status": "PASS_NATIVE_HD_OPENING_RADAR_SAVE_RESTART_FALLBACK_AND_RELEASE",
+        "report": ".artifacts/m4-3-windows-return-20261112/mac-yr-media-save-restart/report.json",
+        "sha256": "61c581c8cf2a5dc6eacd8b763f652d019169b2dad52a925384dcdeb33bc2d456",
+        "launch": "Current repository development entry; no --app argument",
+        "runtimeManifestSha256": "ee3ab3170763d64ea35f4dab907e792bf9dc35461b0712cd174edb209b94bf0b"
+      },
+      {
+        "case": "mac-ra2-victory-next",
+        "status": "PASS_SOURCE_ENDING_REPORT_DRAINS_BEFORE_SCORE_AND_CONTINUE_WITHOUT_SELECTION_FLASH",
+        "report": ".artifacts/m4-3-windows-return-20261112/mac-ra2-victory-next/report.json",
+        "sha256": "2451bc5efea6e1c0ecebe38f3d517fe84fe4ef2524ea572b4e002c1a3b4bdc0e",
+        "launch": "Current repository development entry; no --app argument",
+        "runtimeManifestSha256": "ee3ab3170763d64ea35f4dab907e792bf9dc35461b0712cd174edb209b94bf0b"
+      }
+    ],
+    "timing": [
+      {
+        "case": "mac-baseline-sustained",
+        "source": {
+          "packageSourceHead": null,
+          "sourceDigest": null,
+          "frozenManifest": {
+            "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-3-windows-return-20261112/baseline-runtime.json",
+            "sha256": "a78033228abf19c49164946c891aaec193d87b127eb435ba0349dad1a602790f",
+            "sourceHead": "f1e14096b8b60e062177750a31547d94e7fb5071",
+            "sourceDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "harnessHead": "f1e14096b8b60e062177750a31547d94e7fb5071"
+        },
+        "summary": {
+          "callbackFps": 52.69896139131148,
+          "onePercentLow": 14.301484226378415,
+          "frameMs": {
+            "n": 6324,
+            "mean": 18.975706040477505,
+            "p50": 17.28999999165535,
+            "p95": 29.350000023841858,
+            "p99": 38.67500001192093,
+            "max": 645.7799999713898
+          },
+          "perSecond": [
+            {
+              "second": 0,
+              "callbacks": 2
+            },
+            {
+              "second": 1,
+              "callbacks": 29
+            },
+            {
+              "second": 2,
+              "callbacks": 34
+            },
+            {
+              "second": 3,
+              "callbacks": 40
+            },
+            {
+              "second": 4,
+              "callbacks": 41
+            },
+            {
+              "second": 5,
+              "callbacks": 43
+            },
+            {
+              "second": 6,
+              "callbacks": 38
+            },
+            {
+              "second": 7,
+              "callbacks": 39
+            },
+            {
+              "second": 8,
+              "callbacks": 36
+            },
+            {
+              "second": 9,
+              "callbacks": 39
+            },
+            {
+              "second": 10,
+              "callbacks": 35
+            },
+            {
+              "second": 11,
+              "callbacks": 35
+            },
+            {
+              "second": 12,
+              "callbacks": 34
+            },
+            {
+              "second": 13,
+              "callbacks": 34
+            },
+            {
+              "second": 14,
+              "callbacks": 37
+            },
+            {
+              "second": 15,
+              "callbacks": 38
+            },
+            {
+              "second": 16,
+              "callbacks": 40
+            },
+            {
+              "second": 17,
+              "callbacks": 38
+            },
+            {
+              "second": 18,
+              "callbacks": 42
+            },
+            {
+              "second": 19,
+              "callbacks": 37
+            },
+            {
+              "second": 20,
+              "callbacks": 40
+            },
+            {
+              "second": 21,
+              "callbacks": 43
+            },
+            {
+              "second": 22,
+              "callbacks": 40
+            },
+            {
+              "second": 23,
+              "callbacks": 43
+            },
+            {
+              "second": 24,
+              "callbacks": 47
+            },
+            {
+              "second": 25,
+              "callbacks": 43
+            },
+            {
+              "second": 26,
+              "callbacks": 51
+            },
+            {
+              "second": 27,
+              "callbacks": 50
+            },
+            {
+              "second": 28,
+              "callbacks": 52
+            },
+            {
+              "second": 29,
+              "callbacks": 48
+            },
+            {
+              "second": 30,
+              "callbacks": 46
+            },
+            {
+              "second": 31,
+              "callbacks": 49
+            },
+            {
+              "second": 32,
+              "callbacks": 50
+            },
+            {
+              "second": 33,
+              "callbacks": 51
+            },
+            {
+              "second": 34,
+              "callbacks": 46
+            },
+            {
+              "second": 35,
+              "callbacks": 51
+            },
+            {
+              "second": 36,
+              "callbacks": 59
+            },
+            {
+              "second": 37,
+              "callbacks": 58
+            },
+            {
+              "second": 38,
+              "callbacks": 60
+            },
+            {
+              "second": 39,
+              "callbacks": 60
+            },
+            {
+              "second": 40,
+              "callbacks": 59
+            },
+            {
+              "second": 41,
+              "callbacks": 59
+            },
+            {
+              "second": 42,
+              "callbacks": 61
+            },
+            {
+              "second": 43,
+              "callbacks": 59
+            },
+            {
+              "second": 44,
+              "callbacks": 60
+            },
+            {
+              "second": 45,
+              "callbacks": 60
+            },
+            {
+              "second": 46,
+              "callbacks": 59
+            },
+            {
+              "second": 47,
+              "callbacks": 60
+            },
+            {
+              "second": 48,
+              "callbacks": 58
+            },
+            {
+              "second": 49,
+              "callbacks": 55
+            },
+            {
+              "second": 50,
+              "callbacks": 53
+            },
+            {
+              "second": 51,
+              "callbacks": 53
+            },
+            {
+              "second": 52,
+              "callbacks": 49
+            },
+            {
+              "second": 53,
+              "callbacks": 57
+            },
+            {
+              "second": 54,
+              "callbacks": 56
+            },
+            {
+              "second": 55,
+              "callbacks": 60
+            },
+            {
+              "second": 56,
+              "callbacks": 61
+            },
+            {
+              "second": 57,
+              "callbacks": 54
+            },
+            {
+              "second": 58,
+              "callbacks": 57
+            },
+            {
+              "second": 59,
+              "callbacks": 59
+            },
+            {
+              "second": 60,
+              "callbacks": 59
+            },
+            {
+              "second": 61,
+              "callbacks": 59
+            },
+            {
+              "second": 62,
+              "callbacks": 53
+            },
+            {
+              "second": 63,
+              "callbacks": 50
+            },
+            {
+              "second": 64,
+              "callbacks": 53
+            },
+            {
+              "second": 65,
+              "callbacks": 60
+            },
+            {
+              "second": 66,
+              "callbacks": 60
+            },
+            {
+              "second": 67,
+              "callbacks": 60
+            },
+            {
+              "second": 68,
+              "callbacks": 60
+            },
+            {
+              "second": 69,
+              "callbacks": 59
+            },
+            {
+              "second": 70,
+              "callbacks": 59
+            },
+            {
+              "second": 71,
+              "callbacks": 60
+            },
+            {
+              "second": 72,
+              "callbacks": 59
+            },
+            {
+              "second": 73,
+              "callbacks": 58
+            },
+            {
+              "second": 74,
+              "callbacks": 59
+            },
+            {
+              "second": 75,
+              "callbacks": 61
+            },
+            {
+              "second": 76,
+              "callbacks": 60
+            },
+            {
+              "second": 77,
+              "callbacks": 59
+            },
+            {
+              "second": 78,
+              "callbacks": 59
+            },
+            {
+              "second": 79,
+              "callbacks": 55
+            },
+            {
+              "second": 80,
+              "callbacks": 56
+            },
+            {
+              "second": 81,
+              "callbacks": 58
+            },
+            {
+              "second": 82,
+              "callbacks": 60
+            },
+            {
+              "second": 83,
+              "callbacks": 61
+            },
+            {
+              "second": 84,
+              "callbacks": 59
+            },
+            {
+              "second": 85,
+              "callbacks": 58
+            },
+            {
+              "second": 86,
+              "callbacks": 59
+            },
+            {
+              "second": 87,
+              "callbacks": 59
+            },
+            {
+              "second": 88,
+              "callbacks": 60
+            },
+            {
+              "second": 89,
+              "callbacks": 59
+            },
+            {
+              "second": 90,
+              "callbacks": 59
+            },
+            {
+              "second": 91,
+              "callbacks": 58
+            },
+            {
+              "second": 92,
+              "callbacks": 55
+            },
+            {
+              "second": 93,
+              "callbacks": 58
+            },
+            {
+              "second": 94,
+              "callbacks": 60
+            },
+            {
+              "second": 95,
+              "callbacks": 61
+            },
+            {
+              "second": 96,
+              "callbacks": 60
+            },
+            {
+              "second": 97,
+              "callbacks": 58
+            },
+            {
+              "second": 98,
+              "callbacks": 57
+            },
+            {
+              "second": 99,
+              "callbacks": 61
+            },
+            {
+              "second": 100,
+              "callbacks": 59
+            },
+            {
+              "second": 101,
+              "callbacks": 60
+            },
+            {
+              "second": 102,
+              "callbacks": 59
+            },
+            {
+              "second": 103,
+              "callbacks": 61
+            },
+            {
+              "second": 104,
+              "callbacks": 57
+            },
+            {
+              "second": 105,
+              "callbacks": 60
+            },
+            {
+              "second": 106,
+              "callbacks": 59
+            },
+            {
+              "second": 107,
+              "callbacks": 59
+            },
+            {
+              "second": 108,
+              "callbacks": 58
+            },
+            {
+              "second": 109,
+              "callbacks": 51
+            },
+            {
+              "second": 110,
+              "callbacks": 52
+            },
+            {
+              "second": 111,
+              "callbacks": 49
+            },
+            {
+              "second": 112,
+              "callbacks": 55
+            },
+            {
+              "second": 113,
+              "callbacks": 58
+            },
+            {
+              "second": 114,
+              "callbacks": 58
+            },
+            {
+              "second": 115,
+              "callbacks": 60
+            },
+            {
+              "second": 116,
+              "callbacks": 58
+            },
+            {
+              "second": 117,
+              "callbacks": 55
+            },
+            {
+              "second": 118,
+              "callbacks": 54
+            },
+            {
+              "second": 119,
+              "callbacks": 56
+            }
+          ],
+          "below60TimeFraction": 0.6668930233180993,
+          "belowCadenceTimeFraction": 0.6274624670961294,
+          "continuousLowBins": [
+            {
+              "startSecond": 0,
+              "endSecond": 38,
+              "seconds": 38
+            },
+            {
+              "startSecond": 40,
+              "endSecond": 42,
+              "seconds": 2
+            },
+            {
+              "startSecond": 43,
+              "endSecond": 44,
+              "seconds": 1
+            },
+            {
+              "startSecond": 46,
+              "endSecond": 47,
+              "seconds": 1
+            },
+            {
+              "startSecond": 48,
+              "endSecond": 55,
+              "seconds": 7
+            },
+            {
+              "startSecond": 57,
+              "endSecond": 65,
+              "seconds": 8
+            },
+            {
+              "startSecond": 69,
+              "endSecond": 71,
+              "seconds": 2
+            },
+            {
+              "startSecond": 72,
+              "endSecond": 75,
+              "seconds": 3
+            },
+            {
+              "startSecond": 77,
+              "endSecond": 82,
+              "seconds": 5
+            },
+            {
+              "startSecond": 84,
+              "endSecond": 88,
+              "seconds": 4
+            },
+            {
+              "startSecond": 89,
+              "endSecond": 94,
+              "seconds": 5
+            },
+            {
+              "startSecond": 97,
+              "endSecond": 99,
+              "seconds": 2
+            },
+            {
+              "startSecond": 100,
+              "endSecond": 101,
+              "seconds": 1
+            },
+            {
+              "startSecond": 102,
+              "endSecond": 103,
+              "seconds": 1
+            },
+            {
+              "startSecond": 104,
+              "endSecond": 105,
+              "seconds": 1
+            },
+            {
+              "startSecond": 106,
+              "endSecond": 115,
+              "seconds": 9
+            },
+            {
+              "startSecond": 116,
+              "endSecond": 120,
+              "seconds": 4
+            }
+          ],
+          "longStalls": [
+            {
+              "atMs": 645.7799999713898,
+              "ms": 645.7799999713898,
+              "tick": 0
+            },
+            {
+              "atMs": 959.8449999988079,
+              "ms": 314.06500002741814,
+              "tick": 1
+            },
+            {
+              "atMs": 1041.2049999833107,
+              "ms": 81.35999998450279,
+              "tick": 2
+            },
+            {
+              "atMs": 1118.8149999976158,
+              "ms": 77.61000001430511,
+              "tick": 4
+            },
+            {
+              "atMs": 1294.0299999713898,
+              "ms": 93.46499997377396,
+              "tick": 9
+            },
+            {
+              "atMs": 2118.464999973774,
+              "ms": 143.42999997735023,
+              "tick": 54
+            },
+            {
+              "atMs": 2173.5549999773502,
+              "ms": 55.09000000357628,
+              "tick": 57
+            },
+            {
+              "atMs": 3721.869999974966,
+              "ms": 55.19499999284744,
+              "tick": 155
+            },
+            {
+              "atMs": 6645.434999972582,
+              "ms": 123.9699999988079,
+              "tick": 326
+            },
+            {
+              "atMs": 7412.0199999809265,
+              "ms": 72.16999998688698,
+              "tick": 373
+            },
+            {
+              "atMs": 8467.414999991655,
+              "ms": 111.4699999988079,
+              "tick": 434
+            },
+            {
+              "atMs": 8950.924999982119,
+              "ms": 68.88999998569489,
+              "tick": 462
+            },
+            {
+              "atMs": 13023.57999998331,
+              "ms": 115.81999999284744,
+              "tick": 704
+            },
+            {
+              "atMs": 13323.164999991655,
+              "ms": 61.064999997615814,
+              "tick": 722
+            },
+            {
+              "atMs": 13716.049999982119,
+              "ms": 82.18500000238419,
+              "tick": 746
+            },
+            {
+              "atMs": 20671.514999985695,
+              "ms": 75.45500001311302,
+              "tick": 1184
+            },
+            {
+              "atMs": 22518.149999976158,
+              "ms": 53.54999998211861,
+              "tick": 1303
+            },
+            {
+              "atMs": 22705.994999974966,
+              "ms": 74.875,
+              "tick": 1311
+            },
+            {
+              "atMs": 25308.414999991655,
+              "ms": 62.25499999523163,
+              "tick": 1472
+            },
+            {
+              "atMs": 63630.875,
+              "ms": 82.86000001430511,
+              "tick": 3988
+            },
+            {
+              "atMs": 79424.4849999845,
+              "ms": 56.08000001311302,
+              "tick": 5041
+            },
+            {
+              "atMs": 80977.18999999762,
+              "ms": 62.445000022649765,
+              "tick": 5142
+            },
+            {
+              "atMs": 92120.41499999166,
+              "ms": 86.27000001072884,
+              "tick": 5882
+            },
+            {
+              "atMs": 98381.48999997973,
+              "ms": 50.16999998688698,
+              "tick": 6301
+            },
+            {
+              "atMs": 104689.86499997973,
+              "ms": 60.40500000119209,
+              "tick": 6721
+            },
+            {
+              "atMs": 109187.4849999845,
+              "ms": 78.77500000596046,
+              "tick": 7016
+            }
+          ],
+          "ticksAdvanced": 7726,
+          "nominalTicks": 8100.42828749992,
+          "simulationRatio": 0.9537767295492616,
+          "ticksPerSecond": 64.37992924457517,
+          "elapsedTickDeficit": 374.42828749991986,
+          "cpuUpdateMs": {
+            "n": 6324,
+            "mean": 5.708557084216904,
+            "p50": 5.425000011920929,
+            "p95": 8.060000002384186,
+            "p99": 9.790000021457672,
+            "max": 459.80500000715256
+          },
+          "cpuRenderSubmissionMs": {
+            "n": 6324,
+            "mean": 5.539233870865574,
+            "p50": 5.125,
+            "p95": 9.24499997496605,
+            "p99": 11.2950000166893,
+            "max": 185.33000001311302
+          },
+          "cpuSimulationMs": {
+            "n": 6324,
+            "mean": 5.096080012501681,
+            "p50": 3.9300000071525574,
+            "p95": 11.780000001192093,
+            "p99": 20.810000002384186,
+            "max": 209.69499999284744
+          },
+          "callbackWorkMs": {
+            "n": 6324,
+            "mean": 16.34387096758416,
+            "p50": 14.874999970197678,
+            "p95": 26.115000009536743,
+            "p99": 33.339999973773956,
+            "max": 645.1350000202656
+          },
+          "callbackGate": false,
+          "screenPresentation": "UNAVAILABLE",
+          "gpuTime": "UNAVAILABLE",
+          "actualVram": "UNAVAILABLE",
+          "requestedTicks": 8099,
+          "executedTicks": 7726,
+          "unexecutedRequestedTicks": 373,
+          "tickBacklogPolicy": "Current loop advances its wall-time cursor even when the per-frame catch-up budget is exhausted; missed opportunities are not retained as a queue."
+        },
+        "thermal": {
+          "initial": "nominal",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 0.7119999999995343
+          },
+          "preWindow": "nominal",
+          "final": "nominal"
+        },
+        "report": ".artifacts/m4-3-windows-return-20261112/mac-baseline-sustained/report.json",
+        "sha256": "8bb953e7573cd2d34b4120b86ffd20d442c702e2dfbc9350690a0c977de8218d",
+        "samplesSha256": "61999dd99ff28080e9909bfc4b45b9fa87ab2d2de0c3e6914a239501327b8b6f"
+      },
+      {
+        "case": "mac-integrated-sustained",
+        "source": {
+          "packageSourceHead": null,
+          "sourceDigest": null,
+          "frozenManifest": {
+            "path": "/Users/Aone/RA2remaster/ra2-hd/.artifacts/m4-3-windows-return-20261112/integrated-runtime.json",
+            "sha256": "ee3ab3170763d64ea35f4dab907e792bf9dc35461b0712cd174edb209b94bf0b",
+            "sourceHead": "5b8e6efa40d00ceba97153307b8d9e892df3b693",
+            "sourceDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "harnessHead": "5b8e6efa40d00ceba97153307b8d9e892df3b693"
+        },
+        "summary": {
+          "callbackFps": 51.85191077622957,
+          "onePercentLow": 15.964624418961474,
+          "frameMs": {
+            "n": 6225,
+            "mean": 19.285692369478294,
+            "p50": 17.395000010728836,
+            "p95": 30.46000000834465,
+            "p99": 39.39000001549721,
+            "max": 483.544999986887
+          },
+          "perSecond": [
+            {
+              "second": 0,
+              "callbacks": 8
+            },
+            {
+              "second": 1,
+              "callbacks": 31
+            },
+            {
+              "second": 2,
+              "callbacks": 36
+            },
+            {
+              "second": 3,
+              "callbacks": 35
+            },
+            {
+              "second": 4,
+              "callbacks": 37
+            },
+            {
+              "second": 5,
+              "callbacks": 41
+            },
+            {
+              "second": 6,
+              "callbacks": 36
+            },
+            {
+              "second": 7,
+              "callbacks": 37
+            },
+            {
+              "second": 8,
+              "callbacks": 36
+            },
+            {
+              "second": 9,
+              "callbacks": 34
+            },
+            {
+              "second": 10,
+              "callbacks": 35
+            },
+            {
+              "second": 11,
+              "callbacks": 32
+            },
+            {
+              "second": 12,
+              "callbacks": 38
+            },
+            {
+              "second": 13,
+              "callbacks": 32
+            },
+            {
+              "second": 14,
+              "callbacks": 33
+            },
+            {
+              "second": 15,
+              "callbacks": 35
+            },
+            {
+              "second": 16,
+              "callbacks": 37
+            },
+            {
+              "second": 17,
+              "callbacks": 36
+            },
+            {
+              "second": 18,
+              "callbacks": 39
+            },
+            {
+              "second": 19,
+              "callbacks": 37
+            },
+            {
+              "second": 20,
+              "callbacks": 40
+            },
+            {
+              "second": 21,
+              "callbacks": 40
+            },
+            {
+              "second": 22,
+              "callbacks": 43
+            },
+            {
+              "second": 23,
+              "callbacks": 43
+            },
+            {
+              "second": 24,
+              "callbacks": 46
+            },
+            {
+              "second": 25,
+              "callbacks": 47
+            },
+            {
+              "second": 26,
+              "callbacks": 49
+            },
+            {
+              "second": 27,
+              "callbacks": 49
+            },
+            {
+              "second": 28,
+              "callbacks": 50
+            },
+            {
+              "second": 29,
+              "callbacks": 49
+            },
+            {
+              "second": 30,
+              "callbacks": 43
+            },
+            {
+              "second": 31,
+              "callbacks": 46
+            },
+            {
+              "second": 32,
+              "callbacks": 45
+            },
+            {
+              "second": 33,
+              "callbacks": 50
+            },
+            {
+              "second": 34,
+              "callbacks": 48
+            },
+            {
+              "second": 35,
+              "callbacks": 51
+            },
+            {
+              "second": 36,
+              "callbacks": 56
+            },
+            {
+              "second": 37,
+              "callbacks": 59
+            },
+            {
+              "second": 38,
+              "callbacks": 59
+            },
+            {
+              "second": 39,
+              "callbacks": 60
+            },
+            {
+              "second": 40,
+              "callbacks": 60
+            },
+            {
+              "second": 41,
+              "callbacks": 57
+            },
+            {
+              "second": 42,
+              "callbacks": 59
+            },
+            {
+              "second": 43,
+              "callbacks": 60
+            },
+            {
+              "second": 44,
+              "callbacks": 59
+            },
+            {
+              "second": 45,
+              "callbacks": 60
+            },
+            {
+              "second": 46,
+              "callbacks": 60
+            },
+            {
+              "second": 47,
+              "callbacks": 54
+            },
+            {
+              "second": 48,
+              "callbacks": 52
+            },
+            {
+              "second": 49,
+              "callbacks": 53
+            },
+            {
+              "second": 50,
+              "callbacks": 54
+            },
+            {
+              "second": 51,
+              "callbacks": 53
+            },
+            {
+              "second": 52,
+              "callbacks": 58
+            },
+            {
+              "second": 53,
+              "callbacks": 48
+            },
+            {
+              "second": 54,
+              "callbacks": 59
+            },
+            {
+              "second": 55,
+              "callbacks": 57
+            },
+            {
+              "second": 56,
+              "callbacks": 60
+            },
+            {
+              "second": 57,
+              "callbacks": 58
+            },
+            {
+              "second": 58,
+              "callbacks": 52
+            },
+            {
+              "second": 59,
+              "callbacks": 59
+            },
+            {
+              "second": 60,
+              "callbacks": 57
+            },
+            {
+              "second": 61,
+              "callbacks": 58
+            },
+            {
+              "second": 62,
+              "callbacks": 58
+            },
+            {
+              "second": 63,
+              "callbacks": 50
+            },
+            {
+              "second": 64,
+              "callbacks": 53
+            },
+            {
+              "second": 65,
+              "callbacks": 60
+            },
+            {
+              "second": 66,
+              "callbacks": 58
+            },
+            {
+              "second": 67,
+              "callbacks": 59
+            },
+            {
+              "second": 68,
+              "callbacks": 60
+            },
+            {
+              "second": 69,
+              "callbacks": 60
+            },
+            {
+              "second": 70,
+              "callbacks": 60
+            },
+            {
+              "second": 71,
+              "callbacks": 57
+            },
+            {
+              "second": 72,
+              "callbacks": 61
+            },
+            {
+              "second": 73,
+              "callbacks": 60
+            },
+            {
+              "second": 74,
+              "callbacks": 60
+            },
+            {
+              "second": 75,
+              "callbacks": 60
+            },
+            {
+              "second": 76,
+              "callbacks": 59
+            },
+            {
+              "second": 77,
+              "callbacks": 59
+            },
+            {
+              "second": 78,
+              "callbacks": 60
+            },
+            {
+              "second": 79,
+              "callbacks": 56
+            },
+            {
+              "second": 80,
+              "callbacks": 57
+            },
+            {
+              "second": 81,
+              "callbacks": 54
+            },
+            {
+              "second": 82,
+              "callbacks": 60
+            },
+            {
+              "second": 83,
+              "callbacks": 58
+            },
+            {
+              "second": 84,
+              "callbacks": 56
+            },
+            {
+              "second": 85,
+              "callbacks": 58
+            },
+            {
+              "second": 86,
+              "callbacks": 58
+            },
+            {
+              "second": 87,
+              "callbacks": 58
+            },
+            {
+              "second": 88,
+              "callbacks": 61
+            },
+            {
+              "second": 89,
+              "callbacks": 58
+            },
+            {
+              "second": 90,
+              "callbacks": 61
+            },
+            {
+              "second": 91,
+              "callbacks": 59
+            },
+            {
+              "second": 92,
+              "callbacks": 53
+            },
+            {
+              "second": 93,
+              "callbacks": 59
+            },
+            {
+              "second": 94,
+              "callbacks": 60
+            },
+            {
+              "second": 95,
+              "callbacks": 59
+            },
+            {
+              "second": 96,
+              "callbacks": 60
+            },
+            {
+              "second": 97,
+              "callbacks": 60
+            },
+            {
+              "second": 98,
+              "callbacks": 57
+            },
+            {
+              "second": 99,
+              "callbacks": 60
+            },
+            {
+              "second": 100,
+              "callbacks": 58
+            },
+            {
+              "second": 101,
+              "callbacks": 54
+            },
+            {
+              "second": 102,
+              "callbacks": 58
+            },
+            {
+              "second": 103,
+              "callbacks": 60
+            },
+            {
+              "second": 104,
+              "callbacks": 60
+            },
+            {
+              "second": 105,
+              "callbacks": 56
+            },
+            {
+              "second": 106,
+              "callbacks": 60
+            },
+            {
+              "second": 107,
+              "callbacks": 58
+            },
+            {
+              "second": 108,
+              "callbacks": 59
+            },
+            {
+              "second": 109,
+              "callbacks": 54
+            },
+            {
+              "second": 110,
+              "callbacks": 53
+            },
+            {
+              "second": 111,
+              "callbacks": 49
+            },
+            {
+              "second": 112,
+              "callbacks": 46
+            },
+            {
+              "second": 113,
+              "callbacks": 54
+            },
+            {
+              "second": 114,
+              "callbacks": 55
+            },
+            {
+              "second": 115,
+              "callbacks": 57
+            },
+            {
+              "second": 116,
+              "callbacks": 54
+            },
+            {
+              "second": 117,
+              "callbacks": 56
+            },
+            {
+              "second": 118,
+              "callbacks": 50
+            },
+            {
+              "second": 119,
+              "callbacks": 51
+            }
+          ],
+          "below60TimeFraction": 0.6815518856255026,
+          "belowCadenceTimeFraction": 0.6430929277486412,
+          "continuousLowBins": [
+            {
+              "startSecond": 0,
+              "endSecond": 39,
+              "seconds": 39
+            },
+            {
+              "startSecond": 41,
+              "endSecond": 43,
+              "seconds": 2
+            },
+            {
+              "startSecond": 44,
+              "endSecond": 45,
+              "seconds": 1
+            },
+            {
+              "startSecond": 47,
+              "endSecond": 56,
+              "seconds": 9
+            },
+            {
+              "startSecond": 57,
+              "endSecond": 65,
+              "seconds": 8
+            },
+            {
+              "startSecond": 66,
+              "endSecond": 68,
+              "seconds": 2
+            },
+            {
+              "startSecond": 71,
+              "endSecond": 72,
+              "seconds": 1
+            },
+            {
+              "startSecond": 76,
+              "endSecond": 78,
+              "seconds": 2
+            },
+            {
+              "startSecond": 79,
+              "endSecond": 82,
+              "seconds": 3
+            },
+            {
+              "startSecond": 83,
+              "endSecond": 88,
+              "seconds": 5
+            },
+            {
+              "startSecond": 89,
+              "endSecond": 90,
+              "seconds": 1
+            },
+            {
+              "startSecond": 91,
+              "endSecond": 94,
+              "seconds": 3
+            },
+            {
+              "startSecond": 95,
+              "endSecond": 96,
+              "seconds": 1
+            },
+            {
+              "startSecond": 98,
+              "endSecond": 99,
+              "seconds": 1
+            },
+            {
+              "startSecond": 100,
+              "endSecond": 103,
+              "seconds": 3
+            },
+            {
+              "startSecond": 105,
+              "endSecond": 106,
+              "seconds": 1
+            },
+            {
+              "startSecond": 107,
+              "endSecond": 120,
+              "seconds": 13
+            }
+          ],
+          "longStalls": [
+            {
+              "atMs": 483.544999986887,
+              "ms": 483.544999986887,
+              "tick": 0
+            },
+            {
+              "atMs": 649.0550000071526,
+              "ms": 165.51000002026558,
+              "tick": 1
+            },
+            {
+              "atMs": 700.8400000035763,
+              "ms": 51.78499999642372,
+              "tick": 2
+            },
+            {
+              "atMs": 765.5550000071526,
+              "ms": 64.71500000357628,
+              "tick": 4
+            },
+            {
+              "atMs": 823.9350000023842,
+              "ms": 58.37999999523163,
+              "tick": 5
+            },
+            {
+              "atMs": 920.1450000107288,
+              "ms": 52.91500002145767,
+              "tick": 8
+            },
+            {
+              "atMs": 1015.3849999904633,
+              "ms": 51.71999999880791,
+              "tick": 10
+            },
+            {
+              "atMs": 1095.2700000107288,
+              "ms": 79.88500002026558,
+              "tick": 11
+            },
+            {
+              "atMs": 1899.9300000071526,
+              "ms": 74.74500000476837,
+              "tick": 54
+            },
+            {
+              "atMs": 6632.740000009537,
+              "ms": 135.75500002503395,
+              "tick": 321
+            },
+            {
+              "atMs": 7453.215000003576,
+              "ms": 72.96000000834465,
+              "tick": 368
+            },
+            {
+              "atMs": 8564.620000004768,
+              "ms": 111.68999999761581,
+              "tick": 428
+            },
+            {
+              "atMs": 9112.469999998808,
+              "ms": 65.80500000715256,
+              "tick": 461
+            },
+            {
+              "atMs": 13185.069999992847,
+              "ms": 64.05500000715256,
+              "tick": 704
+            },
+            {
+              "atMs": 13634.145000010729,
+              "ms": 59.21000000834465,
+              "tick": 732
+            },
+            {
+              "atMs": 14030.634999990463,
+              "ms": 83.15000000596046,
+              "tick": 756
+            },
+            {
+              "atMs": 14930.544999986887,
+              "ms": 61.599999994039536,
+              "tick": 811
+            },
+            {
+              "atMs": 14990.234999984503,
+              "ms": 59.689999997615814,
+              "tick": 813
+            },
+            {
+              "atMs": 21311.139999985695,
+              "ms": 73.31499999761581,
+              "tick": 1206
+            },
+            {
+              "atMs": 23301.34999999404,
+              "ms": 70.77500000596046,
+              "tick": 1330
+            },
+            {
+              "atMs": 25834.090000003576,
+              "ms": 57.70000001788139,
+              "tick": 1485
+            },
+            {
+              "atMs": 53218.10499998927,
+              "ms": 50.40999999642372,
+              "tick": 3278
+            },
+            {
+              "atMs": 64005.060000002384,
+              "ms": 72.72499999403954,
+              "tick": 3985
+            },
+            {
+              "atMs": 79936.66499999166,
+              "ms": 59.09499999880791,
+              "tick": 5041
+            },
+            {
+              "atMs": 81509.56499999762,
+              "ms": 63.95500001311302,
+              "tick": 5143
+            },
+            {
+              "atMs": 92561.77500000596,
+              "ms": 56.060000002384186,
+              "tick": 5881
+            },
+            {
+              "atMs": 92647.81999999285,
+              "ms": 86.04499998688698,
+              "tick": 5882
+            },
+            {
+              "atMs": 105299.22999998927,
+              "ms": 62.56999999284744,
+              "tick": 6721
+            }
+          ],
+          "ticksAdvanced": 7689,
+          "nominalTicks": 8103.627450000644,
+          "simulationRatio": 0.9488343396140934,
+          "ticksPerSecond": 64.0463179239513,
+          "elapsedTickDeficit": 414.6274500006439,
+          "cpuUpdateMs": {
+            "n": 6225,
+            "mean": 5.939692369196789,
+            "p50": 5.614999979734421,
+            "p95": 8.659999996423721,
+            "p99": 10.669999986886978,
+            "max": 348.6749999821186
+          },
+          "cpuRenderSubmissionMs": {
+            "n": 6225,
+            "mean": 5.597180723066789,
+            "p50": 5.185000002384186,
+            "p95": 9.090000003576279,
+            "p99": 10.975000023841858,
+            "max": 134.15999999642372
+          },
+          "cpuSimulationMs": {
+            "n": 6225,
+            "mean": 5.511146988370811,
+            "p50": 4.260000020265579,
+            "p95": 12.38500002026558,
+            "p99": 21.969999998807907,
+            "max": 113.24500000476837
+          },
+          "callbackWorkMs": {
+            "n": 6225,
+            "mean": 17.048020080634387,
+            "p50": 15.560000002384186,
+            "p95": 27.2049999833107,
+            "p99": 34.43500003218651,
+            "max": 482.8349999785423
+          },
+          "callbackGate": false,
+          "screenPresentation": "UNAVAILABLE",
+          "gpuTime": "UNAVAILABLE",
+          "actualVram": "UNAVAILABLE",
+          "requestedTicks": 8101,
+          "executedTicks": 7689,
+          "unexecutedRequestedTicks": 412,
+          "tickBacklogPolicy": "Current loop advances its wall-time cursor even when the per-frame catch-up budget is exhausted; missed opportunities are not retained as a queue."
+        },
+        "thermal": {
+          "initial": "fair",
+          "wait": {
+            "state": "nominal",
+            "waitedMs": 80028.409417
+          },
+          "preWindow": "nominal",
+          "final": "fair"
+        },
+        "report": ".artifacts/m4-3-windows-return-20261112/mac-integrated-sustained/report.json",
+        "sha256": "39ec6070f51f463ae793a228511385770310a26963664919484054b3e9722ef4",
+        "samplesSha256": "bfdfa6c1fc58fae63dcab77364c8b6ad85351dc27163dd231d21ee2daa85eba1"
+      }
+    ],
+    "timingScope": "One before/after sanity window; no sustained performance gain claim."
+  },
+  "resources": {
+    "status": "PASS_EXACT_SELECTED_RESOURCES",
+    "files": 16444,
+    "bytes": 17689836587,
+    "mismatches": [],
+    "ledger": ".artifacts/m4-performance-20261112/storage/selected-hashes.json",
+    "ledgerSha256": "fe938de7f3fb61ba41fa85537e5c905e4d1fa6468df1c0a1d0b8212c4871c0ac",
+    "seconds": 17.523663999978453
+  },
+  "protection": {
+    "status": "PASS_PROTECTED_STATE",
+    "workingFiles": [
+      {
+        "path": "scripts/yr-campaign/supported-prism-column.mjs",
+        "bytes": 5282,
+        "sha256": "2f33f231f8808708fbacaf7757cf803c62376e874adb4ff1372eb91d884de207"
+      },
+      {
+        "path": "scripts/yr-campaign/native-allied06-robot-column.mjs",
+        "bytes": 8089,
+        "sha256": "0edcc195a2a82755f23d088b1ee3eddc322c528e5c5c2c7743d203482cf9455e"
+      },
+      {
+        "path": "scripts/yr-campaign/native-allied06-robot-final-force.mjs",
+        "bytes": 3442,
+        "sha256": "dc28d91708c6d6b3a0860f6f51aa0668fe0e65507cbb11d9264a3bf67c9f3aa9"
+      },
+      {
+        "path": "scripts/yr-campaign/native-allied06-supported-robots.mjs",
+        "bytes": 4506,
+        "sha256": "dd3ba0287863dc7bc755002e7d28cd9e65c2cb1ff36705d30349ac666d14b93a"
+      },
+      {
+        "path": "scripts/yr-campaign/native-soviet07-boris-beacon.mjs",
+        "bytes": 4727,
+        "sha256": "43056f222126ac5bf1f3d0e5bf353dce8cf14d552d9fdf8b56893b646b1dc2d8"
+      }
+    ],
+    "realProfileFiles": 245,
+    "realProfileRoots": [
+      "/Users/Aone/Library/Application Support/RA2 HD",
+      "/Users/Aone/Library/Application Support/RA2 HD M1.5",
+      "/Users/Aone/Library/Application Support/RA2 HD M3.1 Campaign Test 20261023",
+      "/Users/Aone/Library/Application Support/Red Alert 2 HD Repairs 20261022",
+      "/Users/Aone/Library/Application Support/Red Alert 2 HD Skirmish Repairs 20261023"
+    ],
+    "realProfileInventoryUnchanged": true,
+    "realProfileHashesUnchanged": true,
+    "productionRuntimeFiles": 297,
+    "productionRuntimeUnchangedAfterHostSuite": true,
+    "preservedApplicationsAndMovieArchivePresent": true,
+    "newProfileScope": "All native test profiles are inside the task artifact directories.",
+    "productionRuntimeUnchangedAfterNativeAndFormal": true,
+    "profilesUnchangedAfterAllNativeAndFormal": true
+  },
+  "receiptHashes": [
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/preflight.json",
+      "sha256": "bd830ba35174eb4bfdf54d4f3414ab32cbf5296d7b93cf165030386c3d0a92b0"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/source-audit.json",
+      "sha256": "9b06d239877a8ab6d68161e3659f82237eb6e296834c6ea2afa03df67967e7e2"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/frozen-source-verification.json",
+      "sha256": "4cd3afcd235022c31cdbe19aed2385a29df464be25ae8216d03325394d482542"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/windows-verification.json",
+      "sha256": "8178018c40cd6af6fca93b09526461e1bfe5c5b7365f741feba58e105dc0323d"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/windows-regressions-verification.json",
+      "sha256": "63ff3635d1e4b98bc7fc41a7753d5128cc55a5947d27f510e5354958f3776dcc"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/resource-verification.json",
+      "sha256": "9d70e31f61635336d630cff9599a03b5e49c159df84b554d3b498b4d67bbf572"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/mac-wav-equivalence.json",
+      "sha256": "1b23066d3ac4a635d8b4446c093f32ab3ce6acdc1e90ab3f9b3bee95c7408dcd"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/mac-native-weld.json",
+      "sha256": "fcd013f20bd7d81f4885c50acc51850ff79bb0fedf3f250eff42d47d0e81fb45"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/mac-pixel-parity.json",
+      "sha256": "d50b1858fc4db8994dc0ae3eb59a21e5a2f226f83cf8e1d01cd33e053e78d648"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/protection-after.json",
+      "sha256": "bef91d2729d06ee3d0b8f61afe3fceb561a2f8e15a8f78a1779f13320fcce90f"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/host-final/summary.json",
+      "sha256": "5d232e38b5b39ca6eaa4432f8b2b672406990d36b91535f2fa118e39f8927b6c"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/host-final/raw.log",
+      "sha256": "b06bf6aceeee2ab0d48c854447daac05182470ff0896d613fd9bb45d26f475f3"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/typecheck.log",
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/build-final.log",
+      "sha256": "8aef28a3a93216f367e82831d5abf2bd0f1390c3115ceaa6c13ba7ab8210e2e4"
+    },
+    {
+      "path": ".artifacts/m4-3-windows-return-20261112/verify-return.mjs",
+      "sha256": "eee6904ec9768b6caddc102f5f29d2d27a2febe7b53cf313f19ca29a0ee20a59"
+    }
+  ],
+  "stable60Fps": "NOT_PASSED",
+  "nativeWindowsIntegratedMain": "NOT_RUN_ON_THIS_MAC",
+  "userVisualAcceptance": "Existing accepted artwork retained; no new user acceptance claimed.",
+  "existingApplications": "Retained at their previous frozen sources; no app or ZIP rebuilt.",
+  "remotePush": false,
+  "cleanup": "No resource, application, profile or evidence retirement."
+}

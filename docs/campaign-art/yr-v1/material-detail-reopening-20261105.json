@@ -1,0 +1,54 @@
+{
+  "schema": "yr-user-material-detail-reopening-v1",
+  "status": "REOPENED_BY_USER_MATERIAL_LIGHTING_AND_SNOW_FINISH",
+  "date": "2026-11-05",
+  "feedback": "Some building lighting and material detail is oversimplified and reads as cartoon art, especially the Easter Island statue and Sydney Opera House. Snow-covered buildings retain blocky source pixels; standard skirmish-building snow also has dirty mixed colors and unclear material/edges.",
+  "examples": [
+    {
+      "identity": "CAEAST01",
+      "theater": "NEWURBAN",
+      "stage": ".artifacts/yr-campaign/task-newurban-caeast01-stage-r2",
+      "status": "PASS_REBUILT_STONE_BODY_AND_DESTRUCTION_NATIVE_2X4X_USER_REVIEW_PENDING",
+      "registration": "docs/campaign-art/yr-v1/task-newurban-caeast01-registration-r2.json",
+      "qualification": "docs/campaign-art/yr-v1/easter-stone-qualification-r2.json"
+    },
+    {
+      "identity": "CASYDN03",
+      "theater": "URBAN",
+      "registration": "docs/campaign-art/yr-v1/task-urban-casydn03-registration.json",
+      "registrationSha256": "60c39753b43b4bdc78f537ecd8d6b24b00afcc602f7668aaa5650818ae88dffe",
+      "previousPackSha256": "0a0f01ad006c97f1d75e8749d3a26bdd29f2faf9120b28232c9578e38645dee9",
+      "status": "USER_ACCEPTED_FULL_RESOLUTION_NORMAL_BASIS_SHELL_LINE_LEGIBILITY_REFINEMENT",
+      "latestClarification": "The user accepts this full-resolution Opera House image and suggests making the existing white-shell square grid and curved lines more visible. Preserve its current design, palette, lighting and material finish.",
+      "acceptedNormalMaster": {
+        "file": ".local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r1/frame-0.png",
+        "sha256": "8be7806eff8951d5b99fbe52007bd8eefac293d4a3a497cb45534a783b3b1962",
+        "attachedReferenceSha256": "8be7806eff8951d5b99fbe52007bd8eefac293d4a3a497cb45534a783b3b1962",
+        "acceptanceScope": "Full-resolution normal-state basis; independent export and runtime line legibility remain under review."
+      }
+    }
+  ],
+  "snowScope": {
+    "modes": [
+      "campaign",
+      "skirmish"
+    ],
+    "editions": [
+      "ra2",
+      "yr"
+    ],
+    "status": "USER_REVIEW_REQUIRED_BEFORE_APPLICATION",
+    "authorization": "The user explicitly reopens snow-covered building finish, including standard skirmish buildings.",
+    "latestInstruction": "Create a self-contained old/new review webpage on the Desktop with embedded images. Wait for the user decision before applying Snow changes. Preserve Snow construction and reverse-construction animation behavior. Continue the original campaign implementation while review is pending."
+  },
+  "requiredFinish": [
+    "Preserve original patterns, design, palette, forms, composition, viewpoint and light direction.",
+    "Resolve original material response, tonal hierarchy, structural detail and recess/edge shading without a cartoon or plastic finish.",
+    "Reconstruct clean, coherent snow layers with crisp antialiased boundaries and restrained original snow shading. Remove native pixel blocks and unrelated mixed colors.",
+    "Do not add grain, random noise, blur/sharpen effects, invented ornament or an unrelated design.",
+    "Preserve native geometry, pivots, original owner regions, shadows, animation ranges and timing.",
+    "Inspect actual independent 2X/4X exports and native campaign/skirmish appearance. Technical checks remain separate from user visual acceptance."
+  ],
+  "preservation": "Retain selected predecessors, unique masters and failure evidence. Preserve the accepted V56 app, original imports, real profiles and unrelated accepted resources.",
+  "userVisualAcceptance": "PENDING"
+}

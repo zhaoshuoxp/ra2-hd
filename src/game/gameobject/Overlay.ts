@@ -5,6 +5,7 @@ import { OreOverlayTypes } from '@/game/map/OreOverlayTypes';
 import { OverlayTibType } from '@/engine/type/OverlayTibType';
 import { WallTrait } from '@/game/gameobject/trait/WallTrait';
 export class Overlay extends GameObject {
+    bridgeDisplayValue?: number;
     radarInvisible: boolean;
     wallTrait?: WallTrait;
     static factory(id: string, rules: any, owner: any): Overlay {

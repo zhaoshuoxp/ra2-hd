@@ -21,6 +21,7 @@ import { MindControlStatusPlugin } from './plugin/MindControlStatusPlugin';
 import { MagneticLiftBeamPlugin } from './plugin/MagneticLiftBeamPlugin';
 import { DrainAnimationPlugin } from './plugin/DrainAnimationPlugin';
 import { AirstrikeLinePlugin } from './plugin/AirstrikeLinePlugin';
+import { VehicleParachutePlugin } from './plugin/VehicleParachutePlugin';
 import { globalRules } from '@/game/rules/globalRules';
 import { InfantryDisguisePlugin } from "@/engine/renderable/entity/plugin/InfantryDisguisePlugin";
 import { PsychicDetectPlugin } from "@/engine/renderable/entity/building/PsychicDetectPlugin";
@@ -248,6 +249,8 @@ export class RenderableFactory {
             }
             else if (entity.isVehicle()) {
                 renderable = new Vehicle(entity, this.rules, this.art, this.imageFinder, this.theater, this.voxels, this.voxelAnims, palette, this.camera, this.lighting, this.debugWireframes, this.gameSpeed, selectionModel, this.vxlBuilderFactory, this.useSpriteBatching, pipOverlay, this.worldSound);
+                plugins.push(new VehicleParachutePlugin(entity, renderable,
+                    (this.rules.audioVisual as any).parachute, this.useMeshInstancing));
                 if (entity.rules.damageParticleSystems.length) {
                     plugins.push(new DamageSmokePlugin(entity, this.art, this.theater, this.imageFinder, this.gameSpeed));
                 }

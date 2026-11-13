@@ -1,0 +1,46 @@
+{
+  "mission": "all01t.map",
+  "sourceSha256": "ad64c9293a8bccb85c38f5871a974ed9c09b8b5da11bb346e990423bf625c79c",
+  "semanticsVersion": 15,
+  "enemyHouse": "BadGuy1 House",
+  "controlledHouses": 1,
+  "triggers": 130,
+  "aiTriggers": 6,
+  "ignoreGlobal": true,
+  "teamDelays": [
+    1000,
+    750,
+    500
+  ],
+  "cases": {
+    "easy": {
+      "credits": 5500,
+      "human": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "enemy": [
+        0.8,
+        1.2,
+        1
+      ],
+      "aiDelay": 500
+    },
+    "hard": {
+      "credits": 2500,
+      "human": [
+        0.8,
+        1.2,
+        1
+      ],
+      "enemy": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "aiDelay": 1000
+    }
+  },
+  "authority": "Original all01t.map Player House Credits=40, TechLevel=3, local CampaignMoneyDeltaEasy=1500/Hard=-1500 and TeamDelays=1000,750,500. Original global handicap values; no map-local Easy/Normal/Difficult override. The source explicitly disables global AI. No parameter monotonicity is assumed."
+}

@@ -43,54 +43,6 @@ function inputs(member = 'dron.shp') {
     return { image, manifest, manifestHash: hash(bytes), source, read };
 }
 
-local('SQD keeps both native members atomic, preserves partial collar remap and respects the combined cap', async () => {
-    const entries = [inputs('sqd.shp'), inputs('sqdg.shp')];
-    expect(entries.map(e => e.image.numImages)).toEqual([296, 240]);
-    let allocated = 0, disposed = 0;
-    const loaded = await resolveSovietUnitMembers(entries, 4, 128 * 1024 * 1024, 2048, textures => {
-        allocated += textures.length;
-        textures.forEach(t => t.addEventListener('dispose', () => disposed++));
-    });
-    expect(loaded.density).toBe(2);
-    expect(loaded.gpuBytes).toBe(109314048);
-    expect(loaded.attempts).toEqual([{ density: 4, reason: 'missing-density' }]);
-    for (const input of entries) {
-        const hd = loaded.members.get(input.source.member)!.override;
-        expect(hd.frames.length).toBe(input.source.frames.length);
-        for (const [index, frame] of hd.frames.entries()) {
-            const page = hd.pages[frame.page], data = page.data.image.data, base = page.base.image.data;
-            let remap = 0, flesh = 0;
-            for (let y = frame.sampleRect.y; y < frame.sampleRect.y + frame.sampleRect.height; y++)
-                for (let x = frame.sampleRect.x; x < frame.sampleRect.x + frame.sampleRect.width; x++) {
-                    const offset = (y * page.data.image.width + x) * 4;
-                    if (data[offset]) {
-                        remap++;
-                        expect(base[offset + 3]).toBeGreaterThan(0);
-                        expect(data[offset + 1]).toBeLessThan(16);
-                    }
-                    if (base[offset + 3] && base[offset + 1] - base[offset + 2] >= (base[offset] - base[offset + 2]) * 0.25) {
-                        flesh++;
-                        expect(data[offset]).toBe(0);
-                    }
-                }
-            expect(flesh).toBeGreaterThan(0);
-            const absent = input.source.member === 'sqdg.shp' && index < 80 && index % 10 < 6;
-            expect(remap > 0).toBe(!absent);
-        }
-    }
-    loaded.members.forEach(m => disposeHdSprite(m.override));
-    expect(disposed).toBe(allocated);
-    let reads = 0;
-    const fallback = await resolveSovietUnitMembers(entries.map(e => ({ ...e, read: async (...args: Parameters<typeof e.read>) => {
-        reads++; return e.read(...args);
-    } })), 2, 59673888, 2048, () => {});
-    expect(fallback.density).toBe(1);
-    expect(fallback.members.size).toBe(0);
-    expect(fallback.gpuBytes).toBe(0);
-    expect(reads).toBe(0);
-    expect(fallback.attempts).toEqual([{ density: 2, reason: 'combined-budget' }]);
-}, 60000);
-
 test('SQDG binding requires the parasite identity, animation and member, and returns its lifetime lease', () => {
     const calls: any[] = []; let releases = 0;
     const units = { families: new Map(), report: { gpuBytes: 0, budget: 0, families: {} },
@@ -107,7 +59,12 @@ test('SQDG binding requires the parasite identity, animation and member, and ret
 });
 
 local('pooled unit families reconstruct every color/remap byte and reject over-budget uploads atomically', async () => {
-    for (const family of Object.values(sovietUnitHdFamilies)) {
+    const families = Object.values(sovietUnitHdFamilies);
+    expect(families.filter(family => 'blockedReason' in family).map(family => family.identity).sort())
+        .toEqual(['SQD', 'YURIPR']);
+    // Rejected prototype atlases are retired; validate active families and test
+    // the two explicit Original policies independently below.
+    for (const family of families.filter(family => !('blockedReason' in family))) {
         const entries = family.members.map(m => inputs(m.member));
         let allocated = 0, disposed = 0;
         const loaded = await resolveSovietUnitMembers(entries, 2, 128 * 1024 * 1024, 2048, textures => {
@@ -147,7 +104,7 @@ local('pooled unit families reconstruct every color/remap byte and reject over-b
         loaded.members.forEach(m => disposeHdSprite(m.override)); expect(disposed).toBe(allocated);
     }
     let uploads = 0;
-    const failed = await resolveSovietUnitMembers([inputs('sqd.shp'), inputs('sqdg.shp')], 2, 1, 2048,
+    const failed = await resolveSovietUnitMembers([inputs('dog.shp'), inputs('dogp.shp')], 2, 1, 2048,
         () => uploads++, () => false, true);
     expect(failed.density).toBe(1); expect(failed.members.size).toBe(0); expect(uploads).toBe(0);
     expect(failed.attempts).toEqual([{ density: 2, reason: 'combined-budget' }]);
@@ -636,48 +593,6 @@ local('CIVAN preserves 267 native slots, shadows and non-remapped skin and tan c
     expect(failed.density).toBe(1); expect(failed.members.size).toBe(0); expect(failed.gpuBytes).toBe(0);
 }, 30000);
 
-local('YURIPR preserves 315 native slots, shadows and non-remapped skin and psychic effects', async () => {
-    const input = inputs('yuripr.shp');
-    expect(input.image.numImages).toBe(630);
-    expect(input.manifestHash).toBe(sovietUnitHdFamilies.YURIPR.members[0].manifestHash);
-    for (const density of [2, 4]) {
-        let allocated = 0, disposed = 0, skinPixels = 0, effectPixels = 0;
-        const loaded = await resolveSovietUnitMembers([input], density, 64 * 1024 * 1024, 2048, textures => {
-            allocated += textures.length;
-            textures.forEach(t => t.addEventListener('dispose', () => disposed++));
-        });
-        expect(loaded.density).toBe(density);
-        expect(loaded.gpuBytes).toBe(density === 2 ? 8126464 : 29753344);
-        const override = loaded.members.get('yuripr.shp')!.override;
-        expect(override.frames.length).toBe(315);
-        for (const [nativeFrame, frame] of override.frames.entries()) {
-            const original = input.image.getImage(nativeFrame), page = override.pages[frame.page];
-            const base = page.base.image.data, data = page.data.image.data;
-            let missingShadow = 0, remap = 0;
-            for (let y = 0; y < original.height; y++) for (let x = 0; x < original.width; x++)
-                for (let sy = 0; sy < density; sy++) for (let sx = 0; sx < density; sx++) {
-                    const i = ((frame.sampleRect.y + y * density + sy) * page.base.image.width + frame.sampleRect.x + x * density + sx) * 4;
-                    if (original.imageData[y * original.width + x] === 12 && base[i + 3] !== 255) missingShadow++;
-                    if (base[i + 3] > 64 && base[i + 2] > 140 && base[i + 2] > base[i] * 1.35 && base[i + 2] > base[i + 1] * 1.1) {
-                        expect(data[i]).toBe(0); effectPixels++;
-                    }
-                    if (data[i]) { remap++; expect(base[i + 1] - base[i + 2]).toBeLessThan((base[i] - base[i + 2]) * 0.25); }
-                    if (base[i + 3] > 0 && base[i] > 180 && base[i + 1] > 70 && base[i + 1] - base[i + 2] >= (base[i] - base[i + 2]) * 0.25) {
-                        expect(data[i]).toBe(0); skinPixels++;
-                    }
-                }
-            expect(missingShadow).toBe(0); expect(remap).toBeGreaterThan(0);
-        }
-        expect(skinPixels).toBeGreaterThan(100);
-        expect(effectPixels).toBeGreaterThan(20);
-        loaded.members.forEach(member => disposeHdSprite(member.override));
-        expect(disposed).toBe(allocated);
-    }
-    const failed = await resolveSovietUnitMembers([{ ...input, read: async () => { throw Error('fixture-missing-yuripr-page'); } }], 4, 64 * 1024 * 1024, 2048, () => {});
-    expect(failed.density).toBe(1); expect(failed.members.size).toBe(0); expect(failed.gpuBytes).toBe(0);
-}, 30000);
-
-
 test('snow and temperate unit families request HD and fail closed on missing resources', async () => {
     const previous = Object.getOwnPropertyDescriptor(globalThis, 'location');
     const oldFetch = globalThis.fetch;
@@ -718,7 +633,10 @@ test('snow and temperate unit families request HD and fail closed on missing res
     }
 });
 
-test('user-disabled SQD body and attachment stay Original without fetch or allocation', async () => {
+test.each([
+    ['SQD', ['sqd.shp', 'sqdg.shp'], 'USER_REQUESTED_ORIGINAL'],
+    ['YURIPR', ['yuripr.shp'], 'UPSTREAM_GAMEPLAY_BLOCKED'],
+] as const)('%s explicit Original policy prevents resource fetch and allocation', async (identity, members, reason) => {
     const previous = Object.getOwnPropertyDescriptor(globalThis, 'location');
     const oldFetch = globalThis.fetch;
     let fetches = 0, uploads = 0, applied = 0;
@@ -728,9 +646,9 @@ test('user-disabled SQD body and attachment stay Original without fetch or alloc
         const { TheaterType } = await import('../../src/engine/TheaterType');
         const loaded = await loadSovietUnitsHd({ type: TheaterType.Temperate },
             { renderer: { initTexture: () => uploads++ } }, true, 1000000, () => false);
-        const releases = ['sqd.shp', 'sqdg.shp'].map(filename => loaded.bind!('SQD', { filename }, () => applied++));
+        const releases = members.map(filename => loaded.bind!(identity, { filename }, () => applied++));
         for (let i = 0; i < 8; i++) await Promise.resolve();
-        expect(loaded.report.families.SQD.attempts).toEqual([{ reason: 'USER_REQUESTED_ORIGINAL' }]);
+        expect(loaded.report.families[identity].attempts).toEqual([{ reason }]);
         expect(loaded.report.gpuBytes).toBe(0);
         expect(loaded.families.size).toBe(0);
         expect([fetches, uploads, applied]).toEqual([0, 0, 0]);

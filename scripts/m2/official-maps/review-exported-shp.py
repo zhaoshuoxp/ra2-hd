@@ -63,6 +63,7 @@ for name in args.members:
         x, y, w, h = entry['contentRect']
         base, data = pages[entry['page']]
         hd = compose_owner(base.crop((x, y, x + w, y + h)), data.crop((x, y, x + w, y + h)), palette_colors)
+        hd.save(args.output / f'{name}-{density}x-frame-{number}.png')
         top = row * row_height + 56
         ox, oy = [v * density for v in frame['origin']]
         draw.text((8, top - 53), f'{name} / frame {number}', fill='white', font_size=22)

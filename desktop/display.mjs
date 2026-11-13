@@ -10,6 +10,12 @@ export function displayChoices(display) {
         { id: 'fullscreen', label: `${Math.round(size.width * scale)} × ${Math.round(size.height * scale)} (full screen)` },
     ];
 }
+export function displaySafeAreaTop(display, fullscreen, platform = process.platform) {
+    if (platform !== 'darwin' || !fullscreen || display.internal === false) return 0;
+    // Electron reports bounds/workArea in DIP, matching CSS pixels. Retain a
+    // conservative inset when macOS hides its menu bar in simple full screen.
+    return Math.min(96, Math.max(32, (display.workArea?.y ?? 0) - (display.bounds?.y ?? 0)));
+}
 export function installDisplay({ app, screen, ipcMain, getWindow, isGameURL }) {
     const file = path.join(app.getPath('userData'), 'display.json');
     const read = () => {
@@ -20,7 +26,7 @@ export function installDisplay({ app, screen, ipcMain, getWindow, isGameURL }) {
         const fullscreen = window.isFullScreen() || !!window.isSimpleFullScreen?.();
         const id = fullscreen ? 'fullscreen' : `${width}x${height}`;
         if (!choices.some(c => c.id === id)) choices.unshift({ id, label: `${width} × ${height} (window)`, width, height });
-        return { id, width, height, fullscreen, choices };
+        return { id, width, height, fullscreen, choices, safeAreaTop: displaySafeAreaTop(display, fullscreen) };
     };
     let changing = false;
     const apply = async (id, persist = true) => {

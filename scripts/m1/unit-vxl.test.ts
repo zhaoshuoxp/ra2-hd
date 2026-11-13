@@ -10,6 +10,163 @@ import { vxlUnitIdentities, registerHdResources } from '../../desktop/hd-profile
 
 const local = test;
 
+local('lower disc cabin exports retain native registration, lower body, outer rim and complete owner paint', async () => {
+    const { PNG } = await import('pngjs');
+    for (const variant of vxlUnitIdentities.DISK.variants) {
+        const root = `${resourceRoot}/${variant.path.replace('manifest.json', '')}`;
+        const previous = `${resourceRoot}/hd-packs/yuri-disk-vxl/r1-${variant.density}x/`;
+        const current = JSON.parse(readFileSync(root + 'manifest.json', 'utf8'));
+        const retained = JSON.parse(readFileSync(previous + 'manifest.json', 'utf8'));
+        expect(current.sources).toEqual(retained.sources);
+        for (const [index, part] of current.parts.entries()) {
+            const old = retained.parts[index];
+            expect(part.pageSize).toEqual(old.pageSize);
+            expect(part.frames.map(({ heading, logicalSize, offset, referenceLinear, referenceOrigin, rect }: any) =>
+                ({ heading, logicalSize, offset, referenceLinear, referenceOrigin, rect })))
+                .toEqual(old.frames.map(({ heading, logicalSize, offset, referenceLinear, referenceOrigin, rect }: any) =>
+                    ({ heading, logicalSize, offset, referenceLinear, referenceOrigin, rect })));
+            if (part.member === 'disk.vxl') {
+                for (const role of ['base', 'data']) expect(part.files[role].sha256).toBe(old.files[role].sha256);
+                continue;
+            }
+            const image = PNG.sync.read(readFileSync(root + part.files.base.file));
+            const before = PNG.sync.read(readFileSync(previous + old.files.base.file));
+            const owner = PNG.sync.read(readFileSync(root + part.files.data.file));
+            for (const frame of part.frames) {
+                const [left, top, width, height] = frame.rect;
+                let originalTop = 0, currentTop = 0, painted = 0;
+                for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
+                    const i = ((top + y) * image.width + left + x) * 4;
+                    if (Math.abs((x + .5) / width - .5) > .30 || (y + .5) / height > .65)
+                        expect(image.data.subarray(i, i + 4)).toEqual(before.data.subarray(i, i + 4));
+                    if ((y + .5) / height < .045) { originalTop += before.data[i + 3]; currentTop += image.data[i + 3]; }
+                    if (image.data[i] > 2.5 * Math.max(image.data[i + 1], image.data[i + 2])
+                        && image.data[i] > 70 && image.data[i + 3] > 5) {
+                        expect(owner.data[i]).toBe(255); painted++;
+                    }
+                }
+                expect(originalTop).toBeGreaterThan(0);
+                expect(currentTop).toBe(0);
+                expect(painted).toBeGreaterThan(50 * variant.density);
+            }
+        }
+    }
+});
+
+local('coherent Apocalypse components reconstruct the uncut upper assembly at both densities', async () => {
+    const { PNG } = await import('pngjs');
+    const original = JSON.parse(readFileSync(`${resourceRoot}/hd-packs/soviet-apoc-vxl/owner-r3/manifest.json`, 'utf8'));
+    for (const variant of vxlUnitIdentities.APOC.variants) {
+        const root = `${resourceRoot}/${variant.path.replace('manifest.json', '')}`;
+        const manifest = JSON.parse(readFileSync(root + 'manifest.json', 'utf8'));
+        const [body, turret, barrel] = manifest.parts;
+        expect(manifest.sources).toEqual(original.sources);
+        expect(manifest.parts.map((p: any) => p.member)).toEqual(['mtnk.vxl', 'mtnktur.vxl', 'mtnkbarl.vxl']);
+        expect(body.frames.map(({ heading, offset, logicalSize, referenceLinear, referenceOrigin }: any) =>
+            ({ heading, offset, logicalSize, referenceLinear, referenceOrigin })))
+            .toEqual(original.parts[0].frames.map(({ heading, offset, logicalSize, referenceLinear, referenceOrigin }: any) =>
+                ({ heading, offset, logicalSize, referenceLinear, referenceOrigin })));
+        if (variant.density === 4)
+            expect(body.files).toEqual(original.parts[0].files);
+        const reference = readFileSync(root + manifest.upperAssemblyReference.file);
+        expect(createHash('sha256').update(reference).digest('hex')).toBe(manifest.upperAssemblyReference.sha256);
+        const full = PNG.sync.read(reference);
+        const mount = PNG.sync.read(readFileSync(root + turret.files.base.file));
+        const guns = PNG.sync.read(readFileSync(root + barrel.files.base.file));
+        expect(turret.frames).toHaveLength(8);
+        expect(turret.depthBounds).toEqual(body.depthBounds);
+        expect(barrel.depthBounds).toEqual(body.depthBounds);
+        let maximumAlphaError = 0, maximumPremultipliedError = 0;
+        for (let i = 0; i < full.data.length; i += 4) {
+            const a = mount.data[i + 3] / 255, b = guns.data[i + 3] / 255;
+            maximumAlphaError = Math.max(maximumAlphaError, Math.abs((a + b * (1 - a)) * 255 - full.data[i + 3]));
+            for (let channel = 0; channel < 3; channel++)
+                maximumPremultipliedError = Math.max(maximumPremultipliedError, Math.abs(
+                    guns.data[i + channel] * b + mount.data[i + channel] * a * (1 - b)
+                    - full.data[i + channel] * full.data[i + 3] / 255));
+        }
+        expect(maximumAlphaError).toBeLessThanOrEqual(1.1);
+        expect(maximumPremultipliedError).toBeLessThanOrEqual(1.1);
+        turret.frames.forEach((frame: any, index: number) => {
+            expect(frame.offset).toEqual(barrel.frames[index].offset);
+            expect(frame.logicalSize).toEqual(barrel.frames[index].logicalSize);
+            expect(frame.rect).toEqual(barrel.frames[index].rect);
+            expect(frame.referenceLinear).toEqual(original.parts[1].frames[index].referenceLinear);
+            expect(barrel.frames[index].referenceLinear).toEqual(original.parts[2].frames[index].referenceLinear);
+            expect(frame.referenceOrigin).toEqual(original.parts[1].frames[index].referenceOrigin);
+        });
+    }
+});
+
+local('Apocalypse exports preserve proportions, seated mount offsets and matched diagonal tubes', async () => {
+    const { PNG } = await import('pngjs');
+    for (const variant of vxlUnitIdentities.APOC.variants) {
+        const root = `${resourceRoot}/${variant.path.replace('manifest.json', '')}`;
+        const manifest = JSON.parse(readFileSync(root + 'manifest.json', 'utf8'));
+        const previous = JSON.parse(readFileSync(
+            `${resourceRoot}/hd-packs/soviet-apoc-vxl/r6-upper-uniform-${variant.density}x/manifest.json`, 'utf8'));
+        const reference = manifest.upperAssemblyReference;
+        const bytes = readFileSync(root + reference.sourceFile);
+        expect(createHash('sha256').update(bytes).digest('hex')).toBe(reference.sourceSha256);
+        const source = PNG.sync.read(bytes), full = PNG.sync.read(readFileSync(root + reference.file));
+        const bounds = (image: any, rect: number[]) => {
+            const [left, top, width, height] = rect;
+            let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+            for (let y = 0; y < height; y++) for (let x = 0; x < width; x++)
+                if (image.data[((top + y) * image.width + left + x) * 4 + 3] > 128) {
+                    minX = Math.min(minX, x); minY = Math.min(minY, y); maxX = Math.max(maxX, x); maxY = Math.max(maxY, y);
+                }
+            return [maxX - minX + 1, maxY - minY + 1];
+        };
+        const barrel = manifest.parts[2], pixels = PNG.sync.read(readFileSync(root + barrel.files.base.file));
+        const diagonalLengths: number[] = [];
+        for (const [index, frame] of barrel.frames.entries()) {
+            const registration = reference.registration[index];
+            expect(registration.matrix).toEqual([[.106, 0], [0, .106]]);
+            expect(registration.roofAnchor).toEqual([0, -19.5]);
+            expect(registration.mountOffset).toEqual([0, [0, 90].includes(frame.heading) ? 2.5 : 0]);
+            registration.sourceHatch.forEach((value: number, axis: number) =>
+                expect(value * .106 + registration.offset[axis])
+                    .toBeCloseTo(registration.roofAnchor[axis] + registration.mountOffset[axis], 8));
+            for (const [partIndex, part] of manifest.parts.entries()) {
+                expect(part.files).toEqual(previous.parts[partIndex].files);
+                const expected = structuredClone(previous.parts[partIndex].frames[index]);
+                if (partIndex > 0) expected.offset[1] += registration.mountOffset[1];
+                expect(part.frames[index]).toEqual(expected);
+            }
+            if ([0, 90].includes(frame.heading)) expect(registration.tubeLengthFactor).toBeLessThan(1);
+            else expect(registration.tubeLengthFactor).toBe(1);
+            const cell = [Math.floor(index % 4 * source.width / 4), Math.floor(Math.floor(index / 4) * source.height / 2),
+                Math.floor((index % 4 + 1) * source.width / 4) - Math.floor(index % 4 * source.width / 4),
+                Math.floor((Math.floor(index / 4) + 1) * source.height / 2) - Math.floor(Math.floor(index / 4) * source.height / 2)];
+            const before = bounds(source, cell), after = bounds(full, frame.rect);
+            before.forEach((span, axis) => expect(Math.abs(after[axis] / variant.density - span * .106)).toBeLessThan(.8));
+            const midpoint = (points: number[][]) => new THREE.Vector2((points[0][0] + points[1][0]) / 2,
+                (points[0][1] + points[1][1]) / 2);
+            const sourceRoot = midpoint(registration.sourceRoots);
+            const start = sourceRoot.clone().multiplyScalar(.106).add(new THREE.Vector2(...registration.offset));
+            const axis = midpoint(registration.sourceTips).sub(sourceRoot).normalize();
+            const normal = new THREE.Vector2(-axis.y, axis.x);
+            const [left, top, width, height] = frame.rect;
+            const halves = [0, 1].map(() => ({ weight: 0, lateral: 0, tip: -Infinity }));
+            for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
+                const alpha = pixels.data[((top + y) * pixels.width + left + x) * 4 + 3] / 255;
+                if (alpha < .5) continue;
+                const delta = new THREE.Vector2(frame.offset[0] + (x + .5) / variant.density,
+                    frame.offset[1] + (y + .5) / variant.density).sub(start);
+                const along = delta.dot(axis), lateral = delta.dot(normal), half = halves[lateral < 0 ? 0 : 1];
+                half.tip = Math.max(half.tip, along);
+                if (along > 5 && along < 10) { half.weight += alpha; half.lateral += alpha * lateral; }
+            }
+            expect(halves.every(half => half.weight > 2)).toBe(true);
+            const medianError = halves.reduce((sum, half) => sum + half.lateral / half.weight, 0) / 2;
+            expect(Math.abs(medianError)).toBeLessThan(.65);
+            if (frame.heading % 90 === 0) diagonalLengths.push((halves[0].tip + halves[1].tip) / 2);
+        }
+        expect(Math.max(...diagonalLengths) - Math.min(...diagonalLengths)).toBeLessThan(.9);
+    }
+});
+
 test('civilian truck reuses only its exact accepted source family', () => {
     expect(vxlActorIdentity('DTRUCK', 'TRUCKA')).toBe('DTRUCK');
     expect(vxlActorIdentity('DTRUCK', 'DTRUCK')).toBe('DTRUCK');

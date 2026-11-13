@@ -21,6 +21,7 @@ interface Alliance {
 }
 export class Alliances {
     private alliances: Alliance[] = [];
+    private scenarioAllies = new Map<Player, Set<Player>>();
     constructor(private playerList: PlayerList) { }
     findByPlayers(player1: Player, player2: Player): Alliance | undefined {
         const pair = new PlayerPair(player1, player2);
@@ -85,10 +86,17 @@ export class Alliances {
         this.alliances.splice(this.alliances.indexOf(alliance), 1);
     }
     areAllied(player1: Player, player2: Player): boolean {
+        const scenario = this.scenarioAllies.get(player1);
+        if (scenario) return scenario.has(player2);
         const alliance = this.findByPlayers(player1, player2);
         return !!alliance && alliance.status === AllianceStatus.Formed;
     }
+    setScenarioAllies(player: Player, allies: Player[]): void {
+        this.scenarioAllies.set(player, new Set(allies.filter(ally => ally !== player)));
+    }
     getAllies(player: Player): Player[] {
+        const scenario = this.scenarioAllies.get(player);
+        if (scenario) return [...scenario];
         return this.filterByPlayer(player)
             .filter(alliance => alliance.status === AllianceStatus.Formed)
             .map(alliance => alliance.players.first === player
@@ -128,13 +136,14 @@ export class Alliances {
         return hostilePairs;
     }
     getHash(): number {
-        return fnv32a(this.alliances
+        return fnv32a([...this.alliances
             .map(alliance => [
             this.playerList.getPlayerNumber(alliance.players.first),
             this.playerList.getPlayerNumber(alliance.players.second),
             alliance.status
         ])
-            .flat());
+            .flat(), ...[...this.scenarioAllies].flatMap(([player, allies]) =>
+                [...allies].flatMap(ally => [this.playerList.getPlayerNumber(player), this.playerList.getPlayerNumber(ally)]))]);
     }
     debugGetState(): Array<{
         first: Player;

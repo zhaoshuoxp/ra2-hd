@@ -1,0 +1,565 @@
+{
+  "status": "PASS_M3_1_FEEDBACK_R3B_MAC_DELIVERY_PENDING_USER_REVIEW_MAIN_INTEGRATION_PREPARED",
+  "runtimeSourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d",
+  "changes": [
+    "Original AlliedCampaignSelect, BootCampSelect and SovietCampaignSelect playback on hover/focus.",
+    "Loading world-map registration uses the original centered mission plane and a stable Atlantic-US locator.",
+    "Score apparatus and live text share a 0.78 scale; per-frame matting removes the opaque baked plate.",
+    "Named campaign saving/loading reuses the frozen bugfix UI, confirmations and HD artwork. The journal-v3 checkpoint remains unchanged inside a separate checksum envelope/database; the old manual slot is a read-only list row until the user explicitly overwrites or deletes it.",
+    "Lit and unlit progress use the same glossy cylinder texture, seams and highlights; amber lighting is bounded to the cylinder. Existing silver ornaments and exposed cable remain.",
+    "A shared frame selector clamps callbacks before effect startup and holds the last opening frame, fixing the Original-mode renderer exception found in the intermediate R3."
+  ],
+  "verification": {
+    "focused": {
+      "pass": 51,
+      "fail": 0,
+      "assertions": 811,
+      "files": 13
+    },
+    "typecheck": "PASS",
+    "native": [
+      {
+        "directory": "native-original-final",
+        "status": "PASS_PACKAGED_ENTRY_EDITION_RECOVERY_AND_PLAYABLE_MISSION",
+        "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d",
+        "cases": 9,
+        "screenshots": [
+          "01-direct-ra2-faction-menu.png",
+          "02-window-1280x900.png",
+          "02-window-1774x1163.png",
+          "03-application-fullscreen.png",
+          "04-yr-direct-ra2-entry.png",
+          "05-original-faction-menu.png",
+          "06-original-introduction.png",
+          "07-hd-soviet01-loading.png",
+          "08-playable-soviet01-real-keyboard-order.png"
+        ],
+        "arrowFrames": [
+          {
+            "faction": "allied",
+            "frame": "2"
+          },
+          {
+            "faction": "tutorial",
+            "frame": "2"
+          },
+          {
+            "faction": "soviet",
+            "frame": "2"
+          },
+          {
+            "faction": "allied",
+            "frame": "2"
+          },
+          {
+            "faction": "tutorial",
+            "frame": "2"
+          },
+          {
+            "faction": "soviet",
+            "frame": "2"
+          },
+          {
+            "faction": "allied",
+            "frame": "2"
+          },
+          {
+            "faction": "tutorial",
+            "frame": "2"
+          },
+          {
+            "faction": "soviet",
+            "frame": "2"
+          },
+          {
+            "faction": "allied",
+            "frame": "2"
+          },
+          {
+            "faction": "tutorial",
+            "frame": "2"
+          },
+          {
+            "faction": "soviet",
+            "frame": "2"
+          }
+        ]
+      },
+      {
+        "directory": "native-release-cn",
+        "status": "PASS_NATIVE_RESPONSIVE_CAPTIONS_AND_TRAINER",
+        "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d",
+        "cases": 9,
+        "screenshots": [
+          "selection-800x600.png",
+          "selection-1280x720.png",
+          "selection-1680x720.png",
+          "selection-720x900.png",
+          "selection-fullscreen.png",
+          "arrows-one-active-faction.png",
+          "subtitle-zh-CN.png",
+          "loading-zh-CN-800x600.png",
+          "loading-zh-CN-1280x720.png",
+          "loading-complete-component.png",
+          "loading-zh-CN-1680x720.png",
+          "loading-zh-CN-720x900.png",
+          "game-information-upper-right.png",
+          "trainer-clickable-modified-campaign.png",
+          "modified-campaign-save-rejected.png"
+        ]
+      },
+      {
+        "directory": "native-save-final",
+        "status": "PASS_NATIVE_CAMPAIGN_NAMED_SAVE_LOAD_RESTART_REPLACE_DELETE_AND_LEGACY_COMPATIBILITY",
+        "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d",
+        "cases": 7,
+        "screenshots": [
+          "01-legacy-campaign-load-list.png",
+          "02-named-campaign-save-list.png",
+          "03-confirm-current-mission-load.png",
+          "04-named-save-restored-after-app-restart.png",
+          "05-named-delete-preserves-legacy-row.png",
+          "06-damaged-save-rejected-with-live-world-preserved.png"
+        ]
+      },
+      {
+        "directory": "native-victory-final",
+        "status": "PASS_ORIGINAL_VICTORY_AUDIO_AND_RESPONSIVE_SCORE",
+        "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d",
+        "screenshots": [
+          "score-victory-800x600.png",
+          "score-victory-1280x720.png",
+          "score-victory-1680x720.png",
+          "score-victory-720x900.png"
+        ]
+      },
+      {
+        "directory": "native-desktop-save",
+        "status": "PASS_NATIVE_CAMPAIGN_NAMED_SAVE_LOAD_RESTART_REPLACE_DELETE_AND_LEGACY_COMPATIBILITY",
+        "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d",
+        "cases": 7,
+        "screenshots": [
+          "01-legacy-campaign-load-list.png",
+          "02-named-campaign-save-list.png",
+          "03-confirm-current-mission-load.png",
+          "04-named-save-restored-after-app-restart.png",
+          "05-named-delete-preserves-legacy-row.png",
+          "06-damaged-save-rejected-with-live-world-preserved.png"
+        ]
+      },
+      {
+        "directory": "native-desktop-original",
+        "status": "PASS_PACKAGED_ENTRY_EDITION_RECOVERY_AND_PLAYABLE_MISSION",
+        "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d",
+        "cases": 9,
+        "screenshots": [
+          "01-direct-ra2-faction-menu.png",
+          "02-window-1280x900.png",
+          "02-window-1774x1163.png",
+          "03-application-fullscreen.png",
+          "04-yr-direct-ra2-entry.png",
+          "05-original-faction-menu.png",
+          "06-original-introduction.png",
+          "07-hd-soviet01-loading.png",
+          "08-playable-soviet01-real-keyboard-order.png"
+        ],
+        "arrowFrames": [
+          {
+            "faction": "allied",
+            "frame": "2"
+          },
+          {
+            "faction": "tutorial",
+            "frame": "2"
+          },
+          {
+            "faction": "soviet",
+            "frame": "2"
+          },
+          {
+            "faction": "allied",
+            "frame": "2"
+          },
+          {
+            "faction": "tutorial",
+            "frame": "2"
+          },
+          {
+            "faction": "soviet",
+            "frame": "2"
+          },
+          {
+            "faction": "allied",
+            "frame": "2"
+          },
+          {
+            "faction": "tutorial",
+            "frame": "2"
+          },
+          {
+            "faction": "soviet",
+            "frame": "2"
+          },
+          {
+            "faction": "allied",
+            "frame": "2"
+          },
+          {
+            "faction": "tutorial",
+            "frame": "2"
+          },
+          {
+            "faction": "soviet",
+            "frame": "2"
+          }
+        ]
+      },
+      {
+        "directory": "native-desktop-default",
+        "status": "PASS_DEFAULT_PROFILE_DIRECT_ENTRY_AND_SAVE_PRESERVATION",
+        "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d",
+        "cases": 2,
+        "screenshots": [
+          "01-direct-ra2-faction-menu.png"
+        ],
+        "savePreservation": {
+          "exists": false,
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "unchanged": true
+        }
+      }
+    ],
+    "originalMode": "Two fresh-candidate passes and the actual Desktop extraction pass repeated faction hovering, nine entry/recovery/playability/return cases and real keyboard orders without page errors.",
+    "save": "Native exact-world/RNG/campaign restore after a complete app restart, legacy fixture compatibility, overwrite/delete/cancel, corrupted checksum rejection and formal modified-save rejection pass.",
+    "victory": {
+      "tick": 20090,
+      "hash": 3978379262,
+      "sourceVoice": "ended",
+      "cheer": "ended",
+      "scale": 0.78,
+      "observedDistinctEmblemFrames": 25
+    },
+    "unchangedReuse": {
+      "english": "../feedback-r3/native-release-en/report.json",
+      "traditionalChinese": "../feedback-r3/native-release-tw/report.json",
+      "defeat": "../feedback-r3/native-defeat-final/report.json",
+      "scope": "No subtitle-track, locale, defeat behavior or defeat visual-layout changes. Source heads are labeled in the embedded review."
+    },
+    "ui": {
+      "budgetBytes": 16777216,
+      "compositedPixelCap": 1700000,
+      "unchanged": true
+    },
+    "pointerLock": {
+      "acquisition": "REJECTED_BY_AUTOMATION_HOST",
+      "realDomClicks": "PASS",
+      "controlledLockedHandoff": "PASS",
+      "physicalFeel": "PENDING_USER_REVIEW"
+    }
+  },
+  "resources": {
+    "unchangedBundledFiles": 14004,
+    "campaignPins": [
+      {
+        "name": "manifest.json",
+        "sha256": "8400a42032b4de312cab9a3c7a083373fd8f113f131d91d1adadc86d48942596",
+        "bytes": 12123
+      },
+      {
+        "name": "sov01t.map",
+        "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f",
+        "bytes": 184260
+      },
+      {
+        "name": "presentation.json",
+        "sha256": "b85da5719e2a5a07430d8ca1b455e4bdce0a27f897c60c838de05150c90ec850",
+        "bytes": 5188
+      },
+      {
+        "name": "interface-hd.json",
+        "sha256": "230cf7576d9440210f707ae90f9dfa8b44953b65ce907c6098e0d4b03ba5c613",
+        "bytes": 709128
+      },
+      {
+        "name": "score-presentation.json",
+        "sha256": "c1efdf1063ac92fc556ce6aa4859e8823eaa1b16b3ae127481ec76bef0701139",
+        "bytes": 1668
+      }
+    ],
+    "rulesScriptsObjectivesUnchanged": true
+  },
+  "delivery": {
+    "archive": {
+      "status": "PASS_ZIP_ALL_BYTES_LINKS_AND_MODES",
+      "path": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r3b/RA2-HD-M3.1-Mac-arm64-20261024-R3b.zip",
+      "bytes": 5755930109,
+      "sha256": "cf1489ae763293aad7ebe4f97d7ee224f05e35293395f8a030b67a87152d1ca3",
+      "entries": 14546,
+      "inventorySha256": "11565d2f4104a724f67f65eb5768ae703fc8bdd2c934647c7c44d4d23597d1e4"
+    },
+    "delivered": {
+      "status": "PASS_DESKTOP_COPY_HASH_MATCH",
+      "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R3b.zip",
+      "bytes": 5755930109,
+      "sha256": "cf1489ae763293aad7ebe4f97d7ee224f05e35293395f8a030b67a87152d1ca3",
+      "entries": 14546,
+      "inventorySha256": "11565d2f4104a724f67f65eb5768ae703fc8bdd2c934647c7c44d4d23597d1e4",
+      "sourceArchive": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r3b/RA2-HD-M3.1-Mac-arm64-20261024-R3b.zip"
+    },
+    "extracted": {
+      "status": "PASS_ACTUAL_DESKTOP_ZIP_EXTRACTED_ALL_BYTES_LINKS_MODES_AND_SIGNATURE",
+      "desktopZip": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R3b.zip",
+      "zipSha256": "cf1489ae763293aad7ebe4f97d7ee224f05e35293395f8a030b67a87152d1ca3",
+      "folder": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r3b/Relocated R3b Test/RA2-HD-M3.1-Mac-arm64-20261024-R3b",
+      "app": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r3b/Relocated R3b Test/RA2-HD-M3.1-Mac-arm64-20261024-R3b/Red Alert 2 HD M3.1 Campaign R3b.app",
+      "executable": "RA2 HD M3.1",
+      "entries": 14546
+    },
+    "strictSignature": "PASS",
+    "appBytesIdenticalToNativeCandidate": true,
+    "review": {
+      "status": "PASS_ALL_SCREENSHOTS_EMBEDDED_BYTE_IDENTICALLY",
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r3b/M3.1-Feedback-R3b-Review.html",
+      "bytes": 47940658,
+      "sha256": "dbb9f969995867cc58f5a57c586e520d05f765abc34b73495e2f168665a1557b",
+      "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d",
+      "images": [
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-release-cn/arrows-one-active-faction.png",
+          "bytes": 2535528,
+          "sha256": "955ae2d54c65379b219285f8cfee3e4432fa7348db58e723414bae1772935bd0",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-original-final/05-original-faction-menu.png",
+          "bytes": 1991673,
+          "sha256": "5a6a0f5a8e398130a2137a707149728387ca0e935341777b740cc1b381539b79",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-release-cn/loading-zh-CN-800x600.png",
+          "bytes": 1806062,
+          "sha256": "179aa9e98123419c2684c6d8356b4bb1925270694f2da42ea18120d8c5b26fe9",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-release-cn/loading-zh-CN-1680x720.png",
+          "bytes": 3413353,
+          "sha256": "c2191611e8291b8b8ba32912bdcdea967be9f1ad36812fb62edf3911a49122ba",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-release-cn/loading-complete-component.png",
+          "bytes": 350108,
+          "sha256": "786c2c46a26cbfb21185466e8cb26b9e040a1151ed04533da914a9c0f516564e",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-victory-final/score-victory-800x600.png",
+          "bytes": 1792087,
+          "sha256": "3d5514d6a006ef2c943593eaa967dce6da2bbcabecb43a3e82fa85c6ce4012be",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-victory-final/score-victory-1680x720.png",
+          "bytes": 3838944,
+          "sha256": "e15cdc09369ee45765d5a2584356e91bfc2fec496b0a7f63bb99e3b94ff0eb6e",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3/native-defeat-final/score-defeat-720x900.png",
+          "bytes": 1736313,
+          "sha256": "53d074b601b1e29bcc0d8fb48a8fd1969d26195cff1fd199797c53c405849e8b",
+          "sourceHead": "86df6369340b90407462724d1c9d602fde8286d7"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-save-final/01-legacy-campaign-load-list.png",
+          "bytes": 3008588,
+          "sha256": "88f24c72e42dd9edd39e84a5e80d440c95727c193c46d530bb8f97e6f80ec6eb",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-save-final/02-named-campaign-save-list.png",
+          "bytes": 3188040,
+          "sha256": "a1ffb0c07eb46deb33443a9c9f1ddc75f3a8af9d782742cabcb6a92877b2557d",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-save-final/03-confirm-current-mission-load.png",
+          "bytes": 2104990,
+          "sha256": "0d6431f15fdfb273bbc14c36c4f6e0ec11ba3edb8a6e16bf2b29b6605cf38ad6",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-save-final/04-named-save-restored-after-app-restart.png",
+          "bytes": 1335311,
+          "sha256": "153ef33fa76f491523822a6e8be29b32ea3dc5cd66284af3e1495852ae805500",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-save-final/06-damaged-save-rejected-with-live-world-preserved.png",
+          "bytes": 2152286,
+          "sha256": "4807350ed72867013c478cbffc91e73db7f2e8dab909448d6a921e17b003be2c",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3b/native-release-cn/modified-campaign-save-rejected.png",
+          "bytes": 1955903,
+          "sha256": "ddf525286da417569e0af2a6956fbf98743e7aff7ef3da06d59b933f056883e4",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3/native-release-en/subtitle-en-US.png",
+          "bytes": 2369790,
+          "sha256": "154dc7de7e4d7e04eaa3641366d9ae9cb1907bc170434c7e7767614965dc99a3",
+          "sourceHead": "f203ec2ee45ca61dd9bff0a264c6297a95af83ca"
+        },
+        {
+          "file": ".artifacts/m3-1/feedback-r3/native-release-tw/subtitle-zh-TW.png",
+          "bytes": 2366220,
+          "sha256": "65fcacdd844a9e95d6c78c78f141c57a3753d4b717db0c0dc67eef38bc78af97",
+          "sourceHead": "f203ec2ee45ca61dd9bff0a264c6297a95af83ca"
+        }
+      ],
+      "captureBuilds": [
+        {
+          "name": "native-original-final",
+          "status": "PASS_PACKAGED_ENTRY_EDITION_RECOVERY_AND_PLAYABLE_MISSION",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "name": "native-release-cn",
+          "status": "PASS_NATIVE_RESPONSIVE_CAPTIONS_AND_TRAINER",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "name": "native-save-final",
+          "status": "PASS_NATIVE_CAMPAIGN_NAMED_SAVE_LOAD_RESTART_REPLACE_DELETE_AND_LEGACY_COMPATIBILITY",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "name": "native-victory-final",
+          "status": "PASS_ORIGINAL_VICTORY_AUDIO_AND_RESPONSIVE_SCORE",
+          "sourceHead": "fa8494701e08c0b1d4a0af68240f541fb897ff0d"
+        },
+        {
+          "name": "native-release-en",
+          "status": "PASS_NATIVE_RESPONSIVE_CAPTIONS_AND_TRAINER",
+          "sourceHead": "f203ec2ee45ca61dd9bff0a264c6297a95af83ca"
+        },
+        {
+          "name": "native-release-tw",
+          "status": "PASS_NATIVE_RESPONSIVE_CAPTIONS_AND_TRAINER",
+          "sourceHead": "f203ec2ee45ca61dd9bff0a264c6297a95af83ca"
+        },
+        {
+          "name": "native-defeat-final",
+          "status": "PASS_ORIGINAL_DEFEAT_AUDIO_AND_RESPONSIVE_SCORE",
+          "sourceHead": "86df6369340b90407462724d1c9d602fde8286d7"
+        }
+      ],
+      "browserPreview": "Not attempted again after the prior file:// URL-policy rejection; static PNG/hash checks pass."
+    }
+  },
+  "integrationPreparation": {
+    "status": "PASS_ISOLATED_MERGE_REHEARSAL_AND_BOTH_NATIVE_SAVE_FLOWS_MAIN_UNCHANGED",
+    "donor": {
+      "head": "dc494dbd59363439ae830fad5e81134ef36ee95b",
+      "snapshot": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r3/donor/snapshot.json",
+      "snapshotCommit": "88be7932",
+      "state": "Frozen uncommitted bugfix source; not a commit on canonical main"
+    },
+    "campaignRuntime": "fa8494701e08c0b1d4a0af68240f541fb897ff0d",
+    "resolvedHead": "eee81c005651598b376a05fa04a359f96909bed9",
+    "nativeSourceHead": "0d526d49a49ed590ce9918906427cf190c3e5f69",
+    "nativeToResolvedDelta": [
+      "src/gui/campaign/CampaignAnimation.ts",
+      "src/gui/campaign/CampaignChrome.tsx",
+      "src/gui/campaign/CampaignResult.tsx",
+      "src/gui/campaign/CampaignSelection.tsx"
+    ],
+    "resolvedConflicts": [
+      "public/res/locale/en-US.json",
+      "public/res/locale/zh-CN.json",
+      "public/res/locale/zh-TW.json",
+      "src/Gui.ts",
+      "src/gui/screen/ScreenType.ts",
+      "src/gui/screen/game/GameMenu.ts",
+      "src/gui/screen/game/GameScreen.ts",
+      "src/gui/screen/game/gameMenu/GameMenuHomeScreen.ts",
+      "src/network/gamestate/SoloPlayTurnManager.ts"
+    ],
+    "decisions": [
+      "Campaign=22, LoadGame=23, CampaignSaves=24; both route registries retained.",
+      "A per-game screen-map copy prevents campaign saves replacing the skirmish page for a later match.",
+      "Both independent save schemas use the same SaveBrowser; the skirmish page delegates through a thin adapter.",
+      "Skirmish command/trainer journals, restoring and pause behavior are retained; campaign uses its verified checkpoint journal and formal-modification gate.",
+      "Campaign and skirmish end audio and result cleanup retain their own paths."
+    ],
+    "tests": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r3b/merge-tests-final.log",
+      "passed": 56,
+      "failed": 0,
+      "assertions": 844
+    },
+    "typecheck": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r3b/merge-typecheck-final.log",
+    "native": {
+      "campaign": "PASS_NATIVE_CAMPAIGN_NAMED_SAVE_LOAD_RESTART_REPLACE_DELETE_AND_LEGACY_COMPATIBILITY",
+      "skirmish": "PASS_NATIVE_RESTART_SAVE_LOAD_CONTINUATION_AND_RESAVE"
+    },
+    "bundle": {
+      "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r3b/M3.1-R3b-Final-Integration-Preparation.bundle",
+      "bytes": 14255627,
+      "sha256": "a341bcdd0da0df9f3001aa6bd00fa66bf580d8b4c07bef4a53ad0f5ad77fcca2",
+      "baseRequired": "dc494dbd59363439ae830fad5e81134ef36ee95b"
+    },
+    "limit": "The prior native combined campaign/skirmish save evidence uses 0d526d49. Later changes are the loading-filter region and safe campaign UI frame selection; both save backends, GameScreen and simulation source remain identical. The updated combined source passes typecheck and 56 focused cases. R3b has fresh native Original/HD/save/victory checks. Main remains unmodified."
+  },
+  "canonicalMain": {
+    "observedHead": "344f04be7fb8b97991a22caefc0c91ed0bebc791",
+    "modifiedByThisTask": false,
+    "integrated": false
+  },
+  "retainedIntermediate": {
+    "directory": "../feedback-r3",
+    "desktopZip": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261024-R3.zip",
+    "status": "SUPERSEDED_INTERMEDIATE_ORIGINAL_MODE_FAILURE",
+    "cause": {
+      "cause": "A queued browser callback can carry a timestamp earlier than the effect start. JavaScript negative remainder made the source-frame index negative.",
+      "example": {
+        "time": 90,
+        "started": 100,
+        "framesPerSecond": 15,
+        "previousIndex": -1,
+        "previousFrameMissing": true,
+        "correctedLoopFrame": 1,
+        "correctedOpeningFrame": 5
+      },
+      "fix": [
+        "CampaignSpriteCanvas uses the shared nonnegative frame selector.",
+        "Score opening uses the same selector in hold-last-frame mode."
+      ],
+      "test": "51 focused cases / 811 assertions; includes pre-start callbacks, complete source cycles and opening-frame hold behavior.",
+      "nativeOriginalCandidate": "PASS: 12 repeated faction hovers, nine entry/edition-recovery/playability/return cases, no page errors."
+    },
+    "failedReport": "../feedback-r3/native-desktop-original/report.json",
+    "note": "The R3 intermediate and all failed/early source, package and observer evidence remain retained. Only R3b is the final delivery."
+  },
+  "browserReview": {
+    "status": "STATIC_EMBEDDING_AND_PNG_DECODING_PASS",
+    "images": 16,
+    "inAppPreview": "Not retried after the prior file:// URL-policy rejection; the browser allows HTTP/HTTPS only. No workaround was attempted. The self-contained HTML is included for manual opening."
+  },
+  "acceptance": {
+    "base": "Previously accepted; preserved",
+    "currentVisualAndPhysical": "PENDING_USER_REVIEW",
+    "windows": "NOT_RUN_ON_THIS_MAC"
+  },
+  "operations": {
+    "mainMerge": false,
+    "cleanup": false,
+    "remotePush": false,
+    "publication": false,
+    "nextMission": false
+  }
+}

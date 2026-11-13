@@ -5,6 +5,7 @@ import { Engine } from "@/engine/Engine";
 import { TileSets } from "@/game/theater/TileSets";
 import { TheaterType } from "@/engine/TheaterType";
 import { ObjectType } from "@/engine/type/ObjectType";
+import { CampaignMapFile } from '@/data/campaign/CampaignMapFile';
 interface BuildingRule {
     undeploysInto?: string;
 }
@@ -17,7 +18,7 @@ export class MapSupport {
         if (map.iniFormat < 4) {
             return translator.get("TS:MapUnsupportedGame");
         }
-        if (map.startingLocations.length < 2) {
+        if (!(map instanceof CampaignMapFile) && map.startingLocations.length < 2) {
             return translator.get("TXT_SCENARIO_TOO_SMALL", map.startingLocations.length);
         }
         if (!Engine.supportsTheater(map.theaterType)) {

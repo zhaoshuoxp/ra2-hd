@@ -4,17 +4,25 @@ import { disposeHdSprite, resolveHdSprite } from './resolveHdSprite';
 import type { PowerPlantHdEntry } from './resolvePowerPlantHd';
 import { environmentHdContractForTheater, environmentMemberSource } from './environmentHdContract';
 import { retainHdTextureSource } from '@/engine/gfx/retainedHdTextureSource';
+import type { BuildingTurretHd } from '../building/BuildingTurretHd';
+
+export type EnvironmentTurretLoad = {
+    gpuBytes: number; workingBytes: number; load: () => Promise<BuildingTurretHd>;
+};
 
 export class EnvironmentHd {
     readonly overrides = new Map<object, HdSpriteOverride>();
     readonly families = new Map<string, Map<object, HdSpriteOverride>>();
+    readonly turrets = new Map<string, BuildingTurretHd>();
     readonly report = { density: 1, gpuBytes: 0, retainedCpuBytes: 0, worldChargeBytes: 0, loadingPeakBytes: 0,
         restoreWorkingBytes: 0,
         budget: 0, disposed: false, families: {} as Record<string, any> };
     dispose() {
         new Set(this.overrides.values()).forEach(disposeHdSprite);
+        new Set(this.turrets.values()).forEach(turret => turret.dispose());
         this.overrides.clear();
         this.families.clear();
+        this.turrets.clear();
         Object.assign(this.report, { gpuBytes: 0, retainedCpuBytes: 0, worldChargeBytes: 0,
             restoreWorkingBytes: 0, disposed: true });
     }
@@ -22,16 +30,19 @@ export class EnvironmentHd {
 
 export async function resolveEnvironmentFamily(identity: string, entries: PowerPlantHdEntry[],
     density: 2 | 4, budget: number, maxTextureSize: number,
-    upload: (textures: THREE.Texture[]) => void | Promise<void>, stopped = () => false) {
+    upload: (textures: THREE.Texture[]) => void | Promise<void>, stopped = () => false,
+    attachment?: EnvironmentTurretLoad) {
     const overrides = new Map<object, HdSpriteOverride>();
     const attempts: { reason: string; member?: string }[] = [];
     let gpuBytes = 0, retainedCpuBytes = 0, loadingPeakBytes = 0;
+    let turret: BuildingTurretHd | undefined;
     try {
         const selected = environmentHdContractForTheater(entries[0]?.source.theater);
         const declared = selected?.families[identity];
         const names = entries.map(entry => entry.source.member).sort();
         if (!declared || JSON.stringify(names) !== JSON.stringify(declared.members)
             || new Set(entries.map(entry => entry.image)).size !== names.length) throw Error('incomplete-environment-family');
+        if (declared.requiredTurret && !attachment) throw Error('missing-environment-turret');
         for (const entry of entries) {
             if (stopped()) throw Error('cancelled');
             const native = environmentMemberSource(selected!, identity, entry.source.member);
@@ -67,16 +78,28 @@ export async function resolveEnvironmentFamily(identity: string, entries: PowerP
         }
         retainedCpuBytes = encodedBytes;
         reserve(gpuBytes + retainedCpuBytes + decodePeak);
+        if (attachment) {
+            // Reserve the whole retained attachment and its decode workspace
+            // before creating any bitmap. Both parts publish in one transaction.
+            reserve(gpuBytes + retainedCpuBytes + decodePeak + attachment.gpuBytes * 2 + attachment.workingBytes);
+            if (stopped()) throw Error('cancelled');
+            turret = await attachment.load();
+            if (turret.gpuBytes !== attachment.gpuBytes || turret.density !== density || turret.disposed)
+                throw Error('environment-turret-allocation');
+            gpuBytes += turret.gpuBytes;
+            retainedCpuBytes += turret.retainedCpuBytes;
+        }
         if (stopped()) throw Error('cancelled');
-        await upload(textures);
+        await upload([...textures, ...(turret?.textures ?? [])]);
         if (stopped()) throw Error('cancelled');
-        return { overrides, density, gpuBytes, retainedCpuBytes, loadingPeakBytes, restoreWorkingBytes: decodePeak,
+        return { overrides, turret, density, gpuBytes, retainedCpuBytes, loadingPeakBytes, restoreWorkingBytes: decodePeak,
             worldChargeBytes: gpuBytes + retainedCpuBytes, attempts };
     } catch (error) {
         overrides.forEach(disposeHdSprite);
+        turret?.dispose();
         overrides.clear();
         attempts.push({ reason: error instanceof Error ? error.message : 'environment-family-failed' });
-        return { overrides, density: 1, gpuBytes: 0, retainedCpuBytes: 0, worldChargeBytes: 0,
+        return { overrides, turret: undefined, density: 1, gpuBytes: 0, retainedCpuBytes: 0, worldChargeBytes: 0,
             restoreWorkingBytes: 0, loadingPeakBytes, attempts };
     }
 }

@@ -12,6 +12,7 @@ interface PlacementOptions {
     normalizedTile?: boolean;
     ignoreObjects?: any[];
     ignoreAdjacent?: boolean;
+    ignoreShroud?: boolean;
 }
 interface PlacementPreviewTile {
     rx: number;
@@ -46,7 +47,9 @@ interface Player {
 interface Game {
     gameOpts: {
         buildOffAlly: boolean;
+        campaign?: { edition: string; semanticsVersion?: number };
     };
+    localPlayer?: Player;
     alliances: {
         getAllies(player: Player): Player[];
     };
@@ -78,6 +81,7 @@ interface GameMap {
         calculateTilesForGameObject(tile: Tile, object: Building): Tile[];
     };
     isWithinBounds(tile: Tile): boolean;
+    mapBounds: { isWithinPlayerBounds(tile: Tile): boolean };
     getObjectsOnTile(tile: Tile): any[];
     getGroundObjectsOnTile(tile: Tile): any[];
 }
@@ -176,7 +180,7 @@ export class ConstructionWorker {
         return false;
     }
     getPlacementPreview(buildingName: string, targetTile: Tile, options: PlacementOptions = {}): PlacementPreviewTile[] {
-        const { normalizedTile = false, ignoreObjects, ignoreAdjacent = false, } = options;
+        const { normalizedTile = false, ignoreObjects, ignoreAdjacent = false, ignoreShroud = false } = options;
         const buildingRules = this.rules.getBuilding(buildingName);
         const buildingArt = this.art.getObject(buildingName, ObjectType.Building);
         const previewTiles: PlacementPreviewTile[] = [];
@@ -204,7 +208,7 @@ export class ConstructionWorker {
                     previewTiles.push({
                         rx: tileCoords.x,
                         ry: tileCoords.y,
-                        buildable: canPlace && this.isTileBuildable(tile, buildingRules, ignoreObjects),
+                        buildable: canPlace && this.isTileBuildable(tile, buildingRules, ignoreObjects, ignoreShroud),
                     });
                 }
             }
@@ -218,7 +222,7 @@ export class ConstructionWorker {
         return previewTiles;
     }
     canPlaceAt(buildingName: string, targetTile: Tile, options: PlacementOptions = {}): boolean {
-        const { normalizedTile = false, ignoreObjects, ignoreAdjacent = false, } = options;
+        const { normalizedTile = false, ignoreObjects, ignoreAdjacent = false, ignoreShroud = false } = options;
         const buildingRules = this.rules.getBuilding(buildingName);
         const buildingArt = this.art.getObject(buildingName, ObjectType.Building);
         const foundation = buildingArt.foundation;
@@ -240,7 +244,7 @@ export class ConstructionWorker {
             for (let y = 0; y < foundation.height; y++) {
                 const tileCoords = { x: placementTile.rx + x, y: placementTile.ry + y };
                 const tile = this.map.tiles.getByMapCoords(tileCoords.x, tileCoords.y);
-                if (!tile || !this.isTileBuildable(tile, buildingRules, ignoreObjects)) {
+                if (!tile || !this.isTileBuildable(tile, buildingRules, ignoreObjects, ignoreShroud)) {
                     return false;
                 }
             }
@@ -349,12 +353,17 @@ export class ConstructionWorker {
         }
         return connectingTiles;
     }
-    private isTileBuildable(tile: Tile, buildingRules: any, ignoreObjects?: any[]): boolean {
+    private isTileBuildable(tile: Tile, buildingRules: any, ignoreObjects?: any[], ignoreShroud = false): boolean {
         if (!this.map.isWithinBounds(tile)) {
             return false;
         }
+        const campaign = this.game.gameOpts.campaign;
+        if (campaign?.edition === 'yr' && (campaign.semanticsVersion ?? 1) >= 32
+            && this.player === this.game.localPlayer && !ignoreShroud && !this.map.mapBounds.isWithinPlayerBounds(tile)) {
+            return false;
+        }
         const playerShroud = this.game.mapShroudTrait.getPlayerShroud(this.player);
-        if (playerShroud?.isShrouded(tile)) {
+        if (!ignoreShroud && playerShroud?.isShrouded(tile)) {
             return false;
         }
         const groundObjects = this.map.getGroundObjectsOnTile(tile);

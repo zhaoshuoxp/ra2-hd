@@ -1,6 +1,7 @@
-import { BufferGeometryUtils } from "@/engine/gfx/BufferGeometryUtils";
+import { mergeNativeVxlVertices } from './mergeNativeVxlVertices';
 import * as THREE from 'three';
 class VxlGeometryMonotoneBuilder {
+    constructor(private readonly mergeVertices = mergeNativeVxlVertices) {}
     build(e, t = false) {
         let s = e.getAllVoxels()["voxelField"];
         var { vertices: i, faces: r } = (function (e, t) {
@@ -153,7 +154,7 @@ class VxlGeometryMonotoneBuilder {
                 v.setAttribute("normal", new THREE.BufferAttribute(c, 3)),
             v.setAttribute("color", new THREE.BufferAttribute(h, 3)),
             v.setIndex(new THREE.BufferAttribute(f, 1)),
-            (v = BufferGeometryUtils.mergeVertices(v)),
+            (v = this.mergeVertices(v)),
             v.computeBoundingBox(),
             t && v.computeVertexNormals(),
             v);

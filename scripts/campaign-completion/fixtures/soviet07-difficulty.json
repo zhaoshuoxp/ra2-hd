@@ -1,0 +1,16 @@
+{
+  "mission": "sov07s.map",
+  "sourceSha256": "0ad2fde5c76f17085065f7b43cb76045935774092b2498badc44fe91e7793171",
+  "semanticsVersion": 9,
+  "enemyHouse": "BadGuy1 House",
+  "controlledHouses": 1,
+  "triggers": 62,
+  "aiTriggers": 0,
+  "ignoreGlobal": true,
+  "teamDelays": [2000, 2500, 3500],
+  "cases": {
+    "easy": { "credits": 25000, "human": [1.2, 0.8, 0.8], "enemy": [0.8, 1.2, 1], "aiDelay": 3500 },
+    "hard": { "credits": 10000, "human": [0.8, 1.2, 1], "enemy": [1.2, 0.8, 0.8], "aiDelay": 2000 }
+  },
+  "authority": "Archived original rules.ini difficulty and TeamDelays sections; source sov07s.map Player House Credits=200, General CampaignMoneyDeltaEasy=5000/Hard=-10000, no local difficulty-section override."
+}

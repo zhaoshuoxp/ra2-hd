@@ -1,0 +1,46 @@
+{
+  "schema": "yr-lunar-environment-registration-v2",
+  "status": "PASS_INDEPENDENT_SOURCE_DENSITIES_AND_NATIVE_BUILDING_STATES; COMPLETE_LUNAR_MISSION_AND_VISUAL_REVIEW_PENDING",
+  "source": ".local/source-art/yr-campaign-v1/lunar-environment-r2",
+  "mission": "sov06lmd.map",
+  "sourceSha256": "f55b65fd33a53dd03f61b48259d7732d260a4f97170e6dcf0767a61af82403a4",
+  "pack": {
+    "schemaVersion": 1,
+    "revision": "yr-lunar-environment-v2",
+    "sha256": "ccbbce63f655e8523408da4e120b54c02989cb771be91bff603327db23fa3571"
+  },
+  "families": [
+    "yr-sov06-lunar-rocks-v1",
+    "yr-sov06-lunar-smudges-v1",
+    "yr-sov06-lunar-calunr01-v1",
+    "yr-sov06-lunar-calunr02-v1",
+    "yr-sov06-lunar-yacomd-v1"
+  ],
+  "members": 36,
+  "independentDensities": [
+    2,
+    4
+  ],
+  "payloadFiles": 182,
+  "copiedPayloads": 0,
+  "acceptedPayloadsReplaced": 0,
+  "userVisualAcceptance": "PENDING",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "policy": "Each building binds only its own body and states. Rock and smudge groups keep complete atomic fallback.",
+  "independentVerification": {
+    "sha256": "ccbbce63f655e8523408da4e120b54c02989cb771be91bff603327db23fa3571",
+    "families": 5,
+    "members": 36,
+    "densityFrames": 134,
+    "nativeEmptySlots": 48,
+    "sharedFrames": 10
+  },
+  "nativeEvidence": [
+    "lunar-command-states-2x-r3",
+    "lunar-command-states-4x-r3",
+    "lunar-lander-states-4x-r1",
+    "lunar-flag-states-2x-r1"
+  ],
+  "remaining": "Ground/transitions material seams, complete Lunar mission, representative overlay/decal runtime inspection and user visual acceptance remain pending.",
+  "nativeRubble": "Original rubbleObj is flat and uses the native isometric palette and shadow frame7. Normal/damaged frames use mainObj. Frozen tick, world and RNG remain equal at both densities."
+}

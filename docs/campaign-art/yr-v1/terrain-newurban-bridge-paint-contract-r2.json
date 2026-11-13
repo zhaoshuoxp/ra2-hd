@@ -1,0 +1,68 @@
+{
+  "schema": "yr-source-pinned-newurban-bridge-continuous-paint-v1",
+  "theater": "NEWURBAN",
+  "editions": [
+    "yr"
+  ],
+  "preparedSourceSha256": "26a8e8577a586570f12dcfbd9171b3f974785ef86cd5f3fc5b055c1da8a44a17",
+  "members": {
+    "ovrps09.ubn": "170b9757bfedcac9a7f8192ad87de03a5792dc0110f85c3577af2daeb0a4afb2",
+    "ovrps07.ubn": "2e0ac291b665bad7c4bc0c63d09f4af01dc355169def8a64d2ad519827746101",
+    "ovrps12.ubn": "8283eaa24e3a00a6d698c85624f58ce3173c69d86112c02ec6ef1fdb352b6cbb"
+  },
+  "models": {
+    "ovrps07.ubn": {
+      "kind": "strip",
+      "sign": -1,
+      "center": -2.5,
+      "ramp": 0,
+      "planeBounds": {
+        "axis": "u",
+        "minimum": -45,
+        "maximum": -15
+      }
+    },
+    "ovrps12.ubn": {
+      "kind": "strip",
+      "sign": 1,
+      "center": 62.5,
+      "ramp": 0,
+      "planeBounds": {
+        "axis": "v",
+        "minimum": -75,
+        "maximum": -45
+      }
+    }
+  },
+  "retainedDamagedMember": "ovrps09.ubn",
+  "originalNativeAssembly": {
+    "ovrps09.ubn": "899b855ae0d70541521de86f7894550be85b0a239ea889029809706a5d3747e2",
+    "ovrps07.ubn": "4f4d838ff7670d04582aa467bd660d2959adcf172a2cf9ccda1af0815c8d6c53",
+    "ovrps12.ubn": "4659b2871df2d50bc002d671bb1c307f1d3105e0684746f2fe1b2af689ce7381"
+  },
+  "paint": {
+    "centerOffsets": [
+      -2.12,
+      2.12
+    ],
+    "centerWidth": 1.35,
+    "edgeOffsets": [
+      -51,
+      51
+    ],
+    "edgeWidth": 1.05,
+    "whiteOffsets": [
+      -25.45,
+      25.45
+    ],
+    "whiteWidth": 1.25,
+    "dashPeriod": 10,
+    "dashLength": 8.3
+  },
+  "geometryPolicy": "Reconstruct paint and its original planar asphalt boundary only on the two source-pinned intact bridge decks. Keep the full original road width and continuous isometric ports; use a bounded1.5-native-pixel longitudinal RGB contact to remove baked endpoint paint. Preserve original alpha, metadata, height/depth, raw mothers and all lower wall/water RGB. Retain every damaged09 RGB byte.",
+  "materialPolicy": "Paint colors and clean asphalt under replaced old paint come only from independently sampled genuine HD mother RGB. Original RGB supplies source paint/design anchors only, never output texture, noise or pixel cells.",
+  "nativeValidation": "PENDING",
+  "userVisualAcceptance": "PENDING",
+  "contactNativePixels": 1.5,
+  "asphaltHalfWidth": 53.5
+}

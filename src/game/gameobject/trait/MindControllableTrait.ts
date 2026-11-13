@@ -43,8 +43,13 @@ export class MindControllableTrait {
             world.changeObjectOwner(this.gameObject, owner);
         }
     }
-    [NotifyOwnerChange.onChange](object: any, _oldOwner: any, _world: any): void {
+    [NotifyOwnerChange.onChange](object: any, _oldOwner: any, world: any): void {
         if (this.controller && object.owner !== this.controller.owner) {
+            // Original YR scripted house changes retain the capture node.
+            // FreeUnit later restores its recorded original owner, even when
+            // a mission script temporarily assigned a third house.
+            const campaign = world?.gameOpts?.campaign;
+            if (campaign?.edition === 'yr' && campaign.semanticsVersion >= 37) return;
             this.controller.mindControllerTrait?.cleanTarget(object);
             this.controller = undefined;
             this.prevOwner = undefined;

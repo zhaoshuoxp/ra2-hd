@@ -1,0 +1,368 @@
+{
+  "status": "PASS_MAC_HD_COVERAGE_ORIGINAL_FLAG_AND_DELIVERED_R7_PENDING_USER_ACCEPTANCE",
+  "runtimeSourceHead": "42d843e3d440f634cab379c93f75781cd93c9b0f",
+  "sourceCheckpoint": "docs/m3-1-hd-completion-r7-source.json",
+  "artStandard": {
+    "project": "docs/hd-art-standard.md",
+    "workspace": "/Users/Aone/RA2remaster/AGENTS.md",
+    "crossConversationNote": "/Users/Aone/.codex/memories/extensions/ad_hoc/notes/20261025T062435Z-ra2-persistent-hd-art-finish.md"
+  },
+  "art": {
+    "mode": "built-in-imagegen",
+    "selectedMasters": 15,
+    "index": ".artifacts/m3-1/hd-completion-r7/selected-art.json",
+    "promptSets": [
+      ".artifacts/m3-1/hd-completion-r7/authoring-jobs-v1.json",
+      ".artifacts/m3-1/hd-completion-r7/vxl-authoring-jobs-v1.json",
+      ".artifacts/m3-1/hd-completion-r7/clean-authoring-jobs-r2.json",
+      ".artifacts/m3-1/hd-completion-r7/clean-authoring-jobs-r3.json"
+    ],
+    "userRetained": [
+      "TUG",
+      "PDPLANE"
+    ],
+    "rejectedMaterialsRetained": true
+  },
+  "coverage": {
+    "correctedIdentities": 29,
+    "exactAcceptedReuse": 23,
+    "newCompleteFamilies": 6,
+    "inspectedIdentitiesPerDensity": [
+      133,
+      133
+    ],
+    "densities": [
+      2,
+      4
+    ],
+    "fixedWorldBudgetsMiB": {
+      "2x": 512,
+      "4x": 1280
+    },
+    "newPngPagesVerified": 34,
+    "nativeBuildingStatePoses": 8,
+    "nativeVxlHeadingPoses": 24,
+    "explicitCivilianFixtures": 4,
+    "fixtureBoundary": "Paused diagnostic 4X native app. Renderer-only SHP state/VXL heading poses do not change world state. Four reinforcement civilians are then explicitly injected as separate factory/material fixtures; these are not claimed as natural mission spawns. Actual cargo-plane arrival and flag behavior are proved in opening-native-v3.",
+    "nativeOnlyImageSnapshots": true
+  },
+  "opening": {
+    "densities": [
+      1,
+      2,
+      4
+    ],
+    "firstOccupiedObservedAtTicks": [
+      630,
+      630,
+      630
+    ],
+    "occupancyObservationInterval": "(600, 630] simulation ticks; sampled every 30 ticks, not an exact event timestamp",
+    "matchedTick": 3600,
+    "worldHash": 1965294077,
+    "rngAndMissionStateIdentical": true,
+    "actualOriginalTeam": "Occupy Memorial / Other3 House / E2",
+    "animation": "CAWA19_AG",
+    "loop": [
+      33,
+      47
+    ],
+    "nativeTriggerStateInjected": false,
+    "nativeActorInjected": false,
+    "nativeAircraftSpawnConfirmed": true
+  },
+  "tests": {
+    "passed": 84,
+    "failed": 0,
+    "assertions": 1198,
+    "entryTypecheck": "PASS",
+    "nativeDesktopEntryCases": 9,
+    "nativePageAndResourceErrors": 0,
+    "nativeWindows": "NOT_RUN_ON_THIS_MAC"
+  },
+  "delivery": {
+    "status": "PASS_DESKTOP_COPY_HASH_MATCH",
+    "path": "/Users/Aone/Desktop/RA2-HD-M3.1-Mac-arm64-20261025-R7.zip",
+    "bytes": 5833790221,
+    "sha256": "b18e14fee9f46af11875a6e8255759c6f03bcc93fe505722f9f409fd09e1355c",
+    "entries": 14614,
+    "inventorySha256": "9b793e3a32033fd03180cbca46c24bcb4c862381644dba5034cb463eae7601d9",
+    "sourceArchive": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/hd-completion-r7/RA2-HD-M3.1-Mac-arm64-20261025-R7.zip",
+    "app": "Red Alert 2 HD M3.1 Campaign R7.app",
+    "strictSignature": "PASS",
+    "extractedEntries": 14614,
+    "selectedResources": 14067
+  },
+  "review": {
+    "status": "PASS_SELF_CONTAINED_EMBEDDED_NATIVE_PNG_REVIEW",
+    "file": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/hd-completion-r7/compact-review/M3.1-HD-Completion-R7-Review.html",
+    "bytes": 140793026,
+    "sha256": "62b140faad21bfdbf5d896387282068750a4d0f30488a49949596b7274db9769",
+    "sourceHead": "42d843e3d440f634cab379c93f75781cd93c9b0f",
+    "images": [
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/opening-native-v3/4x-original-us-flag.png",
+        "bytes": 3085558,
+        "sha256": "241ca310600a7fa53e78c3b58e8bbd55a4eee8d273c9af9942db02b2a21e604f",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "4X: Original US flag before the Soviet team enters the memorial."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/opening-native-v3/4x-original-scripted-soviet-flag.png",
+        "bytes": 6795907,
+        "sha256": "c683edf76d8d7e4f388762b68f91b956e0c6d7ae77ff388c6c972ca2e5f2f02a",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "4X: The original Soviet paradrop team has naturally garrisoned the memorial; CAWA19_AG displays the red flag."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/opening-native-v3/4x-native-paradrop-plane.png",
+        "bytes": 2861154,
+        "sha256": "f90fcfc10ebb0a843feaecba5d0f05a4672f183b2c04a557a69b149064be1e18",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "4X: The original mission creates this transport aircraft. TUG and PDPLANE retain the artwork permitted by the user."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/coverage-4x-v1/cawa2a.png",
+        "bytes": 9540839,
+        "sha256": "9f056afa8c0414a517b53b7924dc956bf0c353df1a2f936d58e18bbae7f7a1d5",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "4X: Pentagon composition with newly authored CAWA2A/CAWA2B and retained CAWA2C/CAWA2D."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/coverage-4x-v1/bridgeb1.png",
+        "bytes": 9567739,
+        "sha256": "4a78cc80abf348a91aae72a829fd28291539c09adf7abae76d50810f300301db",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "4X: The actual URBAN wooden bridge overlay uses its source-specific HD family."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/coverage-4x-v1/cruise.png",
+        "bytes": 7851687,
+        "sha256": "26f5a4c7aadfbd15bfe752056dc1ff2babbbcd9d5e4f8c1d27164d7876f598c4",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "4X: Native cruise ships and tugboats use complete eight-heading families."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/coverage-4x-v1/camov01.png",
+        "bytes": 9614306,
+        "sha256": "533d99f125f9ef05f15e38e60e8e91f30e3bea0135e20300f087bc58a7463163",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "4X: Neutral urban buildings now admit their existing source/palette-matched artwork in RA2."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/coverage-4x-v1/civ1.png",
+        "bytes": 9600883,
+        "sha256": "bcddc43567d3461026554de2f1ecf1558583e7d879c592282d5245302a814ba1",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "4X: Original civilian identities use exact accepted artwork, with no recoloring or regenerated donor pixels."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/coverage-2x-v1/cawa2a.png",
+        "bytes": 8995823,
+        "sha256": "e093b65511be6741741ab968f579b3c2144916eace8b5b09f16314c25d58ebb7",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "2X: Pentagon composition with newly authored CAWA2A/CAWA2B and retained CAWA2C/CAWA2D."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/coverage-2x-v1/bridgeb1.png",
+        "bytes": 9009211,
+        "sha256": "92dfea6e1974efecfdbfc16dfb471d55d6411ed3aa06d8fba22c16f4c5eea14b",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "2X: The actual URBAN wooden bridge overlay uses its source-specific HD family."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/poses-native-v1/cawa2a-frame-2.png",
+        "bytes": 9539493,
+        "sha256": "cb3dff05843dbd21878c6fef8fb62cc8c8cc7658ed2f6b7ee9b7c7597cf9995f",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "4X renderer-only CAWA2A frame 2: occupied."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/poses-native-v1/cawa2a-frame-3.png",
+        "bytes": 9558262,
+        "sha256": "16d6b10e57ce4f5e1e09406d2a14bfabeae951189118c83642ac8e3bd9deaccd",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "4X renderer-only CAWA2A frame 3: rubble."
+      },
+      {
+        "file": ".artifacts/m3-1/hd-completion-r7/poses-native-v1/fixture-civbbp.png",
+        "bytes": 9566284,
+        "sha256": "68f6a448d040d4d2865fb26cad4a3f824ced7150878d2aba5705d4830f9255c0",
+        "dimensions": [
+          2560,
+          1860
+        ],
+        "caption": "4X explicit CIVBBP factory/material fixture."
+      }
+    ],
+    "normalOpeningImages": 3,
+    "compact": true,
+    "diagnosticAndFixtureDisclosure": true,
+    "browserPreview": "NOT_RETRIED_AFTER_PRIOR_FILE_URL_POLICY_REJECTION",
+    "fullReview": ".artifacts/m3-1/hd-completion-r7/final-review/M3.1-HD-Completion-R7-Review.html"
+  },
+  "preservation": {
+    "status": "PASS_R6_SOURCE_ZIP_RETAINED_HASH_IDENTICAL",
+    "sourceArchive": "/Users/Aone/RA2remaster/ra2-hd-m3-1-campaign/.artifacts/m3-1/feedback-r6/RA2-HD-M3.1-Mac-arm64-20261024-R6.zip",
+    "bytes": 5751094992,
+    "sha256": "589afb56842eb0232dbaf855c0166153b08cb1c9dec28ed6536eadccbe3d67ee",
+    "previousDesktopPathPresent": false,
+    "desktopObservation": "The earlier Desktop path is absent at this check. No cause is inferred and it is not recreated. The verified source ZIP and original extracted app remain retained."
+  },
+  "integrationPreparation": {
+    "receipt": ".artifacts/m3-1/hd-completion-r7/integration-preparation-r7.json",
+    "transferFiles": 2364,
+    "baselineSelectorMatchesObservedMain": true,
+    "observedMain": "7ae771edbc8eb6edd309190897c4a760274ce64c",
+    "canonicalMainWritten": false,
+    "currentCombinedMainNative": "NOT_RUN; prior named/skirmish save rehearsal remains separately pinned"
+  },
+  "retainedEarlierEvidence": [
+    "source-preflight-v1.json: initial guessed building remap metadata corrected from actual native art before final authoring.",
+    "original-reference-v1: first observer used an unavailable renderer field; corrected original-reference-v2 passes.",
+    "authoring-shp and original cruise masters: grainy finish reopened by the user; complete rejected candidates remain unselected.",
+    "Superseded clean R2 wood/cruise candidates remain retained; targeted R3 material correction is selected.",
+    "focused-tests.log: packaged import-only receipt fixture mismatch; matched imported-source focused suite passes.",
+    "opening-native-v1: observer expected source house identifier rather than runtime display name.",
+    "opening-native-v2: observer expected obsolete 256 MiB 2X budget; verified unchanged R6 budget is 512 MiB.",
+    "opening-native-v3: final Original/2X/4X original scripted opening passes without further product changes."
+  ],
+  "evidence": [
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/source/source.json",
+      "sha256": "8eac56b7bc51501aa0275ca70276a7b3d7b6d365231b312de69c606aca6082e4"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/user-art-disposition-20261024.json",
+      "sha256": "e86ba89e7fbb35d5876c368e5774dd11ab142a4c7281dc3253256b06f9971978"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/selected-art.json",
+      "sha256": "eb9a1e8431c3785fd0e8b52f33d6b6e19924a21e2b74f58facb102468f8c17a7"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/reuse-receipt.json",
+      "sha256": "5de8e392ec1c80b63cf99afdf88159fb96acf6a91adc94137af5e742583c7ed5"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/registration-receipt.json",
+      "sha256": "1a4ed84e1ecf0e1f540459cdd7864a5f4510b17c498d472247c5bc85b0a7e2b5"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/static-check.json",
+      "sha256": "098a9774405c6cb39b3d0c7497933da533a5892730f806189579ef4bfc5f4296"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/resource-plan.json",
+      "sha256": "1df2bce4abe59145f58d5534aee7071d44205a2e7c1e3671a8ccd7fbacd51b5d"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/native-stage/stage.json",
+      "sha256": "e657e4b1e58c167b28536ec1d065cb237b5ccca2052ecbaaa6f343114de47412"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/native-stage/resource-inventory.json",
+      "sha256": "b159c375d306f0340514ebd8134fa6e3585f58726c4ba815a433c4eb16092f25"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/opening-native-v3/report.json",
+      "sha256": "3518bfbb422739dafe493c3b876fdb5dfdd0891b601f69abca9263c83b03982f"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/coverage-2x-v1/report.json",
+      "sha256": "0b4b59d1ea9d42964e1d2c06e23172b734b090593a269ab8f3ce31dfe28f54d7"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/coverage-4x-v1/report.json",
+      "sha256": "b4395271b3474d6df248220bca31a3663993f464f1cd1eee3bd9d695a87f2e64"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/poses-native-v1/report.json",
+      "sha256": "325ac8df097b2682dbda9dd9ed029f12b3b3bdf62875993429c762165faf01fd"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/compact-review/review.json",
+      "sha256": "1c8280c7008145fd794afe0909150b7cab879d876bc2f70f5fcf87ee2ed81b01"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/final-review/review.json",
+      "sha256": "f575aba6ef772ab94b14436b8e386bef39d9c86fd093912031bd74ec9da7e2a7"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/delivery-stage/stage.json",
+      "sha256": "ad6914ef60febacaeb3ce2c7a853e811a2ec0bc5580dbbe15cd0d497df082979"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/delivery-stage/inventory.json",
+      "sha256": "9b793e3a32033fd03180cbca46c24bcb4c862381644dba5034cb463eae7601d9"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/archive.json",
+      "sha256": "e45d477c8e9012eab5a897df428757dc094ab34a113f2bef14b1c11fb2bdd7cd"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/desktop-delivery.json",
+      "sha256": "4fa42e636bc3fbde9ae57fd38f1bd1c13e5fca7213d201d4a64666be8a4f6b12"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/extracted.json",
+      "sha256": "bbac469791fc60eec7644fc858486d3806fa9aa6521571b548de7b3760db68b3"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/native-desktop/report.json",
+      "sha256": "91ded4b0e8895c93dfb6a37dc1000db0178d0df357141a3213ac8045fe2069dd"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/r6-preservation.json",
+      "sha256": "b4c6efdea633824cef07d30886afc512ed05c464b8d5d32b605e4cdb6373ee0d"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/integration-preparation-r7.json",
+      "sha256": "314f09bf10e8eeb046278c913947c7b5d11679a67b32f38b652f37a24a276d6d"
+    },
+    {
+      "file": ".artifacts/m3-1/hd-completion-r7/focused-tests-source.log",
+      "sha256": "9049d6d0e5f944224d745abe0b8f3c36aa0c60d6c3efb3011f96a7aae182852d"
+    }
+  ],
+  "userVisualAndPhysicalAcceptance": "PENDING",
+  "remotePush": false,
+  "cleanup": false,
+  "nextMission": false
+}

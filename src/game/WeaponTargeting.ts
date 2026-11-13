@@ -5,6 +5,7 @@ import { LandType } from "@/game/type/LandType";
 import { NavalTargeting } from "@/game/type/NavalTargeting";
 import { SpeedType } from "@/game/type/SpeedType";
 import { WeaponType } from "@/game/WeaponType";
+import { canCampaignChargeTarget } from './campaign/CampaignChargedWeapon';
 interface GameObject {
     name: string;
     owner: any;
@@ -95,12 +96,16 @@ export class WeaponTargeting {
             this.targetChecks.push((target, context, alliances, forcefire, shift) => !(!shift || !target?.isBuilding() || target.name !== prismType || target.owner !== this.gameObject.owner));
         }
         else if (this.warheadRules.electricAssault) {
-            this.targetChecks.push((target, context, alliances, forcefire, shift) => !((!forcefire && !shift) || !target?.isBuilding() || !target.overpoweredTrait || target.owner !== this.gameObject.owner));
+            this.targetChecks.push((target, context, alliances, forcefire, shift) => {
+                const campaignCharge = canCampaignChargeTarget(this.gameObject, target, alliances);
+                return !((!forcefire && !shift && !campaignCharge) || !target?.isBuilding()
+                    || !target.overpoweredTrait || target.owner !== this.gameObject.owner && !campaignCharge);
+            });
         }
         else if (this.weaponRules.damage < 0) {
             this.targetChecks.push((target, context, alliances) => !!(target !== this.gameObject &&
                 target?.isUnit() &&
-                alliances?.areFriendly(target, this.gameObject) &&
+                this.isFriendlyTarget(target, alliances) &&
                 target.healthTrait && target.healthTrait.health < 100 &&
                 this.gameObject.isAircraft() === target.isAircraft()));
         }
@@ -112,7 +117,7 @@ export class WeaponTargeting {
             else {
                 this.targetChecks.push((target, context, alliances, forcefire) => !((!forcefire || this.warheadRules.mindControl) &&
                     target?.isTechno() &&
-                    alliances?.areFriendly(target, this.gameObject)));
+                    this.isFriendlyTarget(target, alliances)));
             }
             this.targetChecks.push((target, context, alliances) => !(target?.isTechno() &&
                 target.cloakableTrait?.isCloaked() &&
@@ -145,6 +150,12 @@ export class WeaponTargeting {
     public canTarget(target?: GameObject, context?: GameContext, alliances?: AllianceSystem, forcefire?: boolean, shift?: boolean): boolean {
         if ((target as any)?.bunker) return false;
         return this.targetChecks.every(check => check(target, context, alliances, forcefire, shift));
+    }
+    private isFriendlyTarget(target: GameObject, alliances?: AllianceSystem): boolean | undefined {
+        // Original scenario diplomacy is directed. Released journals retain
+        // their earlier targeting; new campaigns consult the shooter's allies.
+        return (this.gameObject.owner?.campaignSemanticsVersion ?? 1) >= 16
+            ? alliances?.areFriendly(this.gameObject, target) : alliances?.areFriendly(target, this.gameObject);
     }
     private canTargetZone(target?: GameObject, context?: GameContext): boolean {
         const lifted = (target as any)?.magneticLiftTrait;

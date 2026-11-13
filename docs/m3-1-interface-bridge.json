@@ -1,0 +1,1190 @@
+{
+  "schemaVersion": 1,
+  "status": "M3_1_MAC_NORMAL_PROTOTYPE_USER_ACCEPTED",
+  "finalAcceptance": {
+    "path": "docs/m3-1-final-acceptance.json",
+    "bytes": 5181,
+    "sha256": "4bd702c41198ac422a57d8c9a38fc511ffbda727e062dce66a3786527bac326d"
+  },
+  "scope": "Add optional 2X campaign interface artwork and verify original initial bridge destruction and ordinary engineer repair.",
+  "source": {
+    "runtimeHead": "bc0e41defd68250d0ed40686b4b1c51b345b5800",
+    "taskBranch": "task/m3-1-soviet01",
+    "map": {
+      "name": "sov01t.map",
+      "bytes": 184260,
+      "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f",
+      "route": "/local-campaign/ra2/sov01t/sov01t.map"
+    },
+    "campaignManifest": {
+      "path": ".local/campaign/ra2/sov01t/manifest.json",
+      "bytes": 12123,
+      "sha256": "8400a42032b4de312cab9a3c7a083373fd8f113f131d91d1adadc86d48942596"
+    },
+    "additions": [
+      {
+        "name": "interface-selection-2x.png",
+        "bytes": 1285660,
+        "sha256": "dc5350a5d7d5a668c970461b29991fa823efafc88220b294c4b10328655034ed",
+        "route": "/local-campaign/ra2/sov01t/interface-selection-2x.png"
+      },
+      {
+        "name": "interface-loading-vector.svg",
+        "bytes": 4338342,
+        "sha256": "b3913dcc1fbf027c98dd32bb1507667ab71f2628ab8b8f3119f98faf02fe86c2",
+        "route": "/local-campaign/ra2/sov01t/interface-loading-vector.svg"
+      },
+      {
+        "name": "interface-hd.json",
+        "bytes": 709128,
+        "sha256": "230cf7576d9440210f707ae90f9dfa8b44953b65ce907c6098e0d4b03ba5c613",
+        "route": "/local-campaign/ra2/sov01t/interface-hd.json"
+      }
+    ],
+    "acceptedPreviousManifest": {
+      "path": ".artifacts/m3-1/interface-hd/accepted-247f-manifest.json",
+      "bytes": 11430,
+      "sha256": "8f0a4fff21e85131f5c20e52d02ceca6d205d4182f4bec237d4aec6ae778ae0d",
+      "provenance": "Reconstructed by removing exactly the three optional interface files; byte hash matches the frozen accepted receipt.",
+      "preservedFiles": 22
+    },
+    "sourcePresentation": {
+      "path": ".local/campaign/ra2/sov01t/presentation.json",
+      "bytes": 5188,
+      "sha256": "b85da5719e2a5a07430d8ca1b455e4bdce0a27f897c60c838de05150c90ec850"
+    },
+    "applicationSourceMatchesCapturedRuntime": true
+  },
+  "priorAcceptance": {
+    "reviewCommit": "247f6df7",
+    "status": "USER_ACCEPTED",
+    "scope": "Memorial, flag, Urban v5 roads, localized rank and original result presentation",
+    "evidence": {
+      "path": "docs/m3-1-feedback-corrections.json",
+      "bytes": 37506,
+      "sha256": "cbf1a55c01b8ae698da447f3c32bfeb71214771791d7791b7f9d976f97d1bc64"
+    },
+    "frozenNativeHead": "abf441f732842b344208f84427e2a5d8bf79575d"
+  },
+  "interface": {
+    "revision": "m3-1-interface-hd-v1",
+    "density": 2,
+    "selection": {
+      "file": "interface-selection-2x.png",
+      "width": 1264,
+      "height": 1136,
+      "logical": [
+        632,
+        568
+      ],
+      "tool": "Built-in imagegen",
+      "master": {
+        "width": 1322,
+        "height": 1190,
+        "sha256": "1fadffad3ed948005849211a25003063db0d7f7b7f530f7c9585393c26e2726a"
+      }
+    },
+    "loading": {
+      "file": "interface-loading-vector.svg",
+      "width": 1600,
+      "height": 1040,
+      "logical": [
+        800,
+        520
+      ],
+      "method": "Source-backed palette contours, authored emblem and four repainted photo slots, straight vector frames",
+      "emblemMaster": {
+        "width": 1285,
+        "height": 1224,
+        "sha256": "472f1ee19d109078325b78a9aaeeb16efe069b722a6c7c875700a0d86990f16b"
+      },
+      "vectorPaths": 176,
+      "originalPhotoRects": [
+        [
+          252,
+          378,
+          79,
+          64
+        ],
+        [
+          349,
+          378,
+          79,
+          64
+        ],
+        [
+          443,
+          377,
+          80,
+          65
+        ],
+        [
+          542,
+          266,
+          238,
+          242
+        ]
+      ],
+      "authoredPhotos": [
+        {
+          "name": "portrait",
+          "rect": [
+            252,
+            378,
+            79,
+            64
+          ],
+          "master": {
+            "width": 1393,
+            "height": 1129,
+            "sha256": "ee1779f30ca4c5baa0071416fbf87927cec3f23d7fd22e9827fa79148079a5fa"
+          },
+          "density": 2
+        },
+        {
+          "name": "statue",
+          "rect": [
+            349,
+            378,
+            79,
+            64
+          ],
+          "master": {
+            "width": 1393,
+            "height": 1129,
+            "sha256": "f9cab0437e5da491542c8f0609b18a86d9543bc4940f60d2f9b9f531f341e213"
+          },
+          "density": 2
+        },
+        {
+          "name": "tank",
+          "rect": [
+            443,
+            377,
+            80,
+            65
+          ],
+          "master": {
+            "width": 1391,
+            "height": 1131,
+            "sha256": "f7b821dbc63232b6d3d1595d186e79aaa50a501fb93bd0082daab4e9a078c53e"
+          },
+          "density": 2
+        },
+        {
+          "name": "pentagon",
+          "rect": [
+            542,
+            266,
+            238,
+            242
+          ],
+          "master": {
+            "width": 1244,
+            "height": 1265,
+            "sha256": "8f54536e7c49fcdc892890298d06a68120295c60dc0b9b67138351dad58ccd23"
+          },
+          "density": 2
+        }
+      ]
+    },
+    "animation": {
+      "idle": 0,
+      "activeFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "framesPerSecond": 15,
+      "scope": "All original arrow frames; exact retail frame cadence requires visual acceptance."
+    },
+    "anchors": {
+      "allied": {
+        "x": 30,
+        "y": 26
+      },
+      "tutorial": {
+        "x": 82,
+        "y": 187
+      },
+      "soviet": {
+        "x": 98,
+        "y": 298
+      }
+    },
+    "tool": "Built-in imagegen",
+    "prompts": {
+      "path": "docs/m3-1-interface-prompts.json",
+      "bytes": 11382,
+      "sha256": "e471d09ef4d6152c9ae3bd451cb83eca8c6b9b65a5caafac299a5efb7eb1d4ce"
+    },
+    "masters": [
+      {
+        "path": ".artifacts/m3-1/interface-hd/masters/menu-r2.png",
+        "bytes": 1378921,
+        "sha256": "1fadffad3ed948005849211a25003063db0d7f7b7f530f7c9585393c26e2726a"
+      },
+      {
+        "path": ".artifacts/m3-1/interface-hd/masters/loading-emblem-r1.png",
+        "bytes": 1840201,
+        "sha256": "472f1ee19d109078325b78a9aaeeb16efe069b722a6c7c875700a0d86990f16b"
+      },
+      {
+        "path": ".artifacts/m3-1/interface-hd/photo-masters/portrait-r1.png",
+        "bytes": 2497348,
+        "sha256": "ee1779f30ca4c5baa0071416fbf87927cec3f23d7fd22e9827fa79148079a5fa"
+      },
+      {
+        "path": ".artifacts/m3-1/interface-hd/photo-masters/statue-r1.png",
+        "bytes": 3556058,
+        "sha256": "f9cab0437e5da491542c8f0609b18a86d9543bc4940f60d2f9b9f531f341e213"
+      },
+      {
+        "path": ".artifacts/m3-1/interface-hd/photo-masters/tank-r1.png",
+        "bytes": 2420663,
+        "sha256": "f7b821dbc63232b6d3d1595d186e79aaa50a501fb93bd0082daab4e9a078c53e"
+      },
+      {
+        "path": ".artifacts/m3-1/interface-hd/photo-masters/pentagon-r1.png",
+        "bytes": 3355085,
+        "sha256": "8f54536e7c49fcdc892890298d06a68120295c60dc0b9b67138351dad58ccd23"
+      }
+    ],
+    "export": {
+      "path": ".artifacts/m3-1/interface-hd/export.json",
+      "bytes": 1483,
+      "sha256": "c504143166c7f46e19aad5bf353d29d11aa0bed5329f3ae68e92915238e00f5f"
+    },
+    "sharedBudget": {
+      "bytes": 16777216,
+      "selectionReservedBytes": 15277056,
+      "loadingReservedBytes": 6918144,
+      "unchanged": true,
+      "fallback": "Complete Original source art when disabled, unavailable or over budget; scene-specific surfaces released on exit."
+    },
+    "remainingSourceDetail": [
+      "Source-derived geographic contours and annotation detail",
+      "Original-density result panel and animated badge"
+    ],
+    "boundary": "Authored HD illustration components retain source anchors. Geographic vectors preserve source detail; no new geographic resolution, original photographic pixels or 4X UI is claimed."
+  },
+  "bridge": {
+    "sourceChanged": false,
+    "runtimeChanged": false,
+    "conforms": true,
+    "trigger": {
+      "key": "0823BDEC",
+      "event": 13,
+      "explosions": 8,
+      "opcode": 63,
+      "tick": 0,
+      "waypoints": [
+        72,
+        75
+      ]
+    },
+    "freshOpening": {
+      "tick": 1,
+      "hash": 3353771205,
+      "huts": [
+        {
+          "id": 1590,
+          "tile": [
+            58,
+            73
+          ],
+          "repairable": false,
+          "missing": [],
+          "pieces": 8,
+          "bounds": {
+            "start": [
+              59,
+              62
+            ],
+            "end": [
+              59,
+              71
+            ],
+            "high": true
+          }
+        },
+        {
+          "id": 1607,
+          "tile": [
+            92,
+            87
+          ],
+          "repairable": true,
+          "missing": [
+            [
+              88,
+              84
+            ]
+          ],
+          "pieces": 2,
+          "bounds": {
+            "start": [
+              86,
+              84
+            ],
+            "end": [
+              90,
+              84
+            ],
+            "high": true
+          }
+        },
+        {
+          "id": 1724,
+          "tile": [
+            48,
+            83
+          ],
+          "repairable": true,
+          "missing": [
+            [
+              45,
+              83
+            ]
+          ],
+          "pieces": 0,
+          "bounds": {
+            "start": [
+              44,
+              83
+            ],
+            "end": [
+              46,
+              83
+            ],
+            "high": true
+          }
+        }
+      ],
+      "journalCommands": 0,
+      "engineer": {
+        "exists": false
+      },
+      "center": {
+        "tile": [
+          88,
+          85
+        ],
+        "visible": false,
+        "bridgeOverlay": false
+      },
+      "repairEvents": [],
+      "ui": {
+        "revision": "yuri-emblem-ui-v1",
+        "enabled": true,
+        "reservedBytes": 8541952,
+        "decodedCpuBytes": 0,
+        "gpuTextureBytesUpperBound": 0,
+        "transitionGpuBytes": 0,
+        "transitionCpuCanvasBytes": 0,
+        "domImageGpuBytesUpperBound": 0,
+        "domImageDecodedCpuBytesUpperBound": 0,
+        "textures": 0,
+        "budget": 16777216,
+        "domCanvasBytes": 0,
+        "mipmaps": false
+      }
+    },
+    "executedActions": [
+      {
+        "tick": 0,
+        "section": "Actions",
+        "key": "0823BDEC",
+        "index": 0,
+        "opcode": 63
+      },
+      {
+        "tick": 0,
+        "section": "Actions",
+        "key": "0823BDEC",
+        "index": 1,
+        "opcode": 63
+      },
+      {
+        "tick": 0,
+        "section": "Actions",
+        "key": "0823BDEC",
+        "index": 2,
+        "opcode": 63
+      },
+      {
+        "tick": 0,
+        "section": "Actions",
+        "key": "0823BDEC",
+        "index": 3,
+        "opcode": 63
+      },
+      {
+        "tick": 0,
+        "section": "Actions",
+        "key": "0823BDEC",
+        "index": 4,
+        "opcode": 63
+      },
+      {
+        "tick": 0,
+        "section": "Actions",
+        "key": "0823BDEC",
+        "index": 5,
+        "opcode": 63
+      },
+      {
+        "tick": 0,
+        "section": "Actions",
+        "key": "0823BDEC",
+        "index": 6,
+        "opcode": 63
+      },
+      {
+        "tick": 0,
+        "section": "Actions",
+        "key": "0823BDEC",
+        "index": 7,
+        "opcode": 63
+      }
+    ],
+    "repair": {
+      "engineer": 1942,
+      "hut": 1607,
+      "missingTile": [
+        88,
+        84
+      ],
+      "repairEventTick": 10547,
+      "semantics": "Engineer enters the bridge repair hut and is consumed. The missing original overlay is restored; ownership change is not required.",
+      "commands": [
+        {
+          "tick": 9521,
+          "player": 0,
+          "type": 8,
+          "data": [
+            150,
+            7,
+            0,
+            0
+          ]
+        },
+        {
+          "tick": 9536,
+          "player": 0,
+          "type": 9,
+          "data": [
+            15,
+            4,
+            92,
+            0,
+            87,
+            0,
+            0,
+            71,
+            6,
+            0,
+            0
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "density": 4,
+          "before": {
+            "tick": 9440,
+            "hash": 1110797913,
+            "huts": [
+              {
+                "id": 1590,
+                "tile": [
+                  58,
+                  73
+                ],
+                "repairable": false,
+                "missing": [],
+                "pieces": 8,
+                "bounds": {
+                  "start": [
+                    59,
+                    62
+                  ],
+                  "end": [
+                    59,
+                    71
+                  ],
+                  "high": true
+                }
+              },
+              {
+                "id": 1607,
+                "tile": [
+                  92,
+                  87
+                ],
+                "repairable": true,
+                "missing": [
+                  [
+                    88,
+                    84
+                  ]
+                ],
+                "pieces": 2,
+                "bounds": {
+                  "start": [
+                    86,
+                    84
+                  ],
+                  "end": [
+                    90,
+                    84
+                  ],
+                  "high": true
+                }
+              },
+              {
+                "id": 1724,
+                "tile": [
+                  48,
+                  83
+                ],
+                "repairable": true,
+                "missing": [
+                  [
+                    45,
+                    83
+                  ]
+                ],
+                "pieces": 0,
+                "bounds": {
+                  "start": [
+                    44,
+                    83
+                  ],
+                  "end": [
+                    46,
+                    83
+                  ],
+                  "high": true
+                }
+              }
+            ],
+            "journalCommands": 48,
+            "engineer": {
+              "exists": true,
+              "spawned": true
+            },
+            "center": {
+              "tile": [
+                88,
+                85
+              ],
+              "visible": true,
+              "bridgeOverlay": false
+            },
+            "repairEvents": [],
+            "ui": {
+              "revision": "yuri-emblem-ui-v1",
+              "enabled": true,
+              "reservedBytes": 11460352,
+              "decodedCpuBytes": 9094912,
+              "gpuTextureBytesUpperBound": 9094912,
+              "transitionGpuBytes": 2365440,
+              "transitionCpuCanvasBytes": 2808960,
+              "domImageGpuBytesUpperBound": 0,
+              "domImageDecodedCpuBytesUpperBound": 0,
+              "textures": 30,
+              "budget": 16777216,
+              "domCanvasBytes": 0,
+              "mipmaps": false
+            }
+          },
+          "after": {
+            "tick": 10548,
+            "hash": 282093055,
+            "huts": [
+              {
+                "id": 1590,
+                "tile": [
+                  58,
+                  73
+                ],
+                "repairable": false,
+                "missing": [],
+                "pieces": 8,
+                "bounds": {
+                  "start": [
+                    59,
+                    62
+                  ],
+                  "end": [
+                    59,
+                    71
+                  ],
+                  "high": true
+                }
+              },
+              {
+                "id": 1607,
+                "tile": [
+                  92,
+                  87
+                ],
+                "repairable": false,
+                "missing": [],
+                "pieces": 3,
+                "bounds": {
+                  "start": [
+                    86,
+                    84
+                  ],
+                  "end": [
+                    90,
+                    84
+                  ],
+                  "high": true
+                }
+              },
+              {
+                "id": 1724,
+                "tile": [
+                  48,
+                  83
+                ],
+                "repairable": true,
+                "missing": [
+                  [
+                    45,
+                    83
+                  ]
+                ],
+                "pieces": 0,
+                "bounds": {
+                  "start": [
+                    44,
+                    83
+                  ],
+                  "end": [
+                    46,
+                    83
+                  ],
+                  "high": true
+                }
+              }
+            ],
+            "journalCommands": 50,
+            "engineer": {
+              "exists": false
+            },
+            "center": {
+              "tile": [
+                88,
+                85
+              ],
+              "visible": true,
+              "bridgeOverlay": true
+            },
+            "repairEvents": [
+              {
+                "tick": 10547,
+                "type": 14
+              }
+            ],
+            "ui": {
+              "revision": "yuri-emblem-ui-v1",
+              "enabled": true,
+              "reservedBytes": 11460352,
+              "decodedCpuBytes": 9094912,
+              "gpuTextureBytesUpperBound": 9094912,
+              "transitionGpuBytes": 2365440,
+              "transitionCpuCanvasBytes": 2808960,
+              "domImageGpuBytesUpperBound": 0,
+              "domImageDecodedCpuBytesUpperBound": 0,
+              "textures": 30,
+              "budget": 16777216,
+              "domCanvasBytes": 0,
+              "mipmaps": false
+            }
+          }
+        },
+        {
+          "density": 1,
+          "before": {
+            "tick": 9440,
+            "hash": 1110797913,
+            "huts": [
+              {
+                "id": 1590,
+                "tile": [
+                  58,
+                  73
+                ],
+                "repairable": false,
+                "missing": [],
+                "pieces": 8,
+                "bounds": {
+                  "start": [
+                    59,
+                    62
+                  ],
+                  "end": [
+                    59,
+                    71
+                  ],
+                  "high": true
+                }
+              },
+              {
+                "id": 1607,
+                "tile": [
+                  92,
+                  87
+                ],
+                "repairable": true,
+                "missing": [
+                  [
+                    88,
+                    84
+                  ]
+                ],
+                "pieces": 2,
+                "bounds": {
+                  "start": [
+                    86,
+                    84
+                  ],
+                  "end": [
+                    90,
+                    84
+                  ],
+                  "high": true
+                }
+              },
+              {
+                "id": 1724,
+                "tile": [
+                  48,
+                  83
+                ],
+                "repairable": true,
+                "missing": [
+                  [
+                    45,
+                    83
+                  ]
+                ],
+                "pieces": 0,
+                "bounds": {
+                  "start": [
+                    44,
+                    83
+                  ],
+                  "end": [
+                    46,
+                    83
+                  ],
+                  "high": true
+                }
+              }
+            ],
+            "journalCommands": 48,
+            "engineer": {
+              "exists": true,
+              "spawned": true
+            },
+            "center": {
+              "tile": [
+                88,
+                85
+              ],
+              "visible": true,
+              "bridgeOverlay": false
+            },
+            "repairEvents": [],
+            "ui": {
+              "revision": "yuri-emblem-ui-v1",
+              "enabled": false,
+              "reservedBytes": 0,
+              "decodedCpuBytes": 0,
+              "gpuTextureBytesUpperBound": 0,
+              "transitionGpuBytes": 0,
+              "transitionCpuCanvasBytes": 0,
+              "domImageGpuBytesUpperBound": 0,
+              "domImageDecodedCpuBytesUpperBound": 0,
+              "textures": 0,
+              "budget": 16777216,
+              "domCanvasBytes": 0,
+              "mipmaps": false
+            }
+          },
+          "after": {
+            "tick": 10548,
+            "hash": 282093055,
+            "huts": [
+              {
+                "id": 1590,
+                "tile": [
+                  58,
+                  73
+                ],
+                "repairable": false,
+                "missing": [],
+                "pieces": 8,
+                "bounds": {
+                  "start": [
+                    59,
+                    62
+                  ],
+                  "end": [
+                    59,
+                    71
+                  ],
+                  "high": true
+                }
+              },
+              {
+                "id": 1607,
+                "tile": [
+                  92,
+                  87
+                ],
+                "repairable": false,
+                "missing": [],
+                "pieces": 3,
+                "bounds": {
+                  "start": [
+                    86,
+                    84
+                  ],
+                  "end": [
+                    90,
+                    84
+                  ],
+                  "high": true
+                }
+              },
+              {
+                "id": 1724,
+                "tile": [
+                  48,
+                  83
+                ],
+                "repairable": true,
+                "missing": [
+                  [
+                    45,
+                    83
+                  ]
+                ],
+                "pieces": 0,
+                "bounds": {
+                  "start": [
+                    44,
+                    83
+                  ],
+                  "end": [
+                    46,
+                    83
+                  ],
+                  "high": true
+                }
+              }
+            ],
+            "journalCommands": 50,
+            "engineer": {
+              "exists": false
+            },
+            "center": {
+              "tile": [
+                88,
+                85
+              ],
+              "visible": true,
+              "bridgeOverlay": true
+            },
+            "repairEvents": [
+              {
+                "tick": 10547,
+                "type": 14
+              }
+            ],
+            "ui": {
+              "revision": "yuri-emblem-ui-v1",
+              "enabled": false,
+              "reservedBytes": 0,
+              "decodedCpuBytes": 0,
+              "gpuTextureBytesUpperBound": 0,
+              "transitionGpuBytes": 0,
+              "transitionCpuCanvasBytes": 0,
+              "domImageGpuBytesUpperBound": 0,
+              "domImageDecodedCpuBytesUpperBound": 0,
+              "textures": 0,
+              "budget": 16777216,
+              "domCanvasBytes": 0,
+              "mipmaps": false
+            }
+          }
+        }
+      ]
+    },
+    "scope": "Real native interface/animation capture, fresh opening bridge audit, and bounded ordinary-command replay from the proven checkpoint through actual engineer repair. No forced bridge mutation or source-map edit."
+  },
+  "validation": {
+    "native": {
+      "path": ".artifacts/m3-1/interface-hd/native-r4/report.json",
+      "bytes": 15696,
+      "sha256": "0ffb7f22d20d2c06723e478757a5efbbf2166946067bf9ffa33e9be1b194686f"
+    },
+    "nativeHarness": {
+      "path": "scripts/m3-1/interface-bridge-native.mjs",
+      "bytes": 14901,
+      "sha256": "b9eb96ac2358320dd47b1f992a23b0bfd14dde2b4baff40a555e82ff7bec3689"
+    },
+    "focusedTests": {
+      "cases": 47,
+      "failed": 0,
+      "assertions": 303,
+      "evidence": {
+        "path": ".artifacts/m3-1/interface-hd/tests.log",
+        "bytes": 6504,
+        "sha256": "d954d2a62317206b6652faee135621e04da1f94973abcda7a03808a9810d1043"
+      }
+    },
+    "entryTypecheck": {
+      "path": ".artifacts/m3-1/interface-hd/typecheck-final.json",
+      "bytes": 205,
+      "sha256": "e12ce22d92e8fb80ce62b23cddf20337c0c52ddea9d12aad5093979742e35b7d"
+    },
+    "typecheckLog": {
+      "path": ".artifacts/m3-1/interface-hd/typecheck-final.log",
+      "bytes": 39,
+      "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+    },
+    "build": {
+      "path": ".artifacts/m3-1/interface-hd/build.log",
+      "bytes": 20028,
+      "sha256": "39653ce4427b3fa3adeefabd3944c1e28747cf3324b24bc89ce9c3f434cf6fa2"
+    },
+    "imagePackaging": {
+      "path": ".artifacts/m3-1/review-media/interface-images.json",
+      "bytes": 6314,
+      "sha256": "c2e1ef5a42ebf77bd2fddbe8081f207adc6f9e3fe9955617db24a93a3470c26d"
+    },
+    "crops": {
+      "path": ".artifacts/m3-1/interface-hd/native-r4/crops.json",
+      "bytes": 2829,
+      "sha256": "196eb7e315ce2954fa0089bf3d4dcaf3ac59ae2cf1d61a4f1e6f886bf9201d61"
+    },
+    "menuVideo": {
+      "path": ".artifacts/m3-1/interface-hd/native-r4/video-verification.json",
+      "bytes": 1292,
+      "sha256": "c182bba45972dc88dcd7d5fcbacd1377560a48688904f0ea743e20915d6ecc89"
+    },
+    "resultVideo": {
+      "path": ".artifacts/m3-1/feedback-score-r1/video-verification.json",
+      "bytes": 3355,
+      "sha256": "753a869be2a9476f4025fe2c1cf739d4dbb7e3aedb9877e35d6f2c3283038259"
+    },
+    "fullGameplayBaseline": {
+      "path": "docs/m3-1-soviet01-acceptance.json",
+      "bytes": 33782,
+      "sha256": "b20d7ef7aea23a7b3edc2523325bba22fd480e22574759eb08b4529dd4e4527d"
+    },
+    "frozenFullInputHead": "d1e21e8c888e98191e250939050b9d08330a7f67",
+    "browserConnection": {
+      "path": ".artifacts/m3-1/interface-hd/browser-connection.json",
+      "bytes": 312,
+      "sha256": "978314be61a5feaef51b474f1d1630435e7bb4fb1bc7c22a8aedba1907887659"
+    },
+    "browserRender": "NOT_RUN_NO_CONNECTED_TAB",
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "failedResources": 0
+  },
+  "screenshots": [
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_02-hd-faction-menu.webp",
+      "bytes": 2035338,
+      "sha256": "260f28be37bca9549fa0c95a6950cc4a193790041a81ba0f156ab05b41306312",
+      "source": {
+        "path": ".artifacts/m3-1/interface-hd/native-r4/02-hd-faction-menu.png",
+        "bytes": 3073807,
+        "sha256": "dedb64aa34b7ad96076aa7385f4e79ad09a94c87d2659e3345839fa09f0638f3"
+      },
+      "rgbaBytes": 19046400,
+      "rgbaSha256": "59f263394137a5a59f02ba1d5f20e34a7f313033185cb6050237e3ed07af0e6e",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_03-hd-soviet01-loading.webp",
+      "bytes": 1896564,
+      "sha256": "dea5ea559c7ce9591821734659acde9588da5710d3d689a9aab27a8c02e9aa00",
+      "source": {
+        "path": ".artifacts/m3-1/interface-hd/native-r4/03-hd-soviet01-loading.png",
+        "bytes": 2636254,
+        "sha256": "f489f46ffa32370160a750f692f97f3e281e5f6b9c46aa167fa8ed62b3a733ae"
+      },
+      "rgbaBytes": 19046400,
+      "rgbaSha256": "2c3902c69636ee8deaef107cd7e489f7fda707c8ab357e0f4b24c4fc2ae52470",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_01-original-faction-menu.webp",
+      "bytes": 1103252,
+      "sha256": "089353fc198bc938971a6c8fe70b6af56c2a286797c24fcc25769a5f20ecf29b",
+      "source": {
+        "path": ".artifacts/m3-1/interface-hd/native-r4/01-original-faction-menu.png",
+        "bytes": 1675709,
+        "sha256": "26f3eb4574d404f5985a9467e1f7437b2650f06574d4a1ecf6a78c6311e13402"
+      },
+      "rgbaBytes": 19046400,
+      "rgbaSha256": "964438be1118c075e6907fa0cd4e0c22f315efd1e0777d6bab7390af0dc32481",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_bridge-detail-4x-before.webp",
+      "bytes": 1470752,
+      "sha256": "014d4283aedfad5cf6956118531bed8b9cf8cea9d68957392921c9c3edff2d17",
+      "source": {
+        "path": ".artifacts/m3-1/interface-hd/native-r4/bridge-detail-4x-before.png",
+        "bytes": 2317088,
+        "sha256": "cece4fe92408d6e828eb456770f512e7b7f084441d43723603b3026262f7aae4"
+      },
+      "rgbaBytes": 4496800,
+      "rgbaSha256": "5faa8a6ef35aeb805a33f1769c8ff5c8f53d04ebdd6a9249c6c7e8871ab1de5e",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_bridge-detail-4x-after.webp",
+      "bytes": 1506328,
+      "sha256": "867fd7f8668254f67077c9647f4796cf3a006db74837fa420bfd1a5cadefbd92",
+      "source": {
+        "path": ".artifacts/m3-1/interface-hd/native-r4/bridge-detail-4x-after.png",
+        "bytes": 2376372,
+        "sha256": "76e7e9cccaf305228c316debf65390f2e485340d2f976eef09db939c7a497c30"
+      },
+      "rgbaBytes": 4496800,
+      "rgbaSha256": "5629f9584beb4c4cf94dc23a704cb2abe7435154217d3fa6c3130f7fd5b8b509",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_bridge-detail-1x-before.webp",
+      "bytes": 944298,
+      "sha256": "c9978b8aa19d0828a388b381e0316c3a86c16d2bf9561195fdcfa812a0372f3f",
+      "source": {
+        "path": ".artifacts/m3-1/interface-hd/native-r4/bridge-detail-1x-before.png",
+        "bytes": 1243931,
+        "sha256": "8e39ec9ef6f4e07d9a0c3341e46d3c4d97cadd237186e09a776576a32a77f850"
+      },
+      "rgbaBytes": 4496800,
+      "rgbaSha256": "8088d2bd1f3f3a1fe3830190900899a58388527275fe969b891e7a7bf58517b8",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/native-r4_bridge-detail-1x-after.webp",
+      "bytes": 952622,
+      "sha256": "16760fb41b9db77a818fcca660bf5f437c429f04ad8bf1867e83863cfcb09fd4",
+      "source": {
+        "path": ".artifacts/m3-1/interface-hd/native-r4/bridge-detail-1x-after.png",
+        "bytes": 1240517,
+        "sha256": "e92a6894bc95c01ccf3105903a11acacb0b0d1ac1a665e4ed33e2d3d1b618670"
+      },
+      "rgbaBytes": 4496800,
+      "rgbaSha256": "9aad76aef9d67cc7768b2e91e0746d210c07416e261fea5c94205061de82bd72",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-native-r4_memorial-detail-4x.webp",
+      "bytes": 458620,
+      "sha256": "c6fe631dfbcf96233f7f483e74ad4f17bd649b5fdcd580ef9c8c291cf513402e",
+      "source": {
+        "path": ".artifacts/m3-1/feedback-native-r4/memorial-detail-4x.png",
+        "bytes": 681897,
+        "sha256": "7b794840a8abf0b291d35beed5c6f95593ea3a8f3a7825cf425b6c34c60e0905"
+      },
+      "rgbaBytes": 1104000,
+      "rgbaSha256": "b48c5b6fd56c9942fb4f13073b2da4d349a3c17eb3c0cbde5dfa3d9c25e494d7",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    },
+    {
+      "path": ".artifacts/m3-1/review-media/feedback-score-r1_02-original-campaign-medal-and-text.webp",
+      "bytes": 1591098,
+      "sha256": "d7a14de068ef3819b0567033e728a3c04bcfa2935f022833133d4def873e9d73",
+      "source": {
+        "path": ".artifacts/m3-1/feedback-score-r1/02-original-campaign-medal-and-text.png",
+        "bytes": 2379782,
+        "sha256": "a99bdbec6b7c7b615561d1a53298cd212ea393d12c8059bcd8c2488d7bd74482"
+      },
+      "rgbaBytes": 19005440,
+      "rgbaSha256": "4ec2e61e0106337000e9b2fcd044a0abfb089f124e2171cc1160ae5138e8c5de",
+      "decodedPixelEquality": true,
+      "scope": "Pixel-identical lossless packaging of actual native evidence; no resize or visual edit"
+    }
+  ],
+  "videos": [
+    {
+      "path": ".artifacts/m3-1/interface-hd/native-r4/menu-animation.webm",
+      "bytes": 391849,
+      "sha256": "c20f5d670c328048d13d83bed98c23061bc6aa6b1f7f9735a2ab22202e7e6118"
+    },
+    {
+      "path": ".artifacts/m3-1/feedback-score-r1/result-animation.webm",
+      "bytes": 723838,
+      "sha256": "503a38fcb1518714b98d08ca804237ff601aea45e6e5811630a6905b197c0111"
+    }
+  ],
+  "retainedAttempts": [
+    {
+      "attempt": "r1",
+      "evidence": {
+        "path": ".artifacts/m3-1/interface-hd/native-r1/report.json",
+        "bytes": 3175,
+        "sha256": "531aa57b9b11a37ab884dcb1a300a06d9b467e0c79032a8c7bff3cf01c58b875"
+      },
+      "reason": "Observer queried an engineer before its source reinforcement spawned"
+    },
+    {
+      "attempt": "r2",
+      "evidence": {
+        "path": ".artifacts/m3-1/interface-hd/native-r2/report.json",
+        "bytes": 6279,
+        "sha256": "518eca744bde1c7d008e08f48834a0c6730976554a0a7a9a5fa8c17637b33279"
+      },
+      "reason": "Observer attempted Escape while the original opening cinematic still held input"
+    },
+    {
+      "attempt": "r3",
+      "evidence": {
+        "path": ".artifacts/m3-1/interface-hd/native-r3/report.json",
+        "bytes": 7205,
+        "sha256": "8d7cd3fc518b525ad541a7c38a809dcf419f61e13c63e99eccc77b63abafd806"
+      },
+      "reason": "Observer accessed the restored game UI before asynchronous loading completed"
+    }
+  ],
+  "generationAttempts": [
+    "Full loading repaint rejected twice by built-in imagegen output safety check. The emblem and four separate photo slots were then authored; no CLI/API was used."
+  ],
+  "review": {
+    "path": ".artifacts/m3-1/M3.1-Embedded-Review.html",
+    "newInterfaceUserAcceptance": "ACCEPTED",
+    "previousReviewUserAcceptance": "ACCEPTED",
+    "sourceIntegratedIntoMain": false,
+    "remotePush": false,
+    "publication": false,
+    "desktopPackagesModified": false
+  }
+}

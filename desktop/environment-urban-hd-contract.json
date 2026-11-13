@@ -3,6 +3,45 @@
   "theater": "URBAN",
   "preparedSourceSha256": "800485c1bd559fcd26ef053755983fc14d5b9c53be42b81025f5e7d9578bdd42",
   "sources": {
+    "cuwash19.shp": {
+      "sha256": "da2d330700df7a21e820946a5a9c2253259f6276c5c47340086aa096b1d55238",
+      "canvas": [
+        198,
+        218
+      ],
+      "totalFrames": 8,
+      "bodyFrames": 4,
+      "palette": {
+        "member": "uniturb.pal",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3"
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {
+        "3": {
+          "member": "isourb.pal",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "role": "rubble",
+          "remapable": false,
+          "runtimeUsed": true
+        }
+      }
+    },
+    "cuwa19_a.shp": {
+      "sha256": "f04d5e2f788e7b58b9e4d299c411b6cac0fb30f1aa0ff241fa4c269149540286",
+      "canvas": [
+        198,
+        218
+      ],
+      "totalFrames": 96,
+      "bodyFrames": 48,
+      "palette": {
+        "member": "uniturb.pal",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3"
+      },
+      "hasShadow": true,
+      "remapable": false
+    },
     "tibtre01.urb": {
       "sha256": "0a9218d1c55745b98c7cfe6ca4e02cf730ea00c40bae43eac0b298e6045df47c",
       "canvas": [
@@ -5800,15 +5839,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -5835,6 +5865,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -5855,15 +5894,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -5890,6 +5920,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -5910,15 +5949,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -5945,6 +5975,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -5965,15 +6004,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6000,6 +6030,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6020,15 +6059,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6055,6 +6085,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6075,15 +6114,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6110,6 +6140,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6130,15 +6169,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6165,6 +6195,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6185,15 +6224,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6220,6 +6250,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6240,15 +6279,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6275,6 +6305,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6295,15 +6334,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6330,6 +6360,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6350,15 +6389,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6385,6 +6415,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6405,15 +6444,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6440,6 +6470,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6460,15 +6499,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6495,6 +6525,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6515,15 +6554,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6550,6 +6580,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6570,15 +6609,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6605,6 +6635,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6625,15 +6664,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6660,6 +6690,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6680,15 +6719,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6715,6 +6745,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6735,15 +6774,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6770,6 +6800,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6790,15 +6829,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6825,6 +6855,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6845,15 +6884,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6880,6 +6910,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6900,15 +6939,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6935,6 +6965,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -6955,15 +6994,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -6990,6 +7020,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7010,15 +7049,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7045,6 +7075,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7065,15 +7104,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7100,6 +7130,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7120,15 +7159,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7155,6 +7185,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7175,15 +7214,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": false,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7210,6 +7240,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": false,
+          "remapable": false
         }
       }
     },
@@ -7230,15 +7269,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7265,6 +7295,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7285,15 +7324,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7320,6 +7350,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7340,15 +7379,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7375,6 +7405,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7395,15 +7434,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7430,6 +7460,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7450,15 +7489,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7485,6 +7515,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7505,15 +7544,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7540,6 +7570,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7560,15 +7599,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7595,6 +7625,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7615,15 +7654,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7650,6 +7680,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7670,15 +7709,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7705,6 +7735,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7725,15 +7764,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7760,6 +7790,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7780,15 +7819,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7815,6 +7845,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7835,15 +7874,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7870,6 +7900,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7890,15 +7929,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7925,6 +7955,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -7945,15 +7984,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -7980,6 +8010,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8000,15 +8039,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8035,6 +8065,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8055,15 +8094,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8090,6 +8120,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8110,15 +8149,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8145,6 +8175,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8165,15 +8204,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8200,6 +8230,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8220,15 +8259,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8255,6 +8285,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8275,15 +8314,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8310,6 +8340,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8330,15 +8369,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8365,6 +8395,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8385,15 +8424,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8420,6 +8450,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8440,15 +8479,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8475,6 +8505,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8495,15 +8534,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8530,6 +8560,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8550,15 +8589,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8585,6 +8615,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8605,15 +8644,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8640,6 +8670,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8660,15 +8699,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8695,6 +8725,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8715,15 +8754,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8750,6 +8780,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8770,15 +8809,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8805,6 +8835,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8825,15 +8864,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8860,6 +8890,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8880,15 +8919,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8915,6 +8945,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8935,15 +8974,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -8970,6 +9000,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -8990,15 +9029,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -9025,6 +9055,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -9045,15 +9084,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -9080,6 +9110,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -9100,15 +9139,6 @@
       "hasShadow": true,
       "remapable": true,
       "framePalettes": {
-        "3": {
-          "member": "isourb.pal",
-          "archive": "ra2.mix/cache.mix",
-          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
-          "bytes": 768,
-          "role": "rubble",
-          "runtimeUsed": true,
-          "remapable": false
-        },
         "0": {
           "member": "uniturb.pal",
           "archive": "ra2.mix/cache.mix",
@@ -9135,6 +9165,15 @@
           "role": "body",
           "runtimeUsed": true,
           "remapable": true
+        },
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
         }
       }
     },
@@ -11716,9 +11755,893 @@
       "hasShadow": true,
       "remapable": true,
       "bodyFrames": 230
+    },
+    "civ1.shp": {
+      "sha256": "f5ad97d867e974012b2d80f79b554fd51ca462fc631e6510dff9f9a2bc524cef",
+      "canvas": [
+        64,
+        70
+      ],
+      "totalFrames": 476,
+      "palette": {
+        "member": "uniturb.pal",
+        "archive": "ra2.mix/cache.mix",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": true,
+      "bodyFrames": 238
+    },
+    "civ3.shp": {
+      "sha256": "68bafef09a00fc721b6c580be94d2bdbf8d39da6f12fff5051d347ff44c0b204",
+      "canvas": [
+        76,
+        72
+      ],
+      "totalFrames": 474,
+      "bodyFrames": 237,
+      "palette": {
+        "member": "uniturb.pal",
+        "archive": "ra2.mix/cache.mix",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": true
+    },
+    "cuwa2a.shp": {
+      "sha256": "c038d379d1326a717fcbae6608f0020d77bb985bb44c8d0735beb311ef231d6c",
+      "canvas": [
+        240,
+        244
+      ],
+      "totalFrames": 8,
+      "bodyFrames": 4,
+      "palette": {
+        "member": "uniturb.pal",
+        "archive": "ra2.mix/cache.mix",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": true,
+      "framePalettes": {
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
+        }
+      }
+    },
+    "cuwa2b.shp": {
+      "sha256": "671e5858df0f13f9befb2a73ef208198eb7942f925c082e2e11591637b5d09c0",
+      "canvas": [
+        282,
+        212
+      ],
+      "totalFrames": 8,
+      "bodyFrames": 4,
+      "palette": {
+        "member": "uniturb.pal",
+        "archive": "ra2.mix/cache.mix",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": true,
+      "framePalettes": {
+        "3": {
+          "member": "isourb.pal",
+          "archive": "ra2.mix/cache.mix",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "bytes": 768,
+          "role": "rubble",
+          "runtimeUsed": true,
+          "remapable": false
+        }
+      }
+    },
+    "bridgb.urb": {
+      "sha256": "2a8a40ab246e30c745993745669f6851bdda9509af3186ea7a7c5103b592a27b",
+      "canvas": [
+        253,
+        242
+      ],
+      "totalFrames": 36,
+      "bodyFrames": 18,
+      "palette": {
+        "member": "isourb.pal",
+        "archive": "ra2.mix/cache.mix",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false
+    },
+    "cumsc12.shp": {
+      "sha256": "85fca8418ac3190e06324dc46fe357b5d6ab97595f8d18c58082bee1a2c065b2",
+      "canvas": [
+        60,
+        44
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "uniturb.pal",
+        "archive": "ra2.mix/cache.mix",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": true
+    },
+    "josh.shp": {
+      "sha256": "baa66ab19bbea2929c03c4a8f413cd593aa868fadfe840f50e2510c2f1228e18",
+      "canvas": [
+        88,
+        70
+      ],
+      "totalFrames": 328,
+      "bodyFrames": 164,
+      "palette": {
+        "member": "uniturb.pal",
+        "archive": "ra2.mix/cache.mix",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": true
+    },
+    "cgstl04.shp": {
+      "sha256": "5a41203dcdd34dc12790c9a0a2b758d96135f3eceba5f00b13ebe9e75e8134d9",
+      "canvas": [
+        362,
+        372
+      ],
+      "totalFrames": 8,
+      "bodyFrames": 4,
+      "palette": {
+        "member": "uniturb.pal",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {
+        "3": {
+          "member": "isourb.pal",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "archive": "ra2.mix/cache.mix",
+          "bytes": 768,
+          "remapable": false,
+          "role": "rubble",
+          "runtimeUsed": true
+        }
+      }
+    },
+    "srock02.urb": {
+      "sha256": "cae688b27ab8f9d70db085047b45a38205b1a9f2fe5058f868fa2fa41d8b83dd",
+      "canvas": [
+        120,
+        120
+      ],
+      "totalFrames": 2,
+      "bodyFrames": 1,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "srock03.urb": {
+      "sha256": "ad141a047f4afbb27334261ae94659c02f7add3246e111ff48d0e27b0b206e3c",
+      "canvas": [
+        120,
+        120
+      ],
+      "totalFrames": 2,
+      "bodyFrames": 1,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "srock04.urb": {
+      "sha256": "7762b048b2f940ef7fcc7228c03f9414cfcaf50464d8678b9e55b82eb96c5ef3",
+      "canvas": [
+        120,
+        120
+      ],
+      "totalFrames": 2,
+      "bodyFrames": 1,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "cgchig06.shp": {
+      "sha256": "c60bd0ae30ac3d38a45f0ae607ada2561d350bec0360d8b964967ca13f7abd6b",
+      "canvas": [
+        380,
+        416
+      ],
+      "totalFrames": 8,
+      "bodyFrames": 4,
+      "palette": {
+        "member": "uniturb.pal",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {
+        "3": {
+          "member": "isourb.pal",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "archive": "ra2.mix/cache.mix",
+          "bytes": 768,
+          "remapable": false,
+          "role": "rubble",
+          "runtimeUsed": true
+        }
+      }
+    },
+    "cuchig05.shp": {
+      "sha256": "3f587c9935badc23d96c419d814a53333938feef5f855404fa34ca0d6717f189",
+      "canvas": [
+        780,
+        508
+      ],
+      "totalFrames": 8,
+      "bodyFrames": 4,
+      "palette": {
+        "member": "uniturb.pal",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {
+        "3": {
+          "member": "isourb.pal",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "archive": "ra2.mix/cache.mix",
+          "bytes": 768,
+          "remapable": false,
+          "role": "rubble",
+          "runtimeUsed": true
+        }
+      }
+    },
+    "cgchig04.shp": {
+      "sha256": "106ea1df7b8c1ee4f7a96310b65b89323dd1aefbeb4e5f226496b0e9eed04401",
+      "canvas": [
+        362,
+        376
+      ],
+      "totalFrames": 8,
+      "bodyFrames": 4,
+      "palette": {
+        "member": "uniturb.pal",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": true,
+      "framePalettes": {
+        "3": {
+          "member": "isourb.pal",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "archive": "ra2.mix/cache.mix",
+          "bytes": 768,
+          "remapable": false,
+          "role": "rubble",
+          "runtimeUsed": true
+        }
+      }
+    },
+    "curus08.shp": {
+      "sha256": "1ab20f6f5a09bf8c66a19c9f244f6d5ae430b8ffcf2f760a50a9f9403242330b",
+      "canvas": [
+        154,
+        144
+      ],
+      "totalFrames": 8,
+      "bodyFrames": 4,
+      "palette": {
+        "member": "uniturb.pal",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": true,
+      "framePalettes": {
+        "3": {
+          "member": "isourb.pal",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "archive": "ra2.mix/cache.mix",
+          "bytes": 768,
+          "remapable": false,
+          "role": "rubble",
+          "runtimeUsed": true
+        }
+      }
+    },
+    "lobrdb01.urb": {
+      "sha256": "1c8ac1374103fc3443c86efbafe2a431ea23df3d832130dcaa79b8d540080730",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb02.urb": {
+      "sha256": "eb03b8071306bd301853f0100e10da8107af8b5bc9420c591841903ffe5003a8",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb03.urb": {
+      "sha256": "6059795ba0d5a5a646980c482e457aff0061739a4387aa813a0158621abb048f",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb04.urb": {
+      "sha256": "421dcc372fe679eebbb45a692a60c29f22790afe71b3f73c81ef57a5367d54f5",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb05.urb": {
+      "sha256": "03d4a29a982c9fe4ce48aeb50e588ee1e44a70dd2b2ecb463c7a6cb431aa98c1",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb06.urb": {
+      "sha256": "599d282d4dcaf48bf6664d5d3811229e6981baeea03f1355d6944bcdfa9fe439",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb07.urb": {
+      "sha256": "7e1171f312760e981ec53db3d87742a126f71010ff89faff2364c8fddd94f13d",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb08.urb": {
+      "sha256": "26394e58b09ee7e10b65c059f72128efdde40e343306c045fcfaa2554e5caf24",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb09.urb": {
+      "sha256": "683e7827425f76a58c1cbb11ed24e382894ecd269b23205bb146dd45706fcd61",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb10.urb": {
+      "sha256": "812bd60e78dd8fea4f852184a2cd983bff2a81e0753f7d801ace360e56fc5704",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb11.urb": {
+      "sha256": "a89eaf8bf6b92c7c8122e882550c6a16e4e8e0ac955bfb015426ce254a2c46a7",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb12.urb": {
+      "sha256": "3d146c0be601bb7baede3253db274acc3ae94db8523855dab47246a2c99db675",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb13.urb": {
+      "sha256": "1657bf34220ed0284743bb176a40855a8cc1e2096ea76caa3654e0a38a442c67",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb14.urb": {
+      "sha256": "25cf7dbfa19411d7f0ad79ebec0501b62e61e104e0a36f0007160e1c40616083",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb15.urb": {
+      "sha256": "a56172e66f40547a4a38d01fbef116d8b05d71baf2d07c5d2387a24917a5785c",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb16.urb": {
+      "sha256": "1f57a417000ee4f828b504a5c05d6155a9e6e2496f82f9a93cd72238ba22372e",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb17.urb": {
+      "sha256": "55c07fd2a5970d56dc8d4a17c826e1790bcd38a0f018e482037a2d5ae1b8eea0",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb18.urb": {
+      "sha256": "6528581e1582a6880c749a32d425fe24392d104dc7d94e538cbbf5fcfbf3f209",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb19.urb": {
+      "sha256": "624921d41ba7db3457758cc485cba3e1ebad6cbca67ae9a228f127111b99c687",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb20.urb": {
+      "sha256": "211feeecef67ecf8cb389efe4151f6babaaee2f50d974eaef97c614fcce9d258",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb21.urb": {
+      "sha256": "2caee628b2129edfb57fe2cb72f9a598f43969c4f5486e9002713e8a90a5b375",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb22.urb": {
+      "sha256": "63e59892fa7a324c7bd6b11e48ad32d64803022556fb0ee9ea95b0ab95acc2e2",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb23.urb": {
+      "sha256": "c2c54b73b006e829cba29ac40f8f8dc204fc13d233cf40fed78d11cb200530be",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb24.urb": {
+      "sha256": "408c650beddeac311c3d9e39bf60a2ca055de29e4207b5140f630fb209779d60",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb25.urb": {
+      "sha256": "856f6c2b706f018373fc8b1a231aae62f5d55a0296abfac49d725d270ca31612",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "lobrdb26.urb": {
+      "sha256": "b66935492f1c81e236384670e1ed2af61b7ef2ecd067b4b6f7316edb5b141712",
+      "canvas": [
+        180,
+        120
+      ],
+      "totalFrames": 6,
+      "bodyFrames": 3,
+      "palette": {
+        "member": "isourb.pal",
+        "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": false,
+      "framePalettes": {}
+    },
+    "cusydn03.shp": {
+      "sha256": "3fb8a8929fc7f2e95f21963db1b8728c236eaf7396a54e341af2c4daa25890cc",
+      "canvas": [
+        354,
+        292
+      ],
+      "totalFrames": 8,
+      "bodyFrames": 4,
+      "palette": {
+        "member": "uniturb.pal",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": true,
+      "framePalettes": {
+        "3": {
+          "member": "isourb.pal",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "archive": "ra2.mix/cache.mix",
+          "bytes": 768,
+          "remapable": false,
+          "role": "rubble",
+          "runtimeUsed": true
+        }
+      }
+    },
+    "cglond03.shp": {
+      "sha256": "d0ee73fa2fafea97751618ff7278f0114e0a2ebd55f47669e5011f1b55669d89",
+      "canvas": [
+        220,
+        148
+      ],
+      "totalFrames": 8,
+      "bodyFrames": 4,
+      "palette": {
+        "member": "uniturb.pal",
+        "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+        "archive": "ra2.mix/cache.mix",
+        "bytes": 768
+      },
+      "hasShadow": true,
+      "remapable": true,
+      "framePalettes": {
+        "3": {
+          "member": "isourb.pal",
+          "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+          "archive": "ra2.mix/cache.mix",
+          "bytes": 768,
+          "remapable": false,
+          "role": "rubble",
+          "runtimeUsed": true
+        }
+      }
     }
   },
   "families": {
+    "campaign-sov01-memorial": {
+      "members": [
+        "cuwa19_a.shp",
+        "cuwash19.shp"
+      ],
+      "identities": [
+        "CAWASH19",
+        "CAWA19_A",
+        "CAWA19_AD",
+        "CAWA19_AG"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building",
+        "animation"
+      ],
+      "familyHash": "0e7df4d43e37c1a4781f180df81946907b2a034a12a9cd188d6db2309d7858f1",
+      "sourceScope": {
+        "campaignSourceSha256s": [
+          "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f"
+        ]
+      }
+    },
     "urban-tibtre01": {
       "members": [
         "tibtre01.urb"
@@ -11871,6 +12794,7 @@
         "CAARMY02"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -11995,6 +12919,7 @@
         "CAMSC11"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -12166,6 +13091,7 @@
         "CAKRMW"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -12420,6 +13346,7 @@
         "CIV2"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -12435,6 +13362,7 @@
         "CAARMY03"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -12450,6 +13378,7 @@
         "CAARMY04"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -12498,6 +13427,7 @@
         "CARUFGL"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -12577,6 +13507,7 @@
         "CIVSF"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -12592,6 +13523,7 @@
         "CIVSTM"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -13520,6 +14452,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "0f40a5aa41268c06bbfcfb33d943eb9a27cc1d7ede501767d781bf581b3428f0"
@@ -13535,6 +14468,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "acd0202d02c0e89bc5f5d804dde74a8d07f260cfce4fc4b662db050e09ae4358"
@@ -13550,6 +14484,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "61bb56dc5abe1d8d056cf99f97655f91018e862652f76a8c13219df01cffca3f"
@@ -13708,6 +14643,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "238e04395936c6a17332579316e547ce42334ec1d98bed8663c3cf863875610e"
@@ -13723,6 +14659,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "68ab8ed7cbc00874388e54924247abc17a53fc3a1c3315edc04de2339b606202"
@@ -13738,6 +14675,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "be3f382878cb3c2cecc238b244b1d1353e3ee933a44355eacad9d6dffdaef0e5"
@@ -13753,6 +14691,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "193cc9260b0ddaccb0a8fddd7af63864bd54d87667dbd40153decb038254fbf5"
@@ -13768,6 +14707,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "86344ddde67d4f11fbb8af7424947d24b29609ef7c06095b1b0e76f474a10879"
@@ -13798,6 +14738,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "2cabbea7379a2799b60510b64ab44f9dba41c0671315f99d0fa852c24bdb2ae5"
@@ -13858,6 +14799,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "f786abc70723639f310ef51f04455484ef97159496b34cfd53564b4447539eb7"
@@ -13888,6 +14830,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "dfd34abf5f1d8db658f9d56c3b631ab1474a94d452428a2c78856719d5af5397"
@@ -13903,6 +14846,7 @@
         "terrain"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "4e2d2aa9f583d9d346b724422956536965aa8dd55dbbe8db4c9a99ef2cd7aded"
@@ -14412,6 +15356,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "be4f81a8f1f2d1c0dee4be048a10912c1e94cf438445c8b6edece9726011e175"
@@ -14442,6 +15387,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "fefff653f72ee151099eea36c9796c9cf5500633bb87636b422da32e75866c05"
@@ -14457,6 +15403,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "86ac2a71c6e0e2e5f2cc026df5997a6019ecca18ec5519c0b37cd4bcf9f10ea3"
@@ -14472,6 +15419,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "d793e68b89f43a874feb266ba0b40180c54e422247e52b6400037e2d48f8392e"
@@ -14487,6 +15435,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "00cedba1d6123ce38b43aef0f3abb2a9bbe471ea66c35fe5e7313764f04b774c"
@@ -14502,6 +15451,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "e9b0209e3310aa5ce6200b052895e2c24dd12483ffbb38f03ae326ffbd142679"
@@ -14517,6 +15467,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "74932e73db0ba072e47ce15ba4479622cf2e4fd57e1521a1666154c893c49d95"
@@ -14532,6 +15483,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "1dbdeaae63805a3a827713c78997faf179b48db8fd1d2c17334c6d0c64c77f7c"
@@ -14547,6 +15499,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "f32a2ead7771bdbcabc71944c4f3d20e507a1c10a7b22f555a8d48fb76e1dbb1"
@@ -14562,6 +15515,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "29fc9f8f56aa1b6fa14735efab865e762bc4cd065ea227af0bc7a3f29d8a3637"
@@ -14637,6 +15591,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "4644343f29e3118ff522099496e3983cd69a95f09370ee36519ae490566f26ca"
@@ -14652,6 +15607,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "1f95146163bcb40405cea79c83c32c3f85ba99b5da5b8bc51d9c7600c0df260e"
@@ -14697,6 +15653,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "1942a1c33d81540d743cd17a5fa9455ad47cc166282d4c9e959000d7446bbeaa"
@@ -14832,6 +15789,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "25749aa1e32b9f1bcf673631e6a3335bef67fbf49526d0f278e42f13a9fd0399"
@@ -14862,6 +15820,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "5855b6f5c65ed1791330cb53315a29b847cd28c4d8fe7bf6c614ec53bfbfefa9"
@@ -14877,6 +15836,7 @@
         "building"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "familyHash": "330ae640709a5cf50a04ecc7ac4d1fa3b101551b8f1dfaca9ce651204e22080f"
@@ -15036,6 +15996,7 @@
         "CIVSFM"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -15852,6 +16813,7 @@
         "CARUS02A"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -15867,6 +16829,7 @@
         "CARUS02B"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -15897,6 +16860,7 @@
         "CAMISC06"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -16212,6 +17176,7 @@
         "CAWASH06"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -16227,6 +17192,7 @@
         "CANEWY13"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -16257,6 +17223,7 @@
         "CANWY05"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -16320,6 +17287,7 @@
         "CAMOV02"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -16336,6 +17304,7 @@
         "CAMOV01"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -16385,6 +17354,7 @@
         "NAPSYB"
       ],
       "editions": [
+        "ra2",
         "yr"
       ],
       "kinds": [
@@ -16437,10 +17407,1488 @@
         "infantry"
       ],
       "familyHash": "b622ee0feece17f3765baca3cf50fdc78858645740b6407ceb2b1b02d94bc20b"
+    },
+    "campaign-sov01-civ1": {
+      "members": [
+        "civ1.shp"
+      ],
+      "identities": [
+        "CIV1"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "infantry"
+      ],
+      "familyHash": "fb5a087981e1c48b3128260640640f5e25d8f4fde49220f8683da180ff2c5464",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "sov01t.map",
+            "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f"
+          },
+          {
+            "mission": "sov08u.map",
+            "sha256": "91817fa1585e631cd929b6356ccc29c99f1dfb8144c52cd225e3eeb924370b7e"
+          },
+          {
+            "mission": "sov09u.map",
+            "sha256": "ef2dd5c5280d20f5759c02cebf860111280dc0f091c322f21b42eeae6b53c8b6"
+          },
+          {
+            "mission": "all03u.map",
+            "sha256": "186e317d4be77eaeec8e0b09e5c813f6ff95aa01e4e206f4b4c82178bf679a61"
+          },
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          },
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-sov01-civ3": {
+      "members": [
+        "civ3.shp"
+      ],
+      "identities": [
+        "CIV3",
+        "CTECH"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "infantry"
+      ],
+      "familyHash": "034f721fae8977cd2b4e7ad58e43143ec7eb7997eeb6de28a15f1bd32f7f2c78",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "sov01t.map",
+            "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f"
+          },
+          {
+            "mission": "sov08u.map",
+            "sha256": "91817fa1585e631cd929b6356ccc29c99f1dfb8144c52cd225e3eeb924370b7e"
+          },
+          {
+            "mission": "all03u.map",
+            "sha256": "186e317d4be77eaeec8e0b09e5c813f6ff95aa01e4e206f4b4c82178bf679a61"
+          },
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          },
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-sov01-cawa2a": {
+      "members": [
+        "cuwa2a.shp"
+      ],
+      "identities": [
+        "CAWA2A"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "e78b9c080196db960b6a80eeda5df7bc4edb284b6167eae610faf3ed27c0894e",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "sov01t.map",
+            "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f"
+          },
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          }
+        ]
+      }
+    },
+    "campaign-sov01-cawa2b": {
+      "members": [
+        "cuwa2b.shp"
+      ],
+      "identities": [
+        "CAWA2B"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "c340862b240aec11d9f62d6ead707a83b20386eef4b262bfb962e09d7d4f0107",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "sov01t.map",
+            "sha256": "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f"
+          },
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          }
+        ]
+      }
+    },
+    "campaign-sov01-bridgeb1": {
+      "members": [
+        "bridgb.urb"
+      ],
+      "identities": [
+        "BRIDGEB1"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "overlay"
+      ],
+      "familyHash": "11ceb6c4acec09263ff6877bf1252e91e1487b8805d54313fe4de92f94d2b89d",
+      "sourceScope": {
+        "campaignSourceSha256s": [
+          "7f4492961d30b5799367aa840ba007932057b19a22a77f95475a18ca1407b99f"
+        ]
+      }
+    },
+    "campaign-sov09-civa": {
+      "members": [
+        "civa.shp"
+      ],
+      "identities": [
+        "CIVA"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "infantry"
+      ],
+      "familyHash": "7825e9c476409b2afe3b02dc0aea68f4ce171af081b56a6838e56767cbf97fb3",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "sov09u.map",
+            "sha256": "ef2dd5c5280d20f5759c02cebf860111280dc0f091c322f21b42eeae6b53c8b6"
+          }
+        ]
+      }
+    },
+    "campaign-sov09-pres": {
+      "members": [
+        "pres.shp"
+      ],
+      "identities": [
+        "PRES"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "infantry"
+      ],
+      "familyHash": "501846c5617b4d00abb970d43c7432c7d404ed017036054ba86aa27d1aa90c2a",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "sov09u.map",
+            "sha256": "ef2dd5c5280d20f5759c02cebf860111280dc0f091c322f21b42eeae6b53c8b6"
+          },
+          {
+            "mission": "all03u.map",
+            "sha256": "186e317d4be77eaeec8e0b09e5c813f6ff95aa01e4e206f4b4c82178bf679a61"
+          }
+        ]
+      }
+    },
+    "campaign-sov09-ssrv": {
+      "members": [
+        "ssrv.shp"
+      ],
+      "identities": [
+        "SSRV"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "infantry"
+      ],
+      "familyHash": "b622ee0feece17f3765baca3cf50fdc78858645740b6407ceb2b1b02d94bc20b",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "sov09u.map",
+            "sha256": "ef2dd5c5280d20f5759c02cebf860111280dc0f091c322f21b42eeae6b53c8b6"
+          },
+          {
+            "mission": "all03u.map",
+            "sha256": "186e317d4be77eaeec8e0b09e5c813f6ff95aa01e4e206f4b4c82178bf679a61"
+          }
+        ]
+      }
+    },
+    "campaign-sov09-civb": {
+      "members": [
+        "civb.shp"
+      ],
+      "identities": [
+        "CIVB"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "infantry"
+      ],
+      "familyHash": "7e508c56df874f45c1839c7751eee21b1e061bae68efabb877bea3308138e777",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "sov09u.map",
+            "sha256": "ef2dd5c5280d20f5759c02cebf860111280dc0f091c322f21b42eeae6b53c8b6"
+          }
+        ]
+      }
+    },
+    "campaign-sov09-civc": {
+      "members": [
+        "civc.shp"
+      ],
+      "identities": [
+        "CIVC"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "infantry"
+      ],
+      "familyHash": "c845d972e29d0e67fcb3fcea53225f7c83d6084ee1699e0dea87542e19e386da",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "sov09u.map",
+            "sha256": "ef2dd5c5280d20f5759c02cebf860111280dc0f091c322f21b42eeae6b53c8b6"
+          }
+        ]
+      }
+    },
+    "campaign-sov09-cachig03": {
+      "members": [
+        "cuchig03.shp"
+      ],
+      "identities": [
+        "CACHIG03"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "familyHash": "d57df0a3fb5b8cf0d03d974dbb8b7f252d5f9c3611bb3f3fff52e6c7676f8cf4",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "sov09u.map",
+            "sha256": "ef2dd5c5280d20f5759c02cebf860111280dc0f091c322f21b42eeae6b53c8b6"
+          },
+          {
+            "mission": "all04u.map",
+            "sha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093"
+          },
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          },
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-sov09-camsc12": {
+      "members": [
+        "cumsc12.shp"
+      ],
+      "identities": [
+        "CAMSC12"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "395f8d2613125a31a6bbd605a615cb53bb6836c648033c87bd39428d2604b89e",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "sov09u.map",
+            "sha256": "ef2dd5c5280d20f5759c02cebf860111280dc0f091c322f21b42eeae6b53c8b6"
+          }
+        ]
+      }
+    },
+    "campaign-all01-pole01": {
+      "members": [
+        "pole01.urb"
+      ],
+      "identities": [
+        "POLE01"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "terrain"
+      ],
+      "familyHash": "d1e472a2f7eb2ce1c8156e5831a0b0fc34050dbe5420e01bdb699f1118de2b26",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all01t.map",
+            "sha256": "ad64c9293a8bccb85c38f5871a974ed9c09b8b5da11bb346e990423bf625c79c"
+          }
+        ]
+      }
+    },
+    "campaign-all01-trff04": {
+      "members": [
+        "trff04.urb"
+      ],
+      "identities": [
+        "TRFF04"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "terrain"
+      ],
+      "familyHash": "b0c7ea09e068b9132ad2f3017f6e3bb7e183a664f3ca81df4cbcf3c28c7d1f29",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all01t.map",
+            "sha256": "ad64c9293a8bccb85c38f5871a974ed9c09b8b5da11bb346e990423bf625c79c"
+          },
+          {
+            "mission": "all04u.map",
+            "sha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093"
+          },
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          }
+        ]
+      }
+    },
+    "campaign-all03-castrt05": {
+      "members": [
+        "custrt05.shp"
+      ],
+      "identities": [
+        "CASTRT05"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "b1df166427b2bcf1559507975bb0ad8b2e7d09dd7bc43cbddf41812f00e075f8",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all03u.map",
+            "sha256": "186e317d4be77eaeec8e0b09e5c813f6ff95aa01e4e206f4b4c82178bf679a61"
+          }
+        ]
+      }
+    },
+    "campaign-all04-josh": {
+      "members": [
+        "josh.shp"
+      ],
+      "identities": [
+        "JOSH"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "infantry"
+      ],
+      "familyHash": "7532ea3d3fe7b449603ff30fc3f22cdc6d5ae52a641b7fbb4a3c659df654c677",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all04u.map",
+            "sha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093"
+          }
+        ]
+      }
+    },
+    "campaign-all04-napsya": {
+      "members": [
+        "nupsya.shp",
+        "nupsya_a.shp"
+      ],
+      "identities": [
+        "NAPSYA"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "c3e40dc3ad2321e0710646b739a2df019ce7bff9fd87219e8237993b48ba25f8",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all04u.map",
+            "sha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093"
+          }
+        ]
+      }
+    },
+    "campaign-all04-camiam02": {
+      "members": [
+        "cumiam02.shp"
+      ],
+      "identities": [
+        "CAMIAM02"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "familyHash": "c7979971080046ca263cbc97cdfa1c906732ec95453ae46b6d3582c2aa7c5979",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all04u.map",
+            "sha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093"
+          }
+        ]
+      }
+    },
+    "campaign-all04-capars02": {
+      "members": [
+        "cupars02.shp"
+      ],
+      "identities": [
+        "CAPARS02"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "familyHash": "ef2e21b7e0518041f8ba9e3eefed5f731cd6dcd73acefedb96593863c4f302ba",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all04u.map",
+            "sha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093"
+          }
+        ]
+      }
+    },
+    "campaign-all06-cawash09": {
+      "members": [
+        "cuwash09.shp"
+      ],
+      "identities": [
+        "CAWASH09"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "8d4305eebab7505f1169b49d52877edade6f3718fde1de95a53583922aff516f",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          }
+        ]
+      }
+    },
+    "campaign-all06-camsc02": {
+      "members": [
+        "cumsc02.shp"
+      ],
+      "identities": [
+        "CAMSC02"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "dfab6fe063dbf8ebe61a610456ee2c61f39ab22634ed08de3dc9e48d50791d86",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          }
+        ]
+      }
+    },
+    "campaign-all06-cahse02": {
+      "members": [
+        "cuhse02.shp"
+      ],
+      "identities": [
+        "CAHSE02"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "familyHash": "64823885340e8cdc81100c6697ec30a3d6eb11a2ca252fdff27fab45e0898d38",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          }
+        ]
+      }
+    },
+    "campaign-all06-cahse04": {
+      "members": [
+        "cuhse04.shp"
+      ],
+      "identities": [
+        "CAHSE04"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "familyHash": "09276f4804988d12b2992a3b5f301a98a21e698810c685407b2f03af855c5c7e",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          }
+        ]
+      }
+    },
+    "campaign-all06-capark03": {
+      "members": [
+        "cupark03.shp"
+      ],
+      "identities": [
+        "CAPARK03"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "4d10ebe048d338f7a5fcd1ed6bb71834a92525e0888bfd7f13e5e2f67b1da59b",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          }
+        ]
+      }
+    },
+    "campaign-all06-cahse03": {
+      "members": [
+        "cuhse03.shp"
+      ],
+      "identities": [
+        "CAHSE03"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "familyHash": "12fc335e50645fb7e98136d8524db50a349c66544b6e6fe7c352b8f65e0b8935",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all06u.map",
+            "sha256": "9e02b8fa4c570000c2bb34c9b0e702b143e2e93ae529faa36556e1f43af0f922"
+          }
+        ]
+      }
+    },
+    "campaign-all08-castl05a": {
+      "members": [
+        "custl05a.shp"
+      ],
+      "identities": [
+        "CASTL05A"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "4b08c12437f96feb7c7795dcf82af56bf7c09cbc8e2060477426c44498a4bc0a",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-all08-castl05d": {
+      "members": [
+        "custl05d.shp"
+      ],
+      "identities": [
+        "CASTL05D"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "ac58d9cf283e66a9c96724a656febadeb38633b22f05206fb1a037d6b5e29d79",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-all08-castl05f": {
+      "members": [
+        "custl05f.shp"
+      ],
+      "identities": [
+        "CASTL05F"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "8bfb1b310ddac6c08d8945e9bd8e6d772f540951354705f8b7a5f7974ea595c8",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-all08-castl05g": {
+      "members": [
+        "custl05g.shp"
+      ],
+      "identities": [
+        "CASTL05G"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "fc685d09151945dc3dd69ee457a27f6aad8314e5b925c2972ea139ff6fd29c91",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-all08-castl05h": {
+      "members": [
+        "custl05h.shp"
+      ],
+      "identities": [
+        "CASTL05H"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "92c2600d206c096ee7e3d00abec41e998de5866f0c14c15a026f36acd9a62409",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-all08-carus05": {
+      "members": [
+        "curus05.shp"
+      ],
+      "identities": [
+        "CARUS05"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "00dc491dd7169c690fefa3be13268c8d9f1d3c39e84c082938f55319b4cdc04b",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-all08-caind01": {
+      "members": [
+        "cuind01.shp"
+      ],
+      "identities": [
+        "CAIND01"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "familyHash": "e3bc24c5cab2127bda6151b0ead48379866dc5f9965857c79e3017a35e9dc0a2",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-all08-castl04": {
+      "members": [
+        "cgstl04.shp"
+      ],
+      "identities": [
+        "CASTL04"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "a4348c92cec716cb5f60e73b64ad58cbb56c06f3bd25c82ac2dce8cf68d89c90",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-all01-srock02": {
+      "members": [
+        "srock02.urb"
+      ],
+      "identities": [
+        "SROCK02"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "overlay"
+      ],
+      "familyHash": "f182ee8eb0895f4c93303dbb0785bef9a77193ed571d91cdb55a47e89f0d40e4",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all01t.map",
+            "sha256": "ad64c9293a8bccb85c38f5871a974ed9c09b8b5da11bb346e990423bf625c79c"
+          }
+        ]
+      }
+    },
+    "campaign-all01-srock03": {
+      "members": [
+        "srock03.urb"
+      ],
+      "identities": [
+        "SROCK03"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "overlay"
+      ],
+      "familyHash": "2e22e2ce62346cb123af15d78e229e3dc70cb2b1182ba60c39832bca042a02ed",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all01t.map",
+            "sha256": "ad64c9293a8bccb85c38f5871a974ed9c09b8b5da11bb346e990423bf625c79c"
+          }
+        ]
+      }
+    },
+    "campaign-all01-srock04": {
+      "members": [
+        "srock04.urb"
+      ],
+      "identities": [
+        "SROCK04"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "overlay"
+      ],
+      "familyHash": "a03b0174f6a360628167842e849e2d468c7076a1c6a52e72b8cbc20ad835b468",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all01t.map",
+            "sha256": "ad64c9293a8bccb85c38f5871a974ed9c09b8b5da11bb346e990423bf625c79c"
+          }
+        ]
+      }
+    },
+    "campaign-all04-cachig06": {
+      "members": [
+        "cgchig06.shp"
+      ],
+      "identities": [
+        "CACHIG06"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "6c4a70db8e50033ecd971e180f9815d6c996ddb2c020b709d085f994b796c4a0",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all04u.map",
+            "sha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093"
+          }
+        ]
+      }
+    },
+    "campaign-all04-cachig05": {
+      "members": [
+        "cuchig05.shp"
+      ],
+      "identities": [
+        "CACHIG05"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "2221c2b95ff7705c316447083fc4af805f786405e08c5019b6ec17c2fc5ce688",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all04u.map",
+            "sha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093"
+          }
+        ]
+      }
+    },
+    "campaign-all04-cachig05-owner-v28-r1": {
+      "members": [
+        "cuchig05.shp"
+      ],
+      "identities": [
+        "CACHIG05"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "d574611de9aa84494f244e522b6c09e04146d3e2bd5e3509e70dc74fc51302c2",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all04u.map",
+            "sha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093"
+          }
+        ]
+      },
+      "sourceOverrides": {
+        "cuchig05.shp": {
+          "sha256": "3f587c9935badc23d96c419d814a53333938feef5f855404fa34ca0d6717f189",
+          "canvas": [
+            780,
+            508
+          ],
+          "totalFrames": 8,
+          "bodyFrames": 4,
+          "palette": {
+            "member": "uniturb.pal",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "archive": "ra2.mix/cache.mix",
+            "bytes": 768
+          },
+          "hasShadow": true,
+          "remapable": true,
+          "framePalettes": {
+            "3": {
+              "member": "isourb.pal",
+              "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+              "archive": "ra2.mix/cache.mix",
+              "bytes": 768,
+              "remapable": false,
+              "role": "rubble",
+              "runtimeUsed": true
+            }
+          }
+        }
+      }
+    },
+    "campaign-all08-castl04-owner-v28-r1": {
+      "members": [
+        "cgstl04.shp"
+      ],
+      "identities": [
+        "CASTL04"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "713b5e2cd3b7586be160349524fc74c226ce30b87d64ae12872a312444b65223",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      },
+      "sourceOverrides": {
+        "cgstl04.shp": {
+          "sha256": "5a41203dcdd34dc12790c9a0a2b758d96135f3eceba5f00b13ebe9e75e8134d9",
+          "canvas": [
+            362,
+            372
+          ],
+          "totalFrames": 8,
+          "bodyFrames": 4,
+          "palette": {
+            "member": "uniturb.pal",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "archive": "ra2.mix/cache.mix",
+            "bytes": 768
+          },
+          "hasShadow": true,
+          "remapable": true,
+          "framePalettes": {
+            "3": {
+              "member": "isourb.pal",
+              "sha256": "b1f4c15b7b91130736b4dffeb189ca32621bf606afbc0b2d02eb5584b6921fe3",
+              "archive": "ra2.mix/cache.mix",
+              "bytes": 768,
+              "remapable": false,
+              "role": "rubble",
+              "runtimeUsed": true
+            }
+          }
+        }
+      }
+    },
+    "campaign-all04-cachig04-v31-r1": {
+      "members": [
+        "cgchig04.shp"
+      ],
+      "identities": [
+        "CACHIG04"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "e65eea33da0e03a5f522acb477106e5375e10d93e53e91eb8f20e73fa1c02443",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all04u.map",
+            "sha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093"
+          }
+        ]
+      }
+    },
+    "campaign-all04-carus08-v31-r1": {
+      "members": [
+        "curus08.shp"
+      ],
+      "identities": [
+        "CARUS08"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "b9693fa2165adcbfb4f4452fc82c3d48565ca99e6b5b35af61800887201f57ce",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all04u.map",
+            "sha256": "09e52db16946a330c032e988679ef61ff7745670ddad5e9bfcf96f916d18d093"
+          }
+        ]
+      }
+    },
+    "campaign-all08-low-concrete-bridge": {
+      "members": [
+        "lobrdb01.urb",
+        "lobrdb02.urb",
+        "lobrdb03.urb",
+        "lobrdb04.urb",
+        "lobrdb05.urb",
+        "lobrdb06.urb",
+        "lobrdb07.urb",
+        "lobrdb08.urb",
+        "lobrdb09.urb",
+        "lobrdb10.urb",
+        "lobrdb11.urb",
+        "lobrdb12.urb",
+        "lobrdb13.urb",
+        "lobrdb14.urb",
+        "lobrdb15.urb",
+        "lobrdb16.urb",
+        "lobrdb17.urb",
+        "lobrdb18.urb",
+        "lobrdb19.urb",
+        "lobrdb20.urb",
+        "lobrdb21.urb",
+        "lobrdb22.urb",
+        "lobrdb23.urb",
+        "lobrdb24.urb",
+        "lobrdb25.urb",
+        "lobrdb26.urb"
+      ],
+      "identities": [
+        "LOBRDB01",
+        "LOBRDB02",
+        "LOBRDB03",
+        "LOBRDB04",
+        "LOBRDB05",
+        "LOBRDB06",
+        "LOBRDB07",
+        "LOBRDB08",
+        "LOBRDB09",
+        "LOBRDB10",
+        "LOBRDB11",
+        "LOBRDB12",
+        "LOBRDB13",
+        "LOBRDB14",
+        "LOBRDB15",
+        "LOBRDB16",
+        "LOBRDB17",
+        "LOBRDB18",
+        "LOBRDB19",
+        "LOBRDB20",
+        "LOBRDB21",
+        "LOBRDB22",
+        "LOBRDB23",
+        "LOBRDB24",
+        "LOBRDB25",
+        "LOBRDB26"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "overlay"
+      ],
+      "familyHash": "daf6d7c8e3616bbe5b1832d2f31ba0e5616af52ea2a393e7905b84c6f15e0ca4",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-all08-low-concrete-bridge-v48": {
+      "members": [
+        "lobrdb01.urb",
+        "lobrdb02.urb",
+        "lobrdb03.urb",
+        "lobrdb04.urb",
+        "lobrdb05.urb",
+        "lobrdb06.urb",
+        "lobrdb07.urb",
+        "lobrdb08.urb",
+        "lobrdb09.urb",
+        "lobrdb10.urb",
+        "lobrdb11.urb",
+        "lobrdb12.urb",
+        "lobrdb13.urb",
+        "lobrdb14.urb",
+        "lobrdb15.urb",
+        "lobrdb16.urb",
+        "lobrdb17.urb",
+        "lobrdb18.urb",
+        "lobrdb19.urb",
+        "lobrdb20.urb",
+        "lobrdb21.urb",
+        "lobrdb22.urb",
+        "lobrdb23.urb",
+        "lobrdb24.urb",
+        "lobrdb25.urb",
+        "lobrdb26.urb"
+      ],
+      "identities": [
+        "LOBRDB01",
+        "LOBRDB02",
+        "LOBRDB03",
+        "LOBRDB04",
+        "LOBRDB05",
+        "LOBRDB06",
+        "LOBRDB07",
+        "LOBRDB08",
+        "LOBRDB09",
+        "LOBRDB10",
+        "LOBRDB11",
+        "LOBRDB12",
+        "LOBRDB13",
+        "LOBRDB14",
+        "LOBRDB15",
+        "LOBRDB16",
+        "LOBRDB17",
+        "LOBRDB18",
+        "LOBRDB19",
+        "LOBRDB20",
+        "LOBRDB21",
+        "LOBRDB22",
+        "LOBRDB23",
+        "LOBRDB24",
+        "LOBRDB25",
+        "LOBRDB26"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "overlay"
+      ],
+      "familyHash": "daf6d7c8e3616bbe5b1832d2f31ba0e5616af52ea2a393e7905b84c6f15e0ca4",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "campaign-all08-low-concrete-bridge-v49": {
+      "members": [
+        "lobrdb01.urb",
+        "lobrdb02.urb",
+        "lobrdb03.urb",
+        "lobrdb04.urb",
+        "lobrdb05.urb",
+        "lobrdb06.urb",
+        "lobrdb07.urb",
+        "lobrdb08.urb",
+        "lobrdb09.urb",
+        "lobrdb10.urb",
+        "lobrdb11.urb",
+        "lobrdb12.urb",
+        "lobrdb13.urb",
+        "lobrdb14.urb",
+        "lobrdb15.urb",
+        "lobrdb16.urb",
+        "lobrdb17.urb",
+        "lobrdb18.urb",
+        "lobrdb19.urb",
+        "lobrdb20.urb",
+        "lobrdb21.urb",
+        "lobrdb22.urb",
+        "lobrdb23.urb",
+        "lobrdb24.urb",
+        "lobrdb25.urb",
+        "lobrdb26.urb"
+      ],
+      "identities": [
+        "LOBRDB01",
+        "LOBRDB02",
+        "LOBRDB03",
+        "LOBRDB04",
+        "LOBRDB05",
+        "LOBRDB06",
+        "LOBRDB07",
+        "LOBRDB08",
+        "LOBRDB09",
+        "LOBRDB10",
+        "LOBRDB11",
+        "LOBRDB12",
+        "LOBRDB13",
+        "LOBRDB14",
+        "LOBRDB15",
+        "LOBRDB16",
+        "LOBRDB17",
+        "LOBRDB18",
+        "LOBRDB19",
+        "LOBRDB20",
+        "LOBRDB21",
+        "LOBRDB22",
+        "LOBRDB23",
+        "LOBRDB24",
+        "LOBRDB25",
+        "LOBRDB26"
+      ],
+      "editions": [
+        "ra2"
+      ],
+      "kinds": [
+        "overlay"
+      ],
+      "familyHash": "daf6d7c8e3616bbe5b1832d2f31ba0e5616af52ea2a393e7905b84c6f15e0ca4",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "mission": "all08u.map",
+            "sha256": "71a119187bd8f78a1c7677636e20a18a258f24dc94add2ac2b108a3dae9df8ea"
+          }
+        ]
+      }
+    },
+    "yr-reuse-urban-civ1-v1": {
+      "members": [
+        "civ1.shp"
+      ],
+      "identities": [
+        "CIV1"
+      ],
+      "editions": [
+        "yr"
+      ],
+      "kinds": [
+        "infantry"
+      ],
+      "familyHash": "f83902bcd2a35667127e014188e80aba2356bd993c60eda067b04baa583611ee",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "edition": "yr",
+            "mission": "all05umd.map",
+            "sha256": "7ee8148ad4b0092b7970588d9b064ddd6b753fc7bfb352bcc043affeb72c6aed"
+          }
+        ]
+      },
+      "sourceOverrides": {
+        "civ1.shp": {
+          "sha256": "f5ad97d867e974012b2d80f79b554fd51ca462fc631e6510dff9f9a2bc524cef",
+          "canvas": [
+            64,
+            70
+          ],
+          "totalFrames": 476,
+          "palette": {
+            "member": "uniturb.pal",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "archive": "ra2.mix/cache.mix",
+            "bytes": 768
+          },
+          "hasShadow": true,
+          "remapable": true,
+          "bodyFrames": 238
+        }
+      }
+    },
+    "yr-reuse-urban-civ3-v1": {
+      "members": [
+        "civ3.shp"
+      ],
+      "identities": [
+        "CIV3"
+      ],
+      "editions": [
+        "yr"
+      ],
+      "kinds": [
+        "infantry"
+      ],
+      "familyHash": "b87126add7c6a68fa4fd6f5d8a3e6f31dcefb91a6875fa8b915cb738ec63483a",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "edition": "yr",
+            "mission": "all05umd.map",
+            "sha256": "7ee8148ad4b0092b7970588d9b064ddd6b753fc7bfb352bcc043affeb72c6aed"
+          }
+        ]
+      },
+      "sourceOverrides": {
+        "civ3.shp": {
+          "sha256": "68bafef09a00fc721b6c580be94d2bdbf8d39da6f12fff5051d347ff44c0b204",
+          "canvas": [
+            76,
+            72
+          ],
+          "totalFrames": 474,
+          "bodyFrames": 237,
+          "palette": {
+            "member": "uniturb.pal",
+            "sha256": "ed785e62eed291480f3198dd44f6b656ebe3a9b75e9f641944d710abc6bde3e3",
+            "archive": "ra2.mix/cache.mix",
+            "bytes": 768
+          },
+          "hasShadow": true,
+          "remapable": true
+        }
+      }
+    },
+    "yr-task-urban-casydn03-v1": {
+      "members": [
+        "cusydn03.shp"
+      ],
+      "identities": [
+        "CASYDN03"
+      ],
+      "editions": [
+        "yr"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "c62f0664338515460a16409f9f5ae4b4db7830852defce3882068e927e124bfe",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "edition": "yr",
+            "mission": "all05umd.map",
+            "sha256": "7ee8148ad4b0092b7970588d9b064ddd6b753fc7bfb352bcc043affeb72c6aed"
+          }
+        ]
+      }
+    },
+    "yr-task-urban-calond03-v1": {
+      "members": [
+        "cglond03.shp"
+      ],
+      "identities": [
+        "CALOND03"
+      ],
+      "editions": [
+        "yr"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "c1860d48dc5d4166fbac5701c6a77446c7668f06821154f911385335dd259e35",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "edition": "yr",
+            "mission": "all05umd.map",
+            "sha256": "7ee8148ad4b0092b7970588d9b064ddd6b753fc7bfb352bcc043affeb72c6aed"
+          }
+        ]
+      }
+    },
+    "yr-task-urban-casydn03-v2": {
+      "members": [
+        "cusydn03.shp"
+      ],
+      "identities": [
+        "CASYDN03"
+      ],
+      "editions": [
+        "yr"
+      ],
+      "kinds": [
+        "building"
+      ],
+      "familyHash": "c62f0664338515460a16409f9f5ae4b4db7830852defce3882068e927e124bfe",
+      "sourceScope": {
+        "campaignSources": [
+          {
+            "edition": "yr",
+            "mission": "all05umd.map",
+            "sha256": "7ee8148ad4b0092b7970588d9b064ddd6b753fc7bfb352bcc043affeb72c6aed"
+          }
+        ]
+      }
     }
   },
   "identities": {
     "ra2": {
+      "CAWASH19": "campaign-sov01-memorial",
+      "CAWA19_A": "campaign-sov01-memorial",
+      "CAWA19_AD": "campaign-sov01-memorial",
+      "CAWA19_AG": "campaign-sov01-memorial",
       "TIBTRE01": "urban-tibtre01",
       "CABHUT": "urban-ctbhut",
       "CAMISC05": "urban-ctmisc05",
@@ -16616,7 +19064,121 @@
       "CAWA2D": "urban-cawa2d",
       "CAWA2C": "urban-cawa2c",
       "CAGARD01": "urban-cagard01",
-      "CIVBBP": "urban-civbbp"
+      "CIVBBP": "urban-civbbp",
+      "CAMOV01": "urban-camov01",
+      "CAMOV02": "urban-camov02",
+      "CAMSC10": "urban-camsc10",
+      "CAMSC11": "urban-ctmsc11",
+      "CANEWY21": "urban-canewy21",
+      "CAWASH06": "urban-cawash06",
+      "CIV1": "campaign-sov01-civ1",
+      "CIV2": "urban-civ2",
+      "CIV3": "campaign-sov01-civ3",
+      "CIVSF": "urban-snow-civsf",
+      "CIVSFM": "urban-civsfm",
+      "CIVSTM": "urban-snow-civstm",
+      "LT_SGN01": "urban-lt_sgn01",
+      "LT_SGN03": "urban-lt_sgn03",
+      "LT_SGN04": "urban-lt_sgn04",
+      "POLE02": "urban-pole02",
+      "SIGN01": "urban-sign01",
+      "TREE25": "urban-tree25",
+      "TREE26": "urban-tree26",
+      "TREE27": "urban-tree27",
+      "TRFF01": "urban-trff01",
+      "TRFF02": "urban-trff02",
+      "CAWA2A": "campaign-sov01-cawa2a",
+      "CAWA2B": "campaign-sov01-cawa2b",
+      "BRIDGEB1": "campaign-sov01-bridgeb1",
+      "NAPSYB": "urban-napsyb",
+      "CANWY05": "urban-canwy05",
+      "CANWY09": "urban-canwy09",
+      "CANWY23": "urban-canwy23",
+      "CANWY24": "urban-canwy24",
+      "CANEWY10": "urban-canewy10",
+      "CANEWY13": "urban-canewy13",
+      "CANEWY14": "urban-canewy14",
+      "CANEWY15": "urban-canewy15",
+      "CANEWY17": "urban-canewy17",
+      "CANEWY11": "urban-canewy11",
+      "CANEWY18": "urban-canewy18",
+      "CANEWY06": "urban-canewy06",
+      "CANEWY07": "urban-canewy07",
+      "CANEWY08": "urban-canewy08",
+      "LT_EUR01": "urban-lt_eur01",
+      "TRFF03": "urban-trff03",
+      "CAARMY04": "urban-ctarmy04",
+      "CARUS02B": "urban-carus02b",
+      "CARUS02A": "urban-carus02a",
+      "CAARMY02": "urban-ctarmy02",
+      "CAARMY03": "urban-ctarmy03",
+      "CARUFGL": "urban-ctrufgl",
+      "CAMISC06": "urban-camisc06",
+      "CABUNK02": "urban-cabunk02",
+      "CABUNK01": "urban-cabunk01",
+      "CAKRMW": "urban-ctkrmw",
+      "CTECH": "campaign-sov01-civ3",
+      "CIVA": "campaign-sov09-civa",
+      "PRES": "campaign-sov09-pres",
+      "SSRV": "campaign-sov09-ssrv",
+      "CIVB": "campaign-sov09-civb",
+      "CIVC": "campaign-sov09-civc",
+      "CACHIG03": "campaign-sov09-cachig03",
+      "CAMSC12": "campaign-sov09-camsc12",
+      "POLE01": "campaign-all01-pole01",
+      "TRFF04": "campaign-all01-trff04",
+      "CASTRT05": "campaign-all03-castrt05",
+      "JOSH": "campaign-all04-josh",
+      "NAPSYA": "campaign-all04-napsya",
+      "CAMIAM02": "campaign-all04-camiam02",
+      "CAPARS02": "campaign-all04-capars02",
+      "CAWASH09": "campaign-all06-cawash09",
+      "CAMSC02": "campaign-all06-camsc02",
+      "CAHSE02": "campaign-all06-cahse02",
+      "CAHSE04": "campaign-all06-cahse04",
+      "CAPARK03": "campaign-all06-capark03",
+      "CAHSE03": "campaign-all06-cahse03",
+      "CASTL05A": "campaign-all08-castl05a",
+      "CASTL05D": "campaign-all08-castl05d",
+      "CASTL05F": "campaign-all08-castl05f",
+      "CASTL05G": "campaign-all08-castl05g",
+      "CASTL05H": "campaign-all08-castl05h",
+      "CARUS05": "campaign-all08-carus05",
+      "CAIND01": "campaign-all08-caind01",
+      "CASTL04": "campaign-all08-castl04-owner-v28-r1",
+      "SROCK02": "campaign-all01-srock02",
+      "SROCK03": "campaign-all01-srock03",
+      "SROCK04": "campaign-all01-srock04",
+      "CACHIG06": "campaign-all04-cachig06",
+      "CACHIG05": "campaign-all04-cachig05-owner-v28-r1",
+      "CACHIG04": "campaign-all04-cachig04-v31-r1",
+      "CARUS08": "campaign-all04-carus08-v31-r1",
+      "LOBRDB01": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB02": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB03": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB04": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB05": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB06": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB07": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB08": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB09": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB10": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB11": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB12": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB13": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB14": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB15": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB16": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB17": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB18": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB19": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB20": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB21": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB22": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB23": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB24": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB25": "campaign-all08-low-concrete-bridge-v49",
+      "LOBRDB26": "campaign-all08-low-concrete-bridge-v49"
     },
     "yr": {
       "TIBTRE01": "urban-tibtre01",
@@ -16951,14 +19513,18 @@
       "NAPSYB": "urban-napsyb",
       "CIVBBP": "urban-civbbp",
       "PRES": "urban-pres",
-      "SSRV": "urban-ssrv"
+      "SSRV": "urban-ssrv",
+      "CIV1": "yr-reuse-urban-civ1-v1",
+      "CIV3": "yr-reuse-urban-civ3-v1",
+      "CASYDN03": "yr-task-urban-casydn03-v2",
+      "CALOND03": "yr-task-urban-calond03-v1"
     }
   },
   "aliases": {},
   "selectedPack": {
     "schemaVersion": 1,
-    "revision": "urban-environment-m2-4-actors-batch62-v1-combined",
-    "sha256": "d9c2da03f5583d16d8d3eb06ae6b8a2a4eaec1d013bf89cb47e4c70ac39994e8"
+    "revision": "urban-campaign-sov01-hd-r7-clean-r2",
+    "sha256": "528894713e6479d173f5a4eaa809e3001451783c67b4a37e95a82260f501407c"
   },
   "extensions": {
     "milestone": "M2.4",
@@ -17200,6 +19766,76 @@
       "theaters": [
         "URBAN",
         "NEWURBAN"
+      ]
+    },
+    "CRUISE": {
+      "hash": "189f1076ff911555b31ef7c4c5088d06a80e4e516f8cee2a94fe9a88c290978a",
+      "path": "hd-packs/campaign-sov01-cruise-vxl/urban-sov01-r7-clean-r2-4x/manifest.json",
+      "members": [
+        "cruise.vxl"
+      ],
+      "authoringTheater": "URBAN",
+      "theaters": [
+        "URBAN"
+      ],
+      "variants": [
+        {
+          "hash": "6f689b07db90396485c24e5eb0ce0e4676c948e8f254151c34ad61bea3916d47",
+          "density": 2,
+          "path": "hd-packs/campaign-sov01-cruise-vxl/urban-sov01-r7-clean-r2-2x/manifest.json"
+        },
+        {
+          "hash": "189f1076ff911555b31ef7c4c5088d06a80e4e516f8cee2a94fe9a88c290978a",
+          "density": 4,
+          "path": "hd-packs/campaign-sov01-cruise-vxl/urban-sov01-r7-clean-r2-4x/manifest.json"
+        }
+      ]
+    },
+    "TUG": {
+      "hash": "096d242f14d4cea7904ed4174a5c49fe49eb10761f93a2f65a50f435d08b818c",
+      "path": "hd-packs/campaign-sov01-tug-vxl/urban-sov01-r7-clean-r2-4x/manifest.json",
+      "members": [
+        "tug.vxl"
+      ],
+      "authoringTheater": "URBAN",
+      "theaters": [
+        "URBAN"
+      ],
+      "variants": [
+        {
+          "hash": "ed4f263088ab4c1148e891dbfb94d8ae2dd8d85ace80d46b49c26efd90bdf464",
+          "density": 2,
+          "path": "hd-packs/campaign-sov01-tug-vxl/urban-sov01-r7-clean-r2-2x/manifest.json"
+        },
+        {
+          "hash": "096d242f14d4cea7904ed4174a5c49fe49eb10761f93a2f65a50f435d08b818c",
+          "density": 4,
+          "path": "hd-packs/campaign-sov01-tug-vxl/urban-sov01-r7-clean-r2-4x/manifest.json"
+        }
+      ]
+    },
+    "PDPLANE": {
+      "hash": "e6829b7db127c7d7ad900e2ac492bf77999bb085759207749411a145030172f8",
+      "path": "hd-packs/campaign-sov01-pdplane-vxl/urban-sov01-r7-clean-r2-4x/manifest.json",
+      "members": [
+        "pdplane.vxl"
+      ],
+      "authoringTheater": "URBAN",
+      "theaters": [
+        "URBAN",
+        "SNOW"
+      ],
+      "variants": [
+        {
+          "hash": "2401bfa26d168845e997336b8342dd453c8bc485e2af16e61f7ce0a57336a133",
+          "density": 2,
+          "path": "hd-packs/campaign-sov01-pdplane-vxl/urban-sov01-r7-clean-r2-2x/manifest.json"
+        },
+        {
+          "hash": "e6829b7db127c7d7ad900e2ac492bf77999bb085759207749411a145030172f8",
+          "density": 4,
+          "path": "hd-packs/campaign-sov01-pdplane-vxl/urban-sov01-r7-clean-r2-4x/manifest.json"
+        }
       ]
     }
   }

@@ -136,7 +136,7 @@ export class GameObject {
             traits: this.traits.getAll().reduce((acc, trait) => {
                 const state = trait.debugGetState?.();
                 if (state !== undefined) {
-                    acc[trait.constructor.name] = state;
+                    acc[trait.debugStateKey ?? trait.constructor.name] = state;
                 }
                 return acc;
             }, {}),

@@ -33,10 +33,14 @@ export class DetonateWarheadExecutor extends TriggerExecutor {
                 `Skipping action ${this.getDebugName()}.`);
             return;
         }
-        const warhead = new Warhead(warheadData);
-        const bridge = game.map.tileOccupation.getBridgeOnTile(tile);
-        const elevation = bridge?.tileElevation ?? 0;
-        const zone = game.map.getTileZone(tile);
-        warhead.detonate(game, weapon.damage, tile, elevation, Coords.tile3dToWorld(tile.rx + 0.5, tile.ry + 0.5, tile.z + elevation), zone, bridge ? CollisionType.OnBridge : CollisionType.None, game.createTarget(bridge, tile), undefined, false, undefined, undefined);
+        detonateTriggerWeapon(game, weapon, tile, warheadData);
     }
+}
+
+export function detonateTriggerWeapon(game: any, weapon: any, tile: any, warheadData = game.rules.getWarhead(weapon.warhead)): void {
+    const warhead = new Warhead(warheadData), bridge = game.map.tileOccupation.getBridgeOnTile(tile);
+    const elevation = bridge?.tileElevation ?? 0, zone = game.map.getTileZone(tile);
+    warhead.detonate(game, weapon.damage, tile, elevation,
+        Coords.tile3dToWorld(tile.rx + 0.5, tile.ry + 0.5, tile.z + elevation), zone,
+        bridge ? CollisionType.OnBridge : CollisionType.None, game.createTarget(bridge, tile), undefined, false, undefined, undefined);
 }

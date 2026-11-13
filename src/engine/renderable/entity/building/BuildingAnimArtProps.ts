@@ -34,6 +34,10 @@ const ANIM_PROP_NAMES = new Map<AnimationType, string[]>([
     [AnimationType.BUILDUP, ["Buildup"]],
     [AnimationType.UNBUILD, ["Buildup"]]
 ]);
+export function buildingAnimationArtForState(data: BuildingAnimData, damaged: boolean,
+    garrisoned: boolean): IniSection | undefined {
+    return garrisoned && data.garrisonedArt ? data.garrisonedArt : damaged ? data.damagedArt : data.art;
+}
 export class BuildingAnimArtProps {
     private animsByType: Map<AnimationType, BuildingAnimData[]>;
     constructor() {
@@ -73,6 +77,10 @@ export class BuildingAnimArtProps {
                     const damagedAnimName = config.getString(propName + "Damaged");
                     if (damagedAnimName && objectManager.hasObject(damagedAnimName, ObjectType.Animation)) {
                         animData.damagedArt = objectManager.getObject(damagedAnimName, ObjectType.Animation).art;
+                    }
+                    const garrisonedAnimName = config.getString(propName + "Garrisoned");
+                    if (garrisonedAnimName && objectManager.hasObject(garrisonedAnimName, ObjectType.Animation)) {
+                        animData.garrisonedArt = objectManager.getObject(garrisonedAnimName, ObjectType.Animation).art;
                     }
                     animData.offset = {
                         x: config.getNumber(propName + "X"),

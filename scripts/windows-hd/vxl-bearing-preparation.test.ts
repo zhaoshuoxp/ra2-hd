@@ -15,9 +15,12 @@ function fixture() {
     const clipping = [new THREE.Plane(new THREE.Vector3(0, 1, 0), -3)];
     mesh.getClippingPlanes = () => clipping;
     const reads = Array(8).fill(0), calls: any[] = [], reference = new THREE.Matrix4().toArray();
+    const pass = () => ({ material: { uniforms: { discPhase: { value: 0 } } } });
     const frames = Array.from({ length: 8 }, (_, i) => ({
         part: { actor: 'MTNK', member: 'mtnk.vxl', section: 'BODY', frames: Array(8).fill({}) },
         frame: { heading: i * 45, get referenceLinear() { reads[i]++; return reference; } },
+        batch: { ...pass(), children: [pass()], userData: {} as Record<string, number> },
+        depth: pass(), translucent: pass(),
         update(visible: boolean, pose: THREE.Matrix4, light: THREE.Vector3, palette: THREE.Texture,
             order: number, planes: THREE.Plane[], opacity: number) {
             calls.push({ heading: i * 45, visible, pose: visible ? pose.clone() : undefined, planes, opacity });
@@ -69,6 +72,10 @@ test('disc and rotor views keep their non-bearing pose path', () => {
     try {
         f.renderer.family.identity = 'DISK'; f.renderer.layers[0].frames = [f.frames[1]] as any;
         f.renderer.update(); expect(f.calls.find(call => call.visible).heading).toBe(45); expect(f.reads[1]).toBe(1);
+        const disc = f.frames[1];
+        for (const layer of [disc.batch, disc.depth, disc.translucent, ...disc.batch.children])
+            expect(layer.material.uniforms.discPhase.value).toBeCloseTo(THREE.MathUtils.degToRad(17), 10);
+        expect(disc.batch.userData.discPhase).toBe(17);
         f.renderer.family.identity = 'MTNK'; f.renderer.layers[0].frames = [f.frames[0]] as any;
         f.renderer.layers[0].rotor = true; f.calls.length = 0; f.reads.fill(0); f.tilt.rotation.y = 1.8;
         f.renderer.update(); expect(f.calls.find(call => call.visible).heading).toBe(0); expect(f.reads[0]).toBe(1);

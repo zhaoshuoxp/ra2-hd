@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import { OriginalMenuFootage } from './OriginalMenuFootage';
+import { activeEdition } from '@/editions/activeEdition';
+import { MenuEditionLogo } from './MenuEditionLogo';
 
 /** A dark retail-style radar with a moving light sector and a stationary logo. */
 export function HdMenuScene({ videoSrc, playbackTime }: { videoSrc?: string; playbackTime?: { current: number } }) {
     const [movieReady, setMovieReady] = useState(false);
-    return <div className="hd-menu-scene" data-hd-menu-animation="radar" data-radar-footage={movieReady ? 'retail' : 'fallback'}>
+    const yuri = activeEdition === 'yr';
+    const neutral = yuri ? '/res/presentation/menu-yuri-radar-clean-r1.png' : '/res/presentation/menu-radar-neutral-r2.png';
+    const lit = yuri ? neutral : '/res/presentation/menu-radar-lit-r2.png';
+    return <div className="hd-menu-scene" data-hd-menu-animation="radar" data-menu-edition={activeEdition}
+        data-radar-footage={movieReady ? 'retail' : 'fallback'}>
         <svg className="hd-menu-motion" viewBox="0 0 1672 941" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
             <defs>
                 <filter id="menu-dark-base" colorInterpolationFilters="sRGB">
@@ -34,15 +40,16 @@ export function HdMenuScene({ videoSrc, playbackTime }: { videoSrc?: string; pla
                     <image href="/res/presentation/menu-logo-mask-r2.png" width="1672" height="941"/>
                 </mask>
             </defs>
-            <image href="/res/presentation/menu-radar-neutral-r2.png" width="1672" height="941"
+            <image href={neutral} width="1672" height="941"
                 filter="url(#menu-dark-base)"/>
-            <image href="/res/presentation/menu-radar-lit-r2.png" width="1672" height="941"
+            <image href={lit} width="1672" height="941"
                 opacity={movieReady ? 0 : .88} mask="url(#menu-scan-content)"/>
-            {videoSrc && <foreignObject x="0" y="0" width="1672" height="941">
-                <OriginalMenuFootage src={videoSrc} onReady={setMovieReady} playbackTime={playbackTime}/>
+            {videoSrc && <foreignObject x="0" y="0" width="1672" height="941" opacity={yuri && !movieReady ? 0 : 1}>
+                <OriginalMenuFootage src={videoSrc} onReady={setMovieReady} playbackTime={playbackTime}
+                    suppressRetailLogo={yuri}/>
             </foreignObject>}
-            <image href="/res/presentation/menu-radar-neutral-r2.png" width="1672" height="941"
-                mask="url(#menu-logo-foreground)"/>
+            {yuri ? <MenuEditionLogo/> : <image href={neutral} width="1672" height="941"
+                mask="url(#menu-logo-foreground)"/>}
         </svg>
     </div>;
 }

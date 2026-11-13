@@ -54,7 +54,7 @@ test('canonical disc silhouette retains translation and pitch at every native ya
 });
 
 test('disc depth, opaque, edge and cloak passes keep fixed alpha and paired owner sampling', () => {
-    for (const density of [2, 4]) {
+    for (const density of [2, 4]) for (const member of ['disk.vxl', 'disktur.vxl']) {
         const texture = new THREE.DataTexture(new Uint8Array(128 * 128 * 4), 128, 128);
         const material = new HdSpriteMaterial({ map: texture, remapMap: texture });
         const geometry = new THREE.PlaneGeometry(16, 16), source = new BatchedMesh(geometry, material);
@@ -63,13 +63,15 @@ test('disc depth, opaque, edge and cloak passes keep fixed alpha and paired owne
         depth.enableFiltering('full'); cloak.enableFiltering('full');
         const passes = [batch.material, depth, cloak, ...batch.children.map(child => (child as THREE.Mesh).material)] as HdSpriteMaterial[];
         for (const pass of passes) {
-            enableDiscSurfaceSpin(pass, { pageSize: [128, 128] } as any,
+            enableDiscSurfaceSpin(pass, { pageSize: [128, 128], member } as any,
                 { rect: [4, 4, 16 * density, 12 * density] } as any);
             expect(pass.fragmentShader).toContain('return vec4(color.rgb, coverage.a)');
             expect(pass.fragmentShader).toContain('vec4 coverage = texture2D(map, hdSpriteUv(uv))');
-            expect(pass.fragmentShader).toContain('hdSpriteUv(discColorUv(uv))');
+            expect(pass.fragmentShader).toContain('discRemapSample(vMapUv)');
+            expect(pass.fragmentShader).toContain('vec4 data = discRemapSample(uv)');
             expect(pass.fragmentShader).toContain('vec4 base = discSample(uv)');
             expect(pass.uniforms.discRect.value.z).toBe(16 * density / 128);
+            expect(pass.uniforms.discLower.value).toBe(Number(member === 'disk.vxl'));
             expect(pass.fragmentShader.indexOf('vec4 discSample')).toBeLessThan(pass.fragmentShader.indexOf('vec4 hdResolve'));
         }
         batch.updateFromMeshes([source]);

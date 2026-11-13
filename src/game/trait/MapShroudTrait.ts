@@ -16,6 +16,8 @@ export class MapShroudTrait implements NotifyTick, NotifyOwnerChange, NotifyAlli
     private shroudByPlayer: Map<any, any>;
     private revealedToAll: Set<any>;
     private gapGenerators: Set<any>;
+    private sourceScouting = false;
+    private allyReveal = true;
     private handleTileOccupationUpdate: (params: {
         object: any;
         type: string;
@@ -29,7 +31,7 @@ export class MapShroudTrait implements NotifyTick, NotifyOwnerChange, NotifyAlli
         this.handleTileOccupationUpdate = ({ object: e, type: t }) => {
             if ("removed" !== t && e.isTechno()) {
                 const r = e.owner;
-                for (const i of [r, ...this.alliances.getAllies(r)]) {
+                for (const i of [r, ...this.scoutingAllies(r)]) {
                     this.shroudByPlayer.get(i)?.revealFrom(e);
                 }
             }
@@ -39,6 +41,8 @@ export class MapShroudTrait implements NotifyTick, NotifyOwnerChange, NotifyAlli
         return this.shroudByPlayer.get(player);
     }
     init(gameState: any) {
+        this.sourceScouting = (gameState.gameOpts?.campaign?.semanticsVersion ?? 0) >= 19;
+        this.allyReveal = !this.sourceScouting || gameState.rules.getIni().getSection('General').getBool('AllyReveal', true);
         gameState.map.tileOccupation.onChange.subscribe(this.handleTileOccupationUpdate);
         const baseShroud = new MapShroud().fromTiles(this.map.tiles);
         for (const combatant of gameState.getCombatants()) {
@@ -51,7 +55,7 @@ export class MapShroudTrait implements NotifyTick, NotifyOwnerChange, NotifyAlli
     [NotifyElevationChange.onElevationChange](object: any, gameState: any, previousElevation: number) {
         if (Math.floor(object.tileElevation) !== Math.floor(previousElevation)) {
             const owner = object.owner;
-            for (const ally of [owner, ...this.alliances.getAllies(owner)]) {
+            for (const ally of [owner, ...this.scoutingAllies(owner)]) {
                 this.shroudByPlayer.get(ally)?.revealFrom(object);
             }
         }
@@ -75,12 +79,19 @@ export class MapShroudTrait implements NotifyTick, NotifyOwnerChange, NotifyAlli
                     .find((e: any) => e.rules.spySat) || this.resetShroud(previousOwner, gameState))) {
         }
         if (object.isSpawned) {
-            for (const ally of [object.owner, ...gameState.alliances.getAllies(object.owner)]) {
+            for (const ally of [object.owner, ...this.scoutingAllies(object.owner)]) {
                 this.shroudByPlayer.get(ally)?.revealFrom(object);
             }
         }
     }
     [NotifyAllianceChange.onChange](alliance: any, isFormed: boolean, gameState: any) {
+        if (this.sourceScouting) {
+            if (isFormed) for (const player of gameState.getCombatants()) {
+                const shroud = this.getPlayerShroud(player);
+                if (shroud) { this.revealObjects(shroud, player, gameState); shroud.invalidateFull(); }
+            }
+            return;
+        }
         if (isFormed) {
             const firstPlayerShroud = this.getPlayerShroud(alliance.players.first);
             const alliedShrouds = gameState.alliances
@@ -156,18 +167,22 @@ export class MapShroudTrait implements NotifyTick, NotifyOwnerChange, NotifyAlli
         }
     }
     revealObjects(shroud: any, player: any, gameState: any) {
+        // Source alliances are directed: the object owner grants its sight to
+        // the viewer. Reading the viewer's outgoing list exposes neutral
+        // prisoners before the player reaches their original discovery tags.
+        const allies = this.sourceScouting ? this.allyReveal
+            ? gameState.getCombatants().filter((owner: any) => owner !== player && gameState.alliances.areAllied(owner, player)) : []
+            : gameState.alliances.getAllies(player);
         const objectsToReveal = [
             ...player.getOwnedObjects(),
-            ...gameState.alliances
-                .getAllies(player)
-                .map((ally: any) => ally.getOwnedObjects())
-                .flat(),
+            ...allies.flatMap((ally: any) => ally.getOwnedObjects()),
         ];
         for (const object of objectsToReveal) {
             shroud.revealFrom(object);
         }
         this.revealedToAll.forEach((object) => shroud.revealObject(object));
     }
+    private scoutingAllies(owner: any): any[] { return this.sourceScouting && !this.allyReveal ? [] : this.alliances.getAllies(owner); }
     updateGaps(gameState: any, specificPlayer?: any) {
         for (const gapGenerator of this.gapGenerators) {
             if (!specificPlayer || gapGenerator.owner === specificPlayer) {

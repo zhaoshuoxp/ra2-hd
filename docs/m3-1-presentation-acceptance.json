@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "status": "PRESENTATION_NATIVE_PASS_VISUAL_PENDING",
+  "milestone": "M3.1",
+  "missionStatus": "PARTIAL_NOT_M3_1_COMPLETE",
+  "runtimeHead": "7bcfdd6672a44cbc58de65d15f0013f74c6608fe",
+  "runtimeIdentity": {
+    "path": ".artifacts/m3-1/presentation/native-final/runtime-identity.json",
+    "bytes": 436,
+    "sha256": "92a9c57f422d037dd49836f1fee32b26595fea2b165ab245a2911f45cf5707aa"
+  },
+  "buildIdentity": {
+    "path": ".artifacts/m3-1/review-runtime/package.json",
+    "bytes": 230,
+    "sha256": "6341f53a0746dbdf3646de7af1d5c4d214e67cacbbb5aad01c87bfa4bf27d066"
+  },
+  "buildInventory": {
+    "path": ".artifacts/m3-1/review-runtime/build.json",
+    "bytes": 32352,
+    "sha256": "8206d656d15983b84e5332c1f5ff2261a1c2fb08504a368233d3fb7e9a09b858"
+  },
+  "branch": "task/m3-1-soviet01",
+  "mainIntegrated": false,
+  "pushed": false,
+  "published": false,
+  "sourceContract": {
+    "schemaVersion": 1,
+    "edition": "ra2",
+    "mission": "sov01t.map",
+    "sources": [
+      {
+        "name": "fsbkgdlg.shp",
+        "archive": "ra2.mix/neutral.mix",
+        "bytes": 359008,
+        "sha256": "33ad016fab9370326751c3ee0d24bba3d72ea2f01c32d91b6c1705f84e3db616"
+      },
+      {
+        "name": "fsscrn.pal",
+        "archive": "ra2.mix/neutral.mix",
+        "bytes": 768,
+        "sha256": "f4ca7df2574815759e64fdf67a205d1a2fd8643ed8db3edf61743c9724e172f6"
+      },
+      {
+        "name": "fsalg.shp",
+        "archive": "ra2.mix/neutral.mix",
+        "bytes": 615816,
+        "sha256": "1ab611af1e2ce1f0fc99b5578c5dc107673af70e3edbb6fb7acf72f126030fe0"
+      },
+      {
+        "name": "fsbclg.shp",
+        "archive": "ra2.mix/neutral.mix",
+        "bytes": 404552,
+        "sha256": "debf41ed6d53d9a96b37b17052d906e5c22cadccc57e7a0280daee9b4bb49e4f"
+      },
+      {
+        "name": "fsslg.shp",
+        "archive": "ra2.mix/neutral.mix",
+        "bytes": 529480,
+        "sha256": "7894d724a922f53a45a3d60f49193426854b1c598b116433f498e4463f540d86"
+      },
+      {
+        "name": "ls800s01.shp",
+        "archive": "ra2.mix/load.mix",
+        "bytes": 416032,
+        "sha256": "eacef558dc38c69bd64bc7472da79b1d5ee8346a109a7d378edcd7a4ea228356"
+      },
+      {
+        "name": "ldscrns.pal",
+        "archive": "ra2.mix/load.mix",
+        "bytes": 768,
+        "sha256": "991dc48ecb86ef993fa731e968999f773ef749605ca5a996aa239b9e0e654b3c"
+      },
+      {
+        "name": "ttlbr800.shp",
+        "archive": "ra2.mix/load.mix",
+        "bytes": 32032,
+        "sha256": "90afc27bac766bda26587f3ac069d651a5331582aecfdf784bf6eb5dabcf7d9d"
+      },
+      {
+        "name": "ldscrn.pal",
+        "archive": "ra2.mix/load.mix",
+        "bytes": 768,
+        "sha256": "ffab041b81ba833a47bb0210d6bccb0f72ef0dfe96b7028e3097279c7909b86b"
+      },
+      {
+        "name": "spldbrl.shp",
+        "archive": "ra2.mix/load.mix",
+        "bytes": 32032,
+        "sha256": "2584126fbb63098bc43008311be1c1b0ad38f5839cd8e3425873ba60e0e54e06"
+      },
+      {
+        "name": "spldbr.pal",
+        "archive": "ra2.mix/load.mix",
+        "bytes": 768,
+        "sha256": "62073bc5aee1cc9d11626359cf18d2ca82af411534abe1e7a0052afdfdb49da6"
+      },
+      {
+        "name": "spldbr.shp",
+        "archive": "ra2.mix/load.mix",
+        "bytes": 11432,
+        "sha256": "f0342b91e719150e0b59ae64e7c8f56280d5e533903edc21014cc274b80a5eaf"
+      },
+      {
+        "name": "trakgrip.pcx",
+        "archive": "ra2.mix/local.mix",
+        "bytes": 1198,
+        "sha256": "3110d1a99c12c008512dbf19c6fba01a126b4972790b13053cb349c0c721ca51"
+      },
+      {
+        "name": "trofl.pcx",
+        "archive": "ra2.mix/local.mix",
+        "bytes": 1219,
+        "sha256": "73e1505ad0cabef8f61aa1bf50c1383ac46c75ac0c2f7c4d94760397f481d446"
+      },
+      {
+        "name": "trofr.pcx",
+        "archive": "ra2.mix/local.mix",
+        "bytes": 1267,
+        "sha256": "289788a3bafa7b56373875ae52ccc890d5fe84075ef7769cb46e02172fd66f59"
+      },
+      {
+        "name": "trofm.pcx",
+        "archive": "ra2.mix/local.mix",
+        "bytes": 1955,
+        "sha256": "38736874bee0c1461519d243ae1159ffe8ef4b9c6416a782b2e61319baf4f78c"
+      },
+      {
+        "name": "mission.ini",
+        "archive": "ra2.mix/local.mix",
+        "bytes": 9756,
+        "sha256": "49eb674e46058d67a08e0cf4ba31c99b1948d3d2072b10beced873f62226c54e"
+      }
+    ],
+    "sprites": {
+      "background": {
+        "image": "fsbkgdlg.shp",
+        "palette": "fsscrn.pal",
+        "width": 632,
+        "height": 568,
+        "frames": 1
+      },
+      "allied": {
+        "image": "fsalg.shp",
+        "palette": "fsscrn.pal",
+        "width": 570,
+        "height": 135,
+        "frames": 8
+      },
+      "tutorial": {
+        "image": "fsbclg.shp",
+        "palette": "fsscrn.pal",
+        "width": 468,
+        "height": 108,
+        "frames": 8
+      },
+      "soviet": {
+        "image": "fsslg.shp",
+        "palette": "fsscrn.pal",
+        "width": 444,
+        "height": 149,
+        "frames": 8
+      },
+      "mission": {
+        "image": "ls800s01.shp",
+        "palette": "ldscrns.pal",
+        "width": 800,
+        "height": 520,
+        "frames": 1
+      },
+      "title": {
+        "image": "ttlbr800.shp",
+        "palette": "ldscrn.pal",
+        "width": 800,
+        "height": 40,
+        "frames": 1
+      },
+      "progressHousing": {
+        "image": "spldbrl.shp",
+        "palette": "spldbr.pal",
+        "width": 800,
+        "height": 40,
+        "frames": 1
+      },
+      "progressFill": {
+        "image": "spldbr.shp",
+        "palette": "spldbr.pal",
+        "width": 456,
+        "height": 25,
+        "frames": 1
+      }
+    },
+    "anchors": {
+      "allied": {
+        "x": 30,
+        "y": 26
+      },
+      "tutorial": {
+        "x": 82,
+        "y": 187
+      },
+      "soviet": {
+        "x": 98,
+        "y": 298
+      }
+    },
+    "animation": {
+      "idle": 0,
+      "activeFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "framesPerSecond": 15,
+      "scope": "All original arrow frames; exact retail frame cadence requires visual acceptance."
+    },
+    "loading": {
+      "width": 800,
+      "height": 600,
+      "imageY": 40,
+      "progressY": 560,
+      "fillX": 172,
+      "fillY": 568,
+      "loadMessage": "LoadMsg:Sov01",
+      "briefing": "LoadBrief:Sov01",
+      "briefX": 20,
+      "briefY": 60
+    },
+    "sourcePolicy": "Original archived UI bytes only. No loose installation overlays or generated replacement artwork."
+  },
+  "sourceContractIdentity": {
+    "path": ".local/campaign/ra2/sov01t/presentation.json",
+    "bytes": 5188,
+    "sha256": "b85da5719e2a5a07430d8ca1b455e4bdce0a27f897c60c838de05150c90ec850"
+  },
+  "nativeReport": {
+    "path": ".artifacts/m3-1/presentation/native-final/report.json",
+    "bytes": 6539,
+    "sha256": "1b8c3f3158108870de1be47ba2551511f04f28ac2e5051ed3dccaf55f219349f"
+  },
+  "scope": "Original campaign presentation and actual diagnostic entry. No normal gameplay, victory, failure or mission continuity claim.",
+  "worldDisplay": "Original for this presentation-only run. Concurrent main Urban resource repair remains untouched and is not integrated into this branch.",
+  "verified": {
+    "originalPanel": "Native FSBKGDLG.SHP with FSSCRN.PAL",
+    "idlePlacement": "All three source idle frames exactly match their original background regions",
+    "arrowFrames": [
+      {
+        "frame": 1,
+        "sourcePixelsMatch": true,
+        "sha256": "7922268990b3cc7be3b7171a47c4943a440bd14a4da6fd0ce3e0dd76108b9135"
+      },
+      {
+        "frame": 2,
+        "sourcePixelsMatch": true,
+        "sha256": "d59c3a569fd4f6ab1451e5a2b0ef8da84933476621ed090dc510e7cc7fd99418"
+      }
+    ],
+    "unavailableContent": {
+      "allied": true,
+      "tutorial": true,
+      "easy": true,
+      "hard": true,
+      "mediaNotStarted": true
+    },
+    "intro": {
+      "source": "Basic.Intro",
+      "dimensions": [
+        640,
+        480
+      ],
+      "audioBytes": 9205,
+      "objectFit": "contain"
+    },
+    "loading": {
+      "source": "ls800s01.shp",
+      "percent": 42,
+      "aspect": 1.3333333333333333,
+      "title": "\u519b\u4e8b\u884c\u52a8\uff1a\u7ea2\u8272\u9ece\u660e - \u5730\u70b9\uff1a\u534e\u76db\u987f\u7279\u533a",
+      "briefing": "\u4efb\u52a1\u76ee\u6807\u4e00\uff1a\u6467\u6bc1\u4e94\u89d2\u5927\u697c\u3002",
+      "sprites": [
+        {
+          "image": "ttlbr800.shp",
+          "dimensions": [
+            800,
+            40
+          ]
+        },
+        {
+          "image": "ls800s01.shp",
+          "dimensions": [
+            800,
+            520
+          ]
+        },
+        {
+          "image": "spldbrl.shp",
+          "dimensions": [
+            800,
+            40
+          ]
+        },
+        {
+          "image": "spldbr.shp",
+          "dimensions": [
+            456,
+            25
+          ]
+        }
+      ]
+    },
+    "realProgress": [
+      18,
+      24,
+      27,
+      36,
+      42,
+      57,
+      65,
+      95
+    ],
+    "diagnostic": {
+      "tick": 1,
+      "failure": "[Actions] 0BB24A9C:0 unsupported action 3; original record retained",
+      "result": null
+    },
+    "homeRestored": {
+      "logicalWidth": 1066.6666666666667,
+      "width": 1600,
+      "height": 900
+    },
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "failedResponses": 0
+  },
+  "checks": {
+    "focused": {
+      "status": "PASS",
+      "cases": 18,
+      "assertions": 65,
+      "evidence": {
+        "path": ".artifacts/m3-1/presentation/focused-tests.log",
+        "bytes": 2231,
+        "sha256": "3aab8e6270a4595e4626543c5de414d9a8d24e6885519efecdd18cb0dc522255"
+      }
+    },
+    "relevantShared": {
+      "status": "PASS",
+      "cases": 18,
+      "assertions": 1936,
+      "evidence": {
+        "path": ".artifacts/m3-1/presentation/shared-regressions.log",
+        "bytes": 2305,
+        "sha256": "9f3c4762ff06f32c38dd2b6ed3b8bf1b48459bf9cfbf6586c70b2dfb0637a61e"
+      }
+    },
+    "entryTypecheck": {
+      "status": "PASS",
+      "evidence": {
+        "path": ".artifacts/m3-1/presentation/typecheck.log",
+        "bytes": 39,
+        "sha256": "252860dcdc1eecbfba6025f14a2bf819c4f0522a85bd64927ec39ea9e4ee19bc"
+      }
+    },
+    "isolatedBuild": {
+      "status": "PASS",
+      "evidence": {
+        "path": ".artifacts/m3-1/presentation/build.log",
+        "bytes": 19911,
+        "sha256": "2835a0c673acef2d5185658be154ca8b94ad361cdd36ca18ac4419e56e54e9b1"
+      }
+    }
+  },
+  "screenshots": [
+    {
+      "path": ".artifacts/m3-1/presentation/native-final/01-retail-faction-selection.png",
+      "bytes": 1687261,
+      "sha256": "a10a83dc6f165445cfccb5a31113cc59e343195f4ffc981c46e0ba6ab0df308e"
+    },
+    {
+      "path": ".artifacts/m3-1/presentation/native-final/02-retail-arrow-animation.png",
+      "bytes": 1688441,
+      "sha256": "af055761c34783a82abd7f8bff9d9c1f0f0342ccbd1908c76e6e9bb84ef329f0"
+    },
+    {
+      "path": ".artifacts/m3-1/presentation/native-final/03-original-intro-after-soviet-selection.png",
+      "bytes": 1185446,
+      "sha256": "c642b88bdda611a01594287fc568f9213f40eecb20d5f4d59596a201d5e255ab"
+    },
+    {
+      "path": ".artifacts/m3-1/presentation/native-final/04-original-soviet01-loading.png",
+      "bytes": 2395633,
+      "sha256": "128590c4d98f190a5ac51f5b6f11b453b86b1967aa09ff7a04ac56a5ff871047"
+    },
+    {
+      "path": ".artifacts/m3-1/presentation/native-final/05-diagnostic-mission-entry.png",
+      "bytes": 407197,
+      "sha256": "5d9cb3daae1e7a242a59e257e8caac1975245cefef5a37f01b157d36d76237bc"
+    },
+    {
+      "path": ".artifacts/m3-1/presentation/native-final/06-wide-original-faction-selection.png",
+      "bytes": 1287447,
+      "sha256": "21e067af406b8b1471cc908f4bac00c0538dc3c2e7078ddc8263b18420b4393e"
+    },
+    {
+      "path": ".artifacts/m3-1/presentation/native-final/07-existing-home-after-return.png",
+      "bytes": 3149279,
+      "sha256": "065ee471095f1c7a04c154f05817f3c9422627fa9a0442f58ebd4b2a63b7ad4e"
+    }
+  ],
+  "references": [
+    {
+      "path": ".artifacts/m3-1/presentation/fsbkgdlg.shp.png",
+      "bytes": 122031,
+      "sha256": "cd457b9642006881dd53af391429d72e6c5aabffb4ea7f3ec9accfd8d4375f41"
+    }
+  ],
+  "video": {
+    "path": ".artifacts/m3-1/presentation/native-final/presentation-flow.webm",
+    "bytes": 943865,
+    "sha256": "c8fc3ad83974a5ea49bd9b43d32b147864b5baf084254dee001b8651d2e260f7",
+    "durationSeconds": 6.5252553749999995,
+    "frames": 13,
+    "scope": "Silent recording of actual Electron screenshots with measured timestamps; instrumentation affects frame sampling, not mission logic.",
+    "audio": "NONE_SILENT_SCREENSHOT_RECORDING",
+    "sourceIndex": {
+      "path": ".artifacts/m3-1/presentation/native-final/capture-frames.json",
+      "bytes": 2045,
+      "sha256": "f7e4095b8b7ed7b0ecdbd321bed7920ce07f6d3c0cef6d94d218837c1cda197b"
+    }
+  },
+  "originalReferenceNotes": {
+    "manual": "Read-only original RA2 English manual, printed page 5; campaign choices and difficulty description",
+    "dialog": "Read-only game.exe dialog-resource inspection; source archive geometry and member hashes remain the active identity authority",
+    "windowsProgramsExecuted": false,
+    "newArtAuthored": false,
+    "manualIdentity": {
+      "installationRelativePath": "Manuals/Red Alert 2 - English 2 - Manual.pdf",
+      "bytes": 1647667,
+      "sha256": "dc085d316dab385332b60c99e0162c053ae64eaa4ca160f52054cdb990993ddd"
+    },
+    "dialogBinaryIdentity": {
+      "installationRelativePath": "game.exe",
+      "bytes": 5077608,
+      "sha256": "6fc4b410f8841ba3ad6c57b59fccae65f58a8871d86750af3c1e2d5a7c5ad39d"
+    },
+    "binaryAuthority": "Read-only corroboration, not certification of retail patch identity; active asset pins come from verified archives."
+  },
+  "concurrentMain": {
+    "headAtReceipt": "dc494dbd59363439ae830fad5e81134ef36ee95b",
+    "observedWorkingPaths": [
+      " M desktop/terrain-theater-hd-contracts.json",
+      " M src/gui/UiObjectSprite.ts",
+      " M src/gui/hd/UiArt.ts",
+      " M src/gui/screen/game/GameScreen.ts",
+      " M src/gui/screen/game/component/LocalizedGameResultBanner.tsx",
+      "?? docs/long-play-ui-urban-road-repair-20261022.json",
+      "?? docs/long-play-ui-urban-road-repair-20261022.md",
+      "?? scripts/m2-4/export-road-marking-repair.py",
+      "?? scripts/m2-4/export-urban-road-repair.py",
+      "?? scripts/m2-4/native-long-play-repair.mjs",
+      "?? scripts/m2-4/native-road-markings.mjs",
+      "?? scripts/m2-4/prepare-road-marking-repair.ts",
+      "?? scripts/m2-4/prepare-urban-road-repair.ts",
+      "?? scripts/m2/road_marking_geometry.py",
+      "?? scripts/ui/long-play-ui.test.ts"
+    ],
+    "urbanSelection": {
+      "schemaVersion": 1,
+      "revision": "urban-road-hd-repair-v2",
+      "sha256": "fc18a6621272d04d713fc455e60a15fc0fbac6375ea77a3ce0aa0d2a951442b9"
+    },
+    "urbanSelectionSha256": "b843bf17db303c1081af7801d3ad6c4ab7c11213caec4faf8490f44b3d430b97",
+    "policy": "Preserved without modification or integration. Review uses Original world display in an isolated profile; future merge must reconcile current GameScreen and terrain contracts."
+  },
+  "failedAttempts": [
+    {
+      "path": ".artifacts/m3-1/presentation/native-r1/failure-receipt.json",
+      "bytes": 392,
+      "sha256": "43d8fdee1fcb3b9e5584abf62f356c3b56800a2678f6fabb825edc9067672bf3"
+    },
+    {
+      "path": ".artifacts/m3-1/presentation/native-r2/failure-receipt.json",
+      "bytes": 280,
+      "sha256": "6d5c2f859d603a2801c8ec2a49f997ee55109c051eb846564c2f645e09a43a39"
+    },
+    {
+      "path": ".artifacts/m3-1/presentation/native-r3/failure-receipt.json",
+      "bytes": 302,
+      "sha256": "032938ef11d599b16bd399139c2637c126cde7d555adfb71994ed4251588ff87"
+    },
+    {
+      "path": ".artifacts/m3-1/presentation/native-r4/failure-receipt.json",
+      "bytes": 307,
+      "sha256": "8cc276f0d6b3f64402f9f07e9fa016497bc4c50b898e17de863e06fc7c523c00"
+    }
+  ],
+  "retainedFirstTypecheckFailure": {
+    "path": ".artifacts/m3-1/presentation/typecheck-r1-failure.log",
+    "bytes": 675,
+    "sha256": "da92754bc9f9c8b8d2a27dc8e8bc31e1f49cad28ce00293901cc17732ec780d4"
+  },
+  "remaining": {
+    "exactRetailAnimationCadence": "UNVERIFIED_CURRENT_UI_15_FPS",
+    "finalVisualAcceptance": "PENDING",
+    "fullIntroAudiovisualAcceptance": "UNVERIFIED",
+    "normalVictoryOriginalDefeatAndMidMissionSave": "NOT_ACCEPTED_RUNTIME_INCOMPLETE",
+    "combinedMainHD": "NOT_VERIFIED_WITH_CONCURRENT_MAIN_REPAIR",
+    "windows": "NOT_RUN_ON_THIS_MAC"
+  },
+  "review": ".artifacts/m3-1/M3.1-Embedded-Review.html",
+  "notes": "docs/m3-1-presentation.md",
+  "continuation": "Continue this conversation for M3.1 corrections and acceptance.",
+  "presentationCleanup": {
+    "path": ".artifacts/m3-1/presentation/cleanup-receipt.json",
+    "bytes": 34844,
+    "sha256": "43019604c4826aa994497ab3e9375f8c3b20b65692ed133a40a8ea5b4f55c5e1"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "status": "COMPLETE_DUAL_DENSITY_REGISTERED_NATIVE_REVIEW_PENDING",
+  "families": [
+    {
+      "identity": "ARND",
+      "familyPath": "hd-packs/yr-hollywood-heroes-arnd-family/yr-hollywood-r1/family.json",
+      "familySha256": "7060c3038d45ce1aeb095a151b9772ae3bce130b4ec09fb5d851d4db80a32c05",
+      "manifestSha256": "4de7805cb5e85545349e701252260248a421a7cce48854a452164704ec9992d0",
+      "originalBodyFrames": 292,
+      "originalTotalFrames": 584
+    },
+    {
+      "identity": "STLN",
+      "familyPath": "hd-packs/yr-hollywood-heroes-stln-family/yr-hollywood-r1/family.json",
+      "familySha256": "b7c750a0aff473d9c2d3d505707e3fe042d713bdd4186e35c9cf88c85eb58a68",
+      "manifestSha256": "6448473faab97064adff84186e003cf7fdf22bf8539b2f48c06f0a64c04d678e",
+      "originalBodyFrames": 340,
+      "originalTotalFrames": 680
+    }
+  ],
+  "source": "Original source geometries, native separate shadows and original red-material ownership seeds.",
+  "sourcePalette": "unittem, unitubn, uniturb, unitdes and unitlun are byte-identical; unitsno differs only at transparent index zero.",
+  "sourcePaletteAudit": ".local/source-art/yr-campaign-v1/hollywood-heroes/palette-audit.json",
+  "userVisualAcceptance": "PENDING",
+  "nativeValidation": {
+    "status": "PASS_NATIVE_ALL_632_SOURCE_BODY_AND_SHADOW_SLOTS_FROZEN_WORLD",
+    "evidence": [
+      {
+        "report": "../project-history/yr-campaign-implementation-20261104/Evidence/hollywood-heroes-native-2x-r2.json.gz",
+        "sha256": "5ec40f965367a17bf7fc192e07221bf4f156b9e38d7eca4fa53cccccf03f2236"
+      },
+      {
+        "report": "../project-history/yr-campaign-implementation-20261104/Evidence/hollywood-heroes-native-4x-r3.json.gz",
+        "sha256": "81ef9f59a514b5969143860cd1041ba4210db734205c6975a5c39c947ffe29b4"
+      }
+    ],
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "userVisualAcceptance": "PENDING"
+  }
+}

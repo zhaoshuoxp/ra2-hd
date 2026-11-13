@@ -1,0 +1,746 @@
+{
+  "schemaVersion": 1,
+  "status": "ORIGINAL_MEDIA_MAC_NORMAL_VERIFIED_USER_REVIEW_PENDING",
+  "edition": "ra2",
+  "mission": "sov01t.map",
+  "provenanceDigest": "cac25729e3ed311de36f05c09daafa8ae2c6eea082a97ba4ee951e1f4fb84e4f",
+  "archivePriority": [
+    {
+      "name": "language.mix",
+      "bytes": 52913656,
+      "sha256": "870c3bcc596e8690c55077a4c651f88d0dbc35f2a786c6c4891df8ffdb9ce192",
+      "priority": 0,
+      "origin": "allowlisted-retail-archive"
+    },
+    {
+      "name": "ra2.mix",
+      "bytes": 281888480,
+      "sha256": "896a8b64f9f1bb8ad5e0bc64fc0b8ea8c84112494761ea1a43478d10c5ef9914",
+      "priority": 1,
+      "origin": "allowlisted-retail-archive"
+    },
+    {
+      "name": "multi.mix",
+      "bytes": 18666588,
+      "sha256": "c040bcede176677d0faba2f868be6d527ffa2d47e0fff2e048025c0aea629cfc",
+      "priority": 2,
+      "origin": "allowlisted-retail-archive"
+    },
+    {
+      "name": "maps01.mix",
+      "bytes": 3823604,
+      "sha256": "b9093c9ef7efc1d24c6259196fbe90c8b78a15d0af27c93c12e1c755e5196d74",
+      "priority": 3,
+      "origin": "allowlisted-retail-archive"
+    },
+    {
+      "name": "maps02.mix",
+      "bytes": 3170324,
+      "sha256": "8ff61284f726a67760563c7a278c9034ff44baa5ca86a6790eddeb273301b11f",
+      "priority": 4,
+      "origin": "allowlisted-retail-archive"
+    },
+    {
+      "name": "movies02.mix",
+      "bytes": 304170688,
+      "sha256": "24e7f9435a593ee4eac44f8d18191aeaaead639418725397fda134b3c254dd35",
+      "priority": 5,
+      "origin": "explicit-media-archive-only"
+    }
+  ],
+  "movies": [
+    {
+      "edition": "ra2",
+      "name": "s01_f00e",
+      "original": "s01_f00e.bik",
+      "use": "fullscreen-intro",
+      "binding": "Basic.Intro",
+      "file": "s01_f00e.webm",
+      "source": "movies02.mix",
+      "sha256": "342f454d73c3438373f664316aa35d9bdd78a0ae6e073e42278a58781b4be1f4",
+      "width": 640,
+      "height": 480,
+      "durationSeconds": 102.07,
+      "audio": [
+        {
+          "stream": 1,
+          "format": "binkaudio_rdft, 44100 Hz, stereo, flt"
+        }
+      ],
+      "language": "embedded original audio; listening validation pending",
+      "hdCandidate": null,
+      "fallback": "s01_f00e.webm",
+      "conversion": {
+        "converterVersion": "ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+        "args": [
+          "-nostdin",
+          "-y",
+          "-i",
+          "s01_f00e.bik",
+          "-map",
+          "0:v:0",
+          "-map",
+          "0:a?",
+          "-c:v",
+          "libvpx-vp9",
+          "-crf",
+          "20",
+          "-b:v",
+          "0",
+          "-pix_fmt",
+          "yuv420p",
+          "-c:a",
+          "libopus",
+          "-b:a",
+          "128k",
+          "s01_f00e.webm"
+        ],
+        "policy": "VP9 + Opus WebM; original frame rate, duration and aspect ratio; no cropping, scaling or audio removal"
+      },
+      "sourceFile": {
+        "name": "s01_f00e.bik",
+        "bytes": 26314484,
+        "sha256": "342f454d73c3438373f664316aa35d9bdd78a0ae6e073e42278a58781b4be1f4",
+        "route": "/local-campaign/ra2/sov01t/s01_f00e.bik"
+      },
+      "playbackFile": {
+        "name": "s01_f00e.webm",
+        "bytes": 15935730,
+        "sha256": "c3eb6adc1febcae818bbe706fdb5b68da26aaa6f1450b963afaad54cc92ad1a0",
+        "route": "/local-campaign/ra2/sov01t/s01_f00e.webm"
+      },
+      "sourceVideoStream": "Stream #0:0[0x0]: Video: binkvideo (BIKi / 0x694B4942), yuv420p(tv), 640x480, 15 fps, 15 tbr, 15 tbn",
+      "sourceAspectRatio": {
+        "width": 640,
+        "height": 480
+      },
+      "nativeObservedDurationSeconds": 102.103,
+      "durationNote": "Source duration text and WebM duration differ slightly due to container/audio packet padding; no retiming or frame-rate override was requested.",
+      "acceptance": {
+        "nativeDecode": "PASS_MAC",
+        "aspectPreservation": "PASS_MAC_CONTAIN",
+        "audioDecoding": "PASS_MAC_NONZERO_BYTES",
+        "naturalEnd": "NOT_RUN_FULL_INTRO",
+        "skip": "PASS_MAC_INTRO",
+        "exitCancellation": "PASS_MAC_SHARED_PLAYER",
+        "fullClipListening": "NOT_ACCEPTED",
+        "perceptualSynchronization": "UNVERIFIED",
+        "missionBinding": "ORIGINAL_BASIC_INTRO",
+        "windows": "NOT_RUN_ON_THIS_MAC"
+      }
+    },
+    {
+      "edition": "ra2",
+      "name": "s01_p01e",
+      "original": "s01_p01e.bik",
+      "use": "transmission-candidate",
+      "binding": "Art.Movies; trigger binding unverified",
+      "file": "s01_p01e.webm",
+      "source": "movies02.mix",
+      "sha256": "640bb5457d333e7e2554779cf7911fb808988fb4358fd2de6241d43c22116b17",
+      "width": 140,
+      "height": 110,
+      "durationSeconds": 10.27,
+      "audio": [
+        {
+          "stream": 1,
+          "format": "binkaudio_rdft, 22050 Hz, mono, flt"
+        }
+      ],
+      "language": "embedded original audio; listening validation pending",
+      "hdCandidate": null,
+      "fallback": "s01_p01e.webm",
+      "conversion": {
+        "converterVersion": "ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+        "args": [
+          "-nostdin",
+          "-y",
+          "-i",
+          "s01_p01e.bik",
+          "-map",
+          "0:v:0",
+          "-map",
+          "0:a?",
+          "-c:v",
+          "libvpx-vp9",
+          "-crf",
+          "20",
+          "-b:v",
+          "0",
+          "-pix_fmt",
+          "yuv420p",
+          "-c:a",
+          "libopus",
+          "-b:a",
+          "128k",
+          "s01_p01e.webm"
+        ],
+        "policy": "VP9 + Opus WebM; original frame rate, duration and aspect ratio; no cropping, scaling or audio removal"
+      },
+      "sourceFile": {
+        "name": "s01_p01e.bik",
+        "bytes": 778648,
+        "sha256": "640bb5457d333e7e2554779cf7911fb808988fb4358fd2de6241d43c22116b17",
+        "route": "/local-campaign/ra2/sov01t/s01_p01e.bik"
+      },
+      "playbackFile": {
+        "name": "s01_p01e.webm",
+        "bytes": 234166,
+        "sha256": "02f02f85c6cb036b43b89e973964703f93c966da7445d9c4db8d3942522263df",
+        "route": "/local-campaign/ra2/sov01t/s01_p01e.webm"
+      },
+      "sourceVideoStream": "Stream #0:0[0x0]: Video: binkvideo (BIKi / 0x694B4942), yuv420p(tv), 140x110, 15 fps, 15 tbr, 15 tbn",
+      "sourceAspectRatio": {
+        "width": 140,
+        "height": 110
+      },
+      "nativeObservedDurationSeconds": 10.282,
+      "durationNote": "Source duration text and WebM duration differ slightly due to container/audio packet padding; no retiming or frame-rate override was requested.",
+      "acceptance": {
+        "nativeDecode": "PASS_MAC",
+        "aspectPreservation": "PASS_MAC_CONTAIN",
+        "audioDecoding": "PASS_MAC_NONZERO_BYTES",
+        "naturalEnd": "PASS_MAC",
+        "skip": "UNIT_PATH_ONLY",
+        "exitCancellation": "PASS_MAC_SHARED_PLAYER",
+        "fullClipListening": "NOT_ACCEPTED",
+        "perceptualSynchronization": "UNVERIFIED",
+        "missionBinding": "UNVERIFIED_CANDIDATE_PREVIEW_ONLY",
+        "windows": "NOT_RUN_ON_THIS_MAC"
+      }
+    }
+  ],
+  "speech": [
+    {
+      "name": "Mis_S1_SofiaRepairBridge",
+      "original": "ms1so02.wav",
+      "bytes": 84618,
+      "sha256": "b3a3bd19ecf56770c23e1c212c7a2fa2fad447912e79f91abbe3e86a2972898c",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "ms1so02.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 3311167157,
+        "bytes": 84618,
+        "sha256": "b3a3bd19ecf56770c23e1c212c7a2fa2fad447912e79f91abbe3e86a2972898c",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "b3a3bd19ecf56770c23e1c212c7a2fa2fad447912e79f91abbe3e86a2972898c"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "Mis_S1_SofiaAirportHint1",
+      "original": "ms1so11.wav",
+      "bytes": 53898,
+      "sha256": "6256d6717de54f769d8cf30bd86b038a227e609504fbd5128975c68a9e27b2a0",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "ms1so11.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 3854507951,
+        "bytes": 53898,
+        "sha256": "6256d6717de54f769d8cf30bd86b038a227e609504fbd5128975c68a9e27b2a0",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "6256d6717de54f769d8cf30bd86b038a227e609504fbd5128975c68a9e27b2a0"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "EVA_ReinforcementsHaveArrived",
+      "original": "csof038.wav",
+      "bytes": 21642,
+      "sha256": "bac475da4b8c5619d9b11713b8237b57fc9968edbe40ae29923782bfd76412a5",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "csof038.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 3350838649,
+        "bytes": 21642,
+        "sha256": "bac475da4b8c5619d9b11713b8237b57fc9968edbe40ae29923782bfd76412a5",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "bac475da4b8c5619d9b11713b8237b57fc9968edbe40ae29923782bfd76412a5"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "Mis_S1_SofiaUrbanHint",
+      "original": "ms1so04.wav",
+      "bytes": 61578,
+      "sha256": "ec5ed5ddd545b195a13ff4e9eb3d9973bdda03899ada6e2bfd4621d1b2295436",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "ms1so04.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 319129000,
+        "bytes": 61578,
+        "sha256": "ec5ed5ddd545b195a13ff4e9eb3d9973bdda03899ada6e2bfd4621d1b2295436",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "ec5ed5ddd545b195a13ff4e9eb3d9973bdda03899ada6e2bfd4621d1b2295436"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "Mis_S1_SofiaDestroyPentagon",
+      "original": "ms1so05.wav",
+      "bytes": 54922,
+      "sha256": "e814330e94994e92f3df8c7b6d25c734dc3c414ca027597841dd3518b085b1da",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "ms1so05.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 3629733389,
+        "bytes": 54922,
+        "sha256": "e814330e94994e92f3df8c7b6d25c734dc3c414ca027597841dd3518b085b1da",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "e814330e94994e92f3df8c7b6d25c734dc3c414ca027597841dd3518b085b1da"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "Mis_S1_SofiaVictorySpeech",
+      "original": "ms1so07.wav",
+      "bytes": 42122,
+      "sha256": "4a864a4d32c4465810059ece21e799e0ba96f9af38a270e624ef7de14312814f",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "ms1so07.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 2509371142,
+        "bytes": 42122,
+        "sha256": "4a864a4d32c4465810059ece21e799e0ba96f9af38a270e624ef7de14312814f",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "4a864a4d32c4465810059ece21e799e0ba96f9af38a270e624ef7de14312814f"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "EVA_BattlefieldControlOnline",
+      "original": "csof120.wav",
+      "bytes": 20106,
+      "sha256": "2d8d612df57b54eee88e68ce86fdb39ec06044fbd95e0b197eaa9f4b57b7448a",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "csof120.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 1094136894,
+        "bytes": 20106,
+        "sha256": "2d8d612df57b54eee88e68ce86fdb39ec06044fbd95e0b197eaa9f4b57b7448a",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "2d8d612df57b54eee88e68ce86fdb39ec06044fbd95e0b197eaa9f4b57b7448a"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "EVA_NewObjectiveReceived",
+      "original": "csof104.wav",
+      "bytes": 16010,
+      "sha256": "b7eff25a9331d77e95b713a645d1b1c5a488e0a15dc855588d54e46ea40c2660",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "csof104.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 1295607553,
+        "bytes": 16010,
+        "sha256": "b7eff25a9331d77e95b713a645d1b1c5a488e0a15dc855588d54e46ea40c2660",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "b7eff25a9331d77e95b713a645d1b1c5a488e0a15dc855588d54e46ea40c2660"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "Mis_S1_SofiaBuildPower",
+      "original": "ms1so09.wav",
+      "bytes": 75402,
+      "sha256": "dfb50b98887dcf1a4eebfe7e97e6aa038ebd284a7049e929f89fb3c65b56afdf",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "ms1so09.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 2946209398,
+        "bytes": 75402,
+        "sha256": "dfb50b98887dcf1a4eebfe7e97e6aa038ebd284a7049e929f89fb3c65b56afdf",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "dfb50b98887dcf1a4eebfe7e97e6aa038ebd284a7049e929f89fb3c65b56afdf"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "EVA_EstablishBattlefieldControl",
+      "original": "csof016.wav",
+      "bytes": 31882,
+      "sha256": "68637101dcff579205bae54ea04dae68d4c59c22864c3d11f116f43991f99d84",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "csof016.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 1781320992,
+        "bytes": 31882,
+        "sha256": "68637101dcff579205bae54ea04dae68d4c59c22864c3d11f116f43991f99d84",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "68637101dcff579205bae54ea04dae68d4c59c22864c3d11f116f43991f99d84"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "Mis_S1_SofiaAirportHint2",
+      "original": "ms1so12.wav",
+      "bytes": 87178,
+      "sha256": "5a7da88f8b426a7e218ceb2c9ece759122b54da226915bad031ef0e5add38ae4",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "ms1so12.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 1663790337,
+        "bytes": 87178,
+        "sha256": "5a7da88f8b426a7e218ceb2c9ece759122b54da226915bad031ef0e5add38ae4",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "5a7da88f8b426a7e218ceb2c9ece759122b54da226915bad031ef0e5add38ae4"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "Mis_S1_SofiaReinforcements",
+      "original": "ms1so03.wav",
+      "bytes": 96394,
+      "sha256": "032233a220a3c16002b10ccd2c5b82a12f1438e1344f6718f47608066263ba26",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "ms1so03.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 234927376,
+        "bytes": 96394,
+        "sha256": "032233a220a3c16002b10ccd2c5b82a12f1438e1344f6718f47608066263ba26",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "032233a220a3c16002b10ccd2c5b82a12f1438e1344f6718f47608066263ba26"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "Mis_S1_SofiaCrushPentagon",
+      "original": "ms1so01.wav",
+      "bytes": 154762,
+      "sha256": "85c03a22ab00dbb43810823a1f32ce7adc53a09df6293e3e4431d94531e39c67",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "ms1so01.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 1137185819,
+        "bytes": 154762,
+        "sha256": "85c03a22ab00dbb43810823a1f32ce7adc53a09df6293e3e4431d94531e39c67",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "85c03a22ab00dbb43810823a1f32ce7adc53a09df6293e3e4431d94531e39c67"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "Unit_Sofia_Engineer",
+      "original": "csofu16.wav",
+      "bytes": 75914,
+      "sha256": "2d5f03e3a666e6e42ee516663fa1765e64df531c0179a828bb70a91d09df24d1",
+      "textAvailable": false,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "csofu16.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 4062667775,
+        "bytes": 75914,
+        "sha256": "2d5f03e3a666e6e42ee516663fa1765e64df531c0179a828bb70a91d09df24d1",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "2d5f03e3a666e6e42ee516663fa1765e64df531c0179a828bb70a91d09df24d1"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "EVA_EnemyInfantryBattalionDetected",
+      "original": "csof099.wav",
+      "bytes": 31882,
+      "sha256": "fb64ca3cc9c7e45b4ca0747f7e8ac44506a0902fd489ff7578d6d30cf9bfe5d8",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "csof099.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 2828349842,
+        "bytes": 31882,
+        "sha256": "fb64ca3cc9c7e45b4ca0747f7e8ac44506a0902fd489ff7578d6d30cf9bfe5d8",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "fb64ca3cc9c7e45b4ca0747f7e8ac44506a0902fd489ff7578d6d30cf9bfe5d8"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    },
+    {
+      "name": "Unit_Sofia_GI",
+      "original": "csofu21.wav",
+      "bytes": 106634,
+      "sha256": "635e0f54a63acc41dcd922451f11ce246e075a95dc332fb458e53641db132ed6",
+      "textAvailable": true,
+      "use": "speech",
+      "language": "archive-declared-localization; not inferred from English EVA text",
+      "edition": "ra2",
+      "archiveIdentity": {
+        "name": "csofu21.wav",
+        "selected": "language.mix/audio.mix",
+        "memberId": 3737799130,
+        "bytes": 106634,
+        "sha256": "635e0f54a63acc41dcd922451f11ce246e075a95dc332fb458e53641db132ed6",
+        "occurrences": [
+          {
+            "source": "language.mix/audio.mix",
+            "sha256": "635e0f54a63acc41dcd922451f11ce246e075a95dc332fb458e53641db132ed6"
+          }
+        ]
+      },
+      "playbackRoute": "Existing original archive Sound.load/eva path; no additional WAV copy",
+      "queue": "Ordered actual-completion queue; repeated entries are retained"
+    }
+  ],
+  "runtimePolicy": {
+    "fullscreen": "The source-bound introduction blocks entry before the world exists; actual ended or skipped completion launches original loading and formal Normal play. Aspect and audio are preserved.",
+    "transmission": "Reusable top-right player is separately probed with an unbound retail candidate. Soviet 01 has no source-bound ingame movie action/script or other Basic movie; no invented event binding is used.",
+    "audio": "Master/Voice settings are respected. Mission speech precedes queued routine EVA without interrupting the current voice; repeated mission lines remain ordered. Music ducks/restores. Results wait for the final mission speech and priority result EVA to end.",
+    "completion": "Actual media ended/skipped/cancelled events settle callers; mission timers use simulation ticks.",
+    "exit": "Current and queued media requests settle cancelled; elements and source references are released.",
+    "missingMedia": "Missing or corrupt registered assets fail explicitly before play or report decoder failure.",
+    "checkpoint": "The native Save/Load UI is implemented. Capture is refused while any mission media is pending; after playback, reconstruction suppresses historical speech and resumes paused. No in-flight media position is promised.",
+    "subtitles": "Fifteen archived voice entries have source text with Chinese localization. Unit_Sofia_Engineer has no source transcript and uses its localized unit-name caption rather than an invented transcription.",
+    "oldMenuConverter": "Still strips audio with -an; never reused for campaign clips.",
+    "copyright": "Original content remains in ignored local resources. Only metadata and code are committed."
+  },
+  "hdCandidates": [
+    {
+      "url": "https://www.nexusmods.com/commandandconquerredalert2/mods/140",
+      "creditedAuthor": "Machripe",
+      "status": "PAGE_METADATA_ONLY_NOT_DOWNLOADED",
+      "notes": "Listed primarily for RA2, with YR forthcoming; communications listed at 140x110. No clip quality or compatibility acceptance."
+    },
+    {
+      "url": "https://www.moddb.com/games/cc-red-alert-yuris-revenge/addons/ra2ra2yr-extentioncutscenes",
+      "creditedAuthor": "YoWassup",
+      "status": "PAGE_METADATA_ONLY_NOT_DOWNLOADED",
+      "notes": "Large listed 5.56 GB package; listing describes RA2/YR cutscenes at 1400x1080/800x600 but communication clips at 140x110. No clip acquisition or quality acceptance."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=LIqHPEKNaBA",
+      "status": "PAGE_FETCH_FAILED_NOT_DOWNLOADED",
+      "notes": "Compilation cannot substitute for independently bound mission clips."
+    }
+  ],
+  "nativeEvidence": {
+    "path": ".artifacts/m3-1/input-final/report.json",
+    "bytes": 7705304,
+    "sha256": "3a97182494baf99f24c9121fc1d4b5a0b5d96846b4f756a9f953bb49e853a0de"
+  },
+  "outcomes": [
+    {
+      "id": "s01_f00e",
+      "outcome": "ended"
+    },
+    {
+      "id": "s01_p01e",
+      "outcome": "ended",
+      "evidenceScope": "Earlier unchanged top-right candidate-player probe"
+    }
+  ],
+  "exitCancellation": {
+    "outcomes": [
+      {
+        "id": "s01_p01e",
+        "outcome": "cancelled"
+      },
+      {
+        "id": "s01_p01e",
+        "outcome": "cancelled"
+      }
+    ],
+    "elementsRemaining": 0
+  },
+  "initialSpeechEvidence": [
+    {
+      "id": "EVA_EstablishBattlefieldControl",
+      "reason": "ended"
+    },
+    {
+      "id": "EVA_ReinforcementsHaveArrived",
+      "reason": "ended"
+    },
+    {
+      "id": "Mis_S1_SofiaCrushPentagon",
+      "reason": "ended"
+    },
+    {
+      "id": "EVA_BattlefieldControlOnline",
+      "reason": "ended"
+    },
+    {
+      "id": "EVA_NewObjectiveReceived",
+      "reason": "ended"
+    },
+    {
+      "id": "Unit_Sofia_Engineer",
+      "reason": "ended"
+    }
+  ],
+  "remaining": [
+    "Perceptual listening and audiovisual/visual user approval",
+    "Native Windows playback",
+    "Unverified external HD-video replacements; original fallback retained"
+  ],
+  "menuContinuation": {
+    "status": "PASS_MAC_FORMAL_NORMAL_NATIVE_INPUT",
+    "runtimeHead": "d1e21e8c888e98191e250939050b9d08330a7f67",
+    "trigger": "Soviet Normal faction-logo click",
+    "introBinding": "Basic.Intro",
+    "testedCompletion": "ended",
+    "skipEvidence": "Earlier unchanged source-bound player/native presentation receipts",
+    "destination": "Original loading, formal mission, original objective victory, completed final speech and campaign results",
+    "nativeReport": {
+      "path": ".artifacts/m3-1/input-final/report.json",
+      "bytes": 7705304,
+      "sha256": "3a97182494baf99f24c9121fc1d4b5a0b5d96846b4f756a9f953bb49e853a0de"
+    },
+    "normalMissionTechnicalVerification": true,
+    "userAcceptance": "PENDING_FINAL_MISSION_REVIEW"
+  },
+  "historicalNativeEvidence": [
+    {
+      "path": ".artifacts/m3-1/native-final-20261022/report.json",
+      "bytes": 76514,
+      "sha256": "ddf31bf98b869825f49a0f888c9ff4f2b941b42542a2ab9d93243608e493c269"
+    }
+  ],
+  "finalSpeechEvidence": [
+    {
+      "id": "Mis_S1_SofiaVictorySpeech",
+      "reason": "ended"
+    },
+    {
+      "id": "EVA_YouAreVictorious",
+      "reason": "ended"
+    }
+  ],
+  "missionMovieBindingAudit": {
+    "basicIntro": "S01_f00e",
+    "otherBasicMovies": "<none>",
+    "movieActionOpcodesPresent": [],
+    "movieScriptOpcodesPresent": [],
+    "transmissionCandidateBound": false
+  }
+}

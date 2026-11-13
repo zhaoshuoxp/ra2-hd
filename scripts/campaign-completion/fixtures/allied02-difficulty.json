@@ -1,0 +1,49 @@
+{
+  "mission": "all02s.map",
+  "sourceSha256": "5ebd7a3aaa60215a6da1f63e87a53c4ebf8cb28378b09f7128953ab05e6425fc",
+  "semanticsVersion": 16,
+  "enemyHouse": "Russians",
+  "controlledHouses": 4,
+  "triggers": 84,
+  "aiTriggers": 23,
+  "ignoreGlobal": true,
+  "teamDelays": [
+    2000,
+    2500,
+    3500
+  ],
+  "cases": {
+    "easy": {
+      "credits": 10050,
+      "human": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "enemy": [
+        0.8,
+        1.2,
+        1
+      ],
+      "aiDelay": 3500
+    },
+    "hard": {
+      "credits": 9950,
+      "human": [
+        0.8,
+        1.2,
+        1
+      ],
+      "enemy": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "aiDelay": 2000
+    }
+  },
+  "authority": "Original maps01.mix/all02s.map Americans Credits=100, TechLevel=3. No local General/Easy/Normal/Difficult override; original General money deltas are +50/-50, TeamDelays Hard/Normal/Easy are2000/2500/3500. Source trigger flags retain Easy/Normal/Hard-specific road teams, hints and combat checks. Global AI is explicitly ignored; all23 local records remain. Original GDI remains a source PlayerControl=yes but MultiplayPassive=true country; control does not rewrite this neutral flag.",
+  "controlledNeutralHouses": [
+    "GDI"
+  ]
+}

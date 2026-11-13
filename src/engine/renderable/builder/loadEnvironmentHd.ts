@@ -5,6 +5,8 @@ import { environmentHdContractForTheater, environmentFamilyScopeIssue,
     environmentMemberSource, type EnvironmentSourceContext } from './environmentHdContract';
 import type { PowerPlantHdEntry } from './resolvePowerPlantHd';
 import { uploadHdTextures } from './uploadHdTextures';
+import { loadBuildingTurretHd } from '../building/BuildingTurretHd';
+import turretContracts from '../../../../desktop/building-turret-contracts.json';
 
 const check = (value: unknown, message: string) => { if (!value) throw Error(message); };
 const digest = async (bytes: ArrayBuffer) => Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)))
@@ -45,6 +47,13 @@ export async function loadEnvironmentHd(theater: any, renderer: any, enabled: bo
                 const binding = selection.families[identity];
                 check(binding?.familyHash === declared.familyHash
                     && binding.members.length === declared.members.length, 'environment-family-identity');
+                const candidate = environmentHdContract.turretAttachments?.[identity];
+                const attachment = candidate && !environmentFamilyScopeIssue({ sourceScope: candidate.sourceScope },
+                    sourceContext) ? candidate : undefined;
+                const variant = attachment?.variants[String(density) as '2' | '4'];
+                const turretContract = attachment && turretContracts[attachment.family as keyof typeof turretContracts];
+                if (attachment) check(turretContract && variant
+                    && binding.turrets?.[density]?.sha256 === variant.sha256, 'environment-missing-turret-binding');
                 const entries: PowerPlantHdEntry[] = [];
                 const aliases: { image: object; canonical: object }[] = [];
                 for (const name of declared.members) {
@@ -116,16 +125,25 @@ export async function loadEnvironmentHd(theater: any, renderer: any, enabled: bo
                     async textures => {
                         await uploadHdTextures(renderer.renderer, textures, stopped);
                         check(renderer.renderer.getContext().getError() === 0, 'environment-upload-failed');
-                    }, stopped);
+                    }, stopped, attachment ? {
+                        gpuBytes: 8 * turretContract!.canvas[0] * turretContract!.canvas[1] * density * density * 5 + 4,
+                        workingBytes: variant!.workingBytes,
+                        load: () => loadBuildingTurretHd(binding.turrets[density], attachment.family, density,
+                            { theater: name, sources: attachment.sources, palette: attachment.palette }, stopped),
+                    } : undefined);
                 result.report.families[identity] = { density: loaded.density,
                     worldChargeBytes: loaded.worldChargeBytes, gpuBytes: loaded.gpuBytes,
                     loadingPeakBytes: loaded.loadingPeakBytes,
                     restoreWorkingBytes: loaded.restoreWorkingBytes,
                     retainedCpuBytes: loaded.retainedCpuBytes, attempts: loaded.attempts,
+                    turret: loaded.turret ? { family: attachment!.family, density: loaded.turret.density,
+                        headings: loaded.turret.parts.size, gpuBytes: loaded.turret.gpuBytes,
+                        retainedCpuBytes: loaded.turret.retainedCpuBytes } : undefined,
                     members: entries.map(entry => entry.source.member),
                     status: loaded.overrides.size ? 'PUBLISHED_COMPLETE_FAMILY' : 'ORIGINAL' };
                 if (loaded.overrides.size) {
                     result.families.set(identity, loaded.overrides);
+                    if (loaded.turret) for (const name of declared.identities) result.turrets.set(name, loaded.turret);
                     loaded.overrides.forEach((override, image) => result.overrides.set(image, override));
                     for (const alias of aliases) result.overrides.set(alias.image, loaded.overrides.get(alias.canonical)!);
                     result.report.density = density;

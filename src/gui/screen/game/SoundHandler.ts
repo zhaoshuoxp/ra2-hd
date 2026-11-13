@@ -1,4 +1,5 @@
 import { CompositeDisposable } from '@/util/disposable/CompositeDisposable';
+import { canControlOwner } from '@/game/campaign/CampaignControl';
 import { EventType } from '@/game/event/EventType';
 import { SoundKey } from '@/engine/sound/SoundKey';
 import { ChannelType } from '@/engine/sound/ChannelType';
@@ -8,6 +9,7 @@ import { SuperWeaponType } from '@/game/type/SuperWeaponType';
 import { RadarEventType } from '@/game/rules/general/RadarRules';
 import { aiUiNames } from '@/game/gameopts/constants';
 import { OrderFeedbackType } from '@/game/order/OrderFeedbackType';
+import { SoundControl } from '@/engine/sound/SoundSpecs';
 
 const detectedSuperWeaponEvaByType = new Map([
     [SuperWeaponType.MultiMissile, 'EVA_NuclearSiloDetected'],
@@ -61,12 +63,23 @@ export class SoundHandler {
     private weaponLoops = new Map<any, { key: string; handle: any; owner: any; untilTick: number }>();
     private lastAvailableObjectNames: string[] = [];
     private lastQueueStatuses = new Map();
-    private triggerSoundHandles = new Map();
+    private triggerSoundHandles = new Map<string, Set<any>>();
     private disposables = new CompositeDisposable();
     private lastFeedbackTime?: number;
     constructor(private game: any, private worldSound: any, private eva: any, private sound: any, private gameEvents: any, private messageList: any, private strings: any, private player: any, private renderer?: any) { }
     init(): void {
         this.disposables.add(this.gameEvents.subscribe((event: any) => this.handleGameEvent(event)));
+        if ((this.game.campaign?.launch.semanticsVersion ?? 1) >= 15) {
+            // Source requests reconstruct deterministically. Only persistent
+            // ambient/loop sounds restart; expired one-shots are not replayed.
+            for (const requests of this.game.campaign.soundEmitters.values()) for (const request of requests) {
+                const spec = this.sound.getSoundSpec(request.sound);
+                if (spec?.control.has(SoundControl.Loop) || spec?.control.has(SoundControl.Ambient)) {
+                    const tile = this.game.map.getTileAtWaypoint(request.waypoint);
+                    if (tile) this.playTriggerSound(request.sound, tile);
+                }
+            }
+        }
         if (this.renderer) {
             this.renderer.onFrame.subscribe(this.updateWeaponLoops);
             this.disposables.add(() => this.renderer.onFrame.unsubscribe(this.updateWeaponLoops));
@@ -75,6 +88,8 @@ export class SoundHandler {
     dispose(): void {
         for (const loop of this.weaponLoops.values()) loop.handle.stop();
         this.weaponLoops.clear();
+        for (const handles of this.triggerSoundHandles.values()) for (const handle of handles) handle.stop();
+        this.triggerSoundHandles.clear();
         this.disposables.dispose();
     }
     private updateWeaponLoops = (): void => {
@@ -90,10 +105,16 @@ export class SoundHandler {
     private handleGameEvent(event: any): void {
         switch (event.type) {
             case EventType.TriggerSoundFx:
-                if (event.tile) this.worldSound.playEffect(event.soundId,
-                    Coords.tile3dToWorld(event.tile.rx + .5, event.tile.ry + .5, event.tile.z), this.player);
-                else this.sound.play(event.soundId, ChannelType.Effect);
+                const soundId = event.sourceIndex === undefined ? event.soundId : this.sound.soundSpecs.getOriginalName(event.sourceIndex);
+                if (event.tile) this.playTriggerSound(soundId, event.tile);
+                else this.sound.play(soundId, ChannelType.Effect);
                 break;
+            case EventType.TriggerStopSoundFx: {
+                const key = this.triggerSoundKey(event.tile), handles = this.triggerSoundHandles.get(key);
+                if (handles) for (const handle of handles) handle.stop();
+                this.triggerSoundHandles.delete(key);
+                break;
+            }
             case EventType.Cheer:
                 this.sound.play(SoundKey.CheerSound, ChannelType.Effect);
                 break;
@@ -153,6 +174,14 @@ export class SoundHandler {
             default:
                 break;
         }
+    }
+    private triggerSoundKey(tile: any): string { return `${tile.rx},${tile.ry},${tile.z}`; }
+    private playTriggerSound(sound: string, tile: any): void {
+        const handle = this.worldSound.playEffect(sound, Coords.tile3dToWorld(tile.rx + .5, tile.ry + .5, tile.z), this.player);
+        if (!handle || (this.game.campaign?.launch.semanticsVersion ?? 1) < 15) return;
+        const key = this.triggerSoundKey(tile), handles = this.triggerSoundHandles.get(key) ?? new Set<any>();
+        for (const old of handles) if (!old.isPlaying()) handles.delete(old);
+        handles.add(handle); this.triggerSoundHandles.set(key, handles);
     }
     private handleWeaponFireSound(event: any): void {
         const weapon = event.weapon;
@@ -240,12 +269,16 @@ export class SoundHandler {
             }
         }
         const message = superWeaponActivateMessageByType.get(event.target);
-        if (message) {
+        if (message && (event.target !== SuperWeaponType.LightningStorm || this.lightningPrintsText())) {
             this.messageList.addSystemMessage(this.strings.get(message), this.player ?? 'grey');
         }
     }
+    private lightningPrintsText(): boolean {
+        return (this.game.campaign?.launch.semanticsVersion ?? 1) < 18
+            || this.game.rules.getIni().getSection('General')?.getBool('LightningPrintText', true) !== false;
+    }
     private handleLightningStormManifestSound(event: any): void {
-        this.messageList.addSystemMessage(this.strings.get('TXT_LIGHTNING_STORM'), this.player ?? 'grey');
+        if (this.lightningPrintsText()) this.messageList.addSystemMessage(this.strings.get('TXT_LIGHTNING_STORM'), this.player ?? 'grey');
         this.worldSound.playEffect(SoundKey.StormSound, Coords.tile3dToWorld(event.target.rx, event.target.ry, event.target.z));
     }
     private handleWarheadDetonateSound(event: any): void {
@@ -364,7 +397,7 @@ export class SoundHandler {
         }
     }
     handleSelectionChangeEvent(event: any): void {
-        if (event.selection.length && event.selection[0].owner === this.player) {
+        if (event.selection.length && canControlOwner(this.player, event.selection[0].owner)) {
             const now = Date.now();
             const canPlayFeedback = !this.lastFeedbackTime || now - this.lastFeedbackTime >= 250;
             if (canPlayFeedback) {

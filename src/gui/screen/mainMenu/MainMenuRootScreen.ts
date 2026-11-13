@@ -4,6 +4,7 @@ import { MainMenu } from './component/MainMenu';
 import { MainMenuController } from './MainMenuController';
 import { MainMenuScreenType } from '../ScreenType';
 import { ScoreScreen } from './score/ScoreScreen';
+import { MovieLibraryScreen } from './movies/MovieLibraryScreen';
 import { Strings } from '../../../data/Strings';
 import { ShpFile } from '../../../data/ShpFile';
 import { JsxRenderer } from '../../jsx/JsxRenderer';
@@ -11,6 +12,7 @@ import { LazyResourceCollection } from '../../../engine/LazyResourceCollection';
 import { MessageBoxApi } from '../../component/MessageBoxApi';
 import { Config } from '../../../Config';
 import { browserFileSystemAccess } from '../../../engine/gameRes/browserFileSystemAccess';
+import { activeEdition } from '../../../editions/activeEdition';
 export interface UiScene {
     menuViewport: {
         x: number;
@@ -102,11 +104,18 @@ export class MainMenuRootScreen extends RootScreen {
     }
     async onEnter(params?: any): Promise<void> {
         if (preferredLanguage() && preferredLanguage() !== currentLanguage()) { location.reload(); return; }
+        const entryUrl = new URL(location.href);
+        const campaignEntry = ['select', 'soviet01'].includes(entryUrl.searchParams.get('campaign') ?? '');
+        if (campaignEntry) {
+            entryUrl.searchParams.delete('campaign');
+            history.replaceState(null, '', entryUrl.href);
+        }
         console.log('[MainMenuRootScreen] Entering main menu root screen');
         const controller = this.createViewAndController();
         if (!this.subScreens.has(MainMenuScreenType.Score)) {
             this.subScreens.set(MainMenuScreenType.Score, ScoreScreen as any);
         }
+        this.subScreens.set(MainMenuScreenType.Movies, MovieLibraryScreen);
         for (const [screenType, screenClass] of this.subScreens) {
             const screen: any = await this.createScreen(screenType, screenClass, controller);
             if (screen) {
@@ -124,13 +133,19 @@ export class MainMenuRootScreen extends RootScreen {
                 controller.goToScreen(params.route.screenType, params.route.params);
             }
             else {
-                controller.goToScreen(MainMenuScreenType.Home);
+                controller.goToScreen(campaignEntry ? MainMenuScreenType.Campaign : MainMenuScreenType.Home);
             }
         }, 0);
     }
     private async createScreen(screenType: MainMenuScreenType, screenClass: any, _controller: any): Promise<any> {
         let screen: any;
-        if (screenType === MainMenuScreenType.InfoAndCredits) {
+        if (screenType === MainMenuScreenType.Campaign) {
+            screen = new screenClass(this.rootController, this.strings, this.jsxRenderer, this.music, this.mixer, this.sound, this.localPrefs);
+        }
+        else if (screenType === MainMenuScreenType.Movies) {
+            screen = new MovieLibraryScreen(this.strings, this.jsxRenderer, this.music, this.mixer);
+        }
+        else if (screenType === MainMenuScreenType.InfoAndCredits) {
             screen = new screenClass(this.strings, this.messageBoxApi);
         }
         else if (screenType === MainMenuScreenType.Credits) {
@@ -192,7 +207,7 @@ export class MainMenuRootScreen extends RootScreen {
             screen = new screenClass(this.strings, this.jsxRenderer, mapFileLoader, errorHandler, this.messageBoxApi, this.localPrefs, mapList, gameModes, mapDir, fsAccessLib, sentry);
         }
         else if (screenType === MainMenuScreenType.Score) {
-            screen = new screenClass(this.strings, this.jsxRenderer, (this as any).wolService);
+            screen = new screenClass(this.strings, this.jsxRenderer, (this as any).wolService, this.sound, this.mixer);
         }
         else if (screenType === MainMenuScreenType.ReplaySelection) {
             const { ErrorHandler } = await import('../../../ErrorHandler.js');

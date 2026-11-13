@@ -11,6 +11,12 @@ interface EvaSpec {
     priority: EvaPriority;
     queue: boolean;
 }
+export function normalizeSpeechText(text: string): string {
+    // Original dialog annotations contain Windows-1252 punctuation decoded
+    // through the archive's byte-preserving legacy string reader.
+    return text.replace(/[\u0080-\u009f]/g, character =>
+        new TextDecoder('windows-1252').decode(Uint8Array.of(character.charCodeAt(0))));
+}
 export class EvaSpecs {
     private sideType: SideType;
     private specs = new Map<string, EvaSpec>();
@@ -29,7 +35,7 @@ export class EvaSpecs {
                 let dialogSection = ini.getSection(dialogName);
                 if (dialogSection) {
                     const spec: EvaSpec = {
-                        text: dialogSection.getString("Text"),
+                        text: normalizeSpeechText(dialogSection.getString("Text")),
                         sound: dialogSection.getString(sidePrefix),
                         priority: dialogSection.getEnum("Priority", EvaPriority, EvaPriority.Normal, true),
                         queue: dialogSection.getString("Type").trim().toLowerCase() === "queue",

@@ -24,6 +24,7 @@ import { CollisionHelper } from './unit/CollisionHelper';
 import { CollisionType } from './unit/CollisionType';
 import { Vector2 } from '@/game/math/Vector2';
 import { Vector3 } from '@/game/math/Vector3';
+import { canCampaignChargeTarget } from '../campaign/CampaignChargedWeapon';
 export enum ProjectileState {
     Travel = 0,
     Impact = 1,
@@ -61,6 +62,7 @@ export class Projectile extends GameObject {
     private lastTargetLockPosition?: Vector3;
     private speed?: number;
     private impactAnim?: string;
+    private sabotageReadyTick?: number;
     get fromObject() {
         return this._fromObject;
     }
@@ -104,6 +106,13 @@ export class Projectile extends GameObject {
     }
     onSpawn(game: any): void {
         super.onSpawn(game);
+        if ((game.gameOpts?.campaign ?? game.gameOpts)?.demolitionSafetyVersion === 1
+            && this.fromObject?.c4 && this.fromWeapon.rules.sabotageCursor && this.target.obj?.rules.naval) {
+            // Apply the source C4Delay fuse to naval planting as well.
+            // Keep its actual weapon payload and allow the planter to withdraw.
+            this.sabotageReadyTick = game.currentTick + Math.max(1,
+                Math.floor(60 * game.rules.combatDamage.c4Delay * GameSpeed.BASE_TICKS_PER_SECOND));
+        }
         if (this.fromWeapon.rules.drainWeapon) {
             this.fromObject?.drainTrait?.prepare(this, this.target.obj, game);
         }
@@ -239,6 +248,7 @@ export class Projectile extends GameObject {
         return game.generateRandom() <= 0.5 ? 2 : 0;
     }
     update(game: any): void {
+        if (this.sabotageReadyTick !== undefined && game.currentTick < this.sabotageReadyTick) return;
         if (this.maxSpeed === undefined)
             return;
         super.update(game);
@@ -296,6 +306,10 @@ export class Projectile extends GameObject {
             if (this.fromWeapon.rules.limboLaunch) {
                 if (!this.targetLockLost) {
                     if (this.limboTravelTicks > 10) {
+                        if (!game.map.isWithinHardBounds(this.target.obj.position.worldPosition)) {
+                            this.detonate(game);
+                            return;
+                        }
                         this.position.moveToLeptons(this.target.obj.position.getMapPosition());
                         this.position.tileElevation = this.target.obj.position.tileElevation;
                         this.detonate(game);
@@ -347,7 +361,7 @@ export class Projectile extends GameObject {
                     this.velocity.copy(moveVector);
                 }
                 const newPos = moveVector.clone().add(this.position.worldPosition);
-                if (game.map.mapBounds.isWithinHardBounds(newPos)) {
+                if (game.map.isWithinHardBounds(newPos)) {
                     this.position.moveByLeptons3(moveVector);
                 }
                 else {
@@ -361,7 +375,7 @@ export class Projectile extends GameObject {
                 }
             }
             else {
-                this.position.moveByLeptons3(toTarget);
+                if (game.map.isWithinHardBounds(targetPos)) this.position.moveByLeptons3(toTarget);
                 shouldDetonate = true;
             }
             if (shouldDetonate) {
@@ -397,11 +411,18 @@ export class Projectile extends GameObject {
                 const totalDistance = Coords.vecWorldToGround(totalOffset).length();
                 const targetHeight = totalOffset.y;
                 const gravity = game.rules.audioVisual.gravity;
-                toAimPoint.y =
-                    (((targetHeight / totalDistance) * currentSpeed + ((gravity / 2) * totalDistance) / currentSpeed) * currentDistance) / currentSpeed -
-                        (gravity * (currentDistance / currentSpeed) * (currentDistance / currentSpeed)) / 2 +
-                        this.initialSelfPosition!.y -
-                        this.position.worldPosition.y;
+                // A cannon can hit a coincident point, including a shot whose
+                // target died at the muzzle. There is no horizontal arc to solve.
+                // Released campaign journals retain their original trajectory.
+                if (totalDistance === 0 && (!game.gameOpts?.campaign || (game.gameOpts.campaign.semanticsVersion ?? 1) >= 10)) {
+                    toAimPoint.y = this.aimPoint!.y - this.position.worldPosition.y;
+                } else {
+                    toAimPoint.y =
+                        (((targetHeight / totalDistance) * currentSpeed + ((gravity / 2) * totalDistance) / currentSpeed) * currentDistance) / currentSpeed -
+                            (gravity * (currentDistance / currentSpeed) * (currentDistance / currentSpeed)) / 2 +
+                            this.initialSelfPosition!.y -
+                            this.position.worldPosition.y;
+                }
             }
             let shouldDetonate = false;
             const newPos = toAimPoint.clone().add(this.position.worldPosition);
@@ -638,7 +659,7 @@ export class Projectile extends GameObject {
                 if (!(this.fromWeapon instanceof Weapon)) {
                     throw new Error("Projectile with parasite warhead must have a weapon reference");
                 }
-                targetObj.parasiteableTrait.infest(this.fromObject, this.fromWeapon);
+                targetObj.parasiteableTrait.infest(this.fromObject, this.fromWeapon, game);
                 parasiteSuccess = true;
             }
         }
@@ -698,7 +719,9 @@ export class Projectile extends GameObject {
                 !game.areFriendly(targetObj, this.fromObject) &&
                 warhead.canDamage(targetObj, detonationTile, detonationZone) &&
                 !targetObj.invulnerableTrait.isActive()) {
+                const previousOwner = targetObj.owner;
                 this.fromObject.mindControllerTrait.control(targetObj, game);
+                game.campaign?.noteMindControlHit(targetObj, this.fromObject, previousOwner);
             }
         }
         if (warhead.rules.temporal) {
@@ -732,7 +755,7 @@ export class Projectile extends GameObject {
                 targetObj?.isBuilding() &&
                 !targetObj.isDestroyed &&
                 targetObj.overpoweredTrait &&
-                targetObj.owner === this.fromPlayer) {
+                (targetObj.owner === this.fromPlayer || canCampaignChargeTarget(this.fromObject, targetObj, game))) {
                 targetObj.overpoweredTrait.chargeFrom(this.fromObject);
             }
             shouldDetonate = false;
@@ -864,6 +887,8 @@ export class Projectile extends GameObject {
     }
     private createShrapnel(game: any, target: any, weaponName: string): void {
         const shrapnel = game.createLooseProjectile(weaponName, this.fromPlayer, target);
+        if ((game.gameOpts?.campaign ?? game.gameOpts)?.retaliationVersion === 1)
+            shrapnel.fromObject = this.fromObject;
         shrapnel.isShrapnel = true;
         shrapnel.veteranDamageMult = this.veteranDamageMult;
         shrapnel.position.moveToLeptons(this.position.getMapPosition());

@@ -55,7 +55,8 @@ export const ScoreTable: React.FC<ScoreTableProps> = ({ game, singlePlayer, tour
             React.createElement("div", { className: "points-gain" }, (localPlayerReport.points > 0 ? "+" : "") + localPlayerReport.points)),
         React.createElement("div", { className: "score-header" },
             React.createElement("span", null, strings.get("GUI:Map") + ": " + (game.gameOpts?.mapTitle ?? "")),
-            React.createElement("span", null, strings.get("GUI:Time") + ": " + formatTimeDuration(Math.floor(game.currentTime / 1000)))),
+            React.createElement("span", { 'data-score-play-time': true }, strings.get("GUI:Time") + ": "
+                + formatTimeDuration(Math.floor((singlePlayer ? game.playTime?.elapsedMs ?? game.currentTime : game.currentTime) / 1000)))),
         React.createElement("div", { className: "score-table-wrapper" }, React.createElement("table", { className: "score-table" }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", { className: "player-col" }, strings.get("GUI:Player")), React.createElement("th", { className: "country-col" }, strings.get("GUI:Country")), React.createElement("th", { className: "color-col" }, strings.get("GUI:Color")), React.createElement("th", { className: "score-col" }, strings.get("GUI:Score")), React.createElement("th", { className: "units-col" }, strings.get("GUI:Kills")), React.createElement("th", { className: "buildings-col" }, strings.get("GUI:Losses")), showReport && React.createElement("th", { className: "rank-col" }, "Rank"))), React.createElement("tbody", null, players.map((player: any) => {
         const isLocalPlayer = player === localPlayer;
         const playerReport = gameReport?.players.find((p: any) => p.name.toLowerCase() === player.name.toLowerCase());

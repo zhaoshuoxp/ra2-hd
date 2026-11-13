@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-26",
+  "status": "USER_ACCEPTED_MAIN_VERIFIED",
+  "userDecision": "Approved the final APOC/DISK result and requested local main update and cleanup.",
+  "implementationCommit": "08cbc72b752f5dfce91a841683fe1b123c0c2bc6",
+  "branch": "main",
+  "acceptedScope": {
+    "APOC": {
+      "headings": [
+        0,
+        90
+      ],
+      "assemblyOffset": [
+        0,
+        2.5
+      ],
+      "allPngBytesUnchanged": true,
+      "otherSixHeadingsUnchanged": true,
+      "uniformScale": 0.106
+    },
+    "DISK": {
+      "parts": [
+        "disk.vxl",
+        "disktur.vxl"
+      ],
+      "sharedNativePhase": true,
+      "rotatingRegions": [
+        "top cap",
+        "dome",
+        "collar",
+        "inner deck",
+        "outer plate",
+        "lower body"
+      ],
+      "fixedLightingCompensationRemoved": true,
+      "registeredCoverageRetained": true,
+      "atlasFilesUnchanged": true
+    }
+  },
+  "userVisualAcceptance": "ACCEPTED",
+  "macNative": "PASS_RECORDED_SCOPED_CASES",
+  "windowsNative": "NOT_RUN_ON_THIS_MAC",
+  "runtimeChangedDuringAcceptance": false,
+  "selectedResources": [
+    {
+      "density": 2,
+      "path": ".local/hd-packs/soviet-apoc-vxl/r7-upper-seated-2x/manifest.json",
+      "sha256": "54fcd7c20f3dc81bda2ce8adad57ae0445c4dbaf15ad448935ccc1e4800a3f89",
+      "allPngBytesUnchanged": true,
+      "changedHeadings": [
+        0,
+        90
+      ],
+      "verticalOffset": 2.5
+    },
+    {
+      "density": 4,
+      "path": ".local/hd-packs/soviet-apoc-vxl/r7-upper-seated-4x/manifest.json",
+      "sha256": "1ffe1d81481327a4fecf47f3ea4b47ca4008bf8e2720b5926cea7a802667cec8",
+      "allPngBytesUnchanged": true,
+      "changedHeadings": [
+        0,
+        90
+      ],
+      "verticalOffset": 2.5
+    },
+    {
+      "density": 2,
+      "path": ".local/hd-packs/yuri-disk-vxl/r4-lighting-packed-2x/manifest.json",
+      "sha256": "dc221dbe5dca03cf408f3035a5aaabf8ea667e12e3a9b932052d7442f725434d"
+    },
+    {
+      "density": 4,
+      "path": ".local/hd-packs/yuri-disk-vxl/r4-lighting-packed-4x/manifest.json",
+      "sha256": "81cf528597a7bc19acd5a2b264bb3c1689bcf07bcd9ee6efbb0d98ebd5f51b99"
+    }
+  ],
+  "verification": {
+    "priorProtectedFilesVerified": 359,
+    "retainedEvidenceFilesVerified": 371,
+    "normalMainPayloadInventory": "/Users/Aone/RA2remaster/project-history/apoc-disc-followup-20261026/normal-main-payload.json",
+    "originalTaskDirectoryAbsent": true,
+    "existingNativeEvidenceReusedAfterHashVerification": true,
+    "focusedTestsPreviouslyPassed": 29,
+    "newRuntimeTestsRequired": false
+  },
+  "cleanup": {
+    "originalReceipt": "/Users/Aone/RA2remaster/project-history/apoc-disc-followup-20261026/cleanup.json",
+    "alreadyRetiredTestFiles": 655,
+    "preservedEvidenceFiles": 371,
+    "remainingTaskTemporaryFiles": 0,
+    "scope": "Verify previous retirement and remove only the empty .artifacts parent if still empty; preserve resources, history, normal output, dependencies and real profiles."
+  },
+  "historyRoot": "/Users/Aone/RA2remaster/project-history/apoc-disc-followup-20261026",
+  "acceptanceClosure": "/Users/Aone/RA2remaster/project-history/apoc-disc-followup-20261026/Acceptance/closure.json",
+  "separateCampaignReviewUnchanged": true,
+  "noNewPackage": true,
+  "noRemotePush": true
+}

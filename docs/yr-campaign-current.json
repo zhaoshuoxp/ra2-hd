@@ -1,0 +1,3518 @@
+{
+  "schema": "yr-campaign-implementation-v1",
+  "date": "2026-11-04",
+  "status": "ALL14_USER_ACCEPTED_R6_CANONICAL_MAIN",
+  "sourceMain": "e285a7b0",
+  "repository": "/Users/Aone/RA2remaster/ra2-hd",
+  "branch": "main",
+  "sourceInventory": "../project-history/yr-campaign-implementation-20261104/source-inventory.json",
+  "protectedApp": "/Users/Aone/RA2remaster/RA2-HD-Original-Campaigns-Mac-20261104-v56/Red Alert 2 HD.app",
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "userAcceptance": "ACCEPTED_COMPLETE_R6_DELIVERY",
+  "publication": "LOCAL_ONLY_NO_PUSH",
+  "missions": [
+    {
+      "edition": "yr",
+      "faction": "soviet",
+      "mission": "sov01umd.map",
+      "sourceSha256": "498b989a4b6f579dee0904a77f1fabf982c14786db21a46c41900fc8344ec72b",
+      "theater": "NEWURBAN",
+      "next": "sov02smd.map",
+      "media": [
+        {
+          "name": "s01_f00e",
+          "binding": "Basic.Brief",
+          "use": "before-mission"
+        },
+        {
+          "name": "s01_p01e",
+          "binding": "Actions.094DC05C:0",
+          "use": "transmission",
+          "movieIndex": 34
+        },
+        {
+          "name": "s01_p02e",
+          "binding": "Actions.0952E0FC:0",
+          "use": "transmission",
+          "movieIndex": 35
+        },
+        {
+          "name": "s01_p03e",
+          "binding": "Actions.095F1B8C:0",
+          "use": "transmission",
+          "movieIndex": 36
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 302,
+        "tags": 269,
+        "cellTags": 194,
+        "teams": 130,
+        "taskForces": 48,
+        "scripts": 102,
+        "aiTriggers": 0,
+        "diagnosticReferences": 76,
+        "initialUnsupportedReferences": [
+          "Action opcode 131 has no verified executor",
+          "Event opcode 58 has no verified executor",
+          "Action opcode 128 has no verified executor",
+          "Action opcode 127 has no verified executor",
+          "Action opcode 139 has no verified executor",
+          "Action opcode 121 has no verified executor",
+          "Action opcode 122 has no verified executor",
+          "Event opcode 61 has no verified executor",
+          "Action opcode 119 has no verified executor",
+          "Action opcode 70 has no verified executor",
+          "Action opcode 118 has no verified executor",
+          "Action opcode 130 has no verified executor",
+          "Action opcode 125 has no verified executor",
+          "Script opcode 17 has no verified executor",
+          "Script opcode 59 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov01-original-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov01-naval-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov01-naval-r4.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov01-full-v29-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov01-full-v29-r8.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov01-full-v29-r9.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/chrono-screen-native-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/time-machine01-native-states-2x-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/time-machine01-native-states-4x-r1.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 28,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/sov01-original-r3.json.gz"
+      },
+      "failureReceipt": "../project-history/yr-campaign-implementation-20261104/sov01-failure-observation.json",
+      "hdEvidence": {
+        "scenery": {
+          "sourceQualifiedFamilies": [
+            "yr-scenery-newurban-tree26-v1",
+            "yr-scenery-newurban-tree25-v1",
+            "yr-scenery-newurban-tree27-v1",
+            "yr-scenery-newurban-tree33-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/scenery-qualification-r1.json",
+          "nativeMapDensitySessions": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/scenery-sov01-native-2x-r2.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/scenery-sov01-native-4x-r2.json.gz"
+          ],
+          "scope": "Source-qualified family evidence. Complete mission artwork, original actions and public flow are qualified separately by the current final records; user visual acceptance is pending."
+        },
+        "coastalBuildings": {
+          "sourceQualifiedFamilies": [
+            "yr-task-newurban-casanf16-v1",
+            "yr-task-newurban-casanf05-v1",
+            "yr-task-newurban-casanf17-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/coastal-buildings-qualification-r1.json",
+          "nativeEvidence": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-sov01-casanf16-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-sov01-casanf16-native-4x-r1.json.gz"
+          ],
+          "scope": "Source-qualified family evidence. Complete mission artwork, original actions and public flow are qualified separately by the current final records; user visual acceptance is pending."
+        }
+      },
+      "currentSourceQualification": "docs/campaign-art/yr-v1/soviet01-difficulty-source-flow-r1.json",
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "soviet",
+      "mission": "sov02smd.map",
+      "sourceSha256": "139a7f17a17cefc20d12c21e9221d94ff6e1e8894ac09ab716fc9f6975d5a665",
+      "theater": "SNOW",
+      "next": "sov03umd.map",
+      "media": [
+        {
+          "name": "s02_f00e",
+          "binding": "Basic.Intro",
+          "use": "before-mission"
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 86,
+        "tags": 68,
+        "cellTags": 2,
+        "teams": 103,
+        "taskForces": 72,
+        "scripts": 83,
+        "aiTriggers": 81,
+        "diagnosticReferences": 4,
+        "initialUnsupportedReferences": [
+          "Event opcode 58 has no verified executor",
+          "Action opcode 131 has no verified executor",
+          "Action opcode 0 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov02-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov02-mission-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov02-pending-input-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov02-mission-r12.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov02-air-assault-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov02-production-probe-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov02-mission-r13.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 28,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/sov02-original-r1.json.gz"
+      },
+      "taskBuildingArt": "PASS_SOURCE_QUALIFIED_TASK_BUILDINGS_NATIVE_2X4X_AND_COMPLETE_MISSION_HD; USER_VISUAL_ACCEPTANCE_PENDING",
+      "currentSourceQualification": "docs/campaign-art/yr-v1/soviet02-normal-source-flow-r1.json",
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "soviet",
+      "mission": "sov03umd.map",
+      "sourceSha256": "df69d0f63f982823bb5818d3d49776028a719a2c20ced2526fab8f5cecb49fe6",
+      "theater": "NEWURBAN",
+      "next": "sov04dmd.map",
+      "media": [
+        {
+          "name": "s03_f00e",
+          "binding": "Basic.Brief",
+          "use": "before-mission"
+        },
+        {
+          "name": "s03_p01e",
+          "binding": "Actions.0D1DACFC:0",
+          "use": "transmission",
+          "movieIndex": 40
+        },
+        {
+          "name": "s03_p02e",
+          "binding": "Actions.0D1DA24C:0",
+          "use": "transmission",
+          "movieIndex": 41
+        },
+        {
+          "name": "s03_p03e",
+          "binding": "Actions.0DE526AC:0",
+          "use": "transmission",
+          "movieIndex": 42
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 139,
+        "tags": 112,
+        "cellTags": 314,
+        "teams": 28,
+        "taskForces": 19,
+        "scripts": 25,
+        "aiTriggers": 7,
+        "diagnosticReferences": 14,
+        "initialUnsupportedReferences": [
+          "Action opcode 131 has no verified executor",
+          "Action opcode 106 has no verified executor",
+          "Action opcode 125 has no verified executor",
+          "Action opcode 130 has no verified executor",
+          "Action opcode 70 has no verified executor",
+          "Script opcode 59 has no verified executor",
+          "Script opcode 64 has no verified executor",
+          "Script opcode 17 has no verified executor",
+          "Script opcode 60 has no verified executor",
+          "Script opcode 41 has no verified executor",
+          "Script opcode 62 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-original-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-mission-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-mission-r6.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-mission-r7.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-mission-r8.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-continuation-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-mission-r9.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-mission-r10.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-continuation-r4.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-continuation-r5.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-original-r2.json.gz"
+      },
+      "taskBuildingArt": "PASS_SOURCE_QUALIFIED_TASK_BUILDINGS_NATIVE_2X4X_AND_COMPLETE_MISSION_HD; USER_VISUAL_ACCEPTANCE_PENDING",
+      "hdEvidence": {
+        "scenery": {
+          "sourceQualifiedFamilies": [
+            "yr-scenery-newurban-sign06-v1",
+            "yr-scenery-newurban-lt_eur01-v1",
+            "yr-scenery-newurban-lt_eur02-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/scenery-qualification-r1.json",
+          "nativeMapDensitySessions": [],
+          "scope": "Source-qualified family evidence. Complete mission artwork, original actions and public flow are qualified separately by the current final records; user visual acceptance is pending."
+        },
+        "cityBuildings": {
+          "families": [
+            "yr-task-newurban-calond01-v1",
+            "yr-task-newurban-calond03-v1",
+            "yr-task-newurban-calond06-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/city-buildings-qualification-r1.json",
+          "nativeEvidence": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond06-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond06-native-4x-r1.json.gz"
+          ]
+        }
+      },
+      "currentSourceQualification": "docs/campaign-art/yr-v1/soviet03-easy-source-flow-r1.json",
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "soviet",
+      "mission": "sov04dmd.map",
+      "sourceSha256": "702bd788efbd08ae5b7591a1dfc240684e73faedace2ffaac68baefdfd0fb12a",
+      "theater": "DESERT",
+      "next": "sov05umd.map",
+      "media": [
+        {
+          "name": "s04_f00e",
+          "binding": "Basic.Brief",
+          "use": "before-mission"
+        },
+        {
+          "name": "s04_p03e",
+          "binding": "Actions.0C9E79EC:1",
+          "use": "transmission",
+          "movieIndex": 47
+        },
+        {
+          "name": "s04_p01e",
+          "binding": "Actions.0972D7DC:0",
+          "use": "transmission",
+          "movieIndex": 45
+        },
+        {
+          "name": "s04_p02e",
+          "binding": "Actions.09258CFC:0",
+          "use": "transmission",
+          "movieIndex": 46
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 132,
+        "tags": 124,
+        "cellTags": 98,
+        "teams": 90,
+        "taskForces": 88,
+        "scripts": 91,
+        "aiTriggers": 14,
+        "diagnosticReferences": 17,
+        "initialUnsupportedReferences": [
+          "Event opcode 61 has no verified executor",
+          "Action opcode 106 has no verified executor",
+          "Event opcode 58 has no verified executor",
+          "Action opcode 131 has no verified executor",
+          "Script opcode 64 has no verified executor",
+          "Script opcode 62 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-mission-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-mission-r8.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-mission-r9.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-mission-r10.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-mission-r12.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-regroup-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-extraction-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-mission-r14.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-capture-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-capture-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-strike-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-north-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-west-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-input-replay-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-input-replay-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-finale-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-finale-r4.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-finale-r5.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-airport-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-recapture38-r1.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-original-r1.json.gz"
+      },
+      "remainingSemantics": "Original single-actor repeated capture passes YR38. Complete difficulty, media, HD and public lifecycle verification remain pending.",
+      "fullVictory": {
+        "difficulty": "easy",
+        "semanticsVersion": 37,
+        "sourceTrigger": "0CA0ABDC",
+        "sourceActionTick": 45234,
+        "resultTick": 45235,
+        "report": "../project-history/yr-campaign-implementation-20261104/Evidence/sov04-airport-r1.json.gz",
+        "sourceUnchanged": true,
+        "assistance": "Ordinary serialized movement, paid production, legal construction, visible-target attacks and Iron Curtain use. Historical input replay reruns source constructors using the recorded creation identity, then applies original player inputs. No saved world or running RNG is assigned."
+      },
+      "hdEvidence": {
+        "scenery": {
+          "sourceQualifiedFamilies": [
+            "yr-scenery-desert-tree17-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/scenery-qualification-r1.json",
+          "nativeMapDensitySessions": [],
+          "scope": "Source-qualified family evidence. Complete mission artwork, original actions and public flow are qualified separately by the current final records; user visual acceptance is pending."
+        }
+      },
+      "currentSourceQualification": "docs/campaign-art/yr-v1/soviet04-easy-source-flow-r1.json",
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "soviet",
+      "mission": "sov05umd.map",
+      "sourceSha256": "22518e8b4a86331a9172048e10de13b45c2826ea4fdf4d2203b58994b897761b",
+      "theater": "NEWURBAN",
+      "next": "sov06lmd.map",
+      "media": [
+        {
+          "name": "s05_f00e",
+          "binding": "Basic.Brief",
+          "use": "before-mission"
+        },
+        {
+          "name": "s05_p01e",
+          "binding": "Actions.09563D6C:1",
+          "use": "transmission",
+          "movieIndex": 49
+        },
+        {
+          "name": "s05_p02e",
+          "binding": "Actions.043A42BC:0",
+          "use": "transmission",
+          "movieIndex": 50
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 115,
+        "tags": 111,
+        "cellTags": 77,
+        "teams": 122,
+        "taskForces": 58,
+        "scripts": 77,
+        "aiTriggers": 48,
+        "diagnosticReferences": 7,
+        "initialUnsupportedReferences": [
+          "Trigger requires events and actions",
+          "Action opcode 131 has no verified executor",
+          "Action opcode 0 has no verified executor",
+          "Event opcode 61 has no verified executor",
+          "Script opcode 62 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov05-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov05-stage-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov05-topology-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov05-mission-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov05-mission-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov05-mission-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov05-mission-r4.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov05-mission-r5.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov05-mission-r6.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov05umd-failure-hard45-r1.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/sov05-original-r1.json.gz"
+      },
+      "fullVictory": {
+        "difficulty": "easy",
+        "semanticsVersion": 38,
+        "sourceTrigger": "094429EC",
+        "sourceActionTick": 51906,
+        "resultTick": 51907,
+        "report": "../project-history/yr-campaign-implementation-20261104/Evidence/sov05-mission-r6.json.gz",
+        "labelCorrection": "../project-history/yr-campaign-implementation-20261104/Debug/sov05-victory-label-correction.json",
+        "sourceUnchanged": true
+      },
+      "currentSourceQualification": "docs/campaign-art/yr-v1/soviet05-easy-source-flow-r1.json",
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "soviet",
+      "mission": "sov06lmd.map",
+      "sourceSha256": "f55b65fd33a53dd03f61b48259d7732d260a4f97170e6dcf0767a61af82403a4",
+      "theater": "LUNAR",
+      "next": "sov07tmd.map",
+      "media": [
+        {
+          "name": "s06_f00e",
+          "binding": "Basic.Brief",
+          "use": "before-mission"
+        },
+        {
+          "name": "s06_p01e",
+          "binding": "Actions.0923103C:1",
+          "use": "transmission",
+          "movieIndex": 52
+        },
+        {
+          "name": "s06_p02e",
+          "binding": "Actions.092630BC:0",
+          "use": "transmission",
+          "movieIndex": 53
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 81,
+        "tags": 80,
+        "cellTags": 112,
+        "teams": 44,
+        "taskForces": 37,
+        "scripts": 41,
+        "aiTriggers": 14,
+        "diagnosticReferences": 8,
+        "initialUnsupportedReferences": [
+          "Event opcode 59 has no verified executor",
+          "Event opcode 60 has no verified executor",
+          "Action opcode 119 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov06-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov06-stage-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov06-mission-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov06-mission-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov06-mission-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov06-mission-r4.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov06-mission-r5.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov06-assault-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov06-assault-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov06lmd-failure-hard45-r1.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/sov06-original-r1.json.gz"
+      },
+      "fullVictory": {
+        "difficulty": "easy",
+        "semanticsVersion": 39,
+        "sourceTrigger": "068847BC",
+        "sourceActionTick": 57047,
+        "resultTick": 57048,
+        "report": "../project-history/yr-campaign-implementation-20261104/Evidence/sov06-assault-r2.json.gz",
+        "sourceUnchanged": true
+      },
+      "currentSourceQualification": "docs/campaign-art/yr-v1/soviet06-easy-source-flow-r1.json",
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "soviet",
+      "mission": "sov07tmd.map",
+      "sourceSha256": "eacf89952cb6e8eacd762f97895a062e0b6bfa16c8f916b901c1e667def266d4",
+      "theater": "TEMPERATE",
+      "media": [
+        {
+          "name": "s07_f00e",
+          "binding": "Basic.Brief",
+          "use": "before-mission"
+        },
+        {
+          "name": "s08_f00e",
+          "binding": "Basic.PostScore",
+          "use": "after-mission"
+        },
+        {
+          "name": "s07_p01e",
+          "binding": "Actions.0947BC0C:0",
+          "use": "transmission",
+          "movieIndex": 55
+        },
+        {
+          "name": "s07_p02e",
+          "binding": "Actions.095CB76C:1",
+          "use": "transmission",
+          "movieIndex": 56
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 126,
+        "tags": 108,
+        "cellTags": 15,
+        "teams": 129,
+        "taskForces": 96,
+        "scripts": 83,
+        "aiTriggers": 74,
+        "diagnosticReferences": 24,
+        "initialUnsupportedReferences": [
+          "Action opcode 125 has no verified executor",
+          "Action opcode 106 has no verified executor",
+          "Action opcode 131 has no verified executor",
+          "Script opcode 59 has no verified executor",
+          "Script opcode 60 has no verified executor",
+          "Script opcode 61 has no verified executor",
+          "Script opcode 62 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-stage-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-mission-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-economy-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-mission-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-beacons-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-beacons-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-castle-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-castle-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-topology-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-nuclear-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/sov07tmd-failure-hard45-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Native/Soviet07EasySource45-r1/receipt.json",
+        "../project-history/yr-campaign-implementation-20261104/Native/TargetlessOrderSave-r1/receipt.json"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-original-r1.json.gz"
+      },
+      "fullVictory": {
+        "difficulty": "easy",
+        "semanticsVersion": 39,
+        "sourceTrigger": "0B0A4B9C",
+        "sourceActionTick": 143770,
+        "resultTick": 143771,
+        "report": "../project-history/yr-campaign-implementation-20261104/Evidence/sov07-nuclear-r1.json.gz",
+        "sourceUnchanged": true
+      },
+      "currentSourceQualification": "docs/campaign-art/yr-v1/soviet07-easy-source-flow-r1.json",
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "allied",
+      "mission": "all01umd.map",
+      "sourceSha256": "dee38769f2247a85908705486c175ef14a4cf90437899defe7c8b4c0d1c51fb0",
+      "theater": "NEWURBAN",
+      "next": "all02umd.map",
+      "media": [
+        {
+          "name": "a01_f00e",
+          "binding": "Basic.Intro",
+          "use": "before-mission"
+        },
+        {
+          "name": "a01_f04e",
+          "binding": "Actions.089B82BC:1",
+          "use": "fullscreen",
+          "movieIndex": 5
+        },
+        {
+          "name": "a01_p02e",
+          "binding": "Actions.0A8E573C:0",
+          "use": "transmission-paused",
+          "movieIndex": 3
+        },
+        {
+          "name": "a01_p03e",
+          "binding": "Actions.05E9106C:0",
+          "use": "transmission",
+          "movieIndex": 4
+        },
+        {
+          "name": "a01_p01e",
+          "binding": "Actions.0B0246CC:1",
+          "use": "transmission",
+          "movieIndex": 2
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 334,
+        "tags": 132,
+        "cellTags": 278,
+        "teams": 102,
+        "taskForces": 91,
+        "scripts": 94,
+        "aiTriggers": 0,
+        "diagnosticReferences": 87,
+        "initialUnsupportedReferences": [
+          "Event opcode 61 has no verified executor",
+          "Event opcode 58 has no verified executor",
+          "Action opcode 131 has no verified executor",
+          "Action opcode 0 has no verified executor",
+          "Action opcode 68 has no verified executor",
+          "Action opcode 127 has no verified executor",
+          "Action opcode 139 has no verified executor",
+          "Action opcode 125 has no verified executor",
+          "Action opcode 118 has no verified executor",
+          "Action opcode 130 has no verified executor",
+          "Action opcode 121 has no verified executor",
+          "Action opcode 122 has no verified executor",
+          "Action opcode 120 has no verified executor",
+          "Action opcode 119 has no verified executor",
+          "Event opcode 59 has no verified executor",
+          "Action opcode 137 has no verified executor",
+          "Action opcode 129 has no verified executor",
+          "Script opcode 59 has no verified executor",
+          "Script opcode 64 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all01-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all01-time-machine-hd-2x-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all01-mission-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all01-diagnostic-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all01-diagnostic-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all01-timewarp40-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all01-timewarp40-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all01-island40-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all01-critical-lab-failure-hard45-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Native/Allied01EasySource45-r1/receipt.json"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/all01-original-r1.json.gz"
+      },
+      "goalEvidence": {
+        "semanticsVersion": 40,
+        "difficulty": "easy",
+        "cityPowerOnline": 6030,
+        "tanyaArrivalRestart": {
+          "savedTick": 26550,
+          "continuedTick": 26730,
+          "exact": true
+        },
+        "nuclearPlantObservedGone": 28260,
+        "partialDominatorObservedGone": 28530,
+        "victoryAction": {
+          "key": "089EC79C",
+          "tick": 28667
+        },
+        "victoryResult": 28668,
+        "sourceUnchanged": true,
+        "assistance": "Original source constructors, recorded ordinary input replay for the initial city stage, legal checkpoint continuation, normal paid engineers, movement and visible-target attacks. No source, rules, actors, health, triggers, RNG or results are edited. Historical replay remains separate from fresh public launch qualification.",
+        "remaining": "Complete difficulty-specific branches, failure conditions, media presentation, HD coverage and public lifecycle."
+      },
+      "remainingSemantics": "The complete Easy goal chain passes YR40. Difficulty, failure, media, HD and public lifecycle review continues.",
+      "hdEvidence": {
+        "scenery": {
+          "sourceQualifiedFamilies": [
+            "yr-scenery-newurban-tree26-v1",
+            "yr-scenery-newurban-tree25-v1",
+            "yr-scenery-newurban-tree27-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/scenery-qualification-r1.json",
+          "nativeMapDensitySessions": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/scenery-all01-native-2x-r4.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/scenery-all01-native-4x-r2.json.gz"
+          ],
+          "scope": "Source-qualified family evidence. Complete mission artwork, original actions and public flow are qualified separately by the current final records; user visual acceptance is pending."
+        },
+        "coastalBuildings": {
+          "sourceQualifiedFamilies": [
+            "yr-task-newurban-casanf08-v1",
+            "yr-task-newurban-casanf06-v1",
+            "yr-task-newurban-casanf16-v1",
+            "yr-task-newurban-casanf07-v1",
+            "yr-task-newurban-casanf05-v1",
+            "yr-task-newurban-casanf17-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/coastal-buildings-qualification-r1.json",
+          "nativeEvidence": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf08-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf08-native-4x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf06-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf06-native-4x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf16-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf16-native-4x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf07-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf07-native-4x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf05-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf05-native-4x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf17-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-casanf17-native-4x-r1.json.gz"
+          ],
+          "scope": "Source-qualified family evidence. Complete mission artwork, original actions and public flow are qualified separately by the current final records; user visual acceptance is pending."
+        }
+      },
+      "currentSourceQualification": "docs/campaign-art/yr-v1/allied01-easy-source-flow-r1.json",
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "allied",
+      "mission": "all02umd.map",
+      "sourceSha256": "168ed42024991b6c2af4de0e5a667e9c2bf15767741efe99dac975721460b303",
+      "theater": "NEWURBAN",
+      "next": "all03umd.map",
+      "media": [
+        {
+          "name": "a02_f00e",
+          "binding": "Basic.Intro",
+          "use": "before-mission"
+        },
+        {
+          "name": "a02_p03e",
+          "binding": "Actions.05D9EE6C:0",
+          "use": "transmission",
+          "movieIndex": 9
+        },
+        {
+          "name": "a02_p01e",
+          "binding": "Actions.0930F29C:0",
+          "use": "transmission",
+          "movieIndex": 7
+        },
+        {
+          "name": "a02_p02e",
+          "binding": "Actions.0932705C:0",
+          "use": "transmission",
+          "movieIndex": 8
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 253,
+        "tags": 203,
+        "cellTags": 98,
+        "teams": 199,
+        "taskForces": 107,
+        "scripts": 121,
+        "aiTriggers": 36,
+        "diagnosticReferences": 38,
+        "initialUnsupportedReferences": [
+          "Action opcode 81 has no verified executor",
+          "Action opcode 131 has no verified executor",
+          "Event opcode 59 has no verified executor",
+          "Event opcode 60 has no verified executor",
+          "Script opcode 60 has no verified executor",
+          "Script opcode 61 has no verified executor",
+          "Script opcode 62 has no verified executor",
+          "Script opcode 64 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all02-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all02-stage40-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all02-base40-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all02-assault40-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all02-assault41-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all02-progress41-restart-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all02-income41-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all02-prisms42-r1.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/all02-original-r1.json.gz"
+      },
+      "remainingSemantics": "All four grinders and both required original enemy houses complete under current YR42. The source all-force-loss defeat and all three hero discovery branches have separate native evidence. Consolidated difficulty, complete media presentation, HD and public lifecycle verification remain pending.",
+      "taskBuildingArt": "PASS_SOURCE_QUALIFIED_TASK_BUILDINGS_NATIVE_2X4X_AND_COMPLETE_MISSION_HD; USER_VISUAL_ACCEPTANCE_PENDING",
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json",
+      "currentSourceQualification": "docs/campaign-art/yr-v1/allied02-easy-source-flow-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "allied",
+      "mission": "all03umd.map",
+      "sourceSha256": "b84a2e689cc00f0be064ecbfcd385635ac037f28bf8f72c02b426a0e52ff1547",
+      "theater": "NEWURBAN",
+      "next": "all04dmd.map",
+      "media": [
+        {
+          "name": "a03_f00e",
+          "binding": "Basic.Intro",
+          "use": "before-mission"
+        },
+        {
+          "name": "a03_p01e",
+          "binding": "Actions.091603CC:1",
+          "use": "transmission",
+          "movieIndex": 11
+        },
+        {
+          "name": "a03_p04e",
+          "binding": "Actions.0C7B443C:0",
+          "use": "transmission",
+          "movieIndex": 14
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 376,
+        "tags": 153,
+        "cellTags": 0,
+        "teams": 204,
+        "taskForces": 179,
+        "scripts": 173,
+        "aiTriggers": 10,
+        "diagnosticReferences": 48,
+        "initialUnsupportedReferences": [
+          "Trigger requires events and actions",
+          "Missing team: 0",
+          "Action opcode 129 has no verified executor",
+          "Event opcode 60 has no verified executor",
+          "Event opcode 58 has no verified executor",
+          "Action opcode 135 has no verified executor",
+          "Action opcode 132 has no verified executor",
+          "Action opcode 137 has no verified executor",
+          "Action opcode 0 has no verified executor",
+          "Action opcode 131 has no verified executor",
+          "Event opcode 61 has no verified executor",
+          "Action opcode 119 has no verified executor",
+          "Action opcode 136 has no verified executor",
+          "Script opcode 64 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all03-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all03-power41-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all03-power42-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all03umd-failure-hard45-r1.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/all03-original-r1.json.gz"
+      },
+      "remainingSemantics": "Complete difficulty, applicable failure branches, HD and public lifecycle verification remain pending. Original target and all source conditions remain unchanged.",
+      "hdEvidence": {
+        "scenery": {
+          "sourceQualifiedFamilies": [
+            "yr-scenery-newurban-sign06-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/scenery-qualification-r1.json",
+          "nativeMapDensitySessions": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/scenery-all03-native-2x-r2.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/scenery-all03-native-4x-r2.json.gz"
+          ],
+          "scope": "Source-qualified family evidence. Complete mission artwork, original actions and public flow are qualified separately by the current final records; user visual acceptance is pending."
+        },
+        "coastalBuildings": {
+          "sourceQualifiedFamilies": [
+            "yr-task-newurban-caseat01-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/coastal-buildings-qualification-r1.json",
+          "nativeEvidence": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-caseat01-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/coastal-caseat01-native-4x-r1.json.gz"
+          ],
+          "scope": "Source-qualified family evidence. Complete mission artwork, original actions and public flow are qualified separately by the current final records; user visual acceptance is pending."
+        },
+        "seattleCampus": {
+          "family": "yr-task-newurban-caseat02-v1",
+          "qualification": "docs/campaign-art/yr-v1/seattle-campus-qualification-r1.json",
+          "nativeEvidence": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/caseat02-complete-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/caseat02-complete-native-4x-r1.json.gz"
+          ]
+        }
+      },
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json",
+      "currentSourceQualification": "docs/campaign-art/yr-v1/allied03-easy-source-flow-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "allied",
+      "mission": "all04dmd.map",
+      "sourceSha256": "f1621a21e7221c1e475a52dccd4a04bb3125f8a095377c917e2122019f2157b2",
+      "theater": "DESERT",
+      "next": "all05umd.map",
+      "media": [
+        {
+          "name": "a04_f00e",
+          "binding": "Basic.Brief",
+          "use": "before-mission"
+        },
+        {
+          "name": "a04_p01e",
+          "binding": "Actions.088E9F3C:9",
+          "use": "transmission",
+          "movieIndex": 16
+        },
+        {
+          "name": "a04_f02e",
+          "binding": "Actions.0C17497C:0",
+          "use": "fullscreen",
+          "movieIndex": 17
+        },
+        {
+          "name": "a01_f04e",
+          "binding": "Actions.067F21DC:0",
+          "use": "fullscreen",
+          "movieIndex": 5
+        },
+        {
+          "name": "a04_p03e",
+          "binding": "Actions.07C383CC:0",
+          "use": "transmission",
+          "movieIndex": 18
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 142,
+        "tags": 139,
+        "cellTags": 338,
+        "teams": 82,
+        "taskForces": 78,
+        "scripts": 87,
+        "aiTriggers": 15,
+        "diagnosticReferences": 18,
+        "initialUnsupportedReferences": [
+          "Action opcode 132 has no verified executor",
+          "Action opcode 68 has no verified executor",
+          "Action opcode 131 has no verified executor",
+          "Event opcode 61 has no verified executor",
+          "Event opcode 59 has no verified executor",
+          "Script opcode 62 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all04-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all04-prisms42-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all04-victory43-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all04-fortified43-r2.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all04-final43-r4.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all04-victory43-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all04dmd-failure-hard45-r1.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/all04-original-r1.json.gz"
+      },
+      "remainingSemantics": "Original victory action 0682668C executes at 157558 and the result follows at 157559 with an intact construction base and nineteen surviving prism tanks. A separate legitimate native branch activates the original player Dominator. Consolidated difficulty, failure, HD and public lifecycle verification remain pending.",
+      "taskBuildingArt": "PASS_SOURCE_QUALIFIED_TASK_BUILDINGS_NATIVE_2X4X_AND_COMPLETE_MISSION_HD; USER_VISUAL_ACCEPTANCE_PENDING",
+      "hdEvidence": {
+        "scenery": {
+          "sourceQualifiedFamilies": [
+            "yr-scenery-desert-tree18-v1",
+            "yr-scenery-desert-tree17-v1",
+            "yr-scenery-desert-tree16-v1",
+            "yr-scenery-desert-tree03-v1",
+            "yr-scenery-desert-tree13-v1",
+            "yr-scenery-desert-tree12-v1",
+            "yr-scenery-desert-tree15-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/scenery-qualification-r1.json",
+          "nativeMapDensitySessions": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/scenery-all04-native-2x-r2.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/scenery-all04-native-4x-r2.json.gz"
+          ],
+          "scope": "Source-qualified family evidence. Complete mission artwork, original actions and public flow are qualified separately by the current final records; user visual acceptance is pending."
+        }
+      },
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json",
+      "currentSourceQualification": "docs/campaign-art/yr-v1/allied04-easy-source-flow-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "allied",
+      "mission": "all05umd.map",
+      "sourceSha256": "7ee8148ad4b0092b7970588d9b064ddd6b753fc7bfb352bcc043affeb72c6aed",
+      "theater": "URBAN",
+      "next": "all06umd.map",
+      "media": [
+        {
+          "name": "a05_f00e",
+          "binding": "Basic.Brief",
+          "use": "before-mission"
+        },
+        {
+          "name": "a05_p01e",
+          "binding": "Actions.0E6BC74C:3",
+          "use": "transmission",
+          "movieIndex": 20
+        },
+        {
+          "name": "a05_p03e",
+          "binding": "Actions.0E6BF7AC:0",
+          "use": "transmission",
+          "movieIndex": 22
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 108,
+        "tags": 108,
+        "cellTags": 0,
+        "teams": 125,
+        "taskForces": 47,
+        "scripts": 94,
+        "aiTriggers": 25,
+        "diagnosticReferences": 82,
+        "initialUnsupportedReferences": [
+          "Action opcode 106 has no verified executor",
+          "Event opcode 60 has no verified executor",
+          "Event opcode 61 has no verified executor",
+          "Script opcode 59 has no verified executor",
+          "Script opcode 64 has no verified executor",
+          "Script opcode 61 has no verified executor",
+          "Script opcode 62 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all05-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all05-mission43-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all05-carriers43-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all05-combined43-r4.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all05-final-force43-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all05umd-failure-hard45-r1.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/all05-original-r1.json.gz"
+      },
+      "remainingSemantics": "The original win requires all significant forces of both specified houses, including their remaining Engineer. Destroying their buildings alone is insufficient. Consolidated difficulty, failure, HD and public lifecycle verification remain pending.",
+      "hdEvidence": {
+        "cityBuildings": {
+          "families": [
+            "yr-task-urban-casydn03-v1",
+            "yr-task-urban-calond03-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/city-buildings-qualification-r1.json",
+          "nativeEvidence": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-urban-casydn03-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-urban-casydn03-native-4x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-urban-calond03-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-urban-calond03-native-4x-r1.json.gz"
+          ]
+        }
+      },
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json",
+      "currentSourceQualification": "docs/campaign-art/yr-v1/allied05-easy-source-flow-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "allied",
+      "mission": "all06umd.map",
+      "sourceSha256": "cfd2b50c5448fd84ab3647ff3a95f96b45e8dccd6a72b2601c0bb603cddeeb63",
+      "theater": "NEWURBAN",
+      "next": "all07smd.map",
+      "media": [
+        {
+          "name": "a06_f00e",
+          "binding": "Basic.Brief",
+          "use": "before-mission"
+        },
+        {
+          "name": "a06_p01e",
+          "binding": "Actions.09AD534C:0",
+          "use": "transmission",
+          "movieIndex": 24
+        },
+        {
+          "name": "a06_p04e",
+          "binding": "Actions.0CD2F42C:0",
+          "use": "transmission",
+          "movieIndex": 26
+        },
+        {
+          "name": "a06_p03e",
+          "binding": "Actions.09B412EC:0",
+          "use": "transmission",
+          "movieIndex": 25
+        },
+        {
+          "name": "a06_p03e",
+          "binding": "Actions.091F220C:0",
+          "use": "transmission",
+          "movieIndex": 25
+        },
+        {
+          "name": "a06_p03e",
+          "binding": "Actions.091F3B9C:0",
+          "use": "transmission",
+          "movieIndex": 25
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 75,
+        "tags": 63,
+        "cellTags": 0,
+        "teams": 68,
+        "taskForces": 29,
+        "scripts": 43,
+        "aiTriggers": 12,
+        "diagnosticReferences": 5,
+        "initialUnsupportedReferences": [
+          "Action opcode 131 has no verified executor",
+          "Event opcode 43 has no verified executor",
+          "Event opcode 61 has no verified executor",
+          "Script opcode 62 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all06-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all06-mission43-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all06-mission43-r3.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all06-final-force45-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all06-final-force45-r2.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/all06-original-r1.json.gz"
+      },
+      "victory": {
+        "status": "PASS_ORIGINAL_SOURCE_GOAL_AND_VICTORY",
+        "difficulty": "easy",
+        "semanticsVersion": 45,
+        "sourceAction": {
+          "key": "0BD7E82C",
+          "index": 0,
+          "tick": 133201
+        },
+        "resultTick": 133202,
+        "pageErrors": 0,
+        "failedResources": 0
+      },
+      "hdEvidence": {
+        "scenery": {
+          "sourceQualifiedFamilies": [
+            "yr-scenery-newurban-sign06-v1",
+            "yr-scenery-newurban-lt_eur01-v1",
+            "yr-scenery-newurban-lt_eur02-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/scenery-qualification-r1.json",
+          "nativeMapDensitySessions": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/scenery-all06-native-2x-r2.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/scenery-all06-native-4x-r2.json.gz"
+          ],
+          "scope": "Source-qualified family evidence. Complete mission artwork, original actions and public flow are qualified separately by the current final records; user visual acceptance is pending."
+        },
+        "cityBuildings": {
+          "families": [
+            "yr-task-newurban-calond01-v1",
+            "yr-task-newurban-calond03-v1",
+            "yr-task-newurban-calond04-v1",
+            "yr-task-newurban-calond05-v1"
+          ],
+          "qualification": "docs/campaign-art/yr-v1/city-buildings-qualification-r1.json",
+          "nativeEvidence": [
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond01-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond01-native-4x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond03-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond03-native-4x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond04-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond04-native-4x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond05-native-2x-r1.json.gz",
+            "../project-history/yr-campaign-implementation-20261104/Evidence/city-newurban-calond05-native-4x-r1.json.gz"
+          ]
+        }
+      },
+      "currentSourceQualification": "docs/campaign-art/yr-v1/allied06-easy-source-flow-r1.json",
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    {
+      "edition": "yr",
+      "faction": "allied",
+      "mission": "all07smd.map",
+      "sourceSha256": "0ec687c320382e4c02cf66eec0153b713e56c4449fab7d29b5a19b61bf10e4f3",
+      "theater": "SNOW",
+      "media": [
+        {
+          "name": "a07_f00e",
+          "binding": "Basic.Intro",
+          "use": "before-mission"
+        },
+        {
+          "name": "a08_f00e",
+          "binding": "Basic.PostScore",
+          "use": "after-mission"
+        },
+        {
+          "name": "a07_p01e",
+          "binding": "Actions.0DE26E5C:5",
+          "use": "transmission",
+          "movieIndex": 28
+        }
+      ],
+      "status": "IMPLEMENTED_USER_ACCEPTED_ORIGINAL_SOURCE_QUALIFICATIONS_RETAINED",
+      "playable": true,
+      "requirements": {
+        "triggers": 88,
+        "tags": 81,
+        "cellTags": 0,
+        "teams": 118,
+        "taskForces": 108,
+        "scripts": 72,
+        "aiTriggers": 84,
+        "diagnosticReferences": 19,
+        "initialUnsupportedReferences": [
+          "Event opcode 61 has no verified executor",
+          "Action opcode 137 has no verified executor",
+          "Action opcode 125 has no verified executor",
+          "Action opcode 132 has no verified executor",
+          "Event opcode 60 has no verified executor",
+          "Script opcode 62 has no verified executor",
+          "Script opcode 59 has no verified executor"
+        ],
+        "currentCoverage": "Initial unsupported references are retained historically; current expanded-library scan has zero blocking diagnostics. Actual mission semantics require native stage evidence."
+      },
+      "hd": "COMPLETE_SOURCE_BOUND_NEW_FAMILIES_AND_QUALIFIED_ACCEPTED_REUSE_INDEPENDENT_2X4X; USER_ACCEPTED",
+      "difficulty": "EASY_NORMAL_HARD_SOURCE_HANDICAPS_FILTERS_AND_PARAMETERS_QUALIFIED; REPRESENTATIVE_LATER_BRANCHES_AND_HARD_PUBLIC_RETRY_NEXT_PASS; FULL_VICTORY_DIFFICULTIES_LISTED_SEPARATELY",
+      "objectives": "PASS_CURRENT45_ORIGINAL_GOAL_CHAIN; VERIFIED_WINNING_DIFFICULTIES_IN_CURRENT_SOURCE_QUALIFICATION",
+      "failure": "PASS_APPLICABLE_ORIGINAL_SOURCE_FAILURE; ALL_FAILURE_BRANCHES_NOT_CLAIMED",
+      "actualMedia": "PASS_SOURCE_EVENT_MEDIA_AND_SHARED_THREE_LANGUAGE_LIFECYCLE_QUALIFICATION",
+      "saveRestart": "PASS_MEANINGFUL_NAMED_SAVE_PROCESS_RESTART_AND_EXACT_CONTINUATION",
+      "runtime": "PASS_CURRENT45_ORIGINAL_GOALS_SCORE_AND_PUBLIC_FRESH_ENTRY",
+      "visualReview": "USER_ACCEPTED_COMPLETE_DELIVERY",
+      "userAcceptance": "ACCEPTED_20261109",
+      "evidence": [
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all07-original-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all07-navy45-r4.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all07-economy45-r5.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all07-assault45-r11.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all07-final45-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all07-prisms45-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all07-silo45-r1.json.gz",
+        "../project-history/yr-campaign-implementation-20261104/Evidence/all07-failure45-r3.json.gz"
+      ],
+      "preflight": {
+        "status": "SOURCE_SCAN_PASS_NOT_PLAYABILITY_ACCEPTANCE",
+        "semanticsVersion": 28,
+        "blockingDiagnostics": 0
+      },
+      "opening": {
+        "status": "PASS_NATIVE_ORIGINAL_SOURCE_OPENING_NOT_COMPLETE_MISSION_ACCEPTANCE",
+        "tick": 900,
+        "semanticsVersion": 29,
+        "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/all07-original-r1.json.gz"
+      },
+      "taskBuildingArt": "PASS_SOURCE_QUALIFIED_TASK_BUILDINGS_NATIVE_2X4X_AND_COMPLETE_MISSION_HD; USER_VISUAL_ACCEPTANCE_PENDING",
+      "currentSourceQualification": "docs/campaign-art/yr-v1/allied07-easy-source-flow-r1.json",
+      "publicFlowQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    }
+  ],
+  "preparation": {
+    "status": "PASS_14_VERIFIED_SOURCE_MAPS_AND_ORIGINAL_MEDIA_BINDINGS",
+    "receipt": "../project-history/yr-campaign-implementation-20261104/preparation.json",
+    "media": "Existing edition-qualified YR movie-library conversions, retained by hard link"
+  },
+  "commonChecks": {
+    "focusedCases": 134,
+    "failedCases": 0,
+    "typecheck": "PASS_SHARED_CHECKPOINT",
+    "native": "ALL14_ORIGINAL_OPENINGS; SOVIET01_NORMAL_FULL_VICTORY; SOVIET02_NORMAL_FULL_VICTORY; SOVIET03_EASY_FULL_VICTORY_AND_RESTART; LUNAR_TERRAIN_2X4X; SOVIET04_EASY_FULL_VICTORY_AND_RESTART; YR38_REPEATED_CAPTURE_RESTART; SOVIET05_EASY_FULL_VICTORY_AND_RESTART; SOVIET06_EASY_FULL_VICTORY_AND_RESTART; ALL7_SOVIET_ORIGINAL_GOAL_CHAINS_AND_VICTORIES; ALLIED01_YR40_EASY_FULL_ORIGINAL_VICTORY_AND_RESTART",
+    "initialNativeFinding": "The skirmish minimum-start-location check rejected original YR Soviet01, which has no multiplayer starts. The campaign loader now retains all source waypoints and omits only that multiplayer requirement.",
+    "executions": 26,
+    "receipt": "../project-history/yr-campaign-implementation-20261104/SharedChecks/summary.json",
+    "continuation": {
+      "typecheck": "PASS_ENTRY_TYPECHECK_R25",
+      "latestHostExecutions": [
+        {
+          "log": "camera30-tests-r1.log",
+          "passed": 18,
+          "failed": 0
+        },
+        {
+          "log": "camera-legacy-tests-r1.log",
+          "passed": 11,
+          "failed": 0
+        },
+        {
+          "log": "registration-legacy-tests-r2.log",
+          "passed": 16,
+          "failed": 0
+        },
+        {
+          "log": "ra2-yr-production-capacity-tests-r1.log",
+          "passed": 9,
+          "failed": 0
+        },
+        {
+          "log": "ra2-yr-pending-input-tests-r1.log",
+          "passed": 12,
+          "failed": 0
+        },
+        {
+          "log": "affected-ra2-renderer-r1.log",
+          "passed": 35,
+          "failed": 0
+        },
+        {
+          "log": "global-type34-r2.log",
+          "passed": 18,
+          "failed": 0,
+          "assertions": 265
+        },
+        {
+          "log": "policy35-lunar-r1.log",
+          "passed": 20,
+          "failed": 0,
+          "assertions": 719
+        },
+        {
+          "log": "policy35-ra2-training-r1.log",
+          "passed": 10,
+          "failed": 0,
+          "assertions": 154
+        },
+        {
+          "log": "capture36-r2.log",
+          "passed": 6,
+          "failed": 0,
+          "assertions": 180
+        },
+        {
+          "log": "capture36-ra2-r1.log",
+          "passed": 8,
+          "failed": 0,
+          "assertions": 58
+        },
+        {
+          "log": "capture37-r1.log",
+          "passed": 11,
+          "failed": 0,
+          "assertions": 243
+        },
+        {
+          "log": "capture37-ra2-r1.log",
+          "passed": 8,
+          "failed": 0,
+          "assertions": 58
+        },
+        {
+          "log": "environment-reuse-r3.log",
+          "passed": 3,
+          "failed": 0,
+          "assertions": 997
+        },
+        {
+          "log": "capture38-r1.log",
+          "passed": 9,
+          "failed": 0,
+          "assertions": 211
+        },
+        {
+          "log": "capture38-ra2-r1.log",
+          "passed": 8,
+          "failed": 0,
+          "assertions": 58
+        },
+        {
+          "log": "lunar39-r1.log",
+          "passed": 7,
+          "failed": 0,
+          "assertions": 180
+        },
+        {
+          "log": "lunar39-ra2-r1.log",
+          "passed": 6,
+          "failed": 0,
+          "assertions": 48
+        }
+      ],
+      "qualification": "Execution counts overlap earlier cases; they are not presented as additional unique tests. A previous legacy registration run hit its five-second host timeout; its isolated thirty-second rerun passed.",
+      "nativePendingInput": "PASS_NATIVE_YR31_PENDING_PRODUCTION_NAMED_SAVE_EXACT_TICK_FULL_PROCESS_RESTART_AND_180_TICKS",
+      "repairReceipt": "../project-history/yr-campaign-implementation-20261104/Debug/production-and-pending-input-repair.json",
+      "nativePayload": "r28_YR39_219_FILES; NATIVE_LUNAR_PAID_PRODUCTION_AND_EXACT_RESTART_PASS",
+      "repairReceipts": [
+        "../project-history/yr-campaign-implementation-20261104/Debug/yr34-global-type-counts.json",
+        "../project-history/yr-campaign-implementation-20261104/Debug/yr35-blocked-regroup-repair.json",
+        "../project-history/yr-campaign-implementation-20261104/Debug/yr36-unit-ownership-notification.json",
+        "../project-history/yr-campaign-implementation-20261104/Debug/lunar-building-family-binding.json",
+        "../project-history/yr-campaign-implementation-20261104/Debug/yr38-capture-tag-renewal.json",
+        "../project-history/yr-campaign-implementation-20261104/Debug/yr39-lunar-prerequisite.json"
+      ]
+    },
+    "yr40Transition": {
+      "affected": "10 pass /201 assertions",
+      "legacyRa2": "35 pass /309 assertions",
+      "entryTypecheck": "PASS_R26",
+      "native": "PASS_YR40_REPLACEMENT_DOMINATOR_SOURCE_PRODUCTION_CIVILIAN_EDGE_PATH_AND_FULL_ALLIED01_GOAL_CHAIN",
+      "research": "../project-history/yr-campaign-implementation-20261104/Debug/yr40-allied01-transition.json"
+    },
+    "yr41StopSound": {
+      "affected": "19 pass /251 assertions",
+      "entryTypecheck": "PASS_R28",
+      "native": "PASS_ORIGINAL_FOUR_GRINDERS_SOURCE_SOUND_CLEANUP_CIVILIAN_RELEASE_AND_MEANINGFUL_EXACT_RESTART; FULL_VICTORY_PENDING",
+      "research": "../project-history/yr-campaign-implementation-20261104/Debug/yr41-stop-sound-waypoint.json",
+      "legacyRa2": "23 pass /211 assertions"
+    },
+    "allOriginalGoals": {
+      "status": "PASS_NATIVE_ALL14_ORIGINAL_SOURCE_OBJECTIVE_CHAINS_AND_VICTORIES",
+      "missions": 14,
+      "lastMission": "all07smd.map",
+      "lastResultTick": 325259,
+      "qualification": "Source-guided ordinary serialized assistance and versioned legitimate continuation. Public fresh selection, all required failure/difficulty branches, complete media presentation and HD acceptance remain separate."
+    },
+    "yrArtworkContinuation": {
+      "heroes": "PASS_NATIVE_2X_4X_ALL_632_ORIGINAL_BODY_AND_NATIVE_SHADOW_SLOTS; COMPLETE_FALLBACK_AND_RELEASE; USER_VISUAL_ACCEPTANCE_PENDING",
+      "castleCollapse": "PASS_NATIVE_2X_4X_ALL_87_BODY_AND_NATIVE_SHADOW_STATES; ORIGINAL_RATE_AND_RENDERER_CLOCK_CLEANUP; COMPLETE_FAMILY_FIXED_BUDGET_FALLBACK_AND_RELEASE; USER_VISUAL_ACCEPTANCE_PENDING",
+      "userVisualAcceptance": "PENDING",
+      "windows": "NOT_RUN_ON_THIS_MAC"
+    },
+    "difficultyMatrix": {
+      "status": "PASS_ALL42_FRESH_DIFFICULTY_INITIALIZATIONS_AND_SEVEN_ADDITIONAL_ORIGINAL_FAILURES",
+      "passed": 42,
+      "failed": 0,
+      "sourceRequirements": "../project-history/yr-campaign-implementation-20261104/Requirements45/index.json",
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Debug/difficulty-and-failure-checkpoint.json",
+      "laterStageAndLifecycle": "PENDING"
+    },
+    "originalFailures": {
+      "status": "ALL14_HAVE_AN_APPLICABLE_ORIGINAL_SOURCE_FAILURE_OBSERVATION",
+      "newCases": [
+        {
+          "mission": "all01umd.map",
+          "condition": "ORIGINAL_TIME_MACHINE_DESTRUCTION_AND_COUNTRY_LOSS",
+          "tick": 7489,
+          "actions": [
+            {
+              "tick": 7488,
+              "section": "Actions",
+              "key": "08A3E03C",
+              "index": 0,
+              "opcode": 68
+            }
+          ],
+          "difficulty": "hard",
+          "evidence": "Evidence/all01-critical-lab-failure-hard45-r1.json.gz",
+          "assistance": "Original critical-structure failure through ordinary source-guided movement and player force-fire on the visible structure foundation. The original source identity, health, rules, triggers, owners and result remain unchanged."
+        },
+        {
+          "mission": "all03umd.map",
+          "condition": "ORIGINAL_HUMAN_HOUSE_FORCE_ELIMINATION",
+          "tick": 3630,
+          "actions": [
+            {
+              "tick": 3629,
+              "section": "Actions",
+              "key": "0BE20ACC",
+              "index": 0,
+              "opcode": 2
+            }
+          ],
+          "difficulty": "hard",
+          "evidence": "Evidence/all03umd-failure-hard45-r1.json.gz",
+          "assistance": "Negative branch using normal building sales and deliberate ordinary movement into original hostile defenses. Source-guided navigation reads original positions; no source, actor, health, owner, trigger, RNG or result edits. The original Lose action must execute."
+        },
+        {
+          "mission": "all04dmd.map",
+          "condition": "ORIGINAL_HUMAN_HOUSE_FORCE_ELIMINATION_AND_ACTION68_COUNTRY_LOSS",
+          "tick": 6498,
+          "actions": [
+            {
+              "tick": 6497,
+              "section": "Actions",
+              "key": "09F7C5BC",
+              "index": 0,
+              "opcode": 68
+            }
+          ],
+          "difficulty": "hard",
+          "evidence": "Evidence/all04dmd-failure-hard45-r1.json.gz",
+          "assistance": "Negative branch using normal building sales and deliberate ordinary movement into original hostile defenses. Source-guided navigation reads original positions; no source, actor, health, owner, trigger, RNG or result edits. The original Lose action must execute."
+        },
+        {
+          "mission": "all05umd.map",
+          "condition": "ORIGINAL_HUMAN_HOUSE_BUILDING_ELIMINATION",
+          "tick": 1494,
+          "actions": [
+            {
+              "tick": 1493,
+              "section": "Actions",
+              "key": "068969FC",
+              "index": 0,
+              "opcode": 2
+            }
+          ],
+          "difficulty": "hard",
+          "evidence": "Evidence/all05umd-failure-hard45-r1.json.gz",
+          "assistance": "Negative branch using normal building sales and deliberate ordinary movement into original hostile defenses. Source-guided navigation reads original positions; no source, actor, health, owner, trigger, RNG or result edits. The original Lose action must execute."
+        },
+        {
+          "mission": "sov05umd.map",
+          "condition": "ORIGINAL_HUMAN_HOUSE_FORCE_ELIMINATION",
+          "tick": 8834,
+          "actions": [
+            {
+              "tick": 8833,
+              "section": "Actions",
+              "key": "09442BBC",
+              "index": 0,
+              "opcode": 2
+            }
+          ],
+          "difficulty": "hard",
+          "evidence": "Evidence/sov05umd-failure-hard45-r1.json.gz",
+          "assistance": "Negative branch using normal building sales and deliberate ordinary movement into original hostile defenses. Source-guided navigation reads original positions; no source, actor, health, owner, trigger, RNG or result edits. The original Lose action must execute."
+        },
+        {
+          "mission": "sov06lmd.map",
+          "condition": "ORIGINAL_LUNAR_HOUSE_FORCE_ELIMINATION",
+          "tick": 3145,
+          "actions": [
+            {
+              "tick": 3144,
+              "section": "Actions",
+              "key": "0B1E809C",
+              "index": 0,
+              "opcode": 2
+            }
+          ],
+          "difficulty": "hard",
+          "evidence": "Evidence/sov06lmd-failure-hard45-r1.json.gz",
+          "assistance": "Negative branch using normal building sales and deliberate ordinary movement into original hostile defenses. Source-guided navigation reads original positions; no source, actor, health, owner, trigger, RNG or result edits. The original Lose action must execute."
+        },
+        {
+          "mission": "sov07tmd.map",
+          "condition": "ORIGINAL_HUMAN_HOUSE_FORCE_ELIMINATION",
+          "tick": 3316,
+          "actions": [
+            {
+              "tick": 3315,
+              "section": "Actions",
+              "key": "05FD863C",
+              "index": 0,
+              "opcode": 2
+            }
+          ],
+          "difficulty": "hard",
+          "evidence": "Evidence/sov07tmd-failure-hard45-r1.json.gz",
+          "assistance": "Negative branch using normal building sales and deliberate ordinary movement into original hostile defenses. Source-guided navigation reads original positions; no source, actor, health, owner, trigger, RNG or result edits. The original Lose action must execute."
+        }
+      ],
+      "qualification": "Earlier actual original losses remain retained for Soviet01-04 and Allied02/06/07. Negative branches use ordinary commands; source conditions and results are never forced."
+    },
+    "seattlePowerPlant": {
+      "schema": "yr-seattle-power-plant-production-checkpoint-v1",
+      "status": "PASS_COMPLETE_SOURCE_FAMILY_2X_4X_BINDING_FALLBACK_RELEASE_AND_NATIVE_RENDERING",
+      "family": "yr-seattle-power-plant-v1",
+      "revision": "yr-seattle-power-r2",
+      "sourceBindings": "docs/campaign-art/yr-v1/seattle-power-plant-bindings.json",
+      "registration": "docs/campaign-art/yr-v1/seattle-power-plant-registration-r2.json",
+      "authoredBodyStates": 3,
+      "authoredActivePoses": 15,
+      "identicalSourceDuplicateFrames": 1,
+      "retainedUnusedOriginalMarkerFrames": 15,
+      "sourceIndependentShadows": 4,
+      "allNativeDensityFrames": 68,
+      "failedAttempts": [
+        "The first native-mask export retained visible coarse contour steps. Continuous authored alpha preserves the source trim/pivot and independent native shadows.",
+        "The first active member pack identifier retained an underscore. Existing fail-closed loading rejected the complete family. Revision r2 changes only metadata and reuses all eight immutable PNGs with zero page copies."
+      ],
+      "nativeEvidence": {
+        "status": "PASS_2X_4X_COMPLETE_AGGREGATED_NATIVE_STATES_OWNER_RESPONSE_AND_FROZEN_WORLD",
+        "statesPerDensity": 34,
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/seattle-power-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/seattle-power-native-4x-r1.json.gz"
+        ],
+        "contracts": {
+          "cases": 3,
+          "assertions": 147
+        },
+        "userVisualAcceptance": "PENDING"
+      },
+      "userVisualAcceptance": "PENDING",
+      "windows": "NOT_RUN_ON_THIS_MAC"
+    },
+    "castleActualCombat": {
+      "native2X": "PASS_REAL_ORIGINAL_CASTLE_DEATH_AND_VICTORY_AT_143772_WITH_NORMAL_SCENE_DISPOSAL",
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/castle-real-combat-2x-r1.json.gz",
+      "native4X": "DIRECT_HD_SAMPLING_GL_AND_SOURCE_VICTORY_OBSERVED; ENDING_OBSERVER_ERROR_RETAINED",
+      "qualification": "../project-history/yr-campaign-implementation-20261104/Debug/castle-real-combat-art-qualification.json",
+      "animationBoundary": "The original ending disposes the world while the collapse is active; all 87 animation states and clock removal pass separate frozen renderer checks.",
+      "userVisualAcceptance": "PENDING"
+    },
+    "einsteinLaboratory": {
+      "schema": "yr-einstein-laboratory-art-checkpoint-v1",
+      "status": "PASS_COMPLETE_LABORATORY_SOURCE_BINDING_WITH_EXACT_ACCEPTED_BODY_REUSE_AND_NEW_RUBBLE",
+      "registration": "docs/campaign-art/yr-v1/einstein-laboratory-registration.json",
+      "originalSourceSha256": "f118b56e1bb58437e31505b51a8a774a3468e8e0aa87d4de02c12f1d285efa73",
+      "acceptedBodyProof": ".local/source-art/yr-campaign-v1/einstein-laboratory/accepted-body-proof-r1.json",
+      "preservedBodyStates": [
+        0,
+        1,
+        2
+      ],
+      "newRubbleMaster": ".local/source-art/yr-campaign-v1/einstein-laboratory/masters-r2/lab-03.png",
+      "sourceGeometryAndSeparateShadows": "UNCHANGED",
+      "nativeValidation": {
+        "status": "PASS_2X_4X_ALL_FOUR_SOURCE_STATES_OWNER_COLORS_AND_NATIVE_SHADOWS",
+        "evidence": [
+          "../project-history/yr-campaign-implementation-20261104/Evidence/einstein-lab-native-2x-r1.json.gz",
+          "../project-history/yr-campaign-implementation-20261104/Evidence/einstein-lab-native-4x-r1.json.gz"
+        ],
+        "contracts": {
+          "passed": 3,
+          "assertions": 43
+        },
+        "preservedAcceptedDensityFrames": 6,
+        "newAuthoredStates": 1,
+        "userVisualAcceptance": "PENDING"
+      },
+      "sourceAuditLearning": "A whole-SHP hash includes the target rubble and native shadow payloads. Per-body-frame comparison exposes exact compatible accepted states while preserving the independently pinned target source, palette, geometry and native shadows.",
+      "failedObserverAttempts": "Independent verification originally assumed only binary owner-mask data for newly authored frames. Accepted states preserve their existing full material data exactly; verification now checks byte equality against the original accepted samples.",
+      "userVisualAcceptance": "PENDING",
+      "windows": "NOT_RUN_ON_THIS_MAC"
+    },
+    "goldenGate": {
+      "passed": 84,
+      "sourceExporterTests": 4,
+      "hollywoodStateUsageCases": 3,
+      "goldenGateStateUsageCases": 2,
+      "campaignArtCases": 16,
+      "totalCases": 109,
+      "status": "PASS_ALL_109_AFFECTED_CASES_AFTER_ISOLATED_EXISTING_TIMEOUT_RECHECK",
+      "log": "/private/tmp/ra2-yr-golden-gate-contracts-r1.log",
+      "recheckLog": "/private/tmp/ra2-yr-golden-gate-contracts-r2.log",
+      "qualification": "108 cases pass in the initial run. The existing missing-lamp test exceeds its five-second limit while resource audits run concurrently, then passes alone in 6.50 seconds with a thirty-second runner timeout. The failed log is retained.",
+      "entryTypecheck": "PASS_R57"
+    },
+    "scenery": {
+      "sceneryCases": 14,
+      "sceneryAssertions": 576,
+      "sourceExporterCases": 4,
+      "totalAffectedCases": 18,
+      "sceneryLog": "/private/tmp/ra2-yr-scenery-contracts-r2.log",
+      "sourceExporterLog": "/private/tmp/ra2-yr-scenery-contracts-r1.log",
+      "sourceExporterQualification": "The four source-exporter cases pass in the initial run; its two new lamp failures are superseded by the complete fourteen-case metadata-corrected run.",
+      "entryTypecheck": "PASS_R58",
+      "desktopPreparation": "PASS_R58_219_BUILT_FILES"
+    },
+    "missionMediaLifecycle": "docs/campaign-art/yr-v1/mission-media-lifecycle-qualification-r1.json",
+    "hostCurrent": {
+      "receipt": {
+        "file": ".artifacts/yr-campaign/host-final-r3/summary.json",
+        "sha256": "6614695747a3247a675d63491e4e8c040a30eee32cd8398255106a7bb0e5ef10"
+      },
+      "executions": 316,
+      "omissions": 0,
+      "pass": 2173,
+      "failedCases": 0,
+      "loadErrors": 0,
+      "skipped": 0,
+      "processErrors": 0
+    },
+    "typecheckCurrent": {
+      "status": "PASS_R102",
+      "log": "/private/tmp/ra2-yr-typecheck-r102.log"
+    }
+  },
+  "remainingCommonWork": [],
+  "subtitles": {
+    "status": "PASS_49_EDITION_BOUND_TRACKS_411_CUES_THREE_LANGUAGES",
+    "source": "subtitlemd.txt",
+    "englishPolicy": "Translation of the supplied Chinese track; not a verbatim audio transcription",
+    "tests": "scripts/yr-campaign/subtitles.test.ts",
+    "nativeEventPlayback": "PARTIAL_SOVIET01_FURTHER_MISSION_EVENTS_PENDING",
+    "libraryPlaybackEnglish": {
+      "qualification": "docs/yr-campaign-library-playback-en-r1.json",
+      "status": "PASS_NATIVE_50_YR_LIBRARY_CUTS_NATURAL_COMPLETE_CAPTIONS_AND_RELEASE",
+      "clips": 50,
+      "sourceBoundCuts": 49,
+      "originalIntroductions": 1,
+      "naturallyDecodedSeconds": 1721.368,
+      "subtitleCues": 470,
+      "observedSubtitleCues": 470,
+      "audioDecodedClips": 50,
+      "decodedVideoFrames": 25800,
+      "droppedVideoFrames": 0,
+      "seeks": 0,
+      "backwardsTime": 0,
+      "unreleasedObjectUrls": 0,
+      "nativeEventPlayback": "PENDING_SEPARATE_MISSION_EVENT_CHECKS"
+    },
+    "libraryPlaybackSimplifiedChinese": {
+      "qualification": "docs/yr-campaign-library-playback-zhcn-r1.json",
+      "status": "PASS_NATIVE_50_YR_LIBRARY_CUTS_NATURAL_COMPLETE_CAPTIONS_AND_RELEASE",
+      "clips": 50,
+      "sourceBoundCuts": 49,
+      "originalIntroductions": 1,
+      "naturallyDecodedSeconds": 1721.368,
+      "subtitleCues": 470,
+      "observedSubtitleCues": 470,
+      "audioDecodedClips": 50,
+      "decodedVideoFrames": 25800,
+      "droppedVideoFrames": 0,
+      "seeks": 0,
+      "backwardsTime": 0,
+      "unreleasedObjectUrls": 0,
+      "nativeEventPlayback": "PENDING_SEPARATE_MISSION_EVENT_CHECKS"
+    },
+    "libraryPlaybackTraditionalChinese": {
+      "status": "PASS_NATIVE_50_YR_LIBRARY_CUTS_NATURAL_COMPLETE_CAPTIONS_AND_RELEASE",
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/movie-library-complete-zhtw-r1.json.gz",
+      "reportSha256": "0df1c538782ed92eb8d3aeaf15eb4b469cb2274a0a9db8f4ee724b5bf0b143e7",
+      "language": "zh-TW",
+      "counts": {
+        "clips": 50,
+        "sourceBoundCuts": 49,
+        "originalIntroductions": 1,
+        "naturallyDecodedSeconds": 1721.368,
+        "subtitleCues": 470,
+        "observedSubtitleCues": 470,
+        "audioDecodedClips": 50,
+        "decodedVideoFrames": 25800,
+        "droppedVideoFrames": 0,
+        "seeks": 0,
+        "backwardsTime": 0,
+        "unreleasedObjectUrls": 0
+      }
+    },
+    "libraryPlaybackAllThreeLanguages": "PASS_50_NATURAL_CUTS_AND_470_CUES_PER_LANGUAGE"
+  },
+  "currentInterpreter": 48,
+  "interpreterPolicies": {
+    "28": "Initial YR action/event/team admission; accepted RA2 policy versions retained.",
+    "29": "YR physical scenario bounds include the complete original source map independently of the player view. Existing YR28 journals retain their previous bounds.",
+    "30": "YR Script34 camera uses the stored original TeamType waypoint cell independently of member count. Earlier journals retain single-member admission.",
+    "31": "YR saves retain serialized input pending at the capture boundary, without advancing the saved tick. Commands execute once through the normal input queue after resume. Earlier YR and RA2 journal policies remain unchanged.",
+    "32": "Player construction checks the complete footprint against the current YR view, while source and AI placement retain physical scenario bounds. Earlier journals retain their previous bounds.",
+    "33": "Original strategic target classification uses native factory categories, IsPlug, IsTemple, HoverPad, BuildTech, harvester, MCV and APC rules. Earlier YR and RA2 policies retain their stored classification.",
+    "34": "Original global type existence includes live Special and Neutral actors, including transported actors. Stored YR28-33 and RA2 policies retain their previous population.",
+    "35": "Strict ground reinforcement entry checks ignore occupancy only at a source regroup destination covered by a live building or vehicle. Actual placement, movement, terrain and collision remain enforced; earlier journals retain their behavior.",
+    "36": "Attached event48 observes actual unit ownership changes, including psychic capture and release, matching the installed FootClass/TechnoClass notification path. Stored earlier YR and RA2 event policies remain unchanged.",
+    "37": "Original scripted third-house changes retain the psychic capture node and its original owner until actual release. Earlier YR, RA2 and skirmish ownership policies retain their stored behavior.",
+    "38": "A new original single-actor volatile capture TeamType renews its consumed ownership-notification tag. Active overlapping actors fail closed. Earlier YR and accepted RA2 policies retain their stored behavior.",
+    "39": "Original prerequisite parsing omits names absent from the registered BuildingTypes list. Known categories, registered undefined slots and all factory/technology/cost/country constraints remain required. Earlier YR, RA2 and skirmish policies remain unchanged.",
+    "40": "Original YR source plans admit non-sidebar technology levels for explicit AI base nodes. Sellable zero-cost source buildings complete ordinary sale without a refund. Ground path diagonals require both adjacent physical cells, preventing infantry subcell paths from crossing absent map corners. Earlier saves, RA2 and skirmish retain their policies.",
+    "41": "Original YR Stop Audio records an explicit source quirk for an undefined waypoint slot and leaves live positional emitters unchanged. Play Audio, defined invalid cells, earlier YR saves and RA2 retain strict handling. Unqualified source metadata cannot admit dormant-record exceptions.",
+    "42": "Original YR ground reinforcement entry validation uses the same bounded nearby arrival radius as the existing script 3/16 movement. A source regroup marker covered by original trees can admit a reachable nearby endpoint; exact source spawn passability, movement collisions and actual markers remain intact. RA2 and earlier YR save versions retain their previous validation.",
+    "43": "Original YR Script 37 deletes a boarded team member through ownership and disposal without attempting a second world removal. Deleting members are detached from transport arrays first. Spawned members retain normal unspawn and disposal; no combat-death event is manufactured. RA2 and older YR save policies stay frozen.",
+    "44": "Original YR chrono reinforcement arrival reads WarpIn from the existing merged global-setting reader, including the source General section. The original WARPIN animation and ChronoReinfDelay=180 remain intact. RA2 and YR43 or earlier retain their existing lookup.",
+    "45": "Original YR force-loss events count VehicleClass and InfantryClass plus buildings where applicable; AircraftClass is excluded. Event56 uses non-naval VehicleClass and InfantryClass, retaining airborne vehicles and infantry and transported actors. Original source factory gates remain required. RA2 and YR44 or earlier retain their policies.",
+    "46": "New YR missions classify original combat houses by campaign side, complete preplaced source buildings immediately, admit scripted friendly infantry occupation, preserve the deployable form of a critical construction yard in absence checks, retain idle complete HD families within the existing budget and wait for a bounded narration batch before movies. Armed occupied civilian structures remain automatic hostile targets. Earlier journal policies retain their recorded behavior. Shared missing-cell movement/projectile guards and source sea-creature animation corrections also apply to restored games.",
+    "47": "Fresh YR Boris airstrikes return beyond their ingress edge before disposal. Completed story-highlight teams release members for the next original team, preventing duplicate Tanya. Continuing AI guard missions retain membership; earlier journals retain their policy.",
+    "48": "Original YR house fire sales evacuate garrison residents before building disposal. Residents use normal exits or normal blocked-exit destruction; the seller retains ownership and refund. Victory still counts legitimate transported and garrisoned residents. Earlier journals retain their exact sale policy."
+  },
+  "artAudit": {
+    "status": "PASS_ALL14_ORIGINAL_DEPENDENCY_CLOSURES_SELECTED_DELIVERY_USER_ACCEPTED",
+    "dependencyRows": 4159,
+    "issues": 0,
+    "evidence": "../project-history/yr-campaign-implementation-20261104/ArtAudit/inventory-r5.json.gz",
+    "familyLedger": "docs/campaign-art/yr-v1/registered-families.json",
+    "lunar": {
+      "nativeMembers": 196,
+      "authoringSheets": 24,
+      "sourceDirectory": ".local/source-art/yr-campaign-v1/lunar-terrain",
+      "status": "PASS_SOURCE_DENSITIES_AND_NATIVE_TERRAIN_BUILDING_STATES; SEAMS_OVERLAYS_AND_COMPLETE_MISSION_REVIEW_PENDING",
+      "terrainProduction": "196 members and 338 native subtiles across all nine original groups independently exported at 2X/4X. All 676 density pairs and both native densities pass source, metadata and budget checks. Actual material seam refinement and complete environment review remain pending.",
+      "environmentProduction": "Five complete atomic families contain 36 new SHP members and 38 authored states. All 134 density frames, 48 native empty slots and 10 shared frames pass independent source verification. Native 2X/4X command-center normal, damaged and actual flat rubble renderers, original shadows and owner colors pass. Lander 4X and flag 2X states pass. Rock/decal representative runtime and complete mission remain pending. SQD retains its accepted Original exception.",
+      "environmentContract": "desktop/environment-lunar-hd-contract.json",
+      "environmentRevision": "yr-lunar-environment-v2",
+      "environmentManifestSha256": "ccbbce63f655e8523408da4e120b54c02989cb771be91bff603327db23fa3571"
+    },
+    "completeReuse": {
+      "families": 38,
+      "ledger": "docs/campaign-art/yr-v1/reused-families.json",
+      "sourceStateColorChecks": "PASS_ALL_BODY_STATES_INCLUDING_DESTINATION_RUBBLE_PALETTES",
+      "hostBinding": "PASS_COMPLETE_2X4X_PSYCHIC_BEACON_BINDING_FALLBACK_AND_RELEASE",
+      "nativeBinding": "PENDING",
+      "copiedPngFiles": 0,
+      "replacedAcceptedPayloads": 0
+    },
+    "dependencyCoverage": "Includes source-declared building DestroyAnim dependencies and merged campaign family registrations. Body-only castle qualification does not certify its separate destruction animation.",
+    "retainedHistoricalStatus": "PASS_ALL14_ORIGINAL_DEPENDENCY_CLOSURES; DONOR_QUALIFICATION_AND_PRODUCTION_IN_PROGRESS"
+  },
+  "music": {
+    "status": "TEN_ORIGINAL_YR_CONVERSIONS_AND_TWELVE_ARCHIVED_THEME_BINDINGS_REGISTERED",
+    "contract": "desktop/music-yr-contract.json",
+    "source": "../project-history/yr-campaign-implementation-20261104/Music/import-r1.json",
+    "nativeEvidence": "../project-history/yr-campaign-implementation-20261104/Evidence/sov03-mission-r7.json.gz",
+    "qualification": "Original archived thememd.ini contains an undefined RA2Options entry. No substitute binding was invented. All actual scenario and source music-action references resolve."
+  },
+  "sourceRequirements": "../project-history/yr-campaign-implementation-20261104/Requirements/index.json",
+  "currentLocalCheckpoint": "All fourteen YR missions and the r6 feedback delivery are user accepted. Post-cleanup host 2201/320, typecheck, selected resource closure, preserved native app and deep strict signatures pass. Independent source/difficulty and unrun platform qualifications remain unchanged.",
+  "sourceRequirements45": {
+    "index": "../project-history/yr-campaign-implementation-20261104/Requirements45/index.json",
+    "semanticsVersion": 45,
+    "missions": 14,
+    "qualification": "Includes the source-pinned global aimd.ini library and original result action68; historical Requirements remain unchanged."
+  },
+  "decodedCompleteBodyReuse": {
+    "ledger": "docs/campaign-art/yr-v1/decoded-reused-families.json",
+    "families": 3,
+    "nativeDensities": [
+      2,
+      4
+    ],
+    "newPngFiles": 0,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "taskBuildingRubble": {
+    "ledger": "docs/campaign-art/yr-v1/building-rubble.json",
+    "families": 15,
+    "newRubbleStates": 15,
+    "preservedAcceptedDensityFrames": 154,
+    "nativeDensities": [
+      2,
+      4
+    ],
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "desertTerrainReuse": {
+    "ledger": "docs/campaign-art/yr-v1/terrain-reused-families.json",
+    "members": 5,
+    "subtiles": 25,
+    "groups": 3,
+    "nativeDensities": [
+      2,
+      4
+    ],
+    "newArtwork": 0
+  },
+  "remainingArtInventory": {
+    "schema": "yr-art-inventory-checkpoint-v1",
+    "inventory": ".artifacts/yr-campaign/art-inventory-r66/inventory.json",
+    "inventorySha256": "effa98d75a5bfb70852c153c2257d287a1aa9028df7f68acce3ac5cdc7fc21a9",
+    "rows": 4159,
+    "missingAuthoredRows": 0,
+    "missingByKind": {},
+    "parserAndResolutionExceptions": 0,
+    "qualification": "All source-bound world-art families and all14 HD loading pages are available. Source goal/action, diagnostic state, technical, user visual and platform evidence remain separately labeled.",
+    "missingByTheater": {},
+    "latestInventory": ".artifacts/yr-campaign/art-inventory-r67/inventory.json"
+  },
+  "taskBuildings": {
+    "ledger": "docs/campaign-art/yr-v1/task-buildings.json",
+    "families": 32,
+    "densityFrames": 518,
+    "originalShadowSlots": 219,
+    "preservedAcceptedBaseDensityFrames": 6,
+    "nativeDensities": [
+      2,
+      4
+    ],
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY",
+    "members": 45,
+    "pendingFamilies": [],
+    "attachedFamiliesLedger": "docs/campaign-art/yr-v1/building-turrets.json",
+    "sanFranciscoHomesQualification": "docs/campaign-art/yr-v1/san-francisco-houses-qualification-r1.json",
+    "goldenGateQualification": "docs/campaign-art/yr-v1/golden-gate-qualification-r1.json",
+    "coastalBuildingsQualification": "docs/campaign-art/yr-v1/coastal-buildings-qualification-r1.json",
+    "cityBuildingsQualification": "docs/campaign-art/yr-v1/city-buildings-qualification-r1.json",
+    "seattleCampusQualification": "docs/campaign-art/yr-v1/seattle-campus-qualification-r1.json",
+    "unusedMarkerDensityFrames": 40
+  },
+  "sceneProgramLifetimeRepair": {
+    "status": "PASS_FOCUSED_AND_NATIVE_RA2_YR_2X_4X",
+    "evidence": "../project-history/yr-campaign-implementation-20261104/Debug/program-lifetime-r1.json",
+    "focusedTests": 23,
+    "nativeStarts": 6,
+    "simulationSemanticsChanged": false,
+    "budgetsRaised": false,
+    "windows": "NOT_RUN_ON_THIS_MAC"
+  },
+  "pyramidCompoundBinding": {
+    "evidence": "../project-history/yr-campaign-implementation-20261104/Debug/pyramid-qualification-r1.json",
+    "nativeDensities": [
+      2,
+      4
+    ],
+    "completeBodySlots": 12,
+    "originalShadowSlots": 12,
+    "allNativeStateAndCompoundChecks": "PASS",
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "hollywoodBowl": {
+    "evidence": "../project-history/yr-campaign-implementation-20261104/Debug/hollywood-bowl-qualification-r1.json",
+    "nativeDensities": [
+      2,
+      4
+    ],
+    "completeBodySlots": 12,
+    "originalShadowSlots": 12,
+    "compoundPoses": 8,
+    "sourceStateUsage": "docs/campaign-art/yr-v1/hollywood-state-usage.json",
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "existingUnitReuseSourceAudit": {
+    "status": "AUTOMATIC_SOURCE_AUDIT_AND_EXPLICIT_ACCEPTED_SNOW_REUSE_RECORDED",
+    "evidence": ".artifacts/yr-campaign/unit-reuse-r11/report.json",
+    "evidenceSha256": "cce2fb15891a413c4608f1e9e601377c54772966e811cc56be63ec54145a99b4",
+    "unitRowsAudited": 488,
+    "automaticPaletteIdentityQualifiedRows": 480,
+    "automaticPaletteIdentityDifferences": 8,
+    "explicitRetainedAcceptedSnowRows": 8,
+    "remainingSourceReuseRows": 0,
+    "families": 103,
+    "nativeValidation": "FOUR_FRESH_SNOW_NATIVE_CASES_COMPLETE_SOURCE_FRAMES_AND_RELEASE; ORDINARY_ACTIONS_SEPARATE",
+    "runtimeSelectionsChanged": 0,
+    "documentedPaletteObservation": {
+      "index": 254,
+      "temperateRgb": [
+        112,
+        196,
+        52
+      ],
+      "snowRgb": [
+        0,
+        0,
+        252
+      ],
+      "paletteGuardRetained": true,
+      "resourcesChanged": false,
+      "sourcePixelAudit": ".artifacts/yr-campaign/snow-unit-index254-source-audit-r1/report.json",
+      "actualBodyPixelsPresent": true
+    },
+    "retainedAcceptedSnowContexts": {
+      "qualification": "docs/campaign-art/yr-v1/accepted-snow-unit-reuse-qualification-r1.json",
+      "contexts": 8,
+      "automaticPaletteIdentityQualified": false,
+      "originalUsedIndex254RetainedInAudit": true,
+      "artworkReauthoringRequired": false
+    },
+    "historicalAuditEvidence": "../project-history/yr-campaign-implementation-20261104/Evidence/unit-reuse-r5.json.gz"
+  },
+  "campaignVxlReuse": {
+    "configuration": "desktop/campaign-vxl-reuse.json",
+    "evidence": "../project-history/yr-campaign-implementation-20261104/Debug/campaign-vxl-source-reuse-r1.json",
+    "identities": [
+      "CRUISE",
+      "TUG",
+      "PDPLANE"
+    ],
+    "originalSourceScopes": 9,
+    "nativeCases": 6,
+    "bearings": 48,
+    "artBytesChanged": 0,
+    "newArtFiles": 0,
+    "globalTheaterAdmissionChanged": false,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "missionDeviceProduction": {
+    "evidence": "../project-history/yr-campaign-implementation-20261104/Debug/mission-devices-qualification-r1.json",
+    "completeIdentities": [
+      "YAPPPT",
+      "CATIME02"
+    ],
+    "nativeCases": 4,
+    "densityStates": 12,
+    "statueAttachment": "docs/campaign-art/yr-v1/building-turrets.json",
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "existingBuildingOverlayReuseSourceAudit": {
+    "schema": "yr-existing-building-overlay-source-qualification-v3",
+    "status": "READ_ONLY_SOURCE_QUALIFICATION_NATIVE_ACTIONS_SEPARATE",
+    "report": ".artifacts/yr-campaign/building-overlay-reuse-r6/report.json",
+    "reportSha256": "f4004f1055c4480514913423d1d0546750d1399c9b832774ebf1e63353910bec",
+    "qualifiedRows": 331,
+    "unresolvedRows": 0,
+    "originalAbsentDeclarations": 12,
+    "finiteForwardPlaybackAuditCorrections": 8,
+    "sourceScopedDisplayBoundaryQualifiedRows": 10,
+    "boundaryQualification": "docs/campaign-art/yr-v1/building-animation-boundary-r1.json",
+    "qualification": "Complete source/material/geometry and actual reachable display-range qualification. Twelve original absent declarations follow the existing renderer skip. Four exact YR superweapon damaged member shapes retain their existing animation clocks while bounding only their displayed final slot. Source qualification alone does not prove every native action, current whole-world budget admission or user visual acceptance.",
+    "unresolved": []
+  },
+  "nativeVoxelAttachmentClosure": {
+    "inventory": ".artifacts/yr-campaign/art-inventory-r17/inventory.json",
+    "worklist": ".local/source-art/yr-campaign-v1/building-turrets/worklist-r1.json",
+    "pendingIdentities": [],
+    "policy": "Keep accepted pedestal art and source-native pivots, VXL/HVA geometry, ownership, timing and original rules. Complete independent 2X/4X attachments and atomic admission before qualifying either actor.",
+    "status": "PASS_COMPLETE_BODY_TURRET_NATIVE_2X_4X_AND_ORIGINAL_FALLBACK",
+    "completeIdentities": [
+      "CAEAST02",
+      "CAOUTP"
+    ],
+    "ledger": "docs/campaign-art/yr-v1/building-turrets.json",
+    "ordinaryCombat": "PENDING_SEPARATE_GAMEPLAY_EVIDENCE"
+  },
+  "completeBuildingTurrets": {
+    "status": "PASS_COMPLETE_ATOMIC_BODY_TURRET_NATIVE_2X_4X_AND_FALLBACK",
+    "ledger": "docs/campaign-art/yr-v1/building-turrets.json",
+    "ordinaryCombat": "STATUE_PASS_OUTPOST_PENDING",
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY",
+    "statueOrdinaryCombat": {
+      "status": "PASS_NATIVE_ORDINARY_SOURCE_ATTACK_COMPLETE_HD_BUST_DESTRUCTION_AND_RUBBLE",
+      "density": 4,
+      "difficulty": "easy",
+      "semanticsVersion": 38,
+      "evidence": "../project-history/yr-campaign-implementation-20261104/Evidence/cahead-original-combat-4x-r1.json.gz",
+      "tick": 51105,
+      "ordinaryAction": "Visible original Yuri bust attacked by an original paid Kirov after exact legitimate source-checkpoint restoration.",
+      "result": {
+        "tick": 51105,
+        "health": 0,
+        "destroyed": true,
+        "turretVisible": false,
+        "activeHdTurret": true,
+        "bodyVisible": false,
+        "rubbleVisible": true,
+        "rubbleFrame": 3,
+        "rubbleGpu": true,
+        "rubbleDensity": 4,
+        "glError": 0
+      },
+      "qualification": "Actual original damage and retained rubble, with the stored interpreter policy. Separate from a fresh public start and turret firing at ground opponents."
+    }
+  },
+  "remainingTerrainPreparation": "docs/campaign-art/yr-v1/remaining-terrain-preparation-r1.json",
+  "buildingAnimationDisplayBoundary": "docs/campaign-art/yr-v1/building-animation-boundary-r1.json",
+  "goldenGate": "docs/campaign-art/yr-v1/golden-gate-qualification-r1.json",
+  "scenery": {
+    "ledger": "docs/campaign-art/yr-v1/scenery.json",
+    "qualification": "docs/campaign-art/yr-v1/scenery-qualification-r1.json",
+    "families": 14,
+    "members": 14,
+    "densityFrames": 28,
+    "originalShadowSlots": 14,
+    "nativeSourceCases": 28,
+    "nativeMapDensitySessions": 10,
+    "sceneRelease": "PASS_TEN_ORIGINAL_MAP_DENSITY_SCENES",
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "originalAnimationAbsences": {
+    "qualification": "docs/campaign-art/yr-v1/original-animation-absences-r1.json",
+    "cases": 2,
+    "assertions": 27,
+    "hostLog": "/private/tmp/ra2-yr-original-animation-absence-r1.log",
+    "runtimeChanges": false,
+    "originalMissingDeclarations": 2,
+    "newAuthoredAnimations": 0,
+    "retainedFamily": "yr-sov06-lunar-yacomd-v1",
+    "nativeBodyEvidence": [
+      "../project-history/yr-campaign-implementation-20261104/Evidence/lunar-command-states-2x-r3.json.gz",
+      "../project-history/yr-campaign-implementation-20261104/Evidence/lunar-command-states-4x-r3.json.gz"
+    ]
+  },
+  "coastalBuildings": {
+    "qualification": "docs/campaign-art/yr-v1/coastal-buildings-qualification-r1.json",
+    "families": 7,
+    "members": 7,
+    "uniqueAuthoredMasters": 27,
+    "densityFrames": 56,
+    "pages": 14,
+    "originalSeparateShadowFrames": 28,
+    "ownerDensityStates": 12,
+    "neutralDensityStates": 44,
+    "nativePrimarySessions": 14,
+    "nativeAdditionalSourceSessions": 2,
+    "nativeFrozenDisplaySamples": 64,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "cityBuildings": {
+    "qualification": "docs/campaign-art/yr-v1/city-buildings-qualification-r1.json",
+    "families": 7,
+    "members": 7,
+    "uniqueAuthoredMasters": 25,
+    "densityFrames": 56,
+    "pages": 16,
+    "originalSeparateShadowFrames": 28,
+    "ownerDensityStates": 14,
+    "neutralDensityStates": 42,
+    "nativePrimarySessions": 14,
+    "nativeFrozenDisplaySamples": 56,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "seattleCampus": {
+    "qualification": "docs/campaign-art/yr-v1/seattle-campus-qualification-r1.json",
+    "families": 1,
+    "members": 2,
+    "selectedAuthoredMasters": 44,
+    "bodyStates": 4,
+    "activeSourceFrames": 40,
+    "independentDensityFrames": 88,
+    "pages": 4,
+    "originalSeparateShadowFrames": 44,
+    "ownerDensityStates": 2,
+    "neutralDensityStates": 86,
+    "nativeSessions": 2,
+    "nativeFrozenDisplaySamples": 88,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "materialAndSnowRefinement": {
+    "opera": "docs/campaign-art/yr-v1/opera-shell-lines-qualification-r2.json",
+    "operaStatus": "PASS_LOCALIZED_SHELL_LINES_2X4X_NATIVE_STATES_OWNER_COLORS_AND_RELEASE",
+    "acceptedScope": "The complete selected r6 delivery is accepted on 2026-11-09, including the Opera shell-line refinement and selected Easter statue family. Snow candidates remain unselected under the explicit keep-existing decision.",
+    "easter": "The rebuilt stone body and all 25 destruction frames are technically qualified and accepted as part of the selected r6 delivery.",
+    "snow": "The user chose KEEP_EXISTING_SNOW_MATERIALS. No review candidate is applied; all 57 protected selected-resource files remain byte-identical and original construction/unbuild resources and timing remain unchanged.",
+    "feedback": "docs/campaign-art/yr-v1/material-detail-reopening-20261105.json",
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "transylvaniaCrypts": {
+    "qualification": "docs/campaign-art/yr-v1/transylvania-crypts-qualification-r1.json",
+    "status": "PASS_COMPLETE_ORIGINAL_FAMILIES_NATIVE_STATES_AND_RELEASE_BOTH_DENSITIES",
+    "families": 2,
+    "nativeSessions": 4,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "snowMaterialReview": {
+    "qualification": "docs/campaign-art/yr-v1/snow-material-review-r2.json",
+    "desktop": "/Users/Aone/Desktop/RA2-HD-Snow-Material-Review-20261105.html",
+    "status": "USER_DECISION_RETAIN_EXISTING_SNOW_MATERIALS",
+    "userDecision": "KEEP_EXISTING_SNOW_MATERIALS",
+    "campaignProduction": "CONTINUES_ALL14_IMPLEMENTATION",
+    "decisionReceipt": "docs/campaign-art/yr-v1/snow-material-review-decision-r1.json",
+    "applyNewCandidates": false,
+    "protectedFilesVerifiedUnchanged": 57,
+    "existingConstructionAndReverseConstruction": "UNCHANGED",
+    "desktopPathScope": "Original delivered review path recorded before the user decision"
+  },
+  "easterStone": {
+    "qualification": "docs/campaign-art/yr-v1/easter-stone-qualification-r2.json",
+    "status": "PASS_NEW_STONE_MATERIAL_COMPLETE_BODY_AND_DESTRUCTION_NATIVE_2X4X",
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "rocketLaunch": {
+    "qualification": "docs/campaign-art/yr-v1/rocket-complete-qualification-r5.json",
+    "status": "PASS_COMPLETE_ROCKET_BODY_ACTIVE_COMPOSITE_CLOCK_AND_RELEASE_NATIVE_2X4X",
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "urbanPaving": {
+    "status": "PASS_EXACT_ACCEPTED_MATERIAL_PIXELS_NATIVE_DENSITIES_AND_NEIGHBOR_CONTINUITY",
+    "qualification": "docs/campaign-art/yr-v1/terrain-urban-paving-qualification-r7.json",
+    "members": 6,
+    "acceptedPayloadsReplaced": 0,
+    "newAuthoredMothers": 0,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "taskOverlays": {
+    "status": "COMPLETE_SOURCE_AND_NATIVE_2X4X_QUALIFIED_USER_PENDING",
+    "ledger": "docs/campaign-art/yr-v1/task-overlays.json",
+    "families": 2,
+    "densityFrames": 4,
+    "originalSeparateShadows": 2,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "taskVehicles": {
+    "status": "PASS_COMPLETE_SOURCE_NATIVE_BEARINGS_DENSITIES_AND_NORMAL_SCENE_RELEASE",
+    "qualification": "docs/campaign-art/yr-v1/task-vehicles-qualification-r1.json",
+    "families": 3,
+    "sourceContexts": 4,
+    "densityBearings": 48,
+    "normalSceneExits": 6,
+    "ordinaryMissionActions": "PENDING",
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "taskInfantryPreparation": {
+    "status": "COMPLETE_SOURCE_PALETTE_AND_SEQUENCE_GUIDES_UNSELECTED",
+    "qualification": "docs/campaign-art/yr-v1/task-infantry-preparation-r1.json",
+    "families": 6,
+    "sourceRows": 7,
+    "bodySlots": 1219,
+    "nonemptyBodySlots": 1215,
+    "sourceReferenceBoards": 339,
+    "selectedResourcesChanged": 0,
+    "newHdArtwork": 0,
+    "recordScope": "Retained original preparation checkpoint; current complete-body coverage is recorded in taskInfantryCurrent."
+  },
+  "currentSourceQualifications": {
+    "sov01umd.map": {
+      "qualification": "docs/campaign-art/yr-v1/soviet01-difficulty-source-flow-r1.json",
+      "status": "PASS_NATIVE_SOVIET01_THREE_DIFFICULTY_ORIGINAL_OBJECTIVES_AND_SCORE",
+      "semanticsVersion": 45,
+      "difficulty": "easy-normal-hard",
+      "publicAvailabilityChanged": false,
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "sov02smd.map": {
+      "qualification": "docs/campaign-art/yr-v1/soviet02-normal-source-flow-r1.json",
+      "status": "PASS_NATIVE_CURRENT45_NORMAL_ORIGINAL_OBJECTIVES_NAMED_RESTART_EXACT_INPUT_REPLAY_AND_SCORE",
+      "semanticsVersion": 45,
+      "difficulty": "normal",
+      "publicAvailabilityChanged": false,
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "sov03umd.map": {
+      "qualification": "docs/campaign-art/yr-v1/soviet03-easy-source-flow-r1.json",
+      "status": "PASS_NATIVE_CURRENT45_EASY_ORIGINAL_OBJECTIVES_NAMED_RESTART_EXACT_INPUT_REPLAY_EVENT_MEDIA_AND_SCORE",
+      "semanticsVersion": 45,
+      "difficulty": "easy",
+      "publicAvailabilityChanged": false,
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "sov04dmd.map": {
+      "qualification": "docs/campaign-art/yr-v1/soviet04-easy-source-flow-r1.json",
+      "status": "PASS_NATIVE_CURRENT45_EASY_ORIGINAL_RESCUE_AIRPORT_OBJECTIVES_NAMED_RESTART_EVENT_MEDIA_AND_SCORE",
+      "semanticsVersion": 45,
+      "difficulty": "easy",
+      "publicAvailabilityChanged": false,
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "sov05umd.map": {
+      "qualification": "docs/campaign-art/yr-v1/soviet05-easy-source-flow-r1.json",
+      "status": "PASS_NATIVE_CURRENT45_EASY_ORIGINAL_LANDING_SUB_PEN_IRIS_OBJECTIVES_NAMED_RESTART_EVENT_MEDIA_AND_SCORE",
+      "semanticsVersion": 45,
+      "difficulty": "easy",
+      "publicAvailabilityChanged": false,
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "sov06lmd.map": {
+      "qualification": "docs/campaign-art/yr-v1/soviet06-easy-source-flow-r1.json",
+      "status": "PASS_NATIVE_CURRENT45_EASY_LUNAR_SOURCE_GOALS_4X_NAMED_RESTART_EVENT_MEDIA_AND_SCORE_FRESH_2X_PRODUCTION",
+      "semanticsVersion": 45,
+      "difficulty": "easy",
+      "publicAvailabilityChanged": false,
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "all01umd.map": {
+      "qualification": "docs/campaign-art/yr-v1/allied01-easy-source-flow-r1.json",
+      "status": "PASS_NATIVE_CURRENT45_EASY_CITY_POWER_TIME_WARP_TANYA_ISLAND_SOURCE_GOALS_4X_NAMED_RESTART_EVENT_MEDIA_AND_SCORE_FRESH_2X",
+      "semanticsVersion": 45,
+      "difficulty": "easy",
+      "publicAvailabilityChanged": false,
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "sov07tmd.map": {
+      "qualification": "docs/campaign-art/yr-v1/soviet07-easy-source-flow-r1.json",
+      "status": "PASS_NATIVE_CURRENT45_EASY_BOTH_LIBERATED_FACTIONS_CASTLE_SOURCE_GOAL_4X_NAMED_RESTART_EVENT_MEDIA_SCORE_AND_NATURAL_FACTION_ENDING",
+      "semanticsVersion": 45,
+      "difficulty": "easy",
+      "publicAvailabilityChanged": false,
+      "lateCheckpointRegression": "docs/campaign-art/yr-v1/targetless-order-save-regression-r1.json",
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "all02umd.map": {
+      "status": "PASS_NATIVE_CURRENT45_EASY_FOUR_GRINDERS_AND_BOTH_SOURCE_BASES_4X_NAMED_RESTART_EVENT_MEDIA_AND_SCORE_FRESH_2X_PAID_BASE",
+      "semanticsVersion": 45,
+      "difficulty": "easy",
+      "qualification": "docs/campaign-art/yr-v1/allied02-easy-source-flow-r1.json",
+      "publicAvailabilityChanged": false,
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "all03umd.map": {
+      "status": "PASS_CURRENT45_THREE_DIFFICULTY_ORIGINAL_PLANT_POWER_WEATHER_GOALS_NAMED_RESTARTS_AND_SCORE",
+      "semanticsVersion": 45,
+      "difficulty": "easy-normal-hard",
+      "qualification": "docs/campaign-art/yr-v1/allied03-easy-source-flow-r1.json",
+      "publicAvailabilityChanged": false,
+      "difficultyQualification": "docs/campaign-art/yr-v1/allied03-difficulty-source-flow-r1.json",
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "all04dmd.map": {
+      "status": "PASS_NATIVE_CURRENT45_EASY_PRISON_POWER_EINSTEIN_ESCAPE_DOMINATOR_AND_FINAL_SOURCE_BASE_4X_NAMED_RESTART_EVENT_MEDIA_AND_SCORE_FRESH_2X_LANDING",
+      "semanticsVersion": 45,
+      "difficulty": "easy",
+      "qualification": "docs/campaign-art/yr-v1/allied04-easy-source-flow-r1.json",
+      "publicAvailabilityChanged": false,
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "all05umd.map": {
+      "status": "PASS_NATIVE_CURRENT45_EASY_THREE_CLONING_VATS_BOTH_HOSTILE_HOUSES_ALL_FORCES_4X_NAMED_RESTART_EVENT_MEDIA_AND_SCORE_FRESH_2X_NAVAL_DEFENSE",
+      "semanticsVersion": 45,
+      "difficulty": "easy",
+      "qualification": "docs/campaign-art/yr-v1/allied05-easy-source-flow-r1.json",
+      "publicAvailabilityChanged": false,
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "all06umd.map": {
+      "status": "PASS_NATIVE_CURRENT45_EASY_PARLIAMENT_GARRISON_SOURCE_TIMER_AND_FINAL_LAND_FORCES_4X_NAMED_RESTART_EVENT_MEDIA_AND_SCORE_FRESH_2X_BASE",
+      "semanticsVersion": 45,
+      "difficulty": "easy",
+      "qualification": "docs/campaign-art/yr-v1/allied06-easy-source-flow-r1.json",
+      "publicAvailabilityChanged": false,
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "all07smd.map": {
+      "status": "PASS_NATIVE_CURRENT45_EASY_SOVIET_BASE_ALLIED_MCV_BOTH_FINAL_SOURCE_HOUSES_4X_NAMED_RESTART_EVENT_MEDIA_SCORE_AND_NATURAL_ALLIED_ENDING_FRESH_2X_BASE",
+      "semanticsVersion": 45,
+      "difficulty": "easy",
+      "qualification": "docs/campaign-art/yr-v1/allied07-easy-source-flow-r1.json",
+      "publicAvailabilityChanged": false,
+      "rendererRegression": "docs/campaign-art/yr-v1/magnetic-beam-inactive-hd-regression-r1.json",
+      "publicEntryQualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json"
+    },
+    "remainingQualification": "User accepted the r6 delivery on 2026-11-09. Independent source/difficulty qualifications are retained; Windows and physical 8/16 GiB targets remain untested."
+  },
+  "currentStatusDate": "2026-11-09",
+  "taskInfantryCurrent": {
+    "status": "SIX_COMPLETE_SOURCE_BODY_FAMILIES_NATIVE_2X4X_QUALIFIED_USER_REVIEW_PENDING",
+    "qualification": "docs/campaign-art/yr-v1/task-dnob-native-density-inspection-r1.json",
+    "families": {
+      "CAML": 164,
+      "EINS": 182,
+      "MUMY": 164,
+      "RMNV": 196,
+      "PENTGEN": 262,
+      "DNOB": 251
+    },
+    "nativeBodySlots": 1219,
+    "independentDensityFrames": 2438,
+    "originalEmptyDnobSlots": 4,
+    "noVisibleDnobShadowCredit": true,
+    "ordinaryMissionActionCredit": "SEPARATE",
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "currentArtworkCheckpoint": {
+    "selectedNewurban": {
+      "schemaVersion": 1,
+      "revision": "yr-newurban-paved-roads-r3",
+      "sha256": "99838da0ce98a344cc15e64041a65c39bddf11b31b902478c7b17763ec9df886"
+    },
+    "urbanRamps": "docs/campaign-art/yr-v1/terrain-newurban-urban-ramps-qualification-r1.json",
+    "naturalRamps": "docs/campaign-art/yr-v1/terrain-newurban-natural-ramps-qualification-r7.json",
+    "latestDesktop": "ACCEPTED_R6_SIGNED_MAC_APP_RETAINED",
+    "protectedSnowResourcesUnchanged": 57,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY",
+    "selectedUrban": {
+      "schemaVersion": 1,
+      "revision": "urban-road-slopes-repair-r1",
+      "sha256": "9ba22d199d59ff2b090baa13b77fff5388f30c24179c3c821f3aca12dc30c615"
+    },
+    "roadSlopeRepair": "docs/campaign-art/yr-v1/road-slope-repair-qualification-r4.json",
+    "latestTypecheck": "PASS_POST_CLEANUP_20261109",
+    "groundFixesQualification": "docs/campaign-art/yr-v1/terrain-newurban-ground-fixes-qualification-r8.json",
+    "coastalCliffsQualification": "docs/campaign-art/yr-v1/terrain-newurban-water-cliffs-qualification-r6.json",
+    "coastalCliffsRemainingQualification": "docs/campaign-art/yr-v1/terrain-newurban-water-cliffs-remaining-qualification-r2.json",
+    "selectedSnow": {
+      "schemaVersion": 1,
+      "revision": "yr-snow-roads-r23",
+      "sha256": "de52f5b09147870c423242e00b7b4433c1434a57abdb932681475eb9fa7ded68"
+    },
+    "snowIceCliffsQualification": "docs/campaign-art/yr-v1/terrain-snow-ice-cliffs-qualification-r3.json",
+    "snowLargeRampsQualification": "docs/campaign-art/yr-v1/terrain-snow-large-ramps-qualification-r2.json",
+    "snowGroundPatchesQualification": "docs/campaign-art/yr-v1/terrain-snow-ground-patches-qualification-r1.json",
+    "snowCrevassesQualification": "docs/campaign-art/yr-v1/terrain-snow-crevasses-qualification-r1.json",
+    "snowWaterCliffsQualification": "docs/campaign-art/yr-v1/terrain-snow-water-cliffs-qualification-r3.json",
+    "retainingWallQualification": "docs/campaign-art/yr-v1/terrain-newurban-retaining-walls-qualification-r2.json",
+    "waterRetainingWallQualification": "docs/campaign-art/yr-v1/terrain-newurban-water-retaining-walls-qualification-r1.json",
+    "coastalWallQualification": "docs/campaign-art/yr-v1/terrain-newurban-coastal-walls-qualification-r3.json",
+    "pavedCoastalCapQualification": "docs/campaign-art/yr-v1/terrain-newurban-caps-qualification-r2.json",
+    "bridgeQualification": "docs/campaign-art/yr-v1/terrain-newurban-bridges-qualification-r6.json",
+    "shoreQualification": "docs/campaign-art/yr-v1/terrain-newurban-shore-qualification-r14.json",
+    "sandFootWallQualification": "docs/campaign-art/yr-v1/terrain-newurban-sand-foot-walls-qualification-r3.json",
+    "pavedRoadQualification": "docs/campaign-art/yr-v1/terrain-newurban-paved-roads-qualification-r3.json",
+    "snowRoadQualification": "docs/campaign-art/yr-v1/terrain-snow-roads-qualification-r23.json",
+    "selectedTemperate": {
+      "schemaVersion": 1,
+      "revision": "yr-temperate-dirtroads-r6",
+      "sha256": "ee23fc879f7b59b653f3da23e0c956d67103c58f72e374628122039e3b01b56d"
+    },
+    "temperateDirtRoadQualification": "docs/campaign-art/yr-v1/terrain-temperate-dirtroad-qualification-r6.json",
+    "acceptedSnowUnitReuse": "docs/campaign-art/yr-v1/accepted-snow-unit-reuse-qualification-r1.json",
+    "selectedLunar": {
+      "schemaVersion": 1,
+      "revision": "yr-lunar-complete-terrain-r2",
+      "sha256": "b82ae2b6e0fabe387706e2c82ffdfce6c632d247d0b7a1d089be65814e64b5c6"
+    },
+    "lunarSlopeCoverageQualification": "docs/campaign-art/yr-v1/lunar-slope-coverage-qualification-r2.json",
+    "retainedBaselineDesktop": "r170_PASS_219_FILES"
+  },
+  "currentSourceWork": {
+    "missions": [],
+    "status": "ALL_FOURTEEN_CURRENT45_ORIGINAL_GOAL_CHAINS_NAMED_RESTARTS_AND_NORMAL_SCORES_QUALIFIED",
+    "factionEndings": "BOTH_NATURAL_POSTSCORE_ENDINGS_AND_DIFFICULTY_PRESERVING_RETURN_PASS",
+    "remainingQualification": "User consolidated acceptance is pending. Windows and physical 8/16 GiB targets remain untested; retained source qualifications are listed in the final handoff.",
+    "publicAvailabilityChanged": true
+  },
+  "roadSlopeRepair": {
+    "status": "PASS_FINAL_SELECTED_ROAD_REPAIR_ALL_AVAILABLE_ORIGINAL_ROAD_MAPS_NATIVE_2X4X",
+    "qualification": "docs/campaign-art/yr-v1/road-slope-repair-qualification-r4.json",
+    "sourceMapsAudited": 345,
+    "formalMapsAudited": 253,
+    "roadSlopeEntries": 146,
+    "availableRoadMaps": 143,
+    "formalRoadMaps": 106,
+    "nativeMapDensityCases": 286,
+    "nativeCaptures": 1274,
+    "sourceBoundaries": [
+      {
+        "edition": "ra2",
+        "name": "official-beaac8d3ffd247d358ec5d81.map",
+        "kind": "skirmish",
+        "sha256": "beaac8d3ffd247d358ec5d8190dcf0a82f5f62d968dc65670d936f2710747c29",
+        "publiclyListed": false,
+        "absentOriginalTiles": [
+          {
+            "member": "hyte01.tem",
+            "cells": [
+              {
+                "tile": [
+                  77,
+                  161
+                ],
+                "z": 0,
+                "tileNum": 22,
+                "subTile": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "edition": "yr",
+        "name": "official-f11a0e453c44da5230a2ee35.map",
+        "kind": "skirmish",
+        "sha256": "f11a0e453c44da5230a2ee35dc3bc40a442114067021d8925a3f2c80569a8f71",
+        "publiclyListed": false,
+        "absentOriginalTiles": [
+          {
+            "member": "hyte01.tem",
+            "cells": [
+              {
+                "tile": [
+                  77,
+                  161
+                ],
+                "z": 0,
+                "tileNum": 22,
+                "subTile": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "edition": "yr",
+        "name": "official-beaac8d3ffd247d358ec5d81.map",
+        "kind": "skirmish",
+        "sha256": "beaac8d3ffd247d358ec5d8190dcf0a82f5f62d968dc65670d936f2710747c29",
+        "publiclyListed": false,
+        "absentOriginalTiles": [
+          {
+            "member": "hyte01.tem",
+            "cells": [
+              {
+                "tile": [
+                  77,
+                  161
+                ],
+                "z": 0,
+                "tileNum": 22,
+                "subTile": 0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "formalMapsExcluded": 0,
+    "selected": {
+      "NEWURBAN": {
+        "schemaVersion": 1,
+        "revision": "newurban-road-slopes-repair-r4",
+        "sha256": "2511eda59bf8037da829e5f17df9e0a407c6955ad47b93fc90b419326c70228d"
+      },
+      "URBAN": {
+        "schemaVersion": 1,
+        "revision": "urban-road-slopes-repair-r1",
+        "sha256": "9ba22d199d59ff2b090baa13b77fff5388f30c24179c3c821f3aca12dc30c615"
+      }
+    },
+    "sourceMapsAndNativeGeometryUnchanged": true,
+    "protectedSnowResourcesUnchanged": 57,
+    "snowBuildingMaterials": "KEEP_EXISTING_USER_DECISION",
+    "windows": "NOT_RUN_ON_THIS_MAC",
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "magneticBeamInactiveHdRegression": "docs/campaign-art/yr-v1/magnetic-beam-inactive-hd-regression-r1.json",
+  "newurbanGroundFixes": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-newurban-ground-fixes-qualification-r8.json",
+    "status": "PASS_INDEPENDENT_ACCEPTED_MATERIAL_DETAIL_NATIVE_2X4X_SOURCE_MAPS_CONTACTS_AND_RELEASE",
+    "members": 12,
+    "independentDensityExports": 24,
+    "nativeMapDensityCases": 8,
+    "nativeCaptures": 30,
+    "allInherited115GroupsAndAtlasesExact": true,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "allied03Difficulties": {
+    "qualification": "docs/campaign-art/yr-v1/allied03-difficulty-source-flow-r1.json",
+    "status": "PASS_CURRENT45_THREE_DIFFICULTY_ORIGINAL_PLANT_POWER_WEATHER_GOALS_NAMED_RESTARTS_AND_SCORE",
+    "normalVictoryTick": 12285,
+    "hardVictoryTick": 12345,
+    "publicAvailabilityChanged": false
+  },
+  "newurbanWaterCliffs": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-newurban-water-cliffs-qualification-r6.json",
+    "status": "PASS_AUTHORED_CLIFFS_EXACT_ACCEPTED_SEA_NATIVE_2X4X_SOURCE_MAPS_CONTACTS_AND_RELEASE",
+    "counts": {
+      "members": 6,
+      "nativeSubtiles": 26,
+      "authoredSubtiles": 20,
+      "originalPlaceholderSubtiles": 6,
+      "independentDensityFrames": 52,
+      "authoredDensityFrames": 40,
+      "originalPlaceholderDensityFrames": 12,
+      "completeMemberDensityExports": 12,
+      "newHdMothers": 3,
+      "addedAtomicGroups": 1,
+      "inheritedAcceptedGroups": 119,
+      "inheritedNativeImages": 2295,
+      "inheritedDensityFrames": 4590,
+      "acceptedPayloadsReplaced": 0,
+      "nativeMapDensityCases": 8,
+      "nativeCaptures": 42,
+      "inspectedUnscaledNativeBoards": 14
+    },
+    "acceptedPayloadsReplaced": 0,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "allied06HardTimer": {
+    "qualification": "docs/campaign-art/yr-v1/allied06-hard-timer-source-flow-r1.json",
+    "status": "PASS_ORIGINAL_HARD_TIMER_PARLIAMENT_ENGINEER_DEFENSE_AND_NAMED_RESTART_FINAL_GOALS_PENDING",
+    "namedRestartTick": 16530,
+    "exactContinuationTick": 16710,
+    "survivingParliamentHealth": 100,
+    "garrisonedInfantry": 10,
+    "fullHardMissionGoals": "PENDING",
+    "timerExpiryObservedAtTick": 14730
+  },
+  "newurbanWaterCliffsRemaining": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-newurban-water-cliffs-remaining-qualification-r2.json",
+    "status": "PASS_AUTHORED_CLIFF_BODIES_SOURCE_GEOMETRY_EXACT_DEEP_SEA_AND_RELEASE_ADJACENT_SHORE_PENDING",
+    "counts": {
+      "members": 15,
+      "nativeSubtiles": 60,
+      "authoredSubtiles": 51,
+      "originalPlaceholderSubtiles": 9,
+      "independentDensityFrames": 120,
+      "authoredDensityFrames": 102,
+      "originalPlaceholderDensityFrames": 18,
+      "completeMemberDensityExports": 30,
+      "newHdMothers": 7,
+      "addedAtomicGroups": 1,
+      "inheritedAcceptedGroups": 120,
+      "inheritedNativeImages": 2321,
+      "inheritedDensityFrames": 4642,
+      "acceptedPayloadsReplaced": 0,
+      "nativeMapDensityCases": 8,
+      "nativeCaptures": 62,
+      "inspectedUnscaledNativeBoards": 18
+    },
+    "adjacentShoreFamily": {
+      "status": "COORDINATED_REFINEMENT_PENDING",
+      "members": 11,
+      "observed": "The neighboring original shore tiles remain pixelated; their material transition with wclifx26 remains visible. Target cliff and deep-sea qualification does not certify that separate family."
+    },
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "allied06DifficultyTimers": {
+    "qualification": "docs/campaign-art/yr-v1/allied06-difficulty-timers-source-flow-r1.json",
+    "status": "PASS_ALL_THREE_ORIGINAL_DIFFICULTY_COUNTDOWN_BRANCHES_DEFENSE_AND_NAMED_RESTARTS_LATER_GOALS_PENDING",
+    "countdownSeconds": {
+      "easy": 1500,
+      "normal": 1200,
+      "hard": 900
+    },
+    "normalNamedRestartTick": 21030,
+    "normalExactContinuationTick": 21210,
+    "normalSurvivingParliamentHealth": 98.32,
+    "garrisonedInfantry": 10,
+    "fullNormalAndHardGoals": "PENDING"
+  },
+  "newurbanShoreCandidates": {
+    "review": "docs/campaign-art/yr-v1/terrain-newurban-shore-native-review-r11.json",
+    "status": "TECHNICAL_SIX_NATIVE_CASES_PASS_DEEP_WATER_REGRESSION_FIXED_MATERIAL_CONTINUATION_REQUIRED",
+    "runtimeSelected": false,
+    "newHdMothers": 6,
+    "completeDensityExportsInspected": 22,
+    "nativeMapDensityCases": 6,
+    "nativeCapturesInspected": 50,
+    "remaining": "Complete source-bound continuation against inherited shore, sand and coastal beach materials. Current qualified terrain selection is restored. No missing-art row is credited for these held candidates.",
+    "existingAcceptedPayloadsChanged": false
+  },
+  "snowIceCliffs": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-snow-ice-cliffs-qualification-r3.json",
+    "status": "PASS_SOURCE_CLIFF_FORMS_COMPLETE_DENSITIES_BOUNDED_CONTOURS_ORIGINAL_LIGHT_NATIVE_CONTACTS_AND_RELEASE",
+    "counts": {
+      "members": 17,
+      "nativeSubtiles": 62,
+      "authoredSubtiles": 53,
+      "originalPlaceholderSubtiles": 9,
+      "independentDensityFrames": 124,
+      "authoredDensityFrames": 106,
+      "originalPlaceholderDensityFrames": 18,
+      "completeMemberDensityExports": 34,
+      "newHdMothers": 9,
+      "addedAtomicGroups": 1,
+      "inheritedAcceptedGroups": 36,
+      "inheritedNativeImages": 2724,
+      "acceptedPayloadsReplaced": 0,
+      "nativeMapDensityCases": 2,
+      "nativeCaptures": 34,
+      "inspectedUnscaledNativeBoards": 10
+    },
+    "selectedPack": {
+      "schemaVersion": 1,
+      "revision": "yr-snow-ice-cliffs-r3",
+      "sha256": "526fbddb5015460e412ac0c06a1ce16c8f19c87c4bc3415c58e88cffd11a2a9f"
+    },
+    "acceptedPayloadsReplaced": 0,
+    "snowBuildingMaterialsAndConstructionUnchanged": true,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "soviet07NormalGeneticWarning": {
+    "qualification": "docs/campaign-art/yr-v1/soviet07-normal-genetic-warning-source-flow-r1.json",
+    "status": "PASS_ORIGINAL_PAID_SUPERWEAPON_PREREQUISITE_NORMAL_TIMERS_GENETIC_WARNING_NATURAL_RADAR_MEDIA_AND_REPEAT_NAMED_RESTART",
+    "sourcePrerequisite": "Original paid Iron Curtain or nuclear silo enables Minions Build.",
+    "normalDominatorSeconds": 445,
+    "normalGeneticDelaySeconds": 205,
+    "geneticWarningTick": 31800,
+    "naturalMediaSeconds": 25.042,
+    "observedCues": 6,
+    "namedRestartTick": 31890,
+    "exactContinuationTick": 32070,
+    "fullNormalAndHardGoals": "PENDING",
+    "hardWarningBranch": "PENDING",
+    "publicAvailabilityChanged": false
+  },
+  "snowLargeRamps": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-snow-large-ramps-qualification-r2.json",
+    "status": "PASS_SIX_SOURCE_LARGE_RAMPS_INDEPENDENT_DENSITIES_EXACT_RAISED_GROUND_CONTACTS_NATIVE_ASSEMBLY_AND_RELEASE",
+    "counts": {
+      "members": 6,
+      "genuineHdMothers": 5,
+      "completeSourceSubtiles": 56,
+      "authoredSourceSubtiles": 40,
+      "originalPlaceholderSubtiles": 16,
+      "independentDensityFrames": 112,
+      "authoredDensityFrames": 80,
+      "originalPlaceholderDensityFrames": 32,
+      "completeDensityExports": 12,
+      "nativeMapDensityCases": 2,
+      "nativeCaptures": 12,
+      "inheritedGroups": 37,
+      "inheritedSourceImages": 2786,
+      "acceptedPayloadsReplaced": 0
+    },
+    "selectedPack": {
+      "schemaVersion": 1,
+      "revision": "yr-snow-large-ramps-r2",
+      "sha256": "5ef93e56c8b8ece512ad1ed9f5825e6d67a304c30ea8b538486af1135ef19954"
+    },
+    "acceptedPayloadsReplaced": 0,
+    "snowBuildingMaterialsAndConstructionUnchanged": true,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "snowGroundPatches": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-snow-ground-patches-qualification-r1.json",
+    "status": "PASS_TWO_NONEMPTY_SOURCE_GROUND_FORMS_COMPLETE_DENSITIES_EXACT_NATIVE_OPACITY_FOUR_ORIGINAL_MAP_CASES_AND_RELEASE",
+    "counts": {
+      "members": 2,
+      "genuineHdMothers": 1,
+      "nativeBodySlots": 2,
+      "originalEmptySlots": 0,
+      "originalPlaceholderSlots": 0,
+      "independentAuthoredDensityFrames": 4,
+      "completeDensityExports": 4,
+      "nativeMapDensityCases": 4,
+      "nativeCaptures": 4,
+      "inheritedGroups": 38,
+      "inheritedSourceImages": 2842,
+      "acceptedPayloadsReplaced": 0
+    },
+    "selectedPack": {
+      "schemaVersion": 1,
+      "revision": "yr-snow-ground-patches-r1",
+      "sha256": "c88595fc56a60ad3560940d590101763a950268e174d707d4d6dff8bfb81e695"
+    },
+    "acceptedPayloadsReplaced": 0,
+    "snowBuildingMaterialsAndConstructionUnchanged": true,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "snowCrevasses": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-snow-crevasses-qualification-r1.json",
+    "status": "PASS_SIX_SOURCE_SNOW_CREVASSES_COMPLETE_DENSITIES_EXACT_NATIVE_OPACITY_NATIVE_ASSEMBLY_AND_RELEASE",
+    "counts": {
+      "members": 6,
+      "genuineHdMothers": 6,
+      "nativeBodySlots": 48,
+      "originalEmptySlots": 0,
+      "originalPlaceholderSlots": 0,
+      "independentAuthoredDensityFrames": 96,
+      "completeDensityExports": 12,
+      "nativeMapDensityCases": 2,
+      "nativeCaptures": 12,
+      "inheritedGroups": 40,
+      "inheritedSourceImages": 2844,
+      "acceptedPayloadsReplaced": 0
+    },
+    "selectedPack": {
+      "schemaVersion": 1,
+      "revision": "yr-snow-crevasses-r1",
+      "sha256": "6f7b94594224bda1ebee471aad1227f495ac409343d4eed14553a9a338892d3f"
+    },
+    "acceptedPayloadsReplaced": 0,
+    "snowBuildingMaterialsAndConstructionUnchanged": true,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "soviet07HardGeneticWarning": {
+    "qualification": "docs/campaign-art/yr-v1/soviet07-hard-genetic-warning-source-flow-r1.json",
+    "status": "PASS_HARD_ORIGINAL_PAID_SUPERWEAPON_TIMERS_GENETIC_WARNING_NATURAL_RADAR_MEDIA_AND_EXACT_NAMED_RESTART",
+    "sourceDifficulty": "hard",
+    "dominatorTick": 29850,
+    "geneticTick": 32925,
+    "naturalMediaSeconds": 25.042,
+    "cues": 6,
+    "namedRestartTick": 32940,
+    "exactContinuationTick": 33120,
+    "sourceYardLossTick": 31590,
+    "originalSourceActiveAfterYardLoss": true,
+    "fullNormalAndHardGoals": "PENDING",
+    "publicAvailabilityChanged": false
+  },
+  "snowWaterCliffs": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-snow-water-cliffs-qualification-r3.json",
+    "status": "PASS_TWO_SOURCE_SNOW_COASTAL_CLIFFS_INDEPENDENT_DENSITIES_TYPED_ICE_OWNERSHIP_EXACT_ACCEPTED_SEA_NATIVE_ASSEMBLY_AND_RELEASE",
+    "counts": {
+      "members": 2,
+      "genuineHdMothers": 1,
+      "nativeSlots": 8,
+      "authoredSourceSlots": 6,
+      "originalPlaceholderSlots": 2,
+      "independentDensityFrames": 16,
+      "authoredDensityFrames": 12,
+      "originalPlaceholderDensityFrames": 4,
+      "completeDensityExports": 4,
+      "nativeMapDensityCases": 2,
+      "nativeCaptures": 4,
+      "inheritedGroups": 41,
+      "inheritedSourceImages": 2892,
+      "acceptedPayloadsReplaced": 0
+    },
+    "selectedPack": {
+      "schemaVersion": 1,
+      "revision": "yr-snow-water-cliffs-r3",
+      "sha256": "ff193253b7bd1362d0577c31275c5d7f744caa5d20b1998f3b00c8c90e29c453"
+    },
+    "acceptedPayloadsReplaced": 0,
+    "snowBuildingMaterialsAndConstructionUnchanged": true,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "missionMediaLifecycle": {
+    "qualification": "docs/campaign-art/yr-v1/mission-media-lifecycle-qualification-r1.json",
+    "status": "PASS_NATIVE_THREE_LANGUAGE_SEQUENTIAL_AND_PAUSED_RADAR_SOURCE_QUEUE_ACTIVE_SAVES_AND_RELEASE",
+    "counts": {
+      "nativeCases": 7,
+      "languages": 3,
+      "exactNamedSaveAndProcessRestarts": 7,
+      "sourceQueueCases": 1,
+      "sequentialRadarCases": 3,
+      "originalAction117Cases": 3
+    },
+    "userAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY",
+    "windows": "NOT_RUN_ON_THIS_MAC"
+  },
+  "snowUnitConversionSourceAudit": "docs/campaign-art/yr-v1/unit-snow-conversion-source-audit-r1.json",
+  "newurbanRetainingWalls": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-newurban-retaining-walls-qualification-r2.json",
+    "status": "PASS_SOURCE_CLIFFA10_UNBRACED_WOOD_INDEPENDENT_DENSITIES_NATIVE_WORLD_AND_RELEASE",
+    "counts": {
+      "members": 8,
+      "newHdMothers": 4,
+      "nativeSubtiles": 28,
+      "authoredSubtiles": 22,
+      "originalPlaceholderSubtiles": 6,
+      "independentDensityFrames": 56,
+      "authoredDensityFrames": 44,
+      "originalPlaceholderDensityFrames": 12,
+      "completeMemberDensityExports": 16,
+      "addedAtomicGroups": 1,
+      "inheritedAcceptedGroups": 121,
+      "inheritedNativeImages": 2381,
+      "acceptedPayloadsReplaced": 0,
+      "nativeMapDensityCases": 2,
+      "nativeTargetCaptures": 16,
+      "nativeContextScreenshots": 16,
+      "unscaledNativeReviewBoards": 4
+    },
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY",
+    "sourceFidelityCorrection": "cliffa10 now retains the original unbraced timber design; all seven other members remain exact.",
+    "cumulativeReferencedGenuineMothers": 5
+  },
+  "newurbanWaterRetainingWalls": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-newurban-water-retaining-walls-qualification-r1.json",
+    "status": "PASS_SIX_AUTHORED_WATER_RETAINING_WALLS_EXACT_SEA_NATIVE_DENSITIES_AND_RELEASE",
+    "counts": {
+      "members": 6,
+      "newHdMothers": 3,
+      "nativeSubtiles": 28,
+      "authoredSubtiles": 20,
+      "originalPlaceholderSubtiles": 8,
+      "independentDensityFrames": 56,
+      "authoredDensityFrames": 40,
+      "originalPlaceholderDensityFrames": 16,
+      "completeMemberDensityExports": 12,
+      "addedAtomicGroups": 1,
+      "inheritedAcceptedGroups": 122,
+      "acceptedPayloadsReplaced": 0,
+      "nativeMapDensityCases": 6,
+      "nativeTargetCaptures": 16,
+      "individuallyViewedNativeCaptures": 16
+    },
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "newurbanCoastalWalls": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-newurban-coastal-walls-qualification-r3.json",
+    "status": "PASS_FOUR_AUTHORED_WATER_ONLY_WALLS_EXACT_SEA_NATIVE_DENSITIES_AND_RELEASE",
+    "counts": {
+      "members": 4,
+      "genuineMothersReferenced": 2,
+      "additionalMothersInFinalCorrection": 0,
+      "nativeSubtiles": 13,
+      "authoredSubtiles": 12,
+      "originalPlaceholderSubtiles": 1,
+      "independentDensityFrames": 26,
+      "authoredDensityFrames": 24,
+      "originalPlaceholderDensityFrames": 2,
+      "completeMemberDensityExports": 8,
+      "byteExactEarlierReviewedExports": 8,
+      "addedAtomicGroups": 1,
+      "inheritedAcceptedGroups": 123,
+      "acceptedPayloadsReplaced": 0,
+      "nativeMapDensityCases": 6,
+      "nativeTargetCaptures": 18,
+      "individuallyViewedNativeCaptures": 18,
+      "heldSandFootMembersNotCredited": 2
+    },
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "newurbanPavedAndCoastalCaps": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-newurban-caps-qualification-r2.json",
+    "status": "PASS_FOUR_PAVED_COASTAL_CAPS_EXACT_GROUND_OPACITY_NATIVE_DENSITIES_AND_RELEASE",
+    "counts": {
+      "members": 4,
+      "genuineMothersReferenced": 2,
+      "additionalMothersInOpacityCorrection": 0,
+      "nativeSubtiles": 13,
+      "independentDensityFrames": 26,
+      "authoredDensityFrames": 16,
+      "originalPlaceholderDensityFrames": 6,
+      "originalEmptyDensityFrames": 4,
+      "completeMemberDensityExports": 8,
+      "addedAtomicGroups": 2,
+      "inheritedQualifiedGroups": 124,
+      "acceptedPayloadsReplaced": 0,
+      "nativeMapDensityCases": 8,
+      "nativeTargetCaptures": 16,
+      "individuallyViewedNativeCaptures": 16
+    },
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "newurbanBridgeTerrain": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-newurban-bridges-qualification-r6.json",
+    "status": "PASS_COMPLETE_ORIGINAL_BRIDGE_STATES_CONTINUOUS_ROAD_CONTACTS_NATIVE_2X4X_AND_RELEASE",
+    "counts": {
+      "members": 6,
+      "sourceSubtiles": 51,
+      "independentDensityFrames": 102,
+      "authoredDensityFrames": 98,
+      "originalEmptyDensityFrames": 4,
+      "originalPlaceholderDensityFrames": 0,
+      "genuineMothersReferenced": 6,
+      "totalGeneratedMothersRetained": 7,
+      "heldEarthInterpretationMothers": 1,
+      "completeAddedGroups": 3,
+      "inheritedQualifiedGroups": 126,
+      "selectedGroups": 129,
+      "nativeMapDensityCases": 8,
+      "nativeCaptures": 20,
+      "sourceMapsAudited": 345,
+      "formalMapsAudited": 253,
+      "affectedMaps": 4
+    },
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "newurbanShoreTerrain": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-newurban-shore-qualification-r14.json",
+    "status": "PASS_COMPLETE_ORIGINAL_SHORES_SHARED_BEACH_MATERIAL_NATIVE_2X4X_AND_RELEASE",
+    "counts": {
+      "members": 11,
+      "sourceSubtiles": 44,
+      "independentDensityFrames": 88,
+      "completeDensityExports": 22,
+      "genuineImmutableMothersReferenced": 6,
+      "newSandMothers": 0,
+      "reusedBeachMaterials": 1,
+      "sourceMapsAudited": 345,
+      "formalMapsAudited": 253,
+      "affectedSourceMaps": 3,
+      "nativeMapDensityCases": 6,
+      "nativeTargetCaptures": 46,
+      "inheritedQualifiedGroups": 129,
+      "selectedGroups": 130
+    },
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "newurbanSandFootWalls": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-newurban-sand-foot-walls-qualification-r3.json",
+    "status": "PASS_COMPLETE_ORIGINAL_SAND_FOOT_WALLS_SHARED_BEACH_NATIVE_2X4X_AND_RELEASE",
+    "counts": {
+      "members": 2,
+      "sourceSubtiles": 9,
+      "independentDensityFrames": 18,
+      "authoredDensityFrames": 16,
+      "originalPlaceholderDensityFrames": 2,
+      "completeDensityExports": 4,
+      "genuineImmutableMothersReferenced": 1,
+      "sourceMapsAudited": 345,
+      "formalMapsAudited": 253,
+      "affectedSourceMaps": 1,
+      "nativeMapDensityCases": 2,
+      "nativeTargetCaptures": 4,
+      "inheritedQualifiedGroups": 130,
+      "selectedGroups": 131,
+      "mixedMainRaisedSandPixels": 210,
+      "mixedMainWallPixels": 210
+    },
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "newurbanPavedRoads": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-newurban-paved-roads-qualification-r3.json",
+    "status": "PASS_SEVEN_COMPLETE_ORIGINAL_PAVED_ROADS_QUALIFIED_MATERIALS_NATIVE_2X4X_AND_RELEASE",
+    "counts": {
+      "members": 7,
+      "sourceSubtiles": 62,
+      "independentDensityFrames": 124,
+      "materialComposedDensityFrames": 84,
+      "originalPlaceholderDensityFrames": 40,
+      "completeDensityExports": 14,
+      "newRasterArtwork": 0,
+      "newGenuineMothers": 0,
+      "reusedQualifiedIndependentDensityMaterials": 2,
+      "sourceMapsAudited": 345,
+      "formalMapsAudited": 253,
+      "affectedSourceMaps": 5,
+      "nativeMapDensityCases": 10,
+      "nativeTargetCaptures": 28,
+      "inheritedQualifiedGroups": 131,
+      "selectedGroups": 132
+    },
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "snowRoads": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-snow-roads-qualification-r23.json",
+    "status": "PASS_THREE_COMPLETE_ORIGINAL_SNOW_ROADS_MUD_SHOULDERS_ALL_NATIVE_2X4X_PORTS_AND_RELEASE",
+    "counts": {
+      "members": 3,
+      "sourceSubtiles": 14,
+      "independentDensityFrames": 28,
+      "authoredDensityFrames": 26,
+      "originalPlaceholderDensityFrames": 2,
+      "completeDensityExports": 6,
+      "immutableGenuineMothersReferenced": 3,
+      "newRawGenuineMothers": 0,
+      "qualifiedSharedEarthMaterialComponents": 1,
+      "sourceMapsAudited": 345,
+      "formalMapsAudited": 253,
+      "newlyAffectedYrMaps": 2,
+      "retainedRa2OriginalFallbackMaps": 5,
+      "originalRoadPlacements": 6,
+      "nativeMapDensityCases": 4,
+      "nativeTargetCaptures": 12,
+      "inheritedQualifiedSnowGroups": 42,
+      "selectedSnowGroups": 45
+    },
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "historicalSnowRoadCandidates": {
+    "review": "docs/campaign-art/yr-v1/terrain-snow-roads-native-review-r7.json",
+    "status": "HELD_NATIVE_TECHNICAL_PASS_ROADBED_TEXTURE_CONTACT_RECONSTRUCTION_PENDING",
+    "members": 3,
+    "selected": false,
+    "creditedAsCompleteHd": false,
+    "originalFallbackRetained": true,
+    "userVisualAcceptance": "PENDING",
+    "candidateHistory": "docs/campaign-art/yr-v1/terrain-snow-roads-candidate-reviews-r2-r6.json",
+    "candidatePack": {
+      "schemaVersion": 1,
+      "revision": "yr-snow-roads-r7",
+      "sha256": "34e408497b7b0601eab97c6825ffaafb1bf294a879c9ecac3abb32ceed806529"
+    },
+    "additionalGenuineMothers": 7,
+    "retainedSelection": {
+      "schemaVersion": 1,
+      "revision": "yr-snow-water-cliffs-r3",
+      "sha256": "ff193253b7bd1362d0577c31275c5d7f744caa5d20b1998f3b00c8c90e29c453"
+    },
+    "next": "Read actual adjacent accepted road contact textures and reconstruct bounded material continuations while preserving original geometry and accepted atlas bytes.",
+    "allPlacementAudit": {
+      "file": ".artifacts/yr-campaign/snow-road-actual-contact-audit-r3/report.json",
+      "sha256": "42c3c1448f947c802c0a63c048d0f41826e57be5e8b6c18dee01ed99ac400f28",
+      "instances": 6,
+      "allInstanceNativeValidation": "PENDING_CONTACT_RECONSTRUCTION"
+    },
+    "retainedEvidence": {
+      "file": "../project-history/yr-campaign-implementation-20261104/Art/TerrainSnowRoadContacts-r7/manifest.json",
+      "sha256": "61714515bfd2b6b0dbd246638255b4d8bcfdf6b3249f0f81227c25db642629d8",
+      "logicalFiles": 522,
+      "uniqueBlobs": 468,
+      "physicalBytes": 339480265,
+      "profilesCopied": 0,
+      "filesDeleted": 0
+    },
+    "alternateSourceAudit": {
+      "file": "../project-history/yr-campaign-implementation-20261104/Art/TerrainSnowRoadContacts-r7/alternate-source-audit-r1.log",
+      "sha256": "edbe8d758e85fbc761e8decc556f61a0d92d48615b4d4eb8da0c19fac94b47ba",
+      "roadMembers": 14,
+      "letterSuffixedAlternates": 0
+    },
+    "historicalOnly": true,
+    "supersededByQualification": "docs/campaign-art/yr-v1/terrain-snow-roads-qualification-r23.json"
+  },
+  "temperateDirtRoads": {
+    "qualification": "docs/campaign-art/yr-v1/terrain-temperate-dirtroad-qualification-r6.json",
+    "status": "PASS_TWO_COMPLETE_ORIGINAL_TEMPERATE_ROADS_ALL_NATIVE_2X4X_CONTACTS_AND_RELEASE",
+    "counts": {
+      "members": 2,
+      "sourceSubtiles": 12,
+      "independentDensityFrames": 24,
+      "authoredDensityFrames": 20,
+      "originalPlaceholderDensityFrames": 4,
+      "completeDensityExports": 4,
+      "immutableGenuineMothersReferenced": 2,
+      "newRawGenuineMothers": 0,
+      "qualifiedGrassAndSoilComponents": 2,
+      "sourceMapsAudited": 345,
+      "formalMapsAudited": 253,
+      "newlyAffectedYrMaps": 1,
+      "retainedRa2OriginalFallbackMaps": 4,
+      "originalRoadPlacements": 4,
+      "nativeMapDensityCases": 2,
+      "nativeTargetCaptures": 8,
+      "inheritedQualifiedTemperateGroups": 23,
+      "selectedTemperateGroups": 24
+    },
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "acceptedSnowUnitReuse": {
+    "qualification": "docs/campaign-art/yr-v1/accepted-snow-unit-reuse-qualification-r1.json",
+    "status": "PASS_ACCEPTED_UNIT_RESOURCE_REUSE_NATIVE_SNOW_GEOMETRY_SHADOWS_AND_RELEASE",
+    "counts": {
+      "families": 7,
+      "originalPaletteContexts": 8,
+      "completeOriginalBodyFrames": 2669,
+      "retainedDensityFrames": 5338,
+      "originalPaletteSensitivePoses": 106,
+      "nativeMissionDensityCases": 4,
+      "nativeCompleteBodyAndShadowBindings": 10676,
+      "nativeCaptures": 424,
+      "individuallyInspectedNativeSheets": 32,
+      "inspectedNativeBodyCaptures": 258,
+      "newArtwork": 0,
+      "newAtlases": 0,
+      "resourceFilesReplaced": 0,
+      "runtimeOrSelectionChanges": 0
+    },
+    "policy": "Reuse the existing accepted skirmish HD units. Preserve and document the actual Original indexed-palette difference; require a reproduced visible defect before proposing a bounded correction.",
+    "runtimeSelectionsChanged": 0,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "lunarSlopeCoverage": {
+    "status": "PASS_ORIGINAL_OPAQUE_CONTACTS_AUTHORED_RGB_ALL_MAP_SOURCE_AND_NATIVE_2X4X_RELEASE",
+    "qualification": "docs/campaign-art/yr-v1/lunar-slope-coverage-qualification-r2.json",
+    "selectedPack": {
+      "schemaVersion": 1,
+      "revision": "yr-lunar-complete-terrain-r2",
+      "sha256": "b82ae2b6e0fabe387706e2c82ffdfce6c632d247d0b7a1d089be65814e64b5c6"
+    },
+    "authoredRgbUnchanged": true,
+    "originalGeometryUnchanged": true,
+    "newArtwork": 0,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "publicCampaignFlow": {
+    "qualification": "docs/campaign-art/yr-v1/public-campaign-flow-qualification-r1.json",
+    "status": "PASS_ALL14_PUBLIC_ORIGINAL_ENTRIES_BOTH_FACTION_STARTS_HARD_RETRY_NEXT_MEDIA_DRAIN_AND_EDITION_ISOLATION",
+    "playableMaps": 14,
+    "factionFirstStarts": 2,
+    "directStarts": 14,
+    "hardRetryAndNext": true,
+    "oldSceneAndMediaRelease": true,
+    "editionIsolation": true,
+    "userAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "loadingProduction": {
+    "status": "PASS_ALL14_SOURCE_BOUND_LOADING_NATIVE_EXPORTS_THREE_LANGUAGE_LAYOUT_BUDGETS_AND_RELEASE",
+    "qualification": "docs/campaign-art/yr-v1/loading-pages-qualification-r1.json",
+    "complete": 14,
+    "total": 14,
+    "reusedUnitPhotoSlots": 39,
+    "newUnitPhotos": 0,
+    "userVisualAcceptance": "ACCEPTED_20261109_CURRENT_SELECTED_DELIVERY"
+  },
+  "macResourceClosure": {
+    "status": "PASS_POST_CLEANUP_SELECTED_RESOURCES_EXACT",
+    "plan": {
+      "file": "/Users/Aone/RA2remaster/RA2-HD-YR-Campaigns-Mac-20261109-r6-final/selected-resources.json",
+      "sha256": "1dbbdb3980c01306a1b4d686f7d4e6fdc8287acc72f739ec77ba5eaa5af7e2a1"
+    },
+    "registration": {
+      "file": "/Users/Aone/RA2remaster/project-history/yr-campaign-accepted-20261109/Validation/resource-plan.json",
+      "sha256": "7e7f65f81a149f1b4a4edbd8671d12fe14a07d905b9fb50c33b59a94902b390d"
+    },
+    "resourceFiles": 14542,
+    "campaignFiles": 1764,
+    "totalFiles": 16306,
+    "routes": 16866,
+    "selections": 211,
+    "theaterLayers": 12,
+    "metadataOverrides": 0
+  },
+  "runtimeSourceHead": "3cc718033e04a46344b463405d485b78988d8181",
+  "finalHost": {
+    "file": "/Users/Aone/RA2remaster/project-history/yr-campaign-accepted-20261109/Validation/HostAfter/summary.json",
+    "sha256": "aa67cb30dd55d95d1435241dab3ac0dbdaa57774da0d96a2c8d4f2b460858812",
+    "counts": {
+      "pass": 2201,
+      "failedCases": 0,
+      "loadErrors": 0,
+      "skipped": 0,
+      "processErrors": 0
+    },
+    "executions": 320,
+    "omittedFiles": 0
+  },
+  "finalDelivery": {
+    "file": "docs/yr-campaign-feedback-delivery-20261109-r6.json",
+    "sha256": "0417daf269c2a9325b44138a5427a808e34fa6b2557d7f36b5c1bb0c672ebda2"
+  },
+  "finalCleanup": {
+    "status": "PASS_SCOPED_RETIREMENT_PROTECTED_CONTENT_EXACT",
+    "receipt": "../project-history/yr-campaign-accepted-20261109/Cleanup/execution.json",
+    "protectedFiles": 180909,
+    "retiredDirectories": 192,
+    "retiredLogicalBytes": 253569255255,
+    "measuredFreeByteDelta": 192107601920,
+    "logicalBytesAreNotPhysicalRecovery": true,
+    "postCleanup": {
+      "file": "/Users/Aone/RA2remaster/project-history/yr-campaign-accepted-20261109/Cleanup/post-cleanup.json",
+      "sha256": "26ab94af00e4fa6fdf83933a4ca70a847dd16c217f229110cafda94b584ee1a8"
+    },
+    "postCleanupQaProfilesArchived": 1
+  },
+  "activeFeedback": null,
+  "activeSovietFeedback": null,
+  "latestFeedbackDelivery": "docs/yr-campaign-feedback-delivery-20261109-r6.json",
+  "activeCombinedFeedback": null,
+  "latestFeedbackRuntimeCommit": "3cc718033e04a46344b463405d485b78988d8181",
+  "currentFeedbackHost": {
+    "file": ".artifacts/yr-campaign/ground-r6-host-suite-r1/summary.json",
+    "sha256": "aa67cb30dd55d95d1435241dab3ac0dbdaa57774da0d96a2c8d4f2b460858812",
+    "counts": {
+      "pass": 2201,
+      "failedCases": 0,
+      "loadErrors": 0,
+      "skipped": 0,
+      "processErrors": 0
+    },
+    "executions": 320,
+    "omittedFiles": 0
+  },
+  "activeMaterialFeedback": null,
+  "materialFeedbackHost": {
+    "status": "PASS",
+    "cases": 223,
+    "failures": 0,
+    "files": 4,
+    "log": "/private/tmp/ra2-material-feedback-r4-focused-tests-r2.log",
+    "inheritedFullHost": "docs/yr-campaign-feedback-checkpoint-20261108-r3.json"
+  },
+  "acceptanceDate": "2026-11-09",
+  "acceptedRuntimeCommit": "3cc718033e04a46344b463405d485b78988d8181",
+  "latestUserAcceptance": "docs/yr-campaign-final-acceptance-20261109.json",
+  "finalHandoff": "docs/yr-campaign-final-handoff-20261109.md",
+  "retainedBaselineDelivery": {
+    "file": "/Users/Aone/RA2remaster/ra2-hd/docs/yr-campaign-delivery-20261108.json",
+    "sha256": "1402acfd106e11f6f9972f4f4168c0ce1ea613e9aa4fe537b62e75f14900db39"
+  },
+  "resolvedFeedbackLedgers": {
+    "activeFeedback": "docs/yr-campaign-allied-feedback-20261108.json",
+    "activeSovietFeedback": "docs/yr-campaign-soviet-feedback-20261108.json",
+    "activeCombinedFeedback": "docs/yr-campaign-feedback-checkpoint-20261108-r3.json",
+    "activeMaterialFeedback": "docs/yr-campaign-material-feedback-20261108-r4.json"
+  },
+  "retainedBaselineHost": {
+    "receipt": {
+      "file": ".artifacts/yr-campaign/host-final-r3/summary.json",
+      "sha256": "6614695747a3247a675d63491e4e8c040a30eee32cd8398255106a7bb0e5ef10"
+    },
+    "executions": 316,
+    "omissions": 0,
+    "pass": 2173,
+    "failedCases": 0,
+    "loadErrors": 0,
+    "skipped": 0,
+    "processErrors": 0
+  },
+  "retainedBaselineCleanup": {
+    "status": "PASS_AUDITED_DERIVED_OUTPUTS_RETIRED_AFTER_VERIFIED_DELIVERY",
+    "receipt": {
+      "file": "/Users/Aone/RA2remaster/project-history/yr-campaign-implementation-20261104/Cleanup/derived-cleanup-20261108.json",
+      "sha256": "676569af99098d4b543d46e4e116c0e2695ad238a75e8638f4a1327b0b6eb95e"
+    },
+    "retiredDirectories": 1388,
+    "retiredFiles": 121863,
+    "retiredLogicalBytes": 58042808221,
+    "measuredFreeByteDelta": 22353657856,
+    "logicalBytesAreNotPhysicalRecovery": true,
+    "postCleanup": {
+      "file": "/Users/Aone/RA2remaster/project-history/yr-campaign-implementation-20261104/Cleanup/post-cleanup-20261108.json",
+      "sha256": "15d9f6df4e4a91add3889da603a1a691536f1907010d3cd1fb899df1f4a2083d"
+    }
+  },
+  "retainedBaselineCheckpoint": "All fourteen original source goal chains, applicable failures, named process restarts, public entries, Hard Next/Retry and HD loading pages are qualified. The full host passes 2173 tests/316 executions; typecheck R102, frozen Mac app controls, actual Desktop ZIP extraction, 93-image offline review and audited derived cleanup pass. User acceptance is pending.",
+  "retainedBaselineRuntimeSourceHead": "f7388c782f8be98e444e1ce1dc1777e155d93127",
+  "retainedBaselineResourceClosure": {
+    "status": "PASS_COMPLETE_CURRENT_SELECTED_RESOURCE_REGISTRATION",
+    "plan": {
+      "file": ".artifacts/yr-campaign/mac-current-resource-plan-r5.json",
+      "sha256": "702cdf8a96fcf53b334cea03158ea159c3594d5ab8f4fe81b629b615d0a3889b"
+    },
+    "registration": {
+      "file": ".artifacts/yr-campaign/mac-resource-plan-registration-r3/report.json",
+      "sha256": "f3360d700e8e5edff782b4da27cfd5016ac723432228917b2e817a0ff4da176d"
+    },
+    "resourceFiles": 14542,
+    "campaignFiles": 1652,
+    "totalFiles": 16194,
+    "routes": 16646,
+    "selections": 211,
+    "theaterLayers": 12,
+    "metadataOverrides": 0
+  },
+  "postCleanupHost": {
+    "file": "/Users/Aone/RA2remaster/project-history/yr-campaign-accepted-20261109/Validation/HostAfter/summary.json",
+    "sha256": "aa67cb30dd55d95d1435241dab3ac0dbdaa57774da0d96a2c8d4f2b460858812",
+    "counts": {
+      "pass": 2201,
+      "failedCases": 0,
+      "loadErrors": 0,
+      "skipped": 0,
+      "processErrors": 0
+    },
+    "executions": 320,
+    "omittedFiles": 0
+  },
+  "remainingCommonWorkClosure": {
+    "date": "2026-11-12",
+    "authority": "docs/yr-campaign-final-acceptance-20261109.json",
+    "audit": "docs/m3-completion-and-main-cleanup-20261112.md",
+    "qualification": "Final acceptance supersedes the previous pending visual/retest strings. Existing source and platform evidence limits remain unchanged."
+  }
+}

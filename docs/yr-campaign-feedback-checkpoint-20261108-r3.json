@@ -1,0 +1,368 @@
+{
+  "schema": "yr-combined-campaign-feedback-checkpoint-v1",
+  "date": "2026-11-08",
+  "revision": "r3",
+  "status": "COMBINED_FEEDBACK_TECHNICALLY_QUALIFIED_USER_REVIEW_PENDING",
+  "originalPlayableMaps": 26,
+  "yrPlayableMaps": 14,
+  "semanticsVersion": 48,
+  "plannedWorldArtMaterialWaits": [],
+  "host": {
+    "file": ".artifacts/yr-campaign/combined-feedback-host-r2/summary.json",
+    "counts": {
+      "pass": 2200,
+      "failedCases": 0,
+      "loadErrors": 0,
+      "skipped": 0,
+      "processErrors": 0
+    },
+    "executions": 319,
+    "omitted": 0
+  },
+  "postHostMaterialChecks": [
+    {
+      "file": "/private/tmp/ra2-yr-bridge-road-family-r7-tests.log",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "file": "/private/tmp/ra2-yr-bridge-approach-r8-tests.log",
+      "passed": 213,
+      "failed": 0
+    }
+  ],
+  "typecheck": {
+    "status": "PASS",
+    "file": "/private/tmp/ra2-yr-combined-feedback-typecheck-r18.log"
+  },
+  "native": [
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-fixed-all01-r1/report.json",
+      "sha256": "b9d77f35d89107cd0156c4126990d6a27e0baed4085593f55c9d0d71bd8b82e8",
+      "status": "PASS_REPORTED_OPENING_REGRESSIONS_ORIGINAL_MAPS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-fixed-all02-r1/report.json",
+      "sha256": "eba8507e13c2e15b186a855b22c66d17b5088320c138e258000e67025315d4e7",
+      "status": "PASS_REPORTED_OPENING_REGRESSIONS_ORIGINAL_MAPS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-native-ui-r2/report.json",
+      "sha256": "f149725fd41aad991f8cbd27cc4e072c94ca3cd659db0083d7bf470e04ca091d",
+      "status": "PASS_ORIGINAL_CAMPAIGN_OBJECTIVES_AND_NATIVE_MOUSE_SKIP_WITH_UNLOCKED_POINTER"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-autofire-all01-factions46-r1/report.json",
+      "sha256": "a0dc5bd4ec85f24dc88d64f32fe366e12b46b0be7ca8a1dd9b799ab5bd3c4470",
+      "status": "PASS_REPORTED_OPENING_REGRESSIONS_ORIGINAL_MAPS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied03-autofire47-r1/report.json",
+      "sha256": "366c21beda3fd57af1c5904dcfecd799e98ea3a7cd6f01678f5638e0d38f31c8",
+      "status": "PASS_ORIGINAL_ALLIED03_TANK_AUTOMATIC_FIRE_AFTER_ORDINARY_MOVE_AND_STOP"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied01-garrison-feedback48-r2/report.json",
+      "sha256": "5860536e924e060be0590ecff1c78440bfe92f0240ac674c806523decd04374a",
+      "status": "PASS_NATIVE_SUPPORTED_ORIGINAL_GARRISON_AUTOMATIC_FIRE_RESIDENT_SAFE_SALE_AND_NAMED_RESTART"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied01-tanya-naval-mouse-4x-r1/report.json",
+      "sha256": "5bb803c967beac21e1969f9a81a8e88a08ce2be62d1ae95fb69a6b1f4fe07bff",
+      "status": "PASS_NATIVE_MOUSE_ORIGINAL_TANYA_SAPPER_AND_OUTER_FLAK_SHIP_DESTRUCTION"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-all04-overflight-r1/report.json",
+      "sha256": "bd4e4c6349bb4d7506dc75696705b1c268bfe64adf63a3c6b1068a183dd466cf",
+      "status": "PASS_ORIGINAL_TANYA_TRANSPORT_PYRAMID_OVERFLIGHT_NO_DEATH_OR_RESCUE"
+    },
+    {
+      "file": ".artifacts/yr-campaign/generated-crate-lighting-feedback-4x-r1/report.json",
+      "sha256": "ae9026f3cc373525b7af1419e7d20549f0a56c9ebad47725f338340da7e4b9e4",
+      "status": "PASS_NATIVE_ORIGINAL_DESTRUCTION_TRIGGER_HD_CRATE_AND_COMMON_PRISM_AUTHORED_LIGHT_REFERENCE"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied05-robot-feedback48-r2/report.json",
+      "sha256": "a53f99f825d1bb032c8a9f87450aafaf6dfbeaeef3bc918ded4838ec86664a56",
+      "status": "PASS_SUPPORTED_TRAINER_ALLIED05_SOURCE_HOUSES_CLEARED_ORIGINAL_VICTORY_AND_LIVE_HD_RESOURCES"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied05-live-battle48-4x-stress-r2/report.json",
+      "sha256": "95bc1cca7b024e3f270f8fe3df8a2811bb7897a0e39f152de4fd021f0b0e08ab",
+      "status": "PASS_NATIVE_REAL_TIME_ALLIED05_LARGE_FORCE_AND_HD_CAMERA_PRESSURE_OBSERVATION"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-all07-redeploy-r2/report.json",
+      "sha256": "573af7e8d978b90eb16fc2884055887162f09f4dd4413a5143c8463bf1a8b34f",
+      "status": "PASS_ORIGINAL_ALLIED07_CRITICAL_YARD_PACK_MCV_REDEPLOY_AND_RESTART"
+    },
+    {
+      "file": ".artifacts/yr-campaign/loading-briefing-flow-r3/report.json",
+      "sha256": "ffe9ef0bb9589db7fc5a8dbc92762bca9bfc10064859f33d0ebc39246a97b6c8",
+      "status": "PASS_NATIVE_ALL_FOURTEEN_YR_LOADING_BRIEFINGS_THREE_LANGUAGES_TWO_VIEWPORTS_WITH_SOURCE_PROJECTION_AND_EMBLEM_CLEARANCE"
+    },
+    {
+      "file": ".artifacts/yr-campaign/boris-return47-r1/report.json",
+      "sha256": "f050ed4bcfbf3548cd6a7ebfef64aca890cac49c3860daccfc8cd695ec1d040b",
+      "status": "PASS_NATIVE_ORIGINAL_SINGLE_ORDER_AIRSTRIKE_OBSERVATION_ONLY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet03-tanya-handoff47-trainer-r3/report.json",
+      "sha256": "ae2cc0bc90dfbc65db80b9e2d6a6240ea09e213042f4d183a253b554150fe8e9",
+      "status": "PASS_SUPPORTED_TRAINER_ORIGINAL_TANYA_SOURCE_MOVIE_HANDOFF_WITHOUT_DUPLICATION"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet06-ending-drain-r1/report.json",
+      "sha256": "bd2f329c582daf17311db3d4116add055334fd9d16accaba7a53e1393cbb8d8c",
+      "status": "PASS_NATIVE_ORIGINAL_SOVIET06_ENDING_NARRATION_DRAINS_NATURALLY_BEFORE_SCORE_WITH_FROZEN_SIMULATION"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet06-ending-public-next-r2/report.json",
+      "sha256": "7fd5c02db91381c35b139a5ae4c85a36db951ed4110c23580155228aaea70bbc",
+      "status": "PASS_NATIVE_ORIGINAL_SOVIET06_ENDING_NARRATION_DRAINS_NATURALLY_BEFORE_SCORE_WITH_FROZEN_SIMULATION"
+    },
+    {
+      "file": ".artifacts/yr-campaign/dog-protection-native-r2/report.json",
+      "sha256": "2899f3c95e69078aaa3b1b302875ae2b0d64ccab9947845f242f934ff2783241",
+      "status": "PASS_NATIVE_SUPPORTED_DOG_PROTECTION_LIMBO_BITE_IMMUNITY_NAMED_RESTART_AND_UNPROTECTED_CONTROL"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet02-building-state-2x-r2/report.json",
+      "sha256": "c0df1ae5b35ab7c018dd59a36810d8b49323d24a9edeaabf8d6e85e9f07a47ba",
+      "status": "PASS_NATIVE_RENDERER_HEALTH_STATE_INSPECTION_WITH_UNCHANGED_SIMULATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet02-building-state-4x-r2/report.json",
+      "sha256": "2e5fd22bb1b67cabf6775b0046b4014dbe0e232908b4e0986347392963fb317a",
+      "status": "PASS_NATIVE_RENDERER_HEALTH_STATE_INSPECTION_WITH_UNCHANGED_SIMULATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied01-building-state-2x-r3/report.json",
+      "sha256": "74af941aae17c164dc10253f7497087f498b655c92a3adc39ba6b31b5bd19b79",
+      "status": "PASS_NATIVE_RENDERER_HEALTH_STATE_INSPECTION_WITH_UNCHANGED_SIMULATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied01-building-state-4x-r2/report.json",
+      "sha256": "dc00616957810d24e55708717100d406a2ab7fab548227c197e2ee0ec919cc18",
+      "status": "PASS_NATIVE_RENDERER_HEALTH_STATE_INSPECTION_WITH_UNCHANGED_SIMULATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet02-chronosphere-charge-2x-r2/report.json",
+      "sha256": "32e45f19f599866b0a2972afc52b70536568e8428fd0b04642ed09dc1a4b3bd9",
+      "status": "PASS_NATIVE_ORIGINAL_AND_HD_SUPERWEAPON_FRAMES_WITH_UNCHANGED_CLOCKS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet02-chronosphere-charge-4x-r2/report.json",
+      "sha256": "3e637da19ee79575f925dd3307373897a65ed08e6d814594a42a2182a3f2c055",
+      "status": "PASS_NATIVE_ORIGINAL_AND_HD_SUPERWEAPON_FRAMES_WITH_UNCHANGED_CLOCKS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/ground-slope-real-2x-r1/report.json",
+      "sha256": "e8e8ae019c10c2af2eb61bbeb10000a347d61eeb8fed3b261c125a521186f8e9",
+      "status": "PASS_NATIVE_ORDINARY_MOON_TANK_MOVEMENT_AND_RIGID_HD_SLOPE_SURFACES"
+    },
+    {
+      "file": ".artifacts/yr-campaign/ground-slope-real-4x-r1/report.json",
+      "sha256": "656e6ee4907202d977cbe6dfe775ad06943d77e690d7296d2b5fdf04d8f3cf7c",
+      "status": "PASS_NATIVE_ORDINARY_MOON_TANK_MOVEMENT_AND_RIGID_HD_SLOPE_SURFACES"
+    },
+    {
+      "file": ".artifacts/yr-campaign/lunar-contact-native-2x-r4/report.json",
+      "sha256": "73e34c6e5f2464fa93fa055f94a73041618b305254a3218e390804336146281b",
+      "status": "PASS_NATIVE_ORDINARY_MOON_TANK_MOVEMENT_AND_RIGID_HD_SLOPE_SURFACES"
+    },
+    {
+      "file": ".artifacts/yr-campaign/lunar-contact-native-4x-r4/report.json",
+      "sha256": "38bec2fa86c5ef3c9ce9a96e55a96c459e832937d6a4a52d90d5d51b14ef1ee0",
+      "status": "PASS_NATIVE_ORDINARY_MOON_TANK_MOVEMENT_AND_RIGID_HD_SLOPE_SURFACES"
+    },
+    {
+      "file": ".artifacts/yr-campaign/cahead-material-native-2x-r2/report.json",
+      "sha256": "9bd6f1ed3c6e8a37a29aada3e8188020e26f4d0f0f83b9380e929a496705fe09",
+      "status": "PASS_COMPLETE_ORIGINAL_BUILDING_HD_TURRET_BEARINGS_BODY_STATES_AND_OWNER_MATERIAL"
+    },
+    {
+      "file": ".artifacts/yr-campaign/cahead-material-native-4x-r2/report.json",
+      "sha256": "4fc686e82d554752f16ac544ab810a6391f296256eb585eba31a3b0af1f6d32d",
+      "status": "PASS_COMPLETE_ORIGINAL_BUILDING_HD_TURRET_BEARINGS_BODY_STATES_AND_OWNER_MATERIAL"
+    },
+    {
+      "file": ".artifacts/yr-campaign/cahead-material-combat-4x-r2/report.json",
+      "sha256": "8a4b0a932c04f6a8b0348b46e0cde75915397a264624ba6daeb8a3659c710928",
+      "status": "PASS_NATIVE_ORDINARY_SOURCE_ATTACK_COMPLETE_HD_BUST_DESTRUCTION_AND_RUBBLE"
+    },
+    {
+      "file": ".artifacts/yr-campaign/cahead-material-missing-bearing-4x-r2/report.json",
+      "sha256": "9e4061e7d17906d48ee5e5ed8e7bbcc79788fdd33ba66b001627f77068d4d4b8",
+      "status": "PASS_NATIVE_COMPLETE_ORIGINAL_BUILDING_FALLBACK_ON_MISSING_TURRET_DIRECTION"
+    },
+    {
+      "file": ".artifacts/yr-campaign/castle-footing-state-4x-r3/report.json",
+      "sha256": "ba98af0fcf0ae06a7f73d39cf49c3939aead9756cb972ef89ae6658664822d85",
+      "status": "PASS_NATIVE_RENDERER_HEALTH_STATE_INSPECTION_WITH_UNCHANGED_SIMULATION_DIAGNOSTIC_ONLY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/castle-footing-all87-native-2x-r3/report.json",
+      "sha256": "5a1e63bbb2d345f8efc322a25d907452e822d2fd22c4acdc51f9660baecb9af2",
+      "status": "PASS_NATIVE_FROZEN_COMPLETE_SHP_DISPLAY_STATES_AND_BOTH_AXES_HD_DENSITY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/castle-footing-all87-native-4x-r3/report.json",
+      "sha256": "421107e9014f62128d9e0aeafb0fbb5af06e97aabd8d45139d67c9b98a9546f1",
+      "status": "PASS_NATIVE_FROZEN_COMPLETE_SHP_DISPLAY_STATES_AND_BOTH_AXES_HD_DENSITY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/castle-combat-footing-4x-r3/report.json",
+      "sha256": "bbdb1185038d90e854c221c4a181a5576486cd7d276a0b211247f3491c63da88",
+      "status": "PASS_NATIVE_REAL_COMBAT_CASTLE_DESTRUCTION_HD_COLLAPSE_AND_ORIGINAL_VICTORY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-hd-tour-all02-4x-r1/report.json",
+      "sha256": "5f3885973a3adfed065e080d9c5f9420595578f9632747fcfe1f839532c7e039",
+      "status": "PASS_NATIVE_HD_CAMERA_TOUR_AND_RETURN_WITH_UNCHANGED_FROZEN_SOURCE_WORLD"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-hd-tour-all05-4x-r1/report.json",
+      "sha256": "f49c6a0442e9af8d9f63ee3758338fb51e5c0e764accbe575ffc165bb4924b20",
+      "status": "PASS_NATIVE_HD_CAMERA_TOUR_AND_RETURN_WITH_UNCHANGED_FROZEN_SOURCE_WORLD"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-hd-tour-all02-2x-r1/report.json",
+      "sha256": "a46cf265e7cfd46e59aafd62579ffe970dca2070e7d6c4c3a5006bf1ec7f0dfd",
+      "status": "PASS_NATIVE_HD_CAMERA_TOUR_AND_RETURN_WITH_UNCHANGED_FROZEN_SOURCE_WORLD"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied-feedback-hd-tour-all05-2x-r1/report.json",
+      "sha256": "8d18b2f3ccfca274ade1172f9145aab5b5165cc26010f33fe4c0afaebb428922",
+      "status": "PASS_NATIVE_HD_CAMERA_TOUR_AND_RETURN_WITH_UNCHANGED_FROZEN_SOURCE_WORLD"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied06-bridge-feedback48-post-timer-4x-r3/report.json",
+      "sha256": "c4a5ff2a90b22a5aa54b8fc099aa44fcfa2f05991e13b6b67e18f9d909e3f118",
+      "status": "OBSERVED_ORIGINAL_ALLIED06_BRIDGE_TEAMS_AND_CONTACTS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied06-bridge-approach-r9-2x-r1/report.json",
+      "sha256": "40b7b953f563b4d50426ae70ac6516852dd85e48d02945b5421ce15dcf373f60",
+      "status": "OBSERVED_ORIGINAL_ALLIED06_BRIDGE_TEAMS_AND_CONTACTS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied06-bridge-approach-r9-4x-r1/report.json",
+      "sha256": "f61d4e5803bf202ac513feba68399654e084bbb538b5ad9280f78c242343da7f",
+      "status": "OBSERVED_ORIGINAL_ALLIED06_BRIDGE_TEAMS_AND_CONTACTS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied06-real-towers-bridge-r9-4x-r1/report.json",
+      "sha256": "abca7827d9c6b2167eda7068354afcc253bc2e5b79db70e688d6d9cc9e467a1a",
+      "status": "OBSERVED_ORIGINAL_ALLIED06_BRIDGE_TEAMS_AND_CONTACTS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/allied06-real-towers-bridge-original-r3/report.json",
+      "sha256": "62f851a34fbf87436866c93c0667cee0ee9a636a9804b8bc7168df72e7b3ee56",
+      "status": "OBSERVED_ORIGINAL_ALLIED06_BRIDGE_TEAMS_AND_CONTACTS"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet01-opening47-r1/report.json",
+      "sha256": "d4778ba9bfb6a973084f942735a8505bb60ce743d3851c81d0fbe5875bb6c1e1",
+      "status": "OBSERVED_ORIGINAL_SOVIET_OPENING_HEALTH_AND_SQUID_MOVEMENT"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet05-squid-heading48-2x-r3/report.json",
+      "sha256": "2ff11faa1b528390ee7b527e5670139198358102b1f24322a7fb11e31ad4ba34",
+      "status": "OBSERVED_ORIGINAL_SOVIET_OPENING_HEALTH_AND_SQUID_MOVEMENT"
+    },
+    {
+      "file": ".artifacts/yr-campaign/soviet05-squid-heading48-4x-r3/report.json",
+      "sha256": "fe8dc80d687050097ece328df72d896c73b6041b04ca4080ec740d35d0cca900",
+      "status": "OBSERVED_ORIGINAL_SOVIET_OPENING_HEALTH_AND_SQUID_MOVEMENT"
+    },
+    {
+      "file": ".artifacts/yr-campaign/water-dinosaur-idle-repair-2x-r4/report.json",
+      "sha256": "4f039a66aa986a4bec90e9301c997c06219b1c1fc01f89494ce3577d1959e5e6",
+      "status": "OBSERVED_CONTINUOUS_NATIVE_WATER_DINOSAUR_SILHOUETTE_AND_POSE_GEOMETRY"
+    },
+    {
+      "file": ".artifacts/yr-campaign/water-dinosaur-idle-repair-r2/report.json",
+      "sha256": "56de96ad968b238e313c722913b5fa635e3f5d00419ff6b67497d01814864784",
+      "status": "OBSERVED_CONTINUOUS_NATIVE_WATER_DINOSAUR_SILHOUETTE_AND_POSE_GEOMETRY"
+    }
+  ],
+  "originalAllied05Victory": {
+    "policy": 48,
+    "tick": 67027,
+    "remainingHouseObjects": 0,
+    "priorReproduction": ".artifacts/yr-campaign/allied05-robot-feedback47-r1/live-stranded-garrison-audit.json",
+    "rootCause": "Original house fire sales disposed of occupied zero-cost civilian buildings without releasing residents. New policy48 evacuates residents before disposal; victory event11 still counts legitimate limbo residents.",
+    "orphanResidentsBefore": 66,
+    "assistance": "Supported trainer invulnerability, reveal, money, power and production; ordinary serialized construction, movement and attacks. Modified-play regression, no unmodified goal-chain credit."
+  },
+  "realTimeAllied05": {
+    "elapsedMs": 25540.20499998331,
+    "fromTick": 7891,
+    "toTick": 9604,
+    "frames": 1427,
+    "medianMs": 16.669999999998254,
+    "p95Ms": 33.099999999998545,
+    "p99Ms": 33.345000000001164,
+    "over50Ms": 3,
+    "realTimeSimulation": true,
+    "acceleratedStepsDuringMeasurement": 0,
+    "longTaskCount": 3,
+    "maxActorMiB": 531.1541709899902,
+    "actualSurvivingCameraTargetsHd": true,
+    "capsChanged": false,
+    "pressure": "Two bounded 128 MiB QA workers with 80 ms CPU bursts. Physical 8/16 GiB targets and arbitrary external process loads remain unqualified."
+  },
+  "bridgeAssault": {
+    "freshPolicy": 48,
+    "originalInputReplayUntil": 19230,
+    "onBridgeActors": 19,
+    "laterMovementObserved": 18,
+    "playerAttackOrdersDuringObservation": 0,
+    "originalTriggersRulesAndTasksUnchanged": true,
+    "qualification": "Nineteen original actors cross the bridge. Eighteen are observed moving later; the remaining actor leaves the live sample. The exact user stalled route was not reproduced."
+  },
+  "originalRoadMapAudit": {
+    "file": ".artifacts/yr-campaign/all-map-road-slopes-feedback48-r8/report.json",
+    "sha256": "43705706c6ac1b18c9fb459e18d18b629ee9c296fddc10b2b30bfb8b21be7409",
+    "status": "PASS_ALL_ORIGINAL_CAMPAIGN_AND_ARCHIVED_SKIRMISH_MAP_SOURCE_SLOPE_IDENTITIES"
+  },
+  "originalSourceFindings": {
+    "initialSoviet01Health": "Original units spawn full. Real Grand Cannon hits subsequently reduce their health; no artificial heal was added.",
+    "allied01TimeMachine": "The original CATIME01 contains fixed red trim outside its ownership ramp. This source material is retained.",
+    "damagedLaboratory": "Original damaged CALAB/CNLAB has no remap indices. New YR laboratory masks keep the accepted paint bytes and make live stripes follow the house.",
+    "soviet05StatueObjective": "Easy/Normal require the submarine pen and source ending chain. Hard also requires non-naval VehicleClass/InfantryClass clearance for the named Yuri houses. Buildings are excluded, so there is no required statue-destruction objective at any difficulty."
+  },
+  "visualReview": {
+    "status": "PENDING_USER",
+    "reopened": [
+      "Aquatic DNOB exposed silhouette",
+      "Lunar contacts",
+      "Yuri statue head metal",
+      "Castle foundation and destruction states",
+      "Laboratory faction stripes",
+      "Bridge road contacts"
+    ],
+    "oldSnowAndConstructionArtwork": "RETAINED",
+    "acceptedUnitArtwork": "REUSED"
+  },
+  "userRouteRetests": [
+    "Allied04 transport-over-pyramid rescue did not reproduce in the original source route; source rescue conditions are retained.",
+    "Allied06 exact stalled-on-bridge user route did not reproduce; original fresh48 assault observation passes."
+  ],
+  "retainedOriginalQualifications": [
+    "All14 unmodified source45 campaign goal qualifications remain historical.",
+    "Fresh48 targeted and supported-play regressions do not establish all14 new-version unmodified full victories at every difficulty.",
+    "The exact prior Soviet01 missing-cell crash trigger was not reproduced technically; the user passed the correction.",
+    "Original installation includes CnCNet patches. Pristine executable RNG/AI/particle equivalence retains its existing boundary."
+  ],
+  "realProfilesTouched": false,
+  "windows": "NOT_RUN_ON_THIS_MAC",
+  "userAcceptance": "PENDING",
+  "retainedDeliveries": [
+    "V56",
+    "YR r1",
+    "YR r2"
+  ],
+  "localMainOnly": true
+}

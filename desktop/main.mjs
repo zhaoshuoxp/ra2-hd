@@ -7,13 +7,24 @@ import { bundledDirectory } from './bundled-layout.mjs';
 import { installDisplay } from './display.mjs';
 import { installControls } from './controls.mjs';
 import { registerHdResourcesWhenReady } from './hd-startup.mjs';
+import { persistGameError } from './game-error-log.mjs';
+import { registerCampaignTerrainResources } from './terrain-profile.mjs';
 import { validateProfile } from './profile.mjs';
+import { registerMusicResources } from './music-profile.mjs';
+import { registerMovieResources } from './movie-profile.mjs';
+import { registerHdMovieResources } from './hd-movie-profile.mjs';
+import { registerCampaignEnvironmentAliases } from './campaign-environment-aliases.mjs';
+import { validateCampaignResources, registerCampaignEnvironmentResources } from './campaign-profile.mjs';
 import { createHandler } from './protocol.mjs';
 import { isGameURL, isLocalRequest } from './url-policy.mjs';
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const packageMetadata = JSON.parse(await fs.readFile(path.join(appRoot, 'package.json'), 'utf8'));
-const unified = packageMetadata.name === 'ra2-hd-unified-desktop';
+const startUrl = packageMetadata.campaignEntry === 'ra2-soviet01'
+    ? 'ra2://game/?edition=ra2&campaign=soviet01' : 'ra2://game/';
+const development = packageMetadata.name === 'redalert2-web';
+const unified = development || packageMetadata.name === 'ra2-hd-unified-desktop';
+const campaignReview = unified && packageMetadata.reviewMilestone === 'M3.1-DIAGNOSTIC';
 const environmentReview = unified && packageMetadata.reviewMilestone === 'M2.1-TEMPERATE';
 const editionRevision = packageMetadata.reviewMilestone?.match(/^DUAL-EDITION-(R[12345])$/)?.[1];
 const trainerReview = unified && packageMetadata.reviewMilestone === 'OFFLINE-TRAINER-R1';
@@ -28,7 +39,7 @@ const sovietUnitReview = unified && packageMetadata.reviewMilestone === 'M1.7';
 const sovietBatchR2 = unified && packageMetadata.reviewMilestone === 'M1.6b-R2';
 const sovietCompleteReview = unified && ['SOVIET-BUILDINGS-R1', 'SOVIET-BUILDINGS-R2', 'SOVIET-BUILDINGS-R3', 'SOVIET-BUILDINGS-R4'].includes(packageMetadata.reviewMilestone);
 const sovietRevision = packageMetadata.reviewMilestone?.match(/^SOVIET-BUILDINGS-(R[12345])$/)?.[1] ?? 'R1';
-const profileName = environmentReview ? 'RA2 HD M2.1 Temperate' : yuriUnitReview ? 'RA2 HD Yuri Units D R1' : trainerReview ? 'RA2 HD Offline Trainer R1' : yrUnitReview ? 'RA2 HD YR Soviet Units R1' : buildingCoverageReview ? 'RA2 HD Soviet Buildings M1.6C R1' : editionReview ? `RA2 HD Dual Edition ${editionRevision}` : sovietUnitReview ? 'RA2 HD M1.7' : uiReview ? 'RA2 HD UI M1.8' : sovietCompleteReview ? `RA2 HD Soviet Buildings ${sovietRevision}` : sovietBatchR2 ? 'RA2 HD M1.6b R2' : sovietBatchReview ? 'RA2 HD M1.6b' : napowrReview ? 'RA2 HD M1.6a' : unified ? 'RA2 HD M1.5' : 'RA2 HD';
+const profileName = campaignReview ? 'RA2 HD M3.1 Campaign Diagnostic' : environmentReview ? 'RA2 HD M2.1 Temperate' : yuriUnitReview ? 'RA2 HD Yuri Units D R1' : trainerReview ? 'RA2 HD Offline Trainer R1' : yrUnitReview ? 'RA2 HD YR Soviet Units R1' : buildingCoverageReview ? 'RA2 HD Soviet Buildings M1.6C R1' : editionReview ? `RA2 HD Dual Edition ${editionRevision}` : sovietUnitReview ? 'RA2 HD M1.7' : uiReview ? 'RA2 HD UI M1.8' : sovietCompleteReview ? `RA2 HD Soviet Buildings ${sovietRevision}` : sovietBatchR2 ? 'RA2 HD M1.6b R2' : sovietBatchReview ? 'RA2 HD M1.6b' : napowrReview ? 'RA2 HD M1.6a' : unified && !development ? 'RA2 HD M1.5' : 'RA2 HD';
 app.setName(profileName);
 app.setPath('userData', process.env.RA2_DESKTOP_USER_DATA ? path.resolve(process.env.RA2_DESKTOP_USER_DATA) : environmentReview ? path.resolve(appRoot, '../../../../M2.1-Review-Profile') : yuriUnitReview ? path.resolve(appRoot, '../../../../Yuri-Review-Profile') : trainerReview ? path.resolve(appRoot, '../../../../Trainer-Review-Profile') : path.join(app.getPath('appData'), profileName));
 app.commandLine.appendSwitch('disable-background-networking');
@@ -43,6 +54,20 @@ const registration = path.join(app.getPath('userData'), 'resource-registration.j
 async function register(directory, persist) {
     const started = performance.now();
     profile = await validateProfile(directory);
+    await registerMusicResources(profile, record);
+    await registerMusicResources(profile, record, 'yr');
+    const campaignDirectory = process.env.RA2_CAMPAIGN_RESOURCE_ROOT ?? path.join(directory, 'campaign');
+    try {
+        const campaign = await validateCampaignResources(campaignDirectory);
+        profile.campaignRoot = campaign.root;
+        for (const [route, file] of campaign.routes) profile.routes.set(route, file);
+        for (const [route, value] of campaign.selections) profile.selections.set(route, value);
+    } catch (error) {
+        // A corrupt optional campaign must never replace or disable accepted skirmish resources.
+        record({ type: 'campaign-unavailable', message: error.message });
+    }
+    await registerMovieResources(profile, record);
+    await registerHdMovieResources(profile, record);
     const profileMs = performance.now() - started;
     if (unified) {
         const hd = await registerHdResourcesWhenReady(profile.root, record, {
@@ -53,6 +78,15 @@ async function register(directory, persist) {
         for (const [route, file] of hd.routes) profile.routes.set(route, file);
         for (const [route, value] of hd.selections) profile.selections.set(route, value);
         profile.uiRoot = hd.uiRoot;
+        if (profile.campaignRoot && process.env.RA2_CAMPAIGN_FROZEN_TERRAIN === '1') {
+            const terrain = await registerCampaignTerrainResources(profile.root, record);
+            for (const [route, file] of terrain.routes) profile.routes.set(route, file);
+            for (const [route, value] of terrain.selections) profile.selections.set(route, value);
+        }
+        if (profile.campaignRoot) {
+            await registerCampaignEnvironmentResources(profile, record);
+            await registerCampaignEnvironmentAliases(profile, record);
+        }
     }
     record({ type: 'startup-registration', profileMs, totalMs: performance.now() - started });
     if (persist) {
@@ -82,13 +116,13 @@ async function discover() {
         if (saved) {
             if (saved.schemaVersion !== 1 || typeof saved.directory !== 'string') throw new Error('Invalid saved resource registration');
             await register(saved.directory, unified);
-        } else if (!unified && !app.isPackaged && process.env.RA2_DESKTOP_NO_DISCOVERY !== '1') {
+        } else if (development && !app.isPackaged && process.env.RA2_DESKTOP_NO_DISCOVERY !== '1') {
             await register(path.join(appRoot, '.local'), true);
         } else { throw new Error('No imported profile registered yet.'); }
     } catch (e) { profile = undefined; profileError = e.message; record({ type: 'profile-unavailable', message: profileError }); }
 }
 function openWindow() {
-    window = new BrowserWindow({ title: buildingCoverageReview ? 'Red Alert 2 HD — Soviet Buildings M1.6C' : editionReview ? 'Red Alert 2 HD — RA2 / Yuri’s Revenge' : uiReview ? 'Red Alert 2 HD — UI M1.8' : sovietCompleteReview ? 'Red Alert 2 HD — Soviet Buildings Review' : sovietBatchReview ? 'Red Alert 2 HD — M1.6b Review' : napowrReview ? 'Red Alert 2 HD — M1.6a Review' : unified ? 'Red Alert 2 HD — M1.5' : 'Red Alert 2 HD', width: 1280, height: 960, backgroundColor: '#171b20',
+    window = new BrowserWindow({ title: campaignReview ? 'Red Alert 2 HD — M3.1 Campaign Diagnostic' : buildingCoverageReview ? 'Red Alert 2 HD — Soviet Buildings M1.6C' : editionReview ? 'Red Alert 2 HD — RA2 / Yuri’s Revenge' : uiReview ? 'Red Alert 2 HD — UI M1.8' : sovietCompleteReview ? 'Red Alert 2 HD — Soviet Buildings Review' : sovietBatchReview ? 'Red Alert 2 HD — M1.6b Review' : napowrReview ? 'Red Alert 2 HD — M1.6a Review' : unified && !development ? 'Red Alert 2 HD — M1.5' : 'Red Alert 2 HD', width: 1280, height: 960, backgroundColor: '#171b20',
         webPreferences: { session: gameSession, preload: path.join(appRoot, 'desktop/preload.cjs'),
             contextIsolation: true, sandbox: true, nodeIntegration: false, webSecurity: true, webviewTag: false } });
     window.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));
@@ -97,6 +131,12 @@ function openWindow() {
     window.webContents.on('will-attach-webview', event => event.preventDefault());
     window.webContents.on('render-process-gone', (_, details) => record({ type: 'renderer-gone', ...details }));
     window.webContents.on('console-message', details => {
+        try {
+            if (persistGameError(details.message, app.getPath('userData'), {
+                sourceHead: packageMetadata.sourceHead, app: app.getAppPath(),
+                platform: process.platform, arch: process.arch, electron: process.versions.electron,
+            })) record({ type: 'game-error-saved' });
+        } catch (error) { record({ type: 'game-error-write-failed', message: error.message }); }
         const prefix = '[World HD match] ';
         if (!details.message?.startsWith(prefix) || details.message.length > 65536) return;
         try {
@@ -111,7 +151,7 @@ function openWindow() {
         } catch { /* Other renderer console messages remain outside this diagnostic. */ }
     });
     window.on('closed', () => { window = undefined; });
-    window.loadURL('ra2://game/');
+    window.loadURL(startUrl);
     displayControl?.restore();
 }
 app.whenReady().then(async () => {
@@ -135,7 +175,7 @@ app.whenReady().then(async () => {
             !isGameURL(event.senderFrame.url) || !['/', '/__desktop/profile'].includes(new URL(event.senderFrame.url).pathname) || profile) return 'Resource selection is unavailable here.';
         const result = await dialog.showOpenDialog(window, { title: 'Choose existing imported RA2 profile', properties: ['openDirectory'] });
         if (result.canceled) return 'Selection cancelled; existing data is unchanged.';
-        try { await register(result.filePaths[0], true); await window.loadURL('ra2://game/'); return 'Registered'; }
+        try { await register(result.filePaths[0], true); await window.loadURL(startUrl); return 'Registered'; }
         catch (e) { profile = undefined; profileError = e.message; return `Unable to use this profile: ${profileError}`; }
     });
     Menu.setApplicationMenu(Menu.buildFromTemplate([

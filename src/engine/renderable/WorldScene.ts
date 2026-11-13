@@ -11,6 +11,8 @@ import { updateSceneMatrices } from '../gfx/SceneMatrices';
 import { BoxedVar } from '../../util/BoxedVar';
 import { setMeshLineViewportResolution } from './fx/MeshLineResolution';
 import * as THREE from 'three';
+import { WorldAnimationClock } from '../WorldAnimationClock';
+import type { CampaignChronoScreenFx } from '../gfx/CampaignChronoScreenFx';
 const AMBIENT_LIGHT_INTENSITY = 0.8;
 const CAMERA_FAR = 16000;
 const SHADOW_QUALITY_MAP = new Map([
@@ -19,6 +21,7 @@ const SHADOW_QUALITY_MAP = new Map([
     [ShadowQuality.Low, 2]
 ]);
 export class WorldScene extends RenderableContainer {
+    public screenEffect?: CampaignChronoScreenFx;
     public scene: THREE.Scene;
     public camera: THREE.OrthographicCamera;
     public viewport: {
@@ -31,6 +34,9 @@ export class WorldScene extends RenderableContainer {
     public cameraZoom: CameraZoom;
     public shadowQuality: BoxedVar<ShadowQuality>;
     private initialized: boolean = false;
+    private animationClock = new WorldAnimationClock();
+    private animationPaused: () => boolean = () => false;
+    setAnimationPauseProvider(provider: () => boolean): void { this.animationPaused = provider; }
     private ambientLight: THREE.AmbientLight;
     private directionalLight: THREE.DirectionalLight;
     private _onBeforeCameraUpdate = new EventDispatcher<WorldScene, number>();
@@ -216,7 +222,8 @@ export class WorldScene extends RenderableContainer {
         this.directionalLight.intensity = ambientIntensity;
     }
     update(deltaTime: number, time?: number): void {
-        super.update(deltaTime, time);
+        const paused = this.animationPaused();
+        super.update(this.animationClock.update(deltaTime, paused), paused ? 0 : time);
         this._onBeforeCameraUpdate.dispatch(this, deltaTime);
         const zoom = this.cameraZoom.getZoom();
         const pan = this.cameraPan.getPan();

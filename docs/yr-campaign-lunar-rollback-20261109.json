@@ -1,0 +1,21 @@
+{
+  "schema": "yr-user-requested-lunar-material-rollback-v1",
+  "status": "PASS_EXACT_PRIOR_R1_R2_SELECTION_AND_NATIVE_2X_4X",
+  "fromSelection": {
+    "schemaVersion": 1,
+    "revision": "yr-lunar-contact-material-r4",
+    "sha256": "aee8a85adf5e734339f57b79875a0441c4f9c68f5896c468cf149215a447b845"
+  },
+  "toSelection": {
+    "schemaVersion": 1,
+    "revision": "yr-lunar-complete-terrain-r2",
+    "sha256": "b82ae2b6e0fabe387706e2c82ffdfce6c632d247d0b7a1d089be65814e64b5c6"
+  },
+  "retainedRejectedPackUnchanged": true,
+  "nativeGeometryAndOriginalMapsUnchanged": true,
+  "requiresNewArtwork": false,
+  "nativeReports": [
+    ".artifacts/yr-campaign/ground-volume-native-2x-r2/report.json",
+    ".artifacts/yr-campaign/ground-volume-native-4x-r2/report.json"
+  ]
+}

@@ -64,7 +64,10 @@ export class OctreeContainer extends RenderableContainer {
                 && !this.viewCuller.containsPosition(position, entry.extent);
             if (culled === entry.culled) continue;
             entry.culled = culled;
-            if (setViewCulled(entry.object!, culled) && !culled) entry.renderable.onViewCullRestore?.();
+            if (setViewCulled(entry.object!, culled)) {
+                entry.renderable.onViewCullChanged?.(!culled);
+                if (!culled) entry.renderable.onViewCullRestore?.();
+            }
         }
     }
     add(...objects: Renderable[]): void {

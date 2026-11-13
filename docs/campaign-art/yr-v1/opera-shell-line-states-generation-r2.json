@@ -1,0 +1,37 @@
+{
+  "schema": "yr-localized-opera-shell-line-edit-v1",
+  "tool": "image_gen.imagegen",
+  "jobs": [
+    {
+      "slot": 1,
+      "prompt": "Use case: precise-object-edit.\nAsset: an existing isometric RA2 HD Sydney Opera House damaged building sprite, a localized line-legibility revision.\nImage 1 is the exact edit target and is authoritative for every object, surface, damaged opening, fortification, ownership-color panel, silhouette, camera, scale, composition, lighting, palette and material. Image 2 is supporting reference ONLY for the modest visibility of the existing white-shell tile grid and curved course lines.\nChange only the visibility of the existing fine warm-gray square tile grout grid and curved course lines on the WHITE shell surfaces of Image 1, matching Image 2. Keep the same grid spacing and surface-following perspective. Lines should be fine, continuous, crisp and readable at game scale while retaining the existing smooth white ceramic light and shadow. Preserve existing shell ribs and edges. Do not add grid lines to red ownership panels. Preserve all existing damaged details exactly. Keep podium, stairs, windows, all geometry, lighting, palette and material finish unchanged. Do not repair damaged openings, move rubble, add damage, redraw the building or stylize it. Preserve the original transparent background, alpha, complete composition and framing. No added text, ground, cast-shadow plane, grain or noise. Return one full-size 1536 by 1024 RGBA image.",
+      "references": [
+        {
+          "file": ".local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r1/frame-1.png",
+          "sha256": "c92eb751614c0099a65c5c943845c38840bfb2c5eac40b65a3d7f59b45282667"
+        },
+        {
+          "file": ".local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r2/frame-0.png",
+          "sha256": "2b197ad9e5c5ddd1213eeb93ba39eb77f2a675ab30e04d0a415902db8036585d"
+        }
+      ],
+      "output": ".local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r2/frame-1.png"
+    },
+    {
+      "slot": 2,
+      "prompt": "Use case: precise-object-edit.\nAsset: an existing isometric RA2 HD Sydney Opera House garrison building sprite, a localized line-legibility revision.\nImage 1 is the exact edit target and is authoritative for every object, surface, damaged opening, fortification, ownership-color panel, silhouette, camera, scale, composition, lighting, palette and material. Image 2 is supporting reference ONLY for the modest visibility of the existing white-shell tile grid and curved course lines.\nChange only the visibility of the existing fine warm-gray square tile grout grid and curved course lines on the WHITE shell surfaces of Image 1, matching Image 2. Keep the same grid spacing and surface-following perspective. Lines should be fine, continuous, crisp and readable at game scale while retaining the existing smooth white ceramic light and shadow. Preserve existing shell ribs and edges. Do not add grid lines to red ownership panels. Preserve all existing garrison details exactly. Keep podium, stairs, windows, all geometry, lighting, palette and material finish unchanged. Do not repair damaged openings, move rubble, add damage, redraw the building or stylize it. Preserve the original transparent background, alpha, complete composition and framing. No added text, ground, cast-shadow plane, grain or noise. Return one full-size 1536 by 1024 RGBA image.",
+      "references": [
+        {
+          "file": ".local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r1/frame-2.png",
+          "sha256": "49b73df3a8e76b8df557690b3067a4d2669572dca2ac5187cabf879594cfbf98"
+        },
+        {
+          "file": ".local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r2/frame-0.png",
+          "sha256": "2b197ad9e5c5ddd1213eeb93ba39eb77f2a675ab30e04d0a415902db8036585d"
+        }
+      ],
+      "output": ".local/source-art/yr-campaign-v1/task-buildings/urban-casydn03/masters-r2/frame-2.png"
+    }
+  ],
+  "userVisualAcceptance": "PENDING"
+}
